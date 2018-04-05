@@ -1,6 +1,6 @@
 ---
 title: "Nouveautés de SQL Operations Studio (version préliminaire) | Microsoft Docs"
-description: "SQL Operations Studio (version préliminaire) est un outil gratuit et léger qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, base de données SQL Azure et Azure SQL Data Warehouse ; partout où ils s’exécutent."
+description: "SQL Operations Studio (version préliminaire) est un outil gratuit et léger qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, base de données SQL Azure et Azure SQL Data Warehouse ; où qu'ils soient."
 ms.custom: tools|sos
 ms.date: 11/17/2017
 ms.prod: sql-non-specified
@@ -22,18 +22,18 @@ ms.lasthandoff: 12/21/2017
 ---
 # <a name="what-is-includename-sosincludesname-sosmd"></a>Nouveautés [!INCLUDE[name-sos](../includes/name-sos.md)]?
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)] est un outil gratuit qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, base de données SQL Azure et Azure SQL Data Warehouse ; partout où ils s’exécutent.
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] est un outil gratuit qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, base de données SQL Azure et Azure SQL Data Warehouse; où qu'ils soient.
 
 **[Téléchargez et installez[!INCLUDE[name-sos](../includes/name-sos-short.md)]](download.md)**
 
 
 ## <a name="transact-sql-t-sql-code-editor-with-intellisense"></a>Éditeur de code Transact-SQL (T-SQL) avec IntelliSense
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)] offre une expérience moderne, avec du code T-SQL axé sur le clavier qui facilite vos tâches quotidiennes avec les fonctionnalités intégrées, telles que des fenêtres d’onglet mutiples, un éditeur T-SQL riche, l'IntelliSense, la complétion de mot clé, des extraits de code, la navigation de code et l'intégration du contrôle de code source (Git). Exécutez des requêtes T-SQL à la demande, affichez et enregistrez les résultats en tant que texte, JSON ou Excel. Modifiez les données, organisez vos connexions de base de données favories et parcourez les objets de base de données dans une expérience de navigation objet familière. Pour savoir comment utiliser l’éditeur T-SQL, consultez [utiliser l’éditeur T-SQL pour créer des objets de base de données](tutorial-sql-editor.md).
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] offre une expérience moderne et une expérience de code T-SQL centré sur le clavier qui facilite vos tâches quotidiennes avec des fonctionnalités intégrées, telles que des fenêtres d’onglet multiples, un éditeur T-SQL riche, l'IntelliSense, la complétion de mot clé, des extraits de code, la navigation de code et l'intégration du contrôle du code source (Git). Exécutez des requêtes T-SQL à la demande, affichez et enregistrez les résultats en tant que texte, JSON ou Excel. Modifiez les données, organisez vos connexions de base de données préférées et parcourez les objets de celles-ci dans une expérience de navigation familière. Pour savoir comment utiliser l’éditeur T-SQL, consultez [utiliser l’éditeur T-SQL pour créer des objets de base de données](tutorial-sql-editor.md).
 
 ## <a name="smart-t-sql-code-snippets"></a>Extraits de code smart T-SQL
 
-Les extraits de code T-SQL génèrent la syntaxe T-SQL pour créer des bases de données, des tables, des vues, des procédures stockées, des utilisateurs, des connexions, des rôles, etc. et mettre à jour des objets de base de données existants. Utilisez les extraits de code pour créer rapidement des copies de votre base de données de développement ou à des fins de tests et pour générer et exécuter, créer et insérer des scripts.
+Les extraits de code T-SQL génèrent la syntaxe T-SQL pour créer des bases de données, des tables, des vues, des procédures stockées, des utilisateurs, des connexions, des rôles, etc. et pour mettre à jour des objets de base de données existants. Utilisez les extraits de code intelligent pour créer rapidement des copies de votre base de données de développement ou à des fins de tests et pour générer et exécuter des scripts d'INSERT et UPDATE.
 
 [!INCLUDE[name-sos](../includes/name-sos-short.md)] fournit également des fonctionnalités permettant de créer des extraits de code T-SQL personnalisées. Pour plus d’informations, consultez [créer et utiliser des extraits de code](code-snippets.md).
 
@@ -48,9 +48,9 @@ Les groupes de serveurs vous permettent d’organiser les informations de connex
 
 ## <a name="integrated-terminal"></a>Terminal Server intégré
 
-Utiliser vos outils de ligne de commande favoris (par exemple, Bash, PowerShell, sqlcmd, l’utilitaire bcp et ssh) dans la fenêtre de Terminal Server intégré dans l' interface utilisateur [!INCLUDE[name-sos](../includes/name-sos-short.md)]. Pour en savoir plus sur le terminal intégré, consultez [terminal intégré] (terminal.md intégré).
+Utiliser vos outils de ligne de commande favoris (par exemple, Bash, PowerShell, sqlcmd, l’utilitaire bcp et ssh) dans la fenêtre intégrée de Terminal Server de l'interface utilisateur [!INCLUDE[name-sos](../includes/name-sos-short.md)]. Pour en savoir plus sur le terminal intégré, consultez [terminal intégré] (terminal.md intégré).
 
 ## <a name="next-steps"></a>Étapes suivantes
 - [Téléchargez et installez [!INCLUDE[name-sos](../includes/name-sos-short.md)]](download.md)
-- [Se connecter et Requêter SQL Server](quickstart-sql-server.md)
+- [Se connecter et requêter SQL Server](quickstart-sql-server.md)
 - [Se connecter et interroger la base de données SQL Azure](quickstart-sql-database.md)
