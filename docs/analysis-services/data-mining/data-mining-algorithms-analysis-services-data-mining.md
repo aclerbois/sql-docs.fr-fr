@@ -1,42 +1,23 @@
 ---
-title: "Algorithmes d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- segmentation algorithms [Analysis Services]
-- clustering [Data Mining]
-- learning algorithms
-- data mining [Analysis Services], models
-- algorithms [data mining]
-- mining models [Analysis Services], algorithms
-- inductive learning
-- mining models [Analysis Services], creating
-- data mining [Analysis Services], algorithms
-- machine learning algorithms [Analysis Services]
-ms.assetid: ed1fc83b-b98c-437e-bf53-4ff001b92d64
-caps.latest.revision: 
-author: Minewiskan
+title: Algorithmes d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 43652986e789837299feacf5387cd8b6e6d57a8b
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 55b46feab1170d5db9689e9347a37f7353263791
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-algorithms-analysis-services---data-mining"></a>Algorithmes d'exploration de données (Analysis Services - Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un *algorithme d’exploration de données* est un ensemble d’heuristiques et de calculs qui crée un modèle d’exploration de données à partir de données. Pour créer un modèle, l'algorithme analyse d'abord les données que vous fournissez, à la recherche de types spécifiques de modèles ou de tendances. L’algorithme utilise les résultats de cette analyse sur plusieurs itérations pour trouver les paramètres optimaux pour la création du modèle d’exploration de données. Ensuite, ces paramètres sont appliqués au jeu de données entier pour extraire des modèles utilisables et des statistiques détaillées.  
+  Un *algorithme d’exploration de données* est un ensemble d’heuristiques et de calculs qui crée un modèle d’exploration de données à partir de données. Pour créer un modèle, l'algorithme analyse d'abord les données que vous fournissez, à la recherche de types spécifiques de modèles ou de tendances. L’algorithme utilise les résultats de cette analyse sur plusieurs itérations pour trouver les paramètres optimaux pour la création du modèle d’exploration de données. Ensuite, ces paramètres sont appliqués au jeu de données entier pour extraire des modèles utilisables et des statistiques détaillées.  
   
  Le modèle d'exploration de données qu'un algorithme crée à partir de vos données peut prendre des formes variées, dont les suivantes :  
   
@@ -91,7 +72,7 @@ Un *algorithme d’exploration de données* est un ensemble d’heuristiques et 
 |**Références techniques**|Fournit des informations techniques sur l'implémentation de l'algorithme, à l'aide de références universitaires selon les besoins. Dresse la liste des paramètres que vous pouvez configurer pour contrôler le comportement de l'algorithme et personnaliser les résultats dans le modèle. Décrit les spécifications de données et fournit des conseils en matière de performances, si possible.|  
 ||[Informations techniques de référence sur l’algorithme Microsoft Association](../../analysis-services/data-mining/microsoft-association-algorithm-technical-reference.md)<br /><br /> [Références techniques relatives à l'algorithme de gestion de clusters Microsoft](../../analysis-services/data-mining/microsoft-clustering-algorithm-technical-reference.md)<br /><br /> [Techniques de l’algorithme d’arbres de décision Microsoft](../../analysis-services/data-mining/microsoft-decision-trees-algorithm-technical-reference.md)<br /><br /> [Références techniques relatives à l'algorithme MLR (Microsoft Linear Regression)](../../analysis-services/data-mining/microsoft-linear-regression-algorithm-technical-reference.md)<br /><br /> [Référence technique de Microsoft Logistic Regression algorithme](../../analysis-services/data-mining/microsoft-logistic-regression-algorithm-technical-reference.md)<br /><br /> [Référence technique de Microsoft Naive Bayes algorithme](../../analysis-services/data-mining/microsoft-naive-bayes-algorithm-technical-reference.md)<br /><br /> [Référence technique de Microsoft Neural Network algorithme](../../analysis-services/data-mining/microsoft-neural-network-algorithm-technical-reference.md)<br /><br /> [Informations techniques de référence sur l’algorithme MSC (Microsoft Sequence Clustering)](../../analysis-services/data-mining/microsoft-sequence-clustering-algorithm-technical-reference.md)<br /><br /> [Informations techniques de référence sur l’algorithme MTS (Microsoft Time Series)](../../analysis-services/data-mining/microsoft-time-series-algorithm-technical-reference.md)|  
 |**Contenu de modèle**|Explique comment les informations sont structurées dans chaque type de modèle d'exploration de données et indique comment interpréter les informations stockées dans chacun des nœuds.|  
-||[Contenu du modèle d’exploration de données pour les modèles d’Association &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-association-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de clustering &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de régression linéaire &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-linear-regression-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de régression logistique &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-logistic-regression-models.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles Naive Bayes &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de Clustering de séquence &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-sequence-clustering-models.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de séries chronologiques &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-time-series-models-analysis-services-data-mining.md)|  
+||[Contenu du modèle d’exploration de données pour les modèles d’Association & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-association-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de clustering &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de régression linéaire & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-linear-regression-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de régression logistique &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-logistic-regression-models.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles Naive Bayes &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de Clustering de séquence & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-sequence-clustering-models.md)<br /><br /> [Contenu du modèle d’exploration de données pour les modèles de séries chronologiques &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-time-series-models-analysis-services-data-mining.md)|  
 |**Requêtes d’exploration de données**|Fournit plusieurs requêtes que vous pouvez utiliser avec chaque type de modèle. Les exemples incluent des requêtes de contenu qui vous permettent d'en savoir plus sur les schémas du modèle, ainsi que des requêtes de prédiction pour vous aider à établir des prédictions en fonction de ces schémas.|  
 ||[Exemples de requêtes de modèle association](../../analysis-services/data-mining/association-model-query-examples.md)<br /><br /> [Exemples de requêtes modèle de clustering](../../analysis-services/data-mining/clustering-model-query-examples.md)<br /><br /> [Exemples de requêtes de modèle d’arbre de décision](../../analysis-services/data-mining/decision-trees-model-query-examples.md)<br /><br /> [Exemples de requête de modèle de régression linéaire](../../analysis-services/data-mining/linear-regression-model-query-examples.md)<br /><br /> [Exemples de requêtes de modèle de régression logistique](../../analysis-services/data-mining/logistic-regression-model-query-examples.md)<br /><br /> [Naive Bayes Model Query Examples](../../analysis-services/data-mining/naive-bayes-model-query-examples.md)<br /><br /> [Neural Network Model Query Examples](../../analysis-services/data-mining/neural-network-model-query-examples.md)<br /><br /> [Exemples de requêtes de modèle Sequence Clustering](../../analysis-services/data-mining/sequence-clustering-model-query-examples.md)<br /><br /> [Time Series Model Query Examples](../../analysis-services/data-mining/time-series-model-query-examples.md)|  
   
@@ -103,7 +84,7 @@ Un *algorithme d’exploration de données* est un ensemble d’heuristiques et 
 |Créer un algorithme de plug-in personnalisé|[Algorithmes de plug-in](../../analysis-services/data-mining/plugin-algorithms.md)|  
 |Explorer un modèle à l'aide d'une visionneuse d'algorithme|[Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md)|  
 |Afficher le contenu d'un modèle à l'aide d'un format tabulaire générique|[Explorer un modèle à l'aide de la visionneuse de l'arborescence de contenu générique Microsoft](../../analysis-services/data-mining/browse-a-model-using-the-microsoft-generic-content-tree-viewer.md)|  
-|En savoir plus sur la configuration de vos données et l'utilisation d'algorithmes pour créer des modèles|[Structures d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)<br /><br /> [Les modèles d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)|  
+|En savoir plus sur la configuration de vos données et l'utilisation d'algorithmes pour créer des modèles|[Structures d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)<br /><br /> [Les modèles d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils d'exploration de données](../../analysis-services/data-mining/data-mining-tools.md)  

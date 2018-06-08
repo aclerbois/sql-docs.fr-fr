@@ -1,34 +1,33 @@
 ---
-title: "Sélection et configuration des objets de Test (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Sélection et configuration des objets de Test (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Selection of Objects to Test,Parameter Comparison Settings
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Selection of Objects to Test,Parameter Comparison Settings
 ms.assetid: 29fb6542-5c1f-4b14-a822-87700beb7623
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 51688e76b4493b6f4fa5eda7712d1e60ac498c99
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 8f4e53df32355dbe26efee5f680eb19e529d9670
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selecting-and-configuring-objects-to-test-oracletosql"></a>Sélection et configuration des objets de Test (OracleToSQL)
 À ce stade, sélectionner les objets pour tester et de configurer les paramètres pour la comparaison des procédures et fonctions paramètres de sortie, ainsi que les valeurs de retour des fonctions.  
   
 ## <a name="selection-of-objects-to-test"></a>Sélection d’objets de Test  
-Dans l’arborescence des objets Oracle situé sur le côté gauche de la fenêtre, vérifiez les objets que vous souhaitez appeler pendant le processus de test. Consultez la liste complète des objets testables dans le [test des objets de base de données migrés &#40; OracleToSQL &#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md) rubrique.  
+Dans l’arborescence des objets Oracle situé sur le côté gauche de la fenêtre, vérifiez les objets que vous souhaitez appeler pendant le processus de test. Consultez la liste complète des objets testables dans le [test des objets de base de données migrés &#40;OracleToSQL&#41; ](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md) rubrique.  
   
 Si le testeur de SSMA ne prend pas en charge les objets sélectionnés pour le test, vous verrez le lien **certains des objets sélectionnés contiennent des erreurs** sous l’arborescence d’objets. Cliquez sur ce lien pour afficher les raisons pour lesquelles ces objets ne peuvent pas être testées et pour effacer la sélection d’objets incorrectes.  
   
@@ -85,8 +84,8 @@ Contrôle la façon dont les espaces à droite sont traités pendant la comparai
 Vous pouvez spécifier des valeurs de paramètre d’entrée sur le **appeler les valeurs** page. Le **ajouter un appel** bouton ajoute un nouvel appel avec des valeurs de paramètres vide. Le **supprimer les appels** bouton supprime l’appel en cours.  
   
 ## <a name="next-step"></a>Étape suivante  
-[Sélection et configuration affectées objets &#40; OracleToSQL &#41;](../../ssma/oracle/selecting-and-configuring-affected-objects-oracletosql.md)  
+[Sélectionner et configurer les objets affectés &#40;OracleToSQL&#41;](../../ssma/oracle/selecting-and-configuring-affected-objects-oracletosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Test de migration des objets de base de données &#40; OracleToSQL &#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
+[Test de migration des objets de base de données &#40;OracleToSQL&#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
   

@@ -1,16 +1,14 @@
 ---
 title: hierarchyid (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - hierarchyid
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - Hierarchy data type
 - hierarchyid data type
 ms.assetid: 69b756e0-a1df-45b3-8a24-6ded8658aefe
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8f69a5bae73c7c1b6ab868bc008c98a652900ae6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e1353b3de952999f647010d38c1e7afe86ef2b30
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hierarchyid-data-type-method-reference"></a>Référence de méthodes de type de données hierarchyid
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

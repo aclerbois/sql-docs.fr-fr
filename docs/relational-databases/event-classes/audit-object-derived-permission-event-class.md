@@ -1,34 +1,30 @@
 ---
-title: "Audit Object Derived Permission, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Object Derived Permission, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Object Derived Permission event class
 ms.assetid: cf61b789-a326-47f9-9d0c-19470782328f
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d4b9c8deac23e7504e24c3cf931655660a256551
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cf4d61db8f85b5724df7af4cf97aaf14066bfe62
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-object-derived-permission-event-class"></a>Audit Object Derived Permission (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Object Derived Permission** enregistre chaque émission d’une commande CREATE, ALTER ou DROP pour un objet spécifié. Cet événement ne survient que si l'objet n'a ni autorisations, ni propriétaires directement associés.  
+  La classe d’événements **Audit Object Derived Permission** enregistre chaque émission d’une commande CREATE, ALTER ou DROP pour un objet spécifié. Cet événement ne survient que si l'objet n'a ni autorisations, ni propriétaires directement associés.  
   
  Cette classe d'événements pourrait être supprimée dans une version ultérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Nous vous recommandons donc d’utiliser la classe d’événements **Audit Schema Object Management** .  
   

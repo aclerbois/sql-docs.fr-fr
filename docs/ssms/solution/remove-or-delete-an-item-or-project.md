@@ -1,34 +1,33 @@
 ---
-title: "Enlever ou supprimer un élément ou un projet | Microsoft Docs"
-ms.custom: 
+title: Enlever ou supprimer un élément ou un projet | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deleting project items
 - projects [SQL Server Management Studio], item removal
 - removing project items
 ms.assetid: 3fd92434-70f5-466e-bef0-7e0fd73ddb1c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 260005349211feaeb74280a65e1b5d89ef092426
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 96e5484ed59b0852f0099602b5a4e3ff359d1b6f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-or-delete-an-item-or-project"></a>Enlever ou supprimer un élément ou un projet
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Les éléments de projet des projets [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] sont les requêtes, les connexions et les fichiers divers. Vous pouvez enlever des requêtes et des fichiers divers de projet d'une solution sans effacer du support de stockage les fichiers. Supprimez un projet ou un élément lorsqu'il n'est plus utile dans la solution en cours mais que vous souhaitez l'insérer dans une autre solution.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Les éléments de projet des projets [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] sont les requêtes, les connexions et les fichiers divers. Vous pouvez enlever des requêtes et des fichiers divers de projet d'une solution sans effacer du support de stockage les fichiers. Supprimez un projet ou un élément lorsqu'il n'est plus utile dans la solution en cours mais que vous souhaitez l'insérer dans une autre solution.  
   
 ### <a name="to-remove-a-project-item"></a>Pour supprimer un élément de projet  
   

@@ -1,16 +1,14 @@
 ---
 title: ERROR_LINE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ERROR_LINE
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - ERROR_LINE function
 - CATCH block
 ms.assetid: 47335734-0baf-45a6-8b3b-6c4fd80d2cb8
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 83783fdaa950777ae0a8002182abc273e32c2ca0
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 44745c0f27527872abd1b63c3fa5b3954328c1be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="errorline-transact-sql"></a>ERROR_LINE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

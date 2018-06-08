@@ -1,32 +1,31 @@
 ---
-title: "Créer un abonnement piloté par les données (didacticiel SSRS) | Microsoft Docs"
-ms.custom: 
+title: Créer un abonnement piloté par les données (didacticiel SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/26/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 helpviewer_keywords:
 - subscriptions [Reporting Services], tutorials
 - walkthroughs [Reporting Services]
 - data-driven subscriptions
 ms.assetid: 79ab0572-43e9-4dc4-9b5a-cd8b627b8274
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 731e14ba0da7b3d9b54b1ba24aa2fda41adda49b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: da6c81701af24b495e84cb26dc3a6581d00ba1f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-data-driven-subscription-ssrs-tutorial"></a>Créer un abonnement piloté par les données (didacticiel SSRS)
 Ce didacticiel [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] vous enseigne les concepts des abonnements pilotés par les données en décrivant un exemple simple qui crée un abonnement piloté par les données pour générer et enregistrer une sortie de rapport filtrée dans un partage de fichiers. 
@@ -75,14 +74,14 @@ Pour utiliser ce didacticiel, vous devez avoir installé les éléments suivants
   
 -   Exemple de base de données **AdventureWorks2014** , qui fournit des données à l’exemple de rapport.  
   
--   Attribution de rôle [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] incluant la tâche Gérer tous les abonnements sur l’exemple de rapport. Cette tâche est obligatoire dans la définition des abonnements pilotés par les données. Si vous êtes l'administrateur de l'ordinateur, l'attribution de rôle par défaut pour les administrateurs locaux fournit les autorisations nécessaires à la création d'abonnements pilotés par les données. Pour plus d’informations, consultez [Granting Permissions on a Native Mode Report Server](../reporting-services/security/granting-permissions-on-a-native-mode-report-server.md).  
+-   Attribution de rôle [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] incluant la tâche Gérer tous les abonnements sur l’exemple de rapport. Cette tâche est obligatoire dans la définition des abonnements pilotés par les données. Si vous êtes l'administrateur de l'ordinateur, l'attribution de rôle par défaut pour les administrateurs locaux fournit les autorisations nécessaires à la création d'abonnements pilotés par les données. Pour plus d’informations, consultez [Octroi d'autorisations sur un serveur de rapports en mode natif](../reporting-services/security/granting-permissions-on-a-native-mode-report-server.md).  
   
 -   Dossier partagé pour lequel vous bénéficiez de droits d'accès en écriture. Le dossier partagé doit être accessible via une connexion réseau.  
   
 **Durée estimée pour effectuer ce didacticiel :** 30 minutes. Trente minutes supplémentaires si vous n'avez pas étudié le didacticiel de création d'un rapport de base.  
   
 ## <a name="see-also"></a> Voir aussi  
-[Data-Driven Subscriptions](../reporting-services/subscriptions/data-driven-subscriptions.md)  
+[Abonnements pilotés par les données](../reporting-services/subscriptions/data-driven-subscriptions.md)  
 [Créer un rapport de tableau de base &#40;Didacticiel SSRS&#41;](../reporting-services/create-a-basic-table-report-ssrs-tutorial.md)
  
 

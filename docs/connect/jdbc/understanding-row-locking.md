@@ -1,27 +1,24 @@
 ---
 title: Comprendre le verrouillage de ligne | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 63c76a2f-f2b9-461f-8904-acbda0169ac3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6c37c5ab29f67d7ce30603c4609cb66d3e625c61
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: cdf5ca943ec4d823c8c568f0818a49c44f22cbe6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-row-locking"></a>Présentation du verrouillage de ligne
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

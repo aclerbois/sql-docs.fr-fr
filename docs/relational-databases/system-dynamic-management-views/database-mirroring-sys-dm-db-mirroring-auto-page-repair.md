@@ -1,16 +1,12 @@
 ---
-title: sys.dm_db_mirroring_auto_page_repair (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_mirroring_auto_page_repair (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_db_mirroring_auto_page_repair_TSQL
@@ -24,16 +20,15 @@ helpviewer_keywords:
 - database mirroring [SQL Server], automatic page repair
 - sys.dm_db_mirroring_auto_page_repair dynamic management view
 ms.assetid: 49f0fc2a-e25e-47e1-a135-563adb509af1
-caps.latest.revision: 
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 35b8224cfb63709a6096aaa937aa19dd04d9c212
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: fb08f5eb710a2a258a462767382c1b6b609bec76
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="database-mirroring---sysdmdbmirroringautopagerepair"></a>Base de données mise en miroir - sys.dm_db_mirroring_auto_page_repair
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -45,7 +40,7 @@ ms.lasthandoff: 02/03/2018
 |**database_id**|**int**|ID de la base de données à laquelle cette ligne correspond.|  
 |**file_id**|**int**|ID du fichier dans lequel la page est située.|  
 |**page_id**|**bigint**|ID de la page dans le fichier.|  
-|**error_type**|**int**|Type de l'erreur. Les valeurs peuvent être :<br /><br /> **-**1 = toutes les erreurs 823 de matériel<br /><br /> 1 = 824 erreurs autre qu’une somme de contrôle incorrecte ou d’une page endommagée (par exemple, un ID de page incorrect)<br /><br /> 2 = Somme de contrôle incorrecte<br /><br /> 3 = Page endommagée|  
+|**error_type**|**int**|Type de l'erreur. Les valeurs peuvent être :<br /><br /> **-** 1 = toutes les erreurs 823 de matériel<br /><br /> 1 = 824 erreurs autre qu’une somme de contrôle incorrecte ou d’une page endommagée (par exemple, un ID de page incorrect)<br /><br /> 2 = Somme de contrôle incorrecte<br /><br /> 3 = Page endommagée|  
 |**page_status**|**int**|État de la tentative de réparation de page :<br /><br /> 2 = En file d'attente pour demande au serveur partenaire.<br /><br /> 3 = Demande envoyée au serveur partenaire.<br /><br /> 4 = En file d'attente pour réparation de page automatique (réponse reçue du serveur partenaire).<br /><br /> 5 = Réparation de page automatique réussie et la page doit être utilisable.<br /><br /> 6 = Irréparable. Cela indique qu'une erreur a eu lieu pendant la tentative de réparation de page, par exemple, parce que la page est également endommagée sur le serveur partenaire, le serveur partenaire est déconnecté ou un problème réseau s'est produit. Cet état n'est pas terminal ; si la page est de nouveau endommagée, elle sera redemandée au serveur partenaire.|  
 |**modification_time**|**datetime**|Heure de la dernière modification de l'état de page.|  
   
@@ -57,7 +52,7 @@ ms.lasthandoff: 02/03/2018
 ## <a name="see-also"></a>Voir aussi  
  [Réparation de page automatique &#40;groupes de disponibilité : mise en miroir de bases de données&#41;](../../sql-server/failover-clusters/automatic-page-repair-availability-groups-database-mirroring.md)   
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [suspect_pages &#40; Transact-SQL &#41;](../../relational-databases/system-tables/suspect-pages-transact-sql.md)   
+ [suspect_pages & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-tables/suspect-pages-transact-sql.md)   
  [Gérer la table suspect_pages &#40;SQL Server&#41;](../../relational-databases/backup-restore/manage-the-suspect-pages-table-sql-server.md)  
   
   

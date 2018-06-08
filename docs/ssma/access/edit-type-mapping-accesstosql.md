@@ -1,30 +1,28 @@
 ---
 title: Modifier le mappage de Type (AccessToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 7f9d9530-6c04-41d9-bbe7-d91820a30066
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e579492c7895ba03d8c03d9ac0815e45aca2c3c1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 50126b377891d792685b96714f85df5926281988
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="edit-type-mapping-accesstosql"></a>Modifier le mappage de Type (AccessToSQL)
 Le **modifier le mappage de Type** boîte de dialogue vous permet de spécifier comment les types sont mappés entre les objets de base de données source et de destination.  
@@ -43,7 +41,7 @@ Sélectionnez le type de données source à mapper à un [!INCLUDE[ssNoVersion](
   
 Si le type de données est de longueur variable, les champs suivants apparaissent sous **type de Source de**:  
   
-**From**  
+**De**  
 Spécifiez la longueur minimale pour ce mappage. Par exemple, pour le **texte** type de données, vous pouvez entrer 10 pour indiquer que ce mappage est pour une plage commençant à **text(10)**.  
   
 **Pour**  

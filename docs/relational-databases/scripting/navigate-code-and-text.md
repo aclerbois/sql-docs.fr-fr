@@ -1,17 +1,13 @@
 ---
 title: Naviguer dans le code et le texte | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - searches [SQL Server Management Studio], incremental
 - mouse [SQL Server Management Studio]
@@ -24,19 +20,20 @@ helpviewer_keywords:
 - navigating code
 - Go To command
 ms.assetid: f63247ff-9751-4e99-8ee3-0772ad4009d0
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 47e654694126fdb7e18527109d43da3fa4c90ef7
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 640a26c7c3a7839e5da4dc457066cb8ae41b554a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="navigate-code-and-text"></a>Naviguer dans le code et le texte
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez vous déplacer dans le texte en utilisant :  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous pouvez vous déplacer dans le texte en utilisant :  
   
 -   les signets ;  
   

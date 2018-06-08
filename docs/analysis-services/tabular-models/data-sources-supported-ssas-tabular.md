@@ -1,27 +1,19 @@
 ---
 title: Sources de données pris en charge dans les modèles tabulaires 1200 de SQL Server Analysis Services | Documents Microsoft
-ms.custom: ''
-ms.date: 03/28/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: d6c2b1b3-91fc-4175-af25-509946dc7f24
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 14aa6597e533000c259f513c503825e7993da77c
-ms.sourcegitcommit: 7246ef88fdec262fa0d34bf0e232f089e03a6911
+ms.openlocfilehash: 31ef1eb37f85e3e9ec7a7ea7d7eadee03b6c9c20
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-sources-supported-in-sql-server-analysis-services-tabular-1200-models"></a>Sources de données pris en charge dans SQL Server Analysis Services les modèles tabulaires 1200
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]

@@ -1,31 +1,28 @@
 ---
 title: Identificateurs entre guillemets | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], interoperability
 - interoperability of SQL statements [ODBC], quoted identifiers
 - quoted identifiers [ODBC]
 ms.assetid: 729ba55f-743b-4a04-8c39-ac0a9914211d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9a530e24368339305fc510a3a3f6fc9a6193e694
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e74c39ad73357e50c1040e8a90029c0bf65f7b6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quoted-identifiers"></a>Identificateurs entre guillemets
 Dans une instruction SQL, les identificateurs qui contiennent des caractères spéciaux ou des mots clés de correspondance doivent être placées entre *guillemets identificateur*; les identificateurs placés entre ces caractères sont appelés *identificateurs entre guillemets* (également appelé *des identificateurs délimités* dans SQL-92). Par exemple, l’identificateur de comptes fournisseurs est placé entre guillemets dans le code suivant **sélectionnez** instruction :  

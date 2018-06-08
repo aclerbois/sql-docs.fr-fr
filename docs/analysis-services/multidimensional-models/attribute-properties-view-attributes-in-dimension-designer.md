@@ -1,35 +1,23 @@
 ---
 title: Afficher les attributs dans le Concepteur de dimensions | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- displaying attributes
-- attributes [Analysis Services], viewing
-- viewing attributes
-ms.assetid: 855bef07-b72d-4ce3-bf02-de77abeee71a
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 123d00510932a19a033c82995f14de5b87467c5a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c8e0535a1df60b4a4e1550e2b49a02e7a60e2c04
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-properties---view-attributes-in-dimension-designer"></a>Propriétés d’attribut - afficher les attributs dans le Concepteur de dimensions
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les attributs sont créés sur des objets de dimension. Vous pouvez afficher et configurer les attributs à l'aide du Concepteur de dimensions de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Le volet **Attributs** de l'onglet **Structure de dimension** du Concepteur de dimensions répertorie les attributs qui figurent dans une dimension. Utilisez ce volet pour ajouter, supprimer ou configurer les attributs. Vous pouvez également sélectionner les attributs à utiliser comme niveau d'une nouvelle hiérarchie ou à ajouter comme niveau d'une hiérarchie existante.  
+  Les attributs sont créés sur des objets de dimension. Vous pouvez afficher et configurer les attributs à l'aide du Concepteur de dimensions de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Le volet **Attributs** de l'onglet **Structure de dimension** du Concepteur de dimensions répertorie les attributs qui figurent dans une dimension. Utilisez ce volet pour ajouter, supprimer ou configurer les attributs. Vous pouvez également sélectionner les attributs à utiliser comme niveau d'une nouvelle hiérarchie ou à ajouter comme niveau d'une hiérarchie existante.  
   
  Pour afficher les attributs d'une dimension, ouvrez le concepteur de la dimension. Le volet **Attributs** de l'onglet **Structure de dimension**  du concepteur affiche les attributs qui figurent dans la dimension. Vous pouvez basculer entre les modes d’affichage liste, arborescence ou grille en pointant sur **Afficher les attributs dans** dans le menu **Dimension** de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] , puis en cliquant sur l’une des commandes suivantes.  
   
@@ -64,7 +52,7 @@ Les attributs sont créés sur des objets de dimension. Vous pouvez afficher et 
 |Icône|Utilisation de l'attribut|  
 |----------|---------------------|  
 |![Icône d’attribut](../../analysis-services/multidimensional-models/media/as-icon-attribute.gif "icône d’attribut")|Regular ou AccountType|  
-|![Icône d’attribut de clé](../../analysis-services/multidimensional-models/media/as-icon-key-attribute.gif "icône d’attribut de clé")|Clé|  
+|![Icône d’attribut de clé](../../analysis-services/multidimensional-models/media/as-icon-key-attribute.gif "icône d’attribut de clé")|Key|  
 |![Icône d’attribut parent](../../analysis-services/multidimensional-models/media/as-icon-parent-attribute.gif "icône d’attribut Parent")|Parent|  
   
 ## <a name="see-also"></a>Voir aussi  

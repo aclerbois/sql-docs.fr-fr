@@ -1,30 +1,29 @@
 ---
-title: "Méthode getScale (SQLServerParameterMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getScale (SQLServerParameterMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerParameterMetaData.getScale
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerParameterMetaData.getScale
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 7b8d8d9c-74aa-4e6e-88f1-2fc5c74004ae
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 29223b9a6ecb6ddef96c4c4cbb929e5ca5b02d75
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: e77c6dcfd46b6fbb522312738bd24c9f4ac94fe0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getscale-method-sqlserverparametermetadata"></a>Méthode getScale (SQLServerParameterMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public int getScale(int param)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *Param*  
+ *param*  
   
  Un **int** qui indique l’index de paramètre.  
   

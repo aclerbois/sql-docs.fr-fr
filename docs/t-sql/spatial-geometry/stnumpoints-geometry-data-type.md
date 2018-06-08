@@ -1,16 +1,14 @@
 ---
-title: "STNumPoints (type de données geometry) | Microsoft Docs"
-ms.custom: 
+title: STNumPoints (type de données geometry) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STNumPoints_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STNumPoints (geometry Data Type)
 ms.assetid: a19520fc-7f91-4a2c-856f-4d8b99a7e496
-caps.latest.revision: 
+caps.latest.revision: 16
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 51e08f456377ecef45bd26fc53a7a546c95220fb
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: aa5fef2d7f43b8e2771ead40f3c4f894fa810efa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stnumpoints-geometry-data-type"></a>STNumPoints (type de données geometry)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

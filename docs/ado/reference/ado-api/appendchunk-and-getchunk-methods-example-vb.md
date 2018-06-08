@@ -1,33 +1,30 @@
 ---
-title: "AppendChunk et GetChunk, méthodes-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: AppendChunk et GetChunk, méthodes-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - GetChunk method [ADO], Visual Basic example
 - AppendChunk method [ADO], Visual Basic example
 ms.assetid: c07862b5-e466-46bd-910b-59ac96709cb9
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ba03fbbb502e648127bf5bfab7e9ec79f2839fe
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 29ab800c789b71103ed074d159cec4db72a83d53
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendchunk-and-getchunk-methods-example-vb"></a>AppendChunk et GetChunk, méthodes-exemple (VB)
 Cet exemple utilise le [AppendChunk](../../../ado/reference/ado-api/appendchunk-method-ado.md) et [GetChunk](../../../ado/reference/ado-api/getchunk-method-ado.md) méthodes pour remplir un champ d’image de données à partir d’un autre enregistrement.  

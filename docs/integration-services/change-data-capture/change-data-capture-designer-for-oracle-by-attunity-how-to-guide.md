@@ -1,28 +1,26 @@
 ---
-title: "Guide pratique de Change Data Capture Designer pour Oracle d’Attunity | Microsoft Docs"
-ms.custom: 
+title: Guide pratique de Change Data Capture Designer pour Oracle d’Attunity | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 84ed22e8-2a0c-41c2-a8f0-eea3f4047656
-caps.latest.revision: 
+caps.latest.revision: 5
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2696a51ff9bb42a94ac315cda8d893e81f9d54da
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b82448ad01e6c46127c8fb52ab647fa1c1ea9ea1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-data-capture-designer-for-oracle-by-attunity-how-to-guide"></a>Concepteur de capture de données modifiées pour Oracle par Attunity : rubrique Procédures
   Cette section explique comment effectuer des tâches dans le concepteur de capture de données modifiées pour Oracle par Attunity.  

@@ -1,17 +1,15 @@
 ---
-title: "Alimenter des index de recherche en texte intégral | Microsoft Docs"
-ms.custom: 
+title: Alimenter des index de recherche en texte intégral | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - index populations [full-text search]
 - incremental populations [full-text search]
@@ -27,20 +25,20 @@ helpviewer_keywords:
 - full populations [full-text search]
 - full-text indexes [SQL Server], populations
 ms.assetid: 76767b20-ef55-49ce-8dc4-e77cb8ff618a
-caps.latest.revision: 
+caps.latest.revision: 78
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c139299c1613bb3d76328097fd1235f67ebe121a
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 15619488c2b8d9f71423af9a0ca853b74ed5b12b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="populate-full-text-indexes"></a>Alimenter des index de recherche en texte intégral
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La création et la maintenance d’un index de recherche en texte intégral impliquent le remplissage de l’index à l’aide d’un processus appelé *alimentation* (également appelé *analyse*).  
+  La création et la maintenance d’un index de recherche en texte intégral impliquent le remplissage de l’index à l’aide d’un processus appelé *alimentation* (également appelé *analyse*).  
   
 ##  <a name="types"></a> Types d’alimentation  
 Un index de recherche en texte intégral prend en charge les types d’alimentation suivants :
@@ -225,7 +223,7 @@ Le fichier journal de l'analyse respecte le modèle de dénomination suivant :
 Les parties variables du nom de fichier du journal d’analyse sont les suivantes.
 -   <**DatabaseID**> - ID d’une base de données. <**dbid**> est un nombre à 5 chiffres commençant par des zéros non significatifs.  
 -   <**FullTextCatalogID**> - ID du catalogue de texte intégral. <**catid**> est un nombre à 5 chiffres commençant par des zéros non significatifs.  
--   <**n**> - Entier qui indique qu'il existe un ou plusieurs journaux d'analyse du même catalogue de texte intégral.  
+-   <**n**> - Entier qui indique qu’il existe un ou plusieurs journaux d’analyse du même catalogue de texte intégral.  
   
  Par exemple, `SQLFT0000500008.2` est le fichier journal d’analyse pour une base de données ayant un ID de base de données = 5 et un ID de catalogue de texte intégral = 8. Le 2 à la fin du nom de fichier indique qu'il existe deux fichiers journaux d'analyse pour cette combinaison base de données/catalogue.  
 

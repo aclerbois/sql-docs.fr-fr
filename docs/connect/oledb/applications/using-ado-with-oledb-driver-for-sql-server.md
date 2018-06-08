@@ -3,14 +3,12 @@ title: À l’aide d’ADO avec le pilote OLE DB pour SQL Server | Documents Mic
 description: À l’aide d’ADO avec le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|applications
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -20,16 +18,17 @@ helpviewer_keywords:
 - MSOLEDBSQL, ADO
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 31dfd17d0e5f12cfddf88030e2b3516ea3ada0e6
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: c1244669bcfeea5008640ed00b6f8e579ce71139
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-ado-with-ole-db-driver-for-sql-server"></a>À l’aide d’ADO avec le pilote OLE DB pour SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../../includes/driver_oledb_download.md)]
 
   Pour tirer parti des nouvelles fonctionnalités introduites dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)] tels que des jeux de résultats actifs multiples (MARS), les notifications de requête, les types définis par l’utilisateur (UDT) ou le nouveau **xml** type de données, les applications existantes qui utilisent les contrôles ActiveX Data Objects (ADO) doit utiliser le pilote OLE DB pour SQL Server en tant que leur fournisseur d’accès aux données.  
   
@@ -171,4 +170,4 @@ Set con = Nothing
  Dans les versions antérieures du fournisseur OLE DB, ce code provoquait la création d'une connexion implicite lors de la deuxième exécution car un seul jeu de résultats actif par connexion pouvait être ouvert. La connexion implicite n'étant pas mise dans le pool de connexions OLE DB, cela provoquait une charge supplémentaire. Avec la fonctionnalité MARS exposée par le pilote OLE DB pour SQL Server, vous obtenez des résultats actifs multiples sur une connexion.  
 
 ## <a name="see-also"></a>Voir aussi  
- [Génération d’Applications avec le pilote OLE DB pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  
+ [Génération d’applications avec OLE DB Driver pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  

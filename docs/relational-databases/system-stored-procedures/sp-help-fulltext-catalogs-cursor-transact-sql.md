@@ -1,16 +1,14 @@
 ---
-title: sp_help_fulltext_catalogs_cursor (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_fulltext_catalogs_cursor (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_fulltext_catalogs_cursor
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_fulltext_catalogs_cursor
 ms.assetid: d44478d1-0cc4-415e-9d1a-6dccb64674fa
-caps.latest.revision: 
+caps.latest.revision: 33
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9685fc8cad35b88176a5c593b4fd58d29ac1ae51
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 426ea1d54dce0a37fa3a1529d0fe5f6e6e149109
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpfulltextcatalogscursor-transact-sql"></a>sp_help_fulltext_catalogs_cursor (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -50,10 +48,10 @@ sp_help_fulltext_catalogs_cursor [ @cursor_return= ] @cursor_variable OUTPUT ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@cursor_return=**] *@cursor_variable* **OUTPUT**  
+ [  **@cursor_return=**] *@cursor_variable* **SORTIE**  
  Variable de sortie de type **curseur**. Le curseur est en lecture seule, dynamique et permet les défilements.  
   
- [ **@fulltext_catalog_name=**] **'***fulltext_catalog_name***'**  
+ [  **@fulltext_catalog_name=**] **'***fulltext_catalog_name***'**  
  Nom du catalogue de texte intégral. *fulltext_catalog_name* est **sysname**. Si ce paramètre est omis ou s'il a la valeur NULL, des informations sur tous les catalogues de texte intégral associés à la base de données en cours sont retournées.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -64,9 +62,9 @@ sp_help_fulltext_catalogs_cursor [ @cursor_return= ] @cursor_variable OUTPUT ,
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**fulltext_catalog_id**|**smallint**|Identificateur du catalogue de texte intégral.|  
-|**NAME**|**sysname**|Nom du catalogue de texte intégral.|  
+|**NOM**|**sysname**|Nom du catalogue de texte intégral.|  
 |**PATH**|**nvarchar(260)**|À partir de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], cette clause n'a aucun effet.|  
-|**STATUS**|**int**|État du remplissage de l'index de recherche en texte intégral du catalogue :<br /><br /> 0 = Inactif <br /><br /> 1 = Remplissage complet en cours<br /><br /> 2 = En pause <br /><br /> 3 = Accéléré<br /><br /> 4 = Récupération<br /><br /> 5 = Arrêt<br /><br /> 6 = Remplissage incrémentiel en cours<br /><br /> 7 = Indexation en cours<br /><br /> 8 = Disque plein Suspendu<br /><br /> 9 = Suivi des modifications|  
+|**ÉTAT**|**int**|État du remplissage de l'index de recherche en texte intégral du catalogue :<br /><br /> 0 = Inactif <br /><br /> 1 = Remplissage complet en cours<br /><br /> 2 = En pause <br /><br /> 3 = Accéléré<br /><br /> 4 = Récupération<br /><br /> 5 = Arrêt<br /><br /> 6 = Remplissage incrémentiel en cours<br /><br /> 7 = Indexation en cours<br /><br /> 8 = Disque plein Suspendu<br /><br /> 9 = Suivi des modifications|  
 |**NUMBER_FULLTEXT_TABLES**|**int**|Nombre de tables indexées en texte intégral associées au catalogue.|  
   
 ## <a name="permissions"></a>Autorisations  
@@ -91,7 +89,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [FULLTEXTCATALOGPROPERTY &#40; Transact-SQL &#41;](../../t-sql/functions/fulltextcatalogproperty-transact-sql.md)   
+ [FULLTEXTCATALOGPROPERTY & #40 ; Transact-SQL & #41 ;](../../t-sql/functions/fulltextcatalogproperty-transact-sql.md)   
  [sp_fulltext_catalog &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-fulltext-catalog-transact-sql.md)   
  [sp_help_fulltext_catalogs &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-catalogs-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  

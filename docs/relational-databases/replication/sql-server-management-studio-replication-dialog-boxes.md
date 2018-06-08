@@ -1,28 +1,26 @@
 ---
-title: "Boîtes de dialogue de réplication SQL Server Management Studio | Microsoft Docs"
-ms.custom: 
+title: Boîtes de dialogue de réplication SQL Server Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7426b605-7749-4134-a7e4-990d0d845694
-caps.latest.revision: 
+caps.latest.revision: 22
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 78d551d05f2b365f6c5644f8d4388c9cd0a89f21
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: a357585fd99130b577bd2b3e37a5a21640b748b0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-management-studio-replication-dialog-boxes"></a>Boîtes de dialogue de réplication SQL Server Management Studio
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -42,7 +40,7 @@ ms.lasthandoff: 03/08/2018
   
 -   [Profils de l’Agent](../../relational-databases/replication/agent-profiles.md)  
   
--   [Propriétés de &#60;Nom_profil_agent&#62;](../../relational-databases/replication/agentprofilename-properties.md)  
+-   [Propriétés de & #60;Nom_profil_agent& #62;](../../relational-databases/replication/agentprofilename-properties.md)  
   
 -   [Nouveau profil de l’Agent](../../relational-databases/replication/new-agent-profile.md)  
   

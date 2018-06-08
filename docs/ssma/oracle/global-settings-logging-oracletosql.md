@@ -1,27 +1,25 @@
 ---
-title: "Paramètres globaux (journalisation) (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres globaux (journalisation) (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 12dbcd77-2b90-4fa1-9cf9-239231ea5773
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: d5e0cab604baad282c06367e3271915329d358b7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 072beda7133350d0061d9bf921fd23b034fe8a70
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="global-settings-logging-oracletosql"></a>Paramètres globaux (journalisation) (OracleToSQL)
 Utilisez le **paramètres globaux** boîte de dialogue pour spécifier les paramètres de journalisation pour SSMA. En règle générale, il faudrait modifier ces paramètres uniquement lorsque vous travaillez avec le support technique.  
@@ -32,11 +30,11 @@ Pour accéder à cette boîte de dialogue, dans le **outils** menu, sélectionne
 **Au niveau des messages**  
 Les options suivantes sont disponibles sous **au niveau des Messages**:  
   
-|Option|Description|  
+|Option| Description|  
 |----------|---------------|  
 |**[toutes les catégories]**|Utilisé pour définir le niveau de journalisation pour toutes les options suivantes.|  
 |**Collecteur**|Collecte des métadonnées sur le schéma source et l’enregistre dans le projet.|  
-|**Convertisseur**|Convertit des objets de base de données source, tels que les tables et procédures stockées, des structures de correspondant [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] structures.|  
+|**Converter**|Convertit des objets de base de données source, tels que les tables et procédures stockées, des structures de correspondant [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] structures.|  
 |**Utilitaire de migration de données**|Migre les données à partir de la base de données source dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)].|  
 |**Formateur**|Sous-composant du convertisseur qui génère des scripts pour le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] schéma.|  
 |**Interface utilisateur graphique**|Messages qui s’affichent lorsque vous utilisez l’outil SSMA.|  

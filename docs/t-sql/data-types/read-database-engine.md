@@ -1,16 +1,14 @@
 ---
-title: "Read (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Read (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Read_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - Read [Database Engine]
 ms.assetid: f2b8207c-b69f-4327-a874-100b3a1f27d8
-caps.latest.revision: 
+caps.latest.revision: 13
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 72ebda7a9bd00b44983d29db2ef433c9f7d43f94
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 60575f2c5c5f1de4a7fa5b2531fb8431f13b4441
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="read-database-engine"></a>Read (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

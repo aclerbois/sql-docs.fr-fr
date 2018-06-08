@@ -1,32 +1,33 @@
 ---
 title: Configuration du serveur (Gestionnaire de configuration MDS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.mds.configmanager.srvinfopg.f1
 ms.assetid: c5a6c797-4ac9-4ab0-89c0-25ded2e3db4a
-caps.latest.revision: 
+caps.latest.revision: 11
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 66f0dd522e5a0d15f62403b2ecefa7654ca46f39
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: f1da805d3a40a37501fdcb89f126d148c38df341
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-configuration-mds-configuration-manager"></a>Configuration du serveur (Gestionnaire de configuration MDS)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Utilisez la page **Configuration du serveur** pour afficher les informations de configuration pour l’ordinateur serveur local.  
   
 ## <a name="server-configuration"></a>Configuration du serveur  

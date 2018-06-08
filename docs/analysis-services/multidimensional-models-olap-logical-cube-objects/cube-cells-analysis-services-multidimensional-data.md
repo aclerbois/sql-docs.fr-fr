@@ -1,49 +1,23 @@
 ---
-title: "Cellules (Analysis Services - données multidimensionnelles) du cube | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- storing data [Analysis Services], cells
-- hierarchies [Analysis Services], cells
-- OLAP objects [Analysis Services], cells
-- data members [Analysis Services]
-- cubes [Analysis Services], cells
-- empty cells [Analysis Services]
-- nonleaf members
-- cubes [Analysis Services], examples
-- storage [Analysis Services], cells
-- nonleaf cells
-- calculated cells [Analysis Services]
-- dimensions [Analysis Services], cells
-- cells [Analysis Services]
-- leaf members
-- leaf cells
-ms.assetid: 9945773c-a43b-40d4-91cf-3d2ebc90bca5
-caps.latest.revision: 
-author: Minewiskan
+title: Cellules (Analysis Services - données multidimensionnelles) du cube | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6542727b42e98fa73f2e485f0bf88426c442df2d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 71525eb212bebfbb06f747311d1791ddfd43cfdd
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="cube-cells-analysis-services---multidimensional-data"></a>Cellules de cube (Analysis Services - Données multidimensionnelles)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un cube est composé de cellules organisées en groupes de mesures et en dimensions. Une cellule représente l'unique intersection logique dans un cube d'un membre de chaque dimension du cube. Par exemple, le cube décrit dans le diagramme suivant contient un groupe de mesures comprenant deux mesures, organisées en fonction de trois dimensions nommées Source, Itinéraire et Temps.  
+  Un cube est composé de cellules organisées en groupes de mesures et en dimensions. Une cellule représente l'unique intersection logique dans un cube d'un membre de chaque dimension du cube. Par exemple, le cube décrit dans le diagramme suivant contient un groupe de mesures comprenant deux mesures, organisées en fonction de trois dimensions nommées Source, Itinéraire et Temps.  
   
  ![Diagramme de cube identifiant une cellule unique](../../analysis-services/multidimensional-models-olap-logical-cube-objects/media/as-cubeintro5.gif "diagramme de Cube identifiant une cellule unique")  
   
@@ -85,13 +59,13 @@ Un cube est composé de cellules organisées en groupes de mesures et en dimensi
   
  ![Diagramme de cube identifiant les cellules vides](../../analysis-services/multidimensional-models-olap-logical-cube-objects/media/as-cubeintro7.gif "diagramme de Cube identifiant les cellules vides")  
   
- Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une cellule vide est une cellule qui présente des qualités spéciales. Les cellules vides pouvant fausser les résultats des jointures croisées, des comptages, etc., un grand nombre de fonctions MDX permettent de les ignorer. Pour plus d’informations, consultez [Expressions multidimensionnelles &#40; MDX &#41; Référence](../../mdx/multidimensional-expressions-mdx-reference.md), et [Concepts clés pour MDX &#40; Analysis Services &#41; ](../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md).  
+ Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une cellule vide est une cellule qui présente des qualités spéciales. Les cellules vides pouvant fausser les résultats des jointures croisées, des comptages, etc., un grand nombre de fonctions MDX permettent de les ignorer. Pour plus d’informations, consultez [Expressions multidimensionnelles &#40;MDX&#41; référence](../../mdx/multidimensional-expressions-mdx-reference.md), et [Concepts clés dans MDX &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md).  
   
 ## <a name="security"></a>Sécurité  
- Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], l'accès aux données des cellules est géré au niveau des rôles et il peut être soigneusement contrôlé en utilisant des expressions MDX Pour plus d’informations, consultez [octroyer un accès personnalisé à la dimension de données &#40; Analysis Services &#41; ](../../analysis-services/multidimensional-models/grant-custom-access-to-dimension-data-analysis-services.md), et [octroyer un accès personnalisé à la cellule de données &#40; Analysis Services &#41; ](../../analysis-services/multidimensional-models/grant-custom-access-to-cell-data-analysis-services.md).  
+ Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], l'accès aux données des cellules est géré au niveau des rôles et il peut être soigneusement contrôlé en utilisant des expressions MDX Pour plus d’informations, consultez [octroyer un accès personnalisé aux données de dimension &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-custom-access-to-dimension-data-analysis-services.md), et [octroyer un accès personnalisé aux données des cellules &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-custom-access-to-cell-data-analysis-services.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Stockage de cube &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-storage-analysis-services-multidimensional-data.md)   
+ [Stockage de cube &#40;Analysis Services - données multidimensionnelles&#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-storage-analysis-services-multidimensional-data.md)   
  [Agrégations et conceptions d’agrégation](../../analysis-services/multidimensional-models-olap-logical-cube-objects/aggregations-and-aggregation-designs.md)  
   
   

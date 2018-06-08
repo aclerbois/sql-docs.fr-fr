@@ -1,30 +1,26 @@
 ---
-title: "Visionneuse du fichier journal | Microsoft Docs"
-ms.custom: 
+title: Visionneuse du fichier journal | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: logs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Log File Viewer
 ms.assetid: a4ea7fc8-1cb2-4c98-bc86-8991c5e748b2
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 43a3fb0f67c942d95a1300ddf880717fea221a66
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 44f5ed33bef9ff57e6bc0c4262a950069ec5b480
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="log-file-viewer"></a>Visionneuse du fichier journal
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

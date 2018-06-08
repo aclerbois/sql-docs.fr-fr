@@ -1,17 +1,14 @@
 ---
 title: Restaurer des pages (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.restorepage.general.f1
 helpviewer_keywords:
@@ -22,16 +19,15 @@ helpviewer_keywords:
 - pages [SQL Server], damaged
 - restoring [SQL Server], pages
 ms.assetid: 07e40950-384e-4d84-9ac5-84da6dd27a91
-caps.latest.revision: 
+caps.latest.revision: 67
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3e59972bf634c4326f14081d7909b0926161d90b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: ad3206ff6ccec7db89dcf745b4dd03066e076589
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-pages-sql-server"></a>Restaurer des pages (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

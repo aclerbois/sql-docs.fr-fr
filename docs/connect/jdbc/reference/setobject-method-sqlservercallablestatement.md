@@ -1,30 +1,29 @@
 ---
-title: "Méthode setObject (SQLServerCallableStatement) | Documents Microsoft"
-ms.custom: 
+title: Méthode setObject (SQLServerCallableStatement) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerCallableStatement.setObject
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerCallableStatement.setObject
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 7110f6c5-4af3-4b50-a4d4-1bae1876c70d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 77f3add6ad521d097dccc09a801db3acf9bb37a3
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8d76b45755752297290ca14625aa4075297e3ef5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setobject-method-sqlservercallablestatement"></a>Méthode setObject (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -1,33 +1,30 @@
 ---
 title: Programmation ADO en VBScript | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - ADO, VBScript
 - VBScript [ADO]
 ms.assetid: 6aaaf6d0-1376-4473-bea6-b81f2645a9ac
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f725eec0027d1c06715b72785a1fe06a4fa4cedb
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 495a13d938ef9ab9d82f6158a222505c4f748c92
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="vbscript-ado-programming"></a>Programmation ADO en VBScript
 ## <a name="creating-an-ado-project"></a>Création d’un projet ADO  

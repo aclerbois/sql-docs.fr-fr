@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLAllocEnv | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLAllocEnv
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLAllocEnv
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLAllocEnv
-helpviewer_keywords: SQLAllocEnv function [ODBC]
+f1_keywords:
+- SQLAllocEnv
+helpviewer_keywords:
+- SQLAllocEnv function [ODBC]
 ms.assetid: 00bac0c1-346b-4e48-901a-06ba4557b944
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3c08055433e63da2ade87d764b47c51ef211d7d1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 17c59abf9c548419db1139d7fcf57a0963ea0fc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlallocenv-function"></a>SQLAllocEnv (fonction)
 **Mise en conformité**  

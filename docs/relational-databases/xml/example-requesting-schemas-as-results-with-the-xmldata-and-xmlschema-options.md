@@ -1,35 +1,32 @@
 ---
-title: "Exemple : demande de schémas comme résultats à l’aide des options XMLDATA et XMLSCHEMA | Microsoft Docs"
-ms.custom: 
+title: 'Exemple : demande de schémas comme résultats à l’aide des options XMLDATA et XMLSCHEMA | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RAW mode, requesting schema example
 - RAW mode, with XMLDATA and XMLSCHEMA
 ms.assetid: 3504ca38-be66-42b2-8dab-f499c9584840
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc4ba3242b22ac168b1469d1bd3870218839ea7b
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: f3da4c5ab6d1286c908a0f39807d1a3dc7e9017b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="example-requesting-schemas-as-results-with-the-xmldata-and-xmlschema-options"></a>Exemple : demande de schémas comme résultats à l'aide des options XMLDATA et XMLSCHEMA
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-La requête suivante retourne le schéma XML-DATA qui décrit la structure du document.  
+  La requête suivante retourne le schéma XML-DATA qui décrit la structure du document.  
   
 ## <a name="example"></a> Exemple  
   
@@ -60,7 +57,7 @@ GO
 ```  
   
 > [!NOTE]  
->  <`Schema`> est déclaré en tant qu'espace de noms. Pour éviter les conflits d'espaces de noms lorsque plusieurs schémas XML-Data sont interrogés dans des requêtes FOR XML différentes, l'identificateur d'espace de noms, `Schema1` dans cet exemple, est modifié à chaque exécution de requête. L’identificateur d’espace de noms est composé de **Schema*n***, où ***n*** est un entier.  
+>  <`Schema`> est déclaré en tant qu'espace de noms. Pour éviter les conflits d'espaces de noms lorsque plusieurs schémas XML-Data sont interrogés dans des requêtes FOR XML différentes, l'identificateur d'espace de noms, `Schema1` dans cet exemple, est modifié à chaque exécution de requête. L’identificateur d’espace de noms est composé de**Schema*n***, où ***n*** est un entier.  
   
  En spécifiant l'option `XMLSCHEMA` , vous pouvez demander le schéma XSD pour le résultat.  
   

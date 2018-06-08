@@ -1,35 +1,33 @@
 ---
-title: "Configurer la stratégie de basculement automatique flexible | Microsoft Docs"
-ms.custom: 
+title: Configurer la stratégie de basculement automatique flexible | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], flexible failover policy
 - Availability Groups [SQL Server], failover
 - failover [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 1ed564b4-9835-4245-ae35-9ba67419a4ce
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 24
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7e82b63c2bbc3d3788272f065d1cdb795decc8b1
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: '>= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7980cc5f02b5766ef30e06440cb6dfa30fdc5560
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768715"
 ---
 # <a name="configure-flexible-automatic-failover-policy"></a>Configurer la stratégie de basculement automatique flexible
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
   Cette rubrique explique comment configurer la stratégie de basculement flexible pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Une stratégie de basculement flexible vous offre un contrôle granulaire sur les conditions qui entraînent un basculement automatique d'un groupe de disponibilité. En changeant les conditions d'échec qui déclenchent un basculement automatique et la fréquence des contrôles d'intégrité, vous pouvez augmenter ou diminuer la probabilité d'un basculement automatique pour assurer le contrat de niveau de service relatif à la haute disponibilité.  
   
@@ -91,7 +89,7 @@ ms.lasthandoff: 02/23/2018
   
          La relation de ces valeurs entières avec les niveaux de condition d'échec est la suivante :  
   
-        |[!INCLUDE[tsql](../../../includes/tsql-md.md)] Valeur|Niveau|Le basculement automatique démarre lorsque…|  
+        |[!INCLUDE[tsql](../../../includes/tsql-md.md)] Valeur|Level|Le basculement automatique démarre lorsque…|  
         |------------------------------|-----------|-------------------------------------------|  
         | 1|Un|Le serveur est arrêté. Le service SQL Server s'arrête à cause d'un basculement ou d'un redémarrage.|  
         |2|Deux|Le serveur ne répond pas. Toutes les conditions qui correspondent à une valeur inférieure sont remplies, le service SQL Server est connecté au cluster et le seuil du délai d'attente de contrôle d'intégrité est dépassé, ou le réplica principal actuel est dans un état d'échec.|  
@@ -101,7 +99,7 @@ ms.lasthandoff: 02/23/2018
   
          Pour plus d’informations sur les niveaux de condition de basculement, consultez [Stratégie flexible pour le basculement automatique d’un groupe de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/flexible-automatic-failover-policy-availability-group.md).  
   
-    -   Pour configurer le seuil du délai d’attente de contrôle d’intégrité, utilisez l’optionHEALTH_CHECK_TIMEOUT = *n* , où *n* est un entier compris entre 15000 millisecondes (15 secondes) et 4294967295 millisecondes. La valeur par défaut est 30 000 millisecondes (ou 30 secondes).  
+    -   Pour configurer le seuil du délai d’attente de contrôle d’intégrité, utilisez l’optionHEALTH_CHECK_TIMEOUT = *n*, où *n* est un entier compris entre 15000 millisecondes (15 secondes) et 4294967295 millisecondes. La valeur par défaut est 30 000 millisecondes (ou 30 secondes).  
   
          Par exemple, l'instruction [!INCLUDE[tsql](../../../includes/tsql-md.md)] suivante modifie le seuil du délai d'attente de contrôle d'intégrité d'un groupe de disponibilité existant, `AG1`, sur 60 000 millisecondes (une minute).  
   
@@ -137,7 +135,7 @@ ms.lasthandoff: 02/23/2018
         -FailureConditionLevel OnServerDown  
         ```  
   
-    -   Pour définir le seuil du délai d’attente de vérification d’intégrité, utilisez le paramètre *HealthCheckTimeout***n*, où *n* est un entier compris entre 15 000 millisecondes (15 secondes) et 4 294 967 295 millisecondes. La valeur par défaut est 30 000 millisecondes (ou 30 secondes).  
+    -   Pour définir le seuil du délai d’attente de contrôle d’intégrité, utilisez le paramètre **HealthCheckTimeout***n*, où *n* est un entier compris entre 15 000 millisecondes (15 secondes) et 4 294 967 295 millisecondes. La valeur par défaut est 30 000 millisecondes (ou 30 secondes).  
   
          Par exemple, la commande suivante modifie le seuil du délai d'attente de contrôle d'intégrité d'un groupe de disponibilité existant, `AG1`, sur 120 000 millisecondes (deux minutes).  
   

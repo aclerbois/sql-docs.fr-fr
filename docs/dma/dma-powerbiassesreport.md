@@ -1,29 +1,27 @@
 ---
-title: "Un rapport sur votre évaluation consolidée à l’aide de Power BI (données Assistant Migration SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Un rapport sur votre évaluation consolidée à l’aide de Power BI (données Assistant Migration SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 09/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
-helpviewer_keywords: Data Migration Assistant, Assess
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
+helpviewer_keywords:
+- Data Migration Assistant, Assess
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 62f3ed0802a0a7570109bdae99151c8c6ce4fa01
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 0c7479a1e55d90d59fbcc289978b943a8cd3c195
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-on-your-consolidated-assessments-by-using-power-bi-data-migration-assistant"></a>Un rapport sur votre évaluation consolidée à l’aide de Power BI (Assistant Migration de données)
 

@@ -1,16 +1,14 @@
 ---
 title: SOME | ANY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
@@ -27,16 +25,15 @@ helpviewer_keywords:
 - SOME | ANY keyword
 - single-column set of values [SQL Server]
 ms.assetid: 1f717ad6-f67b-4980-9397-577ecb0e5789
-caps.latest.revision: 
+caps.latest.revision: 41
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d81a0d9fb87a11aa7bc109c003d7b723c20c8e77
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 62f3343b6cf7ffad9bf866b3a731b8c71d962855
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="some--any-transact-sql"></a>SOME | ANY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -70,7 +67,7 @@ scalar_expression { = | < > | ! = | > | > = | ! > | < | < = | ! < }
  **Booléen**  
   
 ## <a name="result-value"></a>Valeur des résultats  
- SOME ou ANY retourne la valeur **TRUE** lorsque la comparaison spécifiée a la valeur TRUE pour une paire (*scalar_expression***,***x*) où *x* est une valeur du jeu de valeurs sur une seule colonne ; dans le cas contraire, la valeur **FALSE** est retournée.  
+ SOME ou ANY retourne la valeur **TRUE** lorsque la comparaison spécifiée a la valeur TRUE pour une paire (*scalar_expression ***,*** x*) où *x* est une valeur du jeu de valeurs sur une seule colonne ; dans le cas contraire, la valeur **FALSE** est retournée.  
   
 ## <a name="remarks"></a>Notes   
  SOME nécessite que *scalar_expression* corresponde à au moins une valeur retournée par la sous-requête. Pour les instructions qui nécessitent que l’argument *scalar_expression* corresponde à toutes les valeurs retournées par la sous-requête, consultez [ALL &#40;Transact-SQL&#41;](../../t-sql/language-elements/all-transact-sql.md). Par exemple, si la sous-requête retourne les valeurs 2 et 3, *scalar_expression* = SOME (sous-requête) prend la valeur TRUE pour une *scalar_expression* égale à 2. Si la sous-requête retourne les valeurs 2 et 3, l’instruction *scalar_expression* = ALL (sous-requête) donne FALSE comme résultat étant donné que certaines des valeurs de la sous-requête (à savoir 3) ne répondent pas aux critères de l’expression.  

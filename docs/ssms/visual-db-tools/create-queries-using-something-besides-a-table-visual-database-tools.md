@@ -1,33 +1,32 @@
 ---
-title: "Créer des requêtes qui utilisent autre chose qu’une table | Microsoft Docs"
-ms.custom: 
+title: Créer des requêtes qui utilisent autre chose qu’une table | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - user-defined functions [SQL Server], queries
 - queries [SQL Server], creating
 ms.assetid: 8e4a1f0a-8a42-4733-be8d-e21d6dbddb33
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ac44c00dd2ffb0a37a4a7a53a33dbddb54df49f9
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: ee54d948bb5acebaf55a3b0137677bf72013570d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-queries-using-something-besides-a-table-visual-database-tools"></a>Créer des requêtes qui utilisent autre chose qu'une table (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour écrire une requête d’extraction, il faut toujours formuler quelles sont les colonnes et les lignes à obtenir ainsi que le lieu où le processeur de requêtes trouve les données d’origine. En général, une table ou plusieurs tables jointes constituent les données d'origine. Mais la source des données ne se trouve pas forcément dans une table. Les données d'origine peuvent venir de vues, de requêtes, de synonymes ou de fonctions définies par l'utilisateur et retournant une table.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Pour écrire une requête d'extraction, il faut toujours formuler quelles sont les colonnes et les lignes à obtenir ainsi que le lieu où le processeur de requêtes trouve les données d'origine. En général, une table ou plusieurs tables jointes constituent les données d'origine. Mais la source des données ne se trouve pas forcément dans une table. Les données d'origine peuvent venir de vues, de requêtes, de synonymes ou de fonctions définies par l'utilisateur et retournant une table.  
   
 ## <a name="using-a-view-in-place-of-a-table"></a>Utilisation d'une vue à la place d'une table  
 Il est possible de sélectionner des lignes d'une vue. Par exemple, une base de données contient une vue « ExpensiveBooks » dont tous les titres ont un prix supérieur à 19.99 (19,99 dollars). La définition de la vue peut se présenter de la manière suivante :  

@@ -1,28 +1,22 @@
 ---
-title: Obtenir et configurer un serveur de chargement (SQL Server PDW)
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Obtenir et configurer un serveur de chargement comme un système de Windows non appliance pour l’envoi des chargements de données pour SQL Server Parallel Data Warehouse."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: a434b174-a818-4f73-b218-264619bab664
-caps.latest.revision: "19"
-ms.openlocfilehash: d4a91dc3216945b3f473e1b5b131333ad8d210d3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Obtenir et configurer un serveur de chargement - Parallel Data Warehouse | Documents Microsoft
+description: Cet article décrit comment acquérir et configurez un serveur de chargement comme un système de Windows non appliance pour l’envoi des chargements de données à Parallel Data Warehouse (PDW).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: a796616ad76ba62ea4174cf22c1517c489305055
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="acquire-and-configure-a-loading-server"></a>Obtenir et configurer un serveur de chargement
-Cette rubrique décrit comment acquérir et configurez un serveur de chargement comme un système de Windows non appliance pour l’envoi des chargements de données pour SQL Server Parallel Data Warehouse (PDW).  
+# <a name="acquire-and-configure-a-loading-server-for-parallel-data-warehouse"></a>Obtenir et configurer un serveur de chargement pour Parallel Data Warehouse
+Cet article décrit comment acquérir et configurez un serveur de chargement comme un système de Windows non appliance pour l’envoi des chargements de données à Parallel Data Warehouse (PDW).  
   
 ## <a name="Basics"></a>Principes de base  
 Le chargement du serveur :  
@@ -91,13 +85,13 @@ Si vous envisagez d’utiliser les Services d’intégration pour le chargement,
 --> 
   
 ## <a name="Step5"></a>Étape 5 : Démarrer le chargement  
-Vous êtes maintenant prêt à commencer le chargement des données. Pour plus d'informations, consultez :  
+Vous êtes maintenant prêt à commencer le chargement des données. Pour plus d'informations, consultez :  
   
 1.  [Outil de ligne de commande du chargement de dwloader](dwloader.md)  
   
 2.  [Vue d’ensemble de la charge](load-overview.md)  
   
-## <a name="performance"></a>Performances  
+## <a name="performance"></a>Performance  
 Pour optimiser les performances sur Windows Server 2012 et au-delà de chargement, activer l’initialisation instantanée de fichiers afin que lorsque les données sont remplacées, le système d’exploitation n’écrase pas les données existantes par des zéros. S’il s’agit d’un risque de sécurité, car il existe encore des données précédentes sur les disques, veillez à désactiver l’initialisation instantanée des fichiers.  
   
 ## <a name="Security"></a>Avis de sécurité  

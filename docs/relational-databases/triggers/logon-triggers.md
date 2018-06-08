@@ -1,33 +1,31 @@
 ---
-title: "Déclencheurs de connexion | Microsoft Docs"
-ms.custom: 
+title: Déclencheurs de connexion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/19/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - logon triggers
 - login triggers
 helpviewer_keywords:
 - triggers [SQL Server], logon
 ms.assetid: 2f0ebb2f-de10-482d-9806-1a5de5b312b8
-caps.latest.revision: 
+caps.latest.revision: 13
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a22d0170dfe776207ca5fe9ecb79cbce3684e797
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: b3043b79f55b7968104f87e590dc10023f87ac6b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="logon-triggers"></a>Déclencheurs de connexion
 [!INCLUDE[tsql-appliesto-ss2008-xxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
 title: ALTER DATABASE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_DATABASE_TSQL
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - collations [SQL Server], modifying
 - database mirroring [SQL Server], Transact-SQL
 ms.assetid: 15f8affd-8f39-4021-b092-0379fc6983da
-caps.latest.revision: 
+caps.latest.revision: 282
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b8e96cad90ff94b1f4e8f110d13b87668809606f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 5e0e79fb6a74373268e6077971662b323623cc54
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-database-transact-sql"></a>ALTER DATABASE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -150,7 +147,7 @@ ALTER DATABASE { database_name  | CURRENT }
   
  L'instruction ALTER DATABASE doit être exécutée en mode de validation automatique (mode de gestion des transactions par défaut) et n'est pas autorisée dans une transaction explicite ou implicite.  
   
- L'état d'un fichier de base de données (par exemple, en ligne ou hors connexion) est préservé indépendamment de l'état de la base de données. Pour plus d’informations, consultez [États des fichiers](../../relational-databases/databases/file-states.md). L'état des fichiers dans un groupe de fichiers détermine la disponibilité de tout le groupe de fichiers. Pour qu'un groupe de fichiers soit disponible, tous ses fichiers doivent être en ligne. Si un groupe de fichiers est hors connexion, toute tentative d'accès au groupe par une instruction SQL échoue avec une erreur. Lorsque vous créez des plans de requête pour les instructions SELECT, l'optimiseur de requête évite les index non-cluster et les vues indexées qui résident dans les groupes de fichiers hors connexion. Cela permet aux instructions de s'exécuter correctement. Cependant, si le groupe de fichiers hors connexion contient le segment ou l'index cluster d'une table cible, les instructions SELECT échouent. De plus, toute instruction INSERT, UPDATE ou DELETE modifiant une table assortie d'un index dans un groupe de fichiers hors connexion ne peut être exécutée.  
+ L'état d'un fichier de base de données (par exemple, en ligne ou hors connexion) est préservé indépendamment de l'état de la base de données. Pour plus d’informations, consultez [États des fichiers](../../relational-databases/databases/file-states.md). L'état des fichiers dans un groupe de fichiers détermine la disponibilité de tout le groupe de fichiers. Pour qu'un groupe de fichiers soit disponible, tous ses fichiers doivent être en ligne. Si un groupe de fichiers est hors connexion, toute tentative d'accès au groupe par une instruction SQL échoue avec une erreur. Lorsque vous créez des plans de requête pour les instructions SELECT, l'optimiseur de requête évite les index non cluster et les vues indexées qui résident dans les groupes de fichiers hors connexion. Cela permet aux instructions de s'exécuter correctement. Cependant, si le groupe de fichiers hors connexion contient le segment ou l'index cluster d'une table cible, les instructions SELECT échouent. De plus, toute instruction INSERT, UPDATE ou DELETE modifiant une table assortie d'un index dans un groupe de fichiers hors connexion ne peut être exécutée.  
   
  Lorsque l'état d'une base de données est RESTORING, les instructions ALTER DATABASE, pour la plupart, échouent. La définition des options de mise en miroir de bases de données fait exception. Une base de données peut être à l'état RESTORING durant une opération de restauration active, ou lorsqu'une opération de restauration d'un fichier de base de données ou d'un fichier journal échoue car un fichier de sauvegarde est corrompu.  
   
@@ -218,7 +215,7 @@ ALTER DATABASE { database_name  | CURRENT }
 Les noms en double qui résultent du nouveau classement entraînent l'échec de l'action de modification et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne un message d'erreur spécifiant l'espace de noms en cause.  
   
 ## <a name="viewing-database-information"></a>Affichage des informations de bases de données  
- Vous pouvez utiliser les vues de catalogue, les fonctions système et les procédures stockées du système pour retourner des informations sur les bases de données, les fichiers et les groupes de fichiers.  
+ Vous pouvez utiliser les affichages catalogue, les fonctions système et les procédures stockées du système pour retourner des informations sur les bases de données, les fichiers et les groupes de fichiers.  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation ALTER sur la base de données.  

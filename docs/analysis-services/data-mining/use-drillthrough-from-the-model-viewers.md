@@ -1,31 +1,23 @@
 ---
-title: "Utiliser l’extraction des visionneuses de modèle | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: e5e065ad-c688-4c2c-8c82-7f3038e04915
-caps.latest.revision: 
-author: Minewiskan
+title: Utiliser l’extraction des visionneuses de modèle | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 31ac0cffe6656c5d644b5424b56f150572dc9af6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9c1d636b4435aca63ffadbef3b45e93f3215a40c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-drillthrough-from-the-model-viewers"></a>Utiliser l'extraction des visionneuses de modèle
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Selon le type de modèle, vous pouvez utiliser l'extraction des visionneuses d'exploration sur l'onglet **Visionneuse de modèle d'exploration de données** du Concepteur d'exploration de données pour explorer les cas utilisés dans le modèle d'exploration de données ou pour afficher des colonnes supplémentaires de la structure d'exploration de données. Bien que de nombreux types de modèles ne prennent pas en charge l'extraction, car les séquences du modèle ne peuvent pas être directement liées à des cas spécifiques, les types de modèles suivants prennent en charge l'extraction.  
+  Selon le type de modèle, vous pouvez utiliser l'extraction des visionneuses d'exploration sur l'onglet **Visionneuse de modèle d'exploration de données** du Concepteur d'exploration de données pour explorer les cas utilisés dans le modèle d'exploration de données ou pour afficher des colonnes supplémentaires de la structure d'exploration de données. Bien que de nombreux types de modèles ne prennent pas en charge l'extraction, car les séquences du modèle ne peuvent pas être directement liées à des cas spécifiques, les types de modèles suivants prennent en charge l'extraction.  
   
  Notez que l'extraction doit avoir été activée sur le modèle, et vous devez disposer des autorisations appropriées. L'option d'extraction peut également être désactivée si le modèle est dans un état non traité, que le modèle ait été traité précédemment et comporte un contenu ou non. Pour récupérer des données de cas de modèle à l'aide de l'extraction, le cache de la structure et le modèle doivent être actifs.  
   

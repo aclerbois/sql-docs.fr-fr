@@ -1,16 +1,15 @@
 ---
 title: sp_publication_validation (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_publication_validation
 ms.assetid: 06be2363-00c0-4936-97c1-7347f294a936
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c08dc184475526abd962ab97f52ccfbb8c405e8f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: f893c6a42d16c9d36d2a28a2c77c80bc62fa56bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sppublicationvalidation-transact-sql"></a>sp_publication_validation (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +48,7 @@ sp_publication_validation [ @publication = ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [**@publication=**] **'***publication'*  
+ [**@publication=**] **' *** publication'*  
  Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
  [**@rowcount_only=**] *rowcount_only*  
@@ -74,7 +72,7 @@ sp_publication_validation [ @publication = ] 'publication'
  [  **@shutdown_agent=**] *shutdown_agent*  
  Indique si l'Agent de distribution doit se fermer immédiatement à la fin de la validation. *shutdown_agent* est **bits**, avec une valeur par défaut **0**. Si **0**, l’agent de réplication ne s’arrête pas. Si **1**, l’agent de réplication s’arrête après le dernier article est validé.  
   
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Spécifie un serveur de publication non [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -90,13 +88,13 @@ sp_publication_validation [ @publication = ] 'publication'
   
  Si votre application comporte une mise à jour immédiate des abonnés, **sp_publication_validation** peut détecter des erreurs inexistantes. **sp_publication_validation** calcule d’abord le nombre de lignes ou la somme de contrôle sur le serveur de publication, puis sur l’abonné. Étant donné que les déclencheurs à mise à jour immédiate peuvent propager une mise à jour de l'Abonné vers le serveur de publication une fois que le calcul du nombre de lignes ou de la somme de contrôle est terminé au niveau du serveur de publication, mais avant qu'il soit effectué au niveau de l'Abonné, les valeurs peuvent changer. Pour vous assurer que les valeurs pour l'Abonné et le serveur de publication ne changent pas au cours de la validation d'une publication, arrêtez le service Microsoft Distributed Transaction Coordinator (MS DTC) sur le serveur de publication durant cette validation.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_publication_validation**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Valider des données sur l’abonné](../../relational-databases/replication/validate-data-at-the-subscriber.md)   
- [sp_article_validation &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md)   
- [sp_table_validation &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-table-validation-transact-sql.md)   
+ [sp_article_validation &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md)   
+ [sp_table_validation &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-table-validation-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

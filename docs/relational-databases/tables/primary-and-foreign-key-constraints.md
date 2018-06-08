@@ -1,33 +1,30 @@
 ---
-title: "Contraintes de clé primaire et de clé étrangère | Microsoft Docs"
-ms.custom: 
+title: Contraintes de clé primaire et de clé étrangère | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - foreign keys [SQL Server], cascading referential integrity
 - FOREIGN KEY constraints
 - foreign keys [SQL Server]
 - foreign keys [SQL Server], about foreign key constraints
 ms.assetid: 31fbcc9f-2dc5-4bf9-aa50-ed70ec7b5bcd
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 641c3e3916cced8ce6ee995111f75f6865731fdc
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2d5c008894688c5902752dd853561e6ea142fd86
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="primary-and-foreign-key-constraints"></a>Contraintes de clé primaire et de clé étrangère
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

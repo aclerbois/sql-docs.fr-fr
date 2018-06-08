@@ -1,27 +1,24 @@
 ---
-title: "À l’aide de séquences d’échappement SQL | Documents Microsoft"
-ms.custom: 
+title: À l’aide de séquences d’échappement SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 00f9e25a-088e-4ac6-aa75-43eacace8f03
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: df370e44bf2af1a41d926866ea0c2427cccffe59
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 60af5198eb78ad23bf8ad55a1dc24690b91130ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-sql-escape-sequences"></a>Utilisation de séquences d'échappement SQL
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -69,7 +66,7 @@ LIKE '\\_%' {escape '\\'}");
 {fn functionName}  
 ```  
   
- où `functionName` est une fonction prise en charge par le pilote JDBC. Exemple :  
+ où `functionName` est une fonction prise en charge par le pilote JDBC. Par exemple :  
   
 ```  
 SELECT {fn UCASE(Name)} FROM Employee  
@@ -99,7 +96,7 @@ SELECT {fn UCASE(Name)} FROM Employee
 |t|Time|hh:mm:ss [1]|  
 |ts|TimeStamp|aaaa-mm-jj hh:mm:ss[.f...]|  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 UPDATE Orders SET OpenDate={d '2005-01-31'}   
@@ -135,7 +132,7 @@ table-reference {LEFT | RIGHT | FULL} OUTER JOIN
   
  où `table-reference` est un nom de table et `search-condition` est la condition de jointure que vous souhaitez utiliser pour les tables.  
   
- Exemple :  
+ Par exemple :  
   
 ```  
 SELECT Customers.CustID, Customers.Name, Orders.OrderID, Orders.Status   

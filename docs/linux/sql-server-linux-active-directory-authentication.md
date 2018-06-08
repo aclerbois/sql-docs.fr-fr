@@ -6,21 +6,18 @@ ms.date: 02/23/2018
 ms.author: meetb
 manager: craigg
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
+ms.prod: sql
 ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 helpviewer_keywords:
 - Linux, AAD authentication
-ms.workload: On Demand
-ms.openlocfilehash: f6acfbf1138507100a0b5b5a486d0e6288f8b372
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: df3cea6d47d50464fe0b8a7f2573c230585b9cb1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tutorial-use-active-directory-authentication-with-sql-server-on-linux"></a>Didacticiel : L’authentification utilisation d’Active Directory avec SQL Server sur Linux
 

@@ -1,30 +1,29 @@
 ---
-title: "Méthode de supportsANSI92EntryLevelSQL (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode de supportsANSI92EntryLevelSQL (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsANSI92EntryLevelSQL
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsANSI92EntryLevelSQL
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: a3fffc08-7254-4af7-bbae-8ff591fbd5ec
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 31c7900d7290b0fbea591d0240e8641d18ba18bd
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b46d45e26d2adc52c81963b1162869e1c52f245c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsansi92entrylevelsql-method-sqlserverdatabasemetadata"></a>Méthode supportsANSI92EntryLevelSQL (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

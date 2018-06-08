@@ -1,30 +1,27 @@
 ---
-title: "À l’aide d’un objet Recordset | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: À l’aide d’un objet Recordset | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connections [ADO]
 ms.assetid: 01c630d8-eb35-4bd0-a99f-7c0f85316cc1
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 737b0b01da5f339c1fbda1cf234301dfafad4d19
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2f72e3283e58276aca4846a81a63603ed9bac856
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-a-recordset-object"></a>À l’aide d’un objet Recordset
 Vous pouvez également utiliser **Recordset.Open** pour établir une connexion implicitement et d’émettre une commande sur la connexion en une seule opération. Par exemple, dans Visual Basic :  

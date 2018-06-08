@@ -1,31 +1,31 @@
 ---
-title: "Options (Environnement - Aide - Page Général) | Microsoft Docs"
-ms.custom: 
+title: Options (Environnement - Aide - Page Général) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-menu
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: VS.ToolsOptionsPages.Environment.Help.General
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- VS.ToolsOptionsPages.Environment.Help.General
 ms.assetid: deaf23d6-6cbe-4984-ab09-71d2a7ba06c8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d5b9be182f2af8ab60469591d63fb847da20f244
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: dfc7a585b40acca4658174b403207ad8480abf46
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="options-environment---help---general-page"></a>Options (Environnement - Aide - Page Général)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez la boîte de dialogue **Options** pour choisir des ensembles de documentation et déterminer si les rubriques d’aide doivent être affichées à l’intérieur de [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)] ou dans une fenêtre extérieure distincte. Pour y accéder, cliquez sur **Options** dans le menu **Outils** , développez **Aide** dans le nœud **Environnement** et cliquez sur **Général**.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Utilisez la boîte de dialogue **Options** pour choisir des ensembles de documentation et déterminer si les rubriques d’aide doivent être affichées à l’intérieur de [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)] ou dans une fenêtre extérieure distincte. Pour y accéder, cliquez sur **Options** dans le menu **Outils** , développez **Aide** dans le nœud **Environnement** et cliquez sur **Général**.  
   
 > [!NOTE]  
 > Les changements apportés aux options de cette page ne prennent effet qu'après le redémarrage de l'environnement.  

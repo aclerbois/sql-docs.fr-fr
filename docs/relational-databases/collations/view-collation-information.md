@@ -1,30 +1,29 @@
 ---
 title: Afficher des informations de classement | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: collations
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - collations [SQL Server], view
 ms.assetid: 1338b4ea-7142-44bc-a3b9-44e54431405f
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4095965899da005d767bb124806fbb116379a1f6
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dde0f2278511cfe905bbc64d3b6d142ebad93e9b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-collation-information"></a>Afficher des informations de classement
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

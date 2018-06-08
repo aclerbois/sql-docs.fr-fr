@@ -1,33 +1,28 @@
 ---
-title: "Statistiques des requêtes actives | Microsoft Docs"
-ms.custom: 
+title: Statistiques des requêtes actives | Microsoft Docs
+ms.custom: ''
 ms.date: 10/28/2015
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - query statistics [SQL Server] live query stats
 - live query statistics
 - debugging [SQL Server], live query stats
 - statistics [SQL Server], live query statistics
 ms.assetid: 07f8f594-75b4-4591-8c29-d63811d7753e
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1351bb65779cd53bc87fbbe1f6e1ce2f29beddc0
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.openlocfilehash: 1ea9f40ecda2d22e9117ae9156282e42b5101cd9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="live-query-statistics"></a>Statistiques des requêtes dynamiques
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

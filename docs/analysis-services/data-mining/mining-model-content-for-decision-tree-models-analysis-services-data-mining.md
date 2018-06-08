@@ -1,35 +1,23 @@
 ---
-title: "Contenu pour les modèles d’arbre de décision du modèle d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- mining model content, decision tree models
-- decision tree algorithms [Analysis Services]
-- decision trees [Analysis Services]
-ms.assetid: ac358399-10f8-4238-be32-a914a2e49048
-caps.latest.revision: 
-author: Minewiskan
+title: Contenu pour les modèles d’arbre de décision du modèle d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3e09cceda5b62fe4112fe15a7a69b520134a733b
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 493ee56380a3e4665b10cbe27ef1cd1ea764438b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mining-model-content-for-decision-tree-models-analysis-services---data-mining"></a>Mining Model Content for Decision Tree Models (Analysis Services - Data Mining)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit le contenu du modèle d'exploration de données spécifique aux modèles utilisant l'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees). Pour obtenir une explication générale du contenu du modèle d’exploration de données pour tous les types de modèles, consultez [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md). Il est important de se rappeler que l'algorithme MDT (Microsoft Decision Trees) est un algorithme hybride qui peut créer des modèles avec des fonctions très différentes : un arbre de décision peut représenter des associations, des règles ou même une régression linéaire. La structure de l'arbre est essentiellement la même, mais le mode d’interprétation des informations dépendra de l'objectif visé par la création du modèle.  
+  Cette rubrique décrit le contenu du modèle d'exploration de données spécifique aux modèles utilisant l'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees). Pour obtenir une explication générale du contenu du modèle d’exploration de données pour tous les types de modèles, consultez [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md). Il est important de se rappeler que l'algorithme MDT (Microsoft Decision Trees) est un algorithme hybride qui peut créer des modèles avec des fonctions très différentes : un arbre de décision peut représenter des associations, des règles ou même une régression linéaire. La structure de l'arbre est essentiellement la même, mais le mode d’interprétation des informations dépendra de l'objectif visé par la création du modèle.  
   
 ##  <a name="bkmk_Top"></a> Présentation de la structure d'un modèle d’arbre de décision  
  Un modèle d’arbre de décision comprend un nœud parent unique qui représente le modèle et ses métadonnées. Sous le nœud parent se trouvent des arbres indépendants qui représentent les attributs prédictibles sélectionnés. Par exemple, si vous installez votre modèle d'arbre de décision pour prédire si les clients achèteront un produit et pour fournir des entrées correspondant au genre et au revenu, le modèle créera une arborescence unique pour l'attribut d'achat, avec de nombreuses branches en fonction des conditions liées au genre et au revenu.  
@@ -213,7 +201,7 @@ Cette rubrique décrit le contenu du modèle d'exploration de données spécifiq
  L'attribut représenté par le fragment XML peut être simple ou complexe. Un attribut simple contient le nom de la colonne du modèle, ainsi que la valeur de l’attribut. Si la colonne du modèle contient une table imbriquée, l'attribut de table imbriquée est représenté sous la forme d’une concaténation du nom de la table, de la valeur de clé et de l'attribut.  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] prend en charge la version 2.0 du PMML standard, avec les extensions pour prendre en charge l’utilisation de la table imbriquée. Si vos données contiennent des tables imbriquées et si vous générez une version PMML du modèle, tous les éléments du modèle qui incluent les prédicats sont marqués comme extensions.  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] prend en charge la version 2.0 du PMML standard, ainsi que les extensions permettant l'utilisation de la table imbriquée. Si vos données contiennent des tables imbriquées et si vous générez une version PMML du modèle, tous les éléments du modèle qui incluent les prédicats sont marqués comme extensions.  
   
  [Top](#bkmk_Top)  
   
@@ -301,7 +289,7 @@ Cette rubrique décrit le contenu du modèle d'exploration de données spécifiq
  Pour plus d’informations sur les nœuds de régression, consultez [Contenu du modèle d’exploration de données pour les modèles de régression linéaire &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-for-linear-regression-models-analysis-services-data-mining.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu du modèle d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
+ [Contenu du modèle d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
  [Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md)   
  [Requêtes d’exploration de données](../../analysis-services/data-mining/data-mining-queries.md)   
  [Algorithme MDT (Microsoft Decision Trees)](../../analysis-services/data-mining/microsoft-decision-trees-algorithm.md)  

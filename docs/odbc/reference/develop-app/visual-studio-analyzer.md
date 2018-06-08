@@ -1,30 +1,27 @@
 ---
 title: Visual Studio Analyzer | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio Analyzer [ODBC], about Visual Studio Analyzer
 - Visual Studio Analyzer [ODBC]
 ms.assetid: 673b1aad-ad38-4693-91f2-f4515f476d9b
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: dcbff31e966362d29ea3b902097dd677aef96119
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e88d1b727dfadf153f8dea9d85bccd27db03e830
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-studio-analyzer"></a>Visual Studio Analyzer
 > [!IMPORTANT]  

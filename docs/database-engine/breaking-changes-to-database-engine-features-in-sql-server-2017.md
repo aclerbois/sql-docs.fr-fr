@@ -1,29 +1,30 @@
 ---
-title: "Changements importants dans les fonctionnalités du moteur de base de données de SQL Server 2017 | Microsoft Docs"
-description: "Changements importants dans les fonctionnalités du moteur de base de données de SQL Server 2017"
+title: Changements importants dans les fonctionnalités du moteur de base de données de SQL Server 2017 | Microsoft Docs
+description: Changements importants dans les fonctionnalités du moteur de base de données de SQL Server 2017
 ms.date: 04/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-engine
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: breaking changes 2017 [SQL Server]
-ms.assetid: 
-caps.latest.revision: "1"
+ms.custom: ''
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- breaking changes 2017 [SQL Server]
+ms.assetid: ''
+caps.latest.revision: 1
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0b560ce9771f1ce93a3dc4b6269d636e5e66df99
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: d709fa78a3c46d7e707b155b71ed5f49a83153c9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="breaking-changes-to-database-engine-features-in-includesssqlv14-mdincludessssqlv14-mdmd"></a>Changements importants dans les fonctionnalités du moteur de base de données de [!INCLUDE[sssqlv14-md](../includes/sssqlv14-md.md)]
 [!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]

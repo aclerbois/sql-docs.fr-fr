@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_1418 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 1418 (Database Engine error)
 ms.assetid: 6e9c7241-0201-44e0-9f8b-b3c4e293f0f6
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 24
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 25a3929528105498c89344a9999812053c1bbed7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: f6cd54edffef26bee04b2c50cd007971e63d8e89
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver1418"></a>MSSQLSERVER_1418
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -100,7 +95,7 @@ Pour identifier les ports d'écoute et les processus pour lesquels ces ports son
   
     **netstat -ano**  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [ALTER ENDPOINT &#40;Transact-SQL&#41;](~/t-sql/statements/alter-endpoint-transact-sql.md)  
 [Point de terminaison de mise en miroir de bases de données &#40;SQL Server&#41;](~/database-engine/database-mirroring/the-database-mirroring-endpoint-sql-server.md)  
 [Préparer une base de données miroir pour la mise en miroir &#40;SQL Server&#41;](~/database-engine/database-mirroring/prepare-a-mirror-database-for-mirroring-sql-server.md)  

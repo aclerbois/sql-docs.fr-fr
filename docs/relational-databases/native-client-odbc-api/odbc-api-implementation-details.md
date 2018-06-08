@@ -1,15 +1,14 @@
 ---
-title: "Détails d’implémentation ODBC API | Documents Microsoft"
-ms.custom: 
+title: Détails d’implémentation ODBC API | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-api
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC, functions
@@ -17,16 +16,17 @@ helpviewer_keywords:
 - ODBC, SQL Server-specific behaviors
 - functions [ODBC]
 ms.assetid: dca92489-f179-4b1f-997c-adcc46aa17a3
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e566dc836eb323c2ffcc5250f3c376123922870c
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d047d5278c21173bac8bb70fa9320dbb2187d095
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707517"
 ---
 # <a name="odbc-api-implementation-details"></a>ODBC API Implementation Details
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -141,7 +141,7 @@ ms.lasthandoff: 01/24/2018
 -   [SQLTables](../../relational-databases/native-client-odbc-api/sqltables.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41; Référence](http://msdn.microsoft.com/library/06b7edee-8636-49d9-9b5c-2c710bf4fa2d)   
- [Génération d’Applications avec SQL Server Native Client](../../relational-databases/native-client/applications/building-applications-with-sql-server-native-client.md)  
+ [SQL Server Native Client &#40;ODBC&#41; référence](http://msdn.microsoft.com/library/06b7edee-8636-49d9-9b5c-2c710bf4fa2d)   
+ [Génération d’applications avec SQL Server Native Client](../../relational-databases/native-client/applications/building-applications-with-sql-server-native-client.md)  
   
   

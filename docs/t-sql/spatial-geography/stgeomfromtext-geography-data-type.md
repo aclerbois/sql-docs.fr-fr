@@ -1,16 +1,14 @@
 ---
-title: "STGeomFromText (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: STGeomFromText (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STGeomFromText (geography Data Type)
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - full globe
 - STGeomFromText method
 ms.assetid: 3717987b-77d8-4ccf-a1db-5a8016ac1083
-caps.latest.revision: 
+caps.latest.revision: 17
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 43e9f3cf895645fade0ab5147972e1f0f773e1e8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0a1968a243556a2f0ce6bbced0ab4c9f5d066dec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stgeomfromtext-geography-data-type"></a>STGeomFromText (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

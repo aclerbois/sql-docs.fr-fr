@@ -2,16 +2,13 @@
 title: SQL Server Service Broker | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: configure-windows
+ms.prod: sql
+ms.prod_service: high-availability
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: configuration
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - SQL13.SWB.SSBMSGTYPEPROPERTIES.GENERAL.F1
 - SQL13.SWB.SSBCONTRACTPROPERTIES.GENERAL.F1
@@ -29,12 +26,12 @@ caps.latest.revision: 22
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fab7b17dd546ed4723df73d3ee166e125090b57d
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 84b41966c15fab6e89d5a307666d4005a1f7400b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-service-broker"></a>SQL Server Service Broker
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

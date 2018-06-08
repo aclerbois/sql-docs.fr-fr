@@ -1,29 +1,27 @@
 ---
-title: "SQL Server Express LocalDB en-tête et les informations de Version | Documents Microsoft"
-ms.custom: 
+title: SQL Server Express LocalDB en-tête et les informations de Version | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: localdb
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apilocation:
 - sqluserinstance.dll
 ms.assetid: 506b5161-b902-4894-b87b-9192d7b1664a
-caps.latest.revision: 
+caps.latest.revision: 16
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 10c1f1bf09aa4c98a3345c427e37e972ccca1362
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: ec6642e7f975041b3aa8f279eeee80a867fe9f43
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-express-localdb-header-and-version-information"></a>En-tête et informations de version SQL Server Express LocalDB
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

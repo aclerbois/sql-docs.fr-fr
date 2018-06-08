@@ -1,16 +1,14 @@
 ---
 title: sp_add_jobschedule (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/28/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_jobschedule
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_jobschedule
 ms.assetid: ffce19d9-d1d6-45b4-89fd-ad0f60822ba0
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b2da9a4bf2bc1fb7e2768922b6b5dd4d93452571
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e71329e07595e2deb448bfd2635845c52c4f3a67
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddjobschedule-transact-sql"></a>sp_add_jobschedule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,10 +55,10 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id=** ] *job_id*  
+ [  **@job_id=** ] *job_id*  
  Numéro d'identification du travail auquel ajouter la planification. *job_id* est **uniqueidentifier**, sans valeur par défaut.  
   
- [ **@job_name=** ] **'***job_name***'**  
+ [  **@job_name=** ] **'***job_name***'**  
  Nom du travail auquel ajouter la planification. *job_name* est **nvarchar (128)**, sans valeur par défaut.  
   
 > [!NOTE]  
@@ -70,7 +67,7 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
  [  **@name=** ] **'***nom***'**  
  Nom de la planification. *nom* est **nvarchar (128)**, sans valeur par défaut.  
   
- [ **@enabled=** ] *enabled_flag*  
+ [  **@enabled=** ] *enabled_flag*  
  Indique l'état actuel de la planification. *enabled_flag* est **tinyint**, avec une valeur par défaut **1** (activé). Si **0**, la planification n’est pas activée. Lorsque la planification n'est pas activée, le travail n'est pas exécuté.  
   
  [ **@freq_type=** ] *frequency_type*  
@@ -86,7 +83,7 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
 |**64**|Lancer lorsque le service de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] démarre.|  
 |**128**|Lancer lorsque l'ordinateur est inactif.|  
   
- [ **@freq_interval=** ] *frequency_interval*  
+ [  **@freq_interval=** ] *frequency_interval*  
  Jour d'exécution du travail. *frequency_interval* est **int**, avec une valeur par défaut 0 et varie en fonction de la valeur de *frequency_type* comme indiqué dans le tableau suivant :  
   
 |Valeur|Effet|  
@@ -99,7 +96,7 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
 |**64** (lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] démarrage du service Agent)|*frequency_interval* n’est pas utilisée.|  
 |**128**|*frequency_interval* n’est pas utilisée.|  
   
- [ **@freq_subday_type=** ] *frequency_subday_type*  
+ [  **@freq_subday_type=** ] *frequency_subday_type*  
  Spécifie les unités de *frequency_subday_interval*. *frequency_subday_type* est **int**, sans valeur par défaut et peut prendre l’une des valeurs suivantes :  
   
 |Valeur|Description (unité)|  
@@ -108,10 +105,10 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
 |**0x4**|Minutes|  
 |**0x8**|Heures|  
   
- [ **@freq_subday_interval=** ] *frequency_subday_interval*  
+ [  **@freq_subday_interval=** ] *frequency_subday_interval*  
  Nombre de *frequency_subday_type* périodes entre chaque exécution du travail. *frequency_subday_interval* est **int**, avec 0 comme valeur par défaut.  
   
- [ **@freq_relative_interval=** ] *frequency_relative_interval*  
+ [  **@freq_relative_interval=** ] *frequency_relative_interval*  
  Définit également la *frequency_interval* lorsque *frequency_type* a la valeur **32** (mensuel relatif).  
   
  *frequency_relative_interval* est **int**, sans valeur par défaut et peut prendre l’une des valeurs suivantes :  
@@ -134,19 +131,19 @@ sp_add_jobschedule [ @job_id = ] job_id, | [ @job_name = ] 'job_name', [ @name =
   
  Après avoir créé la planification, examinez la date de début et assurez-vous qu'elle est correcte. Pour plus d’informations, consultez la section « Planification des Date de début » dans [créer et attacher les planifications de travaux](http://msdn.microsoft.com/library/079c2984-0052-4a37-a2b8-4ece56e6b6b5).  
   
- [ **@active_end_date=** ] *active_end_date*  
+ [  **@active_end_date=** ] *active_end_date*  
  Date à laquelle l'exécution du travail peut s'arrêter. *active_end_date* est **int**, sans valeur par défaut. La date est au format AAAAMMJJ.  
   
  [ **@active_start_time=** ] *active_start_time*  
  Heure de n’importe quel jour entre *active_start_date* et *active_end_date* pour commencer l’exécution du travail. *heure_de_début_active* est **int**, sans valeur par défaut. L'heure est au format HHMMSS et est exprimée sur 24 heures.  
   
- [ **@active_end_time=***active_end_time*  
+ [**@active_end_time= *** heure_fin_active*  
  Heure de n’importe quel jour entre *active_start_date* et *active_end_date* pour arrêter l’exécution de travail. *heure_fin_active* est **int**, sans valeur par défaut. L'heure est au format HHMMSS et est exprimée sur 24 heures.  
   
- [ **@schedule_id=***schedule_id***OUTPUT**  
+ [  **@schedule_id=***id_de_la_planification***sortie**  
  Numéro d'identification de planification affecté à la planification si le travail est correctement créé. *id_de_la_planification* est une variable output de type **int**, sans valeur par défaut.  
   
- [ **@schedule_uid**= ] *schedule_uid***OUTPUT**  
+ [ **@schedule_uid**=] *schedule_uid *** sortie**  
  Identificateur unique de la planification. *schedule_uid* est une variable de type **uniqueidentifier**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -185,7 +182,7 @@ EXEC msdb.dbo.sp_add_jobschedule
  [Créer des planifications et les attacher à des travaux](http://msdn.microsoft.com/library/079c2984-0052-4a37-a2b8-4ece56e6b6b5)   
  [Planifier un travail](http://msdn.microsoft.com/library/f626390a-a3df-4970-b7a7-a0529e4a109c)   
  [Créer une planification](http://msdn.microsoft.com/library/8c7ef3b3-c06d-4a27-802d-ed329dc86ef3)   
- [L’Agent SQL Server stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
+ [Procédures stockées de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
  [sp_add_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md)   
  [sp_update_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-update-schedule-transact-sql.md)   
  [sp_delete_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-delete-schedule-transact-sql.md)   

@@ -1,30 +1,27 @@
 ---
-title: "Étapes d’Application ODBC base | Documents Microsoft"
-ms.custom: 
+title: Étapes d’Application ODBC base | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - application process [ODBC]
 - application process [ODBC], about application process
 ms.assetid: a92d1f78-c669-47ad-88c4-0b1a93503dfc
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bf9073f8dc4ec4a3216ee676a0f942c8e2ff982f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 45b9c9b028e6cc3c380ea8f0da754cebb0f860d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="basic-odbc-application-steps"></a>Étapes d’Application ODBC de base
 Cette section décrit le flux général des applications ODBC. Il est peu probable que n’importe quelle application appelle toutes ces fonctions dans cet ordre précis. Toutefois, la plupart des applications utilisent des variantes de ces étapes. Les étapes de l’application de base sont affichés dans l’illustration suivante.  

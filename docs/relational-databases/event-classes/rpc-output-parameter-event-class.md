@@ -1,34 +1,30 @@
 ---
-title: "RPC Output Parameter, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: RPC Output Parameter, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RPC Output Parameter event class
 ms.assetid: 8c830d11-7e88-4c3e-98e9-ba72c8c99b02
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d3b324de1b0c5dd10d6db95257838339bd6b6e17
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8e5b07a3ce552e7ef9093e72eaf440d13aab04a3
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="rpc-output-parameter-event-class"></a>RPC Output Parameter, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements RPC Output Parameter trace les valeurs de paramètres de sortie des appels de procédure distante (RPC) après exécution.  
+  La classe d'événements RPC Output Parameter trace les valeurs de paramètres de sortie des appels de procédure distante (RPC) après exécution.  
   
  Utilisez cette classe pour examiner les valeurs de sortie retournées par des procédures stockées. Par exemple, si une application ne produit pas les valeurs de sortie attendues après l'exécution d'un appel de procédure distante, vous pouvez utiliser cette classe d'événements pour identifier le problème entre le code du client et le code du serveur.  
   

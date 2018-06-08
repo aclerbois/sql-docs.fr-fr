@@ -1,33 +1,32 @@
 ---
 title: Authentification dans Reporting Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: extensions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - security [Reporting Services], authentication
 - forms-based authentication [Reporting Services]
 - authentication [Reporting Services]
 - custom authentication [Reporting Services]
 ms.assetid: 103ce1f9-31d8-44bb-b540-2752e4dcf60b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 641d257227cbb91421ddcc1929661c39f1fe5f94
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: b84994cb993c061f006880e4a1f4f727be864ec9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="authentication-in-reporting-services"></a>Authentification dans Reporting Services
   L'authentification est le processus d'établissement du droit d'un utilisateur à une identité. De nombreuses techniques vous permettent d'authentifier un utilisateur. La façon la plus courante consiste à utiliser des mots de passe. Par exemple, lorsque vous implémentez l'authentification par formulaire, vous voulez une implémentation qui interroge les utilisateurs au sujet de leurs informations d'identification (généralement par le biais d'une interface qui demande un nom de connexion et un mot de passe), puis valide les utilisateurs par rapport à une banque de données, telle qu'une table de base de données ou un fichier de configuration. Si les informations d'identification ne peuvent pas être validées, le processus d'authentification échoue et l'utilisateur assume une identité anonyme.  

@@ -1,31 +1,23 @@
 ---
-title: "Connecter l’application de Service Power Pivot à une application Web SharePoint dans l’autorité de certification | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: a5da8e29-7ffd-44e7-bf61-344fa5bea8ce
-caps.latest.revision: 
-author: Minewiskan
+title: Connecter l’application de Service Power Pivot à une application Web SharePoint dans l’autorité de certification | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 888a9c7c06a43f1fcee9306a7edeaed4b484e24b
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b4699746404fcc7e5f4384f2ce9871232d9aa44a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="connect-power-pivot-service-app-to-sharepoint-web-app-in-ca"></a>Connecter l’application de Service Power Pivot à une application Web SharePoint dans l’autorité de certification
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] peut être utilisée par un nombre illimité d’applications web SharePoint de la batterie de serveurs. Pour définir une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] comme disponible, vous devez l’ajouter à une liste d’association de services.  
+  Une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] peut être utilisée par un nombre illimité d’applications web SharePoint de la batterie de serveurs. Pour définir une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] comme disponible, vous devez l’ajouter à une liste d’association de services.  
   
 > [!IMPORTANT]  
 >  Vous devez disposer d’une seule application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] dans le groupe par défaut pour garantir le bon fonctionnement du tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . N’ajoutez pas plusieurs applications de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] au groupe par défaut. L'ajout de plusieurs entrées du même type d'application de service n'est pas une configuration prise en charge et risque de provoquer des erreurs. Si vous créez des applications de service supplémentaires, ajoutez-les aux listes personnalisées.  

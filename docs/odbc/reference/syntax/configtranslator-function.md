@@ -1,32 +1,33 @@
 ---
 title: Fonction de ConfigTranslator | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: ConfigTranslator
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- ConfigTranslator
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: ConfigTranslator
-helpviewer_keywords: ConfigTranslator [ODBC]
+f1_keywords:
+- ConfigTranslator
+helpviewer_keywords:
+- ConfigTranslator [ODBC]
 ms.assetid: 7c22f07e-36de-425b-aa67-e32a84afae92
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8b0c064453d84d10037eb1360c20b2fab8ecb1d8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5b38bc6340ec456ce180eb2a9cc266d5b8a19305
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configtranslator-function"></a>ConfigTranslator (fonction)
 **Mise en conformité**  
@@ -57,7 +58,7 @@ BOOL ConfigTranslator(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **ConfigTranslator** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur est validée dans la mémoire tampon erreur de programme d’installation par un appel à **SQLPostInstallerError** et peut être obtenu en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|Le *hwndParent* argument était non valide ou NULL.|  
 |ODBC_ERROR_DRIVER_SPECIFIC|Erreur spécifique du pilote ou du traducteur|Une erreur spécifique au pilote pour lequel il n’existe aucune erreur de programme d’installation ODBC définie. Le *SzError* argument dans un appel à la **SQLPostInstallerError** la fonction doit contenir le message d’erreur spécifique au pilote.|  

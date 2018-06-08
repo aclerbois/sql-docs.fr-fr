@@ -1,16 +1,14 @@
 ---
 title: ENCRYPTBYKEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ENCRYPTBYKEY_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - symmetric keys [SQL Server], ENCRYPTBYKEY function
 - ENCRYPTBYKEY function
 ms.assetid: 0e11f8c5-f79d-46c1-ab11-b68ef05d6787
-caps.latest.revision: 
+caps.latest.revision: 44
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fe0267020c4100794593731c0f0651b35ea30395
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 5b3d8f7ba013058b16dfe79b27a814a5a273f2a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="encryptbykey-transact-sql"></a>ENCRYPTBYKEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -76,6 +73,8 @@ EncryptByKey ( key_GUID , { 'cleartext' | @cleartext }
  **varbinary** d’une taille maximale de 8 000 octets.  
   
  Retourne NULL si la clé n'est pas ouverte, si elle n'existe pas ou s'il s'agit d'une clé RC4 déconseillée et que la base de données n'est pas au niveau de compatibilité 110 ou supérieur.  
+ 
+ Retourne NULL si la valeur *cleartext* est NULL.
   
 ## <a name="remarks"></a>Notes   
  EncryptByKey utilise une clé symétrique. Cette clé doit être ouverte. Si la clé symétrique est déjà ouverte dans la session en cours, il n'est pas nécessaire de l'ouvrir à nouveau dans le contexte de la requête.  

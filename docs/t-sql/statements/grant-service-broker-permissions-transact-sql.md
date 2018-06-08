@@ -1,16 +1,14 @@
 ---
 title: Autorisations GRANT dans Service Broker (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -23,18 +21,17 @@ helpviewer_keywords:
 - message types [Service Broker], permissions
 - contracts [Service Broker], permissions
 ms.assetid: c5579976-97c4-4123-be0c-d0b98a9e38fb
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 17
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0383e0b5446537b77e02ce4b8e4d3e54c850bdd1
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 26d88a01a2013a288dfbb2d3c52bcbeb180d1fa3
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="grant-service-broker-permissions-transact-sql"></a>Autorisations GRANT dans Service Broker (Transact-SQL)
+# <a name="grant-service-broker-permissions-transact-sql"></a>GRANT - Autorisations sur Service Broker (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Accorde des autorisations à un contrat Service Broker, un type de message, une liaison distante, un itinéraire ou un service.  

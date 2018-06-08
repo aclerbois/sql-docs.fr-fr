@@ -1,30 +1,27 @@
 ---
-title: "Gestion d’une base de données de publication Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Gestion d’une base de données de publication Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], interoperability
 - replication [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 55b345fe-2eb9-4b04-a900-63d858eec360
-caps.latest.revision: "9"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 52416e9d44e5c820bc584014d0d0902a069a616c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 98d565fa9b504c6a131dcd348778be9eb61047b4
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769705"
 ---
 # <a name="maintaining-an-always-on-publication-database-sql-server"></a>Gestion d’une base de données de publication Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,27 +1,24 @@
 ---
-title: "Étape 1 : Configurer l’environnement de développement pour le développement de Java | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Configurer l’environnement de développement pour le développement de Java | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a59cac14-32f5-4fa3-ad38-81a3e1e9d29c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: e59434c5fcf43549bd9757909e498b503969f6e9
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: f7df7736d52fb0f1924f0b0b7ea5ae84ce5df7aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-1-configure-development-environment-for-java-development"></a>Étape 1 : Configurer l’environnement de développement pour Java
   

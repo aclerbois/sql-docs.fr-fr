@@ -1,34 +1,32 @@
 ---
-title: "Page Spécifier les réplicas (Assistant Nouveau groupe de disponibilité : Assistant Ajout de réplica) | Microsoft Docs"
-ms.custom: 
+title: 'Page Spécifier les réplicas (Assistant Nouveau groupe de disponibilité : Assistant Ajout de réplica) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.newagwizard.listeners.f1
 - sql13.swb.addreplicawizard.specifyreplicas.f1
 - sql13.swb.newagwizard.specifyreplicas.f1
 ms.assetid: 2d90fc12-a67b-4bd0-b0ab-899b73017196
-caps.latest.revision: "35"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 35
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7fc2b166d0e56bb1590e3da1705553ffab2b6ac0
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d2802a87f9e4803451d3cb40860585910f943a90
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769875"
 ---
 # <a name="specify-replicas-page-new-availability-group-wizard-add-replica-wizard"></a>Page Spécifier les réplicas (Assistant Nouveau groupe de disponibilité : Assistant Ajout de réplica)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique décrit les options de la page **Spécifier les réplicas**. Cette page s'applique à l' **[!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)]** et à l' **[!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)]**. Utilisez la page **Spécifier les réplicas** pour spécifier et configurer un ou plusieurs réplicas de disponibilité afin d'ajouter le groupe de disponibilité. Cette page contient quatre onglets, qui sont présentés dans le tableau suivant. Cliquez sur le nom d'un onglet du tableau pour atteindre la section correspondante, plus loin dans cette rubrique.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique décrit les options de la page **Spécifier les réplicas** . Cette page s'applique à l' **[!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)]** et à l' **[!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)]**. Utilisez la page **Spécifier les réplicas** pour spécifier et configurer un ou plusieurs réplicas de disponibilité afin d'ajouter le groupe de disponibilité. Cette page contient quatre onglets, qui sont présentés dans le tableau suivant. Cliquez sur le nom d'un onglet du tableau pour atteindre la section correspondante, plus loin dans cette rubrique.  
   
 |Onglet|Brève description|  
 |---------|-----------------------|  

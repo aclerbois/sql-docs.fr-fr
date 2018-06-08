@@ -1,28 +1,26 @@
 ---
-title: "SQLSetScrollOptions (pilotes d’ordinateur de bureau) | Documents Microsoft"
-ms.custom: 
+title: SQLSetScrollOptions (pilotes d’ordinateur de bureau) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetScrollOptions function [ODBC], Desktop Database Drivers
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetScrollOptions function [ODBC], Desktop Database Drivers
 ms.assetid: 51d643ed-015b-4639-969a-9491d9875aca
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ddac617904825a5ad324ad991a0721b505f704a5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5838e890168473cd70d957eb1da6d4be45f546dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetscrolloptions-desktop-database-drivers"></a>SQLSetScrollOptions (pilotes bureau de base de données)
 Les curseurs avant et statiques sont prises en charge pour la valeur SQL_CONCUR_READ_ONLY.  

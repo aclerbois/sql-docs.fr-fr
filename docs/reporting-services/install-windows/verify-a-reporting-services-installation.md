@@ -1,35 +1,33 @@
 ---
-title: "Vérifier une installation de Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Vérifier une installation de Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 06/03/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - checking report server installations
 - verifying report server installations
 - Report Designer [Reporting Services], verifying installations
 - installing Reporting Services, verifying installations
-- Report Manager [Reporting Services], verifying installations
 - report servers [Reporting Services], verifying installations
 - Setup [Reporting Services], verifying installations
 ms.assetid: 82a51a99-66f0-4b0c-b05b-07d22387adb0
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b7135112da1536af6b279b8f0de55bfcb646e4b4
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8f53a3644eecad3486d74cf185d14a2bb019dfd0
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34550540"
 ---
 # <a name="verify-a-reporting-services-installation"></a>Verify a Reporting Services Installation
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] peuvent être installés au choix dans l'un des deux modes, natif ou SharePoint. Les étapes que vous devez suivre pour vérifier l'installation dépendent du mode de serveur de rapports.  

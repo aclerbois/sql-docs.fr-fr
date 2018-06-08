@@ -1,16 +1,15 @@
 ---
-title: "sysarticles (vue système) (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: sysarticles (vue système) (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - sysarticles view
 ms.assetid: 18f8c9b3-cab7-4e8f-8754-11ac38c3f789
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8a31abd2b8d41a0feec452d779bebdd8a7529022
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 132b928997069c6642732b7480ea61a41cd10fd2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sysarticles-system-view-transact-sql"></a>sysarticles (vue système) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,8 +63,8 @@ ms.lasthandoff: 02/03/2018
 |**fire_triggers_on_snapshot**|**bit**|Indique si les déclencheurs répliqués sont exécutés lorsque l'instantané est appliqué ; cette option peut prendre l'une des valeurs suivantes :<br /><br /> **0** = les déclencheurs ne sont pas exécutées.<br /><br /> **1** = les déclencheurs sont exécutés.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
- [Vues de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
  [sp_addarticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md)   
  [sp_changearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changearticle-transact-sql.md)   
  [sp_helparticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helparticle-transact-sql.md)   

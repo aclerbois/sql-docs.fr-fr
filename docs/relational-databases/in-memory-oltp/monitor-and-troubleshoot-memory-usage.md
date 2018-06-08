@@ -1,28 +1,26 @@
 ---
-title: "Surveiller l’utilisation de la mémoire et résoudre les problèmes connexes | Microsoft Docs"
-ms.custom: 
+title: Surveiller l’utilisation de la mémoire et résoudre les problèmes connexes | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7a458b9c-3423-4e24-823d-99573544c877
-caps.latest.revision: 
+caps.latest.revision: 29
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 032bbf271e50e4f2d4831c2a6be48070d7f80c4d
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 920d8cc65152a7306d4ca10c260e28eadaf37c94
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="monitor-and-troubleshoot-memory-usage"></a>Surveiller l'utilisation de la mémoire et résoudre les problèmes connexes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

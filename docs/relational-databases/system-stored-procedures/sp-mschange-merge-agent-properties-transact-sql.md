@@ -1,16 +1,15 @@
 ---
 title: sp_MSchange_merge_agent_properties (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_MSchange_merge_agent_properties_TSQL
@@ -18,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_MSchange_merge_agent_properties
 ms.assetid: f775fa0f-28c7-4863-89ce-7bcfa1ab8b5e
-caps.latest.revision: 
+caps.latest.revision: 20
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f3563086e662ceb1dbe5cb8e8ea5b96b0c9430cc
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c0a56df34ca780de662d11d826af1b3b88e847e6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spmschangemergeagentproperties-transact-sql"></a>sp_MSchange_merge_agent_properties (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +48,7 @@ sp_MSchange_merge_agent_properties [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
  [  **@publisher_db=** ] **'***publisher_db***'**  
@@ -75,7 +73,7 @@ sp_MSchange_merge_agent_properties [ @publisher = ] 'publisher'
   
 |Propriété|Valeur| Description|  
 |--------------|-----------|-----------------|  
-|**Description**||Brève description de l'abonnement.|  
+|**description**||Brève description de l'abonnement.|  
 |**merge_job_login**||Nom de connexion du compte [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows sous lequel l'Agent s'exécute.|  
 |**merge_job_password**||Mot de passe du compte Windows sous lequel le travail de l'Agent s'exécute.|  
 |**publisher_login**||Nom de connexion à utiliser lors de la connexion à un serveur de publication pour synchroniser l'abonnement.|  
@@ -98,11 +96,11 @@ sp_MSchange_merge_agent_properties [ @publisher = ] 'publisher'
   
  Lorsque le serveur de publication s’exécute sur une instance de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] ou version ultérieure, vous devez utiliser [sp_changemergesubscription](../../relational-databases/system-stored-procedures/sp-changemergesubscription-transact-sql.md) pour modifier les propriétés d’un travail de l’Agent de fusion qui synchronise un abonnement par émission de données qui s’exécute sur le serveur de distribution.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe du serveur de distribution peuvent exécuter **sp_MSchange_merge_agent_properties**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_addmergepushsubscription_agent &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md)   
- [sp_addmergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addmergesubscription-transact-sql.md)  
+ [sp_addmergepushsubscription_agent &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md)   
+ [sp_addmergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergesubscription-transact-sql.md)  
   
   

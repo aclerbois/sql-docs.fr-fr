@@ -1,32 +1,33 @@
 ---
 title: Fonction de ConfigDSN | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: ConfigDSN
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- ConfigDSN
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: ConfigDSN
-helpviewer_keywords: ConfigDSN [ODBC]
+f1_keywords:
+- ConfigDSN
+helpviewer_keywords:
+- ConfigDSN [ODBC]
 ms.assetid: 01ced74e-c575-4a25-83f5-bd7d918123f8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b82eb128f125415d3dbdb24ffc616dbeccc5e938
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7a8b75fb1b87a4f6199999e5d5e33d8cd0083bac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configdsn-function"></a>ConfigDSN (fonction)
 **Mise en conformité**  
@@ -71,7 +72,7 @@ BOOL ConfigDSN(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **ConfigDSN** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur est validée dans la mémoire tampon erreur de programme d’installation par un appel à **SQLPostInstallerError** et peut être obtenu en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|Le *hwndParent* argument n’était pas valide.|  
 |ODBC_ERROR_INVALID_KEYWORD_VALUE|Paires mot clé-valeur non valide|Le *lpszAttributes* argument contenait une erreur de syntaxe.|  
@@ -83,7 +84,7 @@ BOOL ConfigDSN(
 ## <a name="comments"></a>Commentaires  
  **ConfigDSN** reçoit des informations de connexion à partir de la DLL de programme d’installation en tant que liste d’attributs sous la forme de paires mot clé-valeur. Chaque paire se termine par un octet null, et la liste entière se termine par un octet null. (Autrement dit, deux octets null marquent la fin de la liste.) Les espaces ne sont pas autorisés autour du signe égal dans la paire mot clé-valeur. **ConfigDSN** peut accepter des mots clés qui ne sont pas des mots clés valides de **SQLBrowseConnect** et **SQLDriverConnect**. **ConfigDSN** ne prend en charge n’est pas nécessairement tous les mots clés qui sont des mots clés valides de **SQLBrowseConnect** et **SQLDriverConnect**. (**ConfigDSN** n’accepte pas les **pilote** (mot clé).) Les mots clés utilisés par le **ConfigDSN** fonction doit prendre en charge toutes les options requises pour recréer la source de données à l’aide de la fonctionnalité de configuration automatique du programme d’installation. Lorsque les utilisations de la **ConfigDSN** valeurs et les valeurs de chaîne de connexion sont les mêmes, les mêmes mots clés doivent être utilisés.  
   
- Comme dans **SQLBrowseConnect** et **SQLDriverConnect**, les mots clés et leurs valeurs ne doivent pas contenir le **[] {} (), ? \*= ! @** caractères et la valeur de la **DSN** mot clé ne peut pas se composer uniquement d’espaces. En raison de la grammaire du Registre, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères.  
+ Comme dans **SQLBrowseConnect** et **SQLDriverConnect**, les mots clés et leurs valeurs ne doivent pas contenir le **[]{}(), ? \*= ! @** caractères et la valeur de la **DSN** mot clé ne peut pas se composer uniquement d’espaces. En raison de la grammaire du Registre, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères.  
   
  **ConfigDSN** doit appeler **SQLValidDSN** pour vérifier la longueur du nom de la source de données et vérifiez qu’aucun caractère non valide n’est inclus dans le nom. Si le nom de source de données est supérieure à SQL_MAX_DSN_LENGTH ou contient des caractères non valides, **SQLValidDSN** renvoie une erreur et **ConfigDSN** renvoie une erreur. La longueur du nom de la source de données est également vérifiée par **SQLWriteDSNToIni**.  
   

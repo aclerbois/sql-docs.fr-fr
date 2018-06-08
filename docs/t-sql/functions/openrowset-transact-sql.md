@@ -1,15 +1,13 @@
 ---
 title: OPENROWSET (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/09/2017
-ms.prod: sql-non-specified
+ms.date: 04/09/2018
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: ''
 ms.component: t-sql|functions
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - OLE DB data sources [SQL Server]
 - ad hoc connection information
 ms.assetid: f47eda43-33aa-454d-840a-bb15a031ca17
-caps.latest.revision: ''
+caps.latest.revision: 130
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ee158cdc30d1c083151bc07c58ba7ddea515a308
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 26b3b72cf4e3ece0624eb33032e34713695c081c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="openrowset-transact-sql"></a>OPENROWSET (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
@@ -132,7 +130,10 @@ OPENROWSET
   
  CODEPAGE = { 'ACP'| 'OEM'| 'RAW'| '*code_page*' }  
  Indique la page de codes des données dans le fichier. CODEPAGE n’est justifié que si les données contiennent des colonnes de type **char**, **varchar** ou **text** dont les valeurs de caractères sont supérieures à 127 ou inférieures à 32.  
-  
+
+> [!IMPORTANT]
+> CODEPAGE n’est pas une option prise en charge sur Linux.
+
 > [!NOTE]  
 >  Nous vous recommandons de spécifier un nom de classement pour chaque colonne dans un fichier de format, sauf lorsque vous souhaitez que l’option 65001 soit prioritaire sur la spécification de page de codes/classement.  
   
@@ -230,7 +231,7 @@ Spécifie un caractère qui sera utilisé comme caractère de guillemet dans le 
   
  Lors de l'accès à des sources de données OLE DB distantes, l'identité des connexions approuvées n'est pas automatiquement déléguée du serveur auquel le client est connecté au serveur qui est interrogé. Il est nécessaire de configurer la délégation de l'authentification.  
   
- Les noms de catalogues et de schémas sont requis si le fournisseur OLE DB prend en charge plusieurs catalogues et schémas dans la source de données spécifiée. Les valeurs de *catalog* et *schema* peuvent être omises si le fournisseur OLE DB ne les prend pas en charge. Si le fournisseur prend en charge uniquement les noms de schéma, il est nécessaire de spécifier un nom en deux parties, sous la forme *schéma***.***objet*. Si le fournisseur prend en charge uniquement les noms de catalogue, il est nécessaire de spécifier un nom en trois parties, sous la forme *catalogue***.***schéma***.***objet*. Vous devez spécifier des noms en trois parties pour les requêtes directes qui utilisent le fournisseur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client OLE DB. Pour plus d’informations, consultez [Conventions de la syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).  
+ Les noms de catalogues et de schémas sont requis si le fournisseur OLE DB prend en charge plusieurs catalogues et schémas dans la source de données spécifiée. Les valeurs de *catalog* et *schema* peuvent être omises si le fournisseur OLE DB ne les prend pas en charge. Si le fournisseur prend en charge uniquement les noms de schéma, il est nécessaire de spécifier un nom en deux parties, sous la forme *schéma ***.*** objet*. Si le fournisseur prend en charge uniquement les noms de catalogue, il est nécessaire de spécifier un nom en trois parties, sous la forme *catalogue ***.*** schéma ***.*** objet*. Vous devez spécifier des noms en trois parties pour les requêtes directes qui utilisent le fournisseur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client OLE DB. Pour plus d’informations, consultez [Conventions de la syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).  
   
  `OPENROWSET` n’accepte pas de variables pour ses arguments.  
   

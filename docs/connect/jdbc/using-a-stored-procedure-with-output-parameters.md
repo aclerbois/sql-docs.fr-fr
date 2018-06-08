@@ -1,27 +1,24 @@
 ---
-title: "À l’aide d’une procédure stockée avec des paramètres de sortie | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’une procédure stockée avec des paramètres de sortie | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 1c006f27-7e99-43d5-974c-7b782659290c
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 7dc04aac6bf9ec53b72705322ebe7f056caf8bfb
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 5199b4d83b0c565015e98ab862366e9d1a53718a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-a-stored-procedure-with-output-parameters"></a>Utilisation d'une procédure stockée avec des paramètres de sortie
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

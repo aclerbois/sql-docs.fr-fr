@@ -1,17 +1,15 @@
 ---
 title: FOR XML (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FOR XML clause, about FOR XML clause
 - PATH FOR XML mode, construction
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - AUTO FOR XML mode
 - XML [SQL Server], construction
 ms.assetid: 2b6b5c61-c5bd-49d2-8c0c-b7cf15857906
-caps.latest.revision: 
+caps.latest.revision: 44
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 543711ed825410afd2f6e5fbe21226ae41328110
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: b078037878664a2bbdbb305803f2fbfb440f902f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="for-xml-sql-server"></a>FOR XML (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

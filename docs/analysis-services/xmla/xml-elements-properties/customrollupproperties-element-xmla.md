@@ -1,39 +1,24 @@
 ---
-title: "Élément CustomRollupProperties (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément CustomRollupProperties (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: CustomRollupProperties Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- microsoft.xml.analysis.customrollupproperties
-- urn:schemas-microsoft-com:xml-analysis#CustomRollupProperties
-- http://schemas.microsoft.com/analysisservices/2003/engine#CustomRollupProperties
-helpviewer_keywords: CustomRollupProperties element
-ms.assetid: 4abf0129-e529-4355-b8d5-6f4e6a88e796
-caps.latest.revision: "12"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5dae1a64c38967f5003dc9991bf07a322580496e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 18ae59ea116a665e88bb7ff915655dbbe53e97cf
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34573671"
 ---
 # <a name="customrollupproperties-element-xmla"></a>Élément CustomRollupProperties (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient les propriétés de cumul personnalisé d’un membre d’attribut représenté par le parent [attribut](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md) élément.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient les propriétés de cumul personnalisé d’un membre d’attribut représenté par le parent [attribut](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md) élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +31,7 @@ ms.lasthandoff: 01/08/2018
 </Attribute>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -61,14 +46,14 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Attribute](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md)|  
 |Éléments enfants|None|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L'élément **CustomRollupProperties** contient une expression MDX (Multidimensional Expressions) qui définit les propriétés de cumul personnalisé du membre d'attribut défini par l'élément **Attribute** parent.  
   
- Pour plus d’informations sur les expressions MDX, consultez [Expressions &#40; MDX &#41; ](../../../mdx/expressions-mdx.md).  
+ Pour plus d’informations sur les expressions MDX, consultez [Expressions &#40;MDX&#41;](../../../mdx/expressions-mdx.md).  
   
-## <a name="see-also"></a>Voir aussi  
- [Insérer un élément &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-commands/insert-element-xmla.md)   
- [Mettre à jour, élément &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-commands/update-element-xmla.md)   
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Insérer l’élément &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-commands/insert-element-xmla.md)   
+ [Mettre à jour d’élément &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-commands/update-element-xmla.md)   
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

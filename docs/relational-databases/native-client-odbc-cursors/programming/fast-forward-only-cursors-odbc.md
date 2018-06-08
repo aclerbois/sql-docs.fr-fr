@@ -1,15 +1,14 @@
 ---
 title: Les curseurs avant uniquement rapides (ODBC) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-cursors
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - fast forward-only cursors
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - cursors [ODBC], fast forward-only
 - ODBC cursors, fast forward-only
 ms.assetid: 0707d07e-fc95-42ed-9280-b7e508ac8c62
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2de4f780218dcb665f4a4a1336e5557615bcc1cd
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: f997c8d11b2392db8ceb2450b037ec25d94d4c60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fast-forward-only-cursors-odbc"></a>Curseurs avant uniquement rapides (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -40,13 +39,13 @@ ms.lasthandoff: 01/24/2018
   
  L'application demande des curseurs avant uniquement rapides à l'aide de l'attribut d'instruction SQL_SOPT_SS_CURSOR_OPTIONS spécifique au pilote. Lorsqu'ils sont définis avec la valeur SQL_CO_FFO, les curseurs avant uniquement rapides sont activés sans auto-extraction. Lorsqu'ils sont définis sur SQL_CO_FFO_AF, l'option d'auto-extraction est également activée. Pour plus d’informations sur l’auto-extraction, consultez [à l’aide de l’auto-extraction avec les curseurs ODBC](../../../relational-databases/native-client-odbc-cursors/programming/using-autofetch-with-odbc-cursors.md).  
   
- Les curseurs avant uniquement rapides avec auto-extraction peuvent être utilisés pour extraire un petit jeu de résultats avec un seul aller-retour au serveur. Dans ces étapes,  *n*  est le nombre de lignes à retourner :  
+ Les curseurs avant uniquement rapides avec auto-extraction peuvent être utilisés pour extraire un petit jeu de résultats avec un seul aller-retour au serveur. Dans ces étapes, *n* est le nombre de lignes à retourner :  
   
 1.  Affectez la valeur SQL_CO_FFO_AF à SQL_SOPT_SS_CURSOR_OPTIONS.  
   
-2.  Définissez SQL_ATTR_ROW_ARRAY_SIZE sur  *n*  + 1.  
+2.  Définissez SQL_ATTR_ROW_ARRAY_SIZE sur *n* + 1.  
   
-3.  Lier les colonnes de résultats aux tableaux de  *n*  + 1 éléments (sûrs si  *n*  + 1 lignes seraient extraites).  
+3.  Lier les colonnes de résultats aux tableaux de *n* + 1 éléments (sûrs si *n* + 1 lignes seraient extraites).  
   
 4.  Ouvrir le curseur avec l’option **SQLExecDirect** ou **SQLExecute**.  
   
@@ -61,6 +60,6 @@ ms.lasthandoff: 01/24/2018
 -   détecte la fin du curseur et le ferme, la taille de l'ensemble de lignes ayant été définie avec une unité de plus que le nombre de lignes dans le jeu de résultats.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Détails de programmation de curseurs &#40; ODBC &#41;](../../../relational-databases/native-client-odbc-cursors/programming/cursor-programming-details-odbc.md)  
+ [Détails de programmation de curseurs &#40;ODBC&#41;](../../../relational-databases/native-client-odbc-cursors/programming/cursor-programming-details-odbc.md)  
   
   

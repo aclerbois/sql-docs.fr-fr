@@ -1,35 +1,33 @@
 ---
-title: "Déterminer si le moteur de base de données est installé et démarré | Microsoft Docs"
-ms.custom: 
+title: Déterminer si le moteur de base de données est installé et démarré | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server, determining if installed
 - verifying Database Engine installation
 - viewing Database Engine installation
 - installed Database Engine verification [SQL Server]
 ms.assetid: babb02e4-3521-4b75-b5df-e09205594375
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d15c13d7a5a52616c4e6cd0c837e0979652b89f4
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 505cfb72b626075aa4c02769a436a04e01d43ee6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determine-whether-the-database-engine-is-installed-and-started"></a>Déterminer si le moteur de base de données est installé et démarré
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Lorsqu’elle est réussie, l’installation du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] installe des fichiers dans le système de fichiers, crée des entrées dans le Registre et installe plusieurs outils. Cette rubrique explique comment déterminer si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] est installé et démarré dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Lorsqu'elle est réussie, l'installation du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] installe des fichiers dans le système de fichiers, crée des entrées dans le Registre et installe plusieurs outils. Cette rubrique explique comment déterminer si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] est installé et démarré dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ##  <a name="SSMSProcedure"></a> Utilisation du Gestionnaire de configuration SQL Server  
   

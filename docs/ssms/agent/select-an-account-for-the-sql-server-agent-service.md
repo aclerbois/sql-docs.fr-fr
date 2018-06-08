@@ -2,16 +2,14 @@
 title: Sélectionner un compte pour le service SQL Server Agent | Microsoft Docs
 ms.custom: ''
 ms.date: 05/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms-agent
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - roles [SQL Server], SQL Server Agent
 - SQL Server Agent, accounts
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - Windows domain accounts [SQL Server]
 - security [SQL Server], SQL Server Agent
 ms.assetid: fe658e32-9e6b-4147-a189-7adc3bd28fe7
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 741329aa268425de8d355fb0ec5074261ade9d5d
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 400624304357e0e7bef4b5231821c21f01690c33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-an-account-for-the-sql-server-agent-service"></a>Sélectionner un compte pour le service SQL Server Agent
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

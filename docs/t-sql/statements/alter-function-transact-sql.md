@@ -1,16 +1,14 @@
 ---
 title: ALTER FUNCTION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_FUNCTION_TSQL
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - modifying functions
 - functions [SQL Server], modifying
 ms.assetid: 89f066ee-05ac-4439-ab04-d8c3d5911179
-caps.latest.revision: 
+caps.latest.revision: 62
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4b1008715d9cfd3e48945d0651f454253bc4e4bc
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: bb6c32e0711a14d8815ae5678c1f6719e2dbaf00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-function-transact-sql"></a>ALTER FUNCTION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-pdw-md.md)]
@@ -225,7 +223,7 @@ RETURNS return_data_type
  Spécifiez un nom de paramètre en utilisant un signe **@** comme premier caractère. Le nom du paramètre doit respecter les règles applicables aux [identificateurs](../../relational-databases/databases/database-identifiers.md). Un paramètre étant local à une fonction, vous pouvez utiliser le même nom dans d'autres fonctions. Les paramètres ne peuvent que prendre la place de constantes ; ils ne peuvent pas être utilisés à la place de noms de tables, de colonnes ou d'autres objets de base de données.  
   
 > [!NOTE]  
->  L'option ANSI_WARNINGS n'est pas reconnue lors d'un passage de paramètres dans une procédure stockée ou dans une fonction définie par l'utilisateur, ou bien lors de la déclaration et de la définition de variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)**, puis qu’une valeur comprenant plus de trois caractères lui est affectée, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
+>  L'option ANSI_WARNINGS n'est pas reconnue lors d'un passage de paramètres dans une procédure stockée ou dans une fonction définie par l'utilisateur, ou bien lors de la déclaration et de la définition de variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)**, puis réglée sur une valeur supérieure à trois caractères, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
   
  [ *type_schema_name.* ] *parameter_data_type*  
  Type de données de paramètre et, éventuellement, schéma auquel il appartient. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception du type de données **timestamp**. Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés, à l’exception des types de données **text**, **ntext**, **image** et **timestamp**. Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de paramètre dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.  
@@ -260,11 +258,11 @@ RETURNS return_data_type
  Indique que la fonction scalaire retourne une valeur scalaire.  
   
  TABLE  
- Indique que la valeur de retour de la fonction table est une table. Seules les constantes et les **@***local_variables* peuvent être passés aux fonctions table.  
+ Indique que la valeur de retour de la fonction table est une table. Seules les constantes et **@***local_variables* peuvent être passés aux fonctions table.  
   
  Dans les fonctions table en ligne, la valeur de retour TABLE est définie par le biais d'une instruction SELECT unique. Aucune variable retournée n'est associée à une fonction en ligne.  
   
- Dans les fonctions table à instructions multiples, **@***return_variable* est une variable TABLE utilisée pour stocker et cumuler les lignes à retourner comme valeur de la fonction. **@***return_variable* peut être spécifié uniquement pour les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], et pas pour les fonctions CLR.  
+ Dans les fonctions table à instructions multiples, **@***return_variable* est une variable TABLE utilisée pour stocker et cumuler les lignes à retourner comme valeur de la fonction. **@***return_variable* peut être spécifié uniquement pour les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], et pas pour les fonctions CLR.  
   
  *select-stmt*  
  Représente l'instruction SELECT unique qui définit la valeur de retour d'une fonction table en ligne.  
@@ -275,15 +273,15 @@ RETURNS return_data_type
  Spécifie la méthode d'un assembly à lier avec la fonction. *assembly_name* doit correspondre à un assembly existant dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans la base de données active avec la visibilité activée. *class_name* doit être un identificateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide et doit exister comme classe dans l’assembly. Si la classe possède un nom qualifié par un espace de noms qui utilise un point (**.**) pour séparer les parties constituant l’espace de noms, le nom de la classe doit être délimité à l’aide de crochets (**[]**) ou de guillemets droits (**""**). *method_name* doit être un identificateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide et doit exister comme méthode statique dans la classe spécifiée.  
   
 > [!NOTE]  
->  Par défaut, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas exécuter du code CLR. Vous pouvez créer, modifier et supprimer des objets d’une base de données qui font référence à des modules CLR (Common Language Runtime) ; cependant, vous ne pouvez pas exécuter ces références dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tant que vous n’avez pas activé l’[option clr enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md). Pour activer cette option, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
+>  Par défaut, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas exécuter du code CLR. Vous pouvez créer, modifier et supprimer des objets d’une base de données qui font référence à des modules CLR (Common Language Runtime) ; cependant, vous ne pouvez pas exécuter ces références dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tant que vous n’avez pas activé l’[option CLR enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md). Pour activer cette option, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
   
 > [!NOTE]  
 >  Cette option n'est pas disponible dans une base de données à relation contenant-contenu.  
   
- *\<*table_type_definition*>***(** { \<column_definition> \<column_constraint> | \<computed_column_definition> } [ \<table_constraint> ] [ **,**...*n* ]**)**  
+ *\<* table_type_definition *>***(** { \<column_definition> \<column_constraint> | \<computed_column_definition> } [ \<table_constraint> ] [ **,**...*n* ]**)**  
  Définit le type de données de table pour une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)]. La déclaration de table comprend des définitions de colonne et des contraintes de colonne ou de table.  
   
-\< clr_table_type_definition > **(** { *column_name**data_type* } [ **,**...*n* ] **)** **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([en préversion dans certaines régions](http://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).  
+\< clr_table_type_definition > **(** { *column_name**data_type* } [ **,**...*n* ] **)** **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([en préversion dans certaines régions](http://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).  
   
  Définit les types de données de table pour une fonction CLR. La déclaration de table ne comprend que des types de données et des noms de colonne.  
   
@@ -308,7 +306,7 @@ RETURNS return_data_type
  ENCRYPTION  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
- Indique que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] chiffre les colonnes de la vue de catalogue qui contiennent le texte de l'instruction ALTER FUNCTION. L'utilisation de l'argument ENCRYPTION évite la publication de la fonction dans le cadre de la réplication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'argument ENCRYPTION ne peut pas être spécifié pour les fonctions CLR.  
+ Indique que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] chiffre les colonnes d'affichage catalogue qui contiennent le texte de l'instruction ALTER FUNCTION. L'utilisation de l'argument ENCRYPTION évite la publication de la fonction dans le cadre de la réplication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'argument ENCRYPTION ne peut pas être spécifié pour les fonctions CLR.  
   
  SCHEMABINDING  
  Indique que la fonction est liée aux objets de base de données auxquels elle fait référence. Cette condition empêche que des modifications ne soient apportées à la fonction si d'autres objets liés au schéma y font référence.  
@@ -384,7 +382,7 @@ Pour obtenir la liste des conditions à réunir pour qu’une fonction puisse ê
  Contrainte assurant l'intégrité de l'entité d'une colonne ou de plusieurs colonnes spécifiées au moyen d'un index unique. Une table peut comprendre plusieurs contraintes UNIQUE. L'argument UNIQUE ne peut pas être spécifié pour les fonctions table CLR.  
   
  CLUSTERED et NONCLUSTERED  
- Indique qu'un index, cluster ou non-cluster, est créé pour la contrainte PRIMARY KEY ou UNIQUE. Les contraintes PRIMARY KEY utilisent CLUSTERED, tandis que les contraintes UNIQUE recourent à NONCLUSTERED.  
+ Indique qu'un index, cluster ou non cluster, est créé pour la contrainte PRIMARY KEY ou UNIQUE. Les contraintes PRIMARY KEY utilisent CLUSTERED, tandis que les contraintes UNIQUE recourent à NONCLUSTERED.  
   
  CLUSTERED peut être spécifié pour une seule contrainte. Si CLUSTERED est spécifié pour une contrainte UNIQUE et qu'une contrainte PRIMARY KEY est également spécifiée, la contrainte PRIMARY KEY utilise NONCLUSTERED.  
   
@@ -414,7 +412,7 @@ Pour obtenir la liste des conditions à réunir pour qu’une fonction puisse ê
  Spécifie le remplissage de l'index. La valeur par défaut est OFF.  
   
  FILLFACTOR = *fillfactor*  
- Spécifie un pourcentage qui indique le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d’index lors de la création ou de la modification de l’index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0.  
+ Spécifie un pourcentage qui indique le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d’index lors de la création ou de la modification de l’index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0.  
   
  IGNORE_DUP_KEY = { ON | OFF }  
  Spécifie la réponse d'erreur lorsqu'une opération d'insertion essaie d'insérer des valeurs de clés en double dans un index unique. L'option IGNORE_DUP_KEY s'applique uniquement aux opérations d'insertion après la création ou la régénération de l'index. La valeur par défaut est OFF.  

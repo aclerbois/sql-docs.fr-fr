@@ -1,33 +1,30 @@
 ---
 title: Dupliquer des tables | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - copying tables
 - tables [SQL Server], duplicating
 - duplicating tables
 - table copying [SQL Server]
 ms.assetid: c6b07423-d1e5-4e5e-8681-5088921f5df3
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fa4c6d694e5575eba76dee5966016d3cfee18c4a
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9b160c5ad5b0b02382d5236cb0d17dac62736030
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="duplicate-tables"></a>Dupliquer des tables
 [!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]

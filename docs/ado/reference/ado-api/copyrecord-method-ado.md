@@ -1,17 +1,15 @@
 ---
-title: "CopyRecord, méthode (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: CopyRecord, méthode (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Record::raw_CopyRecord
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - CopyRecord method [ADO]
 ms.assetid: b9bcf272-3c74-479f-95dd-0229a32e98fc
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f4c31ec2491486c6c2332e32395246db4651f4e8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1af576e7aab76c6e505b2346a74924d8b2ec843e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="copyrecord-method-ado"></a>CopyRecord, méthode (ADO)
 Copie une entité représentée par un [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) vers un autre emplacement.  

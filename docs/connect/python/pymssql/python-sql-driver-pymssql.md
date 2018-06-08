@@ -1,27 +1,25 @@
 ---
 title: Le pilote SQL Python - pymssql | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: python
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 34edf89e-4335-4ef6-827a-54b7af9cc9fd
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 53176b1db43ade2db690bf5e635531fdf7946fe8
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 5a27f3beb1772e994bfa0d25f9db7711163ae527
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="python-sql-driver---pymssql"></a>Pilote SQL Python - pymssql
 [!INCLUDE[Driver_Python_Download](../../../includes/driver_python_download.md)]

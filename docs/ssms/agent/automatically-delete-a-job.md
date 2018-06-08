@@ -2,16 +2,14 @@
 title: Supprimer automatiquement un travail | Microsoft Docs
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms-agent
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - dropping jobs
 - SQL Server Agent jobs, removing
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - deleting jobs
 - removing jobs
 ms.assetid: 92dbb6da-5919-4bde-9354-d454e9ea3da0
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 59741033b2e9e5ac098d8c1c665261aeae3f4758
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1c375e32311e44d1993a8aa4161880f12b5a9342
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="automatically-delete-a-job"></a>Automatically Delete a Job
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

@@ -1,27 +1,25 @@
 ---
-title: "Exportation vers Microsoft Word (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Exportation vers Microsoft Word (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0cd8ae26-4682-4473-8f15-af084951defd
-caps.latest.revision: 
+caps.latest.revision: 23
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 9c725ae731867a57e36bc80a8a1cbac3d11953c6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 73c41c24d4572c6bc91ec0a8728be590344787df
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exporting-to-microsoft-word-report-builder-and-ssrs"></a>Exportation vers Microsoft Word (Générateur de rapports et SSRS)
 

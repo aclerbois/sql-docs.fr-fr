@@ -1,27 +1,25 @@
 ---
-title: "Affichage d’une série avec plusieurs plages de données sur un graphique (Générateur de rapports version 3.0) | Microsoft Docs"
-ms.custom: 
+title: Affichage d’une série avec plusieurs plages de données sur un graphique (Générateur de rapports version 3.0) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 45da3d39-278e-4760-a4b3-9932c9547cf2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e4982859cf69b107686872084ddad6561dc01a8e
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f3ba9d32e9a6183ae3d7eccb9ab6cd19cc4fa1a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="displaying-a-series-with-multiple-data-ranges-on-a-chart"></a>Affichage d'une série avec plusieurs plages de données sur un graphique
 

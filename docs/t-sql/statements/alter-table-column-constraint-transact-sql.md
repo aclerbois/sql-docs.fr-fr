@@ -1,16 +1,14 @@
 ---
 title: column_constraint (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/05/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - column_constraint
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - constraints [SQL Server], definitions
 - column_constraint
 ms.assetid: 8119b7c7-e93b-4de5-8f71-c3b7c70b993c
-caps.latest.revision: 
+caps.latest.revision: 54
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8530f45f71d231783083b061f1c6e0095770ea53
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8684085fd99d2f3f9189c90577934314d55e4047
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-table-columnconstraint-transact-sql"></a>ALTER TABLE column_constraint (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -98,12 +95,12 @@ ms.lasthandoff: 11/21/2017
 > [!IMPORTANT]  
 >  Dans la documentation, l’indication que WITH FILLFACTOR = *fillfactor* constitue l’unique option d’indexation s’appliquant aux contraintes PRIMARY KEY ou UNIQUE est maintenue dans un but de compatibilité ascendante, mais ne sera plus indiquée ainsi dans les versions à venir. D’autres options d’indexation peuvent être spécifiées dans la clause [index_option](../../t-sql/statements/alter-table-index-option-transact-sql.md) d’ALTER TABLE.  
   
- ON { *partition_scheme_name***(***partition_column_name***)** | *filegroup* | **"**default**"** }  
+ ON { *partition_scheme_name ***(*** partition_column_name***)** | *filegroup* | **"** default **"** }  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
- Spécifie le lieu de stockage de l'index créé pour la contrainte. Si *partition_scheme_name* est spécifié, l’index est partitionné et les partitions qui en découlent sont mappées aux groupes de fichiers indiqués par *partition_scheme_name*. Si *filegroup* est spécifié, l’index est créé dans le groupe de fichiers nommé. Si **"**default**"** est spécifié ou si l’option ON n’est pas du tout définie, l’index est créé dans le même groupe de fichiers que celui de la table. Si l'option ON est spécifiée lors de l'ajout d'un index cluster pour une contrainte PRIMARY KEY ou UNIQUE, la table dans son intégralité est déplacée dans le groupe de fichiers spécifié lorsque l'index cluster est créé.  
+ Spécifie le lieu de stockage de l'index créé pour la contrainte. Si *partition_scheme_name* est spécifié, l’index est partitionné et les partitions qui en découlent sont mappées aux groupes de fichiers indiqués par *partition_scheme_name*. Si *filegroup* est spécifié, l’index est créé dans le groupe de fichiers nommé. Si **"** default **"** est spécifié ou si l’option ON n’est pas du tout définie, l’index est créé dans le même groupe de fichiers que celui de la table. Si l'option ON est spécifiée lors de l'ajout d'un index cluster pour une contrainte PRIMARY KEY ou UNIQUE, la table dans son intégralité est déplacée dans le groupe de fichiers spécifié lorsque l'index cluster est créé.  
   
- Dans ce contexte, « default » n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"**default**"** ou ON **[**default**]**. Si **"**default**"** est spécifié, l’option QUOTED_IDENTIFIER doit être activée (ON) pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+ Dans ce contexte, « default » n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"** default **"** ou ON **[** default **]**. Si **"** default **"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
  FOREIGN KEY REFERENCES  
  Contrainte assurant l'intégrité référentielle des données d'une colonne. Une contrainte FOREIGN KEY exige que chaque valeur de la colonne existe dans la colonne spécifiée de la table référencée.  
@@ -136,7 +133,7 @@ ms.lasthandoff: 11/21/2017
   
  L'action ON DELETE CASCADE ne peut pas être définie si le déclencheur ON DELETE de l'option INSTEAD OF existe déjà dans la table en cours de modification.  
   
- Par exemple, dans la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], la table **ProductVendor** possède une relation référentielle avec la table **Vendor**. La clé étrangère **ProductVendor.VendorID** fait référence à la clé primaire **Vendor.VendorID**.  
+ Par exemple, dans la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], la table **ProductVendor** a une relation référentielle avec la table **Vendor**. La clé étrangère **ProductVendor.VendorID** fait référence à la clé primaire **Vendor.VendorID**.  
   
  Si une instruction DELETE est exécutée sur une ligne de la table **Vendor** et qu’une action ON DELETE CASCADE est spécifiée pour **ProductVendor.VendorID**, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] vérifie la présence d’une ou de plusieurs lignes dépendantes dans la table **ProductVendor**. S’il existe des lignes dépendantes dans la table **ProductVendor**, celles-ci sont supprimées, en plus de la ligne référencée dans la table **Vendor**.  
   
@@ -161,11 +158,11 @@ ms.lasthandoff: 11/21/2017
   
  L'action ON UPDATE CASCADE, SET NULL ou SET DEFAULT ne peut pas être définie si le déclencheur ON UPDATE de l'option INSTEAD OF existe déjà dans la table en cours de modification.  
   
- Par exemple, dans la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], la table **ProductVendor** possède une relation référentielle avec la table **Vendor**. La clé étrangère **ProductVendor.VendorID** fait référence à la clé primaire **Vendor.VendorID**.  
+ Par exemple, dans la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], la table **ProductVendor** a une relation référentielle avec la table **Vendor**. La clé étrangère **ProductVendor.VendorID** référence la clé primaire **Vendor.VendorID**.  
   
  Si une instruction UPDATE est exécutée sur une ligne de la table **Vendor** et si une action ON UPDATE CASCADE est spécifiée pour **ProductVendor.VendorID**, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] vérifie la présence d’une ou de plusieurs lignes dépendantes dans la table **ProductVendor**. S’il existe une ligne dépendante dans la table **ProductVendor**, cette ligne est mise à jour, en plus de la ligne référencée dans la table **Vendor**.  
   
- En revanche, si la valeur NO ACTION est spécifiée, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] génère une erreur et restaure l’action de mise à jour sur la ligne de la table **Vendor** quand au moins une ligne de la table **ProductVendor** y fait référence.  
+ Par contre, si la valeur NO ACTION est spécifiée, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] déclenche une erreur et annule l’action de mise à jour de chaque ligne dans la table **Vendor** si au moins une ligne fait référence à chaque ligne dans la table **ProductVendor**.  
   
  NOT FOR REPLICATION  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  

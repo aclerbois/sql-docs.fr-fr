@@ -1,32 +1,33 @@
 ---
 title: Sqlcancel, fonction | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLCancel
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLCancel
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLCancel
-helpviewer_keywords: SQLCancel function [ODBC]
+f1_keywords:
+- SQLCancel
+helpviewer_keywords:
+- SQLCancel function [ODBC]
 ms.assetid: ac0b5972-627f-4440-8c5a-0e8da728726d
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e7adc83a958667e963749e390518bfc792c7cd85
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 500051efaef93c3f2d4ffbe7f2e8520bfecf70ed
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcancel-function"></a>Sqlcancel, fonction
 **Mise en conformité**  
@@ -55,7 +56,7 @@ SQLRETURN SQLCancel(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLCancel** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLCancel** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par [SQLGetDiagRec](../../../odbc/reference/syntax/sqlgetdiagrec-function.md) dans l’argument  *\*MessageText* tampon décrit l’erreur et sa cause.|  

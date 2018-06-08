@@ -1,31 +1,28 @@
 ---
-title: "Suppression de fichiers de sauvegarde d’objets blob avec des baux actifs | Microsoft Docs"
-ms.custom: 
+title: Suppression de fichiers de sauvegarde d’objets blob avec des baux actifs | Microsoft Docs
+ms.custom: ''
 ms.date: 08/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 13a8f879-274f-4934-a722-b4677fc9a782
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e9d8368d268caf86958ce90229c69f792a1ff036
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: f8a3a9fe55ebb878ad88f1220072706a20358752
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-backup-blob-files-with-active-leases"></a>Supprimer des fichiers blob de sauvegarde avec des baux actifs
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] En cas de sauvegarde vers ou de restauration à partir du stockage Microsoft Azure, SQL Server acquiert un bail infini pour verrouiller l’accès exclusif à l’objet blob. Lorsque le processus de sauvegarde ou de restauration est terminé, le bail est libéré. Si une sauvegarde ou une restauration échoue, le processus de sauvegarde tente de nettoyer tout objet blob non valide. Toutefois, si la sauvegarde échoue en raison d'un problème de connectivité du réseau prolongé, le processus de sauvegarde peut ne pas être à nouveau en mesure d'accéder à l'objet blob et celui-ci peut rester orphelin. Par conséquent, l’objet blob ne peut pas être écrit ou supprimé tant que le bail n’a pas été libéré. Cette rubrique explique comment libérer (résilier) le bail et supprimer l’objet blob. 
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  En cas de sauvegarde vers ou de restauration à partir du stockage Microsoft Azure, SQL Server acquiert un bail infini pour verrouiller l’accès exclusif à l’objet blob. Lorsque le processus de sauvegarde ou de restauration est terminé, le bail est libéré. Si une sauvegarde ou une restauration échoue, le processus de sauvegarde tente de nettoyer tout objet blob non valide. Toutefois, si la sauvegarde échoue en raison d'un problème de connectivité du réseau prolongé, le processus de sauvegarde peut ne pas être à nouveau en mesure d'accéder à l'objet blob et celui-ci peut rester orphelin. Par conséquent, l’objet blob ne peut pas être écrit ou supprimé tant que le bail n’a pas été libéré. Cette rubrique explique comment libérer (résilier) le bail et supprimer l’objet blob. 
   
  Pour plus d’informations sur les types de baux, consultez cet [article](http://go.microsoft.com/fwlink/?LinkId=275664).  
   

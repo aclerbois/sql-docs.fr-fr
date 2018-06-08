@@ -1,32 +1,30 @@
 ---
-title: "Flux de contrôle | Microsoft Docs"
-ms.custom: 
+title: Flux de contrôle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - control flow [Integration Services], elements
 - SSIS control flow elements
 - SQL Server Integration Services control flow elements
 ms.assetid: 0cc042a9-1a7f-49ed-9f47-091653d5ef6e
-caps.latest.revision: 
+caps.latest.revision: 46
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 588f1ea0f1c61b6d0d6b793fac41409aa7933964
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 09280d0899981e82940fa8c950496a8ba4a2e419
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="control-flow"></a>Flux de contrôle
   Un package est constitué d'un flux de contrôle et, éventuellement, d'un ou de plusieurs flux de données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] fournit trois types différents d’éléments de flux de contrôle : des conteneurs qui structurent les packages, des tâches qui fournissent des fonctionnalités et des contraintes de précédence qui connectent les exécutables, les conteneurs et les tâches pour former un flux de contrôle ordonné.  

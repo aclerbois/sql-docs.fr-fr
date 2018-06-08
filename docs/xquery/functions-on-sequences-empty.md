@@ -1,16 +1,15 @@
 ---
 title: vide la fonction (XQuery) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - empty function
 - fn:empty function
 ms.assetid: 46da89a8-0cd9-4913-8521-4087589a04ba
-caps.latest.revision: 
+caps.latest.revision: 27
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 433edf397acdb7a49371c80bffb562f7c27bf125
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f312276737406070eb07f371d5fb1c807b8e24b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="functions-on-sequences---empty"></a>Fonctions sur les séquences - vides
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -121,6 +119,6 @@ ProductModelID Result
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions XQuery impliquant le Type de données xml](../xquery/xquery-functions-against-the-xml-data-type.md)   
- [existe &#40; &#41; Méthode &#40; Type de données xml &#41;](../t-sql/xml/exist-method-xml-data-type.md)  
+ [Méthode exist&#40;&#41; &#40;type de données xml&#41;](../t-sql/xml/exist-method-xml-data-type.md)  
   
   

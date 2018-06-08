@@ -1,16 +1,14 @@
 ---
-title: sp_dbmmonitorresults (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_dbmmonitorresults (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dbmmonitorresults
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_dbmmonitorresults
 - database mirroring [SQL Server], monitoring
 ms.assetid: d575e624-7d30-4eae-b94f-5a7b9fa5427e
-caps.latest.revision: 
+caps.latest.revision: 46
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ce88354c3d378dbfa2e7bc71acd57ed52aaf5131
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 16061dc41994cd032a9e6124d38abf3acb2e6be5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdbmmonitorresults-transact-sql"></a>sp_dbmmonitorresults (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -91,7 +88,7 @@ sp_dbmmonitorresults database_name
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**database_name**|**sysname**|Nom d'une base de données mise en miroir.|  
-|**role**|**int**|Rôle de mise en miroir actuel de l'instance du serveur :<br /><br /> 1 = Principal<br /><br /> 2 = Miroir|  
+|**Rôle**|**int**|Rôle de mise en miroir actuel de l'instance du serveur :<br /><br /> 1 = Principal<br /><br /> 2 = Miroir|  
 |**mirroring_state**|**int**|État de la base de données :<br /><br /> 0 = suspendu<br /><br /> 1 = déconnecté<br /><br /> 2 = Synchronisation<br /><br /> 3 = Basculement en attente<br /><br /> 4 = Synchronisé|  
 |**witness_status**|**int**|L'état de connexion du témoin dans la session de mise en miroir de la base de données peut être :<br /><br /> 0 = Inconnu<br /><br /> 1 = Connected<br /><br /> 2 = Déconnecté|  
 |**log_generation_rate**|**int**|Quantité de journal générée, en kilo-octets/s, depuis la précédente mise à jour de l'état de mise en miroir de cette base de données.|  

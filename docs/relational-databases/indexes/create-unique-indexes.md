@@ -1,17 +1,14 @@
 ---
-title: "Créer des vues uniques | Microsoft Docs"
-ms.custom: 
+title: Créer des vues uniques | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - unique indexes
 - designing indexes [SQL Server], unique
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - nonclustered indexes [SQL Server], unique
 - unique indexes, design guidelines
 ms.assetid: 56b5982e-cb94-46c0-8fbb-772fc275354a
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 29
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d8ec65be74b3fefe8e3da66e1952012f8598b4b3
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 55978e2d4501470c3ddddfd830fe9ca391ef7151
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-unique-indexes"></a>Créer des index uniques
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

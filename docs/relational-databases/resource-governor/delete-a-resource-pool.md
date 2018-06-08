@@ -1,31 +1,26 @@
 ---
 title: Supprimer un pool de ressources | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: resource-governor
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Resource Governor, resource pool delete
 - resource pools [SQL Server], delete
 ms.assetid: 3bdd348b-6582-4ffa-80ef-d49e50596ce5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 83fa1d83dfd3b93f4dab77e6b941a26d1bd6ae8e
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: 227b563d59228e6f6f3777e176810a0f32e7daf3
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="delete-a-resource-pool"></a>Supprimer un pool de ressources
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

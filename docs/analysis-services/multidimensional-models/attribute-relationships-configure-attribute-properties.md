@@ -1,37 +1,23 @@
 ---
-title: "Configurer les propriétés de relation d’attribut | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- flexible relationships (Analysis Services)
-- attributes [Analysis Services], relationships
-- relationships [Analysis Services], attributes
-- properties [Analysis Services], attribute relationships
-- rigid relationships (Analysis Services)
-ms.assetid: fce511af-66d7-42fc-bb3a-6c516f16b10e
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer les propriétés de relation d’attribut | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: bcc42c8bcd73c52851f3ed7fae5f4f7a4915b450
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9a7270dd698dfb8d3d3002c302186e97b912044f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-relationships---configure-attribute-properties"></a>Relations d’attributs - configurer les propriétés d’attribut
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le tableau suivant répertorie et décrit les propriétés d'une relation d'attribut.  
+  Le tableau suivant répertorie et décrit les propriétés d'une relation d'attribut.  
   
 |Propriété|Description|  
 |--------------|-----------------|  

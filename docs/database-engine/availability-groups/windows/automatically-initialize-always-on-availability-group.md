@@ -1,26 +1,24 @@
 ---
-title: "Initialiser automatiquement un groupe de disponibilité Always On | Microsoft Docs"
-ms.custom: 
-ms.date: 08/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+title: Initialiser automatiquement un groupe de disponibilité Always On | Microsoft Docs
+ms.custom: ''
+ms.date: 03/26/2018
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 67c6a601-677a-402b-b3d1-8c65494e9e96
-caps.latest.revision: "18"
-author: MikeRayMSFT
+caps.latest.revision: 18
+author: MashaMSFT
 ms.author: v-saume
 manager: craigg
-ms.openlocfilehash: aa2ce39b4cf932d5659adb2ccc1a85b4ff547cac
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 4856ae5b4feede296b0c51ccfe5abf58e9947eee
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768665"
 ---
 # <a name="automatically-initialize-always-on-availability-group"></a>Initialiser automatiquement le groupe de disponibilité Always On
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -29,7 +27,7 @@ SQL Server 2016 propose un amorçage automatique des groupes de disponibilité.
 
 Pour plus d’informations, consultez [Amorçage automatique pour les réplicas secondaires](automatic-seeding-secondary-replicas.md).
  
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Dans SQL Server 2016, l’amorçage automatique exige que le chemin des fichiers de données et des fichiers journaux soit le même sur chaque instance de SQL Server qui participe au groupe de disponibilité. Dans SQL Server 2017, vous pouvez utiliser différents chemins, mais Microsoft recommande d’utiliser les mêmes chemins quand tous les réplicas sont hébergés sur la même plateforme (par exemple Windows ou Linux). Les groupes de disponibilité multiplateformes ont des chemins différents pour les réplicas. Pour plus d’informations, consultez [Disposition des disques](automatic-seeding-secondary-replicas.md#disklayout).
 
@@ -169,6 +167,12 @@ Sur le réplica principal, interrogez la vue de gestion dynamique `sys.dm_hadr_p
 ```sql
 SELECT * FROM sys.dm_hadr_physical_seeding_stats;
 ```
+
+Les deux colonnes *total_disk_io_wait_time_ms* et *total_network_wait_time_ms* peuvent être utilisées pour déterminer le goulot d’étranglement dans le processus d’amorçage automatique. Les deux colonnes sont également présentes dans l’événement étendu *hadr_physical_seeding_progress*.
+
+**total_disk_io_wait_time_ms** représente le temps d’attente du thread de sauvegarde/restauration sur le disque. Cette valeur est cumulative depuis le début de l’opération d’amorçage. Si les disques ne sont pas prêts pour lire ou écrire le flux de sauvegarde, le thread de sauvegarde/restauration passe à l’état de veille et sort de veille chaque seconde pour vérifier si le disque est prêt.
+        
+**total_network_wait_time_ms** est interprété différemment sur le réplica principal et le réplica secondaire. Sur le réplica principal, ce compteur représente le temps de contrôle du flux réseau. Sur le réplica secondaire, ce compteur représente le temps que le thread de restauration attend un message permettant d’écrire sur le disque.
 
 ### <a name="diagnose-database-initialization-using-automatic-seeding-in-the-error-log"></a>Diagnostiquer l’initialisation de bases de données à l’aide de l’amorçage automatique dans le journal des erreurs
 

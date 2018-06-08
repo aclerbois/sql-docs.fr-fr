@@ -1,27 +1,30 @@
 ---
 title: SQL Server Management Studio (SSMS) | Microsoft Docs
 ms.date: 02/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.custom: ''
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.ssms.viewhelp.f1
+helpviewer_keywords:
+- SQL Server Management Studio
 ms.assetid: 66a6b7b1-de6a-4161-82bd-98ded486947b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1319f45b9a41cf32357f4c92c3088e5dc18ade25
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 0fa17a9e29159e4e4a16fdc23421b9b546c09177
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708978"
 ---
 # <a name="sql-server-management-studio-ssms"></a>SQL Server Management Studio (SSMS)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -32,7 +35,7 @@ ms.lasthandoff: 12/21/2017
  
  - [**Télécharger SQL Server Management Studio (SSMS)**](download-sql-server-management-studio-ssms.md) 
  - [**Télécharger SQL Server 2016 Developer**](https://my.visualstudio.com/Downloads?q=SQL%20Server%20Developer)
- - [**Télécharger Visual Studio**](https://www.visualstudio.com/post-download-vs/?sku=community&clcid=0x409&downloadrename=true)
+ - [**Télécharger Visual Studio**](https://www.visualstudio.com/downloads/)
 
   
 ## <a name="sql-server-management-studio-components"></a>Composants de SQL Server Management Studio  

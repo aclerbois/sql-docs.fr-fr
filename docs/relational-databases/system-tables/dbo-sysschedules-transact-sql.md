@@ -1,16 +1,14 @@
 ---
-title: dbo.sysschedules (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: dbo.sysschedules (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.sysschedules_TSQL
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sysschedules system table
 ms.assetid: 4cac9237-7a69-4035-bb3e-928b76aad698
-caps.latest.revision: 
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9e402dfb4c7643c0f52965cfb69414810c0db21c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 877abbc8fb58fbb3a824bb711e0adbb13618f453
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbosysschedules-transact-sql"></a>dbo.sysschedules (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -72,6 +69,6 @@ ms.lasthandoff: 02/03/2018
 |**128** (s’exécute lorsque l’ordinateur est inactif)|**freq_interval** n’est pas utilisée (**0**)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [dbo.sysjobschedules &#40; Transact-SQL &#41;](../../relational-databases/system-tables/dbo-sysjobschedules-transact-sql.md)  
+ [dbo.sysjobschedules & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-tables/dbo-sysjobschedules-transact-sql.md)  
   
   

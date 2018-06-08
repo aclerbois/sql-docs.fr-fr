@@ -1,17 +1,16 @@
 ---
-title: "Autorisations ou Éléments sécurisables, page | Microsoft Docs"
-ms.custom: 
+title: Autorisations ou Éléments sécurisables, page | Microsoft Docs
+ms.custom: ''
 ms.date: 01/07/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.common.permissions.f1
 - sql13.swb.SecurableAndEffectPermissions.f1
@@ -19,19 +18,20 @@ f1_keywords:
 - sql13.swb.availabilitygroupproperties.permission.f1
 - sql13.swb.SecurableAndEffectivePermission.f1
 ms.assetid: b3bf077a-bec2-4161-ac0c-460586199906
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6dc65e94e95e978d47e9cb454337a52d0a6cc622
-ms.sourcegitcommit: b603dcac7326bba387befe68544619e026e6a15e
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b4ee922c02ec87f4d8908b597f694328703366cc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="permissions-or-securables-page"></a>Page Autorisations ou Éléments sécurisables
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez la page **Autorisations** ou **Éléments sécurisables** pour afficher ou définir les autorisations pour les éléments sécurisables. Cette page peut être ouverte à partir de plusieurs emplacements. Le contenu de la page peut varier légèrement, selon la façon dont la page est ouverte et ce qu'elle contient. La grille supérieure de la page peut être remplie lorsque la page s'ouvre, ou elle peut être vide. Pour ajouter des éléments à la grille supérieure, cliquez sur **Rechercher**. Dans la grille supérieure, sélectionnez un élément, puis définissez les autorisations appropriées sous l'onglet **Autorisations explicites** . Pour afficher les autorisations agrégées, utilisez l'onglet **Autorisations effectives** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Utilisez la page **Autorisations** ou **Éléments sécurisables** pour afficher ou définir les autorisations pour les éléments sécurisables. Cette page peut être ouverte à partir de plusieurs emplacements. Le contenu de la page peut varier légèrement, selon la façon dont la page est ouverte et ce qu'elle contient. La grille supérieure de la page peut être remplie lorsque la page s'ouvre, ou elle peut être vide. Pour ajouter des éléments à la grille supérieure, cliquez sur **Rechercher**. Dans la grille supérieure, sélectionnez un élément, puis définissez les autorisations appropriées sous l'onglet **Autorisations explicites** . Pour afficher les autorisations agrégées, utilisez l'onglet **Autorisations effectives** .  
   
  Pour comprendre les combinaisons possibles d’éléments sécurisables et de principaux, consultez les liens relatifs à la syntaxe spécifique des éléments sécurisables dans la rubrique [GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-transact-sql.md). Pour plus d'informations, consultez [Securables](../../relational-databases/security/securables.md).  
   

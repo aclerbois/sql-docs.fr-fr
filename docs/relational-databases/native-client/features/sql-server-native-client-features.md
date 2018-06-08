@@ -1,15 +1,14 @@
 ---
-title: "Fonctionnalités SQL Server Native Client | Documents Microsoft"
-ms.custom: 
+title: Fonctionnalités SQL Server Native Client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - MDAC [SQL Server]
@@ -17,16 +16,17 @@ helpviewer_keywords:
 - SQLNCLI, about SQL Server Native Client
 - data access [SQL Server Native Client], features
 ms.assetid: 7bb32865-5afb-41ab-98b4-3fa545ee8953
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 42eb24a2536f388e13e04892246e917f277ef408
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: aa19218cfcb20bf4b696edfcdbffd4925d46aff8
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708397"
 ---
 # <a name="sql-server-native-client-features"></a>Fonctionnalités de SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -50,16 +50,16 @@ ms.lasthandoff: 01/25/2018
  [Utilisation de types de données XML](../../../relational-databases/native-client/features/using-xml-data-types.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge le type de données XML, qui peut être utilisé comme type de colonne, type de variable, type de paramètre ou type de retour de fonction.  
   
- [À l’aide des Types définis par l’utilisateur](../../../relational-databases/native-client/features/using-user-defined-types.md)  
+ [Utilisation de types définis par l’utilisateur](../../../relational-databases/native-client/features/using-user-defined-types.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge User-Defined Types (UDT), qui étend le système de type SQL en vous permettant de stocker des objets et des structures de données personnalisées dans un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] base de données.  
   
- [À l’aide des Types de valeur élevée](../../../relational-databases/native-client/features/using-large-value-types.md)  
+ [Utilisation de types de valeur élevée](../../../relational-databases/native-client/features/using-large-value-types.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge les types de données de valeur élevée, à savoir les types de données LOB.  
   
  [Changement des mots de passe par programmation](../../../relational-databases/native-client/features/changing-passwords-programmatically.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge la gestion des mots de passe périmés afin que les mots de passe puissent désormais être modifiés sur le client sans intervention de l'administrateur.  
   
- [Utilisation de l’isolement d’instantané](../../../relational-databases/native-client/features/working-with-snapshot-isolation.md)  
+ [Utilisation du niveau d’isolement de capture instantanée](../../../relational-databases/native-client/features/working-with-snapshot-isolation.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge l'amélioration apportée au contrôle de version de ligne qui optimise les performances de la base de données en évitant les scénarios de blocage du lecteur/enregistreur.  
   
  [Utilisation de notifications de requêtes](../../../relational-databases/native-client/features/working-with-query-notifications.md)  
@@ -71,7 +71,7 @@ ms.lasthandoff: 01/25/2018
  [Utilisation du chiffrement sans validation](../../../relational-databases/native-client/features/using-encryption-without-validation.md)  
  Explique comment utiliser [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client pour chiffrer les données envoyées au serveur sans validation du certificat.  
   
- [Paramètres table &#40; SQL Server Native Client &#41;](../../../relational-databases/native-client/features/table-valued-parameters-sql-server-native-client.md)  
+ [Paramètres table &#40;SQL Server Native Client&#41;](../../../relational-databases/native-client/features/table-valued-parameters-sql-server-native-client.md)  
  Explique comment [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge les paramètres table.  
   
  [Types CLR volumineux définis par l’utilisateur](../../../relational-databases/native-client/features/large-clr-user-defined-types.md)  
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/25/2018
  [Prise en charge de FILESTREAM](../../../relational-databases/native-client/features/filestream-support.md)  
  Traite [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge la fonctionnalité FILESTREAM améliorée.  
   
- [Nom Principal de service &#40; Nom principal de service &#41; Prise en charge dans les connexions clientes](../../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md)  
+ [Nom de Principal du service &#40;SPN&#41; prise en charge dans les connexions clientes](../../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md)  
  Explique comment la prise en charge des noms de principaux du service a été étendue pour permettre l'authentification mutuelle à travers l'ensemble des protocoles.  
   
  [Prise en charge des colonnes éparses dans SQL Server Native Client](../../../relational-databases/native-client/features/sparse-columns-support-in-sql-server-native-client.md)  
@@ -95,7 +95,7 @@ ms.lasthandoff: 01/25/2018
  [Prise en charge de UTF-16 dans SQL Server Native Client 11.0](../../../relational-databases/native-client/features/utf-16-support-in-sql-server-native-client-11-0.md)  
  Décrit un changement de comportement introduit dans [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)]. Si vous fournissez une mémoire tampon de longueur fixe lors de la liaison d’un paramètre de résultat ou de la sortie de colonne et si les **wchar** caractères écrits dans la mémoire tampon avant le caractère de fin est un point de code de substitut étendu d’une paire de substitution et si la prochaine **wchar** caractère est un point de code de substitution faible [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client n’ajoutera pas le point de code de substitut pour la mémoire tampon.  
   
- [Prise en charge SQL Server Native Client pour la haute disponibilité, la récupération d’urgence](../../../relational-databases/native-client/features/sql-server-native-client-support-for-high-availability-disaster-recovery.md)  
+ [Prise en charge des fonctionnalités de récupération d'urgence, haute disponibilité par SQL Server Native Client](../../../relational-databases/native-client/features/sql-server-native-client-support-for-high-availability-disaster-recovery.md)  
  Explique comment votre application peut être configurée pour tirer parti de la récupération d’urgence haute disponibilité, des fonctionnalités ajoutées dans [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)].  
   
  [Accès aux informations de diagnostic dans le journal des événements étendus](../../../relational-databases/native-client/features/accessing-diagnostic-information-in-the-extended-events-log.md)  

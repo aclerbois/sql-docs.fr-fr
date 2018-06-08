@@ -1,30 +1,20 @@
 ---
 title: IsEmpty (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: ISEMPTY
-dev_langs: kbMDX
-helpviewer_keywords: IsEmpty function
-ms.assetid: b4a50996-61d1-4e23-8003-7d530195ea72
-caps.latest.revision: "34"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 6f6d53545c505b32f9c9d045f07260cb23514641
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: ab2f65bbc15aecec93294225435d3d2d38fff062
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578711"
 ---
 # <a name="isempty-mdx"></a>IsEmpty (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,7 +32,7 @@ IsEmpty(Value_Expression)
  *Value_Expression*  
  Expression MDX (Multidimensional Expressions) valide qui retourne généralement les coordonnées des cellules d'un membre ou d'un tuple.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **IsEmpty** fonction renvoie **true** si l’expression évaluée est une valeur de cellule vide. Sinon, cette fonction retourne **false**.  
   
 > [!NOTE]  
@@ -55,7 +45,7 @@ IsEmpty(Value_Expression)
   
  Pour plus d'informations sur les cellules vides, consultez la documentation OLE DB.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant retourne TRUE si le Montant des ventes sur Internet pour le membre actuel dans la hiérarchie Fiscal de la dimension Date retourne une cellule vide :  
   
  `WITH MEMBER MEASURES.ISEMPTYDEMO AS`  
@@ -70,6 +60,6 @@ IsEmpty(Value_Expression)
   
 ## <a name="see-also"></a>Voir aussi  
  [Utilisation des valeurs vides](../mdx/working-with-empty-values.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

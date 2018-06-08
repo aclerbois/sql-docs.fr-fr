@@ -1,16 +1,14 @@
 ---
-title: "BufferWithCurves (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: BufferWithCurves (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - BufferWithCurves
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - BufferWithCurves method (geography)
 ms.assetid: abf0a11c-c99c-4faa-bf80-3ae8e04d7bfb
-caps.latest.revision: 
+caps.latest.revision: 16
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0978418fe682728d02f7c65b5bff581154ae231c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: fcfbde3b538b6eea414c723cd6eca062c419a38d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bufferwithcurves-geography-data-type"></a>BufferWithCurves (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

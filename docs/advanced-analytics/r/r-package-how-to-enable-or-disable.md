@@ -1,38 +1,33 @@
 ---
-title: Activer ou désactiver la gestion des packages à distance pour SQL Server | Documents Microsoft
-ms.custom: ''
-ms.date: 02/20/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Activer ou désactiver la gestion à distance des packages R pour l’apprentissage de SQL Server | Documents Microsoft
+description: Activer la gestion à distance des packages R sur SQL Server 2016 R Services ou SQL Server 2017 Machine Learning Services (de-de base de données)
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 05/10/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 5b0039736102af09fe12e296c85cd57a83509a6b
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 997db094cb5e69e0cbf82d9a7e247cb13ec1d452
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707657"
 ---
 # <a name="enable-or-disable-remote-package-management-for-sql-server"></a>Activer ou désactiver la gestion des packages à distance pour SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
-Cet article décrit comment activer la gestion de packages R à partir d’une instance distante du serveur de Machine Learning. Après avoir activé la fonctionnalité de gestion de package, vous pouvez utiliser les commandes de RevoScaleR pour installer des packages sur une base de données à partir d’un client distant.
+Cet article décrit comment activer la gestion à distance des packages R à partir d’une station de travail cliente ou un autre serveur d’apprentissage Machine. Après l’activation de la fonctionnalité de gestion de package sur SQL Server, vous pouvez utiliser les commandes de RevoScaleR sur un client pour installer des packages sur SQL Server.
 
 > [!NOTE]
 > Gestion des bibliothèques R est actuellement pris en charge ; Cette prise en charge de Python sur la feuille de route.
 
-Par défaut, la fonctionnalité de gestion de package externe pour SQL Server est désactivée, même si les fonctionnalités de machine learning ont été installées. Vous devez exécuter un script distinct pour activer la fonctionnalité comme décrit dans la section suivante.
+Par défaut, la fonctionnalité de gestion de package externe pour SQL Server est désactivée. Vous devez exécuter un script distinct pour activer la fonctionnalité comme décrit dans la section suivante.
 
 ## <a name="overview-of-process-and-tools"></a>Vue d’ensemble des processus et outils
 
-Pour activer ou désactiver la gestion des packages, utilisez l’utilitaire de ligne de commande **RegisterRExt.exe**, qui est inclus dans le **RevoScaleR** package.
+Pour activer ou désactiver la gestion des packages sur SQL Server, utilisez l’utilitaire de ligne de commande **RegisterRExt.exe**, qui est inclus dans le **RevoScaleR** package.
 
 [L’activation de](#bkmk_enable) cette fonctionnalité est un processus en deux étapes, en demandant à un administrateur de base de données : vous activer la gestion de package sur l’instance de SQL Server (une fois par instance de SQL Server) et activer la gestion des packages sur la base de données SQL (une fois par SQL Server base de données).
 
@@ -40,7 +35,7 @@ Pour activer ou désactiver la gestion des packages, utilisez l’utilitaire de 
 
 ## <a name="bkmk_enable"></a> Activer la gestion des packages
 
-1. Ouvrez une invite de commandes avec élévation de privilèges et accédez au dossier contenant l’utilitaire, RegisterRExt.exe. L’emplacement par défaut est `<SQLInstancePath>\R_SERVICES\library\RevoScaleR\rxLibs\x64\RegisterRExe.exe`.
+1. Sur le serveur SQL Server, ouvrez une invite de commandes avec élévation de privilèges et accédez au dossier contenant l’utilitaire, RegisterRExt.exe. L’emplacement par défaut est `<SQLInstancePath>\R_SERVICES\library\RevoScaleR\rxLibs\x64\RegisterRExe.exe`.
 
 2. Exécutez la commande suivante, en fournissant des arguments appropriés pour votre environnement :
 
@@ -99,3 +94,8 @@ Après avoir activé cette fonctionnalité, vous pouvez utiliser RevoScaleR fonc
 
     Cette commande supprime la fonctionnalité de gestion de package à partir de l’instance. Vous devrez peut-être redémarrer manuellement le service Launchpad pour voir les modifications.
 
+## <a name="next-steps"></a>Étapes suivantes
+
++ [Permet d’installer de nouveaux packages R RevoScaleR](use-revoscaler-to-manage-r-packages.md)
++ [Conseils pour l’installation des packages R](packages-installed-in-user-libraries.md)
++ [Packages par défaut](installing-and-managing-r-packages.md)

@@ -1,16 +1,14 @@
 ---
 title: sp_stored_procedures (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_stored_procedures_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_stored_procedures
 ms.assetid: fe52dd83-000a-4665-83fb-7a0024193dec
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c71f292c8d6d1b93e73b028ed6d2fc75e944386c
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: e4f11ee53e27ba983098d20e6b40ee0c0ef176d7
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spstoredprocedures-transact-sql"></a>sp_stored_procedures (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -64,7 +61,7 @@ sp_stored_procedures [ [ @sp_name = ] 'name' ]
 -   Schéma **dbo** dans la base de données active.  
   
  [  **@qualifier =** ] **'***qualificateur***'**  
- Nom du qualificateur de la procédure. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables dans le formulaire (*qualificateur***.** *schéma***.** *nom*. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], *qualificateur* représente le nom de la base de données. Dans certains produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
+ Nom du qualificateur de la procédure. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables dans le formulaire (*qualificateur ***.*** schéma ***.*** nom*. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], *qualificateur* représente le nom de la base de données. Dans certains produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
   
  [  **@fUsePattern =** ] **'***fUsePattern***'**  
  Détermine si les caractères de trait de soulignement (_), de pourcentage (%) ou les crochets [ ]) sont interprétés comme des caractères génériques. *fUsePattern* est **bits**, avec 1 comme valeur par défaut.  
@@ -74,7 +71,7 @@ sp_stored_procedures [ [ @sp_name = ] 'name' ]
  **1** = la recherche de correspondance est sur.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
@@ -96,7 +93,7 @@ sp_stored_procedures [ [ @sp_name = ] 'name' ]
   
  **sp_stored_procedures** équivaut à **SQLProcedures** dans ODBC. Les résultats obtenus sont triés par **PROCEDURE_QUALIFIER**, **PROCEDURE_OWNER**, et **nom_procédure**.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation SELECT sur le schéma.  
   
 ## <a name="examples"></a>Exemples  
@@ -120,7 +117,7 @@ sp_stored_procedures N'uspLogError', N'dbo', N'AdventureWorks2012', 1;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Catalogue des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
+ [Procédures stockées du catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

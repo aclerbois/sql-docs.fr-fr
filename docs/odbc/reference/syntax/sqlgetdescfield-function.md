@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetDescField | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetDescField
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetDescField
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetDescField
-helpviewer_keywords: SQLGetDescField function [ODBC]
+f1_keywords:
+- SQLGetDescField
+helpviewer_keywords:
+- SQLGetDescField function [ODBC]
 ms.assetid: f09ff660-1e4a-4370-be85-90d4da0487d3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 091703d14644fe24bef88c939ac4b45087113bd7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 900d85e7aa8e2ff100df7ba223929671903b3d90
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetdescfield-function"></a>Fonction SQLGetDescField
 **Mise en conformité**  
@@ -91,7 +92,7 @@ SQLRETURN SQLGetDescField(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetDescField** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLGetDescField** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|La mémoire tampon \* *ValuePtr* n’est pas suffisamment grande pour renvoyer le champ de descripteur entière, pour le champ a été tronqué. La longueur du champ descripteur non tronqué est retournée dans **StringLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  

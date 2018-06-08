@@ -3,14 +3,12 @@ title: Création d’index SQL Server | Documents Microsoft
 description: Création d’index SQL Server à l’aide du pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-tables-indexes
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,13 +19,12 @@ helpviewer_keywords:
 - adding indexes
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6e8f9801212633ea5aae6fe61e88110bde145b50
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 4f1169ac498362d8716f532b08f8928cac507287
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-sql-server-indexes"></a>Création d'index SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

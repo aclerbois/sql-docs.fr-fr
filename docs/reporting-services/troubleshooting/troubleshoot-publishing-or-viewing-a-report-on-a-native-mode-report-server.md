@@ -1,27 +1,25 @@
 ---
-title: "Résoudre les problèmes liés à la publication ou à l’affichage d’un rapport sur un serveur de rapports en mode natif | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes liés à la publication ou à l’affichage d’un rapport sur un serveur de rapports en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 02/28/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: df7720a1-d178-45bb-8d6f-63e208cae7fe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2e25f72eddf16b1cbb868f0e944a803df0f40340
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: de0d300991457ce6ba07a4f499f31224b6d38fbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-publishing-or-viewing-a-report-on-a-native-mode-report-server"></a>Résolution des problèmes liés à la publication ou à l’affichage d’un rapport sur un serveur de rapports en mode natif
   

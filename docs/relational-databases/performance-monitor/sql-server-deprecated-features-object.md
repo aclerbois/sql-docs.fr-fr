@@ -1,33 +1,31 @@
 ---
 title: SQL Server, objet Deprecated Features | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/03/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:Deprecated Features
 - performance counters [SQL Server], deprecated features
 - deprecation [SQL Server], performance counters
 - Deprecated Features object
 ms.assetid: e95de9d6-c950-41cd-8aaa-be529c6de198
-caps.latest.revision: 
+caps.latest.revision: 61
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 336fea7b5f3ea9fec4dc559933477086f4cca5ed
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 92353cf4dde604e191d26dc971edf83f16ae4b51
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-deprecated-features-object"></a>SQL Server, objet Deprecated Features
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -53,7 +51,7 @@ Le tableau suivant décrit l’objet de performance **Deprecated Features** .
 |------------------------------------------------------|-----------------|  
 |'#' et '##' comme nom des tables temporaires et procédures stockées|Un identifiant ne contenant pas d'autres caractères que # a été rencontré. Utilisez au moins un caractère supplémentaire. Se produit une fois par compilation.|  
 |Syntaxe d'appel de fonction '::'|La syntaxe d'appel de fonction :: a été rencontrée pour une fonction table. Remplacez par `SELECT column_list FROM` *<nom_fonction>*`()`. Par exemple, remplacez `SELECT * FROM ::fn_virtualfilestats(2,1)` par `SELECT * FROM sys.fn_virtualfilestats(2,1)`. Se produit une fois par compilation.|  
-|'@' et noms commençant par '@@' comme identificateurs [!INCLUDE[tsql](../../includes/tsql-md.md)]|Un identificateur commençant par @ ou @@ a été rencontré. N'utilisez pas @, @@ ou des noms commençant par @@ comme identificateurs. Se produit une fois par compilation.|  
+|\@ et noms commençant par \@\@ comme identificateurs [!INCLUDE[tsql](../../includes/tsql-md.md)]|Un identificateur commençant par \@ ou \@\@ a été trouvé. N’utilisez pas \@, \@v@ ou des noms commençant par \@\@ comme identificateurs. Se produit une fois par compilation.|  
 |ADDING TAPE DEVICE|La fonctionnalité dépréciée sp_addumpdevice'**bande**' a été rencontrée. Utilisez à la place sp_addumpdevice'**disque**'. Se produit une fois par utilisation.|  
 |Autorisation ALL|Nombre total de fois où la syntaxe GRANT ALL, DENY ALL ou REVOKE ALL a été rencontrée. Modifiez la syntaxe pour refuser des autorisations spécifiques. Se produit une fois par requête.|  
 |ALTER DATABASE WITH TORN_PAGE_DETECTION|Nombre total d'utilisations de l'option TORN_PAGE_DETECTION de la fonctionnalité déconseillée ALTER DATABASE depuis le démarrage de l'instance du serveur. Utilisez à la place la syntaxe PAGE_VERIFY. Se produit une fois par utilisation dans une instruction DDL.|  
@@ -193,7 +191,7 @@ Le tableau suivant décrit l’objet de performance **Deprecated Features** .
 |sp_defaultlanguage|La procédure sp_defaultlanguage a été rencontrée. Utilisez à la place ALTER LOGIN. Se produit une fois par compilation.|  
 |sp_denylogin|La procédure sp_denylogin a été rencontrée. Utilisez à la place ALTER LOGIN DISABLE. Se produit une fois par requête.|  
 |sp_depends|La procédure sp_depends a été rencontrée. Utilisez à la place sys.dm_sql_referencing_entities et sys.dm_sql_referenced_entities. Se produit une fois par requête.|  
-|sp_detach_db @keepfulltextindexfile|L’argument @keepfulltextindexfile a été rencontré dans une instruction sp_detach_db. N'utilisez pas cet argument.|  
+|sp_detach_db \@keepfulltextindexfile|L’argument \@keepfulltextindexfile a été rencontré dans une instruction sp_detach_db. N'utilisez pas cet argument.|  
 |sp_dropalias|La procédure sp_dropalias a été rencontrée. Remplacez les alias par une combinaison de comptes d'utilisateurs et de rôles de base de données. Utilisez sp_dropalias pour supprimer les alias dans les bases de données mises à niveau. Se produit une fois par compilation.|  
 |sp_dropapprole|La procédure sp_dropapprole a été rencontrée. Utilisez à la place DROP APPLICATION ROLE. Se produit une fois par requête.|  
 |sp_dropextendedproc|La procédure sp_dropextendedproc a été rencontrée. Utilisez à la place CLR. Se produit une fois par compilation.|  
@@ -206,10 +204,10 @@ Le tableau suivant décrit l’objet de performance **Deprecated Features** .
 |sp_fulltext_catalog|La procédure sp_fulltext_catalog a été rencontrée. Utilisez à la place CREATE/ALTER/DROP FULLTEXT CATALOG Se produit une fois par compilation.|  
 |sp_fulltext_column|La procédure sp_fulltext_column a été rencontrée. Utilisez à la place ALTER FULLTEXT INDEX. Se produit une fois par compilation.|  
 |sp_fulltext_database|La procédure sp_fulltext_database a été rencontrée. Utilisez à la place ALTER DATABASE. Se produit une fois par compilation.|  
-|sp_fulltext_service @action=clean_up|L'option clean_up de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
-|sp_fulltext_service @action=connect_timeout|L'option connect_timeout de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
-|sp_fulltext_service @action=data_timeout|L'option data_timeout de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
-|sp_fulltext_service @action=resource_usage|L'option resource_usage de la procédure sp_fulltext_service a été rencontrée. Cette option est sans effet. Se produit une fois par requête.|  
+|sp_fulltext_service \@action=clean_up|L'option clean_up de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
+|sp_fulltext_service \@action=connect_timeout|L'option connect_timeout de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
+|sp_fulltext_service \@action=data_timeout|L'option data_timeout de la procédure sp_fulltext_service a été rencontrée. Se produit une fois par requête.|  
+|sp_fulltext_service \@action=resource_usage|L'option resource_usage de la procédure sp_fulltext_service a été rencontrée. Cette option est sans effet. Se produit une fois par requête.|  
 |sp_fulltext_table|La procédure sp_fulltext_table a été rencontrée. Utilisez à la place CREATE/ALTER/DROP FULLTEXT INDEX. Se produit une fois par compilation.|  
 |sp_getbindtoken|La procédure sp_getbindtoken a été rencontrée. Utilisez à la place MARS (Multiple Active Result Sets) ou des transactions distribuées. Se produit une fois par compilation.|  
 |sp_grantdbaccess|La procédure sp_grantdbaccess a été rencontrée. Utilisez à la place CREATE USER. Se produit une fois par requête.|  

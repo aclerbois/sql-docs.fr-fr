@@ -1,33 +1,29 @@
 ---
-title: "Activer et désactiver les groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Activer et désactiver les groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/30/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], server instance
 - Availability Groups [SQL Server], deploying
 - Availability Groups [SQL Server], disabling
 - Availability Groups [SQL Server], enabling
 ms.assetid: 7c326958-5ae9-4761-9c57-905972276a8f
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 60
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c795cc98d8dffa44d7f9759b8f66e896f75123c4
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: fd987a0428cc341cd4a3191d1c1af418a0942d39
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769725"
 ---
 # <a name="enable-and-disable-always-on-availability-groups-sql-server"></a>Activer et désactiver les groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

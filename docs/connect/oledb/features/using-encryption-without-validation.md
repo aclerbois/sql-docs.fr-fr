@@ -3,14 +3,12 @@ title: Utilisation du chiffrement sans Validation | Documents Microsoft
 description: Utilisation du chiffrement sans validation
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|features
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,13 +19,12 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, encryption
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ffd3987400dd27e166d4eda4c4ac86d1520cdf5e
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 1c2b736c3bdb5c4e5154bfe1f56ff4a4ce18a656
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-encryption-without-validation"></a>Utilisation du chiffrement sans validation
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -65,6 +62,6 @@ Pour plus d’informations sur les mots clés de chaîne de connexion, consultez
 
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote de base de données OLE pour les fonctionnalités SQL Server](../../oledb/features/oledb-driver-for-sql-server-features.md)  
+ [Fonctionnalités OLE DB Driver pour SQL Server](../../oledb/features/oledb-driver-for-sql-server-features.md)  
   
   

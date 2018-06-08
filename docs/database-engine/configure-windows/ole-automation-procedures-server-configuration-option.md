@@ -1,28 +1,26 @@
 ---
 title: OLE Automation Procedures (option de configuration de serveur) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Ole Automation Procedures option
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Ole Automation Procedures option
 ms.assetid: e8982e05-4984-4406-9760-285e8c028ddf
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9c07b72afe8e30cb1241f1b4ece8cccd82a2924b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 55e0cd91d46f560de2c5cee204158bc4076273ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ole-automation-procedures-server-configuration-option"></a>OLE Automation Procedures (option de configuration de serveur)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

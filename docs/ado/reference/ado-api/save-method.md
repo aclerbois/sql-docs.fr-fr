@@ -1,17 +1,15 @@
 ---
-title: "Save (méthode) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Save (méthode) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Recordset::Save
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Save method [ADO]
 ms.assetid: ed3d9678-5c28-4e61-8bb3-7dfb66d99cf5
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ca1aa95841be1331ad1b214b2a8b377622883d3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a24e0be39417235e86a86e239b8f6918fadda5dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-method"></a>Save (méthode)
 Enregistre le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) dans un fichier ou [flux](../../../ado/reference/ado-api/stream-object-ado.md) objet.  

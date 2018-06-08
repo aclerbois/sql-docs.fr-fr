@@ -1,29 +1,28 @@
 ---
-title: "Date et heure et ensembles de lignes de schéma | Documents Microsoft"
-ms.custom: 
+title: Date et heure et ensembles de lignes de schéma | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-date-time
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - date/time [OLE DB], schema rowsets
 ms.assetid: 8c35e86f-0597-4ef4-b2b8-f643e53ed4c2
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 07f24e30d416f8c66218dfe7f2294d90a91c8c06
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b20e21597cff194297160a549b08d6d745fbedc8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="metadata---date-and-time-and-schema-rowsets"></a>Métadonnées - Date et heure et ensembles de lignes de schéma
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -100,6 +99,6 @@ ms.lasthandoff: 01/25/2018
  Comme OLE DB ne définit MINIMUM_SCALE et MAXIMUM_SCALE que pour les types numériques et décimaux, l'utilisation par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client de ces colonnes pour les types time, datetime2 et datetimeoffset n'est pas standard.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Métadonnées &#40; OLE DB &#41;](http://msdn.microsoft.com/library/605e3be5-aeea-4573-9847-b866ed3c8bff)  
+ [Métadonnées &#40;OLE DB&#41;](http://msdn.microsoft.com/library/605e3be5-aeea-4573-9847-b866ed3c8bff)  
   
   

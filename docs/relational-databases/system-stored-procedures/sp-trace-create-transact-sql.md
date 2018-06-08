@@ -1,16 +1,14 @@
 ---
-title: sp_trace_create (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_trace_create (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_trace_create_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_trace_create
 ms.assetid: f3a43597-4c5a-4520-bcab-becdbbf81d2e
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d370ebe5730f9b87d7303c067b9edc1a14d27509
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 06588729794b9a5b62b82e0576f955536687f57e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptracecreate-transact-sql"></a>sp_trace_create (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,10 +51,10 @@ sp_trace_create [ @traceid = ] trace_id OUTPUT
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@traceid=** ] *trace_id*  
+ [  **@traceid=** ] *trace_id*  
  Est le numéro attribué par [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à la nouvelle trace. Toute entrée fournie par l'utilisateur est ignorée. *l’argument trace_id* est **int**, avec NULL comme valeur par défaut. L’utilisateur emploie le *trace_id* valeur pour identifier, modifier et contrôler la trace définie par cette procédure stockée.  
   
- [ **@options=** ] *option_value*  
+ [  **@options=** ] *argument option_value*  
  Spécifie les options définies pour la trace. *l’argument option_value* est **int**, sans valeur par défaut. Les utilisateurs peuvent choisir une combinaison de ces options en spécifiant la valeur totale des options choisies. Par exemple, pour activer les deux options TRACE_FILE_ROLLOVER et SHUTDOWN_ON_ERROR, spécifiez **6** pour *argument option_value*.  
   
  Le tableau suivant répertorie les options, leur description et leurs valeurs.  
@@ -68,10 +65,10 @@ sp_trace_create [ @traceid = ] trace_id OUTPUT
 |SHUTDOWN_ON_ERROR|**4**|Indique que si la trace ne peut pas être écrite dans le fichier pour une raison quelconque, SQL Server doit s'arrêter. Cette option est utile lors de l'exécution de traces d'audit de sécurité.|  
 |TRACE_PRODUCE_BLACKBOX|**8**|Indique que le serveur doit enregistrer les derniers 5 Mo d'informations de trace qu'il génère. TRACE_PRODUCE_BLACKBOX est incompatible avec toutes les autres options.|  
   
- [ **@tracefile=** ] *'**trace_file**'*  
- Indique l'emplacement et le nom du fichier dans lequel la trace doit être écrite. *trace_file* est **nvarchar(245)** sans valeur par défaut. *trace_file* peut être un répertoire local (par exemple, N 'C:\MSSQL\Trace\trace.trc') ou un chemin UNC vers un partage ou un chemin d’accès (N'\\\\*nom_serveur*\\*nom_partage*\\*active*\trace.trc').  
+ [  **@tracefile=** ] *'**trace_file**'*  
+ Indique l'emplacement et le nom du fichier dans lequel la trace doit être écrite. *trace_file* est **nvarchar(245)** sans valeur par défaut. *trace_file* peut être un répertoire local (par exemple, N 'C:\MSSQL\Trace\trace.trc') ou un chemin UNC vers un partage ou un chemin d’accès (N'\\\\*nom_serveur*\\*nom_partage* \\ *Active*\trace.trc').  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Permet d’ajouter un **.trc** extension à tous les noms de fichier de trace. Si l’option TRACE_FILE_ROLLOVER et *max_file_size* sont spécifiés, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée un nouveau fichier de trace lorsque le fichier de trace d’origine a atteint sa taille maximale. Le nouveau fichier porte le même nom que le fichier d’origine, mais _ *n*  est ajouté pour indiquer son rang, en commençant par **1**. Par exemple, si le premier fichier de trace est nommé **filename.trc**, le deuxième fichier de trace est nommé **filename_1.trc**.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Permet d’ajouter un **.trc** extension à tous les noms de fichier de trace. Si l’option TRACE_FILE_ROLLOVER et *max_file_size* sont spécifiés, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée un nouveau fichier de trace lorsque le fichier de trace d’origine a atteint sa taille maximale. Le nouveau fichier porte le même nom que le fichier d’origine, mais _*n* est ajouté pour indiquer son rang, en commençant par **1**. Par exemple, si le premier fichier de trace est nommé **filename.trc**, le deuxième fichier de trace est nommé **filename_1.trc**.  
   
  Si vous utilisez l'option TRACE_FILE_ROLLOVER, il est préférable d'éviter les traits de soulignement dans le nom du fichier initial. Si vous utilisez les traits de soulignement, vous obtenez :  
   
@@ -84,17 +81,17 @@ sp_trace_create [ @traceid = ] trace_id OUTPUT
   
  *trace_file* ne peut pas être spécifié lorsque l’option TRACE_PRODUCE_BLACKBOX est utilisée.  
   
- [ **@maxfilesize=** ] *max_file_size*  
+ [  **@maxfilesize=** ] *max_file_size*  
  Indique la taille maximale en mégaoctets (Mo) d'un fichier de trace. *max_file_size* est **bigint**, avec la valeur par défaut **5**.  
   
  Si ce paramètre est spécifié sans l’option TRACE_FILE_ROLLOVER, la trace s’arrête l’enregistrement dans le fichier lorsque l’espace disque utilisé dépasse la quantité spécifiée par *max_file_size*.  
   
- [ **@stoptime=** ] **'***stop_time***'**  
+ [  **@stoptime=** ] **'***heure_fin***'**  
  Indique la date et l'heure d'arrêt de la trace. *heure_fin* est **datetime**, avec NULL comme valeur par défaut. Si la valeur est NULL, la trace continue de s'exécuter jusqu'à ce qu'elle soit arrêtée manuellement ou que le serveur s'arrête.  
   
  Si les deux *heure_fin* et *max_file_size* sont spécifiés, et TRACE_FILE_ROLLOVER n’est pas spécifié, la trace s’arrête lorsque l’heure d’arrêt ou une taille de fichier maximale est atteinte. Si *heure_fin*, *max_file_size*et TRACE_FILE_ROLLOVER sont spécifiés, la trace s’arrête à l’heure d’arrêt spécifiée, en supposant la trace ne remplit pas le lecteur.  
   
- [ **@filecount=** ] **'***max_rollover_files***'**  
+ [  **@filecount=** ] **'***max_rollover_files***'**  
  Spécifie le nombre maximal de fichiers de trace à conserver avec le même nom de fichier de base. *MAX_ROLLOVER_FILES* est **int**, supérieure à 1. Ce paramètre est valide uniquement si l'option TRACE_FILE_ROLLOVER est spécifiée. Lorsque *max_rollover_files* est spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tente de limiter plus de *max_rollover_files* fichiers de trace en supprimant le fichier le plus ancien avant d’ouvrir un nouveau fichier de trace. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] assure le suivi de l'ancienneté des fichiers de trace en ajoutant un numéro au nom de fichier de base.  
   
  Par exemple, lorsque le *trace_file* paramètre est spécifié en tant que « c:\mytrace », un fichier portant le nom « c:\mytrace_123.trc » est antérieur à un fichier portant le nom « c:\mytrace_124.trc ». Si *max_rollover_files* est défini sur 2, SQL Server supprime le fichier « c:\mytrace_123.trc » avant de créer le fichier de trace « c:\mytrace_125.trc ».  
@@ -130,7 +127,7 @@ sp_trace_create [ @traceid = ] trace_id OUTPUT
  Pour **sp_trace_create**, le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service doit avoir l’autorisation d’écriture sur le dossier de fichiers de trace. Si le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service n’est pas un administrateur sur l’ordinateur où se trouve le fichier de trace, vous devez accorder explicitement des autorisations d’écriture pour le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service.  
   
 > [!NOTE]  
->  Vous pouvez charger automatiquement le fichier de trace créé avec **sp_trace_create** dans une table à l’aide de la **fn_trace_gettable** fonction système. Pour plus d’informations sur l’utilisation de cette fonction système, consultez [sys.fn_trace_gettable &#40; Transact-SQL &#41; ](../../relational-databases/system-functions/sys-fn-trace-gettable-transact-sql.md).  
+>  Vous pouvez charger automatiquement le fichier de trace créé avec **sp_trace_create** dans une table à l’aide de la **fn_trace_gettable** fonction système. Pour plus d’informations sur l’utilisation de cette fonction système, consultez [sys.fn_trace_gettable &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-trace-gettable-transact-sql.md).  
   
  Pour obtenir un exemple d’utilisation de procédures stockées de trace, consultez [Créer une trace &#40;Transact-SQL&#41;](../../relational-databases/sql-trace/create-a-trace-transact-sql.md).  
   

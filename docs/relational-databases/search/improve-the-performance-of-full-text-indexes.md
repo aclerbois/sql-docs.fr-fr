@@ -1,17 +1,15 @@
 ---
-title: "Améliorer les performances des index de recherche en texte intégral | Microsoft Docs"
-ms.custom: 
+title: Améliorer les performances des index de recherche en texte intégral | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - performance [SQL Server], full-text search
 - full-text queries [SQL Server], performance
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - full-text search [SQL Server], performance
 - batches [SQL Server], full-text search
 ms.assetid: ef39ef1f-f0b7-4582-8e9c-31d4bd0ad35d
-caps.latest.revision: 
+caps.latest.revision: 68
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ffe0f2aa4a462c211fcfc591b8d2577a2f451c7
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d5c8427cc756a3aa4635e97288cec3aa2e6fb8e0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="improve-the-performance-of-full-text-indexes"></a>Améliorer les performances des index de recherche en texte intégral
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -90,7 +88,7 @@ Le fichier journal de l'analyse respecte le modèle de dénomination suivant :
 Les parties variables du nom de fichier du journal d’analyse sont les suivantes.
 -   <**DatabaseID**> - ID d’une base de données. <**dbid**> est un nombre à 5 chiffres commençant par des zéros non significatifs.  
 -   <**FullTextCatalogID**> - ID du catalogue de texte intégral. <**catid**> est un nombre à 5 chiffres commençant par des zéros non significatifs.  
--   <**n**> - Entier qui indique qu'il existe un ou plusieurs journaux d'analyse du même catalogue de texte intégral.  
+-   <**n**> - Entier qui indique qu’il existe un ou plusieurs journaux d’analyse du même catalogue de texte intégral.  
   
  Par exemple, `SQLFT0000500008.2` est le fichier journal d’analyse pour une base de données ayant un ID de base de données = 5 et un ID de catalogue de texte intégral = 8. Le 2 à la fin du nom de fichier indique qu'il existe deux fichiers journaux d'analyse pour cette combinaison base de données/catalogue.  
 
@@ -143,7 +141,7 @@ Pour obtenir des informations essentielles sur les formules suivantes, consultez
 |x64|*F* = *Nombre de plages d’analyse* * 10 * 8|*M* = *T* – *F* – 500|  
 
 **Remarques sur les formules**
-1.  Si plusieurs alimentations complètes sont en cours, calculez séparément les besoins en mémoire de chaque processus fdhost.exe, comme *F1*, *F2*, etc. Ensuite, calculez *M* comme *T***–** sigma**(***F*i**)**.  
+1.  Si plusieurs alimentations complètes sont en cours, calculez séparément les besoins en mémoire de chaque processus fdhost.exe, comme *F1*, *F2*, etc. Ensuite, calculez *M* comme *T***–** sigma **(***F*i**)**.  
 2.  500 Mo est une estimation de la mémoire requise par les autres processus dans le système. Si le système effectue un travail supplémentaire, augmentez cette valeur en conséquence.  
 3.  .*ism_size* est censé être de 8 Mo pour les plateformes x64.  
   

@@ -1,30 +1,28 @@
 ---
 title: Installation des composants SSMA sur SQL Server (SybaseToSQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 5ad9e12c-2cdb-4dd2-8703-05a23242d19d
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d27ca7f0bc45c1d81118f0441d2ee4ff751d4c95
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4a8d198ba1ae8fed6c48bb55db45618b36944e7c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="installing-ssma-components-on-sql-server-sybasetosql"></a>Installation des composants SSMA sur SQL Server (SybaseToSQL)
 Outre l’installation de SSMA pour l’utilisation de migration des données côté serveur, vous devez également installer les composants sur l’ordinateur qui est en cours d’exécution [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Ces composants incluent le Pack d’extension SSMA, qui prend en charge la migration des données et les fournisseurs de Sybase pour permettre la connectivité du serveur à serveur.  
@@ -42,7 +40,7 @@ Vous pouvez installer le Pack d’extension à tout moment avant de migrer des d
   
 **Pour installer le Pack d’extension**  
   
-1.  Copiez SSMA pour Sybase Extension Pack. *n*. Install.exe, où  *n*  est le numéro de build, à l’ordinateur qui est en cours d’exécution [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)].  
+1.  Copiez SSMA pour Sybase Extension Pack. *n*. Install.exe, où *n* est le numéro de build, à l’ordinateur qui est en cours d’exécution [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)].  
   
 2.  Double-cliquez sur SSMA pour Sybase Extension Pack. *n*. Install.exe.  
   
@@ -66,7 +64,7 @@ Vous pouvez installer le Pack d’extension à tout moment avant de migrer des d
   
     L’authentification Windows permet de tenter de se connecter à l’instance de vos informations d’identification Windows [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Si vous sélectionnez [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] l’authentification, vous devez entrer un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] nom d’utilisateur et mot de passe.  
   
-10. Dans la page Gérer le serveur, sélectionnez **installer d’utilitaires de base de données**  *n* , où  *n*  est le numéro de version, puis cliquez sur **suivant**.  
+10. Dans la page Gérer le serveur, sélectionnez **installer d’utilitaires de base de données** *n*, où *n* est le numéro de version, puis cliquez sur **suivant**.  
   
     Le **sysdb** base de données est créée et les procédures stockées sont créés dans cette base de données.  
   
@@ -97,7 +95,7 @@ Après avoir installé le Pack d’extension, vous aurez un voir un **ssma_syb.b
   
 -   **stop_agent_process**  
   
-Chaque fois que vous migrez des données à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], SSMA crée un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] travail de l’Agent. Ces tâches sont nommées **le package de migration de données ssma_syb {GUID}**et sont visibles dans le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] nœud de l’Agent de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] dans le dossier Jobs.  
+Chaque fois que vous migrez des données à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], SSMA crée un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] travail de l’Agent. Ces tâches sont nommées **le package de migration de données ssma_syb {GUID}** et sont visibles dans le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] nœud de l’Agent de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] dans le dossier Jobs.  
   
 ## <a name="sybase-providers"></a>Fournisseurs de Sybase  
 Lorsque vous migrez des données à partir de ASE à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]SQL Azure, la migration des données directement entre ASE et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]SQL Azure. Il ne passe pas par le biais SSMA, car cela risque de ralentir la migration des données.  
@@ -117,6 +115,6 @@ Les instructions suivantes fournissent les étapes d’installation de base pour
 4.  Vérifiez les fonctionnalités sélectionnées, puis cliquez sur **Terminer** pour installer le fournisseur de données.  
   
 ## <a name="see-also"></a>Voir aussi  
-[L’installation de SSMA pour Sybase Client &#40; SybaseToSQL &#41;](../../ssma/sybase/installing-ssma-for-sybase-client-sybasetosql.md)  
-[Migration Sybase ASE bases de données SQL Server : base de données SQL Azure &#40; SybaseToSQL &#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
+[L’installation de SSMA pour Sybase Client &#40;SybaseToSQL&#41;](../../ssma/sybase/installing-ssma-for-sybase-client-sybasetosql.md)  
+[Migration des bases de données de Sybase ASE à SQL Server - base de données SQL Azure &#40;SybaseToSQL&#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
   

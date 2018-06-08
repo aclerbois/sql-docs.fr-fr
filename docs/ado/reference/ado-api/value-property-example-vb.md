@@ -1,32 +1,29 @@
 ---
-title: "Valeur de propriété Exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Valeur de propriété Exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Value property [ADO], Visual Basic example
 ms.assetid: 2d4fe651-ef09-461b-8884-a70b6af4362e
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9db32221c278eceafc9dd237b7e1fdb3140817e7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 146659e16fb44d374935a39ca4f79666c361b36b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="value-property-example-vb"></a>Exemple de valeur de propriété (VB)
 Cet exemple illustre la [valeur](../../../ado/reference/ado-api/value-property-ado.md) propriété avec [champ](../../../ado/reference/ado-api/field-object.md) et [propriété](../../../ado/reference/ado-api/property-object-ado.md) objets en affichant les valeurs de champs et de propriétés pour le ***employés*** table.  

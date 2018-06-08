@@ -1,28 +1,27 @@
 ---
-title: "Autres manières d’obtenir une connexion de données (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: Autres manières d’obtenir une connexion de données (Générateur de rapports) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/15/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: aebc5f3d-97d5-4d54-b525-753fed073a9a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 82eb2c26504cee7920e0c0d67fb6faa00af70b26
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8d84cb434338e8174fe74f7466be768bc344e2fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alternative-ways-to-get-a-data-connection-report-builder"></a>Autres manières d'obtenir une connexion de données (Générateur de rapports)
 Une connexion de données contient les informations nécessaires pour se connecter à une source de données externe telle qu'une base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] . En règle générale, vous obtenez les informations de connexion et le type d'informations d'identification à utiliser auprès du propriétaire de la source de données.  

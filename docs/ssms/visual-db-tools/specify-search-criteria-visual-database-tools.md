@@ -1,16 +1,15 @@
 ---
-title: "Spécifier des critères de recherche (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Spécifier des critères de recherche (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Query Designer [SQL Server], Criteria pane
 - queries [Visual Database Tools]
@@ -24,19 +23,19 @@ helpviewer_keywords:
 - Visual Database Tools [SQL Server], queries
 - limiting rows returned
 ms.assetid: 25fb4e31-6dbf-4cf6-8e47-0dd0998c836c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d811d773e5cb85f94e32aa27cdf3c746b35089ff
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 7975547333f76fdf86c0c3633e6b0794be8a98a8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-search-criteria-visual-database-tools"></a>Spécifier des critères de recherche (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez utiliser des critères de recherche pour restreindre le nombre de lignes retournées par une requête.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez utiliser des critères de recherche pour restreindre le nombre de lignes retournées par une requête.  
   
 Pour plus d'informations sur les étapes spécifiques à suivre pour créer des critères de recherche, consultez les rubriques répertoriées dans le tableau ci-dessous.  
   

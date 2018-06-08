@@ -1,35 +1,34 @@
 ---
-title: "Polygon | Microsoft Docs"
-ms.custom: 
+title: Polygon | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - geometry subtypes [SQL Server]
 - Polygon geometry subtype [SQL Server]
 ms.assetid: b6a21c3c-fdb8-4187-8229-1c488454fdfb
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5026800fe6d7c37a8d02559b605d3d1039d508b3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 51c46a2ca267a37f7ba2de1345ab6d2e0fedc8d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="polygon"></a>Polygon
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Un **polygone** est une surface à deux dimensions stockée en tant que séquence de points définissant un anneau englobant extérieur et zéro ou plusieurs anneaux intérieurs.  
+  Un **polygone** est une surface à deux dimensions stockée en tant que séquence de points définissant un anneau englobant extérieur et zéro ou plusieurs anneaux intérieurs.  
   
 ## <a name="polygon-instances"></a>Instances Polygon  
  Une instance **Polygon** peut être formée à partir d’un anneau qui possède au moins trois points distincts. Une instance **Polygon** peut également être vide.  

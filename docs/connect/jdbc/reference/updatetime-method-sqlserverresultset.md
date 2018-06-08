@@ -1,30 +1,29 @@
 ---
-title: "Méthode updateTime (SQLServerResultSet) | Documents Microsoft"
-ms.custom: 
+title: Méthode updateTime (SQLServerResultSet) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.updateTime
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.updateTime
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 74570541-a041-413b-8abd-73ced9bf8900
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5a45a79d50aa72fffb67db498002e65ec9d18bdf
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 6ae10ca220b6f0834f08599e1c1ce3e98cc53549
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updatetime-method-sqlserverresultset"></a>Méthode updateTime (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

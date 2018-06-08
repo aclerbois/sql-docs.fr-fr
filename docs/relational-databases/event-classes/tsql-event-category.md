@@ -1,36 +1,32 @@
 ---
-title: "TSQL, catégorie d’événement | Microsoft Docs"
-ms.custom: 
+title: TSQL, catégorie d’événement | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server event classes, TSQL event category
 - TSQL event category [SQL Server]
 - event classes [SQL Server], TSQL event category
 ms.assetid: 215f8747-64b5-4bf3-9845-d476b10cda3a
-caps.latest.revision: 
+caps.latest.revision: 28
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e1de1805305ec04ef4ad7edfbc29adde231db1f0
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a7ed1ea104d83ae4421b5e86fb14e14ca0a85a78
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tsql-event-category"></a>TSQL, catégorie d’événement
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La catégorie d’événements **TSQL** contient des événements TSQL généraux.  
+  La catégorie d’événements **TSQL** contient des événements TSQL généraux.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   

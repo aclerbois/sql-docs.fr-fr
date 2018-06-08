@@ -1,35 +1,32 @@
 ---
-title: "Charger des données XML | Microsoft Docs"
-ms.custom: 
+title: Charger des données XML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - XML data [SQL Server], loading
 - loading XML data
 ms.assetid: d1741e8d-f44e-49ec-9f14-10208b5468a7
-caps.latest.revision: 
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 441a0e2050acc61575ecf7386302b731d31090b8
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: b9ce45368306fcd961ba7666cbd057718d567ec5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="load-xml-data"></a>Charger des données XML
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Vous pouvez transférer des données XML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de plusieurs manières. Exemple :  
+  Vous pouvez transférer des données XML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] de plusieurs manières. Exemple :  
   
 -   Si vos données figurent dans une colonne de type [n]text ou image, dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous pouvez importer la table par le biais de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Modifiez ensuite le type de colonne en XML à l'aide de l'instruction ALTER TABLE.  
   

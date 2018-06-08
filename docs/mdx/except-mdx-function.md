@@ -1,30 +1,20 @@
 ---
-title: "À l’exception (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: EXCEPT
-dev_langs: kbMDX
-helpviewer_keywords: Except function
-ms.assetid: 5d832c82-1e6d-4308-9c26-7edb8afe11dd
-caps.latest.revision: "37"
-author: Minewiskan
+title: À l’exception (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 36e19418f982542318da340664182526c2b00070
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 9ec5eba8f7df7fa7aabd65479fcf08ee7afec9c7
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578291"
 ---
 # <a name="except-mdx-function"></a>EXCEPT (fonction) (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +35,7 @@ Except(Set_Expression1, Set_Expression2 [, ALL ] )
  *Set_Expression2*  
  Une expression MDX (Multidimensional Expressions) valide qui retourne un jeu.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si **tous les** est spécifiée, la fonction conserve les doublons trouvés dans le premier jeu ; les doublons trouvés dans le deuxième jeu va être supprimés. Les membres sont retournés dans l'ordre de leur apparition dans le premier jeu.  
   
 ## <a name="examples"></a>Exemples  
@@ -68,7 +58,7 @@ WHERE
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [-&#40; À l’exception de &#41; &#40; MDX &#41;](../mdx/except-mdx-operator.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [- &#40;Sauf&#41; &#40;MDX&#41;](../mdx/except-mdx-operator.md)   
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

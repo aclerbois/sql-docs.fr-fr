@@ -1,31 +1,29 @@
 ---
-title: "Génération, déploiement et débogage d’objets personnalisés | Microsoft Docs"
-ms.custom: 
+title: Génération, déploiement et débogage d’objets personnalisés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
 helpviewer_keywords:
 - custom objects [Integration Services]
 ms.assetid: b03685bc-5398-4c3f-901a-1219c1098fbe
-caps.latest.revision: 
+caps.latest.revision: 50
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fef5b6d4039fe8cc6448204f943ecc61260ed7de
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 376177f51baf71e44050903f63bcb1ab85e4aac5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="building-deploying-and-debugging-custom-objects"></a>Génération, déploiement et débogage d'objets personnalisés
   Après avoir écrit le code d’un objet personnalisé pour [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], vous devez générer l’assembly, le déployer, l’intégrer dans le concepteur [!INCLUDE[ssIS](../../includes/ssis-md.md)] afin qu’il puisse être utilisé dans des packages, puis le tester et le déboguer.  

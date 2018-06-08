@@ -1,35 +1,33 @@
 ---
-title: "Définitions de rôles | Microsoft Docs"
-ms.custom: 
+title: Définitions de rôles | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - roles [Reporting Services], creating
 - roles [Reporting Services], security
 - security [Reporting Services], role definitions
 - role-based security [Reporting Services], role definitions
 ms.assetid: d1b8dbf0-4462-402e-92dd-0e4835002b6e
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7618d07d7329a92c4c059b68f099fb6acbf3e338
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: da412b8111447506dce76b2c5d88569faec1b26a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="role-definitions"></a>Définitions de rôles
-  Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], une *définition* de *rôle* est une collection nommée de tâches définissant les opérations disponibles sur un serveur de rapports. Elle fournit les règles de sécurité appliquées par le serveur de rapports. Lorsqu'un utilisateur tente d'effectuer une tâche, telle que la publication d'un rapport, le serveur de rapports vérifie l'attribution de rôle de l'utilisateur afin de déterminer si la tâche est incluse dans sa définition de rôle. Si la tâche est incluse dans la définition de rôle, la requête est soumise.  
+  Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], une ***définition de rôle* est une collection nommée de tâches définissant les opérations disponibles sur un serveur de rapports. Elle fournit les règles de sécurité appliquées par le serveur de rapports. Lorsqu'un utilisateur tente d'effectuer une tâche, telle que la publication d'un rapport, le serveur de rapports vérifie l'attribution de rôle de l'utilisateur afin de déterminer si la tâche est incluse dans sa définition de rôle. Si la tâche est incluse dans la définition de rôle, la requête est soumise.  
   
 ## <a name="using-roles-to-authorize-access-to-a-report-server"></a>Utilisation de rôles pour autoriser l'accès à un serveur de rapports  
  Un rôle devient opérationnel lorsqu'il est utilisé dans le cadre d'une attribution de rôle. Pour plus d’informations sur la manière dont les rôles renforcent la sécurité, consultez [Attributions de rôles](../../reporting-services/security/role-assignments.md).  

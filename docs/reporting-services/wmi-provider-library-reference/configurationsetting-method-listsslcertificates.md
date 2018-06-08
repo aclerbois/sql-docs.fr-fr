@@ -1,28 +1,27 @@
 ---
-title: "ListSSLCertificates, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: ListSSLCertificates, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ListSSLCertificates method
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ListSSLCertificates method
 ms.assetid: 88cd0936-b202-4ab8-90f2-d9c3f66d37f4
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c8dd72b7dd49e2955b32f0bcb868e7bb04de6a14
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: b88135560fc99a8fc07c2fdcf4a7738db7e275fe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---listsslcertificates"></a>Méthode ConfigurationSetting - ListSSLCertificates
   Retourne la liste des certificats installés sur l'ordinateur serveur de rapports.  

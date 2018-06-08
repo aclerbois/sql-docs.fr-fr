@@ -1,28 +1,27 @@
 ---
-title: "Connexion à SQL Server (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connexion à SQL Server (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Connecting to SQL Server,Synchronizing SQL Server Metadata
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Connecting to SQL Server,Synchronizing SQL Server Metadata
 ms.assetid: 1b2a8059-1829-4904-a82f-9c06de1e245f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 1b550ddd57803772be53832ba8feb840021c5732
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 11a24da859c53107498111c6dc4d511cccd1b800
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-sql-server-oracletosql"></a>Connexion à SQL Server (OracleToSQL)
 Pour migrer des bases de données Oracle [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2005, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2008, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2008 R2 ou [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2012 ou [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2014, vous devez vous connecter à une de ces cibles des instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à toutes les bases de données dans l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et affiche les métadonnées de la base de données dans le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Explorateur de métadonnées. SSMA stocke des informations sur l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] vous êtes connecté à, mais ne stocke pas les mots de passe.  
@@ -47,7 +46,7 @@ Si le compte qui est utilisé pour se connecter à [!INCLUDE[ssNoVersion](../../
 ## <a name="establishing-a-sql-server-connection"></a>L’établissement d’une connexion SQL Server  
 Avant de convertir des objets de base de données Oracle à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] syntaxe, vous devez établir une connexion à l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] où vous souhaitez migrer la base de données Oracle ou les bases de données.  
   
-Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma d’Oracle après vous être connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Pour plus d’informations, consultez [mappage de schémas Oracle pour les schémas SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/mapping-oracle-schemas-to-sql-server-schemas-oracletosql.md).  
+Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma d’Oracle après vous être connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Pour plus d’informations, consultez [mappage de schémas Oracle pour les schémas SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/mapping-oracle-schemas-to-sql-server-schemas-oracletosql.md).  
   
 > [!IMPORTANT]  
 > Avant d’essayer de se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], assurez-vous que l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est en cours d’exécution et peut accepter des connexions.  
@@ -115,14 +114,14 @@ Métadonnées relatives à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.
 ## <a name="next-step"></a>Étape suivante  
 L’étape suivante de la migration dépend des besoins de votre projet :  
   
--   Pour personnaliser le mappage entre les schémas Oracle et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données et des schémas, consultez [schémas Oracle de mappage de schémas SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/mapping-oracle-schemas-to-sql-server-schemas-oracletosql.md).  
+-   Pour personnaliser le mappage entre les schémas Oracle et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données et des schémas, consultez [de schémas SQL Server, les schémas de mappage Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/mapping-oracle-schemas-to-sql-server-schemas-oracletosql.md).  
   
--   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40; OracleToSQL &#41;](../../ssma/oracle/setting-project-options-oracletosql.md).  
+-   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40;OracleToSQL&#41;](../../ssma/oracle/setting-project-options-oracletosql.md).  
   
--   Pour personnaliser le mappage des types de données source et cible, consultez [Oracle de mappage et les Types de données SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/mapping-oracle-and-sql-server-data-types-oracletosql.md).  
+-   Pour personnaliser le mappage des types de données source et cible, consultez [Oracle de mappage et les Types de données SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/mapping-oracle-and-sql-server-data-types-oracletosql.md).  
   
--   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données Oracle dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] définitions d’objets. Pour plus d’informations, consultez [conversion des schémas Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/converting-oracle-schemas-oracletosql.md).  
+-   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données Oracle dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] définitions d’objets. Pour plus d’informations, consultez [conversion des schémas Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/converting-oracle-schemas-oracletosql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration bases de données Oracle pour SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
+[Bases de données de migration d’Oracle vers SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
   

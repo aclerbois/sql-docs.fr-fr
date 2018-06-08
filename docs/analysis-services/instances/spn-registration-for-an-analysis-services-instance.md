@@ -1,31 +1,23 @@
 ---
 title: Inscription SPN pour une instance Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 9e78dc37-a3f0-415d-847c-32fec69efa8c
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: ecb1a5b33ede8c99150fd8b3ce1cf9babdb1f519
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c08495fb3a6486f58462562be120ea1d4cd7f8ad
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="spn-registration-for-an-analysis-services-instance"></a>Inscription du nom SPN pour une instance Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un nom de principal du service (SPN) identifie de manière unique une instance de service dans un domaine Active Directory lorsque Kerberos est utilisé pour authentifier mutuellement les identités de service et de client. Un SPN est associé au compte d'ouverture de session sous lequel s'exécute l'instance du service.  
+  Un nom de principal du service (SPN) identifie de manière unique une instance de service dans un domaine Active Directory lorsque Kerberos est utilisé pour authentifier mutuellement les identités de service et de client. Un SPN est associé au compte d'ouverture de session sous lequel s'exécute l'instance du service.  
   
  Pour les applications clientes qui se connectent à Analysis Services via l'authentification Kerberos, les bibliothèques clientes Analysis Services créent un nom SPN à l'aide du nom d'hôte de la chaîne de connexion et d'autres variables connues, telles que la classe de service, qui sont résolues dans n'importe quelle version donnée d'Analysis Services.  
   

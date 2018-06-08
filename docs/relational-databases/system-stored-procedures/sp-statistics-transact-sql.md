@@ -1,16 +1,14 @@
 ---
 title: sp_statistics (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_statistics_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_statistics
 ms.assetid: 0bb6495f-258a-47ec-9f74-fd16671d23b8
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: acb1e775a99bb3c296064a65aa9eed7be5d17745
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0b4a24cce24a94fdd6c4f901974d0f4accf7ff1b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spstatistics-transact-sql"></a>sp_statistics (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -61,7 +59,7 @@ sp_statistics [ @table_name = ] 'table_name'
  Si, dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], l'utilisateur actuel est propriétaire d'une table portant le nom spécifié, les index de la table sont retournés. Si *propriétaire* n’est pas spécifié et l’utilisateur actuel ne possède pas d’une table avec l’objet *nom*, cette procédure recherche une table avec l’objet *nom* appartenant au propriétaire de la base de données. Si cette table existe, ses index sont retournés.  
   
  [  **@table_qualifier=** ] **'***qualificateur***'**  
- Nom du qualificateur de la table. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables (*qualificateur***.** *propriétaire***.** *nom*). Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ce paramètre représente le nom de la base de données. Dans d'autres produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
+ Nom du qualificateur de la table. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables (*qualificateur ***.*** propriétaire ***.*** nom de*). Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ce paramètre représente le nom de la base de données. Dans d'autres produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
   
  [  **@index_name=** ] **'***index_name***'**  
  Est le nom de l’index. *index_name* est **sysname**, avec % comme valeur par défaut. La recherche de correspondance avec des caractères génériques est prise en charge.  
@@ -88,14 +86,14 @@ sp_statistics [ @table_name = ] 'table_name'
 |**INDEX_NAME**|**sysname**|Nom de l'index. Cette colonne renvoie toujours une valeur.|  
 |**TYPE**|**smallint**|Cette colonne renvoie toujours une valeur :<br /><br /> 0 = Statistiques pour une table<br /><br /> 1 = ordonné en clusters<br /><br /> 2 = Haché<br /><br /> 3 = non cluster|  
 |**SEQ_IN_INDEX**|**smallint**|Position de la colonne dans l'index|  
-|**NOM_COLONNE**|**sysname**|Nom de colonne pour chaque colonne de la **TABLE_NAME** retourné. Cette colonne renvoie toujours une valeur.|  
-|**CLASSEMENT**|**char (1)**|Ordre utilisé dans les classements. Valeurs possibles :<br /><br /> A = Croissant<br /><br /> D = Décroissant<br /><br /> NULL = Non applicable|  
+|**COLUMN_NAME**|**sysname**|Nom de colonne pour chaque colonne de la **TABLE_NAME** retourné. Cette colonne renvoie toujours une valeur.|  
+|**COLLATION**|**char(1)**|Ordre utilisé dans les classements. Valeurs possibles :<br /><br /> A = Croissant<br /><br /> D = Décroissant<br /><br /> NULL = Non applicable|  
 |**CARDINALITÉ**|**int**|Nombre de lignes dans la table ou de valeurs uniques dans l’index.|  
 |**PAGES**|**int**|Nombre de pages pour stocker l'index ou la table.|  
-|**FILTER_CONDITION**|**varchar (128)**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne retourne pas de valeur.|  
+|**FILTER_CONDITION**|**varchar(128)**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne retourne pas de valeur.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="remarks"></a>Notes  
  Les index dans le jeu de résultats s’affichent dans l’ordre croissant en fonction des colonnes **NON_UNIQUE**, **TYPE**, **INDEX_NAME**, et **SEQ_IN_INDEX**.  
@@ -106,10 +104,10 @@ sp_statistics [ @table_name = ] 'table_name'
   
  **sp_statistics** équivaut à **SQLStatistics** dans ODBC. Les résultats obtenus sont triés par **NON_UNIQUE**, **TYPE**, **INDEX_QUALIFIER**, **INDEX_NAME**, et **SEQ_IN_INDEX**. Pour plus d’informations, consultez la [référence de l’API ODBC](http://go.microsoft.com/fwlink/?LinkId=68323).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation SELECT sur le schéma.  
   
-## <a name="example-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemple : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
+## <a name="example-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemple : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
  L’exemple suivant retourne des informations sur la `DimEmployee` table.  
   
 ```  
@@ -119,7 +117,7 @@ EXEC sp_statistics DimEmployee;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Catalogue des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
+ [Procédures stockées du catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

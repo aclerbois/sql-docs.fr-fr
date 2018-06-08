@@ -1,15 +1,14 @@
 ---
-title: "Concepts liés aux procédures stockées système de réplication | Microsoft Docs"
-ms.custom: 
+title: Concepts liés aux procédures stockées système de réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - system stored procedures [SQL Server replication]
 - replication [SQL Server], how-to topics
 ms.assetid: 816d2bda-ed72-43ec-aa4d-7ee3dc25fd8a
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 96007abd260a3ae3cb37c38e7ff3f363d77e2b9d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 741afaf82d9e8f4d129bf1e0f20b77a908eda098
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-system-stored-procedures-concepts"></a>Concepts liés aux procédures stockées système de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

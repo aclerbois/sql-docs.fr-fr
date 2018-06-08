@@ -1,33 +1,19 @@
 ---
-title: "Programmation des objets de sécurité AMO | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- programming [AMO]
-- Analysis Management Objects, security
-- AMO, security
-ms.assetid: 5d963721-6e6e-46eb-bc9b-18724dd0b751
-caps.latest.revision: 
-author: Minewiskan
+title: Programmation des objets de sécurité AMO | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ee56a1d89bdf9d5712dcdb70043be95b9195d0ba
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2765ddac9df7fd406dce4394773da9831a56b281
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="programming-amo-security-objects"></a>Programmation d'objets de sécurité AMO
   Dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]la programmation d'objets de sécurité ou l'exécution d'applications qui utilisent des objets de sécurité AMO exige d'être membre du groupe Administrateur du serveur ou du groupe Administrateur de base de données. Administrateur du serveur et Administrateur de base de données représentent des niveaux d'accès fournis par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
@@ -150,8 +136,8 @@ static public void CreateRolesAndPermissions(Database db, Cube cube)
  <xref:Microsoft.AnalysisServices>   
  [Présentation des Classes AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-classes-introduction.md)   
  [Programmation d’objets AMO sécurité](../../../analysis-services/multidimensional-models/analysis-management-objects/programming-amo-security-objects.md)   
- [Autorisations et droits d’accès &#40; Analysis Services - données multidimensionnelles &#41;](http://msdn.microsoft.com/library/59fa3573-f985-46cb-8042-7da71bd59a7b)   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
+ [Autorisations et droits d’accès & #40 ; Analysis Services - données multidimensionnelles & #41 ;](http://msdn.microsoft.com/library/59fa3573-f985-46cb-8042-7da71bd59a7b)   
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
   
   

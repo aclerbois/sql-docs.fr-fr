@@ -1,33 +1,29 @@
 ---
-title: "Méthode executeBatch (SQLServerPreparedStatement) | Documents Microsoft"
-ms.custom: 
+title: Méthode executeBatch (SQLServerPreparedStatement) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apiname:
 - SQLServerPreparedStatement.executeBatch
 apilocation:
 - sqljdbc.jar
 apitype: Assembly
 ms.assetid: 8418167e-cbd2-464d-b118-73cdd76080ed
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 774a382c6e026094261ec562f21e11ba80dc85fb
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 91ed9bb1623b6427b0fc2f462702ca28e8dd5062
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executebatch-method-sqlserverpreparedstatement"></a>Méthode executeBatch (SQLServerPreparedStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -55,7 +51,7 @@ public int[] executeBatch()
  Cette méthode substitue [SQLServerStatement.executeBatch](../../../connect/jdbc/reference/executebatch-method-sqlserverstatement.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerPreparedStatement](../../../connect/jdbc/reference/sqlserverpreparedstatement-members.md)   
+ [SQLServerPreparedStatement, membres](../../../connect/jdbc/reference/sqlserverpreparedstatement-members.md)   
  [SQLServerPreparedStatement, classe](../../../connect/jdbc/reference/sqlserverpreparedstatement-class.md)  
   
   

@@ -1,32 +1,30 @@
 ---
-title: "Spécifier qu’un article de table de fusion est en téléchargement seul | Microsoft Docs"
-ms.custom: 
+title: Spécifier qu’un article de table de fusion est en téléchargement seul | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication [SQL Server replication], download-only articles
 - articles [SQL Server replication], download-only
 - download-only articles
 ms.assetid: 14839cec-6dbf-49c2-aa27-56847b09b4db
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 86ef897c6310534e6c29b3858fadcccfaa9cacf8
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: f59b32df3cff4b278dcc8a285aa86fae9ad1ddbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-that-a-merge-table-article-is-download-only"></a>Spécifier qu'un article de table de fusion est en téléchargement seul
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

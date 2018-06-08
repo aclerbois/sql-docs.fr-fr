@@ -1,36 +1,34 @@
 ---
-title: "Création de fichiers de Script (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Création de fichiers de Script (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Script File Creation, Configuring Oracle Console Settings
 - Script File Creation, Non-Configurable option
 - Script File Creation, Script File Validation
 ms.assetid: 55e5bc68-3040-4f07-bb00-0408a17c9821
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 469802e908d287d5612697b77711aa5ef4f01455
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 2b2e2623ad486466c7e9e1482d41cc2031e1d4c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-script-files-oracletosql"></a>Création de fichiers de Script (OracleToSQL)
 La première étape avant le lancement de l’application de console SSMA est à créer le fichier de script et, si nécessaire de créer le fichier de la valeur de la variable et le fichier de connexion de serveur.  
   
-Le fichier de script peut être divisé en trois sections, notamment.., :  
+Le fichier de script peut être divisé en trois sections, notamment..,:  
   
 1.  **config :** permet à l’utilisateur définir les paramètres de configuration pour l’application console.  
   
@@ -72,7 +70,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <…All commands…>  
@@ -109,7 +107,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <migrate-data>  
@@ -142,7 +140,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <!-- Connect to target database -->  
@@ -175,7 +173,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <!--synchronization-->  
@@ -186,7 +184,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </synchronize-target>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <!--data migration-->  
@@ -221,7 +219,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <convert-schema object-name="<object-name>">  
@@ -274,7 +272,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <…All commands…>  
@@ -316,7 +314,7 @@ Les options configurables par l’utilisateur sont les suivantes :
   
     </output-providers>  
     ```  
-    *ou*  
+    *Ou*  
   
     ```xml  
     <…All commands…>  
@@ -349,14 +347,14 @@ L’option non configurable est :
 -   **Nombre maximal de tentatives de reconnexion :** lorsqu’une connexion établie expire ou s’arrête en raison d’une défaillance du réseau, le serveur est requis pour être reconnecté. Les tentatives de reconnexion sont autorisées à un maximum de **5** nouvelles tentatives, la console effectue automatiquement la reconnexion. La fonctionnalité de reconnexion automatique permet de réduire votre effort de réexécuter le script.  
   
 ## <a name="server-connection-parameters"></a>Paramètres de connexion de serveur  
-Paramètres de connexion de serveur peuvent être définis dans le fichier de script ou dans le fichier de connexion de serveur. Reportez-vous à la [créer les fichiers de connexion de serveur &#40; OracleToSQL &#41;](../../ssma/oracle/creating-the-server-connection-files-oracletosql.md) section pour plus d’informations.  
+Paramètres de connexion de serveur peuvent être définis dans le fichier de script ou dans le fichier de connexion de serveur. Reportez-vous à la [création des fichiers de connexion serveur &#40;OracleToSQL&#41; ](../../ssma/oracle/creating-the-server-connection-files-oracletosql.md) section pour plus d’informations.  
   
 ## <a name="script-commands"></a>Commandes de script  
 Le fichier de script contient une séquence de commandes de flux de travail de migration dans le format XML. L’application de console SSMA traite la migration dans l’ordre les commandes figurant dans le fichier de script.  
   
 Par exemple, une migration de données par défaut d’une table spécifique dans une base de données Oracle suit la hiérarchie de : schéma -&gt; Table.  
   
-Lorsque toutes les commandes dans le fichier de script sont exécutées avec succès, l’application de console SSMA se termine et retourne le contrôle à l’utilisateur. Le contenu d’un fichier de script est plus ou moins statique avec les informations sur les variables contenues dans un [création de fichiers de valeur Variable &#40; OracleToSQL &#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md) ou, dans une section distincte dans le fichier de script pour les valeurs des variables.  
+Lorsque toutes les commandes dans le fichier de script sont exécutées avec succès, l’application de console SSMA se termine et retourne le contrôle à l’utilisateur. Le contenu d’un fichier de script est plus ou moins statique avec les informations sur les variables contenues dans un [création de fichiers de valeur Variable &#40;OracleToSQL&#41; ](../../ssma/oracle/creating-variable-value-files-oracletosql.md) ou, dans une section distincte dans le fichier de script pour les valeurs des variables.  
   
 **Exemple :**  
   
@@ -397,14 +395,14 @@ Modèles composé de 3 fichiers de script (pour l’exécution de divers scénar
   
 Vous pouvez exécuter les modèles (fichiers) après avoir modifié les paramètres affichés dans celui-ci, de pertinence.  
   
-Vous trouverez la liste complète des commandes de script dans [l’exécution de la Console SSMA &#40; OracleToSQL &#41;](../../ssma/oracle/executing-the-ssma-console-oracletosql.md)  
+Vous trouverez la liste complète des commandes de script dans [l’exécution de la Console SSMA &#40;OracleToSQL&#41;](../../ssma/oracle/executing-the-ssma-console-oracletosql.md)  
   
 ## <a name="script-file-validation"></a>Validation des fichiers de script  
 L’utilisateur peut valider facilement son fichier de script par rapport au fichier de définition de schéma **'O2SSConsoleScriptSchema.xsd'** disponibles dans le dossier « Schémas ».  
   
 ## <a name="next-step"></a>Étape suivante  
-L’étape suivante d’exploitation de la console est [création de fichiers de valeur Variable &#40; OracleToSQL &#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md).  
+L’étape suivante d’exploitation de la console est [création de fichiers de valeur Variable &#40;OracleToSQL&#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Création de fichiers de la valeur de la Variable &#40; OracleToSQL &#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md)  
+[Création de fichiers de la valeur de la Variable &#40;OracleToSQL&#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md)  
   

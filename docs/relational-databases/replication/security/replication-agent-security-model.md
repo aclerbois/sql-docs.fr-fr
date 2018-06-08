@@ -1,17 +1,16 @@
 ---
-title: "Modèle de sécurité de l’Agent de réplication | Microsoft Docs"
-ms.custom: 
-ms.date: 10/07/2015
-ms.prod: sql-non-specified
+title: Modèle de sécurité de l’Agent de réplication | Microsoft Docs
+ms.custom: ''
+ms.date: 04/26/2018
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Snapshot Agent, security
 - agents [SQL Server replication], security
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - Merge Agent, security
 - replication [SQL Server], agents and profiles
 ms.assetid: 6d09fc8d-843a-4a7a-9812-f093d99d8192
-caps.latest.revision: 
+caps.latest.revision: 72
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 07b24a4d11b0bb95417d3808afb8d9d4e5c1b849
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 162d6cb864228db80a8d7b7e7fdf0d14acd44799
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-agent-security-model"></a>Modèle de sécurité de l'Agent de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -66,8 +64,8 @@ ms.lasthandoff: 03/08/2018
 |l'Agent de lecture du journal ;|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter au serveur de distribution. Ce compte doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données de distribution.<br /><br /> Le compte utilisé pour se connecter au serveur de publication doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données de publication.<br /><br /> Lors de la sélection des options **sync_type** , *replication support only*, *initialize with backup*ou *initialize from lsn*, l'Agent de lecture du journal doit s'exécuter après l'exécution de **sp_addsubscription**, afin que les scripts d'installation soient écrits dans la base de données de distribution. L'Agent de lecture du journal doit s'exécuter sous un compte membre du rôle serveur fixe **sysadmin** . Lorsque l'option **sync_type** a la valeur *Automatic*, aucune action particulière de l'Agent de lecture du journal n'est requise.|  
 |Agent de distribution pour un abonnement par envoi de données (push)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter au serveur de distribution. Ce compte doit obligatoirement :<br /><br /> - être au moins membre du rôle de base de données fixe **db_owner** dans la base de données de distribution ;<br /><br /> - être membre de la liste d’accès à la publication (PAL) ;<br /><br /> - avoir les autorisations de lecture sur le partage des fichiers d’instantanés ;<br /><br /> - avoir les autorisations de lecture sur le répertoire d’installation du fournisseur OLE DB pour l’Abonné si l’abonnement est destiné à un Abonné non-SQL Server.<br /><br /> - Lors de la réplication des données LOB, l’agent de distribution doit avoir des autorisations en écriture sur la réplication **C:\Program Files\Microsoft SQL Server\XX\COMfolder** , où XX représente l’ID d’instance.<br /><br /> <br /><br /> Notez que le compte employé pour *se connecter* à l’Abonné doit au moins être membre du rôle de base de données fixe **db_owner** dans la base de données d’abonnement, ou bien disposer d’autorisations équivalentes si l’abonnement s’adresse à un Abonné non-SQL Server.<br /><br /> Notez également que, lorsque vous utilisez `-subscriptionstreams >= 2` sur l’agent de distribution, vous devez également accorder l’autorisation **View Server State** sur les abonnés pour détecter les blocages.|  
 |Agent de distribution pour un abonnement par extraction de données (pull)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter à l'Abonné. Ce compte doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement. Le compte servant à se connecter au serveur de distribution doit obligatoirement :<br /><br /> - être membre de la liste d’accès à la publication (PAL) ;<br /><br /> - avoir les autorisations de lecture sur le partage des fichiers d’instantanés ;<br /><br /> - Lors de la réplication des données LOB, l’agent de distribution doit avoir des autorisations en écriture sur la réplication **C:\Program Files\Microsoft SQL Server\XX\COMfolder** , où XX représente l’ID d’instance.<br /><br /> <br /><br /> Notez que, lorsque vous utilisez `-subscriptionstreams >= 2` sur l’agent de distribution, vous devez également accorder l’autorisation **View Server State** sur les abonnés pour détecter les blocages.|  
-|Agent de fusion pour un abonnement par envoi de données (push)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter au serveur de publication et au serveur de distribution. Ce compte doit obligatoirement :<br /><br /> - être au moins membre du rôle de base de données fixe **db_owner** dans la base de données de distribution ;<br /><br /> - être membre de la liste d’accès à la publication (PAL) ;<br /><br /> - être un compte de connexion associé à un utilisateur enregistré dans la base de données de publication ;<br /><br /> - avoir les autorisations de lecture sur le partage des fichiers d’instantanés ;<br /><br /> <br /><br /> Notez que le compte utilisé pour *se connecter* à l’Abonné doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement.|  
-|Agent de fusion pour un abonnement par extraction de données (pull)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter à l'Abonné. Ce compte doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement. Le compte servant à se connecter au serveur de publication et au serveur de distribution doit obligatoirement :<br /><br /> - être membre de la liste d’accès à la publication (PAL) ;<br /><br /> - être un compte de session associé à un utilisateur enregistré dans la base de données de publication ;<br /><br /> - être un compte de connexion associé à un utilisateur enregistré dans la base de données de distribution. l'utilisateur peut être un **Guest** ;<br /><br /> - avoir les autorisations de lecture sur le partage des fichiers d’instantanés ;|  
+|Agent de fusion pour un abonnement par envoi de données (push)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter au serveur de publication et au serveur de distribution. Ce compte doit obligatoirement :<br /><br /> - Être au moins membre du rôle de base de données fixe **db_owner** dans la base de données de distribution<br /><br /> - Être membre de la liste d’accès à la publication (PAL).<br /><br /> - Être un compte de connexion associé à un utilisateur ayant des autorisations de lecture-écriture dans la base de données de publication.<br /><br /> - Avoir les autorisations de lecture sur le partage des fichiers d’instantanés.<br /><br /> <br /><br /> Notez que le compte utilisé pour *se connecter* à l’Abonné doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement.|  
+|Agent de fusion pour un abonnement par extraction de données (pull)|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter à l'Abonné. Ce compte doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement. Le compte servant à se connecter au serveur de publication et au serveur de distribution doit obligatoirement :<br /><br /> - Être membre de la liste d’accès à la publication (PAL).<br /><br /> - Être un compte de connexion associé à un utilisateur ayant des autorisations de lecture-écriture dans la base de données de publication.<br /><br /> - Être un compte de connexion associé à un utilisateur enregistré dans la base de données de distribution. L'utilisateur peut être un **Guest**<br /><br /> - Avoir les autorisations de lecture sur le partage des fichiers d’instantanés|  
 |Agent de lecture de la file d'attente|Le compte Windows sous lequel s'exécute l'agent est utilisé pour se connecter au serveur de distribution. Ce compte doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données de distribution.<br /><br /> Le compte utilisé pour se connecter au serveur de publication doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données de publication.<br /><br /> Le compte utilisé pour se connecter à l'Abonné doit être au minimum membre du rôle de base de données fixe **db_owner** dans la base de données d'abonnement.|  
   
 ## <a name="agent-security-under-sql-server-agent"></a>Sécurité de l'Agent dans l'Agent SQL Server  

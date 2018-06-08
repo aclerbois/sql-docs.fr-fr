@@ -1,16 +1,14 @@
 ---
-title: sp_help_log_shipping_monitor_secondary (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_log_shipping_monitor_secondary (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_log_shipping_monitor_secondary
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_log_shipping_monitor_secondary
 ms.assetid: 3ac091ea-c9a8-4c05-a0b6-1ccf4e001339
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 80c3f736037a763b1cda3ee37c92b443ecd07e87
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: f6e667981bd9fb3ba0f67e260da05a7b92d324d5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelplogshippingmonitorsecondary-transact-sql"></a>sp_help_log_shipping_monitor_secondary (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,10 +46,10 @@ sp_help_log_shipping_monitor_secondary
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@secondary_server =** ] '*secondary_server*'  
+ [  **@secondary_server =** ] '*secondary_server*'  
  Nom du serveur secondaire. *secondary_server* est **sysname**, sans valeur par défaut.  
   
- [ **@secondary_database =** ] '*secondary_database*'  
+ [  **@secondary_database =** ] '*secondary_database*'  
  Nom de la base de données secondaire. *secondary_database* est **sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -85,7 +82,7 @@ sp_help_log_shipping_monitor_secondary
  Seuls les membres de la **sysadmin** rôle serveur fixe peut exécuter cette procédure.  
   
 ## <a name="see-also"></a>Voir aussi  
- [À propos de journaux de transaction &#40; SQL Server &#41;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
+ [À propos de journaux de transaction & #40 ; SQL Server & #41 ;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

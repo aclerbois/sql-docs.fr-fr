@@ -1,25 +1,23 @@
 ---
-title: "Ajouter le composant WebPart Visionneuse de rapports de SQL Server Reporting Services à un site SharePoint | Microsoft Docs"
-ms.custom: 
+title: Ajouter le composant WebPart Visionneuse de rapports de SQL Server Reporting Services à un site SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 09/26/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server-sharepoint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 93137662ea40589495e692ca021c693920786185
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3d63f40c62c1997be2d4944c8b67f328d2b64c2d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-sql-server-reporting-services-report-viewer-web-part-to-a-sharepoint-page"></a>Ajouter le composant WebPart Visionneuse de rapports de SQL Server Reporting Services à un site SharePoint
 
@@ -29,7 +27,7 @@ Affichez un rapport, à partir de SQL Server Reporting Services ou de Power BI R
 
 ![Composant WebPart Visionneuse de rapports sur une page SharePoint](media/sharepoint-report-viewer-web-part-on-page.png)
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 * Pour pouvoir charger correctement des rapports, le Service d’émission de jetons Revendications vers Windows (C2WTS) doit être configuré pour la délégation Kerberos contrainte. Pour plus d’informations sur la configuration du Service d’émission de jetons Revendications vers Windows (C2WTS), consultez [Service d’émission de jetons Revendications vers Windows (C2WTS) et Reporting Services](../install-windows/claims-to-windows-token-service-c2wts-and-reporting-services.md).
 
@@ -63,7 +61,7 @@ Pour configurer le composant WebPart de manière à ce qu’il pointe vers votre
 
     ![Modifier le composant WebPart dans le menu déroulant du composant WebPart.](media/sharepoint-edit-web-part.png)
 
-2. Entrez l’**URL du serveur de rapports** qui héberge votre rapport. Elle doit présenter le format suivant :*http://mon_serveur_rs/serveur_rapports*.
+2. Entrez l’**URL du serveur de rapports** qui héberge votre rapport. Elle doit ressembler à *http://myrsserver/reportserver*.
 
 3. Entrez le chemin et le nom du rapport que vous souhaitez afficher dans le composant WebPart. Par exemple, */Exemples de rapports AdventureWorks/Ventes de la société*. Dans cet exemple, le rapport *Ventes de la société* se trouve dans un dossier nommé *Exemples de rapports AdventureWorks*.
 

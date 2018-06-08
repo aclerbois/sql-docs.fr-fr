@@ -1,29 +1,27 @@
 ---
 title: Microsoft ActiveX Data Objects (ADO) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/25/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO, about
 ms.assetid: 2fa6237b-44b8-4b6c-9952-5acd80a54e20
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ad1f280a51c061621145e9c3e3f1d656a4eca80
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 40e0ba7ff0b05a8f1faa4d0b62893f51145c81c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-activex-data-objects-ado"></a>Microsoft ActiveX Data Objects (ADO)
 
@@ -43,7 +41,7 @@ Chaque section de cet article décrit un composant de l’objet ADO.
   
  Comme ADO, ADO MD utilise un fournisseur OLE DB sous-jacent pour accéder aux données. Pour utiliser ADO MD, le fournisseur doit être un fournisseur de données multidimensionnelles (MDP) tel que défini par la spécification OLE DB pour OLAP. Fournisseurs MDP présente des données dans des vues multidimensionnelles par opposition aux fournisseurs de données tabulaires (TDP) qui présentent les données sous forme de tableaux. Consultez la documentation de votre fournisseur OLE DB pour OLAP pour des informations plus détaillées sur la syntaxe spécifique et les comportements pris en charge par votre fournisseur.  
   
-## <a name="rds"></a>RDS  
+## <a name="rds"></a>SERVICES BUREAU À DISTANCE  
  Service de données à distance (RDS) est une fonctionnalité de l’objet ADO, avec lequel vous pouvez déplacer des données à partir d’un serveur vers une application cliente ou d’une page Web, manipuler les données sur le client et renvoyer les mises à jour sur le serveur dans un seul aller-retour.  
   
 > [!IMPORTANT]

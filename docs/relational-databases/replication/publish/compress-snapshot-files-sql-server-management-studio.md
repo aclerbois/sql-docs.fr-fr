@@ -1,31 +1,29 @@
 ---
-title: "Compresser des fichiers d’instantanés (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Compresser des fichiers d’instantanés (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - snapshots [SQL Server replication], compressed
 - snapshot replication [SQL Server], compressed snapshots
 ms.assetid: 174ade3e-74a1-4e67-a6da-b874be3ff50f
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4c90c584a0f9364cc5647809dfa308cb08d020e1
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: c2f58f04d7f3e8655aaf4ad567d34f9042de292a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="compress-snapshot-files-sql-server-management-studio"></a>Compresser des fichiers d'instantanés (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -33,7 +31,7 @@ ms.lasthandoff: 03/08/2018
   
 ### <a name="to-compress-snapshot-files"></a>Pour compresser des fichiers d'instantanés  
   
-1.  Dans la page **Instantané** de la boîte de dialogue **Propriétés de la publication - \<Publication>** :  
+1.  Dans la page **Instantané** de la boîte de dialogue **Propriétés de la publication - \<Publication>**  :  
   
     1.  Sélectionnez **Placer les fichiers dans le dossier suivant**puis cliquez sur **Parcourir** pour accéder à un répertoire ou entrez le chemin d'accès au répertoire dans lequel stocker les fichiers d'instantanés.  
   

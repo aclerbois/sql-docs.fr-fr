@@ -1,15 +1,14 @@
 ---
-title: "Appel d’une procédure stockée (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Appel d’une procédure stockée (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - calling stored procedures
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - stored procedures [OLE DB], calling
 - SQL Server Native Client OLE DB provider, stored procedures
 ms.assetid: 8e5738e5-4bbe-4f34-bd69-0c0633290bdd
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7d756f34ea2ac9e5bf2803dc27b80a374ab9cd56
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e853d37f3ada75ef5259fbc8fedabfb3e48d8c9d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stored-procedures---calling"></a>Procédures stockées - appel
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -123,7 +122,7 @@ ms.lasthandoff: 01/25/2018
 {rpc SalesByCategory}  
 ```  
   
- Pour un exemple d’application qui illustre une séquence d’échappement RPC, consultez [exécuter une procédure stockée &#40; À l’aide de la syntaxe RPC &#41; et traiter le retour Codes et les paramètres de sortie &#40; OLE DB &#41; ](../../../relational-databases/native-client-ole-db-how-to/results/execute-stored-procedure-with-rpc-and-process-output.md).  
+ Pour un exemple d’application qui illustre une séquence d’échappement RPC, consultez [exécuter une procédure stockée & #40 ; À l’aide de la syntaxe RPC & #41 ; et traiter le retour Codes et les paramètres de sortie & #40 ; OLE DB & #41 ; ](../../../relational-databases/native-client-ole-db-how-to/results/execute-stored-procedure-with-rpc-and-process-output.md).  
   
 ### <a name="transact-sql-execute-statement"></a>Instruction Transact-SQL EXECUTE  
  La séquence d’échappement ODBC CALL et la séquence d’échappement RPC sont les méthodes recommandées pour l’appel d’une procédure stockée plutôt que la [EXECUTE](../../../t-sql/language-elements/execute-transact-sql.md) instruction. Le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournisseur de OLE DB Native Client utilise le mécanisme RPC de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour optimiser le traitement des commandes. Ce protocole RPC augmente les performances en supprimant une bonne partie du traitement des paramètres et de l'analyse des instructions sur le serveur.  

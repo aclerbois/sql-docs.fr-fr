@@ -1,28 +1,27 @@
 ---
-title: "Création de cas de Test (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Création de cas de Test (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Test Case Wizard
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Test Case Wizard
 ms.assetid: 22f38901-ec35-4707-a911-784e6ad8dafb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: fed434b32dd482dfb5700c3b547b7e6016ca9669
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 84ad444124d5b451b56fd1816a250465e7f2e5b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-test-cases-oracletosql"></a>Création de cas de Test (OracleToSQL)
 Utilisez l’Assistant de cas de Test pour créer un test. Cet Assistant vous permet de créer des cas de test en choisissant testé et vérifié les objets et en spécifiant les paramètres de tests.  
@@ -37,16 +36,16 @@ Si vous obtenez la boîte de dialogue, cliquez sur **Oui** pour créer le schém
 ## <a name="overview-of-creating-test-cases-using-the-wizard"></a>Présentation de la création du cas de Test à l’aide de l’Assistant  
 Le processus de création d’un cas de test se compose de cinq étapes :  
   
-1.  [Lors de l’initialisation des cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/initializing-test-cases-oracletosql.md)  
+1.  [L’initialisation des cas de Test &#40;OracleToSQL&#41;](../../ssma/oracle/initializing-test-cases-oracletosql.md)  
   
-2.  [Sélection et configuration d’objets pour Test &#40; OracleToSQL &#41;](../../ssma/oracle/selecting-and-configuring-objects-to-test-oracletosql.md)  
+2.  [Sélection et configuration d’objets pour le Test &#40;OracleToSQL&#41;](../../ssma/oracle/selecting-and-configuring-objects-to-test-oracletosql.md)  
   
-3.  [Sélection et configuration affectées objets &#40; OracleToSQL &#41;](../../ssma/oracle/selecting-and-configuring-affected-objects-oracletosql.md)  
+3.  [Sélectionner et configurer les objets affectés &#40;OracleToSQL&#41;](../../ssma/oracle/selecting-and-configuring-affected-objects-oracletosql.md)  
   
-4.  [Personnalisation des relations entre les appels ordre &#40; OracleToSQL &#41;](../../ssma/oracle/customizing-calls-order-oracletosql.md)  
+4.  [Personnalisation des appels ordre &#40;OracleToSQL&#41;](../../ssma/oracle/customizing-calls-order-oracletosql.md)  
   
-5.  [Terminer la préparation du cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
+5.  [Préparation du cas de Test de fin &#40;OracleToSQL&#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Test de migration des objets de base de données &#40; OracleToSQL &#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
+[Test de migration des objets de base de données &#40;OracleToSQL&#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
   

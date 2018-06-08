@@ -1,30 +1,29 @@
 ---
 title: Chiffrement Always Encrypted
-ms.custom: 
+ms.custom: ''
 ms.date: 02/29/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Always Encrypted, cryptography system
 ms.assetid: ae8226ff-0853-4716-be7b-673ce77dd370
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6767e36da99208b872eb5872185e541e4fa902e2
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ead5689c2edb47f4ce2699e6b94bff53957ce9fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="always-encrypted-cryptography"></a>Chiffrement Always Encrypted
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -43,9 +42,9 @@ ms.lasthandoff: 11/21/2017
 ## <a name="data-encryption-algorithm"></a>Algorithme de chiffrement des données  
  Always Encrypted utilise l’algorithme **AEAD_AES_256_CBC_HMAC_SHA_256** pour chiffrer les données de la base de données.  
   
- **AEAD_AES_256_CBC_HMAC_SHA_256** est dérivé du projet de spécification disponible à l’adresse [http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05](http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05). Il utilise un schéma de chiffrement authentifié avec données associées, en suivant une approche Encrypt-then-MAC. Autrement dit, le texte en clair est d'abord chiffré puis les informations MAC sont générées selon le texte chiffré qui en résulte.  
+ **AEAD_AES_256_CBC_HMAC_SHA_256** est dérivé du projet de spécification disponible ici : [http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05](http://tools.ietf.org/html/draft-mcgrew-aead-aes-cbc-hmac-sha2-05). Il utilise un schéma de chiffrement authentifié avec données associées, en suivant une approche Encrypt-then-MAC. Autrement dit, le texte en clair est d'abord chiffré puis les informations MAC sont générées selon le texte chiffré qui en résulte.  
   
- Pour masquer les modèles, **AEAD_AES_256_CBC_HMAC_SHA_256** utilise le mode CBC (Cipher Block Chaining), dans lequel une valeur initiale est chargée dans le système nommé vecteur d’initialisation (IV). Vous trouverez la description complète du mode CBC à l’adresse [http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf](http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf).  
+ Pour masquer les modèles, **AEAD_AES_256_CBC_HMAC_SHA_256** utilise le mode CBC (Cipher Block Chaining), dans lequel une valeur initiale est chargée dans le système nommé vecteur d’initialisation (IV). Vous trouverez la description complète du mode CBC ici : [http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf](http://csrc.nist.gov/publications/nistpubs/800-38a/sp800-38a.pdf).  
   
  **AEAD_AES_256_CBC_HMAC_SHA_256** calcule une valeur de texte chiffré pour une valeur en texte clair donnée en procédant comme suit.  
   
@@ -136,7 +135,7 @@ aead_aes_256_cbc_hmac_sha_256 = versionbyte + MAC + IV + aes_256_cbc_ciphertext
 1 + 32 + 16 + (FLOOR(DATALENGTH(cell_data)/16) + 1) * 16  
 ```  
   
- Par exemple :  
+ Exemple :  
   
 -   Une valeur en texte clair **int** d’une longueur de 4 octets devient une valeur binaire d’une longueur de 65 octets après chiffrement.  
   
@@ -160,7 +159,7 @@ aead_aes_256_cbc_hmac_sha_256 = versionbyte + MAC + IV + aes_256_cbc_ciphertext
 |**geometry**|N/A (non pris en charge)|  
 |**hierarchyid**|N/A (non pris en charge)|  
 |**image**|N/A (non pris en charge)|  
-|**int**|65|  
+|**Int**|65|  
 |**money**|65|  
 |**nchar**|Variable. Utilisez la formule ci-dessus.|  
 |**ntext**|N/A (non pris en charge)|  
@@ -184,7 +183,7 @@ aead_aes_256_cbc_hmac_sha_256 = versionbyte + MAC + IV + aes_256_cbc_ciphertext
 ## <a name="net-reference"></a>Référence .NET  
  Pour plus d’informations sur les algorithmes présentés dans ce document, consultez les fichiers **SqlAeadAes256CbcHmac256Algorithm.cs** et **SqlColumnEncryptionCertificateStoreProvider.cs** dans la [référence .NET](http://referencesource.microsoft.com/).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Always Encrypted &#40;moteur de base de données&#41;](../../../relational-databases/security/encryption/always-encrypted-database-engine.md)   
  [Always Encrypted &#40;développement client&#41;](../../../relational-databases/security/encryption/always-encrypted-client-development.md)  
   

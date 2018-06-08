@@ -2,34 +2,35 @@
 title: Créer un projet de qualité des données | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.dqproject.newdqproject.f1
 helpviewer_keywords:
 - create,data quality project
 - data quality project,create
 ms.assetid: 19c52d2b-d28e-4449-ab59-5fe0dc326cd9
-caps.latest.revision: ''
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 585accdc7848b22001406dc46ff7bf2de7e83cdf
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: e7b4ce24f687b264cea09b29baaf4736ccd57918
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-data-quality-project"></a>Créer un projet de qualité des données
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique explique comment créer un projet de qualité des données à l'aide de [!INCLUDE[ssDQSClient](../includes/ssdqsclient-md.md)]. Un projet de qualité des données est utilisé pour exécuter l'activité de nettoyage ou de correspondance dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS).  
   
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  

@@ -1,16 +1,15 @@
 ---
-title: "Suspendre et reprendre des planifications partagées | Microsoft Docs"
-ms.custom: 
+title: Suspendre et reprendre des planifications partagées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - pausing schedules
 - report-specific schedules [Reporting Services]
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - schedules [Reporting Services], resuming
 - schedules [Reporting Services], pausing
 ms.assetid: e416be75-5234-4aa6-a3de-77f60f25169a
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: aff3fe5efdee7db2dfb0ac17f8d797badec97da9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: ecaa6780e3b3f10809f11d3aa329cb69e645123a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pause-and-resume-shared-schedules"></a>Pause and Resume Shared Schedules
   Vous pouvez suspendre et reprendre une planification partagée en cours d'utilisation. Le fait de suspendre une planification partagée fournit un moyen de geler temporairement une planification qui est utilisée pour déclencher un traitement de rapport et des abonnements. Seules les planifications partagées peuvent être suspendues et reprises. Vous ne pouvez pas suspendre des planifications spécifiques aux rapports.  

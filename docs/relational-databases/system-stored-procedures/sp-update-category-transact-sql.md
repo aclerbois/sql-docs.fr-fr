@@ -1,16 +1,14 @@
 ---
-title: sp_update_category (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_update_category (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_update_category
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_update_category
 ms.assetid: 098b926a-b078-4122-a5e1-3ef54b979dd4
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fab5ea9aea708af028114ef59e9274931c8257f9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: f07e44e12193e506146e299bd57f84b02c802856
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spupdatecategory-transact-sql"></a>sp_update_category (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,11 +51,11 @@ sp_update_category
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**ALERT**|Met à jour une catégorie d'alerte.|  
+|**ALERTE**|Met à jour une catégorie d'alerte.|  
 |**JOB**|Met à jour une catégorie de travail.|  
 |**(OPÉRATEUR)**|Met à jour une catégorie d'opérateur.|  
   
- [ **@name =**] **'***old_name***'**  
+ [  **@name =**] **'***ancien_nom***'**  
  Nom actuel de la catégorie. *ancien_nom*est **sysname**, sans valeur par défaut.  
   
  [  **@new_name =**] **'***nouveau_nom***'**  

@@ -1,15 +1,14 @@
 ---
-title: "Fichiers et numéros de Version | Documents Microsoft"
-ms.custom: 
+title: Fichiers et numéros de Version | Documents Microsoft
+ms.custom: ''
 ms.date: 08/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Management Objects, versions
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - SMO [SQL Server], versions
 - versions [SMO]
 ms.assetid: 510907b6-e7a9-41bd-b892-d6d99a5118e1
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a23f5abd57fdf723382671b82d6078cbb2c7b8d5
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 10e11076ce023a3d969b4ba95a30c15de43eafa6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="files-and-version-numbers"></a>Fichiers et numéros de version
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]

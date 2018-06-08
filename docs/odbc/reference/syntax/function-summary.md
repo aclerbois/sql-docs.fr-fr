@@ -1,30 +1,27 @@
 ---
-title: "Résumé de la fonction | Documents Microsoft"
-ms.custom: 
+title: Résumé de la fonction | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - functions [ODBC], types
 - functions [ODBC]
 ms.assetid: e7fc96e3-3f16-4799-b70f-49febed53a44
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 409acddceb38fb68f255a3c1d0ff118cf87e2640
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6652f8e29b3ad7fd5f9c9711f9241eae4ac1141c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="function-summary"></a>Résumé de la fonction
 Les sections suivantes résument les fonctions utilisées par les applications ODBC et les logiciels.  

@@ -1,16 +1,12 @@
 ---
-title: sys.dm_hadr_database_replica_states (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_hadr_database_replica_states (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/11/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_hadr_database_states_TSQL
@@ -23,16 +19,15 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - sys.dm_hadr_database_replica_states dynamic management view
 ms.assetid: 1a17b0c9-2535-4f3d-8013-cd0a6d08f773
-caps.latest.revision: 
+caps.latest.revision: 84
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c69d36319ca4273fad7b1c4890bf27e4e4fa0797
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: f90bf8e9d7a22b8100de48af6ec6562e893b6e89
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmhadrdatabasereplicastates-transact-sql"></a>sys.dm_hadr_database_replica_states (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +44,7 @@ ms.lasthandoff: 02/12/2018
 |**replica_id**|**uniqueidentifier**|Identificateur du réplica de disponibilité dans le groupe de disponibilité.|  
 |**group_database_id**|**uniqueidentifier**|Identificateur de la base de données dans le groupe de disponibilité. Cet identificateur est identique sur chaque réplica auquel cette base de données est attachée.|  
 |**is_local**|**bit**|Si la base de données de disponibilité est locale, une des valeurs suivantes :<br /><br /> 0 = La base de données n'est pas locale pour l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> 1 = La base de données est locale pour l'instance de serveur.|  
-|**is_primary_replica**|**bit**|Retourne 1 s’il s’agit du réplica principal, ou 0 s'il s'agit d'un réplica secondaire.<br /><br />**S’applique à :** [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|**is_primary_replica**|**bit**|Retourne 1 s’il s’agit du réplica principal, ou 0 s'il s'agit d'un réplica secondaire.<br /><br />**S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
 |**synchronization_state**|**tinyint**|État du déplacement des données, une des valeurs suivantes.<br /><br /> 0 ne = pas de synchronisation. Pour une base de données primaire, indique que la base de données n'est pas prête à synchroniser son journal des transactions avec les bases de données secondaires correspondantes. Pour une base de données secondaire, indique que la base de données n'a pas commencé la synchronisation du journal en raison d'un problème de connexion, est suspendue, ou passe par des états de transition pendant le démarrage ou lors d'un changement de rôle.<br /><br /> 1 = la synchronisation. Pour une base de données primaire, indique que la base de données est prête à recevoir une demande d'analyse d'une base de données secondaire. Pour une base de données secondaire, indique qu'un déplacement des données actif a lieu pour la base de données.<br /><br /> 2 = Synchronized. Une base de données primaire affiche SYNCHRONIZED à la place de SYNCHRONIZING. Une base de données secondaire avec validation synchrone affiche Synchronisé lorsque le cache local indique que la base de données est prête pour le basculement et que la synchronisation est en cours.<br /><br /> 3 = restauration. Indique la phase dans le processus de restauration lorsqu'une base de données secondaire obtient activement les pages de la base de données primaire.<br />**Attention :** lorsqu’une base de données sur un réplica secondaire est dans l’état REVERTING, forcer le basculement vers le réplica secondaire laisse la base de données dans un état dans lequel elle ne peut pas être démarrée en tant que base de données primaire. La base de données doit se reconnecter comme base de données secondaire, ou vous devez appliquer les nouveaux enregistrements du journal à partir d'une sauvegarde du journal.<br /><br /> 4 = l’initialisation. Indique la phase de restauration lorsque le journal des transactions requis pour qu'une base de données secondaire rattrape le retard du numéro séquentiel de restauration dans le journal est livré et renforcé sur un réplica secondaire.<br />**Attention :** lorsqu’une base de données sur un réplica secondaire est dans l’état INITIALIZING, forcer le basculement vers le réplica secondaire laisse la base de données dans un état dans lequel elle en tant que base de données primaire. La base de données doit se reconnecter comme base de données secondaire, ou vous devez appliquer les nouveaux enregistrements du journal à partir d'une sauvegarde du journal.|  
 |**synchronization_state_desc**|**nvarchar(60)**|Description de l'état de déplacement des données, un des suivants :<br /><br /> NOT SYNCHRONIZING<br /><br /> SYNCHRONIZING<br /><br /> SYNCHRONIZED<br /><br /> REVERTING<br /><br /> INITIALIZING|  
 |**is_commit_participant**|**bit**|0 = La validation de transaction n'est pas synchronisée par rapport à cette base de données.<br /><br /> 1 = La validation de transaction est synchronisée par rapport à cette base de données.<br /><br /> Pour une base de données sur un réplica de disponibilité avec validation asynchrone, cette valeur est toujours de 0.<br /><br /> Pour une base de données sur un réplica de disponibilité avec validation synchrone, cette valeur est exacte uniquement sur la base de données primaire.|  
@@ -76,10 +71,10 @@ ms.lasthandoff: 02/12/2018
 |**redo_rate**|**bigint**|Fréquence à laquelle les enregistrements de journal sont rétablis sur une base de données secondaire donnée, en kilo-octets (Ko)/seconde.|  
 |**filestream_send_rate**|**bigint**|Fréquence à laquelle les fichiers FILESTREAM sont envoyés sur le réplica secondaire en kilo-octets/seconde.|  
 |**end_of_log_lsn**|**numeric(25,0)**|LSN de fin de journal local. Numéro séquentiel réel dans le journal correspondant au dernier enregistrement du journal dans le cache du journal sur les bases de données primaire et secondaire. Sur le réplica principal, les lignes secondaires reflètent le LSN de fin de journal, depuis les derniers messages de progression que les réplicas secondaires ont envoyés au réplica principal.<br /><br /> **end_of_log_lsn** reflète un ID de bloc de journal complété avec des zéros. Il ne s'agit pas d'un numéro séquentiel réel dans le journal. Pour plus d’informations, consultez [présentation des valeurs de colonne le LSN](#LSNcolumns), plus loin dans cette rubrique.|  
-|**last_commit_lsn**|**Numeric(25,0)**|Numéro séquentiel réel dans le journal correspondant au dernier enregistrement de validation dans le journal des transactions.<br /><br /> Sur la base de données primaire, cet argument correspond au dernier enregistrement de validation traité. Les lignes des bases de données secondaires indiquent le numéro séquentiel dans le journal que le réplica secondaire a envoyé au réplica principal.<br /><br /> Sur le réplica secondaire, il s'agit du dernier enregistrement de validation qui a été restauré.|  
+|**last_commit_lsn**|**NUMERIC(25,0)**|Numéro séquentiel réel dans le journal correspondant au dernier enregistrement de validation dans le journal des transactions.<br /><br /> Sur la base de données primaire, cet argument correspond au dernier enregistrement de validation traité. Les lignes des bases de données secondaires indiquent le numéro séquentiel dans le journal que le réplica secondaire a envoyé au réplica principal.<br /><br /> Sur le réplica secondaire, il s'agit du dernier enregistrement de validation qui a été restauré.|  
 |**last_commit_time**|**datetime**|Heure correspondant au dernier enregistrement de validation.<br /><br /> Sur la base de données secondaire, cette heure est la même que dans la base de données primaire.<br /><br /> Sur le réplica principal, chaque ligne de base de données secondaire indique l'heure que le réplica secondaire qui héberge la base de données secondaire a signalé au réplica principal. La différence d'heure entre la ligne de base de données primaire et une ligne de base de données secondaire donnée représente approximativement la durée maximale d'interruption admissible (RTO, Recovery Time Objective), en supposant que le processus de restauration par progression a rattrapé son retard et que la progression a été signalée au réplica principal par le réplica secondaire.|  
 |**low_water_mark_for_ghosts**|**bigint**|Nombre à croissance monotone pour la base de données, qui indique une limite inférieure utilisée par la tâche de nettoyage des enregistrements fantômes sur la base de données primaire. Si ce nombre n'augmente pas avec le temps, cela implique que le nettoyage des enregistrements fantômes ne se produit pas. Pour déterminer quelles lignes fantômes nettoyer, le réplica principal utilise la valeur minimale de cette colonne pour cette base de données sur tous les réplicas de disponibilité (y compris le réplica principal).|  
-|**secondary_lag_seconds**|**bigint**|Le nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal pendant la synchronisation.<br /><br />**S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|**secondary_lag_seconds**|**bigint**|Le nombre de secondes pendant lesquelles le réplica secondaire est derrière le réplica principal pendant la synchronisation.<br /><br />**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
   
 ##  <a name="LSNcolumns"></a> Présentation des valeurs de colonne le LSN  
  Les valeurs de la **end_of_log_lsn**, **last_hardened_lsn**, **last_received_lsn**, **last_sent_lsn**, **recovery_lsn**, et **truncation_lsn** colonnes ne sont pas des numéros séquentiels réels (dans le journal LSN). Chacune de ces valeurs reflète plutôt un ID de bloc de journal complété avec des zéros.  

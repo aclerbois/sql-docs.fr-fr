@@ -1,34 +1,33 @@
 ---
-title: "Supprimer un réplica secondaire d’un groupe de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Supprimer un réplica secondaire d’un groupe de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygroup.removesecondaryar.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygroup.removesecondaryar.f1
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
 - Availability Groups [SQL Server], configuring
 ms.assetid: 35ddc8b6-3e7c-4417-9a0a-d4987a09ddf7
-caps.latest.revision: "38"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 38
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e92e9180de7f3a0e5d845a702f3851fef2542ad4
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 61ee47380725732fc9274734584addff85ac90e2
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769505"
 ---
 # <a name="remove-a-secondary-replica-from-an-availability-group-sql-server"></a>Supprimer un réplica secondaire d'un groupe de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment supprimer un réplica secondaire d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment supprimer un réplica secondaire d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
 -   **Avant de commencer :**  
   

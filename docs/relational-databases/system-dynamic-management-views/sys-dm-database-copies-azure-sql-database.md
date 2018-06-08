@@ -1,16 +1,14 @@
 ---
-title: "Sys.dm_database_copies (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.dm_database_copies (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
-ms.component: dmv's
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_database_copies_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - dm_database_copies
 - sys.dm_database_copies
 ms.assetid: d03d4657-86d1-4496-97e6-cc3bc292e0b1
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fb6240f63ab72ae0e6ddbc28d2afe7e6ef24ef82
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: 9b2e5b7b257ea0a22cf847f4e28f58c3c89a2d68
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdatabasecopies-azure-sql-database"></a>sys.dm_database_copies (Azure SQL Database)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]

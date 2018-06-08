@@ -1,31 +1,30 @@
 ---
-title: "Afficher les propriétés d’un réplica de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Afficher les propriétés d’un réplica de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ', policies'
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ', policies'
 ms.assetid: 14fed3c4-8ecc-4e1c-931d-a7ec1e9f9e90
-caps.latest.revision: "12"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 065943f54cc0fe2f5d50bf3526f436cefe320d4e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 2c50c4aaae5922a13f359638c8fd393f50bb6070
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771575"
 ---
 # <a name="view-availability-replica-properties-sql-server"></a>Afficher les propriétés d'un réplica de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Cette rubrique explique comment afficher les propriétés d’un réplica de disponibilité pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment afficher les propriétés d’un réplica de disponibilité pour un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
 -   **Pour afficher les propriétés d'un réplica de disponibilité à l'aie de :**  
   

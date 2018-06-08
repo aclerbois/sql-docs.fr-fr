@@ -1,36 +1,35 @@
 ---
-title: "HelpLink, élément | Microsoft Docs"
-ms.custom: 
+title: HelpLink, élément | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service-net-framework-exception-handling
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - HelpLink element
 - SoapException class
 ms.assetid: a4489103-a874-44c2-8f75-95cb238928ed
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9dd69bd5a2dcdf71a3dccd211d5e464e75994cb9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 704afe9de0e7de91a5de6c4df8ec69df4286cab4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="helplink-element"></a>Élément HelpLink
   L’élément **HelpLink** de la propriété **Detail** est une chaîne d’URL générée par le serveur de rapports. L'URL cible une page Web gérée par le centre d'Aide et de support [!INCLUDE[msCoName](../../../includes/msconame-md.md)] et fournit une aide et des articles de base de connaissances supplémentaires sur les erreurs spécifiques qui se produisent dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)]. La syntaxe de l'URL est la suivante :  
   
- **http://**www.microsoft.com**/**products**/**ee**/**transform.aspx**?EvtSrc**=v*valeur***&EvtID**=*valeur***&ProdName**=*valeur***&ProdVer**=*valeur*  
+ **http://** www.microsoft.com**/** products**/** ee**/** transform.aspx **?EvtSrc**=v*alue***&EvtID**=* value ***&ProdName**=* value***&ProdVer**=* value*  
   
  Le tableau suivant répertorie les arguments de l’URL **HelpLink**.  
   

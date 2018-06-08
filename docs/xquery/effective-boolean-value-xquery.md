@@ -1,16 +1,15 @@
 ---
-title: "Valeur booléenne effective (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Valeur booléenne effective (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - XQuery, effective Boolean values
 - EBV
 ms.assetid: 506682b1-b6c9-45e2-aa54-7abd5844c3f1
-caps.latest.revision: 
+caps.latest.revision: 17
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93c3ecaf4a4ded90a4b65aed08c6112fd9b670f1
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4ab470f5643335cd1ed26edd07aa93284bab1d47
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="effective-boolean-value-xquery"></a>Valeur booléenne effective (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +50,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [Expressions conditionnelles](../xquery/conditional-expressions-xquery.md)  
   
--   [QuantifiedeExpressions](../xquery/quantified-expressions-xquery.md)  
+-   [Expressions quantifiées](../xquery/quantified-expressions-xquery.md)  
   
  Voici un exemple de valeur booléenne effective. Lorsque le **si** expression est traitée, la valeur booléenne effective de la condition est déterminée. Puisque l'expression `/a[1]` renvoie une séquence vide, la valeur booléenne effective est false. Le résultat est renvoyé au format XML avec un nœud de texte (false).  
   
@@ -99,6 +97,6 @@ go
   
 ## <a name="see-also"></a>Voir aussi  
  [Principes fondamentaux de XQuery](../xquery/xquery-basics.md)   
- [Instruction FLWOR et itération &#40; XQuery &#41;](../xquery/flwor-statement-and-iteration-xquery.md)  
+ [Instruction et itération FLWOR &#40;XQuery&#41;](../xquery/flwor-statement-and-iteration-xquery.md)  
   
   

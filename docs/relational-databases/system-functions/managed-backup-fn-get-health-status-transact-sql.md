@@ -1,16 +1,14 @@
 ---
-title: managed_backup.fn_get_health_status (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: managed_backup.fn_get_health_status (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - fn_get_health_status_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - smart_admin.fn_get_health_status
 - fn_get_health_status
 ms.assetid: b376711d-444a-4b5e-b483-8df323b4e31f
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 35cc393aa4521079e44c1dffee403b693a020b23
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 0fa9a510f2be08329173898b7e0e6794458ea8fe
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managedbackupfngethealthstatus-transact-sql"></a>managed_backup.fn_get_health_status (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]

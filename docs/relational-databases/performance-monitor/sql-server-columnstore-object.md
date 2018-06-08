@@ -1,28 +1,24 @@
 ---
 title: SQL Server, objet columnstore | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ae663a49-012f-4ffe-a332-f03157843052
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+author: stevestein
+ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 041279879116916b0d603e8c1f9a81f8ad180f70
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: c9e2cb03070450920cae365f435ae871367ec704
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sql-server-columnstore-object"></a>SQL Server, objet columnstore
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

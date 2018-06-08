@@ -2,16 +2,13 @@
 title: Optimisation de la table NewOrg | Microsoft Docs
 ms.custom: ''
 ms.date: 03/27/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
-ms.component: tables
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: table-view-index
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 helpviewer_keywords:
@@ -21,12 +18,11 @@ caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 39a6587d88d14f9ac1950f7e1f6896258860b452
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: be243734f05365ea7376e2e48e30479e46a7865c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-1-3---optimizing-the-neworg-table"></a>Leçon 1-3 : Optimisation de la table NewOrg
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

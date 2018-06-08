@@ -1,28 +1,26 @@
 ---
-title: "Statistiques pour les tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Statistiques pour les tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e644766d-1d1c-43d7-83ff-8ccfe4f3af9f
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 83b83588668057284eaf92d972d5dcf42ca46a56
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b1c664857e75b8f647b02905a26effb8e8b2c5e2
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="statistics-for-memory-optimized-tables"></a>Statistiques pour les tables optimisées en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

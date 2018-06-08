@@ -1,32 +1,31 @@
 ---
-title: "Initialiser un abonnement transactionnel sans instantané | Microsoft Docs"
-ms.custom: 
+title: Initialiser un abonnement transactionnel sans instantané | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactional replication, initializing
 - replication [SQL Server], initializing
 - initializing subscriptions [SQL Server replication], without snapshots
 ms.assetid: 75c8c1f8-60bc-44a8-944b-d18d1f6bda11
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 51a6df19c29bdc1956bf942d67a84e26cb229f3a
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: da939645cd7f442f15006d994390bf7df7a40c3f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="initialize-a-transactional-subscription-without-a-snapshot"></a>Initialiser un abonnement transactionnel sans instantané
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,36 +1,35 @@
 ---
 title: SQL Server Management Objects (SMO) les Guide de programmation | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SMO [SQL Server]
 - SQL Server Management Objects
 - programming [SMO]
 ms.assetid: 4cde2b85-2a31-4cac-8d16-7a4196066193
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 70fffdd41eecf6eff5f23ebe3620d42c4a46ade6
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7b1e782a49f972c1fe463cb989f57b35ff806dd6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-management-objects-smo-programming-guide"></a>Guide de programmation SMO (SQL Server Management Objects)
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
 
-  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Management Objects (SMO) est une collection d’objets qui sont conçues pour la programmation de tous les aspects de la gestion [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La collection d'objets RMO ([!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Replication Management Objects) encapsule la gestion de la réplication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Management Objects (SMO) est une collection d’objets qui sont conçues pour la programmation de tous les aspects de la gestion [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La collection d'objets RMO ([!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Replication Management Objects) encapsule la gestion de la réplication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 |Rubrique| Description|  
 |-----------|-----------------|

@@ -1,37 +1,19 @@
 ---
-title: "Conception d’agrégations (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- statistical information [XML for Analysis]
-- batches [XML for Analysis]
-- aggregations [Analysis Services], XML for Analysis
-- XMLA, aggregations
-- queries [XMLA]
-- XML for Analysis, aggregations
-- iterative aggregation process [XMLA]
-ms.assetid: 4dd27afa-10c7-408d-bc24-ca74217ddbcb
-caps.latest.revision: 
-author: Minewiskan
+title: Conception d’agrégations (XMLA) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 07e7d766fa70662c55330ef2a7569ecf22b88ccc
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 102e6070f9c9c6af487dced8465bde5087fe2b7a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="designing-aggregations-xmla"></a>Conception d'agrégations (XMLA)
   Les conceptions d'agrégation sont associées aux partitions d'un groupe de mesures particulier pour s'assurer que les partitions utilisent la même structure lors du stockage d'agrégations. À l’aide de la même structure de stockage pour les partitions permet de définir facilement des partitions qui peuvent être fusionnées ultérieurement à l’aide de la [MergePartitions](../../analysis-services/xmla/xml-elements-commands/mergepartitions-element-xmla.md) commande. Pour plus d’informations sur les conceptions d’agrégation, consultez [agrégations et conceptions d’agrégation](../../analysis-services/multidimensional-models-olap-logical-cube-objects/aggregations-and-aggregation-designs.md).  
@@ -74,7 +56,7 @@ ms.lasthandoff: 02/15/2018
  Par exemple, la chaîne  « 011 » se rapporte à une requête concernant une dimension à trois attributs, dont le deuxième et le troisième sont inclus dans la requête.  
   
 > [!NOTE]  
->  Certains attributs, qualifiés d'exclus, ne sont pas pris en compte dans le dataset. Pour plus d’informations sur les attributs exclus, consultez [élément de requête &#40; XMLA &#41; ](../../analysis-services/xmla/xml-elements-properties/query-element-xmla.md).  
+>  Certains attributs, qualifiés d'exclus, ne sont pas pris en compte dans le dataset. Pour plus d’informations sur les attributs exclus, consultez [élément Query &#40;XMLA&#41;](../../analysis-services/xmla/xml-elements-properties/query-element-xmla.md).  
   
  Chaque dimension dans le groupe de mesures qui contient la conception d'agrégation est représentée par une valeur *Dataset* dans l'élément **Query** . L'ordre des valeurs *Dataset* doit correspondre à celui des dimensions incluses dans le groupe de mesures.  
   
@@ -85,7 +67,7 @@ ms.lasthandoff: 02/15/2018
  Pour concevoir des agrégations de manière itérative, vous devez envoyer plusieurs **DesignAggregations** commandes pour fournir un contrôle précis sur le processus de conception. L'Assistant Conception d'agrégation utilise cette même approche pour fournir un contrôle précis sur le processus de conception. Pour plus d’informations, consultez [F1 d’Assistant conception d’agrégation aide](http://msdn.microsoft.com/library/39e23cf1-6405-4fb6-bc14-ba103314362d).  
   
 > [!NOTE]  
->  Une session explicite est nécessaire pour concevoir des agrégations de manière itérative. Pour plus d’informations sur les sessions explicites, consultez [gestion des connexions et Sessions &#40; XMLA &#41; ](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md).  
+>  Une session explicite est nécessaire pour concevoir des agrégations de manière itérative. Pour plus d’informations sur les sessions explicites, consultez [gestion des connexions et Sessions &#40;XMLA&#41;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md).  
   
  Pour démarrer le processus itératif, vous envoyez d’abord un **DesignAggregations** commande qui contient les informations suivantes :  
   
@@ -104,7 +86,7 @@ ms.lasthandoff: 02/15/2018
 ### <a name="designing-aggregations-using-a-batch-process"></a>Conception d'agrégations au moyen d'un processus de traitement par lots  
  Vous pouvez également concevoir des agrégations dans un traitement par lots en envoyant un seul **DesignAggregations** commande qui contient le **étapes**, **temps**, **stockage**, et **optimisation** les valeurs de propriété porte et se limite à laquelle le processus d’ensemble de la conception. Si vous souhaitez que l’optimisation basée sur l’utilisation, les requêtes d’objectif cible sur lequel le processus de conception doivent également être inclus dans le **requêtes** propriété. Assurez-vous également que le **matérialiser** propriété est définie sur true, afin que le processus de conception enregistre les agrégations définies pour la conception d’agrégation lorsque la commande se termine.  
   
- Vous pouvez concevoir des agrégations en utilisant un processus de traitement par lots dans le cadre d'une session implicite ou explicite. Pour plus d’informations sur les sessions implicites et explicites, consultez [gestion des connexions et Sessions &#40; XMLA &#41; ](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md).  
+ Vous pouvez concevoir des agrégations en utilisant un processus de traitement par lots dans le cadre d'une session implicite ou explicite. Pour plus d’informations sur les sessions implicites et explicites, consultez [gestion des connexions et Sessions &#40;XMLA&#41;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md).  
   
 ## <a name="returning-design-statistics"></a>Retour des statistiques de conception  
  Lorsque le **DesignAggregations** commande retourne le contrôle à l’application cliente, la commande retourne un ensemble de lignes qui contient une ligne unique qui représente les statistiques de conception pour la commande. Cet ensemble de lignes se compose des colonnes répertoriées dans le tableau suivant.  

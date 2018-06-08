@@ -1,37 +1,34 @@
 ---
-title: "Par défaut du pilote sous-clé | Documents Microsoft"
-ms.custom: 
+title: Par défaut du pilote sous-clé | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - default subkey [ODBC]
 - registry entries for components [ODBC], default subkey
 - subkeys [ODBC], default subkey
 - drivers subkey [ODBC]
 ms.assetid: 9e58b24f-ebfc-4286-a272-0843b4d6f2d5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: eb867819985d1466b00cb048f91d8aa99c35cdd0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6563627087ce8516f74f478b35f0f6a896aa025b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="default-driver-subkey"></a>Sous-clé du pilote par défaut
 La sous-clé par défaut contient une valeur unique qui décrit le pilote utilisé par la source de données par défaut. Le format de cette valeur est illustré dans le tableau suivant.  
   
-|Nom   |Type de données|data|  
+|Nom|Type de données|data|  
 |----------|---------------|----------|  
 |**Driver**|REG_SZ|*description du pilote par défaut*|  
   

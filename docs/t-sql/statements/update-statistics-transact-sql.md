@@ -1,16 +1,14 @@
 ---
 title: UPDATE STATISTICS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - UPDATE STATISTICS
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - UPDATE STATISTICS statement
 - statistical information [SQL Server], updating
 ms.assetid: 919158f2-38d0-4f68-82ab-e1633bd0d308
-caps.latest.revision: 
+caps.latest.revision: 74
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 7c69949773ff1dae533c98d087780a2f4b436b62
-ms.sourcegitcommit: 4aeedbb88c60a4b035a49754eff48128714ad290
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d662031dec5912311d252b3c5a44e2abc5059eba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="update-statistics-transact-sql"></a>UPDATE STATISTICS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -138,7 +136,7 @@ Si vous spécifiez **ON**, les statistiques conserveront le pourcentage d’éch
  
  ON PARTITIONS ( { \<partition_number> | \<range> } [, …n] ) ] Impose le recalcul des statistiques au niveau feuille couvrant les partitions spécifiées dans la clause ON PARTITIONS, puis leur fusion afin de générer les statistiques globales. WITH RESAMPLE est nécessaire car les statistiques de partitions créées avec différents taux d'échantillonnage ne peuvent pas être fusionnées ensemble.  
   
-**S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  ALL | COLUMNS | INDEX  
  Met à jour toutes les statistiques existantes, les statistiques créées sur une ou plusieurs colonnes, ou les statistiques créées pour les index. Si aucune option n'est spécifiée, l'instruction UPDATE STATISTICS met à jour toutes les statistiques de la table ou vue indexée.  
@@ -149,7 +147,7 @@ Si vous spécifiez **ON**, les statistiques conserveront le pourcentage d’éch
  Pour réactiver le comportement de l’option AUTO_UPDATE_STATISTICS, réexécutez UPDATE STATISTICS sans l’option NORECOMPUTE ou exécutez **sp_autostats**.  
   
 > [!WARNING]  
->  L'utilisation de cette option peut produire des plans de requête non optimaux. Nous recommandons d'utiliser cette option avec parcimonie et uniquement par un administrateur système qualifié.  
+> L'utilisation de cette option peut produire des plans de requête non optimaux. Nous recommandons d'utiliser cette option avec parcimonie et uniquement par un administrateur système qualifié.  
   
  Pour plus d’informations sur l’option AUTO_UPDATE_STATISTICS, consultez [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).  
   
@@ -166,14 +164,14 @@ Si vous spécifiez **ON**, les statistiques conserveront le pourcentage d’éch
 -   statistiques créées sur les tables internes ;  
 -   Statistiques créées avec les index spatiaux ou les index XML.  
   
-**S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
 
 MAXDOP = *max_degree_of_parallelism*  
-**S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
+**S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3).  
   
- Remplace l’option de configuration **max degree of parallelism** pendant la durée de l’opération de statistiques. Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Utilisez MAXDOP pour limiter le nombre de processeurs utilisés dans une exécution de plan parallèle. Le nombre maximal de processeurs est égal à 64.  
+ Remplace l’option de configuration **max degree of parallelism** pendant la durée de l’opération statistique. Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Utilisez MAXDOP pour limiter le nombre de processeurs utilisés dans une exécution de plan parallèle. Le nombre maximal de processeurs est égal à 64.  
   
- *max_degree_of_parallelism* can be:  
+ *max_degree_of_parallelism* peut avoir la valeur :  
   
   1  
  Supprime la création de plans parallèles.  

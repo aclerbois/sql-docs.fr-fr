@@ -2,31 +2,32 @@
 title: Écran d'accueil de Data Quality Client | Microsoft Docs
 ms.custom: ''
 ms.date: 02/29/2012
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.clienthome.f1
 ms.assetid: 7c6ec469-bc7d-4d19-8e21-11dcf8ade108
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ec74905b85cc048e84d7cd4996cfb02ff03191a4
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: fb235729da9f818e5c20cad4c180acd4220c0a17
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-quality-client-home-screen"></a>Écran d'accueil de Data Quality Client
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Utilisez cet écran pour accéder aux interfaces utilisateur de chacun des trois groupes de tâches principaux de [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) : gestion des bases de connaissances, projets de qualité des données et administration.  
   
 ## <a name="options"></a>Options  

@@ -1,30 +1,29 @@
 ---
-title: "Méthode deletesAreDetected (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode deletesAreDetected (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.deletesAreDetected
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.deletesAreDetected
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 73f3d994-bbd7-43d2-8b64-50057e278983
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2556d8866102f2921c1e17a07f67687a710edf26
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: be04cfff99afb70570cf00fc7191738593be2cc8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deletesaredetected-method-sqlserverdatabasemetadata"></a>Méthode deletesAreDetected (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -73,7 +72,7 @@ public boolean deletesAreDetected(int type)
  Cette méthode deletesAreDetected est spécifiée par la méthode deletesAreDetected dans l’interface java.sql.DatabaseMetaData.  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)]détecte les lignes supprimées pour tous les types de curseur modifiable, bien que la détection soit temporaire pour les curseurs avant et dynamiques.  
+>  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] détecte les lignes supprimées pour tous les types de curseur modifiable, bien que la détection soit temporaire pour les curseurs avant et dynamiques.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Méthodes SQLServerDatabaseMetaData](../../../connect/jdbc/reference/sqlserverdatabasemetadata-methods.md)   

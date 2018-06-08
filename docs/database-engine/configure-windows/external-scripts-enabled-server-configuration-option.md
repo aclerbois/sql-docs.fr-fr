@@ -1,39 +1,37 @@
 ---
 title: External scripts enabled (option de configuration de serveur) | Microsoft Docs
 ms.date: 11/13/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: configuration
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - external scripts enabled
 - external_scripts_enabled_TSQL
-helpviewer_keywords: external scripts enabled option
+helpviewer_keywords:
+- external scripts enabled option
 ms.assetid: 9d0ce165-8719-4007-9ae8-00f85cab3a0d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: jeannt
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8d92fc9873ffd3fded2e0f614b0f633895d6a715
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+ms.openlocfilehash: a84fc90e8ec1f18c97d5ba6d56a7c515a5f4efb6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="external-scripts-enabled-server-configuration-option"></a>External scripts enabled (option de configuration de serveur)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-**S’applique à : ** [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)] [!INCLUDE[rsql-productname-md](../../includes/rsql-productname-md.md)] et [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] [!INCLUDE[rsql-productnamenew-md](../../includes/rsql-productnamenew-md.md)]
+**S’applique à** : [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)] [!INCLUDE[rsql-productname-md](../../includes/rsql-productname-md.md)] et [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] [!INCLUDE[rsql-productnamenew-md](../../includes/rsql-productnamenew-md.md)]
 
 Utilisez l’option **external scripts enabled** pour activer l’exécution de scripts avec certaines extensions de langage à distance. Cette propriété est désactivée par défaut. Quand **Advanced Analytics Services** est installé, le programme d’installation peut éventuellement définir cette propriété sur True.
 
-## <a name="remarks"></a>Notes
+## <a name="remarks"></a>Notes 
 
 Vous devez activer l’option de scripts externes activés avant de pouvoir exécuter un script externe à l’aide de la procédure [sp_execute_external_script](../../relational-databases/system-stored-procedures/sp-execute-external-script-transact-sql.md) . Utilisez **sp_execute_external_script** pour exécuter des scripts écrits dans un langage pris en charge comme R ou Python. 
 

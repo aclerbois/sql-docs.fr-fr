@@ -2,16 +2,15 @@
 title: Autorisations (moteur de base de données) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: security
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.databaseuser.permissions.database.f1--May use common.permissions
 - sql13.swb.databaseuser.permissions.object.f1--May use common.permissions
@@ -21,25 +20,23 @@ helpviewer_keywords:
 - security [SQL Server], permissions
 - naming conventions [SQL Server]
 ms.assetid: f28e3dea-24e6-4a81-877b-02ec4c7e36b9
-caps.latest.revision: ''
+caps.latest.revision: 76
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 0932d368e23c01e181dbe94e3d27ce71e8c1b0f4
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 25fdf523968b9158395136b804ea16f73308a8fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="permissions-database-engine"></a>Autorisations (moteur de base de données)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
   Chaque élément sécurisable [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a des autorisations associées qui peuvent être accordées à un principal. Les autorisations dans le [!INCLUDE[ssDE](../../includes/ssde-md.md)] sont gérées au niveau du serveur pour les connexions et les rôles de serveur, et au niveau de la base de données pour les utilisateurs de base de données et les rôles de base de données. Le modèle pour [!INCLUDE[ssSDS](../../includes/sssds-md.md)] a le même système pour les autorisations de base de données, mais les autorisations de niveau serveur ne sont pas disponibles. Cette rubrique contient la liste complète des autorisations. Pour une implémentation classique des autorisations, consultez [Getting Started with Database Engine Permissions](../../relational-databases/security/authentication-access/getting-started-with-database-engine-permissions.md).  
   
-Le nombre total d’autorisations pour [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] est 237. La plupart des autorisations s’appliquent à toutes les plates-formes, mais ce n’est pas le cas pour certaines d’entre elles. Par exemple, des autorisations de niveau serveur ne peuvent pas être accordées sur SQL Database, et seules quelques autorisations sont pertinentes sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)]. [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] exposait 230 autorisations. [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] exposait 219 autorisations. [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] exposait 214 autorisations. [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] exposait 195 autorisations. La rubrique [sys.fn_builtin_permissions](../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md) spécifie les rubriques qui sont nouvelles dans les versions récentes. Le graphique suivant illustre les autorisations et leurs relations. Certaines des autorisations de niveau supérieur (telles que `CONTROL SERVER`) figurent plusieurs fois. Cliquez sur l’image pour télécharger le **poster des autorisations du moteur de base de données** au format pdf.  
-  
-[![Autorisations des moteurs de base de données](../../relational-databases/security/media/database-engine-permissions.PNG)](https://aka.ms/sql-permissions-poster)
+Le nombre total d’autorisations pour [!INCLUDE[ssSQLv14_md](../../includes/sssqlv14-md.md)] et [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] est 237. La plupart des autorisations s’appliquent à toutes les plates-formes, mais ce n’est pas le cas pour certaines d’entre elles. Par exemple, des autorisations de niveau serveur ne peuvent pas être accordées sur SQL Database, et seules quelques autorisations sont pertinentes sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)]. [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] exposait 230 autorisations. [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] exposait 219 autorisations. [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] exposait 214 autorisations. [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] exposait 195 autorisations. La rubrique [sys.fn_builtin_permissions](../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md) spécifie les rubriques qui sont nouvelles dans les versions récentes.
 
 Une fois que vous comprenez les autorisations, appliquez des autorisations de niveau serveur aux connexions et des autorisations de niveau base de données aux utilisateurs avec les instructions [GRANT](../../t-sql/statements/grant-transact-sql.md), [REVOKE](../../t-sql/statements/revoke-transact-sql.md)et [DENY](../../t-sql/statements/deny-transact-sql.md) . Par exemple :   
 ```sql
@@ -102,7 +99,7 @@ Pour des conseils sur la conception d’un système d’autorisations, consultez
      L'autorisation REFERENCES est obligatoire sur un objet pour pouvoir créer une FONCTION ou une VUE avec la clause `WITH SCHEMABINDING` qui référence cet objet.  
   
 ## <a name="chart-of-sql-server-permissions"></a>Graphique des autorisations SQL Server  
- Pour obtenir un graphique de la taille d’une affiche de toutes les autorisations du [!INCLUDE[ssDE](../../includes/ssde-md.md)] au format PDF, consultez [https://aka.ms/sql-permissions-poster](https://aka.ms/sql-permissions-poster).  
+[!INCLUDE[database-engine-permissions](../../includes/paragraph-content/database-engine-permissions.md)]
   
 ##  <a name="_securables"></a> Autorisations applicables à des éléments sécurisables spécifiques  
  Le tableau ci-dessous répertorie les principales classes d'autorisations et les types d'éléments sécurisables auxquels elles peuvent s'appliquer.  

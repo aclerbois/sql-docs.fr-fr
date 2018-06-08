@@ -1,17 +1,13 @@
 ---
-title: "Se connecter au moteur de base de données avec sqlcmd | Microsoft Docs"
-ms.custom: 
+title: Se connecter au moteur de base de données avec sqlcmd | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sqlcmd utility, Database Engine connections
 - Named Pipes [SQL Server], sqlcmd utility
@@ -21,19 +17,20 @@ helpviewer_keywords:
 - VIA
 - client protocols [SQL Server]
 ms.assetid: 74b0fb71-7f8e-4171-9431-d07528532524
-caps.latest.revision: 
-author: mightypen
+caps.latest.revision: 20
+author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 855d0d261f5bf1f405adf2d0b257ce760c91b438
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8bfba438ec6160b5431dfdd133c37eb4bcd85d7e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlcmd---connect-to-the-database-engine"></a>sqlcmd : se connecter au moteur de base de données
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la communication cliente par le biais du protocole réseau TCP/IP (protocole par défaut) et du protocole des canaux nommés. Le protocole de mémoire partagée est également disponible si le client se connecte à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] sur le même ordinateur. Il existe trois méthodes courantes de sélection du protocole. Le protocole utilisé par l’utilitaire **sqlcmd** est déterminé dans l’ordre suivant :  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la communication cliente par le biais du protocole réseau TCP/IP (protocole par défaut) et du protocole des canaux nommés. Le protocole de mémoire partagée est également disponible si le client se connecte à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] sur le même ordinateur. Il existe trois méthodes courantes de sélection du protocole. Le protocole utilisé par l’utilitaire **sqlcmd** est déterminé dans l’ordre suivant :  
   
 -   **sqlcmd** utilise le protocole spécifié dans la chaîne de connexion comme décrit ci-après.  
   

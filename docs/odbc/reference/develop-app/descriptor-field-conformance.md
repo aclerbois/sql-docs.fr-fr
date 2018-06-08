@@ -1,32 +1,29 @@
 ---
-title: "Mise en conformité du champ de descripteur | Documents Microsoft"
-ms.custom: 
+title: Mise en conformité du champ de descripteur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - descriptor field conformance levels [ODBC]
 - conformance levels [ODBC], descriptor field
 - data sources [ODBC], conformance levels
 - ODBC drivers [ODBC], conformance levels
 ms.assetid: 6c29d93b-696c-4960-bff3-4d6bc41bc513
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bd0e507985de3840d38e15753036cfd3899ebed3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b01b9da55da1fd3decb46e69dc073781427ccfab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="descriptor-field-conformance"></a>Mise en conformité du champ de descripteur
 Le tableau suivant indique le niveau de conformité de chaque champ d’en-tête descripteur ODBC, où cela est bien défini.  

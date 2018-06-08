@@ -1,31 +1,30 @@
 ---
-title: "Assistant de bases de données (fichiers Select) de la recherche (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Assistant de bases de données (fichiers Select) de la recherche (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Find Databases Wizard
+helpviewer_keywords:
+- Find Databases Wizard
 ms.assetid: 2f574a34-4bab-40a4-89a8-ad4907ffc3fd
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 84759a9bee3439f0a561176a6d8583149770f02d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 8bd5b106fbd45311606e0802c51997ad576c8475
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-databases-wizard-select-files-accesstosql"></a>Assistant de bases de données (fichiers Select) de la recherche (AccessToSQL)
 La page Sélectionner les fichiers de l’Assistant trouver les bases de données répertorie les fichiers qui ont été trouvés lors de la recherche. Pour sélectionner un fichier à ajouter à SSMA, sélectionnez la ligne qui contient le nom de fichier. Lorsque vous avez fini de sélectionner les fichiers, cliquez sur **suivant** pour afficher la page vérifier la sélection.  

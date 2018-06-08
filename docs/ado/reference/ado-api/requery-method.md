@@ -1,17 +1,15 @@
 ---
-title: "Requery (méthode) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Requery (méthode) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::Requery
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Requery method [ADO]
 ms.assetid: d81ab76f-1aa8-4ccf-92ec-b65254dc3ea1
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a6e81cda01f894b87d2741f80735b21b23423ce6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 63c63ce0a4fd42b5cfe784793d76c68a5f23d083
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="requery-method"></a>Requery (méthode)
 Met à jour les données dans un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet en réexécutant la requête sur laquelle l’objet est basé.  

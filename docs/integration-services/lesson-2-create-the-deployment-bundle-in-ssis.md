@@ -1,30 +1,28 @@
 ---
-title: "Leçon 2 : Créer le bundle de déploiement dans SSIS | Microsoft Docs"
-ms.custom: 
+title: 'Leçon 2 : Créer le bundle de déploiement dans SSIS | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: tutorial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 ms.assetid: ab17289d-c3d4-4a5e-b7f5-4fea8ae21707
-caps.latest.revision: 
+caps.latest.revision: 18
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e047268e658c5b5aa0df933fd4152864b873ef2a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e21123b078d98957260d03e43e26dc30360c5582
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-2-create-the-deployment-bundle-in-ssis"></a>Leçon 2 : Créer l’application de déploiement dans SSIS
 Dans la [Leçon 1 : Préparation à la création de l’application de déploiement](../integration-services/lesson-1-preparing-to-create-the-deployment-bundle.md), vous avez créé le projet [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] intitulé Didacticiel de déploiement, ajouté les packages et les fichiers de prise en charge au projet, et implémenté les configurations dans les packages.  

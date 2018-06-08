@@ -1,30 +1,27 @@
 ---
-title: "Créer des relations de clé étrangère | Microsoft Docs"
-ms.custom: 
+title: Créer des relations de clé étrangère | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - relationships [SQL Server], creating
 ms.assetid: 867a54b8-5be4-46e6-9702-49ae6dabf67c
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4f90816f11420f3bef3885c66199144666e903bb
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 67760c658b27bcddff443a943c65d725e23f44e7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-foreign-key-relationships"></a>Créer des relations de clé étrangère
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

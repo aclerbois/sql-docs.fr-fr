@@ -1,16 +1,14 @@
 ---
-title: sysmail_help_principalprofile_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_help_principalprofile_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_help_principalprofile_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_help_principalprofile_sp
 ms.assetid: 0cfd6464-09c7-4f03-9d25-58001c096a9e
-caps.latest.revision: 
+caps.latest.revision: 43
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 54763594122216c14ef8b74f17fbc83919ea44fc
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ca2ad195b8360a8e8963f95df4d0f0c517b907ce
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailhelpprincipalprofilesp-transact-sql"></a>sysmail_help_principalprofile_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,16 +45,16 @@ sysmail_help_principalprofile_sp [ {   [ @principal_id = ] principal_id | [ @pri
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@principal_id=** ] *principal_id*  
+ [  **@principal_id=** ] *principal_id*  
  Est l’ID de l’utilisateur de base de données ou d’un rôle dans le **msdb** base de données pour l’association à répertorier. *principal_id* est **int**, avec NULL comme valeur par défaut. Soit *principal_id* ou *principal_name* peut être spécifié.  
   
- [ **@principal_name=** ] **'***principal_name***'**  
+ [  **@principal_name=** ] **'***principal_name***'**  
  Est le nom de l’utilisateur de base de données ou d’un rôle dans le **msdb** base de données pour l’association à répertorier. *principal_name* est **sysname**, avec NULL comme valeur par défaut. Soit *principal_id* ou *principal_name* peut être spécifié.  
   
- [ **@profile_id=** ] *profile_id*  
+ [  **@profile_id=** ] *profile_id*  
  Identificateur du profil pour l'association à répertorier. *profile_id* est **int**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* peut être spécifié.  
   
- [ **@profile_name=** ] **'***profile_name***'**  
+ [  **@profile_name=** ] **'***profile_name***'**  
  Nom du profil pour l'association à répertorier. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* peut être spécifié.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -120,6 +117,6 @@ principal_id principal_name     profile_id  profile_name                   is_de
   
 ## <a name="see-also"></a>Voir aussi  
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

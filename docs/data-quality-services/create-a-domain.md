@@ -2,31 +2,32 @@
 title: Créer une règle de domaine | Microsoft Docs
 ms.custom: ''
 ms.date: 11/08/2011
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.createdomain.f1
 ms.assetid: 5c4828f5-bd51-4c29-b3de-87b7d2f2d3e5
-caps.latest.revision: ''
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8f4473d85c67071ce862915a16d48ac14a2a6e02
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: d537cfab052e9b569d88600eadf9c74d3df7d846
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-domain"></a>Créer un domaine
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit comment créer un domaine dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Les valeurs du domaine sont une représentation sémantique des données d'un champ. Pour plus d’informations sur les domaines, consultez [Gestion d’un domaine](../data-quality-services/managing-a-domain.md).  
   
  Il existe deux méthodes pour créer un domaine : La première se situe pendant l'étape Mapper de l'activité de découverte des connaissances, lorsque vous êtes en cours d'analyse d'un exemple de données pour ajouter des connaissances à une base nouvelle ou existante. La deuxième se situe pendant l'activité de gestion de l'arborescence du domaine quand, au lieu de modifier un domaine existant, vous en créez un nouveau.  

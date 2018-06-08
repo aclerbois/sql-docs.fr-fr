@@ -1,17 +1,15 @@
 ---
 title: Axes, Collection (ADO MD) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Axes
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Axes collection [ADO MD]
 ms.assetid: 072fb21a-ec0f-4b02-9022-1cef3ad4bfff
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c86f495369904ef3a708f301bb38366592aa4d40
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 04ffa05b5912b00a59389b7f2d5e6665541662eb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="axes-collection-ado-md"></a>Collection d’axes (ADO MD)
 Contient le [axe](../../../ado/reference/ado-md-api/axis-object-ado-md.md) objets qui définissent un ensemble de cellules.  

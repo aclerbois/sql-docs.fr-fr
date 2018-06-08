@@ -1,16 +1,15 @@
 ---
-title: "Expressions de chemin d’accès (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Expressions de chemin d’accès (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - path expressions [XQuery]
 - expressions [XQuery], path
 ms.assetid: b93fa36c-bf69-46b9-b137-f597d66fd0c0
-caps.latest.revision: 
+caps.latest.revision: 27
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e47b66d37e7b43f2921d8d6edf626a6b9178b7e8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b964a11fe7e726abf1e5342641171aa11f583cb7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="path-expressions-xquery"></a>Expressions de chemin d'accès (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -62,7 +60,7 @@ ms.lasthandoff: 02/09/2018
  [axis](../xquery/path-expressions-specifying-axis.md)  
  Définit le sens du déplacement. Étape d'axe dans une expression de chemin d'accès qui commence au nœud de contexte et navigue jusqu'aux nœuds accessibles dans le sens spécifié par l'axe.  
   
- [test de nœud](../xquery/path-expressions-specifying-node-test.md)  
+ [Test de nœud](../xquery/path-expressions-specifying-node-test.md)  
  Spécifie les noms de nœud ou de type de nœud à sélectionner.  
   
  Zéro ou plusieurs prédicats facultatifs  
@@ -88,7 +86,7 @@ ms.lasthandoff: 02/09/2018
 id(/a/b)  
 ```  
   
- Pour plus d’informations sur la fonction id, consultez [id fonction &#40; XQuery &#41; ](../xquery/functions-on-sequences-id.md).  
+ Pour plus d’informations sur la fonction id, consultez [fonction id &#40;XQuery&#41;](../xquery/functions-on-sequences-id.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Spécification de l’axe dans une étape d’Expression de chemin d’accès](../xquery/path-expressions-specifying-axis.md)  

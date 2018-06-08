@@ -1,32 +1,29 @@
 ---
 title: Renommer des index | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - renaming indexes
 - index names [SQL Server]
 - indexes [SQL Server], renaming
 ms.assetid: d3d612a1-ea1b-4d99-85d2-0a2ad54f4b0e
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 27
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 712ffccb5285f2d5339c41327e28fc1d983658b2
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 9756cc3ab6ef292860648f846b4be481a54376b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rename-indexes"></a>Renommer des index
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

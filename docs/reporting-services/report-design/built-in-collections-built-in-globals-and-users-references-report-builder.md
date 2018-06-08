@@ -1,27 +1,25 @@
 ---
-title: "Références à des champs Globals et Users prédéfinis (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Références à des champs Globals et Users prédéfinis (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5f5e1149-c967-454d-9a63-18ec4a33d985
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 4c0d92d44a11aad84fe249649ef921123f78aa0b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 55074e9c10cbe8b5afb3e94533c37befb892416a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="built-in-collections---built-in-globals-and-users-references-report-builder"></a>Collections intégrées - Références à des champs Globals et Users prédéfinis (Générateur de rapports)
   La collection de champs prédéfinis, qui inclut à la fois les collections **Globals** et **User** , représente les valeurs globales fournies par Reporting Services pendant le traitement d’un rapport. La collection **Globals** fournit des valeurs, telles que le nom du rapport, l'heure de début du traitement du rapport et les numéros des pages actuelles pour l'en-tête ou le pied de page du rapport. La collection **User** fournit les paramètres d'identificateur d'utilisateur et de langue. Ces valeurs peuvent être utilisées dans les expressions pour filtrer les résultats dans un rapport.  

@@ -1,28 +1,26 @@
 ---
-title: "Définition des valeurs de paramètre | Documents Microsoft"
-ms.custom: 
+title: Définition des valeurs de paramètre | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: parameter values [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- parameter values [ODBC]
 ms.assetid: 13e5da79-b60c-48d0-b467-773f481ef2a4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 726af8b2a7b4e9f0b630c95c45f512201fa1cf3a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 9669f001498f00b79b95bf2dca1457d2bf4aadb9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setting-parameter-values"></a>Définition des valeurs de paramètre
 Pour définir la valeur d’un paramètre, l’application définit simplement la valeur de la variable liée au paramètre. Il n’est pas important lorsque cette valeur est définie, tant qu’elle est définie avant l’exécution de l’instruction. L’application peut définir la valeur avant ou après la variable de liaison, et elle peut modifier la valeur autant de fois qu’il le souhaite. Lorsque l’instruction est exécutée, le pilote récupère simplement la valeur actuelle de la variable. Cela est particulièrement utile lors de l’exécution d’une instruction préparée plusieurs fois ; l’application définit de nouvelles valeurs pour certaines ou toutes les variables chaque fois que l’instruction est exécutée. Pour obtenir un exemple, consultez [exécution préparée](../../../odbc/reference/develop-app/prepared-execution-odbc.md), plus haut dans cette section.  

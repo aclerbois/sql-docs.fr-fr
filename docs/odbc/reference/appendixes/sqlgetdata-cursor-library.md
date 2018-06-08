@@ -1,28 +1,26 @@
 ---
-title: "SQLGetData (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLGetData (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLGetData function [ODBC], Cursor Library
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLGetData function [ODBC], Cursor Library
 ms.assetid: ff40c9c0-b847-4426-a099-1bff47e6e872
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: afb65143aa9da062ff405c01e4a7e438bcb42ef8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 96ffa184247c4fd7d05300952133c19127f979af
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetdata-cursor-library"></a>SQLGetData (bibliothèque de curseurs)
 > [!IMPORTANT]  
@@ -41,6 +39,6 @@ ms.lasthandoff: 12/21/2017
   
 -   **SQLGetData** ne peut pas être appelée pour les curseurs avant uniquement.  
   
--   **SQLGetData** peut être appelée uniquement lorsque les conditions suivantes sont remplies : un **sélectionnez** instruction générée le jeu de résultats ; le **sélectionnez** instruction ne contenait pas d’une jointure, une **UNION** clause, ou un **GROUP BY** clause ; et toutes les colonnes qui a utilisé un alias ou une expression dans la liste select n’étaient pas liés avec **SQLBindCol**.  
+-   **SQLGetData** peut être appelée uniquement lorsque les conditions suivantes sont remplies : un **sélectionnez** instruction générée le jeu de résultats ; le **sélectionnez** instruction ne contenait pas d’une jointure, une  **UNION** clause, ou un **GROUP BY** clause ; et toutes les colonnes qui a utilisé un alias ou une expression dans la liste select n’étaient pas liés avec **SQLBindCol**.  
   
 -   Si le pilote prend en charge qu’une seule instruction active, la bibliothèque de curseurs extrait le reste du résultat défini avant l’exécution du **sélectionnez** instruction et en appelant **SQLGetData**.

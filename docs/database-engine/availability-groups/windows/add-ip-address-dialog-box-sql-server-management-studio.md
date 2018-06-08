@@ -1,33 +1,32 @@
 ---
-title: "Boîte de dialogue Ajouter une adresse IP (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Ajouter une adresse IP (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygrouplistener.addipaddress.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygrouplistener.addipaddress.f1
 ms.assetid: 98c9ad3b-ff3c-4c1d-b344-59a72fca137c
-caps.latest.revision: "10"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 10
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0aa89a5d92d7a20bbc7e4daf732f8f5ce2b09f47
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 881e03a4cb51e52f71b0214c3404ad114a32946a
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770005"
 ---
 # <a name="add-ip-address-dialog-box-sql-server-management-studio"></a>Boîte de dialogue Ajouter une adresse IP (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique d’aide F1 décrit les options de la boîte de dialogue **Ajouter une adresse IP**. Cette boîte de dialogue accessible depuis la boîte de dialogue **Nouvel écouteur du groupe de disponibilité** et l'onglet **Écouteur** de la page **Spécifier les réplicas** de l' [!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)] ou l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique d'aide F1 décrit les options de la boîte de dialogue **Ajouter une adresse IP** . Cette boîte de dialogue accessible depuis la boîte de dialogue **Nouvel écouteur du groupe de disponibilité** et l'onglet **Écouteur** de la page **Spécifier les réplicas** de l' [!INCLUDE[ssAoNewAgWiz](../../../includes/ssaonewagwiz-md.md)] ou l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Avant de commencer à ajouter des sous-réseaux à un écouteur de groupe de disponibilité, vérifiez que vous connaissez l'adresse IP de chaque sous-réseau et, pour une adresse IPv4, le masque de sous-réseau.  
   
 ##  <a name="PageOptions"></a> Options Ajouter une adresse IP  

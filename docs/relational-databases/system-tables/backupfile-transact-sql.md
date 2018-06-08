@@ -1,16 +1,14 @@
 ---
 title: backupfile (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - backupfile
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - file backups [SQL Server], backupfile system table
 - backupfile system table
 ms.assetid: f1a7fc0a-f4b4-47eb-9138-eebf930dc9ac
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 84b26ca09b8cd537ed40f0af8844f3f0c7627c86
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: a667986dbf546672c368179a1e23e6b82b7373c6
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="backupfile-transact-sql"></a>backupfile (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -44,12 +41,12 @@ ms.lasthandoff: 02/03/2018
 |**first_media_number**|**smallint**|Numéro de support du premier support contenant ce fichier de sauvegarde. Sa valeur peut être NULL.|  
 |**filegroup_name**|**nvarchar(128)**|Nom du groupe de fichiers contenant un fichier de base de données sauvegardée. Sa valeur peut être NULL.|  
 |**page_size**|**int**|Taille de la page en octets.|  
-|**file_number**|**numeric(10,0)**|Numéro d’identification de fichier unique dans une base de données (correspond à **sys.database_files**. **FILE_ID**).|  
-|**backed_up_page_count**|**numeric(10,0)**|Nombre de pages sauvegardées. Sa valeur peut être NULL.|  
+|**file_number**|**NUMERIC(10,0)**|Numéro d’identification de fichier unique dans une base de données (correspond à **sys.database_files**. **FILE_ID**).|  
+|**backed_up_page_count**|**NUMERIC(10,0)**|Nombre de pages sauvegardées. Sa valeur peut être NULL.|  
 |**file_type**|**char(1)**|Fichier sauvegardé, avec une des valeurs suivantes :<br /><br /> D = Fichier de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> L = Journal [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> F = Catalogue de texte intégral.<br /><br /> Sa valeur peut être NULL.|  
-|**source_file_block_size**|**numeric(10,0)**|Unité sur laquelle le fichier de données ou le fichier journal d'origine se trouvaient au moment de la sauvegarde. Sa valeur peut être NULL.|  
+|**source_file_block_size**|**NUMERIC(10,0)**|Unité sur laquelle le fichier de données ou le fichier journal d'origine se trouvaient au moment de la sauvegarde. Sa valeur peut être NULL.|  
 |**file_size**|**numeric(20,0)**|Longueur en octets du fichier sauvegardé. Sa valeur peut être NULL.|  
-|**logical_name**|**nvarchar(128)**|Nom logique du fichier sauvegardé. Sa valeur peut être NULL.|  
+|**nom_logique**|**nvarchar(128)**|Nom logique du fichier sauvegardé. Sa valeur peut être NULL.|  
 |**physical_drive**|**nvarchar(260)**|Nom de l'unité physique ou de la partition. Sa valeur peut être NULL.|  
 |**physical_name**|**nvarchar(260)**|Suite du nom physique du fichier (système d'exploitation). Sa valeur peut être NULL.|  
 |**state**|**tinyint**|État du fichier, avec une des valeurs suivantes :<br /><br /> 0 = ONLINE<br /><br /> 1 = RESTORING<br /><br /> 2 = RECOVERING<br /><br /> 3 = RECOVERY PENDING<br /><br /> 4 = SUSPECT<br /><br /> 6 = OFFLINE<br /><br /> 7 = DEFUNCT<br /><br /> 8 = SUPPRIMÉ<br /><br /> Remarque : La valeur 5 est ignorée afin que ces valeurs correspondent aux valeurs des États de la base de données.|  
@@ -72,11 +69,11 @@ ms.lasthandoff: 02/03/2018
  Pour réduire le nombre de lignes dans cette table et dans d’autres tables d’historique de sauvegarde et, exécutez le [sp_delete_backuphistory](../../relational-databases/system-stored-procedures/sp-delete-backuphistory-transact-sql.md) procédure stockée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sauvegarde et restauration Tables &#40; Transact-SQL &#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)   
+ [Sauvegarde et restauration des Tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)   
  [backupfilegroup &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupfilegroup-transact-sql.md)   
  [backupmediafamily &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupmediafamily-transact-sql.md)   
  [backupmediaset &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupmediaset-transact-sql.md)   
  [backupset &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupset-transact-sql.md)   
- [System Tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/system-tables-transact-sql.md)  
+ [Tables système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/system-tables-transact-sql.md)  
   
   

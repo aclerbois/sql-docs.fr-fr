@@ -1,15 +1,14 @@
 ---
-title: "Concepts des exécutables de l’agent de réplication | Microsoft Docs"
-ms.custom: 
+title: Concepts des exécutables de l’agent de réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - agents [SQL Server replication], executables
 - command prompt [SQL Server replication]
 ms.assetid: cba476df-d4ea-44c9-bb86-81488971e328
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9b6b8c77cd8f625c5d06e9e0ebb8e9c3ec35b97b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 8d00a4699be95419d0d1dfd41639e6c144b2481d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-agent-executables-concepts"></a>Concepts des exécutables de l'agent de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

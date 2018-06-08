@@ -1,27 +1,25 @@
 ---
-title: "Résoudre les problèmes liés aux rapports Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes liés aux rapports Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 02/27/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a705d103-85b1-49b5-b27f-332b1040d029
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9546aaea0b177552fa83095c342a24a2e0f954e9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: cb93c59cec663a99ebc0460d948f4c2bd0a78f94
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot--reporting-services-report-issues"></a>Résoudre les problèmes avec les rapports Reporting Services
 Cette rubrique vous fournit des conseils pour résoudre les problèmes associés à la conception de rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion.md)] , l’affichage de l’aperçu d’un rapport, la publication d’un rapport sur un serveur de rapports en mode natif ou en mode SharePoint, l’affichage d’un rapport sur le serveur de rapports ou l’exportation d’un rapport dans un format de fichier différent.  

@@ -1,17 +1,16 @@
 ---
 title: Configurer la distribution | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], distribution
 - distribution configuration [SQL Server replication]
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - distribution databases [SQL Server replication]
 - merge replication [SQL Server replication], configuring distribution
 ms.assetid: 94d52169-384e-4885-84eb-2304e967d9f7
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 03b63f42e33c33059a1b68d4551ed3981e0e5b9a
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 8ebea44d11bac53c78dda81af009904e7cf5e2d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-distribution"></a>Configurer la distribution
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,39 +1,24 @@
 ---
-title: "Élément session (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément session (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: Session Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- microsoft.xml.analysis.session
-- http://schemas.microsoft.com/analysisservices/2003/engine#Session
-- urn:schemas-microsoft-com:xml-analysis#Session
-helpviewer_keywords: Session element
-ms.assetid: 884ed090-968e-41d3-97e5-6d12787467da
-caps.latest.revision: "15"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c033153f19ce1456b0558a95a85ad6caab778be5
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 02b4c93919e6354a59aad9b42a4f6dc8373c880f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577501"
 ---
 # <a name="session-element-xmla"></a>Élément Session (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Utilise l’en-tête SOAP dans un message de demande SOAP pour identifier une session explicite existante sur une instance de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Utilise l’en-tête SOAP dans un message de demande SOAP pour identifier une session explicite existante sur une instance d’Analysis Services.  
   
  **Espace de noms** urn:schemas-microsoft-com:xml-analysis  
   
@@ -55,7 +40,7 @@ ms.lasthandoff: 01/08/2018
 </soap:Envelope>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -76,7 +61,7 @@ ms.lasthandoff: 01/08/2018
 |---------------|-----------------|  
 |SessionId|Attribut **String** obligatoire qui identifie la session à employer. [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] fait appel à un identificateur global unique (GUID) pour identifier une session.|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **Session** élément d’en-tête identifie une session existante démarrée explicitement sur le [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] instance. L'élément **Session** fait partie de l'en-tête SOAP dans les types de messages suivants :  
   
 -   Une réponse SOAP contenant un [BeginSession](../../../analysis-services/xmla/xml-elements-headers/beginsession-element-xmla.md) élément d’en-tête SOAP.  
@@ -87,9 +72,9 @@ ms.lasthandoff: 01/08/2018
   
  Si un **Session** élément n’est pas envoyé dans le cadre d’une demande SOAP, le [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] instance commence implicitement une session pendant la durée de la **Discover** ou **Execute** appel de méthode, puis se termine cette session une fois l’appel de méthode terminé.  
   
-## <a name="see-also"></a>Voir aussi  
- [Élément EndSession &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-headers/endsession-element-xmla.md)   
- [La gestion des connexions et Sessions &#40; XMLA &#41;](../../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md)   
- [En-têtes &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-headers/xml-elements-headers.md)  
+## <a name="see-also"></a>Voir aussi
+ [Élément EndSession &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-headers/endsession-element-xmla.md)   
+ [Gestion des connexions et Sessions &#40;XMLA&#41;](../../../analysis-services/multidimensional-models-scripting-language-assl-xmla/managing-connections-and-sessions-xmla.md)   
+ [En-têtes &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-headers/xml-elements-headers.md)  
   
   

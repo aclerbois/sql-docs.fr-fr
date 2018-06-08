@@ -2,16 +2,13 @@
 title: Les tableaux de paramètres de liaison | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
-ms.component: odbc
+ms.prod: sql
+ms.prod_service: connectivity
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - binding parameter arrays [ODBC]
 - arrays of parameter values [ODBC]
@@ -20,13 +17,12 @@ ms.assetid: 037afe23-052d-4f3a-8aa7-45302b199ad0
 caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 09b3a3c732b34a5a1a7a1d98e2ebe9740069f72e
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+manager: craigg
+ms.openlocfilehash: 2fe314ff1db42944ccd37dfa0c336f3ed218b6b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-arrays-of-parameters"></a>Les tableaux de paramètres de liaison
 Les applications qui utilisent des tableaux de paramètres de lier les tableaux de paramètres dans l’instruction SQL. Il existe deux styles de liaison :  

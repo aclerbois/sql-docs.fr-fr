@@ -1,31 +1,28 @@
 ---
-title: "Demander propriété dynamique (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Demander propriété dynamique (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Prompt property [ADO]
 ms.assetid: c4f001b5-8d16-4d39-a42e-c0e2faaaceaf
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 02f6a8423aac843adf90b4ea865b910d55f89bd6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: dc7285d03db3edf52ddb89a91b2b73c5d3ae74c1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prompt-property-dynamic-ado"></a>Demander propriété dynamique (ADO)
 Spécifie si le fournisseur OLE DB doit inviter l’utilisateur pour les informations d’initialisation.  

@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetInfo | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetInfo
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetInfo
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetInfo
-helpviewer_keywords: SQLGetInfo function [ODBC]
+f1_keywords:
+- SQLGetInfo
+helpviewer_keywords:
+- SQLGetInfo function [ODBC]
 ms.assetid: 49dceccc-d816-4ada-808c-4c6138dccb64
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 5ef6197247bbe50397c543a91156e0c5db294422
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ddc8bc66f3c20b544872be49e7b7cfa6a7420520
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetinfo-function"></a>Fonction SQLGetInfo
 **Mise en conformité**  
@@ -77,7 +78,7 @@ SQLRETURN SQLGetInfo(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetInfo** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_DBC et un *gérer* de *handle de connexion*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLGetInfo** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|La mémoire tampon \* *InfoValuePtr* n’est pas suffisamment grande pour retourner toutes les informations demandées. Par conséquent, les informations ont été tronquées. La longueur des informations demandées dans sa forme non tronqué est retournée dans **StringLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
@@ -143,7 +144,7 @@ SQLRETURN SQLGetInfo(
  Tous les appels à **SQLGetInfo** requièrent une connexion ouverte, sauf quand le *InfoType* est SQL_ODBC_VER, qui retourne la version du Gestionnaire de pilotes.  
   
 ## <a name="information-types"></a>Types d’informations  
- Cette section répertorie les types d’informations prises en charge par **SQLGetInfo**. Types d’informations sont regroupées par catégories et classées par ordre alphabétique. Types d’informations qui ont été ajoutés ou renommés par ODBC 3*.x* sont également répertoriés.  
+ Cette section répertorie les types d’informations prises en charge par **SQLGetInfo**. Types d’informations sont regroupées par catégories et classées par ordre alphabétique. Types d’informations qui ont été ajoutés ou renommés par ODBC 3 *.x* sont également répertoriés.  
   
 ## <a name="driver-information"></a>Informations sur le pilote  
  Les valeurs suivantes de la *InfoType* argument retourner des informations sur le pilote ODBC, comme le nombre d’instructions actives, le nom de source de données et niveau de conformité aux normes de l’interface :  
@@ -272,7 +273,7 @@ SQLRETURN SQLGetInfo(
 |SQL_CONVERT_INTERVAL_DAY_TIME||  
   
 ## <a name="information-types-added-for-odbc-3x"></a>Types d’informations ajoutées pour ODBC 3.x  
- Les valeurs suivantes de la *InfoType* argument ont été ajoutés pour ODBC 3*.x*:  
+ Les valeurs suivantes de la *InfoType* argument ont été ajoutés pour ODBC 3 *.x*:  
   
 |||  
 |-|-|  
@@ -303,7 +304,7 @@ SQLRETURN SQLGetInfo(
 |SQL_DM_VER|SQL_XOPEN_CLI_YEAR|  
   
 ## <a name="information-types-renamed-for-odbc-3x"></a>Types d’informations renommés pour ODBC 3.x  
- Les valeurs suivantes de la *InfoType* argument ont été renommés pour ODBC 3*.x*.  
+ Les valeurs suivantes de la *InfoType* argument ont été renommés pour ODBC 3 *.x*.  
   
  SQL_ACTIVE_CONNECTIONS  
  SQL_MAX_DRIVER_CONNECTIONS  
@@ -339,7 +340,7 @@ SQLRETURN SQLGetInfo(
  SQL_CATALOG_USAGE  
   
 ## <a name="information-types-deprecated-in-odbc-3x"></a>Types d’informations déconseillées dans ODBC 3.x  
- Les valeurs suivantes de la *InfoType* argument ont été déconseillées dans ODBC 3*.x*. ODBC 3*.x* pilotes doivent continuer à prendre en charge ces types d’informations pour la compatibilité descendante avec ODBC 2*.x* applications. (Pour plus d’informations sur ces types, consultez [prise en charge SQLGetInfo](../../../odbc/reference/appendixes/sqlgetinfo-support.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.)  
+ Les valeurs suivantes de la *InfoType* argument ont été déconseillées dans ODBC 3 *.x*. ODBC 3 *.x* pilotes doivent continuer à prendre en charge ces types d’informations pour la compatibilité descendante avec ODBC 2 *.x* applications. (Pour plus d’informations sur ces types, consultez [prise en charge SQLGetInfo](../../../odbc/reference/appendixes/sqlgetinfo-support.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.)  
   
 |||  
 |-|-|  
@@ -727,7 +728,7 @@ SQLRETURN SQLGetInfo(
  Un caractère de chaîne avec le nom de la base de données actuelle en cours d’utilisation, si la source de données définit un objet nommé appelé « database ».  
   
 > [!NOTE]  
->  Dans ODBC 3*.x*, la valeur retournée pour cette *InfoType* peut également être renvoyé en appelant **SQLGetConnectAttr** avec un *attribut* argument de SQL_ATTR_CURRENT_CATALOG.  
+>  Dans ODBC 3 *.x*, la valeur retournée pour cette *InfoType* peut également être renvoyé en appelant **SQLGetConnectAttr** avec un *attribut* argument de SQL_ATTR_CURRENT_CATALOG.  
   
  SQL_DATETIME_LITERALS (ODBC 3.0)  
  Un masque de bits SQLUINTEGER énumérant les littéraux de date/heure SQL-92 pris en charge par la source de données. Notez que ceux-ci sont les littéraux datetime répertoriés dans la spécification SQL-92 et sont distincts les clauses d’échappement littéral de date/heure définis par ODBC. Pour plus d’informations sur les clauses d’échappement ODBC le littéral de date/heure, consultez [Date, Time et Timestamp littéraux](../../../odbc/reference/develop-app/date-time-and-timestamp-literals.md).  
@@ -1332,7 +1333,7 @@ SQLRETURN SQLGetInfo(
  SQL_FN_NUM_ABS (ODBC 1.0) SQL_FN_NUM_ACOS (ODBC 1.0) SQL_FN_NUM_ASIN (ODBC 1.0) SQL_FN_NUM_ATAN (ODBC 1.0) SQL_FN_NUM_ATAN2 (ODBC 1.0) SQL_FN_NUM_CEILING (ODBC 1.0) SQL_FN_NUM_COS (ODBC 1.0) SQL_FN_NUM_COT (ODBC 1.0) SQL_FN_NUM_DEGREES (ODBC VERSION 2.0) SQL_FN_NUM_EXP (ODBC 1.0) SQL_FN_NUM_FLOOR (ODBC 1.0) SQL_FN_NUM_LOG (ODBC 1.0) SQL_FN_NUM_LOG10 SQL_FN_ DE (ODBC VERSION 2.0) NUM_MOD (ODBC 1.0) SQL_FN_NUM_PI (ODBC 1.0) SQL_FN_NUM_POWER (ODBC VERSION 2.0) SQL_FN_NUM_RADIANS (ODBC VERSION 2.0) SQL_FN_NUM_RAND (ODBC 1.0) SQL_FN_NUM_ROUND (ODBC VERSION 2.0) SQL_FN_NUM_SIGN (ODBC 1.0) SQL_FN_NUM_SIN (ODBC 1.0) SQL_FN_NUM_SQRT (ODBC 1.0) SQL_FN_NUM_TAN (ODBC 1.0) SQL_FN_NUM_TRUNCATE (ODBC VERSION 2.0)  
   
  SQL_ODBC_INTERFACE_CONFORMANCE (ODBC 3.0)  
- Une valeur SQLUINTEGER qui indique le niveau de la version 3 ODBC*.x* interface conforme par le pilote.  
+ Une valeur SQLUINTEGER qui indique le niveau de la version 3 ODBC *.x* interface conforme par le pilote.  
   
  SQL_OIC_CORE : Le niveau minimal tous les pilotes ODBC sont doit se conformer. Ce niveau inclut les éléments d’interface de base telles que les fonctions de connexion, des fonctions pour la préparation et l’exécution d’une instruction SQL, fonctions de métadonnées du jeu de résultats de base, les fonctions de catalogue de base et ainsi de suite.  
   
@@ -1799,7 +1800,7 @@ SQLRETURN SQLGetInfo(
   
  SQL_BRC_EXPLICIT = nombre de lignes, si elle existe, sont disponibles lorsqu’un lot est exécuté directement en appelant **SQLExecute** ou **SQLExecDirect**. Si le nombre de lignes est disponibles, elles peuvent être restaurées vers le haut ou individuellement disponibles, selon le bit SQL_BRC_ROLLED_UP.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  **SQLGetInfo** retourne la liste des options prises en charge sous la forme d’un masque de bits SQLUINTEGER dans **InfoValuePtr*. Le masque de bits pour chaque option est utilisée avec l’indicateur pour déterminer si l’option est prise en charge.  
   
  Par exemple, une application peut utiliser le code suivant pour déterminer si la fonction scalaire sous-chaîne est pris en charge par le pilote associé à la connexion.  

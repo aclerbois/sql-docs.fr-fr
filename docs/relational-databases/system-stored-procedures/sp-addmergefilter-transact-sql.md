@@ -1,16 +1,15 @@
 ---
 title: sp_addmergefilter (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergefilter
 ms.assetid: 4c118cb1-2008-44e2-a797-34b7dc34d6b1
-caps.latest.revision: 
+caps.latest.revision: 49
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bae5cbac50c347247bba5b0488a7fb70ad8e71a3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: fcb8e6ae00e7dfe644cbbd05eb72d6f574c993f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergefilter-transact-sql"></a>sp_addmergefilter (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -80,7 +78,7 @@ sp_addmergefilter [ @publication = ] 'publication'
   
  **0** Spécifie que les modifications apportées à l’article de fusion n’entraînent pas l’instantané n’est pas valide. Si la procédure stockée détecte que la modification requiert un nouvel instantané, une erreur est générée et aucune modification n'est effectuée.  
   
- **1** indique que les modifications apportées à l’article de fusion peuvent invalider l’instantané n’est pas valide, s’il existe des abonnements nécessitant un nouvel instantané pour l’instantané existant soit marqué comme obsolète et de générer un nouvel instantané.  
+ **1** indique que les modifications apportées à l’article de fusion peuvent invalider l’instantané n’est pas valide, s’il existe des abonnements nécessitant un nouvel instantané pour l’instantané existant soit marqué comme obsolète et un nouvel instantané généré.  
   
  [  **@force_reinit_subscription=** ] *force_reinit_subscription*  
  Confirme que l’action entreprise par cette procédure stockée peut nécessiter la réinitialisation des abonnements existants. *force_reinit_subscription* est un **bits**, avec 0 comme valeur par défaut.  
@@ -121,16 +119,16 @@ sp_addmergefilter [ @publication = ] 'publication'
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_addmergefilter](../../relational-databases/replication/codesnippet/tsql/sp-addmergefilter-transa_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addmergefilter**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Define an Article](../../relational-databases/replication/publish/define-an-article.md)   
- [Définir et modifier un filtre de jointure entre des Articles de fusion](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
- [Join Filters](../../relational-databases/replication/merge/join-filters.md)   
+ [Définir un article](../../relational-databases/replication/publish/define-an-article.md)   
+ [Define and Modify a Join Filter Between Merge Articles](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
+ [Filtres de jointure](../../relational-databases/replication/merge/join-filters.md)   
  [sp_changemergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergefilter-transact-sql.md)   
  [sp_dropmergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropmergefilter-transact-sql.md)   
- [sp_helpmergefilter &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpmergefilter-transact-sql.md)   
+ [sp_helpmergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergefilter-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  
   
   

@@ -1,25 +1,24 @@
 ---
-title: "Accès aux tables optimisées en mémoire à l’aide du Transact-SQL interprété | Microsoft Docs"
-ms.custom: 
+title: Accès aux tables optimisées en mémoire à l’aide du Transact-SQL interprété | Microsoft Docs
+ms.custom: ''
 ms.date: 05/31/2016
-ms.prod: sql-non-specified
-ms.reviewer: 
-ms.suite: 
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: sql
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 92a44d4d-0e53-4fb0-b890-de264c65c95a
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b683df32e55631bd4a896ec14dcf05c2f264f7c
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 554b1c2240d06fc0c9180594bc00ecc6473c9bd5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="accessing-memory-optimized-tables-using-interpreted-transact-sql"></a>Accès aux tables optimisées en mémoire à l’aide du Transact-SQL interprété
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]

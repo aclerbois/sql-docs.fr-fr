@@ -1,30 +1,29 @@
 ---
-title: "Méthode setFetchDirection (SQLServerResultSet) | Documents Microsoft"
-ms.custom: 
+title: Méthode setFetchDirection (SQLServerResultSet) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.setFetchDirection
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.setFetchDirection
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 4ee82290-508d-4bff-a5c5-8a56338deef8
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 949db53bfa1653545cb883026017982d37490328
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c1f042804aa21ca91031c56d285bbfb9d0d8e1f0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setfetchdirection-method-sqlserverresultset"></a>Méthode setFetchDirection (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -42,7 +41,7 @@ public void setFetchDirection(int direction)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *direction*  
+ *Direction*  
   
  Un **int** qui indique la direction d’extraction suggérée. Il peut s'agir de l'une des valeurs suivantes :  
   

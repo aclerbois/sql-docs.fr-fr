@@ -1,17 +1,16 @@
 ---
-title: "Outils de dépannage pour le développement des packages | Microsoft Docs"
-ms.custom: 
+title: Outils de dépannage pour le développement des packages | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Integration Services packages, troubleshooting
 - SSIS packages, troubleshooting
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - errors [Integration Services], troubleshooting
 - packages [Integration Services], troubleshooting
 ms.assetid: 41dd248c-dab3-4318-b8ba-789a42d5c00c
-caps.latest.revision: 
+caps.latest.revision: 65
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c47c0b46d9b171c2bf75e11e9e854ed91c68836
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5bb7fa36f32466119155e00bc9da56e6c49ffb7a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshooting-tools-for-package-development"></a>Outils de dépannage pour le développement des packages
   [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] comprend des fonctionnalités et des outils que vous pouvez utiliser pour dépanner les packages quand vous les développez dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)].  

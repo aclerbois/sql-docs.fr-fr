@@ -1,17 +1,15 @@
 ---
 title: Groupes de Collection (ADOX) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Groups
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - Groups collection [ADOX]
 ms.assetid: 09aa7b0a-69d5-4564-80a7-20ad8189670f
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2a19ec44a3d6bbea3477d64ff7618c6a5d4ad57c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c98bb6f455878df0605d1e7f7c9fc1d9554a1cb8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="groups-collection-adox"></a>Collection de groupes (ADOX)
 Contient tous les stockées [groupe](../../../ado/reference/adox-api/group-object-adox.md) objets d’un catalogue ou d’un utilisateur.  

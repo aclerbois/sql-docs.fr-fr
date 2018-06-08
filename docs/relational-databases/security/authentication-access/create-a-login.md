@@ -1,17 +1,16 @@
 ---
-title: "Créer un compte de connexion | Microsoft Docs"
-ms.custom: 
+title: Créer un compte de connexion | Microsoft Docs
+ms.custom: ''
 ms.date: 08/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.login.status.f1
 - sql13.swb.login.effectivepermissions.f1
@@ -25,16 +24,16 @@ helpviewer_keywords:
 - Create login [SQL Server]
 - SQL Server logins
 ms.assetid: fb163e47-1546-4682-abaa-8c9494e9ddc7
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1cfca2d37697e8c9942ac042857784e68dca7088
-ms.sourcegitcommit: 50e54dda407f362262b86941f68b7d80516db7fb
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 40163a185516fc5d101baedf6632b46112dda52e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/06/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-login"></a>Créer un compte de connexion
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -145,7 +144,7 @@ ms.lasthandoff: 12/06/2017
  **Carte**  
  Autorise la connexion à accéder aux bases de données répertoriées au-dessous.  
   
- **Base de données**  
+ **Sauvegarde de la base de données**  
  Répertorie les bases de données disponibles sur le serveur.  
   
  **Utilisateur**  
@@ -170,7 +169,7 @@ ms.lasthandoff: 12/06/2017
   
 1.  Cliquez sur **Rechercher**.  
   
-2.  Dans la boîte de dialogue **Ajouter des objets**, sélectionnez l’une des options suivantes : **Objets spécifiques…**, **Tous les objets des types…** ou **Le serveur** *nom_serveur*. [!INCLUDE[clickOK](../../../includes/clickok-md.md)]  
+2.  Dans la boîte de dialogue **Ajouter des objets**, sélectionnez l’une des options suivantes : **Objets spécifiques…**, **Tous les objets des types…** ou **Le serveur***nom_serveur*. [!INCLUDE[clickOK](../../../includes/clickok-md.md)]  
   
     > **REMARQUE :** La sélection de l’option **Le serveur***nom_serveur* remplit automatiquement la grille supérieure avec tous les objets sécurisables de ce serveur.  
   
@@ -235,7 +234,7 @@ ms.lasthandoff: 12/06/2017
 ##  <a name="TsqlProcedure"></a> Créer une connexion à l’aide de l’authentification Windows à l’aide de T-SQL  
   
  
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -251,7 +250,7 @@ ms.lasthandoff: 12/06/2017
   
 ## <a name="create-a-login-using-sql-server-authentication-with-ssms"></a>Créer une connexion via l’authentification SQL Server avec SSMS  
   
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -278,7 +277,7 @@ ms.lasthandoff: 12/06/2017
   
 -   Pour accorder une autorisation à un compte de connexion, consultez [Accorder une autorisation à un principal](../../../relational-databases/security/authentication-access/grant-a-permission-to-a-principal.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Centre de sécurité pour le moteur de base de données SQL Server et la base de données SQL Azure](../../../relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database.md)  
   
   

@@ -1,17 +1,13 @@
 ---
-title: "Rechercher du texte avec des caractères génériques | Microsoft Docs"
-ms.custom: 
+title: Rechercher du texte avec des caractères génériques | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.wildcards
 - vswildcardsbuilder
@@ -20,19 +16,20 @@ helpviewer_keywords:
 - Query Editor [SQL Server Management Studio], wildcard searches
 - wildcard options [SQL Server Management Studio]
 ms.assetid: 449600f8-cc87-4b3f-878a-59c158a88a40
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 37b204b63dbc6cf39d2be442a16afc7cf6b5c970
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b5897acf16b7be6f6dbae52fb71f79d398a1f34f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="search-text-with-wildcards"></a>Rechercher du texte avec des caractères génériques
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Les expressions ci-après peuvent remplacer des caractères ou des chiffres dans le champ **Rechercher** de la boîte de dialogue **Rechercher et remplacer** de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Les expressions ci-après peuvent remplacer des caractères ou des chiffres dans le champ **Rechercher** de la boîte de dialogue [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] **Find and Replace** dialog box.  
   
 #### <a name="to-search-using-wildcards"></a>Pour effectuer une recherche avec des caractères génériques  
   

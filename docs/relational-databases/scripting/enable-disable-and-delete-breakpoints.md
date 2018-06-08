@@ -1,31 +1,29 @@
 ---
-title: "Activer, désactiver et supprimer des points d’arrêt | Microsoft Docs"
-ms.custom: 
+title: Activer, désactiver et supprimer des points d’arrêt | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 357b5874-273f-43a9-8e30-83872bdea5dc
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2c78a83bbf85641580f05d08af7272bce554bff2
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 91d2ee0f4e000d5b27b3644532d9c34bc3713637
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="enable-disable-and-delete-breakpoints"></a>Activer, désactiver et supprimer des points d'arrêt
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour afficher et gérer tous les points d’arrêt ouverts, vous pouvez utiliser la fenêtre **Points d’arrêt**. Utilisez la fenêtre pour afficher les informations sur les points d'arrêt et entreprendre des actions, telles que la suppression, la désactivation ou l'activation des points d'arrêt.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Pour afficher et gérer tous les points d'arrêt ouverts, vous pouvez utiliser la fenêtre **Points d'arrêt** . Utilisez la fenêtre pour afficher les informations sur les points d'arrêt et entreprendre des actions, telles que la suppression, la désactivation ou l'activation des points d'arrêt.  
   
 ## <a name="the-breakpoints-window"></a>Fenêtre Points d'arrêt  
  La fenêtre **Points d'arrêt** répertorie des informations telles que la ligne de code sur laquelle se trouve le point d'arrêt. Dans la fenêtre **Points d'arrêt** , vous pouvez aussi supprimer, désactiver et activer des points d'arrêt. Pour plus d'informations sur la fenêtre **Points d'arrêt** , consultez [Points d'arrêt Window](../../relational-databases/scripting/transact-sql-debugger-breakpoints-window.md).  

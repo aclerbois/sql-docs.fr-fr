@@ -1,32 +1,33 @@
 ---
-title: "Boîte de dialogue Créer un compte et un profil de messagerie de base de données | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Créer un compte et un profil de messagerie de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.mds.configmanager.dbmailprofileacct.f1
 ms.assetid: b93ea3d4-9f22-490e-8e26-d766b454aed6
-caps.latest.revision: 
+caps.latest.revision: 7
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 99221347b323c5353d681c372865616083bdbd5b
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: c26a495f590d7543401edceee6438bc7c84da384
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-database-mail-profile-and-account-dialog-box"></a>Boîte de dialogue Créer un compte et un profil de messagerie de base de données
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Utilisez la boîte de dialogue **Créer un compte et un profil de messagerie de base de données** pour créer un profil de messagerie de base de données et un compte de messagerie de base de données pour la base de données des [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] . Ce profil sera utilisé pour avertir les utilisateurs et les groupes par courrier électronique lorsque la validation des règles d'entreprise échoue.  
   
 ## <a name="database-mail-profile-and-account"></a>Compte et profil de messagerie de base de données  

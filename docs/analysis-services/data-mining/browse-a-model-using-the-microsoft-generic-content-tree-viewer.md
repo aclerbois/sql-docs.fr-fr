@@ -1,31 +1,23 @@
 ---
-title: "Parcourir un modèle à l’aide de la visionneuse d’arborescence de contenu générique Microsoft | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: mining model content, viewing
-ms.assetid: 4a5f7c51-c704-4214-b05d-21cf735e6d96
-caps.latest.revision: "23"
-author: Minewiskan
+title: Parcourir un modèle à l’aide de la visionneuse d’arborescence de contenu générique Microsoft | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6489f35c5d438dd234e97eeed3d042ea41cc291c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: f44c1cb014ca9abcd6122f6db6ee0e33407b7d1d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="browse-a-model-using-the-microsoft-generic-content-tree-viewer"></a>Explorer un modèle à l'aide de la visionneuse de l'arborescence de contenu générique Microsoft
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Le [!INCLUDE[msCoName](../../includes/msconame-md.md)] générique visionneuse de contenu de modèle d’exploration de données fournit des informations détaillées sur les séquences identifiées par l’algorithme d’exploration de données et fournit l’accès aux différentes statistiques générées pendant le processus d’analyse. Les informations varient en quantité et en type selon l'algorithme utilisé, mais elles peuvent inclure les catégories suivantes :  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  [!INCLUDE[msCoName](../../includes/msconame-md.md)] Generic Mining Model Content Viewer fournit des informations détaillées sur les séquences identifiées par l’algorithme d’exploration de données et donne aussi accès aux différentes statistiques générées pendant le processus d’analyse. Les informations varient en quantité et en type selon l'algorithme utilisé, mais elles peuvent inclure les catégories suivantes :  
   
 -   Des segments de données et leurs caractéristiques.  
   
@@ -54,7 +46,7 @@ SELECT * FROM [<mining model name>].CONTENT
  Pour plus d’informations, consultez [Requêtes d’exploration de données](../../analysis-services/data-mining/data-mining-queries.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Visionneuse de l’arborescence de contenu générique Microsoft &#40;exploration de données&#41;](http://msdn.microsoft.com/library/751b4393-f6fd-48c1-bcef-bdca589ce34c)   
- [Algorithmes d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)  
+ [Visionneuse de l’arborescence de contenu générique Microsoft & #40 ; exploration de données & #41 ;](http://msdn.microsoft.com/library/751b4393-f6fd-48c1-bcef-bdca589ce34c)   
+ [Algorithmes d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)  
   
   

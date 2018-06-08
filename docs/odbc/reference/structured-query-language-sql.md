@@ -1,31 +1,28 @@
 ---
 title: Structured Query Language (SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL [ODBC]
 - SQL [ODBC], about SQL
 - ODBC [ODBC], SQL
 ms.assetid: bebfd93e-0dc0-46b3-a531-518beb7ea976
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: f51c5b639649a3d21ce515a1d4082e84be4f7329
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e28770a1532d8d52ec8069d00154c4b377628d1f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="structured-query-language-sql"></a>SQL (Structured Query Language)
 Un SGBD classique permet aux utilisateurs de stocker, accéder et modifier des données d’une manière organisée, efficace. À l’origine, les utilisateurs de SGBD étaient les programmeurs. L’accès aux données stockées requis de l’écriture d’un programme dans un langage de programmation tels que COBOL. Alors que ces programmes ont été écrits souvent pour présenter une interface conviviale pour un utilisateur non technique, l’accès aux données elles-mêmes nécessaire les services d’un programmeur expérimenté. Accès aisé aux données n’était pas pratique.  

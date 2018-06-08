@@ -1,31 +1,28 @@
 ---
-title: "Optimiser la propriété dynamique (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Optimiser la propriété dynamique (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Optimize property [ADO]
 ms.assetid: a491c4ce-2b04-4c84-be83-3846bde8d16b
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1ded694b5bbc332483e2363be6212381f27035af
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 01b74e9fa9fb8a6c489837fe454a609b7e11d787
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="optimize-property-dynamic-ado"></a>Optimiser la propriété dynamique (ADO)
 Spécifie si un index doit être créé sur un [champ](../../../ado/reference/ado-api/field-object.md).  

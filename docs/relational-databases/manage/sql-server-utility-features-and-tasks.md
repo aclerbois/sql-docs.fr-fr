@@ -1,17 +1,16 @@
 ---
-title: "Fonctionnalités et tâches de l’utilitaire SQL Server | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités et tâches de l’utilitaire SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server utility [SQL Server]
 - utility control point
@@ -20,19 +19,19 @@ helpviewer_keywords:
 - UCP
 - Multi-server management [SQL Server]
 ms.assetid: 6e6cbd25-6b1c-4e21-9ade-4584e243fd8f
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 75d12d94fb1d58242036abbc91e692414f9da3b5
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 64b7b244132621ea88696ccbc795f465b8bcf56f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-utility-features-and-tasks"></a>Fonctionnalités et tâches de l'utilitaire SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les clients [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont de plus en plus besoin de gérer leur environnement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans son ensemble, ce à quoi répond cette version via le concept d’application et de gestion multiserveur de l’utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont de plus en plus besoin de gérer leur environnement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans son ensemble, ce à quoi répond cette version via le concept d'application et de gestion multiserveur de l'utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="benefits-of-the-sql-server-utility"></a>Avantages de l'utilitaire SQL Server  
  L'utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] modélise les entités d'une organisation associées à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]dans une vue unifiée. L'Explorateur d'utilitaire et les points de vue de l'utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] (SSMS) fournissent aux administrateurs une vue holistique de l'intégrité des ressources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] via une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui sert de point de contrôle de l'utilitaire (UCP). La combinaison du résumé et des données détaillées présentée dans l'UCP, à la fois pour les stratégies de sous-exploitation et de surexploitation et pour divers paramètres clés, permet d'identifier facilement les possibilités de consolidation de ressources et la surexploitation des ressources. Les stratégies de contrôle d'intégrité sont configurables et peuvent être ajustées pour modifier des seuils d'exploitation des ressources supérieurs ou inférieurs. Vous pouvez modifier des stratégies de surveillance globales ou configurer des stratégies de surveillance individuelles pour chaque entité gérée dans l'utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  

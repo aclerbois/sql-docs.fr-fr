@@ -1,34 +1,31 @@
 ---
 title: Restauration en ligne (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - online restores [SQL Server]
 - online restores [SQL Server], about online restores
 ms.assetid: 7982a687-980a-4eb8-8e9f-6894148e7d8c
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b3500b144cc3afb10c5ac12ee76e49dc11953623
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 93b882f13d9c665198abbcf72fe809398d274f62
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="online-restore-sql-server"></a>Restauration en ligne (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La restauration en ligne est prise en charge uniquement dans l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise. Par défaut, une restauration fragmentaire, de fichiers ou de pages est en ligne dans cette édition. Cette rubrique concerne les bases de données qui contiennent plusieurs fichiers ou groupes de fichiers et, en mode de récupération simple, seulement des groupes de fichiers en lecture seule.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La restauration en ligne est prise en charge uniquement dans l'édition [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise. Par défaut, une restauration fragmentaire, de fichiers ou de pages est en ligne dans cette édition. Cette rubrique concerne les bases de données qui contiennent plusieurs fichiers ou groupes de fichiers et, en mode de récupération simple, seulement des groupes de fichiers en lecture seule.  
   
  Le processus de restauration des données lorsque la base de données est en ligne est appelé *restauration en ligne*. Une base de données est considérée en ligne lorsque le groupe de fichiers primaire est en ligne, même si un ou plusieurs de ses groupes de fichiers secondaires sont hors connexion. Quel que soit le mode de récupération, vous pouvez restaurer un fichier qui est hors connexion quand la base de données est en ligne. En mode de restauration complète, vous pouvez aussi restaurer les pages quand la base de données est en ligne.  
   

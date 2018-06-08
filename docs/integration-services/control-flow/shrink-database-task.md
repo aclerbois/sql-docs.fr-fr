@@ -1,17 +1,16 @@
 ---
-title: "Réduire la base de données, tâche | Microsoft Docs"
-ms.custom: 
+title: Réduire la base de données, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.shrinkdatabasetask.f1
 helpviewer_keywords:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - database shrinking [Integration Services]
 - shrinking databases
 ms.assetid: e66286f8-97b1-4e5a-86b4-e56f1932b7d5
-caps.latest.revision: 
+caps.latest.revision: 42
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 91a83f62ab603246b2aecc29d2ca4b03825fa5de
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 08ea5c7d3ea69684477f839aefb499dd92a3db60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="shrink-database-task"></a>tâche Réduire la base de données
   La tâche Réduire la base de données réduit la taille des fichiers journaux et de données de bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  

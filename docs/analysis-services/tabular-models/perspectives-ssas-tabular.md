@@ -1,31 +1,23 @@
 ---
 title: Perspectives | Documents Microsoft
-ms.custom: 
-ms.date: 04/10/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 1f78c3a1-ce2c-4e7f-a277-71a657692bea
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e78bf1c9300fcd9a6c0d198d0239ecee12a5ea22
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 3e687116fa1f388da3b59884c29526cb9e7dd629
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="perspectives"></a>Perspectives
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Dans les modèles tabulaires, les perspectives définissent des sous-ensembles visualisables d'un modèle et des points de vue du modèle focalisés sur un domaine d'activité ou sur une application.  
+  Dans les modèles tabulaires, les perspectives définissent des sous-ensembles visualisables d'un modèle et des points de vue du modèle focalisés sur un domaine d'activité ou sur une application.  
   
 ##  <a name="bkmk_understanding"></a> Avantages  
  L'exploration des modèles tabulaires peut s'avérer très complexe pour les utilisateurs. Un modèle unique peut représenter le contenu d'un entrepôt de données complet avec de nombreuses tables, mesures et dimensions. Une telle complexité peut dérouter les utilisateurs qui n'ont besoin d'interagir qu'avec une petite partie du modèle afin de répondre à leurs besoins en termes de décisionnel et de rapports.  
@@ -46,7 +38,7 @@ Dans les modèles tabulaires, les perspectives définissent des sous-ensembles v
 |[Créer et gérer des perspectives](../../analysis-services/tabular-models/create-and-manage-perspectives-ssas-tabular.md)|Décrit comment créer et gérer des perspectives à l'aide de la boîte de dialogue Perspectives dans le générateur de modèles.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Roles](../../analysis-services/tabular-models/roles-ssas-tabular.md)   
+ [Rôles](../../analysis-services/tabular-models/roles-ssas-tabular.md)   
  [Hiérarchies](../../analysis-services/tabular-models/hierarchies-ssas-tabular.md)  
   
   

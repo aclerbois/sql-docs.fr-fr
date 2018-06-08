@@ -2,29 +2,27 @@
 title: MSSQL_ENG002601 | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: replication
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - MSSQL_ENG002601 error
 ms.assetid: 657c3ae6-9e4b-4c60-becc-4caf7435c1dc
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e708bdefdee6680a7dcc6d44048a1714a6389916
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 64e6968cb9cabe62a9b939b194f6f97b10110f2a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mssqleng002601"></a>MSSQL_ENG002601
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -68,7 +66,7 @@ ms.lasthandoff: 03/08/2018
   
 -   L'erreur se produit pendant l'insertion dans une table système **MSmerge_contents**.  
   
-     Cette erreur peut se produire en raison d'une valeur incorrecte pour la propriété du filtre de jointure **join_unique_key**. Cette propriété doit être définie avec la valeur TRUE seulement si la colonne de jointure dans la table parente est unique. Si la propriété est définie avec la valeur TRUE mais que la colonne n'est pas unique, cette erreur est déclenchée. Pour plus d’informations sur la définition de cette propriété, consultez [définir et modifier un Join Filter Between Merge Articles](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md).  
+     Cette erreur peut se produire en raison d'une valeur incorrecte pour la propriété du filtre de jointure **join_unique_key**. Cette propriété doit être définie avec la valeur TRUE seulement si la colonne de jointure dans la table parente est unique. Si la propriété est définie avec la valeur TRUE mais que la colonne n'est pas unique, cette erreur est déclenchée. Pour plus d'informations sur la définition de cette propriété, consultez [Define and Modify a Join Filter Between Merge Articles](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md).  
   
 ## <a name="see-also"></a> Voir aussi  
  [Guide de référence des erreurs et des événements &#40;réplication&#41;](../../relational-databases/replication/errors-and-events-reference-replication.md)  

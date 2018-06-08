@@ -1,28 +1,21 @@
 ---
-title: "État des Services PDW (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 3fc9bee2-c372-4c4a-956c-fb54215d8918
-caps.latest.revision: "14"
-ms.openlocfilehash: 7a6b1a1f9a6ef922833930abf00ca10482648141
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: PDW services - état du système de plateforme Analytique | Documents Microsoft
+description: État des services de système de plateforme Analytique Parallel Data Warehouse (PDW).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: e2252bb821f9522515f1625b0fc118323cb50d1f
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="pdw-services-status"></a>État des Services PDW
+# <a name="parallel-data-warehouse-services-status-for-analytics-platform-system"></a>État des services Parallel Data Warehouse pour système de plateforme Analytique
 Parallel Data Warehouse **l’état des Services** page dans Microsoft Analytique plateforme système Configuration Manager affiche l’état actuel de tous les services SQL Server PDW et offre la possibilité d’arrêter et démarrer les services PDW. Il s’agit de la seule méthode prise en charge pour démarrer et arrêter les services PDW. Notez que des composants ou services ne peut pas être redémarrées de manière indépendante.  
   
 #### <a name="to-start-or-stop-the-appliance-services"></a>Pour démarrer ou arrêter les services d’application  
@@ -39,5 +32,5 @@ Il n’est pas nécessaire de cliquer sur **appliquer** lors du démarrage et ar
 > L’arrêt de la région PDW arrête également l’agent PDW (sqldwagent) sur les nœuds de la HDInsight région. La HDInsight région fonctionne toujours, mais le contrôle d’intégrité ne sera pas disponible. (L’agent PDW nécessite le nœud de contrôle PDW pour signaler le contrôle d’intégrité).  
   
 ## <a name="see-also"></a>Voir aussi  
-[L’alimentation de l’Appliance APS ou désactiver &#40; Système de plateforme Analytique &#41;](power-the-aps-appliance-on-or-off.md)  
+[Le dispositif de points d’accès de l’alimentation ou désactiver &#40;Analytique plate-forme système&#41;](power-the-aps-appliance-on-or-off.md)  
   

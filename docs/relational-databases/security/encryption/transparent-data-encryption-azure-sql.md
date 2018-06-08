@@ -1,33 +1,31 @@
 ---
 title: Transparent Data Encryption pour Azure SQL Database et Data Warehouse | Microsoft Docs
-description: "Vue d’ensemble de Transparent Data Encryption (TDE) pour SQL Database et Data Warehouse. Le document décrit les avantages de cette fonctionnalité, ainsi que les options de configuration disponibles, comme TDE géré par le service et BYOK (Bring Your Own Key)."
-keywords: 
+description: Vue d’ensemble de Transparent Data Encryption (TDE) pour SQL Database et Data Warehouse. Le document décrit les avantages de cette fonctionnalité, ainsi que les options de configuration disponibles, comme TDE géré par le service et BYOK (Bring Your Own Key).
+keywords: ''
 author: becczhang
 manager: craigg
-editor: 
-ms.prod: 
-ms.reviewer: 
+editor: ''
+ms.prod: ''
+ms.reviewer: ''
 ms.suite: sql
 ms.prod_service: sql-database, sql-data-warehouse
 ms.service: sql-database
 ms.component: security
-ms.custom: 
-ms.workload: On Demand
-ms.tgt_pltfrm: 
-ms.devlang: na
-ms.topic: article
-ms.date: 08/07/2017
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+ms.date: 05/08/2018
 ms.author: rebeccaz
-ms.openlocfilehash: 5c9ff69d5219e3cd508031669d67002931fa4060
-ms.sourcegitcommit: d7dcbcebbf416298f838a39dd5de6a46ca9f77aa
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: b88dfeac58ef9c00307b2cfee35aca3ea0549f02
+ms.sourcegitcommit: feff98b3094a42f345a0dc8a31598b578c312b38
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 05/11/2018
 ---
 # <a name="transparent-data-encryption-for-sql-database-and-data-warehouse"></a>TDE pour SQL Database et Data Warehouse
 [!INCLUDE[appliesto-xx-asdb-asdw-xxx-md](../../../includes/appliesto-xx-asdb-asdw-xxx-md.md)]
 
-TDE vous aide à protéger Azure SQL Database et Azure Data Warehouse contre les menaces d’activités malveillantes. Il effectue un chiffrement et un déchiffrement en temps réel de la base de données, des sauvegardes associées et des fichiers journaux transactionnels au repos, sans qu’il soit nécessaire de modifier l’application.
+TDE vous aide à protéger Azure SQL Database et Azure Data Warehouse contre les menaces d’activités malveillantes. Il effectue un chiffrement et un déchiffrement en temps réel de la base de données, des sauvegardes associées et des fichiers journaux transactionnels au repos, sans qu’il soit nécessaire de modifier l’application. Par défaut, TDE est activé pour toutes les bases de données Azure SQL Database nouvellement déployées, mais il peut être nécessaire de l’activer manuellement pour les bases de données plus anciennes.  
 
 TDE chiffre le stockage d’une base de données entière en utilisant une clé symétrique appelée clé de chiffrement de la base de données. Cette clé de chiffrement de base de données est protégée par le protecteur TDE. Le protecteur est un certificat géré par le service (TDE géré par le service) ou une clé asymétrique stockée dans Azure Key Vault (Bring Your Own Key). Vous définissez le protecteur TDE au niveau du serveur. 
 
@@ -45,9 +43,9 @@ Microsoft déplace et gère également les clés de façon transparente en fonct
 > Toutes les nouvelles bases de données SQL sont chiffrées par défaut avec TDE géré par le service. Les bases de données antérieures à mai 2017 ou celles qui ont été créées par restauration, géoréplication ou copie de base de données ne sont pas chiffrées par défaut.
 >
 
-## <a name="bring-your-own-key-preview"></a>BYOK (préversion)
+## <a name="bring-your-own-key"></a>Bring Your Own Key
 
-Avec la prise en charge de la fonctionnalité BYOK (en préversion), vous pouvez gérer vous-même vos clés TDE, et déterminer qui peut y accéder et quand. Key Vault, qui est le système de gestion des clés externes sur le cloud d’Azure, est le premier service de gestion de clés intégré par TDE à la prise en charge de BYOK. Avec la prise en charge de BYOK, la clé de chiffrement de la base de données est protégée par une clé asymétrique stockée dans Key Vault. La clé asymétrique ne quitte jamais Key Vault. Une fois que le serveur a obtenu les autorisations d’accès à un coffre de clés, il envoie les demandes d’opérations de clé de base à ce coffre via Key Vault. Vous définissez la clé asymétrique au niveau du serveur et toutes les bases de données sur ce serveur en héritent.
+Avec la prise en charge de la fonctionnalité BYOK, vous pouvez gérer vous-même vos clés TDE, et déterminer qui peut y accéder et quand. Key Vault, qui est le système de gestion des clés externes sur le cloud d’Azure, est le premier service de gestion de clés intégré par TDE à la prise en charge de BYOK. Avec la prise en charge de BYOK, la clé de chiffrement de la base de données est protégée par une clé asymétrique stockée dans Key Vault. La clé asymétrique ne quitte jamais Key Vault. Une fois que le serveur a obtenu les autorisations d’accès à un coffre de clés, il envoie les demandes d’opérations de clé de base à ce coffre via Key Vault. Vous définissez la clé asymétrique au niveau du serveur et toutes les bases de données sur ce serveur en héritent.
 
 Avec la prise en charge de BYOK, vous pouvez désormais contrôler les tâches de gestion des clés, comme les rotations de clés et les autorisations du coffre de clés. Vous pouvez également supprimer des clés et activer l’audit/création de rapports sur toutes les clés de chiffrement. Key Vault fournit une gestion des clés centralisée et utilise des modules de sécurité matériels étroitement surveillés. Key Vault favorise la séparation entre la gestion des clés et celle des données, de façon à respecter la conformité aux normes. Pour en savoir plus sur Key Vault, consultez la [page de documentation de Key Vault](https://docs.microsoft.com/azure/key-vault/key-vault-secure-your-key-vault).
 

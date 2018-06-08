@@ -2,32 +2,31 @@
 title: Présentation des types de données spatiales | Microsoft Docs
 ms.custom: ''
 ms.date: 11/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: ''
 ms.component: spatial
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - geometry data type [SQL Server], understanding
 - geography data type [SQL Server], spatial data
 - planar spatial data [SQL Server], geometry data type
 - spatial data types [SQL Server]
 ms.assetid: 1615db50-69de-4778-8be6-4e058c00ccd4
-caps.latest.revision: ''
+caps.latest.revision: 51
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 27b4acf9192c74ec3c9535d9ed35a477c5a5f5d0
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 093dd3f82e6c08db8d2dffd02ea42db1048c0fba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spatial-data-types-overview"></a>Présentation des types de données spatiales
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -105,9 +104,7 @@ Les méthodes qui fonctionnent sur les types de segment d'arc de cercle utilisen
 >  Si des valeurs Z sont fournies pour les segments d'arc de cercle, elles doivent être identiques pour tous les points dans le segment d'arc de cercle pour que ce dernier soit accepté comme entrée. Par exemple, `CIRCULARSTRING(0 0 1, 2 2 1, 4 0 1)` est autorisé, contrairement à `CIRCULARSTRING(0 0 1, 2 2 2, 4 0 1)` .  
 
 ### <a name="linestring-and-circularstring-comparison"></a>Comparaison de LineString et de CircularString  
-Le diagramme suivant montre des triangles isocèles identiques (le triangle A utilise des segments de ligne pour définir le triangle, tandis que le triangle B utilise des segments d'arc de cercle) :  
-
-![7e382f76-59da-4b62-80dc-caf93e637c14](../../relational-databases/spatial/media/7e382f76-59da-4b62-80dc-caf93e637c14.gif) Cet exemple indique comment stocker les triangles isocèles ci-dessus à l’aide d’une instance **LineString** et d’une instance **CircularString** :  
+Cet exemple indique comment stocker des triangles isocèles identiques à l’aide d’une instance **LineString** et d’une instance **CircularString** :  
 ```sql
 DECLARE @g1 geometry;
 DECLARE @g2 geometry;
@@ -129,17 +126,13 @@ SET @g2 = geometry::STGeomFromText('CIRCULARSTRING(0 0, 2 2, 4 0)', 0);
 SELECT @g1.STLength() AS [LS Length], @g2.STLength() AS [CS Length];
 ```
 
-Cet extrait de code produira les résultats suivants :  
+Cet extrait de code produit les résultats suivants :  
 ```
 LS LengthCS Length
 5.65685…6.28318…
 ```
 
-L’illustration suivante montre le mode de stockage de chaque type (la ligne rouge affiche **LineString**`@g1`, la ligne bleue affiche **CircularString**`@g2`) :  
-
-![e52157b5-5160-4a4b-8560-50cdcf905b76](../../relational-databases/spatial/media/e52157b5-5160-4a4b-8560-50cdcf905b76.gif)  
-
-Comme le montre l’illustration ci-dessus, les instances **CircularString** utilisent moins de points pour stocker des limites de courbe avec une précision supérieure que les instances **LineString** . Les instances**CircularString** conviennent particulièrement bien au stockage de limites circulaires, comme par exemple un rayon de recherche de 20 kilomètres autour d’un point spécifique. Les instances**LineString** conviennent particulièrement bien au stockage de limites qui sont linéaires, comme un bloc d’agglomération carré.  
+Les instances **CircularString** utilisent moins de points pour stocker des limites de courbe avec une précision supérieure que les instances **LineString**. Les instances**CircularString** conviennent particulièrement bien au stockage de limites circulaires, comme par exemple un rayon de recherche de 20 kilomètres autour d’un point spécifique. Les instances**LineString** conviennent particulièrement bien au stockage de limites qui sont linéaires, comme un bloc d’agglomération carré.  
 
 ### <a name="linestring-and-compoundcurve-comparison"></a>Comparaison de LineString et de CompoundCurve  
 Les exemples de code suivants montrent comment stocker la même figure à l’aide des instances **LineString** et **CompoundCurve** :

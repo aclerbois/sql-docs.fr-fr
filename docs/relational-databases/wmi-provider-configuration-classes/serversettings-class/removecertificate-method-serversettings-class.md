@@ -1,16 +1,15 @@
 ---
-title: "Méthode RemoveCertificate (classe ServerSettings) | Documents Microsoft"
-ms.custom: 
+title: Méthode RemoveCertificate (classe ServerSettings) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - RemoveCertificate Method (ServerSettings Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - RemoveCertificate method
 ms.assetid: 9ffdbc39-93f5-48fb-859a-86a3ad545827
-caps.latest.revision: 
+caps.latest.revision: 14
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e17669cac9fd8fa71e9286b1b2fe27d4bc8af44
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 79190d781dc3fb7b25a3f4ba2a36ed50175ec28c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="removecertificate-method-serversettings-class"></a>Méthode RemoveCertificate (classe ServerSettings)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

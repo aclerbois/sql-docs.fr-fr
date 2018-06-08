@@ -1,16 +1,12 @@
 ---
 title: DBCC SHOWCONTIG (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC_SHOWCONTIG_TSQL
@@ -27,16 +23,15 @@ helpviewer_keywords:
 - fragmentation [SQL Server]
 - index defragmenting [SQL Server]
 ms.assetid: 1df2123a-1197-4fff-91a3-25e3d8848aaa
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 78
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fb7faf36132e131c0fd771480e89318492c71372
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d473c726aefc9f0f2975e975027bb8cfcd008d24
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-showcontig-transact-sql"></a>DBCC SHOWCONTIG (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
-title: "Conversion de types de données (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Conversion de types de données (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 7/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - explicit data type conversions [SQL Server]
 - converting data types [SQL Server], about converting data types
 ms.assetid: ffacf45e-a488-48d0-9bb0-dcc7fd365299
-caps.latest.revision: 
+caps.latest.revision: 37
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 811eacd3dc0cbbd622fc6eac6ad91a6e740554f4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3a293fa97d10d08ce86714af6bb8ed27b10e2f78
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-conversion-database-engine"></a>Conversion de types de données (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -105,7 +103,7 @@ Le tableau suivant décrit la conversion des types de données [!INCLUDE[ssNoVer
 |**datetime**, **smalldatetime**|**Date**|  
 |Tout type qui prend la valeur NULL|**Variant** ayant la valeur Null|  
   
-Toutes les valeurs uniques [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont converties en une valeur unique [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], à l’exception des valeurs **binary**, **varbinary** et **image**. Ces valeurs sont converties en tableau de type **Byte()** unidimensionnel dans [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. Ce tableau possède une plage **Byte(**0 à *length*1**)** où *length* représente le nombre d’octets dans les valeurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **binary**, **varbinary** ou **image**.
+Toutes les valeurs uniques [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont converties en une valeur unique [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)], à l’exception des valeurs **binary**, **varbinary** et **image**. Ces valeurs sont converties en tableau de type **Byte()** unidimensionnel dans [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)]. Ce tableau possède une plage **Byte(** 0 à *length*1 **)** où *length* représente le nombre d’octets dans les valeurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **binary**, **varbinary** ou **image**.
   
 Il s'agit des conversions des types de données [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] en types de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
   

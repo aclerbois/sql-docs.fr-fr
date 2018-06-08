@@ -1,31 +1,28 @@
 ---
-title: "Fonctions de l’API (pilote ODBC pour Oracle) | Documents Microsoft"
-ms.custom: 
+title: Fonctions de l’API (pilote ODBC pour Oracle) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - functions [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], functions
 - API functions [ODBC]
 ms.assetid: ece0034f-1ea6-4fbe-8a01-e8d2d1914d44
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: cad307162930465d3f03332c472af90d4439563d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: db35490ff900590f6eb1028b0288a93b55899cc6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="api-functions-odbc-driver-for-oracle"></a>Fonctions de l’API (pilote ODBC pour Oracle)
 > [!IMPORTANT]  

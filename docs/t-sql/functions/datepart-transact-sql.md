@@ -1,16 +1,14 @@
 ---
 title: DATEPART (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DATEPART_TSQL
@@ -29,16 +27,16 @@ helpviewer_keywords:
 - DATEPART function [SQL Server]
 - dates [SQL Server], dateparts
 ms.assetid: 15f1a5bc-4c0c-4c48-848d-8ec03473e6c1
-caps.latest.revision: 
+caps.latest.revision: 57
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a972e0646d68620b915fe441e35ebfb617d06859
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: eee173d268af8e18343c286bda29384b2a327860
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="datepart-transact-sql"></a>DATEPART (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -89,7 +87,7 @@ Chaque *datepart* et ses abréviations retournent la même valeur.
   
 La valeur renvoyée dépend de l’environnement de langage défini en utilisant [SET LANGUAGE](../../t-sql/statements/set-language-transact-sql.md) et l’[option de configuration de serveur Configurer la langue par défaut](../../database-engine/configure-windows/configure-the-default-language-server-configuration-option.md) de la connexion. Si *date* est un littéral de chaîne pour certains formats, la valeur renvoyée dépend du format spécifié à l’aide de [SET DATEFORMAT](../../t-sql/statements/set-dateformat-transact-sql.md). SET DATEFORMAT n'affecte pas la valeur de retour lorsque la date est une expression de colonne d'un type de données de date ou d'heure.
   
-Le tableau suivant répertorie tous les arguments *datepart* avec les valeurs renvoyées correspondantes pour l’instruction `SELECT DATEPART(datepart,'2007-10-30 12:15:32.1234567 +05:10')`. Le type de données de l’argument *date* est **datetimeoffset(7)**. La valeur renvoyée **nanosecond***datepart* a une échelle de 9 (0,123456700) et les deux dernières positions sont toujours 00.
+Le tableau suivant répertorie tous les arguments *datepart* avec les valeurs renvoyées correspondantes pour l’instruction `SELECT DATEPART(datepart,'2007-10-30 12:15:32.1234567 +05:10')`. Le type de données de l’argument *date* est **datetimeoffset(7)**. La valeur retournée **nanosecond***datepart* a une échelle de 9 (0,123456700) et les deux dernières positions sont toujours 00.
   
 |*datepart*|Valeur retournée|  
 |---|---|
@@ -111,9 +109,9 @@ Le tableau suivant répertorie tous les arguments *datepart* avec les valeurs re
 ## <a name="week-and-weekday-datepart-arguments"></a>Arguments des parties de date semaine et jour ouvrable
 Quand *datepart* a la valeur **week** (**wk**, **ww**) ou **weekday** (**dw**), la valeur renvoyée dépend de la valeur définie à l’aide de [SET DATEFIRST](../../t-sql/statements/set-datefirst-transact-sql.md).
   
-Le 1er janvier d’une année définit le numéro de départ de **week***datepart*, par exemple, DATEPART (**wk**, 'Jan 1, *xxx*x') = 1, où *xxxx* représente une année.
+Le 1er janvier d’une année définit le numéro de départ de **week***datepart*, par exemple, DATEPART (** wk**, 'Jan 1, *xxx*x') = 1, où *xxxx* représente une année.
   
-Le tableau suivant répertorie la valeur renvoyée pour **week** et **weekday***datepart* pour '2007-04-21' pour chaque argument SET DATEFIRST. Le 1er janvier est un lundi dans l'année 2007. Le 21 avril est un samedi dans l'année 2007. SET DATEFIRST 7, Sunday, est la valeur par défaut pour l'anglais des États-Unis Anglais.
+Le tableau suivant répertorie la valeur retournée pour **week** et **weekday***datepart*, pour la valeur '2007-04-21' de chaque argument SET DATEFIRST. Le 1er janvier est un lundi dans l'année 2007. Le 21 avril est un samedi dans l'année 2007. SET DATEFIRST 7, Sunday, est la valeur par défaut pour l'anglais des États-Unis Anglais.
   
 |SET DATEFIRST<br /><br /> argument|week<br /><br /> retourné|weekday<br /><br /> retourné|  
 |---|---|---|
@@ -158,9 +156,9 @@ La valeur TZoffset est restituée comme suit :
 Quand *date* a la valeur [smalldatetime](../../t-sql/data-types/smalldatetime-transact-sql.md), les secondes sont renvoyées sous la forme 00.
   
 ## <a name="default-returned-for-a-datepart-that-is-not-in-a-date-argument"></a>Valeur par défaut retournée pour une partie de date qui ne figure pas dans un argument date  
-Si le type de données de l’argument *date* n’a pas l’argument *datepart* spécifié, la valeur par défaut pour ce *datepart* est renvoyée uniquement lors de la spécification d’un littéral pour *date*.
+Si le type de données de l’argument *date* n’a pas l’argument *datepart* spécifié, la valeur par défaut pour ce *datepart* sera renvoyée uniquement lors de la spécification d’un littéral pour *date*.
   
-Par exemple, la combinaison année-mois-jour par défaut pour tout type de données **date** est 1900-01-01. L’instruction suivante a des arguments de partie de date pour *datepart*, un argument d’heure pour *date* et renvoie `1900, 1, 1, 1, 2`.
+Par exemple, la combinaison année-mois-jour par défaut pour tout type de données **date** est 1900-01-01. L’instruction suivante a des arguments de partie de date pour *datepart*, un argument d’heure pour *date* et retourne `1900, 1, 1, 1, 2`.
   
 ```sql
 SELECT DATEPART(year, '12:10:30.123')  

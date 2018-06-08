@@ -1,30 +1,28 @@
 ---
-title: "Notice légale (MySQLToSql) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Notice légale (MySQLToSql) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: d514c622-2c0d-4f41-80d2-66add4d113b1
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3d4fab1dfdc3c55a2f4aa7c534e681754e259998
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 485ebbb3446f725b544bcdc400a0b9d2a23189fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="legal-notice-mysqltosql"></a>Notice légale (MySQLToSql)
 Cette documentation, ainsi que les exemples d’applications qu’elle contient, est fournie à titre d’information uniquement et sans aucune garantie, expresse ou implicite. Les informations contenues dans cette documentation, notamment les URL et autres références à des sites web Internet, pourront faire l’objet de modifications sans préavis. L’utilisateur reconnaît assumer tous les risques liés à l’utilisation ou aux résultats de l’utilisation de cette documentation.  

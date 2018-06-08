@@ -1,16 +1,14 @@
 ---
-title: "STGeometryN (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: STGeometryN (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STGeometryN (geography Data Type)
@@ -19,16 +17,15 @@ dev_langs:
 helpviewer_keywords:
 - STGeometryN method
 ms.assetid: 53755f69-cd50-475b-b3b8-a1a9157cf03a
-caps.latest.revision: 
+caps.latest.revision: 15
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e92224c6ea0aae9ad389353a705f3c1c3c9aa21c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 18181e778e1b10f5c7f3cf531b3961efe7007d8a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stgeometryn-geography-data-type"></a>STGeometryN (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

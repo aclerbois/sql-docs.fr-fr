@@ -1,16 +1,14 @@
 ---
 title: Sys.query_store_runtime_stats (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/29/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SYS.QUERY_STORE_RUNTIME_STATS_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - query_store_runtime_stats catalog view
 - sys.query_store_runtime_stats catalog view
 ms.assetid: ccf7a57c-314b-450c-bd34-70749a02784a
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8cf026cb9beff10c6570a94bdd805aa2b78c0a4d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 85bb7aa5bf91f8d357556adac9e58fb6ab83df24
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysquerystoreruntimestats-transact-sql"></a>Sys.query_store_runtime_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -42,10 +40,10 @@ ms.lasthandoff: 11/21/2017
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**runtime_stats_id**|**bigint**|Identificateur de la ligne représentant les statistiques d’exécution d’exécution pour le **plan_id**, **execution_type** et **runtime_stats_interval_id**. Il est unique seulement pour les derniers intervalles de statistiques de runtime. Intervalle actuellement actif peut avoir plusieurs lignes représentant les statistiques d’exécution pour le plan référencé par **plan_id**, avec le type d’exécution représenté par **execution_type**. En règle générale, une ligne représente les statistiques d’exécution qui sont vidées sur le disque, tandis que les autres (s) représentent l’état en mémoire. Par conséquent, pour obtenir l’état réel pour chaque intervalle vous devez les métriques d’agrégation, le regroupement par **plan_id**, **execution_type** et **runtime_stats_interval_id**. |  
-|**plan_id**|**bigint**|Clé étrangère. Joint à [sys.query_store_plan &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-query-store-plan-transact-sql.md).|  
-|**runtime_stats_interval_id**|**bigint**|Clé étrangère. Joint à [sys.query_store_runtime_stats_interval &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-query-store-runtime-stats-interval-transact-sql.md).|  
+|**plan_id**|**bigint**|Clé étrangère. Joint à [sys.query_store_plan &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-plan-transact-sql.md).|  
+|**runtime_stats_interval_id**|**bigint**|Clé étrangère. Joint à [sys.query_store_runtime_stats_interval &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-runtime-stats-interval-transact-sql.md).|  
 |**execution_type**|**tinyint**|Détermine le type d’exécution de requête :<br /><br /> 0 – exécution normal (terminée avec succès)<br /><br /> 3 – initié par le client abandon de l’exécution<br /><br /> 4 - exception abandonnée de l’exécution|  
-|**execution_type_desc**|**nvarchar (128)**|Description textuelle du champ de type d’exécution :<br /><br /> 0 – standard<br /><br /> 3 – abandonnée<br /><br /> 4 - exception|  
+|**execution_type_desc**|**nvarchar(128)**|Description textuelle du champ de type d’exécution :<br /><br /> 0 – standard<br /><br /> 3 – abandonnée<br /><br /> 4 - exception|  
 |**first_execution_time**|**datetimeoffset**|Première exécution du plan de requête dans l’intervalle d’agrégation.|  
 |**last_execution_time**|**datetimeoffset**|Plan de la dernière heure d’exécution de la requête dans l’intervalle d’agrégation.|  
 |**count_executions**|**bigint**|Nombre total d’exécutions du plan de requête dans l’intervalle d’agrégation.|  
@@ -82,7 +80,7 @@ ms.lasthandoff: 11/21/2017
 |**avg_dop**|**float**|Moyenne DOP (degré de parallélisme) pour le plan de requête dans l’intervalle d’agrégation.|  
 |**last_dop**|**bigint**|La dernière DOP (degré de parallélisme) pour le plan de requête dans l’intervalle d’agrégation.|  
 |**min_dop**|**bigint**|DOP (degré de parallélisme) minimal pour le plan de requête dans l’intervalle d’agrégation.|  
-|**MAX_DOP**|**bigint**|DOP (degré de parallélisme) maximal pour le plan de requête dans l’intervalle d’agrégation.|  
+|**max_dop**|**bigint**|DOP (degré de parallélisme) maximal pour le plan de requête dans l’intervalle d’agrégation.|  
 |**stdev_dop**|**float**|Écart DOP (degré de parallélisme) pour le plan de requête dans l’intervalle d’agrégation.|  
 |**avg_query_max_used_memory**|**float**|Allocation de mémoire moyenne (signalée comme le nombre de pages de 8 Ko) pour le plan de requête dans l’intervalle d’agrégation. Toujours 0 pour les requêtes à l’aide en mode natif des procédures de mémoire optimisée compilées.|  
 |**last_query_max_used_memory**|**bigint**|Dernière allocation de mémoire (signalée comme le nombre de pages de 8 Ko) pour le plan de requête dans l’intervalle d’agrégation. Toujours 0 pour les requêtes à l’aide en mode natif des procédures de mémoire optimisée compilées.|  
@@ -100,19 +98,19 @@ ms.lasthandoff: 11/21/2017
 |**max_log_bytes_used**|**bigint**|Nombre maximal d’octets dans le journal de base de données utilisé par le plan de requête, dans l’intervalle d’agrégation.  S’applique **uniquement à la base de données SQL Azure**.| 
 |**stdev_log_bytes_used**|**float**|Écart type du nombre d’octets dans le journal de base de données utilisée par un plan de requête, dans l’intervalle d’agrégation.  S’applique **uniquement à la base de données SQL Azure**.|
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert le **VIEW DATABASE STATE** autorisation.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sys.database_query_store_options &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-database-query-store-options-transact-sql.md)   
- [Sys.query_context_settings &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-query-context-settings-transact-sql.md)   
- [Sys.query_store_plan &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-query-store-plan-transact-sql.md)   
- [Sys.query_store_query &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-query-store-query-transact-sql.md)   
- [Sys.query_store_query_text &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-query-store-query-text-transact-sql.md)   
+ [sys.database_query_store_options &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-query-store-options-transact-sql.md)   
+ [sys.query_context_settings &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-context-settings-transact-sql.md)   
+ [sys.query_store_plan &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-plan-transact-sql.md)   
+ [Sys.query_store_query &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-query-transact-sql.md)   
+ [sys.query_store_query_text &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-query-text-transact-sql.md)   
  [sys.query_store_wait_stats &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-wait-stats-transact-sql.md)  
- [Sys.query_store_runtime_stats_interval &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-query-store-runtime-stats-interval-transact-sql.md)   
+ [sys.query_store_runtime_stats_interval &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-query-store-runtime-stats-interval-transact-sql.md)   
  [Analyse des performances à l'aide du magasin de requêtes](../../relational-databases/performance/monitoring-performance-by-using-the-query-store.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [Magasin de requêtes stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/query-store-stored-procedures-transact-sql.md)  
+ [Procédures stockées du magasin de requête &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/query-store-stored-procedures-transact-sql.md)  
   
   

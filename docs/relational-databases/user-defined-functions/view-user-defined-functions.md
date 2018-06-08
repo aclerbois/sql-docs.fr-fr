@@ -1,17 +1,16 @@
 ---
-title: "Afficher les fonctions définies par l’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Afficher les fonctions définies par l’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.udfproperties.general.f1
 - sql13.swb.functionproperties.general.f1
@@ -21,20 +20,20 @@ helpviewer_keywords:
 - user-defined functions [SQL Server], viewing
 - status information [SQL Server], user-defined functions
 ms.assetid: a45dfab5-6384-4311-b935-2e23a70c5c10
-caps.latest.revision: 
+caps.latest.revision: 30
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ee41a96246e6808d214b4d421401bd2dff6c6718
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f994d29dd2f994c2931992c6f222d91b0ae0dbee
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-user-defined-functions"></a>Afficher les fonctions définies par l'utilisateur
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Vous pouvez obtenir des informations sur la définition ou les propriétés d'une fonction définie par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous devrez peut-être examiner la définition de la fonction pour comprendre comment les données de celle-ci sont issues des tables source ou pour connaître les données définies par la fonction.  
+  Vous pouvez obtenir des informations sur la définition ou les propriétés d'une fonction définie par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous devrez peut-être examiner la définition de la fonction pour comprendre comment les données de celle-ci sont issues des tables source ou pour connaître les données définies par la fonction.  
   
 > [!IMPORTANT]  
 >  Si vous modifiez le nom d'un objet auquel une fonction fait référence, vous devez modifier la fonction pour que son texte reflète le nouveau nom de l'objet. Par conséquent, avant de renommer un objet, affichez les dépendances de l'objet pour savoir si des fonctions peuvent être concernées par la modification projetée.  

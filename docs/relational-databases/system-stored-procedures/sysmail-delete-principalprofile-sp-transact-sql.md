@@ -1,16 +1,14 @@
 ---
-title: sysmail_delete_principalprofile_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_delete_principalprofile_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_delete_principalprofile_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_delete_principalprofile_sp
 ms.assetid: 8fc14700-e17a-4073-9a96-7fc23e775c69
-caps.latest.revision: 
+caps.latest.revision: 43
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 204daab0d90b050237d864c23729cf2544d68fe4
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 6f1f7fc964f5be9e045614f7a49c7f5fec194537
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmaildeleteprincipalprofilesp-transact-sql"></a>sysmail_delete_principalprofile_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,16 +44,16 @@ sysmail_delete_principalprofile_sp  { [ @principal_id = ] principal_id | [ @prin
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@principal_id** = ] *principal_id*  
+ [ **@principal_id** =] *principal_id*  
  Est l’ID de l’utilisateur de base de données ou d’un rôle dans le **msdb** base de données pour l’association à supprimer. *principal_id* est **int**, avec NULL comme valeur par défaut. Pour rendre un profil public en profil privé, fournissez l’identificateur principal **0** ou le nom principal **'public'**. Soit *principal_id* ou *principal_name* doit être spécifié.  
   
- [ **@principal_name** = ] **'***principal_name***'**  
+ [ **@principal_name** =] **'***principal_name***'**  
  Est le nom de l’utilisateur de base de données ou d’un rôle dans le **msdb** base de données pour l’association à supprimer. *principal_name* est **sysname**, avec NULL comme valeur par défaut. Pour rendre un profil public en profil privé, fournissez l’identificateur principal **0** ou le nom principal **'public'**. Soit *principal_id* ou *principal_name* doit être spécifié.  
   
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  Identificateur du profil pour l'association à supprimer. *profile_id* est **int**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* doit être spécifié.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du profil pour l'association à supprimer. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* doit être spécifié.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -65,7 +62,7 @@ sysmail_delete_principalprofile_sp  { [ @principal_id = ] principal_id | [ @prin
 ## <a name="remarks"></a>Notes  
  Pour rendre un profil public en profil privé, fournissez **'public'** pour le nom principal ou **0** pour l’id du principal.  
   
- Soyez prudent lorsque vous supprimez des autorisations pour le profil privé par défaut d'un utilisateur ou pour le profil public par défaut. Si aucun profil par défaut n’est disponible, **sp_send_dbmail** exige que le nom d’un profil en tant qu’argument. Par conséquent, la suppression d’un profil par défaut peut provoquer des appels à **sp_send_dbmail** échec. Pour plus d’informations, consultez [sp_send_dbmail &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-send-dbmail-transact-sql.md).  
+ Soyez prudent lorsque vous supprimez des autorisations pour le profil privé par défaut d'un utilisateur ou pour le profil public par défaut. Si aucun profil par défaut n’est disponible, **sp_send_dbmail** exige que le nom d’un profil en tant qu’argument. Par conséquent, la suppression d’un profil par défaut peut provoquer des appels à **sp_send_dbmail** échec. Pour plus d’informations, consultez [sp_send_dbmail &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-send-dbmail-transact-sql.md).  
   
  La procédure stockée **sysmail_delete_principalprofile_sp** est dans le **msdb** de base de données et est détenue par le **dbo** schéma. La procédure doit être exécutée avec un nom en trois parties si la base de données actuelle n’est pas **msdb**.  
   
@@ -84,6 +81,6 @@ EXECUTE msdb.dbo.sysmail_delete_principalprofile_sp
 ## <a name="see-also"></a>Voir aussi  
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

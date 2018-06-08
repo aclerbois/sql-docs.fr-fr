@@ -5,12 +5,11 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology: drivers
-ms.topic: article
+ms.technology: connectivity
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -22,12 +21,11 @@ caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 27ac2cc8b7a10d421296987db230cdde33384203
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: d2c2aa317f9d4ff810cba13fbb315ce090997583
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="referencing-the-ado-libraries-in-a-visual-basic-6-application"></a>Référencer les bibliothèques ADO dans une Application Visual Basic 6
 Pour importer les bibliothèques ADO dans une application Microsoft Visual Basic 6, vous devez définir une référence dans le projet Visual Basic.  
@@ -51,7 +49,7 @@ Pour importer les bibliothèques ADO dans une application Microsoft Visual Basic
   
 -   *msado27.tlb*, bibliothèque de types 2.7 ADO  
   
--   *msado26.tlb*, ADO 2.6 Type Library  
+-   *msado26.tlb*, bibliothèque de types 2.6 ADO  
   
 -   *Msado25.tlb*, bibliothèque de types 2,5 ADO  
   

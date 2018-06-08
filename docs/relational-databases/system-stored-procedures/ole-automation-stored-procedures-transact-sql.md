@@ -1,16 +1,14 @@
 ---
-title: "(Transact-SQL) des procédures stockées OLE Automation | Documents Microsoft"
-ms.custom: 
+title: (Transact-SQL) des procédures stockées OLE Automation | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - system stored procedures [SQL Server], OLE Automation
 - OLE Automation [SQL Server], stored procedures
 ms.assetid: ff16a833-01fe-4877-8aa6-55b72603ec2e
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fd6464e7631d502cbb24eadb7dd0f5a2590d30e4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7127d3593f72760c104bc8622cef02bfa4527a4c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="ole-automation-stored-procedures-transact-sql"></a>Procédures stockées OLE Automation (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

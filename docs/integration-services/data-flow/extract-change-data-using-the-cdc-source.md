@@ -1,28 +1,26 @@
 ---
-title: "Extraire des données modifiées à l’aide de la source de capture de données modifiées | Microsoft Docs"
-ms.custom: 
+title: Extraire des données modifiées à l’aide de la source de capture de données modifiées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 604fbafb-15fa-4d11-8487-77d7b626eed8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 545f7593878688f8b0d792410e363c738460fd90
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 23bb38ca1c57b230ac7f0e86d2216d6b31d487fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extract-change-data-using-the-cdc-source"></a>Extraire des données modifiées à l'aide de la source de capture de données modifiées
   Pour pouvoir ajouter et configurer une source CDC, le package doit inclure au moins une tâche de flux de données et une tache de contrôle de capture de données modifiées.  

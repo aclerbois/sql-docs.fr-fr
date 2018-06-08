@@ -1,16 +1,15 @@
 ---
 title: sp_dropmergearticle (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 05/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dropmergearticle
@@ -18,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dropmergearticle
 ms.assetid: 5ef1fbf7-c03d-4488-9ab2-64aae296fa4f
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 902a28f31abdc9dd501c6352acd4b2bee4042fd0
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: adcb52b18b12c61f8ea0154d668e000c9ca47020
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdropmergearticle-transact-sql"></a>sp_dropmergearticle (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -82,7 +80,7 @@ sp_dropmergearticle [ @publication= ] 'publication'
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  **sp_dropmergearticle** est utilisé dans la réplication de fusion. Pour plus d’informations sur la suppression des articles, consultez [ajouter et supprimer des Articles de Publications existantes](../../relational-databases/replication/publish/add-articles-to-and-drop-articles-from-existing-publications.md).  
   
  L’exécution de **sp_dropmergearticle** pour supprimer un article d’une publication ne supprime pas l’objet à partir de la base de données de publication ou de l’objet correspondant de la base de données d’abonnement. Utilisez `DROP <object>` pour supprimer manuellement ces objets le cas échéant.  
@@ -90,7 +88,7 @@ sp_dropmergearticle [ @publication= ] 'publication'
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_dropmergearticle**.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
 ```sql  
 DECLARE @publication AS sysname;  
@@ -171,7 +169,7 @@ GO
 ## <a name="see-also"></a>Voir aussi  
  [Supprimer un Article](../../relational-databases/replication/publish/delete-an-article.md)   
  [Ajouter et supprimer des articles de publications existantes](../../relational-databases/replication/publish/add-articles-to-and-drop-articles-from-existing-publications.md)   
- [sp_addmergearticle &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md)   
+ [sp_addmergearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md)   
  [sp_changemergearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergearticle-transact-sql.md)   
  [sp_helpmergearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergearticle-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  

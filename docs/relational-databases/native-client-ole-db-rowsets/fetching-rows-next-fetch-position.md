@@ -1,15 +1,14 @@
 ---
-title: "Prochaine Position d’extraction | Documents Microsoft"
-ms.custom: 
+title: Prochaine Position d’extraction | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-rowsets
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - fetching rows
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - next fetch position
 - rowsets [OLE DB], fetching
 ms.assetid: 9ef74b3f-c9c0-492f-9b93-d65738a61abd
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 59b22ab2522f606eaf8ac53aa32c634cf2c19fdb
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0a53c1e289d6c8d52bac2e3f2d73e4ac5cb6251b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetching-rows---next-fetch-position"></a>Lignes de l’extraction - prochaine Position d’extraction
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

@@ -1,29 +1,22 @@
 ---
-title: "Surveiller l’application à l’aide de vues du système (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: d6e34c16-12ba-4a6f-80a7-391bca5ba534
-caps.latest.revision: "8"
-ms.openlocfilehash: 17845f9be4a3b6c40573403d2d314c8802b71015
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Analyse avec les vues système - système de plateforme Analytique | Documents Microsoft
+description: Cet article répertorie les vues système que vous pouvez utiliser pour l’analyse de l’application de système de plateforme de l’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 363e18441d95884b025de2ec07f0fed276852eb0
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="monitor-the-appliance-by-using-system-views"></a>Surveiller l’application à l’aide de vues système
-Cette rubrique répertorie les vues système que vous pouvez utiliser pour l’analyse de SQL Server PDW.  
+# <a name="monitor-the-appliance-with-system-views---analytics-platform-system"></a>Surveiller le matériel avec les vues système - système de plateforme Analytique
+Cet article répertorie les vues système que vous pouvez utiliser pour l’analyse de SQL Server PDW.  
   
 ## <a name="to-monitor-the-appliance-by-using-system-views"></a>Pour surveiller l’application à l’aide de vues système  
 SQL Server PDW inclut des vues système complète qui vous permettent d’obtenir des informations détaillées sur le contrôle d’intégrité de l’équipement, état et les performances. Ce tableau fournit des liens vers des vues système qui peuvent être utilisés pour chaque fonctionnalité d’analyse.  
@@ -42,5 +35,5 @@ SQL Server PDW inclut des vues système complète qui vous permettent d’obteni
   
 ## <a name="see-also"></a>Voir aussi  
 <!-- MISSING LINKS [Common Metadata Query Examples &#40;SQL Server PDW&#41;](../sqlpdw/common-metadata-query-examples-sql-server-pdw.md)  -->  
-[Surveillance de l’appliance &#40; Système de plateforme Analytique &#41;](appliance-monitoring.md)  
+[Surveillance de l’appliance &#40;Analytique plate-forme système&#41;](appliance-monitoring.md)  
   

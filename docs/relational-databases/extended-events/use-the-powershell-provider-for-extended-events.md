@@ -1,33 +1,29 @@
 ---
-title: "Utiliser le fournisseur PowerShell pour les événements étendus | Microsoft Docs"
-ms.custom: 
+title: Utiliser le fournisseur PowerShell pour les événements étendus | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - PowerShell [SQL Server], xevent
 - extended events [SQL Server], PowerShell
 - PowerShell [SQL Server], extended events
 ms.assetid: 0b10016f-a479-4444-a484-46cb4677cf64
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e5accd33da019a93fa731bd48ce187a053aef21
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 099144c72ae9020e635ba36cbf37dadd6dc1826a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-powershell-provider-for-extended-events"></a>Utiliser le fournisseur PowerShell pour les événements étendus
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

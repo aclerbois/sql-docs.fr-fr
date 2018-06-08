@@ -1,30 +1,27 @@
 ---
-title: "Scénarios d’utilisation du Magasin des requêtes | Microsoft Docs"
-ms.custom: 
+title: Scénarios d’utilisation du Magasin des requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Query Store, usage scenarios
 ms.assetid: f5309285-ce93-472c-944b-9014dc8f001d
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c0484bb78d863bbbbbb9a2ea096c858c6e3f06af
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 757903a8fa8e396d87737bea6b909271bc544848
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="query-store-usage-scenarios"></a>Scénarios d’utilisation du Magasin des requêtes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -37,7 +34,7 @@ ms.lasthandoff: 02/03/2018
   
 -   Test A/B  
   
--   Maintenir la stabilité des performances durant la mise à niveau vers une version plus récente [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
+-   Maintenir la stabilité des performances lors de la mise à niveau vers une version plus récente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
   
 -   Identifier et améliorer les charges de travail ad hoc  
   

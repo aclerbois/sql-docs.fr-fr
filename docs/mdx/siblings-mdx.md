@@ -1,30 +1,20 @@
 ---
-title: "Frères (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: SIBLINGS
-dev_langs: kbMDX
-helpviewer_keywords: Siblings function
-ms.assetid: 33e63808-f07e-44f7-8dfa-4dd9fd89ec82
-caps.latest.revision: "29"
-author: Minewiskan
+title: Frères (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: c7eee2d7b0e0f6118103f62687eac40c4d7882bb
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 9f292a67116fad324a3a4b2706698febc7713f59
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582221"
 ---
 # <a name="siblings-mdx"></a>Siblings (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,7 +32,7 @@ Member_Expression.Siblings
  *Argument*  
  Expression MDX (Multidimensional Expressions) valide qui retourne un membre.  
   
-### <a name="example"></a> Exemple  
+### <a name="example"></a>Exemple  
  L'exemple ci-dessous retourne la mesure par défaut des frères du mois de mars 2003, soit les mois de janvier, février et mars 2003 inclus.  
   
 ```  
@@ -51,6 +41,6 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

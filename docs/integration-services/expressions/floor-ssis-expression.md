@@ -1,31 +1,29 @@
 ---
 title: FLOOR (expression SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - largest integer less than or equal to expression
 - FLOOR function [SSIS]
 ms.assetid: 168084db-badd-40f2-87b4-1f5bc45c3e24
-caps.latest.revision: 
+caps.latest.revision: 33
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 69e498a3c182cb15f1acf53cc16720088af9b65f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 3cef2f4fd7de76e5b07ae5e5f79cb1a5b868e4bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="floor-ssis-expression"></a>FLOOR (expression SSIS)
   Renvoie l'entier le plus élevé inférieur ou égal à une expression numérique.  

@@ -1,30 +1,20 @@
 ---
 title: Intersect (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: INTERSECT
-dev_langs: kbMDX
-helpviewer_keywords: Intersect function
-ms.assetid: 0de8fbb4-e2db-480c-86f1-2abbbcfdb1d8
-caps.latest.revision: "31"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: d073e4bc1916720224b7b355b00e23c35430b86a
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 7acc509891dd1c975ad819bd904e840e369f0d4b
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578521"
 ---
 # <a name="intersect-mdx"></a>Intersect (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,12 +35,12 @@ Intersect(Set_Expression1 , Set_Expression2 [ , ALL ] )
  *Set_Expression2*  
  Une expression MDX (Multidimensional Expressions) valide qui retourne un jeu.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **Intersect** fonction retourne l’intersection de deux jeux. Par défaut, cette fonction supprime les doublons des deux ensembles avant l'intersection. Les deux ensembles spécifiés doivent avoir le même dimensionnement.  
   
  Le paramètre facultatif **tous les** indicateur conserve les doublons. Si **tous les** est spécifié, le **Intersect** fonction entre en intersection avec les éléments qui comme d’habitude et que l’intersection de chaque doublon dans le premier jeu qui a un doublon correspondant dans le deuxième jeu. Les deux ensembles spécifiés doivent avoir le même dimensionnement.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  La requête suivante retourne les années 2003 et 2004, les deux membres qui apparaissent dans les deux ensembles spécifiés :  
   
  `SELECT`  
@@ -84,6 +74,6 @@ Intersect(Set_Expression1 , Set_Expression2 [ , ALL ] )
  `[Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

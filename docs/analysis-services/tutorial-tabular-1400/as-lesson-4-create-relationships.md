@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 4 : créer des relations | Documents Microsoft"
-description: "Décrit comment créer des relations dans le projet du didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 4 : créer des relations | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 2776649b049254e27851a9d4ce95e8d6dea81067
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 564126e1de4a8019778e33718b48462f633ae232
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-relationships"></a>Créer des relations
 
@@ -78,11 +70,11 @@ Avant de procéder à la création de votre modèle, vous devez vérifier les re
 
 Dans la vue de diagramme, notez un numéro sur les lignes qui affichent la relation entre les tables, un astérisque et une flèche.
 
-![as-lesson4-line](../tutorial-tabular-1400/media/as-lesson4-line.png)
+![en tant que ligne de lesson4](../tutorial-tabular-1400/media/as-lesson4-line.png)
 
 La flèche indique la direction du filtre. L’astérisque indique que cette table est la *nombreux* côté de la cardinalité de la relation et l’autre contient cette table est la *un* côté de la relation. Si vous avez besoin modifier une relation ; par exemple, modifiez la direction du filtrage de la relation ou cardinalité, double-cliquez sur la ligne de relation pour ouvrir la boîte de dialogue Modifier la relation.
 
-![as-lesson4-edit](../tutorial-tabular-1400/media/as-lesson4-edit.png)
+![en tant que lesson4-modifier](../tutorial-tabular-1400/media/as-lesson4-edit.png)
 
 Ces fonctionnalités sont destinées à la modélisation des données avancées et sortent du cadre de ce didacticiel. Pour plus d’informations, consultez [bidirectionnelles entre les filtres pour les modèles tabulaires dans Analysis Services](../tabular-models/bi-directional-cross-filters-tabular-models-analysis-services.md).
 
@@ -94,7 +86,7 @@ Dans certains cas, vous devrez peut-être créer des relations supplémentaires 
 
     Une ligne pleine apparaît et indique que vous avez créé une relation active entre la **OrderDate** colonne dans la **Internet Sales** table et le **Date** colonne dans la **Date** table. 
   
-      ![as-lesson4-new](../tutorial-tabular-1400/media/as-lesson4-new.png) 
+      ![en tant que-lesson4-nouveau](../tutorial-tabular-1400/media/as-lesson4-new.png) 
   
     > [!NOTE]  
     > Lorsque vous créez des relations, la direction de la cardinalité et de filtre entre la table primaire et de la table de recherche associée est automatiquement sélectionnée.  
@@ -105,7 +97,7 @@ Dans certains cas, vous devrez peut-être créer des relations supplémentaires 
   
 3.  Enfin, créez une relation de plus. Dans le **FactInternetSales** table, cliquez et maintenez sur le **ShipDate** colonne, puis faites glisser le curseur à la **Date** colonne dans la **DimDate** de table et relâchez.  
     
-     ![as-lesson4-newinactive](../tutorial-tabular-1400/media/as-lesson4-newinactive.png)
+     ![en tant que newinactive de lesson4](../tutorial-tabular-1400/media/as-lesson4-newinactive.png)
   
 ## <a name="whats-next"></a>Quelle est l’étape suivante ?
 

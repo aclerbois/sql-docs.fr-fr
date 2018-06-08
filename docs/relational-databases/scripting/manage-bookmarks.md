@@ -1,35 +1,33 @@
 ---
-title: "Gérer les signets | Microsoft Docs"
-ms.custom: 
+title: Gérer les signets | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - VS.BookmarkWindow
 helpviewer_keywords:
 - bookmarks [SQL Server Management Studio]
 ms.assetid: 67cc3fd6-3238-4c58-a3ec-2d3b0438143a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 933f5b57a1c6a5b8516ec9ca8985c800b3fa36b7
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: f0098e4a027587dcb6d8b07d4b8c59bfdf53d76e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="manage-bookmarks"></a>Gérer les signets
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Lorsque vous travaillez dans un éditeur de code, la fenêtre **Signets** vous permet de créer des liens vers des lignes de code spécifiques au sein de votre document. Vous pouvez afficher cette fenêtre à partir du menu **Affichage** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Lorsque vous travaillez dans un éditeur de code, la fenêtre **Signets** vous permet de créer des liens vers des lignes de code spécifiques au sein de votre document. Vous pouvez afficher cette fenêtre à partir du menu **Affichage** .  
   
  Pour créer des signets et naviguer parmi ceux-ci, cliquez sur les boutons situés dans la barre d’outils de l’ **Éditeur de texte** et en haut de la fenêtre **Signets** . Vous pouvez ajouter et supprimer des signets, activer ou désactiver des signets, ainsi qu'organiser les signets dans des dossiers. Certaines commandes sont également disponibles à partir du menu contextuel de la fenêtre **Signets** . Pour ajouter ou supprimer un signet, placez le point d’insertion sur la ligne de votre choix dans l’Éditeur, puis cliquez sur **Activer/Désactiver le signet**. Pour activer un signet, cochez la case correspondante dans la fenêtre **Signets** ; pour désactiver (sans supprimer) un signet, décochez sa case.  
   

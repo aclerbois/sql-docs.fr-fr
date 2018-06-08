@@ -1,34 +1,19 @@
 ---
-title: "Propriétés du Pool de threads | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- PriorityRatio property
-- threads [Analysis Services]
-- MinThreads property
-- NumThreads property
-- MaxThreads property
-- Concurrency property
-ms.assetid: e2697bb6-6d3f-4621-b9fd-575ac39c2185
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés du Pool de threads | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9b7cf85d5e9c8be15a74d99c1e4181b0e206d869
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 34a3387a8792555188b2e0879b99ce62e70070ea
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="thread-pool-properties"></a>Propriétés du pool de threads
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

@@ -1,30 +1,29 @@
 ---
-title: "Méthode executeUpdate (java.lang.String, int[]) | Documents Microsoft"
-ms.custom: 
+title: Méthode executeUpdate (java.lang.String, int[]) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerStatement.executeUpdate (java.lang.String, int[])
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerStatement.executeUpdate (java.lang.String, int[])
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 7b3d5b60-4285-4047-b13e-106754ca0d98
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7f821cb347157e7f6eb400ed8f530035ba81d494
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 6e116268305f78d9a70435728a84d2989dc1c82b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executeupdate-method-javalangstring-int"></a>Méthode executeUpdate (java.lang.String, int[])
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -40,7 +39,7 @@ public final int executeUpdate(java.lang.String sql,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *SQL*  
+ *sql*  
   
  A **chaîne** qui contient une instruction SQL.  
   
@@ -60,7 +59,7 @@ public final int executeUpdate(java.lang.String sql,
  Si l’exécution d’une procédure stockée entraîne un nombre de mises à jour qui est supérieur à un, ou qui génère plusieurs jeux de résultats, utilisez le [exécuter](../../../connect/jdbc/reference/execute-method-sqlserverstatement.md) méthode à exécuter la procédure stockée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode executeUpdate &#40; SQLServerStatement &#41;](../../../connect/jdbc/reference/executeupdate-method-sqlserverstatement.md)   
+ [Méthode executeUpdate &#40;SQLServerStatement&#41;](../../../connect/jdbc/reference/executeupdate-method-sqlserverstatement.md)   
  [Membres de SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-members.md)   
  [SQLServerStatement, classe](../../../connect/jdbc/reference/sqlserverstatement-class.md)  
   

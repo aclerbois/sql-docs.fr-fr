@@ -1,16 +1,14 @@
 ---
 title: SET ARITHIGNORE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SET ARITHIGNORE
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - ARITHIGNORE option
 - divide-by-zero errors
 ms.assetid: 71b2c2a5-c83a-4dfe-8469-237987a6e503
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8229ccdae1e3074bf8f726a9dfdfcc4e52b8df5e
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 29709a1f372adbeaee35c061aefe6e13dd061f2f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-arithignore-transact-sql"></a>SET ARITHIGNORE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -58,7 +56,7 @@ SET ARITHIGNORE OFF
 ```
 
 ## <a name="remarks"></a>Notes   
- Le paramètre SET ARITHIGNORE contrôle uniquement la situation où un message d'erreur est renvoyé. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] renvoie une valeur NULL dans un calcul qui comprend une erreur de dépassement de capacité ou de division par zéro, indépendamment de ce paramètre. Le paramètre SET ARITHABORT peut être utilisé pour déterminer si la requête est achevée. Cette valeur n'affecte pas les erreurs survenant durant des instructions INSERT, UPDATE et DELETE.  
+ Le paramètre SET ARITHIGNORE contrôle uniquement la situation où un message d'erreur est renvoyé. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] renvoie une valeur NULL dans un calcul qui comprend une erreur de dépassement de capacité ou de division par zéro, indépendamment de ce paramètre. Le paramètre SET ARITHABORT peut être utilisée pour déterminer si la requête est achevée. Cette valeur n'affecte pas les erreurs survenant durant des instructions INSERT, UPDATE et DELETE.  
   
  Si la valeur de SET ARITHABORT ou de SET ARITHIGNORE est définie à OFF et que SET ANSI_WARNINGS a la valeur ON, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] renvoie malgré tout un message d'erreur quand il rencontre une erreur de division par zéro ou de dépassement de capacité.  
   

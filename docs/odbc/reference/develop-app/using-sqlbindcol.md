@@ -1,31 +1,28 @@
 ---
-title: "À l’aide de SQLBindCol | Documents Microsoft"
-ms.custom: 
+title: À l’aide de SQLBindCol | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - result sets [ODBC], binding columns
 - binding columns [ODBC]
 - SQLBindCol function [ODBC], using
 ms.assetid: 17277ab3-33ad-44d3-a81c-a26b5e338512
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bd0406efdc485eadef6c90552a634099166f7b08
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d4ccd4607e16b244279e0910fe32047f19e2e6d0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-sqlbindcol"></a>À l’aide de SQLBindCol
 L’application lie les colonnes en appelant **SQLBindCol**. Cette fonction est liée à une colonne à la fois. Avec elle, l’application spécifie les éléments suivants :  
@@ -40,7 +37,7 @@ L’application lie les colonnes en appelant **SQLBindCol**. Cette fonction est 
   
  Par exemple, le code suivant lie des variables pour les colonnes vendeur et CustID. Données pour les colonnes seront retournées dans *vendeur* et *CustID*. Étant donné que *vendeur* est une mémoire tampon de caractères, l’application spécifie sa longueur en octets (11) afin que le pilote peut déterminer s’il faut tronquer les données. La longueur d’octet de retourné de titre, ou si sa valeur est NULL, seront retournées dans *SalesPersonLenOrInd*.  
   
- Étant donné que *CustID* est une variable de type entier et a résolu longueur, il est inutile de spécifier sa longueur en octets ; le pilote part du principe qu’il est **sizeof (**SQLUINTEGER**)**. La longueur en octets du client retourné ID de données, ou si sa valeur est NULL, seront retournées dans *CustIDInd*. Notez que l’application s’intéresse uniquement si le salaire est NULL, car la longueur d’octet est toujours **sizeof (**SQLUINTEGER**)**.  
+ Étant donné que *CustID* est une variable de type entier et a résolu longueur, il est inutile de spécifier sa longueur en octets ; le pilote part du principe qu’il est **sizeof (** SQLUINTEGER **)**. La longueur en octets du client retourné ID de données, ou si sa valeur est NULL, seront retournées dans *CustIDInd*. Notez que l’application s’intéresse uniquement si le salaire est NULL, car la longueur d’octet est toujours **sizeof (** SQLUINTEGER **)**.  
   
 ```  
 SQLCHAR       SalesPerson[11];  

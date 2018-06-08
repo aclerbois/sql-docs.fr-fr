@@ -1,30 +1,27 @@
 ---
-title: "À l’aide d’Applications 16 bits avec les pilotes 32 bits | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’Applications 16 bits avec les pilotes 32 bits | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC drivers [ODBC], 16-bit applications
 - 16-bit applications with 32-bit drivers [ODBC]
 ms.assetid: 68feb3b7-c01a-4f42-8df9-f9c182d89325
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 95ff3ce88daf4a508145c28ea194a97b9cbbbabe
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f8be9b55137ebbfd0da4a4194b3f29ea57fb89d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-16-bit-applications-with-32-bit-drivers"></a>À l’aide d’Applications 16 bits avec les pilotes 32 bits
 > [!IMPORTANT]  
@@ -35,7 +32,7 @@ ms.lasthandoff: 12/21/2017
 ## <a name="architecture"></a>Architecture  
  L’illustration suivante montre comment aux applications 16 bits communiquent avec les pilotes 32 bits. Entre le Gestionnaire de pilotes 16 bits et les pilotes 32 bits sont génériques thunking DLL qui convertissent les appels ODBC 16 bits en appels ODBC 32 bits.  
   
- ![Comment 16 &#45; applications bits communiquent avec les 32 &#45; bit pilotes](../../odbc/microsoft/media/sdka2.gif "sdka2")  
+ ![Comment 16&#45;applications bits communiquent avec 32&#45;bit pilotes](../../odbc/microsoft/media/sdka2.gif "sdka2")  
   
 > [!NOTE]  
 >  Chaque fois qu’une application 16 bits interagit avec un pilote 32 bits, le Gestionnaire de pilotes 32 bits retourne toujours « 2.0 » en tant que version d’ODBC pris en charge par le pilote.  
@@ -45,14 +42,14 @@ ms.lasthandoff: 12/21/2017
   
  L’illustration suivante montre comment une application 16 bits appelle une DLL d’installation du pilote 32 bits. Entre le programme d’installation de 16 bits DLL et le pilote 32 bits DLL d’installation est une générique thunking DLL qui convertit les appels de DLL de programme d’installation de 16 bits aux appels de DLL de programme d’installation 32 bits.  
   
- ![Comment un 16 &#45; bit application appelle une 32 &#45; bits des DLL d’installation du pilote](../../odbc/microsoft/media/sdka3.gif "sdka3")  
+ ![Comment un 16&#45;bit application appelle une 32&#45;bits d’installation du pilote DLL](../../odbc/microsoft/media/sdka3.gif "sdka3")  
   
  Dans Windows on Windows (thunking de 16 bits en 32 bits), une DLL de conversion supplémentaire nommée convertit Ds32gt.dll valeurs d’argument de 16 bits transmis via un programme d’installation 32 bits DLL sauvegarder sur 16 bits.  
   
 ## <a name="components"></a>Components  
  Le composant ODBC du kit SDK MDAC 2.8 SP1 inclut les fichiers suivants pour l’exécution d’applications 16 bits avec les pilotes 32 bits. Ces composants sont dans le répertoire \Redist.  
   
-|Nom de fichier|Description|  
+|Nom de fichier| Description|  
 |---------------|-----------------|  
 |Odbc16gt.dll|16 bits générique thunking DLL ODBC|  
 |ODBC32GT.dll|32 bits générique thunking DLL ODBC|  
@@ -64,7 +61,7 @@ ms.lasthandoff: 12/21/2017
   
  En outre, les fichiers suivants, ainsi que le Gestionnaire de pilote 2.10 de ODBC 16 bits, qui ne font pas partie d’ODBC 3.51, sont requis par et doivent être installés avec l’application 16 bits.  
   
-|Nom de fichier|Description|  
+|Nom de fichier| Description|  
 |---------------|-----------------|  
 |ODBC.dll|Gestionnaire de pilotes 16 bits|  
 |ODBCINST.dll|programme d’installation de 16 bits DLL|  

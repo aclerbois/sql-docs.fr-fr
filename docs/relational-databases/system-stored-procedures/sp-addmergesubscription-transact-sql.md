@@ -1,16 +1,15 @@
 ---
 title: sp_addmergesubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergesubscription
 ms.assetid: a191d817-0132-49ff-93ca-76f13e609b38
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f5db2e319393afd6d3751b5eeb6ee58fd4d84fd6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8d5b8cf744909969166b2d391604735c1a2a7db4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergesubscription-transact-sql"></a>sp_addmergesubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -91,7 +89,7 @@ sp_addmergesubscription [ @publication= ] 'publication'
 |Valeur| Description|  
 |-----------|-----------------|  
 |**local** (par défaut)|Abonné connu uniquement sur le serveur de publication.|  
-|**global**|Abonné connu sur tous les serveurs.|  
+|**Global**|Abonné connu sur tous les serveurs.|  
   
  Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures, les abonnements locaux sont des abonnements clients, et les abonnements globaux sont des abonnements serveur.  
   
@@ -197,9 +195,9 @@ sp_addmergesubscription [ @publication= ] 'publication'
  Autorise la résolution interactive des conflits pour tous les articles autorisant la résolution interactive. *use_interactive_resolver* est **nvarchar (5)**, avec FALSE comme valeur par défaut.  
   
  [  **@merge_job_name=** ] **'***merge_job_name***'**  
- Le  *@merge_job_name*  paramètre est déconseillé et ne peut pas être définie. *merge_job_name* est **sysname**, avec NULL comme valeur par défaut.  
+ Le *@merge_job_name* paramètre est déconseillé et ne peut pas être définie. *merge_job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
- [  **@hostname** =] **'***nom d’hôte***'**  
+ [ **@hostname**=] **'***nom d’hôte***'**  
  Remplace la valeur retournée par [HOST_NAME](../../t-sql/functions/host-name-transact-sql.md) lorsque cette fonction est utilisée dans la clause WHERE d’un filtre paramétré. *Nom d’hôte* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!IMPORTANT]  
@@ -211,21 +209,21 @@ sp_addmergesubscription [ @publication= ] 'publication'
 ## <a name="remarks"></a>Notes  
  **sp_addmergesubscription** est utilisé dans la réplication de fusion.  
   
- Lorsque **sp_addmergesubscription** est exécutée par un membre de la **sysadmin** rôle de serveur pour créer un abonnement par émission de données fixe le travail de l’Agent de fusion est implicitement créé et s’exécute sous le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service Agent. Nous vous recommandons d’exécuter [sp_addmergepushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md) et spécifiez les informations d’identification d’un compte Windows différent, spécifique à l’agent pour  **@job_login**  et  **@job_password** . Pour plus d’informations, voir [Replication Agent Security Model](../../relational-databases/replication/security/replication-agent-security-model.md).  
+ Lorsque **sp_addmergesubscription** est exécutée par un membre de la **sysadmin** rôle de serveur pour créer un abonnement par émission de données fixe le travail de l’Agent de fusion est implicitement créé et s’exécute sous le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compte de service Agent. Nous vous recommandons d’exécuter [sp_addmergepushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md) et spécifiez les informations d’identification d’un compte Windows différent, spécifique à l’agent pour **@job_login** et **@job_password**. Pour plus d’informations, voir [Replication Agent Security Model](../../relational-databases/replication/security/replication-agent-security-model.md).  
   
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_addmergepushsubscriptionagent](../../relational-databases/replication/codesnippet/tsql/sp-addmergesubscription-_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addmergesubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Create a Push Subscription](../../relational-databases/replication/create-a-push-subscription.md)   
- [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md)   
+ [Créer un abonnement par extraction](../../relational-databases/replication/create-a-pull-subscription.md)   
  [Résolution interactive des conflits](../../relational-databases/replication/merge/advanced-merge-replication-conflict-interactive-resolution.md)   
  [S’abonner à des publications](../../relational-databases/replication/subscribe-to-publications.md)   
- [sp_changemergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-changemergesubscription-transact-sql.md)   
- [sp_dropmergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropmergesubscription-transact-sql.md)   
- [sp_helpmergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpmergesubscription-transact-sql.md)  
+ [sp_changemergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergesubscription-transact-sql.md)   
+ [sp_dropmergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropmergesubscription-transact-sql.md)   
+ [sp_helpmergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergesubscription-transact-sql.md)  
   
   

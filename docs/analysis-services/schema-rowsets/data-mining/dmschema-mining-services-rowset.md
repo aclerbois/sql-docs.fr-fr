@@ -1,42 +1,31 @@
 ---
 title: Ensemble de lignes DMSCHEMA_MINING_SERVICES | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-apiname: DMSCHEMA_MINING_SERVICES
-apitype: NA
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DMSCHEMA_MINING_SERVICES rowset
-ms.assetid: 4a672f2f-d637-4def-a572-c18556f83d34
-caps.latest.revision: "35"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 87fdcfb688d6e6b7305ef3a46b0de7800e6c4668
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0cf94fa4fb22e38ac52513d2dba52500df3bb9d5
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="dmschemaminingservices-rowset"></a>Ensemble de lignes DMSCHEMA_MINING_SERVICES
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Fournit une description de chaque algorithme d’exploration de données qui prend en charge par le fournisseur.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Fournit la description de chaque algorithme d'exploration de données que le fournisseur prend en charge.  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  Le **DMSCHEMA_MINING_SERVICES** ensemble de lignes contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Description|  
+|Nom de colonne|Indicateur de type| Description|  
 |-----------------|--------------------|-----------------|  
 |**SERVICE_NAME**|**DBTYPE_WSTR**|Nom de l'algorithme. Cette colonne est spécifique au fournisseur.|  
-|**SERVICE_TYPE_ID**|**DBTYPE_UI4**|Cette colonne contient une bitmap qui décrit le service d'exploration de données. [!INCLUDE[msCoName](../../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] remplit cette colonne avec l’une des valeurs suivantes :<br /><br /> **DM_SERVICETYPE_CLASSIFICATION** (**1**)<br /><br /> **DM_SERVICETYPE_CLUSTERING** (**2**)|  
+|**SERVICE_TYPE_ID**|**DBTYPE_UI4**|Cette colonne contient une bitmap qui décrit le service d'exploration de données. [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] remplit cette colonne avec l’une des valeurs suivantes :<br /><br /> **DM_SERVICETYPE_CLASSIFICATION** (**1**)<br /><br /> **DM_SERVICETYPE_CLUSTERING** (**2**)|  
 |**SERVICE_DISPLAY_NAME**|**DBTYPE_WSTR**|Nom complet localisable de l'algorithme.|  
 |**SERVICE_GUID**|**DBTYPE_GUID**|GUID de l'algorithme.|  
 |**DESCRIPTION**|**DBTYPE_WSTR**|Description conviviale de l'algorithme.|  
@@ -67,10 +56,10 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|**SERVICE_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**SERVICE_TYPE_ID**|**DBTYPE_UI4**|Facultatif.|  
+|**SERVICE_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**SERVICE_TYPE_ID**|**DBTYPE_UI4**|Ce paramètre est facultatif.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Ensembles de lignes de schéma de données d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

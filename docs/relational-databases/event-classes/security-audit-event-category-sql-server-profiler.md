@@ -1,36 +1,32 @@
 ---
-title: "Audit de sécurité, catégorie d’événements (SQL Server Profiler) | Microsoft Docs"
-ms.custom: 
+title: Audit de sécurité, catégorie d’événements (SQL Server Profiler) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Security Audit event category [SQL Server]
 - event classes [SQL Server], Security Audit event category
 - SQL Server event classes, Security Audit event category
 ms.assetid: e64f7695-2f23-4adb-b83d-52f147cc1a2f
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b93277d27d4a797fc5ca5924794a7631673445f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 9f99a32daae5f79517fe0fdca82ac8ee9dd7e04e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="security-audit-event-category-sql-server-profiler"></a>Audit de sécurité, catégorie d'événements (SQL Server Profiler)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La catégorie d’événements d’ **audit de sécurité** contient, comme son nom l’indique, les événements liés à l’activité d’audit de la sécurité.  
+  La catégorie d’événements d’ **audit de sécurité** contient, comme son nom l’indique, les événements liés à l’activité d’audit de la sécurité.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   

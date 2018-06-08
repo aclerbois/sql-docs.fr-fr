@@ -1,30 +1,27 @@
 ---
-title: "Utilisation des tableaux de paramètres | Documents Microsoft"
-ms.custom: 
+title: Utilisation des tableaux de paramètres | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - arrays of parameter values [ODBC]
 - parameter arrays [ODBC]
 ms.assetid: 5a28be88-e171-4f5b-bf4d-543c4383c869
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: da3d5662b8eb85f994142aea0e4dff237fd9852b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 39ace7c9efebf23c25099ca1864debaae3296bc8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-arrays-of-parameters"></a>Utilisation des tableaux de paramètres
 Pour utiliser les tableaux de paramètres, l’application appelle **SQLSetStmtAttr** avec un *attribut* argument de SQL_ATTR_PARAMSET_SIZE pour spécifier le nombre de jeux de paramètres. Il appelle **SQLSetStmtAttr** avec un *attribut* argument de SQL_ATTR_PARAMS_PROCESSED_PTR pour spécifier l’adresse d’une variable dans laquelle le pilote peut retourner le nombre de jeux de paramètres traités, y compris les jeux de l’erreur. Il appelle **SQLSetStmtAttr** avec un *attribut* argument de SQL_ATTR_PARAM_STATUS_PTR pour pointer vers un tableau dans lequel retourner les informations d’état pour chaque ligne de valeurs de paramètre. Le pilote stocke ces adresses dans la structure que de l’instruction il tient à jour.  

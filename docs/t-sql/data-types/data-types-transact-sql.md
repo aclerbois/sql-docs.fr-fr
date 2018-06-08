@@ -1,15 +1,14 @@
 ---
-title: "Types de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Types de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 9/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - data types [SQL Server]
 - data types [SQL Server], about data types
 ms.assetid: a54f7373-b247-4d61-8fb8-7f2ec7a8d0a4
-caps.latest.revision: 
+caps.latest.revision: 45
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 397d96212851ed52020a0ac0e951e282edf6c087
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7e811528caf2df4930dc619c8c7eed8438906ab6
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708847"
 ---
 # <a name="data-types-transact-sql"></a>Types de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]

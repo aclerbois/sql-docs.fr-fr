@@ -1,29 +1,28 @@
 ---
 title: Stocker des documents JSON dans SQL Server ou SQL Database | Microsoft Docs
 ms.description: This article describes why and how to store and index JSON documents in SQL Server or SQL Database, and how to optimize queries over the JSON documents.
-ms.custom: 
+ms.custom: ''
 ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+ms.assetid: ''
+caps.latest.revision: ''
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9042b6cf7cb7298e5f327ab96c77cf625eee3872
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 330e4d3bf4bf0059fc713d0b8969505e00d775c3
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34689197"
 ---
 # <a name="store-json-documents-in-sql-server-or-sql-database"></a>Stocker des documents JSON dans SQL Server ou SQL Database
 SQL Server et Azure SQL Database ont des fonctions JSON natives qui vous permettent d’analyser des documents JSON à l’aide du langage SQL standard. Vous pouvez désormais stocker des documents JSON dans SQL Server ou SQL Database et interroger les données JSON comme dans une base de données NoSQL. Cet article explique comment stocker des documents JSON dans SQL Server ou SQL Database.
@@ -61,7 +60,7 @@ SELECT TOP 100 JSON_VALUE(log, ‘$.severity’), AVG( CAST( JSON_VALUE(log,’$
  WHERE CAST( JSON_VALUE(log,’$.date’) as datetime) > @datetime
  GROUP BY JSON_VALUE(log, ‘$.severity’)
  HAVING AVG( CAST( JSON_VALUE(log,’$.duration’) as float) ) > 100
- ORDER BY CAST( JSON_VALUE(log,’$.duration’) as float) ) DESC
+ ORDER BY AVG( CAST( JSON_VALUE(log,’$.duration’) as float) ) DESC
 ```
 
 La possibilité d’utiliser *n’importe quelle* clause de requête et fonction T-SQL pour interroger des documents JSON est un réel avantage. SQL Server et SQL Database n’introduisent aucune contrainte dans les requêtes que vous pouvez utiliser pour analyser des documents JSON. Vous pouvez extraire des valeurs d’un document JSON avec la fonction `JSON_VALUE` et les utiliser dans la requête comme toute autre valeur.

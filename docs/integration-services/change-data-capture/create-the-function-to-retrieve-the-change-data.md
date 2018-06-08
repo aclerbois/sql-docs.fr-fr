@@ -1,30 +1,28 @@
 ---
-title: "Créer la fonction de récupération des données modifiées | Microsoft Docs"
-ms.custom: 
+title: Créer la fonction de récupération des données modifiées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - incremental load [Integration Services],creating function
 ms.assetid: 55dd0946-bd67-4490-9971-12dfb5b9de94
-caps.latest.revision: 
+caps.latest.revision: 29
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f3e717ccf46cc7929c510229b19a16eb5a857487
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0c2305d2224147d463ef70fcb1b1055cf5751856
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-the-function-to-retrieve-the-change-data"></a>Créer la fonction de récupération des données modifiées
   Une fois que vous avez terminé le flux de contrôle d’un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] qui effectue un chargement incrémentiel des données modifiées, la tâche suivante consiste à créer une fonction table qui récupère les données modifiées. Vous ne devez créer cette fonction qu'une seule fois avant le premier chargement incrémentiel.  

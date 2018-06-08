@@ -1,31 +1,29 @@
 ---
-title: "Déterminer si une procédure stockée ou une table doit être déplacée vers l’OLTP en mémoire | Microsoft Docs"
-ms.custom: 
+title: Déterminer si une procédure stockée ou une table doit être déplacée vers l’OLTP en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 08/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Analyze, Migrate, Report
 - AMR
 ms.assetid: c1ef96f1-290d-4952-8369-2f49f27afee2
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: bc7be68ce57113f9629a5006024d44f41a98ad6b
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: aa4614d050266fc80dbc629c7e7f25a2c6e5bfb8
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="determining-if-a-table-or-stored-procedure-should-be-ported-to-in-memory-oltp"></a>Déterminer si un tableau ou une procédure stockée doit être déplacée vers l'OLTP en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

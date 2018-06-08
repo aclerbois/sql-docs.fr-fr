@@ -1,17 +1,16 @@
 ---
-title: "Configuration de la surface d’exposition | Microsoft Docs"
-ms.custom: 
+title: Configuration de la surface d’exposition | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - reducing attackable surface area
 - upgrading SQL Server, security
@@ -20,19 +19,19 @@ helpviewer_keywords:
 - attackable surface area [SQL Server]
 - installing SQL Server, security
 ms.assetid: f741169c-1453-4ad2-830b-bf2be27d712f
-caps.latest.revision: 
+caps.latest.revision: 79
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e16dac870c31a7d409189d29b84f88686a71db21
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 3adc1c1bdc8faf8f0f03c6fc78eb51352c05066a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="surface-area-configuration"></a>Configuration de la surface d'exposition
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Dans la configuration par défaut des nouvelles installations de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], de nombreuses fonctionnalités ne sont pas activées. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installe et démarre de manière sélective uniquement les principaux services et fonctionnalités, de manière à réduire le nombre de fonctionnalités qui peuvent être soumises à une attaque d'un utilisateur malveillant. Un administrateur système peut modifier ces valeurs par défaut au moment de l'installation, et également activer ou désactiver sélectivement les fonctionnalités d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]en cours d'exécution. En outre, certains composants peuvent ne pas être disponibles lors de la connexion à partir d'autres ordinateurs jusqu'à ce que les protocoles soient configurés.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Dans la configuration par défaut des nouvelles installations de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], de nombreuses fonctionnalités ne sont pas activées. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installe et démarre de manière sélective uniquement les principaux services et fonctionnalités, de manière à réduire le nombre de fonctionnalités qui peuvent être soumises à une attaque d'un utilisateur malveillant. Un administrateur système peut modifier ces valeurs par défaut au moment de l'installation, et également activer ou désactiver sélectivement les fonctionnalités d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]en cours d'exécution. En outre, certains composants peuvent ne pas être disponibles lors de la connexion à partir d'autres ordinateurs jusqu'à ce que les protocoles soient configurés.  
   
 > [!NOTE]  
 >  Contrairement aux nouvelles installations, aucun service ou fonctionnalité existant n'est désactivé durant une mise à niveau, mais des options de configuration de la surface d'exposition supplémentaires peuvent être appliquées une fois la mise à niveau terminée.  
@@ -77,7 +76,7 @@ ms.lasthandoff: 11/21/2017
 ## <a name="soap-and-service-broker-endpoints"></a>Points de terminaison SOAP et Service Broker  
  Pour désactiver des points de terminaison, utilisez la Gestion basée sur des stratégies. Pour créer et modifier les propriétés de points de terminaison, utilisez [CREATE ENDPOINT &#40;Transact-SQL&#41;](../../t-sql/statements/create-endpoint-transact-sql.md) et [ALTER ENDPOINT &#40;Transact-SQL&#41;](../../t-sql/statements/alter-endpoint-transact-sql.md).  
   
-## <a name="related-content"></a>Contenu connexe  
+## <a name="related-content"></a>Contenu associé  
  [Centre de sécurité pour le moteur de base de données SQL Server et la base de données SQL Azure](../../relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database.md)  
   
  [sp_configure &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md)  

@@ -3,14 +3,12 @@ title: Ensembles de lignes | Documents Microsoft
 description: Ensembles de lignes dans le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-rowsets
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,13 +19,12 @@ helpviewer_keywords:
 - rowsets [OLE DB]
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e795cc872345f93aeb15ec0f0c885a986e719665
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: d3f187118cd273712ed8145bbfef3af712091028
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rowsets"></a>Ensembles de lignes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -71,6 +68,6 @@ ms.lasthandoff: 03/30/2018
 -   [Mise à jour des données dans les ensembles de lignes](../../oledb/ole-db-rowsets/updating-data-in-rowsets.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote d’OLE DB pour SQL Server &#40;OLE DB&#41;](../../oledb/ole-db/oledb-driver-for-sql-server-ole-db.md)  
+ [Programmation OLE DB Driver pour SQL Server](../../oledb/ole-db/oledb-driver-for-sql-server-programming.md)  
   
   

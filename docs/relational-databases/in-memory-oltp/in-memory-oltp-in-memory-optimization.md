@@ -1,31 +1,30 @@
 ---
-title: "OLTP en mémoire (optimisation en mémoire) | Microsoft Docs"
-ms.custom: 
+title: OLTP en mémoire (optimisation en mémoire) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/22/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - In-Memory OLTP
 - memory-optimized tables
 ms.assetid: e1d03d74-2572-4a55-afd6-7edf0bc28bdb
-caps.latest.revision: 
+caps.latest.revision: 106
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 3403b3680edb3aa984def52b514d599c50852127
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 54fa82bd4f225847214211cf3549858bf9bf3182
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34707757"
 ---
 # <a name="in-memory-oltp-in-memory-optimization"></a>OLTP en mémoire (optimisation en mémoire)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -52,7 +51,7 @@ Pour une présentation plus détaillée de l’OLTP en mémoire et un examen des
 > [!NOTE]  
 >  **À votre tour d’essayer**  
 >   
->  La fonction OLTP en mémoire est disponible dans les bases de données SQL Azure Premium. Pour prendre en main l’OLTP en mémoire et Columnstore dans Azure SQL Database, consultez [Optimize Performance using In-Memory Technologies in SQL Database](https://azure.microsoft.com/documentation/articles/sql-database-in-memory/)(Optimiser les performances à l’aide des technologies en mémoire dans SQL Database).  
+>  L’OLTP en mémoire est disponible dans les pools élastiques et les bases de données SQL Azure des niveaux Premium et Critique pour l’entreprise. Pour prendre en main l’OLTP en mémoire et Columnstore dans Azure SQL Database, consultez [Optimize Performance using In-Memory Technologies in SQL Database](https://azure.microsoft.com/documentation/articles/sql-database-in-memory/)(Optimiser les performances à l’aide des technologies en mémoire dans SQL Database).  
   
 
 ## <a name="in-this-section"></a>Contenu de cette section  

@@ -1,16 +1,14 @@
 ---
-title: sp_post_msx_operation (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_post_msx_operation (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_post_msx_operation
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_post_msx_operation
 ms.assetid: 085deef8-2709-4da9-bb97-9ab32effdacf
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b54a5b8dbf5539adb2d87ef6a095f4f78f767aff
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 6f6d0dfc8c9a9925f7bf2fa84c4b9330b99c60c3
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sppostmsxoperation-transact-sql"></a>sp_post_msx_operation (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,28 +49,28 @@ sp_post_msx_operation
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@operation =**] **'***operation***'**  
+ [  **@operation =**] **'***opération***'**  
  Type de l'opération publiée. *opération*est **varchar(64)**, sans valeur par défaut. Opérations dépend de *object_type*.  
   
 |Type d'objet|Opération|  
 |-----------------|---------------|  
 |**JOB**|INSERT<br /><br /> UPDATE<br /><br /> DELETE<br /><br /> START<br /><br /> STOP|  
-|**SERVER**|RE-ENLIST<br /><br /> DEFECT<br /><br /> SYNC-TIME<br /><br /> SET-POLL|  
+|**SERVEUR**|RE-ENLIST<br /><br /> DEFECT<br /><br /> SYNC-TIME<br /><br /> SET-POLL|  
 |**PLANIFICATION**|INSERT<br /><br /> UPDATE<br /><br /> DELETE|  
   
- [ **@object_type =**] **'***object***'**  
+ [  **@object_type =**] **'***objet***'**  
  Type d'objet pour lequel l'opération doit être publiée. Les types valides sont **travail**, **SERVER**, et **planification**. *objet* est **varchar(64)**, avec une valeur par défaut **travail**.  
   
- [ **@job_id =**] *job_id*  
+ [  **@job_id =**] *job_id*  
  Numéro d'identification du travail auquel l'opération s'applique. *job_id* est **uniqueidentifier**, sans valeur par défaut. **0 x 00** indique tous les travaux. Si *objet* est **SERVER**, puis *job_id*n’est pas obligatoire.  
   
  [ **@specific_target_server =**] **'***target_server***'**  
  Nom du serveur cible auquel l'opération spécifiée s'applique. Si *job_id* est spécifié, mais *serveur_cible* n’est pas spécifié, les opérations sont publiées pour tous les serveurs cibles du travail. *serveur_cible* est **nvarchar (30)**, avec NULL comme valeur par défaut.  
   
- [ **@value =**] *value*  
+ [  **@value =**] *valeur*  
  Fréquence d'interrogation, en secondes. *value* est de type **int**, avec NULL comme valeur par défaut. Spécifiez ce paramètre uniquement si *opération* est **SET-POLL**.  
   
- [ **@schedule_uid=** ] *schedule_uid*  
+ [  **@schedule_uid=** ] *schedule_uid*  
  Identificateur unique de la planification à laquelle s'applique l'opération. *schedule_uid* est **uniqueidentifier**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

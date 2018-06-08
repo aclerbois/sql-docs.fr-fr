@@ -1,16 +1,13 @@
 ---
-title: sys.dm_tran_active_snapshot_database_transactions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_tran_active_snapshot_database_transactions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_tran_active_snapshot_database_transactions_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_tran_active_snapshot_database_transactions dynamic management view
 ms.assetid: 55b83f9c-da10-4e65-9846-f4ef3c0c0f36
-caps.latest.revision: 
+caps.latest.revision: 55
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd3b38057150bbc8768169c362ec643b13a30c14
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 761d9196100f97fe763aa5739d96d7f41373e59b
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmtranactivesnapshotdatabasetransactions-transact-sql"></a>sys.dm_tran_active_snapshot_database_transactions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -77,11 +74,11 @@ sys.dm_tran_active_snapshot_database_transactions
 |**elapsed_time_seconds**|**bigint**|Temps écoulé depuis que la transaction a obtenu son numéro de séquence.|  
 |**pdw_node_id**|**int**|**S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> L’identificateur du nœud qui se trouve sur cette distribution.|  
   
-## <a name="permissions"></a>Autorisations  
- Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert l’autorisation VIEW SERVER STATE sur le serveur.  
-  
- Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] niveaux Premium requiert l’autorisation VIEW DATABASE STATE dans la base de données. Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard et les niveaux de base nécessite le [!INCLUDE[ssSDS](../../includes/sssds-md.md)] compte d’administrateur.  
-  
+## <a name="permissions"></a>Autorisations
+
+Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+
 ## <a name="remarks"></a>Notes  
  **Sys.dm_tran_active_snapshot_database_transactions** enregistre les transactions qui sont affectées à un numéro de séquence de transaction (XSN). Ce numéro de séquence est attribué lorsque la transaction accède pour la première fois à la banque des versions. Dans une base de données qui est activée pour l'isolement d'instantané ou l'isolement de lecture validée avec le contrôle de version de ligne, les exemples indiquent à quel moment un numéro de séquence est attribué à une transaction :  
   
@@ -160,7 +157,7 @@ elapsed_time_seconds
 -   XSN-60 : Il s'agit de la seconde transaction exécutée avec le niveau d'isolement d'instantané. Le résultat affiche les mêmes informations que pour la transaction XSN-59.  
   
 ## <a name="see-also"></a>Voir aussi  
- [SET TRANSACTION ISOLATION LEVEL &#40; Transact-SQL &#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md)   
+ [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md)   
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
  [Fonctions et vues de gestion dynamique relatives aux transactions &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/transaction-related-dynamic-management-views-and-functions-transact-sql.md)  
   

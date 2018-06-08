@@ -3,14 +3,12 @@ title: Sessions | Documents Microsoft
 description: Sessions dans le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-data-source-objects
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -18,13 +16,12 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, sessions
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c3c0d94c31c298fa9840067c15c169cfb4e56b92
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: d5aed67da19db68097f57f689ad0a26692d75f63
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sessions"></a>Sessions
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -194,6 +191,6 @@ EXIT:
 >  Dans l’exemple précédent, le **IDBCreateCommand** interface est utilisée, car le **ICommand** interface implémente le **GetDBSession** (méthode), la seule méthode dans l’étendue ensemble de lignes ou de la commande qui permet à un objet déterminer la session à laquelle il a été créé. Par conséquent, un objet commande, et uniquement un objet commande, permet à une application de récupérer un pointeur d'objet source de données à partir duquel des sessions supplémentaires peuvent être créées.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objets Source de données &#40; OLE DB &#41;](../../oledb/ole-db-data-source-objects/data-source-objects-ole-db.md)  
+ [Objets Source de données & #40 ; OLE DB & #41 ;](../../oledb/ole-db-data-source-objects/data-source-objects-ole-db.md)  
   
   

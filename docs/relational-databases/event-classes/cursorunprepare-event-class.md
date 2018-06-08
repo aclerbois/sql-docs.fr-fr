@@ -1,34 +1,30 @@
 ---
-title: "CursorUnprepare, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: CursorUnprepare, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CursorUnprepare event class
 ms.assetid: 34055a2f-7d0f-4e13-a62e-7ee5b6c23b86
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 24953577a1b3b9ce071b5462dd7db4f8f255b65d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 11f11d824ccfcd5f6f569663bf13d19b9d96ce14
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="cursorunprepare-event-class"></a>CursorUnprepare (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **CursorUnprepare** fournit des informations sur les événements de non-préparation de curseur qui se produisent dans les curseurs de l’interface de programmation d’applications (API, Application Programming Interface). Ces événements se produisent quand le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] rejette un plan d’exécution.  
+  La classe d’événements **CursorUnprepare** fournit des informations sur les événements de non-préparation de curseur qui se produisent dans les curseurs de l’interface de programmation d’applications (API, Application Programming Interface). Ces événements se produisent quand le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] rejette un plan d’exécution.  
   
  Incluez la classe d’événements **CursorUnprepare** dans des traces qui enregistrent les performances des curseurs. Quand la classe d’événements **CursorUnprepare** est incluse dans une trace, l’importance de la charge induite dépend de la fréquence d’utilisation des curseurs sur la base de données pendant la trace. Si les curseurs sont largement utilisés, la trace peut altérer considérablement les performances.  
   

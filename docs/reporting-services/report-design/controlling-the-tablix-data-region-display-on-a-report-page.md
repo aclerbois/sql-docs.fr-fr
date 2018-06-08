@@ -1,27 +1,25 @@
 ---
-title: "Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport (Générateur de rapports version 3.0) | Microsoft Docs"
-ms.custom: 
+title: Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport (Générateur de rapports version 3.0) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f81c48cc-f038-4f57-988d-e9a3cbb46424
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 3a175f5a33591459b302919a2f8af72dee945551
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 05ebc27d8ca5ac641819e01c0e9cf3e5cbc27457
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="controlling-the-tablix-data-region-display-on-a-report-page"></a>Contrôle de l'affichage de la région de données de tableau matriciel sur une page de rapport
 Découvrez les propriétés que vous pouvez définir dans un rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] pour une région de données de table, de matrice ou de liste, pour modifier la façon dont elle apparaît quand vous affichez le rapport.  

@@ -1,30 +1,28 @@
 ---
-title: "Emplacement de l’agent &lt;nom_agent&gt; | Microsoft Docs"
-ms.custom: 
+title: Emplacement de l’agent &lt;nom_agent&gt; | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.newsubwizard.agentlocation.f1
 ms.assetid: dc664d80-fbe3-4586-aba8-a71fa62d14f0
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2af484091c650656a09f03b9547d005172b48696
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 0b6a53c2f0ec5973ce292ed8909e8c07a783ec48
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ltagentnamegt-agent-location"></a>Emplacement de l’agent &lt;nom_agent&gt;
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

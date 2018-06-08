@@ -2,29 +2,30 @@
 title: Importer un domaine à partir d’un fichier .dqs | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fabd88b0-22b3-4543-a993-6d5b202ded80
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 54a1d2f72e65b054336f27cf629a40fec7abaa15
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 37ad741fa01ebc8af4f123beef73aa66c9793fbe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-a-domain-from-a-dqs-file"></a>Importer un domaine à partir d'un fichier .dqs
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique explique comment importer un domaine à partir d'un fichier .dqs vers une base de connaissances existante dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Un fichier de données .dqs est créé en exportant un domaine ou une base de connaissances à partir de l'application [!INCLUDE[ssDQSClient](../includes/ssdqsclient-md.md)] . Un fichier de données .dqs est chiffré, et ne peut pas être affiché.  
   
  L'utilisation d'un fichier de données .dqs pour exporter un domaine d'une base de connaissances puis l'importer vers une autre base de connaissances simplifie le processus de génération de connaissances, et permet d'économiser aussi bien du temps que des efforts. Il vous permet de partager un domaine et ses connaissances avec d'autres, ce qui leur fait gagner du temps. Vous pouvez importer un domaine unique ou un domaine composite (contenant plusieurs domaines uniques). Un fichier .dqs contenant un domaine unique inclut toutes les données du domaine avec les propriétés de domaine, les valeurs et les données des règles, à l'exception des informations de données de référence mappées. Un fichier .dqs contenant un domaine composite inclut toutes les données du domaine composite, notamment toutes les données des domaines uniques contenus dans le domaine composite, ainsi que les propriétés, les relations de valeur et les règles du domaine composite, à l'exception des données de référence mappées. Les données publiées et non publiées seront importées.  

@@ -1,29 +1,19 @@
 ---
-title: "Définition d’une relation référencée | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 4a34ba52-e3b3-4e8a-8e55-73e0cd5a97bd
-caps.latest.revision: 
-author: Minewiskan
+title: Définition d’une relation référencée | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: f388389edcd3546f94bc120862e8933b3f790c7c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e7d27a648f91448cd6c53f34149851b255aa6aa2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-5-1---defining-a-referenced-relationship"></a>Leçon 5-1-définir une relation référencée
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]

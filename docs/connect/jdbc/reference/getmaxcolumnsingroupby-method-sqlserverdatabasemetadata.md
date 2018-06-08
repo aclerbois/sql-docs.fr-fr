@@ -1,30 +1,29 @@
 ---
-title: "Méthode getMaxColumnsInGroupBy (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getMaxColumnsInGroupBy (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getMaxColumnsInGroupBy
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getMaxColumnsInGroupBy
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: a59cfe98-c0f4-46ad-9243-62aa56855f1a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e723e2f14dafb1eb989c91c0e0e4f0be4a41320a
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: df70399a44c81e9f5ba379d2a2a3b722d2f9b592
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getmaxcolumnsingroupby-method-sqlserverdatabasemetadata"></a>Méthode getMaxColumnsInGroupBy (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

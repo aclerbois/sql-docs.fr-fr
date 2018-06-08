@@ -1,16 +1,14 @@
 ---
 title: FORMAT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - FORMAT_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - FORMAT function
 ms.assetid: dad6f24c-b8d9-4dbe-a561-9b167b8f20c8
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 46c7becb151b1942b411aefe337717172f207bb9
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: a0c157383e8e21d85c756d9fb64cd0b23bad6a33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="format-transact-sql"></a>FORMAT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -45,7 +42,7 @@ FORMAT ( value, format [, culture ] )
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *valeur*  
+ *value*  
  Expression d'un type de données pris en charge à mettre en forme. Pour obtenir la liste des types valides, consultez la table dans la section Notes ci-dessous.  
   
  *format*  

@@ -1,17 +1,15 @@
 ---
-title: "SortOrder, propriété (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: SortOrder, propriété (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Column::SortOrder
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - SortOrder property [ADOX]
 ms.assetid: 04510b19-9cb2-4895-b23b-f7790123eb04
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5505596de79392b6974afa8f1282008707da3309
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 60d4cbf5e3412a17e849313930992a2f3d8f30dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sortorder-property-adox"></a>SortOrder, propriété (ADOX)
 Indique l’ordre de tri pour la colonne (colonnes d’index uniquement).  

@@ -1,30 +1,29 @@
 ---
-title: "Méthode getString (int) (SQLServerResultSet) | Documents Microsoft"
-ms.custom: 
+title: Méthode getString (int) (SQLServerResultSet) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.getString (int)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.getString (int)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: bfa493c4-fe07-449b-b4d0-384e1a1fce48
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 677c6642a2eb9ab969b507c056c5c64a0aac95e4
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 51332e0e8d3b09723130585b770fff3d9d4b6e80
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getstring-method-int-sqlserverresultset"></a>Méthode getString (int) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -59,7 +58,7 @@ public java.lang.String getString(int columnIndex)
  Types définis par l’utilisateur sont retournés au format hexadécimal **chaîne** valeurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode getString &#40; SQLServerResultSet &#41;](../../../connect/jdbc/reference/getstring-method-sqlserverresultset.md)   
+ [Méthode getString &#40;SQLServerResultSet&#41;](../../../connect/jdbc/reference/getstring-method-sqlserverresultset.md)   
  [Membres de SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-members.md)   
  [SQLServerResultSet, classe](../../../connect/jdbc/reference/sqlserverresultset-class.md)  
   

@@ -1,33 +1,30 @@
 ---
-title: "Enregistrez et ouvrez l’exemple de méthodes (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Enregistrez et ouvrez l’exemple de méthodes (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Save method [ADO], VC++ example
 - Open method [ADO]
 ms.assetid: 334ae655-8cac-48e6-8d00-1d28f3436e1e
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b4ee952b2fb5f6f6fedcfd10f02aca0d692ed579
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 661dbe97eebfbe317f8258019e0fbf66704a5d28
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-and-open-methods-example-vc"></a>Enregistrez et ouvrez l’exemple de méthodes (VC ++)
 Ces trois exemples montrent comment les [enregistrer](../../../ado/reference/ado-api/save-method.md) et **ouvrir** méthodes peuvent être utilisés ensemble.  
@@ -269,5 +266,5 @@ bool FileExists() {
   
 ## <a name="see-also"></a>Voir aussi  
  [Open (méthode) (jeu d’enregistrements ADO)](../../../ado/reference/ado-api/open-method-ado-recordset.md)   
- [Recordset Object (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
+ [Objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
  [Save, méthode](../../../ado/reference/ado-api/save-method.md)

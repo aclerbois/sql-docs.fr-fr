@@ -1,16 +1,12 @@
 ---
 title: Sys.dm_io_backup_tapes (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_io_backup_tapes
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_io_backup_tapes dynamic management view
 ms.assetid: 2e27489e-cf69-4a89-9036-77723ac3de66
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 80f1fdab524409956921aa9087177b2ef9d8ae7f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 93a8e8d5c0d123bd8d226e43926f727bf2cc81e4
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmiobackuptapes-transact-sql"></a>sys.dm_io_backup_tapes (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +45,7 @@ ms.lasthandoff: 02/03/2018
 |**spid**|**int**|ID de la session. Il identifie l'utilisateur de la bande. Autorise la valeur NULL.|  
 |**commande**|**int**|Commande qui effectue la sauvegarde. Autorise la valeur NULL.|  
 |**command_desc**|**nvarchar(120)**|Description de la commande. Autorise la valeur NULL.|  
-|**media_family_id**|**int**|Index de la famille de supports (1... *n* ),  *n*  est le nombre de familles de supports dans le jeu de supports. Autorise la valeur NULL.|  
+|**media_family_id**|**int**|Index de la famille de supports (1... *n*), *n* est le nombre de familles de supports dans le jeu de supports. Autorise la valeur NULL.|  
 |**media_set_name**|**nvarchar (256)**|Nom du jeu de supports (s'il existe) tel qu'il a été spécifié par l'option MEDIANAME lors de la création du jeu de supports). Autorise la valeur NULL.|  
 |**media_set_guid**|**uniqueidentifier**|Identificateur qui identifie spécifiquement le jeu de supports. Autorise la valeur NULL.|  
 |**media_sequence_number**|**int**|Index du volume au sein d’une famille de supports (1... *n*). Autorise la valeur NULL.|  
@@ -64,7 +59,7 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [J’ai O liés les fonctions et vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/i-o-related-dynamic-management-views-and-functions-transact-sql.md)  
+ [I, O les fonctions et vues de gestion dynamique liées &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/i-o-related-dynamic-management-views-and-functions-transact-sql.md)  
   
   
 

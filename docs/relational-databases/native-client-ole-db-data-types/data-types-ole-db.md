@@ -1,15 +1,14 @@
 ---
-title: "Types de données (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Types de données (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - mapping data types [OLE DB]
@@ -17,16 +16,17 @@ helpviewer_keywords:
 - data types [OLE DB]
 - OLE DB, data types
 ms.assetid: 15953706-f0d1-45f5-a2eb-a8bd36e1a5fc
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fb332997d78315e6ba15fb8c001469a824a78a38
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a1c63f2b2cfd5ee348cfcb9d21ed64abefbe9dcd
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707867"
 ---
 # <a name="data-types-ole-db"></a>Types de données (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -36,9 +36,9 @@ ms.lasthandoff: 01/25/2018
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Mappage des types de données dans les ensembles de lignes et de paramètres](../../relational-databases/native-client-ole-db-data-types/data-type-mapping-in-rowsets-and-parameters.md)  
+-   [Mappage de types de données dans les ensembles de lignes et les paramètres](../../relational-databases/native-client-ole-db-data-types/data-type-mapping-in-rowsets-and-parameters.md)  
   
--   [Mappage des types de données dans ITableDefinition](../../relational-databases/native-client-ole-db-data-types/data-type-mapping-in-itabledefinition.md)  
+-   [Mappage de types de données dans ITableDefinition](../../relational-databases/native-client-ole-db-data-types/data-type-mapping-in-itabledefinition.md)  
   
 -   [Structure SSVARIANT](../../relational-databases/native-client-ole-db-data-types/ssvariant-structure.md)  
   

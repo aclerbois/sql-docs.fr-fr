@@ -1,34 +1,32 @@
 ---
 title: Interdit les Types et membres dans System.dll | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - host protection attributes [CLR integration]
 - common language runtime [SQL Server], host protection attributes
 ms.assetid: 27b550cd-dd3d-4263-bd97-0f0dec1215fd
-caps.latest.revision: 
+caps.latest.revision: 20
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c73ed099485d7abb79e5894fb88199051575c55a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2e811d7670f7913ee131c94abb2dd681020c02bd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disallowed-types-and-members-in-systemdll"></a>Types et membres dans System.dll interdits
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]programmation de l’intégration (CLR) langage commun n’autorise pas l’utilisation d’un type ou un membre qui a un **HostProtectionAttribute** qui spécifie un **System.Security.Permissions.HostProtectionResource** énumération avec la valeur **ExternalProcessMgmt**, **ExternalThreading**, **MayLeakOnAbort**, **SecurityInfrastructure**, **SelfAffectingProcessMgmnt**, **SelfAffectingThreading**, **SharedState**, **synchronisation**, ou **l’interface utilisateur**. Le tableau suivant répertorie les membres et les types de l'assembly System.dll dont les valeurs d'attribut de protection de l'hôte (HPA) sont interdites.  
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] programmation de l’intégration (CLR) langage commun n’autorise pas l’utilisation d’un type ou un membre qui a un **HostProtectionAttribute** qui spécifie un **System.Security.Permissions.HostProtectionResource** énumération avec la valeur **ExternalProcessMgmt**, **ExternalThreading**, **MayLeakOnAbort**, **SecurityInfrastructure**, **SelfAffectingProcessMgmnt**, **SelfAffectingThreading**, **SharedState**, **synchronisation**, ou **L’interface utilisateur**. Le tableau suivant répertorie les membres et les types de l'assembly System.dll dont les valeurs d'attribut de protection de l'hôte (HPA) sont interdites.  
   
 > [!NOTE]  
 >  Cette liste a été générée à partir des assemblys pris en charge. Pour plus d’informations, consultez [prise en charge des bibliothèques .NET Framework](../../relational-databases/clr-integration/database-objects/supported-net-framework-libraries.md).  

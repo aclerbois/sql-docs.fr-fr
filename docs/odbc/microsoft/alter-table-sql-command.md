@@ -1,28 +1,26 @@
 ---
 title: ALTER TABLE - commande SQL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: alter table [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- alter table [ODBC]
 ms.assetid: 3a01a291-f4d9-43bc-a725-5a95546ff364
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1bf0849ee91170b09ab927363dafda28bff474c2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 255ce0a4e9e06f2cdd20dd8d1e707b7f7823e6bd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-table---sql-command"></a>ALTER TABLE - commande SQL
 Par programme modifie la structure d’une table.  
@@ -81,7 +79,7 @@ ALTER TABLE TableName1
   
  *nFieldWidth* et *nPrecision* sont ignorés pour D, G, I, L, M, P, T et Y types. Par défaut, *nPrecision* n’est zéro (aucun décimales) si *nPrecision* n’est pas inclus pour les types B, F ou N.  
   
- NULL &#124; NON NULL  
+ NULL &#124; NOT NULL  
  Autorise ou empêche des valeurs null dans le champ.  
   
  Si vous omettez la valeur NULL et NOT NULL, la valeur actuelle de SET NULL détermine si les valeurs null sont autorisées dans le champ. Toutefois, si vous omettez la valeur NULL et non NULL et incluez la clé primaire ou une clause UNIQUE, le paramètre actuel de la valeur NULL est ignoré et le champ n’est pas NULL par défaut.  
@@ -185,7 +183,7 @@ CREATE TABLE mytable (char1 C(10), char2 C(10) NOCPTRANS,;
  NOVALIDATE  
  Spécifie que Visual FoxPro autorise les modifications à apporter à la structure de la table ; ces modifications peuvent violer l’intégrité des données dans la table. Par défaut, Visual FoxPro empêche l’apport de modifications qui enfreignent l’intégrité des données dans la table de ALTER TABLE. Inclure NOVALIDATE pour remplacer ce comportement par défaut.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  ALTER TABLE peut être utilisée pour modifier la structure d’une table qui n’a pas été ajoutée à une base de données. Toutefois, Visual FoxPro génère une erreur si vous incluez par défaut, FOREIGN KEY, PRIMARY KEY, les références, ou de clauses SET lors de la modification d’une table indépendante.  
   
  ALTER TABLE peut reconstruire la table par la création d’un nouvel en-tête de table et ajout d’enregistrements à l’en-tête du tableau. Par exemple, la modification d’un champ de type ou de largeur peut entraîner la table à reconstruire.  

@@ -1,30 +1,29 @@
 ---
 title: Azure Blob Destination | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- integration-services
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.afpblobdest.f1
 - sql14.dts.designer.afpblobdest.f1
 ms.assetid: 820a1e7a-7182-4c7b-ab56-5b4097a7e042
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 13d8b271c758d9424f99fe2a366ea7d1fd34d034
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 9dd315ef8952bf80db7548e61f2dbccb09d5b457
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-blob-destination"></a>Destination d’objet blob Azure
  Le composant **Destination d’objet blob Azure** permet à un package SSIS d’écrire des données dans un objet blob Azure. Les formats de fichier pris en charge sont CSV et AVRO. 

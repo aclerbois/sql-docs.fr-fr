@@ -1,16 +1,14 @@
 ---
 title: CREATE FULLTEXT INDEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/05/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - FULLTEXT_INDEX_TSQL
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - index creation [SQL Server], CREATE FULLTEXT INDEX statement
 - CREATE FULLTEXT INDEX statement
 ms.assetid: 8b80390f-5f8b-4e66-9bcc-cabd653c19fd
-caps.latest.revision: 
+caps.latest.revision: 110
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 47808b1214157b393cae5cfcc193f5b482b53601
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6a3855b496d1c7986279f345ff42c2933a6d67b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-fulltext-index-transact-sql"></a>CREATE FULLTEXT INDEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -83,7 +80,7 @@ CREATE FULLTEXT INDEX ON table_name
  CREATE FULLTEXT INDEX ON *table_name* (*column_name1* […], *column_name2* […]) …  
   
  TYPE COLUMN *type_column_name*  
- Spécifie le nom d’une colonne de table, *type_column_name*, utilisée pour contenir le type de document d’un document **varbinary(max)** ou **image**. Cette colonne, appelée colonne de type, contient une extension de fichier fourni par l'utilisateur (.doc, .pdf, .xls, et ainsi de suite). La colonne doit être de type **char**, **nchar**, **varchar**ou **nvarchar**.  
+ Spécifie le nom d’une colonne de table, *type_column_name*, utilisée pour contenir le type de document d’un document **varbinary(max)** ou **image**. Cette colonne,appelée colonne de type, contient une extension de fichier fourni par l'utilisateur (.doc, .pdf, .xls, et ainsi de suite). La colonne doit être de type **char**, **nchar**, **varchar**ou **nvarchar**.  
   
  Spécifiez TYPE COLUMN *type_column_name* seulement si *column_name* spécifie une colonne **varbinary(max)** ou **image**, dans laquelle les données sont stockées sous forme de données binaires ; dans le cas contraire, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur.  
   
@@ -97,7 +94,7 @@ CREATE FULLTEXT INDEX ON table_name
   
  Si la valeur *language_term* est spécifié, la langue qu’elle représente est utilisée pour indexer les données stockées dans les colonnes **char**, **nchar**, **varchar**, **nvarchar**, **text** et **ntext**. Cette langue est la langue par défaut utilisée au moment de la requête si *language_term* n’est pas spécifié comme élément d’un prédicat de texte intégral sur la colonne.  
   
- Quand il est spécifié sous forme de chaîne, *language_term* correspond à la valeur de la colonne alias dans la table système syslanguages. La chaîne doit être placée entre guillemets simples, comme dans **'***language_term***'**. Quand il est spécifié sous la forme d’un entier, *language_term* est le LCID réel qui identifie la langue. Quand il est spécifié sous la forme d’une valeur hexadécimale, *language_term* est 0x suivi de la valeur hexadécimale du LCID. La valeur hexadécimale peut comporter un maximum de huit chiffres, zéros non significatifs inclus.  
+ Quand il est spécifié sous forme de chaîne, *language_term* correspond à la valeur de la colonne alias dans la table système syslanguages. La chaîne doit être placée entre guillemets simples, comme dans **'***language_term***'**. Quand il est spécifié sous la forme d’un entier, *language_term* est le LCID qui identifie la langue. Quand il est spécifié sous la forme d’une valeur hexadécimale, *language_term* est 0x suivi de la valeur hexadécimale du LCID. La valeur hexadécimale peut comporter un maximum de huit chiffres, zéros non significatifs inclus.  
   
  Si la valeur est au format DBCS (jeu de caractères codés sur deux octets), [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] la convertit en Unicode.  
   
@@ -173,7 +170,7 @@ CREATE FULLTEXT INDEX ON table_name
 |Suivi des modifications|WITH NO POPULATION|Résultats|  
 |---------------------|------------------------|------------|  
 |Non activé|Non spécifié|Un remplissage complet est effectué sur l'index.|  
-|Non activé|Spécifié|Le remplissage de l'index n'a pas lieu tant qu'une instruction ALTER FULLTEXT INDEX...START POPULATION n'a pas été émise.|  
+|Non activé|Specified|Le remplissage de l'index n'a pas lieu tant qu'une instruction ALTER FULLTEXT INDEX...START POPULATION n'a pas été émise.|  
 |Activée.|Spécifié|Une erreur est levée et l'index n'est pas modifié.|  
 |Activé|Non spécifié|Un remplissage complet est effectué sur l'index.|  
   

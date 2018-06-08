@@ -1,32 +1,30 @@
 ---
-title: "Regénérer des procédures transactionnelles personnalisées pour refléter des modifications de schéma | Microsoft Docs"
-ms.custom: 
+title: Regénérer des procédures transactionnelles personnalisées pour refléter des modifications de schéma | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - custom procedures [SQL Server replication]
 - transactional replication, replicating schema changes
 - schemas [SQL Server replication], replicating changes
 ms.assetid: ccf68a13-e748-4455-8168-90e6d2868098
-caps.latest.revision: 
+caps.latest.revision: 29
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 048c2c183a3d62646e5f7e45bb996fcc25f5b087
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 56a5d8692355a6dc3b9de0f6f21afc85d61d47c7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transactional-articles---regenerate-to-reflect-schema-changes"></a>Articles transactionnels - Regénérer pour refléter les modifications de schéma
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

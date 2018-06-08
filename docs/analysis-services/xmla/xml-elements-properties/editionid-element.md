@@ -1,31 +1,24 @@
 ---
-title: "Élément EditionId | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément EditionId | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-ms.assetid: f2d1cc7f-8ab5-4b73-a128-ce58d9bb7f96
-caps.latest.revision: "5"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4a62a7373e152ffb8b15a2c5847137f096de23e9
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: e9402541be96be9e529dcd56a168e8ab17dc21ae
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576541"
 ---
 # <a name="editionid-element"></a>Élément EditionId
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient le code d’identificateur numérique édition du parent [élément Server (ASSL)](../../../analysis-services/scripting/objects/server-element-assl.md) élément.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient le code d’identificateur numérique édition du parent [élément Server (ASSL)](../../../analysis-services/scripting/objects/server-element-assl.md) élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,7 +31,7 @@ ms.lasthandoff: 01/08/2018
 </Server>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -53,9 +46,9 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Server, élément (ASSL)](../../../analysis-services/scripting/objects/server-element-assl.md)|  
 |Éléments enfants|None|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
   
-## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

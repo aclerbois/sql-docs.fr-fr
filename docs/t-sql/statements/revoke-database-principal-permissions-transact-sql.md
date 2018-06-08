@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -21,18 +19,17 @@ helpviewer_keywords:
 - REVOKE statement, users
 - application roles [SQL Server], permissions
 ms.assetid: c45e1086-c25b-48bb-a764-4a893e983db2
-caps.latest.revision: 
+caps.latest.revision: 30
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c02242a5428a6ae7c2426efd517809f8e374da4e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 9bf99bd6b44d7325060271b0900cbcec7508f628
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-database-principal-permissions-transact-sql"></a>REVOKE - Révoquer des autorisations sur un principal de base de données (Transact-SQL)
+# <a name="revoke-database-principal-permissions-transact-sql"></a>REVOKE – révocation d'autorisations de principal de base de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Permet de révoquer des autorisations accordées ou refusées sur un utilisateur de base de données, un rôle de base de données ou un rôle d'application.  
@@ -75,7 +72,7 @@ REVOKE [ GRANT OPTION FOR ] permission [ ,...n ]
  Spécifie la classe et le nom du rôle sur lequel l'autorisation doit être révoquée. Le qualificateur d’étendue (**::**) est obligatoire.  
   
  APPLICATION ROLE ::*application_role*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]
   
  Spécifie la classe et le nom du rôle d'application sur lequel l'autorisation doit être révoquée. Le qualificateur d’étendue (**::**) est obligatoire.  
   
@@ -100,27 +97,27 @@ REVOKE [ GRANT OPTION FOR ] permission [ ,...n ]
  Spécifie un rôle de base de données.  
   
  *Application_role*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]
   
  Spécifie un rôle d'application.  
   
  *Database_user_mapped_to_Windows_User*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie un utilisateur de base de données mappé sur un utilisateur Windows.  
   
  *Database_user_mapped_to_Windows_Group*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie un utilisateur de base de données mappé à un groupe Windows.  
   
  *Database_user_mapped_to_certificate*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie un utilisateur de base de données mappé sur un certificat.  
   
  *Database_user_mapped_to_asymmetric_key*  
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie un utilisateur de base de données mappé à une clé asymétrique.  
   
@@ -161,7 +158,7 @@ REVOKE [ GRANT OPTION FOR ] permission [ ,...n ]
 ## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation CONTROL sur le principal spécifié ou une autorisation plus élevée qui implique l'autorisation CONTROL.  
   
- Les détenteurs de l’autorisation CONTROL sur une base de données, tels que les membres du rôle de base de données fixe **db_owner**, peuvent accorder une autorisation sur n’importe quel élément sécurisable de la base de données.  
+ Les bénéficiaires de l’autorisation CONTROL sur une base de données, comme les membres du rôle de base de données fixe **db_owner**, peuvent accorder n’importe quelle autorisation sur n’importe quel sécurisable de la base de données.  
   
 ## <a name="examples"></a>Exemples  
   
@@ -187,7 +184,7 @@ GO
 ### <a name="c-revoking-impersonate-permission-on-a-user-from-an-application-role"></a>C. Révocation d'une autorisation IMPERSONATE sur un utilisateur à partir d'un rôle d'application  
  Dans l'exemple ci-dessous, l'autorisation `IMPERSONATE` sur l'utilisateur `HamithaL` est révoquée pour le rôle d'application [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] `AccountsPayable17`.  
   
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].
+**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)]
   
 ```  
 USE AdventureWorks2012;  

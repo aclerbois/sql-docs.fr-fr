@@ -1,28 +1,27 @@
 ---
-title: "Didacticiel : rapport cartographique (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : rapport cartographique (Générateur de rapports) | Microsoft Docs'
+ms.custom: ''
 ms.date: 08/31/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: 8d831356-7efa-40cc-ae95-383b3eecf833
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 5e5cbb6a1ac4cb9edf2baff1eb68c341c8187872
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 85c22b39e27a6e7f00773a6fcee0b5ac900cbb42
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-map-report-report-builder"></a>Didacticiel : Rapport cartographique (Générateur de rapports)
 Dans ce didacticiel [!INCLUDE[ssRBnoversion_md](../includes/ssrbnoversion-md.md)] , vous allez découvrir les fonctionnalités cartographiques que vous pouvez utiliser pour afficher des données sur un arrière-plan géographique d’un rapport paginé [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] . 

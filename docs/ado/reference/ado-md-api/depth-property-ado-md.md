@@ -1,17 +1,15 @@
 ---
-title: "Propriété de profondeur (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété de profondeur (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Level::Depth
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Depth property [ADO MD]
 ms.assetid: e41f2644-617d-4c09-80a4-feb5cf736186
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c84c7bf380e80177dd8dab9c9a80db86dc67af6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9dd8164cebbc2a7b3047563485d53e944c06ae01
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="depth-property-ado-md"></a>Propriété de profondeur (ADO MD)
 Indique le nombre de niveaux entre le [niveau](../../../ado/reference/ado-md-api/level-object-ado-md.md) et la racine de la hiérarchie.  

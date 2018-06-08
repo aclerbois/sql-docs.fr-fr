@@ -1,35 +1,23 @@
 ---
-title: "Copie d’une vue d’un modèle d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- clipboards [data mining]
-- Mining Model Viewer [Analysis Services], clipboards
-- copying mining models to clipboard
-ms.assetid: 768372db-e5b4-4990-b459-03d854fd9a6d
-caps.latest.revision: 
-author: Minewiskan
+title: Copie d’une vue d’un modèle d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c1b439df2696fc44552d42680e1d4642e4728aa9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 685d4ce90312e9f34dcf9b8a6e0c94b419f37ee4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="copy-a-view-of-a-mining-model"></a>Copier une vue d'un modèle d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’onglet **Visionneuse de modèle d’exploration de données** du Concepteur d’exploration de données de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] utilise une visionneuse distincte pour chaque type de modèle d’exploration de données. Plusieurs des visionneuses ont des composants à partir desquels vous pouvez copier le contenu vers le Presse-papiers, puis coller le contenu dans un document ou un logiciel de manipulation d'image. Cette fonctionnalité est disponible avec les composants suivants :  
+  L’onglet **Visionneuse de modèle d’exploration de données** du Concepteur d’exploration de données de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] utilise une visionneuse distincte pour chaque type de modèle d’exploration de données. Plusieurs des visionneuses ont des composants à partir desquels vous pouvez copier le contenu vers le Presse-papiers, puis coller le contenu dans un document ou un logiciel de manipulation d'image. Cette fonctionnalité est disponible avec les composants suivants :  
   
 -   Diagramme de cluster dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] Cluster Viewer et la Visionneuse de l'algorithme MSC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Sequence Cluster)  
   

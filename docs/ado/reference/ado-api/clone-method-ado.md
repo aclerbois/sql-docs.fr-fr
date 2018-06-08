@@ -1,17 +1,15 @@
 ---
-title: "Clone, méthode (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Clone, méthode (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset20::Clone
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Clone method [ADO]
 ms.assetid: ad49265f-1c05-4271-9bbf-7c00010ac18c
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db5785a40527f4f85558961068d2cb67eeabbfbc
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 33fee6bf55b3175d75879e06949744d0730f6af0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clone-method-ado"></a>Clone, méthode (ADO)
 Crée un doublon [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet d’un existant **Recordset** objet. Si vous le souhaitez, spécifie que le clone doit être en lecture seule.  

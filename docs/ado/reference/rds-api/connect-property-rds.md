@@ -1,31 +1,28 @@
 ---
-title: "Se connecter, propriété (RDS) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Se connecter, propriété (RDS) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Connect property [ADO]
 ms.assetid: dbad5e77-b213-4eb8-aecf-d60f203fdb59
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bd6987efb685449d5decde777d4f67ba465a545e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b517d0d6a04d74901c51e43bce4b8c45b61280e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-property-rds"></a>Se connecter, propriété (RDS)
 Indique le nom de la base de données à partir de laquelle les opérations de requête et de mise à jour sont exécutées.  
@@ -44,7 +41,7 @@ Run time: DataControl.Connect = "ConnectionString"
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *ConnectionString*  
+ *connectionString*  
  Une chaîne de connexion valide. Pour plus d’informations sur les chaînes de connexion, consultez le [ConnectionString](../../../ado/reference/ado-api/connectionstring-property-ado.md) propriété ou la documentation de votre fournisseur.  
   
 > [!NOTE]

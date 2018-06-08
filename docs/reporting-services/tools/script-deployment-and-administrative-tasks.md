@@ -1,16 +1,15 @@
 ---
-title: "Écrire des scripts pour les tâches d’administration et de déploiement | Microsoft Docs"
-ms.custom: 
+title: Écrire des scripts pour les tâches d’administration et de déploiement | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - scripts [Reporting Services]
 - moving reports
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - transferrng reports
 - reports [Reporting Services], migrating
 ms.assetid: d0416c9e-e3f9-456d-9870-2cfd2c49039b
-caps.latest.revision: "62"
+caps.latest.revision: 62
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: aa78cfcb78834459a8401fb7b7f8b326362382e9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e1279c063e41de74d3b2d8f8a7c219ad1e8338f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="script-deployment-and-administrative-tasks"></a>Écrire des scripts pour les tâches d'administration et de déploiement
 

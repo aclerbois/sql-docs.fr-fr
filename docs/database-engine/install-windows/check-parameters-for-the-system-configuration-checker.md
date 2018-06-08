@@ -1,17 +1,13 @@
 ---
-title: "Paramètres de l’outil d’analyse de configuration système | Microsoft Docs"
-ms.custom: 
+title: Paramètres de l’outil d’analyse de configuration système | Microsoft Docs
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - installing SQL Server, system configuration checks
 - failed system configuration checks [SQL Server]
@@ -25,15 +21,16 @@ helpviewer_keywords:
 - configuration checkers [SQL Server]
 - Setup [SQL Server], system configuration checker
 ms.assetid: 8e712c15-6bfa-4d71-b303-9526101e5594
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 46
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 7d9eef68fb49a95a04c95ccdb4ef91b978a277f4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 374b5a6aa993957ad83f44a6561a2d63a8966b2b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771355"
 ---
 # <a name="check-parameters-for-the-system-configuration-checker"></a>Paramètres de l’outil d’analyse de configuration système
 

@@ -1,16 +1,12 @@
 ---
-title: sys.dm_tran_version_store_space_usage (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 04/30/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+title: Sys.dm_tran_version_store_space_usage (Transact-SQL) | Documents Microsoft
+ms.custom: ''
+ms.date: 04/24/2018
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_tran_version_store_space_usage_TSQL
@@ -22,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_tran_version_store_space_usage dynamic management view
 ms.assetid: 7ab44517-0351-4f91-bdd9-7cf940f03c51
-caps.latest.revision: 
+caps.latest.revision: 10
 author: savjani
 ms.author: pariks
 manager: ajayj
-ms.workload: Inactive
-ms.openlocfilehash: 3108394b7848047bac97ece004bf9c168b0e045c
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: fbfc968d9fb4620884f282121a820dad548405cc
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sysdmtranversionstorespaceusage-transact-sql"></a>sys.dm_tran_version_store_space_usage (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]
+# <a name="sysdmtranversionstorespaceusage-transact-sql"></a>Sys.dm_tran_version_store_space_usage (Transact-SQL)
+[!INCLUDE[tsql-appliesto-2016sp2-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-2016sp2-asdb-xxxx-xxx-md.md)]
 
 Retourne une table qui affiche l’espace total dans tempdb utilisé par les enregistrements de magasin de version pour chaque base de données. **Sys.dm_tran_version_store_space_usage** est efficace et pas coûteuses à exécuter, comme il ne pas parcourir les enregistrements de magasin de version individuelle et retourne agrégées magasin espace consommée dans tempdb par base de données.
   
@@ -52,7 +48,7 @@ Comme l'enregistrement avec contrôle de version est stocké sous forme binaire,
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
 
 ## <a name="examples"></a>Exemples  
- La requête suivante peut être utilisée pour déterminer l’espace utilisé dans tempdb, par la banque des versions de chaque base de données dans un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] instance. 
+La requête suivante peut être utilisée pour déterminer l’espace utilisé dans tempdb, par la banque des versions de chaque base de données dans un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] instance. 
   
 ```sql  
 SELECT 

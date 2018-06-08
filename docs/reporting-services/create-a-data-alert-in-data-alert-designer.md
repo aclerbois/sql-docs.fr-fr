@@ -1,27 +1,25 @@
 ---
-title: "Créer une alerte de données dans le Concepteur d’alertes de données | Microsoft Docs"
-ms.custom: 
+title: Créer une alerte de données dans le Concepteur d’alertes de données | Microsoft Docs
+ms.custom: ''
 ms.date: 08/17/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 8464ab9d-afe1-4490-955f-9f3319bcbf8d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ad187b9fca63fa2f6833e28bad918a6c99581494
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 10f7e6d3f3ea4da0b9c7bb285c87c414bd1df58f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-data-alert-in-data-alert-designer"></a>Créer une alerte de données dans le Concepteur d’alertes
 

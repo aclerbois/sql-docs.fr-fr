@@ -3,14 +3,12 @@ title: IBCPSession (OLE DB) | Documents Microsoft
 description: Interface IBCPSession (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-interfaces
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 apitype: COM
@@ -18,13 +16,12 @@ helpviewer_keywords:
 - IBCPSession interface
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e07dab3ad117f513545a38e488eb12349c72482a
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 0bd3242d21133f6218a6232b129f7e0109843b33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsession-ole-db"></a>IBCPSession (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -54,6 +51,6 @@ ms.lasthandoff: 03/30/2018
 |[IBCPSession::BCPWriteFmt &#40;OLE DB&#41;](../../oledb/ole-db-interfaces/ibcpsession-bcpwritefmt-ole-db.md)|Écrit les informations de format pour chaque colonne dans le fichier de format.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/oledb-driver-for-sql-server-ole-db-interfaces.md)  
+ [Interfaces & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/oledb-driver-for-sql-server-ole-db-interfaces.md)  
   
   

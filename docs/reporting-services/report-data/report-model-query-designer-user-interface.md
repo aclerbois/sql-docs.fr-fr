@@ -1,16 +1,15 @@
 ---
-title: "Interface utilisateur du concepteur de requêtes de modèle de rapport | Microsoft Docs"
-ms.custom: 
+title: Interface utilisateur du concepteur de requêtes de modèle de rapport | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - "10015"
 - sql13.rtp.rptdesigner.dataview.smqlquerydesigner.f1
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - datasets [Reporting Services], creating
 - query designers [Reporting Services]
 ms.assetid: db86c208-ff1e-4297-aa0c-c250f053f83e
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7ec879b55af66aa8044327ab88a1ea65e92ec844
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 19e623c9f36d9128c0143695b9d3d1aa427bf1e8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-model-query-designer-user-interface"></a>Interface utilisateur du concepteur de requêtes de modèle de rapport
   Le Concepteur de rapports fournit deux Concepteurs de requêtes pour vous aider à spécifier les données d'une source de données de modèle de serveur de rapports à utiliser dans un rapport. Utilisez le concepteur de requêtes graphique pour explorer et choisir les entités de modèle et les champs d'entité. Utilisez le Concepteur de requêtes textuel pour travailler directement avec une spécification SMDL (Semantic Model Definition Language) au format XML.  

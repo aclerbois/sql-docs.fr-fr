@@ -1,29 +1,27 @@
 ---
-title: "Configurer un serveur de rapports sur un cluster avec équilibrage de la charge réseau | Microsoft Docs"
-ms.custom: 
+title: Configurer un serveur de rapports sur un cluster avec équilibrage de la charge réseau | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report servers [Reporting Services], network load balancing
 ms.assetid: 6bfa5698-de65-43c3-b940-044f41c162d3
-caps.latest.revision: 
+caps.latest.revision: 10
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 0512371abbf0f958b065363c7b145da0bd915489
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+ms.openlocfilehash: ecf545bf56a9886fa2409b570673ba36ad698eff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-a-report-server-on-a-network-load-balancing-cluster"></a>Configurer un serveur de rapports sur un cluster avec équilibrage de la charge réseau
   Si vous configurez la montée en puissance parallèle du serveur de rapports en vue de son exécution sur un cluster avec équilibrage de la charge réseau (NLB, Network Load Balancing), vous devez effectuer les opérations suivantes :  
@@ -43,7 +41,7 @@ ms.lasthandoff: 03/02/2018
 |----------|-----------------|----------------------|  
 | 1|Avant d'installer Reporting Services sur les nœuds de serveurs d'un cluster avec équilibrage de la charge réseau, vérifiez les spécifications du déploiement avec montée en puissance parallèle.|[Déploiement avec montée en puissance parallèle - Mode natif de Reporting Services &#40;Gestionnaire de configuration&#41;](http://msdn.microsoft.com/library/4df38294-6f9d-4b40-9f03-1f01c1f0700c) dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|  
 |2|Configurez le cluster avec équilibrage de la charge réseau et vérifiez son bon fonctionnement.<br /><br /> Veillez à mapper un nom d'en-tête de l'hôte à l'adresse IP du serveur virtuel du cluster avec équilibrage de la charge réseau. Le nom d'en-tête de l'hôte est utilisé dans l'URL du serveur de rapports et présente l'avantage d'être plus facile à retenir et à taper qu'une adresse IP.|Pour plus d'informations, consultez la documentation Windows Server correspondant à la version du système d'exploitation Windows que vous exécutez.|  
-|3|Ajoutez le nom NetBIOS et de domaine complet pour l’en-tête de l’hôte dans la liste des **BackConnectionHostNames** stockés dans le Registre Windows. Utilisez les étapes de la **Méthode 1 : Spécification des noms d’hôte** dans [l’article 896861 de la Base de connaissances](http://support.microsoft.com/kb/896861) (http://support.microsoft.com/kb/896861), avec la modification suivante. **L’étape 7** de l’article de la Base de connaissances indique « Quittez l’Éditeur du Registre, puis redémarrez le service IISAdmin ». À la place, redémarrez l'ordinateur pour vous assurer que les modifications prennent effet.<br /><br /> Par exemple, si le nom d’en-tête de l’hôte \<MyServer> est un nom virtuel du nom d’ordinateur Windows « contoso », vous pouvez probablement référencer le formulaire de nom de domaine complet comme « contoso.domain.com ». Vous devrez ajouter le nom d’en-tête de l’hôte (MyServer) et le nom de domaine complet (contoso.domain.com) à la liste dans **BackConnectionHostNames**.|Cette étape est requise si votre environnement serveur implique l'authentification NTLM sur l'ordinateur local, créant une connexion de retour de boucle.<br /><br /> Si tel est le cas, les demandes entre le gestionnaire de rapports et le serveur de rapports vont échouer avec l'erreur 401 (Non autorisé).|  
+|3|Ajoutez le nom NetBIOS et de domaine complet pour l’en-tête de l’hôte dans la liste des **BackConnectionHostNames** stockés dans le Registre Windows. Utilisez les étapes de la **Méthode 2 : Spécification des noms d’hôte** dans [l’article 896861 de la Base de connaissances](http://support.microsoft.com/kb/896861) (http://support.microsoft.com/kb/896861), avec la modification suivante. **L’étape 7** de l’article de la Base de connaissances indique « Quittez l’Éditeur du Registre, puis redémarrez le service IISAdmin ». À la place, redémarrez l'ordinateur pour vous assurer que les modifications prennent effet.<br /><br /> Par exemple, si le nom d’en-tête de l’hôte \<MyServer> est un nom virtuel du nom d’ordinateur Windows « contoso », vous pouvez probablement référencer le formulaire de nom de domaine complet comme « contoso.domain.com ». Vous devrez ajouter le nom d’en-tête de l’hôte (MyServer) et le nom de domaine complet (contoso.domain.com) à la liste dans **BackConnectionHostNames**.|Cette étape est requise si votre environnement serveur implique l'authentification NTLM sur l'ordinateur local, créant une connexion de retour de boucle.<br /><br /> Si tel est le cas, les demandes entre le gestionnaire de rapports et le serveur de rapports vont échouer avec l'erreur 401 (Non autorisé).|  
 |4|Installer [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode fichiers uniquement sur les nœuds qui font déjà partie d'un cluster avec équilibrage de la charge réseau et configurer les instances du serveur de rapports pour un déploiement avec montée en puissance parallèle.<br /><br /> La montée en puissance parallèle que vous configurez ne répond pas aux demandes adressées à l'IP du serveur virtuel. La configuration de la montée en puissance parallèle pour l'utilisation de l'IP du serveur virtuel intervient à un stade ultérieur, après la configuration de la validation de l'état d'affichage.|[Configurer un déploiement par montée en puissance parallèle de serveurs de rapports en mode natif &#40;Gestionnaire de configuration de SSRS&#41;](../../reporting-services/install-windows/configure-a-native-mode-report-server-scale-out-deployment.md)|  
 |5|Configurez la validation de l'état d'affichage.<br /><br /> Pour de meilleurs résultats, effectuez cette étape après avoir configuré le déploiement avec montée en puissance parallèle et avant de configurer les instances du serveur de rapports pour l'utilisation de l'IP du serveur virtuel. En configurant d'abord la validation de l'état d'affichage, vous pouvez éviter les exceptions sur l'échec de la validation de l'état quand les utilisateurs tentent d'accéder aux rapports interactifs.|[Comment configurer la validation de l’état d’affichage](#ViewState) dans cette rubrique.|  
 |6|Configurer **Hostname** et **UrlRoot** pour utiliser l’adresse IP de serveur virtuel du cluster avec équilibrage de la charge réseau.|[Comment configurer Hostname et UrlRoot](#SpecifyingVirtualServerName) dans cette rubrique.|  

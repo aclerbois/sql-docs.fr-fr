@@ -1,31 +1,29 @@
 ---
-title: "Contrôle de capture de données modifiées, tâche | Microsoft Docs"
-ms.custom: 
+title: Contrôle de capture de données modifiées, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssis.designer.cdccontroltask.f1
 - sql13.ssis.designer.cdccontroltask.config.f1
 ms.assetid: 6404dc7f-550c-47cc-b901-c072742f430a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0990c664bb8a962dc8a9c1eebd862808965f2c02
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e43fdab0290f413abf8a33a1da8664f3ae70e45e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cdc-control-task"></a>Tâche de contrôle de capture de données modifiées
   La tâche de contrôle de capture de données modifiées permet de contrôler le cycle de vie des packages de capture de données modifiées. Elle gère la synchronisation des package de capture de données modifiées avec le package de charge initiale et la gestion des plages de numéros séquentiels dans le journal (NSE) qui sont traités lors de l'exécution d'un package de capture de données modifiées. En outre, la tâche de contrôle de capture de données modifiées traite les scénarios d'erreur et la récupération.  

@@ -1,30 +1,28 @@
 ---
-title: "Fonctionnalités et tâches Reporting Services (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités et tâches Reporting Services (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/18/2015
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Reporting Services, programming
 - development [Reporting Services]
 ms.assetid: 0cc20225-5784-479c-bfb0-445854111367
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 85d55a945b8358270fd3a03bd378dbdc63620b69
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 62b007fe8e7f451f5538113ccd0773c0ba173b83
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-features-and-tasks-ssrs"></a>Fonctionnalités et tâches Reporting Services (SSRS)
   [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] est organisé par les rapports et les fonctionnalités de rapport, les fonctionnalités du serveur de rapports, et les fonctionnalités de [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] .  

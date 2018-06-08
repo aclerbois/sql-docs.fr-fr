@@ -1,35 +1,34 @@
 ---
-title: "Supprimer une base de données secondaire d’un groupe de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Supprimer une base de données secondaire d’un groupe de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygroup.unjoindb.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygroup.unjoindb.f1
 helpviewer_keywords:
 - secondary databases [SQL Server], in availability group
 - Availability Groups [SQL Server], removing
 - Availability Groups [SQL Server], databases
 ms.assetid: 4e51a570-58d7-4f01-9390-4198f3602576
-caps.latest.revision: "23"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 23
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 08c871eacad62e1815e709cb12dc94fa43f5fcf6
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 158c445617814900add28cf98c1ee5e90072f0bd
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769405"
 ---
 # <a name="remove-a-secondary-database-from-an-availability-group-sql-server"></a>Supprimer une base de données secondaire d'un groupe de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment supprimer une base de données secondaire d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment supprimer une base de données secondaire d’un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
 -   **Avant de commencer :**  
   

@@ -1,16 +1,14 @@
 ---
 title: Applications | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - off-the-shelf applications [ODBC]
 - ODBC architecture [ODBC], applications
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - virtual applications [ODBC]
 - generic applications [ODBC]
 ms.assetid: 39d6461f-0d24-4b7d-a723-843ade15ad73
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f2a2e9924d032e3ccc32d613a1799c3abd84880f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ac9d98b3b7f6261333626d888c6a8b1d750f2d1b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="applications"></a>Applications
 Un *application* est un programme qui appelle l’API ODBC pour accéder aux données. Bien que de nombreux types d’applications sont possibles, la plupart sont classées en trois catégories, qui sont utilisés comme exemples dans ce guide.  

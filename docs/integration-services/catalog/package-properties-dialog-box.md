@@ -1,31 +1,29 @@
 ---
-title: "Boîte de dialogue Propriétés du package | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Propriétés du package | Microsoft Docs
+ms.custom: ''
 ms.date: 08/26/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssis.ssms.ispackageprop.general.f1
 - sql13.ssis.ssms.packageproperties.f1
 ms.assetid: a70acbf4-5f5c-4606-8ce4-8eb3684233de
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4a87d391fd878028aeabdebab8fb62054560cbfe
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 2d78c48635cdf47b6826f639494942d1b82d39a4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="package-properties-dialog-box"></a>Propriétés du package, boîte de dialogue
   Utilisez la boîte de dialogue **Propriétés du package** pour afficher et gérer les propriétés des packages stockés sur le serveur [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] .  

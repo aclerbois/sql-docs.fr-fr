@@ -1,32 +1,29 @@
 ---
-title: "En choisissant des données Source ou le pilote | Documents Microsoft"
-ms.custom: 
+title: En choisissant des données Source ou le pilote | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to driver [ODBC], selecting driver
 - connecting to data source [ODBC], selecting data source
 - data sources [ODBC], selecting
 - ODBC drivers [ODBC], selecting
 ms.assetid: 10aaf570-01ab-4478-8339-bdde2a5e3dd1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 496b9a40dfa1beb27144eead8d8ab9b03056b000
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d3e9c5964d529fa70bd82c3aec7d25a42cb10c08
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choosing-a-data-source-or-driver"></a>En choisissant des données Source ou pilote
 La source de données ou le pilote utilisé par une application est parfois codé en dur dans l’application. Par exemple, une application personnalisée écrite par un service MIS à transférer des données à partir d’une source de données à l’autre contient les noms de ces sources de données, l’application ne fonctionnerait pas avec d’autres sources de données. Un autre exemple est une application verticale, tel que celui utilisé pour l’entrée de commande. Une telle application toujours utilise la même source de données, qui dispose d’un schéma prédéfini connu par l’application.  

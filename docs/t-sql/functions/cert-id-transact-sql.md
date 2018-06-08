@@ -1,16 +1,14 @@
 ---
 title: CERT_ID (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CERT_ID
@@ -23,21 +21,20 @@ helpviewer_keywords:
 - IDs [SQL Server], certificates
 - certificates [SQL Server], IDs
 ms.assetid: 59cc06f5-272e-4936-8afe-afba7aba8eea
-caps.latest.revision: 
+caps.latest.revision: 23
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3abed6a762708581344c189ecf4ef6c0fd5331d7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ee18027e5c6c916f1ab3d0ca9c6bb501822c1d3b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="certid-transact-sql"></a>CERT_ID (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Retourne l'ID d'un certificat.
+Cette fonction retourne la valeur d’ID d’un certificat.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -49,19 +46,20 @@ Cert_ID ( 'cert_name' )
   
 ## <a name="arguments"></a>Arguments  
 **'** *cert_name* **'**  
-Nom d'un certificat dans la base de données.
+
+Nom d’un certificat dans la base de données.
   
 ## <a name="return-types"></a>Types de retour
  **Int**  
   
 ## <a name="remarks"></a>Notes   
-Les noms des certificats sont visibles dans l'affichage catalogue [sys.certificates](../../relational-databases/system-catalog-views/sys-certificates-transact-sql.md).
+La vue de catalogue [sys.certificates](../../relational-databases/system-catalog-views/sys-certificates-transact-sql.md) affiche les noms de certificat.
   
 ## <a name="permissions"></a>Autorisations  
-Il faut des autorisations sur le certificat et l'appelant ne doit pas avoir refusé l'autorisation VIEW DEFINITION sur le certificat.
+Nécessite des autorisations sur le certificat, et nécessite que l’appelant ne se soit pas vu refuser l’autorisation VIEW DEFINITION pour le certificat. Pour plus d’informations sur les autorisations de certificat, consultez [CREATE CERTIFICATE &#40;Transact-SQL&#41;](../../t-sql/statements/create-certificate-transact-sql.md#permissions).
   
 ## <a name="examples"></a>Exemples  
-L'exemple suivant retourne l'ID d'un certificat appelé `ABerglundCert3`.
+Cet exemple retourne l’ID d’un certificat appelé `ABerglundCert3`.
   
 ```sql
 SELECT Cert_ID('ABerglundCert3');  

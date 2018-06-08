@@ -1,17 +1,16 @@
 ---
-title: "Afficher et modifier les propriétés d’un abonnement par extraction | Microsoft Docs"
-ms.custom: 
+title: Afficher et modifier les propriétés d’un abonnement par extraction | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modifying subscriptions
 - viewing replication properties
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - pull subscriptions [SQL Server replication], properties
 - modifying subscriptions, SQL Server Management Studio
 ms.assetid: 1601e54f-86f0-49e8-b023-87a5d1def033
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 846dae8c98cf3683bc16f53e76e2066021b4b521
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 098f022c5efbf258bd6be827164240d8f7f7e7a2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-and-modify-pull-subscription-properties"></a>Afficher et modifier les propriétés d'un abonnement par extraction (pull)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

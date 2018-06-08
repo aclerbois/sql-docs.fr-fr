@@ -1,27 +1,26 @@
 ---
-title: "Gérer les propriétaires d’abonnement et exécuter un abonnement - PowerShell | Microsoft Docs"
-ms.custom: 
+title: Gérer les propriétaires d’abonnement et exécuter un abonnement - PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 03/24/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0fa6cb36-68fc-4fb8-b1dc-ae4f12bf6ff0
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 6fd26b709044af6f45643cf76d147e2f2ec3c4e9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 149c5e9142dc87cc538b0ae6521d0754b5d03d42
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34585521"
 ---
 # <a name="manage-subscription-owners-and-run-subscription---powershell"></a>Gérer les propriétaires d’abonnement et exécuter un abonnement - PowerShell
 [!INCLUDE[feedback_stackoverflow_msdn_connect_md](../../includes/feedback-stackoverflow-msdn-connect-md.md)]
@@ -141,7 +140,7 @@ $subscriptions | select Path, report, Description, Owner, SubscriptionID, lastex
 ```  
   
 > [!TIP]  
->  Pour vérifier les URL de site en mode SharePoint, utilisez l’applet de commande SharePoint **Get-SPSite**. Pour plus d’informations, consultez [Get-SPSite](http://msdn.microsoft.com/library/ff607950&#40;v=office.15&#41;.aspx).  
+>  Pour vérifier les URL de site en mode SharePoint, utilisez l’applet de commande SharePoint **Get-SPSite**. Pour plus d’informations, consultez [Get-SPSite](http://msdn.microsoft.com/library/ff607950\(v=office.15\).aspx).  
   
 ##  <a name="bkmk_list_all_one_user"></a> Script : dresser la liste de tous les abonnements détenus par un utilisateur spécifique  
  Ce script dresse la liste de tous les abonnements détenus par un utilisateur spécifique. Vous pouvez utiliser ce script pour tester votre connexion ou pour vérifier le chemin d'accès aux rapports et l'ID d'abonnement utilisables dans les autres scripts. Il est utile en cas de départ d'un employé de votre organisation, si vous souhaitez vérifier les abonnements qu'il détenait afin d'en modifier le propriétaire ou de supprimer les abonnements.  

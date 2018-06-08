@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_33081 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 33081 (Database Engine error)
 ms.assetid: 839705e7-fa37-4c0d-9f3f-95a9eab98bcf
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb38e41684109a9199ff5ae65e54612bec5eeb4e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: dcd7227607a76e81b6c05024240c8b24afb4382a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver33081"></a>MSSQLSERVER_33081
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +44,7 @@ WHERE ring_buffer_type = 'RING_BUFFER_SECURITY_ERROR';
 ```  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
-Pour étudier le problème, recherchez le code d'erreur Windows dans MSDN (http://msdn.microsoft.com/). Résolvez l'erreur, ou contactez le support technique [!INCLUDE[msCoName](../../includes/msconame-md.md)] pour plus d'informations. Si vous devez contacter les services de support technique, collectez les informations suivantes pour notre équipe d'assistance :  
+Pour examiner le problème, recherchez le code d’erreur Windows dans MSDN (http://msdn.microsoft.com/). Résolvez l'erreur, ou contactez le support technique [!INCLUDE[msCoName](../../includes/msconame-md.md)] pour plus d'informations. Si vous devez contacter les services de support technique, collectez les informations suivantes pour notre équipe d'assistance :  
   
 -   Le journal des erreurs affichant l'erreur qui indique que le fournisseur de services de chiffrement n'a pas pu être chargé.  
   

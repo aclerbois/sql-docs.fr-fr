@@ -1,16 +1,15 @@
 ---
 title: Prise en main de SSMA pour MySQL Console (MySQLToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - MySQL Console, launching console
 - MySQL Console, output conventions
 ms.assetid: 218d502c-059f-4d48-9aea-61e553d74303
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 595d3a566f472708ced96cbc5faaf2c359474d39
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 30fe5fba0bd0b9321c16c72642f29a515320cb63
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-ssma-for-mysql-console-mysqltosql"></a>Prise en main de SSMA pour MySQL Console (MySQLToSQL)
 Cette section décrit la procédure pour lancer et commencer à l’application de console MySQL. Dans la liste, qu’elle contient, sont les conventions utilisées dans une fenêtre de sortie de Console de SSMA classique.  
@@ -44,13 +42,13 @@ Utilisez les étapes suivantes pour démarrer l’application de console SSMA :
 ## <a name="procedure-for-using-the-ssma-console"></a>Procédure d’utilisation de la Console SSMA  
 Une fois que la console est lancée correctement sur votre système Windows, vous pouvez utiliser les étapes suivantes pour travailler dessus :  
   
-1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40; MySQLToSQL &#41; ](../../ssma/mysql/creating-script-files-mysqltosql.md) .  
+1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40;MySQLToSQL&#41; ](../../ssma/mysql/creating-script-files-mysqltosql.md) .  
   
-2.  [Création de fichiers de la valeur de la Variable &#40; MySQLToSQL &#41;](../../ssma/mysql/creating-variable-value-files-mysqltosql.md)  
+2.  [Création de fichiers de la valeur de la Variable &#40;MySQLToSQL&#41;](../../ssma/mysql/creating-variable-value-files-mysqltosql.md)  
   
-3.  [Créer les fichiers de connexion de serveur &#40; MySQLToSQL &#41;](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md)  
+3.  [Création des fichiers de connexion serveur &#40;MySQLToSQL&#41;](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md)  
   
-4.  [L’exécution de la Console SSMA &#40; MySQLToSQL &#41; ](../../ssma/mysql/executing-the-ssma-console-mysqltosql.md) selon les besoins de votre projet  
+4.  [L’exécution de la Console SSMA &#40;MySQLToSQL&#41; ](../../ssma/mysql/executing-the-ssma-console-mysqltosql.md) selon les besoins de votre projet  
   
 Fonctionnalités supplémentaires :  
   
@@ -65,7 +63,7 @@ Lors de l’exécution des commandes de script SSMA et des options, le programme
   
 Interprétation de couleur de la sortie de console dans le tableau suivant :  
   
-|Couleur|Description|  
+|Color| Description|  
 |---------|---------------|  
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Cachet de date et heure, le message à l’utilisateur|  

@@ -1,30 +1,31 @@
 ---
-title: "Formats de vue d’abonnement (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Formats de vue d’abonnement (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ff1e2566-ac8f-467d-a6d9-12c3f13879b9
-caps.latest.revision: 
+caps.latest.revision: 9
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7f5d996cc9ccbf7f131056e7b02a7f756d048e02
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: c3850a45b5fd947912f3a5ee904a83aa504a7d29
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-view-formats-master-data-services"></a>Formats de vue d'abonnement (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Selon l'entité ou la hiérarchie dérivée sélectionnée, les formats suivants sont disponibles pour votre vue d'abonnement.  
   
 ## <a name="subscription-view-formats"></a>Formats de vue d'abonnement  

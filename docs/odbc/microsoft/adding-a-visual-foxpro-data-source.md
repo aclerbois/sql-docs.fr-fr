@@ -1,30 +1,27 @@
 ---
-title: "Ajout d’une Source de données Visual FoxPro | Documents Microsoft"
-ms.custom: 
+title: Ajout d’une Source de données Visual FoxPro | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual FoxPro data source [ODBC], adding
 - adding data sources [ODBC], Visual FoxPro ODBC driver
 ms.assetid: 1487e188-52c8-4f48-b4fe-25a650dd9e97
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f89e4bec58810b1afb5c15e1b89b96c3193d8793
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0bb3c905283e52d353f53c3daeb3ce1cebe65562
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-a-visual-foxpro-data-source"></a>Ajout d’une Source de données Visual FoxPro
 Pour accéder aux données Visual FoxPro à partir de votre application, vous devez disposer d’une source de données. Vous pouvez créer une source de données comme suit :  

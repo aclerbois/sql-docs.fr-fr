@@ -1,16 +1,14 @@
 ---
 title: sp_OACreate (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_OACreate
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_OACreate
 ms.assetid: eb84c0f1-26dd-48f9-9368-13ee4a30a27c
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5b36d46482582d877241d5ec621896d8aa4206fa
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 2c7f4598f309549a34cc9dbc39b0ba1a964160bc
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spoacreate-transact-sql"></a>sp_OACreate (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,13 +44,13 @@ sp_OACreate { progid | clsid } , objecttoken OUTPUT [ , context ]
   
 ## <a name="arguments"></a>Arguments  
  *ProgID*  
- Identificateur de programme (ProgID) de l'objet OLE à créer. Cette chaîne de caractères décrit la classe de l’objet OLE et se présente sous la forme : **'***OLEComponent***.** *Objet***'**  
+ Identificateur de programme (ProgID) de l'objet OLE à créer. Cette chaîne de caractères décrit la classe de l’objet OLE et se présente sous la forme : **'***OLEComponent***. ***Objet***'**  
   
  *OLEComponent* est le nom du composant du serveur OLE Automation, et *objet* est le nom de l’objet OLE. L’objet OLE spécifié doit être valide et doit prendre en charge la **IDispatch** interface.  
   
  Par exemple, SQLDMO. SQL Server est le ProgID de SQL-DMO **SQLServer** objet. SQL-DMO a un nom de composant SQLDMO, le **SQLServer** objet est valide et (telles que SQL-DMO tous les objets) le **SQLServer** prend en charge de l’objet **IDispatch**.  
   
- *CLSID*  
+ *clsid*  
  Identificateur de classe (CLSID) de l'objet OLE à créer. Cette chaîne de caractères décrit la classe de l’objet OLE et se présente sous la forme : **' {***nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn***}'**. L’objet OLE spécifié doit être valide et doit prendre en charge la **IDispatch** interface.  
   
  Par exemple, {00026BA1-0000-0000-C000-000000000046} est le CLSID de SQL-DMO **SQLServer** objet.  
@@ -61,7 +58,7 @@ sp_OACreate { progid | clsid } , objecttoken OUTPUT [ , context ]
  *objecttoken* **sortie**  
  Jeton d’objet retourné, et doit être une variable locale du type de données **int**. Ce jeton d'objet identifie l'objet OLE créé et il est utilisé dans les appels aux autres procédures stockées de OLE Automation.  
   
- *contexte*  
+ *Contexte*  
  Spécifie le contexte d'exécution dans lequel l'objet OLE nouvellement créé s'exécute. Si cet argument est spécifié, il doit avoir une des valeurs suivantes :  
   
  **1** = uniquement serveur OLE de in-process (.dll).  
@@ -89,7 +86,7 @@ sp_OACreate { progid | clsid } , objecttoken OUTPUT [ , context ]
   
  L'objet OLE créé est automatiquement détruit à la fin du lot d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle serveur fixe **sysadmin** .  
   
 ## <a name="examples"></a>Exemples  
@@ -130,7 +127,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Stockées OLE Automation procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/ole-automation-stored-procedures-transact-sql.md)   
+ [Procédures stockées OLE Automation &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/ole-automation-stored-procedures-transact-sql.md)   
  [Option de Configuration de serveur OLE Automation Procedures](../../database-engine/configure-windows/ole-automation-procedures-server-configuration-option.md)   
  [Exemple de script OLE Automation](../../relational-databases/stored-procedures/ole-automation-sample-script.md)  
   

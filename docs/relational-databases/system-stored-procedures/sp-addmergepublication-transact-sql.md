@@ -1,16 +1,15 @@
 ---
 title: sp_addmergepublication (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergepublication
 ms.assetid: 28a629a1-7374-4614-9b04-279d290a942a
-caps.latest.revision: 
+caps.latest.revision: 72
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b3f61d6ab3c2154020be3eb1ecf4407f57541918
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ad636ff51a7a64cf1d46e8bb39b4937137454dd4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergepublication-transact-sql"></a>sp_addmergepublication (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -102,7 +100,7 @@ sp_addmergepublication [ @publication = ] 'publication'
 |Valeur| Description|  
 |-----------|-----------------|  
 |**native** (par défaut)|Produit une copie par bloc en mode natif de toutes les tables.|  
-|**caractère**|Produit une copie par bloc en mode caractère de toutes les tables. Requis pour prendre en charge [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssEW](../../includes/ssew-md.md)] et non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] abonnés.|  
+|**character**|Produit une copie par bloc en mode caractère de toutes les tables. Requis pour prendre en charge [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssEW](../../includes/ssew-md.md)] et non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] abonnés.|  
   
  [  **@allow_push =** ] **'***allow_push***'**  
  Indique si des abonnements par envoi de données (push) peuvent être créés pour la publication concernée. *allow_push* est **nvarchar (5)**, par défaut est TRUE, qui autorise les abonnements par envoi de données sur la publication.  
@@ -123,7 +121,7 @@ sp_addmergepublication [ @publication = ] 'publication'
  Permet à la publication de fusion d'utiliser des filtres de lignes paramétrables. *dynamic_filters* est **nvarchar (5)**, avec FALSE comme valeur par défaut.  
   
 > [!NOTE]  
->  Vous ne devez pas spécifier vous-même ce paramètre mais autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à déterminer automatiquement si les filtres de lignes paramétrables sont utilisés. Si vous spécifiez une valeur de **true** pour *dynamic_filters*, vous devez définir un filtre de lignes paramétrable pour l’article. Pour plus d'informations, voir [Define and Modify a Parameterized Row Filter for a Merge Article](../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
+>  Vous ne devez pas spécifier vous-même ce paramètre mais autoriser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à déterminer automatiquement si les filtres de lignes paramétrables sont utilisés. Si vous spécifiez une valeur de **true** pour *dynamic_filters*, vous devez définir un filtre de lignes paramétrable pour l’article. Pour plus d'informations, voir [Définir et modifier un filtre de lignes paramétrable pour un article de fusion](../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
   
  [  **@snapshot_in_defaultfolder =** ] **'***snapshot_in_default_folder***'**  
  Spécifie si les fichiers d’instantanés sont stockés dans le dossier par défaut. *snapshot_in_default_folder* est **nvarchar (5)**, avec TRUE comme valeur par défaut. Si **true**, fichiers d’instantanés sont accessibles dans le dossier par défaut. Si **false**, fichiers d’instantanés seront stockés dans l’emplacement secondaire spécifié par *alternate_snapshot_folder*. Les emplacements secondaires peuvent se trouver sur un autre serveur, un lecteur réseau ou un support amovible (tel qu'un CD-ROM ou des disques amovibles). Vous pouvez également enregistrer les fichiers d'instantané sur un site FTP, pour qu'ils soient récupérés ultérieurement par l'abonné. Notez que ce paramètre peut avoir la valeur true et néanmoins avoir un emplacement spécifié par *alt_snapshot_folder*. Cette combinaison indique que les fichiers d'instantané sont stockés dans les emplacements par défaut et secondaires.  
@@ -138,7 +136,7 @@ sp_addmergepublication [ @publication = ] 'publication'
  Spécifie un pointeur vers un **.sql** emplacement du fichier. *post_snapshot_script* est **nvarchar (255)**, avec NULL comme valeur par défaut. L'Agent de fusion exécute le script de post-instantané après que tous les autres scripts d'objets et données répliqués ont été appliqués lors d'une synchronisation initiale. Le script est exécuté dans le contexte de sécurité utilisé par l'Agent de fusion lors de la connexion à la base de données d'abonnement. Scripts de post-instantané ne sont pas exécutés sur [!INCLUDE[ssEW](../../includes/ssew-md.md)] abonnés.  
   
  [  **@compress_snapshot =** ] **'***compress_snapshot***'**  
- Spécifie que l’instantané écrit à le  **@alt_snapshot_folder**  emplacement doit être compressé dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] format CAB. *compress_snapshot* est **nvarchar (5)**, avec FALSE comme valeur par défaut. **false** indique que l’instantané ne sera pas compressé ; **true** indique que la capture instantanée doit être compressé. Les fichiers d'instantané dépassant 2 Go ne peuvent pas être compressés. Les fichiers d'instantané compressés sont décompressés à l'emplacement d'exécution de l'Agent de fusion. Les abonnements par extraction de données sont généralement utilisés avec des instantanés compressés, afin que les fichiers soient décompressés chez l'abonné. L'instantané se trouvant dans le dossier par défaut ne peut pas être compressé. Pour prendre en charge [!INCLUDE[ssEW](../../includes/ssew-md.md)] abonnés, vous devez spécifier **false**.  
+ Spécifie que l’instantané écrit à le **@alt_snapshot_folder** emplacement doit être compressé dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] format CAB. *compress_snapshot* est **nvarchar (5)**, avec FALSE comme valeur par défaut. **false** indique que l’instantané ne sera pas compressé ; **true** indique que la capture instantanée doit être compressé. Les fichiers d'instantané dépassant 2 Go ne peuvent pas être compressés. Les fichiers d'instantané compressés sont décompressés à l'emplacement d'exécution de l'Agent de fusion. Les abonnements par extraction de données sont généralement utilisés avec des instantanés compressés, afin que les fichiers soient décompressés chez l'abonné. L'instantané se trouvant dans le dossier par défaut ne peut pas être compressé. Pour prendre en charge [!INCLUDE[ssEW](../../includes/ssew-md.md)] abonnés, vous devez spécifier **false**.  
   
  [  **@ftp_address =** ] **'***ftp_address***'**  
  Adresse réseau du service FTP du serveur de distribution. *ftp_address* est **sysname**, avec NULL comme valeur par défaut. Indique l'emplacement à partir duquel l'Agent de fusion d'un abonné peut extraire les fichiers d'instantané de la publication. Étant donné que cette propriété est stockée pour chaque publication, chaque publication peut avoir une autre *ftp_address*. La publication doit prendre en charge la propagation des instantanés à l'aide du protocole FTP.  
@@ -219,11 +217,11 @@ sp_addmergepublication [ @publication = ] 'publication'
  [  **@replicate_ddl =** ] *replicate_ddl*  
  Précise si la réplication de schéma est prise en charge pour la publication. *replicate_ddl* est **int**, avec 1 comme valeur par défaut. **1** indique que les instructions data definition language (DDL) exécutées sur le serveur de publication sont répliquées, et **0** indique que les instructions DDL ne sont pas répliquées. Pour plus d’informations, consultez [Modifier le schéma dans les bases de données de publication](../../relational-databases/replication/publish/make-schema-changes-on-publication-databases.md).  
   
- Le  *@replicate_ddl*  paramètre est honoré lorsqu’une instruction DDL ajoute une colonne. Le  *@replicate_ddl*  paramètre est ignoré lorsqu’une instruction DDL modifie ou supprime une colonne pour les raisons suivantes.  
+ Le *@replicate_ddl* paramètre est honoré lorsqu’une instruction DDL ajoute une colonne. Le *@replicate_ddl* paramètre est ignoré lorsqu’une instruction DDL modifie ou supprime une colonne pour les raisons suivantes.  
   
--   Lorsqu’une colonne est supprimée, sysarticlecolumns doit être mis à jour pour empêcher les nouvelles instructions DML d’inclure la colonne supprimée, ce qui provoquerait l’échec de l’agent de distribution. Le  *@replicate_ddl*  paramètre est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
+-   Lorsqu’une colonne est supprimée, sysarticlecolumns doit être mis à jour pour empêcher les nouvelles instructions DML d’inclure la colonne supprimée, ce qui provoquerait l’échec de l’agent de distribution. Le *@replicate_ddl* paramètre est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
   
--   Lorsqu'une colonne est modifiée, le type de données source ou la possibilité d'une valeur NULL peuvent avoir changé et les instructions DML peuvent contenir une valeur non compatible avec la table sur l'abonné. Ces instructions DML peuvent entraîner l'échec de l'agent de distribution. Le  *@replicate_ddl*  paramètre est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
+-   Lorsqu'une colonne est modifiée, le type de données source ou la possibilité d'une valeur NULL peuvent avoir changé et les instructions DML peuvent contenir une valeur non compatible avec la table sur l'abonné. Ces instructions DML peuvent entraîner l'échec de l'agent de distribution. Le *@replicate_ddl* paramètre est ignoré, car la réplication doit toujours répliquer la modification de schéma.  
   
 -   Lorsqu’une instruction DDL ajoute une nouvelle colonne, sysarticlecolumns n’inclut pas la nouvelle colonne. Les instructions DML n'essayeront pas de répliquer les données pour la nouvelle colonne. Le paramètre est respecté parce que la réplication ou la réplication DDL est acceptable.  
   
@@ -248,15 +246,15 @@ sp_addmergepublication [ @publication = ] 'publication'
 |Valeur|Version|  
 |-----------|-------------|  
 |**jour** (par défaut)|La période de rétention est spécifiée en jours.|  
-|**semaine**|La période de rétention est spécifiée en semaines.|  
-|**mois**|La période de rétention est spécifiée en mois.|  
-|**année**|La période de rétention est spécifiée en années.|  
+|**week**|La période de rétention est spécifiée en semaines.|  
+|**month**|La période de rétention est spécifiée en mois.|  
+|**year**|La période de rétention est spécifiée en années.|  
   
  [  **@generation_leveling_threshold=** ] *generation_leveling_threshold*  
  Spécifie le nombre de modifications qui sont contenus dans une génération. Une génération est une collection de modifications remises à un serveur de publication ou à un Abonné. *generation_leveling_threshold* est **int**, valeur par défaut est 1000.  
   
  [  **@automatic_reinitialization_policy =** ] *automatic_reinitialization_policy*  
- Spécifie si les modifications sont téléchargées à partir de l’abonné avant une réinitialisation automatique requise par une modification apportée à la publication, où la valeur de **1** a été spécifiée pour  **@force_reinit_subscription** . *automatic_reinitialization_policy* est de type bit, avec 0 comme valeur par défaut. **1** signifie que les modifications sont téléchargées à partir de l’abonné avant une réinitialisation automatique.  
+ Spécifie si les modifications sont téléchargées à partir de l’abonné avant une réinitialisation automatique requise par une modification apportée à la publication, où la valeur de **1** a été spécifiée pour **@force_reinit_subscription**. *automatic_reinitialization_policy* est de type bit, avec 0 comme valeur par défaut. **1** signifie que les modifications sont téléchargées à partir de l’abonné avant une réinitialisation automatique.  
   
 > [!IMPORTANT]  
 >  Si vous ajoutez, supprimez ou modifiez un filtre paramétré, les modifications en attente chez l'abonné ne peuvent pas être chargées sur le serveur de publication pendant la réinitialisation. Si vous voulez télécharger les modifications en attente, synchronisez tous les abonnements avant de modifier le filtre.  
@@ -277,25 +275,25 @@ sp_addmergepublication [ @publication = ] 'publication'
 ## <a name="remarks"></a>Notes  
  **sp_addmergepublication** est utilisé dans la réplication de fusion.  
   
- Objets de publication à Active Directory en utilisant le  **@add_to_active_directory**  paramètre, le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objet doit déjà être créé dans Active Directory.  
+ Objets de publication à Active Directory en utilisant le **@add_to_active_directory** paramètre, le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] objet doit déjà être créé dans Active Directory.  
   
  S’il existe plusieurs publications qui permettent de publier le même objet de base de données, seules les publications avec un *replicate_ddl* valeur **1** répliqueront les instructions ALTER TABLE, ALTER VIEW, ALTER PROCEDURE, ALTER FUNCTION et ALTER TRIGGER DDL. Cependant, une instruction ALTER TABLE DROP COLUMN DDL sera répliquée par toutes les publications publiant la colonne supprimée.  
   
  Pour [!INCLUDE[ssEW](../../includes/ssew-md.md)] abonnés, la valeur de *alternate_snapshot_folder* est uniquement utilisé lorsque la valeur de *snapshot_in_default_folder* est **false**.  
   
- Avec la réplication DDL est activée (*replicate_ddl***= 1**) pour une publication, pour rendre le DDL non répliquées des modifications à la publication, [sp_changemergepublication &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-changemergepublication-transact-sql.md) doit tout d’abord être exécutée pour définir *replicate_ddl* à **0**. Une fois que les instructions DDL non répliquées ont été émises, **sp_changemergepublication** peut être exécuté à nouveau pour activer la réplication DDL.  
+ Avec la réplication DDL est activée (* replicate_ddl ***= 1**) pour une publication, pour rendre le DDL non répliquées des modifications à la publication, [sp_changemergepublication &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-changemergepublication-transact-sql.md)doit tout d’abord être exécutée pour définir *replicate_ddl* à **0**. Une fois que les instructions DDL non répliquées ont été émises, **sp_changemergepublication** peut être exécuté à nouveau pour activer la réplication DDL.  
   
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_AddMergePub](../../relational-databases/replication/codesnippet/tsql/sp-addmergepublication-t_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addmergepublication**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Create a Publication](../../relational-databases/replication/publish/create-a-publication.md)   
  [Publier des données et des objets de base de données](../../relational-databases/replication/publish/publish-data-and-database-objects.md)   
  [sp_changemergepublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergepublication-transact-sql.md)   
- [sp_dropmergepublication &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropmergepublication-transact-sql.md)   
+ [sp_dropmergepublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropmergepublication-transact-sql.md)   
  [sp_helpmergepublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergepublication-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  
   

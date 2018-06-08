@@ -1,30 +1,20 @@
 ---
 title: DrilldownMember (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: DRILLDOWNMEMBER
-dev_langs: kbMDX
-helpviewer_keywords: DrilldownMember function
-ms.assetid: 765f2fc7-0baa-428b-864a-22c9f3113083
-caps.latest.revision: "40"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 9f7f9a3cdb4faa7946744d9f4b0913ee866e5a04
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 9f50d68c383f758bfa75d8fd50964eaaf8c89fa4
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578061"
 ---
 # <a name="drilldownmember-mdx"></a>DrilldownMember (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -56,10 +46,10 @@ DrillDownMember(<Set_Expression1>, <Set_Expression2> [,[<Target_Hierarchy>]] [,[
  *Include_Calc_Members*  
  Mot clé permettant d'activer les membres calculés à inclure dans les résultats de l'extraction vers le bas.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Cette fonction retourne un jeu de membres enfants classés par hiérarchie et inclut les membres spécifiés dans le premier jeu qui sont également présents dans le deuxième jeu. Les membres parents ne seront pas extraits vers le bas si le premier jeu contient le membre parent et un ou plusieurs enfants. Le premier jeu peut avoir n'importe quelle dimensionnalité mais le deuxième jeu doit contenir un jeu unidimensionnel. L'ordre est conservé parmi les membres d'origine dans le premier jeu, à ceci près que tous les membres enfants inclus dans l'ensemble de résultats de la fonction sont placés immédiatement après leur membre parent. La fonction construit l'ensemble de résultats en récupérant les enfants de chaque membre dans le premier jeu également présent dans le deuxième jeu. Si **récursive** est spécifié, la fonction continue de manière récursive comparer les membres du jeu sur le deuxième jeu, en récupérant les enfants de chaque membre dans le résultat de résultats défini qui est également présent dans le deuxième jeu jusqu'à ce que plus aucun membre du jeu de résultats ne sont accessibles dans le deuxième jeu.  
   
- Interrogez la propriété XMLA **MdpropMdxDrillFunctions** vous permet de vérifier le niveau de prise en charge par le serveur pour les fonctions d’extraction, consultez [pris en charge les propriétés XMLA &#40; XMLA &#41; ](../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) pour plus d’informations.  
+ Interrogez la propriété XMLA **MdpropMdxDrillFunctions** vous permet de vérifier le niveau de prise en charge par le serveur pour les fonctions d’extraction, consultez [pris en charge les propriétés XMLA &#40;XMLA&#41; ](../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md)pour plus d’informations.  
   
  Le premier jeu peut contenir des tuples au lieu de membres. L'exploration vers le bas des tuples est une extension d'OLE DB et retourne un jeu de tuples à la place des membres.  
   
@@ -92,6 +82,6 @@ SELECT DrilldownMember
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

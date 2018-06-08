@@ -1,22 +1,21 @@
 ---
 title: Prise en main 2017 du serveur SQL dans le Cloud | Documents Microsoft
-description: "Ce démarrage rapide montre comment exécuter le 2017 du serveur SQL sur Linux dans le cloud de votre choix."
+description: Ce démarrage rapide montre comment exécuter le 2017 du serveur SQL sur Linux dans le cloud de votre choix.
 author: annashres
 ms.author: annashres
 manager: craigg
 ms.date: 10/25/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.openlocfilehash: 3966bb71f4112c12d340ab9780586013d8732206
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: f5d67ff25cb5d2816672fafe0602d56921c034bb
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="quickstart-run-the-sql-server-2017-in-the-cloud"></a>Démarrage rapide : Exécuter le 2017 du serveur SQL dans le cloud
 
@@ -44,7 +43,7 @@ Ce guide de démarrage rapide, vous allez installer SQL Server 2017 sur Red Hat 
     * Ajouter une règle de trafic entrant pour autoriser le trafic sur le port sur lequel SQL Server écoute (port TCP par défaut 1433)
 
     
-## <a name="digital-ocean"></a>Numérique océan
+## <a name="digital-ocean"></a>Digital Ocean
 1. Se connecter à la [le panneau de configuration](https://cloud.digitalocean.com/login) et cliquez sur Créer un droplet
 1. Choisissez un droplet Ubuntu 16.04 au moins 2 Go de mémoire
 1. Se connecter au droplet avec ssh

@@ -1,34 +1,30 @@
 ---
-title: "Degree of Parallelism (7.0 Insert), classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Degree of Parallelism (7.0 Insert), classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Degree of Parallelism event class
 ms.assetid: 6753ef30-890f-47a3-b0b6-8abb184e1d83
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93020108e319109f6ef6016620a3d5173d207a52
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e20a8f03b3bf076abcae7602cf098068f6325c31
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="degree-of-parallelism-70-insert-event-class"></a>Classe d'événements Degree of Parallelism (7.0 Insert)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Degree of Parallelism (7.0 Insert)** se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SELECT, INSERT, UPDATE ou DELETE.  
+  La classe d’événements **Degree of Parallelism (7.0 Insert)** se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SELECT, INSERT, UPDATE ou DELETE.  
   
  Lorsque cette classe d'événements est incluse dans une trace, la surcharge impliquée peut sensiblement entraver les performances si ces événements se produisent fréquemment. Pour minimiser l'effet d'une telle charge, limitez l'utilisation de cette classe d'événements aux traces destinées à effectuer le suivi de problèmes précis pour de brèves durées.  
   

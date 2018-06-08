@@ -1,32 +1,30 @@
 ---
-title: "Sauvegarder et restaurer les clés de chiffrement Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Sauvegarder et restaurer les clés de chiffrement Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 05/31/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backing up encryption keys [Reporting Services]
 - restoring encryption keys [Reporting Services]
 - encryption keys [Reporting Services]
 - symmetric keys [Reporting Services]
 ms.assetid: 6773d5df-03ef-4781-beb7-9f6825bac979
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e64d508d5a7b521bf8adc555ea45328211b601c2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 980774dac04aabe5704d27b23ec789f02ace0136
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssrs-encryption-keys---back-up-and-restore-encryption-keys"></a>Clés de chiffrement SSRS - Sauvegarder et restaurer les clés de chiffrement
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
 title: sp_settriggerorder (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_settriggerorder
@@ -20,16 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - sp_settriggerorder
 ms.assetid: 8b75c906-7315-486c-bc59-293ef12078e8
-caps.latest.revision: 
+caps.latest.revision: 54
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 690831cac89e20932cbf3c8759af569e01097238
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bef1fdf427c6bc510e77f8df55f3281d5b5db6cd
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33263560"
 ---
 # <a name="spsettriggerorder-transact-sql"></a>sp_settriggerorder (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -49,16 +48,16 @@ sp_settriggerorder [ @triggername = ] '[ triggerschema. ] triggername'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@triggername=** ] **'**[ *triggerschema***.**] *nom_déclencheur***'**  
- Nom du déclencheur et, éventuellement, du schéma auquel il appartient, dont l'ordre doit être défini ou modifié. [*triggerschema***.**] *nom_déclencheur* est **sysname**. Si le nom ne correspond pas à un déclencheur ou si le nom correspond à un déclencheur INSTEAD OF, la procédure retourne une erreur. *triggerschema* ne peut pas être spécifié pour les déclencheurs DDL ou logon.  
+ [  **@triggername=** ] **'**[ *triggerschema ***.**] *nom_déclencheur ***'**  
+ Nom du déclencheur et, éventuellement, du schéma auquel il appartient, dont l'ordre doit être défini ou modifié. [*triggerschema ***.**]* nom_déclencheur * est **sysname**. Si le nom ne correspond pas à un déclencheur ou si le nom correspond à un déclencheur INSTEAD OF, la procédure retourne une erreur. *triggerschema* ne peut pas être spécifié pour les déclencheurs DDL ou logon.  
   
- [ **@order=** ] **'***valeur***'**  
+ [ **@order=** ] **'***value***'**  
  Paramètre du nouvel ordre pour le déclencheur. *valeur* est **varchar (10)** et il peut prendre l’une des valeurs suivantes.  
   
 > [!IMPORTANT]  
 >  Le **première** et **dernière** déclencheurs doivent être deux déclencheurs différents.  
   
-|Valeur| Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |**Première**|Le déclencheur est activé en premier.|  
 |**Dernière**|Le déclencheur est activé en dernier.|  
@@ -70,7 +69,7 @@ sp_settriggerorder [ @triggername = ] '[ triggerschema. ] triggername'
  Un déclencheur peut être désigné comme la **première** ou **dernière** déclencheur pour un type d’instruction uniquement après que le déclencheur a été défini comme un déclencheur pour ce type d’instruction. Par exemple, déclencher **TR1** peut être désignée **première** pour l’insertion d’une table **T1** si **TR1** est défini comme un déclencheur INSERT. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] renvoie une erreur si **TR1**, qui a été défini uniquement comme un déclencheur INSERT, est défini comme un **première**, ou **dernière**, déclencheur pour une instruction UPDATE. Pour plus d'informations, consultez la section Notes.  
   
  **@namespace=** { **'DATABASE'** | **'SERVER'** | NULL}  
- Lorsque *nom_déclencheur* est un déclencheur DDL,  **@namespace**  Spécifie si *nom_déclencheur* a été créé avec l’étendue de la base de données ou serveur. Si *nom_déclencheur* est un déclencheur d’ouverture de session, SERVER doit être spécifié. Pour plus d’informations sur l’étendue du déclencheur DDL, consultez [les déclencheurs DDL](../../relational-databases/triggers/ddl-triggers.md). Si non spécifié, ou si la valeur NULL est spécifiée, *nom_déclencheur* est un déclencheur DML.  
+ Lorsque *nom_déclencheur* est un déclencheur DDL, **@namespace** Spécifie si *nom_déclencheur* a été créé avec l’étendue de la base de données ou serveur. Si *nom_déclencheur* est un déclencheur d’ouverture de session, SERVER doit être spécifié. Pour plus d’informations sur l’étendue du déclencheur DDL, consultez [les déclencheurs DDL](../../relational-databases/triggers/ddl-triggers.md). Si non spécifié, ou si la valeur NULL est spécifiée, *nom_déclencheur* est un déclencheur DML.  
   
 ||  
 |-|  
@@ -108,7 +107,7 @@ sp_settriggerorder [ @triggername = ] '[ triggerschema. ] triggername'
   
  Si le même déclencheur doit être désigné comme le premier ou dernier ordre pour plus d’un type d’instruction, **sp_settriggerorder** doit être exécutée pour chaque type d’instruction. En outre, le déclencheur doit être d’abord défini pour un type d’instruction avant qu’il peut être désignée comme la **première** ou **dernière** déclencheur à activer pour ce type d’instruction.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Pour définir l'ordre d'un déclencheur DDL avec étendue de serveur (à l'aide de la clause ON ALL SERVER) ou d'un déclencheur de connexion, requiert l'autorisation CONTROL SERVER sur le serveur.  
   
  Pour définir l'ordre d'un déclencheur DDL avec étendue de base de données (à l'aide de la clause ON DATABASE), requiert l'autorisation ALTER ANY DATABASE DDL TRIGGER.  
@@ -137,7 +136,7 @@ sp_settriggerorder @triggername= 'ddlDatabaseTriggerLog', @order='First', @stmtt
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [ALTER TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/alter-trigger-transact-sql.md)  
   
   

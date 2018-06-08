@@ -1,16 +1,14 @@
 ---
 title: EXECUTE AS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - EXECUTE AS
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - execution context [SQL Server]
 - switching execution context
 ms.assetid: 613b8271-7f7d-4378-b7a2-5a7698551dbd
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b89c78d286feaace6ec6bb2c85e854cb0ddbb5e0
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6a038b8928eeda0df043ff42b621b95c48102b55
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-as-transact-sql"></a>EXECUTE AS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -81,7 +78,7 @@ ms.lasthandoff: 11/21/2017
   
  *name* doit être un compte singleton. Ce ne peut pas être un groupe, un rôle, un certificat, une clé ni un compte intégré, tel que NT AUTHORITY\LocalService, NT AUTHORITY\NetworkService ou NT AUTHORITY\LocalSystem.  
   
- Pour plus d’informations, consultez [Spécification d’un nom d’utilisateur ou de connexion](#_user), plus loin dans cette rubrique.  
+ Pour plus d’informations, consultez [Spécification d’un nom d’utilisateur ou d’un ID de connexion](#_user), plus loin dans cette rubrique.  
   
  NO REVERT  
  Spécifie qu'il n'est pas possible de restaurer le changement de contexte pour revenir au contexte précédent. L’option **NO REVERT** peut uniquement être utilisée au niveau adhoc.  
@@ -89,7 +86,7 @@ ms.lasthandoff: 11/21/2017
  Pour plus d’informations sur la restauration du contexte précédent, consultez [REVERT &#40;Transact-SQL&#41;](../../t-sql/statements/revert-transact-sql.md).  
   
  COOKIE INTO **@***varbinary_variable*  
- Spécifie que le contexte d’exécution peut être restauré vers le contexte précédent uniquement si l’instruction REVERT WITH COOKIE appelante contient la valeur **@***varbinary_variable* correcte. [!INCLUDE[ssDE](../../includes/ssde-md.md)] passe le cookie à **@***varbinary_variable*. L’option **COOKIE INTO** peut uniquement être utilisée au niveau adhoc.  
+ Spécifie que le contexte d’exécution peut être restauré vers le contexte précédent uniquement si l’instruction REVERT WITH COOKIE appelante contient la valeur **@***varbinary_variable* correcte. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] passe le cookie à **@***varbinary_variable*. L’option **COOKIE INTO** peut uniquement être utilisée au niveau adhoc.  
   
  **@** *varbinary_variable* est **varbinary(8000)**.  
   

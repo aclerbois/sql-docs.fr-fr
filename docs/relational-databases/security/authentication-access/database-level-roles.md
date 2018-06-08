@@ -1,17 +1,16 @@
 ---
-title: "Rôles au niveau de la base de données | Microsoft Docs"
-ms.custom: 
+title: Rôles au niveau de la base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 06/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.roleproperties.database.f1
 - sql13.swb.roleproperties.object.f1
@@ -40,16 +39,16 @@ helpviewer_keywords:
 - authentication [SQL Server], roles
 - groups [SQL Server], roles
 ms.assetid: 7f3fa5f6-6b50-43bb-9047-1544ade55e39
-caps.latest.revision: 
+caps.latest.revision: 49
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9fe700c3dc23125b21b24a749ca5ae5238d6a02c
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b1a99af7b5758f77883da3f2a755aaa4bdfdd1a9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-level-roles"></a>Rôles au niveau de la base de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

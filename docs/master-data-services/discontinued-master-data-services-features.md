@@ -1,30 +1,31 @@
 ---
-title: "Fonctionnalités Master Data Services éliminées | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités Master Data Services éliminées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3236cce0-cfd9-43f8-8be3-e8c8dff8f162
-caps.latest.revision: 
+caps.latest.revision: 18
 author: leolimsft
 ms.author: lle
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: ae2cd76e15dc93c9ce7e3c88a0e89142141d219d
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 4cc32a6685148c834dbdcf74c48f8d99ac3b3620
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="discontinued-master-data-services-features"></a>Fonctionnalités Master Data Services éliminées
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit les fonctionnalités de [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] qui ne sont plus disponibles dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
   
 ## <a name="includesscurrentincludessscurrent-mdmd-discontinued-features"></a>[!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] supprimées  

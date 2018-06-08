@@ -1,16 +1,14 @@
 ---
 title: sp_add_notification (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_notification_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_notification
 ms.assetid: 0525e0a2-ed0b-4e69-8a4c-a9e3e3622fbd
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 22e6f2373ba35b24d74b7045350c7cb78a504c05
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: a79b98fb3f44f3c69e7b4108502a3e6ea14e5c09
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddnotification-transact-sql"></a>sp_add_notification (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,10 +47,10 @@ sp_add_notification [ @alert_name = ] 'alert' ,
  [  **@alert_name=** ] **'***alerte***'**  
  Alerte pour cette notification. *alerte* est **sysname**, sans valeur par défaut.  
   
- [ **@operator_name=** ] **'***operator***'**  
+ [  **@operator_name=** ] **'***opérateur***'**  
  Opérateur à prévenir lorsque l'alerte se déclenche. *opérateur* est **sysname**, sans valeur par défaut.  
   
- [ **@notification_method=** ] *notification_method*  
+ [  **@notification_method=** ] *méthode_de_notification*  
  Méthode utilisée pour avertir l'opérateur. *méthode_de_notification* est **tinyint**, sans valeur par défaut. *méthode_de_notification* peut être une ou plusieurs des valeurs suivantes associées à un **OR** opérateur logique.  
   
 |Valeur|Description|  

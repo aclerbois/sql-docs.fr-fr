@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_7935 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 7935 (Database Engine error)
 ms.assetid: 45ab21a3-024a-4523-9bd9-1175d01f9c8a
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 16
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 95b149eda4d7dd751b597c4595aed73cec221957
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7633c96a375165f9c65ed2ec228f2bf549904dce
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver7935"></a>MSSQLSERVER_7935
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

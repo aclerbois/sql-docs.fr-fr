@@ -1,18 +1,19 @@
 ---
 title: SELECT (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: SELECT
-dev_langs: DMX
+f1_keywords:
+- SELECT
+dev_langs:
+- DMX
 helpviewer_keywords:
 - browsing mining model [Analysis Services]
 - TOP clause, SELECT
@@ -24,16 +25,15 @@ helpviewer_keywords:
 - statements [DMX], SELECT statement
 - WHERE clause, DMX
 ms.assetid: 32d9e8fd-796b-4e1c-ae59-73cd6f645485
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: a769e8dc2157140718a4a4c35e45fa9ccdd2e43d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 461f727337c4d03944b1f774cfddd91385aaf4c6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-dmx"></a>SELECT (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -111,9 +111,9 @@ WHERE < condition expression >
 ## <a name="predictions"></a>Prévisions  
  Vous pouvez utiliser deux types de syntaxe pour la création des prévisions :  
   
--   [SELECT FROM &#60; modèle &#62; JOINTURE de prédiction &#40; DMX &#41;](../dmx/select-from-model-prediction-join-dmx.md)  
+-   [SELECT FROM &#60;modèle&#62; PREDICTION JOIN &#40;DMX&#41;](../dmx/select-from-model-prediction-join-dmx.md)  
   
--   [SELECT FROM &#60; modèle &#62; &#40; DMX &#41;](../dmx/select-from-model-dmx.md)  
+-   [SELECT FROM &#60;modèle&#62; &#40;DMX&#41;](../dmx/select-from-model-dmx.md)  
   
  Le premier type de prévision permet de créer des prévisions complexes, en temps réel ou par traitement.  
   
@@ -130,26 +130,26 @@ SELECT FROM PREDICTION JOIN (<SELECT statement>) AS t, WHERE <SELECT statement>
 ## <a name="clause-syntax"></a>Syntaxe des clauses  
  En raison de la complexité de la navigation avec le **sélectionnez** instruction, les éléments de syntaxe détaillée et les arguments décrits par clause. Pour plus d'informations sur chaque clause, cliquez sur une rubrique dans la liste suivante :  
   
- [SELECT DISTINCT FROM &#60; modèle &#62; &#40; DMX &#41;](../dmx/select-distinct-from-model-dmx.md)  
+ [SELECT DISTINCT FROM &#60;modèle &#62; &#40;DMX&#41;](../dmx/select-distinct-from-model-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62;. CONTENU &#40; DMX &#41;](../dmx/select-from-model-content-dmx.md)  
+ [SELECT FROM &#60;modèle&#62;. CONTENU &#40;DMX&#41;](../dmx/select-from-model-content-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62;. CAS &#40; DMX &#41;](../dmx/select-from-model-cases-dmx.md)  
+ [SELECT FROM &#60;modèle&#62;. CAS &#40;DMX&#41;](../dmx/select-from-model-cases-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62;. SAMPLE_CASES &#40; DMX &#41;](../dmx/select-from-model-sample-cases-dmx.md)  
+ [SELECT FROM &#60;modèle&#62;. SAMPLE_CASES &#40;DMX&#41;](../dmx/select-from-model-sample-cases-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62;. DIMENSION_CONTENT &#40; DMX &#41;](../dmx/select-from-model-dimension-content-dmx.md)  
+ [SELECT FROM &#60;modèle&#62;. DIMENSION_CONTENT &#40;DMX&#41;](../dmx/select-from-model-dimension-content-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62; JOINTURE de prédiction &#40; DMX &#41;](../dmx/select-from-model-prediction-join-dmx.md)  
+ [SELECT FROM &#60;modèle&#62; PREDICTION JOIN &#40;DMX&#41;](../dmx/select-from-model-prediction-join-dmx.md)  
   
- [SELECT FROM &#60; modèle &#62; &#40; DMX &#41;](../dmx/select-from-model-dmx.md)  
+ [SELECT FROM &#60;modèle&#62; &#40;DMX&#41;](../dmx/select-from-model-dmx.md)  
   
- [SELECT FROM &#60; structure &#62;. CAS](../dmx/select-from-structure-cases.md)  
+ [SELECT FROM &#60;structure&#62;. CAS](../dmx/select-from-structure-cases.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)  
+ [Data Mining Extensions &#40;DMX&#41; instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)  
   
   

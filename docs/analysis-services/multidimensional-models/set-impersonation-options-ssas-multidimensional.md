@@ -1,32 +1,23 @@
 ---
-title: "Définir les Options d’emprunt d’identité (SSAS - multidimensionnel) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.asvs.sqlserverstudio.impersonationinfo.f1
-helpviewer_keywords: Impersonation Information dialog box
-ms.assetid: 8e127f72-ef23-44ad-81e6-3dd58981770e
-caps.latest.revision: "27"
-author: Minewiskan
+title: Définir les Options d’emprunt d’identité (SSAS - multidimensionnel) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 55ec66efd96a14bde8a9ea8b26488e18faadac0f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6c11064ecc87744999c31080e6a4d57a3849f5d2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="set-impersonation-options-ssas---multidimensional"></a>Définir les options d'emprunt d'identité (SSAS - Multidimensionnel)
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Lorsque vous créez un **source de données** de l’objet dans un modèle Analysis Services, un des paramètres que vous devez configurer est une option d’emprunt d’identité. Cette option détermine si Analysis Services utilise l'identité d'un compte d'utilisateur Windows spécifique lors d'opérations locales spécifiques associées à la connexion, telles que le téléchargement d'un fournisseur de données OLE DB ou la résolution d'informations de profil utilisateur dans des environnements qui prennent en charge les profils itinérants.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Quand vous créez un objet **source de données** dans un modèle Analysis Services, un des paramètres que vous devez configurer est une option d’emprunt d’identité. Cette option détermine si Analysis Services utilise l'identité d'un compte d'utilisateur Windows spécifique lors d'opérations locales spécifiques associées à la connexion, telles que le téléchargement d'un fournisseur de données OLE DB ou la résolution d'informations de profil utilisateur dans des environnements qui prennent en charge les profils itinérants.  
   
  Pour les connexions qui utilisent l'authentification Windows, l'option d'emprunt d'identité détermine également l'identité de l'utilisateur sous laquelle les requêtes s'exécutent sur la source de données externe. Par exemple, si vous définissez l’option d’emprunt d’identité sur **contoso\dbuser**, les requêtes utilisées pour récupérer les données pendant le traitement sont exécutées en tant que **contoso\dbuser** sur le serveur de base de données.  
   
@@ -53,7 +44,7 @@ ms.lasthandoff: 01/08/2018
  Toutes les options sont disponibles dans la boîte de dialogue, mais elles ne sont pertinentes pour tous les scénarios. Utilisez les informations suivantes pour déterminer la meilleure solution pour votre scénario.  
   
  **Utiliser un nom d'utilisateur et un mot de passe spécifiques**  
- Sélectionnez cette option pour que le [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] objet utiliser les informations d’identification de sécurité d’un compte d’utilisateur Windows spécifié dans ce format :  *\<nom de domaine >***\\***\<nom de compte d’utilisateur >*.  
+ Sélectionnez cette option pour que le [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] objet utiliser les informations d’identification de sécurité d’un compte d’utilisateur Windows spécifié dans ce format :  *\<nom de domaine >***\\***\<utilisateur nom du compte >*.  
   
  Sélectionnez cette option pour utiliser une identité d'utilisateur Windows dédiée et dotée de privilèges minimaux que vous avez créée spécifiquement à des fins d'accès aux données. Par exemple, si vous créez de manière régulière un compte à usage général pour la récupération de données utilisées dans des rapports, vous pouvez spécifier ce compte ici.  
   
@@ -104,7 +95,7 @@ ms.lasthandoff: 01/08/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer une source de données &#40;SSAS Multidimensionnel&#41;](../../analysis-services/multidimensional-models/create-a-data-source-ssas-multidimensional.md)   
- [Définir les propriétés de la source de données &#40;SSAS Multidimensionnel&#41;](../../analysis-services/multidimensional-models/set-data-source-properties-ssas-multidimensional.md)   
+ [Définir les propriétés de Source de données & #40 ; SSAS multidimensionnel & #41 ;](../../analysis-services/multidimensional-models/set-data-source-properties-ssas-multidimensional.md)   
 
   
   

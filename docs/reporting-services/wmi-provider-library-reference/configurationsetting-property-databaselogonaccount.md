@@ -1,31 +1,32 @@
 ---
-title: "DatabaseLogonAccount, propriété (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: DatabaseLogonAccount, propriété (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: DatabaseLogonAccount
-apilocation: reportingservices.mof
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- DatabaseLogonAccount
+apilocation:
+- reportingservices.mof
 apitype: MOFDef
-helpviewer_keywords: DatabaseLogonAccount property
+helpviewer_keywords:
+- DatabaseLogonAccount property
 ms.assetid: 55f2863f-1ac1-4519-b512-e7f11c0ea5ea
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: efbde911a4fe861310abb2678723c5e3696d95e0
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 61710393a480226e1257dc55dea566c1acfd2a81
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-property---databaselogonaccount"></a>Propriété ConfigurationSetting - DatabaseLogonAccount
   Spécifie le compte d'ouverture de session utilisé par le serveur de rapports lors de la connexion à la base de données du serveur de rapports. Lecture seule.  

@@ -1,28 +1,26 @@
 ---
-title: "Configurer l’option de configuration de serveur nested triggers | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur nested triggers | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: nested triggers option
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- nested triggers option
 ms.assetid: 29d7372b-d406-4a5b-80c6-a2d231d25211
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 47c74bc3622b2c817736dcf316f5e332b1b780a4
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: b3d9e2bf10d777d311a93ba77335b5a22beceb0b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-nested-triggers-server-configuration-option"></a>Configurer l'option de configuration de serveur nested triggers
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

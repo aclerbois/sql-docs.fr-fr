@@ -1,16 +1,14 @@
 ---
 title: sp_describe_cursor_tables (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_describe_cursor_tables_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_describe_cursor_tables
 ms.assetid: 02c0f81a-54ed-4ca4-aa4f-bb7463a9ab9a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2803fdaf84b2a31a98b8fda50a5766008e71a3c9
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 767cf7be622e557f78e207cfc8fecb9c4b0707e9
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdescribecursortables-transact-sql"></a>sp_describe_cursor_tables (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -71,7 +68,7 @@ sp_describe_cursor_tables
  Nom d'une variable de curseur associée à un curseur ouvert. *Ne variable_de_curseur_entrée* est **nvarchar (128)**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="cursors-returned"></a>Curseurs retournés  
  sp_describe_cursor_tables encapsule son rapport sous la forme un [!INCLUDE[tsql](../../includes/tsql-md.md)] **curseur** paramètre de sortie. Cela permet aux lots, procédures stockées et déclencheurs [!INCLUDE[tsql](../../includes/tsql-md.md)] de travailler sur une seule ligne de sortie à la fois. Par ailleurs, la procédure ne peut pas être appelée directement depuis les fonctions d'API. Le **curseur** paramètre de sortie doit être lié à une variable de programme, mais les API ne prennent pas en charge la liaison **curseur** variables ou des paramètres.  
@@ -92,7 +89,7 @@ sp_describe_cursor_tables
 ## <a name="remarks"></a>Notes  
  La procédure sp_describe_cursor_tables décrit les tables de base qui sont référencées par un curseur de serveur. Utilisez sp_describe_cursor_columns pour obtenir la description des attributs du jeu de résultats retourné par le curseur. Utilisez la procédure sp_describe_cursor pour obtenir la description des caractéristiques globales du curseur, par exemple sa capacité à permettre le défilement et les mises à jour. Utilisez la procédure stockée sp_cursor_list pour obtenir un rapport sur les curseurs côté serveur [!INCLUDE[tsql](../../includes/tsql-md.md)] qui sont visibles à la connexion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle public.  
   
 ## <a name="examples"></a>Exemples  
@@ -138,11 +135,11 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Curseurs](../../relational-databases/cursors.md)   
- [CURSOR_STATUS &#40; Transact-SQL &#41;](../../t-sql/functions/cursor-status-transact-sql.md)   
+ [CURSOR_STATUS &#40;Transact-SQL&#41;](../../t-sql/functions/cursor-status-transact-sql.md)   
  [DECLARE CURSOR &#40;Transact-SQL&#41;](../../t-sql/language-elements/declare-cursor-transact-sql.md)   
- [sp_cursor_list &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-cursor-list-transact-sql.md)   
- [sp_describe_cursor &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-transact-sql.md)   
- [sp_describe_cursor_columns &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-columns-transact-sql.md)   
+ [sp_cursor_list &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-cursor-list-transact-sql.md)   
+ [sp_describe_cursor &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-transact-sql.md)   
+ [sp_describe_cursor_columns &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-columns-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

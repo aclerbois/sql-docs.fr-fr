@@ -1,30 +1,29 @@
 ---
-title: "Recherche de plus d’informations sur SQL Server Native Client | Documents Microsoft"
-ms.custom: 
+title: Recherche de plus d’informations sur SQL Server Native Client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQLNCLI, additional resources
 - SQL Server Native Client, additional resources
 ms.assetid: 1bbe4ea4-dda4-47eb-aca1-ddcc3829a6f4
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d52096719d1bac4dad1613ad9b87dc8a71ebf59a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 639ca13ec6cedf95c08ed8be75e25c5a40dcd31b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="finding-more-sql-server-native-client-information"></a>Recherche d'informations supplémentaires concernant SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

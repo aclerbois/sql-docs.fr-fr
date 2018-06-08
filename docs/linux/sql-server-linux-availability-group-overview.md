@@ -1,25 +1,22 @@
 ---
-title: "Toujours sur les groupes de disponibilité pour SQL Server sur Linux | Documents Microsoft"
-description: 
+title: Toujours sur les groupes de disponibilité pour SQL Server sur Linux | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 11/27/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: e37742d4-541c-4d43-9ec7-a5f9b2c0e5d1
-ms.workload: On Demand
-ms.openlocfilehash: 54fec5a177d5edf463853d230a56c28eeb1b0f7c
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 7de4097fdc843097cbd2865e4a4f3986c392ac04
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="always-on-availability-groups-on-linux"></a>Toujours sur les groupes de disponibilité sur Linux
 
@@ -53,7 +50,7 @@ Un type de cluster None signifie qu’il n’est pas obligatoire pour, ni le gro
 
 Type de cluster est stocké dans le [!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)] vue de gestion dynamique (DMV) `sys.availability_groups`, dans les colonnes `cluster_type` et `cluster_type_desc`.
 
-## <a name="requiredsynchronizedsecondariestocommit"></a>required\_synchronized\_secondaries\_to\_commit
+## <a name="requiredsynchronizedsecondariestocommit"></a>requis\_synchronisé\_secondaires\_à\_validation
 
 Vous débutez avec [!INCLUDE[sssql17-md](../includes/sssql17-md.md)] est un paramètre qui est utilisé par les groupes de disponibilité appelés `required_synchronized_secondaries_to_commit`. Le groupe de disponibilité vous indique le nombre de réplicas secondaires qui doivent être en parallèle avec le réplica principal. Cela permet des éléments tels que le basculement automatique (uniquement lors d’intégrer STIMULATEUR avec un type de cluster d’externes) et contrôle le comportement des éléments comme la disponibilité des principales si le nombre approprié de réplicas secondaires est en ligne ou hors connexion. Pour en savoir plus sur cette procédure, consultez [haute disponibilité et protection des données pour les configurations de groupe de disponibilité](sql-server-linux-availability-group-ha.md). Le `required_synchronized_secondaries_to_commit` valeur est la valeur par défaut et gérée par STIMULATEUR /[!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)]. Vous pouvez substituer manuellement cette valeur.
 

@@ -1,32 +1,27 @@
 ---
 title: MSSQLSERVER_11001 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - "12001"
 helpviewer_keywords:
 - 11001 (Database Engine error)
 ms.assetid: 53d4d63a-61e3-441f-bfe9-9d44f7a05fd4
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 10
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 20fbde618c701e00b8ff84d991c414a89c4c2891
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 31efc57b594dc9705af096f219fe5bb212a5c801
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver11001"></a>MSSQLSERVER_11001
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -48,7 +43,7 @@ Le client [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas 
 ## <a name="user-action"></a>Action de l'utilisateur  
 Assurez-vous que vous avez entré le nom de serveur correct sur le client et que vous pouvez résoudre ce nom à partir du client. Pour vérifier la résolution du nom TCP/IP, vous pouvez exécuter la commande **ping** dans le système d’exploitation Windows.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [Protocoles réseau et bibliothèques réseau](~/sql-server/install/network-protocols-and-network-libraries.md)  
 [Configuration du réseau client](~/database-engine/configure-windows/client-network-configuration.md)  
 [Configurer des protocoles clients](~/database-engine/configure-windows/configure-client-protocols.md)  

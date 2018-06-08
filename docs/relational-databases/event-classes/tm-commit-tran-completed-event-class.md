@@ -1,34 +1,30 @@
 ---
-title: "TM: Commit Tran Completed, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: 'TM: Commit Tran Completed, classe d’événements | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'TM: Commit Tran Completed event class'
 ms.assetid: c102de15-f312-42a7-b52a-fc4879cc43aa
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd0d440229fd85390e14d0166d1113d8273b990f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c037271ab9cc8b93e85ca93d8f713a0c190e2216
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tm-commit-tran-completed-event-class"></a>TM: Commit Tran Completed, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements TM: Commit Tran Completed indique qu'une demande COMMIT TRANSACTION a été exécutée. La demande a été envoyée à partir du client via l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction sera démarrée une fois la transaction actuelle validée.  
+  La classe d'événements TM: Commit Tran Completed indique qu'une demande COMMIT TRANSACTION a été exécutée. La demande a été envoyée à partir du client via l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction sera démarrée une fois la transaction actuelle validée.  
   
 ## <a name="tm-commit-tran-completed-event-class-data-columns"></a>Colonnes de la classe d'événements TM: Commit Tran Completed  
   

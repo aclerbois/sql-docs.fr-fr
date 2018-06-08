@@ -1,28 +1,27 @@
 ---
-title: "ListSSLCertificateBindings, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: ListSSLCertificateBindings, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ListSSLCertificateBindings method
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ListSSLCertificateBindings method
 ms.assetid: d12d280c-9b6f-47a8-bcd9-34cde31c8886
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 60ed173187a93b41979abcefa2cb81d510c422ac
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d7b75526aafe7bc9a7379a3d73d526c64e1c583a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---listsslcertificatebindings"></a>Méthode ConfigurationSetting - ListSSLCertificateBindings
   Retourne la liste des certificats SSL installés sur l'ordinateur.  

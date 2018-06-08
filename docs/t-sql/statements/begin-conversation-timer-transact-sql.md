@@ -1,16 +1,14 @@
 ---
 title: BEGIN CONVERSATION TIMER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CONVERSATION
@@ -35,16 +33,15 @@ helpviewer_keywords:
 - starting timers [Service Broker]
 - http://schemas.microsoft.com/SQL/ServiceBroker/DialogTimer message
 ms.assetid: 98e49b3f-a38f-4180-8171-fa9cb30db4cb
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 28
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6f85695e3d8263936d053979074a92b52fba7259
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bff71c5286d0bf48e43bda62cdc4b7c26a10b038
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="begin-conversation-timer-transact-sql"></a>BEGIN CONVERSATION TIMER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,31 +1,29 @@
 ---
-title: "Répliquer les modifications de schéma | Microsoft Docs"
-ms.custom: 
+title: Répliquer les modifications de schéma | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], schema changes
 - schemas [SQL Server replication], replicating changes
 ms.assetid: c09007f0-9374-4f60-956b-8a87670cd043
-caps.latest.revision: 
+caps.latest.revision: 43
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb143c1cebb01000ca5091d2a02ddb9c3f2e298a
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 0079994dff6c7f2b36b52a331f40b8ceb52afbb6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replicate-schema-changes"></a>Répliquer les modifications de schéma
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

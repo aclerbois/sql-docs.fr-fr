@@ -1,15 +1,14 @@
 ---
-title: "Création de programmes SMO | Documents Microsoft"
-ms.custom: 
+title: Création de programmes SMO | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Visual Basic [SMO]
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - SQL Server Management Objects, programming
 - SMO [SQL Server], programming
 ms.assetid: 7d2f0bcf-f1ae-45b8-bc3f-7aea4fae7e45
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c43d14622b63ef9046be7317448c4ea3abe65eb1
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 036f5fa2b276d5cb078fdf6e9528b1877280f94e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-smo-programs"></a>Création de programmes SMO
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]

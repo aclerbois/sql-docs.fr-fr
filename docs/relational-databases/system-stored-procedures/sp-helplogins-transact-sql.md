@@ -1,16 +1,14 @@
 ---
 title: sp_helplogins (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helplogins_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_helplogins
 ms.assetid: f9ad3767-5b9f-420d-8922-b637811404f7
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 75e0521889f38db02bfdc9eabd3332d3fa76afb9
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 40a25164c12e9a1c886a7cba6b8f9b0277daf0ed
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelplogins-transact-sql"></a>sp_helplogins (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ sp_helplogins [ [ @LoginNamePattern = ] 'login' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@LoginNamePattern =** ] **'***connexion***'**  
- Est un nom de connexion. *connexion* est **sysname**, avec NULL comme valeur par défaut. *connexion* doit exister s’il est spécifié. Si *connexion* est ne pas spécifié, les informations sur toutes les connexions sont retournées.  
+ Est un nom de connexion. *login* est de type **sysname**, avec NULL comme valeur par défaut. *connexion* doit exister s’il est spécifié. Si *connexion* est ne pas spécifié, les informations sur toutes les connexions sont retournées.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
@@ -76,7 +73,7 @@ sp_helplogins [ [ @LoginNamePattern = ] 'login' ]
 ## <a name="remarks"></a>Notes  
  Avant de supprimer un compte de connexion, utilisez **sp_helplogins** pour identifier les comptes d’utilisateur qui sont mappées à la connexion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance dans le **securityadmin** rôle serveur fixe.  
   
  Pour identifier tous les comptes d’utilisateur mappés à une connexion donnée, **sp_helplogins** doit vérifier toutes les bases de données du serveur. Par conséquent, chaque base de données du serveur doit remplir une des conditions suivantes :  
@@ -108,9 +105,9 @@ John        pubs     John       User
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
- [sp_helpdb &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpdb-transact-sql.md)   
- [sp_helpuser &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpuser-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [sp_helpdb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdb-transact-sql.md)   
+ [sp_helpuser &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpuser-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

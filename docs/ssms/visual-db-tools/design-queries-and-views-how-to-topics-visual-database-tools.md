@@ -1,18 +1,17 @@
 ---
-title: "Rubriques de procédures relatives à la conception de requêtes et de vues (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Rubriques de procédures relatives à la conception de requêtes et de vues (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
-- "• vs.solutionexplorer.file.query"
+- • vs.solutionexplorer.file.query
 - vs.solutionexplorer.file.query
 helpviewer_keywords:
 - queries [Visual Database Tools]
@@ -23,19 +22,19 @@ helpviewer_keywords:
 - Query Designer [SQL Server], about Query Designer
 - Visual Database Tools [SQL Server], queries
 ms.assetid: 200903f4-1208-4563-9dca-26aabaacfa20
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 33b5f17a28639d750e1c3df36c5619d33740c3db
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 13603df9721d8d58c86513261ec0da2ae327ab4d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="design-queries-and-views-how-to-topics-visual-database-tools"></a>Rubriques de procédures relatives à la conception de requêtes et de vues (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Le Concepteur de requêtes et de vues vous permet de créer et de gérer les éléments d’extraction et de manipulation des données de votre application.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Le Concepteur de requêtes et de vues vous permet de créer et de gérer les éléments d'extraction et de manipulation des données de votre application.  
   
 ## <a name="in-this-section"></a>Dans cette section  
 [Ouvrir le Concepteur de requêtes et de vues &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/open-the-query-and-view-designer-visual-database-tools.md)  

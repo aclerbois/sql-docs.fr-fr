@@ -1,32 +1,29 @@
 ---
-title: "Exemple de propriété InternetTimeout (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriété InternetTimeout (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - InternetTimeout property [ADO], VC++ example
 ms.assetid: 88b6d05c-d4eb-4ab1-bbe2-95d146237f94
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3fcad572c7aaf8325cf77c76cdcb57cf59b3ba65
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b6ea81924a976b47cae193acb8e57d94476cfd23
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="internettimeout-property-example-vc"></a>Exemple de propriété InternetTimeout (VC ++)
 > [!IMPORTANT]

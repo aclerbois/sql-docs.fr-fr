@@ -1,16 +1,14 @@
 ---
-title: sysmail_help_profile_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_help_profile_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_help_profile_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_help_profile_sp
 ms.assetid: d7169a8e-92b1-49eb-9124-3b2f69755ddb
-caps.latest.revision: 
+caps.latest.revision: 41
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 486d0b8e494cd4602c519cc6659460ea6ebef5b7
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 4aa2e8bb227da4fdb3305c96de0be04cd4a877ea
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailhelpprofilesp-transact-sql"></a>sysmail_help_profile_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,10 +43,10 @@ sysmail_help_profile_sp  [   [ @profile_id = ] profile_id | [ @profile_name = ] 
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  Identificateur du profil pour lequel des informations doivent être renvoyées. *profile_id* est **int**, avec NULL comme valeur par défaut.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du profil pour lequel des informations doivent être renvoyées. *profile_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -110,6 +107,6 @@ profile_id  name                          description
   
 ## <a name="see-also"></a>Voir aussi  
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

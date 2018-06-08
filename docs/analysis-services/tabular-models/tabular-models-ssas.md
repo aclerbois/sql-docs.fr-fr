@@ -1,27 +1,19 @@
 ---
 title: Les modèles tabulaires | Documents Microsoft
-ms.custom: ''
-ms.date: 03/30/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: 80027288-c203-4667-a3e1-40fa572b4975
-caps.latest.revision: 17
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 54cd62aa50aff198d2397843c528f09a1a2fc83b
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 8e85a618379b5b3c6da010c8b25782ed6836edb4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-models"></a>Modèles tabulaires
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]

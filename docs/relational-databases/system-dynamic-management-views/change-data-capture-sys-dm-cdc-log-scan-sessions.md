@@ -1,16 +1,12 @@
 ---
-title: sys.dm_cdc_log_scan_sessions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_cdc_log_scan_sessions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_cdc_log_scan_sessions
@@ -23,16 +19,15 @@ helpviewer_keywords:
 - change data capture [SQL Server], log scan reporting
 - sys.dm_cdc_log_scan_sessions dynamic management view
 ms.assetid: d337e9d0-78b1-4a07-8820-2027d0b9f87c
-caps.latest.revision: 
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f7d81782bac9590aac7fb1905304aec53f531db1
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 74a99cc08a030327c4f0b70f11c64f6c2a952dec
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="change-data-capture---sysdmcdclogscansessions"></a>Capture de données modifiées - sys.dm_cdc_log_scan_sessions
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -59,7 +54,7 @@ ms.lasthandoff: 02/03/2018
 |**first_begin_cdc_lsn**|**nvarchar(23)**|Premier numéro séquentiel dans le journal qui contenait des transactions de capture des données modifiées.<br /><br /> Lorsque **session_id** = 0, le premier numéro séquentiel qui contenait des transactions de capture de données modifiées.|  
 |**last_commit_cdc_lsn**|**nvarchar(23)**|Numéro séquentiel dans le journal du dernier enregistrement du journal de validation qui contenait des transactions de capture des données modifiées.<br /><br /> Lorsque **session_id** = 0, le dernier enregistrement du journal LSN de validation pour toute session qui contenait des transactions de capture de données de modification|  
 |**last_commit_cdc_time**|**datetime**|Heure de traitement du dernier enregistrement du journal de validation qui contenait des transactions de capture des données modifiées.<br /><br /> Lorsque **session_id** = 0, l’heure du dernier journal de validation enregistrer pour n’importe quelle session qui contenait transactions de capture de données modifiées.|  
-|**latency**|**int**|La différence, en secondes, entre **end_time** et **last_commit_cdc_time** dans la session. Ce compteur est rempli à la fin de la phase 7.<br /><br /> Lorsque **session_id** = 0, la dernière valeur de latence différente de zéro enregistrée par une session.|  
+|**Temps de latence**|**int**|La différence, en secondes, entre **end_time** et **last_commit_cdc_time** dans la session. Ce compteur est rempli à la fin de la phase 7.<br /><br /> Lorsque **session_id** = 0, la dernière valeur de latence différente de zéro enregistrée par une session.|  
 |**empty_scan_count**|**int**|Nombre de sessions consécutives qui ne contenaient aucune transaction de capture des données modifiées.|  
 |**failed_sessions_count**|**int**|Nombre de sessions qui ont échoué.|  
   
@@ -67,7 +62,7 @@ ms.lasthandoff: 02/03/2018
  Les valeurs dans cette vue de gestion dynamique sont réinitialisées à chaque démarrage de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 ## <a name="permissions"></a>Autorisations  
- Requiert l’autorisation VIEW DATABASE STATE pour interroger le **sys.dm_cdc_log_scan_sessions** vue de gestion dynamique. Pour plus d’informations sur les autorisations sur les vues de gestion dynamique, consultez [les fonctions et vues de gestion dynamique &#40; Transact-SQL &#41; ](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).  
+ Requiert l’autorisation VIEW DATABASE STATE pour interroger le **sys.dm_cdc_log_scan_sessions** vue de gestion dynamique. Pour plus d’informations sur les autorisations sur les vues de gestion dynamique, consultez [fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).  
   
 ## <a name="examples"></a>Exemples  
  L'exemple suivant retourne des informations pour la session la plus active.  
@@ -86,7 +81,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys.dm_cdc_errors &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/change-data-capture-sys-dm-cdc-errors.md)  
+ [Sys.dm_cdc_errors &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/change-data-capture-sys-dm-cdc-errors.md)  
   
   
 

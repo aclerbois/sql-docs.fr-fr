@@ -1,15 +1,13 @@
 ---
-title: sp_execute_external_script (Transact-SQL) | Microsoft Docs
+title: sp_execute_external_script (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 01/22/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: system-stored-procedures
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_execute_external_script
 ms.assetid: de4e1fcd-0e1a-4af3-97ee-d1becc7f04df
-caps.latest.revision: ''
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 487b669cc7d664194cd769bde564faec9454479b
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 5660860a3a03a268b0903a0222753f1ea9bc5382
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spexecuteexternalscript-transact-sql"></a>sp_execute_external_script (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -68,10 +65,10 @@ sp_execute_external_script
   
  Valeur par défaut est `InputDataSet`.  
   
- [ @input_data_1 =  N'*input_data_1*' ]  
+ [ @input_data_1 = N'*input_data_1*']  
  Spécifie les données d’entrée utilisées par le script externe sous la forme d’un [!INCLUDE[tsql](../../includes/tsql-md.md)] requête. Type de données de *input_data_1* est **nvarchar (max)**.
   
- [ @output_data_1_name =  N'*output_data_1_name*' ]  
+ [ @output_data_1_name = N'*output_data_1_name*']  
  Spécifie le nom de la variable dans le script externe qui contient les données à retourner à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à la fin de l’appel de procédure stockée. Le type de données de la variable de script externe dépend de la langue. Pour R, la sortie doit être une trame de données. Pour Python, la sortie doit être une trame de données pandas. *output_data_1_name* est **sysname**.  
   
  Valeur par défaut est « OutputDataSet ».  
@@ -255,7 +252,7 @@ Pour calculer les scores, vous pouvez également utiliser la fonction [PREDICT](
  [Bibliothèques R et les Types de données R](../../advanced-analytics/r/r-libraries-and-data-types.md)  
  [SQL Server R Services](../../advanced-analytics/r/sql-server-r-services.md)   
  [Problèmes connus relatifs à SQL Server d’apprentissage Services](../../advanced-analytics/known-issues-for-sql-server-machine-learning-services.md)   
- [CREATE EXTERNAL LIBRARY &#40;Transact-SQL&#41;](../../t-sql/statements/create-external-library-transact-sql.md)  
+ [CRÉER une bibliothèque externe &#40;Transact-SQL&#41;](../../t-sql/statements/create-external-library-transact-sql.md)  
  [sp_prepare &#40;Transact SQL&#41;](../../relational-databases/system-stored-procedures/sp-prepare-transact-sql.md)   
  [sp_configure &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md)   
  [external scripts enabled (option de configuration de serveur)](../../database-engine/configure-windows/external-scripts-enabled-server-configuration-option.md)   

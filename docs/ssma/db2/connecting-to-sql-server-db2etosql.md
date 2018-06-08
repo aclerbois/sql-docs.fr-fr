@@ -1,30 +1,28 @@
 ---
-title: "Connexion à SQL Server (DB2eToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connexion à SQL Server (DB2eToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-db2
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: b59803cb-3cc6-41cc-8553-faf90851410e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1530b84e785a0c707f4a0d8ca66b273ca697ccde
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d257c6b2569eec1677577e8fe98a0fe619ab60f1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-sql-server-db2etosql"></a>Connexion à SQL Server (DB2eToSQL)
 Pour migrer des bases de données DB2 [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] 2012, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]2014 ou Azure SQL DB vous devez vous connecter à un de ces instances de la cible de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à toutes les bases de données dans l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et affiche les métadonnées de la base de données dans le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Explorateur de métadonnées. SSMA stocke des informations sur l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] vous êtes connecté à, mais ne stocke pas les mots de passe.  
@@ -49,7 +47,7 @@ Si le compte qui est utilisé pour se connecter à [!INCLUDE[ssNoVersion](../../
 ## <a name="establishing-a-sql-server-connection"></a>L’établissement d’une connexion SQL Server  
 Avant de convertir les objets de base de données DB2 à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] syntaxe, vous devez établir une connexion à l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] où vous souhaitez migrer les bases de données ou la base de données DB2.  
   
-Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de DB2 après vous être connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Pour plus d’informations, consultez [mappage des schémas de DB2 à des schémas SQL Server &#40; DB2ToSQL &#41;](../../ssma/db2/mapping-db2-schemas-to-sql-server-schemas-db2tosql.md).  
+Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de DB2 après vous être connecté à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Pour plus d’informations, consultez [mappage des schémas de DB2 à des schémas SQL Server &#40;DB2ToSQL&#41;](../../ssma/db2/mapping-db2-schemas-to-sql-server-schemas-db2tosql.md).  
   
 > [!IMPORTANT]  
 > Avant d’essayer de se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], assurez-vous que l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est en cours d’exécution et peut accepter des connexions.  
@@ -115,14 +113,14 @@ Métadonnées relatives à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.
 ## <a name="next-step"></a>Étape suivante  
 L’étape suivante de la migration dépend des besoins de votre projet :  
   
--   Pour personnaliser le mappage entre les schémas de DB2 et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données et des schémas, consultez [les schémas de mappage de DB2 pour les schémas SQL Server &#40; DB2ToSQL &#41;](../../ssma/db2/mapping-db2-schemas-to-sql-server-schemas-db2tosql.md).  
+-   Pour personnaliser le mappage entre les schémas de DB2 et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données et des schémas, consultez [de schémas SQL Server, les schémas de mappage DB2 &#40;DB2ToSQL&#41;](../../ssma/db2/mapping-db2-schemas-to-sql-server-schemas-db2tosql.md).  
   
--   Pour personnaliser les options de configuration pour les projets, consultez [paramètres du projet &#40; Conversion de &#41; &#40; DB2ToSQL &#41; ](../../ssma/db2/project-settings-conversion-db2tosql.md) et rubriques connexes.  
+-   Pour personnaliser les options de configuration pour les projets, consultez [les paramètres de projet &#40;Conversion&#41; &#40;DB2ToSQL&#41; ](../../ssma/db2/project-settings-conversion-db2tosql.md) et rubriques connexes.  
   
--   Pour personnaliser le mappage des types de données source et cible, consultez [DB2 de mappage et les Types de données SQL Server &#40; DB2ToSQL &#41;](../../ssma/db2/mapping-db2-and-sql-server-data-types-db2tosql.md).  
+-   Pour personnaliser le mappage des types de données source et cible, consultez [DB2 de mappage et les Types de données SQL Server &#40;DB2ToSQL&#41;](../../ssma/db2/mapping-db2-and-sql-server-data-types-db2tosql.md).  
   
--   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données DB2 dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] définitions d’objets. Pour plus d’informations, consultez [conversion de schémas de DB2 &#40; DB2ToSQL &#41;](../../ssma/db2/converting-db2-schemas-db2tosql.md).  
+-   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données DB2 dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] définitions d’objets. Pour plus d’informations, consultez [conversion de schémas de DB2 &#40;DB2ToSQL&#41;](../../ssma/db2/converting-db2-schemas-db2tosql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de DB2 pour SQL Server &#40; DB2ToSQL &#41;](../../ssma/db2/migrating-db2-databases-to-sql-server-db2tosql.md)  
+[Bases de données DB2 migration vers SQL Server &#40;DB2ToSQL&#41;](../../ssma/db2/migrating-db2-databases-to-sql-server-db2tosql.md)  
   

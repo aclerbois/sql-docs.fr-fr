@@ -1,25 +1,23 @@
 ---
-title: "Messagerie de base de données et les alertes par courrier électronique avec l’Agent SQL sur Linux | Documents Microsoft"
-description: "Cet article décrit comment utiliser la messagerie de base de données et les alertes par courrier électronique avec SQL Server sur Linux"
+title: Messagerie de base de données et les alertes par courrier électronique avec l’Agent SQL sur Linux | Documents Microsoft
+description: Cet article décrit comment utiliser la messagerie de base de données et les alertes par courrier électronique avec SQL Server sur Linux
 author: meet-bhagdev
 ms.author: meetb
 manager: craigg
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: tbd
-ms.workload: Inactive
-ms.openlocfilehash: 69d1ff539d2e488030f32b9246f1ccf40d92bdd8
-ms.sourcegitcommit: 57f45ee008141ddf009b1c1195442529e0ea1508
+ms.openlocfilehash: f9ce71d799414171019143912bde19330742ec27
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585191"
 ---
 # <a name="db-mail-and-email-alerts-with-sql-agent-on-linux"></a>Messagerie de base de données et les alertes par courrier électronique avec l’Agent SQL sur Linux
 
@@ -101,7 +99,7 @@ Vous pouvez utiliser les utilitaires de mssql-conf ou des variables d’environn
 
 ```bash
 # via mssql-conf
-sudo /opt/mssq/bin/mssql-conf set sqlagent.databasemailprofile default
+sudo /opt/mssql/bin/mssql-conf set sqlagent.databasemailprofile default
 # via environment variable
 MSSQL_AGENT_EMAIL_PROFILE=default
 ```

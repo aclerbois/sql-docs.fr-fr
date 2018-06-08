@@ -1,28 +1,26 @@
 ---
-title: "SQLGetStmtOption (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLGetStmtOption (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLGetStmtOption function [ODBC], Cursor Library
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLGetStmtOption function [ODBC], Cursor Library
 ms.assetid: 986170b3-fba8-4323-9224-60b381c7effb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d068467091e53ebe3714cfc85fc606480f9339f0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d360146c264f68b5662157f2ce5f7385b2cfb237
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetstmtoption-cursor-library"></a>SQLGetStmtOption (bibliothèque de curseurs)
 > [!IMPORTANT]  

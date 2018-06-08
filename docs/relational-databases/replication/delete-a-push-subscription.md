@@ -1,33 +1,31 @@
 ---
-title: "Supprimer un abonnement par émission de données | Microsoft Docs"
-ms.custom: 
+title: Supprimer un abonnement par émission de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - removing subscriptions
 - push subscriptions [SQL Server replication], deleting
 - deleting subscriptions
 - subscriptions [SQL Server replication], push
 ms.assetid: 3c4847e2-aed9-4488-b45d-8164422bdb10
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f81c42beb97dc1546fcc502ac3ee67f0e8aa8e9c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 6815f11e4b21336b7a25eabde3c3d5cdc2669f4d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-a-push-subscription"></a>Supprimer un abonnement par émission (push)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

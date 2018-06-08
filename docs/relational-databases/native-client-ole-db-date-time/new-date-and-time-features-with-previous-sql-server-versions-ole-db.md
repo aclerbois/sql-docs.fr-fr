@@ -1,27 +1,26 @@
 ---
-title: "Nouvelles fonctionnalités de Date et heure avec les versions SQL Server antérieures (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Nouvelles fonctionnalités de Date et heure avec les versions SQL Server antérieures (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-date-time
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 96976bac-018c-47cc-b1b2-fa9605eb55e5
-caps.latest.revision: 
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63d848005d0a1745070caf209f52f49dd80db1d2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5cb50889a9cb584e5f22d5f2e77960dba567fda1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-date-and-time-features-with-previous-sql-server-versions-ole-db"></a>Nouvelles fonctionnalités de Date et heure avec les versions SQL Server antérieures (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -45,7 +44,7 @@ ms.lasthandoff: 01/25/2018
 |DBTYPE_DBTIME||Time(7)|Échec : littéral d'heure non valide.|OK|  
 |DBTYPE_DBTIMESTAMP|||Échec : littéral d'heure non valide.|OK|  
 |DBTYPE_DBTIMESTAMP||Datetime2(3)|OK|OK|  
-|DBTYPE_DBTIMESTAMP||Datetime2(7)|OK|OK|  
+|DBTYPE_DBTIMESTAMP||Datetime2 (7)|OK|OK|  
 |DBTYPE_DBDATE|Smalldatetime|Date|OK|OK|  
 |DBTYPE_DBTIMESTAMP|||Champs d'heure définis à zéro.|IRowsetChange échoue en raison d’une troncation de chaîne si le champ d’heure est différent de zéro.|  
 |DBTYPE_DBTIME||Time(0)|OK|OK|  
@@ -167,12 +166,12 @@ ms.lasthandoff: 01/25/2018
  S'il existe une conversion cliente prise en charge du type de mémoire tampon en type serveur pour la version du serveur de la connexion, tous les types de mémoires tampons clients peuvent être utilisés. Dans ce contexte, *type de serveur* signifie que le type spécifié par ICommandWithParameters::SetParameterInfo ou impliquée par le type de tampon si ICommandWithParameters::SetParameterInfo n’a pas été appelée. En d'autres termes, DBTYPE_DBTIME2 et DBTYPE_DBTIMESTAMPOFFSET peuvent être utilisés avec des serveurs de bas niveau, ou lorsque DataTypeCompatibility=80, si la conversion cliente vers un type serveur pris en charge réussit. Bien entendu, si le type serveur est incorrect, une erreur peut toujours être signalée par le serveur lorsque ce dernier ne peut pas effectuer de conversion implicite vers le type serveur effectif.  
   
 ## <a name="sspropinitdatatypecompatibility-behavior"></a>Comportement de SSPROP_INIT_DATATYPECOMPATIBILITY  
- Lorsque SSPROP_INIT_DATATYPECOMPATIBILITY a la valeur sspropval_datatypecompatibility_sql2000, les types date/heure de nouveau et les métadonnées associées apparaissent aux clients tels qu’ils apparaissent pour les clients de bas niveau, comme décrit dans [modifications de copie en bloc pour améliorées de Date et heure Types &#40; OLE DB et ODBC &#41;](../../relational-databases/native-client-odbc-date-time/bulk-copy-changes-for-enhanced-date-and-time-types-ole-db-and-odbc.md).  
+ Lorsque SSPROP_INIT_DATATYPECOMPATIBILITY a la valeur sspropval_datatypecompatibility_sql2000, les types date/heure de nouveau et les métadonnées associées apparaissent aux clients tels qu’ils apparaissent pour les clients de bas niveau, comme décrit dans [modifications de la copie en bloc Améliorées des Types de Date et heure &#40;OLE DB et ODBC&#41;](../../relational-databases/native-client-odbc-date-time/bulk-copy-changes-for-enhanced-date-and-time-types-ole-db-and-odbc.md).  
   
 ## <a name="comparability-for-irowsetfind"></a>Comparabilité pour IRowsetFind  
  Tous les opérateurs de comparaison sont autorisés pour les nouveaux types date/heure, car ils apparaissent sous forme de types chaîne et non sous forme de types date/heure.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Date et heure améliorations &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-date-time/date-and-time-improvements-ole-db.md)  
+ [Date et heure améliorations & #40 ; OLE DB & #41 ;](../../relational-databases/native-client-ole-db-date-time/date-and-time-improvements-ole-db.md)  
   
   

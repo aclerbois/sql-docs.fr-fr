@@ -1,15 +1,14 @@
 ---
-title: "Programmation de tâches spécifiques | Documents Microsoft"
-ms.custom: 
+title: Programmation de tâches spécifiques | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Visual Basic [SMO]
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - SMO [SQL Server], programming
 - SMO [SQL Server], tasks
 ms.assetid: a15949ef-88d9-4205-892e-0b66588b4fcc
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c9e3323e743360d3a6ce2a340c87ab7dac7720b
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6878e0e429bf826d4dc3f6b57f8df42645f22dd5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="programming-specific-tasks"></a>Programmation de tâches spécifiques
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]

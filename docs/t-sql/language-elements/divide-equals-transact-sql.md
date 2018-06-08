@@ -1,16 +1,14 @@
 ---
-title: "(Affectation après division) (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: (Affectation après division) (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - /=_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - augmented operators, /=
 - /= (divide equals)
 ms.assetid: 9ab25d1e-5c98-4dd7-b2cd-9f49499c86e7
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0b32481d1595c7414ca3a364e2cd3984d39c69cc
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 270831f644e62cd375a71652ca3a98d756a6461b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="-division-assignment-transact-sql"></a>/= (Affectation après division) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all_md](../../includes/tsql-appliesto-ss2008-all-md.md)]

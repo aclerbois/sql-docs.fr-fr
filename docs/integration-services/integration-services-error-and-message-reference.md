@@ -1,32 +1,30 @@
 ---
-title: "Guide de référence des erreurs et des messages propres à Integration Services | Microsoft Docs"
-ms.custom: 
+title: Guide de référence des erreurs et des messages propres à Integration Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - error numbers [Integration Services]
 - hresults [Integration Services]
 - errors [Integration Services], listed
 ms.assetid: 2c825c07-5074-42ad-90ea-0dc5a588dcf7
-caps.latest.revision: 
+caps.latest.revision: 44
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 16f1793a182cf762882a90889ec8576c9fc6d99e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 55b664bda08e6842333fed67dafeab6e58a605e5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-error-and-message-reference"></a>Guide de référence des erreurs et des messages propres à Integration Services
   Les tableaux suivants répertorient les erreurs, les avertissements et les messages d'information prédéfinis de [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] , par ordre croissant en fonction de leur numéro pour chaque catégorie, avec leurs codes numériques et noms symboliques. Chacune de ces erreurs est définie comme un champ de la classe <xref:Microsoft.SqlServer.Dts.Runtime.Hresults> dans l’espace de noms <xref:Microsoft.SqlServer.Dts.Runtime> .  
@@ -236,8 +234,8 @@ ms.lasthandoff: 01/25/2018
 |0xC0015004|-1073655804|DTS_E_CANTWRITETOFILE|Impossible d'ouvrir le fichier « %1 » pour l'écriture. Le fichier est en lecture seule ou vous ne disposez pas des autorisations appropriées.|  
 |0xC0015005|-1073655803|DTS_E_NOROWSETRETURNED|Aucun ensemble de lignes de résultat n'est associé à l'exécution de cette requête. Le résultat n'est pas correctement spécifié.|  
 |0xC0015105|-1073655547|DTS_E_DUMP_FAILED|Les fichiers de vidage du débogage n'ont pas été générés correctement. Le hresult est 0x%1!8.8X!.|  
-|0xC0016001|-1073651711|DTS_E_INVALIDURL|L'URL spécifiée n'est pas valide. Ceci peut se produire lorsque l'URL du serveur ou du proxy a la valeur NULL ou en cas de format incorrect. Un format d'URL valide a la forme suivante : http://ServerName:Port/ResourcePath ou https://ServerName:Port/ResourcePath.|  
-|0xC0016002|-1073651710|DTS_E_INVALIDSCHEME|L'URL %1 n'est pas valide. Ceci peut se produire lorsqu'un schéma autre que http ou https est spécifié, ou que le format de l'URL est incorrect. Un format d'URL valide a la forme suivante : http://ServerName:Port/ResourcePath ou https://ServerName:Port/ResourcePath.|  
+|0xC0016001|-1073651711|DTS_E_INVALIDURL|L'URL spécifiée n'est pas valide. Ceci peut se produire lorsque l'URL du serveur ou du proxy a la valeur NULL ou en cas de format incorrect. Un format d’URL valide est de la forme http://ServerName:Port/ResourcePath ou https://ServerName:Port/ResourcePath.|  
+|0xC0016002|-1073651710|DTS_E_INVALIDSCHEME|L'URL %1 n'est pas valide. Ceci peut se produire lorsqu'un schéma autre que http ou https est spécifié, ou que le format de l'URL est incorrect. Un format d’URL valide est de la forme http://ServerName:Port/ResourcePath ou https://ServerName:Port/ResourcePath.|  
 |0xC0016003|-1073651709|DTS_E_WINHTTPCANNOTCONNECT|La connexion au serveur %1 ne peut pas être établie. Cette erreur peut se produire lorsque le serveur n'existe pas, ou que les paramètres du proxy sont incorrects.|  
 |0xC0016004|-1073651708|DTS_E_CONNECTIONTERMINATED|La connexion avec le serveur a été réinitialisée ou s'est interrompue. Réessayez plus tard.|  
 |0xC0016005|-1073651707|DTS_E_LOGINFAILURE|La tentative de connexion a échoué pour « %1 ». Cette erreur se produit lorsque les informations d'identification de connexion fournies sont incorrectes. Vérifiez ces informations.|  
@@ -2019,7 +2017,7 @@ ms.lasthandoff: 01/25/2018
 |0xC0209318|-1071607016|DTS_E_XMLDATATYPECHANGED|Les informations de type de données de schéma XML de « %1 » sur l'élément « %2 » ont été modifiées.  Réinitialisez les métadonnées de ce composant et passez en revue le mappage de colonnes.|  
 |0xC0209319|-1071607015|DTS_E_TXLOOKUP_UNUSEDINPUTCOLUMN|%1 n'est pas utilisée dans la jointure ou la copie. Supprimez la colonne inutile de la liste des colonnes d'entrée.|  
 |0xC020931A|-1071607014|DTS_E_SORTSTACKOVERFLOW|Le tri a échoué en raison d'un dépassement de capacité de la pile en triant une mémoire tampon entrante.  Veuillez réduire la propriété DefaultBufferMaxRows sur la tâche de flux de données.|  
-|0xC020F42A|-1071582166|DTS_E_OLEDB_OLDPROVIDER_ERROR|Envisagez de modifier le PROVIDER dans la chaîne de connexion à %1 ou accédez à http://www.microsoft.com/downloads pour rechercher et installer la prise en charge de %2.|  
+|0xC020F42A|-1071582166|DTS_E_OLEDB_OLDPROVIDER_ERROR|Envisagez de changer le FOURNISSEUR dans la chaîne de connexion à %1, ou accédez à http://www.microsoft.com/downloads pour rechercher et installer la prise en charge de %2.|  
 |||DTS_E_INITTASKOBJECTFAILED|Échec de l’initialisation de l’objet de tâche pour la tâche « %1!s! », type « %2!s! » en raison de l’erreur « 0x%3!8.8X! « %4!s! ».|  
 |||DTS_E_GETCATMANAGERFAILED|Impossible de créer un gestionnaire de catégories de composants COM en raison de l’erreur 0x%1!8.8X! « %2!s! ».|  
 |||DTS_E_COMPONENTINITFAILED|Échec de l'initialisation du composant %1!s! en raison de l’erreur 0x%2!8.8X! « %3!s! ».|  

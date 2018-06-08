@@ -1,16 +1,14 @@
 ---
 title: DENY - Refuser des autorisations sur un point de terminaison (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,17 @@ helpviewer_keywords:
 - denying permissions [SQL Server], endpoints
 - permissions [SQL Server], endpoints
 ms.assetid: 3ac40457-7529-4eda-95a4-5247345cc8cf
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93f438a2d3d546c6cb15672b5b617b4e35cee9a3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4ea8c373e0d6bd14e5986d29814fc9fc8a5e049c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-endpoint-permissions-transact-sql"></a>DENY - Refuser des autorisations sur un point de terminaison (Transact-SQL)
+# <a name="deny-endpoint-permissions-transact-sql"></a>DENY – refus d'autorisations de point de terminaison (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet de refuser des autorisations sur un point de terminaison.  
@@ -85,7 +82,7 @@ DENY permission  [ ,...n ] ON ENDPOINT :: endpoint_name
 ## <a name="remarks"></a>Notes   
  Les autorisations dans l’étendue du serveur peuvent être refusées seulement quand la base de données active est **master**.  
   
- Des informations sur les points de terminaison sont consultables dans la vue de catalogue [sys.endpoints](../../relational-databases/system-catalog-views/sys-endpoints-transact-sql.md). Des informations sur les autorisations de serveur sont consultables dans la vue de catalogue [sys.server_permissions](../../relational-databases/system-catalog-views/sys-server-permissions-transact-sql.md) et des informations sur les principaux de serveur sont consultables dans la vue de catalogue [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
+ Des informations sur les points de terminaison sont consultables dans la vue de catalogue [sys.endpoints](../../relational-databases/system-catalog-views/sys-endpoints-transact-sql.md). Des informations sur les autorisations de serveur sont consultables dans la vue de catalogue [sys.server_permissions](../../relational-databases/system-catalog-views/sys-server-permissions-transact-sql.md), et des informations sur les principaux de serveur sont consultables dans la vue de catalogue [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
   
  Un point de terminaison est un élément sécurisable au niveau serveur. Les autorisations les plus spécifiques et limitées qu'il est possible de refuser sur un point de terminaison sont répertoriées dans le tableau ci-dessous, avec les autorisations plus générales qui les incluent de manière implicite.  
   

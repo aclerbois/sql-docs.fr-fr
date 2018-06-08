@@ -2,27 +2,24 @@
 title: La récupération des données en tant que flux à l’aide du pilote SQLSRV | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 17dc9129-04cd-430c-b5b3-82824116425d
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fa2d15dde596b9fb8ccd4d170281ef6fa4b2646f
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 32164c9beb05293249eafef76de29dcf3c356182
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="retrieving-data-as-a-stream-using-the-sqlsrv-driver"></a>Récupération des données sous la forme d’un flux à l’aide du pilote SQLSRV
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

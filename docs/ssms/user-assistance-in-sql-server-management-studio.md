@@ -1,33 +1,32 @@
 ---
 title: Assistance utilisateur de SQL Server Management Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Help [SQL Server Management Studio]
 - SQL Server Management Studio [SQL Server], user assistance
 ms.assetid: 3c33a474-e507-4712-86fe-ae40e8370319
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 94bba147f35fe23d2276f4f32596c5a2890f56f1
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 1c176bad0f2cf71e2b805f74eb65daa4fe5dae85
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="user-assistance-in-sql-server-management-studio"></a>Assistance utilisateur de SQL Server Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Une assistance utilisateur est disponible dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] par le biais du menu ? (Aide) et la documentation en ligne de [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)]. Le menu ? (Aide) de [!INCLUDE[ssManStudio](../includes/ssmanstudio_md.md)] offre des accès différents aux informations concernant [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)]. Il permet également d'avoir accès à la communauté [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)] et aux ressources de MSDN en ligne qui n'étaient pas auparavant disponibles à partir de l'environnement d'aide. En outre, l'environnement d'aide est à présent configurable. Il peut être lancé dans l'environnement [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] ou dans une fenêtre externe associée.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Une assistance utilisateur est disponible dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] via le menu ? (Aide) et la documentation en ligne de [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)]. Le menu ? (Aide) de [!INCLUDE[ssManStudio](../includes/ssmanstudio_md.md)] offre des accès différents aux informations concernant [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)]. Il permet également d'avoir accès à la communauté [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)] et aux ressources de MSDN en ligne qui n'étaient pas auparavant disponibles à partir de l'environnement d'aide. En outre, l'environnement d'aide est à présent configurable. Il peut être lancé dans l'environnement [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] ou dans une fenêtre externe associée.  
   
 ## <a name="the-help-interface"></a>Interface de l'aide  
 Les onglets **Sommaire** et **Index** offrent des fonctionnalités et une interface que les utilisateurs de [!INCLUDE[ssNoVersion](../includes/ssnoversion_md.md)] connaissent déjà. Les autres options sont :  

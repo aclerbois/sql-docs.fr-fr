@@ -1,31 +1,31 @@
 ---
-title: "Imprimer, boîte de dialogue | Microsoft Docs"
-ms.custom: 
+title: Imprimer, boîte de dialogue | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.Print
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vs.Print
 ms.assetid: 1811cb9e-3791-414d-b8c9-1d61657707f8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7d1d8ce6a37a0fa70f2f6cb59af991892108fefd
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: ee8da38abc3b4725530abaf812381d0197812fe6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="print-dialog-box"></a>Boîte de dialogue Imprimer
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez spécifier la façon dont vous souhaitez imprimer un document en sélectionnant des options dans la boîte de dialogue **Imprimer**.  
+# <a name="print-dialog-box"></a>Imprimer, boîte de dialogue
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez spécifier la façon dont vous souhaitez imprimer un document en sélectionnant des options dans la boîte de dialogue **Imprimer** .  
   
 ## <a name="printer"></a>Imprimante  
 **Nom**  

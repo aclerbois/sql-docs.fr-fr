@@ -1,16 +1,13 @@
 ---
 title: DBCC OUTPUTBUFFER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC OUTPUTBUFFER
@@ -24,16 +21,15 @@ helpviewer_keywords:
 - output buffers
 - current output buffer
 ms.assetid: e912a06d-9fde-4e26-b057-801255d79504
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 37
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 836055f5a80a7f3768d1485a6c0514eafd6258aa
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bc95218958854d10caca2aa1f0e0a3b9758c33ab
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-outputbuffer-transact-sql"></a>DBCC OUTPUTBUFFER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

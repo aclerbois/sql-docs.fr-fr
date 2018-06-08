@@ -1,16 +1,12 @@
 ---
-title: sys.dm_repl_tranhash (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_repl_tranhash (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_repl_tranhash
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_repl_tranhash dynamic management view
 ms.assetid: 0cc52338-e805-4ed4-9835-b19bbf72448e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 34de8de4ffeb2e9cc6d2ce84ae5df81570ea9911
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 4b809a373f2c64a3c8ed8146eb9394a342e5aeca
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmrepltranhash-transact-sql"></a>sys.dm_repl_tranhash (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -40,7 +35,7 @@ ms.lasthandoff: 02/03/2018
   
 |column_name|data_type|description|  
 |------------------|----------------|-----------------|  
-|**buckets**|**bigint**|Nombre de compartiments dans la table de hachage.|  
+|**compartiments**|**bigint**|Nombre de compartiments dans la table de hachage.|  
 |**hashed_trans**|**bigint**|Nombre de transactions validées qui ont été répliquées dans le traitement en cours.|  
 |**completed_trans**|**bigint**|Nombre de transactions terminées jusqu'à présent.|  
 |**compensated_trans**|**bigint**|Nombre de transactions contenant des restaurations partielles.|  
@@ -55,6 +50,6 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Vues de gestion dynamique &#40; liées à la réplication Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique liées à la réplication &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)  
   
   

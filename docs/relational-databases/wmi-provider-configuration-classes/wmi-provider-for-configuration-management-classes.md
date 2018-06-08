@@ -1,16 +1,15 @@
 ---
 title: Fournisseur WMI pour les Classes de gestion de Configuration | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - WMI Classes
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - WMI Provider for Configuration Management, classes
 - classes [WMI]
 ms.assetid: cb3311bd-394e-4a5e-a693-7b326f9ac777
-caps.latest.revision: 
+caps.latest.revision: 28
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d46971f891f8f86389c70c74153be88ef65e0742
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 967d26b76a75da27a5b4df98ecf5cd53d2cb9950
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wmi-provider-for-configuration-management-classes"></a>Fournisseur WMI pour les classes de gestion de la configuration
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

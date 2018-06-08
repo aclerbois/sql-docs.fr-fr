@@ -1,28 +1,26 @@
 ---
 title: Fonction de SQLSetDriverConnectInfo | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetDriverConnectInfo function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetDriverConnectInfo function [ODBC]
 ms.assetid: bfd4dfc2-fbca-4ef3-81e5-2706f2389256
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: eb945dfbc748c955a1e44467b72dd1c8025171c7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 63dee07cc01051f42fa6552a38d99dd7678f7ab8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetdriverconnectinfo-function"></a>SQLSetDriverConnectInfo (fonction)
 **Mise en conformité**  
@@ -56,7 +54,7 @@ SQLRETURN SQLSetDriverConnectInfo(
 ## <a name="diagnostics"></a>Diagnostics  
  Identique à [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md) liés à toute erreur de validation d’entrée, sauf que le Gestionnaire de pilotes utilisera un **HandleType** de SQL_HANDLE_DBC_INFO_TOKEN et un **gérer** de *hDbcInfoToken*.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Chaque fois qu’un pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le Gestionnaire de pilotes retourne l’erreur à l’application (dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) ou [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md)).  
   
  Chaque fois qu’un pilote retourne SQL_SUCCESS_WITH_INFO, le Gestionnaire de pilotes obtiendra les informations de diagnostic à partir de *hDbcInfoToken*et retourne SQL_SUCCESS_WITH_INFO, à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md).  

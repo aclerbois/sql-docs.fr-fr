@@ -1,28 +1,26 @@
 ---
 title: INSERT - commande SQL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: INSERT [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- INSERT [ODBC]
 ms.assetid: 9b648198-349f-46f6-b869-13d129945971
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c78b10cece63014d10d131446d9f43b154e91d7a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 881ee4d74eab6b1e26b1f3ec243a39c08125ea00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="insert---sql-command"></a>INSERT - commande SQL
 Ajoute un enregistrement à la fin d’une table qui contient les valeurs du champ spécifié.  
@@ -51,7 +49,7 @@ INSERT INTO dbf_name [(fname1 [, fname2, ...])]
  VALEURS ( *eExpression1*[, *eExpression2*[,...]])  
  Spécifie les valeurs de champ insérés dans le nouvel enregistrement. Si vous omettez les noms de champ, vous devez spécifier les valeurs de champ dans l’ordre défini par la structure de table.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le nouvel enregistrement contient les données figurant dans la clause VALUES.  
   
 ## <a name="driver-remarks"></a>Section Notes de pilote  

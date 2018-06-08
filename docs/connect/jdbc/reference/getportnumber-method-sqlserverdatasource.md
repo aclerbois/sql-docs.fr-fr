@@ -1,30 +1,29 @@
 ---
-title: "Méthode getPortNumber (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode getPortNumber (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.getPortNumber
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.getPortNumber
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: e5dc38d0-4340-4ad7-a56e-1d2a0f0fd846
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0ab9d426cea1048f7902af97c68951347c12e16d
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 61ac4328c0a1da1229e568de52cc2d2c89cec437
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getportnumber-method-sqlserverdatasource"></a>Méthode getPortNumber (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -48,7 +47,7 @@ public int getPortNumber()
 >  Le [setPortNumber](../../../connect/jdbc/reference/setportnumber-method-sqlserverdatasource.md) méthode n’effectue aucune vérification sur la valeur de port transmise de plage. Vous pouvez transmettre des numéros qui ne sont pas valides, tels que 99999, sans déclencher d’erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

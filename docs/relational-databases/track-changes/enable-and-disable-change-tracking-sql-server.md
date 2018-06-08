@@ -1,17 +1,16 @@
 ---
-title: "Activer et désactiver le suivi des modifications (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Activer et désactiver le suivi des modifications (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/08/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change tracking [SQL Server], disabling
 - data changes [SQL Server]
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - change tracking [SQL Server], configuring
 - data [SQL Server], changing
 ms.assetid: 1c92ec7e-ae53-4498-8bfd-c66a42a24d54
-caps.latest.revision: 
+caps.latest.revision: 34
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a8ebd0d24e5c3e52d469342ed8fe6d23cc96a215
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 49bbb4a42468f359490c6536841af70c02bcb318
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-and-disable-change-tracking-sql-server"></a>Activer et désactiver le suivi des modifications (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

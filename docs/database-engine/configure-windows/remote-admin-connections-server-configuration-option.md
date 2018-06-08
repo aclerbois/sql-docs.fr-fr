@@ -1,16 +1,14 @@
 ---
 title: remote admin connections (option de configuration de serveur) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - administrator connections [SQL Server]
 - DAC
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - remote admin connections option
 - dedicated administrator connections [SQL Server]
 ms.assetid: bf32b60a-7a48-401f-b6be-b5e2e46c413f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 07c3d9d0d5fe44d38c5e163cb3e925519c994f4d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 5a2f4381d0a72c582a4a8c592328539b92afbf27
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remote-admin-connections-server-configuration-option"></a>remote admin connections (option de configuration de serveur)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

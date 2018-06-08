@@ -1,17 +1,16 @@
 ---
-title: "Sécurité et protection (réplication) | Microsoft Docs"
-ms.custom: 
+title: Sécurité et protection (réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [SQL Server replication]
 - security [SQL Server replication], about security
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - snapshot replication [SQL Server], security
 - transactional replication, security
 ms.assetid: 310a8203-c0aa-4794-93fe-737d7c3fcfd6
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 67ac0cf3ce202f55bbbaa556f842fd9d43d25a0c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: a68a3f4e6ded509b9323f75db4b99fae7f768b29
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-and-protection-replication"></a>Sécurité et protection (réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

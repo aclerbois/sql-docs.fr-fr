@@ -1,16 +1,14 @@
 ---
 title: Sys.database_permissions (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - database_permissions
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.database_permissions catalog view
 ms.assetid: c1e261f8-6cb0-4759-b5f1-5ec233602655
-caps.latest.revision: 
+caps.latest.revision: 50
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e499f4dbcda2415ee4631585be2de284721bc1ec
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 330b1c61e877fb71bcf94d6c8161e40c9ff5e7ac
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysdatabasepermissions-transact-sql"></a>sys.database_permissions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -43,16 +41,16 @@ ms.lasthandoff: 11/21/2017
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**classe**|**tinyint**|Identifie la classe sur laquelle l'autorisation existe.<br /><br /> 0 = Base de données<br />1 = objet ou colonne<br />3 = Schéma<br />4 = Principal de la base de données<br />5 = assembly - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />6 = Type<br />10 = Collection de schémas XML - <br />                      **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />15 = Type de message - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />16 = contrat de Service - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />17 = Service - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />18 = liaisons de Service distant - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />19 = route - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />23 = catalogue de texte intégral - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />24 = clé symétrique - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />25 = certificate - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />26 = clé asymétrique - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
-|**class_desc**|**nvarchar (60)**|Description de la classe sur laquelle l'autorisation existe.<br /><br /> DATABASE<br /><br /> OBJECT_OR_COLUMN<br /><br /> SCHEMA<br /><br /> DATABASE_PRINCIPAL<br /><br /> ASSEMBLY<br /><br /> TYPE<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> MESSAGE_TYPE<br /><br /> SERVICE_CONTRACT<br /><br /> SERVICE<br /><br /> REMOTE_SERVICE_BINDING<br /><br /> ROUTE<br /><br /> FULLTEXT_CATALOG<br /><br /> SYMMETRIC_KEYS<br /><br /> CERTIFICATE<br /><br /> ASYMMETRIC_KEY|  
+|**class**|**tinyint**|Identifie la classe sur laquelle l'autorisation existe.<br /><br /> 0 = Base de données<br />1 = objet ou colonne<br />3 = Schéma<br />4 = Principal de la base de données<br />5 = assembly - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />6 = Type<br />10 = Collection de schémas XML - <br />                      **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />15 = Type de message - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />16 = contrat de Service - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />17 = Service - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />18 = liaisons de Service distant - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />19 = route - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />23 = catalogue de texte intégral - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />24 = clé symétrique - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />25 = certificate - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br />26 = clé asymétrique - **s’applique aux**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|**class_desc**|**nvarchar(60)**|Description de la classe sur laquelle l'autorisation existe.<br /><br /> DATABASE<br /><br /> OBJECT_OR_COLUMN<br /><br /> SCHEMA<br /><br /> DATABASE_PRINCIPAL<br /><br /> ASSEMBLY<br /><br /> TYPE<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> MESSAGE_TYPE<br /><br /> SERVICE_CONTRACT<br /><br /> SERVICE<br /><br /> REMOTE_SERVICE_BINDING<br /><br /> ROUTE<br /><br /> FULLTEXT_CATALOG<br /><br /> SYMMETRIC_KEYS<br /><br /> CERTIFICATE<br /><br /> ASYMMETRIC_KEY|  
 |**major_id**|**int**|ID de l'objet sur lequel l'autorisation existe, interprété en fonction de la classe. En règle générale, les **major_id** est simplement le type d’ID qui s’applique à ce que représente la classe. <br /><br /> 0 = la base de données <br /><br /> > 0 = ID d’objet pour les objets utilisateur <br /><br /> \<0 = l’ID d’objet pour les objets système |  
 |**minor_id**|**int**|ID secondaire de l'objet sur lequel l'autorisation existe, interprété en fonction de la classe. Souvent, les **major_id** est égal à zéro, car aucun subcategory n’est disponible pour la classe d’objet. Dans le cas contraire, il est l’ID de colonne d’une table.|  
 |**grantee_principal_id**|**int**|ID du principal de la base de données à laquelle les autorisations sont accordées.|  
 |**grantor_principal_id**|**int**|ID du principal de la base de données du fournisseur de ces autorisations.|  
 |**type**|**char (4)**|Type d'autorisation de la base de données. Pour obtenir la liste des types d'autorisations, consultez le tableau ci-dessous.|  
-|**permission_name**|**nvarchar (128)**|Nom de l’autorisation.|  
-|**état**|**char (1)**|État de l'autorisation :<br /><br /> D = Refusée<br /><br /> R = Révoquée<br /><br /> G = Accordée<br /><br /> W = Accordée avec option Grant|  
-|**state_desc**|**nvarchar (60)**|Description de l'état de l'autorisation :<br /><br /> DENY<br /><br /> REVOKE<br /><br /> GRANT<br /><br /> GRANT_WITH_GRANT_OPTION|  
+|**permission_name**|**nvarchar(128)**|Nom de l’autorisation.|  
+|**state**|**char(1)**|État de l'autorisation :<br /><br /> D = Refusée<br /><br /> R = Révoquée<br /><br /> G = Accordée<br /><br /> W = Accordée avec option Grant|  
+|**state_desc**|**nvarchar(60)**|Description de l'état de l'autorisation :<br /><br /> DENY<br /><br /> REVOKE<br /><br /> GRANT<br /><br /> GRANT_WITH_GRANT_OPTION|  
 
 ## <a name="database-permissions"></a>Autorisations de base de données   
 Les types d’autorisations suivants sont possibles.
@@ -108,12 +106,12 @@ Les types d’autorisations suivants sont possibles.
 |CRSK|CREATE SYMMETRIC KEY|DATABASE|  
 |CRSM|CREATE SCHEMA|DATABASE|  
 |CRSN|CREATE SYNONYM|DATABASE|  
-|CRSO|**S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> CREATE SEQUENCE|DATABASE|  
+|CRSO|**S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> CREATE SEQUENCE|DATABASE|  
 |CRSV|CREATE SERVICE|DATABASE|  
 |CRTB|CREATE TABLE|DATABASE|  
 |CRTY|CREATE TYPE|DATABASE|  
 |CRVW|CREATE VIEW|DATABASE|  
-|CRXS|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> CREATE XML SCHEMA COLLECTION|DATABASE|  
+|CRXS|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> CREATE XML SCHEMA COLLECTION|DATABASE|  
 |DABO |ADMINISTER DATABASE BULK OPERATIONS | DATABASE |
 |DL|DELETE|DATABASE, OBJECT, SCHEMA|  
 |EAES |EXECUTE ANY EXTERNAL SCRIPT |DATABASE |
@@ -134,7 +132,7 @@ Les types d’autorisations suivants sont possibles.
 |VWCT|VIEW CHANGE TRACKING|TABLE, SCHEMA|  
 |VWDS|VIEW DATABASE STATE|DATABASE|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Tout utilisateur peut consulter ses propres autorisations. Pour afficher les autorisations d'autres utilisateurs, vous devez disposer de l'autorisation VIEW DEFINITION, ALTER ANY USER, ou de n'importe quelle autorisation sur un utilisateur. Pour afficher les rôles définis par l'utilisateur, vous devez disposer de l'autorisation ALTER ANY ROLE, ou appartenir au rôle (notamment public).  
   
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
@@ -174,7 +172,7 @@ JOIN sys.schemas AS s
   
 ## <a name="see-also"></a>Voir aussi  
  [Securables](../../relational-databases/security/securables.md)   
- [Hiérarchie des autorisations &#40;Moteur de base de données&#41;](../../relational-databases/security/permissions-hierarchy-database-engine.md)   
+ [Hiérarchie des autorisations &#40;moteur de base de données&#41;](../../relational-databases/security/permissions-hierarchy-database-engine.md)   
  [Affichages catalogue de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)  
   

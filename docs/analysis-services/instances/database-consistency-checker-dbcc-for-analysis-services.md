@@ -1,31 +1,23 @@
 ---
-title: "Le vérificateur de cohérence (DBCC) pour Analysis Services de base de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 28714c32-718f-4f31-a597-b3289b04b864
-caps.latest.revision: 
-author: Minewiskan
+title: Le vérificateur de cohérence (DBCC) pour Analysis Services de base de données | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8348c7c3ee60d7032f9c8af373ce5b9e1a026f8f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: cb131f76c839f446cbdc31dae51e98431bb87902
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="database-consistency-checker-dbcc-for-analysis-services"></a>Vérificateur de cohérence de base de données (DBCC) pour Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-DBCC assure la validation de base de données à la demande pour les bases de données multidimensionnelles et tabulaires sur une instance Analysis Services. Vous pouvez exécuter DBCC dans une fenêtre de requête MDX ou XMLA dans SQL Server Management Studio (SSMS) et tracer la sortie DBCC dans SQL Server Profiler ou des sessions xEvent dans SSMS.  
+  DBCC assure la validation de base de données à la demande pour les bases de données multidimensionnelles et tabulaires sur une instance Analysis Services. Vous pouvez exécuter DBCC dans une fenêtre de requête MDX ou XMLA dans SQL Server Management Studio (SSMS) et tracer la sortie DBCC dans SQL Server Profiler ou des sessions xEvent dans SSMS.  
 La commande prend une définition d’objet et retourne un jeu de résultats vide ou des informations d’erreur détaillées si l’objet est endommagé.   Dans cet article, vous allez apprendre à exécuter la commande, à interpréter les résultats et à traiter tous les problèmes qui surviennent.  
   
  Pour les bases de données tabulaires, les vérifications de cohérence par DBCC sont équivalentes à la validation intégrée qui se produit automatiquement chaque fois que vous rechargez, synchronisez ou restaurez une base de données.  En revanche, les vérifications de cohérence pour les bases de données multidimensionnelles n’interviennent que quand vous exécutez DBCC à la demande.  

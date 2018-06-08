@@ -1,33 +1,23 @@
 ---
 title: Ensemble de lignes DISCOVER_TRACE_EVENT_CATEGORIES | Documents Microsoft
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 1ad74fd2-4740-469d-85b5-abf0171737fd
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b95fb2824757a4b45001dd5a1eed4871995b86cb
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3e914157b5b81609994bb78fc0a89d4ec36ee241
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discovertraceeventcategories-rowset"></a>DISCOVER_TRACE_EVENT_CATEGORIES, ensemble de lignes
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Affiche la liste des catégories d'événements prises en charge par le fournisseur de trace.  
+  Affiche la liste des catégories d'événements prises en charge par le fournisseur de trace.  
   
  **S'applique à :** modèles tabulaires, modèles multidimensionnels  
   

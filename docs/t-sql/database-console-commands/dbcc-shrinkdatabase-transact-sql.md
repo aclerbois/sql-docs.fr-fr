@@ -1,16 +1,13 @@
 ---
 title: DBCC SHRINKDATABASE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC_SHRINKDATABASE_TSQL
@@ -30,16 +27,15 @@ helpviewer_keywords:
 - logs [SQL Server], shrinking
 - reducing database size
 ms.assetid: fc976afd-1edb-4341-bf41-c4a42a69772b
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 62
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 6df29a0951f565bbe622e2ca3f8752a827488685
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+ms.openlocfilehash: e6022b5609c2d4b4d362f90088bee4e84ad874c7
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="dbcc-shrinkdatabase-transact-sql"></a>DBCC SHRINKDATABASE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -97,6 +93,10 @@ Le tableau suivant décrit les colonnes du jeu de résultats.
 > Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] n'affiche pas de ligne pour les fichiers qui ne sont pas réduits.  
   
 ## <a name="remarks"></a>Notes   
+
+>[!NOTE]
+> Actuellement, Azure SQL Data Warehouse ne prend pas en charge DBCC SHRINKDATABASE. L’exécution de cette commande n’est pas recommandée, car c’est une opération qui consomme beaucoup d’E/S et qui peut déconnecter votre entrepôt de données. Par ailleurs, l’exécution de cette commande entraîne de coûteuses implications sur vos instantanés d’entrepôt de données. 
+
 Pour réduire tous les fichiers de données et fichiers journaux d'une base de données particulière, exécutez la commande DBCC SHRINKDATABASE. Pour réduire un fichier de données ou un fichier journal d'une base de données particulière, exécutez la commande [DBCC SHRINKFILE](../../t-sql/database-console-commands/dbcc-shrinkfile-transact-sql.md).
   
 Pour afficher la quantité d'espace actuellement libre (non allouée) dans la base de données, exécutez [sp_spaceused](../../relational-databases/system-stored-procedures/sp-spaceused-transact-sql.md).
@@ -110,9 +110,6 @@ Exécuter DBCC SHRINKDATABASE sans spécifier l'option NOTRUNCATE ou TRUNCATEONL
 Il n'est pas nécessaire que la base de données réduite soit mono-utilisateur ; d'autres utilisateurs peuvent travailler sur cette base au cours de l'opération. Ceci inclut également les bases de données système.
   
 Vous ne pouvez pas réduire la taille d'une base de données en cours de sauvegarde. Inversement, vous ne pouvez pas sauvegarder une base de données alors qu'elle fait l'objet d'une opération de réduction.
-
->[!NOTE]
-> Actuellement, Azure SQL Data Warehouse ne prend pas en charge DBCC SHRINKDATABASE avec TDE activé.
   
 ## <a name="how-dbcc-shrinkdatabase-works"></a>Fonctionnement de DBCC SHRINKDATABASE  
 DBCC SHRINKDATABASE réduit les fichiers de données, fichier par fichier, mais réduit les fichiers journaux comme si tous les fichiers journaux existaient dans un groupe de journaux contigus. Les fichiers sont toujours réduits à partir de la fin.

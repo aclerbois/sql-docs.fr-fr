@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_free_stmt | Microsoft Docs
+title: sqlsrv_free_stmt | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_free_stmt
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - sqlsrv_free_stmt
 - API Reference, sqlsrv_free_stmt
 ms.assetid: 3c71f432-36ad-41e1-8ac7-587c82539448
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2debeb602c6432a273ae194dd2715a8e8d5239bd
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 8a57257fcaddfc1b5e520c99de0c217a7a57a6a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvfreestmt"></a>sqlsrv_free_stmt
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -52,7 +49,7 @@ Valeur booléenne **true** sauf si la fonction est appelée avec un paramètre n
 > **Null** est un paramètre valide pour cette fonction. Ainsi, la fonction peut être appelée plusieurs fois dans un script. Par exemple, si vous libérez une instruction dans une condition d’erreur et libérez à nouveau à la fin du script, le deuxième appel à **sqlsrv_free_stmt** retournera **true** , car le premier appel à **sqlsrv_ free_stmt** (dans la condition d’erreur) définit la ressource d’instruction **null**.  
   
 ## <a name="example"></a>Exemple  
-L’exemple suivant crée une ressource d’instruction, exécute une requête simple et appelle **sqlsrv_free_stmt** pour libérer toutes les ressources associées à l’instruction. L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple suivant crée une ressource d’instruction, exécute une requête simple et appelle **sqlsrv_free_stmt** pour libérer toutes les ressources associées à l’instruction. L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

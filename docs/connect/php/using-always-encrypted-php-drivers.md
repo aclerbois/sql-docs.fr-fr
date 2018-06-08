@@ -1,24 +1,21 @@
 ---
 title: Utilisation du chiffrement intégral avec les pilotes PHP pour SQL Server | Documents Microsoft
 ms.date: 01/08/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.suite: sql
 ms.custom: ''
-ms.technology:
-- drivers
-ms.topic: article
+ms.technology: connectivity
+ms.topic: conceptual
 author: v-kaywon
 ms.author: v-kaywon
 manager: mbarwin
-ms.workload: Inactive
-ms.openlocfilehash: 588a0471866b1b33a3e485b321193edfd0c9187d
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 93b14d81411e3045d9d6f3a67ce03db281f41f68
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-always-encrypted-with-the-php-drivers-for-sql-server"></a>Utilisation du chiffrement intégral avec les pilotes PHP pour SQL Server
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -41,13 +38,13 @@ Always Encrypted permet aux applications clientes de chiffrer des données sensi
 
 Le moyen le plus simple pour activer le chiffrement des paramètres ciblant les colonnes chiffrées et le déchiffrement des résultats de requête est en définissant la valeur de la `ColumnEncryption` mot clé de chaîne de connexion à `Enabled`. Voici quelques exemples de l’activation du chiffrement intégral dans les pilotes SQLSRV et PDO_SQLSRV :
 
-SQLSRV:
+SQLSRV :
 ```
 $connectionInfo = array("Database"=>$databaseName, "UID"=>$uid, "PWD"=>$pwd, "ColumnEncryption"=>"Enabled");
 $conn = sqlsrv_connect($server, $connectionInfo);
 ```
 
-PDO_SQLSRV:
+PDO_SQLSRV :
 ```
 $connectionInfo = "Database = $databaseName; ColumnEncryption = Enabled;";
 $conn = new PDO("sqlsrv:server = $server; $connectionInfo", $uid, $pwd);
@@ -160,7 +157,7 @@ Les exemples suivants montrent le filtrage des données en fonction de valeurs c
  
 Remarque : Les requêtes peuvent effectuer des comparaisons d’égalité sur les colonnes chiffrées uniquement si le chiffrement est déterministe. Pour plus d’informations, consultez [chiffrement en sélectionnant déterministe ou aléatoire](../../relational-databases/security/encryption/always-encrypted-database-engine.md#selecting--deterministic-or-randomized-encryption).
 
-SQLSRV:
+SQLSRV :
 ```
 // since SSN is an encrypted column, need to pass the value in the WHERE clause through bind parameter
 $query = "SELECT [SSN], [FirstName], [LastName], [BirthDate] FROM [dbo].[Patients] WHERE [SSN] = ?";
@@ -172,7 +169,7 @@ sqlsrv_execute($stmt);
 $row = sqlsrv_fetch_array($stmt);
 ```
 
-PDO_SQLSRV:
+PDO_SQLSRV :
 ```
 // since SSN is an encrypted column, need to pass the value in the WHERE clause through bind parameter
 $query = "SELET [SSN], [FirstName], [LastName], [BirthDate] FROM [dbo].[Patients] WHERE [SSN] = ?";
@@ -193,7 +190,7 @@ Les exemples suivants illustrent la récupération des données chiffrées binai
  -   Comme toujours chiffré n’est pas activé dans la chaîne de connexion, la requête retourne des valeurs SSN et BirthDate chiffrées en tant que tableaux d’octets (le programme convertit les valeurs en chaînes).
  -   Une requête qui récupère des données à partir de colonnes chiffrées lorsqu’Always Encrypted est désactivé peut avoir des paramètres, tant qu’aucun d’eux ne cible une colonne chiffrée. Les filtres de requête suivants par nom, qui n’est pas chiffrée dans la base de données. Si la requête filtre par SSN ou BirthDate, la requête échoue.
  
-SQLSRV:
+SQLSRV :
 ```
 $query = "SELET [SSN], [FirstName], [LastName], [BirthDate] FROM [dbo].[Patients] WHERE [LastName] = ?";
 $lastName = "Abel";
@@ -202,7 +199,7 @@ sqlsrv_execute($stmt);
 $row = sqlsrv_fetch_array($stmt);
 ```
 
-PDO_SQLSRV:
+PDO_SQLSRV :
 ```
 $query = "SELET [SSN], [FirstName], [LastName], [BirthDate] FROM [dbo].[Patients] WHERE [LastName] = ?";
 $lastName = "Abel";

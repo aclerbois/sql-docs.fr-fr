@@ -1,31 +1,31 @@
 ---
-title: "Instance de serveur miroir (Configurer l’Assistant Sécurité de mise en miroir de bases de données) | Microsoft Docs"
-ms.custom: 
+title: Instance de serveur miroir (Configurer l’Assistant Sécurité de mise en miroir de bases de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.configdbmsecurwiz.mirrorsrvr.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.configdbmsecurwiz.mirrorsrvr.f1
 ms.assetid: 53223432-615e-440f-904d-925d33ec2144
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e6440acda92e77b3558cf60ba3c54cb5b8b3c042
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d6c83b17b36754f5e424afd830feaa51fd2767d8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mirror-server-instance-configure-database-mirroring-security-wizard"></a>Instance de serveur miroir (Configurer l'Assistant Sécurité de mise en miroir de bases de données)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette page vous permet de spécifier des informations sur l’instance de serveur avec la base de données miroir.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette page vous permet de spécifier des informations sur l'instance de serveur avec la base de données miroir.  
   
 > [!IMPORTANT]  
 >  L'instance de serveur miroir doit exécuter la même édition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)](Standard ou Entreprise) que l'instance de serveur principal. En outre, nous vous conseillons vivement d'exécuter les instances sur des systèmes comparables pouvant gérer des charges de travail identiques.  

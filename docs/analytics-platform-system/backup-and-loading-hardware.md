@@ -1,28 +1,22 @@
 ---
-title: "Sauvegarde et le chargement de la vue d’ensemble du matériel pour APS PDW"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Pour déployer votre solution sur le système de plateforme Analytique (APS) d’entreposage avec SQL Server Parallel Data Warehouse (PDW) de données de bout en bout, vous devez créer un plan de sauvegarde de l’entrepôt de données et de chargement des données."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 3a2ae046-f8d8-4a5c-b3c1-6ecee005df6c
-caps.latest.revision: "9"
-ms.openlocfilehash: 91348b3cb936556cbfe4b2c515c6d32e38913618
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Sauvegarde et chargement de matériel - Parallel Data Warehouse
+description: Pour déployer votre solution sur le système de plateforme Analytique (APS) d’entreposage avec Parallel Data Warehouse (PDW) de données de bout en bout, vous devez créer un plan de sauvegarde de l’entrepôt de données et de chargement des données. Utilisez ce guide pour obtenir et configurer les serveurs de sauvegarde et de chargement qui répond aux besoins de votre entreprise.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 4d7f7b6b4edea9dacab7287a7936b7fd87fd7973
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="backup-and-loading-hardware-overview"></a>Sauvegarde et chargement de vue d’ensemble du matériel
-Pour déployer votre solution sur le système de plateforme Analytique (APS) d’entreposage avec SQL Server Parallel Data Warehouse (PDW) de données de bout en bout, vous devez créer un plan de sauvegarde de l’entrepôt de données et de chargement des données. Utilisez ce guide pour obtenir et configurer les serveurs de sauvegarde et de chargement qui répond aux besoins de votre entreprise.  
+# <a name="backup-and-loading-hardware-overview---parallel-data-warehouse"></a>Sauvegarde et chargement de vue d’ensemble de matériel - Parallel Data Warehouse
+Pour déployer votre solution sur le système de plateforme Analytique (APS) d’entreposage avec Parallel Data Warehouse (PDW) de données de bout en bout, vous devez créer un plan de sauvegarde de l’entrepôt de données et de chargement des données. Utilisez ce guide pour obtenir et configurer les serveurs de sauvegarde et de chargement qui répond aux besoins de votre entreprise.  
   
 ## <a name="acquire-and-configure-backup-servers"></a>Obtenir et configurer les serveurs de sauvegarde  
 ![Processus de sauvegarde](media/backup-process.png "processus de sauvegarde")  

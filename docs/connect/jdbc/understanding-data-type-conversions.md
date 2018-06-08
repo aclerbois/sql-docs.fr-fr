@@ -1,27 +1,24 @@
 ---
-title: "Conversions de types de données de présentation | Documents Microsoft"
-ms.custom: 
+title: Conversions de types de données de présentation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 98fa7488-aac3-45b4-8aa4-83ed6ab638b4
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8ba1a10fc33dc5e80fb300eaa31e849692c55041
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: e87e223cb64b9bb60008da17841f69bb67dfed10
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-data-type-conversions"></a>Conversions de types de données
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -58,7 +55,7 @@ ms.lasthandoff: 11/18/2017
   
  Lorsque updateString est appelé sur un **binaire**, **varbinary**, **varbinary (max)**, ou **image** de type de données de colonne, il gère la valeur de chaîne en tant que valeur de chaîne hexadécimale.  
   
- Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lorsque vous appelez les méthodes updateBlob, updateBinaryStream ou updateBytes, la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Exemple :  
+ Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lorsque vous appelez les méthodes updateBlob, updateBinaryStream ou updateBytes, la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Par exemple :  
   
 ```  
 <hello>world</hello> = 0x3C68656C6C6F3E776F726C643C2F68656C6C6F3E   
@@ -83,9 +80,9 @@ ms.lasthandoff: 11/18/2017
   
 -   **Dépendant des données (z)**: les Conversions de Java **chaîne** type sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] type de données dépend des conditions suivantes : le pilote envoie la **chaîne** valeur [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] effectue des conversions, si nécessaire. Si le sendStringParametersAsUnicode a la valeur true et sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données **image**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] n’autorise pas la conversion **nvarchar** à **image** et lève une exception SQLServerException. Si le sendStringParametersAsUnicode a la valeur false et sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données **image**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] permet la conversion **varchar** à **image**et ne lève pas d’exception.  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]effectue les conversions et retourne les erreurs au pilote JDBC lorsqu’il existe des problèmes.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] effectue les conversions et retourne les erreurs au pilote JDBC lorsqu’il existe des problèmes.  
   
- Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lorsque vous appelez les méthodes updateBlob, updateBinaryStream ou updateBytes, la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Exemple :  
+ Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lorsque vous appelez les méthodes updateBlob, updateBinaryStream ou updateBytes, la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Par exemple :  
   
 ```  
 <hello>world</hello> = 0x3C68656C6C6F3E776F726C643C2F68656C6C6F3E   
@@ -112,9 +109,9 @@ ms.lasthandoff: 11/18/2017
   
 -   **Dépendant des données (z)**: les Conversions de Java **chaîne** type sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] type de données dépend des conditions suivantes : le pilote envoie la **chaîne** valeur [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] effectue des conversions, si nécessaire. Si la propriété de connexion sendStringParametersAsUnicode a la valeur true et sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données **image**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] n’autorise pas la conversion **nvarchar** à **image** et lève une exception SQLServerException. Si le sendStringParametersAsUnicode a la valeur false et sous-jacent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données **image**, [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] permet la conversion **varchar** à **image**et ne lève pas d’exception.  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]effectue l’essentiel des conversions de jeu et retourne les erreurs au pilote JDBC lorsqu’il existe des problèmes. Conversions côté client constituent l’exception et sont effectuées uniquement dans le cas de **date**, **temps**, **timestamp**, **booléenne**et  **Chaîne** valeurs.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] effectue l’essentiel des conversions de jeu et retourne les erreurs au pilote JDBC lorsqu’il existe des problèmes. Conversions côté client constituent l’exception et sont effectuées uniquement dans le cas de **date**, **temps**, **timestamp**, **booléenne**et  **Chaîne** valeurs.  
   
- Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lors de l'appel des méthodes setObject(byte[], SQLXML), setObject(inputStream, SQLXML) ou setObject(Blob, SQLXML), la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Exemple :  
+ Lorsque le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] est de type de données de colonne **XML**, la valeur de données doit être valide **XML**. Lors de l'appel des méthodes setObject(byte[], SQLXML), setObject(inputStream, SQLXML) ou setObject(Blob, SQLXML), la valeur de données doit être la représentation sous forme de chaîne hexadécimale des caractères XML. Par exemple :  
   
 ```  
 <hello>world</hello> = 0x3C68656C6C6F3E776F726C643C2F68656C6C6F3E   

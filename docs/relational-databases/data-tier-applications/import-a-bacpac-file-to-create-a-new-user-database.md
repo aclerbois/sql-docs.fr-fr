@@ -1,17 +1,16 @@
 ---
-title: "Importer un fichier BACPAC pour créer une nouvelle base de données utilisateur | Microsoft Docs"
-ms.custom: 
+title: Importer un fichier BACPAC pour créer une nouvelle base de données utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 01/31/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: data-tier-applications
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-data-tier-apps
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb. importdac.results.f1
 - sql13.swb.importdac.settings.f1
@@ -29,19 +28,20 @@ helpviewer_keywords:
 - Migrate database
 - DAC
 ms.assetid: 736d8d9a-39f1-4bf8-b81f-2e56c134d12e
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d92da3c51843ee10b0c781bb400109abf04fefab
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1fc8a3a20efb5ac5c9741e71342f005a3984888b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-a-bacpac-file-to-create-a-new-user-database"></a>Importer un fichier BACPAC pour créer une nouvelle base de données utilisateur
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Importez un fichier d’application de couche Données (DAC) – un fichier .bacpac – pour créer une copie de la base de données d’origine, avec ses données, sur une nouvelle instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] ou vers [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]. Les opérations d'exportation-importation peuvent être combinées pour migrer une DAC ou une base de données entre différentes instances, ou pour créer une sauvegarde logique, telles qu'une copie sur site d'une base de données déployée dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Importez un fichier d'application de couche Données (DAC) – un fichier .bacpac – pour créer une copie de la base de données d'origine, avec ses données, sur une nouvelle instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)]ou vers [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]. Les opérations d'exportation-importation peuvent être combinées pour migrer une DAC ou une base de données entre différentes instances, ou pour créer une sauvegarde logique, telles qu'une copie sur site d'une base de données déployée dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
 ## <a name="before-you-begin"></a>Avant de commencer  
  L'importation génère une nouvelle DAC en deux étapes.  
@@ -61,7 +61,7 @@ ms.lasthandoff: 01/17/2018
 ## <a name="limitations-and-restrictions"></a>Limitations et restrictions  
  Une DAC peut être importée vers [!INCLUDE[ssSDS](../../includes/sssds-md.md)]ou une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] qui exécute [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 4 (SP4) ou une version ultérieure. Si vous exportez une DAC d'une version ultérieure, elle peut contenir des objets non pris en charge par [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Vous ne pouvez pas déployer ces DAC vers les instances de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Nous vous recommandons de ne pas importer de fichier d'exportation DAC provenant de sources inconnues ou non approuvées. De tels fichiers peuvent contenir du code malveillant susceptible d'exécuter un code Transact-SQL indésirable ou de provoquer des erreurs en modifiant le schéma. Avant d'utiliser un fichier d'exportation provenant d'une source inconnue ou non approuvée, décompressez la DAC et vérifiez le code, par exemple les procédures stockées ou un autre code défini par l'utilisateur. Pour plus d’informations sur la façon de procéder à ces vérifications, consultez [Valider un package DAC](https://msdn.microsoft.com/library/ee633948(SQL.130).aspx).  
   
 ## <a name="security"></a>Sécurité  

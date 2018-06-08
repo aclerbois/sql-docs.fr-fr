@@ -1,38 +1,34 @@
 ---
-title: "Propriétés de l’Agent SQL Server (onglet Service) | Documents Microsoft"
-ms.custom: 
+title: Propriétés de SQL Server Agent (onglet Service) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 452857fb-be1b-4e1e-851c-dd2216640f35
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4891f116e0b47aadb42373419bea245b79f9b889
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: c95a67c5907b1e546506827a32d69f848026ab1b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-agent-properties-service-tab"></a>Propriétés de l'Agent SQL Server (onglet Service)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-Ce service est le service de l'Agent [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les valeurs des propriétés en gris clair ne peuvent pas être modifiées à l'aide de cette application.  
+  Ce service est le service de l'Agent [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les valeurs des propriétés en gris clair ne peuvent pas être modifiées à l'aide de cette application.  
   
 ## <a name="options"></a>Options  
- **Chemin d'accès binaire**  
+ **Chemin d’accès binaire**  
  Affiche l'emplacement des fichiers programme utilisés par ce service.  
   
- **Contrôle d'erreurs**  
+ **Contrôle d’erreurs**  
  1 indique `SERVICE_ERROR_NORMAL`. Si le lancement du service échoue pendant le démarrage de l'ordinateur, le programme de démarrage consigne l'erreur et affiche une boîte de message, mais poursuit l'opération de démarrage. Cette valeur ne peut pas être modifiée.  
   
  **Code de sortie**  

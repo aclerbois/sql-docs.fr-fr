@@ -1,31 +1,28 @@
 ---
-title: "Vues de schémas | Documents Microsoft"
-ms.custom: 
+title: Vues de schémas | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - schema views [ODBC]
 - functions [ODBC], catalog functions
 - catalog functions [ODBC], schema views
 ms.assetid: f1dfb3e8-a7bd-46c3-92b6-c19531e8409d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 82d3624154e272e2f046110473ebe5d8360e6f6d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 686b13ff9b480a1e2e96a175fe546d064079d871
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schema-views"></a>Vues de schémas
 Une application peut récupérer les informations de métadonnées à partir du SGBD en appelant les fonctions de catalogue ODBC ou à l’aide de vues INFORMATION_SCHEMA. Les vues sont définies par la norme ANSI SQL-92.  

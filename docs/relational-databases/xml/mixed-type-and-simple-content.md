@@ -1,30 +1,27 @@
 ---
-title: "Type mixte et contenu simple | Microsoft Docs"
-ms.custom: 
+title: Type mixte et contenu simple | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - mixed types [SQL Server]
 ms.assetid: 6ea1f11d-e64b-4ebb-ab68-4eb6e4027665
-caps.latest.revision: 
+caps.latest.revision: 9
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c4d1f4ad2a92b3c19fe76c564d5f7b197269871
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 1b474f5a390b6766d00cb186ddba8bd9ccb43971
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mixed-type-and-simple-content"></a>Type mixte et contenu simple
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

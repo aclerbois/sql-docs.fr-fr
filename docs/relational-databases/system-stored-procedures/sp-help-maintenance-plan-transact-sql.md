@@ -1,16 +1,14 @@
 ---
-title: sp_help_maintenance_plan (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_maintenance_plan (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_maintenance_plan_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_maintenance_plan
 ms.assetid: e972a510-960e-41d6-93c5-c71cd581a585
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e5669438c159010e1b5011418df913c3c2743aff
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 8c144581e7d1ed73da251d13419d5ec04a7fd687
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpmaintenanceplan-transact-sql"></a>sp_help_maintenance_plan (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,7 +48,7 @@ sp_help_maintenance_plan [ [ @plan_id = ] 'plan_id' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@plan_id =**] **'***plan_id***'**  
+ [  **@plan_id =**] **'***plan_id***'**  
  Spécifie l’ID de plan du plan de maintenance. *plan_id* est **UNIQUEIDENTIFIER**. La valeur par défaut est NULL.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -80,7 +77,7 @@ sp_help_maintenance_plan [ [ @plan_id = ] 'plan_id' ]
   
 |Nom de colonne| Description|  
 |-----------------|-----------------|  
-|**database_name**|Nom de toutes les bases de données associées au plan de maintenance. *database_name* est **sysname**.|  
+|**database_name**|Nom de toutes les bases de données associées au plan de maintenance. *database_name* est de type **sysname**.|  
   
 ### <a name="job-table"></a>Table Job  
   
@@ -104,6 +101,6 @@ EXECUTE   sp_help_maintenance_plan
   
 ## <a name="see-also"></a>Voir aussi  
  [Plans de maintenance](../../relational-databases/maintenance-plans/maintenance-plans.md)   
- [Plan de Maintenance de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-maintenance-plan-stored-procedures-transact-sql.md)  
+ [Procédures stockées de Plan de Maintenance de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-maintenance-plan-stored-procedures-transact-sql.md)  
   
   

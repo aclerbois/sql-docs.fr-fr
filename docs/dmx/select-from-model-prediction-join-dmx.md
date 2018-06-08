@@ -1,15 +1,14 @@
 ---
-title: "SELECT FROM &lt;modèle&gt; PREDICTION JOIN (DMX) | Documents Microsoft"
-ms.custom: 
+title: SELECT FROM &lt;modèle&gt; PREDICTION JOIN (DMX) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - PREDICTION
@@ -18,7 +17,8 @@ f1_keywords:
 - join
 - FROM
 - PREDICTION JOIN
-dev_langs: DMX
+dev_langs:
+- DMX
 helpviewer_keywords:
 - prediction joins [DMX]
 - PREDICTION JOIN statement
@@ -27,16 +27,15 @@ helpviewer_keywords:
 - singleton query predictions [DMX]
 - SELECT FROM <model> PREDICTION JOIN statement
 ms.assetid: 7ca37fec-4a50-4d79-b1d6-1c7c12176946
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 77afa48b63dd145406cdead7e7b0b0bf675aedb5
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 7014d546d0484dcd5d741844a98c8060f925c96c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-from-ltmodelgt-prediction-join-dmx"></a>SELECT FROM &lt;modèle&gt; PREDICTION JOIN (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -56,7 +55,7 @@ FROM <model> | <sub select> [NATURAL] PREDICTION JOIN
   
 ## <a name="arguments"></a>Arguments  
  *n*  
- Facultatif. Entier qui spécifie le nombre de lignes à retourner.  
+ Ce paramètre est facultatif. Entier qui spécifie le nombre de lignes à retourner.  
   
  *Sélectionnez la liste d’expressions*  
  Liste séparée par des virgules des identificateurs de colonnes et expressions dérivées du modèle d'exploration de données.  
@@ -71,15 +70,15 @@ FROM <model> | <sub select> [NATURAL] PREDICTION JOIN
  Requête source  
   
  *liste de mappage de jointure*  
- Facultatif. Expression logique qui compare les colonnes du modèle aux colonnes de la requête source.  
+ Ce paramètre est facultatif. Expression logique qui compare les colonnes du modèle aux colonnes de la requête source.  
   
- *expression de condition*  
- Facultatif. Condition pour restreindre les valeurs retournées de la liste des colonnes.  
+ *Expression de condition*  
+ Ce paramètre est facultatif. Condition pour restreindre les valeurs retournées de la liste des colonnes.  
   
  *expression*  
- Facultatif. Expression qui retourne une valeur scalaire.  
+ Ce paramètre est facultatif. Expression qui retourne une valeur scalaire.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La clause ON définit le mappage entre les colonnes de la requête source et les colonnes du modèle d'exploration de données. Ce mappage sert à diriger les colonnes depuis la requête source vers les colonnes du modèle d'exploration de données de sorte que les colonnes puissent être utilisées en valeurs d'entrée pour créer des prédictions. Colonnes dans les \< *liste de mappage de jointure*> sont liées à l’aide d’un signe égal (=), comme indiqué dans l’exemple suivant :  
   
 ```  
@@ -111,7 +110,7 @@ FROM <model> | <sub select> [NATURAL] PREDICTION JOIN
   
 -   Deux enfants à charge  
   
- Vous utilisez le modèle d’exploration de données arbre de décision TM et des caractéristiques connues sur le sujet, la requête retourne une valeur booléenne qui décrit si la personne qui a acheté le vélo et un ensemble de valeurs tabulaires, retournées par la [PredictHistogram &#40; DMX &#41;](../dmx/predicthistogram-dmx.md) (fonction), qui décrivent comment la prédiction a été effectuée.  
+ Vous utilisez le modèle d’exploration de données arbre de décision TM et des caractéristiques connues sur le sujet, la requête retourne une valeur booléenne qui décrit si la personne qui a acheté le vélo et un ensemble de valeurs tabulaires, retournées par la [PredictHistogram &#40;DMX &#41; ](../dmx/predicthistogram-dmx.md) (fonction), qui décrivent comment la prédiction a été effectuée.  
   
 ```  
 SELECT  
@@ -185,7 +184,7 @@ ORDER BY [LastName] ASC
   
 -   Mountain-200  
   
- Le [Predict &#40; DMX &#41;](../dmx/predict-dmx.md) fonction est polymorphe et peut être utilisée avec tous les types de modèles. Vous pouvez utiliser la valeur 3 comme argument pour la fonction afin de limiter le nombre d'articles retournés par la requête. Le **sélectionnez** liste qui suit la clause NATURAL PREDICTION JOIN fournit les valeurs à utiliser comme entrée pour la prédiction.  
+ Le [Predict &#40;DMX&#41; ](../dmx/predict-dmx.md) fonction est polymorphe et peut être utilisée avec tous les types de modèles. Vous pouvez utiliser la valeur 3 comme argument pour la fonction afin de limiter le nombre d'articles retournés par la requête. Le **sélectionnez** liste qui suit la clause NATURAL PREDICTION JOIN fournit les valeurs à utiliser comme entrée pour la prédiction.  
   
 ```  
 SELECT FLATTENED  
@@ -209,9 +208,9 @@ NATURAL PREDICTION JOIN
  La colonne contenant l'attribut prédictible `[v Assoc Seq Line Items]` étant une colonne de table, la requête retourne une colonne unique qui contient une table imbriquée. Par défaut, la colonne de table imbriquée est appelée `Expression`. Si votre fournisseur ne prend pas en charge les ensembles de lignes hiérarchiques, vous pouvez utiliser la **FLATTENED** mot clé, comme illustré dans cet exemple pour simplifier l’affichage des résultats.  
   
 ## <a name="see-also"></a>Voir aussi  
- [SÉLECTIONNEZ &#40; DMX &#41;](../dmx/select-dmx.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Guide de référence des instructions DMX &#40;Data Mining Extensions&#41;](../dmx/data-mining-extensions-dmx-statements.md)  
+ [SÉLECTIONNEZ &AMP;#40;DMX&AMP;#41;](../dmx/select-dmx.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)  
   
   

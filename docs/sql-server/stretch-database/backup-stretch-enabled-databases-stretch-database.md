@@ -1,31 +1,25 @@
 ---
-title: "Sauvegarder des bases de données Stretch (Stretch Database) | Microsoft Docs"
-ms.custom: 
+title: Sauvegarder des bases de données Stretch (Stretch Database) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/14/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: stretch-database
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-stretch
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Stretch Database, backing up
 - backups (Stretch Database)
 ms.assetid: 18f0dff0-d8ce-4bee-a935-76ed6dfb3208
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e28871ff432c9763b928293103e80468e37d69e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 512d4908213084555019c20628307309229d2b76
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772755"
 ---
 # <a name="backup-stretch-enabled-databases-stretch-database"></a>Sauvegarder des bases de données Stretch (Stretch Database)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly.md)]

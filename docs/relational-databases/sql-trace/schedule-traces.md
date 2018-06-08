@@ -1,17 +1,16 @@
 ---
 title: Planifier les traces | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - filters [SQL Server], events
 - traces [SQL Server]
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - traces [SQL Server], scheduling
 - stopping traces
 ms.assetid: 620b79db-924b-4502-8af3-39efcfca245d
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1d2644b34916c0263b9ae45251050da2331f7f60
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 41b27bdfe7caa49cd9e833dfec7be8c24b34f01b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schedule-traces"></a>Planifier les traces
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,30 +1,27 @@
 ---
-title: "Leçon 5 : Sauvegarder une base de données à l’aide d’une sauvegarde d’instantanés de fichiers | Microsoft Docs"
-ms.custom: 
+title: 'Leçon 5 : Sauvegarder une base de données à l’aide d’une sauvegarde d’instantanés de fichiers | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: tutorial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 ms.assetid: d9134ade-7b03-4c5c-8ed3-3bc369a61691
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 075262fd0b079d8f4e9f2decab233f6f793dd2df
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: f56a7cfbf4303ca03d3d6e5cda360643a892c35b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-5-backup-database-using-file-snapshot-backup"></a>Leçon 5 : Sauvegarder une base de données à l’aide d’une sauvegarde d’instantanés de fichiers
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

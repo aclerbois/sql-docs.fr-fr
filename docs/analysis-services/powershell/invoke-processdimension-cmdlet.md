@@ -1,31 +1,23 @@
 ---
 title: Applet de commande Invoke-ProcessDimension | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 9506938e-7f9f-4595-ad6d-98c8b0ce8395
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8a24a4b19f20e28346456e3c0c53f39eaeb200b9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 6a3930108baf597e1406efdb992efdda4a52d194
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-processdimension-cmdlet"></a>Applet de commande Invoke-ProcessDimension
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Traitez une dimension en utilisant une variable de type de traitement spécifique.  
+  Traitez une dimension en utilisant une variable de type de traitement spécifique.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -40,7 +32,7 @@ Traitez une dimension en utilisant une variable de type de traitement spécifiqu
   
 ## <a name="parameters"></a>Paramètres  
   
-### <a name="-name-string"></a>-Name \<string>  
+### <a name="-name-string"></a>-Name \<chaîne >  
  Spécifie la dimension à traiter.  
   
 |||  
@@ -62,7 +54,7 @@ Traitez une dimension en utilisant une variable de type de traitement spécifiqu
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-processtype-microsoftanalysisservicesprocesstype"></a>-ProcessType \<Microsoft.AnalysisServices.ProcessType>  
+### <a name="-processtype-microsoftanalysisservicesprocesstype"></a>-ProcessType \<Microsoft.AnalysisServices.ProcessType >  
  Spécifie le type de processus : ProcessFull, ProcessAdd, ProcessUpdate, ProcessIndexes, ProcessData, ProcessDefault, ProcessClear, ProcessStructure, ProcessCelarStructureOnly, ProcessScriptCache, ProcessRecalc.  
   
 |||  
@@ -84,7 +76,7 @@ Traitez une dimension en utilisant une variable de type de traitement spécifiqu
 |Accepter l'entrée de pipeline ?|True (ByPropertyName)|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="commonparameters"></a>\<CommonParameters>  
+### <a name="commonparameters"></a>\<Paramètres_courants >  
  La commande cmdlet prend en charge les paramètres communs : -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer et -OutVariable. Pour plus d’informations, consultez [About_CommonParameters](http://go.microsoft.com/fwlink/?linkID=227825).  
   
 ## <a name="inputs-and-outputs"></a>Entrées et sorties  

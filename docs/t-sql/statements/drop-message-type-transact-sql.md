@@ -1,16 +1,14 @@
 ---
 title: DROP MESSAGE TYPE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP_MESSAGE_TYPE_TSQL
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - DROP MESSAGE TYPE statement
 - removing message types
 ms.assetid: 805e8ad5-8a93-49f0-88e5-e6fca8814dd5
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 24
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1c3c16a12cb8b5880f0afd82e6b3a0831402fb61
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 8745d96c94ac804982a5230b371059c19bdbfa1e
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="drop-message-type-transact-sql"></a>DROP MESSAGE TYPE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

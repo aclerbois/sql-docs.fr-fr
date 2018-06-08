@@ -1,16 +1,15 @@
 ---
 title: sp_schemafilter (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_schemafilter
 ms.assetid: 199e869b-2cd2-44ee-b2ee-69edb06a1bc4
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 635a9d8fc39ea3621c4ba9b11f54300c19ec1011
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ce33fa1ffb73f3ba663eb9ec7fedf0e13d5ec8e7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spschemafilter-transact-sql"></a>sp_schemafilter (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,18 +46,18 @@ sp_schemafilter [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@publisher**  =] **'***publisher***'**  
+ [**@publisher** =] **'***publisher***'**  
  Nom de la non -[!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveur de publication. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
- [ **@schema**  =] **'***schéma***'**  
+ [**@schema** =] **'***schéma***'**  
  Nom du schéma. *schéma* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ **@operation**  =] **'***opération***'**  
+ [**@operation** =] **'***opération***'**  
  Action à effectuer sur ce schéma. *opération* est **nvarchar (4)**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**ajouter**|Ajoute le schéma spécifié à la liste des schémas qui ne peuvent pas être publiés.|  
+|**add**|Ajoute le schéma spécifié à la liste des schémas qui ne peuvent pas être publiés.|  
 |**DROP**|Supprime le schéma spécifié de la liste des schémas qui ne peuvent pas être publiés.|  
 |**Aide**|Retourne la liste de schémas qui ne peuvent pas être publiés.|  
   
@@ -75,7 +73,7 @@ sp_schemafilter [ @publisher = ] 'publisher'
 ## <a name="remarks"></a>Notes  
  **sp_schemafilter** ne doit être utilisée que pour les serveurs de publication hétérogènes.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe du serveur de distribution peuvent exécuter **sp_schemafilter**.  
   
 ## <a name="see-also"></a>Voir aussi  

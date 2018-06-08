@@ -1,28 +1,26 @@
 ---
-title: "Schéma de Version de pilote | Documents Microsoft"
-ms.custom: 
+title: Schéma de Version de pilote | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC driver for Oracle [ODBC], versions
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC driver for Oracle [ODBC], versions
 ms.assetid: e4a8d9d7-8aba-48ab-8be6-1a6129adfb8f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1151f1ce5c1c8644c448555e25a03a0b455e1a9d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f4a6e04da609034fbf0a3d0ba57bc5db2b7b7870
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="driver-version-scheme"></a>Schéma de Version de pilote
 > [!IMPORTANT]  

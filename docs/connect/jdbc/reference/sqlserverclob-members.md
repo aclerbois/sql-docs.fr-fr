@@ -1,28 +1,25 @@
 ---
 title: Membres de SQLServerClob | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: Assembly
 ms.assetid: 7db785ca-edd5-4833-8053-17fdbf87279a
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a8416bd8dea2a36d3421ab44084649e64f39345b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: e81a9bb20fe94cdd1c51c6ed2fcaad3bf2704793
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverclob-members"></a>Membres de SQLServerClob
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -45,16 +42,16 @@ ms.lasthandoff: 11/18/2017
   
 |Nom| Description|  
 |----------|-----------------|  
-|[libérer](../../../connect/jdbc/reference/free-method-sqlserverclob.md)|Cette méthode libère l'objet CLOB, ainsi que les ressources qu'il détient.|  
+|[Gratuit](../../../connect/jdbc/reference/free-method-sqlserverclob.md)|Cette méthode libère l'objet CLOB, ainsi que les ressources qu'il détient.|  
 |[getAsciiStream](../../../connect/jdbc/reference/getasciistream-method-sqlserverclob.md)|Matérialise le Clob en tant que flux ASCII.|  
 |[getCharacterStream](../../../connect/jdbc/reference/getcharacterstream-method-sqlserverclob.md)|Retourne les données Clob en tant qu'objet java.io.Reader ou que flux de caractères.|  
 |[getSubString](../../../connect/jdbc/reference/getsubstring-method-sqlserverclob.md)|Retourne une copie de la sous-chaîne spécifiée dans le Clob, en fonction de la position de départ spécifiée et du nombre de caractères à copier.|  
-|[longueur](../../../connect/jdbc/reference/length-method-sqlserverclob.md)|Retourne le nombre de caractères dans le Clob.|  
+|[length](../../../connect/jdbc/reference/length-method-sqlserverclob.md)|Retourne le nombre de caractères dans le Clob.|  
 |[position](../../../connect/jdbc/reference/position-method-sqlserverclob.md)|Retourne la position de caractère de l'objet Clob spécifié ou d'une sous-chaîne dans le Clob, en fonction de la position de départ spécifiée.|  
 |[setAsciiStream](../../../connect/jdbc/reference/setasciistream-method-sqlserverclob.md)|Retourne un flux à utiliser pour écrire des caractères ASCII dans le Clob, en démarrant à la position spécifiée.|  
 |[setCharacterStream](../../../connect/jdbc/reference/setcharacterstream-method-sqlserverclob.md)|Retourne un flux à utiliser pour écrire un flux de caractères Unicode dans le Clob, en démarrant à la position spécifiée.|  
 |[setString](../../../connect/jdbc/reference/setstring-method-sqlserverclob.md)|Écrit la chaîne spécifiée dans le Clob, en démarrant à la position spécifiée.|  
-|[tronquer](../../../connect/jdbc/reference/truncate-method-sqlserverclob.md)|Tronque le Clob en fonction de la longueur spécifiée.|  
+|[truncate](../../../connect/jdbc/reference/truncate-method-sqlserverclob.md)|Tronque le Clob en fonction de la longueur spécifiée.|  
   
 ## <a name="inherited-methods"></a>Méthodes héritées  
   

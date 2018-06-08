@@ -1,16 +1,14 @@
 ---
-title: dbo.sysjobsteps (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: dbo.sysjobsteps (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.sysjobsteps
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sysjobsteps system table
 ms.assetid: 978b8205-535b-461c-91f3-af9b08eca467
-caps.latest.revision: 
+caps.latest.revision: 28
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f29d3ef22b724abc095da01ea5eef70aa9c447dd
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 5fff8cb852214733a96d1641cd767d578420cb9a
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbosysjobsteps-transact-sql"></a>dbo.sysjobsteps (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -68,6 +65,6 @@ ms.lasthandoff: 02/03/2018
 |**step_uid**|**uniqueidentifier**|Identificateur de l’étape de travail.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de l’Agent SQL Server &#40; Transact-SQL &#41;](../../relational-databases/system-tables/sql-server-agent-tables-transact-sql.md)  
+ [Tables de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-tables/sql-server-agent-tables-transact-sql.md)  
   
   

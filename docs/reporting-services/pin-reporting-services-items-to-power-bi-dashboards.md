@@ -1,15 +1,14 @@
 ---
-title: "Épingler des éléments Reporting Services aux tableaux de bord Power BI | Microsoft Docs"
-ms.custom: 
+title: Épingler des éléments Reporting Services aux tableaux de bord Power BI | Microsoft Docs
+ms.custom: ''
 ms.date: 09/16/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - pbi
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - powerbi
 - power bi integration
 ms.assetid: 1d96c3f7-2fd4-40f7-8d1c-14a7f54cdb15
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3f349916c1047360afa77ee81a9ff9e33699ed65
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 7e3e738ef82486f80b9f81ae8e1d1218397980d1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pin-reporting-services-items-to-power-bi-dashboards"></a>Épingler des éléments Reporting Services aux tableaux de bord Power BI
   [!INCLUDE[ssRSCurrent](../includes/ssrscurrent-md.md)] permet aux utilisateurs d’épingler des éléments de rapport [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] à partir de la barre d’outils de la visionneuse de rapports à un tableau de bord [!INCLUDE[sspowerbi](../includes/sspowerbi-md.md)] en tant que nouvelle vignette.   Pour que vous puissiez épingler des éléments, il faut que votre administrateur intègre au préalable votre serveur de rapports à Azure Active Directory et [!INCLUDE[sspowerbi](../includes/sspowerbi-md.md)].  

@@ -2,16 +2,14 @@
 title: Mettre en forme des adresses de radiomessagerie pour les alertes | Microsoft Docs
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms-agent
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - pager addresses [SQL Server]
 - SQL Server Agent, alerts
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - addresses [SQL Server]
 - alerts [SQL Server], pager addresses
 ms.assetid: a9797d01-1050-442c-9038-ed4bfee1e76a
-caps.latest.revision: ''
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c60d1d5f6ace993259842343a5aaa4f1efb94256
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: af4c8816a7d5eab15490d1eb4ce32d46576e837b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="format-pager-addresses-for-alerts"></a>Format Pager Addresses for Alerts
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

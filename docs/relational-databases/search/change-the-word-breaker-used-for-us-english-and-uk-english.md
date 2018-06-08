@@ -1,28 +1,26 @@
 ---
-title: "Modifier l’analyseur lexical utilisé pour l’anglais des États-Unis et l’anglais (R.U.) | Microsoft Docs"
-ms.custom: 
+title: Modifier l’analyseur lexical utilisé pour l’anglais des États-Unis et l’anglais (R.U.) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6b5d2177-db98-47f5-b32e-4b80a2f74ffe
-caps.latest.revision: 
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eebf733d6c0f0048c8509abf1d1e9f30d30fa912
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2213afdfdb67449e96363e5ea9e5009a93ba9132
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="change-the-word-breaker-used-for-us-english-and-uk-english"></a>Modifier l'analyseur lexical utilisé pour l'anglais des États-Unis et l'anglais (R.U.)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,17 +1,16 @@
 ---
 title: Filtrer une trace | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - filters [SQL Server], events
 - events [SQL Server], filters
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - filters [SQL Server], traces
 - traces [SQL Server], filters
 ms.assetid: 019c10ab-68f6-4e40-a5e8-735b2e1270db
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b77fb18c3513c7c0a764cad2110931d38c6903f9
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 32c4039457be6660d837bbc0f3a41da91ab08b4e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-a-trace"></a>Filtrer une trace
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

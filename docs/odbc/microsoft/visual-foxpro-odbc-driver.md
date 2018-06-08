@@ -1,32 +1,29 @@
 ---
 title: Pilote ODBC Visual FoxPro | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FoxPro ODBC driver [ODBC]
 - Visual FoxPro ODBC driver [ODBC], about Visual FoxPro ODBC driver
 - Visual FoxPro ODBC driver [ODBC]
 - FoxPro ODBC driver [ODBC], about FoxPro ODBC driver
 ms.assetid: 27359133-dd41-478f-8902-996022deb845
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 72501a1082b838d95bb5b9e10f226746f6a968db
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a81de046b2beea99f7ae0005d3308354119e70de
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-foxpro-odbc-driver"></a>Pilote ODBC Visual FoxPro
 Microsoft Visual FoxPro est un environnement puissant et orienté objet pour le développement d’applications et de construction de base de données. Le pilote ODBC Microsoft Visual FoxPro permet aux applications ouvrir, la requête, et de mettre à jour des données dans Visual FoxPro et les versions antérieures de FoxPro via l’interface de base de données connectivité ODBC (Open).  

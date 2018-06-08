@@ -2,34 +2,35 @@
 title: Effectuer une découverte des connaissances | Microsoft Docs
 ms.custom: ''
 ms.date: 06/04/2013
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.kbterms.f1
 - sql13.dqs.kb.viewselectcd.f1
 - sql13.dqs.kb.kbanalyze.f1
 - sql13.dqs.kb.kbmap.f1
 ms.assetid: 34a0ea16-02e6-46ed-90bc-dede68687f63
-caps.latest.revision: ''
+caps.latest.revision: 38
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0958845553a92f18e64c5fd39a3a62229bf9ed7b
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 203660e8685ecdd0bb747f1f13b816db296f0eb3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="perform-knowledge-discovery"></a>Effectuer une découverte des connaissances
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit comment créer une base de connaissances via la découverte des connaissances. Dans le processus de découverte, [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) analyse les données dans un exemple de source de données via un processus assisté par ordinateur, et ajoute les connaissances qu'il acquiert à la base de connaissances. Ces connaissances peuvent être modifiées et améliorées dans l'étape **Gestion des valeurs de domaine** de l'activité de découverte des connaissances ou de celle de gestion des domaines.  
   
  La découverte des connaissances est un processus piloté par l'Assistant qui inclut trois étapes, chacune devant être terminée.  

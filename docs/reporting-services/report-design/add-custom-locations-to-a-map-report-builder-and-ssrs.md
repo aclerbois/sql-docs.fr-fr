@@ -1,28 +1,27 @@
 ---
-title: "Ajouter des emplacements personnalisés à une carte (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajouter des emplacements personnalisés à une carte (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: MICROSOFT.REPORTDESIGNER.MAPPOINT.POINTTEMPLATE
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- MICROSOFT.REPORTDESIGNER.MAPPOINT.POINTTEMPLATE
 ms.assetid: 7d36faae-5bcc-446a-9eba-f42349cafacb
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d4f6fe4d4ba90117cbb6db930419e272d210ccb5
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: dcc9cd3aabc8b68f144e181735d9249b95358e1e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-custom-locations-to-a-map-report-builder-and-ssrs"></a>Ajouter des emplacements personnalisés à une carte (Générateur de rapports et SSRS)
   Après avoir ajouté une carte à un rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , vous pouvez ajouter vos propres emplacements de points.  

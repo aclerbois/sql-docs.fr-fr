@@ -1,28 +1,25 @@
 ---
-title: "Index columnstore - Performances des requêtes | Microsoft Docs"
-ms.custom: 
+title: Index columnstore - Performances des requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 12/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 83acbcc4-c51e-439e-ac48-6d4048eba189
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 23
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d8c18a2198e32bae0427ea286a64998ab546e3ac
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c1cb86de5b9fa7ef0f6efed087e9f308567c8927
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnstore-indexes---query-performance"></a>Index columnstore - Performances des requêtes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -115,7 +112,7 @@ ms.lasthandoff: 02/12/2018
 |Top Sort||non|non|oui||    
 |Window Aggregates||N/A|N/A|oui|Nouvel opérateur dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)].|    
     
- ¹S’applique à [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)] V12 Édition Premium et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]    
+ ¹S’applique à [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], aux niveaux Premium, aux niveaux Standard (S3 et ultérieur) et à tous les niveaux vCore [!INCLUDE[ssSDS](../../includes/sssds-md.md)], ainsi qu’à [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]    
     
 ### <a name="aggregate-pushdown"></a>Agrégation en mode Push    
  Chemin d’exécution standard utilisé pour le calcul d’agrégation qui récupère les lignes qualifiées du nœud SCAN et agrège les valeurs en mode batch. Cette méthode offre de bonnes performances, mais dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], l’opération d’agrégation peut être transmise en mode Push vers le nœud SCAN pour améliorer les performances de calcul d’agrégation par ordre de grandeur avec l’exécution en mode batch. Cela est possible si les conditions suivantes sont remplies : 

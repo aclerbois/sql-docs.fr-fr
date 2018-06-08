@@ -1,26 +1,22 @@
 ---
-title: "Tâches de gestion de la charge de travail"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/12/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.openlocfilehash: 70f70c504aab81f490ee39d244555022bf73d91b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Tâches de gestion de la charge de travail - système de plateforme Analytique | Documents Microsoft
+description: Tâches de gestion de la charge de travail dans le système de plateforme d’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 16206cb5cefd68b19e1640592b903890808b5a31
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="workload-management-tasks"></a>Tâches de gestion de la charge de travail
+# <a name="workload-management-tasks-in-analytics-platform-system"></a>Tâches de gestion de la charge de travail dans le système de plateforme Analytique
+Tâches de gestion de la charge de travail dans le système de plateforme d’Analytique.
 
 ## <a name="view-login-members-of-each-resource-class"></a>Afficher les membres du compte de connexion de chaque classe de ressource
 Décrit comment afficher les membres de la connexion de chaque rôle de serveur de classe de ressource dans SQL Server PDW. Utilisez cette requête pour déterminer la classe de ressources pour les demandes soumises par chaque connexion.  
@@ -45,7 +41,7 @@ WHERE
   
 Si une connexion n’est pas dans cette liste, ses demandes recevront les ressources par défaut. Si une connexion est membre de plusieurs classes de ressources, a la priorité la plus grande classe.  
   
-Les allocations de ressources sont répertoriées dans le [gestion de la charge de travail](workload-management.md) rubrique.  
+Les allocations de ressources sont répertoriées dans [gestion de la charge de travail](workload-management.md).  
   
 ## <a name="change-the-system-resources-allocated-to-a-request"></a>Les ressources système allouées à une demande de modification
 Explique comment déterminer quelle ressource classe une demande de SQL Server PDW est en cours d’exécution sous, puis comment modifier les ressources système pour cette demande. Modifier les ressources pour une demande nécessite de modifier l’appartenance de classe de ressource de la connexion d’envoi de la demande, à l’aide de la [ALTER SERVER ROLE](../t-sql/statements/alter-server-role-transact-sql.md) instruction.  
@@ -71,9 +67,9 @@ WHERE
 GO  
 ```  
   
-S’il n’y a aucune ouverture de session qui sont membres d’un rôle de serveur de classe de ressource, la table résultante sera vide. Dans ce cas, si la requête retourne une connexion nommée Ching, puis Ching soumet une demande, la demande sera s’afficher lorsque les ressources système par défaut, qui est plus petit que les ressources de système de classe de ressource. Si une connexion est membre de plusieurs classes de ressources, a la priorité la plus grande classe.  
+S’il n’y a aucune ouverture de session qui sont membres d’un rôle de serveur de classe de ressource, la table résultante sera vide. Dans ce cas, si la requête retourne une connexion nommée Ching, puis Ching soumet une demande, la demande sera s’afficher lorsque les ressources système par défaut, qui sont plus petites que les ressources de système de classe de ressource. Si une connexion est membre de plusieurs classes de ressources, a la priorité la plus grande classe.  
   
-Pour obtenir la liste des allocations de ressources pour chaque classe de ressource, consultez [gestion de la charge de travail](workload-management.md) rubrique.  
+Pour obtenir la liste des allocations de ressources pour chaque classe de ressource, consultez [gestion de la charge de travail](workload-management.md).  
   
 ### <a name="step-2-run-the-request-under-a-login-with-different-resource-class-membership"></a>Étape 2 : Exécuter la requête sous un compte de connexion avec un abonnement de classe de ressources différent  
 Il existe deux façons d’exécuter une requête avec des ressources système plus ou moins volumineux :  
@@ -90,7 +86,7 @@ ALTER SERVER ROLE xlargerc ADD MEMBER Ching;
   
 Ching est désormais un membre de la largerc et les rôles de serveur xlargerc. Lorsque Ching soumet des demandes, les demandes reçoit les ressources du système xlargerc.  
   
-L’exemple suivant déplace Ching vers le rôle de serveur mediumrc.  Pour ce faire, elle doit être supprimée de xlargerc et de rôles de serveur largerc et ajoutée au rôle de serveur mediumrc.  
+L’exemple suivant déplace Ching vers le rôle de serveur mediumrc.  Pour modifier le nouveau rôle, la connexion doit être supprimée de xlargerc et les rôles de serveur largerc et ajoutée au rôle de serveur mediumrc.  
   
 ```sql  
 -- Move login Ching back to using medium system resources for requests.  
@@ -99,7 +95,7 @@ ALTER SERVER ROLE largerc DROP MEMBER Ching;
 ALTER SERVER ROLE mediumrc ADD MEMBER Ching;  
 ```  
   
-Ching est maintenant membre du rôle de serveur mediumrc.  L’exemple suivant modifie Ching pour que les ressources du système par défaut pour ses demandes.  
+Ching est maintenant membre du rôle de serveur mediumrc.  L’exemple suivant modifie Ching pour que les ressources du système par défaut pour les demandes.  
   
 ```sql  
 -- Move login Ching to use the default system resources for requests.  
@@ -109,13 +105,13 @@ ALTER SERVER ROLE mediumrc DROP MEMBER Ching;
 Pour plus d’informations sur la modification d’appartenance au rôle de classe de ressource, consultez [ALTER SERVER ROLE](../t-sql/statements/alter-server-role-transact-sql.md).  
 
 ## <a name="change-a-login-to-the-default-system-resources-for-its-requests"></a>Modifier une connexion d’accès aux ressources système par défaut pour ses demandes
-Décrit comment modifier les allocations de ressources système affectées à une connexion SQL Server PDW pour les montants par défaut. Cela affecte les ressources système que SQL Server PDW affecte aux requêtes envoyées par la connexion.  
+Décrit comment modifier les allocations de ressources système affectées à une connexion SQL Server PDW pour les montants par défaut. 
   
 Pour obtenir des descriptions de classe de ressource, consultez [gestion de la charge de travail](workload-management.md)  
   
 Lorsqu’une connexion n’est pas un membre d’un rôle de serveur de classe de ressource, les demandes soumises par la connexion recevront la quantité par défaut des ressources système.  
   
-Supposons que la connexion Matt est actuellement membre de tous les rôles de serveur de classe de ressource et qu’il souhaite restaurer avec ses demandes reçoivent uniquement les ressources par défaut.  L’exemple suivant affecte les ressources par défaut pour les demandes de Matt en supprimant son appartenance à partir de tous les rôles de serveur de classe de ressource de trois.  
+Supposons que la connexion Matt est actuellement membre de tous les rôles de serveur de classe de ressource et qu’il souhaite revenir à des requêtes de recevoir uniquement les ressources par défaut.  L’exemple suivant affecte les ressources par défaut pour les demandes de Matt en supprimant son appartenance à partir de tous les rôles de serveur de classe de ressource de trois.  
   
 ```sql  
 --Give the requests submitted by Matt the default system resources   
@@ -130,7 +126,7 @@ Décrit comment déterminer le nombre d’accès concurrentiel emplacements sont
   
 Pour plus d’informations, consultez [gestion de la charge de travail](workload-management.md).  
   
-Une demande attend peut-être trop longtemps sans exécutée. Une des manières de corriger ce problème consiste à examiner le nombre d’emplacements d’accès concurrentiel qu'a besoin de la demande.  L’exemple suivant montre le nombre d’emplacements d’accès concurrentiel requis par chaque demande en attente.  
+Une demande attend peut-être trop longtemps sans exécutée. Un des moyens de résoudre les problèmes de la demande est d’examiner le nombre d’emplacements d’accès concurrentiel qu'a besoin de la demande.  L’exemple suivant montre le nombre d’emplacements d’accès concurrentiel requis par chaque demande en attente.  
   
 ```sql  
 --Display the number of concurrency slots required   

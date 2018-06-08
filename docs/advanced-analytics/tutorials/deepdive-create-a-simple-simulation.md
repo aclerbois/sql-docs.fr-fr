@@ -1,29 +1,17 @@
 ---
 title: Créez une simulation simple (SQL et R approfondie) | Documents Microsoft
-ms.custom: ''
-ms.date: 12/14/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-- SQL Server 2017
-dev_langs:
-- R
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: ca76aef56ef731d9190a8f40d8b4af2e9b04ca00
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 7c93d91324233b05541c09e037f5043f2d9e376f
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="create-a-simple-simulation-sql-and-r-deep-dive"></a>Créez une simulation simple (SQL et R approfondie)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

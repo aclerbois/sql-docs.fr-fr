@@ -1,16 +1,14 @@
 ---
 title: INTO, clause (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - INTO_TSQL
@@ -31,44 +29,45 @@ helpviewer_keywords:
 - clauses [SQL Server], INTO
 - row additions [SQL Server], INTO clause
 ms.assetid: b48d69e8-5a00-48bf-b2f3-19278a72dd88
-caps.latest.revision: 
+caps.latest.revision: 63
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 410e71466944f1744d0c8092f0ad030ffa1da29b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 23b48b3246509d62459daee8ecf50dd9f54ab8c4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select---into-clause-transact-sql"></a>SELECT - Clause INTO (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
-  SELECT…INTO crée une table dans le groupe de fichiers par défaut et y insère les lignes résultant de la requête. Pour afficher la syntaxe SELECT complète, consultez [SELECT &#40;Transact-SQL&#41;](../../t-sql/queries/select-transact-sql.md).  
+SELECT…INTO crée une table dans le groupe de fichiers par défaut et y insère les lignes résultant de la requête. Pour afficher la syntaxe SELECT complète, consultez [SELECT &#40;Transact-SQL&#41;](../../t-sql/queries/select-transact-sql.md).  
   
- ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
+![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
   
 ```  
 [ INTO new_table ]
-[ ON filegroup]
+[ ON filegroup ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *new_table*  
+ *nouvelle_table*   
  Spécifie le nom d'une table à créer en fonction des colonnes de la liste de sélection et des lignes choisies à partir de la source de données.  
- 
-  *filegroup*
- 
- Spécifie le nom du groupe de fichiers dans lequel créer la table. Si le groupe de fichiers spécifié n’existe pas dans la base de données, le moteur SQL Server lève une erreur. Cette option est prise en charge uniquement à partir de [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)].
  
  Le format de *new_table* est déterminé par l’évaluation des expressions de la liste de sélection. Les colonnes de *new_table* sont créées dans l’ordre spécifié par la liste de sélection. Chaque colonne de *new_table* a le même nom, le même type de données, la même possibilité de valeur Null et la même valeur que l’expression correspondante dans la liste de sélection. La propriété IDENTITY d'une colonne est transférée sauf dans les conditions définies dans « Utilisation des colonnes d'identité » dans la section Remarques.  
   
  Pour créer la table dans une autre base de données de la même instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], spécifiez *new_table* comme nom complet sous la forme *database.schema.table_name*.  
   
  Vous ne pouvez pas créer *new_table* sur un serveur distant, mais vous pouvez remplir *new_table* à partir d’une source de données distante. Pour créer *new_table* à partir d’une table source distante, spécifiez la table source par un nom en quatre parties sous la forme *linked_server*.*catalog*.*schema*.*object* dans la clause FROM de l’instruction SELECT. Vous pouvez aussi utiliser la fonction [OPENQUERY](../../t-sql/functions/openquery-transact-sql.md) ou la fonction [OPENDATASOURCE](../../t-sql/functions/opendatasource-transact-sql.md) dans la clause FROM pour spécifier la source de données distante.  
+ 
+ *groupe_fichiers*    
+ Spécifie le nom du groupe de fichiers dans lequel créer la table. Si le groupe de fichiers spécifié n’existe pas dans la base de données, le moteur SQL Server lève une erreur.   
+ 
+ **S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
   
 ## <a name="data-types"></a>Types de données  
  L'attribut FILESTREAM n'est pas transféré dans la nouvelle table. Les objets BLOB FILESTREAM sont copiés et stockés dans la nouvelle table en tant qu’objets BLOB **varbinary(max)**. Sans l’attribut FILESTREAM, le type de données **varbinary(max)** est limité à 2 Go. Si un objet BLOB FILESTREAM dépasse cette valeur, l'erreur 7119 se déclenche et l'instruction s'arrête.  
@@ -90,18 +89,18 @@ Si l'une de ces conditions est vérifiée, la colonne est créée avec l'attribu
 ## <a name="limitations-and-restrictions"></a>Limitations et restrictions  
  Vous ne pouvez pas spécifier une variable de table ou un paramètre table en tant que nouvelle table.  
   
- Vous ne pouvez pas utiliser SELECT…INTO pour créer une table partitionnée, même lorsque la table source est partitionnée. SELECT...INTO n'utilise pas le schéma de partition de la table source ; à la place, la nouvelle table est créée dans le groupe de fichiers par défaut. Pour insérer des lignes dans une table partitionnée, vous devez d'abord créer la table partitionnée, puis utiliser l'instruction INSERT INTO...SELECT FROM.  
+ Vous ne pouvez pas utiliser `SELECT…INTO` pour créer une table partitionnée, même quand la table source est partitionnée. `SELECT...INTO` n’utilise pas le schéma de partition de la table source ; à la place, la nouvelle table est créée dans le groupe de fichiers par défaut. Pour insérer des lignes dans une table partitionnée, vous devez d’abord créer la table partitionnée, puis utiliser l’instruction `INSERT INTO...SELECT...FROM`.  
   
- Les index, contraintes et déclencheurs définis dans la table source ne sont pas transférés dans la nouvelle table ; par ailleurs, ils ne peuvent pas non plus être spécifiés dans l'instruction SELECT...INTO. Si ces objets sont requis, vous pouvez les créer après avoir exécuté l'instruction SELECT...INTO.  
+ Les index, contraintes et déclencheurs définis dans la table source ne sont pas transférés dans la nouvelle table ; ils ne peuvent pas non plus être spécifiés dans l’instruction `SELECT...INTO`. Si ces objets sont nécessaires, vous pouvez les créer après avoir exécuté l’instruction `SELECT...INTO`.  
   
- La spécification d'une clause ORDER BY ne garantit pas que les lignes seront insérées dans l'ordre spécifié.  
+ La spécification d’une clause `ORDER BY` ne garantit pas que les lignes soient insérées dans l’ordre spécifié.  
   
  Lorsqu'une colonne éparse est comprise dans la liste de sélection, la propriété de colonne éparse n'est pas transférée à la colonne de la nouvelle table. Si cette propriété est obligatoire dans la nouvelle table, modifiez la définition de colonne après avoir exécuté l'instruction SELECT...INTO afin d'inclure cette propriété.  
   
- Lorsqu'une colonne calculée est comprise dans la liste de sélection, la colonne correspondante de la nouvelle table n'est pas une colonne calculée. Les valeurs de la nouvelle colonne sont les valeurs calculées au moment de l'exécution de l'instruction SELECT … INTO.  
+ Lorsqu'une colonne calculée est comprise dans la liste de sélection, la colonne correspondante de la nouvelle table n'est pas une colonne calculée. Les valeurs de la nouvelle colonne sont les valeurs calculées au moment de l’exécution de l’instruction `SELECT...INTO`.  
   
 ## <a name="logging-behavior"></a>Comportement de journalisation  
- L'importance de la journalisation pour SELECT INTO dépend du mode de récupération en vigueur pour la base de données. En mode de récupération simple ou en mode de récupération utilisant les journaux de transactions, les opérations de chargement en masse font l'objet d'une journalisation minimale. Avec une journalisation minimale, l’utilisation de l’instruction SELECT… INTO peut s’avérer plus efficace que la création d’une table et son remplissage à l’aide d’une instruction INSERT. Pour plus d'informations, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
+ La quantité d’informations journalisées pour `SELECT...INTO` dépend du mode de récupération en vigueur pour la base de données. En mode de récupération simple ou en mode de récupération utilisant les journaux de transactions, les opérations de chargement en masse font l'objet d'une journalisation minimale. Avec une journalisation minimale, l’utilisation de l’instruction `SELECT...INTO` peut s’avérer plus efficace que la création d’une table et son remplissage avec une instruction INSERT. Pour plus d'informations, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
   
 ## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation CREATE TABLE dans la base de données de destination.  
@@ -213,7 +212,7 @@ FROM OPENDATASOURCE('SQLNCLI',
 GO  
 ```  
   
-### <a name="e-import-from-an-external-table-created-with--polybase"></a>E. Importation à partir d’une table externe créée avec PolyBase  
+### <a name="e-import-from-an-external-table-created-with-polybase"></a>E. Importer à partir d’une table externe créée avec PolyBase  
  Importez des données de Hadoop ou d’Azure Storage dans SQL Server à des fins de stockage permanent. Utilisez `SELECT INTO` pour importer des données référencées par une table externe en vue de leur stockage permanent dans SQL Server. Créez une table relationnelle à la volée, puis créez un index column-store en plus de la table.  
   
  **S’applique à :** [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
@@ -228,13 +227,12 @@ INTO Fast_Customers from Insured_Customers INNER JOIN
         SELECT * FROM CarSensor_Data where Speed > 35   
 ) AS SensorD  
 ON Insured_Customers.CustomerKey = SensorD.CustomerKey  
-ORDER BY YearlyIncome  
-  
+ORDER BY YearlyIncome;  
 ```  
 ### <a name="f-creating-a-new-table-as-a-copy-of-another-table-and-loading-it-a-specified-filegroup"></a>F. Création d’une table en tant que copie d’une autre table et chargement de la table dans un groupe de fichiers spécifié
 L’exemple suivant illustre la création d’une table en tant que copie d’une autre table et son chargement dans un autre groupe de fichiers que le groupe de fichiers par défaut de l’utilisateur.
 
- **S’applique à** : [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)]
+ **S’applique à :** [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
 
 ```sql
 ALTER DATABASE [AdventureWorksDW2016] ADD FILEGROUP FG2;
@@ -246,13 +244,13 @@ FILENAME = '/var/opt/mssql/data/AdventureWorksDW2016_Data1.mdf'
 )
 TO FILEGROUP FG2;
 GO
-SELECT *  INTO [dbo].[FactResellerSalesXL] ON FG2 from [dbo].[FactResellerSales]
+SELECT * INTO [dbo].[FactResellerSalesXL] ON FG2 FROM [dbo].[FactResellerSales];
 ```
   
 ## <a name="see-also"></a> Voir aussi  
  [SELECT &#40;Transact-SQL&#41;](../../t-sql/queries/select-transact-sql.md)   
  [Exemples SELECT &#40;Transact-SQL&#41;](../../t-sql/queries/select-examples-transact-sql.md)   
  [INSERT &#40;Transact-SQL&#41;](../../t-sql/statements/insert-transact-sql.md)   
- [IDENTITY, fonction &#40;Transact-SQL&#41;](../../t-sql/functions/identity-function-transact-sql.md)  
+ [IDENTITY &#40;Function&#41; &#40;Transact-SQL&#41;](../../t-sql/functions/identity-function-transact-sql.md)  
   
   

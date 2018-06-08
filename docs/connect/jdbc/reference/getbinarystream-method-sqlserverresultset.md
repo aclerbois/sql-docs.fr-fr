@@ -1,30 +1,29 @@
 ---
-title: "getBinaryStream (méthode) (SQLServerResultSet) | Documents Microsoft"
-ms.custom: 
+title: getBinaryStream (méthode) (SQLServerResultSet) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.getBinaryStream
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.getBinaryStream
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 2bcccb16-007f-4a34-a449-61fc89e99218
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2b1dd3ef90afa93289e7072146305a09665cb587
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 9d29edb9b0ecd7556ffe61d036b9161aca4f7fe2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getbinarystream-method-sqlserverresultset"></a>getBinaryStream (méthode) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

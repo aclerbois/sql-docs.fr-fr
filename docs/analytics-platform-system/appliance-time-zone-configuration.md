@@ -1,35 +1,28 @@
 ---
-title: "Configuration du fuseau horaire de matériel (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: cea9eeb9-fe05-4e65-b229-539de02ab20a
-caps.latest.revision: "18"
-ms.openlocfilehash: 0dc20594fa45375fe07b4ec374da9c752d3cc8b0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Configurer le fuseau horaire - système de plateforme Analytique | Documents Microsoft
+description: La page de fuseau horaire vous permet de définir le fuseau horaire pour tous les nœuds sur votre appliance Analytique plateforme système (APS).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 6a17ef4e77f9703a285f1e232077582e4441f293
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="appliance-time-zone-configuration"></a>Configuration du fuseau horaire matériel
-Le **fuseau horaire** page vous permet de définir le fuseau horaire pour tous les nœuds sur votre appliance SQL Server PDW.  
+# <a name="appliance-time-zone-configuration---analytics-platform-system"></a>Configuration du fuseau horaire matériel - système de plateforme Analytique
+Le **fuseau horaire** page vous permet de définir le fuseau horaire pour tous les nœuds sur votre appliance Analytique plateforme système (APS).  
   
 ## <a name="to-set-the-time-zone"></a>Pour définir le fuseau horaire  
   
-1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lance le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41; ](launch-the-configuration-manager.md).  
+1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lancer le Gestionnaire de Configuration &#40;système de plateforme Analytique&#41;](launch-the-configuration-manager.md).  
   
-2.  Arrêter les services d’application à l’aide de la **l’état des Services** page dans le Gestionnaire de Configuration. Consultez [PDW Services état &#40; Système de plateforme Analytique &#41; ](pdw-services-status.md) pour obtenir des instructions.  
+2.  Arrêter les services d’application à l’aide de la **l’état des Services** page dans le Gestionnaire de Configuration. Consultez [l’état des Services PDW &#40;système de plateforme Analytique&#41; ](pdw-services-status.md) pour obtenir des instructions.  
   
 3.  Dans le volet gauche du Gestionnaire de Configuration, cliquez sur **fuseau horaire**. Sélectionnez le fuseau horaire de votre choix à partir de la **fuseau horaire** menu déroulant. En fonction de votre emplacement, vous pouvez également choisir d’activer la case à côté **ajuster l’horloge pour l’heure d’été**.  
   
@@ -40,5 +33,5 @@ Le **fuseau horaire** page vous permet de définir le fuseau horaire pour tous l
 ![Temps des appliances DWConfig](./media/appliance-time-zone-configuration/SQL_Server_PDW_DWConfig_ApplTopTime.png "SQL_Server_PDW_DWConfig_ApplTopTime")  
   
 ## <a name="see-also"></a>Voir aussi  
-[Lancez le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41;](launch-the-configuration-manager.md)  
+[Lancez le Gestionnaire de Configuration &#40;Analytique plate-forme système&#41;](launch-the-configuration-manager.md)  
   

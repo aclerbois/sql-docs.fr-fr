@@ -1,32 +1,29 @@
 ---
 title: Fournisseur Microsoft OLE DB pour Oracle | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - providers [ADO], OLE DB provider for Oracle
 - OLE DB provider for Oracle [ADO]
 - Oracle provider [ADO]
 ms.assetid: 44fae9dd-5585-4cd6-8bbd-3248a78931b4
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 35bd07e150d1d56a1ea94542b0bd5b3c1b46d3d4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: de312ff17a7d66bf58a5b8f1fb7a6c33aa27acec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-ole-db-provider-for-oracle-overview"></a>Fournisseur Microsoft OLE DB pour Oracle présentation
 > [!IMPORTANT]
@@ -73,8 +70,8 @@ MSDAORA
 |---------------|-----------------|
 |**Handle de fenêtre**|Indique le handle de fenêtre à utiliser pour demander des informations supplémentaires.|
 |**Identificateur de paramètres régionaux**|Indique un nombre 32 bits unique (par exemple, 1033) qui spécifie les préférences liées à la langue de l’utilisateur. Ces préférences indiquent la façon dont les dates et heures sont formatées, les éléments sont triés par ordre alphabétique, les chaînes sont comparées et ainsi de suite.|
-|**OLE DB Services**|Indique le masque de bits qui spécifie les services OLE DB pour activer ou désactiver.|
-|**Prompt**|Indique s’il faut inviter l’utilisateur pendant une connexion est établie.|
+|**Services OLE DB**|Indique le masque de bits qui spécifie les services OLE DB pour activer ou désactiver.|
+|**invite de commandes**|Indique s’il faut inviter l’utilisateur pendant une connexion est établie.|
 |**Propriétés étendues**|Chaîne contenant les informations de connexion étendues spécifiques au fournisseur. Utilisez cette propriété uniquement pour les informations de connexion spécifique au fournisseur qui ne peut pas être décrites par le biais du mécanisme de propriété.|
 
 ## <a name="see-also"></a>Voir aussi

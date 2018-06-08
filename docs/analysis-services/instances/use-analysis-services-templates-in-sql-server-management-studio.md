@@ -1,27 +1,19 @@
 ---
-title: "Utiliser des modèles Analysis Services dans SQL Server Management Studio | Documents Microsoft"
-ms.custom: 
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 54ad1954-22e2-4628-b334-8fad8e9433b8
-caps.latest.revision: 
-author: Minewiskan
+title: Utiliser des modèles Analysis Services dans SQL Server Management Studio | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2b13acc5ac8947e4e97509764f648f8c31da1fa6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: ebed4cb2e230e3d3367131a8caca63544cf78b8f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-analysis-services-templates-in-sql-server-management-studio"></a>Utiliser des modèles Analysis Services dans SQL Server Management Studio
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]
@@ -29,18 +21,6 @@ ms.lasthandoff: 02/15/2018
   [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] fournit un ensemble de modèles qui vous aident à créer rapidement des scripts XMLA et des requêtes DMX ou MDX, à créer des indicateurs de performance clés dans un cube ou un modèle tabulaire, à générer des scripts pour les opérations de sauvegarde et de restauration et à effectuer de nombreuses autres tâches. Les modèles sont situés dans l' **Explorateur de modèles** de [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)].  
   
  Cette rubrique inclut une liste de modèles pour les modèles MDX et tabulaires et fournit des exemples de génération d'une requête MDX et d'une instruction XMLA à l'aide de l'explorateur de métadonnées et de l'explorateur de modèles.  
-  
- Cette rubrique comprend les sections suivantes :  
-  
- [Ouvrir un modèle Analysis Services](#bkmk_usingTE)  
-  
- [Générer et exécuter une requête MDX sur un modèle tabulaire à l'aide d'un modèle](#BKMK_Building_Queries)  
-  
- [Créer un script XMLA à partir d'un modèle](#bkmk_backup)  
-  
- [Générer une requête d'ensemble de lignes de schéma à l'aide d'un modèle XMLA](#bkmk_schemarowset)  
-  
- [Référence du modèle Analysis Services](#bkmk_Ref)  
   
  Cette rubrique ne couvre pas les modèles DMX. Pour obtenir des exemples montrant comment créer des requêtes d’exploration de données à l’aide de modèles, consultez [Créer une requête DMX dans SQL Server Management Studio](../../analysis-services/data-mining/create-a-dmx-query-in-sql-server-management-studio.md) ou [Créer une requête singleton de prédiction à partir d’un modèle](../../analysis-services/data-mining/create-a-singleton-prediction-query-from-a-template.md).  
   
@@ -151,7 +131,7 @@ SELECT * FROM $system.DISCOVER_SCHEMA_ROWSETS
   
 2.  Ouvrez l' **Explorateur de modèles**, puis faites glisser le modèle, **Découvrir les ensembles de lignes du schéma**, dans la fenêtre de requête vide.  
   
-3.  Dans le modèle, remplacez le [RequestType élément &#40; XMLA &#41; ](../../analysis-services/xmla/xml-elements-properties/requesttype-element-xmla.md) élément avec le texte suivant : `<RequestType>MDSCHEMA_INPUT_DATASOURCES</RequestType>`  
+3.  Dans le modèle, remplacez le [RequestType élément &#40;XMLA&#41; ](../../analysis-services/xmla/xml-elements-properties/requesttype-element-xmla.md) élément avec le texte suivant : `<RequestType>MDSCHEMA_INPUT_DATASOURCES</RequestType>`  
   
 4.  Cliquez sur **Exécuter**.  
   
@@ -234,8 +214,8 @@ SELECT * FROM $system.DISCOVER_SCHEMA_ROWSETS
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence MDX &#40;Multidimensional Expressions&#41;](../../mdx/multidimensional-expressions-mdx-reference.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence](../../dmx/data-mining-extensions-dmx-reference.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence](../../dmx/data-mining-extensions-dmx-reference.md)   
  [Langage de script Analysis Services &#40;ASSL pour XMLA&#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)   
- [Analysis Services Scripting Language &#40; ASSL de XMLA &#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
+ [Analysis Services Scripting Language &#40;ASSL de XMLA&#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
   
   

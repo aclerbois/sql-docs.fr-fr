@@ -1,17 +1,15 @@
 ---
-title: "Propriété de tri | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété de tri | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::get_Sort
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - ASC [ADO]
 - Sort property [ADO]
 ms.assetid: 3683ffa0-6f93-4906-9533-ef6942f24f39
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93be03c62c7950e2cd41a3ab5b56670c2e70b11c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 692a6a3e9ca2e65b031aebd8ed99c2719f0f0a69
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sort-property"></a>Propriété de tri
 Indique un ou plusieurs noms de champ sur lequel le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) est triée, et indique si chaque champ est trié dans l’ordre croissant ou décroissant.  
@@ -62,6 +59,6 @@ Indique un ou plusieurs noms de champ sur lequel le [Recordset](../../../ado/ref
 ## <a name="see-also"></a>Voir aussi  
  [Exemple de propriété de tri (VB)](../../../ado/reference/ado-api/sort-property-example-vb.md)   
  [Exemple de propriété de tri (VC ++)](../../../ado/reference/ado-api/sort-property-example-vc.md)   
- [Optimize Property-Dynamic (ADO)](../../../ado/reference/ado-api/optimize-property-dynamic-ado.md)   
+ [Optimiser la propriété dynamique (ADO)](../../../ado/reference/ado-api/optimize-property-dynamic-ado.md)   
  [SortColumn, propriété (RDS)](../../../ado/reference/rds-api/sortcolumn-property-rds.md)   
  [SortDirection, propriété (RDS)](../../../ado/reference/rds-api/sortdirection-property-rds.md)

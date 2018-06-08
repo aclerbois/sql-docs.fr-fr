@@ -1,31 +1,23 @@
 ---
 title: Modifier les mappages de filtre de lignes, de tables ou de colonnes | Documents Microsoft
-ms.custom: 
-ms.date: 02/21/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 2124c526-5772-4f84-a019-9dd3e906e8dd
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 361cdea7d72a02c455ccf3f5b6d21255473b937e
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 6eab5a756fb52afeb69c5f4c7646d768b9ec263f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="change-table-column-or-row-filter-mappings"></a>Changer des mappages de filtres de lignes, de tables ou de colonnes 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Cet article explique comment modifier les mappages de filtre de lignes, de tables ou de colonnes à l’aide de la **modifier les propriétés de Table** boîte de dialogue de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)].  
+  Cet article explique comment modifier les mappages de filtre de lignes, de tables ou de colonnes à l’aide de la **modifier les propriétés de Table** boîte de dialogue de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)].  
   
  Les options proposées dans la boîte de dialogue **Modifier les propriétés de la table** diffèrent selon que vous avez initialement importé les données en sélectionnant des tables dans une liste ou en utilisant une requête SQL. Si vous avez importé initialement les données par la sélection dans une liste, la boîte de dialogue **Modifier les propriétés de la table** affiche le mode Aperçu de la table. Ce mode affiche uniquement un sous-ensemble limité aux cinquante premières lignes de la table source. Si vous avez importé initialement les données à l’aide d’une instruction SQL, la boîte de dialogue **Modifier les propriétés de la table** affiche uniquement une instruction SQL. Si vous utilisez une instruction de requête SQL, vous pouvez récupérer un sous-ensemble de lignes, soit en concevant un filtre, soit en modifiant manuellement l'instruction SQL.  
   

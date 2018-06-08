@@ -1,34 +1,32 @@
 ---
-title: "Capture de données modifiées et autres fonctionnalités de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Capture de données modifiées et autres fonctionnalités de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 05/03/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change data capture [SQL Server], other SQL Server features and
 ms.assetid: 7dfcb362-1904-4578-8274-da16681a960e
-caps.latest.revision: 
+caps.latest.revision: 14
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 62ad0bdefa2264f69cddb2ad60ca408e5e91b6a1
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 29c9a2ee3c323c9689e7ece0b2b1318a7051321e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-data-capture-and-other-sql-server-features"></a>Capture de données modifiées et autres fonctionnalités de SQL Server
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cette rubrique décrit comment les fonctionnalités suivantes interagissent avec la capture de données modifiées :  
+  Cette rubrique décrit comment les fonctionnalités suivantes interagissent avec la capture de données modifiées :  
   
 -   [Suivi des modifications](#ChangeTracking)  
   

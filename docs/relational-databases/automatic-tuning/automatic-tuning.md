@@ -1,31 +1,31 @@
 ---
-title: "Le paramétrage automatique | Documents Microsoft"
-description: "En savoir plus sur le réglage automatique dans SQL Server et la base de données SQL Azure"
-ms.custom: 
+title: Le paramétrage automatique | Documents Microsoft
+description: En savoir plus sur le réglage automatique dans SQL Server et la base de données SQL Azure
+ms.custom: ''
 ms.date: 08/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: automatic-tuning
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - performance tuning [SQL Server]
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: ''
 author: jovanpop-msft
 ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 04d8ac47233e0556cd54ed9fb2b3d22080b4ee42
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2017 || = sqlallproducts-allversions
+ms.openlocfilehash: 0e77a1d7e24fa2635b3e699672338e588c1f5c1c
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707767"
 ---
 # <a name="automatic-tuning"></a>Paramétrage automatique
 [!INCLUDE[tsql-appliesto-ss2017-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-asdb-xxxx-xxx-md.md)]
@@ -75,11 +75,13 @@ En outre, [!INCLUDE[ssde_md](../../includes/ssde_md.md)] vous permet d’entièr
 [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte automatiquement une régression de choix de plan potentiels, y compris le plan qui doit être utilisé au lieu du plan incorrect.
 Lorsque le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] applique la dernière connu bon plan, il analyse automatiquement les performances du plan forcé. Si le plan forcé n’est pas meilleur que le plan de régression, le nouveau plan sera unforced et le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] compile un plan. Si [!INCLUDE[ssde_md](../../includes/ssde_md.md)] vérifie que le plan forcé est préférable à une régression, le plan forcé est conservé jusqu'à une recompilation (par exemple, sur la prochaine modification de schéma ou de statistiques) s’il est préférable que le plan de régression.
 
+Remarque : N’importe quel automatique des plans forcé ne pas persit sur un redémarrage de l’instance de SQL Server.
+
 ### <a name="enabling-automatic-plan-choice-correction"></a>L’activation de correction des choix de plan automatique
 
 Vous pouvez activer le réglage automatique pour chaque base de données et spécifier que le dernier bon plan connu doit être forcé quand une régression de changement de plan est détectée. Pour cela, utilisez la commande suivante :
 
-```   
+```sql   
 ALTER DATABASE current
 SET AUTOMATIC_TUNING ( FORCE_LAST_GOOD_PLAN = ON ); 
 ```
@@ -92,23 +94,24 @@ Plans forcés manuellement ne doivent pas être forcés à forever, parce que le
 
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit toutes les vues nécessaires et les procédures requises pour surveiller les performances et résoudre les problèmes dans le magasin de requêtes.
 
-Dans [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)], vous pouvez rechercher les régressions de choix de plan à l’aide de vues système de magasin de requêtes. Dans [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)], le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte et présente des régressions de choix de plan potentiels et les actions recommandées qui doivent être appliquées dans le [sys.dm_db_tuning_recommendations &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md) vue. La vue affiche des informations sur le problème, l’importance du problème et des détails tels que la requête identifiée, l’ID du plan de régression, l’ID du plan qui a été utilisé en tant que ligne de base pour la comparaison et le [!INCLUDE[tsql_md](../../includes/tsql_md.md)] instruction qui peut être exécutée pour résoudre le problème.
+Dans [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)], vous pouvez rechercher les régressions de choix de plan à l’aide de vues système de magasin de requêtes. Dans [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)], le [!INCLUDE[ssde_md](../../includes/ssde_md.md)] détecte et présente des régressions de choix de plan potentiels et les actions recommandées qui doivent être appliquées dans le [sys.dm_db_tuning_recommendations &#40;Transact-SQL&#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md) vue. La vue affiche des informations sur le problème, l’importance du problème et des détails tels que la requête identifiée, l’ID du plan de régression, l’ID du plan qui a été utilisé en tant que ligne de base pour la comparaison et le [!INCLUDE[tsql_md](../../includes/tsql_md.md)] instruction qui peut être exécutée pour résoudre le problème.
 
-| type | description | datetime | score | détails | … |
+| Type | description | DATETIME | score | détails | … |
 | --- | --- | --- | --- | --- | --- |
-| `FORCE_LAST_GOOD_PLAN` | Temps processeur passé de 4 ms à 14 ms | 3/17/2017 | 83 | `queryId` `recommendedPlanId` `regressedPlanId` `T-SQL` |   |
-| `FORCE_LAST_GOOD_PLAN` | Temps processeur passé de ms 37 à 84 ms | 3/16/2017 | 26 | `queryId` `recommendedPlanId` `regressedPlanId` `T-SQL` |   |
+| `FORCE_LAST_GOOD_PLAN` | Temps processeur passé de 4 ms à 14 ms | 3/17/2017 | 83 | `queryId` `recommendedPlanId` `regressedPlanId` `T-SQL`) |   |
+| `FORCE_LAST_GOOD_PLAN` | Temps processeur passé de ms 37 à 84 ms | 3/16/2017 | 26 | `queryId` `recommendedPlanId` `regressedPlanId` `T-SQL`) |   |
 
 Certaines colonnes de cette vue sont décrits dans la liste suivante :
  - Type de l’action recommandée - `FORCE_LAST_GOOD_PLAN`.
  - Description qui contient des informations pourquoi [!INCLUDE[ssde_md](../../includes/ssde_md.md)] pense que ce changement de plan est une régression des performances potentielles.
  - Date et heure de la régression potentielle est détectée.
  - Score de cette recommandation. 
- - Pour plus d’informations sur les problèmes tels que les ID du plan détecté, l’ID du plan de régression, ID du plan qui doit être forcé pour résoudre le problème, [!INCLUDE[tsql_md](../../includes/tsql_md.md)] script qui peut-être être appliquée pour résoudre le problème, etc. Sont stockés les détails [format JSON](../../relational-databases/json/index.md).
+ - Pour plus d’informations sur les problèmes tels que les ID du plan détecté, l’ID du plan de régression, ID du plan qui doit être forcé pour résoudre le problème, [!INCLUDE[tsql_md](../../includes/tsql_md.md)]
+ script qui peut-être être appliquée pour résoudre le problème, etc. Sont stockés les détails [format JSON](../../relational-databases/json/index.md).
 
 Utilisez la requête suivante pour obtenir un script qui résout le problème et des informations supplémentaires sur l’estimation bénéficiez :
 
-```   
+```sql   
 SELECT reason, score,
       script = JSON_VALUE(details, '$.implementationDetails.script'),
       planForceDetails.*,
@@ -134,13 +137,15 @@ FROM sys.dm_db_tuning_recommendations
 
 [!INCLUDE[ssresult-md](../../includes/ssresult-md.md)]     
 
-| reason | score | script | requête\_id | plan actuel\_id | recommandé plan\_id | estimated\_gain | erreur\_sujets
+| reason | score | script | requête\_id | plan actuel\_id | recommandé plan\_id | estimé\_obtenir | erreur\_sujets
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | Temps processeur passé de 3 ms à 46 ms | 36 | EXEC sp\_requête\_stocker\_forcer\_plan 12, 17 ; | 12 | 28 | 17 | 11.59 | 0
 
 `estimated_gain` représente le nombre estimé de secondes qui seraient enregistrés si le plan recommandé est exécuté à la place le plan actuel. Si le gain est supérieur à 10 secondes, le plan recommandé doit être forcé à la place le plan actuel. S’il existe des erreurs plus (par exemple, les délais d’attente ou abandonnées exécutions) dans le plan actuel que dans la planification, la colonne `error_prone` serait défini sur la valeur `YES`. Plan susceptible d’engendrer des erreurs est une autre raison pour lesquelles le plan recommandé doit être forcé au lieu de l’objet actuel.
 
 Bien que [!INCLUDE[ssde_md](../../includes/ssde_md.md)] fournit toutes les informations requises pour identifier les régressions de choix de plan ; continue d’analyse et de résolution des problèmes de performances peuvent être un processus fastidieux. Le paramétrage automatique facilite ce processus.
+
+Remarque : Les données dans cette vue DMV ne persistent pas après un redémarrage de l’instance de SQL Server.
 
 ## <a name="automatic-index-management"></a>Gestion automatique des index
 
@@ -161,7 +166,7 @@ Recherche l’ensemble optimal d’index qui améliorent les performances des re
 
 En plus de la détection, [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] peuvent appliquer automatiquement les recommandations identifiées. Si vous trouvez que les règles intégrées améliorent les performances de votre base de données, vous pouvez laisser [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] gérer automatiquement les index.
 
-Pour activer le réglage automatique dans la base de données SQL Azure et permettent de gérer entièrement votre charge de travail de réglage automatique, consultez [activer le réglage automatique dans la base de données SQL Azure à l’aide du portail Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-automatic-tuning-enable).
+Pour activer le réglage automatique dans la base de données SQL Azure et permettent de gérer entièrement votre charge de travail de réglage automatique, consultez [activer le réglage automatique dans la base de données SQL Azure à l’aide du portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-automatic-tuning-enable).
 
 Lorsque le [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] applique une recommandation de CREATE INDEX ou DROP INDEX, il analyse automatiquement les performances des requêtes qui sont affectés par l’index. Nouvel index est conservé uniquement si les performances des requêtes concernées sont améliorées. L’index supprimé sera automatiquement recréé s’il existe des requêtes qui s’exécutent plus lentement en raison de l’absence de l’index.
 
@@ -171,14 +176,14 @@ Actions requises pour créer des index nécessaires dans [!INCLUDE[ssazure_md](.
 
 ### <a name="alternative---manual-index-management"></a>Alternative - gestion d’index manuelles
 
-Sans la gestion automatique des index, l’utilisateur doit interroger manuellement [sys.dm_db_missing_index_details &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql.md) afin de retrouver les index qui peuvent améliorer les performances, créer des index à l’aide des informations fournies dans cette vue et surveiller les performances de la requête manuellement. Afin de trouver l’index doivent être supprimés, les utilisateurs doivent surveiller opérationnel statistiques des index à l’index de recherche rarement utilisée.
+Sans la gestion automatique des index, l’utilisateur doit interroger manuellement [sys.dm_db_missing_index_details &#40;Transact-SQL&#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql.md) afin de retrouver les index qui peut améliorer les performances, créer des index à l’aide des détails fourni dans cette vue et surveiller les performances de la requête manuellement. Afin de trouver l’index doivent être supprimés, les utilisateurs doivent surveiller opérationnel statistiques des index à l’index de recherche rarement utilisée.
 
-[!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] simplifie ce processus. [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] analyse de votre charge de travail, identifie les requêtes qui peuvent être exécutées plus rapidement avec un nouvel index et identifie les index non utilisés ou en double. Trouver les informations d’identification d’index doit être modifié sur [trouver des recommandations d’index dans le portail Azure](https://docs.microsoft.com/en-us/azure/sql-database/sql-database-advisor-portal).
+[!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] simplifie ce processus. [!INCLUDE[ssazure_md](../../includes/ssazure_md.md)] analyse de votre charge de travail, identifie les requêtes qui peuvent être exécutées plus rapidement avec un nouvel index et identifie les index non utilisés ou en double. Trouver les informations d’identification d’index doit être modifié sur [trouver des recommandations d’index dans le portail Azure](https://docs.microsoft.com/azure/sql-database/sql-database-advisor-portal).
 
 ## <a name="see-also"></a>Voir aussi  
- [ALTER DATABASE SET AUTOMATIC_TUNING &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md)   
+ [MODIFICATION de base de données ensemble AUTOMATIC_TUNING &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md)   
  [sys.database_automatic_tuning_options &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-automatic-tuning-options-transact-sql.md)  
- [sys.dm_db_tuning_recommendations &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md)   
+ [Sys.dm_db_tuning_recommendations &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-tuning-recommendations-transact-sql.md)   
  [sys.dm_db_missing_index_details &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-missing-index-details-transact-sql.md)   
  [sp_query_store_force_plan &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-query-store-force-plan-transact-sql.md)     
  [sp_query_store_unforce_plan &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-query-store-unforce-plan-transact-sql.md)           

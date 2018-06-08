@@ -1,15 +1,14 @@
 ---
-title: "Création d’un module fournisseur d’informations personnalisé | Microsoft Docs"
-ms.custom: 
+title: Création d’un module fournisseur d’informations personnalisé | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -19,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - custom log providers [Integration Services], creating
 ms.assetid: fc20af96-9eb8-4195-8d3f-8a4d7c753f24
-caps.latest.revision: 
+caps.latest.revision: 58
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ae1f8508d0160eb81c612392b9b8349114bae3d7
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 97562ed0586681fab620549fb076ff037b01ec4a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-a-custom-log-provider"></a>Création d'un module fournisseur d'informations personnalisé
   L'environnement d'exécution [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] possède des fonctionnalités de journalisation complètes. Un journal vous permet de capturer des événements qui se produisent pendant l'exécution d'un package. [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] inclut divers modules fournisseurs d'informations qui permettent de créer et stocker des journaux dans plusieurs formats, notamment XML, texte et base de données ou dans le journal des événements Windows. Si l'un de ces fournisseurs ou formats de sortie ne répond pas à vos besoins, vous pouvez créer un module fournisseur d'informations personnalisé.  

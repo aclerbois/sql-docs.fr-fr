@@ -1,32 +1,30 @@
 ---
-title: "Publier des données sur Internet à l’aide d’un réseau privé virtuel | Microsoft Docs"
-ms.custom: 
+title: Publier des données sur Internet à l’aide d’un réseau privé virtuel | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - VPNs [SQL Server replication]
 - Web publishing [SQL Server replication], VPNs
 - Internet [SQL Server replication], VPNs
 ms.assetid: 9ffb6546-9973-4574-aaa0-8fe0017e3601
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 760dd1341cc9a6aab18644b3777b007519322c7b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: fdc68104d1431ab21c5152f5216758f3abadd439
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publish-data-over-the-internet-using-vpn"></a>Publier des données sur Internet à l'aide d'un réseau privé virtuel
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

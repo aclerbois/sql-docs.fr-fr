@@ -1,16 +1,14 @@
 ---
 title: sysmail_help_configure_sp (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_help_configure_sp
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_help_configure_sp
 ms.assetid: e598d4c8-3041-4965-b046-dce3a8e3d3e0
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 13f768cd5e1cbbbcfa3f5b74d7ae52d2e9f357e1
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 0d000f176194551f844485bcab04bfd0e085d702
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailhelpconfiguresp-transact-sql"></a>sysmail_help_configure_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,14 +43,14 @@ sysmail_help_configure_sp  [ [ @parameter_name = ] 'parameter_name' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@parameter_name**  =] **'***nom_paramètre***'**  
- Nom du paramètre de configuration à extraire. Si spécifié, la valeur du paramètre de configuration est retournée dans le  **@parameter_value**  paramètre de sortie. Lorsqu’aucun  **@parameter_name**  est spécifié, cette procédure stockée renvoie un jeu de résultats contenant tous les paramètres de configuration de messagerie de base de données dans l’instance.  
+ [**@parameter_name** =] **'***nom_paramètre***'**  
+ Nom du paramètre de configuration à extraire. Si spécifié, la valeur du paramètre de configuration est retournée dans le **@parameter_value** paramètre de sortie. Lorsqu’aucun **@parameter_name** est spécifié, cette procédure stockée renvoie un jeu de résultats contenant tous les paramètres de configuration de messagerie de base de données dans l’instance.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
 ## <a name="result-sets"></a>Jeux de résultats  
- Lorsqu’aucun  **@parameter_name**  est spécifié, retourne un jeu de résultats avec les colonnes suivantes.  
+ Lorsqu’aucun **@parameter_name** est spécifié, retourne un jeu de résultats avec les colonnes suivantes.  
   
 ||||  
 |-|-|-|  
@@ -65,7 +62,7 @@ sysmail_help_configure_sp  [ [ @parameter_name = ] 'parameter_name' ]
 ## <a name="remarks"></a>Notes  
  La procédure stockée **sysmail_help_configure_sp** répertorie les paramètres de configuration de base de données pour l’instance.  
   
- Lorsqu’un  **@parameter_name**  est spécifié, mais aucun paramètre de sortie n’est fournie pour  **@parameter_value** , cette procédure stockée ne produit aucune sortie.  
+ Lorsqu’un **@parameter_name** est spécifié, mais aucun paramètre de sortie n’est fournie pour **@parameter_value**, cette procédure stockée ne produit aucune sortie.  
   
  La procédure stockée **sysmail_help_configure_sp** est dans le **msdb** de base de données et est détenue par le **dbo** schéma. La procédure doit être appelée avec un nom en trois parties si la base de données actuelle n’est pas **msdb**.  
   
@@ -96,6 +93,6 @@ ProhibitedExtensions            exe,dll,vbs,js  Extensions not allowed in outgoi
   
 ## <a name="see-also"></a>Voir aussi  
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

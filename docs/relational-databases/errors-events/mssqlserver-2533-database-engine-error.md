@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_2533 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 2533 (Database Engine error)
 ms.assetid: 0418352c-0ab2-4dc7-b8b9-5c3bad94560c
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 19
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 88ad8c6e591b249323f8dce0c26b60dc2e1677d6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: aeac03f145f984cca0708955fc10d3514ea66ba1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver2533"></a>MSSQLSERVER_2533
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -69,6 +64,6 @@ REPAIR désalloue la page. Si la page venait d'une unité d'allocation de donné
 > [!CAUTION]  
 > Cette réparation peut entraîner une perte de données.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [MSSQLSERVER_2534](~/relational-databases/errors-events/mssqlserver-2534-database-engine-error.md)  
   

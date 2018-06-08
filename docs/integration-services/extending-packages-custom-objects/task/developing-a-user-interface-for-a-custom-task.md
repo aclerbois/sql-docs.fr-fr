@@ -1,15 +1,14 @@
 ---
-title: "Développement d’une interface utilisateur pour une tâche personnalisée | Microsoft Docs"
-ms.custom: 
+title: Développement d’une interface utilisateur pour une tâche personnalisée | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - user interface [Integration Services]
 - SSIS custom tasks, user interface
 ms.assetid: 1e940cd1-c5f8-4527-b678-e89ba5dc398a
-caps.latest.revision: 
+caps.latest.revision: 56
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b79f177afc2c0c5014e9e50c98409f2ecc655025
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: aacecfc425af980274435584a191614a0f9536a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="developing-a-user-interface-for-a-custom-task"></a>Développement d'une interface utilisateur pour une tâche personnalisée
   Le modèle objet [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] fournit aux développeurs de tâches personnalisées la capacité de créer facilement une interface utilisateur personnalisée pour une tâche, qui peut ensuite être intégrée et affichée dans [!INCLUDE[ssBIDevStudioFull](../../../includes/ssbidevstudiofull-md.md)]. L'interface utilisateur fournit des informations utiles dans le concepteur [!INCLUDE[ssIS](../../../includes/ssis-md.md)] et aide les utilisateurs à configurer correctement les propriétés et les paramètres de la tâche personnalisée.  

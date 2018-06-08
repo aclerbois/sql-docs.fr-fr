@@ -1,30 +1,29 @@
 ---
 title: Configuration de SQL Server dans SMO | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server, configuring
 - configuration options [SMO]
 ms.assetid: 0a372643-15cb-45a7-8665-04f1215df8ed
-caps.latest.revision: 
+caps.latest.revision: 42
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f64bb51a733898d89f4c1cd67c2615fce6266a69
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ba4bdac08ce71e5acba76821daf8551c66535c2b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuring-sql-server-in-smo"></a>Configuration de SQL Server dans SMO
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/12/2018
  Toutes les options de configuration dans le <xref:Microsoft.SqlServer.Management.Smo.Configuration> objet doit être modifié par l’administrateur système.  
   
 ## <a name="examples"></a>Exemples  
- Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C &#35; Projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
+ Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C&#35; projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
   
 ## <a name="modifying-sql-server-configuration-options-in-visual-basic"></a>Modification des options de configuration de SQL Server en Visual Basic  
  L'exemple de code montre comment mettre à jour une option de configuration en Visual Basic .NET. Il récupère et affiche également des informations relatives aux valeurs minimale et maximale de l'option de configuration spécifiée. Enfin, le programme indique à l’utilisateur si la modification a été apportée dynamiquement ou si elle est stockée en tant que l’instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est redémarré.  

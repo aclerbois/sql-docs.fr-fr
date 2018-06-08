@@ -1,17 +1,15 @@
 ---
 title: Valeur de propriété (ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Field20::Value
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Value property [ADO]
 ms.assetid: 48919c74-86d4-462e-99b9-8854ceb8d683
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b32b409bbdf65f3ef7623575afd653b0f526ad2
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 8a7a96d3b663afb8c30eea502e475487ae0572d7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="value-property-ado"></a>Value (propriété) (ADO)
 

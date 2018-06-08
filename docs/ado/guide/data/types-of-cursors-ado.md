@@ -1,30 +1,27 @@
 ---
 title: Types de curseurs (ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cursors [ADO], types
 ms.assetid: 7cc01544-e814-403b-bbfe-a2750bf921bd
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ec8ccca017236a8f6aa784d92e8304a98452f02
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2a90421cb473d280586ed3c7877e2a188f545eda
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="types-of-cursors-ado"></a>Types de curseurs (ADO)
 En règle générale, votre application doit utiliser le curseur de la plus simple qui fournit l’accès aux données requises. Toutes les caractéristiques supplémentaires au-delà des principes de base (avant uniquement, en lecture seule, statique, défilement, sans tampon) a un prix : dans la mémoire du client, de la charge réseau ou les performances. Dans de nombreux cas, les options de curseur par défaut génèrent un curseur plus complexe que votre application a réellement besoin.  

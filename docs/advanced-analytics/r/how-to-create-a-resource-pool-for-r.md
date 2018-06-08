@@ -1,26 +1,19 @@
 ---
-title: Créer un pool de ressources pour l’apprentissage | Documents Microsoft
-ms.custom: ''
-ms.date: 11/13/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Créer un pool de ressources pour l’apprentissage de SQL Server | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: afbcccda85e4d8e575306e5c17faeb8316b9b84c
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: af01eb3308b08c4ef7cfc78e5ee615f8dd984713
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="create-a-resource-pool-for-machine-learning"></a>Créer un pool de ressources pour l’apprentissage
+# <a name="create-a-resource-pool-for-machine-learning-in-sql-server"></a>Créer un pool de ressources pour l’apprentissage dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Cet article décrit comment vous pouvez créer un pool de ressources conçus spécifiquement pour gérer les charges de travail machine learning dans SQL Server. Il part du principe que vous avez déjà installé et activé les fonctionnalités d’apprentissage automatique et reconfigurer l’instance pour prendre en charge une gestion plus affinée les ressources utilisées par les processus externes tels que R ou Python.

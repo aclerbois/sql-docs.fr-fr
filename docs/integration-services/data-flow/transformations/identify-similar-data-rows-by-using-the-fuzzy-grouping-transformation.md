@@ -1,33 +1,31 @@
 ---
-title: "Identifier des lignes de données semblables à l’aide de la transformation de regroupement probable | Microsoft Docs"
-ms.custom: 
+title: Identifier des lignes de données semblables à l’aide de la transformation de regroupement probable | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Fuzzy Grouping transformation
 - match similar data [Integration Services]
 - similar data rows [Integration Services]
 - fuzzy matches
 ms.assetid: ffcb41a6-e23d-49ea-8c32-ac980e3dc495
-caps.latest.revision: 
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 138dc14412f8d0b3f6ea20dbb8fb5bfa09101649
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9fdd8970c549cc4d9ebd953561efb8c523b7e028
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identify-similar-data-rows-by-using-the-fuzzy-grouping-transformation"></a>Identifier des lignes de données semblables à l'aide de la transformation de regroupement probable
   Pour ajouter et configurer une transformation de regroupement probable, le package doit déjà inclure au moins une tâche de flux de données et une source.  

@@ -1,16 +1,14 @@
 ---
-title: sp_update_job (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_update_job (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_update_job
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_update_job
 ms.assetid: cbdfea38-9e42-47f3-8fc8-5978b82e2623
-caps.latest.revision: 
+caps.latest.revision: 39
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 03171bfdee98063c9bf460b9555c1a7c5d02568d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 3e36396f911c7506660fd82c5540307e95023950
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spupdatejob-transact-sql"></a>sp_update_job (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -63,10 +60,10 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id =**] *job_id*  
+ [  **@job_id =**] *job_id*  
  Numéro d'identification du travail à mettre à jour. *job_id*est **uniqueidentifier**.  
   
- [ **@job_name =**] **'***job_name***'**  
+ [  **@job_name =**] **'***job_name***'**  
  Nom du travail. *job_name*est **nvarchar (128)**.  
   
 > **Remarque :** soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
@@ -77,19 +74,19 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
  [  **@enabled =**] *activé*  
  Spécifie si le travail est activé (**1**) ou désactivée (**0**). *activé*est **tinyint**.  
   
- [ **@description =**] **'***description***'**  
+ [  **@description =**] **'***description***'**  
  Description du travail. *Description* est **nvarchar (512)**.  
   
  [ **@start_step_id =**] *step_id*  
- Numéro d'identification de la première étape à exécuter pour le travail. *step_id*is **int**.  
+ Numéro d'identification de la première étape à exécuter pour le travail. *l’argument id_étape*est **int**.  
   
- [ **@category_name =**] **'***category***'**  
+ [  **@category_name =**] **'***catégorie***'**  
  La catégorie du travail. *catégorie*est **nvarchar (128)**.  
   
- [ **@owner_login_name =**] **'***login***'**  
+ [  **@owner_login_name =**] **'***connexion***'**  
  Nom du compte de connexion propriétaire du travail. *connexion*est **nvarchar (128)** seuls les membres de la **sysadmin** rôle serveur fixe peut modifier la propriété d’un travail.  
   
- [ **@notify_level_eventlog =**] *eventlog_level*  
+ [  **@notify_level_eventlog =**] *niveau_journal_événements*  
  Indique le moment auquel une entrée doit être ajoutée pour ce travail dans le journal des applications Microsoft Windows. *niveau_journal_événements*est **int**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description (action)|  
@@ -99,28 +96,28 @@ sp_update_job [ @job_id =] job_id | [@job_name =] 'job_name'
 |**2**|Si échec|  
 |**3**|Always|  
   
- [ **@notify_level_email =**] *email_level*  
+ [  **@notify_level_email =**] *niveau_courrier_électronique*  
  Indique le moment où un message électronique doit être envoyé à la fin de ce travail. *niveau_courrier_électronique*est **int**. *niveau_courrier_électronique*utilise les mêmes valeurs que *niveau_journal_événements*.  
   
- [ **@notify_level_netsend =**] *netsend_level*  
+ [  **@notify_level_netsend =**] *niveau_message_réseau*  
  Indique le moment où un message doit être envoyé sur le réseau à la fin de ce travail. *niveau_message_réseau*est **int**. *niveau_message_réseau*utilise les mêmes valeurs que *niveau_journal_événements*.  
   
- [ **@notify_level_page =**] *page_level*  
+ [  **@notify_level_page =**] *niveau_page*  
  Indique le moment où un message par radiomessagerie doit être envoyé à la fin de ce travail. *niveau_page*est **int**. *niveau_page*utilise les mêmes valeurs que *niveau_journal_événements*.  
   
- [ **@notify_email_operator_name =**] **'***operator_name***'**  
+ [  **@notify_email_operator_name =**] **'***nom_opérateur***'**  
  Le nom de l’opérateur auquel le message électronique est envoyé une fois *niveau_courrier_électronique* est atteinte. *nom_adresse* est **nvarchar (128)**.  
   
  [ **@notify_netsend_operator_name =**] **'***netsend_operator***'**  
  Nom de l'opérateur auquel le message est envoyé par réseau. *opérateur_message_réseau* est **nvarchar (128)**.  
   
- [ **@notify_page_operator_name =**] **'***page_operator***'**  
+ [  **@notify_page_operator_name =**] **'***opérateur_page***'**  
  Nom de l'opérateur auquel un message par radiomessagerie est envoyé. *opérateur_page* est **nvarchar (128)**.  
   
  [ **@delete_level =**] *delete_level*  
  Indique le moment où le travail doit être supprimé. *l’argument niveau_suppression*est **int**. *niveau_suppression*utilise les mêmes valeurs que *niveau_journal_événements*.  
   
- [ **@automatic_post =**] *automatic_post*  
+ [  **@automatic_post =**] *envoi_automatique*  
  Réservé.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

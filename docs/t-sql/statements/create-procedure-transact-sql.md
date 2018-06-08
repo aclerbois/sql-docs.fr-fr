@@ -1,16 +1,14 @@
 ---
 title: CREATE PROCEDURE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - PROC
@@ -48,16 +46,16 @@ helpviewer_keywords:
 - automatic stored procedure execution
 - creating stored procedures
 ms.assetid: afe3d86d-c9ab-44e4-b74d-4e3dbd9cc58c
-caps.latest.revision: 
+caps.latest.revision: 180
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8762890c81c5ff2b03ba07a44ef6c559c6d57ab7
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 10e39cdc32b2b70785cdeeec40b11fbdd0b03902
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-procedure-transact-sql"></a>CREATE PROCEDURE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -186,7 +184,7 @@ OR ALTER
  [ *type_schema_name***.** ] *data_type*  
  Type de données du paramètre et du schéma auquel le type de données appartient.  
   
-**Instructions pour les procédures [!INCLUDE[tsql](../../includes/tsql-md.md)]** :  
+**Instructions pour les procédures [!INCLUDE[tsql](../../includes/tsql-md.md)]**  :  
   
 -   Tous les types de données [!INCLUDE[tsql](../../includes/tsql-md.md)] peuvent être utilisés comme paramètres.  
   
@@ -247,7 +245,7 @@ FOR REPLICATION
  { [ BEGIN ] *sql_statement* [;] [ ...*n* ] [ END ] }  
  Une ou plusieurs instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] comprenant le corps de la procédure. Vous pouvez utiliser les mots clés facultatifs BEGIN et END pour délimiter les instructions. Pour plus d'informations, consultez les sections suivantes intitulées Meilleures pratiques, Remarques d'ordre général et Limitations et restrictions.  
   
-EXTERNAL NAME *assembly_name***.***class_name***.***method_name*  
+EXTERNAL NAME *assembly_name ***.*** class_name ***.*** method_name*  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Spécifie la méthode d'un assembly [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] pour une procédure CLR à référencer. *class_name* doit être un identificateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] valide et doit exister comme classe dans l’assembly. Si la classe possède un nom qualifié par un espace de noms qui utilise un point (**.**) pour séparer les parties constituant l’espace de noms, le nom de la classe doit être délimité à l’aide de crochets (**[]**) ou de guillemets droits (**""**). La méthode spécifiée doit être une méthode statique de la classe.  

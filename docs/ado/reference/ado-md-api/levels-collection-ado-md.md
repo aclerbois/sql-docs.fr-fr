@@ -1,17 +1,15 @@
 ---
 title: Niveaux de regroupement (ADO MD) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Levels
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Levels collection [ADO MD]
 ms.assetid: fed8684a-b428-4ee4-8f8d-928abe4ad9ad
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 92bf82467e307747235a6e0d7c84906cdde5eb8c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6756b6faecca40f7d284a4bbf9425ba7affcc3fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="levels-collection-ado-md"></a>Collection de niveaux (ADO MD)
 Contient le [niveau](../../../ado/reference/ado-md-api/level-object-ado-md.md) objets qui composent une hiérarchie.  

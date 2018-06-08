@@ -1,37 +1,35 @@
 ---
 title: Afficher ou modifier des filtres et des analyseurs lexicaux inscrits | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full-text search [SQL Server], word breakers
 - full-text search [SQL Server], filters
 - filters [full-text search]
 - word breakers [full-text search]
 ms.assetid: f88c54df-b1aa-4701-807f-dc92c32363fd
-caps.latest.revision: 
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 28b56071c092af2a835d212eccca62e37e18247e
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5a34f6aef9577d2b2a8bc204bbb69801c0218a11
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="view-or-change-registered-filters-and-word-breakers"></a>Afficher ou modifier des filtres et des analyseurs lexicaux inscrits
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Après l'installation ou la désinstallation des analyseurs lexicaux ou des filtres sur un système, les modifications n'entrent pas automatiquement en vigueur sur les instances de serveur. Cette rubrique explique comment afficher les analyseurs lexicaux ou les filtres actuellement inscrits et comment inscrire les analyseurs lexicaux et les filtres récemment installés sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  Après l'installation ou la désinstallation des analyseurs lexicaux ou des filtres sur un système, les modifications n'entrent pas automatiquement en vigueur sur les instances de serveur. Cette rubrique explique comment afficher les analyseurs lexicaux ou les filtres actuellement inscrits et comment inscrire les analyseurs lexicaux et les filtres récemment installés sur une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 ### <a name="to-view-a-list-of-languages-whose-word-breakers-are-currently-registered"></a>Pour afficher la liste des langues dont les analyseurs lexicaux sont actuellement inscrits  
   

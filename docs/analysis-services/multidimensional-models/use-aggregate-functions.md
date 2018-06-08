@@ -1,31 +1,23 @@
 ---
-title: "Utilisez les fonctions d’agrégation | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: aggregate functions [Analysis Services]
-ms.assetid: c42166ef-b75c-45f4-859c-09a3e9617664
-caps.latest.revision: "28"
-author: Minewiskan
+title: Utilisez les fonctions d’agrégation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b22f964bbc9659187cf67320951b75d93cb89331
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: d4e30b5670e7a9a02fdfa9f3bbfad6889e83b562
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-aggregate-functions"></a>Utiliser des fonctions d'agrégation
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Lorsqu’une dimension est utilisée pour segmenter une mesure, la mesure est résumée en fonction des hiérarchies contenues dans cette dimension. Le comportement de sommation dépend de la fonction d'agrégation spécifiée pour la mesure. Pour la plupart des mesures contenant des données numériques, la fonction d’agrégation est **Sum**. La valeur de la mesure est la somme de montants différents selon le niveau auquel la hiérarchie est active.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Lorsqu'une dimension est utilisée pour segmenter une mesure, celle-ci est résumée en fonction des hiérarchies contenues dans la dimension. Le comportement de sommation dépend de la fonction d'agrégation spécifiée pour la mesure. Pour la plupart des mesures contenant des données numériques, la fonction d’agrégation est **Sum**. La valeur de la mesure est la somme de montants différents selon le niveau auquel la hiérarchie est active.  
   
  Dans Analysis Services, chaque mesure que vous créez s'appuie sur une fonction d'agrégation qui détermine l'opération associée à la mesure. Les types d’agrégation prédéfinis incluent les fonctions **Sum**, **Min**, **Max**, **Count**et **Distinct Count**, ainsi que plusieurs autres fonctions plus spécialisées. Si vous avez besoin d'agrégations basées sur des formules complexes ou personnalisées, vous pouvez aussi créer un calcul MDX au lieu d'utiliser une fonction d'agrégation prédéfinie. Par exemple, si vous souhaitez définir une mesure pour une valeur de pourcentage, utilisez une mesure calculée dans MDX. Consultez [Instruction CREATE MEMBER &#40;MDX&#41;](../../mdx/mdx-data-definition-create-member.md).  
   
@@ -34,7 +26,7 @@ ms.lasthandoff: 01/08/2018
  Vous pouvez affecter ou changer la méthode d’agrégation dans la définition du cube, via [!INCLUDE[ss_dtbi](../../includes/ss-dtbi-md.md)] ou via MDX. Pour obtenir d’autres instructions, consultez [Créer des mesures et groupes de mesures dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/create-measures-and-measure-groups-in-multidimensional-models.md) ou [Aggregate &#40;MDX&#41;](../../mdx/aggregate-mdx.md).  
   
 ##  <a name="AggFunction"></a> Fonctions d'agrégation  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit des fonctions pour agréger des mesures avec les dimensions qui sont contenues dans des groupes de mesures. *L’additivité* d’une fonction d’agrégation détermine la manière dont la mesure est agrégée à travers toutes les dimensions du cube. Les fonctions d'agrégation sont divisées en trois catégories en fonction de leur niveau d'additivité :  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit des fonctions pour agréger les mesures avec les dimensions qui sont contenues dans les groupes de mesures. *L’additivité* d’une fonction d’agrégation détermine la manière dont la mesure est agrégée à travers toutes les dimensions du cube. Les fonctions d'agrégation sont divisées en trois catégories en fonction de leur niveau d'additivité :  
   
  Additive  
  Une mesure additive, ou mesure entièrement additive, peut être agrégée avec toutes les dimensions incluses dans le groupe de mesures qui contient la mesure, sans aucune restriction.  
@@ -73,7 +65,7 @@ ms.lasthandoff: 01/08/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Mesures et groupes de mesures](../../analysis-services/multidimensional-models/measures-and-measure-groups.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../../mdx/mdx-function-reference-mdx.md)   
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../../mdx/mdx-function-reference-mdx.md)   
  [Définir le comportement semi-additif](../../analysis-services/multidimensional-models/define-semiadditive-behavior.md)  
   
   

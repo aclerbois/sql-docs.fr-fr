@@ -1,25 +1,23 @@
 ---
-title: "Configurer SQL Server toujours sur le groupe de disponibilité sur Windows et Linux | Documents Microsoft"
-description: "Configurer le groupe de disponibilité SQL Server avec des réplicas sur Windows et Linux."
+title: Configurer SQL Server toujours sur le groupe de disponibilité sur Windows et Linux | Documents Microsoft
+description: Configurer le groupe de disponibilité SQL Server avec des réplicas sur Windows et Linux.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 01/31/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: On Demand
-ms.openlocfilehash: 58eb51a5a3ad174e9cd785a7da3ecb482b2f9f28
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.assetid: ''
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9ccd5cb5fdc7d5c5bc6ff62b203bee0bbce6e5e8
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-sql-server-always-on-availability-group-on-windows-and-linux-cross-platform"></a>Configurer SQL Server groupe de disponibilité AlwaysOn sur Windows et Linux (multiplateforme)
 
@@ -47,7 +45,7 @@ Les étapes pour créer le groupe de disponibilité sont les mêmes que les éta
    >[!TIP]
    >Si vous validez cette solution dans Azure, placez les deux serveurs dans le même groupe de disponibilité défini pour s’assurer qu’ils sont séparés dans le centre de données. 
 
-   Activer les groupes de disponibilité
+   **Activer les groupes de disponibilité**
 
    Pour obtenir des instructions, consultez [activer et désactiver les groupes de disponibilité AlwaysOn (SQL Server)](../database-engine/availability-groups/windows/enable-and-disable-always-on-availability-groups-sql-server.md).
 

@@ -1,27 +1,19 @@
 ---
-title: "Traductions dans les modèles tabulaires (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: e67f88f5-9f0c-4f19-ab09-558c56ca9335
-caps.latest.revision: 
-author: Minewiskan
+title: Traductions dans les modèles tabulaires (Analysis Services) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2b5e88e9a77c1d192709bde2fe6dcc9be3887aa3
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: ddd49ce6d3edc3f1e2f72a3fe7f5ab61621eef62
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="translations-in-tabular-models-analysis-services"></a>Traductions dans les modèles tabulaires (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]

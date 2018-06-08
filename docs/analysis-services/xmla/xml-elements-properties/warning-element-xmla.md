@@ -1,39 +1,24 @@
 ---
-title: "Élément Warning (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément Warning (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: Warning Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- urn:schemas-microsoft-com:xml-analysis#Warning
-- microsoft.xml.analysis.warning
-- http://schemas.microsoft.com/analysisservices/2003/engine#Warning
-helpviewer_keywords: Warning element
-ms.assetid: a34a6caa-4b68-486b-8f50-cdc124c65888
-caps.latest.revision: "11"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 195e45dbde159409196a56657d14cbc168e99fdf
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 73662315d294cade8b344f8967923fe15e94f886
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576731"
 ---
 # <a name="warning-element-xmla"></a>Élément Warning (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient des informations sur un avertissement retourné par une instance de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient des informations sur un avertissement retourné par une instance d’Analysis Services.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -50,7 +35,7 @@ ms.lasthandoff: 01/08/2018
 </Message>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -75,10 +60,10 @@ ms.lasthandoff: 01/08/2018
 |Source|Attribut **String** facultatif. Contient le nom du composant qui a généré l'avertissement.|  
 |HelpFile|Attribut **String** facultatif. Contient le chemin d'accès ou l'URL menant au fichier ou à la rubrique d'aide qui décrit l'avertissement.|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
   
-## <a name="see-also"></a>Voir aussi  
- [Élément Error &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/error-element-xmla.md)   
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Élément Error &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/error-element-xmla.md)   
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

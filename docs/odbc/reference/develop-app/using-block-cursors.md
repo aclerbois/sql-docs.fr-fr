@@ -1,31 +1,28 @@
 ---
-title: "À l’aide de curseurs de bloc | Documents Microsoft"
-ms.custom: 
+title: À l’aide de curseurs de bloc | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cursors [ODBC], block
 - block cursors [ODBC]
 - result sets [ODBC], block cursors
 ms.assetid: 2aad7d6b-216e-47e7-b3cb-f95ad096f21a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fb2662ac4dcfc6a1f0fa2362bfc71f7a173bcd9c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1bca1bc96ac1c2582bab592a80d65639944e0766
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-block-cursors"></a>À l’aide de curseurs de bloc
 Prise en charge pour les curseurs de bloc est intégrée dans ODBC 3. *x*. **SQLFetch** peut être utilisé uniquement pour les extractions multilignes lorsqu’elle est appelée dans ODBC 3. *x*; si une application ODBC 2. *x* application appelle **SQLFetch**, elle s’ouvre uniquement un curseur avant uniquement en ligne unique. Lorsqu’une application ODBC 3. *x* application appelle **SQLFetch** dans une API ODBC 2. *x* pilote, elle retourne une ligne unique, sauf si le pilote prend en charge **SQLExtendedFetch**. Pour plus d’informations, consultez [curseurs de bloc, les curseurs permettant le défilement et la compatibilité descendante](../../../odbc/reference/appendixes/block-cursors-scrollable-cursors-and-backward-compatibility.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  

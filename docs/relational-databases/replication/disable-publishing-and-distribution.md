@@ -1,17 +1,16 @@
 ---
-title: "Désactiver la publication et la distribution | Microsoft Docs"
-ms.custom: 
+title: Désactiver la publication et la distribution | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - disabling publishing
 - publishing [SQL Server replication], disabling
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - disabling replication
 - disabling distribution
 ms.assetid: 6d4a1474-4d13-4826-8be2-80050fafa8a5
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c50f547288b6139cc9793381531204ee32f36ce0
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 1ba752dbcf4131864b3ce8e3891723bc1ac6096f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disable-publishing-and-distribution"></a>Désactiver la publication et la distribution
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

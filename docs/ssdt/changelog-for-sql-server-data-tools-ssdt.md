@@ -1,34 +1,63 @@
 ---
 title: Journal des modifications de SQL Server Data Tools (SSDT) | Microsoft Docs
-ms.custom: 
-ms.date: 02/09/2018
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/10/2018
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssdt
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssdt
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssdt
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b071f8b8-c8e5-44e0-bbb6-04804dd1863a
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: cd69c5ff505f60aacd131976a5f42edef02a4d4d
-ms.sourcegitcommit: 99102cdc867a7bdc0ff45e8b9ee72d0daade1fd3
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7e2348aa63bce657c85ce0b9d6644be471e1f487
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/11/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="changelog-for-sql-server-data-tools-ssdt"></a>Journal des modifications de SQL Server Data Tools (SSDT)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 Ce journal des modification est pour [SQL Server Data Tools (SSDT)](download-sql-server-data-tools-ssdt.md).  
   
 Pour des publications détaillées sur les nouveautés et les modifications, consultez [le blog de l’équipe SSDT](https://blogs.msdn.microsoft.com/ssdt/)
+
+
+
+## <a name="ssdt-for-visual-studio-2017-1560"></a>SSDT pour Visual Studio 2017 (15.6.0)
+Numéro de build : 14.0.16162.0  
+Date de sortie : 10 avril 2018
+  
+### <a name="whats-new"></a>Nouveautés
+
+**SSIS :**
+
+1.  Résolution du problème où la tâche de traitement AS ne journalisait aucune étape de traitement quand SQLServer2016 et SQLServer2017 étaient ciblés
+2.  Résolution du problème où une violation d’accès se produisait à l’ouverture de dtsx avec des noms de tâche très longs non anglais dans SSDT
+3.  Résolution du problème où parfois la liste des variables de ScriptTask disparaissait de l’interface utilisateur de la tâche
+4.  Résolution du problème où l’ajout d’une copie du package existant échouait quand l’emplacement du package était SQL Server
+5.  Résolution du problème où le focus restait coincé lors de l’accès à la zone de liste déroulante dans une boîte de dialogue d’éditeur.
+6.  Résolution du problème où l’arrière-plan ne changeait pas alors que le thème de Visual Studio changeait.
+7.  Résolution du problème où l’étiquette d’annotation et de chargement était invisible dans le thème foncé.
+8.  Résolution du problème où la propriété d’état n’était pas correctement définie pour les éléments désactivés de la boîte à outils SSIS.
+9.  Résolution du problème où l’exécution de WebServiceTask échouait tout le temps.
+10. Résolution du problème où le déploiement du package échouait si la chaîne de connexion était définie sur une variable avec une expression dépendante des paramètres du projet.
+
+**Programme d’installation :**
+
+1.  Ajoutez le lien du « Programme d’amélioration du produit pour SQL Server Data Tools » dans la clause d’exclusion de confidentialité.
+2.  Résolution du problème où la fenêtre du programme d’installation de Visual Studio apparaissait quand « Installer la nouvelle instance SQL Server Data Tools pour Visual Studio 2017 » était sélectionné
+
+### <a name="known-issues"></a>Problèmes connus :
+1.  La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand ExecuteOutOfProcess a la valeur True. Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas impactés.
+
+
 
 ## <a name="ssdt-for-visual-studio-2017-1552"></a>SSDT pour Visual Studio 2017 (15.5.2)
 Numéro de build : 14.0.16156.0
@@ -42,14 +71,14 @@ Numéro de build : 14.0.16156.0
 4.  Correction d’un problème qui faisait que certaines chaînes dans l’éditeur du gestionnaire de connexions Hadoop étaient tronquées dans d’autres langues.
 5.  Correction d’un problème qui faisait que certaines chaînes étaient tronquées dans l’éditeur du gestionnaire de connexions OData.
 6.  Correction d’un problème qui faisait que certaines chaînes étaient tronquées dans la fenêtre de l’Assistant Importation de projet d’Integration Services.
-7.  Correction d’un problème qui faisait que le titre dans la fenêtre d’informations de l’outil SSIS était tronqué.
+7.  Correction d’un problème de titre dans la fenêtre d’informations de la boîte à outils SSIS.
 8.  Correction d’un problème qui faisait que certaines chaînes étaient tronquées dans la fenêtre de l’Assistant Déploiement d’Integration Services. 
 
 **Programme d’installation**
-- Correction d’un problème qui faisait que parfois, le téléchargement de charge utile échouait avec l’erreur « Le système ne trouve pas le fichier spécifié (0x80070002) »  
+- Correction d’un problème où parfois, le téléchargement de charge utile échouait avec l’erreur « Le système ne trouve pas le fichier spécifié (0x80070002) ».  
 
 ### <a name="known-issues"></a>Problèmes connus
-- La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand ExecuteOutOfProcess a la valeur True. Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas impactés.
+- La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand *ExecuteOutOfProcess* a la valeur *True*. Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas impactés.
 
 
 

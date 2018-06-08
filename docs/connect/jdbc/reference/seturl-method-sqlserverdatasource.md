@@ -1,30 +1,29 @@
 ---
-title: "Méthode setURL (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setURL (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.setURL
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.setURL
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: bea70100-ac98-4625-8748-ef7cc0b111ea
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 222948f40537e84e0c294f05fd8d953b61f53f65
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: e13927cc02d9b995ac3c99a5b0a4b490328b8dbf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="seturl-method-sqlserverdatasource"></a>Méthode setURL (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -50,7 +49,7 @@ public void setURL(java.lang.String url)
 >  Si la méthode setURL n’est pas appelée avant d’appeler le [getURL](../../../connect/jdbc/reference/geturl-method-sqlserverdatasource.md) méthode getURL retourne la valeur par défaut « SQLServer : / / ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

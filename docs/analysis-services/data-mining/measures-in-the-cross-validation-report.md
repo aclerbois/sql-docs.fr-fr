@@ -1,37 +1,23 @@
 ---
-title: "Mesures dans le rapport de Validation croisée | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- root mean square error [data mining]
-- cross-validation [data mining]
-- mean absolute error [data mining]
-- log score [data mining]
-- likelihood [data mining]
-ms.assetid: a07b1665-7f72-4266-82a4-43a91ae2571d
-caps.latest.revision: 
-author: Minewiskan
+title: Mesures dans le rapport de Validation croisée | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8a98814c3b71a8a39b1f77bdeaf1de7eb4758e54
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 00a8d7d0e05d4fa4a714011e18ec1162eb7b68e7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="measures-in-the-cross-validation-report"></a>Mesures dans le rapport de validation croisée
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Pendant la validation croisée, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] divise les données d'une structure d'exploration de données en plusieurs sections croisées, puis teste de manière itérative la structure et tous les modèles d'exploration de données associés. D'après cette analyse, il produit un jeu de mesures de précision standard pour la structure et chaque modèle.  
+  Pendant la validation croisée, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] divise les données d'une structure d'exploration de données en plusieurs sections croisées, puis teste de manière itérative la structure et tous les modèles d'exploration de données associés. D'après cette analyse, il produit un jeu de mesures de précision standard pour la structure et chaque modèle.  
   
  Le rapport contient certaines informations de base sur le nombre de replis dans les données et le volume de données dans chaque repli, ainsi qu'un ensemble de mesures générales qui décrivent la distribution des données. En comparant les mesures générales de chaque section croisée, vous pouvez évaluer la fiabilité de la structure ou du modèle.  
   
@@ -62,6 +48,6 @@ Pendant la validation croisée, [!INCLUDE[ssASnoversion](../../includes/ssasnove
 ||**Écart type**:<br />                      Moyenne de l'écart par rapport à la moyenne d'une mesure spécifique, sur toutes les partitions d'un modèle.<br /><br /> Pour la validation croisée, une valeur plus élevée pour ce score implique une variation substantielle entre les replis.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test et Validation &#40; exploration de données &#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
+ [Test et Validation & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
   
   

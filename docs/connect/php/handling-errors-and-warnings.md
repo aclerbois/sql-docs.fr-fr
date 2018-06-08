@@ -2,27 +2,24 @@
 title: Gestion des erreurs et avertissements | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0afea5d5-8797-4a85-b1b4-8cde1f3888a3
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5fdc9a0691cdb237da7a69f8aee4ba507547fd78
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 5e57c6a84a12bd148dc45c868a514da37cd87543
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="handling-errors-and-warnings"></a>Gestion des erreurs et des avertissements
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

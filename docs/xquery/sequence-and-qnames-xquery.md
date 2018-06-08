@@ -1,16 +1,15 @@
 ---
-title: "Séquence et QNames (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Séquence et QNames (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - QName [XQuery]
 - predefined namespaces [XML in SQL Server]
 ms.assetid: 3593ac26-dd78-4bf0-bb87-64fbcac5f026
-caps.latest.revision: 
+caps.latest.revision: 22
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f75694958ca453d1b630a0c02c422d35c6ff4c34
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 30d463050f129bbc232c0261f1d6af481744ef93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sequence-and-qnames-xquery"></a>Séquence et QNames (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -155,7 +153,7 @@ WHERE ProductModelID=7;
  Chaque base de données que vous créez a la **sys** collection de schémas XML. Elle réserve ces schémas de sorte qu'ils soient accessibles à partir de toute collection de schémas XML créée par l'utilisateur.  
   
 > [!NOTE]  
->  Cette implémentation ne prend pas en charge le préfixe `local` tel que décrit dans la spécification XQuery à l'adresse http://www.w3.org/2004/07/xquery-local-functions.  
+>  Cette implémentation ne prend pas en charge la `local` préfixe comme décrit dans la spécification XQuery dans http://www.w3.org/2004/07/xquery-local-functions.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepts de base de XQuery](../xquery/xquery-basics.md)  

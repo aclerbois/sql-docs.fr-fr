@@ -1,16 +1,15 @@
 ---
 title: IBCPSession::BCPColFmt (OLE DB) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-interfaces
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IBCPSession::BCPColFmt (OLE DB)
@@ -18,18 +17,18 @@ apitype: COM
 helpviewer_keywords:
 - BCPColFmt method
 ms.assetid: 2852f4ba-f1c6-4c4c-86b2-b77e4abe70de
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: af34e779db0662bd0fe35cef8cf8a8178ec134d9
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 47b274e26b3a0331dbe31464380b28cf814b382a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="ibcpsessionbcpcolfmt-ole-db"></a>IBCPSession::BCPColFmt (OLE DB)
+# <a name="ibcpsessionbcpcolfmt-ole-db"></a>IBCPSession::BCPColFmt (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../includes/snac-deprecated.md)]
 
@@ -56,17 +55,17 @@ HRESULT BCPColFmt(
   
  Dans les modes non interactifs, elle est appelée uniquement une fois par colonne pour attribuer le type natif ou caractère à chaque colonne, et pour définir les marques de fin de colonne et de ligne.  
   
- La méthode **BCPColFmt** vous permet de spécifier le format de fichier utilisateur pour les copies en bloc. Pour la copie en bloc, un format se compose des éléments suivants :  
+ La méthode **BCPColFmt** vous permet de spécifier le format de fichier utilisateur pour les copies en bloc. Pour la copie en bloc, un format se compose des éléments suivants :  
   
 -   un mappage des champs de fichier utilisateur aux colonnes de base de données ;  
   
 -   le type de données de chaque champ de fichier utilisateur ;  
   
--   la longueur de l'indicateur facultatif pour chaque champ ;  
+-   la longueur de l'indicateur facultatif pour chaque champ ;  
   
 -   la longueur maximale des données par champ de fichier utilisateur ;  
   
--   la séquence d'octets de fin facultative pour chaque champ ;  
+-   la séquence d'octets de fin facultative pour chaque champ ;  
   
 -   Longueur de la séquence d'octets de fin facultative  
   
@@ -91,7 +90,7 @@ HRESULT BCPColFmt(
 -   Si la colonne source est décimale ou numérique, la précision et l'échelle de la colonne source sont utilisées.  
   
  *cbIndicator*[in]  
- Longueur de préfixe pour le champ. La valeur par défaut est BCP_PREFIX_DEFAULT. Les longueurs valides pour le préfixe sont 0, 1, 2, 4 et 8. La taille de préfixe 8 est la plus souvent utilisée pour indiquer que le champ est segmenté. Elle permet d'effectuer des copies en bloc efficaces de colonnes de type valeur volumineuses.  
+ Longueur de préfixe pour le champ. La valeur par défaut est BCP_PREFIX_DEFAULT. Les longueurs valides pour le préfixe sont 0, 1, 2, 4 et 8. La taille de préfixe 8 est la plus souvent utilisée pour indiquer que le champ est segmenté. Elle permet d'effectuer des copies en bloc efficaces de colonnes de type valeur volumineuses.  
   
  *cbUserData*[in]  
  Longueur maximale, en octets, des données de ce champ dans le fichier utilisateur, sans compter la longueur de tout indicateur de longueur ou marque de fin.  
@@ -107,7 +106,7 @@ HRESULT BCPColFmt(
  *pbUserDataTerm*[size_is][in]  
  Séquence de marque de fin à utiliser pour le champ. Ce paramètre est utile surtout pour les types de données de caractères puisque tous les autres types sont de longueur fixe ou, dans le cas des données binaires, nécessitent un indicateur de longueur pour enregistrer avec précision le nombre d'octets présents.  
   
- Pour éviter de terminer des données extraites ou pour indiquer que les données dans un fichier utilisateur ne sont pas terminées, attribuez la valeur NULL à ce paramètre.  
+ Pour éviter de terminer des données extraites ou pour indiquer que les données dans un fichier utilisateur ne sont pas terminées, attribuez la valeur NULL à ce paramètre.  
   
  Si plusieurs méthodes sont employées pour définir la longueur des colonnes du fichier utilisateur (par exemple, un terminateur et un indicateur de longueur, ou un terminateur et une longueur de colonne maximale), la copie en bloc choisit celle qui implique le volume de données à copier le moins élevé.  
   
@@ -136,7 +135,7 @@ HRESULT BCPColFmt(
  Erreur de mémoire insuffisante.  
   
 ## <a name="see-also"></a>Voir aussi  
- [IBCPSession &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-ole-db.md)   
+ [IBCPSession &#40;OLE DB&#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-ole-db.md)   
  [Exécution d'opérations de copie en bloc](../../relational-databases/native-client/features/performing-bulk-copy-operations.md)  
   
   

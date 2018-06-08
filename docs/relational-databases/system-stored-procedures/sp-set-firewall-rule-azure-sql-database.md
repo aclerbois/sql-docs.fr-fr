@@ -1,16 +1,15 @@
 ---
-title: "sp_set_firewall_rule (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: sp_set_firewall_rule (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 07/28/2016
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database, sql-data-warehouse
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-stored-procedures
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_set_firewall_rule
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - sp_set_firewall_rule
 - firewall_rules, setting server rules
 ms.assetid: a974a561-5382-4039-8499-3a56767bcefe
-caps.latest.revision: 
+caps.latest.revision: 14
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 38ef5788aba91bfde21df091321a69dbacbeb8e9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || = sqlallproducts-allversions
+ms.openlocfilehash: e9315c7ca138d352ee9f0cdffca9abe3a2242dc0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsetfirewallrule-azure-sql-database"></a>sp_set_firewall_rule (Azure SQL Database)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-asdw-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-asdw-xxx-md.md)]
@@ -63,9 +62,9 @@ sp_set_firewall_rule [@name =] 'name',
   
  Lorsque vous ajoutez un paramètre de pare-feu de niveau serveur de début et fin des adresses IP sont égales à `0.0.0.0`, vous activez l’accès à votre [!INCLUDE[ssSDS](../../includes/sssds-md.md)] à partir de Azure. Spécifiez une valeur pour le *nom* n’oubliez pas de paramètre qui vous aideront à ce qui concerne le paramètre de pare-feu de niveau serveur.  
   
- Dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les données de connexion requises pour authentifier une connexion et les règles de pare-feu de niveau serveur sont temporairement mis en cache dans chaque base de données. Ce cache est actualisé régulièrement. Pour forcer une actualisation du cache d’authentification et assurez-vous qu’une base de données a la version la plus récente de la table de connexions, exécutez [DBCC FLUSHAUTHCACHE &#40; Transact-SQL &#41; ](../../t-sql/database-console-commands/dbcc-flushauthcache-transact-sql.md).  
+ Dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les données de connexion exigées pour authentifier une connexion et les règles de pare-feu de niveau serveur sont temporairement mises en cache dans chaque base de données. Ce cache est régulièrement actualisé. Pour forcer une actualisation du cache d’authentification et garantir qu’une base de données a la version la plus récente de la table de connexions, exécutez [DBCC FLUSHAUTHCACHE &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-flushauthcache-transact-sql.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seule la connexion principale au niveau du serveur est créé par le processus de déploiement ou une entité de sécurité Azure Active Directory désigné comme administrateur à créer ou modifier des règles de pare-feu de niveau serveur. L’utilisateur doit être connecté à la base de données master pour exécuter sp_set_firewall_rule.  
   
 ## <a name="examples"></a>Exemples  
@@ -91,4 +90,4 @@ exec sp_set_firewall_rule N'Example setting 1', '0.0.0.2', '0.0.0.4';
 ## <a name="see-also"></a>Voir aussi  
  [Pare-feu de base de données SQL Azure](https://azure.microsoft.com/documentation/articles/sql-database-firewall-configure/)   
  [Comment : configurer les paramètres de pare-feu (base de données SQL Azure)](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)   
- [Sys.firewall_rules &#40; Base de données SQL Azure &#41;](../../relational-databases/system-catalog-views/sys-firewall-rules-azure-sql-database.md)
+ [Sys.firewall_rules &#40;base de données SQL Azure&#41;](../../relational-databases/system-catalog-views/sys-firewall-rules-azure-sql-database.md)

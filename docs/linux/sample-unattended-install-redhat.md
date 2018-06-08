@@ -6,19 +6,16 @@ ms.author: edmaca
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: Inactive
-ms.openlocfilehash: 67f9d71c2a5bd1f57e270c07028f6e8c0ac036a1
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.openlocfilehash: f9eb7f2e8754a81650f167104d53150f0f0a4d90
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sample-unattended-sql-server-installation-script-for-red-hat-enterprise-linux"></a>Exemple : Script d’installation sans assistance de SQL Server pour Red Hat Enterprise Linux
 
@@ -32,7 +29,7 @@ Cet exemple de script d’interpréteur de commandes installe SQL Server 2017 su
 ## <a name="prerequisites"></a>Configuration requise
 
 - Vous devez au moins 2 Go de mémoire pour exécuter SQL Server sur Linux.
-- Le système de fichiers doit être **XFS** ou **EXT4**. Autres systèmes de fichiers, tel que **BTRFS**, non pris en charge.
+- Le système de fichiers doit être **XFS** ou **EXT4**. D'autres systèmes de fichiers tels que **BTRFS**, ne sont pas pris en charge.
 - Pour les autres exigences système, consultez [configuration système requise pour SQL Server sur Linux](sql-server-linux-setup.md#system).
 
 ## <a name="sample-script"></a>Exemple de script

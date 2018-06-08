@@ -1,31 +1,30 @@
 ---
-title: "Gestion des utilisateurs, des rôles et des connexions | Documents Microsoft"
-ms.custom: 
+title: Gestion des utilisateurs, des rôles et des connexions | Documents Microsoft
+ms.custom: ''
 ms.date: 08/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - logins [SMO]
 - roles [SMO]
 - users [SMO]
 ms.assetid: 74e411fa-74ed-49ec-ab58-68c250f2280e
-caps.latest.revision: 
+caps.latest.revision: 45
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 47c2cf548bdc703f86a7ff90f2e32e44fceb9a7f
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a803aa9d6443c8aa62d7ebca7d7ac5bd3abf990e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="managing-users-roles-and-logins"></a>Gestion des utilisateurs, rôles et connexions
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
@@ -36,10 +35,10 @@ ms.lasthandoff: 01/12/2018
   
  Chaque <xref:Microsoft.SqlServer.Management.Smo.Database> objet a un <xref:Microsoft.SqlServer.Management.Smo.UserCollection> objet qui spécifie tous les utilisateurs dans la base de données. Chaque utilisateur est associé à une ouverture de session. Une ouverture de session peut être associée à plusieurs utilisateurs d'une base de données. Le <xref:Microsoft.SqlServer.Management.Smo.Login> l’objet <xref:Microsoft.SqlServer.Management.Smo.Login.EnumDatabaseMappings%2A> méthode peut être utilisée pour répertorier tous les utilisateurs dans chaque base de données qui est associé à l’ouverture de session. Ou bien, la propriété <xref:Microsoft.SqlServer.Management.Smo.User> de l'objet <xref:Microsoft.SqlServer.Management.Smo.Login> spécifie l'ouverture de session qui est associée à l'utilisateur.  
   
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]bases de données ont également des rôles qui spécifient un jeu de privilèges de niveau base de données qui permettent à un utilisateur d’effectuer des tâches spécifiques. Contrairement aux rôles de serveur, les rôles de base de données ne sont pas fixes. Ils peuvent être créés, modifiés et supprimés. Les privilèges et utilisateurs peuvent être attribués à un rôle de base de données pour une administration en masse.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] bases de données ont également des rôles qui spécifient un jeu de privilèges de niveau base de données qui permettent à un utilisateur d’effectuer des tâches spécifiques. Contrairement aux rôles de serveur, les rôles de base de données ne sont pas fixes. Ils peuvent être créés, modifiés et supprimés. Les privilèges et utilisateurs peuvent être attribués à un rôle de base de données pour une administration en masse.  
   
 ## <a name="example"></a>Exemple  
- Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C &#35; Projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
+ Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C&#35; projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
   
 ## <a name="enumerating-logins-and-associated-users-in-visual-c"></a>Énumération des connexions et des utilisateurs associés en Visual C#  
  Chaque utilisateur d'une base de données est associé à une ouverture de session. L'ouverture de session peut être associée à plusieurs utilisateurs dans plusieurs bases de données. L'exemple de code montre comment appeler la méthode <xref:Microsoft.SqlServer.Management.Smo.Login.EnumDatabaseMappings%2A> de l'objet <xref:Microsoft.SqlServer.Management.Smo.Login> pour répertorier tous les utilisateurs de la base de données qui sont associés à l'ouverture de session. L’exemple crée une ouverture de session et l’utilisateur dans le [!INCLUDE[ssSampleDBnormal](../../../includes/sssampledbnormal-md.md)] base de données à Assurez-vous qu’il existe des informations de mappage à énumérer.  

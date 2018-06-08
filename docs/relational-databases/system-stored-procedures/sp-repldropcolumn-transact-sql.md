@@ -1,16 +1,15 @@
 ---
 title: sp_repldropcolumn (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_repldropcolumn
 ms.assetid: fdc1ec5f-f108-42b4-a2d8-f06a71913ab8
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 120f6a9d6f23d50a002fad7c9bb77f7caa4010d9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 2613b4c2aded7ee192bdd456b3d9d51ec1587eda
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sprepldropcolumn-transact-sql"></a>sp_repldropcolumn (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -86,7 +84,7 @@ sp_repldropcolumn [ @source_object = ] 'source_object', [ @column = ] 'column'
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe sysadmin sur le serveur de publication ou les membres des rôles de base de données fixes db_owner ou db_ddladmin de la base de données de publication peuvent exécuter sp_repldropcolumn.  
   
 ## <a name="see-also"></a>Voir aussi  

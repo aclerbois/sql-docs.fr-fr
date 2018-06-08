@@ -1,15 +1,14 @@
 ---
-title: "Exécution d’opérations asynchrones | Documents Microsoft"
-ms.custom: 
+title: Exécution d’opérations asynchrones | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - initialization [SQL Server Native Client]
@@ -21,16 +20,16 @@ helpviewer_keywords:
 - SQLNCLI, asynchronous operations
 - SQL Server Native Client, asynchronous operations
 ms.assetid: 8fbd84b4-69cb-4708-9f0f-bbdf69029bcc
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2ba872822ecb904847861f6d02b27aad87373a17
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1b433851601bb3bbe1a9bd339b4af2b0835c1673
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="performing-asynchronous-operations"></a>Exécution d'opérations asynchrones
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -196,6 +195,6 @@ if (hr == DB_S_ASYNCHRONOUS)
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités SQL Server Native Client](../../../relational-databases/native-client/features/sql-server-native-client-features.md)   
  [Propriétés et comportements de l’ensemble de lignes](../../../relational-databases/native-client-ole-db-rowsets/rowset-properties-and-behaviors.md)   
- [ISSAsynchStatus &#40; OLE DB &#41;](../../../relational-databases/native-client-ole-db-interfaces/issasynchstatus-ole-db.md)  
+ [ISSAsynchStatus & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client-ole-db-interfaces/issasynchstatus-ole-db.md)  
   
   

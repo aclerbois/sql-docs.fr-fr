@@ -2,14 +2,12 @@
 title: RESTORE HEADERONLY (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: ''
 ms.component: t-sql|statements
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -26,15 +24,15 @@ helpviewer_keywords:
 - backup header information [SQL Server]
 ms.assetid: 4b88e98c-49c4-4388-ab0e-476cc956977c
 caps.latest.revision: 95
-author: barbkess
-ms.author: barbkess
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6cf34895c1e60ea81f75c4920e5abf235608bf66
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 41f8c9931419d9fb2ba6baa52f01432e8b44b510
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="restore-statements---headeronly-transact-sql"></a>Instructions RESTORE – HEADERONLY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md )]

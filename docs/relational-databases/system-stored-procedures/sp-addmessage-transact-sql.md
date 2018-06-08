@@ -1,16 +1,14 @@
 ---
-title: sp_addmessage (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_addmessage (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addmessage
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_addmessage
 ms.assetid: 54746d30-f944-40e5-a707-f2d9be0fb9eb
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1b8b71c14da2b38bbc16c63b39143fd0a85ebf30
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 964f0909c136eddc86571ce776b559083c8ce3e1
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddmessage-transact-sql"></a>sp_addmessage (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,22 +49,22 @@ sp_addmessage [ @msgnum= ] msg_id , [ @severity= ] severity , [ @msgtext= ] 'msg
  [ **@msgnum****=** ] *msg_id*  
  ID du message. *msg_id* est **int** avec NULL comme valeur par défaut. *msg_id* d’erreur définis par l’utilisateur, messages peuvent être un entier compris entre 50 001 et 2 147 483 647. La combinaison de *msg_id* et *langage* doit être unique ; une erreur est retournée si l’ID existe déjà pour la langue spécifiée.  
   
- [ **@severity =** ]*severity*  
+ [  **@severity =** ]*gravité*  
  Est le niveau de gravité de l’erreur. *gravité* est **smallint** avec NULL comme valeur par défaut. Les niveaux valides vont de 1 à 25. Pour plus d’informations sur les niveaux de gravité, consultez [Niveaux de gravité des erreurs du moteur de base de données](../../relational-databases/errors-events/database-engine-error-severities.md).  
   
- [ **@msgtext =** ] **'***msg***'**  
+ [  **@msgtext =** ] **'***msg***'**  
  Est le texte du message d’erreur. *Msg* est **nvarchar (255)** avec NULL comme valeur par défaut.  
   
  [  **@lang =** ] **'***langage***'**  
  Langue du message. *langage* est **sysname** avec NULL comme valeur par défaut. Étant donné que plusieurs langues peuvent être installés sur le même serveur, *langage* spécifie la langue dans laquelle chaque message est écrit. Lorsque *langage* est omis, la langue est la langue par défaut pour la session.  
   
- [  **@with_log =** ] { **'**TRUE**'** | **'FALSE'** }  
- Argument utilisé lorsque le message doit être consigné dans le journal des applications Windows. **@with_log**est **varchar (5)** avec la valeur FALSE par défaut. Si sa valeur est TRUE, l'erreur est automatiquement écrite dans le journal des applications Windows. Si sa valeur est FALSE, l'erreur n'est pas automatiquement écrite dans le journal des applications Windows ; c'est la façon dont elle a été déclenchée qui détermine si l'erreur sera ou non écrite dans le journal. Seuls les membres de la **sysadmin** rôle de serveur peut utiliser cette option.  
+ [  **@with_log =** ] { **'** TRUE **'** | **'FALSE'** }  
+ Argument utilisé lorsque le message doit être consigné dans le journal des applications Windows. **@with_log** est **varchar (5)** avec la valeur FALSE par défaut. Si sa valeur est TRUE, l'erreur est automatiquement écrite dans le journal des applications Windows. Si sa valeur est FALSE, l'erreur n'est pas automatiquement écrite dans le journal des applications Windows ; c'est la façon dont elle a été déclenchée qui détermine si l'erreur sera ou non écrite dans le journal. Seuls les membres de la **sysadmin** rôle de serveur peut utiliser cette option.  
   
 > [!NOTE]  
 >  Si un message est écrit dans le journal des applications Windows, il est également écrit dans le [!INCLUDE[ssDE](../../includes/ssde-md.md)] fichier journal des erreurs.  
   
- [  **@replace**   *=*  ] **'***remplacer***'**  
+ [ **@replace** *=* ] **'***remplacer***'**  
  S’il est spécifié comme chaîne *remplacer*, un message d’erreur existant est remplacé par le nouveau niveau de texte et la gravité de message. *Remplacez* est **varchar(7)** avec NULL comme valeur par défaut. Cette option doit être spécifiée si *msg_id* existe déjà. Si vous remplacez un message en anglais, Message en anglais, le niveau de gravité est remplacé pour tous les messages dans tous les autres langages qui ont le même *msg_id*.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

@@ -1,16 +1,13 @@
 ---
-title: sys.dm_fts_active_catalogs (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_fts_active_catalogs (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_fts_active_catalogs_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_fts_active_catalogs dynamic management view
 ms.assetid: 40ab5453-040c-4d2e-bb49-e340cf90c3ee
-caps.latest.revision: 
+caps.latest.revision: 38
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6031073091f63185f58cd256900719c25d8a7ae
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 564f66e6207ebc79b7545a77af8da8f156faf673
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmftsactivecatalogs-transact-sql"></a>sys.dm_fts_active_catalogs (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -65,9 +62,10 @@ ms.lasthandoff: 02/03/2018
  La colonne is_importing est nouvelle dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)].  
   
 ## <a name="permissions"></a>Autorisations  
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.  
-  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+   
 ## <a name="physical-joins"></a>Jointures physiques  
  ![Jointures significatives de cette vue de gestion dynamique](../../relational-databases/system-dynamic-management-views/media/join-dm-fts-active-catalogs-1.gif "jointures significatives de cette vue de gestion dynamique")  
   
@@ -98,6 +96,6 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  
- [Recherche en texte intégral et fonctions et vues de gestion dynamique de la recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)  
+ [Recherche en texte intégral et les fonctions et vues de gestion dynamique de la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)  
   
   

@@ -1,30 +1,27 @@
 ---
-title: "Jeux d’enregistrements hiérarchiques dans XML | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Jeux d’enregistrements hiérarchiques dans XML | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - hierarchical Recordsets [ADO], in XML
 ms.assetid: 5d4b11c4-c94f-4910-b99b-5b9abc50d791
-caps.latest.revision: 
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e33d176e47a9d509c504755d336985bb8a060df
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 64be59db3e65386eaaa267e954f63d0cf063e146
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hierarchical-recordsets-in-xml"></a>Jeux d’enregistrements hiérarchiques dans XML
 ADO autorise la persistance d’objets Recordset hiérarchiques en XML. Avec de tels objets, la valeur d’un champ dans l’objet Recordset parent est un autre objet Recordset. Ces champs sont représentés en tant qu’éléments enfants dans le flux XML plutôt que d’un attribut.  

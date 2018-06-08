@@ -1,35 +1,34 @@
 ---
-title: "Comprendre la gestion des fenêtres dans SQL Server Management Studio | Microsoft Docs"
-ms.custom: 
+title: Comprendre la gestion des fenêtres dans SQL Server Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - autohide [SQL Server Management Studio]
 - SQL Server Management Studio [SQL Server], tool windows
 - push pin [SQL Server Management Studio]
 - tool windows [SQL Server Management Studio]
 ms.assetid: bebf8383-dcaf-466e-84f5-63b81c9cfe52
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f290bba3b9312d861e63d54b19a8ad7dee5299a7
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 7b904ee1277c954ed5e61594c09492acb20b53a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understand-sql-server-management-studio-windows-management"></a>Comprendre la gestion des fenêtres dans SQL Server Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Les fenêtres Outil de [!INCLUDE[msCoName](../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] forment un système très fonctionnel, souple et efficace qui vous permet d’effectuer les tâches suivantes :  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Les fenêtres Outil de [!INCLUDE[msCoName](../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)] forment un système très fonctionnel, souple et efficace qui vous permet d’effectuer les tâches suivantes :  
   
 -   optimiser l'espace de travail utilisateur pour le développement et la gestion ;  
   

@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_background_job_queue (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_background_job_queue (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_background_job_queue
@@ -22,23 +19,23 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_background_job_queue dynamic management function
 ms.assetid: 05d9884f-b74c-4e3c-a23b-c90c1ea5ef02
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3d80848491c46046ba260956fb02ce41e7becdd6
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b1c65f1333733936c8192ec5a4012a3a918dd69b
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecbackgroundjobqueue-transact-sql"></a>sys.dm_exec_background_job_queue (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
   Retourne une ligne pour chaque travail du processeur de requêtes qui est planifié pour s'exécuter de façon asynchrone (en arrière-plan).  
   
-> **REMARQUE** Pour appeler cette de  **[!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)]**  ou  **[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]** , utilisez le nom **sys.dm_pdw_nodes_exec_background_job_queue**.  
+> **REMARQUE** Pour appeler cette de **[!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)]** ou **[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]**, utilisez le nom **sys.dm_pdw_nodes_exec_background_job_queue**.  
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
@@ -56,10 +53,10 @@ ms.lasthandoff: 02/03/2018
 |**session_id**|**smallint**|Identificateur de la session.|  
 |**pdw_node_id**|**int**|**S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> L’identificateur du nœud qui se trouve sur cette distribution.|  
   
-## <a name="permissions"></a>Autorisations  
- Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert l’autorisation VIEW SERVER STATE sur le serveur.  
-  
- Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] niveaux Premium requiert l’autorisation VIEW DATABASE STATE dans la base de données. Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard et les niveaux de base nécessite le [!INCLUDE[ssSDS](../../includes/sssds-md.md)] compte d’administrateur.  
+## <a name="permissions"></a>Autorisations
+
+Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
   
 ## <a name="remarks"></a>Notes  
  Seules les informations pour les travaux de mise à jour des statistiques asynchrone apparaissent dans cette vue. Pour plus d’informations sur les statistiques de mise à jour asynchrone, consultez [statistiques](../../relational-databases/statistics/statistics.md).  
@@ -83,8 +80,8 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
- [Statistics](../../relational-databases/statistics/statistics.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Statistiques](../../relational-databases/statistics/statistics.md)   
  [KILL STATS JOB &#40;Transact-SQL&#41;](../../t-sql/language-elements/kill-stats-job-transact-sql.md)  
   
   

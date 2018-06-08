@@ -1,32 +1,29 @@
 ---
-title: "Annuler l’exemple de méthode (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Annuler l’exemple de méthode (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Cancel method [ADO], Visual Basic example
 ms.assetid: 5c0530ad-68d0-4cba-b1af-9386d566c7c5
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63c0512622045cb4c65820826cbb8e120a91ead4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4dfff7ea1bdb1a9bb2b88de8f24788206d62b0f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cancel-method-example-vb"></a>Exemple de méthode Cancel (VB)
 Cet exemple utilise le [Annuler](../../../ado/reference/ado-api/cancel-method-ado.md) méthode pour annuler une commande exécutée sur un [connexion](../../../ado/reference/ado-api/connection-object-ado.md) de l’objet si la connexion est occupée.  

@@ -1,28 +1,25 @@
 ---
-title: "Index columnstore - Conseils en matière de chargement de données | Microsoft Docs"
-ms.custom: 
+title: Index columnstore - Conseils en matière de chargement de données | Microsoft Docs
+ms.custom: ''
 ms.date: 12/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b29850b5-5530-498d-8298-c4d4a741cdaf
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 31
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4d95799838948ebbffa9141049d6c75cc1a44227
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0af297906433fb8689b44812ae7936defe46b59d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnstore-indexes---data-loading-guidance"></a>Index columnstore - Conseils en matière de chargement de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

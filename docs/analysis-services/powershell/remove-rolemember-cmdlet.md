@@ -1,30 +1,23 @@
 ---
 title: Applet de commande Remove-RoleMember | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: e38f56ab-facd-4bef-9502-f52f8486a6a6
-caps.latest.revision: "8"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ad8117fd1b8c936914291484d7dde26702e119a1
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: eec431908e2159f7021613c086f1278cb2954b43
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remove-rolemember-cmdlet"></a>Applet de commande Remove-RoleMember
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Supprimer un membre du rôle spécifié d’une base de données Analysis Services.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Supprimez un membre du rôle spécifié d'une base de données Analysis Services.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -34,7 +27,7 @@ ms.lasthandoff: 01/08/2018
   
  `Remove-RoleMember [-DatabaseRole] <Microsoft.AnalysisServices.Role> [-MemberName] <System.String>  [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L'applet de commande Remove-RoleMember supprime un membre existant d'un rôle d'une base de données Analysis Services.  
   
 ## <a name="parameters"></a>Paramètres  
@@ -56,7 +49,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  

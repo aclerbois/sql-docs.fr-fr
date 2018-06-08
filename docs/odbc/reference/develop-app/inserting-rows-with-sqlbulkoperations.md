@@ -1,31 +1,28 @@
 ---
 title: Insertion de lignes avec SQLBulkOperations | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLBulkOperations function [ODBC], inserting rows
 - data updates [ODBC], SQLBulkOperations
 - updating data [ODBC], SQLBulkOperations
 ms.assetid: ed585ea7-4d56-4df9-8dc3-53ca82382450
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 14a6ed5b77f5fb24555aa82d0527b8d49da89f69
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fbeb779917c2029576bc78ec4a1d144716b7242f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="inserting-rows-with-sqlbulkoperations"></a>Insertion de lignes avec SQLBulkOperations
 Insertion de données avec **SQLBulkOperations** est similaire à la mise à jour des données avec **SQLBulkOperations** , car elle utilise les données du tampon de l’application liée.  

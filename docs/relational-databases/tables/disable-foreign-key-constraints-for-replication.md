@@ -1,32 +1,29 @@
 ---
-title: "Désactiver des contraintes de clé étrangère pour la réplication | Microsoft Docs"
-ms.custom: 
+title: Désactiver des contraintes de clé étrangère pour la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - constraints [SQL Server], foreign keys
 - foreign keys [SQL Server], disabling constraints
 - disabling constraints
 ms.assetid: 4211f2fd-d16a-4081-995c-43f1f0827f0b
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c7d304cbd4b5768c81177567170da2c6a050aee4
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b599c45f2c9809eecb170669272e5df46cedd9db
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disable-foreign-key-constraints-for-replication"></a>Désactiver des contraintes de clé étrangère pour la réplication
 [!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]

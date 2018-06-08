@@ -1,16 +1,15 @@
 ---
-title: "Propertystrvalue, propriété (classe SqlServiceAdvancedProperty) | Documents Microsoft"
-ms.custom: 
+title: Propertystrvalue, propriété (classe SqlServiceAdvancedProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - PropertyStrValue Property (SqlServiceAdvancedProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - PropertyStrValue property
 ms.assetid: 637dd734-c294-4bfd-892d-882bac4708f5
-caps.latest.revision: 
+caps.latest.revision: 33
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 22ef8afd96714b24d3026b804e9b8b662bcb8ef4
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: be4449f9f502276ff0a9ce8fff23239a339f612c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="propertystrvalue-property-sqlserviceadvancedproperty-class"></a>Propriété PropertyStrValue (classe SqlServiceAdvancedProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

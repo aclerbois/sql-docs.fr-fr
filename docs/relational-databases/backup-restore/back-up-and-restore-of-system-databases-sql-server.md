@@ -1,17 +1,14 @@
 ---
-title: "Sauvegarder et restaurer des bases de données système (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Sauvegarder et restaurer des bases de données système (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - system databases [SQL Server], backing up and restoring
 - restoring system databases [SQL Server]
@@ -19,16 +16,15 @@ helpviewer_keywords:
 - database backups [SQL Server], system databases
 - servers [SQL Server], backup
 ms.assetid: aef0c4fa-ba67-413d-9359-1a67682fdaab
-caps.latest.revision: 
+caps.latest.revision: 57
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e96e6f50db8029b24be5e3387f9248e11019c264
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7cdf3056f71609a33910a6c4812127fc78861be5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="back-up-and-restore-of-system-databases-sql-server"></a>Sauvegarder et restaurer des bases de données système (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

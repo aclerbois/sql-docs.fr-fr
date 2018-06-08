@@ -1,16 +1,13 @@
 ---
-title: "Administration et maintenance de l’instance de cluster de basculement | Microsoft Docs"
-ms.custom: 
+title: Administration et maintenance de l’instance de cluster de basculement | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - user accounts [SQL Server], failover clustering
 - clusters [SQL Server], maintaining
@@ -25,19 +22,19 @@ helpviewer_keywords:
 - removing nodes
 - virtual servers [SQL Server], adding nodes
 ms.assetid: 2d5c63e9-8061-45c3-94db-8dd3100b8a91
-caps.latest.revision: "35"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 964ce2dcfcff3edb1de4822ee01982583062f958
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: b5f38ae5d55508bd1619e544f5e6bd87b469e849
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772675"
 ---
 # <a name="failover-cluster-instance-administration-and-maintenance"></a>Administration et maintenance de l'instance de cluster de basculement
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les tâches de maintenance telles que l’ajout ou la suppression de nœuds dans une instance de cluster de basculement Always On existante sont accomplies à l’aide du programme d’installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. D'autres tâches d'administration telles que la modification d'une ressource d'adresse IP et la récupération de certains scénarios FCI sont accomplies à l'aide du composant logiciel enfichable Gestionnaire du cluster de basculement, qui est le composant logiciel enfichable de gestion du service de clustering de basculement Windows Server (WSFC).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Les tâches de maintenance telles que l’ajout ou la suppression de nœuds dans une instance de cluster de basculement Always On existante sont accomplies à l’aide du programme d’installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . D'autres tâches d'administration telles que la modification d'une ressource d'adresse IP et la récupération de certains scénarios FCI sont accomplies à l'aide du composant logiciel enfichable Gestionnaire du cluster de basculement, qui est le composant logiciel enfichable de gestion du service de clustering de basculement Windows Server (WSFC).  
   
 ## <a name="maintaining-a-failover-cluster-instance"></a>Conservation d'une instance de cluster de basculement  
  Après avoir installé une FCI, vous pouvez la changer ou la réparer au moyen du programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Par exemple, vous pouvez ajouter des nœuds supplémentaires à une FCI, exécuter une FCI comme une instance indépendante, ou supprimer un nœud d'une configuration de FCI.  
@@ -68,7 +65,7 @@ ms.lasthandoff: 12/05/2017
 |Décrit la procédure utilisée pour effectuer une récupération suite à échec d'un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .|[Récupérer à partir d'une défaillance d'instance de cluster de basculement](../../../sql-server/failover-clusters/windows/recover-from-failover-cluster-instance-failure.md)|  
 |Décrit la procédure utilisée pour modifier la ressource d'adresse IP d'une instance de cluster de basculement de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .|[Modifier l'adresse IP d'une instance de cluster de basculement](../../../sql-server/failover-clusters/windows/change-the-ip-address-of-a-failover-cluster-instance.md)|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Configurer les paramètres de propriété HealthCheckTimeout](../../../sql-server/failover-clusters/windows/configure-healthchecktimeout-property-settings.md)   
  [Configurer les paramètres de propriété FailureConditionLevel](../../../sql-server/failover-clusters/windows/configure-failureconditionlevel-property-settings.md)   
  [Afficher et lire le journal de diagnostic de l'instance de cluster de basculement](../../../sql-server/failover-clusters/windows/view-and-read-failover-cluster-instance-diagnostics-log.md)  

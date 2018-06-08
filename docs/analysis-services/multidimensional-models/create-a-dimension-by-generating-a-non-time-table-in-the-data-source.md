@@ -1,36 +1,23 @@
 ---
-title: "Créer une Dimension en générant une Table Non temporelle dans la Source de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data sources [Analysis Services], dimensions without data source
-- dimensions [Analysis Services], standard
-- dimensions [Analysis Services], creating without data source
-- standard dimensions [Analysis Services]
-ms.assetid: a37f7a46-7451-4582-ba19-2595196d97bc
-caps.latest.revision: 
-author: Minewiskan
+title: Créer une Dimension en générant une Table Non temporelle dans la Source de données | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dda2fe632e3a4cae0f36d766d4778f5ff910d649
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0f9f84131307282b00fd99c1d5770ac352e31713
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-dimension-by-generating-a-non-time-table-in-the-data-source"></a>Créer une dimension en générant une table non temporelle dans la source de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], l’Assistant Dimension de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] permet de créer une dimension sans utiliser de source de données existante. Pour ce faire, sélectionnez l’option **Générer une table non temporelle dans la source de données** de la page **Sélectionner une méthode de création** de l’Assistant. Pour créer une table de dimension dans la source de données sous-jacente, vous devez avoir l'autorisation de créer des objets dans la source de données sous-jacente. Si vous définissez une dimension sans vue de source de données prédéfinie, vous pouvez la définir entièrement ou utiliser un modèle de dimension.  
+  Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], l’Assistant Dimension de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] permet de créer une dimension sans utiliser de source de données existante. Pour ce faire, sélectionnez l’option **Générer une table non temporelle dans la source de données** de la page **Sélectionner une méthode de création** de l’Assistant. Pour créer une table de dimension dans la source de données sous-jacente, vous devez avoir l'autorisation de créer des objets dans la source de données sous-jacente. Si vous définissez une dimension sans vue de source de données prédéfinie, vous pouvez la définir entièrement ou utiliser un modèle de dimension.  
   
  L'Assistant Dimension fournit des exemples de modèles de dimension à partir desquels vous pouvez générer un type de dimension fréquemment utilisé. Vous pouvez sélectionner l'un des types de dimensions suivants :  
   

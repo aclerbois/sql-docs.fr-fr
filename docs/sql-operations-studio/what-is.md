@@ -1,25 +1,23 @@
----
 title: "Nouveautés de SQL Operations Studio (version préliminaire) | Microsoft Docs"
 description: "SQL Operations Studio (version préliminaire) est un outil gratuit et léger qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, d’Azure SQL Database et d’Azure SQL Data Warehouse, quel que soit l’endroit où ils s’exécutent."
+
 ms.custom: tools|sos
 ms.date: 11/17/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: overview
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 99dbe934a5b13e983a7c796689a2956c42354af2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 57304b146d6c4a197104fb6ca607e701fa88550b
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
----
+
 # <a name="what-is-includename-sosincludesname-sosmd"></a>Nouveautés [!INCLUDE[name-sos](../includes/name-sos.md)]?
 
 [!INCLUDE[name-sos](../includes/name-sos-short.md)] est un outil gratuit qui s’exécute sur Windows, Mac OS et Linux, pour la gestion de SQL Server, d’Azure SQL Database et d’Azure SQL Data Warehouse, quel que soit l’endroit où ils s’exécutent.

@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLBindParameter | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLBindParameter
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLBindParameter
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLBindParameter
-helpviewer_keywords: SQLBindParameter function [ODBC]
+f1_keywords:
+- SQLBindParameter
+helpviewer_keywords:
+- SQLBindParameter function [ODBC]
 ms.assetid: 38349d4b-be03-46f9-9d6a-e50dd144e225
-caps.latest.revision: "52"
+caps.latest.revision: 52
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 299e4ced3e6047f7d3e205d384d3191d43e70ef1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7e1cdde978780cce1807885334d42d0d89d44130
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlbindparameter-function"></a>Fonction SQLBindParameter
 **Mise en conformité**  
@@ -68,7 +69,7 @@ SQLRETURN SQLBindParameter(
  *ValueType*  
  [Entrée] Le type de données C du paramètre. Pour plus d’informations, consultez «*ValueType* Argument » dans « Commentaires ».  
   
- *Type de paramètre*  
+ *ParameterType*  
  [Entrée] Le type de données SQL du paramètre. Pour plus d’informations, consultez «*ParameterType* Argument » dans « Commentaires ».  
   
  *ColumnSize*  
@@ -96,7 +97,7 @@ SQLRETURN SQLBindParameter(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLBindParameter** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLBindParameter** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |07006|Violation de l’attribut de type de données restreint|Le type de données identifié par le *ValueType* l’argument ne peut pas être converti au type de données identifié par le *ParameterType* argument. Notez que cette erreur peut être renvoyée par **SQLExecDirect**, **SQLExecute**, ou **SQLPutData** au moment de l’exécution, plutôt que par **SQLBindParameter**.|  
@@ -126,7 +127,7 @@ SQLRETURN SQLBindParameter(
  Si *ParameterNumber* dans l’appel à **SQLBindParameter** est supérieure à la valeur de SQL_DESC_COUNT, **SQLSetDescField** est appelée pour augmenter la valeur de SQL_DESC_COUNT à *ParameterNumber*.  
   
 ## <a name="inputoutputtype-argument"></a>Argument de InputOutputType  
- Le *InputOutputType* argument spécifie le type du paramètre. Cet argument définit le champ SQL_DESC_PARAMETER_TYPE de l’IPD. Tous les paramètres dans les instructions SQL qui n’appellent pas de procédures, tel que **insérer** , les instructions sont *d’entrée**paramètres*. Paramètres dans les appels de procédure peuvent utiliser en entrée, d’entrée/sortient ou paramètres de sortie. (Une application appelle **SQLProcedureColumns** pour déterminer le type d’un paramètre dans un appel de procédure ; paramètres dont le type ne peut pas être déterminé sont supposés pour être des paramètres d’entrée.)  
+ Le *InputOutputType* argument spécifie le type du paramètre. Cet argument définit le champ SQL_DESC_PARAMETER_TYPE de l’IPD. Tous les paramètres dans les instructions SQL qui n’appellent pas de procédures, tel que **insérer** , les instructions sont *d’entrée ** paramètres*. Paramètres dans les appels de procédure peuvent utiliser en entrée, d’entrée/sortient ou paramètres de sortie. (Une application appelle **SQLProcedureColumns** pour déterminer le type d’un paramètre dans un appel de procédure ; paramètres dont le type ne peut pas être déterminé sont supposés pour être des paramètres d’entrée.)  
   
  Le *InputOutputType* argument est une des valeurs suivantes :  
   
@@ -147,7 +148,7 @@ SQLRETURN SQLBindParameter(
   
      Une fois que l’instruction est exécutée, le pilote retourne des données pour le paramètre à l’application, à moins que le *ParameterValuePtr* et *StrLen_or_IndPtr* arguments sont les deux pointeurs null, auquel cas le pilote ignore la valeur de sortie. Si la source de données ne retourne pas une valeur pour un paramètre de sortie, le pilote définit le **StrLen_or_IndPtr* tampon en SQL_NULL_DATA.  
   
--   SQL_PARAM_INPUT_OUTPUT_STREAM. Indique qu’un paramètre d’entrée/sortie doit être diffusé en continu. **SQLGetData** peuvent lire des valeurs de paramètre dans les parties. *BufferLength* est ignoré, car la longueur du tampon est déterminée à l’appel de **SQLGetData**. La valeur de la *StrLen_or_IndPtr* tampon doit contenir SQL_NULL_DATA, SQL_DEFAULT_PARAM, SQL_DATA_AT_EXEC ou le résultat de la macro SQL_LEN_DATA_AT_EXEC. Un paramètre doit être lié en tant qu’un paramètre de data-at-execution (DAE) dans l’entrée si elle est diffusée en continu à la sortie. *ParameterValuePtr* peut être toute valeur de pointeur non null qui est renvoyé par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr* pour l’entrée et de sortie. Pour plus d’informations, consultez [la récupération des paramètres de sortie à l’aide de SQLGetData](../../../odbc/reference/develop-app/retrieving-output-parameters-using-sqlgetdata.md).  
+-   SQL_PARAM_INPUT_OUTPUT_STREAM. Indique qu’un paramètre d’entrée/sortie doit être diffusé en continu. **SQLGetData** peuvent lire des valeurs de paramètre dans les parties. *BufferLength* est ignoré, car la longueur du tampon est déterminée à l’appel de **SQLGetData**. La valeur de la *StrLen_or_IndPtr* tampon doit contenir SQL_NULL_DATA, SQL_DEFAULT_PARAM, SQL_DATA_AT_EXEC ou le résultat de la macro SQL_LEN_DATA_AT_EXEC. Un paramètre doit être lié en tant qu’un paramètre de data-at-execution (DAE) dans l’entrée si elle est diffusée en continu à la sortie. *ParameterValuePtr* peut être toute valeur de pointeur non null qui est renvoyé par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr* pour les deux entrées et sortie. Pour plus d’informations, consultez [la récupération des paramètres de sortie à l’aide de SQLGetData](../../../odbc/reference/develop-app/retrieving-output-parameters-using-sqlgetdata.md).  
   
 -   SQL_PARAM_OUTPUT_STREAM. Identique à SQL_PARAM_INPUT_OUTPUT_STREAM, pour un paramètre de sortie. **StrLen_or_IndPtr* est ignorée dans l’entrée.  
   
@@ -161,7 +162,7 @@ SQLRETURN SQLBindParameter(
 |SQL_PARAM_OUTPUT_STREAM|Ignoré dans l’entrée.|Sortie diffusée en continu|*ParameterValuePtr* peut être toute valeur de pointeur, qui est renvoyé par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr*.|  
 |SQL_PARAM_INPUT_OUTPUT|SQL_LEN_DATA_AT_EXEC (*len*) ou SQL_DATA_AT_EXEC|Parties d’entrée dans et la mémoire tampon de sortie lié|*ParameterValuePtr* est l’adresse de la mémoire tampon de sortie, qui s’affichera par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr*.|  
 |SQL_PARAM_INPUT_OUTPUT|Pas de SQL_LEN_DATA_AT_EXEC (*len*) ou SQL_DATA_AT_EXEC|Entrée liée de mémoire tampon et la mémoire tampon de sortie lié|*ParameterValuePtr* est l’adresse de la mémoire tampon d’entrée/sortie partagée.|  
-L_PARAM_INPUT_OUTPUT_STREAM|SQL_LEN_DATA_AT_EXEC (*len*) ou SQL_DATA_AT_EXEC|Les éléments d’entrée dans et sortie diffusée en continu|*ParameterValuePtr* peut être toute valeur de pointeur non null, qui est renvoyé par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr* pour l’entrée et de sortie.|  
+L_PARAM_INPUT_OUTPUT_STREAM|SQL_LEN_DATA_AT_EXEC (*len*) ou SQL_DATA_AT_EXEC|Les éléments d’entrée dans et sortie diffusée en continu|*ParameterValuePtr* peut être toute valeur de pointeur non null, qui est renvoyé par **SQLParamData** comme défini par l’utilisateur dont la valeur du jeton passé avec *ParameterValuePtr* pour les deux entrées. et de sortie.|  
   
 > [!NOTE]  
 >  Le pilote doit décider quels types SQL sont autorisées lorsqu’une application lie un paramètre d’entrée-sortie ou sortie, comme la diffusion en continu. Le Gestionnaire de pilotes ne génère pas d’une erreur pour un type SQL non valide.  

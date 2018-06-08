@@ -1,30 +1,27 @@
 ---
-title: "Propriétés de Collection de colonnes, méthodes et événements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriétés de Collection de colonnes, méthodes et événements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Columns collection [ADOX], members
 ms.assetid: 3d9ec89a-cc85-4091-b6f0-2bb6a6826d5e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a5a2a42c33cc93ed57e8c0afd3619b445ad39c09
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1a48bc762fbacbd15e218125944794dcef36af29
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columns-collection-properties-methods-and-events"></a>Propriétés de Collection de colonnes, des méthodes et des événements
 ## <a name="properties"></a>Propriétés  

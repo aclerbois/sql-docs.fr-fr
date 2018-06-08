@@ -1,33 +1,32 @@
 ---
 title: Noms de Principal du service (SPN) dans les connexions clientes (ODBC) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|ODBC
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 1d60cb30-4c46-49b2-89ab-701e77a330a2
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 10a6289d31cbb40ac7f468a38cc2bf53e895feed
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 73d8cb7b88513173d9342d3910e1f2c959d1c42e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="service-principal-names-spns-in-client-connections-odbc"></a>Noms de principaux du service (SPN) dans les connexions clientes (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../../includes/snac-deprecated.md)]
 
-  Cette rubrique décrit les attributs et fonctions ODBC qui prennent en charge les noms de principaux du service (SPN) dans les applications clientes. Pour plus d’informations sur les SPN dans les applications clientes, consultez [nom Principal de Service &#40; Nom principal de service &#41; Prise en charge dans les connexions clientes](../../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md) et [obtenir une authentification mutuelle Kerberos](../../../relational-databases/native-client-odbc-how-to/get-mutual-kerberos-authentication.md).  
+  Cette rubrique décrit les attributs et fonctions ODBC qui prennent en charge les noms de principaux du service (SPN) dans les applications clientes. Pour plus d’informations sur les SPN dans les applications clientes, consultez [nom Principal de Service & #40 ; Nom principal de service & #41 ; Prise en charge dans les connexions clientes](../../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md) et [obtenir une authentification mutuelle Kerberos](../../../relational-databases/native-client-odbc-how-to/get-mutual-kerberos-authentication.md).  
   
 ## <a name="connection-string-keywords"></a>Mots clés de chaîne de connexion  
  Les mots clés de chaîne de connexion suivants permettent aux applications clientes de spécifier un nom principal de service.  
@@ -60,6 +59,6 @@ ms.lasthandoff: 01/25/2018
 -   [SQLSetConnectAttr](../../../relational-databases/native-client-odbc-api/sqlsetconnectattr.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
+ [SQL Server Native Client & #40 ; ODBC & #41 ;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
   
   

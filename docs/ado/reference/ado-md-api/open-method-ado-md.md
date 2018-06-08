@@ -1,17 +1,15 @@
 ---
-title: "Open (méthode) (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Open (méthode) (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Open
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Open method [ADO MD]
 ms.assetid: a87d8080-a238-45e5-bc80-9a8625b3810f
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c23630224808a70c20583759b6d62c8475ede66a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c6fb508318c54e4b82a4efd301b889baadad6edc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-method-ado-md"></a>Open (méthode) (ADO MD)
 Récupère les résultats d’une requête multidimensionnelle et renvoie les résultats vers un [ensemble de cellules](../../../ado/reference/ado-md-api/cellset-object-ado-md.md).  

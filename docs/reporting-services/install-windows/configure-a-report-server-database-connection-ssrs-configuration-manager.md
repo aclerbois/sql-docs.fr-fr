@@ -1,25 +1,23 @@
 ---
-title: "Configurer une connexion à la base de données du serveur de rapports (Gestionnaire de configuration de SSRS) | Microsoft Docs"
-ms.custom: 
+title: Configurer une connexion à la base de données du serveur de rapports (Gestionnaire de configuration de SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 24384ab29267e9b2b8a19bf2e44afdabf2ef21c2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 388534f90bf084cc32caefb84c6b2131faff47a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-a-report-server-database-connection--ssrs-configuration-manager"></a>Configurer une connexion à la base de données du serveur de rapports (Gestionnaire de configuration de SSRS)
 

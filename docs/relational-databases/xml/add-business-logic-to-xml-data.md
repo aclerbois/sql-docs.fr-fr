@@ -1,34 +1,31 @@
 ---
-title: "Ajouter la logique métier aux données XML | Microsoft Docs"
-ms.custom: 
+title: Ajouter la logique métier aux données XML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - business logic [XML]
 ms.assetid: 0877fb38-f1a2-43d8-86cf-4754be224dc1
-caps.latest.revision: 
+caps.latest.revision: 18
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6794df397b0cdb304a03f5d18c5facfd43dc146
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 1b8acb850aaab504849515b12e7171fdf2ffa464
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-business-logic-to-xml-data"></a>Ajouter la logique métier aux données XML
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Votre logique métier peut être ajoutée aux données XML de plusieurs manières :  
+  Votre logique métier peut être ajoutée aux données XML de plusieurs manières :  
   
 -   Vous pouvez écrire des contraintes sur les lignes ou les colonnes de façon à imposer des contraintes propres à un domaine lors de l'insertion et de la modification des données XML.  
   

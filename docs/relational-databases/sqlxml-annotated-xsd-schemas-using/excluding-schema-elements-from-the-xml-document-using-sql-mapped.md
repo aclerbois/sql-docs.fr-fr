@@ -1,16 +1,14 @@
 ---
-title: "Exclusion d’éléments de schéma du Document XML en utilisant sql : mappé | Documents Microsoft"
-ms.custom: 
+title: 'Exclusion d’éléments de schéma du Document XML en utilisant sql : mappé | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - element does not map [SQLXML]
@@ -25,20 +23,20 @@ helpviewer_keywords:
 - attribute mapping [SQLXML], excluding schema elements
 - table/view mapping [SQLXML], excluding schema elements
 ms.assetid: 7d2649dd-0038-4a2c-b16d-f80f7c306966
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 104c3958a6964967629c32ad22a5371a41226f67
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 640ae49de50fec55afb9c957042f5d317f41195f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="excluding-schema-elements-from-the-xml-document-using-sqlmapped"></a>Exclusion d’éléments de schéma du Document XML en utilisant sql : mappé
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Chaque élément et chaque attribut du schéma XSD sont mappés à une vue/table et à une colonne de base de données en raison du mappage par défaut. Si vous souhaitez créer un élément dans le schéma XSD qui ne correspondent pas à une table de base de données (vue) ou une colonne, et qui n’apparaît pas dans le code XML, vous pouvez spécifier le **sql : mappé** annotation.  
+  Chaque élément et chaque attribut du schéma XSD sont mappés à une vue/table et à une colonne de base de données en raison du mappage par défaut. Si vous souhaitez créer un élément dans le schéma XSD qui ne correspondent pas à une table de base de données (vue) ou une colonne, et qui n’apparaît pas dans le code XML, vous pouvez spécifier le **sql : mappé** annotation.  
   
  Le **sql : mappé** annotation s’avère particulièrement utile si le schéma ne peut pas être modifié ou si le schéma est utilisé pour valider le XML à partir d’autres sources et qu’il contient encore des données qui ne sont pas stockées dans votre base de données. Le **sql : mappé** diffère de l’annotation **sql : constante est** dans la mesure où les éléments non mappés et les attributs n’apparaissent pas dans le document XML.  
   
@@ -112,6 +110,6 @@ Chaque élément et chaque attribut du schéma XSD sont mappés à une vue/table
  Notez que ContactID, FirstName et LastName sont présents, mais que HomeAddress n’est pas, car le schéma de mappage a spécifié 0 pour le **sql : mappé** attribut.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mappage par défaut d’éléments XSD et les attributs pour les Tables et colonnes &#40; SQLXML 4.0 &#41;](../../relational-databases/sqlxml-annotated-xsd-schemas-using/default-mapping-of-xsd-elements-and-attributes-to-tables-and-columns-sqlxml-4-0.md)  
+ [Mappage par défaut des éléments XSD et des attributs aux Tables et colonnes &#40;SQLXML 4.0&#41;](../../relational-databases/sqlxml-annotated-xsd-schemas-using/default-mapping-of-xsd-elements-and-attributes-to-tables-and-columns-sqlxml-4-0.md)  
   
   

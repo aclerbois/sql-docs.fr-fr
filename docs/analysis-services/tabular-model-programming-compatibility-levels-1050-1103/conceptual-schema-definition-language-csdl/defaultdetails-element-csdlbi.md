@@ -1,33 +1,23 @@
 ---
-title: "L’élément DefaultDetails (CSDLBI) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: L’élément DefaultDetails (CSDLBI) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 05a08baa-23cc-4011-9c2e-f60a20bb87da
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8010e9c0412b50c8d65a67c87c176bff02d1a887
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9178a7563808dbaebd32640e7355b735b2833291
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="defaultdetails-element-csdlbi"></a>Élément DefaultDetails (CSDLBI)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-L'élément DefaultDetails représente une liste de références de propriété qui définissent l'« ensemble de champs par défaut » des colonnes de la table. Chaque propriété ne peut faire référence qu'à une mesure ou une colonne.  
+  L'élément DefaultDetails représente une liste de références de propriété qui définissent l'« ensemble de champs par défaut » des colonnes de la table. Chaque propriété ne peut faire référence qu'à une mesure ou une colonne.  
   
 ## <a name="elements-and-attributes"></a>Éléments et attributs  
  Le tableau suivant répertorie les éléments et les attributs qui définissent l'élément DefaultDetails.  

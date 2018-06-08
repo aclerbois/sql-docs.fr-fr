@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsTransactionIsolationLevel | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsTransactionIsolationLevel | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsTransactionIsolationLevel
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsTransactionIsolationLevel
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: b716ed6c-6ec3-47a7-8e6d-16cbf2469d6d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 12a3f3bfc724698872ad6dcf8158b30a3529a06f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 11f676b7f390bee7f67795d7d19bcce26616142e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportstransactionisolationlevel-method-sqlserverdatabasemetadata"></a>Méthode supportsTransactionIsolationLevel (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public boolean supportsTransactionIsolationLevel(int level)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *niveau*  
+ *Niveau*  
   
  Un **int** qui indique le niveau d’isolation de transaction.  
   

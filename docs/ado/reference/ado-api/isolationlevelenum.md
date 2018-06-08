@@ -1,40 +1,37 @@
 ---
 title: IsolationLevelEnum | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - IsolationLevelEnum
 helpviewer_keywords:
 - IsolationLevelEnum enumeration [ADO]
 ms.assetid: 8e17a7bc-b8a3-4ae2-b6c9-ce088ad31fdf
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 98a9f6213af3fbfb523701f0a8dda1de80cc2d93
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a22b958066b681f70187dc5e49fcd36752f510b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="isolationlevelenum"></a>IsolationLevelEnum
 Spécifie le niveau d’isolation des transactions pour un [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet.  
   
 |Constante|Valeur| Description|  
 |--------------|-----------|-----------------|  
-|**adXactUnspecified**|-1|Indique que le fournisseur utilise un niveau d’isolation que le nombre spécifié, mais que le niveau ne peut pas être déterminé.|  
+|**: adXactUnspecified**|-1|Indique que le fournisseur utilise un niveau d’isolation que le nombre spécifié, mais que le niveau ne peut pas être déterminé.|  
 |**adXactChaos**|16|Indique que les modifications en attente de transactions mieux isolées ne peut pas être remplacée.|  
 |**adXactBrowse**|256|Indique qu’à partir d’une transaction vous pouvez visualiser les modifications non validées dans d’autres transactions.|  
 |**adXactReadUncommitted**|256|Identique à **à adXactBrowse**.|  

@@ -1,37 +1,23 @@
 ---
-title: "Définir des formules de membre personnalisées pour les attributs dans une Dimension | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Business Intelligence enhancements [Analysis Services], custom member formulas
-- member formulas [Analysis Services]
-- dimensions [Analysis Services], Business Intelligence enhancements
-- custom member formulas [Analysis Services]
-- CustomRollupColumn property
-ms.assetid: c4467b08-ce59-4de7-a2d9-c22e246bdd52
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des formules de membre personnalisées pour les attributs dans une Dimension | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: acec3f91c8229acc6c17f5989b63677b394b6129
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 29b4d83956e6963aa7df0b4a1afd11edda6c83c4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="bi-wizard---custom-member-formulas-for-attributes-in-a-dimension"></a>Assistant BI - formules de membre personnalisées pour les attributs dans une Dimension
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Ajoutez une formule de membre personnalisée à un cube ou à une dimension pour remplacer l'agrégation par défaut qui est associée à un membre de dimension par les résultats d'une expression MDX (Multidimensional Expressions). (Cette fonctionnalité affecte à la propriété **CustomRollupColumn** un attribut spécifié dans une dimension.)  
+  Ajoutez une formule de membre personnalisée à un cube ou à une dimension pour remplacer l'agrégation par défaut qui est associée à un membre de dimension par les résultats d'une expression MDX (Multidimensional Expressions). (Cette fonctionnalité affecte à la propriété **CustomRollupColumn** un attribut spécifié dans une dimension.)  
   
 > [!NOTE]  
 >  Les formules de membre personnalisées sont disponibles uniquement pour les dimensions basées sur des sources de données existantes. Pour les dimensions qui ont été créées sans source de données, vous devez exécuter l'Assistant Génération de schéma pour créer une vue de source de données avant d'ajouter une formule de membre personnalisée.  

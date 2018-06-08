@@ -1,41 +1,23 @@
 ---
 title: Algorithme de gestion de clusters Microsoft | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- segmentation algorithms [Analysis Services]
-- nearest neighbor [Data Mining]
-- clustering [Data Mining]
-- clusters [Analysis Services]
-- relationships [Analysis Services], clusters
-- algorithms [data mining]
-- classification algorithms [Analysis Services]
-- datasets [Analysis Services]
-- clustering algorithms [Analysis Services]
-ms.assetid: 92a1e67e-f46e-4960-99b2-4d20f6192fbd
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d9511055469bea3bbd5e090ecb14c22e8c043789
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 21177dba0c17ec2ba8bd7af73585b4ede5a7d7e8
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-clustering-algorithm"></a>Algorithme de gestion de clusters Microsoft
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’Algorithme MSC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Clustering) est un algorithme de *segmentation* ou *clustering* qui effectue une itération sur les cas dans un dataset pour les regrouper en clusters contenant des caractéristiques similaires. Ces regroupements sont utiles pour l'exploration des données, l'identification d'anomalies dans les données et la création de prédictions.  
+  L’Algorithme MSC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Clustering) est un algorithme de *segmentation* ou *clustering* qui effectue une itération sur les cas dans un dataset pour les regrouper en clusters contenant des caractéristiques similaires. Ces regroupements sont utiles pour l'exploration des données, l'identification d'anomalies dans les données et la création de prédictions.  
   
  Les modèles de clusters identifient des relations dans un jeu de données que vous ne pourriez peut-être pas déduire d'une observation informelle. Par exemple, vous pouvez facilement deviner que les personnes qui se rendent à leur travail à vélo n’habitent généralement pas très loin de leur travail. Toutefois, l'algorithme peut trouver d'autres caractéristiques moins évidentes sur les personnes qui se rendent à leur travail en vélo. Dans le diagramme ci-dessous, le cluster A représente des données sur les personnes qui se rendent généralement en voiture à leur travail, tandis que le cluster B représente des données sur les personnes qui vont généralement à vélo à leur travail.  
   
@@ -91,7 +73,7 @@ L’Algorithme MSC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Cluster
 ## <a name="see-also"></a>Voir aussi  
  [Algorithmes d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)   
  [Microsoft Clustering algorithme informations techniques de référence](../../analysis-services/data-mining/microsoft-clustering-algorithm-technical-reference.md)   
- [Contenu du modèle d’exploration de données pour le Clustering des modèles &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)   
+ [Contenu du modèle d’exploration de données pour le Clustering des modèles & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)   
  [Exemples de requêtes modèle de clustering](../../analysis-services/data-mining/clustering-model-query-examples.md)  
   
   

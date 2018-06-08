@@ -1,29 +1,29 @@
 ---
-title: "Aperçu, vue | Microsoft Docs"
-ms.custom: 
+title: Aperçu, vue | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.rtp.rptdesigner.previewview.f1
-helpviewer_keywords: Preview view [Reporting Services]
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.rtp.rptdesigner.previewview.f1
+helpviewer_keywords:
+- Preview view [Reporting Services]
 ms.assetid: 108255d1-5be8-47c1-80f3-1f2a055e4d02
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6ff72cb8ca44709cabd38f122c87150f901bb476
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: a74f2e15acc9d2ab6a9660ee294dff1cb7c30aac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="preview-view"></a>Vue Aperçu
 Dans le Concepteur de rapports [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , utilisez la vue **Aperçu** pour afficher le rapport rendu. Lors de l'aperçu d'un rapport, le Générateur de rapports exécute le rapport localement et l'affiche dans la vue Aperçu. Dans le mode Aperçu, le rapport est traité dans sa totalité. Si le rapport contient une requête complexe ou une grande quantité de données, l'aperçu peut prendre plusieurs minutes à apparaître la première fois que vous l'affichez. Pour les modifications ultérieures apportées exclusivement à la mise en forme du rapport, l'aperçu utilise les données mises en cache.

@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetBoolValue (classe SqlServiceAdvancedProperty) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetBoolValue (classe SqlServiceAdvancedProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetBoolValue Method (SqlServiceAdvancedProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetBoolValue method
 ms.assetid: 5252b439-fce5-446a-8e57-99e3054bee69
-caps.latest.revision: 
+caps.latest.revision: 33
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e2621ccf60facedcb0896cb4b8d65d48cfb6fe4
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 71c40c1421e256be02c0ab8a97344b8d3f6ecb0a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setboolvalue-method-sqlserviceadvancedproperty-class"></a>Méthode SetBoolValue (classe SqlServiceAdvancedProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

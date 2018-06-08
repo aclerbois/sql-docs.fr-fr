@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_query_optimizer_info (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_query_optimizer_info (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_query_optimizer_info_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_query_optimizer_info dynamic management view
 ms.assetid: 1d72cef1-22d8-4ae0-91db-6694fe918c9e
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c7b87cc0b34d33abd8f658a7ff20852200b93a2c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5779c87d467a52e28623419d6cf6bac392907fae
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecqueryoptimizerinfo-transact-sql"></a>sys.dm_exec_query_optimizer_info (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -49,10 +46,10 @@ ms.lasthandoff: 02/03/2018
 |**pdw_node_id**|**int**|**S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> L’identificateur du nœud qui se trouve sur cette distribution.|  
   
 ## <a name="permissions"></a>Autorisations  
- Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert l’autorisation VIEW SERVER STATE sur le serveur.  
-  
- Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] niveaux Premium requiert l’autorisation VIEW DATABASE STATE dans la base de données. Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard et les niveaux de base nécessite le [!INCLUDE[ssSDS](../../includes/sssds-md.md)] compte d’administrateur.  
-  
+
+Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+    
 ## <a name="remarks"></a>Notes  
  **Sys.dm_exec_query_optimizer_info** contient les propriétés suivantes (compteurs). Toutes les valeurs d'occurrence sont cumulatives et sont définies à 0 au redémarrage du système. Tous les champs de valeurs sont initialisés à NULL au redémarrage du système. Toutes les colonnes de valeurs qui indiquent une moyenne utilisent la valeur d'occurrence de la ligne comme dénominateur pour le calcul de la moyenne. Toutes les optimisations de requêtes sont mesurées lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] détermine les modifications de **dm_exec_query_optimizer_info**, y compris les deux requêtes générées par l’utilisateur et système. L’exécution d’un plan déjà mis en cache ne modifie pas les valeurs de **dm_exec_query_optimizer_info**, seules les optimisations sont significatifs.  
   
@@ -135,7 +132,7 @@ SELECT (SELECT CAST (occurrence AS float) FROM sys.dm_exec_query_optimizer_info 
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
   
   
 

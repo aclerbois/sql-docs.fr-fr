@@ -1,33 +1,31 @@
 ---
 title: Injection SQL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: security
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: security, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-security
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: security
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Injection
 ms.assetid: eb507065-ac58-4f18-8601-e5b7f44213ab
-caps.latest.revision: 
+caps.latest.revision: 7
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5de3575bfac8b2e13e6d02835d5355b1e6b78cfa
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ce44acb34b3566526ed19bd9dadccc942618bab2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-injection"></a>Injection SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Une attaque par injection SQL consiste à insérer du code malveillant dans les chaînes transmises ultérieurement à une instance de SQL Server en vue de leur analyse et de leur exécution. Les procédures qui permettent de créer des instructions SQL doivent être vérifiées et analysées à la recherche d’éventuelles failles autorisant cette injection, car SQL Server exécute toutes les requêtes syntaxiquement correctes qu’il reçoit. Même les données paramétrables peuvent être manipulées par un pirate compétent et déterminé.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Une attaque par injection SQL consiste à insérer un code malveillant dans les chaînes transmises ultérieurement à une instance de SQL Server en vue de leur analyse et de leur exécution. Les procédures qui permettent de créer des instructions SQL doivent être vérifiées et analysées à la recherche d’éventuelles failles autorisant cette injection, car SQL Server exécute toutes les requêtes syntaxiquement correctes qu’il reçoit. Même les données paramétrables peuvent être manipulées par un pirate compétent et déterminé.  
   
 ## <a name="how-sql-injection-works"></a>Comment fonctionne l’injection SQL  
  Les injections SQL prennent principalement la forme d'insertions directes de code dans les variables d'entrée utilisateur qui sont concaténées avec des commandes SQL et exécutées. Des attaques par injection moins directes insèrent un code malveillant dans les chaînes destinées à être stockées dans une table ou en tant que métadonnées. Lorsque les chaînes stockées sont ensuite concaténées dans une commande SQL dynamique, le code nuisible est exécuté.  
@@ -54,7 +52,7 @@ SELECT * FROM OrdersTable WHERE ShipCity = 'Redmond'
 Redmond'; drop table OrdersTable--  
 ```  
   
- Dans ce cas, la requête assemblée par le script est la suivante :  
+ Dans ce cas, la requête assemblée par le script est la suivante :  
   
 ```  
 SELECT * FROM OrdersTable WHERE ShipCity = 'Redmond';drop table OrdersTable--'  
@@ -178,7 +176,7 @@ OR UPPER(text) LIKE '%SP_EXECUTESQL%';
 |@variable|Wrapper recommandé|  
 |---------------|-------------------------|  
 |Nom d'un élément sécurisable|`QUOTENAME(@variable)`|  
-|Chaîne ≤ à 128 caractères|`QUOTENAME(@variable, '''')`|  
+|Chaîne ≤ à 128 caractères|`QUOTENAME(@variable, '''')`|  
 |Chaîne de > 128 caractères|`REPLACE(@variable,'''', '''''')`|  
   
  Lorsque vous utilisez cette technique, une instruction SET peut être révisée comme suit :  
@@ -343,7 +341,7 @@ GO
   
  Lorsque vous concaténez des valeurs de type sysname, vous devez utiliser des variables temporaires de taille suffisante pour contenir le maximum de 128 caractères par valeur. Dans la mesure du possible, appelez `QUOTENAME()` directement à l’intérieur du [!INCLUDE[tsql](../../includes/tsql-md.md)]dynamique. Sinon, vous pouvez calculer la taille requise de la mémoire tampon comme expliqué dans la section précédente.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [EXECUTE &#40;Transact-SQL&#41;](../../t-sql/language-elements/execute-transact-sql.md)   
  [REPLACE &#40;Transact-SQL&#41;](../../t-sql/functions/replace-transact-sql.md)   
  [QUOTENAME &#40;Transact-SQL&#41;](../../t-sql/functions/quotename-transact-sql.md)   

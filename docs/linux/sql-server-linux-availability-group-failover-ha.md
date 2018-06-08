@@ -1,25 +1,22 @@
 ---
-title: "Gérer le basculement du groupe de disponibilité - SQL Server sur Linux | Documents Microsoft"
-description: 
+title: Gérer le basculement du groupe de disponibilité - SQL Server sur Linux | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: Inactive
-ms.openlocfilehash: 086cf16e243810452a3bace411abdc3689e74ff8
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: 26868cfd136f3d06366a47ec7d52fa17e3c8fe39
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="always-on-availability-group-failover-on-linux"></a>Basculement du groupe de disponibilité AlwaysOn sur Linux
 

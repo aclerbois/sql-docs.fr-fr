@@ -1,27 +1,25 @@
 ---
-title: "Plusieurs séries sur un graphique (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Plusieurs séries sur un graphique (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b99e4398-1fba-4824-958f-5c75d10485ea
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: cb205dc96ea7279ce4fc9048ab09b738fc38051d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 0c599349386352fdbf48390476f8014eaca34192
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiple-series-on-a-chart-report-builder-and-ssrs"></a>Plusieurs séries sur un graphique (Générateur de rapports et SSRS)
   Lorsque plusieurs séries sont affichées sur un graphique, vous devez déterminer la meilleure méthode de comparaison de ces séries. Vous pouvez utiliser un graphique empilé pour afficher les proportions relatives de chaque série. Si vous comparez uniquement deux séries qui partagent un axe des abscisses commun (x), utilisez l'axe secondaire. Cela peut s'avérer utile lorsque vous affichez deux séries de données associées (le prix et le volume ou les recettes et les taxes, par exemple). Si le graphique devient illisible, envisagez d'utiliser plusieurs zones de graphique pour produire davantage de séparation visuelle entre chaque série.  

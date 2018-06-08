@@ -1,27 +1,25 @@
 ---
-title: "Résoudre les problèmes de rendu des rapports Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes de rendu des rapports Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 02/27/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 1e0fb399-4c16-438a-92cb-db3e877896d0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e95e444172974de41cfea15bc651ddfae9a5cabb
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 1e067f6a03b839f9de233bc71eccbf6631bb599f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-reporting-services-report-rendering-issues"></a>Résoudre les problèmes de rendu des rapports Reporting Services
 Une fois les données et les informations de mise en page du rapport combinées, le rapport compilé est envoyé à un convertisseur de rapport. Par exemple, lorsque vous affichez l'aperçu d'un rapport localement, vous utilisez le convertisseur HTML pour afficher le rapport compilé. Utilisez cette rubrique pour vous aider à résoudre les problèmes spécifiques au rendu de rapport.   

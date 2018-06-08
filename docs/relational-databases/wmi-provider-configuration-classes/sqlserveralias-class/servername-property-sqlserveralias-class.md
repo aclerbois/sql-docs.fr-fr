@@ -1,16 +1,15 @@
 ---
-title: "Propriété ServerName (classe SqlServerAlias) | Documents Microsoft"
-ms.custom: 
+title: Propriété ServerName (classe SqlServerAlias) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ServerName Property (SqlServerAlias Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ServerName property
 ms.assetid: 58c82b19-b548-42fa-9c5a-059b606da097
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 69cdedb0c8d2c4ae37fac8340b4a0f254692b877
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 4f554772c9bb5bc91311afb4bd425ae1aa3ef0e8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="servername-property-sqlserveralias-class"></a>Propriété ServerName (classe SqlServerAlias)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

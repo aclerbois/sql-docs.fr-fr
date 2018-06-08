@@ -1,16 +1,15 @@
 ---
 title: sp_getdefaultdatatypemapping (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_getdefaultdatatypemapping
 ms.assetid: b8401de1-f135-41d0-ba79-ce8fe1f48c00
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db6ba2bdd02ed4ce9fe7b93132669d4f46ce40b9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 9acad164a82b8506ecceebeab01fb5f4c03b75b6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spgetdefaultdatatypemapping-transact-sql"></a>sp_getdefaultdatatypemapping (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,7 +58,7 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@source_dbms** =] **'***source_dbms***'**  
+ [ **@source_dbms**=] **'***source_dbms***'**  
  Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est **sysname**, et peut prendre l’une des valeurs suivantes :  
   
 |Valeur| Description|  
@@ -73,7 +71,7 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
  [  **@source_version=** ] **'***source_version***'**  
  Numéro de version du SGBD source. *source_version* est **varchar (10)**, avec NULL comme valeur par défaut.  
   
- [  **@source_type** =] **'***source_type***'**  
+ [ **@source_type**=] **'***source_type***'**  
  Type de données répertorié dans le SGBD source. *source_type* est **sysname**, sans valeur par défaut.  
   
  [  **@source_length=** ] *source_length*  
@@ -88,7 +86,7 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
  [  **@source_nullable=** ] *source_nullable*  
  Indique si le type de données du SGBD source prend en charge la valeur NULL. *source_nullable* est **bits**, avec la valeur par défaut **1**, ce qui signifie que les valeurs NULL sont prises en charge.  
   
- [  **@destination_dbms**  =] **'***destination_dbms***'**  
+ [ **@destination_dbms** =] **'***destination_dbms***'**  
  Nom du SGBD de destination. *destination_dbms* est **sysname**, et peut prendre l’une des valeurs suivantes :  
   
 |Valeur| Description|  
@@ -100,10 +98,10 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
   
  Ce paramètre est obligatoire.  
   
- [  **@destination_version** =] **'***destination_version***'**  
+ [ **@destination_version**=] **'***destination_version***'**  
  Est la version de produit du SGBD de destination. *destination_version* est **varchar (10)**, avec NULL comme valeur par défaut.  
   
- [  **@destination_type** =] **'***destination_type***'** sortie  
+ [ **@destination_type**=] **'***destination_type***'** sortie  
  Le type de données est répertorié dans le SGBD de destination. *destination_type* est **sysname**, avec NULL comme valeur par défaut.  
   
  [  **@destination_length=** ] *destination_length* sortie  
@@ -112,13 +110,13 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
  [  **@destination_precision=** ] *destination_precision* sortie  
  Est la précision du type de données du SGBD de destination. *destination_precision* est **bigint**, avec NULL comme valeur par défaut.  
   
- [  **@destination_scale=** ] *destination_scale***sortie**  
+ [  **@destination_scale=** ] *destination_scale *** sortie**  
  Correspond à l’échelle du type de données du SGBD de destination. *destination_scale* est **int**, avec NULL comme valeur par défaut.  
   
- [  **@destination_nullable=** ] *destination_nullable***sortie**  
+ [  **@destination_nullable=** ] *destination_nullable *** sortie**  
  Indique si le type de données du SGBD de destination prend en charge la valeur NULL. *destination_nullable* est **bits**, avec NULL comme valeur par défaut. **1** signifie que les valeurs NULL sont prises en charge.  
   
- [  **@dataloss=** ] *perte***sortie**  
+ [  **@dataloss=** ] *perte *** sortie**  
  Indique si le mappage présente un risque de perte de données. *perte* est **bits**, avec NULL comme valeur par défaut. **1** signifie qu’il existe un risque potentiel de perte de données.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -129,12 +127,12 @@ sp_getdefaultdatatypemapping [ @source_dbms = ] 'source_dbms'
   
  **sp_getdefaultdatatypemapping** renvoie les données de destination par défaut de type qui est la plus proche pour le type de données source spécifiée.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_getdefaultdatatypemapping**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_helpdatatypemap &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpdatatypemap-transact-sql.md)   
- [sp_setdefaultdatatypemapping &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-setdefaultdatatypemapping-transact-sql.md)   
+ [sp_helpdatatypemap &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdatatypemap-transact-sql.md)   
+ [sp_setdefaultdatatypemapping &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-setdefaultdatatypemapping-transact-sql.md)   
  [Data Type Mapping for Oracle Publishers](../../relational-databases/replication/non-sql/data-type-mapping-for-oracle-publishers.md)   
  [IBM DB2 Subscribers](../../relational-databases/replication/non-sql/ibm-db2-subscribers.md)   
  [Abonnés Oracle](../../relational-databases/replication/non-sql/oracle-subscribers.md)  

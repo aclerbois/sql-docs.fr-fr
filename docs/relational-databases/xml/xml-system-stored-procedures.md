@@ -1,17 +1,15 @@
 ---
-title: "Procédures stockées système XML | Microsoft Docs"
-ms.custom: 
+title: Procédures stockées système XML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - system stored procedures [SQL Server], XML
 - sp_xml_removedocument
@@ -19,20 +17,19 @@ helpviewer_keywords:
 - sp_xml_preparedocument
 - XML [SQL Server], system stored procedures
 ms.assetid: e60c7f85-6823-4d28-93d6-b053d08cc830
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44e9f0a98ed9238a8c914aa0a5f696fe5a5942e5
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: ab7d7429485972d93408dd04023e3f1f6f3c9584
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-system-stored-procedures"></a>Procédures stockées système XML
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-SQL Server propose les procédures stockées système suivantes utilisées en conjonction avec la clause OPENXML :  
+  SQL Server propose les procédures stockées système suivantes utilisées en conjonction avec la clause OPENXML :  
   
 -   [sp_xml_preparedocument &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-xml-preparedocument-transact-sql.md)  
   

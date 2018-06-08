@@ -1,39 +1,24 @@
 ---
-title: "Nom d’élément (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Nom d’élément (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: Name Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- http://schemas.microsoft.com/analysisservices/2003/engine#Name
-- urn:schemas-microsoft-com:xml-analysis#Name
-- microsoft.xml.analysis.name
-helpviewer_keywords: Name element
-ms.assetid: cc1a93df-0b1b-4c38-9183-4f11c26fea6a
-caps.latest.revision: "12"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 995792653603bd7ff5954a34755e7704544675b6
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c0686dfbb5949c9b2fe3a20e34824e731369b266
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34575811"
 ---
 # <a name="name-element-xmla"></a>Élément Name (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient le nom d’un membre d’attribut pour le parent [attribut](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md) ou [traduction](../../../analysis-services/xmla/xml-elements-properties/translation-element-xmla.md) élément.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient le nom d’un membre d’attribut pour le parent [attribut](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md) ou [traduction](../../../analysis-services/xmla/xml-elements-properties/translation-element-xmla.md) élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -46,7 +31,7 @@ ms.lasthandoff: 01/08/2018
 </Attribute>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -57,7 +42,7 @@ ms.lasthandoff: 01/08/2018
 |Ancêtre ou parent|Cardinalité|  
 |------------------------|-----------------|  
 |[Attribute](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md)|1-1 : élément requis qui apparaît une fois et une seule.|  
-|[Traduction](../../../analysis-services/xmla/xml-elements-properties/translation-element-xmla.md)|0-1 : élément facultatif qui peut apparaître une fois et une seule.|  
+|[traduction](../../../analysis-services/xmla/xml-elements-properties/translation-element-xmla.md)|0-1 : élément facultatif qui peut apparaître une fois et une seule.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
   
@@ -66,15 +51,15 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Attribut](../../../analysis-services/xmla/xml-elements-properties/attribute-element-xmla.md), [traduction](../../../analysis-services/xmla/xml-elements-properties/translation-element-xmla.md)|  
 |Éléments enfants|None|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Pour **attribut** éléments, le **nom** élément contient le nom du membre d’attribut à insérer ou mis à jour au cours du, respectivement, la **insérer** ou **mise à jour** commande.  
   
  Pour **traduction** éléments, le **nom** élément contient la légende du membre d’attribut, dans la langue spécifiée par la **langage** élément du parent **traduction** objet. Si le **nom** élément n’est pas spécifié ou contient une chaîne vide, la valeur de la **nom** , élément pour les **attribut** élément qui contient le **traduction** élément est utilisé.  
   
-## <a name="see-also"></a>Voir aussi  
- [Insérer un élément &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-commands/insert-element-xmla.md)   
- [Élément de langage &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/language-element-xmla.md)   
- [Mettre à jour, élément &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-commands/update-element-xmla.md)   
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Insérer l’élément &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-commands/insert-element-xmla.md)   
+ [Élément de langage &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/language-element-xmla.md)   
+ [Mettre à jour d’élément &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-commands/update-element-xmla.md)   
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

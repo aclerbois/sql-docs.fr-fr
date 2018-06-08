@@ -1,35 +1,23 @@
 ---
-title: "Référence technique de Microsoft Linear Regression algorithme | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- AUTO_DETECT_PERIODICITY parameter
-- linear regression algorithms [Analysis Services]
-- regression algorithms [Analysis Services]
-ms.assetid: 7807b5ff-8e0d-418d-a05b-b1a9644536d2
-caps.latest.revision: 
-author: Minewiskan
+title: Référence technique de Microsoft Linear Regression algorithme | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2ad96596830cc3bb091a7f57639c0a7d0d84dd9c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 84d0d6609538bb9abdbca61e75c6691c25a45950
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-linear-regression-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme MLR (Microsoft Linear Regression)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’algorithme MLR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Linear Regression) est une version spéciale de l’algorithme MDT (Microsoft Decision Trees) qui est optimisée pour la modélisation des paires d’attributs continus. Cette rubrique explique l'implémentation de l'algorithme, décrit la façon de personnaliser le comportement de l'algorithme et fournit des liens vers des informations supplémentaires sur l'interrogation des modèles.  
+  L’algorithme MLR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Linear Regression) est une version spéciale de l’algorithme MDT (Microsoft Decision Trees) qui est optimisée pour la modélisation des paires d’attributs continus. Cette rubrique explique l'implémentation de l'algorithme, décrit la façon de personnaliser le comportement de l'algorithme et fournit des liens vers des informations supplémentaires sur l'interrogation des modèles.  
   
 ## <a name="implementation-of-the-linear-regression-algorithm"></a>Implémentation de l'algorithme MLR (Microsoft Linear Regression)  
  L'algorithme MDT (Microsoft Decision Trees) peut être utilisé pour de nombreuses tâches : régression linéaire, classification ou analyse d'associations. Pour implémenter cet algorithme en vue d'une régression linéaire, les paramètres de l'algorithme sont contrôlés pour restreindre la croissance de l'arborescence et conserver toutes les données du modèle dans un nœud unique. En d'autres termes, bien que la régression linéaire soit basée sur un arbre de décision, l'arborescence contient uniquement une racine unique et aucune branche : toutes les données résident dans le nœud racine.  
@@ -94,6 +82,6 @@ L’algorithme MLR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Linear 
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme de régression linéaire Microsoft](../../analysis-services/data-mining/microsoft-linear-regression-algorithm.md)   
  [Exemples de requêtes de modèle de régression linéaire](../../analysis-services/data-mining/linear-regression-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles de régression linéaire &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-linear-regression-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles de régression linéaire & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-linear-regression-models-analysis-services-data-mining.md)  
   
   

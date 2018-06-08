@@ -1,40 +1,23 @@
 ---
-title: "Référence technique de Microsoft Logistic Regression algorithme | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- logistic regression [Analysis Services]
-- MAXIMUM_INPUT_ATTRIBUTES parameter
-- HOLDOUT_PERCENTAGE parameter
-- MAXIMUM_OUTPUT_ATTRIBUTES parameter
-- MAXIMUM_STATES parameter
-- SAMPLE_SIZE parameter
-- regression algorithms [Analysis Services]
-- HOLDOUT_SEED parameter
-ms.assetid: cf32f1f3-153e-476f-91a4-bb834ec7c88d
-caps.latest.revision: 
-author: Minewiskan
+title: Référence technique de Microsoft Logistic Regression algorithme | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fd3dee20e57342542e271cfb3f153b1c35c0764d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: ffe5299530f75706a5d7c348bd39d5cc2e883641
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-logistic-regression-algorithm-technical-reference"></a>Références techniques relatives à l’algorithme MLR (Microsoft Logistic Regression)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’algorithme MLR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Logistic Regression) est une variante de l’algorithme MNN ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network), où le paramètre *HIDDEN_NODE_RATIO* 0. Ce paramètre crée un modèle de réseau neuronal qui ne contient pas de couche masquée et qui, par conséquent, est équivalent à la régression logistique.  
+  L’algorithme MLR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Logistic Regression) est une variante de l’algorithme MNN ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network), où le paramètre *HIDDEN_NODE_RATIO* 0. Ce paramètre crée un modèle de réseau neuronal qui ne contient pas de couche masquée et qui, par conséquent, est équivalent à la régression logistique.  
   
 ## <a name="implementation-of-the-microsoft-logistic-regression-algorithm"></a>Implémentation de l'algorithme MLR (Microsoft Logistic Regression)  
  Supposons que la colonne prédictible contient uniquement deux états, mais que vous souhaitez tout de même effectuer une analyse de régression, en associant les colonnes d'entrée à la probabilité que la colonne prédictible contiendra un état spécifique. Le diagramme suivant représente les résultats obtenus en attribuant les valeurs 1 et 0 aux états de la colonne prédictible, en calculant la probabilité que la colonne contiendra un état spécifique et en effectuant une régression linéaire par rapport à une variable d'entrée.  
@@ -162,7 +145,7 @@ WHERE NODE_TYPE = 23
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme Microsoft Logistic Regression](../../analysis-services/data-mining/microsoft-logistic-regression-algorithm.md)   
  [Exemples de requêtes de modèle de régression linéaire](../../analysis-services/data-mining/linear-regression-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles de régression logistique &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-logistic-regression-models.md)   
+ [Contenu du modèle d’exploration de données pour les modèles de régression logistique & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-logistic-regression-models.md)   
  [Algorithme MNN (Microsoft Neural Network)](../../analysis-services/data-mining/microsoft-neural-network-algorithm.md)  
   
   

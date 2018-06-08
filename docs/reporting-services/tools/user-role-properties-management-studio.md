@@ -1,28 +1,27 @@
 ---
-title: "Propriétés de rôle d’utilisateur (Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de rôle d’utilisateur (Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.reportserver.userroleproperties.f1
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.reportserver.userroleproperties.f1
 ms.assetid: c8b22236-a8b1-4e15-b1ff-4e1909b602d3
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1f5f631a74f1dfe77e5b7ee8c1f42f7335523576
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 5c000e40c7ec5633a24d7edb018a028774ca20a8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="user-role-properties-management-studio"></a>Propriétés de rôle d'utilisateur (Management Studio)
   Utilisez cette page pour afficher les tâches qui figurent dans une définition de rôle au niveau élément. Vous pouvez également utiliser cette page pour modifier la liste des tâches ou la description d'un rôle.  

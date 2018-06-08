@@ -1,16 +1,16 @@
 ---
-title: "Fonctionnalités du moteur de base de données supprimées dans SQL Server 2016 | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités du moteur de base de données supprimées dans SQL Server 2016 | Microsoft Docs
+ms.custom: ''
 ms.date: 02/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-engine
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - VIA protocol
 - unsupported features [SQL Server]
@@ -35,16 +35,15 @@ helpviewer_keywords:
 - FASTFIRSTROW hint
 - SET DISABLE_DEF_CNST_CHK
 ms.assetid: d686cdf0-d11d-4dba-9ec8-de1a5f189f25
-caps.latest.revision: "100"
+caps.latest.revision: 100
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 311680a5f652c70e6e834e99d563e189d4638cea
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 024986a082bee4e823d66fdb588e65fc6d4f4c88
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="discontinued-database-engine-functionality-in-sql-server-2016"></a>Fonctionnalités du moteur de base de données supprimées dans SQL Server 2016
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]

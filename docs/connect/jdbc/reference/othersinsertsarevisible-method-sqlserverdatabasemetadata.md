@@ -1,30 +1,29 @@
 ---
-title: "Méthode othersInsertsAreVisible (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode othersInsertsAreVisible (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.othersInsertsAreVisible
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.othersInsertsAreVisible
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: aa32f059-bb59-47f8-bac1-292f314df730
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 723cd3396fed4c1cf0a5d52e3f8810153a4ffb92
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 87076f10ba9944197f5bd87c020740c6992d408a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="othersinsertsarevisible-method-sqlserverdatabasemetadata"></a>Méthode othersInsertsAreVisible (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

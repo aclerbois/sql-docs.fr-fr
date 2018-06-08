@@ -1,16 +1,12 @@
 ---
-title: sys.dm_fts_index_keywords (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_fts_index_keywords (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_fts_index_keywords
@@ -24,16 +20,15 @@ helpviewer_keywords:
 - full-text search [SQL Server], viewing keywords
 - troubleshooting [SQL Server], full-text search
 ms.assetid: fce7b2a1-7e74-4769-86a8-c77c7628decd
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 687a81711efdaf98f142a0d314db94a53cc74371
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: fffcfdc4a7db8fafbe58b0abd914ce611edf3732
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmftsindexkeywords-transact-sql"></a>sys.dm_fts_index_keywords (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -53,17 +48,17 @@ sys.dm_fts_index_keywords( DB_ID('database_name'), OBJECT_ID('table_name') )
 ```  
   
 ## <a name="arguments"></a>Arguments  
- db_id('*database_name*')  
- Un appel à la [DB_ID()](../../t-sql/functions/db-id-transact-sql.md) (fonction). Cette fonction accepte un nom de base de données et retourne l’ID de la base de données, ce qui **sys.dm_fts_index_keywords** utilise pour rechercher la base de données spécifié. Si *nom_base_de_données* est omis, l’ID de base de données actuel est retourné.  
+ DB_ID ('*nom_base_de_données*')  
+ Un appel à la [DB_ID()](../../t-sql/functions/db-id-transact-sql.md) (fonction). Cette fonction accepte un nom de base de données et retourne l’ID de la base de données, ce qui **sys.dm_fts_index_keywords** utilise pour rechercher la base de données spécifié. Si *database_name* est omis, la fonction retourne l’ID de la base de données active.  
   
- object_id('*table_name*')  
+ object_id ('*table_name*')  
  Un appel à la [OBJECT_ID()](../../t-sql/functions/object-id-transact-sql.md) (fonction). Cette fonction accepte un nom de table et retourne l'ID de la table contenant l'index de recherche en texte intégral à examiner.  
   
 ## <a name="table-returned"></a>Table retournée  
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**keyword**|**nvarchar(4000)**|La représentation hexadécimale du mot clé stocké à l’intérieur de l’index de recherche en texte intégral.<br /><br /> Remarque : OxFF représente le caractère spécial qui indique la fin d’un fichier ou un jeu de données.|  
+|**Mot clé**|**nvarchar(4000)**|La représentation hexadécimale du mot clé stocké à l’intérieur de l’index de recherche en texte intégral.<br /><br /> Remarque : OxFF représente le caractère spécial qui indique la fin d’un fichier ou un jeu de données.|  
 |**display_term**|**nvarchar(4000)**|Format explicite du mot clé. Ce format est dérivé du format hexadécimal.<br /><br /> Remarque : Le **display_term** valeur de OxFF est « Fin de fichier ».|  
 |**column_id**|**int**|ID de la colonne à partir de laquelle le mot clé actuel a été indexé en texte intégral.|  
 |**document_count**|**int**|Nombre de documents ou de lignes contenant le terme actuel.|  
@@ -98,7 +93,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Recherche en texte intégral et fonctions et vues de gestion dynamique de la recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
+ [Recherche en texte intégral et les fonctions et vues de gestion dynamique de la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
  [Recherche en texte intégral](../../relational-databases/search/full-text-search.md)   
  [sys.dm_fts_index_keywords_by_document &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md)  
   

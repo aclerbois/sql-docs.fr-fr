@@ -1,33 +1,32 @@
 ---
-title: "Ajouter ou remplacer un témoin de mise en miroir de base de données (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Ajouter ou remplacer un témoin de mise en miroir de base de données (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - witness [SQL Server], establishing
 - database mirroring [SQL Server], witness
 ms.assetid: 4b5ecffd-f025-4ab7-b69d-8958c6477127
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf344815c90bbabcab08d75880fb2605f6683a36
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 592d34b19b73b9cd32774b848f6e2fac609b14aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-replace-a-database-mirroring-witness-sql-server-management-studio"></a>Ajouter ou remplacer un témoin de mise en miroir de base de données (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Si les points de terminaison de mise en miroir de base de données utilisent l’authentification Windows, vous pouvez utiliser [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour ajouter ou remplacer un témoin. Lorsqu'un témoin est ajouté dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] , la session passe en mode haute sécurité avec basculement automatique.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Si les points de terminaison de mise en miroir de base de données utilisent l'authentification Windows, vous pouvez utiliser [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour ajouter ou remplacer un témoin. Lorsqu'un témoin est ajouté dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] , la session passe en mode haute sécurité avec basculement automatique.  
   
 > [!NOTE]  
 >  Nous vous recommandons vivement de placer le témoin sur un ordinateur distinct de celui des partenaires. Le compte de service utilisé par le témoin doit être dans le même domaine que les comptes de service utilisés par les instances de serveur principal et miroir, ou il doit être situé dans un domaine approuvé.  

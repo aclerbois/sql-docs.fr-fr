@@ -1,34 +1,30 @@
 ---
-title: "Missing Column Statistics, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Missing Column Statistics, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Missing Column Statistics event class
 ms.assetid: b9321143-3f29-4a19-8471-7085669282ef
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c02c0efc51189cc355c980970e8927f1bd74b2c4
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: eace3d9f0c12c8b0d51514dfc99129c1d366c30f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="missing-column-statistics-event-class"></a>Missing Column Statistics, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Missing Column Statistics indique que les statistiques de colonne qui auraient pu être utiles pour l'optimiseur ne sont pas disponibles.  
+  La classe d'événements Missing Column Statistics indique que les statistiques de colonne qui auraient pu être utiles pour l'optimiseur ne sont pas disponibles.  
   
  En analysant la classe d'événements Missing Column Statistics, vous pouvez déterminer si des statistiques manquent pour une colonne utilisée par une requête. Si tel est le cas, l'optimiseur choisit un plan de requête moins efficace que prévu.  
   

@@ -1,34 +1,32 @@
 ---
-title: "Activer les conditions préalables pour les FileTables | Microsoft Docs"
-ms.custom: 
+title: Activer les conditions préalables pour les FileTables | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: blob
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-blob
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FileTables [SQL Server], prerequisites
 ms.assetid: 6286468c-9dc9-4eda-9961-071d2a36ebd6
-caps.latest.revision: 
+caps.latest.revision: 25
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ce0f4c7dfaf36fffd79bd6dc27e148fa2c6b29e7
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 51961e89d1c7301ef938f634d460577dffb992f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-the-prerequisites-for-filetable"></a>Activer les conditions préalables pour les FileTables
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Décrit la manière de satisfaire aux conditions préalables en vue de la création et de l'utilisation de FileTables.  
+  Décrit la manière de satisfaire aux conditions préalables en vue de la création et de l'utilisation de FileTables.  
   
 ##  <a name="EnablePrereq"></a> Activation des conditions préalables pour les FileTables  
  Pour activer les conditions préalables en vue de créer et d'utiliser les FileTables, activez les éléments suivants :  

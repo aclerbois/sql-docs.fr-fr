@@ -1,15 +1,14 @@
 ---
-title: "Recherche d’imprimantes installées à l’aide de la tâche de script | Microsoft Docs"
-ms.custom: 
+title: Recherche d’imprimantes installées à l’aide de la tâche de script | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-scripting-task-examples
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - finding printers [SQL Server]
 - Script task [Integration Services], printers
 ms.assetid: 50a55014-e2c3-4ecd-84e1-3e877c55a260
-caps.latest.revision: 
+caps.latest.revision: 32
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ea4341c277292d52270d07dfaf03a017d42b42c5
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: cc93afccb18193412047e30694ead989cdb666a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="finding-installed-printers-with-the-script-task"></a>Recherche d'imprimantes installées à l'aide de la tâche de script
   La destination finale des données transformées par les packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est souvent un rapport imprimé. L’espace de noms **System.Drawing.Printing** dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] fournit des classes pour utiliser des imprimantes.  

@@ -1,30 +1,27 @@
 ---
 title: Notions de base ADOX | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ADOX, fundamentals
 ms.assetid: 954476fc-5f72-4ada-ace5-d9acb27d18f8
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 69b460a0d18501f89f8d9f7ab4b83b5251bf38e9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6d2798c3d8cfeaa2680a794ceb79dfa26f32fbdb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adox-fundamentals"></a>Notions de base ADOX
 Microsoft® ActiveX® Data Objects Extensions pour le langage de définition de données et de sécurité (ADOX) est une extension pour les objets ADO et le modèle de programmation. ADOX inclut des objets pour la création de schémas et de modification, ainsi que de sécurité. S’agissant d’une approche basée sur l’objet de manipulation de schéma, vous pouvez écrire du code qui fonctionne sur des données de différentes sources, quelle que soit les différences dans les syntaxes natives.  

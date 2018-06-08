@@ -1,17 +1,15 @@
 ---
 title: ALTER DATABASE SCOPED CONFIGURATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 05/142018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - ALTER_DATABASE_SCOPED_CONFIGURATION
 - ALTER_DATABASE_SCOPED_CONFIGURATION_TSQL
@@ -24,21 +22,20 @@ helpviewer_keywords:
 - ALTER DATABASE SCOPED CONFIGURATION statement
 - configuration [SQL Server], ALTER DATABASE SCOPED CONFIGURATION statement
 ms.assetid: 63373c2f-9a0b-431b-b9d2-6fa35641571a
-caps.latest.revision: 
+caps.latest.revision: 32
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f9eb68c07f9e163dfba699627e41ea825b041540
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 1fc2b483ff3a3b4a60d02c281041bb403485aaa2
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="alter-database-scoped-configuration-transact-sql"></a>ALTER DATABASE SCOPED CONFIGURATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
-  Cette instruction active plusieurs paramètres de configuration de base de données au niveau de **chaque base de données**. Cette instruction est disponible dans [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] et dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Ces paramètres sont les suivants :  
+  Cette instruction active plusieurs paramètres de configuration de base de données au niveau de **chaque base de données**. Cette instruction est disponible dans [!INCLUDE[sssdsfull](../../includes/sssdsfull-md.md)] et dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Ces paramètres sont les suivants :  
   
 - Effacer le cache de procédures.  
 - Affecter au paramètre MAXDOP une valeur arbitraire (1, 2, etc.) adaptée à la base de données primaire et affecter une autre valeur (par exemple, 0) à toutes les bases de données secondaires utilisées (par exemple, pour les requêtes de rapport).  
@@ -46,8 +43,11 @@ ms.lasthandoff: 01/25/2018
 - Activer ou désactiver la détection de paramètres au niveau de la base de données.
 - Activer ou désactiver les correctifs d’optimisation des requêtes au niveau de la base de données.
 - Activer ou désactiver le cache d’identité au niveau de la base de données
-- Activer ou désactiver un stub de plan compilé à stocker dans le cache lorsqu’un lot est compilé pour la première fois    
-  
+- Activer ou désactiver un stub de plan compilé à stocker dans le cache lorsqu’un lot est compilé pour la première fois  
+- Activer ou désactiver la collecte de statistiques d’exécution pour les modules T-SQL compilés en mode natif.
+- Activer ou désactiver les options par défaut « online » pour les instructions DDL qui prennent en charge la syntaxe ONLINE=.
+- Activer ou désactiver les options par défaut « resumable » pour les instructions DDL qui prennent en charge la syntaxe RESUMABLE=. 
+
  ![Icône de lien](../../database-engine/configure-windows/media/topic-link.gif "Icône de lien") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
 ## <a name="syntax"></a>Syntaxe  
@@ -69,6 +69,10 @@ ALTER DATABASE SCOPED CONFIGURATION
     | QUERY_OPTIMIZER_HOTFIXES = { ON | OFF | PRIMARY}
     | IDENTITY_CACHE = { ON | OFF }
     | OPTIMIZE_FOR_AD_HOC_WORKLOADS = { ON | OFF }
+    | XTP_PROCEDURE_EXECUTION_STATISTICS = { ON | OFF } 
+    | XTP_QUERY_EXECUTION_STATISTICS = { ON | OFF }    
+    | ELEVATE_ONLINE = { OFF | WHEN_SUPPORTED | FAIL_UNSUPPORTED } 
+    | ELEVATE_RESUMABLE = { OFF | WHEN_SUPPORTED | FAIL_UNSUPPORTED }  
 }  
 ```  
   
@@ -133,7 +137,7 @@ Efface le contenu du cache de procédures (ou cache du plan) pour la base de don
 
 IDENTITY_CACHE **=** { **ON** | OFF }  
 
-**S’applique à :** [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)] 
+**S’applique à :** [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] 
 
 Active ou désactive le cache d’identité au niveau de la base de données. La valeur par défaut est **ON**. La mise en cache d’identité est utilisée pour améliorer les performances INSERT sur les tables comprenant des colonnes d’identité. Pour éviter les écarts dans les valeurs des colonnes d’identité si un serveur redémarre de façon inattendue ou bascule vers un serveur secondaire, désactivez l’option IDENTITY_CACHE. Cette option est similaire à [l’indicateur de trace 272](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) existant, sauf qu’elle peut être définie au niveau de la base de données et non uniquement au niveau du serveur.   
 
@@ -142,9 +146,61 @@ Active ou désactive le cache d’identité au niveau de la base de données. La
 
 OPTIMIZE_FOR_AD_HOC_WORKLOADS **=** { ON | **OFF** }  
 
-**S’applique à** : [!INCLUDE[ssSDS](../../includes/sssds-md.md)] 
+**S’applique à** : [!INCLUDE[sssdsfull](../../includes/sssdsfull-md.md)] 
 
 Active ou désactive un stub de plan compilé à stocker dans le cache lorsqu’un lot est compilé pour la première fois. La valeur par défaut est OFF. Une fois que la configuration étendue à la base de données OPTIMIZE_FOR_AD_HOC_WORKLOADS est activée pour une base de données, un stub de plan compilé est stocké dans le cache lorsqu’un lot est compilé pour la première fois. Les stubs de plan ont un encombrement mémoire moins important que celui des plans compilés complets.  Si un lot est compilé ou réexécuté, le stub de plan compilé est supprimé et remplacé par un plan compilé complet.
+
+XTP_PROCEDURE_EXECUTION_STATISTICS  **=** { ON | **OFF** }  
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] 
+
+Active ou désactive la collecte de statistiques d’exécution au niveau du module pour les modules T-SQL compilés en mode natif dans la base de données actuelle. La valeur par défaut est OFF. Les statistiques d’exécution sont disponibles dans [sys.dm_exec_procedure_stats](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md).
+
+Les statistiques d’exécution au niveau du module pour les modules T-SQL compilés en mode natif sont collectées si cette option est activée (ON) ou si la collecte des statistiques est activée avec [sp_xtp_control_proc_exec_stats](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-proc-exec-stats-transact-sql.md).
+
+XTP_QUERY_EXECUTION_STATISTICS  **=** { ON | **OFF** }  
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]
+
+Active ou désactive la collecte de statistiques d’exécution au niveau de l’instruction pour les modules T-SQL compilés en mode natif dans la base de données actuelle. La valeur par défaut est OFF. Les statistiques d’exécution sont disponibles dans [sys.dm_exec_query_stats](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md) et dans le [magasin des requêtes](../../relational-databases/performance/monitoring-performance-by-using-the-query-store.md).
+
+Les statistiques d’exécution au niveau de l’instruction pour les modules T-SQL compilés en mode natif sont collectées si cette option est activée (ON) ou si la collecte des statistiques est activée avec [sp_xtp_control_query_exec_stats](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-query-exec-stats-transact-sql.md).
+
+Pour plus d’informations sur la surveillance des performances des modules T-SQL compilés en mode natif, consultez [Surveillance des performances des procédures stockées compilées en mode natif](../../relational-databases/in-memory-oltp/monitoring-performance-of-natively-compiled-stored-procedures.md).
+
+ELEVATE_ONLINE = { OFF | WHEN_SUPPORTED | FAIL_UNSUPPORTED }
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] (fonctionnalité en préversion publique)
+
+Permet de sélectionner les options destinées à forcer le moteur à élever automatiquement les opérations prises en charge pour une exécution en ligne. La valeur par défaut est OFF, ce qui signifie que les opérations ne sont pas élevées pour une exécution en ligne, sauf si cela est spécifié dans l’instruction. [sys.database_scoped_configurations](../../relational-databases/system-catalog-views/sys-database-scoped-configurations-transact-sql.md) reflète la valeur actuelle de ELEVATE_ONLINE. Ces options s’appliquent uniquement aux opérations généralement prises en charge pour une exécution en ligne.  
+
+FAIL_UNSUPPORTED
+
+Cette valeur élève toutes les opérations DDL prises en charge pour une exécution en ligne (option ONLINE). Les opérations qui ne prennent pas en charge l’exécution en ligne échouent et génèrent un avertissement.
+
+WHEN_SUPPORTED  
+
+Cette valeur élève les opérations qui prennent en charge l’option ONLINE. Les opérations qui ne prennent pas en charge une exécution en ligne sont exécutées en mode hors connexion.
+
+> [!NOTE]
+> Vous pouvez remplacer le paramètre par défaut en envoyant une instruction avec l’option ONLINE spécifiée. 
+ 
+ELEVATE_RESUMABLE= { OFF | WHEN_SUPPORTED | FAIL_UNSUPPORTED }
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] (fonctionnalité en préversion publique)
+
+Permet de sélectionner des options pour forcer le moteur à élever automatiquement les opérations prises en charge pour une exécution pouvant être reprise. La valeur par défaut est OFF, ce qui signifie que les opérations ne sont pas élevées pour une exécution pouvant être reprise, sauf si cela est spécifié dans l’instruction. [sys.database_scoped_configurations](../../relational-databases/system-catalog-views/sys-database-scoped-configurations-transact-sql.md) reflète la valeur actuelle de ELEVATE_RESUMABLE. Ces options s’appliquent uniquement aux opérations qui sont généralement prises en charge pour une exécution pouvant être reprise. 
+
+FAIL_UNSUPPORTED
+
+Cette valeur élève toutes les opérations DDL prises en charge pour une exécution pouvant être reprise (option RESUMABLE). Les opérations qui ne prennent pas en charge l’exécution pouvant être reprise échouent et génèrent un avertissement.
+
+WHEN_SUPPORTED  
+
+Cette valeur élève les opérations qui prennent en charge l’option RESUMABLE. Les opérations qui ne prennent pas en charge l’exécution pouvant être reprise sont exécutées en tant que telles.  
+
+> [!NOTE]
+> Vous pouvez remplacer le paramètre par défaut en envoyant une instruction avec l’option RESUMABLE spécifiée. 
 
 ##  <a name="Permissions"></a> Permissions  
  Nécessite ALTER ANY DATABASE SCOPE CONFIGURATION   
@@ -187,6 +243,15 @@ dans la base de données. Cette autorisation peut être accordée par un utilisa
 **DacFx**  
   
  Étant donné qu’ALTER DATABASE SCOPED CONFIGURATION est une nouvelle fonctionnalité d’Azure SQL Database et de SQL Server 2016 qui affecte le schéma de base de données, les exportations du schéma (avec ou sans données) ne peuvent pas être importées dans une version antérieure de SQL Server, comme [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] ou [!INCLUDE[ssSQLv14](../../includes/sssqlv14-md.md)]. Par exemple, une exportation vers un [DACPAC](https://msdn.microsoft.com/library/ee210546.aspx#Anchor_3) ou un [BACPAC](https://msdn.microsoft.com/library/ee210546.aspx#Anchor_4) à partir d’une base de données [!INCLUDE[ssSDS](../../includes/sssds-md.md)] ou [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] ayant utilisé cette nouvelle fonctionnalité ne peut pas être importée dans un serveur de niveau inférieur.  
+
+**ELEVATE_ONLINE** 
+
+Cette option s’applique uniquement aux instructions DDL qui prennent en charge la syntaxe WITH(ONLINE=). Les index XML ne sont pas affectés. 
+
+**ELEVATE_RESUMABLE**
+
+Cette option s’applique uniquement aux instructions DDL qui prennent en charge la syntaxe WITH(ONLINE=). Les index XML ne sont pas affectés. 
+
   
 ## <a name="metadata"></a>Métadonnées  
 
@@ -289,6 +354,26 @@ Cet exemple permet à un stub de plan compilé d’être stocké dans le cache l
 ALTER DATABASE SCOPED CONFIGURATION SET OPTIMIZE_FOR_AD_HOC_WORKLOADS = ON;
 ```
 
+### <a name="i--set-elevateonline"></a>I.  Définir ELEVATE_ONLINE 
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] (fonctionnalité en préversion publique)
+ 
+Cet exemple définit ELEVATE_ONLINE sur FAIL_UNSUPPORTED.  tsqlCopy 
+
+```sql
+ALTER DATABASE SCOPED CONFIGURATION SET ELEVATE_ONLINE=FAIL_UNSUPPORTED ;
+```  
+
+### <a name="j-set-elevateresumable"></a>J. Définir ELEVATE_RESUMABLE 
+
+**S’applique à** : [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] (fonctionnalité en préversion publique)
+
+Cet exemple définit ELEVEATE_RESUMABLE sur WHEN_SUPPORTED.  tsqlCopy 
+
+```sql
+ALTER DATABASE SCOPED CONFIGURATION SET ELEVATE_RESUMABLE=WHEN_SUPPORTED ;  
+``` 
+
 ## <a name="additional-resources"></a>Ressources supplémentaires
 
 ### <a name="maxdop-resources"></a>Ressources MAXDOP 
@@ -307,6 +392,14 @@ ALTER DATABASE SCOPED CONFIGURATION SET OPTIMIZE_FOR_AD_HOC_WORKLOADS = ON;
 * [Indicateurs de trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md)
 * [Modèle de service de l’indicateur de trace 4199 pour les correctifs de l’optimiseur de requête SQL Server](https://support.microsoft.com/en-us/kb/974006)
 
+### <a name="elevateonline-resources"></a>Ressources ELEVATE_ONLINE 
+
+- [Instructions pour les opérations d’index en ligne](../../relational-databases/indexes/guidelines-for-online-index-operations.md) 
+
+### <a name="elevateresumable-resources"></a>Ressources ELEVATE_RESUMABLE 
+
+- [Instructions pour les opérations d’index en ligne](../../relational-databases/indexes/guidelines-for-online-index-operations.md) 
+ 
 ## <a name="more-information"></a>Informations complémentaires  
  [sys.database_scoped_configurations](../../relational-databases/system-catalog-views/sys-database-scoped-configurations-transact-sql.md)   
  [sys.configurations](../../relational-databases/system-catalog-views/sys-configurations-transact-sql.md)   

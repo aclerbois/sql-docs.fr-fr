@@ -1,32 +1,29 @@
 ---
-title: "L’écriture de ODBC 3.x pilotes | Documents Microsoft"
-ms.custom: 
+title: L’écriture de ODBC 3.x pilotes | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading drivers [ODBC]
 - ODBC drivers [ODBC], upgrading
 - backward compatibility [ODBC], drivers
 - compatibility [ODBC], drivers
 ms.assetid: 9b75f59b-623f-4711-9ca2-e751b3622e00
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b73a32d607bb2fc2c1cd2392ab4d1b436e7ed94d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f9b926d45e6556b53957ecd2934d7068418f3101
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="writing-odbc-3x-drivers"></a>L’écriture ODBC 3.x pilotes
 Le tableau suivant présente la prise en charge de la fonction dans une ODBC 3. *x* pilote et une application ODBC et le mappage effectuée par le Gestionnaire de pilotes lorsque les fonctions sont appelées par rapport à un ODBC 3. *x* pilote.  
@@ -60,7 +57,7 @@ Le tableau suivant présente la prise en charge de la fonction dans une ODBC 3. 
 |**SQLError**|non|Aucun [1]|Oui|  
 |**SQLExecDirect**|Oui|Oui|non|  
 |**SQLExecute**|Oui|Oui|non|  
-|**SQLExtendedFetch**|Oui|non|non|  
+|**SQLExtendedFetch**|Oui|Non|non|  
 |**SQLFetch**|Oui|Oui|non|  
 |**SQLFetchScroll**|Oui|Oui|non|  
 |**SQLForeignKeys**|Oui|Oui|non|  
@@ -87,7 +84,7 @@ Le tableau suivant présente la prise en charge de la fonction dans une ODBC 3. 
 |**SQLNumParams**|Oui|Oui|non|  
 |**SQLNumResultCols**|Oui|Oui|non|  
 |**SQLParamData**|Oui|Oui|non|  
-|**SQLParamOptions**|non|non|Oui|  
+|**SQLParamOptions**|non|Non|Oui|  
 |**SQLPrepare**|Oui|Oui|non|  
 |**SQLPrimaryKeys**|Oui|Oui|non|  
 |**SQLProcedureColumns**|Oui|Oui|non|  
@@ -101,7 +98,7 @@ Le tableau suivant présente la prise en charge de la fonction dans une ODBC 3. 
 |**SQLSetDescRec**|Oui|Oui|non|  
 |**SQLSetEnvAttr**|Oui|Oui|non|  
 |**SQLSetPos**|Oui|Oui|non|  
-|**SQLSetParam**|non|non|Oui|  
+|**SQLSetParam**|non|Non|Oui|  
 |**SQLSetScrollOption**|Oui|Oui|non|  
 |**SQLSetStmtAttr**|Oui|Oui|non|  
 |**SQLSetStmtOption**|Aucun [5]|Aucun [1]|Oui|  

@@ -1,31 +1,30 @@
 ---
-title: "Propriétés du réplica de disponibilité (page Général) | Microsoft Docs"
-ms.custom: 
+title: Propriétés du réplica de disponibilité (page Général) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilityreplicaproperties.general.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilityreplicaproperties.general.f1
 ms.assetid: 8318fefb-e045-4fab-8507-e1951fc7cec6
-caps.latest.revision: "14"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44df0c5a019f46b2a085dc1fbfeb85148439cd85
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 1bb7e645762161e6d49bfe1faef763884c3c8d03
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769445"
 ---
 # <a name="availability-replica-properties-general-page"></a>Propriétés du réplica de disponibilité (page Général)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez cette boîte de dialogue pour afficher les propriétés d’un réplica de disponibilité.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez cette boîte de dialogue pour afficher les propriétés d’un réplica de disponibilité.  
   
 ## <a name="task-list"></a>Liste des tâches  
  **Pour afficher les propriétés d'un réplica de disponibilité**  

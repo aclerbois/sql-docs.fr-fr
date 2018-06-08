@@ -1,36 +1,33 @@
 ---
-title: "Transactions différées (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Transactions différées (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - I/O [SQL Server], database recovery
 - restoring pages [SQL Server]
 - deferred transactions
 - modifying transaction deferred state
 ms.assetid: 6fc0f9b6-d3ea-4971-9f27-d0195d1ff718
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 990768fa64b5da13d633c28ae64a0ab0c95e78b7
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: dbfd471b4f6e5a7d7fa4f06ec317d8c2259e7928
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deferred-transactions-sql-server"></a>Transactions différées (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise, une transaction endommagée est différée si les données requises par la restauration (annulation) sont hors connexion durant le démarrage de la base de données. Une *transaction différée* est une transaction qui n’est pas validée lorsque la phase de restauration par progression s’achève et dont la restauration ne peut pas être annulée en raison d’une erreur. Si la transaction ne peut pas être annulée, elle est différée.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise, une transaction endommagée est différée si les données requises par la restauration (annulation) sont hors connexion durant le démarrage de la base de données. Une *transaction différée* est une transaction qui n’est pas validée lorsque la phase de restauration par progression s’achève et dont la restauration ne peut pas être annulée en raison d’une erreur. Si la transaction ne peut pas être annulée, elle est différée.  
   
 > [!NOTE]  
 >  Les transactions endommagées sont différées uniquement dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Enterprise. Pour les autres éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], une transaction endommagée peut entraîner l'échec du démarrage.  

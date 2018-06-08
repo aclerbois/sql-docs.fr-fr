@@ -1,35 +1,31 @@
 ---
-title: "Les propriétés TCP/IP (onglet des adresses IP) | Documents Microsoft"
-ms.custom: 
+title: Les propriétés TCP/IP (onglet des adresses IP) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ports [SQL Server], listening on
 - listening [SQL Server], on ports
 ms.assetid: 4c17ed45-9da7-4bec-bce6-970109fe7365
-caps.latest.revision: 
+caps.latest.revision: 47
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 78513a9ebe1a0418a5dac367dc49b790d3197019
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: 4371bbb3c202087b88bb5b29ce7ea5976cd6bdf7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tcpip-properties-ip-addresses-tab"></a>Propriétés TCP/IP (onglet Adresses IP)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-La boîte de dialogue **Propriétés TCP/IP (onglet Adresses IP)** permet de configurer les options du protocole TCP/IP pour une adresse IP spécifique. Seules les options **Ports TCP dynamiques** et **Port TCP** peuvent être configurées pour toutes les adresses en une seule fois en sélectionnant **IPAll**.  
+  La boîte de dialogue **Propriétés TCP/IP (onglet Adresses IP)** permet de configurer les options du protocole TCP/IP pour une adresse IP spécifique. Seules les options **Ports TCP dynamiques** et **Port TCP** peuvent être configurées pour toutes les adresses en une seule fois en sélectionnant **IPAll**.  
   
  Les modifications prennent effet lors du redémarrage de SQL Server. Pour obtenir des informations sur le démarrage et l’arrêt du service SQL Server Browser, consultez [Démarrer et arrêter le service SQL Server Browser](../../database-engine/configure-windows/start-stop-pause-resume-restart-sql-server-services.md).  
   
@@ -67,9 +63,9 @@ La boîte de dialogue **Propriétés TCP/IP (onglet Adresses IP)** permet de con
 ## <a name="additional-topics-in-books-online"></a>Autres rubriques dans la documentation en ligne  
  Recherchez par exemple les rubriques **Configurer un serveur pour écouter un port TCP spécifique (Gestionnaire de configuration SQL Server)** et **Configurer le moteur de base de données de manière à écouter sur plusieurs ports TCP**dans MSDN.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Choix d'un protocole réseau](https://msdn.microsoft.com/library/ms187892(v=sql.120).aspx)   
- [Création d’une chaîne de connexion valide à l’aide de TCP/IP](creating-a-valid-connection-string-using-tcp-ip.md)   
+ [Création d’une chaîne de connexion valide avec TCP/IP](creating-a-valid-connection-string-using-tcp-ip.md)   
  [Service SQL Server Browser](https://msdn.microsoft.com/library/ms181087(v=sql.130).aspx)  
   
   

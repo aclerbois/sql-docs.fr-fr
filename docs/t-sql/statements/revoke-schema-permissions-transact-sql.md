@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur un schéma (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur un schéma (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - schemas [SQL Server], permissions
 - permissions [SQL Server], schemas
 ms.assetid: a1fabf35-1f42-48db-b0b8-7181f413ba3a
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 09bf03fc40529e2975727ae1e7068a18c35b6002
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6f9aada4f61b37aa47f8b39017a0767e3e0de1be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="revoke-schema-permissions-transact-sql"></a>REVOKE - Révoquer les autorisations sur un schéma (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -58,8 +55,8 @@ REVOKE [ GRANT OPTION FOR ] permission  [ ,...n ]
 > [!IMPORTANT]  
 >  Si le principal possède l'autorisation spécifiée sans l'option GRANT, l'autorisation elle-même sera révoquée.  
   
- ON SCHEMA **::** schema*_name*  
- Indique le schéma sur lequel l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
+ ON SCHEMA **::** schema *_name*  
+ Indique le schéma sur lequel l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
   
  *database_principal*  
  Spécifie le principal pour lequel l'autorisation est révoquée. Il peut s'agir :  

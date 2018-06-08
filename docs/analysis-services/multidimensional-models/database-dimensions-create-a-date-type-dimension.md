@@ -1,38 +1,23 @@
 ---
-title: "Créer une Dimension de type Date | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- time dimensions [Analysis Services]
-- dimensions [Analysis Services], time
-- adding time intelligence
-- server time dimensions [Analysis Services]
-- calendars [Analysis Services]
-- time intelligence [Analysis Services]
-ms.assetid: 6d692856-4b01-4dca-a650-f97ac220c114
-caps.latest.revision: 
-author: Minewiskan
+title: Créer une Dimension de type Date | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0d930adaecb3d2148a07a54797b902162c6d2a89
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 957f47bbb185f6d9029b9dfbb036aa3738448098
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="database-dimensions---create-a-date-type-dimension"></a>Dimensions de base de données : création d’une Dimension de type Date
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une dimension de temps est un type de dimension dont les attributs représentent des périodes, telles que des années, des semestres, des trimestres, des mois et des jours. Les périodes d'une dimension de temps fournissent des niveaux de granularité de temps pour l'analyse et les rapports. Les attributs sont organisés en hiérarchies, la granularité de la dimension de temps est largement déterminée par les besoins commerciaux et les besoins en rapports pour les données historiques. Par exemple, la majorité des données financières et de vente dans les applications décisionnelles utilisent la granularité mensuelle ou trimestrielle.  
+  Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une dimension de temps est un type de dimension dont les attributs représentent des périodes, telles que des années, des semestres, des trimestres, des mois et des jours. Les périodes d'une dimension de temps fournissent des niveaux de granularité de temps pour l'analyse et les rapports. Les attributs sont organisés en hiérarchies, la granularité de la dimension de temps est largement déterminée par les besoins commerciaux et les besoins en rapports pour les données historiques. Par exemple, la majorité des données financières et de vente dans les applications décisionnelles utilisent la granularité mensuelle ou trimestrielle.  
   
  En règle générale, les cubes [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] contiennent une dimension de temps sous une forme ou une autre. Un cube peut contenir plusieurs dimensions de temps ou plusieurs hiérarchies d'une même dimension de temps, selon la granularité des données et les besoins en rapports. Toutefois, les cubes ne nécessitent pas tous une dimension de temps. Certaines applications OLAP, telles que le calcul des coûts basés sur les activités, ne nécessitent pas une dimension de temps, car le calcul des coûts dans une dimension basée sur l'activité repose sur l'activité, et non sur le temps.  
   

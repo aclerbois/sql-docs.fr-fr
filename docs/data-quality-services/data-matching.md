@@ -2,29 +2,30 @@
 title: Correspondance de données | Microsoft Docs
 ms.custom: ''
 ms.date: 10/01/2012
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: fe66d098-bec3-4258-b42a-479ae460feb3
-caps.latest.revision: ''
+caps.latest.revision: 29
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01cbb3062f7ca5c241eaca474a253e45d660706d
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 43b1a7f72158196eb3aed8a5732eb7c099987be3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-matching"></a>Correspondance de données
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Le processus de correspondance de données de [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) permet de réduire la duplication de données et d'améliorer la précision de données dans une source de données. La correspondance analyse le degré de duplication dans tous les enregistrements d'une source de données unique, en retournant les probabilités pondérées d'une correspondance entre chaque ensemble d'enregistrements comparé. Vous pouvez alors décider quels enregistrements sont des correspondances et entreprendre l'action appropriée sur les données sources.  
   
  Le processus de correspondance de DQS présente les avantages suivants :  

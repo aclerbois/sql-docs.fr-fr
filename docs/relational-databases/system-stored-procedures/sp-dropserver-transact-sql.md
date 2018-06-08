@@ -1,16 +1,14 @@
 ---
-title: sp_dropserver (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_dropserver (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dropserver_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_dropserver
 ms.assetid: 0fc83e35-0caa-49a3-a4b6-a1890d4f46ef
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 13549166cc993a984117655c82e197afbcbfb530
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 82f030a0f35a75bb1494035c9db8cd0ae0f002c0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdropserver-transact-sql"></a>sp_dropserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
@@ -49,10 +47,10 @@ sp_dropserver [ @server = ] 'server'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@server =** ] **'***server***'**  
+ [  **@server =** ] **'***server***'**  
  Serveur à supprimer. *server* est de type **sysname**et n'a pas de valeur par défaut. *serveur* doit exister.  
   
- [ **@droplogins =** ] **'droplogins'** | NULL  
+ [  **@droplogins =** ] **'droplogins'** | VALEUR NULL  
  Indique que les connexions de serveur lié et distant pour *server* doit également être supprimé si **droplogins** est spécifié. **@droplogins** est **char (10)**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -78,7 +76,7 @@ sp_dropserver 'ACCOUNTS', 'droplogins';
  [sp_addserver &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addserver-transact-sql.md)   
  [sp_dropremotelogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropremotelogin-transact-sql.md)   
  [sp_helpremotelogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpremotelogin-transact-sql.md)   
- [sp_helpserver &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpserver-transact-sql.md)   
+ [sp_helpserver & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-stored-procedures/sp-helpserver-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

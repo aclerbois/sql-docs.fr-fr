@@ -1,17 +1,16 @@
 ---
-title: "Données dans des flux de données | Microsoft Docs"
-ms.custom: 
+title: Données dans des flux de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data types [Integration Services]
 - comparing data
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - string comparisons
 - data flow [Integration Services], data options
 ms.assetid: 8a9d6186-eb52-48e3-997e-021f24d458a3
-caps.latest.revision: 
+caps.latest.revision: 42
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 75b3313a841152e31ca6ff52e7c523fbc1d4b249
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: a8213fe0bd59bf187cf3585bb473cb61703e361c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-in-data-flows"></a>Données dans des flux de données
   [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] propose un ensemble de types de données qui sont utilisés dans les flux de données.  

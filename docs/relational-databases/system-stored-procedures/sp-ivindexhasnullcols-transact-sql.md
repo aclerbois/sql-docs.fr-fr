@@ -1,16 +1,15 @@
 ---
 title: sp_ivindexhasnullcols (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_ivindexhasnullcols
 ms.assetid: ed2cde63-37e1-43cf-b6ba-3b6114a0f797
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3dbdbe2a627eb49dbd2ab71bef5bc102f1b157d7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4431ae915c43d6ceb96200c3ebbf6aa976dd4ff3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spivindexhasnullcols-transact-sql"></a>sp_ivindexhasnullcols (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,10 +45,10 @@ sp_ivindexhasnullcols [ @viewname = ] 'view_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@viewname** =] **'***view_name***'**  
+ [ **@viewname**=] **'***view_name***'**  
  Nom de la vue à vérifier. *view_name* est **sysname**, sans valeur par défaut.  
   
- [  **@fhasnullcols** =] *field_has_null_columns* sortie  
+ [ **@fhasnullcols**=] *field_has_null_columns* sortie  
  Indicateur qui précise si l'index de la vue a des colonnes acceptant des valeurs NULL. *view_name* est **sysname**, sans valeur par défaut. Retourne une valeur de **1** si l’index de la vue a des colonnes acceptant des valeurs NULL. Retourne une valeur de **0** si la vue ne contient-elle pas les colonnes qui acceptent les valeurs NULL.  
   
 > [!NOTE]  
@@ -64,7 +62,7 @@ sp_ivindexhasnullcols [ @viewname = ] 'view_name'
   
  Par défaut, les articles de vue indexée d'une publication sont créés en tant que tables sur les Abonnés. Toutefois, lorsque la colonne indexée autorise les valeurs NULL, la vue indexée est créée en tant que vue indexée sur l'Abonné, au lieu de l'être en tant que table. L'exécution de cette procédure stockée indique à l'utilisateur si la vue indexée active est concernée par ce problème.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_ivindexhasnullcols**.  
   
 ## <a name="see-also"></a>Voir aussi  

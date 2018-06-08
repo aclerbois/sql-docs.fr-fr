@@ -1,16 +1,14 @@
 ---
 title: DROP BROKER PRIORITY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP_BROKER_PRIORITY_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - DROP BROKER PRIORITY statement
 ms.assetid: 09ee6c5b-af94-4a4b-a0e2-f9eac50e43aa
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 15
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f21953a8d36499d97bf229720bb8faf8ea678087
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 019086179a4bbbbe461d5403068847d1bed12745
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="drop-broker-priority-transact-sql"></a>DROP BROKER PRIORITY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

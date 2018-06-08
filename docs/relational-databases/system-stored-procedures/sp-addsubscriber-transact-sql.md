@@ -1,16 +1,15 @@
 ---
 title: sp_addsubscriber (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addsubscriber
 ms.assetid: b8a584ea-2a26-4936-965b-b84f026e39c0
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 48dba20940cff922fa3bdacd78471d57fbec7707
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a78d29cfa36616e1d440295d5ed089d9489ecd31
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddsubscriber-transact-sql"></a>sp_addsubscriber (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -77,13 +75,13 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**0** (valeur par défaut)|[!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Abonné|  
+|**0** (valeur par défaut)|[!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Abonné|  
 |**1**|Serveur de la source de données ODBC.|  
 |**2**|Base de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] Jet|  
 |**3**|Fournisseur OLE DB|  
   
  [  **@login=**] **'***connexion***'**  
- ID de connexion pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification. *connexion* est **sysname**, avec NULL comme valeur par défaut.  
+ ID de connexion pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification. *login* est de type **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Ce paramètre est déconseillé et n'est maintenu que dans un but de compatibilité ascendante avec les scripts déjà établis. La propriété est maintenant spécifiée sur une base par abonnement lors de l’exécution [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Lorsqu'une valeur est spécifiée, elle sert alors de valeur par défaut au moment de la création des abonnements pour cet Abonné et un message d'avertissement s'affiche.  
@@ -213,7 +211,7 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
  [  **@encrypted_password=**] *encrypted_password*  
  Ce paramètre est déconseillé et est fourni pour assurer la compatibilité descendante uniquement le paramètre *encrypted_password* n’importe quelle valeur mais **0** entraîne une erreur.  
   
- [  **@publisher** =] **'***publisher***'**  
+ [ **@publisher**=] **'***publisher***'**  
  Spécifie un serveur de publication non [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -229,14 +227,14 @@ sp_addsubscriber [ @subscriber = ] 'subscriber'
   
  **sp_addsubscriber** écrit dans le [MSsubscriber_info](../../relational-databases/system-tables/mssubscriber-info-transact-sql.md) de table dans le **distribution** base de données.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_addsubscriber**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Create a Push Subscription](../../relational-databases/replication/create-a-push-subscription.md)   
- [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md)   
- [sp_changesubscriber &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-changesubscriber-transact-sql.md)   
- [sp_dropsubscriber &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropsubscriber-transact-sql.md)   
- [sp_helpsubscriberinfo &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpsubscriberinfo-transact-sql.md)  
+ [Créer un abonnement par extraction](../../relational-databases/replication/create-a-pull-subscription.md)   
+ [sp_changesubscriber &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changesubscriber-transact-sql.md)   
+ [sp_dropsubscriber &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropsubscriber-transact-sql.md)   
+ [sp_helpsubscriberinfo &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpsubscriberinfo-transact-sql.md)  
   
   

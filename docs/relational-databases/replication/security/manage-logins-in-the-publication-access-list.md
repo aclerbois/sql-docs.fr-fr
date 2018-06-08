@@ -1,17 +1,16 @@
 ---
-title: "Gérer des connexions dans la liste d’accès à la publication | Microsoft Docs"
-ms.custom: 
+title: Gérer des connexions dans la liste d’accès à la publication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logins [SQL Server replication], publication access list
 - publications [SQL Server replication], publication access lists
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - PAL (publication access list)
 - logins [SQL Server replication], managing
 ms.assetid: fceb216b-0b18-4e3b-8ae0-13e35920dcbc
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4fd4f6e7e5ba111555167985343cfa6e4206ba39
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 317dc0b140cc7da9ad54664eea9f00bb71715051
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-logins-in-the-publication-access-list"></a>Gérer des connexions dans la liste d'accès à la publication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

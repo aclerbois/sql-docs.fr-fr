@@ -1,30 +1,27 @@
 ---
-title: "CRÉER INDEX instruction Limitations | Documents Microsoft"
-ms.custom: 
+title: CRÉER INDEX instruction Limitations | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CREATE INDEX statement limitations [ODBC]
 - ODBC SQL grammar, CREATE INDEX statement limitations
 ms.assetid: 832dcda1-e452-48e6-8adb-7fb33c4fb4ff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c3923fdf02d70fe87b0748b7a861cac85ec4b786
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e9501e07fcdb70984153a718eed22be4d5448ec9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-index-statement-limitations"></a>CRÉER INDEX instruction Limitations
 L’instruction CREATE INDEX n’est pas prise en charge pour les pilotes Microsoft Excel ou texte.  

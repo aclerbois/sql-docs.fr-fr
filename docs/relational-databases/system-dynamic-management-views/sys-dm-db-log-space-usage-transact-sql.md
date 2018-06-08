@@ -1,17 +1,14 @@
 ---
-title: sys.dm_db_log_space_usage (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_log_space_usage (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sys.dm_db_log_space_usage
 - sys.dm_db_log_space_usage_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_log_space_usage dynamic management view
 ms.assetid: f6b40060-c17d-472f-b0a3-3b350275d487
-caps.latest.revision: 
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: df77bbd3302f73e898fbb4ef053810492819c89e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 9bedbe8d5aa7b4e50ce4f486f2f3dbbf84e48a9c
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdblogspaceusage-transact-sql"></a>sys.dm_db_log_space_usage (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -51,9 +48,9 @@ Retourne l’espace informations d’utilisation pour le journal des transaction
     
   
 ## <a name="permissions"></a>Autorisations  
- Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert `VIEW SERVER STATE` autorisation sur le serveur.  
-  
- Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] niveaux Premium requiert le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard et les niveaux de base nécessite le [!INCLUDE[ssSDS](../../includes/sssds-md.md)] compte d’administrateur.  
+
+Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
   
 ## <a name="examples"></a>Exemples  
   
@@ -70,7 +67,7 @@ FROM sys.dm_db_log_space_usage;
   
 ## <a name="see-also"></a>Voir aussi  
 [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
-[Base de données associés des vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/database-related-dynamic-management-views-transact-sql.md)   
+[Vues de gestion dynamique liées à la base de données &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/database-related-dynamic-management-views-transact-sql.md)   
 [sys.dm_db_file_space_usage](../../relational-databases/system-dynamic-management-views/sys-dm-db-file-space-usage-transact-sql.md)    
 [sys.dm_db_task_space_usage &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-task-space-usage-transact-sql.md)   
 [sys.dm_db_session_space_usage &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-session-space-usage-transact-sql.md)  

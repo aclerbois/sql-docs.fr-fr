@@ -1,16 +1,14 @@
 ---
 title: CREATE ENDPOINT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ENDPOINT
@@ -34,16 +32,15 @@ helpviewer_keywords:
 - SERVICE_BROKER option
 - Availability Groups [SQL Server], endpoint
 ms.assetid: 6405e7ec-0b5b-4afd-9792-1bfa5a2491f6
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 135
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c1d87ac5214da9a3458cdffd41bdd457a433afab
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 21424f46b3cfcf969e687b7044c337022ca598f9
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-endpoint-transact-sql"></a>CREATE ENDPOINT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -154,7 +151,7 @@ FOR DATABASE_MIRRORING (
  LISTENER_PORT **=***listenerPort*  
  Spécifie le numéro du port écouté pour les connexions par le protocole TCP/IP Service Broker. Par convention, 4022 est utilisé mais n'importe quel numéro entre 1024 et 32767 est valide.  
   
- LISTENER_IP **=** ALL | **(***4-part-ip* **)** | **(** "*ip_address_v6*" **)**  
+ LISTENER_IP **=** ALL | **(***4-part-ip* **)** | **(** "* ip_address_v6*" **)**  
  Spécifie l'adresse IP que le point de terminaison va écouter. La valeur par défaut est ALL. Ce qui signifie que l'écouteur acceptera une connexion sur n'importe quelle adresse IP valide.  
   
  Si vous configurez la mise en miroir de bases de données avec une adresse IP au lieu d'un nom de domaine complet (`ALTER DATABASE SET PARTNER = partner_IP_address` ou `ALTER DATABASE SET WITNESS = witness_IP_address`), vous devez spécifier `LISTENER_IP =IP_address` au lieu de `LISTENER_IP=ALL` lorsque vous créez des points de terminaison de mise en miroir.  
@@ -270,9 +267,9 @@ FOR DATABASE_MIRRORING (
   
 -   Les membres du rôle serveur fixe **sysadmin**.  
   
--   Le propriétaire du point de terminaison.  
+-   le propriétaire du point de terminaison ;  
   
--   Les utilisateurs ou groupes disposant de l'autorisation CONNECT sur le point de terminaison.  
+-   les utilisateurs ou groupes disposant de l'autorisation CONNECT sur le point de terminaison.  
   
 ## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation CREATE ENDPOINT ou l'appartenance au rôle serveur fixe **sysadmin** . Pour plus d’informations, consultez [Autorisations de point de terminaison GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-endpoint-permissions-transact-sql.md).  

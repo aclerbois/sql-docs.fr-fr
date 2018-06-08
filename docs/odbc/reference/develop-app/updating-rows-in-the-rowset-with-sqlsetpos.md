@@ -1,31 +1,28 @@
 ---
-title: "Mise à jour des lignes dans l’ensemble de lignes avec SQLSetPos | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des lignes dans l’ensemble de lignes avec SQLSetPos | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - updating data [ODBC], SQLSetPos
 - data updates [ODBC], SQLSetPos
 - SQLSetPos function [ODBC], updating rows
 ms.assetid: d83a8c2a-5aa8-4f19-947c-79a817167ee1
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 898bbdbf15cec2e583d9fa55a82ec8b0caa32d18
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c5e971d597178501ecc7107da4bbaeb6158f0c99
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-rows-in-the-rowset-with-sqlsetpos"></a>Mise à jour des lignes dans l’ensemble de lignes avec SQLSetPos
 L’opération de mise à jour de **SQLSetPos** rend la source de données à mettre à jour une ou plusieurs lignes sélectionnées d’une table, à l’aide de données dans les mémoires tampons d’application pour chaque colonne dépendante (sauf si la valeur dans la mémoire tampon de longueur / d’indicateur est SQL_COLUMN_IGNORE). Les colonnes qui ne sont pas liés ne seront pas mis à jour.  

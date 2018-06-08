@@ -1,16 +1,14 @@
 ---
 title: DROP EXTERNAL RESOURCE POOL (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP EXTERNAL RESOURCE POOL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - DROP EXTERNAL RESOURCE POOL statement
 ms.assetid: e2fa01bd-96ff-4ea9-bb08-6cb6b6adf68c
-caps.latest.revision: 
+caps.latest.revision: 6
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: edd6e956bc9453317c928a099469e65ddf5e0e0f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 203413f37f0357749433fef3d7bcc25043b0a4ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drop-external-resource-pool-transact-sql"></a>DROP EXTERNAL RESOURCE POOL (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -51,7 +48,7 @@ DROP EXTERNAL RESOURCE POOL pool_name
 ## <a name="remarks"></a>Notes   
  Vous ne pouvez pas supprimer un pool de ressources externes qui contient des groupes de charges de travail.  
   
- Vous ne pouvez pas supprimer les pools par défaut ou internes du gouverneur de ressources.  
+ Vous ne pouvez pas supprimer les pools par défaut ou interne du gouverneur de ressources.  
   
  La reconfiguration  
   
@@ -71,7 +68,7 @@ GO
 ```  
   
 ## <a name="see-also"></a> Voir aussi  
- [External scripts enabled (option de configuration de serveur)](../../database-engine/configure-windows/external-scripts-enabled-server-configuration-option.md)   
+ [external scripts enabled (option de configuration de serveur)](../../database-engine/configure-windows/external-scripts-enabled-server-configuration-option.md)   
  [SQL Server R Services](../../advanced-analytics/r-services/sql-server-r-services.md)   
  [Problèmes connus pour SQL Server R Services](../../advanced-analytics/r-services/known-issues-for-sql-server-r-services.md)   
  [CREATE EXTERNAL RESOURCE POOL &#40;Transact-SQL&#41;](../../t-sql/statements/create-external-resource-pool-transact-sql.md)   

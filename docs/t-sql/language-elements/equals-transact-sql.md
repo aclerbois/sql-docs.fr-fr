@@ -1,16 +1,14 @@
 ---
-title: "= (Est égal à) (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: = (Est égal à) (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/06/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - =
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - equals operator (=)
 - = (equals operator)
 ms.assetid: 18885245-5f55-4831-8f0b-7f2a3e82e246
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 256eaef54ad11a3a73751ae5ef23f7d52cdbef3a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 77947f8263b66f1b7f26e8ee5a5d52a4d019aeb2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="-equals-transact-sql"></a>= (Equals) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]

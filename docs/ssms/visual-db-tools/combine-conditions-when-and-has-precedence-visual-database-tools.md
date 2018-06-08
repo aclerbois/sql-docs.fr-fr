@@ -1,16 +1,15 @@
 ---
-title: "Associer des conditions avec priorité à l’opérateur AND (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Associer des conditions avec priorité à l’opérateur AND (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - search conditions [SQL Server], combining
 - precedence [SQL Server], Criteria pane
@@ -18,19 +17,19 @@ helpviewer_keywords:
 - combining search conditions
 - AND, Criteria pane
 ms.assetid: 450eb2eb-6ea3-405b-8dd2-1ff926c016e7
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2f5ca94d7be22a9bd8635edf453709d4beefdb80
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: fb66daf0374ac4d0244b4f37bd39f921be9c2fc1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="combine-conditions-when-and-has-precedence-visual-database-tools"></a>Associer des conditions avec priorité à l'opérateur AND (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour associer des conditions avec AND, vous ajoutez deux fois la colonne à la requête, une fois pour chaque condition. Pour associer des conditions à l’aide de l’opérateur OR, vous indiquez la première condition dans la colonne Filtre et les autres conditions dans une colonne **Ou...** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Pour associer des conditions avec AND, vous ajoutez deux fois la colonne à la requête, une fois pour chaque condition. Pour associer des conditions à l’aide de l’opérateur OR, vous indiquez la première condition dans la colonne Filtre et les autres conditions dans une colonne **Ou...** .  
   
 Imaginez que vous souhaitiez, par exemple, rechercher des employés travaillant dans la société depuis plus de cinq ans à des postes de faible niveau ou des employés occupant des postes de moyen niveau quelle que soit leur date d'embauche. Cette requête nécessite trois conditions, deux d'entre elles étant reliées à l'aide de l'opérateur AND :  
   

@@ -1,17 +1,15 @@
 ---
-title: "Execute, Requery et Clear, méthodes-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Execute, Requery et Clear, méthodes-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - Clear method [ADO], Visual Basic example
 - Execute method [ADO], Visual Basic example
 ms.assetid: ed5e1b60-3769-4b26-a253-1d721e37941d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1549486e1dc4efc0325f935ce80d25627aeb72df
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c9a861132f3cabfbafe4b9ab8aff2242e5f97b23
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-requery-and-clear-methods-example-vb"></a>Execute, Requery et Clear, méthodes-exemple (VB)
 Cet exemple illustre la **Execute** exécution à partir de la méthode un [commande](../../../ado/reference/ado-api/command-object-ado.md) objet et un [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet. Il utilise également le [Requery](../../../ado/reference/ado-api/requery-method.md) méthode pour récupérer les données actuelles dans une [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md)et le [effacer](../../../ado/reference/ado-api/clear-method-ado.md) méthode pour effacer le contenu de la [erreurs](../../../ado/reference/ado-api/errors-collection-ado.md)collection. (Le **erreurs** collection est accessible la **connexion** objet de la [ActiveConnection](../../../ado/reference/ado-api/activeconnection-property-ado.md) propriété de la [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).) Les procédures ExecuteCommand et PrintOutput sont nécessaires pour exécuter cette procédure.  
@@ -181,5 +178,5 @@ End Sub
  [Objet Error](../../../ado/reference/ado-api/error-object.md)   
  [Execute (méthode) (commande ADO)](../../../ado/reference/ado-api/execute-method-ado-command.md)   
  [Execute (méthode) (connexion ADO)](../../../ado/reference/ado-api/execute-method-ado-connection.md)   
- [Recordset Object (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
+ [Objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
  [Requery, méthode](../../../ado/reference/ado-api/requery-method.md)

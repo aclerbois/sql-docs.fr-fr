@@ -1,26 +1,26 @@
 ---
-title: "Sauvegarder et restaurer une base de données à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "Découvrez comment sauvegarder et restaurer une base de données à l’aide des opérations de SQL Studio (version préliminaire)"
+title: Sauvegarder et restaurer une base de données à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft
+description: Découvrez comment sauvegarder et restaurer une base de données à l’aide des opérations de SQL Studio (version préliminaire)
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
-author: erickangMSFT
-ms.author: erickang
+author: stevestein
+ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 46ef55aa54275e356eff9674aac10a27b36d758e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 22a453caa9d29432381da6861a0f0c4e3e61d77e
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582451"
 ---
-# <a name="backup-and-restore-using-includename-sosincludesname-sos-shortmd"></a>Sauvegarde et restauration à l’aide[!INCLUDE[name-sos](../includes/name-sos-short.md)]
+# <a name="backup-and-restore-using-includename-sosincludesname-sos-shortmd"></a>Sauvegarde et restauration à l’aide [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 
 Dans ce didacticiel, vous apprenez à utiliser [!INCLUDE[name-sos](../includes/name-sos-short.md)] pour :
 > [!div class="checklist"]
@@ -34,7 +34,7 @@ Dans ce didacticiel, vous apprenez à utiliser [!INCLUDE[name-sos](../includes/n
 
 Ce didacticiel nécessite SQL Server *TutorialDB*. Pour créer le *TutorialDB* de base de données, effectuez l’une des Démarrages rapides suivants :
 
-- [Se connecter et interroger à l’aide de SQL Server[!INCLUDE[name-sos-short](../includes/name-sos-short.md)]](quickstart-sql-server.md)
+- [Se connecter et interroger à l’aide de SQL Server [!INCLUDE[name-sos-short](../includes/name-sos-short.md)]](quickstart-sql-server.md)
 
 
 ## <a name="backup-a-database"></a>Sauvegarde une base de données
@@ -77,7 +77,7 @@ Après avoir cliqué sur **sauvegarde**, le **base de données de sauvegarde** d
 
 4. Cliquez sur **restaurer**
 
-5. Pour afficher l’état de l’opération de restauration, cliquez sur **CTRL + T** pour ouvrir le **l’historique des tâches** barre latérale.
+5. Pour afficher l’état de l’opération de restauration, appuyez sur **CTRL + T** pour ouvrir le **l’historique des tâches** barre latérale.
 
    ![restauration](./media/tutorial-backup-restore-sql-server/task-history-restore.png)
 

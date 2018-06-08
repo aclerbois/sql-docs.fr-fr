@@ -1,17 +1,16 @@
 ---
 title: Plans de maintenance | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.AG.MAINTPLAN.LEGACY.F1
 helpviewer_keywords:
@@ -19,19 +18,19 @@ helpviewer_keywords:
 - maintenance plans [SQL Server], database compatibility level displayed in designer
 - maintenance plans [SQL Server]
 ms.assetid: 5982ca65-74fe-44e3-aef9-00a65a0db169
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 62c07a1aacaf0d2cc30808b41d0f58360144acff
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7cf96ca22eadda04601510a545e21715a88fbb58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maintenance-plans"></a>Plans de maintenance
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les plans de maintenance vous permettent de créer un flux de travail des tâches nécessaires à l’optimisation de votre base de données, à la création d’une sauvegarde régulière et à la recherche des incohérences. L'Assistant Plan de maintenance permet aussi de créer les principaux plans de maintenance, mais la création manuelle de ces plans offre beaucoup plus de souplesse.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Les plans de maintenance vous permettent de créer un flux de travail des tâches nécessaires à l'optimisation de votre base de données, à la création d'une sauvegarde régulière et à la recherche des incohérences. L'Assistant Plan de maintenance permet aussi de créer les principaux plans de maintenance, mais la création manuelle de ces plans offre beaucoup plus de souplesse.  
   
 ## <a name="benefits-of-maintenance-plans"></a>Avantages des plans de maintenance  
  Dans le [!INCLUDE[ssDECurrent](../../includes/ssdecurrent-md.md)], les plans de maintenance créent un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] qui est exécuté par un travail de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les plans de maintenance peuvent s'exécuter manuellement ou automatiquement à intervalles planifiés.  

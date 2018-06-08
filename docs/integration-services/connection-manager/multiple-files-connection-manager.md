@@ -1,17 +1,16 @@
 ---
 title: Gestionnaire de connexions de fichiers multiples | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - folders [Integration Services], connections
 - files [Integration Services], connections
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - connections [Integration Services], files
 - multiple file connections
 ms.assetid: 10bdc56e-c5cd-4ddb-b2f7-375fe57fe8b2
-caps.latest.revision: 
+caps.latest.revision: 36
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ff3fcef1362333dc1ac2de5774d63ce025b8557
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 1b558fa9dc8e8a65cc112376c636ec7e5ad6dc06
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiple-files-connection-manager"></a>Gestionnaire de connexions de fichiers multiples
   Un gestionnaire de connexions de fichiers multiples permet à un package de référencer des fichiers et dossiers existants ou de créer des fichiers ou dossiers au moment de l'exécution.  
@@ -66,7 +64,7 @@ ms.lasthandoff: 02/15/2018
   
  \<*chemin*>|\<*chemin*>  
   
- Vous pouvez également spécifier plusieurs fichiers ou dossiers en utilisant des caractères génériques. Par exemple, pour référencer tous les fichiers texte du lecteur C, la valeur de la propriété **ConnectionString** peut être définie sur C:\\\*.txt.  
+ Vous pouvez également spécifier plusieurs fichiers ou dossiers en utilisant des caractères génériques. Par exemple, pour référencer tous les fichiers texte du lecteur C, la valeur de la propriété **ConnectionString** peut être définie sur C:\\*.txt.  
   
  Vous pouvez définir les propriétés par le biais du concepteur [!INCLUDE[ssIS](../../includes/ssis-md.md)] ou par programmation.  
   

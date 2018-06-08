@@ -1,30 +1,28 @@
 ---
-title: "Se connecter à MySQL (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Se connecter à MySQL (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 94099d01-ab19-4d58-a172-340c86b4a0f3
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 068fe6585eac87830511515a95373a938cbcdca2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2290b67ac66a1fa06d62b88390a538a3e06621ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-mysql-mysqltosql"></a>Se connecter à MySQL (MySQLToSQL)
 Utilisez le **se connecter à MySQL** boîte de dialogue se connecter à la base de données MySQL que vous souhaitez migrer.  
@@ -48,7 +46,7 @@ Entrez le nom du serveur MySQL. Il s’agit d’une option de mode Standard.
   
 Entrez le port du serveur. Le port du serveur par défaut est 3306. Il s’agit d’une option de mode Standard.  
   
-**User name**  
+**Nom d'utilisateur**  
   
 Entrez le nom d’utilisateur SSMA utilisera pour se connecter à la base de données MySQL.  
   

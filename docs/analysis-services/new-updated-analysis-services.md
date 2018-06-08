@@ -1,20 +1,21 @@
 ---
-title: "Mise à jour - Analysis Services pour la documentation de SQL Server | Documents Microsoft"
-description: "Extraits de l’affichage de contenu mis à jour pour obtenir une documentation récemment modifié, pour Analysis Services pour Microsoft SQL Server."
+title: Mise à jour - Analysis Services pour la documentation de SQL Server | Documents Microsoft
+description: Extraits de l’affichage de contenu mis à jour pour obtenir une documentation récemment modifié, pour Analysis Services pour Microsoft SQL Server.
 manager: craigg
 author: MightyPen
 ms.author: genemi
-ms.topic: article
-ms.custom: UpdArt.exe
+ms.topic: conceptual
+ms.custom: analysis-services
 ms.suite: sql
+ms.technology: release-landing
+ms.prod: sql
 ms.prod_service: sql-non-specified
-ms.component: ssas
-ms.date: 02/03/2018
-ms.openlocfilehash: 35da9b00567ea338a764bf1d1b3bc390bd9a88db
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.date: 04/28/2018
+ms.openlocfilehash: b499ead7affe952df0f0eaaaebf5d7533636cce1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="new-and-recently-updated-analysis-services-for-sql-server"></a>Nouveaux et mis à jour récemment : Analysis Services pour SQL Server
 
@@ -28,7 +29,7 @@ Mises à jour récentes sont signalés pour la plage de dates suivante et l’ob
 
 
 
-- *Plage de dates de mises à jour :* &nbsp; **2017-12-03** &nbsp; - à - &nbsp; **2018-02-03**
+- *Plage de dates des mises à jour :* &nbsp; **03-02-2018** &nbsp; au &nbsp; **28-04-2018**
 - *Zone de sujet :* &nbsp; **Analysis Services pour SQL Server**.
 
 
@@ -41,7 +42,24 @@ Mises à jour récentes sont signalés pour la plage de dates suivante et l’ob
 Les liens suivants renvoient aux nouveaux articles ajoutés récemment.
 
 
-***Il n’y a aucun nouvel article.***
+1. [Sources de données pris en charge dans SQL Server Analysis Services les modèles tabulaires 1400](tabular-models/data-sources-supported-ssas-tabular-1400.md)
+2. [Modélisation tabulaire (niveau de compatibilité 1400)](tutorial-tabular-1400/as-adventure-works-tutorial.md)
+3. [Créer des partitions](tutorial-tabular-1400/as-lesson-10-create-partitions.md)
+4. [Créer des rôles](tutorial-tabular-1400/as-lesson-11-create-roles.md)
+5. [Analyser dans Excel](tutorial-tabular-1400/as-lesson-12-analyze-in-excel.md)
+6. [Déployer](tutorial-tabular-1400/as-lesson-13-deploy.md)
+7. [Créer un projet de modèle tabulaire](tutorial-tabular-1400/as-lesson-1-create-a-new-tabular-model-project.md)
+8. [Obtenir des données](tutorial-tabular-1400/as-lesson-2-Get-data.md)
+9. [Marquer en tant que Table de dates](tutorial-tabular-1400/as-lesson-3-mark-as-date-table.md)
+10. [Créer des relations](tutorial-tabular-1400/as-lesson-4-create-relationships.md)
+11. [Créer des colonnes calculées](tutorial-tabular-1400/as-lesson-5-create-calculated-columns.md)
+12. [Créer des mesures](tutorial-tabular-1400/as-lesson-6-create-measures.md)
+13. [Créer des indicateurs de Performance clés](tutorial-tabular-1400/as-lesson-7-create-key-performance-indicators.md)
+14. [Créer des perspectives](tutorial-tabular-1400/as-lesson-8-create-perspectives.md)
+15. [Créer des hiérarchies](tutorial-tabular-1400/as-lesson-9-create-hierarchies.md)
+16. [Leçon supplémentaire - Lignes de détails](tutorial-tabular-1400/as-supplemental-lesson-detail-rows.md)
+17. [Leçon supplémentaire - Sécurité dynamique](tutorial-tabular-1400/as-supplemental-lesson-dynamic-security.md)
+18. [Leçon supplémentaire - Hiérarchies déséquilibrées](tutorial-tabular-1400/as-supplemental-lesson-ragged-hierarchies.md)
 
 
 
@@ -85,40 +103,36 @@ Cette liste compacte fournit des liens vers tous les articles mis à jour qui so
 Cette section liste les articles très similaires récemment mis à jour dans d’autres domaines, dans notre dépôt public GitHub.com : [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs/).
 
 
-#### <a name="subject-areas-that-do-have-new-or-recently-updated-articles"></a>Zones de sujet qui *faire* ont nouveaux ou récemment mis à jour articles
+
+#### <a name="subject-areas-that-do-have-new-or-recently-updated-articles"></a>Domaines *avec* des articles nouveaux ou mis à jour récemment
+
+- [Nouveaux + Mis à jour (11 + 6) :&nbsp; &nbsp;**Advanced Analytics pour SQL** (documentation)](../advanced-analytics/new-updated-advanced-analytics.md)
+- [Nouveaux + Mis à jour (18 + 0) : &nbsp; &nbsp;**Analysis Services pour SQL**(documentation)](../analysis-services/new-updated-analysis-services.md)
+- [Nouveaux + Mis à jour (218 + 14) : **Connexion à SQL** (documentation)](../connect/new-updated-connect.md)
+- [Nouveaux + Mis à jour (14 + 0) :&nbsp; &nbsp;**Moteur de base de données pour SQL** (documentation)](../database-engine/new-updated-database-engine.md)
+- [Nouveaux + Mis à jour (3 + 2) :&nbsp; &nbsp; **Integration Services pour SQL** (documentation)](../integration-services/new-updated-integration-services.md)
+- [Nouveaux + Mis à jour (3 + 3) :&nbsp; &nbsp; **Linux pour SQL** (documentation)](../linux/new-updated-linux.md)
+- [Nouveaux + Mis à jour (7 + 10) :&nbsp; &nbsp;**Bases de données relationnelles pour SQL** (documentation)](../relational-databases/new-updated-relational-databases.md)
+- [Nouveaux + Mis à jour (0 + 2) :&nbsp; &nbsp; **Reporting Services pour SQL** (documentation)](../reporting-services/new-updated-reporting-services.md)
+- [Nouveaux + Mis à jour (1 + 3) :&nbsp; &nbsp; **SQL Operations Studio** (documentation)](../sql-operations-studio/new-updated-sql-operations-studio.md)
+- [Nouveaux + Mis à jour (2 + 3) :&nbsp; &nbsp; **Microsoft SQL Server** (documentation)](../sql-server/new-updated-sql-server.md)
+- [Nouveaux + Mis à jour (1 + 1) :&nbsp; &nbsp; **SQL Server Data Tools (SSDT)** (documentation)](../ssdt/new-updated-ssdt.md)
+- [Nouveaux + Mis à jour (5 + 2) :&nbsp; &nbsp; **SQL Server Management Studio (SSMS)** (documentation)](../ssms/new-updated-ssms.md)
+- [Nouveaux + Mis à jour (0 + 2) :&nbsp; &nbsp; **Transact-SQL** (documentation)](../t-sql/new-updated-t-sql.md)
+- [Nouveaux + Mis à jour (1 + 1) : &nbsp; &nbsp; **Outils pour SQL** documentation](../tools/new-updated-tools.md)
 
 
-- [Nouveau + mis à jour (1 + 3) :&nbsp; **avancées d’Analytique pour SQL** documents](../advanced-analytics/new-updated-advanced-analytics.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **système de plateforme d’Analytique pour SQL** documents](../analytics-platform-system/new-updated-analytics-platform-system.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **se connecter à SQL** documents](../connect/new-updated-connect.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **moteur de base de données pour SQL** documents](../database-engine/new-updated-database-engine.md)
-- [Nouveau + mis à jour (12 + 1) : **Integration Services pour SQL** documents](../integration-services/new-updated-integration-services.md)
-- [Nouveau + mis à jour (6 + 2) :&nbsp; **Linux pour SQL** documents](../linux/new-updated-linux.md)
-- [Nouveau + mis à jour (15 + 0) : **PowerShell pour SQL** documents](../powershell/new-updated-powershell.md)
-- [Nouveau + mis à jour (2 + 9) :&nbsp; **des bases de données relationnelles pour SQL** documents](../relational-databases/new-updated-relational-databases.md)
-- [Nouveau + mis à jour (1 + 0) :&nbsp; **Reporting Services pour SQL** documents](../reporting-services/new-updated-reporting-services.md)
-- [Nouveau + mis à jour (1 + 1) :&nbsp; **SQL opérations Studio** documents](../sql-operations-studio/new-updated-sql-operations-studio.md)
-- [Nouveau + mis à jour (1 + 1) :&nbsp; **Microsoft SQL Server** documents](../sql-server/new-updated-sql-server.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **SQL Server Data Tools (SSDT)** documents](../ssdt/new-updated-ssdt.md)
-- [Nouveau + mis à jour (1 + 2) :&nbsp; **SQL Server Management Studio (SSMS)** documents](../ssms/new-updated-ssms.md)
-- [Nouveau + mis à jour (0 + 2) :&nbsp; **Transact-SQL** documents](../t-sql/new-updated-t-sql.md)
 
+#### <a name="subject-areas-that-do-not-have-any-new-or-recently-updated-articles"></a>Domaines *sans* article nouveau ou mis à jour récemment
 
-
-#### <a name="subject-areas-that-do-not-have-any-new-or-recently-updated-articles"></a>Zones de font l’objet *pas* ont tous nouveaux ou récemment mis à jour articles
-
-
-- [Nouveaux + Mis à jour (0 + 0) : **Data Migration Assistant (DMA) pour SQL** (documentation)](../dma/new-updated-dma.md)
-- [Nouveau + mis à jour (0 0 +) : **ActiveX Data Objects (ADO) pour SQL** documents](../ado/new-updated-ado.md)
-- [Nouveaux + Mis à jour (0 + 0) : **Analysis Services pour SQL** (documentation)](../analysis-services/new-updated-analysis-services.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Système de plateforme d’analyse pour SQL** documentation](../analytics-platform-system/new-updated-analytics-platform-system.md)
 - [Nouveau + mis à jour (0 0 +) : **Data Quality Services pour SQL** documents](../data-quality-services/new-updated-data-quality-services.md)
 - [Nouveau + mis à jour (0 0 +) : **Extensions DMX (Data Mining) pour SQL** documents](../dmx/new-updated-dmx.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Master Data Services (MDS) for SQL** (documentation)](../master-data-services/new-updated-master-data-services.md)
 - [Nouveau + mis à jour (0 0 +) : **MDX (Multidimensional Expressions) pour SQL** documents](../mdx/new-updated-mdx.md)
 - [Nouveau + mis à jour (0 0 +) : **ODBC (Open Database Connectivity) pour SQL** documents](../odbc/new-updated-odbc.md)
-- [Nouveau + mis à jour (0 0 +) : **exemples pour SQL** documents](../sample/new-updated-sample.md)
+- [Nouveau + mis à jour (0 0 +) : **PowerShell pour SQL** documents](../powershell/new-updated-powershell.md)
+- [Nouveau + mis à jour (0 0 +) : **exemples pour SQL** documents](../samples/new-updated-samples.md)
 - [Nouveau + mis à jour (0 0 +) : **SQL Server Migration Assistant (SSMA)** documents](../ssma/new-updated-ssma.md)
-- [Nouveaux + Mis à jour (0 + 0) : **Outils pour SQL** (documentation)](../tools/new-updated-tools.md)
 - [Nouveau + mis à jour (0 0 +) : **XQuery pour SQL** documents](../xquery/new-updated-xquery.md)
-
 

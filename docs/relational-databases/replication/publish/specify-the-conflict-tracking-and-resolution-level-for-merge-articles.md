@@ -1,32 +1,30 @@
 ---
-title: "Spécifier le niveau de suivi et de résolution des conflits pour des articles de fusion | Microsoft Docs"
-ms.custom: 
+title: Spécifier le niveau de suivi et de résolution des conflits pour des articles de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication conflict resolution [SQL Server replication], levels
 - articles [SQL Server replication], conflict resolution
 - conflict resolution [SQL Server replication], merge replication
 ms.assetid: 81e9ecb6-1d31-4a78-b32a-96f7f4d67077
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 61e3b65c6dc3618d6dc05155c40ee3a25c0cba4a
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 2f3fb598a48665aecf43ea2d3498020229c5767b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-the-conflict-tracking-and-resolution-level-for-merge-articles"></a>Spécifier le niveau de suivi et de résolution des conflits pour des articles de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +50,7 @@ ms.lasthandoff: 03/08/2018
   
 -   Si vous modifiez le niveau de suivi une fois les abonnements initialisés, ces derniers doivent être réinitialisés. Pour plus d’informations sur les effets des modifications de propriétés, consultez [Changer des propriétés de publication et d’article](../../../relational-databases/replication/publish/change-publication-and-article-properties.md).  
   
--   Avec le suivi au niveau des lignes et des colonnes, la résolution des conflits est toujours effectuée au niveau des lignes : la ligne gagnante remplace la ligne perdante. La réplication de fusion vous permet également de spécifier que les conflits sont suivis et résolus au niveau des enregistrements logiques, mais ces options ne sont pas disponibles à partir de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Pour plus d'informations sur la définition de ces options à partir des procédures stockées de réplication, consultez [Define a Logical Record Relationship Between Merge Table Articles](../../../relational-databases/replication/publish/define-a-logical-record-relationship-between-merge-table-articles.md).  
+-   Avec le suivi au niveau des lignes et des colonnes, la résolution des conflits est toujours effectuée au niveau des lignes : la ligne gagnante remplace la ligne perdante. La réplication de fusion vous permet également de spécifier que les conflits sont suivis et résolus au niveau des enregistrements logiques, mais ces options ne sont pas disponibles à partir de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)]. Pour plus d'informations sur la définition de ces options à partir des procédures stockées de réplication, consultez [Définir une relation d’enregistrement logique entre des articles de table de fusion](../../../relational-databases/replication/publish/define-a-logical-record-relationship-between-merge-table-articles.md).  
   
 ##  <a name="SSMSProcedure"></a> Utilisation de SQL Server Management Studio  
  Spécifiez le suivi au niveau des lignes ou des colonnes pour les articles de fusion sous l’onglet **Propriétés** de la boîte de dialogue **Propriétés de l’article**, disponible dans l’Assistant Nouvelle publication et la boîte de dialogue **Propriétés de la publication - \<Publication>**. Pour plus d’informations sur l’utilisation de l’Assistant et sur l’accès à la boîte de dialogue, consultez [Créer une publication](../../../relational-databases/replication/publish/create-a-publication.md) et [Afficher et modifier les propriétés d’une publication](../../../relational-databases/replication/publish/view-and-modify-publication-properties.md).  

@@ -1,31 +1,27 @@
 ---
-title: "Expressions de requête et noms URN | Microsoft Docs"
-ms.custom: 
+title: Expressions de requête et noms URN | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: powershell
-ms.service: 
-ms.component: powershell
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: scripting
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - query expressions
 - unique resource names
 - URN
 ms.assetid: e0d30dbe-7daf-47eb-8412-1b96792b6fb9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 87e90bc33f653b36eac95fd8f525d5eb235ed1ea
-ms.sourcegitcommit: 779f3398e4e3f4c626d81ae8cedad153bee69540
+ms.openlocfilehash: cf241911ce9befc7b42e8c84fd6fddb7dcd10374
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="query-expressions-and-uniform-resource-names"></a>Expressions de requête et noms URN
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

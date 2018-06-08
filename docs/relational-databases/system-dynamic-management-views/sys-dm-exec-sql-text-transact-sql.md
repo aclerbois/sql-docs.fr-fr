@@ -1,16 +1,13 @@
 ---
 title: sys.dm_exec_sql_text (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_sql_text
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_sql_text dynamic management function
 ms.assetid: 61b8ad6a-bf80-490c-92db-58dfdff22a24
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2a2e9eac12ffb3c3ef7ada6e94013ed387e2dd9f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 21b22b837cc4e46bdd5169b0c669e7dde74c029c
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecsqltext-transact-sql"></a>sys.dm_exec_sql_text (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -76,12 +73,12 @@ Identifie de façon univoque un plan de requête pour un traitement en cache ou 
 |-----------------|---------------|-----------------|  
 |**dbid**|**smallint**|ID de base de données.<br /><br /> Pour les instructions SQL ad hoc et préparées, l'ID de la base de données où les instructions ont été compilées.|  
 |**objectid**|**int**|ID d’objet.<br /><br /> Est NULL pour les instructions SQL ad hoc et préparées.|  
-|**number**|**smallint**|Pour une procédure stockée numérotée, cette colonne retourne le numéro de la procédure stockée. Pour plus d’informations, consultez [fonctionnalité sys.numbered_procedures &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-numbered-procedures-transact-sql.md).<br /><br /> Est NULL pour les instructions SQL ad hoc et préparées.|  
-|**encrypted**|**bit**|1 = le texte SQL est chiffré.<br /><br /> 0 = le texte SQL n'est pas chiffré.|  
+|**number**|**smallint**|Pour une procédure stockée numérotée, cette colonne retourne le numéro de la procédure stockée. Pour plus d’informations, consultez [fonctionnalité sys.numbered_procedures &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-numbered-procedures-transact-sql.md).<br /><br /> Est NULL pour les instructions SQL ad hoc et préparées.|  
+|**Chiffré**|**bit**|1 = le texte SQL est chiffré.<br /><br /> 0 = le texte SQL n'est pas chiffré.|  
 |**texte**|**nvarchar(max** **)**|Texte de la requête SQL.<br /><br /> NULL pour les objets chiffrés.|  
   
 ## <a name="permissions"></a>Autorisations  
- requièrent l'autorisation VIEW SERVER STATE sur le serveur.  
+ Nécessite l'autorisation `VIEW SERVER STATE` sur le serveur.  
   
 ## <a name="remarks"></a>Notes  
 Pour les requêtes ad hoc, les handles SQL sont des valeurs de hachage en fonction du texte SQL qui est envoyé au serveur et peuvent provenir d’une base de données. 
@@ -178,10 +175,10 @@ ORDER BY s1.sql_handle, s1.statement_start_offset, s1.statement_end_offset;
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
  [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md)   
  [sys.dm_exec_requests &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)   
- [sys.dm_exec_cursors &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cursors-transact-sql.md)   
+ [Sys.dm_exec_cursors &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cursors-transact-sql.md)   
  [sys.dm_exec_xml_handles &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-xml-handles-transact-sql.md)   
  [sys.dm_exec_query_memory_grants &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-memory-grants-transact-sql.md)   
  [À l’aide d’appliquer](../../t-sql/queries/from-transact-sql.md#using-apply)   

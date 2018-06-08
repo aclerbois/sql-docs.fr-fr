@@ -1,29 +1,26 @@
 ---
-title: "Mettre à jour les outils d’administration SQL Server | Microsoft Docs"
-ms.custom: 
+title: Mettre à jour les outils d’administration SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - management tools, upgrading
 ms.assetid: 1dab50b9-d16c-49a1-9ecc-af72adb6c378
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.openlocfilehash: 5c0a15d22956bc7b4076bceb2498cdaf2e5c3683
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7846c9f5cfbc15f88a1cc10f38eaa9542f6c0648
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771015"
 ---
 # <a name="upgrade-sql-server-management-tools"></a>Mettre à jour les outils d'administration SQL Server
 

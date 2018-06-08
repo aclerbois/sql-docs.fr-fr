@@ -1,17 +1,16 @@
 ---
 title: Destination de fichier brut | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.rawfiledest.f1
 - sql13.dts.designer.rawfiledestinationconnectionmanager.f1
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - writing raw data
 - Raw File destination
 ms.assetid: d311b458-aefc-4b4d-b1a1-4c0ebbb34214
-caps.latest.revision: 
+caps.latest.revision: 59
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1a9ce999e727a77b303b9978f59dc980b7d2ca21
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: c749048ddfe4bad75f1bf34d40d806fbe1bb1403
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="raw-file-destination"></a>Destination de fichier brut
   La destination de fichier brut écrit des données brutes dans un fichier. Le format des données étant natif pour la destination, les données ne requièrent aucune traduction et peu d'analyse. Cela signifie que la destination de fichier brut peut écrire des données plus rapidement que d'autres destinations telles que les destinations de fichier plat et OLE DB.  

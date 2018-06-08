@@ -1,16 +1,15 @@
 ---
-title: "Propriété ProtocolName (classe ServerNetworkProtocolProperty) | Documents Microsoft"
-ms.custom: 
+title: Propriété ProtocolName (classe ServerNetworkProtocolProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ProtocolName Property (ServerNetworkProtocolProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ProtocolName property
 ms.assetid: b28d7e40-5fd8-4aad-a2a6-b4131d8152b2
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c60fae36ac721ea50303b6b3295984807b21919e
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: c41ede05ec0f47e3fc5719932cb0281a01297695
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="protocolname-property-servernetworkprotocolproperty-class"></a>Propriété ProtocolName (classe ServerNetworkProtocolProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

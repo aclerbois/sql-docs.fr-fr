@@ -2,31 +2,32 @@
 title: Ouvrir une base de connaissances | Microsoft Docs
 ms.custom: ''
 ms.date: 06/04/2013
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.openkb.f1
 ms.assetid: a5f010a5-b762-41c9-881b-bf0c192dca83
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4cf7aa8e7fe21b83ee28a2bf2212823897fef9eb
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: adcef51bfccf2cf6c977037a0e794904c794ee46
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-a-knowledge-base"></a>Ouvrir une base de connaissances
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique explique comment ouvrir une base de connaissances existante dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) et la préparer pour la gestion de l'arborescence du domaine, la découverte des connaissances ou l'ajout d'une stratégie de correspondance.  
   
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  
@@ -84,7 +85,7 @@ ms.lasthandoff: 03/22/2018
 ##  <a name="State"></a> État d'une base de connaissances  
  Le champ État indique l'étape d'une activité à laquelle la base de connaissances se trouve. Si vous ouvrez la base de connaissances, elle s'ouvre à cette étape.  
   
--   **\<Vide>** : le champ État est vide pour une base de connaissances qui a été publiée en cliquant sur **Publier** dans l’activité de gestion de l’arborescence du domaine, puis sur **Oui. Publier la base de connaissances et quitter**.  
+-   **\<Vide>**  : le champ État est vide pour une base de connaissances qui a été publiée en cliquant sur **Publier** dans l’activité de gestion de l’arborescence du domaine, puis sur **Oui. Publier la base de connaissances et quitter**.  
   
 -   **En cours**: le travail effectué dans la base de connaissances a été enregistré en cliquant sur **Publier** dans l'activité de gestion de l'arborescence du domaine, puis sur **Non. Enregistrer le travail dans la base de connaissances et quitter**.  
   

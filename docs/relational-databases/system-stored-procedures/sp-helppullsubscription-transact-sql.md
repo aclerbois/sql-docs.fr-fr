@@ -1,16 +1,15 @@
 ---
 title: sp_helppullsubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helppullsubscription
 ms.assetid: a0d9c3f1-1fe9-497c-8e2f-5b74f47a7346
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e121aacbf65adc239f5474af32a863fc5d65f1f4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ada01ed2c7e447077026e65a9ca5776911b14dcd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelppullsubscription-transact-sql"></a>sp_helppullsubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,13 +48,13 @@ sp_helppullsubscription [ [ @publisher = ] 'publisher' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@publisher=**] **'***publisher***'**  
- Est le nom du serveur distant. *serveur de publication* est **sysname**, avec une valeur par défaut  **%** , qui retourne des informations pour tous les serveurs de publication.  
+ Est le nom du serveur distant. *serveur de publication* est **sysname**, avec une valeur par défaut **%**, qui retourne des informations pour tous les serveurs de publication.  
   
  [  **@publisher_db=**] **'***publisher_db***'**  
- Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, avec une valeur par défaut  **%** , qui retourne toutes les bases de données de serveur de publication.  
+ Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, avec une valeur par défaut **%**, qui retourne toutes les bases de données de serveur de publication.  
   
  [  **@publication=**] **'***publication***'**  
- Nom de la publication. *publication* est **sysname**, avec une valeur par défaut  **%** , qui retourne toutes les publications. Si ce paramètre est égal à ALL, seuls les abonnements extraits avec independent_agent = **0** sont retournées.  
+ Nom de la publication. *publication* est **sysname**, avec une valeur par défaut **%**, qui retourne toutes les publications. Si ce paramètre est égal à ALL, seuls les abonnements extraits avec independent_agent = **0** sont retournées.  
   
  [  **@show_push=**] **'***afficher_envoi***'**  
  Indique si tous les abonnements par envoi de données (push) doivent être retournés. *afficher_envoi*est **nvarchar (5)**, par défaut est FALSE, ne retourne pas les abonnements envoyés.  
@@ -67,14 +65,14 @@ sp_helppullsubscription [ [ @publisher = ] 'publisher' ]
 |-----------------|---------------|-----------------|  
 |**publisher** (serveur de publication)|**sysname**|Nom du serveur de publication.|  
 |**base de données du serveur de publication**|**sysname**|Nom de la base de données du serveur de publication.|  
-|**publication**|**sysname**|Nom de la publication.|  
+|**Publication**|**sysname**|Nom de la publication.|  
 |**independent_agent**|**bit**|Indique s'il existe un Agent de distribution autonome pour cette publication.|  
 |**type d’abonnement**|**int**|Type d'abonnement à la publication.|  
-|**agent de distribution**|**nvarchar (100)**|Agent de distribution traitant l'abonnement.|  
+|**agent de distribution**|**nvarchar(100)**|Agent de distribution traitant l'abonnement.|  
 |**description de la publication**|**nvarchar(255)**|Description de la publication.|  
 |**heure de la dernière mise à jour**|**date**|Heure à laquelle les informations d'abonnement ont été mises à jour. Il s'agit d'une chaîne UNICODE de date ISO (114) et d'heure ODBC (121). Le format est aaaammjj hh:mi:sss.mmm où aaaa représente l'année, mm le mois, jj le jour, hh l'heure, mi les minutes, sss les secondes et mmm les millisecondes.|  
-|**nom de l’abonnement**|**varchar(386)**|Nom de l'abonnement.|  
-|**horodatage de la dernière transaction**|**varbinary (16)**|Horodateur de la dernière transaction dupliquée.|  
+|**Nom de l’abonnement**|**varchar(386)**|Nom de l'abonnement.|  
+|**horodatage de la dernière transaction**|**varbinary(16)**|Horodateur de la dernière transaction dupliquée.|  
 |**mode de mise à jour**|**tinyint**|Types de mise à jour autorisés|  
 |**job_id de l’agent de distribution**|**int**|ID du travail de l'Agent de distribution.|  
 |**enabled_for_synmgr**|**int**|Indique si l'abonnement peut être synchronisé à l'aide du gestionnaire de synchronisation de [!INCLUDE[msCoName](../../includes/msconame-md.md)].|  
@@ -83,8 +81,8 @@ sp_helppullsubscription [ [ @publisher = ] 'publisher' ]
 |**immediate_sync**|**bit**|Indique si les fichiers de synchronisation sont créés ou recréés à chaque exécution de l’Agent d'instantané.|  
 |**connexion du serveur de publication**|**sysname**|ID de connexion utilisé côté serveur de publication pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|  
 |**mot de passe de serveur de publication**|**nvarchar (524)**|Mot de passe (chiffré) utilisé côté serveur de publication pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|  
-|**security_mode du serveur de publication**|**int**|Mode de sécurité implémenté sur le serveur de publication :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification<br /><br /> **1** = authentification Windows<br /><br /> **2** = les déclencheurs de synchronisation utilisent statique **sysservers** entrée pour effectuer l’appel de procédure distante (RPC), et *publisher* doit être défini dans le **sysservers** table en tant que serveur distant ou serveur lié.|  
-|**serveur de distribution**|**sysname**|Nom du serveur de distribution.|  
+|**security_mode du serveur de publication**|**int**|Mode de sécurité implémenté sur le serveur de publication :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification<br /><br /> **1** = authentification Windows<br /><br /> **2** = les déclencheurs de synchronisation utilisent statique **sysservers** entrée pour effectuer l’appel de procédure distante (RPC), et *publisher* doit être défini dans le **sysservers**table en tant que serveur distant ou serveur lié.|  
+|**Serveur de distribution**|**sysname**|Nom du serveur de distribution.|  
 |**argument**|**sysname**|ID de connexion utilisé côté serveur de distribution pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|  
 |**argument**|**nvarchar (524)**|Un mot de passe (chiffré) utilisé sur le serveur de distribution pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification.|  
 |**argument distributor_security_mode**|**int**|Mode de sécurité implémenté sur le serveur de distribution :<br /><br /> **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification<br /><br /> **1** = authentification Windows|  
@@ -112,12 +110,12 @@ sp_helppullsubscription [ [ @publisher = ] 'publisher' ]
 ## <a name="remarks"></a>Notes  
  **sp_helppullsubscription** est utilisé dans la réplication transactionnelle et d’instantané.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_helppullsubscription** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_addpullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addpullsubscription-transact-sql.md)   
- [sp_droppullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-droppullsubscription-transact-sql.md)   
+ [sp_addpullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addpullsubscription-transact-sql.md)   
+ [sp_droppullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-droppullsubscription-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

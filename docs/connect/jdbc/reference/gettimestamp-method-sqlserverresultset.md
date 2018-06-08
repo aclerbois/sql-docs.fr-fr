@@ -1,30 +1,29 @@
 ---
-title: "getTimestamp (méthode) (SQLServerResultSet) | Documents Microsoft"
-ms.custom: 
+title: getTimestamp (méthode) (SQLServerResultSet) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.getTimestamp
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.getTimestamp
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 418d4db1-dfc2-47be-be76-8476265e1740
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b787b58698ab0439fc10862d04f3a0bb3333265f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: df33202a26d3052b5ab161ff844c22e6a521283e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettimestamp-method-sqlserverresultset"></a>getTimestamp (méthode) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -1,31 +1,23 @@
 ---
 title: Relations | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: multidimensional-tabular
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 21e0144a-3cfd-4bc7-87ff-bb7d1800ed2f
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: ff8d2460b53eed9189b230fea270b97e323ac0b9
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: b704b7e2fdc299006d77e08314d2b16ffd750a0a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="relationships"></a>Relations 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Dans les modèles tabulaires, une relation est une connexion entre deux tables de données. La relation établit la façon dont les données des deux tables doivent être mises en corrélation. Par exemple, il est possible de créer une relation entre une table Clients et une table Commandes afin d'indiquer le nom du client associé à chaque commande.  
+  Dans les modèles tabulaires, une relation est une connexion entre deux tables de données. La relation établit la façon dont les données des deux tables doivent être mises en corrélation. Par exemple, il est possible de créer une relation entre une table Clients et une table Commandes afin d'indiquer le nom du client associé à chaque commande.  
   
  Lors de l'utilisation de l'Assistant Importation de table pour effectuer une importation depuis la même source de données, les relations qui existent déjà dans les tables (à la source de données) que vous choisissez d'importer seront recréées dans le modèle. Vous pouvez afficher les relations détectées et recréées automatiquement à l'aide du générateur de modèles dans la vue de diagramme, ou en utilisant la boîte de dialogue Gérer les relations. Vous pouvez également créer des relations entre les tables manuellement à l'aide du générateur de modèles dans la vue de diagramme, ou en utilisant la boîte de dialogue Créer une relation ou Gérer les relations.  
   

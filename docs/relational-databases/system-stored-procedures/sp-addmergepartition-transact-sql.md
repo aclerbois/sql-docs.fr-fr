@@ -1,16 +1,15 @@
 ---
 title: sp_addmergepartition (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergepartition
 ms.assetid: 02a5f46b-e5ff-4932-a3ff-7f0fd82d0981
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e201cc5392379b09b38cf25df2e98ee2dfe96e7d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c8fde5c3b05a29e173e823141d4d34c06860518e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergepartition-transact-sql"></a>sp_addmergepartition (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,13 +46,13 @@ sp_addmergepartition [ @publication = ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publication** =] **'***publication***'**  
+ [ **@publication**=] **'***publication***'**  
  Publication de fusion sur laquelle la partition est créée. *publication* est **sysname**, sans valeur par défaut. Si *suser_sname* est spécifié, la valeur de *nom d’hôte* doit être NULL.  
   
- [  **@suser_sname** =] **'***suser_sname***'**  
+ [ **@suser_sname**=] **'***suser_sname***'**  
  Valeur utilisée lors de la création de la partition pour un abonnement filtré par la valeur de la [SUSER_SNAME](../../t-sql/functions/suser-sname-transact-sql.md) fonction sur l’abonné. *SUSER_SNAME* est **sysname**, sans valeur par défaut.  
   
- [  **@host_name** =] **'***host_name***'**  
+ [ **@host_name**=] **'***host_name***'**  
  Valeur utilisée lors de la création de la partition pour un abonnement filtré par la valeur de la [HOST_NAME](../../t-sql/functions/host-name-transact-sql.md) fonction sur l’abonné. *HOST_NAME* est **sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -66,11 +64,11 @@ sp_addmergepartition [ @publication = ] 'publication'
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_MergeDynamicPubPlusPartition](../../relational-databases/replication/codesnippet/tsql/sp-addmergepartition-tra_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addmergepartition**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer un instantané d’une Publication de fusion avec des filtres paramétrés](../../relational-databases/replication/create-a-snapshot-for-a-merge-publication-with-parameterized-filters.md)   
- [Filtres de lignes paramétrés](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md)  
+ [Parameterized Row Filters](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md)  
   
   

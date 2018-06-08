@@ -1,35 +1,23 @@
 ---
-title: "Contenu pour les modèles de série chronologique du modèle d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- time series algorithms [Analysis Services]
-- time series [Analysis Services]
-- mining model content, time series models
-ms.assetid: bb225387-fbbf-4189-b172-9daa2495fa9c
-caps.latest.revision: 
-author: Minewiskan
+title: Contenu pour les modèles de série chronologique du modèle d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 31909fbe1a60bca85249d7c28b11574a512f442d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 4661c13dd33b8b0c329f93297475fc4185fcbe0a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mining-model-content-for-time-series-models-analysis-services---data-mining"></a>Contenu du modèle d'exploration de données pour les modèles de séries chronologiques (Analysis Services - Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Tous les modèles d'exploration de données utilisent la même structure pour stocker leur contenu. Cette structure est définie d'après l'ensemble de lignes de schéma du contenu de l'exploration de données. Toutefois, dans cette structure standard, les nœuds qui contiennent des informations sont organisés de différentes façons pour représenter différents types d'arbres. Cette rubrique décrit l'organisation des nœuds, ainsi que la signification de chacun, pour les modèles d'exploration de données qui sont basés sur l'algorithme MTS ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series).  
+  Tous les modèles d'exploration de données utilisent la même structure pour stocker leur contenu. Cette structure est définie d'après l'ensemble de lignes de schéma du contenu de l'exploration de données. Toutefois, dans cette structure standard, les nœuds qui contiennent des informations sont organisés de différentes façons pour représenter différents types d'arbres. Cette rubrique décrit l'organisation des nœuds, ainsi que la signification de chacun, pour les modèles d'exploration de données qui sont basés sur l'algorithme MTS ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series).  
   
  Pour une explication du contenu général du modèle d’exploration de données qui s’applique à tous les types de modèles, consultez [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
   
@@ -314,7 +302,7 @@ WHERE NODE_TYPE = 15
 ##  <a name="bkmk_ARIMA_1"></a> Fonctionnement de l'arbre ARIMA  
  Chaque structure d'un modèle ARIMA correspond à une *périodicité* ou *structure périodique*. Une structure périodique est un modèle de données qui se répète dans l'ensemble de la série de données. Une variation mineure dans le modèle est autorisée, dans les limites statistiques. La périodicité est mesurée en fonction des unités de temps par défaut qui ont été utilisées dans les données d'apprentissage. Par exemple, si les données d'apprentissage fournissent les données de ventes pour chaque jour, l'unité de temps par défaut est un jour, et toutes les structures périodiques sont définies sous la forme d'un nombre de jours spécifié.  
   
- Chaque période détectée par l'algorithme obtient son propre nœud de structure. Par exemple, si vous analysez les données de ventes quotidiennes, le modèle peut détecter des structures périodiques qui représentent les semaines. Dans le cas présent, l’algorithme créera deux structures périodiques dans le modèle fini : une pour la période quotidienne par défaut, notée \{1\}, et une pour les semaines, signalée par \{7\}.  
+ Chaque période détectée par l'algorithme obtient son propre nœud de structure. Par exemple, si vous analysez les données de ventes quotidiennes, le modèle peut détecter des structures périodiques qui représentent les semaines. Dans le cas présent, l'algorithme créera deux structures périodiques dans le modèle fini : une pour la période quotidienne par défaut, notée {1}, et une pour les semaines, signalée par {7}.  
   
  Par exemple, la requête suivante retourne toutes les structures ARIMA d'un modèle d'exploration de données.  
   
@@ -378,7 +366,7 @@ AND (NODE_TYPE = 29 or NODE_TYPE = 30)
 ### <a name="time-series-formula-for-arima"></a>Formule de série chronologique pour ARIMA  
  Pour afficher la formule complète pour n'importe quel nœud ARIMA, nous vous recommandons d'utiliser la **légende d'exploration de données** de la [Visionneuse de l'algorithme MTS (Microsoft Time Series)](../../analysis-services/data-mining/browse-a-model-using-the-microsoft-time-series-viewer.md), laquelle présente l'ordre autorégressif, les moyennes mobiles et d'autres éléments de l'équation déjà composés dans un format cohérent.  
   
--   [Afficher la formule d’une série chronologique en mode &#40; exploration de données &#41;](../../analysis-services/data-mining/view-the-formula-for-a-time-series-model-data-mining.md)  
+-   [Afficher la formule d’une série chronologique en mode & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/view-the-formula-for-a-time-series-model-data-mining.md)  
   
  Cette section présente un exemple d'équation et explique la terminologie de base.  
   
@@ -389,7 +377,7 @@ AND (NODE_TYPE = 29 or NODE_TYPE = 30)
   
 `ARIMA ({1,1},0,{1,1.49791920964142,1.10640053499397,0.888873034670339,-5.05429403071953E-02,-0.905265316720334,-0.961908900643379,-0.649991020901922}) Intercept:56.8888888888889`  
   
- Cette équation est le format ARIMA long, qui inclut les valeurs des coefficients et l'ordonnée à l'origine. La forme abrégée de cette équation serait {1,0,7}, où 1 indique la période sous la forme d’un nombre de tranches de temps, 0 indique l’ordre des différences de terme, et 7 indique le nombre de coefficients.  
+ Cette équation est le format ARIMA long, qui inclut les valeurs des coefficients et l'ordonnée à l'origine. La forme abrégée de cette équation serait {1,0,7}, où 1 indique la période sous la forme d’un nombre de tranches de temps, 0 indique l’ordre de différence de terme et 7 indique le nombre de coefficients.  
   
 > [!NOTE]  
 >  Une constante est calculée par Analysis Services pour calculer la variance, mais la constante elle-même n'est pas affichée n'importe où dans l'interface utilisateur. Toutefois, vous pouvez afficher la variance de n'importe quel point de la série sous la forme d'une fonction de cette constante si vous sélectionnez **Afficher les écarts** dans la vue **Graphique** . L'info-bulle de chaque série de données affiche la variance d'un point prédit spécifique.  
@@ -444,7 +432,7 @@ AND (NODE_TYPE = 29 or NODE_TYPE = 30)
  Il peut être difficile de récupérer des informations d'un arbre ARTXP, car les informations relatives à chaque division se trouvent dans un emplacement différent dans l'arbre. Par conséquent, avec un modèle ARTXP, vous devez obtenir toutes les informations, puis procéder à un traitement pour reconstituer la formule complète. L'extraction d'une équation à partir d'un modèle ARIMA est plus simple car la formule est disponible dans l'ensemble de l'arbre. Pour plus d’informations sur la création d’une requête pour récupérer ces informations, consultez [Exemples de requêtes de modèle de série chronologique](../../analysis-services/data-mining/time-series-model-query-examples.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu du modèle d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
+ [Contenu du modèle d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
  [Algorithme de série chronologique de Microsoft](../../analysis-services/data-mining/microsoft-time-series-algorithm.md)   
  [Exemples de requête de modèle de série de temps](../../analysis-services/data-mining/time-series-model-query-examples.md)   
  [Informations techniques de référence sur l’algorithme MTS (Microsoft Time Series)](../../analysis-services/data-mining/microsoft-time-series-algorithm-technical-reference.md)  

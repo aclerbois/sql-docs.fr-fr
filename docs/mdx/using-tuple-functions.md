@@ -1,29 +1,20 @@
 ---
-title: "À l’aide des fonctions de Tuple | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: tuple functions
-ms.assetid: fe41e3e5-a675-4169-a966-b42c18e8d741
-caps.latest.revision: "23"
-author: Minewiskan
+title: À l’aide des fonctions de Tuple | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 23af14ed67fb78fc24873528dddf4b67197f4be0
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: a58be5cbd0ea4101f5be2ebb8e29c1669d7f09f4
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581631"
 ---
 # <a name="using-tuple-functions"></a>Utilisation de fonctions de tuple
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -32,7 +23,7 @@ ms.lasthandoff: 01/08/2018
   
  Les fonctions de tuple, comme les fonctions de membre et les fonctions de définition, sont essentielles à la négociation des structures multidimensionnelles présentes dans [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)].  
   
- Il existe trois fonctions tuple dans MDX, [actuel &#40; MDX &#41; ](../mdx/current-mdx.md), [Élément &#40; Tuple &#41; &#40; MDX &#41; ](../mdx/item-tuple-mdx.md) et [StrToTuple &#40; MDX &#41; ](../mdx/strtotuple-mdx.md). L'exemple de requête suivant montre comment les utiliser :  
+ Il existe trois fonctions tuple dans MDX, [actuel &#40;MDX&#41;](../mdx/current-mdx.md), [élément &#40;Tuple&#41; &#40;MDX&#41; ](../mdx/item-tuple-mdx.md) et [StrToTuple &#40;MDX&#41;](../mdx/strtotuple-mdx.md). L'exemple de requête suivant montre comment les utiliser :  
   
  `WITH`  
   
@@ -57,7 +48,7 @@ ms.lasthandoff: 01/08/2018
  `FROM [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; La syntaxe MDX &#41;](../mdx/functions-mdx-syntax.md)   
+ [Fonctions &#40;syntaxe MDX&#41;](../mdx/functions-mdx-syntax.md)   
  [À l’aide des fonctions membres](../mdx/using-member-functions.md)   
  [Utilisation de fonctions de jeu](../mdx/using-set-functions.md)  
   

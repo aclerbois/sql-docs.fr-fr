@@ -1,15 +1,14 @@
 ---
-title: "À l’aide des Types définis par l’utilisateur | Documents Microsoft"
-ms.custom: 
+title: À l’aide des Types définis par l’utilisateur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - DBPROPSET_DATASOURCEINFO property set
@@ -23,19 +22,19 @@ helpviewer_keywords:
 - data access [SQL Server Native Client], user-defined types
 - ISSCommandWithParameters interface
 ms.assetid: e15d8169-3517-4323-9c9e-0f5c34aff7df
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8092282c18758860ee76f9e61108aa6db1551bc8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 902180da98af11feeccc65295d0f4c1dbdd28727
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="using-user-defined-types"></a>Utilisation des types définis par l'utilisateur
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+[!INCLUDE[appliesto-ss-asdb-xxxx-pdw-md](../../../includes/appliesto-ss-asdb-xxxx-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../../includes/snac-deprecated.md)]
 
   Les types définis par l'utilisateur (UDT) ont été introduits dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)]. Ils étendent le système de type SQL en vous permettant de stocker des objets et des structures de données personnalisées dans un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] base de données. Les UDT peuvent contenir plusieurs types de données et avoir des comportements, ce qui les différencie des types de données d'alias traditionnels qui ne comportent qu'un seul type de données système [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Les UDT sont définis à l'aide de n'importe quel langage pris en charge par le CLR (Common Language Runtime) .NET capable de produire du code vérifiable, Cela inclut Microsoft Visual c#<sup>®</sup> et Visual Basic<sup>®</sup> .NET. Les données sont exposées en tant que champs et propriétés d'une classe ou d'une structure .NET, et les comportements sont définis par des méthodes de la classe ou de la structure.  
@@ -51,9 +50,9 @@ ms.lasthandoff: 01/25/2018
 ### <a name="data-bindings-and-coercions"></a>Liaisons de données et forçages de type  
  Le tableau suivant décrit la liaison et le forçage de type survenant lorsque vous utilisez les types de données répertoriés avec un UDT [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Les colonnes UDT sont exposées via la [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournisseur OLE DB Native Client sous la forme DBTYPE_UDT. Vous pouvez obtenir les métadonnées par le biais des ensembles de lignes de schéma appropriés et ainsi gérer en tant qu'objets vos propres types définis.  
   
-|Type de données|Vers le serveur<br /><br /> **UDT**|Vers le serveur<br /><br /> **non-UDT**|Depuis le serveur<br /><br /> **UDT**|Depuis le serveur<br /><br /> **non-UDT**|  
+|Type de données|Vers le serveur<br /><br /> **UDT**|Vers le serveur<br /><br /> **non UDT**|Depuis le serveur<br /><br /> **UDT**|Depuis le serveur<br /><br /> **non UDT**|  
 |---------------|---------------------------|--------------------------------|-----------------------------|----------------------------------|  
-|DBTYPE_UDT|Prise en charge<sup>6</sup>|Erreur<sup>1</sup>|Prise en charge<sup>6</sup>|Error<sup>5</sup>|  
+|DBTYPE_UDT|Prise en charge<sup>6</sup>|Erreur<sup>1</sup>|Prise en charge<sup>6</sup>|Erreur<sup>5</sup>|  
 |DBTYPE_BYTES|Prise en charge<sup>6</sup>|N/A<sup>2</sup>|Prise en charge<sup>6</sup>|N/A<sup>2</sup>|  
 |DBTYPE_WSTR|Prise en charge<sup>3,6</sup>|N/A<sup>2</sup>|Prise en charge<sup>4,6</sup>|N/A<sup>2</sup>|  
 |DBTYPE_BSTR|Prise en charge<sup>3,6</sup>|N/A<sup>2</sup>|Prise en charge<sup>4</sup>|N/A<sup>2</sup>|  
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/25/2018
 |DBTYPE_VARIANT (VT_UI1 &#124; VT_ARRAY)|Prise en charge<sup>6</sup>|N/A<sup>2</sup>|Prise en charge<sup>4</sup>|N/A<sup>2</sup>|  
 |DBTYPE_VARIANT (VT_BSTR)|Prise en charge<sup>3,6</sup>|N/A<sup>2</sup>|Néant|N/A<sup>2</sup>|  
   
- <sup>1</sup>si un type de serveur autre que DBTYPE_UDT est spécifié avec **ICommandWithParameters::SetParameterInfo** et le type d’accesseur est DBTYPE_UDT, une erreur se produit lorsque l’instruction est exécutée (DB_E_ERRORSOCCURRED ; l’état du paramètre est DBSTATUS_E_BADACCESSOR). Sinon, les données sont envoyées au serveur, mais le serveur retourne une erreur indiquant qu'il n'existe pas de conversion implicite entre l'UDT et le type de données du paramètre.  
+ <sup>1</sup>si un type de serveur autre que DBTYPE_UDT est spécifié avec **ICommandWithParameters::SetParameterInfo** et le type d’accesseur est DBTYPE_UDT, une erreur se produit lorsque l’instruction est exécutée (DB_E_ERRORSOCCURRED ; le état du paramètre est DBSTATUS_E_BADACCESSOR). Sinon, les données sont envoyées au serveur, mais le serveur retourne une erreur indiquant qu'il n'existe pas de conversion implicite entre l'UDT et le type de données du paramètre.  
   
  <sup>2</sup>dépasse le cadre de cette rubrique.  
   
@@ -111,7 +110,7 @@ ms.lasthandoff: 01/25/2018
 |ASSEMBLY_BINARY|DBTYPE_BYTES|Représentation binaire de l'assembly.|  
   
 #### <a name="the-sqlassemblies-dependencies-schema-rowset"></a>Ensemble de lignes de schéma SQL_ASSEMBLIES_ DEPENDENCIES  
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Fournisseur OLE DB du Client natif expose un nouvel ensemble de lignes schéma spécifique au fournisseur qui décrit les dépendances d’assemblys pour un serveur spécifique. ASSEMBLY_SERVER peut être spécifié par l'appelant en tant que DBTYPE_WSTR, mais n'est pas présent dans l'ensemble de lignes. S'il n'est pas spécifié, l'ensemble de lignes aura comme valeur par défaut le serveur actuel. L'ensemble de lignes de schéma SQL_ASSEMBLY_DEPENDENCIES est défini dans le tableau suivant.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Fournisseur OLE DB du Client natif expose un nouvel ensemble de lignes schéma spécifique au fournisseur qui décrit les dépendances d’assemblys pour un serveur spécifique. ASSEMBLY_SERVER peut être spécifié par l'appelant en tant que DBTYPE_WSTR, mais n'est pas présent dans l'ensemble de lignes. S'il n'est pas spécifié, l'ensemble de lignes aura comme valeur par défaut le serveur actuel. L'ensemble de lignes de schéma SQL_ASSEMBLY_DEPENDENCIES est défini dans le tableau suivant.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
@@ -121,7 +120,7 @@ ms.lasthandoff: 01/25/2018
 |REFERENCED_ASSEMBLY_ID|DBTYPE_UI4|ID d'objet de l'assembly référencé.|  
   
 #### <a name="the-sqlusertypes-schema-rowset"></a>Ensemble de lignes de schéma SQL_USER_TYPES  
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Fournisseur OLE DB du Client natif expose les nouvelles lignes du schéma, SQL_USER_TYPES, qui décrit quand les UDT enregistrés pour un serveur spécifié est ajouté. UDT_SERVER doit être spécifié en tant que DBTYPE_WSTR par l'appelant, mais n'est pas présent dans l'ensemble de lignes. L'ensemble de lignes de schéma SQL_USER_TYPES est défini dans le tableau suivant.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Fournisseur OLE DB du Client natif expose les nouvelles lignes du schéma, SQL_USER_TYPES, qui décrit quand les UDT enregistrés pour un serveur spécifié est ajouté. UDT_SERVER doit être spécifié en tant que DBTYPE_WSTR par l'appelant, mais n'est pas présent dans l'ensemble de lignes. L'ensemble de lignes de schéma SQL_USER_TYPES est défini dans le tableau suivant.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
@@ -215,6 +214,6 @@ ms.lasthandoff: 01/25/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctionnalités SQL Server Native Client](../../../relational-databases/native-client/features/sql-server-native-client-features.md)   
- [ISSCommandWithParameters &#40; OLE DB &#41;](../../../relational-databases/native-client-ole-db-interfaces/isscommandwithparameters-ole-db.md)  
+ [ISSCommandWithParameters & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client-ole-db-interfaces/isscommandwithparameters-ole-db.md)  
   
   

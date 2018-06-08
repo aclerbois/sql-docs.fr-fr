@@ -1,27 +1,26 @@
 ---
-title: "Environnement de création du Générateur de rapports (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Environnement de création du Générateur de rapports (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 32be8fcc-e87d-4c45-a644-dff45776a981
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 46f75cd92e385c6992678444f68e9e7c1f2e2d8d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 343372d210fa960ca85ca672e96b0e1aaedf6277
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34550070"
 ---
 # <a name="report-builder-authoring-environment-ssrs"></a>Environnement de création du Générateur de rapports (SSRS)
   Le Générateur de rapports [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] est un environnement autonome dédié à la création de rapports paginés [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en dehors de Visual Studio. Lorsque vous concevez un rapport, vous spécifiez l'emplacement des données à obtenir, leur nature et leur mode d'affichage. Au moment de l'exécution du rapport, le processeur de rapports assimile l'ensemble des informations que vous avez spécifiées, puis il récupère les données et les combine à la mise en page du rapport pour générer le rapport. Vous pouvez l’installer depuis le portail web de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] ou le Centre de téléchargement Microsoft.  
@@ -53,7 +52,6 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="see-also"></a> Voir aussi  
  [Install Report Builder](../../reporting-services/install-windows/install-report-builder.md)   
- [Configurer l'accès au Générateur de rapports](../../reporting-services/report-server/configure-report-builder-access.md)   
  [Outils de Reporting Services](../../reporting-services/tools/reporting-services-tools.md)   
  [Concevoir des rapports à l’aide du Concepteur de rapports &#40;SSRS&#41;](../../reporting-services/tools/design-reporting-services-paginated-reports-with-report-designer-ssrs.md)  
   

@@ -1,34 +1,33 @@
 ---
 title: SQL Server Agent, objet Jobs | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLAgent:Jobs
 - Jobs object
 ms.assetid: 225b5e2d-4a78-4178-b2b6-b419df83c4aa
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f372eced96ca17d4fd547a11a56cfefd732394b9
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: ccbf65c2b1d297b8fd36ef75f84a6a8c09b21175
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="sql-server-agent-jobs-object"></a>Agent SQL Server, Objet Jobs
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet de performance **Jobs** de l’Agent SQL Server contient des compteurs qui fournissent des informations sur les travaux SQL Server Agent. Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
+# <a name="sql-server-agent-jobs-object"></a>SQL Server Agent, objet Jobs
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet de performances **Jobs** de SQL Server Agent contient des compteurs qui fournissent des informations sur les travaux de SQL Server Agent. Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
   
  Le tableau ci-dessous contient les compteurs **SQLAgent:Jobs** .  
   

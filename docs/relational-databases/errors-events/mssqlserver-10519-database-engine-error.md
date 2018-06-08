@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_10519 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 10519 (Database Engine error)
 ms.assetid: 3be393a1-b186-41ae-afb9-a3d07ff354bb
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 562add5fc4182c230540215aac736a9e2bec9cae
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 9eadbaaa786a9e9f882f44b7dfef93d04ae66cd6
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver10519"></a>MSSQLSERVER_10519
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +41,7 @@ Les indicateurs spécifiés dans **@hints** ne peuvent pas être appliqués à l
 ## <a name="user-action"></a>Action de l'utilisateur  
 Spécifiez des indicateurs qui peuvent être appliqués à l'instruction.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [sp_create_plan_guide &#40;Transact-SQL&#41;](~/relational-databases/system-stored-procedures/sp-create-plan-guide-transact-sql.md)  
 [Repères de plan](~/relational-databases/performance/plan-guides.md)  
 [sp_create_plan_guide_from_handle &#40;Transact-SQL&#41;](~/relational-databases/system-stored-procedures/sp-create-plan-guide-from-handle-transact-sql.md)  

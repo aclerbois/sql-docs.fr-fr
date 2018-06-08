@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLDataSourceToDriver | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLDataSourceToDriver
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLDataSourceToDriver
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLDataSourceToDriver
-helpviewer_keywords: SQLDataSourceToDriver function [ODBC]
+f1_keywords:
+- SQLDataSourceToDriver
+helpviewer_keywords:
+- SQLDataSourceToDriver function [ODBC]
 ms.assetid: 0d87fcac-30a0-4303-ad8f-a5b53f4b428d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4d09d649bc53a08ff7389413882bb338d9713ffc
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 742375c2ce4bfc9813c50d0584fe024e383ffd79
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqldatasourcetodriver-function"></a>SQLDataSourceToDriver (fonction)
 **SQLDataSourceToDriver** supportstranslations pour les pilotes ODBC. Cette fonction n’est pas appelée par les applications ODBC compatibles ; applications de demander une traduction via **SQLSetConnectAttr**. Le pilote associé à la *handle de connexion* spécifié dans **SQLSetConnectAttr** appelle la DLL spécifiée pour effectuer des conversions de toutes les données circulent à partir de la source de données pour le pilote. Une DLL de traduction par défaut peut être spécifié dans le fichier d’initialisation ODBC.  

@@ -1,31 +1,30 @@
 ---
-title: "Intégration de Reporting Services à l’aide de l’accès URL | Microsoft Docs"
-ms.custom: 
+title: Intégration de Reporting Services à l’aide de l’accès URL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: application-integration
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - URL access [Reporting Services], about URL access
 - integrating reports [Reporting Services]
 ms.assetid: f1014f7d-fafa-4aa8-8bd2-5bdba835d9b6
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 5f82228cfa6f52195c7d0836fe557aad9da068f2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 73b3b700a3aee874d2f18a0fb00d342cff9ee02b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integrating-reporting-services-using-url-access"></a>Intégration de Reporting Services à l'aide de l'accès URL
   Avec l'accès URL, vous accédez aux rapports via l'URL d'un serveur de rapports. Une demande d'URL vous permet d'accéder à un serveur de rapports spécifique ainsi qu'aux rapports, ressources et autres éléments inclus dans la base de données du serveur de rapports. Vous pouvez également personnaliser la consultation des rapports et la navigation pour vos utilisateurs. La chaîne de requête de l'URL contient des paramètres d'informations de périphérique, ainsi que des paramètres de rapport ciblés sur votre rapport et la sortie de rendu choisie. La façon dont le serveur de rapports gère les demandes d'URL dépend des paramètres, des préfixes de paramètres et du type d'élément auquel vous accédez via l'URL.  

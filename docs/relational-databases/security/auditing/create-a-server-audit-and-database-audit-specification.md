@@ -2,35 +2,34 @@
 title: Créer une spécification de l’audit du serveur et de la base de données | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: security
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.sqlaudit.dbaudit.general.f1
 helpviewer_keywords:
 - audits [SQL Server], creating database specification
 - database audit [SQL Server]
 ms.assetid: 26ee85de-6e97-4318-b526-900924d96e62
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4d306c125bec9e96e82ff8629d27d82bd571bce6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 663273f3c8d445e2a27215d44ec33f16d7fcd466
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-server-audit-and-database-audit-specification"></a>Créer une spécification de l'audit du serveur et de la base de données
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment créer un audit de serveur et une spécification d’audit de base de données dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment créer un audit de serveur et une spécification d'audit de base de données dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
  L'*audit* d'une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou d'une base de données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] implique le suivi et l'enregistrement des événements qui se produisent sur le système. L’objet *Audit SQL Server* recueille une seule instance des actions et des groupes d’actions au niveau du serveur ou de la base de données à surveiller. L'audit s'effectue au niveau de l'instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Vous pouvez exécuter plusieurs audits par instance [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . L’objet *Spécification d’audit de niveau base de données* appartient à un audit. Vous pouvez créer une spécification d'audit de base de données par base de données SQL Server et par audit. Pour plus d’informations, consultez [SQL Server Audit &#40moteur de base de données&#41;](../../../relational-databases/security/auditing/sql-server-audit-database-engine.md).  
   
@@ -59,7 +58,7 @@ ms.lasthandoff: 11/21/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
   
 -   Les utilisateurs disposant de l'autorisation ALTER ANY DATABASE AUDIT peuvent créer des spécifications d'audit de base de données et les lier à un audit quelconque.  
   
@@ -71,7 +70,7 @@ ms.lasthandoff: 11/21/2017
   
 1.  Dans l'Explorateur d'objets, développez le dossier **Sécurité** .  
   
-2.  Cliquez avec le bouton droit sur le dossier **Audits** et sélectionnez **Nouvel audit**. Pour plus d’informations, consultez [Créer un audit du serveur et une spécification d'audit du serveur](../../../relational-databases/security/auditing/create-a-server-audit-and-server-audit-specification.md).  
+2.  Cliquez avec le bouton droit sur le dossier **Audits** et sélectionnez **Nouvel audit**. Pour plus d’informations, consultez [Create a Server Audit and Server Audit Specification](../../../relational-databases/security/auditing/create-a-server-audit-and-server-audit-specification.md).  
   
 3.  Lorsque vous avez fini de sélectionner les options, cliquez sur **OK**.  
   
@@ -136,7 +135,7 @@ ms.lasthandoff: 11/21/2017
   
 #### <a name="to-create-a-database-level-audit-specification"></a>Pour créer une spécification d'audit de niveau base de données  
   
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance du [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   

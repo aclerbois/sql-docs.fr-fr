@@ -1,38 +1,38 @@
 ---
-title: "Prise en charge de SQL Server Integration Services (SSIS) Scale Out pour la haute disponibilité | Microsoft Docs"
+title: Prise en charge de SQL Server Integration Services (SSIS) Scale Out pour la haute disponibilité | Microsoft Docs
 ms.description: This article describes how to configure SSIS Scale Out for high availability
-ms.custom: 
+ms.custom: ''
 ms.date: 12/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: scale-out
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: 
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+caps.latest.revision: 1
 author: haoqian
 ms.author: haoqian
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 906edbe80e7c762cdd9a271218d790edc9da8f5b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 8cd79327b3733de9f7463f1d5f9d8f924b58a46b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scale-out-support-for-high-availability"></a>Prise en charge de Scale Out pour la haute disponibilité
 
 Dans SSIS Scale Out, la haute disponibilité côté Scale Out Worker est fournie par l’exécution de packages avec plusieurs Scale Out Workers.
 
-La haute disponibilité côté Scale Out Master est obtenue avec [Always On pour le catalogue SSIS](../catalog/ssis-catalog.md#always-on-for-ssis-catalog-ssisdb) et le clustering de basculement Windows. Dans cette solution, plusieurs instances de Scale Out Master sont hébergées dans un cluster de basculement Windows. Quand le service Scale Out Master ou SSISDB est arrêté sur le nœud principal, le service ou SSISDB sur le nœud secondaire continue d’accepter les demandes d’utilisateur et de communiquer avec les Scale Out Workers. 
+La haute disponibilité côté Scale Out Master est obtenue avec la fonctionnalité [Always On pour le catalogue SSIS](../catalog/ssis-catalog.md#always-on-for-ssis-catalog-ssisdb) et le cluster de basculement Windows. Dans cette solution, plusieurs instances de Scale Out Master sont hébergées dans un cluster de basculement Windows. Quand le service Scale Out Master ou SSISDB est arrêté sur le nœud principal, le service ou SSISDB sur le nœud secondaire continue d’accepter les demandes d’utilisateur et de communiquer avec les Scale Out Workers.
 
-Pour configurer la haute disponibilité côté Scale Out Master, suivez les étapes ci-dessous :
+La haute disponibilité côté Scale Out Master peut aussi être obtenue au moyen d’une instance de cluster de basculement SQL Server. Consultez [Prise en charge de Scale Out pour la haute disponibilité au moyen d’une instance de cluster de basculement SQL Server](scale-out-failover-cluster-instance.md).
 
-## <a name="1-prerequisites"></a>1. Prerequisites
+Pour configurer la haute disponibilité côté Scale Out Master à l’aide de la fonctionnalité Always On pour le catalogue SSIS, suivez les étapes ci-dessous :
+
+## <a name="1-prerequisites"></a>1. Conditions préalables requises
 Configurez un cluster de basculement Windows. Pour obtenir des instructions, consultez le billet de blog [Installing the Failover Cluster Feature and Tools for Windows Server 2012](http://blogs.msdn.com/b/clustering/archive/2012/04/06/10291601.aspx). Installez la fonctionnalité et les outils sur tous les nœuds de cluster.
 
 ## <a name="2-install-scale-out-master-on-the-primary-node"></a>2. Installer Scale Out Master sur le nœud principal

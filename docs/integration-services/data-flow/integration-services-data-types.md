@@ -1,17 +1,16 @@
 ---
-title: "Types de données d’Integration Services | Microsoft Docs"
-ms.custom: 
+title: Types de données d’Integration Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modifying data types
 - data types [Integration Services], listed
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - Integration Services, data types
 - SQL Server Integration Services, data types
 ms.assetid: 896fc3e8-3aa6-4396-ba82-5d7741cffa56
-caps.latest.revision: 
+caps.latest.revision: 98
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 2b27cb51a9b5090fc8495de50c597579eb100f6f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: fce885002fc8dd2870480327ed575b77332ed0d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-data-types"></a>Types de données d'Integration Services
   Quand des données entrent dans un flux de données dans un package, la source qui extrait les données les convertit en type [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Les données numériques se voient attribuer le type de données numeric, les données chaînes le type de données character et les dates le type de données date. Le type de données [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] approprié est également affecté aux autres données, comme les GUID et les BLOB (Binary Large Object Blocks). Si le type des données ne peut pas être converti en un type de données [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] , une erreur se produit.  

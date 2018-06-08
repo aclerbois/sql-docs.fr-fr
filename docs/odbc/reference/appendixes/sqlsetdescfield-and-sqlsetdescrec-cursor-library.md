@@ -1,30 +1,27 @@
 ---
-title: "SQLSetDescField et SQLSetDescRec (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLSetDescField et SQLSetDescRec (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLSetDescField function [ODBC], Cursor Library
 - SQLSetDescRec function [ODBC], Cursor Library
 ms.assetid: 4ccff067-85cd-4bfa-a6cd-7f28051fb5b9
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0a2270562c702ab309f505f37de91aeef24518c9
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 04c3fd1c3c64140b7669cdeeb35937498249ac66
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetdescfield-and-sqlsetdescrec-cursor-library"></a>SQLSetDescField et SQLSetDescRec (bibliothèque de curseurs)
 > [!IMPORTANT]  
@@ -60,7 +57,7 @@ ms.lasthandoff: 12/21/2017
   
  La bibliothèque de curseurs exécute les appels à **SQLSetDescRec** pour une colonne de signet.  
   
- Lorsque vous travaillez avec une API ODBC 2. *x* pilote, la bibliothèque de curseurs retourne SQLSTATE HY090 (longueur de chaîne ou une mémoire tampon non valide) lorsque **SQLSetDescField** ou **SQLSetDescRec** est appelée pour définir le champ SQL_DESC_OCTET_LENGTH pour l’enregistrement de signet d’un ARD à une valeur non égale à 4. Lorsque vous travaillez avec un ODBC 3*.x* pilote, la bibliothèque de curseurs permet d’être n’importe quelle taille de la mémoire tampon.  
+ Lorsque vous travaillez avec une API ODBC 2. *x* pilote, la bibliothèque de curseurs retourne SQLSTATE HY090 (longueur de chaîne ou une mémoire tampon non valide) lorsque **SQLSetDescField** ou **SQLSetDescRec** est appelée pour définir le champ SQL_DESC_OCTET_LENGTH pour l’enregistrement de signet d’un ARD à une valeur non égale à 4. Lorsque vous travaillez avec un ODBC 3 *.x* pilote, la bibliothèque de curseurs permet d’être n’importe quelle taille de la mémoire tampon.  
   
  La bibliothèque de curseurs exécute **SQLSetDescField** lorsqu’elle est appelée pour retourner la valeur du champ SQL_DESC_BIND_OFFSET_PTR, SQL_DESC_BIND_TYPE, SQL_DESC_ROW_ARRAY_SIZE ou SQL_DESC_ROW_STATUS_PTR. Ces champs peuvent être retournées pour toute ligne, et pas seulement la ligne du signet.  
   

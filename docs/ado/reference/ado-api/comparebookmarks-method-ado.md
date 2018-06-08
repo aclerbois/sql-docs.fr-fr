@@ -1,17 +1,15 @@
 ---
-title: "CompareBookmarks, méthode (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: CompareBookmarks, méthode (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - CompareBookmarks
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - CompareBookmarks method [ADO]
 ms.assetid: d0b64286-2cc4-4a22-8f1d-9aefeebbcbc6
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 431ffdb1a2be03404b4d0c3636f547b6c8cf8514
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f17b1bbb0793e06a5ecbbec393fd87ebcdbc311e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comparebookmarks-method-ado"></a>CompareBookmarks, méthode (ADO)
 Compare deux signets et retourne une indication de leurs valeurs relatives.  

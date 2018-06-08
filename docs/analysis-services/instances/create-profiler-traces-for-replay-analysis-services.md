@@ -1,37 +1,19 @@
 ---
-title: "Créer des Traces du Générateur de profils pour la relecture (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 01/23/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Profiler, Analysis Services
-- monitoring Analysis Services [SQL Server]
-- replaying queries
-- replaying discovers
-- events [Analysis Services]
-- replaying commands
-- Profiler [SQL Server Profiler], Analysis Services
-- performance [Analysis Services], replays
-- traces [Analysis Services]
-ms.assetid: 93b2fc46-7cfb-4ab5-abeb-1475a7d6f0f2
-caps.latest.revision: 
-author: Minewiskan
+title: Créer des Traces du Générateur de profils pour la relecture (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4fa41a17d09371375ea9b5193542a8df2fc216a4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d5928325ffe5b0b98da2058529b1cbb036a445be
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-profiler-traces-for-replay-analysis-services"></a>Créer des traces de SQL Server Profiler pour la relecture (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]

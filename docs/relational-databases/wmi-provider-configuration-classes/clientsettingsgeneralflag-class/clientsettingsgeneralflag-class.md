@@ -1,15 +1,14 @@
 ---
 title: Classe ClientSettingsGeneralFlag | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ClientSettingsGeneralFlag Class
@@ -18,16 +17,15 @@ apilocation:
 helpviewer_keywords:
 - ClientSettingsGeneralFlag class
 ms.assetid: 8a0291a8-e8ef-42f6-a521-079410c5eeb1
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa9e3b7f9cb464e4f54cf4e243918205775e51f0
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 5b5f31da0176ee4ae532eef88a55abd2d4665236
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clientsettingsgeneralflag-class"></a>Classe ClientSettingsGeneralFlag
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

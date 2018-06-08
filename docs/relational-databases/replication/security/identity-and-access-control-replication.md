@@ -1,33 +1,31 @@
 ---
-title: "Identité et contrôle d’accès (réplication) | Microsoft Docs"
-ms.custom: 
+title: Identité et contrôle d’accès (réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - access controls [SQL Server replication]
 - security [SQL Server replication], identity and access control
 - authentication [SQL Server replication]
 - identity [Replication]
 ms.assetid: 4da0e793-1ee4-4f69-a80b-45c6732a238d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e7176da9df853b1d0621defe53f48301eb1ed021
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: ca8cbf2c68de39fc5f918390246a762955cf48a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identity-and-access-control-replication"></a>Identité et contrôle d'accès (réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

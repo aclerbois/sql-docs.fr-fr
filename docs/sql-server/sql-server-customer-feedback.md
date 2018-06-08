@@ -1,25 +1,22 @@
 ---
-title: "Configurer SQL Server pour envoyer des commentaires à Microsoft | Microsoft Docs"
-description: 
+title: Configurer SQL Server pour envoyer des commentaires à Microsoft | Microsoft Docs
+description: ''
 author: annashres
 ms.author: anshrest
-manager: jhubbard
+manager: craigg
 ms.date: 07/12/2017
-ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.topic: conceptual
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
 ms.suite: sql
-ms.custom: 
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: Inactive
-ms.openlocfilehash: c379c070e94a9bd54ed98c439c6185430ac4e2a5
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+ms.custom: ''
+ms.technology: configuration
+ms.openlocfilehash: 6684d58710b8be2cf96e06029792836cab9c69a3
+ms.sourcegitcommit: df382099ef1562b5f2d1cd506c1170d1db64de41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="configure-sql-server-to-send-feedback-to-microsoft"></a>Configurer SQL Server pour envoyer des commentaires à Microsoft
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -54,7 +51,7 @@ Sachez que ce processus se concentre sur les mécanismes nécessaires pour offri
 - avec l’application de rapports d’erreurs et d’utilisation ;
 - en définissant des sous-clés de Registre sur le serveur.
 
-Pour SQL Server sur Linux, consultez la page [Commentaires client pour SQL Server sur Linux](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-customer-feedback.md).
+Pour SQL Server sur Linux, consultez la page [Commentaires client pour SQL Server sur Linux](https://docs.microsoft.com/sql/linux/sql-server-linux-customer-feedback).
 
 > [!NOTE]
 > Vous ne pouvez désactiver l’envoi d’informations à Microsoft que dans les versions payantes de SQL Server.
@@ -109,15 +106,15 @@ Les clients d’entreprise peuvent configurer les paramètres de stratégie de g
 
     Type d’entrée DWORD : 0 pour accepter ; 1 pour refuser
 
-En outre, pour désactiver les rapports d’utilisation et d’erreurs au niveau de Visual Studio, définissez la sous-clé de Registre et les paramètres suivants :
+    De plus, SSMS 17.x est basé sur l’interpréteur de commandes (shell) Visual Studio 2015, et l’installation de Visual Studio active les commentaires client par défaut.  
 
--    Subkey = HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\Telemetry
+    Pour configurer Visual Studio de façon à désactiver les commentaires client sur des ordinateurs individuels, attribuez à la sous-clé de Registre suivante la chaîne « 0 » :  
+    HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM OptIn
 
--    Nom RegEntry = TurnOffSwitch
+    Par exemple, modifiez la sous-clé comme suit :  
+    HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\VisualStudio\SQM OptIn="0")
 
--    Type d’entrée DWORD : 0 pour accepter ; 1 pour refuser
- 
-La stratégie de groupe basée sur le Registre pour ces sous-clés de Registre est respectée par la collecte des données d’utilisation de SQL Server 2017.
+    La stratégie de groupe basée sur le Registre pour ces sous-clés de Registre est respectée par la collecte des données d’utilisation de SQL Server 2017.
 
 ## <a name="set-registry-subkeys-for-crash-dump-collection"></a>Définir des sous-clés de Registre pour la collecte des vidages sur incident
 

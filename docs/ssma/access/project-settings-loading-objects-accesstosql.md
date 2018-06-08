@@ -1,35 +1,33 @@
 ---
-title: "Paramètres (chargement d’objets) du projet (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (chargement d’objets) du projet (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 9ec1c1e8-a3e1-4e81-bf49-631f87daa209
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: da86fe46153ede299a41a2b4e308f1b5b51f6947
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a12bdcd556504eaed7e0472b6e20e70f876b4275
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-loading-objects-accesstosql"></a>Paramètres (chargement d’objets) du projet (AccessToSQL)
 Les paramètres du projet du chargement des objets vous permettent de configurer le mode de synchronisation des objets de base de données Access avec des objets de base de données SQL Server.  
   
-Les actions par défaut spécifient les paramètres par défaut pour l’actualisation des objets à partir de la base de données Access et pour la synchronisation des objets avec la base de données SQL Server. Pour plus d’informations, consultez [Actualiser à partir de la base de données &#40; AccessToSQL &#41;](../../ssma/access/refresh-from-database-accesstosql.md)  
+Les actions par défaut spécifient les paramètres par défaut pour l’actualisation des objets à partir de la base de données Access et pour la synchronisation des objets avec la base de données SQL Server. Pour plus d’informations, consultez [Actualiser à partir de la base de données &#40;AccessToSQL&#41;](../../ssma/access/refresh-from-database-accesstosql.md)  
   
 Vous pouvez accéder à deux pages différentes synchronisation qui contiennent les mêmes paramètres :  
   

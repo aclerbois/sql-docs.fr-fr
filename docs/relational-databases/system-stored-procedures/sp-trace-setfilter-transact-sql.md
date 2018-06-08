@@ -1,16 +1,14 @@
 ---
-title: sp_trace_setfilter (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_trace_setfilter (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_trace_setfilter
@@ -20,21 +18,20 @@ dev_langs:
 helpviewer_keywords:
 - sp_trace_setfilter
 ms.assetid: 11e7c7ac-a581-4a64-bb15-9272d5c1f7ac
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 82c7d580f8ff94e0d7fb4452d1608f93b776fe3b
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: dc23abf114ce4458f40051db3d2bb86b667efca5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptracesetfilter-transact-sql"></a>sp_trace_setfilter (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
-  Applique un filtre à une trace. **sp_trace_setfilter** peut être exécutée uniquement sur les traces existantes qui sont arrêtées (*état* est **0**). [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Retourne une erreur si cette procédure stockée est exécutée sur une trace qui n’existe pas ou dont le *état* n’est pas **0**.  
+  Applique un filtre à une trace. **sp_trace_setfilter** peut être exécutée uniquement sur les traces existantes qui sont arrêtées (*état* est **0**). [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Retourne une erreur si cette procédure stockée est exécutée sur une trace qui n’existe pas ou dont le *état* n’est pas **0**.  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez plutôt des événements étendus.  
@@ -53,16 +50,16 @@ sp_trace_setfilter [ @traceid = ] trace_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@traceid=** ] *trace_id*  
+ [  **@traceid=** ] *trace_id*  
  ID de la trace sur laquelle le filtre est défini. *l’argument trace_id* est **int**, sans valeur par défaut. L’utilisateur emploie cette *trace_id* valeur pour identifier, modifier et contrôler la trace.  
   
- [ **@columnid=** ] *column_id*  
+ [  **@columnid=** ] *column_id*  
  ID de la colonne sur laquelle le filtre est appliqué *column_id* est **int**, sans valeur par défaut. Si *column_id* est NULL, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] efface tous les filtres de la trace spécifiée.  
   
- [ **@logical_operator** = ] *logical_operator*  
+ [ **@logical_operator** =] *logical_operator*  
  Spécifie si l’AND (**0**) ou OR (**1**) opérateur est appliqué. *logical_operator* est **int**, sans valeur par défaut.  
   
- [ **@comparison_operator=** ] *comparison_operator*  
+ [  **@comparison_operator=** ] *opérateur_de_comparaison*  
  Spécifie le type de comparaison à effectuer. *opérateur_comparaison* est **int**, sans valeur par défaut. Le tableau contient les opérateurs de comparaison et leurs valeurs.  
   
 |Valeur|Opérateur de comparaison|  
@@ -76,7 +73,7 @@ sp_trace_setfilter [ @traceid = ] trace_id
 |**6**|LIKE|  
 |**7**|Ne correspond pas à|  
   
- [ **@value=** ] *value*  
+ [  **@value=** ] *valeur*  
  Indique la valeur sur laquelle appliquer le filtre. Type de données de *valeur* doit correspondre au type de données de la colonne à filtrer. Par exemple, si le filtre est défini sur une colonne d’ID d’objet qui est un **int** type de données, *valeur* doit être **int**. Si *valeur* est **nvarchar** ou **varbinary**, il peut avoir une longueur maximale de 8 000.  
   
  Lorsque l'opérateur de comparaison est LIKE ou NOT LIKE, l'opérateur logique peut inclure « % » ou tout autre filtre approprié pour l'opération LIKE.  

@@ -1,27 +1,24 @@
 ---
 title: Notes de publication de SQL Server 2012 Service Pack | Microsoft Docs
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
-ms.component: sql-non-specified
-ms.technology: server-general
-ms.custom: 
+ms.prod: sql
+ms.prod_service: sql
+ms.technology: supportability
+ms.custom: ''
 ms.date: 2/26/2018
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 67cb8b3e-3d82-47f4-840d-0f12a3bff565
-caps.latest.revision: 
 author: craigg-msft
 ms.author: craigg
 manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e0aa6379b2d0a0675c0ebc999e3fcee603d5b5fb
-ms.sourcegitcommit: 6e819406554efbd17bbf84cf210d8ebeddcf772d
+monikerRange: = sql-server-2014 || = sqlallproducts-allversions
+ms.openlocfilehash: 5396011be5ce84816d83a4c85da120cb896b44bd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-2012-service-pack-release-notes"></a>Notes de publication de SQL Server 2012 Service Pack
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

@@ -1,42 +1,34 @@
 ---
-title: "Vue d’ensemble de la sécurité (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: security [Analysis Services - data mining], about security
-ms.assetid: 387bde00-bcf3-4612-b27b-f9f608dbf71e
-caps.latest.revision: "12"
-author: Minewiskan
+title: Vue d’ensemble de la sécurité (exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5907b147aa4e06adfadaa2b56820088846d3fdd7
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 8cf7958cdde480bf48c26dfed7e3056385439a4d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="security-overview-data-mining"></a>Vue d'ensemble de la sécurité (exploration de données)
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Le processus de protection [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] se produit à plusieurs niveaux. Vous devez sécuriser chaque instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et ses sources de données pour vous assurer que seuls les utilisateurs autorisés disposent d'autorisations de lecture/écriture sur les dimensions, les modèles d'exploration de données et les sources de données sélectionnés. Vous devez également sécuriser les sources de données sous-jacentes pour empêcher les utilisateurs non autorisés de compromettre volontairement les informations professionnelles sensibles. Le processus de sécurisation d’une instance de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est décrit dans les rubriques suivantes.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  La sécurisation de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] a lieu à plusieurs niveaux. Vous devez sécuriser chaque instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et ses sources de données pour vous assurer que seuls les utilisateurs autorisés disposent d'autorisations de lecture/écriture sur les dimensions, les modèles d'exploration de données et les sources de données sélectionnés. Vous devez également sécuriser les sources de données sous-jacentes pour empêcher les utilisateurs non autorisés de compromettre volontairement les informations professionnelles sensibles. Le processus de sécurisation d’une instance de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est décrit dans les rubriques suivantes.  
   
 ##  <a name="bkmk_Architecture"></a> Architecture de la sécurité  
- Consultez les ressources suivantes pour en savoir plus sur l'architecture de sécurité de base d'une instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], notamment sur la manière dont [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] utilise l'authentification Windows de [!INCLUDE[msCoName](../../includes/msconame-md.md)] pour authentifier l'accès utilisateur.  
+ Consultez les ressources suivantes pour en savoir plus sur l'architecture de sécurité de base d'une instance d'[!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], notamment sur la manière dont [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] utilise l'authentification Windows de [!INCLUDE[msCoName](../../includes/msconame-md.md)] pour authentifier l'accès utilisateur.  
   
--   [Rôles de sécurité &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data.md)  
+-   [Rôles de sécurité & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models/olap-logical/security-roles-analysis-services-multidimensional-data.md)  
   
 -   [Propriétés de sécurité](../../analysis-services/server-properties/security-properties.md)  
   
--   [Configurer les comptes de service &#40;Analysis Services&#41;](../../analysis-services/instances/configure-service-accounts-analysis-services.md)  
+-   [Configurer les comptes de Service & #40 ; Analysis Services & #41 ;](../../analysis-services/instances/configure-service-accounts-analysis-services.md)  
   
--   [Autorisation de l’accès à des objets et des opérations &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/authorizing-access-to-objects-and-operations-analysis-services.md)  
+-   [Autorisation d’accès aux objets et les opérations de & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/authorizing-access-to-objects-and-operations-analysis-services.md)  
   
 ##  <a name="bkmk_Logon"></a> Configuration du compte d'ouverture de session d'Analysis Services  
  Vous devez sélectionner un compte d’ouverture de session approprié pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et définir ses autorisations. Vous devez vérifier que le compte d’ouverture de session [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] dispose uniquement des autorisations indispensables pour effectuer les tâches nécessaires, notamment les autorisations appropriées sur les sources de données sous-jacentes.  
@@ -61,6 +53,6 @@ ms.lasthandoff: 01/08/2018
  Si vous utilisez des packages Integration Services pour nettoyer des données, pour mettre à jour des modèles d'exploration de données ou pour élaborer des prédictions, vous devez vous assurer que le service Integration Services dispose des autorisations appropriées sur la base de données dans laquelle le modèle est stocké et sur les données sources.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Rôles et autorisations &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/roles-and-permissions-analysis-services.md)  
+ [Rôles et autorisations & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/roles-and-permissions-analysis-services.md)  
   
   

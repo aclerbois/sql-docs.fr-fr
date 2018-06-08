@@ -1,30 +1,27 @@
 ---
 title: SQLGetInfo (pilote du fichier texte) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLGetInfo function [ODBC], Text File Driver
 - text file driver [ODBC], SQLGetInfo
 ms.assetid: 6b7a630e-47f8-4ee1-b2a7-476bc1d0b0d4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7e8a4b2d890fa257b29049ca4374f475a4b80f57
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 9645b3148c3a3a391a65f158a4d8d28471239d36
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetinfo-text-file-driver"></a>SQLGetInfo (pilote du fichier texte)
 > [!NOTE]  
@@ -42,12 +39,12 @@ ms.lasthandoff: 12/21/2017
   
 ## <a name="sqldbmsver"></a>SQL_DBMS_VER  
   
-|ISAM|Options de version|Format des numéros de version|  
+|ISAM|Version|Format des numéros de version|  
 |----------|-------------|-------------------------------|  
 |Texte|1.0|01.00.0000|  
   
 ## <a name="sqlcatalogusage"></a>SQL_CATALOG_USAGE  
- SQL_QU_DML_STATEMENTS &#124; SQL_QU_TABLE_DEFINITION  
+ SQL_QU_DML_STATEMENTS &AMP;#124; SQL_QU_TABLE_DEFINITION  
   
 ## <a name="sqltimedatefunctions"></a>SQL_TIMEDATE_FUNCTIONS  
- SQL_FN_TD_CURDATE &#124;  SQL_FN_TD_CURTIME &#124;  SQL_FN_TD_DAYOFMONTH &#124;  SQL_FN_TD_DAYOFWEEK &#124; SQL_FN_TD_DAYOFYEAR &#124;  SQL_FN_TD_HOUR &#124; SQL_FN_TD_MINUTE &#124; SQL_FN_TD_MONTH &#124;  SQL_FN_TD_NOW &#124; SQL_FN_TD_SECOND &#124; SQL_FN_TD_WEEK &#124; SQL_FN_TD_YEAR
+ SQL_FN_TD_CURDATE &AMP;#124; SQL_FN_TD_CURTIME &AMP;#124; SQL_FN_TD_DAYOFMONTH &AMP;#124; SQL_FN_TD_DAYOFWEEK &AMP;#124; SQL_FN_TD_DAYOFYEAR &AMP;#124; SQL_FN_TD_HOUR &AMP;#124; SQL_FN_TD_MINUTE &AMP;#124; SQL_FN_TD_MONTH &AMP;#124; SQL_FN_TD_NOW &AMP;#124; SQL_FN_TD_SECOND &AMP;#124; SQL_FN_TD_WEEK &AMP;#124; SQL_FN_TD_YEAR

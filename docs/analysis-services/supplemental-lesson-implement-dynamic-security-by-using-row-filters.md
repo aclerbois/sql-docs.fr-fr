@@ -1,26 +1,19 @@
 ---
-title: "Implémenter la sécurité dynamique à l’aide de filtres de lignes | Documents Microsoft"
-ms.custom: 
-ms.date: 04/10/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: 
-ms.assetid: 
-author: Minewiskan
+title: Implémenter la sécurité dynamique à l’aide de filtres de lignes | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.openlocfilehash: 51ffec7f5fc4d5d6d44ff1dbab0e4a20827f6718
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 157da34809a2ff7d9d5b3115eccfef1e386032eb
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="supplemental-lesson---implement-dynamic-security-by-using-row-filters"></a>Leçon supplémentaire - implémenter la sécurité dynamique à l’aide de filtres de lignes
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -35,7 +28,7 @@ Pour pouvoir effectuer cette leçon supplémentaire, vous allez accomplir une su
   
 Durée estimée pour effectuer cette leçon : **30 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Cette leçon supplémentaire fait partie d’un didacticiel de modélisation tabulaire, qui doit être suivi dans l’ordre. Avant d'effectuer les tâches de cette leçon supplémentaire, vous devez avoir terminé toutes les leçons précédentes.  
   
 ## <a name="add-the-dimsalesterritory-table-to-the-aw-internet-sales-tabular-model-project"></a>Ajoutez la table dimSalesTerritory au projet Modèle tabulaire AW Internet Sales.  

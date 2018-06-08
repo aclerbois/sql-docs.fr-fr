@@ -1,34 +1,30 @@
 ---
-title: "SQL:StmtStarting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SQL:StmtStarting, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL:StmtStarting event class
 ms.assetid: ae97386c-9dbf-456d-bcbc-391931775fa3
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0fab84983199bbeeb3f092fa6474ed615cb28bbc
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 83e1de958f6e7c1c1f47457fdc8d3410516585ac
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlstmtstarting-event-class"></a>SQL:StmtStarting (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SQL:StmtStarting indique qu'une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] a démarré.  
+  La classe d'événements SQL:StmtStarting indique qu'une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] a démarré.  
   
 ## <a name="sqlstmtstarting-event-class-data-columns"></a>Colonnes de données de la classe d'événements SQL:StmtStarting  
   

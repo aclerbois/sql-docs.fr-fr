@@ -1,16 +1,15 @@
 ---
-title: "Création et gestion de projets (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Création et gestion de projets (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - saving metadata
 - saving projects
 ms.assetid: f2d1f0b0-5394-4adb-b3f3-abd71eb68ca7
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 89cab1239b3465f4add8ceb265a621e2ebac5d87
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4025227271ed2c73d11aef838ef902e2438b2dce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-and-managing-projects-accesstosql"></a>Création et gestion de projets (AccessToSQL)
 Pour migrer des bases de données Access [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, vous devez d’abord créer un projet SSMA. Le projet est un fichier qui contient des métadonnées sur les bases de données Access que vous souhaitez migrer vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, les métadonnées relatives à l’instance cible de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure qui recevra les données, les objets migrés [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] informations de connexion et les paramètres du projet.  

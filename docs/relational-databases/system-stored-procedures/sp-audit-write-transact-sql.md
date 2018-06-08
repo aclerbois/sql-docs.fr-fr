@@ -1,16 +1,14 @@
 ---
 title: sp_audit_write (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_audit_write
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_audit_write
 ms.assetid: 4c523848-1ce6-49ad-92b3-e0e90f24f1c2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 10c74597481f6274485b894c30ac6946bb75fd8a
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 84b7ea14b205b2642c8c67c24793310ca8245832
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spauditwrite-transact-sql"></a>sp_audit_write (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -50,13 +47,13 @@ sp_audit_write [ @user_defined_event_id =  ] user_defined_event_id ,
   
 ## <a name="arguments"></a>Arguments  
  **@user_defined_event_id**  
- Un paramètre défini par l’utilisateur et enregistré dans le **user_defined_event_id** colonne du journal d’audit. *@user_defined_event_id*est de type **smallint**.  
+ Un paramètre défini par l’utilisateur et enregistré dans le **user_defined_event_id** colonne du journal d’audit. *@user_defined_event_id* est de type **smallint**.  
   
  **@succeeded**  
- Paramètre passé par l'utilisateur pour indiquer si l'événement a ou non réussi. Il apparaît dans la colonne succeeded du journal d'audit. *@succeeded*est **bits**.  
+ Paramètre passé par l'utilisateur pour indiquer si l'événement a ou non réussi. Il apparaît dans la colonne succeeded du journal d'audit. *@succeeded* est **bits**.  
   
  **@user_defined_information**  
- Texte défini par l'utilisateur et enregistré dans la nouvelle colonne user_defined_event_id du journal d'audit. *@user_defined_information*est **nvarchar (4000)**.  
+ Texte défini par l'utilisateur et enregistré dans la nouvelle colonne user_defined_event_id du journal d'audit. *@user_defined_information* est **nvarchar (4000)**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
@@ -66,7 +63,7 @@ sp_audit_write [ @user_defined_event_id =  ] user_defined_event_id ,
 ## <a name="remarks"></a>Notes  
  Lorsque le **USER_DEFINED_AUDIT_GROUP** est ajouté à une spécification d’audit de serveur ou d’une spécification d’audit de base de données, l’événement déclenché par **sp_audit_write** seront inclus dans le journal d’audit.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance dans le **public** rôle de base de données.  
   
 ## <a name="examples"></a>Exemples  
@@ -89,7 +86,7 @@ EXEC sp_audit_write 27, 0;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [sys.server_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md)   
  [sp_addrole &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addrole-transact-sql.md)   
  [CREATE USER &#40;Transact-SQL&#41;](../../t-sql/statements/create-user-transact-sql.md)   

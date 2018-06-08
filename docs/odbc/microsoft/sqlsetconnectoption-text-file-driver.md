@@ -1,30 +1,27 @@
 ---
 title: SQLSetConnectOption (pilote du fichier texte) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLSetConnectOption function [ODBC], Text File Driver
 - text file driver [ODBC], SQLSetConnectOption
 ms.assetid: b631a20c-2f60-4102-a61d-93b8780a4620
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8c03e4c6d53d9ae5055135b8dd4fe76509a448e3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d34dc364c339d147b73bdce5258bdaaa62d41e16
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetconnectoption-text-file-driver"></a>SQLSetConnectOption (pilote du fichier texte)
 > [!NOTE]  

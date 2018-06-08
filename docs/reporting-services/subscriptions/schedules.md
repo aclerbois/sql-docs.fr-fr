@@ -1,16 +1,15 @@
 ---
 title: Planifications | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/01/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - schedules [Reporting Services]
 - schedules [Reporting Services], about schedules
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - subscriptions [Reporting Services], scheduling
 - automatic report processing
 ms.assetid: ecccd16b-eba9-4e95-b55d-f15c621e003f
-caps.latest.revision: "51"
+caps.latest.revision: 51
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d148c29185b72fe433a34034993342afa61970be
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: ff16cd9d2794ded1d6b841a14d4ee01f45a9f9d6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schedules"></a>Planifications
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] fournit des **planifications partagées** et des **planifications spécifiques aux rapports** pour vous aider à contrôler le traitement et la distribution des rapports. La différence entre ces deux types de planifications réside dans la façon dont elles sont définies, stockées et gérées. La construction interne des deux types de planifications est la même. Toutes les planifications spécifient un type de périodicité : mensuelle, hebdomadaire ou quotidienne. Dans le type de périodicité, vous définissez les intervalles et la plage pour configurer la fréquence à laquelle un événement se produit. Qu'il s'agisse de créer une planification partagée ou une planification spécifique aux rapports, le type de périodicité et la façon dont elle est spécifiée restent inchangés.

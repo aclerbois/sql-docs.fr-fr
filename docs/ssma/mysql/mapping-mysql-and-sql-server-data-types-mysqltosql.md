@@ -1,16 +1,15 @@
 ---
-title: "Mappage des Types de données SQL Server (MySQLToSQL) et de MySQL | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Mappage des Types de données SQL Server (MySQLToSQL) et de MySQL | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,22 +17,21 @@ helpviewer_keywords:
 - Mapping, customize data type mapping
 - Mapping, Type mapping
 ms.assetid: 14f98054-13b4-4231-a6b0-2452f3b9941d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 265030255071cb9292cf5604320d98c447173928
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d35530153b4e26f865b6fd8fefa102718752dafa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-mysql-and-sql-server-data-types-mysqltosql"></a>Mappage des Types de données SQL Server (MySQLToSQL) et MySQL
 Les types de base de données MySQL diffèrent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou les types de base de données SQL Azure. Lorsque vous convertissez des objets de base de données MySQL à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou des objets de SQL Azure, vous devez spécifier le mappage des types de données de MySQL vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure. Vous pouvez accepter les mappages de type de données par défaut, ou vous pouvez personnaliser les mappages comme indiqué dans les procédures suivantes.  
   
 ## <a name="default-mappings"></a>Mappages par défaut  
-SSMA a un jeu de mappages de types de données. Pour obtenir la liste des mappages par défaut, consultez [paramètres du projet &#40; Mappage de type &#41; &#40; MySQLToSQL &#41; ](../../ssma/mysql/project-settings-type-mapping-mysqltosql.md).  
+SSMA a un jeu de mappages de types de données. Pour obtenir la liste des mappages par défaut, consultez [les paramètres de projet &#40;le mappage de Type&#41; &#40;MySQLToSQL&#41;](../../ssma/mysql/project-settings-type-mapping-mysqltosql.md).  
   
 ## <a name="type-mapping-inheritance"></a>Mappage d’héritage de type  
 Vous pouvez personnaliser les mappages de type pour le projet au niveau, le niveau de catégorie objet (par exemple, toutes les procédures stockées) ou objet. Les paramètres sont hérités du niveau supérieur, sauf si elles sont remplacées à un niveau inférieur. Par exemple, si vous mappez **smallint** à **int** au niveau du projet, tous les objets dans le projet utilisera ce mappage, sauf si vous personnalisez le mappage au niveau de l’objet ou une catégorie.  
@@ -92,5 +90,5 @@ Lorsque vous affichez la **le mappage de Type** onglet SSMA, l’arrière-plan e
 L’étape suivante du processus de migration consiste à [créer un rapport d’évaluation](http://msdn.microsoft.com/en-us/2a56a003-3b0f-453a-963c-00c9e40933ec) ou [MySQL de convertir les objets de base de données dans SQL Server ou SQL Azure syntaxe](http://msdn.microsoft.com/en-us/ac21850b-fb32-4704-9985-5759b7c688c7). Si vous créez un rapport, les objets de MySQL sont automatiquement convertis durant l’évaluation.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSql &#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
+[Bases de données de migration de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSql&#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
   

@@ -1,15 +1,14 @@
 ---
-title: "Exécution d’une commande | Documents Microsoft"
-ms.custom: 
+title: Exécution d’une commande | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-provider
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - commands [SQL Server Native Client]
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - OLE DB extensions for XML
 - SQL Server Native Client OLE DB provider, command execution
 ms.assetid: bb0b3cbf-fe45-46ba-b2ec-c5a39e3c7081
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 495f632181ec7697c08002684e2f6e77f272d39a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3c815f3ef1ac305fdf7ec7f6aa2a29e1770b491b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-a-command"></a>Exécution d'une commande
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

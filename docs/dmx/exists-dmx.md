@@ -1,30 +1,31 @@
 ---
 title: Existe (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: Exists
-dev_langs: DMX
-helpviewer_keywords: Exists function
+f1_keywords:
+- Exists
+dev_langs:
+- DMX
+helpviewer_keywords:
+- Exists function
 ms.assetid: 3b54dd93-f0a8-4f9a-96ae-a38bf977dda1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 6f5fb5dccb91af6409c0ed91796ba5119475ccaf
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c42102653cb2da9ec85e4714bba3bedb7a99cd52
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exists-dmx"></a>Exists (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -39,13 +40,13 @@ EXISTS(<subquery>)
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *sous-requête*  
+ *subquery*  
  Une instruction SELECT sous la forme SELECT * FROM \<nom de colonne > [où \<liste_prédicats >].  
   
 ## <a name="result-type"></a>Type de résultat  
  Retourne **true** si le jeu de résultats retourné par la sous-requête contient au moins une ligne ; sinon, retourne **false**.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Vous pouvez utiliser le mot clé NOT avant EXISTS ; par exemple, `WHERE NOT EXISTS (<subquery>)`.  
   
  La liste des colonnes que vous ajoutez à l'argument de sous-requête d'EXISTS est inappropriée ; la fonction vérifie uniquement l'existence d'une ligne qui remplit la condition.  
@@ -67,7 +68,7 @@ WHERE [[Model] = 'Patch kit'
  Un autre pour afficher les mêmes données que celui qui sont retournées par cette requête consiste à ouvrir le modèle dans la visionneuse d’associations, cliquez sur le jeu d’éléments **Patch kit = Existing**, sélectionnez le **extraire** option et sélectionnez **cas de modèles uniquement**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Syntaxe de filtre de modèle et exemples &#40; Analysis Services - Exploration de données &#41;](../analysis-services/data-mining/model-filter-syntax-and-examples-analysis-services-data-mining.md)  
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Syntaxe de filtre et des exemples de modèle &#40;Analysis Services - Exploration de données&#41;](../analysis-services/data-mining/model-filter-syntax-and-examples-analysis-services-data-mining.md)  
   
   

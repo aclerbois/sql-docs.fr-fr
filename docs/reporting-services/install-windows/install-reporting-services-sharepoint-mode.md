@@ -1,31 +1,29 @@
 ---
 title: Installer Reporting Services 2016 en mode SharePoint | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 helpviewer_keywords:
 - default configuration [Reporting Services]
 - installing Reporting Services, SharePoint integrated mode
 - installation options [Reporting Services]
 ms.assetid: ac6cba68-2665-4a39-8fa3-cb7d7e6723c0
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: c93372d849e689c0f3cc36bbdff22cde1ef0aded
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 21de397329d9a00604ef684b1b61d200f562e6ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-reporting-services-2016-in-sharepoint-mode"></a>Installer Reporting Services 2016 en mode SharePoint
 

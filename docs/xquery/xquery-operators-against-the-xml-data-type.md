@@ -1,33 +1,34 @@
 ---
-title: "Opérateurs XQuery sur le Type de données xml | Documents Microsoft"
-ms.custom: 
+title: Opérateurs XQuery sur le Type de données xml | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-applies_to: SQL Server
-dev_langs: XML
+applies_to:
+- SQL Server
+dev_langs:
+- XML
 helpviewer_keywords:
 - XQuery, operators
 - operators [XQuery]
 - xml data type [SQL Server], XQuery
 ms.assetid: 39ca3d2e-e928-4333-872b-75c4ccde8e79
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8fc773e1770b907b6eba5e4d09372f0654054d47
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: 62c4875c74d6ff67e8d1760a29ac48672fc7765a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xquery-operators-against-the-xml-data-type"></a>Opérateurs XQuery sur le type de données xml
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -40,14 +41,14 @@ ms.lasthandoff: 12/05/2017
   
 -   Opérateurs de comparaison générale (=, ! =, \<, >, \<=, > =)  
   
- Pour plus d’informations sur ces opérateurs, consultez [Expressions de comparaison &#40; XQuery &#41;](../xquery/comparison-expressions-xquery.md)  
+ Pour plus d’informations sur ces opérateurs, consultez [Expressions de comparaison &#40;XQuery&#41;](../xquery/comparison-expressions-xquery.md)  
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-using-general-operators"></a>A. Utilisation d'opérateurs généraux  
  La requête illustre l'utilisation d'opérateurs généraux qui s'appliquent à des séquences et qui comparent également des séquences. La requête récupère une séquence de numéros de téléphone pour chaque client à partir de la **AdditionalContactInfo** colonne de la **Contact** table. Cette séquence est ensuite comparée à la séquence de deux numéros de téléphone ("111-111-1111", "222-2222").  
   
- La requête utilise le  **=**  opérateur de comparaison. Chaque nœud de la séquence situé à droite de la  **=**  opérateur est comparée à chaque nœud de la séquence situé à gauche. Si les nœuds correspondent, la comparaison de nœud est **TRUE**. Elle est ensuite convertie en int et comparée à 1, puis la requête retourne l'ID de client.  
+ La requête utilise le **=** opérateur de comparaison. Chaque nœud de la séquence situé à droite de la **=** opérateur est comparée à chaque nœud de la séquence situé à gauche. Si les nœuds correspondent, la comparaison de nœud est **TRUE**. Elle est ensuite convertie en int et comparée à 1, puis la requête retourne l'ID de client.  
   
 ```  
 WITH XMLNAMESPACES (  
@@ -97,7 +98,7 @@ FROM Production.ProductModel
 where ProductModelID=19  
 ```  
   
- Étant donné que les opérandes de le **eq** opérateur sont des valeurs atomiques, l’opérateur de valeur est utilisée dans la requête. Vous pouvez écrire la même requête en utilisant l’opérateur de comparaison générale (  **=**  ).  
+ Étant donné que les opérandes de le **eq** opérateur sont des valeurs atomiques, l’opérateur de valeur est utilisée dans la requête. Vous pouvez écrire la même requête en utilisant l’opérateur de comparaison générale ( **=** ).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions XQuery impliquant le Type de données xml](../xquery/xquery-functions-against-the-xml-data-type.md)   

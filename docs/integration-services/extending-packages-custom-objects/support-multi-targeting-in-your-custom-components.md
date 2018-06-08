@@ -1,30 +1,28 @@
 ---
-title: "Prendre en charge le multi-ciblage dans les composants personnalisés | Microsoft Docs"
-ms.custom: 
+title: Prendre en charge le multi-ciblage dans les composants personnalisés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server (starting with 2016)
 ms.assetid: ec611374-16bf-4a56-8fd9-45d3ddd7befc
-caps.latest.revision: 
+caps.latest.revision: 6
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b6ed067a54cc867ed091dd27f5a4af91954045f1
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: c94edaab7910c8f7cc86e1eafd51eb189429477b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="support-multi-targeting-in-your-custom-components"></a>Prendre en charge le multi-ciblage dans les composants personnalisés
  Vous pouvez désormais utiliser le concepteur SSIS dans SQL Server Data Tools (SSDT) pour créer, gérer et exécuter des packages qui ciblent SQL Server 2016, SQL Server 2014 ou SQL Server 2012. Pour obtenir SSDT pour Visual Studio 2015, consultez [Télécharger la dernière version de SQL Server Data Tools](../../ssdt/download-sql-server-data-tools-ssdt.md). 

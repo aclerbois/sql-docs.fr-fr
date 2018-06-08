@@ -1,30 +1,28 @@
 ---
-title: "Convertir les types et ne pas vérifier la conversion (Assistant Importation-Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Convertir les types et ne pas vérifier la conversion (Assistant Importation-Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.impexpwizard.nomappingfile.f1
 ms.assetid: 87d9d3e5-477f-4117-a37f-bff53ea3e14d
-caps.latest.revision: 
+caps.latest.revision: 25
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 66271d8214a96453535a476e43564aa1b03d07d3
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9c493d453d11648f75eddd4a426ec3d9bdd26a45
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="convert-types-without-conversion-checking-sql-server-import-and-export-wizard"></a>Convertir les types sans vérification de la conversion (Assistant Importation et Exportation SQL Server)
   Une fois que vous avez sélectionné les tables et vues existantes pour copier ou vérifier la requête que vous avez fournie, l’Assistant Importation et Exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut afficher **Convertir les types sans vérification de la conversion**. L’Assistant affiche cette page quand il ne peut pas trouver un ou plusieurs fichiers de conversion et de mappage de types de données dont il a besoin pour mapper les types de données entre la source et la destination. La page inclut des informations qui vous aident à comprendre ce qui est manquant.

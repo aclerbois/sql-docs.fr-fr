@@ -1,16 +1,14 @@
 ---
-title: "Déconnecter les données Source ou le pilote | Documents Microsoft"
-ms.custom: 
+title: Déconnecter les données Source ou le pilote | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - disconnecting from driver [ODBC]
 - data sources [ODBC], disconnecting
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - connecting to driver [ODBC], disconnecting
 - ODBC drivers [ODBC], disconnecting
 ms.assetid: 83dbf0bf-b400-41fb-8537-9b016050dc3c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c8a70c26fdf840b9e4cae6cced3453c2444d1007
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2118aac1d22df8a4fbf2fbda6679f960e7ced0ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disconnecting-from-a-data-source-or-driver"></a>Déconnecter les données Source ou pilote
 Lorsqu’une application a fini d’utiliser une source de données, il appelle **SQLDisconnect**. **SQLDisconnect** libère toutes les instructions qui sont allouées sur la connexion et déconnecte le pilote de la source de données. Il renvoie une erreur si une transaction est en cours.  

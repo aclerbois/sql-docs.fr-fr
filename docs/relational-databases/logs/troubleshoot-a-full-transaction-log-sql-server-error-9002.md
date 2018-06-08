@@ -1,17 +1,14 @@
 ---
-title: "Résoudre les problèmes liés à un journal des transactions saturé (erreur SQL Server 9002) | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes liés à un journal des transactions saturé (erreur SQL Server 9002) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/05/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: logs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-transaction-log
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logs [SQL Server], full
 - troubleshooting [SQL Server], full transaction log
@@ -21,16 +18,15 @@ helpviewer_keywords:
 - transaction logs [SQL Server], full log
 - full transaction logs [SQL Server]
 ms.assetid: 0f23aa84-475d-40df-bed3-c923f8c1b520
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 5f0ea9dba2803d981b5e259105d1e699e08611f1
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 9f3ecb5eb7b1b074e473161f274ab96f4bbaba1b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-a-full-transaction-log-sql-server-error-9002"></a>Résoudre les problèmes liés à un journal des transactions saturé (erreur SQL Server 9002)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

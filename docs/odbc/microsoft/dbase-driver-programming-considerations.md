@@ -1,32 +1,29 @@
 ---
-title: "dBASE considérations relatives à la programmation pilote | Documents Microsoft"
-ms.custom: 
+title: dBASE considérations relatives à la programmation pilote | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], DBasedriver
 - desktop database drivers [ODBC], DBasedriver
 - DBase driver [ODBC]
 - ODBC desktop database drivers [ODBC], DBasedriver
 ms.assetid: ce5e8efc-6a2d-40d5-a658-8dd35cd1dd09
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4cada06f3b0a766d545f4837628bdc355dc1cb2f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: dc3286390488bee0ff6c2ac3d00670b364493769
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dbase-driver-programming-considerations"></a>dBASE considérations relatives à la programmation de pilote
 Cette section contient les rubriques suivantes.  

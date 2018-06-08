@@ -1,16 +1,14 @@
 ---
 title: sp_addrolemember (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addrolemember_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_addrolemember
 ms.assetid: a583c087-bdb3-46d2-b9e5-3921b3e6d10b
-caps.latest.revision: 
+caps.latest.revision: 59
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1781efa697597d05cbbc734f0c531ce5e9f40633
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 147547c7392acaf528b7aef98c88affb8487fe99
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddrolemember-transact-sql"></a>sp_addrolemember (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -37,7 +35,7 @@ ms.lasthandoff: 11/21/2017
   Ajoute un utilisateur ou un rôle de base de données, un compte de connexion ou un groupe Windows à un rôle de base de données dans la base de données active.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]Utilisez [ALTER ROLE](../../t-sql/statements/alter-role-transact-sql.md) à la place.  
+>  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez [ALTER ROLE](../../t-sql/statements/alter-role-transact-sql.md) à la place.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -73,9 +71,9 @@ sp_addrolemember 'role', 'security_account'
   
  sp_addrolemember ne peut pas ajouter un rôle de base de données fixe, rôle serveur fixe ou dbo à un rôle. sp_addrolemember ne peut pas être exécutée dans une transaction définie par l’utilisateur.  
   
- Utilisez uniquement sp_addrolemember pour ajouter un membre à un rôle de base de données. Pour ajouter un membre à un rôle de serveur, utilisez [sp_addsrvrolemember &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-addsrvrolemember-transact-sql.md).  
+ Utilisez uniquement sp_addrolemember pour ajouter un membre à un rôle de base de données. Pour ajouter un membre à un rôle de serveur, utilisez [sp_addsrvrolemember &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addsrvrolemember-transact-sql.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  L'ajout de membres à des rôles de base de données flexibles nécessite l'un des éléments suivants :  
   
 -   Appartenance au rôle de base de données fixe db_securityadmin ou db_owner.  
@@ -108,7 +106,7 @@ GO
 EXEC sp_addrolemember 'Production', 'Mary5';  
 ```  
   
-## <a name="examples-includesssdwincludessssdw-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
+## <a name="examples-includesssdwincludessssdw-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
   
 ### <a name="c-adding-a-windows-login"></a>C. Ajout d'une connexion Windows  
  L’exemple suivant ajoute la connexion `LoginMary` à la `AdventureWorks2008R2` base de données en tant qu’utilisateur `UserMary`. L'utilisateur `UserMary` est ensuite ajouté au rôle `Production`.  
@@ -132,9 +130,9 @@ EXEC sp_addrolemember 'Production', 'UserMary'
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [sp_addsrvrolemember &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addsrvrolemember-transact-sql.md)   
- [sp_droprolemember &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-droprolemember-transact-sql.md)   
+ [sp_droprolemember & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-stored-procedures/sp-droprolemember-transact-sql.md)   
  [sp_grantdbaccess &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-grantdbaccess-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [Rôles au niveau de la base de données](../../relational-databases/security/authentication-access/database-level-roles.md)  

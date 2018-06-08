@@ -1,31 +1,23 @@
 ---
-title: "Codes des types utilisés dans les traces d’objets Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Codes des types utilisés dans les traces d’objets Analysis Services | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: trace-events
 ms.topic: reference
-ms.assetid: e4119db1-4a41-4335-9b33-f1ea95564300
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: cd17ad086169a53673d7c9ba48f79058dd87769d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 4d451b0348604c4b824bb5bf77c0e719990b1643
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-object-type-codes-used-in-traces"></a>Codes des types d'objets Analysis Services utilisés dans les traces
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette page répertorie le type d'objet (un numéro à six chiffres) de chaque objet d'un modèle de données Analysis Services. Ces codes apparaissent dans les journaux des traces et sont utilisés pour identifier le type d'objet associé à un verrou particulier. Par exemple, un dépassement du délai d'attente d'un verrou sur une base de données indique le type d'objet 100002, qui est le type d'objet Base de données.  
+  Cette page répertorie le type d'objet (un numéro à six chiffres) de chaque objet d'un modèle de données Analysis Services. Ces codes apparaissent dans les journaux des traces et sont utilisés pour identifier le type d'objet associé à un verrou particulier. Par exemple, un dépassement du délai d'attente d'un verrou sur une base de données indique le type d'objet 100002, qui est le type d'objet Base de données.  
   
 > [!NOTE]  
 >  Il y a davantage de codes répertoriés ci-dessous que ce qui apparaît réellement dans un journal des traces. La liste ci-dessous est une liste complète des codes de type pour chaque objet, mais seuls les objets susceptibles d'être verrouillés comportent un code de type d'objet dans un journal des traces.  

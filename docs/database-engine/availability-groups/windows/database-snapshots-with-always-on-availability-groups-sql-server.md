@@ -1,30 +1,27 @@
 ---
-title: "Instantanés de base de données avec des groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Instantanés de base de données avec des groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database snapshots [SQL Server], AlwaysOn Availability Groups
 - Availability Groups [SQL Server], interoperability
 ms.assetid: 7432da1c-ce2f-4cd9-af41-54c97744166b
-caps.latest.revision: "7"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93c59f495fb5bbfafe07f4ecf29218a59b645e8c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: e72720b9e17533d38e4cd1d8610b68136525a860
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769945"
 ---
 # <a name="database-snapshots-with-always-on-availability-groups-sql-server"></a>Instantanés de base de données avec des groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

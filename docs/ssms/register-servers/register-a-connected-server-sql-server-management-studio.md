@@ -1,37 +1,35 @@
 ---
-title: "Inscrire un serveur connecté (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Inscrire un serveur connecté (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/28/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-registration
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.registerserver.f1
 helpviewer_keywords:
 - Registered Servers [SQL Server], register connected servers
 - connected server registrations [SQL Server]
 ms.assetid: 77deb5f5-0f80-484f-8b8b-29afa67ec18f
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6b6639909649cd9f988b5dd308f831763a82ef3c
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: a75c2604252ec3d1662a1338f08ce6ecfc21f207
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="register-a-connected-server-sql-server-management-studio"></a>Inscrire un serveur connecté (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Cette rubrique explique comment inscrire un serveur connecté dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] (SSMS). Lors de l'inscription du serveur, vous pouvez enregistrer les informations de connexion relatives aux serveurs auxquels vous accédez fréquemment. Un serveur peut être inscrit avant la connexion ou au moment de la connexion depuis l'Explorateur d'objets.  Vous pouvez afficher les serveurs inscrits dans SSMS en accédant à **Afficher**\\**Serveurs inscrits** à partir du menu.
+  Cette rubrique explique comment inscrire un serveur connecté dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] (SSMS). Lors de l'inscription du serveur, vous pouvez enregistrer les informations de connexion relatives aux serveurs auxquels vous accédez fréquemment. Un serveur peut être inscrit avant la connexion ou au moment de la connexion depuis l'Explorateur d'objets.  Vous pouvez afficher les serveurs inscrits dans SSMS en accédant à **Afficher**\\**Serveurs inscrits** à partir du menu.
   
  **Dans cette rubrique**  
   

@@ -1,17 +1,15 @@
 ---
-title: "Ordinal, propriété (cellule ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Ordinal, propriété (cellule ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Cell::Ordinal
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Ordinal property [ADO MD]
 ms.assetid: a6001168-b954-47f0-ba0d-c05c4cc40c58
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 70c8bb0793791873663c561ccafcdc37bcb37b8a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 26d56708b4b38dd47dd77889c03497f4574e4e42
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ordinal-property-ado-md-cell"></a>Ordinal, propriété (cellule ADO MD)
 Identifie de façon unique un [cellule](../../../ado/reference/ado-md-api/cell-object-ado-md.md) par sa position dans un ensemble de cellules.  

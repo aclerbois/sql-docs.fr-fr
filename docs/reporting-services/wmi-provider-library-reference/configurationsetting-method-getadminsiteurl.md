@@ -1,28 +1,27 @@
 ---
-title: "GetAdminSiteUrl, méthode (WMI) | Microsoft Docs"
-ms.custom: 
+title: GetAdminSiteUrl, méthode (WMI) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: GetAdminSiteUrl method
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- GetAdminSiteUrl method
 ms.assetid: fbc5bf3c-120c-4aec-a4f2-f5391bd415f6
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a570015c45938cdf7401479695279e7c12de06d2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 6e11c5ab69787b4a07eccdf7a8c33943c1e7ec01
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---getadminsiteurl"></a>Méthode ConfigurationSetting - GetAdminSiteUrl
   Obtient l'URL absolue du site Web Administration centrale pour la batterie de serveurs Microsoft [!INCLUDE[winSPServ](../../includes/winspserv-md.md)], [!INCLUDE[offSPServ](../../includes/offspserv-md.md)], [!INCLUDE[SPF2010](../../includes/spf2010-md.md)]ou [!INCLUDE[SPS2010](../../includes/sps2010-md.md)] à laquelle le serveur de rapports est intégré.  

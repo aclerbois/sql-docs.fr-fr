@@ -1,31 +1,23 @@
 ---
-title: "Services d’exploration de données et Sources de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: b26fd6e3-7d87-4f66-ab47-5303b51b87da
-caps.latest.revision: 
-author: Minewiskan
+title: Services d’exploration de données et Sources de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 78e67d346c451c258e806e6f888aef096e7d4256
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2ddcf169206e795899861e7b7fe8be6430ad9cd6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-services-and-data-sources"></a>Services d'exploration de données et sources de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'exploration de données requiert une connexion à une instance de SQL Server Analysis Services. Les données d’un cube ne sont pas nécessaires pour l’exploration de données et l’utilisation de sources relationnelles est recommandée. Toutefois, l’exploration de données utilise des composants fournis par le moteur [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] .  
+  L'exploration de données requiert une connexion à une instance de SQL Server Analysis Services. Les données d’un cube ne sont pas nécessaires pour l’exploration de données et l’utilisation de sources relationnelles est recommandée. Toutefois, l’exploration de données utilise des composants fournis par le moteur [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] .  
   
  Cette rubrique fournit les informations à connaître pour établir une connexion à une instance de SQL Server [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] afin de créer, traiter, déployer ou interroger des modèles d’exploration de données.  
   
@@ -95,7 +87,7 @@ L'exploration de données requiert une connexion à une instance de SQL Server A
  Vous pouvez également définir des propriétés qui vous permettent de régler le serveur et contrôler la sécurité pour l'utilisation des clients. Pour plus d’informations, consultez [Propriétés de fonctionnalité](../../analysis-services/server-properties/feature-properties.md).  
   
 > [!NOTE]  
->  Pour plus d’informations sur la prise en charge des algorithmes de plug-in dans les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
+>  Pour plus d’informations sur la prise en charge pour les algorithmes de plug-in par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
   
 ## <a name="programmatic-access-to-data-mining-objects"></a>Accès par programmation aux objets d'exploration de données  
  Vous pouvez utiliser les modèles d'objet suivants pour créer une connexion à une base de données Analysis Services et utiliser des objets d'exploration de données :  
@@ -131,7 +123,7 @@ L'exploration de données requiert une connexion à une instance de SQL Server A
   
 ## <a name="see-also"></a>Voir aussi  
  [Architecture physique &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models/olap-physical/understanding-microsoft-olap-physical-architecture.md)   
- [Architecture physique &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/physical-architecture-analysis-services-data-mining.md)   
+ [Architecture physique & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/physical-architecture-analysis-services-data-mining.md)   
  [Gestion des Solutions d’exploration de données et des objets](../../analysis-services/data-mining/management-of-data-mining-solutions-and-objects.md)  
   
   

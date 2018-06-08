@@ -1,31 +1,23 @@
 ---
 title: Supprimer des relations | Documents Microsoft
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: multidimensional-tabular
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d40e3f05-54e8-4c4b-807a-0b06f446079b
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 690224c1798494e75f6b26add07d51c3afa7134f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 115d72bd0b833d1f392b2349d3ed4e4970f58453
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="delete-relationships"></a>Supprimer des relations 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Vous pouvez supprimer des relations existantes à l'aide du générateur de modèles dans la vue de diagramme ou à l'aide de la boîte de dialogue Gérer les relations. Pour plus d’informations sur l’utilisation des relations dans les modèles tabulaires, consultez [relations](../../analysis-services/tabular-models/relationships-ssas-tabular.md).  
+  Vous pouvez supprimer des relations existantes à l'aide du générateur de modèles dans la vue de diagramme ou à l'aide de la boîte de dialogue Gérer les relations. Pour plus d’informations sur l’utilisation des relations dans les modèles tabulaires, consultez [relations](../../analysis-services/tabular-models/relationships-ssas-tabular.md).  
   
 ## <a name="considerations-for-deleting-relationships"></a>Considérations relatives à la suppression de relations  
  Gardez à l'esprit les points suivants lorsque vous décidez de supprimer ou non une relation :  
@@ -59,7 +51,7 @@ Vous pouvez supprimer des relations existantes à l'aide du générateur de mod�
 4.  Dans la boîte de dialogue **Gérer les relations** , cliquez sur **Fermer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Relationships](../../analysis-services/tabular-models/relationships-ssas-tabular.md)   
+ [Relations](../../analysis-services/tabular-models/relationships-ssas-tabular.md)   
  [Créer une relation](../../analysis-services/tabular-models/create-a-relationship-between-two-tables-ssas-tabular.md)  
   
   

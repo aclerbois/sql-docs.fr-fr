@@ -1,31 +1,29 @@
 ---
-title: "Installation de plusieurs versions Integration Services côte à côte | Microsoft Docs"
-ms.custom: 
+title: Installation de plusieurs versions Integration Services côte à côte | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interoperability and coexistence [Integration Services]
 - Integration Services, interoperability and coexistence
 ms.assetid: edfbcd56-012f-462e-a542-95491394fda9
-caps.latest.revision: 
+caps.latest.revision: 41
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b14e919cc180e8934b0cf9435d8d286c6468ccc2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d32cc4221964425dfb335f4b241847b5f5fc08ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="installing-integration-services-versions-side-by-side"></a>Installation de plusieurs versions Integration Services côte à côte
   Vous pouvez installer   

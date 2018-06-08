@@ -1,16 +1,14 @@
 ---
 title: DELETE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DELETE
@@ -28,16 +26,17 @@ helpviewer_keywords:
 - row removal [SQL Server], DELETE statement
 - deleting data
 ms.assetid: ed6b2105-0f35-408f-ba51-e36ade7ad5b2
-caps.latest.revision: 
+caps.latest.revision: 78
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: f0741ba08adf5299e8a4f5a3021f533d44988459
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 79fcdecafcbb2d0318a5a04d3aebbe78fb991bfb
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34586001"
 ---
 # <a name="delete-transact-sql"></a>DELETE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -120,7 +119,7 @@ DELETE FROM [database_name . [ schema ] . | schema. ] table_name
  *schema_name*  
  Nom du schéma auquel appartient la vue ou la table.  
   
- *table_or view_name*  
+ *table_or_view_name*  
  Nom de la table ou de la vue à partir desquelles les lignes doivent être supprimées.  
   
  Une variable de table, dans son étendue, est également utilisable comme source de la table dans une instruction DELETE.  
@@ -136,7 +135,7 @@ DELETE FROM [database_name . [ schema ] . | schema. ] table_name
  Spécifie un ou plusieurs indicateurs de table autorisés pour une table cible. Le mot clé WITH et les parenthèses sont obligatoires. NOLOCK et READUNCOMMITTED ne sont pas autorisés. Pour plus d’informations sur les indicateurs de table, consultez [Indicateurs de table &#40;Transact-SQL&#41;](../../t-sql/queries/hints-transact-sql-table.md).  
   
  \<OUTPUT_Clause>  
- Retourne des lignes supprimées ou des expressions basées sur ces lignes au cours de l'exécution de l'opération DELETE. Aucune instruction DML ciblant des vues ou des tables distantes ne prend en charge la clause OUTPUT. Pour plus d’informations, consultez [OUTPUT Clause &#40;Transact-SQL&#41;](../../t-sql/queries/output-clause-transact-sql.md).  
+ Retourne des lignes supprimées ou des expressions basées sur ces lignes au cours de l'exécution de l'opération DELETE. Aucune instruction DML ciblant des vues ou des tables distantes ne prend en charge la clause OUTPUT. Pour plus d’informations, consultez [Clause OUTPUT &#40;Transact-SQL&#41;](../../t-sql/queries/output-clause-transact-sql.md).  
   
  FROM *table_source*  
  Spécifie une clause FROM supplémentaire. Cette extension [!INCLUDE[tsql](../../includes/tsql-md.md)] de l’instruction DELETE permet de spécifier des données de \<table_source> et de supprimer les lignes correspondantes de la table référencée dans la première clause FROM.  
@@ -220,7 +219,7 @@ DELETE FROM [database_name . [ schema ] . | schema. ] table_name
 ### <a name="permissions"></a>Autorisations  
  Les autorisations DELETE sont requises sur la table cible. Des autorisations SELECT sont également requises si l'instruction comporte une clause WHERE.  
   
- Les autorisations DELETE sont accordées par défaut aux membres du rôle serveur fixe **sysadmin**, aux rôles de base de données fixes **db_owner** et **db_datawriter**, ainsi qu’au propriétaire de la table. Les membres des rôles **sysadmin**, **db_owner** et **db_securityadmin**, ainsi que le propriétaire de la table peuvent transférer des autorisations à d’autres utilisateurs.  
+ Les autorisations DELETE sont accordées par défaut aux membres du rôle serveur fixe **sysadmin**, aux rôles de base de données fixes **db_owner** et **db_datawriter**, ainsi qu’au propriétaire de la table. Les membres des rôles **sysadmin**, **db_owner** et **db_securityadmin** et le propriétaire de la table peuvent transférer des autorisations à d’autres utilisateurs.  
   
 ## <a name="examples"></a>Exemples  
   
@@ -320,7 +319,7 @@ DELETE spqh
 ```  
   
 #### <a name="e-using-top-to-limit-the-number-of-rows-deleted"></a>E. Utilisation de TOP pour limiter le nombre de lignes supprimées  
- Quand une clause TOP (*n*) est utilisée avec DELETE, l’opération de suppression est effectuée sur une sélection aléatoire de *n* lignes. L’exemple suivant supprime de manière aléatoire `20` lignes de la table `PurchaseOrderDetail` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] dont la date d’échéance est antérieure au 1er juillet 2006.  
+ Quand une clause TOP (*n*) est utilisée avec DELETE, l’opération de suppression est effectuée sur une sélection aléatoire de *n* lignes. L’exemple suivant supprime de manière aléatoire `20` lignes de la table `PurchaseOrderDetail` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] dont la date d’échéance est antérieure au 1er juillet 2006.  
   
 ```  
 DELETE TOP (20)   

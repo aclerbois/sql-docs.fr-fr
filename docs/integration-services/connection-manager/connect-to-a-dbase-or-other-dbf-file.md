@@ -1,32 +1,30 @@
 ---
-title: "Se connecter à un fichier dBASE ou à un autre fichier DBF | Microsoft Docs"
-ms.custom: 
+title: Se connecter à un fichier dBASE ou à un autre fichier DBF | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to DBF files
 - dBase files
 - DBF files
 ms.assetid: b0e8c831-9f96-475c-82a4-4f5b02692752
-caps.latest.revision: 
+caps.latest.revision: 16
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a840093c5501dc7d7f91ea3aa0a7b04ed4a42339
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 6fd155c0d1e196c31b340c6364ce66db4acefb49
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-a-dbase-or-other-dbf-file"></a>Se connecter à un fichier dBASE ou à un autre fichier DBF
   Vous pouvez vous connecter à un fichier dBASE ou à un autre fichier de base de données .DBF dans un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] en utilisant un gestionnaire de connexions OLE DB et en sélectionnant le fournisseur Microsoft OLE DB pour Jet 4.0.  

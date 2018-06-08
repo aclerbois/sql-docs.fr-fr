@@ -1,34 +1,32 @@
 ---
-title: "Filtrer des événements dans une Trace (SQL Server Profiler) | Documents Microsoft"
-ms.custom: 
+title: Filtrer des événements dans une Trace (SQL Server Profiler) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - filters [SQL Server], traces
 - traces [SQL Server], filters
 - traces [SQL Server], events
 ms.assetid: 0fd63573-3b35-4f67-9e1e-ed9aabee11a8
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e6d6716cfcdf8bd6ce495f8aefe0e0df34fddb1c
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 68200433e738e8d448fd48caebcab3aa2ceb3441
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-events-in-a-trace-sql-server-profiler"></a>Filtrer des événements dans une trace (SQL Server Profiler)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les filtres limitent les événements collectés dans une trace. Si aucun filtre n'est défini, tous les événements des classes d'événements sélectionnées sont retournés dans le résultat de trace. Il n'est pas obligatoire de définir un filtre pour une trace. Toutefois, un filtre réduit la charge liée aux opérations de traçage.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Les filtres limitent les événements recueillis dans une trace. Si aucun filtre n'est défini, tous les événements des classes d'événements sélectionnées sont retournés dans le résultat de trace. Il n'est pas obligatoire de définir un filtre pour une trace. Toutefois, un filtre réduit la charge liée aux opérations de traçage.  
   
  Pour ajouter un filtre à une définition de trace, vous devez utiliser l’onglet **Sélection des événements** de la boîte de dialogue **Propriétés de la trace** ou **Propriétés du modèle de trace** .  
   
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/17/2018
   
 2.  Cliquez sur **Filtres de colonnes**.  
   
-     La boîte de dialogue **Modifier le filtre** s’affiche. Le **modifier le filtre**boîte de dialogue contient une liste d’opérateurs de comparaison que vous pouvez utiliser pour filtrer les événements dans une trace.  
+     La boîte de dialogue **Modifier le filtre** s’affiche. La boîte de dialogue **Modifier le filtre** contient une liste d’opérateurs de comparaison que vous pouvez utiliser pour filtrer les événements dans une trace.  
   
 3.  Pour appliquer un filtre, cliquez sur l'opérateur de comparaison et tapez une valeur.  
   
@@ -52,7 +50,7 @@ ms.lasthandoff: 01/17/2018
   
     -   La date est saisie au format suivant : `YYYY/MM/DD HH:mm:sec`.  
   
-         -OU-  
+         -ou-  
   
     -   La case**Utiliser des paramètres régionaux pour afficher les valeurs de date et d’heure** est cochée dans la boîte de dialogue **Options générales** . Pour afficher la boîte de dialogue **Options générales** , dans le menu [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] **Tools** menu, click **Option**.  
   
@@ -62,7 +60,7 @@ ms.lasthandoff: 01/17/2018
   
 -   Si le traçage des événements est réalisé avec l’utilitaire **osql** ou **sqlcmd** , il faut toujours ajouter **%** aux filtres de la colonne de données **TextData** .  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  
   
   

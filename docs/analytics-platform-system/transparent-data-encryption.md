@@ -1,30 +1,24 @@
 ---
-title: "Chiffrement transparent des données pour l’entrepôt de données en parallèle"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Le chiffrement transparent des données (TDE) effectue le chiffrement d’e/s en temps réel et le déchiffrement des données et fichiers journaux des transactions et les fichiers de journaux PDW spéciaux."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: b82ad21d-09dd-43dd-8fab-bcf2c8c3ac6d
-caps.latest.revision: "22"
-ms.openlocfilehash: 6c96bd67d9a935756b8353999f6c778134d2ed57
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Chiffrement transparent des données - Parallel Data Warehouse | Documents Microsoft
+description: Chiffrement transparent des données (TDE) pour Parallel Data Warehouse (PDW) effectue le chiffrement d’e/s en temps réel et le déchiffrement des données et fichiers journaux des transactions et les fichiers de journaux PDW spéciaux. »
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 6dc8bef420939d64b569ae285e6a3525d57983bd
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="transparent-data-encryption"></a>chiffrement transparent des données
-Vous pouvez prendre plusieurs précautions pour mieux sécuriser la base de données comme par exemple concevoir un système sécurisé, chiffrer les ressources confidentielles et créer un pare-feu autour des serveurs de base de données. Toutefois, dans un scénario où le support physique (tel que des lecteurs ou des bandes de sauvegarde) est dérobé, une personne malveillante peut simplement restaurer ou attacher la base de données et parcourir les données. Une solution consiste à chiffrer les données sensibles dans la base de données et à protéger les clés utilisées pour chiffrer les données avec un certificat. Cela empêche toute personne qui ne dispose pas des clés d'utiliser les données, mais ce type de protection doit être planifié à l'avance.  
+Vous pouvez prendre plusieurs précautions pour mieux sécuriser la base de données comme par exemple concevoir un système sécurisé, chiffrer les ressources confidentielles et créer un pare-feu autour des serveurs de base de données. Toutefois, pour un scénario dans lequel le support physique (par exemple, les lecteurs ou les bandes de sauvegarde) est dérobé, une personne malveillante peut simplement restaurer ou attacher la base de données et parcourir les données. Une solution consiste à chiffrer les données sensibles dans la base de données et à protéger les clés utilisées pour chiffrer les données avec un certificat. Cela empêche toute personne qui ne dispose pas des clés d'utiliser les données, mais ce type de protection doit être planifié à l'avance.  
   
-*Chiffrement transparent des données* (TDE) effectue le chiffrement d’e/s en temps réel et le déchiffrement des données et les fichiers journaux des transactions et le PDW spécial des fichiers journaux. Le chiffrement utilise une clé de chiffrement de base de données (DEK), stockée dans l'enregistrement de démarrage de base de données pour être disponible pendant la récupération. La clé DEK est une clé symétrique sécurisée à l’aide d’un certificat stocké dans la base de données master de l’ordinateur SQL Server PDW. Le chiffrement transparent des données protège les données « au repos », autrement dit les fichiers de données et les fichiers journaux. Il permet de se conformer à de nombreuses lois, règles et instructions établies dans différents secteurs professionnels. Cela permet aux développeurs de logiciels de chiffrer des données à l'aide des algorithmes de chiffrement AES et 3DES sans modifier les applications existantes.  
+*Chiffrement transparent des données* (TDE) effectue le chiffrement d’e/s en temps réel et le déchiffrement des données et les fichiers journaux des transactions et le PDW spécial des fichiers journaux. Le chiffrement utilise une clé de chiffrement de base de données (DEK), stockée dans l'enregistrement de démarrage de base de données pour être disponible pendant la récupération. La clé DEK est une clé symétrique sécurisée à l’aide d’un certificat stocké dans la base de données master de l’ordinateur SQL Server PDW. Le chiffrement transparent des données protège les données « au repos », autrement dit les fichiers de données et les fichiers journaux. Il permet de se conformer à de nombreuses lois, règles et instructions établies dans différents secteurs professionnels. Cette fonctionnalité permet aux développeurs de logiciels chiffrer les données à l’aide d’algorithmes de chiffrement AES et 3DES sans modifier les applications existantes.  
   
 > [!IMPORTANT]  
 > Chiffrement transparent des données ne fournissent pas de chiffrement pour les données circulant entre le client et le PDW. Pour plus d’informations sur la façon de chiffrer les données entre le client et le SQL Server PDW, consultez [configurer un certificat](provision-certificate.md).  
@@ -40,7 +34,7 @@ Le chiffrement du fichier de base de données est effectué au niveau de la page
   
 L’illustration suivante montre la hiérarchie des clés de chiffrement TDE :  
   
-![Affiche la hiérarchie décrite dans la rubrique. ] (media/tde-architecture.png "TDE_Architecture")  
+![Affiche la hiérarchie](media/tde-architecture.png "TDE_Architecture")  
   
 ## <a name="using-tde"></a>À l’aide du chiffrement Transparent des données  
 Pour utiliser le chiffrement transparent des données, procédez comme suit : Les trois premières étapes sont uniquement effectuées une seule fois, lors de la préparation de SQL Server PDW pour prendre en charge le chiffrement transparent des données.  
@@ -49,11 +43,11 @@ Pour utiliser le chiffrement transparent des données, procédez comme suit : Le
   
 2.  Utilisez **sp_pdw_database_encryption pour** pour activer le chiffrement transparent des données sur le serveur SQL Server PDW. Cette opération modifie les bases de données temporaires afin d’assurer la protection des données temporaires futures et échoue si a tenté de lorsqu’il existe des sessions actives qui ont des tables temporaires. **sp_pdw_database_encryption pour** active sur le masquage des données utilisateur dans les journaux du système PDW. (Pour plus d’informations sur le masquage des données utilisateur dans les journaux du système PDW, consultez [sp_pdw_log_user_data_masking](../relational-databases/system-stored-procedures/sp-pdw-log-user-data-masking-sql-data-warehouse.md).)  
   
-3.  Utilisez [sp_pdw_add_network_credentials](../relational-databases/system-stored-procedures/sp-pdw-add-network-credentials-sql-data-warehouse.md) pour créer les informations d’identification qui peuvent authentifier et écrire sur le partage où la sauvegarde du certificat sera stockée. Si une information d’identification existe déjà pour le serveur de stockage prévue, les informations d’identification existantes peuvent servir.  
+3.  Utilisez [sp_pdw_add_network_credentials](../relational-databases/system-stored-procedures/sp-pdw-add-network-credentials-sql-data-warehouse.md) pour créer les informations d’identification qui peuvent authentifier et écrire sur le partage où la sauvegarde du certificat sera stockée. Si une information d’identification existe déjà pour le serveur de stockage souhaité, vous pouvez utiliser les informations d’identification existantes.  
   
 4.  Dans la base de données master, créez un certificat protégé par la clé principale.  
   
-5.  Le certificat pour le partage de stockage de sauvegarde.  
+5.  Sauvegardez le certificat pour le partage de stockage.  
   
 6.  Dans la base de données utilisateur, créez une clé de chiffrement de base de données et les protéger par le certificat est stocké dans la base de données master.  
   
@@ -61,7 +55,7 @@ Pour utiliser le chiffrement transparent des données, procédez comme suit : Le
   
 L’exemple suivant illustre le chiffrement de la `AdventureWorksPDW2012` de la base de données à l’aide d’un certificat nommé `MyServerCert`, créé dans SQL Server PDW.  
   
-**Première : Activer le chiffrement transparent des données sur le serveur SQL Server PDW.** Cela n’est nécessaire qu’une seule fois.  
+**Première : Activer le chiffrement transparent des données sur le serveur SQL Server PDW.** Cette action est nécessaire uniquement une seule fois.  
   
 ```sql  
 USE master;  
@@ -80,7 +74,7 @@ GO
 EXEC sp_pdw_add_network_credentials 'SECURE_SERVER', '<domain>\<Windows_user>', '<password>';  
 ```  
   
-**Deuxième : Créer et la sauvegarde d’un certificat dans la base de données master.** Cette option n’est requise qu’une seule fois. Vous pouvez avoir un certificat distinct pour chaque base de données (recommandé), ou vous pouvez protéger plusieurs bases de données avec un certificat.  
+**Deuxième : Créer et la sauvegarde d’un certificat dans la base de données master.** Cette action n’est requise qu’une seule fois. Vous pouvez avoir un certificat distinct pour chaque base de données (recommandé), ou vous pouvez protéger plusieurs bases de données avec un certificat.  
   
 ```sql  
 -- Create certificate in master  
@@ -98,7 +92,7 @@ BACKUP CERTIFICATE MyServerCert
 GO  
 ```  
   
-**Dernier : Créer la clé DEK et utilisez ALTER DATABASE pour chiffrer une base de données utilisateur.** Cette opération est répétée pour chaque base de données est protégée par chiffrement transparent des données.  
+**Dernier : Créer la clé DEK et utilisez ALTER DATABASE pour chiffrer une base de données utilisateur.** Cette action est répétée pour chaque base de données est protégée par chiffrement transparent des données.  
   
 ```sql  
 USE AdventureWorksPDW2012;  
@@ -113,7 +107,7 @@ ALTER DATABASE AdventureWorksPDW2012 SET ENCRYPTION ON;
 GO  
 ```  
   
-Les opérations de chiffrement et le déchiffrement sont planifiées sur les threads d’arrière-plan par SQL Server. Vous pouvez consulter l'état de ces opérations à l'aide des affichages catalogue et des vues de gestion dynamique mentionnés dans la liste fournie plus loin dans cette rubrique.  
+Les opérations de chiffrement et de déchiffrement sont planifiées sur des threads d’arrière-plan par SQL Server. Vous pouvez afficher l’état de ces opérations à l’aide des affichages catalogue et vues de gestion dynamique dans la liste fournie plus loin dans cet article.  
   
 > [!CAUTION]  
 > Les fichiers de sauvegarde des bases de données pour lesquelles le chiffrement transparent des données est activé sont également chiffrés à l'aide de la clé de chiffrement de base de données. En conséquence, lorsque vous restaurez ces sauvegardes, le certificat qui protège la clé de chiffrement de base de données doit être disponible. Cela signifie qu'en plus de sauvegarder la base de données, vous devez vous assurer que vous conservez des sauvegardes des certificats du serveur pour empêcher toute perte de données. Une perte de données interviendra si le certificat n'est plus disponible.  
@@ -147,7 +141,7 @@ L’affichage des métadonnées impliquées dans le chiffrement transparent des 
 ## <a name="considerations"></a>Observations  
 Lorsqu'une analyse de rechiffrement est en cours pour une opération de chiffrement de la base de données, les opérations de maintenance sur la base de données sont désactivées.  
   
-Vous pouvez déterminer l’état du chiffrement de base de données en utilisant la **sys.dm_pdw_nodes_database_encryption_keys** vue de gestion dynamique. Pour plus d’informations, consultez la *affichages catalogue et vues de gestion dynamique* plus haut dans cette rubrique).  
+Vous pouvez déterminer l’état du chiffrement de base de données en utilisant la **sys.dm_pdw_nodes_database_encryption_keys** vue de gestion dynamique. Pour plus d’informations, consultez la *affichages catalogue et vues de gestion dynamique* section plus haut dans cet article.  
   
 ### <a name="restrictions"></a>Restrictions  
 Les opérations suivantes ne sont pas autorisées pendant la `CREATE DATABASE ENCRYPTION KEY`, `ALTER DATABASE ENCRYPTION KEY`, `DROP DATABASE ENCRYPTION KEY`, ou `ALTER DATABASE...SET ENCRYPTION` instructions.  
@@ -245,7 +239,7 @@ Exemple de l’action de mise à niveau. Remplacez `**********` avec votre mot d
   
 `setup.exe /Action=ProvisionUpgrade … DMKPassword='**********'  `  
   
-Exemple de l’action de machine virtuelle à remplacer.  
+Exemple de l’action pour remplacer un ordinateur virtuel.  
   
 `setup.exe /Action=ReplaceVM … DMKPassword='**********'  `  
   
@@ -253,7 +247,7 @@ Au cours de mise à niveau, si un utilisateur de base de données est chiffré e
   
 `*** WARNING \*\*\* DMK is detected in master database, but could not be recovered automatically! The DMK password was either not provided or is incorrect!  `
   
-Veuillez exécuter manuellement ces instructions PDW et redémarrer l’appliance après que pour permettre la récupération de clé :  
+Manuellement, exécutez ces instruction dans PDW et redémarrer l’appliance après que pour permettre la récupération de clé :  
   
 ```sql
 OPEN MASTER KEY DECRYPTION BY PASSWORD = '<DMK password>';  
@@ -272,8 +266,8 @@ A distributed query failed: Database '<db_name>' cannot be opened due to inacces
 ## <a name="performance-impact"></a>Impact sur les performances  
 L’impact sur les performances de chiffrement transparent des données varie selon le type de données dont vous disposez, comment il est stocké et le type d’activité de la charge de travail sur le serveur SQL Server PDW. Lorsque protégée par chiffrement transparent des données, les e/s de lecture et déchiffrer des données ou chiffrer et écrire des données est une activité intensive du processeur et aura plus d’impact lorsque d’autres activités beaucoup d’UC sont produisent en même temps. Étant donné que le chiffrement transparent des données chiffre `tempdb`, chiffrement transparent des données peuvent affecter les performances des bases de données qui ne sont pas chiffrés. Pour obtenir une idée précise des performances, vous devez tester l’ensemble du système avec votre activité de données et des requêtes.  
   
-## <a name="related-content"></a>Contenu associé  
-Les liens suivants contiennent des informations générales sur la manière dont SQL Server gère le chiffrement. Ces rubriques peuvent vous aider à comprendre le chiffrement SQL Server, mais ces rubriques n’ont pas d’informations spécifiques à SQL Server PDW et qu’ils traitent des fonctionnalités qui ne sont pas présentes dans SQL Server PDW.  
+## <a name="related-content"></a>Contenu connexe  
+Les liens suivants contiennent des informations générales sur la manière dont SQL Server gère le chiffrement. Ces articles peuvent vous aider à comprendre le chiffrement SQL Server, mais que ces articles n’ont pas d’informations spécifiques à SQL Server PDW et qu’ils traitent des fonctionnalités qui ne sont pas présentes dans SQL Server PDW.  
   
 -   [Chiffrement SQL Server](../relational-databases/security/encryption/sql-server-encryption.md)  
   

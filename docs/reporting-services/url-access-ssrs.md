@@ -1,15 +1,14 @@
 ---
-title: "Accès URL (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Accès URL (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - URL access [Reporting Services]
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - report servers [Reporting Services], URL access
 - hyperlinks [Reporting Services]
 ms.assetid: 52c3f2a3-3d6d-4fee-9c46-83f366919398
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 0c80a041cc0dadf7ab95005379424a65e216dda9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f0da33c47af1470c917808729ee2aee8a503fa80
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="url-access-ssrs"></a>Accès URL (SSRS)
   L'accès URL du serveur de rapports dans SQL Server Reporting Services (SSRS) vous permet d'envoyer des commandes à un serveur de rapports par la biais d'une demande d'URL. Par exemple, vous pouvez personnaliser le rendu d'un rapport sur un serveur de rapports en mode natif ou dans une bibliothèque SharePoint. Vous avez peut-être affiché le rapport à l'aide d'un ensemble de valeurs de paramètre de rapport, ou vous avez peut-être consulté une page spécifique digne d'intérêt dans le rapport. Vous pouvez encapsuler ces informations dans l'URL à l'aide de paramètres d'accès URL prédéfinis. Vous pouvez personnaliser davantage la façon dont le serveur de rapports traite le rapport en incorporant des paramètres pour les formats de rendu ou pour l'apparence de la visionneuse de rapports. Vous pouvez ensuite coller cette URL directement dans un courrier électronique ou une page Web pour permettre à d'autres utilisateurs d'accéder à votre rapport de la même manière dans le navigateur.  

@@ -1,17 +1,13 @@
 ---
-title: "Éditeurs de texte et de requête (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Éditeurs de texte et de requête (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - VS.TextEditor
 helpviewer_keywords:
@@ -30,19 +26,20 @@ helpviewer_keywords:
 - scripts [SQL Server], SQL Server Management Studio
 - queries [SQL Server], SQL Server Management Studio
 ms.assetid: 062051e4-4b77-4969-98ae-d2547c24ce3e
-caps.latest.revision: 
+caps.latest.revision: 53
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e57fd3d81be5bdacbdce4d237e5240a52321e29a
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: db76bac6cdbdf863d85895f4743c954eff2fef3e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="query-and-text-editors-sql-server-management-studio"></a>Éditeurs de texte et de requête (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez utiliser l’un des éditeurs [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour modifier et tester de manière interactive un script [!INCLUDE[tsql](../../includes/tsql-md.md)], MDX, DMX ou XML/A, ou pour modifier un fichier texte brut ou XML. Chaque éditeur est pris en charge par un service propre à un langage qui met en couleurs les mots clés et qui vérifie la syntaxe et les erreurs d'utilisation. L'éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] comprend un débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] que vous pouvez utiliser pour résoudre les problèmes présents dans le code [!INCLUDE[tsql](../../includes/tsql-md.md)] .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous pouvez utiliser l'un des éditeurs [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour modifier et tester de manière interactive un script [!INCLUDE[tsql](../../includes/tsql-md.md)], MDX, DMX ou XML/A, ou pour modifier un fichier texte brut ou XML. Chaque éditeur est pris en charge par un service propre à un langage qui met en couleurs les mots clés et qui vérifie la syntaxe et les erreurs d'utilisation. L'éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] comprend un débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] que vous pouvez utiliser pour résoudre les problèmes présents dans le code [!INCLUDE[tsql](../../includes/tsql-md.md)] .  
   
 ## <a name="sql-server-management-studio-editors"></a>Éditeurs SQL Server Management Studio  
  Les quatre éditeurs dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] partagent une architecture commune. L'éditeur de texte implémente le niveau de base des fonctionnalités, et peut être utilisé comme éditeur de base pour les fichiers texte. Les trois autres éditeurs, ou éditeurs de requête, étendent cette base de fonctionnalité en incluant un service de langage qui définit la syntaxe d'un des langages pris en charge dans SQL Server. Les éditeurs de requête implémentent également différents niveaux de prise en charge des fonctionnalités de l'éditeur comme IntelliSense et le débogage. Les éditeurs de requête incluent l'éditeur de requête du moteur de base de données à utiliser dans l'élaboration de scripts contenant des instructions Transact-SQL et XQuery, l'éditeur MDX pour le langage MDX, l'éditeur DMX pour le langage DMX et l'éditeur XML/A pour le langage XML for Analysis.  

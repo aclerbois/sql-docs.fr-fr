@@ -1,30 +1,28 @@
 ---
-title: "Rapport de Migration de données (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Rapport de Migration de données (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: b090b327-cec6-4d9a-a670-8f96e8ff0046
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7711df7c7bfa26e548068f21a8ad8b77c888db7e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 65c7dc7ea2a28a8960fe498a1a03bb338a1e41f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-migration-report-accesstosql"></a>Rapport de Migration de données (AccessToSQL)
 Le **rapport de Migration de données** boîte de dialogue s’affiche après la migration des données à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)].  
@@ -33,7 +31,7 @@ Le **rapport de Migration de données** boîte de dialogue s’affiche après la
 **État**  
 Indique l’état de la migration des données à partir de la source de la base de données cible.  
   
-**From**  
+**De**  
 La table source.  
   
 **Pour**  

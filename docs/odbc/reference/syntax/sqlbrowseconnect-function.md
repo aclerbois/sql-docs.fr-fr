@@ -2,16 +2,13 @@
 title: Fonction SQLBrowseConnect | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
-ms.component: odbc
+ms.prod: sql
+ms.prod_service: connectivity
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - SQLBrowseConnect
 apilocation:
@@ -22,19 +19,18 @@ f1_keywords:
 helpviewer_keywords:
 - SQLBrowseConnect function [ODBC]
 ms.assetid: b7f1be66-e6c7-4790-88ec-62b7662103c0
-caps.latest.revision: ''
+caps.latest.revision: 36
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 90c872da50c2d637f79bcc086bea4aaab95608b1
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 66daf3ce016b8688ada1d584865a97675a7dbc01
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlbrowseconnect-function"></a>Fonction SQLBrowseConnect
-**Conformance**  
+**Mise en conformité**  
  Version introduite : La mise en conformité des normes 1.0 ODBC : ODBC  
   
  **Résumé**  
@@ -54,7 +50,7 @@ SQLRETURN SQLBrowseConnect(
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *ConnectionHandle*  
+ *Handle de connexion*  
  [Entrée] Handle de connexion.  
   
  *InConnectionString*  
@@ -84,7 +80,7 @@ SQLRETURN SQLBrowseConnect(
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|La mémoire tampon \* *OutConnectionString* n’est pas suffisamment grande pour retourner la chaîne de connexion résultats parcourir ensemble, donc la chaîne a été tronquée. La mémoire tampon **StringLength2Ptr* contient la longueur de la chaîne de connexion de résultat non tronqué Parcourir. (La fonction retourne SQL_NEED_DATA.)|  
-|01S00|Attribut de chaîne de connexion non valide|Un mot clé d’attribut non valide a été spécifié dans la chaîne de connexion de demande de navigation (*InConnectionString*). (La fonction retourne SQL_NEED_DATA.)<br /><br /> Un mot clé d’attribut a été spécifié dans la chaîne de connexion de demande de navigation (*InConnectionString*) qui ne s’applique pas au niveau de la connexion actuelle. (La fonction retourne SQL_NEED_DATA.)|  
+|01 S 00|Attribut de chaîne de connexion non valide|Un mot clé d’attribut non valide a été spécifié dans la chaîne de connexion de demande de navigation (*InConnectionString*). (La fonction retourne SQL_NEED_DATA.)<br /><br /> Un mot clé d’attribut a été spécifié dans la chaîne de connexion de demande de navigation (*InConnectionString*) qui ne s’applique pas au niveau de la connexion actuelle. (La fonction retourne SQL_NEED_DATA.)|  
 |01S02|Valeur modifiée|Le pilote ne prenait pas en charge la valeur spécifiée de la *ValuePtr* argument dans **SQLSetConnectAttr** et une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08001|Impossible d’établir la connexion du client|Le pilote n’a pas pu établir une connexion avec la source de données.|  
 |08002|Nom de la connexion en cours d’utilisation|(DM) la connexion spécifiée a déjà été utilisée pour établir une connexion avec une source de données et la connexion a été ouverte.|  
@@ -118,13 +114,13 @@ SQLRETURN SQLBrowseConnect(
 ## <a name="inconnectionstring-argument"></a>Argument de InConnectionString  
  Une chaîne de connexion Parcourir présente la syntaxe suivante :  
   
- *connection-string* ::= *attribute*[`;`] &#124; *attribute* `;` *connection-string*;<br>
+ *chaîne de connexion* :: = *attribut*[`;`] &#124; *attribut* `;` *chaîne de connexion*;<br>
  *attribute* ::= *attribute-keyword*`=`*attribute-value* &#124; `DRIVER=`[`{`]*attribute-value*[`}`]<br>
- *attribute-keyword* ::= `DSN` &#124; `UID` &#124; `PWD` &#124; *driver-defined-attribute-keyword*<br>
+ *mot clé de l’attribut* :: = `DSN` &#124; `UID` &#124; `PWD` &#124; *-défini-attribut-mot clé driver*<br>
  *attribute-value* ::= *character-string*<br>
- *driver-defined-attribute-keyword* ::= *identifier*<br>
+ *défini-attribut-mot clé Driver* :: = *identificateur*<br>
   
- où *chaîne de caractères* a zéro ou plusieurs caractères ; *identificateur* a un ou plusieurs caractères ; *mot clé de l’attribut* ne respecte pas la casse ; *attribut-valeur* peut respecter la casse ; et la valeur de la **DSN** mot clé n’est pas constitué uniquement d’espaces. En raison de l’initialisation et la chaîne de fichier grammaire, mots clés et l’attribut valeurs de connexion qui contient les caractères **[] {} (), ? \*= ! @** doit être évitée. En raison de la grammaire dans les informations système, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères. Pour une application ODBC 2. *x* pilote, accolades sont obligatoires pour la valeur d’attribut pour le mot clé DRIVER.  
+ où *chaîne de caractères* a zéro ou plusieurs caractères ; *identificateur* a un ou plusieurs caractères ; *mot clé de l’attribut* ne respecte pas la casse ; *attribut-valeur* peut respecter la casse ; et la valeur de la **DSN** mot clé n’est pas constitué uniquement d’espaces. En raison de l’initialisation et la chaîne de fichier grammaire, mots clés et l’attribut valeurs de connexion qui contient les caractères **[]{}(), ? \*= ! @** doit être évitée. En raison de la grammaire dans les informations système, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères. Pour une application ODBC 2. *x* pilote, accolades sont obligatoires pour la valeur d’attribut pour le mot clé DRIVER.  
   
  Si tous les mots clés sont répétés dans la chaîne de connexion de demande de parcourir, le pilote utilise la valeur associée à la première occurrence du mot clé. Si le **DSN** et **pilote** mots clés sont inclus dans la même chaîne de connexion de demande de parcourir, le Gestionnaire de pilotes et le pilote utilisent le mot clé qui apparaît en premier.  
   
@@ -133,13 +129,13 @@ SQLRETURN SQLBrowseConnect(
 ## <a name="outconnectionstring-argument"></a>Argument de OutConnectionString  
  La chaîne de connexion Parcourir résultat est une liste des attributs de connexion. Un attribut de connexion se compose d’un mot clé d’attribut et une valeur d’attribut correspondant. La chaîne de connexion résultats Parcourir présente la syntaxe suivante :  
   
- *connection-string* ::= *attribute*[`;`] &#124; *attribute* `;` *connection-string*<br>
+ *chaîne de connexion* :: = *attribut*[`;`] &#124; *attribut* `;` *chaîne de connexion*<br>
  *attribute* ::= [`*`]*attribute-keyword*`=`*attribute-value*<br>
  *attribute-keyword* ::= *ODBC-attribute-keyword* &#124; *driver-defined-attribute-keyword*<br>
- *ODBC-attribute-keyword* = {`UID` &#124; `PWD`}[`:`*localized-identifier*] *driver-defined-attribute-keyword* ::= *identifier*[`:`*localized-identifier*] *attribute-value* ::= `{` *attribute-value-list* `}` &#124; `?` (The braces are literal; they are returned by the driver.)<br>
- *attribute-value-list* ::= *character-string* [`:`*localized-character string*] &#124; *character-string* [`:`*localized-character string*] `,` *attribute-value-list*<br>
+ *Mot clé ODBC attribut* = {`UID` &#124; `PWD`} [`:`*identificateur localisée*] *-défini-attribut-mot clé driver* :: = *identificateur*[`:`*identificateur localisée*] *attribut-valeur* :: = `{` *attribut-valeur-list* `}` &#124; `?` (Les accolades sont littéral ; ils sont retournés par le pilote).<br>
+ *liste de valeurs d’attribut* :: = *chaîne de caractères* [`:`*chaîne de caractères localisés*] &#124; *chaîne de caractères* [`:` *chaîne de caractères localisés*] `,` *liste de valeurs d’attribut*<br>
   
- où *chaîne de caractères* et *chaîne de caractères localisés* avoir zéro ou plusieurs caractères ; *identificateur* et *identificateur localisée* ont un ou plusieurs caractères ; *mot clé de l’attribut* ne respecte pas la casse ; et *attribut-valeur* peut respecter la casse. En raison de la connexion chaîne et l’initialisation du fichier grammaire, les mots clés et les identificateurs localisées et valeurs d’attribut qui contient les caractères **[] {} (), ? \*= ! @** doit être évitée. En raison de la grammaire dans les informations système, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères.  
+ où *chaîne de caractères* et *chaîne de caractères localisés* avoir zéro ou plusieurs caractères ; *identificateur* et *identificateur localisée* ont un ou plusieurs caractères ; *mot clé de l’attribut* ne respecte pas la casse ; et *attribut-valeur* peut respecter la casse. En raison de la connexion chaîne et l’initialisation du fichier grammaire, les mots clés et les identificateurs localisées et valeurs d’attribut qui contient les caractères **[]{}(), ? \*= ! @** doit être évitée. En raison de la grammaire dans les informations système, les noms de sources de données et les mots clés ne peut pas contenir la barre oblique inverse (\\) caractères.  
   
  La syntaxe de chaîne de connexion résultats Parcourir est utilisée selon les règles sémantiques suivantes :  
   

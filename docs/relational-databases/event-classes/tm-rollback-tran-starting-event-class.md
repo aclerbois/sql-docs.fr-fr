@@ -1,34 +1,30 @@
 ---
-title: "TM: Rollback Tran Starting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: 'TM: Rollback Tran Starting, classe d’événements | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'TM: Rollback Tran Starting event class'
 ms.assetid: 3b4d0d56-c51f-4f07-a116-5d4bd6ec1a3c
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d8266e76eeb20ea7dbf3adf0fc3f1d18d68712a5
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 0a6d9b75284084f1abceed92f27934574f1d4ccd
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tm-rollback-tran-starting-event-class"></a>TM: Rollback Tran Starting, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements TM: Rollback Tran Starting indique qu'une demande ROLLBACK TRANSACTION commence. Le client envoie la demande par le biais de l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction va être démarrée après l'annulation de la transaction en cours.  
+  La classe d'événements TM: Rollback Tran Starting indique qu'une demande ROLLBACK TRANSACTION commence. Le client envoie la demande par le biais de l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction va être démarrée après l'annulation de la transaction en cours.  
   
 ## <a name="tm-rollback-tran-starting-event-class-data-columns"></a>Colonnes de données de la classe d'événements TM: Rollback Tran Starting  
   

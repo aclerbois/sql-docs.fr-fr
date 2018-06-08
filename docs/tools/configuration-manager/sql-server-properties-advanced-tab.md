@@ -1,32 +1,28 @@
 ---
-title: "Propriétés de SQL Server (onglet Avancé) | Documents Microsoft"
-ms.custom: 
+title: Propriétés de SQL Server (onglet Avancé) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2ffd10fd-bac1-478f-9cff-96ed6c8b787f
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0a0b573dcb4b68c8becf86c8e847b10d5df5ed1a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: 2c6c71003694d4b696fc771c6b89a29ffafbff0b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-properties-advanced-tab"></a>Propriétés de SQL Server (onglet Avancé)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-Les propriétés suivantes figurent par défaut dans l'onglet **Avancé** . Si des propriétés personnalisées sont définies, elles apparaissent également sous cet onglet, avec les valeurs correspondantes.  
+  Les propriétés suivantes figurent par défaut dans l'onglet **Avancé** . Si des propriétés personnalisées sont définies, elles apparaissent également sous cet onglet, avec les valeurs correspondantes.  
   
 ## <a name="options"></a>Options  
  **Cluster**  

@@ -1,31 +1,31 @@
 ---
-title: "Ajouter un rapport personnalisé à Management Studio | Microsoft Docs"
-ms.custom: 
+title: Ajouter un rapport personnalisé à Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQL Server Management Studio [SQL Server], custom reports
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQL Server Management Studio [SQL Server], custom reports
 ms.assetid: 3cf8d726-0a90-4f80-98d0-352a2a59be0f
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7b682c71e77188ea46cea5f85590953c17d61bda
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: c4459d482fad2639e8aa3ff35dccb38e2aa5cd25
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-custom-report-to-management-studio"></a>Ajouter un rapport personnalisé à Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette rubrique explique comment créer un simple rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion_md.md)] enregistré comme fichier .rdl, puis ajouter ce fichier à [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] en tant que rapport personnalisé. [!INCLUDE[ssRS](../../includes/ssrs_md.md)] permet de créer un large choix de rapports élaborés. Pour que vous puissiez créer un rapport en suivant cette rubrique, [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull_md.md)] doit être installé sur votre ordinateur. Vous n'avez pas besoin d'installer [!INCLUDE[ssRS](../../includes/ssrs_md.md)] sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] pour exécuter un rapport personnalisé à l'aide de [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Cette rubrique explique comment créer un simple rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion_md.md)] enregistré comme fichier .rdl, puis ajouter ce fichier à [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] en tant que rapport personnalisé. [!INCLUDE[ssRS](../../includes/ssrs_md.md)] permet de créer un large choix de rapports élaborés. Pour que vous puissiez créer un rapport en suivant cette rubrique, [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull_md.md)] doit être installé sur votre ordinateur. Vous n'avez pas besoin d'installer [!INCLUDE[ssRS](../../includes/ssrs_md.md)] sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] pour exécuter un rapport personnalisé à l'aide de [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)].  
   
  
 ### <a name="to-create-a-simple-report-saved-as-an-rdl-file"></a>Pour créer un rapport simple enregistré en tant que fichier .rdl  

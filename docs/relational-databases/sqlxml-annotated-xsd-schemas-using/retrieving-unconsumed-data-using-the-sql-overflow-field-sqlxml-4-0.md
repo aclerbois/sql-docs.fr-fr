@@ -1,16 +1,14 @@
 ---
-title: "La récupération des données à l’aide de SQL : overflow-field (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: 'La récupération des données à l’aide de SQL : overflow-field (SQLXML 4.0) | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - unconsumed data
@@ -20,20 +18,20 @@ helpviewer_keywords:
 - overflow data [SQLXML]
 - sql:overflow-field
 ms.assetid: 8526998d-b47d-4a32-8dc2-7f50a8d11097
-caps.latest.revision: 
+caps.latest.revision: 30
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e1801fcd260dd674489a851361044ff6c9110c63
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 61c5ff309e264f78fe4e9ffa71c7deb0c41d93a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="retrieving-unconsumed-data-using-the-sqloverflow-field-sqlxml-40"></a>Extraction de données non consommées à l'aide de sql:overflow-field (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Lorsque les enregistrements sont insérés dans une base de données à partir d'un document XML à l'aide de la fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] OPENXML, toutes les données non consommées du document XML source peuvent être stockées dans une colonne. Lorsque vous récupérez des données à partir d’une base de données à l’aide des schémas annotés, vous pouvez spécifier le **SQL : Overflow-champ** attribut pour identifier la colonne dans la table dans laquelle sont stockées les données de dépassement de capacité. Le **SQL : Overflow-champ** attribut peut être spécifié sur  **\<élément >**.  
+  Lorsque les enregistrements sont insérés dans une base de données à partir d'un document XML à l'aide de la fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] OPENXML, toutes les données non consommées du document XML source peuvent être stockées dans une colonne. Lorsque vous récupérez des données à partir d’une base de données à l’aide des schémas annotés, vous pouvez spécifier le **SQL : Overflow-champ** attribut pour identifier la colonne dans la table dans laquelle sont stockées les données de dépassement de capacité. Le **SQL : Overflow-champ** attribut peut être spécifié sur  **\<élément >**.  
   
  Ces données sont alors récupérées selon les méthodes suivantes :  
   

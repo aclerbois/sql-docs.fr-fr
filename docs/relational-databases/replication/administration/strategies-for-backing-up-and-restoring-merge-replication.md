@@ -1,33 +1,31 @@
 ---
-title: "Stratégies de sauvegarde et de restauration de la réplication de fusion | Microsoft Docs"
-ms.custom: 
+title: Stratégies de sauvegarde et de restauration de la réplication de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - recovery [SQL Server replication], merge replication
 - backups [SQL Server replication], merge replication
 - restoring [SQL Server replication], merge replication
 - merge replication [SQL Server replication], backup and restore
 ms.assetid: b8ae31c6-d76f-4dd7-8f46-17d023ca3eca
-caps.latest.revision: 
+caps.latest.revision: 48
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ec6dfe48d0d12626ff908efd24b810c276249f7c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 0c3e727b15d9e963996cfa4d9616ecf723bcff5e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="strategies-for-backing-up-and-restoring-merge-replication"></a>Stratégies de sauvegarde et de restauration de la réplication de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -78,7 +76,7 @@ ms.lasthandoff: 03/08/2018
   
  Pour réinitialiser un abonnement, consultez [Reinitialize a Subscription](../../../relational-databases/replication/reinitialize-a-subscription.md).  
   
- Pour créer et appliquer un instantané, consultez [Create et Apply the Initial Snapshot et [Create a Snapshot for a Merge Publication with Parameterized Filters](../../../relational-databases/replication/create-a-snapshot-for-a-merge-publication-with-parameterized-filters.md).  
+ Pour créer et appliquer un instantané, consultez [Create et Apply the Initial Snapshot](../../../relational-databases/replication/create-and-apply-the-initial-snapshot.md) et [Créer un instantané d'une publication de fusion avec des filtres paramétrés](../../../relational-databases/replication/create-a-snapshot-for-a-merge-publication-with-parameterized-filters.md).  
   
 ## <a name="backing-up-and-restoring-the-distribution-database"></a>Sauvegarde et restauration de la base de données de distribution  
  Avec la réplication de fusion, la base de données de distribution doit être sauvegardée régulièrement, et peut être restaurée sans considérations particulières aussi longtemps que la sauvegarde n'est pas plus ancienne que la période de rétention la plus courte de tous les abonnements qui utilisent le serveur de distribution. Par exemple, s'il y a trois publications avec des périodes de rétention de 10, 20 et 30 jours respectivement, la sauvegarde utilisée pour restaurer la base de données ne doit pas être vieille de plus de 10 jours. La base de données de distribution a un rôle limité dans la réplication de fusion : elle ne stocke aucune donnée utilisée dans le suivi des modifications et ne constitue pas un support de stockage temporaire pour les modifications de réplication de fusion destinées aux bases de données d'abonnement (comme elle le fait dans la réplication transactionnelle).  

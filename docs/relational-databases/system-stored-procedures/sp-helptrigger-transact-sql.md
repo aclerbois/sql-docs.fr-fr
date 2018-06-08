@@ -1,16 +1,14 @@
 ---
 title: sp_helptrigger (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helptrigger
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_helptrigger
 ms.assetid: e486d39b-771d-488d-a786-7136433a2203
-caps.latest.revision: 
+caps.latest.revision: 37
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 568e8eadad6dd63a2b2980284ec56bff9bb0293e
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 61c6c78c302266ce3a9e29c432e1a913c263d704
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelptrigger-transact-sql"></a>sp_helptrigger (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -76,7 +74,7 @@ sp_helptrigger [ @tabname = ] 'table'
 |**isinsteadof**|**int**|1 = déclencheur INSTEAD OF<br /><br /> 0 = n'est pas un déclencheur INSTEAD OF|  
 |**trigger_schema**|**sysname**|Nom du schéma auquel le déclencheur appartient.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md) autorisation sur la table.  
   
 ## <a name="examples"></a>Exemples  
@@ -89,7 +87,7 @@ EXEC sp_helptrigger 'Person.Person';
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [ALTER TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/alter-trigger-transact-sql.md)   
  [CREATE TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/create-trigger-transact-sql.md)   
  [DROP TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/drop-trigger-transact-sql.md)   

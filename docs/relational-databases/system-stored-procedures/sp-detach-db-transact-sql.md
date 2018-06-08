@@ -1,16 +1,14 @@
 ---
 title: sp_detach_db (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/30/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_detach_db
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_detach_db
 - detaching databases [SQL Server]
 ms.assetid: abcb1407-ff78-4c76-b02e-509c86574462
-caps.latest.revision: 
+caps.latest.revision: 86
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 09fd806b6ca491507fd748c3e2f9751b27c1eda5
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: c0f17581782cea310bcfad9ec6d7ce4823d1d38c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdetachdb-transact-sql"></a>sp_detach_db (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +49,7 @@ sp_detach_db [ @dbname= ] 'database_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@dbname =** ] **'***database_name***'**  
+ [  **@dbname =** ] **'***nom_base_de_données***'**  
  Nom de la base de données à détacher. *database_name* est un **sysname** valeur, avec NULL comme valeur par défaut.  
   
  [  **@skipchecks =** ] **'***skipchecks***'**  
@@ -60,11 +57,11 @@ sp_detach_db [ @dbname= ] 'database_name'
   
  Par défaut, UPDATE STATISTICS est exécuté pour mettre à jour les informations relatives aux données des tables et des index. L'exécution de UPDATE STATISTICS est utile pour les bases de données qui doivent être placées sur des supports en lecture seule.  
   
- [ **@keepfulltextindexfile=** ] **'***KeepFulltextIndexFile***'**  
+ [  **@keepfulltextindexfile=** ] **'***KeepFulltextIndexFile***'**  
  Spécifie que le fichier d'index de texte intégral associé à la base de données à détacher ne sera pas supprimé pendant l'opération de détachement de la base de données. *KeepFulltextIndexFile* est un **nvarchar (10)** valeur par défaut de **true**. Si *KeepFulltextIndexFile* est **false**, tous les fichiers d’index de texte intégral associé à la base de données et les métadonnées de l’index de recherche en texte intégral sont supprimés, sauf si la base de données est en lecture seule. Si NULL ou **true**, liée au texte intégral les métadonnées sont conservées.  
   
 > [!IMPORTANT]  
->  Le **@keepfulltextindexfile**  paramètre sera supprimé dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ce paramètre dans de nouveaux travaux de développement, et modifiez dès que possible les applications qui utilisent actuellement ce paramètre.  
+>  Le**@keepfulltextindexfile** paramètre sera supprimé dans une future version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ce paramètre dans de nouveaux travaux de développement, et modifiez dès que possible les applications qui utilisent actuellement ce paramètre.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
@@ -76,7 +73,7 @@ sp_detach_db [ @dbname= ] 'database_name'
  Lorsqu'une base de données est détachée, toutes ses métadonnées sont supprimées. Si la base de données a été la base de données par défaut de tous les comptes de connexion **master** devient leur base de données par défaut.  
   
 > [!NOTE]  
->  Pour plus d’informations sur l’affichage de la base de données par défaut de tous les comptes de connexion, consultez [sp_helplogins &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-helplogins-transact-sql.md). Si vous avez les autorisations requises, vous pouvez utiliser [ALTER LOGIN](../../t-sql/statements/alter-login-transact-sql.md) pour attribuer une nouvelle base de données par défaut à une connexion.  
+>  Pour plus d’informations sur l’affichage de la base de données par défaut de tous les comptes de connexion, consultez [sp_helplogins &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helplogins-transact-sql.md). Si vous avez les autorisations requises, vous pouvez utiliser [ALTER LOGIN](../../t-sql/statements/alter-login-transact-sql.md) pour attribuer une nouvelle base de données par défaut à une connexion.  
   
 ## <a name="restrictions"></a>Restrictions  
  Une base de données ne peut pas être détachée si une des conditions suivantes est vraie :  

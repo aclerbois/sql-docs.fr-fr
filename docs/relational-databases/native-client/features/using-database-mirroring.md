@@ -1,15 +1,14 @@
 ---
-title: "À l’aide de la mise en miroir de base de données | Documents Microsoft"
-ms.custom: 
+title: À l’aide de la mise en miroir de base de données | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, database mirroring
 - SQL Server Native Client OLE DB provider, database mirroring
 ms.assetid: 71b15712-7972-4465-9274-e0ddc271eedc
-caps.latest.revision: 
+caps.latest.revision: 55
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63e362b186725b5e9adf15721fcfd4154be3148d
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 17367de4b2594834c6758213f54be06023b1381b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-database-mirroring"></a>Utilisation de la mise en miroir de bases de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -39,7 +38,7 @@ ms.lasthandoff: 01/25/2018
 > [!NOTE]  
 >  [!INCLUDE[ssNoteDepFutureAvoid](../../../includes/ssnotedepfutureavoid-md.md)]Utilisez [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] à la place.  
   
- La mise en miroir de bases de données, introduite dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)], est une solution permettant d'accroître la disponibilité de la base de données et la redondance des données. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Native Client fournit la prise en charge implicite de mise en miroir de base de données, le développeur n’avez donc pas à écrire du code ou prendre aucune autre mesure une fois qu’il a été configuré pour la base de données.  
+ La mise en miroir de bases de données, introduite dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)], est une solution permettant d'accroître la disponibilité de la base de données et la redondance des données. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client fournit la prise en charge implicite de mise en miroir de base de données, le développeur n’avez donc pas à écrire du code ou prendre aucune autre mesure une fois qu’il a été configuré pour la base de données.  
   
  Base de données mise en miroir, qui est implémentée sur une base par base de données, conserve une copie d’un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] base de données de production sur un serveur de secours. Ce serveur est un serveur de secours automatique ou semi-automatique, selon la configuration et l'état de la session de mise en miroir de bases de données. Un serveur de secours automatique prend en charge le basculement rapide sans perte de transactions validées et un serveur de secours semi-automatique prend en charge le service forcé (avec perte de données possible).  
   
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/25/2018
  Il est possible d'utiliser un alias lors de la spécification du nom d'une base de données miroir.  
   
 > [!NOTE]  
->  Pour plus d’informations sur les tentatives de connexion initiale et les tentatives de reconnexion à une base de données mise en miroir, consultez [connecter des Clients à une Session de mise en miroir de base de données &#40; SQL Server &#41; ](../../../database-engine/database-mirroring/connect-clients-to-a-database-mirroring-session-sql-server.md).  
+>  Pour plus d’informations sur les tentatives de connexion initiale et les tentatives de reconnexion à une base de données mise en miroir, consultez [connecter des Clients à une Session de mise en miroir de base de données &#40;SQL Server&#41;](../../../database-engine/database-mirroring/connect-clients-to-a-database-mirroring-session-sql-server.md).  
   
 ## <a name="programming-considerations"></a>Éléments de programmation à prendre en considération  
  Lorsque le serveur de la base de données principale échoue, l'application cliente reçoit des erreurs en réponse aux appels d'API, erreurs qui signifient que la connexion à la base de données a été perdue. Lorsque cela se produit, toutes les modifications apportées à la base de données qui n'ont pas été validées sont perdues et la transaction en cours est annulée. Si cela se produit, l'application doit fermer la connexion (ou libérer l'objet source de données) et la rouvrir. La connexion est redirigée de façon transparente vers la base de données miroir, qui fait désormais office de serveur principal.  

@@ -1,16 +1,14 @@
 ---
-title: "Matrice de compatibilité | Documents Microsoft"
-ms.custom: 
+title: Matrice de compatibilité | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - driver compatibility issues [ODBC]
 - ODBC drivers [ODBC], backward compatibility
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - application upgrades [ODBC], compatibility matrix
 - upgrading applications [ODBC], compatibility matrix
 ms.assetid: 0690b463-15a1-48fa-9d0b-9cc9e5bf7fc6
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6c3a7fac17ed685680e71b329388e192ec1c9f97
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 09f09d5a8b6e15c677969b2b865e3908200108e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="compatibility-matrix"></a>Matrice de compatibilité
 Le tableau suivant décrit la compatibilité des types d’applications et des pilotes définies précédemment dans cette section.  
@@ -52,7 +49,7 @@ Le tableau suivant décrit la compatibilité des types d’applications et des p
   
  [3] de cette configuration peut potentiellement pas, car il existe des fonctionnalités dans ODBC 2. *x* qui ne sont pas dans les normes, telles que les signets.  
   
- [4], cette configuration peut potentiellement ne fonctionnent pas, car il existe des fonctionnalités dans ODBC 3*.x* qui ne sont pas dans les normes, telles que les signets.  
+ [4], cette configuration peut potentiellement ne fonctionnent pas, car il existe des fonctionnalités dans ODBC 3 *.x* qui ne sont pas dans les normes, telles que les signets.  
   
  [5], cette configuration peut potentiellement être défaillants, car il existe des fonctionnalités qui ne sont pas dans ODBC 2.x ou 3.x pilotes, tels que spécifiques au pilote dans ODBC 3.8 [des Types de données C dans ODBC](../../../odbc/reference/develop-app/c-data-types-in-odbc.md).  
   

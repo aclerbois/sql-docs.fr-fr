@@ -1,34 +1,33 @@
 ---
-title: "Préparer une base de données miroir pour la mise en miroir (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Préparer une base de données miroir pour la mise en miroir (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/10/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], preparing for mirroring
 - logins [SQL Server], database mirroring
 - mirror database [SQL Server]
 ms.assetid: 8676f9d8-c451-419b-b934-786997d46c2b
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6a14d697865f099b584e3f8f7132f0bfc6a0cf49
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cc406dcccab13265f18bb88de026530f21aa739c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-a-mirror-database-for-mirroring-sql-server"></a>Préparer une base de données miroir pour la mise en miroir (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Avant de pouvoir démarrer une session de mise en miroir de bases de données, le propriétaire de la base de données ou l’administrateur système doit s’assurer que la base de données miroir a été créée et qu’elle est prête pour la mise en miroir. La création d'une nouvelle base de données miroir requiert au minimum la réalisation d'une sauvegarde complète de la base de données principale puis d'une sauvegarde du journal, ainsi que la restauration de ces deux sauvegardes sur l'instance du serveur miroir, en utilisant WITH NORECOVERY.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Avant qu'une session de mise en miroir de bases de données puisse commencer, le propriétaire de la base de données ou l'administrateur système doit s'assurer que la base de données miroir a été créée et qu'elle est prête pour la mise en miroir. La création d'une nouvelle base de données miroir requiert au minimum la réalisation d'une sauvegarde complète de la base de données principale puis d'une sauvegarde du journal, ainsi que la restauration de ces deux sauvegardes sur l'instance du serveur miroir, en utilisant WITH NORECOVERY.  
   
  Cette rubrique explique comment préparer une base de données miroir dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   

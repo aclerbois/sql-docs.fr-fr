@@ -1,29 +1,30 @@
 ---
-title: "Importer et exporter des données dans SQL Server et Azure SQL Database | Microsoft Docs"
-ms.custom: 
+title: Importer et exporter des données dans SQL Server et Azure SQL Database | Microsoft Docs
+ms.custom: ''
 ms.date: 10/27/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 74f7d68b9e3feb4e65c1a287b69a580802719199
-ms.sourcegitcommit: fbbb050f43ecb780281b370ec73fdcd472eb0ecc
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 57b59258776e0bd4d582e44a650cd0450a82d549
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/06/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708197"
 ---
 # <a name="import-and-export-data-from-sql-server-and-azure-sql-database"></a>Importer et exporter des données dans SQL Server et Azure SQL Database
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Plusieurs méthodes sont possibles pour importer et exporter des données dans SQL Server et Azure SQL Database. Vous pouvez notamment utiliser des instructions Transact-SQL, des outils en ligne de commande et des Assistants.
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Plusieurs méthodes sont possibles pour importer et exporter des données dans SQL Server et Azure SQL Database. Vous pouvez notamment utiliser des instructions Transact-SQL, des outils en ligne de commande et des Assistants.
 
 De plus, vous pouvez importer et exporter des données de formats différents, tels que les fichiers plats, les fichiers Excel, les principales bases de données relationnelles et divers services cloud.
 
@@ -36,7 +37,7 @@ Vous pouvez importer des données à l’aide des commandes `BULK INSERT` ou `OP
 Vous pouvez importer et exporter des données avec l’utilitaire en ligne de commande BCP. Pour plus d’informations, consultez [Importer et exporter des données en bloc à l’aide de l’utilitaire BCP](import-bulk-data-by-using-bulk-insert-or-openrowset-bulk-sql-server.md).
 
 ### <a name="use-the-import-flat-file-wizard"></a>Utilisation de l’Assistant Importation d’un fichier plat
-Si vous n’avez pas besoin de toutes les options de configuration disponibles dans l’Assistant Importation et Exportation et d’autres outils, vous pouvez importer un fichier texte dans SQL Server à l’aide de l**’Assistant Importation de fichier plat** dans SQL Server Management Studio (SSMS). Pour plus d’informations, consultez les articles suivants :
+Si vous n’avez pas besoin de toutes les options de configuration disponibles dans l’Assistant Importation et Exportation et d’autres outils, vous pouvez importer un fichier texte dans SQL Server à l’aide de l **’Assistant Importation de fichier plat** dans SQL Server Management Studio (SSMS). Pour plus d’informations, consultez les articles suivants :
 - [Assistant Importation d’un fichier plat dans SQL](import-flat-file-wizard.md)
 - [Nouveautés de SQL Server Management Studio 17.3 ](https://blogs.technet.microsoft.com/dataplatforminsider/2017/10/10/whats-new-in-sql-server-management-studio-17-3/)
 - [Présentation du nouvel Assistant Importation de fichier plat dans SSMS 17.3](https://channel9.msdn.com/Shows/Data-Exposed/Introducing-the-new-Import-Flat-File-Wizard-in-SSMS-173)

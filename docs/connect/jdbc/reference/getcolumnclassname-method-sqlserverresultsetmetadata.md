@@ -1,30 +1,29 @@
 ---
-title: "Méthode getColumnClassName (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getColumnClassName (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSetMetaData.getColumnClassName
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSetMetaData.getColumnClassName
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 2c118790-5dd2-4b10-93b6-7f065ee324ce
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2e398d757b7c967713f4fb4f418ac397e5f09d21
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 1b847b1556324bb9a85cfb965a9f5b188e756952
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getcolumnclassname-method-sqlserverresultsetmetadata"></a>Méthode getColumnClassName (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public java.lang.String getColumnClassName(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Un **int** qui indique l’index de colonne.  
   

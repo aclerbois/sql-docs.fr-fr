@@ -1,30 +1,28 @@
 ---
-title: "Sélectionner les tables et les vues sources (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: sql-non-specified
+title: Sélectionner les tables et les vues sources (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/02/2018
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.impexpwizard.selectsourcetablesandviews.f1
 ms.assetid: f60e1a19-2ea6-403c-89ab-3e60ac533ea0
-caps.latest.revision: 
+caps.latest.revision: 96
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 600e734c11a597cdcbae0279e1604bd96ccfb06f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 8a5ebd644020b4c2bb6e07aff74e11e4e2474338
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-source-tables-and-views-sql-server-import-and-export-wizard"></a>Sélectionner les tables et les vues sources (Assistant Importation et Exportation SQL Server)
   Une fois que vous avez indiqué que vous voulez copier la totalité d’une table ou après avoir fourni une requête, l’Assistant Importation et Exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche la page **Sélectionner les tables et les vues sources**. Dans cette page, vous sélectionnez les tables et les vues existantes à copier. Vous mappez ensuite les tables sources aux tables de destination nouvelles ou existantes. Si vous le souhaitez, vous pouvez aussi passer en revue le mappage des colonnes et afficher un aperçu des exemples de données.
@@ -73,6 +71,9 @@ Après avoir affiché un aperçu des données, vous souhaiterez peut-être modif
 
 ## <a name="select-source-and-destination-tables-for-excel"></a>Sélectionner des tables sources et de destination pour Excel
 
+> [!IMPORTANT]
+> Pour obtenir des informations détaillées sur la connexion à des fichiers Excel, et sur les limitations et les problèmes connus liés au chargement de données depuis ou vers des fichiers Excel, consultez [Charger des données depuis ou vers Excel avec SQL Server Integration Services (SSIS)](../load-data-to-from-excel-with-ssis.md).
+
 ### <a name="excel-source-tables"></a>Tables sources Excel
 La liste des tables et des vues sources d’une source de données Excel comprend deux types d’objets Excel.
 -   **Feuilles de calcul**. Les noms de feuille de calcul sont suivis du signe dollar ($) : par exemple, **« Sheet1$ »**.
@@ -80,41 +81,21 @@ La liste des tables et des vues sources d’une source de données Excel compren
 
 Si vous souhaitez charger des données à partir d’une plage de cellules spécifique, sans nom ou vers celle-ci (par exemple, **[Sheet1$A1:B4]**), vous devez écrire une requête. Retournez dans la page **Spécifier la copie ou l’interrogation de table** et sélectionnez **Écrire une requête pour spécifier les données à transférer**.
 
-#### <a name="prepare-the-excel-source-data"></a>Préparer les données sources Excel
-Que vous spécifiez une feuille de calcul ou une plage comme table source, le pilote lit le bloc de cellules *contigu* à partir de la première cellule non vide en haut à gauche de la feuille de calcul ou de la plage. Par conséquent, vous ne pouvez pas avoir de ligne vide dans les données sources. Par exemple, vous ne pouvez pas avoir de ligne vide entre les en-têtes de colonne et les lignes de données. Si un titre est suivi de lignes vides en haut de la feuille de calcul au-dessus de vos données, vous ne pouvez pas interroger la feuille de calcul. Dans Excel, vous devez attribuer un nom à la plage de données et interroger la plage nommée au lieu de la feuille de calcul.
-
 ### <a name="excel-destination-tables"></a>Tables de destination Excel
 Si vous exportez des données vers Excel, vous pouvez spécifier la destination par l’une des trois méthodes suivantes.
 -   **Feuille de calcul.** Pour spécifier une feuille de calcul, ajouter le caractère $ à la fin du nom de la feuille et ajouter des délimiteurs autour de la chaîne. Par exemple, **[Sheet1$]**.
 -   **Plage nommée.** Pour spécifier une plage nommée, utilisez simplement le nom de la plage. Par exemple, **MyDataRange**.
 -   **Plage sans nom.** Pour spécifier une plage de cellules que vous n’avez pas nommée, ajoutez le caractère $ à la fin du nom de la feuille, ajoutez la spécification de plage ainsi que des délimiteurs autour de la chaîne. Par exemple, **[Sheet1$A1:B4]**.
 
-## <a name="special-considerations-for-excel-sources-and-destinations"></a>Considérations spéciales pour les sources et les destinations Excel
-Quand vous utilisez Excel comme source ou destination, cliquez sur **Modifier les mappages** et vérifiez les mappages de types de données dans la page **Mappages de colonnes** . 
-
-**Types de données dans les classeurs Excel**. Excel n’est pas une base de données classique. Ses colonnes n’ont pas de type de données fixe. L’Assistant reconnaît uniquement un ensemble limité de type de données dans Excel : numérique, devise, booléen, date/heure, chaîne (255 caractères maximum) et mémo (plus de 255 caractères). L’Assistant échantillonne un certain nombre de lignes (par défaut, les 8 premières lignes) dans une source de données Excel existante pour déterminer le type de données de chaque colonne.
-
-Quand l’Assistant doit effectuer des conversions explicites de types de données à charger à partir d’Excel ou vers ce dernier, il affiche généralement la page **Vérifier le mappage de type de données** , dans laquelle vous pouvez vérifier ces conversions. Ces conversions peuvent être les suivantes.
--   conversion entre des colonnes numériques Excel à double précision et des colonnes numériques d'autres types.
--   conversion entre des colonnes Excel de type chaîne de 255 caractères et des colonnes de type chaîne de longueurs différentes ;
--   Conversion entre des colonnes Excel de type chaîne Unicode et des colonnes de type chaîne non-Unicode qui utilisent des pages de codes spécifiques.
-
-### <a name="special-considerations-for-excel-sources"></a>Considérations spéciales pour les sources Excel
-**Valeurs Null ou manquantes dans les données importées**. Quand une colonne Excel semble contenir différents types de données dans les 8 premières lignes échantillonnées par l’Assistant (par exemple, des valeurs numériques et des valeurs de texte), celui-ci choisit le type de données majoritaire comme type de données de la colonne, et retourne des valeurs Null pour les cellules qui contiennent des données d’autres types. Il n’existe aucun moyen de modifier ce comportement de l’Assistant.
-
-**Chaînes tronquées dans les données importées**. Quand l’Assistant détermine qu’une colonne Excel contient des données texte, il choisit le type de données de la colonne (chaîne ou mémo) en fonction de la valeur la plus longue qu’il échantillonne dans les 8 premières lignes. Si l’Assistant ne trouve aucune valeur avec plus de 255 caractères dans les lignes échantillonnées, il traite la colonne comme une colonne de type chaîne à 255 caractères et non comme une colonne de type mémo, et tronque les valeurs de longueur supérieure à 255 caractères. Pour importer des données à partir d’une colonne de type mémo sans troncation, vous devez vérifier que la colonne mémo contient au moins une valeur de plus de 255 caractères dans les 8 premières lignes qui sont échantillonnées par l’Assistant.
-
-### <a name="special-considerations-for-excel-destinations"></a>Considérations spéciales pour les destinations Excel
-**Spécification d’une plage de données existante**. Quand vous spécifiez une plage existante comme destination, vous obtenez une erreur si la plage a moins de *colonnes* que dans les données sources. Toutefois, si la plage que vous spécifiez a moins de *lignes* que dans les données sources, l’Assistant continue d’écrire des lignes et étend la définition de la plage pour qu’elle corresponde au nouveau nombre de lignes.
-
-**Enregistrement des données mémo (ntext)**. Pour pouvoir enregistrer des chaînes de plus de 255 caractères dans une colonne Excel, l’Assistant doit reconnaître le type de données de la colonne de destination comme **mémo** et non comme **chaîne**.
--   Si la table de destination contient déjà des lignes de données, les 8 premières lignes échantillonnées par l’Assistant doivent contenir au moins une ligne avec une valeur de plus de 255 caractères dans la colonne mémo.
--   Si la table de destination est créée par l’Assistant, l’instruction **CREATE TABLE** doit utiliser **LONGTEXT** (ou un de ses synonymes) comme type de données de la colonne mémo. Vérifiez l’instruction **CREATE TABLE** et corrigez-la, si nécessaire, en cliquant sur **Modifier SQL** en regard de l’option **Créer une table de destination** dans la page **Mappage de colonnes**.
+> [!TIP]
+> Quand vous utilisez Excel comme source ou destination, cliquez sur **Modifier les mappages** et vérifiez les mappages de types de données dans la page **Mappages de colonnes** . 
 
 ## <a name="whats-next"></a>Quelle est l’étape suivante ?  
  Une fois que vous avez sélectionné les tables et vues existantes à copier et que vous les avez mappées à leurs destinations, la page suivante est **Enregistrer et exécuter le package**. Dans cette page, vous spécifiez si vous souhaitez exécuter l’opération de copie immédiatement. Selon votre configuration, vous pouvez également être en mesure d’enregistrer le package [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] créé par l’Assistant pour le personnaliser et le réutiliser ultérieurement. Pour plus d’informations, consultez [Enregistrer et exécuter le package](../../integration-services/import-export-data/save-and-run-package-sql-server-import-and-export-wizard.md).
  
  ## <a name="see-also"></a>Voir aussi
-[Bien démarrer avec cet exemple simple de l’Assistant Importation et Exportation](../../integration-services/import-export-data/get-started-with-this-simple-example-of-the-import-and-export-wizard.md)
+[Bien démarrer avec cet exemple simple de l’Assistant Importation et Exportation](../../integration-services/import-export-data/get-started-with-this-simple-example-of-the-import-and-export-wizard.md)  
+[Charger des données depuis ou vers Excel avec SQL Server Integration Services (SSIS)](../load-data-to-from-excel-with-ssis.md)
+
 
 

@@ -1,16 +1,12 @@
 ---
-title: "Vues de gestion dynamique (Transact-SQL) liées à la réplication | Documents Microsoft"
-ms.custom: 
+title: Vues de gestion dynamique (Transact-SQL) liées à la réplication | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +14,15 @@ helpviewer_keywords:
 - dynamic management objects [SQL Server], replication
 - replication dynamic management objects [SQL Server]
 ms.assetid: 2bf5e145-3c4c-4fb6-afa0-197342dba038
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bc3f0b986c0be4d88416edc80d1b2ff081dc5a81
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 245c6c3bf1d24b8d795b3a22315acb7198874e00
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="replication-related-dynamic-management-views-transact-sql"></a>Vues de gestion dynamique liées à la réplication (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

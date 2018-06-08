@@ -1,16 +1,14 @@
 ---
 title: LEN (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/03/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - LEN
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - characters [SQL Server], number of
 - number of characters
 ms.assetid: fa20fee4-884d-4301-891a-c03e901345ae
-caps.latest.revision: 
+caps.latest.revision: 47
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4f81bca5986279d53ea1fce44c50ab400ad03d50
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 290d9b9ba27b5895cb9511220bbf7ef39bbb8025
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="len-transact-sql"></a>LEN (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -54,7 +52,7 @@ LEN ( string_expression )
  [Expression](../../t-sql/language-elements/expressions-transact-sql.md) de chaîne à évaluer. *string_expression* peut être une constante, une variable ou une colonne de données binaires ou caractères.  
   
 ## <a name="return-types"></a>Types de retour  
- **bigint** si *expression* est du type **varchar(max)**, **nvarchar(max)** ou **varbinary(max)** ; sinon, **int**.  
+ **bigint** si *expression* est du type **varchar(max)**, **nvarchar(max)** ou **varbinary(max)**  ; sinon, **int**.  
   
  Si vous utilisez des classements SC, la valeur entière retournée compte les paires de substitution UTF-16 comme un caractère unique. Pour plus d’informations, consultez [Prise en charge d’Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md).  
   
@@ -73,7 +71,7 @@ SELECT LEN(@v2) AS [nvarchar LEN], DATALENGTH(@v2) AS [nvarchar DATALENGTH];
 ```  
   
 ## <a name="examples"></a>Exemples  
- L'exemple suivant sélectionne le nombre de caractères et les données figurant dans `FirstName` pour les personnes résidant en `Australia`. Cet exemple utilise la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)].  
+ L'exemple suivant sélectionne le nombre de caractères et les données figurant dans `FirstName` pour les personnes résidant en `Australia`. Cet exemple utilise la base de données AdventureWorks.  
   
 ```  
 SELECT LEN(FirstName) AS Length, FirstName, LastName   

@@ -1,30 +1,23 @@
 ---
-title: "Créer des Tables, des Partitions et des colonnes dans un modèle tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Créer des Tables, des Partitions et des colonnes dans un modèle tabulaire | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-ms.assetid: cf0e4791-ad3b-41a8-81ce-509d4cf223f8
-caps.latest.revision: "8"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2017fa20a68222bf577cc68284882ac15a22f95f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c08fa45cbc4b77c151a002c3318dcc3dbeb2ee06
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-tables-partitions-and-columns-in-a-tabular-model"></a>Créer des Tables, des Partitions et des colonnes dans un modèle tabulaire
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Dans un modèle tabulaire, une table se compose de lignes et de colonnes. Les lignes sont organisées en partitions pour prendre en charge l’actualisation des données incrémentielles. Une solution tabulaire peut prendre en charge plusieurs types de tables, en fonction de d'où proviennent les données :  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+Dans un modèle tabulaire, une table se compose de lignes et de colonnes. Les lignes sont organisées en partitions pour prendre en charge l’actualisation des données incrémentielles. Une solution tabulaire peut prendre en charge plusieurs types de tables, en fonction de d'où proviennent les données :  
 
 * Tables normales, d'où proviennent les données à partir d’une source de données relationnelle, via le fournisseur de données. 
 

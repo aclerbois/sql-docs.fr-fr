@@ -1,17 +1,15 @@
 ---
-title: "Propriété ordinal (Position ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété ordinal (Position ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Position::Ordinal
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Ordinal property [ADO MD]
 ms.assetid: 6efe8b5d-a2d5-43a9-a5ea-f9244f8d4ec9
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 06763eff76230a28bf2bf76c47cf0bdb032c8205
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 31ad0a0c6fa263aa33d53afb8537f673d1df4d0d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ordinal-property-ado-md-position"></a>Propriété ordinal (Position ADO MD)
 Identifie de façon unique un [position](../../../ado/reference/ado-md-api/position-object-ado-md.md) un axe.  

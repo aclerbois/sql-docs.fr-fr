@@ -1,16 +1,14 @@
 ---
 title: jeu de sauvegarde (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - backupset
@@ -22,21 +20,21 @@ helpviewer_keywords:
 - backup media [SQL Server], backupset system table
 - backup sets [SQL Server]
 ms.assetid: 6ff79bbf-4acf-4f75-926f-38637ca8a943
-caps.latest.revision: 
+caps.latest.revision: 70
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: dd98b3e7e120e186901d8120243a35d620411ba2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1089a1a30e50b389b05c79cf9af2443f7dc55d6e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="backupset-transact-sql"></a>backupset (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
 
-  Contient une ligne pour chaque jeu de sauvegarde. A *jeu de sauvegarde* contient la sauvegarde à partir d’une opération de sauvegarde unique réussie. Les instructions RESTORE, RESTORE FILELISTONLY, RESTORE HEADERONLY et RESTORE VERIFYONLY fonctionnent sur un jeu de sauvegarde unique dans le jeu de médias sur la ou les unités de sauvegarde spécifiées.  
+  Contient une ligne pour chaque jeu de sauvegarde. Un *jeu de sauvegarde* contient la sauvegarde issue d’une opération de sauvegarde réussie unique. Les instructions RESTORE, RESTORE FILELISTONLY, RESTORE HEADERONLY et RESTORE VERIFYONLY fonctionnent sur un jeu de sauvegarde unique dans le jeu de médias sur la ou les unités de sauvegarde spécifiées.  
   
  Cette table est stockée dans le **msdb** base de données.  
 
@@ -52,17 +50,17 @@ ms.lasthandoff: 02/03/2018
 |**last_media_number**|**smallint**|Numéro du support qui est le dernier du jeu de sauvegardes. Sa valeur peut être NULL.|  
 |**catalog_family_number**|**tinyint**|Numéro de famille du support contenant le début du répertoire du jeu de sauvegardes. Sa valeur peut être NULL.|  
 |**catalog_media_number**|**smallint**|Numéro du support de sauvegardes contenant le début du répertoire du jeu de sauvegardes. Sa valeur peut être NULL.|  
-|**position**|**int**|Position du jeu de sauvegardes utilisée lors de la restauration pour localiser les fichiers et le jeu de sauvegardes appropriés. Sa valeur peut être NULL. Pour plus d’informations, consultez le fichier dans [sauvegarde &#40; Transact-SQL &#41; ](../../t-sql/statements/backup-transact-sql.md).|  
+|**position**|**int**|Position du jeu de sauvegardes utilisée lors de la restauration pour localiser les fichiers et le jeu de sauvegardes appropriés. Sa valeur peut être NULL. Pour plus d’informations, consultez le fichier dans [sauvegarde &#40;Transact-SQL&#41;](../../t-sql/statements/backup-transact-sql.md).|  
 |**expiration_date**|**datetime**|Date et heure d'expiration du jeu de sauvegardes. Sa valeur peut être NULL.|  
 |**software_vendor_id**|**int**|Numéro d'identification du fournisseur du logiciel qui a écrit l'en-tête de support de sauvegardes Sa valeur peut être NULL.|  
 |**nom**|**nvarchar(128)**|Nom du jeu de sauvegardes. Sa valeur peut être NULL.|  
 |**description**|**nvarchar(255)**|Description du jeu de sauvegardes. Sa valeur peut être NULL.|  
 |**user_name**|**nvarchar(128)**|Nom de l'utilisateur effectuant la sauvegarde Sa valeur peut être NULL.|  
-|**software_major_version**|**tinyint**|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Numéro de version principale de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Sa valeur peut être NULL.|  
-|**software_minor_version**|**tinyint**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Numéro de version secondaire. Sa valeur peut être NULL.|  
-|**software_build_version**|**smallint**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Numéro de build. Sa valeur peut être NULL.|  
+|**software_major_version**|**tinyint**|[!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Numéro de version principale. Sa valeur peut être NULL.|  
+|**software_minor_version**|**tinyint**|Numéro de version secondaire de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Sa valeur peut être NULL.|  
+|**software_build_version**|**smallint**|Numéro de build de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Sa valeur peut être NULL.|  
 |**time_zone**|**smallint**|Différence entre l'heure locale (lieu où l'opération de sauvegarde se déroule) et le temps universel UTC, exprimée en intervalles de 15 minutes. Les valeurs peuvent être comprises entre - 48 et + 48 incluses. La valeur 127 signifie inconnu. Par exemple, -20 correspond à l'heure de l'Est (USA) soit 5 heures après l'heure universelle UTC. Sa valeur peut être NULL.|  
-|**mtf_minor_version**|**tinyint**|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Numéro de version mineure de Format de bande. Sa valeur peut être NULL.|  
+|**mtf_minor_version**|**tinyint**|Numéro de la version mineure de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Tape Format Sa valeur peut être NULL.|  
 |**first_lsn**|**numeric(25,0)**|Numéro séquentiel dans le journal correspondant au premier enregistrement ou à l'enregistrement le plus ancien du journal dans le jeu de sauvegardes Sa valeur peut être NULL.|  
 |**last_lsn**|**numeric(25,0)**|Numéro séquentiel dans le journal correspondant à l'enregistrement du journal suivant après le jeu de sauvegarde. Sa valeur peut être NULL.|  
 |**checkpoint_lsn**|**numeric(25,0)**|Numéro séquentiel dans le journal correspondant à l'enregistrement à partir duquel le rétablissement doit démarrer. Sa valeur peut être NULL.|  
@@ -100,7 +98,7 @@ ms.lasthandoff: 02/03/2018
 |**fork_point_lsn**|**numeric(25,0)**|Si **first_recovery_fork_guid** n’est pas égal à **last_recovery_fork_guid**, il s’agit du numéro de séquence de journal du point du branchement. Dans le cas contraire, la valeur est NULL.|  
 |**database_guid**|**uniqueidentifier**|ID unique de la base de données. Cela correspond à **BindingID** de RESTORE HEADERONLY. Lors de la restauration de la base de données, une nouvelle valeur est attribuée.|  
 |**family_guid**|**uniqueidentifier**|ID unique de la base de données d'origine lors de sa création. Cette valeur demeure identique lors de la restauration de la base de données, même sous un nom différent.|  
-|**differential_base_lsn**|**numeric(25,0)**|Numéro de séquence d'enregistrement de base pour les sauvegardes différentielles. Pour une sauvegarde différentielle unique ; modifications avec un LSN supérieurs ou égales à **differential_base_lsn** sont inclus dans la sauvegarde différentielle.<br /><br /> Pour une sauvegarde différentielle multiple, la valeur est NULL et la base de LSN doit être déterminée au niveau du fichier (voir [backupfile &#40; Transact-SQL &#41; ](../../relational-databases/system-tables/backupfile-transact-sql.md)).<br /><br /> Pour les types de sauvegarde non différentiels, la valeur est toujours NULL.|  
+|**differential_base_lsn**|**numeric(25,0)**|Numéro de séquence d'enregistrement de base pour les sauvegardes différentielles. Pour une sauvegarde différentielle unique ; modifications avec un LSN supérieurs ou égales à **differential_base_lsn** sont inclus dans la sauvegarde différentielle.<br /><br /> Pour une sauvegarde différentielle multiple, la valeur est NULL et la base de LSN doit être déterminée au niveau du fichier (voir [backupfile &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupfile-transact-sql.md)).<br /><br /> Pour les types de sauvegarde non différentiels, la valeur est toujours NULL.|  
 |**differential_base_guid**|**uniqueidentifier**|Pour une sauvegarde différentielle unique, cette valeur constitue l'identificateur unique de la base différentielle.<br /><br /> Pour les sauvegardes différentielles multiples, cette valeur est NULL, tandis que la base différentielle doit être déterminée au niveau du fichier.<br /><br /> Pour les types de sauvegarde non différentiels, la valeur est NULL.|  
 |**compressed_backup_size**|**Numeric(20,0)**|Nombre total d'octets de la sauvegarde stocké sur le disque.<br /><br /> Pour calculer le taux de compression, utilisez **compressed_backup_size** et **backup_size**.<br /><br /> Pendant une **msdb** mise à niveau, cette valeur est définie sur NULL. ce qui indique une sauvegarde non compressée.|  
 |**key_algorithm**|**nvarchar(32)**|Algorithme de chiffrement utilisé pour chiffrer la sauvegarde. La valeur NO_Encryption indique que la sauvegarde n'est pas chiffrée.|  
@@ -113,7 +111,7 @@ ms.lasthandoff: 02/03/2018
  Pour réduire le nombre de lignes dans cette table et dans d’autres tables d’historique de sauvegarde et, exécutez le [sp_delete_backuphistory](../../relational-databases/system-stored-procedures/sp-delete-backuphistory-transact-sql.md) procédure stockée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sauvegarde et restauration Tables &#40; Transact-SQL &#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)   
+ [Sauvegarde et restauration des Tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)   
  [backupfile &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupfile-transact-sql.md)   
  [backupfilegroup &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupfilegroup-transact-sql.md)   
  [backupmediafamily &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupmediafamily-transact-sql.md)   
@@ -122,6 +120,6 @@ ms.lasthandoff: 02/03/2018
  [Jeux de supports, familles de supports et jeux de sauvegarde &#40;SQL Server&#41;](../../relational-databases/backup-restore/media-sets-media-families-and-backup-sets-sql-server.md)   
  [Modes de récupération &#40;SQL Server&#41;](../../relational-databases/backup-restore/recovery-models-sql-server.md)   
  [RESTORE HEADERONLY &#40;Transact-SQL&#41;](../../t-sql/statements/restore-statements-headeronly-transact-sql.md)   
- [Sauvegarde et restauration Tables &#40; Transact-SQL &#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)  
+ [Sauvegarde et restauration des Tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backup-and-restore-tables-transact-sql.md)  
   
   

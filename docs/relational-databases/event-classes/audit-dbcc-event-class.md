@@ -1,34 +1,30 @@
 ---
-title: "Audit DBCC, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit DBCC, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit DBCC event class
 ms.assetid: 73724190-d6b7-4f11-9446-78bcafa6c693
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3d60834078c3742abac694d19d4dbc7cfdf251bd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 55dbabcdb54e042657108eb0b8e877f29ea2512d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-dbcc-event-class"></a>Audit DBCC (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit DBCC** se produit chaque fois qu’une commande DBCC est émise.  
+  La classe d’événements **Audit DBCC** se produit chaque fois qu’une commande DBCC est émise.  
   
 ## <a name="audit-dbcc-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit DBCC  
   

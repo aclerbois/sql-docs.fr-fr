@@ -1,15 +1,12 @@
 ---
-title: "Sous-requêtes (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Sous-requêtes (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/18/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Subquery
 - Subqueries
@@ -17,16 +14,16 @@ helpviewer_keywords:
 - subqueries [SQL Server], correlated
 - subqueries [SQL Server], types
 ms.assetid: bfc97432-c14c-4768-9dc5-a9c512f6b2bd
-caps.latest.revision: 
+caps.latest.revision: 52
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2860b04f460e535ef9aec8f3527ab7934891b432
-ms.sourcegitcommit: 7e9380e53341755df13fce130ab3287918a8e44c
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: f71734fbd6a59eaf7d176926bcde815bcbf16a6e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="subqueries-sql-server"></a>Sous-requêtes (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

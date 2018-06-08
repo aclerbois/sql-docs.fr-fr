@@ -1,27 +1,24 @@
 ---
-title: "Effectuez-vous une mise à niveau à partir de SQL Server 2005 ? | Microsoft Docs"
-ms.custom: 
+title: Effectuez-vous une mise à niveau à partir de SQL Server 2005 ? | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ad40e66f-71fe-4ee6-9ce3-17127e7b1d7a
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 21
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: d582d7d9ca0bc90ca40ee34e946d49bf545024bd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b8be1b9fb65dfc6744dc61562d6a903d9484bd3f
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770415"
 ---
 # <a name="are-you-upgrading-from-sql-server-2005"></a>Effectuez-vous une mise à niveau à partir de SQL Server 2005 ?
 

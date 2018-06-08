@@ -1,30 +1,31 @@
 ---
 title: TopCount (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: TOPCOUNT
-dev_langs: DMX
-helpviewer_keywords: TopCount function
+f1_keywords:
+- TOPCOUNT
+dev_langs:
+- DMX
+helpviewer_keywords:
+- TopCount function
 ms.assetid: cbe031c9-4ff0-45df-9810-ebaebacf161d
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 412c741e3f48c23f65eafa2a998a257f07034dd9
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 48a53d01219290dd50bd192a6ee2adf5b51ad7b6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="topcount-dmx"></a>TopCount (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,14 +43,14 @@ TopCount(<table expression>, <rank expression>, <count>)
  Une expression qui retourne une table, comme un \<référence de colonne de table >, ou une fonction qui retourne une table.  
   
 ## <a name="return-type"></a>Type de retour  
- \<expression de table >  
+ \<Expression de table >  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La valeur fournie par le \<rank expression > argument détermine l’ordre décroissant de classement pour les lignes qui sont fournis dans le \<expression de table > argument et le nombre de lignes supérieur spécifié dans le \<count > argument est retourné.  
   
  La fonction TopCount a été introduite initialement pour activer les prédictions associatives et, en général, produit les mêmes résultats qu’une instruction qui inclut **SELECT TOP** et **ORDER BY** clauses. Vous obtiendrez de meilleures performances pour les prédictions associatives si vous utilisez la **prédire (DMX)** (fonction), qui prend en charge la spécification d’un nombre de prédictions à retourner.  
   
- Toutefois, il existe des situations où vous devrez peut-être encore utiliser TopCount. Par exemple, DMX ne prend pas en charge la **haut** qualificateur dans une instruction de sous-sélection. Le [PredictHistogram &#40; DMX &#41;](../dmx/predicthistogram-dmx.md) fonction également ne gère pas l’ajout de **haut**.  
+ Toutefois, il existe des situations où vous devrez peut-être encore utiliser TopCount. Par exemple, DMX ne prend pas en charge la **haut** qualificateur dans une instruction de sous-sélection. Le [PredictHistogram &#40;DMX&#41; ](../dmx/predicthistogram-dmx.md) fonction également ne gère pas l’ajout de **haut**.  
   
 ## <a name="examples"></a>Exemples  
  Les exemples suivants illustrent des requêtes de prédiction sur le modèle d’Association que vous créez à l’aide de la [Basic Data Mining Tutorial](http://msdn.microsoft.com/library/6602edb6-d160-43fb-83c8-9df5dddfeb9c). Les requêtes retournent les mêmes résultats, mais le premier exemple utilise TopCount et le deuxième exemple utilise la fonction de prédiction.  
@@ -122,10 +123,10 @@ SELECT Predict ([Association].[v Assoc Seq Line Items], INCLUDE_STATISTICS, 3, $
  Les résultats contiennent les 3 prédictions supérieures triées par la valeur de support. Vous pouvez remplacer $SUPPORT par $PROBABILITY ou $ADJUSTED_PROBABILITY pour retourner des prédictions classées par probabilité ou par probabilité ajustée. Pour plus d’informations, consultez **prédire (DMX)**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)   
- [BottomCount &#40; DMX &#41;](../dmx/bottomcount-dmx.md)   
- [TopPercent &#40; DMX &#41;](../dmx/toppercent-dmx.md)   
- [TopSum &#40; DMX &#41;](../dmx/topsum-dmx.md)  
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)   
+ [BottomCount &#40;DMX&#41;](../dmx/bottomcount-dmx.md)   
+ [TopPercent &#40;DMX&#41;](../dmx/toppercent-dmx.md)   
+ [TopSum &#40;DMX&#41;](../dmx/topsum-dmx.md)  
   
   

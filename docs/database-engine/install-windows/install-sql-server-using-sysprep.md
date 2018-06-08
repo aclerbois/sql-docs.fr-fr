@@ -1,27 +1,24 @@
 ---
-title: "Installer SQL Server à l’aide de SysPrep | Microsoft Docs"
-ms.custom: 
+title: Installer SQL Server à l’aide de SysPrep | Microsoft Docs
+ms.custom: ''
 ms.date: 09/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 11f4ed8a-aaa9-417b-bdd5-204f551c6bb6
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 29
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: e538fc7315661cf76dc807cb54cbd0d518cb8603
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7732cf31c3bc96531c5cf533f868ac4e3e3729fd
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770645"
 ---
 # <a name="install-sql-server-with-sysprep"></a>Installer SQL Server à l’aide de SysPrep
 
@@ -35,7 +32,7 @@ Vous pouvez également préparer et finaliser une instance de [!INCLUDE[ssNoVers
   
 - [Installer SQL Server à l’aide d’un fichier de configuration](../../database-engine/install-windows/install-sql-server-using-a-configuration-file.md)  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables requises  
 Avant d’installer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez les articles dans [Planification d’une installation SQL Server](../../sql-server/install/planning-a-sql-server-installation.md). 
   
 Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et sur les configurations matérielle et logicielle requises, consultez [Configurations matérielle et logicielle requises pour l’installation de SQL Server](../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md). 
@@ -109,7 +106,7 @@ Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../inc
   
     |||  
     |-|-|  
-    |[!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] SysPrep|[!INCLUDE[ssDE](../../includes/ssde-md.md)]<br /><br /> [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] REPLICATION<br /><br /> Fonctionnalités de texte intégral<br /><br /> Data Quality Services<br /><br /> [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif<br /><br /> [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]<br /><br /> Fonctionnalités redistribuables<br /><br /> Fonctionnalités partagées|  
+    |[!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] SysPrep|[!INCLUDE[ssDE](../../includes/ssde-md.md)]<br /><br /> [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Réplication<br /><br /> Fonctionnalités de texte intégral<br /><br /> Data Quality Services<br /><br /> [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif<br /><br /> [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]<br /><br /> Fonctionnalités redistribuables<br /><br /> Fonctionnalités partagées|  
   
      Une description de chaque groupe de composants apparaît dans le volet droit lorsque vous sélectionnez le nom de la fonctionnalité. Vous pouvez choisir n'importe quelle combinaison de cases à cocher. Pour plus d’informations, consultez [Éditions et fonctionnalités prises en charge de SQL Server](../../sql-server/editions-and-components-of-sql-server-2017.md). 
   

@@ -1,16 +1,14 @@
 ---
 title: sp_helpextendedproc (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helpextendedproc
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_helpextendedproc
 ms.assetid: 7e1f017e-c898-4225-b375-6a73ef9aac7b
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 33f0e2db1462f79b3266ade3f57a1990bedd2384
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: a7e9cc50f543232dea6b5ce39153eee2292284ac
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpextendedproc-transact-sql"></a>sp_helpextendedproc (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +62,7 @@ sp_helpextendedproc [ [@funcname = ] 'procedure' ]
 ## <a name="remarks"></a>Notes  
  Lorsque *procédure* est spécifié, **sp_helpextendedproc** rapports spécifiées de procédure stockée étendue. Lorsque ce paramètre n’est pas fourni, **sp_helpextendedproc** retourne toutes les étendues des noms de procédure stockée et les noms de DLL pour laquelle chaque procédure stockée étendue appartient.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  L’autorisation d’exécuter **sp_helpextendedproc** est accordée aux **public**.  
   
 ## <a name="examples"></a>Exemples  
@@ -91,8 +88,8 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_addextendedproc &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addextendedproc-transact-sql.md)   
- [sp_dropextendedproc &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropextendedproc-transact-sql.md)   
+ [sp_addextendedproc &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addextendedproc-transact-sql.md)   
+ [sp_dropextendedproc &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropextendedproc-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

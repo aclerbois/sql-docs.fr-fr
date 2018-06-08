@@ -1,35 +1,23 @@
 ---
-title: "Exemples de requêtes de modèle des arbres de décision | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- decision tree algorithms [Analysis Services]
-- content queries [DMX]
-- decision trees [Analysis Services]
-ms.assetid: ceaf1370-9dd1-4d1a-a143-7f89a723ef80
-caps.latest.revision: 
-author: Minewiskan
+title: Exemples de requêtes de modèle des arbres de décision | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: be3c1ddd743204b18823ef4d77c054504328fc3c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b2045dfa9923fb745f0f9d3936579a4e73a50564
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="decision-trees-model-query-examples"></a>Exemples de requêtes de modèle d'arbre de décision
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, ou créer une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Par exemple, une requête de contenu pour un modèle d'arbre de décision peut fournir des statistiques sur le nombre de cas à chaque niveau de l'arbre, ou les règles qui font la différence entre des cas. En revanche, une requête de prédiction mappe le modèle à de nouvelles données pour générer des recommandations, des classifications, etc. Vous pouvez également extraire les métadonnées relatives au modèle en utilisant une requête.  
+  Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, ou créer une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Par exemple, une requête de contenu pour un modèle d'arbre de décision peut fournir des statistiques sur le nombre de cas à chaque niveau de l'arbre, ou les règles qui font la différence entre des cas. En revanche, une requête de prédiction mappe le modèle à de nouvelles données pour générer des recommandations, des classifications, etc. Vous pouvez également extraire les métadonnées relatives au modèle en utilisant une requête.  
   
  Cette section explique comment créer des requêtes pour les modèles basés sur l'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees).  
   
@@ -265,16 +253,16 @@ WHERE NODE_TYPE = 25
 |||  
 |-|-|  
 |Fonction de prédiction|Utilisation|  
-|[IsDescendant &#40; DMX &#41;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le modèle.|  
-|[IsInNode &#40; DMX &#41;](../../dmx/isinnode-dmx.md)|Indique si le nœud spécifié contient le cas courant.|  
-|[PredictAdjustedProbability &#40; DMX &#41;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
-|[PredictAssociation &#40; DMX &#41;](../../dmx/predictassociation-dmx.md)|Prédit l'appartenance à un dataset associatif.|  
-|[PredictHistogram &#40; DMX &#41;](../../dmx/predicthistogram-dmx.md)|Retourne une table des valeurs associées à la valeur prédite actuelle.|  
-|[PredictNodeId &#40; DMX &#41;](../../dmx/predictnodeid-dmx.md)|Retourne Node_ID pour chaque cas.|  
-|[PredictProbability &#40; DMX &#41;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
-|[PredictStdev &#40; DMX &#41;](../../dmx/predictstdev-dmx.md)|Retourne l'écart-type prévu pour la colonne spécifiée.|  
-|[PredictSupport &#40; DMX &#41;](../../dmx/predictsupport-dmx.md)|Retourne la valeur de support pour un état spécifié.|  
-|[PredictVariance &#40; DMX &#41;](../../dmx/predictvariance-dmx.md)|Retourne la variance d'une colonne spécifiée.|  
+|[IsDescendant & #40 ; DMX & #41 ;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le modèle.|  
+|[IsInNode & #40 ; DMX & #41 ;](../../dmx/isinnode-dmx.md)|Indique si le nœud spécifié contient le cas courant.|  
+|[PredictAdjustedProbability & #40 ; DMX & #41 ;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
+|[PredictAssociation & #40 ; DMX & #41 ;](../../dmx/predictassociation-dmx.md)|Prédit l'appartenance à un dataset associatif.|  
+|[PredictHistogram & #40 ; DMX & #41 ;](../../dmx/predicthistogram-dmx.md)|Retourne une table des valeurs associées à la valeur prédite actuelle.|  
+|[PredictNodeId & #40 ; DMX & #41 ;](../../dmx/predictnodeid-dmx.md)|Retourne Node_ID pour chaque cas.|  
+|[PredictProbability & #40 ; DMX & #41 ;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
+|[PredictStdev & #40 ; DMX & #41 ;](../../dmx/predictstdev-dmx.md)|Retourne l'écart-type prévu pour la colonne spécifiée.|  
+|[PredictSupport & #40 ; DMX & #41 ;](../../dmx/predictsupport-dmx.md)|Retourne la valeur de support pour un état spécifié.|  
+|[PredictVariance & #40 ; DMX & #41 ;](../../dmx/predictvariance-dmx.md)|Retourne la variance d'une colonne spécifiée.|  
   
  Pour obtenir la liste des fonctions communes à tous les algorithmes [!INCLUDE[msCoName](../../includes/msconame-md.md)], consultez [Fonctions de prédiction générales &#40;DMX&#41;](../../dmx/general-prediction-functions-dmx.md). Pour la syntaxe de fonctions spécifiques, consultez [Fonctions DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-function-reference.md).  
   
@@ -282,6 +270,6 @@ WHERE NODE_TYPE = 25
  [Requêtes d’exploration de données](../../analysis-services/data-mining/data-mining-queries.md)   
  [Algorithme d’arbres de décision Microsoft](../../analysis-services/data-mining/microsoft-decision-trees-algorithm.md)   
  [Techniques de l’algorithme d’arbres de décision Microsoft](../../analysis-services/data-mining/microsoft-decision-trees-algorithm-technical-reference.md)   
- [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)  
   
   

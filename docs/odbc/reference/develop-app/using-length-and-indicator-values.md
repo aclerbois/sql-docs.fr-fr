@@ -1,32 +1,29 @@
 ---
-title: "À l’aide de la longueur et les valeurs d’indicateur | Documents Microsoft"
-ms.custom: 
+title: À l’aide de la longueur et les valeurs d’indicateur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data buffers [ODBC], length
 - length/indicator buffers [ODBC]
 - length of data buffers [ODBC]
 - buffers [ODBC], length
 ms.assetid: 849792f1-cb1e-4bc2-b568-c0aff0b66199
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6012ca2f1b307f475839c7357e813817e222051e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c1a59b47c8394187f094b8d7c5e1f15611a8f8ea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-length-and-indicator-values"></a>À l’aide de la longueur et les valeurs d’indicateur
 La mémoire tampon de longueur / d’indicateur est utilisée pour passer la longueur en octets des données dans le tampon de données ou un indicateur spécial tel que SQL_NULL_DATA, ce qui indique que les données sont NULL. Selon la fonction dans laquelle il est utilisé, une mémoire tampon de longueur / d’indicateur est définie comme un SQLINTEGER ou un SQLSMALLINT. Par conséquent, un seul argument est nécessaire pour le décrire. Si la mémoire tampon de données est un tampon d’entrée nondeferred, cet argument contient la longueur en octets des données elles-mêmes ou une valeur de l’indicateur. Il est souvent appelée *StrLen_or_Ind* ou un nom similaire. Par exemple, les éléments suivants code appelle **SQLPutData** à passer une mémoire tampon complète de données ; la longueur d’octet (*ValueLen*) est passée directement, car le tampon de données (*ValuePtr*) est un mémoire tampon d’entrée.  
@@ -58,7 +55,7 @@ SQLGetData(hstmt, 1, SQL_C_CHAR, ValuePtr, sizeof(ValuePtr), &ValueLenOrInd);
   
  Les longueurs suivantes sont valides en tant que valeurs de longueur / d’indicateur :  
   
--   *n*, où  *n*  > 0.  
+-   *n*, où *n* > 0.  
   
 -   0.  
   

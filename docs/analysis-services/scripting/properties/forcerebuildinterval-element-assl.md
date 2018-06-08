@@ -1,36 +1,23 @@
 ---
-title: "Élément ForceRebuildInterval (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément ForceRebuildInterval (ASSL) | Documents Microsoft
+ms.date: 5/8/2018
+ms.prod: sql
+ms.custom: assl
+ms.reviewer: owend
+ms.technology: analysis-services
 ms.topic: reference
-apiname: ForceRebuildInterval Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: ForceRebuildInterval
-helpviewer_keywords: ForceRebuildInterval element
-ms.assetid: d068f92e-4213-471c-a3a4-aec5af4b8ebf
-caps.latest.revision: "33"
-author: Minewiskan
+author: minewiskan
 ms.author: owend
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fec32179658d115a7dec17fa61a39a060a8ea700
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: d55e030fec0eaaea5eab872f3e53f5def15e2045
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="forcerebuildinterval-element-assl"></a>Élément ForceRebuildInterval (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Détermine le moment où une nouvelle image MOLAP (OLAP) multidimensionnelles devient disponible, à l’issue duquel l’acquisition d’images de démarrage sans condition.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Détermine le temps entre le moment où une nouvelle image OLAP multidimensionnelle (MOLAP) devient disponible et celui où le processus de création d'images MOLAP démarre de manière inconditionnelle.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,19 +36,19 @@ ms.lasthandoff: 01/08/2018
 |--------------------|-----------------|  
 |Type de données et longueur|Durée XML|  
 |Valeur par défaut|Infini|  
-|Cardinalité|0-1 : élément facultatif qui peut apparaître une fois et une seule.|  
+|Cardinalité|0-1: élément facultatif qui peut apparaître une fois et une seule.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
   
 |Relation|Élément|  
 |------------------|-------------|  
 |Élément parent|[ProactiveCaching](../../../analysis-services/scripting/objects/proactivecaching-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L’élément qui correspond au parent de **ForceRebuildInterval** dans l’objet d’objets AMO (Analysis Management) est modèle <xref:Microsoft.AnalysisServices.ProactiveCaching>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)  
+ [Propriétés & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/properties/properties-assl.md)  
   
   

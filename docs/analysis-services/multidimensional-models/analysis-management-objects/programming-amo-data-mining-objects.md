@@ -1,34 +1,19 @@
 ---
-title: "Programmation des objets d’exploration de données AMO | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- programming [AMO]
-- data mining [AMO]
-- AMO, data mining
-- Analysis Management Objects, data mining
-ms.assetid: d27f58b9-91be-449c-8403-439aa6dd1ff9
-caps.latest.revision: 
-author: Minewiskan
+title: Programmation des objets d’exploration de données AMO | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: be27072d93bb9cee3d787732e57fc591452c2191
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 288a6bfda85247306def8c4222139b6889d5e407
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="programming-amo-data-mining-objects"></a>Programmation d'objets d'exploration de données AMO
   La programmation d'objets d'exploration de données à l'aide d'AMO est simple et directe. La première étape consiste à créer le modèle de structure de données pour prendre en charge le projet d'exploration de données. Vous devez ensuite créer le modèle d'exploration de données qui prend en charge l'algorithme d'exploration de données que vous souhaitez utiliser pour prédire ou rechercher les relations invisibles sur lesquelles reposent vos données. Dès lors que le projet d'exploration de données est créé (y compris la structure et les algorithmes), vous pouvez traiter les modèles d'exploration de données pour obtenir les modèles ayant fait l'objet d'un apprentissage que vous utiliserez par la suite lors des interrogations et des prédictions réalisées à partir de l'application cliente.  
@@ -149,7 +134,7 @@ public static MiningModel CreateSalesForecastingMiningModel(MiningStructure ms)
  [Classes fondamentales AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-fundamental-classes.md)   
  [Présentation des Classes AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-classes-introduction.md)   
  [Classes d’exploration de données AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-data-mining-classes.md)   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
   
   

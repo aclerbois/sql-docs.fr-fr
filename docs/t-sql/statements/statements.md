@@ -1,32 +1,31 @@
 ---
 title: Instructions | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, pdw, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: d8d6f62a-e815-425c-a80e-a63fd34ec275
-caps.latest.revision: 
+caps.latest.revision: 7
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: e6e36b056aaca063970c81d2932ec47ee7cef29e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5b7daa257b6a6afca3bd3aa8a1c09b08e0fb5778
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34582121"
 ---
-# <a name="transact-sql-statements"></a>Instructions Transact-SQL
+# <a name="transact-sql-statements"></a>instructions Transact-SQL
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-asdw-pdw-md.md)]
 
 Cette rubrique récapitule les catégories d’instructions utilisables avec Transact-SQL (T-SQL). Vous trouverez toutes les instructions répertoriées dans le volet de navigation gauche.
@@ -49,8 +48,9 @@ Les instructions DDL (Data Definition Language) définissent des structures de d
 DML (Data Manipulation Language) affecte les informations stockées dans la base de données. Utilisez ces instructions pour insérer, mettre à jour et modifier les lignes dans la base de données.
 
 - BULK INSERT
-- DELETE
+- Suppression
 - INSERT
+- UPDATE
 - MERGE
 - TRUNCATE TABLE
 

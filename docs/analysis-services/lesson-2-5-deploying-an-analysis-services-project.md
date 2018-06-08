@@ -1,29 +1,19 @@
 ---
-title: "Déploiement d’une analyse des Services de projet | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 5d98bab3-3577-4143-b737-5196444a36ac
-caps.latest.revision: 
-author: Minewiskan
+title: Déploiement d’une analyse des Services de projet | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d6717a94aeacf2891c48050b6bb33f706cb2c2c0
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 16952381ad550cac079a8919b395186ec6b5f337
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-2-5---deploying-an-analysis-services-project"></a>Leçon 2-5-déploiement d’un projet Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +35,7 @@ Au cours de la tâche suivante, vous allez vérifier les propriétés de déploi
     Vérifiez les propriétés de déploiement du projet. Par défaut, le modèle de projet [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] configure un projet [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] pour déployer de façon incrémentielle tous les projets sur l'instance par défaut d' [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] sur l'ordinateur local, pour créer une base de données [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] avec le même nom que le projet, et pour traiter les objets après le déploiement en utilisant l'option de traitement par défaut. Pour plus d’informations, consultez [Configurer les propriétés d’un projet Analysis Services &#40;SSDT&#41;](../analysis-services/multidimensional-models/configure-analysis-services-project-properties-ssdt.md).  
   
     > [!NOTE]  
-    > Si vous souhaitez déployer le projet dans une instance nommée de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] sur l’ordinateur local, ou à une instance sur un serveur distant, modifiez le **Server** nom de la propriété à l’instance appropriée, tel que \<  *Nom_serveur**>\\<**InstanceName ** >*.  
+    > Si vous souhaitez déployer le projet dans une instance nommée de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] sur l’ordinateur local, ou à une instance sur un serveur distant, modifiez le **Server** nom de la propriété à l’instance appropriée, tel que \<  *Nom_serveur**>\\<** InstanceName ** >*.  
   
 3.  Cliquez sur **OK**.  
   
@@ -54,7 +44,7 @@ Au cours de la tâche suivante, vous allez vérifier les propriétés de déploi
     > [!NOTE]  
     > Si vous obtenez des erreurs pendant le déploiement, utilisez SQL Server Management Studio pour vérifier les autorisations relatives à la base de données. Le compte que vous avez spécifié pour la connexion à la source de données doit avoir une connexion sur l'instance SQL Server. Double-cliquez sur la connexion pour consulter les propriétés de mappage des utilisateurs. Le compte doit avoir les autorisations db_datareader sur la base de données **AdventureWorksDW2012** .  
   
-    [!INCLUDE[ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)] génère et déploie le projet Didacticiel [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] sur l’instance spécifiée de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] à l’aide d’un script de déploiement. La progression du déploiement apparaît dans deux fenêtres : la fenêtre **Sortie** et la fenêtre **État d’avancement du déploiement – Didacticiel Analysis Services** .  
+    [!INCLUDE[ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)] génère et déploie le projet Didacticiel [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] sur l'instance spécifiée de [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] à l'aide d'un script de déploiement. La progression du déploiement apparaît dans deux fenêtres : la fenêtre **Sortie** et la fenêtre **État d’avancement du déploiement – Didacticiel Analysis Services** .  
   
     Ouvrez la fenêtre de sortie, si nécessaire, en cliquant sur **Sortie** dans le menu **Affichage** . La fenêtre **Sortie** affiche la progression globale du déploiement. La fenêtre **État d’avancement du déploiement – Analysis Services Tutorial** affiche le détail de chaque étape du déploiement. Pour plus d’informations, consultez [Générer des projets Analysis Services &#40;SSDT&#41;](../analysis-services/multidimensional-models/build-analysis-services-projects-ssdt.md) et [Déployer des projets Analysis Services &#40;SSDT&#41;](../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md).  
   
@@ -70,7 +60,7 @@ Vous avez correctement déployé le cube Didacticiel [!INCLUDE[ssASnoversion](..
 [Exploration du Cube](../analysis-services/lesson-2-6-browsing-the-cube.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Déployer des projets Analysis Services &#40; SSDT &#41;](../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md)  
+[Déployer des projets Analysis Services & #40 ; SSDT & #41 ;](../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md)  
 [Configurer les propriétés d’un projet Analysis Services &#40;SSDT&#41;](../analysis-services/multidimensional-models/configure-analysis-services-project-properties-ssdt.md)  
   
   

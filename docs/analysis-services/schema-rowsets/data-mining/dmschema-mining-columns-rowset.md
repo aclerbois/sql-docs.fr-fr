@@ -1,47 +1,36 @@
 ---
 title: Ensemble de lignes DMSCHEMA_MINING_COLUMNS | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-apiname: DMSCHEMA_MINING_COLUMNS
-apitype: NA
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DMSCHEMA_MINING_COLUMNS rowset
-ms.assetid: ae35ccde-4438-46f4-8611-40b2b1a42fce
-caps.latest.revision: "36"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e37841617289eaa71af4d7c2c091459f32a745b6
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 1f5d5dcc4385634b24cadf9e08c2298cc7bacc26
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="dmschemaminingcolumns-rowset"></a>Ensemble de lignes DMSCHEMA_MINING_COLUMNS
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Décrit les colonnes de tous les modèles d’exploration de données dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]. Cet ensemble de lignes est limité au catalogue actuel.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Décrit les colonnes de tous les modèles d’exploration de données dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]. Cet ensemble de lignes est limité au catalogue actuel.  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  Le **DMSCHEMA_MINING_COLUMNS** ensemble de lignes contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Description|  
+|Nom de colonne|Indicateur de type| Description|  
 |-----------------|--------------------|-----------------|  
 |**MODEL_CATALOG**|**DBTYPE_WSTR**|Nom du catalogue. Défini d'après le nom de la base de données dont le modèle est membre.|  
 |**MODEL_SCHEMA**|**DBTYPE_WSTR**|Nom de schéma non qualifié. Cette colonne n’est pas pris en charge par [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]; il contient toujours **NULL**.|  
 |**MODEL_NAME**|**DBTYPE_WSTR**|Le nom du modèle d’exploration de données. Cette colonne contient le nom du modèle d'exploration de données auquel une colonne est associée ; elle n'est jamais vide.|  
-|**NOM_COLONNE**|**DBTYPE_WSTR**|Nom de la colonne.|  
+|**COLUMN_NAME**|**DBTYPE_WSTR**|Nom de la colonne.|  
 |**COLUMN_GUID**|**DBTYPE_GUID**|GUID de la colonne. Cette colonne n’est pas pris en charge par [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]; il contient toujours **NULL**.|  
 |**COLUMN_PROPID**|**DBTYPE_UI4**|ID de propriété de la colonne. Cette colonne n’est pas pris en charge par [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]; il contient toujours **NULL**.|  
-|**POSITION ORDINALE**|**DBTYPE_UI4**|La position ordinale de la colonne. Les colonnes sont numérotées à partir de 1. Cette colonne contient **NULL** s’il n’existe aucune valeur ordinale stable pour la colonne.|  
+|**ORDINAL_POSITION**|**DBTYPE_UI4**|La position ordinale de la colonne. Les colonnes sont numérotées à partir de 1. Cette colonne contient **NULL** s’il n’existe aucune valeur ordinale stable pour la colonne.|  
 |**COLUMN_HAS_DEFAULT**|**DBTYPE_BOOL**|Valeur booléenne qui indique si la colonne possède une valeur par défaut.<br /><br /> **TRUE** si la colonne a une valeur par défaut, sinon **FALSE**.|  
 |**COLUMN_DEFAULT**|**DBTYPE_WSTR**|La valeur par défaut de la colonne.<br /><br /> Si la valeur par défaut est la **NULL** valeur, **COLUMN_HASDEFAULT** contient **TRUE**, et cette colonne contient **NULL**.|  
 |**COLUMN_FLAGS**|**DBTYPE_UI4**|Masque de bits qui décrit les caractéristiques de la colonne. Le **DBCOLUMNFLAGS** type énuméré spécifie les bits du masque de bits. Cette colonne n'est jamais vide.|  
@@ -82,12 +71,12 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|**MODEL_CATALOG**|**DBTYPE_WSTR**|Facultatif.|  
-|**MODEL_SCHEMA**|**DBTYPE_WSTR**|Facultatif.|  
-|**MODEL_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**NOM_COLONNE**|**DBTYPE_WSTR**|Facultatif.|  
+|**MODEL_CATALOG**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**MODEL_SCHEMA**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**MODEL_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**COLUMN_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Ensembles de lignes de schéma de données d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

@@ -1,31 +1,23 @@
 ---
-title: "Rôles | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: e547382a-c064-4bc6-818c-5127890af334
-caps.latest.revision: 
-author: Minewiskan
+title: Rôles | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 15030b1b2c5345d3072ff188356aaa532857c90b
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: e73af245aaddbeb321acd60aeabd8a1617f3972f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="roles"></a>Rôles
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Les rôles, dans les modèles tabulaires, définissent des autorisations de membre pour un modèle. Les membres du rôle peuvent effectuer des actions sur le modèle, comme défini par l'autorisation du rôle. Les rôles définis avec des autorisations de lecture peuvent également fournir une sécurité supplémentaire au niveau de la ligne grâce à l'utilisation de filtres au niveau de la ligne. 
+  Les rôles, dans les modèles tabulaires, définissent des autorisations de membre pour un modèle. Les membres du rôle peuvent effectuer des actions sur le modèle, comme défini par l'autorisation du rôle. Les rôles définis avec des autorisations de lecture peuvent également fournir une sécurité supplémentaire au niveau de la ligne grâce à l'utilisation de filtres au niveau de la ligne. 
   
  Pour SQL Server Analysis Services, rôles contiennent des membres d’un utilisateur par nom d’utilisateur Windows ou par groupe Windows et les autorisations (lecture, process, administrateur). Pour Azure Analysis Services, les utilisateurs doivent être dans votre Azure Active Directory et les noms d’utilisateurs et groupes spécifiés doivent être par adresse de messagerie professionnelle ou UPN. 
   
@@ -79,7 +71,7 @@ Les rôles, dans les modèles tabulaires, définissent des autorisations de memb
   
  L'effet net de ces autorisations sur la table de transactions est que les membres sont autorisés à interroger les lignes de données pour lesquelles le client réside aux États-unis, la catégorie de produits correspond à des bicyclettes et l'année est 2008. Les utilisateurs ne peuvent pas interroger de transaction en dehors des États-unis, ni de transactions qui ne correspondent pas à des bicyclettes ou des transactions n'ayant pas lieu en 2008, sauf s'ils sont membres d'un autre rôle qui accorde ces autorisations.  
   
- Vous pouvez utiliser le filtre *=FALSE()*pour refuser l’accès à toutes les lignes pour une table entière.  
+ Vous pouvez utiliser le filtre *=FALSE()* pour refuser l’accès à toutes les lignes pour une table entière.  
   
 ### <a name="dynamic-security"></a>Sécurité dynamique  
  La sécurité dynamique permet de définir la sécurité au niveau de la ligne en fonction du nom de l'utilisateur actuellement connecté ou de la propriété CustomData retournée par une chaîne de connexion. Pour implémenter la sécurité dynamique, vous devez inclure dans votre modèle une table avec des valeurs de connexion (nom d'utilisateur Windows) pour les utilisateurs, ainsi qu'un champ qui peut être utilisé pour définir une autorisation particulière ; par exemple, une table dimEmployees avec un ID de connexion (domaine\nom utilisateur) ainsi qu'une valeur de service pour chaque employé.  

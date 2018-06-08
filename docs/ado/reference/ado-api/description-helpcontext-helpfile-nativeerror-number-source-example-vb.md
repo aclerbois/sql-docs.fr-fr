@@ -1,17 +1,15 @@
 ---
-title: "Exemple de propriétés d’objet erreur (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriétés d’objet erreur (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - SQLState property [ADO], Visual Basic example
 - HelpContext property [ADO], Visual Basic example
 ms.assetid: 5c728458-d85c-497c-afcf-2cfa36c3342a
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 17e1e7dae01b057e787c846e9a6b250b940ca976
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e7061c804393fe73e249636646c298c977002928
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="description-helpcontext-helpfile-nativeerror-number-source-and-sqlstate-properties-example-vb"></a>Description, HelpContext, HelpFile, Native Error, nombre, Source et SQLState, propriétés-exemple (VB)
 Cet exemple déclenche une erreur, elle intercepte et affiche le [Description](../../../ado/reference/ado-api/description-property.md), [HelpContext](../../../ado/reference/ado-api/helpcontext-helpfile-properties.md), [HelpFile](../../../ado/reference/ado-api/helpcontext-helpfile-properties.md), [Native Error](../../../ado/reference/ado-api/nativeerror-property-ado.md), [ Nombre](../../../ado/reference/ado-api/number-property-ado.md), [Source](../../../ado/reference/ado-api/source-property-ado-error.md), et [SQLState](../../../ado/reference/ado-api/sqlstate-property.md) propriétés des résultats de [erreur](../../../ado/reference/ado-api/error-object.md) objet.  

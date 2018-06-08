@@ -1,15 +1,14 @@
 ---
-title: "Traitement d’instructions qui génèrent des Messages | Documents Microsoft"
-ms.custom: 
+title: Traitement d’instructions qui génèrent des Messages | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-error-messages
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - PRINT statement
@@ -26,16 +25,16 @@ helpviewer_keywords:
 - ODBC error handling, statements generating messages
 - SQLExecDirect function
 ms.assetid: 672ebdc5-7fa1-4ceb-8d52-fd25ef646654
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7a9deaa7c1890c327de38663e99e83f6ce526491
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9475afda740b4c2b2d6b279c0ea0a454fd397bf0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-statements-that-generate-messages"></a>Traitement des instructions qui génèrent des messages
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -105,7 +104,7 @@ szErrorMsg="[Microsoft][ SQL Server Native Client][SQL Server]
 ```  
   
 ## <a name="using-print-and-raiserror-statements"></a>Utilisation des instructions PRINT et RAISERROR  
- [!INCLUDE[tsql](../../includes/tsql-md.md)]Instructions PRINT et RAISERROR retournent aussi les données en appelant **SQLGetDiagRec**. Instructions PRINT provoquent l’exécution d’instruction SQL retourner SQL_SUCCESS_WITH_INFO et un appel ultérieur à **SQLGetDiagRec** retourne un *SQLState* de 01000. Une erreur RAISERROR avec une gravité égale ou inférieure à dix se comporte de la même façon que PRINT. Une erreur RAISERROR avec une gravité de 11 ou plus provoque l’exécution à retourner SQL_ERROR et un appel ultérieur à **SQLGetDiagRec** retourne *SQLState* 42000. Par exemple, l'instruction suivante retourne SQL_SUCCESS_WITH_INFO :  
+ [!INCLUDE[tsql](../../includes/tsql-md.md)] Instructions PRINT et RAISERROR retournent aussi les données en appelant **SQLGetDiagRec**. Instructions PRINT provoquent l’exécution d’instruction SQL retourner SQL_SUCCESS_WITH_INFO et un appel ultérieur à **SQLGetDiagRec** retourne un *SQLState* de 01000. Une erreur RAISERROR avec une gravité égale ou inférieure à dix se comporte de la même façon que PRINT. Une erreur RAISERROR avec une gravité de 11 ou plus provoque l’exécution à retourner SQL_ERROR et un appel ultérieur à **SQLGetDiagRec** retourne *SQLState* 42000. Par exemple, l'instruction suivante retourne SQL_SUCCESS_WITH_INFO :  
   
 ```  
 SQLExecDirect (hstmt, "PRINT  'Some message' ", SQL_NTS);  

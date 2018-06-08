@@ -1,35 +1,34 @@
 ---
-title: "Tâche Mettre à jour les statistiques (Plan de maintenance) | Microsoft Docs"
-ms.custom: 
+title: Tâche Mettre à jour les statistiques (Plan de maintenance) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.maint.statistics.f1
 helpviewer_keywords:
 - Updates Statistics Task dialog box
 ms.assetid: 22902fd0-eb39-4f18-af94-3fcb69d2a3a4
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77bdf027ea3354d11c9877f03f20f2ebfe92afba
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 2f8bbeeb45f6d49589dc2b20a32bd8614ae82f71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="update-statistics-task-maintenance-plan"></a>Tâche Mettre à jour les statistiques (Plan de maintenance)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez la boîte de dialogue **Tâche Mettre à jour les statistiques** pour mettre à jour les informations [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] relatives aux données des tables et des index. Cette tâche rééchantillonne les statistiques de distribution de chaque index créé dans les tables utilisateur de la base de données. Les statistiques de distribution servent à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour optimiser la navigation dans les tables pendant le traitement des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] . Pour collecter automatiquement les statistiques de distribution, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] échantillonne périodiquement les données de la table correspondant à chaque index. La taille de cet échantillonnage est calculée en fonction du nombre de lignes de la table et de la fréquence de modification des données. Utilisez cette option pour effectuer un échantillonnage supplémentaire à l'aide du pourcentage spécifié de données des tables. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise ces informations pour créer des plans de requête améliorés.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez la boîte de dialogue **Tâche Mettre à jour les statistiques** pour mettre à jour les informations [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] relatives aux données des tables et des index. Cette tâche rééchantillonne les statistiques de distribution de chaque index créé dans les tables utilisateur de la base de données. Les statistiques de distribution servent à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour optimiser la navigation dans les tables pendant le traitement des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] . Pour collecter automatiquement les statistiques de distribution, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] échantillonne périodiquement les données de la table correspondant à chaque index. La taille de cet échantillonnage est calculée en fonction du nombre de lignes de la table et de la fréquence de modification des données. Utilisez cette option pour effectuer un échantillonnage supplémentaire à l'aide du pourcentage spécifié de données des tables. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise ces informations pour créer des plans de requête améliorés.  
   
  Cette tâche exécute l'instruction UPDATE STATISTICS.  
   

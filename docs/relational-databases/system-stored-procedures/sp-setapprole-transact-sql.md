@@ -1,16 +1,14 @@
 ---
 title: sp_setapprole (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_setapprole
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_setapprole
 ms.assetid: cf0901c0-5f90-42d4-9d5b-8772c904062d
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc1376391dcf0fefd0fb621d73817b8257b95bf9
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: ac733afa3f8afef74a9d6affb16e0f9dbcd5b4a9
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsetapprole-transact-sql"></a>sp_setapprole (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -62,7 +59,7 @@ sp_setapprole [ @rolename = ] 'role',
 > [!IMPORTANT]  
 >  ODBC **chiffrer** (fonction) ne fournit pas de chiffrement. Vous ne devez pas compter sur cette fonction pour protéger des mots de passe transmis sur un réseau. Si de telles informations doivent être transmises sur un réseau, utilisez SSL ou IPSec.  
   
- **@encrypt= 'none'**  
+ **@encrypt = 'none'**  
  Indique qu'aucun codage ne doit être utilisé. Le mot de passe est transmis à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sous forme de texte brut. Il s'agit du paramètre par défaut.  
   
  **@encrypt= « odbc »**  
@@ -72,7 +69,7 @@ sp_setapprole [ @rolename = ] 'role',
  Indique si un cookie doit être créé. **true** est implicitement converti en 1. **false** est implicitement converti en 0.  
   
  [  **@cookie =** ]  **@cookie SORTIE**  
- Spécifie le paramètre de sortie qui doit contenir le cookie. Le cookie est généré uniquement si la valeur de  **@fCreateCookie**  est **true**. **varbinary (8000)**  
+ Spécifie le paramètre de sortie qui doit contenir le cookie. Le cookie est généré uniquement si la valeur de **@fCreateCookie** est **true**. **varbinary(8000)**  
   
 > [!NOTE]  
 >  Le paramètre **OUTPUT** de cookie pour **sp_setapprole** est actuellement documenté comme **varbinary(8000)** , ce qui correspond à la longueur maximale correcte. Cependant, l’implémentation actuelle retourne **varbinary(50)**. Les applications doivent continuer à réserver **varbinary (8000)** afin que l’application continue à fonctionner correctement si le cookie de taille de retour augmente dans une version ultérieure.  
@@ -90,7 +87,7 @@ sp_setapprole [ @rolename = ] 'role',
 >   
 >  Le [!INCLUDE[msCoName](../../includes/msconame-md.md)] ODBC **chiffrer** option n’est pas pris en charge par **SqlClient**. Si vous devez stocker des informations d'identification, chiffrez-les à l'aide des fonctions API de chiffrement. Le paramètre *mot de passe* est stocké comme un hachage unidirectionnel. Pour préserver la compatibilité avec les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], stratégie de complexité de mot de passe n’est pas appliquée par **sp_addapprole**. Pour appliquer la stratégie de complexité de mot de passe, utilisez [CREATE APPLICATION ROLE](../../t-sql/statements/create-application-role-transact-sql.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance au **public** et la connaissance du mot de passe pour le rôle.  
   
 ## <a name="examples"></a>Exemples  
@@ -124,9 +121,9 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
- [CRÉER un rôle d’APPLICATION &#40; Transact-SQL &#41;](../../t-sql/statements/create-application-role-transact-sql.md)   
- [DROP APPLICATION ROLE &#40; Transact-SQL &#41;](../../t-sql/statements/drop-application-role-transact-sql.md)   
- [sp_unsetapprole &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-unsetapprole-transact-sql.md)  
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [CREATE APPLICATION ROLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-application-role-transact-sql.md)   
+ [DROP APPLICATION ROLE &#40;Transact-SQL&#41;](../../t-sql/statements/drop-application-role-transact-sql.md)   
+ [sp_unsetapprole &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unsetapprole-transact-sql.md)  
   
   

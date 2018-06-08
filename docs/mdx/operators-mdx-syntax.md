@@ -1,33 +1,20 @@
 ---
-title: "Opérateurs (syntaxe MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords:
-- Multidimensional Expressions [Analysis Services], operators
-- operators [MDX]
-- precedence [MDX]
-- MDX [Analysis Services], operators
-ms.assetid: 1ff5a529-88fd-4619-86e1-19fa214650d6
-caps.latest.revision: "29"
-author: Minewiskan
+title: Opérateurs (syntaxe MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 87304b4a33daa7d9460983a403136974c46c1f81
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 309311bfcef0ada531e391e99091a788715c8e2d
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34580661"
 ---
 # <a name="operators-mdx-syntax"></a>Opérateurs (syntaxe MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -91,12 +78,12 @@ ms.lasthandoff: 01/08/2018
   
 -   - ou -  
   
- Pour plus d’informations sur les opérateurs dans la syntaxe MDX, consultez [référence des opérateurs MDX &#40; MDX &#41; ](../mdx/mdx-operator-reference-mdx.md).  
+ Pour plus d’informations sur les opérateurs dans la syntaxe MDX, consultez [référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md).  
   
 ### <a name="determining-results"></a>Détermination de résultats  
  Lorsque vous combinez des expressions simples pour constituer une expression complexe, les règles des opérateurs combinées à celles de priorité des types de données déterminent le type de données de la valeur obtenue.  
   
- Si le résultat est un caractère ou une valeur Unicode, les règles des opérateurs combinées à celles de la priorité de classement déterminent le classement du résultat. Pour plus d’informations sur les classements, consultez [langues et classements &#40; Analysis Services &#41; ](../analysis-services/languages-and-collations-analysis-services.md).  
+ Si le résultat est un caractère ou une valeur Unicode, les règles des opérateurs combinées à celles de la priorité de classement déterminent le classement du résultat. Pour plus d’informations sur les classements, consultez [langues et classements &#40;Analysis Services&#41;](../analysis-services/languages-and-collations-analysis-services.md).  
   
  Il existe également des règles pour déterminer la précision, l’échelle et la longueur du résultat basées sur la précision, l’échelle et la longueur des expressions simples.  
   
@@ -112,7 +99,7 @@ ms.lasthandoff: 01/08/2018
 |Tuple|Scalaire|\<Tuple > .value|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)   
- [Éléments de syntaxe MDX &#40; MDX &#41;](../mdx/mdx-syntax-elements-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)   
+ [Éléments de syntaxe MDX &#40;MDX&#41;](../mdx/mdx-syntax-elements-mdx.md)  
   
   

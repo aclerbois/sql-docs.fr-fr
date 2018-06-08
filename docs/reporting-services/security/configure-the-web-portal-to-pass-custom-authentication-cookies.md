@@ -1,29 +1,28 @@
 ---
-title: "Configurer le portail web pour passer des cookies d’authentification personnalisée | Microsoft Docs"
-ms.custom: 
+title: Configurer le portail web pour passer des cookies d’authentification personnalisée | Microsoft Docs
+ms.custom: ''
 ms.date: 04/18/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - authentication [Reporting Services]
 - extensions [Reporting Services], custom security
 ms.assetid: 91aeb053-149e-4562-ae4c-a688d0e1b2ba
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.openlocfilehash: 083b458f0800fc560822f2ae933fd3b0503979d2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e188a2e036c2bcbfb51aee7dfa0efe5a68879b9a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-web-portal-to-pass-custom-authentication-cookies"></a>Configurer le portail web pour passer des cookies d’authentification personnalisée
 

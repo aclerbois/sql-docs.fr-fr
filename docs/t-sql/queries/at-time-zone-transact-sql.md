@@ -1,16 +1,14 @@
 ---
 title: AT TIME ZONE (Transact-SQL) | Microsoft Docs
 ms.date: 11/16/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - AT TIME ZONE
@@ -18,16 +16,15 @@ f1_keywords:
 helpviewer_keywords:
 - AT TIME ZONE function
 ms.assetid: 311f682f-7f1b-43b6-9ea0-24e36b64f73a
-caps.latest.revision: 
+caps.latest.revision: 13
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8b77aeb47515f4140f78a70288e9e25d2acc52d1
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 97798e9071375689a4e8a1a79e92f44ff3e08186
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="at-time-zone-transact-sql"></a>AT TIME ZONE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

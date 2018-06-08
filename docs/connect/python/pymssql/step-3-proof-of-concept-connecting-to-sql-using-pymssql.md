@@ -1,32 +1,30 @@
 ---
-title: "Étape 3 : Preuve de concept pour la connexion à SQL via pymssql | Documents Microsoft"
-ms.custom: 
+title: 'Étape 3 : Preuve de concept pour la connexion à SQL via pymssql | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: python
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2246ddeb-7c2f-46f3-8a91-cdd718d39b40
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 54ce9bbbda135b91e7b361ad7f763248a2259c38
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 003fedf9f8a629c39cfeffb8a2b6ac8840496c40
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-pymssql"></a>Étape 3 : Preuve de concept pour la connexion à SQL à l’aide de pymssql
 [!INCLUDE[Driver_Python_Download](../../../includes/driver_python_download.md)]
 
-Cet exemple doit être considérée comme une preuve de concept uniquement.  L’exemple de code est simplifiée par souci de clarté et ne représente pas nécessairement les meilleures pratiques recommandées par Microsoft.  
+Cet exemple doit être considéré comme une preuve de concept uniquement.  L’exemple de code est simplifié par souci de clarté et ne représente pas nécessairement les meilleures pratiques recommandées par Microsoft.  
   
 ## <a name="step-1--connect"></a>Étape 1 : se connecter  
   
@@ -56,7 +54,7 @@ Le [cursor.execute](http://pymssql.org/en/latest/ref/pymssql.html#pymssql.Cursor
   
 ## <a name="step-3--insert-a-row"></a>Étape 3 : Insérer une ligne  
   
-Dans cet exemple, vous allez apprendre à exécuter une [insérer](../../../t-sql/statements/insert-transact-sql.md) instruction passer en toute sécurité, des paramètres qui protègent votre application à partir de [injection SQL](../../../relational-databases/tables/primary-and-foreign-key-constraints.md) valeur.    
+Dans cet exemple, vous allez apprendre à passer en toute sécurité une commande [INSERT](../../../t-sql/statements/insert-transact-sql.md), en passant des valeurs en paramètres qui protègeront votre application à partir des tentatives [d'injection SQL](../../../relational-databases/tables/primary-and-foreign-key-constraints.md).    
   
   
 ```python

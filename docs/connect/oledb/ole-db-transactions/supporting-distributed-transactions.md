@@ -3,14 +3,12 @@ title: Prise en charge des Transactions distribuées | Documents Microsoft
 description: Transactions distribuées dans le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-transactions
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -23,13 +21,12 @@ helpviewer_keywords:
 - MS DTC, about distributed transaction support
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c37946f4300ac9782476ef96e26fb05de33e6069
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: e6593d0153f66e6899b5d180fb8194a970d7caa8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supporting-distributed-transactions"></a>Prise en charge des Transactions distribuées
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -46,7 +43,7 @@ ms.lasthandoff: 03/30/2018
 |---------------|-----------------|  
 |*punkTransactionCoord*|Pointeur vers un objet de transaction MS DTC.|  
 |*IsoLevel*|Ignoré par le pilote d’OLE DB pour SQL Server. Le niveau d'isolation pour les transactions coordonnées MS DTC est déterminé lorsque le consommateur acquiert un objet de transaction à partir de MS DTC.|  
-|*IsoFlags*|Doit être égal à 0. Le pilote OLE DB pour SQL Server retourne XACT_E_NOISORETAIN si toute autre valeur est spécifiée par le consommateur.|  
+|*Indicateur IsoFlags*|Doit être égal à 0. Le pilote OLE DB pour SQL Server retourne XACT_E_NOISORETAIN si toute autre valeur est spécifiée par le consommateur.|  
 |*POtherOptions*|Si la valeur n’est pas NULL, le pilote OLE DB pour SQL Server demande l’objet d’options de l’interface. Le pilote OLE DB pour SQL Server retourne XACT_E_NOTIMEOUT si l’objet d’options *ulTimeout* membre n’est pas zéro. Le pilote OLE DB pour SQL Server ignore la valeur de la *szDescription* membre.|  
   
  Cet exemple coordonne la transaction à l'aide de MS DTC.  

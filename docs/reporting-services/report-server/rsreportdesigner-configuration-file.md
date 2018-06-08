@@ -1,30 +1,28 @@
 ---
 title: Fichier de configuration RSReportDesigner | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Report Designer [Reporting Services], configuration file
 - RSReportDesigner configuration file
 ms.assetid: fdcc9c58-3bad-45b3-ba8e-c7816d64f14c
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fcc7025e74656da02806d81cef9fc26295bc3a1b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 45a1ca0907f5572f8409503fcb7227bcc8a08a62
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rsreportdesigner-configuration-file"></a>fichier de configuration RSReportDesigner
   Le fichier RSReportDesigner.config stocke les paramètres relatifs aux extensions de rendu et de traitement de données accessibles au Concepteur de rapports. Les informations d’extension pour le traitement des données sont stockées dans l’élément **Data** . Les informations d’extension de rendu sont stockées dans l’élément **Render** . L’élément **Designer** énumère les générateurs de requêtes utilisés dans le Concepteur de rapports.  

@@ -1,30 +1,27 @@
 ---
-title: "Configurer les paramètres de propriété HealthCheckTimeout | Microsoft Docs"
-ms.custom: 
+title: Configurer les paramètres de propriété HealthCheckTimeout | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3bbeb979-e6fc-4184-ad6e-cca62108de74
-caps.latest.revision: "31"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0165e046d479cab6f541dbc7cd81787ebd0accf6
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: c2ba9869ec0cb5760c3c4aff4e055c11a61a78a8
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772315"
 ---
 # <a name="configure-healthchecktimeout-property-settings"></a>Configurer les paramètres de propriété HealthCheckTimeout
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Le paramètre HealthCheckTimeout est utilisé pour spécifier le temps, en millisecondes, pendant lequel la DLL de ressource SQL Server doit attendre les informations retournées par la procédure stockée [sp_server_diagnostics](../../../relational-databases/system-stored-procedures/sp-server-diagnostics-transact-sql.md) avant de déclarer l’instance de cluster de basculement Always On comme sans réponse. Les modifications apportées aux paramètres de délai d'attente entrent immédiatement en vigueur et ne requièrent pas de redémarrage de la ressource SQL Server.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Le paramètre HealthCheckTimeout est utilisé pour spécifier le temps, en millisecondes, pendant lequel la DLL de ressource SQL Server doit attendre les informations retournées par la procédure stockée [sp_server_diagnostics](../../../relational-databases/system-stored-procedures/sp-server-diagnostics-transact-sql.md) avant de déclarer l’instance de cluster de basculement Always On comme sans réponse. Les modifications apportées aux paramètres de délai d'attente entrent immédiatement en vigueur et ne requièrent pas de redémarrage de la ressource SQL Server.  
   
 -   **Avant de commencer :**  [Limitations et restrictions](#Limits), [Sécurité](#Security)  
   
@@ -37,7 +34,7 @@ ms.lasthandoff: 12/05/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
  Nécessite les autorisations ALTER SETTINGS et VIEW SERVER STATE.  
   
 ##  <a name="PowerShellProcedure"></a> Utilisation de PowerShell  
@@ -94,7 +91,7 @@ ALTER SERVER CONFIGURATION
 SET FAILOVER CLUSTER PROPERTY HealthCheckTimeout = 15000;  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Stratégie de basculement pour les instances de cluster de basculement](../../../sql-server/failover-clusters/windows/failover-policy-for-failover-cluster-instances.md)  
   
   

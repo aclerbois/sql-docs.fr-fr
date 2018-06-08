@@ -1,29 +1,27 @@
 ---
-title: "Bonnes pratiques relatives au magasin de requêtes | Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques relatives au magasin de requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 11/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Query Store, best practices
 ms.assetid: 5b13b5ac-1e4c-45e7-bda7-ebebe2784551
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7e41e78e7e4ffc1699a79bee2e7ed6236210e52d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c6b667bf8be87561461c1ceec2543dcce051b93e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="best-practice-with-the-query-store"></a>Bonnes pratiques relatives au magasin de requêtes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

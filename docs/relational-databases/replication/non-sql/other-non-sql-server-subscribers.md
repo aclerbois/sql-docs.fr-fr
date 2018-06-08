@@ -1,30 +1,28 @@
 ---
-title: "Autres abonnés non-SQL Server | Microsoft Docs"
-ms.custom: 
+title: Autres abonnés non-SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/08/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - non-SQL Server Subscribers, other types
 ms.assetid: 96b8beb9-38e8-4ce4-97ca-c0f8656b73b4
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 024860422f6887b335e2e77ba33b3cd0f93c028b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 2e641cd12ab7add3279dc0b03eefbbd97568a9e0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="other-non-sql-server-subscribers"></a>Autres abonnés non SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

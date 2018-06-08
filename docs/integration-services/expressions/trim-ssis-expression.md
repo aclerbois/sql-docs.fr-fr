@@ -1,32 +1,30 @@
 ---
 title: TRIM (expression SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - leading blanks
 - TRIM function
 - trailing blanks
 ms.assetid: 7dd9081d-a3d4-483a-bf7e-bf2bd7692d39
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5df021d0f872330c55833d68b575878b0a4290e5
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b2333f7c0a74b664e8c772def787cbbd3dd8b71a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="trim-ssis-expression"></a>TRIM (expression SSIS)
   Renvoie une chaîne de type caractère après la suppression des espaces de début et de fin.  

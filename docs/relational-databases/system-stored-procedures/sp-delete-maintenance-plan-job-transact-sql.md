@@ -1,16 +1,14 @@
 ---
-title: sp_delete_maintenance_plan_job (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_delete_maintenance_plan_job (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_delete_maintenance_plan_job
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_delete_maintenance_plan_job
 ms.assetid: 1c2148c3-2928-4d9b-b1c8-3512cfbd6a63
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd3e8c20bb7d093bd57a924ab2914b6ff12b8051
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 5617e3d37b6c880e2d35b9f562e26714eea05a51
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdeletemaintenanceplanjob-transact-sql"></a>sp_delete_maintenance_plan_job (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,10 +49,10 @@ sp_delete_maintenance_plan_job [ @plan_id = ] 'plan_id' ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@plan_id =**] **'***plan_id***'**  
+ [  **@plan_id =**] **'***plan_id***'**  
  Spécifie l'identificateur du plan de maintenance. *plan_id* est **uniqueidentifier**, et doit être un ID valide.  
   
- [ **@job_id =**] **'***job_id***'**  
+ [  **@job_id =**] **'***job_id***'**  
  Spécifie l'ID du travail auquel le plan de maintenance est associé. *job_id* est **uniqueidentifier**, et doit être un ID valide.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -78,6 +75,6 @@ EXECUTE   sp_delete_maintenance_plan_job N'FAD6F2AB-3571-11D3-9D4A-00C04FB925FC'
   
 ## <a name="see-also"></a>Voir aussi  
  [Plans de maintenance](../../relational-databases/maintenance-plans/maintenance-plans.md)   
- [Plan de Maintenance de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-maintenance-plan-stored-procedures-transact-sql.md)  
+ [Procédures stockées de Plan de Maintenance de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-maintenance-plan-stored-procedures-transact-sql.md)  
   
   

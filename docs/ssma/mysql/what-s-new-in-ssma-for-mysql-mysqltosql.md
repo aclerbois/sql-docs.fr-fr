@@ -1,31 +1,28 @@
 ---
-title: "Nouveautés de SSMA pour MySQL (MySQLToSql) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Nouveautés de SSMA pour MySQL (MySQLToSql) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2018
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 1451a0b0-6713-4d0c-954f-ea3d8fce1d31
-caps.latest.revision: 
+caps.latest.revision: 21
 author: Shamikg
 ms.author: Shamikg
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 503e6c5a6c2d06a5c6a98ae1e9f45faebc40ae34
-ms.sourcegitcommit: 6a5b80cac78fe5c2d2567a391daa335f9b4b3637
+ms.openlocfilehash: 6e245e45ceec31cfbff4033c71b1f609f578ff58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="whats-new-in-ssma-for-mysql-mysqltosql"></a>Nouveautés de SSMA pour MySQL (MySQLToSql)
 Cette rubrique répertorie SSMA pour que les modifications de MySQL dans chaque version. 
@@ -83,7 +80,7 @@ La version de v7.1 de SSMA pour Access contient les modifications suivantes :
 - SSMA prend désormais en charge les mises à jour automatiques pour télécharger la dernière version de SSMA dès qu’elles sont disponibles.
 - Fichiers binaires installables de SSMA sont maintenant remis via des fichiers de package Windows installer (.msi).
 
-**Resources**
+**Ressources**
 
 [Extension des capacités de SQL Server Migration Assistant conversion](https://blogs.msdn.microsoft.com/datamigration/2017/02/21/2185/)
 

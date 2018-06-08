@@ -1,28 +1,23 @@
 ---
-title: "Masquage dynamique des données | Microsoft Docs"
-ms.custom: 
-ms.date: 09/26/2016
-ms.prod: sql-non-specified
+title: Masquage dynamique des données | Microsoft Docs
+ms.date: 04/23/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: security
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a62f4ff9-2953-42ca-b7d8-1f8f527c4d66
-caps.latest.revision: 
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a40b52ccc4839f63acbd1be1f9b2643552a44430
-ms.sourcegitcommit: 60d0c9415630094a49d4ca9e4e18c3faa694f034
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bdd58460e8dc3c9d763f92a335b0d2a0cee850b2
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="dynamic-data-masking"></a>Masquage dynamique des données
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -40,9 +35,9 @@ Le masquage dynamique des données permet d’empêcher les accès non autorisé
 
 Par exemple, si une personne assurant le support technique au sein d’un centre d’appels peut identifier des appelants à l’aide de quelques chiffres de leur numéro de sécurité sociale ou de carte de crédit, ces données ne doivent pas lui être entièrement révélées. Il est ainsi possible de définir une règle de masquage qui cache tout, sauf les quatre derniers chiffres d’un numéro de sécurité sociale ou de carte de crédit, dans le jeu de résultats de toute requête. Autre exemple, en utilisant un masque de données approprié pour protéger les informations d’identification personnelle (PII), un développeur peut interroger des environnements de production à des fins de dépannage sans violer les réglementations de conformité.
 
- Le masquage dynamique des données vise à limiter l’exposition de données sensibles, en empêchant des utilisateurs ne devant pas avoir accès à celles-ci de les consulter. En revanche, le masquage dynamique des données n’a pas pour but d’empêcher des utilisateurs d’une base de données de se connecter directement à celle-ci ou d’exécuter des requêtes exhaustives ayant pour effet d’exposer des éléments de données sensibles. Le masquage dynamique des données est complémentaire à d’autres fonctionnalités de sécurité de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (audit, chiffrement, sécurité au niveau des lignes...). Il est vivement recommandé de l’utiliser conjointement avec celles-ci pour mieux protéger les données sensibles contenues dans la base de données.  
+Le masquage dynamique des données vise à limiter l’exposition de données sensibles, en empêchant des utilisateurs ne devant pas avoir accès à celles-ci de les consulter. En revanche, le masquage dynamique des données n’a pas pour but d’empêcher des utilisateurs d’une base de données de se connecter directement à celle-ci ou d’exécuter des requêtes exhaustives ayant pour effet d’exposer des éléments de données sensibles. Le masquage dynamique des données est complémentaire à d’autres fonctionnalités de sécurité de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (audit, chiffrement, sécurité au niveau des lignes...). Il est vivement recommandé de l’utiliser conjointement avec celles-ci pour mieux protéger les données sensibles contenues dans la base de données.  
   
- Le masquage des données dynamiques est disponible dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)], et est configuré à l’aide de commandes [!INCLUDE[tsql](../../includes/tsql-md.md)] . Pour plus d’informations sur la configuration du masquage dynamique des données via le portail Azure, consultez [Prise en main du masquage dynamique des données de base de données SQL (portail Azure)](http://azure.microsoft.com/documentation/articles/sql-database-dynamic-data-masking-get-started/).  
+Le masquage des données dynamiques est disponible dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)], et est configuré à l’aide de commandes [!INCLUDE[tsql](../../includes/tsql-md.md)] . Pour plus d’informations sur la configuration du masquage dynamique des données via le portail Azure, consultez [Prise en main du masquage dynamique des données de base de données SQL (portail Azure)](http://azure.microsoft.com/documentation/articles/sql-database-dynamic-data-masking-get-started/).  
   
 ## <a name="defining-a-dynamic-data-mask"></a>Définition d’un masque dynamique des données  
  Il est possible de définir une règle de masquage sur une colonne d’une table, afin d’obfusquer les données qui y figurent. Quatre types de masques sont disponibles.  
@@ -69,12 +64,12 @@ Par exemple, si une personne assurant le support technique au sein d’un centre
   
 -   L’utilisation de `SELECT INTO` ou de `INSERT INTO` pour copier les données d’une colonne masquée dans une autre table a pour effet de masquer les données dans la table cible.  
   
--   Un masquage dynamique des données est appliqué pendant l’exécution d’opérations d’importation et d’exportation dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Une base de données contenant des colonnes masquées produit un fichier de sauvegarde dont les données sont masquées (en supposant qu’elle est exportée par un utilisateur dépourvu de privilèges **UNMASK** ), et la base de données importée contient des données masquées statiquement.  
+-   Un masquage dynamique des données est appliqué pendant l’exécution d’opérations d’importation et d’exportation dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Une base de données contenant des colonnes masquées produit un fichier de données exportées dont les données sont masquées (en supposant qu’elle est exportée par un utilisateur sans privilèges **UNMASK**), et la base de données importée contient des données masquées statiquement.  
   
 ## <a name="querying-for-masked-columns"></a>Interrogation de colonnes masquées  
  Pour interroger des colonnes de table auxquelles une fonction de masquage est appliquée, utilisez la vue **sys.masked_columns** . Celle-ci hérite de la vue **sys.columns** . Elle retourne toutes les colonnes de la vue **sys.columns** , ainsi que les colonnes **is_masked** et **masking_function** , en indiquant si les colonnes sont masquées et, dans ce cas, la fonction de masquage est définie. Cette vue présente uniquement les colonnes auxquelles une fonction de masquage est appliquée.  
   
-```  
+```sql 
 SELECT c.name, tbl.name as table_name, c.is_masked, c.masking_function  
 FROM sys.masked_columns AS c  
 JOIN sys.tables AS tbl   
@@ -107,7 +102,7 @@ Le masquage des données dynamiques est conçu pour simplifier le développement
 Par exemple, considérez un principal de base de données qui dispose de privilèges suffisants pour exécuter des requêtes ad hoc sur la base de données et essaie de « deviner » les données sous-jacentes, pour enfin déduire les valeurs réelles. Supposons que nous disposons d’un masque défini sur la colonne `[Employee].[Salary]` , et que cet utilisateur se connecte directement à la base de données et commence à deviner les valeurs, pour enfin déduire la valeur `[Salary]` d’un ensemble d’employés :
  
 
-```
+```sql
 SELECT ID, Name, Salary FROM Employees
 WHERE Salary > 99999 and Salary < 100001;
 ```
@@ -127,15 +122,15 @@ Il est important de gérer correctement les autorisations sur la base de donnée
 ### <a name="creating-a-dynamic-data-mask"></a>Création d’un masque dynamique des données  
  L’exemple suivant crée une table avec trois types différents de masques dynamiques des données. L’exemple remplit la table, puis affiche le résultat.  
   
-```  
+```sql
 CREATE TABLE Membership  
   (MemberID int IDENTITY PRIMARY KEY,  
    FirstName varchar(100) MASKED WITH (FUNCTION = 'partial(1,"XXXXXXX",0)') NULL,  
    LastName varchar(100) NOT NULL,  
-   Phone# varchar(12) MASKED WITH (FUNCTION = 'default()') NULL,  
+   Phone varchar(12) MASKED WITH (FUNCTION = 'default()') NULL,  
    Email varchar(100) MASKED WITH (FUNCTION = 'email()') NULL);  
   
-INSERT Membership (FirstName, LastName, Phone#, Email) VALUES   
+INSERT Membership (FirstName, LastName, Phone, Email) VALUES   
 ('Roberto', 'Tamburello', '555.123.4567', 'RTamburello@contoso.com'),  
 ('Janice', 'Galvin', '555.123.4568', 'JGalvin@contoso.com.co'),  
 ('Zheng', 'Mu', '555.123.4569', 'ZMu@contoso.net');  
@@ -144,7 +139,7 @@ SELECT * FROM Membership;
   
  Un nouvel utilisateur est créé, qui reçoit l’autorisation **SELECT** sur la table. Les requêtes exécutées en tant que `TestUser` affichent les données masquées.  
   
-```  
+```sql 
 CREATE USER TestUser WITHOUT LOGIN;  
 GRANT SELECT ON Membership TO TestUser;  
   
@@ -165,14 +160,14 @@ REVERT;
  Utilisez l’instruction **ALTER TABLE** pour ajouter un masque à une colonne existante de la table ou pour modifier le masque appliqué à cette colonne.  
 L’exemple suivant ajoute une fonction de masquage à la colonne `LastName` :  
   
-```  
+```sql  
 ALTER TABLE Membership  
 ALTER COLUMN LastName ADD MASKED WITH (FUNCTION = 'partial(2,"XXX",0)');  
 ```  
   
  L’exemple suivant modifie une fonction de masquage appliquée à la colonne `LastName` :  
-  
-```  
+
+```sql  
 ALTER TABLE Membership  
 ALTER COLUMN LastName varchar(100) MASKED WITH (FUNCTION = 'default()');  
 ```  
@@ -180,7 +175,7 @@ ALTER COLUMN LastName varchar(100) MASKED WITH (FUNCTION = 'default()');
 ### <a name="granting-permissions-to-view-unmasked-data"></a>Octroi d’autorisations d’afficher des données non masquées  
  L’octroi de l’autorisation **UNMASK** permet à `TestUser` d’afficher les données non masquées.  
   
-```  
+```sql
 GRANT UNMASK TO TestUser;  
 EXECUTE AS USER = 'TestUser';  
 SELECT * FROM Membership;  
@@ -193,7 +188,7 @@ REVOKE UNMASK TO TestUser;
 ### <a name="dropping-a-dynamic-data-mask"></a>Suppression d’un masque dynamique des données  
  L’instruction suivante supprime le masque appliqué à la colonne `LastName` , créé dans l’exemple précédent :  
   
-```  
+```sql  
 ALTER TABLE Membership   
 ALTER COLUMN LastName DROP MASKED;  
 ```  
@@ -204,5 +199,3 @@ ALTER COLUMN LastName DROP MASKED;
  [column_definition &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-column-definition-transact-sql.md)   
  [sys.masked_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-masked-columns-transact-sql.md)   
  [Prise en main du masquage dynamique des données de Base de données SQL (portail Azure en version préliminaire)](http://azure.microsoft.com/documentation/articles/sql-database-dynamic-data-masking-get-started/)  
-  
-  

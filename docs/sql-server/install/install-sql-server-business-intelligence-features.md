@@ -1,29 +1,24 @@
 ---
-title: "Installer les fonctionnalités Business Intelligence de SQL Server 2016 | Microsoft Docs"
-ms.custom: 
+title: Installer les fonctionnalités Business Intelligence de SQL Server 2016 | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 67399b24-e48a-49f3-9dd4-32d78c6a2ece
-caps.latest.revision: 
+caps.latest.revision: 27
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 50ae258437afb40cd2b427048dfe24330676f94f
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: fd04cdfc45360c2c44de4da4b4950e956450b4bc
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772475"
 ---
 # <a name="install-sql-server-business-intelligence-features"></a>Installer les fonctionnalités Business Intelligence de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

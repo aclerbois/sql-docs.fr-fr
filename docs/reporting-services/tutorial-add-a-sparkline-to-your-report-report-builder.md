@@ -1,28 +1,27 @@
 ---
-title: "Didacticiel : ajouter un graphique sparkline à un rapport (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : ajouter un graphique sparkline à un rapport (Générateur de rapports) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: 18c90a36-48bf-4805-a960-2d1e8f00c2dc
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2a9f819427b4abb5e9ee4032a990842a4137611f
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f8818331ee958d1a8458d057015c1f79e787af8a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-add-a-sparkline-to-your-report-report-builder"></a>Didacticiel : ajouter un graphique sparkline à un rapport (Générateur de rapports)
 

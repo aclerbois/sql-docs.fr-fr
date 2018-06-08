@@ -1,16 +1,14 @@
 ---
 title: Activer la compression sur une table ou un index | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: SQL
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.component: data-compression
-ms.technology:
-- dbe-data-compression
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.compwiz.compressiontype.f1
 - sql13.swb.compwiz.outputoptions.f1
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - data compression wizard
 - compression [SQL Server], enable
 ms.assetid: b7442cff-e616-475a-9c5a-5a765089e5f2
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: affe8cf85b5a4d3d9b692273bdf569a80287f305
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 688d14a811c812d0b00f42bb961fc9e31ea9cd3a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="enable-compression-on-a-table-or-index"></a>Activer la compression sur une table ou un index
 

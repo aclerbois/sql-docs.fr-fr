@@ -1,30 +1,27 @@
 ---
-title: "SQLGetDescField et SQLGetDescRec (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLGetDescField et SQLGetDescRec (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLGetDescField function [ODBC], Cursor Library
 - SQLGetDescRec function [ODBC], Cursor Library
 ms.assetid: 1a801f22-6fea-48aa-a723-3187a2ad852b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fcb3d3d3c961bb37dd2e6b2571821748d597a94f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: da57c5fb9f0ddb8d9e45651f9404d7825497d425
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetdescfield-and-sqlgetdescrec-cursor-library"></a>SQLGetDescField et SQLGetDescRec (bibliothèque de curseurs)
 > [!IMPORTANT]  

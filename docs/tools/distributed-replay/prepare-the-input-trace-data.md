@@ -1,30 +1,30 @@
 ---
-title: "Préparer les données de Trace d’entrée | Documents Microsoft"
-ms.custom: 
+title: Préparer les données de Trace d’entrée | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: distributed-replay
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c14fd3d2-5770-47c2-a851-cc13ddbc9bf5
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7cda1a0a932a914e85618359cb067b2e4da2a0f7
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 902e1753c1331d1bd35eebea58e53bb7ab7f6777
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-the-input-trace-data"></a>Préparer les données de trace d'entrée
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Avant de démarrer une relecture distribuée avec le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnalité Distributed Replay, vous devez préparer les données de trace d’entrée en initialisant l’étape de prétraitement à partir de l’outil d’administration de relecture distribuée. Dans l'étape de prétraitement, Distributed Replay Controller traite les données de trace et génère un fichier intermédiaire :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Avant de pouvoir démarrer une relecture distribuée avec la fonctionnalité [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay, vous devez préparer les données de trace d'entrée en initialisant l'étape de prétraitement de l'outil d'administration de relecture distribuée. Dans l'étape de prétraitement, Distributed Replay Controller traite les données de trace et génère un fichier intermédiaire :  
   
  ![Étape de prétraitement Distributed replay](../../tools/distributed-replay/media/preprocess.gif "étape de prétraitement Distributed replay")  
   
@@ -63,10 +63,10 @@ ms.lasthandoff: 01/17/2018
   
 3.  Une fois l'étape de prétraitement terminée, le fichier intermédiaire est stocké dans le répertoire de travail du contrôleur. Pour initialiser l’étape de relecture d’événements, vous devez exécuter l’outil d’administration avec l’option **replay** . Pour plus d’informations, consultez [Relire les données de trace](../../tools/distributed-replay/replay-trace-data.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Distributed Replay](../../tools/distributed-replay/sql-server-distributed-replay.md)   
- [Conditions préalables de relecture distribuée](../../tools/distributed-replay/distributed-replay-requirements.md)   
- [Options de ligne de commande de l’outil Administration &#40; Distributed Replay Utility &#41;](../../tools/distributed-replay/administration-tool-command-line-options-distributed-replay-utility.md)   
+ [Distributed Replay Requirements](../../tools/distributed-replay/distributed-replay-requirements.md)   
+ [Options de ligne de commande de l’outil d’administration &#40;Distributed Replay Utility&#41;](../../tools/distributed-replay/administration-tool-command-line-options-distributed-replay-utility.md)   
  [Configurer Distributed Replay](../../tools/distributed-replay/configure-distributed-replay.md)  
   
   

@@ -1,31 +1,28 @@
 ---
-title: "Paramètre (ADO - syntaxe WFC) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Paramètre (ADO - syntaxe WFC) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 02/15/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Parameter collection [ADO], ADO/WFC syntax
 ms.assetid: d00d1e1e-14b1-41a2-a00f-2a3cb7396f15
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 05f3e2f6f6b3985c1c68604e6e9829c1b1f3eef1
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ed007c9dfea10578a642fbb01469eeb6ad2a56da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameter-ado---wfc-syntax"></a>Paramètre (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com.ms.wfc.data  

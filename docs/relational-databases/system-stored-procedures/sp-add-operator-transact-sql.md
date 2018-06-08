@@ -1,16 +1,14 @@
 ---
-title: sp_add_operator (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_add_operator (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_operator
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_operator
 ms.assetid: 817cd98a-4dff-4ed8-a546-f336c144d1e0
-caps.latest.revision: 
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 534a5b973d0d35d660a07fc85bb8c7934f13a5c5
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 3821ebe0886dd5a731e0459f3da686125c02a71c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddoperator-transact-sql"></a>sp_add_operator (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +62,7 @@ sp_add_operator [ @name = ] 'name'
  [  **@enabled=** ] *activé*  
  Indique l'état actuel de l'opérateur. *activé* est **tinyint**, avec une valeur par défaut **1** (activé). Si **0**, l’opérateur n’est pas activé et ne reçoit pas de notifications.  
   
- [ **@email_address=** ] **'***email_address***'**  
+ [  **@email_address=** ] **'***email_address***'**  
  Adresse de courrier électronique de l'opérateur. Cette chaîne est transmise directement au système de messagerie électronique. *email_address* est **nvarchar (100)**, avec NULL comme valeur par défaut.  
   
  Vous pouvez spécifier une adresse électronique physique ou un alias pour *email_address*. Par exemple :  
@@ -75,28 +72,28 @@ sp_add_operator [ @name = ] 'name'
 > [!NOTE]  
 >  Vous devez utiliser l'adresse de messagerie pour Messagerie de base de données.  
   
- [ **@pager_address=** ] **'***pager_address***'**  
+ [  **@pager_address=** ] **'***adresse_radiomessagerie***'**  
  L’adresse de radiomessagerie de l’opérateur. Cette chaîne est transmise directement au système de messagerie électronique. *adresse_radiomessagerie* est **narchar(100)**, avec NULL comme valeur par défaut.  
   
- [ **@weekday_pager_start_time=** ] *weekday_pager_start_time*  
+ [  **@weekday_pager_start_time=** ] *weekday_pager_start_time*  
  Heure après laquelle l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] envoie la notification de radiomessagerie à l'opérateur spécifié. Cette opération a lieu durant les jours de la semaine, du lundi au vendredi. *weekday_pager_start_time*est **int**, avec une valeur par défaut **090000**, ce qui indique 9 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@weekday_pager_end_time=** ] *weekday_pager_end_time*  
+ [  **@weekday_pager_end_time=** ] *au vendredi*  
  Heure après laquelle **SQLServerAgent** service n’envoie plus de notification par radiomessagerie à l’opérateur spécifié de la semaine, du lundi au vendredi. *au vendredi*est **int**, avec une valeur par défaut 180000, ce qui indique 18 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@saturday_pager_start_time =**] *saturday_pager_start_time*  
+ [  **@saturday_pager_start_time =**] *heure_début_radiomessagerie_samedi*  
  Heure après laquelle **SQLServerAgent** service envoie la notification par radiomessagerie à l’opérateur spécifié sur son récepteur de radiomessagerie. *heure_début_radiomessagerie_samedi* est **int**, avec une valeur 090000 par défaut, ce qui indique 9 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@saturday_pager_end_time=** ] *saturday_pager_end_time*  
+ [  **@saturday_pager_end_time=** ] *heure_fin_radiomessagerie_samedi*  
  Heure après laquelle **SQLServerAgent** service n’envoie plus de notification par radiomessagerie à l’opérateur spécifié sur son récepteur de radiomessagerie. *heure_fin_radiomessagerie_samedi*est **int**, avec une valeur par défaut **180000**, ce qui indique 18 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@sunday_pager_start_time=** ] *sunday_pager_start_time*  
+ [  **@sunday_pager_start_time=** ] *heure_début_radiomessagerie_dimanche*  
  Heure après laquelle **SQLServerAgent** service envoie la notification par radiomessagerie à l’opérateur spécifié tous les dimanches. *heure_début_radiomessagerie_dimanche*est **int**, avec une valeur par défaut **090000**, ce qui indique 9 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@sunday_pager_end_time =**] *sunday_pager_end_time*  
+ [  **@sunday_pager_end_time =**] *sunday_pager_end_time*  
  Heure après laquelle **SQLServerAgent** service n’envoie plus de notification par radiomessagerie à l’opérateur spécifié tous les dimanches. *sunday_pager_end_time*est **int**, avec une valeur par défaut **180000**, ce qui indique 18 h 00. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@pager_days=** ] *pager_days*  
+ [  **@pager_days=** ] *jours_radiomessagerie*  
  Nombre qui indique les jours pendant lesquels l'opérateur peut recevoir des notifications par radiomessagerie (argument utilisé avec un argument définissant les heures de début et de fin). *jours_radiomessagerie*est **tinyint**, avec une valeur par défaut **0** indique que l’opérateur n’est jamais disponible pour recevoir un message. Les valeurs valides sont comprises entre **0** via **127**. *jours_radiomessagerie*est calculée en ajoutant les valeurs représentant les jours voulus. Par exemple, du lundi au vendredi est **2**+**4**+**8**+**16**+**32** = **62**. Le tableau ci-après indique la valeur correspondant à chaque jour de la semaine.  
   
 |Valeur|Description|  
@@ -109,10 +106,10 @@ sp_add_operator [ @name = ] 'name'
 |**32**|Vendredi|  
 |**64**|Samedi|  
   
- [ **@netsend_address=** ] **'***netsend_address***'**  
+ [  **@netsend_address=** ] **'***adresse_envoiréseau***'**  
  Adresse réseau de l'opérateur à qui est envoyé le message réseau. *adresse_envoiréseau*est **nvarchar (100)**, avec NULL comme valeur par défaut.  
   
- [ **@category_name=** ] **'***category***'**  
+ [  **@category_name=** ] **'***catégorie***'**  
  Nom de la catégorie pour cet opérateur. *catégorie* est **sysname**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

@@ -1,29 +1,18 @@
 ---
 title: Dans base de données analytique de R pour les développeurs SQL (didacticiel) | Documents Microsoft
-ms.custom: ''
-ms.date: 07/26/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-dev_langs:
-- R
-- TSQL
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 93e272db94d2784c8d52a1a7e92ed88deaf1c9fe
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: e1ff2799ba37c97f5ff82c1c15cdeb986220a947
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585271"
 ---
 # <a name="in-database-r-analytics-for-sql-developers-tutorial"></a>Analytique de R dans base de données pour les développeurs SQL (didacticiel)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -72,7 +61,7 @@ Ce didacticiel utilise un dataset publique connu, basé sur les boucles dans tax
 
 ### <a name="requirements"></a>Spécifications
 
-Ce didacticiel est destiné aux utilisateurs qui sont déjà familiarisés avec les opérations fondamentales de la base de données, telles que la création de bases de données et tables, l’importation de données dans des tables et créer des requêtes SQL. Tout le code R est fourni, aucun environnement de développement R n’est donc nécessaire. Un programmeur expérimenté de SQL doit être en mesure d’effectuer cet exemple à l’aide de [!INCLUDE[tsql](../../includes/tsql-md.md)] dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]et en exécutant les scripts PowerShell fournis.
+Ce didacticiel s’adresse aux utilisateurs qui sont familiarisés avec les opérations de base de données telles que la création de bases de données et de tables, l’importation de données dans des tables et l’écriture de requêtes SQL. Tout le code R est fourni, aucun environnement de développement R n’est donc nécessaire. Un programmeur expérimenté de SQL peut utiliser [ ! INCLUDE [tsql] (.. /.. / inclut/tsql-md.md)] dans [ ! INCLUDE [ssManStudioFull] (.. /.. / inclut / ssmanstudiofull-md.md) et exécutez le script PowerShell fourni pour compléter cet exemple. Toutefois, avant de commencer ce didacticiel, vous devez effectuer les préparatifs suivants :
 
 Toutefois, avant de commencer le didacticiel, vous devez effectuer ces tâches de préparation :
 

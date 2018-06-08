@@ -1,38 +1,27 @@
 ---
-title: "À l’aide d’Expressions de Dimension | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords:
-- expressions [MDX], dimensions
-- dimensions [Analysis Services], MDX
-ms.assetid: 1d40cffb-e88f-4284-93cf-d62ab4f08395
-caps.latest.revision: "28"
-author: Minewiskan
+title: À l’aide d’Expressions de Dimension | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 1417fd747df92c84fe66e2c69996f57ab51875e1
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: f680c5478eb1ee03fd69506d669fbc49c91c0241
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582491"
 ---
 # <a name="using-dimension-expressions"></a>Utilisation d'expressions de dimension
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
 
   Vous utilisez généralement des expressions de dimension et de hiérarchie lorsque vous passez des paramètres à des fonctions dans MDX (Multidimensional Expressions) pour retourner des membres, des jeux ou des tuples à partir d'une hiérarchie.  
   
- Les expressions de dimension peuvent être uniquement des expressions simples car elles sont des identificateurs d'objet. Consultez [Expressions &#40; MDX &#41; ](../mdx/expressions-mdx.md) pour une explication des expressions simples et complexes.  
+ Les expressions de dimension peuvent être uniquement des expressions simples car elles sont des identificateurs d'objet. Consultez [Expressions &#40;MDX&#41; ](../mdx/expressions-mdx.md) pour une explication des expressions simples et complexes.  
   
 ## <a name="dimension-expressions"></a>Expressions de dimension  
  Une expression de dimension contient un identificateur de dimension ou une fonction de dimension.  
@@ -70,9 +59,9 @@ ms.lasthandoff: 01/08/2018
   
  `FROM [Adventure Works]`  
   
- Un identificateur de hiérarchie apparaît sous la forme *Dimension_Name**.* *Hierarchy_Name* dans la notation BNF utilisée pour décrire des instructions MDX.  
+ Un identificateur de hiérarchie apparaît sous la forme *Dimension_Name **.** Hierarchy_Name* dans la notation BNF utilisée pour décrire des instructions MDX.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Expressions &#40; MDX &#41;](../mdx/expressions-mdx.md)  
+ [Expressions &#40;MDX&#41;](../mdx/expressions-mdx.md)  
   
   

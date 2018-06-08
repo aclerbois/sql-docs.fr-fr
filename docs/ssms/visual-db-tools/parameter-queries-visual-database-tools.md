@@ -1,31 +1,31 @@
 ---
-title: "Requêtes avec paramètres (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Requêtes avec paramètres (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: parameter queries [SQL Server]
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- parameter queries [SQL Server]
 ms.assetid: 4897c41a-324a-47b8-a30b-cbc9e9e19a8b
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 04e6aeb141df44b8432680251f7d63b88c40f276
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 73a075e41e51330d801e977a521c6babdafc86d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameter-queries-visual-database-tools"></a>Requêtes avec paramètres (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Dans certains cas, il est utile de créer une requête si vous devez souvent y faire appel, mais chaque fois avec une valeur différente. Par exemple, il se peut que vous exécutiez fréquemment une requête pour rechercher tous les `title_ids` écrits par un auteur. Chaque demande pourrait utiliser la même requête, mais l'ID ou le nom de l'auteur serait différent à chaque fois.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Dans certains cas, il est utile de créer une requête si vous devez souvent y faire appel, mais chaque fois avec une valeur différente. Par exemple, il se peut que vous exécutiez fréquemment une requête pour rechercher tous les `title_ids` écrits par un auteur. Chaque demande pourrait utiliser la même requête, mais l'ID ou le nom de l'auteur serait différent à chaque fois.  
   
 Pour que la requête prenne une valeur différente selon le cas, incluez des paramètres dans sa création. Un paramètre est un espace réservé, qui sera rempli par une valeur fournie au moment de l'exécution de la requête. Dans l'instruction SQL de l'exemple suivant, « ? » représente le paramètre de l'ID de l'auteur :  
   

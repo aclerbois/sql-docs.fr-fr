@@ -1,31 +1,29 @@
 ---
-title: "Références relatives aux outils (réplication) | Microsoft Docs"
-ms.custom: 
+title: Références relatives aux outils (réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], tools
 - tools [SQL Server replication]
 ms.assetid: 41921d45-8a3c-4b69-b397-4b02b3b62160
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 961f777e4f79bcf0cb20389072c11eac8b5aeffb
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: a9204a254306dd2c1524021f15d3ebe14f31bbde
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tools-reference-replication"></a>Références relatives aux outils (réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

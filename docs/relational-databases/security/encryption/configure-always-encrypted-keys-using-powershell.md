@@ -1,28 +1,25 @@
 ---
-title: "Configurer des clés Always Encrypted à l’aide de PowerShell | Microsoft Docs"
-ms.custom: 
+title: Configurer des clés Always Encrypted à l’aide de PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: security
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: security, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-security
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: security
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3bdf8629-738c-489f-959b-2f5afdaf7d61
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: df6980bfcc713c17d1a4c39c52c967922f5b9cb5
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b7f4f56828e8c1ec44c58feda21e5f061364b4b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-always-encrypted-keys-using-powershell"></a>Configurer des clés Always Encrypted à l’aide de PowerShell
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

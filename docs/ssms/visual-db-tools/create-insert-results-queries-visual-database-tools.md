@@ -1,16 +1,15 @@
 ---
-title: "Créer des requêtes Insert Results (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Créer des requêtes Insert Results (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - queries [SQL Server], types
 - result sets [SQL Server], queries
@@ -18,19 +17,19 @@ helpviewer_keywords:
 - Insert Results query
 - queries [SQL Server], results
 ms.assetid: 8770d630-09cc-47ec-a0e9-e9de2d7bbc89
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77d9cd92950ddecc334fd5d75c3092bc5b3b4214
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 91c84391103acc56a4602bb91d960557f190cb52
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-insert-results-queries-visual-database-tools"></a>Créer des requêtes Insert Results (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez copier des lignes d’une table à une autre ou au sein d’une même table à l’aide d’une requête Insert Results. Dans une table `titles` par exemple, vous pouvez utiliser une requête Insert Results pour copier des informations sur les titres publiés par un éditeur dans une seconde table que vous pouvez mettre à la disposition de cet éditeur. Une requête Insert Results ressemble à une requête Make Table, à la seule différence qu'elle copie des lignes dans une table existante.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez copier des lignes d'une table à une autre ou au sein d'une même table à l'aide d'une requête Insert Results. Dans une table `titles` par exemple, vous pouvez utiliser une requête Insert Results pour copier des informations sur les titres publiés par un éditeur dans une seconde table que vous pouvez mettre à la disposition de cet éditeur. Une requête Insert Results ressemble à une requête Make Table, à la seule différence qu'elle copie des lignes dans une table existante.  
   
 > [!TIP]  
 > Vous pouvez également copier des lignes d'une table à une autre à l'aide de la fonctionnalité Couper-Coller. Créez une requête pour chaque table et exécutez les requêtes. Copiez les lignes de votre choix d'une grille de résultats vers une autre.  

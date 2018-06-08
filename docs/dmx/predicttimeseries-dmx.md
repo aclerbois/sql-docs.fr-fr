@@ -1,18 +1,19 @@
 ---
 title: PredictTimeSeries (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: PredictTimeSeries
-dev_langs: DMX
+f1_keywords:
+- PredictTimeSeries
+dev_langs:
+- DMX
 helpviewer_keywords:
 - time series algorithms [Analysis Services]
 - time series [Analysis Services]
@@ -20,16 +21,15 @@ helpviewer_keywords:
 - REPLACE_MODEL_CASES parameter
 - PredictTimeSeries function
 ms.assetid: 85c596be-a7f4-499b-8d36-7e67c2647b6c
-caps.latest.revision: "56"
+caps.latest.revision: 56
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: b1b631ab035bf4c444aa1c6b449eaa87e3305c91
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 97094e9f59e9e4e505ad1aa16592871500b35eef
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="predicttimeseries-dmx"></a>PredictTimeSeries (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -57,9 +57,9 @@ PredictTimeSeries(<scalar column reference>, n-start, n-end, REPLACE_MODEL_CASES
  Spécifie le nom de la colonne à prédire. La colonne peut contenir des données scalaires ou tabulaires.  
   
  *n*  
- Spécifie le nombre d'étapes suivantes à prédire. Si une valeur n’est pas spécifiée pour  *n* , la valeur par défaut est 1.  
+ Spécifie le nombre d'étapes suivantes à prédire. Si une valeur n’est pas spécifiée pour *n*, la valeur par défaut est 1.  
   
- *n*ne peut pas être 0. La fonction retourne une erreur si vous ne faites pas au moins une prédiction.  
+ *n* ne peut pas être 0. La fonction retourne une erreur si vous ne faites pas au moins une prédiction.  
   
  *début de n, n-fin*  
  Spécifie une plage d'étapes de série chronologique.  
@@ -83,10 +83,10 @@ PredictTimeSeries(<scalar column reference>, n-start, n-end, REPLACE_MODEL_CASES
 ## <a name="return-type"></a>Type de retour  
  A \< *expression de table*>.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L'algorithme MTS ([!INCLUDE[msCoName](../includes/msconame-md.md)] Time Series) ne prend pas en charge la prédiction historique lorsque vous utilisez l'instruction PREDICTION JOIN pour ajouter de nouvelles données.  
   
- Dans une instruction PREDICTION JOIN, le processus de prédiction commence toujours à l'étape venant immédiatement après la fin de la série d'apprentissage d'origine. Cela est vrai même si vous ajoutez de nouvelles données. Par conséquent, le  *n*  paramètre et *n-démarrage* les valeurs de paramètre doivent être un entier supérieur à 0.  
+ Dans une instruction PREDICTION JOIN, le processus de prédiction commence toujours à l'étape venant immédiatement après la fin de la série d'apprentissage d'origine. Cela est vrai même si vous ajoutez de nouvelles données. Par conséquent, le *n* paramètre et *n-démarrage* les valeurs de paramètre doivent être un entier supérieur à 0.  
   
 > [!NOTE]  
 >  La longueur des nouvelles données n'affecte pas le point de départ de la prédiction. Par conséquent, si vous souhaitez ajouter de nouvelles données et faire de nouvelles prédictions, assurez-vous soit d'attribuer au point de départ de prédiction une valeur supérieure à la longueur des nouvelles données, soit d'étendre le point de fin de prédiction de la durée des nouvelles données.  
@@ -100,7 +100,7 @@ PredictTimeSeries(<scalar column reference>, n-start, n-end, REPLACE_MODEL_CASES
   
 -   Le troisième exemple indique comment utiliser le paramètre EXTEND_MODEL_CASES pour mettre à jour un modèle d'exploration de données avec de nouvelles données.  
   
- Pour en savoir plus sur l’utilisation des modèles de série chronologique, consultez le didacticiel d’exploration de données, [leçon 2 : création d’un scénario de prévision &#40; didacticiel intermédiaire sur l’exploration de données &#41;](http://msdn.microsoft.com/library/9a988156-c900-4c22-97fa-f6b0c1aea9e2) et [didacticiel sur DMX de prédiction de série chronologique](http://msdn.microsoft.com/library/38ea7c03-4754-4e71-896a-f68cc2c98ce2).  
+ Pour en savoir plus sur l’utilisation des modèles de série chronologique, consultez le didacticiel d’exploration de données, [leçon 2 : génération d’un scénario de prévision &#40;didacticiel intermédiaire sur l’exploration de données&#41; ](http://msdn.microsoft.com/library/9a988156-c900-4c22-97fa-f6b0c1aea9e2) et [temps série de prédiction DMX Didacticiel](http://msdn.microsoft.com/library/38ea7c03-4754-4e71-896a-f68cc2c98ce2).  
   
 > [!NOTE]  
 >  Vous pouvez obtenir des résultats différents de votre modèle ; les résultats des exemples suivants sont fournis uniquement pour illustrer le format de résultat.  
@@ -134,7 +134,7 @@ OR [Model Region] = 'M200 Pacific'
 ### <a name="example-2-adding-new-data-and-using-replacemodelcases"></a>Exemple 2 : ajout de nouvelles données et utilisation de REPLACE_MODEL_CASES  
  Supposez que vous constatez que les données étaient incorrectes pour une région particulière et que vous souhaitez utiliser les modèles dans le modèle, tout en ajustant les prédictions pour qu'elles correspondent aux nouvelles données. Ou il se peut que vous constatiez qu'une autre région a des tendances plus fiables et que vous souhaitiez appliquer le modèle le plus fiable aux données d'une région différente.  
   
- Dans de tels scénarios, vous pouvez utiliser le paramètre REPLACE_MODEL_CASES et spécifier un nouveau jeu de données à utiliser comme données d'historique. De cette façon, les projections seront basées sur les modèles dans le modèle spécifié, mais continueront de manière fluide à partir de la fin des nouveaux points de données. Pour obtenir une description complète de ce scénario, consultez [avancé des prédictions de série chronologique &#40; didacticiel d’exploration de données intermédiaire &#41;](http://msdn.microsoft.com/library/b614ebdb-07ca-44af-a0ff-893364bd4b71).  
+ Dans de tels scénarios, vous pouvez utiliser le paramètre REPLACE_MODEL_CASES et spécifier un nouveau jeu de données à utiliser comme données d'historique. De cette façon, les projections seront basées sur les modèles dans le modèle spécifié, mais continueront de manière fluide à partir de la fin des nouveaux points de données. Pour obtenir une description complète de ce scénario, consultez [avancé des prédictions de série chronologique &#40;didacticiel d’exploration de données intermédiaire&#41;](http://msdn.microsoft.com/library/b614ebdb-07ca-44af-a0ff-893364bd4b71).  
   
  La requête PREDICTION JOIN suivante illustre la syntaxe pour remplacer des données et élaborer de nouvelles prédictions. Pour les données de remplacement, l'exemple extrait la valeur des colonnes Amount et Quantity et multiplie chacune par deux :  
   
@@ -268,8 +268,8 @@ OR [Model Region] = 'M200 North America'
 >  Le mot clé FLATTENED a été utilisé dans cet exemple pour simplifier la présentation des résultats dans une table ; toutefois, si votre fournisseur prend en charge les ensembles de lignes hiérarchiques, vous pouvez omettre ce mot clé. Si vous omettez le mot clé FLATTENED, la requête retourne deux colonnes, la première contenant la valeur qui identifie la série de données `[Model Region]` et la deuxième contenant la table imbriquée de statistiques.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
  [Exemples de requête de modèle de série de temps](../analysis-services/data-mining/time-series-model-query-examples.md)   
- [Prédire &#40; DMX &#41;](../dmx/predict-dmx.md)  
+ [Prédire & #40 ; DMX & #41 ;](../dmx/predict-dmx.md)  
   
   

@@ -1,40 +1,19 @@
 ---
 title: Le traitement des objets (XMLA) | Documents Microsoft
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- errors [XML for Analysis]
-- objects [XML for Analysis]
-- XML for Analysis, objects
-- XMLA, partitions
-- partitions [Analysis Services], XML for Analysis
-- XML for Analysis, partitions
-- writeback [Analysis Services], XML for Analysis
-- out-of-line bindings
-- processing objects [XML for Analysis]
-- XMLA, objects
-ms.assetid: a65b3249-303d-49c6-98af-6ac6eed11a03
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dffffec4424ed00921d2c9150330c6293c6f77da
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5318e41b9f5aed9d1cc4b3855bb649aa6f3e63f6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="processing-objects-xmla"></a>Traitement d'objets (XMLA)
   Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], le traitement est l’étape ou la série d’étapes qui transforme les données en informations pour l’analyse de l’entreprise. Si le traitement varie selon le type d'objet, le traitement consiste toujours à transformer des données en informations.  
@@ -75,14 +54,14 @@ ms.lasthandoff: 02/15/2018
 |*ProcessClearStructureOnly*|Structure d'exploration de données|  
 |*ProcessScriptCache*|Cube|  
   
- Pour plus d’informations sur le traitement [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , consultez [du traitement d’un modèle multidimensionnel &#40; Analysis Services &#41; ](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md).  
+ Pour plus d’informations sur le traitement [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , consultez [du traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md).  
   
 ## <a name="specifying-objects-to-be-processed"></a>Spécification des objets à traiter  
  Le [objet](../../analysis-services/xmla/xml-elements-properties/object-element-xmla.md) propriété de la **processus** commande contient l’identificateur d’objet de l’objet à traiter. Seul un objet peut être spécifié dans un **processus** commande, mais que le traitement d’un objet traite également tous les objets enfants. Par exemple, le traitement d'un groupe de mesures dans un cube englobe toutes les partitions de ce groupe de mesures. De même, le traitement d'une base de données porte sur tous ses objets, notamment les cubes, les dimensions et les structures d'exploration de données contenus dans la base de données.  
   
  Si vous définissez la **ProcessAffectedObjects** attribut de la **processus** commande est true, les associés à l’objet concerné par le traitement de l’objet spécifié est également traité. Par exemple, si une dimension est mise à jour incrémentielle à l’aide de la *ProcessUpdate* traitement option dans le **processus** de commande, n’importe quelle partition dont les agrégations sont invalidées en raison d’être ajoutées ou supprimées sont également traitées par les membres [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] si **ProcessAffectedObjects** est définie sur true. Dans ce cas, un seul **processus** commande peut traiter plusieurs objets dans une [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] instance, mais [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] détermine quels objets en dehors de l’objet unique spécifié dans le **processus** doit également traiter la commande.  
   
- Toutefois, vous pouvez traiter plusieurs objets, tels que les dimensions, en même temps en utilisant plusieurs **processus** des commandes dans un **lot** commande. Opérations par lots fournissent un niveau plus élevé de contrôle pour le traitement de série ou parallèle des objets sur un [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] instance que l’utilisation de la **ProcessAffectedObjects** d’attribut et vous permettent de pour paramétrer votre approche de traitement supérieure [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] bases de données. Pour plus d’informations sur l’exécution d’opérations par lots, consultez [exécution d’opérations de traitement par lots &#40; XMLA &#41; ](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/performing-batch-operations-xmla.md).  
+ Toutefois, vous pouvez traiter plusieurs objets, tels que les dimensions, en même temps en utilisant plusieurs **processus** des commandes dans un **lot** commande. Opérations par lots fournissent un niveau plus élevé de contrôle pour le traitement de série ou parallèle des objets sur un [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] instance que l’utilisation de la **ProcessAffectedObjects** d’attribut et vous permettent de pour paramétrer votre approche de traitement supérieure [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] bases de données. Pour plus d’informations sur l’exécution d’opérations par lots, consultez [exécution d’opérations de traitement par lots &#40;XMLA&#41;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/performing-batch-operations-xmla.md).  
   
 ## <a name="specifying-out-of-line-bindings"></a>Spécification de liaisons hors ligne  
  Si le **processus** commande n’est pas contenue dans un **lot** commande, vous pouvez éventuellement spécifier les liaisons hors ligne dans le [liaisons](../../analysis-services/xmla/xml-elements-properties/bindings-element-xmla.md), [DataSource](../../analysis-services/xmla/xml-elements-properties/datasource-element-xmla.md), et [DataSourceView](../../analysis-services/xmla/xml-elements-properties/datasourceview-element-xmla.md) propriétés de la **processus** commande pour les objets à traiter. Les liaisons hors ligne sont des références à des sources de données, vues de sources de données et d’autres objets dans laquelle la liaison existe uniquement pendant l’exécution de la **processus** commande, et elles remplacent les liaisons existantes associées aux objets en cours de traitement. Si aucune liaison hors ligne n'est spécifiée, les liaisons actuellement associées aux objets à traiter sont utilisées.  
@@ -93,7 +72,7 @@ ms.lasthandoff: 02/15/2018
   
 -   À l’aide d’une tâche de flux de données dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour fournir des données lors du traitement d’une dimension, un modèle d’exploration de données ou une partition.  
   
- Les liaisons hors ligne sont décrites dans le cadre d'ASSL (Analysis Services Scripting Language). Pour plus d’informations sur les liaisons hors ligne dans ASSL, consultez [des Sources de données et liaisons &#40; SSAS multidimensionnel &#41; ](../../analysis-services/multidimensional-models/data-sources-and-bindings-ssas-multidimensional.md).  
+ Les liaisons hors ligne sont décrites dans le cadre d'ASSL (Analysis Services Scripting Language). Pour plus d’informations sur les liaisons hors ligne dans ASSL, consultez [des Sources de données et des liaisons &#40;multidimensionnels SSAS&#41;](../../analysis-services/multidimensional-models/data-sources-and-bindings-ssas-multidimensional.md).  
   
 ### <a name="incrementally-updating-partitions"></a>Mise à jour incrémentielle des partitions  
  La mise à jour incrémentielle d'une partition déjà traitée fait généralement appel à une liaison hors ligne, car la liaison spécifiée pour la partition fait référence à des données de table de faits déjà agrégées dans la partition. Lors de la mise à jour incrémentielle d’une partition déjà traitée à l’aide de la **processus** commande [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] effectue les actions suivantes :  
@@ -104,7 +83,7 @@ ms.lasthandoff: 02/15/2018
   
 -   fusion de la partition temporaire avec la partition sélectionnée existante.  
   
- Pour plus d’informations sur la fusion de partitions à l’aide de XML for Analysis (XMLA), consultez [la fusion de Partitions &#40; XMLA &#41; ](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/merging-partitions-xmla.md).  
+ Pour plus d’informations sur la fusion de partitions à l’aide de XML for Analysis (XMLA), consultez [la fusion de Partitions &#40;XMLA&#41;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/merging-partitions-xmla.md).  
   
 ## <a name="handling-processing-errors"></a>Gestion des erreurs de traitement  
  Le [ErrorConfiguration](../../analysis-services/xmla/xml-elements-properties/errorconfiguration-element-xmla.md) propriété de la **processus** commande vous permet de spécifier comment gérer les erreurs rencontrées lors du traitement d’un objet. Par exemple, lors du traitement d'une dimension, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] rencontre une valeur en double dans la colonne clé de l'attribut de clé. Du fait que les clés d'attribut doivent être uniques, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] ignore les enregistrements en double. Selon le [KeyDuplicate](../../analysis-services/scripting/properties/keyduplicate-element-assl.md) propriété du **ErrorConfiguration**, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] impossible :  

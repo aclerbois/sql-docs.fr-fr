@@ -2,29 +2,30 @@
 title: Gestion d’un domaine | Microsoft Docs
 ms.custom: ''
 ms.date: 07/31/2012
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c5ab71a3-0dac-45b1-be8e-93bf7e0e03ce
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7e988d58dc4f160ae85273762173d129c2cc9c2c
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 68c456012f2576209561b85bbe46ae125e0d7f02
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="managing-a-domain"></a>Gestion d'un domaine
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit l'utilisation des domaines dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Un domaine contient une représentation sémantique des données dans un champ spécifique dans la source de données qui doit être analysée. Un domaine fait partie de la base de connaissances que vous créez pour une source de données, et la connaissance que vous accumulez en analysant un exemple de source de données, ou lors de l'importation de données, est ajoutée aux domaines définis dans la base de connaissances. La connaissance de ces domaines est utilisée ultérieurement pour effectuer le nettoyage et la correspondance dans un projet de qualité des données. Les domaines sont au cœur de toutes les activités dans Data Quality Services.  
   
  Un domaine est mappé à un champ de source de données et est rempli lors des activités de découverte des connaissances, de gestion de l'arborescence du domaine et de correspondance. Le mode de chargement des données de la source de données et de génération des données dans un rapport est défini dans les propriétés de domaine. Lorsque vous utilisez un fournisseur de données de référence pour nettoyer les données, vous attachez un service de données de référence à un domaine unique ou composite. Vous créez des règles à appliquer à vos données dans un domaine, et vous pouvez créer des relations à base de termes pour un domaine. Vous pouvez afficher et corriger les données du domaine.  

@@ -1,16 +1,15 @@
 ---
-title: "Créez les fichiers de connexion du serveur (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Créez les fichiers de connexion du serveur (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Sybase Console,Creating Server Connection Files
 - Sybase Console,Server Connection File Validation
 ms.assetid: 35ef396f-9f98-429d-9fc5-4f413d08fb37
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 85c98038c589d57daeea1ba8c715d00b089b8f77
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 054f7ef1711e92cc2e38fb0cb2b6cc62ed79d2f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-the-server-connection-files-sybasetosql"></a>Créez les fichiers de connexion du serveur (SybaseToSQL)
 Informations sur le serveur peuvent être spécifiées dans la section serveurs du fichier de script ou dans un fichier de connexion de serveur distinct. Le paramètre de ligne de commande pour le fichier de connexion de serveur est, `-c <serverconnectionfile>`. Si le même id de serveur est présent dans le fichier de script et le fichier de connexion de serveur, la définition de serveur dans le fichier de script est pris en compte.  
@@ -115,7 +113,7 @@ Informations sur le serveur peuvent être spécifiées dans la section serveurs 
 L’utilisateur peut valider facilement son fichier de connexion de serveur par rapport au fichier de définition de schéma **S2SSConsoleScriptServersSchema.xsd** disponibles dans le dossier « Schémas ».  
   
 ## <a name="next-step"></a>Étape suivante  
-L’étape suivante d’exploitation de la console est [l’exécution de la Console SSMA &#40; SybaseToSQL &#41;](../../ssma/sybase/executing-the-ssma-console-sybasetosql.md)  
+L’étape suivante d’exploitation de la console est [l’exécution de la Console SSMA &#40;SybaseToSQL&#41;](../../ssma/sybase/executing-the-ssma-console-sybasetosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
 [Exécution de la console SSMA](http://msdn.microsoft.com/en-us/ea8950b7-fabc-4aa4-89f8-9573a2617d70)  

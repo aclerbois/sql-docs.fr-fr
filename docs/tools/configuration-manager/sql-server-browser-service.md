@@ -1,17 +1,14 @@
 ---
 title: Le Service SQL Server Browser | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.browseservers.local.f1
 - sql13.swb.browseservers.network.f1
@@ -21,20 +18,19 @@ helpviewer_keywords:
 - Browser Service
 - SQL Server Browser service
 ms.assetid: 3cc00d3a-487c-4cd9-a155-655f02485fa0
-caps.latest.revision: 
+caps.latest.revision: 61
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5018082d7a9ee06c1015925e3efad92eecc5133b
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: e60d4a23373ecd3ecb92540de4f8e6893482990a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="sql-server-browser-service"></a>Service SQL Server Browser
+# <a name="sql-server-browser-service"></a>SQL Server Browser Service
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s’exécute en tant que service Windows. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l’écoute des demandes entrantes pour les ressources [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et fournit des informations sur les instances [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installées sur l’ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser contribue aux actions suivantes :  
+  Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s’exécute en tant que service Windows. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l'écoute des demandes entrantes pour les ressources [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et fournit des informations sur les instances [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installées sur l'ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser contribue aux actions suivantes :  
   
 -   Affichage de la liste des serveurs disponibles  
   
@@ -42,27 +38,27 @@ Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s�
   
 -   Connexion aux points de terminaison d'une connexion administrateur dédiée  
   
- Pour chaque instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] et de [!INCLUDE[ssAS](../../includes/ssas-md.md)], le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser (sqlbrowser) fournit le nom de l’instance et le numéro de version. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser est installé avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+ Pour chaque instance de [!INCLUDE[ssDE](../../includes/ssde-md.md)] et de [!INCLUDE[ssAS](../../includes/ssas-md.md)], le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser (sqlbrowser) fournit le nom de l’instance et le numéro de version. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est installé avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser peut être configuré pendant l’installation ou en utilisant le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Par défaut, le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser démarre automatiquement :  
   
 -   lors de la mise à niveau d'une installation ;  
   
--   lors d'une installation sur un cluster ;  
+-   lors d'une installation sur un cluster ;  
   
 -   lors de l’installation d’une instance nommée de [!INCLUDE[ssDE](../../includes/ssde-md.md)] , notamment toutes les instances de SQL Server Express ;  
   
 -   lors de l'installation d'une instance nommée du service [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
   
 ## <a name="background"></a>Arrière-plan  
- Avant [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)], une seule instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pouvait être installée sur un ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]était à l’écoute des demandes entrantes sur le port 1433, attribué à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par l’officiel Internet IANA Assigned Numbers Authority (). L'utilisation d'un port étant limitée à une seule instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , lorsque [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] a introduit la prise en charge de plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le protocole SSRP ( [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Resolution Protocol) a été développé afin de permettre une écoute sur le port UDP 1434. Ce service d'écoute répondait aux demandes des clients avec les noms des instances installées et les ports ou les canaux nommés utilisés par l'instance. Pour parer aux limites du système SSRP, [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] introduit le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser en remplacement de SSRP.  
+ Avant [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)], une seule instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pouvait être installée sur un ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] était à l’écoute des demandes entrantes sur le port 1433, attribué à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par l’IANA (Internet Assigned Numbers Authority). L'utilisation d'un port étant limitée à une seule instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , lorsque [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] a introduit la prise en charge de plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le protocole SSRP ( [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Resolution Protocol) a été développé afin de permettre une écoute sur le port UDP 1434. Ce service d'écoute répondait aux demandes des clients avec les noms des instances installées et les ports ou les canaux nommés utilisés par l'instance. Pour parer aux limites du système SSRP, [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] introduit le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser en remplacement de SSRP.  
   
 ## <a name="how-sql-server-browser-works"></a>Fonctionnement de SQL Server Browser  
  Au moment du démarrage d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , si le protocole TCP/IP est activé pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un port TCP/IP est attribué au serveur. Si le protocole des canaux nommés est activé, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est à l'écoute d'un canal nommé spécifique. Ce port, ou « canal de communication », est utilisé par cette instance spécifique pour l'échange de données avec les applications clientes. Au cours de l'installation, le port TCP 1433 et le canal de communication `\sql\query` sont affectés à l'instance par défaut, mais ceux-ci peuvent être modifiés ultérieurement par l'administrateur du serveur via le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Dans la mesure où un port ou un canal de communication ne peut être utilisé que par une seule instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , différents numéros de ports et noms de canaux de communication sont attribués pour les instances nommées, y compris [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)]. Par défaut, lorsque les instances nommées et [!INCLUDE[ssExpress](../../includes/ssexpress-md.md)] sont activés, ils sont configurés pour utiliser des ports dynamiques. En d'autres termes, un port disponible est attribué lors du démarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Si nécessaire, un port spécifique peut être attribué à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Au moment de la connexion, les clients peuvent désigner un port spécifique. Toutefois, si le port est attribué dynamiquement, le numéro de port peut changer lors de chaque redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , auquel cas le numéro de port correct est inconnu du client.  
   
- Lors du démarrage, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser réclame le port UDP 1434. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser lit le Registre, identifie toutes les instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur l'ordinateur, puis note les ports et autres canaux nommés qu'elles utilisent. Lorsqu'un serveur est équipé de deux cartes réseau ou plus, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser renvoie le premier port activé qu'il détecte pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser pend en charge les protocoles Ipv6 et ipv4.  
+ Lors du démarrage, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser réclame le port UDP 1434. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser lit le Registre, identifie toutes les instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur l’ordinateur, puis note les ports et autres canaux nommés qu’elles utilisent. Lorsqu'un serveur est équipé de deux cartes réseau ou plus, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser renvoie le premier port activé qu'il détecte pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser pend en charge les protocoles ipv6 et ipv4.  
   
- Lorsque les clients [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] demandent des ressources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , la bibliothèque réseau cliente envoie un message UDP au serveur à l'aide du port 1434. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser répond avec le port TCP/IP ou canal nommé de l'instance demandée. La bibliothèque réseau de l'application cliente établit alors la connexion en envoyant une demande au serveur en utilisant le port ou le canal nommé de l'instance souhaitée.  
+ Lorsque les clients [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] demandent des ressources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , la bibliothèque réseau cliente envoie un message UDP au serveur à l'aide du port 1434. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser répond avec le port TCP/IP ou canal nommé de l’instance demandée. La bibliothèque réseau de l'application cliente établit alors la connexion en envoyant une demande au serveur en utilisant le port ou le canal nommé de l'instance souhaitée.  
   
  Pour plus d'informations sur le démarrage et l'arrêt du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser, consultez la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
@@ -109,7 +105,7 @@ Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s�
 ## <a name="security"></a>Sécurité  
   
 ### <a name="account-privileges"></a>Privilèges de compte  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l’écoute d’un port UDP et accepte les demandes non authentifiées via le protocole SSRP ( [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Resolution Protocol). [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser doit être exécuté dans le contexte de sécurité d’un utilisateur privilégié pour réduire les risques d’attaque malveillante. Le compte de connexion peut être modifié à partir du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les droits d'utilisateur minimaux pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser sont les suivants :  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l’écoute d’un port UDP et accepte les demandes non authentifiées via le protocole SSRP ( [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Resolution Protocol). [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser doit être exécuté dans le contexte de sécurité d’un utilisateur doté de faibles privilèges afin de limiter les risques d’attaque malveillante. Le compte de connexion peut être modifié à partir du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les droits d'utilisateur minimaux pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser sont les suivants :  
   
 -   Refuser l'accès à cet ordinateur à partir du réseau  
   
@@ -138,7 +134,7 @@ Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s�
 ### <a name="using-a-firewall"></a>Utilisation d'un pare-feu  
  Pour communiquer avec le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser sur un serveur situé derrière un pare-feu, ouvrez le port UDP 1434 en plus du port TCP utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (par ex., le port 1433). Pour plus d'informations sur l'utilisation d'un pare-feu, consultez « Procédure : configurer un pare-feu pour accéder à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] » dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Protocoles réseau et bibliothèques réseau](../../sql-server/install/network-protocols-and-network-libraries.md)  
   
   

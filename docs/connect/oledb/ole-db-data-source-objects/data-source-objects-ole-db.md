@@ -3,14 +3,12 @@ title: Objets (OLE DB) la Source de données | Documents Microsoft
 description: Objets source de données (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-data-source-objects
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -23,13 +21,12 @@ helpviewer_keywords:
 - CLSID
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b1fd12d353e5c7ecc47852ea1ab570694312df1f
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 2eb3583366cf896ecf2382a5d2f36d1298e4c4a4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-source-objects-ole-db"></a>Objets source de données (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -83,7 +80,7 @@ else
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [Propriétés de Source de données &#40; OLE DB &#41;](../../oledb/ole-db-data-source-objects/data-source-properties-ole-db.md)  
+-   [Propriétés de Source de données & #40 ; OLE DB & #41 ;](../../oledb/ole-db-data-source-objects/data-source-properties-ole-db.md)  
   
 -   [Propriétés d’informations de Source de données](../../oledb/ole-db-data-source-objects/data-source-information-properties.md)  
   
@@ -91,11 +88,11 @@ else
   
 -   [Sessions](../../oledb/ole-db-data-source-objects/sessions.md)  
   
--   [Propriétés de la session - pilote OLE DB SQL Server](../../oledb/ole-db-data-source-objects/session-properties-oledb-driver-for-sql-server.md)  
+-   [Propriétés de session - OLE DB Driver pour SQL Server](../../oledb/ole-db-data-source-objects/session-properties-oledb-driver-for-sql-server.md)  
   
 -   [Persistante des objets Source de données](../../oledb/ole-db-data-source-objects/persisted-data-source-objects.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote d’OLE DB pour SQL Server &#40;OLE DB&#41;](../../oledb/ole-db/oledb-driver-for-sql-server-ole-db.md)  
+ [Programmation OLE DB Driver pour SQL Server](../../oledb/ole-db/oledb-driver-for-sql-server-programming.md)  
   
   

@@ -1,16 +1,15 @@
 ---
 title: ISJSON (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ISJSON
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - ISJSON function
 - JSON, validating
 ms.assetid: c836f3d3-3e17-44ae-92bf-f341918896c3
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 12
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0ecbcc4ced2b9503ec9161f7aa93a1a5266960ef
-ms.sourcegitcommit: 66bef6981f613b454db465e190b489031c4fb8d3
+ms.openlocfilehash: 0f9bac83281c419209e54553a8c7de968ec35680
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="isjson-transact-sql"></a>ISJSON (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

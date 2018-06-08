@@ -1,28 +1,26 @@
 ---
-title: "SQLSetConnectAttr (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLSetConnectAttr (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetConnectAttr function [ODBC], Cursor Library
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetConnectAttr function [ODBC], Cursor Library
 ms.assetid: 6f70bbd0-a057-49ef-8b05-4c80b58fc6e6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3366ae3e16b75ef1fea3f388f66675ca4c717bc2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d10356488b0a590fb065c49a36a05f0e9b976991
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetconnectattr-cursor-library"></a>SQLSetConnectAttr (bibliothèque de curseurs)
 > [!IMPORTANT]  

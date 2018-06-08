@@ -1,32 +1,30 @@
 ---
 title: Options de ligne de commande dans la Console SSMA (OracleToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Command Line Options, Help Option
 - Command Line Options, SecurePassword Help Option
 - Command Line Options, Variable Value File Option
 - Command Line Options,Script File Option
 ms.assetid: bf4a9313-349e-4ebf-9c89-9f5bb515f9ff
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: a5b0502ba12f5151679b6e4468bdb046b490ecc0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: b3eeca8d9afb45b68d67f08b285624f3eee7cc5c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-line-options-in-ssma-console-oracletosql"></a>Options de ligne de commande dans la Console SSMA (OracleToSQL)
 Microsoft vous fournit un options de ligne de commande ensemble robuste pour exécuter et contrôler les activités SSMA. Les sections qui en découlent décrit en détail le même.  
@@ -94,7 +92,7 @@ Définition de serveur peut être une partie du fichier de connexion de serveur 
 ### <a name="xml-output-option--xxmloutput-xmloutputfile"></a>Option de sortie XML : - x / xmloutput [xmloutputfile]  
 Cette commande est utilisée pour la sortie des messages de sortie de commande au format xml à la console ou dans un fichier xml.  
   
-Il existe deux options pour xmloutput, notamment.., :  
+Il existe deux options pour xmloutput, notamment..,:  
   
 -   Si le chemin d’accès est fourni après le commutateur xmloutput la sortie est redirigée vers le fichier.  
   
@@ -164,21 +162,21 @@ Affiche le résumé de la syntaxe des options de la Console de SSMA :
   
 `C:\>SSMAforOracleConsole.EXE -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; OracleToSQL &#41;](../../ssma/oracle/appendix-1-oracletosql.md).  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;OracleToSQL&#41;](../../ssma/oracle/appendix-1-oracletosql.md).  
   
 ### <a name="securepassword-help-option-securepassword--help"></a>Option de l’aide de SecurePassword : – securepassword- ? /Help  
 Affiche le résumé de la syntaxe des options de la Console de SSMA :  
   
 `C:\>SSMAforOracleConsole.EXE -securepassword -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; OracleToSQL &#41;](../../ssma/oracle/appendix-1-oracletosql.md)  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;OracleToSQL&#41;](../../ssma/oracle/appendix-1-oracletosql.md)  
   
 ### <a name="next-step"></a>Étape suivante  
 L’étape suivante varie selon les spécifications de votre projet :  
   
--   Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40; OracleToSQL &#41;](../../ssma/oracle/managing-passwords-oracletosql.md).  
+-   Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40;OracleToSQL&#41;](../../ssma/oracle/managing-passwords-oracletosql.md).  
   
--   Pour la génération de rapports, consultez [génération de rapports &#40; OracleToSQL &#41;](../../ssma/oracle/generating-reports-oracletosql.md).  
+-   Pour la génération de rapports, consultez [génération de rapports &#40;OracleToSQL&#41;](../../ssma/oracle/generating-reports-oracletosql.md).  
   
--   Pour résoudre les problèmes dans la console, consultez [dépannage &#40; OracleToSQL &#41;](../../ssma/oracle/troubleshooting-oracletosql.md).  
+-   Pour résoudre les problèmes dans la console, consultez [dépannage &#40;OracleToSQL&#41;](../../ssma/oracle/troubleshooting-oracletosql.md).  
   

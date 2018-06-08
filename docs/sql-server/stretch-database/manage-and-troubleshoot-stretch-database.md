@@ -1,33 +1,27 @@
 ---
-title: "Gérer Stretch Database et résoudre ses problèmes | Microsoft Docs"
-ms.custom: 
+title: Gérer Stretch Database et résoudre ses problèmes | Microsoft Docs
+ms.custom: ''
 ms.date: 06/27/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: stretch-database
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-stretch
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Stretch Database, managing
 - Stretch Database, troubleshooting
 - managing Stretch Database
 - troubleshooting Stretch Database
 ms.assetid: 6334db3e-9297-44df-8d53-211187a95520
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 55c3cefee2008ed430e1af1fecc5162a3c165473
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2fa0896d132d2cb30d6dde49d43af801cae9da12
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772875"
 ---
 # <a name="manage-and-troubleshoot-stretch-database"></a>Gérer Stretch Database et résoudre ses problèmes
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly.md)]

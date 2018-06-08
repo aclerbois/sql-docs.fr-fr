@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_10502 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 10502 (Database Engine error)
 ms.assetid: 26d9b64d-4299-4b55-92d0-0a32a3688c0a
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3c04a0c6b2e41e2ca478ed4a26b2393e5768e8c1
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8a74b5e48a1dc37c11e860215c63a100701fddb2
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver10502"></a>MSSQLSERVER_10502
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +41,7 @@ Un repère de plan existe pour l'instruction spécifiée.
 ## <a name="user-action"></a>Action de l'utilisateur  
 Supprimez le repère de plan existant avant de créer le nouveau.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [Repères de plan](~/relational-databases/performance/plan-guides.md)  
 [sp_create_plan_guide &#40;Transact-SQL&#41;](~/relational-databases/system-stored-procedures/sp-create-plan-guide-transact-sql.md)  
 [sp_create_plan_guide_from_handle &#40;Transact-SQL&#41;](~/relational-databases/system-stored-procedures/sp-create-plan-guide-from-handle-transact-sql.md)  

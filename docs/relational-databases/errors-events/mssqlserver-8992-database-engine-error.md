@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_8992 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 8992 (Database Engine error)
 ms.assetid: 68467e6a-09d8-478f-8bd9-3bb09453ada3
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 22
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 46b76d5dd4df1a9e693bb1f3da4f383abf9df2a7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 333f2f7cd3fb8e151079dc135de77fd16851989e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver8992"></a>MSSQLSERVER_8992
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -82,6 +77,6 @@ Cette erreur ne peut pas être corrigée.  Si vous ne pouvez pas restaurer la ba
 ### <a name="do-not-manually-update-system-tables"></a>Ne pas mettre à jour manuellement les tables système  
 N'apportez pas de mises à jour manuelles aux tables système. SQL Server ne prend pas en charge les modifications manuelles apportées aux bases de données système. Si vous mettez à jour une table système dans une base de données SQL Server, deux événements (ID 17659 et ID 3859) sont consignés. Pour plus d'informations, consultez l'article 2688307 de la Base de connaissances « L'ID d'événement 17659 et l'ID d'événement 3859 sont consignés lorsque vous mettez à jour des tables système dans une base de données SQL Server ».  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [L’ID d’événement 17659 et l’ID d’événement 3859 sont consignés lorsque vous mettez à jour des tables système dans une base de données SQL Server](http://support.microsoft.com/kb/2688307/EN-US)  
   

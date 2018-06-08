@@ -1,27 +1,25 @@
 ---
-title: "Utilisation de datasets partagés (portail web) | Microsoft Docs"
-ms.custom: 
+title: Utilisation de datasets partagés (portail web) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/02/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2641ea84-9343-4e6f-aec1-25339031b163
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4e72c48f816752530abddb6246410e4936ac20a6
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 97b787e06c3979e8e41586804164edcccc9cd0a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="work-with-shared-datasets---web-portal"></a>Utilisation de datasets partagés (portail web)
 

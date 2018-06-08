@@ -1,16 +1,14 @@
 ---
 title: ALL (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - single-column set of values [SQL Server]
 - ALL (Transact-SQL)
 ms.assetid: 4b0c002e-1ffd-4425-a980-11fdc1f24af7
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 142fbd5b352a73e382f89a61f60fba6373902172
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 39d5d8af39a63b89d6d65468645899d090d101e9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="all-transact-sql"></a>ALL (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -65,7 +62,7 @@ scalar_expression { = | <> | != | > | >= | !> | < | <= | !< } ALL ( subquery )
  **Booléen**  
   
 ## <a name="result-value"></a>Valeur des résultats  
- Retourne la valeur TRUE lorsque la comparaison spécifiée a la valeur TRUE pour toutes les paires (*scalar_expression***,***x)*, quand *x* est une valeur du jeu de valeurs de la colonne ; dans le cas contraire, la valeur FALSE est retournée.  
+ Retourne la valeur TRUE lorsque la comparaison spécifiée a la valeur TRUE pour toutes les paires (*scalar_expression ***,*** x)*, quand *x* est une valeur du jeu de valeurs de la colonne ; dans le cas contraire, la valeur FALSE est retournée.  
   
 ## <a name="remarks"></a>Notes   
  ALL requiert que l’argument *scalar_expression* corresponde à toutes les valeurs retournées par la sous-requête. Par exemple, si la sous-requête retourne les valeurs 2 et 3, *scalar_expression* < = ALL (sous-requête) a la valeur TRUE pour une *scalar_expression* égale à 2. Si la sous-requête retourne les valeurs 2 et 3, l’instruction *scalar_expression* = ALL (sous-requête) donne FALSE comme résultat étant donné que certaines des valeurs de la sous-requête (à savoir 3) ne répondent pas aux critères de l’expression.  
@@ -75,7 +72,7 @@ scalar_expression { = | <> | != | > | >= | !> | < | <= | !< } ALL ( subquery )
  Cette rubrique fait référence à l'instruction ALL lorsqu'elle est utilisée avec une sous-requête. ALL peut aussi être utilisé avec [UNION](../../t-sql/language-elements/set-operators-union-transact-sql.md) et [SELECT](../../t-sql/queries/select-transact-sql.md).  
   
 ## <a name="examples"></a>Exemples  
- L’exemple suivant crée une procédure stockée qui détermine si tous les composants d’un `SalesOrderID` spécifié de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] peuvent être fabriqués dans le nombre de jours spécifié. L'exemple utilise une sous-requête pour créer une liste du nombre de `DaysToManufacture` pour tous les composants du `SalesOrderID` spécifié, puis vérifie que toutes les valeurs `DaysToManufacture` sont inférieures ou égales au nombre de jours spécifié.  
+ L’exemple suivant crée une procédure stockée qui détermine si tous les composants d’un `SalesOrderID` spécifié dans la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] peuvent être fabriqués dans le délai du nombre de jours spécifié. L'exemple utilise une sous-requête pour créer une liste du nombre de `DaysToManufacture` pour tous les composants du `SalesOrderID` spécifié, puis vérifie que toutes les valeurs `DaysToManufacture` sont inférieures ou égales au nombre de jours spécifié.  
   
 ```  
 -- Uses AdventureWorks  

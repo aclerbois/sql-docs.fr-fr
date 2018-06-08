@@ -2,16 +2,13 @@
 title: Sauvegardes de type copie seule (SQL Server) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: backup-restore
+ms.prod: sql
+ms.prod_service: backup-restore
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
+ms.technology: backup-restore
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - copy-only backups [SQL Server]
 - COPY_ONLY option [BACKUP statement]
@@ -21,12 +18,12 @@ caps.latest.revision: 48
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: be87b15dfba3fcc6aa78212bd471b142ae51f105
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 4384584a2dc1f278bfe3fc63baae2e1068cc9956
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="copy-only-backups-sql-server"></a>Sauvegardes de type copie seule (SQL Server)
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

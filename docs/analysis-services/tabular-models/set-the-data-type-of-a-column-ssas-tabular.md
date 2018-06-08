@@ -1,31 +1,23 @@
 ---
-title: "Définir le Type de données d’une colonne | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 34e2d508-7b64-4503-a4f0-c6c6ad5f8a44
-caps.latest.revision: 
-author: Minewiskan
+title: Définir le Type de données d’une colonne | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d40df86ee45154243d854dea65162b49a5e6352e
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 18aa18d9c9ee7fbc0291d9961e144263053710dd
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="set-the-data-type-of-a-column"></a>Définir le type de données d'une colonne 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Lorsque vous importez ou collez des données dans un modèle, le générateur de modèles détecte et applique automatiquement les types de données. Après avoir ajouté les données au modèle, vous pouvez modifier manuellement le type de données d'une colonne afin de modifier la manière dont les données sont stockées. Si vous souhaitez simplement changer le format d'affichage des données sans modifier le mode de stockage de ces dernières, suivez plutôt la procédure ci-après.  
+  Lorsque vous importez ou collez des données dans un modèle, le générateur de modèles détecte et applique automatiquement les types de données. Après avoir ajouté les données au modèle, vous pouvez modifier manuellement le type de données d'une colonne afin de modifier la manière dont les données sont stockées. Si vous souhaitez simplement changer le format d'affichage des données sans modifier le mode de stockage de ces dernières, suivez plutôt la procédure ci-après.  
   
 ### <a name="to-change-the-data-type-or-display-format-for-a-column"></a>Pour modifier le type de données ou le format d'affichage d'une colonne  
   

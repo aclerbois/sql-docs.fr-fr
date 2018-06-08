@@ -1,16 +1,14 @@
 ---
-title: "STCentroid (type de données geometry) | Microsoft Docs"
-ms.custom: 
+title: STCentroid (type de données geometry) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STCentroid_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STCentroid (geometry Data Type)
 ms.assetid: 4dc5a004-7a53-4cce-81dd-9f5e1dd0db78
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7b818474bff0f7f233eb3ee06ba1b2a8dfb8c567
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d7b15036c718297b059fc3c47bd7a2d0c20d6bc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stcentroid-geometry-data-type"></a>STCentroid (type de données geometry)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

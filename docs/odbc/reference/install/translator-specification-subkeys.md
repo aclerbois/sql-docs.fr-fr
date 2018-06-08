@@ -1,37 +1,34 @@
 ---
-title: "Traducteur spécification sous-clés | Documents Microsoft"
-ms.custom: 
+title: Traducteur spécification sous-clés | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - translator subkey [ODBC]
 - registry entries for components [ODBC], translator specification subkeys
 - translator specification subkeys [ODBC]
 - subkeys [ODBC], translator specification subkeys
 ms.assetid: 3c0edeee-d43a-4466-a177-bf2d2435707a
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 86ba311eb458c1128a611b6d1cc2ed1c71329d3f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 163add6fac863912f05378f2e799596f3ad41533
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="translator-specification-subkeys"></a>Traducteur spécification sous-clés
 Chaque convertisseur répertorié dans la sous-clé ODBC traducteurs a une sous-clé qui lui sont propres. Cette sous-clé a le même nom que la valeur correspondante sous la sous-clé traducteurs de ODBC. Les valeurs sous cette sous-clé répertorient les chemins d’accès complets de la traduction et traducteur DLL ainsi que le nombre d’utilisations. Les formats des valeurs sont comme indiqué dans le tableau suivant.  
   
-|Nom   |Type de données|data|  
+|Nom|Type de données|data|  
 |----------|---------------|----------|  
 |Convertisseur|REG_SZ|*chemin de DLL de traduction*|  
 |Programme d'installation|REG_SZ|*le programme d’installation-DLL-path.*|  

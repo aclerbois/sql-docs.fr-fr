@@ -1,32 +1,29 @@
 ---
-title: "Conformité SQL-92 | Documents Microsoft"
-ms.custom: 
+title: Conformité SQL-92 | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], SQL-92 compliance
 - desktop database drivers [ODBC], SQL-92 compliance
 - SQL-92 compliance [ODBC]
 - ODBC desktop database drivers [ODBC], SQL-92 compliance
 ms.assetid: 50c8c7df-df01-4f4d-ad62-d059cf29d73a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ad887c4653c98a6fb4cab3df498233e6d196bd8b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1d6f256f16960332de497e6a861137ca42a0480f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-92-compliance"></a>Conformité SQL-92
 Les pilotes de base de données ODBC Desktop et le moteur Microsoft Jet sous-jacente ne sont pas conformes SQL-92. Ils prennent en charge de nombreuses fonctionnalités qui ont été définies dans SQL-92. Certaines fonctionnalités prises en charge dans le pilote ne sont pas pris en charge dans SQL-92. Pour plus d’informations, consultez la *Guide du programmeur moteur Microsoft Jet de base de données*. Voici les principales différences entre les deux :  

@@ -1,16 +1,14 @@
 ---
-title: "Mise à jour des données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - IDREF type attribute [SQLXML]
@@ -29,20 +27,20 @@ helpviewer_keywords:
 - updg:before attribute
 - record updates [SQLXML]
 ms.assetid: 90ef8a33-5ae3-4984-8259-608d2f1d727f
-caps.latest.revision: 
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01df178b47bb3aac688d12e54760cd530706fd94
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e9db70d57cca76574f5f3e5e1aa77decade35392
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-data-using-xml-updategrams-sqlxml-40"></a>Mise à jour de données à l'aide de codes de mise à jour (updategrams) XML (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Lorsque vous mettez à jour les données existantes, vous devez spécifier à la fois le  **\<avant >** et  **\<après >** blocs. Les éléments spécifiés dans le  **\<avant >** et  **\<après >** blocs décrivent la modification souhaitée. Mise à jour utilise l’ou les éléments qui sont spécifié dans le  **\<avant >** bloc pour identifier les enregistrements existants dans la base de données. Les éléments correspondants dans le  **\<après >** bloc indiquent la manière dont les enregistrements doivent ressembler après l’exécution de l’opération de mise à jour. À partir de ces informations, la mise à jour crée une instruction SQL qui correspond à la  **\<après >** bloc. Le code de mise à jour (updategram) utilise ensuite cette instruction pour mettre à jour la base de données.  
+  Lorsque vous mettez à jour les données existantes, vous devez spécifier à la fois le  **\<avant >** et  **\<après >** blocs. Les éléments spécifiés dans le  **\<avant >** et  **\<après >** blocs décrivent la modification souhaitée. Mise à jour utilise l’ou les éléments qui sont spécifié dans le  **\<avant >** bloc pour identifier les enregistrements existants dans la base de données. Les éléments correspondants dans le  **\<après >** bloc indiquent la manière dont les enregistrements doivent ressembler après l’exécution de l’opération de mise à jour. À partir de ces informations, la mise à jour crée une instruction SQL qui correspond à la  **\<après >** bloc. Le code de mise à jour (updategram) utilise ensuite cette instruction pour mettre à jour la base de données.  
   
  Voici le format du code de mise à jour (updategram) pour une opération de mise à jour :  
   
@@ -95,7 +93,7 @@ Lorsque vous mettez à jour les données existantes, vous devez spécifier à la
 ## <a name="examples"></a>Exemples  
  Avant d'utiliser les exemples de code de mise à jour (updategram), notez les points suivants :  
   
--   La plupart des exemples utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour (updategram)). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+-   La plupart des exemples utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour (updategram)). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 -   La plupart des exemples sont basés sur l'exemple de base de données AdventureWorks. Toutes les mises à jour sont appliquées aux tables de cette base de données. Vous pouvez restaurer la base de données AdventureWorks.  
   
@@ -352,7 +350,7 @@ Lorsque vous mettez à jour les données existantes, vous devez spécifier à la
   
      Pour plus d’informations, consultez [à l’aide d’ADO pour exécuter des requêtes SQLXML 4.0](../../../relational-databases/sqlxml/using-ado-to-execute-sqlxml-4-0-queries.md).  
   
- Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+ Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 ### <a name="f-using-a-mapping-schema-with-idrefs-attributes"></a>F. Utilisation d'un schéma de mappage avec les attributs IDREFS  
  Cet exemple montre comment les codes de mise à jour (updategrams) utilisent les attributs IDREFS du schéma de mappage pour mettre à jour des enregistrements dans plusieurs tables. Pour cet exemple, supposez que la base de données comporte les tables suivantes :  
@@ -560,9 +558,9 @@ Lorsque vous mettez à jour les données existantes, vous devez spécifier à la
 </Schema>  
 ```  
   
- Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+ Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

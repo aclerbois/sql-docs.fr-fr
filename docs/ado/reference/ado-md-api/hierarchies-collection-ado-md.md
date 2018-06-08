@@ -1,17 +1,15 @@
 ---
-title: "Collection de hiérarchies (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Collection de hiérarchies (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Dimension::Hierarchies
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Hierarchies collection [ADO MD]
 ms.assetid: bef0fcb1-8060-4faa-84f0-3d52e9c4526f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: baba9403af996c936c65f102ae769376ccf69311
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 59a4d31189fe0a144ca43b3ee5a92e16f424e68a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hierarchies-collection-ado-md"></a>Collection de hiérarchies (ADO MD)
 Contient l’ensemble de [hiérarchie](../../../ado/reference/ado-md-api/hierarchy-object-ado-md.md) objets à partir d’une dimension.  

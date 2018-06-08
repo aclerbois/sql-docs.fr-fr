@@ -1,34 +1,33 @@
 ---
-title: "Modifications détectées dans la base de données, boîte de dialogue (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Modifications détectées dans la base de données, boîte de dialogue (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vdt.dlgbox.schema.databasechangesdetected
 - vdtsql.chm:65543
 - vdtsql.chm:65554
 ms.assetid: 91f13086-371f-46a2-9f46-804c1415f3ed
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c8b0ff1b05425ef55e68a9f49f100b9aef5cf684
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 7e63f1093a744c56e0900930b54708f15493f89e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-changes-detected-dialog-box-visual-database-tools"></a>Modifications détectées dans la base de données, boîte de dialogue (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette boîte de dialogue apparaît si vous essayez d’enregistrer un schéma de base de données ou des tables sélectionnées, mais certains des objets de la base de données qui seront affectés par l’action d’enregistrement sont devenus obsolètes pour la base de données. Le fait d'accepter les modifications indiquées dans cette boîte de dialogue met à jour la base de données pour qu'elle corresponde à votre schéma et écrase les modifications des autres utilisateurs.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Cette boîte de dialogue apparaît si vous essayez d'enregistrer un schéma de base de données ou des tables sélectionnées, mais certains des objets de la base de données qui seront affectés par l'action d'enregistrement sont devenus obsolètes pour la base de données. Le fait d'accepter les modifications indiquées dans cette boîte de dialogue met à jour la base de données pour qu'elle corresponde à votre schéma et écrase les modifications des autres utilisateurs.  
   
 > [!NOTE]  
 > Bien que vous ne puissiez pas annuler les modifications apportées à une table ou à un schéma de base de données, les modifications ne seront enregistrées dans la base de données que lorsque vous enregistrerez la table ou le schéma. Vous pouvez ignorer les modifications non enregistrées en choisissant **Non** et en fermant tous les schémas ouverts sans les enregistrer.  

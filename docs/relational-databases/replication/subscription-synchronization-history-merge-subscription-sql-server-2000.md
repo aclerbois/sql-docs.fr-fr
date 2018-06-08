@@ -1,30 +1,28 @@
 ---
-title: "Abonnement, historique de synchronisation (abonnement de fusion, SQL Server 2000) | Microsoft Docs"
-ms.custom: 
+title: Abonnement, historique de synchronisation (abonnement de fusion, SQL Server 2000) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.monitor.subscription.downlevelsynchhistory.f1
 ms.assetid: 0a0deab2-1c08-4371-9681-d9403e0236cc
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5f3a11814b1b7a00cb70882db920682d86437912
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 7e81a2210214c2223e619cac851e0913c935133c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-synchronization-history-merge-subscription-sql-server-2000"></a>Abonnement, Historique de synchronisation (Abonnement de fusion, SQL Server 2000)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

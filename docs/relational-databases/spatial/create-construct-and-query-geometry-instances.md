@@ -1,35 +1,34 @@
 ---
-title: "Créer, construire et interroger des instances geometry | Microsoft Docs"
-ms.custom: 
+title: Créer, construire et interroger des instances geometry | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - planar spatial data [SQL Server], getting started
 - geometry data type [SQL Server], getting started
 ms.assetid: c6b5c852-37d2-48d0-a8ad-e43bb80d6514
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8fac630d1dd38409a6ba9d4877d803a9f064a992
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 236a8f0c292e6bc491d84ae4532509e345713b37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-construct-and-query-geometry-instances"></a>Créer, construire et interroger des instances geometry
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Le type de données spatiales planaire, **geometry**, représente les données dans un système de coordonnées euclidien (plat). Ce type est implémenté en tant que type de données CLR (Common Language Runtime) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  Le type de données spatiales planaire, **geometry**, représente les données dans un système de coordonnées euclidien (plat). Ce type est implémenté en tant que type de données CLR (Common Language Runtime) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  Le type **geometry** est prédéfini et disponible dans chaque base de données. Vous pouvez créer des colonnes de table de type **geometry** et opérer sur les données **geometry** comme vous le feriez avec d'autres types CLR.  
   
@@ -41,7 +40,7 @@ Le type de données spatiales planaire, **geometry**, représente les données d
   
 -   [OGC Specifications, Simple Feature Access Part 2 – SQL Options (en anglais)](http://go.microsoft.com/fwlink/?LinkId=93629)  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge un sous-ensemble de la norme GML 3.1 définie dans le schéma suivant : [http://schemas.microsoft.com/sqlserver/profiles/gml/SpatialGML.xsd](http://go.microsoft.com/fwlink/?LinkId=230959).  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge un sous-ensemble de la norme GML 3.1, qui est définie dans le schéma suivant : [http://schemas.microsoft.com/sqlserver/profiles/gml/SpatialGML.xsd](http://go.microsoft.com/fwlink/?LinkId=230959).  
   
 ##  <a name="creating"></a> Création ou construction d'une nouvelle instance geometry  
   

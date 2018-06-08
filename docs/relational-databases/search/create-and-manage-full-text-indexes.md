@@ -1,30 +1,28 @@
 ---
-title: "Créer et gérer des index de recherche en texte intégral | Microsoft Docs"
-ms.custom: 
+title: Créer et gérer des index de recherche en texte intégral | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full-text indexes [SQL Server], about
 ms.assetid: f8a98486-5438-44a8-b454-9e6ecbc74f83
-caps.latest.revision: 
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 25599964a3e210e59fcbb2a1eade782e2109502b
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c69da5538488f1660dae8a3c1f56b1f7dff2e5ff
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="create-and-manage-full-text-indexes"></a>Créer et gérer des index de recherche en texte intégral
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -83,7 +81,7 @@ Pour plus d’informations, consultez [Alimenter des index de recherche en texte
     |**Colonnes**|Affiche les colonnes de table qui sont disponibles pour l'indexation de texte intégral. La ou les colonnes sélectionnées sont indexées en texte intégral. Vous pouvez sélectionner autant de colonnes disponibles que vous souhaitez inclure dans l'index de recherche en texte intégral. Pour plus d’informations, consultez [Propriétés d’index de recherche en texte intégral &#40;page Colonnes&#41;](http://msdn.microsoft.com/library/75e52edb-0d07-4393-9345-8b5af4561e35).|  
     |**Planifications**|Utilisez cette page afin de créer ou gérer des planifications pour un travail de l'Agent SQL Server qui démarre un remplissage incrémentiel de la table pour remplir l'index de recherche en texte intégral. Pour plus d’informations, consultez [Alimenter des index de recherche en texte intégral](../../relational-databases/search/populate-full-text-indexes.md).<br /><br /> Remarque : Une fois que vous avez fermé la boîte de dialogue **Propriétés d’index de recherche en texte intégral** , la planification que vous venez de créer est associée à un travail de SQL Server Agent (Démarrer le remplissage incrémentiel de la table sur *nom_base_de_données*.*nom_table*).|  
   
-6.  [!INCLUDE[clickOK](../../includes/clickok-md.md)] pour enregistrer vos modifications et fermer la boîte de dialogue **Propriétés d’index de recherche en texte intégral** .  
+6.  [!INCLUDE[clickOK](../../includes/clickok-md.md)] pour enregistrer vos modifications et fermer la boîte de dialogue **Propriétés d’index de recherche en texte intégral**.  
   
 ##  <a name="props"></a> Afficher les propriétés des colonnes et tables indexées  
  Vous pouvez faire appel à plusieurs fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], comme OBJECTPROPERTYEX, pour vous procurer la valeur de diverses propriétés d'indexation de texte intégral. Ces informations sont utiles pour administrer la recherche en texte intégral et résoudre les problèmes qui la concernent.  

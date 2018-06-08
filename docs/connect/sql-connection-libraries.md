@@ -2,26 +2,24 @@
 title: Bibliothèques de connexions de bases de données Microsoft SQL | Documents Microsoft
 description: Fournit des liens de téléchargement pour les modules qui permettent la connexion à Microsoft SQL Server et de la base de données SQL Azure, à partir d’une variété de langages de programmation du client.
 author: MightyPen
-ms.service: ''
 ms.component: connect
 ms.suite: sql
-ms.prod: sql-non-specified
-ms.prod_service: drivers
+ms.prod: sql
+ms.prod_service: connectivity
 ms.technology: dbe-data-tier-apps
 ms.custom: ''
-ms.workload: data-management
 ms.topic: article
-ms.date: 03/29/2018
+ms.date: 04/10/2018
 ms.author: genemi
-ms.openlocfilehash: c1f0f197fbc01863ab06164282d2d007c2bd8214
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 212558cc1a9715e971e19fd4e637dcd6c089e1bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connection-modules-for-microsoft-sql-databases"></a>Modules de connexion pour les bases de données Microsoft SQL
 
-Cet article fournit des liens de téléchargement pour les modules de connexion ou *pilotes* que votre programme client peut utiliser pour interagir avec [Microsoft SQL Server](../index.md)et son double dans le cloud [Azure Base de données SQL](http://docs.microsoft.com/azure/sql-database/). Les pilotes sont disponibles pour une variété de langages de programmation, en cours d’exécution sur les systèmes d’exploitation suivants :
+Cet article fournit des liens de téléchargement pour les modules de connexion ou *pilotes* que votre programme client peut utiliser pour interagir avec [Microsoft SQL Server](../relational-databases/database-features.md)et son double dans le cloud [Azure Base de données SQL](http://docs.microsoft.com/azure/sql-database/). Les pilotes sont disponibles pour une variété de langages de programmation, en cours d’exécution sur les systèmes d’exploitation suivants :
 
 - Linux (Ubuntu)
 - MacOS
@@ -54,10 +52,10 @@ although the FWLink is less precise than is http://github.com/Microsoft/msphpsql
 | Langage | Téléchargez le pilote SQL |
 | :------- | :---------------------- |
 | C# | [ADO.NET](http://www.microsoft.com/net/download/)<br /><br />[.NET core,-Ubuntu Linux](https://www.microsoft.com/net/core#Ubuntu)<br />[.NET core, pour MacOS](https://www.microsoft.com/net/core#macos)<br />[.NET core, pour Windows](https://www.microsoft.com/net/core) |
-| C++ | [ODBC](./odbc/download-odbc-driver-for-sql-server.md)<br /><br />[OLE DB](./oledb/oledb-driver-for-sql-server-programming.md) |
-| Java | [JDBC](./jdbc/microsoft-jdbc-driver-for-sql-server.md) |
+| C++ | [ODBC](./odbc/download-odbc-driver-for-sql-server.md)<br /><br />[OLE DB](https://go.microsoft.com/fwlink/?linkid=871294) |
+| Java | [JDBC](./jdbc/download-microsoft-jdbc-driver-for-sql-server.md) |
 | Node.js | [Pilote Node.js, des instructions d’installation](./node-js/step-1-configure-development-environment-for-node-js-development.md) |
-| PHP | *Système d'exploitation :*<br /><br />[Pilote Windows PHP](https://www.microsoft.com/download/details.aspx?id=55642)<br />[Linux ou macOS pilote PHP à partir de Github](http://github.com/Microsoft/msphpsql/) |
+| PHP | [PHP](./php/download-drivers-php-sql-server.md) |
 | Python | [pyodbc, des instructions d’installation](./python/pyodbc/step-1-configure-development-environment-for-pyodbc-python-development.md)<br />[Télécharger ODBC](./odbc/download-odbc-driver-for-sql-server.md) |
 | Ruby | [Pilote Ruby, des instructions d’installation](./ruby/step-1-configure-development-environment-for-ruby-development.md)<br />[Page de téléchargement Ruby](https://rubyinstaller.org/downloads/) |
 | &nbsp; | <br /> |

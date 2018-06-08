@@ -1,32 +1,33 @@
 ---
 title: SQLManageDataSources | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLManageDataSources
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLManageDataSources
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLManageDataSources
-helpviewer_keywords: SQLManageDataSources [ODBC]
+f1_keywords:
+- SQLManageDataSources
+helpviewer_keywords:
+- SQLManageDataSources [ODBC]
 ms.assetid: ac6d186f-b394-406c-94c4-c6331d1ca468
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1b10fd1109c41d1d19418ce83dd14b60488a85fd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 649d01dbea741c29d1e7d0ec6b63dfeb436caf3b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlmanagedatasources"></a>SQLManageDataSources
 **Mise en conformité**  
@@ -53,7 +54,7 @@ BOOL SQLManageDataSources(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLManageDataSources** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_REQUEST_FAILED|*Demande* a échoué|L’appel à **ConfigDSN** a échoué.|  

@@ -1,17 +1,15 @@
 ---
-title: "Déplacez le pointeur de l’enregistrement de l’exemple de jeu d’enregistrements (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Déplacez le pointeur de l’enregistrement de l’exemple de jeu d’enregistrements (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - MoveFirst method [ADO], Visual Basic example
 - MoveNext method [ADO], Visual Basic example
 ms.assetid: 31d3b083-c677-423e-8d26-a212eaeea281
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6381260176277b418c4b04a083648387495a0ebc
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f656037f5df2f8c00e05e0335d83b2be7fe8a30e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-example-vb"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, méthodes-exemple (VB)
 Cet exemple utilise le [MoveFirst](../../../ado/reference/ado-api/movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveLast](../../../ado/reference/ado-api/movefirst-movelast-movenext-and-moveprevious-methods-ado.md), [MoveNext](../../../ado/reference/ado-api/movefirst-movelast-movenext-and-moveprevious-methods-ado.md), et [MovePrevious](../../../ado/reference/ado-api/movefirst-movelast-movenext-and-moveprevious-methods-ado.md) méthodes pour déplacer le pointeur de l’enregistrement d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) selon la commande fournie. La procédure MoveAny est requise pour exécuter cette procédure.  

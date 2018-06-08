@@ -2,16 +2,15 @@
 title: Hiérarchie des autorisations (moteur de base de données) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/23/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: security
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.server.permissions.f1--May use common.permissions
 helpviewer_keywords:
@@ -22,16 +21,16 @@ helpviewer_keywords:
 - permissions [SQL Server], hierarchy
 - security [SQL Server], granting access
 ms.assetid: f6d20a55-ef03-4e14-85f9-009902889866
-caps.latest.revision: ''
+caps.latest.revision: 37
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ec778e9f024de07c05abc12ecb99d2882b055fe3
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 032b8a68e4e390c82fdf6cdc5659a9c8695f89fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="permissions-hierarchy-database-engine"></a>Hiérarchie des autorisations (moteur de base de données)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

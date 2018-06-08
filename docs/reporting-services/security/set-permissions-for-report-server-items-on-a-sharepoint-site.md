@@ -1,30 +1,28 @@
 ---
-title: "Définir des autorisations pour des éléments de serveurs de rapports sur un site SharePoint | Microsoft Docs"
-ms.custom: 
+title: Définir des autorisations pour des éléments de serveurs de rapports sur un site SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - permissions [Reporting Services], SharePoint integrated mode
 - SharePoint integration [Reporting Services], permissions
 ms.assetid: 2467c657-a3bf-4ec3-a88c-8877df19823d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1b82638222e8fcf0a0fe6867954fc1e6f38dd071
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: fbf0ecedbc5b5b698f32f3c7d5549a604a03e1f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-permissions-for-report-server-items-on-a-sharepoint-site"></a>Définir les autorisations sur les éléments de serveur de rapports sur un site SharePoint
   Si les paramètres de sécurité par défaut n'offrent pas le niveau d'accès souhaité, vous pouvez créer des niveaux d'autorisation pour fournir un accès aux opérations ou éléments spécifiques d'un serveur de rapports. Les paramètres de sécurité personnalisés peuvent s'avérer utiles si vous souhaitez restreindre l'accès à un rapport particulier.  

@@ -1,33 +1,30 @@
 ---
-title: "IsolationLevel et Mode, propriétés-exemple (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: IsolationLevel et Mode, propriétés-exemple (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Mode property [ADO], VC++ example
 - IsolationLevel property [ADO], VC++ example
 ms.assetid: 92ddec5d-e3dc-4e8e-997a-c5417cceab69
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dfb9da4ee435ef3ebbf6980f6d9dfd9822c3450d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 42663a71291a107bad179ad9ef3c614ed75b40be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="isolationlevel-and-mode-properties-example-vc"></a>IsolationLevel et Mode, propriétés-exemple (VC ++)
 Cet exemple utilise le [Mode](../../../ado/reference/ado-api/mode-property-ado.md) propriété pour ouvrir une connexion exclusive et le [IsolationLevel](../../../ado/reference/ado-api/isolationlevel-property.md) propriété pour ouvrir une transaction effectuée indépendamment des autres transactions.  
@@ -241,7 +238,7 @@ void PrintComError(_com_error &e) {
 **La psychologie des ordinateurs de cuisine - INCERTAIN**  
 **Mais il est convivial ? -popular_comp**  
 **Secrets de Silicon Valley - popular_comp**  
-**Net Etiquette -  popular_comp**  
+**Étiquette NET - popular_comp**  
 **Phobic de l’ordinateur et les personnes de Non-Phobic : Variations de comportement - self_help**  
 **Est donc la ? -self_help**  
 **Durée de vie sans craindre - self_help**  
@@ -249,7 +246,7 @@ void PrintComError(_com_error &e) {
 **Sécurité émotionnelle : Un nouvel algorithme - self_help**  
 **Ail Oignons et Leeks : cuisine des Secrets de Méditerranée - cui_traditio**  
 **50 ans dans Buckingham Palace cuisines - cui_traditio**  
-**Sushi, Anyone? -  trad_cook**   
+**Sushi, toute personne ? -cui_traditio**   
 ## <a name="see-also"></a>Voir aussi  
  [Propriété IsolationLevel](../../../ado/reference/ado-api/isolationlevel-property.md)   
  [Mode, propriété (ADO)](../../../ado/reference/ado-api/mode-property-ado.md)

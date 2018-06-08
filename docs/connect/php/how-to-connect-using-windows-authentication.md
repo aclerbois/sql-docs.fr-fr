@@ -2,29 +2,26 @@
 title: 'Comment : se connecter à l’aide de l’authentification Windows | Documents Microsoft'
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to the server, Windows Authentication
 ms.assetid: f403a4e0-b0a8-4939-9dc1-e1209626367e
-caps.latest.revision: ''
+caps.latest.revision: 35
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 7b82c96b78bb81e1b8749f6a0d3899662c54d780
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 8a1e43874edbdf5cc3ece40a141f3b32b7fe121e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-connect-using-windows-authentication"></a>Procédure : se connecter avec l’authentification Windows
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

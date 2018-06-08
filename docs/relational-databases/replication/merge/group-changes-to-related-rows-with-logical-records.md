@@ -1,32 +1,30 @@
 ---
-title: "Regrouper les modifications apportées à des lignes connexes à l’aide d’enregistrements logiques | Microsoft Docs"
-ms.custom: 
+title: Regrouper les modifications apportées à des lignes connexes à l’aide d’enregistrements logiques | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication logical records [SQL Server replication]
 - articles [SQL Server replication], logical records
 - logical records [SQL Server replication]
 ms.assetid: ad76799c-4486-4b98-9705-005433041321
-caps.latest.revision: 
+caps.latest.revision: 55
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 47547302b7d3de52a41fa20353d359271f6aafdc
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 34d50cd4327a6d6ca57cce436f3a23d711f9bd32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="group-changes-to-related-rows-with-logical-records"></a>Regrouper les modifications apportées à des lignes connexes à l'aide d'enregistrements logiques
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

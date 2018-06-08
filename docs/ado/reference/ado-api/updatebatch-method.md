@@ -1,17 +1,15 @@
 ---
-title: "Méthode UpdateBatch | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Méthode UpdateBatch | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::UpdateBatch
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - UpdateBatch method [ADO]
 ms.assetid: 23f9314c-b027-4a51-aeae-50caa2977740
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5da32525c4ff0d04c19704efd2aa04050d3db93d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 75fa802b85b1bdb9f2dcd97af8c244a41f7ec37b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updatebatch-method"></a>Méthode UpdateBatch
 Écrit toutes les mises à jour par lot en attente sur le disque.  

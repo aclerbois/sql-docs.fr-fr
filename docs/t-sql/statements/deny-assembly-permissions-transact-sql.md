@@ -1,16 +1,14 @@
 ---
-title: "DENY - Refuser des autorisations sur un assembly (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY - Refuser des autorisations sur un assembly (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,18 +17,17 @@ helpviewer_keywords:
 - DENY statement, assemblies
 - denying permissions [SQL Server], assemblies
 ms.assetid: be0896b3-f793-44c9-9390-1c6e58f33b2b
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ed5de889401fb6c0c952541242dd1656e79875e8
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 27db51ef25d9a1e4d66c9db523dbd48e5efdfcd4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-assembly-permissions-transact-sql"></a>DENY - Refuser des autorisations sur un assembly (Transact-SQL)
+# <a name="deny-assembly-permissions-transact-sql"></a>DENY - Autorisations sur un assembly (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Refuse les autorisations sur un assembly.  

@@ -1,16 +1,14 @@
 ---
-title: sp_manage_jobs_by_login (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_manage_jobs_by_login (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_manage_jobs_by_login
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_manage_jobs_by_login
 ms.assetid: 832ec15a-6e92-4eb5-8c4a-af4dba79fbaa
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2575a298f71475452dffe05b75adeaf41ac8f2fa
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 59f79ac7f0dfa72be2f63d0c3e711969f92ea93d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spmanagejobsbylogin-transact-sql"></a>sp_manage_jobs_by_login (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,13 +46,13 @@ sp_manage_jobs_by_login
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@action=** ] **'***action***'**  
+ [  **@action=** ] **'***action***'**  
  Action à entreprendre pour la connexion spécifiée. *action* est **varchar (10)**, sans valeur par défaut. Lorsque *action*est **supprimer**, **sp_manage_jobs_by_login** supprime tous les travaux détenus par *nom_connexion_propriétaire_actuel*. Lorsque *action* est **RÉAFFECTER**, tous les travaux sont affectés à *nom_connexion_nouveau_propriétaire*.  
   
- [ **@current_owner_login_name=** ] **'***current_owner_login_name***'**  
+ [  **@current_owner_login_name=** ] **'***nom_connexion_propriétaire_actuel***'**  
  Nom de connexion du propriétaire du travail actuel. *nom_connexion_propriétaire_actuel* est **sysname**, sans valeur par défaut.  
   
- [ **@new_owner_login_name=** ] **'***new_owner_login_name***'**  
+ [  **@new_owner_login_name=** ] **'***nom_connexion_nouveau_propriétaire***'**  
  Nom de connexion du nouveau propriétaire du travail. Utilisez ce paramètre uniquement si *action* est **RÉAFFECTER**. *nom_connexion_nouveau_propriétaire* est **sysname**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

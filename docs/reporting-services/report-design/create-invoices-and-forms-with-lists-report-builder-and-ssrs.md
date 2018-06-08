@@ -1,27 +1,25 @@
 ---
-title: "Créer des factures et des formulaires avec des listes (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Créer des factures et des formulaires avec des listes (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c33231a5-b3a8-42e4-95bc-d05bdf2222f5
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 47d1cf1399a788e271240f7b233115f6f3669b3a
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 6ad2d5e3e059a7f00077f5600c89bd4701d4159c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-invoices-and-forms-with-lists-report-builder-and-ssrs"></a>Créer des factures et des formulaires avec des listes (Générateur de rapports et SSRS)
   Une région de données de liste est répétée avec chaque groupe ou ligne du dataset du rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Une liste peut être utilisée pour créer des formulaires ou des rapports de forme libre, tels que des factures, ou associés à d'autres régions de données. Vous pouvez définir des listes contenant n'importe quel nombre d'éléments de rapport. Une liste peut être imbriquée  
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/09/2018
   
  ![Nouvelle liste ajoutée à partir de la boîte à outils, sélectionnée](../../reporting-services/report-design/media/rs-listtemplatenewselected.gif "Nouvelle liste ajoutée à partir de la boîte à outils, sélectionnée")  
   
- La liste avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Après avoir ajouté une liste, vous pouvez continuer à améliorer la conception en changeant le contenu ou l’apparence de la liste en spécifiant des expressions de filtre, de tri ou de groupe, ou en modifiant la façon dont la liste s’affiche sur les pages du rapport. Pour plus d’informations, consultez [Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page.md). Bien que la liste démarre avec une colonne et une ligne uniques, vous pouvez continuer ensuite à développer votre conception de liste en ajoutant des groupes de lignes ou de colonnes imbriqués ou adjacents, ou en ajoutant des lignes de détails supplémentaires. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+ La liste avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Après avoir ajouté une liste, vous pouvez continuer à améliorer la conception en changeant le contenu ou l’apparence de la liste en spécifiant des expressions de filtre, de tri ou de groupe, ou en modifiant la façon dont la liste s’affiche sur les pages du rapport. Pour plus d’informations, consultez [Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page.md). Bien que la liste démarre avec une colonne et une ligne uniques, vous pouvez continuer ensuite à développer votre conception de liste en ajoutant des groupes de lignes ou de colonnes imbriqués ou adjacents, ou en ajoutant des lignes de détails supplémentaires. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS& #41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
   
   
 ##  <a name="DisplayingLayout"></a> Affichage des données dans une disposition libre  

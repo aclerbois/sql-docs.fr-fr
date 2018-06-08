@@ -1,16 +1,14 @@
 ---
-title: sp_dbmmonitorhelpmonitoring (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_dbmmonitorhelpmonitoring (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dbmmonitorhelpmonitoring
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_dbmmonitorhelpmonitoring
 - database mirroring [SQL Server], monitoring
 ms.assetid: a085cf87-269f-454a-a146-21f80a113b72
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01570c29def0d4fb6bff1e3601e284edf0b671e0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: a97a85c63a0407d249609251eae63747fed4ad01
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdbmmonitorhelpmonitoring-transact-sql"></a>sp_dbmmonitorhelpmonitoring (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

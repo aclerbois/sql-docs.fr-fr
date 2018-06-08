@@ -1,16 +1,14 @@
 ---
-title: sys.database_mirroring_witnesses (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.database_mirroring_witnesses (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.database_mirroring_witnesses
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - sys.database_mirroring_witnesses catalog view
 - witness [SQL Server], sys.database_mirroring_witnesses catalog view
 ms.assetid: 0dd5b794-733b-4a3c-b5a4-62f9f1f0f22d
-caps.latest.revision: 
+caps.latest.revision: 46
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ce23f7d9f763bf08842a1f121c881fb5fbdcee0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 8af11f0dd540cfa9b796dd94ab34f595b76dc71c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="database-mirroring-witness-catalog-views---sysdatabasemirroringwitnesses"></a>Vues de catalogue du témoin de mise en miroir - de base de données sys.database_mirroring_witnesses
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -55,7 +52,7 @@ ms.lasthandoff: 02/03/2018
 |**family_guid**|**uniqueidentifier**|Identificateur de la famille de sauvegarde pour la base de données. Sert à détecter les états de restauration concordants.|  
 |**is_suspended**|**bit**|La mise en miroir de la base de données est suspendue.|  
 |**is_suspended_sequence_number**|**int**|Numéro de séquence de paramètre **is_suspended**.|  
-|**partner_sync_state**|**tinyint**|État de synchronisation de la session de mise en miroir :<br /><br /> 5 = les serveurs partenaires sont synchronisés. Le basculement est éventuellement possible. Pour plus d’informations sur la configuration requise pour le basculement, consultez [rôle basculement pendant une base de données mise en miroir de Session &#40; SQL Server &#41; ](../../database-engine/database-mirroring/role-switching-during-a-database-mirroring-session-sql-server.md).<br /><br /> 6 = les partenaires ne sont pas synchronisées. Le basculement n'est maintenant pas possible.|  
+|**partner_sync_state**|**tinyint**|État de synchronisation de la session de mise en miroir :<br /><br /> 5 = les serveurs partenaires sont synchronisés. Le basculement est éventuellement possible. Pour plus d’informations sur la configuration requise pour le basculement, consultez [rôle basculement durant une base de données mise en miroir de Session &#40;SQL Server&#41;](../../database-engine/database-mirroring/role-switching-during-a-database-mirroring-session-sql-server.md).<br /><br /> 6 = les partenaires ne sont pas synchronisées. Le basculement n'est maintenant pas possible.|  
 |**partner_sync_state_desc**|**nvarchar(60)**|Description de l'état de synchronisation de la session de mise en miroir :<br /><br /> SYNCHRONIZED<br /><br /> UNSYNCHRONIZED|  
   
 ## <a name="permissions"></a>Autorisations  
@@ -63,7 +60,7 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Témoin de mise en miroir de base de données](../../database-engine/database-mirroring/database-mirroring-witness.md)   
- [sys.database_mirroring &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-transact-sql.md)   
+ [Sys.database_mirroring &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-transact-sql.md)   
  [sys.database_mirroring_endpoints &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-mirroring-endpoints-transact-sql.md)   
  [Questions fréquentes (FAQ) sur l’interrogation des catalogues système SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
   

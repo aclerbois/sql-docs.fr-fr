@@ -1,28 +1,26 @@
 ---
-title: "Propriétés personnalisées des fichiers bruts | Microsoft Docs"
-ms.custom: 
+title: Propriétés personnalisées des fichiers bruts | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7e81f7e1-fac0-4b57-b145-8f1b9e4720bf
-caps.latest.revision: 
+caps.latest.revision: 6
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b007bc2aa2f8e8a2b7f9b7d3dfbfbbeece4730cf
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 66bcdd48830e2cf5b5311c34d4a8dc72b4f07ce2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="raw-file-custom-properties"></a>Propriétés personnalisées des fichiers bruts
   **Propriétés personnalisées des sources**  

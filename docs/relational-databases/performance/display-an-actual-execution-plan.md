@@ -1,36 +1,34 @@
 ---
-title: "Afficher un plan d’exécution réel | Microsoft Docs"
-ms.custom: 
+title: Afficher un plan d’exécution réel | Microsoft Docs
+ms.custom: ''
 ms.date: 08/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - displaying execution plans
 - actual execution plans
 - viewing execution plans
 - execution plans [SQL Server], displaying
 ms.assetid: 9e583a18-5f4a-4054-bfe1-4b2a76630db6
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d34a82e9ceb357fde6059e3259cb2be64a3e50d7
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 35be4c1b54060b65d328de29a7acc13326e6b25b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="display-an-actual-execution-plan"></a>Afficher un plan d'exécution réel
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Cette rubrique explique comment générer des plans d’exécution graphiques réels à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Les plans d’exécution réels sont générés une fois que les requêtes ou les lots [!INCLUDE[tsql](../../includes/tsql-md.md)] ont été exécutés. Pour cette raison, un plan d’exécution réel contient des informations d’exécution, comme des avertissements d’exécution (s’il y en a) et des métriques d’utilisation des ressources réelles. Le plan d’exécution généré affiche le plan d’exécution réel que le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] a utilisé pour exécuter les requêtes.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Cette rubrique explique comment générer des plans d'exécution graphiques réels à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Les plans d’exécution réels sont générés une fois que les requêtes ou les lots [!INCLUDE[tsql](../../includes/tsql-md.md)] ont été exécutés. Pour cette raison, un plan d’exécution réel contient des informations d’exécution, comme des avertissements d’exécution (s’il y en a) et des métriques d’utilisation des ressources réelles. Le plan d’exécution généré affiche le plan d’exécution réel que le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] a utilisé pour exécuter les requêtes.  
   
  Pour être en mesure d'utiliser cette fonction, les utilisateurs doivent bénéficier des autorisations permettant d'exécuter les requêtes [!INCLUDE[tsql](../../includes/tsql-md.md)] pour lesquelles un plan d'exécution graphique est actuellement généré. Qui plus est, les utilisateurs doivent se voir accorder l'autorisation SHOWPLAN pour toutes les bases de données référencées par la requête.  
   

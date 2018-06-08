@@ -1,30 +1,28 @@
 ---
-title: "Réglage des performances pour les serveurs de publication Oracle | Microsoft Docs"
-ms.custom: 
+title: Réglage des performances pour les serveurs de publication Oracle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Oracle publishing [SQL Server replication], performance tuning
 ms.assetid: 32c0b4ec-c166-45a3-b41e-38a30fd56813
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ceb26a1a5a6c5a9b3cc81d61896bdec55f223acf
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 0c2aed39db447588ec446f3f6cd54e118fe7d044
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="performance-tuning-for-oracle-publishers"></a>Réglage des performances pour les serveurs de publication Oracle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

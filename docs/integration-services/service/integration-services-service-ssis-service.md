@@ -1,17 +1,16 @@
 ---
 title: Service Integration Services (Service SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssiseditserverregistration.connectionproperties.f1
 - sql13.swb.connecttodts.connectionproperties.f1
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - service [Integration Services]
 - SQL Server Integration Services, service
 ms.assetid: 2c785b3b-4a0c-4df7-b5cd-23756dc87842
-caps.latest.revision: 
+caps.latest.revision: 61
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 06b632de9ef477e31de110f98a8fca4295144bb9
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bd87bb4373c0f2b455dbdc4b0b27b386a6538b32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-service-ssis-service"></a>Service Integration Services (Service SSIS)
   Les rubriques de cette section décrivent le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] , un service Windows de gestion des packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Ce service n'est pas obligatoire pour créer, enregistrer et exécuter des packages Integration Services. [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] prend en charge le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour la compatibilité avec les versions antérieures de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)].  

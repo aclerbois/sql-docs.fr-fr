@@ -1,17 +1,16 @@
 ---
-title: "Créer des tables et des index partitionnés | Microsoft Docs"
-ms.custom: 
+title: Créer des tables et des index partitionnés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: partitions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-partition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.createpartition.progress.f1
 - sql13.swb.createpartition.partitioncolumn.f1
@@ -31,19 +30,20 @@ helpviewer_keywords:
 - partition functions [SQL Server]
 - partition schemes [SQL Server]
 ms.assetid: 7641df10-1921-42a7-ba6e-4cb03b3ba9c8
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: df57d6fa660d806b38deb6730dd2152099873f15
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b5a1b3f5f8c27861818a06c780dd30ef53a4600d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-partitioned-tables-and-indexes"></a>Créer des tables et des index partitionnés
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Vous pouvez créer une table ou un index partitionnés dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Les données contenues dans des tables et des index partitionnés sont divisées horizontalement en unités qui peuvent être réparties sur plusieurs groupes de fichiers d'une base de données. Le partitionnement permet de rendre des tables et des index volumineux plus gérables et plus évolutifs.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Vous pouvez créer une table ou un index partitionné(e) dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Les données contenues dans des tables et des index partitionnés sont divisées horizontalement en unités qui peuvent être réparties sur plusieurs groupes de fichiers d'une base de données. Le partitionnement permet de rendre des tables et des index volumineux plus gérables et plus évolutifs.  
   
  La création d'une table ou d'un index partitionné(e) se produit généralement en quatre étapes :  
   

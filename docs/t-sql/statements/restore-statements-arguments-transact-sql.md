@@ -1,16 +1,14 @@
 ---
 title: Arguments RESTORE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - RESTORE statement, arguments
 - RESTORE statement
 ms.assetid: 4bfe5734-3003-4165-afd4-b1131ea26e2b
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 154
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: db010db48a42113c147751021404ac0dbc29ecaf
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: f16195a10c186e406571f65d8d79e2809f23dbad
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="restore-statements---arguments-transact-sql"></a>Instructions RESTORE – Arguments (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -72,7 +69,7 @@ ms.lasthandoff: 01/25/2018
  { *database_name* | **@***database_name_var*}  
  **Pris en charge par :**  [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md)  
   
- Base de données dans laquelle est restaurée la base complète ou le journal des transactions. S’il est fourni comme variable (**@***database_name_var*), ce nom peut être spécifié comme constante de chaîne (**@***database_name_var* = *database*_*name*) ou comme variable de type de données chaîne de caractères, sauf pour les types de données **ntext** ou **text**.  
+ Base de données dans laquelle est restaurée la base complète ou le journal des transactions. S’il est fourni comme variable (**@***database_name_var*), ce nom peut être spécifié comme constante de chaîne (**@***database_name_var* = *database*_* name*) ou comme variable de type de données chaîne de caractères, sauf pour les types de données **ntext** ou **text**.  
   
  \<file_or_filegroup_or_page> [ **,**...*n* ]  
  **Pris en charge par :**  [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md)  
@@ -81,7 +78,7 @@ ms.lasthandoff: 01/25/2018
   
  Pour une base de données qui utilise le mode de récupération simple, les options FILE et FILEGROUP sont autorisées uniquement si les fichiers ou groupes de fichiers cibles sont en lecture seule ou s’il s’agit d’une restauration PARTIAL (qui aboutit à un [groupe de fichiers obsolète](../../relational-databases/backup-restore/remove-defunct-filegroups-sql-server.md)).  
   
- Pour une base de données utilisant le mode de restauration complète ou le mode de récupération utilisant les journaux de transactions, après l'utilisation de RESTORE DATABASE pour restaurer un ou plusieurs fichiers, groupes de fichiers, et/ou pages, en général, vous devez appliquer le journal des transactions aux fichiers contenant les données restaurées ; l'application du journal assure la cohérence de ces fichiers avec le reste de la base de données. Les exceptions sont les suivantes :  
+ ?Pour une base de données utilisant le mode de restauration complète ou le mode de récupération utilisant les journaux de transactions, après l'utilisation de RESTORE DATABASE pour restaurer un ou plusieurs fichiers, groupes de fichiers, et/ou pages, en général, vous devez appliquer le journal des transactions aux fichiers contenant les données restaurées ; l'application du journal assure la cohérence de ces fichiers avec le reste de la base de données. Les exceptions sont les suivantes :  
   
 -   Si les fichiers restaurés étaient en lecture seule avant leur dernière sauvegarde, il n’est alors pas nécessaire d’appliquer un journal des transactions et l’instruction RESTORE vous informe de cette situation.  
   
@@ -98,7 +95,7 @@ FILEGROUP **=** { *logical_filegroup_name* | **@***logical_filegroup_name_var* }
 READ_WRITE_FILEGROUPS  
  Sélectionne tous les groupes de fichiers en lecture/écriture. Cette option s'avère particulièrement utile lorsque vous disposez de groupes de fichiers en lecture seule à restaurer après des groupes de fichiers en lecture/écriture et avant les groupes de fichiers en lecture seule.  
   
-PAGE = **'***file***:***page* [ **,**...*n* ]**'**  
+PAGE = **'***file***:***page* [ **,**...* n* ]**'**  
  Spécifie une liste d'une ou plusieurs pages pour une restauration de pages (disponible uniquement pour les bases de données qui utilisent le mode de restauration complète ou le mode de récupération utilisant les journaux de transactions). Les valeurs sont les suivantes :  
   
 PAGE  
@@ -135,7 +132,7 @@ FROM { \<backup_device> [ **,**...*n* ]| \<database_snapshot> } En général, sp
   
  { *logical_backup_device_name* | **@***logical_backup_device_name_var* } Correspond au nom logique, qui doit respecter les règles applicables aux identificateurs, des unités de sauvegarde créées par **sp_addumpdevice** et à partir desquelles la base de données est restaurée. S’il est fourni comme variable (**@***logical_backup_device_name_var*), le nom de l’unité de sauvegarde peut être spécifié sous la forme d’une constante de chaîne (**@***logical_backup_device_name_var* = *logical_backup_device_name*) ou d’une variable de type de données chaîne de caractères, sauf pour les types de données **ntext** ou **text**.  
   
- {DISK | TAPE } **=** { **'***physical_backup_device_name***'** | **@***physical_backup_device_name_var* } Permet la restauration de sauvegardes à partir de l’unité de disque ou de bande spécifiée. Les unités de type disque et bande doivent être spécifiées avec leur nom réel (par exemple, le chemin complet et le nom de fichier) : `DISK ='Z:\SQLServerBackups\AdventureWorks.bak'` ou `TAPE ='\\\\.\TAPE0'`. S’il est fourni comme variable (**@***physical_backukp_device_name_var*), le nom de l’unité de sauvegarde peut être spécifié sous la forme d’une constante de chaîne (**@***physical_backup_device_name_var* = '*physcial_backup_device_name*') ou d’une variable de type de données chaîne de caractères, sauf pour les types de données **ntext** ou **text**.  
+ {DISK | TAPE } **=** { **'***physical_backup_device_name***'** | **@***physical_backup_device_name_var* } Permet la restauration de sauvegardes à partir de l’unité de disque ou de bande spécifiée. Les unités de type disque et bande doivent être spécifiées avec leur nom réel (par exemple, le chemin complet et le nom de fichier) : `DISK ='Z:\SQLServerBackups\AdventureWorks.bak'` ou `TAPE ='\\\\.\TAPE0'`. S’il est fourni comme variable (**@***physical_backukp_device_name_var*), le nom de l’unité de sauvegarde peut être spécifié sous la forme d’une constante de chaîne (**@***physical_backup_device_name_var* = '* physcial_backup_device_name*') ou d’une variable de type de données chaîne de caractères, sauf pour les types de données **ntext** ou **text**.  
   
  Si vous utilisez un serveur réseau pourvu d'un nom UNC (qui doit contenir le nom de l'ordinateur), spécifiez le type d'unité DISK. Pour plus d’informations sur l’utilisation de noms UNC, consultez [Unités de sauvegarde &#40;SQL Server&#41;](../../relational-databases/backup-restore/backup-devices-sql-server.md).  
   
@@ -354,7 +351,7 @@ FILE **=**{ *backup_set_file_number* | **@***backup_set_file_number* }
   
  Spécifie le nombre total de tampons d'E/S à utiliser pour l'opération de restauration. Vous pouvez spécifier n'importe quel entier positif ; toutefois, un nombre élevé de tampons peut provoquer des erreurs liées à une insuffisance de mémoire. En effet, l'espace d'adressage virtuel peut s'avérer inapproprié dans la tâche Sqlservr.exe.  
   
- L’espace total utilisé par les mémoires tampons est déterminé par : *buffercount***\****maxtransfersize*.  
+ L’espace total utilisé par les mémoires tampons est déterminé par : *buffercount***\**** maxtransfersize*.  
   
  MAXTRANSFERSIZE **=** { *maxtransfersize* | **@***maxtransfersize_variable* }  
  **Pris en charge par :**  [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md)  
@@ -399,7 +396,7 @@ FILE **=**{ *backup_set_file_number* | **@***backup_set_file_number* }
  FILESTREAM ( DIRECTORY_NAME =*directory_name* )  
  **Pris en charge par :**  [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md) et [RESTORE VERIFYONLY](../../t-sql/statements/restore-statements-verifyonly-transact-sql.md)  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Nom de répertoire compatible avec Windows. Ce nom doit être unique parmi tous les noms de répertoire FILESTREAM au niveau de la base de données dans cette instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La comparaison d'unicité s'effectue sans respect de la casse, quels que soient les paramètres de classement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
@@ -511,7 +508,7 @@ Utilisez KEEP_REPLICATION quand vous couplez la réplication à la copie des jou
   
  Pour plus d’informations, consultez [Restaurer une base de données SQL Server jusqu’à une limite dans le temps &#40;mode de récupération complète&#41;](../../relational-databases/backup-restore/restore-a-sql-server-database-to-a-point-in-time-full-recovery-model.md).  
   
- STOPATMARK **=** { **'***mark_name***'** | **'**lsn:*lsn_number***'** } [ AFTER **'***datetime***'** ]  
+ STOPATMARK **=** { **'***mark_name***'** | **'** lsn:*lsn_number***'** } [ AFTER **'***datetime***'** ]  
  Indique une récupération à un point de récupération donné. La transaction spécifiée est incluse dans la récupération, mais elle n'est validée que si elle a été validée à l'origine lors de la véritable génération de la transaction.  
   
  RESTORE DATABASE et RESTORE LOG prennent en charge le paramètre *lsn_number*. Ce paramètre spécifie un numéro séquentiel dans le journal.  
@@ -525,7 +522,7 @@ Utilisez KEEP_REPLICATION quand vous couplez la réplication à la copie des jou
   
  Pour plus d’informations, consultez [Utiliser les transactions marquées pour récupérer des bases de données associées uniformément &#40;mode de récupération complète&#41;](../../relational-databases/backup-restore/use-marked-transactions-to-recover-related-databases-consistently.md) et [Récupérer un numéro séquentiel dans le journal &#40;SQL Server&#41;](../../relational-databases/backup-restore/recover-to-a-log-sequence-number-sql-server.md).  
   
- STOPBEFOREMARK **=** { **'***mark_name***'** | **'**lsn:*lsn_number***'** } [ AFTER **'***datetime***'** ]  
+ STOPBEFOREMARK **=** { **'***mark_name***'** | **'** lsn:*lsn_number***'** } [ AFTER **'***datetime***'** ]  
  Indique une récupération jusqu'à un point de récupération donné. La transaction spécifiée n'est pas incluse dans la récupération et est restaurée lorsque WITH RECOVERY est utilisé.  
   
  RESTORE DATABASE et RESTORE LOG prennent en charge le paramètre *lsn_number*. Ce paramètre spécifie un numéro séquentiel dans le journal.  

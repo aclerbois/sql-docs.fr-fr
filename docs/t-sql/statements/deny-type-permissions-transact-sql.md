@@ -1,16 +1,14 @@
 ---
-title: "DENY – Refuser des autorisations sur un type (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY – Refuser des autorisations sur un type (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,17 @@ helpviewer_keywords:
 - type permissions [SQL Server]
 - denying permissions [SQL Server], types
 ms.assetid: 564e3500-c567-43dc-993b-9ab50e99cf3f
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 369d9bbce84881936d8c77f52807121cbb763b18
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 227e01453dd90bdf17d67bcdfffbb9bf196c7b46
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-type-permissions-transact-sql"></a>DENY – Refuser des autorisations sur un type (Transact-SQL)
+# <a name="deny-type-permissions-transact-sql"></a>DENY – refus d'autorisations de type (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Permet de refuser des autorisations sur un type dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

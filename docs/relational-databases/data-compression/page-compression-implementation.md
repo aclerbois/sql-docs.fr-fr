@@ -1,31 +1,27 @@
 ---
-title: "Implémentation de la compression de page | Microsoft Docs"
-ms.custom: 
+title: Implémentation de la compression de page | Microsoft Docs
+ms.custom: ''
 ms.date: 06/30/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: compression
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-data-compression
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - page compression [Database Engine]
 - compression [SQL Server], page
 ms.assetid: 78c83277-1dbb-4e07-95bd-47b14d2b5cd4
-caps.latest.revision: 
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 88c9afd04b30360316f6476364831a35e23638a3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a66084e2020225bc54a2b5b4419d6221db9c5814
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="page-compression-implementation"></a>Implémentation de la compression de page
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

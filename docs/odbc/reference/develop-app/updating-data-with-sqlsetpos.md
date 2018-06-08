@@ -1,31 +1,28 @@
 ---
-title: "Mise à jour des données avec SQLSetPos | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des données avec SQLSetPos | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - updating data [ODBC], SQLSetPos
 - data updates [ODBC], SQLSetPos
 - SQLSetPos function [ODBC], updating data
 ms.assetid: e9625b59-06a0-4883-b155-b932ba7528d9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3a86647a0086c322918d8dc650d4f840b09326d6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3fecebb38d9e34a2a06fb0e5b70131cc57d8deff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-data-with-sqlsetpos"></a>Mise à jour des données avec SQLSetPos
 Les applications peuvent mettre à jour ou supprimer les lignes de l’ensemble de lignes avec **SQLSetPos**. Appel de **SQLSetPos** est une alternative pratique à la construction et l’exécution d’une instruction SQL. Il permet à un pilote ODBC prend en charge les mises à jour positionnées même lorsque la source de données ne prend pas en charge les instructions SQL positionnées. Il fait partie du paradigme de réaliser un accès de base de données au moyen d’appels de fonction.  

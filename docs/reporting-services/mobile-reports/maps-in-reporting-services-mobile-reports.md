@@ -1,27 +1,25 @@
 ---
 title: Cartes dans les rapports mobiles Reporting Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: mobile-reports
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 50658295-a71c-441e-8eba-e1ef066629c0
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 028a5103175b31e4928c474617f9c8199df0facc
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2a3c3ef34d8cbda8dea9d3b03896942d8400bbc9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maps-in-reporting-services-mobile-reports"></a>Maps in Reporting Services mobile reports
 Les cartes sont un excellent moyen de visualiser des données géographiques. [!INCLUDE[SS_MobileReptPub_Long](../../includes/ss-mobilereptpub-long.md)] offre trois types de visualisation de carte, et des cartes intégrées pour les continents ainsi qu’un certain nombre de pays. Vous pouvez également [télécharger et utiliser des cartes personnalisées](../../reporting-services/mobile-reports/custom-maps-in-reporting-services-mobile-reports.md).   

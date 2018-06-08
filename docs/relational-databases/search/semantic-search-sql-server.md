@@ -1,33 +1,30 @@
 ---
-title: "Recherche sémantique (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Recherche sémantique (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - semantic search [SQL Server]
 - semantic search [SQL Server], overview
 - statistical semantic search [SQL Server]
 - statistical semantic search [SQL Server], overview
 ms.assetid: cd8faa9d-07db-420d-93f4-a2ea7c974b97
-caps.latest.revision: 
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 962eb4b9356a9c499a55ab2f199ff166e844e8fd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: e3bb0d536a37f596b043110b2c2340f7e9cb5c3b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="semantic-search-sql-server"></a>Recherche sémantique (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

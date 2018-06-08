@@ -1,31 +1,29 @@
 ---
-title: "Exemple de propriété d’URL (VBScript) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Exemple de propriété d’URL (VBScript) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - URL property [ADO], VBScript example
 ms.assetid: 6ae5ac50-c88c-4262-b7ab-f2b3de382a0b
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f0e52c9d5d1c303c742afceb0b6e47049e649d41
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9aff5efe693204be71a94c4cae47a64d4ecfba37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="url-property-example-vbscript"></a>Exemple de propriété d’URL (VBScript)
 > [!IMPORTANT]

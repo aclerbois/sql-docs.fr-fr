@@ -1,32 +1,29 @@
 ---
-title: "Exemple de Code JScript pour retourner un jeu d’enregistrements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de Code JScript pour retourner un jeu d’enregistrements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - JScript
 helpviewer_keywords:
 - Recordset [ADO]
 ms.assetid: 74aad8a6-06cc-4a2c-811a-d78f9b741d84
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c9c767413fefb4f35e2f3ac60ebcf52323efd2b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 72710505bbe435ab7ddc52eef45b51c3dea886fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jscript-code-example-to-return-a-recordset"></a>Exemple de Code JScript pour retourner un jeu d’enregistrements
 ## <a name="jscript-code-rsjs"></a>Code JScript (rs.js)  

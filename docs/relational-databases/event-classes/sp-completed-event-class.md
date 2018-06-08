@@ -1,34 +1,30 @@
 ---
-title: "SP:Completed, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SP:Completed, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SP:Completed event class
 ms.assetid: 7636a433-5d32-4562-8f5a-694f8e2beeca
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e87b6ec0a5e7dd45cdaec7c30193c048f5380074
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5ffa857f7f501756006c2f97f84a2ed48e0b579a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="spcompleted-event-class"></a>SP:Completed, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SP:Completed indique que l'exécution de la procédure stockée s'est terminée.  
+  La classe d'événements SP:Completed indique que l'exécution de la procédure stockée s'est terminée.  
   
 ## <a name="spcompleted-event-class-data-columns"></a>Colonnes de données de la classe d'événements SP:Completed  
   

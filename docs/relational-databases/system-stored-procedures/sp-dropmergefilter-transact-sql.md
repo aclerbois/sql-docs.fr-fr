@@ -1,16 +1,15 @@
 ---
 title: sp_dropmergefilter (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dropmergefilter
 ms.assetid: 798586d7-05f3-4a5e-bea8-a34b7b52d0fd
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9890268638d5c4559d1239823699a68948aaa19f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e44ef9e0fe6dec28143a1d017da37732491d4441
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdropmergefilter-transact-sql"></a>sp_dropmergefilter (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -64,7 +62,7 @@ sp_dropmergefilter [ @publication= ] 'publication', [ @article= ] 'article'     
   
  **1** signifie que les modifications apportées à l’article de fusion peuvent invalider l’instantané n’est pas valide. Si qui est le cas, la valeur **1** autorise le nouvel instantané de se produire.  
   
- [  **@force_reinit_subscription** =] *force_reinit_subscription*  
+ [ **@force_reinit_subscription**=] *force_reinit_subscription*  
  Active ou désactive la possibilité de marquer un abonnement comme non valide. *force_reinit_subscription* est un **bits**, avec une valeur par défaut **0**.  
   
  **0** Spécifie que les modifications apportées au filtre d’article de fusion n’invalident pas les abonnements n’est pas valide.  
@@ -77,14 +75,14 @@ sp_dropmergefilter [ @publication= ] 'publication', [ @article= ] 'article'     
 ## <a name="remarks"></a>Notes  
  **sp_dropmergefilter** est utilisé dans la réplication de fusion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_dropmergefilter**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Changer les propriétés des publications et des articles](../../relational-databases/replication/publish/change-publication-and-article-properties.md)   
  [sp_addmergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergefilter-transact-sql.md)   
  [sp_changemergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergefilter-transact-sql.md)   
- [sp_helpmergefilter &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpmergefilter-transact-sql.md)   
+ [sp_helpmergefilter &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergefilter-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

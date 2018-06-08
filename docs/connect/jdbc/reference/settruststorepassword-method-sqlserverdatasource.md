@@ -1,30 +1,29 @@
 ---
-title: "Méthode setTrustStorePassword (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setTrustStorePassword (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: setTrustStorePassword Method (SQLServerDataSource)
-apilocation: setTrustStorePassword Method (SQLServerDataSource)
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- setTrustStorePassword Method (SQLServerDataSource)
+apilocation:
+- setTrustStorePassword Method (SQLServerDataSource)
 apitype: Assembly
 ms.assetid: fa87cbde-71cc-4f21-bc07-f8ba2b6a0a3f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2d4fe85b3875374e6a0dfc526998635dc38af0b2
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 2dbd22d01c5c4523fdd04a12d68b9c716fd8643d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="settruststorepassword-method-sqlserverdatasource"></a>Méthode setTrustStorePassword (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -57,7 +56,7 @@ public void setTrustStorePassword(java.lang.String trustStorePassword)
  Depuis la version 3.0 du pilote JDBC, si vous définissez SQLServerDataSource.setTrustStorePassword avant de lier les propriétés de la source de données, vous devez appeler SQLServerDataSource.setTrustStorePassword avant d'obtenir la connexion. Pour plus d’informations, consultez [SQLServerDataSource.getReference](../../../connect/jdbc/reference/getreference-method-sqlserverdatasource.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

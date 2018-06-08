@@ -1,16 +1,12 @@
 ---
-title: sys.dm_filestream_file_io_requests (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_filestream_file_io_requests (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_filestream_file_io_requests
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_filestream_file_io_requests catalog view
 ms.assetid: d41e39a5-14d5-4f3d-a2e3-a822b454c1ed
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 35d32705c8bce23a9cd46c5844fdc1a20c0cf7c3
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 0b754b3e0c2e732f7d043564013ac0e8cde3d8cd
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmfilestreamfileiorequests-transact-sql"></a>sys.dm_filestream_file_io_requests (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +42,7 @@ ms.lasthandoff: 02/03/2018
 |**request_id**|**int**|Affiche l'ID de requête unique attribué par le pilote à cette requête. N'accepte pas la valeur NULL.|  
 |**irp_id**|**int**|Affiche l'ID IRP unique. C'est utile pour identifier toutes les requêtes d'E/S associées à l'IRP donné. N'accepte pas la valeur NULL.|  
 |**handle_id**|**int**|Indique l'ID de handle de l'espace de noms. Il s'agit d'un identificateur NSO spécifique, lequel est unique dans une instance. N'accepte pas la valeur NULL.|  
-|**client_thread_id**|**varbinary(8)**|Affiche l'ID de thread de l'application cliente d'où émane la requête.<br /><br /> **\*\*Avertissement \* \***  cela est significative uniquement si l’application cliente s’exécute sur le même ordinateur que SQL Server. Lorsque l’application cliente est en cours d’exécution à distance, le **client_thread_id** affiche l’ID de thread d’un processus système qui fonctionne pour le compte du client distant.<br /><br /> Autorise la valeur NULL.|  
+|**client_thread_id**|**varbinary(8)**|Affiche l'ID de thread de l'application cliente d'où émane la requête.<br /><br /> **\*\* Avertissement \* \***  cela est significative uniquement si l’application cliente s’exécute sur le même ordinateur que SQL Server. Lorsque l’application cliente est en cours d’exécution à distance, le **client_thread_id** affiche l’ID de thread d’un processus système qui fonctionne pour le compte du client distant.<br /><br /> Autorise la valeur NULL.|  
 |**client_process_id**|**varbinary(8)**|Affiche l'ID de processus de l'application cliente si cette dernière s'exécute sur le même ordinateur que SQL Server. Pour un client distant, il s'agit de l'ID de processus système qui fonctionne pour le compte de l'application cliente. Autorise la valeur NULL.|  
 |**handle_context_address**|**varbinary(8)**|Affiche l'adresse de la structure NSO interne associée au handle du client. Autorise la valeur NULL.|  
 |**filestream_transaction_id**|**varbinary(128)**|Affiche l'ID de la transaction associée au handle donné, ainsi que toutes les requêtes associées à ce handle. Il s’agit de la valeur retournée par la **get_filestream_transaction_context** (fonction). Autorise la valeur NULL.|  
@@ -56,6 +51,6 @@ ms.lasthandoff: 02/03/2018
  requièrent l'autorisation VIEW SERVER STATE sur le serveur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [FileStream et les vues de gestion dynamique FileTable &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/filestream-and-filetable-dynamic-management-views-transact-sql.md)  
+ [FileStream et les vues de gestion dynamique FileTable &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/filestream-and-filetable-dynamic-management-views-transact-sql.md)  
   
   

@@ -1,28 +1,26 @@
 ---
 title: Le nombre de lignes de SQL (le pilote ODBC Visual FoxPro) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQL row count [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQL row count [ODBC]
 ms.assetid: 9d851f8d-94ca-47ae-a4ad-53863be2d404
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a99ed6335d59275db4eb9c831e79715b6948aedc
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 91cf4cc25ee394d02ccf899022613f6d4786c2e7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-row-count-visual-foxpro-odbc-driver"></a>Nombre de lignes de SQL (le pilote ODBC Visual FoxPro)
 > [!NOTE]  

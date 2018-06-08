@@ -1,34 +1,30 @@
 ---
-title: "TM: Commit Tran Starting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: 'TM: Commit Tran Starting, classe d’événements | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'TM: Commit Tran Starting event class'
 ms.assetid: 3e1ac37e-6093-4dc9-9e5d-4270db18b547
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: afb5b51e66e06dd230419c8f73e3e574e54aa9f1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3081c63a5f61cd94b139d9ea859e6db4f9d2ed21
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tm-commit-tran-starting-event-class"></a>TM: Commit Tran Starting, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements TM: Commit Tran Starting indique qu'une demande COMMIT TRANSACTION est en cours de démarrage. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction sera démarrée une fois la transaction actuelle validée.  
+  La classe d'événements TM: Commit Tran Starting indique qu'une demande COMMIT TRANSACTION est en cours de démarrage. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions. La colonne EventSubClass indique si une nouvelle transaction sera démarrée une fois la transaction actuelle validée.  
   
 ## <a name="tm-commit-tran-starting-event-class-data-columns"></a>Colonnes de données de la classe d'événements TM: Commit Tran Starting  
   

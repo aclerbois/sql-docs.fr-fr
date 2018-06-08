@@ -1,33 +1,23 @@
 ---
-title: "Créer et gérer des indicateurs de performance clés | Documents Microsoft"
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- sql13.asvs.bidtoolset.kpi.f1
-ms.assetid: c96026c2-4394-4c3c-986b-4c95a4421900
-caps.latest.revision: 
-author: Minewiskan
+title: Créer et gérer des indicateurs de performance clés | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b16307f79552529c2afc0c1d298c68a85ff1f2a1
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 8740cfbcf8448a0344d68e182a7cbf379c458a68
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-and-manage-kpis"></a>Créer et gérer des indicateurs de performance clés 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Cet article décrit comment créer, modifier ou supprimer un KPI (indicateur de Performance clé) dans un modèle tabulaire. Pour créer un indicateur de performance clé (KPI), sélectionnez une mesure qui donne la valeur de base de l'indicateur de performance clé. Utilisez ensuite la boîte de dialogue Indicateur de performance clé pour sélectionner une seconde mesure ou une valeur absolue qui prend une valeur cible. Vous pourrez ensuite définir des seuils d'état qui mesurent les performances entre les mesures de base et cible.  
+  Cet article décrit comment créer, modifier ou supprimer un KPI (indicateur de Performance clé) dans un modèle tabulaire. Pour créer un indicateur de performance clé (KPI), sélectionnez une mesure qui donne la valeur de base de l'indicateur de performance clé. Utilisez ensuite la boîte de dialogue Indicateur de performance clé pour sélectionner une seconde mesure ou une valeur absolue qui prend une valeur cible. Vous pourrez ensuite définir des seuils d'état qui mesurent les performances entre les mesures de base et cible.  
   
 ## <a name="tasks"></a>Tâches  
   
@@ -80,7 +70,7 @@ Cet article décrit comment créer, modifier ou supprimer un KPI (indicateur de 
 |Tendance|Alt+T|  
   
 ## <a name="see-also"></a>Voir aussi  
- [KPIs](../../analysis-services/tabular-models/kpis-ssas-tabular.md)   
+ [Indicateurs de performance clés](../../analysis-services/tabular-models/kpis-ssas-tabular.md)   
  [Mesures](../../analysis-services/tabular-models/measures-ssas-tabular.md)   
  [Créer et managemeasures](../../analysis-services/tabular-models/create-and-manage-measures-ssas-tabular.md)  
   

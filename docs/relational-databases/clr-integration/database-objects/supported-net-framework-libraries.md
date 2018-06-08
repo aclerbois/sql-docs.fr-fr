@@ -1,34 +1,32 @@
 ---
-title: "Prise en charge des bibliothèques .NET Framework | Documents Microsoft"
-ms.custom: 
+title: Prise en charge des bibliothèques .NET Framework | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - common language runtime [SQL Server], .NET Framework libraries
 - .NET Framework [CLR Integration]
 ms.assetid: 417544ff-c25c-496e-add4-2f278f8a4911
-caps.latest.revision: 
+caps.latest.revision: 25
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e9b970822a872a03fa3f2ba3044d2e8432ac595e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 24cd0f69a0167b5e742381b0e2e88f2cc84d1a2c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-net-framework-libraries"></a>Bibliothèques .NET Framework prises en charge
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Avec le CLR (Common Language Runtime) hébergé dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous pouvez créer des procédures stockées, des déclencheurs, des fonctions définies par l'utilisateur, des types définis par l'utilisateur et des agrégats définis par l'utilisateur en code managé. Avec les fonctionnalités présentes dans les bibliothèques de classes .NET Framework, vous avez accès à des classes prégénérées qui fournissent des fonctionnalités pour la manipulation de chaînes, des opérations de mathématique avancées, l'accès au fichier, le chiffrement, etc. Ces classes sont accessibles à partir de procédures stockées managées, de types définis par l'utilisateur, de déclencheurs, de fonctions définies par l'utilisateur ou d'agrégats définis par l'utilisateur, quels qu'ils soient.  
+  Avec le CLR (Common Language Runtime) hébergé dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous pouvez créer des procédures stockées, des déclencheurs, des fonctions définies par l'utilisateur, des types définis par l'utilisateur et des agrégats définis par l'utilisateur en code managé. Avec les fonctionnalités présentes dans les bibliothèques de classes .NET Framework, vous avez accès à des classes prégénérées qui fournissent des fonctionnalités pour la manipulation de chaînes, des opérations de mathématique avancées, l'accès au fichier, le chiffrement, etc. Ces classes sont accessibles à partir de procédures stockées managées, de types définis par l'utilisateur, de déclencheurs, de fonctions définies par l'utilisateur ou d'agrégats définis par l'utilisateur, quels qu'ils soient.  
   
 > [!NOTE]  
 >  Si vous effectuez la maintenance ou mettez à niveau des assemblys non pris en charge dans le Global Assembly Cache (GAC), votre application [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] peut cesser de fonctionner. Cela est dû au fait que la maintenance ou la mise à niveau de bibliothèques dans le GAC ne met pas à jour ces assemblys dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. S'il existe un assembly dans une base de données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et dans le GAC, les deux copies de l'assembly doivent être exactement les mêmes. Si ce n'est pas le cas, une erreur se produit lorsque l'assembly est utilisé par l'intégration du CLR [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Si le service ou de la mise à niveau de tous les assemblys dans le GAC qui sont également enregistrés dans la base de données, y compris les assemblys .NET Framework non pris en charge, assurez-vous également de service ou de mettre à niveau de la copie de l’assembly à l’intérieur de votre [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] bases de données avec le **ALTER ASSEMBLY** instruction. Pour plus d’informations, consultez [l’article 949080 de la Base de connaissances](http://support.microsoft.com/kb/949080).  

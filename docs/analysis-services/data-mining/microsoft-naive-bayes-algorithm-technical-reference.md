@@ -1,39 +1,23 @@
 ---
-title: "Référence technique de Microsoft Naive Bayes algorithme | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- MINIMUM_DEPENDENCY_PROBABILITY parameter
-- MAXIMUM_INPUT_ATTRIBUTES parameter
-- naive bayes model [Analysis Services]
-- Bayesian classifiers
-- naive bayes algorithms [Analysis Services]
-- MAXIMUM_OUTPUT_ATTRIBUTES parameter
-- MAXIMUM_STATES parameter
-ms.assetid: a4cd47fe-2127-4930-b18f-3edd17ee9a65
-caps.latest.revision: 
-author: Minewiskan
+title: Référence technique de Microsoft Naive Bayes algorithme | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 93884e29674fa1a96402d23e397cddb3a1fe0bef
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 900da37bf40f22f039146dfeb8219930b8661887
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-naive-bayes-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme MNB (Microsoft Naive Bayes)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’algorithme MNB ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Naive Bayes) est un algorithme de classification fourni par [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] qui est conçu pour la modélisation prédictive. Cet algorithme calcule la probabilité conditionnelle entre les colonnes d'entrée et les colonnes prédictibles, et suppose que les colonnes sont indépendantes. Naive Bayes tire son nom de cette hypothèse d'indépendance.  
+  L’algorithme MNB ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Naive Bayes) est un algorithme de classification fourni par [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] qui est conçu pour la modélisation prédictive. Cet algorithme calcule la probabilité conditionnelle entre les colonnes d'entrée et les colonnes prédictibles, et suppose que les colonnes sont indépendantes. Naive Bayes tire son nom de cette hypothèse d'indépendance.  
   
 ## <a name="implementation-of-the-microsoft-naive-bayes-algorithm"></a>Implémentation de l'algorithme MNB (Microsoft Naive Bayes)  
  Cet algorithme est informatiquement moins lourd que d’autres algorithmes [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Ainsi, il est utile pour générer rapidement des modèles d’exploration de données permettant de découvrir les relations entre les colonnes d’entrée et les colonnes prédictibles. L'algorithme prend en considération chaque paire de valeurs d'attribut d'entrée et valeurs d'attribut de sortie.  
@@ -108,6 +92,6 @@ L’algorithme MNB ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Naive Ba
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme Microsoft Naive Bayes](../../analysis-services/data-mining/microsoft-naive-bayes-algorithm.md)   
  [Exemples de requêtes de modèle Naive Bayes](../../analysis-services/data-mining/naive-bayes-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles Naive Bayes &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles Naive Bayes & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)  
   
   

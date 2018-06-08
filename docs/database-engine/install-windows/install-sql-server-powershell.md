@@ -1,27 +1,24 @@
 ---
 title: Installer SQL Server PowerShell | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 854c0b2f-02d2-46a4-a8cc-6b7a5d191cf8
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: bfd02dc1f80b6d84525734c4abfcfc953824fa1f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 11cbbd4c1dac33600330b504be11329051e371e6
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770545"
 ---
 # <a name="install-sql-server-powershell"></a>Installer SQL Server PowerShell
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

@@ -1,30 +1,29 @@
 ---
-title: "Méthode setTypeMap (SQLServerConnection) | Documents Microsoft"
-ms.custom: 
+title: Méthode setTypeMap (SQLServerConnection) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerConnection.setTypeMap
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerConnection.setTypeMap
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: bffd20a6-1310-44b0-9602-974500481fa6
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c2ca2ab24bc36412bd48681278164a5df9c82194
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: e1f2b6b67dd8f758a52f4512c19380fc38449d0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="settypemap-method-sqlserverconnection"></a>Méthode setTypeMap (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

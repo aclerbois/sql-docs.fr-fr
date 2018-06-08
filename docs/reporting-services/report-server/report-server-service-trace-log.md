@@ -1,32 +1,30 @@
 ---
 title: Journal des traces du service Report Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logs [Reporting Services], trace
 - traces [Reporting Services]
 - system information [Reporting Services]
 - versions [Reporting Services]
 ms.assetid: 2fde08b2-137d-4f4b-88e5-216030216e0d
-caps.latest.revision: "52"
+caps.latest.revision: 52
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b3afbb9788926f78a732bb42fb01ea646d9b5147
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: df621b94f8fecf5587cead165b88875b8d7dd4c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-server-service-trace-log"></a>Report Server Service Trace Log
   Les journaux des traces du serveur de rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] sont des fichiers texte ASCII qui contiennent des informations détaillées sur les opérations du service Report Server.  Ce fichier contient des informations telles que les opérations effectuées par le service web Report Server, le portail web et le traitement en arrière-plan. Le fichier journal des traces comprend des informations redondantes qui sont consignées dans d'autres fichiers journaux, ainsi que des informations qui ne se trouvent nulle part ailleurs. Les informations du journal des traces sont utiles si vous déboguez une application qui comprend un serveur de rapports, ou si vous essayez de déterminer l’origine d’un problème consigné dans le journal des événements ou le journal des exécutions. Par exemple, lors de la résolution des problèmes liés aux abonnements.  

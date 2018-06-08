@@ -1,28 +1,25 @@
 ---
-title: "Durabilité pour les tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Durabilité pour les tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d304c94d-3ab4-47b0-905d-3c8c2aba9db6
-caps.latest.revision: 
+caps.latest.revision: 28
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7a1f8dc5d75cb3a9422f67a7d4b55f96534bdbfa
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: c72b7eb24f737124754bee47ce25884cdffe9fba
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="durability-for-memory-optimized-tables"></a>Durabilité pour les tables optimisées en mémoire
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,36 +1,33 @@
 ---
-title: Groupes de scale-out PolyBase | Microsoft Docs
-ms.custom: 
+title: Groupes PolyBase de montée en puissance parallèle| Microsoft Docs
+ms.custom: ''
 ms.date: 05/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
-ms.service: 
 ms.component: polybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-polybase
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: polybase
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - PolyBase
 - PolyBase, scale-out groups
 - scale-out PolyBase
 ms.assetid: c7810135-4d63-4161-93ab-0e75e9d10ab5
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 20
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 018d765aace9ef2f46a1dd8da4e0a6c503a0d35f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 3fd249645266a7d9477e2dc098817138d8f722d0
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="polybase-scale-out-groups"></a>Groupes de scale-out PolyBase
 [!INCLUDE[appliesto-ss-xxxx-asdw-pdw-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot d’étranglement de performances lors du traitement de grands jeux de données dans Hadoop ou le stockage Blob Azure. La fonctionnalité Groupe PolyBase vous permet de créer un cluster d’instances de SQL Server pour traiter de grands jeux de données à partir de sources de données externes, telles que Hadoop ou le stockage Blob Azure, en mode scale-out pour des performances de requête optimisées.  
+  Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot d’étranglement de performances lors du traitement de gros volumes de jeux données dans Hadoop ou le stockage d’objets Blob Azure. La fonctionnalité Groupe PolyBase vous permet de créer un cluster d’instances de SQL Server pour traiter de grands volumes de jeux de données à partir de sources de données externes telles que Hadoop ou le stockage d’objets Blob Azure, sous forme de montée en puissance (scale-out) parallèle pour des performances de requête optimisées.  
   
  Consultez [Prise en main de PolyBase](../../relational-databases/polybase/get-started-with-polybase.md) et [Guide de PolyBase](../../relational-databases/polybase/polybase-guide.md).  
   
@@ -42,7 +39,7 @@ Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot 
  Le nœud principal contient l’instance de SQL Server à laquelle les requêtes PolyBase sont envoyées. Chaque groupe PolyBase ne peut avoir qu’un seul nœud principal. Un nœud principal est un regroupement logique du moteur de base de données SQL, du moteur PolyBase et du PolyBase Data Movement Service sur l’instance de SQL Server.  
   
 ### <a name="compute-node"></a>Nœud de calcul  
- Un nœud de calcul contient l’instance de SQL Server qui aide à traiter les requêtes scale-out sur des données externes. Un nœud de calcul est un regroupement logique de SQL Server et du PolyBase Data Movement Service sur l’instance de SQL Server. Un groupe PolyBase peut avoir plusieurs nœuds de calcul.  Le nœud principal et les nœuds de calcul doivent tous exécuter la même version de SQL Server.
+ Un nœud de calcul contient l’instance de SQL Server qui assiste dans le traitement des requêtes avec montée en puissance sur des données externes. Un nœud de calcul est un regroupement logique de SQL Server et du PolyBase Data Movement Service sur l’instance de SQL Server. Un groupe PolyBase peut avoir plusieurs nœuds de calcul.  Le nœud principal et les nœuds de calcul doivent tous exécuter la même version de SQL Server.
   
 ### <a name="distributed-query-processing"></a>Traitement de requêtes distribuées  
  Les requêtes PolyBase sont soumises à SQL Server sur le nœud principal. La partie de la requête qui fait référence à des tables externes est transmise au moteur PolyBase.  
@@ -56,7 +53,7 @@ Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot 
   
 ## <a name="to-configure-a-polybase-group"></a>Pour configurer un groupe PolyBase  
   
-### <a name="prerequisites"></a>Prérequis  
+### <a name="prerequisites"></a>Conditions préalables requises  
   
 -   N machines dans le même domaine  
   
@@ -66,7 +63,7 @@ Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot 
   
 1.  Installez la même version de SQL Server avec PolyBase sur N machines.  
   
-2.  Sélectionnez une instance de SQL Server en tant que nœud principal. Un nœud principal peut uniquement être désigné sur une instance exécutant SQL Server Enterprise.  
+2.  Sélectionnez une instance de SQL Server en tant que nœud principal. Un nœud principal peut uniquement être désigné sur une instance exécutant SQL Server Entreprise.  
   
 3.  Ajoutez les autres instances SQL Server comme nœuds de calcul à l’aide de [sp_polybase_join_group](../../relational-databases/system-stored-procedures/polybase-stored-procedures-sp-polybase-join-group.md).  
   
@@ -75,15 +72,15 @@ Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot 
 5.  Facultatif. Supprimez un nœud de calcul à l’aide de [sp_polybase_leave_group &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/polybase-stored-procedures-sp-polybase-leave-group.md).  
   
 ## <a name="example-walk-through"></a>Exemple de procédure  
- Cet exemple présente les étapes de configuration d’un groupe PolyBase avec :  
+ Cet exemple présente les étapes de configuration d’un groupe PolyBase à l’aide :  
   
-1.  Deux machines dans le domaine *PQTH4A* qui ont pour nom :  
+1.  de deux machines dans le domaine *PQTH4A* qui ont pour nom :  
   
     -   PQTH4A-CMP01  
   
     -   PQTH4A-CMP02  
   
-2.  Un compte de domaine : *PQTH4A\PolybaseUser*  
+2.  d’un compte de domaine : *PQTH4A\PolybaseUser*  
   
 #### <a name="step-1-install-sql-server-with-polybase-on-all-machines"></a>Étape 1 : installez SQL Server avec PolyBase sur toutes les machines.  
   
@@ -142,6 +139,6 @@ Une instance de SQL Server autonome avec PolyBase peut se transformer en goulot 
 ## <a name="see-also"></a> Voir aussi  
  [Prise en main de PolyBase](../../relational-databases/polybase/get-started-with-polybase.md)   
  [Guide de PolyBase](../../relational-databases/polybase/polybase-guide.md)   
- [Configuration de la connectivité PolyBase &#40;Transact-SQL&#41;](../../database-engine/configure-windows/polybase-connectivity-configuration-transact-sql.md)  
+ [PolyBase Connectivity Configuration (Configuration de la connectivité PolyBase) &#40;Transact-SQL&#41;](../../database-engine/configure-windows/polybase-connectivity-configuration-transact-sql.md)  
   
   

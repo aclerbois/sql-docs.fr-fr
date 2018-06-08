@@ -1,32 +1,33 @@
 ---
-title: "Découvrir SQL Server Master Data Services | Microsoft Docs"
-ms.custom: 
+title: Découvrir SQL Server Master Data Services | Microsoft Docs
+ms.custom: ''
 ms.date: 02/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 keywords:
-- "découvrez sql"
+- découvrez sql
 ms.assetid: 87516551-a3b6-4b29-928b-ddd25672a98c
-caps.latest.revision: 
+caps.latest.revision: 19
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 34d9c876e8fab97fcce0f81421d918af4741a47f
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 7282fef44ccadfa78752822ad938ba4e99ea2bf0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="learn-sql-server-master-data-services"></a>Découvrez SQL Server Master Data Services
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   
   
 ## <a name="training"></a>Formation  

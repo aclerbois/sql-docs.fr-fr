@@ -1,16 +1,13 @@
 ---
-title: sys.dm_db_xtp_index_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_xtp_index_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/29/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_db_xtp_index_stats
@@ -22,23 +19,23 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_xtp_index_stats dynamic management view
 ms.assetid: 8d0a50b8-2015-4576-930f-e3307dfc888e
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 957445215c8c5d61778639804476effaf8ace766
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e59eeea065a0346a623d929562fc554ad842e416
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdbxtpindexstats-transact-sql"></a>sys.dm_db_xtp_index_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]
 
   Contient les statistiques collectées depuis le dernier redémarrage de la base de données.  
   
- Pour plus d’informations, consultez [OLTP en mémoire &#40; optimisation en mémoire &#41;](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md) et [des recommandations pour l’utilisation d’index sur les Tables optimisées en mémoire](http://msdn.microsoft.com/library/16ef63a4-367a-46ac-917d-9eebc81ab29b).  
+ Pour plus d’informations, consultez [OLTP en mémoire &#40;optimisation en mémoire&#41; ](../../relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md) et [des recommandations pour l’utilisation d’index sur les Tables optimisées en mémoire](http://msdn.microsoft.com/library/16ef63a4-367a-46ac-917d-9eebc81ab29b).  
 
   
 |Nom de colonne|Type de données| Description|  
@@ -66,6 +63,6 @@ ms.lasthandoff: 02/03/2018
  Nécessite l'autorisation VIEW DATABASE STATE sur la base de données active.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues de gestion dynamique de Table optimisée en mémoire &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique des tables optimisées en mémoire &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
   
   

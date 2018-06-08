@@ -1,28 +1,26 @@
 ---
-title: "Se connecter à une source de données Oracle (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Se connecter à une source de données Oracle (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b0bd1f5a-34dd-4be3-9ac8-f9f87727781b
-caps.latest.revision: 
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 50fdbc0168430a4119da86582258c5dff333a1f0
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 1f15cffa118a8783b02a1d04fcd953aa4dbb14b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-an-oracle-data-source-sql-server-import-and-export-wizard"></a>Se connecter à une source de données Oracle (Assistant Importation et Exportation SQL Server)
 Cette rubrique vous montre comment se connecter à une source de données **Oracle** à partir de la page **Choisir une source de données** ou **Choisir une destination** de l’Assistant Importation et Exportation SQL Server. Vous pouvez utiliser plusieurs fournisseurs de données pour vous connecter à Oracle.

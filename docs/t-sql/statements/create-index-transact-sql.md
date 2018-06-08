@@ -1,16 +1,14 @@
 ---
 title: CREATE INDEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE INDEX
@@ -56,16 +54,16 @@ helpviewer_keywords:
 - secondary indexes [SQL Server]
 - XML indexes [SQL Server], creating
 ms.assetid: d2297805-412b-47b5-aeeb-53388349a5b9
-caps.latest.revision: 
+caps.latest.revision: 223
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 48d755dcd5257a3208c087db44df1e9fd262ddcc
-ms.sourcegitcommit: 4aeedbb88c60a4b035a49754eff48128714ad290
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 63e1b86c52c6236d4b956f93910e9adb40abef10
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-index-transact-sql"></a>CREATE INDEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -221,9 +219,9 @@ Crée un index dans lequel l'ordre logique des valeurs de clés détermine l'ord
   
  Une vue avec un index cluster unique est appelée une vue indexée. La création d'un index cluster unique sur une vue matérialise physiquement la vue. Un index cluster unique doit être créé sur une vue avant la définition de tout autre index sur cette même vue. Pour plus d’informations, consultez [Créer des vues indexées](../../relational-databases/views/create-indexed-views.md).  
   
- Créez l'index cluster avant les index non-cluster. Les index non-cluster déjà existants sur les tables sont reconstruits lors de la création d'un index cluster.  
+ Créez l'index cluster avant les index non cluster. Les index non cluster déjà existants sur les tables sont reconstruits lors de la création d'un index cluster.  
   
- Si vous ne spécifiez pas CLUSTERED, le système crée un index non-cluster.  
+ Si vous ne spécifiez pas CLUSTERED, le système crée un index non cluster.  
   
 > [!NOTE]  
 > Le niveau feuille d’un index cluster et les pages de données étant, par définition, identiques, la création d’un index cluster et l’utilisation de la clause ON *partition_scheme_name* ou ON *filegroup_name* déplace en fait une table du groupe de fichiers dans lequel la table a été créée vers le nouveau schéma de partition ou le nouveau groupe de fichiers. Avant de créer des tables ou des index sur des groupes de fichiers spécifiques, vérifiez quels sont les groupes de fichiers disponibles et s'ils disposent de suffisamment d'espace vide pour l'index.  
@@ -231,16 +229,16 @@ Crée un index dans lequel l'ordre logique des valeurs de clés détermine l'ord
  Dans certains cas, la création d'un index cluster peut activer les index précédemment désactivés. Pour plus d’informations, consultez [Activer les index et contraintes](../../relational-databases/indexes/enable-indexes-and-constraints.md) et [Désactiver les index et contraintes](../../relational-databases/indexes/disable-indexes-and-constraints.md).  
   
 **NONCLUSTERED**  
-Crée un index qui spécifie l'ordre logique d'une table. Avec un index non-cluster, l'ordre physique des lignes de données est indépendant de l'ordre indexé.  
+Crée un index qui spécifie l'ordre logique d'une table. Avec un index non cluster, l'ordre physique des lignes de données est indépendant de l'ordre indexé.  
   
- Chaque table peut comporter jusqu'à 999 index non-cluster, indépendamment de la façon dont les index sont créés : implicitement avec des contraintes PRIMARY KEY et UNIQUE ou explicitement avec CREATE INDEX.  
+ Chaque table peut comporter jusqu'à 999 index non cluster, indépendamment de la façon dont les index sont créés : implicitement avec des contraintes PRIMARY KEY et UNIQUE ou explicitement avec CREATE INDEX.  
   
- Pour les vues indexées, les index non-cluster peuvent être créés uniquement dans une vue ayant un index cluster unique déjà défini.  
+ Pour les vues indexées, les index non cluster peuvent être créés uniquement dans une vue ayant un index cluster unique déjà défini.  
   
  Sauf indication contraire, le type d’index par défaut est NONCLUSTERED.  
   
  *index_name*  
- Nom de l'index. Les noms d'index doivent être uniques dans une table ou une vue, mais ne doivent pas être nécessairement uniques dans une base de données. Les noms d’index doivent respecter les règles applicables aux [identificateurs](../../relational-databases/databases/database-identifiers.md).  
+ Nom de l'index. Les noms d'index doivent être uniques dans une table ou une vue, mais ne doivent pas être nécessairement uniques dans une base de données. Les noms d’index doivent se conformer aux règles régissant les [identificateurs](../../relational-databases/databases/database-identifiers.md).  
   
  *column*  
  Colonnes sur lesquelles l'index est basé. Spécifiez deux ou plusieurs noms de colonnes pour créer un index composite sur les valeurs combinées des colonnes spécifiées. Répertoriez les colonnes à inclure dans l’index composite, suivant l’ordre de priorité de tri, dans les parenthèses après *table_or_view_name*.  
@@ -261,7 +259,7 @@ Crée un index qui spécifie l'ordre logique d'une table. Avec un index non-clus
   
  Tous les types de données sont autorisés, à l'exception de **text**, **ntext**et **image**. L’index doit être créé ou reconstruit hors connexion (ONLINE = OFF) si l’une des colonnes non-clés spécifiées est du type de données **varchar(max)**, **nvarchar(max)** ou **varbinary(max)**.  
   
- Les colonnes calculées déterministes et précises ou imprécises peuvent être des colonnes incluses. Les colonnes calculées dérivées des types de données **image**, **ntext**, **text**, **varchar(max)**, **nvarchar(max)**, **varbinary(max)** et **xml** peuvent être incluses dans des colonnes non-clés dès lors que le type de données de la colonne calculée est autorisé comme colonne incluse. Pour plus d'informations, consultez [Index sur les colonnes calculées](../../relational-databases/indexes/indexes-on-computed-columns.md).  
+ Les colonnes calculées déterministes et précises ou imprécises peuvent être des colonnes incluses. Les colonnes calculées dérivées des types de données **image**, **ntext**, **text**, **varchar(max)**, **nvarchar(max)**, **varbinary(max)** et **xml** peuvent être incluses dans des colonnes non-clés dès lors que le type de données de la colonne calculée est autorisé comme colonne incluse. Pour plus d'informations, consultez [Indexes on Computed Columns](../../relational-databases/indexes/indexes-on-computed-columns.md).  
   
  Pour plus d’informations sur la création d’un index XML, consultez [CREATE XML INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-xml-index-transact-sql.md).  
   
@@ -299,12 +297,12 @@ ON *partition_scheme_name* **( *column_name* )**
   
  Crée l'index spécifié dans le groupe de fichiers spécifié. Si aucun emplacement n'est défini et que la table ou la vue n'est pas partitionnée, l'index utilise le même groupe de fichiers que la table ou la vue sous-jacente. Le groupe de fichiers doit déjà exister.  
   
- ON **"**default**"**  
+ ON **"** default **"**  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssCurrent](../../includes/sssdsfull-md.md)].  
   
  Crée l'index spécifié sur le groupe de fichiers par défaut.  
   
- Le terme « default », dans ce contexte, n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"**default**"** ou ON **[**default**]**. Si "default" est spécifié, l'option QUOTED_IDENTIFIER doit être activée (ON) pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+ Le terme « default », dans ce contexte, n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"** default **"** ou ON **[** default **]**. Si "default" est spécifié, l'option QUOTED_IDENTIFIER doit être activée (ON) pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
  [ FILESTREAM_ON { *filestream_filegroup_name* | *partition_scheme_name* | "NULL" } ]  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
@@ -338,7 +336,7 @@ ON *partition_scheme_name* **( *column_name* )**
   
  Depuis [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], l’objet peut être une table stockée avec un index columnstore cluster.  
   
- [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] prend en charge le format de nom en trois parties *database_name***.**[*schema_name*]**.***object_name* quand *database_name* est la base de données active, ou quand *database_name* st la base de données tempdb et qu’*object_name* commence par #.  
+ [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] prend en charge le format de nom en trois parties *database_name***.**[* schema_name *]**.***object_name* quand *database_name* est la base de données active ou quand *database_name* est la base de données tempdb et si *object_name* commence par #.  
   
  **\<relational_index_option>::=**  
   
@@ -362,7 +360,7 @@ ON *partition_scheme_name* **( *column_name* )**
  FILLFACTOR **=***fillfactor*  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
- Spécifie un pourcentage indiquant le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d'index lors de la création ou de la reconstruction de l'index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. Si *fillfactor* a la valeur 100, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] crée des index avec des pages de niveau feuille intégralement remplies.  
+ Spécifie un pourcentage indiquant le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d'index lors de la création ou de la reconstruction de l'index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. Si *fillfactor* a la valeur 100, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] crée des index avec des pages de niveau feuille intégralement remplies.  
   
  La valeur FILLFACTOR s'applique uniquement lors de la création ou de la reconstruction de l'index. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne conserve pas dynamiquement dans les pages le pourcentage d'espace libre défini. Pour afficher le facteur de remplissage, utilisez la vue de catalogue [sys.indexes](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md).  
   
@@ -374,7 +372,7 @@ ON *partition_scheme_name* **( *column_name* )**
  SORT_IN_TEMPDB = { ON | **OFF** }  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
- Spécifie si les résultats temporaires du tri doivent être stockés dans **tempdb**. La valeur par défaut est OFF.  
+ Spécifie s’il faut stocker les résultats temporaires du tri dans **tempdb**. La valeur par défaut est OFF.  
   
  ON  
  Les résultats intermédiaires du tri utilisés pour créer l’index sont stockés dans **tempdb**. Cela peut réduire le temps nécessaire pour créer un index si **tempdb** ne se trouve pas sur le même groupe de disques que la base de données utilisateur. Toutefois, une plus grande quantité d'espace disque est alors utilisée lors de la création de l'index.  
@@ -502,7 +500,7 @@ MAXDOP = *max_degree_of_parallelism*
   
  Remplace l’option de configuration **max degree of parallelism** pendant la durée de l’opération d’index. Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Utilisez MAXDOP pour limiter le nombre de processeurs utilisés dans une exécution de plan parallèle. Le nombre maximal de processeurs est égal à 64.  
   
- *max_degree_of_parallelism* peut avoir les valeurs suivantes :  
+ *max_degree_of_parallelism* peut avoir la valeur :  
   
   1  
  Supprime la création de plans parallèles.  
@@ -516,7 +514,7 @@ MAXDOP = *max_degree_of_parallelism*
  Pour plus d’informations, consultez [Configurer des opérations d’index parallèles](../../relational-databases/indexes/configure-parallel-index-operations.md).  
   
 > [!NOTE]  
-> Les opérations d’index parallèles ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Éditions et fonctionnalités prises en charge de SQL Server 2016](../../sql-server/editions-and-supported-features-for-sql-server-2016.md) et [Éditions et fonctionnalités prises en charge pour SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md).  
+> Les opérations d’index parallèles ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Éditions et fonctionnalités prises en charge de SQL Server 2016](../../sql-server/editions-and-supported-features-for-sql-server-2016.md) et [Éditions et fonctionnalités prises en charge pour SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md).  
   
  DATA_COMPRESSION  
  Spécifie l'option de compression de données pour l'index, le numéro de partition ou la plage de partitions spécifiés. Les options disponibles sont les suivantes :  
@@ -543,7 +541,7 @@ ON PARTITIONS **(** { \<partition_number_expression> | \<range> } [ **,**...*n* 
 -   Spécifiez des numéros de partition pour plusieurs partitions individuelles séparées par des virgules, par exemple : ON PARTITIONS (1, 5).  
 -   Spécifiez à la fois des plages et des partitions individuelles, par exemple ON PARTITIONS (2, 4, 6 TO 8).  
   
- \<range> peut être spécifié sous la forme de numéros de partitions séparés par le mot TO, par exemple : ON PARTITIONS (6 TO 8).  
+ \<range> peut être spécifié sous la forme de numéros de partitions séparés par le mot TO, par exemple : ON PARTITIONS (6 TO 8).  
   
  Pour définir des types différents de compression de données pour des partitions différentes, spécifiez plusieurs fois l'option DATA_COMPRESSION, par exemple :  
  
@@ -588,7 +586,7 @@ DATA_COMPRESSION = PAGE ON PARTITIONS (3, 5)
   
  Lorsque vous partitionnez un index cluster non unique, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ajoute par défaut des colonnes de partitionnement à la liste des clés d'index cluster, si elles ne sont pas déjà spécifiées.  
   
- Vous pouvez créer des vues indexées sur des tables partitionnées, en appliquant la même procédure que celle utilisée pour les index sur des tables. Pour plus d'informations sur les index partitionnés, consultez [Tables et index partitionnés](../../relational-databases/partitions/partitioned-tables-and-indexes.md).  
+ Vous pouvez créer des vues indexées sur des tables partitionnées, en appliquant la même procédure que celle utilisée pour les index sur des tables. Pour plus d'informations sur les index partitionnés, consultez [Partitioned Tables and Indexes](../../relational-databases/partitions/partitioned-tables-and-indexes.md).  
   
  Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les statistiques ne sont pas créées en analysant toutes les lignes de la table quand un index partitionné est créé ou reconstruit. Au lieu de cela, l'optimiseur de requête utilise l'algorithme d'échantillonnage par défaut pour générer des statistiques. Pour obtenir des statistiques sur les index partitionnés en analysant toutes les lignes de la table, utilisez CREATE STATISTICS ou UPDATE STATISTICS avec la clause FULLSCAN.  
   
@@ -665,7 +663,7 @@ CREATE UNIQUE CLUSTERED INDEX Idx1 ON t1(c);
 INSERT INTO t1 VALUES (1, 0);  
 ```  
   
- Pour plus d'informations, consultez [Index sur les colonnes calculées](../../relational-databases/indexes/indexes-on-computed-columns.md).  
+ Pour plus d'informations, consultez [Indexes on Computed Columns](../../relational-databases/indexes/indexes-on-computed-columns.md).  
   
 ## <a name="included-columns-in-indexes"></a>Colonnes incluses dans les index  
  Des colonnes non clés, appelées colonnes incluses, peuvent être ajoutées au niveau feuille d'un index non cluster pour améliorer les performances d'une requête en couvrant la requête. En l'occurrence, toutes les colonnes référencées dans la requête sont incluses dans l'index sous forme de colonnes clés ou de colonnes non clés. Ainsi, l'optimiseur de requête peut rechercher toutes les informations nécessaires via une analyse de l'index ; il n'accède pas à la table, ni aux données de l'index cluster. Pour plus d’informations, consultez [Créer des index avec colonnes incluses](../../relational-databases/indexes/create-indexes-with-included-columns.md).  
@@ -675,7 +673,7 @@ INSERT INTO t1 VALUES (1, 0);
   
 -   Les nouvelles options d’index peuvent être spécifiées uniquement en utilisant WITH (***option_name* = ON | OFF**).  
 -   Vous ne pouvez pas définir les options en utilisant la syntaxe de compatibilité descendante et la nouvelle syntaxe dans une même instruction. Par exemple, si vous définissez WITH (**DROP_EXISTING, ONLINE = ON**), l’instruction échoue.  
--   Quand vous créez un index XML, les options doivent être spécifiées en utilisant WITH (***option_name*= ON | OFF**).  
+-   Quand vous créez un index XML, les options doivent être spécifiées en utilisant WITH (***option_name*= ON | OFF**).  
   
 ## <a name="dropexisting-clause"></a>Clause DROP_EXISTING  
  Vous pouvez utiliser la clause DROP_EXISTING pour régénérer l'index, ajouter ou supprimer des colonnes, modifier des options, modifier l'ordre de tri des colonnes ou modifier le schéma de partition ou le groupe de fichiers.  
@@ -705,14 +703,14 @@ INSERT INTO t1 VALUES (1, 0);
  Lorsque ALLOW_ROW_LOCKS = OFF et ALLOW_PAGE_LOCK = OFF, seul un verrou de table est autorisé lors de l'accès à l'index.  
   
 ## <a name="viewing-index-information"></a>Affichage des informations sur les index  
- Pour retourner des informations sur les index, vous pouvez utiliser des vues de catalogue, des fonctions système et des procédures stockées système.  
+ Pour retourner des informations sur les index, vous pouvez utiliser des affichages catalogue, des fonctions système et des procédures stockées système.  
   
 ## <a name="data-compression"></a>Data Compression  
  La compression de données est décrite dans la rubrique [Compression de données](../../relational-databases/data-compression/data-compression.md). Voici les points clés à prendre en compte :  
   
 -   La compression permet de stocker un plus grand nombre de lignes dans une page, mais ne modifie pas la taille maximale des lignes.  
 -   Les pages non-feuille d'un index ne sont pas compressées par le biais de la compression de page, mais par le biais de la compression de ligne.  
--   Chaque index non-cluster dispose d'un paramètre de compression individuel et n'hérite pas du paramètre de compression de la table sous-jacente.  
+-   Chaque index non cluster dispose d'un paramètre de compression individuel et n'hérite pas du paramètre de compression de la table sous-jacente.  
 -   Lorsqu'un index cluster est créé sur un segment de mémoire, l'index cluster hérite de l'état de compression du segment, à moins qu'un autre état de compression soit spécifié.  
   
  Les restrictions suivantes s'appliquent aux index partitionnés :  
@@ -923,7 +921,7 @@ GO
 ```  
   
 ### <a name="i-create-an-index-with-included-non-key-columns"></a>I. Créer un index avec des colonnes (non-clés) incluses  
- L'exemple suivant crée un index non-cluster avec une colonne clé (`PostalCode`) et quatre colonnes non-clés (`AddressLine1`, `AddressLine2`, `City`, `StateProvinceID`). Une requête couverte par l'index suit. Pour afficher l’index sélectionné par l’optimiseur de requête, dans le menu **Requête** de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], sélectionnez **Inclure le plan d’exécution réel** avant d’exécuter la requête.  
+ L'exemple suivant crée un index non cluster avec une colonne clé (`PostalCode`) et quatre colonnes non clés (`AddressLine1`, `AddressLine2`, `City`, `StateProvinceID`). Une requête couverte par l'index suit. Pour afficher l’index sélectionné par l’optimiseur de requête, dans le menu **Requête** de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], sélectionnez **Inclure le plan d’exécution réel** avant d’exécuter la requête.  
   
 ```sql  
 CREATE NONCLUSTERED INDEX IX_Address_PostalCode  
@@ -937,7 +935,7 @@ GO
 ```  
   
 ### <a name="j-create-a-partitioned-index"></a>J. Créer un index partitionné  
- L'exemple suivant crée un index partitionné non-cluster sur `TransactionsPS1`, un schéma de partition existant dans la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. Cet exemple suppose que l'exemple d'index partitionné a été installé.  
+ L'exemple suivant crée un index partitionné non cluster sur `TransactionsPS1`, un schéma de partition existant dans la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. Cet exemple suppose que l'exemple d'index partitionné a été installé.  
   
 **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   

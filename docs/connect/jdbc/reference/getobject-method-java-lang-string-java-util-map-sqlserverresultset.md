@@ -1,30 +1,29 @@
 ---
-title: "Méthode getObject (java.lang.String, java.util.Map) | Documents Microsoft"
-ms.custom: 
+title: Méthode getObject (java.lang.String, java.util.Map) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSet.getObject (java.lang.String, java.util.Map)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSet.getObject (java.lang.String, java.util.Map)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 8104406b-417d-4ff5-9aca-183ee0f76762
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b5d9892d895f42792f548eb8b4d4ef23f5029bf2
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 3286cd54429926df0906394c9cd06feccc7b6af6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getobject-method-javalangstring-javautilmap-sqlserverresultset"></a>Méthode getObject (java.lang.String, java.util.Map) (SQLServerResultSet)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -43,7 +42,7 @@ public java.lang.Object getObject(java.lang.String colName,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *nom de colonne*  
+ *Nom de colonne*  
   
  A **chaîne** qui contient le nom de colonne.  
   
@@ -75,7 +74,7 @@ public java.lang.Object getObject(java.lang.String colName,
 -   Une valeur de type datetimeoffset est retournée en tant qu'objet microsoft.sql.DateTimeOffset.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode getObject &#40; SQLServerResultSet &#41;](../../../connect/jdbc/reference/getobject-method-sqlserverresultset.md)   
+ [Méthode getObject &#40;SQLServerResultSet&#41;](../../../connect/jdbc/reference/getobject-method-sqlserverresultset.md)   
  [Membres de SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-members.md)   
  [SQLServerResultSet, classe](../../../connect/jdbc/reference/sqlserverresultset-class.md)  
   

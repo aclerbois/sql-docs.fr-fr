@@ -1,32 +1,30 @@
 ---
-title: "Activer les abonnements pouvant être mis à jour pour les publications transactionnelles | Microsoft Docs"
-ms.custom: 
+title: Activer les abonnements pouvant être mis à jour pour les publications transactionnelles | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactional replication, updatable subscriptions
 - updatable subscriptions, enabling
 - subscriptions [SQL Server replication], updatable
 ms.assetid: 539d5bb0-b808-4d8c-baf4-cb6d32d2c595
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a050491d83f184a06617eba4dda7dbc45a593872
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 6c9f031139b8ebe4e3df498b3bcffb5ebc2d5368
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-updating-subscriptions-for-transactional-publications"></a>Activer les abonnements pouvant être mis à jour pour les publications transactionnelles
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

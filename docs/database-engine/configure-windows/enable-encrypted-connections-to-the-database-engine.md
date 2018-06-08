@@ -1,16 +1,14 @@
 ---
-title: "Activer les connexions chiffrées dans le moteur de base de données | Microsoft Docs"
-ms.custom: 
+title: Activer les connexions chiffrées dans le moteur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 12/21/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connections [SQL Server], encrypted
 - SSL [SQL Server]
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - installing certificates
 - security [SQL Server], encryption
 ms.assetid: e1e55519-97ec-4404-81ef-881da3b42006
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9986789b1734fb8d5651a591876043754d94efbf
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 761913c563b27ea0447b6b104d2d05b441aa70b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-encrypted-connections-to-the-database-engine"></a>Activer les connexions chiffrées dans le moteur de base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

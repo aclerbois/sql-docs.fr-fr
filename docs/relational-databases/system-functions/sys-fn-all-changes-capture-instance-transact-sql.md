@@ -1,16 +1,14 @@
 ---
-title: sys.fn_all_changes_&lt;capture_instance&gt; (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.fn_all_changes_&lt;capture_instance&gt; (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server (starting with 2008)
@@ -25,18 +23,17 @@ helpviewer_keywords:
 - fn_all_changes_<capture_instance>
 - sys.fn_all_changes_<capture_instance>
 ms.assetid: 564fae96-b88c-4f22-9338-26ec168ba6f5
-caps.latest.revision: 
+caps.latest.revision: 15
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0f8837e835a1e7ef4d8a4ecdf16adea077a9f878
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ad305781c542be9bee59eb0dce6328df8a6f603a
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="sysfnallchangesltcaptureinstancegt-transact-sql"></a>sys.fn_all_changes_&lt;capture_instance&gt; (Transact-SQL)
+# <a name="sysfnallchangesltcaptureinstancegt-transact-sql"></a>Sys.fn_all_changes_&lt;capture_instance&gt; (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Wrappers pour le **toutes les modifications** fonctions de requête. Les scripts requis pour créer ces fonctions sont générés par la procédure stockée sys.sp_cdc_generate_wrapper_function.  
@@ -96,7 +93,7 @@ fn_all_changes_<capture_instance> ('start_time' ,'end_time', '<row_filter_option
 |-----------------|-----------------|-----------------|  
 |__CDC_STARTLSN|**binary(10)**|Numéro LSN de validation de la transaction associée à la modification. Toutes les modifications validées dans la même transaction partagent le même numéro LSN de validation.|  
 |__CDC_SEQVAL|**binary(10)**|Valeur de classement utilisée pour classer les modifications de ligne dans une transaction.|  
-|\<colonnes de @column_list>|**varies**|Les colonnes qui sont identifiées dans le *column_list* l’argument de sp_cdc_generate_wrapper_function lorsqu’elle est appelée pour générer le script qui crée la fonction wrapper.|  
+|\<colonnes de @column_list>|**Varie**|Les colonnes qui sont identifiées dans le *column_list* l’argument de sp_cdc_generate_wrapper_function lorsqu’elle est appelée pour générer le script qui crée la fonction wrapper.|  
 |__CDC_OPERATION|**nvarchar(2)**|Code d'opération qui indique l'opération requise pour appliquer la ligne à l'environnement cible. Il varie en fonction de la valeur de l’argument *row_filter_option* fourni dans l’appel :<br /><br /> *row_filter_option* = 'all'<br /><br /> 'D' - opération de suppression<br /><br /> 'I' - opération d'insertion<br /><br /> 'UN' – opération de mise à jour (nouvelles valeurs)<br /><br /> *row_filter_option* = 'all update old'<br /><br /> 'D' - opération de suppression<br /><br /> 'I' - opération d'insertion<br /><br /> 'UN' – opération de mise à jour (nouvelles valeurs)<br /><br /> 'UO' – opération de mise à jour (anciennes valeurs)|  
 |\<colonnes de @update_flag_list>|**bit**|Un indicateur de bit nommé en ajoutant _uflag au nom de colonne. L’indicateur a toujours la valeur NULL quand \__CDC_OPERATION est ', 'I' ou 'UO'. Lorsque \__CDC_OPERATION est bien », il est défini à 1 si la mise à jour a produit une modification à la colonne correspondante. Sinon, il prend la valeur 0.|  
   
@@ -113,14 +110,14 @@ fn_all_changes_<capture_instance> ('start_time' ,'end_time', '<row_filter_option
   
  L'utilisation du paramètre @closed_high_end_point lors de la création du script vous permet de générer des wrappers destinés à prendre en charge une limite supérieure fermée ou une limite supérieure ouverte sur la fenêtre de requête spécifiée. Autrement dit, vous pouvez décider si les entrées qui ont une heure de validation égale à la limite supérieure de l'intervalle d'extraction doivent être incluses dans l'intervalle. Par défaut, la limite supérieure est incluse.  
   
- Le jeu de résultats retourné par le **toutes les modifications** fonction wrapper retourne le __ $start_lsn et \_ \_$seqval des colonnes de la table de modifications en tant que colonnes \__CDC_STARTLSN et \__CDC_SEQVAL, respectivement. Il suit ces avec uniquement les colonnes suivies qui apparaissent dans le  *@column_list*  paramètre lors de la génération du wrapper. Si  *@column_list*  est NULL, toutes les sources suivies, les colonnes sont renvoyées. Les colonnes sources sont suivies par une colonne d’opération, \__CDC_OPERATION, qui est une colonne d’un ou deux caractères qui identifie l’opération.  
+ Le jeu de résultats retourné par le **toutes les modifications** fonction wrapper retourne le __ $start_lsn et \_ \_$seqval des colonnes de la table de modifications en tant que colonnes \__CDC_STARTLSN et \__CDC_SEQVAL, respectivement. Il suit ces avec uniquement les colonnes suivies qui apparaissent dans le *@column_list* paramètre lors de la génération du wrapper. Si *@column_list* est NULL, toutes les sources suivies, les colonnes sont renvoyées. Les colonnes sources sont suivies par une colonne d’opération, \__CDC_OPERATION, qui est une colonne d’un ou deux caractères qui identifie l’opération.  
   
  Les indicateurs de bits sont ensuite rajoutés au jeu de résultats pour chaque colonne identifiée dans le paramètre @update_flag_list. Pour le **toutes les modifications** wrapper, les indicateurs de bits sera toujours NULL si __CDC_OPERATION est avait ', 'I' ou 'UO'. Si \__CDC_OPERATION est bien », l’indicateur a la valeur 1 ou 0, selon que l’opération de mise à jour a entraîné une modification de la colonne.  
   
  Le modèle de configuration de capture de données modifiées 'Instantiate CDC Wrapper TVFs for Schema' illustre comment utiliser la procédure stockée sp_cdc_generate_wrapper_function pour obtenir des scripts CREATE pour toutes les fonctions wrapper pour les fonctions de requêtes définies d'un schéma. Le modèle crée ensuite ces scripts. Pour plus d’informations sur les modèles, consultez [l’Explorateur de modèles](http://msdn.microsoft.com/library/b9ee55c5-bb44-4f76-90ac-792d8d83b4c8).  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys.sp_cdc_generate_wrapper_function &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-generate-wrapper-function-transact-sql.md)   
+ [Sys.sp_cdc_generate_wrapper_function &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-generate-wrapper-function-transact-sql.md)   
  [cdc.fn_cdc_get_all_changes_&#60;capture_instance&#62;  &#40;Transact-SQL&#41;](../../relational-databases/system-functions/cdc-fn-cdc-get-all-changes-capture-instance-transact-sql.md)  
   
   

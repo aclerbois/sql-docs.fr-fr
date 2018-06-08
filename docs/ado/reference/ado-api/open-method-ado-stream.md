@@ -1,17 +1,15 @@
 ---
-title: "Open (méthode) (flux ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Open (méthode) (flux ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Stream::raw_Open
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Open method [ADO]
 ms.assetid: d26f48fb-904e-4932-a245-3b4332ca1600
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b104e04c81fce3fce5cb25d175602f1b339e9ac1
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 44493854720564e241817c1b482339f9c5cbbd32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-method-ado-stream"></a>Open (méthode) (flux ADO)
 Ouvre un [flux](../../../ado/reference/ado-api/stream-object-ado.md) objet à manipuler des flux de données binaire ou texte.  

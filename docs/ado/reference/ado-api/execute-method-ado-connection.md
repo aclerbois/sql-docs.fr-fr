@@ -1,17 +1,15 @@
 ---
-title: "Execute (méthode) (connexion ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Execute (méthode) (connexion ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Connection15::Execute
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Execute method [ADO]
 ms.assetid: 03c69320-96b2-4d85-8d49-a13b13e31578
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ef36e770a2321357ed0d58153ad8e0b7493a232a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 27f99015571bd7abdad402dc0f779c04fd546a79
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-method-ado-connection"></a>Execute (méthode) (connexion ADO)
 Exécute la requête spécifiée, l’instruction SQL, une procédure stockée ou du texte spécifique au fournisseur.  
@@ -45,7 +42,7 @@ Set recordset = connection.Execute (CommandText, RecordsAffected, Options)
  Retourne un [objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md) référence d’objet.  
   
 #### <a name="parameters"></a>Paramètres  
- *CommandText*  
+ *commandText*  
  A **chaîne** valeur qui contient l’instruction SQL, procédure stockée, une URL ou spécifiques au fournisseur du texte à exécuter. **Si vous le souhaitez**, noms de table peuvent être utilisés uniquement si le fournisseur est compatible SQL. Exemple si un nom de la table « Customers » est utilisé, ADO ajoute automatiquement la syntaxe SQL Select standard pour créer et de passer « SELECT * FROM Customers » en tant qu’un [!INCLUDE[tsql](../../../includes/tsql_md.md)] instruction au fournisseur.  
   
  *RecordsAffected*  

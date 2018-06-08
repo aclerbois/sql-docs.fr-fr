@@ -1,16 +1,15 @@
 ---
 title: sp_resyncmergesubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_resyncmergesubscription
 ms.assetid: e04d464a-60ab-4b39-a710-c066025708e6
-caps.latest.revision: 
+caps.latest.revision: 19
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 676257b0429fa236780c435c934852fb7258a4b7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 35f5311da7b2d878a738695ee62a65c947f98693
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spresyncmergesubscription-transact-sql"></a>sp_resyncmergesubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,22 +50,22 @@ sp_resyncmergesubscription [ [ @publisher = ] 'publisher' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut. La valeur NULL est valide si la procédure stockée est exécutée sur le serveur de publication. Si la procédure stockée est exécutée sur l'Abonné, un serveur de publication doit être spécifié.  
   
- [  **@publisher_db**  =] **'***publisher_db***'**  
+ [ **@publisher_db** = ] **'***publisher_db***'**  
  Nom de la base de données de publication. *publisher_db* est **sysname**, avec NULL comme valeur par défaut. La valeur NULL est valide si la procédure stockée est exécutée dans la base de données de publication du serveur de publication. Si la procédure stockée est exécutée sur l'Abonné, un serveur de publication doit être spécifié.  
   
- [  **@publication**  =] **'***publication***'**  
+ [ **@publication** =] **'***publication***'**  
  Nom de la publication. *publication*est **sysname**, sans valeur par défaut.  
   
- [  **@subscriber**  =] **'***abonné***'**  
+ [ **@subscriber** =] **'***abonné***'**  
  Nom de l'Abonné. *abonné* est **sysname**, avec NULL comme valeur par défaut. La valeur NULL est valide si la procédure stockée est exécutée sur l'Abonné. Si la procédure stockée est exécutée sur le serveur de publication, un Abonné doit être spécifié.  
   
- [  **@subscriber_db**  =] **'***bd_abonné***'**  
+ [ **@subscriber_db** =] **'***bd_abonné***'**  
  Est le nom de la base de données d’abonnement. *l’argument subscription_db* est **sysname**, avec NULL comme valeur par défaut. La valeur NULL est valide si la procédure stockée est exécutée dans la base de données d'abonnement de l'Abonné. Si la procédure stockée est exécutée sur le serveur de publication, un Abonné doit être spécifié.  
   
- [  **@resync_type**  =] *resync_type*  
+ [ **@resync_type** =] *resync_type*  
  Indique quand la resynchronisation doit démarrer. *resync_type* est **int**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
@@ -87,7 +85,7 @@ sp_resyncmergesubscription [ [ @publisher = ] 'publisher' ]
   
  La valeur **0** pour le *resync_type* paramètre réapplique toutes les modifications apportées depuis l’instantané initial, peut être gourmande en ressources, mais éventuellement moins qu’une réinitialisation complète. Par exemple, si l'instantané initial a été fourni un mois auparavant, cette valeur provoque la réapplication des données du mois écoulé. Si l'instantané contient 1 gigaoctet (Go) de données et que le nombre de modifications depuis le mois dernier correspond à 2 mégaoctets (Mo) de données, il est plus efficace de réappliquer les données que de réappliquer l'ensemble de l'instantané de 1 Go.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_resyncmergesubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  

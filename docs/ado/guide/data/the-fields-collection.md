@@ -1,31 +1,28 @@
 ---
 title: La Collection de champs | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Field object [ADO], fields collection
 - Fields collection [ADO]
 ms.assetid: 574cf36e-e5f5-403b-983c-749ef93c108f
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e983573d5bcbfdf9e39ba0933a86cdbf59ae6ef2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 35be5189e20c9f028c5d73a68aab90ac502b4dfc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-fields-collection"></a>La Collection de champs
 Le **champs** collection est une des collections intrinsèques d’ADO. Une collection est un ensemble ordonné d’éléments qui peuvent être référencés en tant qu’unité. Pour plus d’informations sur les collections ADO, consultez [modèle d’objet ADO](../../../ado/guide/data/ado-objects-and-collections.md).  

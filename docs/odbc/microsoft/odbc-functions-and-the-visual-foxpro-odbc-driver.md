@@ -1,16 +1,14 @@
 ---
 title: Fonctions ODBC et le pilote ODBC Visual FoxPro | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC level 2 API functions [ODBC]
 - ODBC level 1 API functions [ODBC]
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - level 2 API functions [ODBC]
 - ODBC core level API functions [ODBC]
 ms.assetid: 512f9cee-ffad-439b-b612-b49c34c32658
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6425aced358d6883d2636b9719abf77d70c9abcc
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: bdbd0f2c54fb84f21d0a2448dcab07f22a47ae32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-functions-and-the-visual-foxpro-odbc-driver"></a>Fonctions ODBC et le pilote ODBC Visual FoxPro
 Les rubriques de cette section fournissent un bref résumé des fonctions API ODBC et des détails spécifiques à Visual FoxPro.  

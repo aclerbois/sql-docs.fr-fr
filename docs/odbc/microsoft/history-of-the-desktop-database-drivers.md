@@ -1,36 +1,33 @@
 ---
-title: "Historique des pilotes de la base de données bureau | Documents Microsoft"
-ms.custom: 
+title: Historique des pilotes de la base de données bureau | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], history
 - ODBC desktop database drivers [ODBC], history
 - desktop database drivers [ODBC], history
 ms.assetid: b4a2aff8-bde7-4bd5-8580-bc50f27311c8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6dfa1dc1b533c9e40175e9a3d29dc872344bd664
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 44d0dd0c1f460bbed2b256d89bb9e986764b5256
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="history-of-the-desktop-database-drivers"></a>Historique des pilotes de base de données de bureau
 Le tableau suivant montre l’historique de version des pilotes de base de données de bureau.  
   
-|Options de version|Date de sortie|Description|  
+|Version|Date de sortie| Description|  
 |-------------|------------------|-----------------|  
 |1.0|Août 1993|Utiliser le processeur de requêtes SIMBA produit par le logiciel de PageAhead. SIMBA a reçu des appels ODBC et des instructions SQL, le traitement en appels ISAM installables Microsoft Jet et ensuite appelée la couche de distribution Microsoft Jet ISAM pour charger et appeler le pilote ISAM installable approprié.|  
 |2|Décembre 1994|Utilisée avec ODBC 2.0, qui a considérablement augmenté la fonctionnalité ODBC. La principale modification dans la version 2.0 était que le moteur de base de données Microsoft Jet remplacé le processeur de requêtes SIMBA. Avec le moteur de base de données Microsoft Jet, les pilotes de base de données de bureau intégré plus étroitement avec la technologie de Microsoft Access et de pilotes ISAM installables de Microsoft Jet. Des améliorations importantes ont été :<br /><br /> -Prise en charge native pour les curseurs de défilement.<br />-Prise en charge native des jointures externes, les jointures hétérogènes et mettre à jour et les transactions.<br />-les versions 32 bits des pilotes pour Microsoft Windows NT.|  

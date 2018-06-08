@@ -1,17 +1,14 @@
 ---
 title: Serveurs distants | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - server management [SQL Server], remote servers
 - remote servers [SQL Server], configuring
@@ -19,20 +16,19 @@ helpviewer_keywords:
 - servers [SQL Server], remote
 - remote access option
 ms.assetid: abf0fa24-f199-4273-9a1a-e8787ac9bee1
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c3d9efd513db58e6c0e28060be339ee71ed1e2bd
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 868cd0d8d68103afe5f6e50ae1519c11c52ff0f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remote-servers"></a>Serveurs distants
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Les serveurs distants sont pris en charge dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] uniquement pour des raisons de compatibilité descendante. Il est préférable d'utiliser plutôt des serveurs liés dans les nouvelles applications. Pour plus d’informations, consultez [Serveurs liés &#40;moteur de base de données&#41;](../../relational-databases/linked-servers/linked-servers-database-engine.md).  
+  Les serveurs distants sont pris en charge dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] uniquement pour des raisons de compatibilité descendante. Il est préférable d'utiliser plutôt des serveurs liés dans les nouvelles applications. Pour plus d’informations, consultez [Serveurs liés &#40;moteur de base de données&#41;](../../relational-databases/linked-servers/linked-servers-database-engine.md).  
   
  Une configuration de serveur distant permet à un client connecté à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d’exécuter une procédure stockée sur une autre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sans qu’il soit nécessaire d’établir une connexion distincte. Le serveur auquel le client est connecté accepte donc la demande du client et l'envoie au serveur distant, pour le compte du client. Le serveur distant traite la demande et renvoie les résultats au serveur d'origine, qui à son tour transmet les résultats au client. Lors de l'élaboration d'une configuration de serveur distant, la mise en œuvre de la sécurité doit être étudiée avec soin.  
   

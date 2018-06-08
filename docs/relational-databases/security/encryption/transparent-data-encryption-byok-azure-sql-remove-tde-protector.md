@@ -1,34 +1,33 @@
 ---
-title: "PowerShell - Supprimer un protecteur TDE - Azure SQL | Microsoft Docs"
-description: "Ce guide pratique explique comment gérer un protecteur TDE potentiellement compromis pour une base de données ou un entrepôt de données Azure SQL qui utilise la fonctionnalité TDE avec prise en charge de BYOK (Apportez votre propre clé)."
-keywords: 
+title: PowerShell - Supprimer un protecteur TDE - Azure SQL | Microsoft Docs
+description: Ce guide pratique explique comment gérer un protecteur TDE potentiellement compromis pour une base de données ou un entrepôt de données Azure SQL qui utilise la fonctionnalité TDE avec prise en charge de BYOK (Apportez votre propre clé).
+keywords: ''
 services: sql-database
-documentationcenter: 
+documentationcenter: ''
 author: becczhang
 manager: craigg
-ms.prod: 
-ms.reviewer: 
+ms.prod: ''
+ms.reviewer: ''
 ms.suite: sql
 ms.prod_service: sql-database, sql-data-warehouse
 ms.service: sql-database
-ms.custom: 
+ms.custom: ''
 ms.component: security
-ms.workload: Inactive
-ms.tgt_pltfrm: 
-ms.devlang: na
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.date: 08/07/2017
 ms.author: rebeccaz
-ms.openlocfilehash: 30b08c760eff3bdeb6d264d1c9d79c375f0a09ec
-ms.sourcegitcommit: b603dcac7326bba387befe68544619e026e6a15e
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || = sqlallproducts-allversions
+ms.openlocfilehash: d83d696accde5d192c151703bb461edae06bc084
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="remove-a-transparent-data-encryption-tde-protector-using-powershell"></a>Supprimer un protecteur TDE (Transparent Data Encryption) à l’aide de PowerShell
 [!INCLUDE[appliesto-xx-asdb-asdw-xxx-md](../../../includes/appliesto-xx-asdb-asdw-xxx-md.md)]
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 - Vous devez avoir un abonnement Azure et être administrateur de cet abonnement.
 - Azure PowerShell version 4.2.0 ou ultérieure doit être installé et exécuté. 
 - Ce guide pratique suppose que vous utilisez déjà une clé Azure Key Vault comme protecteur TDE pour une base de données ou un entrepôt de données Azure SQL. Pour en savoir plus, consultez [Transparent Data Encryption avec prise en charge de BYOK](transparent-data-encryption-byok-azure-sql.md).

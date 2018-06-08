@@ -1,28 +1,26 @@
 ---
 title: PDOStatement::execute | Documents Microsoft
 ms.custom: ''
-ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.date: 05/22/2018
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c2e80566-fa41-4918-8521-cf2e05374cbd
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d42e077796f59f2ea4a628264628fbe9a68da1f4
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: dabdabb4b3a4d20884004909dfaab0272f2e9c43
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563867"
 ---
 # <a name="pdostatementexecute"></a>PDOStatement::execute
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -39,7 +37,7 @@ bool PDOStatement::execute ([ $input ] );
 #### <a name="parameters"></a>Paramètres  
 *$input*: (facultatif) tableau associatif qui contient les valeurs des marqueurs de paramètre.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
 true en cas de réussite, false dans le cas contraire.  
   
 ## <a name="remarks"></a>Notes  
@@ -79,6 +77,9 @@ while ( $row = $stmt->fetch( PDO::FETCH_ASSOC ) ){
 ?>  
 ```  
   
+> [!NOTE]
+> Il est recommandé d’utiliser des chaînes en tant qu’entrées lors de la liaison de valeurs à un [colonne decimal ou numeric](../../t-sql/data-types/decimal-and-numeric-transact-sql.md) pour vérifier la précision et l’exactitude que PHP est limitée à la précision pour [nombres à virgule flottante](http://php.net/manual/en/language.types.float.php). Va de même pour des colonnes bigint, en particulier lorsque les valeurs sont en dehors de la plage d’un [entier](../../t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql.md).
+
 ## <a name="see-also"></a>Voir aussi  
 [PDOStatement, classe](../../connect/php/pdostatement-class.md)
 

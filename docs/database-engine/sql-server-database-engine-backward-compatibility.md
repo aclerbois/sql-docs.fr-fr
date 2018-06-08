@@ -1,37 +1,35 @@
 ---
-title: "Compatibilité descendante du moteur de base de données SQL Server | Microsoft Docs"
-ms.custom: 
+title: Compatibilité descendante du moteur de base de données SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 06/12/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-engine
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backward compatibility [SQL Server], Database Engine
 - backward compatibility [Database Engine]
 - deprecation [SQL Server]
 - Database Engine [SQL Server], backward compatibility
 ms.assetid: 10de5ec6-d3cf-42ef-aa62-1bdf3fbde841
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 86369f3a423be60c73ed2024e1490e7de9c97c30
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 915f6795f3d6c1c74e66a9038c67ec820a3b6906
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-database-engine-backward-compatibility"></a>Compatibilité descendante du moteur de base de données SQL Server
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
-Les rubriques de la section consacrée à la compatibilité descendante décrivent les changements de comportement entre les différentes versions de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
+  Les rubriques de la section consacrée à la compatibilité descendante décrivent les changements de comportement entre les différentes versions de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].  
   
 |Rubrique|Description|  
 |-----------|-----------------|  

@@ -1,17 +1,14 @@
 ---
-title: sys.dm_exec_function_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_function_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016 Preview
 f1_keywords:
@@ -22,18 +19,18 @@ f1_keywords:
 helpviewer_keywords:
 - sys.dm_exec_function_stats dynamic management view
 ms.assetid: 4c3d6a02-08e4-414b-90be-36b89a0e5a3a
-caps.latest.revision: 
+caps.latest.revision: 9
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c9071315f8adebb6a889840b919f4bd50d4a8bde
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ad955c58adf7a77c1fab429657d2d8331602fb21
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sysdmexecfunctionstats-transact-sql"></a>sys.dm_exec_function_stats (Transact-SQL)
+# <a name="sysdmexecfunctionstats-transact-sql"></a>Sys.dm_exec_function_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-asdw-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-asdw-xxx-md.md)]
 
   Retourne les statistiques de performances pour les fonctions de mise en cache des agrégats. La vue retourne une ligne pour chaque plan de la fonction mise en cache, et la durée de vie de la ligne est aussi longtemps que la fonction est mis en cache. Lorsqu’une fonction est supprimée du cache, la ligne correspondante est éliminée de cette vue. À ce stade, un événement de trace SQL de statistiques de performances est déclenché comme **sys.dm_exec_query_stats**. Retourne des informations sur les fonctions scalaires, notamment les fonctions de la mémoire et de fonctions scalaires CLR. Ne retourne pas d’informations sur les fonctions table.  
@@ -77,8 +74,9 @@ ms.lasthandoff: 02/03/2018
 |**max_elapsed_time**|**bigint**|Temps maximal écoulé, en microsecondes, pour une exécution de cette fonction.|  
   
 ## <a name="permissions"></a>Autorisations  
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
   
 ## <a name="examples"></a>Exemples  
  L’exemple suivant retourne des informations sur les dix fonctions supérieure identifié par le temps moyen écoulé.  
@@ -93,11 +91,11 @@ ORDER BY [total_worker_time] DESC;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
  [sys.dm_exec_sql_text &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md)   
  [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md)   
  
  [sys.dm_exec_trigger_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-trigger-stats-transact-sql.md)   
- [sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)  
+ [Sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)  
   
   

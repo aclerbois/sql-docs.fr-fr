@@ -1,28 +1,24 @@
 ---
 title: Azure Key Vault exemple Version 6.0.0 | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/28/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+ms.assetid: ''
+caps.latest.revision: 1
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 92f70807427938ad65426edf7d3ca5708307c843
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 530d952126de09c46fffe7537e91be443f1bd4da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-key-vault-sample-version-600"></a>Version d’essai Azure Key Vault 6.0.0
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

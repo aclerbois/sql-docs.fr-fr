@@ -1,25 +1,22 @@
 ---
-title: "Configurer un cluster partagé de Red Hat Enterprise Linux pour SQL Server | Documents Microsoft"
-description: "Implémenter la haute disponibilité en configurant des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server."
+title: Configurer un cluster partagé de Red Hat Enterprise Linux pour SQL Server | Documents Microsoft
+description: Implémenter la haute disponibilité en configurant des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: dcc0a8d3-9d25-4208-8507-a5e65d2a9a15
-ms.workload: On Demand
-ms.openlocfilehash: 5263a40e37388ea9a884cafeffe2302f56f0043e
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 7ddd34e56d8f8499715c535de21ae6f23bd282b1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-red-hat-enterprise-linux-shared-disk-cluster-for-sql-server"></a>Configurer des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server
 
@@ -45,7 +42,7 @@ Les sections suivantes les différentes étapes pour configurer une solution de 
 
 ## <a name="prerequisites"></a>Configuration requise
 
-Pour terminer le scénario de bout en bout suivant, vous avez besoin de deux ordinateurs pour déployer le cluster à deux nœuds et un autre serveur pour configurer le serveur NFS. Étapes ci-dessous décrivent la configuration de ces serveurs.
+Pour terminer le scénario de bout en bout suivant, vous avez besoin de deux ordinateurs pour déployer le cluster à deux nœuds et un autre serveur pour configurer le serveur NFS. Les étapes ci-dessous décrivent la configuration de ces serveurs.
 
 ## <a name="setup-and-configure-the-operating-system-on-each-cluster-node"></a>Installer et configurer le système d’exploitation sur chaque nœud de cluster
 
@@ -57,7 +54,7 @@ La première étape consiste à configurer le système d’exploitation sur les 
 
 1. Désigner un nœud en tant que principal et l’autre comme secondaire, à des fins de configuration. Utiliser ces termes pour les éléments suivants ce guide.  
 
-1. Sur le nœud secondaire, arrêter et désactiver les SQL Server.
+1. Sur le nœud secondaire, arrêter et désactiver SQL Server.
 
    L’exemple suivant arrête et désactive les SQL Server : 
 
@@ -68,13 +65,13 @@ La première étape consiste à configurer le système d’exploitation sur les 
 > [!NOTE] 
 > Au moment de l’installation, une clé principale du serveur est généré pour l’instance de SQL Server et placées à `/var/opt/mssql/secrets/machine-key`. Sur Linux, SQL Server s’exécute toujours comme un compte local nommé mssql. S’agissant d’un compte local, son identité n’est pas partagée entre les nœuds. Par conséquent, vous devez copier la clé de chiffrement à partir du nœud principal à chaque nœud secondaire pour chaque compte mssql local puisse accéder pour déchiffrer la clé principale du serveur. 
 
-1. Sur le nœud principal, créez une connexion SQL server pour STIMULATEUR et accorder l’autorisation de connexion pour exécuter `sp_server_diagnostics`. STIMULATEUR utilise ce compte pour vérifier le nœud qui exécute SQL Server. 
+1. Sur le nœud principal, créez une connexion SQL server pour Pacemaker et accorder l’autorisation de connexion pour exécuter `sp_server_diagnostics`. STIMULATEUR utilise ce compte pour vérifier le nœud qui exécute SQL Server. 
 
    ```bash
    sudo systemctl start mssql-server
    ```
 
-   Se connecter à SQL Server `master` de la base de données avec le compte d’administrateur système et exécutez la commande suivante :
+   Se connecter à la base de données `master` de SQL Server de avec le compte sa et exécutez la commande suivante :
 
    ```bashsql
    USE [master]
@@ -85,7 +82,7 @@ La première étape consiste à configurer le système d’exploitation sur les 
    ```
    Vous pouvez aussi définir les autorisations à un niveau plus granulaire. La connexion STIMULATEUR nécessite `VIEW SERVER STATE` demander l’état d’intégrité avec sp_server_diagnostics, `setupadmin` et `ALTER ANY LINKED SERVER` pour mettre à jour le nom de l’instance FCI avec le nom de ressource en exécutant sp_dropserver et sp_addserver. 
 
-1. Sur le nœud principal, arrêtez et désactivez les SQL Server. 
+1. Sur le nœud principal, arrêtez et désactivez SQL Server. 
 
 1. Configurer le fichier hosts de chaque nœud du cluster. Le fichier d’hôte doit inclure l’adresse IP et le nom de chaque nœud de cluster. 
 
@@ -95,12 +92,12 @@ La première étape consiste à configurer le système d’exploitation sur les 
    sudo ip addr show
    ```
 
-   Définir le nom d’ordinateur sur chaque nœud. Donnez à chaque nœud un nom unique qui est de 15 caractères ou moins. Définir le nom d’ordinateur en l’ajoutant à `/etc/hosts`. Le script suivant vous permet de modifier `/etc/hosts` avec `vi`. 
+   Définir le nom d’ordinateur sur chaque nœud. Donnez à chaque nœud un nom unique de 15 caractères au maximum. Définir le nom d’ordinateur en l’ajoutant à `/etc/hosts`. Le script suivant vous permet de modifier `/etc/hosts` avec `vi`. 
 
    ```bash
    sudo vi /etc/hosts
    ```
-   L’exemple suivant `/etc/hosts` avec les ajouts de deux nœuds nommés `sqlfcivm1` et `sqlfcivm2`.
+   L’exemple suivant montre `/etc/hosts` avec les ajouts de deux nœuds nommés `sqlfcivm1` et `sqlfcivm2`.
 
    ```bash
    127.0.0.1   localhost localhost4 localhost4.localdomain4
@@ -258,7 +255,7 @@ Pour plus d’informations sur l’utilisation de NFS, voir les ressources suiva
  
 À ce stade, les deux instances de SQL Server sont configurés pour s’exécuter avec les fichiers de base de données sur le stockage partagé. L’étape suivante consiste à configurer SQL Server pour STIMULATEUR. 
 
-## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer STIMULATEUR sur chaque nœud de cluster
+## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer Pacemaker sur chaque nœud de cluster
 
 
 2. Sur les deux nœuds du cluster, créez un fichier pour stocker le nom d’utilisateur et le mot de passe SQL Server du compte de connexion Pacemaker. La commande suivante a pour effet de créer et remplir ce fichier :
@@ -271,7 +268,7 @@ Pour plus d’informations sur l’utilisation de NFS, voir les ressources suiva
    sudo chmod 600 /var/opt/mssql/secrets/passwd    
    ```
 
-3. Sur les deux nœuds de cluster, ouvrez les ports de pare-feu Pacemaker. Pour ouvrir ces ports avec `firewalld`, exécutez la commande suivante :
+3. Sur les deux nœuds de cluster, ouvrez les ports de pare-feu pour Pacemaker. Pour ouvrir ces ports avec `firewalld`, exécutez la commande suivante :
 
    ```bash
    sudo firewall-cmd --permanent --add-service=high-availability

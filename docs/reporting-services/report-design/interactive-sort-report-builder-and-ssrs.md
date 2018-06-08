@@ -1,27 +1,25 @@
 ---
-title: "Tri interactif (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Tri interactif (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 00cafed5-1a3c-4ce0-a1fb-ff1e2613f495
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 4574f1f77dacff636af04a955bfb9f94bd6a7441
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 297a60eb5e55e2f7c8c50e2e710b55364a975f6b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interactive-sort-report-builder-and-ssrs"></a>Tri interactif (Générateur de rapports et SSRS)
   Vous pouvez ajouter des boutons de tri interactifs pour permettre à un utilisateur de basculer entre l'ordre croissant et l'ordre décroissant pour les lignes d'une table ou pour les lignes et les colonnes d'une matrice. L'utilisation la plus courante du tri interactif consiste à ajouter un bouton de tri à chaque en-tête de colonne. L'utilisateur peut alors choisir la colonne en fonction de laquelle trier le contenu.  

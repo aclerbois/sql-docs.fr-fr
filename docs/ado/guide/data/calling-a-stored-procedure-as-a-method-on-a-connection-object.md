@@ -1,32 +1,29 @@
 ---
-title: "Appel d’une procédure stockée en tant que méthode sur un objet de connexion | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Appel d’une procédure stockée en tant que méthode sur un objet de connexion | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - calling stored procedures [ADO]
 - stored procedures [ADO]
 - commands [ADO]
 ms.assetid: 35ffdb79-a931-4271-a3bb-0cd804cf173e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab6ec30a05bed643b032845c6ecf9777e1a14453
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e8ee4412d5eba44d324cd11432c2bbe33e3310b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="calling-a-stored-procedure-as-a-method-on-a-connection-object"></a>Appel d’une procédure stockée en tant que méthode sur un objet de connexion
 Vous pouvez appeler une procédure stockée comme s’il s’agissait d’une méthode native à l’ouverture associé **connexion** objet. Cela revient à appeler une commande nommée sur le **connexion** objet.  

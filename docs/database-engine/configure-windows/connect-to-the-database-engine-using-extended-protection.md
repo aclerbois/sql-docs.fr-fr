@@ -1,16 +1,14 @@
 ---
-title: "Se connecter au moteur de base de données à l’aide de la protection étendue | Microsoft Docs"
-ms.custom: 
+title: Se connecter au moteur de base de données à l’aide de la protection étendue | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - spoofing attacks
 - service binding
@@ -19,19 +17,19 @@ helpviewer_keywords:
 - channel binding
 - Extended Protection
 ms.assetid: ecfd783e-7dbb-4a6c-b5ab-c6c27d5dd57f
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d5bf850e985baccb1d16d77697ea7cd2611af222
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: f0eae05397ebe6ce2c73841e9c27746e9a946dfc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-the-database-engine-using-extended-protection"></a>Se connecter au moteur de base de données à l'aide de la protection étendue
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la **protection étendue** depuis [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]. La**protection étendue de l'authentification** est une fonctionnalité des composants réseau implémentée par le système d'exploitation. La**protection étendue** est prise en charge dans Windows 7 et Windows Server 2008 R2. La**protection étendue** figure dans les Service Packs pour les systèmes d'exploitation [!INCLUDE[msCoName](../../includes/msconame-md.md)] plus anciens. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est plus sécurisé lorsque les connexions sont établies à l'aide de la **protection étendue**.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la **protection étendue** depuis [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)]. La**protection étendue de l'authentification** est une fonctionnalité des composants réseau implémentée par le système d'exploitation. La**protection étendue** est prise en charge dans Windows 7 et Windows Server 2008 R2. La**protection étendue** figure dans les Service Packs pour les systèmes d'exploitation [!INCLUDE[msCoName](../../includes/msconame-md.md)] plus anciens. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est plus sécurisé lorsque les connexions sont établies à l'aide de la **protection étendue**.  
   
 > [!IMPORTANT]  
 >  Windows n'active pas la **protection étendue** par défaut. Pour plus d'informations sur l'activation de la **protection étendue** dans Windows, consultez [Protection étendue de l'authentification](http://support.microsoft.com/kb/968389)  
@@ -91,7 +89,7 @@ ms.lasthandoff: 01/18/2018
   
 1.  Dans le menu **Démarrer** , cliquez sur **Tous les programmes**, pointez sur **Microsoft SQL Server** , puis cliquez sur **Gestionnaire de configuration SQL Server**.  
   
-2.  Développez **Configuration du réseau SQL Server**, cliquez avec le bouton droit sur **Protocoles pour** *\<*nom_instance*>*, puis cliquez sur **Propriétés**.  
+2.  Développez **Configuration du réseau SQL Server**, cliquez avec le bouton droit sur **Protocoles pour** *\<* nom_instance*>*, puis cliquez sur **Propriétés**.  
   
 3.  Pour la liaison de service et la liaison de canal, sous l'onglet **Avancé** , affectez le paramètre approprié à **Protection étendue** .  
   

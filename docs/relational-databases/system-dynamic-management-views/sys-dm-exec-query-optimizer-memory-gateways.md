@@ -1,17 +1,15 @@
 ---
-title: sys.dm_exec_query_optimizer_memory_gateways (Transact-SQL) | Microsoft Docs
-description: "Retourne l’état actuel de sémaphores de ressource utilisé pour limiter l’optimisation des requêtes simultanées"
-ms.custom: 
+title: Sys.dm_exec_query_optimizer_memory_gateways (Transact-SQL) | Documents Microsoft
+description: Retourne l’état actuel de sémaphores de ressource utilisé pour limiter l’optimisation des requêtes simultanées
+ms.custom: ''
 ms.date: 04/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_query_optimizer_memory_gateways_TSQL
@@ -25,12 +23,12 @@ helpviewer_keywords:
 author: josack
 ms.author: josack
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b65e22d1cd2f403e2ed3aa1bd1dc14faa90079b9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b9d36c4a67fab2f9f7c867a3ba6b7e7d01fc5d29
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecqueryoptimizermemorygateways-transact-sql"></a>sys.dm_exec_query_optimizer_memory_gateways (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -45,7 +43,7 @@ Retourne l’état actuel des sémaphores de ressource utilisé pour limiter l�
 |**active_count**|**int**|Le nombre actuellement actif de compilations de cette porte|
 |**waiter_count**|**int**|Le nombre d’objets waiter de cette porte|
 |**threshold_factor**|**bigint**|Facteur de seuil qui définit la partie de la mémoire maximale utilisée par l’optimisation des requêtes.  Pour la passerelle petite, threshold_factor indique l’utilisation de mémoire optimiseur maximale en octets pour une requête avant qu’il soit nécessaire pour obtenir un accès dans la passerelle small.  Pour la passerelle moyenne et grande threshold_factor montre la partie de la mémoire totale du serveur disponible pour cette porte. Il est utilisé en tant que diviseur lors du calcul du seuil d’utilisation de mémoire pour la porte.|
-|**threshold**|**bigint**|Mémoire de seuil suivante en octets.  La requête est nécessaire pour accéder à cette passerelle si sa consommation de mémoire atteint ce seuil.  « -1 » si la requête n’est pas nécessaire pour un accès à cette passerelle.|
+|**Seuil**|**bigint**|Mémoire de seuil suivante en octets.  La requête est nécessaire pour accéder à cette passerelle si sa consommation de mémoire atteint ce seuil.  « -1 » si la requête n’est pas nécessaire pour un accès à cette passerelle.|
 |**is_active**|**bit**|Indique si la requête est requis pour passer de la porte en cours ou non.|
 
 
@@ -75,6 +73,6 @@ FROM sys.dm_exec_query_optimizer_memory_gateways;
 
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](./system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](./execution-related-dynamic-management-views-and-functions-transact-sql.md)  
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](./execution-related-dynamic-management-views-and-functions-transact-sql.md)  
 [L’utilisation de la commande DBCC MEMORYSTATUS pour surveiller l’utilisation de mémoire sur SQL Server 2005](https://support.microsoft.com/help/907877/how-to-use-the-dbcc-memorystatus-command-to-monitor-memory-usage-on-sql-server-2005)
 [attend de compilation de requête de grande taille sur RESOURCE_SEMAPHORE_QUERY_COMPILE dans SQL Server 2014](https://support.microsoft.com/help/3024815/large-query-compilation-waits-on-resource-semaphore-query-compile-in-sql-server-2014)

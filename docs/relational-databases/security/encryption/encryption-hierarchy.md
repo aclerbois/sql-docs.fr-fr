@@ -1,17 +1,16 @@
 ---
-title: "Hiérarchie de chiffrement | Microsoft Docs"
-ms.custom: 
+title: Hiérarchie de chiffrement | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - encryption [SQL Server], hierarchies
 - cryptography [SQL Server], hierarchies
@@ -19,19 +18,20 @@ helpviewer_keywords:
 - security [SQL Server], encryption
 - hierarchies [SQL Server], encryption
 ms.assetid: 96c276d5-1bba-4e95-b678-10f059f1fbcf
-caps.latest.revision: 
+caps.latest.revision: 41
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 873a266bd722f6e5337abe94f615e2e82ea0e278
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2fa951e3b015c1d28d83c965218a5ef2ca4d0c93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="encryption-hierarchy"></a>Hiérarchie de chiffrement
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] chiffre les données avec un chiffrement hiérarchique et une infrastructure de gestion des clés. Chaque couche chiffre la couche qui se trouve en dessous d'elle à l'aide d'une combinaison de certificats, de clés asymétriques et de clés symétriques. Les clés asymétriques et les clés symétriques peuvent être stockées hors de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dans un module de gestion de clés extensible (EKM, Extensible Key Management).  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] chiffre les données avec un chiffrement hiérarchique et une infrastructure de gestion des clés. Chaque couche chiffre la couche qui se trouve en dessous d'elle à l'aide d'une combinaison de certificats, de clés asymétriques et de clés symétriques. Les clés asymétriques et les clés symétriques peuvent être stockées hors de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] dans un module de gestion de clés extensible (EKM, Extensible Key Management).  
   
  L'illustration suivante montre que chaque couche de la hiérarchie de chiffrement chiffre la couche qui se trouve en dessous d'elle, et affiche les configurations de chiffrement les plus communes. L'accès au sommet de la hiérarchie est généralement protégé par un mot de passe.  
   
@@ -111,12 +111,12 @@ ms.lasthandoff: 11/21/2017
 ### <a name="transparent-data-encryption"></a>chiffrement transparent des données  
  Le chiffrement transparent des données est un cas spécial de chiffrement à l'aide d'une clé symétrique. L'ensemble de la base de données est chiffré à l'aide de cette clé symétrique, appelée clé de chiffrement de base de données. La clé de chiffrement de base de données est protégée par d'autres clés ou certificats qui sont eux-mêmes protégés par la clé principale de base de données ou par une clé asymétrique stockée dans un module EKM. Pour plus d’informations, consultez [Transparent Data Encryption &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md).  
   
-## <a name="related-content"></a>Contenu connexe  
+## <a name="related-content"></a>Contenu associé  
  [Sécurisation de SQL Server](../../../relational-databases/security/securing-sql-server.md)  
   
  [Fonctions de sécurité &#40;Transact-SQL&#41;](../../../t-sql/functions/security-functions-transact-sql.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Hiérarchie des autorisations &#40;moteur de base de données&#41;](../../../relational-databases/security/permissions-hierarchy-database-engine.md)   
  [Éléments sécurisables](../../../relational-databases/security/securables.md)  
   

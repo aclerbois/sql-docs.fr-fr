@@ -1,17 +1,16 @@
 ---
 title: Afficher des informations de filtrage (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - displaying filter information
 - filters [SQL Server], viewing
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - traces [SQL Server], filters
 - viewing filter information
 ms.assetid: b7e52c13-8c83-47c2-8cd0-af7a49eceb5c
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 60001606d2b973749f20a72e16c1a7a449de9608
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 2c3927a2b0a1b19d7dfba057672dd5d275c6e671
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-filter-information-transact-sql"></a>Afficher des informations de filtrage (Transact-SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

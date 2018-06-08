@@ -1,28 +1,24 @@
 ---
-title: "Sauvegarder plusieurs bases de données dans le service Stockage Blob Azure - PowerShell | Microsoft Docs"
-ms.custom: 
+title: Sauvegarder plusieurs bases de données dans le service Stockage Blob Azure - PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 05/20/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f7008339-e69d-4e20-9265-d649da670460
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 28c5b537cfaf991b5067142e79d4857e002452e8
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: babe7c958f6832dc3e77c4718595e4c6967fe566
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="back-up-multiple-databases-to-azure-blob-storage---powershell"></a>Sauvegarder plusieurs bases de données dans le service Stockage Blob Azure - PowerShell
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

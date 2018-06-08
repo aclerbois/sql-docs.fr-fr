@@ -1,17 +1,13 @@
 ---
-title: "Spécifier le comportement du paramétrage de requêtes grâce aux repères de plan | Microsoft Docs"
-ms.custom: 
+title: Spécifier le comportement du paramétrage de requêtes grâce aux repères de plan | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-plan-guides
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - TEMPLATE plan guide
 - PARAMETERIZATION FORCED option
@@ -22,19 +18,19 @@ helpviewer_keywords:
 - plan guides [SQL Server], parameterization
 - parameterized queries [SQL Server]
 ms.assetid: f0f738ff-2819-4675-a8c8-1eb6c210a7e6
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 300fd06c7de6889cf8198aeb803d67398a0776e9
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 42d3e71f304ddc156a4b25e3039873c13b37a0a9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="specify-query-parameterization-behavior-by-using-plan-guides"></a>Spécifier le comportement du paramétrage de requêtes grâce aux repères de plan
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Si l’option de base de données PARAMETERIZATION a la valeur SIMPLE, il se peut que l’optimiseur de requête [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] opte pour le paramétrage des requêtes. En d'autres termes, toute valeur littérale contenue dans une requête est substituée par des paramètres. Ce processus s'appelle le paramétrage simple. Lorsque le paramétrage SIMPLE s'applique, vous ne pouvez pas décider des requêtes devant être paramétrables et de celles ne devant pas l'être. Vous pouvez cependant indiquer que toutes les requêtes d'une base de données soient paramétrables en affectant à l'option de base de données PARAMETERIZATION la valeur FORCED. Ce processus s'appelle le paramétrage forcé.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Si l'option de base de données PARAMETERIZATION a la valeur SIMPLE, il se peut que l'optimiseur de requête [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] opte pour le paramétrage des requêtes. En d'autres termes, toute valeur littérale contenue dans une requête est substituée par des paramètres. Ce processus s'appelle le paramétrage simple. Lorsque le paramétrage SIMPLE s'applique, vous ne pouvez pas décider des requêtes devant être paramétrables et de celles ne devant pas l'être. Vous pouvez cependant indiquer que toutes les requêtes d'une base de données soient paramétrables en affectant à l'option de base de données PARAMETERIZATION la valeur FORCED. Ce processus s'appelle le paramétrage forcé.  
   
  Vous pouvez outrepasser ce comportement de paramétrage d'une base de données par le biais de repères de plan des façons suivantes :  
   

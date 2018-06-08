@@ -1,27 +1,25 @@
 ---
-title: "Génération de flux de données à partir de rapports (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Génération de flux de données à partir de rapports (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4e00789f-6967-42e5-b2b4-03181fdb1e2c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d489c44611a716da78c2777b8455727ad11fae28
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 394a6ddd55d78615894b42a983f523827bafa27b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generating-data-feeds-from-reports-report-builder-and-ssrs"></a>Génération de flux de données à partir de rapports (Générateur de rapports et SSRS)
 

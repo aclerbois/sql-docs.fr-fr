@@ -1,15 +1,14 @@
 ---
 title: Objets BLOB et OLE | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-blobs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - BLOBs, OLE objects
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - SQL Server Native Client OLE DB provider, BLOBs
 - large data, OLE objects
 ms.assetid: 767fa2f6-9cd2-436f-add5-e760bed29a58
-caps.latest.revision: 
+caps.latest.revision: 43
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 03eb28507a7fa0fdc2bf8df55dbb39356f24109c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9f5ec924883f046991c9eba6e62c79b9bec7a6fc
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707277"
 ---
 # <a name="blobs-and-ole-objects"></a>Objets BLOB et OLE
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/25/2018
 
   Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournisseur de OLE DB Native Client expose la **ISequentialStream** interface pour prendre en charge d’accès client aux [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **ntext**, **texte**, **image**, **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, et les types de données xml sous forme binaire des objets volumineux (BLOB). Le **en lecture** méthode sur **ISequentialStream** permet au consommateur de récupérer le volume de données en segments maniables.  
   
- Pour obtenir un exemple illustrant cette fonctionnalité, consultez [de définition de données volumineux &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-how-to/set-large-data-ole-db.md).  
+ Pour obtenir un exemple illustrant cette fonctionnalité, consultez [de définition de données volumineux &#40;OLE DB&#41;](../../relational-databases/native-client-ole-db-how-to/set-large-data-ole-db.md).  
   
  Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client OLE DB fournisseur peut utiliser implémentée par un consommateur **IStorage** interface lorsque le consommateur fournit le pointeur d’interface dans un accesseur lié pour la modification des données.  
   
@@ -69,10 +69,10 @@ ms.lasthandoff: 01/25/2018
   
 -   [Définition de données volumineuses](../../relational-databases/native-client-ole-db-blobs/setting-large-data.md)  
   
--   [Prise en charge de diffusion en continu pour les paramètres de sortie BLOB](../../relational-databases/native-client-ole-db-blobs/streaming-support-for-blob-output-parameters.md)  
+-   [Prise en charge de la diffusion en continu pour les paramètres de sortie BLOB](../../relational-databases/native-client-ole-db-blobs/streaming-support-for-blob-output-parameters.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; OLE DB &#41;](../../relational-databases/native-client/ole-db/sql-server-native-client-ole-db.md)   
- [À l’aide des Types de valeur élevée](../../relational-databases/native-client/features/using-large-value-types.md)  
+ [SQL Server Native Client &#40;OLE DB&#41;](../../relational-databases/native-client/ole-db/sql-server-native-client-ole-db.md)   
+ [Utilisation de types de valeur élevée](../../relational-databases/native-client/features/using-large-value-types.md)  
   
   

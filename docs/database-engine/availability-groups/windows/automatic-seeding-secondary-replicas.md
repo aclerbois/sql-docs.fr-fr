@@ -1,31 +1,28 @@
 ---
-title: "Amorçage automatique pour les réplicas secondaires (SQL Server) | Microsoft Docs"
-description: "Utilisez l’amorçage automatique pour initialiser les réplicas secondaires."
+title: Amorçage automatique pour les réplicas secondaires (SQL Server) | Microsoft Docs
+description: Utilisez l’amorçage automatique pour initialiser les réplicas secondaires.
 services: data-lake-analytics
-ms.custom: 
+ms.custom: ''
 ms.date: 09/25/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Automatic seeding [SQL Server], secondary replica
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: ''
 author: allanhirt
-ms.author: mikeray
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 60bb5a01191de574b7fcac4eb11d73190c94aac8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6576f0430a45300d76f675730f14b2a257441ffd
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769695"
 ---
 # <a name="automatic-seeding-for-secondary-replicas"></a>Amorçage automatique pour les réplicas secondaires
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

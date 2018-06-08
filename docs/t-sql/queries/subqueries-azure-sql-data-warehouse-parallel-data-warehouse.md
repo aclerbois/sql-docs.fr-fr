@@ -1,28 +1,26 @@
 ---
-title: "Sous-requêtes (Azure SQL Data Warehouse, Parallel Data Warehouse) | Microsoft Docs"
-ms.custom: 
+title: Sous-requêtes (Azure SQL Data Warehouse, Parallel Data Warehouse) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0e8ebd60-1936-48c9-b2b9-e099c8269fcf
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 7
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b30ff820d9a9003a1832c8b4226adf20072fceb
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: ab20f771fae4aa1ea5a31a11bc8c3e3f1e7c4ead
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="subqueries-azure-sql-data-warehouse-parallel-data-warehouse"></a>Sous-requêtes (Azure SQL Data Warehouse, Parallel Data Warehouse)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]

@@ -1,33 +1,30 @@
 ---
 title: Objet de membre (ADO MD) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Member
 helpviewer_keywords:
 - Member object [ADO MD], members
 ms.assetid: 3dedf755-0741-4c3f-8b4e-bff8ff8809c8
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c7b34e45ff23a1a71c1a45b1190d923e94328154
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6629f860fb8043387526019ec17c0e1775915a66
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="member-object-ado-md"></a>Objet de membre (ADO MD)
 Représente un membre d’un niveau dans un cube, les enfants d’un membre d’un niveau ou un membre d’une position le long d’un axe d’un ensemble de cellules.  
@@ -90,7 +87,7 @@ Représente un membre d’un niveau dans un cube, les enfants d’un membre d’
 |MemberName|Nom du membre.|  
 |MemberOrdinal|Le nombre ordinal du membre.|  
 |MemberType|Type du membre.|  
-|MemberUniqueName|Nom du membre et non équivoque.|  
+|Nom unique de membre|Nom du membre et non équivoque.|  
 |ParentCount|Décompte du nombre de parents de ce membre.|  
 |ParentLevel|Le numéro de niveau du parent du membre.|  
 |ParentUniqueName|Le nom non ambigu du parent du membre.|  

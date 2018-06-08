@@ -1,29 +1,22 @@
 ---
-title: Comportement de verrouillage (SQL Server PDW)
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/13/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: c55c636e-b767-4a0c-8184-be991a10801f
-caps.latest.revision: "27"
-ms.openlocfilehash: c1cb1b0ec346ff18d40a3ac03e7ba45b37666c98
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Comportement de verrouillage - Parallel Data Warehouse | Documents Microsoft
+description: Découvrez comment Parallel Data Warehouse utilise le verrouillage pour garantir l’intégrité des transactions et pour assurer la cohérence des bases de données lorsque plusieurs utilisateurs accèdent aux données en même temps.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 3f9862fed432036dcb4a3905fb3af1d3132349a5
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="locking-behavior"></a>Comportement de verrouillage
-SQL Server PDW utilise le verrouillage pour garantir l’intégrité des transactions et pour assurer la cohérence des bases de données lorsque plusieurs utilisateurs accèdent aux données en même temps.  
+# <a name="locking-behavior-in-parallel-data-warehouse"></a>Comportement de verrouillage dans Parallel Data Warehouse
+Découvrez comment Parallel Data Warehouse utilise le verrouillage pour garantir l’intégrité des transactions et pour assurer la cohérence des bases de données lorsque plusieurs utilisateurs accèdent aux données en même temps.  
   
 ## <a name="Basics"></a>Principes fondamentaux de verrouillage  
 **Modes**  

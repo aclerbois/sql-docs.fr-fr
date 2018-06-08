@@ -1,28 +1,26 @@
 ---
-title: "Sélectionnez - commande SQL | Documents Microsoft"
-ms.custom: 
+title: Sélectionnez - commande SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: select [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- select [ODBC]
 ms.assetid: 2149c3ca-3a71-446d-8d53-3d056e2f301a
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3e7295a800b3cc84f6eb64f5dfa762573fe80b6b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7d3803c1e51a21e8006994db5ba89f9b2cb41ad6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select---sql-command"></a>Sélectionnez - commande SQL
 Récupère les données à partir d’une ou plusieurs tables.  
@@ -52,7 +50,7 @@ FROM [DatabaseName!]Table [Local_Alias]
 > [!NOTE]  
 >  A *sous-requête*, dénommé dans les arguments suivants, est une instruction SELECT dans une instruction SELECT et doit être mis entre parenthèses. Vous pouvez avoir jusqu'à deux sous-requêtes au même niveau (ne pas imbriquée) dans la clause WHERE. (Consultez la section des arguments). Les sous-requêtes peuvent contenir plusieurs conditions de jointure.  
   
- [Tous les &#124; DISTINCT] [*Alias*.] *Select_Item* [AS *Column_Name*] [, [*Alias*.] *Select_Item* [AS *Column_Name*]...]  
+ [Toutes les &#124; DISTINCT]   [*Alias*.] *Select_Item* [AS *Column_Name*] [, [*Alias*.] *Select_Item* [AS *Column_Name*]...]  
  La clause SELECT spécifie les champs, les constantes et les expressions qui sont affichées dans les résultats de requête.  
   
  Par défaut, tous les affiche toutes les lignes dans les résultats de requête.  
@@ -108,7 +106,7 @@ FROM [DatabaseName!]Table [Local_Alias]
   
  *Local_Alias* spécifie un nom temporaire pour la table nommée dans *Table*. Si vous spécifiez un alias local, vous devez utiliser l’alias local au lieu du nom de table dans l’ensemble de l’instruction SELECT. L’alias local n’affecte pas l’environnement Visual FoxPro.  
   
- OÙ *JoinCondition* [AND *JoinCondition* ...]    [Et &#124; OU *FilterCondition* [AND &#124; OU *FilterCondition* ...]]  
+ OÙ *JoinCondition* [AND *JoinCondition* ...]    [AND &#124; ou *FilterCondition* [AND &#124; ou *FilterCondition* ...]]  
  Indique à Visual FoxPro pour inclure uniquement certains enregistrements dans les résultats de requête. OÙ est nécessaire pour récupérer des données provenant de plusieurs tables.  
   
  *JoinCondition* spécifie les champs qui lient les tables dans la clause FROM. Si vous incluez plusieurs tables dans une requête, vous devez spécifier une condition de jointure pour chaque table après la première.  
@@ -157,7 +155,7 @@ FROM [DatabaseName!]Table [Local_Alias]
   
  Lorsque la condition de filtre inclut tous, le champ doit satisfaire à la condition de comparaison de toutes les valeurs générées par la sous-requête avant son enregistrement est inclus dans les résultats de requête.  
   
- **Exemple 4** *FieldName comparaison* &#124; Certains (*sous-requête*)  
+ **Exemple 4** *FieldName comparaison* ANY &#124; SOME (*sous-requête*)  
   
  `company < ANY ;`  
   
@@ -276,7 +274,7 @@ WHERE customer.cust_id NOT IN ;
   
  Résultats de la requête s’affichent non triées, si vous ne spécifiez pas une commande avec ORDER BY.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Sélectionnez est une commande SQL qui est intégrée à Visual FoxPro comme n’importe quelle autre commande Visual FoxPro. Lorsque vous utilisez, sélectionnez cette option pour présenter une requête, Visual FoxPro interprète la requête et récupère les données spécifiées à partir des tables. Vous pouvez créer une requête SELECT à partir de la fenêtre d’invite de commandes ou un programme Visual FoxPro (comme avec n’importe quelle autre commande Visual FoxPro).  
   
 > [!NOTE]  

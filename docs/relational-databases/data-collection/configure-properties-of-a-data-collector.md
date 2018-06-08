@@ -1,35 +1,30 @@
 ---
-title: "Configurer les propriétés d’un collecteur de données | Microsoft Docs"
-ms.custom: 
+title: Configurer les propriétés d’un collecteur de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dc.datacollectionprop.general.f1
 - sql13.swb.dc.datacollectionprop.advanced.f1
 ms.assetid: cf98f57d-5a6d-4bc3-bf10-783e460fc63d
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 5
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fb01bee5ac0dd68dc4cda375e076a72543e3988f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: c258b67c93fdfa1a92216d7a028958dbc72e1997
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="configure-properties-of-a-data-collector"></a>Configurer les propriétés d'un collecteur de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique explique comment configurer les propriétés d'un collecteur de données.  
+  Cette rubrique explique comment configurer les propriétés d'un collecteur de données.  
   
 ## <a name="data-collection-properties-general-tab"></a>Propriétés de la collecte de données (onglet Général)  
  Utilisez cette page pour configurer les paramètres relatifs à l'entrepôt de données de gestion et spécifier l'emplacement où les données collectées doivent être stockées avant d'être téléchargées dans l'entrepôt de données.  

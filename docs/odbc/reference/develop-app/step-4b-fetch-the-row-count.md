@@ -1,31 +1,28 @@
 ---
-title: "Étape 4 b : extraire le nombre de lignes | Documents Microsoft"
-ms.custom: 
+title: 'Étape 4 b : extraire le nombre de lignes | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - fetches [ODBC], fetching row count
 - row count [ODBC]
 - application process [ODBC], fetching row count
 ms.assetid: 3af481b1-d694-446e-948d-e3a5edcad050
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b0eda22056173ea6ca90dd4ecc31146de54fbfae
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7b90259758ceab600abce600bdfdab6edc52f506
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-4b-fetch-the-row-count"></a>Étape 4 b : extraire le nombre de lignes
 L’étape suivante consiste à extraire le nombre de lignes, comme indiqué dans l’illustration suivante.  

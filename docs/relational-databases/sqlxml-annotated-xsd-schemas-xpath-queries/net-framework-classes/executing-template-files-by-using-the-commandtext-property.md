@@ -1,16 +1,14 @@
 ---
-title: "Exécution de fichiers modèles à l’aide de la propriété CommandText | Documents Microsoft"
-ms.custom: 
+title: Exécution de fichiers modèles à l’aide de la propriété CommandText | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Managed Classes [SQLXML], executing template files
@@ -19,20 +17,20 @@ helpviewer_keywords:
 - executing template files [SQLXML]
 - CommandText property
 ms.assetid: f1b1278d-252d-4a06-836e-4ef77f338ef9
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ef0cc4fe9655e7ac183226f01bfba0a7a3901971
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3a97f18ab83742d3adde940c4f528f50e4ac347d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-template-files-by-using-the-commandtext-property"></a>Exécution de fichiers modèles à l'aide de la propriété CommandText
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cet exemple illustre la façon dont les fichiers de modèle qui sont composées de requêtes SQL ou XPath peuvent être spécifiés à l’aide de la CommandTextproperty. Au lieu de spécifier la requête SQL ou XPath comme valeur de CommandText, vous pouvez spécifier un nom de fichier comme valeur. Dans l’exemple suivant, la propriété CommandType est spécifiée en tant que SqlXmlCommandType.TemplateFile.  
+  Cet exemple illustre la façon dont les fichiers de modèle qui sont composées de requêtes SQL ou XPath peuvent être spécifiés à l’aide de la CommandTextproperty. Au lieu de spécifier la requête SQL ou XPath comme valeur de CommandText, vous pouvez spécifier un nom de fichier comme valeur. Dans l’exemple suivant, la propriété CommandType est spécifiée en tant que SqlXmlCommandType.TemplateFile.  
   
  L'exemple d'application exécute ce modèle :  
   

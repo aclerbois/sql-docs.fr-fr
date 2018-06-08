@@ -1,50 +1,23 @@
 ---
 title: Types de dimension | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- time dimensions [Analysis Services]
-- quantitative dimensions [Analysis Services]
-- BillOfMaterials dimension [Analysis Services]
-- geography dimensions
-- utility dimensions [Analysis Services]
-- channel dimensions
-- dimensions [Analysis Services], types
-- products dimensions [Analysis Services]
-- account dimensions [Analysis Services]
-- organization dimensions
-- currency dimensions [Analysis Services]
-- rates dimensions
-- promotion dimensions
-- scenario dimensions [Analysis Services]
-- customers dimensions [Analysis Services]
-- Type property
-ms.assetid: bd3195da-e762-4c98-b643-34c76e842343
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7e870e18ae05b3daddf9e8230079bec87bb29e2d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 663c26ac169c11e5ab2d9b90285419cf4145368c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="database-dimension-properties---types"></a>Propriétés de Dimension de base de données - Types
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le **Type** paramètre de propriété fournit des informations sur le contenu d’une dimension aux applications clientes et serveur. Dans certains cas, le **Type** uniquement fournit des conseils pour les applications clientes et est facultatif. Dans d’autres cas, tel que **comptes** ou **temps** dimensions, les **Type** des paramètres de propriété pour la dimension et ses attributs déterminent des comportements spécifiques basée sur le serveur et peuvent être nécessaires pour implémenter certains comportements dans le cube. Par exemple, le **Type** propriété d’une dimension peut être définie sur **comptes** pour indiquer aux applications clientes que la dimension standard contient des attributs de compte. Pour plus d’informations sur l’heure, le compte et les dimensions de devise, consultez [créer une Dimension de type Date](../../analysis-services/multidimensional-models/database-dimensions-create-a-date-type-dimension.md), [créer un compte Finance de Dimension de type parent-enfant](../../analysis-services/multidimensional-models/database-dimensions-finance-account-of-parent-child-type.md), et [créer une Dimension de type devise](../../analysis-services/multidimensional-models/database-dimensions-create-a-currency-type-dimension.md).  
+  Le **Type** paramètre de propriété fournit des informations sur le contenu d’une dimension aux applications clientes et serveur. Dans certains cas, le **Type** uniquement fournit des conseils pour les applications clientes et est facultatif. Dans d’autres cas, tel que **comptes** ou **temps** dimensions, les **Type** des paramètres de propriété pour la dimension et ses attributs déterminent des comportements spécifiques basée sur le serveur et peuvent être nécessaires pour implémenter certains comportements dans le cube. Par exemple, le **Type** propriété d’une dimension peut être définie sur **comptes** pour indiquer aux applications clientes que la dimension standard contient des attributs de compte. Pour plus d’informations sur l’heure, le compte et les dimensions de devise, consultez [créer une Dimension de type Date](../../analysis-services/multidimensional-models/database-dimensions-create-a-date-type-dimension.md), [créer un compte Finance de Dimension de type parent-enfant](../../analysis-services/multidimensional-models/database-dimensions-finance-account-of-parent-child-type.md), et [créer une Dimension de type devise](../../analysis-services/multidimensional-models/database-dimensions-create-a-currency-type-dimension.md).  
   
  Le paramètre par défaut pour le type de dimension est **régulière**, ce qui ne rend aucune hypothèse quant au contenu de la dimension. Il s’agit du paramètre par défaut pour toutes les dimensions lorsque vous définissez initialement une dimension, sauf si vous spécifiez **temps** lors de la définition de la dimension à l’aide de l’Assistant Dimension. Vous devez également laisser **régulière** comme type de dimension si l’Assistant Dimension ne répertorie pas un type approprié pour le type de Dimension.  
   
@@ -71,6 +44,6 @@ Le **Type** paramètre de propriété fournit des informations sur le contenu d�
   
 ## <a name="see-also"></a>Voir aussi  
  [Créer une Dimension à l’aide d’une Table existante](../../analysis-services/multidimensional-models/create-a-dimension-by-using-an-existing-table.md)   
- [Dimensions &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md)  
+ [Dimensions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md)  
   
   

@@ -1,16 +1,14 @@
 ---
 title: Sys.sp_cdc_enable_db (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_cdc_enable_db_TSQL
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - change data capture [SQL Server], enabling databases
 - sp_cdc_enable_db
 ms.assetid: 176d83b3-493d-43cd-800e-aa123c3bdf17
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7b4dfd41cd9ae452fb3ce7924e215372de7768bb
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 03a2ffce46b6789e32cccc361760f2aea842adb7
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysspcdcenabledb-transact-sql"></a>sys.sp_cdc_enable_db (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -56,14 +53,14 @@ sys.sp_cdc_enable_db
  0 (réussite) ou 1 (échec)  
   
 ## <a name="result-sets"></a>Jeux de résultats  
- Aucune  
+ Aucun  
   
 ## <a name="remarks"></a>Notes  
  Capture de données modifiées ne peut pas être activée sur [bases de données système](../../relational-databases/databases/system-databases.md) ou bases de données de distribution.  
   
  sys.sp_cdc_enable_db crée les objets de capture de données modifiées qui ont une portée à l'échelle de la base de données, y compris les tables de métadonnées et les déclencheurs DDL. Il crée le schéma cdc et l’utilisateur de base de données de capture de données modifiées et définit la colonne is_cdc_enabled pour l’entrée de la base de données dans les également le [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) affichage 1 catalogue.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle serveur fixe sysadmin.  
   
 ## <a name="examples"></a>Exemples  
@@ -77,6 +74,6 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sys.sp_cdc_disable_db &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-disable-db-transact-sql.md)  
+ [Sys.sp_cdc_disable_db &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-disable-db-transact-sql.md)  
   
   

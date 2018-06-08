@@ -1,29 +1,25 @@
 ---
-title: "Gérer les sessions d’événements dans l’Explorateur d’objets | Microsoft Docs"
-ms.custom: 
+title: Gérer les sessions d’événements dans l’Explorateur d’objets | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 16849e38-d3fb-414d-8dcb-797b5ffce6ee
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab9dc4ffedbe8fce18260d24e14ad7475f1dacc6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a5a41ca578e22b2af628e8740acbb58395fb24ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-event-sessions-in-the-object-explorer"></a>Gérer les sessions d'événements dans l'Explorateur d'objets
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

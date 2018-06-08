@@ -1,0 +1,1 @@
+**Cette rubrique s’applique à :** ![Oui](media/yes.png "Oui")SQL Server \(à partir de 2008\) ![aucun](media/no.png "aucun")Base de données SQL azure ![aucun](media/no.png "aucun")Azure SQL Data Warehouse ![aucun](media/no.png "aucune")Parallel Data Warehouse

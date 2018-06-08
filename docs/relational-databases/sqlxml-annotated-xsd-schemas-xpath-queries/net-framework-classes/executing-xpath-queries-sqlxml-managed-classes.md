@@ -1,16 +1,14 @@
 ---
-title: "Exécution de requêtes XPath (Classes managées de SQLXML) | Documents Microsoft"
-ms.custom: 
+title: Exécution de requêtes XPath (Classes managées de SQLXML) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - XPath queries [SQLXML], SQLXML Managed Classes
@@ -19,20 +17,20 @@ helpviewer_keywords:
 - mapping schema [SQLXML], XPath queries
 - SQLXML Managed Classes, executing XPath queries
 ms.assetid: 8bef4c4d-bf0e-4236-a875-fd7d3e058396
-caps.latest.revision: 
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0465bebf92f57739858f3c478fdd7f467ebd3cff
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b203a344f4b0831e67cfc65c6fc8a914b9ce90f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-xpath-queries-sqlxml-managed-classes"></a>Exécution de requêtes XPath (classes managées SQLXML)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cet exemple illustre la façon dont les requêtes XPath sont exécutées sur un schéma de mappage.  
+  Cet exemple illustre la façon dont les requêtes XPath sont exécutées sur un schéma de mappage.  
   
  Examinez ce schéma :  
   

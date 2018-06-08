@@ -1,34 +1,33 @@
 ---
-title: "Rapprocher les modifications effectuées par plusieurs utilisateurs (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Rapprocher les modifications effectuées par plusieurs utilisateurs (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - table modifications [SQL Server], multiple users
 - reconciling changes made by multiple users
 - modifications made by multiple users
 ms.assetid: fc7ed4f2-ad3d-47fc-a3ef-51e5bb069ef0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 356f09be20f11e2ec701e4e98d92cb1fbbd12b63
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 70dd406f128f9df1cb36ac6c4ddcd0dd18b446aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reconcile-changes-made-by-multiple-users-visual-database-tools"></a>Rapprocher les modifications effectuées par plusieurs utilisateurs (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Dans un environnement multi-utilisateur, des changements peuvent être apportés à un même objet par plusieurs utilisateurs simultanément. Cela peut se produire lorsque vous travaillez sur la structure de l'objet dans le Concepteur de tables ou dans le Concepteur de schémas de base de données, ou dans les valeurs des résultats retournés dans le volet Résultats du Concepteur de requêtes et de vues. Cela peut provoquer des conflits que vous souhaiterez résoudre.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Dans un environnement multi-utilisateur, des modifications peuvent être apportées à un même objet par plusieurs utilisateurs simultanément. Cela peut se produire lorsque vous travaillez sur la structure de l'objet dans le Concepteur de tables ou dans le Concepteur de schémas de base de données, ou dans les valeurs des résultats retournés dans le volet Résultats du Concepteur de requêtes et de vues. Cela peut provoquer des conflits que vous souhaiterez résoudre.  
   
 ## <a name="conflicts-in-the-table-or-database-diagram-designers"></a>Conflits dans le Concepteur de tables ou le Concepteur de schémas de base de données  
 Par exemple, un autre utilisateur peut supprimer ou renommer une table pendant que vous l'utilisez ou que vous travaillez avec une table connexe dans le Concepteur de tables. Si vous tentez d’enregistrer votre table, la [Boîte de dialogue Modifications détectées dans la base de données &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/database-changes-detected-dialog-box-visual-database-tools.md) vous avertit que la base de données a été modifiée depuis que vous avez ouvert la table.  

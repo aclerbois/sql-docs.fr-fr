@@ -1,27 +1,19 @@
 ---
-title: "Configurer la taille de téléchargement de fichier maximale (PowerPivot pour SharePoint) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: ac516c63-1e79-4ae8-bca6-32d3c1a09c00
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer la taille de téléchargement de fichier maximale (PowerPivot pour SharePoint) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d30e4644eed3d695db28a246aa9d05cba6e2cecc
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 15ce366acc4244db16f0b58bbdc8226e9327416c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-maximum-file-upload-size-power-pivot-for-sharepoint"></a>Configurer la taille maximale de téléchargement de fichiers (PowerPivot pour SharePoint)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

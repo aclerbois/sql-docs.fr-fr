@@ -1,16 +1,14 @@
 ---
-title: sp_help_targetserver (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_targetserver (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_targetserver_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_targetserver
 ms.assetid: f841d3bd-901a-4980-ad0b-1c6eeba3f717
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c45b6bc34b8003d78cd60916b9db22557fb0f4b1
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 236a10fd52508781e503cc2844a49315fe57422e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelptargetserver-transact-sql"></a>sp_help_targetserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ sp_help_targetserver
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@server_name=** ] **'***server_name***'**  
+ [  **@server_name=** ] **'***nom_serveur***'**  
  Nom du serveur pour lequel renvoyer des informations. *nom_serveur* est **nvarchar (30)**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -60,8 +57,8 @@ sp_help_targetserver
 |-----------------|---------------|-----------------|  
 |**server_id**|**int**|Numéro d’identification du serveur.|  
 |**server_name**|**nvarchar(30)**|Nom du serveur.|  
-|**location**|**nvarchar(200)**|Emplacement du serveur spécifié.|  
-|**time_zone_adjustment**|**int**|Définition du fuseau horaire, en heures, par rapport à l'heure de Greenwich (GMT).|  
+|**Emplacement**|**nvarchar(200)**|Emplacement du serveur spécifié.|  
+|**TIME_ZONE_ADJUSTMENT**|**int**|Définition du fuseau horaire, en heures, par rapport à l'heure de Greenwich (GMT).|  
 |**enlist_date**|**datetime**|Date d'inscription du serveur spécifié.|  
 |**last_poll_date**|**datetime**|Date à laquelle le serveur a été interrogé pour la dernière fois pour des travaux.|  
 |**status**|**int**|État du serveur spécifié.|  

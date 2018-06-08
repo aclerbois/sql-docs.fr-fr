@@ -1,16 +1,15 @@
 ---
-title: "Base de données du serveur de rapports (SSRS en mode natif) | Microsoft Docs"
-ms.custom: 
+title: Base de données du serveur de rapports (SSRS en mode natif) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - databases [Reporting Services]
 - report servers [Reporting Services], databases
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - reportservertempdb
 - reportserver database
 ms.assetid: 0fc5c033-3fe1-4cea-86c7-66ea5e424d65
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 0b800d0677323aa53276640be971fddf73d36b62
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d1f1eeeeaf960fbfe8659abd5a7299dd6b924212
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-server-database-ssrs-native-mode"></a>Base de données du serveur de rapports (SSRS en mode natif)
   Un serveur de rapports est un serveur sans état qui utilise le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour stocker les métadonnées et les définitions d'objets. Une installation [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif utilise deux bases de données pour distinguer le stockage de données persistantes des obligations de stockage temporaire. Les bases de données sont créées ensemble et liées par le nom. Les noms par défaut de ces bases de données sont respectivement **reportserver** et **reportservertempdb**.  

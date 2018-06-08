@@ -1,27 +1,25 @@
 ---
-title: "Créer une matrice (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Créer une matrice (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 493e63b9-ecd0-4054-97ec-92d84e9b8182
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: a608539635d00b07ba001e37172f3f71b6fc3465
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8d28d9071a245185e9801d1b1c482a058752e6da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-matrix-report-builder-and-ssrs"></a>Créer une matrice (Générateur de rapports et SSRS)
   Utilisez une matrice pour afficher des données groupées et des informations récapitulatives. Vous pouvez regrouper des données en fonction de plusieurs champs ou expressions dans des groupes de lignes et de colonnes. Une matrice fournit des fonctionnalités similaires à celles des analyses croisées et des tableaux croisés dynamiques. À l'exécution, lorsque les données de rapport sont associées aux régions de données, une matrice se développe horizontalement et verticalement sur la page. Les valeurs des cellules de matrice sont des valeurs d'agrégat limitées à l'intersection des groupes de lignes et de colonnes auxquels la cellule appartient. Vous pouvez mettre en forme les lignes et les colonnes afin de mettre en surbrillance les données que vous souhaitez mettre en évidence. Vous pouvez également inclure des bascules d'extraction qui permettent initialement de masquer les données de détail ; l'utilisateur peut ensuite cliquer sur ces bascules pour afficher plus ou moins de détails, en fonction de ses besoins.  
@@ -55,7 +53,7 @@ ms.lasthandoff: 01/09/2018
   
  ![Aperçu d’une matrice rendue avec des groupes développés](../../reporting-services/report-design/media/rs-basicmatrixpreview.gif "Aperçu d’une matrice rendue avec des groupes développés")  
   
- La matrice avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Vous pouvez poursuivre le développement de la conception de votre matrice en ajoutant des groupes de lignes ou de colonnes imbriqués ou adjacents, voire en ajoutant des lignes de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+ La matrice avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Vous pouvez poursuivre le développement de la conception de votre matrice en ajoutant des groupes de lignes ou de colonnes imbriqués ou adjacents, voire en ajoutant des lignes de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS& #41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
   
   
 ##  <a name="AddingParentGroupChild"></a> Ajout d'un groupe parent ou d'un groupe enfant dans une matrice  

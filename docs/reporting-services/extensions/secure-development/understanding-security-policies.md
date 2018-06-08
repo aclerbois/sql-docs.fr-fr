@@ -1,17 +1,17 @@
 ---
-title: "Présentation des stratégies de sécurité | Microsoft Docs"
-ms.custom: 
+title: Présentation des stratégies de sécurité | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: extensions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - code groups [Reporting Services]
 - code access security [Reporting Services], security policies
@@ -24,16 +24,15 @@ helpviewer_keywords:
 - security policies [Reporting Services]
 - named permission sets [Reporting Services]
 ms.assetid: a9bf043a-139a-4929-9a58-244815323df0
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1e38526ea1804c4a38a1a2dccec1339c4718f290
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2ea917eee66e6fea9fc374a2df6e5827b6a3bdc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-security-policies"></a>Présentation des stratégies de sécurité
   Tout code exécuté par un serveur de rapports doit faire partie d'une stratégie de sécurité d'accès du code spécifique. Ces stratégies de sécurité comprennent des groupes de codes qui mappent une preuve à un ensemble de jeux d'autorisations nommés. Souvent, les groupes de codes sont associés à un jeu d'autorisations nommé qui spécifie les autorisations pouvant être accordées au code dans ce groupe. Le runtime utilise la preuve fournie par un hôte approuvé ou par le chargeur pour déterminer les groupes de codes auxquels le code appartient et, par conséquent, les autorisations à accorder au code. [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] adhère à cette architecture de stratégie de sécurité telle qu’elle est définie par le Common Language Runtime (CLR) [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)]. Les sections suivantes décrivent les divers types de codes qui existent dans [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)], ainsi que les règles de stratégie associées.  

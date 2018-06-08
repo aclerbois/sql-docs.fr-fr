@@ -1,17 +1,16 @@
 ---
-title: "Obtenir des informations sur les déclencheurs DML | Microsoft Docs"
-ms.custom: 
+title: Obtenir des informations sur les déclencheurs DML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-dml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - metadata [SQL Server], triggers
 - viewing DML triggers
@@ -20,20 +19,20 @@ helpviewer_keywords:
 - status information [SQL Server], triggers
 - DML triggers, viewing
 ms.assetid: 37574aac-181d-4aca-a2cc-8abff64237dc
-caps.latest.revision: 
+caps.latest.revision: 31
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4d9dac7711cc7eb07ce507e4749b82dcb2a1a7be
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ed7aada845a81baee642a0f5f1b0b0f76a48dc2d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-information-about-dml-triggers"></a>Obtenir des informations sur les déclencheurs DML
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Cette rubrique explique comment obtenir des informations sur les déclencheurs DML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces informations peuvent inclure les types de déclencheurs existant sur une table, ainsi que leur nom, leur propriétaire et la date de leur création ou modification. Si le déclencheur n'a pas été chiffré lors de sa création, vous obtenez la définition du déclencheur. Vous pouvez utiliser la définition pour vous aider à comprendre comment un déclencheur affecte la table sur laquelle il est défini. En outre, vous pouvez déterminer les objets qu'un déclencheur spécifique utilise. Avec ces informations, vous pouvez identifier les objets dont l'éventuelle suppression ou modification aurait une répercussion sur le déclencheur.  
+  Cette rubrique explique comment obtenir des informations sur les déclencheurs DML dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ces informations peuvent inclure les types de déclencheurs existant sur une table, ainsi que leur nom, leur propriétaire et la date de leur création ou modification. Si le déclencheur n'a pas été chiffré lors de sa création, vous obtenez la définition du déclencheur. Vous pouvez utiliser la définition pour vous aider à comprendre comment un déclencheur affecte la table sur laquelle il est défini. En outre, vous pouvez déterminer les objets qu'un déclencheur spécifique utilise. Avec ces informations, vous pouvez identifier les objets dont l'éventuelle suppression ou modification aurait une répercussion sur le déclencheur.  
   
  **Dans cette rubrique**  
   

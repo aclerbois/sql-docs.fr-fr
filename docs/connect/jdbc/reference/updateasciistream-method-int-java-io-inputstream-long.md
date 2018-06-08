@@ -1,27 +1,24 @@
 ---
-title: "Méthode (java.io.InputStream, long) updateAsciiStream | Documents Microsoft"
-ms.custom: 
+title: Méthode (java.io.InputStream, long) updateAsciiStream | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 143bff3e-2b5c-485d-9529-1c2387560094
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 07ab0760ce4b3a0b3d6c3a3be977336a7c881f31
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 324b8f6ce1bd335ee7f322ffd38a18304423492a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updateasciistream-method-int-javaioinputstream-long"></a>Méthode updateAsciiStream (int, java.io.InputStream, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -60,10 +57,10 @@ public void updateAsciiStream(int columnIndex,
   
  Si la longueur du flux de données est différente de celui spécifié dans le *longueur* paramètre, le pilote JDBC lève une exception lorsque la ligne est mise à jour ou insérée.  
   
- Si la longueur du flux de données est inconnue, la *longueur* paramètre peut être défini sur -1 pour indiquer que le pilote doit accepter le flux, quelle que soit sa longueur. Avec sqljdbc4.jar, nous vous recommandons d’utiliser la méthode JDBC 4.0 [updateAsciiStream méthode &#40; type int, java.io.InputStream &#41;](../../../connect/jdbc/reference/updateasciistream-method-int-java-io-inputstream.md) lorsque l’application veut mettre à jour la colonne à partir d’un flux dont la longueur est inconnue.  
+ Si la longueur du flux de données est inconnue, la *longueur* paramètre peut être défini sur -1 pour indiquer que le pilote doit accepter le flux, quelle que soit sa longueur. Avec sqljdbc4.jar, nous vous recommandons d’utiliser la méthode JDBC 4.0 [méthode updateAsciiStream &#40;int, java.io.InputStream&#41; ](../../../connect/jdbc/reference/updateasciistream-method-int-java-io-inputstream.md) lorsque l’application veut mettre à jour la colonne à partir d’un flux dont la longueur est inconnue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode updateAsciiStream &#40; SQLServerResultSet &#41;](../../../connect/jdbc/reference/updateasciistream-method-sqlserverresultset.md)   
+ [Méthode updateAsciiStream &#40;SQLServerResultSet&#41;](../../../connect/jdbc/reference/updateasciistream-method-sqlserverresultset.md)   
  [Membres de SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-members.md)   
  [SQLServerResultSet, classe](../../../connect/jdbc/reference/sqlserverresultset-class.md)  
   

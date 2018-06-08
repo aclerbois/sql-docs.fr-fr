@@ -1,17 +1,16 @@
 ---
-title: "S’abonner à des publications | Microsoft Docs"
-ms.custom: 
+title: S’abonner à des publications | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.conc.subtopubs.f1
 helpviewer_keywords:
@@ -27,16 +26,16 @@ helpviewer_keywords:
 - snapshot replication [SQL Server], subscribing
 - transactional replication, subscribing
 ms.assetid: 088ee30a-05ab-47c4-92ed-316b93e12445
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0a9d6e2e739875979a20f4bee1b2aded61ce766c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 005f25d90d2300256d46123f7cd29351fb55787c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscribe-to-publications"></a>S'abonner à des publications
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

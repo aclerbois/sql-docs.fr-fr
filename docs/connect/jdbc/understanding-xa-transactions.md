@@ -1,27 +1,24 @@
 ---
-title: "Présentation des Transactions XA | Documents Microsoft"
-ms.custom: 
+title: Présentation des Transactions XA | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 574e326f-0520-4003-bdf1-62d92c3db457
-caps.latest.revision: "80"
+caps.latest.revision: 80
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 6599312aa6c25275e6b7a642c6764591d1bf4cba
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: a78fdb7edae90289d64d4c7fdf74ac3a12d4b115
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-xa-transactions"></a>Présentation des Transactions XA
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -104,7 +101,7 @@ ms.lasthandoff: 11/18/2017
   
 3.  Définissez la fonctionnalité de journalisation comme indiqué dans l'exemple de code de la prochaine section. Recherchez l'expression « Server XA DLL version:... » dans le fichier journal de sortie.  
   
-###  <a name="BKMK_ServerSide"></a>Configuration des paramètres de délai d’attente côté serveur pour la restauration automatique des transactions non préparées  
+###  <a name="BKMK_ServerSide"></a> Configuration des paramètres de délai d’attente côté serveur pour la restauration automatique des transactions non préparées  
   
 > [!WARNING]  
 >  Cette option côté serveur est nouvelle avec Microsoft JDBC Driver 4.2 (et versions ultérieures) pour SQL Server. Pour obtenir le comportement mis à jour, vérifiez que le fichier sqljdbc_xa.dll est mis à jour. Pour plus d’informations sur la définition de délais d’attente du côté client, consultez [XAResource.settransactiontimeout ()](http://docs.oracle.com/javase/8/docs/api/javax/transaction/xa/XAResource.html).  

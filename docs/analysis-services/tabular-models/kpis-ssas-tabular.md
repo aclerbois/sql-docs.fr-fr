@@ -1,31 +1,23 @@
 ---
-title: "Indicateurs de performance clés | Documents Microsoft"
-ms.custom: 
-ms.date: 04/10/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: a0524602-5239-45a7-8c44-2477302a3637
-caps.latest.revision: 
-author: Minewiskan
+title: Indicateurs de performance clés | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a38d562df467f020db529fde8633acaa081d045c
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 6eaaf0fc4589fb07484dd10479ded4956650b245
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="kpis"></a>Indicateurs de performance clés
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Un *indicateur de performance clé* (KPI), dans un modèle tabulaire, permet de mesurer les performances d’une valeur, définies par une mesure de *base* par rapport à une valeur *cible* , également définie par une mesure ou par une valeur absolue. Cet article fournit des concepteurs de modèles tabulaires une présentation de base des indicateurs de performance clés dans un modèle tabulaire.  
+  Un *indicateur de performance clé* (KPI), dans un modèle tabulaire, permet de mesurer les performances d’une valeur, définies par une mesure de *base* par rapport à une valeur *cible* , également définie par une mesure ou par une valeur absolue. Cet article fournit des concepteurs de modèles tabulaires une présentation de base des indicateurs de performance clés dans un modèle tabulaire.  
   
 ##  <a name="bkmk_benefits"></a> Avantages  
  Dans la terminologie d'entreprise, un indicateur de performance clé (KPI) est une mesure quantifiable des performances d'objectifs économiques. Un KPI est fréquemment évalué dans le temps. Par exemple, le service commercial d'une organisation peut utiliser un KPI pour mesurer tous les mois la marge brute réelle par rapport à la marge brute planifiée. Le service comptable peut mesurer tous les mois les dépenses par rapport aux recettes pour évaluer les coûts ; et le service des ressources humaines peut mesurer tous les trimestres le taux de rotation du personnel. Chacun est un exemple de KPI. Les décideurs utilisent fréquemment des KPI qui sont regroupés dans un tableau de bord de l'entreprise pour obtenir une synthèse historique rapide et précise de l'activité ou déterminer les tendances.  

@@ -1,17 +1,16 @@
 ---
 title: Statistiques | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: statistics
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-statistics
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - statistical information [SQL Server], query optimization
 - query performance [SQL Server], statistics
@@ -26,19 +25,20 @@ helpviewer_keywords:
 - query optimizer [SQL Server], statistics
 - statistics [SQL Server]
 ms.assetid: b86a88ba-4f7c-4e19-9fbd-2f8bcd3be14a
-caps.latest.revision: 
+caps.latest.revision: 70
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ed0124e677f79bd25b11a4ac994f60e65f8fe82
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a44bb869e9954c0bd080f23bc6b09913ea011617
+ms.sourcegitcommit: bac61a04d11fdf61deeb03060e66621c0606c074
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="statistics"></a>Statistiques
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] L’optimiseur de requête utilise des statistiques dans l’optique de créer des plans de requête qui améliorent les performances des requêtes. Pour la plupart des requêtes, l'optimiseur de requête génère déjà les statistiques utiles à un plan de requête de haute qualité ; dans certains cas, vous devez créer des statistiques supplémentaires ou modifier la conception des requêtes pour obtenir des résultats optimaux. Cette rubrique traite des concepts de statistiques et fournit des instructions pour vous permettre d'utiliser efficacement les statistiques d'optimisation de requête.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  L'optimiseur de requête utilise des statistiques dans l'optique de créer des plans de requête qui améliorent les performances des requêtes. Pour la plupart des requêtes, l'optimiseur de requête génère déjà les statistiques utiles à un plan de requête de haute qualité ; dans certains cas, vous devez créer des statistiques supplémentaires ou modifier la conception des requêtes pour obtenir des résultats optimaux. Cette rubrique traite des concepts de statistiques et fournit des instructions pour vous permettre d'utiliser efficacement les statistiques d'optimisation de requête.  
   
 ##  <a name="DefinitionQOStatistics"></a> Composants et concepts  
 ### <a name="statistics"></a>Statistiques  
@@ -117,7 +117,7 @@ ORDER BY s.name;
     * Si la cardinalité de la table affichait une valeur de 500 ou moins au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications.
     * Si la cardinalité de la table affichait une valeur supérieure à 500 au moment de l’évaluation des statistiques, une mise à jour est effectuée toutes les 500 modifications + 20 %.
 
-* À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) de 130, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes contenues de la table. Il est défini en calculant la racine carrée de 1 000, multipliée par la cardinalité de la table actuelle. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique.  
+* À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) de 130, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes contenues de la table. Il est obtenu en calculant la racine carrée du produit de 1 000 et de la cardinalité de la table actuelle. Par exemple, si votre table contient 2 millions de lignes, le calcul est le suivant : racine carrée (1 000 * 2000000) = 44721,359. Du fait de cette modification, les statistiques sur des tables volumineuses sont mises à jour plus fréquemment. Toutefois, si une base de données affiche un niveau de compatibilité inférieur à 130, le seuil [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] s’applique.  
 
 > [!IMPORTANT]
 > À compter de [!INCLUDE[ssKilimanjaro](../../includes/ssKilimanjaro-md.md)] jusqu’à [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], ou dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et avec un [niveau de compatibilité de base de données](../../relational-databases/databases/view-or-change-the-compatibility-level-of-a-database.md) inférieur à 130, utilisez [l’indicateur de suivi 2371](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise un seuil dynamique décroissant de mise à jour des statistiques qui s’ajuste en fonction du nombre de lignes de la table.
@@ -275,6 +275,10 @@ Seul [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut créer et me
  
 > [!TIP]
 > À partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP1 CU4, utilisez l’option PERSIST_SAMPLE_PERCENT de [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md) ou [UPDATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/update-statistics-transact-sql.md) pour définir et conserver un pourcentage d’échantillonnage spécifique pour les mises à jour des statistiques suivantes qui ne définissent pas explicitement un pourcentage d’échantillonnage.
+
+### <a name="automatic-index-and-statistics-management"></a>Gestion automatique des index et des statistiques
+
+Tirez parti de solutions comme [Adaptive Index Defrag](http://github.com/Microsoft/tigertoolbox/tree/master/AdaptiveIndexDefrag) pour gérer automatiquement la défragmentation des index et les mises à jour des statistiques pour une ou plusieurs bases de données. Cette procédure choisit automatiquement s’il faut reconstruire ou réorganiser un index en fonction de son niveau de fragmentation, entre autres, et mettre à jour les statistiques avec un seuil linéaire.
   
 ##  <a name="DesignStatistics"></a> Requêtes pour une utilisation efficace des statistiques  
  Certaines implémentations de requête, telles que les variables locales et les expressions complexes contenues dans le prédicat de requête, peuvent produire des plans de requête non optimaux. Cela peut s'éviter en suivant les recommandations en matière de conception de requêtes pour une utilisation efficace des statistiques. Pour plus d’informations sur les prédicats de requête, consultez [Condition de recherche &#40;Transact-SQL&#41;](../../t-sql/queries/search-condition-transact-sql.md).  
@@ -389,4 +393,5 @@ GO
  [sys.dm_db_stats_properties &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md)   
  [sys.dm_db_stats_histogram &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-histogram-transact-sql.md)  
  [sys.stats](../../relational-databases/system-catalog-views/sys-stats-transact-sql.md)  
- [sys.stats_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-stats-columns-transact-sql.md)
+ [sys.stats_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-stats-columns-transact-sql.md)    
+ [Adaptive Index Defrag](http://github.com/Microsoft/tigertoolbox/tree/master/AdaptiveIndexDefrag)   

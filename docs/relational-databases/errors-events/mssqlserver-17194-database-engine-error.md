@@ -1,32 +1,27 @@
 ---
 title: MSSQLSERVER_17194 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - "17194"
 helpviewer_keywords:
 - 17194 (Database Engine error)
 ms.assetid: 0d03eb20-28a7-4ceb-8903-7f9420a620f7
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 11
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2a825c018485a699a6efe62df7dfdd533dca40db
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 86b31ea758d754e4c70402ad478ef0ea7ee5707c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver17194"></a>MSSQLSERVER_17194
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

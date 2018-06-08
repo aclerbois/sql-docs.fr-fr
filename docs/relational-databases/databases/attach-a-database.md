@@ -1,33 +1,32 @@
 ---
-title: "Attacher une base de données | Microsoft Docs"
-ms.custom: 
+title: Attacher une base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.attachdatabase.f1
 helpviewer_keywords:
 - database attaching [SQL Server]
 - attaching databases [SQL Server]
 ms.assetid: b4efb0ae-cfe6-4d81-a4b4-6e4916885caa
-caps.latest.revision: 
+caps.latest.revision: 52
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 04d101550bb7a1215c261419e42820af45ab5098
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 04097e3b88a7d15f13546eca3f9abffe09d15f19
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34581883"
 ---
 # <a name="attach-a-database"></a>Attacher une base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -165,7 +164,8 @@ Nous ne recommandons pas l’utilisation des opérations de détachement et d’
   ``` 
   
 ## <a name="see-also"></a> Voir aussi  
- [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../t-sql/statements/create-database-sql-server-transact-sql.md)   
+ [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../t-sql/statements/create-database-sql-server-transact-sql.md) 
+ <br>[Gérer les métadonnées lors de la mise à disposition d’une base de données sur un autre serveur](manage-metadata-when-making-a-database-available-on-another-server.md)  
  [Détacher une base de données](../../relational-databases/databases/detach-a-database.md)  
   
   

@@ -1,28 +1,25 @@
 ---
-title: PDOStatement::bindColumn | Microsoft Docs
+title: PDOStatement::bindColumn | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: bbdcea53-d23d-4769-89a0-95c7cf4d5390
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d5f85c59eec602a483dd68da5df030f4d5cf18d6
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: d1f08ac4e7c0060f6ea644d2b63c07541ac79249
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdostatementbindcolumn"></a>PDOStatement::bindColumn
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

@@ -1,34 +1,23 @@
 ---
-title: "Créer, modifier ou supprimer une relation d’attribut | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- attributes [Analysis Services], member properties
-- member properties [Analysis Services], creating
-ms.assetid: 137b2f40-5dfb-4141-9110-70f961f259cb
-caps.latest.revision: 
-author: Minewiskan
+title: Créer, modifier ou supprimer une relation d’attribut | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e521c6eb3bbcb1c40dde10c5767ea024e6eaa3c1
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3f209670d9d51e62e457d86507f1c2d11cc10fa2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-relationships---create-modify-or-delete-relationship"></a>Attribut de relations - créer, modifier ou supprimer la relation
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous pouvez créer, modifier ou supprimer une relation d’attribut entre des attributs dans une dimension à l’aide de l’onglet **Relations d’attributs[!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] du Concepteur de dimensions dans** .  
+  Vous pouvez créer, modifier ou supprimer une relation d’attribut entre des attributs dans une dimension à l’aide de l’onglet **Relations d’attributs[!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] du Concepteur de dimensions dans** .  
   
 ### <a name="to-create-an-attribute-relationship"></a>Pour créer une relation d'attribut  
   

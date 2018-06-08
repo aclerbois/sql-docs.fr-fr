@@ -1,28 +1,27 @@
 ---
-title: "Évaluation des schémas d’Oracle pour la Conversion (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Évaluation des schémas d’Oracle pour la Conversion (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Analyzing Conversion Problems
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Analyzing Conversion Problems
 ms.assetid: 4de9bcf6-1346-4740-87f9-7f24a8226357
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 72e4156ed3ac58a4870ab5487a3ece2e3adeaadb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 6a05353860c8012bbd0f3e97d1262107c39a45e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="assessing-oracle-schemas-for-conversion-oracletosql"></a>Évaluation des schémas d’Oracle pour la Conversion (OracleToSQL)
 Avant de charger des objets et de migrer des données vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], vous devez déterminer combien de temps et de complexité la migration sera prend la migration. SSMA peut créer un rapport d’évaluation qui affiche le pourcentage d’objets qui seront converties correctement. SSMA permet également d’afficher les problèmes spécifiques qui provoquent des échecs de conversion.  
@@ -80,13 +79,13 @@ Le volet des statistiques de Conversion affiche les statistiques de conversion. 
   
     -   Mettre à jour la syntaxe Oracle dans SSMA. Vous pouvez mettre à jour la syntaxe pour les procédures, fonctions, déclencheurs, fonctions empaquetées et empaquetées. Pour mettre à jour la syntaxe, sélectionnez l’objet dans le volet Explorateur de métadonnées d’Oracle, cliquez sur le **SQL** onglet et modifiez le code SQL. Lorsque vous quittez l’élément, vous devrez enregistrer la syntaxe de la mise à jour. Vous pouvez afficher les erreurs signalées pour l’objet sur le **rapport** onglet.  
   
-    -   Dans Oracle, vous pouvez modifier l’objet Oracle pour supprimer ou modifier tout code problématique. Pour charger le code mis à jour dans SSMA, vous devez mettre à jour les métadonnées. Pour plus d’informations, consultez [la connexion à la base de données Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/connecting-to-oracle-database-oracletosql.md).  
+    -   Dans Oracle, vous pouvez modifier l’objet Oracle pour supprimer ou modifier tout code problématique. Pour charger le code mis à jour dans SSMA, vous devez mettre à jour les métadonnées. Pour plus d’informations, consultez [la connexion à la base de données Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/connecting-to-oracle-database-oracletosql.md).  
   
     -   Vous pouvez exclure l’objet de la migration. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Explorateur de métadonnées et de l’Explorateur de métadonnées Oracle, désactivez la case à cocher en regard de l’élément avant de charger les objets dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et migrer les données à partir d’Oracle.  
   
 ## <a name="next-step"></a>Étape suivante  
-[Conversion de schémas d’Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/converting-oracle-schemas-oracletosql.md)  
+[Conversion de schémas d’Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/converting-oracle-schemas-oracletosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration bases de données Oracle pour SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
+[Bases de données de migration d’Oracle vers SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
   

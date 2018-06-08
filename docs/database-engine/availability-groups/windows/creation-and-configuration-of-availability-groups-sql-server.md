@@ -1,34 +1,32 @@
 ---
-title: "Création et configuration des groupes de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Création et configuration des groupes de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], deploying
 - Availability Groups [SQL Server], configuring
 - Availability Groups [SQL Server], creating
 ms.assetid: 7f89fab8-6ee2-4273-9de0-e594bfb9407f
-caps.latest.revision: "30"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 30
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c881c4c092ad7f65de48ed8bdfeff69d46440f39
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d72add61cd6276978a70c7db59b0f65d9af3b889
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768625"
 ---
 # <a name="creation-and-configuration-of-availability-groups-sql-server"></a>Création et configuration des groupes de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les rubriques de cette section expliquent comment déployer une implémentation [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] sur les instances de [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)] qui résident sur des nœuds de clustering de basculement Windows Server différents dans un seul cluster de basculement WSFC.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Les rubriques de cette section expliquent comment déployer une implémentation [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] sur les instances de [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)] qui résident sur des nœuds de clustering de basculement Windows Server différents dans un seul cluster de basculement WSFC.  
   
  Avant de créer votre premier groupe de disponibilité, il est fortement recommandé de vous familiariser avec les informations présentées dans les rubriques suivantes :  
   

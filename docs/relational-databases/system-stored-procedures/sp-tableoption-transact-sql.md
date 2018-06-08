@@ -1,16 +1,14 @@
 ---
 title: sp_tableoption (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_tableoption_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_tableoption
 ms.assetid: 0a57462c-1057-4c7d-bce3-852cc898341d
-caps.latest.revision: 
+caps.latest.revision: 60
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b468d62444bd3c9217cc7f931a2786034baec12
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 33027f15081102cca289923b858a4a960a1359e4
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptableoption-transact-sql"></a>sp_tableoption (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -63,8 +61,8 @@ sp_tableoption [ @TableNamePattern = ] 'table'
 |table lock on bulk load|Désactivée (valeur par défaut), oblige le processus de chargement en masse effectué sur les tables définies par l'utilisateur à obtenir des verrous de lignes. Activée, oblige le processus de chargement en masse effectué sur les tables définies par l'utilisateur à obtenir un verrou de mise à jour en bloc.|  
 |insert row lock|N'est plus pris en charge.<br /><br /> Cette option n'a aucun effet sur le comportement de verrouillage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et elle n'est incluse qu'à des fins de compatibilité des scripts et des procédures existants.|  
 |text in row|Si la valeur est OFF ou 0 (désactivé, valeur par défaut), le comportement en cours n'est pas modifié, et la ligne ne contient pas d'objet BLOB.<br /><br /> Lorsque spécifié et @OptionValue a la valeur ON (activé) ou une valeur entière comprise entre 24 et 7000, les nouvelles **texte**, **ntext**, ou **image** chaînes sont stockées directement dans la ligne de données. Tous les objets BLOB (objet binaire volumineux : **texte**, **ntext**, ou **image** données) sont convertis au format text in row lorsque la valeur de l’objet BLOB est mise à jour. Pour plus d'informations, consultez la section Notes.|  
-|large value types out of row|1 = **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml** et les colonnes de type volumineux définis par l’utilisateur (UDT) dans la table sont stockées hors ligne, avec un pointeur de 16 octets vers la racine.<br /><br /> 0 = **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml** et les valeurs UDT volumineuses sont stockées directement dans la ligne de données, jusqu'à une limite de 8 000 octets et tant que la valeur peut être contenue dans l’enregistrement. Si la valeur ne tient pas dans l'enregistrement, un pointeur est stocké dans la ligne et le reste est stocké hors de la ligne dans l'espace de stockage LOB. 0 est la valeur par défaut.<br /><br /> Le type défini par l'utilisateur (UDT) volumineux s'applique à : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. <br /><br /> Utilisez l’option TEXTIMAGE_ON de [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) pour spécifier un emplacement de stockage des types de données volumineuses. |  
-|format de stockage vardecimal|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Lorsque la valeur est TRUE, ON ou 1, la table désignée est activée pour le format de stockage vardecimal. Lorsque la valeur est FALSE, OFF ou 0, la table n'est pas activée pour le format de stockage vardecimal. Format de stockage VarDecimal peut être activé uniquement lorsque la base de données a été activée pour le format de stockage vardecimal à l’aide de [sp_db_vardecimal_storage_format](../../relational-databases/system-stored-procedures/sp-db-vardecimal-storage-format-transact-sql.md). Dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures, **vardecimal** le format de stockage est déconseillé. Utilisez plutôt la compression ROW. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md). 0 est la valeur par défaut.|  
+|large value types out of row|1 = **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml** et les colonnes de type volumineux définis par l’utilisateur (UDT) dans la table sont stockées hors ligne, avec un pointeur de 16 octets vers la racine.<br /><br /> 0 = **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml** et les valeurs UDT volumineuses sont stockées directement dans la ligne de données, jusqu'à une limite de 8 000 octets et tant que la valeur peut être contenue dans l’enregistrement. Si la valeur ne tient pas dans l'enregistrement, un pointeur est stocké dans la ligne et le reste est stocké hors de la ligne dans l'espace de stockage LOB. La valeur par défaut est 0.<br /><br /> Le type défini par l'utilisateur (UDT) volumineux s'applique à : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. <br /><br /> Utilisez l’option TEXTIMAGE_ON de [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) pour spécifier un emplacement de stockage des types de données volumineuses. |  
+|format de stockage vardecimal|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Lorsque la valeur est TRUE, ON ou 1, la table désignée est activée pour le format de stockage vardecimal. Lorsque la valeur est FALSE, OFF ou 0, la table n'est pas activée pour le format de stockage vardecimal. Format de stockage VarDecimal peut être activé uniquement lorsque la base de données a été activée pour le format de stockage vardecimal à l’aide de [sp_db_vardecimal_storage_format](../../relational-databases/system-stored-procedures/sp-db-vardecimal-storage-format-transact-sql.md). Dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et versions ultérieures, **vardecimal** le format de stockage est déconseillé. Utilisez plutôt la compression ROW. Pour plus d'informations, consultez [Data Compression](../../relational-databases/data-compression/data-compression.md). La valeur par défaut est 0.|  
   
  [ @OptionValue =] '*valeur*'  
  Est si le *option_name* est activé (TRUE, ON ou 1) ou désactivé (FALSE, OFF ou 0). *valeur* est **varchar(12)**, sans valeur par défaut. *valeur* respecte la casse.  
@@ -85,7 +83,7 @@ sp_tableoption [ @TableNamePattern = ] 'table'
   
 -   l'option text in row est activée ;  
   
--   La longueur de la chaîne est plus courte que la limite spécifiée dans@OptionValue  
+-   La longueur de la chaîne est plus courte que la limite spécifiée dans @OptionValue  
   
 -   l'espace disque disponible s'avère suffisant dans la ligne de données.  
   
@@ -109,7 +107,7 @@ sp_tableoption [ @TableNamePattern = ] 'table'
  Si vous convertissez une existant LOB colonne de type (text, ntext ou image) en types de valeurs élevées de petite à moyenne (varchar (max), nvarchar (max), ou varbinary et la plupart des instructions ne font pas référence les colonnes de type de valeur élevée dans votre environnement, envisagez de **large_value_types_out_of_row** à **1** pour obtenir des performances optimales. Lorsque le **large_value_types_out_of_row** valeur de l’option est modifié, existant varchar (max), nvarchar (max), varbinary (max), et les valeurs xml ne sont pas immédiatement converties. Le stockage des chaînes est modifié lorsqu'elles sont mises à jour. Les nouvelles valeurs insérées dans une table sont stockées en fonction de l'option de table active. Pour des résultats immédiats, soit effectuer une copie des données et reremplissez la table après avoir modifié le **large_value_types_out_of_row** définition ou de mettre à jour chaque colonne de types de valeurs élevées de petite à moyenne à elle-même, afin que le stockage des chaînes est modifié avec l’option de table en vigueur. Vous pouvez également recréer les index sur la table après la mise à jour ou le nouveau remplissage afin de condenser la table. 
     
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  L'exécution de sp_tableoption nécessite une autorisation ALTER sur la table.  
   
 ## <a name="examples"></a>Exemples  
@@ -143,6 +141,6 @@ EXEC sp_tableoption 'Production.WorkOrderRouting',
  [sys.tables &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-tables-transact-sql.md)   
  [OBJECTPROPERTY &#40;Transact-SQL&#41;](../../t-sql/functions/objectproperty-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
   
   

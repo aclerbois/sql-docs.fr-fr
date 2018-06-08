@@ -1,16 +1,15 @@
 ---
 title: sp_dropmergepublication (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,16 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dropmergepartition
 ms.assetid: 1be511c1-79ff-4947-9379-78d83b7b8945
-caps.latest.revision: 
+caps.latest.revision: 30
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 07a21df98865031af637616abed3151785db68b5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 890a265b51b5048f135401ac6e80fc7066bc5c24
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdropmergepartition-transact-sql"></a>sp_dropmergepartition (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -48,13 +47,13 @@ sp_dropmergepartition [ @publication = ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publication** ] = **'***publication***'**  
+ [ **@publication**] = **'***publication***'**  
  Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
- [  **@suser_sname** =] **'***suser_sname***'**  
+ [ **@suser_sname**=] **'***suser_sname***'**  
  Est la valeur de la [SUSER_SNAME](../../t-sql/functions/suser-sname-transact-sql.md) fonction sur l’abonné est utilisée pour définir la partition. *SUSER_SNAME* est **sysname**, sans valeur par défaut.  
   
- [  **@host_name**  =] **'***host_name***'**  
+ [ **@host_name** =] **'***host_name***'**  
  Est la valeur de la [HOST_NAME](../../t-sql/functions/host-name-transact-sql.md) fonction sur l’abonné est utilisée pour définir la partition. *HOST_NAME* est **sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -63,7 +62,7 @@ sp_dropmergepartition [ @publication = ] 'publication'
 ## <a name="remarks"></a>Notes  
  **sp_dropmergepublication** est utilisé dans la réplication de fusion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_dropmergepublication**.  
   
 ## <a name="see-also"></a>Voir aussi  

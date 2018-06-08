@@ -1,27 +1,23 @@
 ---
-title: "Gérer la saisie semi-automatique par tabulation (SQL Server PowerShell) | Microsoft Docs"
-ms.custom: 
+title: Gérer la saisie semi-automatique par tabulation (SQL Server PowerShell) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: powershell
-ms.service: 
-ms.component: powershell
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: scripting
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6296848a-890f-4ad3-8d9f-92ed6a79aa00
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab73a5c389aaf208c82cbd35714a47dfc52e30e7
-ms.sourcegitcommit: 779f3398e4e3f4c626d81ae8cedad153bee69540
+ms.openlocfilehash: 763086beeeedb4cf0572b86284ae0a4d41fa3dcf
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="manage-tab-completion-sql-server-powershell"></a>Gérer la saisie semi-automatique par tabulation (SQL Server PowerShell)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

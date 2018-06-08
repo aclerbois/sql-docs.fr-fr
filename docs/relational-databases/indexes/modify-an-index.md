@@ -1,32 +1,29 @@
 ---
-title: "Modifier un index | Microsoft Docs"
-ms.custom: 
+title: Modifier un index | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - indexes [SQL Server], modifying
 - modifying indexes
 - index changes [SQL Server]
 ms.assetid: 97e3110d-fde7-4f5d-9309-dc1697960aeb
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 19
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 539cd81a09c10703b4826e37245a9f225f606554
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ee158d87b9554ab75fea0462fe5e0444195c9f5d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modify-an-index"></a>Modifier un index
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx_md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

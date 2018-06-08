@@ -1,31 +1,29 @@
 ---
-title: "Établir une connexion à une base de données Access | Microsoft Docs"
-ms.custom: 
+title: Établir une connexion à une base de données Access | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Access [Integration Services]
 - Access databases [Integration Services]
 ms.assetid: 229fbd46-ef6a-4609-a4cc-d80d52c33cf1
-caps.latest.revision: 
+caps.latest.revision: 18
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 44c04e7978ca425eb6fb625374f9404e3f286fde
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: c8e0811b894e96c4ac7b11ef377765aa6b56cdbf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-an-access-database"></a>Établir une connexion à une base de données Access
   Connecter un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] à une source de données Microsoft Office Access requiert un gestionnaire de connexions OLE DB et un fournisseur de données. Le fournisseur de données que vous utilisez dépend de la version d’Access qui a été utilisée pour créer la source de données :  

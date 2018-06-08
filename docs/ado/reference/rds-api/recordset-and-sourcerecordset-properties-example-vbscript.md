@@ -1,32 +1,30 @@
 ---
-title: "Recordset et SourceRecordset, propriétés-exemple (VBScript) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Recordset et SourceRecordset, propriétés-exemple (VBScript) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Source property [ADO], VBScript example
 - Recordset property [ADO], VBScript example
 ms.assetid: 95175316-cd10-4cf7-96ba-2a226fd97701
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 21aa619e9b189fbf7bf67d443bb42b4f356fc870
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f0529863a3c693be35860df0d5e5751f04588359
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recordset-and-sourcerecordset-properties-example-vbscript"></a>Recordset et SourceRecordset, propriétés-exemple (VBScript)
 > [!IMPORTANT]

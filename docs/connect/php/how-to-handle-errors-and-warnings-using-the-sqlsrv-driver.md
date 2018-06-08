@@ -2,29 +2,26 @@
 title: 'Comment : gérer les erreurs et avertissements à l’aide du pilote SQLSRV | Documents Microsoft'
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - errors and warnings
 ms.assetid: fa231d60-4c06-4137-89e8-097c28638c5d
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4b7e2c9157cf37ab35987ebc9bb6a4d6615f80ba
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 1f16a1b5af939ce7880a3f775631763c75e768b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-handle-errors-and-warnings-using-the-sqlsrv-driver"></a>Procédure : gérer les erreurs et avertissements à l’aide du pilote SQLSRV
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -49,7 +46,7 @@ Dans le premier appel à une **sqlsrv** (fonction) ([sqlsrv_configure](../../con
   
 Notez également que l’exemple de code vérifie les erreurs après chaque appel à une fonction **sqlsrv** . Il s’agit de la pratique recommandée.  
   
-Cet exemple suppose que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande. Quand l’exemple est exécuté sur une nouvelle installation de la base de données AdventureWorks, il génère trois avertissements et deux erreurs. Les deux premiers avertissements sont des avertissements standard émis quand vous vous connectez à une base de données. Le troisième avertissement se produit parce que les heures de congé disponibles d’un employé sont mises à jour vers une valeur inférieure à zéro. Les erreurs se produisent parce que les heures de congé disponibles d’un employé sont mises à jour vers une valeur inférieure à -40 heures, ce qui constitue une violation d’une contrainte sur la table.  
+Cet exemple suppose que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande. Quand l’exemple est exécuté sur une nouvelle installation de la base de données AdventureWorks, il génère trois avertissements et deux erreurs. Les deux premiers avertissements sont des avertissements standard émis quand vous vous connectez à une base de données. Le troisième avertissement se produit parce que les heures de congé disponibles d’un employé sont mises à jour vers une valeur inférieure à zéro. Les erreurs se produisent parce que les heures de congé disponibles d’un employé sont mises à jour vers une valeur inférieure à -40 heures, ce qui constitue une violation d’une contrainte sur la table.  
   
 ```  
 <?php  

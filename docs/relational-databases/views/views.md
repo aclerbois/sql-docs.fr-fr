@@ -1,30 +1,28 @@
 ---
-title: "Vues | Microsoft Docs"
-ms.custom: 
+title: Vues | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: views
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-views
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - views [SQL Server], about views
 ms.assetid: ada83c28-e8b7-45d9-b53c-b3d67c8820c8
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: de1be71afd708fab6f380daf4b60a0aeb87b2665
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d233f7484a64769d2c2079f9683dd99e43d2476e
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708707"
 ---
 # <a name="views"></a>Vues
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-asdw-pdw-md.md)]

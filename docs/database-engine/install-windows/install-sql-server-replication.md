@@ -1,17 +1,13 @@
 ---
-title: "Installer la réplication SQL Server | Microsoft Docs"
-ms.custom: 
+title: Installer la réplication SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - components [SQL Server replication]
 - command line installations [SQL Server replication]
@@ -19,15 +15,16 @@ helpviewer_keywords:
 - replication [SQL Server], installing
 - command prompt [SQL Server replication]
 ms.assetid: c50ad078-060b-4a8d-ad45-9e31a8d85729
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 41
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 70e40040c5302af98ebca91248f14c9077fc43b6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c92777754814f0c0dc9e49919bbffe068eed0899
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770445"
 ---
 # <a name="install-sql-server-replication"></a>Installer la réplication SQL Server
 

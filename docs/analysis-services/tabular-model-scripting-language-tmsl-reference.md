@@ -1,32 +1,24 @@
 ---
-title: "Référence du langage (TMSL) de script de modèle tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-ms.assetid: c700d7f8-7e01-4052-a9ad-8200dd4009f2
-caps.latest.revision: "20"
-author: Minewiskan
+title: Référence du langage (TMSL) de script de modèle tabulaire | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tmsl
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: de637476cd0aa2577c850062dffebc0e4fc66238
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: 713fecbb367ac4717604c14b6f23baab905a993f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-model-scripting-language-tmsl-reference"></a>Référence du langage (TMSL) de script de modèle tabulaire
 [!INCLUDE[ssas-appliesto-sqlas-aas](../includes/ssas-appliesto-sqlas-aas.md)]
 
-  Écriture de scripts langage TMSL (Tabular Model) est la syntaxe de définition de modèle de commande et d’objet pour les bases de données de modèle tabulaire Analysis Services au niveau de compatibilité 1200 ou supérieur. TMSL communique à Analysis Services via le protocole XMLA, où le [XMLA. Exécutez](../analysis-services/xmla/xml-elements-methods-execute.md) méthode accepte à la fois basée sur JSON **instruction** scripts TMSL, ainsi que les scripts basés sur XML traditionnels dans [Analysis Services Scripting Language &#40; ASSL de XMLA &#41; ](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md).  
+  Écriture de scripts langage TMSL (Tabular Model) est la syntaxe de définition de modèle de commande et d’objet pour les bases de données de modèle tabulaire Analysis Services au niveau de compatibilité 1200 ou supérieur. TMSL communique à Analysis Services via le protocole XMLA, où le [XMLA. Exécutez](../analysis-services/xmla/xml-elements-methods-execute.md) méthode accepte à la fois basée sur JSON **instruction** scripts TMSL, ainsi que les scripts basés sur XML traditionnels dans [Analysis Services Scripting Language &#40;ASSL de XMLA&#41; ](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md).  
   
  Les éléments clés de TMSL sont les suivantes :  
   
@@ -41,9 +33,9 @@ ms.lasthandoff: 01/22/2018
 ## <a name="how-to-use-tmsl"></a>L’utilisation de TMSL  
  Le moyen le plus simple pour Explorer l’écriture de scripts TMSL utilise les commandes CREATE, ALTER, DELETE ou processus dans SQL Server Management Studio (SSMS) sur un modèle que vous connaissez déjà. En supposant que vous utilisez un modèle existant, n’oubliez pas mettre à niveau au niveau de compatibilité 1200 ou supérieur.  
   
-1.  Pour trouver la commande que vous souhaitez utiliser : [commandes dans le langage de script de modèle tabulaire &#40; TMSL &#41;](../analysis-services/tabular-models-scripting-language-commands/tmsl-reference-commands.md)  
+1.  Pour trouver la commande que vous souhaitez utiliser : [commandes dans le langage de script de modèle tabulaire &#40;TMSL&#41;](../analysis-services/tabular-models-scripting-language-commands/tmsl-reference-commands.md)  
   
-2.  Vérifier la référence de définition d’objet pour les objets utilisés dans la commande : [définitions d’objets dans le langage de script de modèle tabulaire &#40; TMSL &#41;](../analysis-services/tabular-models-scripting-language-objects/tmsl-reference-tabular-objects.md)  
+2.  Vérifier la référence de définition d’objet pour les objets utilisés dans la commande : [définitions d’objets dans le langage de script de modèle tabulaire &#40;TMSL&#41;](../analysis-services/tabular-models-scripting-language-objects/tmsl-reference-tabular-objects.md)  
   
 3.  Choisissez une méthode d’envoi d’un script TMSL :  
   
@@ -61,7 +53,7 @@ ms.lasthandoff: 01/22/2018
 ## <a name="scripting-languages-in-analysis-services"></a>Langages de script dans Analysis Services  
  Analysis Services prend en charge les langages de script ASSL et TMSL. Seuls les modèles tabulaires créés au niveau de compatibilité 1200 ou supérieur sont décrits dans TMS au format JSON.  
   
- [Analysis Services Scripting Language &#40; ASSL de XMLA &#41; ](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md) a été le premier langage de script, et est toujours le langage de script uniquement pour les modèles multidimensionnels et tabulaires aux niveaux de compatibilité inférieurs (1100 ou 1103). Dans ASSL, les modèles tabulaires 110 x sont décrits en termes de multidimensionnelles, telles que **cube** (pour un modèle) et **measuregroup** (pour une table).  
+ [Analysis Services Scripting Language &#40;ASSL de XMLA&#41; ](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md) a été le premier langage de script, et est toujours le langage de script uniquement pour les modèles multidimensionnels et tabulaires aux niveaux de compatibilité inférieurs (1100 ou 1103). Dans ASSL, les modèles tabulaires 110 x sont décrits en termes de multidimensionnelles, telles que **cube** (pour un modèle) et **measuregroup** (pour une table).  
   
 > [!NOTE]  
 >  Dans [SQL Server Data Tools (SSDT), vous pouvez mettre à niveau un modèle tabulaire de version antérieur pour utiliser TMSL en passant des sa **CompatibilityLevel** supérieure ou égale à 1200. N’oubliez pas de cette mise à niveau est irréversible. Avant la mise à niveau, sauvegardez votre modèle en cas de besoin plus tard la version d’origine.  
@@ -80,7 +72,7 @@ ms.lasthandoff: 01/22/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Niveau de compatibilité pour les modèles tabulaires dans Analysis Services](../analysis-services/tabular-models/compatibility-level-for-tabular-models-in-analysis-services.md)   
- [Analysis Services Scripting Language &#40; ASSL de XMLA &#41;](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)   
+ [Analysis Services Scripting Language &#40;ASSL de XMLA&#41;](../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)   
  [Déterminer le mode serveur d’une instance Analysis Services](../analysis-services/instances/determine-the-server-mode-of-an-analysis-services-instance.md)  
   
   

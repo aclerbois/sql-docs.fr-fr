@@ -1,16 +1,15 @@
 ---
 title: sp_replqueuemonitor (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_replqueuemonitor
 ms.assetid: 6909a3f1-43a2-4df5-a6a5-9e6f347ac841
-caps.latest.revision: 
+caps.latest.revision: 25
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bd29cdd9e22873dd7d10db99078f25ce7e15d55f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8c1d4737d5f1502d98a58f268b58c93cf71d71ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spreplqueuemonitor-transact-sql"></a>sp_replqueuemonitor (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,16 +48,16 @@ sp_replqueuemonitor [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut. Le serveur doit être configuré pour la publication. Valeur NULL pour tous les serveurs de publication.  
   
- [  **@publisherdb**  =] **'***publisher_db***'** ]  
+ [ **@publisherdb** =] **'***publisher_db***'** ]  
  Nom de la base de données de publication. *publisher_db* est **sysname**, avec NULL comme valeur par défaut. Valeur NULL pour toutes les bases de données de publication.  
   
- [  **@publication**  =] **'***publication***'** ]  
+ [ **@publication** =] **'***publication***'** ]  
  Nom de la publication. *publication*est **sysname**, avec NULL comme valeur par défaut. Valeur NULL pour toutes les publications.  
   
- [  **@tranid**  =] **'***tranid***'** ]  
+ [ **@tranid** =] **'***tranid***'** ]  
  Est l’ID de transaction. *tranid*est **sysname**, avec NULL comme valeur par défaut. Valeur NULL pour toutes les transactions.  
   
  [**@queuetype=** ] **'***queuetype***'** ]  
@@ -77,7 +75,7 @@ sp_replqueuemonitor [ @publisher = ] 'publisher'
 ## <a name="remarks"></a>Notes  
  **sp_replqueuemonitor** est utilisée dans la réplication d’instantané ou réplication transactionnelle avec abonnements mis à jour en file d’attente. Les messages de file d'attente qui ne contiennent pas de commandes SQL ou qui font partie d'une commande SQL globale ne sont pas affichés.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_replqueuemonitor**.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,17 +1,16 @@
 ---
-title: "Données spatiales (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Données spatiales (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - geography data type [SQL Server], spatial storage design
 - planar spatial data [SQL Server], designing
@@ -21,16 +20,17 @@ helpviewer_keywords:
 - spatial storage [SQL Server]
 - geodetic spatial data [SQL Server], designing
 ms.assetid: 41a132a1-09e2-4426-b9df-225270cb8e15
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 6aca5df8dcdad69c0157a73e27925cd19e8a3307
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 4ba5039e17b71be7efc00772e37418caf3eb58e3
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34707087"
 ---
 # <a name="spatial-data-sql-server"></a>Données spatiales (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

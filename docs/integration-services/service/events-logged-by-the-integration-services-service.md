@@ -1,32 +1,30 @@
 ---
-title: "Événements consignés par le service Integration Services | Microsoft Docs"
-ms.custom: 
+title: Événements consignés par le service Integration Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - service [Integration Services], events
 - events [Integration Services], service
 - Integration Services service, events
 ms.assetid: d4122dcf-f16f-47a0-93a2-ffa3d0d4f9cf
-caps.latest.revision: 
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9ba7f6ab3bda7bfc40acffc54fa56131ba53514b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 4d08a42e1d2320bf701192fdb35b4d2043d70f74
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="events-logged-by-the-integration-services-service"></a>Événements consignés par le service Integration Services
   Le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] consigne différents messages dans le journal des événements des applications Windows. Le service enregistre ces messages lorsque le service démarre, lorsqu'il s'arrête et lorsque certains problèmes se produisent.  

@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetDefaults (classe SInstance) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetDefaults (classe SInstance) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetDefaults Method (SInstance Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetDefaults method
 ms.assetid: dc3c6a85-0711-4688-bf4f-91168c57af28
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a62e4e235be2e7c31e210eba7fb2e04b75d5e35b
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 50f735e7d41d4a77f2d99aa11bf92b474a033629
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setdefaults-method-sinstance-class"></a>Méthode SetDefaults (classe SInstance)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

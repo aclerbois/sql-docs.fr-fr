@@ -1,16 +1,14 @@
 ---
-title: "Extension du package à l’aide de la tâche de script | Microsoft Docs"
-ms.custom: 
+title: Extension du package à l’aide de la tâche de script | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-scripting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - scripts [Integration Services], about Script task with packages
 - SSIS Script task, about Script task
 ms.assetid: 911e6d26-a6fd-4fc3-a111-bf5f048e9bff
-caps.latest.revision: 
+caps.latest.revision: 57
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 801cae05602e9c618637be57298572a9ca27aeb8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: f7481529628f786f117050626e2207840a29dcea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extending-the-package-with-the-script-task"></a>Extension du package à l'aide de la tâche de script
   La tâche de script étend les fonctionnalités d’exécution des packages [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] à l’aide de code personnalisé écrit dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Visual Basic ou [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Visual C# qui est compilé et exécuté au moment de l’exécution des packages. La tâche de script simplifie le développement d'une tâche d'exécution personnalisée lorsque les tâches incluses dans [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] ne répondent pas complètement à vos besoins. La tâche de script écrit tout le code d'infrastructure requis à votre place, ce qui vous permet de vous concentrer exclusivement sur le code requis pour votre traitement personnalisé.  

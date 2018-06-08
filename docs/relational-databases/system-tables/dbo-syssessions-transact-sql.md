@@ -1,16 +1,14 @@
 ---
-title: dbo.syssessions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: dbo.syssessions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.syssessions_TSQL
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - syssessions system table
 ms.assetid: 187819b6-c7f4-4a26-b74c-0a89e96695cf
-caps.latest.revision: 
+caps.latest.revision: 14
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3099413685b594404a577d71011bb1738b756ac1
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 222e9601e7f683419304f3530aaedeb79c5a776e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbosyssessions-transact-sql"></a>dbo.syssessions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

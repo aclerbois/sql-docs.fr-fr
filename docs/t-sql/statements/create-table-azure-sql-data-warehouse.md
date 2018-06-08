@@ -1,30 +1,29 @@
 ---
 title: CREATE TABLE (Azure SQL Data Warehouse) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse, pdw
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-data-warehouse
 ms.component: t-sql|statements
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: ea21c73c-40e8-4c54-83d4-46ca36b2cf73
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 59
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f6e639bf97ed132b6ace7128b4cbe9b6f3ce474e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: 237c0a53319d7b4c0478cdd8527737401ab5b5f1
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-table-azure-sql-data-warehouse"></a>CREATE TABLE (Azure SQL Data Warehouse)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]
@@ -174,12 +173,12 @@ Crée une ou plusieurs partitions de table. Il s’agit de coupes de table horiz
 Pour obtenir un tableau des conversions des types de données, consultez la section Conversions implicites de la rubrique [CAST et CONVERT (Transact-SQL)](http://msdn.microsoft.com/library/ms187928/).
 
 `datetimeoffset` [ ( *n* ) ]  
- La valeur par défaut de *n* est 7.  
+ La valeur par défaut pour *n* est 7.  
   
  `datetime2` [ ( *n* ) ]  
-Identique à `datetime`, sauf que vous pouvez spécifier le nombre de fractions de seconde. La valeur par défaut de *n* est `7`.  
+Identique à `datetime`, sauf que vous pouvez spécifier le nombre de fractions de seconde. La valeur par défaut pour *n* est `7`.  
   
-|Valeur de *n*|Précision|Échelle|  
+|Valeur *n*|Précision|Échelle|  
 |--:|--:|-:|  
 |`0`|19|0|  
 |`1`|21| 1|  
@@ -200,12 +199,12 @@ Identique à `datetime`, sauf que vous pouvez spécifier le nombre de fractions 
  Stocke une date en utilisant au maximum 10 caractères pour l’année, le mois et le jour selon le calendrier grégorien. La taille de stockage est de 3 octets. La date est stockée sous forme d’entier.  
   
  `time` [ ( *n* ) ]  
- La valeur par défaut de *n* est `7`.  
+ La valeur par défaut pour *n* est `7`.  
   
  `float` [ ( *n* ) ]  
  Type de données numériques approximatives à utiliser avec des données numériques à virgule flottante. Les données à virgule flottante sont approximatives, ce qui signifie que certaines valeurs de ce type de données ne peuvent pas être représentées de manière précise. *n* spécifie le nombre de bits utilisés pour stocker la mantisse de `float` en notation scientifique. Par conséquent, *n* détermine la précision et la taille du stockage. Si *n* est spécifié, sa valeur doit être comprise entre `1` et `53`. La valeur par défaut de *n* est `53`.  
   
-| Valeur de *n* | Précision | Taille de stockage |  
+| Valeur *n* | Précision | Taille de stockage |  
 | --------: | --------: | -----------: |  
 | 1-24   | 7 chiffres  | 4 octets      |  
 | 25-53  | 15 chiffres | 8 octets      |  
@@ -255,22 +254,22 @@ Identique à `datetime`, sauf que vous pouvez spécifier le nombre de fractions 
  Type de données entier qui peut prendre la valeur `1`, `0` ou NULL. [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] optimise le stockage des colonnes de bits. Si une table contient 8 colonnes de bits ou moins, celles-ci sont stockées comme 1 octet. Si elle contient entre 9 et 16 colonnes de bits, celles-ci sont stockées comme 2 octets, etc.  
   
  `nvarchar` [ ( *n* | `max` ) ]  -- `max` s’applique uniquement à [!INCLUDE[ssSDW](../../includes/sssdw-md.md)].  
- Données de type caractères Unicode de longueur variable. *n* peut être une valeur comprise entre 1 et 4000. `max` indique que la taille de stockage maximale occupée est de 2^31-1 octets (2 Go). La taille de stockage en octets correspond à deux fois le nombre de caractères entrés plus 2 octets. Les données saisies peuvent avoir une longueur de 0 caractère.  
+ Données de type caractères Unicode de longueur variable. *n* peut être une valeur comprise entre 1 et 4000. `max` indique que la taille de stockage maximale occupée est de 2^31-1 octets (2 Go). La taille de stockage en octets correspond à deux fois le nombre de caractères entrés plus 2 octets. Les données saisies peuvent avoir une longueur de 0 caractère.  
   
  `nchar` [ ( *n* ) ]  
- Données caractères Unicode d’une longueur fixe de *n* caractères. *n* doit être une valeur comprise entre `1` et `4000`. La taille de stockage correspond à deux fois *n* octets.  
+ Données caractères Unicode d’une longueur fixe de *n* caractères. *n* doit être une valeur comprise entre `1` et `4000`. La taille de stockage est le double de *n* octets.  
   
  `varchar` [ ( *n*  | `max` ) ]  -- `max` s’applique uniquement à [!INCLUDE[ssSDW](../../includes/sssdw-md.md)].   
- Données caractères non Unicode d’une longueur variable de *n* octets. *n* doit être une valeur comprise entre `1` et `8000`. `max` indique que la taille de stockage maximale est de 2^31-1 octets (2 Go). La taille de stockage correspond à la longueur réelle des données entrées + 2 octets.  
+ Données caractères non-Unicode d’une longueur variable de *n* octets. *n* doit être une valeur comprise entre `1` et `8000`. `max` indique que la taille de stockage maximale est de 2^31-1 octets (2 Go). La taille de stockage correspond à la longueur réelle des données entrées + 2 octets.  
   
  `char` [ ( *n* ) ]  
- Données caractères non Unicode d’une longueur fixe de *n* octets. *n* doit être une valeur comprise entre `1` et `8000`. La taille de stockage est égale à *n* octets. La valeur par défaut de *n* est de `1`.  
+ Données caractères non-Unicode d’une longueur fixe de *n* octets. *n* doit être une valeur comprise entre `1` et `8000`. La taille de stockage est égale à *n* octets. La valeur par défaut de *n* est `1`.  
   
  `varbinary` [ ( *n*  | `max` ) ]  -- `max` s’applique uniquement à [!INCLUDE[ssSDW](../../includes/sssdw-md.md)].  
- Données binaires de longueur variable. *n* peut être une valeur comprise entre `1` et `8000`. `max` indique que la taille de stockage maximale occupée est de 2^31-1 octets (2 Go). La taille de stockage est la longueur réelle des données entrées + 2 octets. La valeur par défaut de *n* est 7.  
+ Données binaires de longueur variable. *n* peut être une valeur comprise entre `1` et `8000`. `max` indique que la taille de stockage maximale occupée est de 2^31-1 octets (2 Go). La taille de stockage est la longueur réelle des données entrées + 2 octets. La valeur par défaut pour *n* est 7.  
   
  `binary` [ ( *n* ) ]  
- Données binaires d’une longueur fixe de *n* octets. *n* peut être une valeur comprise entre `1` et `8000`. La taille de stockage est égale à *n* octets. La valeur par défaut de *n* est `7`.  
+ Données binaires d’une longueur fixe de *n* octets. *n* peut être une valeur comprise entre `1` et `8000`. La taille de stockage est égale à *n* octets. La valeur par défaut pour *n* est `7`.  
   
  `uniqueidentifier`  
  GUID sur 16 octets.  
@@ -325,7 +324,7 @@ Pour plus d’informations, consultez ces articles :
  Si *boundary_value* est une valeur littérale qui doit être convertie implicitement dans le type de données de *partition_column_name*, cela produit un écart. La valeur littérale s’affiche via les vues système [!INCLUDE[ssSDW](../../includes/sssdw-md.md)], mais la valeur convertie est utilisée pour des opérations [!INCLUDE[tsql](../../includes/tsql-md.md)]. 
  
   
- ### <a name="temporary-tables"></a>Tables temporaires
+ ### <a name="temporary-tables"></a>tables temporaires ;
  Les tables temporaires globales qui commencent par ## ne sont pas prises en charge.  
   
  Les tables temporaires locales sont soumises aux limitations et restrictions suivantes :  

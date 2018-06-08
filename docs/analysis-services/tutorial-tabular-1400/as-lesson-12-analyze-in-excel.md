@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 12 : analyser dans Excel | Documents Microsoft"
-description: "Décrit comment utiliser les analyser dans Excel dans le projet du didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 12 : analyser dans Excel | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: dda8a42cd5e82c60f98de8ab351274f3c1e93820
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: d215045f87ed780a4adc97f9ae4fed9ac7e6991a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analyze-in-excel"></a>Analyser dans Excel
 
@@ -59,11 +51,11 @@ Dans ces premières tâches, vous parcourez votre modèle à l’aide à la fois
   
 2.  Dans la boîte de dialogue **Analyser dans Excel** , laissez **Utilisateur Windows actuel** sélectionné, puis dans la zone de liste déroulante **Perspective** , sélectionnez **Internet Sales**, puis cliquez sur **OK**. 
     
-    ![as-lesson12-perspective](../tutorial-tabular-1400/media/as-lesson12-perspective.png)
+    ![en tant que-leçon 12-perspective](../tutorial-tabular-1400/media/as-lesson12-perspective.png)
     
 3.  Dans Excel, dans **PivotTable Fields**, notez la table DimCustomer est exclue de la liste de champs.  
     
-    ![as-lesson12-fields](../tutorial-tabular-1400/media/as-lesson12-fields.png)
+    ![en tant que champs de leçon 12](../tutorial-tabular-1400/media/as-lesson12-fields.png)
     
 4.  Fermez Excel sans enregistrer le classeur.  
   

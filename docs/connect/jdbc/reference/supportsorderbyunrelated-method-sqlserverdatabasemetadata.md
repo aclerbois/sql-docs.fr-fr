@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsOrderByUnrelated (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsOrderByUnrelated (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsOrderByUnrelated
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsOrderByUnrelated
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 9ea6c534-8132-49f3-aac3-a12ec4c46df2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7bfe3c5061f4261891f3139d3c89d2c8ef07660f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: bc7a93de87901ea70e2c7648f8de151b60e6ae16
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsorderbyunrelated-method-sqlserverdatabasemetadata"></a>Méthode supportsOrderByUnrelated (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

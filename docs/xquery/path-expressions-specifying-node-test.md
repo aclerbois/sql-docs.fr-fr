@@ -1,16 +1,15 @@
 ---
-title: "Spécification de Test de nœud dans une étape d’Expression de chemin d’accès | Documents Microsoft"
-ms.custom: 
+title: Spécification de Test de nœud dans une étape d’Expression de chemin d’accès | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - XML
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - axis step [XQuery]
 - node test [XQuery]
 ms.assetid: ffe27a4c-fdf3-4c66-94f1-7e955a36cadd
-caps.latest.revision: 
+caps.latest.revision: 24
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1fd2f4955285cec9ba0569ac39138088b8015df5
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3460ecf0a821d5c7ffa39f242650e06c0e8ddaf4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="path-expressions---specifying-node-test"></a>Expressions de chemin d’accès - spécification de Test de nœud
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -40,7 +38,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [Zéro ou plusieurs qualificateurs d’étape (facultatifs)](../xquery/path-expressions-specifying-predicates.md)  
   
- Pour plus d’informations, consultez [Expressions de chemin &#40; XQuery &#41; ](../xquery/path-expressions-xquery.md).  
+ Pour plus d’informations, consultez [Expressions de chemin d’accès &#40;XQuery&#41;](../xquery/path-expressions-xquery.md).  
   
  Un test de nœud est une condition et représente le deuxième composant de l'étape d'axe dans une expression de chemin d'accès. Tous les nœuds sélectionnés par une étape doivent satisfaire cette condition. Dans le cas de l'expression du chemin d'accès `/child::ProductDescription`, le test de nœud correspond donc à `ProductDescription`. En d'autres termes, cette étape ne récupère que les enfants du nœud élément dont le nom est ProductDescription.  
   

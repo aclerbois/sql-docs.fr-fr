@@ -1,31 +1,23 @@
 ---
 title: Applet de commande New-RestoreFolder | Documents Microsoft
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 5938b3a9-6412-45fc-86f8-264651d01598
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 20e512bbc1ac3ba7c2a6b6604032c047f83d10cf
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: f5fded902a54a37cd91f4f283aa84252b6ae007a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="new-restorefolder-cmdlet"></a>Applet de commande New-RestoreFolder
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Restaure un dossier d'origine vers un nouveau dossier.  
+  Restaure un dossier d'origine vers un nouveau dossier.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -42,7 +34,7 @@ Restaure un dossier d'origine vers un nouveau dossier.
   
 ## <a name="parameters"></a>Paramètres  
   
-### <a name="-originalfolder-string"></a>-OriginalFolder \<string>  
+### <a name="-originalfolder-string"></a>-OriginalFolder \<chaîne >  
  Obtient l'emplacement du dossier d'origine.  
   
 |||  
@@ -53,7 +45,7 @@ Restaure un dossier d'origine vers un nouveau dossier.
 |Accepter l'entrée de pipeline ?|true|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-newfolder-string"></a>-NewFolder \<string>  
+### <a name="-newfolder-string"></a>-NewFolder \<chaîne >  
  Définit l'emplacement d'un nouveau dossier.  
   
 |||  
@@ -87,7 +79,7 @@ Restaure un dossier d'origine vers un nouveau dossier.
 |Accepter les caractères génériques ?|false|  
   
 ### <a name="-credential-pscredential"></a>-Credential \<PSCredential >  
- Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40; IIS &#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
+ Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40;IIS&#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
   
  Si ce paramètre est indiqué, le nom d'utilisateur et le mot de passe seront utilisés pour la connexion à l'instance du serveur d'analyse spécifiée. Si aucune information d'identification n'est indiquée, le compte Windows par défaut de l'utilisateur qui exécute l'outil sera utilisé.  
   

@@ -1,30 +1,30 @@
 ---
 title: Distributed Replay Security | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: distributed-replay
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7e2e586d-947d-4fe2-86c5-f06200ebf139
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3779b55923a5fd3ac803060c0ed8990dcffcead8
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 4d27f9cc7caa5ebeedf9052d5063ebec1e3851ba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="distributed-replay-security"></a>Sécurité Distributed Replay
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Avant d’installer et utiliser le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnalité Distributed Replay, vous devez passer en revue les informations de sécurité importantes dans cette rubrique. Cette rubrique décrit les étapes de configuration de la sécurité consécutives à l'installation requises pour pouvoir utiliser Distributed Replay. Elle inclut également des considérations importantes en ce qui concerne la protection des données et les étapes de suppression importantes.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Avant d'installer et d'utiliser la fonctionnalité [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay, vous devez vérifier les informations de sécurité importantes de cette rubrique. Cette rubrique décrit les étapes de configuration de la sécurité consécutives à l'installation requises pour pouvoir utiliser Distributed Replay. Elle inclut également des considérations importantes en ce qui concerne la protection des données et les étapes de suppression importantes.  
   
 ## <a name="user-and-service-accounts"></a>Comptes d'utilisateur et de service  
  Le tableau suivant décrit les comptes utilisés pour Distributed Replay. Après l'installation de Distributed Replay, vous devez affecter les principaux de sécurité qui seront exécutés sous les comptes de service du contrôleur et du client. Par conséquent, il est recommandé de configurer les comptes d'utilisateur de domaine correspondants avant d'installer les fonctionnalités de Distributed Replay.  
@@ -134,7 +134,7 @@ ms.lasthandoff: 01/17/2018
   
 -   Supprimez tous les fichiers de trace, intermédiaires, de distribution et de base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisés pour le test. Les fichiers intermédiaires et de distribution sont stockés dans le répertoire de travail sur le contrôleur et le client, respectivement.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Distributed Replay](../../tools/distributed-replay/sql-server-distributed-replay.md)   
  [Install Distributed Replay - Présentation](../../tools/distributed-replay/install-distributed-replay-overview.md)  
   

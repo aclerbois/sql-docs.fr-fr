@@ -1,34 +1,33 @@
 ---
 title: SQL Server Agent, objet JobSteps | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - JobSteps object
 - SQLAgent:JobSteps
 ms.assetid: 44f9983c-1753-4fe0-8475-973aa2460b3a
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d6c2bfb8f1b628ba4515f3668b2a226e44b5c8fe
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 21835671518515b1efe02698a0f01f4dcd051179
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-agent-jobsteps-object"></a>SQL Server Agent, objet JobSteps
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet de performance **JobSteps** de l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] comprend des compteurs de performances chargés de fournir des informations sur les étapes de travail de l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet de performance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] JobSteps **de l'Agent** intègre des compteurs de performances chargés de fournir des informations sur les étapes de travail de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
   
  Le tableau suivant énumère les compteurs **SQLAgent:JobSteps** .  
   

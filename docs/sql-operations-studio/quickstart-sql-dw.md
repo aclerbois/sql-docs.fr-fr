@@ -1,24 +1,23 @@
 ---
-title: "Démarrage rapide : Se connecter et interroger un entrepôt de données SQL Azure à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "Ce démarrage rapide montre comment utiliser les opérations de SQL Studio (version préliminaire) pour vous connecter à une base de données SQL et exécuter une requête"
+title: 'Démarrage rapide : Se connecter et interroger un entrepôt de données SQL Azure à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft'
+description: Ce démarrage rapide montre comment utiliser les opérations de SQL Studio (version préliminaire) pour vous connecter à une base de données SQL et exécuter une requête
 ms.custom: tools|sos
 ms.date: 03/08/2018
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3d4ed7d25abb2780c719c5b8201ecae54e8e86bf
-ms.sourcegitcommit: 6c06267f3eeeb3f0d6fc4c57e1387621720ca8bf
+ms.openlocfilehash: 2f0ad75a6be9cb3ad1404a0406601fbef68b0303
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="quickstart-use-includename-sosincludesname-sos-shortmd-to-connect-and-query-data-in-azure-sql-data-warehouse"></a>Démarrage rapide : Utiliser [!INCLUDE[name-sos](../includes/name-sos-short.md)] pour vous connecter et interroger des données dans l’entrepôt de données SQL Azure
 

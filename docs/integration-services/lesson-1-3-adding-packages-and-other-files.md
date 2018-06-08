@@ -1,30 +1,28 @@
 ---
-title: "Étape 3 : Ajout de packages et autres fichiers | Microsoft Docs"
-ms.custom: 
+title: 'Étape 3 : Ajout de packages et autres fichiers | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: tutorial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 ms.assetid: a7e6ec9c-d31d-4613-9525-8947a7b358f7
-caps.latest.revision: 
+caps.latest.revision: 24
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e23136a630638a04c390eeac809c7786aa5476b6
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 910d7759a7298e7285eb90c6d9e0d165245ec799
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-1-3---adding-packages-and-other-files"></a>Leçon 1-3 : Ajout de packages et autres fichiers
 Au cours de cette tâche, vous allez ajouter des packages existants, des fichiers annexes qui prennent en charge des packages individuels et un fichier Lisezmoi pour le projet Didacticiel de déploiement que vous avez créé dans la tâche précédente. Par exemple, vous allez ajouter un fichier de données XML qui contient les données destinées à un package et un fichier texte qui fournit des informations de fichier Lisez-moi relatives à tous les packages du projet.  

@@ -1,26 +1,25 @@
 ---
-title: "Protection étendue de l’authentification avec Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Protection étendue de l’authentification avec Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: eb5c6f4a-3ed5-430b-a712-d5ed4b6b9b2b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.openlocfilehash: 6f554b9ec04d894fbcd3da37e1bd326b39508571
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 6abe1579a0b54f701ed648746b4a5fc5ae597b08
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extended-protection-for-authentication-with-reporting-services"></a>Protection étendue de l'authentification avec Reporting Services
 

@@ -1,16 +1,14 @@
 ---
-title: "À l’aide de XSD schémas annotés dans les requêtes (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: À l’aide de XSD schémas annotés dans les requêtes (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - queries [SQLXML]
@@ -24,20 +22,20 @@ helpviewer_keywords:
 - XSD schemas [SQLXML], queries
 - templates [SQLXML], annotated XSD schemas in queries
 ms.assetid: 927a30a2-eae8-420d-851d-551c5f884f3c
-caps.latest.revision: 
+caps.latest.revision: 30
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6cd63b4426bdc1b4adf9020b5cf4bd3e50622528
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cc4d6f7c2d77f2c375765bd745bee8e35e70f622
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-annotated-xsd-schemas-in-queries-sqlxml-40"></a>Utilisation de schémas XSD annotés dans les requêtes (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Vous pouvez spécifier des requêtes sur un schéma annoté afin de récupérer des données de la base de données ; pour ce faire, spécifiez des requêtes XPath dans un modèle par rapport au schéma XSD.  
+  Vous pouvez spécifier des requêtes sur un schéma annoté afin de récupérer des données de la base de données ; pour ce faire, spécifiez des requêtes XPath dans un modèle par rapport au schéma XSD.  
   
  Le  **\<XPath-requête >** élément vous permet de spécifier une requête XPath sur la vue XML définie par le schéma annoté. Le schéma annoté sur lequel la requête XPath doit être exécutée est identifié à l’aide de la **schéma de mappage** attribut de la  **\<XPath-requête >** élément.  
   
@@ -70,7 +68,7 @@ Vous pouvez spécifier des requêtes sur un schéma annoté afin de récupérer 
 </sql:xpath-query>  
 ```  
   
- Vous pouvez ensuite créer et utiliser le script de test SQLXML 4.0 (Sqlxml4test.vbs) pour exécuter la requête dans le cadre d'un fichier modèle. Pour plus d’informations, consultez [de schémas XDR annotés &#40; déconseillées dans SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
+ Vous pouvez ensuite créer et utiliser le script de test SQLXML 4.0 (Sqlxml4test.vbs) pour exécuter la requête dans le cadre d'un fichier modèle. Pour plus d’informations, consultez [de schémas XDR annotés &#40;déconseillé dans SQLXML 4.0&#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
   
 ## <a name="using-inline-mapping-schemas"></a>Utilisation de schémas de mappage insérés  
  Un schéma annoté peut être inclus directement dans un modèle ; une requête XPath peut ensuite être spécifiée dans le modèle par rapport au schéma inséré. Le modèle peut également être un code de mise à jour (updategram).  

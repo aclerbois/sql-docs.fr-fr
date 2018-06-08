@@ -1,33 +1,31 @@
 ---
-title: "Créer des packages dans SQL Server Data Tools | Microsoft Docs"
-ms.custom: 
+title: Créer des packages dans SQL Server Data Tools | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SSIS packages, creating
 - Integration Services packages, creating
 - packages [Integration Services], creating
 - SQL Server Integration Services packages, creating
 ms.assetid: bb3c085b-1458-49fa-8348-6a76b6e97ea6
-caps.latest.revision: 
+caps.latest.revision: 51
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4ce6e014e80c33181a6ac41c4d249adb5e5df5a0
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5f0474b7b92c4a73997fd37f65ac6a32abdfd2bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-packages-in-sql-server-data-tools"></a>Créer des packages dans les outils de données SQL Server
   Dans [!INCLUDE[ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)], vous pouvez créer un nouveau package à l'aide de l'une des méthodes suivantes :  

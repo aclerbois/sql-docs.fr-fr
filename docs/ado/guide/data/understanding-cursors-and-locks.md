@@ -1,31 +1,28 @@
 ---
-title: "Présentation des curseurs et des verrous | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Présentation des curseurs et des verrous | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - locks [ADO]
 - cursors [ADO]
 ms.assetid: c1b7d7e6-1707-4ce2-863f-0c6dea967df6
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8a28f672ffd4a5cd1cb7cbf98353a9fb3b987c5e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b9c31b958efd4510fc7def4c15294c674ee031b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-cursors-and-locks"></a>Présentation des curseurs et verrous
 Il est important de comprendre le fonctionnement des curseurs pour vous pouvez de sélectionner le type de curseur meilleure et plus efficace pour les exigences d’accès aux données d’une application. Une configuration de curseur qu’optimale peut rendre les opérations d’accès aux données lentes et laborieux.  

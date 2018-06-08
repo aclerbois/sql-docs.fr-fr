@@ -1,27 +1,25 @@
 ---
-title: "Recherche et affichage de rapports à l’aide d’un navigateur (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Recherche et affichage de rapports à l’aide d’un navigateur (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: edf4843a-2a0a-486f-be25-14a3c1c6bc72
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 241966104849ba33d0797d337c5a993d06d0c661
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: b75f352d323a4fa675a31d5c2cd044e565225105
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="finding-and-viewing-reports-with-a-browser-report-builder-and-ssrs"></a>Recherche et affichage de rapports à l'aide d'un navigateur (Générateur de rapports et SSRS)
   Vous pouvez utiliser n'importe quel navigateur Web pris en charge pour afficher un rapport par le biais d'une connexion directe avec le serveur de rapports. Sur un serveur de rapports, tous les rapports ont une adresse URL. Vous pouvez entrer l'adresse Web d'un rapport pour l'ouvrir dans une fenêtre de navigateur indépendamment d'une application Web. Le rapport s'ouvre au format HTML et comprend la barre d'outils Rapport afin que vous puissiez naviguer entre les pages ou effectuer des recherches sur les valeurs de données dans le rapport. Dans l'URL, vous pouvez définir des paramètres pour masquer la barre d'outils ou sélectionner le format de sortie du rapport.  

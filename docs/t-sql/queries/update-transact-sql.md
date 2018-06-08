@@ -1,16 +1,14 @@
 ---
 title: UPDATE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - UPDATE_TSQL
@@ -40,16 +38,17 @@ helpviewer_keywords:
 - FROM clause, UPDATE statement
 - WHERE clause, UPDATE statement
 ms.assetid: 40e63302-0c68-4593-af3e-6d190181fee7
-caps.latest.revision: 
+caps.latest.revision: 91
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 227cafdd68eddac2ff6a515853f0fcded0c07f63
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 356a8a7e4e869d86d93b0654828b081d81c380ff
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34582511"
 ---
 # <a name="update-transact-sql"></a>UPDATE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -192,7 +191,7 @@ SET { column_name = { expression | NULL } } [ ,...n ]
  *method_name* **(** *argument* [ **,**... *n*] **)**  
  Méthode de mutateur public non statique de *udt_column_name* qui prend au moins un argument.  
   
- **.**WRITE **(***expression***,***@Offset***,***@Length***)**  
+ **.** WRITE **(***expression***,***@Offset***,***@Length***)**  
  Indique qu’une section de la valeur de *column_name* doit être modifiée. *expression* remplace les unités *@Length* à partir de *@Offset* de *column_name*. Seules des colonnes de type **varchar(max)**, **nvarchar(max)** ou **varbinary(max)** peuvent être spécifiées avec cette clause. *column_name* ne peut pas être NULL, ni être qualifié avec un nom ou un alias de table.  
   
  *expression* est la valeur qui est copiée dans *column_name*. *expression* doit être du même type que *column_name* ou être implicitement casté dans ce type. Si *expression* a la valeur NULL, *@Length* est ignoré, et la valeur dans *column_name* est tronquée à la position *@Offset* spécifiée.  
@@ -209,7 +208,7 @@ SET { column_name = { expression | NULL } } [ ,...n ]
  SET **@***variable* = *column* = *expression* définit la variable à la même valeur que la colonne. Ceci est différent de SET **@***variable* = *column*, *column* = *expression*, qui définit la variable à la valeur de la colonne avant la mise à jour.  
   
  \<OUTPUT_Clause>  
- Retourne des données mises à jour ou des expressions associées dans le cadre de l'opération UPDATE. La clause OUTPUT n'est pas prise en charge dans les instructions DML, qui ciblent les tables ou les vues distantes. Pour plus d’informations, consultez [OUTPUT, clause &#40;Transact-SQL&#41;](../../t-sql/queries/output-clause-transact-sql.md).  
+ Retourne des données mises à jour ou des expressions associées dans le cadre de l'opération UPDATE. La clause OUTPUT n'est pas prise en charge dans les instructions DML, qui ciblent les tables ou les vues distantes. Pour plus d’informations, consultez [Clause OUTPUT &#40;Transact-SQL&#41;](../../t-sql/queries/output-clause-transact-sql.md).  
   
  FROM \<table_source>  
  Spécifie qu'une table, une vue ou une source de table dérivée sont utilisées pour fournir les valeurs destinées à servir de critères en vue de la mise à jour. Pour plus d’informations, consultez [FROM &#40;Transact-SQL&#41;](../../t-sql/queries/from-transact-sql.md).  
@@ -336,21 +335,21 @@ GO
 >  Les types de données **ntext**, **text** et **image** seront supprimés dans une version ultérieure de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ces types de données dans un nouveau développement. Prévoyez de modifier les applications qui les utilisent actuellement. Utilisez plutôt les types de données [nvarchar(max)](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md), [varchar(max)](../../t-sql/data-types/char-and-varchar-transact-sql.md)et [varbinary(max)](../../t-sql/data-types/binary-and-varbinary-transact-sql.md) .  
   
 ### <a name="updating-large-value-data-types"></a>Mise à jour des données de valeurs élevées  
- Utilisez la clause **.**WRITE (*expression***,** *@Offset***,***@Length*) pour effectuer une mise à jour partielle ou complète des types de données **varchar(max)**, **nvarchar(max)** et **varbinary(max)**. Par exemple, une mise à jour partielle d’une colonne **varchar(max)** risque de supprimer ou modifier uniquement les 200 premiers caractères de la colonne, alors qu’une mise à jour complète supprime ou modifie toutes les données de cette colonne. Les mises à jour **.**WRITE, qui insèrent ou ajoutent de nouvelles données, sont journalisées de façon minimale si vous avez spécifié un mode de récupération des bases de données simple ou journalisé en bloc. La journalisation minimale n'est pas utilisée lors de la mise à jour de valeurs existantes. Pour plus d'informations, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
+ Utilisez la clause **.** WRITE (*expression***,** *@Offset ***,***@Length*) pour effectuer une mise à jour partielle ou complète des types de données **varchar(max)**, **nvarchar(max)** et **varbinary(max)**. Par exemple, une mise à jour partielle d’une colonne **varchar(max)** risque de supprimer ou modifier uniquement les 200 premiers caractères de la colonne, alors qu’une mise à jour complète supprime ou modifie toutes les données de cette colonne. Les mises à jour **.** WRITE, qui insèrent ou ajoutent de nouvelles données, sont journalisées de façon minimale si vous avez spécifié un mode de récupération des bases de données simple ou journalisé en bloc. La journalisation minimale n'est pas utilisée lors de la mise à jour de valeurs existantes. Pour plus d'informations, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
   
  Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] change une mise à jour partielle en mise à jour complète quand l’instruction UPDATE provoque l’une des actions suivantes :  
 -   Modification d'une colonne clé de la vue ou table partitionnée.  
 -   Modification de plusieurs lignes et mise à jour de la clé d'un index cluster non unique sur une valeur non constante.  
   
-Vous ne pouvez pas utiliser la clause **.**WRITE pour mettre à jour une colonne NULL ou définir la valeur de *column_name* à NULL.  
+Vous ne pouvez pas utiliser la clause **.** WRITE pour mettre à jour une colonne NULL ou définir la valeur de *column_name* à NULL.  
   
 *@Offset* et *@Length* sont spécifiés en octets pour les types de données **varbinary** et **varchar**, et en caractères pour le type de données **nvarchar**. Les décalages appropriés sont calculés pour les classements DBCS.  
   
 Pour optimiser les performances, nous recommandons l'insertion ou la mise à jour de données en blocs multiples de 8 040 octets.  
   
-Si une clause OUTPUT référence la colonne modifiée par la clause **.**WRITE, la valeur complète de cette colonne (l’image avant dans **deleted.***column_name* ou l’image après dans **inserted.***column_name*) est retournée dans la colonne spécifiée dans la variable de table. Consultez l’exemple R ci-dessous.  
+Si une clause OUTPUT référence la colonne modifiée par la clause **.** WRITE, la valeur complète de cette colonne (l’image avant dans **deleted.***column_name* ou l’image après dans **inserted.***column_name*) est retournée dans la colonne spécifiée dans la variable de table. Consultez l’exemple R ci-dessous.  
   
-Pour utiliser les mêmes fonctions de la clause **.**WRITE avec des données de type caractère ou binaire, utilisez [STUFF &#40;Transact-SQL&#41;](../../t-sql/functions/stuff-transact-sql.md).  
+Pour utiliser les mêmes fonctions de la clause **.** WRITE avec des données de type caractère ou binaire, utilisez [STUFF &#40;Transact-SQL&#41;](../../t-sql/functions/stuff-transact-sql.md).  
   
 ### <a name="updating-user-defined-type-columns"></a>Mise à jour des colonnes définies par l'utilisateur  
  La mise à jour des valeurs dans des colonnes de type défini par l'utilisateur peut s'effectuer de l'une des façons suivantes :  
@@ -397,10 +396,10 @@ Pour utiliser les mêmes fonctions de la clause **.**WRITE avec des données de 
 ## <a name="interoperability"></a>Interopérabilité  
  Vous pouvez insérer des instructions UPDATE dans le corps des fonctions définies par l'utilisateur uniquement si la table en cours de modification est une variable de table.  
   
- Lorsqu'un déclencheur INSTEAD OF est défini sur des actions UPDATE appliquées à une table, il est exécuté à la place de l'instruction UPDATE. Les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prennent uniquement en charge les déclencheurs AFTER définis sur UPDATE et autres instructions de modification de données. La clause FROM ne peut pas être spécifiée dans une instruction UPDATE qui fait référence, directement ou indirectement, à une vue sur laquelle est défini un déclencheur INSTEAD OF. Pour plus d’informations sur les déclencheurs INSTEAD OF, consultez [CREATE TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/create-trigger-transact-sql.md).  
+ Lorsqu'un déclencheur INSTEAD OF est défini sur des actions UPDATE appliquées à une table, il est exécuté à la place de l'instruction UPDATE. Les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prennent uniquement en charge les déclencheurs AFTER définis sur UPDATE et autres instructions de modification de données. La clause FROM ne peut pas être spécifiée dans une instruction UPDATE qui fait référence, directement ou indirectement, à une vue sur laquelle est défini un déclencheur INSTEAD OF. Pour plus d’informations sur les déclencheurs INSTEAD OF, consultez [CREATE TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/create-trigger-transact-sql.md).  
   
 ## <a name="limitations-and-restrictions"></a>Limitations et restrictions  
- La clause FROM ne peut pas être spécifiée dans une instruction UPDATE qui référence, directement ou indirectement, à une vue sur laquelle est défini un déclencheur INSTEAD OF. Pour plus d’informations sur les déclencheurs INSTEAD OF, consultez [CREATE TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/create-trigger-transact-sql.md).  
+ La clause FROM ne peut pas être spécifiée dans une instruction UPDATE qui référence, directement ou indirectement, à une vue sur laquelle est défini un déclencheur INSTEAD OF. Pour plus d’informations sur les déclencheurs INSTEAD OF, consultez [CREATE TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/create-trigger-transact-sql.md).  
   
  Lorsqu'une expression de table commune (CTE) est la cible d'une instruction UPDATE, toutes les références cette expression de table commune dans l'instruction doivent correspondre. Par exemple, si un alias est affecté à l'expression de table commune dans la clause FROM, cet alias doit être utilisé pour toutes les autres références à l'expression de table commune. Des références non ambiguës à l'expression de table commune sont requises, car une expression de table commune n'a pas d'ID d'objet, lequel est utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour identifier la relation implicite entre un objet et son alias. Sans cette relation, le plan de requête peut avoir un comportement de jointure et des résultats de requête inattendus. Les exemples suivants illustrent l'utilisation de méthodes correctes et incorrectes en matière de spécification d'une expression de table commune lorsque celle-ci est l'objet cible de l'opération de mise à jour.  
   
@@ -464,7 +463,7 @@ ID     Value
  Une instruction UPDATE acquiert toujours un verrou exclusif (X) sur la table qu'elle modifie et maintient ce verrou jusqu'à la fin de la transaction. Avec un verrou exclusif, aucune autre transaction ne peut modifier des données. Vous pouvez spécifier des indicateurs de table pour remplacer ce comportement par défaut pour la durée de l'instruction UPDATE en spécifiant une autre méthode de verrouillage ; toutefois, nous vous recommandons de ne recourir aux indicateurs qu'en dernier ressort et seulement si vous êtes un développeur ou un administrateur de base de données expérimenté. Pour plus d’informations, consultez [Indicateurs de table &#40;Transact-SQL&#41;](../../t-sql/queries/hints-transact-sql-table.md).  
   
 ## <a name="logging-behavior"></a>Comportement de journalisation  
- L’instruction UPDATE est journalisée. Cependant, les mises à jour partielles de données de valeurs élevées à l’aide de la clause **.**WRITE sont journalisées de façon minimale. Pour plus d'informations, consultez la rubrique « Mise à jour des données de valeurs élevées » de la section précédente « Types de données ».  
+ L’instruction UPDATE est journalisée. Cependant, les mises à jour partielles de données de valeurs élevées à l’aide de la clause **.** WRITE sont journalisées de façon minimale. Pour plus d'informations, consultez la rubrique « Mise à jour des données de valeurs élevées » de la section précédente « Types de données ».  
   
 ## <a name="security"></a>Sécurité  
   
@@ -800,7 +799,7 @@ SET GroupName = 'Sales and Marketing';
 ```  
   
 #### <a name="q-updating-data-in-a-remote-table-by-using-the-opendatasource-function"></a>Q. Mise à jour de données dans une table distante en utilisant la fonction OPENDATASOURCE  
- L’exemple suivant insère une ligne dans une table distante en spécifiant la fonction d’ensemble de lignes [OPENDATASOURCE](../../t-sql/functions/opendatasource-transact-sql.md). Spécifiez un nom de serveur valide pour la source de données en respectant le format *server_name* ou *server_name\instance_name*. Vous devrez peut-être configurer l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour les requêtes distribuées appropriées. Pour plus d’informations, consultez la page [Option de configuration du serveur : requêtes distribuées ad hoc](../../database-engine/configure-windows/ad-hoc-distributed-queries-server-configuration-option.md).  
+ L’exemple suivant insère une ligne dans une table distante en spécifiant la fonction d’ensemble de lignes [OPENDATASOURCE](../../t-sql/functions/opendatasource-transact-sql.md). Spécifiez un nom de serveur valide pour la source de données en utilisant le format *server_name* ou *server_name\instance_name*. Vous devrez peut-être configurer l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour les requêtes distribuées appropriées. Pour plus d’informations, consultez la page [Option de configuration du serveur : requêtes distribuées ad hoc](../../database-engine/configure-windows/ad-hoc-distributed-queries-server-configuration-option.md).  
   
 ```sql  
 UPDATE OPENQUERY (MyLinkServer, 'SELECT GroupName FROM HumanResources.Department WHERE DepartmentID = 4')   
@@ -940,7 +939,7 @@ SET Location.X = 23.5
 WHERE Name = 'Anchorage';  
 ```  
   
-###  <a name="TableHints"></a> Substitution du comportement par défaut de l’optimiseur de requête à l’aide d’indicateurs  
+###  <a name="TableHints"></a> Remplacement du comportement par défaut de l’optimiseur de requête à l’aide d’indicateurs  
  Les exemples présentés dans cette section montrent comment utiliser des indicateurs de table et de requête pour substituer temporairement le comportement par défaut de l'optimiseur de requête lors du traitement de l'instruction UPDATE.  
   
 > [!CAUTION]  
@@ -1142,7 +1141,7 @@ SELECT * FROM YearlyTotalSales;
 ### <a name="ah-ansi-join-replacement-for-update-statements"></a>AH. Remplacement d’une jointure ANSI dans les instructions de mise à jour
 Vous pouvez avoir à effectuer une mise à jour complexe (UPDATE ou DELETE) qui joint plus de deux tables à l’aide de la syntaxe de jointure ANSI.  
 
-Imaginez que vous devez mettre à jour cette table :  
+Vous devez mettre à jour cette table :  
 
 ```sql
 CREATE TABLE [dbo].[AnnualCategorySales]

@@ -1,30 +1,29 @@
 ---
-title: "Mettre à niveau les packages Integration Services | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau les packages Integration Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- integration-services
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Integration Services, migrating
 - migrating packages [Integration Services]
 ms.assetid: 68dbdf81-032c-4a73-99f6-41420e053980
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: c82382c5948f6f81b5b3e80bc6fe9fd76eb23942
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+ms.openlocfilehash: 3d7b44e607fb232f044b502f1a692d2c91529bdc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-integration-services-packages"></a>Mettre à niveau des packages Integration Services
   Lorsque vous mettez à niveau une instance de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] vers la version actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vos packages [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] existants ne sont pas automatiquement mis à niveau vers le format de package utilisé par la version actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Vous devez choisir une méthode de mise à niveau et mettre à niveau vos packages manuellement.  
@@ -80,6 +79,6 @@ ms.lasthandoff: 11/20/2017
 |Chaînes de connexion|Pour les packages [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]ou [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] , les noms de certains fournisseurs ont changé et requièrent des valeurs différentes dans les chaînes de connexion. Pour mettre à jour les chaînes de connexion, utilisez l'une des procédures suivantes :<br /><br /> Utilisez l'Assistant Mise à niveau de packages [!INCLUDE[ssIS](../../includes/ssis-md.md)] pour mettre à niveau le package et sélectionnez l'option **Mettre à jour les chaînes de connexion pour l'utilisation des nouveaux noms de fournisseurs** .<br /><br /> Dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], sur la page Général de la boîte de dialogue Options, sélectionnez l'option **Mettre à jour les chaînes de connexion pour l'utilisation des nouveaux noms de fournisseurs** . Pour plus d’informations sur cette option, consultez la page Général.<br /><br /> Dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], ouvrez le package et modifiez manuellement le texte de la propriété ConnectionString.<br /><br /> Remarque : vous ne pouvez pas appliquer les procédures ci-dessus pour mettre à jour une chaîne de connexion lorsque celle-ci est stockée dans un fichier de configuration ou dans un fichier de source de données, ou lorsqu’une expression définit la propriété **ConnectionString** . Pour mettre à jour la chaîne de connexion dans ces cas-là, vous devez mettre à jour le fichier ou l'expression manuellement.<br /><br /> Pour plus d’informations sur les sources de données disponibles, consultez [Sources de données](../../integration-services/connection-manager/data-sources.md).|  
   
 ### <a name="scripts-that-depend-on-adodbdll"></a>Scripts qui dépendent d'ADODB.dll  
- Les scripts de la tâche de script et du composant Script qui référencent explicitement ADODB.dll risquent de ne pas pouvoir être mis à niveau ou de ne pas pouvoir s'exécuter sur les ordinateurs qui ne disposent pas de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] . Pour permettre la mise à niveau des scripts de la tâche de script et du composant Script, il est recommandé de supprimer la dépendance sur ADODB.dll.  Ado.Net est l'alternative recommandée pour le code managé, à l'instar des scripts VB et C#.  
+ Les scripts de la tâche de script et du composant Script qui référencent explicitement ADODB.dll risquent de ne pas pouvoir être mis à niveau ou de ne pas pouvoir s'exécuter sur les ordinateurs qui ne disposent pas de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] . Pour permettre la mise à niveau des scripts de la tâche de script et du composant Script, il est recommandé de supprimer la dépendance sur ADODB.dll.  Ado.Net est l'alternative recommandée pour le code managé, à l'instar des scripts VB et C#.  
   
   

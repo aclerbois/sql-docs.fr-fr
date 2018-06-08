@@ -1,20 +1,22 @@
 ---
-title: "Mise à jour - Documentation de SSDT pour SQL Server | Microsoft Docs"
-description: "Affichez des extraits de contenu mis à jour récemment dans la documentation pour SQL Server Data Tools (SSDT) pour Microsoft SQL Server."
+title: Mise à jour - Documentation de SSDT pour SQL Server | Microsoft Docs
+description: Affichez des extraits de contenu mis à jour récemment dans la documentation pour SQL Server Data Tools (SSDT) pour Microsoft SQL Server.
 manager: craigg
 author: MightyPen
 ms.author: genemi
 ms.topic: article
 ms.custom: UpdArt.exe
 ms.suite: sql
+ms.technology: release-landing
+ms.prod: sql
 ms.prod_service: sql-non-specified
 ms.component: ssdt
-ms.date: 02/03/2018
-ms.openlocfilehash: c591ddddd60af31fe2d338fdee25ea2c17ab0ea5
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.date: 04/28/2018
+ms.openlocfilehash: 99b0844803e1ce95bd6f73b0d45a2baf867428ba
+ms.sourcegitcommit: 2ddc0bfb3ce2f2b160e3638f1c2c237a898263f4
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-and-recently-updated-sql-server-data-tools-ssdt"></a>Nouveautés et mises à jour récentes : SQL Server Data Tools (SSDT)
 
@@ -28,7 +30,7 @@ Les mises à jour récentes sont signalées pour la plage de dates et le sujet s
 
 
 
-- *Période des mises à jour :* &nbsp; **03-12-2017** &nbsp; au &nbsp; **03-02-2018**
+- *Plage de dates des mises à jour :* &nbsp; **03-02-2018** &nbsp; au &nbsp; **28-04-2018**
 - *Domaine :* &nbsp; **SQL Server Data Tools (SSDT)**.
 
 
@@ -41,7 +43,7 @@ Les mises à jour récentes sont signalées pour la plage de dates et le sujet s
 Les liens suivants renvoient aux nouveaux articles ajoutés récemment.
 
 
-***Il n’y a aucun nouvel article pour cette fois.***
+1. [Prise en charge d’Azure Active Directory dans SQL Server Data Tools (SSDT)](azure-active-directory.md)
 
 
 
@@ -80,71 +82,60 @@ Cette liste compacte fournit des liens vers tous les articles mis à jour qui so
 
 ### <a name="1-nbsp-changelog-for-sql-server-data-tools-ssdtchangelog-for-sql-server-data-tools-ssdtmd"></a>1. &nbsp; [Journal des modifications de SQL Server Data Tools (SSDT)](changelog-for-sql-server-data-tools-ssdt.md)
 
-*Mise à jour : 18-01-2018* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+*Mis à jour : 25-04-2018*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 
-<!-- Source markdown line 28.  ms.author= "sstein".  -->
+<!-- Source markdown line 29.  ms.author= "sstein".  -->
 
 &nbsp;
 
 
-<!-- git diff --ignore-all-space --unified=0 6416949beaee91da2f77dfebb9eb5ed363db4cb7 de18314845cffa197b3fd2ed868f2c330760bedb  (PR=4652  ,  Filename=changelog-for-sql-server-data-tools-ssdt.md  ,  Dirpath=docs\ssdt\  ,  MergeCommitSha40=6b4aae3706247ce9b311682774b13ac067f60a79) -->
+<!-- git diff --ignore-all-space --unified=0 de18314845cffa197b3fd2ed868f2c330760bedb 5487de1ed57c16a6517a3a8849f412c208f1889f  (PR=5676  ,  Filename=changelog-for-sql-server-data-tools-ssdt.md  ,  Dirpath=docs\ssdt\  ,  MergeCommitSha40=a85a46312acf8b5a59a8a900310cf088369c4150) -->
 
 
 
-**SSDT pour Visual Studio 2017 (15.5.1)**
-
-Numéro de build : 14.0.16148.0
-
-**Nouveautés**
 
 
-Visual Studio 2017 (15.5.1) est la même version que la version 15.5.0 à l’exception des résolutions de bogues suivantes appliquées au programme d’installation :
+**SSDT pour Visual Studio 2017 (15.6.0)**
 
-1.  Résolution d’un problème qui entraîne le blocage du programme d’installation lors de la post-installation de SQL Server Integration Services.
-2.  Résolution d’un problème qui entraîne l’échec de l’installation avec le message d’erreur suivant : « L’opération de métafichier demandée n’est pas prise en charge (0x800707D3) ».
-
-En plus de ces deux résolutions de bogues, les détails suivants pour 15.5.0 s’appliquent toujours à 15.5.1
-
-**SSDT pour Visual Studio 2017 (15.5.0)**
-
-Numéro de build : 14.0.16146.0
+Numéro de build : 14.0.16162.0 Date de publication : 10 avril 2018
 
 **Nouveautés**
 
 
-SSDT pour Visual Studio 2017 (15.5.0) qui était en préversion est désormais en disponibilité générale.
+**SSIS :**
 
-**Programme d’installation**
-1. L’interface utilisateur du programme d’installation est localisée.
-1. L’icône est remplacée par une version de qualité supérieure.
+1.  Résolution du problème où la tâche de traitement AS ne journalisait aucune étape de traitement quand SQLServer2016 et SQLServer2017 étaient ciblés
+2.  Résolution du problème où une violation d’accès se produisait à l’ouverture de dtsx avec des noms de tâche très longs non anglais dans SSDT
+3.  Résolution du problème où parfois la liste des variables de ScriptTask disparaissait de l’interface utilisateur de la tâche
+4.  Résolution du problème où l’ajout d’une copie du package existant échouait quand l’emplacement du package était SQL Server
+5.  Résolution du problème où le focus restait coincé lors de l’accès à la zone de liste déroulante dans une boîte de dialogue d’éditeur.
+6.  Résolution du problème où l’arrière-plan ne changeait pas alors que le thème de Visual Studio changeait.
+7.  Résolution du problème où l’étiquette d’annotation et de chargement était invisible dans le thème foncé.
+8.  Résolution du problème où la propriété d’état n’était pas correctement définie pour les éléments désactivés de la boîte à outils SSIS.
+9.  Résolution du problème où l’exécution de WebServiceTask échouait tout le temps.
+10. Résolution du problème où le déploiement du package échouait si la chaîne de connexion était définie sur une variable avec une expression dépendante des paramètres du projet.
 
-**Integration Services (IS)**
-1. Ajout d’une étape de validation de package dans l’Assistant Déploiement lors du déploiement sur le runtime d’intégration Azure-SSIS dans ADF, ce qui permet de détecter les éventuels problèmes de compatibilité dans les packages SSIS à exécuter dans le runtime d’intégration Azure-SSIS. Pour plus d’informations, consultez [Valider des packages SSIS déployés sur Azure](..\integration-services\lift-shift\ssis-azure-validate-packages.md).
-1. L’extension SSIS est localisée.
+**Programme d’installation :**
 
-**Correctifs de bogues**
+1.  Ajoutez le lien du « Programme d’amélioration du produit pour SQL Server Data Tools » dans la clause d’exclusion de confidentialité.
+2.  Résolution du problème où la fenêtre du programme d’installation de Visual Studio apparaissait quand « Installer la nouvelle instance SQL Server Data Tools pour Visual Studio 2017 » était sélectionné
 
+**Problèmes connus :**
 
-**Integration Services (IS)**
-1. Résolution d’un problème qui entraîne l’endommagement de la disposition du gestionnaire de connexions OLE DB et ADO.NET.
-2. Résolution d’un problème qui entraîne l’affichage d’une erreur d’assembly introuvable lors de la tentative de modification d’une tâche de traitement de dimension.
-
-**Problèmes connus**
-
-
-**IS (Integration Services)** La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand ExecuteOutOfProcess a la valeur True. Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas impactés.
+1.  La tâche d’exécution de package SSIS ne prend pas en charge le débogage quand ExecuteOutOfProcess a la valeur True. Ce problème s’applique uniquement au débogage. L’enregistrement, le déploiement et l’exécution via DTExec.exe ou le catalogue SSIS ne sont pas impactés.
 
 
 
-**SSDT 17.4 pour Visual Studio 2015**
+**SSDT pour Visual Studio 2017 (15.5.2)**
 
-Numéro de build : 14.0.61712.050
+Numéro de build : 14.0.16156.0
 
 **Nouveautés**
 
 
-**Projets AS (Analysis Services)**
-- Ajout de trois nouvelles options aux projets tabulaires (sous Options > Analysis Services (tabulaire) > Importation des données) :
+**SSIS**
+1.  Correction d’un problème qui entraînait l’échec de la migration des projets SSIS 2008 quand SSAS et SSIS étaient tous deux installés sur la même instance de Visual Studio 2017.
+2.  Correction d’un problème qui faisait que les projets Rdlc ne pouvaient pas être générés quand le Concepteur de rapports Rdlc et SSIS étaient installés sur la même instance de Visual Studio 2017.
 
 
 
@@ -157,40 +148,36 @@ Numéro de build : 14.0.61712.050
 Cette section liste les articles très similaires récemment mis à jour dans d’autres domaines, dans notre dépôt public GitHub.com : [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs/).
 
 
+
 #### <a name="subject-areas-that-do-have-new-or-recently-updated-articles"></a>Domaines *avec* des articles nouveaux ou mis à jour récemment
 
-
-- [Nouveaux + Mis à jour (1 + 3) :&nbsp; **Analytique avancée pour SQL** (documentation)](../advanced-analytics/new-updated-advanced-analytics.md)
-- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Système de la plateforme d’analyse pour SQL** (documentation)](../analytics-platform-system/new-updated-analytics-platform-system.md)
-- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Connexion à SQL** (documentation)](../connect/new-updated-connect.md)
-- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Moteur de base de données pour SQL** (documentation)](../database-engine/new-updated-database-engine.md)
-- [Nouveaux + Mis à jour (12 + 1) :**Integration Services pour SQL** (documentation)](../integration-services/new-updated-integration-services.md)
-- [Nouveaux + Mis à jour (6 + 2) :&nbsp; **Linux pour SQL** (documentation)](../linux/new-updated-linux.md)
-- [Nouveaux + Mis à jour (15 + 0) : **PowerShell pour SQL** (documentation)](../powershell/new-updated-powershell.md)
-- [Nouveaux + Mis à jour (2 + 9) :&nbsp; **Bases de données relationnelles pour SQL** (documentation)](../relational-databases/new-updated-relational-databases.md)
-- [Nouveaux + Mis à jour (1 + 0) :&nbsp; **Reporting Services pour SQL** (documentation)](../reporting-services/new-updated-reporting-services.md)
-- [Nouveaux + Mis à jour (1 + 1) :&nbsp; **SQL Operations Studio** (documentation)](../sql-operations-studio/new-updated-sql-operations-studio.md)
-- [Nouveaux + Mis à jour (1 + 1) :&nbsp; **Microsoft SQL Server** (documentation)](../sql-server/new-updated-sql-server.md)
-- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **SQL Server Data Tools (SSDT)** (documentation)](../ssdt/new-updated-ssdt.md)
-- [Nouveaux + Mis à jour (1 + 2) :&nbsp; **SQL Server Management Studio (SSMS)** (documentation)](../ssms/new-updated-ssms.md)
-- [Nouveaux + Mis à jour (0 + 2) :&nbsp; **Transact-SQL** (documentation)](../t-sql/new-updated-t-sql.md)
+- [Nouveaux + Mis à jour (11 + 6) :&nbsp; &nbsp;**Advanced Analytics pour SQL** (documentation)](../advanced-analytics/new-updated-advanced-analytics.md)
+- [Nouveaux + Mis à jour (18 + 0) : &nbsp; &nbsp;**Analysis Services pour SQL**(documentation)](../analysis-services/new-updated-analysis-services.md)
+- [Nouveaux + Mis à jour (218 + 14) : **Connexion à SQL** (documentation)](../connect/new-updated-connect.md)
+- [Nouveaux + Mis à jour (14 + 0) :&nbsp; &nbsp;**Moteur de base de données pour SQL** (documentation)](../database-engine/new-updated-database-engine.md)
+- [Nouveaux + Mis à jour (3 + 2) :&nbsp; &nbsp; **Integration Services pour SQL** (documentation)](../integration-services/new-updated-integration-services.md)
+- [Nouveaux + Mis à jour (3 + 3) :&nbsp; &nbsp; **Linux pour SQL** (documentation)](../linux/new-updated-linux.md)
+- [Nouveaux + Mis à jour (7 + 10) :&nbsp; &nbsp;**Bases de données relationnelles pour SQL** (documentation)](../relational-databases/new-updated-relational-databases.md)
+- [Nouveaux + Mis à jour (0 + 2) :&nbsp; &nbsp; **Reporting Services pour SQL** (documentation)](../reporting-services/new-updated-reporting-services.md)
+- [Nouveaux + Mis à jour (1 + 3) :&nbsp; &nbsp; **SQL Operations Studio** (documentation)](../sql-operations-studio/new-updated-sql-operations-studio.md)
+- [Nouveaux + Mis à jour (2 + 3) :&nbsp; &nbsp; **Microsoft SQL Server** (documentation)](../sql-server/new-updated-sql-server.md)
+- [Nouveaux + Mis à jour (1 + 1) :&nbsp; &nbsp; **SQL Server Data Tools (SSDT)** (documentation)](../ssdt/new-updated-ssdt.md)
+- [Nouveaux + Mis à jour (5 + 2) :&nbsp; &nbsp; **SQL Server Management Studio (SSMS)** (documentation)](../ssms/new-updated-ssms.md)
+- [Nouveaux + Mis à jour (0 + 2) :&nbsp; &nbsp; **Transact-SQL** (documentation)](../t-sql/new-updated-t-sql.md)
+- [Nouveaux + Mis à jour (1 + 1) : &nbsp; &nbsp; **Outils pour SQL** documentation](../tools/new-updated-tools.md)
 
 
 
 #### <a name="subject-areas-that-do-not-have-any-new-or-recently-updated-articles"></a>Domaines *sans* article nouveau ou mis à jour récemment
 
-
-- [Nouveaux + Mis à jour (0 + 0) : **Data Migration Assistant (DMA) pour SQL** (documentation)](../dma/new-updated-dma.md)
-- [Nouveaux + Mis à jour (0 + 0) : **ActiveX Data Objects (ADO) pour SQL** (documentation)](../ado/new-updated-ado.md)
-- [Nouveaux + Mis à jour (0 + 0) : **Analysis Services pour SQL** (documentation)](../analysis-services/new-updated-analysis-services.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Système de plateforme d’analyse pour SQL** documentation](../analytics-platform-system/new-updated-analytics-platform-system.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Data Quality Services pour SQL** (documentation)](../data-quality-services/new-updated-data-quality-services.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Extensions DMX (Data Mining Extensions) pour SQL** (documentation)](../dmx/new-updated-dmx.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Master Data Services (MDS) for SQL** (documentation)](../master-data-services/new-updated-master-data-services.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Expressions MDX (Multidimensional Expressions) pour SQL** (documentation)](../mdx/new-updated-mdx.md)
 - [Nouveaux + Mis à jour (0 + 0) : **ODBC (Open Database Connectivity) pour SQL** (documentation)](../odbc/new-updated-odbc.md)
-- [Nouveaux + Mis à jour (0 + 0) : **Exemples pour SQL** (documentation)](../sample/new-updated-sample.md)
+- [Nouveaux + Mis à jour (0 + 0) : **PowerShell pour SQL** (documentation)](../powershell/new-updated-powershell.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Exemples pour SQL** (documentation)](../samples/new-updated-samples.md)
 - [Nouveaux + Mis à jour (0 + 0) : **SQL Server Migration Assistant (SSMA)** (documentation)](../ssma/new-updated-ssma.md)
-- [Nouveaux + Mis à jour (0 + 0) : **Outils pour SQL** (documentation)](../tools/new-updated-tools.md)
 - [Nouveaux + Mis à jour (0 + 0) : **XQuery pour SQL** (documentation)](../xquery/new-updated-xquery.md)
-
 

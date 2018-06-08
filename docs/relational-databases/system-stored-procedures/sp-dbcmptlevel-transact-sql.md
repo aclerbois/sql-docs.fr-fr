@@ -1,16 +1,14 @@
 ---
 title: sp_dbcmptlevel (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dbcmptlevel
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_dbcmptlevel
 ms.assetid: 508c686d-2bd4-41ba-8602-48ebca266659
-caps.latest.revision: 
+caps.latest.revision: 110
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d605927373e0e92397b4f6074264aa2232df3cae
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 416842d369700f0ac7e0ecd18f84fc0b546a49f7
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdbcmptlevel-transact-sql"></a>sp_dbcmptlevel (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -37,7 +34,7 @@ ms.lasthandoff: 11/27/2017
   Définit certains comportements de base de données pour qu'ils soient compatibles avec la version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] spécifiée.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)]Utilisez [modifier le niveau de compatibilité de base de données](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)à la place.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez [modifier le niveau de compatibilité de base de données](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md)à la place.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -75,13 +72,13 @@ sp_dbcmptlevel [ [ @dbname = ] name ]
  Si *nom* est spécifié sans *version*, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] renvoie un message affichant le niveau de compatibilité actuel de la base de données spécifié.  
   
 ## <a name="remarks"></a>Notes  
- Pour obtenir une description des niveaux de compatibilité, consultez [ALTER DATABASE Compatibility Level &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md).  
+ Pour obtenir une description des niveaux de compatibilité, voir [ALTER DATABASE Compatibility Level &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-compatibility-level.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls le propriétaire de la base de données, les membres de la **sysadmin** rôle serveur fixe et le **db_owner** rôle de base de données fixe (si vous modifiez la base de données en cours) peut exécuter cette procédure.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md)   
  [Mots clés réservés &#40;Transact-SQL&#41;](../../t-sql/language-elements/reserved-keywords-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  

@@ -1,30 +1,27 @@
 ---
-title: "Les Types de curseur de défilement | Documents Microsoft"
-ms.custom: 
+title: Les Types de curseur de défilement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - scrollable cursors [ODBC]
 - cursors [ODBC], scrollable
 ms.assetid: dbd32576-0453-4e90-ae45-1a81cee8259d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 85de42e271f937c7a3de1aacba918bb43ea463d4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 54acbd1010d546649b1ad92a34289fa4d04da162
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scrollable-cursor-types"></a>Types de curseur de défilement
 Les quatre types de curseurs de défilement sont statiques, dynamiques, pilotés par jeu de clés et mixte. Les curseurs statiques détectent peu ou pas de modifications, mais sont relativement peu coûteux à implémenter. Les curseurs dynamiques détectent toutes les modifications mais sont coûteux à implémenter. Les curseurs pilotés par jeu de clés et mixtes se situent entre la plupart des modifications mais utilisent moins de ressources que les curseurs dynamiques.  
@@ -39,7 +36,7 @@ Les quatre types de curseurs de défilement sont statiques, dynamiques, pilotés
   
 -   **Commande.** L’ordre dans lequel les lignes sont renvoyées par le curseur.  
   
--   **Les valeurs.** Les valeurs dans chaque ligne du jeu de résultats.  
+-   **valeurs.** Les valeurs dans chaque ligne du jeu de résultats.  
   
  Pour plus d’informations sur la façon de mettre à jour, supprimer et insérer des données, consultez [mise à jour la vue d’ensemble des données](../../../odbc/reference/develop-app/updating-data-overview.md).  
   

@@ -1,17 +1,16 @@
 ---
 title: Installer Integration Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/05/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Integration Services, installing
 - SSIS, installing
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - installing Integration Services
 - Setup [Integration Services]
 ms.assetid: bd20fd3a-414b-4581-959d-ebba4ddf5a55
-caps.latest.revision: 
+caps.latest.revision: 106
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4a33adf33a12279d956ebdc3c5b2e5090e19935a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4d2b8a34a4489e2db01c9e0b53a4cc11c7b435f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-integration-services"></a>Installer Integration Services
   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit un programme d'installation unique pour installer tout ou une partie de ses composants, y compris [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Le programme d'installation vous permet d'installer [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] avec ou sans d'autres composants [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur un ordinateur unique.    

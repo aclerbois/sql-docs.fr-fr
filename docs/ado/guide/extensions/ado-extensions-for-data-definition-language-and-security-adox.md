@@ -1,28 +1,25 @@
 ---
-title: "Les Extensions de langage de définition de données et de sécurité (ADOX) ADO | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Les Extensions de langage de définition de données et de sécurité (ADOX) ADO | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c6579b5b-a93e-48c5-8847-743fc4590cd2
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 39b1a173669b89eb339301f13ec3f34220aaf2b3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3a00d4241ee228c490da22c09ab75eb7756eb04f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-extensions-for-data-definition-language-and-security-adox"></a>ADO Extensions de langage de définition de données et de sécurité (ADOX)
 Cette section contient les rubriques suivantes.  

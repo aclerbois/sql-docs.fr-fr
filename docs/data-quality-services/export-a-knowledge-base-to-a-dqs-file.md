@@ -2,29 +2,30 @@
 title: Exporter une base de connaissances dans un fichier .dqs | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a324ead5-c8aa-4e26-abe3-ef415add00f8
-caps.latest.revision: ''
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2e07762d37b8e18abd96a4976c636752588774f8
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 4d203ed9eb7c3bdf848eb74fa1be56dd63e27438
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="export-a-knowledge-base-to-a-dqs-file"></a>Exporter une base de connaissances dans un fichier .dqs
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit comment exporter une base de connaissances entière dans un fichier de données .dqs dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Vous pouvez exporter un domaine ou la totalité d'une base de connaissances vers un fichier de données. Pour plus d’informations sur l’exportation d’un domaine, consultez [Exporter un domaine vers un fichier .dqs](../data-quality-services/export-a-domain-to-a-dqs-file.md).  
   
  L'exportation d'une base de connaissances vers un fichier .dqs, puis son importation en tant que base de connaissances distincte, simplifie le processus de génération de connaissances, et permet d'économiser aussi bien du temps que des efforts. Cela vous permet de partager une base de connaissances et ses contenus avec d'autres. Le fichier .dqs contient toutes les informations de la base de connaissances, y compris les domaines et la stratégie de correspondance, à l'exception des informations de données de référence jointes. Vous devez joindre à nouveau les domaines requis aux services de données de référence appropriés, le cas échéant, après avoir importé le fichier .dqs. Les données publiées et non publiées dans une base de connaissances sont exportées.  

@@ -1,35 +1,32 @@
 ---
-title: "Installer et configurer la recherche sémantique | Microsoft Docs"
-ms.custom: 
+title: Installer et configurer la recherche sémantique | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - semantic search [SQL Server], installing
 - semantic search [SQL Server], configuring
 ms.assetid: 2cdd0568-7799-474b-82fb-65d79df3057c
-caps.latest.revision: 
+caps.latest.revision: 31
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c3e5be07b316f2975a56181e6e58805e88023939
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 6816d53fb9b9c8bc79bec05623640c91f9edd3d8
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="install-and-configure-semantic-search"></a>Installer et configurer la recherche sémantique
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Décrit les conditions préalables à une recherche sémantique statistique, ainsi que la procédure d'installation ou de vérification de ces conditions.  
+  Décrit les conditions préalables à une recherche sémantique statistique, ainsi que la procédure d'installation ou de vérification de ces conditions.  
   
 ## <a name="install-semantic-search"></a>Installer la recherche sémantique  
   
@@ -152,6 +149,6 @@ GO
 ## <a name="install-optional-support-for-newer-document-types"></a>Installer la prise en charge facultative de nouveaux types de documents  
   
 ###  <a name="office"></a> Installer les derniers filtres pour Microsoft Office et d’autres types de documents Microsoft  
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installe les analyseurs lexicaux et les générateurs de formes dérivées [!INCLUDE[msCoName](../../includes/msconame-md.md)] les plus récents, mais n’installe pas les filtres les plus récents pour les documents [!INCLUDE[msCoName](../../includes/msconame-md.md)] Office et d’autres types de documents [!INCLUDE[msCoName](../../includes/msconame-md.md)]. Ces filtres sont nécessaires pour l'indexation des documents créés avec les versions récentes de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Office et d'autres applications [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Pour télécharger les filtres les plus récents, consultez [Microsoft Office 2010 Filter Packs](http://go.microsoft.com/fwlink/?LinkId=218293). (Il n’existe apparemment pas de version Filter Pack pour Office 2013 et Office 2016.)
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installe les analyseurs lexicaux et les générateurs de formes dérivées [!INCLUDE[msCoName](../../includes/msconame-md.md)] les plus récents, mais n'installe pas les filtres les plus récents pour les documents [!INCLUDE[msCoName](../../includes/msconame-md.md)] Office et d'autres types de documents [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Ces filtres sont nécessaires pour l'indexation des documents créés avec les versions récentes de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Office et d'autres applications [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Pour télécharger les filtres les plus récents, consultez [Microsoft Office 2010 Filter Packs](http://go.microsoft.com/fwlink/?LinkId=218293). (Il n’existe apparemment pas de version Filter Pack pour Office 2013 et Office 2016.)
   
   

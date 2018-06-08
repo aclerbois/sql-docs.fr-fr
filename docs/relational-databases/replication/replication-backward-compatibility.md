@@ -1,17 +1,16 @@
 ---
-title: "Compatibilité descendante de la réplication | Microsoft Docs"
-ms.custom: 
+title: Compatibilité descendante de la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactional replication, backward compatibility
 - backward compatibility [SQL Server replication]
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - snapshot replication [SQL Server], backward compatibility
 - compatibility [SQL Server replication]
 ms.assetid: 091c51dc-8b32-4b4f-847e-b317456c8394
-caps.latest.revision: 
+caps.latest.revision: 56
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 092b83198c7c7d89320209b026fb5799ca0ae452
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: ff1277c0c1f0614947a4ac5cd720067395cdb91f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-backward-compatibility"></a>Compatibilité descendante de la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

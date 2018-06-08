@@ -1,16 +1,14 @@
 ---
 title: SUSER_SNAME (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SUSER_SNAME_TSQL
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - identification numbers [SQL Server], logins
 - names [SQL Server], logins
 ms.assetid: 11ec7d86-d429-4004-a436-da25df9f8761
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 177c7802c3a9c7ca7fadbb279c0be35fd57af820
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 33b01f5a066fcc985cecf8dea7ca8ecc58d4a353
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="susersname-transact-sql"></a>SUSER_SNAME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -54,7 +52,7 @@ SUSER_SNAME ( [ server_user_sid ] )
   
 ## <a name="arguments"></a>Arguments  
  *server_user_sid*  
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Correspond au numéro facultatif d'identification de sécurité de la connexion. *server_user_sid* est de type **varbinary(85)**. *server_user_sid* peut être le numéro d’identification de sécurité de n’importe quelle connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou de n’importe quel utilisateur ou groupe [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows. Si *server_user_sid* n’est pas spécifié, les informations sur l’utilisateur actuel sont renvoyées. Si le paramètre contient le mot NULL, retourne NULL.  
   
@@ -84,7 +82,7 @@ GO
 ### <a name="b-using-susersname-with-a-windows-user-security-id"></a>B. Utilisation de SUSER_SNAME avec un ID de sécurité utilisateur Windows  
  Cet exemple retourne le nom de connexion associé à un numéro d'identification de sécurité Windows.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 SELECT SUSER_SNAME(0x010500000000000515000000a065cf7e784b9b5fe77c87705a2e0000);  
@@ -111,7 +109,7 @@ GO
 ### <a name="d-calling-susersname-in-combination-with-execute-as"></a>D. Appel de SUSER_SNAME en combinaison avec EXECUTE AS  
  Cet exemple montre le comportement de SUSER_SNAME lorsqu'il est appelé à partir d'un contexte ayant fait l'objet d'un emprunt d'identité.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 SELECT SUSER_SNAME();  

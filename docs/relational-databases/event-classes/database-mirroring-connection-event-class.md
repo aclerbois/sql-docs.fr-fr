@@ -1,30 +1,26 @@
 ---
-title: "Database Mirroring Connection, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Database Mirroring Connection, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b59dccc9-f40d-4c82-aa35-ac40acea86ff
-caps.latest.revision: 
+caps.latest.revision: 6
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d26accbe02ac42a01dbb4c8bf832facec5b1b99e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 9771d79634172c51c7ba61a698ea6d4a021cd25e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="database-mirroring-connection-event-class"></a>Classe d'événements de connexion de mise en miroir de bases de données
+# <a name="database-mirroring-connection-event-class"></a>Database Mirroring Connection, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] génère un événement de **connexion de mise en miroir de bases de données** pour indiquer l’état d’une connexion de transport gérée par la mise en miroir de bases de données.  
   

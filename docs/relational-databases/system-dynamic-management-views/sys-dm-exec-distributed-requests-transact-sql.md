@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_distributed_requests (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_distributed_requests (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DM_EXEC_DISTRIBUTED_REQUESTS
@@ -24,18 +21,18 @@ helpviewer_keywords:
 - PolyBase
 - dm_exec_distributed_sql_requests management view
 ms.assetid: c041d416-d8c6-435e-a563-6a310abd33e3
-caps.latest.revision: 
+caps.latest.revision: 8
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 539bf6f6e4df5860977fdd0703a9bc11a5923d31
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7d61b26c1af6a588140cdf47308ee8f69ecd42b2
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sysdmexecdistributedrequests-transact-sql"></a>sys.dm_exec_distributed_requests (Transact-SQL)
+# <a name="sysdmexecdistributedrequests-transact-sql"></a>Sys.dm_exec_distributed_requests (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2016-xxxx-asdw-pdw-md.md)]
 
   Contient des informations sur toutes les demandes récemment ou actuellement actives dans les requêtes PolyBase. Il répertorie une ligne par/requête de la demande.  
@@ -46,7 +43,7 @@ ms.lasthandoff: 02/03/2018
 |-----------------|---------------|-----------------|-----------|  
 |sql_handle|**varbinary(64)**|Clé pour cette vue. Id numérique unique associé à la demande.|Le point d’entrée unique pour toutes les demandes dans le système.|  
 |execution_id|**nvarchar(32**|Id numérique unique associé à la session dans laquelle cette requête a été exécutée.||  
-|status|**nvarchar(32**|État actuel de la demande.|'Pending', 'Authorizing', 'AcquireSystemResources', 'Initializing', 'Plan', 'Parsing', 'AquireResources', 'Running', 'Cancelling', 'Complete', 'Failed', 'Cancelled'.|  
+|status|**nvarchar(32**|État actuel de la demande.|« En attente, » 'Autorisation', 'AcquireSystemResources', 'Initialisation', 'Plan », « l’analyse de', 'AquireResources', « En cours d’exécution », « Annuler », « Complète », « échec', « Annulée ».|  
 |error_id|**nvarchar(36)**|Id unique de l’erreur associée à la demande, le cas échéant.|La valeur NULL si aucune erreur ne s’est produite.|  
 |start_time|**datetime**|Heure de début de l’exécution de la demande.|0 pour les demandes en file d’attente ; Sinon, valide datetime inférieure ou égale à l’heure actuelle.|  
 |end_time|**datetime**|Heure à laquelle le moteur a terminé la compilation de la demande.|NULL pour les demandes en file d’attente ou actives ; Sinon, une dateheure valide inférieure ou égale à l’heure actuelle.|  
@@ -55,6 +52,6 @@ ms.lasthandoff: 02/03/2018
 ## <a name="see-also"></a>Voir aussi  
  [PolyBase, résolution des problèmes avec les vues de gestion dynamique](http://msdn.microsoft.com/library/ce9078b7-a750-4f47-b23e-90b83b783d80)   
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Base de données associés des vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/database-related-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique liées à la base de données &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/database-related-dynamic-management-views-transact-sql.md)  
   
   

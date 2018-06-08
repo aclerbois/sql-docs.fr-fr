@@ -1,28 +1,27 @@
 ---
 title: Compteurs de performances - Service ReportServer, objets de performance | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Report Server service, performance counters
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Report Server service, performance counters
 ms.assetid: 2bcacab2-3a4f-4aae-b123-19d756b9b9ed
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4f956b1f0dc970529912844681af784e2b495a5e
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3a83e69235c79a255d1ba238b6acc24f873d5e51
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="performance-counters---reportserver-service--performance-objects"></a>Compteurs de performances - Service ReportServer, objets de performance
   Cette rubrique décrit les compteurs de performance pour les objets de performance **ReportServer:Service** et **ReportServerSharePoint:Service** qui font partie d’un déploiement de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] .  
@@ -30,7 +29,7 @@ ms.lasthandoff: 01/09/2018
 > [!NOTE]  
 >  Les objets de performance sont utilisés pour contrôler des événements sur le serveur de rapports local. Si vous exécutez un serveur de rapports dans un déploiement avec montée en puissance parallèle, les chiffres s'appliquent au serveur actuel et non au déploiement avec montée en puissance parallèle dans son ensemble.  
   
- Les objets de performance sont disponibles dans l’Analyseur de performances Windows (**Perfmon.exe**). Pour plus d'informations, consultez la documentation Windows. [Génération de profils d’exécution](http://msdn.microsoft.com/library/w4bz2147.aspx) (http://msdn.microsoft.com/library/w4bz2147.aspx).  
+ Les objets de performance sont disponibles dans l’Analyseur de performances Windows (**Perfmon.exe**). Pour plus d'informations, consultez la documentation Windows. [Profilage de runtime](http://msdn.microsoft.com/library/w4bz2147.aspx) (http://msdn.microsoft.com/library/w4bz2147.aspx).  
   
  Dans cette rubrique :  
   

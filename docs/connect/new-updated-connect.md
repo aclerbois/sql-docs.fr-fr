@@ -1,47 +1,47 @@
 ---
-title: "Mise à jour - se connecter à la documentation de SQL Server | Documents Microsoft"
-description: "Extraits de l’affichage de contenu mis à jour pour obtenir une documentation récemment modifié, pour se connecter à Microsoft SQL Server."
+title: Mise à jour – Documentation Connexion au serveur SQL Server | Microsoft Docs
+description: Affiche des extraits de contenus mis à jour récemment dans la documentation Connexion au serveur SQL Server.
 manager: craigg
 author: MightyPen
 ms.author: genemi
 ms.topic: article
 ms.custom: UpdArt.exe
 ms.suite: sql
-ms.prod_service: sql-non-specified
+ms.prod_service: sql
 ms.component: connect
 ms.date: 02/03/2018
-ms.openlocfilehash: cc4eb05dc4dcd74623c8ce7dfa7b7842449d79b6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
-ms.translationtype: MT
+ms.openlocfilehash: b7f3307feb3e17ec342c9693c5b70d07866b383f
+ms.sourcegitcommit: a85a46312acf8b5a59a8a900310cf088369c4150
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 04/26/2018
 ---
-# <a name="new-and-recently-updated-connect-to-sql-server"></a>Nouveaux et mis à jour récemment : se connecter à SQL Server
+# <a name="new-and-recently-updated-connect-to-sql-server"></a>Nouveautés et mises à jour récentes : Connexion au serveur SQL Server
 
 
 
-Presque tous les jours Microsoft met à jour certains de ses articles existants sur son [Docs.Microsoft.com](http://docs.microsoft.com/) site Web de documentation. Cet article affiche des extraits d’articles récemment mis à jour. Des liens vers nouveaux articles peuvent également être répertoriés.
+Presque tous les jours, Microsoft met à jour certains de ses articles sur son site web de documentation [Docs.Microsoft.com](http://docs.microsoft.com/). Cet article contient des extraits d’articles récemment mis à jour. Des liens vers de nouveaux articles peuvent également être répertoriés.
 
-Cet article est généré par un programme est exécuté à nouveau régulièrement. Parfois un extrait peut apparaître avec mise en forme imparfait, ou en tant que markdown de l’article de la source. Les images ne sont jamais affichés ici.
+Cet article est généré par un programme qui est réexécuté régulièrement. Un extrait peut parfois apparaître avec une mise en forme imparfaite ou au format Markdown de l’article source. Les images ne sont jamais affichées ici.
 
-Mises à jour récentes sont signalés pour la plage de dates suivante et l’objet :
+Les mises à jour récentes sont signalées pour la plage de dates et le sujet suivants :
 
 
 
-- *Plage de dates de mises à jour :* &nbsp; **2017-12-03** &nbsp; - à - &nbsp; **2018-02-03**
-- *Zone de sujet :* &nbsp; **se connecter à SQL Server**.
+- *Période des mises à jour :* &nbsp; **03-12-2017** &nbsp; au &nbsp; **03-02-2018**
+- *Zone de thème :* &nbsp;**Connexion au serveur SQL Server**.
 
 
 
 
 &nbsp;
 
-## <a name="new-articles-created-recently"></a>Nouveaux Articles vient d’être créés
+## <a name="new-articles-created-recently"></a>Nouveaux articles créés récemment
 
 Les liens suivants renvoient aux nouveaux articles ajoutés récemment.
 
 
-***Il n’y a aucun nouvel article.***
+***Il n’y a aucun nouvel article pour cette fois.***
 
 
 
@@ -51,9 +51,9 @@ Les liens suivants renvoient aux nouveaux articles ajoutés récemment.
 
 Cette section affiche les extraits des mises à jour collectés dans des articles qui ont récemment fait l’objet d’une mise à jour importante.
 
-Les extraits affichés ici apparaissent séparés à partir de leur contexte sémantique spécifique. En outre, parfois un extrait est séparé à partir de la syntaxe markdown important qui l’entoure dans l’article. Par conséquent, ces extraits sont pour des conseils généraux. Les extraits permettent uniquement de savoir si votre intérêt justifie pris le temps de cliquer sur et consultez l’article.
+Les extraits affichés ici apparaissent séparés de leur contexte sémantique propre. Un extrait est parfois séparé de la syntaxe Markdown importante qui l’entoure dans l’article. Ces extraits sont donc donnés à titre indicatif uniquement. Les extraits vous permettent seulement de savoir si les articles correspondants vont vous intéresser et si oui, de cliquer dessus pour les consulter.
 
-Pour celles-ci et d’autres raisons, ne pas copier le code à partir de ces extraits et ne prennent pas en tant que vérité exacte tout extrait de texte. Au lieu de cela, consultez l’article.
+Pour cela et pour d’autres raisons, ne copiez pas le code de ces extraits et ne prenez pas à la lettre les extraits de texte. Consultez plutôt l’article.
 
 
 
@@ -63,11 +63,11 @@ Pour celles-ci et d’autres raisons, ne pas copier le code à partir de ces ext
 
 <a name="compactupdatedlist"/>
 
-### <a name="compact-list-of-articles-updated-recently"></a>Liste compacte d’Articles récemment mis à jour
+### <a name="compact-list-of-articles-updated-recently"></a>Liste compacte d’articles mis à jour récemment
 
 Cette liste compacte fournit des liens vers tous les articles mis à jour qui sont répertoriés dans la section des extraits.
 
-1. [Utilisation du chiffrement intégral avec le pilote ODBC pour SQL Server](#TitleNum_1)
+1. [Utiliser Always Encrypted avec le pilote ODBC pour SQL Server](#TitleNum_1)
 
 
 
@@ -78,9 +78,9 @@ Cette liste compacte fournit des liens vers tous les articles mis à jour qui so
 
 <a name="TitleNum_1"/>
 
-### <a name="1-nbsp-using-always-encrypted-with-the-odbc-driver-for-sql-serverodbcusing-always-encrypted-with-the-odbc-drivermd"></a>1. &nbsp;[Utilisation du chiffrement intégral avec le pilote ODBC pour SQL Server](odbc/using-always-encrypted-with-the-odbc-driver.md)
+### <a name="1-nbsp-using-always-encrypted-with-the-odbc-driver-for-sql-serverodbcusing-always-encrypted-with-the-odbc-drivermd"></a>1. &nbsp;[Utiliser Always Encrypted avec le pilote ODBC pour SQL Server](odbc/using-always-encrypted-with-the-odbc-driver.md)
 
-*Mise à jour : 2018-01-22* &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; 
+*Mise à jour : 22-01-2018* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
 
 <!-- Source markdown line 524.  ms.author= "v-chojas".  -->
 
@@ -91,28 +91,28 @@ Cette liste compacte fournit des liens vers tous les articles mis à jour qui so
 
 
 
-**Récupérer des données dans des parties avec SQLGetData**
+**Récupérer une partie des données avec SQLGetData**
 
-Avant le 17 du pilote ODBC pour SQL Server, cryptage caractère et les colonnes de type binary ne sont pas accessibles dans des parties avec SQLGetData. Un seul appel de SQLGetData peut être effectué, avec une mémoire tampon de longueur suffisante pour contenir les données de la colonne entière.
+Avant la version 17 du pilote ODBC pour SQL Server, il n’est pas possible de récupérer une partie des colonnes binaires et des caractères chiffrés avec SQLGetData. Un seul appel de SQLGetData est possible, avec une mémoire tampon de taille suffisante pour contenir la totalité des données de la colonne.
 
-**Envoyer des données dans des parties avec SQLPutData**
+**Envoyer une partie des données avec SQLPutData**
 
-Impossible d’envoyer les données de comparaison ou insertion dans des parties avec SQLPutData. Un seul appel à SQLPutData peut être effectué, avec une mémoire tampon contenant la totalité des données. Pour insérer des données de type long dans les colonnes chiffrées, utilisez l’API de copie en bloc, décrit dans la section suivante, avec un fichier de données d’entrée.
+Il n’est pas possible d’envoyer une partie des données à des fins de comparaison ou d’insertion avec SQLPutData. Un seul appel à SQLPutData est possible, avec une mémoire tampon contenant la totalité des données. Pour insérer des données de type long dans des colonnes chiffrées, utilisez l’API de copie en bloc, décrite dans la section suivante, avec un fichier de données d’entrée.
 
-**Smallmoney et money chiffrée**
+**Colonnes money et smallmoney chiffrées**
 
-Chiffré **money** ou **smallmoney** colonnes ne peut pas être ciblés par les paramètres, car il n’existe aucun spécifique qui correspond à ces types, ce qui entraîne des erreurs de conflit de Type opérande de type de données ODBC.
+Les paramètres ne peuvent pas cibler les colonnes **money** et **smallmoney**, car il n’existe aucun type de données ODBC correspondant spécifiquement à ces types, ce qui provoque des erreurs de conflit de type opérande.
 
-**Copie en bloc des colonnes chiffrées**
+**Copie en bloc de colonnes chiffrées**
 
 
-Utilisation de la [des fonctions de copie en bloc SQL](odbc/../../relational-databases/native-client-odbc-bulk-copy-operations/performing-bulk-copy-operations-odbc.md) et le **bcp** utilitaire est pris en charge avec Always Encrypted depuis le 17 du pilote ODBC pour SQL Server. Texte en clair (insertion chiffrée sur et récupération déchiffrée sur) et texte chiffré (transféré textuellement) peuvent être insérés et récupérés à l’aide de la copie en bloc (bcp_ *) API et la **bcp** utilitaire.
+Les [fonctions de copie en bloc SQL](odbc/../../relational-databases/native-client-odbc-bulk-copy-operations/performing-bulk-copy-operations-odbc.md) et l’utilitaire **bcp** sont pris en charge avec Always Encrypted depuis la version 17 du pilote ODBC pour SQL Server. Le texte en clair (chiffré lors de l’insertion et déchiffré lors de la récupération) et le texte chiffré (transféré textuellement) peuvent être insérés et récupérés à l’aide des API de copie en bloc (bcp_*) et de l’utilitaire **bcp**.
 
-- Pour récupérer du texte chiffré sous forme de varbinary (max) (par exemple, pour le chargement en masse dans une autre base de données), de se connecter sans le `ColumnEncryption` option (ou la valeur `Disabled`) et effectuer une opération BCP OUT.
+- Pour récupérer du texte chiffré au format varbinary(max) (par exemple, pour le chargement en masse dans une autre base de données), connectez-vous sans l’option `ColumnEncryption` (ou en lui donnant la valeur `Disabled`) et effectuez une opération BCP OUT.
 
-- Pour insérer, extraire en texte clair et permettent d’effectuer en toute transparence le chiffrement et le déchiffrement en tant que paramètre requis, le pilote `ColumnEncryption` à `Enabled` est suffisante. Les fonctionnalités de l’API BCP sont inchangée.
+- Pour insérer et récupérer du texte clair et laisser le pilote effectuer en toute transparence le chiffrement et le déchiffrement, il suffit de donner la valeur `Enabled` à `ColumnEncryption`. Les fonctionnalités de l’API BCP restent inchangées par ailleurs.
 
-- Pour insérer du texte chiffré sous forme de varbinary (max) (par exemple, tel que récupéré ci-dessus), définissez la `BCPMODIFYENCRYPTED` option sur TRUE et effectuer une opération BCP IN. Dans l’ordre pour les données résultantes être decryptable, assurez-vous que la destination clé de la colonne est la même que celle à partir de laquelle le texte chiffré obtenu à l’origine.
+- Pour insérer du texte chiffré au format varbinary(max) (tel qu’il a été récupéré ci-dessus, par exemple), donnez la valeur TRUE à l’option `BCPMODIFYENCRYPTED` et effectuez une opération BCP IN. Pour que les données résultantes soient déchiffrables, la clé CEK de la colonne de destination doit être la même que celle avec laquelle le texte chiffré a été obtenu à l’origine.
 
 
 
@@ -125,40 +125,40 @@ Utilisation de la [des fonctions de copie en bloc SQL](odbc/../../relational-dat
 Cette section liste les articles très similaires récemment mis à jour dans d’autres domaines, dans notre dépôt public GitHub.com : [MicrosoftDocs/sql-docs](https://github.com/MicrosoftDocs/sql-docs/).
 
 
-#### <a name="subject-areas-that-do-have-new-or-recently-updated-articles"></a>Zones de sujet qui *faire* ont nouveaux ou récemment mis à jour articles
+#### <a name="subject-areas-that-do-have-new-or-recently-updated-articles"></a>Domaines *avec* des articles nouveaux ou mis à jour récemment
 
 
-- [Nouveau + mis à jour (1 + 3) :&nbsp; **avancées d’Analytique pour SQL** documents](../advanced-analytics/new-updated-advanced-analytics.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **système de plateforme d’Analytique pour SQL** documents](../analytics-platform-system/new-updated-analytics-platform-system.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **se connecter à SQL** documents](../connect/new-updated-connect.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **moteur de base de données pour SQL** documents](../database-engine/new-updated-database-engine.md)
-- [Nouveau + mis à jour (12 + 1) : **Integration Services pour SQL** documents](../integration-services/new-updated-integration-services.md)
-- [Nouveau + mis à jour (6 + 2) :&nbsp; **Linux pour SQL** documents](../linux/new-updated-linux.md)
-- [Nouveau + mis à jour (15 + 0) : **PowerShell pour SQL** documents](../powershell/new-updated-powershell.md)
-- [Nouveau + mis à jour (2 + 9) :&nbsp; **des bases de données relationnelles pour SQL** documents](../relational-databases/new-updated-relational-databases.md)
-- [Nouveau + mis à jour (1 + 0) :&nbsp; **Reporting Services pour SQL** documents](../reporting-services/new-updated-reporting-services.md)
-- [Nouveau + mis à jour (1 + 1) :&nbsp; **SQL opérations Studio** documents](../sql-operations-studio/new-updated-sql-operations-studio.md)
-- [Nouveau + mis à jour (1 + 1) :&nbsp; **Microsoft SQL Server** documents](../sql-server/new-updated-sql-server.md)
-- [Nouveau + mis à jour (0 + 1) :&nbsp; **SQL Server Data Tools (SSDT)** documents](../ssdt/new-updated-ssdt.md)
-- [Nouveau + mis à jour (1 + 2) :&nbsp; **SQL Server Management Studio (SSMS)** documents](../ssms/new-updated-ssms.md)
-- [Nouveau + mis à jour (0 + 2) :&nbsp; **Transact-SQL** documents](../t-sql/new-updated-t-sql.md)
+- [Nouveaux + Mis à jour (1 + 3) :&nbsp; **Analytique avancée pour SQL** (documentation)](../advanced-analytics/new-updated-advanced-analytics.md)
+- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Système de la plateforme d’analyse pour SQL** (documentation)](../analytics-platform-system/new-updated-analytics-platform-system.md)
+- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Connexion à SQL** (documentation)](../connect/new-updated-connect.md)
+- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **Moteur de base de données pour SQL** (documentation)](../database-engine/new-updated-database-engine.md)
+- [Nouveaux + Mis à jour (12 + 1) :**Integration Services pour SQL** (documentation)](../integration-services/new-updated-integration-services.md)
+- [Nouveaux + Mis à jour (6 + 2) :&nbsp; **Linux pour SQL** (documentation)](../linux/new-updated-linux.md)
+- [Nouveaux + Mis à jour (15 + 0) : **PowerShell pour SQL** (documentation)](../powershell/new-updated-powershell.md)
+- [Nouveaux + Mis à jour (2 + 9) :&nbsp; **Bases de données relationnelles pour SQL** (documentation)](../relational-databases/new-updated-relational-databases.md)
+- [Nouveaux + Mis à jour (1 + 0) :&nbsp; **Reporting Services pour SQL** (documentation)](../reporting-services/new-updated-reporting-services.md)
+- [Nouveaux + Mis à jour (1 + 1) :&nbsp; **SQL Operations Studio** (documentation)](../sql-operations-studio/new-updated-sql-operations-studio.md)
+- [Nouveaux + Mis à jour (1 + 1) :&nbsp; **Microsoft SQL Server** (documentation)](../sql-server/new-updated-sql-server.md)
+- [Nouveaux + Mis à jour (0 + 1) :&nbsp; **SQL Server Data Tools (SSDT)** (documentation)](../ssdt/new-updated-ssdt.md)
+- [Nouveaux + Mis à jour (1 + 2) :&nbsp; **SQL Server Management Studio (SSMS)** (documentation)](../ssms/new-updated-ssms.md)
+- [Nouveaux + Mis à jour (0 + 2) :&nbsp; **Transact-SQL** (documentation)](../t-sql/new-updated-t-sql.md)
 
 
 
-#### <a name="subject-areas-that-do-not-have-any-new-or-recently-updated-articles"></a>Zones de font l’objet *pas* ont tous nouveaux ou récemment mis à jour articles
+#### <a name="subject-areas-that-do-not-have-any-new-or-recently-updated-articles"></a>Domaines *sans* article nouveau ou mis à jour récemment
 
 
 - [Nouveaux + Mis à jour (0 + 0) : **Data Migration Assistant (DMA) pour SQL** (documentation)](../dma/new-updated-dma.md)
-- [Nouveau + mis à jour (0 0 +) : **ActiveX Data Objects (ADO) pour SQL** documents](../ado/new-updated-ado.md)
+- [Nouveaux + Mis à jour (0 + 0) : **ActiveX Data Objects (ADO) pour SQL** (documentation)](../ado/new-updated-ado.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Analysis Services pour SQL** (documentation)](../analysis-services/new-updated-analysis-services.md)
-- [Nouveau + mis à jour (0 0 +) : **Data Quality Services pour SQL** documents](../data-quality-services/new-updated-data-quality-services.md)
-- [Nouveau + mis à jour (0 0 +) : **Extensions DMX (Data Mining) pour SQL** documents](../dmx/new-updated-dmx.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Data Quality Services pour SQL** (documentation)](../data-quality-services/new-updated-data-quality-services.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Extensions DMX (Data Mining Extensions) pour SQL** (documentation)](../dmx/new-updated-dmx.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Master Data Services (MDS) for SQL** (documentation)](../master-data-services/new-updated-master-data-services.md)
-- [Nouveau + mis à jour (0 0 +) : **MDX (Multidimensional Expressions) pour SQL** documents](../mdx/new-updated-mdx.md)
-- [Nouveau + mis à jour (0 0 +) : **ODBC (Open Database Connectivity) pour SQL** documents](../odbc/new-updated-odbc.md)
-- [Nouveau + mis à jour (0 0 +) : **exemples pour SQL** documents](../sample/new-updated-sample.md)
-- [Nouveau + mis à jour (0 0 +) : **SQL Server Migration Assistant (SSMA)** documents](../ssma/new-updated-ssma.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Expressions MDX (Multidimensional Expressions) pour SQL** (documentation)](../mdx/new-updated-mdx.md)
+- [Nouveaux + Mis à jour (0 + 0) : **ODBC (Open Database Connectivity) pour SQL** (documentation)](../odbc/new-updated-odbc.md)
+- [Nouveaux + Mis à jour (0 + 0) : **Exemples pour SQL** (documentation)](../samples/new-updated-samples.md)
+- [Nouveaux + Mis à jour (0 + 0) : **SQL Server Migration Assistant (SSMA)** (documentation)](../ssma/new-updated-ssma.md)
 - [Nouveaux + Mis à jour (0 + 0) : **Outils pour SQL** (documentation)](../tools/new-updated-tools.md)
-- [Nouveau + mis à jour (0 0 +) : **XQuery pour SQL** documents](../xquery/new-updated-xquery.md)
+- [Nouveaux + Mis à jour (0 + 0) : **XQuery pour SQL** (documentation)](../xquery/new-updated-xquery.md)
 
 

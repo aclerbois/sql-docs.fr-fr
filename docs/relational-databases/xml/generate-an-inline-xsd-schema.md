@@ -1,17 +1,15 @@
 ---
-title: "Générer un schéma XSD en ligne | Microsoft Docs"
-ms.custom: 
+title: Générer un schéma XSD en ligne | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - XSD schemas [SQL Server]
 - XMLSCHEMA option
@@ -21,20 +19,19 @@ helpviewer_keywords:
 - inline XSD schema generation [SQL Server]
 - XMLDATA option
 ms.assetid: 04b35145-1cca-45f4-9eb7-990abf2e647d
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2b651f16b3bf5c43755aafa1c6b67cbef06fc1cd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: e2f360663435f0f9388fa4aca5c0391e540d08e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generate-an-inline-xsd-schema"></a>Générer un schéma XSD en ligne
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Dans une clause FOR XML, vous pouvez demander que votre requête retourne un schéma en ligne avec les résultats de la requête. Pour obtenir un schéma XDR, utilisez le mot clé XMLDATA dans la clause FOR XML. Pour obtenir un schéma XSD, utilisez le mot clé XMLSCHEMA.  
+  Dans une clause FOR XML, vous pouvez demander que votre requête retourne un schéma en ligne avec les résultats de la requête. Pour obtenir un schéma XDR, utilisez le mot clé XMLDATA dans la clause FOR XML. Pour obtenir un schéma XSD, utilisez le mot clé XMLSCHEMA.  
   
  Cette rubrique décrit le mot clé XMLSCHEMA et explique la structure du schéma XSD en ligne résultant. Les limites suivantes sont à respecter lorsque vous demandez des schémas en ligne :  
   

@@ -1,30 +1,26 @@
 ---
-title: "Configurer l’option de configuration de serveur index create memory | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur index create memory | Microsoft Docs
+ms.custom: ''
 ms.date: 11/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - index create memory option
 ms.assetid: 3d722d9b-bada-4bf5-a9d7-bfc556bb4915
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4002ca9e8f3ed619f59308ad36d7a26e90eb0d70
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 5fe7481737a1f57391a3d9c06e9f3086ebccdfdf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-index-create-memory-server-configuration-option"></a>Configurer l'option de configuration de serveur index create memory
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -61,7 +57,7 @@ ms.lasthandoff: 02/03/2018
   
 ###  <a name="Recommendations"></a> Recommandations  
   
--   Cette option avancée ne doit être changée que par un administrateur de base de données qualifié ou un spécialiste agréé [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+-   Seul un administrateur de base de données qualifié ou un spécialiste agréé doit changer cette option avancée [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 -   L’option **index create memory** est configurée automatiquement et fonctionne habituellement sans besoin de modification. Cependant, si vous rencontrez des difficultés dans la création d'index, envisagez d'augmenter la valeur de cette option par rapport à sa valeur d'exécution.  
 

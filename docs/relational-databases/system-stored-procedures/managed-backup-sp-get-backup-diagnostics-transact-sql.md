@@ -1,16 +1,14 @@
 ---
-title: managed_backup.sp_get_backup_diagnostics (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: managed_backup.sp_get_backup_diagnostics (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_get_backup_diagnostics_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sp_get_backup_diagnostics
 - smart_admin.sp_get_backup_diagnostics
 ms.assetid: 2266a233-6354-464b-91ec-824ca4eb9ceb
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 088d3232ef47888c0615e7b8a7638eb26f2817a2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e2b2f8c78b1802ff177040352cd7342b51b035c6
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managedbackupspgetbackupdiagnostics-transact-sql"></a>managed_backup.sp_get_backup_diagnostics (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -67,8 +64,8 @@ managed_backup.sp_get_backup_diagnostics [@xevent_channel = ] 'event type' [, [@
 ||||  
 |-|-|-|  
 |Nom de la colonne|Type de données| Description|  
-|event_type|NVARCHAR(512)|Type d’événement étendu.|  
-|Événement|NVARCHAR(512)|Récapitulatif des journaux d'événements.|  
+|event_type|NVARCHAR (512)|Type d’événement étendu.|  
+|Événement|NVARCHAR (512)|Récapitulatif des journaux d'événements.|  
 |Horodateur|TIMESTAMP|Horodateur de l'événement indiquant à quel moment l'événement s'est produit.|  
   
 ## <a name="security"></a>Sécurité  

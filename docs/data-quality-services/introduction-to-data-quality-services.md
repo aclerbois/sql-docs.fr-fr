@@ -2,31 +2,32 @@
 title: Présentation de Data Quality Services | Microsoft Docs
 ms.custom: ''
 ms.date: 03/05/2012
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Domains
 ms.assetid: 5350214c-7333-41d0-ae83-1b7d8454ebec
-caps.latest.revision: ''
+caps.latest.revision: 51
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b2b0004068581d06c516c711565d811cc1736b55
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 51e0c8b9f0ab16a6adbabd1d83b3d189035a78aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-data-quality-services"></a>Présentation de Data Quality Services
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   La solution de qualité des données fournie par [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) permet aux gestionnaires de données et aux professionnels de l'informatique de préserver la qualité de leurs données et de s'assurer que ces dernières sont adaptées à leur utilisation professionnelle. DQS est une solution reposant sur des connaissances qui offre des méthodes interactives et assistées par ordinateur pour gérer l'intégrité et la qualité de vos sources de données. DQS vous permet de découvrir, de générer et de gérer les connaissances relatives à vos données. Vous pouvez ensuite utiliser ces connaissances pour procéder au nettoyage, à la mise en correspondance et au profilage des données. Vous pouvez également tirer parti des services en nuage de fournisseurs de données de référence dans un projet de qualité des données DQS.  
   
 ##  <a name="BusinessNeed"></a> Besoin de DQS pour les entreprises  

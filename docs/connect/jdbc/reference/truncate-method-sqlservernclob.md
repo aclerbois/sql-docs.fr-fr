@@ -1,27 +1,24 @@
 ---
-title: "Méthode Truncate (SQLServerNClob) | Documents Microsoft"
-ms.custom: 
+title: Méthode Truncate (SQLServerNClob) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b7e8210d-a724-4bae-832a-ae4c63031c9c
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b09192763b6982db02a53f758b6aab1837612085
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b253bac57e22e953a1e6afa7ec269dd8ef78f787
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="truncate-method-sqlservernclob"></a>Méthode truncate (SQLServerNClob)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -36,7 +33,7 @@ public void truncate(long len)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *Len*  
+ *len*  
   
  La longueur, en caractères, à laquelle le **NCLOB** valeur sera tronquée.  
   

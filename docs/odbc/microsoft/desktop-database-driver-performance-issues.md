@@ -1,31 +1,28 @@
 ---
-title: "Problèmes de performances du pilote bureau de base de données | Documents Microsoft"
-ms.custom: 
+title: Problèmes de performances du pilote bureau de base de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC desktop database drivers [ODBC], performance
 - desktop database drivers [ODBC], performance
 - Jet-based ODBC drivers [ODBC], performance
 ms.assetid: 1a4c4b7e-9744-411f-9b6e-06dfdad92cf7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 67379ee540aecb691122d91b42776b0c9d990b1d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 73261681421546dcec4cd37d73b1cdf55968038e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="desktop-database-driver-performance-issues"></a>Problèmes de performances du pilote bureau de base de données
 Pour garantir la compatibilité avec les applications existantes ANSI, les types de données SQL_WCHAR, SQL_WVARCHAR et SQL_WLONGVARCHAR exposées en tant que SQL_CHAR, SQL_VARCHAR et SQL_LONGVARCHAR pour Microsoft Access 4.0 ou supérieure sources de données. Les sources de données ne retournent pas de types de données CHAR large, mais les données toujours doivent être envoyées à Jet sous forme de Char large. Il est important de comprendre que conversion a lieu si une colonne de paramètre ou le résultat SQL_C_CHAR est liée à un type de données SQL_CHAR dans une application ANSI.  

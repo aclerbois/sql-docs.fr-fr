@@ -1,35 +1,33 @@
 ---
-title: "Basculer vers une base de données secondaire de copie des journaux de transaction (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Basculer vers une base de données secondaire de copie des journaux de transaction (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: log-shipping
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - primary databases [SQL Server]
 - secondary data files [SQL Server], manual fail over
 - log shipping [SQL Server], failover
 - failover [SQL Server], log shipping
 ms.assetid: edfe5d59-4287-49c1-96c9-dd56212027bc
-caps.latest.revision: "31"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 31
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6358e0fe4be60bcb57441a864b30e036147e5eed
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: fa6290a4548020d203ae1c79d7ef44e082468740
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772065"
 ---
 # <a name="fail-over-to-a-log-shipping-secondary-sql-server"></a>Basculer vers une base de données secondaire de copie des journaux de transaction (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Le basculement vers une base de données secondaire de copie des journaux de transactions est utile en cas d’échec ou d’un besoin de maintenance de l’instance du serveur principal.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Le basculement vers une base de données secondaire de copie des journaux de transactions est utile en cas d'échec ou d'un besoin de maintenance de l'instance du serveur principal.  
   
 ## <a name="preparing-for-a-controlled-failover"></a>Préparation en vue d'un basculement contrôlé  
  En règle générale, les bases de données primaire et secondaire ne sont pas synchronisées, car la base de données primaire est en permanence mise à jour après son dernier travail de sauvegarde. De même, dans certains cas, les sauvegardes récentes du journal des transactions n'ont pas été copiées dans les instances du serveur secondaire ou certaines copies des sauvegardes du journal n'ont peut-être pas encore été appliquées dans la base de données secondaire. Si possible, nous vous recommandons de commencer par synchroniser l'ensemble des bases de données secondaires avec la base de données primaire.  

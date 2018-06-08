@@ -1,31 +1,23 @@
 ---
-title: "Configurer les propriétés du groupe de mesures | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: properties [Analysis Services], measure groups
-ms.assetid: fa66bdb6-60b8-413c-ac2a-00e4d09f60a2
-caps.latest.revision: "17"
-author: Minewiskan
+title: Configurer les propriétés du groupe de mesures | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f7cf2328a6f93ed1c7fe17034af1b42b53baaa39
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: eed879fa9bdeab12398f53d424bb5eaf8aea5bc7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-measure-group-properties"></a>Configurer les propriétés d'un groupe de mesures
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Groupes de mesures ont des propriétés qui vous permettent de définir la manière dont des groupes de mesures.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Les propriétés des groupes de mesures vous permettent de définir le fonctionnement des groupes de mesures.  
   
 ## <a name="measure-group-properties"></a>Propriétés des groupes de mesures  
  Les propriétés d'un groupe de mesures déterminent les comportements de l'ensemble du groupe de mesures et définissent les comportements par défaut des nouveaux objets de certaines propriétés de mesures dans un groupe de mesures.  

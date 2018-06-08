@@ -1,17 +1,16 @@
 ---
-title: "Expiration et désactivation des abonnements | Microsoft Docs"
-ms.custom: 
+title: Expiration et désactivation des abonnements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Distributors [SQL Server replication], distribution retention period
 - subscriptions [SQL Server replication], expiration
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - subscriptions [SQL Server replication], deactivation
 - deactivating subscriptions
 ms.assetid: 4d03f5ab-e721-4f56-aebc-60f6a56c1e07
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e3088e38923e05893c6504a9bc2d1a4379be25d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5135c5773a99804e692d0e46467d5d62dcd0d02c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-expiration-and-deactivation"></a>Expiration et désactivation des abonnements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,39 +1,24 @@
 ---
-title: "Élément NotifyTableChange (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément NotifyTableChange (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: NotifyTableChange Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- urn:schemas-microsoft-com:xml-analysis#NotifyTableChange
-- http://schemas.microsoft.com/analysisservices/2003/engine#NotifyTableChange
-- microsoft.xml.analysis.notifytablechange
-helpviewer_keywords: NotifyTableChange command
-ms.assetid: b76898eb-20d3-48c8-9eb8-1fd5df638bcc
-caps.latest.revision: "13"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 220a8ceeb2f4061d3da7a8243247a8daa6818650
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 049756318b4d0e14b0bd2fe858d7a2153673cfd5
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34575001"
 ---
 # <a name="notifytablechange-element-xmla"></a>Élément NotifyTableChange (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Notifie une instance de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] qui a été modifiée pour les tables d’une source de données spécifié.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Notifie une instance d’Analysis Services qu’une modification a été apportée à des tables dans une source de données spécifiée.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +32,7 @@ ms.lasthandoff: 01/08/2018
 </Command>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -62,7 +47,7 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Commandee](../../../analysis-services/xmla/xml-elements-properties/command-element-xmla.md)|  
 |Éléments enfants|[Objet](../../../analysis-services/xmla/xml-elements-properties/object-element-xmla.md), [TableNotifications](../../../analysis-services/xmla/xml-elements-properties/tablenotifications-element-xmla.md)|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **NotifyTableChange** commande permet à une application cliente notifier explicitement une [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] de l’instance que l’une ou plusieurs tables contenues dans une source de données ont été modifiés. Pour la mise en cache proactive, cette notification indique que les objets OLAP relationnels (ROLAP) basés sur ces tables doivent être examinés et mis à jour.  
   
  Cette méthode de notification convient le mieux aux objets ROLAP basés sur des vues ou des requêtes nommées définies dans une vue de source de données dont les modifications peuvent être délicates à détecter et suivre.  
@@ -71,7 +56,7 @@ ms.lasthandoff: 01/08/2018
   
  Pour plus d’informations sur la mise en cache proactive, consultez [Mise en cache proactive &#40;partitions&#41;](../../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-proactive-caching.md).  
   
-## <a name="see-also"></a>Voir aussi  
- [Commandes &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-commands/xml-elements-commands.md)  
+## <a name="see-also"></a>Voir aussi
+ [Commandes &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-commands/xml-elements-commands.md)  
   
   

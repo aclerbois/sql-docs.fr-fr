@@ -1,17 +1,16 @@
 ---
 title: Assistant Nouvelle Publication | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbpublishin
 - sql13.swb.dbpublishingwizard.choosetables.f1
@@ -43,16 +42,15 @@ f1_keywords:
 helpviewer_keywords:
 - New Publication Wizard
 ms.assetid: 57d65d16-90d1-4b4c-b68e-6418a7064e76
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a8076ab657bab20688e25f9f6a4fcf66e9cc514b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: bcc01ad69a1449fe196c260d01667d7538dda101
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-publication-wizard"></a>New Publication Wizard
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

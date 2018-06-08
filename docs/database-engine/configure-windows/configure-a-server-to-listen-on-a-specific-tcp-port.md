@@ -1,17 +1,14 @@
 ---
-title: "Configurer un serveur pour l’écoute sur un port TCP spécifique | Microsoft Docs"
-ms.custom: 
+title: Configurer un serveur pour l’écoute sur un port TCP spécifique | Microsoft Docs
+ms.custom: ''
 ms.date: 04/25/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - fixed port
 - static ports
@@ -20,16 +17,15 @@ helpviewer_keywords:
 - dynamic ports [SQL Server]
 - TCP/IP [SQL Server], port numbers
 ms.assetid: 2276a5ed-ae3f-4855-96d8-f5bf01890640
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d536334958c3f027de7d2d7dd9c78213938cbfe2
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 234996e85d88e9bed0313c2bf3abbf5f81eae65a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-a-server-to-listen-on-a-specific-tcp-port"></a>Configurer un serveur pour l’écoute sur un port TCP spécifique
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

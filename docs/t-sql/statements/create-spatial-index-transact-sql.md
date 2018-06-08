@@ -1,16 +1,14 @@
 ---
 title: CREATE SPATIAL INDEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SPATIAL INDEX
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - CREATE SPATIAL INDEX statement
 - CREATE INDEX statement
 ms.assetid: ee6b9116-a7ff-463a-a9f0-b360804d8678
-caps.latest.revision: 
+caps.latest.revision: 89
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 301896001cb79b9065436ecff044fdce92e7d576
-ms.sourcegitcommit: 0e305dce04dcd1aa83c39328397524b352c96386
+ms.openlocfilehash: bac2efae3646f5728fc8863c0a36fd1e028191ce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/22/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-spatial-index-transact-sql"></a>CREATE SPATIAL INDEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -275,7 +272,7 @@ BOUNDING_BOX = ( {
  Spécifie le schéma de pavage de la grille **geometry** que vous utilisez. GEOMETRY_GRID peut être spécifié uniquement sur une colonne du type de données **geometry**.  GEOMETRY_GRID permet la mise au point manuelle du schéma de pavage.  
   
  GEOMETRY_AUTO_GRID  
- **S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Peut être spécifié uniquement sur une colonne du type de données geometry. Il s'agit de l'option par défaut pour ce type de données et il n'est pas nécessaire de la spécifier.  
   
@@ -283,7 +280,7 @@ BOUNDING_BOX = ( {
  Spécifie le schéma de pavage de la grille géographique. GEOGRAPHY_GRID peut être spécifié uniquement sur une colonne du type de données **geography**.  
   
  GEOGRAPHY_AUTO_GRID  
- **S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Peut être spécifié uniquement sur une colonne du type de données geography.  Il s'agit de l'option par défaut pour ce type de données et il n'est pas nécessaire de la spécifier.  
   
@@ -365,7 +362,7 @@ Définit la densité de la grille à chaque niveau d'un schéma de pavage. Lorsq
 > Si une densité non valide est spécifiée, une erreur est générée.  
   
 CELLS_PER_OBJECT =*n*  
-Spécifie le nombre de cellules de pavage par objet pouvant être utilisées pour un objet spatial unique dans l'index par le processus de pavage. *n* peut être un entier compris entre 1 et 8192 (inclus). Si un nombre non valide est passé ou que le nombre est supérieur au nombre maximal de cellules pour le pavage spécifié, une erreur est générée.  
+Spécifie le nombre de cellules de pavage par objet pouvant être utilisées pour un objet spatial unique dans l'index par le processus de pavage. *n* peut être tout entier compris entre 1 et 8192 (inclus). Si un nombre non valide est passé ou que le nombre est supérieur au nombre maximal de cellules pour le pavage spécifié, une erreur est générée.  
   
  CELLS_PER_OBJECT a les valeurs par défaut suivantes :  
   
@@ -396,7 +393,7 @@ PAD_INDEX = { ON | **OFF** }
 FILLFACTOR =*fillfactor*  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
- Spécifie un pourcentage indiquant le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d'index lors de la création ou de la reconstruction de l'index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0. Si *fillfactor* a pour valeur 100 ou 0, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] crée des index avec des pages de niveau feuille intégralement remplies.  
+ Spécifie un pourcentage indiquant le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d'index lors de la création ou de la reconstruction de l'index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0. Si *fillfactor* a pour valeur 100 ou 0, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] crée des index avec des pages de niveau feuille intégralement remplies.  
   
 > [!NOTE]  
 >  Les taux de remplissage 0 et 100 sont identiques en tous points.  
@@ -489,7 +486,7 @@ MAXDOP =*max_degree_of_parallelism*
 > [!IMPORTANT]  
 > Bien que l'option MAXDOP soit prise en charge syntaxiquement, CREATE SPATIAL INDEX n'utilise actuellement qu'un processeur unique.  
   
- *max_degree_of_parallelism* peut être :  
+ *max_degree_of_parallelism* peut avoir la valeur :  
   
   1  
  Supprime la création de plans parallèles.  
@@ -506,7 +503,7 @@ MAXDOP =*max_degree_of_parallelism*
 > Les opérations d’index parallèles ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
 DATA_COMPRESSION = {NONE | ROW | PAGE}  
-**S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Détermine le niveau de compression de données utilisé par l'index.  
   
@@ -544,8 +541,8 @@ DATA_COMPRESSION = {NONE | ROW | PAGE}
   
  Si vous spécifiez un groupe de fichiers pour un index spatial, l'index est placé sur ce groupe de fichiers, quel que soit le schéma de partitionnement de la table.  
   
-## <a name="catalog-views-for-spatial-indexes"></a>Vues de catalogue pour les index spatiaux  
- Les vues de catalogue suivantes sont propres aux index spatiaux :  
+## <a name="catalog-views-for-spatial-indexes"></a>Affichages catalogue pour les index spatiaux  
+ Les affichages catalogue suivants sont propres aux index spatiaux :  
   
  [sys.spatial_indexes](../../relational-databases/system-catalog-views/sys-spatial-indexes-transact-sql.md)  
  Représente les informations d'index principal des index spatiaux.  

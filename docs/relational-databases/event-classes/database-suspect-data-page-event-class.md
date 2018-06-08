@@ -1,37 +1,33 @@
 ---
-title: "Database Suspect Data Page, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Database Suspect Data Page, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - event notifications [SQL Server], database mirroring
 - suspect_pages system table
 - database mirroring [SQL Server], event notifications
 - Database Suspect Data Page event class
 ms.assetid: 098e1443-a8a0-425c-9311-0a479b1370ed
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb75bd05b77432f1ca68294bca96e79820f7642e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 02fc3d275021a2c83bfe4573a0a462d0490e2a97
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="database-suspect-data-page-event-class"></a>classe d'événements Database Suspect Data Page
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Database Suspect Data Page** indique qu’une page a été ajoutée à la table [suspect_pages](../../relational-databases/system-tables/suspect-pages-transact-sql.md) dans la base de données [msdb](../../relational-databases/databases/msdb-database.md). Incluez cette classe d'événements dans les traces qui surveillent l'occurrence de pages suspectes.  
+  La classe d’événements **Database Suspect Data Page** indique qu’une page a été ajoutée à la table [suspect_pages](../../relational-databases/system-tables/suspect-pages-transact-sql.md) dans la base de données [msdb](../../relational-databases/databases/msdb-database.md). Incluez cette classe d'événements dans les traces qui surveillent l'occurrence de pages suspectes.  
   
 > [!NOTE]  
 >  Cet événement est émis de façon asynchrone à partir de l’insertion d’une ligne correspondante dans la table **suspect_pages** . Par conséquent, un travail à l’écoute de cet événement peut ne pas trouver immédiatement l’entrée **suspect_pages** correspondante.  

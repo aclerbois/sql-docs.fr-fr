@@ -1,30 +1,27 @@
 ---
-title: "Groupes de disponibilité Always On : interopérabilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: 'Groupes de disponibilité Always On : interopérabilité (SQL Server) | Microsoft Docs'
+ms.custom: ''
 ms.date: 04/20/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], about
 - Availability Groups [SQL Server], interoperability
 ms.assetid: daf87f90-2623-42ca-912c-b8f07d210510
-caps.latest.revision: "21"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 21
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: aa1bea69751b23b14c35a93f8e832f390f71e3a2
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 06f783bc9d3ba420ff09bc012e15295518874a94
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771265"
 ---
 # <a name="always-on-availability-groups-interoperability-sql-server"></a>Groupes de disponibilité Always On : interopérabilité (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

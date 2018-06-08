@@ -1,27 +1,25 @@
 ---
-title: "Gérer des datasets partagés | Microsoft Docs"
-ms.custom: 
+title: Gérer des datasets partagés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2cbb1fa3-959e-4df6-9887-ebc93cc1b686
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 9a7cc41553ca20061bebb29a5956cf48ebede673
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 7bd03c804791c67128d81eb3d7a6dbc64373e03b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-shared-datasets"></a>Gérer des datasets partagés
   Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], les datasets partagés récupèrent des données de sources de données partagées qui se connectent à des sources de données externes. Un dataset partagé offre un moyen de partager une requête pour fournir un jeu cohérent de données pour plusieurs rapports. La requête de dataset peut inclure des paramètres de dataset. Vous pouvez configurer un dataset partagé pour mettre en cache les résultats de la requête pour des combinaisons de paramètres spécifiques lors de la première utilisation ou en spécifiant une planification. Vous pouvez utiliser la mise en cache de datasets partagés en association avec la mise en cache de rapports et les sources de données de rapports pour mieux gérer l'accès à une source de données.  

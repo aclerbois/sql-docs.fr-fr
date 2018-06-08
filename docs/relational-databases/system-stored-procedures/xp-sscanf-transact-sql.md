@@ -1,16 +1,14 @@
 ---
 title: xp_sscanf (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - xp_sscanf_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - xp_sscanf
 ms.assetid: 619a9df1-7008-407e-a75a-bc6f851454a8
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 70835bdde4e84dbe889c8ae4f2ec5da24b314d5f
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: b989dfa254330034cab4ab5278e2e4a9cca4da3d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="xpsscanf-transact-sql"></a>xp_sscanf (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -69,7 +66,7 @@ xp_sscanf { string OUTPUT , format } [ ,argument [ ,...n ] ]
   
  `Command(s) completed successfully.`  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  
   
 ## <a name="examples"></a>Exemples  
@@ -91,7 +88,7 @@ products10.tmp        random
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Étendues générales des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/general-extended-stored-procedures-transact-sql.md)   
- [xp_sprintf &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/xp-sprintf-transact-sql.md)  
+ [Procédures stockées étendues générales &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/general-extended-stored-procedures-transact-sql.md)   
+ [xp_sprintf &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/xp-sprintf-transact-sql.md)  
   
   

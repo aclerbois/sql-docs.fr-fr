@@ -1,29 +1,19 @@
 ---
-title: "Objets (Analysis Services - données multidimensionnelles) de cube | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: cubes [Analysis Services], objects
-ms.assetid: 5cee362e-3f95-4467-bc6c-29b1518ecbf3
-caps.latest.revision: "12"
-author: Minewiskan
+title: Objets (Analysis Services - données multidimensionnelles) de cube | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 27fab4d1fb52df03991db9559f54f6d829e3256d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: cada8410f608816272b159c66196fb761e510abe
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="cube-objects-analysis-services---multidimensional-data"></a>Objets de cube (Analysis Services - Données multidimensionnelles)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -40,17 +30,17 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Rubrique||  
-|[Actions &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models/actions-analysis-services-multidimensional-data.md)||  
+|[Actions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models/actions-analysis-services-multidimensional-data.md)||  
 |[Agrégations et conceptions d’agrégation](../../analysis-services/multidimensional-models-olap-logical-cube-objects/aggregations-and-aggregation-designs.md)||  
 |[Calculs](../../analysis-services/multidimensional-models-olap-logical-cube-objects/calculations.md)||  
-|[Cellules de cube &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-cells-analysis-services-multidimensional-data.md)||  
+|[Cellules de cube & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-cells-analysis-services-multidimensional-data.md)||  
 |[Propriétés des cubes - Programmation de modèle multidimensionnel](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-properties-multidimensional-model-programming.md)||  
-|[Stockage de cube &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-storage-analysis-services-multidimensional-data.md)||  
-|[Traductions des cubes](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-translations.md)||  
+|[Stockage de cube & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-storage-analysis-services-multidimensional-data.md)||  
+|[Traductions de cube](../../analysis-services/multidimensional-models-olap-logical-cube-objects/cube-translations.md)||  
 |[Relations de dimension](../../analysis-services/multidimensional-models-olap-logical-cube-objects/dimension-relationships.md)||  
-|[Indicateurs de performance clés &#40;KPI&#41; dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/key-performance-indicators-kpis-in-multidimensional-models.md)||  
+|[Indicateurs de Performance clés & #40 ; Indicateurs de performance clés & #41 ; dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/key-performance-indicators-kpis-in-multidimensional-models.md)||  
 |[Mesures et groupes de mesures](../../analysis-services/multidimensional-models/measures-and-measure-groups.md)||  
-|[Partitions &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)||  
+|[Partitions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)||  
 |[Perspectives](../../analysis-services/multidimensional-models-olap-logical-cube-objects/perspectives.md)||  
   
   

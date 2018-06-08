@@ -1,39 +1,40 @@
 ---
 title: Fonction SQLRowCount | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLRowCount
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLRowCount
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLRowCount
-helpviewer_keywords: SQLRowCount function [ODBC]
+f1_keywords:
+- SQLRowCount
+helpviewer_keywords:
+- SQLRowCount function [ODBC]
 ms.assetid: 61e00a8a-9b3b-45b9-b397-7fe818822416
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 04a4e5061a80fec51361e82c57102df8e3fa34c8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f9ad642032c2bee346381bd74a2dc5db46bb3d0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlrowcount-function"></a>SQLRowCount (fonction)
 **Mise en conformité**  
  Version introduite : Conformité de normes 1.0 ODBC : ISO 92  
   
  **Résumé**  
- **SQLRowCount** retourne le nombre de lignes affectées par une **mise à jour**, **insérer**, ou **supprimer** instruction ; une opération SQL_ADD, SQL_UPDATE_BY_BOOKMARK ou SQL_DELETE_BY_BOOKMARK dans **SQLBulkOperations**; ou une opération SQL_UPDATE ou SQL_DELETE dans **SQLSetPos**.  
+ **SQLRowCount** retourne le nombre de lignes affectées par une **mise à jour**, **insérer**, ou **supprimer** instruction ; une SQL_ADD, SQL_UPDATE_BY_BOOKMARK ou SQL_ Opération DELETE_BY_BOOKMARK dans **SQLBulkOperations**; ou une opération SQL_UPDATE ou SQL_DELETE dans **SQLSetPos**.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -64,7 +65,7 @@ SQLRETURN SQLRowCount(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLRowCount** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLRowCount** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans les  *\*MessageText* tampon décrit l’erreur et sa cause.|  

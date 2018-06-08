@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLConnect | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLConnect
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLConnect
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLConnect
-helpviewer_keywords: SQLConnect function [ODBC]
+f1_keywords:
+- SQLConnect
+helpviewer_keywords:
+- SQLConnect function [ODBC]
 ms.assetid: 59075e46-a0ca-47bf-972a-367b08bb518d
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 9f2c2d3e8b60d0a73d1beba4f68148cd956431b4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c125516f2cc46c1391f74e016b3d4e9487c8dc57
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlconnect-function"></a>Fonction SQLConnect
 **Mise en conformité**  
@@ -77,10 +78,10 @@ SQLRETURN SQLConnect(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLConnect** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_DBC et un *gérer* de *handle de connexion*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLConnect** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
-|01 S 02|Valeur de l’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée de la *ValuePtr* argument dans **SQLSetConnectAttr** et une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
+|01S02|Valeur de l’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée de la *ValuePtr* argument dans **SQLSetConnectAttr** et une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08001|Impossible d’établir la connexion du client|Le pilote n’a pas pu établir une connexion avec la source de données.|  
 |08002|Nom de la connexion en cours d’utilisation|(DM) spécifié *handle de connexion* avait déjà été utilisé pour établir une connexion avec une source de données et la connexion a été encore ouverte ou l’exploration de l’utilisateur pour une connexion.|  
 |08004|Le serveur a rejeté la connexion|La source de données a rejeté l’établissement de la connexion pour des raisons de défini par l’implémentation.|  

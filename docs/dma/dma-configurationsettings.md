@@ -1,29 +1,27 @@
 ---
-title: "Paramètres de configuration (données Assistant Migration SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Paramètres de configuration (données Assistant Migration SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/31/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
-helpviewer_keywords: Data Migration Assistant, Assess
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
+helpviewer_keywords:
+- Data Migration Assistant, Assess
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3dde0c93d09a8c273e74820428a617a24f7ee150
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 4b42f816755b312f95609bd25ac6122b8fbf321c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuration-settings-for-data-migration-assistant"></a>Paramètres de configuration de l’Assistant Migration de données
 

@@ -1,32 +1,30 @@
 ---
-title: "Définir une relation d’enregistrement logique entre des articles de table de fusion | Microsoft Docs"
-ms.custom: 
+title: Définir une relation d’enregistrement logique entre des articles de table de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication logical records [SQL Server replication]
 - articles [SQL Server replication], logical records
 - logical records [SQL Server replication]
 ms.assetid: ff847b3a-c6b0-4eaf-b225-2ffc899c5558
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab8e8998836bc9517a65e652b7bb2ba4d9832449
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 8eb5da1b801a492be4844967833373f80881f782
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="define-a-logical-record-relationship-between-merge-table-articles"></a>Définir une relation d'enregistrement logique entre des articles de table de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -66,7 +64,7 @@ ms.lasthandoff: 03/08/2018
   
 1.  Dans la page **Filtrer les lignes de la table** de l’Assistant Nouvelle publication ou la page **Filtrer les lignes** de la boîte de dialogue **Propriétés de la publication - \<Publication>**, sélectionnez un filtre de lignes dans le volet **Tables filtrées**.  
   
-     Une relation d'enregistrement logique est associée à un filtre de jointure, qui étend un filtre de lignes. Vous devez donc définir un filtre de lignes avant de pouvoir étendre le filtre avec une jointure et appliquer une relation d'enregistrement logique. Après avoir défini un filtre de jointure, vous pouvez l'étendre avec un autre filtre de jointure. Pour plus d'informations sur la définition de filtres de jointure, consultez [Define and Modify a Join Filter Between Merge Articles](../../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md).  
+     Une relation d'enregistrement logique est associée à un filtre de jointure, qui étend un filtre de lignes. Vous devez donc définir un filtre de lignes avant de pouvoir étendre le filtre avec une jointure et appliquer une relation d'enregistrement logique. Après avoir défini un filtre de jointure, vous pouvez l'étendre avec un autre filtre de jointure. Pour plus d'informations sur la définition de filtres de jointure, consultez [Définir et modifier un filtre de jointure entre des articles de fusion](../../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md).  
   
 2.  Cliquez sur **Ajouter**, puis sur **Ajouter une jointure pour étendre le filtre sélectionné**.  
   
@@ -210,7 +208,7 @@ ms.lasthandoff: 03/08/2018
  [!code-vb[HowTo#rmo_vb_CreateLogicalRecord](../../../relational-databases/replication/codesnippet/visualbasic/rmohowtovb/rmotestenv.vb#rmo_vb_createlogicalrecord)]  
   
 ## <a name="see-also"></a> Voir aussi  
- [Define and Modify a Join Filter Between Merge Articles](../../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
+ [Définir et modifier un filtre de jointure entre des articles de fusion](../../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
  [Définir et modifier un filtre de lignes paramétrable pour un article de fusion](../../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md)   
  [Définir et modifier un filtre de lignes statique](../../../relational-databases/replication/publish/define-and-modify-a-static-row-filter.md)   
  [Regrouper les modifications apportées à des lignes connexes à l’aide d’enregistrements logiques](../../../relational-databases/replication/merge/group-changes-to-related-rows-with-logical-records.md)   

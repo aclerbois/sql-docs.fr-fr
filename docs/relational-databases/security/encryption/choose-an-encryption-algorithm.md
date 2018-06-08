@@ -1,36 +1,36 @@
 ---
 title: Choisir un algorithme de chiffrement | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/08/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cryptography [SQL Server], algorithms
 - encryption [SQL Server], algorithms
 - security [SQL Server], encryption
 - algorithms [SQL Server encryption]
 ms.assetid: 8227028c-a9c9-489d-bd27-fbf8242634ae
-caps.latest.revision: 
+caps.latest.revision: 36
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b0c946ccc0547e3efadf26f78bb66fcdd3feb517
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 87a50c93d0d037063b21ac6de1dda2f8ac2a58c5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choose-an-encryption-algorithm"></a>Choisir un algorithme de chiffrement
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Le chiffrement est l’une des mesures préventives à la disposition des administrateurs qui souhaitent sécuriser une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Le chiffrement est l'une des mesures préventives à la disposition des administrateurs qui souhaitent sécuriser une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
  Les algorithmes de chiffrement définissent les transformations de données qui ne peuvent pas être facilement inversées par les utilisateurs non autorisés. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] permet aux administrateurs et aux développeurs de choisir entre plusieurs algorithmes, notamment DES, Triple DES, TRIPLE_DES_3KEY, RC2, RC4, RC4 128 bits, DESX, AES 128 bits, AES 192 bits et AES 256 bits.  
   
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/21/2017
   
 -   Les clés symétriques créées avec ALGORITHM = TRIPLE_DES utilisent TRIPLE DES avec une clé de 128 bits.  
   
-## <a name="related-tasks"></a>Tâches associées  
+## <a name="related-tasks"></a>Related Tasks  
   
 |||  
 |-|-|  
@@ -78,7 +78,7 @@ ms.lasthandoff: 11/21/2017
 |Chiffrement de fichiers de base de données à l'aide du chiffrement transparent des données.|[Transparent Data Encryption &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md)|  
 |Comment chiffrer une colonne d'une table.|[Chiffrer une colonne de données](../../../relational-databases/security/encryption/encrypt-a-column-of-data.md)|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Chiffrement SQL Server](../../../relational-databases/security/encryption/sql-server-encryption.md)   
  [Hiérarchie de chiffrement](../../../relational-databases/security/encryption/encryption-hierarchy.md)  
   

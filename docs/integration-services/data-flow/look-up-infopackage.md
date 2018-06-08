@@ -1,28 +1,26 @@
 ---
 title: Rechercher un Infopackage| Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7c0cb7a4-cd07-44cc-85cb-eb1ad91f85fd
-caps.latest.revision: 
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b576561f0d49a6a3008fe59176fe2ec2c1368fa3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: acb054b3955831f19f99e32d45572d1e43434660
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="look-up-infopackage"></a>Rechercher un InfoPackage
   Utilisez la boîte de dialogue **Rechercher un InfoPackage** pour rechercher un InfoPackage qui est défini dans le système SAP Netweaver BW. Lorsque la liste d'InfoPackages apparaît, sélectionnez l'InfoPackage de votre choix. La destination remplira les options associées à l'aide des valeurs requises.  

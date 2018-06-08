@@ -1,17 +1,16 @@
 ---
-title: "Sécurisation de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Sécurisation de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 01/31/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - Security [SQL Server]
 helpviewer_keywords:
@@ -21,20 +20,19 @@ helpviewer_keywords:
 - security [SQL Server], planning
 - applications [SQL Server], security
 ms.assetid: 4d93489e-e9bb-45b3-8354-21f58209965d
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 24936f55d153d046b775ddbbf4188fc4a81c583d
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+ms.openlocfilehash: 404258cb75327f04cbda7df0831ead8130ff8364
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="securing-sql-server"></a>Sécurisation de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-La sécurisation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut être vue comme une série d’étapes impliquant quatre domaines : la plateforme, l’authentification, les objets (notamment les données) et les applications qui accèdent au système. Les rubriques suivantes vous guideront tout au long des processus de création et de mise en place d'un plan de sécurité efficace.  
+  La sécurisation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut être vue comme une série d’étapes impliquant quatre domaines : la plateforme, l’authentification, les objets (notamment les données) et les applications qui accèdent au système. Les rubriques suivantes vous guideront tout au long des processus de création et de mise en place d'un plan de sécurité efficace.  
   
  Vous trouverez de plus amples informations sur la sécurité de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur le site web de [SQL Server](http://go.microsoft.com/fwlink/?LinkID=31629) . Cela inclut un guide de recommandations et une liste de contrôle de sécurité. Ce site contient également les informations et les téléchargements les plus récents sur les Service Packs.  
   
@@ -59,8 +57,8 @@ La sécurisation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pe
 |---------------------------|---------|  
 |Configuration d’un pare-feu fonctionnant avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[Configurer un pare-feu Windows pour accéder au moteur de base de données](../../database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access.md)|  
 |Configuration d’un pare-feu fonctionnant avec [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]|[Service Integration Services &#40;Service SSIS&#41;](../../integration-services/service/integration-services-service-ssis-service.md)|  
-|Configuration d’un pare-feu fonctionnant avec [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]|[Configurer le Pare-feu Windows pour autoriser l’accès à Analysis Services](../../analysis-services/instances/configure-the-windows-firewall-to-allow-analysis-services-access.md)|  
-|Ouverture de ports spécifiques sur un pare-feu pour permettre l’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[Configurer le Pare-feu Windows pour autoriser l’accès à SQL Server](../../sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access.md)|  
+|Configuration d’un pare-feu fonctionnant avec [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]|[Configurer le pare-feu Windows pour autoriser l'accès à Analysis Services](../../analysis-services/instances/configure-the-windows-firewall-to-allow-analysis-services-access.md)|  
+|Ouverture de ports spécifiques sur un pare-feu pour permettre l’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[Configurer le Pare-feu Windows pour autoriser l'accès à SQL Server](../../sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access.md)|  
 |Configuration de la prise en charge de la Protection étendue de l'authentification à l'aide de la liaison de canal et liaison de service|[Se connecter au moteur de base de données à l'aide de la protection étendue](../../database-engine/configure-windows/connect-to-the-database-engine-using-extended-protection.md)|  
   
  La réduction de la surface d'exposition est une mesure de sécurité qui implique l'arrêt ou la désactivation de composants inutilisés. La réduction de la surface d'exposition permet de renforcer la sécurité en réduisant les risques d'attaque à l'encontre d'un système. L'élément principal à prendre en compte pour limiter la surface d'exposition de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] implique l'exécution des services requis dotés des privilèges minimaux en attribuant uniquement les droits appropriés aux services et aux utilisateurs. Le tableau ci-dessous contient des informations supplémentaires sur l'accès aux services et au système.  
@@ -132,7 +130,7 @@ GO
 |Pour obtenir des informations sur|Consultez|  
 |---------------------------|---------|  
 |Connexion à, configuration et contrôle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[Utiliser SQL Server Management Studio](http://msdn.microsoft.com/library/f289e978-14ca-46ef-9e61-e1fe5fd593be)|  
-|Connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et exécution de requêtes à partir de l'invite de commandes|[sqlcmd Utility](../../tools/sqlcmd-utility.md)|  
+|Connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et exécution de requêtes à partir de l'invite de commandes|[Utilitaire sqlcmd](../../tools/sqlcmd-utility.md)|  
 |Configuration et contrôle réseau pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|[Gestionnaire de configuration SQL Server](../../relational-databases/sql-server-configuration-manager.md)|  
 |Activation et désactivation de fonctionnalités à l'aide de la gestion basée sur une stratégie|[Administrer des serveurs à l'aide de la Gestion basée sur des stratégies](../../relational-databases/policy-based-management/administer-servers-by-using-policy-based-management.md)|  
 |Manipulation des clés symétriques d'un serveur de rapports|[Utilitaire rskeymgmt &#40;SSRS&#41;](../../reporting-services/tools/rskeymgmt-utility-ssrs.md)|  

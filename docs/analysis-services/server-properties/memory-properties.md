@@ -1,40 +1,19 @@
 ---
-title: "Propriétés de mémoire | Documents Microsoft"
-ms.custom: 
-ms.date: 01/23/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- LowMemoryLimit property
-- MinimumAllocatedMemory property
-- MidMemoryPrice property
-- MemoryHeapType property
-- memory [Analysis Services]
-- DefaultPagesCountToReuse property
-- TotalMemoryLimit property
-- SessionMemoryLimit property
-- VirtualMemoryLimit property
-- WaitCountIfHighMemory property
-- HighMemoryPrice property
-- HeapTypeForObjects property
-ms.assetid: 085f5195-7b2c-411a-9813-0ff5c6066d13
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés de mémoire | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 15e0fc6fa123fd4d9ca71f35804d2f06d0342b5a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c3542d8ffff4c5c8887c5c0f8f8747e4714dcd5c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="memory-properties"></a>Propriétés de mémoire
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

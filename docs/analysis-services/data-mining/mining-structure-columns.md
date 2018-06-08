@@ -1,36 +1,23 @@
 ---
-title: "Colonnes de Structure d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data mining [Analysis Services], structure
-- mining structures [Analysis Services], columns
-- data sources [Analysis Services], mining structure columns
-- columns [data mining], mining structure columns
-ms.assetid: 20cbf433-70d1-4b61-a462-41a8435b27b4
-caps.latest.revision: 
-author: Minewiskan
+title: Colonnes de Structure d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f87ea88579145b0220be7a047d230d2f3d8d9a1e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 1cbdcd14127cdf45eb35dd7a24652be4f7c4d613
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mining-structure-columns"></a>Colonnes de structure d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous définissez les colonnes d'une structure d'exploration de données lorsque vous créez la structure d'exploration de données, en choisissant des colonnes de données externes, puis en spécifiant comment les données doivent être utilisées pour la modélisation. Par conséquent, les colonnes de structure d'exploration de données sont plus que des copies des données d'une source de données : elles définissent comment les données de la source doivent être utilisées par le modèle d'exploration de données. Vous pouvez affecter des propriétés qui déterminent comment les données sont discrétisées, propriétés qui décrivent comment les valeurs de données sont distribuées  
+  Vous définissez les colonnes d'une structure d'exploration de données lorsque vous créez la structure d'exploration de données, en choisissant des colonnes de données externes, puis en spécifiant comment les données doivent être utilisées pour la modélisation. Par conséquent, les colonnes de structure d'exploration de données sont plus que des copies des données d'une source de données : elles définissent comment les données de la source doivent être utilisées par le modèle d'exploration de données. Vous pouvez affecter des propriétés qui déterminent comment les données sont discrétisées, propriétés qui décrivent comment les valeurs de données sont distribuées  
   
  Les colonnes de structure d'exploration de données sont conçues pour être flexibles et extensibles, étant donné que chacun des algorithmes que vous utilisez pour générer un modèle d'exploration de données peut utiliser différentes colonnes de la structure pour interpréter les données. Plutôt que d'avoir un jeu de données pour chaque modèle, vous pouvez utiliser une structure d'exploration de données unique et ses colonnes pour personnaliser les données de chaque modèle.  
   
@@ -72,7 +59,7 @@ Vous définissez les colonnes d'une structure d'exploration de données lorsque 
 |Apprenez à ajouter et modifier des colonnes de structure d'exploration de données.|[Tâches de la structure d'exploration de données et procédures](../../analysis-services/data-mining/mining-structure-tasks-and-how-tos.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
  [Colonnes du modèle d’exploration de données](../../analysis-services/data-mining/mining-model-columns.md)  
   
   

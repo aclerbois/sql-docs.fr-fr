@@ -1,17 +1,13 @@
 ---
-title: sys.dm_db_log_info (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 03/11/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+title: Sys.dm_db_log_info (Transact-SQL) | Documents Microsoft
+ms.custom: ''
+ms.date: 04/24/2018
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sys.dm_db_log_info
 - sys.dm_db_log_info_TSQL
@@ -22,19 +18,19 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_log_info dynamic management view
 ms.assetid: f6b40060-c17d-472f-b0a3-3b350275d487
-caps.latest.revision: 
+caps.latest.revision: 4
 author: savjani
 ms.author: pariks
 manager: ajayj
-ms.workload: Inactive
-ms.openlocfilehash: 56064f19713bf3e5da29109520045762474d4539
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e2b99ce1a417c31b4ca81eb9f538acda0edfc517
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdbloginfo-transact-sql"></a>sys.dm_db_log_info (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]
+[!INCLUDE[tsql-appliesto-2016sp2-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-2016sp2-asdb-xxxx-xxx-md.md)]
 
 Retourne [le fichier journal virtuel (fichier journal virtuel)](../../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#physical_arch) les informations du journal des transactions. Notez que tous les fichiers journaux des transactions sont combinés dans la sortie de la table. Chaque ligne dans la sortie représente un fichier journal virtuel dans le journal des transactions et fournit des informations relatives à ce fichier journal virtuel dans le journal.
 
@@ -42,7 +38,8 @@ Retourne [le fichier journal virtuel (fichier journal virtuel)](../../relational
   
 ```  
 sys.dm_db_log_info ( database_id )  
-```  
+``` 
+
 ## <a name="arguments"></a>Arguments  
  *database_id* | NULL | PAR DÉFAUT  
  Est l’ID de la base de données. *database_id* est de type **int**. Les entrées valides sont l’ID de base de données, NULL ou par défaut. La valeur par défaut est NULL. NULL et par défaut sont des valeurs équivalentes dans le contexte de base de données actuelle.
@@ -67,10 +64,10 @@ sys.dm_db_log_info ( database_id )
 |vlf_create_lsn|**nvarchar(48)** |[Numéro de séquence journal (LSN)](../../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#Logical_Arch) du journal enregistrement créé le [le fichier journal virtuel (fichier journal virtuel)](../../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#physical_arch).|
 
 ## <a name="remarks"></a>Notes
- Le `sys.dm_db_log_info` fonction de gestion dynamique remplace la `DBCC LOGINFO` instruction. 
+Le `sys.dm_db_log_info` fonction de gestion dynamique remplace la `DBCC LOGINFO` instruction.    
  
 ## <a name="permissions"></a>Autorisations  
- Nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.  
+Nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.  
   
 ## <a name="examples"></a>Exemples  
   

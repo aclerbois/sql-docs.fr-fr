@@ -1,32 +1,29 @@
 ---
-title: "Exemple de méthode GetRows (JScript) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de méthode GetRows (JScript) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - JScript
 helpviewer_keywords:
 - Getrows method [ADO], JScript example
 ms.assetid: d33467a5-5a56-450d-98c1-c3ce6f9f103c
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a6b3d16d4d9fb84d56a3bb7941f03348410d7d3d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ad6b509232d807fc60b8d6a40587f6bfe3eeb16f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getrows-method-example-jscript"></a>Exemple de méthode GetRows (JScript)
 Cet exemple utilise le [GetRows](../../../ado/reference/ado-api/getrows-method-ado.md) pour récupérer toutes les lignes de la *Customers* à partir de la table un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) et remplir un tableau avec les données résultantes. Le **GetRows** méthode retournera moins le nombre de lignes souhaité dans deux cas : soit if [EOF](../../../ado/reference/ado-api/bof-eof-properties-ado.md) a été atteinte, ou si **GetRows** tenté de récupérer un enregistrement qui a été supprimé par un autre utilisateur. La fonction retourne **False** uniquement dans le second cas. Coupez et collez le code suivant dans le bloc-notes ou un autre éditeur de texte et enregistrez-le sous **GetRowsJS.asp**.  

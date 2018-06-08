@@ -1,37 +1,38 @@
 ---
-title: "Supprimer des autorisations d’objet de modèle (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Supprimer des autorisations d’objet de modèle (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deleting model object permissions [Master Data Services]
 - permissions [Master Data Services], deleting model object permissions
 - models [Master Data Services], deleting object permissions
 ms.assetid: 859c5952-f600-4940-8064-1afd13f7f6dc
-caps.latest.revision: 
+caps.latest.revision: 7
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c763d1b23676bc36e678e99abbb8a95d47b5d421
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 80d33228b88da474b8dc5c2591583e8ff9974a5c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-model-object-permissions-master-data-services"></a>Supprimer des autorisations d'objet de modèle (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], supprimez les autorisations d'objet de modèle pour supprimer toutes les affectations effectuées.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour effectuer cette procédure :  
   
 -   Vous devez avoir l'autorisation d'accéder à la zone fonctionnelle **Autorisations d'accès** .  
@@ -56,7 +57,7 @@ ms.lasthandoff: 03/05/2018
   
      Le nœud d’arborescence de l’autorisation est localisé et mis en surbrillance.  
   
-8.  Cliquez sur le nœud d’arborescence, puis sur **Clear Access (Effacer l’accès)**dans le menu contextuel.  
+8.  Cliquez sur le nœud d’arborescence, puis sur **Clear Access (Effacer l’accès)** dans le menu contextuel.  
   
 9. Cliquez sur **Enregistrer**.  
   

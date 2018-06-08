@@ -1,34 +1,30 @@
 ---
-title: "Plan Guide Unsuccessful, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Plan Guide Unsuccessful, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Plan Guide Unsuccessful event class
 ms.assetid: ef9759f8-5613-4884-9257-86b609313f69
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ae130c40c3167881cf24613624128830860696d6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a78ff5b3b0911e9b68da0d994e17d3ad7c416972
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="plan-guide-unsuccessful-event-class"></a>Plan Guide Unsuccessful (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Plan Guide Unsuccessful indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'a pas pu produire de plan d'exécution pour une requête ou un lot qui contenait un repère de plan. En remplacement, le plan a été compilé sans utiliser le repère de plan. L'événement est déclenché lorsque les conditions suivantes sont remplies :  
+  La classe d'événements Plan Guide Unsuccessful indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'a pas pu produire de plan d'exécution pour une requête ou un lot qui contenait un repère de plan. En remplacement, le plan a été compilé sans utiliser le repère de plan. L'événement est déclenché lorsque les conditions suivantes sont remplies :  
   
 -   Le lot/module dans la définition de repère de plan correspond au lot exécuté.  
   

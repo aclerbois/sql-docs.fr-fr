@@ -1,16 +1,14 @@
 ---
 title: Fonctions de chiffrement (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -22,21 +20,20 @@ helpviewer_keywords:
 - security functions
 - encryption [SQL Server], functions
 ms.assetid: 0be5626b-5a25-4d8c-9f44-7abbfccf816c
-caps.latest.revision: 
+caps.latest.revision: 16
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2faf87a86ea633ba996436448ce83daca4e38e2b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: bd25f4a498c11bc3eec36f21877f5a0204b7617f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cryptographic-functions-transact-sql"></a>Fonctions de chiffrement (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Les fonctions suivantes assurent le chiffrement, le déchiffrement, la signature numérique et la validation des signatures numériques.
+Ces fonctions prennent en charge la signature numérique, la validation des signatures numériques, le chiffrement et le déchiffrement.
   
 ## <a name="symmetric-encryption-and-decryption"></a>Chiffrement et déchiffrement symétriques
   
@@ -76,7 +73,7 @@ Les fonctions suivantes assurent le chiffrement, le déchiffrement, la signature
 |-|-|  
 |[HASHBYTES](../../t-sql/functions/hashbytes-transact-sql.md)||  
   
-## <a name="copying-certificates"></a>Copie des certificats
+## <a name="certificate-copying"></a>Copie de certificat
   
 |||  
 |-|-|  
@@ -90,6 +87,6 @@ Les fonctions suivantes assurent le chiffrement, le déchiffrement, la signature
 [CREATE CERTIFICATE &#40;Transact-SQL&#41;](../../t-sql/statements/create-certificate-transact-sql.md)  
 [CREATE SYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-symmetric-key-transact-sql.md)  
 [CREATE ASYMMETRIC KEY &#40;Transact-SQL&#41;](../../t-sql/statements/create-asymmetric-key-transact-sql.md)  
-[Vues de catalogue de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)
+[Affichages catalogue de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)
   
   

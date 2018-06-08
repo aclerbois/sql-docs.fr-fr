@@ -1,30 +1,27 @@
 ---
-title: "Résoudre une opération d’ajout de fichier ayant échoué (Groupes de disponibilité AlwaysOn) | Microsoft Docs"
-ms.custom: 
+title: Résoudre une opération d’ajout de fichier ayant échoué (Groupes de disponibilité AlwaysOn) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - secondary databases [SQL Server], Availability Groups
 - Availability Groups [SQL Server], troubleshooting
 ms.assetid: 31ceaebf-864b-4dd0-9112-0d047b0316ad
-caps.latest.revision: "11"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 11
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ed024eab21ccc8a3c28b5bf63fd10e431b5eee61
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 55cb45b70259dde919ec33bb01d1e1bd30fbf483
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769975"
 ---
 # <a name="troubleshoot-a-failed-add-file-operation-always-on-availability-groups"></a>Résoudre une opération d’ajout de fichier ayant échoué (groupes de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

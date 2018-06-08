@@ -1,16 +1,12 @@
 ---
-title: sys.dm_filestream_non_transacted_handles (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_filestream_non_transacted_handles (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_filestream_non_transacted_handles_TSQL
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_filestream_non_transacted_handles dynamic management view
 ms.assetid: 507ec125-67dc-450a-9081-94cde5444a92
-caps.latest.revision: 
+caps.latest.revision: 14
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb4ba44df1372fbad89ac21e24d1e27233a99b27
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 9c3c45d13a678359a0c753f4b7b92ed021478403
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmfilestreamnontransactedhandles-transact-sql"></a>sys.dm_filestream_non_transacted_handles (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,12 +41,12 @@ ms.lasthandoff: 02/03/2018
 |----------------|--------------|---------------------|  
 |database_id|int|ID de la base de données associée au descripteur.|  
 |object_id|int|ID d'objet du FileTable auquel le descripteur est associé.|  
-|handle_id|int|Identificateur de contexte de descripteur unique. Utilisé par le [sp_kill_filestream_non_transacted_handles &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/filestream-and-filetable-sp-kill-filestream-non-transacted-handles.md) procédure stockée pour supprimer un descripteur spécifique.|  
+|handle_id|int|Identificateur de contexte de descripteur unique. Utilisé par le [sp_kill_filestream_non_transacted_handles &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/filestream-and-filetable-sp-kill-filestream-non-transacted-handles.md) procédure stockée pour supprimer un descripteur spécifique.|  
 |file_object_type|int|Type du descripteur. Il indique le niveau de la hiérarchie par rapport auquel le descripteur a été ouvert, c.-à-d. base de données ou élément.|  
 |file_object_type_desc|nvarchar(120)|« UNDEFINED »,<br />« SERVER_ROOT »,<br />« DATABASE_ROOT »,<br />« TABLE_ROOT »,<br />« TABLE_ITEM »|  
-|correlation_process_id|varbinary(8)|Contient un identificateur unique pour le processus d'où émane la demande.|  
-|correlation_thread_id|varbinary(8)|Contient un identificateur unique pour le thread d'où émane la demande.|  
-|file_context|varbinary(8)|Pointeur vers l'objet fichier utilisé par ce descripteur.|  
+|correlation_process_id|varbinary (8)|Contient un identificateur unique pour le processus d'où émane la demande.|  
+|correlation_thread_id|varbinary (8)|Contient un identificateur unique pour le thread d'où émane la demande.|  
+|file_context|varbinary (8)|Pointeur vers l'objet fichier utilisé par ce descripteur.|  
 |state|int|État actuel du descripteur. Peut être actif, fermé ou supprimé.|  
 |state_desc|nvarchar(120)|« ACTIVE »<br />« CLOSED »,<br />« KILLED »|  
 |current_workitem_type|int|État dans lequel ce descripteur est actuellement traité.|  

@@ -1,33 +1,34 @@
 ---
-title: "Paramètres système (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Paramètres système (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Master Data Services, system settings
 - system settings [Master Data Services]
 ms.assetid: 83075cdf-f059-4646-8ba2-19be8202f130
-caps.latest.revision: 
+caps.latest.revision: 17
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5f82834be298872df88b00bda5d8184d179ab2a
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 19f244d7febe15f03b5510ba484b985044ad3548
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-settings-master-data-services"></a>Paramètres système (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Vous pouvez configurer les paramètres système de l'ensemble des applications Web et services Web associés à une base de données [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] .  
   
  un grand nombre de ces paramètres peuvent être configurés dans le [!INCLUDE[ssMDScfgmgr](../includes/ssmdscfgmgr-md.md)] sur la page **Base de données** . D'autres peuvent être configurés dans la table Paramètres système (mdm.tblSystemSetting) dans la base de données [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] .  

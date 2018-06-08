@@ -1,31 +1,30 @@
 ---
-title: "Graphique de l’Architecture SQL | Documents Microsoft"
-ms.custom: 
+title: Graphique de l’Architecture SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 04/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: graphs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - SQL graph
 - SQL graph, architecture
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: 1
 author: shkale-msft
 ms.author: shkale
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 887ac78e70d529c404ee2ed3088f088ed53e4a54
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2017 || = sqlallproducts-allversions
+ms.openlocfilehash: 7cfba1fc79e44bb28a433c3b31fe5f4236037d6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-graph-architecture"></a>Graphique de l’Architecture SQL  
 [!INCLUDE[tsql-appliesto-ss2017-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-asdb-xxxx-xxx-md.md)]
@@ -106,19 +105,19 @@ Colonnes implicites dans une table de nœud
 |Nom de la colonne    |Type de données  |is_hidden  |Commentaire  |
 |---  |---|---|---  |
 |graph_id_\<hex_string> |bigint |1  |colonne de graph_id interne  |
-|$node_id_\<hex_string> |NVARCHAR   |0  |Colonne d’id de nœud externe  |
+|$node_id_\<hex_string > |NVARCHAR   |0  |Colonne d’id de nœud externe  |
 
 Colonnes implicites dans un tableau de bord  
 |Nom de la colonne    |Type de données  |is_hidden  |Commentaire  |
 |---  |---|---|---  |
 |graph_id_\<hex_string> |bigint |1  |colonne de graph_id interne  |
-|$edge_id_\<hex_string> |NVARCHAR   |0  |colonne d’id de session externe  |
+|$edge_id_\<hex_string > |NVARCHAR   |0  |colonne d’id de session externe  |
 |from_obj_id_\<hex_string>  |INT    |1  |interne à partir de l’id d’objet de nœud  |
 |from_id_\<hex_string>  |bigint |1  |Interne à partir du nœud graph_id  |
-|$from_id_\<hex_string> |NVARCHAR   |0  |externe à partir de l’id de nœud  |
+|$from_id_\<hex_string > |NVARCHAR   |0  |externe à partir de l’id de nœud  |
 |to_obj_id_\<hex_string>    |INT    |1  |interne à l’id d’objet de nœud  |
 |to_id_\<hex_string>    |bigint |1  |Nœud graph_id internes  |
-|$to_id_\<hex_string>   |NVARCHAR   |0  |id de nœud externe  |
+|$to_id_\<hex_string >   |NVARCHAR   |0  |id de nœud externe  |
  
 ### <a name="system-functions"></a>Fonctions système
 Les fonctions intégrées suivantes sont ajoutées. Il aidera les utilisateurs à extraire des informations à partir des colonnes générées. Notez que, ces méthodes ne validera pas les entrées de l’utilisateur. Si l’utilisateur spécifie un non valide `sys.node_id` la méthode extrait la partie appropriée et renvoyez-le. Par exemple, OBJECT_ID_FROM_NODE_ID prendra un `$node_id` en entrée et retourne l’object_id de la table, ce nœud appartient. 
@@ -159,7 +158,7 @@ En savoir plus les [!INCLUDE[tsql-md](../../includes/tsql-md.md)] extensions int
 |Tâche   |Rubrique connexe  |Remarques
 |---  |---  |---  |
 |SELECT |[SELECT &#40;Transact-SQL&#41;](../../t-sql/queries/select-transact-sql.md)|Nœuds et bords sont stockées en interne en tant que tables, par conséquent, la plupart des opérations prises en charge sur une table dans SQL Server ou de la base de données SQL Azure est pris en charge sur les tables du nœud et de session  |
-|MATCH  | [MATCH &#40;Transact-SQL&#41;](../../t-sql/queries/match-sql-graph.md)|CORRESPONDANCE intégré est introduit pour prendre en charge la recherche de correspondance et le parcours du graphique.  |
+|MATCH  | [CORRESPONDANCE &#40;Transact-SQL&#41;](../../t-sql/queries/match-sql-graph.md)|CORRESPONDANCE intégré est introduit pour prendre en charge la recherche de correspondance et le parcours du graphique.  |
 
 
 

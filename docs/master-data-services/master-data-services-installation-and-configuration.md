@@ -1,30 +1,31 @@
 ---
 title: Installation et configuration de Master Data Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: f6cd850f-b01b-491f-972c-f966b9fe4190
-caps.latest.revision: 
+caps.latest.revision: 44
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: e539d5a06f53fd4b79530031c8f1dec9dd493aae
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 93c239ba5e2138392ba760e96a96d782810419ce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="master-data-services-installation-and-configuration"></a>Installation et configuration de Master Data Services
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cet article explique comment installer [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] sur un ordinateur Windows Server 2012 R2, configurer la base de données et le site web MDS, et déployer les exemples de modèles et de données. [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] (MDS) permet à votre organisation de gérer une version approuvée des données.   
   
 > [!NOTE] 
@@ -284,10 +285,7 @@ Si vous souhaitez apporter des modifications à l’installation de [!INCLUDE[ss
  Créer un nouveau modèle et les entités pour vos données. Consultez [Créer un modèle &#40;Master Data Services&#41;](../master-data-services/create-a-model-master-data-services.md) et [Créer une entité &#40;Master Data Services&#41;](../master-data-services/create-an-entity-master-data-services.md).  
   
  Pour obtenir une vue d’ensemble sur l’utilisation d’un modèle et d’entités en vue de créer une structure pour vos données dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], consultez [Vue d’ensemble de Master Data Services &#40;MDS&#41;](../master-data-services/master-data-services-overview-mds.md).  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Get%20Started%20with%20Master%20Data%20Services)  
-  
+    
 ## <a name="see-also"></a> Voir aussi  
  [Base de données Master Data Services](../master-data-services/master-data-services-database.md)   
  [Application web Master Data Manager](../master-data-services/master-data-manager-web-application.md)   

@@ -1,16 +1,13 @@
 ---
-title: sys.dm_tran_locks (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_tran_locks (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_tran_locks
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_tran_locks dynamic management view
 ms.assetid: f0d3b95a-8a00-471b-9da4-14cb8f5b045f
-caps.latest.revision: 
+caps.latest.revision: 61
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c54a97a7b84dcb4d9873ee2537e31714b6f62172
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: fbc8bb6eb7dc1a178a44e67b9e23b7ec98c75dce
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmtranlocks-transact-sql"></a>sys.dm_tran_locks (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -53,22 +50,23 @@ ms.lasthandoff: 02/20/2018
 |**resource_lock_partition**|**Int**|ID de la partition de verrou pour une ressource de verrou partitionnée. La valeur pour les ressources de verrou non partitionnées est 0.|  
 |**request_mode**|**nvarchar(60)**|Mode de la demande. Pour les demandes autorisées, il s'agit du mode autorisé ; pour les demandes en attente, il s'agit du mode demandé.|  
 |**request_type**|**nvarchar(60)**|Type de la demande. La valeur est LOCK.|  
-|**request_status**|**nvarchar(60)**|État actuel de cette demande. Les valeurs possibles sont GRANTED, CONVERT, WAIT, LOW_PRIORITY_CONVERT, LOW_PRIORITY_WAIT ou ABORT_BLOCKERS. Pour plus d’informations sur les attentes en priorité basse et des blocages d’abandon, consultez le *low_priority_lock_wait* section [ALTER INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-index-transact-sql.md).|  
+|**request_status**|**nvarchar(60)**|État actuel de cette demande. Les valeurs possibles sont GRANTED, CONVERT, WAIT, LOW_PRIORITY_CONVERT, LOW_PRIORITY_WAIT ou ABORT_BLOCKERS. Pour plus d’informations sur les attentes en priorité basse et des blocages d’abandon, consultez le *low_priority_lock_wait* section de [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md).|  
 |**request_reference_count**|**smallint**|Retourne le nombre approximatif de fois que le même demandeur a demandé cette ressource.|  
 |**request_lifetime**|**int**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**request_session_id**|**int**|ID de la session actuellement propriétaire de la demande. L'ID de la session propriétaire peut changer pour les transactions distribuées et liées. La valeur -2 indique que la demande appartient à une transaction distribuée orpheline. -3 indique que la demande appartient à une transaction de récupération différée, par exemple une transaction dont l'annulation a été différée à la récupération car l'annulation ne s'est pas déroulée correctement.|  
 |**request_exec_context_id**|**int**|ID du contexte d'exécution du processus actuellement propriétaire de cette demande.|  
 |**request_request_id**|**int**|ID de la demande (ID du traitement) du processus actuellement propriétaire de cette demande. Cette valeur change chaque fois que la connexion MARS (Multiple Active Result Set) active d'une transaction change.|  
 |**request_owner_type**|**nvarchar(60)**|Type de l'entité propriétaire de la demande. Diverses entités peuvent être propriétaires des demandes de gestionnaire de verrous. Les valeurs possibles sont :<br /><br /> TRANSACTION = Une transaction est propriétaire de la demande.<br /><br /> CURSOR = Un curseur est propriétaire de la demande.<br /><br /> SESSION = Une session utilisateur est propriétaire de la demande.<br /><br /> SHARED_TRANSACTION_WORKSPACE = La partie partagée de l'espace de travail des transactions est propriétaire de la demande.<br /><br /> EXCLUSIVE_TRANSACTION_WORKSPACE = La partie exclusive de l'espace de travail des transactions est propriétaire de la demande.<br /><br /> NOTIFICATION_OBJECT = Un composant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] interne est propriétaire de la demande. Ce composant a demandé au gestionnaire de verrous de l'informer lorsqu'un autre composant attend le moment d'acquérir le verrou. La fonctionnalité FileTable est un composant qui utilise cette valeur.<br /><br /> **Remarque :** espaces de travail sont utilisés en interne pour maintenir des verrous pour les sessions inscrites.|  
-|**request_owner_id**|**bigint**|ID du propriétaire spécifique de cette demande.<br /><br /> Lorsqu'une transaction est propriétaire de la demande, cette valeur contient l'ID de transaction.<br /><br /> Lorsqu’un FileTable est propriétaire de la demande, **request_owner_id** a l’une des valeurs suivantes.<br /><br /> <br /><br /> -4 : un FileTable a pris un verrou de base de données.<br /><br /> -3 : un FileTable a pris un verrou de table.<br /><br /> Autre valeur : la valeur représente un descripteur de fichier. Cette valeur apparaît également comme **fcb_id** dans la vue de gestion dynamique [sys.dm_filestream_non_transacted_handles &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-filestream-non-transacted-handles-transact-sql.md).|  
+|**request_owner_id**|**bigint**|ID du propriétaire spécifique de cette demande.<br /><br /> Lorsqu'une transaction est propriétaire de la demande, cette valeur contient l'ID de transaction.<br /><br /> Lorsqu’un FileTable est propriétaire de la demande, **request_owner_id** a l’une des valeurs suivantes.<br /><br /> <br /><br /> -4 : un FileTable a pris un verrou de base de données.<br /><br /> -3 : un FileTable a pris un verrou de table.<br /><br /> Autre valeur : la valeur représente un descripteur de fichier. Cette valeur apparaît également comme **fcb_id** dans la vue de gestion dynamique [sys.dm_filestream_non_transacted_handles &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-filestream-non-transacted-handles-transact-sql.md).|  
 |**request_owner_guid**|**uniqueidentifier**|GUID du propriétaire spécifique de cette demande. Cette valeur est utilisée uniquement par une transaction distribuée dans laquelle la valeur correspond au GUID MS DTC de cette transaction.|  
-|**request_owner_lockspace_id**|**nvarchar(32)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] Cette valeur représente l’ID de l’espace de verrouillage du demandeur. Cet ID détermine si deux demandeurs sont mutuellement compatibles et s'il est possible de leur accorder des verrous dans des modes conflictuels.|  
+|**request_owner_lockspace_id**|**nvarchar(32)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] Cette valeur représente l'ID de l'espace de verrouillage du demandeur. Cet ID détermine si deux demandeurs sont mutuellement compatibles et s'il est possible de leur accorder des verrous dans des modes conflictuels.|  
 |**lock_owner_address**|**varbinary(8)**|Adresse mémoire de la structure des données internes utilisées pour suivre cette demande. Cette colonne peut être jointe l’avec **resource_address** colonne **sys.dm_os_waiting_tasks**.|  
 |**pdw_node_id**|**int**|**S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> <br /><br /> L’identificateur du nœud qui se trouve sur cette distribution.|  
   
-## <a name="permissions"></a>Autorisations  
+## <a name="permissions"></a>Autorisations
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
  
 ## <a name="remarks"></a>Notes  
  Un état de demande autorisée indique qu'un verrou a été accordé au demandeur sur une ressource. Une demande en attente indique que la demande n'est pas encore autorisée. Les types de demandes en attente suivants sont retournés par le **request_status** colonne :  
@@ -85,7 +83,7 @@ Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite
   
 -   SET TRANSACTION ISOLATION LEVEL pour spécifier le niveau de verrouillage d’une session. Pour plus d’informations, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
   
--   Conseils de verrouillage des tables pour spécifier le niveau de verrouillage de la référence d'une table dans une clause FROM. Pour la syntaxe et les restrictions, consultez [indicateurs de Table &#40; Transact-SQL &#41; ](../../t-sql/queries/hints-transact-sql-table.md).  
+-   Conseils de verrouillage des tables pour spécifier le niveau de verrouillage de la référence d'une table dans une clause FROM. Pour la syntaxe et les restrictions, consultez [indicateurs de Table &#40;Transact-SQL&#41;](../../t-sql/queries/hints-transact-sql-table.md).  
   
  Une ressource qui est exécutée sous un ID de session peut comporter plusieurs verrous autorisés. Différentes entités sont exécutant sous une session peuvent avoir chacune un verrou sur la même ressource, les informations s’affichent dans le **request_owner_type** et **request_owner_id** les colonnes qui sont retournées par **sys.dm_tran_locks**. Si plusieurs instances du même **request_owner_type** existe, le **request_owner_id** colonne est utilisée pour distinguer chaque instance. Pour les transactions distribuées, le **request_owner_type** et **request_owner_guid** colonnes affichent les informations sur les différentes entités.  
   
@@ -93,7 +91,7 @@ Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite
   
  Il n'est pas possible de distinguer plusieurs curseurs d'une même session qui sont traités comme une seule entité.  
   
- Les transactions distribuées non associées à un ID de session sont des transactions orphelines. L'ID de session -2 leur est attribué. Pour plus d’informations, consultez [KILL &#40; Transact-SQL &#41; ](../../t-sql/language-elements/kill-transact-sql.md).  
+ Les transactions distribuées non associées à un ID de session sont des transactions orphelines. L'ID de session -2 leur est attribué. Pour plus d’informations, consultez [KILL & #40 ; Transact-SQL & #41 ; ](../../t-sql/language-elements/kill-transact-sql.md).  
   
 ## <a name="resource-details"></a>Détails des ressources  
  Le tableau suivant répertorie les ressources qui sont représentées dans le **resource_associated_entity_id** colonne.  
@@ -205,7 +203,7 @@ Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite
 |DATABASE|Non applicable|ID de base de données est déjà disponible dans le **resource_database_id** colonne.|  
 |FILE|<file_id>|ID du fichier représenté par cette ressource.|  
 |OBJECT|<object_id>|ID de l'objet représenté par cette ressource. Cet objet peut être n’importe quel objet figurant dans **sys.objects**, pas seulement d’une table.|  
-|PAGE|<file_id>:<page_in_file>|Représente le fichier et l'ID de la page qui est représentée par cette ressource.|  
+|PAGE|< file_id > : < page_in_file >|Représente le fichier et l'ID de la page qui est représentée par cette ressource.|  
 |KEY|<hash_value>|Représente un hachage des colonnes clés de la ligne représentée par cette ressource.|  
 |EXTENT|<file_id>:<page_in_file>|Représente le fichier et l'ID de la page de l'étendue représentée par cette ressource. L'ID d'étendue est identique à l'ID de la première page de l'étendue.|  
 |RID|<file_id>:<page_in_file>:<row_on_page>|Représente l'ID de page et l'ID de ligne représentée par cette ressource. Remarquez que si l'ID de l'objet associé est égal à 99, cette ressource représente l'une des huit pages mélangées de la première page IAM d'une chaîne IAM.|  
@@ -278,7 +276,7 @@ Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite
 |METADATA.XML_COMPONENT|xml_component_id = X|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |METADATA.XML_INDEX_QNAME|object_id = O, $qname_id = Q|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
   
- Les événements XEvent suivants sont liés pour partitionner **commutateur** et de reconstruction de l’index en ligne. Pour plus d’informations sur la syntaxe, consultez [ALTER TABLE &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-table-transact-sql.md) et [ALTER INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-index-transact-sql.md).  
+ Les événements XEvent suivants sont liés pour partitionner **commutateur** et de reconstruction de l’index en ligne. Pour plus d’informations sur la syntaxe, consultez [ALTER TABLE &#40;Transact-SQL&#41; ](../../t-sql/statements/alter-table-transact-sql.md) et [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md).  
   
 -   lock_request_priority_state  
   

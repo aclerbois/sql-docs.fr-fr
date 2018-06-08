@@ -1,27 +1,25 @@
 ---
-title: "Résoudre les problèmes liés à Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes liés à Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 01/17/2018
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6eeed553-512d-4603-9b14-0492a9d052b5
-caps.latest.revision: 
+caps.latest.revision: 14
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f7125d026a9fde171db97685354b9e26bcebc6b3
-ms.sourcegitcommit: 6c54e67818ec7b0a2e3c1f6e8aca0fdf65e6625f
+ms.openlocfilehash: 8cfca6620073e63d6da12c0b2250d3d8a7e6cf43
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-reporting-services"></a>Dépannage de Reporting Services
   Les rubriques répertoriées dans cette section visent à identifier et à résoudre les problèmes liés à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)].  

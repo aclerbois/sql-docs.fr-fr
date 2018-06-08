@@ -1,34 +1,33 @@
 ---
 title: Exemple de script OLE Automation | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-ole
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OLE Automation [SQL Server], examples
 ms.assetid: e59f75a9-ed41-4f12-888e-ffc57f9b3882
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5d2a76d1009cede00b373eac16b143743332d8fe
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1e8344a649f4bf649dcd71006204b4838b6b5b34
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ole-automation-sample-script"></a>Exemple de script OLE Automation
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Cette rubrique contient un exemple de lot d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] qui utilise les procédures stockées OLE Automation pour créer et utiliser un objet SQL-DMO SQLServer dans l’instance locale du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Certains extraits du code sont utilisés comme exemples dans les rubriques de référence des procédures stockées système OLE Automation.  
+  Cette rubrique contient un exemple de lot d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] qui utilise les procédures stockées OLE Automation pour créer et utiliser un objet SQL-DMO SQLServer dans l’instance locale du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Certains extraits du code sont utilisés comme exemples dans les rubriques de référence des procédures stockées système OLE Automation.  
   
 ```  
 USE AdventureWorks2012;  

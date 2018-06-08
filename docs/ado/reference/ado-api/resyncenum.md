@@ -1,33 +1,30 @@
 ---
 title: ResyncEnum | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - ResyncEnum
 helpviewer_keywords:
 - ResyncEnum enumeration [ADO]
 ms.assetid: d3df2c90-e570-4c40-a79a-25b3448a009c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4aecc0ca8d53aa4eb1986b55c178943a3acf752f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 79752a7733450fc1e6761f39cd49fb6f808a334b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="resyncenum"></a>ResyncEnum
 Indique si les valeurs sous-jacentes sont remplacées par un appel à [Resync](../../../ado/reference/ado-api/resync-method.md).  

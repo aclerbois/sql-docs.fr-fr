@@ -1,33 +1,31 @@
 ---
-title: "Spécifier la résolution interactive des conflits pour les articles de fusion | Microsoft Docs"
-ms.custom: 
+title: Spécifier la résolution interactive des conflits pour les articles de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication conflict resolution [SQL Server replication], interactive resolvers
 - interactive conflict resolution [SQL Server replication]
 - articles [SQL Server replication], conflict resolution
 - conflict resolution [SQL Server replication], merge replication
 ms.assetid: e298dea0-b5ef-4907-a745-cfad9793653f
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 953f102b1ff94e62994a975d75d0435ea3d872df
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 96e7a808a52e72aea320726f3e56761213d800b1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-interactive-conflict-resolution-for-merge-articles"></a>Spécifier la résolution interactive des conflits pour les articles de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

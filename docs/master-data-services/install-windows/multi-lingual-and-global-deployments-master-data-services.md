@@ -1,30 +1,28 @@
 ---
-title: "Déploiements multilingues et globaux (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Déploiements multilingues et globaux (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: mds
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c3d485f8-867c-4aa2-a90d-f38fda192534
-caps.latest.revision: 
+caps.latest.revision: 8
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dab26bd1f9308c4d2c5814e054b9d4c882527a44
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 12e796619f7ab5674f5f94b34ea15d4e2aefe595
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="multi-lingual-and-global-deployments-master-data-services"></a>Déploiements multilingues et globaux (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] prend en charge le déploiement de composants et d'outils dans toutes les langues prises en charge par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d'informations, consultez [Local Language Versions in SQL Server](../../sql-server/install/local-language-versions-in-sql-server.md).  
   
 ## <a name="how-languages-are-used"></a>Utilisation des langues  

@@ -1,17 +1,16 @@
 ---
-title: "Utiliser les alertes pour les événements des agents de réplication | Microsoft Docs"
-ms.custom: 
+title: Utiliser les alertes pour les événements des agents de réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - viewing alerts
 - Queue Reader Agent, alerts
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - displaying alerts
 - Snapshot Agent, alerts
 ms.assetid: 8c42e523-7020-471d-8977-a0bd044b9471
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 439aa3bfc1bbe579bb82196c561567c894c08571
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: e194a220520c65a637048a10b8f552338a39d05c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-alerts-for-replication-agent-events"></a>Utiliser les alertes pour les événements des agents de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,33 +1,30 @@
 ---
-title: "Propriétés de l’objet, méthodes et événements de dimension | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriétés de l’objet, méthodes et événements de dimension | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Dimension object [ADO MD], members
 ms.assetid: e491439f-8eff-4bf6-a808-8dba243af8c3
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8d52d22af54827a071352e342446174a0b13c728
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: adeab5eebf02af1a836feabcf8be58b861342652
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dimension-object-properties-methods-and-events"></a>Propriétés de l’objet dimension, méthodes et événements
-## <a name="propertiescollections"></a>Properties/Collections  
+## <a name="propertiescollections"></a>Propriétés et de Collections  
  [Description, propriété](../../../ado/reference/ado-md-api/description-property-ado-md.md)  
   
  [Collection de hiérarchies](../../../ado/reference/ado-md-api/hierarchies-collection-ado-md.md)  

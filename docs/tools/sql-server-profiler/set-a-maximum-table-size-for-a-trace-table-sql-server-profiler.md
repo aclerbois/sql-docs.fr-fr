@@ -1,33 +1,31 @@
 ---
-title: "Définir la taille maximale d’une Table de Trace (SQL Server Profiler) | Documents Microsoft"
-ms.custom: 
+title: Définir une taille maximale de table de trace (SQL Server Profiler) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - size [SQL Server], trace tables
 - maximum table size for traces
 ms.assetid: d0ae83e5-1c88-4a2e-be05-2c341280b978
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4fa072970b86dc4e2b16fe285e4ca2ee2a405981
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 6778240b62eb801dfc9d183f02976e443f45ac67
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-a-maximum-table-size-for-a-trace-table-sql-server-profiler"></a>Définir une taille maximale de table de trace (SQL Server Profiler)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Cette rubrique décrit comment définir une taille maximale pour les tables de trace à l’aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment définir une taille maximale de table de trace à l'aide du [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
   
 ### <a name="to-set-a-maximum-table-size-for-a-trace-table"></a>Pour définir une taille maximale de table de trace  
   
@@ -36,7 +34,7 @@ ms.lasthandoff: 01/17/2018
      La boîte de dialogue **Propriétés de la trace**apparaît.  
   
     > [!NOTE]  
-    >  Si la case **Démarrer le suivi juste après avoir établi la connexion**est cochée, la boîte de dialogue **Propriétés de la trace**ne s’affiche pas et le suivi se lance. Pour désactiver ce paramètre, dans le menu **Outils**, cliquez sur **Options**et désactivez la case à cocher **Démarrer le suivi juste après avoir établi la connexion** .  
+    >  Si la case **Démarrer le suivi juste après avoir établi la connexion**est cochée, la boîte de dialogue **Propriétés de la trace**ne s’affiche pas et le suivi se lance. Pour désactiver ce paramètre, accédez au menu **Outils**, cliquez sur **Options**et désactivez la case à cocher **Démarrer le suivi juste après avoir établi la connexion** .  
   
 2.  Dans la zone **Nom de la trace** , tapez un nom pour la trace.  
   
@@ -57,7 +55,7 @@ ms.lasthandoff: 01/17/2018
     > [!NOTE]  
     >  Quand le nombre de lignes dans la table dépasse le maximum spécifié, les événements de la trace ne sont plus enregistrés, mais la trace continue.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)   
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  
   

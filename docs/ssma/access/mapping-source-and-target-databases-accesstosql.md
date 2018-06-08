@@ -1,16 +1,15 @@
 ---
-title: "Mappage de Source et bases de données cibles (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Mappage de Source et bases de données cibles (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -23,22 +22,21 @@ helpviewer_keywords:
 - source database
 - target database
 ms.assetid: 69bee937-7b2c-49ee-8866-7518c683fad4
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 48e87d2b6c84db3534a3c52ee6176e29fd34257f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ade8c301a8cb519c22413a4db9a236f58f5dd870
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-source-and-target-databases-accesstosql"></a>Source de mappage et de bases de données cibles (AccessToSQL)
 Lorsque vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, vous devez spécifier une base de données cible pour la migration. Si vous avez plusieurs bases de données Access vous pouvez les mapper à plusieurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données (ou les schémas) ou à plusieurs schémas sous la base de données SQL Azure connectée.  
   
 ## <a name="sql-server-or-sql-azure-database-schemas"></a>SQL Server ou les schémas de base de données Azure SQL  
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]bases de données utilisent le concept de schémas pour séparer des objets au sein d’une base de données en groupes logiques. Par exemple, une base de données de bibliothèque peut utiliser trois schémas nommés **la documentation**, **audio**, et **vidéo** pour séparer les objets de données audio et vidéo book, entre eux. Par défaut, la base de données access est mappé à **master** base de données et **dbo** schéma dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et à la base de données connectée et **dbo** schéma dans SQL Azure.  
+[!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] bases de données utilisent le concept de schémas pour séparer des objets au sein d’une base de données en groupes logiques. Par exemple, une base de données de bibliothèque peut utiliser trois schémas nommés **la documentation**, **audio**, et **vidéo** pour séparer les objets de données audio et vidéo book, entre eux. Par défaut, la base de données access est mappé à **master** base de données et **dbo** schéma dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] et à la base de données connectée et **dbo** schéma dans SQL Azure.  
   
 Sauf si vous personnalisez le mappage entre chaque base de données Access et la [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] base de données et le schéma, SSMA allez migrer tous les schémas et les données associées à la base de données de l’accès à la base de données par défaut mappé.  
   

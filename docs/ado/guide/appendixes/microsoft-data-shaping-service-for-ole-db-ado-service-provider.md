@@ -1,31 +1,28 @@
 ---
 title: Microsoft Data mise en forme de Service pour OLE DB (fournisseur de services ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - providers [ADO], data shaping service for OLE DB
 - data shaping service for OLE DB [ADO]
 ms.assetid: 523009ce-e01b-4e2d-a7df-816d7688aff0
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bcdf661427b97fe58681a6747a3b074e4965f4b8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a3020789835820519e07ac3e465899c3ac93b0ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-data-shaping-service-for-ole-db-overview"></a>Données de Microsoft Service pour une vue d’ensemble de la base de données OLE de mise en forme
 > [!IMPORTANT]

@@ -1,31 +1,27 @@
 ---
-title: SQLDriverConnect (Paradox Driver) | Microsoft Docs
-ms.custom: 
+title: SQLDriverConnect (pilote Paradox) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLDriverConnect function [ODBC], Paradox Driver
 - Paradox driver [ODBC], SQLDriverConnect
 ms.assetid: c2ba486e-5e01-4e67-adb1-68511f5f0206
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d793210924377863970461fa1c18a39246a10e73
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+manager: craigg
+ms.openlocfilehash: 5437dca7911b2931378a51b8ba16538286858b65
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqldriverconnect-paradox-driver"></a>SQLDriverConnect (pilote Paradox)
 > [!NOTE]  
@@ -46,4 +42,4 @@ ms.lasthandoff: 02/15/2018
   
 |Pilote|Mots clés requis|Exemple|  
 |------------|-----------------------|-------------|  
-|Paradox|Driver, DriverID|Driver={Microsoft Paradox Driver (*.db )}; DBQ=c:\temp;DriverID=26|
+|Paradox|Pilote, DriverID|Driver = {Microsoft Paradox Driver (*.db)} ; DBQ = c:\temp ; DriverID = 26|

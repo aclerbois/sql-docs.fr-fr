@@ -1,17 +1,15 @@
 ---
-title: "Attributs, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Attributs, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Connection15::Attributes
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - Attributes property [ADO]
 ms.assetid: acc15d40-68a6-4ba9-85bd-12d331aecaa6
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c2b63ff111ddf295784a6e8d3d574f0c36267f19
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: fe7d17ab86f7ed60c863d0d3d0f2b32afd9972f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="attributes-property-ado"></a>Attributs, propriété (ADO)
 Indique une ou plusieurs caractéristiques d’un objet.  

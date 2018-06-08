@@ -1,16 +1,14 @@
 ---
 title: ALTER USER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/05/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_USER_TSQL
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - default schemas
 - modifying default schemas
 ms.assetid: 344fc6ce-a008-47c8-a02e-47fae66cc590
-caps.latest.revision: 
+caps.latest.revision: 75
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 61984e16244a32a28449a099b2e03b5916d2c2db
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: aafcc77a26dcd75c5581f36acc8e37cd852684a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-user-transact-sql"></a>ALTER USER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -126,7 +124,7 @@ ALTER USER userName
  Spécifie le premier schéma que le serveur va interroger pour résoudre les noms des objets associés à cet utilisateur. La définition du schéma par défaut sur NULL supprime un schéma par défaut d'un groupe Windows.   L'option NULL ne peut pas être utilisée avec un utilisateur Windows.  
   
  PASSWORD **=** '*password*'  
- **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Spécifie le mot de passe de l'utilisateur à modifier. Les mots de passe respectent la casse.  
   
@@ -134,7 +132,7 @@ ALTER USER userName
 >  Cette option est uniquement disponible pour les utilisateurs à relation contenant-contenu. Pour plus d’informations, consultez [Bases de données à relation contenant-contenu](../../relational-databases/databases/contained-databases.md) et [sp_migrate_user_to_contained &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-migrate-user-to-contained-transact-sql.md).  
   
  OLD_PASSWORD **=***'oldpassword'*  
- **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Mot de passe de l’utilisateur actuel qui sera remplacé par '*password*'. Les mots de passe respectent la casse. *OLD_PASSWORD* est obligatoire pour changer un mot de passe, sauf si vous disposez de l’autorisation **ALTER ANY USER**. La spécification obligatoire du paramètre *OLD_PASSWORD* empêche les utilisateurs disposant de l’autorisation **IMPERSONATION** de changer le mot de passe.  
   

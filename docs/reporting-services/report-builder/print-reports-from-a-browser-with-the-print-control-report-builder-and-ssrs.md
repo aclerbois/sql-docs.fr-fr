@@ -1,27 +1,25 @@
 ---
-title: "Imprimer des rapports à partir d’un navigateur à l’aide du contrôle d’impression (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Imprimer des rapports à partir d’un navigateur à l’aide du contrôle d’impression (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 10054250-d915-4bcb-8a1d-26837db4e932
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 61671ec12c54b1d1cc91dab4e6349df3cf4b5de9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f96460a280bd11f59ffd0e042eefbbc9be0b0188
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="print-reports-from-a-browser-with-the-print-control-report-builder-and-ssrs"></a>Imprimer des rapports à partir d'un navigateur à l'aide du contrôle d'impression (Générateur de rapports et SSRS)
   Bien qu'un navigateur soit l'application cliente la plus fréquemment utilisée pour afficher un rapport, la fonctionnalité d'impression du navigateur n'est pas le meilleur choix pour l'impression des rapports. La fonctionnalité d'impression d'un navigateur est conçue pour l'impression des pages Web. En règle générale, les pages que vous imprimez à partir d'un navigateur comprennent tous les éléments visuels présents sur une page Web, ainsi que des informations d'en-tête et de pied de page qui identifient la page ou le site Web. L'impression à partir d'un navigateur permet d'imprimer le contenu de la fenêtre actuelle. Pour un rapport de plusieurs pages, le navigateur imprime au mieux la première page et même moins encore, si la page de rapport dépasse les dimensions d'une page imprimée.  

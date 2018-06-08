@@ -1,27 +1,25 @@
 ---
-title: "Mise à niveau du moteur de base de données | Microsoft Docs"
-ms.custom: 
+title: Mise à niveau du moteur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - server-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3f08087e-e532-416c-8caa-e0ec88c57596
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 10
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 9248c9f2868246d1b8da927d6563b3de8d7cb8cd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f140aeb51832ccc44af5ee907d67e4506fb05bbd
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771088"
 ---
 # <a name="complete-the-database-engine-upgrade"></a>Mise à niveau du moteur de base de données
 

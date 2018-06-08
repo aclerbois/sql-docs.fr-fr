@@ -1,27 +1,24 @@
 ---
-title: "Exemple d’URL de connexion | Documents Microsoft"
-ms.custom: 
+title: Exemple d’URL de connexion | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 96fabc42-59d1-4cc0-93c5-db00cbe55e95
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: d56838ebc82da11040c2ace7ce7accfebb0144e3
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 6a6e49fea6fdc9ed6d7e7497b8217bb0a16dc2c1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connection-url-sample"></a>Exemple d'URL de connexion
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

@@ -1,16 +1,14 @@
 ---
 title: ALTER AUTHORIZATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_AUTHORIZATION_TSQL
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - search property lists [SQL Server], permissions
 - TAKE OWNERSHIP
 ms.assetid: 8c805ae2-91ed-4133-96f6-9835c908f373
-caps.latest.revision: 
+caps.latest.revision: 84
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: f992d085f8c9b282be4288488cf872d99b426f48
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 69a1483b2bc515d0c03a5f11dc1ba520ab185c08
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-authorization-transact-sql"></a>ALTER AUTHORIZATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -176,7 +174,7 @@ ALTER AUTHORIZATION ON
  Si l'entité cible n'est pas une base de données et que l'entité est transférée à un nouveau propriétaire, toutes les autorisations de la cible seront supprimées.    
     
 > [!CAUTION]    
->  Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)], le comportement des schémas n'est pas le même que dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Un code qui suppose que les schémas sont équivalents aux utilisateurs de base de données peut retourner des résultats incorrects. Vous ne devez pas recourir aux anciennes vues de catalogue, notamment sysobjects, dans une base de données où une des instructions DDL suivantes a été utilisée : CREATE SCHEMA, ALTER SCHEMA, DROP SCHEMA, CREATE USER, ALTER USER, DROP USER, CREATE ROLE, ALTER ROLE, DROP ROLE, CREATE APPROLE, ALTER APPROLE, DROP APPROLE, ALTER AUTHORIZATION. Dans une base de données où une de ces instructions a été utilisée, vous devez recourir aux nouvelles vues de catalogue. Les nouvelles vues de catalogue prennent en compte la séparation des principaux et des schémas introduite dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Pour plus d’informations sur les vues de catalogue, consultez [Vues de catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md).    
+>  Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)], le comportement des schémas n'est pas le même que dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Un code qui suppose que les schémas sont équivalents aux utilisateurs de base de données peut retourner des résultats incorrects. Vous ne devez pas recourir aux anciennes vues de catalogue, notamment sysobjects, dans une base de données où une des instructions DDL suivantes a été utilisée : CREATE SCHEMA, ALTER SCHEMA, DROP SCHEMA, CREATE USER, ALTER USER, DROP USER, CREATE ROLE, ALTER ROLE, DROP ROLE, CREATE APPROLE, ALTER APPROLE, DROP APPROLE, ALTER AUTHORIZATION. Dans une base de données où une de ces instructions a été utilisée, vous devez recourir aux nouveaux affichages catalogue. Les nouvelles vues de catalogue prennent en compte la séparation des principaux et des schémas introduite dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Pour plus d’informations sur les affichages catalogue, consultez [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md).    
     
  En outre, notez les points suivants :    
     
@@ -229,7 +227,7 @@ Les types de comptes suivants peuvent changer le propriétaire d’une base de d
   
 Le tableau suivant récapitule les conditions requises :  
   
-Exécuteur  |Cible  |Résultat    
+Exécuteur  |Cible  |Résultats    
 ---------|---------|---------  
 Connexion d’authentification SQL Server     |Connexion d’authentification SQL Server         |Réussi  
 Connexion d’authentification SQL Server     |Utilisateur Azure AD         |Échec           
@@ -255,7 +253,7 @@ ON d.owner_sid = sl.sid;
     
 ```    
   
-### <a name="best-practice"></a>Bonne pratique  
+### <a name="best-practice"></a>Meilleure pratique  
   
 Au lieu d’utiliser des utilisateurs Azure AD comme propriétaires individuels de la base de données, utilisez un groupe Azure AD comme membre du rôle de base de données fixe **db_owner**. Les étapes suivantes montrent comment configurer un compte de connexion désactivé comme propriétaire de la base de données et rendre un groupe Azure Active Directory (`mydbogroup`) membre du rôle **db_owner**. 
 1.  Connectez-vous à SQL Server comme administrateur Azure AD, puis remplacez le propriétaire de la base de données par un compte de connexion d’authentification SQL Server désactivé. Par exemple, à partir de la base de données utilisateur, exécutez :  

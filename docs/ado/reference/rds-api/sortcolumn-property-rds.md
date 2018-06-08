@@ -1,29 +1,27 @@
 ---
-title: "SortColumn, propriété (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: SortColumn, propriété (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.topic: article
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - SortColumn property [RDS]
 ms.assetid: f6f80f67-f0fb-4e63-a5f5-8fdf312aac63
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d8e8f610bfb6419637a6fb4aba68723af966a518
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: fae3b712f32ad2b3b5c9f478a600af611379e798
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sortcolumn-property-rds"></a>SortColumn, propriété (RDS)
 Indique la colonne selon laquelle trier les enregistrements.  

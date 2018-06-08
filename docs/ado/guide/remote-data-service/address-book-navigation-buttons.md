@@ -1,31 +1,28 @@
 ---
-title: "Boutons de Navigation de carnet d’adresses | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Boutons de Navigation de carnet d’adresses | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS scenarios [ADO], navigation buttons
 - address book application scenario [ADO], navigation buttons
 ms.assetid: f0dd84c6-5c33-4ab9-82b4-4c42dfdd2277
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 211e05c548d38ad364e8a7daa85f280e8ca62414
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3162bb0a7bd7ed54812848df214658980dc6ec8f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="address-book-navigation-buttons"></a>Boutons de Navigation de carnet d’adresses
 L’application de carnet d’adresses affiche les boutons de navigation en bas de la page Web. Vous pouvez utiliser les boutons de navigation pour parcourir les données dans la grille HTML en sélectionnant la première ou la dernière ligne de données ou des lignes adjacentes à la sélection actuelle.  

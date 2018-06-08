@@ -1,32 +1,29 @@
 ---
 title: Les Clauses COMPUTE de forme | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - shape commands [ADO]
 - COMPUTE clause [ADO]
 - data shaping [ADO], COMPUTE clause
 ms.assetid: a576bf81-8f3c-4ba1-817b-87e89a8da684
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9604b599bb7ce50bb0160553a38f0c002f5e611b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8c8879e50269271392186e0f7e941551760671b0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="intervening-shape-compute-clauses"></a>Les Clauses COMPUTE de forme
 Il est possible d’incorporer une ou plusieurs clauses COMPUTE entre le parent et enfant dans une commande de mise en forme paramétrée, comme dans l’exemple suivant :  

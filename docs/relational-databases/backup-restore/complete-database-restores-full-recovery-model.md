@@ -1,17 +1,14 @@
 ---
-title: "Restaurations complètes de bases de données (mode de récupération complète) | Microsoft Docs"
-ms.custom: 
+title: Restaurations complètes de bases de données (mode de récupération complète) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - complete database restores
 - database restores [SQL Server], complete database
@@ -20,16 +17,15 @@ helpviewer_keywords:
 - full recovery model [SQL Server], performing restores
 - log backups [SQL Server[
 ms.assetid: 5b4c471c-b972-498e-aba9-92cf7a0ea881
-caps.latest.revision: 
+caps.latest.revision: 77
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8c105147fa09fe3f3d2eda03b1b378d370efdbe6
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 8678a68a3cd8567759351319a8deb84b48a82a42
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="complete-database-restores-full-recovery-model"></a>Restaurations complètes de bases de données (mode de récupération complète)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

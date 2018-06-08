@@ -1,27 +1,25 @@
 ---
-title: "Afficher les mêmes données dans une matrice et sur un graphique (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: Afficher les mêmes données dans une matrice et sur un graphique (Générateur de rapports) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 1262f283-9fc2-4bc1-9c79-457f7642abc7
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 97a87ddcc7d1769119e3d028af0e4fe5dad927dd
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: b342fa9f55f0494d90f7e85aa7b09bb82b32ae2c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="display-the-same-data-on-a-matrix-and-a-chart-report-builder"></a>Afficher les mêmes données dans une matrice et sur un graphique (Générateur de rapports)
   Pour afficher les mêmes données dans une matrice et sur un graphique, vous devez définir des propriétés sur ces deux régions de données afin de spécifier le même dataset, ainsi que les mêmes expressions pour les filtres, les groupes, les tris et les données.  

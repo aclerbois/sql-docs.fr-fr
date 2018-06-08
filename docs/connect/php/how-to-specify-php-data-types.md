@@ -2,30 +2,27 @@
 title: 'Comment : spécifier les Types de données PHP | Documents Microsoft'
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data types
 - streaming data
 ms.assetid: fee6e6b8-aad9-496b-84a2-18d2950470a4
-caps.latest.revision: ''
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b12a1042d4090a9e2369f602010199dea54431ed
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 3fdd7d2eee34303c466da0445233109b707c6645
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-specify-php-data-types"></a>Procédure : spécifier des types de données PHP
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -45,7 +42,7 @@ Les étapes suivantes récapitulent la manière de spécifier des types de donn�
 ## <a name="example"></a>Exemple  
 L’exemple suivant récupère des lignes de la table *Production.ProductReview* de la base de données AdventureWorks. Dans chaque ligne retournée, le *ReviewDate* champ est récupéré sous forme de chaîne et le *commentaires* champ est récupéré sous la forme d’un flux de données. Les données de flux apparaissent à l’aide de la fonction [fpassthru](http://php.net/manual/en/function.fpassthru.php) PHP.  
   
-L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

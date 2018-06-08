@@ -1,32 +1,29 @@
 ---
-title: "Valeur de propriété-Exemple (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Valeur de propriété-Exemple (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Value property [ADO], VC++ example
 ms.assetid: 2a104245-56df-44f3-b9b7-b3d18643d57b
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4f8e13c408d08daafcb397314c9635f1578fe9ab
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: fc0d24719a6f781e587a63d676760cd07cc3c19c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="value-property-example-vc"></a>Exemple de valeur de propriété (VC ++)
 Cet exemple illustre la [valeur](../../../ado/reference/ado-api/value-property-ado.md) propriété avec [champ](../../../ado/reference/ado-api/field-object.md) et [propriété](../../../ado/reference/ado-api/property-object-ado.md) objets en affichant les valeurs de champs et de propriétés pour le ***employés*** table.  

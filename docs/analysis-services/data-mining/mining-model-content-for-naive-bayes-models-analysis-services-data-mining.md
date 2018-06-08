@@ -1,36 +1,23 @@
 ---
-title: "Exploration du contenu du modèle pour les modèles Naive Bayes (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- naive bayes model [Analysis Services]
-- Bayesian classifiers
-- naive bayes algorithms [Analysis Services]
-- mining model content, naive bayes models
-ms.assetid: 63fa15b0-e00c-4aa3-aa49-335f5572ff7e
-caps.latest.revision: 
-author: Minewiskan
+title: Exploration du contenu du modèle pour les modèles Naive Bayes (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ea4b76bc06098491a1ef7025b326cc254a5e1cdc
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: cbfb701bf6c4a90cf285e4643377b38e51121dd3
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mining-model-content-for-naive-bayes-models-analysis-services---data-mining"></a>Contenu du modèle d'exploration de données pour les modèles Naive Bayes (Analysis Services - Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit le contenu du modèle d'exploration de données spécifique aux modèles utilisant l'algorithme Naive Bayes [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Pour obtenir une explication sur la procédure d’interprétation des statistiques et de la structure partagées par tous les types de modèles et pour obtenir des définitions générales de termes en rapport avec le contenu du modèle d’exploration de données, consultez [Mining Model Content &#40;Analysis Services - Data Mining&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
+  Cette rubrique décrit le contenu du modèle d'exploration de données spécifique aux modèles utilisant l'algorithme Naive Bayes [!INCLUDE[msCoName](../../includes/msconame-md.md)] . Pour obtenir une explication sur la procédure d’interprétation des statistiques et de la structure partagées par tous les types de modèles et pour obtenir des définitions générales de termes en rapport avec le contenu du modèle d’exploration de données, consultez [Mining Model Content &#40;Analysis Services - Data Mining&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
   
 ## <a name="understanding-the-structure-of-a-naive-bayes-model"></a>Présentation de la structure d'un modèle Naive Bayes  
  Un modèle Naive Bayes possède un nœud parent unique qui représente le modèle et ses métadonnées, et sous ce nœud parent, un nombre donné d’arborescences indépendantes représentant les attributs prédictibles que vous avez sélectionnés. Outre les arborescences des attributs, chaque modèle contient un nœud de statistiques marginales (NODE_TYPE = 26) qui fournit des statistiques descriptives sur le jeu de cas d'apprentissage. Pour plus d’informations, consultez [Informations du nœud de statistiques marginales](#bkmk_margstats).  
@@ -295,7 +282,7 @@ AND NODE_CAPTION = 'Bike Buyer -> Marital Status = S'
  Une valeur **manquante** (VALUE_TYPE = 1) est ajoutée à chaque attribut d’entrée et de sortie pour représenter les valeurs potentielles qui ne figuraient pas dans les données d’apprentissage. Vous devez faire la distinction entre « manquant » en tant que chaîne et la valeur **Missing** par défaut. Pour plus d’informations, consultez [Valeurs manquantes &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/missing-values-analysis-services-data-mining.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu du modèle d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
+ [Contenu du modèle d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
  [Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md)   
  [Requêtes d’exploration de données](../../analysis-services/data-mining/data-mining-queries.md)   
  [Algorithme Microsoft Naive Bayes](../../analysis-services/data-mining/microsoft-naive-bayes-algorithm.md)  

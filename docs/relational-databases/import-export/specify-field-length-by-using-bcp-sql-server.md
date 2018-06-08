@@ -1,17 +1,15 @@
 ---
-title: "Spécifier la longueur des champs au moyen de bcp (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Spécifier la longueur des champs au moyen de bcp (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - native data format [SQL Server]
 - default field lengths
@@ -19,23 +17,23 @@ helpviewer_keywords:
 - data formats [SQL Server], field length
 - bcp utility [SQL Server], field length
 ms.assetid: 240f33ca-ef4a-413a-a4de-831885cb505b
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ad5143f4bc309f4156ebc4ea174ac11f4b9246fb
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5bda4afe1b3c6b64ea1609412be66de03fa6329e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-field-length-by-using-bcp-sql-server"></a>Spécifier la longueur des champs au moyen de bcp (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-La longueur de champ indique le nombre maximal de caractères nécessaires pour représenter les données au format caractères. La longueur de champ est déjà connue si les données sont enregistrées au format natif. Par exemple, les données de type **int** occupent 4 octets. Si vous indiquez 0 pour la longueur du préfixe, la commande **bcp** vous demande la longueur des champs, les longueurs par défaut des champs et l’influence de la longueur des champs sur le stockage des données dans des fichiers de données qui contiennent des données de type **char** .  
+  La longueur de champ indique le nombre maximal de caractères nécessaires pour représenter les données au format caractères. La longueur de champ est déjà connue si les données sont enregistrées au format natif. Par exemple, les données de type **int** occupent 4 octets. Si vous indiquez 0 pour la longueur du préfixe, la commande **bcp** vous demande la longueur des champs, les longueurs par défaut des champs et l’influence de la longueur des champs sur le stockage des données dans des fichiers de données qui contiennent des données de type **char** .  
   
 ## <a name="the-bcp-prompt-for-field-length"></a>Invite bcp pour la longueur des champs  
- Si une commande **bcp** interactive contient l’option **in** ou **out** sans commutateur de fichier de format (**-f**) ou sans commutateur de format de données (**-n**, **-c**, **-w**ou **-N**), la commande demande la longueur de champ de chaque champ de données, comme suit :  
+ Si une commande **bcp** interactive contient l’option **in** ou **out** sans commutateur de fichier de format (**-f**) ou sans commutateur de format de données (**-n**, **-c**, **-w** ou **-N**), la commande demande la longueur de champ de chaque champ de données, comme suit :  
   
  `Enter length of field <field_name> [<default>]:`  
   

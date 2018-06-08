@@ -1,36 +1,34 @@
 ---
-title: "À propos de la capture de données modifiées (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: À propos de la capture de données modifiées (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change data capture [SQL Server], about
 - change data capture [SQL Server]
 - 22832 (Database Engine error)
 ms.assetid: 7d8c4684-9eb1-4791-8c3b-0f0bb15d9634
-caps.latest.revision: 
+caps.latest.revision: 21
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a56878e9a37195e63e03b04b84c4a8d296844ff2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c060999df59d34237602d09381419da8a0d66167
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="about-change-data-capture-sql-server"></a>À propos de la capture de données modifiées (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-La capture de données modifiées enregistre les activités d'insertion, de mise à jour et de suppression appliquées à une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Elle rend disponibles les détails des modifications dans un format relationnel simple à utiliser. Les informations sur les colonnes et les métadonnées nécessaires à l'application des modifications à un environnement cible sont capturées pour les lignes modifiées et stockées dans des tables de modification qui reflètent la structure de colonne des tables sources suivies. Des fonctions table sont fournies afin de procurer aux consommateurs un accès systématique aux données modifiées.  
+  La capture de données modifiées enregistre les activités d'insertion, de mise à jour et de suppression appliquées à une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Elle rend disponibles les détails des modifications dans un format relationnel simple à utiliser. Les informations sur les colonnes et les métadonnées nécessaires à l'application des modifications à un environnement cible sont capturées pour les lignes modifiées et stockées dans des tables de modification qui reflètent la structure de colonne des tables sources suivies. Des fonctions table sont fournies afin de procurer aux consommateurs un accès systématique aux données modifiées.  
   
  Les consommateurs de données auxquels s'adresse cette technologie sont par exemple les applications d'extraction, de transformation et de chargement (ETL). Une application ETL charge de façon incrémentielle les données modifiées à partir de tables sources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vers un entrepôt de données ou un mini-Data Warehouse. Même si la représentation des tables sources dans l'entrepôt de données doit refléter les modifications apportées aux tables sources, une technologie de bout en bout qui actualise un réplica de la source n'est pas appropriée. Au lieu de cela, il faut un flux de données modifiées fiable, structuré de sorte que les consommateurs puissent l'appliquer aux différentes représentations cibles des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] apporte cette technologie.  
   
@@ -113,7 +111,33 @@ La capture de données modifiées enregistre les activités d'insertion, de mise
  Les deux travaux de l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont été conçus pour être suffisamment flexibles et configurables afin de répondre aux besoins élémentaires des environnements de capture de données modifiées. Dans les deux cas, toutefois, les procédures stockées sous-jacentes qui fournissent la fonctionnalité principale ont été exposées afin qu'une personnalisation supplémentaire soit possible.  
   
  La capture de données modifiées ne peut pas fonctionner correctement lorsque le service Moteur de base de données ou le service SQL Server Agent s'exécute sous la compte SERVICE RÉSEAU. Cela peut entraîner l'erreur 22832.  
-  
+ 
+## <a name="working-with-database-and-table-collation-differences"></a>Différences de classement entre la base de données et la table
+
+Il est important de noter que, dans certains cas, les classements peuvent ne pas être les mêmes dans la base de données et dans les colonnes d’une table configurée pour la capture des changements de données. La capture des changements de données utilise le stockage temporaire pour remplir les tables côté. Si une table comprend des colonnes CHAR ou VARCHAR avec des classements différents de ceux de la base de données, et si ces colonnes stockent des caractères non ASCII (par exemple, des caractères DBCS codés sur deux octets), la capture des changements de données peut ne pas être en mesure de maintenir la cohérence entre les données modifiées et les données des tables de base. Cela est dû au fait que les variables de stockage temporaire ne peuvent pas être associées à des classements.
+
+Envisagez plutôt l’une des approches suivantes pour vérifier que les données modifiées sont cohérentes avec celles des tables de base :
+
+- Utilisez le type de données NCHAR ou NVARCHAR pour les colonnes qui contiennent des données non ASCII.
+
+- Vous pouvez également utiliser le même classement pour les colonnes et pour la base de données.
+
+Par exemple, si vous avez une base de données qui utilise le classement SQL_Latin1_General_CP1_CI_AS, regardez le tableau suivant :
+
+```tsql
+CREATE TABLE T1( 
+     C1 INT PRIMARY KEY, 
+     C2 VARCHAR(10) collate Chinese_PRC_CI_AI)
+```
+
+La capture des changements de données peut échouer à capturer les données binaires de la colonne C2, car son classement est différent (Chinese_PRC_CI_AI). Utilisez NVARCHAR pour éviter ce problème :
+
+```tsql
+CREATE TABLE T1( 
+     C1 INT PRIMARY KEY, 
+     C2 NVARCHAR(10) collate Chinese_PRC_CI_AI --Unicode data type, CDC works well with this data type)
+```
+
 ## <a name="see-also"></a> Voir aussi  
  [Suivi des modifications de données &#40;SQL Server&#41;](../../relational-databases/track-changes/track-data-changes-sql-server.md)   
  [Activer et désactiver la capture de données modifiées &#40;SQL Server&#41;](../../relational-databases/track-changes/enable-and-disable-change-data-capture-sql-server.md)   

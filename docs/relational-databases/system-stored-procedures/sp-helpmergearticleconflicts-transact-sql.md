@@ -1,16 +1,15 @@
 ---
 title: sp_helpmergearticleconflicts (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helpmergearticleconflicts
 ms.assetid: 4678a2b9-9a5f-4193-a20d-2e11fc896c3a
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b7a1d10d6d2ba731ceaaaba51b8f786b262a2e28
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: d533e2cf1aad3d7ee0b9610e010b42baabf054ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelpmergearticleconflicts-transact-sql"></a>sp_helpmergearticleconflicts (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +47,7 @@ sp_helpmergearticleconflicts [ [ @publication = ] 'publication' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@publication=**] **'***publication***'**  
- Est le nom de la publication de fusion. *publication* est **sysname**, avec une valeur par défaut  **%** , qui retourne tous les articles dans la base de données qui sont en conflit.  
+ Est le nom de la publication de fusion. *publication* est **sysname**, avec une valeur par défaut **%**, qui retourne tous les articles dans la base de données qui sont en conflit.  
   
  [  **@publisher=**] **'***publisher***'**  
  Est le nom du serveur de publication. *publisher* est **sysname**, avec NULL comme valeur par défaut.  
@@ -62,9 +60,9 @@ sp_helpmergearticleconflicts [ [ @publication = ] 'publication' ]
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**article**|**sysname**|Nom de l'article.|  
-|**lui**|**sysname**|Propriétaire de l'objet source.|  
-|**source_object**|**nvarchar (386)**|Nom de l'objet source.|  
-|**conflict_table**|**nvarchar (258)**|Nom de la table stockant les conflits d'insertion ou de mise à jour.|  
+|**source_owner**|**sysname**|Propriétaire de l'objet source.|  
+|**source_object**|**nvarchar(386)**|Nom de l'objet source.|  
+|**conflict_table**|**nvarchar(258)**|Nom de la table stockant les conflits d'insertion ou de mise à jour.|  
 |**guidcolname**|**sysname**|Nom du RowGuidCol de l'objet source.|  
 |**centralized_conflicts**|**int**|Spécifie si les enregistrements des conflits sont stockés sur le serveur de publication donné.|  
   
@@ -76,7 +74,7 @@ sp_helpmergearticleconflicts [ [ @publication = ] 'publication' ]
 ## <a name="remarks"></a>Notes  
  **sp_helpmergearticleconflicts** est utilisé dans la réplication de fusion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe et le **db_owner** du rôle de base de données fixe peut exécuter **sp_helpmergearticleconflicts**.  
   
 ## <a name="see-also"></a>Voir aussi  

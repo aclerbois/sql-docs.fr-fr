@@ -1,16 +1,14 @@
 ---
 title: sp_executesql (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_executesql
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - sp_executesql
 - dynamic SQL
 ms.assetid: a8d68d72-0f4d-4ecb-ae86-1235b962f646
-caps.latest.revision: 
+caps.latest.revision: 64
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b6dec48efa27a14443e69158ed9e9fffb55eba29
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b0b0e9906c39de7875edc183e36fd5257afbe303
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spexecutesql-transact-sql"></a>sp_executesql (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -56,15 +54,15 @@ sp_executesql [ @stmt = ] statement
   
 ## <a name="arguments"></a>Arguments  
  [ @stmt=] *instruction*  
- Est une chaîne Unicode contenant un [!INCLUDE[tsql](../../includes/tsql-md.md)] instruction ou le lot. @stmtdoit être une constante Unicode ou une variable Unicode. L'utilisation d'expressions Unicode plus complexes (comme la concaténation de deux chaînes avec l'opérateur +) n'est pas autorisée. L'utilisation de constantes de caractères n'est pas autorisée. Si une constante Unicode est spécifiée, il doit comporter une **N**. Par exemple, la constante Unicode **ne sp_who'** est valide, mais la constante caractère **'sp_who'** n’est pas. La taille de la chaîne n'est limitée que par la quantité de mémoire disponible sur le serveur de base de données. Sur les serveurs 64 bits, la taille de la chaîne est limitée à 2 Go, la taille maximale de **nvarchar (max)**.  
+ Est une chaîne Unicode contenant un [!INCLUDE[tsql](../../includes/tsql-md.md)] instruction ou le lot. @stmt doit être une constante Unicode ou une variable Unicode. L'utilisation d'expressions Unicode plus complexes (comme la concaténation de deux chaînes avec l'opérateur +) n'est pas autorisée. L'utilisation de constantes de caractères n'est pas autorisée. Si une constante Unicode est spécifiée, il doit comporter une **N**. Par exemple, la constante Unicode **ne sp_who'** est valide, mais la constante caractère **'sp_who'** n’est pas. La taille de la chaîne n'est limitée que par la quantité de mémoire disponible sur le serveur de base de données. Sur les serveurs 64 bits, la taille de la chaîne est limitée à 2 Go, la taille maximale de **nvarchar (max)**.  
   
 > [!NOTE]  
->  @stmtpeut contenir des paramètres possédant la même forme qu’un nom de variable, par exemple :`N'SELECT * FROM HumanResources.Employee WHERE EmployeeID = @IDParameter'`  
+>  @stmt peut contenir des paramètres possédant la même forme qu’un nom de variable, par exemple : `N'SELECT * FROM HumanResources.Employee WHERE EmployeeID = @IDParameter'`  
   
  Chaque paramètre inclus dans @stmt doit posséder une entrée correspondante dans la liste des définitions de paramètres @params et dans la liste des valeurs de paramètres.  
   
- [ @params=] N'@*nom_paramètre**data_type* [ ,... *n* ] '  
- Chaîne contenant les définitions de tous les paramètres qui ont été incorporés dans @stmt. Cette chaîne doit être une constante Unicode ou une variable Unicode. Chaque définition de paramètre se compose d'un nom de paramètre et d'un type de données. *n*est un espace réservé qui indique les définitions de paramètres supplémentaires. Chaque paramètre spécifié dans @stmtmust être défini dans @params. Si le lot ou l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] figurant dans @stmt ne contient aucun paramètre, il est inutile d'utiliser @params. La valeur par défaut de ce paramètre est NULL.  
+ [ @params=] N'@*nom_paramètre ** data_type* [,... *n* ] '  
+ Chaîne contenant les définitions de tous les paramètres qui ont été incorporés dans @stmt. Cette chaîne doit être une constante Unicode ou une variable Unicode. Chaque définition de paramètre se compose d'un nom de paramètre et d'un type de données. *n* est un espace réservé qui indique les définitions de paramètres supplémentaires. Chaque paramètre spécifié dans @stmtmust être défini dans @params. Si le lot ou l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] figurant dans @stmt ne contient aucun paramètre, il est inutile d'utiliser @params. La valeur par défaut de ce paramètre est NULL.  
   
  [ @param1=] '*value1*'  
  Valeur du premier paramètre qui est défini dans la chaîne de paramètres. Cette valeur peut être une constante ou une variable Unicode. Il est nécessaire de fournir une valeur de paramètre pour chaque paramètre inclus dans @stmt. Aucune valeur n'est requise si l'instruction ou le traitement d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] figurant dans @stmt ne contient aucun paramètre.  
@@ -114,7 +112,7 @@ EXECUTE sp_executesql @SQLString, @ParmDefinition,
                       @BusinessEntityID = @IntVariable;  
 ```  
   
- Les paramètres de sortie peuvent également être utilisés avec sp_executesql. L'exemple suivant récupère une fonction (professionnelle) dans la table `AdventureWorks2012.HumanResources.Employee` et la retourne dans le paramètre de sortie `@max_title`.  
+ Les paramètres de sortie peuvent également être utilisés avec sp_executesql. L'exemple suivant récupère un poste dans la table `AdventureWorks2012.HumanResources.Employee` et le retourne dans le paramètre de sortie `@max_title`.  
   
 ```  
 DECLARE @IntVariable int;  
@@ -140,7 +138,7 @@ SELECT @max_title;
   
 -   Le paramètre de type entier est spécifié dans son format d'origine. La conversion en Unicode n'est pas nécessaire.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle public.  
   
 ## <a name="examples"></a>Exemples  
@@ -240,7 +238,7 @@ FROM Sales.SalesOrderHeader
 WHERE SalesOrderNumber = @SalesOrderNumber;  
 ```  
   
-## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
+## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
   
 ### <a name="d-executing-a-simple-select-statement"></a>D. Exécution d'une instruction SELECT simple  
  Cet exemple illustre la création et l'exécution d'une instruction `SELECT` simple contenant un paramètre incorporé appelé `@level`.  

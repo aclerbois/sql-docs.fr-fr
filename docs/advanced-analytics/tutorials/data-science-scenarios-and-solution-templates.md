@@ -1,26 +1,17 @@
 ---
-title: Scénarios de science des données et des modèles de solution | Documents Microsoft
-ms.custom: ''
-ms.date: 08/22/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+title: Scénarios de science des données et des modèles de solution (SQL Server Machine Learning) | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: d7fb0e16b20089d9d84ef8df66c8b97cc254cda4
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: d67fd15c44d188870989f2ad6498733c5901fb9d
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="data-science-scenarios-and-solution-templates"></a>Scénarios de science des données et des modèles de solution
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -39,7 +30,7 @@ Chaque solution inclut des exemples de données, du code de R ou code Python et 
 
 ## <a name="fraud-detection"></a>Détection des fraudes
 
-[Modèle de détection de fraude (SQL Server R Services)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/FraudDetection/Introduction.md)
+[Modèle de détection de fraude (SQL Server R Services)](https://github.com/Microsoft/r-server-fraud-detection)
 
 **Ce que :** la possibilité de détecter les transactions frauduleuses est importante pour les entreprises en ligne. Pour réduire les pertes de refacturation, les entreprises doivent identifier rapidement les transactions qui ont été apportées à l’aide des informations d’identification ou de paiement du vol. Quand des transactions frauduleuses sont découvertes, les entreprises prennent généralement des mesures pour bloquer certains comptes dès que possible, afin d’empêcher toute perte supplémentaire. Dans ce scénario, vous allez apprendre à utiliser les données des transactions d’achat en ligne pour identifier les fraudes probablement.
 

@@ -1,33 +1,30 @@
 ---
-title: CommandTypeEnum | Microsoft Docs
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: CommandTypeEnum | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - CommandTypeEnum
 helpviewer_keywords:
 - CommandTypeEnum enumeration [ADO]
 ms.assetid: 4b1feb9c-a855-40fe-a906-efe688687e9f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 11150cb69914cf5438d46cc15238b38465ddfa30
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5d15cf7ce3c4af4d6bb4072dd3070298a846e825
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="commandtypeenum"></a>CommandTypeEnum
 Spécifie comment un argument de commande doit être interprété.  

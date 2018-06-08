@@ -1,34 +1,33 @@
 ---
 title: Prise en charge DAC pour les objets et versions SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: data-tier-applications
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-data-tier-apps
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data-tier application [SQL Server], supported objects
 - objects [SQL Server], data-tier applications
 ms.assetid: b1b78ded-16c0-4d69-8657-ec57925e68fd
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 12b99446025274f0f3652a7552f53775283af7ac
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 52d1896a61c0238337d8730c4038861841fd6124
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dac-support-for-sql-server-objects-and-versions"></a>Prise en charge DAC pour les objets et versions SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une application de la couche Données (DAC) prend en charge les objets du [!INCLUDE[ssDE](../../includes/ssde-md.md)] les plus couramment utilisés.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une application de la couche Données (DAC) prend en charge les objets du [!INCLUDE[ssDE](../../includes/ssde-md.md)] les plus couramment utilisés.  
   
  **Dans cette rubrique**  
   

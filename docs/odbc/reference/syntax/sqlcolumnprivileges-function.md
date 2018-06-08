@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLColumnPrivileges | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLColumnPrivileges
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLColumnPrivileges
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLColumnPrivileges
-helpviewer_keywords: SQLColumnPrivileges function [ODBC]
+f1_keywords:
+- SQLColumnPrivileges
+helpviewer_keywords:
+- SQLColumnPrivileges function [ODBC]
 ms.assetid: ef233d9a-6ed5-4986-9d42-5e0b1a79fb6e
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5058ae7c097858469db0aad57509f013e68db7ca
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ae5170239706601def7efcb251e4def31f938b21
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcolumnprivileges-function"></a>Fonction SQLColumnPrivileges
 **Mise en conformité**  
@@ -63,7 +64,7 @@ SQLRETURN SQLColumnPrivileges(
  *NameLength1*  
  [Entrée] Longueur en caractères de **CatalogName*.  
   
- *SchemaName*  
+ *schemaName*  
  [Entrée] Nom du schéma. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, une chaîne vide (« ») indique les tables qui n’ont pas de schémas. *SchemaName* ne peut pas contenir un modèle de recherche de chaîne.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_TRUE, *SchemaName* est traité comme un identificateur. S’il s’agit de SQL_FALSE, *SchemaName* est un argument ordinaire ; elle est traitée littéralement, et ses cas est significatif.  
@@ -79,7 +80,7 @@ SQLRETURN SQLColumnPrivileges(
  *NameLength3*  
  [Entrée] Longueur en caractères de **TableName*.  
   
- *Nom de colonne*  
+ *ColumnName*  
  [Entrée] Modèle de recherche de chaîne pour les noms de colonne.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_TRUE, *ColumnName* est traité comme un identificateur et ses cas n’est pas significatif. S’il s’agit de SQL_FALSE, *ColumnName* est un argument de valeur de modèle ; il est traité littéralement, et ses cas est significatif.  
@@ -93,7 +94,7 @@ SQLRETURN SQLColumnPrivileges(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLColumnPrivileges** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLColumnPrivileges** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -138,7 +139,7 @@ SQLRETURN SQLColumnPrivileges(
   
 |Nom de colonne|Numéro de colonne|Type de données|Commentaires|  
 |-----------------|-------------------|---------------|--------------|  
-|TABLE_CAT (ODBC VERSION 1.0)| 1|Varchar|Identificateur de catalogue ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
+|TABLE_CAT (ODBC VERSION 1.0)|1|Varchar|Identificateur de catalogue ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
 |TABLE_SCHEM (ODBC 1.0)|2|Varchar|Identificateur de schéma ; NULL si non applicable à la source de données. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de schémas.|  
 |TABLE_NAME (ODBC 1.0)|3|Varchar non NULL|Identificateur de la table.|  
 |COLUMN_NAME (ODBC VERSION 1.0)|4|Varchar non NULL|Nom de colonne. Le pilote retourne une chaîne vide pour une colonne qui n’a pas de nom.|  

@@ -1,17 +1,15 @@
 ---
 title: 'Collections (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - 'ADO for Visual C++ syntax with #import [ADO]'
 - '#import [ADO]'
 ms.assetid: 36fbca8e-1884-44b5-806b-d15e30f42fe6
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 488f5dcc74f6b5b1d1ea89c794511a96dc3dea81
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 92ffc11b2011ff5f37aee25266d0f229b1dfd617
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="collections-visual-c-syntax-index-with-import"></a>Collections (Index de la syntaxe Visual C++ avec #import)
 Il est utile de savoir que les collections héritent certaines méthodes et propriétés communes.  

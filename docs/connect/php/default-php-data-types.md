@@ -2,30 +2,27 @@
 title: Types de données PHP par défaut | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - default data types
 - converting data types
 ms.assetid: b66c301d-3d20-45b8-a112-225d8f01c0bd
-caps.latest.revision: ''
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ac611fe1d08c157dd9f6b4a67298ba318b62053f
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: f8ae48b672aa4817f8451eeee788985b4b90694f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="default-php-data-types"></a>Types de données PHP par défaut
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -70,7 +67,7 @@ Le tableau suivant répertorie le type de données SQL Server (type des données
 |TIMESTAMP|Chaîne|caractère 8 bits<sup>1</sup>|  
 |tinyint|Entier|caractère 8 bits<sup>1</sup>|  
 |UDT|Flux<sup>2</sup>|Binaire<sup>3</sup>|  
-|uniqueidentifier|String<sup>9</sup>|caractère 8 bits<sup>1</sup>|  
+|uniqueidentifier|Chaîne<sup>9</sup>|caractère 8 bits<sup>1</sup>|  
 |varbinary|Flux<sup>2</sup>|Binaire<sup>3</sup>|  
 |varbinary(MAX)|Flux<sup>2</sup>|Binaire<sup>3</sup>|  
 |varchar|Chaîne|caractère 8 bits<sup>1</sup>|  
@@ -96,7 +93,7 @@ Le tableau suivant répertorie le type de données SQL Server (type des données
   
 9.  Les UNIQUEIDENTIFIER sont des GUID représentés par l’expression régulière suivante :  
   
-    [0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-f]{4}-[0-9a-fA-f]{4}-[0-9a-fA-F]{12}  
+    [0-9 a-fA-F] {8}-[0-9 a-fA-F]{4}-[0-9 a-fA-f]{4}-[0-9 a-fA-f]{4}-[0-9 a-fA-F]{12}  
  
  
 ## <a name="other-new-sql-server-2008-data-types-and-features"></a>Autres nouveaux types et fonctionnalités SQL Server 2008  
@@ -121,7 +118,7 @@ Une prise en charge partielle des types signifie que vous ne pouvez pas interrog
 
 [Types PHP](http://php.net/manual/en/language.types.php)
 
-[Data Types (Transact-SQL)](../../t-sql/data-types/data-types-transact-sql.md)
+[Types de données (Transact-SQL)](../../t-sql/data-types/data-types-transact-sql.md)
 
 [sqlsrv_field_metadata](../../connect/php/sqlsrv-field-metadata.md)  
   

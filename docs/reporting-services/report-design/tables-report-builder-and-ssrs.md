@@ -1,27 +1,25 @@
 ---
-title: "Tables (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Tables (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0a95c339-c5aa-49ad-b1c8-72824b7a9c82
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: c1ee1673ee3a808dc151f37a97f5989aa97c3803
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 5968d2c590151b96da39adb5cf141f30c2f72c04
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tables-report-builder--and-ssrs"></a>Tables (Générateur de rapports et SSRS)
  Dans [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)], vous pouvez utilisez une table pour afficher des données de détail ou groupées, ou une combinaison des deux dans un rapport paginé.   
@@ -58,7 +56,7 @@ ms.lasthandoff: 01/09/2018
   
  ![Aperçu de table avec en-têtes de colonnes en gras](../../reporting-services/media/rs-basictabledetailsformattedpreview.png "Aperçu de table avec en-têtes de colonnes en gras")  
   
- La table avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Vous pouvez améliorer la conception de votre table en ajoutant des fonctionnalités prises en charge par la région de données de tableau matriciel sous-jacente. Pour plus d’informations, consultez [Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page.md). Vous pouvez également continuer à développer votre table en ajoutant des groupes de lignes, des groupes de colonnes, et en ajoutant ou supprimant des groupes de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+ La table avec laquelle vous démarrez est un modèle basé sur la région de données de tableau matriciel. Vous pouvez améliorer la conception de votre table en ajoutant des fonctionnalités prises en charge par la région de données de tableau matriciel sous-jacente. Pour plus d’informations, consultez [Contrôle de l’affichage de la région de données de tableau matriciel sur une page de rapport &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/controlling-the-tablix-data-region-display-on-a-report-page.md). Vous pouvez également continuer à développer votre table en ajoutant des groupes de lignes, des groupes de colonnes, et en ajoutant ou supprimant des groupes de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS& #41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
   
 ### <a name="adding-totals-for-detail-data"></a>Ajout de totaux pour les données de détail  
  Pour ajouter des totaux, sélectionnez les cellules comportant des données numériques, puis utilisez le menu contextuel pour ajouter automatiquement des étiquettes et des totaux pour les données de détail pour les champs numériques. Vous pouvez également spécifier manuellement d'autres étiquettes ou totaux. L'illustration suivante montre une ligne de total classique qui inclut à la fois et des totaux automatiques et des totaux spécifiés manuellement :  

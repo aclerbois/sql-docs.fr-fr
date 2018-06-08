@@ -1,16 +1,15 @@
 ---
 title: sp_dropmergesubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dropmergesubscription
 ms.assetid: 34244ae6-bd98-4a6a-bbd3-85f50edfcdc0
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5c3158dc51b7a54202b9897532e4ee8506cc64d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: d0fb4d9bcd2f72db252380fe3ee0d914645255b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdropmergesubscription-transact-sql"></a>sp_dropmergesubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,10 +63,10 @@ sp_dropmergesubscription [ [ @publication= ] 'publication' ]
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**tous les**|Abonnements par envoi de données (push), par extraction de données (pull) et anonymes.|  
-|**anonyme**|Abonnement anonyme.|  
-|**push**|Abonnement par envoi de données (push).|  
-|**extraction**|Abonnement par extraction de données (pull).|  
+|**Tous les**|Abonnements par envoi de données (push), par extraction de données (pull) et anonymes.|  
+|**Anonyme**|Abonnement anonyme.|  
+|**Push**|Abonnement par envoi de données (push).|  
+|**Extraction**|Abonnement par extraction de données (pull).|  
 |**les deux** (par défaut)|Abonnements par envoi et extraction de données.|  
   
  [  **@ignore_distributor =** ] *ignore_distributor*  
@@ -86,14 +84,14 @@ sp_dropmergesubscription [ [ @publication= ] 'publication' ]
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_dropmergesubscription](../../relational-databases/replication/codesnippet/tsql/sp-dropmergesubscription_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_dropmergesubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Supprimer un abonnement par émission de données](../../relational-databases/replication/delete-a-push-subscription.md)   
  [Supprimer un abonnement par extraction de données](../../relational-databases/replication/delete-a-pull-subscription.md)   
- [sp_addmergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addmergesubscription-transact-sql.md)   
- [sp_changemergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-changemergesubscription-transact-sql.md)   
- [sp_helpmergesubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpmergesubscription-transact-sql.md)  
+ [sp_addmergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergesubscription-transact-sql.md)   
+ [sp_changemergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergesubscription-transact-sql.md)   
+ [sp_helpmergesubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergesubscription-transact-sql.md)  
   
   

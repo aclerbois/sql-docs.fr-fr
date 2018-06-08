@@ -1,15 +1,14 @@
 ---
-title: "Vue d’ensemble de l’intégration du CLR | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble de l’intégration du CLR | Documents Microsoft
+ms.custom: ''
 ms.date: 04/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - common language runtime [SQL Server], about CLR integration
@@ -20,27 +19,26 @@ helpviewer_keywords:
 - managed code [SQL Server], vs. extended stored procedures
 - execution at client vs. execution at server [CLR integration]
 ms.assetid: 5aa176da-3652-4afa-a742-4c40c77ce5c3
-caps.latest.revision: 
+caps.latest.revision: 50
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fce42787904d67dbe7e023321138fb57bd74b408
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 62d006d244a8fb46316f24931560378727a6f109
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-integration---overview"></a>Intégration du CLR - vue d’ensemble
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Le CLR (Common Language Runtime) est le cœur de Microsoft .NET Framework et fournit l'environnement d'exécution de la totalité du code .NET Framework. Le code qui s'exécute au sein du CLR est désigné sous le nom de code managé. Le CLR fournit divers fonctions et services requis pour l'exécution du programme, y compris la compilation juste-à-temps (JIT), l'allocation et la gestion de la mémoire, la mise en application de la cohérence des types, la gestion des exceptions, la gestion des threads et la sécurité.  Pour plus d'informations, consultez la documentation du Kit de développement (SDK) .NET Framework.  
+  Le CLR (Common Language Runtime) est le cœur de Microsoft .NET Framework et fournit l'environnement d'exécution de la totalité du code .NET Framework. Le code qui s'exécute au sein du CLR est désigné sous le nom de code managé. Le CLR fournit divers fonctions et services requis pour l'exécution du programme, y compris la compilation juste-à-temps (JIT), l'allocation et la gestion de la mémoire, la mise en application de la cohérence des types, la gestion des exceptions, la gestion des threads et la sécurité.  Pour plus d'informations, consultez la documentation du Kit de développement (SDK) .NET Framework.  
   
  Avec le CLR hébergé dans Microsoft SQL Server (intégration du CLR), vous pouvez créer des procédures stockées, des déclencheurs, des fonctions définies par l'utilisateur, des types définis par l'utilisateur et des agrégats définis par l'utilisateur en code managé. Comme le code managé est compilé en code natif avant l'exécution, vous pouvez obtenir une amélioration significative des performances dans certains scénarios.  
   
  Le code managé utilise la sécurité d'accès du code pour empêcher les assemblys d'effectuer certaines opérations. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise la sécurité d'accès du code pour aider à sécuriser le code managé et empêcher que le système d'exploitation ou le serveur de base de données ne soit menacé.  
   
 ## <a name="advantages-of-clr-integration"></a>Avantages de l'intégration du CLR  
- [!INCLUDE[tsql](../../includes/tsql-md.md)] est conçu spécifiquement pour l’accès direct aux données et les manipulations de la base de données. Même si [!INCLUDE[tsql](../../includes/tsql-md.md)] convient parfaitement pour accéder aux données et les gérer, ce n'est pas un langage de programmation à part entière. Par exemple, [!INCLUDE[tsql](../../includes/tsql-md.md)] ne prend pas en charge les tableaux, les collections, les boucles for-each, le décalage de bits ou les classes. Bien que certaines de ces constructions puissent être simulées dans [!INCLUDE[tsql](../../includes/tsql-md.md)], le code managé a intégré leur prise en charge. Selon le scénario, ces fonctionnalités peuvent fournir une raison attrayante d'implémenter certaines fonctionnalités de base de données en code managé.  
+ [!INCLUDE[tsql](../../includes/tsql-md.md)] est conçu spécifiquement pour l'accès direct aux données et les manipulations de la base de données. Même si [!INCLUDE[tsql](../../includes/tsql-md.md)] convient parfaitement pour accéder aux données et les gérer, ce n'est pas un langage de programmation à part entière. Par exemple, [!INCLUDE[tsql](../../includes/tsql-md.md)] ne prend pas en charge les tableaux, les collections, les boucles for-each, le décalage de bits ou les classes. Bien que certaines de ces constructions puissent être simulées dans [!INCLUDE[tsql](../../includes/tsql-md.md)], le code managé a intégré leur prise en charge. Selon le scénario, ces fonctionnalités peuvent fournir une raison attrayante d'implémenter certaines fonctionnalités de base de données en code managé.  
   
  Microsoft Visual Basic .NET et Microsoft Visual C# offrent des fonctions orientées objet telles que l'encapsulation, l'héritage et le polymorphisme. Le code connexe peut désormais être aisément organisé en classes et en espaces de noms. Lorsque vous travaillez avec un code serveur volumineux, cela vous permet de l'organiser et de le gérer plus facilement.  
   

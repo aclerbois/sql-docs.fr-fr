@@ -1,16 +1,15 @@
 ---
-title: "Méthode GetCurrentCertificate (classe ServerSettings) | Documents Microsoft"
-ms.custom: 
+title: Méthode GetCurrentCertificate (classe ServerSettings) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - GetCurrentCertificate Method (ServerSettings Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - GetCurrentCertificate method
 ms.assetid: 450e33c6-91d4-420f-ab7c-1905111f5658
-caps.latest.revision: 
+caps.latest.revision: 14
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 60356b1b148444f1ba714a0fd8b207ca95fc49ed
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 7a0c49f54d5cc4cf7aa9fae90dcd60244194ffcb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getcurrentcertificate-method-serversettings-class"></a>Méthode GetCurrentCertificate (classe ServerSettings)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

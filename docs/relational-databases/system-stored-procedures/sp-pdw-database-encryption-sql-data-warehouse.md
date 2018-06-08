@@ -1,30 +1,29 @@
 ---
 title: sp_pdw_database_encryption pour (SQL Data Warehouse) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse, pdw
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-data-warehouse
 ms.component: system-stored-procedures
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: f5ccb424-7a95-4557-b774-c69de33c1545
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 8
+author: ronortloff
+ms.author: rortloff
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e63022bd135d7c5fc78dd717b6a0bdd27dc5311
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: adb48589c9ba6268aa229cd21871504392151f8e
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="sppdwdatabaseencryption-sql-data-warehouse"></a>sp_pdw_database_encryption pour (entrepôt de données SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]
@@ -40,7 +39,7 @@ sp_pdw_database_encryption [ [ @enabled = ] enabled ] ;
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- [ ** @enabled=** ] *activé*  
+ [  **@enabled=** ] *activé*  
  Détermine si le chiffrement transparent des données est activé. *activé* est **int**, et peut prendre l’une des valeurs suivantes :  
   
 -   0 = Désactivé  

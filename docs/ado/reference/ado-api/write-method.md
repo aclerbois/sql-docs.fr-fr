@@ -1,17 +1,15 @@
 ---
-title: "Write, méthode | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Write, méthode | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Stream::raw_Write
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Write method [ADO]
 ms.assetid: 02982e6a-ac5f-4af2-b82e-ce12534b84b2
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e89d24e276e8d8e4cf442c713501f721612a47ff
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 77b4da5ba900cdd3456bbfe611ea0fe1021e23d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="write-method"></a>Write, méthode
 Écrit des données binaires à une [flux](../../../ado/reference/ado-api/stream-object-ado.md) objet.  
@@ -41,7 +38,7 @@ Stream.Write Buffer
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *Buffer*  
+ *Mémoire tampon*  
  A **Variant** qui contient un tableau d’octets à écrire.  
   
 ## <a name="remarks"></a>Notes  

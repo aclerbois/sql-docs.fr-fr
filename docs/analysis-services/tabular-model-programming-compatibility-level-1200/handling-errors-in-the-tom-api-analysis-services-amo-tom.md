@@ -1,30 +1,23 @@
 ---
-title: "Gestion des erreurs dans l’API TOM (Analysis Services AMO-TOM) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Gestion des erreurs dans l’API TOM (Analysis Services AMO-TOM) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-ms.assetid: ec44daa0-a90e-42ad-b70d-6a7a7a4e4b7b
-caps.latest.revision: "4"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fe73f11bb44968e7091fe522f4905e3640c95282
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: b2483d4d6d443a21f43cf11e5271bb11041f1c53
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="handling-errors-in-the-tom-api-analysis-services-amo-tom"></a>Gestion des erreurs dans l’API TOM (Analysis Services AMO-TOM)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Une pratique courante pour les bibliothèques managées, telles que le modèle d’objet tabulaire (TOM) Analysis Services Management Objects (AMO) est d’utiliser des exceptions comme un mécanisme pour signaler des conditions d’erreur à l’utilisateur.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+Une pratique courante pour les bibliothèques managées, telles que le modèle d’objet tabulaire (TOM) Analysis Services Management Objects (AMO) est d’utiliser des exceptions comme un mécanisme pour signaler des conditions d’erreur à l’utilisateur.  
 
 Lorsqu’une erreur est détectée dans AMO-TOM, en plus de lever des exceptions .NET standard quelques comme **ArgumentException** et **InvalidOperationException**, TOM peut lever plusieurs exceptions spécifiques à TOM.  
 

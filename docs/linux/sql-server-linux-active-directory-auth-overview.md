@@ -1,26 +1,23 @@
 ---
-title: "L’authentification Active Directory pour SQL Server sur Linux | Documents Microsoft"
-description: "Cet article fournit une vue d’ensemble de l’authentification Active Directory pour SQL Server sur Linux."
+title: L’authentification Active Directory pour SQL Server sur Linux | Documents Microsoft
+description: Cet article fournit une vue d’ensemble de l’authentification Active Directory pour SQL Server sur Linux.
 author: rothja
 ms.date: 02/23/2018
 ms.author: jroth
 manager: craigg
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 helpviewer_keywords:
 - Linux, AAD authentication
-ms.workload: On Demand
-ms.openlocfilehash: f3c516465d9703ae736350e660aefba15a5636c9
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+ms.openlocfilehash: 7f34cda192cbd909ac6c2392ab49acb58038b416
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="active-directory-authentication-for-sql-server-on-linux"></a>Authentification Active Directory pour SQL Server sur Linux
 
@@ -36,7 +33,7 @@ L’authentification Active Directory offre les avantages suivants sur [!INCLUDE
 
 - Les utilisateurs s’authentifient via l’authentification unique, sans être invité à entrer un mot de passe.   
 - En créant des comptes de connexion des groupes Active Directory, vous pouvez gérer l’accès et les autorisations dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à l’aide d’appartenances Active Directory.  
-- Chaque utilisateur possède une identité unique de votre organisation, donc vous n’êtes pas obligé d’effectuer le suivi de qui [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] connexions correspondent aux personnes.   
+- Chaque utilisateur possède une identité unique dans votre organisation, donc vous n’êtes pas obligé d’effectuer le suivi de quelles connexions [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] correspondent à quelles personnes.   
 - Active Directory vous permet d’appliquer une stratégie de mot de passe centralisée de votre organisation.   
 
 ## <a name="configuration-steps"></a>Étapes de configuration
@@ -53,7 +50,7 @@ Les détails pour savoir comment configurer l’authentification Active Director
 
 ## <a name="known-issues"></a>Problèmes connus
 
-- À ce stade, la seule méthode d’authentification pris en charge pour le point de terminaison de mise en miroir de base de données est le certificat. Méthode d’authentification WINDOWS est activée dans une version ultérieure.
+- À ce stade, la seule méthode d’authentification prise en charge pour le point de terminaison de mise en miroir de base de données est le certificat. La méthode d’authentification WINDOWS sera activée dans une version ultérieure.
 - Les annonces outils tiers tels que Centrify, Powerbroker, et Vintela ne sont pas pris en charge.
 
 ## <a name="next-steps"></a>Étapes suivantes

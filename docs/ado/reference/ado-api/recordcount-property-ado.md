@@ -1,17 +1,15 @@
 ---
 title: RecordCount, propriété (ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::RecordCount
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - RecordCount property [ADO]
 ms.assetid: 834f0121-394a-44d4-ad7d-999b43a6fe63
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a6ee9d1ea1c4e996c9608bc1ce76ff3f1baa7c62
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 67416b2282f913e04867b9d4ac23ee0ea0f0c41a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recordcount-property-ado"></a>RecordCount, propriété (ADO)
 

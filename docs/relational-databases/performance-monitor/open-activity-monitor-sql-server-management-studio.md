@@ -1,33 +1,31 @@
 ---
-title: "Ouvrir le Moniteur d’activité (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Ouvrir le Moniteur d’activité (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/05/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Activity Monitor [SQL Server], setting the refresh interval
 - refresh interval for Activity Monitor
 - Activity Monitor [SQL Server], opening
 - opening Activity Monitor
 ms.assetid: 0a6eeb16-f02b-479d-9a60-543e40ebf46b
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a126a0839ed1b43307f017196507da6dba85d160
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: b3aef6ed6773c1d096c9618518fb7d8d330f0912
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-activity-monitor-sql-server-management-studio"></a>Ouvrir le Moniteur d'activité (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

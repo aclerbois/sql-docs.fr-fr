@@ -3,14 +3,12 @@ title: Quand utiliser le pilote OLE DB pour SQL Server | Documents Microsoft
 description: Quand utiliser un pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -19,16 +17,17 @@ helpviewer_keywords:
 - data access [OLE DB Driver for SQL Server], about OLE DB Driver for SQL Server
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: cf64d680b0d45bf7b46ba5d07df8a291723bb0cb
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: b3fa8f071055f33bb256d3b28ed4aaa807f093a8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="when-to-use-ole-db-driver-for-sql-server"></a>Quand utiliser le pilote OLE DB pour SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../includes/driver_oledb_download.md)]
 
   Pilote OLE DB pour SQL Server est une technologie que vous pouvez utiliser pour accéder aux données dans un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] base de données.  Pour en savoir plus sur les technologies d’accès aux données différents, consultez [carte routière de données Access Technologies](http://go.microsoft.com/fwlink/?LinkID=179186)  
   
@@ -45,7 +44,7 @@ ms.lasthandoff: 03/30/2018
  Pour plus d’informations sur les différences entre le pilote OLE DB pour SQL Server et MDAC, consultez [mise à jour d’une Application de pilote OLE DB pour SQL Server à partir de MDAC](../oledb/applications/updating-an-application-to-oledb-driver-for-sql-server-from-mdac.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Programmation de SQL Server OLE DB pilote](../oledb/oledb-driver-for-sql-server-programming.md)     
+ [Pilote d’OLE DB pour SQL Server](../oledb/oledb-driver-for-sql-server.md)     
  [Rubriques de procédures OLE DB](../oledb/ole-db-how-to/ole-db-how-to-topics.md)  
   
   

@@ -1,30 +1,27 @@
 ---
-title: "Test d’Applications interopérables | Documents Microsoft"
-ms.custom: 
+title: Test d’Applications interopérables | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interoperability [ODBC], testing interoperable applications
 - testing interoperable applications [ODBC]
 ms.assetid: 489083cb-8430-40be-9ef2-d75b9a2eea88
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1acbc994449e61b879ca2223f3ed4eb394943b44
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c3025c0ae41e6c677917975efa2742ef4154ce45
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="testing-interoperable-applications"></a>Test d’Applications interopérables
 Test d’applications interopérables est au mieux une longue activité et au pire impossible, car les nouveaux pilotes s’affichent en permanence sur le marché. Toutefois, un niveau raisonnable de test est possible. Applications avec l’interopérabilité limitée ou faible doivent uniquement être testées par rapport à ces pilotes, qu'elles sont garanties pour prendre en charge. Toutefois, ils doivent être testés entièrement contre ces pilotes.  

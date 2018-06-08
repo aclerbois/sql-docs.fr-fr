@@ -1,28 +1,27 @@
 ---
-title: "Méthodes de modèles - Service web des serveurs de rapports | Microsoft Docs"
-ms.custom: 
+title: Méthodes de modèles - Service web des serveurs de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 ms.assetid: d3e658c9-bb22-480b-a3d5-bcde8f537ab2
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 202fd72da4f455e866991172b3f9dbd07f55a25d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: bd5f023ba4dd5424e9e5ca270cc24161537d0465
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="model-methods---report-server-web-service"></a>Méthodes de modèles - Service web des serveurs de rapports
   Vous pouvez utiliser ces méthodes pour gérer des modèles.  

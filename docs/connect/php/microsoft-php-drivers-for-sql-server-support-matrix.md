@@ -2,26 +2,23 @@
 title: Matrice de Support Microsoft Drivers for PHP for SQL Server | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
-caps.latest.revision: ''
+ms.topic: conceptual
+caps.latest.revision: 1
 author: David-Engel
 ms.author: v-daveng
 manager: ''
-ms.workload: On Demand
-ms.openlocfilehash: 23159425e45fdc8974e0047859072654c5c77959
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: b8f1fad66e906b71ff5ea247ba4615e7be774f63
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-php-drivers-for-sql-server-support-matrix"></a>Pilotes Microsoft PHP pour la matrice de prise en charge SQL Server
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -73,8 +70,8 @@ ms.lasthandoff: 03/28/2018
 |7.2|7.2.1+ sur Windows<br/>7.2.0+ sur d’autres plateformes| | | | | | |
 |7.1|7.1.0+ |7.1.0+ |       |        |        |        |        |
 |7.0|7.0.0+ |7.0.0+ |7.0.0+ |        |        |        |        |
-|5.6|       |       |       |5.6.4+  |        |        |        |
-|5.5|       |       |       |5.5.16+ |5.5.16+ |        |        |
+|5.6|       |       |       |5.6.4 +  |        |        |        |
+|5.5|       |       |       |5.5.16 + |5.5.16 + |        |        |
 |5.4|       |       |       |5.4.32  |5.4.32  |5.4.32  |        |
 |5.3|       |       |       |        |        |5.3.0   |5.3.0   |
 |5.2|       |       |       |        |        |        |5.2.4<br />5.2.13|

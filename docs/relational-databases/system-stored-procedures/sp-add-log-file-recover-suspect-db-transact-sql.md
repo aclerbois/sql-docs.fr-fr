@@ -1,16 +1,14 @@
 ---
-title: sp_add_log_file_recover_suspect_db (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_add_log_file_recover_suspect_db (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_log_file_recover_suspect_db_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_log_file_recover_suspect_db
 ms.assetid: b41ca3a5-7222-4c22-a012-e66a577a82f6
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1623d485132881e7d4df61926dc425257e3113b3
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 7da1686b6b03b75e6ba40cd7d4f9686d8af17980
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddlogfilerecoversuspectdb-transact-sql"></a>sp_add_log_file_recover_suspect_db (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,16 +51,16 @@ sp_add_log_file_recover_suspect_db [ @dbName= ] 'database' ,
  [  **@dbName =** ] **'***base de données***'**  
  Nom de la base de données. *base de données* est **sysname**, sans valeur par défaut.  
   
- [ **@name=** ] **'***logical_file_name***'**  
+ [  **@name=** ] **'***nom_fichier_logique***'**  
  Est le nom utilisé dans le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour référencer le fichier. Il doit être unique dans le serveur. *nom_fichier_logique* est **nvarchar (260)**, sans valeur par défaut.  
   
- [ **@filename =** ] **'***os_file_name***'**  
+ [  **@filename =** ] **'***nom_fichier_se***'**  
  Chemin et nom de fichier utilisé par le système d'exploitation pour le fichier. Le fichier doit résider dans le serveur hébergeant [!INCLUDE[ssDE](../../includes/ssde-md.md)]. *nom_fichier_se* est **nvarchar (260)**, sans valeur par défaut.  
   
  [  **@size=** ] **' *** taille* **'**  
  Taille initiale du fichier. *taille* est **nvarchar (20)**, avec NULL comme valeur par défaut. Indiquez un nombre entier sans aucune décimale. Les indications Mo et Ko peuvent être utilisées pour indiquer qu'il s'agit de mégaoctets ou de kilo-octets. La valeur par défaut est Mo. La valeur minimale est 512 Ko. Si *taille* n’est pas spécifié, la valeur par défaut est 1 Mo.  
   
- [ **@maxsize=** ] **'***max_size* **'**  
+ [  **@maxsize=** ] **' *** max_size* **'**  
  Est la taille maximale que peut atteindre le fichier. *max_size* est **nvarchar (20)**, avec NULL comme valeur par défaut. Indiquez un nombre entier sans aucune décimale. Les indications Mo et Ko peuvent être utilisées pour indiquer qu'il s'agit de mégaoctets ou de kilo-octets. La valeur par défaut est Mo.  
   
  Si *max_size* n’est pas spécifié, la taille du fichier augmente jusqu'à ce que le disque est plein. Le journal des applications [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows avertit l'administrateur lorsqu'un disque est sur le point d'être saturé.  

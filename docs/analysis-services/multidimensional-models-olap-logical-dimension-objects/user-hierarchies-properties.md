@@ -1,37 +1,23 @@
 ---
-title: "Propriétés de la hiérarchie utilisateur | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- properties [Analysis Services], multilevel hierarchy
-- hierarchies [Analysis Services], multilevel
-- multilevel hierarchies [Analysis Services]
-ms.assetid: 344af8f8-12f3-48c0-b934-4503779d37ff
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés de la hiérarchie utilisateur | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 156d25ca9a17f2c79de133a32a74c8765b77a77d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8c29e85d684095c57dc3f02caebc9afdd156c0ea
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="user-hierarchies---properties"></a>Hiérarchies des utilisateurs - propriétés
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le tableau suivant décrit les propriétés d'une hiérarchie définie par l'utilisateur.  
+  Le tableau suivant décrit les propriétés d'une hiérarchie définie par l'utilisateur.  
   
 |Propriété| Description|  
 |--------------|-----------------|  

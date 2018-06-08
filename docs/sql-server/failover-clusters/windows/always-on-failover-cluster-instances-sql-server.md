@@ -1,16 +1,13 @@
 ---
 title: Instances de cluster de basculement Always On (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/18/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - clustering [SQL Server]
 - high availability [SQL Server], failover clustering
@@ -22,16 +19,15 @@ helpviewer_keywords:
 - failover clustering [SQL Server]
 - AlwaysOn [SQL Server], see failover clustering [SQL Server]
 ms.assetid: 86a15b33-4d03-4549-8ea2-b45e4f1baad7
-caps.latest.revision: "80"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: bfe05c5095d83cdf0963a6e3a7c04687462e4092
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: b9c4524affc64c53444883c5bc25a3accebd83b0
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772005"
 ---
 # <a name="always-on-failover-cluster-instances-sql-server"></a>Instances de cluster de basculement Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -91,7 +87,7 @@ ms.lasthandoff: 12/05/2017
   
 -   Nom du réseau  
   
--   Adresse IP  
+-   Adresse IP  
   
 -   Disques partagés  
   

@@ -1,37 +1,35 @@
 ---
-title: "Reconstruire des bases de données système | Microsoft Docs"
-ms.custom: 
+title: Reconstruire des bases de données système | Microsoft Docs
+ms.custom: ''
 ms.date: 06/06/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - master database [SQL Server], rebuilding
 - REBUILDDATABASE parameter
 - rebuilding databases, master
 - system databases [SQL Server], rebuilding
 ms.assetid: af457ecd-523e-4809-9652-bdf2e81bd876
-caps.latest.revision: 
+caps.latest.revision: 39
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 3a1d3cd6a2cb8183acf9d4f787e9d434dcc5577d
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.openlocfilehash: 5bc4b141721417b3097dc9142e2f47404021f159
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rebuild-system-databases"></a>Reconstruire des bases de données système
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Les bases de données système doivent être reconstruites pour résoudre des problèmes d’altération dans les bases de données système [master](../../relational-databases/databases/master-database.md), [model](../../relational-databases/databases/model-database.md), [msdb](../../relational-databases/databases/msdb-database.md)ou [resource](../../relational-databases/databases/resource-database.md) ou pour modifier le classement au niveau du serveur par défaut. Cette rubrique fournit des instructions détaillées sur la reconstruction des bases de données système dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  Les bases de données système doivent être reconstruites pour résoudre des problèmes d’altération dans les bases de données système [master](../../relational-databases/databases/master-database.md), [model](../../relational-databases/databases/model-database.md), [msdb](../../relational-databases/databases/msdb-database.md)ou [resource](../../relational-databases/databases/resource-database.md) ou pour modifier le classement au niveau du serveur par défaut. Cette rubrique fournit des instructions détaillées sur la reconstruction des bases de données système dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
  **Dans cette rubrique**  
   
@@ -113,8 +111,8 @@ Les bases de données système doivent être reconstruites pour résoudre des pr
     |/ACTION=REBUILDDATABASE|Spécifie que le programme d'installation doit recréer les bases de données système.|  
     |/INSTANCENAME=*Nom_Instance*|Représente le nom de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour l'instance par défaut, entrez MSSQLSERVER.|  
     |/SQLSYSADMINACCOUNTS=*comptes*|Spécifie les comptes de groupes Windows ou les comptes individuels à ajouter au rôle serveur fixe **sysadmin** . Lorsque vous spécifiez plusieurs comptes, utilisez l'espace comme séparateur. Par exemple, entrez **BUILTIN\Administrateurs MonDomaine\MonUtilisateur**. Lorsque vous spécifiez un compte qui contient un espace vide dans son nom, placez le compte entre guillemets doubles. Par exemple, entrez **NT AUTHORITY\SYSTEM**.|  
-    |[ /SAPWD=*MotDePasseFort* ]|Spécifie le mot de passe du compte [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **sa** . Ce paramètre est requis si l’instance utilise le mode Authentification mixte (authentification[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows).<br /><br /> **\*\* Remarque sur la sécurité \*\***Le compte **sa** est un compte [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bien connu qui est souvent la cible d’utilisateurs malveillants. Il est par conséquent essentiel d'utiliser un mot de passe fort pour la connexion **sa** .<br /><br /> Ne spécifiez pas ce paramètre pour le mode Authentification Windows.|  
-    |[ /SQLCOLLATION=*NomClassement* ]|Spécifie un nouveau classement au niveau du serveur. Ce paramètre est facultatif. S'il n'est pas spécifié, c'est le classement actuel du serveur qui est utilisé.<br /><br /> **\*\* Important \*\***La modification du classement de niveau serveur ne modifie pas le classement des bases de données utilisateur existantes. En revanche, les bases de données utilisateur qui seront créées utiliseront le nouveau classement par défaut.<br /><br /> Pour plus d’informations, consultez [Définir ou modifier le classement du serveur](../../relational-databases/collations/set-or-change-the-server-collation.md).|  
+    |[ /SAPWD=*MotDePasseFort* ]|Spécifie le mot de passe du compte [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **sa** . Ce paramètre est requis si l’instance utilise le mode Authentification mixte (authentification[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows).<br /><br /> **\*\* Remarque sur la sécurité \*\*** Le compte **sa** est un compte [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bien connu qui est souvent la cible d’utilisateurs malveillants. Il est par conséquent essentiel d'utiliser un mot de passe fort pour la connexion **sa** .<br /><br /> Ne spécifiez pas ce paramètre pour le mode Authentification Windows.|  
+    |[ /SQLCOLLATION=*NomClassement* ]|Spécifie un nouveau classement au niveau du serveur. Ce paramètre est facultatif. S'il n'est pas spécifié, c'est le classement actuel du serveur qui est utilisé.<br /><br /> **\*\* Important \*\*** La modification du classement de niveau serveur ne modifie pas le classement des bases de données utilisateur existantes. En revanche, les bases de données utilisateur qui seront créées utiliseront le nouveau classement par défaut.<br /><br /> Pour plus d’informations, consultez [Définir ou modifier le classement du serveur](../../relational-databases/collations/set-or-change-the-server-collation.md).|  
     |[ /SQLTEMPDBFILECOUNT=NumberOfFiles ]|Spécifie le nombre de fichiers de données tempdb Cette valeur peut être augmentée jusqu’à 8 ou jusqu’au nombre de cœurs, la valeur la plus élevée étant applicable.<br /><br /> Valeur par défaut : 8 ou le nombre de cœurs (la plus petite valeur des deux).|  
     |[ /SQLTEMPDBFILESIZE=FileSizeInMB ]|Spécifie la taille initiale en Mo de chaque fichier de données tempdb. Le programme d’installation autorise la taille maximale de 1 024 Mo.<br /><br /> Valeur par défaut : 8|  
     |[ /SQLTEMPDBFILEGROWTH=FileSizeInMB ]|Spécifie l’incrément de croissance de chaque fichier de données tempdb en Mo. La valeur 0 indique que la croissance automatique est désactivée et qu'aucun espace supplémentaire n'est autorisé. Le programme d’installation autorise la taille maximale de 1 024 Mo.<br /><br /> Valeur par défaut : 64|  

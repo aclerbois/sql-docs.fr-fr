@@ -1,38 +1,39 @@
 ---
-title: "Vue d’ensemble de Master Data Services (MDS) | Microsoft Docs"
-ms.custom: 
+title: Vue d’ensemble de Master Data Services (MDS) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 keywords:
 - what is master data
 helpviewer_keywords:
 - Master Data Services, overview
 - Master Data Services
 ms.assetid: 8a4c28b1-6061-4850-80b6-132438b8c156
-caps.latest.revision: 
+caps.latest.revision: 28
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a60fddbc00fa808590a06bc3263dfe6bc966f18b
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: a329416c51580e32fef969a48c96dfa6a68b1cb7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="master-data-services-overview-mds"></a>Vue d’ensemble de Master Data Services (MDS)
-  Cette rubrique décrit les fonctionnalités d’organisation et de gestion des données clés de [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]. 
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
+Cette rubrique décrit les fonctionnalités d’organisation et de gestion des données clés de [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)]. 
   
- [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] vous permet de gérer un ensemble principal des données de votre organisation. Vous pouvez organiser les données en modèles, créer des règles de mise à jour des données et contrôler qui met les données à jour. Avec Excel, vous pouvez partager le jeu de données principal avec d’autres personnes de votre organisation. 
+ [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] vous permet de gérer un ensemble principal de données de votre organisation. Vous pouvez organiser les données en modèles, créer des règles de mise à jour des données et contrôler qui met les données à jour. Avec Excel, vous pouvez partager le jeu de données principal avec d’autres personnes de votre organisation. 
   
  >  Pour obtenir une description de l’architecture [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] , consultez l’article [Master Data Services -- The Basics](https://www.simple-talk.com/sql/database-delivery/master-data-services-basics) sur simple-talk.com. Pour plus d’informations sur les nouvelles fonctionnalités de [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)], consultez [Nouveautés de Master Data Services &#40;MDS&#41;](../master-data-services/what-s-new-in-master-data-services-mds.md).  
    **Pour obtenir des instructions sur l’installation de [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], la configuration de la base de données et du site web, et le déploiement des exemples de modèles, consultez** [Installation et configuration de Master Data Services](../master-data-services/master-data-services-installation-and-configuration.md).  

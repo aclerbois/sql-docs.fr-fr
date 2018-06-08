@@ -1,35 +1,30 @@
 ---
-title: "Afficher les journaux de jeu d’éléments de collecte (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Afficher les journaux de jeu d’éléments de collecte (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logs [SQL Server], viewing
 - collection sets [SQL Server], viewing logs
 ms.assetid: 428908b8-fb6a-4d0c-8339-ee133e23aad2
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd98e2f24464fb9c5fc38782803768530e7f94ec
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: fd01af7e1ee1224a3301fe1df3a4d077105463a4
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="view-collection-set-logs-sql-server-management-studio"></a>Afficher les journaux de jeu d'éléments de collecte (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Vous pouvez afficher tous les journaux des jeux d'éléments de collecte, ensemble ou individuellement, à partir de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
+  Vous pouvez afficher tous les journaux des jeux d'éléments de collecte, ensemble ou individuellement, à partir de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
   
 ### <a name="to-view-collection-set-logs"></a>Pour afficher les journaux des jeux de collections  
   

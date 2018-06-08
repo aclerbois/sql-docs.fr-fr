@@ -1,27 +1,23 @@
 ---
 title: Termes du contrat de licence SQL Server PowerShell | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: powershell
-ms.service: 
-ms.component: powershell
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: powershell
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: scripting
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8c9bce29-1971-47c9-bdaa-375088301313
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3880c26dc3f460254e8563c73a079b8e0cff7c43
-ms.sourcegitcommit: 779f3398e4e3f4c626d81ae8cedad153bee69540
+ms.openlocfilehash: 6cc84abfd684857b74d1e4d8226ff161ade79e7d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sql-server-powershell-license-terms"></a>Termes du contrat de licence SQL Server PowerShell
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

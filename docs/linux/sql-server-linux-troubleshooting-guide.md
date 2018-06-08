@@ -4,22 +4,19 @@ description: Fournit des conseils de dépannage pour l’utilisation de SQL Serv
 author: annashres
 ms.author: anshrest
 manager: craigg
-ms.date: 02/22/2018
+ms.date: 04/30/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
+ms.prod: sql
 ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 99636ee8-2ba6-4316-88e0-121988eebcf9S
-ms.workload: On Demand
-ms.openlocfilehash: b3dc37601859ee4125f9f7885592e3a0653e8d0c
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+ms.openlocfilehash: 966e2e389bbefeafcb381ddaecff7b7303ba489d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="troubleshoot-sql-server-on-linux"></a>Résoudre les problèmes de SQL Server sur Linux
 
@@ -161,6 +158,41 @@ Si vous avez démarré par inadvertance SQL Server avec un autre utilisateur, vo
    chown -R mssql:mssql /var/opt/mssql/
    ```
 
+## <a name="rebuild-system-databases"></a>Reconstruire des bases de données système
+En dernier recours, vous pouvez choisir de recréer le fichier principal et bases de données de modèle dans les versions par défaut.
+
+> [!WARNING]
+> Ces étapes seront **supprimer toutes les données du système SQL Server** que vous avez configuré ! Cela inclut des informations sur les bases de données (mais pas les bases de données utilisateur eux-mêmes). Autres informations stockées dans les bases de données système, y compris les éléments suivants seront également supprimés : informations de clé principale, les certificats chargés dans master, le mot de passe de connexion SA, les informations liées à la tâche à partir de msdb, les informations de messagerie de base de données msdb, et que les options de sp_configure. Utiliser uniquement si vous comprenez les implications !
+
+1. Arrêt de SQL Server.
+
+   ```bash
+   sudo systemctl stop mssql-server
+   ```
+
+1. Exécutez **sqlservr** avec la **le programme d’installation-force** paramètre. 
+
+   ```bash
+   sudo -u mssql /opt/mssql/bin/sqlservr --force-setup
+   ```
+   
+   > [!WARNING]
+   > Consultez l’avertissement précédent ! En outre, vous devez exécuter en tant que le **mssql** utilisateur comme indiqué ici.
+
+1. Une fois que vous voyez le message « Récupération est terminée », appuyez sur CTRL + C. SQL Server s’arrête
+
+1. Reconfigurer le mot de passe SA.
+
+   ```bash
+   sudo /opt/mssql/bin/mssql-conf set-sa-password
+   ```
+   
+1. Démarrage de SQL Server et reconfigurer le serveur. Cela inclut la restauration ou attachement de nouveau toutes les bases de données utilisateur.
+
+   ```bash
+   sudo systemctl start mssql-server
+   ```
+
 ## <a name="common-issues"></a>Problèmes courants
 
 1. Impossible de se connecter à votre instance de SQL Server à distance.
@@ -187,7 +219,7 @@ Si vous avez démarré par inadvertance SQL Server avec un autre utilisateur, vo
 
 4. Utiliser des caractères spéciaux dans le mot de passe.
 
-   Si vous utilisez certains caractères dans le mot de passe de connexion à SQL Server, vous devrez peut-être utiliser un caractère d’échappement lors de l'utilisation de ces caractères sur le terminal Linux. Vous devez utiliser un caractère d’échappement pour $ à l’aide de la barre oblique inverse à chaque fois que vous l'utilisez dans une commande de terminal/un script de shell
+   Si vous utilisez des caractères dans le mot de passe du compte de connexion SQL Server, vous devrez peut-être caractère d’échappement avec une barre oblique inverse lorsque vous les utilisez dans une commande de Linux dans le terminal. Par exemple, vous devez isoler le symbole dollar ($) chaque fois que vous l’utilisez dans un script de shell de commande/Terminal Server :
 
    Ne fonctionne pas :
 

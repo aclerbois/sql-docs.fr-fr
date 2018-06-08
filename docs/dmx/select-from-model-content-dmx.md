@@ -1,35 +1,34 @@
 ---
-title: "SELECT FROM &lt;modèle&gt;. CONTENU (DMX) | Documents Microsoft"
-ms.custom: 
+title: SELECT FROM &lt;modèle&gt;. CONTENU (DMX) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SELECT
 - FROM
 - Content
-dev_langs: DMX
+dev_langs:
+- DMX
 helpviewer_keywords:
 - schema rowsets [Analysis Services], data mining
 - SELECT FROM <model>.CONTENT statement
 ms.assetid: a270b33f-77be-41fa-9340-2f6cb0dd75e5
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 24b5a1884994050874cbfd24afbae84b773620d1
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c68fe4831c0fcbae281eae4ca3ed823d737267cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-from-ltmodelgtcontent-dmx"></a>SELECT FROM &lt;modèle&gt;. CONTENU (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -47,7 +46,7 @@ SELECT [FLATTENED] [TOP <n>] <expression list> FROM <model>.CONTENT
   
 ## <a name="arguments"></a>Arguments  
  *n*  
- Facultatif. Entier qui spécifie le nombre de lignes à retourner.  
+ Ce paramètre est facultatif. Entier qui spécifie le nombre de lignes à retourner.  
   
  *liste d’expressions*  
  Liste de colonnes séparées par des virgules, dérivées de l'ensemble de lignes du schéma Content.  
@@ -55,21 +54,21 @@ SELECT [FLATTENED] [TOP <n>] <expression list> FROM <model>.CONTENT
  *model*  
  Identificateur du modèle  
   
- *expression de condition*  
- Facultatif. Condition pour restreindre les valeurs retournées de la liste des colonnes.  
+ *Expression de condition*  
+ Ce paramètre est facultatif. Condition pour restreindre les valeurs retournées de la liste des colonnes.  
   
  *expression*  
- Facultatif. Expression qui retourne une valeur scalaire.  
+ Ce paramètre est facultatif. Expression qui retourne une valeur scalaire.  
   
-## <a name="remarks"></a>Notes   
- The **SELECT FROM** *\<model>***. CONTENU** instruction retourne le contenu qui est spécifique à chaque algorithme. Imaginons par exemple que vous souhaitez utiliser les descriptions de toutes les règles d'un modèle de règles d'association dans une application personnalisée. Vous pouvez utiliser un **SELECT FROM \<modèle >. CONTENU** instruction pour retourner des valeurs dans la colonne NODE_RULE du modèle.  
+## <a name="remarks"></a>Notes  
+ Le **SELECT FROM**  *\<modèle > ***. CONTENU** instruction retourne le contenu qui est spécifique à chaque algorithme. Imaginons par exemple que vous souhaitez utiliser les descriptions de toutes les règles d'un modèle de règles d'association dans une application personnalisée. Vous pouvez utiliser un **SELECT FROM \<modèle >. CONTENU** instruction pour retourner des valeurs dans la colonne NODE_RULE du modèle.  
   
  Le tableau suivant répertorie les colonnes incluses dans le contenu du modèle d'exploration de données.  
   
 > [!NOTE]  
->  Les algorithmes peuvent interpréter les colonnes différemment afin de représenter le contenu de manière appropriée. Pour obtenir une description du modèle d’exploration de données contenu de chaque algorithme et des conseils sur la façon d’interpréter et d’interroger le contenu de chaque type de modèle du modèle d’exploration de données, consultez [contenu du modèle d’exploration de données &#40; Analysis Services - Exploration de données &#41; ](../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
+>  Les algorithmes peuvent interpréter les colonnes différemment afin de représenter le contenu de manière appropriée. Pour obtenir une description du modèle d’exploration de données contenu de chaque algorithme et des conseils sur la façon d’interpréter et d’interroger le contenu de chaque type de modèle du modèle d’exploration de données, consultez [contenu du modèle d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
   
-|Colonne de l'ensemble de lignes CONTENT|Description|  
+|Colonne de l'ensemble de lignes CONTENT| Description|  
 |---------------------------|-----------------|  
 |MODEL_CATALOG|Nom de catalogue. Valeur NULL si le fournisseur ne prend pas en charge les catalogues.|  
 |MODEL_SCHEMA|Un nom de schéma non qualifié. Valeur NULL si le fournisseur ne prend pas en charge les schémas.|  
@@ -136,9 +135,9 @@ WHERE NODE_TYPE = 26
   
 |MODEL_NAME|NODE_DISTRIBUTION.ATTRIBUTE_NAME|NODE_DISTRIBUTION.ATTRIBUTE_VALUE|NODE_DISTRIBUTION.SUPPORT|NODE_DISTRIBUTION.PROBABILITY|NODE_DISTRIBUTION.VARIANCE|NODE_DISTRIBUTION.VALUETYPE|  
 |-----------------|----------------------------------------|-----------------------------------------|--------------------------------|------------------------------------|---------------------------------|----------------------------------|  
-|TM_NaiveBayes|Bike Buyer|Manquant|0|0|0| 1|  
+|TM_NaiveBayes|Bike Buyer|Manquant|0|0|0|1|  
 |TM_NaiveBayes|Bike Buyer|0|6556|0.506685215240745|0||  
-|TM_NaiveBayes|Bike Buyer| 1|6383|0.493314784759255|0||  
+|TM_NaiveBayes|Bike Buyer|1|6383|0.493314784759255|0||  
   
  L'exemple suivant montre comment retourner uniquement certaines des colonnes de la table imbriquée en utilisant une instruction sub-select. Vous pouvez simplifier l'affichage en utilisant un alias pour le nom de la table imbriquée, tel qu'indiqué.  
   
@@ -156,11 +155,11 @@ WHERE NODE_TYPE = 26
 |-----------------|-----------------------|------------------------|---------------|  
 |TM_NaiveBayes|Bike Buyer|Manquant|0|  
 |TM_NaiveBayes|Bike Buyer|0|6556|  
-|TM_NaiveBayes|Bike Buyer| 1|6383|  
+|TM_NaiveBayes|Bike Buyer|1|6383|  
   
 ## <a name="see-also"></a>Voir aussi  
- [SÉLECTIONNEZ &#40; DMX &#41;](../dmx/select-dmx.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Guide de référence des instructions DMX &#40;Data Mining Extensions&#41;](../dmx/data-mining-extensions-dmx-statements.md)  
+ [SÉLECTIONNEZ &AMP;#40;DMX&AMP;#41;](../dmx/select-dmx.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)  
   
   

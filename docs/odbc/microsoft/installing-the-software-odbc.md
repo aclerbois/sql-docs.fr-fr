@@ -1,30 +1,27 @@
 ---
-title: "L’installation du logiciel (ODBC) | Documents Microsoft"
-ms.custom: 
+title: L’installation du logiciel (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC driver for Oracle [ODBC], installing
 - installing ODBC driver for Oracle [ODBC]
 ms.assetid: dfac8ade-eebe-4ebe-a199-feb740ed5bae
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 50cf78c338a0da90e7a253fe58addb5a77199ce1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 831716bbbf9c006a651b6ef82a3241d3cece381f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="installing-the-software-odbc"></a>L’installation du logiciel (ODBC)
 > [!IMPORTANT]  

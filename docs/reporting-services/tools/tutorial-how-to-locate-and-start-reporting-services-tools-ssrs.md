@@ -1,16 +1,15 @@
 ---
-title: "Didacticiel : comment localiser et démarrer les outils Reporting Services (SSRS) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : comment localiser et démarrer les outils Reporting Services (SSRS) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Reporting Services, tutorials
 - Reporting Services, tools
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - tutorials [Reporting Services]
 - Report Builder
 ms.assetid: 51ad69d8-fe92-4662-a7cd-d235692f0c03
-caps.latest.revision: "63"
+caps.latest.revision: 63
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 5fb39a5bfeab9dc2ad3b78c94238c66e174d3395
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 13258b6c570aa0e40c5cca7cbde7b583abd5f297
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-how-to-locate-and-start-reporting-services-tools-ssrs"></a>Didacticiel : comment localiser et démarrer les outils Reporting Services (SSRS)
 

@@ -1,28 +1,26 @@
 ---
 title: Connexion avec bcp | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: bcp
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- bcp
 ms.assetid: 3eca5717-e50f-40db-be16-a1cebbdfee70
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: f7e9db6a1ea636975a3f5719d9a1b3e9d5721eb6
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 707db709188db15bc3627d65a2dba5a2bc516308
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-with-bcp"></a>Connexion avec bcp
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -38,7 +36,7 @@ Le [bcp](http://go.microsoft.com/fwlink/?LinkID=190626) utilitaire est disponibl
 > [!NOTE]  
 > Une barre oblique inverse '\\' sur un argument de ligne de commande doit être entre guillemets ou séquence d’échappement. Par exemple, pour spécifier un saut de ligne comme délimiteur de ligne personnalisée, vous devez utiliser un des mécanismes suivants :  
 >   
-> -   -r\\\n  
+> -   r -\\\n  
 > -   -r"\n"  
 > -   -r'\n'  
   
@@ -51,7 +49,7 @@ bcp AdventureWorks2008R2.Person.Address out test.dat -Usa -Pxxxx -Sxxx.xxx.xxx.x
 ## <a name="available-options"></a>Options disponibles
 Dans la version actuelle, la syntaxe et les options suivantes sont disponibles :  
 
-[*database***.**]*schema***.***table* **in** *data_file* | **out** *data_file*
+[*base de données ***.**]* schéma ***.*** table * **dans** *data_file* | **hors** *data_file*
 
 - -a *packet_size*  
 Spécifie le nombre d’octets, par paquet réseau, envoyés depuis/vers le serveur.  
@@ -104,7 +102,7 @@ Exécute l'instruction SET QUOTED_IDENTIFIERS ON dans la connexion entre l'utili
 Spécifie l’indicateur de fin de ligne.  
   
 - -r  
-Spécifie que les données de type devise, date et heure sont copiées en bloc dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] en utilisant le format régional défini par les paramètres régionaux de l'ordinateur client.  
+Spécifie que les données de type devise, date et heure sont copiées en bloc dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] en utilisant le format régional défini par les paramètres régionaux de l’ordinateur client.  
   
 - -S *server*  
 Spécifie le nom de la [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] instance auquel se connecter, ou si -D est utilisé, une source de données.  
@@ -147,7 +145,7 @@ Spécifie le nom d’un fichier recevant la sortie redirigée à partir de l’i
 - -V (80 | 90 | 100)  
 Utilise les types de données à partir d’une version antérieure de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].  
   
-- -x  
+- -X  
 Utilisé avec les options format et -f formal_file, génère un fichier au format XML à la place du fichier au format non-XML par défaut.  
   
 ## <a name="see-also"></a>Voir aussi

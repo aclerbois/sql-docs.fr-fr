@@ -1,16 +1,15 @@
 ---
 title: sp_helppeerresponses (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helppeerresponses
 ms.assetid: e55789d1-43fb-4a37-9e5e-60ccef122a5d
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44abb0462f6360ea1823383f318c41998240545e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 3f8b5a1c02066ee6f39513eb6e36fca4a6bce714
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelppeerresponses-transact-sql"></a>sp_helppeerresponses (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +44,7 @@ sp_helppeerresponses [ @request_id = ] request_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@request_id** =] *request_id*  
+ [ **@request_id**=] *request_id*  
  ID d'une demande d'état spécifique. *request_id* est **int**, sans valeur par défaut.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
@@ -66,11 +64,11 @@ sp_helppeerresponses [ @request_id = ] request_id
   
  **sp_helppeerresponses** procédure est utilisée lors de la restauration d’une base de données publiée dans une topologie d’égal à égal.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_helppeerresponses**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_deletepeerrequesthistory &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-deletepeerrequesthistory-transact-sql.md)   
- [sp_helppeerrequests &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helppeerrequests-transact-sql.md)  
+ [sp_deletepeerrequesthistory &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-deletepeerrequesthistory-transact-sql.md)   
+ [sp_helppeerrequests &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helppeerrequests-transact-sql.md)  
   
   

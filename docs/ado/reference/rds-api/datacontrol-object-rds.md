@@ -1,17 +1,15 @@
 ---
 title: DataControl, objet (RDS) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - DataControl
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - DataControl object [ADO]
 ms.assetid: d85ea4fc-451c-436e-97b8-58f92b149dd0
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d7b3e0927f902f52138cdb37091df14652845fa4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f8784dcbaa65a755a6469edaceb58288ab1e9c25
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="datacontrol-object-rds"></a>DataControl, objet (RDS)
 Lie une requête de données [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) à un ou plusieurs contrôles (par exemple, une zone de texte, contrôle de grille ou zone de liste déroulante) pour afficher la **Recordset** données sur une page Web.  
@@ -58,7 +55,7 @@ Lie une requête de données [Recordset](../../../ado/reference/ado-api/recordse
  Toutes les propriétés de la **RDS. DataControl** sont facultatifs, car des objets métier personnalisés peuvent remplacer leurs fonctionnalités.  
   
 > [!NOTE]
->  Si vous interrogez pour plusieurs résultats, seul le premier [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) est retourné. Si plusieurs jeux de résultats est nécessaires, affectez chacun à sa propre **DataControl**. Un exemple d’une requête pour plusieurs résultats peut être les suivantes :`"Select * from Authors, Select * from Topics"`  
+>  Si vous interrogez pour plusieurs résultats, seul le premier [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) est retourné. Si plusieurs jeux de résultats est nécessaires, affectez chacun à sa propre **DataControl**. Un exemple d’une requête pour plusieurs résultats peut être les suivantes : `"Select * from Authors, Select * from Topics"`  
   
  Ajout de « DFMode = 20 ; » à votre chaîne de connexion lorsque vous utilisez la **RDS. DataControl** objet peut améliorer les performances de votre serveur lorsque vous mettez à jour des données. Avec ce paramètre, le **RDSServer.DataFactory** objet sur le serveur utilise un mode moins gourmandes en ressources. Toutefois, les fonctionnalités suivantes ne sont pas disponibles dans cette configuration :  
   

@@ -1,16 +1,15 @@
 ---
 title: IHpublishers (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - IHpublishers system table
 ms.assetid: 77007246-f10b-4b87-8edf-7afc3c2096af
-caps.latest.revision: 
+caps.latest.revision: 23
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a53ef3960364ea40ccd1911f26a31270ffd9b09b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7e59cadf84f2e05bf08690d44fb14036369fc502
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ihpublishers-transact-sql"></a>IHpublishers (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -43,17 +41,17 @@ ms.lasthandoff: 11/21/2017
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**publisher_id**|**smallint**|Identifie un serveur de publication non-SQL.|  
-|**fournisseur**|**sysname**|Le nom du fournisseur pour la base de données non SQL Server.|  
+|**Fournisseur**|**sysname**|Le nom du fournisseur pour la base de données non SQL Server.|  
 |**publisher_guid**|**uniqueidentifier**|GUID qui identifie le serveur de publication non SQL Server.|  
 |**flush_request_time**|**datetime**|Indique les date et heure auxquelles a eu lieu la dernière modification des métadonnées d'article ayant amené l'Agent de lecture du journal à mettre à jour son cache de métadonnées.|  
 |**version**|**sysname**|Une chaîne de texte qui caractérise la version de la non de publication non-SQL Server.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Réplication de base de données hétérogène](../../relational-databases/replication/non-sql/heterogeneous-database-replication.md)   
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
- [Vues de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
- [sp_adddistpublisher &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-adddistpublisher-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
+ [sp_adddistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-adddistpublisher-transact-sql.md)   
  [sp_changedistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changedistpublisher-transact-sql.md)   
- [sp_helpdistpublisher &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpdistpublisher-transact-sql.md)  
+ [sp_helpdistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdistpublisher-transact-sql.md)  
   
   

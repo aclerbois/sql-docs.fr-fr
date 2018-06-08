@@ -1,16 +1,14 @@
 ---
 title: sp_change_log_shipping_secondary_database (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_change_log_shipping_secondary_database
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_change_log_shipping_secondary_database
 ms.assetid: 3ebcf2f1-980f-4543-a84b-fbaeea54eeac
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fc7ed57e7f6f64f3fc2527cdaff3766690032489
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 5e4ee6324e92130f3f887fe3a36ecd5469cd9d99
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spchangelogshippingsecondarydatabase-transact-sql"></a>sp_change_log_shipping_secondary_database (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,13 +55,13 @@ sp_change_log_shipping_secondary_database
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@restore_delay =** ] '*restore_delay*'  
+ [  **@restore_delay =** ] '*restore_delay*'  
  Durée, en minutes, de l'attente du serveur secondaire avant de restaurer un fichier de sauvegarde donné. *restore_delay* est **int** et ne peut pas être NULL. La valeur par défaut est 0 :  
   
- [ **@restore_all =** ] '*restore_all*'  
+ [  **@restore_all =** ] '*restore_all*'  
  Si la valeur est définie à 1, le serveur secondaire restaure toutes les sauvegardes du journal des transactions disponibles au moment de la restauration. Dans le cas contraire, le serveur s'arrête une fois qu'un fichier a été restauré. *restore_all* est **bits** et ne peut pas être NULL.  
   
- [ **@restore_mode =** ] '*restore_mode*'  
+ [  **@restore_mode =** ] '*restore_mode*'  
  Mode de restauration pour la base de données secondaire.  
   
  0 = restaurer le journal avec NORECOVERY.  
@@ -73,7 +70,7 @@ sp_change_log_shipping_secondary_database
   
  *restaurer* est **bits** et ne peut pas être NULL.  
   
- [ **@disconnect_users =** ] '*disconnect_users*'  
+ [  **@disconnect_users =** ] '*disconnect_users*'  
  Avec la valeur 1, les utilisateurs sont déconnectés de la base de données secondaire lors de l'exécution d'une opération de restauration. Par défaut = 0. *disconnect_users* est **bits** et ne peut pas être NULL.  
   
  [  **@block_size =** ] '*block_size*'  
@@ -82,19 +79,19 @@ sp_change_log_shipping_secondary_database
  [  **@buffer_count =** ] '*buffer_count*'  
  Nombre total de mémoires tampons utilisées par l'opération de sauvegarde ou de restauration. *buffer_count* est **int** avec la valeur par défaut -1.  
   
- [ **@max_transfer_size =** ] '*max_transfer_size*'  
+ [  **@max_transfer_size =** ] '*max_transfer_size*'  
  Taille, en octets, de la demande d'entrée ou de sortie maximale émise par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l'unité de sauvegarde. *max_transfersize* est **int** et peut être NULL.  
   
- [ **@restore_threshold =** ] '*restore_threshold*'  
+ [  **@restore_threshold =** ] '*restore_threshold*'  
  Nombre de minutes pouvant s'écouler entre les opérations de restauration avant qu'une alerte ne soit générée. *restore_threshold* est **int** et ne peut pas être NULL.  
   
- [ **@threshold_alert =** ] '*threshold_alert*'  
+ [  **@threshold_alert =** ] '*threshold_alert ne*'  
  Alerte générée en cas de dépassement du seuil de restauration. *l’argument threshold_alert* est **int**, avec une valeur par défaut 14420.  
   
  [  **@threshold_alert_enabled =** ] '*threshold_alert_enabled*'  
  Spécifie si une alerte est déclenchée lorsque *restore_threshold*est dépassé. 1 = activées ; 0 = désactivées. *threshold_alert_enabled* est **bits** et ne peut pas être NULL.  
   
- [ **@history_retention_period =** ] '*history_retention_period*'  
+ [  **@history_retention_period =** ] '*history_retention_period*'  
  Période de rétention, en minutes, de l'historique. *history_retention_period* est **int**. Une valeur 1440 sera utilisée si aucun n’est spécifié.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -129,7 +126,7 @@ EXEC master.dbo.sp_change_log_shipping_secondary_database
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À propos de journaux de transaction &#40; SQL Server &#41;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
+ [À propos de journaux de transaction & #40 ; SQL Server & #41 ;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

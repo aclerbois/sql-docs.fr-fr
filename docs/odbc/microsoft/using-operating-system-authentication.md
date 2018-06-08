@@ -1,30 +1,27 @@
 ---
-title: "À l’aide de l’authentification du système d’exploitation | Documents Microsoft"
-ms.custom: 
+title: À l’aide de l’authentification du système d’exploitation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC driver for Oracle [ODBC], authentication
 - authentication [ODBC]
 ms.assetid: 613daef7-3171-42d0-b7e3-3879280f864d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ffcdcf10f0114b9c695031626f707843527050b5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 335e8aca1a54b2f70a34d9e504985c12d08597bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-operating-system-authentication"></a>À l’aide de l’authentification du système d’exploitation
 > [!IMPORTANT]  

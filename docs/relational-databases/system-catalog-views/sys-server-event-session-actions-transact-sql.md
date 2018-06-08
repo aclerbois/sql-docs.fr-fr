@@ -1,16 +1,14 @@
 ---
 title: Sys.server_event_session_actions (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.server_event_session_actions
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sys.server_event_session_actions catalog view
 - xe
 ms.assetid: 1d8c604e-4361-4846-8661-14cfd1c44f63
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9358907eab97ef9a2ff7e82277de3588cc6fdd4e
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 7d5593ee2852542af4bee958846172f30a2b0a07
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysservereventsessionactions-transact-sql"></a>sys.server_event_session_actions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ ms.lasthandoff: 11/27/2017
 |package|**sysname**|Nom du package d'événement qui contient l'événement. Autorise la valeur NULL.|  
 |module|**sysname**|Nom du module qui contient l'événement. Autorise la valeur NULL.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  requièrent l'autorisation VIEW SERVER STATE sur le serveur.  
   
 ## <a name="remarks"></a>Notes  
@@ -55,7 +52,7 @@ ms.lasthandoff: 11/27/2017
   
 ||||  
 |-|-|-|  
-|De|Pour|Relation|  
+|From|Pour|Relation|  
 |sys.server_event_session_actions.event_session_id|sys.sys.server_event_sessions.event_session_id|Plusieurs-à-un|  
 |sys.server_event_session_actions.event_id<br /><br /> sys.server_event_session_actions.event_session_id|sys.server_event_session_events.event_session_id<br /><br /> sys.server_event_session_events.event_id|Plusieurs-à-un|  
   

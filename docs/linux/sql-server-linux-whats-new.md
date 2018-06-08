@@ -1,25 +1,22 @@
 ---
-title: "Nouveautés de SQL Server 2017 sur Linux | Documents Microsoft"
-description: "Cet article souligne les nouveautés de 2017 du serveur SQL sur Linux."
+title: Nouveautés de SQL Server 2017 sur Linux | Documents Microsoft
+description: Cet article souligne les nouveautés de 2017 du serveur SQL sur Linux.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 456b6f31-6b97-4e31-80ab-b40151ec4868
-ms.workload: On Demand
-ms.openlocfilehash: fd7f69a8cb21fa8aaabb518f9b3d1d178606a685
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+ms.openlocfilehash: f0e20a06faed4b2d6cda1b80f5be9d41aa2c14f1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="whats-new-for-sql-server-2017-on-linux"></a>Nouveautés de 2017 du serveur SQL sous Linux
 
@@ -28,7 +25,7 @@ ms.lasthandoff: 02/24/2018
 Cet article décrit les principales fonctionnalités et les services disponibles pour SQL Server 2017 s’exécutant sur Linux.
 
 > [!NOTE]
-> Outre les fonctionnalités mentionnées dans cet article, les mises à jour cumulatives sont publiées à intervalles réguliers après la version GA. Ces mises à jour cumulatives fournissent de nombreuses améliorations et correctifs. Pour plus d’informations sur la dernière version CU, consultez [http://aka.ms/sql2017cu](http://aka.ms/sql2017cu). Pour les téléchargements de packages et les problèmes connus, consultez le [notes de publication](sql-server-linux-release-notes.md).
+> Outre ces fonctionnalités dans cet article, les mises à jour cumulatives sont publiées à intervalles réguliers après la version GA. Ces mises à jour cumulatives fournissent de nombreuses améliorations et correctifs. Pour plus d’informations sur la dernière version CU, consultez [ http://aka.ms/sql2017cu ](http://aka.ms/sql2017cu). Pour les téléchargements de packages et les problèmes connus, consultez le [notes de publication](sql-server-linux-release-notes.md).
 
 ## <a name="sql-server-database-engine"></a>Moteur de base de données SQL Server
 
@@ -44,7 +41,7 @@ Cet article décrit les principales fonctionnalités et les services disponibles
 ## <a name="sql-server-agent"></a>Agent SQL Server
 
 - [L’Agent SQL Server](sql-server-linux-setup-sql-agent.md) prend en charge les tâches suivantes :
-  - [Transact-SQL jobs](sql-server-linux-run-sql-server-agent-job.md)
+  - [Travaux Transact-SQL](sql-server-linux-run-sql-server-agent-job.md)
   - [Messagerie de base de données](sql-server-linux-db-mail-sql-agent.md)
   - [Envoi des journaux de transaction](sql-server-linux-use-log-shipping.md)
 

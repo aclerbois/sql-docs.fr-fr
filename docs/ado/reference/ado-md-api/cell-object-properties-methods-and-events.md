@@ -1,33 +1,30 @@
 ---
-title: "Propriétés de l’objet, méthodes et événements de la cellule | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriétés de l’objet, méthodes et événements de la cellule | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Cell object [ADO MD], members
 ms.assetid: c45d795b-3272-4df4-a54c-7cd4fcb187fd
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: add606acefe922071076dc630b1c59f4fe2369df
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5fd5b5bb096b5c7457f8d725f05c60393f0aaab8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cell-object-properties-methods-and-events"></a>Propriétés de l’objet cellule, méthodes et événements
-## <a name="propertiescollections"></a>Properties/Collections  
+## <a name="propertiescollections"></a>Propriétés et de Collections  
  [FormattedValue, propriété](../../../ado/reference/ado-md-api/formattedvalue-property-ado-md.md)  
   
  [Ordinal, propriété (cellule)](../../../ado/reference/ado-md-api/ordinal-property-ado-md-cell.md)  

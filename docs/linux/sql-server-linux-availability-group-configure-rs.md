@@ -1,25 +1,22 @@
 ---
-title: "Configurer un groupe de disponibilité de SQL Server pour la lecture à l’échelle sur Linux | Documents Microsoft"
-description: 
+title: Configurer un groupe de disponibilité de SQL Server pour la lecture à l’échelle sur Linux | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 02/14/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: Inactive
-ms.openlocfilehash: 460eb7ca3163a9a4ca8d53a24fec143f32b701e6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: e406248118933eb60e95e101c6812d61b72ad7a7
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-a-sql-server-availability-group-for-read-scale-on-linux"></a>Configurer un groupe de disponibilité de SQL Server pour la lecture à l’échelle sur Linux
 

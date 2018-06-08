@@ -1,27 +1,23 @@
 ---
-title: LOCALDB_ERROR_INVALID_INSTANCE_NAME | Microsoft Docs
-ms.custom: 
+title: LOCALDB_ERROR_INVALID_INSTANCE_NAME | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: localdb
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: performance
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 709ac713-aadd-4d5b-a0f9-d859a79dd24c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd83b9c3e46e6296d4b13b9b8c9c653e345b924b
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 8844d103c0b10092fa34b04973140b606d8b3336
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="localdberrorinvalidinstancename"></a>LOCALDB_ERROR_INVALID_INSTANCE_NAME
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

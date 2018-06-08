@@ -1,34 +1,19 @@
 ---
-title: "Programmation OLAP AMO avancés objets | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- programming [AMO]
-- Analysis Management Objects, OLAP
-- OLAP [AMO]
-- AMO, OLAP
-ms.assetid: b75f35a7-32df-4f22-983d-324aa98e15a9
-caps.latest.revision: 
-author: Minewiskan
+title: Programmation OLAP AMO avancés objets | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 32457c48afcad9d40c901b78252afdf476df31e4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 03114f3f88d53efa01580e07db164c679b324661
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="programming-amo-olap-advanced-objects"></a>Programmation d'objets OLAP AMO avancés
   Cette rubrique explique en détails la programation d'objets OLAP AMO (Analysis Management Objects) avancés. Cette rubrique contient les sections suivantes :  
@@ -64,7 +49,7 @@ ms.lasthandoff: 02/15/2018
   
 3.  Ajoutez l'action à la collection du cube et mettez ce dernier à jour. L'action est un objet qui ne peut pas être mis à jour.  
   
- Pour tester l'action, vous avez besoin d'une application différente. Vous pouvez tester votre action dans [!INCLUDE[ssBIDevStudioFull](../../../includes/ssbidevstudiofull-md.md)]. Tout d’abord, vous devez installer [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] exemples, consultez [du traitement d’un modèle multidimensionnel &#40; Analysis Services &#41; ](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md).  
+ Pour tester l'action, vous avez besoin d'une application différente. Vous pouvez tester votre action dans [!INCLUDE[ssBIDevStudioFull](../../../includes/ssbidevstudiofull-md.md)]. Tout d’abord, vous devez installer [!INCLUDE[ssRSnoversion](../../../includes/ssrsnoversion-md.md)] exemples, consultez [du traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md).  
   
  L'exemple de code suivant réplique trois actions différentes de l'exemple de projet Analysis Services Adventure Works. Vous pouvez distinguer les actions les unes des autres, car celles que vous introduisez au moyen du code suivant commencent par « My ».  
   
@@ -493,9 +478,9 @@ static public void CreateTranslations(Database db)
  <xref:Microsoft.AnalysisServices>   
  [Présentation des Classes AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-classes-introduction.md)   
  [Classes OLAP AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-olap-classes.md)   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
- [Le traitement d’un modèle multidimensionnel &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)   
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
+ [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)   
  [Installer les exemples de données et des projets pour les didacticiel de modélisation multidimensionnelle Analysis Services](../../../analysis-services/install-sample-data-and-projects.md)  
   
   

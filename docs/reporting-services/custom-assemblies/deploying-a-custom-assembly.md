@@ -1,33 +1,32 @@
 ---
-title: "Déploiement d’un assembly personnalisé | Microsoft Docs"
-ms.custom: 
+title: Déploiement d’un assembly personnalisé | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: custom-assemblies
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - deploying custom assemblies [Reporting Services]
 - custom assemblies [Reporting Services], deploying
 - custom assemblies [Reporting Services], updating
 - updating custom assemblies
 ms.assetid: c6674cd8-0de7-4a5a-9e7c-12ffa49f6fd2
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ebc370eb54874c8e8bf37d17b854585138bfe612
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d6cf3865befe7c7d717130ddd442eea1d9d9bce9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deploying-a-custom-assembly"></a>Déploiement d'un assembly personnalisé
   Pour déployer un assembly personnalisé dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], placez-le dans les dossiers d’application du Concepteur de rapports et du serveur de rapports. L’autorisation **Execution** dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] est accordée par défaut aux assemblys personnalisés. Pour accorder des privilèges d’assemblys personnalisés supérieurs à l’autorisation Execute, vous devez modifier le fichier de configuration rssrvpolicy.config pour le serveur de rapports et le fichier de configuration rspreviewpolicy.config pour la fenêtre d’aperçu du Concepteur de rapports. Une autre solution consiste à installer votre assembly personnalisé dans le Global Assembly Cache (GAC).  

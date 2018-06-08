@@ -1,16 +1,14 @@
 ---
-title: "&gt; (Supérieur à) (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: '&gt; (Supérieur à) (Transact-SQL) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Greater
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - greater than operator (>)
 - '> (greater than operator)'
 ms.assetid: 50a7b098-a3fb-4df6-ae42-1272d6346338
-caps.latest.revision: 
+caps.latest.revision: 37
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 088bc05da0de6b1d88f7d1b84a01062ed6a5b850
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9e199dc910cc3b96f30eef4fd4fe8d9af0433cb0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gt-greater-than-transact-sql"></a>&gt; (Supérieur à) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]

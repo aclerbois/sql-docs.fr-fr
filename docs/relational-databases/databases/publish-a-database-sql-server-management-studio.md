@@ -1,31 +1,30 @@
 ---
-title: "Publier une base de données (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Publier une base de données (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 98b2914e-7147-40af-ba7d-87253bbe8bf9
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 75c8ba6edd0aed89854e62f66b2011927fb4879e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 09255d7a04063de609a7f54c395f50f83e765643
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publish-a-database-sql-server-management-studio"></a>Publier une base de données (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Vous pouvez utiliser **l’Assistant Générer et publier des scripts** pour publier une base de données entière ou des objets de base de données individuels sur un fournisseur d’hébergement web.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Vous pouvez utiliser l' **Assistant Générer et publier des scripts** pour publier une base de données entière ou des objets de base de données individuels sur un fournisseur d'hébergement Web.  
   
 > [!NOTE]  
 >  Les fonctionnalités décrites dans cette rubrique étaient fournies par l'Assistant Publication de base de données. La fonctionnalité de publication a été ajoutée à l'Assistant Générer et publier des scripts, et l'Assistant Publication de base de données a été supprimé.  

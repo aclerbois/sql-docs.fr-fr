@@ -1,28 +1,26 @@
 ---
-title: "Liaison de paramètres ODBC | Documents Microsoft"
-ms.custom: 
+title: Liaison de paramètres ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: binding parameters [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- binding parameters [ODBC]
 ms.assetid: 7538a82b-b08b-4c8f-9809-e4ccea16db11
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 53c032a38f81b87b596e05f22137c80f5c54853c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cc39c8183c996dd4d011d9bcdaba6dfe1f94cc05
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-parameters-odbc"></a>Liaison de paramètres ODBC
 Chaque paramètre dans une instruction SQL doit être associé, ou *lié,* à une variable dans l’application avant que l’instruction est exécutée. Lorsque l’application lie une variable à un paramètre, il décrit cette variable, adresse, type de données C et ainsi de suite, pour le pilote. Elle décrit également le paramètre lui-même : données SQL type, précision et ainsi de suite. Le pilote stocke ces informations dans la structure, il tient à jour pour cette instruction et utilise les informations pour récupérer la valeur de la variable lorsque l’instruction est exécutée.  

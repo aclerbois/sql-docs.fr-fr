@@ -1,28 +1,25 @@
 ---
-title: "Prise en charge de la haute disponibilité pour les bases de données OLTP en mémoire | Microsoft Docs"
-ms.custom: 
+title: Prise en charge de la haute disponibilité pour les bases de données OLTP en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 08/31/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2113a916-3b1e-496c-8650-7f495e492510
-caps.latest.revision: 
+caps.latest.revision: 11
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb13a7b90d1e84a57a5c989058dd32ebd2b8eeb3
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: a3e1697d99eed38fbfcca2a3f0539537fa088cdd
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="high-availability-support-for-in-memory-oltp-databases"></a>Prise en charge de la haute disponibilité pour les bases de données OLTP en mémoire
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

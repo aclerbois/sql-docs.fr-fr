@@ -1,28 +1,26 @@
 ---
-title: "Planifier votre adoption des fonctionnalités OLTP en mémoire dans SQL Server | Microsoft Docs"
-ms.custom: 
+title: Planifier votre adoption des fonctionnalités OLTP en mémoire dans SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 11/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 041b428f-781d-4628-9f34-4d697894e61e
-caps.latest.revision: 
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 833d774381654b77bc1efcfcb3efdbb1e6d61068
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 97480ae8c4b390250ae2007b7d1d03d0efccf472
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="plan-your-adoption-of-in-memory-oltp-features-in-sql-server"></a>Planifier votre adoption des fonctionnalités OLTP en mémoire dans SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

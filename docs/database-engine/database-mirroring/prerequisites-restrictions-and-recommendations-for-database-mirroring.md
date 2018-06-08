@@ -1,16 +1,15 @@
 ---
-title: "Prérequis, restrictions et recommandations pour la mise en miroir de bases de données | Microsoft Docs"
-ms.custom: 
+title: Prérequis, restrictions et recommandations pour la mise en miroir de bases de données | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], deployment
 - partners [SQL Server]
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - database mirroring [SQL Server], planning
 - database mirroring [SQL Server], about database mirroring
 ms.assetid: fdcf2251-9895-44c6-b81e-768fef32e732
-caps.latest.revision: "55"
+caps.latest.revision: 55
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 99a526a432e0e7567022891e28129a12d5b09ef3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 63b187ff3413d5f63b0a2a277e4fbb90239cf453
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prerequisites-restrictions-and-recommendations-for-database-mirroring"></a>Conditions préalables, limitations et recommandations relatives à la mise en miroir de bases de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

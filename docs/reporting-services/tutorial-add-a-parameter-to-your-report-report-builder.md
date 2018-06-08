@@ -1,28 +1,27 @@
 ---
-title: "Didacticiel : ajouter un paramètre à votre rapport (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : ajouter un paramètre à votre rapport (Générateur de rapports) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: eab34ec4-b3ad-4a76-95cc-07b2f75ee6d7
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 7d8b0e4051da1cbcfc2ae641c2eb99102a13ac45
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: eb1fa8539eb0ba96edb5c48d29af160507e61998
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-add-a-parameter-to-your-report-report-builder"></a>Didacticiel : ajouter un paramètre à un rapport (Générateur de rapports)
 Dans ce didacticiel, vous ajoutez un paramètre à un rapport paginé [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] pour que les lecteurs de ce dernier puissent filtrer ses données en fonction d’une ou de plusieurs valeurs. 

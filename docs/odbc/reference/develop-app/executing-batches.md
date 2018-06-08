@@ -1,30 +1,27 @@
 ---
-title: "Exécuter des traitements | Documents Microsoft"
-ms.custom: 
+title: Exécuter des traitements | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - batches [ODBC], executing
 - SQL statements [ODBC], batches
 ms.assetid: f082c717-4f82-4820-a2fa-ba607d8fd872
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 620965b524b6d76d1f1d0a3d7adaf84c05c4540c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 22c034d4be28ca8c3212fad4ee1493cb0a22d915
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-batches"></a>L’exécution de lots
 Avant qu’une application exécute un lot d’instructions, il doit tout d’abord vérifier si elles sont prises en charge. Pour ce faire, l’application appelle **SQLGetInfo** avec les options SQL_BATCH_SUPPORT, SQL_PARAM_ARRAY_ROW_COUNTS et SQL_PARAM_ARRAY_SELECTS. La première option retourne si la création de nombre de lignes et le résultat d’instructions de création de jeu sont prises en charge dans les lots explicites et procédures, pendant les deux dernières options de renvoyer des informations sur la disponibilité du nombre de lignes et résultat définit dans paramétrable d’exécution.  

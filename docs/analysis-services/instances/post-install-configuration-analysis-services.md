@@ -1,31 +1,23 @@
 ---
-title: "Après installation de Configuration (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining - "setup-install"
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-ms.assetid: 7f4417b2-0efb-4361-a79e-fa56e43ee054
-caps.latest.revision: 
-author: Minewiskan
+title: Après installation de Configuration (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 92eb00cbcfbc07ebb8b55445a246c1df04c06feb
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 00c6986fdb3cba910df98165d64afdb154ded68d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="post-install-configuration-analysis-services"></a>Configuration consécutive à l'installation (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Après avoir installé Analysis Services, des tâches de configuration supplémentaires sont requises pour rendre le serveur complètement opérationnel et disponible en vue d'une utilisation générale. Cette section présente les autres tâches qui complètent l'installation. Selon les exigences en matière de connexion, vous devrez peut-être aussi configurer l’authentification (consultez [Se connecter à Analysis Services](../../analysis-services/instances/connect-to-analysis-services.md)).  
+  Après avoir installé Analysis Services, des tâches de configuration supplémentaires sont requises pour rendre le serveur complètement opérationnel et disponible en vue d'une utilisation générale. Cette section présente les autres tâches qui complètent l'installation. Selon les exigences en matière de connexion, vous devrez peut-être aussi configurer l’authentification (consultez [Se connecter à Analysis Services](../../analysis-services/instances/connect-to-analysis-services.md)).  
   
  Plus tard, des étapes supplémentaires devront être réalisées une fois que vous aurez des bases de données prêtes à déployer. Vous devrez notamment configurer les appartenances au rôle sur la base de données afin d'accorder à l'utilisateur l'accès aux données, concevoir une stratégie de sauvegarde et de restauration des bases de données et déterminer si vous avez besoin d'une charge de travail de traitement planifiée afin que les données soient actualisées à intervalles réguliers. Vous trouverez plus d’informations sur le déploiement de la base de données et l’administration à ces liens : [des bases de données Model multidimensionnelles ](../../analysis-services/multidimensional-models/multidimensional-model-databases-ssas.md) et [des bases de données Model tabulaires](../../analysis-services/tabular-models/tabular-model-databases-ssas-tabular.md).  
   

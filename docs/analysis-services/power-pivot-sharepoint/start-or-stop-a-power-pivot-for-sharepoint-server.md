@@ -1,30 +1,23 @@
 ---
-title: "Démarrer ou arrêter un PowerPivot pour SharePoint Server | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: e38e6366-9f20-4db0-b2a8-da7d5adf00eb
-caps.latest.revision: "8"
-author: Minewiskan
+title: Démarrer ou arrêter un PowerPivot pour SharePoint Server | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 72fb8e7c0f964fe140082d9aed5748b98440fac3
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4b53cc7730f962d790ebdb9a0373bf98e9bf32bf
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="start-or-stop-a-power-pivot-for-sharepoint-server"></a>Démarrer ou arrêter un serveur PowerPivot pour SharePoint
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)][!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] Service système et une [!INCLUDE[ssGeminiSrv](../../includes/ssgeminisrv-md.md)] instance fonctionnent ensemble sur le même serveur d’applications local pour prendre en charge la demande coordonné et le traitement des données dans une batterie de serveurs SharePoint.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et une instance de [!INCLUDE[ssGeminiSrv](../../includes/ssgeminisrv-md.md)] fonctionnent ensemble sur le même serveur d’applications local, pour assurer le traitement coordonné des données et demandes dans une batterie de serveurs SharePoint.  
   
  Cette rubrique contient les sections suivantes :  
   
@@ -59,7 +52,7 @@ ms.lasthandoff: 01/08/2018
 ##  <a name="effects"></a> Conséquences de l’arrêt d’un serveur PowerPivot  
  Le tableau suivant décrit les conséquences de l’arrêt du service système [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et du service Analysis Services sur un serveur SharePoint.  
   
-|Éléments affectés|Description|  
+|Éléments affectés| Description|  
 |---------------|-----------------|  
 |Requêtes existantes|Les requêtes en cours sur un serveur Analysis Services s'arrêtent immédiatement. L'utilisateur reçoit une erreur signalant des données introuvables ou une connexion à la source de données introuvable.|  
 |Travaux d'actualisation des données en cours de traitement|Les travaux en cours sur le serveur Analysis Services actif s'arrêtent immédiatement. L'actualisation des données échoue et une erreur est journalisée dans l'historique d'actualisation des données.<br /><br /> Vous pouvez consulter l'état des travaux en cours avant d'arrêter le service en utilisant la page Vérifier l'état du travail dans l'Administration centrale de SharePoint.<br /><br /> Vous avez la possibilité de savoir quels sont les travaux en cours de traitement. En revanche, il est impossible d'afficher la file d'attente pour voir si d'autres travaux sont sur le point de démarrer.|  

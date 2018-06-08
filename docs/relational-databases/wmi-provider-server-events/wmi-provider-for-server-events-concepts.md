@@ -1,15 +1,14 @@
 ---
-title: "Fournisseur WMI pour les Concepts des événements serveur | Documents Microsoft"
-ms.custom: 
+title: Fournisseur WMI pour les Concepts des événements serveur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - server events [WMI]
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - monitoring events [WMI]
 - events [WMI]
 ms.assetid: 80767fe0-32ac-406a-81a0-8212cd6ce7e4
-caps.latest.revision: 
+caps.latest.revision: 18
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3de6a7a73d78f908ddab579cb200da91dda521e1
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 0572bd44ec4fd648b087ceae004aae8d5b529bc6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wmi-provider-for-server-events-concepts"></a>Fournisseur WMI pour les concepts des événements de serveur
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

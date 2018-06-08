@@ -1,17 +1,16 @@
 ---
 title: Inscrire une instance de SQL Server (utilitaire SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.SWB.makemanaged.agentaccount.F1
 - sql13.SWB.makemanaged.welcome.F1
@@ -23,19 +22,19 @@ f1_keywords:
 helpviewer_keywords:
 - Enroll instance
 ms.assetid: a801c619-611b-4e82-a8d8-d1e01691b7a1
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2f9da7c9a59a50974dbfeed860db63a513719fc6
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: ebe062a78caf3a0589afaef68b7cde988b8bcae4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enroll-an-instance-of-sql-server-sql-server-utility"></a>Inscrire une instance de SQL Server (utilitaire SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Inscrivez une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans un utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existant pour surveiller ses performances et sa configuration comme une instance gérée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le point de contrôle de l'utilitaire (UCP) recueille des informations sur la configuration et les performances des instances gérées de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] toutes les 15 minutes. Ces informations sont stockées dans l'entrepôt de données de gestion de l'utilitaire (UMDW) sur l'UCP ; le nom de fichier UMDW est sysutility_mdw. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont comparées aux stratégies afin d'aider à identifier les opportunités de consolidation et les goulots d'étranglement de performances.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Inscrivez une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans un utilitaire [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existant pour surveiller ses performances et sa configuration comme une instance gérée de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le point de contrôle de l'utilitaire (UCP) recueille des informations sur la configuration et les performances des instances gérées de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] toutes les 15 minutes. Ces informations sont stockées dans l'entrepôt de données de gestion de l'utilitaire (UMDW) sur l'UCP ; le nom de fichier UMDW est sysutility_mdw. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont comparées aux stratégies afin d'aider à identifier les opportunités de consolidation et les goulots d'étranglement de performances.  
   
  Dans cette version, l'UCP et toutes les instances gérées de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doivent respecter les conditions suivantes :  
   

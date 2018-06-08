@@ -1,30 +1,28 @@
 ---
-title: "Mot de passe du serveur de distribution | Microsoft Docs"
-ms.custom: 
+title: Mot de passe du serveur de distribution | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.configuredistributionwizard.distributorpassword.f1
 ms.assetid: 52787c5e-c9ef-440e-a000-0787111b7dbb
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: de6e4846acfa0c7d3e18e176fd0053e8a190f9ed
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: dfbc9a3a9dc4876dda2857bde171c3aedb4e9f09
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="distributor-password"></a>Mot de passe du serveur de distribution
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

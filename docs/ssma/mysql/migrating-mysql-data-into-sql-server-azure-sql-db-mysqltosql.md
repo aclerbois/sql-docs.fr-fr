@@ -1,16 +1,15 @@
 ---
-title: "Migration de données MySQL vers SQL Server - base de données SQL Azure (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Migration de données MySQL vers SQL Server - base de données SQL Azure (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Data Migration, server side data migration
 - Data Migration,client side data migration
 ms.assetid: a6a7f4d6-68aa-4a38-93bf-53eba0d7dc82
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0887825cf16986b78cad5d1889a04d73dacf222a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 84d74ab543f45152f5fa3eaa3205d2491d75ce46
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="migrating-mysql-data-into-sql-server---azure-sql-db-mysqltosql"></a>Migration de données MySQL vers SQL Server - base de données SQL Azure (MySQLToSQL)
 Après avoir synchronisé correctement les objets convertis avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, vous pouvez migrer des données de MySQL vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure.  
@@ -106,11 +104,11 @@ Pour afficher les messages de la migration, assurez-vous que le volet de résult
     > [!NOTE]  
     > Si le SSMA pour le Pack d’Extension MySQL n’est pas installé sur l’instance de SQL Server et si **moteur de Migration de données côté serveur** est sélectionnée, puis lors de la migration des données à la base de données cible, l’erreur suivante est produite : « composants de Migration de données de SSMA sont introuvables sur le serveur SQL Server, migration de données côté serveur ne sera pas possible. Vérifiez si le Pack d’Extension est correctement installé ». Cliquez sur **Annuler** pour mettre fin à la migration des données.  
   
-5.  Dans le **se connecter à MySQL** boîte de dialogue, entrez les informations d’identification de connexion, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à MySQL, consultez [se connecter à MySQL &#40; MySQLToSQL &#41;](../../ssma/mysql/connect-to-mysql-mysqltosql.md)  
+5.  Dans le **se connecter à MySQL** boîte de dialogue, entrez les informations d’identification de connexion, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à MySQL, consultez [se connecter à MySQL &#40;MySQLToSQL&#41;](../../ssma/mysql/connect-to-mysql-mysqltosql.md)  
   
     Si la base de données cible est SQL Server, puis entrez les informations d’identification de connexion dans le **se connecter à SQL Server** boîte de dialogue, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à SQL Server, consultez [se connecter à SQL Server](http://msdn.microsoft.com/en-us/bb8c4bde-cfc2-4636-92ae-5dd24abe9536)  
   
-    Si la base de données cible est SQL Azure, puis entrez les informations d’identification de connexion dans le **se connecter à SQL Azure** boîte de dialogue, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à SQL Azure, consultez [se connecter à la base de données SQL Azure &#40; MySQLToSQL &#41;](../../ssma/mysql/connect-to-azure-sql-db-mysqltosql.md)  
+    Si la base de données cible est SQL Azure, puis entrez les informations d’identification de connexion dans le **se connecter à SQL Azure** boîte de dialogue, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à SQL Azure, consultez [se connecter à la base de données SQL Azure &#40;MySQLToSQL&#41;](../../ssma/mysql/connect-to-azure-sql-db-mysqltosql.md)  
   
     Messages seront affichés dans le **sortie** volet. Une fois la migration terminée, le **rapport de Migration de données** s’affiche. Si aucune donnée n’a pas été migré, cliquez sur la ligne qui contient les erreurs, puis cliquez sur **détails**. Lorsque vous avez terminé avec le rapport, cliquez sur **fermer**. Pour plus d’informations sur le rapport de Migration de données, consultez [rapport de Migration de données (SSMA commun)](http://msdn.microsoft.com/en-us/bbfb9d88-5a98-4980-8d19-c5d78bd0d241)  
   
@@ -118,5 +116,5 @@ Pour afficher les messages de la migration, assurez-vous que le volet de résult
 > Lors de l’édition de SQL Express est utilisée comme base de données cible, uniquement les migration de données côté client est autorisée et migration des données côté serveur n’est pas pris en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSql &#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
+[Bases de données de migration de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSql&#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
   

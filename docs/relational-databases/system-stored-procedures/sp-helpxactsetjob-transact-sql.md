@@ -1,16 +1,15 @@
 ---
 title: sp_helpxactsetjob (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helpxactsetjob
 ms.assetid: 242cea3e-e6ac-4f84-a072-b003b920eb33
-caps.latest.revision: 
+caps.latest.revision: 19
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 52fb4f08d51379368a99647a3e2a1cbe86c8fba5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ef643efb849a0f178ac98bf439360fca87d21983
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelpxactsetjob-transact-sql"></a>sp_helpxactsetjob (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +44,7 @@ sp_helpxactsetjob [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@publisher**  =] **'***publisher***'**  
+ [**@publisher** =] **'***publisher***'**  
  Nom du serveur de publication non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] auquel le travail appartient. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
@@ -59,7 +57,7 @@ sp_helpxactsetjob [ @publisher = ] 'publisher'
 |**nextdate**|**varchar(22)**|Date de la prochaine exécution du travail.|  
 |**rompu**|**varchar (1)**|Indicateur signalant si le travail est interrompu.|  
 |**intervalle**|**varchar(200)**|Intervalle du travail.|  
-|**échecs**|**int**|Nombre d'échecs du travail.|  
+|**Échecs**|**int**|Nombre d'échecs du travail.|  
 |**xactsetjobwhat**|**varchar(200)**|Nom de la procédure exécutée par le travail.|  
 |**xactsetjob**|**varchar (1)**|État du travail, qui peut être l'un des suivants :<br /><br /> **1** -le travail est activé.<br /><br /> **0** -le travail est désactivé.|  
 |**xactsetlonginterval**|**int**|Intervalle long pour le travail.|  
@@ -75,11 +73,11 @@ sp_helpxactsetjob [ @publisher = ] 'publisher'
   
  **sp_helpxactsetjob** retourne toujours les paramètres actuels pour le travail Xactset (HREPL_XactSetJob) sur le serveur de publication. Si le travail Xactset est actuellement dans la file d'attente des travaux, il renvoie en outre des attributs du travail à partir de la vue du dictionnaire de données USER_JOB créée sous le compte administrateur sur le serveur de publication Oracle.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seul un membre de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_helpxactsetjob**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Configurer le travail d’un jeu de transactions pour un serveur de publication Oracle &#40;programmation Transact-SQL de la réplication&#41;](../../relational-databases/replication/administration/configure-the-transaction-set-job-for-an-oracle-publisher.md)   
- [sp_publisherproperty &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-publisherproperty-transact-sql.md)  
+ [sp_publisherproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-publisherproperty-transact-sql.md)  
   
   

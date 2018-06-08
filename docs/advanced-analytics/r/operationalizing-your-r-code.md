@@ -1,25 +1,17 @@
 ---
-title: Opérationaliser le code de R (Machine Learning Services) | Documents Microsoft
-ms.custom:
-- SQL2016_New_Updated
-ms.date: 07/26/2016
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Opérationaliser le code R dans SQL Server Machine Learning Services | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 460605c8cd9040cbf9586ab91227c5e09ec526cf
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: f5fa7806ad70c37c7d51c5ae2cc9606191560e58
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="operationalize-r-code-machine-learning-services"></a>Opérationaliser le code de R (Machine Learning Services)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -30,7 +22,7 @@ Cet article résume les points clés pour le développeur de base de données pr
 
 ## <a name="get-started-with-r-code-in-sql-server"></a>Prise en main du code R dans SQL Server
 
-En règle générale, l’intégration de machine learning solutions est destiné le recodage des étendues pour prendre en charge des performances et l’intégration. Toutefois, déplacement de code R et Python dans un environnement de production est beaucoup plus facile dans Microsoft Machine Learning Services, car le code peut être exécuté dans SQL Server et appelé à l’aide de procédures. Vous pouvez continuer à utiliser des outils familiers et que vous n’avez pas besoin d’installer un environnement de développement R. 
+En règle générale, l’intégration de machine learning solutions est destiné le recodage des étendues pour prendre en charge des performances et l’intégration. Toutefois, déplacement de code R et Python dans un environnement de production est beaucoup plus facile dans Machine Learning Services SQL Server, car le code peut être exécuté dans SQL Server et appelé à l’aide de procédures. Vous pouvez continuer à utiliser des outils familiers et que vous n’avez pas besoin d’installer un environnement de développement R. 
 
 Pour plus d’informations sur la syntaxe de base, consultez :
 

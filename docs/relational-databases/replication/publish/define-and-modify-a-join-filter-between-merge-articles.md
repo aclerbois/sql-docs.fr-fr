@@ -1,33 +1,31 @@
 ---
-title: "Définir et modifier un filtre de jointure entre des articles de fusion | Microsoft Docs"
-ms.custom: 
+title: Définir et modifier un filtre de jointure entre des articles de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - filters [SQL Server replication], join
 - merge replication join filters [SQL Server replication]
 - modifying filters, join
 - join filters
 ms.assetid: f7f23415-43ff-40f5-b3e0-0be1d148ee5b
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e0ad590f14e8a9c774c9108028a58fa5a7ff008e
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: bf7d996475800dfc34e472b42e76aa86696c0345
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="define-and-modify-a-join-filter-between-merge-articles"></a>Définir et modifier un filtre de jointure entre des articles de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -72,7 +70,7 @@ ms.lasthandoff: 03/08/2018
   
     -   Si vous sélectionnez le générateur, utilisez les colonnes de la grille (**Conjonction**, **Colonnes de table filtrée**, **Opérateur**et **Colonnes de table jointe**) pour créer une instruction de jointure.  
   
-         Chaque colonne de la grille contient une zone de liste déroulante fixe permettant de sélectionner deux colonnes et un opérateur (**=**, **<>**, **<=**, **\<**, **>=**, **>**et **like**). Les résultats s'affichent dans la zone de texte **Aperçu** . Si la jointure concerne plus d'une paire de colonnes, sélectionnez une conjonction (AND ou OR) dans la colonne **Conjonction** , et entrez deux autres colonnes et un opérateur.  
+         Chaque colonne de la grille contient une zone de liste déroulante fixe permettant de sélectionner deux colonnes et un opérateur (**=**, **<>**, **<=**, **\<**, **>=**, **>** et **like**). Les résultats s'affichent dans la zone de texte **Aperçu** . Si la jointure concerne plus d'une paire de colonnes, sélectionnez une conjonction (AND ou OR) dans la colonne **Conjonction** , et entrez deux autres colonnes et un opérateur.  
   
     -   Si vous créez l'instruction manuellement, écrivez l'instruction de jointure dans la zone de texte **Instruction de jointure** . Utilisez la zone de liste **Colonnes de table filtrée** et la zone de liste **Colonnes de table jointe** pour faire glisser et déposer des colonnes dans la zone de texte **Instruction de jointure** .  
   
@@ -138,7 +136,7 @@ ms.lasthandoff: 03/08/2018
   
  [!code-sql[HowTo#sp_AddMergeArticle](../../../relational-databases/replication/codesnippet/tsql/define-and-modify-a-join_1.sql)]  
   
- Cet exemple définit un groupe d'articles dans une publication de fusion où les articles sont filtrés à l'aide d'une série de filtres de jointure par rapport à la table `Employee` , qui est elle-même filtrée à l'aide d'un filtre de lignes paramétrable sur la valeur de [HOST_NAME](../../../t-sql/functions/host-name-transact-sql.md) dans la colonne **LoginID** . Pour plus d'informations, consultez [Define and Modify a Parameterized Row Filter for a Merge Article](../../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
+ Cet exemple définit un groupe d'articles dans une publication de fusion où les articles sont filtrés à l'aide d'une série de filtres de jointure par rapport à la table `Employee` , qui est elle-même filtrée à l'aide d'un filtre de lignes paramétrable sur la valeur de [HOST_NAME](../../../t-sql/functions/host-name-transact-sql.md) dans la colonne **LoginID** . Pour plus d'informations, voir [Définir et modifier un filtre de lignes paramétrable pour un article de fusion](../../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
   
  [!code-sql[HowTo#sp_MergeDynamicPub1](../../../relational-databases/replication/codesnippet/tsql/define-and-modify-a-join_2.sql)]  
   

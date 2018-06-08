@@ -1,16 +1,14 @@
 ---
 title: sp_cursoroption (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_cursoroption_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_cursoroption
 ms.assetid: 88fc1dba-f4cb-47c0-92c2-bf398f4a382e
-caps.latest.revision: 
+caps.latest.revision: 8
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b0fcd7b9c009d0af70e48982f9630f783bce057d
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: b404bdb0b96883df1b1e39b9190285b4795aeaa4
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spcursoroption-transact-sql"></a>sp_cursoroption (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,7 +51,7 @@ sp_cursoroption cursor, code, value
   
 |Valeur|Nom| Description|  
 |-----------|----------|-----------------|  
-|0x0001|TEXTPTR_ONLY|Retourne le pointeur de texte, et non les données réelles, pour certaines colonnes text ou image désignées.<br /><br /> TEXTPTR_ONLY permet à des pointeurs de texte à utiliser en tant que *handles* vers des objets blob qui peuvent être récupérés ultérieurement à sélectivement ou mises à jour avec [!INCLUDE[tsql](../../includes/tsql-md.md)] ou les installations DBLIB (par exemple) [!INCLUDE[tsql](../../includes/tsql-md.md)]READTEXT ou DBLIB DBWRITETEXT).<br /><br /> Si une valeur « 0 » est affectée, toutes les colonnes text et image dans la liste de sélection retourneront des pointeurs de texte plutôt que des données.|  
+|0x0001|TEXTPTR_ONLY|Retourne le pointeur de texte, et non les données réelles, pour certaines colonnes text ou image désignées.<br /><br /> TEXTPTR_ONLY permet à des pointeurs de texte à utiliser en tant que *handles* vers des objets blob qui peuvent être récupérés ultérieurement à sélectivement ou mises à jour avec [!INCLUDE[tsql](../../includes/tsql-md.md)] ou les installations DBLIB (par exemple) [!INCLUDE[tsql](../../includes/tsql-md.md)] READTEXT ou DBLIB DBWRITETEXT).<br /><br /> Si une valeur « 0 » est affectée, toutes les colonnes text et image dans la liste de sélection retourneront des pointeurs de texte plutôt que des données.|  
 |0x0002|CURSOR_NAME|Assigne le nom spécifié dans *valeur* jusqu’au curseur. Cette opération, à son tour, ODBC peut ainsi utiliser [!INCLUDE[tsql](../../includes/tsql-md.md)] positionné des instructions UPDATE/DELETE sur les curseurs ouverts via sp_cursoropen.<br /><br /> La chaîne peut être spécifiée comme tout caractère ou type de données Unicode.<br /><br /> Étant donné que [!INCLUDE[tsql](../../includes/tsql-md.md)] les instructions UPDATE/DELETE positionnées fonctionnent, par défaut, sur la première ligne dans un curseur fat, sp_cursor SETPOSITION doit être utilisé pour positionner le curseur avant d’émettre l’instruction UPDATE/DELETE positionnée.|  
 |0x0003|TEXTDATA|Retourne les données réelles, et non le pointeur de texte, pour certaines colonnes text ou image sur les extractions suivantes (autrement dit, cela annule l'effet de TEXTPTR_ONLY).<br /><br /> Si TEXTDATA est activé pour une colonne particulière, la ligne est à nouveau extraite ou actualisée, et TEXTPTR_ONLY peut ensuite lui être à nouveau affecté. Comme avec TEXTPTR_ONLY, le paramètre de valeur est un entier qui spécifie le numéro de colonne et une valeur zéro retourne toutes les colonnes text et image.|  
 |0x0004|SCROLLOPT|Option de défilement. Pour plus d'informations, consultez « Valeurs des codes de retour » plus loin dans cette rubrique.|  
@@ -95,7 +92,7 @@ sp_cursoroption cursor, code, value
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [sp_cursor &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-cursor-transact-sql.md)   
- [sp_cursoropen &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-cursoropen-transact-sql.md)  
+ [sp_cursor &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-cursor-transact-sql.md)   
+ [sp_cursoropen &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-cursoropen-transact-sql.md)  
   
   

@@ -1,30 +1,29 @@
 ---
-title: "Méthode getSchemas () | Documents Microsoft"
-ms.custom: 
+title: Méthode getSchemas () | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getSchemas
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getSchemas
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: adba0ee6-ff6d-4215-b646-62c735be3fe9
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 675d5ab7e20a5d7364721319aba56a7919a255d9
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 04066c42fabfd81d5579e4900bd6072c7f767747
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getschemas-method-"></a>Méthode getSchemas ()
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -51,8 +50,8 @@ public java.sql.ResultSet getSchemas()
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|TABLE_SCHEM|**Chaîne**|Le nom du schéma.|  
-|TABLE_CATALOG|**Chaîne**|Nom de catalogue pour le schéma.|  
+|TABLE_SCHEM|**String**|Le nom du schéma.|  
+|TABLE_CATALOG|**String**|Nom de catalogue pour le schéma.|  
   
  Les résultats sont classés par TABLE_CATALOG, puis par TABLE_SCHEM. Chaque ligne inclut TABLE_SCHEM comme première colonne et TABLE_CATALOG comme deuxième.  
   

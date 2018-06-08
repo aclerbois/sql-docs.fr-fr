@@ -1,16 +1,15 @@
 ---
-title: "Estimer l’interruption de service pour un basculement de rôle (mise en miroir de bases de données) | Microsoft Docs"
-ms.custom: 
+title: Estimer l’interruption de service pour un basculement de rôle (mise en miroir de bases de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - parallel redo [SQL Server]
 - role switching [SQL Server]
@@ -19,19 +18,19 @@ helpviewer_keywords:
 - redo [database mirroring]
 - database mirroring [SQL Server], failover
 ms.assetid: 586a6f25-672b-491b-bc2f-deab2ccda6e2
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b506d1897f7de298a3f9bbe9259eab106ffcbda
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 59904b08ba0a20a458e623b43b47c811e1ebf9b3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="estimate-the-interruption-of-service-during-role-switching-database-mirroring"></a>Estimer l'interruption de service au cours d'un basculement de rôle (mise en miroir de bases de données)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Au cours d’un basculement de rôle, la durée pendant laquelle la mise en miroir de base de données sera hors service dépend du type de basculement de rôle et de la raison du changement de rôle.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Au cours d'un basculement de rôle, la durée pendant laquelle la mise en miroir de base de données sera hors service dépend du type de basculement de rôle et de la raison du changement de rôle.  
   
 -   Pour un basculement automatique, deux facteurs influent sur la durée d'interruption de service : le temps requis pour que le serveur miroir reconnaisse que l'instance du serveur principal est défaillante, c'est-à-dire la durée de détection d'erreur, ainsi que le temps requis pour le basculement de la base de données, c'est-à-dire la durée de basculement.  
   

@@ -1,34 +1,32 @@
 ---
 title: INSERT (SQL Graph) | Microsoft Docs
-description: "Syntaxe de l’instruction INSERT pour les tables de nœuds ou d’arêtes SQL Graph."
+description: Syntaxe de l’instruction INSERT pour les tables de nœuds ou d’arêtes SQL Graph.
 ms.date: 05/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
 - INSERT statement [SQL Server], SQL graph
 - SQL graph, INSERT statement
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: 1
 author: shkale-msft
 ms.author: shkale
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6bac7f1d7da67f319a9c84425b370bb61a35ca19
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: = azuresqldb-current || >= sql-server-2017 || = sqlallproducts-allversions
+ms.openlocfilehash: 0180eaa873484fa9061c01e0cc18e20ea3012da2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="insert-sql-graph"></a>INSERT (SQL Graph)
 [!INCLUDE[tsql-appliesto-ss2017-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-asdb-xxxx-xxx-md.md)]
@@ -135,7 +133,7 @@ Avant de procéder à une insertion en bloc dans une table d’arêtes, les tabl
 ### <a name="permissions"></a>Autorisations  
  L'autorisation INSERT est obligatoire sur la table cible.  
   
- Les autorisations INSERT sont accordées par défaut aux membres du rôle serveur fixe **sysadmin**, aux rôles de base de données fixes **db_owner** et **db_datawriter** et au propriétaire de la table. Les membres des rôles **sysadmin**, **db_owner** et **db_securityadmin** et le propriétaire de la table peuvent transférer des autorisations à d’autres utilisateurs.  
+ Les autorisations INSERT sont accordées par défaut aux membres du rôle serveur fixe **sysadmin**, aux rôles de base de données fixes **db_owner** et **db_datawriter**, ainsi qu’au propriétaire de la table. Les membres des rôles **sysadmin**, **db_owner** et **db_securityadmin** et le propriétaire de la table peuvent transférer des autorisations à d’autres utilisateurs.  
   
  Pour exécuter INSERT avec l’option BULK de la fonction OPENROWSET, vous devez être membre du rôle serveur fixe **sysadmin** ou **bulkadmin**.  
   

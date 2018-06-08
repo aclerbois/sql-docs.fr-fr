@@ -1,27 +1,19 @@
 ---
 title: Synchroniser la commande (TMSL) | Documents Microsoft
-ms.custom: 
-ms.date: 03/13/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tmsl
 ms.topic: reference
-ms.assetid: a32ff053-f38f-49d7-afdc-e19f59c88135
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b2bd9ea464b69e1b62ada91fbdee23f790080f86
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 4265e6fa1e2214fae53cacdb084e152005eb3647
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="synchronize-command-tmsl"></a>Synchroniser la commande (TMSL)
 [!INCLUDE[ssas-appliesto-sqlas-all](../../includes/ssas-appliesto-sqlas-all.md)]

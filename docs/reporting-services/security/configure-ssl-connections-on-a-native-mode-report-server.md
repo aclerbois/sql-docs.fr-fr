@@ -1,27 +1,27 @@
 ---
 title: Configurer des connexions SSL sur un serveur de rapports en mode natif | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Secure Sockets Layer (SSL)
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Secure Sockets Layer (SSL)
 ms.assetid: 212f2042-456a-4c0a-8d76-480b18f02431
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.openlocfilehash: 94e454e201b2e9130b115e527ee2433f04f2ab60
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 0eead8d73153621430037141e0a509adac4cd1fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-ssl-connections-on-a-native-mode-report-server"></a>Configurer des connexions SSL sur un serveur de rapports en mode natif
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] Le mode natif utilise le service HTTP SSL (Secure Sockets Layer) pour définir des connexions chiffrées à un serveur de rapports. Si le fichier de certificat (.cer) est installé dans un magasin de certificats local sur le serveur de rapports, vous pouvez lier le certificat à une réservation d’URL [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour prendre en charge des connexions de serveur de rapports sur un canal chiffré.  

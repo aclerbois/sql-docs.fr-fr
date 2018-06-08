@@ -1,17 +1,16 @@
 ---
-title: "Numéros séquentiels | Microsoft Docs"
-ms.custom: 
+title: Numéros séquentiels | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sequence-numbers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sequence number object, overview
 - sequence [Database Engine]
@@ -19,16 +18,17 @@ helpviewer_keywords:
 - sequence numbers [SQL Server]
 - sequence number object
 ms.assetid: c900e30d-2fd3-4d5f-98ee-7832f37e79d1
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2d85101a01723fed67e90f1d891634d74b44dde2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f4c3b9bf5a98c2986e3acb1760154ba61eb97763
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708217"
 ---
 # <a name="sequence-numbers"></a>Numéros séquentiels
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,34 +1,33 @@
 ---
-title: "Suppression de la mise en miroir de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Suppression de la mise en miroir de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], removing
 - stopping database mirroring [SQL Server]
 - removing database mirroring [SQL Server]
 ms.assetid: 40c72091-8f03-4037-8b55-5e95309fe145
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dcfb8099213533ca37c467a758d63f456d993a67
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: e7538fb9a9ca57db71f6e49f6e299764412199ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="removing-database-mirroring-sql-server"></a>Suppression d'une mise en miroir des bases de données (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Le propriétaire de la base de données peut arrêter manuellement une session de mise en miroir de base de données à tout moment et sur n’importe quel serveur partenaire.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Le propriétaire de la base de données peut arrêter manuellement une session de mise en miroir de base de données à tout moment et sur n'importe quel serveur partenaire.  
   
 ## <a name="impact-of-removing-mirroring"></a>Impact de la suppression d'une mise en mémoire  
  Lorsqu'une mise en miroir est supprimée, les événements suivants se produisent :  

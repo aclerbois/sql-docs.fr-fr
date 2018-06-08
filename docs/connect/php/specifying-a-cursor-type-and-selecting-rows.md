@@ -1,30 +1,28 @@
 ---
-title: "Spécification d’un Type de curseur et sélection de lignes | Documents Microsoft"
-ms.custom: 
+title: Spécification d’un Type de curseur et sélection de lignes | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cursor types
 - scrollable cursors
 ms.assetid: 51147e4f-5f07-4ee6-8245-e937eefec71f
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 58d383edd525cfe0f642b5e61250bce736f4e048
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b863573d26961ea010ba1c98289619cfe74ec346
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specifying-a-cursor-type-and-selecting-rows"></a>Spécification d’un type de curseur et sélection de lignes
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

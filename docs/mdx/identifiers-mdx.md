@@ -1,17 +1,17 @@
 ---
 title: Identificateurs (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-dev_langs: kbMDX
+dev_langs:
+- kbMDX
 helpviewer_keywords:
 - formats [Analysis Services]
 - Multidimensional Expressions [Analysis Services], identifiers
@@ -21,16 +21,15 @@ helpviewer_keywords:
 - regular identifiers [MDX]
 - formats [Analysis Services], identifiers
 ms.assetid: 739a8a67-bef3-4b56-961d-ee96cfc36b5b
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 9b45b45da18ea7c9047609ffb47bc5a698e43a21
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: a04d387c0ee40d825fddf3c50f02793e722cdbc8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identifiers-mdx"></a>Identificateurs (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -61,7 +60,7 @@ ms.lasthandoff: 01/08/2018
   
     -   Le trait de soulignement (_).  
   
-3.  L'identificateur ne doit pas être un mot réservé MDX. En effet, ils ne respectent pas la casse dans la syntaxe MDX. Pour plus d’informations, consultez [mots clés réservés &#40; La syntaxe MDX &#41; ](../mdx/reserved-keywords-mdx-syntax.md).  
+3.  L'identificateur ne doit pas être un mot réservé MDX. En effet, ils ne respectent pas la casse dans la syntaxe MDX. Pour plus d’informations, consultez [mots clés réservés &#40;syntaxe MDX&#41;](../mdx/reserved-keywords-mdx-syntax.md).  
   
 4.  Les espaces incorporés ou les caractères spéciaux ne sont pas autorisés.  
   
@@ -100,7 +99,7 @@ ms.lasthandoff: 01/08/2018
   
 -   Lorsque le nom d'un objet utilise des caractères non répertoriés comme identificateurs qualifiés.  
   
-     [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)]permet à un identificateur délimité à utiliser n’importe quel caractère dans la page de codes actuelle. Un manque de discernement dans l'utilisation de caractères spéciaux dans un nom d'objet peut rendre difficiles la lecture et la maintenance des instructions et scripts MDX.  
+     [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] permet à un identificateur délimité à utiliser n’importe quel caractère dans la page de codes actuelle. Un manque de discernement dans l'utilisation de caractères spéciaux dans un nom d'objet peut rendre difficiles la lecture et la maintenance des instructions et scripts MDX.  
   
 ### <a name="formatting-rules-for-delimited-identifiers"></a>Règles de mise en forme des identificateurs délimités  
  Le corps d'un identificateur délimité peut contenir n'importe quelle combinaison de caractères dans la page de codes actuelle, notamment les caractères de délimitation proprement dits. Si le corps de l'identificateur délimité contient des caractères de délimitation, un traitement particulier est nécessaire :  
@@ -140,8 +139,8 @@ ms.lasthandoff: 01/08/2018
  En outre, l'identificateur Measures de l'exemple précédent a été délimité pour illustrer la délimitation de plusieurs identificateurs.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence du langage MDX &#40; MDX &#41;](../mdx/mdx-language-reference-mdx.md)   
- [Principes de base de requête MDX &#40; Analysis Services &#41;](../analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services.md)   
- [Éléments de syntaxe MDX &#40; MDX &#41;](../mdx/mdx-syntax-elements-mdx.md)  
+ [Référence du langage MDX & #40 ; MDX & #41 ;](../mdx/mdx-language-reference-mdx.md)   
+ [Principes de base de requête MDX & #40 ; Analysis Services & #41 ;](../analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services.md)   
+ [Éléments de syntaxe MDX &#40;MDX&#41;](../mdx/mdx-syntax-elements-mdx.md)  
   
   

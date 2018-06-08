@@ -1,16 +1,14 @@
 ---
 title: sp_migrate_user_to_contained (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_migrate_user_to_contained
@@ -20,23 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - sp_migrate_user_to_contained
 ms.assetid: b3a49ff6-46ad-4ee7-b6fe-7e54213dc33e
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 366d2347118fa55a8541e7f84a268b173ae5b2e3
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: 606898bf92ff727cd3d48f49f7f352cf06e8f9fe
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spmigrateusertocontained-transact-sql"></a>sp_migrate_user_to_contained (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
 
   Convertit un utilisateur de la base de données mappé à un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], en utilisateur de base de données à relation contenant-contenu avec mot de passe. Dans une base de données à relation contenant-contenu, utilisez cette procédure pour supprimer les dépendances sur l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] où la base de données est installée. **sp_migrate_user_to_contained** sépare l’utilisateur d’origine [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion, afin que les paramètres tels que la langue par défaut et le mot de passe puissent être administrés séparément pour cette base de données. **sp_migrate_user_to_contained** peut être utilisé avant de déplacer la base de données à une autre instance de la [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’éliminer les dépendances sur actuel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexions d’instance.  
   
- **Remarque** cette procédure est utilisée uniquement dans une base de données. Pour plus d’informations, consultez [Bases de données à relation contenant-contenu](../../relational-databases/databases/contained-databases.md).  
+ **Remarque** cette procédure est utilisée uniquement dans une base de données. Pour plus d’informations, consultez [Contained Databases](../../relational-databases/databases/contained-databases.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -60,7 +57,7 @@ sp_migrate_user_to_contained [ @username = ] N'user' ,
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  **sp_migrate_user_to_contained** crée l’utilisateur de base de données de relation contenant-contenu avec mot de passe, quel que soit les propriétés ou les autorisations du compte de connexion. Par exemple, la procédure peut réussir si la connexion est désactivée ou si l’utilisateur se voit refuser le **CONNECT** autorisé à la base de données.  
   
  **sp_migrate_user_to_contained** présente les restrictions suivantes.  

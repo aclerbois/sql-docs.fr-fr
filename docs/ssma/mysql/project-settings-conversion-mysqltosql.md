@@ -1,30 +1,28 @@
 ---
-title: "Paramètres (Conversion) (MySQLToSQL) du projet | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (Conversion) (MySQLToSQL) du projet | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 7ad5fe44-6445-4ba8-a457-5af792631f11
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9062c61ad2a799a20370c8b406843e0e4a209869
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d9f35b745693caf0270638a7590f74de7e1ff875
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-conversion-mysqltosql"></a>Paramètres du projet (Conversion) (MySQLToSQL)
 La page de Conversion de la **les paramètres de projet** boîte de dialogue contient des paramètres permettant de personnaliser comment SSMA convertit la syntaxe de MySQL à la syntaxe SQL Server ou SQL Azure.  
@@ -96,7 +94,7 @@ Le volet de la Conversion est disponible dans le **les paramètres de projet** e
 |||  
 |-|-|  
 |**Terme**|**Définition**|  
-|**Par défaut la cadre englobant {XMAX &#124; XMIN &#124; YMAX &#124; YMIN} pour les index spatiaux**|Définit la valeur par défaut pour {XMAX &#124; XMIN &#124; YMAX &#124; Paramètre YMIN} du cadre englobant utilisé dans les index spatiaux.<br /><br />**Mode par défaut**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0<br /><br />**Mode optimisé**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0<br /><br />**Mode complet**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0|  
+|**Par défaut de la zone englobante {XMAX&#124;XMIN&#124;YMAX&#124;YMIN} pour les index spatiaux**|Définit la valeur par défaut pour {XMAX&#124;XMIN&#124;YMAX&#124;YMIN} paramètre du cadre englobant utilisé dans les index spatiaux.<br /><br />**Mode par défaut**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0<br /><br />**Mode optimisé**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0<br /><br />**Mode complet**<br /><br />XMAX : 100<br /><br />XMIN : 0<br /><br />YMAX : 100<br /><br />YMIN : 0|  
 |**Densité de grille par défaut pour les index spatiaux**|Définit la valeur par défaut pour LEVEL_1, LEVEL_2, LEVEL_3 et LEVEL_4 de densité de grille utilisée dans les index spatiaux.<br /><br />**Mode par défaut**<br /><br />LEVEL_1 : par défaut<br /><br />LEVEL_2 : par défaut<br /><br />LEVEL_3 : par défaut<br /><br />LEVEL_4 : par défaut<br /><br />**Mode optimisé**<br /><br />LEVEL_1 : par défaut<br /><br />LEVEL_2 : par défaut<br /><br />LEVEL_3 : par défaut<br /><br />LEVEL_4 : par défaut<br /><br />**Mode complet**<br /><br />LEVEL_1 : par défaut<br /><br />LEVEL_2 : par défaut<br /><br />LEVEL_3 : par défaut<br /><br />LEVEL_4 : par défaut|  
   
 ### <a name="transactions"></a>Transactions  
@@ -121,5 +119,5 @@ Le volet de la Conversion est disponible dans le **les paramètres de projet** e
 |**Zéro-date dans les colonnes NOT NULL**|Spécifie comment gérer l’affectation à des colonnes NOT NULL de zéro-date, date de zéro ou des valeurs de date/heure non valide.<br /><br />**Mode par défaut**: GETDATE()<br /><br />**Mode optimisé**: GETDATE()<br /><br />**Mode plein**: GETDATE()|  
   
 ## <a name="see-also"></a>Voir aussi  
-[Référence de l’Interface utilisateur &#40; MySQLToSQL &#41;](../../ssma/mysql/user-interface-reference-mysqltosql.md)  
+[Référence de l’Interface utilisateur &#40;MySQLToSQL&#41;](../../ssma/mysql/user-interface-reference-mysqltosql.md)  
   

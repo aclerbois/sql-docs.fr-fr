@@ -1,34 +1,30 @@
 ---
-title: "Configurables par l’utilisateur, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Configurables par l’utilisateur, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - User-Configurable event class
 ms.assetid: 06fe5f07-a0dd-4968-b123-56b124a86020
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6858694e1407806db8763d8de3dd01feda3bab59
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5807cc3e9a07588c7ca8e266bbd76d13ff6ac1ef
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="user-configurable-event-class"></a>Configurables par l’utilisateur, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Utilisez la catégorie d'événement Configurables par l'utilisateur pour surveiller les événements définis par l'utilisateur. Créez des événements définis par l'utilisateur pour surveiller des événements ne pouvant pas être surveillés par les événements fournis par le système dans les autres catégories d'événement. Par exemple, il est possible de créer un événement défini par l'utilisateur pour surveiller la progression de l'application que vous testez. Durant l'exécution de l'application, des événements peuvent être générés à des points prédéfinis, ce qui vous permet de définir le point d'exécution actuel de votre application.  
+  Utilisez la catégorie d'événement Configurables par l'utilisateur pour surveiller les événements définis par l'utilisateur. Créez des événements définis par l'utilisateur pour surveiller des événements ne pouvant pas être surveillés par les événements fournis par le système dans les autres catégories d'événement. Par exemple, il est possible de créer un événement défini par l'utilisateur pour surveiller la progression de l'application que vous testez. Durant l'exécution de l'application, des événements peuvent être générés à des points prédéfinis, ce qui vous permet de définir le point d'exécution actuel de votre application.  
   
 ## <a name="user-configurable-event-class-data-columns"></a>Colonnes de la classe d'événements configurables par l'utilisateur  
   

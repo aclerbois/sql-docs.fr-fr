@@ -1,30 +1,23 @@
 ---
-title: "Ajouter une source de données à un modèle tabulaire (Analysis Services AMO-TOM) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Ajouter une source de données à un modèle tabulaire (Analysis Services AMO-TOM) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-ms.assetid: e54a8a1b-b964-4b6e-9057-44d50af676c0
-caps.latest.revision: "6"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 501e99294ccc603a8815448c7c23b380ea125b46
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0adf565560bc6022b55564d2ca595bfe91d7afa7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-a-data-source-to-tabular-model-analysis-services-amo-tom"></a>Ajouter une source de données à un modèle tabulaire (Analysis Services AMO-TOM)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Le **source de données** classe dans l’espace de noms Microsoft.AnalysisServices.Tabular est une abstraction d’une source de données d’un modèle tabulaire qui spécifie le type et l’emplacement des données importées pendant une opération d’actualisation des données. 
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+Le **source de données** classe dans l’espace de noms Microsoft.AnalysisServices.Tabular est une abstraction d’une source de données d’un modèle tabulaire qui spécifie le type et l’emplacement des données importées pendant une opération d’actualisation des données. 
 
 Vous pouvez ajouter une source de données au modèle tabulaire en instanciant un objet d’une classe dérivée de **DataSource**, puis l’ajouter à la **sources de données** collection de l’objet de modèle. Pour valider les modifications sur le serveur, appelez **Model.SaveChanges()** ou **Database.Update(UpdateOptions.ExpandFull)**. 
 

@@ -1,17 +1,16 @@
 ---
 title: Transformations Integration Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transformations [Integration Services], listed
 - transformations [Integration Services], types
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - row transformations [Integration Services]
 - rowset transformations [Integration Services]
 ms.assetid: c70c4f6e-82dd-4948-b923-fd5193f67f7e
-caps.latest.revision: 
+caps.latest.revision: 56
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c2e4f97d129840e2c045fe942996a5918163c137
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 10f340ee0cc9d8184c612e80de7b872356b0e962
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-transformations"></a>Transformations Integration Services
   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] Les transformations sont les composants du flux de données d’un package qui agrègent, fusionnent, distribuent et modifient des données. Les transformations peuvent également effectuer des opérations de recherche et générer des échantillons de dataset. Cette section décrit les transformations incluses dans [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] et explique leur fonctionnement.  

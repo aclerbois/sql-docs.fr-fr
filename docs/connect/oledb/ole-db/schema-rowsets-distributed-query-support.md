@@ -3,14 +3,12 @@ title: Prise en charge de la requête dans les ensembles de lignes de schéma di
 description: Prise en charge de la requête dans les ensembles de lignes de schéma distribuées
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -22,20 +20,19 @@ helpviewer_keywords:
 - rowsets [OLE DB], schema
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5a1ac686e4dc9da7dee3b444adfbcbda801901d0
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: a3d6af2c655c04b3b1e69318d6b829a372b446bf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schema-rowsets---distributed-query-support"></a>Ensembles de lignes de schéma - prise en charge des requêtes distribuées
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
   Pour prendre en charge [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] les requêtes, le pilote OLE DB pour SQL Server distribuées **IDBSchemaRowset** interface retourne des métadonnées sur les serveurs liés.  
   
- Si la propriété DBPROPSET_SQLSERVERSESSION SSPROP_QUOTEDCATALOGNAMES est VARIANT_TRUE, un identificateur entre guillemets peut être spécifié pour le nom de catalogue (par exemple "my.catalog"). Lors de la restriction de sortie d’ensemble de lignes de schéma par catalogue, le pilote OLE DB pour SQL Server reconnaît un nom en deux parties contenant le serveur lié et le nom de catalogue. Pour les ensembles de lignes de schéma dans le tableau ci-dessous, en spécifiant un nom de catalogue en deux parties en tant que *linked_server***.*** catalogue* limite la sortie au catalogue applicable du serveur lié nommé.  
+ Si la propriété DBPROPSET_SQLSERVERSESSION SSPROP_QUOTEDCATALOGNAMES est VARIANT_TRUE, un identificateur entre guillemets peut être spécifié pour le nom de catalogue (par exemple "my.catalog"). Lors de la restriction de sortie d’ensemble de lignes de schéma par catalogue, le pilote OLE DB pour SQL Server reconnaît un nom en deux parties contenant le serveur lié et le nom de catalogue. Pour les ensembles de lignes de schéma dans le tableau ci-dessous, en spécifiant un nom de catalogue en deux parties en tant que *linked_server ***.*** catalogue* limite la sortie au catalogue applicable du serveur lié nommé.  
   
 |Ensemble de lignes de schéma|Restriction de catalogue|  
 |-------------------|-------------------------|  

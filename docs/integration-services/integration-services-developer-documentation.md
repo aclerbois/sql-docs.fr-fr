@@ -1,15 +1,14 @@
 ---
-title: "Documentation Integration Services pour les développeurs | Microsoft Docs"
-ms.custom: 
+title: Documentation Integration Services pour les développeurs | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - SQL Server Integration Services, programming
 - packages [Integration Services], programming
 ms.assetid: 60fe148b-a7c4-4289-ae3e-2e949fc1886c
-caps.latest.revision: 
+caps.latest.revision: 76
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 718bc3b4bad9f3444f3ba47871c86bb18c45c7ac
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 53c86f77f5280e7245f4c5a5ca6c5f694138ed10
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-developer-documentation"></a>Documentation Integration Services pour les développeurs
   [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] inclut un modèle objet entièrement réécrit, auquel ont été ajoutées de nombreuses fonctionnalités, afin d'offrir un outil convivial, souple et puissant pour étendre et programmer des packages. Les développeurs peuvent étendre et programmer pratiquement tous les aspects des packages [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)].  

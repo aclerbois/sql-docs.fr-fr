@@ -1,34 +1,30 @@
 ---
 title: Trouver les objets comportant le plus de verrous | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - objects [SQL Server], extended events
 - xe
 - extended events [SQL Server], locks
 - objects [SQL Server], locks
 ms.assetid: fcbadbda-c91c-43f0-a1b5-601e40110e07
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3bb0a5bf64e10535da964820b5a5ee51c55cc9e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7df0515a0df29e1c97daa9dac32f8ac70efec8b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-the-objects-that-have-the-most-locks-taken-on-them"></a>Trouver les objets comportant le plus de verrous
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

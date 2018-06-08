@@ -1,16 +1,14 @@
 ---
-title: sp_help_schedule (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_schedule (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_schedule
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_schedule
 ms.assetid: b2fc4ce1-0a8e-44d2-b206-7dc7b258d8c9
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 59223cb9ba6fd0a7129966fa49aef4d8e7e67eb3
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 1803a5a2842d40700cc4b0f82c800cfbb6cc2e05
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpschedule-transact-sql"></a>sp_help_schedule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,16 +47,16 @@ sp_help_schedule
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@schedule_id =** ] *id*  
+ [  **@schedule_id =** ] *id*  
  Identificateur de la planification à répertorier. *nom_de_la_planification* est **int**, sans valeur par défaut. Soit *id_de_la_planification* ou *nom_de_la_planification* peut être spécifié.  
   
- [ **@schedule_name =** ] **'***schedule_name***'**  
+ [  **@schedule_name =** ] **'***nom_de_la_planification***'**  
  Nom de la planification à répertorier. *nom_de_la_planification* est **sysname**, sans valeur par défaut. Soit *id_de_la_planification* ou *nom_de_la_planification* peut être spécifié.  
   
- [ **@attached_schedules_only** = ] *attached_schedules_only* ]  
+ [ **@attached_schedules_only** =] *attached_schedules_only* ]  
  Spécifie s'il faut afficher seulement les planifications auxquelles un travail est attaché. *attached_schedules_only* est **bits**, avec une valeur par défaut **0**. Lorsque *attached_schedules_only* est **0**, toutes les planifications sont affichées. Lorsque *attached_schedules_only* est **1**, le jeu de résultats contient uniquement des planifications qui sont associées à une tâche.  
   
- [ **@include_description** = ] *include_description*  
+ [ **@include_description** =] *include_description*  
  Spécifie s'il faut inclure les descriptions dans le jeu de résultats. *include_description* est **bits**, avec une valeur par défaut **0**. Lorsque *include_description* est **0**, le *schedule_description* colonne du jeu de résultats contient un espace réservé. Lorsque *include_description* est **1**, la description de la planification est incluse dans le jeu de résultats.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -75,10 +72,10 @@ sp_help_schedule
 |**schedule_name**|**sysname**|Nom de la planification.|  
 |**enabled**|**int**|Si la planification est activée (**1**) ou désactivée (**0**).|  
 |**freq_type**|**int**|Valeur indiquant quand le travail doit être exécuté.<br /><br /> **1** = une fois<br /><br /> **4** = quotidienne<br /><br /> **8** = hebdomadaire<br /><br /> **16** = mensuelle<br /><br /> **32** = mensuellement, relatif à la **freq_interval**<br /><br /> **64** = lancé au démarrage du service SQLServerAgent.|  
-|**freq_interval**|**int**|Jours lorsque la tâche est exécutée. La valeur dépend de la valeur de **freq_type**. Pour plus d’informations, consultez [sp_add_schedule &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
-|**freq_subday_type**|**int**|Unités de **freq_subday_interval**. Pour plus d’informations, consultez [sp_add_schedule &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
-|**freq_subday_interval**|**int**|Nombre de **freq_subday_type** périodes entre chaque exécution du travail. Pour plus d’informations, consultez [sp_add_schedule &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
-|**freq_relative_interval**|**int**|Planifiées du travail de le **freq_interval** dans chaque mois. Pour plus d’informations, consultez [sp_add_schedule &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
+|**freq_interval**|**int**|Jours lorsque la tâche est exécutée. La valeur dépend de la valeur de **freq_type**. Pour plus d’informations, consultez [sp_add_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
+|**freq_subday_type**|**int**|Unités de **freq_subday_interval**. Pour plus d’informations, consultez [sp_add_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
+|**freq_subday_interval**|**int**|Nombre de **freq_subday_type** périodes entre chaque exécution du travail. Pour plus d’informations, consultez [sp_add_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
+|**freq_relative_interval**|**int**|Planifiées du travail de le **freq_interval** dans chaque mois. Pour plus d’informations, consultez [sp_add_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-schedule-transact-sql.md).|  
 |**freq_recurrence_factor**|**int**|Nombre de mois devant s'écouler entre les exécutions planifiées du travail.|  
 |**active_start_date**|**int**|Date d'activation de la planification.|  
 |**active_end_date**|**int**|Date de fin de la planification.|  

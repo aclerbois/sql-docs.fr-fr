@@ -1,36 +1,23 @@
 ---
-title: "Élément HideMemberIf (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément HideMemberIf (ASSL) | Documents Microsoft
+ms.date: 5/8/2018
+ms.prod: sql
+ms.custom: assl
+ms.reviewer: owend
+ms.technology: analysis-services
 ms.topic: reference
-apiname: HideMemberIf Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: HideMemberIf
-helpviewer_keywords: HideMemberIf element
-ms.assetid: ff0e6b19-6216-43ac-ba76-1628da8c333b
-caps.latest.revision: "34"
-author: Minewiskan
+author: minewiskan
 ms.author: owend
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a5a53e8896e389b2b0cb4b478ef8a9e8ff9bd45a
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 7c2e76ae7cd667327f2eaf464ba790a34d0b253c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="hidememberif-element-assl"></a>Élément HideMemberIf (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Indique si et quand un membre d’un niveau doit être masqué à partir d’applications clientes.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Indique si et quand un membre d'un niveau doit être masqué par rapport aux applications clientes.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,19 +36,19 @@ ms.lasthandoff: 01/08/2018
 |--------------------|-----------------|  
 |Type de données et longueur|Chaîne (énumération)|  
 |Valeur par défaut|*Jamais*|  
-|Cardinalité|0-1 : élément facultatif qui peut apparaître une fois et une seule.|  
+|Cardinalité|0-1: élément facultatif qui peut apparaître une fois et une seule.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
   
 |Relation|Élément|  
 |------------------|-------------|  
 |Élément parent|[Level](../../../analysis-services/scripting/objects/level-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La valeur de cet élément est limitée à l'une des chaînes du tableau suivant.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |*Jamais*|Les membres ne sont jamais masqués.|  
 |*OnlyChildWithNoName*|Le membre est masqué s'il est le seul enfant de son parent et si son nom est vide.|  
@@ -69,10 +56,10 @@ ms.lasthandoff: 01/08/2018
 |*NoName*|Un membre est masqué lorsque son nom est vide.|  
 |*ParentName*|Un membre est masqué lorsque son nom est identique à celui de son parent.|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L’énumération qui correspond aux valeurs autorisées pour **HideMemberIf** dans l’objet d’objets AMO (Analysis Management) est modèle <xref:Microsoft.AnalysisServices.HideIfValue>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)  
+ [Propriétés & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/properties/properties-assl.md)  
   
   

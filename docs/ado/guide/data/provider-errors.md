@@ -1,17 +1,15 @@
 ---
 title: Erreurs du fournisseur | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - errors collection [ADO]
 - provider errors [ADO]
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - errors [ADO], provider
 - Error object [ADO], provider errors
 ms.assetid: cc7d6ff9-2034-45c6-9d61-90b177010054
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2ce82243dda984375bef3a1630650ff27c68dd09
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 551c3a7e7f90f69601ff84449d60fc79c1375ece
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="provider-errors"></a>Erreurs du fournisseur
 En cas d’erreur du fournisseur, une erreur d’exécution de -2147467259 est retournée. Lorsque vous recevez cette erreur, vérifiez le **erreurs** collection actif **connexion** objet, qui contient une ou plusieurs erreurs décrivant ce qui s’est produite.  
@@ -76,7 +73,7 @@ End Function
 |**Description**|Description textuelle de l’erreur qui s’est produite.|  
 |**HelpContext, HelpFile**|Désigne le fichier d’aide et de la rubrique d’aide qui contient une description de l’erreur qui s’est produite.|  
 |**NativeError**|Le numéro d’erreur spécifique au fournisseur.|  
-|**Number**|Un entier Long qui représente le nombre (répertoriées dans le **ErrorValueEnum**) de l’erreur qui s’est produite.|  
+|**Nombre**|Un entier Long qui représente le nombre (répertoriées dans le **ErrorValueEnum**) de l’erreur qui s’est produite.|  
 |**Source**|Indique le nom de l’objet ou l’application qui a généré une erreur.|  
 |**SQLState**|Un code d’erreur à cinq caractères que le fournisseur renvoie au cours du processus d’une instruction SQL.|  
   

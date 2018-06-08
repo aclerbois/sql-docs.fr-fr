@@ -1,28 +1,26 @@
 ---
-title: "Fournir une requête de source OData au moment de l’exécution | Microsoft Docs"
-ms.custom: 
+title: Fournir une requête de source OData au moment de l’exécution | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: bcbba7f4-6e5d-46e6-a73a-3f17d3ff376a
-caps.latest.revision: 
+caps.latest.revision: 7
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 457e4f5b8d52be56aa82f854e5a87caae72ebd99
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e910db3700fe505ea072e211826a7a7a307d876f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="provide-an-odata-source-query-at-runtime"></a>Fournir une requête de source OData au moment de l’exécution
  Vous pouvez modifier la requête de source OData au moment de l’exécution en ajoutant une *expression* à la propriété **[OData Source].[Query]** de la tâche de flux de données.  

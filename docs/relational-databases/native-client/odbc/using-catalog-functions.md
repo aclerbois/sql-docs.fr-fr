@@ -1,15 +1,14 @@
 ---
-title: "À l’aide des fonctions de catalogue | Documents Microsoft"
-ms.custom: 
+title: À l’aide des fonctions de catalogue | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|ODBC
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC, functions
@@ -19,16 +18,16 @@ helpviewer_keywords:
 - catalog functions [ODBC]
 - functions [ODBC]
 ms.assetid: 7773fb2e-06b5-4c4b-88e9-0ad9132ad273
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77d2f7de5e43df5cfc559b12bb88dcdd4412af6e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d0f6a370d3a45a07c57f4de30fb22afdd55ea5f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-catalog-functions"></a>Utilisation des fonctions de catalogue
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/25/2018
   
  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prend en charge les requêtes distribuées dans lesquelles l'accès aux données de plusieurs sources de données OLE DB hétérogènes s'effectue via une requête unique. L'une des méthodes d'accès à une source de données OLE DB distante consiste à définir la source de données comme serveur lié. Cela est possible à l’aide de [sp_addlinkedserver](../../../relational-databases/system-stored-procedures/sp-addlinkedserver-transact-sql.md). Une fois que le serveur lié a été défini, les objets de ce serveur peuvent être référencés dans les instructions Transact-SQL en utilisant un nom en quatre parties :  
   
- *linked_server_name.catalog.schema.object_name*.  
+ *nom_serveur_lié.catalogue.schéma.nom_objet*.  
   
  Le pilote ODBC [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client prend en charge deux fonctions spécifiques au pilote qui aident à obtenir les informations de catalogue des serveurs liés :  
   
@@ -52,7 +51,7 @@ ms.lasthandoff: 01/25/2018
   
      Retourne la liste des catalogues contenus dans un serveur lié.  
   
- Une fois que vous avez un nom de serveur lié et un nom de catalogue, le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pilote ODBC Native Client prend en charge l’obtention des informations à partir du catalogue à l’aide d’un nom en deux parties de *linked_server_name***.*** catalogue* pour *CatalogName* fonctions de catalogue sur ODBC suivante :  
+ Une fois que vous avez un nom de serveur lié et un nom de catalogue, le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pilote ODBC Native Client prend en charge l’obtention des informations à partir du catalogue à l’aide d’un nom en deux parties de *linked_server_name ***.*** catalogue* pour *CatalogName* fonctions de catalogue sur ODBC suivante :  
   
 -   **SQLColumnPrivileges**  
   
@@ -66,7 +65,7 @@ ms.lasthandoff: 01/25/2018
   
 -   **SQLTables**  
   
- Les deux parties *linked_server_name***.*** catalogue* est également pris en charge pour *FKCatalogName* et *PKCatalogName* sur [SQLForeignKeys](../../../relational-databases/native-client-odbc-api/sqlforeignkeys.md).  
+ Les deux parties *linked_server_name ***.*** catalogue* est également pris en charge pour *FKCatalogName* et *PKCatalogName* sur [SQLForeignKeys](../../../relational-databases/native-client-odbc-api/sqlforeignkeys.md).  
   
  L'utilisation de SQLLinkedServers et SQLLinkedCatalogs requiert les fichiers suivants :  
   
@@ -83,7 +82,7 @@ ms.lasthandoff: 01/25/2018
      Doit être présent lors de l'exécution. sqlncli11.dll est distribué avec le pilote ODBC [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client.  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
+ [SQL Server Native Client &#40;ODBC&#41;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
  [SQLColumnPrivileges](../../../relational-databases/native-client-odbc-api/sqlcolumnprivileges.md)   
  [SQLColumns](../../../relational-databases/native-client-odbc-api/sqlcolumns.md)   
  [SQLPrimaryKeys](../../../relational-databases/native-client-odbc-api/sqlprimarykeys.md)   

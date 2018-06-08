@@ -1,16 +1,14 @@
 ---
 title: CREATE COLUMN MASTER KEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/18/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SQL13.SWB.NEWCOLUMNMASTERKEYDEF.GENERAL.F1
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - CREATE COLUMN MASTER KEY statement
 - Always Encrypted, create column master key
 ms.assetid: f8926b95-e146-4e3f-b56b-add0c0d0a30e
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 30cf5c83de208992cb36692c0b4b7b07fabf5cb6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e5dafed981c030b5f06e41610fd3add6c4af0238
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-column-master-key-transact-sql"></a>CREATE COLUMN MASTER KEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -117,7 +114,7 @@ Les tableaux ci-dessous capturent les noms des fournisseurs de système :
   
      Où :  
   
-     *nom_fournisseur*  
+     *ProviderName*  
      Nom d’un fournisseur de service de chiffrement, qui implémente CAPI, pour le magasin de clés principales de colonne. Si vous utilisez un module HSM comme magasin de clés, il doit s’agir du nom du fournisseur de service de chiffrement fourni par le fournisseur de votre module HSM. Le fournisseur doit être installé sur un ordinateur client.  
   
      *identificateur_clé*  
@@ -135,7 +132,7 @@ Les tableaux ci-dessous capturent les noms des fournisseurs de système :
   
      Où :  
   
-     *nom_fournisseur*  
+     *ProviderName*  
      Nom du fournisseur de stockage de clés (KSP), qui implémente l’API CNG (Cryptography Next Generation), pour le magasin de clés principales de colonne. Si vous utilisez un module HSM comme magasin de clés, il doit s’agir du nom du fournisseur de stockage de clés fourni par le fournisseur de votre module HSM. Le fournisseur doit être installé sur un ordinateur client.  
   
      *identificateur_clé*  

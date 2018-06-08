@@ -1,15 +1,14 @@
 ---
-title: "Utilisation des Notifications de requête | Documents Microsoft"
-ms.custom: 
+title: Utilisation des Notifications de requête | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - data access [SQL Server Native Client], query notifications
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - SQL Server Native Client OLE DB provider, query notifications
 - consumer notification for rowset changes [SQL Server Native Client]
 ms.assetid: 2f906fff-5ed9-4527-9fd3-9c0d27c3dff7
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6405ed5efa051a7b8c5bb7865b9f2a469c640592
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b7b40840f1258dfaaf1900aae4e4b891d1bf7322
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-query-notifications"></a>Utilisation de notifications de requêtes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -54,7 +53,7 @@ ms.lasthandoff: 01/25/2018
   
  Les notifications sont envoyées une seule fois. Pour une notification continue des modifications de données, un nouvel abonnement doit être créé en exécutant à nouveau la requête une fois chaque notification traitée.  
   
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Les applications clientes natives généralement recevoir des notifications à l’aide de la [!INCLUDE[tsql](../../../includes/tsql-md.md)] [réception](../../../t-sql/statements/receive-transact-sql.md) commande pour lire les notifications de la file d’attente associé au service spécifié dans les options de notification.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Les applications clientes natives généralement recevoir des notifications à l’aide de la [!INCLUDE[tsql](../../../includes/tsql-md.md)] [réception](../../../t-sql/statements/receive-transact-sql.md) commande pour lire les notifications de la file d’attente associé au service spécifié dans les options de notification.  
   
 > [!NOTE]  
 >  Les noms de tables doivent être qualifiés dans des requêtes pour lesquelles une notification est requise, par exemple `dbo.myTable`. Les noms de tables doivent être qualifiés avec des noms en deux parties. L'abonnement n'est pas valide si des noms en trois ou quatre parties sont utilisés.  

@@ -1,16 +1,15 @@
 ---
-title: "Correspondance des types de séquence | Documents Microsoft"
-ms.custom: 
+title: Correspondance des types de séquence | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - sequence type matching [XQuery]
 - XQuery, sequence type matching
 ms.assetid: 8c56fb69-ca04-4aba-b55a-64ae216c492d
-caps.latest.revision: 
+caps.latest.revision: 16
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5a86a8fdfbae6fb345839d281141c3606abae804
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2ce01e8b2f587527b264a3ea11021257375fb842
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-system---sequence-type-matching"></a>Système - de type correspondance des types de séquence
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -42,7 +40,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Vous voudrez peut-être savoir si l'expression retourne un élément XML ou un nœud d'attribut d'un nom et d'un type spécifiques.  
   
- Vous pouvez utiliser l'opérateur booléen `instance of` dans la mise en correspondance du type de séquence. Pour plus d’informations sur la `instance of` expression, consultez [sequencetype, Expressions &#40; XQuery &#41; ](../xquery/sequencetype-expressions-xquery.md).  
+ Vous pouvez utiliser l'opérateur booléen `instance of` dans la mise en correspondance du type de séquence. Pour plus d’informations sur la `instance of` expression, consultez [sequencetype, Expressions &#40;XQuery&#41;](../xquery/sequencetype-expressions-xquery.md).  
   
 ## <a name="comparing-the-atomic-value-type-returned-by-an-expression"></a>Comparaison du type de valeur atomique retourné par une expression  
  Si une expression retourne une séquence de valeurs atomiques, vous pouvez être amené à rechercher le type de la valeur dans la séquence. Les exemples ci-dessous illustrent comment utiliser la syntaxe de type de séquence pour évaluer le type de valeur atomique retourné par une expression.  
@@ -442,6 +440,6 @@ RETURN
 -   Requêtes explicites pour **xsi : type** ou **xsi : nil** n’est pas pris en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Type System &#40;XQuery&#41;](../xquery/type-system-xquery.md)  
+ [Système de type &#40;XQuery&#41;](../xquery/type-system-xquery.md)  
   
   

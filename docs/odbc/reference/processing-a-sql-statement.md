@@ -1,16 +1,14 @@
 ---
-title: "Traitement d’une instruction SQL | Documents Microsoft"
-ms.custom: 
+title: Traitement d’une instruction SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sending SQL statements to DBMS [ODBC]
 - SQL statements [ODBC], processing
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - SQL statements [ODBC]
 - ODBC [ODBC], SQL
 ms.assetid: 96270c4f-2efd-4dc1-a985-ed7fd5658db2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: aaf3c1fddb673e0cd62d334e9b87eeb2d9016ec6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7068b61081a368382b109af99f60bf6bf254e800
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-a-sql-statement"></a>Traitement d’une instruction SQL
 Avant d’aborder les techniques d’utilisation de SQL par programme, il est nécessaire décrire le mode de traitement d’une instruction SQL. Les étapes sont communes à toutes les techniques de trois, bien que chaque technique leur exécution à des moments différents. L’illustration suivante montre les étapes impliquées dans le traitement d’une instruction SQL, qui sont décrites dans le reste de cette section.  

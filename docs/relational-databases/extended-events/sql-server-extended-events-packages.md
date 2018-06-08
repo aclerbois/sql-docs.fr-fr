@@ -1,32 +1,28 @@
 ---
-title: "Packages d’événements étendus SQL Server | Microsoft Docs"
-ms.custom: 
+title: Packages d’événements étendus SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - extended events [SQL Server], packages
 - xe
 ms.assetid: 6bcb04fc-ca04-48f4-b96a-20b604973447
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab1e592975fce7d5439d33df265bb8ce5bf05c45
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 377dbdfe399ea069475fb876a8171385797fa824
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-extended-events-packages"></a>Packages d’événements étendus SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

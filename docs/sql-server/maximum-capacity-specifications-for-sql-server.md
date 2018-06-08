@@ -1,16 +1,16 @@
 ---
-title: "Spécifications des capacités maximales pour SQL Server | Microsoft Docs"
+title: Spécifications des capacités maximales pour SQL Server | Microsoft Docs
 ms.date: 11/6/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-non-specified
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.custom: ''
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - objects [SQL Server]
 - number capacity specifications [SQL Server]
@@ -23,16 +23,15 @@ helpviewer_keywords:
 - objects [SQL Server], capacity specifications
 - Database Engine [SQL Server], capacity specifications
 ms.assetid: 13e95046-0e76-4604-b561-d1a74dd824d7
-caps.latest.revision: "88"
+caps.latest.revision: 88
 author: MikeRayMSFT
 ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 9ec628362449c449d26005797e806e47b4614a79
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: 1cd2e8b76948a5f2d89b19157894d72de378f3ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maximum-capacity-specifications-for-sql-server"></a>Spécifications des capacités maximales pour SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +64,7 @@ ms.lasthandoff: 12/05/2017
 |Octets dans le texte source d'une procédure stockée||Taille de lot inférieure ou 250 Mo||  
 |Octets par colonne **varchar(max)**, **varbinary(max)**, **xml**, **text**ou **image**||2^31-1||  
 |Caractères par colonne **ntext** ou **nvarchar (max)**||2^30-1||  
-|Index cluster par table||1||  
+|Index cluster par table|| 1||  
 |Colonnes dans les clauses GROUP BY, ORDER BY||Limité uniquement par le nombre d'octets||  
 |Colonnes ou expressions dans une instruction GROUP BY WITH CUBE ou WITH ROLLUP||10||  
 |Colonnes par clé d’index||32|Si la table contient au moins un index XML, la clé de clustering de la table d’utilisateur est limitée à 31 colonnes, car la colonne XML est ajoutée à la clé de clustering du principal index XML. Dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], vous pouvez inclure des colonnes non-clés dans un index non cluster pour éviter la limitation à un maximum de 32 colonnes clés. Pour plus d’informations, consultez [Créer des index avec colonnes incluses](../relational-databases/indexes/create-indexes-with-included-columns.md).|  
@@ -79,12 +78,12 @@ ms.lasthandoff: 12/05/2017
 |Taille de la base de données||524 272 téraoctets||  
 |Bases de données par instance de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]||32,767||  
 |Groupes de fichiers par base de données||32,767||  
-|Groupes de fichiers par base de données pour les données optimisées en mémoire||1||  
+|Groupes de fichiers par base de données pour les données optimisées en mémoire|| 1||  
 |Fichiers par base de données||32,767||  
 |Taille de fichier (données)||16 téraoctets||  
 |Taille de fichier (journal)||2 téraoctets||  
 |Fichiers de données pour les données optimisées en mémoire par base de données||4 096 dans [!INCLUDE[ssSQL14](../includes/ssSQL14-md.md)]. Les versions ultérieures de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] n’imposent pas une telle limite stricte.||  
-|Fichier delta par fichier de données pour les données optimisées en mémoire||1||  
+|Fichier delta par fichier de données pour les données optimisées en mémoire|| 1||  
 |Références de table de clé étrangère par table||Sortantes = 253. Entrantes = 10 000.|Pour connaître les restrictions associées, consultez [Create Foreign Key Relationships](../relational-databases/tables/create-foreign-key-relationships.md).|  
 |Longueur d'identificateur (en caractères)||128||  
 |Instances par ordinateur||50 instances sur un serveur autonome.<br /><br /> 25 instances sur un cluster de basculement si vous utilisez un disque de cluster partagé, car l'option stockée pour votre installation de cluster [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prend en charge 50 instances sur un cluster de basculement si vous choisissez les partages SMB comme option de stockage de votre installation de cluster.||  
@@ -106,7 +105,7 @@ ms.lasthandoff: 12/05/2017
 |Partitions par table ou index partitionné||15,000||  
 |Statistiques sur les colonnes non indexées||30,000|| 
 |Tables par instruction SELECT||Limité uniquement par les ressources disponibles||  
-|Déclencheurs par table||Limité par le nombre d'objets dans une base de données|Les objets de base de données comprennent des tables, des vues, des procédures stockées, des fonctions définies par l’utilisateur, des déclencheurs, des règles, des valeurs par défaut et des contraintes. Au total, le nombre de tous les objets d'une base de données ne peut pas dépasser 2 147 483 647.|  
+|Déclencheurs par table||Limité par le nombre d'objets dans une base de données|Les objets de base de données comprennent des tables, des vues, des procédures stockées, des fonctions définies par l’utilisateur, des déclencheurs, des règles, des valeurs par défaut et des contraintes. Au total, le nombre de tous les objets d'une base de données ne peut pas dépasser 2 147 483 647.|  
 |Colonnes par instruction UPDATE (tableaux larges)||4096||  
 |Connexions utilisateur||32,767||  
 |Index XML||249||  
@@ -121,9 +120,9 @@ ms.lasthandoff: 12/05/2017
 |Nombre total d'instances de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] par utilitaire [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]||200*|  
 |Bases de données utilisateur par instance de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], notamment les applications de la couche Données||50|  
 |Nombre total de bases de données utilisateur par utilitaire [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]||1,000|  
-|Groupes de fichiers par base de données||1|  
-|Fichiers de données par groupe de fichiers||1|  
-|Fichiers journaux par base de données||1|  
+|Groupes de fichiers par base de données|| 1|  
+|Fichiers de données par groupe de fichiers|| 1|  
+|Fichiers journaux par base de données|| 1|  
 |Volumes par ordinateur||3|  
   
  * Le nombre maximal d’instances gérées de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prises en charge par l’utilitaire [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] peut varier en fonction de la configuration matérielle du serveur. Pour obtenir des informations de prise en main, consultez [Fonctionnalités et tâches de l’utilitaire SQL Server](https://msdn.microsoft.com/library/ee210548.aspx). [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] n’est pas disponible dans toutes les éditions de [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](https://msdn.microsoft.com/library/cc645993.aspx).    
@@ -133,7 +132,7 @@ ms.lasthandoff: 12/05/2017
   
 |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Object DAC||Tailles maximales/nombres maximaux [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] (64-bit)|  
 |------------------------------------------|-|------------------------------------------------------------------|  
-|Bases de données par DAC||1|  
+|Bases de données par DAC|| 1|  
 |Objets par DAC*||Limité par le nombre d'objets dans une base de données ou la mémoire disponible.|  
   
  * Les types d’objets inclus dans la limite sont des utilisateurs, des tables, des vues, des procédures stockées, des fonctions définies par l’utilisateur, des types de données définis par l’utilisateur, des rôles de base de données, des schémas et des types de table définis par l’utilisateur.  
@@ -155,7 +154,7 @@ ms.lasthandoff: 12/05/2017
   
  ** La table de base peut inclure le nombre maximal de colonnes autorisées dans la base de données de publication (1 024 pour [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]), mais les colonnes doivent être filtrées à partir de l’article si elles sont plus nombreuses que le maximum spécifié pour le type de publication.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Configurations matérielle et logicielle requises pour l’installation de SQL Server 2016](../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md)   
  [Paramètres de l'outil d'analyse de configuration système](../database-engine/install-windows/check-parameters-for-the-system-configuration-checker.md)   
  [Fonctionnalités et tâches de l’utilitaire SQL Server](../relational-databases/manage/sql-server-utility-features-and-tasks.md)  

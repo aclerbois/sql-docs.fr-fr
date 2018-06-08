@@ -1,31 +1,29 @@
 ---
-title: "Étape 3 : Preuve de concept pour la connexion à SQL à l’aide de Ruby | Documents Microsoft"
-ms.custom: 
+title: 'Étape 3 : Preuve de concept pour la connexion à SQL à l’aide de Ruby | Documents Microsoft'
+ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ruby
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: cac20b18-0a6d-4243-bbda-a5d1b9476441
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 481061c2d37bd4b6c6cf0c5c131f2c8a24f3025f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: a5bf98585281b4b84869c385c848d9add459d57b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-ruby"></a>Étape 3 : Preuve de concept pour la connexion à SQL à l’aide de Ruby
 
-Cet exemple doit être considérée comme une preuve de concept uniquement.  L’exemple de code est simplifiée par souci de clarté et ne représente pas nécessairement les meilleures pratiques recommandées par Microsoft.  
+Cet exemple doit être considéré comme une preuve de concept uniquement.  L’exemple de code est simplifié par souci de clarté et ne représente pas nécessairement les meilleures pratiques recommandées par Microsoft.  
   
 ## <a name="step-1--connect"></a>Étape 1 : se connecter  
   
@@ -60,7 +58,7 @@ Dans l’exemple de code, la [TinyTds::Result](https://github.com/rails-sqlserve
   
 ## <a name="step-3--insert-a-row"></a>Étape 3 : Insérer une ligne  
   
-Dans cet exemple, vous allez apprendre à exécuter une [insérer](../../t-sql/statements/insert-transact-sql.md) instruction passer en toute sécurité, des paramètres qui protègent votre application à partir de [injection SQL](../../relational-databases/tables/primary-and-foreign-key-constraints.md) valeur.    
+Dans cet exemple, vous allez apprendre à passer en toute sécurité une commande [INSERT](../../t-sql/statements/insert-transact-sql.md), en passant des valeurs en paramètres qui protègeront votre application à partir des tentatives [d'injection SQL](../../relational-databases/tables/primary-and-foreign-key-constraints.md).    
   
 Pour utiliser TinyTDS avec Azure, il est recommandé d’exécuter plusieurs `SET` instructions pour modifier la façon dont la session en cours gère des informations spécifiques. Recommandé `SET` instructions sont fournies dans l’exemple de code. Par exemple, `SET ANSI_NULL_DFLT_ON` autorisera les nouvelles colonnes créées pour autoriser les valeurs null même si l’état de la possibilité de valeur null de la colonne n’est pas explicitement défini.  
   

@@ -1,16 +1,14 @@
 ---
 title: Extraction de lignes avec SQLBulkOperations | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data updates [ODBC], bookmarks
 - SQLBulkOperations function [ODBC], fetching rows
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - updating data [ODBC], bookmarks
 - updating data [ODBC], SQLBulkOperations
 ms.assetid: 0efee2d6-ce94-411e-9976-97ba28b8da37
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5b3af3d83d9d0dab4735842621bbcb49fab69a4c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b2481fe60919a120c0e286c6b7bf3554923bdd0d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetching-rows-with-sqlbulkoperations"></a>Extraction de lignes avec SQLBulkOperations
 Peuvent récupérer des données dans un ensemble de lignes à l’aide de signets par un appel à **SQLBulkOperations.** Les lignes doivent être extraites sont identifiées par les signets dans une colonne liée de signet. Colonnes avec la valeur SQL_COLUMN_IGNORE ne sont pas extraits.  

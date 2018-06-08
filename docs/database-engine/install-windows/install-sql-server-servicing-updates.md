@@ -1,27 +1,24 @@
 ---
-title: "Installer des mises à jour de maintenance de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Installer des mises à jour de maintenance de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7d6c962b-c8d0-49f7-a2ac-00ad8dca930a
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 13
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: d543239bfec50ec6b5466bf8e57d98fba542e8b7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 35aa7987ff9cd94741ca1a35c9c81c5ed8ecf62b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771281"
 ---
 # <a name="install-sql-server-servicing-updates"></a>Installer des mises à jour de maintenance de SQL Server
 

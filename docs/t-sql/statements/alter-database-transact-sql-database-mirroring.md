@@ -1,16 +1,14 @@
 ---
-title: "Mise en miroir de bases de données ALTER DATABASE (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données ALTER DATABASE (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - ALTER DATABASE statement, database mirroring
 - database mirroring [SQL Server], Transact-SQL
 ms.assetid: 27a032ef-1cf6-4959-8e67-03d28c4b3465
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 22
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 54396925abb0e8eb2d6006ffdd4048551792d6db
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 4960ade90e187635920e3cf5180e1c97cc874e1b
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-database-transact-sql-database-mirroring"></a>Mise en miroir de bases de données ALTER DATABASE (Transact-SQL) 
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -112,7 +109,7 @@ SELECT role_desc, state_desc FROM sys.database_mirroring_endpoints
   
  Pour plus d’informations, consultez [Spécifier une adresse réseau de serveur &#40;mise en miroir de bases de données&#41;](../../database-engine/database-mirroring/specify-a-server-network-address-database-mirroring.md).  
   
- L’exemple suivant illustre la clause SET PARTNER **='***partner_server***'** :  
+ L’exemple suivant illustre la clause SET PARTNER **='***partner_server***'**  :  
   
 ```  
 'TCP://MYSERVER.mydomain.Adventure-Works.com:7777'  

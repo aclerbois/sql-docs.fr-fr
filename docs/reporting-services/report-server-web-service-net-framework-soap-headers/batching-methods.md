@@ -1,17 +1,17 @@
 ---
-title: "Méthodes de traitement par lot | Microsoft Docs"
-ms.custom: 
+title: Méthodes de traitement par lot | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service-net-framework-soap-headers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - methods [Reporting Services], batches
 - BatchHeader SOAP header
@@ -22,16 +22,15 @@ helpviewer_keywords:
 - locking [Reporting Services]
 - multiple Web service methods
 ms.assetid: 86435534-c9fe-4b49-b88c-7fb6d21976b0
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ea3dc6c1bd099482234c779914336ec1c01475ae
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3625c60ef6a1b3d0993e3bc782f911792a9f8bd2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="batching-methods"></a>Méthodes de traitement par lot
   L'utilisation d'en-têtes SOAP dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] vous permet d'inclure plusieurs méthodes Web Service dans une même opération. Les méthodes sont exécutées dans la portée d'une transaction de base de données unique, dans l'ordre de leur appel.  

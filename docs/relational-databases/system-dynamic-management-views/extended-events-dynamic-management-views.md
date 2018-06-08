@@ -1,16 +1,12 @@
 ---
-title: "Vues de gestion dynamique des événements étendus | Documents Microsoft"
-ms.custom: 
+title: Vues de gestion dynamique des événements étendus | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +14,15 @@ helpviewer_keywords:
 - extended events [SQL Server], dynamic management objects
 - dynamic management objects (SQL Server)
 ms.assetid: 6d337c2f-71e9-4e0c-8877-9780baa7699d
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1da38898ba639dbf40c319f634cdf66c92686e1a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: d5825b80de77d10d74a193cb4f07a33e720c6fa6
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="extended-events-dynamic-management-views"></a>Vues de gestion dynamique des Événements étendus
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

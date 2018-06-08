@@ -1,17 +1,16 @@
 ---
-title: "Éditeur avancé | Microsoft Docs"
-ms.custom: 
+title: Éditeur avancé | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.advancededitor.columnproperties.f1
 - sql13.dts.designer.advancededitor.componentproperties.f1
@@ -19,16 +18,15 @@ f1_keywords:
 - sql13.dts.designer.advancededitor.connections.f1
 - sql13.dts.designer.advancededitor.columnmappings.f1
 ms.assetid: 5ad0ac71-fa8b-4c26-bd42-e6ef00c87571
-caps.latest.revision: 
+caps.latest.revision: 7
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e6c929bf7a8aa3525049e295e83541547fa420f7
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: eadaa9e7608fb1ad17fee92f44aa8138ded0f7d1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="advanced-editor"></a>Éditeur avancé
   Utilisez la boîte de dialogue **Éditeur avancé** pour configurer les propriétés du composant de l'objet [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] sélectionné.  

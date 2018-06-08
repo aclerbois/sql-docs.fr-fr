@@ -1,32 +1,23 @@
 ---
-title: "Cubes locaux (Analysis Services - données multidimensionnelles) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: cubes [Analysis Services], local
-ms.assetid: e52e1515-35a7-4dc3-9bbf-736d176ba0c7
-caps.latest.revision: "13"
-author: Minewiskan
+title: Cubes locaux (Analysis Services - données multidimensionnelles) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b9b84028e2561b5a0fc25c6866d86d667b8873f2
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 11c4a7b2917d7baa4860137fa0764026264024a8
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="local-cubes-analysis-services---multidimensional-data"></a>Cubes locaux (Analysis Services - Données multidimensionnelles)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Pour créer, mettre à jour ou supprimer des cubes locaux, vous devez écrire et exécuter un script ASSL ou un programme AMO.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Pour créer, mettre à jour ou supprimer des cubes locaux, vous devez écrire et exécuter un script ASSL ou un programme AMO.  
   
  Les cubes locaux et les modèles d'exploration de données locaux permettent d'analyser une station de travail cliente lorsqu'elle est déconnectée du réseau. Par exemple, une application cliente peut appeler le fournisseur OLE DB pour OLAP 9.0 (MSOLAP.3), qui à son tour charge le moteur de cube local pour créer et interroger des cubes locaux, comme l'indique l'illustration suivante.  
   
@@ -44,10 +35,10 @@ ms.lasthandoff: 01/08/2018
   
 |Source de données pour un cube local|Méthode de création|  
 |------------------------------------|---------------------|  
-|Cube serveur|Vous pouvez utiliser l’instruction CREATE GLOBAL CUBE ou un [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] script ASSL (Scripting Language) pour créer et remplir un cube à partir d’un cube basé sur le serveur. Pour plus d’informations, consultez [CREATE GLOBAL CUBE Statement &#40; MDX &#41; ](../../../mdx/mdx-data-definition-create-global-cube.md) ou [Analysis Services de langage de script &#40; ASSL de XMLA &#41; ](../../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md).|  
+|Cube serveur|Vous pouvez utiliser l’instruction CREATE GLOBAL CUBE ou un [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] script ASSL (Scripting Language) pour créer et remplir un cube à partir d’un cube basé sur le serveur. Pour plus d’informations, consultez [CREATE GLOBAL CUBE Statement &#40;MDX&#41; ](../../../mdx/mdx-data-definition-create-global-cube.md) ou [Analysis Services Scripting Language &#40;ASSL de XMLA&#41;](../../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md).|  
 |Source de données relationnelles|Vous utilisez un script ASSL pour créer et remplir un cube à partir d'une base de données relationnelle OLE DB. Pour créer un cube local via ASSL, il vous suffit de vous connecter à un fichier de cube local (*.cub) et d'exécuter le script ASSL de la même manière que vous exécutez un script ASSL sur une instance [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] pour créer un cube serveur. Pour plus d’informations, consultez [Référence Analysis Services Scripting Language &#40;ASSL&#41;](../../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md).|  
   
- Utilisez l'instruction REFRESH CUBE pour reconstruire un cube local et mettre à jour ses données. Pour plus d’informations, consultez [REFRESH CUBE Statement &#40; MDX &#41; ](../../../mdx/mdx-data-definition-refresh-cube.md).  
+ Utilisez l'instruction REFRESH CUBE pour reconstruire un cube local et mettre à jour ses données. Pour plus d’informations, consultez [REFRESH CUBE Statement &#40;MDX&#41;](../../../mdx/mdx-data-definition-refresh-cube.md).  
   
 ### <a name="local-cubes-created-from-server-based-cubes"></a>Cubes locaux créés à partir de cubes serveur  
  Lorsque vous concevez des cubes locaux créés à partir de cubes serveur, vous devez prendre en compte les points suivants :  
@@ -75,13 +66,13 @@ ms.lasthandoff: 01/08/2018
 -   Seuls les membres calculés, jeux nommés et affectations qui reposent sur des mesures et des dimensions ajoutées au cube local apparaîtront dans le cube local. Les membres calculés, jeux nommés et affectations non valides seront automatiquement exclus.  
   
 ### <a name="security"></a>Sécurité  
- Dans l’ordre pour un utilisateur de créer un cube local à partir d’un cube serveur, l’utilisateur doit pouvoir **extraction et Cube Local** autorisations sur le cube serveur. Pour plus d’informations, consultez [accorder cube ou autorisations de modèle &#40; Analysis Services &#41; ](../../../analysis-services/multidimensional-models/grant-cube-or-model-permissions-analysis-services.md).  
+ Dans l’ordre pour un utilisateur de créer un cube local à partir d’un cube serveur, l’utilisateur doit pouvoir **extraction et Cube Local** autorisations sur le cube serveur. Pour plus d’informations, consultez [accorder des autorisations de cube ou modèle &#40;Analysis Services&#41;](../../../analysis-services/multidimensional-models/grant-cube-or-model-permissions-analysis-services.md).  
   
  Les cubes locaux ne sont pas sécurisés à l'aide de rôles comme les cubes serveur. Toute personne bénéficiant d'un accès au niveau fichier à un fichier de cube local peut interroger les cubes contenus dans ce dernier. Vous pouvez utiliser la **mot de passe de chiffrement** propriété de connexion d’un fichier de cube local pour définir un mot de passe sur le fichier de cube local. La définition d'un mot de passe sur un fichier de cube local nécessite que toutes les connexions futures au fichier de cube local utilisent ce mot de passe afin d'interroger le fichier.  
   
 ## <a name="see-also"></a>Voir aussi  
- [CREATE GLOBAL CUBE instruction &#40; MDX &#41;](../../../mdx/mdx-data-definition-create-global-cube.md)   
- [Développement avec Analysis Services Scripting Language &#40; ASSL &#41;](../../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
- [Actualiser le CUBE instruction &#40; MDX &#41;](../../../mdx/mdx-data-definition-refresh-cube.md)  
+ [Instruction CREATE GLOBAL CUBE &#40;MDX&#41;](../../../mdx/mdx-data-definition-create-global-cube.md)   
+ [Développement avec Analysis Services Scripting Language &#40;ASSL&#41;](../../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
+ [REFRESH CUBE Statement &#40;MDX&#41;](../../../mdx/mdx-data-definition-refresh-cube.md)  
   
   

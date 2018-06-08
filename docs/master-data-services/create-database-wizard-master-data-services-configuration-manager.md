@@ -1,32 +1,33 @@
 ---
-title: "Assistant Création d’une base de données (Gestionnaire de configuration Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Assistant Création d’une base de données (Gestionnaire de configuration Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.mds.configmanager.createdbwiz.f1
 ms.assetid: 45fe7a23-a46c-4d40-8bca-3431fbfc5c9d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a788de09b69515f8313fc20a6b5953312feec611
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: f29c8f95b93fc45f853294b5fdcb82a0119c92cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-database-wizard-master-data-services-configuration-manager"></a>Assistant Création d'une base de données (Gestionnaire de configuration des services de données de référence)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Utilisez l'Assistant **Création d'une base de données** pour créer une base de données [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] .  
   
 ## <a name="database-server"></a>Serveur de base de données  

@@ -1,33 +1,30 @@
 ---
-title: "AbsolutePosition et CursorLocation, propriétés-exemple (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: AbsolutePosition et CursorLocation, propriétés-exemple (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - CursorLocation property [ADO], VC++ example
 - AbsolutePosition property [ADO], VC++ example
 ms.assetid: 48c07216-d199-4822-89f8-ce928d3d2b74
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c938ab769c47f0d474f39f98ea8a164b77ecc74
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 043b3d527ebf7d9dc81cb3ac43915b523789fcfe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="absoluteposition-and-cursorlocation-properties-example-vc"></a>AbsolutePosition et CursorLocation, propriétés-exemple (VC ++)
 Cet exemple montre comment la [AbsolutePosition](../../../ado/reference/ado-api/absoluteposition-property-ado.md) propriété peut suivre la progression d’une boucle qui énumère tous les enregistrements d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md). Elle utilise le [CursorLocation](../../../ado/reference/ado-api/cursorlocation-property-ado.md) propriété pour activer la **AbsolutePosition** propriété en définissant le curseur sur un curseur client.  

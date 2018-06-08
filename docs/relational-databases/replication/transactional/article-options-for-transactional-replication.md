@@ -1,31 +1,29 @@
 ---
-title: "Options d’articles pour la réplication transactionnelle | Microsoft Docs"
-ms.custom: 
+title: Options d’articles pour la réplication transactionnelle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - articles [SQL Server replication], transactional replication options
 - transactional replication, article options
 ms.assetid: 3469b185-0ea5-4690-a71c-717230d886b6
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3826d505f54b64b04e81425d8c4f304babfe6be4
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: f85cd256c6e2c1594944e79d1e2692473951476b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="article-options-for-transactional-replication"></a>Options d'articles pour la réplication transactionnelle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

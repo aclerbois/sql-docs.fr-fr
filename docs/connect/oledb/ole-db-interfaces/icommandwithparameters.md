@@ -3,9 +3,8 @@ title: ICommandWithParameters | Documents Microsoft
 description: Interface ICommandWithParameters
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-interfaces
 ms.reviewer: ''
 ms.suite: sql
@@ -15,13 +14,12 @@ ms.tgt_pltfrm: ''
 ms.topic: reference
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9d810ea13512537572bf39fbda938b6b59d64db7
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 52f14f27b313db701108f537b126fa9321fab971
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="icommandwithparameters"></a>ICommandWithParameters
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -31,6 +29,6 @@ ms.lasthandoff: 03/30/2018
  Également depuis la [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)], lors de l’appel d’ICommandWithParameters::SetParameterInfo, la valeur passée à la *pwszName* paramètre doit être un identificateur valide. Pour plus d'informations, consultez [Database Identifiers](../../../relational-databases/databases/database-identifiers.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Interfaces &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/oledb-driver-for-sql-server-ole-db-interfaces.md) 
+ [Interfaces & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/oledb-driver-for-sql-server-ole-db-interfaces.md) 
   
   

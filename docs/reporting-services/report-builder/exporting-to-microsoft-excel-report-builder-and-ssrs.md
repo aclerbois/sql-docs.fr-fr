@@ -1,27 +1,25 @@
 ---
-title: "Exportation vers Microsoft Excel (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Exportation vers Microsoft Excel (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/09/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 74f726fc-2167-47af-9093-1644e03ef01f
-caps.latest.revision: 
+caps.latest.revision: 28
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 604952211abf63d6dacb111c8170d678acd2d80a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2985d8337cfbbb33b867de3f84f307bea4a6a67b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exporting-to-microsoft-excel-report-builder-and-ssrs"></a>Exportation vers Microsoft Excel (Générateur de rapports et SSRS)
   L’extension de rendu Excel de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] restitue un rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] au format [!INCLUDE[ofprexcel](../../includes/ofprexcel-md.md)] (.xlsx). Avec l'extension de rendu Excel, la largeur des colonnes dans Excel correspond plus précisément à la largeur des colonnes dans les rapports.  
@@ -38,7 +36,7 @@ ms.lasthandoff: 02/15/2018
 >  Pour réduire le risque d'exécution accidentelle de scripts malveillants, ouvrez les rapports rendus uniquement à partir de sources approuvées. Pour plus d’informations sur la sécurisation des rapports, consultez [Sécurisation des rapports et des ressources](../../reporting-services/security/secure-reports-and-resources.md).  
   
 ##  <a name="ExcelLimitations"></a> Limitations d'Excel  
- [!INCLUDE[ofprexcel](../../includes/ofprexcel-md.md)] impose des limitations aux rapports exportés en raison des fonctionnalités d'Excel et de ses formats de fichiers. Les plus significatives sont les suivantes :  
+ [!INCLUDE[ofprexcel](../../includes/ofprexcel-md.md)] impose des limitations aux rapports exportés en raison des fonctionnalités d'Excel et de ses formats de fichiers. Les plus significatives sont les suivantes :  
   
 -   La largeur de colonne maximum est limitée à 255 caractères ou de 1 726,5 points. Le convertisseur ne vérifie pas que la largeur de colonne est inférieure à cette limite.  
   
@@ -95,7 +93,7 @@ ms.lasthandoff: 02/15/2018
 ### <a name="report-headers-and-footers"></a>En-têtes et pieds de page de rapport  
  Les limitations suivantes s'appliquent aux en-têtes et pieds de page de rapport :  
   
--   Les en-têtes et les pieds de page Excel prennent en charge un maximum de 256 caractères, y compris la balise. L'extension de rendu tronque la chaîne à 256 caractères.  
+-   Les en-têtes et les pieds de page Excel prennent en charge un maximum de 256 caractères, y compris la balise. L'extension de rendu tronque la chaîne à 256 caractères.  
   
 -   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] ne prend pas en charge les marges dans les en-têtes et pieds de page de rapport. En cas d'exportation vers Excel, ces valeurs de marge sont définies sur zéro et tout en-tête ou pied de page contenant plusieurs lignes de données peut ne pas imprimer plusieurs lignes, en fonction des paramètres de l'imprimante.  
   

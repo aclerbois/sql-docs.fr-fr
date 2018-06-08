@@ -1,16 +1,15 @@
 ---
-title: "L’Assistant Migration (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: L’Assistant Migration (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - Migration Wizard, New Project
 - Migration Wizard, Selecting objects to migrate
 ms.assetid: 5bab5914-b2ae-4795-8cf5-83e42d64bef2
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7b8e039ef80efd41fabbaeeddbb9e3e1e9acc2ea
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 356f06ec66e0fa18c0406f34ce706eae0eaf2886
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="migration-wizard-accesstosql"></a>Assistant Migration (AccessToSQL)
 L’Assistant Migration vous guide à travers la migration d’une ou plusieurs bases de données à partir de l’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure. À l’aide de l’Assistant, vous serez créer un projet, ajouter des bases de données au projet, sélectionnez les objets à migrer, puis se connecter à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure. Vous serez également convertir, charger et migrer les données et les schémas d’accès. Si vous le souhaitez, vous pouvez lier les tables de l’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] les tables ou SQL Azure.  
@@ -53,7 +51,7 @@ Par défaut, SSMA démarre l’Assistant de Migration lorsque vous démarrez SSM
 La page Créer un nouveau projet est où vous entrez le nom, l’emplacement et la migration projet type de fichier projet (la version de SQL Server utilisée pour la migration de cible). Pour plus d’informations, consultez [nouveau projet (SSMA)](http://msdn.microsoft.com/en-us/ca294f6d-eeb5-42ca-9306-156281a3f0f3)  
   
 ## <a name="add-access-databases-page"></a>Ajouter la Page d’accès aux bases de données  
-La page Ajouter des bases de données Access est où vous ajoutez une ou plusieurs bases de données Access au projet. Vous pouvez ajouter des bases de données en cliquant sur **ajouter les bases de données**, puis en sélectionnant les bases de données à partir de la **ouvrir** fenêtre. Ou, vous pouvez rechercher des bases de données à l’aide de la **trouver les bases de données** bouton. Pour plus d'informations, consultez les rubriques suivantes :  
+La page Ajouter des bases de données Access est où vous ajoutez une ou plusieurs bases de données Access au projet. Vous pouvez ajouter des bases de données en cliquant sur **ajouter les bases de données**, puis en sélectionnant les bases de données à partir de la **ouvrir** fenêtre. Ou, vous pouvez rechercher des bases de données à l’aide de la **trouver les bases de données** bouton. Pour plus d'informations, consultez les rubriques suivantes :  
   
 -   [Ajout et suppression de fichiers de base de données Access](http://msdn.microsoft.com/en-us/e944c740-4c8a-4bc1-b0ed-be57bc06dced)  
   
@@ -108,7 +106,7 @@ La page de l’état de Migration affiche la progression de la conversion les sc
 Pour plus d’informations sur cette page, consultez [convertir, charger et migrer](http://msdn.microsoft.com/en-us/4ec83e96-88a5-4b7b-8d5a-f3429d9a936b)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Prise en main de SQL Server Migration Assistant pour accéder au &#40; AccessToSQL &#41;](../../ssma/access/getting-started-with-sql-server-migration-assistant-for-access-accesstosql.md)  
+[Prise en main de SQL Server Migration Assistant pour Access &#40;AccessToSQL&#41;](../../ssma/access/getting-started-with-sql-server-migration-assistant-for-access-accesstosql.md)  
 [Migration des bases de données de l’accès à SQL Server](http://msdn.microsoft.com/en-us/76a3abcf-2998-4712-9490-fe8d872c89ca)  
 [Reference(Access) d’Interface utilisateur](http://msdn.microsoft.com/en-us/af24c303-4a41-449b-9c86-d6558a97e839)  
   

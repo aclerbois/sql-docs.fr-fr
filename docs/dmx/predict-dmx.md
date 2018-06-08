@@ -1,30 +1,31 @@
 ---
-title: "Prédire (DMX) | Documents Microsoft"
-ms.custom: 
+title: Prédire (DMX) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: PREDICT
-dev_langs: DMX
-helpviewer_keywords: Predict function
+f1_keywords:
+- PREDICT
+dev_langs:
+- DMX
+helpviewer_keywords:
+- Predict function
 ms.assetid: f02ff4b3-9bd7-409d-ad14-ead67b3206c4
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 448507936bab886a8d081ee487ab323a3a4a2ef4
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6f2aa8ba77b19aab0821777d669866409dbf01df
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="predict-dmx"></a>Predict (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +46,7 @@ Predict(<table column reference>, [option1], [option2], [option n], [INCLUDE_NOD
 ## <a name="return-type"></a>Type de retour  
  \<référence de colonne scalaire >  
   
- ou Gestionnaire de configuration  
+ ou  
   
  \<référence de colonne de table >  
   
@@ -54,7 +55,7 @@ Predict(<table column reference>, [option1], [option2], [option n], [INCLUDE_NOD
 > [!NOTE]  
 >  INCLUSIVE, EXCLUSIVE, INPUT_ONLY et INCLUDE_STATISTICS s'appliquent uniquement à une référence de colonne de table, et EXCLUDE_NULL et INCLUDE_NULL s'appliquent uniquement à une référence de colonne scalaire.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Les options sont EXCLUDE_NULL (par défaut), INCLUDE_NULL, INCLUSIVE, EXCLUSIVE (par défaut), INPUT_ONLY et INCLUDE_STATISTICS.  
   
 > [!NOTE]  
@@ -62,7 +63,7 @@ Predict(<table column reference>, [option1], [option2], [option n], [INCLUDE_NOD
   
  Le paramètre INCLUDE_NODE_ID retourne la colonne $NODEID dans le résultat. NODE_ID est le nœud de contenu sur lequel la prédiction est exécutée pour un cas particulier. Ce paramètre est facultatif lors de l’utilisation de prédiction sur les colonnes de la table.  
   
- Le  *n*  paramètre s’applique aux colonnes de table. Il définit le nombre de lignes retournées en fonction du type de prédiction. Si la colonne sous-jacente est la séquence, il appelle la **PredictSequence** (fonction). Si la colonne sous-jacente est une série chronologique, il appelle la **PredictTimeSeries** (fonction). Pour les types de prédictions associatives, il appelle la **PredictAssociation** (fonction).  
+ Le *n* paramètre s’applique aux colonnes de table. Il définit le nombre de lignes retournées en fonction du type de prédiction. Si la colonne sous-jacente est la séquence, il appelle la **PredictSequence** (fonction). Si la colonne sous-jacente est une série chronologique, il appelle la **PredictTimeSeries** (fonction). Pour les types de prédictions associatives, il appelle la **PredictAssociation** (fonction).  
   
  Le **Predict** fonction prend en charge le polymorphisme.  
   
@@ -98,8 +99,8 @@ FROM     [Association]
 |Mountain Tire Tube|1992|0.133879965051415|0.125304947722259|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)  
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)  
   
   

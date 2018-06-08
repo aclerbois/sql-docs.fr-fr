@@ -1,17 +1,16 @@
 ---
-title: "Surveiller la réplication par programmation | Microsoft Docs"
-ms.custom: 
+title: Surveiller la réplication par programmation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -31,16 +30,15 @@ helpviewer_keywords:
 - merge replication monitoring [SQL Server replication]
 - snapshot replication [SQL Server], monitoring
 ms.assetid: e8bf8850-8da5-4a4f-a399-64232b4e476d
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6b3787dd6b261187ca65dd3df908af700e7eb309
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: ebc5ab13c00b5af13a68325fc50c252f0ca68f4d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="programmatically-monitor-replication"></a>Surveiller la réplication par programmation
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

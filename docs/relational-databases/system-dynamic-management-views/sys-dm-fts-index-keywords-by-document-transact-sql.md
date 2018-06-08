@@ -1,16 +1,13 @@
 ---
-title: sys.dm_fts_index_keywords_by_document (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_fts_index_keywords_by_document (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_fts_index_keywords_by_document_TSQL
@@ -24,16 +21,16 @@ helpviewer_keywords:
 - sys.dm_fts_index_keywords_by_document dynamic management function
 - full-text search [SQL Server], viewing keywords
 ms.assetid: 793b978b-c8a1-428c-90c2-a3e49d81b5c9
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e2662effefa1c05c33364923342e0f73829a1df3
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 58377295a7bccadd1a1d273ba45469e817408949
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmftsindexkeywordsbydocument-transact-sql"></a>sys.dm_fts_index_keywords_by_document (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
@@ -61,10 +58,10 @@ sys.dm_fts_index_keywords_by_document
 ```  
   
 ## <a name="arguments"></a>Arguments  
- db_id('*database_name*')  
- Un appel à la [DB_ID()](../../t-sql/functions/db-id-transact-sql.md) (fonction). Cette fonction accepte un nom de base de données et retourne l'ID de la base de données, que sys.dm_fts_index_keywords_by_document utilise pour rechercher la base de données spécifiée. Si *nom_base_de_données* est omis, l’ID de base de données actuel est retourné.  
+ DB_ID ('*nom_base_de_données*')  
+ Un appel à la [DB_ID()](../../t-sql/functions/db-id-transact-sql.md) (fonction). Cette fonction accepte un nom de base de données et retourne l'ID de la base de données, que sys.dm_fts_index_keywords_by_document utilise pour rechercher la base de données spécifiée. Si *database_name* est omis, la fonction retourne l’ID de la base de données active.  
   
- object_id('*table_name*')  
+ object_id ('*table_name*')  
  Un appel à la [OBJECT_ID()](../../t-sql/functions/object-id-transact-sql.md) (fonction). Cette fonction accepte un nom de table et retourne l'ID de la table contenant l'index de recherche en texte intégral à examiner.  
   
 ## <a name="table-returned"></a>Table retournée  
@@ -86,7 +83,7 @@ sys.dm_fts_index_keywords_by_document
   
 -   Nombre de fois qu'un mot clé apparaît dans l'index de recherche en texte intégral entier, à savoir :  
   
-     ([SUM](../../t-sql/functions/sum-transact-sql.md)(**occurrence_count**) WHERE **keyword**=*keyword_value* )  
+     ([Somme](../../t-sql/functions/sum-transact-sql.md)(**occurrence_count**) où **mot clé**=*keyword_value* )  
   
 -   Nombre de fois qu'un mot clé apparaît dans une ligne ou un document donné.  
   
@@ -125,7 +122,7 @@ GO
  L'exemple suivant affiche le contenu de l'index de recherche en texte intégral au niveau du document dans la table `HumanResources.JobCandidate` de l'exemple de base de données `AdventureWorks2012`.  
   
 > [!NOTE]  
->  Vous pouvez créer cet index en exécutant l’exemple fourni pour la `HumanResources.JobCandidate` table [CREATE FULLTEXT INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
+>  Vous pouvez créer cet index en exécutant l’exemple fourni pour la `HumanResources.JobCandidate` table [CREATE FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
   
 ```  
 SELECT * FROM sys.dm_fts_index_keywords_by_document(db_id('AdventureWorks'),   
@@ -134,7 +131,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Recherche en texte intégral et fonctions et vues de gestion dynamique de la recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
+ [Recherche en texte intégral et les fonctions et vues de gestion dynamique de la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
  [Recherche en texte intégral](../../relational-databases/search/full-text-search.md)   
  [sys.dm_fts_index_keywords &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-transact-sql.md)   
  [sys.dm_fts_index_keywords_by_property &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-property-transact-sql.md)   

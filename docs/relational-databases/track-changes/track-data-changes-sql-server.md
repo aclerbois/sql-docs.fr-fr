@@ -1,17 +1,16 @@
 ---
-title: "Suivre les modifications de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Suivre les modifications de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/08/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change data capture [SQL Server], compared to change tracking
 - change data capture vs. change tracking
@@ -22,16 +21,17 @@ helpviewer_keywords:
 - change data capture [SQL Server], security
 - change data capture [SQL Server], other SQL Server features and
 ms.assetid: 7a34be46-15b4-4b6b-8497-cfd8f9f14234
-caps.latest.revision: 
+caps.latest.revision: 39
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d4f7c4422a192f60fec25e56553558041a579483
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 53c05afb9651f14f3d917d0d74e0b42f8cfdc056
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708877"
 ---
 # <a name="track-data-changes-sql-server"></a>Suivre les modifications de données (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -50,7 +50,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Des fonctions sont fournies pour l'obtention des informations de modification.  
   
--   Faible charge de traitement des opérations DML. Le suivi synchrone des modifications entraîne toujours une charge de traitement. Toutefois, le recours au suivi des modifications peut contribuer à réduire cette charge. La charge de traitement est souvent inférieure à celle qu'entraînent des solutions alternatives, en particulier lorsque celles-ci requièrent des déclencheurs d'utilisation.  
+-   Faible charge de traitement des opérations DML. Le suivi synchrone des modifications entraîne toujours une charge de traitement. Toutefois, le recours au suivi des modifications peut contribuer à réduire cette charge. La charge de traitement est souvent inférieure à celle qu’entraînent des solutions alternatives, en particulier lorsque celles-ci demandent d’utiliser des déclencheurs.  
   
 -   Le suivi des modifications est basé sur des transactions validées. L'ordre des modifications est basé sur l'heure de validation des transactions. Cela favorise l'obtention de résultats fiables lorsque sont impliquées des transactions longues ou qui se chevauchent. Les solutions personnalisées qui utilisent des valeurs **timestamp** doivent être conçues spécifiquement pour gérer ces scénarios.  
   
@@ -71,7 +71,7 @@ ms.lasthandoff: 02/09/2018
 ##  <a name="Capture"></a> Change Data Capture  
  La capture de données modifiées fournit des informations de modification historiques pour une table utilisateur en capturant à la fois le fait que des modifications DML aient été apportées et les données effectivement modifiées. Les modifications sont capturées à l'aide d'un processus asynchrone qui lit le journal des transactions et n'a qu'un faible impact sur le système.  
   
- Comme indiqué dans l'illustration suivante, les modifications apportées aux tables utilisateur sont capturées dans des tables de modifications correspondantes. Ces tables de modifications fournissent une vue historique des modifications au fil du temps. Les fonctions de [capture de données modifiées](../../relational-databases/system-functions/change-data-capture-functions-transact-sql.md)fournies par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] autorisent une utilisation facile et systématique des données modifiées.  
+ Comme indiqué dans l'illustration suivante, les modifications apportées aux tables utilisateur sont capturées dans des tables de modifications correspondantes. Ces tables de modifications fournissent une vue historique des modifications au fil du temps. Les fonctions de [capture des changements de données](../../relational-databases/system-functions/change-data-capture-functions-transact-sql.md) fournies par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permettent de consommer facilement et systématiquement les changements de données.  
   
  ![Illustration conceptuelle de la capture des données modifiées](../../relational-databases/track-changes/media/cdcart1.gif "Illustration conceptuelle de la capture des données modifiées")  
   
@@ -87,7 +87,7 @@ ms.lasthandoff: 02/09/2018
  Pour accéder aux données modifiées associées à une instance de capture, l'utilisateur doit pouvoir accéder à toutes les colonnes capturées de la table source associée. De plus, si un rôle de régulation est spécifié lors de la création de l'instance de capture, l'appelant doit également être membre du rôle de régulation spécifié. Les autres fonctions de capture de données modifiées générales pour accéder aux métadonnées seront accessibles à tous les utilisateurs de base de données par le biais du rôle public, bien que l'accès aux métadonnées retournées soit en général également régulé par le biais de l'accès choisi aux tables sources sous-jacentes et par l'appartenance aux rôles de régulation définis.  
   
  **Opérations DDL pour modifier les tables sources activées pour la capture de données modifiées**  
- Lorsqu’une table est activée pour la capture de données modifiées, des opérations DDL peuvent être appliquées à la table uniquement par un membre du rôle serveur fixe **sysadmin**, un membre du **rôle de base de données db_owner**ou un membre du **rôle de base de données db_ddladmin**. Les utilisateurs autorisés de manière explicite à effectuer des opérations DDL sur la table recevront l'erreur 22914 s'ils tentent d'effectuer cette opération.  
+ Lorsqu’une table est activée pour la capture de données modifiées, des opérations DDL peuvent être appliquées à la table uniquement par un membre du rôle serveur fixe **sysadmin**, un membre du **rôle de base de données db_owner**ou un membre du **rôle de base de données db_ddladmin**. Les utilisateurs autorisés de manière explicite à effectuer des opérations DDL sur la table recevront l'erreur 22914 s'ils tentent d'effectuer ces opérations.  
   
 ### <a name="data-type-considerations-for-change-data-capture"></a>Considérations relatives aux types de données pour la capture de données modifiées  
  Tous les types de colonne de base sont pris en charge par la capture de données modifiées. Le tableau suivant indique le comportement et les limites de plusieurs types de colonne.  

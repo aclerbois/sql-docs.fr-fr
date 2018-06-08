@@ -2,35 +2,32 @@
 title: Effectuer un basculement forcé manuel d'un groupe de disponibilité (SQL Server) | Microsoft Docs
 ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: availability-groups
+ms.prod: sql
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
+ms.technology: high-availability
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.availabilitygroup.forcefailover.f1
 helpviewer_keywords:
 - Availability Groups [SQL Server], failover
 - failover [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 222288fe-ffc0-4567-b624-5d91485d70f0
-caps.latest.revision: ''
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 83
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ae777b30e9222f32833b862bfabee2f65a5db76c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: b2561d24c8d229a74ab4bf3379338c4ba41ae335
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769565"
 ---
 # <a name="perform-a-forced-manual-failover-of-an-availability-group-sql-server"></a>Effectuer un basculement manuel forcé d'un groupe de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment effectuer un basculement forcé (avec perte de données potentielle) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un basculement forcé est une forme du basculement manuel qui est destiné exclusivement à la récupération d'urgence, lorsqu'un [basculement manuel planifié](../../../database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server.md) n'est pas possible. Si vous forcez le basculement vers un réplica secondaire qui n'est pas synchronisé, une perte de données est possible. Par conséquent, nous vous recommandons fortement de forcer le basculement uniquement si vous devez restaurer immédiatement un service dans le groupe de disponibilité et si vous êtes prêt à prendre le risque de perdre des données.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment effectuer un basculement forcé (avec perte de données potentielle) sur un groupe de disponibilité Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Un basculement forcé est une forme du basculement manuel qui est destiné exclusivement à la récupération d'urgence, lorsqu'un [basculement manuel planifié](../../../database-engine/availability-groups/windows/perform-a-planned-manual-failover-of-an-availability-group-sql-server.md) n'est pas possible. Si vous forcez le basculement vers un réplica secondaire qui n'est pas synchronisé, une perte de données est possible. Par conséquent, nous vous recommandons fortement de forcer le basculement uniquement si vous devez restaurer immédiatement un service dans le groupe de disponibilité et si vous êtes prêt à prendre le risque de perdre des données.  
   
  Après un basculement forcé, la cible de basculement vers laquelle le groupe de disponibilité a basculé devient le nouveau réplica principal. Les bases de données secondaires dans les réplicas secondaires restants sont suspendues et vous devez les reprendre manuellement. Lorsque l'ancien réplica principal devient disponible, il adopte le rôle secondaire, et les anciennes bases de données primaires deviennent les bases de données secondaires et passent à l'état SUSPENDED. Avant de reprendre une base de données secondaire donnée, vous pouvez récupérer les données perdues de celle-ci. Toutefois, notez que la troncation du journal des transactions est retardée sur une base de données primaire donnée, lorsque l'une de ses bases de données secondaires est interrompue.  
   
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/18/2018
     >  Lorsque le cluster WSFC possède un quorum sain, si vous exécutez une commande de basculement forcé sur un réplica secondaire synchronisé, le réplica effectue un basculement manuel planifié.  
   
 > [!NOTE]  
->  Pour plus d’informations sur les conditions préalables requises et les recommandations pour forcer le basculement et un exemple de scénario qui utilise un basculement forcé pour récupérer après d’une défaillance catastrophique, consultez [Exemple de scénario : utilisation d'un basculement forcé pour effectuer une récupération suite à une défaillance catastrophique](../../../database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server.md#ExampleRecoveryFromCatastrophy)plus loin dans cette rubrique.  
+>  Pour plus d’informations sur les conditions préalables requises et les recommandations pour forcer le basculement et un exemple de scénario qui utilise un basculement forcé pour récupérer après d’une défaillance catastrophique, consultez [Example Scenario: Using a Forced Failover to Recover from a Catastrophic Failure](../../../database-engine/availability-groups/windows/perform-a-forced-manual-failover-of-an-availability-group-sql-server.md#ExampleRecoveryFromCatastrophy)plus loin dans cette rubrique.  
   
 -   **Avant de commencer :**  
   
@@ -280,7 +277,7 @@ ms.lasthandoff: 01/18/2018
   
     -   [Sauvegarder un journal des transactions &#40;SQL Server&#41;](../../../relational-databases/backup-restore/back-up-a-transaction-log-sql-server.md)  
   
-##  <a name="ExampleRecoveryFromCatastrophy"></a> Utilisation d'un basculement forcé pour effectuer une récupération suite à une défaillance catastrophique  
+##  <a name="ExampleRecoveryFromCatastrophy"></a> Example Scenario: Using a Forced Failover to Recover from a Catastrophic Failure  
  Si le réplica principal échoue et qu'aucun réplica secondaire synchronisé n'est disponible, forcer le groupe de disponibilité à basculer peut constituer une réponse appropriée. La pertinence d'un basculement forcé varie : (1) selon que vous vous attendez ou non à ce que le réplica principal reste hors connexion pendant une durée plus longue que celle tolérée par votre contrat de qualité de service (SLA), et (2) selon que vous êtes prêt à prendre le risque de perdre éventuellement des données afin de mettre les bases de données primaires à disposition le plus rapidement possible. Si vous décidez qu'un groupe de disponibilité nécessite un basculement forcé, ce dernier ne constitue qu'une étape dans un processus plus complexe.  
   
  Pour illustrer les étapes requises pour utiliser un basculement forcé afin d'opérer une récupération suite à une défaillance catastrophique, cette rubrique présente un possible scénario de récupération d'urgence. Ce scénario d'exemple implique un groupe de disponibilité dont la topologie d'origine consiste en un centre de données principal qui héberge trois réplicas de disponibilité avec validation synchrone, y compris le réplica principal, et un centre de données distant qui héberge deux réplicas secondaires avec validation asynchrone. La figure suivante illustre la topologie d'origine de ce groupe de disponibilité d'exemple. Le groupe de disponibilité est hébergé par un cluster WSFC à plusieurs sous-réseaux avec trois nœuds dans le centre de données principal (**nœud 01**, **nœud 02**et **nœud 03**) et deux nœuds dans un centre de données distant (**nœud 04** et **nœud 05**).  

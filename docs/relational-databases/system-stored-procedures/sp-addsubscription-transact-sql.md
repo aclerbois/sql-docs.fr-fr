@@ -1,16 +1,15 @@
 ---
 title: sp_addsubscription (Transact-SQL) | Documents Microsoft
 ms.date: 10/28/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addsubscription
@@ -18,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addsubscription
 ms.assetid: 61ddf287-1fa0-4c1a-8657-ced50cebf0e0
-caps.latest.revision: 
+caps.latest.revision: 53
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 860f2f99457344167af9035d0a9ccc21eebc2577
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 08f0e46bde340eb1b64f8c7ad9ba2d1f8ec63d9f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddsubscription-transact-sql"></a>sp_addsubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -140,14 +138,14 @@ sp_addsubscription [ @publication = ] 'publication'
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|true|L'Agent de distribution n'envoie pas à l'abonné ses propres transactions. Utilisé avec la réplication transactionnelle bidirectionnelle. Pour plus d’informations, voir [Bidirectional Transactional Replication](../../relational-databases/replication/transactional/bidirectional-transactional-replication.md).|  
+|true|L'Agent de distribution n'envoie pas à l'abonné ses propres transactions. Utilisé avec la réplication transactionnelle bidirectionnelle. Pour plus d'informations, voir [Réplication transactionnelle bidirectionnelle](../../relational-databases/replication/transactional/bidirectional-transactional-replication.md).|  
 |false|L'Agent de distribution renvoie à l'abonné ses propres transactions.|  
 |NULL (par défaut)|Prend automatiquement la valeur true pour un Abonné [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et false pour un Abonné non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
   
  [ @frequency_type=] *frequency_type*  
  Fréquence de planification de la tâche de distribution. *frequency_type* est de type int et peut prendre l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |1|Une fois|  
 |2|À la demande|  
@@ -164,7 +162,7 @@ sp_addsubscription [ @publication = ] 'publication'
  [ @frequency_relative_interval=] *frequency_relative_interval*  
  Date de l'Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur 32 (fréquence mensuelle relative). *frequency_relative_interval* est **int**, et peut prendre l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |1|Première|  
 |2|Seconde|  
@@ -179,7 +177,7 @@ sp_addsubscription [ @publication = ] 'publication'
  [ @frequency_subday=] *frequency_subday*  
  Indique, en minutes, la fréquence de replanification pendant la période définie. *frequency_subday* est **int**, et peut prendre l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |1|Une fois|  
 |2|Seconde|  
@@ -211,7 +209,7 @@ sp_addsubscription [ @publication = ] 'publication'
  [ @enabled_for_syncmgr=] '*l’argument enabled_for_syncmgr*'  
  Indique si l’abonnement peut être synchronisé via [!INCLUDE[msCoName](../../includes/msconame-md.md)] Gestionnaire de synchronisation Windows. *l’argument enabled_for_syncmgr* est **nvarchar (5)**, avec FALSE comme valeur par défaut. Si la valeur est false, l'abonnement n'est pas enregistré par le Gestionnaire de synchronisation Windows. Si la valeur est true, l'abonnement est enregistré par le Gestionnaire de synchronisation Windows et il peut ensuite être synchronisé, sans qu'il soit nécessaire de démarrer [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Non pris en charge pour les serveurs de publication Oracle.  
   
- [ @offloadagent=] '*remote_agent_activation*'  
+ [ @offloadagent= ] '*remote_agent_activation*'  
  Indique si l'Agent peut être activé à distance. *remote_agent_activation* est **bits** avec une valeur par défaut 0.  
   
 > [!NOTE]  
@@ -284,7 +282,7 @@ sp_addsubscription [ @publication = ] 'publication'
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|0 (valeur par défaut)|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Abonné|  
+|0 (valeur par défaut)|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Abonné|  
 |1|Serveur de la source de données ODBC.|  
 |2|Base de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] Jet|  
 |3|Fournisseur OLE DB|  
@@ -316,7 +314,7 @@ sp_addsubscription [ @publication = ] 'publication'
   
  Lors de la sélection des options **sync_type** , *replication support only*, *initialize with backup*ou *initialize from lsn*, l'Agent de lecture du journal doit s'exécuter après l'exécution de **sp_addsubscription**, afin que les scripts d'installation soient écrits dans la base de données de distribution. L'Agent de lecture du journal doit s'exécuter sous un compte membre du rôle serveur fixe **sysadmin** . Lorsque l'option **sync_type** a la valeur *Automatic*, aucune action particulière de l'Agent de lecture du journal n'est requise.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe sysadmin ou du rôle de base de données fixe db_owner peuvent exécuter sp_addsubscription. Pour les abonnements par extraction de données (pull), les utilisateurs ayant une connexion à la liste d'accès aux publications peuvent exécuter sp_addsubscription.  
   
 ## <a name="example"></a>Exemple  
@@ -326,10 +324,10 @@ sp_addsubscription [ @publication = ] 'publication'
  [Create a Push Subscription](../../relational-databases/replication/create-a-push-subscription.md)   
  [Créer un abonnement pour un abonné non-SQL Server](../../relational-databases/replication/create-a-subscription-for-a-non-sql-server-subscriber.md)   
  [S’abonner à des publications](../../relational-databases/replication/subscribe-to-publications.md)   
- [sp_addpullsubscription_agent &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addpushsubscription-agent-transact-sql.md)   
- [sp_changesubstatus &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-changesubstatus-transact-sql.md)   
- [sp_dropsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql.md)   
- [sp_helpsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpsubscription-transact-sql.md)   
+ [sp_addpushsubscription_agent &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addpushsubscription-agent-transact-sql.md)   
+ [sp_changesubstatus &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changesubstatus-transact-sql.md)   
+ [sp_dropsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropsubscription-transact-sql.md)   
+ [sp_helpsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpsubscription-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

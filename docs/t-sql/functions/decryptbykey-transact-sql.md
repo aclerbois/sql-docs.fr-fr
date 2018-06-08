@@ -1,16 +1,14 @@
 ---
 title: DECRYPTBYKEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DecryptByKey_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - decryption [SQL Server], symmetric keys
 - DECRYPTBYKEY function
 ms.assetid: 6edf121f-ac62-4dae-90e6-6938f32603c9
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a1275be81fdf2a8405d0f744da962c3cf874eea2
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 57a2175b3c4096ab9af7203d7f7d3733947f8e78
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="decryptbykey-transact-sql"></a>DECRYPTBYKEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -66,7 +63,9 @@ DecryptByKey ( { 'ciphertext' | @ciphertext }
  Variable contenant les données à partir desquelles l'authentificateur sera généré. Doit correspondre à la valeur qui a été fournie à EncryptByKey.  
   
 ## <a name="return-types"></a>Types de retour  
- **varbinary** d’une taille maximale de 8 000 octets.  
+ **varbinary** d’une taille maximale de 8 000 octets.
+ 
+Retourne la valeur NULL si la clé symétrique utilisée pour chiffrer les données n’est pas ouverte ou le *texte chiffré* a la valeur NULL.
   
 ## <a name="remarks"></a>Notes   
  DecryptByKey utilise une clé symétrique. Cette clé symétrique doit déjà être ouverte dans la base de données. Plusieurs clés peuvent être ouvertes en même temps. Vous n'avez pas besoin d'ouvrir la clé tout de suite avant de déchiffrer le texte chiffré.  

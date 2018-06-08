@@ -1,31 +1,23 @@
 ---
-title: "Requêtes (exploration de données) de contenu | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: c4f4a5a8-a230-4222-bece-9d563501f65f
-caps.latest.revision: 
-author: Minewiskan
+title: Requêtes (exploration de données) de contenu | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: cae138336afe7590bf23f42532096dc910010848
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 4a308427ec839c316dbf0e3b215ea6d1506b1fa1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="content-queries-data-mining"></a>Requêtes de contenu (Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une requête de contenu est une façon d'extraire des informations sur les statistiques internes et la structure du modèle d'exploration de données. Parfois, une requête de contenu peut fournir des détails qui ne sont pas aisément disponibles dans la visionneuse. Vous pouvez également utiliser les résultats d'une requête de contenu pour extraire des informations par programme pour d'autres utilisations.  
+  Une requête de contenu est une façon d'extraire des informations sur les statistiques internes et la structure du modèle d'exploration de données. Parfois, une requête de contenu peut fournir des détails qui ne sont pas aisément disponibles dans la visionneuse. Vous pouvez également utiliser les résultats d'une requête de contenu pour extraire des informations par programme pour d'autres utilisations.  
   
  Cette section fournit des informations générales sur les types d'informations que vous pouvez récupérer à l'aide d'une requête de contenu, ainsi que la syntaxe DMX générale pour les requêtes de contenu.  
   

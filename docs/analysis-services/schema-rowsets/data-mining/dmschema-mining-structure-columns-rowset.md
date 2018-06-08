@@ -1,52 +1,41 @@
 ---
 title: Ensemble de lignes DMSCHEMA_MINING_STRUCTURE_COLUMNS | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-apiname: DMSCHEMA_MINING_STRUCTURE_COLUMNS
-apitype: NA
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DMSCHEMA_MINING_STRUCTURE_COLUMNS rowset
-ms.assetid: 81f25502-ac90-42f1-8ddf-7b0f9752ebfd
-caps.latest.revision: "35"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 25a6ba694cad584a0c1d6e229ab1f029d288d11e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 722adc702e40df68c4a137fb15120c81bcdef90d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="dmschemaminingstructurecolumns-rowset"></a>Ensemble de lignes DMSCHEMA_MINING_STRUCTURE_COLUMNS
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Décrit les colonnes de toutes les structures d’exploration de données déployées sur un serveur qui est en cours d’exécution [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Décrit les colonnes de toutes les structures d’exploration de données déployées sur un serveur qui est en cours d’exécution [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  Le **DMSCHEMA_MINING_STRUCTURE_COLUMNS** ensemble de lignes contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Longueur|Description|  
+|Nom de colonne|Indicateur de type|Longueur| Description|  
 |-----------------|--------------------|------------|-----------------|  
 |**STRUCTURE_CATALOG**|**DBTYPE_WSTR**||Nom du catalogue.|  
-|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**||Nom de schéma non qualifié. [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]ne prend pas en charge les schémas, par conséquent, cette colonne est toujours **NULL**.|  
+|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**||Nom de schéma non qualifié. [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] ne prend pas en charge les schémas, par conséquent, cette colonne est toujours **NULL**.|  
 |**NOM_STRUCTURE**|**DBTYPE_WSTR**||Nom de la structure. Cette colonne ne peut pas contenir un **NULL**.|  
-|**NOM_COLONNE**|**DBTYPE_WSTR**||Nom de la colonne. L'unicité est garantie uniquement au sein des colonnes qui partagent le même modèle. Par exemple, deux colonnes imbriquées peuvent porter le même nom si elles appartiennent à deux tables imbriquées distinctes dans la même structure.|  
+|**COLUMN_NAME**|**DBTYPE_WSTR**||Nom de la colonne. L'unicité est garantie uniquement au sein des colonnes qui partagent le même modèle. Par exemple, deux colonnes imbriquées peuvent porter le même nom si elles appartiennent à deux tables imbriquées distinctes dans la même structure.|  
 |**COLUMN_GUID**|**DBTYPE_GUID**||GUID de la colonne. Les fournisseurs qui n’utilisent pas de GUID pour identifier les colonnes doivent retourner **NULL** dans cette colonne.|  
-|**COLUMN_PROPID**|**DBTYPE_UI4**||ID de propriété de la colonne. Les fournisseurs qui n’associent aucun ID de propriété avec des colonnes doivent retourner **NULL** dans cette colonne. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)][!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] retourne **NULL** pour cette colonne.|  
-|**POSITION ORDINALE**|**DBTYPE_UI4**||Valeur ordinale de la colonne. Les colonnes sont numérotées à partir de 1. **NULL** s’il n’existe aucune valeur ordinale stable pour la colonne.|  
+|**COLUMN_PROPID**|**DBTYPE_UI4**||ID de propriété de la colonne. Les fournisseurs qui n’associent aucun ID de propriété avec des colonnes doivent retourner **NULL** dans cette colonne. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] Retourne **NULL** pour cette colonne.|  
+|**ORDINAL_POSITION**|**DBTYPE_UI4**||Valeur ordinale de la colonne. Les colonnes sont numérotées à partir de 1. **NULL** s’il n’existe aucune valeur ordinale stable pour la colonne.|  
 |**COLUMN_HASDEFAULT**|**DBTYPE_BOOL**||Valeur booléenne qui indique si cette colonne possède une valeur par défaut.<br /><br /> **TRUE** si la colonne a une valeur par défaut.<br /><br /> **FALSE** si la colonne n’a pas de valeur par défaut ou si elle est inconnue, indique si la colonne a une valeur par défaut.|  
 |**COLUMN_DEFAULT**|**DBTYPE_WSTR**||La valeur par défaut de la colonne. Un fournisseur peut exposer **DBCOLUMN_DEFAULTVALUE** mais pas **DBCOLUMN_HASDEFAULT** (pour les tables de la norme ISO) dans l’ensemble de lignes retourné par **IColumnsRowset::GetColumnsRowset**.<br /><br /> Si la valeur par défaut est **NULL**, **COLUMN_HASDEFAULT** est **TRUE** et **COLUMN_DEFAULT** colonne est un **NULL** valeur.|  
 |**COLUMN_FLAGS**|**DBTYPE_UI4**||Masque de bits qui décrit les caractéristiques de la colonne. Le **DBCOLUMNFLAGS** type énuméré spécifie les bits du masque de bits. Cette colonne ne peut pas contenir un **NULL** valeur. Les valeurs valides sont les suivantes :<br /><br /> **DBCOLUMNFLAGS_ISNULLABLE** (**0 x 20**)<br /><br /> **DBCOLUMNFLAGS_MAYBENULL** (**0 x 40**)<br /><br /> **DBCOLUMNFLAGS_ISLONG** (**0 x 80**)|  
 |**IS_NULLABLE**|**DBTYPE_BOOL**||Valeur booléenne qui indique si cette colonne possède une valeur par défaut.<br /><br /> **TRUE** si la colonne peut contenir **NULL**; **FALSE**, dans le cas contraire.|  
-|**DATA_TYPE**|**DBTYPE_UI2**||Indicateur du type de données de la colonne. Exemple :<br /><br /> «**TABLE**» = **DBTYPE_HCHAPTER**<br /><br /> «**TEXTE**» = **DBTYPE_WCHAR**<br /><br /> «**LONG**» = **DBTYPE_I8**<br /><br /> «**DOUBLE**» = **DBTYPE_R8**<br /><br /> «**DATE**» = **DBTYPE_DATE**|  
+|**DATA_TYPE**|**DBTYPE_UI2**||Indicateur du type de données de la colonne. Par exemple :<br /><br /> «**TABLE**» = **DBTYPE_HCHAPTER**<br /><br /> «**TEXTE**» = **DBTYPE_WCHAR**<br /><br /> «**LONG**» = **DBTYPE_I8**<br /><br /> «**DOUBLE**» = **DBTYPE_R8**<br /><br /> «**DATE**» = **DBTYPE_DATE**|  
 |**TYPE_GUID**|**DBTYPE_GUID**||GUID du type de données de la colonne. Les fournisseurs qui n’utilisent pas de GUID pour identifier les types de données doivent retourner **NULL** dans cette colonne.|  
 |**CHARACTER_MAXIMUM_LENGTH**|**DBTYPE_UI4**||Longueur maximale possible pour une valeur de la colonne. Pour les colonnes de type character, binary ou bit, il s'agit de l'une des valeurs suivantes :<br /><br /> Longueur maximale de la colonne en caractères, octets ou bits, respectivement, si la longueur est définie. Par exemple, la longueur maximale d'une colonne `CHAR(5)` dans une table SQL est 5.<br /><br /> Longueur maximale du type de données en caractères, octets ou bits, respectivement, si la longueur de la colonne n'est pas définie.<br /><br /> Zéro (0) si la longueur maximale n'est définie ni pour la colonne, ni pour le type de données.<br /><br /> **NULL** pour tous les autres types de colonnes.|  
 |**CHARACTER_OCTET_LENGTH**|**DBTYPE_UI4**||Longueur maximale en octets de la colonne, si la colonne est de type character ou binary. La valeur zéro (0) signifie que la colonne ne possède pas de longueur maximale. **NULL** pour tous les autres types de colonnes.|  
@@ -76,12 +65,12 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|**STRUCTURE_CATALOG**|**DBTYPE_WSTR**|Facultatif.|  
-|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**|Facultatif.|  
-|**NOM_STRUCTURE**|**DBTYPE_WSTR**|Facultatif.|  
-|**NOM_COLONNE**|**DBTYPE_WSTR**|Facultatif.|  
+|**STRUCTURE_CATALOG**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**NOM_STRUCTURE**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**COLUMN_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Ensembles de lignes de schéma de données d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

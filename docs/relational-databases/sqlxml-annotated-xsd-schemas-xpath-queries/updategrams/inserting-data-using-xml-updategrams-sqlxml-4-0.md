@@ -1,16 +1,14 @@
 ---
-title: "Insertion de données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Insertion de données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - xsi:nil attribute
@@ -36,20 +34,20 @@ helpviewer_keywords:
 - at-identity attribute
 - xml data type [SQL Server], SQLXML
 ms.assetid: 4dc48762-bc12-43fb-b356-ea1b9c1e287e
-caps.latest.revision: 
+caps.latest.revision: 33
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1d06fef3fcdc237740b9590d5d8e75fc9730a34e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 563a79b68a39a886d70234f2e9f6eaae118d11ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="inserting-data-using-xml-updategrams-sqlxml-40"></a>Insertion de données à l'aide de codes de mise à jour (updategrams) XML (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Une mise à jour indique une opération d’insertion lorsqu’une instance d’enregistrement apparaît dans les  **\<après >** bloc mais ne pas dans le correspondant  **\<avant >** bloc. Dans ce cas, la mise à jour insère l’enregistrement dans le  **\<après >** bloc dans la base de données.  
+  Une mise à jour indique une opération d’insertion lorsqu’une instance d’enregistrement apparaît dans les  **\<après >** bloc mais ne pas dans le correspondant  **\<avant >** bloc. Dans ce cas, la mise à jour insère l’enregistrement dans le  **\<après >** bloc dans la base de données.  
   
  Voici le format du code de mise à jour pour une opération d'insertion :  
   
@@ -81,7 +79,7 @@ Une mise à jour indique une opération d’insertion lorsqu’une instance d’
  Si le  **\<après >** bloc ne fournit pas une valeur pour une colonne particulière, la mise à jour utilise la valeur par défaut qui est spécifiée dans le schéma annoté (si un schéma a été spécifié). Si le schéma ne spécifie pas de valeur par défaut pour la colonne, la mise à jour ne spécifie pas de valeur explicite pour cette colonne et attribue à la place, le [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] valeur par défaut (si spécifié) pour cette colonne. S'il n'y a aucune valeur par défaut [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] et que la colonne accepte une valeur NULL, le code de mise à jour attribue la valeur NULL à la colonne. Si la colonne ne possède pas de valeur par défaut et qu'elle n'accepte pas de valeur NULL, la commande échoue et le code de mise à jour retourne une erreur. Le paramètre facultatif **updg:returnid** attribut est utilisé pour retourner la valeur d’identité générée par le système lorsqu’un enregistrement est ajouté dans une table avec une colonne de type IDENTITY.  
   
 ## <a name="updgid-attribute"></a>Attribut updg:id  
- Si la mise à jour insère uniquement des enregistrements, la mise à jour ne nécessite pas le **updg : ID** attribut. Pour plus d’informations sur **updg : ID**, consultez [mise à jour des données à l’aide de programmes &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/updating-data-using-xml-updategrams-sqlxml-4-0.md).  
+ Si la mise à jour insère uniquement des enregistrements, la mise à jour ne nécessite pas le **updg : ID** attribut. Pour plus d’informations sur **updg : ID**, consultez [mise à jour des données à l’aide de programmes &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/updating-data-using-xml-updategrams-sqlxml-4-0.md).  
   
 ## <a name="updgat-identity-attribute"></a>Attribut updg:at-identity  
  Lorsqu’une mise à jour insère un enregistrement dans une table qui comporte une colonne de type IDENTITY, la mise à jour peut capturer la valeur attribuée au système à l’aide de l’option **updg : à l’identité** attribut. Le code de mise à jour peut utiliser ensuite cette valeur dans les opérations suivantes. Lors de l’exécution de mise à jour, vous pouvez retourner la valeur d’identité qui est générée en spécifiant le **updg:returnid** attribut.  
@@ -94,7 +92,7 @@ Une mise à jour indique une opération d’insertion lorsqu’une instance d’
   
  Avant d'utiliser les exemples de code de mise à jour, notez les points suivants :  
   
--   La plupart des exemples utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour (updategram)). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+-   La plupart des exemples utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour (updategram)). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 -   La plupart des exemples sont basés sur l'exemple de base de données [!INCLUDE[ssSampleDBobject](../../../includes/sssampledbobject-md.md)]. Toutes les mises à jour sont appliquées aux tables de cette base de données.  
   
@@ -418,7 +416,7 @@ CustOrder(OrderID, EmployeeID, OrderType)
 </ROOT>  
 ```  
   
- Pour plus d’exemples de codes qui spécifient un schéma de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+ Pour plus d’exemples de codes qui spécifient un schéma de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 ##### <a name="to-test-the-updategram"></a>Pour tester le code de mise à jour  
   
@@ -734,6 +732,6 @@ CustOrder(OrderID, EmployeeID, OrderType)
      Pour plus d’informations, consultez [à l’aide d’ADO pour exécuter des requêtes SQLXML 4.0](../../../relational-databases/sqlxml/using-ado-to-execute-sqlxml-4-0-queries.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

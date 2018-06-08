@@ -1,16 +1,14 @@
 ---
-title: "Conversion de données à partir de SQL pour Types de données C | Documents Microsoft"
-ms.custom: 
+title: Conversion de données à partir de SQL pour Types de données C | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data conversions from SQL to C types [ODBC]
 - data conversions from SQL to C types [ODBC], about converting
@@ -22,23 +20,22 @@ helpviewer_keywords:
 - converting data from SQL to c types [ODBC], about converting
 - C data types [ODBC], converting from SQL types
 ms.assetid: 029727f6-d3f0-499a-911c-bcaf9714e43b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b2133c6b155b163b971f7049cdd8238f091669dc
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 370286bb4e955247e53d3c010b0bbb2088957bbe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="converting-data-from-sql-to-c-data-types"></a>Conversion de données à partir de SQL pour Types de données C
 Lorsqu’une application appelle **SQLFetch**, **SQLFetchScroll**, ou **SQLGetData**, le pilote récupère les données à partir de la source de données. Si nécessaire, il convertit les données du type de données dans lequel, extraites par le pilote pour le type de données spécifié par le *TargetType* argument dans **SQLBindCol** ou **SQLGetData.** Enfin, il stocke les données dans l’emplacement vers lequel pointé le *TargetValuePtr* argument dans **SQLBindCol** ou **SQLGetData** (et le champ SQL_DESC_DATA_PTR de la ARD).  
   
  Le tableau suivant montre les conversions prises en charge d’ODBC SQL pour les types de données ODBC C, les types de données. Un cercle plein indique la conversion de la valeur par défaut pour un type de données SQL (le type de données C à laquelle les données seront converties lorsque la valeur de *TargetType* est SQL_C_DEFAULT). Un cercle vide indique une conversion prises en charge.  
   
- Pour un ODBC 3*.x* application utilisant une API ODBC 2. *x* pilote, la conversion de données spécifiques au pilote types ne peuvent pas être pris en charge.  
+ Pour un ODBC 3 *.x* application utilisant une API ODBC 2. *x* pilote, la conversion de données spécifiques au pilote types ne peuvent pas être pris en charge.  
   
  Le format des données converties n’est pas affecté par le paramètre de pays Windows®.  
   

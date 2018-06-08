@@ -1,16 +1,15 @@
 ---
-title: "Utiliser une source de données externe pour les données des abonnés (abonnements pilotés par les données) | Microsoft Docs"
-ms.custom: 
+title: Utiliser une source de données externe pour les données des abonnés (abonnements pilotés par les données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - subscriber data sources [Reporting Services]
 - subscriptions [Reporting Services], external data sources
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - data-driven subscriptions
 - data sources [Reporting Services], subscriptions
 ms.assetid: 1cade8ec-729c-4df8-a428-e75c9ad86369
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d500b82566f2efaed147f7c7697bf0cf404e37b5
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 92e18aba9bf76129fe44bebcf5beddd4b815d0b0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-an-external-data-source-for-subscriber-data-data-driven-subscription"></a>Utiliser une source de données externe pour les données des abonnés (abonnements pilotés par les données)
   Dans un abonnement piloté par les données, les données d'abonnement dynamiques sont fournies par une requête ou une commande qui récupère les données à partir d'une source de données externe. Il est possible de récupérer les données d'abonnement à partir de n'importe quelle source de données gérée qui répond aux impératifs du traitement des abonnements pilotés par les données. La syntaxe de la requête ou de la commande doit être valide pour l'extension de traitement de données installée avec votre serveur de rapports.  

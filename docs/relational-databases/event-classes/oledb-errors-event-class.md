@@ -1,34 +1,30 @@
 ---
-title: "OLEDB Errors, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: OLEDB Errors, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OLEDB Errors event class
 ms.assetid: 0ce1e906-5d92-42f2-ab38-8771ad5ca008
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 91e0272bfabcf627048567ef9366d5f0306a0236
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fb0c1e048bbfebd0dfab8aa5afee2da7ee7bb279
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="oledb-errors-event-class"></a>OLEDB Errors (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements OLEDB Errors se produit dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] lorsqu'un appel vers un fournisseur OLE DB retourne une erreur. Utilisez cette classe d'événements dans vos traces afin d'afficher un HRESULT d'échec provenant d'un fournisseur OLE DB.  
+  La classe d'événements OLEDB Errors se produit dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] lorsqu'un appel vers un fournisseur OLE DB retourne une erreur. Utilisez cette classe d'événements dans vos traces afin d'afficher un HRESULT d'échec provenant d'un fournisseur OLE DB.  
   
  Lorsque la classe d'événements OLEDB Errors est incluse dans une trace, la charge du système dépend de la fréquence des erreurs de fournisseur OLE DB pendant la trace. Si cette fréquence est élevée, la trace peut fortement réduire les performances.  
   

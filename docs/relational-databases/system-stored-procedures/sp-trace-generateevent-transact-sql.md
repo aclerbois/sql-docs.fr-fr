@@ -1,16 +1,14 @@
 ---
-title: sp_trace_generateevent (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_trace_generateevent (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_trace_generateevent_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_trace_generateevent
 ms.assetid: 3ef05bfb-b467-4403-89cc-6e77ef9247dd
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8f02fbb7e401740f6720fd8a654a38f3a9408e07
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 398fb058ae7be57cf0c26b26e77d6e82aafd0df3
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptracegenerateevent-transact-sql"></a>sp_trace_generateevent (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,13 +48,13 @@ sp_trace_generateevent [ @eventid = ] event_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@eventid=**] *event_id*  
+ [  **@eventid=**] *event_id*  
  ID de l'événement à activer. *event_id* est **int**, sans valeur par défaut. L’ID doit être un des numéros d’événements de 82 à 91, qui représentent les événements définis par l’utilisateur en tant qu’ensemble avec [sp_trace_setevent](../../relational-databases/system-stored-procedures/sp-trace-setevent-transact-sql.md).  
   
- [ **@userinfo**= ] **'***user_info***'**  
+ [ **@userinfo**=] **'***user_info***'**  
  Chaîne facultative, définie par l'utilisateur, qui identifie le motif de l'événement. *user_info* est **nvarchar (128)**, avec NULL comme valeur par défaut.  
   
- [ **@userdata**= ] *user_data*  
+ [ **@userdata**=] *user_data*  
  Données facultatives spécifiées par l'utilisateur et se rapportant à l'événement. *user_data* est **varbinary (8000)**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

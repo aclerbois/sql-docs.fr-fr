@@ -1,15 +1,14 @@
 ---
-title: "Modifier les propriétés SQL Server Service avancées à l’aide de VBScript | Documents Microsoft"
-ms.custom: 
+title: Modifier les propriétés SQL Server Service avancées à l’aide de VBScript | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - modifying SQL Server Service properties
 - WMI Provider for Configuration Management, VBScript
 ms.assetid: f3c5d981-eaa3-4d34-9b91-37e42636aa81
-caps.latest.revision: 
+caps.latest.revision: 17
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0de892835e865e668ac0de589b2f61901e3984f8
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: a49cc34f92a2dd35d5f85a6013a738184d913810
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="access-wmi-provider-for-configuration-management-using-vbscript"></a>Accéder au fournisseur de WMI pour la gestion de la Configuration à l’aide de VBScript
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

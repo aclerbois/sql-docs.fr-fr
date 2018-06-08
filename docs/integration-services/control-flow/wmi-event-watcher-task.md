@@ -1,17 +1,16 @@
 ---
-title: "Observateur d’événement WMI, tâche | Microsoft Docs"
-ms.custom: 
+title: Observateur d’événement WMI, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.wmieventwatchertask.f1
 - sql13.dts.designer.wmieventwatcher.general.f1
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - WQL [Integration Services]
 - WMI Event Watcher task [Integration Services]
 ms.assetid: b5bb52e9-a77e-41e1-93f9-d4c3bc6b2c9a
-caps.latest.revision: 
+caps.latest.revision: 53
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2f30858c543e21989b468c5f4e1cecebba06cc6b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 207681d3ceb8944f75189f05776a33c04f52cc8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wmi-event-watcher-task"></a>Tâche Observateur d'événement WMI
   La tâche Observateur d'événement WMI observe les événements WMI (Windows Management Instrumentation) à l'aide d'une requête d'événement WQL (Windows Management Instrumentation Query Language) pour spécifier les événements dignes d'intérêt. Vous pouvez utiliser la tâche Observateur d'événement WMI pour effectuer les opérations suivantes :  

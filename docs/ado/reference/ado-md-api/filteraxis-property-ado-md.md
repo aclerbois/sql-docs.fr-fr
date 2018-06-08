@@ -1,17 +1,15 @@
 ---
-title: "FilterAxis, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: FilterAxis, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Cellset::FilterAxis
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - FilterAxis property [ADO MD]
 ms.assetid: 9c656963-531e-4cd1-b698-d5f42a9b7ba3
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 232e62fc37397601fad1751bd5718d9b35f67f14
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c7ba6b397879039064943fcb6264ef3dd76aa8fc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filteraxis-property-ado-md"></a>FilterAxis, propriété (ADO MD)
 Indique les informations de filtre actuel [ensemble de cellules](../../../ado/reference/ado-md-api/cellset-object-ado-md.md).  

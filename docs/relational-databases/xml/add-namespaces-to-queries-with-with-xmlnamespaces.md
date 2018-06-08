@@ -1,17 +1,15 @@
 ---
-title: "Ajouter des espaces de noms aux requêtes avec WITH XMLNAMESPACES | Microsoft Docs"
-ms.custom: 
+title: Ajouter des espaces de noms aux requêtes avec WITH XMLNAMESPACES | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ELEMENTS XSINIL directive
 - adding namespaces
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - xml data type [SQL Server], WITH XMLNAMESPACES clause
 - WITH XMLNAMESPACES clause
 ms.assetid: 2189cb5e-4460-46c5-a254-20c833ebbfec
-caps.latest.revision: 
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 432e833f5cd9341a083973f8060ddbd477d386c6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: da7122abb272847f5951d3f8d0ed5157fde82088
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-namespaces-to-queries-with-with-xmlnamespaces"></a>Ajouter des espaces de noms aux requêtes avec WITH XMLNAMESPACES
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -187,7 +184,7 @@ FOR XML PATH('sql:root')
 </sql:root>  
 ```  
   
- Seul le préfixe d'espace de noms xml peut être utilisé sans qu'il soit défini explicitement dans WITH XMLNAMESPACES, comme l'illustre la requête en mode PATH ci-dessous. En outre, si le préfixe est déclaré, il doit être lié à l'espace de noms http://www.w3.org/XML/1998/namespace. Les noms spécifiés dans la clause SELECT font référence au préfixe d'espace de noms xml qui n'est pas défini explicitement à l'aide de WITH XMLNAMESPACES.  
+ Seul le préfixe d'espace de noms xml peut être utilisé sans qu'il soit défini explicitement dans WITH XMLNAMESPACES, comme l'illustre la requête en mode PATH ci-dessous. En outre, si le préfixe est déclaré, il doit être lié à l’espace de noms http://www.w3.org/XML/1998/namespace. Les noms spécifiés dans la clause SELECT font référence au préfixe d'espace de noms xml qui n'est pas défini explicitement à l'aide de WITH XMLNAMESPACES.  
   
 ```  
 SELECT 'en'    as "English/@xml:lang",  

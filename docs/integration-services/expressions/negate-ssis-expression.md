@@ -1,31 +1,29 @@
 ---
-title: "- (Négatif) (expression SSIS) | Microsoft Docs"
-ms.custom: 
+title: '- (Négatif) (expression SSIS) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - '- (negative)'
 - negative operator (-)
 ms.assetid: f0118dfc-aced-4de2-953e-5ebf9c962b8d
-caps.latest.revision: 
+caps.latest.revision: 33
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e2a59d861afa6a7c7b2bd321d431b52f9e63b0d8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 579b2c8471b02db4786c540b978f8a23c71527a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="--negate-ssis-expression"></a>- (Négatif) (expression SSIS)
   Inverse une expression numérique.  

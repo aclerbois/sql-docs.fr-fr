@@ -1,30 +1,27 @@
 ---
-title: "Configuration de la connectivité PolyBase (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Configuration de la connectivité PolyBase (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - PolyBase
 ms.assetid: 82252e4f-b1d0-49e5-aa0b-3624aade2add
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e6beb362dd1761eae50afae27483db00d311714f
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: bb82ed8c4a4dc7c881ac2b94dee9ea88ce009858
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="polybase-connectivity-configuration-transact-sql"></a>Configuration de la connectivité PolyBase (Transact-SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-pdw-md](../../includes/appliesto-ss-xxxx-xxxx-pdw-md.md)]
@@ -78,7 +75,7 @@ RECONFIGURE
   
 -   Option 5 : Hortonworks HDP 2.0 sur Linux  
   
--   Option 6 : Cloudera 5.1, 5.2, 5.3, 5.4, 5.5, 5.9, 5.10, 5.11 et 5.12 sur Linux  
+-   Option 6 : Cloudera 5.1, 5.2, 5.3, 5.4, 5.5, 5.9, 5.10, 5.11, 5.12 et 5.13 sur Linux  
   
 -   Option 7 : Hortonworks 2.1, 2.2, 2.3, 2.4, 2.5 et 2.6 sur Linux  
   

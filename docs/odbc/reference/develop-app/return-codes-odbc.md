@@ -1,30 +1,27 @@
 ---
 title: Codes de retour ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - return codes [ODBC]
 - diagnostic information [ODBC], return codes
 ms.assetid: e893b719-4392-476f-911a-5ed6da6f7e94
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9e5daaf1389631ac392fd487e99b28864b71efb8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 12751f87c9f9832567dc04ba7df7659e80e66897
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="return-codes-odbc"></a>Codes de retour ODBC
 Chaque fonction dans ODBC retourne un code appelé son *code de retour,* qui indique la réussite ou l’échec de la fonction globale. La logique du programme repose en général sur des codes de retour.  
@@ -50,7 +47,7 @@ while ((rc=SQLFetch(hstmt)) != SQL_NO_DATA) {
   
  Le tableau suivant définit les codes de retour.  
   
-|Code de retour|Description|  
+|Code de retour| Description|  
 |-----------------|-----------------|  
 |SQL_SUCCESS|Fonction s’est terminée correctement. L’application appelle **SQLGetDiagField** pour récupérer des informations supplémentaires à partir de l’enregistrement d’en-tête.|  
 |SQL_SUCCESS_WITH_INFO|Fonction s’est terminée avec succès, éventuellement avec une erreur non fatale (avertissement). L’application appelle **SQLGetDiagRec** ou **SQLGetDiagField** pour récupérer des informations supplémentaires.|  

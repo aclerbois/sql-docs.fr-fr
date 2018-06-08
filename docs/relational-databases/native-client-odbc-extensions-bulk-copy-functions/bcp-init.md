@@ -1,16 +1,15 @@
 ---
-title: bcp_init | Microsoft Docs
-ms.custom: 
+title: bcp_init | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-extensions-bulk-copy-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - bcp_init
@@ -20,16 +19,16 @@ apitype: DLLExport
 helpviewer_keywords:
 - bcp_init function
 ms.assetid: 6a25862c-7f31-4873-ab65-30f3abde89d2
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 619c1c5b150d31f8fd283ef365c476674fb8b427
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 174c487c16f9e76fec6493dac0c77db15394df8d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bcpinit"></a>bcp_init
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -51,7 +50,7 @@ RETCODE bcp_init (
   
 ## <a name="arguments"></a>Arguments  
  *pas*  
- Handle de connexion ODBC compatible avec la copie en bloc.  
+ Handle de connexion ODBC compatible avec la copie en bloc.  
   
  *szTable*  
  Nom de la table de base de données depuis ou vers laquelle s'effectue la copie. Ce nom peut aussi inclure le nom de la base de données ou le nom du propriétaire. Par exemple, **pubs.gracie.titles**, **pubs... titres**, **gracie.titles**, et **titres** sont tous des noms de tables.  

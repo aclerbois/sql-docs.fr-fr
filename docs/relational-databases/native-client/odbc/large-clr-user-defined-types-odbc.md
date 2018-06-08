@@ -1,32 +1,31 @@
 ---
-title: "Les Types définis par l’utilisateur CLR volumineux (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Les Types définis par l’utilisateur CLR volumineux (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|ODBC
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC, large user-defined types
 - large user-defined types [ODBC]
 ms.assetid: ddce337e-bb6e-4a30-b7cc-4969bb1520a9
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4da32a24c00ca9539cca04c3886d19f73f9ab578
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ec957ad4bc1ea32c885b51a940a793f84dbc6b73
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="large-clr-user-defined-types-odbc"></a>Types CLR volumineux définis par l’utilisateur (ODBC)
+# <a name="large-clr-user-defined-types-odbc"></a>Types CLR volumineux définis par l’utilisateur (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../../includes/snac-deprecated.md)]
 
@@ -142,7 +141,7 @@ ms.lasthandoff: 01/25/2018
 |SQL_C_BINARY|Pris en charge|  
 |SQL_C_CHAR|Prise en charge *|  
   
- \*Données binaires sont converties en chaîne hexadécimale.  
+ \* Données binaires sont converties en chaîne hexadécimale.  
   
  Les conversions suivantes sont prises en charge entre les types de données C et SQL :  
   
@@ -152,7 +151,7 @@ ms.lasthandoff: 01/25/2018
 |SQL_C_BINARY|Pris en charge|  
 |SQL_C_CHAR|Prise en charge *|  
   
- \*Chaîne hexadécimale à une conversion de données binaires se produit.  
+ \* Chaîne hexadécimale à une conversion de données binaires se produit.  
   
 ## <a name="sqlvariant-support-for-udts"></a>Prise en charge des UDT par SQL_VARIANT  
  Les UDT ne sont pas pris en charge dans les colonnes SQL_VARIANT.  
@@ -177,7 +176,7 @@ ms.lasthandoff: 01/25/2018
 ### <a name="sqlbindparameter"></a>SQLBindParameter  
  Les valeurs requises pour les UDT sont les suivantes :  
   
-|Type de données SQL|*Parametertype*|*ColumnSizePtr*|*DecimalDigitsPtr*|  
+|Type de données SQL|*Type de paramètre*|*ColumnSizePtr*|*DecimalDigitsPtr*|  
 |-------------------|---------------------|---------------------|------------------------|  
 |SQL_SS_UDT<br /><br /> (longueur inférieure ou égale à 8 000 octets)|SQL_SS_UDT|*n*|0|  
 |SQL_SS_UDT<br /><br /> (longueur supérieure à 8 000 octets)|SQL_SS_UDT|SQL_SS_LENGTH_UNLIMITED (0)|0|  

@@ -1,31 +1,28 @@
 ---
-title: "Résumé du Gestionnaire d’événements ADO | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Résumé du Gestionnaire d’événements ADO | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - events [ADO], about event handlers
 - event handlers [ADO]
 ms.assetid: b34f4472-5e04-4a2c-ab64-38d6eca31a69
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d9e182d5b1e1b8755250cbf620ac102a7eacde0f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e3e52fe70e497ab8c5b715861e16f3f67266f9f8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-connection-and-recordset-events"></a>Connexion ADO et les événements de jeu d’enregistrements
 Deux objets ADO peuvent déclencher des événements : le [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet et la [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet. Le **ConnectionEvent** famille relative aux opérations sur le **connexion** objet et le **RecordsetEvent** famille relative aux opérations sur le  **Jeu d’enregistrements** objet.

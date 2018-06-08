@@ -1,27 +1,24 @@
 ---
-title: "Exemples de Types de données de base | Documents Microsoft"
-ms.custom: 
+title: Exemples de Types de données de base | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 59ac80cf-fc66-4493-933d-38e479c5f54d
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1ae9417b20f6a8c25d690bcfdbda86fc51f7b074
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 0181d670a4b5d3c347b23b5d4776ce1d557fa8c8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="basic-data-types-sample"></a>Exemple de types de données de base
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -171,6 +168,6 @@ public class basicDT {
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Utilisation des Types de données &#40; JDBC &#41;](../../connect/jdbc/working-with-data-types-jdbc.md)  
+ [Utilisation des Types de données &#40;JDBC&#41;](../../connect/jdbc/working-with-data-types-jdbc.md)  
   
   

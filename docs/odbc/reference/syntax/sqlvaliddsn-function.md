@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLValidDSN | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLValidDSN
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLValidDSN
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLValidDSN
-helpviewer_keywords: SQLValidDSN [ODBC]
+f1_keywords:
+- SQLValidDSN
+helpviewer_keywords:
+- SQLValidDSN [ODBC]
 ms.assetid: 930d1d89-337a-4429-85a2-84ee10555ac9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0c745b7ac285f09ff80478dab911b3cd3a9fc94d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4560f4645bf8e4e8c255b94c940b0922483cf5f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlvaliddsn-function"></a>SQLValidDSN (fonction)
 **Mise en conformité**  
@@ -53,7 +54,7 @@ BOOL SQLValidDSN(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLValidDSN** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. A  *\*pfErrorCode* est retourné uniquement si l’appel de fonction échoue, pas si la valeur FALSE est retournée, car le nom de source de données n’est pas valide. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_OUT_OF_MEM|Mémoire insuffisante|Le programme d’installation n’a pas pu effectuer la fonction en raison d’un manque de mémoire.|  

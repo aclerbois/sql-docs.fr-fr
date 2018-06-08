@@ -1,16 +1,13 @@
 ---
-title: "Surveiller des groupes de disponibilité (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Surveiller des groupes de disponibilité (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - dynamic management views [SQL Server], AlwaysOn Availability Groups
@@ -19,19 +16,20 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], databases
 - catalog views [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 881a34de-8461-4811-8c62-322bf7226bed
-caps.latest.revision: "49"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 49
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7269f0e591ec1846af196a6b7c996b8eeb852351
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 5bb97010a56fd6df9917e8c7ce36d2c566c5d22e
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769365"
 ---
 # <a name="monitor-availability-groups-transact-sql"></a>Surveiller des groupes de disponibilité (Transact-SQL)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour surveiller les groupes de disponibilité et les réplicas, ainsi que les bases de données associées à l’aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)], [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] fournit un ensemble d’affichages catalogue et de vues de gestion dynamique, et des propriétés de serveur. Au moyen d'instructions [!INCLUDE[tsql](../../../includes/tsql-md.md)] SELECT, vous pouvez utiliser les vues pour surveiller les groupes de disponibilité, ainsi que leurs réplicas et bases de données. Les informations retournées pour un groupe de disponibilité donné varient selon que vous êtes connecté à l'instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui héberge le réplica principal ou un réplica secondaire.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pour surveiller les groupes de disponibilité et les réplicas, ainsi que les bases de données associées à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)], [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] fournit un ensemble d'affichages catalogue et de vues de gestion dynamique, et des propriétés de serveur. Au moyen d'instructions [!INCLUDE[tsql](../../../includes/tsql-md.md)] SELECT, vous pouvez utiliser les vues pour surveiller les groupes de disponibilité, ainsi que leurs réplicas et bases de données. Les informations retournées pour un groupe de disponibilité donné varient selon que vous êtes connecté à l'instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui héberge le réplica principal ou un réplica secondaire.  
   
 > [!TIP]  
 >  La plupart de ces vues peuvent être jointes à l'aide de leurs colonnes ID afin de retourner des informations émanant de plusieurs vues à l'aide d'une requête unique.  

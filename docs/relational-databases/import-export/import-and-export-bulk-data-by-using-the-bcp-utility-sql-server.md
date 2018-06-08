@@ -1,32 +1,30 @@
 ---
-title: "Importer et exporter des données en bloc à l’aide de l’utilitaire bcp (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Importer et exporter des données en bloc à l’aide de l’utilitaire bcp (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/28/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - bulk exporting [SQL Server], bcp utility
 - bulk importing [SQL Server], bcp utility
 - bcp utility [SQL Server], about bcp utility
 ms.assetid: 73e949de-67a3-4c84-9735-7da1ad4ba34a
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 73af7f8fd0713d242518b77a2083c3b349efa44c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4cef9b1c98ced19606f0e3d2650816a8214f526d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-and-export-bulk-data-by-using-the-bcp-utility-sql-server"></a>Importer et exporter des données en bloc à l'aide de l'utilitaire bcp (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

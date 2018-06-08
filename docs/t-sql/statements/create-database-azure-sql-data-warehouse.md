@@ -1,27 +1,27 @@
 ---
 title: CREATE DATABASE (Azure SQL Data Warehouse | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/14/20178
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-data-warehouse
 ms.component: t-sql|statements
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
-author: barbkess
-ms.author: barbkess
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.openlocfilehash: 3a802dc74793ef79ca35b177b4416d9464a8c34f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+monikerRange: = azure-sqldw-latest || = sqlallproducts-allversions
+ms.openlocfilehash: 621d348cface10d459693fc64b261fc2fa2ddf04
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="create-database-azure-sql-data-warehouse"></a>CREATE DATABASE (Azure SQL Data Warehouse)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-xxx-md.md)]

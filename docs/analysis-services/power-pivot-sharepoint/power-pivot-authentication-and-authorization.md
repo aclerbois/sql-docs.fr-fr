@@ -1,31 +1,23 @@
 ---
 title: Power Pivot Authentication and Authorization | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 48230cc0-4037-4f99-8360-dadf4bc169bd
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 691bf8b3fd2e26a3f906c88fbc8ceb840b636f6c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2ebb63d1ad381982ab4313ee6d980c5a919d6122
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-pivot-authentication-and-authorization"></a>Authentification et autorisation PowerPivot
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un déploiement de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint qui s’exécute dans une batterie de serveurs SharePoint 2010 utilise le sous-système d’authentification et le modèle d’autorisation fournis par les serveurs SharePoint. L’infrastructure de sécurité SharePoint s’étend au contenu et aux opérations [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , car l’ensemble du contenu relatif à [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]est stocké dans des bases de données de contenu SharePoint, et l’ensemble des opérations relatives à [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]est effectué par des services partagés [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] dans la batterie de serveurs. Les utilisateurs qui demandent un classeur contenant des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] sont authentifiés à l’aide d’une identité d’utilisateur SharePoint basée sur leur identité d’utilisateur Windows. Les autorisations d'affichage sur le classeur déterminent si la demande est accordée ou refusée.  
+  Un déploiement de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint qui s’exécute dans une batterie de serveurs SharePoint 2010 utilise le sous-système d’authentification et le modèle d’autorisation fournis par les serveurs SharePoint. L’infrastructure de sécurité SharePoint s’étend au contenu et aux opérations [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , car l’ensemble du contenu relatif à [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]est stocké dans des bases de données de contenu SharePoint, et l’ensemble des opérations relatives à [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]est effectué par des services partagés [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] dans la batterie de serveurs. Les utilisateurs qui demandent un classeur contenant des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] sont authentifiés à l’aide d’une identité d’utilisateur SharePoint basée sur leur identité d’utilisateur Windows. Les autorisations d'affichage sur le classeur déterminent si la demande est accordée ou refusée.  
   
  Étant donné que l’intégration à Excel Services est nécessaire pour les analyses de données libre-service, pour sécuriser un serveur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] vous devez également bien comprendre le fonctionnement de la sécurité dans Excel Services. Quand un utilisateur interroge un tableau croisé dynamique comportant une connexion de données à des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , Excel Services transmet une demande de connexion de données à un serveur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] de la batterie pour charger les données. Du fait de cette interaction entre les serveurs, il est indispensable que vous compreniez comment configurer des paramètres de sécurité pour les deux serveurs.  
   

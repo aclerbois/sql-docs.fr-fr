@@ -1,27 +1,26 @@
 ---
-title: "catalog.update_master_address (base de données SSISDB) | Microsoft Docs"
-ms.custom: 
+title: catalog.update_master_address (base de données SSISDB) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-caps.latest.revision: 
+caps.latest.revision: 1
 author: haoqian
 ms.author: haoqian
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd052bb7b75c3ea8002a40db3e37ca1e2a0b2788
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: f6dc94b2ecce662d7e289796425916686caf172c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catalogupdatemasteraddress-ssisdb-database"></a>catalog.update_master_address (base de données SSISDB)
 [!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md](../../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]

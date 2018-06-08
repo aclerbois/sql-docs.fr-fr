@@ -1,16 +1,14 @@
 ---
 title: Sys.symmetric_keys (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - symmetric_keys
@@ -22,30 +20,30 @@ dev_langs:
 helpviewer_keywords:
 - sys.symmetric_keys catalog view
 ms.assetid: d410eae1-3a52-45de-b9a1-52d2bd93a8eb
-caps.latest.revision: 
+caps.latest.revision: 41
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6dbfdb1c6b128c1a596f092f500ce5c3cf85d2e7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9920ff9e4b648c4911568b44374d860cc2d18710
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syssymmetrickeys-transact-sql"></a>sys.symmetric_keys (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
   Renvoie une ligne pour chaque clé symétrique créée avec l'instruction CREATE SYMMETRIC KEY.  
   
-|Nom de colonne|Type de données|Description|  
+|Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**nom**|**sysname**|Nom de la clé. Unique dans la base de données.|  
 |**principal_id**|**int**|ID du principal de la base de données propriétaire de la clé.|  
 |**symmetric_key_id**|**int**|ID de la clé. Unique dans la base de données.|  
 |**key_length**|**int**|Longueur de la clé en bits.|  
 |**key_algorithm**|**char(2)**|Algorithme utilisé avec la clé :<br /><br /> R2 = RC2<br /><br /> R4 = RC4<br /><br /> D = DES<br /><br /> D3 = Triple DES<br /><br /> DT = TRIPLE_DES_3KEY<br /><br /> DX = DESX<br /><br /> A1 = AES 128<br /><br /> A2 = AES 192<br /><br /> A3 = AES 256<br /><br /> NA = EKM Key|  
-|**algorithm_desc**|**nvarchar (60)**|Description de l'algorithme utilisé avec la clé :<br /><br /> RC2<br /><br /> RC4<br /><br /> DES<br /><br /> Triple_DES<br /><br /> TRIPLE_DES_3KEY<br /><br /> DESX<br /><br /> AES_128<br /><br /> AES_192<br /><br /> AES_256<br /><br /> NULL (algorithmes de gestion de clés extensible uniquement)|  
+|**algorithm_desc**|**nvarchar(60)**|Description de l'algorithme utilisé avec la clé :<br /><br /> RC2<br /><br /> RC4<br /><br /> DES<br /><br /> Triple_DES<br /><br /> TRIPLE_DES_3KEY<br /><br /> DESX<br /><br /> AES_128<br /><br /> AES_192<br /><br /> AES_256<br /><br /> NULL (algorithmes de gestion de clés extensible uniquement)|  
 |**create_date**|**datetime**|Date de création de la clé.|  
 |**modify_date**|**datetime**|Date de modification de la clé.|  
 |**key_guid**|**uniqueidentifier**|GUID (Globally Unique Identifier) associé à la clé. Il est créé automatiquement pour les clés persistantes. Les GUID des clés provisoires sont dérivées de la phrase secrète fournie par l'utilisateur.|  
@@ -54,7 +52,7 @@ ms.lasthandoff: 11/21/2017
 |**cryptographic_provider_guid**|**uniqueidentifier**|GUID du fournisseur de chiffrement. Pour les clés non-EKM (Gestion de clés extensible), cette valeur sera NULL.|  
 |**cryptographic_provider_algid**|**sql_variant**|ID d'algorithme pour le fournisseur de chiffrement. Pour les clés non-EKM (Gestion de clés extensible), cette valeur sera NULL.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
   
 ## <a name="remarks"></a>Notes  

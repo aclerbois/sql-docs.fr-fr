@@ -1,16 +1,15 @@
 ---
-title: "Suspendre et reprendre la mise en miroir de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Suspendre et reprendre la mise en miroir de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sessions [SQL Server], database mirroring
 - resuming database mirroring
@@ -18,19 +17,19 @@ helpviewer_keywords:
 - database mirroring [SQL Server], resuming
 - pausing database mirroring
 ms.assetid: c67802c6-ee8c-4cbd-a6d4-f7b80413a4ab
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 75f700428ebe213ad7faaef691bf1460e263c268
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 274e4f448a6332473b7fa72f01d395920e61c70a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pausing-and-resuming-database-mirroring-sql-server"></a>Suspendre et reprendre la mise en miroir de bases de données (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Le propriétaire de la base de données peut suspendre et reprendre ultérieurement une session de mise en miroir de bases de données à tout moment. La suspension conserve l'état de la session tout en suspendant la mise en miroir. En cas de goulots, la suspension peut permettre d'améliorer les performances sur le serveur principal.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Le propriétaire de la base de données peut suspendre et reprendre ultérieurement une session de mise en miroir de bases de données à tout moment. La suspension conserve l'état de la session tout en suspendant la mise en miroir. En cas de goulots, la suspension peut permettre d'améliorer les performances sur le serveur principal.  
   
  Lorsqu'une session est suspendue, la base de données principale reste disponible. La suspension d'une session de mise en miroir fait passer son état à SUSPENDED, et la base de données miroir ne reflète plus la base de données principale, ce qui rend cette dernière vulnérable lors de son exécution.  
   

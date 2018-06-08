@@ -1,16 +1,14 @@
 ---
 title: money et smallmoney (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - money_TSQL
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - values [SQL Server], monetary
 - currency [SQL Server]
 ms.assetid: 57861137-89ea-4b89-b361-390597d7bccc
-caps.latest.revision: 
+caps.latest.revision: 36
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: c9c66d9934618b1b8b21b0d4dcb0a234ff94731f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 936a5300c3eda74e819fbbef74dbf11fee58ae30
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="money-and-smallmoney-transact-sql"></a>money et smallmoney (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -47,7 +45,7 @@ Types de données représentant des valeurs monétaires ou des devises.
 |Type de données|Plage|Stockage|  
 |---|---|---|
 |**money**|-922 337 203 685 477,5808 à 922 337 203 685 477,5807 (-922 337 203 685 477,58<br />à 922 337 203 685 477,58 pour Informatica.  Informatica prend uniquement en charge deux décimales, et non quatre.)|8 octets|  
-|**smallmoney**|-214 748,3648 à 214 748,3647|4 octets|  
+|**smallmoney**|-214 748,3648 à 214 748,3647|4 octets|  
   
 Les types de données **money** et **smallmoney** sont précis à un dix millième près des unités monétaires qu’ils représentent. Pour Informatica, les types de données **money** et **smallmoney** sont précis à un centième près des unités monétaires qu’ils représentent.
   

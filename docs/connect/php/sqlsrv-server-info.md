@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_server_info | Microsoft Docs
+title: sqlsrv_server_info | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_server_info
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - API Reference, sqlsrv_server_info
 - sqlsrv_server_info
 ms.assetid: ef6fe2b7-d267-4379-b948-5626c4684367
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b919fd8f5278fc176e4397ffb2b9a646d6d89bcd
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: eff340f63fed18cc70fe02a0b36ec6423365e855
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvserverinfo"></a>sqlsrv_server_info
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -48,7 +45,7 @@ sqlsrv_server_info( resource $conn)
 ## <a name="return-value"></a>Valeur retournée  
 Tableau associatif avec les clés suivantes :  
   
-|Clé| Description|  
+|Key| Description|  
 |-------|---------------|  
 |CurrentDatabase|Base de données actuellement ciblée.|  
 |SQLServerVersion|Version de SQL Server.|  

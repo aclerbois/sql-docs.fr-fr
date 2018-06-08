@@ -2,14 +2,12 @@
 title: Tables (Transact-SQL) Integration Services | Documents Microsoft
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: system-tables
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - system tables [Integration Services]
 - SSIS, system tables
 ms.assetid: 683b181b-0091-4a9c-86db-bc577af43cec
-caps.latest.revision: ''
+caps.latest.revision: 21
 author: douglasl
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a8c71350ec1e778b42fbeebf2a805fbb681f6e61
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: fc5df46211b3de92b054fea4120d9b7c884a0ccb
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="integration-services-tables-transact-sql"></a>Tables Integration Services (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

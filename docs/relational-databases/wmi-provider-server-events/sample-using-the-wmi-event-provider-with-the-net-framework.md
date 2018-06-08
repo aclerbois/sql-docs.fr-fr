@@ -1,31 +1,29 @@
 ---
-title: "Exemple : À l’aide du fournisseur d’événements WMI avec le .NET Framework | Documents Microsoft"
-ms.custom: 
+title: 'Exemple : À l’aide du fournisseur d’événements WMI avec le .NET Framework | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - WMI Provider for Server Events, samples
 - sample applications [WMI]
 - managed code [WMI]
 ms.assetid: 3d7aa7e9-0bb3-4a5b-9a3c-047f3240a6f8
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 21b6bac77cb3a2c2ecfa03c99939fd7c90f036fd
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 6524cdee02cea290eb2a8a77e685b26a360562dd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sample-using-the-wmi-event-provider-with-the-net-framework"></a>Exemple : À l’aide du fournisseur d’événements WMI avec le .NET Framework
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

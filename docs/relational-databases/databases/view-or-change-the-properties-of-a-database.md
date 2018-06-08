@@ -1,33 +1,32 @@
 ---
-title: "Afficher ou modifier les propriétés d’une base de données | Microsoft Docs"
-ms.custom: 
+title: Afficher ou modifier les propriétés d’une base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - displaying databases
 - database viewing [SQL Server]
 - databases [SQL Server], viewing
 - viewing databases
 ms.assetid: 9e8ac097-84b7-46c7-85e3-c1e79f94d747
-caps.latest.revision: 
+caps.latest.revision: 42
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8e4fb0867c0950595c6d8460dfa2a53a7fa87db7
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 72fc29742d0bc23e9a6d341071d529f1ffe74ade
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-or-change-the-properties-of-a-database"></a>Afficher ou modifier les propriétés d'une base de données
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

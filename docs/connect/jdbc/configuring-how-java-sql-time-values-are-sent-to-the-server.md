@@ -1,27 +1,24 @@
 ---
-title: "Configurer la façon dont les valeurs java.sql.Time sont envoyées au serveur | Documents Microsoft"
-ms.custom: 
+title: Configurer la façon dont les valeurs java.sql.Time sont envoyées au serveur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 07eb00dd-621a-46f9-a5a5-8cab4d6058b5
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8492c3271950abbf7c99a571c2bfc9a68d35ed76
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8e2e91550767715616599c2720c99b864363a185
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuring-how-javasqltime-values-are-sent-to-the-server"></a>Configuration du mode d'envoi des valeurs java.sql.Time au serveur
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

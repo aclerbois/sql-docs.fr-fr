@@ -1,17 +1,16 @@
 ---
-title: "Guide d’architecture et gestion du journal des transactions SQL Server | Microsoft Docs"
-ms.custom: 
+title: Guide d’architecture et gestion du journal des transactions SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transaction log architecture guide
 - guide, transaction log architecture
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - vlf size
 - transaction log internals
 ms.assetid: 88b22f65-ee01-459c-8800-bcf052df958a
-caps.latest.revision: 
+caps.latest.revision: 3
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c8d5917a0faed7d4861a03097a2072db3cfa0670
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 23119e2fafd68797b15a9baf525d52906f311178
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-transaction-log-architecture-and-management-guide"></a>Guide d’architecture et gestion du journal des transactions SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -71,7 +70,7 @@ De nombreux types d'opérations sont enregistrés dans le journal des transactio
   
  Les opérations de restauration sont également consignées dans le journal. Chaque transaction réserve de l'espace dans le journal des transactions afin qu'il existe suffisamment d'espace journal pour prendre en charge une restauration déclenchée par une instruction de restauration explicite ou par la détection d'une erreur. Le volume d'espace réservé dépend des opérations effectuées dans la transaction, mais il est généralement égal au volume d'espace utilisé pour la journalisation de chaque opération. Cet espace réservé est libéré lorsque la transaction est terminée.  
   
-<a name="minlsn"></a> La section du fichier journal comprise entre le premier enregistrement de journal nécessaire à une restauration portant sur l’ensemble de la base de données et la fin du journal représente la partie active du journal, également appelée le *journal actif*. Cette section est indispensable pour procéder à une récupération complète de la base de données. Aucune partie de ce journal actif ne peut être tronquée. Le [LSN (numéro séquentiel dans le journal)](../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#Logical_Arch) de ce premier enregistrement est le ***LSN de récupération minimum (*MinLSN**).  
+<a name="minlsn"></a> La section du fichier journal comprise entre le premier enregistrement de journal nécessaire à une restauration portant sur l’ensemble de la base de données et la fin du journal représente la partie active du journal, également appelée le *journal actif*. Cette section est indispensable pour procéder à une récupération complète de la base de données. Aucune partie de ce journal actif ne peut être tronquée. Le [LSN (numéro séquentiel dans le journal)](../relational-databases/sql-server-transaction-log-architecture-and-management-guide.md#Logical_Arch) de ce premier enregistrement est le ***LSN de récupération minimum (* MinLSN**).  
   
 ##  <a name="physical_arch"></a> Architecture physique du journal des transactions  
 Le journal des transactions d'une base de données s'étend sur un ou plusieurs fichiers physiques. D'un point de vue conceptuel, le fichier journal est une chaîne d'enregistrements. D'un point de vue physique, la séquence des enregistrements du journal est stockée de façon efficace dans l'ensemble de fichiers physiques qui implémente le journal des transactions. Chaque base de données doit posséder au moins un fichier journal.  
@@ -254,7 +253,7 @@ Pour plus d’informations sur le journal des transactions et les bonnes pratiqu
 [Gérer la taille du fichier journal des transactions](../relational-databases/logs/manage-the-size-of-the-transaction-log-file.md)   
 [Sauvegardes des journaux de transactions &#40;SQL Server&#41;](../relational-databases/backup-restore/transaction-log-backups-sql-server.md)   
 [Points de contrôle de base de données &#40;SQL Server&#41;](../relational-databases/logs/database-checkpoints-sql-server.md)   
-[Configurer l’option de configuration de serveur recovery interval](../database-engine/configure-windows/configure-the-recovery-interval-server-configuration-option.md)    
+[Configurer l’option de configuration de serveur d’intervalle de récupération](../database-engine/configure-windows/configure-the-recovery-interval-server-configuration-option.md)    
 [sys.dm_db_log_info &#40;Transact-SQL&#41;](../relational-databases/system-dynamic-management-views/sys-dm-db-log-info-transact-sql.md)   
 [sys.dm_db_log_space_usage &#40;Transact-SQL&#41;](../relational-databases/system-dynamic-management-views/sys-dm-db-log-space-usage-transact-sql.md)    
 [Fonctionnement de la journalisation et de la récupération dans SQL Server, par Paul Randall](http://technet.microsoft.com/magazine/2009.02.logging.aspx)    

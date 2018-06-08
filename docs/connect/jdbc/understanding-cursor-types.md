@@ -1,27 +1,24 @@
 ---
-title: "Présentation des Types de curseur | Documents Microsoft"
-ms.custom: 
+title: Présentation des Types de curseur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4f4d3db7-4f76-450d-ab63-141237a4f034
-caps.latest.revision: "51"
+caps.latest.revision: 51
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: dfd697881fbde24c797707990d53c2cc33576a24
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: df4f0f6e43c0eb7184f8421d3ebeada44e74a3e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-cursor-types"></a>Fonctionnement des types de curseurs
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -82,7 +79,7 @@ ms.lasthandoff: 11/18/2017
  Pour les curseurs dynamiques, les lignes mises à jour conservent leur position dans la mémoire tampon d'extraction jusqu'à ce que la fenêtre définie par la mémoire tampon d'extraction soit quittée. Les lignes mises à jour peuvent réapparaître par la suite à des positions différentes dans le jeu de résultats ou peuvent disparaître complètement. Les applications qui doivent éviter les incohérences transitoires dans le jeu de résultats doivent utiliser une taille d'extraction de 1 (la valeur par défaut est 8 lignes avec l'accès simultané CONCUR_SS_SCROLL_LOCKS et 128 lignes avec d'autres accès simultanés).  
   
 ## <a name="cursor-conversion"></a>Conversion de curseur  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]peut parfois choisir d’implémenter un type de curseur autre que celui demandé, qui est appelé une conversion de curseur implicite (ou dégradation de curseur). Pour plus d’informations sur la conversion de curseur implicite, consultez la rubrique « À l’aide de Conversions implicites de curseur » dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] la documentation en ligne.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] peut parfois choisir d’implémenter un type de curseur autre que celui demandé, qui est appelé une conversion de curseur implicite (ou dégradation de curseur). Pour plus d’informations sur la conversion de curseur implicite, consultez la rubrique « À l’aide de Conversions implicites de curseur » dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] la documentation en ligne.  
   
  Avec [!INCLUDE[ssVersion2000](../../includes/ssversion2000_md.md)], lorsque vous mettez à jour les données via le résultat ResultSet.TYPE_SCROLL_SENSITIVE et ResultSet.CONCUR_UPDATABLE définie, une exception est levée avec un message « le curseur est en lecture seule ». Cette exception se produit parce que le [!INCLUDE[ssVersion2000](../../includes/ssversion2000_md.md)] a effectué une conversion de curseur implicite pour ce résultat jeu et n’a pas retourné le curseur d’être mise à jour qui a été demandé.  
   

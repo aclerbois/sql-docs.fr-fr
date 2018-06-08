@@ -1,30 +1,27 @@
 ---
-title: "Liaison des marqueurs de paramètres | Documents Microsoft"
-ms.custom: 
+title: Liaison des marqueurs de paramètres | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - parameter markers [ODBC]
 - binding parameter markers [ODBC]
 ms.assetid: fe88c1c2-4ee4-45e0-8500-b8c25c047815
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f465e072b7ca7f2b551778eec67f1893e3875f28
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 29f7f37bb67a20d994e3e82e383332b2b35197bd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-parameter-markers"></a>Marqueurs de paramètres de liaison
 L’application lie les paramètres en appelant **SQLBindParameter**. **SQLBindParameter** lie un paramètre à la fois. Avec elle, l’application spécifie les éléments suivants :  

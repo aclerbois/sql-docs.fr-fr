@@ -1,16 +1,13 @@
 ---
 title: DBCC FREEPROCCACHE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - FREEPROCCACHE_TSQL
@@ -27,16 +24,16 @@ helpviewer_keywords:
 - procedure cache [SQL Server]
 - clearing procedure cache
 ms.assetid: 0e09d210-6f23-4129-aedb-3d56b2980683
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 61
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b5fd65fa2a764d87d2c5481a7c20560551ca3311
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a6d9b899fa1bfd606b30c1759da3cb1052643d7b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-freeproccache-transact-sql"></a>DBCC FREEPROCCACHE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]
@@ -124,7 +121,7 @@ Quand la clause WITH NO_INFOMSGS n’est pas spécifiée, l’instruction DBCC F
 S’applique à : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)] 
 - Nécessite l'autorisation ALTER SERVER STATE sur le serveur.  
 
-S’applique à : [!INCLUDE[ssSDW](../../includes/sssdw-md.md)]
+S’applique à : [!INCLUDE[ssSDW](../../includes/sssdw-md.md)]
 - Nécessite l'appartenance au rôle serveur fixe DB_OWNER.  
 
 ## <a name="general-remarks-for-includesssdwincludessssdw-mdmd-and-includesspdwincludessspdw-mdmd"></a>Remarques d’ordre général pour [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  

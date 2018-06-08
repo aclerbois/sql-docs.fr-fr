@@ -1,17 +1,15 @@
 ---
-title: "Description, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Description, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Member::Description
@@ -23,16 +21,15 @@ f1_keywords:
 helpviewer_keywords:
 - Description property [ADO MD]
 ms.assetid: 6d626d35-0bf3-4f24-9934-ad9c9c91273a
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0f3052ab5b0ad05c1a792ff348e77ea0b32c7484
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 62938b58b97abfb621cd4e9ea9f9c9e583c124e7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="description-property-ado-md"></a>Description, propriété (ADO MD)
 Retourne une description de texte de l’objet actuel.  

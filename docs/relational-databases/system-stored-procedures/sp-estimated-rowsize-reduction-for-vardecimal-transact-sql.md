@@ -1,16 +1,14 @@
 ---
 title: sp_estimated_rowsize_reduction_for_vardecimal (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_estimated_rowsize_reduction_for_vardecimal
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - estimate decimal compression
 - table compression [SQL Server]
 ms.assetid: 0fe45983-f9f2-4c7f-938a-0fd96e1cbe8d
-caps.latest.revision: 
+caps.latest.revision: 23
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bd67eb412ba93dd19a828963f2f10d0589d1987c
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 1d699e62251f8f2c750795d2389f338e9bd1bf11
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spestimatedrowsizereductionforvardecimal-transact-sql"></a>sp_estimated_rowsize_reduction_for_vardecimal (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -41,7 +38,7 @@ ms.lasthandoff: 11/27/2017
   Estime la réduction de la taille moyenne des lignes si vous activez le format de stockage vardecimal sur une table. Utilisez ce nombre pour estimer la réduction globale de la taille de la table. Dans la mesure où l'échantillonnage statistique permet de calculer la réduction moyenne de la taille de ligne, considérez-le simplement comme une estimation. La taille de ligne peut augmenter après l'activation du format de stockage vardecimal, mais cela reste rare.  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez plutôt la compression ROW et PAGE. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md). Pour les effets de la compression de la taille des tables et des index, consultez [sp_estimate_data_compression_savings &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql.md).  
+>  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez plutôt la compression ROW et PAGE. Pour plus d'informations, consultez [Data Compression](../../relational-databases/data-compression/data-compression.md). Pour les effets de la compression de la taille des tables et des index, consultez [sp_estimate_data_compression_savings &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-estimate-data-compression-savings-transact-sql.md).  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -75,7 +72,7 @@ sp_estimated_rowsize_reduction_for_vardecimal [ [ @table_name = ] 'table'] [;]
   
  Si une table est activée pour le format de stockage vardecimal, utilisez **sp_estimated_rowsize_reduction_for_vardecimal** pour estimer la taille moyenne de la ligne si le format de stockage vardecimal est désactivé.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation CONTROL sur la table.  
   
 ## <a name="examples"></a>Exemples  
@@ -89,7 +86,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_db_vardecimal_storage_format &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-db-vardecimal-storage-format-transact-sql.md)   
- [sp_tableoption &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-tableoption-transact-sql.md)  
+ [sp_db_vardecimal_storage_format &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-db-vardecimal-storage-format-transact-sql.md)   
+ [sp_tableoption &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-tableoption-transact-sql.md)  
   
   

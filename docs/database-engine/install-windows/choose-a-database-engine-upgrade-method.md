@@ -2,32 +2,30 @@
 title: Choisir une méthode de mise à niveau du moteur de base de données | Microsoft Docs
 ms.custom: ''
 ms.date: 07/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: install-windows
+ms.prod: sql
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - server-general
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 5e57a427-2e88-4ef6-b142-4ccad97bcecc
-caps.latest.revision: ''
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 23
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 1cb3ad0fe1c3678799c557cf9c3b66286505276c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9504b667d4bf6a3e955ca3c1f048a1238bbbd024
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771445"
 ---
 # <a name="choose-a-database-engine-upgrade-method"></a>Choisir une méthode de mise à niveau du moteur de base de données
 
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
   
-  Si vous planifiez une mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.md)] à partir d’une version Release antérieure de SQL Server, pour réduire les interruptions de service et les risques, plusieurs approches sont possibles. Vous pouvez effectuer une mise à niveau sur place, une migration vers une nouvelle installation ou une mise à niveau propagée. Le diagramme suivant vous aidera à choisir l’approche appropriée. Les différentes approches sont également décrites ci-dessous. Pour vous aider avec les points de décision du diagramme, voir aussi [Planifier et tester le plan de mise à niveau du moteur de base de données](../../database-engine/install-windows/plan-and-test-the-database-engine-upgrade-plan.md).  
+  Si vous planifiez une mise à niveau du [!INCLUDE[ssDE](../../includes/ssde-md.md)] à partir d’une version Release antérieure de SQL Server, pour réduire les interruptions de service et les risques, plusieurs approches sont possibles. Vous pouvez effectuer une mise à niveau sur place, une migration vers une nouvelle installation ou une mise à niveau propagée. Le diagramme suivant vous aidera à choisir l’approche appropriée. Les différentes approches sont également décrites ci-dessous. Pour vous aider avec les points de décision du diagramme, voir aussi [Plan and Test the Database Engine Upgrade Plan](../../database-engine/install-windows/plan-and-test-the-database-engine-upgrade-plan.md).  
   
  ![Arbre de décision de la méthode de mise à niveau du moteur de base de données](../../database-engine/install-windows/media/database-engine-upgrade-method-decision-tree.png "Arbre de décision de la méthode de mise à niveau du moteur de base de données")  
   
@@ -50,7 +48,7 @@ ms.lasthandoff: 02/09/2018
   
 -   Environnement de développement sans configuration à haute disponibilité.  
   
--   Environnement de production non stratégique pouvant tolérer un temps mort et s’exécutant sur du matériel des logiciels récents. La durée du temps d’arrêt dépend de la taille de votre base de données et de la vitesse de votre sous-système d’E/S. Une mise à niveau de SQL Server 2014 quand les tables optimisées en mémoire sont en cours d’utilisation prend plus de temps. Pour plus d’informations, consultez [Planifier et tester le plan de mise à niveau du moteur de base de données](../../database-engine/install-windows/plan-and-test-the-database-engine-upgrade-plan.md).  
+-   Environnement de production non stratégique pouvant tolérer un temps mort et s’exécutant sur du matériel des logiciels récents. La durée du temps d’arrêt dépend de la taille de votre base de données et de la vitesse de votre sous-système d’E/S. Une mise à niveau de SQL Server 2014 quand les tables optimisées en mémoire sont en cours d’utilisation prend plus de temps. Pour plus d’informations, consultez [Plan and Test the Database Engine Upgrade Plan](../../database-engine/install-windows/plan-and-test-the-database-engine-upgrade-plan.md).  
   
 > [!WARNING]  
 >  Lorsque vous exécutez le programme d’installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , l’instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est arrêtée, puis redémarrée dans le cadre de l’exécution des vérifications préalables à la mise à niveau.  

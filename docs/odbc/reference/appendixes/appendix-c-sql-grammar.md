@@ -1,28 +1,26 @@
 ---
-title: "Annexe c : SQL grammaire | Documents Microsoft"
-ms.custom: 
+title: 'Annexe c : SQL grammaire | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQL grammar [ODBC], about SQL grammar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQL grammar [ODBC], about SQL grammar
 ms.assetid: 0ee36f09-59e7-4b94-88ca-7ebc0952a3be
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8748219f92d5423eaa2fcc597819c4056697fb3a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a03e442ffa5bb5dc584c3d1f02517173bbaedbc3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendix-c-sql-grammar"></a>Annexe c : grammaire SQL
 Cette annexe contient les rubriques suivantes.  

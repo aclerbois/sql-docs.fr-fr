@@ -1,33 +1,23 @@
 ---
-title: "Élément KPI (CSDLBI) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément KPI (CSDLBI) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 203ee6e8-eef2-4476-b09f-bd95e492ddaa
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 28f4f65bc65ac1a5d231717ddbc552e83ef302de
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: bc368aed1186c20e76ce643a33673030713547ba
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="kpi-element-csdlbi"></a>Élément KPI (CSDLBI)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-L'élément Kpi définit un calcul qui peut être utilisé comme indicateur de performance clé (KPI). Dans un modèle de données Business Intelligence, les indicateurs de performance clés sont basés sur les mesures et, comme telles, la définition de l'indicateur de performance clé contient toutes les métadonnées associées à des mesures, ainsi que les informations nécessaires pour la présentation des valeurs d'indicateur de performance clé, notamment un graphique par défaut.  
+  L'élément Kpi définit un calcul qui peut être utilisé comme indicateur de performance clé (KPI). Dans un modèle de données Business Intelligence, les indicateurs de performance clés sont basés sur les mesures et, comme telles, la définition de l'indicateur de performance clé contient toutes les métadonnées associées à des mesures, ainsi que les informations nécessaires pour la présentation des valeurs d'indicateur de performance clé, notamment un graphique par défaut.  
   
  L'élément Kpi ne spécifie pas la formule, contenue dans la définition de la mesure, mais spécifie plutôt les métadonnées supplémentaires associées aux mesures utilisées comme indicateur de performance clé. Une fois que vous avez désigné une mesure en tant qu'indicateur de performance clé, vous ne pouvez pas l'utiliser comme mesure dans d'autres contextes.  
   

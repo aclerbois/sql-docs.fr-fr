@@ -1,17 +1,15 @@
 ---
-title: "Exemples d’importation et d’exportation en bloc de documents XML (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Exemples d’importation et d’exportation en bloc de documents XML (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - field terminators [SQL Server]
 - bulk importing [SQL Server], data formats
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - bulk exporting [SQL Server], data formats
 - XML bulk load [SQL Server]
 ms.assetid: dff99404-a002-48ee-910e-f37f013d946d
-caps.latest.revision: 
+caps.latest.revision: 65
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fbb5caa7623b0571ec724eea74f139ef7387d538
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 89268e44f2e2ab356109b3c963d51a06a9abc59f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="examples-of-bulk-import-and-export-of-xml-documents-sql-server"></a>Exemples d'importation et d'exportation en bloc de documents XML (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]

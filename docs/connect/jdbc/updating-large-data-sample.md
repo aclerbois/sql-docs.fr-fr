@@ -1,27 +1,24 @@
 ---
-title: "Mise à jour des exemples de données de grande taille | Documents Microsoft"
-ms.custom: 
+title: Mise à jour des exemples de données de grande taille | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 76ecc05f-a77d-40a2-bab9-91a7fcf17347
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 755759dcca9d8ff7288dafc92c55a69e956e0ced
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8ff0d903d9e4f47580fbce5b4c117a2a339dd22c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-large-data-sample"></a>Exemple de mise à jour de données volumineuses
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

@@ -1,16 +1,15 @@
 ---
 title: sp_restoredbreplication (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_restoredbreplication
 ms.assetid: a2c5ee32-e6d9-46e9-8031-8ff13c20acf7
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a68228419fb71567c08291cd63a3a31bcc0d9f8a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ea73a77c47b4579cda2e97dcea77a8f6516157c1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sprestoredbreplication-transact-sql"></a>sp_restoredbreplication (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -67,7 +65,7 @@ sp_restoredbreplication [ @srv_orig = ] 'original_server_name'
 ## <a name="remarks"></a>Notes  
  **sp_restoredbreplication** est utilisée dans tous les types de réplication.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** ou **dbcreator** rôle serveur fixe ou le **dbo** schéma de base de données peut exécuter **sp_restoredbreplication**.  
   
 ## <a name="see-also"></a>Voir aussi  

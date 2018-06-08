@@ -1,16 +1,13 @@
 ---
 title: DBCC SHRINKFILE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SHRINKFILE
@@ -32,16 +29,15 @@ helpviewer_keywords:
 - reducing database size
 - DBCC SHRINKFILE statement
 ms.assetid: e02b2318-bee9-4d84-a61f-2fddcf268c9f
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 87
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 94ad5652920129790045e33c93e2a8fbb83816bd
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: a771f30b82a81fa05ea65409bce9a132cbb42dad
+ms.sourcegitcommit: b3bb41424249de198f22d9c6d40df4996f083aa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="dbcc-shrinkfile-transact-sql"></a>DBCC SHRINKFILE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -81,7 +77,8 @@ Cette option n'est pas prise en charge pour les conteneurs de groupe de fichiers
 Si *target_size* est spécifié, DBCC SHRINKFILE tente de réduire le fichier à la taille spécifiée. Les pages utilisées dans la partie du fichier à libérer sont transférées vers un espace libre disponible dans la partie du fichier conservée. Par exemple, s’il s’agit d’un fichier de données de 10 Mo et que vous affectez la valeur 8 à *target_size* pour les opérations DBCC SHRINKFILE, toutes les pages utilisées dans les 2 derniers Mo du fichier sont transférées dans les pages non allouées des 8 premiers Mo du fichier. DBCC SHRINKFILE ne réduit pas un fichier au-delà de la taille nécessaire pour stocker les données dans le fichier. De fait, s’il s’agit d’un fichier de 10 Mo et que 7 Mo sont utilisés, l’instruction DBCC SHRINKFILE avec une valeur de 6 pour *target_size* réduit la taille à 7 Mo et non pas à 6 Mo.
   
 EMPTYFILE  
-Permet la migration de toutes les données du fichier spécifié vers d’autres fichiers dans le **même groupe de fichiers**. En d’autres mots, EmptyFile effectue la migration des données du fichier spécifié vers d’autres fichiers dans le même groupe de fichiers. Emptyfile vous garantit qu’aucune nouvelle donnée ne sera ajoutée au fichier. Le fichier peut être supprimé en utilisant l’instruction [ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql.md).
+Permet la migration de toutes les données du fichier spécifié vers d’autres fichiers dans le **même groupe de fichiers**. En d’autres mots, EmptyFile effectue la migration des données du fichier spécifié vers d’autres fichiers dans le même groupe de fichiers. Emptyfile vous garantit qu’aucune nouvelle donnée n’est ajoutée au fichier, même si le fichier n’est pas marqué en lecture seule. Le fichier peut être supprimé à l’aide de l’instruction [ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql.md). Si la taille de fichier est modifiée à l’aide de l’instruction [ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql.md), l’indicateur de lecture seule est réinitialisé et les données peuvent être ajoutées.
+
 Pour les conteneurs de groupe de fichiers FILESTREAM, le fichier ne peut pas être supprimé à l'aide d'ALTER DATABASE tant que le Garbage collector FILESTREAM n'a pas été exécuté pour supprimer tous les fichiers conteneurs de groupe de fichiers inutiles qu'EMPTYFILE a copiés vers un autre conteneur. Pour plus d’informations, consultez [sp_filestream_force_garbage_collection &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/filestream-and-filetable-sp-filestream-force-garbage-collection.md)
   
 > [!NOTE]  
@@ -114,7 +111,7 @@ Le tableau suivant décrit les colonnes du jeu de résultats.
 ## <a name="remarks"></a>Notes   
 DBCC SHRINKFILE s'applique aux fichiers de la base de données active. Pour plus d’informations sur le changement de base de données active, consultez [USE &#40;Transact-SQL&#41;](../../t-sql/language-elements/use-transact-sql.md).
   
-Les opérations DBCC SHRINKFILE peuvent être arrêtées à n'importe quel stade du processus, chaque travail terminé étant conservé.
+Les opérations DBCC SHRINKFILE peuvent être arrêtées à n'importe quel stade du processus, chaque travail terminé étant conservé. Si le paramètre EMPTYFILE est utilisé sur un fichier et que l’opération est annulée, le fichier n’est pas marqué pour empêcher l’ajout de données supplémentaires.
   
 Une erreur est générée quand une opération DBCC SHRINKFILE échoue.
   

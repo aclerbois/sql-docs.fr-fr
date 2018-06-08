@@ -1,31 +1,30 @@
 ---
-title: "Création de cas de Test (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Création de cas de Test (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Tester component,Test Case Wizard
+helpviewer_keywords:
+- Tester component,Test Case Wizard
 ms.assetid: b52dfd93-95af-4299-bc8f-83f2a7a6a518
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8028f170d5f3154b9874cda16cc18bd7b36a84b8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 36155da5abac07730c93096e506553f2cd4b8bf5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-test-cases-sybasetosql"></a>Création de cas de Test (SybaseToSQL)
 Utilisez l’Assistant de cas de Test pour créer un test. Cet Assistant vous permet de créer des cas de test en choisissant testé et vérifié les objets et en spécifiant les paramètres de tests.  
@@ -40,16 +39,16 @@ Si vous obtenez la boîte de dialogue, cliquez sur **Oui** pour créer la base d
 ## <a name="overview-of-creating-test-cases-using-the-wizard"></a>Présentation de la création du cas de Test à l’aide de l’Assistant  
 Le processus de création d’un cas de test se compose de cinq étapes :  
   
-1.  [Lors de l’initialisation des cas de Test &#40; SybaseToSQL &#41; ](../../ssma/sybase/initializing-test-cases-sybasetosql.md).  
+1.  [L’initialisation des cas de Test &#40;SybaseToSQL&#41;](../../ssma/sybase/initializing-test-cases-sybasetosql.md).  
   
-2.  [Sélection et configuration d’objets à Test &#40; SybaseToSQL &#41; ](../../ssma/sybase/selecting-and-configuring-objects-to-test-sybasetosql.md).  
+2.  [Sélection et configuration d’objets pour le Test &#40;SybaseToSQL&#41;](../../ssma/sybase/selecting-and-configuring-objects-to-test-sybasetosql.md).  
   
-3.  [Sélectionner et configurer les objets affectés &#40; SybaseToSQL &#41; ](../../ssma/sybase/selecting-and-configuring-affected-objects-sybasetosql.md).  
+3.  [Sélectionner et configurer les objets affectés &#40;SybaseToSQL&#41;](../../ssma/sybase/selecting-and-configuring-affected-objects-sybasetosql.md).  
   
-4.  [Personnalisation des appels ordre &#40; SybaseToSQL &#41; ](../../ssma/sybase/customizing-calls-order-sybasetosql.md).  
+4.  [Personnalisation des appels ordre &#40;SybaseToSQL&#41;](../../ssma/sybase/customizing-calls-order-sybasetosql.md).  
   
-5.  [Terminer la préparation du cas de Test &#40; SybaseToSQL &#41; ](../../ssma/sybase/finishing-test-case-preparation-sybasetosql.md).  
+5.  [Préparation du cas de Test de fin &#40;SybaseToSQL&#41;](../../ssma/sybase/finishing-test-case-preparation-sybasetosql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Test de migration des objets de base de données &#40; SybaseToSQL &#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
+[Test de migration des objets de base de données &#40;SybaseToSQL&#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
   

@@ -1,16 +1,14 @@
 ---
-title: "DENY - Refuser des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY - Refuser des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -29,18 +27,17 @@ helpviewer_keywords:
 - denying permissions [SQL Server], application roles
 - application roles [SQL Server], permissions
 ms.assetid: e2429a5d-e9be-4c05-be20-414d1038a63a
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5f2934637cf18a1188de37c0aba40dac171cd0e9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c1ad7d85472fe253dc507f34f225130b8d7beaf7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-database-principal-permissions-transact-sql"></a>DENY - Refuser des autorisations sur un principal de base de données (Transact-SQL)
+# <a name="deny-database-principal-permissions-transact-sql"></a>DENY – refus d'autorisations de principal de base de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Permet de refuser des autorisations sur un utilisateur de base de données, un rôle de base de données ou un rôle d'application dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

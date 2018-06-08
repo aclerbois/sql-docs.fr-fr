@@ -1,29 +1,27 @@
 ---
-title: "Exemple de méthode SubmitChanges (VBScript) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.technology:
-- drivers
-ms.custom: 
+title: Exemple de méthode SubmitChanges (VBScript) | Documents Microsoft
+ms.prod: sql
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
-ms.suite: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - SubmitChanges method [ADO], VBScript example
 ms.assetid: 619bc7fd-ad0a-44ea-9678-ad40a662c258
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aeb35c0c3470d793157b750b6fe5b3b5f3bf96f3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9a9f1d1455d0cfa393e40640ad188976d45532a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="submitchanges-method-example-vbscript"></a>Exemple de méthode SubmitChanges (VBScript)
 > [!IMPORTANT]

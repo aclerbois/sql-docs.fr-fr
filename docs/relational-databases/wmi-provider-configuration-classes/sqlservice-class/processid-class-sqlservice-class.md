@@ -1,16 +1,15 @@
 ---
 title: Classe ProcessId (classe SqlService) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ProcessId Class (SqlService Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ProcessId property
 ms.assetid: 99b5a2e9-b44a-48a0-993e-04bd15c7fef4
-caps.latest.revision: 
+caps.latest.revision: 35
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fac738a9b2636ec82c548aab3707162f8da46948
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 1c8a59c40ea21152a0575b66fce1932aa8ba12cf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processid-class-sqlservice-class"></a>Classe ProcessId (classe SqlService)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

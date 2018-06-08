@@ -1,25 +1,22 @@
 ---
-title: "Gérer SQL Server sur Linux avec PowerShell | Documents Microsoft"
-description: "Cet article fournit une vue d’ensemble de l’utilisation de PowerShell sur Windows avec SQL Server sur Linux."
+title: Gérer SQL Server sur Linux avec PowerShell | Documents Microsoft
+description: Cet article fournit une vue d’ensemble de l’utilisation de PowerShell sur Windows avec SQL Server sur Linux.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: a3492ce1-5d55-4505-983c-d6da8d1a94ad
-ms.workload: Inactive
-ms.openlocfilehash: f7324a270323950444741cfe713ad0eb5f01aa10
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 54892a66cea7643d708bcd7ba5cf1b6b07d4523f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-powershell-on-windows-to-manage-sql-server-on-linux"></a>Utiliser PowerShell sur Windows pour gérer SQL Server sur Linux
 
@@ -76,7 +73,7 @@ Copiez et collez les commandes suivantes à l’invite de PowerShell. Lorsque vo
 - Créez une instance de la [Server](https://msdn.microsoft.com/en-us/library/microsoft.sqlserver.management.smo.server.aspx) objet
 - Se connecter à la **Server** et quelques propriétés d’affichage
 
-N’oubliez pas de remplacer  **\<your_server_instance\>**  avec l’adresse IP ou le nom d’hôte de votre instance de SQL Server 2017 sur Linux.
+N’oubliez pas de remplacer **\<your_server_instance\>** avec l’adresse IP ou le nom d’hôte de votre instance de SQL Server 2017 sur Linux.
 
 ```powershell
 # Prompt for credentials to login into SQL Server
@@ -105,7 +102,7 @@ HostPlatform     : Linux
 HostDistribution : Ubuntu
 ```
 > [!NOTE]
-> Si rien n’est affiché pour ces valeurs, la connexion à l’instance de SQL Server cible est plus probablement échoué. Assurez-vous que vous pouvez utiliser les mêmes informations de connexion pour se connecter à partir de SQL Server Management Studio. Examinez ensuite les [recommandations en matière de résolution des problèmes de connexion](sql-server-linux-troubleshooting-guide.md#connection).
+> Si rien n’est affiché pour ces valeurs, la connexion à l’instance de SQL Server cible est plus probablement échoué. Assurez-vous que vous pouvez utiliser les mêmes informations de connexion pour se connecter à partir de SQL Server Management Studio. Passez ensuite en revue les [recommandations en matière de résolution des problèmes de connexion](sql-server-linux-troubleshooting-guide.md#connection).
 
 ## <a name="examine-sql-server-error-logs"></a>Examinez les journaux d’erreurs SQL Server
 
@@ -116,7 +113,7 @@ Copiez et collez les commandes suivantes à l’invite de PowerShell. Il peuvent
 - Utilisez le **Get-SqlErrorLog** ouvre une applet de commande pour vous connecter à l’instance de SQL Server 2017 sur Linux et récupérer l’erreur depuis **hier**
 - Dirigez la sortie vers le **Out-GridView** applet de commande
 
-N’oubliez pas de remplacer  **\<your_server_instance\>**  avec l’adresse IP ou le nom d’hôte de votre instance de SQL Server 2017 sur Linux.
+N’oubliez pas de remplacer **\<your_server_instance\>** avec l’adresse IP ou le nom d’hôte de votre instance de SQL Server 2017 sur Linux.
 
 ```powershell
 # Prompt for credentials to login into SQL Server

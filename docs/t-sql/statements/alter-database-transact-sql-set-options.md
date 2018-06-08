@@ -1,17 +1,15 @@
 ---
-title: "Options SET d’ALTER DATABASE (Transact-SQL) | Microsoft Docs"
-description: "Découvrez comment définir des options de base de données telles que l’optimisation automatique, le chiffrement et le magasin des requêtes dans SQL Server et Azure SQL Database."
-ms.custom: 
+title: Options SET d’ALTER DATABASE (Transact-SQL) | Microsoft Docs
+description: Découvrez comment définir des options de base de données telles que l’optimisation automatique, le chiffrement et le magasin des requêtes dans SQL Server et Azure SQL Database.
+ms.custom: ''
 ms.date: 12/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -31,16 +29,15 @@ helpviewer_keywords:
 - auto_create_statistics
 - auto_update_statistics
 ms.assetid: f76fbd84-df59-4404-806b-8ecb4497c9cc
-caps.latest.revision: 
+caps.latest.revision: 159
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: de5b72bd7e890c2b7375448119af832f0e79d075
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: ea637d3853d3e63cbab6806022000c04d95e3e92
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-database-set-options-transact-sql"></a>Options SET d'ALTER DATABASE (Transact-SQL) 
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -273,7 +270,7 @@ SET
  Nom de la base de données à modifier.  
   
  CURRENT  
- **S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
  `CURRENT` effectue l’action dans la base de données active. `CURRENT` n’est pas pris en charge pour toutes les options dans tous les contextes. Si `CURRENT` échoue, fournissez le nom de la base de données.  
   
@@ -294,10 +291,10 @@ SET
 > [!NOTE]  
 >  L’option AUTO_CLOSE n’est pas disponible dans une base de données à relation contenant-contenu, ni sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_close_on de la vue de catalogue sys.databases ou la propriété IsAutoClose de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_close_on de l'affichage catalogue sys.databases ou la propriété IsAutoClose de la fonction DATABASEPROPERTYEX.  
   
 > [!NOTE]  
->  Quand AUTO_CLOSE a la valeur ON, certaines colonnes de la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) et la fonction DATABASEPROPERTYEX retournent la valeur NULL, car la base de données est inaccessible et qu’aucune donnée ne peut être extraite. Pour résoudre ce problème, exécutez une instruction USE pour ouvrir la base de données.  
+>  Quand AUTO_CLOSE a la valeur ON, certaines colonnes de l’affichage catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md) et la fonction DATABASEPROPERTYEX retournent la valeur NULL, car la base de données est inaccessible et qu’aucune donnée ne peut être extraite. Pour résoudre ce problème, exécutez une instruction USE pour ouvrir la base de données.  
   
 > [!NOTE]  
 >  La mise en miroir de bases de données exige AUTO_CLOSE OFF.  
@@ -313,14 +310,14 @@ SET
  OFF  
  L'optimiseur de requête ne crée pas de statistiques sur les colonnes uniques des prédicats de requête lorsqu'il est en train de compiler des requêtes. Si cette option a la valeur OFF, il peut en résulter des plans de requête non optimisés et une dégradation des performances des requêtes.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_create_stats_on de la vue de catalogue sys.databases ou la propriété IsAutoCreateStatistics de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_create_stats_on de l'affichage catalogue sys.databases ou la propriété IsAutoCreateStatistics de la fonction DATABASEPROPERTYEX.  
   
  Pour plus d’informations, consultez la section « Utilisation des options de statistiques à l’échelle de la base de données » dans [Statistiques](../../relational-databases/statistics/statistics.md).  
   
  INCREMENTAL = ON | OFF  
  Lorsque AUTO_CREATE_STATISTICS et INCREMENTAL ont la valeur ON, les statistiques sont créées automatiquement comme incrémentielles chaque fois que les statistiques incrémentielles sont prises en charge. La valeur par défaut est OFF. Pour plus d’informations, consultez [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md).  
   
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
  <a name="auto_shrink"></a> AUTO_SHRINK { ON | OFF }  
  ON  
@@ -335,7 +332,7 @@ SET
  OFF  
  Les fichiers de base de données ne sont pas réduits automatiquement lors des vérifications périodiques de l'espace inutilisé.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_shrink_on de la vue de catalogue sys.databases ou la propriété IsAutoShrink de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_shrink_on de l'affichage catalogue sys.databases ou la propriété IsAutoShrink de la fonction DATABASEPROPERTYEX.  
   
 > [!NOTE]  
 > L'option AUTO_SHRINK n'est pas disponible dans une base de données à relation contenant-contenu.  
@@ -355,7 +352,7 @@ SET
  OFF  
  Spécifie que l'optimiseur de requête ne met pas à jour les statistiques lorsqu'elles sont utilisées par une requête et lorsqu'elles sont peut-être obsolètes. Si cette option a la valeur OFF, il peut en résulter des plans de requête non optimisés et une dégradation des performances des requêtes.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_update_stats_on de la vue de catalogue sys.databases ou la propriété IsAutoUpdateStatistics de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_update_stats_on de l'affichage catalogue sys.databases ou la propriété IsAutoUpdateStatistics de la fonction DATABASEPROPERTYEX.  
   
  Pour plus d’informations, consultez la section « Utilisation des options de statistiques à l’échelle de la base de données » dans [Statistiques](../../relational-databases/statistics/statistics.md).  
   
@@ -372,7 +369,7 @@ SET
   
  Affecter la valeur OFF à cette option n'a aucun effet à moins que AUTO_UPDATE_STATISTICS n'ait également la valeur ON.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_update_stats_async_on de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_auto_update_stats_async_on de l'affichage catalogue sys.databases.  
   
  Pour plus d’informations sur l’utilisation des mises à jour de statistiques synchrones ou asynchrones, consultez la section « Utilisation des options de statistiques à l’échelle de la base de données » dans [Statistiques](../../relational-databases/statistics/statistics.md).  
   
@@ -443,7 +440,7 @@ SET
   
  Les paramètres de niveau connexion définis à l'aide de l'instruction SET se substituent au paramètre de base de données par défaut de CURSOR_CLOSE_ON_COMMIT. Par défaut, les clients ODBC et OLE DB génèrent une instruction SET de niveau connexion qui désactive l'option CURSOR_CLOSE_ON_COMMIT pour la session (valeur OFF), lors de la connexion à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [SET CURSOR_CLOSE_ON_COMMIT &#40;Transact-SQL&#41;](../../t-sql/statements/set-cursor-close-on-commit-transact-sql.md).  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_cursor_close_on_commit_on de la vue de catalogue sys.databases ou la propriété IsCloseCursorsOnCommitEnabled de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_cursor_close_on_commit_on de l'affichage catalogue sys.databases ou la propriété IsCloseCursorsOnCommitEnabled de la fonction DATABASEPROPERTYEX.  
   
  CURSOR_DEFAULT { LOCAL | GLOBAL }  
  **S'applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Non disponible dans [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
@@ -458,7 +455,7 @@ SET
   
  Le curseur n'est libéré implicitement qu'au moment de la déconnexion. Pour plus d’informations, consultez [DECLARE CURSOR &#40;Transact-SQL&#41;](../../t-sql/language-elements/declare-cursor-transact-sql.md).  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_local_cursor_default de la vue de catalogue sys.databases ou la propriété IsLocalCursorsDefault de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_local_cursor_default de l'affichage catalogue sys.databases ou la propriété IsLocalCursorsDefault de la fonction DATABASEPROPERTYEX.  
   
  **\<database_mirroring>**  
   
@@ -481,7 +478,7 @@ SET
   
  Pour affecter la valeur ON à DATE_CORRELATION_OPTIMIZATION, il ne doit exister aucune connexion active à la base de données, à l'exception de celle qui exécute l'instruction ALTER DATABASE. Ensuite, différentes connexions peuvent être prises en charge.  
   
- Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne is_date_correlation_on de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne is_date_correlation_on de l'affichage catalogue sys.databases.  
   
  **\<db_encryption_option> ::=**  
   
@@ -559,11 +556,11 @@ RESTRICTED_USER
 MULTI_USER  
  Tous les utilisateurs qui bénéficient des autorisations appropriées peuvent se connecter à la base de données.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne user_access de la vue de catalogue sys.databases ou la propriété UserAccess de la fonction DATABASEPROPERTYEX.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne user_access de l'affichage catalogue sys.databases ou la propriété UserAccess de la fonction DATABASEPROPERTYEX.  
   
  **\<delayed_durability_option> ::=**  
   
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
  Contrôle si les transactions sont validées de manière entièrement durable ou durable différée.  
   
@@ -596,7 +593,7 @@ MULTI_USER
   
  L'option DB_CHAINING ne peut pas être définie sur les bases de données système suivantes : master, model et tempdb.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_db_chaining_on de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_db_chaining_on de l'affichage catalogue sys.databases.  
   
  TRUSTWORTHY { ON | OFF }  
  ON  
@@ -611,7 +608,7 @@ MULTI_USER
   
  Pour définir cette option, l’autorisation CONTROL SERVER est nécessaire sur la base de données.  
   
- Vous pouvez déterminer l'état de cette option en consultant la colonne is_trustworthy_on de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer l'état de cette option en consultant la colonne is_trustworthy_on de l'affichage catalogue sys.databases.  
   
  DEFAULT_FULLTEXT_LANGUAGE  
  **S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
@@ -691,7 +688,7 @@ MULTI_USER
  FORCED  
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] paramètre toutes les requêtes de la base de données.  
   
- Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne is_parameterization_forced de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne is_parameterization_forced de l'affichage catalogue sys.databases.  
   
  **\<query_store_options> ::=**  
   
@@ -825,7 +822,7 @@ OPERATION_MODE
 REMOTE_DATA_ARCHIVE = { ON ( SERVER = \<server_name> , { CREDENTIAL = \<db_scoped_credential_name> | FEDERATED_SERVICE_ACCOUNT =  ON | OFF } )| OFF ON  
  Active Stretch Database pour la base de données. Pour plus d’informations, notamment sur les prérequis supplémentaires, consultez [Activer Stretch Database pour une base de données](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md).  
   
- **Autorisations**. L’activation de Stretch Database pour une table ou une base de données nécessite les autorisations db_owner. L’activation de Stretch Database pour une base de données nécessite également les autorisations CONTROL DATABASE.  
+ **Les autorisations**. L’activation de Stretch Database pour une table ou une base de données nécessite les autorisations db_owner. L’activation de Stretch Database pour une base de données nécessite également les autorisations CONTROL DATABASE.  
   
 SERVER = \<server_name>  
  Spécifie l’adresse du serveur Azure. Incluez la partie `.database.windows.net` du nom. Par exemple, `MyStretchDatabaseServer.database.windows.net`.  
@@ -860,13 +857,13 @@ FEDERATED_SERVICE_ACCOUNT =  ON | OFF
  Contrôle les options [!INCLUDE[ssSB](../../includes/sssb-md.md)] suivantes : active ou désactive la remise de messages, définit un nouvel identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] ou définit les priorités de conversation sur ON ou OFF.  
   
  ENABLE_BROKER  
- Spécifie que [!INCLUDE[ssSB](../../includes/sssb-md.md)] est activé pour la base de données spécifiée. La remise des messages est démarrée et l'indicateur is_broker_enabled a la valeur true dans la vue de catalogue sys.databases. La base de données conserve l'identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] existant. Service Broker ne peut pas être activé lorsque la base de données est la base de données principale dans une configuration de mise en miroir de bases de données.  
+ Spécifie que [!INCLUDE[ssSB](../../includes/sssb-md.md)] est activé pour la base de données spécifiée. La remise des messages est démarrée et l'indicateur is_broker_enabled a la valeur true dans l'affichage catalogue sys.databases. La base de données conserve l'identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] existant. Service Broker ne peut pas être activé lorsque la base de données est la base de données principale dans une configuration de mise en miroir de bases de données.  
   
 > [!NOTE]  
 >  ENABLE_BROKER requiert un verrou de base de données exclusif. Si d'autres sessions ont verrouillé des ressources dans la base de données, ENABLE_BROKER attend jusqu'à ce que les autres sessions libèrent leurs verrous. Pour activer [!INCLUDE[ssSB](../../includes/sssb-md.md)] dans une base de données utilisateur, vérifiez qu'aucune autre session n'utilise la base de données avant d'exécuter l'instruction ALTER DATABASE SET ENABLE_BROKER, comme le fait de mettre la base de données en mode mono-utilisateur. Pour activer [!INCLUDE[ssSB](../../includes/sssb-md.md)] dans la base de données msdb, arrêtez d'abord l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], afin que [!INCLUDE[ssSB](../../includes/sssb-md.md)] puisse obtenir le verrou nécessaire.  
   
  DISABLE_BROKER  
- Spécifie que [!INCLUDE[ssSB](../../includes/sssb-md.md)] est désactivé pour la base de données spécifiée. La remise des messages est arrêtée et l'indicateur is_broker_enabled a la valeur false dans la vue de catalogue sys.databases. La base de données conserve l'identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] existant.  
+ Spécifie que [!INCLUDE[ssSB](../../includes/sssb-md.md)] est désactivé pour la base de données spécifiée. La remise des messages est arrêtée et l'indicateur is_broker_enabled a la valeur false dans l'affichage catalogue sys.databases. La base de données conserve l'identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] existant.  
   
  NEW_BROKER  
  Spécifie que la base de données doit recevoir un nouvel identificateur Service Broker. Dans la mesure où la base de données est considérée comme un nouveau Service Broker, toutes les conversations existantes dans la base de données sont immédiatement supprimées sans générer de message de fin de dialogue. Tout itinéraire qui fait référence à l'ancien identificateur [!INCLUDE[ssSB](../../includes/sssb-md.md)] doit être recréé avec le nouvel identificateur.  
@@ -906,7 +903,7 @@ FEDERATED_SERVICE_ACCOUNT =  ON | OFF
   
  Cette option a la valeur ON par défaut pour les bases de données master et msdb.  
   
- Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne snapshot_isolation_state de la vue de catalogue sys.databases.  
+ Vous pouvez déterminer la valeur actuelle de cette option en consultant la colonne snapshot_isolation_state de l'affichage catalogue sys.databases.  
   
  READ_COMMITTED_SNAPSHOT { ON | OFF }  
  ON  
@@ -927,7 +924,7 @@ FEDERATED_SERVICE_ACCOUNT =  ON | OFF
 >  Quand une table est créée avec **DURABILITY = SCHEMA_ONLY** et que **READ_COMMITTED_SNAPSHOT** est changé par la suite à l’aide d’**ALTER DATABASE**, les données de la table sont perdues.  
   
  MEMORY_OPTIMIZED_ELEVATE_TO_SNAPSHOT { ON | OFF }  
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
  ON  
  Lorsque le niveau d'isolation de la transaction est défini sur un niveau inférieur à SNAPSHOT (par exemple, READ COMMITTED ou READ UNCOMMITTED), toutes les opérations en [!INCLUDE[tsql](../../includes/tsql-md.md)] interprété sur les tables mémoire optimisées sont effectuées avec l'isolation SNAPSHOT. C'est le cas même si le niveau d'isolation de la transaction est défini explicitement sur le niveau de la session, ou si la valeur par défaut est utilisée implicitement.  

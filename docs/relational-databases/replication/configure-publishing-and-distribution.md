@@ -1,32 +1,30 @@
 ---
-title: "Configurer la publication et la distribution | Microsoft Docs"
-ms.custom: 
+title: Configurer la publication et la distribution | Microsoft Docs
+ms.custom: ''
 ms.date: 08/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], distribution
 - distribution configuration [SQL Server replication]
 - publishing [SQL Server replication], configuring
 ms.assetid: 3cfc8966-833e-42fa-80cb-09175d1feed7
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 83d6989646ac675630b18ec961c5da2e95687823
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: d1a78db3b8f72a0b9ebafc8498791c2d12307262
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-publishing-and-distribution"></a>Configurer la publication et la distribution
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,34 +1,33 @@
 ---
-title: "Modifier la couleur de police, la taille et le style dans les schémas | Microsoft Docs"
-ms.custom: 
+title: Modifier la couleur de police, la taille et le style dans les schémas | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database diagrams [SQL Server], changing text size
 - text in database diagrams
 - appearance of database diagrams
 ms.assetid: 14de9c19-8bbf-4347-bef5-156499640052
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0924148e83cbaa52da10b883cfdf7a67ed4011fa
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: bd841dcccf602cd359cb0a8af5ef6d1e97924842
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-the-font-color-size-and-style-in-diagrams-visual-database-tools"></a>Modifier la couleur de police, la taille et le style dans les schémas (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez personnaliser le mode d’affichage du texte dans les schémas de base de données en changeant la couleur de la police, la taille et le style. Les modifications sont appliquées aux nouveaux schémas et à des schémas existants si vous les modifiez.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez personnaliser le mode d'affichage du texte dans les schémas de base de données en modifiant la couleur de la police, la taille et le style. Les modifications sont appliquées aux nouveaux schémas et à des schémas existants si vous les modifiez.  
   
 ### <a name="to-change-the-font-color-size-and-style-in-diagrams"></a>Pour modifier la couleur de police, la taille et le style dans les schémas  
   

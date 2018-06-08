@@ -1,16 +1,14 @@
 ---
 title: RESTORE (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 03/30/2018
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RESTORE DATABASE
@@ -42,19 +40,19 @@ helpviewer_keywords:
 - transaction log backups [SQL Server], RESTORE statement
 - RESTORE LOG, see RESTORE statement
 ms.assetid: 877ecd57-3f2e-4237-890a-08f16e944ef1
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 248
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: edafff7cc70224c67ef970ca4c13e47cce113f23
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1edf0ff22f56446faf5fa316723c4b2a525534cb
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="restore-statements-transact-sql"></a>Instructions RESTORE (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
+[!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
 
   Restaure les sauvegardes réalisées à l'aide de la commande BACKUP. Cette commande vous permet d'effectuer les scénarios de restauration suivants :  
   
@@ -70,6 +68,8 @@ ms.lasthandoff: 01/25/2018
   
 -   Rétablir une base de données au point d'instantané de base de données.  
   
+[!INCLUDE[ssMIlimitation](../../includes/sql-db-mi-limitation.md)]
+
  Pour plus d’informations sur les scénarios de restauration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Vue d’ensemble de la restauration et de la récupération &#40;SQL Server&#41;](../../relational-databases/backup-restore/restore-and-recovery-overview-sql-server.md).  Pour plus d’informations sur les descriptions des arguments, consultez [Arguments RESTORE &#40;Transact-SQL&#41;](../../t-sql/statements/restore-statements-arguments-transact-sql.md).   Lors de la restauration d’une base de données d’une autre instance, tenez compte des informations de la page [Gérer les métadonnées lors de la mise à disposition d’une base de données sur une autre instance de serveur (SQL Server)](../../relational-databases/databases/manage-metadata-when-making-a-database-available-on-another-server.md).
   
 > [REMARQUE :](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md) Pour plus d’informations sur la restauration à partir du service de stockage Microsoft Blob Azure, consultez **Sauvegarde et restauration SQL Server avec le service de stockage Microsoft Blob Azure**.  
@@ -132,7 +132,7 @@ RESTORE DATABASE { database_name | @database_name_var }
 [;]  
   
 --To Restore a Transaction Log:  
-RESTORE LOG { database_name | @database_name_var }   
+RESTORE LOG { database_name | @database_name_var }  -- Does not apply to SQL Database Managed Instance 
  [ <file_or_filegroup_or_pages> [ ,...n ] ]  
  [ FROM <backup_device> [ ,...n ] ]   
  [ WITH   
@@ -155,7 +155,10 @@ FROM DATABASE_SNAPSHOT = database_snapshot_name
 {   
    { logical_backup_device_name |  
       @logical_backup_device_name_var }  
- | { DISK | TAPE | URL } = { 'physical_backup_device_name' |  
+ | { DISK    -- Does not apply to SQL Database Managed Instance
+     | TAPE  -- Does not apply to SQL Database Managed Instance
+     | URL   -- Applies to SQL Server and SQL Database Managed Instance
+   } = { 'physical_backup_device_name' |  
       @physical_backup_device_name_var }   
 }   
 Note: URL is the format used to specify the location and the file name for the Windows Azure Blob. Although Windows Azure storage is a service, the implementation is similar to disk and tape to allow for a consistent and seemless restore experince for all the three devices.  
@@ -194,7 +197,7 @@ Note: URL is the format used to specify the location and the file name for the W
 --Monitoring Options  
  | STATS [ = percentage ]   
   
---Tape Options  
+--Tape Options. Does not apply to SQL Database Managed Instance
  | { REWIND | NOREWIND }   
  | { UNLOAD | NOUNLOAD }   
   
@@ -334,7 +337,32 @@ Note: URL is the format used to specify the location and the file name for the W
  La restauration d'une base de données efface le cache de plan pour l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Cette opération entraîne la recompilation de tous les plans d'exécution ultérieurs et peut entraîner une baisse temporaire et brutale des performances des requêtes. Pour chaque mémoire cache effacée dans le cache de plan, le journal des erreurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] contient le message d'information suivant : « [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a rencontré %d occurrence(s) de vidages de mémoire cache pour la mémoire cache '%s' (partie du cache du plan) en raison d'opérations de maintenance ou de reconfiguration de base de données ». Ce message est enregistré toutes les cinq minutes si le cache est vidé au cours de cet intervalle de temps.  
   
  Pour restaurer une base de données de disponibilité, restaurez d'abord la base de données en tant qu'instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], puis ajoutez la base de données au groupe de disponibilité.  
-  
+
+## <a name="general-remarks---sql-database-managed-instance"></a>Remarques générales sur SQL Database Managed Instance
+
+Dans le cas d’une restauration asynchrone, la restauration continue même si la connexion cliente s’arrête. Si votre connexion est supprimée, vous pouvez afficher la vue [sys.dm_operation_status](../../relational-databases/system-dynamic-management-views/sys-dm-operation-status-azure-sql-database.md) pour vérifier l’état d’une opération de restauration (et d’une opération CREATE ou DROP sur une base de données). 
+
+Les options de base de données suivantes sont définies/remplacées et ne peuvent pas être modifiées ultérieurement :
+
+- NEW_BROKER (si le service Broker n’est pas activé dans le fichier .bak)
+- ENABLE_BROKER (si le service Broker n’est pas activé dans le fichier .bak)
+- AUTO_CLOSE=OFF (si une base de données dans le fichier .bak est définie avec AUTO_CLOSE=ON)
+- RECOVERY FULL (si une base de données dans le fichier .bak est définie avec le mode de récupération SIMPLE ou BULK_LOGGED)
+- Un groupe de fichiers à mémoire optimisée, appelé XTP, est ajouté au fichier source .bak s’il n’y est pas déjà. Chaque groupe de fichiers à mémoire optimisée existant est renommé XTP
+- Les options SINGLE_USER et RESTRICTED_USER sont remplacées par l’option MULTI_USER
+
+## <a name="limitations---sql-database-managed-instance"></a>Limitations pour SQL Database Managed Instance
+Les limitations suivantes s’appliquent :
+
+- Les fichiers .bak contenant plusieurs jeux de sauvegarde ne peuvent pas être restaurés.
+- Les fichiers .bak contenant plusieurs fichiers journaux ne peuvent pas être restaurés.
+- La restauration échoue si le fichier .bak contient des données FILESTREAM.
+- Les sauvegardes contenant des bases de données avec des objets en mémoire active ne peuvent pas être restaurées.
+- Les sauvegardes contenant des bases de données avec des objets en mémoire à certains points ne peuvent pas être restaurées.
+- Les sauvegardes contenant des bases de données en mode lecture seule ne peuvent pas être restaurées. Cette limitation sera supprimée prochainement.
+
+Pour plus d’informations, consultez [Managed Instance](/azure/sql-database/sql-database-managed-instance)
+
 ## <a name="interoperability"></a>Interopérabilité  
   
 ### <a name="database-settings-and-restoring"></a>Paramètres de bases de données et restauration  
@@ -343,7 +371,7 @@ Note: URL is the format used to specify the location and the file name for the W
  Cependant, l'utilisation de WITH RESTRICTED_USER annule ce comportement pour le paramètre de l'option d'accès utilisateur. Ce paramètre est toujours défini suivant une instruction RESTORE qui inclut l'option WITH RESTRICTED_USER.  
   
 ### <a name="restoring-an-encrypted-database"></a>Restauration d'une base de données chiffrée  
- Pour restaurer une base de données chiffrée, vous devez avoir accès au certificat ou à la clé asymétrique qui a servi à chiffrer la base de données. Sans le certificat et la clé asymétrique, la base de données ne peut pas être restaurée. En conséquence, le certificat utilisé pour chiffrer la clé de chiffrement de base de données doit être conservé tant que la sauvegarde est utile. Pour plus d’informations, consultez [Certificats et clés asymétriques SQL Server](../../relational-databases/security/sql-server-certificates-and-asymmetric-keys.md).  
+ Pour restaurer une base de données chiffrée, vous devez avoir accès au certificat ou à la clé asymétrique qui a servi à chiffrer la base de données. Sans le certificat et la clé asymétrique, la base de données ne peut pas être restaurée. En conséquence, le certificat utilisé pour chiffrer la clé de chiffrement de base de données doit être conservé tant que la sauvegarde est utile. Pour plus d'informations, consultez [SQL Server Certificates and Asymmetric Keys](../../relational-databases/security/sql-server-certificates-and-asymmetric-keys.md).  
   
 ### <a name="restoring-a-database-enabled-for-vardecimal-storage"></a>Restauration d'une base de données activée pour le stockage vardecimal  
  Les sauvegardes et les restaurations fonctionnent correctement avec le format de stockage **vardecimal**. Pour plus d’informations sur le format de stockage **vardecimal**, consultez [sp_db_vardecimal_storage_format &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-db-vardecimal-storage-format-transact-sql.md).  
@@ -402,7 +430,7 @@ Note: URL is the format used to specify the location and the file name for the W
  Une opération de sauvegarde peut éventuellement spécifier des mots de passe pour un support de sauvegarde, un jeu de sauvegarde ou les deux. Lorsqu'un mot de passe a été défini sur un support de sauvegarde ou un jeu de sauvegarde, vous devez entrer le ou les mots de passe corrects dans l'instruction RESTORE. Ces mots de passe empêchent les opérations non autorisées de restauration et d'ajouts de jeux de sauvegarde au support à l'aide d'outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Cependant, les supports protégés par un mot de passe peuvent être remplacés par l'option FORMAT de l'instruction BACKUP.  
   
 > [!IMPORTANT]  
->  La protection assurée par ce mot de passe est plutôt faible. Son but est d'éviter que des utilisateurs autorisés ou non autorisés effectuent une restauration incorrecte à l'aide des outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. En aucun cas, elle n'empêche la lecture des données de la sauvegarde par d'autres moyens ou le remplacement du mot de passe. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]La méthode conseillée en matière de protection des sauvegardes consiste à stocker les bandes de sauvegarde dans un emplacement sûr ou à sauvegarder les fichiers disque protégés par des listes de contrôle d’accès (ACL) adéquates. La liste de contrôle d'accès doit être définie à la racine du répertoire dans lequel les sauvegardes sont effectuées.  
+>  La protection assurée par ce mot de passe est plutôt faible. Son but est d'éviter que des utilisateurs autorisés ou non autorisés effectuent une restauration incorrecte à l'aide des outils [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. En aucun cas, elle n'empêche la lecture des données de la sauvegarde par d'autres moyens ou le remplacement du mot de passe. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]La bonne pratique en matière de protection des sauvegardes consiste à stocker les bandes de sauvegarde dans un emplacement sûr ou à sauvegarder les fichiers disque protégés par une liste de contrôle d’accès (ACL). La liste de contrôle d'accès doit être définie à la racine du répertoire dans lequel les sauvegardes sont effectuées.  
 >   
 >  Pour obtenir des informations spécifiques sur la sauvegarde et la restauration SQL Server avec le service de stockage Microsoft Blob Azure, consultez [Sauvegarde et restauration SQL Server avec le service de stockage Microsoft Blob Azure](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md).  
   

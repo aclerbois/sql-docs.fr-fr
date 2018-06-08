@@ -1,30 +1,29 @@
 ---
-title: "Méthode isSigned (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode isSigned (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSetMetaData.isSigned
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSetMetaData.isSigned
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 1d16672f-1515-4255-8b20-e7911c999f60
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 015cdf33b8dcf02c9e9d214ff6a6f1acd12e99ba
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 27e70e1e5c1c49b67286fb0af9f9a7fa65c82771
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="issigned-method-sqlserverresultsetmetadata"></a>Méthode isSigned (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public boolean isSigned(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Un **int** qui indique l’index de colonne.  
   

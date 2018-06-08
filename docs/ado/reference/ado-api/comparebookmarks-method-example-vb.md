@@ -1,32 +1,29 @@
 ---
-title: "L’exemple CompareBookmarks, méthode (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: L’exemple CompareBookmarks, méthode (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - CompareBookmarks method [ADO], Visual Basic example
 ms.assetid: f156aa48-bfc2-40d1-962b-7b08855776c6
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f018ed177dbf616ce59f088c8960ebab4fbd2c97
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 54dbf0cd580557d3bdac6cd1b8a10f667c6b3b83
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comparebookmarks-method-example-vb"></a>Exemple CompareBookmarks, méthode (VB)
 Cet exemple illustre la [CompareBookmarks](../../../ado/reference/ado-api/comparebookmarks-method-ado.md) (méthode). La valeur relative des signets est rarement nécessaire, sauf si un signet particulier présente une caractéristique spécial.  

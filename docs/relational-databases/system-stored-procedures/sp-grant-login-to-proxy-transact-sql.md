@@ -1,16 +1,14 @@
 ---
-title: sp_grant_login_to_proxy (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_grant_login_to_proxy (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_grant_login_to_proxy
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_grant_login_to_proxy
 ms.assetid: 90e1a6d5-a692-4462-a163-4b0709d83150
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b5a4788da049ef1d3c69f604aacdf9000f9ed624
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e07e03296c9264245504b65136a467e0fe7040e2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spgrantlogintoproxy-transact-sql"></a>sp_grant_login_to_proxy (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,20 +48,20 @@ sp_grant_login_to_proxy
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@login_name**  =] **'***login_name***'**  
- Nom d'accès auquel le droit d'accès est octroyé. Le *login_name* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des  **@login_name** ,  **@fixed_server_role** , ou  **@msdb_role**  doit être spécifié, ou la procédure stockée échoue.  
+ [ **@login_name** =] **'***login_name***'**  
+ Nom d'accès auquel le droit d'accès est octroyé. Le *login_name* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des **@login_name**, **@fixed_server_role**, ou **@msdb_role** doit être spécifié, ou la procédure stockée échoue.  
   
- [ **@fixed_server_role**= ] **'***fixed_server_role***'**  
- Rôle de serveur fixe auquel le droit d'accès est octroyé. Le *fixed_server_role* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des  **@login_name** ,  **@fixed_server_role** , ou  **@msdb_role**  doit être spécifié, ou la procédure stockée échoue.  
+ [ **@fixed_server_role**=] **'***fixed_server_role***'**  
+ Rôle de serveur fixe auquel le droit d'accès est octroyé. Le *fixed_server_role* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des **@login_name**, **@fixed_server_role**, ou **@msdb_role** doit être spécifié, ou la procédure stockée échoue.  
   
- [ **@msdb_role**= ] '*msdb_role*'  
- Le rôle de base de données dans le **msdb** pour accorder l’accès à base de données. Le *msdb_role* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des  **@login_name** ,  **@fixed_server_role** , ou  **@msdb_role**  doit être spécifié, ou la procédure stockée échoue.  
+ [ **@msdb_role**=] '*msdb_role*'  
+ Le rôle de base de données dans le **msdb** pour accorder l’accès à base de données. Le *msdb_role* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des **@login_name**, **@fixed_server_role**, ou **@msdb_role** doit être spécifié, ou la procédure stockée échoue.  
   
- [ **@proxy_id**= ] *id*  
- Identificateur du proxy pour lequel le droit d'accès est octroyé. Le *id* est **int**, avec NULL comme valeur par défaut. Un des  **@proxy_id**  ou  **@proxy_name**  doit être spécifié, ou la procédure stockée échoue.  
+ [ **@proxy_id**=] *id*  
+ Identificateur du proxy pour lequel le droit d'accès est octroyé. Le *id* est **int**, avec NULL comme valeur par défaut. Un des **@proxy_id** ou **@proxy_name** doit être spécifié, ou la procédure stockée échoue.  
   
- [  **@proxy_name** =] **'***proxy_name***'**  
- Nom du proxy pour lequel le droit d'accès est octroyé. Le *proxy_name* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des  **@proxy_id**  ou  **@proxy_name**  doit être spécifié, ou la procédure stockée échoue.  
+ [ **@proxy_name**=] **'***proxy_name***'**  
+ Nom du proxy pour lequel le droit d'accès est octroyé. Le *proxy_name* est **nvarchar (256)**, avec NULL comme valeur par défaut. Un des **@proxy_id** ou **@proxy_name** doit être spécifié, ou la procédure stockée échoue.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  

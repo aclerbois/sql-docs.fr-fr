@@ -1,16 +1,14 @@
 ---
 title: SET ANSI_PADDING (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ANSI_PADDING_TSQL
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - SET ANSI_PADDING statement
 - trailing blanks
 ms.assetid: 92bd29a3-9beb-410e-b7e0-7bc1dc1ae6d0
-caps.latest.revision: 
+caps.latest.revision: 47
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 532df95a03b15d545c682d30b3b4d68e10ea5913
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c2f958757d1f3afe0f4230c1873f1b1c8e3b22ce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-ansipadding-transact-sql"></a>SET ANSI_PADDING (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]
@@ -70,7 +68,7 @@ SET ANSI_PADDING ON
   
 |Paramètre|char(*n*) NOT NULL ou binary(*n*) NOT NULL|char(*n*) NULL ou binary(*n*) NULL|varchar(*n*) ou varbinary(*n*)|  
 |-------------|----------------------------------------------------|--------------------------------------------|----------------------------------------|  
-|ON|Complète la valeur d’origine (avec des espaces à droite pour les colonnes de type **char** et des zéros à droite pour les colonnes de type **binary**), à concurrence de la longueur de la colonne.|Suit les mêmes règles que pour **char(***n***)** or **binary(***n***)** NOT NULL quand l’option SET ANSI_PADDING est ON.|Les espaces à droite figurant dans les valeurs de type character insérées dans des colonnes **varchar** ne sont pas tronqués. Les zéros à droite figurant dans les valeurs de type binary insérées dans des colonnes **varbinary** ne sont pas tronqués. Les valeurs ne sont pas complétées à concurrence de la longueur de la colonne.|  
+|ON|Complète la valeur d’origine (avec des espaces à droite pour les colonnes de type **char** et des zéros à droite pour les colonnes de type **binary**), à concurrence de la longueur de la colonne.|Suit les mêmes règles que pour **char(***n***)** ou **binary(***n***)** NOT NULL quand l’option SET ANSI_PADDING est ON.|Les espaces à droite figurant dans les valeurs de type character insérées dans des colonnes **varchar** ne sont pas tronqués. Les zéros à droite figurant dans les valeurs de type binary insérées dans des colonnes **varbinary** ne sont pas tronqués. Les valeurs ne sont pas complétées à concurrence de la longueur de la colonne.|  
 |OFF|Complète la valeur d’origine (avec des espaces à droite pour les colonnes de type **char** et des zéros à droite pour les colonnes de type **binary**), à concurrence de la longueur de la colonne.|Suit les mêmes règles que pour **varchar** ou **varbinary** quand SET ANSI_PADDING est OFF.|Les espaces à droite dans les valeurs de type character insérées dans les colonnes **varchar** sont tronqués. Les zéros à droite dans les valeurs de type binary insérées dans les colonnes **varbinary** sont tronqués.|  
   
 > [!NOTE]  

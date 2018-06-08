@@ -1,31 +1,29 @@
 ---
-title: "Tables | Microsoft Docs"
-ms.custom: 
+title: Tables | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - tables [SQL Server]
 - table components [SQL Server]
 ms.assetid: 82d7819c-b801-4309-a849-baa63083e83f
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 058ea2dfad2c308bf5cd9b197babebb208c34d3c
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6ebe69098255237f6e9e473e0994e536432d66a3
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34709007"
 ---
 # <a name="tables"></a>Tables
 [!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]

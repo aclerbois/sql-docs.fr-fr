@@ -1,31 +1,29 @@
 ---
-title: "Didacticiel : créer un rapport de graphique rapide en mode hors connexion (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : créer un rapport de graphique rapide en mode hors connexion (Générateur de rapports) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - reports, creating
 - tutorials, getting started
 - creating reports
 ms.assetid: 6b1db67a-cf75-494c-b70c-09f1e6a8d414
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3851cd1793ddb98c29fddd82654adfba887b44d3
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 7ff4d216b7122e3500a99871834029d92d9aa072
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-create-a-quick-chart-report-offline-report-builder"></a>Didacticiel : créer un rapport de graphique rapide en mode hors connexion (Générateur de rapports)
 
@@ -35,7 +33,7 @@ Vous pouvez effectuer ce didacticiel de deux façons différentes. Les deux mét
   
  ![Générateur de rapports - Graphique à secteurs rapide](../../reporting-services/report-builder/media/report-builder-quick-pie-chart.png "Générateur de rapports - Graphique à secteurs rapide")  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Que vous utilisiez des données XML ou une requête [!INCLUDE[tsql](../../includes/tsql-md.md)], vous devez avoir accès au Générateur de rapports. Vous pouvez démarrer le [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] d’un serveur de rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif ou en mode intégré SharePoint, ou vous pouvez télécharger [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] à partir du Centre de téléchargement Microsoft. Pour plus d’informations, consultez [Install Report Builder](../../reporting-services/install-windows/install-report-builder.md).  
   
 ##  <a name="TwoWays"></a> Deux façons de réaliser ce didacticiel  

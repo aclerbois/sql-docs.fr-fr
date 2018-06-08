@@ -1,15 +1,14 @@
 ---
 title: Mode asynchrone et SQLCancel | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|ODBC
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - asynchronous operations [SQL Server Native Client]
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - ODBC applications, asynchronous operations
 - SQL Server Native Client ODBC driver, asynchronous mode
 ms.assetid: f31702a2-df76-4589-ac3b-da5412c03dc2
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ebff53e9267b023f2688f2d3d3e930dec7645aec
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3f6f0e96ff0344a084b84098339687374ba18335
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-a-driver-application---asynchronous-mode-and-sqlcancel"></a>Création d’une Application de pilote - Mode asynchrone et SQLCancel
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

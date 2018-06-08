@@ -1,34 +1,19 @@
 ---
 title: Projet de Scripts dans SQL Server Management Studio Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- scripts [Analysis Services]
-- scripts [Analysis Services], projects
-- projects [Analysis Services], Analysis Server Scripts project
-- projects [Analysis Services], creating
-- Analysis Server Scripts project
-- items [Analysis Services]
-ms.assetid: c4f5a06b-e2e4-4660-a3a8-6fd356742c02
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2b8652fbb1028fa58f06d7ff165b02dc8f5fdc02
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e8ee5d2958b6ba7f180472e4d91ce389159e0438
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-scripts-project-in-sql-server-management-studio"></a>Projet de script Analysis Services dans SQL Server Management Studio
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]
@@ -66,9 +51,9 @@ ms.lasthandoff: 02/15/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de modèles multidimensionnels à l’aide des Outils de données SQL Server &#40;SSDT&#41;](../../analysis-services/multidimensional-models/creating-multidimensional-models-using-sql-server-data-tools-ssdt.md)   
- [Expressions multidimensionnelles &#40; MDX &#41; Référence](../../mdx/multidimensional-expressions-mdx-reference.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence](../../dmx/data-mining-extensions-dmx-reference.md)   
+ [Expressions multidimensionnelles & #40 ; MDX & #41 ; Référence](../../mdx/multidimensional-expressions-mdx-reference.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence](../../dmx/data-mining-extensions-dmx-reference.md)   
  [Langage de script Analysis Services &#40;ASSL pour XMLA&#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)   
- [Analysis Services Scripting Language &#40; ASSL de XMLA &#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
+ [Analysis Services Scripting Language &#40;ASSL de XMLA&#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
   
   

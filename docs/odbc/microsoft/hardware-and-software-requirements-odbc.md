@@ -1,32 +1,29 @@
 ---
-title: "Configurations matérielle et logicielle requises (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Configurations matérielle et logicielle requises (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - hardware requirements [ODBC], desktop database drivers
 - software requirements [ODBC], desktop database drivers
 - system requirements [ODBC], desktop database drivers
 - requirements [ODBC], desktop database drivers
 ms.assetid: 6df2e9cd-de10-4629-97bd-32f2782616c7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7cee0668d49ba0edb88d21799ec571aa708259dd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 389492c377105614c60c127041354786cabbd5ba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hardware-and-software-requirements-odbc"></a>Configurations matérielle et logicielle requises (ODBC)
 Cette rubrique répertorie les conditions requises pour utiliser les pilotes de base de données ODBC Desktop.  

@@ -1,36 +1,33 @@
 ---
 title: Les Transitions de connexion | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transitioning states [ODBC], connection
 - connection transitions [ODBC]
 - state transitions [ODBC], connection
 ms.assetid: 6b6e1a47-4a52-41c8-bb9e-7ddeae09913e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ea7b3761e885778aae1c70ab8d22cd2ef86c1363
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b59fe86e0fb16dca51d24098c98694e77fa7e82b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connection-transitions"></a>Transitions de connexion
 Connexions ODBC ont les états suivants.  
   
-|État|Description|  
+|État| Description|  
 |-----------|-----------------|  
 |C0|Environnement non alloué, non alloué de connexion|  
 |C1|Environnement alloué, non alloué de connexion|  

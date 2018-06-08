@@ -1,30 +1,20 @@
 ---
 title: AllMembers (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: ALLMEMBERS
-dev_langs: kbMDX
-helpviewer_keywords: AllMembers function
-ms.assetid: 202e81d4-d2ee-4ec1-a019-4835eb19f446
-caps.latest.revision: "44"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 67b0b2071e03d3b66daa1a34a6af4159cee89cea
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: a5720c3e82fdb341635c23d13a9c6bf4346a1cc0
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577171"
 ---
 # <a name="allmembers-mdx"></a>AllMembers (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -49,7 +39,7 @@ Level_Expression.AllMembers
  *Level_Expression*  
  Expression MDX (Multidimensional Expressions) valide qui retourne un niveau.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **AllMembers** fonction retourne un jeu qui contient tous les membres, qui inclut des membres calculés, dans la hiérarchie spécifiée ou d’un niveau. Le **AllMembers** fonction retourne les membres calculés, même si la hiérarchie spécifiée ou un niveau ne contient aucun membre visible.  
   
 > [!IMPORTANT]  
@@ -80,8 +70,8 @@ FROM
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [AddCalculatedMembers &#40; MDX &#41;](../mdx/addcalculatedmembers-mdx.md)   
- [Enfants &#40; MDX &#41;](../mdx/children-mdx.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [AddCalculatedMembers &#40;MDX&#41;](../mdx/addcalculatedmembers-mdx.md)   
+ [Enfants &#40;MDX&#41;](../mdx/children-mdx.md)   
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

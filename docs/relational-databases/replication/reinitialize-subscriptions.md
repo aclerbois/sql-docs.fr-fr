@@ -1,32 +1,30 @@
 ---
-title: "Réinitialiser des abonnements | Microsoft Docs"
-ms.custom: 
+title: Réinitialiser des abonnements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - initializing subscriptions [SQL Server replication], reinitializing
 - subscriptions [SQL Server replication], reinitializing
 - reinitializing subscriptions
 ms.assetid: fb13712b-e7ad-4f1f-b605-4554bad0cb60
-caps.latest.revision: 
+caps.latest.revision: 51
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf952abd74ab748afd6e678950bd51ab0ccde9b1
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 251c3c3d0f4a5d52d5c825eba86d55199e6a94b1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reinitialize-subscriptions"></a>Réinitialiser des abonnements
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

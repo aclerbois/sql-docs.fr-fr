@@ -1,15 +1,14 @@
 ---
-title: "Codage de Types définis par l’utilisateur | Documents Microsoft"
-ms.custom: 
+title: Codage de Types définis par l’utilisateur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - VB
@@ -33,20 +32,19 @@ helpviewer_keywords:
 - validating UDT values
 - exposing UDT properties [CLR integration]
 ms.assetid: 1e5b43b3-4971-45ee-a591-3f535e2ac722
-caps.latest.revision: 
+caps.latest.revision: 37
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5bf3a762eb8e8435972d4813d8b3e852d39c8b2d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 69a07f7537b1b5e35e1ff576ba47993ada7a4ce7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-user-defined-types---coding"></a>Création de Types définis par l’utilisateur - codage
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Lorsque vous codez votre définition de type défini par l'utilisateur (UDT, User-Defined Type), vous devez implémenter différentes fonctionnalités, selon que vous implémentez le type défini par l'utilisateur comme classe ou comme structure, et selon les options de format et de sérialisation que vous avez choisies.  
+  Lorsque vous codez votre définition de type défini par l'utilisateur (UDT, User-Defined Type), vous devez implémenter différentes fonctionnalités, selon que vous implémentez le type défini par l'utilisateur comme classe ou comme structure, et selon les options de format et de sérialisation que vous avez choisies.  
   
  L’exemple de cette section illustre l’implémentation d’un **Point** UDT comme un **struct** (ou **Structure** en Visual Basic). Le **Point** UDT se compose de X et Y coordonnées implémentés en tant que procédures de propriété.  
   
@@ -72,7 +70,7 @@ using Microsoft.SqlServer.Server;
 ## <a name="specifying-attributes"></a>Spécification d'attributs  
  Les attributs déterminent la façon dont la sérialisation est utilisée pour construire la représentation de stockage des types définis par l'utilisateur et pour transmettre des types définis par l'utilisateur par valeur au client.  
   
- Le **Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute** est requis. Le **Serializable** attribut est facultatif. Vous pouvez également spécifier le **Microsoft.SqlServer.Server.SqlFacetAttribute** pour fournir des informations sur le type de retour d’un UDT. Pour plus d’informations, consultez [les attributs personnalisés pour les Routines CLR](../../relational-databases/clr-integration/database-objects/clr-integration-custom-attributes-for-clr-routines.md).  
+ Le **Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute** est requis. Le **Serializable** attribut est facultatif. Vous pouvez également spécifier le **Microsoft.SqlServer.Server.SqlFacetAttribute** pour fournir des informations sur le type de retour d’un UDT. Pour plus d’informations, consultez [Attributs personnalisés pour les routines CLR](../../relational-databases/clr-integration/database-objects/clr-integration-custom-attributes-for-clr-routines.md)  
   
 ### <a name="point-udt-attributes"></a>Attributs du type défini par l'utilisateur Point  
  Le **Microsoft.SqlServer.Server.SqlUserDefinedTypeAttribute** définit le format de stockage pour le **Point** UDT **natif**. **IsByteOrdered** a la valeur **true**, ce qui garantit que les résultats des comparaisons sont les mêmes dans SQL Server comme si les comparaisons avaient eu lieu dans le code managé. L’UDT implémente la **System.Data.SqlTypes.INullable** interface pour signaler la valeur null de type UDT.  
@@ -99,7 +97,7 @@ public struct Point : INullable
   
  Vous devez créer une propriété nommée **IsNull**, qui est nécessaire pour déterminer si une valeur est null dans le code CLR. Lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] trouve une instance Null d'un type défini par l'utilisateur, celui-ci est rendu persistant à l'aide de méthodes de gestion de valeur Null ordinaires. Le serveur ne perd pas de temps à sérialiser ou désérialiser le type défini par l'utilisateur si cela n'est pas nécessaire et il ne gaspille pas d'espace pour stocker un type défini par l'utilisateur Null. Ce contrôle des valeurs Null est effectué chaque fois qu'un type défini par l'utilisateur est rapporté du CLR, ce qui signifie que l'utilisation de la construction [!INCLUDE[tsql](../../includes/tsql-md.md)] IS NULL pour vérifier le caractère Null des types définis par l'utilisateur doit toujours fonctionner. Le **IsNull** propriété est également utilisée par le serveur pour tester si une instance est null. Une fois que le serveur a détermine que le type défini par l'utilisateur est Null, il peut utiliser sa gestion Null native.  
   
- Le **get()** méthode **IsNull** n’est pas de cas spéciaux en aucune façon. Si un **Point** variable  **@p**  est **Null**, puis  **@p.IsNull**  , par défaut, prendra la valeur « NULL », pas « 1 ». C’est parce que le **SqlMethod(OnNullCall)** attribut de la **IsNull get()** méthode false par défaut. Étant donné que l’objet est **Null**, lorsque la propriété est requise, l’objet n’est pas désérialisé, la méthode n’est pas appelée et une valeur par défaut de « NULL » est retournée.  
+ Le **get()** méthode **IsNull** n’est pas de cas spéciaux en aucune façon. Si un **Point** variable **@p** est **Null**, puis **@p.IsNull** , par défaut, prendra la valeur « NULL », pas « 1 ». C’est parce que le **SqlMethod(OnNullCall)** attribut de la **IsNull get()** méthode false par défaut. Étant donné que l’objet est **Null**, lorsque la propriété est requise, l’objet n’est pas désérialisé, la méthode n’est pas appelée et une valeur par défaut de « NULL » est retournée.  
   
 ### <a name="example"></a>Exemple  
  Dans l'exemple suivant, la variable `is_Null` est privée et contient l'état de Null pour l'instance du type défini par l'utilisateur. Votre code doit maintenir une valeur appropriée pour `is_Null`. L’UDT doit également avoir une propriété statique nommée **Null** qui retourne une instance de valeur null de l’UDT. Cela permet au type défini par l'utilisateur de renvoyer une valeur Null si l'instance est en effet Null dans la base de données.  

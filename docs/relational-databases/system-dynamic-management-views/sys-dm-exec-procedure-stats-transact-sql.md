@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_procedure_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_procedure_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/10/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_exec_procedure_stats_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_procedure_stats dynamic management view
 ms.assetid: ab8ddde8-1cea-4b41-a7e4-697e6ddd785a
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a1c2ff19bc5054a0f0d6ba6b9a52a95e5dc9c37e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0a2aadbc591400d899791759d25e8174104fd1d1
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecprocedurestats-transact-sql"></a>sys.dm_exec_procedure_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -50,7 +47,7 @@ ms.lasthandoff: 02/03/2018
 |-----------------|---------------|-----------------|  
 |**database_id**|**int**|ID de base de données dans lequel réside la procédure stockée.|  
 |**object_id**|**int**|Numéro d'identification d'objet de la procédure stockée.|  
-|**type**|**char(2)**|Type de l'objet :<br /><br /> P = procédure stockée SQL<br /><br /> PC = Procédure stockée d'assembly (CLR)<br /><br /> X = Procédure stockée étendue|  
+|**type**|**char(2)**|Type de l'objet :<br /><br /> P = Procédure stockée SQL<br /><br /> PC = Procédure stockée d'assembly (CLR)<br /><br /> X = Procédure stockée étendue|  
 |**type_desc**|**nvarchar(60)**|Description du type d'objet :<br /><br /> SQL_STORED_PROCEDURE<br /><br /> CLR_STORED_PROCEDURE<br /><br /> EXTENDED_STORED_PROCEDURE|  
 |**sql_handle**|**varbinary(64)**|Il peut servir à mettre en corrélation avec des requêtes de **sys.dm_exec_query_stats** qui ont été exécutées à partir de cette procédure stockée.|  
 |**plan_handle**|**varbinary(64)**|Identificateur du plan en mémoire. Cet identificateur est temporaire et il reste constant uniquement tant que le plan est dans le cache. Cette valeur peut être utilisée avec la **sys.dm_exec_cached_plans** vue de gestion dynamique.<br /><br /> Sa valeur est toujours 0x000 lorsqu'une procédure stockée compilée en mode natif interroge une table optimisée en mémoire.|  
@@ -86,9 +83,10 @@ ms.lasthandoff: 02/03/2018
  <sup>1</sup> des procédures stockées compilées en mode natif lors de la collecte de statistiques est activée, des temps de travail est collecté en millisecondes. Si la requête s'exécute en moins d'une milliseconde, la valeur est 0.  
   
 ## <a name="permissions"></a>Autorisations  
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte. 
-  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+   
 ## <a name="remarks"></a>Notes  
  Les statistiques de la vue sont mises à jour lorsqu'une exécution de procédure stockée se termine.  
   
@@ -105,7 +103,7 @@ ORDER BY [total_worker_time] DESC;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+[Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
 [sys.dm_exec_sql_text &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md)   
 [sys.dm_exec_query_plan &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-plan-transact-sql.md)    
 [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md)    

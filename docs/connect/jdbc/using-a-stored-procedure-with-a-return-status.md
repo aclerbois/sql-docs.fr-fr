@@ -1,27 +1,24 @@
 ---
-title: "À l’aide d’une procédure stockée avec un état de retour | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’une procédure stockée avec un état de retour | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4b126e95-8458-41d6-af37-fc6662859f19
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 8235d77975a4daae11de47da22dc37ff9be36c6b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 29bb95c06d86ad4d6e45002da1429f6c7d5a5c9e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-a-stored-procedure-with-a-return-status"></a>Utilisation d'une procédure stockée avec retour d'état
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

@@ -1,36 +1,23 @@
 ---
-title: "Élément MemberNamesUnique (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément MemberNamesUnique (ASSL) | Documents Microsoft
+ms.date: 5/8/2018
+ms.prod: sql
+ms.custom: assl
+ms.reviewer: owend
+ms.technology: analysis-services
 ms.topic: reference
-apiname: MemberNamesUnique Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: MemberNamesUnique
-helpviewer_keywords: MemberNamesUnique element
-ms.assetid: bd4e75b2-4605-4ebc-a535-10f743eba08e
-caps.latest.revision: "32"
-author: Minewiskan
+author: minewiskan
 ms.author: owend
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9e1e70feb63ab5a315d67977556ce3b2431d32a5
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 1d997c271426ba5bab1b1adfd7cdf16e796ebdfa
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="membernamesunique-element-assl"></a>Élément MemberNamesUnique (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Détermine si les noms de membres sous l’élément parent doivent être uniques.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Détermine si les noms des membres sous l'élément parent doivent être uniques.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,16 +36,16 @@ ms.lasthandoff: 01/08/2018
 |--------------------|-----------------|  
 |Type de données et longueur|Booléen|  
 |Valeur par défaut|False|  
-|Cardinalité|0-1 : élément facultatif qui peut apparaître une fois et une seule.|  
+|Cardinalité|0-1: élément facultatif qui peut apparaître une fois et une seule.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
   
 |Relation|Élément|  
 |------------------|-------------|  
 |Éléments parents|[DimensionAttribute](../../../analysis-services/scripting/data-type/dimensionattribute-data-type-assl.md),.[ Hiérarchie](../../../analysis-services/scripting/objects/hierarchy-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)  
+ [Propriétés & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/properties/properties-assl.md)  
   
   

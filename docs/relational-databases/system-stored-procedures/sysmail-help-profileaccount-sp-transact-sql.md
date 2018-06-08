@@ -1,16 +1,14 @@
 ---
 title: sysmail_help_profileaccount_sp (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_help_profileaccount_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_help_profileaccount_sp
 ms.assetid: 3ea68271-0a6b-4d77-991c-4757f48f747a
-caps.latest.revision: 
+caps.latest.revision: 43
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: dfe0115ca0e641ca0b6397cd624d093f7d94acff
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 16355eaa114c10a412db39940a8902d1b361d735
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailhelpprofileaccountsp-transact-sql"></a>sysmail_help_profileaccount_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,16 +47,16 @@ sysmail_help_profileaccount_sp
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  ID du profil à répertorier. *profile_id* est **int**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* doit être spécifié.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du profil à répertorier. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Soit *profile_id* ou *profile_name* doit être spécifié.  
   
- [ **@account_id** = ] *account_id*  
+ [ **@account_id** =] *account_id*  
  ID du compte à répertorier. *account_id* est **int**, avec NULL comme valeur par défaut. Lorsque *account_id* et *account_name* sont les deux NULL, répertorie tous les comptes dans le profil.  
   
- [  **@account_name**  =] **'***account_name***'**  
+ [ **@account_name** =] **'***account_name***'**  
  Nom du compte à répertorier. *account_name* est **sysname**, avec NULL comme valeur par défaut. Lorsque *account_id* et *account_name* sont les deux NULL, répertorie tous les comptes dans le profil.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -144,6 +141,6 @@ profile_id  profile_name                 account_id  account_name         sequen
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte de messagerie de base de données](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

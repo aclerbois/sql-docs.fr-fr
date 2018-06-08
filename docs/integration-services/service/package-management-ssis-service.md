@@ -1,17 +1,16 @@
 ---
 title: Gestion de packages (Service SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/16/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.dtsserver.importpackage.f1
 - sql13.dts.dtsserver.exportpackage.f1
@@ -30,16 +29,15 @@ helpviewer_keywords:
 - Integration Services service, package management
 - services [Integration Services], package management
 ms.assetid: 0261ed9e-3b01-4e37-a9d4-d039c41029b6
-caps.latest.revision: 
+caps.latest.revision: 59
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 454bdfb2ce829153943ebef0c32f7ef80c2a2b2c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 09aa087d02f97e4c4c989ceb5186b79a123500cb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="package-management-ssis-service"></a>Gestion de packages (Service SSIS)
   La gestion de packages inclut la surveillance, la gestion, l’importation et l’exportation de packages.  

@@ -1,17 +1,14 @@
 ---
-title: "Vue d’ensemble de la restauration et de la récupération (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Vue d’ensemble de la restauration et de la récupération (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - restoring tables [SQL Server]
 - backups [SQL Server], restore scenarios
@@ -23,16 +20,15 @@ helpviewer_keywords:
 - restoring databases [SQL Server], about restoring databases
 - database restores [SQL Server], scenarios
 ms.assetid: e985c9a6-4230-4087-9fdb-de8571ba5a5f
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 19220b692245c3f07afb8e8a40026b44f1217ea3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7defe7f931b5fde516381264cf4af3589ebce49c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-and-recovery-overview-sql-server"></a>Vue d'ensemble de la restauration et de la récupération (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

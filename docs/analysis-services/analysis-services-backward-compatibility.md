@@ -1,35 +1,19 @@
 ---
-title: "Compatibilité descendante de SQL Server 2016 Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 07/11/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- installing Analysis Services, backward compatibility
-- backward compatibility [Analysis Services]
-- compatibility [Analysis Services]
-- Analysis Services, backward compatibility
-- upgrading Analysis Services
-- SSAS, backward compatibility
-- SQL Server Analysis Services, backward compatibility
-ms.assetid: 618b6c3a-e20d-47a9-b2c6-6d848dfba05a
-caps.latest.revision: "38"
-author: Minewiskan
+title: Compatibilité descendante de SQL Server 2016 Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dbefbaac019a9e7b4193162384469524336cb430
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 5ab4f304d865992a3269b4ee83c9e25f61069e8c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-backward-compatibility-sql-server-2016"></a>Compatibilité descendante de Analysis Services (SQL Server 2016)
 [!INCLUDE[ssas-appliesto-sql2016](../includes/ssas-appliesto-sql2016.md)]
@@ -83,7 +67,7 @@ Une *modification avec rupture* bloque le fonctionnement d’un modèle de donn�
  Les bibliothèques clientes Analysis Services Management Objects (AMO), ADOMD.NET et le modèle d’objet tabulaire (TOM) maintenant ciblent le runtime .NET 4.0. Il peut s’agir d’une modification majeure pour les applications qui ciblent le .NET 3.5. Les applications utilisant des versions plus récentes de ces assemblys doivent maintenant cibler .NET 4.0 ou ultérieur.  
   
 ### <a name="amo-version-upgrade"></a>Mise à niveau de la version AMO  
- Cette version est une mise à niveau de version pour [Analysis Services Management Objects &#40; AMO &#41; ](https://msdn.microsoft.com/library/mt436122.aspx) et est une modification avec rupture dans certaines circonstances.  Le code et les scripts qui appellent AMO continueront de s’exécuter comme avant, si vous mettez à niveau une version précédente. Toutefois, si vous avez besoin pour *recompiler* votre application et que vous ciblez une instance de SQL Server 2016 Analysis Services, vous devez ajouter l’espace de noms suivant pour rendre votre code ou votre script opérationnel :  
+ Cette version est une mise à niveau de version pour [Analysis Services Management Objects &#40;AMO&#41; ](https://msdn.microsoft.com/library/mt436122.aspx) et est une modification avec rupture dans certaines circonstances.  Le code et les scripts qui appellent AMO continueront de s’exécuter comme avant, si vous mettez à niveau une version précédente. Toutefois, si vous avez besoin pour *recompiler* votre application et que vous ciblez une instance de SQL Server 2016 Analysis Services, vous devez ajouter l’espace de noms suivant pour rendre votre code ou votre script opérationnel :  
   
 ```  
   

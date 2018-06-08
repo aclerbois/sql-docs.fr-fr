@@ -1,27 +1,25 @@
 ---
-title: "Se connecter à Oracle (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Se connecter à Oracle (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 23a48cb6-ff30-49bb-b4a7-603ebcab336f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 04f87810ef02030a95c06870012972f307c41f33
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: f682fd589ed585c84c7cb3a4f9efed5f2d185999
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-oracle-oracletosql"></a>Se connecter à Oracle (OracleToSQL)
 Utilisez le **se connecter à Oracle** boîte de dialogue se connecter à la base de données Oracle que vous souhaitez migrer.  
@@ -62,7 +60,7 @@ Entrez le SID de la base de données. Le SID est un identificateur qui le distin
   
 Il s’agit d’une option de mode Standard.  
   
-**User name**  
+**Nom d'utilisateur**  
 Entrez le nom d’utilisateur SSMA utilisera pour se connecter à la base de données Oracle.  
   
 **Mot de passe**  

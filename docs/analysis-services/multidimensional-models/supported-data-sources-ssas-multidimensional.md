@@ -1,37 +1,23 @@
 ---
-title: "Prise en charge des Sources de données (SSAS - multidimensionnel) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Analysis Services, data sources
-- data sources [Analysis Services], about data sources
-- Analysis Services, data sources
-- connections [Analysis Services]
-- SSAS, data sources
-ms.assetid: c97e0f8d-7ddd-4941-8b51-e7832f30fbbe
-caps.latest.revision: 
-author: Minewiskan
+title: Prise en charge des Sources de données (SSAS - multidimensionnel) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 2089ceaf95022e1bed0e7409d9ccbc4af3a64fba
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 907e6cc6deaa9617a4af93ab2080bfe495dacd0b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="supported-data-sources-ssas---multidimensional"></a>Sources de données prises en charge (SSAS - Multidimensionnel)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit les types de sources de données que vous pouvez utiliser dans un modèle multidimensionnel.  
+  Cette rubrique décrit les types de sources de données que vous pouvez utiliser dans un modèle multidimensionnel.  
   
 ##  <a name="bkmk_supported_ds"></a> Sources de données prises en charge  
  Vous pouvez récupérer des données à partir des sources de données dans la table suivante. Lorsque vous installez [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], le programme d'installation n'installe pas les fournisseurs répertoriés pour chaque source de données. Certains fournisseurs ont pu être déjà installés sur votre ordinateur avec d'autres applications ; dans le cas contraire, vous devez télécharger et installer le fournisseur.  

@@ -1,34 +1,30 @@
 ---
-title: "OLEDB Call, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: OLEDB Call, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OLEDB Call event class
 ms.assetid: e1be1e90-98cc-47a3-addd-59d4aeca6547
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a5eb28eace8c8aa1e5f37e952207b6cf18543251
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 017c1599ec4a171fe56018cf07699018593ab13a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="oledb-call-event-class"></a>OLEDB Call (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **OLEDB Call** se produit quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] appelle un fournisseur OLE DB pour les requêtes distribuées et les procédures stockées distantes.  
+  La classe d’événements **OLEDB Call** se produit quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] appelle un fournisseur OLE DB pour les requêtes distribuées et les procédures stockées distantes.  
   
  Incluez la classe d’événements **OLEDB Call** dans les traces pour surveiller uniquement les appels qui ne demandent pas de données ou les appels qui ne sont pas effectués pour la méthode **QueryInterface** . Quand la classe d’événements **OLEDB Call** est incluse dans une trace, la charge engagée dépend de la fréquence à laquelle les appels OLE DB se produisent sur la base de données pendant la trace. Si les appels se produisent fréquemment, la trace peut dégrader notablement les performances.  
   

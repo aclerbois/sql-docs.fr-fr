@@ -1,33 +1,32 @@
 ---
-title: "Utilisation d’un jeu de données externe avec Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Utilisation d’un jeu de données externe avec Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: extensions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - DataSet objects [Reporting Services]
 - data processing extensions [Reporting Services], custom DataSet objects
 - custom DataSet objects [Reporting Services]
 - external DataSet objects [Reporting Services]
 ms.assetid: 11daa013-ec17-4760-80e3-6d84cd8d5722
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 26d020699157a54d9ee2cb85baef8c063ca92f50
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: afcf3dd2d15f38b3c7f54e6facbd4692cc1db899
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-an-external-dataset-with-reporting-services"></a>Utilisation d'un dataset externe avec Reporting Services
   L’objet **DataSet** joue un rôle essentiel dans la prise en charge de scénarios de données déconnectés et distribués avec [!INCLUDE[vstecado](../../../includes/vstecado-md.md)]. L’objet **DataSet** est une représentation résidant en mémoire de données qui fournit un modèle de programmation relationnel cohérent indépendamment de la source de données. Il peut être utilisé avec plusieurs sources de données différentes, avec des données XML ou pour gérer des données locales à l'application. L’objet **DataSet** représente un jeu complet de données, y compris des tables associées, des contraintes et des relations entre les tables. En raison de la polyvalence de l’objet **DataSet** concernant le stockage et l’exposition des données, il est probable que vos données soient traitées et transformées en objet **DataSet** avant toute création de rapport sur ces données.  

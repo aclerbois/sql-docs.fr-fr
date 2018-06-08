@@ -1,16 +1,15 @@
 ---
-title: "Generalflags, propriété (classe SInstance) | Documents Microsoft"
-ms.custom: 
+title: Generalflags, propriété (classe SInstance) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - GeneralFlags Property (SInstance Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - GeneralFlags property
 ms.assetid: 36faf960-e49b-4866-bce0-f8bbf50fd225
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 101e9b16f7195bee1903fde7d4283a853e2efb0a
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 7920fbf8517c4fa3142f7a407603f419f77ef818
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="generalflags-property-sinstance-class"></a>Propriété GeneralFlags (classe SInstance)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

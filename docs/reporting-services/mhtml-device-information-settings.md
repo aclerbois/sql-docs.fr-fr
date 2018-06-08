@@ -1,30 +1,28 @@
 ---
-title: "Paramètres d’informations de périphérique pour le format de rendu MHTML | Microsoft Docs"
-ms.custom: 
+title: Paramètres d’informations de périphérique pour le format de rendu MHTML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - device information settings [Reporting Services], MHTML rendering
 - MHTML [Reporting Services]
 ms.assetid: 60b85dd8-b4fb-4ad9-be6a-e7c89ac076fe
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 99c9e78b843f57c127983b0ae0f1928a95dca535
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 740bf5e3cfab88d8dfcdac986fd4a4d33c641795
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mhtml-device-information-settings"></a>Paramètres d'informations de périphérique pour le format de rendu MHTML
   Le tableau suivant répertorie les paramètres des informations de périphérique qui permettent de restituer les rapports au format Archive Web MHTML.  

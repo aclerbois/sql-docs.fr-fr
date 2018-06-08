@@ -1,32 +1,33 @@
 ---
 title: SQLDrivers (fonction) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLDrivers
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLDrivers
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLDrivers
-helpviewer_keywords: SQLDrivers function [ODBC]
+f1_keywords:
+- SQLDrivers
+helpviewer_keywords:
+- SQLDrivers function [ODBC]
 ms.assetid: 6b5b7514-e9cb-4cfd-8b7a-ab51dfab9efa
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ad4afa4a54b63b759b03774f77ed7ec0371ff931
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ce9fa521b4084ce61dec795ac7462504178b6b37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqldrivers-function"></a>SQLDrivers (fonction)
 **Mise en conformité**  
@@ -54,7 +55,7 @@ SQLRETURN SQLDrivers(
  *EnvironmentHandle*  
  [Entrée] Handle d’environnement.  
   
- *Sens*  
+ *Direction*  
  [Entrée] Détermine si le Gestionnaire de pilotes extrait la description du pilote suivante dans la liste (SQL_FETCH_NEXT) ou si la recherche commence au début de la liste (SQL_FETCH_FIRST).  
   
  *DriverDescription*  
@@ -85,7 +86,7 @@ SQLRETURN SQLDrivers(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLDrivers** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_ENV et un *gérer* de *EnvironmentHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLDrivers** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|(DM) message d’information du Gestionnaire de pilotes spécifiques. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|(DM) la mémoire tampon \* *DriverDescription* n’est pas suffisamment grande pour retourner la description complète de pilote. Par conséquent, la description a été tronquée. La longueur de la description du pilote complète est retournée dans \* *DescriptionLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).<br /><br /> (DM) la mémoire tampon \* *DriverAttributes* n’est pas suffisamment grande pour retourner la liste complète des paires de valeur d’attribut. Par conséquent, la liste a été tronquée. La longueur de la liste non tronquée de paires de valeur d’attribut est retournée dans **AttributesLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  

@@ -1,16 +1,14 @@
 ---
-title: "Spécification d’un schéma de mappage annoté dans une mise à jour (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Spécification d’un schéma de mappage annoté dans une mise à jour (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - annotated XSD schemas, updategrams
@@ -23,25 +21,25 @@ helpviewer_keywords:
 - mapping schema [SQLXML], updategrams
 - sql:inverse
 ms.assetid: 2e266ed9-4cfb-434a-af55-d0839f64bb9a
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b7114229a879e05222d67cbb0147ced02628bfe9
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ce7e9b90c034643ba31df7f34425ff8203956b9c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-40"></a>Spécification d'un schéma de mappage annoté dans un code de mise à jour (updategram) (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette rubrique explique comment le schéma de mappage (XSD ou XDR) spécifié dans un code de mise à jour est utilisé pour traiter les mises à jour. Dans une mise à jour, vous pouvez fournir le nom d’un schéma de mappage annotés à utiliser lors du mappage des éléments et attributs dans la mise à jour aux tables et colonnes dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Lorsqu'un schéma de mappage est spécifié dans un code de mise à jour, les noms d'élément et d'attribut spécifiés dans le code de mise à jour doivent être mappés aux éléments et aux attributs dans le schéma de mappage.  
+  Cette rubrique explique comment le schéma de mappage (XSD ou XDR) spécifié dans un code de mise à jour est utilisé pour traiter les mises à jour. Dans une mise à jour, vous pouvez fournir le nom d’un schéma de mappage annotés à utiliser lors du mappage des éléments et attributs dans la mise à jour aux tables et colonnes dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Lorsqu'un schéma de mappage est spécifié dans un code de mise à jour, les noms d'élément et d'attribut spécifiés dans le code de mise à jour doivent être mappés aux éléments et aux attributs dans le schéma de mappage.  
   
  Pour spécifier un schéma de mappage, vous utilisez la **schéma de mappage** attribut de la  **\<synchronisation >** élément. Les exemples suivants présentent deux codes de mise à jour : l'un utilise un schéma de mappage simple et l'autre utilise un schéma plus complexe.  
   
 > [!NOTE]  
->  Cette documentation suppose une connaissance suffisante des modèles et de la prise en charge des schémas de mappage dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Introduction aux schémas de XSD annoté &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md). Pour les applications héritées qui utilisent XDR, consultez [de schémas XDR annotés &#40; déconseillées dans SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
+>  Cette documentation suppose une connaissance suffisante des modèles et de la prise en charge des schémas de mappage dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Introduction aux schémas de XSD annoté & #40 ; SQLXML 4.0 & #41 ; ](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md). Pour les applications héritées qui utilisent XDR, consultez [de schémas XDR annotés &#40;déconseillé dans SQLXML 4.0&#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
   
 ## <a name="dealing-with-data-types"></a>Traitement des types de données  
  Si le schéma spécifie la **image**, **binaire**, ou **varbinary** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données (à l’aide de **SQL : DataType**) et ne spécifie pas un type de données XML, le code de mise part du principe que le type de données XML est **binaire base 64**. Si vos données sont **bin.base** type, vous devez spécifier explicitement le type (**dt:type=bin.base** ou **type = « xsd:hexBinary »**).  
@@ -238,7 +236,7 @@ Cette rubrique explique comment le schéma de mappage (XSD ou XDR) spécifié da
 ```  
   
 ### <a name="c-inserting-a-record-by-using-the-parent-child-relationship-and-inverse-annotation-specified-in-the-xsd-schema"></a>C. Insertion d'un enregistrement à l'aide de la relation parent-enfant et de l'annotation inverse spécifiées dans le schéma XSD  
- Cet exemple montre comment la logique de mise à jour utilise la relation parent-enfant spécifiée dans le schéma XSD pour traiter les mises à jour et comment la **inverse** annotation est utilisée. Pour plus d’informations sur la **inverse** annotation, consultez [en spécifiant l’attribut SQL : inverse sur SQL : Relationship &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-using/specifying-the-sql-inverse-attribute-on-sql-relationship-sqlxml-4-0.md).  
+ Cet exemple montre comment la logique de mise à jour utilise la relation parent-enfant spécifiée dans le schéma XSD pour traiter les mises à jour et comment la **inverse** annotation est utilisée. Pour plus d’informations sur la **inverse** annotation, consultez [spécifiant l’attribut SQL : inverse sur SQL : Relationship &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-using/specifying-the-sql-inverse-attribute-on-sql-relationship-sqlxml-4-0.md).  
   
  Cet exemple suppose que les tableaux suivants se trouvent dans le **tempdb** base de données :  
   
@@ -331,6 +329,6 @@ Cette rubrique explique comment le schéma de mappage (XSD ou XDR) spécifié da
      Pour plus d’informations, consultez [à l’aide d’ADO pour exécuter des requêtes SQLXML 4.0](../../../relational-databases/sqlxml/using-ado-to-execute-sqlxml-4-0-queries.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

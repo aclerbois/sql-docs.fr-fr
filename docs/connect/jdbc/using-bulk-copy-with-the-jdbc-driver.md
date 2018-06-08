@@ -1,27 +1,24 @@
 ---
-title: "À l’aide de la copie en bloc avec le pilote JDBC | Documents Microsoft"
-ms.custom: 
+title: À l’aide de la copie en bloc avec le pilote JDBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 21e19635-340d-49bb-b39d-4867102fb5df
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: f4a714ce9ea2a076b922de3fc66851fa58110eb4
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 6daf0ae2773d8a99e4f9264c05024a86fcd79926
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-bulk-copy-with-the-jdbc-driver"></a>Utilisation de la copie en bloc avec le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -51,7 +48,7 @@ ms.lasthandoff: 11/18/2017
 > [!NOTE]  
 >  Les exemples de code SQLServerBulkCopy sont fournis pour illustrer la syntaxe pour l'utilisation de SQLServerBulkCopy uniquement. Si les tables source et de destination se trouvent dans la même instance SQL Server, il est plus facile et plus rapide d'utiliser une instruction Transact-SQL INSERT ... SELECT pour copier les données.  
   
-###  <a name="BKMK_TableSetup"></a>Programme d’installation de table  
+###  <a name="BKMK_TableSetup"></a> Programme d’installation de table  
  Pour créer les tables nécessaires à la bonne exécution des exemples de code, vous devez exécuter les instructions Transact-SQL suivantes dans une base de données SQL Server.  
   
 ```  
@@ -460,7 +457,7 @@ public class Program
   
 ```  
   
-##  <a name="BKMK_TransactionBulk"></a>Transaction et opérations de copie en bloc  
+##  <a name="BKMK_TransactionBulk"></a> Transaction et opérations de copie en bloc  
  Les opérations de copie en bloc peuvent être effectuées comme des opérations isolées ou dans le cadre d'une transaction à plusieurs étapes. Cette dernière option permet d'effectuer plusieurs opérations de copie en bloc dans la même transaction ainsi que d'autres opérations de base de données (telles que des insertions, mises à jour et suppressions), tout en étant en mesure de valider ou restaurer toute la transaction.  
   
  Par défaut, une opération de copie en bloc est effectuée comme une opération isolée. L'opération de copie en bloc se produit de façon non transactionnelle, sans possibilité de restauration. Si vous devez restaurer tout ou partie de la copie en bloc en cas d'erreur, vous pouvez utiliser une transaction gérée par SQLServerBulkCopy ou effectuer l'opération de copie en bloc dans une transaction existante.  
@@ -872,7 +869,7 @@ public class Program
   
 5.  Sélectionnez **écrire une requête pour spécifier les données à transférer** et **suivant**.  Entrez votre **instruction SQL** sélectionnez ProductID, Name, ProductNumber de Production.Product et **suivant**  
   
-6.  Vérifiez la configuration : vous pouvez laisser la valeur {CR}{LF} comme séparateur de lignes et la virgule {,} comme séparateur de colonnes.  Sélectionnez **modifier les mappages**... et vérifiez que les données **Type** est correct pour chaque colonne (par exemple, un entier pour ProductID et une chaîne Unicode pour les autres).  
+6.  Vérifiez la configuration : vous pouvez laisser le séparateur de lignes en tant que {CR} {LF} et la virgule comme séparateur de colonne {,}.  Sélectionnez **modifier les mappages**... et vérifiez que les données **Type** est correct pour chaque colonne (par exemple, un entier pour ProductID et une chaîne Unicode pour les autres).  
   
 7.  Passez à le **Terminer** et exécutez l’exportation.  
   
@@ -1035,7 +1032,7 @@ public class Program
   
  Des accesseurs Get et Set existent pour les options suivantes :  
   
-|Option| Description|Valeur par défaut|  
+|Option| Description|Par défaut|  
 |------------|-----------------|-------------|  
 |CheckConstraints booléenne|Vérifie les contraintes pendant l'insertion des données.|False : les contraintes ne sont pas vérifiées|  
 |FireTriggers booléenne|Si spécifié, entraîne l'exécution par le serveur des déclencheurs d'insertion pour les lignes insérées dans la base de données.|False : aucun déclencheur n'est exécuté|  

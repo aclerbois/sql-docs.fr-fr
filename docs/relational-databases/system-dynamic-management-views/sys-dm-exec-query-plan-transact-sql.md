@@ -1,16 +1,12 @@
 ---
-title: sys.dm_exec_query_plan (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_query_plan (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/02/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_query_plan_TSQL
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_query_plan dynamic management function
 ms.assetid: e26f0867-9be3-4b2e-969e-7f2840230770
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5dca7ee8a3721df6992bab61e9228e3bfe73c6ac
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 36eb4273ebdc689320ff831268a508fa977997fb
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecqueryplan-transact-sql"></a>sys.dm_exec_query_plan (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -68,7 +63,7 @@ sys.dm_exec_query_plan ( plan_handle )
 |**dbid**|**smallint**|ID de la base de données de contexte qui était en fonction lorsque l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] correspondant à ce plan a été compilée. Pour les instructions SQL ad hoc et préparées, l'ID de la base de données où les instructions ont été compilées.<br /><br /> Colonne acceptant la valeur NULL.|  
 |**objectid**|**int**|ID de l'objet (par exemple, procédure stockée ou fonction définie par l'utilisateur) pour ce plan de requête. Pour les traitements ad hoc et préparées, cette colonne est **null**.<br /><br /> Colonne acceptant la valeur NULL.|  
 |**number**|**smallint**|Entier servant à la numérotation des procédures stockées. Par exemple, un groupe de procédures pour le **commandes** application peut-être être appelée **orderproc ; 1**, **orderproc ; 2**, et ainsi de suite. Pour les traitements ad hoc et préparées, cette colonne est **null**.<br /><br /> Colonne acceptant la valeur NULL.|  
-|**encrypted**|**bit**|Indique si la procédure stockée correspondante est chiffrée.<br /><br /> 0 = Non chiffrée.<br /><br /> 1 = Chiffrée.<br /><br /> Colonne n'acceptant pas la valeur NULL.|  
+|**Chiffré**|**bit**|Indique si la procédure stockée correspondante est chiffrée.<br /><br /> 0 = Non chiffrée.<br /><br /> 1 = Chiffrée.<br /><br /> Colonne n'acceptant pas la valeur NULL.|  
 |**query_plan**|**xml**|Contient la représentation sous forme de plan d’exécution lors de la compilation du plan de l’exécution de requête est spécifié avec *plan_handle*. Le plan d'exécution de requêtes est au format XML. Un plan est généré pour chaque traitement contenant par exemple des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ad hoc, des appels de procédures stockées et des appels de fonctions définies par l'utilisateur.<br /><br /> Colonne acceptant la valeur NULL.|  
   
 ## <a name="remarks"></a>Notes  
@@ -82,7 +77,7 @@ sys.dm_exec_query_plan ( plan_handle )
   
  Lorsqu’une requête ad hoc utilise un paramétrage simple ou forcé, le **query_plan** colonne contiendra uniquement le texte de l’instruction et pas le plan de requête. Pour retourner le plan de requête, appelez **sys.dm_exec_query_plan** pour le descripteur de plan de la requête paramétrable préparée. Vous pouvez déterminer si la requête a été paramétrée en référençant la **sql** colonne de la [sys.syscacheobjects](../../relational-databases/system-compatibility-views/sys-syscacheobjects-transact-sql.md) vue ou la colonne de texte de la [sys.dm_exec_sql_text](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md) vue de gestion dynamique.  
   
- En raison d’une limitation du nombre de niveaux imbriqués autorisés dans les **xml** type de données, **sys.dm_exec_query_plan** ne peut pas retourner des plans de requête qui correspondent ou sont supérieurs à 128 niveaux d’éléments imbriqués. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette condition empêchait les retours par le plan de requête et générait l'erreur 6335. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 2 et versions ultérieures, le **query_plan** colonne renvoie la valeur NULL. Vous pouvez utiliser la [sys.dm_exec_text_query_plan &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-exec-text-query-plan-transact-sql.md) fonction de gestion dynamique pour retourner la sortie du plan de requête au format texte.  
+ En raison d’une limitation du nombre de niveaux imbriqués autorisés dans les **xml** type de données, **sys.dm_exec_query_plan** ne peut pas retourner des plans de requête qui correspondent ou sont supérieurs à 128 niveaux d’éléments imbriqués. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette condition empêchait les retours par le plan de requête et générait l'erreur 6335. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 2 et versions ultérieures, le **query_plan** colonne renvoie la valeur NULL. Vous pouvez utiliser la [sys.dm_exec_text_query_plan &#40;Transact-SQL&#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-exec-text-query-plan-transact-sql.md) fonction de gestion dynamique pour retourner la sortie du plan de requête au format texte.  
   
 ## <a name="permissions"></a>Autorisations  
  Pour exécuter **sys.dm_exec_query_plan**, un utilisateur doit être un membre de la **sysadmin** rôle serveur fixe ou disposer de l’autorisation VIEW SERVER STATE sur le serveur.  
@@ -162,7 +157,7 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Sys.dm_exec_cached_plans &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md)   
+ [Sys.dm_exec_cached_plans &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md)   
  [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md)   
  [sys.dm_exec_requests &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)   
  [sp_who &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-who-transact-sql.md)   

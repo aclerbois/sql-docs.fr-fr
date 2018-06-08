@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetProtocolsOrder (classe ClientNetworkProtocol) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetProtocolsOrder (classe ClientNetworkProtocol) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetProtocolsOrder Method (ClientNetworkProtocol Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetProtocolsOrder method
 ms.assetid: b86d98b9-aae4-4e74-b4da-1ec984d5c8b4
-caps.latest.revision: 
+caps.latest.revision: 33
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6c89fab09ba6cbece61a4a5bb5fd180473861720
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 866a5003d39e9f31efca606bd28173b625b688f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setprotocolsorder-method-clientnetworkprotocol-class"></a>Méthode SetProtocolsOrder (classe ClientNetworkProtocol)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

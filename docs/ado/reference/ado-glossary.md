@@ -5,12 +5,11 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology: drivers
-ms.topic: article
+ms.technology: connectivity
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO, glossary
 ms.assetid: b0478836-4123-4357-969a-c5784fc28be5
@@ -18,11 +17,11 @@ caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.openlocfilehash: f24e579d2cd1802b42ce4ae2cbc2d8b5b8e447e6
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: bdb021c9d036a3daab6b0e5c3f4912c0da4059eb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-glossary"></a>Glossaire ADO
 Cette rubrique définit les termes pertinents pour ADO.  
@@ -191,7 +190,7 @@ Cette rubrique définit les termes pertinents pour ADO.
  ISAPI (Internet Server Application programmation Interface)  
  Un ensemble de fonctions pour les serveurs Internet, tel qu’un serveur de 2000 Windows NT® / Windows Server exécutant Microsoft® Internet Information Services (IIS).  
   
- Clé  
+ Key  
  Une ou plusieurs colonnes dans une table qui identifient de manière unique une ligne ; souvent utilisé pour une table d’index.  
   
 ## <a name="m"></a>M  

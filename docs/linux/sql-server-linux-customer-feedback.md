@@ -1,24 +1,20 @@
 ---
 title: Commentaires client pour SQL Server sur Linux | Documents Microsoft
-description: "Décrit comment les commentaires des clients de SQL Server sont collectées et configuré sur Linux."
+description: Décrit comment les commentaires des clients de SQL Server sont collectées et configuré sur Linux.
 author: annashres
 ms.author: anshrest
 manager: craigg
 ms.date: 10/02/2017
-ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.topic: conceptual
+ms.prod: sql
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: Inactive
-ms.openlocfilehash: 25772bd0ad7b2994e732e97fd264bef0e951eea9
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.openlocfilehash: 66275b164e1d6514d04e0c8a6f1a666de0a02425
+ms.sourcegitcommit: df382099ef1562b5f2d1cd506c1170d1db64de41
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="customer-feedback-for-sql-server-on-linux"></a>Commentaires client pour SQL Server sur Linux
 

@@ -1,17 +1,15 @@
 ---
-title: "MoveFirst, MoveLast, MoveNext et MovePrevious, méthodes (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: MoveFirst, MoveLast, MoveNext et MovePrevious, méthodes (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::MoveLast
@@ -28,16 +26,15 @@ helpviewer_keywords:
 - MoveFirst method [ADO]
 - MovePrevious method [ADO]
 ms.assetid: a61a01a7-5b33-4150-9126-21dfa63654cb
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e6f36322b7e966d48d8ebd7094154646ee51eb20
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b127303e4b74a60e6ef839922bc911c31b360914
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="movefirst-movelast-movenext-and-moveprevious-methods-ado"></a>MoveFirst, MoveLast, MoveNext et MovePrevious, méthodes (ADO)
 Se déplace vers le premier, au dernier enregistrement suivant ou précédent dans un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet et en fait l’enregistre actif.  

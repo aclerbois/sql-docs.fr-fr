@@ -1,30 +1,28 @@
 ---
-title: "Sécuriser le dossier d’instantanés | Microsoft Docs"
-ms.custom: 
+title: Sécuriser le dossier d’instantanés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - snapshots [SQL Server replication], security
 ms.assetid: 3cd877d1-ffb8-48fd-a72b-98eb948aad27
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6a811827ab0be4c5a61c5e3b65361e8a82421f38
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 2884a1cd4507775e75764d632dfab50185596949
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="secure-the-snapshot-folder"></a>Sécuriser le dossier d'instantanés
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -33,7 +31,7 @@ ms.lasthandoff: 03/08/2018
 > [!NOTE]  
 >  Le contrôle de compte d'utilisateur (UAC) aide les administrateurs à gérer leurs droits utilisateur élevés (parfois appelés *privilèges*). Dans les systèmes d'exploitation dans lesquels le contrôle de compte d'utilisateur est activé, les administrateurs n'utilisent pas leurs droits d'administration. À la place, ils effectuent la plupart des actions en tant qu'utilisateurs standard (non administratifs), assumant temporairement leurs droits d'administration seulement lorsque cela est nécessaire. La fonctionnalité Contrôle de compte d'utilisateur peut empêcher l'accès administratif au partage de fichiers d'instantanés. Vous devez donc octroyer explicitement des autorisations sur le partage de fichiers d'instantanés aux comptes Windows qui sont utilisés par l'Agent d'instantané, l'Agent de distribution et l'Agent de fusion. Vous devez effectuer cette opération même si les comptes Windows sont membres du groupe Administrateurs.  
   
- Quand vous configurez un serveur de distribution au moyen de l’Assistant Configuration de distribution ou de l’Assistant Nouvelle publication, le dossier d’instantanés est installé par défaut sur un chemin local : X:\Program Files\Microsoft SQL Server\\\*\<instance>*\MSSQL\ReplData. Si vous utilisez un serveur de distribution distant ou des abonnements par extraction, vous devez spécifier un partage réseau UNC (tel que \\\\<*nom_ordinateur>*\snapshot) plutôt qu’un chemin local.  
+ Quand vous configurez un serveur de distribution au moyen de l’Assistant Configuration de distribution ou de l’Assistant Nouvelle publication, le dossier d’instantanés est installé par défaut sur un chemin local : X:\Program Files\Microsoft SQL Server\\\*\<instance>* \MSSQL\ReplData. Si vous utilisez un serveur de distribution distant ou des abonnements par extraction, vous devez spécifier un partage réseau UNC (tel que \\\\<*nom_ordinateur>* \snapshot) plutôt qu’un chemin local.  
   
  Lorsque vous accordez des autorisations d'accès au dossier d'instantané, faites-le en fonction du mode d'accès au dossier. Les onglets de boîte de dialogue suivants sont utilisés dans [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Windows 2003 :  
   

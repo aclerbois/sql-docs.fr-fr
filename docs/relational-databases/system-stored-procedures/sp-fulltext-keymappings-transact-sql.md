@@ -1,16 +1,14 @@
 ---
-title: sp_fulltext_keymappings (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_fulltext_keymappings (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_fulltext_keymappings_TSQL
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - sp_fulltext_keymappings
 - full-text indexes [SQL Server], troubleshooting
 ms.assetid: 2818fa42-072d-4664-a2f7-7ec363b51d81
-caps.latest.revision: 
+caps.latest.revision: 31
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9d0a2bb541e1984e8d992ae00303d47838204ed5
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e55e2b1494a8b575e240340969ce127a63b5f2e9
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spfulltextkeymappings-transact-sql"></a>sp_fulltext_keymappings (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
@@ -49,12 +47,12 @@ sp_fulltext_keymappings { table_id | table_id, docid | table_id, NULL, key }
   
 #### <a name="parameters"></a>Paramètres  
  *table_id*  
- ID de l'objet de la table indexée en texte intégral. Si vous spécifiez un non valide *table_id*, une erreur est retournée. Pour plus d’informations sur l’obtention de l’ID d’objet d’une table, consultez [OBJECT_ID &#40; Transact-SQL &#41; ](../../t-sql/functions/object-id-transact-sql.md).  
+ ID de l'objet de la table indexée en texte intégral. Si vous spécifiez un non valide *table_id*, une erreur est retournée. Pour plus d’informations sur l’obtention de l’ID d’objet d’une table, consultez [OBJECT_ID &#40;Transact-SQL&#41;](../../t-sql/functions/object-id-transact-sql.md).  
   
- *docid*  
+ *ID de document*  
  Identificateur de document (DocId) interne qui correspond à la valeur de la clé. Une valeur *docid* non valide ne retourne pas de résultat.  
   
- *key*  
+ *clé*  
  Valeur de la clé de texte intégral pour une table spécifiée. Une valeur *key* non valide ne retourne pas de résultat. Pour plus d’informations sur les valeurs de clé de recherche en texte intégral, consultez [gérer les index de recherche en texte intégral](http://msdn.microsoft.com/library/28ff17dc-172b-4ac4-853f-990b5dc02fd1).  
   
 > [!IMPORTANT]  
@@ -68,9 +66,9 @@ sp_fulltext_keymappings { table_id | table_id, docid | table_id, NULL, key }
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |DocId|**bigint**|Colonne de l'ID interne de document (DocId) qui correspond à la valeur de la clé.|  
-|Clé|*|Valeur de la clé de texte intégral pour une table spécifiée.<br /><br /> Si aucune clé de texte intégral n'existe dans la table de mappage, un ensemble de lignes vide est retourné.|  
+|Key|*|Valeur de la clé de texte intégral pour une table spécifiée.<br /><br /> Si aucune clé de texte intégral n'existe dans la table de mappage, un ensemble de lignes vide est retourné.|  
   
- <sup>*</sup>Le type de données pour la clé est identique au type de données de la colonne de clé de recherche en texte intégral dans la table de base.  
+ <sup>*</sup> Le type de données pour la clé est identique au type de données de la colonne de clé de recherche en texte intégral dans la table de base.  
   
 ## <a name="permissions"></a>Autorisations  
  Cette fonction est publique et ne requiert pas d'autorisation spéciale.  
@@ -80,9 +78,9 @@ sp_fulltext_keymappings { table_id | table_id, docid | table_id, NULL, key }
   
 |Cette liste de paramètres…|Donne le résultat suivant...|  
 |--------------------------|----------------------|  
-|*table_id*|Lorsqu’elle est appelée avec uniquement le *table_id* , sp_fulltext_keymappings retourne toutes les valeurs de clé de recherche en texte intégral (Key) à partir de la table de base spécifiée, avec le DocId qui correspond à chaque clé. Cela inclut des clés qui sont en attente de suppression.<br /><br /> Cette fonction est utile pour la résolution de divers problèmes. Elle est particulièrement utile pour afficher le contenu d'index de recherche en texte intégral lorsque la clé de texte intégral sélectionnée n'est pas un type de données integer. Cela implique de joindre les résultats de sp_fulltext_keymappings avec les résultats de **sys.dm_fts_index_keywords_by_document**. Pour plus d’informations, consultez [sys.dm_fts_index_keywords_by_document &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md).<br /><br /> En général, toutefois, nous vous recommandons, si possible, d'exécuter sp_fulltext_keymappings avec les paramètres qui spécifient une clé de de texte intégral spécifique ou DocId. C'est beaucoup plus efficace que retourner un mappage de clés entier, surtout pour une table très volumineuse pour laquelle le coût de performance lié au retour d'un mappage de clés entier peut être conséquent.|  
+|*table_id*|Lorsqu’elle est appelée avec uniquement le *table_id* , sp_fulltext_keymappings retourne toutes les valeurs de clé de recherche en texte intégral (Key) à partir de la table de base spécifiée, avec le DocId qui correspond à chaque clé. Cela inclut des clés qui sont en attente de suppression.<br /><br /> Cette fonction est utile pour la résolution de divers problèmes. Elle est particulièrement utile pour afficher le contenu d'index de recherche en texte intégral lorsque la clé de texte intégral sélectionnée n'est pas un type de données integer. Cela implique de joindre les résultats de sp_fulltext_keymappings avec les résultats de **sys.dm_fts_index_keywords_by_document**. Pour plus d’informations, consultez [sys.dm_fts_index_keywords_by_document &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md).<br /><br /> En général, toutefois, nous vous recommandons, si possible, d'exécuter sp_fulltext_keymappings avec les paramètres qui spécifient une clé de de texte intégral spécifique ou DocId. C'est beaucoup plus efficace que retourner un mappage de clés entier, surtout pour une table très volumineuse pour laquelle le coût de performance lié au retour d'un mappage de clés entier peut être conséquent.|  
 |*table_id*, *docid*|Si seul le *table_id* et *docid* sont spécifiés, *docid* doit être non null et spécifier un DocId valide dans la table spécifiée. Cette fonction est utile pour isoler la clé de texte intégral personnalisée de la table de base qui correspond au DocId d'un index de recherche en texte intégral particulier.|  
-|*table_id*, NULL, *key*|Si les trois paramètres sont présents, le deuxième paramètre doit être NULL, et *clé* doit être non null et spécifier une valeur de clé de recherche en texte intégral valide à partir de la table spécifiée. Cette fonction est utile pour isoler le DocId qui correspond à une clé de texte intégral particulière de la table de base.|  
+|*table_id*, NULL, *clé*|Si les trois paramètres sont présents, le deuxième paramètre doit être NULL, et *clé* doit être non null et spécifier une valeur de clé de recherche en texte intégral valide à partir de la table spécifiée. Cette fonction est utile pour isoler le DocId qui correspond à une clé de texte intégral particulière de la table de base.|  
   
  Une erreur est retournée dans l'une des conditions suivantes :  
   
@@ -95,7 +93,7 @@ sp_fulltext_keymappings { table_id | table_id, docid | table_id, NULL, key }
 ## <a name="examples"></a>Exemples  
   
 > [!NOTE]  
->  Les exemples de cette section utilisent la `Production.ProductReview` table de la [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] base de données exemple. Vous pouvez créer cet index en exécutant l’exemple fourni pour la `ProductReview` table [CREATE FULLTEXT INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
+>  Les exemples de cette section utilisent la `Production.ProductReview` table de la [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] base de données exemple. Vous pouvez créer cet index en exécutant l’exemple fourni pour la `ProductReview` table [CREATE FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
   
 ### <a name="a-obtaining-all-the-key-and-docid-values"></a>A. Obtention de toutes les valeurs de clés et valeurs DocId  
  L’exemple suivant utilise un [DECLARE](../../t-sql/language-elements/declare-local-variable-transact-sql.md) instruction pour créer une variable locale, `@table_id` et affecter l’ID de la `ProductReview` table en tant que sa valeur. L’exemple exécute **sp_fulltext_keymappings** spécifiant `@table_id` pour le *table_id* paramètre.  
@@ -145,6 +143,6 @@ GO
 |`4`|`4`|`4`|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Recherche en texte intégral et la recherche sémantique stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
+ [Procédures stockées de recherche en texte intégral et la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
   
   

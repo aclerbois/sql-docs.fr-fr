@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_field_metadata | Microsoft Docs
+title: sqlsrv_field_metadata | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_field_metadata
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - API Reference, sqlsrv_field_metadata
 - sqlsrv_field_metadata
 ms.assetid: c02f6942-0484-4567-a78e-fe8aa2053536
-caps.latest.revision: ''
+caps.latest.revision: 34
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 077296607e78b8a0a4d77a174c96abb47a0545d3
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 43cb1b1a028d645c6c1de6e89c292c475eb00dc5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvfieldmetadata"></a>sqlsrv_field_metadata
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -48,7 +45,7 @@ sqlsrv_field_metadata( resource $stmt)
 ## <a name="return-value"></a>Valeur retournée  
 **Tableau** de tableaux ou **false**. Le tableau se compose d’un tableau pour chaque champ dans le jeu de résultats. Chaque sous-tableau possède des clés décrites dans le tableau ci-dessous. En cas d’erreur lors de l’extraction des métadonnées de champ, **false** est retourné.  
   
-|Clé| Description|  
+|Key| Description|  
 |-------|---------------|  
 |Nom|Nom de la colonne à laquelle le champ correspond.|  
 |Type|Valeur numérique qui correspond à un type SQL.|  
@@ -97,7 +94,7 @@ Le tableau suivant fournit plus d’informations sur les clés pour chaque sous-
 La clé Nullable peut avoir la valeur oui ou non.  
   
 ## <a name="example"></a>Exemple  
-L’exemple suivant crée une ressource d’instruction, puis récupère et affiche les métadonnées de champ. L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple suivant crée une ressource d’instruction, puis récupère et affiche les métadonnées de champ. L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

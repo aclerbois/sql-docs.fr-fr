@@ -1,16 +1,14 @@
 ---
-title: sys.dm_db_xtp_checkpoint_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_xtp_checkpoint_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine-imoltp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_db_xtp_checkpoint_stats
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_xtp_checkpoint_stats dynamic management view
 ms.assetid: 8d0b18ca-db4d-4376-9905-3e4457727c46
-caps.latest.revision: 
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3bce2f4337894c86e251e53c9fc0546f2e69253
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 183970c09d23304553167b20366e0751d5f35207
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdbxtpcheckpointstats-transact-sql"></a>sys.dm_db_xtp_checkpoint_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]
@@ -44,10 +42,10 @@ ms.lasthandoff: 02/03/2018
 SELECT * FROM db.sys.dm_db_xtp_checkpoint_stats;  
 ```  
   
-**[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]diffère sensiblement de versions plus récentes et est inférieur de la rubrique à [SQL Server 2014](#bkmk_2014).**
+**[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] diffère sensiblement de versions plus récentes et est inférieur de la rubrique à [SQL Server 2014](#bkmk_2014).**
   
-## <a name="includesssql15includessssql15-mdmd-and-later"></a>[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]et versions ultérieures  
- Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats`, en commençant par  **[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]** .  
+## <a name="includesssql15includessssql15-mdmd-and-later"></a>[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures  
+ Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats`, en commençant par **[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]**.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
@@ -89,7 +87,7 @@ SELECT * FROM db.sys.dm_db_xtp_checkpoint_stats;
 |bytes_of_large_data_serialized|**bigint**|La quantité de données qui a été sérialisées. |  
   
 ##  <a name="bkmk_2014"></a> [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]  
- Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats`, pour  **[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]** .  
+ Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_stats`, pour **[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]**.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
@@ -104,15 +102,15 @@ SELECT * FROM db.sys.dm_db_xtp_checkpoint_stats;
 |new_log_wait_time_in_ms|**bigint**|Durée cumulative d'attente du nouveau journal.|  
 |log_generated_since_last_checkpoint_in_bytes|**bigint**|Nombre d'entrées de journal générées depuis le dernier point de contrôle de l'OLTP en mémoire.|  
 |ms_since_last_checkpoint|**bigint**|Durée en millisecondes depuis le dernier point de contrôle de l'OLTP en mémoire.|  
-|checkpoint_lsn|**numeric (38)**|Numéro séquentiel dans le journal (LSN) de récupération associé au dernier point de vérification de l'OLTP en mémoire terminé.|  
-|current_lsn|**numeric (38)**|Numéro séquentiel dans le journal de l'enregistrement de journal en cours de traitement.|  
-|end_of_log_lsn|**numeric (38)**|Numéro séquentiel dans le journal à la fin du journal.|  
+|checkpoint_lsn|**numérique (38)**|Numéro séquentiel dans le journal (LSN) de récupération associé au dernier point de vérification de l'OLTP en mémoire terminé.|  
+|current_lsn|**numérique (38)**|Numéro séquentiel dans le journal de l'enregistrement de journal en cours de traitement.|  
+|end_of_log_lsn|**numérique (38)**|Numéro séquentiel dans le journal à la fin du journal.|  
 |task_address|**varbinary(8)**|Adresse de SOS_Task. Jointure à sys.dm_os_tasks pour rechercher des informations supplémentaires.|  
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation `VIEW DATABASE STATE` sur le serveur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues de gestion dynamique de Table optimisée en mémoire &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique des tables optimisées en mémoire &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
   
   

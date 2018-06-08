@@ -1,29 +1,19 @@
 ---
-title: "Didacticiels d’exploration de données (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 05/06/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-helpviewer_keywords: data mining [Analysis Services], designing
-ms.assetid: 96eea930-4a4f-42d8-bf72-6c5daf1a5f09
-caps.latest.revision: "25"
-author: Minewiskan
+title: Didacticiels d’exploration de données (Analysis Services) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 0e1c600dddc4ab87c0f5290d90fdecda49f95045
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: b2ee6bfa6bd1061652c2c11f1d8932bf1d8c6519
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-tutorials-analysis-services"></a>Didacticiels sur l'exploration de données (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]

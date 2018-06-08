@@ -3,14 +3,12 @@ title: Prise en charge de l’ensemble de lignes de schéma (OLE DB) | Documents
 description: Prise en charge de l’ensemble de lignes de schéma (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,13 +19,12 @@ helpviewer_keywords:
 - rowsets [OLE DB], schema
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b0617ae1affce30b35d71de5882b05df7a145394
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: d5b8bc20c380494560a5e7b605ff68dded99a928
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schema-rowset-support-ole-db"></a>Prise en charge des ensembles de lignes de schéma (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -63,7 +60,7 @@ ms.lasthandoff: 03/30/2018
  [Ensemble de lignes LINKEDSERVERS &#40;OLE DB&#41;](../../oledb/ole-db/schema-rowsets-linkedservers-rowset.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote d’OLE DB pour SQL Server &#40;OLE DB&#41;](../../oledb/ole-db/oledb-driver-for-sql-server-ole-db.md)   
+ [Programmation de SQL Server OLE DB pilote](../../oledb/ole-db/oledb-driver-for-sql-server-programming.md)   
  [À l’aide des Types définis par l’utilisateur](../../oledb/features/using-user-defined-types.md)  
   
   

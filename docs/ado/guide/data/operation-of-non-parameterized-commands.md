@@ -1,31 +1,28 @@
 ---
-title: "Fonctionnement des commandes Non paramétrées | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Fonctionnement des commandes Non paramétrées | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - non-parameterized commands [ADO]
 - data shaping [ADO], non-parameterized commands
 ms.assetid: 9700e50a-9f17-4ba3-8afb-f750741dc6ca
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1a025cf381bdf5a51cb825294bf5a5399fc033b2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b468d55f9085c5201c1720887087b3ace94a6069
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operation-of-non-parameterized-commands"></a>Fonctionnement des commandes Non paramétrées
 Pour les commandes non paramétrées, toutes les commandes fournisseur sont exécutées et la **jeux d’enregistrements** sont créés lors de l’exécution de commande. Si la commande est exécutée de façon synchrone, toutes les **jeux d’enregistrements** sera entièrement remplie. Si un mode de remplissage asynchrone a été sélectionné, le degré de remplissage de la **jeux d’enregistrements** dépend du mode de remplissage et de la taille de la **jeux d’enregistrements**.  

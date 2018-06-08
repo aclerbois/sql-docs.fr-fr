@@ -1,34 +1,34 @@
 ---
-title: "Créer un projet | Microsoft Docs"
-ms.custom: 
+title: Créer un projet | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.newproject
 - vs.addnewproject
-helpviewer_keywords: projects [SQL Server Management Studio], creating
+helpviewer_keywords:
+- projects [SQL Server Management Studio], creating
 ms.assetid: 7897be19-365b-4b06-bcf0-8a669f67a673
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 767341628dec4f192235954aaa4eeb6ece681615
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 617e0bb42882883a51f5da0bb22ae59eb18dae88
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-project"></a>Créer un projet
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez créer un ou plusieurs projets à l’intérieur d’une solution existante.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez créer un ou plusieurs projets à l'intérieur d'une solution existante.  
   
 ### <a name="to-create-a-new-project-and-add-it-to-a-solution"></a>Pour créer un projet et l'ajouter à une solution  
   
@@ -80,7 +80,7 @@ ms.lasthandoff: 01/17/2018
     **Emplacement**  
     Entrez l'emplacement dans lequel vous voulez créer votre projet ou choisissez-en un dans la liste.  
   
-    **...**  
+    **Parcourir**  
     Affiche la boîte de dialogue **Emplacement du projet** , afin que vous puissiez naviguer jusqu’au répertoire dans lequel le projet doit être enregistré.  
   
     **Solution**  

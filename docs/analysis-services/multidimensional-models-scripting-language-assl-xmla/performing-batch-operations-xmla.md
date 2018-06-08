@@ -1,38 +1,19 @@
 ---
-title: "Exécution d’opérations de traitement par lots (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- multiple projects
-- XML for Analysis, batches
-- parallel batch execution [XMLA]
-- transactional batches
-- serial batch execution [XMLA]
-- XMLA, batches
-- batches [XML for Analysis]
-- nontransactional batches
-ms.assetid: 731c70e5-ed51-46de-bb69-cbf5aea18dda
-caps.latest.revision: 
-author: Minewiskan
+title: Exécution d’opérations de traitement par lots (XMLA) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f2730fb8396f63e123bf8d896ea9a648ad22016d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9cb2983bbf03256839870961f40a018997544ff0
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="performing-batch-operations-xmla"></a>Exécution d'opérations de traitement par lot (XMLA)
   Vous pouvez utiliser la [lot](../../analysis-services/xmla/xml-elements-commands/batch-element-xmla.md) commande XML for Analysis (XMLA) pour exécuter plusieurs commandes XMLA à l’aide d’un seul XMLA [Execute](../../analysis-services/xmla/xml-elements-methods-execute.md) (méthode). Vous pouvez exécuter plusieurs commandes contenues dans le **lot** commande comme une transaction unique ou dans des transactions individuelles pour chaque commande, en série ou en parallèle. Vous pouvez également spécifier des liaisons hors ligne et autres propriétés dans le **lot** commande pour le traitement de plusieurs [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] objets.  
@@ -128,8 +109,8 @@ ms.lasthandoff: 02/15/2018
     >  A **processus** commande ne peut pas inclure le **liaisons**, **DataSource**, **DataSourceView**, ou **ErrorConfiguration** propriétés, si le **processus** commande est contenue dans un **lot** commande. Si vous devez spécifier ces propriétés pour un **processus** command, fournissez les informations nécessaires dans les propriétés correspondantes de la **lot** commande qui contient le **processus** commande.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément de lot &#40; XMLA &#41;](../../analysis-services/xmla/xml-elements-commands/batch-element-xmla.md)   
- [Élément Process &#40; XMLA &#41;](../../analysis-services/xmla/xml-elements-commands/process-element-xmla.md)   
+ [Élément de lot & #40 ; XMLA & #41 ;](../../analysis-services/xmla/xml-elements-commands/batch-element-xmla.md)   
+ [Traiter l’élément &#40;XMLA&#41;](../../analysis-services/xmla/xml-elements-commands/process-element-xmla.md)   
  [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)   
  [Développement avec XMLA dans Analysis Services](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/developing-with-xmla-in-analysis-services.md)  
   

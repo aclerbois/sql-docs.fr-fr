@@ -1,16 +1,15 @@
 ---
-title: "Configurer et gérer des clés de chiffrement (Gestionnaire de configuration de SSRS) | Microsoft Docs"
-ms.custom: 
+title: Configurer et gérer des clés de chiffrement (Gestionnaire de configuration de SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/31/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - encryption keys [Reporting Services]
 - private keys [Reporting Services]
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - encryption [Reporting Services]
 - public keys [Reporting Services]
 ms.assetid: 58e61636-88a2-4338-ae5f-3dd210aee887
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3005a99fcfe0d18e3b39394bbf9cb34b908201e8
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 581abfca863baaa024d0c0b74eea1b6521357824
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssrs-encryption-keys---manage-encryption-keys"></a>Clés de chiffrement SSRS - Gérer les clés de chiffrement
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] utilise des clés de chiffrement pour protéger les informations de connexion et d’identification stockées dans la base de données du serveur de rapports. Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], le chiffrement est pris en charge par la combinaison d'une clé publique, d'une clé privée et d'une clé symétrique, dont le but est de protéger les données sensibles. La clé symétrique est créée au cours de l'initialisation du serveur de rapports lorsque vous installez ou configurez le serveur de rapports. Elle est utilisée par le serveur de rapports pour chiffrer les données sensibles stockées sur le serveur de rapports. Les clés publiques et privées sont créées par le système d'exploitation et servent à protéger la clé symétrique. Une paire de clés privée et publique est créée pour chaque instance du serveur de rapports qui stocke des données sensibles dans une base de données de serveur de rapports.  

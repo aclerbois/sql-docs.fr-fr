@@ -1,17 +1,16 @@
 ---
-title: "Modifier le schéma dans les bases de données de publication | Microsoft Docs"
-ms.custom: 
+title: Modifier le schéma dans les bases de données de publication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], schema changes
 - snapshot replication [SQL Server], replicating schema changes
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - schemas [SQL Server replication], replicating changes
 - publishing [SQL Server replication], schema changes
 ms.assetid: 926c88d7-a844-402f-bcb9-db49e5013b69
-caps.latest.revision: 
+caps.latest.revision: 73
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 50831e424ea9680d8c1fa09d0e869b7ec21ca7f9
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 905725cecea8e2dee08641b49500d23f664f934b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="make-schema-changes-on-publication-databases"></a>Modifier le schéma dans les bases de données de publication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

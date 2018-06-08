@@ -1,32 +1,30 @@
 ---
-title: "Exemples en Visual Basic de Code des services Bureau à distance | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Exemples en Visual Basic de Code des services Bureau à distance | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Visual Basic RDS examples [ADO]
 - RDS samples [ADO], Visual Basic
 ms.assetid: d9cb84a1-4ec2-4d41-8f92-dec2e17cde67
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1b84d856fd85f6c52ee5a4ebe49bfb8d9893f42
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 32df26fd3ec74a2c9bfba14767669c811da5d3f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rds-code-examples-in-visual-basic"></a>Exemples de Code RDS en Visual Basic
 > [!IMPORTANT]

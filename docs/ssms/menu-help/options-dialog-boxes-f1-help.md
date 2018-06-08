@@ -1,33 +1,32 @@
 ---
-title: "Boîtes de dialogue Options - Aide (F1) | Microsoft Docs"
-ms.custom: 
+title: Boîtes de dialogue Options - Aide (F1) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-menu
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Options [SQL Server Management Studio], dialog boxes
 - Options [SQL Server Management Studio]
 ms.assetid: b98d2631-530a-43b4-8491-f724f8e4a23a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 14a3f463d74000c9d7df7d089073f93fa00fc3f4
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 83e972ffe30d47eb2749a5ad88afd0b68722845f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="options-dialog-boxes-f1-help"></a>Aide (F1) des boîtes de dialogue Options
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette section contient l’aide accessible par le biais de la touche F1 des boîtes de dialogue qui sont accessibles en cliquant sur **Options** dans le menu **Outils** de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Cette section contient l’aide accessible par le biais de la touche F1 des boîtes de dialogue qui sont accessibles en cliquant sur **Options** dans le menu **Outils** de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)].  
   
 [Options &#40;Concepteurs - Concepteurs Analysis Services - Général&#41;](../../ssms/menu-help/options-designers-analysis-services-designers-general.md)  
   

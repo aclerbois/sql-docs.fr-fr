@@ -1,16 +1,14 @@
 ---
-title: "La récupération des données de Type d’informations avec SQLGetTypeInfo | Documents Microsoft"
-ms.custom: 
+title: La récupération des données de Type d’informations avec SQLGetTypeInfo | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL data types [ODBC], identifiers
 - SQLGetTypeInfo function [ODBC], retrieving data type information
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - identifiers [ODBC], SQL type
 - SQL type identifiers [ODBC]
 ms.assetid: d4f8b152-ab9e-4d05-a720-d10a08a6df81
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b3ae7606967ce0f77fea638a69a8b44f0e175a48
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d764d8470343d67bd37c1ef7ce5dcf15962079e9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="retrieving-data-type-information-with-sqlgettypeinfo"></a>La récupération des informations de Type de données avec SQLGetTypeInfo
 Étant donné que les mappages de types de données SQL sous-jacente aux identificateurs de type ODBC sont approximatifs, ODBC fournit une fonction (**SQLGetTypeInfo**) via lequel un pilote peut complètement décrivent chaque type de données SQL dans la source de données. Cette fonction retourne un jeu de résultats, chaque ligne qui décrit les caractéristiques d’un type de données, telles que le nom, identificateur de type, la précision, échelle et possibilité de valeur null.  

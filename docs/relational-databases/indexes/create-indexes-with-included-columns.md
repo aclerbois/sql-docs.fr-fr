@@ -1,17 +1,14 @@
 ---
-title: "Créer des index avec colonnes incluses | Microsoft Docs"
-ms.custom: 
+title: Créer des index avec colonnes incluses | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - index size [SQL Server]
 - index keys [SQL Server]
@@ -23,16 +20,16 @@ helpviewer_keywords:
 - designing indexes [SQL Server], included columns
 - nonkey columns
 ms.assetid: d198648d-fea5-416d-9f30-f9d4aebbf4ec
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 29
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 2cea0215d55b75807b735a7028a79aa52bbbe7e4
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 75ceb2087d4c46080ad9fa3af96f1eeb710e8897
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-indexes-with-included-columns"></a>Créer des index avec colonnes incluses
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

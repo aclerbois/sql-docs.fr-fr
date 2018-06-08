@@ -1,29 +1,28 @@
 ---
-title: "Certains réplicas de disponibilité sont déconnectés | Microsoft Docs"
-ms.custom: 
+title: Certains réplicas de disponibilité sont déconnectés | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.agdashboard.agp7allconnected.issues.f1
-helpviewer_keywords: Availability Groups [SQL Server], policies
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.agdashboard.agp7allconnected.issues.f1
+helpviewer_keywords:
+- Availability Groups [SQL Server], policies
 ms.assetid: aea808be-6f0f-40c2-9aa2-a2a435ec6443
-caps.latest.revision: "12"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fc3af26fd507ef52e13ca29fa72b4dc6640c0dbd
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 4f43abe6033336648c15cf418e417cd439e3a033
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768405"
 ---
 # <a name="some-availability-replicas-are-disconnected"></a>Certains réplicas de disponibilité sont déconnectés
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

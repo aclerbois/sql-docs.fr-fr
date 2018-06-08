@@ -1,31 +1,23 @@
 ---
-title: "Créer une connexion de modèle sémantique BI vers une base de données de modèle tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 69b306f6-ee8a-44d2-8f51-0cad2c0bc135
-caps.latest.revision: 
-author: Minewiskan
+title: Créer une connexion de modèle sémantique BI vers une base de données de modèle tabulaire | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0077f3a970f872329db9c30e16ae5653a4ccb13f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: d17f5d68c1ea60c413a631ba0d734768c61fa5b2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-bi-semantic-model-connection-to-a-tabular-model-database"></a>Créer une connexion de modèle sémantique BI à une base de données model tabulaire
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Utilisez les informations de cette rubrique pour configurer une connexion de modèle sémantique BI qui redirige vers une base de données model tabulaire qui s'exécute sur une instance Analysis Services en dehors de la batterie SharePoint.  
+  Utilisez les informations de cette rubrique pour configurer une connexion de modèle sémantique BI qui redirige vers une base de données model tabulaire qui s'exécute sur une instance Analysis Services en dehors de la batterie SharePoint.  
   
  Après avoir créé une connexion de modèle sémantique BI et configuré les autorisations SharePoint et Analysis Services, les utilisateurs peuvent l'utiliser comme source de données pour les rapports Excel ou [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] .  
   

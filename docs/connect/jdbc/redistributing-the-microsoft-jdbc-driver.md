@@ -1,28 +1,24 @@
 ---
 title: Redistribution du pilote Microsoft JDBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 625d64d3-6e7c-41c2-912a-38fdf6695922
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f0836490472e62ea7eb430cf14781da233e0f80e
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 4879fa6bf41179d78ddf73d4f5847ebf9514220e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="redistributing-the-microsoft-jdbc-driver"></a>Redistribution du pilote Microsoft JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

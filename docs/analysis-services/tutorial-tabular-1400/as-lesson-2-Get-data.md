@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 2 : obtenir les données | Documents Microsoft"
-description: "Décrit comment obtenir et importer des données dans le projet du didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 2 : obtenir les données | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 1fd06f563581d42764b5b6f29b3c22d8129f9160
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 9adeebfbd3c49761adb816a7d28472a61ffca5cc
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="get-data"></a>Obtenir des données
 
@@ -56,7 +48,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
 
 4.  Lorsque vous êtes invité à entrer les informations d’identification, vous devez spécifier les informations d’identification Qu'analysis Services utilise pour se connecter à la source de données lors de l’importation et le traitement des données. Dans **le Mode d’emprunt d’identité**, sélectionnez **emprunter l’identité d’un compte**, puis entrez les informations d’identification, puis cliquez sur **connexion**. Il est recommandé de qu'utiliser un compte dans lequel le mot de passe n’expire jamais.
 
-    ![as-lesson2-account](../tutorial-tabular-1400/media/as-lesson2-account.png)
+    ![Leçon 2-compte d’identification](../tutorial-tabular-1400/media/as-lesson2-account.png)
   
     > [!NOTE]  
     > L'utilisation d'un compte d'utilisateur et d'un mot de passe Windows est la méthode la plus sûre pour se connecter à une source de données.
@@ -65,7 +57,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
   
 6.  Dans le navigateur, sélectionnez la case à cocher pour les tables suivantes : **DimCustomer**, **DimDate**, **DimGeography**, **DimProduct**, **DimProductCategory**, **DimProductSubcategory**, et **FactInternetSales**.  
 
-    ![as-lesson2-select-tables](../tutorial-tabular-1400/media/as-lesson2-select-tables.png)
+    ![comme-lesson2-sélectionnez-des tables](../tutorial-tabular-1400/media/as-lesson2-select-tables.png)
   
 Après avoir cliqué sur OK, l’éditeur de requête s’ouvre. Dans la section suivante, vous sélectionnez uniquement les données que vous souhaitez importer.
 

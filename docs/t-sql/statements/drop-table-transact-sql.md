@@ -1,16 +1,14 @@
 ---
 title: DROP TABLE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP_TABLE_TSQL
@@ -39,16 +37,16 @@ helpviewer_keywords:
 - dropping constraints
 - dropping permissions
 ms.assetid: 0b6f2b6f-3aa3-4767-943f-43df3c3c5cfd
-caps.latest.revision: 
+caps.latest.revision: 61
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: df9843e4b72c6a8092756725d1d4b3f96eefec74
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4709e7956101b030dd2f4c5f493dce0caf366ba4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drop-table-transact-sql"></a>DROP TABLE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -81,7 +79,7 @@ DROP TABLE [ database_name . [ schema_name ] . | schema_name . ] table_name
  Microsoft Azure SQL Database prend en charge le format de nom en trois parties nom_bd.[nom_schéma].nom_objet lorsque nom_bd est la base de données active, ou lorsque nom_bd est la base de données tempdb et nom_objet commence par #. Microsoft Azure SQL Database ne prend pas en charge les noms en quatre parties.  
   
  *IF EXISTS*  
- **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+ **S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)).  
   
  Supprime, de manière conditionnelle, la table uniquement si elle existe déjà.  
   
@@ -147,7 +145,7 @@ SELECT * FROM #temptable;
   
 ### <a name="d-dropping-a-table-using-if-exists"></a>D. Suppression d’une table à l’aide de IF EXISTS  
   
-**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)).  
+**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)).  
   
  L’exemple suivant crée une table nommée T1. Ensuite, la deuxième instruction supprime la table. La troisième instruction n’effectue aucune action, car la table est déjà supprimée, mais elle ne génère pas d’erreur.  
   

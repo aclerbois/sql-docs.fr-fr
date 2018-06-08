@@ -1,30 +1,28 @@
 ---
-title: "Objets créés sur le serveur de publication Oracle | Microsoft Docs"
-ms.custom: 
+title: Objets créés sur le serveur de publication Oracle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Oracle publishing [SQL Server replication], objects created
 ms.assetid: c58a124b-4da7-46e2-9292-af8ce9e6664b
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 56222d5ef294a5515563a441819b5bd63b09e2ef
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 866eb9df9bffb4e1df8e16966cf69986bb14c267
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="objects-created-on-the-oracle-publisher"></a>Objets créés sur le serveur de publication Oracle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

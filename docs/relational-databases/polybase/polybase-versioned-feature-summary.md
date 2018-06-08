@@ -1,28 +1,26 @@
 ---
-title: "Récapitulatif des fonctionnalités avec version PolyBase | Microsoft Docs"
-ms.custom: 
+title: Récapitulatif des fonctionnalités avec version PolyBase | Microsoft Docs
+ms.custom: ''
 ms.date: 08/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
-ms.service: 
 ms.component: polybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: database
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6591994d-6109-4285-9c5b-ecb355f8a111
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 10
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff2d8cb28ff4d1ae4960d183ce73524ecf24d7d3
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d1374b8620a469fef746a71e20ca938b4736f096
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="polybase-versioned-feature-summary"></a>Récapitulatif des fonctionnalités de version PolyBase
 [!INCLUDE[appliesto-ss2016-asdb-asdw-pdw-md](../../includes/tsql-appliesto-ss2016-all-md.md)]

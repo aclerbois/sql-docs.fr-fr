@@ -1,28 +1,21 @@
 ---
-title: "Restaurer la base de données Master (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 7870021a-0d89-422e-b8ea-1cc95b45c139
-caps.latest.revision: "11"
-ms.openlocfilehash: b82ef65734b6953c085436d5322e7bf42ef979b4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Restaurer la base de données master - système de plateforme Analytique | Documents Microsoft
+description: Restaurez la base de données master dans le système de plateforme d’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 184184f332225e76e152c2d909cfff788b4fea91
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="restore-the-master-database"></a>Restaurer la base de données Master
+# <a name="restore-the-master-database-in-analytics-platform-system"></a>Restaurer la base de données master dans le système de plateforme Analytique
 Le **Restore Master** page du Gestionnaire de Configuration PDW SQL Server vous permet de restaurer la base de données master à partir d’une sauvegarde.  
   
 ## <a name="before-you-begin"></a>Avant de commencer  
@@ -32,7 +25,7 @@ Le **Restore Master** page du Gestionnaire de Configuration PDW SQL Server vous 
   
 ## <a name="to-restore-the-master-database"></a>Pour restaurer la base de données master  
   
-1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lance le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41; ](launch-the-configuration-manager.md).  
+1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lancer le Gestionnaire de Configuration &#40;système de plateforme Analytique&#41;](launch-the-configuration-manager.md).  
   
 2.  Dans le volet gauche du Gestionnaire de Configuration, cliquez sur **Restore Master**.  
   

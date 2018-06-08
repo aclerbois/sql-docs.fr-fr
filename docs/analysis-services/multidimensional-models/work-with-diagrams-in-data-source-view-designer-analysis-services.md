@@ -1,38 +1,23 @@
 ---
-title: "Utiliser des diagrammes dans le Concepteur de vue de Source de données (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- sql13.asvs.dsvdesigner.findtable.f1
-- sql13.asvs.dsvdesigner.diagramorganizerpane.f1
-- sql13.asvs.dsvdesigner.diagrampane.f1
-helpviewer_keywords:
-- data source views [Analysis Services], diagrams
-- diagrams [Analysis Services]
-ms.assetid: 491fdd22-2326-4f27-a0dd-0a02faae3fd8
-caps.latest.revision: 
-author: Minewiskan
+title: Utiliser des diagrammes dans le Concepteur de vue de Source de données (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 96015431ceabb705a04ed7fc73a1879a7c496d8d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d105d9a9d446d1868fc6999953cbbfdc90c90715
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="work-with-diagrams-in-data-source-view-designer-analysis-services"></a>Utiliser des diagrammes dans un concepteur de vues de sources de données (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un diagramme de vue de source de données (DSV) est une représentation visuelle des objets dans une vue DSV. Vous pouvez utiliser le diagramme en mode interactif pour ajouter, masquer, supprimer ou modifier des objets spécifiques. Vous pouvez également créer plusieurs diagramme sur la même vue DSV afin d'attirer l'attention sur un sous-ensemble des objets.  
+  Un diagramme de vue de source de données (DSV) est une représentation visuelle des objets dans une vue DSV. Vous pouvez utiliser le diagramme en mode interactif pour ajouter, masquer, supprimer ou modifier des objets spécifiques. Vous pouvez également créer plusieurs diagramme sur la même vue DSV afin d'attirer l'attention sur un sous-ensemble des objets.  
   
  Pour modifier la zone du diagramme apparaissant dans le volet du diagramme, cliquez sur la flèche à quadruple pointes se trouvant dans le coin inférieur droit du volet et faites glisser la boîte correspondant à la sélection sur le diagramme miniature jusqu'à ce que vous sélectionniez la zone devant apparaître dans le volet du diagramme.  
   
@@ -97,6 +82,6 @@ Un diagramme de vue de source de données (DSV) est une représentation visuelle
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues de sources de données dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/data-source-views-in-multidimensional-models.md)   
- [Concepteur de vue de Source de données &#40; Analysis Services - données multidimensionnelles &#41;](http://msdn.microsoft.com/library/6f40a074-761f-440b-a999-09b755bd86ce)  
+ [Concepteur de vue de Source de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](http://msdn.microsoft.com/library/6f40a074-761f-440b-a999-09b755bd86ce)  
   
   

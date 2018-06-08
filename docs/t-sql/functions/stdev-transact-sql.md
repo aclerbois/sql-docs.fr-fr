@@ -1,16 +1,14 @@
 ---
 title: STDEV (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STDEV_TSQL
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - STDEV function [Transact-SQL]
 - statistical standard deviation
 ms.assetid: ff41b4fc-4f71-4f18-bf78-96614ea908cc
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 6783b223e217093ed957a98139a220bd0ea4f832
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 067d7112b0803fb86c56c050cb06549ca0f1d7f8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stdev-transact-sql"></a>STDEV (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -67,10 +65,10 @@ STDEV (expression) OVER ( [ partition_by_clause ] order_by_clause)
  Spécifie que chaque valeur unique est prise en considération.  
   
  *expression*  
- [Expression](../../t-sql/language-elements/expressions-transact-sql.md) numérique. Les fonctions d'agrégation et les sous-requêtes ne sont pas autorisées. *expression* est une expression de la catégorie de type de données numérique exacte ou approximative, à l’exception du type de données **bit**.  
+ [Expression](../../t-sql/language-elements/expressions-transact-sql.md) numérique. Les fonctions d'agrégation et les sous-requêtes ne sont pas autorisées. *expression* est une expression de la catégorie de type de données numérique exacte ou approximative, à l’exception du type de données **bit** .  
   
  OVER **(** [ *partition_by_clause* ] *order_by_clause***)**  
- *partition_by_clause* divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction est appliquée. S'il n'est pas spécifié, la fonction gère toutes les lignes du jeu de résultats de la requête en un seul groupe. *order_by_clause* détermine l’ordre logique dans lequel l’opération est effectuée. *order_by_clause* est requis. Pour plus d’informations, consultez [OVER, clause &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
+ *partition_by_clause* divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction est appliquée. S'il n'est pas spécifié, la fonction gère toutes les lignes du jeu de résultats de la requête en un seul groupe. *order_by_clause* détermine l’ordre logique dans lequel l’opération est effectuée. *order_by_clause* est requis. Pour plus d’informations, consultez [Clause OVER &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
   
 ## <a name="return-types"></a>Types de retour  
  **float**  

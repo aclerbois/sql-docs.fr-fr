@@ -1,33 +1,34 @@
 ---
 title: Application sqllogship | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: sqllogship
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: sqllogship
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- sqllogship
 ms.assetid: 8ae70041-f3d9-46e4-8fa8-31088572a9f8
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ec4a757306f0e63e2e85b70526a211667a70f6e6
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 1ce23bc4217f4bc538de0ddc1dbbaf8284a3c177
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqllogship-application"></a>Application sqllogship
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Le **sqllogship** application effectue une sauvegarde, copie, ou opération de restauration et les tâches de nettoyage associées pour une configuration d’envoi de journaux. L'opération a lieu sur une instance spécifique de [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] pour une base de données spécifique.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’application **sqllogship** effectue une opération de sauvegarde, de copie ou de restauration, ainsi que les tâches de nettoyage associées pour une configuration d’envoi de journaux. L'opération a lieu sur une instance spécifique de [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] pour une base de données spécifique.  
   
- ![Icône de lien de rubrique](../database-engine/configure-windows/media/topic-link.gif "icône lien de rubrique") pour les conventions de syntaxe, consultez [référence utilitaire d’invite de commandes &#40; moteur de base de données &#41;](../tools/command-prompt-utility-reference-database-engine.md).  
+ ![Icône de lien de rubrique](../database-engine/configure-windows/media/topic-link.gif "icône lien de rubrique") pour les conventions de syntaxe, consultez [référence utilitaire d’invite de commandes &#40;moteur de base de données&#41;](../tools/command-prompt-utility-reference-database-engine.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -58,21 +59,21 @@ sqllogship -server instance_name { -backup primary_id | -copy secondary_id | -re
  **–verboselevel** *level*  
  Spécifie le niveau des messages ajoutés à l'historique d'envoi des journaux. *level* est l'un des entiers suivants :  
   
-|level| Description|  
+|level|Description|  
 |-----------|-----------------|  
 |0|N'envoie en sortie aucun message de traçage et de débogage.|  
-|1|Envoie en sortie des messages de gestion des erreurs.|  
+| 1|Envoie en sortie des messages de gestion des erreurs.|  
 |2|Envoie en sortie des messages de gestion des erreurs et d'avertissement.|  
-|**3**|Envoie en sortie des messages de gestion des erreurs, d'avertissement et d'information. Ceci est la valeur par défaut.|  
+|**3**|Envoie en sortie des messages de gestion des erreurs, d'avertissement et d'information. Il s'agit de la valeur par défaut.|  
 |4|Envoie en sortie tous les messages de traçage et de débogage.|  
   
  **–logintimeout** *timeout_value*  
- Spécifie le délai accordé pour se connecter à l'instance de serveur avant l'expiration de la tentative. La valeur par défaut est 15 secondes. *timeout_value* est **int ***.*  
+ Spécifie le délai accordé pour se connecter à l'instance de serveur avant l'expiration de la tentative. La valeur par défaut est 15 secondes. *timeout_value* est **int***.*  
   
  **-querytimeout** *timeout_value*  
- Spécifie le délai alloué au démarrage de l'opération spécifiée avant l'expiration de la tentative. Le paramètre par défaut est l'absence de délai d'attente. *timeout_value* est **int ***.*  
+ Spécifie le délai alloué au démarrage de l'opération spécifiée avant l'expiration de la tentative. Le paramètre par défaut est l'absence de délai d'attente. *timeout_value* est **int***.*  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Notes   
  Il est recommandé d'utiliser les travaux de sauvegarde, de copie et de restauration pour effectuer les opérations correspondantes quand cela est possible. Pour démarrer ces travaux à partir d’une opération de traitement ou d’une autre application, appelez la procédure stockée [sp_start_job](../relational-databases/system-stored-procedures/sp-start-job-transact-sql.md) .  
   
  L'historique d'envoi de journaux créé par **sqllogship** comprend également l'historique des travaux de restauration, de copie et de sauvegarde de l'envoi de journaux. Si vous envisagez d'utiliser **sqllogship** de manière répétée pour effectuer des opérations de restauration, de copie ou de sauvegarde pour une configuration de l'envoi de journaux, pensez à désactiver le ou les travaux d'envoi de journaux correspondants. Pour plus d’informations, consultez [Disable or Enable a Job](http://msdn.microsoft.com/library/5041261f-0c32-4d4a-8bee-59a6c16200dd).  
@@ -91,7 +92,7 @@ sqllogship -server instance_name { -backup primary_id | -copy secondary_id | -re
 > [!NOTE]  
 >  Pour connaître les chemins des répertoires de sauvegarde et de copie, exécutez la procédure stockée **sp_help_log_shipping_secondary_database** ou consultez la table **log_shipping_secondary** dans **msdb**. Les chemins du répertoire de sauvegarde et du répertoire de destination sont dans les colonnes **backup_source_directory** et **backup_destination_directory** respectivement.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [À propos de la copie des journaux des transactions &#40;SQL Server&#41;](../database-engine/log-shipping/about-log-shipping-sql-server.md)   
  [log_shipping_primary_databases &#40;Transact-SQL&#41;](../relational-databases/system-tables/log-shipping-primary-databases-transact-sql.md)   
  [log_shipping_secondary &#40;Transact-SQL&#41;](../relational-databases/system-tables/log-shipping-secondary-transact-sql.md)   

@@ -1,16 +1,14 @@
 ---
 title: SET ANSI_WARNINGS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SET ANSI_WARNINGS
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - SET ANSI_WARNINGS statement
 - ANSI_WARNINGS option
 ms.assetid: f82aaab0-334f-427b-89b0-de4af596b4fa
-caps.latest.revision: 
+caps.latest.revision: 33
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5fc4de151ed526d8019dcdd048e369a034a0536b
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 777d8b08cea0e3bce27a48e98e76476873786ad4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-ansiwarnings-transact-sql"></a>SET ANSI_WARNINGS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -68,11 +66,11 @@ SET ANSI_WARNINGS ON
     >  Quand la troncature se produit au cours d’une conversion à partir de ou vers des données de type **binary** ou **varbinary**, aucun message d’avertissement ou d’erreur n’est émis, quelles que soient les options SET.  
   
     > [!NOTE]  
-    >  L'option ANSI_WARNINGS n'est pas reconnue lors d'un passage de paramètres dans une procédure stockée ou dans une fonction définie par l'utilisateur, ou bien lors de la déclaration et de la définition de variables dans une instruction par lot. Par exemple, si une variable est définie en tant que **char(3)**, puis réglée sur une valeur supérieure à trois caractères, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
+    >  L'option ANSI_WARNINGS n'est pas reconnue lors d'un passage de paramètres dans une procédure stockée ou dans une fonction définie par l'utilisateur, ou bien lors de la déclaration et de la définition de variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)**, puis réglée sur une valeur supérieure à trois caractères, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
   
  L'option user options de la procédure stockée sp_configure peut servir à définir la valeur par défaut de ANSI_WARNINGS pour toutes les connexions au serveur. Pour plus d'informations, consultez [sp_configure &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
   
- L'option SET ANSI_WARNINGS doit être activée (valeur ON) lors de la création ou de la manipulation d'index dans des colonnes calculées ou des vues indexées. Si SET ANSI_WARNINGS est désactivé (OFF), les instructions CREATE, UPDATE, INSERT et DELETE dans des tables comportant des index sur des colonnes calculées ou des vues indexées échouent. Pour plus d’informations sur les paramètres d’option SET requis dans des vues indexées et des index sur des colonnes calculées, consultez « Remarques sur l’utilisation des instructions SET » dans [Instructions SET &#40;Transact-SQL&#41;](../../t-sql/statements/set-statements-transact-sql.md).  
+ L'option SET ANSI_WARNINGS doit être activée (valeur ON) lors de la création ou de la manipulation d'index dans des colonnes calculées ou des vues indexées. Si SET ANSI_WARNINGS est désactivé (OFF), les instructions CREATE, UPDATE, INSERT et DELETE dans des tables comportant des index sur des colonnes calculées ou des vues indexées échouent. Pour plus d’informations sur les paramètres de l’option SET obligatoire avec les vues indexées et les index sur des colonnes calculées, consultez « Remarques sur l’utilisation des instructions SET » dans [Instructions SET &#40;Transact-SQL&#41;](../../t-sql/statements/set-statements-transact-sql.md).  
   
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] comprend l'option de base de données ANSI_WARNINGS. C'est l'équivalent de SET ANSI_WARNINGS. Lorsque SET ANSI_WARNINGS est défini à ON, des erreurs ou des avertissements sont générés dans le cas d'une division par zéro, d'une chaîne trop longue pour la colonne de la base de données, ou de toute autre erreur similaire. Lorsque SET ANSI_WARNINGS est défini à OFF, ces erreurs et avertissements ne sont pas générés. La valeur par défaut de SET ANSI_WARNINGS dans la base de données model est définie à OFF. Si elle n'est pas spécifiée, la valeur de ANSI_WARNINGS s'applique. Si l’option SET ANSI_WARNINGS est OFF, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise la valeur de la colonne is_ansi_warnings_on dans la vue de catalogue [sys.databases](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md).  
   

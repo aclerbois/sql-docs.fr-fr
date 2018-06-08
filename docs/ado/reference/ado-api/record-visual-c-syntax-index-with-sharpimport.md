@@ -1,33 +1,30 @@
 ---
 title: 'Enregistrement (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - 'Record collection [ADO], Visual C++ syntax index with #import'
 ms.assetid: ba6dd186-9552-4b6c-960b-3ee6cd589afd
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4b913bc8f8b25ed8119b76dcd03c56128613f6a7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ba663d94e6580adad0c8b30e20c1b2cbc0c9e47c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="record-visual-c-syntax-index-with-import"></a>Enregistrement (Index de la syntaxe Visual C++ avec #import)
 ## <a name="methods"></a>Méthodes  

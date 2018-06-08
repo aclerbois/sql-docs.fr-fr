@@ -1,27 +1,24 @@
 ---
-title: "Développement d’un pilote ODBC | Documents Microsoft"
-ms.custom: 
+title: Développement d’un pilote ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3225a011-5605-46ba-bb74-1ca6106a5271
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e8ef12fb79ff61b22211d1df0186246aed2ddef1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c49f7f4e7ddd5051a6ccdeb090c577b9f31b31ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="developing-an-odbc-driver"></a>Développement d’un pilote ODBC
 Cette section contient des rubriques qui expliquent comment développer un pilote ODBC.  

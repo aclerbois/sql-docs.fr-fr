@@ -1,16 +1,14 @@
 ---
 title: GROUP BY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - GROUP
@@ -34,16 +32,16 @@ helpviewer_keywords:
 - groups [SQL Server], tables divided into groups
 - summary values [SQL Server]
 ms.assetid: 40075914-6385-4692-b4a5-62fe44ae6cb6
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 80
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 5e99efe49620003de40659dd4bfd959dacef986c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 47f0a4be2697714c9fa41c632337c5da7863510d
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="select---group-by--transact-sql"></a>SELECT - GROUP BY- Transact-SQL
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -52,7 +50,7 @@ Clause de l’instruction SELECT qui scinde le résultat de la requête en group
   
 ## <a name="syntax"></a>Syntaxe  
 
- ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
+ ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône Lien de rubrique") [Conventions de la syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
 ```  
 -- Syntax for SQL Server and Azure SQL Database   
@@ -148,7 +146,7 @@ INSERT INTO sales VALUES (N'United States', N'Montana', 100);
 ```
 La table Sales contient les lignes suivantes :
 
-| Country | Region | Sales |
+| Pays | Région | Ventes |
 |---------|--------|-------|
 | Canada | Alberta | 100 |
 | Canada | British Columbia | 200 |
@@ -164,7 +162,7 @@ GROUP BY Country, Region;
 ```
 La requête retourne trois lignes de résultats, car il y a trois combinaisons de valeurs pour les colonnes Country et Region. Le montant total des ventes (TotalSales) pour les pays Canada et British Columbia correspond à la somme de deux lignes. 
 
-| Country | Region | TotalSales |
+| Pays | Région | TotalSales |
 |---------|--------|-------|
 | Canada | Alberta | 100 |
 | Canada | British Columbia | 500 |
@@ -194,7 +192,7 @@ GROUP BY ROLLUP (Country, Region);
 
 Le résultat de la requête a les mêmes agrégations que l’opération GROUP BY simple sans ROLLUP. De plus, la requête crée des sous-totaux pour chaque valeur Country. Enfin, elle donne un total global pour toutes les lignes. Le résultat ressemble à ceci :
 
-| Country | Region | TotalSales |
+| Pays | Région | TotalSales |
 | :------ | :----- | ---------: |
 | Canada | Alberta | 100 |
 | Canada | British Columbia | 500 |
@@ -217,7 +215,7 @@ GROUP BY CUBE (Country, Region);
 
 Le résultat de la requête donne des groupes de valeurs uniques pour (Country, Region), (NULL, Region), (Country, NULL) et (NULL, NULL). Le résultat ressemble à ceci :
 
-| Country | Region | TotalSales |
+| Pays | Région | TotalSales |
 |---------|--------|-------|
 | Canada | Alberta | 100 |
 | NULL | Alberta | 100 |
@@ -337,7 +335,7 @@ Pour une clause GROUP BY qui utilise ROLLUP, CUBE ou GROUPING SETS, le nombre ma
 
 La clause GROUP BY prend en charge toutes les fonctions GROUP BY incluses dans la norme SQL-2006, avec les exceptions de syntaxe suivantes :  
   
--   Les jeux de regroupement ne sont pas autorisés dans la clause GROUP BY, à moins de faire partie d'une liste GROUPING SETS explicite. Par exemple, `GROUP BY Column1, (Column2, ...ColumnN`) est autorisé dans la norme, mais pas dans Transact-SQL.  Transact-SQL prend en charge les syntaxes `GROUP BY C1, GROUPING SETS ((Column2, ...ColumnN))` et `GROUP BY Column1, Column2, ... ColumnN`, qui sont sémantiquement équivalentes. Elles sont sémantiquement équivalentes à l’exemple `GROUP BY` précédent. Cela permet d’éviter que la syntaxe `GROUP BY Column1, (Column2, ...ColumnN`) soit interprétée de façon incorrecte comme la syntaxe `GROUP BY C1, GROUPING SETS ((Column2, ...ColumnN))`, ces deux syntaxes n’étant pas sémantiquement équivalentes.  
+-   Les jeux de regroupement ne sont pas autorisés dans la clause GROUP BY, à moins de faire partie d'une liste GROUPING SETS explicite. Par exemple, `GROUP BY Column1, (Column2, ...ColumnN`) est autorisé dans la norme, mais pas dans Transact-SQL.  Transact-SQL prend en charge les syntaxes `GROUP BY C1, GROUPING SETS ((Column2, ...ColumnN))` et `GROUP BY Column1, Column2, ... ColumnN`, qui sont sémantiquement équivalentes. Ils sont sémantiquement équivalents à l'exemple `GROUP BY` précédent. Cela permet d’éviter que la syntaxe `GROUP BY Column1, (Column2, ...ColumnN`) soit interprétée de façon incorrecte comme la syntaxe `GROUP BY C1, GROUPING SETS ((Column2, ...ColumnN))`, ces deux syntaxes n’étant pas sémantiquement équivalentes.  
   
 -   Les jeux de regroupement ne sont pas autorisés à l'intérieur des jeux de regroupement. Par exemple, `GROUP BY GROUPING SETS (A1, A2,…An, GROUPING SETS (C1, C2, ...Cn))` est autorisé dans la norme SQL-2006, mais pas dans Transact-SQL. Transact-SQL autorise les syntaxes `GROUP BY GROUPING SETS( A1, A2,...An, C1, C2, ...Cn )` et `GROUP BY GROUPING SETS( (A1), (A2), ... (An), (C1), (C2), ... (Cn) )`, qui sont sémantiquement équivalentes au premier exemple GROUP BY, tout en étant plus claires.  
   
@@ -346,10 +344,10 @@ La clause GROUP BY prend en charge toutes les fonctions GROUP BY incluses dans l
 ### <a name="comparison-of-supported-group-by-features"></a>Comparaison des fonctionnalités GROUP BY prises en charge  
  Le tableau suivant décrit les fonctions GROUP BY prises en charge en fonction des versions de SQL et du niveau de compatibilité de la base de données.  
   
-|Fonction|SQL Server Integration Services|Niveau de compatibilité SQL Server 100 ou supérieur|SQL Server 2008 ou version ultérieure avec niveau de compatibilité 90.|  
+|Fonctionnalité|SQL Server Integration Services|Niveau de compatibilité SQL Server 100 ou supérieur|SQL Server 2008 ou version ultérieure avec niveau de compatibilité 90.|  
 |-------------|-------------------------------------|--------------------------------------------------|-----------------------------------------------------------|  
 |Agrégats DISTINCT|Non pris en charge pour WITH CUBE ou WITH ROLLUP.|Pris en charge pour WITH CUBE, WITH ROLLUP, GROUPING SETS, CUBE ou ROLLUP.|Identique au niveau de comptabilité 100.|  
-|Fonction définie par l'utilisateur avec nom CUBE ou ROLLUP dans la clause GROUP BY|Les fonctions définies par l’utilisateur **dbo.cube(***arg1***,***...argN***)** ou **dbo.rollup(***arg1***,**...*argN***)** dans la clause GROUP BY sont autorisées.<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`|Les fonctions définies par l’utilisateur **dbo.cube (***arg1***,**...argN**)** ou **dbo.rollup(**arg1**,***...argN***)** dans la clause GROUP BY ne sont pas autorisées.<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`<br /><br /> Le message d’erreur suivant est retourné : « Syntaxe incorrecte à côté du mot clé 'cube'&#124;'rollup' ».<br /><br /> Pour éviter ce problème, remplacez `dbo.cube` par `[dbo].[cube]` ou `dbo.rollup` par `[dbo].[rollup]`.<br /><br /> L’exemple suivant est autorisé : `SELECT SUM (x) FROM T  GROUP BY [dbo].[cube](y);`|Les fonctions définies par l’utilisateur **dbo.cube (***arg1***,***...argN*) ou **dbo.rollup(***arg1***,***...argN***)** dans la clause GROUP BY sont autorisées<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`|  
+|Fonction définie par l'utilisateur avec nom CUBE ou ROLLUP dans la clause GROUP BY|Les fonctions définies par l’utilisateur **dbo.cube(***arg1***,***...argN***)** ou **dbo.rollup(***arg1***,**...*argN***)** dans la clause GROUP BY sont autorisées.<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`|Les fonctions définies par l’utilisateur **dbo.cube (***arg1***,**...argN **)** ou **dbo.rollup(** arg1 **,***...argN***)** dans la clause GROUP BY ne sont pas autorisées.<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`<br /><br /> Le message d’erreur suivant est retourné : « Syntaxe incorrecte à côté du mot clé 'cube'&#124;'rollup' ».<br /><br /> Pour éviter ce problème, remplacez `dbo.cube` par `[dbo].[cube]` ou `dbo.rollup` par `[dbo].[rollup]`.<br /><br /> L’exemple suivant est autorisé : `SELECT SUM (x) FROM T  GROUP BY [dbo].[cube](y);`|Les fonctions définies par l’utilisateur **dbo.cube (***arg1***,***...argN*) ou **dbo.rollup(***arg1***,***...argN***)** dans la clause GROUP BY sont autorisées<br /><br /> Par exemple : `SELECT SUM (x) FROM T  GROUP BY dbo.cube(y);`|  
 |GROUPING SETS|Non pris en charge|Pris en charge|Pris en charge|  
 |CUBE|Non pris en charge|Pris en charge|Non pris en charge|  
 |ROLLUP|Non pris en charge|Pris en charge|Non pris en charge|  

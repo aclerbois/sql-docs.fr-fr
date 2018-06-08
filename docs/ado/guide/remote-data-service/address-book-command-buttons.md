@@ -1,31 +1,28 @@
 ---
-title: "Boutons de commande de carnet d’adresses | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Boutons de commande de carnet d’adresses | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - address book application scenario [ADO], command buttons
 - RDS scenarios [ADO], command buttons
 ms.assetid: 80676831-6488-4dad-a558-c47c52256a22
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 531e10f28850e6da6f9863cb5f06e253793b1dee
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5db9a77104bab65e12b54d860ddcb49ced321f95
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="address-book-command-buttons"></a>Boutons de commande de carnet d’adresses
 L’application de carnet d’adresses comprend les boutons de commande suivants :  
@@ -78,7 +75,7 @@ Sub Update_OnClick
 End Sub  
 ```  
   
- Lorsque `DC1.SubmitChanges` s’exécute, le Service de données distant toutes les informations de mise à jour des packages et l’envoie au serveur via HTTP. La mise à jour est tout ou rien ; Si une partie de la mise à jour échoue, aucune des modifications est effectuée et un message d’état est retourné. `DC1.Refresh`n’est pas nécessaire après **SubmitChanges** avec le Service de données distant, mais il garantit des données actualisées.  
+ Lorsque `DC1.SubmitChanges` s’exécute, le Service de données distant toutes les informations de mise à jour des packages et l’envoie au serveur via HTTP. La mise à jour est tout ou rien ; Si une partie de la mise à jour échoue, aucune des modifications est effectuée et un message d’état est retourné. `DC1.Refresh` n’est pas nécessaire après **SubmitChanges** avec le Service de données distant, mais il garantit des données actualisées.  
   
 ## <a name="cancel-changes-button"></a>Modifications bouton Annuler  
  En cliquant sur **annuler les modifications** Active la procédure Sub Cancel_OnClick de VBScript qui exécute le [RDS. DataControl](../../../ado/reference/rds-api/datacontrol-object-rds.md) l’objet (`DC1)` [CancelUpdate](../../../ado/reference/rds-api/cancelupdate-method-rds.md) (méthode).  

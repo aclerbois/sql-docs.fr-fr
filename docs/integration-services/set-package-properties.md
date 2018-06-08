@@ -1,17 +1,16 @@
 ---
-title: "Définir les propriétés d’un package | Microsoft Docs"
-ms.custom: 
+title: Définir les propriétés d’un package | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Integration Services packages, properties
 - properties [Integration Services]
@@ -28,16 +27,15 @@ helpviewer_keywords:
 - version properties [Integration Services]
 - SQL Server Integration Services packages, properties
 ms.assetid: 13f81c3e-2b18-4f83-b445-a2f4a2c560aa
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 17db392a965b35d668404127d778bf7ef7ecc875
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 841f4d7bf5b77ccc91731276510b1b3186c1bb90
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-package-properties"></a>Définir les propriétés d'un package
   Lorsque vous créez un package dans [!INCLUDE[ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)] à l'aide de l'interface graphique fournie par [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] , vous définissez les propriétés de l'objet de package dans la fenêtre Propriétés.  
@@ -72,7 +70,7 @@ ms.lasthandoff: 01/25/2018
  Les tableaux qui suivent énumèrent les propriétés d'un package par catégorie.  
   
 ###  <a name="Checkpoints"></a> Points de contrôle  
- Vous pouvez utiliser les propriétés de cette catégorie pour redémarrer le package à partir d'un point d'échec dans le flux de contrôle du package, au lieu de réexécuter le package depuis le début de son flux de contrôle. Pour plus d'informations, consultez [Restart Packages by Using Checkpoints](../integration-services/packages/restart-packages-by-using-checkpoints.md).  
+ Vous pouvez utiliser les propriétés de cette catégorie pour redémarrer le package à partir d'un point d'échec dans le flux de contrôle du package, au lieu de réexécuter le package depuis le début de son flux de contrôle. Pour plus d'informations, consultez [Redémarrer des packages à l'aide de points de contrôle](../integration-services/packages/restart-packages-by-using-checkpoints.md).  
   
 |Propriété|Description|  
 |--------------|-----------------|  

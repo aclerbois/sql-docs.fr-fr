@@ -1,16 +1,14 @@
 ---
 title: Sys.security_policies (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
@@ -26,16 +24,17 @@ helpviewer_keywords:
 - sys.security_policies catalog view
 - security_policies catalog view
 ms.assetid: 35362f5b-e601-4049-9e1d-c5307e823831
-caps.latest.revision: 
+caps.latest.revision: 9
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9e30a903e31ce8ba7951f9756a8fd258375fb8e2
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dae89c39aa55f8139ce76942f0bdda660b645241
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33221130"
 ---
 # <a name="syssecuritypolicies-transact-sql"></a>Sys.security_policies (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -44,13 +43,13 @@ ms.lasthandoff: 11/21/2017
   
 |Nom de colonne|Type de données|Description|  
 |-----------------|---------------|-----------------|  
-|name|**sysname**|Nom de la stratégie de sécurité, unique dans la base de données.|  
-|object_id|**int**|ID de la stratégie de sécurité.|  
-|principal_id|**int**|ID du propriétaire de la stratégie de sécurité, tel qu'enregistré dans la base de données. NULL si le propriétaire est déterminé par le schéma.|  
-|schema_id|**int**|ID du schéma où réside l'objet.|  
-|parent_object_id|**int**|Identificateur de l'objet auquel appartient la stratégie. Doit être égal à 0.|  
+|NAME|**sysname**|Nom de la stratégie de sécurité, unique dans la base de données.|  
+|object_id|**Int**|ID de la stratégie de sécurité.|  
+|principal_id|**Int**|ID du propriétaire de la stratégie de sécurité, tel qu'enregistré dans la base de données. NULL si le propriétaire est déterminé par le schéma.|  
+|schema_id|**Int**|ID du schéma où réside l'objet.|  
+|parent_object_id|**Int**|Identificateur de l'objet auquel appartient la stratégie. Doit être égal à 0.|  
 |Type|**vachar(2)**|Doit être **SP**.|  
-|type_desc|**nvarchar (60)**|**SECURITY_POLICY**.|  
+|type_desc|**nvarchar(60)**|**SECURITY_POLICY**.|  
 |create_date|**datetime**|Date UTC de création de la stratégie de sécurité.|  
 |modify_date|**datetime**|Date UTC de dernière modification de la stratégie de sécurité.|  
 |is_ms_shipped|**bit**|Toujours false.|  
@@ -59,7 +58,7 @@ ms.lasthandoff: 11/21/2017
 |uses_database_collation|**bit**|Utilise le même classement que la base de données.|  
 |is_schemabinding_enabled|**bit**|État de la liaison au schéma pour la stratégie de sécurité :<br /><br /> 0 ou NULL = activé<br /><br /> 1 = désactivé|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Les principaux avec le **ALTER ANY SECURITY POLICY** autorisation ont accès à tous les objets dans cet affichage catalogue, ainsi que toute personne ayant **VIEW DEFINITION** sur l’objet.  
   
 ## <a name="see-also"></a>Voir aussi  

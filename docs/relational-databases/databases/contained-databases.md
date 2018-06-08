@@ -1,33 +1,32 @@
 ---
-title: "Bases de données à relation contenant-contenu | Microsoft Docs"
-ms.custom: 
+title: Bases de données à relation contenant-contenu | Microsoft Docs
+ms.custom: ''
 ms.date: 08/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - contained database
 - database_uncontained_usage event
 - partially contained database
 - contained database, understanding
 ms.assetid: 36af59d7-ce96-4a02-8598-ffdd78cdc948
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e8f178ea4a02f0481256d73423bdd83d4aa543cd
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 94dfc58639adda608a529244ac52c02e0a06a88d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="contained-databases"></a>Bases de données à relation contenant-contenu
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,27 +1,24 @@
 ---
-title: "Différences entre les types de données de présentation | Documents Microsoft"
-ms.custom: 
+title: Différences entre les types de données de présentation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ab8fa00f-cb16-47e2-94b8-3a76f56c2b84
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f9f24abd0bf39ebe61cf3715371c6c6c3d6f5663
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 5395b915d2f261813495d364730d0442a8139334
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-data-type-differences"></a>Différences entre les types de données
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -35,7 +32,7 @@ ms.lasthandoff: 11/18/2017
 |----------|-----------------|  
 |Longueur fixe|Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] **char** et **nchar** des types de données sont mappés directement aux JDBC **CHAR** et **NCHAR** types. Il s'agit de types de longueur fixe avec un remplissage fourni par le serveur au cas où la colonne a SET ANSI_PADDING ON. Remplissage est toujours activé pour **nchar**, mais pour **char**, dans le cas où les colonnes char du serveur ne sont pas complétées, le pilote JDBC ajoute le remplissage.|  
 |Longueur variable|Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] **varchar** et **nvarchar** types mappent directement aux types JDBC **VARCHAR** et **NVARCHAR** types, respectivement.|  
-|Long|Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] **texte** et **ntext** types mappent aux types JDBC **LONGVARCHAR** et **LONGNVARCHAR** type, respectivement. Ces types sont déconseillés depuis [!INCLUDE[ssVersion2005](../../includes/ssversion2005_md.md)], vous devez utiliser des types de valeur élevée, **varchar (max)** ou **nvarchar (max)**à la place.<br /><br /> À l’aide de la mise à jour\<Type numérique > et [updateObject (int, java.lang.Object)](../../connect/jdbc/reference/updateobject-method-int-java-lang-object.md) méthodes échoue sur **texte** et **ntext** colonnes de serveur. Toutefois, à l’aide de la [setObject](../../connect/jdbc/reference/setobject-method-sqlserverpreparedstatement.md) méthode avec un type de conversion de caractère spécifiée est prise en charge par rapport à **texte** et **ntext** colonnes de serveur.|  
+|Long|Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] **texte** et **ntext** types mappent aux types JDBC **LONGVARCHAR** et **LONGNVARCHAR** type, respectivement. Ces types sont déconseillés depuis [!INCLUDE[ssVersion2005](../../includes/ssversion2005_md.md)], vous devez utiliser des types de valeur élevée, **varchar (max)** ou **nvarchar (max)** à la place.<br /><br /> À l’aide de la mise à jour\<Type numérique > et [updateObject (int, java.lang.Object)](../../connect/jdbc/reference/updateobject-method-int-java-lang-object.md) méthodes échoue sur **texte** et **ntext** colonnes de serveur. Toutefois, à l’aide de la [setObject](../../connect/jdbc/reference/setobject-method-sqlserverpreparedstatement.md) méthode avec un type de conversion de caractère spécifiée est prise en charge par rapport à **texte** et **ntext** colonnes de serveur.|  
   
 ## <a name="binary-string-types"></a>Types de chaînes binaires  
  Les types de chaînes binaires JDBC sont **binaire**, **VARBINARY**, et **LONGVARBINARY**.  

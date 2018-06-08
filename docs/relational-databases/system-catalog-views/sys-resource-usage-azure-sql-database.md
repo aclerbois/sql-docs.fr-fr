@@ -1,16 +1,15 @@
 ---
-title: "Sys.resource_usage (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.resource_usage (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.resource_usage_TSQL
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - resource_usage
 - sys.resource_usage
 ms.assetid: b90147a3-fd8e-408e-961d-5c7000e068ad
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5af941ccad6f0736ba069c50dbff83e513f8e72a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: cc8f9c68bd6074439203c384c99b407022f90997
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysresourceusage-azure-sql-database"></a>sys.resource_usage (Azure SQL Database)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]

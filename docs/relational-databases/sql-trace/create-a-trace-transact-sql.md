@@ -1,31 +1,29 @@
 ---
-title: "Créer une trace (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Créer une trace (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - traces [SQL Server], example
 - traces [SQL Server], creating
 ms.assetid: 79dd4254-e3c6-467a-bb6f-f99e51757e99
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c13c07109ae5a36c421c617227e1f7776bb7fe3c
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: a187fc923c2dc47a178d4a1cecc8bc851a072598
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-trace-transact-sql"></a>Créer une trace (Transact-SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -42,7 +40,7 @@ ms.lasthandoff: 03/19/2018
      **sp_trace_setevent** et **sp_trace_setfilter** ne peuvent être exécutées que sur des traces existantes arrêtées.  
   
     > [!IMPORTANT]  
-    >  Contrairement aux procédures stockées standard, les paramètres de toutes les procédures stockées de SQL Server Profiler (**sp_trace_*xx***) sont strictement typés et ne prennent pas en charge la conversion automatique des types de données. Si ces paramètres ne sont pas appelés à l'aide des types de données appropriés pour les paramètres d'entrée tels qu'ils sont spécifiés dans la description de l'argument, la procédure stockée retourne une erreur.  
+    >  Contrairement aux procédures stockées standard, les paramètres de toutes les procédures stockées de SQL Server Profiler (**sp_trace_* xx***) sont strictement typés et ne prennent pas en charge la conversion automatique des types de données. Si ces paramètres ne sont pas appelés à l'aide des types de données appropriés pour les paramètres d'entrée tels qu'ils sont spécifiés dans la description de l'argument, la procédure stockée retourne une erreur.  
   
 ## <a name="example"></a> Exemple  
  L'exemple de code suivant montre comment créer une trace à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Il est divisé en trois sections : création de la trace, remplissage du fichier de trace et arrêt de la trace. Personnalisez la trace en ajoutant les événements dont vous souhaitez effectuer le suivi. Pour obtenir la liste des événements et des colonnes, consultez [sp_trace_setevent &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-trace-setevent-transact-sql.md).  

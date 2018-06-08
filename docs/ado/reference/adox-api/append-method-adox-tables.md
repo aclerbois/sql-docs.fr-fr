@@ -1,17 +1,15 @@
 ---
-title: "Append (méthode) (Tables ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Append (méthode) (Tables ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Tables::Append
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Append method [ADOX]
 ms.assetid: a362ed51-314c-4783-9598-538dbf755f3d
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0da2252e54696f8473319572b6c7c8e534f8257b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 81715fa9955f9fbd9bef2f74880f53f7764974fc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="append-method-adox-tables"></a>Append (méthode) (Tables ADOX)
 Ajoute un nouveau [Table](../../../ado/reference/adox-api/table-object-adox.md) de l’objet à la [Tables](../../../ado/reference/adox-api/tables-collection-adox.md) collection.  

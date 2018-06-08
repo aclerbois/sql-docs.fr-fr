@@ -2,29 +2,26 @@
 title: Considérations de sécurité pour les pilotes Microsoft pour PHP pour SQL Server | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - security considerations
 ms.assetid: a8c1a570-9204-454f-b94c-ba34f54d487c
-caps.latest.revision: ''
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ad90c4e05168e54ce9be6b8324539db67d1ccb7e
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 6ca4c8bfa2973d78e6d3da90a42ed5c7988a109f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-considerations-for-the-microsoft-drivers-for-php-for-sql-server"></a>Considérations de sécurité pour les pilotes Microsoft pour PHP pour SQL Server
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

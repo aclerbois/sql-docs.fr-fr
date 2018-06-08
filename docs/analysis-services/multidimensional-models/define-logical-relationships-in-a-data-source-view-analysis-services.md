@@ -1,35 +1,23 @@
 ---
-title: "Définir des relations logiques dans une vue de Source de données (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- adding relationships
-- relationships [Analysis Services], data source views
-- data source views [Analysis Services], relationships
-ms.assetid: a20d6dae-e769-4131-8a59-7ef56f174220
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des relations logiques dans une vue de Source de données (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d1975eb94bc8ad2d69808279a5358b7a40180866
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d59812b7e1a427dc00f26c2d583d8cbca45506d5
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="define-logical-relationships-in-a-data-source-view-analysis-services"></a>Définir des relations logiques dans une vue de source de données (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'Assistant Vue de source de données et le Concepteur de vue de source de données définissent automatiquement les relations entre les tables ajoutées à une vue de source de données (DSV), en fonction des relations de la base de données sous-jacente ou des critères de correspondance de noms que vous spécifiez.  
+  L'Assistant Vue de source de données et le Concepteur de vue de source de données définissent automatiquement les relations entre les tables ajoutées à une vue de source de données (DSV), en fonction des relations de la base de données sous-jacente ou des critères de correspondance de noms que vous spécifiez.  
   
  Dans les cas où vous utilisez des données de plusieurs sources de données, vous devrez peut-être définir manuellement des relations logiques dans la vue DSV afin de compléter ces relations définies automatiquement. Des relations sont requises dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour identifier les tables de faits et de dimension, pour créer des requêtes pour la récupération de données et de métadonnées à partir de sources de données sous-jacentes, et pour tirer parti des fonctionnalités Business Intelligence avancées.  
   

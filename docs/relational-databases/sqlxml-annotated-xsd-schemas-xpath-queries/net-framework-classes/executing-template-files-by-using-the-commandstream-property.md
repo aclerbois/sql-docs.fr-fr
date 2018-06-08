@@ -1,16 +1,14 @@
 ---
-title: "Exécution de fichiers modèles à l’aide de la propriété CommandStream | Documents Microsoft"
-ms.custom: 
+title: Exécution de fichiers modèles à l’aide de la propriété CommandStream | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - Managed Classes [SQLXML], executing template files
@@ -18,20 +16,20 @@ helpviewer_keywords:
 - templates [SQLXML], SQLXML Managed Classes
 - CommandStream property
 ms.assetid: 55c564e3-56d1-4d85-bcaa-703e2905dd57
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3fbbbce8c44103da6a216ea2bcd973b8d464a374
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d51834522bf6f6d3b8e3243340406d95376aac54
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-template-files-by-using-the-commandstream-property"></a>Exécution de fichiers modèles à l'aide de la propriété CommandStream
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cet exemple illustre la façon dont les fichiers de modèle qui sont composées de requêtes SQL ou XPath peuvent être spécifiés à l’aide de la propriété CommandStream de l’objet SqlXmlCommand. Dans cette application, un FileStreamobject est ouvert pour un fichier de commandes, et le flux de fichier est désignée comme la CommandStream est exécutée.  
+  Cet exemple illustre la façon dont les fichiers de modèle qui sont composées de requêtes SQL ou XPath peuvent être spécifiés à l’aide de la propriété CommandStream de l’objet SqlXmlCommand. Dans cette application, un FileStreamobject est ouvert pour un fichier de commandes, et le flux de fichier est désignée comme la CommandStream est exécutée.  
   
  Dans l’exemple suivant, la propriété CommandType est spécifiée en tant que SqlXmlCommandType.Template (et non comme TemplateFile).  
   

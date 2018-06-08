@@ -1,17 +1,17 @@
 ---
 title: Identificateurs (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-dev_langs: DMX
+dev_langs:
+- DMX
 helpviewer_keywords:
 - Data Mining Extensions [Analysis Services], identifiers
 - delimited identifiers [DMX]
@@ -20,16 +20,15 @@ helpviewer_keywords:
 - regular identifiers [DMX]
 - names [DMX]
 ms.assetid: fbb487a7-1b89-482a-977e-f079379d44fc
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: c5726b7550b0c7a9b1dab63344631502b2fa06b7
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4db8e03ca5267941cca1f909e88afa7ceec7e96c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identifiers-dmx"></a>Identificateurs (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/08/2018
   
  L'identificateur d'un objet se crée lorsque vous définissez l'objet. Ensuite, vous utilisez l’identificateur pour référencer l’objet. Les identificateurs doivent avoir un maximum de 100 caractères.  
   
-##  <a name="RegularIdentifiers"></a>Identificateurs réguliers  
+##  <a name="RegularIdentifiers"></a> Identificateurs réguliers  
  Les identificateurs réguliers dans DMX respectent les règles [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] relatives au format des identificateurs. Ils ne nécessitent pas de délimiteurs. Voici un exemple d’une instruction DMX qui utilise un identificateur régulier, non délimité par des virgules :  
   
 ```  
@@ -68,13 +67,13 @@ SELECT * FROM Clustering.CONTENT;
   
     -   Un caractère de soulignement (_).  
   
-3.  L'identificateur ne doit pas être un mot réservé DMX. Dans DMX, les mots réservés ne respectent pas la casse des caractères. Pour plus d’informations, consultez [mots clés réservés &#40; DMX &#41;](../dmx/reserved-keywords-dmx.md).  
+3.  L'identificateur ne doit pas être un mot réservé DMX. Dans DMX, les mots réservés ne respectent pas la casse des caractères. Pour plus d’informations, consultez [mots clés réservés &#40;DMX&#41;](../dmx/reserved-keywords-dmx.md).  
   
 4.  L'identificateur ne peut contenir ni espaces insérés ni caractères spéciaux.  
   
  Vous devez placer entre crochets les identificateurs qui ne respectent pas ces règles lorsque vous les utilisez dans des instructions DMX.  
   
-##  <a name="DelimitedIdentifiers"></a>Identificateurs délimités  
+##  <a name="DelimitedIdentifiers"></a> Identificateurs délimités  
  Les identificateurs délimités sont placés entre crochets ([ ]).  Voici l'exemple d'une instruction DMX avec un identificateur délimité qui respecte ces règles.  
   
 ```  
@@ -112,13 +111,13 @@ SELECT * FROM [Targeted Mailing].CONTENT;
  Lorsque vous utilisez un nom d'objet qualifié, vous pouvez être contraint de délimiter plusieurs des identificateurs qui le composent. Vous devez délimiter chaque identificateur individuellement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence](../dmx/data-mining-extensions-dmx-reference.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Éléments de syntaxe](../dmx/data-mining-extensions-dmx-syntax-elements.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence des opérateurs](../dmx/data-mining-extensions-dmx-operator-reference.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Conventions de syntaxe](../dmx/data-mining-extensions-dmx-syntax-conventions.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence](../dmx/data-mining-extensions-dmx-reference.md)   
+ [Data Mining Extensions &#40;DMX&#41; éléments de syntaxe](../dmx/data-mining-extensions-dmx-syntax-elements.md)   
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Data Mining Extensions &#40;DMX&#41; référence des opérateurs](../dmx/data-mining-extensions-dmx-operator-reference.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)   
+ [Data Mining Extensions &#40;DMX&#41; Conventions de syntaxe](../dmx/data-mining-extensions-dmx-syntax-conventions.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)   
  [Structure et utilisation des requêtes de prédiction DMX](../dmx/structure-and-usage-of-dmx-prediction-queries.md)   
  [Présentation de l’instruction DMX Select](../dmx/understanding-the-dmx-select-statement.md)  
   

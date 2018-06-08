@@ -1,27 +1,24 @@
 ---
-title: "issparsecolumnset, méthode (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: issparsecolumnset, méthode (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ac363670-78ae-49f1-aeda-4fba3329a258
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0486fd19f95b6a9b4d987c4b4dc7f1810e82543d
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 60862208a91f68260de9340b2ca9c4e51f115094
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="issparsecolumnset-method-sqlserverresultsetmetadata"></a>isSparseColumnSet, méthode (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -35,7 +32,7 @@ public boolean isSparseColumnSet(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Index (de base un) de la colonne.  
   

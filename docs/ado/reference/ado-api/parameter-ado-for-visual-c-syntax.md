@@ -1,33 +1,30 @@
 ---
-title: "Paramètre (syntaxe ADO pour Visual C++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Paramètre (syntaxe ADO pour Visual C++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - Parameter collection [ADO], ADO for Visual C++ syntax
 ms.assetid: 74801dc1-cf0f-4a6e-960b-5990fe55e30d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1a6f15ff49e53b79847986e1234d06e4366433d2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b666a87f470a8b34a65ded82b332cec14323ad77
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameter-ado-for-visual-c-syntax"></a>Paramètre (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

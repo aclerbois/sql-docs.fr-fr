@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_errors | Microsoft Docs
+title: sqlsrv_errors | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_errors
 apitype: NA
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - sqlsrv_errors
 - errors and warnings
 ms.assetid: d1fcffec-f34f-46de-9a0e-343f3b5dbae2
-caps.latest.revision: ''
+caps.latest.revision: 39
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 439ea8c2730f777bc531d03a2db00b3ba54021e3
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 589fc732d9d49b58763f6374277d4375cccbbaf8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrverrors"></a>sqlsrv_errors
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -75,7 +72,7 @@ Si aucune valeur de paramètre n’est fournie, les erreurs et avertissements g�
 ## <a name="return-value"></a>Valeur retournée  
 **Tableau** de tableaux ou **Null**. Chaque **tableau** retourné **tableau** contient trois paires clé-valeur. Le tableau suivant répertorie chaque clé et sa description :  
   
-|Clé| Description|  
+|Key| Description|  
 |-------|---------------|  
 |SQLSTATE|Pour les erreurs qui proviennent du pilote ODBC, valeur SQLSTATE retournée par ODBC. Pour plus d’informations sur les valeurs SQLSTATE pour ODBC, consultez [Codes d’erreur ODBC](../../odbc/reference/appendixes/appendix-a-odbc-error-codes.md).<br /><br />Pour les erreurs qui proviennent de [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)], valeur SQLSTATE d’IMSSP.<br /><br />Pour les avertissements qui proviennent de [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)], valeur SQLSTATE de 01SSP.|  
 |code|Pour les erreurs qui proviennent de SQL Server, code d’erreur SQL Server natif.<br /><br />Pour les erreurs qui proviennent du pilote ODBC, code d’erreur retourné par ODBC.<br /><br />Pour les erreurs qui proviennent de [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)], code d’erreur [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)] . Pour plus d’informations, consultez [Handling Errors and Warnings](../../connect/php/handling-errors-and-warnings.md).|  
@@ -84,7 +81,7 @@ Si aucune valeur de paramètre n’est fournie, les erreurs et avertissements g�
 Les valeurs de tableau sont également accessibles avec des clés numériques 0, 1 et 2. Si aucune erreur ou aucun avertissement ne se produisent, **Null** est retourné.  
   
 ## <a name="example"></a>Exemple  
-L’exemple suivant affiche les erreurs qui se produisent pendant une exécution d’instruction qui a échoué. (L’instruction échoue, car **InvalidColumName** n’est pas un nom de colonne valide dans la table spécifiée.) L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple suivant affiche les erreurs qui se produisent pendant une exécution d’instruction qui a échoué. (L’instruction échoue, car **InvalidColumName** n’est pas un nom de colonne valide dans la table spécifiée.) L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

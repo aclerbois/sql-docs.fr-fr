@@ -1,35 +1,33 @@
 ---
 title: SqlPipe, objet | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - custom result sets [CLR integration]
 - SqlPipe object
 - tabular results
 ms.assetid: 3e090faf-085f-4c01-a565-79e3f1c36e3b
-caps.latest.revision: 
+caps.latest.revision: 54
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5db45b3c67fcf865214ad422662acfb80bab293e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 15786a3af4b6598f73c822a8196039ec3e335d2a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlpipe-object"></a>Objet SqlPipe
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est très fréquent d'écrire une procédure stockée (ou une procédure stockée étendue) qui envoie des résultats ou des paramètres de sortie au client appelant.  
+  Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est très fréquent d'écrire une procédure stockée (ou une procédure stockée étendue) qui envoie des résultats ou des paramètres de sortie au client appelant.  
   
  Dans une procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)] , toute instruction **SELECT** qui retourne zéro ou plusieurs lignes envoie les résultats au « canal » de l'appelant connecté.  
   

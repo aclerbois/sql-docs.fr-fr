@@ -1,16 +1,14 @@
 ---
 title: ALTER SYMMETRIC KEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER SYMMETRIC KEY
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - cryptography [SQL Server], symmetric keys
 - ALTER SYMMETRIC KEY statement
 ms.assetid: d3c776a4-7d71-4e6f-84fc-1db47400c465
-caps.latest.revision: 
+caps.latest.revision: 44
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db9fc587fcc855e73ca82820d78f2aa7001c78db
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ae9678d1a4348851a96df009993d94bdb1cf569e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-symmetric-key-transact-sql"></a>ALTER SYMMETRIC KEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -63,7 +60,7 @@ ALTER SYMMETRIC KEY Key_name <alter_option>
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *Key_name*  
+ *KEY_NAME*  
  Nom sous lequel la clé symétrique à modifier est connue dans la base de données.  
   
  ADD ENCRYPTION BY  

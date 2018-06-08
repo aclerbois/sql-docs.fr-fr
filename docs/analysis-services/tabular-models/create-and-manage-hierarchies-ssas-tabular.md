@@ -1,31 +1,23 @@
 ---
-title: "Créer et gérer des hiérarchies | Documents Microsoft"
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 8dd30cd0-a831-4d25-b577-648d7f3c7fa6
-caps.latest.revision: 
-author: Minewiskan
+title: Créer et gérer des hiérarchies | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 96af188d39d583c53b2520d03f6fd0962092a90f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: c9282c3b28ca5998cc21d2906f06d50f862e49a9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-and-manage-hierarchies"></a>Créer et gérer des hiérarchies 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Les hiérarchies peuvent être créées et gérées dans le générateur de modèles, dans la vue de diagramme. Pour afficher le concepteur de modèles dans la Vue de diagramme, dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], cliquez sur le menu **Modèle** , pointez sur **Vue du modèle**, puis cliquez sur **Vue de diagramme**.  
+  Les hiérarchies peuvent être créées et gérées dans le générateur de modèles, dans la vue de diagramme. Pour afficher le concepteur de modèles dans la Vue de diagramme, dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], cliquez sur le menu **Modèle** , pointez sur **Vue du modèle**, puis cliquez sur **Vue de diagramme**.  
   
  Cet article comprend les tâches suivantes :  
   
@@ -102,7 +94,7 @@ Les hiérarchies peuvent être créées et gérées dans le générateur de mod�
   
 ## <a name="see-also"></a>Voir aussi  
  [Générateur de modèles tabulaires ](../../analysis-services/tabular-models/tabular-model-designer-ssas.md)   
- [Hierarchies](../../analysis-services/tabular-models/hierarchies-ssas-tabular.md)   
+ [Hiérarchies](../../analysis-services/tabular-models/hierarchies-ssas-tabular.md)   
  [Mesures](../../analysis-services/tabular-models/measures-ssas-tabular.md)  
   
   

@@ -1,30 +1,27 @@
 ---
-title: "Utilisation de synonymes, avec des procédures stockées | Documents Microsoft"
-ms.custom: 
+title: Utilisation de synonymes, avec des procédures stockées | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - stored procedures [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], stored procedures
 ms.assetid: 8620b039-a086-4534-8710-cc8b1787dc80
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8a3e19d394cfebf11fe5fdd5a1d34d0daf4fd188
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 870d58b9c743f47c1b0868bd967347903bcfaba9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-synonyms-with-stored-procedures"></a>Utilisation de synonymes avec des procédures stockées
 > [!IMPORTANT]  

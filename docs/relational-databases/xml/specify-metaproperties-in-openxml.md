@@ -1,17 +1,15 @@
 ---
-title: "Spécifier des métapropriétés dans OPENXML | Microsoft Docs"
-ms.custom: 
+title: Spécifier des métapropriétés dans OPENXML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - overflow in XML document [SQL Server]
 - metaproperties [XML in SQL Server]
@@ -19,20 +17,19 @@ helpviewer_keywords:
 - extracting information of XML nodes [SQL Server]
 - OPENXML statement, metaproperties
 ms.assetid: 29bfd1c6-3f9a-43c4-924a-53d438e442f4
-caps.latest.revision: 
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 968f1a5b32bbc6c2e6f2f955083e8fd247e3fc82
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 83908645f3578cbb29579d11ecaf19aa8cbac0b3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-metaproperties-in-openxml"></a>Spécifier des métapropriétés dans OPENXML
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Les attributs de métapropriétés dans un document XML décrivent les propriétés d'un élément XML (élément, attribut ou tout autre nœud DOM). Ces attributs n'existent pas physiquement dans le texte du document XML. Toutefois, OPENXML fournit ces métapropriétés pour tous les éléments XML. Ces métapropriétés vous permettent d'extraire des informations (par exemple des informations de positionnement local et d'espace de noms) sur les nœuds XML. Ces informations vous procurent davantage de détails que ceux apparents dans la représentation textuelle.  
+  Les attributs de métapropriétés dans un document XML décrivent les propriétés d'un élément XML (élément, attribut ou tout autre nœud DOM). Ces attributs n'existent pas physiquement dans le texte du document XML. Toutefois, OPENXML fournit ces métapropriétés pour tous les éléments XML. Ces métapropriétés vous permettent d'extraire des informations (par exemple des informations de positionnement local et d'espace de noms) sur les nœuds XML. Ces informations vous procurent davantage de détails que ceux apparents dans la représentation textuelle.  
   
  Vous pouvez mapper ces métapropriétés aux colonnes de l’ensemble de lignes dans une instruction OPENXML à l’aide du paramètre *ColPattern* . Les colonnes contiendront les valeurs des métapropriétés avec lesquelles elles sont mappées. Pour plus d’informations sur la syntaxe d’OPENXML, consultez [OPENXML &#40;Transact-SQL&#41;](../../t-sql/functions/openxml-transact-sql.md).  
   

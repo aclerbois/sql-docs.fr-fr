@@ -1,32 +1,23 @@
 ---
-title: "Liste de vérification : Utiliser PowerShell pour vérifier Power Pivot pour SharePoint | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 73a13f05-3450-411f-95f9-4b6167cc7607
-caps.latest.revision: 
-author: Minewiskan
+title: 'Liste de vérification : Utiliser PowerShell pour vérifier Power Pivot pour SharePoint | Documents Microsoft'
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 10f572b6bb4dc81e2fb2ad87af058b3a114bd711
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3bf217aee4222aec601c1dde08ffcb2e264eb31f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="checklist-use-powershell-to-verify-power-pivot-for-sharepoint"></a>Liste de vérification : utiliser PowerShell pour vérifier Power Pivot pour SharePoint
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Aucune opération d'installation ou de récupération de [!INCLUDE[ssGeminiShort](../../../includes/ssgeminishort-md.md)] n'est terminée sans exécuter un test de vérification complet qui confirme que les services et les données sont opérationnels. Dans cet article, nous vous indiquons comment effectuer ces étapes avec Windows PowerShell. Nous avons consacré une section distincte à chaque étape afin que vous puissiez accéder directement aux tâches spécifiques. Par exemple, exécutez le script dans la section [Bases de données](#bkmk_databases) de cette rubrique pour vérifier le nom de l'application de service et des bases de données de contenu si vous souhaitez les planifier pour la maintenance ou la sauvegarde.  
+  Aucune opération d'installation ou de récupération de [!INCLUDE[ssGeminiShort](../../../includes/ssgeminishort-md.md)] n'est terminée sans exécuter un test de vérification complet qui confirme que les services et les données sont opérationnels. Dans cet article, nous vous indiquons comment effectuer ces étapes avec Windows PowerShell. Nous avons consacré une section distincte à chaque étape afin que vous puissiez accéder directement aux tâches spécifiques. Par exemple, exécutez le script dans la section [Bases de données](#bkmk_databases) de cette rubrique pour vérifier le nom de l'application de service et des bases de données de contenu si vous souhaitez les planifier pour la maintenance ou la sauvegarde.  
   
 ![Contenu relatif à PowerShell](../../../analysis-services/instances/install-windows/media/rs-powershellicon.jpg "contenu relatif à PowerShell") un script PowerShell complet est inclus en bas de la rubrique. Utilisez le script dans sa totalité comme point de départ pour générer un script personnalisé afin de vérifier votre déploiement complet de [!INCLUDE[ssGeminiShort](../../../includes/ssgeminishort-md.md)] .
   
@@ -279,7 +270,7 @@ MidTierAcctReadPermissionRule    True PowerPivot: MidTier process account should
 ##  <a name="bkmk_logs"></a> Journaux Windows et ULS  
  **Journaux d'événements Windows**  
   
- La commande suivante recherche le journal des événements Windows pour les événements associés à l'instance d' [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode SharePoint. Pour plus d’informations sur la désactivation des événements ou la modification du niveau d’événement, consultez [configurer et de visualiser les fichiers journaux SharePoint et de la journalisation des diagnostics &#40; PowerPivot pour SharePoint &#41;](../../../analysis-services/power-pivot-sharepoint/configure-and-view-sharepoint-and-diagnostic-logging.md)
+ La commande suivante recherche le journal des événements Windows pour les événements associés à l'instance d' [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] en mode SharePoint. Pour plus d’informations sur la désactivation des événements ou la modification du niveau d’événement, consultez [configurer et afficher les fichiers journaux SharePoint et la journalisation des diagnostics &#40;Power Pivot pour SharePoint&#41;](../../../analysis-services/power-pivot-sharepoint/configure-and-view-sharepoint-and-diagnostic-logging.md)
  
  **Nom du service :** MSOLAP$POWERPIVOT  
   

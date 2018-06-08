@@ -1,37 +1,37 @@
 ---
-title: "Création et mise à jour des statistiques | Documents Microsoft"
-ms.custom: 
+title: Création et mise à jour des statistiques | Documents Microsoft
+ms.custom: ''
 ms.date: 08/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - statistical information [SMO]
 ms.assetid: 47a0a172-a969-4deb-bca9-dd04401a0fe1
-caps.latest.revision: 
+caps.latest.revision: 40
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c1a24487cf7460024fd26e1f4101c791d29589d
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d702cbc2d9e1bdd970fbdee03e042ea9a9277629
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-and-updating-statistics"></a>Création et mise à jour des statistiques
-[!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]Dans SMO, les informations statistiques sur le traitement des requêtes dans la base de données peuvent être collectées à l’aide de la <xref:Microsoft.SqlServer.Management.Smo.Statistic> objet.  
+[!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
+  Dans SMO, les informations statistiques à propos du traitement de requêtes dans la base de données peuvent être recueillies en utilisant l'objet <xref:Microsoft.SqlServer.Management.Smo.Statistic>.  
   
  Il est possible de créer des statistiques pour n'importe quelle colonne en utilisant l'objet <xref:Microsoft.SqlServer.Management.Smo.Statistic> et <xref:Microsoft.SqlServer.Management.Smo.StatisticColumn>. La méthode <xref:Microsoft.SqlServer.Management.Smo.Statistic.Update%2A> peut être exécutée pour mettre à jour les statistiques dans l'objet <xref:Microsoft.SqlServer.Management.Smo.Statistic>. Les résultats peuvent être affichés dans l'optimiseur de requête.  
   
 ## <a name="example"></a>Exemple  
- Pour utiliser un exemple de code fourni, vous devrez sélectionner l'environnement, le modèle et le langage de programmation dans lequel créer votre application. Pour plus d’informations, consultez [créer un Visual C &#35; Projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
+ Pour utiliser un exemple de code fourni, vous devrez sélectionner l'environnement, le modèle et le langage de programmation dans lequel créer votre application. Pour plus d’informations, consultez [créer un Visual C&#35; projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
   
 ## <a name="creating-and-update-statistics-in-visual-basic"></a>Création et mise à jour des statistiques en Visual Basic  
  Cet exemple de code crée une table sur une base de données existante pour laquelle l'objet <xref:Microsoft.SqlServer.Management.Smo.Statistic> et l'objet <xref:Microsoft.SqlServer.Management.Smo.StatisticColumn> sont créés.  

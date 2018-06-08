@@ -1,31 +1,28 @@
 ---
-title: "Flux de données et de persistance | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Flux de données et de persistance | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - persisted streams [ADO]
 - streams [ADO], persistence
 ms.assetid: ad5bf52c-fd10-4cfa-bf7d-fcedcaa41eea
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4a0a45a32086dc3befd19e720c8d600b6b43adde
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: eb0302de0cc9ac87c55ae0e6c8d44557b517d79d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="streams-and-persistence"></a>Flux de données et de persistance
 Le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet [enregistrer](../../../ado/reference/ado-api/save-method.md) méthode magasins, ou *persiste*, un **Recordset** dans un fichier et le [ouvrir](../../../ado/reference/ado-api/open-method-ado-recordset.md)méthode restaure le **Recordset** à partir de ce fichier.  
@@ -111,7 +108,7 @@ Set rs = nothing
   
  Une nouvelle propriété sur le Bureau à distance [DataControl](../../../ado/reference/rds-api/datacontrol-object-rds.md), [URL](../../../ado/reference/rds-api/url-property-rds.md), pointe vers la page .asp qui génère le **Recordset**. Cela signifie une **Recordset** objet peut être obtenu sans les services Bureau à distance à l’aide du côté serveur [DataFactory](../../../ado/reference/rds-api/datafactory-object-rdsserver.md) objet ou l’utilisateur de l’écriture d’un objet métier. Cela simplifie considérablement le modèle de programmation des services Bureau à distance.  
   
- Code côté serveur, appelé http://server/directory/recordset.asp :  
+ Nommé de code côté serveur http://server/directory/recordset.asp:  
   
 ```  
 <%  

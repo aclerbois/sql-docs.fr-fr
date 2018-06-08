@@ -1,34 +1,30 @@
 ---
-title: "Lock:Acquired, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Lock:Acquired, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Acquired event class
 ms.assetid: a6b1df2a-06ed-4fc3-8a84-f0becd5810d5
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c2afa0dfd180073e91cbe541ae25687448ccaa1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5f3e517a4bc6713834d76a5eade2b67ef1f6ded0
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="lockacquired-event-class"></a>Classe d'événements Lock:Acquired
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements Lock:Acquired indique que l’acquisition d’un verrou sur une ressource (une page de données, par exemple) a été effectuée.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La classe d’événements Lock:Acquired indique que l’acquisition d’un verrou sur une ressource (une page de données, par exemple) a été effectuée.  
   
  Les classes d'événements Lock:Acquired et Lock:Released permettent de contrôler à quel moment des objets sont verrouillés, le type des verrous établis et la durée de maintien des verrous. Les verrous maintenus pendant de longues périodes peuvent causer des contentions et doivent être examinés. Par exemple, une application peut acquérir des verrous sur les lignes d'une table puis attendre la saisie de l'utilisateur. La saisie de l'utilisateur pouvant prendre du temps pour se produire, les verrous risquent de bloquer d'autres utilisateurs. Dans ce cas, l'application doit être modifiée pour effectuer des demandes de verrous uniquement lorsque cela est nécessaire et ne pas demander une saisie de l'utilisateur après avoir acquis des verrous.  
   

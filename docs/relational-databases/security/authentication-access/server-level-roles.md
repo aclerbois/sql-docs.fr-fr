@@ -1,17 +1,16 @@
 ---
-title: "Rôles de niveau serveur | Microsoft Docs"
-ms.custom: 
+title: Rôles de niveau serveur | Microsoft Docs
+ms.custom: ''
 ms.date: 05/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.Security.NT_AUTHORITY.SYSTEM
 - sql13.Security.BUILTIN.administrators
@@ -25,16 +24,16 @@ helpviewer_keywords:
 - server-level roles [SQL Server]
 - authentication [SQL Server], roles
 ms.assetid: 7adf2ad7-015d-4cbe-9e29-abaefd779008
-caps.latest.revision: 
+caps.latest.revision: 52
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a095d9f3e7839a2f3cfa14a2bf49790776f0cd1b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1f7cf3212ac6e046e41f46d1d3d6232250182c1c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-level-roles"></a>Rôles de niveau serveur
 [!INCLUDE[appliesto-ss-xxxx-xxxx-pdw-md](../../../includes/appliesto-ss-xxxx-xxxx-pdw-md.md)]
@@ -97,7 +96,7 @@ SELECT * FROM sys.fn_builtin_permissions('SERVER') ORDER BY permission_name;
 |[DROP SERVER ROLE &#40;Transact-SQL&#41;](../../../t-sql/statements/drop-server-role-transact-sql.md)|Command|Supprime un rôle de serveur défini par l'utilisateur.|  
 |[IS_SRVROLEMEMBER &#40;Transact-SQL&#41;](../../../t-sql/functions/is-srvrolemember-transact-sql.md)|Fonction|Détermine l'appartenance du rôle serveur.|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Rôles au niveau de la base de données](../../../relational-databases/security/authentication-access/database-level-roles.md)   
  [Affichages catalogue de sécurité &#40;Transact-SQL&#41;](../../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)   
  [Fonctions de sécurité &#40;Transact-SQL&#41;](../../../t-sql/functions/security-functions-transact-sql.md)   

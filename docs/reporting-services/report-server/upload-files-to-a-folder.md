@@ -1,16 +1,15 @@
 ---
-title: "Télécharger des fichiers dans un dossier | Microsoft Docs"
-ms.custom: 
+title: Télécharger des fichiers dans un dossier | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - publishing reports [Reporting Services], uploading files
 - reports [Reporting Services], publishing
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - files [Reporting Services]
 - folders [Reporting Services], uploading files to
 ms.assetid: 2f99a288-d4aa-4c64-b310-e457a2aef2c5
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4d095fa72856edf7d28f067620940fcafe824d6d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: dc7ec7802dc229fe3272f6204d3aede698ede150
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upload-files-to-a-folder"></a>Télécharger des fichiers dans un dossier
   Vous pouvez télécharger des fichiers à partir du système de fichiers, puis les stocker comme éléments gérés dans une base de données de serveur de rapports. Ce qui se produit lorsque vous téléchargez un fichier dépend du type du fichier.  

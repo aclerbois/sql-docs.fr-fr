@@ -2,28 +2,25 @@
 title: DBCC SHRINKLOG (Parallel Data Warehouse) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/16/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw
-ms.service: ''
-ms.component: t-sql|database-console-commands
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
-caps.latest.revision: ''
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 11
+author: edmacauley
+ms.author: umajay
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fc02884ed88c056eb2a7fedb57f7de701377ee37
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+monikerRange: '>= aps-pdw-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 75fe950d32310a38a75660bccaca0f5b98689572
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="dbcc-shrinklog-parallel-data-warehouse"></a>DBCC SHRINKLOG (Parallel Data Warehouse)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md.md)]

@@ -1,16 +1,15 @@
 ---
-title: bcp_colfmt | Microsoft Docs
-ms.custom: 
+title: bcp_colfmt | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-extensions-bulk-copy-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - bcp_colfmt
@@ -20,16 +19,16 @@ apitype: DLLExport
 helpviewer_keywords:
 - bcp_colfmt function
 ms.assetid: 5c3b6299-80c7-4e84-8e69-4ff33009548e
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c19dd268f958bc35f6e41fd6a6283ca23beb60e9
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: de5e429a0b2038064bfde3cf4835d4f8edd4beff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bcpcolfmt"></a>bcp_colfmt
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -54,7 +53,7 @@ RETCODE bcp_colfmt (
   
 ## <a name="arguments"></a>Arguments  
  *pas*  
- Handle de connexion ODBC compatible avec la copie en bloc.  
+ Handle de connexion ODBC compatible avec la copie en bloc.  
   
  *idxUserDataCol*  
  Numéro de colonne ordinal dans le fichier des données utilisateur pour lequel le format est spécifié. La première colonne est 1.  
@@ -62,7 +61,7 @@ RETCODE bcp_colfmt (
  *eUserDataType*  
  Type de données de la colonne dans le fichier utilisateur. Si le type de données est différent de celui de la colonne correspondante dans la table de base de données (*idxServerColumn*), la copie en bloc convertit si possible les données.  
   
- [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]a introduit la prise en charge des jetons de type de données SQLXML et SQLUDT dans le *eUserDataType* paramètre.  
+ [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] a introduit la prise en charge des jetons de type de données SQLXML et SQLUDT dans le *eUserDataType* paramètre.  
   
  Le *eUserDataType* paramètre est énuméré par le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des jetons de type de données dans sqlncli.h, pas les énumérateurs de type de données ODBC C. Par exemple, vous pouvez spécifier une chaîne de caractères, ODBC type SQL_C_CHAR, à l'aide du SQLCHARACTER de type propre à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
@@ -83,7 +82,7 @@ RETCODE bcp_colfmt (
   
  Si plusieurs méthodes de spécification de la longueur de colonne d'un fichier de données sont utilisées (par exemple, un indicateur et une longueur de colonne maximale, ou un indicateur et une séquence de terminaison), la copie en bloc choisit celle qui implique la quantité de données à copier la moins élevée.  
   
- Les fichiers de données générés par la copie en bloc lorsqu'aucune intervention de l'utilisateur n'ajuste le format des données contiennent des indicateurs si la longueur des données de la colonne est variable ou si la colonne peut accepter la valeur NULL.  
+ Les fichiers de données générés par la copie en bloc lorsqu'aucune intervention de l'utilisateur n'ajuste le format des données contiennent des indicateurs si la longueur des données de la colonne est variable ou si la colonne peut accepter la valeur NULL.  
   
  *cbUserData*  
  Longueur maximale, en octets, des données de cette colonne dans le fichier utilisateur, sans compter la longueur d'un indicateur de longueur ou d'un terminateur.  
@@ -101,14 +100,14 @@ RETCODE bcp_colfmt (
  *pUserDataTerm*  
  Séquence de terminaison à utiliser pour cette colonne. Ce paramètre est utile surtout pour les types de données de caractères puisque tous les autres types sont de longueur fixe ou, dans le cas des données binaires, nécessitent un indicateur de longueur pour enregistrer avec précision le nombre d'octets présents.  
   
- Pour éviter de terminer des données extraites ou pour indiquer que les données dans un fichier utilisateur ne sont pas terminées, attribuez la valeur NULL à ce paramètre.  
+ Pour éviter de terminer des données extraites ou pour indiquer que les données dans un fichier utilisateur ne sont pas terminées, attribuez la valeur NULL à ce paramètre.  
   
  Si plusieurs méthodes sont employées pour définir la longueur des colonnes du fichier utilisateur (par exemple, un terminateur et un indicateur de longueur, ou un terminateur et une longueur de colonne maximale), la copie en bloc choisit celle qui implique le volume de données à copier le moins élevé.  
   
  L'interface de programmation d'applications (API) de la copie en bloc procède à la conversion des caractères Unicode vers MBCS en fonction des besoins. Prenez soin de définir comme il se doit la chaîne d'octets de terminaison et la longueur de cette même chaîne.  
   
  *cbUserDataTerm*  
- Longueur, en octets, de la séquence de marque de fin à utiliser pour la colonne. Si aucune marque de fin n'est présente ou désirée dans les données, attribuez 0 à cette valeur.  
+ Longueur, en octets, de la séquence de marque de fin à utiliser pour la colonne. Si aucune marque de fin n'est présente ou désirée dans les données, attribuez 0 à cette valeur.  
   
  *idxServerCol*  
  Position ordinale de la colonne dans la table de base de données. Le premier numéro de colonne est 1. La position ordinale d'une colonne est indiquée par [SQLColumns](../../relational-databases/native-client-odbc-api/sqlcolumns.md).  
@@ -133,7 +132,7 @@ RETCODE bcp_colfmt (
   
 -   Longueur de la séquence d'octets de fin facultative  
   
- Chaque appel à **bcp_colfmt** spécifie le format pour une colonne du fichier utilisateur. Par exemple, pour modifier les paramètres par défaut pour les trois colonnes dans un fichier de données utilisateur de cinq colonnes, appelez d’abord [bcp_columns](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-columns.md)**(5)**, puis appelez **bcp_colfmt** cinq fois, avec trois de ces appels définissant votre format personnalisé. Pour les deux appels restants, définissez *eUserDataType* avec la valeur 0 et définissez respectivement *cbIndicator*, *cbUserData*et *cbUserDataTerm* avec les valeurs 0, SQL_VARLEN_DATA et 0. Cette procédure copie les cinq colonnes, trois avec votre format personnalisé et deux avec le format par défaut.  
+ Chaque appel à **bcp_colfmt** spécifie le format pour une colonne du fichier utilisateur. Par exemple, pour modifier les paramètres par défaut pour les trois colonnes dans un fichier de données utilisateur de cinq colonnes, appelez d’abord [bcp_columns](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-columns.md)**(5)**, puis appelez **bcp_colfmt** cinq fois, avec trois de ces appels définissant votre format personnalisé. Pour les deux appels restants, définissez *eUserDataType* avec la valeur 0 et définissez respectivement *cbIndicator*, *cbUserData*et *cbUserDataTerm* avec les valeurs 0, SQL_VARLEN_DATA et 0. Cette procédure copie les cinq colonnes, trois avec votre format personnalisé et deux avec le format par défaut.  
   
  Pour *cbIndicator*, la valeur 8 pour indiquer un type valeur élevé est désormais valide. Si le préfixe est spécifié pour un champ dont la colonne correspondante est un nouveau type max, il ne peut avoir que la valeur 8. Pour plus d’informations, consultez [bcp_bind](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-bind.md).  
   
@@ -148,9 +147,9 @@ RETCODE bcp_colfmt (
  Le [bcp_writefmt](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-writefmt.md) fonction peut être utilisée pour conserver la spécification de format.  
   
 ## <a name="bcpcolfmt-support-for-enhanced-date-and-time-features"></a>Prise en charge de bcp_colfmt pour les fonctionnalités Date et Heure améliorées  
- Pour plus d’informations sur les types utilisés avec les *eUserDataType* paramètre pour les types date/heure, consultez [modifications de copie en bloc pour améliorées de Date et heure Types &#40; OLE DB et ODBC &#41;](../../relational-databases/native-client-odbc-date-time/bulk-copy-changes-for-enhanced-date-and-time-types-ole-db-and-odbc.md).  
+ Pour plus d’informations sur les types utilisés avec les *eUserDataType* paramètre pour les types date/heure, consultez [modifications de copie en bloc pour les Types améliorées de Date et heure &#40;OLE DB et ODBC&#41;](../../relational-databases/native-client-odbc-date-time/bulk-copy-changes-for-enhanced-date-and-time-types-ole-db-and-odbc.md).  
   
- Pour plus d’informations, consultez [Date et heure améliorations &#40; ODBC &#41;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md).  
+ Pour plus d’informations, consultez [Date et heure améliorations & #40 ; ODBC & #41 ;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions de copie en bloc](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/sql-server-driver-extensions-bulk-copy-functions.md)  

@@ -1,16 +1,14 @@
 ---
-title: sp_resync_targetserver (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_resync_targetserver (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_resync_targetserver
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_resync_targetserver
 ms.assetid: 40e44df7-d3e3-44ee-b149-08aba629a21f
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 93125c5747fc6f4b66c18ac6702721aaf4db6806
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 8d91ef10c7f1e98c4ad65d014f90fc42b0317ec5
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33252458"
 ---
 # <a name="spresynctargetserver-transact-sql"></a>sp_resync_targetserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +45,7 @@ sp_resync_targetserver
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@server_name =**] **'***server***'**  
+ [  **@server_name =**] **'***server***'**  
  Nom du serveur à resynchroniser. *server* est de type **sysname**et n'a pas de valeur par défaut. Si **tous les** est spécifié, tous les serveurs cibles sont resynchronisés.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

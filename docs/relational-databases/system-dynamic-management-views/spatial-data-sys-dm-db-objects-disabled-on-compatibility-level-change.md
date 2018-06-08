@@ -1,16 +1,13 @@
 ---
-title: sys.dm_db_objects_disabled_on_compatibility_level_change (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_objects_disabled_on_compatibility_level_change (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_db_objects_disabled_on_compatibility_level_change
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_objects_disabled_on_compatibility_level_change catalog view
 ms.assetid: a5d70064-0330-48b9-b853-01eba50755d0
-caps.latest.revision: 
+caps.latest.revision: 16
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f52daf2257ac6a2d8ea34d61ed2dd869b0363bce
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 083af55f2629a14f2ad28b293bb84ea9184a0345
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="spatial-data---sysdmdbobjectsdisabledoncompatibilitylevelchange"></a>Données spatiales - sys.dm_db_objects_disabled_on_compatibility_level_change
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -58,7 +55,7 @@ sys.dm_db_objects_disabled_on_compatibility_level_change ( compatibility_level )
 |**class_desc**|**nvarchar(60)**|OBJECT ou COLUMN pour les contraintes<br /><br /> INDEX pour les index et les segments|  
 |**major_id**|**int**|OBJECT ID des contraintes<br /><br /> OBJECT ID de la table qui contient des index et des segments|  
 |**minor_id**|**int**|NULL pour les contraintes<br /><br /> Index_id pour les index et les segments|  
-|**dependency**|**nvarchar(60)**|Description de la dépendance qui provoque la désactivation de la contrainte ou de l'index. Les mêmes valeurs sont également utilisées dans les avertissements générés pendant la mise à niveau. En voici quelques exemples :<br /><br /> « space » pour un type intrinsèque<br /><br /> « geometry » pour un type défini par l'utilisateur système<br /><br /> « geography::Parse » pour une méthode d'un type défini par l'utilisateur système|  
+|**Dépendance**|**nvarchar(60)**|Description de la dépendance qui provoque la désactivation de la contrainte ou de l'index. Les mêmes valeurs sont également utilisées dans les avertissements générés pendant la mise à niveau. En voici quelques exemples :<br /><br /> « space » pour un type intrinsèque<br /><br /> « geometry » pour un type défini par l'utilisateur système<br /><br /> « geography::Parse » pour une méthode d'un type défini par l'utilisateur système|  
   
 ## <a name="general-remarks"></a>Remarques d'ordre général  
  Les colonnes calculées persistantes qui utilisent des fonctions intrinsèques sont désactivées lorsque le niveau de compatibilité est modifié. En outre, les colonnes calculées persistantes qui utilisent une méthode de type geometry ou geography sont désactivées lorsqu'une base de données est mise à niveau.  
@@ -74,25 +71,25 @@ sys.dm_db_objects_disabled_on_compatibility_level_change ( compatibility_level )
   
 -   **Geography :: GeomFromGML**  
   
--   **Geography:: STGeomFromText**  
+-   **Geography :: STGeomFromText**  
   
--   **Geography:: STLineFromText**  
+-   **Geography :: STLineFromText**  
   
--   **Geography:: STPolyFromText**  
+-   **Geography :: STPolyFromText**  
   
--   **Geography:: STMPointFromText**  
+-   **Geography :: STMPointFromText**  
   
--   **Geography:: STMLineFromText**  
+-   **Geography :: STMLineFromText**  
   
--   **Geography:: STMPolyFromText**  
+-   **Geography :: STMPolyFromText**  
   
--   **Geography:: STGeomCollFromText**  
+-   **Geography :: STGeomCollFromText**  
   
 -   **Geography :: STGeomFromWKB**  
   
 -   **Geography :: STLineFromWKB**  
   
--   **Geography:: STPolyFromWKB**  
+-   **Geography :: STPolyFromWKB**  
   
 -   **Geography :: STMPointFromWKB**  
   
@@ -110,7 +107,7 @@ sys.dm_db_objects_disabled_on_compatibility_level_change ( compatibility_level )
   
 -   **Geography :: STBuffer**  
   
--   **Geography:: BufferWithTolerance**  
+-   **Geography :: BufferWithTolerance**  
   
 -   **Geography :: analyser**  
   

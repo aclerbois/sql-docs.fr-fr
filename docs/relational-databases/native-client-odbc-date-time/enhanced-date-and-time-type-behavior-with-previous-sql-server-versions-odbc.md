@@ -1,29 +1,28 @@
 ---
-title: "Comportement avec les versions SQL Server antérieures (ODBC) de Type améliorées de Date et d’heure | Documents Microsoft"
-ms.custom: 
+title: Comportement avec les versions SQL Server antérieures (ODBC) de Type améliorées de Date et d’heure | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-date-time
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - date/time [ODBC], enhanced behavior with earlier SQL Server versions
 ms.assetid: cd4e137f-dc5e-4df7-bc95-51fe18c587e0
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f2acc8c52d6e16cf17c05cc421faf5ea52b20e71
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e63cefdf59a3198ff1f71b96ce36ebc11dae592b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enhanced-date-and-time-type-behavior-with-previous-sql-server-versions-odbc"></a>Comportement des types de date et d'heure améliorés avec les versions SQL Server antérieures (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 01/25/2018
   
  Lorsqu’une application cliente de bas niveau s’exécute sur un [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] (ou version ultérieure) sur les modifications de schéma à la date/heure ont été apportées des types de serveur, le comportement attendu est comme suit :  
   
-|Type SQL Server 2005|[!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)](ou version ultérieure) Type|Type de client ODBC|Conversion des résultats (de SQL vers C)|Conversion des paramètres (de C vers SQL)|  
+|Type SQL Server 2005|[!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] (ou version ultérieure) Type|Type de client ODBC|Conversion des résultats (de SQL vers C)|Conversion des paramètres (de C vers SQL)|  
 |--------------------------|----------------------------------------------|----------------------|------------------------------------|---------------------------------------|  
 |DateTime|Date|SQL_C_TYPE_DATE|OK|OK (1)|  
 |||SQL_C_TYPE_TIMESTAMP|Champs d'heure définis à zéro.|OK (2)<br /><br /> Échoue si le champ d'heure n'est pas nul. Fonctionne avec [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].|  
@@ -49,7 +48,7 @@ ms.lasthandoff: 01/25/2018
 ||Time(7)|SQL_C_TIME|Échec : littéral d'heure non valide.|OK (1)|  
 |||SQL_C_TYPE_TIMESTAMP|Échec : littéral d'heure non valide.|OK (1)|  
 ||Datetime2(3)|SQL_C_TYPE_TIMESTAMP|OK|OK (1)|  
-||Datetime2(7)|SQL_C_TYPE_TIMESTAMP|OK|La valeur sera arrondie à 1/300e de seconde par la conversion cliente.|  
+||Datetime2 (7)|SQL_C_TYPE_TIMESTAMP|OK|La valeur sera arrondie à 1/300e de seconde par la conversion cliente.|  
 |Smalldatetime|Date|SQL_C_TYPE_DATE|OK|OK|  
 |||SQL_C_TYPE_TIMESTAMP|Champs d'heure définis à zéro.|OK (2)<br /><br /> Échoue si le champ d'heure n'est pas nul. Fonctionne avec [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].|  
 ||Time(0)|SQL_C_TYPE_TIME|OK|OK|  
@@ -118,6 +117,6 @@ ms.lasthandoff: 01/25/2018
  En cas de connexion à une instance de serveur d'une version antérieure à [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], toute tentative d'utiliser les nouveaux types de serveur ou les codes de métadonnées et les champs de descripteur associés provoquera le renvoi d'une erreur SQL_ERROR. Un enregistrement de diagnostic sera généré avec SQLSTATE HY004 et le message « Type de données SQL non valide pour la version du serveur lors de la connexion », ou avec 07006 et « Violation de l'attribut de type de données restreint ».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Date et heure améliorations &#40; ODBC &#41;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md)  
+ [Date et heure améliorations & #40 ; ODBC & #41 ;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md)  
   
   

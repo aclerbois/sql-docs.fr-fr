@@ -1,16 +1,15 @@
 ---
 title: Explorateur de solutions | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], solutions
 - projects [SQL Server Management Studio], about projects
@@ -19,19 +18,19 @@ helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], items
 - items [SQL Server]
 ms.assetid: 0df09843-0d4f-4925-bc6c-99265035a0c1
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f4d77dde666a8fb751e637265333a334075807af
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 02ac675f7dd209cb538e90142f6b9049068e2ad7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="solution-explorer"></a>Explorateur de solutions
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Le volet Explorateur de solutions dans [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] fournit des conteneurs appelés projets pour la gestion des éléments, tels que les scripts de base de données, les requêtes, les connexions de données et les fichiers. Un ou plusieurs projets qui sont liés entre eux peuvent être combinés dans un conteneur appelé solution.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Le volet Explorateur de solutions dans [!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)] fournit des conteneurs appelés projets pour la gestion des éléments, tels que les scripts de base de données, les requêtes, les connexions de données et les fichiers. Un ou plusieurs projets qui sont liés entre eux peuvent être combinés dans un conteneur appelé solution.  
   
 Une solution contient un ou plusieurs projets, qu'accompagnent les fichiers et les métadonnées qui permettent de définir la solution dans son entier. Un projet est un ensemble de fichiers, qu'accompagnent les métadonnées correspondantes telles que les informations de connexion. Les solutions et les projets contiennent des éléments qui représentent les scripts, les requêtes, les informations de connexion et les fichiers dont vous avez besoin pour créer votre solution de base de données.  
   

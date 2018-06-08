@@ -1,36 +1,35 @@
 ---
-title: "Afficher les dépendances d’une procédure stockée | Microsoft Docs"
-ms.custom: 
+title: Afficher les dépendances d’une procédure stockée | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-stored-Procs
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - stored procedures [SQL Server], dependencies
 - displaying stored procedure dependencies
 - viewing stored procedure dependencies
 ms.assetid: 6ae0a369-1bc7-4ae4-be89-2b483697cd1f
-caps.latest.revision: 
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e353ad945f88b477997f92638cd4612a9663b168
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 119236e5dc06f1c8df5412e05ab810c824e5cb84
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-dependencies-of-a-stored-procedure"></a>Afficher les dépendances d'une procédure stockée
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Cette rubrique explique comment consulter les dépendances des procédures stockées dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou d' [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique comment consulter les dépendances des procédures stockées dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou d' [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
 ##  <a name="Top"></a>   
 -   **Avant de commencer :**  [Limitations et restrictions](#Restrictions), [Sécurité](#Security)  

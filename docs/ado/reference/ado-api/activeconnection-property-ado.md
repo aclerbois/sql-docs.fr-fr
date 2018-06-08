@@ -1,17 +1,15 @@
 ---
-title: "ActiveConnection, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: ActiveConnection, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Command15::ActiveConnection
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - ActiveConnection property [ADO]
 ms.assetid: 52d0a96c-14fb-4ad9-b004-4d821bc0a6db
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2bbd6ba28209df50d8956c784d0ef25f9ac73728
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3b37e3e062bcc8239b2231db66052e9cdaf9e812
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="activeconnection-property-ado"></a>ActiveConnection, propriété (ADO)
 Indique à lequel [connexion](../../../ado/reference/ado-api/connection-object-ado.md) de l’objet spécifié [commande](../../../ado/reference/ado-api/command-object-ado.md), [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md), ou [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) objet appartient.  

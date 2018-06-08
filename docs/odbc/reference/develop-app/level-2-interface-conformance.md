@@ -1,31 +1,28 @@
 ---
-title: "Niveau 2 Interface conformité | Documents Microsoft"
-ms.custom: 
+title: Niveau 2 Interface conformité | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interface conformance levels [ODBC]
 - level 2 interface conformance levels [ODBC]
 - conformance levels [ODBC], interface
 ms.assetid: 2dc87840-f2fe-43dd-9d7b-bd95523081d9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4002a7b376a752d4c5d3a2ddd2506bc9357842fa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ff0d3f86d4e83c842b6477d6d80b5b74c1fbfc58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="level-2-interface-conformance"></a>Conformité d’Interface de niveau 2
 Niveau de conformité de l’interface de niveau 2 inclut les fonctionnalités de conformité au niveau de l’interface de niveau 1 ainsi que les fonctionnalités suivantes :  

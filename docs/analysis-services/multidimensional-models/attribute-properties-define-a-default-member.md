@@ -1,36 +1,23 @@
 ---
-title: "Définir un membre par défaut | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- default members
-- attributes [Analysis Services], default members
-- members [Analysis Services], default
-- DefaultMember property
-ms.assetid: db487856-ee21-49c3-aa08-d9136e193374
-caps.latest.revision: 
-author: Minewiskan
+title: Définir un membre par défaut | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a457e54c1653cfc996de2040a09e8b22578307f0
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e112d0cfdd1e4558dcad1888531774357ce0102a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-properties---define-a-default-member"></a>Propriétés d’attribut : permet de définir un membre par défaut
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le membre par défaut d'une hiérarchie d'attributs sert à évaluer les expressions lorsque la hiérarchie d'attributs n'est pas incluse dans une requête. Le membre par défaut est ignoré lorsqu'une requête inclut une hiérarchie d'attributs ou une hiérarchie d'utilisateurs contenant l'attribut qui source la hiérarchie d'attributs. Cela est dû au fait que le membre spécifié dans la requête est utilisé.  
+  Le membre par défaut d'une hiérarchie d'attributs sert à évaluer les expressions lorsque la hiérarchie d'attributs n'est pas incluse dans une requête. Le membre par défaut est ignoré lorsqu'une requête inclut une hiérarchie d'attributs ou une hiérarchie d'utilisateurs contenant l'attribut qui source la hiérarchie d'attributs. Cela est dû au fait que le membre spécifié dans la requête est utilisé.  
   
  Le membre par défaut d’une hiérarchie d’attributs est défini en spécifiant un membre d’attribut comme valeur de la propriété **DefaultMember** pour la hiérarchie d’attributs. Vous pouvez définir cette propriété sous l’onglet Structure de dimension dans le Concepteur de dimensions ou dans le script de calcul du cube sous l’onglet Calcul du Concepteur de cube dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Vous pouvez également spécifier la propriété **DefaultMember** pour un rôle de sécurité (et remplacer ainsi le membre par défaut défini sur la dimension) sous l’onglet Données de la dimension lors de la définition de la sécurité de dimension. Pour éviter tout problème de résolution de noms, définissez le membre par défaut dans le script MDX du cube dans les situations suivantes : si le cube fait référence à une dimension de base de données à plusieurs reprises, si la dimension dans le cube a un nom différent de celle dans la base de données ou si vous souhaitez avoir différents membres par défaut dans différents cubes.  
   
@@ -51,6 +38,6 @@ Le membre par défaut d'une hiérarchie d'attributs sert à évaluer les express
  Lorsque les niveaux d'une hiérarchie s'agrègent naturellement, vous pouvez définir un membre par défaut pour un attribut de la hiérarchie sans tenir compte des autres attributs de cette hiérarchie. Par exemple, dans la hiérarchie Pays–Région–Ville, vous pouvez définir un membre par défaut pour Ville, par exemple [Ville].[Paris] sans définir le membre par défaut de Région ou de Pays.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Configurer la &#40; Tous les &#41; Niveau de hiérarchies d’attributs](../../analysis-services/multidimensional-models/database-dimensions-configure-the-all-level-for-attribute-hierarchies.md)  
+ [Configurer la & #40 ; Tous les & #41 ; Niveau de hiérarchies d’attributs](../../analysis-services/multidimensional-models/database-dimensions-configure-the-all-level-for-attribute-hierarchies.md)  
   
   

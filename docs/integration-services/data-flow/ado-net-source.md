@@ -1,17 +1,16 @@
 ---
 title: Source ADO NET | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.adonetsource.f1
 - sql13.dts.designer.adonetsource.connection.f1
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - .NET Framework [Integration Services]
 - DataReader source
 ms.assetid: 2a2f1750-2cda-4dda-9dca-623a96a6b3c0
-caps.latest.revision: 
+caps.latest.revision: 101
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 05753f3cea7979f78499dc68cb4baa784367b383
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 81566c11122cd67e37e1304f1d56760fcae1ce29
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-net-source"></a>Source ADO NET
   La source ADO .NET exploite des données issues d'un fournisseur .NET et les met à la disposition du flux de données.  
@@ -142,7 +140,7 @@ ms.lasthandoff: 01/25/2018
  **Construire une requête**  
  Utilisez la boîte de dialogue **Générateur de requêtes** pour construire la requête SQL visuellement.  
   
- **...**  
+ **Parcourir**  
  Dans la boîte de dialogue **Ouvrir** , localisez le fichier qui contient le texte de la requête SQL.  
   
 ## <a name="ado-net-source-editor-columns-page"></a>Éditeur de source ADO NET (page Colonnes)

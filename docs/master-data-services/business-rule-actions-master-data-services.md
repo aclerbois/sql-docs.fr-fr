@@ -1,30 +1,31 @@
 ---
-title: "Actions de règle d’entreprise (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Actions de règle d’entreprise (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: cdc4daca-3dff-46d8-b7f0-57f7826dd61a
-caps.latest.revision: 
+caps.latest.revision: 10
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1caf657ac063453ca5bbea7b41b46ae9164306ee
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 961a4d045bc2ff82271ae6793069dc81f64575b1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="business-rule-actions-master-data-services"></a>Actions de règle d'entreprise (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], les actions de règle d'entreprise sont la conséquence de l'évaluation des conditions des règles d'entreprise. Si une condition est vraie (True), l'action est initiée.  
   
 > [!NOTE]  

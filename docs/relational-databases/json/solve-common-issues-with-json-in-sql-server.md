@@ -1,29 +1,29 @@
 ---
-title: "Résoudre des problèmes courants JSON dans SQL Server | Microsoft Docs"
-ms.custom: 
+title: Résoudre des problèmes courants JSON dans SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 07/07/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - JSON, FAQ
 ms.assetid: feae120b-55cc-4601-a811-278ef1c551f9
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 9
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b3a0913d611bfa5e55ae285461da4e09fa09703b
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 086f333604c19d33a74efdb7e79d7462f9d3fca7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="solve-common-issues-with-json-in-sql-server"></a>Résoudre des problèmes courants JSON dans SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

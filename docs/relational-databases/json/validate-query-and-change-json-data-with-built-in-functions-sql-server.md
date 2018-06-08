@@ -1,30 +1,30 @@
 ---
-title: "Valider, interroger et modifier les données JSON avec des fonctions intégrées (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Valider, interroger et modifier les données JSON avec des fonctions intégrées (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - JSON, built-in functions
 - functions (JSON)
 ms.assetid: 6b6c7673-d818-4fa9-8708-b4ed79cb1b41
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 21
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c6803992992cf2a62afe741df536c0fa87a5fe2d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dc1088d2f82ac26eda7874fbdbc613670366d723
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="validate-query-and-change-json-data-with-built-in-functions-sql-server"></a>Valider, interroger et modifier les données JSON avec des fonctions intégrées (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

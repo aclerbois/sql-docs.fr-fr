@@ -1,34 +1,30 @@
 ---
-title: "SQL:FullTextQuery, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SQL:FullTextQuery, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL:FullTextQuery event class
 ms.assetid: 654fb295-f0a5-4d66-93e0-5d43e4d7d535
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ae236f30c9fb0f2cc3c35e694ccab3f4f081109d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6e0a69d65c6d618504ff512d1d6fa904429ce1a5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlfulltextquery-event-class"></a>SQL:FullTextQuery, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SQL:FullTextQuery se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une requête de texte intégral. Incluez cette classe d'événements dans les traces qui surveillent les problèmes associés aux catalogues de texte intégral.  
+  La classe d'événements SQL:FullTextQuery se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une requête de texte intégral. Incluez cette classe d'événements dans les traces qui surveillent les problèmes associés aux catalogues de texte intégral.  
   
  Lorsque la classe d'événements SQL:FullTextQuery est incluse, la charge est élevée. Si de tels événements se produisent fréquemment, il est possible que la trace affecte de façon notable les performances. Pour réduire ce risque au minimum, limitez l'utilisation de cette classe d'événements aux traces qui surveillent des problèmes spécifiques pendant de brèves périodes de temps.  
   

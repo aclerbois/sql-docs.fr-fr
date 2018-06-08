@@ -1,31 +1,31 @@
 ---
-title: "Boîte de dialogue Colonnes d’index (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Colonnes d’index (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vdt.dlgbox.indexcolumns
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vdt.dlgbox.indexcolumns
 ms.assetid: 855860ae-528f-48ab-80e3-f53e7cb8c33f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 58eb707b051fc163202af81aa847ce68a8df64fc
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 6ed5aca3c9f33ac691306d1c68a199975518003c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="index-columns-dialog-box-visual-database-tools"></a>Boîte de dialogue Colonnes d'index (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez cette boîte de dialogue pour sélectionner les colonnes pour un index et définir leurs ordres de tri. Un index peut utiliser une ou plusieurs colonnes et chaque colonne peut être triée par ordre croissant ou décroissant. Pour accéder à cette boîte de dialogue, dans la boîte de dialogue **Index/clés** , cliquez sur le bouton d’ellipse pour la ligne **Colonnes** dans la section **Général** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Utilisez cette boîte de dialogue pour sélectionner les colonnes pour un index et définir leurs ordres de tri. Un index peut utiliser une ou plusieurs colonnes et chaque colonne peut être triée par ordre croissant ou décroissant. Pour accéder à cette boîte de dialogue, dans la boîte de dialogue **Index/clés** , cliquez sur le bouton d’ellipse pour la ligne **Colonnes** dans la section **Général** .  
   
 ## <a name="options"></a>Options  
 **Nom de la colonne**  

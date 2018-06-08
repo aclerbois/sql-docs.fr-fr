@@ -1,30 +1,27 @@
 ---
-title: "Modification d’une Source de données Visual FoxPro | Documents Microsoft"
-ms.custom: 
+title: Modification d’une Source de données Visual FoxPro | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual FoxPro data source [ODBC], changing
 - editing data sources [ODBC], Visual FoxPro
 ms.assetid: d9c30b5a-9ddf-4044-a7c5-0bdb983fdda4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 42f28cda0720d19557a01810882d76423aaa5927
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 31a455855204b5b608f22955120f3a58c1e6b3f8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modifying-a-visual-foxpro-data-source"></a>Modification d’une Source de données Visual FoxPro
 ### <a name="to-modify-a-visual-foxpro-data-source"></a>Pour modifier une source de données Visual FoxPro  

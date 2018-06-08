@@ -1,38 +1,19 @@
 ---
-title: "Classes complémentaires AMO et les méthodes de programmation | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- restores [AMO]
-- assemblies [AMO]
-- AMO, backup and restore
-- capture logs [AMO]
-- programming [AMO]
-- Analysis Management Objects, backup and restore
-- traces [AMO]
-- backups [AMO]
-ms.assetid: 14aed554-d2e2-49e5-9c72-26660759bce2
-caps.latest.revision: 
-author: Minewiskan
+title: Classes complémentaires AMO et les méthodes de programmation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ea3f2a07cc5d6e39bec7db5faf333986a56062f9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: db41dcbcd16d6fe9ba6166f82f2939ef284bd4ba
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="programming-amo-complementary-classes-and-methods"></a>Programmation des classes et méthodes complémentaires AMO
   Cette rubrique contient les sections suivantes :  
@@ -79,7 +60,7 @@ static public void CreateStoredProcedures(Database db)
   
 ```  
   
-##  <a name="BU"></a> Méthodes de sauvegarde et restauration  
+##  <a name="BU"></a>Méthodes de sauvegarde et restauration  
  Les méthodes Backup et Restore permettent aux administrateurs de sauvegarder les bases de données et de les restaurer.  
   
  L'exemple suivant crée des sauvegardes pour toutes les bases de données du serveur spécifié. Si un fichier de sauvegarde existe déjà, il est remplacé. Les fichiers de sauvegarde sont enregistrés dans le dossier BackUp du dossier Data d'[!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
@@ -287,8 +268,8 @@ static public string TestCaptureLog(Server svr)
  <xref:Microsoft.AnalysisServices>   
  [Présentation des Classes AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-classes-introduction.md)   
  [AMO autres Classes et méthodes](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-other-classes-and-methods.md)   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
- [Le traitement d’un modèle multidimensionnel &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)  
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
+ [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)  
   
   

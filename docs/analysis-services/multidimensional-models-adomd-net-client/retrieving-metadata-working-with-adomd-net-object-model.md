@@ -1,33 +1,19 @@
 ---
-title: "Utilisation du modèle objet ADOMD.NET | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- metadata [ADOMD.NET]
-- object model (client) [ADOMD.NET]
-- retrieving metadata
-ms.assetid: 0183dcdc-f2ea-4246-ad00-6e8ccc9d8217
-caps.latest.revision: 
-author: Minewiskan
+title: Utilisation du modèle objet ADOMD.NET | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: adomd
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d5ab7348371437e79b52f16c98890aa2c93431b8
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 29e59b5811f6c13c7aa222c7d6eba31f9bcd706e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="retrieving-metadata---working-with-adomdnet-object-model"></a>La récupération des métadonnées - fonctionne avec le modèle objet ADOMD.NET
   ADOMD.NET fournit un modèle objet qui permet d'afficher les cubes et les objets subordonnés contenus dans une source de données analytiques. Toutefois, toutes les métadonnées d'une source de données analytiques spécifique ne sont pas accessibles via le modèle objet. Le modèle objet donne uniquement accès aux informations qui permettent à une application cliente de s'afficher de telle sorte que l'utilisateur puisse construire des commandes de manière interactive. Dans la mesure où la complexité des métadonnées à présenter est réduite, le modèle objet ADOMD.NET n'en est que plus facile à utiliser.  

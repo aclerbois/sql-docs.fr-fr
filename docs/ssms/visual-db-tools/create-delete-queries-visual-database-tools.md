@@ -1,16 +1,15 @@
 ---
-title: "Créer des requêtes Delete (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Créer des requêtes Delete (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - row removal [SQL Server], Delete query
 - Delete query
@@ -21,19 +20,19 @@ helpviewer_keywords:
 - deleting rows
 - deleting data
 ms.assetid: 0db3af43-1ec4-48c8-b769-2bb9c76d3434
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1538fed172283d64b2c8d5154162cf457436a476
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: e188d15c6a1281d95e09e5b6f7e5f4a2c34f4bbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-delete-queries-visual-database-tools"></a>Créer des requêtes Delete (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez supprimer toutes les lignes d’une table à l’aide d’une requête Delete.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez supprimer toutes les lignes d'une table à l'aide d'une requête Delete.  
   
 > [!NOTE]  
 > La suppression de toutes les lignes d'une table supprime les données de la table, mais ne supprime pas la table elle-même. Pour supprimer une table d’une base de données, cliquez avec le bouton droit sur la table dans l’Explorateur d’objets et cliquez sur **Supprimer**.  

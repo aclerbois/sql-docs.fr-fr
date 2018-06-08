@@ -1,28 +1,19 @@
 ---
-title: "Leçon 7 : Créer des mesures | Documents Microsoft"
-ms.custom: 
-ms.date: 03/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: 01bd2ad7-09b7-49ae-ad80-83f25da301aa
-caps.latest.revision: "29"
-author: Minewiskan
+title: 'Leçon 7 : Créer des mesures | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: f3eaadefd65c49f86e4081ba0547f5ca05ae0514
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 146d93bc2c7257ce409f3a293f6c9050acde9ca7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-6-create-measures"></a>Leçon 6 : Créer des mesures
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -37,7 +28,7 @@ Dans cette leçon, vous allez créer des mesures en entrant une formule DAX dans
   
 Durée estimée pour effectuer cette leçon : **30 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit être suivi dans l'ordre. Avant d’effectuer les tâches de cette leçon, vous devez avoir terminé la leçon précédente : [leçon 5 : créer des colonnes calculées](../analysis-services/lesson-5-create-calculated-columns.md).  
   
 ## <a name="create-measures"></a>Créer des mesures  
@@ -92,16 +83,16 @@ Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit
   
 1.  En utilisant la fonction de somme automatique, créez et nommez les mesures suivantes :  
   
-    |Nom de la mesure|colonne|Somme automatique (∑)|Formule|  
+    |Nom de la mesure|Colonne|Somme automatique (∑)|Formule|  
     |----------------|----------|-----------------|-----------|  
     |InternetOrderLinesCount|SalesOrderLineNumber|Compter|=COUNTA([SalesOrderLineNumber])|  
-    |InternetTotalUnits|OrderQuantity|SUM|=SUM([OrderQuantity])|  
-    |InternetTotalDiscountAmount|DiscountAmount|SUM|=SUM([DiscountAmount])|  
-    |InternetTotalProductCost|TotalProductCost|SUM|=SUM([TotalProductCost])|  
-    |InternetTotalSales|SalesAmount|SUM|=SUM([SalesAmount])|  
-    |InternetTotalMargin|Margin|SUM|=SUM([Margin])|  
-    |InternetTotalTaxAmt|TaxAmt|SUM|=SUM([TaxAmt])|  
-    |InternetTotalFreight|Freight|SUM|=SUM([Freight])|  
+    |InternetTotalUnits|OrderQuantity|Sum|=SUM([OrderQuantity])|  
+    |InternetTotalDiscountAmount|DiscountAmount|Sum|=SUM([DiscountAmount])|  
+    |InternetTotalProductCost|TotalProductCost|Sum|=SUM([TotalProductCost])|  
+    |InternetTotalSales|SalesAmount|Sum|=SUM([SalesAmount])|  
+    |InternetTotalMargin|Margin|Sum|=SUM([Margin])|  
+    |InternetTotalTaxAmt|TaxAmt|Sum|=SUM([TaxAmt])|  
+    |InternetTotalFreight|Freight|Sum|=SUM([Freight])|  
   
 2.  En cliquant sur une cellule vide dans la grille de mesures et à l’aide de la barre de formule, créez et nommez les mesures suivantes dans l’ordre :  
   

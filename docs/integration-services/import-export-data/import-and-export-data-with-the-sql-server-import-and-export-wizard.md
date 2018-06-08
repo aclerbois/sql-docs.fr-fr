@@ -1,17 +1,16 @@
 ---
-title: "Importer et exporter des données avec l’Assistant Importation et Exportation SQL Server | Microsoft Docs"
-ms.custom: 
+title: Importer et exporter des données avec l’Assistant Importation et Exportation SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 10/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - exporting data
 - mapping files [Integration Services]
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - importing data, SSIS packages
 - sources [Integration Services], copying data
 ms.assetid: c0e4d867-b2a9-4b2a-844b-2fe45be88f81
-caps.latest.revision: 
+caps.latest.revision: 160
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b2a3d6c1968c0e8d2a2463dedf6a9050590c2bbd
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d1478cd130bf6cea79d2a731bd214d13b402d393
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-and-export-data-with-the-sql-server-import-and-export-wizard"></a>Importer et exporter des données avec l’Assistant Importation et Exportation SQL Server
 

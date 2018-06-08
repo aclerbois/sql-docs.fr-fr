@@ -1,30 +1,28 @@
 ---
-title: "Établir une connexion à un classeur Excel | Microsoft Docs"
+title: Établir une connexion à un classeur Excel | Microsoft Docs
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Excel [Integration Services]
 ms.assetid: d9746318-3669-4ce2-bbb0-4a1bd471c9dd
-caps.latest.revision: 
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3ece6c4ef032f7b60f82f3f58ee602d0a4ac1196
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 62c9d7b4de0b764ff7208b0fa077ec12b58dec60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-an-excel-workbook"></a>Établir une connexion à un classeur Excel
   Pour connecter un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] à un classeur Microsoft Office Excel, vous devez utiliser un gestionnaire de connexions Excel.  

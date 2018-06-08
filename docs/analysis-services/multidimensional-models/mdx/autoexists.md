@@ -1,31 +1,23 @@
 ---
-title: "La fonctionnalité Autoexists | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 56283497-624c-45b5-8a0d-036b0e331d22
-caps.latest.revision: 
-author: Minewiskan
+title: La fonctionnalité Autoexists | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 655041c87d4cf9009692025f9396a94dd41a2cf1
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5f7c111f85e3b43a560b70171f8af470a9fc505a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="autoexists"></a>Autoexists
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-La fonctionnalité d’auto-existence, ou *autoexists* , limite l’espace du cube aux cellules qui existent réellement dans le cube, par opposition à celles qui pourraient exister en créant toutes les combinaisons possibles de membres de la hiérarchie d’attribut à partir de la même hiérarchie. En effet, les membres d'une hiérarchie d'attribut ne peuvent coexister avec les membres d'une autre hiérarchie d'attribut au sein de la même dimension. Lorsque deux hiérarchies d'attribut, ou plus, de la même dimension sont utilisées dans une instruction SELECT, Analysis Services évalue les expressions des attributs pour s'assurer que les membres de ces attributs sont correctement limités afin de répondre aux critères de tous les autres attributs.  
+  La fonctionnalité d’auto-existence, ou *autoexists* , limite l’espace du cube aux cellules qui existent réellement dans le cube, par opposition à celles qui pourraient exister en créant toutes les combinaisons possibles de membres de la hiérarchie d’attribut à partir de la même hiérarchie. En effet, les membres d'une hiérarchie d'attribut ne peuvent coexister avec les membres d'une autre hiérarchie d'attribut au sein de la même dimension. Lorsque deux hiérarchies d'attribut, ou plus, de la même dimension sont utilisées dans une instruction SELECT, Analysis Services évalue les expressions des attributs pour s'assurer que les membres de ces attributs sont correctement limités afin de répondre aux critères de tous les autres attributs.  
   
  Supposons, par exemple, que vous utilisez des attributs de la dimension de Geography. Si vous avez une expression qui retourne tous les membres de l'attribut Ville et une autre expression qui limite les membres de l'attribut Pays à tous les pays d'Europe, il en résultera une limitation des membres de l'attribut Ville aux seules villes qui appartiennent à des pays d'Europe. Cela est dû à la particularité de la fonctionnalité Autoexists d'Analysis Services. En effet, elle tente d'empêcher que des enregistrements de la dimension exclus d'une expression d'attribut soient exclus par les autres expressions d'attributs. La fonctionnalité Autoexists peut également être interprétée comme l'intersection obtenue entre les différentes expressions d'attributs sur les lignes de la dimension.  
   
@@ -315,15 +307,15 @@ WHERE (Measures.[Internet Sales Amount],
 |**Mountain-100**|**8 568 958,27 $**|**139 393,27 $**|**1.63**|  
 |**HL Mountain Frame**|**3 365 069,27 $**|**$174.11**|**0.01**|  
   
- Comportement d’Autoexists peut être modifié à l’aide de la fonctionnalité AUTOEXISTS = [1 | 2 | paramètre 3] dans la chaîne de connexion ; consultez [pris en charge les propriétés XMLA &#40; XMLA &#41; ](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) et <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A> pour l’utilisation des paramètres.  
+ Comportement d’Autoexists peut être modifié à l’aide de la fonctionnalité AUTOEXISTS = [1 | 2 | paramètre 3] dans la chaîne de connexion ; consultez [pris en charge les propriétés XMLA &#40;XMLA&#41; ](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) et <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A> pour l’utilisation des paramètres.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Concepts clés dans MDX &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md)   
+ [Concepts clés dans MDX & #40 ; Analysis Services & #41 ;](../../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md)   
  [Espace du cube](../../../analysis-services/multidimensional-models/mdx/cube-space.md)   
  [Tuples](../../../analysis-services/multidimensional-models/mdx/tuples.md)   
- [Utilisation des membres, Tuples et jeux &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/working-with-members-tuples-and-sets-mdx.md)   
+ [Utilisation des membres, Tuples et jeux & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/working-with-members-tuples-and-sets-mdx.md)   
  [Valeurs totales et Non visibles](../../../analysis-services/multidimensional-models/mdx/visual-totals-and-non-visual-totals.md)   
- [Référence du langage MDX &#40; MDX &#41;](../../../mdx/mdx-language-reference-mdx.md)   
- [Expressions multidimensionnelles &#40; MDX &#41; Référence](../../../mdx/multidimensional-expressions-mdx-reference.md)  
+ [Référence du langage MDX & #40 ; MDX & #41 ;](../../../mdx/mdx-language-reference-mdx.md)   
+ [Expressions multidimensionnelles & #40 ; MDX & #41 ; Référence](../../../mdx/multidimensional-expressions-mdx-reference.md)  
   
   

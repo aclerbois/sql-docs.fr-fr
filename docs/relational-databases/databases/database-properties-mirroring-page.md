@@ -1,33 +1,32 @@
 ---
-title: "Propriétés de la base de données (page Mise en miroir) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de la base de données (page Mise en miroir) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.databaseproperties.mirroring.f1
 ms.assetid: 5bdcd20f-532d-4ee6-b2c7-18dbb7584a87
-caps.latest.revision: 
+caps.latest.revision: 86
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1dece952a9aba10ef1dff5fe92d7747ae11f711
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a14e748959ca5553dc6a8e2af6d26700ab418e7d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-properties-mirroring-page"></a>Propriétés de la base de données (page Mise en miroir)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Accédez à cette page à partir de la base de données principale et utilisez-la pour configurer et modifier les propriétés de la mise en miroir de bases de données pour une base de données. Utilisez-la également pour lancer Configurer l'Assistant Sécurité de mise en miroir de bases de données, afin d'afficher l'état d'une session de mise en miroir et de suspendre ou supprimer une session de mise en miroir de bases de données.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Accédez à cette page depuis la base de données principale et utilisez-la pour configurer et modifier les propriétés de la mise en miroir de bases de données pour une base de données. Utilisez-la également pour lancer Configurer l'Assistant Sécurité de mise en miroir de bases de données, afin d'afficher l'état d'une session de mise en miroir et de suspendre ou supprimer une session de mise en miroir de bases de données.  
   
 > **IMPORTANT !** La sécurité doit être configurée avant de démarrer la mise en miroir. Si la mise en miroir n'a pas commencé, vous devez la lancer en utilisant l'Assistant. Les zones de texte de la page **Mise en miroir** restent désactivées jusqu’à la fin de l’Assistant.  
   

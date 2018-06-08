@@ -1,16 +1,14 @@
 ---
-title: "Le traitement XML du côté Client (la Classes managées SQLXML) | Documents Microsoft"
-ms.custom: 
+title: Le traitement XML du côté Client (la Classes managées SQLXML) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - processing XML on client side [SQLXML]
@@ -19,20 +17,20 @@ helpviewer_keywords:
 - SQLXML Managed Classes, client-side XML formatting
 - ClientSideXml property
 ms.assetid: 5e7ecf18-66fc-49ff-bc50-83635cd7ac0b
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aad3daeaf32fd3130d04749c334bb2ecc511e178
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8ea74968bc1776aecab380f5566abbe9a1e64ac5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-xml-on-the-client-side-sqlxml-managed-classes"></a>traitement du XML côté client (classes managées SQLXML)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cet exemple illustre l’utilisation de la propriété ClientSideXml. L'application exécute une procédure stockée sur le serveur. Le résultat de la procédure stockée (un ensemble de lignes à deux colonnes) est traité sur le côté client pour produire un document XML.  
+  Cet exemple illustre l’utilisation de la propriété ClientSideXml. L'application exécute une procédure stockée sur le serveur. Le résultat de la procédure stockée (un ensemble de lignes à deux colonnes) est traité sur le côté client pour produire un document XML.  
   
  Le GetContacts suivant procédure stockée renvoie **FirstName** et **LastName** des employés de la table Person.Contact dans la base de données AdventureWorks.  
   

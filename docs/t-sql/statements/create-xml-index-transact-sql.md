@@ -1,16 +1,14 @@
 ---
 title: CREATE XML INDEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - XML_TSQL
@@ -30,16 +28,15 @@ helpviewer_keywords:
 - index creation [SQL Server], XML indexes
 - XML indexes [SQL Server], creating
 ms.assetid: c510cfbc-68be-4736-b3cc-dc5b7aa51f14
-caps.latest.revision: 
+caps.latest.revision: 38
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 133c957937d1c05cd108eeb2deb0847cd7944771
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: fddcf84d2aa860572e92ee9cb5c746ea2bbbba13
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-xml-index-transact-sql"></a>CREATE XML INDEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -107,7 +104,7 @@ CREATE [ PRIMARY ] XML INDEX index_name
  Pour plus d’informations, consultez [Index XML &#40;SQL Server&#41;](../../relational-databases/xml/xml-indexes-sql-server.md).  
   
  *index_name*  
- Nom de l'index. Les noms d'index doivent être uniques dans une table, mais ne doivent pas être nécessairement uniques dans une base de données. Les noms d’index doivent suivre les règles des [identificateurs](../../relational-databases/databases/database-identifiers.md).  
+ Nom de l'index. Les noms d'index doivent être uniques dans une table, mais ne doivent pas être nécessairement uniques dans une base de données. Les noms d’index doivent se conformer aux règles régissant les [identificateurs](../../relational-databases/databases/database-identifiers.md).  
   
  Les noms d’index XML primaires ne peuvent pas commencer par les caractères suivants : **#**, **##**, **@** ou **@@**.  
   
@@ -179,7 +176,7 @@ CREATE [ PRIMARY ] XML INDEX index_name
  OFF  
  Les résultats de tri intermédiaires sont stockés dans la même base de données que l'index.  
   
- En plus de l’espace nécessaire dans la base de données utilisateur pour créer l’index, **tempdb** doit avoir à peu près le même espace supplémentaire pour stocker les résultats intermédiaires du tri. Pour plus d’informations, consultez [Option SORT_IN_TEMPDB pour les index](../../relational-databases/indexes/sort-in-tempdb-option-for-indexes.md).  
+ En plus de l’espace nécessaire dans la base de données utilisateur pour créer l’index, **tempdb** doit disposer à peu près d’autant d’espace supplémentaire pour stocker les résultats intermédiaires du tri. Pour plus d’informations, consultez [Option SORT_IN_TEMPDB pour les index](../../relational-databases/indexes/sort-in-tempdb-option-for-indexes.md).  
   
  IGNORE_DUP_KEY **=OFF**  
  N'a aucun effet pour les index XML, car le type d'index n'est jamais unique. N'activez pas cette option (ON), sinon une erreur est déclenchée.  

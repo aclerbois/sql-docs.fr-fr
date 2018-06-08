@@ -1,25 +1,23 @@
 ---
 title: Applets de commande PowerShell pour le mode SharePoint de Reporting Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/25/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server-sharepoint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 7b2d501e76e281716d1d88f858d6642c3a0a1ef5
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2ccff01afbd9e51f0754ceaecf885b36a5b28f9b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="powershell-cmdlets-for-reporting-services-sharepoint-mode"></a>Applets de commande PowerShell pour le mode SharePoint de Reporting Services
 
@@ -104,7 +102,7 @@ Lorsque vous installez le mode SharePoint de SQL Server 2016 Reporting Services
 |Get-SPRSDatabaseRightsScript|Affiche à l’écran le script de droits de base de données pour une application de service Reporting Services. Invite à entrer l'utilisateur et la base de données souhaités, puis retourne un script Transact-SQL que vous pouvez exécuter pour modifier des autorisations. Vous pouvez ensuite exécuter ce script dans SQL Server Management Studio.|  
 |Get-SPRSDatabaseUpgradeScript|Génère un script de mise à niveau de base de données à l'écran. Le script met à niveau les bases de données de l’application de service Reporting Services vers la version de base de données de l’installation actuelle de Reporting Services.|  
   
-## <a name="reporting-services-custom-runctionality-cmdlets"></a>Applets de commande personnalisés de Reporting Services
+## <a name="reporting-services-custom-functionality-cmdlets"></a>Applets de commande de fonctionnalités personnalisées Reporting Services
   
 |Applet de commande|Description|  
 |------------|-----------------|  

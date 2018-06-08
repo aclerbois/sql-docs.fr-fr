@@ -1,30 +1,27 @@
 ---
 title: Les curseurs statiques ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cursors [ODBC], static
 - static cursors [ODBC]
 ms.assetid: 28cb324c-e1c3-4b5c-bc3e-54df87037317
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 049eb6998407ad02ca91565d9b26d0a0bf9b37eb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b2ee8c5945e3ebed86df370fd537f9bc543ce844
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-static-cursors"></a>Curseurs statiques ODBC
 Un curseur statique est un dans lequel le jeu de résultats semble être statique. Généralement, il ne détecte pas les modifications qui ont été apportées à l’appartenance, l’ordre ou les valeurs du jeu de résultats après l’ouverture du curseur. Par exemple, un curseur statique extrait une ligne et une autre application, puis met à jour cette ligne. Si le curseur statique réextrait la ligne, les valeurs sont identiques, malgré les modifications apportées par l’autre application.  

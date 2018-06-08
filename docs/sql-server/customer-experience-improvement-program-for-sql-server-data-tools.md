@@ -1,30 +1,30 @@
 ---
-title: "Programme d’amélioration du produit pour SQL Server Data Tools | Microsoft Docs"
-ms.custom: 
+title: Programme d’amélioration du produit pour SQL Server Data Tools | Microsoft Docs
+ms.custom: ''
 ms.date: 10/21/2016
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssdt
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssdt
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: baf3a205-a6bb-4564-8b64-3a0475bb9273
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 45707ee7bbed4fe4060bcf3134fe98783cb59690
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 84313f1bedd406c39a862c57bdc94436eb0c7cbe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customer-experience-improvement-program-for-sql-server-data-tools"></a>Programme d’amélioration du produit pour SQL Server Data Tools
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Découvrez comment le Programme d’amélioration du produit (CEIP) aide Microsoft à identifier les méthodes permettant d’améliorer nos logiciels.  Vous pouvez configurer les outils afin de vous abonner ou d’annuler l’abonnement au programme à tout moment.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Découvrez comment le Programme d’amélioration du produit (CEIP) aide Microsoft à identifier les méthodes permettant d’améliorer nos logiciels.  Vous pouvez configurer les outils afin de vous abonner ou d’annuler l’abonnement au programme à tout moment.  
   
 > [!NOTE]  
 >  Pour obtenir une explication des principes de collecte de données utilisateur et d’utilisation de la version Microsoft SQL Server 2016 et de tout autre produit et service, consultez la [déclaration de confidentialité de Microsoft](https://www.microsoft.com/privacystatement/en-us/SQLServer/Default.aspx).  
@@ -57,7 +57,7 @@ ms.lasthandoff: 12/05/2017
   
  Les clients en entreprise peuvent construire une stratégie de groupe pour s’abonner ou annuler l’abonnement en définissant une stratégie basée sur le registre pour SQL Server 2017.  
   
- La clé de Registre et les paramètres pertinents se présentent comme suit :  
+ La clé de Registre et les paramètres pertinents se présentent comme suit :  
   
  Key = HKEY_CURRENT_USER\Software\Microsoft\VSCommon\15.0\SQM  
   
@@ -99,7 +99,7 @@ ms.lasthandoff: 12/05/2017
   
  Les clients d’entreprises peuvent construire une stratégie de groupe pour s’abonner ou annuler l’abonnement en définissant une stratégie basée sur le registre pour SQL Server 2016.  
   
- La clé de Registre et les paramètres pertinents se présentent comme suit :  
+ La clé de Registre et les paramètres pertinents se présentent comme suit :  
   
  Key = HKEY_CURRENT_USER\Software\Microsoft\VSCommon\14.0\SQM  
   

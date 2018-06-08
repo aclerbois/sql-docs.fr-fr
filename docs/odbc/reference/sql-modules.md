@@ -1,16 +1,14 @@
 ---
 title: Les Modules SQL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL modules [ODBC]
 - sending SQL statements to DBMS [ODBC]
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - modules [ODBC]
 - SQL statements [ODBC], modules
 ms.assetid: 07551472-87ee-4765-951f-1364ed32f0c0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: aac70e91e91277f7778fed439f68e5620f116d41
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 10957c8e4a847f13d2dbf4b427382e65ea404c1f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-modules"></a>Modules SQL
 La seconde technique pour l’envoi d’instructions SQL au SGBD est via les modules. En résumé, un module se compose d’un groupe de procédures qui sont appelées à partir de l’hôte de langage de programmation. Chaque procédure contient une instruction SQL unique, et les données sont transmises vers et à partir de la procédure de paramètres.  

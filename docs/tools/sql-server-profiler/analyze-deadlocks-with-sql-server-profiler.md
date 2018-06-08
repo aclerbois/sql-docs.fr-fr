@@ -1,16 +1,14 @@
 ---
-title: "Analyser des blocages avec le Générateur de profils SQL Server | Documents Microsoft"
-ms.custom: 
+title: Analyser des blocages avec le Générateur de profils SQL Server | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - process nodes [SQL Server Profiler]
 - Profiler [SQL Server Profiler], deadlocks
@@ -21,19 +19,19 @@ helpviewer_keywords:
 - events [SQL Server], deadlocks
 - edges [SQL Server Profiler]
 ms.assetid: 72d6718f-501b-4ea6-b344-c0e653f19561
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2fc7e2adc786982611e58ca4083c575902e5aca3
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 835f8fc1c5c7d86551ffac0616afd42e737083b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="analyze-deadlocks-with-sql-server-profiler"></a>Analyser des blocages à l'aide de SQL Server Profiler
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Utilisez [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour identifier la cause d’un blocage. Un interblocage se produit quand il y a une dépendance cyclique entre au moins deux threads ou processus pour un jeu de ressources dans SQL Server. Le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de créer une trace qui enregistre, relit et affiche les événements de blocage dans le cadre d'une analyse.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour identifier la cause d'un interblocage. Un interblocage se produit quand il y a une dépendance cyclique entre au moins deux threads ou processus pour un jeu de ressources dans SQL Server. Le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de créer une trace qui enregistre, relit et affiche les événements de blocage dans le cadre d'une analyse.  
   
  Pour tracer les événements de blocage, ajoutez la classe d’événements **Deadlock graph** à une trace. Cette classe d’événements remplit la colonne de données **TextData** dans la trace avec des données XML relatives aux processus et objets impliqués dans le blocage. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] peut extraire le document XML dans un fichier XML de blocages (.xdl) que vous pouvez afficher ultérieurement dans SQL Server Management Studio. Vous pouvez configurer le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] de manière à extraire les événements **Deadlock graph** vers un fichier unique contenant tous les événements **Deadlock graph** , ou bien vers des fichiers distincts. Cette extraction peut être réalisée de l'une des manières suivantes :  
   

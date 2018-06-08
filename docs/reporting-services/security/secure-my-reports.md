@@ -1,16 +1,15 @@
 ---
-title: "Sécuriser Mes rapports | Microsoft Docs"
-ms.custom: 
+title: Sécuriser Mes rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - denying My Reports folder access
 - private folders [Reporting Services]
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - security [Reporting Services], My Reports folder
 - My Reports folder [Reporting Services]
 ms.assetid: 3b23a382-13b8-4196-9a93-7fe62d03a63c
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1777c84f25373806c3aab4f1c05a0a676b78097f
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: db7ab6718c89132a0aabbfdda826db786628dc68
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="secure-my-reports"></a>Sécuriser Mes Rapports
   La fonctionnalité Mes Rapports offre un espace géré par l'utilisateur pour utiliser des rapports. Pour remplir sa fonction, le dossier Mes Rapports nécessite des autorisations moins restrictives que d'autres dossiers d'utilisation générale. Les utilisateurs qui disposent uniquement d'autorisations d'affichage et d'exécution de rapports dans d'autres dossiers peuvent nécessiter un ensemble étendu d'autorisations pour gérer leurs dossiers Mes rapports et leurs contenus. [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] offre une attribution et une définition de rôles spécialisées à cette fin.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/09/2018
   
  Une attribution de rôle **Mes Rapports** se compose des éléments suivants :  
   
--   Le dossier Mes rapports de l’utilisateur, qui se trouve dans Dossiers des utilisateurs\\*\<nom_utilisateur>*\Mes Rapports.  
+-   Le dossier Mes rapports de l’utilisateur, qui se trouve dans Dossiers des utilisateurs\\*\<nom_utilisateur>* \Mes Rapports.  
   
 -   Le compte d'utilisateur, qui est déterminé lors de l'activation du dossier Mes Rapports. Un dossier est activé lorsqu'un utilisateur clique sur un dossier Mes Rapports dans le Gestionnaire de rapports ou lorsqu'il publie un rapport dans un dossier Mes Rapports depuis le Gestionnaire de rapports. Ce dossier est également activé lorsqu'un utilisateur demande des propriétés sur le lien Mes Rapports.  
   

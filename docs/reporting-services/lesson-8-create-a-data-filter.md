@@ -1,28 +1,27 @@
 ---
-title: "Leçon 8 : créer un filtre de données | Microsoft Docs"
-ms.custom: 
+title: 'Leçon 8 : créer un filtre de données | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/18/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: 19ccbdba-e3da-40a4-b652-32c628cf32e5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 906e435e8259a1d32c84f322795001f8ea38c8a7
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 5e6e2976cb21c2c6b1bd559282dcbfb1e403a9b3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-8-create-a-data-filter"></a>Leçon 8 : créer un filtre de données
 Après avoir ajouté une action d'extraction dans le rapport parent, l'étape suivante consiste à créer un filtre de données pour la table de données que vous avez définie pour le rapport enfant.  

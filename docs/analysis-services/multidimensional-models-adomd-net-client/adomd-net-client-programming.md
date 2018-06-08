@@ -1,32 +1,19 @@
 ---
 title: Programmation du Client ADOMD.NET | Documents Microsoft
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- programming [ADOMD.NET]
-- ADOMD.NET, programming
-ms.assetid: 55156115-ecd1-4ed9-876e-23406af9bbf9
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: adomd
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 453848d922a5e2a88258922f764403cf4126de12
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: fbef1da93d4edd44cedbf89ef52133a22b5bb6d9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="adomdnet-client-programming"></a>Programmation du client ADOMD.NET
   Les composants clients ADOMD.NET résident dans le **Microsoft.AnalysisServices.AdomdClient** espace de noms (dans microsoft.analysisservices.adomdclient.dll). Ces composants clients offrent les fonctionnalités de client et les applications de couche intermédiaire pour interroger facilement les données et les métadonnées à partir d’une banque de données analytiques, telles que [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  

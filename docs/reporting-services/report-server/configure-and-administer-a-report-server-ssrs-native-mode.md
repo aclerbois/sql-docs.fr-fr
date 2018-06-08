@@ -1,16 +1,15 @@
 ---
 title: Configurer et administrer un serveur de rapports (SSRS en mode natif) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/18/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Reporting Services, components
 - deploying [Reporting Services], component options
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - components [Reporting Services], configuring
 - configuring servers [Reporting Services]
 ms.assetid: cfec012b-56f1-4346-9814-247acf22351c
-caps.latest.revision: "51"
+caps.latest.revision: 51
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 65416cceeafdb2664cc45b5accf6488dd9bab13b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: ca2bbc7549a2616195061a5079918f236e963e28
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34550030"
 ---
 # <a name="configure-and-administer-a-report-server-ssrs-native-mode"></a>Configurer et administrer un serveur de rapports (SSRS en mode natif)
   Cette rubrique récapitule les approches que vous pouvez utiliser pour configurer [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Elle inclut également une liste de rubriques qui expliquent comment configurer des composants, des fonctions ou des fonctionnalités de serveur spécifiques. Pour configurer [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], vous pouvez :  
@@ -62,7 +61,6 @@ ms.lasthandoff: 01/09/2018
  Décrit comment configurer un compte d'utilisateur de manière à traiter les rapports en mode sans assistance.  
   
 ## <a name="see-also"></a> Voir aussi  
- [Configurer l'accès au Générateur de rapports](../../reporting-services/report-server/configure-report-builder-access.md)   
  [Fichiers de configuration de Reporting Services](../../reporting-services/report-server/reporting-services-configuration-files.md)   
  [Gestionnaire de configuration de Reporting Services &#40;mode natif&#41;](../../reporting-services/install-windows/reporting-services-configuration-manager-native-mode.md)   
  [Sécurité et protection de Reporting Services](../../reporting-services/security/reporting-services-security-and-protection.md)   

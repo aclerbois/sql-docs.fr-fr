@@ -1,34 +1,32 @@
 ---
-title: "Défaillances possibles pendant les sessions entre les réplicas de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Défaillances possibles pendant les sessions entre les réplicas de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting [SQL Server], HADR
 - Availability Groups [SQL Server], availability replicas
 - Availability Groups [SQL Server], troubleshooting
 ms.assetid: cd613898-82d9-482f-a255-0230a6c7d6fe
-caps.latest.revision: "12"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e1532ade775800e7688fca8efa844ba535b95bab
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 98d427d6b298fea4408682f52e9839814e5ecbab
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769255"
 ---
 # <a name="possible-failures-during-sessions-between-availability-replicas-sql-server"></a>Défaillances possibles pendant les sessions entre les réplicas de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Des problèmes physiques, de système d’exploitation ou [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] peuvent provoquer un échec dans une session entre deux réplicas de disponibilité. Un réplica de disponibilité ne contrôle pas régulièrement les composants sur lesquels Sqlservr.exe s'appuie pour vérifier s'ils fonctionnent correctement ou s'ils ont échoué. Toutefois, pour certains types d'échecs, le composant affecté signale une erreur à Sqlservr.exe. Une erreur signalée par un autre composant est appelée *erreur matérielle*. Pour détecter les autres erreurs qui passeraient sinon inaperçues, [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] implémente son propre mécanisme de délai d'expiration de session. Spécifie le délai d'expiration de la session en secondes. Ce délai d'attente est la durée maximale pendant laquelle une instance de serveur attend de recevoir un message PING d'une autre instance avant de considérer que cette dernière est déconnectée. Quand un délai d’expiration de session se produit entre deux réplicas de disponibilité, les réplicas de disponibilité partent du principe qu’une erreur s’est produite et déclarent une *erreur logicielle*.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Des problèmes physiques, de système d'exploitation ou [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] peuvent provoquer un échec dans une session entre deux réplicas de disponibilité. Un réplica de disponibilité ne contrôle pas régulièrement les composants sur lesquels Sqlservr.exe s'appuie pour vérifier s'ils fonctionnent correctement ou s'ils ont échoué. Toutefois, pour certains types d'échecs, le composant affecté signale une erreur à Sqlservr.exe. Une erreur signalée par un autre composant est appelée *erreur matérielle*. Pour détecter les autres erreurs qui passeraient sinon inaperçues, [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] implémente son propre mécanisme de délai d'expiration de session. Spécifie le délai d'expiration de la session en secondes. Ce délai d'attente est la durée maximale pendant laquelle une instance de serveur attend de recevoir un message PING d'une autre instance avant de considérer que cette dernière est déconnectée. Quand un délai d’expiration de session se produit entre deux réplicas de disponibilité, les réplicas de disponibilité partent du principe qu’une erreur s’est produite et déclarent une *erreur logicielle*.  
   
 > [!IMPORTANT]  
 >  Les défaillances dans les bases de données autres que la base de données primaire ne sont pas détectables. En outre, il est peu vraisemblable qu'une défaillance du disque de données soit détectée, sauf si la base de données est redémarrée en raison de la défaillance d'un disque de données.  

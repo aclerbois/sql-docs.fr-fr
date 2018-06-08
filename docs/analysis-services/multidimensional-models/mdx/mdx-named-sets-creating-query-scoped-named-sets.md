@@ -1,34 +1,23 @@
 ---
-title: "Création d’étendue de requête de jeux nommés (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- query-scoped named sets [MDX]
-- WITH keyword
-ms.assetid: 78bc1e9a-1bc4-4a5a-ab0b-cf430c8fbfe1
-caps.latest.revision: 
-author: Minewiskan
+title: Création d’étendue de requête de jeux nommés (MDX) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: ee0964b6db7b8443d22ba850b84d451e14972937
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9b30ba12d229f0c045d7a08a71c97a98de67a2bd
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-named-sets---creating-query-scoped-named-sets"></a>MDX jeux - création d’étendue de requête nommé de jeux nommés
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Si un jeu nommé n'est nécessaire que pour une seule requête MDX (Multidimensional Expressions), vous pouvez le définir à l'aide du mot clé WITH. Un jeu nommé créé à l'aide du mot clé WITH n'existe plus une fois que l'exécution de la requête est terminée.  
+  Si un jeu nommé n'est nécessaire que pour une seule requête MDX (Multidimensional Expressions), vous pouvez le définir à l'aide du mot clé WITH. Un jeu nommé créé à l'aide du mot clé WITH n'existe plus une fois que l'exécution de la requête est terminée.  
   
  Comme l'explique cette rubrique, la syntaxe de WITH est très souple, et accepte même l'utilisation de fonctions pour définir le jeu nommé.  
   
@@ -100,7 +89,7 @@ FROM Sales
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instruction SELECT &#40; MDX &#41;](../../../mdx/mdx-data-manipulation-select.md)   
- [Création d’étendue de Session nommée Jeux &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-named-sets-creating-session-scoped-named-sets.md)  
+ [Instruction SELECT & #40 ; MDX & #41 ;](../../../mdx/mdx-data-manipulation-select.md)   
+ [Création d’étendue de Session nommée Jeux & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-named-sets-creating-session-scoped-named-sets.md)  
   
   

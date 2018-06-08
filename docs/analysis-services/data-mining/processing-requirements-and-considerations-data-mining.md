@@ -1,35 +1,23 @@
 ---
-title: "Le traitement de la configuration requise et considérations (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data mining [Analysis Services], objects
-- mining structures [Analysis Services], processing
-- mining models [Analysis Services], processing
-ms.assetid: f7331261-6f1c-4986-b2c7-740f4b92ca44
-caps.latest.revision: 
-author: Minewiskan
+title: Le traitement de la configuration requise et considérations (exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f55e2d47bcc8228111b35f86ec620a6623b68cad
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d4228f5ae90f7fdd2510787b6fca6ad10f7302e4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="processing-requirements-and-considerations-data-mining"></a>Exigences et considérations concernant le traitement (exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit quelques considérations techniques que vous devez garder à l'esprit lors du traitement des objets d'exploration de données. Pour une présentation générale du traitement et de la manière dont il s’applique à l’exploration de données, consultez [Traitement des objets d’exploration de données](../../analysis-services/data-mining/processing-data-mining-objects.md).  
+  Cette rubrique décrit quelques considérations techniques que vous devez garder à l'esprit lors du traitement des objets d'exploration de données. Pour une présentation générale du traitement et de la manière dont il s’applique à l’exploration de données, consultez [Traitement des objets d’exploration de données](../../analysis-services/data-mining/processing-data-mining-objects.md).  
   
  [Requêtes sur le magasin relationnel](#bkmk_QueryReqs)  
   
@@ -46,7 +34,7 @@ Cette rubrique décrit quelques considérations techniques que vous devez garder
   
  Lors du traitement du modèle, celui-ci ne relit pas les données à partir de la source de données, mais il récupère à la place un résumé des données à partir de la structure d'exploration de données. À l'aide du cube qui a été créé, ainsi que des données d'index et de cas mises en cache, le serveur crée des threads indépendants pour l'apprentissage des modèles.  
   
- Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui prennent en charge le traitement de modèles parallèles, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
+ Pour plus d’informations sur les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui prennent en charge le traitement de modèles parallèles, consultez [fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
   
 ##  <a name="bkmk_ProcessStructures"></a> Traitement des structures d'exploration de données  
  Une structure d'exploration de données peut être traitée avec tous les modèles dépendants, ou séparément. Le traitement d'une structure d'exploration de données séparément des modèles peut être utile lorsqu'il est envisagé que le traitement de certains modèles prenne beaucoup de temps et que vous souhaitez différer cette opération.  
@@ -94,8 +82,8 @@ Cette rubrique décrit quelques considérations techniques que vous devez garder
  Pour plus d’informations, consultez [Exporter et importer des objets d’exploration de données](../../analysis-services/data-mining/export-and-import-data-mining-objects.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
  [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)  
   
   

@@ -1,16 +1,14 @@
 ---
 title: Introduction aux codes (SQLXML 4.0) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - explicit schema mapping [SQLXML]
@@ -25,27 +23,27 @@ helpviewer_keywords:
 - executing updategrams [SQLXML]
 - implicit schema mapping
 ms.assetid: cfe24e82-a645-4f93-ab16-39c21f90cce6
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2dc3ce73bfe3da97e6567c1819eea34a8bc1dfaa
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6c3d51e64669f2410ca6e99926734b767dba1f45
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="introduction-to-updategrams-sqlxml-40"></a>Présentation des codes de mise à jour (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Vous pouvez modifier (insérer, mettre à jour ou supprimer) une base de données [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] à partir d’un XML existant de document à l’aide d’une mise à jour ou OPENXML [!INCLUDE[tsql](../../../includes/tsql-md.md)] (fonction).  
+  Vous pouvez modifier (insérer, mettre à jour ou supprimer) une base de données [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] à partir d’un XML existant de document à l’aide d’une mise à jour ou OPENXML [!INCLUDE[tsql](../../../includes/tsql-md.md)] (fonction).  
   
  La fonction OPENXML modifie une base de données en fragmentant le document XML existant et en fournissant un ensemble de lignes qui peut être passé à une instruction INSERT, UPDATE ou DELETE. Avec OPENXML, les opérations sont effectuées directement sur les tables de base de données. Par conséquent, OPENXML est particulièrement approprié partout où les fournisseurs d'ensembles de lignes, tels qu'une table, peuvent apparaître comme source.  
   
  Comme OPENXML, un code de mise à jour vous permet d'insérer, de mettre à jour ou de supprimer des données dans la base de données ; toutefois, un code de mise à jour fonctionne sur les vues XML fournies par le schéma XSD annoté (ou un XDR) ; par exemple, les mises à jour sont appliquées à la vue XML fournie par le schéma de mappage. Le schéma de mappage, à son tour, possède les informations nécessaires pour mapper des éléments et des attributs XML aux tables et colonnes de base de données correspondantes. Le code de mise à jour utilise ces informations de mappage pour mettre à jour les tables et colonnes de base de données.  
   
 > [!NOTE]  
->  Cette documentation suppose une connaissance suffisante des modèles et de la prise en charge des schémas de mappage dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Introduction aux schémas de XSD annoté &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md). Pour les applications héritées qui utilisent XDR, consultez [de schémas XDR annotés &#40; déconseillées dans SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
+>  Cette documentation suppose une connaissance suffisante des modèles et de la prise en charge des schémas de mappage dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Introduction aux schémas de XSD annoté & #40 ; SQLXML 4.0 & #41 ; ](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md). Pour les applications héritées qui utilisent XDR, consultez [de schémas XDR annotés &#40;déconseillé dans SQLXML 4.0&#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/annotated-xdr-schemas-deprecated-in-sqlxml-4-0.md).  
   
 ## <a name="required-namespaces-in-the-updategram"></a>Espace de noms requis dans le code de mise à jour  
  Les mots clés dans une mise à jour, telles que  **\<synchronisation >**,  **\<avant >**, et  **\<après >**, existe dans le **urn : schemas-microsoft-com-mise à jour** espace de noms. Le préfixe d'espace de noms employé est arbitraire. Dans cette documentation, le **updg** préfixe indique le **mise à jour** espace de noms.  
@@ -110,13 +108,13 @@ Vous pouvez modifier (insérer, mettre à jour ou supprimer) une base de donnée
   
  Si la mise à jour effectue une mise à jour complexe (par exemple, insertion d’enregistrements dans plusieurs tables en fonction de la relation parent-enfant qui est spécifié dans le schéma de mappage), vous devez fournir explicitement le schéma de mappage à l’aide de la **schéma de mappage** d’attribut sur lequel s’exécute la mise à jour.  
   
- Comme un code de mise à jour est un modèle, le chemin d'accès spécifié pour le schéma de mappage dans le code de mise à jour est relatif à l'emplacement du fichier modèle (relatif à l'emplacement où le code de mise à jour est stocké). Pour plus d’informations, consultez [spécifiant un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+ Comme un code de mise à jour est un modèle, le chemin d'accès spécifié pour le schéma de mappage dans le code de mise à jour est relatif à l'emplacement du fichier modèle (relatif à l'emplacement où le code de mise à jour est stocké). Pour plus d’informations, consultez [spécifiant un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
 ## <a name="element-centric-and-attribute-centric-mapping-in-updategrams"></a>Mappage centré sur les éléments et mappage centré sur les attributs dans les codes de mise à jour  
  Avec le mappage par défaut (lorsque le schéma de mappage n'est pas spécifié dans le code de mise à jour), les éléments de code de mise à jour sont mappés à des tables et les éléments enfants (dans le cas du mappage centré sur les éléments) et les attributs (dans le cas du mappage centré sur les attributs) sont mappés à des colonnes.  
   
 ### <a name="element-centric-mapping"></a>Mappage centré sur les éléments  
- Dans un code de mise à jour centré sur les éléments, un élément contient des éléments enfants qui désignent les propriétés de l'élément. Pour bénéficier d'un exemple, reportez-vous au code de mise à jour ci-dessous. Le  **\<Person.Contact >** élément contient le  **\<FirstName >**et  **\<LastName >** des éléments enfants. Ces éléments enfants sont des propriétés de la  **\<Person.Contact >** élément.  
+ Dans un code de mise à jour centré sur les éléments, un élément contient des éléments enfants qui désignent les propriétés de l'élément. Pour bénéficier d'un exemple, reportez-vous au code de mise à jour ci-dessous. Le  **\<Person.Contact >** élément contient le  **\<FirstName >** et  **\<LastName >** des éléments enfants. Ces éléments enfants sont des propriétés de la  **\<Person.Contact >** élément.  
   
  Étant donné que cette mise à jour ne spécifie pas un schéma de mappage, la mise à jour utilise un mappage implicite, où le  **\<Person.Contact >** élément est mappé à la table Person.Contact et ses éléments enfants mappent aux colonnes FirstName et LastName.  
   
@@ -180,6 +178,6 @@ Vous pouvez modifier (insérer, mettre à jour ou supprimer) une base de donnée
 -   En le soumettant sous la forme d'une commande OLE DB.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

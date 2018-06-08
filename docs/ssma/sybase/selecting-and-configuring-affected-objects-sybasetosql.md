@@ -1,31 +1,30 @@
 ---
-title: "Sélectionner et configurer les objets (SybaseToSQL) affectés | Documents Microsoft"
-ms.custom: 
+title: Sélectionner et configurer les objets (SybaseToSQL) affectés | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Tester Component,Affected Objects
+helpviewer_keywords:
+- Tester Component,Affected Objects
 ms.assetid: a219df74-543a-4aec-aeeb-79f90ac3e2ee
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 102de8f523d91c34369ca84a4577e5978934349d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d3e5c6c428668ee3b705da29883f1f8769064a18
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selecting-and-configuring-affected-objects-sybasetosql"></a>Sélectionner et configurer les objets (SybaseToSQL) affectés
 Sur cette page, vous pouvez sélectionner les tables et les clés étrangères, les modifications dans lequel doivent être comparés quand SSMA vérifie les résultats de l’exécution pour les objets sélectionnés dans l’étape précédente. En outre, vous pouvez personnaliser les paramètres de vérification.  
@@ -35,7 +34,7 @@ Dans l’arborescence d’objets Sybase situé sur le côté gauche de la fenêt
   
 Si le testeur de SSMA ne peut pas vérifier la valeur d’un de ces objets, vous verrez le lien **certains des objets sélectionnés contiennent des erreurs** sous l’arborescence d’objets. Cliquez sur ce lien pour afficher les raisons pour lesquelles ces objets ne peuvent pas être comparées et pour effacer la sélection d’objets incorrectes.  
   
-## <a name="table"></a>Table de charge de travail  
+## <a name="table"></a>Table  
 L’onglet de la Table contient l’affichage de grille de la table sélectionnée. La grille contient les informations suivantes sur la table sélectionnée :  
   
 -   Nom de la colonne  
@@ -48,9 +47,9 @@ L’onglet de la Table contient l’affichage de grille de la table sélectionn�
   
 -   Règle  
   
--   Valeur par défaut  
+-   Par défaut  
   
--   Identity  
+-   Identité  
   
 -   Nullable  
   
@@ -124,9 +123,9 @@ Vous pouvez afficher les instructions SELECT, générées par le testeur de SSMA
 Vous pouvez modifier les instructions SELECT pour fournir une vérification personnalisée. Pour enregistrer les modifications dans Sybase et dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] instructions, utilisez le **appliquer** boutons sous la source et la cible SQL, en conséquence.  
   
 ## <a name="next-step"></a>Étape suivante  
-[Personnalisation des appels ordre &#40; SybaseToSQL &#41;](../../ssma/sybase/customizing-calls-order-sybasetosql.md)  
+[Personnalisation des appels ordre &#40;SybaseToSQL&#41;](../../ssma/sybase/customizing-calls-order-sybasetosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Exécuter des cas de Test &#40; SybaseToSQL &#41;](../../ssma/sybase/running-test-cases-sybasetosql.md)  
-[Test de migration des objets de base de données &#40; SybaseToSQL &#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
+[Exécuter des cas de Test &#40;SybaseToSQL&#41;](../../ssma/sybase/running-test-cases-sybasetosql.md)  
+[Test de migration des objets de base de données &#40;SybaseToSQL&#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
   

@@ -1,30 +1,30 @@
 ---
-title: "Paramètres table (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Paramètres table (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-table-valued-parameters
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - table-valued parameters (ODBC)
 - ODBC, table-valued parameters
 ms.assetid: ef06cd13-18e2-4c65-8ede-c3955d820e54
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ddf538c325283ad20c0e75ee73c49799fe890404
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8f8c0f95a894b92c3522fa98d4022d28540d4a29
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707297"
 ---
 # <a name="table-valued-parameters-odbc"></a>Paramètres table (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -32,7 +32,7 @@ ms.lasthandoff: 01/24/2018
 
   La prise en charge des paramètres table par ODBC permet à une application cliente d'envoyer plus efficacement des données paramétrables au serveur par l'envoi de plusieurs lignes au serveur en un seul appel.  
   
- Pour plus d’informations sur les paramètres table sur le serveur, consultez [utiliser des paramètres table &#40; moteur de base de données &#41;](../../relational-databases/tables/use-table-valued-parameters-database-engine.md).  
+ Pour plus d’informations sur les paramètres table sur le serveur, consultez [utiliser des paramètres &#40;moteur de base de données&#41;](../../relational-databases/tables/use-table-valued-parameters-database-engine.md).  
   
  Dans ODBC, vous pouvez envoyer des paramètres table au serveur de deux manières :  
   
@@ -87,7 +87,7 @@ ms.lasthandoff: 01/24/2018
  Décrit comment réaliser des tâches courantes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
- [Paramètres table &#40; SQL Server Native Client &#41;](../../relational-databases/native-client/features/table-valued-parameters-sql-server-native-client.md)  
+ [SQL Server Native Client &#40;ODBC&#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
+ [Paramètres table &#40;SQL Server Native Client&#41;](../../relational-databases/native-client/features/table-valued-parameters-sql-server-native-client.md)  
   
   

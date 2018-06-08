@@ -2,32 +2,32 @@
 title: Configuration requise pour l’application web (Master Data Services) | Microsoft Docs
 ms.custom: ''
 ms.date: 02/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: ''
-ms.component: install-windows
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 keywords:
 - master data services
 ms.assetid: 9455d3cf-c1b7-4d48-8aff-7dc636ed5dc3
-caps.latest.revision: ''
+caps.latest.revision: 40
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ac07d3f1214c151f44e10ffafcf09159403363f0
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 5db1d056725fee435c3e56c7715e7f1ac02695c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="web-application-requirements-master-data-services"></a>Configuration requise pour l'application Web (Master Data Services)
-  [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] est une application Web hébergée par IIS (Internet Information Services). [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] fonctionne uniquement dans Internet Explorer 9 ou version ultérieure. Internet Explorer 8 et versions antérieures, Microsoft Edge et Chrome ne sont pas pris en charge.  
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
+  [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] est une application web hébergée par IIS (Internet Information Services). [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] fonctionne uniquement dans Internet Explorer 9 ou version ultérieure. Internet Explorer 8 et versions antérieures, Microsoft Edge et Chrome ne sont pas pris en charge.  
 
 **Pour obtenir des instructions sur la façon d’installer et de configurer IIS**, consultez [Installation et configuration d’IIS](../../master-data-services/master-data-services-installation-and-configuration.md#InstallIIS).
   

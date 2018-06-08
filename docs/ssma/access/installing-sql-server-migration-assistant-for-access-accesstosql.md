@@ -1,16 +1,15 @@
 ---
-title: "L’installation de SQL Server Migration Assistant pour Access (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: L’installation de SQL Server Migration Assistant pour Access (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 08/15/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -28,28 +27,28 @@ helpviewer_keywords:
 - uninstalling SSMA
 - upgrading SSMA
 ms.assetid: dd50eebd-75df-4e0d-8c4d-88b511aae4c7
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 0ed2247057865624d0e365a5cac24e390295975a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 39c6aef71584fbc3a50ec8611ead82ff5ad9f351
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34709087"
 ---
 # <a name="installing-sql-server-migration-assistant-for-access-accesstosql"></a>L’installation de SQL Server Migration Assistant pour Access (AccessToSQL)
-[!INCLUDE[msCoName](../../includes/msconame_md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Migration Assistant (SSMA) pour l’accès est installé à l’aide d’un Assistant basé sur le programme d’installation de Windows. Cette rubrique fournit des informations sur les conditions préalables d’installation, un lien vers la version la plus récente de SSMA et des instructions pour l’installation, la gestion de licences, la désinstallation et la mise à niveau de SSMA.  
+[!INCLUDE[msCoName](../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Migration Assistant (SSMA) pour l’accès est installé à l’aide d’un Assistant basé sur le programme d’installation de Windows. Cette rubrique fournit des informations sur les conditions préalables d’installation, un lien vers la version la plus récente de SSMA et des instructions pour l’installation, la gestion de licences, la désinstallation et la mise à niveau de SSMA.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Avant d’installer SSMA, assurez-vous que votre système répond aux exigences suivantes :  
   
 -   Windows 7 ou une version ultérieure, ou Windows Server 2008 ou une version ultérieure.  
   
--   [!INCLUDE[msCoName](../../includes/msconame_md.md)]Windows Installer 3.1 ou une version ultérieure.  
+-   [!INCLUDE[msCoName](../../includes/msconame_md.md)] Windows Installer 3.1 ou une version ultérieure.  
   
--   Le [!INCLUDE[msCoName](../../includes/msconame_md.md)] .NET Framework version 4.0 ou version ultérieure. Le .NET Framework version 4.0 est disponible sur le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] du produit et à l’aide des informations contenues dans le [Guide de Microsoft .NET](https://docs.microsoft.com/en-us/dotnet/framework/).
+-   Le [!INCLUDE[msCoName](../../includes/msconame_md.md)] .NET Framework version 4.0 ou version ultérieure. Le .NET Framework version 4.0 est disponible sur le [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] du produit et à l’aide des informations contenues dans le [Guide de Microsoft .NET](https://docs.microsoft.com/dotnet/framework/).
   
 -   Accès à et autorisations suffisantes sur l’ordinateur qui héberge l’instance cible de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]base de données SQL Azure à laquelle vous migrerez des objets de base de données et les données.  
   
@@ -69,7 +68,7 @@ Après avoir téléchargé la dernière version, vous devez extraire les fichier
   
 **Pour installer SSMA**  
   
-1.  Double-cliquez sur SSMA pour Access  *n* .msi, où  *n*  est le numéro de build.  
+1.  Double-cliquez sur SSMA pour Access *n*.msi, où *n* est le numéro de build.  
   
 2.  Dans la page d’accueil, cliquez sur **suivant**.  
   

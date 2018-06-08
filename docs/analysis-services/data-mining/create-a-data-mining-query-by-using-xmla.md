@@ -1,31 +1,23 @@
 ---
-title: "Créer une requête d’exploration de données à l’aide de XMLA | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: content queries [DMX]
-ms.assetid: 8f6b6008-006c-4792-9bd1-64c30dc3fd41
-caps.latest.revision: "11"
-author: Minewiskan
+title: Créer une requête d’exploration de données à l’aide de XMLA | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fa60ad8ee91839e04c424c5fe2d23723e495bbd4
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: a786279915b38abb93941d7485f2b8c3a3413d6f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-data-mining-query-by-using-xmla"></a>Créer une requête d’exploration de données en utilisant XMLA
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Vous pouvez créer diverses requêtes sur les objets d’exploration de données à l’aide d’AMO, DMX ou XML/a.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Vous pouvez créer diverses requêtes sur les objets d'exploration de données en utilisant AMO, DMX ou XML/A.  
   
  XML est utilisé pour les communications entre le serveur Analysis Services et tous les clients. Par conséquent, bien qu'il soit en général beaucoup plus facile de créer des requêtes de contenu à l'aide de DMX, vous pouvez écrire des requêtes à l'aide des instructions DISCOVER et COMMAND en XML/A, en utilisant un client qui prend en charge le protocole SOAP ou en créant une requête XML/A dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
   
@@ -104,7 +96,7 @@ ms.lasthandoff: 01/08/2018
      Le volet Résultats affiche la définition de schéma ainsi que les valeurs du modèle spécifié.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
- [Ensembles de lignes de schéma d’exploration de données](../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Contenu du modèle d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
+ [Ensembles de lignes de schéma de données d’exploration de données](../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

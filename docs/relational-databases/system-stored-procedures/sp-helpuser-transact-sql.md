@@ -1,16 +1,14 @@
 ---
 title: sp_helpuser (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helpuser
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_helpuser
 ms.assetid: 9c70b41d-ef4c-43df-92da-bd534c287ca1
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2dcf314d52fd7d20dae8ad8ddb163a331a89d52c
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 343439dd04f9f74c0a5444afef25921072d9d14c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpuser-transact-sql"></a>sp_helpuser (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -79,7 +76,7 @@ sp_helpuser [ [ @name_in_db = ] 'security_account' ]
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**Nom_rôle**|**sysname**|Nom du rôle dans la base de données en cours.|  
+|**nom_rôle**|**sysname**|Nom du rôle dans la base de données en cours.|  
 |**Role_id**|**smallint**|ID du rôle dans la base de données en cours.|  
 |**Users_in_role**|**sysname**|Membre du rôle dans la base de données en cours.|  
 |**ID d’utilisateur**|**smallint**|ID d'utilisateur du membre du rôle.|  
@@ -87,7 +84,7 @@ sp_helpuser [ [ @name_in_db = ] 'security_account' ]
 ## <a name="remarks"></a>Notes  
  Pour afficher des informations sur l’appartenance des rôles de base de données, utilisez [sys.database_role_members](../../relational-databases/system-catalog-views/sys-database-role-members-transact-sql.md). Pour afficher plus d’informations sur les membres du rôle serveur, utilisez [sys.server_role_members](../../relational-databases/system-catalog-views/sys-server-role-members-transact-sql.md)et pour afficher des informations sur les entités de niveau serveur, utilisez [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  
   
  Les informations retournées sont sujettes à des restrictions d'accès aux métadonnées. Les entités sur lesquelles le principal ne possède pas d'autorisation n'apparaissent pas. Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
@@ -116,7 +113,7 @@ EXEC sp_helpuser 'db_securityadmin';
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [Principaux &#40;moteur de base de données&#41;](../../relational-databases/security/authentication-access/principals-database-engine.md)   
  [sys.database_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md)   

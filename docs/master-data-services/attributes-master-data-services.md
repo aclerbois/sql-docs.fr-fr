@@ -1,17 +1,16 @@
 ---
 title: Attributs (Master Data Services) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - free-form attributes [Master Data Services]
 - attributes [Master Data Services], about attributes
@@ -20,18 +19,20 @@ helpviewer_keywords:
 - attributes [Master Data Services], free-form attributes
 - attributes [Master Data Services]
 ms.assetid: 95ecb75f-c559-41c3-933c-40ae60a4c2fd
-caps.latest.revision: 
+caps.latest.revision: 13
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5263182c1415e0c9919bee467c491e77ad3e239e
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 81d4d5da90f6e1309b156cc80628a40bcb519775
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="attributes-master-data-services"></a>Attributs (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Les attributs sont des objets contenus dans des entités [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] . Les valeurs d'attribut décrivent les membres de l'entité. Un attribut peut être utilisé pour décrire un membre feuille, un membre consolidé ou une collection.  
   
 ## <a name="how-attributes-relate-to-other-model-objects"></a>Relations entre les attributs et les autres objets de modèle  

@@ -1,31 +1,27 @@
 ---
-title: "Planifier et exécuter des séquences de restauration (mode de récupération complète) | Microsoft Docs"
-ms.custom: 
+title: Planifier et exécuter des séquences de restauration (mode de récupération complète) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - restore sequences [SQL Server], planning for
 - full recovery model [SQL Server], planning restore sequences
 ms.assetid: 9cbefaf8-d2b6-41c9-83fc-b3807a841fe2
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: df70e2b5fce0983fa3501b6bd53376f75d10d900
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 9b76cce7b1944da1e00c423de448628ae42614a3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="plan-and-perform-restore-sequences-full-recovery-model"></a>Planifier et exécuter des séquences de restauration (mode de récupération complète)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

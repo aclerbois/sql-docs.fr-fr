@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsBatchUpdates (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsBatchUpdates (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsBatchUpdates
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsBatchUpdates
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 47b7b0da-e467-465a-aa19-bc702efcfaa0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6de93949b0c50e25159ee1b848e0f3a807b62696
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d73b2dd6e6a9e68cbb8eca62a051a0814895ecd0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsbatchupdates-method-sqlserverdatabasemetadata"></a>Méthode supportsBatchUpdates (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

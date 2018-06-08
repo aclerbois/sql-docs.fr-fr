@@ -1,31 +1,28 @@
 ---
 title: Commande flux | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - command streams [ADO]
 - streams [ADO], command
 ms.assetid: 0ac09dbe-2665-411e-8fbb-d1efe6c777be
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b7564f349c25fda5d39f977320937b2515bb9dfd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a98dc21338ef492aa126e70cc28bc636acb2b91b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-streams"></a>Flux de commande
 ADO a toujours pris en charge d’entrée de commande sous forme de chaîne spécifiée par le **CommandText** propriété. En guise d’alternative, avec ADO 2.7 ou version ultérieure, vous pouvez également utiliser un flux d’informations pour l’entrée de commande en affectant le flux à la **CommandStream** propriété. Vous pouvez affecter un ADO **flux** objet, ou tout objet qui prend en charge le modèle COM **IStream** interface.  

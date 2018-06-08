@@ -1,17 +1,16 @@
 ---
-title: "Prise en charge d’Unicode et du classement | Microsoft Docs"
-ms.custom: 
+title: Prise en charge d’Unicode et du classement | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: collations
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - binary collations [SQL Server]
 - expression-level collations [SQL Server]
@@ -30,20 +29,21 @@ helpviewer_keywords:
 - SQL Server collations
 - server-level collations [SQL Server]
 ms.assetid: 92d34f48-fa2b-47c5-89d3-a4c39b0f39eb
-caps.latest.revision: 
+caps.latest.revision: 46
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9c7e1e6997db9f93ea0145169a1f40b79ca93ea1
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 25b36b25efbb7c99d3595da26587007f784bfc25
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708037"
 ---
 # <a name="collation-and-unicode-support"></a>Prise en charge d’Unicode et du classement
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Les classements dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournissent les règles de tri et les propriétés de respect de la casse et des accents pour vos données. Les classements utilisés avec les types de données character, tels que **char** et **varchar** , déterminent la page de codes et les caractères correspondants qui peuvent être représentés pour ce type de données. Qu’il s’agisse d’installer une nouvelle instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], de restaurer une sauvegarde de base de données ou de connecter un serveur à des bases de données clientes, vous devez bien comprendre les exigences en termes de paramètres régionaux, d’ordre de tri et de respect de la casse et des accents des données que vous utilisez. Pour répertorier les classements disponibles sur votre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [sys.fn_helpcollations &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-helpcollations-transact-sql.md).    
+  Les classements dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournissent les règles de tri et les propriétés de respect de la casse et des accents pour vos données. Les classements utilisés avec les types de données character, tels que **char** et **varchar** , déterminent la page de codes et les caractères correspondants qui peuvent être représentés pour ce type de données. Qu’il s’agisse d’installer une nouvelle instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], de restaurer une sauvegarde de base de données ou de connecter un serveur à des bases de données clientes, vous devez bien comprendre les exigences en termes de paramètres régionaux, d’ordre de tri et de respect de la casse et des accents des données que vous utilisez. Pour répertorier les classements disponibles sur votre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [sys.fn_helpcollations &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-helpcollations-transact-sql.md).    
     
  Quand vous sélectionnez un classement pour votre serveur, base de données, colonne ou expression, vous assignez certaines caractéristiques à vos données qui affectent les résultats de nombreuses opérations dans la base de données. Par exemple, lorsque vous construisez une requête à l'aide d'ORDER BY, l'ordre de tri de votre jeu de résultats peut dépendre du classement appliqué à la base de données ou stipulé dans une clause COLLATE au niveau expression de la requête.    
     
@@ -62,7 +62,7 @@ Les classements dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] f
 ###  <a name="Collation_Defn"></a> Classement    
  Un classement désigne les modèles binaires qui représentent chaque caractère dans un jeu de données. Les classements déterminent également les règles de tri et de comparaison des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge le stockage d’objets ayant des classements différents dans une même base de données. Pour les colonnes non-Unicode, le paramètre de classement spécifie la page de codes pour les données et les caractères qui peuvent être représentés. Les données déplacées entre des colonnes non-Unicode doivent être converties de la page de codes source vers la page de codes de destination.    
     
- [!INCLUDE[tsql](../../includes/tsql-md.md)] peut varier lorsque cette dernière est exécutée dans un contexte réunissant plusieurs bases de données dont chacune a un paramètre de classement différent. Dans la mesure du possible, choisissez un classement normalisé pour votre organisation. De cette manière, vous n'avez pas à spécifier explicitement le classement dans chaque caractère ou expression Unicode. Si vous devez utiliser des objets qui ont des paramètres de classement et de page de codes différents, codez vos requêtes conformément aux règles de priorité des classements. Pour plus d’informations, consultez [Priorité de classement (Transact-SQL)](../../t-sql/statements/collation-precedence-transact-sql.md).    
+ Le résultat d'une instruction[!INCLUDE[tsql](../../includes/tsql-md.md)] peut varier lorsque cette dernière est exécutée dans un contexte réunissant plusieurs bases de données dont chacune a un paramètre de classement différent. Dans la mesure du possible, choisissez un classement normalisé pour votre organisation. De cette manière, vous n'avez pas à spécifier explicitement le classement dans chaque caractère ou expression Unicode. Si vous devez utiliser des objets qui ont des paramètres de classement et de page de codes différents, codez vos requêtes conformément aux règles de priorité des classements. Pour plus d’informations, consultez [Priorité de classement (Transact-SQL)](../../t-sql/statements/collation-precedence-transact-sql.md).    
     
  Les options associées à un classement sont le respect de la casse, le respect des accents, le respect du jeu de caractères Kana, le respect de la largeur et le respect du sélecteur de variante. Pour spécifier ces options, vous devez les ajouter au nom du classement. Par exemple, le classement `Japanese_Bushu_Kakusu_100_CS_AS_KS_WS` respecte la casse, les accents, le jeu de caractères Kana et la largeur. Autre exemple : le classement `Japanese_Bushu_Kakusu_140_CI_AI_KS_WS_VSS` ne respecte pas la casse, ne respecte pas les accents, respecte le jeu de caractères Kana, respecte la largeur et respecte le sélecteur de variante.  Le tableau suivant décrit le comportement associé à ces différentes options.    
     
@@ -85,7 +85,7 @@ Les classements dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] f
  Il existe deux types de classements binaires dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les anciens classements **BIN** et les nouveaux classements **BIN2** . Dans un classement **BIN2** tous les caractères sont triés en fonction de leurs points de code. Dans un classement **BIN** seul le premier caractère est trié selon le point de code, et les autres caractères sont triés en fonction de leurs valeurs d'octet. (En raison de l'architecture little endian de la plateforme Intel, les caractères de code Unicode sont toujours triés inversés par octet.)    
     
  classements SQL Server    
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Les classements (SQL_*) fournissent la compatibilité d’ordre de tri avec les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les règles de tri du dictionnaire pour les données non-Unicode ne sont pas compatibles avec les routines de tri fournies par les systèmes d'exploitation Windows. Toutefois, le tri de données Unicode est compatible avec une version particulière de règles de tri Windows. Comme les classements [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisent des règles de comparaison différentes pour les données Unicode et non-Unicode, vous pouvez obtenir des résultats différents pour des comparaisons des mêmes données, selon le type de données sous-jacent. Pour plus d’informations, consultez [Nom du classement SQL Server &#40;Transact-SQL&#41;](../../t-sql/statements/sql-server-collation-name-transact-sql.md).    
+ Les classements (SQL_*)[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournissent la compatibilité d'ordre de tri avec les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les règles de tri du dictionnaire pour les données non-Unicode ne sont pas compatibles avec les routines de tri fournies par les systèmes d'exploitation Windows. Toutefois, le tri de données Unicode est compatible avec une version particulière de règles de tri Windows. Comme les classements [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisent des règles de comparaison différentes pour les données Unicode et non-Unicode, vous pouvez obtenir des résultats différents pour des comparaisons des mêmes données, selon le type de données sous-jacent. Pour plus d’informations, consultez [Nom du classement SQL Server &#40;Transact-SQL&#41;](../../t-sql/statements/sql-server-collation-name-transact-sql.md).    
     
 > [!NOTE]    
 >  Lorsque vous mettez à niveau une instance anglaise [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous pouvez spécifier les classements (SQL_*) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour permettre la compatibilité avec les instances [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] existantes. Le classement par défaut d'une instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] étant défini au cours de la procédure d'installation, assurez-vous de spécifier soigneusement les paramètres de classement dans les cas suivants :    

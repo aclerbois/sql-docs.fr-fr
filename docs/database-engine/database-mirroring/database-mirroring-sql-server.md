@@ -1,16 +1,15 @@
 ---
-title: "Mise en miroir de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/16/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - partners [SQL Server]
 - standby servers [SQL Server]
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - mirror database [SQL Server]
 - mirror server [SQL Server] See database mirroring
 ms.assetid: a7f95ddc-5154-4ed5-8117-c9fcf2221f13
-caps.latest.revision: "125"
+caps.latest.revision: 125
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 019751fa1dc2775fc38206d8e98e41283a44bd72
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 712819b1e2e3b2e81d0fa30b7178c03f31c04f24
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-sql-server"></a>Mise en miroir de bases de données (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

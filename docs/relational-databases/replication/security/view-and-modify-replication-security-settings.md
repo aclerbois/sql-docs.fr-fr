@@ -1,17 +1,16 @@
 ---
-title: "Afficher et modifier les paramètres de sécurité de la réplication | Microsoft Docs"
-ms.custom: 
+title: Afficher et modifier les paramètres de sécurité de la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - modifying replication security settings
 - replication [SQL Server], security
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - viewing replication security settings
 - security [SQL Server replication], modifying settings
 ms.assetid: 67d79532-1482-4de1-ac9f-4a23d162c85e
-caps.latest.revision: 
+caps.latest.revision: 47
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f33c2323a7570279d277764bc1706adb98c8a606
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 74bd2e6330318f73258279ea4c849f497baf1d82
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-and-modify-replication-security-settings"></a>Afficher et modifier les paramètres de sécurité de la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

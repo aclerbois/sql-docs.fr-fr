@@ -1,16 +1,14 @@
 ---
-title: "Données de type long et SQLSetPos et SQLBulkOperations | Documents Microsoft"
-ms.custom: 
+title: Données de type long et SQLSetPos et SQLBulkOperations | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - long data [ODBC]
 - SQLSetPos function [ODBC], long data and SQLBulkOperations
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - updating data [ODBC], long data
 - SQLBulkOperations function [ODBC], long data
 ms.assetid: e2fdf842-5e4c-46ca-bb21-4625c3324f28
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7684c15df244828211c2b87acd7314a7e05bea5e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0c5734480db4ac3b8098254a4c99dbf7a361ea3c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="long-data-and-sqlsetpos-and-sqlbulkoperations"></a>Données de type long et SQLSetPos et SQLBulkOperations
 Comme c’est le cas avec des paramètres dans les instructions SQL, les données de type long peuvent être envoyées lors de la mise à jour des lignes avec **SQLBulkOperations** ou **SQLSetPos** ou lors de l’insertion de lignes avec **SQLBulkOperations**. Les données sont envoyées dans des parties, avec plusieurs appels à **SQLPutData**. Les colonnes pour lesquelles les données sont envoyées au moment de l’exécution sont appelées *des colonnes de data-at-execution*.  

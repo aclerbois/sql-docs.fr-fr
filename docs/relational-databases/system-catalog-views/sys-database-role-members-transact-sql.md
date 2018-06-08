@@ -1,16 +1,14 @@
 ---
 title: Sys.database_role_members (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/31/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.database_role_members_TSQL
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.database_role_members catalog view
 ms.assetid: ed1b019d-ca48-4db3-85df-cf6d2db591cf
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: abe12465ae80a9373475a0158cdacc663b8f00fa
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ac347dbb4748c575b8f4388952a45315f28a5b01
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysdatabaserolemembers-transact-sql"></a>sys.database_role_members (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -43,7 +41,7 @@ ms.lasthandoff: 11/21/2017
 |**role_principal_id**|**int**|ID du principal de base de données du rôle.|  
 |**member_principal_id**|**int**|ID du principal de base de données du membre.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Tout utilisateur peut consulter sa propre appartenance au rôle. Pour afficher d’autres rôles appartenances nécessite l’appartenance dans le `db_securityadmin` rôle de base de données fixe ou `VIEW DEFINITION` sur la base de données.  
   
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  

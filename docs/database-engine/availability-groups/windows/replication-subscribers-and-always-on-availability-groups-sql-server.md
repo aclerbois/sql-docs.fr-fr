@@ -1,32 +1,28 @@
 ---
-title: "Abonnés de réplication et groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Abonnés de réplication et groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/08/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - failover subscribers with AlwaysOn
 - Availability Groups [SQL Server], interoperability
 - replication [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 0995f269-0580-43ed-b8bf-02b9ad2d7ee6
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 19
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6020be0ea9568611a0e427917bc02c2a3a53cc3a
-ms.sourcegitcommit: 657d18fc805512c9574b2fe7451310601b9d78cb
+ms.openlocfilehash: 0ae868a9446b7cc140b6af61362358bb784488b9
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769005"
 ---
 # <a name="replication-subscribers-and-always-on-availability-groups-sql-server"></a>Abonnés de réplication et groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

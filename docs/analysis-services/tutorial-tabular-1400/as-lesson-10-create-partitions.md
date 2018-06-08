@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 10 : créer des partitions | Documents Microsoft"
-description: "Décrit comment créer des partitions dans le projet du didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 10 : créer des partitions | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 417bcbe36a49c44bcb5c8297968e6595d1ed3d91
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfile"
+ms.openlocfilehash: 4bfa52e31f2e2fb46acf10bf6f6e02e7a15a3c15
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-partitions"></a>Créer des partitions
 
@@ -49,11 +41,11 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
 
 5.  Dans l’aperçu, cliquez sur la flèche vers le bas dans la **OrderDate** en-tête de colonne, puis cliquez sur **filtres de Date/heure** > **entre**.
 
-    ![as-lesson10-query-editor](../tutorial-tabular-1400/media/as-lesson10-query-editor.png)
+    ![en tant que-lesson10--éditeur de requête](../tutorial-tabular-1400/media/as-lesson10-query-editor.png)
 
 6.  Dans la boîte de dialogue Filtrer les lignes dans **afficher les lignes où : OrderDate**, laissez **est postérieur ou égal à**, puis dans le champ date, entrez **1/1/2010**. Laissez le **et** opérateur sélectionné, puis sélectionnez **avant**, puis dans le champ date, entrez **1/1/2011**, puis cliquez sur **OK**.
 
-    ![as-lesson10-filter-rows](../tutorial-tabular-1400/media/as-lesson10-filter-rows.png)
+    ![en tant que-lesson10-filtre-lignes](../tutorial-tabular-1400/media/as-lesson10-filter-rows.png)
     
     Notez dans l’éditeur de requête, dans les étapes appliquées, vous voyez une autre étape filtrée des lignes nommée. Ce filtre est de sélectionner uniquement les dates de commande à partir de 2010.
 
@@ -61,7 +53,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
 
     Dans le Gestionnaire de Partition, notez que maintenant l’expression de requête a une clause filtrée des lignes supplémentaire.
 
-    ![as-lesson10-query](../tutorial-tabular-1400/media/as-lesson10-query.png)
+    ![en tant que requête de lesson10](../tutorial-tabular-1400/media/as-lesson10-query.png)
   
     Cette instruction spécifie que cette partition doit inclure uniquement les données dans les lignes où OrderDate est l’année 2010 comme spécifié dans la clause de lignes filtrées.  
   
@@ -114,13 +106,13 @@ Dans le Gestionnaire de Partition, notez le **traités dernière** colonne pour 
   
 4.  Cochez la case dans la colonne **Traiter** pour chacune des cinq partitions que vous avez créées, puis cliquez sur **OK**.  
 
-    ![as-lesson10-process-partitions](../tutorial-tabular-1400/media/as-lesson10-process-partitions.png)
+    ![en tant que-lesson10-processus-partitions](../tutorial-tabular-1400/media/as-lesson10-process-partitions.png)
   
     Si vous êtes invité à entrer des informations d’identification d’emprunt d’identité, entrez le nom d’utilisateur Windows et un mot de passe spécifié dans la leçon 2.  
   
     La boîte de dialogue **Traitement des données** apparaît et affiche les détails du traitement pour chaque partition. Notez qu'un nombre de lignes différent est transféré pour chaque partition. Chaque partition contient uniquement les lignes de l’année spécifiée dans la clause WHERE dans l’instruction SQL. Quand le traitement est terminé, continuez et fermez la boîte de dialogue Traitement des données.  
   
-    ![as-lesson10-process-complete](../tutorial-tabular-1400/media/as-lesson10-process-complete.png)
+    ![en tant que-lesson10-processus-terminé](../tutorial-tabular-1400/media/as-lesson10-process-complete.png)
   
  ## <a name="whats-next"></a>Quelle est l’étape suivante ?
 

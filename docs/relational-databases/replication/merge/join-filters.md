@@ -1,33 +1,31 @@
 ---
 title: Filtres de jointure | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - filters [SQL Server replication], join
 - publications [SQL Server replication], join filters
 - merge replication join filters [SQL Server replication]
 - join filters
 ms.assetid: dd78fd8f-56e3-4582-9abd-6bc25c91e075
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a4e8494e274dc8f04aac972e7dd9bdfbc4f18baa
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 5776139f4f461070400ab05c09c5c484b1b077b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="join-filters"></a>Filtres de jointure
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

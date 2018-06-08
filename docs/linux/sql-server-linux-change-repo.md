@@ -1,24 +1,21 @@
 ---
-title: "Configurer des référentiels pour SQL Server sur Linux | Documents Microsoft"
-description: "Vérifier et configurer les référentiels sources pour 2017 du serveur SQL sur Linux. Le référentiel source a une incidence sur la version de SQL Server qui est appliquée pendant l’installation et mise à niveau."
+title: Configurer des référentiels pour SQL Server sur Linux | Documents Microsoft
+description: Vérifier et configurer les référentiels sources pour 2017 du serveur SQL sur Linux. Le référentiel source a une incidence sur la version de SQL Server qui est appliquée pendant l’installation et mise à niveau.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/14/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: Active
-ms.openlocfilehash: 33f02349d10cfd0ada76325c378d0259ec931002
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.technology: linux
+ms.openlocfilehash: 63cb2f56852a668bc48aa85cd31a72a2b583463b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-repositories-for-installing-and-upgrading-sql-server-on-linux"></a>Configurez des référentiels pour l’installation et la mise à niveau de SQL Server sur Linux
 
@@ -80,7 +77,7 @@ Commencez par vérifier si vous avez déjà enregistré un référentiel SQL Ser
    sudo cat /etc/yum.repos.d/mssql-server.repo
    ```
 
-4. Le **nom** propriété est le référentiel. Vous pouvez l’identifier la table dans le [référentiels](#repositories) section de cet article.
+4. La propriété **name** est le réertoire configuré. Vous pouvez l’identifier la table dans le [référentiels](#repositories) section de cet article.
 
 ### <a name="remove-old-repository-rhel"></a>Supprimer l’ancien référentiel (RHEL)
 Si nécessaire, supprimez l’ancien référentiel avec la commande suivante.
@@ -156,7 +153,7 @@ Si nécessaire, supprimez l’ancien espace de stockage. Utilisez une des comman
 ### <a name="configure-new-repository-ubuntu"></a>Configurer le nouveau référentiel (Ubuntu)
 Configurez le nouveau référentiel à utiliser pour les mises à niveau et les installations de SQL Server.
 
-1. Importer les clés GPG référentiel public.
+1. Importez les clés publiques GPG de référentiel.
 
    ```bash
    sudo curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -

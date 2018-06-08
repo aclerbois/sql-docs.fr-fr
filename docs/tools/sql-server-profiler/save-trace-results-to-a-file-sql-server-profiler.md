@@ -1,33 +1,31 @@
 ---
-title: "Enregistrer les résultats de Trace dans un fichier (SQL Server Profiler) | Documents Microsoft"
-ms.custom: 
+title: Enregistrer des résultats d’une trace dans un fichier (SQL Server Profiler) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - saving traces
 - traces [SQL Server], saving
 ms.assetid: ac528747-0c19-4f3d-96f5-44c762a4abed
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e62a693466ac0de9a7ce67e9bbcbeec1c17b7af3
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: be8bb0c9876df4504e13c6098eb83eabe7ed2d84
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-trace-results-to-a-file-sql-server-profiler"></a>Enregistrer des résultats d'une trace dans un fichier (SQL Server Profiler)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Cette rubrique explique comment enregistrer les résultats de trace dans un fichier à l’aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment enregistrer les résultats d'une trace dans un fichier en utilisant le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
   
 ### <a name="to-save-trace-results-to-a-file"></a>Pour enregistrer les résultats d'une trace dans un fichier  
   
@@ -36,7 +34,7 @@ ms.lasthandoff: 01/17/2018
      La boîte de dialogue **Propriétés de la trace**apparaît.  
   
     > [!NOTE]  
-    >  Si la case **Démarrer le suivi juste après avoir établi la connexion**est cochée, la boîte de dialogue **Propriétés de la trace**ne s’affiche pas et le suivi se lance. Pour désactiver ce paramètre, dans le menu **Outils**, cliquez sur **Options**et désactivez la case à cocher **Démarrer le suivi juste après avoir établi la connexion** .  
+    >  Si la case **Démarrer le suivi juste après avoir établi la connexion**est cochée, la boîte de dialogue **Propriétés de la trace**ne s’affiche pas et le suivi se lance. Pour désactiver ce paramètre, accédez au menu **Outils**, cliquez sur **Options**et désactivez la case à cocher **Démarrer le suivi juste après avoir établi la connexion** .  
   
 2.  Dans la zone **Nom de la trace** , tapez un nom destiné à la trace.  
   
@@ -60,7 +58,7 @@ ms.lasthandoff: 01/17/2018
         > [!NOTE]  
         >  Lorsque l’option **Le serveur traite les données de trace**est désactivée, le serveur n’enregistre pas les événements si cette opération dégrade sensiblement les performances.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  
   
   

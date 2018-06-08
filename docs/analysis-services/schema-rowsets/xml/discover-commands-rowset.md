@@ -1,39 +1,30 @@
 ---
 title: Ensemble de lignes DISCOVER_COMMANDS | Documents Microsoft
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DISCOVER_COMMANDS rowset
-ms.assetid: d228f265-05d9-4d2c-a622-44c73eab7a71
-caps.latest.revision: "14"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f5fac5cdcfc9dd7f7be511a20018f9c6732ce028
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ba32ff2992e02b8b9e3fe452544f3a9b978d34f6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discovercommands-rowset"></a>Ensemble de lignes DISCOVER_COMMANDS
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Fournit des informations de l’activité et des ressources sur les commandes exécutées actuellement en cours d’exécution ou le derniers dans les connexions ouvertes sur le serveur.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Fournit des informations sur l'activité et l'utilisation des ressources des dernières commandes exécutées ou des commandes en cours d'exécution sur les connexions ouvertes sur le serveur.  
   
  **S'applique à :** modèles tabulaires, modèles multidimensionnels  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  L'ensemble de lignes **DISCOVER_COMMANDS** contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Restriction|Description|  
+|Nom de colonne|Indicateur de type|Restriction| Description|  
 |-----------------|--------------------|-----------------|-----------------|  
 |**SESSION_SPID**|**DBTYPE_I4**|Oui|ID de session.|  
 |**SESSION_COMMAND_COUNT**|**DBTYPE_I4**||Nombre de commandes exécutées depuis le début de la session.|  
@@ -60,6 +51,6 @@ ms.lasthandoff: 01/08/2018
 |ADOMDNAME|Commandes|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma XML for Analysis](../../../analysis-services/schema-rowsets/xml/xml-for-analysis-schema-rowsets.md)  
+ [XML for Analysis ensembles de lignes de schéma](../../../analysis-services/schema-rowsets/xml/xml-for-analysis-schema-rowsets.md)  
   
   

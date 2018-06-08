@@ -1,31 +1,28 @@
 ---
-title: "La récupération des résultats (Basic) | Documents Microsoft"
-ms.custom: 
+title: La récupération des résultats (Basic) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - result sets [ODBC], about result sets
 - data sources [ODBC], result sets
 - empty result sets [ODBC]
 ms.assetid: 052870e3-3f3f-4f07-91da-b649348225f4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a0762d7f70becf8c6bdbd86bee524bc964676f59
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b09820c0716d6d7a8261ede3b5a4173dc73f384d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="retrieving-results-basic"></a>La récupération des résultats (Basic)
 A *jeu de résultats* est un ensemble de lignes dans la source de données qui correspond à certains critères. Est une table conceptuelle qui résulte d’une requête et qui est disponible pour une application dans un format tabulaire. **Sélectionnez** instructions, fonctions de catalogue et certaines procédures créent des jeux de résultats. Dans l’exemple suivant, la première instruction SQL crée un jeu de résultats contenant toutes les lignes et toutes les colonnes de la table Orders, et la deuxième instruction SQL crée un jeu de résultats contenant les colonnes OrderID, vendeur et l’état pour les lignes de la table Orders dans lequel l’état est ouvert :  

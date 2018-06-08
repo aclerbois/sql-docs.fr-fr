@@ -1,16 +1,14 @@
 ---
 title: sp_tables (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_tables
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_tables
 ms.assetid: 787a2fa5-87a1-49bd-938b-6043c245f46b
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 95a0bae2722c519cea3e1dac14c633fe582ed5a8
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b0a4e8b4ae1b78da17beb1a5289a90782979ad3c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptables-transact-sql"></a>sp_tables (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -63,9 +61,9 @@ sp_tables [ [ @table_name = ] 'name' ]
  Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], si l'utilisateur actuel est propriétaire d'une table portant le nom spécifié, les colonnes de cette table sont renvoyées. Si le propriétaire n'est pas spécifié et que l'utilisateur actuel ne possède pas de table ayant le nom spécifié, la procédure recherche une table portant le nom spécifié, possédée par le propriétaire de la base de données. Si la recherche de la table aboutit, ce sont les colonnes de cette dernière qui sont retournées.  
   
  [  **@table_qualifier=** ] **'***qualificateur***'**  
- Nom du qualificateur de la table. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables (*qualificateur***.** *propriétaire***.** *nom*). Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette colonne représente le nom de la base de données. Dans d'autres produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
+ Nom du qualificateur de la table. *qualificateur* est **sysname**, avec NULL comme valeur par défaut. Divers produits SGBD prennent en charge d’affectation de noms en trois parties pour les tables (*qualificateur ***.*** propriétaire ***.*** nom de*). Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette colonne représente le nom de la base de données. Dans d'autres produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
   
- [ **,** [  **@table_type=** ] **» «***type***'**, **'**type**» «** ]  
+ [ **,** [  **@table_type=** ] **» «***type***'**, **'** type **» «** ]  
  Liste de valeurs séparées par des virgules, donnant des informations sur toutes les tables des types spécifiés. Ceux-ci incluent **TABLE**, **SYSTEMTABLE**, et **vue**. *type* est **varchar (100)**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -75,7 +73,7 @@ sp_tables [ [ @table_name = ] 'name' ]
  Détermine si les caractères trait de soulignement (_), pourcentage (%) et crochet ([ ou ]) sont interprétés en tant que caractères génériques. Les valeurs valides sont 0 (critères spéciaux désactivés) et 1 (critères spéciaux activés). *fUsePattern* est **bits**, avec 1 comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
@@ -94,7 +92,7 @@ sp_tables [ [ @table_name = ] 'name' ]
   
  **sp_tables** équivaut à **SQLTables** dans ODBC. Les résultats obtenus sont triés par **TABLE_TYPE**, **TABLE_QUALIFIER**, **TABLE_OWNER**, et **TABLE_NAME**.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation SELECT sur le schéma.  
   
 ## <a name="examples"></a>Exemples  
@@ -118,7 +116,7 @@ EXEC sp_tables
    @table_qualifier = 'AdventureWorks2012';  
 ```  
   
-## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
+## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
   
 ### <a name="c-returning-a-list-of-objects-that-can-be-queried-in-the-current-environment"></a>C. Retour d'une liste d'objets pouvant être sollicités dans l'environnement actuel  
  L’exemple suivant retourne une liste d’objets qui peuvent être des requêtes dans l’environnement actuel.  
@@ -140,7 +138,7 @@ EXEC sp_tables
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sys.SYNONYMS &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-synonyms-transact-sql.md)   
+ [Sys.SYNONYMS &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-synonyms-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

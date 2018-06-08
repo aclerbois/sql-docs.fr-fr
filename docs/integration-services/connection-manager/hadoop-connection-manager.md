@@ -1,30 +1,28 @@
 ---
 title: Gestionnaire de connexions Hadoop - SQL Server Integration Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssis.designer.hadoopconn.f1
 ms.assetid: 8bb15b97-9827-46bc-aca6-068534ab18c4
-caps.latest.revision: 
+caps.latest.revision: 7
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b15f49c309ed828952c5888b624426ee76ab77fb
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d0f00f507a7347e729a6531261c963cdeae41b62
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hadoop-connection-manager"></a>Gestionnaire de connexions Hadoop
   Le Gestionnaire de connexions Hadoop permet à un package SSIS (SQL Server Integration Services) de se connecter à un cluster Hadoop en utilisant les valeurs que vous spécifiez pour les propriétés.  

@@ -1,29 +1,22 @@
 ---
-title: "Configuration réseau (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 8e2b9abe-963d-479b-a4a7-1739fcb3e249
-caps.latest.revision: "27"
-ms.openlocfilehash: 34f322e9bd1d500b3755262332ab5724de5aa301
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Configuration réseau - système de plateforme Analytique | Documents Microsoft
+description: Le matériel de système de plateforme Analytique (APS) créé et configuré avec un ensemble de correction des adresses IP dans l’ensemble de tous les serveurs et appareils applicables à partir de l’usine du fabricant de matériel. Lors de la livraison de l’application, l’adresse IP externe (Ethernet) traité doit être reconfiguré pour répondre aux besoins de centre de données du client spécifique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 2db040c63d3c31f93cd0b72e48422e806aef01e0
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="appliance-network-configuration"></a>Configuration réseau
-L’application SQL Server PDW est conçue et configurée avec un ensemble de correction des adresses IP dans l’ensemble de tous les serveurs et appareils applicables à partir de l’usine du fabricant de matériel. Lors de la livraison de l’application, l’adresse IP externe (Ethernet) traité doit être reconfiguré pour répondre aux besoins de centre de données du client spécifique.  
+# <a name="appliance-network-configuration-for-analytics-platform-system"></a>Configuration réseau pour le système de plateforme Analytique
+Le matériel de système de plateforme Analytique (APS) créé et configuré avec un ensemble de correction des adresses IP dans l’ensemble de tous les serveurs et appareils applicables à partir de l’usine du fabricant de matériel. Lors de la livraison de l’application, l’adresse IP externe (Ethernet) traité doit être reconfiguré pour répondre aux besoins de centre de données du client spécifique.  
   
 > [!NOTE]  
 > PDW V1 requis 8 IP externe (*face au client*) des adresses pour fournir une connectivité externe à chaque contrôle rack de nœuds. PDW 2012 (V2) améliorée des communications réseau en exposant chaque composant de l’application en externe via les adresses IP. Cette approche fournit une conception plus robuste, ce qui réduit les coûts et augmente la flexibilité et améliore le déplacement des données, le chargement de données et l’intégration de Hadoop. Le nombre d’adresses IP nécessaire varie selon le nombre de nœuds dans l’application et la présence de fonctionnalités, telles que HDInsight. Pour prendre en compte ce plus grand bloc d’adresses IP, le client doit configurer un sous-réseau distinct pour PDW. Dans ce sous-réseau, il y a un espace d’adressage IP (jusqu'à 250 adresses) pour prendre en charge les composants de jusqu'à 5 racks PDW.  
@@ -65,5 +58,5 @@ Pour plus d’informations sur les équipements Dell, consultez :
 -   PDU **Dell limitées Rack PDU**`ftp://ftp.dell.com/Manuals/all-products/esuprt_ser_stor_net/esuprt_rack_infrastructure/dell-metered-pdu-led_User's%20Guide_en-us.pdf`  
   
 ## <a name="see-also"></a>Voir aussi  
-[Lancez le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41;](launch-the-configuration-manager.md)  
+[Lancez le Gestionnaire de Configuration &#40;Analytique plate-forme système&#41;](launch-the-configuration-manager.md)  
   

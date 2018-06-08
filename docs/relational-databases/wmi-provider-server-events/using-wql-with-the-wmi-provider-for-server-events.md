@@ -1,16 +1,15 @@
 ---
-title: "À l’aide de WQL avec le fournisseur WMI pour les événements serveur | Documents Microsoft"
-ms.custom: 
+title: À l’aide de WQL avec le fournisseur WMI pour les événements serveur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - queries [WMI]
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - WQL [WMI]
 - WMI Provider for Server Events, WQL
 ms.assetid: 58b67426-1e66-4445-8e2c-03182e94c4be
-caps.latest.revision: 
+caps.latest.revision: 36
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1bb07cf51939aec91de5b86b682545de9bfab382
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: e417f360129f63477702dfbd95015886f0836ddc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-wql-with-the-wmi-provider-for-server-events"></a>Utilisation de WQL avec le fournisseur WMI pour les événements de serveur
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -73,7 +71,7 @@ WHERE where_condition
  *event_property*  
  Est la propriété d'un événement. Exemples **PostTime**, **SPID**, et **LoginName**. Examinez chaque événement répertorié dans [fournisseur WMI pour les Classes d’événements de serveur et les propriétés](../../relational-databases/wmi-provider-server-events/wmi-provider-for-server-events-classes-and-properties.md) pour déterminer quelles propriétés il contient. Par exemple, l’événement DDL_DATABASE_LEVEL_EVENTS contient le **DatabaseName** et **nom d’utilisateur** propriétés. Il hérite également la **SQLInstance**, **LoginName**, **PostTime**, **SPID**, et **Nom_Ordinateur** propriétés de ses événements parents.  
   
- **,** *...n*  
+ **,** *.. .n*  
  Indique que *event_property* peuvent être interrogées plusieurs fois, séparés par des virgules.  
   
  \*  
@@ -99,7 +97,7 @@ WHERE where_condition
   
  Le fournisseur WMI pour les événements serveur utilise un algorithme ascendant pour produire l'étendue la plus étroite possible pour l'EVENT NOTIFICATION sous-jacent. L'algorithme essaie de réduire l'activité interne sur le serveur, ainsi que le trafic réseau entre l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et le processus hôte de WMI. Le fournisseur examine le *event_type* spécifié dans la clause FROM et les conditions dans la clause WHERE et essaie d’inscrire l’EVENT NOTIFICATION sous-jacent avec la plus petite portée possible. Si le fournisseur ne peut pas effectuer l'inscription avec l'étendue la plus étroite, il essaie de s'inscrire successivement à des étendues supérieures jusqu'à ce qu'une inscription réussisse enfin. S'il atteint l'étendue la plus élevée (niveau serveur) et échoue, il retourne une erreur au consommateur.  
   
- Par exemple, si DatabaseName =**'**AdventureWorks**'**est spécifié dans la clause WHERE, le fournisseur essaie d’inscrire une notification d’événement dans le [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] base de données. Si la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] existe et que le client appelant a les autorisations requises pour créer une notification d'événements dans [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], l'inscription est réussie. Sinon, une tentative a lieu pour enregistrer la notification d'événements au niveau serveur. L'inscription réussit si le client WMI a les autorisations requises. Toutefois, dans ce scénario, les événements ne sont pas retournés au client tant que la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] n'a pas été créée.  
+ Par exemple, si DatabaseName =**'** AdventureWorks **'** est spécifié dans la clause WHERE, le fournisseur essaie d’inscrire une notification d’événement dans le [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] base de données. Si la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] existe et que le client appelant a les autorisations requises pour créer une notification d'événements dans [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], l'inscription est réussie. Sinon, une tentative a lieu pour enregistrer la notification d'événements au niveau serveur. L'inscription réussit si le client WMI a les autorisations requises. Toutefois, dans ce scénario, les événements ne sont pas retournés au client tant que la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] n'a pas été créée.  
   
  Le *where_condition* peut également agir en tant que filtre pour limiter en outre la requête à une base de données spécifique, un schéma ou un objet. Examinons, par exemple, la requête WQL suivante :  
   

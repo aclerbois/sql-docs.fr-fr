@@ -3,14 +3,12 @@ title: Liaisons et Conversions (OLE DB) | Documents Microsoft
 description: Liaisons et conversions (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-date-time
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -19,13 +17,12 @@ helpviewer_keywords:
 - OLE DB, bindings and conversions
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f6bff4cdd5ea1a6b2fef3283ba9c0413e3d26842
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+manager: craigg
+ms.openlocfilehash: 79887c62b3cd26c194bf140b29b836bf9140eb85
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="conversions-ole-db"></a>Conversions (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -44,7 +41,7 @@ ms.lasthandoff: 04/03/2018
   
 -   Le format de **date** chaînes est :  
   
-     *yyyy*-*mm*-*dd*  
+     *aaaa*-*mm*-*dd*  
   
 > [!NOTE]  
 >  Les versions antérieures de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client et SQLOLEDB autorisaient l'implémentation de conversions OLE en cas d'échec des processus de conversion standard. Le pilote OLE DB pour SQL Server suit le même comportement que [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client. Par conséquent, certaines conversions effectuées par le pilote OLE DB pour SQL Server diffèrent de la spécification OLE DB.  
@@ -77,6 +74,6 @@ ms.lasthandoff: 04/03/2018
  Décrit les conversions de date/heure effectuées entre [!INCLUDE[ssKatmai](../../../includes/sskatmai-md.md)] (ou version ultérieure) et une application cliente écrite avec le pilote OLE DB pour SQL Server.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Date et heure améliorations &#40; OLE DB &#41;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
+ [Date et heure améliorations & #40 ; OLE DB & #41 ;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
   
   

@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLDescribeParam | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLDescribeParam
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLDescribeParam
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLDescribeParam
-helpviewer_keywords: SQLDescribeParam function [ODBC]
+f1_keywords:
+- SQLDescribeParam
+helpviewer_keywords:
+- SQLDescribeParam function [ODBC]
 ms.assetid: 1f5b63c4-2f3e-44da-b155-876405302281
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: df8d1653e158f19abf92eb1a650425213cbe393d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 584e24e074a89670f0182fdfc29be1017b0a6ad6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqldescribeparam-function"></a>Fonction SQLDescribeParam
 **Mise en conformité**  
@@ -85,7 +86,7 @@ SQLRETURN SQLDescribeParam(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLDescribeParam** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLDescribeParam** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |07009|Index de descripteur non valide|(DM) la valeur spécifiée pour l’argument *ParameterNumber* est inférieur à 1.<br /><br /> La valeur spécifiée pour l’argument *ParameterNumber* était supérieur au nombre de paramètres dans l’instruction SQL associée.<br /><br /> Le marqueur de paramètre fait partie d’une instruction non-DML.<br /><br /> Le marqueur de paramètre faisait partie d’un **sélectionnez** liste.|  

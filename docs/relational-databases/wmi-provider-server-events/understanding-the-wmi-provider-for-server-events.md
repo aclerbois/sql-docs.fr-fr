@@ -1,31 +1,29 @@
 ---
-title: "Présentation du fournisseur WMI pour les événements serveur | Documents Microsoft"
-ms.custom: 
+title: Présentation du fournisseur WMI pour les événements serveur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - architecture [WMI]
 - SQL Server Agent [WMI]
 - WMI Provider for Server Events, about WMI Provider for Server Events
 ms.assetid: 8fd7bd18-76d0-4b28-8fee-8ad861441ab2
-caps.latest.revision: 
+caps.latest.revision: 31
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a7f710e54927b01ddcbdf0bb7890d992087bc51f
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: c6a14a8a01d9a713c564044750d48f06c69eb0dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-the-wmi-provider-for-server-events"></a>Présentation du fournisseur WMI pour les événements serveur
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

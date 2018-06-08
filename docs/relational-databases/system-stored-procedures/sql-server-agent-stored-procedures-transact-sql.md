@@ -1,16 +1,14 @@
 ---
-title: "L’Agent SQL Server procédures stockées (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: L’Agent SQL Server procédures stockées (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,21 +16,20 @@ helpviewer_keywords:
 - system stored procedures [SQL Server], SQL Server Agent
 - SQL Server Agent, stored procedures
 ms.assetid: 9c8de925-928b-460c-9455-779c4c37b966
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bd5c3618c0aa44e538a614248a8d0eb76f0c758e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 040daa51746695d9cf9b9e59c5314ae2560c03d2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sql-server-agent-stored-procedures-transact-sql"></a>Procédures stockées de l'Agent SQL Server (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
 
-  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge les suivant procédures stockées système qui sont utilisés par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent pour gérer les activités planifiées et pilotée par événements.  
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge les procédures stockées système suivantes, qui sont utilisées par l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] afin de gérer les activités planifiées et liées aux événements.  
   
 |||  
 |-|-|  

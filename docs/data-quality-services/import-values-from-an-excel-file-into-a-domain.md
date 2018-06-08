@@ -2,33 +2,34 @@
 title: Importer les valeurs d’un fichier Excel dans un domaine | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.importfailing.f1
 - sql13.dqs.kb.importselect.f1
 - sql13.dqs.kb.failingvalues.f1
 ms.assetid: 04cde693-2043-477f-8417-fcc463ca7195
-caps.latest.revision: ''
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6331f1f695bb2e1c9974d27d8af76e03da55315
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: a6af86f6aad6272dafff5f9974f933174d3797cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-values-from-an-excel-file-into-a-domain"></a>Importer les valeurs d'un fichier Excel dans un domaine
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit comment importer des valeurs à partir d'un fichier Excel vers un champ de [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). L'utilisation d'un fichier Excel pour importer les valeurs de champ dans l'application [!INCLUDE[ssDQSClient](../includes/ssdqsclient-md.md)] simplifie le processus de génération de connaissance, et permet d'économiser aussi bien le temps que les efforts. Elle permet aux personnes qui ont une liste de valeurs de données valides dans un fichier Excel ou un fichier texte d'importer ces valeurs dans un domaine. À partir d'un fichier Excel, vous pouvez importer les valeurs de domaine dans un domaine ou des domaines d'une base de connaissances. (Consultez [Importer les domaines d’un fichier Excel dans la découverte des connaissances](../data-quality-services/import-domains-from-an-excel-file-in-knowledge-discovery.md) pour plus d’informations sur l’importation de domaines dans une base de connaissances.) L'exportation vers un fichier Excel n'est pas prise en charge.  
   
  Vous pouvez importer les valeurs de données de deux façons :  

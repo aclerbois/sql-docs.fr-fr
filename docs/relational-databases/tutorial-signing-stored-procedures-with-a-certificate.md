@@ -1,32 +1,30 @@
 ---
-title: "Didacticiel : signature de procédures stockées à l’aide d’un certificat | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : signature de procédures stockées à l’aide d’un certificat | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: tutorial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
 - SQL Server 2016
 helpviewer_keywords:
 - signing stored procedures tutorial [SQL Server]
 ms.assetid: a4b0f23b-bdc8-425f-b0b9-e0621894f47e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8a4a1172ed0ad9dd1f5d8328a4cdd57bf8a04d70
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b0cfd18b508f13499ce5cf7bdf4cc12be4440562
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-signing-stored-procedures-with-a-certificate"></a>Didacticiel : signature de procédures stockées à l'aide d'un certificat
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

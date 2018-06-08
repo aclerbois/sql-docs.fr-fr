@@ -1,47 +1,23 @@
 ---
 title: Conventions ASSL XML | Documents Microsoft
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- whitespace [Analysis Services Scripting Language]
-- trailing whitespace
-- XSD data types [Analysis Services Scripting Language]
-- inheritance [Analysis Services Scripting Language]
-- cardinality [Analysis Services Scripting Language]
-- white space [Analysis Services Scripting Language]
-- ASSL, XML conventions
-- defaults [Analysis Services Scripting Language]
-- leading whitespace
-- Analysis Services Scripting Language, XML conventions
-- XML [Analysis Services Scripting Language]
-- hierarchies [Analysis Services Scripting Language]
-- inherited defaults [Analysis Services Scripting Language]
-ms.assetid: bce4edad-4420-41ce-9672-8c00c5c0dec6
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3b7e4c800454a2e2eddac81a2420b5a6d6436c70
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e7bdc53ee4e85ee0ad782985744b3722ade6fd14
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="assl-xml-conventions"></a>Conventions ASSL XML
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Le langage de script ASSL (Analysis Services Scripting Language) représente la hiérarchie d'objets comme un ensemble de types d'élément, chacun d'entre eux définissant les éléments enfants qu'il contient.  
+  Le langage de script ASSL (Analysis Services Scripting Language) représente la hiérarchie d'objets comme un ensemble de types d'élément, chacun d'entre eux définissant les éléments enfants qu'il contient.  
   
  Pour représenter la hiérarchie d'objets, ASSL utilise les conventions XML suivantes :  
   
@@ -160,7 +136,7 @@ Le langage de script ASSL (Analysis Services Scripting Language) représente la 
 |**Booléen**|False|  
 |**String**|"" (chaîne vide)|  
 |**Entier** ou **Long**|0 (zéro)|  
-|**Timestamp**|12:00:00 AM, 1/1/0001 (correspondant à un .NET Frameworks **System.DateTime** avec 0 battement)|  
+|**horodateur**|12:00:00 AM, 1/1/0001 (correspondant à un .NET Frameworks **System.DateTime** avec 0 battement)|  
   
  Un élément qui est présent mais vide est considéré comme ayant une valeur de chaîne null, et non la valeur par défaut.  
   

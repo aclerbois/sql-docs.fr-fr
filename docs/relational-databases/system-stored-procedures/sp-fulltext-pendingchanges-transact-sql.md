@@ -1,16 +1,14 @@
 ---
-title: sp_fulltext_pendingchanges (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_fulltext_pendingchanges (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_fulltext_pendingchanges_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_fulltext_pendingchanges
 ms.assetid: fee042fe-4781-4a33-a01b-d98fb5629f1b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff15f23b58c2303a3db717a3e301738df0a2bf70
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 4a6defefbc225d2f8301977d5826c74597eefb2c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spfulltextpendingchanges-transact-sql"></a>sp_fulltext_pendingchanges (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -54,7 +52,7 @@ sp_fulltext_pendingchanges table_id
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**Clé**|*|Valeur de la clé de texte intégral pour une table spécifiée.|  
-|**DocId**|**bigint**|Colonne de l'ID interne de document (DocId) qui correspond à la valeur de la clé.|  
+|**ID de document**|**bigint**|Colonne de l'ID interne de document (DocId) qui correspond à la valeur de la clé.|  
 |**État**|**int**|0 = La ligne est supprimée de l'index de texte intégral.<br /><br /> 1 = La ligne est indexée sur le texte intégral.<br /><br /> 2 = La ligne est à jour.<br /><br /> -1 = La ligne est en état de transition (traitée en lot mais non validée) ou en erreur.|  
 |**DocState**|**tinyint**|Vidage brut de la colonne d'état du mappage de l'ID interne du document (DocId).|  
   
@@ -71,7 +69,7 @@ sp_fulltext_pendingchanges table_id
  Pour connaître le nombre de modifications en attente dans une table donnée, utilisez la propriété **TableFullTextPendingChanges** de la fonction OBJECTPROPERTYEX.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Recherche en texte intégral et la recherche sémantique stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)   
+ [Procédures stockées de recherche en texte intégral et la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)   
  [OBJECTPROPERTYEX &#40;Transact-SQL&#41;](../../t-sql/functions/objectpropertyex-transact-sql.md)  
   
   

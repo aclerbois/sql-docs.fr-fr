@@ -1,30 +1,31 @@
 ---
-title: "Déployer un package de déploiement de modèle à l’aide de MDSModelDeploy | Microsoft Docs"
-ms.custom: 
+title: Déployer un package de déploiement de modèle à l’aide de MDSModelDeploy | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: fb2a4df4-5e0d-4b34-818f-383dbde1b15c
-caps.latest.revision: 
+caps.latest.revision: 16
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4ef8b476dd432b7094761c85ce18cd732766df05
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 2d4a77889ad5042349fc4fd9e1e6ff20379a5384
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deploy-a-model-deployment-package-by-using-mdsmodeldeploy"></a>Déployer un package de déploiement de modèle à l'aide de MDSModelDeploy
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], utilisez l'outil MDSModelDeploy pour déployer un package qui contient soit :  
   
 -   Des objets de modèle uniquement.  
@@ -36,7 +37,7 @@ ms.lasthandoff: 03/05/2018
 > [!IMPORTANT]  
 >  Les packages peuvent être déployés uniquement dans l'édition de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] dans laquelle ils ont été créés. Cela signifie que les packages créés dans [!INCLUDE[ssSQL11](../includes/sssql11-md.md)] ne peuvent pas être déployés sur [!INCLUDE[ssSQL14](../includes/sssql14-md.md)] ou les versions ultérieures.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour effectuer cette procédure :  
   
 -   Vous devez avoir l'autorisation d'accéder à la zone fonctionnelle **Administration de système** dans l'environnement [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] cible.  

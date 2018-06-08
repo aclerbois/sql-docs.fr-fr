@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_1505 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 1505 (Database Engine error)
 ms.assetid: ef4df75d-0f36-4c8b-b36c-e427f65f91ca
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 95b7a88504af3c97a252bf55aa92cc33805b8f81
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: fb8dea2a6e5b768dd0fc11aa49cd8dc73fe4f9bc
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver1505"></a>MSSQLSERVER_1505
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -69,7 +64,7 @@ Réfléchissez aux solutions ci-dessous.
   
 -   Lorsque les valeurs dupliquées sont issues d'erreurs de saisie des données, corrigez manuellement les données, puis créez l'index ou la contrainte. Pour plus d’informations sur la suppression des lignes dupliquées d’une table, consultez l’article 139444 de la Base de connaissances : [Comment faire pour supprimer des lignes en double d’une table dans SQL Server](http://support.microsoft.com/kb/139444).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [CREATE INDEX &#40;Transact-SQL&#41;](~/t-sql/statements/create-index-transact-sql.md)  
 [Créer des index uniques](~/relational-databases/indexes/create-unique-indexes.md)  
 [Créer des contraintes uniques](~/relational-databases/tables/create-unique-constraints.md)  

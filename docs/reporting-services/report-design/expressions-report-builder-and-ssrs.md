@@ -1,27 +1,25 @@
 ---
-title: "Expressions (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Expressions (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/06/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 76d3ac86-650c-46fe-8086-8b3edcea3882
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: a2f4c95fe680ad295533aba080897e9ad5440b90
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2e0630d23d308c061f5d3adf69e17473b5cfbf2a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="expressions-report-builder-and-ssrs"></a>Expressions (Générateur de rapports et SSRS)
   Les expressions sont couramment utilisées dans des rapports [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] pour récupérer, calculer, afficher, regrouper, trier, filtrer, paramétrer et mettre en forme les données d’un rapport. 

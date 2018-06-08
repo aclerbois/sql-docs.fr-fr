@@ -1,30 +1,20 @@
 ---
-title: "Propriétés (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: Properties
-dev_langs: kbMDX
-helpviewer_keywords: Properties function
-ms.assetid: 2d8442c5-30c4-4fd1-99ea-9845b6533e41
-caps.latest.revision: "36"
-author: Minewiskan
+title: Propriétés (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 1931694b7054dec03c45617867ccf4a68575fd09
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: b564d11696999ec2dbd778d15a3e881cab415259
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581131"
 ---
 # <a name="properties-mdx"></a>Properties (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,8 +35,8 @@ Member_Expression.Properties(Property_Name [, TYPED])
  *Property_name*  
  Expression de chaîne valide du nom d'une propriété de membre.  
   
-## <a name="remarks"></a>Notes   
- Le **propriétés** fonction retourne la valeur du membre spécifié pour la propriété de membre spécifié. La propriété de membre peut être une des propriétés de membre intrinsèques, tels que **nom**, **ID**, **clé**, ou **légende**, ou il peut être une propriété de membre définies par l’utilisateur. Pour plus d’informations, consultez [des propriétés de membre intrinsèques &#40; MDX &#41; ](../analysis-services/multidimensional-models/mdx/mdx-member-properties-intrinsic-member-properties.md) et [des propriétés de membre définies par l’utilisateur &#40; MDX &#41; ](../analysis-services/multidimensional-models/mdx/mdx-member-properties-user-defined-member-properties.md).  
+## <a name="remarks"></a>Notes  
+ Le **propriétés** fonction retourne la valeur du membre spécifié pour la propriété de membre spécifié. La propriété de membre peut être une des propriétés de membre intrinsèques, tels que **nom**, **ID**, **clé**, ou **légende**, ou il peut être une propriété de membre définies par l’utilisateur. Pour plus d’informations, consultez [des propriétés de membre intrinsèques &#40;MDX&#41; ](../analysis-services/multidimensional-models/mdx/mdx-member-properties-intrinsic-member-properties.md) et [propriétés de membre définies par l’utilisateur &#40;MDX&#41;](../analysis-services/multidimensional-models/mdx/mdx-member-properties-user-defined-member-properties.md).  
   
  Par défaut, la valeur est définie comme une chaîne. Si **TYPÉ** est spécifié, la valeur de retour est fortement typée.  
   
@@ -57,7 +47,7 @@ Member_Expression.Properties(Property_Name [, TYPED])
 > [!NOTE]  
 >  Properties('Key') retourne le même résultat que Key0, sauf en ce qui concerne les clés composites. Properties('Key') retourne la valeur Null pour les clés composites. Utilisez la touche*x* syntaxe pour les clés composites comme illustré dans l’exemple suivant. Properties('Key0'), Properties('Key1'), Properties('Key2'), etc., forment collectivement la clé composite.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple ci-dessous retourne à la fois des propriétés de membres intrinsèques et définies par l'utilisateur en se servant de l'argument TYPED pour retourner la valeur fortement typée de la propriété de membre Day Name (Jour).  
   
 ```  
@@ -116,7 +106,7 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide des propriétés de membre &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-member-properties.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [À l’aide des propriétés de membre &#40;MDX&#41;](../analysis-services/multidimensional-models/mdx/mdx-member-properties.md)   
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

@@ -2,33 +2,34 @@
 title: Créer une stratégie de correspondance | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.kbmatchingmap.f1
 - sql13.dqs.kb.kbmatchingpolicy.f1
 - sql13.dqs.kb.kbmatchingresults.f1
 ms.assetid: cce77a06-ca31-47b6-8146-22edf001d605
-caps.latest.revision: ''
+caps.latest.revision: 43
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c9fe7a9614c1b389362edd0b40284508329fc1b
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 7abc199b280d4e7da2757631b529395035542237
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-matching-policy"></a>Créer une stratégie de correspondance
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique explique comment créer une stratégie de correspondance dans une base de connaissances dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Vous vous préparez au processus de correspondance dans DQS en exécutant l'activité Stratégie de correspondance sur des exemples de données. Dans cette activité, vous créez et testez une ou plusieurs règles de correspondance dans la stratégie, puis vous publiez la base de connaissances afin que les règles de correspondance soient publiquement disponibles. Il ne peut y avoir qu'une seule stratégie de correspondance dans une base de connaissances, mais cette stratégie peut contenir plusieurs règles de correspondance.  
   
  La création d'une stratégie de correspondance s'effectue en trois étapes : un processus de mappage au cours duquel vous identifiez la source de données et mappez des domaines à des colonnes, un processus de stratégie de correspondance au cours duquel vous créez une ou plusieurs règles de correspondance et testez chaque règle de correspondance séparément, et un processus de résultats de correspondance au cours duquel vous exécutez toutes les règles de correspondance ensemble, et si vous en êtes satisfait, vous ajoutez la stratégie à la base de connaissances. Chacun de ces processus est exécuté sur une page distincte de l'Assistant de l'activité Correspondance, ce qui vous permet de naviguer entre les différentes pages, de réexécuter le processus et de fermer un processus de stratégie de correspondance spécifique, puis de retourner à la même étape du processus. Après avoir testé toutes les règles ensemble, si vous le souhaitez, vous pouvez retourner à la page **Stratégie de correspondance** , apporter quelques ajustements à une règle individuelle, la tester de nouveau séparément, puis retourner à la page **Résultats de correspondance** pour réexécuter toutes les règles ensemble. DQS vous fournit des statistiques sur les données sources, les règles de correspondance et les résultats de correspondance, lesquelles vous permettent de prendre des décisions avisées sur la stratégie de correspondance et de l'affiner.  

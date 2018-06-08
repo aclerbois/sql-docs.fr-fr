@@ -1,17 +1,16 @@
 ---
-title: "Limiter les tailles de fichier et de table de trace | Microsoft Docs"
-ms.custom: 
+title: Limiter les tailles de fichier et de table de trace | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - maximum file size for traces
 - traces [SQL Server], file size
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - file rollover option [SQL Server]
 - size [SQL Server], files
 ms.assetid: 88c31b02-f44c-4a14-be8b-437f2097de12
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8399091391a720490cf14fec2a3a9464428a5da9
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 48134da68c8125408b2616ca6298b78ab0aa3ba2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="limit-trace-file-and-table-sizes"></a>Limiter les tailles de fichier et de table de trace
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

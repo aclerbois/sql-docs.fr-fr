@@ -1,31 +1,23 @@
 ---
-title: "À distance du traitement (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d58bcb3c-0b3f-4ab0-81eb-4fdcc86153af
-caps.latest.revision: 
-author: Minewiskan
+title: À distance du traitement (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 498a045c82630fdcd89ca857877d37d07b8b3dd2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0e7afa72ef5a2f3ad9c27f0d8586b622c033be73
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remote-processing-analysis-services"></a>Traitement à distance (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous pouvez exécuter un traitement planifié ou sans assistance sur une instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . La demande de traitement proviendra d'un ordinateur, mais s'exécutera sur un autre ordinateur du même réseau.  
+  Vous pouvez exécuter un traitement planifié ou sans assistance sur une instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . La demande de traitement proviendra d'un ordinateur, mais s'exécutera sur un autre ordinateur du même réseau.  
   
 ## <a name="prerequisites"></a>Conditions préalables  
   
@@ -38,7 +30,7 @@ Vous pouvez exécuter un traitement planifié ou sans assistance sur une instanc
 -   Résolvez les erreurs de traitement local existantes avant de tenter le traitement à distance. Quand le traitement de la demande est local, vérifiez que les données peuvent être récupérées à partir de la source de données relationnelles externe. Pour obtenir des instructions sur la spécification des informations d’identification utilisées pour récupérer des données, consultez [Définir les options d’emprunt d’identité &#40;SSAS - Multidimensionnel&#41;](../../analysis-services/multidimensional-models/set-impersonation-options-ssas-multidimensional.md).  
   
 ## <a name="on-demand-remote-processing"></a>Traitement à distance à la demande  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] accepte les demandes de traitement des comptes d'utilisateur ou d'application disposants des autorisations d'administrateur pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Si vous êtes administrateur, vérifiez que vous pouvez vous connecter à l'instance distante et traiter la base de données manuellement via la connexion à distance.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]accepte les demandes de traitement des comptes d’utilisateur ou une application qui ont [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] des autorisations d’administrateur. Si vous êtes administrateur, vérifiez que vous pouvez vous connecter à l'instance distante et traiter la base de données manuellement via la connexion à distance.  
   
 1.  Sur l'ordinateur qui sera utilisé pour planifier le traitement, démarrez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] , puis connectez-vous à l'instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] distante.  
   
@@ -100,8 +92,8 @@ Vous pouvez exécuter un traitement planifié ou sans assistance sur une instanc
 ## <a name="see-also"></a>Voir aussi  
  [Composants de SQL Server Agent](http://msdn.microsoft.com/library/8d1dc600-aabb-416f-b3af-fbc9fccfd0ec)   
  [Planification des tâches administratives SSAS avec SQL Server Agent](../../analysis-services/instances/schedule-ssas-administrative-tasks-with-sql-server-agent.md)   
- [Le traitement par lots &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/batch-processing-analysis-services.md)   
+ [Le traitement par lots & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/batch-processing-analysis-services.md)   
  [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)   
- [Le traitement des objets &#40; XMLA &#41;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/processing-objects-xmla.md)  
+ [Le traitement des objets & #40 ; XMLA & #41 ;](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/processing-objects-xmla.md)  
   
   

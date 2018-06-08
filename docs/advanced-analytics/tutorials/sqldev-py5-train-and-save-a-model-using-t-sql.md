@@ -1,28 +1,17 @@
 ---
-title: 'Étape 5 : L’apprentissage et enregistrer un modèle de Python à l’aide de T-SQL | Documents Microsoft'
-ms.custom: ''
-ms.date: 10/17/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+title: Étape 5 Train et enregistrer un modèle de Python à l’aide de T-SQL | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2017
-dev_langs:
-- Python
-- TSQL
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.openlocfilehash: 1511be6615805e7842ace3e0065591c41f3b40eb
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 173df47b5862a892efcd0c5e7064349daedf7efb
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="step-5-train-and-save-a-python-model-using-t-sql"></a>Étape 5 : L’apprentissage et enregistrer un modèle de Python à l’aide de T-SQL
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -131,7 +120,7 @@ Pour faciliter le former à nouveau le modèle sur de nouvelles données, vous e
 
 3. Ouvrez la table *nyc\_taxi_models*. Vous pouvez voir qu’une nouvelle ligne a été ajoutée, avec le modèle sérialisé dans la colonne _model_.
 
-    *linear_model* *0x800363736B6C6561726E2E6C696E6561....*
+    *linear_model* *0x800363736B6C6561726E2E6C696E6561...*
 
 ### <a name="traintippredictionmodelrxpy"></a>TrainTipPredictionModelRxPy
 
@@ -196,7 +185,7 @@ Cette procédure stockée utilise le nouveau **revoscalepy** package, qui est un
 
 3. Ouvrez la table *nyc_taxi_models*. Vous pouvez voir qu’une nouvelle ligne a été ajoutée, avec le modèle sérialisé dans la colonne _model_.
 
-    *rx_model* *0x8003637265766F7363616c....*
+    *rx_model* *0x8003637265766F7363616c...*
 
 Dans l’étape suivante, vous utilisez les modèles formés pour créer des prédictions.
 

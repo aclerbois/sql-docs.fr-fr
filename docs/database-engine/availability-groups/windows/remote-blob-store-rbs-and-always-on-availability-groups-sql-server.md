@@ -1,27 +1,24 @@
 ---
-title: "Magasin d’objets blob distants et groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Magasin d’objets blob distants et groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 01a70258-d4fd-40bc-bc44-c490b5d6c420
-caps.latest.revision: "15"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 15
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa90168a7a496b0dc1e6d56250438c6f7ddd32f1
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 224514fa515592e3865536510aab1b94bda94345
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768415"
 ---
 # <a name="remote-blob-store-rbs-and-always-on-availability-groups-sql-server"></a>Magasin d’objets blob distants et groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

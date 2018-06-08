@@ -1,27 +1,25 @@
 ---
-title: "Exploration de la souplesse d’une région de données de tableau matriciel (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Exploration de la souplesse d’une région de données de tableau matriciel (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: fef19359-a618-4d21-a7e4-e391cdefd4eb
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b795c6ab6d2106c781dbcd75cbf913dda85298d5
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f66fa1f10498a014b244725e871ca935f89ee7a2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs"></a>Exploration de la souplesse d'une région de données de tableau matriciel (Générateur de rapports et SSRS)
 Dans un rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , quand vous ajoutez une région de données de table, de matrice ou de liste à partir de l’onglet Insérer sur le ruban, vous démarrez avec un modèle initial de région de données de tableau matriciel. Toutefois, vous n’êtes pas limité par ce modèle. Vous pouvez continuer à développer vos affichages de données en ajoutant ou en supprimant des fonctionnalités de région de données de tableau matriciel (groupes, lignes et colonnes, par exemple).  

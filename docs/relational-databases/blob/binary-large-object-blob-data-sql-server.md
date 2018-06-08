@@ -1,30 +1,28 @@
 ---
-title: "Données blob (Binary Large Object) (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Données blob (Binary Large Object) (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: blob
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-blob
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FILESTREAM [SQL Server], design and implementation
 ms.assetid: 97509274-c3f8-43e5-a37c-52f1ffe0961a
-caps.latest.revision: 
+caps.latest.revision: 39
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fc308b9b961ab98c5c44e8f6708e40cb9cf61ef0
-ms.sourcegitcommit: aebbfe029badadfd18c46d5cd6456ea861a4e86d
+ms.openlocfilehash: f6b56534215f82e6490ea2eb50bc4449afd9291a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/14/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binary-large-object-blob-data-sql-server"></a>Données blob (Binary Large Object) (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

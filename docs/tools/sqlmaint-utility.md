@@ -1,16 +1,16 @@
 ---
 title: Utilitaire sqlmaint | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: sqlmaint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database maintenance plans [SQL Server]
 - sqlmaint utility
@@ -20,19 +20,19 @@ helpviewer_keywords:
 - maintenance plans [SQL Server], command prompt
 - backing up [SQL Server], sqlmaint utility
 ms.assetid: 937a9932-4aed-464b-b97a-a5acfe6a50de
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5384932d020b62b3e88d28cc37e3155a4a72f6ee
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: e7b1c7b1f415388ac2fad57b2973b2dd552e267f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlmaint-utility"></a>sqlmaint (utilitaire)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Le**sqlmaint** utilitaire exécute un ensemble spécifique d’opérations de maintenance sur une ou plusieurs bases de données. Utilisez **sqlmaint** pour exécuter des vérifications DBCC, sauvegarder une base de données et son journal des transactions, mettre à jour des statistiques et reconstruire des index. Toutes les activités de maintenance de base de données produisent un rapport qui peut être envoyé vers un fichier texte, un fichier HTML ou un compte de messagerie déterminé. **sqlmaint** exécute les plans de maintenance de base de données créés avec des versions précédentes de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour exécuter des plans de maintenance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à partir de l’invite de commandes, utilisez [l’utilitaire dtexec](../integration-services/packages/dtexec-utility.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’utilitaire**sqlmaint** exécute un ensemble spécifique d’opérations de maintenance sur une ou plusieurs bases de données. Utilisez **sqlmaint** pour exécuter des vérifications DBCC, sauvegarder une base de données et son journal des transactions, mettre à jour des statistiques et reconstruire des index. Toutes les activités de maintenance de base de données produisent un rapport qui peut être envoyé vers un fichier texte, un fichier HTML ou un compte de messagerie déterminé. **sqlmaint** exécute les plans de maintenance de base de données créés avec des versions précédentes de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour exécuter des plans de maintenance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à partir de l’invite de commandes, utilisez [l’utilitaire dtexec](../integration-services/packages/dtexec-utility.md).  
   
 > [!IMPORTANT]  
 >  [!INCLUDE[ssNoteDepNextAvoid](../includes/ssnotedepnextavoid-md.md)] Utilisez plutôt la fonction plan de maintenance de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour plus d’informations sur les plans de maintenance, consultez [Plans de maintenance](../relational-databases/maintenance-plans/maintenance-plans.md).  
@@ -86,7 +86,7 @@ number[minutes | hours | days | weeks | months]
  Spécifie que le diagramme de syntaxe pour l’utilitaire **sqlmaint** doit être retourné. Ce paramètre doit être utilisé seul.  
   
  **-S** *server_name*[ **\\***instance_name*]  
- Spécifie l’instance cible de [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Spécifiez *server_name* pour vous connecter à l’instance par défaut du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] sur ce serveur. Spécifiez *nom_serveur***\\***nom_instance* pour se connecter à une instance nommée de [!INCLUDE[ssDE](../includes/ssde-md.md)] sur ce serveur. Si aucun serveur n’est spécifié, **sqlmaint** se connecte à l’instance par défaut de [!INCLUDE[ssDE](../includes/ssde-md.md)] sur l’ordinateur local.  
+ Spécifie l’instance cible de [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Spécifiez *server_name* pour vous connecter à l’instance par défaut du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] sur ce serveur. Spécifiez *server_name***\\*** instance_name* pour vous connecter à une instance nommée de [!INCLUDE[ssDE](../includes/ssde-md.md)] sur ce serveur. Si aucun serveur n’est spécifié, **sqlmaint** se connecte à l’instance par défaut de [!INCLUDE[ssDE](../includes/ssde-md.md)] sur l’ordinateur local.  
   
  **-U** *login_ID*  
  Spécifie l'ID de connexion à utiliser lors de la connexion au serveur. Si celui-ci n’est pas fourni, **sqlmaint** tente d’utiliser l’authentification [!INCLUDE[msCoName](../includes/msconame-md.md)] Windows. Si *login_ID* contient des caractères spéciaux, il doit être encadré par des guillemets doubles. Ceux-ci sont facultatifs dans tous les autres cas.  
@@ -94,7 +94,7 @@ number[minutes | hours | days | weeks | months]
 > [!IMPORTANT]  
 >  Lorsque c'est possible, utilisez l'authentification Windows.  
   
- **-P** *password*  
+ **-P** *mot de passe*  
  Spécifie le mot de passe de l’ID de connexion. Uniquement valide si le paramètre **-U** est également fourni. Si le *password* contient des caractères spéciaux, il doit être encadré par des guillemets doubles ; ceux-ci sont facultatifs dans tous les autres cas.  
   
 > [!IMPORTANT]  
@@ -135,7 +135,7 @@ c:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint_1996
  Le nom de fichier complet UNC est requis pour *html_file* lorsque **sqlmaint** accède à un serveur distant.  
   
  **-DelHtmlRpt** \<*time_period*>  
- Spécifie que tous les rapports HTML dans le répertoire de rapports supprimés si l’intervalle de temps après la création du fichier du rapport dépasse \< *time_period*>. **-DelHtmlRpt** recherche les fichiers dont les noms correspondent au modèle créé à partir du paramètre *html_file*. Si *html_file* est c:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint.htm, puis **- DelHtmlRpt** entraîne **sqlmaint** tous les fichiers dont les noms correspondent au modèle C:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint\*.htm et qui sont plus anciens que la valeur spécifiée \< *time_period*>.  
+ Spécifie que tous les rapports HTML du répertoire des rapports doivent être supprimés si l’intervalle de temps écoulé depuis la création du fichier de rapport excède la valeur spécifiée par \<*time_period*>. **-DelHtmlRpt** recherche les fichiers dont les noms correspondent au modèle créé à partir du paramètre *html_file*. Si *html_file* est c:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint.htm, **-DelHtmlRpt** provoque la suppression par **sqlmaint** de tous les fichiers dont le nom correspond au modèle C:\Program Files\Microsoft SQL Server\Mssql\Backup\AdventureWorks2012_maint\*.htm et qui sont antérieurs à la date/heure spécifiée par \<*time_period*>.  
   
  **-RmUnusedSpace** *threshold_percent free_percent*  
  Spécifie que l’espace inutilisé est retiré de la base de données spécifiée dans **-D**. Cette option est uniquement utile pour les bases de données dont la configuration prévoit une croissance automatique. *Threshold_percent* indique, en Mo, la taille qu’une base de données doit atteindre pour que **sqlmaint** tente d’en supprimer l’espace de données inutilisé. Si la base de données est plus petite que *threshold_percent*, aucune action n’est exécutée. *Free_percent* spécifie l’espace qui doit rester libre dans la base de données, exprimé sous la forme d’un pourcentage de la taille finale de celle-ci. Prenons l’exemple d’une base de données de 200 Mo contenant 100 Mo de données. Si la valeur 10 est affectée à *free_percent* , la base de données a pour taille finale 110 Mo. La base de données n’est pas étendue si elle est inférieure à la valeur de *free_percent* augmentée de la quantité de données contenue dans la base de données. Prenons l’exemple d’une base de données de 108 Mo contenant 100 Mo de données. Si la valeur 10 est affectée à *free_percent* , la base de données ne passera pas à 110 Mo, mais conserve sa taille de 108 Mo.  
@@ -205,7 +205,7 @@ dbname_log_yyyymmddhhmm.BAK
  Spécifie que le support de sauvegarde est un disque.  
   
  **-DelBkUps**< *time_period* >  
- Pour les sauvegardes sur disque, spécifie que tout fichier de sauvegarde dans le répertoire de sauvegarde supprimés si l’intervalle de temps après la création de la sauvegarde excède la \< *time_period*>.  
+ Pour les sauvegardes sur disque, spécifie que tous les fichiers de sauvegarde du répertoire de sauvegarde doivent être supprimés si l’intervalle de temps écoulé depuis la création de la sauvegarde excède la valeur indiquée dans \<*time_period*>.  
   
  **-CrBkSubDir**  
  Pour les sauvegardes sur disque, spécifie qu’un sous-répertoire doit être créé dans le répertoire [*backup_path*] ou dans le répertoire de sauvegarde par défaut si **-UseDefDir** est également spécifié. Le nom du sous-répertoire est généré à partir du nom de base de données spécifié dans **-D**. **-CrBkSubDir** offre un moyen aisé de placer toutes les sauvegardes de différentes bases de données dans des sous-répertoires séparés sans devoir modifier le paramètre *backup_path* .  
@@ -233,7 +233,7 @@ dbname_log_yyyymmddhhmm.BAK
   
  Si seul le paramètre *number* est spécifié, la partie de la date sélectionnée par défaut est **semaines**.  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Notes   
  L’utilitaire **sqlmaint** effectue des opérations de maintenance sur une ou plusieurs bases de données. Si **-D** est spécifié, les opérations spécifiées par ailleurs portent uniquement sur la base de données indiquée. Si **-PlanName** ou **-PlanID** est spécifié, la seule information récupérée du plan de maintenance indiqué par **sqlmaint** est la liste des bases de données contenues dans le plan. Toutes les opérations spécifiées dans les autres paramètres de **sqlmaint** s’appliquent à chaque base de données figurant sur la liste extraite du plan, l’utilitaire **sqlmaint** n’effectuant aucune opération de maintenance définie dans le plan lui-même.  
   
  L’utilitaire **sqlmaint** retourne 0 en cas de réussite et 1 en cas d’échec. L'échec de l'exécution est signalé :  
@@ -275,7 +275,7 @@ sqlmaint -S MyServer -PlanName MyUserDBPlan -BkUpDB -BkUpMedia DISK -UseDefDir -
 sqlmaint -S MyServer -BkUpDB -BkUpMedia DISK -UseDefDir  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [BACKUP &#40;Transact-SQL&#41;](../t-sql/statements/backup-transact-sql.md)   
  [UPDATE STATISTICS &#40;Transact-SQL&#41;](../t-sql/statements/update-statistics-transact-sql.md)  
   

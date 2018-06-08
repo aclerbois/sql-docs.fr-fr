@@ -1,31 +1,30 @@
 ---
-title: "Guide d’architecture de gestion de la mémoire | Microsoft Docs"
-ms.custom: 
+title: Guide d’architecture de gestion de la mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 11/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - guide, memory management architecture
 - memory management architecture guide
 ms.assetid: 7b0d0988-a3d8-4c25-a276-c1bdba80d6d5
-caps.latest.revision: 
+caps.latest.revision: 6
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 06721e22794de1ed9e7661d8606759e2035f710f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8d01610b3ac4d87b747398bd71bdd63f1842a3ee
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="memory-management-architecture-guide"></a>guide d’architecture de gestion de la mémoire
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -39,7 +38,7 @@ Les systèmes de mémoire virtuelle autorisent le surengagement de la mémoire p
 
 ## <a name="includessnoversionincludesssnoversion-mdmd-memory-architecture"></a>Architecture de la mémoire de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] acquiert et libère la mémoire dynamiquement en fonction des besoins. En règle générale, un administrateur ne doit plus spécifier la quantité de mémoire à allouer à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], même si cette option existe toujours et est obligatoire dans certains environnements.
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] acquiert et libère la mémoire dynamiquement selon ses besoins. En règle générale, un administrateur ne doit plus spécifier la quantité de mémoire à allouer à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], même si cette option existe toujours et est obligatoire dans certains environnements.
 
 L'un des objectifs principaux de tous les logiciels de base de données est de réduire les E/S disque, car les opérations de lecture et écriture sur le disque font partie des opérations les plus consommatrices de ressources. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] crée un pool de mémoires tampons en mémoire afin d’y garder les pages lues à partir de la base de données. Une grande partie du code [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] vise à réduire au minimum le nombre d’opérations de lecture et d’écriture physiques entre le disque et le pool de mémoires tampons. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] tente d’atteindre un équilibre entre deux objectifs :
 
@@ -62,8 +61,8 @@ L’utilisation d’AWE et du privilège de verrouillage des pages en mémoire v
 | |32 bits <sup>1</sup> |64 bits|
 |-------|-------|-------| 
 |Mémoire conventionnelle |Toutes les éditions [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] . jusqu'à la limite d'espace d'adressage virtuel de processus : <br>- 2 Go<br>- 3 Go avec le paramètre d’amorçage /3 gb <sup>2</sup> <br>- 4 Go sur WOW64 <sup>3</sup> |Toutes les éditions [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] . jusqu'à la limite d'espace d'adressage virtuel de processus : <br>- 7 To avec l’architecture IA64 (IA64 non pris en charge dans [!INCLUDE[ssSQL11](../includes/sssql11-md.md)] et les versions ultérieures)<br>- Maximum du système d’exploitation avec architecture x64 <sup>4</sup>
-|Mécanisme AWE (Permet à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] d'aller au-delà de la limite d'espace d'adressage virtuel de processus sur une plateforme 32 bits.) |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Éditions Standard, Enterprise et Developer : le pool de mémoires tampons est en mesure d’accéder à 64 Go de mémoire maximum.|Non applicable <sup>5</sup> |
-|Privilège de verrouillage des pages en mémoire du système d’exploitation (permet de verrouiller la mémoire physique, empêchant ainsi la pagination par le système d’exploitation de la mémoire verrouillée). <sup>6</sup> |[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Éditions Standard, Enterprise et Developer : nécessaire pour les processus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] devant utiliser le mécanisme AWE. La mémoire allouée par le biais du mécanisme AWE ne peut pas être dépaginée. <br> L'accord de ce privilège sans l'activation de AWE n'a aucun effet sur le serveur. | Option uniquement utilisée en cas de nécessité, à savoir s’il y a des raisons de penser que le processus sqlservr est hors page. Dans ce cas, l’erreur 17890, qui ressemble à l’exemple ci-dessous, est signalée dans le journal des erreurs : `A significant part of sql server process memory has been paged out. This may result in a performance degradation. Duration: #### seconds. Working set (KB): ####, committed (KB): ####, memory utilization: ##%.`|
+|Mécanisme AWE (Permet à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] d'aller au-delà de la limite d'espace d'adressage virtuel de processus sur une plateforme 32 bits.) |Éditions[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Standard, Enterprise et Developer : le pool de mémoires tampons est en mesure d’accéder à 64 Go de mémoire maximum.|Non applicable <sup>5</sup> |
+|Privilège de verrouillage des pages en mémoire du système d’exploitation (permet de verrouiller la mémoire physique, empêchant ainsi la pagination par le système d’exploitation de la mémoire verrouillée). <sup>6</sup> |Éditions [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Standard, Enterprise et Developer : nécessaire pour les processus [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] devant utiliser le mécanisme AWE. La mémoire allouée par le biais du mécanisme AWE ne peut pas être dépaginée. <br> L'accord de ce privilège sans l'activation de AWE n'a aucun effet sur le serveur. | Option uniquement utilisée en cas de nécessité, à savoir s’il y a des raisons de penser que le processus sqlservr est hors page. Dans ce cas, l’erreur 17890, qui ressemble à l’exemple ci-dessous, est signalée dans le journal des erreurs : `A significant part of sql server process memory has been paged out. This may result in a performance degradation. Duration: #### seconds. Working set (KB): ####, committed (KB): ####, memory utilization: ##%.`|
 
 <sup>1</sup> les versions 32 bits ne sont pas disponibles à partir de la version [!INCLUDE[ssSQL14](../includes/sssql14-md.md)].  
 <sup>2</sup> /3gb est un paramètre d’amorçage de système d’exploitation. Pour plus d'informations, consultez la MSDN Library.  
@@ -180,7 +179,7 @@ L'instance continue alors à acquérir de la mémoire comme l'exige la prise en 
 Les options de configuration min server memory et max server memory permettent d’établir les limites supérieure et inférieure de la quantité de mémoire utilisée par le pool de mémoires tampons et d’autres caches du moteur de base de données [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Le pool de mémoires tampons n'obtient pas immédiatement la quantité de mémoire spécifiée dans min server memory. En effet, il commence seulement avec la mémoire nécessaire à l'initialisation. Au fur et à mesure que la charge de travail du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] augmente, celui-ci acquiert la mémoire nécessaire à la prise en charge de ces travaux. Le pool de mémoires tampons ne libère aucune partie de la mémoire acquise avant d'atteindre la valeur spécifiée dans min server memory. Dès lors que la quantité spécifiée dans min server memory est atteinte, le pool de mémoires tampons utilise l'algorithme standard pour acquérir et libérer la mémoire en fonction des besoins. La seule différence réside dans le fait que le pool de mémoires tampons ne diminue jamais son allocation de mémoire en dessous de la valeur spécifiée dans min server memory et n'obtient jamais plus de mémoire que le niveau spécifié dans max server memory.
 
 > [!NOTE]
-> [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] en tant que processus acquiert plus de mémoire qu’indiqué par l’option max server memory. Les composants internes et externes peuvent allouer de la mémoire en dehors du pool de mémoires tampons, qui consomme un supplément de mémoire, mais la mémoire allouée au pool de mémoires tampons représente généralement la plus grande part de mémoire consommée par [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].
+> En tant que processus,[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] acquiert plus de mémoire qu’indiqué par l’option max server memory. Les composants internes et externes peuvent allouer de la mémoire en dehors du pool de mémoires tampons, qui consomme un supplément de mémoire, mais la mémoire allouée au pool de mémoires tampons représente généralement la plus grande part de mémoire consommée par [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].
 
 La quantité de mémoire acquise par le [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)] dépend entièrement de la charge de travail imposée à l’instance. Une instance [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] qui ne traite pas beaucoup de demandes risque de ne jamais atteindre la valeur de min server memory.
 
@@ -261,7 +260,7 @@ Les opérations d'E/S longues isolées qui ne présentent à priori aucun rappor
 ### <a name="error-detection"></a>Détection d'erreurs  
 Les pages de base de données peuvent faire appel à deux mécanismes facultatifs qui permettent de garantir l'intégrité de la page depuis son écriture sur le disque à sa relecture : les protections de la somme de contrôle et de la page endommagée. Ces mécanismes offrent une méthode indépendante de vérification de l'exactitude du stockage des données ainsi que des composants matériels tels que les contrôleurs, les pilotes, les câbles et même le système d'exploitation. La protection est ajoutée à la page juste avant l'écriture sur le disque, puis elle est vérifiée après sa lecture sur le disque.
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] procède à quatre nouvelles tentatives pour une lecture qui échoue avec une erreur de somme de contrôle, de page endommagée ou d’E/S disque. Si la lecture réussit lors d'une de ces tentatives, un message est écrit dans le journal des erreurs et l'exécution de la commande qui a déclenché la lecture se poursuit. Si les tentatives de lecture échouent, la commande échoue elle aussi avec le message d'erreur 824. 
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] procède à quatre nouvelles tentatives pour une lecture qui échoue avec une erreur de somme de contrôle, de page endommagée ou d'E/S disque. Si la lecture réussit lors d'une de ces tentatives, un message est écrit dans le journal des erreurs et l'exécution de la commande qui a déclenché la lecture se poursuit. Si les tentatives de lecture échouent, la commande échoue elle aussi avec le message d'erreur 824. 
 
 Le type de protection de page utilisé est un attribut de la base de données qui contient la page. La protection de la somme de contrôle est la protection par défaut pour les bases de données créées dans [!INCLUDE[ssVersion2005](../includes/ssversion2005-md.md)] et les versions ultérieures. Le mécanisme de protection de page est spécifié au moment de la création de la base de données et peut être modifié avec ALTER DATABASE SET. Vous pouvez déterminer le paramètre de protection de page en cours en interrogeant la colonne *page_verify_option* de l’affichage catalogue [sys.databases](../relational-databases/system-catalog-views/sys-databases-transact-sql.md) ou la propriété *IsTornPageDetectionEnabled* de la fonction [DATABASEPROPERTYEX](../t-sql/functions/databasepropertyex-transact-sql.md). 
 
@@ -280,7 +279,7 @@ La protection de la somme de contrôle, introduite dans [!INCLUDE[ssVersion2005]
 
 ## <a name="understanding-non-uniform-memory-access"></a>Présentation de l'accès NUMA (Non-uniform Memory Access)
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] est compatible avec la technologie NUMA (Non-Uniform Memory Access) et fonctionne correctement avec l’accès NUMA matériel sans configuration particulière. À mesure que la vitesse et le nombre de processeurs augmentent, il devient de plus en plus difficile de réduire le temps de réponse de la mémoire requis pour exploiter cette puissance de traitement supplémentaire. Pour contourner ce problème, les fournisseurs de matériel proposent des caches L3 de grande capacité, mais cette solution présente des limites. L’architecture NUMA fournit une solution évolutive à ce problème. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] a été conçu pour tirer parti des ordinateurs reposant sur la technologie NUMA sans qu’il soit nécessaire d’apporter des modifications aux applications. Pour en savoir plus, référez-vous à [Procédure : configurer SQL Server pour utiliser soft-NUMA](../database-engine/configure-windows/soft-numa-sql-server.md).
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] est compatible avec la technologie NUMA (Non-Uniform Memory Access) et fonctionne correctement avec l'accès NUMA matériel sans configuration particulière. À mesure que la vitesse et le nombre de processeurs augmentent, il devient de plus en plus difficile de réduire le temps de réponse de la mémoire requis pour exploiter cette puissance de traitement supplémentaire. Pour contourner ce problème, les fournisseurs de matériel proposent des caches L3 de grande capacité, mais cette solution présente des limites. L’architecture NUMA fournit une solution évolutive à ce problème. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] a été conçu pour tirer parti des ordinateurs reposant sur la technologie NUMA sans qu’il soit nécessaire d’apporter des modifications aux applications. Pour en savoir plus, référez-vous à [Procédure : configurer SQL Server pour utiliser soft-NUMA](../database-engine/configure-windows/soft-numa-sql-server.md).
 
 ## <a name="see-also"></a> Voir aussi
 [Mémoire du serveur (option de configuration de serveur)](../database-engine/configure-windows/server-memory-server-configuration-options.md)   

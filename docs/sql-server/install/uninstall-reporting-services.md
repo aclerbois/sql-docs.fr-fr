@@ -1,29 +1,24 @@
 ---
-title: "Désinstaller Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Désinstaller Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5c764a00-d4bc-465d-b32e-e4efce052ce4
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 89bd9331c7e4d8d89bdd617200dbce2664f00074
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+caps.latest.revision: 7
+author: markingmyname
+ms.author: maghan
+manager: kfile
+ms.openlocfilehash: 8d2e9501ad4958b5091b4c5f0b7967a7e74be6ba
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34773115"
 ---
 # <a name="uninstall-reporting-services"></a>Désinstaller Reporting Services
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

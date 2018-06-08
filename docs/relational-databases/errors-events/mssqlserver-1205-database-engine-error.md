@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_1205 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 1205 (Database Engine error)
 ms.assetid: 9fe3f67c-df3c-4642-a3a4-ccc0e138b632
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 20
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c9351a3040a2e4f362b00d647a72989a8877973
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 606e2f948dbbef82b07bba46184d07ef12f8c50f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver1205"></a>MSSQLSERVER_1205
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -41,7 +36,7 @@ ms.lasthandoff: 11/21/2017
 |Texte du message|La transaction (ID de processus %d) a été bloquée sur les ressources %.*ls par un autre processus et a été choisie comme victime. Relancez la transaction.|  
   
 ## <a name="explanation"></a>Explication  
-L'accès aux ressources s'effectue dans un ordre conflictuel sur des transactions distinctes, ce qui cause un interblocage. Exemple :  
+L'accès aux ressources s'effectue dans un ordre conflictuel sur des transactions distinctes, ce qui cause un interblocage. Exemple :  
   
 -   Transaction1 met à jour **Table1.Row1**, tandis que Transaction2 met à jour **Table2.Row2**.  
   

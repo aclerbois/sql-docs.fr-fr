@@ -1,17 +1,16 @@
 ---
-title: "XML, tâche | Microsoft Docs"
-ms.custom: 
+title: XML, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.ftptask.f1
 - sql13.dts.designer.ftptask.general.f1
@@ -19,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - FTP task [Integration Services]
 ms.assetid: 41c3f2c4-ee04-460a-9822-bb9ae4036c2e
-caps.latest.revision: 
+caps.latest.revision: 52
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3613462b45121d9d9042724a3dbf693060cc0c10
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
-ms.translationtype: MT
+ms.openlocfilehash: b7ff7d1fcaa85ac4b53b1cde391bfb5dd6cbaf91
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ftp-task"></a>Tâche FTP
   La tâche FTP télécharge des fichiers de données et gère des répertoires sur les serveurs. Par exemple, un package peut télécharger des fichiers de données à partir d’un serveur distant ou d’un emplacement Internet dans le cadre d’un flux de travail de package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] . Vous pouvez utiliser la tâche FTP aux fins suivantes :  
@@ -57,7 +55,7 @@ ms.lasthandoff: 03/20/2018
 ## <a name="predefined-ftp-operations"></a>Opérations FTP prédéfinies  
  La tâche FTP comprend un ensemble prédéfini d'opérations. Le tableau suivant décrit ces opérations.  
   
-|Opération| Description|  
+|Opération|Description|  
 |---------------|-----------------|  
 |Envoyer des fichiers|Envoie un fichier depuis l'ordinateur local vers le serveur FTP.|  
 |Recevoir des fichiers|Enregistre sur l'ordinateur local un fichier provenant du serveur FTP.|  
@@ -71,13 +69,13 @@ ms.lasthandoff: 03/20/2018
 ## <a name="custom-log-entries-available-on-the-ftp-task"></a>Entrées de journal personnalisées disponibles dans la tâche FTP  
  Le tableau suivant répertorie les entrées de journal personnalisées pour la tâche FTP. Pour plus d’informations, consultez [Journalisation Integration Services &#40;SSIS&#41;](../../integration-services/performance/integration-services-ssis-logging.md).  
   
-|Entrée du journal| Description|  
+|Entrée du journal|Description|  
 |---------------|-----------------|  
 |**FTPConnectingToServer**|Indique que la tâche a lancé une connexion au serveur FTP.|  
 |**FTPOperation**|Indique le démarrage et le type d'une opération FTP effectuée par la tâche.|  
   
-## <a name="related-tasks"></a>Tâches associées  
- Vous pouvez définir des propriétés au moyen du concepteur [!INCLUDE[ssIS](../../includes/ssis-md.md)] ou par programmation.  
+## <a name="related-tasks"></a>Related Tasks  
+ Vous pouvez définir les propriétés par le biais du concepteur [!INCLUDE[ssIS](../../includes/ssis-md.md)] ou par programmation.  
   
  Pour plus d’informations sur la façon de définir ces propriétés dans le Concepteur [!INCLUDE[ssIS](../../includes/ssis-md.md)] , consultez [Définir les propriétés d’une tâche ou d’un conteneur](http://msdn.microsoft.com/library/52d47ca4-fb8c-493d-8b2b-48bb269f859b).  
   
@@ -114,7 +112,7 @@ ms.lasthandoff: 03/20/2018
  **IsRemotePathVariable**  
  Indique si le chemin distant est stocké dans une variable. Cette propriété dispose des options répertoriées dans le tableau suivant.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |**True**|Le chemin d'accès de destination est stocké dans une variable. Cette valeur affiche l'option dynamique **RemoteVariable**.|  
 |**False**|Le chemin d'accès de destination est défini dans un gestionnaire de connexions de fichiers. Cette valeur affiche l'option dynamique **RemovePath**.|  
@@ -125,7 +123,7 @@ ms.lasthandoff: 03/20/2018
  **IsLocalPathVariable**  
  Indique si le chemin local est stocké dans une variable. Cette propriété dispose des options répertoriées dans le tableau suivant.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |**True**|Le chemin d'accès de destination est stocké dans une variable. Cette valeur affiche l'option dynamique **LocalVariable**.|  
 |**False**|Le chemin d'accès de destination est défini dans un gestionnaire de connexions de fichiers. Cette valeur affiche l'option dynamique **LocalPath**.|  
@@ -133,7 +131,7 @@ ms.lasthandoff: 03/20/2018
  **Opération**  
  Sélectionnez l'opération FTP à exécuter. Cette propriété dispose des options répertoriées dans le tableau suivant.  
   
-|Value|Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
 |**Envoyer des fichiers**|Envoie des fichiers. Cette valeur affiche les options dynamiques **LocalVariable**, **LocalPathRemoteVariable** et **RemotePath**.|  
 |**Recevoir des fichiers**|Reçoit des fichiers. Cette valeur affiche les options dynamiques **LocalVariable**, **LocalPathRemoteVariable** et **RemotePath**.|  
@@ -175,7 +173,7 @@ ms.lasthandoff: 03/20/2018
   
  **Rubriques connexes :** [Gestionnaire de connexions de fichiers plats](../../integration-services/connection-manager/flat-file-connection-manager.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Tâches Integration Services](../../integration-services/control-flow/integration-services-tasks.md)   
  [Flux de contrôle](../../integration-services/control-flow/control-flow.md)  
   

@@ -1,16 +1,15 @@
 ---
 title: XQuery et statique en tapant | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - checking static types
 - inference [XQuery]
 ms.assetid: d599c791-200d-46f8-b758-97e761a1a5c0
-caps.latest.revision: 
+caps.latest.revision: 38
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 41c21d1689e97b3939d4c479395e5af217e39897
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 03958536a329b59a15ceade13cac1598d97dd346
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xquery-and-static-typing"></a>XQuery et le typage statique
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -41,7 +39,7 @@ ms.lasthandoff: 02/09/2018
 ## <a name="static-type-inference"></a>Inférence de type statique  
  L'inférence de type statique consiste à déterminer le type de retour d'une expression. Pour cela, il faut prendre en compte les types statiques des paramètres d'entrée et la sémantique statique de l'opération, puis inférer le type statique du résultat. Par exemple, le type statique de l'expression 1 + 2,3 est déterminé de la manière suivante :  
   
--   Le type statique de 1 est **xs : Integer** et le type statique de 2,3 est **xs : decimal**. Selon la sémantique dynamique, la sémantique statique de la  **+**  opération convertit l’entier décimal et retourne une valeur décimale. Le type statique inféré serait alors **xs : decimal**.  
+-   Le type statique de 1 est **xs : Integer** et le type statique de 2,3 est **xs : decimal**. Selon la sémantique dynamique, la sémantique statique de la **+** opération convertit l’entier décimal et retourne une valeur décimale. Le type statique inféré serait alors **xs : decimal**.  
   
  En cas d'instances XML non typées, il existe des types particuliers pour indiquer que les données ne sont pas typées. Ces informations servent à vérifier le type statique et à effectuer certaines conversions implicites.  
   
@@ -64,11 +62,11 @@ ms.lasthandoff: 02/09/2018
   
  Les sous-types sont définis en fonction des règles de sous-typage permettant de les dériver par restriction ou extension du schéma XML. Par exemple, un type S est un sous-type du type T si toutes les valeurs dotées du type S sont aussi des instances du type T.  
   
- De plus, toutes les valeurs entières sont aussi des valeurs décimales, conformément à la hiérarchie du type de schéma XML. En revanche, toutes les valeurs décimales ne sont pas des entiers. Si un entier est un sous-type de décimal, la réciproque est fausse. Par exemple, le  **+**  opération autorise uniquement les valeurs de certains types, tels que les types numériques **xs : Integer**, **xs : decimal**, **xs : float**, et **xs : double**. Si les valeurs des autres types, tels que **xs : String**, sont passés, l’opération génère une erreur de type. Cela s'appelle le typage fort. Des valeurs d'autres types, comme le type atomique utilisé pour indiquer la présence de XML non typé, peuvent être converties implicitement en une valeur d'un type accepté par l'opération. Cela s'appelle le typage faible.  
+ De plus, toutes les valeurs entières sont aussi des valeurs décimales, conformément à la hiérarchie du type de schéma XML. En revanche, toutes les valeurs décimales ne sont pas des entiers. Si un entier est un sous-type de décimal, la réciproque est fausse. Par exemple, le **+** opération autorise uniquement les valeurs de certains types, tels que les types numériques **xs : Integer**, **xs : decimal**, **xs : float**, et **xs : double**. Si les valeurs des autres types, tels que **xs : String**, sont passés, l’opération génère une erreur de type. Cela s'appelle le typage fort. Des valeurs d'autres types, comme le type atomique utilisé pour indiquer la présence de XML non typé, peuvent être converties implicitement en une valeur d'un type accepté par l'opération. Cela s'appelle le typage faible.  
   
- Si elle est obligatoire après une conversion implicite, la vérification des types statiques permet de s'assurer que seules les valeurs dotées de types autorisés et d'une cardinalité correcte sont transmises à une opération. Pour « chaîne » + 1, il reconnaît que le type statique de « chaîne » est **xs : String**. Étant donné que cela n’est pas un type autorisé pour le  **+**  opération, une erreur de type est déclenchée.  
+ Si elle est obligatoire après une conversion implicite, la vérification des types statiques permet de s'assurer que seules les valeurs dotées de types autorisés et d'une cardinalité correcte sont transmises à une opération. Pour « chaîne » + 1, il reconnaît que le type statique de « chaîne » est **xs : String**. Étant donné que cela n’est pas un type autorisé pour le **+** opération, une erreur de type est déclenchée.  
   
- En cas d'ajout du résultat d'une expression arbitraire E1 à une expression arbitraire E2 (E1 + E2), l'inférence de type statique détermine tout d'abord les types statiques de E1 et de E2, puis vérifie que ces types statiques sont autorisés avec l'opération. Par exemple, si le type statique de E1 peut être soit un **xs : String** ou **xs : Integer**, la vérification des types statiques génère une erreur de type, bien que certaines valeurs au moment de l’exécution peut-être être des entiers. Ce serait le cas si le type statique de E1 était **xs : Integer\***. Étant donné que la  **+**  opération accepte uniquement un seul nombre entier et E1 peut en renvoyer zéro ou supérieur à 1, la vérification des types statiques génère une erreur.  
+ En cas d'ajout du résultat d'une expression arbitraire E1 à une expression arbitraire E2 (E1 + E2), l'inférence de type statique détermine tout d'abord les types statiques de E1 et de E2, puis vérifie que ces types statiques sont autorisés avec l'opération. Par exemple, si le type statique de E1 peut être soit un **xs : String** ou **xs : Integer**, la vérification des types statiques génère une erreur de type, bien que certaines valeurs au moment de l’exécution peut-être être des entiers. Ce serait le cas si le type statique de E1 était **xs : Integer\***. Étant donné que la **+** opération accepte uniquement un seul nombre entier et E1 peut en renvoyer zéro ou supérieur à 1, la vérification des types statiques génère une erreur.  
   
  Comme nous l'avons déjà mentionné, il arrive fréquemment que l'inférence de type déduise un type plus large que ce que sait l'utilisateur à l'égard des données transmises. Dans ces cas-là, l'utilisateur doit réécrire la requête. Certains cas par défaut sont les suivantes :  
   

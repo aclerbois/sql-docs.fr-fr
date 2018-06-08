@@ -1,29 +1,25 @@
 ---
-title: "Cibles des événements étendus SQL Server | Microsoft Docs"
-ms.custom: 
-ms.date: 06/12/2017
-ms.prod: sql-non-specified
+title: Cibles des événements étendus SQL Server | Microsoft Docs
+ms.custom: ''
+ms.date: 04/17/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 47c64144-4432-4778-93b5-00496749665b
-caps.latest.revision: 
+caps.latest.revision: 2
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3c0d634e359b9b3578ba46649d202beef3367dd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ff8bbd4060e6aa309c3e98f52c04fe88b76721fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="targets-for-extended-events-in-sql-server"></a>Cibles des Événements étendus SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -41,7 +37,7 @@ Cet article explique quand et comment utiliser les cibles package0 cible pour le
 La [section ring_buffer section](#h2_target_ring_buffer) inclut un exemple d’utilisation de [XQuery dans Transact-SQL](../../xquery/xquery-language-reference-sql-server.md) pour copier une chaîne XML dans un ensemble de lignes relationnel.
 
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Conditions préalables requises
 
 
 - Familiarisez-vous avec les concepts de base des événements étendus, comme décrit dans [Démarrage rapide : événements étendus dans SQL Server](../../relational-databases/extended-events/quick-start-extended-events-in-sql-server.md).
@@ -90,6 +86,10 @@ Les événements SQL Server peuvent interagir avec le suivi d’événements pou
 
 Cette cible ETW traite de manière *synchrone* les données qu’elle reçoit, tandis que la plupart des cibles procèdent de manière *asynchrone*.
 
+> [!NOTE]
+> Azure SQL Database ne prend pas en charge la cible ETW. Azure SQL Database Managed Instance ne la prend pas en charge non plus.
+
+<!-- After OPS Versioning is live, the above !NOTE could be converted into a "3colon ZONE".  GeneMi = MightyPen. -->
 
 <a name="h2_target_event_counter"></a>
 
@@ -152,6 +152,15 @@ La cible **event_file** écrit la sortie de session d’événements à partir d
 
 
 - Le nom de fichier que vous choisissez est utilisé par le système en tant que préfixe auquel un entier long basé sur une date-heure est ajouté suivi de l’extension .xel.
+
+::: moniker range="= azuresqldb-current || = azuresqldb-mi-current || = sqlallproducts-allversions"
+
+> [!NOTE]
+> Azure SQL Database prend en charge la cible **event_file**, mais uniquement en utilisant un objet blob dans le stockage Azure pour la sortie. SQL Database ne permet pas le stockage de la sortie des événements dans un fichier sur votre disque dur local.
+>
+> Pour obtenir un exemple de code **event_file** utilisable avec SQL Database (et avec SQL Database Managed Instance), consultez [Code de la cible de fichier d’événements pour les événements étendus dans SQL Database](https://docs.microsoft.com/azure/sql-database/sql-database-xevent-code-event-file).
+
+::: moniker-end
 
 
 #### <a name="create-event-session-with-eventfile-target"></a>CREATE EVENT SESSION avec cible **event_file**

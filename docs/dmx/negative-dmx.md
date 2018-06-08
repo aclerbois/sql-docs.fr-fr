@@ -1,31 +1,30 @@
 ---
-title: "- (Négatif) (DMX) | Documents Microsoft"
-ms.custom: 
+title: '- (Négatif) (DMX) | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-dev_langs: DMX
+dev_langs:
+- DMX
 helpviewer_keywords:
 - '- (negative)'
 - negative operator (-)
 ms.assetid: b530abee-71dd-4e10-b75e-d1cf98d4ea27
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: a2109ad0957e2ef847d0953148c0903e67f68dab
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: bec30e443ef4715cf30df42037d0ce9a7875bb6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="--negative-dmx"></a>- (Négatif) (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -47,8 +46,8 @@ ms.lasthandoff: 01/08/2018
  Valeur dotée du type de données du paramètre spécifié.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence des opérateurs](../dmx/data-mining-extensions-dmx-operator-reference.md)   
- [Opérateurs &#40; DMX &#41;](../dmx/operators-dmx.md)   
- [Opérateurs unaires &#40; DMX &#41;](../dmx/operators-unary.md)  
+ [Data Mining Extensions &#40;DMX&#41; référence des opérateurs](../dmx/data-mining-extensions-dmx-operator-reference.md)   
+ [Opérateurs &#40;DMX&#41;](../dmx/operators-dmx.md)   
+ [Opérateurs unaires &#40;DMX&#41;](../dmx/operators-unary.md)  
   
   

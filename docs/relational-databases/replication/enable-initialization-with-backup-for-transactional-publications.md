@@ -1,17 +1,16 @@
 ---
-title: "Activer l’initialisation avec une sauvegarde pour les publications transactionnelles | Microsoft Docs"
-ms.custom: 
+title: Activer l’initialisation avec une sauvegarde pour les publications transactionnelles | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - manual subscription initialization [SQL Server replication]
 - subscriptions [SQL Server replication], initializing
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - transactional replication, backup and restore
 - backups [SQL Server replication], transactional replication
 ms.assetid: 9df00514-aa9d-4ac6-9766-d226c9958175
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b674b6debc307a6f87c5244a376174990631a1f0
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: d90366333a6c6a551a5be8652ad4be9657b91eee
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-initialization-with-backup-for-transactional-publications"></a>Activer l’initialisation avec une sauvegarde pour les publications transactionnelles
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,28 +1,26 @@
 ---
 title: SQLExecute (le pilote ODBC Visual FoxPro) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLExecute function [ODBC], Visual FoxPro ODBC Driver
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLExecute function [ODBC], Visual FoxPro ODBC Driver
 ms.assetid: cce0c25f-fa85-4cf5-bfee-4b7a9401f585
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 99863c7a8a4287a0a736cb2b958f87f854bcaa5a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d3d45067b77c26e275cb8a983c8295ca3b9800b0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlexecute-visual-foxpro-odbc-driver"></a>SQLExecute (le pilote ODBC Visual FoxPro)
 > [!NOTE]  

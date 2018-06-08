@@ -1,16 +1,15 @@
 ---
-title: "Explorateur de modèles | Microsoft Docs"
-ms.custom: 
+title: Explorateur de modèles | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-templates
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.templates.explorer.f1
 - sql13.wb.templates.f1
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - templates [Transact-SQL]
 - templates [SQL Server], Template Explorer
 ms.assetid: b9ee55c5-bb44-4f76-90ac-792d8d83b4c8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 567be902918060203407ec70229aa66c01ae6baa
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 8d6fadfa9b084a16f6464bbebf6d6a8e32b7cbbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="template-explorer"></a>Explorateur de modèles
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

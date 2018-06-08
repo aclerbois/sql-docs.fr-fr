@@ -1,17 +1,16 @@
 ---
-title: "Charger en masse des données dans les tables d’une publication de fusion | Microsoft Docs"
-ms.custom: 
+title: Charger en masse des données dans les tables d’une publication de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - merge replication bulk loading [SQL Server replication]
 - sp_addtabletocontents
 ms.assetid: 16e6498a-b449-4051-aec4-ea814a2ad993
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 834c8fabce18bde36e590813b4ead3702a2822ad
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: dfc47282eecfa121015298d5561c5e39fbc872ef
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bulk-load-data-into-tables-in-a-merge-publication"></a>Charger en masse des données dans les tables d’une publication de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

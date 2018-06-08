@@ -1,17 +1,15 @@
 ---
-title: "FormattedValue, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: FormattedValue, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Cell::FormattedValue
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - FormattedValue property [ADO MD]
 ms.assetid: 5c06451e-06ec-4da6-9a87-2d043469248a
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0250690adc967205f87fb71c33ef8c424a28a841
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4bb9eb5e50e0669136afe1ceaf4413bec47f83de
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="formattedvalue-property-ado-md"></a>FormattedValue, propriété (ADO MD)
 Indique l’affichage mis en forme d’un [cellule](../../../ado/reference/ado-md-api/cell-object-ado-md.md) valeur.  

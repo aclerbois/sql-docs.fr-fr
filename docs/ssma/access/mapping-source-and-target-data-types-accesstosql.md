@@ -1,16 +1,15 @@
 ---
-title: "Mappage de Source et les Types de données cible (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Mappage de Source et les Types de données cible (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - source data types
 - target data types
 ms.assetid: b362a075-16e7-423f-b63f-e1e9f02844a9
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f4de8ef23dae7d51e63742caf30ccc2a79361ae0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: af10741f0041525b058341f398b86c5e62f7a7e3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-source-and-target-data-types-accesstosql"></a>Source de mappage et les Types de données cible (AccessToSQL)
 Les types de base de données Access diffèrent [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] types de base de données. Lorsque vous convertissez des objets de base de données Access à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] des objets, vous devez spécifier le mappage des types de données à partir de l’accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]. Vous pouvez accepter les mappages de type de données par défaut, ou vous pouvez personnaliser les mappages comme indiqué dans les procédures suivantes.  
@@ -97,7 +95,7 @@ La procédure suivante montre comment mapper des types de données au niveau du 
   
     2.  Cliquez sur **Supprimer**.  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Étapes suivantes  
 L’étape suivante du processus de migration est [convertir des objets de base de données de l’accès aux objets SQL Server](http://msdn.microsoft.com/en-us/e0ef67bf-80a6-4e6c-a82d-5d46e0623c6c)  
   
 ## <a name="see-also"></a>Voir aussi  

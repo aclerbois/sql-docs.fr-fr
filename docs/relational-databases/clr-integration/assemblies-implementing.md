@@ -1,33 +1,31 @@
 ---
-title: "Implémentation d’assemblys | Documents Microsoft"
-ms.custom: 
+title: Implémentation d’assemblys | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - assemblies [CLR integration], implementing
 ms.assetid: c228d7bf-a906-4f37-a057-5d464d962ff8
-caps.latest.revision: 
+caps.latest.revision: 33
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3739ec98683810b683bf644912268d22efe6e261
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9ba5a73921a2690c10f1b2610c6fb071824baf89
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="assemblies---implementing"></a>Assemblys - mise en œuvre
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique fournit des informations sur les concepts suivants, afin de vous aider à implémenter et à utiliser les assemblys dans vos bases de données :  
+  Cette rubrique fournit des informations sur les concepts suivants, afin de vous aider à implémenter et à utiliser les assemblys dans vos bases de données :  
   
 -   Création d'assemblys  
   
@@ -46,14 +44,14 @@ Cette rubrique fournit des informations sur les concepts suivants, afin de vous 
   
  **Pour créer un assembly à l’aide de SQL Server Management Studio**  
   
--   [Propriétés de l’assembly &#40; Page Général &#41;](../../relational-databases/clr-integration/assemblies-properties.md)  
+-   [Propriétés de l’assembly &#40;Page Général&#41;](../../relational-databases/clr-integration/assemblies-properties.md)  
   
 ## <a name="modifying-assemblies"></a>Modification des assemblys  
  Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous modifiez les assemblys au moyen de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ALTER ASSEMBLY. Dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], vous utilisez pour cela l'éditeur assisté d'assemblys. Vous pouvez modifier un assembly pour effectuer les tâches suivantes :  
   
 -   Changer l'implémentation de l'assembly en chargeant une nouvelle version de ses binaires. Pour plus d’informations, consultez [la gestion des Versions d’Assembly](#_managing) plus loin dans cette rubrique.  
   
--   Changer le jeu d'autorisations de l'assembly. Pour plus d’informations, consultez [Designing Assemblies](../../relational-databases/clr-integration/assemblies-designing.md).  
+-   Changer le jeu d'autorisations de l'assembly. Pour plus d’informations, consultez [Conception d’assemblys](../../relational-databases/clr-integration/assemblies-designing.md).  
   
 -   Modifier la visibilité de l'assembly. Les assemblys visibles sont disponibles pour référencement dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les assemblys non visibles ne sont pas disponibles, même s'ils ont été chargés dans la base de données. Par défaut, les assemblys chargés dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont visibles.  
   
@@ -65,7 +63,7 @@ Cette rubrique fournit des informations sur les concepts suivants, afin de vous 
   
  **Pour modifier un assembly à l’aide de SQL Server Management Studio**  
   
--   [Propriétés de l’assembly &#40; Page Général &#41;](../../relational-databases/clr-integration/assemblies-properties.md)  
+-   [Propriétés de l’assembly &#40;Page Général&#41;](../../relational-databases/clr-integration/assemblies-properties.md)  
   
 ## <a name="dropping-disabling-and-enabling-assemblies"></a>Suppression, désactivation et activation des assemblys  
  Vous supprimez les assemblys à l'aide de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] DROP ASSEMBLY ou dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
@@ -84,7 +82,7 @@ Cette rubrique fournit des informations sur les concepts suivants, afin de vous 
   
 -   [sp_configure &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md)  
   
-##  <a name="_managing"></a>La gestion des Versions d’Assembly  
+##  <a name="_managing"></a> La gestion des Versions d’Assembly  
  Quand un assembly est chargé dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est stocké et géré dans les catalogues système de la base de données. Toutes les modifications apportées à la définition de l’assembly dans le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] doivent être propagées à l’assembly qui est stocké dans le catalogue de base de données.  
   
  Quand vous modifiez un assembly, vous devez émettre une instruction ALTER ASSEMBLY pour le mettre à jour dans la base de données, de façon à le remplacer par la dernière copie des modèles [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] contenant son implémentation.  
@@ -93,14 +91,14 @@ Cette rubrique fournit des informations sur les concepts suivants, afin de vous 
   
 -   des colonnes calculées persistantes référençant des méthodes de l'assembly, soit directement, soit indirectement via des méthodes ou des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ;  
   
--   Colonnes de type CLR défini par l’utilisateur qui dépendent de l’assembly et le type implémente une **UserDefined** (non -**natif**) format de sérialisation.  
+-   Des colonnes d’un type CLR défini par l’utilisateur dépendant de l’assembly, ce type implémentant un format de sérialisation **UserDefined** (non-**Native**).  
   
 > [!CAUTION]  
 >  Si WITH UNCHECKED DATA n'est pas spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tente d'empêcher ALTER ASSEMBLY de s'exécuter si la nouvelle version de l'assembly affecte des données existantes dans des tables, des index ou dans d'autres sites persistants. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne garantit cependant pas que les colonnes, les index, les vues indexées ou les expressions calculés seront cohérents avec les routines et les types sous-jacents une fois l'assembly CLR mis à jour. Soyez prudent lorsque vous exécutez ALTER ASSEMBLY pour vous assurer qu'il n'y a pas de discordance entre le résultat d'une expression et une valeur basée sur cette expression stockée dans l'assembly.  
   
  Seuls les membres de la **db_owner** et **db_ddlowner** rôle de base de données fixe peut exécuter ALTER ASSEMBLY à l’aide de la clause WITH UNCHECKED DATA.  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] publie un message dans le journal des événements Windows que l’assembly a été modifié avec des données non vérifiées dans les tables. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] marque ensuite les tables contenant les données dépendant de l'assembly comme comportant des données non vérifiées. Le **has_unchecked_assembly_data** colonne de la **sys.tables** affichage catalogue contient la valeur 1 pour les tables qui contiennent des données non vérifiées et 0 pour les tables sans les données non vérifiées.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] publie un message dans le journal des événements des applications Windows indiquant que l'assembly a été modifié avec les données non vérifiées des tables. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] marque ensuite les tables contenant les données dépendant de l'assembly comme comportant des données non vérifiées. Le **has_unchecked_assembly_data** colonne de la **sys.tables** affichage catalogue contient la valeur 1 pour les tables qui contiennent des données non vérifiées et 0 pour les tables sans les données non vérifiées.  
   
  Pour résoudre l’intégrité des données est désactivées, exécutez DBCC CHECKDB WITH EXTENDED_LOGICAL_CHECKS sur chaque table qui comporte des données est désactivées. Si DBCC CHECKDB WITH EXTENDED_LOGICAL_CHECKS échoue, vous devez supprimer les lignes de table qui ne sont pas valides ou modifier le code de l’assembly à résoudre les problèmes et ensuite, émettez les instructions ALTER ASSEMBLY supplémentaires.  
   
@@ -120,7 +118,7 @@ Cette rubrique fournit des informations sur les concepts suivants, afin de vous 
 -   [ALTER ASSEMBLY &#40;Transact-SQL&#41;](../../t-sql/statements/alter-assembly-transact-sql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assemblys &#40; moteur de base de données &#41;](../../relational-databases/clr-integration/assemblies-database-engine.md)   
+ [Assemblys & #40 ; moteur de base de données & #41 ;](../../relational-databases/clr-integration/assemblies-database-engine.md)   
  [Obtention d’informations sur les assemblys](../../relational-databases/clr-integration/assemblies-getting-information.md)  
   
   

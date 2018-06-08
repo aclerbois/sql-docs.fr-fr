@@ -1,31 +1,28 @@
 ---
-title: "Instructions SQL construites au moment de l’exécution | Documents Microsoft"
-ms.custom: 
+title: Instructions SQL construites au moment de l’exécution | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - run time constructed SQL statements [ODBC]
 - SQL statements [ODBC], constructing
 - SQL statements [ODBC], building at run time
 ms.assetid: f6554486-d49c-436a-82e3-4c158d26acd8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1d9463795697584be0dc1d6f96845cf810857292
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 18f5a02bdcec575ac1362d3f656480eb0ab9b4a3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-statements-constructed-at-run-time"></a>Instructions SQL construites au moment de l’exécution
 Les applications qui effectuent une analyse ad hoc couramment construisent des instructions SQL en cours d’exécution. Par exemple, une feuille de calcul peut autoriser un utilisateur de sélectionner les colonnes à partir de laquelle récupérer les données :  

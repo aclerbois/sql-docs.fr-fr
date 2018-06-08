@@ -1,27 +1,24 @@
 ---
-title: "Considérations sur la programmation | Documents Microsoft"
-ms.custom: 
+title: Considérations sur la programmation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6a1b7b7e-5d08-4df8-aa4a-688da7da1b30
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 58769f27822395676231ff78eb702d0acfebf791
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 41f0cc191852dcff2f7c0b70c5ab95ead8eca2f0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="programming-considerations"></a>Éléments de programmation à prendre en considération
 Cette section décrit brièvement les différentes rubriques relatives à l’écriture de pilotes et les applications ODBC.  

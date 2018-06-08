@@ -1,28 +1,25 @@
 ---
-title: "Sauvegarde d’une base de données avec des tables mémoire optimisées | Microsoft Docs"
-ms.custom: 
+title: Sauvegarde d’une base de données avec des tables mémoire optimisées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 83d47694-e56d-4dae-b54e-14945bf8ba31
-caps.latest.revision: 
+caps.latest.revision: 18
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fc74c48c5eba25fa502f207b2dc5bd3c17615c42
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 35c700c5f9ada3fbe9426a1e7b99f6a791737e25
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="backing-up-a-database-with-memory-optimized-tables"></a>Sauvegarde d'une base de données avec des tables mémoire optimisées
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,31 +1,28 @@
 ---
-title: "Enregistrements et champs spécifiques au fournisseur | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Enregistrements et champs spécifiques au fournisseur | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - records-provided fields [ADO]
 - provider-supplied fields [ADO]
 ms.assetid: 77f95e0a-0cf2-411a-a792-593f77330fbd
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5341eac5d18d222e2e0d1f97a006179ffa8927d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d929238274b5b92e9bdf7b89a369e7988c06b3fc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="records-and-provider-supplied-fields"></a>Enregistrements et champs spécifiques au fournisseur
 Lorsqu’un [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) objet est ouvert, sa source peut être la ligne actuelle d’open [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md), une URL absolue ou une URL relative en conjonction avec open [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet .  
@@ -67,14 +64,14 @@ Lorsqu’un [enregistrement](../../../ado/reference/ado-api/record-object-ado.md
 |RESOURCE_PARSENAME|AdVarWChar|En lecture seule. Indique l’URL de la ressource.|  
 |RESOURCE_PARENTNAME|AdVarWChar|En lecture seule. Indique l’URL absolue de l’enregistrement parent.|  
 |RESOURCE_ABSOLUTEPARSENAME|AdVarWChar|En lecture seule. Indique l’URL absolue de la ressource, qui est la concaténation de PARENTNAME et PARSENAME.|  
-|RESOURCE_ISHIDDEN|adBoolean|True si la ressource est masquée. Aucune ligne n’est retournée, sauf si la commande qui crée l’ensemble de lignes explicitement sélectionne des lignes où la propriété RESOURCE_ISHIDDEN a la valeur True.|  
+|PROPRIÉTÉ RESOURCE_ISHIDDEN|adBoolean|True si la ressource est masquée. Aucune ligne n’est retournée, sauf si la commande qui crée l’ensemble de lignes explicitement sélectionne des lignes où la propriété RESOURCE_ISHIDDEN a la valeur True.|  
 |RESOURCE_ISREADONLY|adBoolean|True si la ressource est en lecture seule. Tente d’ouvrir cette ressource avec DBBINDFLAG_WRITE et échoue avec DB_E_READONLY. Cette propriété peut être modifiée, même lorsque la ressource n’a été ouverte pour la lecture.|  
 |RESOURCE_CONTENTTYPE|AdVarWChar|Indique l’utilisation probable du document, par exemple, d’un avocat. Cela peut correspondre au modèle Office qui a été utilisé pour créer le document.|  
 |RESOURCE_CONTENTCLASS|AdVarWChar|Indique le type MIME du document, indiquant le format tel que «`text/html`».|  
 |RESOURCE_CONTENTLANGUAGE|AdVarWChar|Indique la langue dans laquelle le contenu est stocké.|  
 |RESOURCE_CREATIONTIME|adFileTime|En lecture seule. Indique une structure FILETIME contenant l’heure de que création de la ressource. L’heure est signalée dans le format de temps universel coordonné (UTC).|  
-|RESOURCE_LASTACCESSTIME|AdFileTime|En lecture seule. Indique une structure FILETIME qui contient l’heure de dernier accès à la ressource. L’heure est au format UTC. Les membres FILETIME sont zéro si le fournisseur ne prend pas en charge ce membre de temps.|  
-|RESOURCE_LASTWRITETIME|AdFileTime|En lecture seule. Indique une structure FILETIME qui contient l’heure de dernière écriture dans la ressource. L’heure est au format UTC. Les membres FILETIME sont zéro si le fournisseur ne prend pas en charge ce membre de temps.|  
+|RESOURCE_LASTACCESSTIME|adFileTime|En lecture seule. Indique une structure FILETIME qui contient l’heure de dernier accès à la ressource. L’heure est au format UTC. Les membres FILETIME sont zéro si le fournisseur ne prend pas en charge ce membre de temps.|  
+|RESOURCE_LASTWRITETIME|adFileTime|En lecture seule. Indique une structure FILETIME qui contient l’heure de dernière écriture dans la ressource. L’heure est au format UTC. Les membres FILETIME sont zéro si le fournisseur ne prend pas en charge ce membre de temps.|  
 |RESOURCE_STREAMSIZE|asUnsignedBigInt|En lecture seule. Indique la taille du flux de valeur par défaut de la ressource, en octets.|  
 |RESOURCE_ISCOLLECTION|adBoolean|En lecture seule. True si la ressource est une collection, comme un répertoire. False si la ressource est un fichier simple.|  
 |RESOURCE_ISSTRUCTUREDDOCUMENT|adBoolean|True si la ressource est un document structuré. False si la ressource n’est pas un document structuré. Il peut être une collection ou un fichier simple.|  

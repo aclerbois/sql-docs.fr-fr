@@ -1,16 +1,14 @@
 ---
-title: "STNumGeometries (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: STNumGeometries (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STNumGeometries (geography Data Type)
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STNumGeometries method
 ms.assetid: 6ae7fac2-62f1-420f-9fc9-a09606be9605
-caps.latest.revision: 
+caps.latest.revision: 14
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ec0dd1fac37d8040b3b2cc327127820d7761778
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: f3bd4102d8337c7a2b3f22d6c123ad23a1fe03c8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stnumgeometries-geography-data-type"></a>STNumGeometries (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

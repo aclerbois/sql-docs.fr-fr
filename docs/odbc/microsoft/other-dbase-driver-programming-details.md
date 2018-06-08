@@ -1,31 +1,28 @@
 ---
-title: "Autres détails de programmation du pilote dBASE | Documents Microsoft"
-ms.custom: 
+title: Autres détails de programmation du pilote dBASE | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], DBasedriver
 - desktop database drivers [ODBC], DBasedriver
 - ODBC desktop database drivers [ODBC], DBasedriver
 ms.assetid: 1bb9b727-66e8-49e8-9a6b-587ad6217031
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ac6f47763f562d22325dee8502b447715f7664e5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6ec8380a562c4afa65df69527bb159cd2b42bc48
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="other-dbase-driver-programming-details"></a>Autres détails de programmation du pilote dBASE
 > [!NOTE]  

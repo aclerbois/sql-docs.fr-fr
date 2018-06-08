@@ -2,30 +2,26 @@
 title: Stratégies Always On pour les problèmes opérationnels - Disponibilité Always On | Microsoft Docs
 ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: availability-groups
+ms.prod: sql
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
+ms.technology: high-availability
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], troubleshooting
 - Availability Groups [SQL Server], policies
 ms.assetid: afa5289c-641a-4c03-8749-44862384ec5f
-caps.latest.revision: ''
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 19
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b92e1a679cfa738620e8e46195b2df14e8ee03ad
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 8fe881c82173877dba98e99c1af5b197ce5fba20
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768985"
 ---
 # <a name="always-on-policies-for-operational-issues---always-on-availability"></a>Stratégies Always On pour les problèmes opérationnels - Disponibilité Always On
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -72,12 +68,12 @@ ms.lasthandoff: 01/18/2018
 |-----------------|-----------|--------------------|-----------|  
 |État du cluster WSFC|[WSFC cluster service is offline](../../../database-engine/availability-groups/windows/wsfc-cluster-service-is-offline.md).|Critique|Instance de SQL Server|  
 |État en ligne du groupe de disponibilité|[Availability group is offline](../../../database-engine/availability-groups/windows/availability-group-is-offline.md).|Critique|Groupe de disponibilité|  
-|Disponibilité du groupe de disponibilité pour le basculement automatique|[Le groupe de disponibilité n’est pas prêt pour le basculement automatique](../../../database-engine/availability-groups/windows/availability-group-is-not-ready-for-automatic-failover.md).|Critique|Groupe de disponibilité|  
+|Disponibilité du groupe de disponibilité pour le basculement automatique|[Availability group is not ready for automatic failover](../../../database-engine/availability-groups/windows/availability-group-is-not-ready-for-automatic-failover.md).|Critique|Groupe de disponibilité|  
 |État de synchronisation des données des réplicas de disponibilité|[Some availability replicas are not synchronizing data](../../../database-engine/availability-groups/windows/some-availability-replicas-are-not-synchronizing-data.md).|Avertissement|Groupe de disponibilité|  
 |État de synchronisation des données de réplicas synchrones|[Some synchronous replicas are not synchronized](../../../database-engine/availability-groups/windows/some-synchronous-replicas-are-not-synchronized.md).|Avertissement|Groupe de disponibilité|  
-|État du rôle des réplicas de disponibilité|[Certains réplicas de disponibilité n’ont pas un rôle sain](../../../database-engine/availability-groups/windows/some-availability-replicas-do-not-have-a-healthy-role.md).|Avertissement|Groupe de disponibilité|  
+|État du rôle des réplicas de disponibilité|[Some availability replicas do not have a healthy role](../../../database-engine/availability-groups/windows/some-availability-replicas-do-not-have-a-healthy-role.md).|Avertissement|Groupe de disponibilité|  
 |État de la connexion des réplicas de disponibilité|[Some availability replicas are disconnected](../../../database-engine/availability-groups/windows/some-availability-replicas-are-disconnected.md).|Avertissement|Groupe de disponibilité|  
-|État du rôle du réplica de disponibilité|[Le réplica de disponibilité n’a pas un rôle sain](../../../database-engine/availability-groups/windows/availability-replica-does-not-have-a-healthy-role.md).|Critique|réplica de disponibilité|  
+|État du rôle du réplica de disponibilité|[Availability replica does not have a healthy role](../../../database-engine/availability-groups/windows/availability-replica-does-not-have-a-healthy-role.md).|Critique|réplica de disponibilité|  
 |État de la connexion du réplica de disponibilité|[Availability replica is disconnected](../../../database-engine/availability-groups/windows/availability-replica-is-disconnected.md).|Critique|Réplica de disponibilité|  
 |État de jointure du réplica de disponibilité|[Le réplica de disponibilité n’est pas joint](../../../database-engine/availability-groups/windows/availability-replica-is-not-joined.md).|Avertissement|Réplica de disponibilité|  
 |État de synchronisation des données du réplica de disponibilité|[Data synchronization state of some availability database is not healthy](../../../database-engine/availability-groups/windows/data-synchronization-state-of-some-availability-database-is-not-healthy.md).|Avertissement|Réplica de disponibilité|  
@@ -108,7 +104,7 @@ ms.lasthandoff: 01/18/2018
   
  Une stratégie définie par l’utilisateur peut utiliser les facettes PBM disponibles, notamment celles utilisées par les stratégies prédéfinies Always On (consultez [Stratégies prédéfinies et problèmes rencontrés](#Always OnPBM), plus haut dans cette rubrique). La facette serveur fournit les propriétés suivantes pour l’analyse de l’intégrité de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] : (**IsHadrEnabled** et **HadrManagerStatus**). La facette serveur fournit également les propriétés des stratégies suivantes pour l’analyse de la configuration du cluster WSFC : **ClusterQuorumType**et **ClusterQuorumState**.  
   
- Pour plus d’informations, consultez l’article du blog de l’équipe de SQL Server Always On intitulé [The Always On Health Model Part 2 -- Extending the Health Model](http://blogs.msdn.com/b/sqlAlways On/archive/2012/02/13/extending-the-Always On-health-model.aspx) (Modèle d’intégrité Always On Partie 2 - Extension du modèle d’intégrité).  
+ Pour plus d’informations, consultez l’article du blog de l’équipe de SQL Server Always On intitulé [The Always On Health Model Part 2 -- Extending the Health Model](https://blogs.msdn.microsoft.com/sqlalwayson/2012/02/13/the-alwayson-health-model-part-2-extending-the-health-model/) (Modèle d’intégrité Always On Partie 2 - Extension du modèle d’intégrité).  
   
 ##  <a name="RelatedTasks"></a> Tâches associées  
   
@@ -126,9 +122,9 @@ ms.lasthandoff: 01/18/2018
   
 ##  <a name="RelatedContent"></a> Contenu associé  
   
--   [The Always On Health Model Part 1 -- Health Model Architecture (Modèle d’intégrité Always On Partie 1 -- Architecture du modèle d’intégrité)](http://blogs.msdn.com/b/sqlAlways On/archive/2012/02/13/extending-the-Always On-health-model.aspx)  
+-   [The Always On Health Model Part 1 -- Health Model Architecture (Modèle d’intégrité Always On Partie 1 -- Architecture du modèle d’intégrité)](https://blogs.msdn.microsoft.com/sqlalwayson/2012/02/08/the-alwayson-health-model-part-1-health-model-architecture/)  
   
--   [The Always On Health Model Part 2 -- Extending the Health Model](http://blogs.msdn.com/b/sqlAlways On/archive/2012/02/13/extending-the-Always On-health-model.aspx)  
+-   [The Always On Health Model Part 2 -- Extending the Health Model](https://blogs.msdn.microsoft.com/sqlalwayson/2012/02/13/the-alwayson-health-model-part-2-extending-the-health-model/)  
   
 -   [Microsoft SQL Server Always On Solutions Guide for High Availability and Disaster Recovery (Guide de solutions Microsoft SQL Server Always On pour la haute disponibilité et la récupération d’urgence)](http://go.microsoft.com/fwlink/?LinkId=227600)  
   

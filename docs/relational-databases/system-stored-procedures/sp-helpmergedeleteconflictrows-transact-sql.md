@@ -1,16 +1,15 @@
 ---
 title: sp_helpmergedeleteconflictrows (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helpmergedeleteconflictrows
 ms.assetid: 222be651-5690-4341-9dfb-f9ec1d80c970
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: af2e83f26bfe8f94dd0befcc71259c4d04ed148a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a624b6ef69048375b671112f138d3f2ed7477604
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelpmergedeleteconflictrows-transact-sql"></a>sp_helpmergedeleteconflictrows (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +48,7 @@ sp_helpmergedeleteconflictrows [ [ @publication = ] 'publication']
   
 ## <a name="arguments"></a>Arguments  
  [  **@publication=**] **'***publication***'**  
- Nom de la publication. *publication* est **sysname**, avec une valeur par défaut  **%** . Si la publication est spécifiée, tous les conflits qualifiés par la publication sont renvoyés.  
+ Nom de la publication. *publication* est **sysname**, avec une valeur par défaut **%**. Si la publication est spécifiée, tous les conflits qualifiés par la publication sont renvoyés.  
   
  [  **@source_object=**] **'***source_object***'**  
  Est le nom de l’objet source. *source_object* est **nvarchar (386)**, avec NULL comme valeur par défaut.  
@@ -65,12 +63,12 @@ sp_helpmergedeleteconflictrows [ [ @publication = ] 'publication']
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**source_object**|**nvarchar (386)**|Objet source du conflit de suppression.|  
+|**source_object**|**nvarchar(386)**|Objet source du conflit de suppression.|  
 |**ROWGUID**|**uniqueidentifier**|Identificateur de ligne associé au conflit de suppression.|  
 |**conflict_type**|**int**|Code indiquant le type de conflit :<br /><br /> **1** = UpdateConflict : conflit est détecté au niveau de la ligne.<br /><br /> **2** = ColumnUpdateConflict : conflit est détecté au niveau de la colonne.<br /><br /> **3** = UpdateDeleteWinsConflict : suppression gagne le conflit.<br /><br /> **4** = UpdateWinsDeleteConflict : le rowguid supprimé qui perd le conflit est enregistré dans cette table.<br /><br /> **5** = UploadInsertFailed : insertion de l’abonné n’a pas pu être appliquée sur le serveur de publication.<br /><br /> **6** = DownloadInsertFailed : insertion provenant du serveur de publication n’a pas pu être appliquée sur l’abonné.<br /><br /> **7** = UploadDeleteFailed : suppression appliquée sur l’abonné n’a pas pu être téléchargée sur le serveur de publication.<br /><br /> **8** = DownloadDeleteFailed : suppression appliquée au serveur de publication n’a pas pu être téléchargée à l’abonné.<br /><br /> **9** = UploadUpdateFailed : mise à jour sur l’abonné n’a pas pu être appliquée sur le serveur de publication.<br /><br /> **10** = DownloadUpdateFailed : mise à jour sur le serveur de publication n’a pas pu être appliquée à l’abonné.|  
 |**reason_code**|**Int**|Code d'erreur pouvant dépendre du contexte.|  
 |**reason_text**|**varchar(720)**|Description de l'erreur qui peut dépendre du contexte.|  
-|**origin_datasource**|**varchar (255)**|Origine du conflit.|  
+|**origin_datasource**|**varchar(255)**|Origine du conflit.|  
 |**pubid**|**uniqueidentifier**|Identificateur de publication.|  
 |**MSrepl_create_time**|**datetime**|Moment où l'information sur les conflits a été ajoutée.|  
   
@@ -80,7 +78,7 @@ sp_helpmergedeleteconflictrows [ [ @publication = ] 'publication']
 ## <a name="remarks"></a>Notes  
  **sp_helpmergedeleteconflictrows** est utilisé dans la réplication de fusion.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe et le **db_owner** du rôle de base de données fixe peut exécuter **sp_helpmergedeleteconflictrows**.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,32 +1,29 @@
 ---
 title: Format de fichier texte (pilote du fichier texte) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - delimited text lines
 - fixed-width text files
 - text format [ODBC]
 - text file driver [ODBC], text format
 ms.assetid: f53cd4b5-0721-4562-a90f-4c55e6030cb9
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b7d111fee1ae82fc3dbb1fff3eec2dd9dff53465
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d2f0de1d7b5ca14c5ae51cd057244d0c3252780a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="text-file-format-text-file-driver"></a>Format de fichier texte (pilote du fichier texte)
 Le pilote ODBC texte prend en charge les deux fichiers texte délimités et à largeur fixe. Un fichier texte se compose d’une ligne d’en-tête facultatif et zéro ou plusieurs lignes de texte.  
@@ -46,9 +43,9 @@ Le pilote ODBC texte prend en charge les deux fichiers texte délimités et à l
 |Format|Représentation|  
 |------------|--------------------|  
 |Non-italique|Caractères qui doivent être écrits comme indiqué|  
-|*italique*|Arguments sont définis ailleurs dans la grammaire|  
+|*Italique*|Arguments sont définis ailleurs dans la grammaire|  
 |crochets ([])|Éléments facultatifs|  
-|les accolades ({})|Une liste de choix s’excluent mutuellement|  
+|accolades ({})|Une liste de choix s’excluent mutuellement|  
 |barres verticales (&#124;)|Options mutuellement exclusives distinctes|  
 |points de suspension (...)|Éléments qui peuvent être répétés une ou plusieurs fois|  
   

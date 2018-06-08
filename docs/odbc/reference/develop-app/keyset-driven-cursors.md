@@ -1,30 +1,27 @@
 ---
-title: "Curseurs pilotés par jeu de clés | Documents Microsoft"
-ms.custom: 
+title: Curseurs pilotés par jeu de clés | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - keyset-driven cursors [ODBC]
 - cursors [ODBC], key-set driven
 ms.assetid: 01769f43-1d9c-4685-84fa-15a6465335e9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: eff91b12ebf378aa4bbcdbbfbdfa84c40a66f06b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 13bb740a6d76ae97541f39b73d1cecf60bef61fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="keyset-driven-cursors"></a>Curseurs pilotés par jeu de clés
 Un curseur keyset réside entre statique et d’un curseur dynamique dans sa capacité à détecter les modifications. À un curseur statique, il ne détecte pas toujours les modifications apportées à l’appartenance et l’ordre du jeu de résultats. Comme un curseur dynamique, il détecte les modifications apportées aux valeurs des lignes du jeu de résultats (selon le niveau d’isolation de la transaction, tel que défini par l’attribut de connexion SQL_ATTR_TXN_ISOLATION).  

@@ -1,33 +1,30 @@
 ---
-title: "Append (méthode) (Index ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Append (méthode) (Index ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Indexes::Append
 helpviewer_keywords:
 - Append method [ADOX]
 ms.assetid: 6695769f-275b-4b70-81bd-1a5f7d74926c
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 00c0f00c1c5de2e049742603c08d323e2978d3fd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b25f75f89181f2020238f3a113b7a9908c6a88d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="append-method-adox-indexes"></a>Append (méthode) (Index ADOX)
 Ajoute un nouveau [Index](../../../ado/reference/adox-api/index-object-adox.md) de l’objet à la [index](../../../ado/reference/adox-api/indexes-collection-adox.md) collection.  

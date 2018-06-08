@@ -1,30 +1,26 @@
 ---
-title: "Configurer l’option de configuration de serveur locks | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur locks | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - locks option [SQL Server]
 ms.assetid: b0cf0f86-7652-4574-a9fb-908e10d03973
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0cdafcdcd8fbabebfc55c285b46ea4ee1534ec43
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: dbe738bb44203f45b6d780b9beed9ec5dbb1dc29
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-locks-server-configuration-option"></a>Configurer l'option de configuration de serveur locks
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -54,7 +50,7 @@ ms.lasthandoff: 02/03/2018
   
 ###  <a name="Recommendations"></a> Recommandations  
   
--   Cette option avancée ne doit être changée que par un administrateur de base de données qualifié ou un spécialiste agréé [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+-   Seul un administrateur de base de données qualifié ou un spécialiste agréé doit changer cette option avancée [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 -   Lorsque le serveur est démarré alors que la valeur 0 est attribuée à l'option **Verrous** , le gestionnaire de verrous acquiert suffisamment de mémoire auprès du [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour un pool initial de 2 500 structures de verrous. Lorsque ce pool est épuisé, le gestionnaire de verrous redemande de la mémoire.  
   

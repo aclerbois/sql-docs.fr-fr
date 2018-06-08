@@ -2,14 +2,12 @@
 title: OPENDATASOURCE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: ''
 ms.component: t-sql|functions
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - OLE DB data sources [SQL Server]
 - ad hoc connection information
 ms.assetid: 5510b846-9cde-4687-8798-be9a273aad31
-caps.latest.revision: ''
+caps.latest.revision: 41
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b839da305714566169a95dc3636c00eac9286e94
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 691a5017e14f217ec1807531e27694608139074e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="opendatasource-transact-sql"></a>OPENDATASOURCE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
@@ -57,7 +55,7 @@ OPENDATASOURCE ( provider_name, init_string )
  Nom enregistré comme PROGID du fournisseur OLE DB utilisé pour accéder à la source de données. *provider_name* est du type de données **char**, sans valeur par défaut.  
   
  *init_string*  
- Chaîne de connexion transmise à l’interface IDataInitialize du fournisseur de destination. La syntaxe de la chaîne du fournisseur est basée sur des paires mot clé-valeur séparées par un point-virgule, par exemple : **'***mot-clé1*=*valeur***;***mot-clé2*=*valeur***'**.  
+ Chaîne de connexion transmise à l’interface IDataInitialize du fournisseur de destination. La syntaxe de la chaîne du fournisseur est basée sur des paires mot clé-valeur séparées par un point-virgule, par exemple : **'***mot-clé1*=* valeur***;***mot-clé2*=* valeur***'**.  
   
  Pour plus d'informations sur les paires mot clé-valeur prises en charge par le fournisseur, consultez le kit de développement logiciel (SDK) de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Data Access. Cette documentation définit la syntaxe de base. Le tableau suivant répertorie les mots clés utilisés fréquemment dans l’argument *init_string*.  
   

@@ -1,32 +1,30 @@
 ---
-title: "Définir le niveau de compatibilité des publications de fusion | Microsoft Docs"
-ms.custom: 
+title: Définir le niveau de compatibilité des publications de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - compatibility [SQL Server], replication
 - backward compatibility [SQL Server], replication
 - publications [SQL Server replication], backward compatibility
 ms.assetid: db47ac73-948b-4d77-b272-bb3565135ea5
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fcdf5bf7dfde8ce02f66fbdb5f7430d50fdb74ef
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 87c782fe9c90e04ba0217776b8fd1fd618367fe9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-the-compatibility-level-for-merge-publications"></a>Définir le niveau de compatibilité des publications de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

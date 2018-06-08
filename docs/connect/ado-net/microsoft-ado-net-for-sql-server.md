@@ -1,27 +1,26 @@
 ---
 title: Microsoft ADO.NET pour SQL Server | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado-net
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5e467fce-7237-4678-bafa-a16f32323d0c
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d43cb61fc711624a4989d37565e1a6575ccfcb17
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: 7f8d8ee2ecca5db774ed31f25f85a150f0fc6b20
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563907"
 ---
 # <a name="microsoft-adonet-for-sql-server"></a>Microsoft ADO.NET pour SQL Server
 
@@ -47,7 +46,7 @@ ADO.NET est la technologie principale d’accès aux données pour les langages 
 ## <a name="more-samples"></a>D’autres exemples  
 * [Exemples de Code ADO.NET](https://msdn.microsoft.com/library/dw70f090.aspx)  
 * [Prise en main de .NET Framework sur Windows](https://www.microsoft.com/sql-server/developer-get-started/csharp/win/)
-* [Prise en main de .NET Core sur macOS](https://www.microsoft.com/sql-server/developer-get-started/csharp/mac/)
+* [Prise en main de .NET Core sur macOS](https://www.microsoft.com/sql-server/developer-get-started/csharp/macos/)
 * [Prise en main de .NET Core sur Ubuntu](https://www.microsoft.com/sql-server/developer-get-started/csharp/ubuntu/)
 * [Prise en main de .NET Core sur Red Hat Enterprise Linux (RHEL)](https://www.microsoft.com/sql-server/developer-get-started/csharp/rhel/)
   

@@ -1,35 +1,30 @@
 ---
-title: "Créer un jeu d’éléments de collecte - Type de collecteur Requête T-SQL générique | Microsoft Docs"
-ms.custom: 
+title: Créer un jeu d’éléments de collecte - Type de collecteur Requête T-SQL générique | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - T-SQL Query collector type
 - collection sets [SQL Server], creating custom
 ms.assetid: 6b06db5b-cfdc-4ce0-addd-ec643460605b
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 26
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c72ceb6d3bb9220c9f4f5ce8ad8c25624f037cbd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: f423496dca0ce8cb3269b3b2de4d97615c78af06
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="create-custom-collection-set---generic-t-sql-query-collector-type"></a>Créer un jeu d’éléments de collecte - Type de collecteur Requête T-SQL générique
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Vous pouvez créer un jeu d'éléments de collecte personnalisé avec des éléments de collecte qui utilisent le type de collecteur Requête T-SQL générique à l'aide des procédures stockées fournies avec le collecteur de données. Accomplir cette tâche implique l'utilisation de l'éditeur de requête dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour effectuer les procédures suivantes :  
+  Vous pouvez créer un jeu d'éléments de collecte personnalisé avec des éléments de collecte qui utilisent le type de collecteur Requête T-SQL générique à l'aide des procédures stockées fournies avec le collecteur de données. Accomplir cette tâche implique l'utilisation de l'éditeur de requête dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour effectuer les procédures suivantes :  
   
 -   Configurer les planifications de téléchargement.  
   

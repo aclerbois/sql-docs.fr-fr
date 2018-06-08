@@ -1,30 +1,29 @@
 ---
-title: "Méthode setLoginTimeout (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setLoginTimeout (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.setLoginTimeout
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.setLoginTimeout
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: b63d1cf4-dc1b-4e35-9a56-50436642eaaf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4a65f835792fc342cbbcc3803c9a3be6d0bb9214
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 4e317ea333c0b1a7b456096405160b302c1b644a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setlogintimeout-method-sqlserverdatasource"></a>Méthode setLoginTimeout (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public void setLoginTimeout(int loginTimeout)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *loginTimeout*  
+ *LoginTimeout*  
   
  Un **int** valeur qui représente le nombre de secondes d’attente. Zéro indique que le délai d'attente correspond au délai d'attente système par défaut, lequel est de 15 secondes.  
   
@@ -47,7 +46,7 @@ public void setLoginTimeout(int loginTimeout)
  Cette méthode setLoginTimeout est spécifiée par la méthode setLoginTimeout dans l’interface javax.sql.DataSource.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

@@ -1,15 +1,14 @@
 ---
-title: "Connexion de tâches par programmation | Microsoft Docs"
-ms.custom: 
+title: Connexion de tâches par programmation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: building-packages-programmatically
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - precedence constraints [Integration Services], connecting tasks
 - constraints [Integration Services]
 ms.assetid: 23668e88-cef4-4009-a9cf-38e607eab7a2
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 17a0b11519fcf438847c34291ded9e1b43edb090
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 3bfa1f25ed3dbedf92340112a806bd91de6c0158
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-tasks-programmatically"></a>Connexion de tâches par programme
   Une contrainte de précédence, représentée dans le modèle objet par la classe <xref:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraint>, établit l'ordre dans lequel les objets <xref:Microsoft.SqlServer.Dts.Runtime.Executable> s'exécutent dans un package. La contrainte de précédence permet de rendre l'exécution des conteneurs et des tâches d'un package dépendante du résultat de l'exécution d'une tâche ou d'un conteneur précédent. Les contraintes de précédence sont établies entre des paires d'objets <xref:Microsoft.SqlServer.Dts.Runtime.Executable> en appelant la méthode <xref:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints.Add%2A> de la collection <xref:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraints> sur l'objet conteneur. Après avoir créé une contrainte entre deux objets exécutables, vous devez définir la propriété <xref:Microsoft.SqlServer.Dts.Runtime.PrecedenceConstraint.Value%2A> pour établir les critères d'exécution du deuxième objet exécutable défini dans la contrainte.  

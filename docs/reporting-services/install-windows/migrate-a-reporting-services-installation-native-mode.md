@@ -1,16 +1,15 @@
 ---
 title: Migrer une installation Reporting Services (mode natif) | Microsoft Docs
-ms.custom: 
-ms.date: 08/17/2017
+ms.custom: ''
+ms.date: 05/24/2018
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - manual Reporting Services migrations
 - Report Server Windows service
@@ -20,16 +19,16 @@ helpviewer_keywords:
 - upgrading Reporting Services
 - migrating Reporting Services
 ms.assetid: a6fc56c1-c504-438d-a2b0-5ed29c24e7d6
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b05058e8d0254939f0c2018a484a12f458213f0b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 6502c85bdf016f325058c69fc5ae01f8d2553e87
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34550650"
 ---
 # <a name="migrate-a-reporting-services-installation-native-mode"></a>Migrer une installation Reporting Services (mode natif)
 

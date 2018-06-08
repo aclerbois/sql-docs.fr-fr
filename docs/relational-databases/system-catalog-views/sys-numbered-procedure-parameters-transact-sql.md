@@ -1,16 +1,14 @@
 ---
 title: Sys.numbered_procedure_parameters (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - numbered_procedure_parameters_TSQL
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.numbered_procedure_parameters catalog view
 ms.assetid: a441d46d-1f30-41c2-8d94-e9442f59786e
-caps.latest.revision: 
+caps.latest.revision: 20
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f8510807f4e06cb1f880be1bb982eee59db6994f
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: c64c6eadb57cf8e1c2d431a7d8af5164f704e21b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysnumberedprocedureparameters-transact-sql"></a>sys.numbered_procedure_parameters (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -53,19 +50,19 @@ ms.lasthandoff: 11/27/2017
 |**system_type_id**|**tinyint**|ID du type de système du paramètre|  
 |**user_type_id**|**int**|ID du type, tel que défini par l'utilisateur, du paramètre.|  
 |**max_length**|**smallint**|Longueur maximale du paramètre, en octets.<br /><br /> -1 = le type de données de colonne est varchar(max), nvarchar(max) ou varbinary(max).|  
-|**précision**|**tinyint**|Précision du paramètre s'il est de type numérique ; sinon, 0.|  
-|**mise à l’échelle**|**tinyint**|Échelle du paramètre s'il est de type numérique ; sinon, 0.|  
+|**precision**|**tinyint**|Précision du paramètre s'il est de type numérique ; sinon, 0.|  
+|**scale**|**tinyint**|Échelle du paramètre s'il est de type numérique ; sinon, 0.|  
 |**is_output**|**bit**|1 = le paramètre est un paramètre de sortie ou de retour ; sinon, 0|  
 |**is_cursor_ref**|**bit**|1 = le paramètre est un paramètre de référence de curseur.|  
   
 > [!NOTE]  
 >  Les paramètres XML et CLR ne sont pas pris en charge pour les procédures numérotées.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Affichages catalogue d’objets &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
+ [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)  
   
   

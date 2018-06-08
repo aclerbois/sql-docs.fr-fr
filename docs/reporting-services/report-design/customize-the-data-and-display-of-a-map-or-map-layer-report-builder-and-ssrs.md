@@ -1,16 +1,15 @@
 ---
-title: "Personnaliser des données et l’affichage d’une carte ou d’une couche (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Personnaliser des données et l’affichage d’une carte ou d’une couche (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - "10521"
 - sql13.rtp.rptdesigner.mapgroupproperties.filter.f1
@@ -25,16 +24,15 @@ f1_keywords:
 - sql13.rtp.rptdesigner.mapgroupproperties.variables.f1
 - "10507"
 ms.assetid: fdd9b994-d138-4990-a291-279b0249eb72
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f0c131fe26b5f7ab05a774ed7c66f54db0d816bb
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2965210603f3727edd2563d5f0b9301e31efee0e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-the-data-and-display-of-a-map-or-map-layer-report-builder-and-ssrs"></a>Personnaliser des données et l'affichage d'une carte ou d'une couche (Générateur de rapports et SSRS)
   Après avoir ajouté une carte ou une couche à un rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] en utilisant un Assistant, vous pouvez modifier l’apparence de la carte dans le rapport. Vous pouvez apporter des améliorations en considérant les points suivants :  

@@ -1,28 +1,27 @@
 ---
-title: "Cartes et régions de données (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Cartes et régions de données (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: data regions
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- data regions
 ms.assetid: 3afb8874-b36c-4e44-a0d8-80d2f7135fb1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a2609574eeb2c41bb4eeab2c85bebd483867ee16
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: cc4dcf117870b038dc7f33c988882b9fde5ca00c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-regions-and-maps-report-builder-and-ssrs"></a>Cartes et régions de données (Générateur de rapports et SSRS)
   Une région de données est un objet d'un rapport, affichant des données à partir du dataset d'un rapport. Les données de rapport peuvent s'afficher sous forme de nombres et de texte dans une table, une matrice ou une liste ; graphiquement dans un graphique ou une jauge ; et par rapport à l'arrière-plan géographique d'un plan. Les tables, matrices et listes sont toutes basées sur la région de données du *tableau matriciel* , lequel peut se développer autant que nécessaire pour afficher toutes les données du dataset. Une région de données de tableau matriciel prend en charge plusieurs groupes de lignes et de colonnes statiques et dynamiques. Un graphique affiche plusieurs séries et catégories de groupes sous divers formats graphiques. Une jauge affiche une valeur unique ou une valeur agrégée pour un dataset. Une carte affiche les données spatiales en tant qu'éléments cartographiques dont l'apparence peut varier selon les données agrégées d'un dataset.  

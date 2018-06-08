@@ -1,15 +1,13 @@
 ---
 title: BULK INSERT (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 01/04/2017
-ms.prod: sql-non-specified
+ms.date: 04/09/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: ''
 ms.component: t-sql|statements
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - bulk importing [SQL Server], BULK INSERT statement
 - file importing [SQL Server]
 ms.assetid: be3984e1-5ab3-4226-a539-a9f58e1e01e2
-caps.latest.revision: ''
+caps.latest.revision: 153
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b7569b89a9ceffd99e15d11a5ef06c880411a479
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+ms.openlocfilehash: 6388c41cf93e79b215927fbec6a2e31a4ef6ed3f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bulk-insert-transact-sql"></a>BULK INSERT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -125,9 +122,12 @@ Source de données externe nommée pointant vers l’emplacement de Stockage Blo
 > [!NOTE]  
 >  L'option MAXERRORS ne s'applique pas à la vérification des contraintes.  
   
- CODEPAGE **=** { **'**ACP**'** | **'**OEM**'** | **'**RAW**'** | **'***code_page***'** }  
+ CODEPAGE **=** { **'** ACP **'** | **'** OEM **'** | **'** RAW **'** | **'***code_page***'** }  
  Indique la page de codes des données dans le fichier. CODEPAGE n’est justifié que si les données contiennent des colonnes de type **char**, **varchar**ou **text** dont les valeurs de caractères sont supérieures à **127** ou inférieures à **32**.  
-  
+
+> [!IMPORTANT]
+> CODEPAGE n’est pas une option prise en charge sur Linux.
+
 > [!NOTE]  
 >  [!INCLUDE[msCoName](../../includes/msconame-md.md)] vous recommande de spécifier un nom de classement pour chaque colonne dans un [fichier de format](../../relational-databases/import-export/use-a-format-file-to-bulk-import-data-sql-server.md).  
   

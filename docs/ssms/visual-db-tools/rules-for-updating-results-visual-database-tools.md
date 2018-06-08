@@ -1,35 +1,34 @@
 ---
-title: "Règles relatives à la mise à jour des résultats (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Règles relatives à la mise à jour des résultats (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - View Designer, Results pane
 - updating query results
 - Query Designer [SQL Server], Results pane
 - Results pane
 ms.assetid: de131ef0-ccbd-446f-9400-b93c7b8fa537
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0ab1925f265eb27a6c0efd1b55b4770e4be7cf3d
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: ba9929b2588bb3d168e54d49c0eb95278011dbec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rules-for-updating-results-visual-database-tools"></a>Règles relatives à la mise à jour des résultats (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Dans de nombreux cas, vous pouvez mettre à jour le jeu de résultats affiché dans le [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md), avec quelques exceptions.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Dans de nombreux cas, vous pouvez mettre à jour le jeu de résultats affiché dans le [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md), avec quelques exceptions.  
   
 En général, pour mettre à jour des résultats, le [Concepteur de requêtes et de vues](../../ssms/visual-db-tools/query-and-view-designer-tools-visual-database-tools.md) doit disposer de suffisamment d’informations pour identifier de façon unique la ligne de la table. C'est le cas par exemple si la requête inclut une clé primaire dans la liste de sortie. En outre, vous devez être autorisé à mettre à jour la base de données.  
   

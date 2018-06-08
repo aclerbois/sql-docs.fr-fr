@@ -1,16 +1,14 @@
 ---
 title: COLUMNS_UPDATED (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - COLUMNS_UPDATED_TSQL
@@ -23,21 +21,20 @@ helpviewer_keywords:
 - column testing [SQL Server]
 - updated columns
 ms.assetid: 765fde44-1f95-4015-80a4-45388f18a42c
-caps.latest.revision: 
+caps.latest.revision: 53
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a64b20ce0d429ccd257c178abdb7c04630e409ec
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: bdb9328c484e2441d6b3f5aac817450d26440e88
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnsupdated-transact-sql"></a>COLUMNS_UPDATED (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Renvoie un modèle binaire de type **varbinary** qui indique les colonnes d’une table ou d’une vue qui ont été insérées ou mises à jour. COLUMNS_UPDATED est utilisé à n'importe quel endroit du corps d'un déclencheur INSERT ou UPDATE [!INCLUDE[tsql](../../includes/tsql-md.md)] pour tester si celui-ci doit exécuter certaines actions.
+Cette fonction retourne un modèle binaire de type **varbinary** qui indique les colonnes insérées ou mises à jour d’une table ou d’une vue. Utilisez `COLUMNS_UPDATED` à n’importe quel endroit du corps d’un déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)] INSERT ou UPDATE pour tester si celui-ci doit exécuter certaines actions.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -51,15 +48,15 @@ COLUMNS_UPDATED ( )
 **varbinary**
   
 ## <a name="remarks"></a>Notes   
-COLUMNS_UPDATED effectue un test pour déterminer si des actions UPDATE ou INSERT sont réalisées sur plusieurs colonnes. Pour tester des tentatives UPDATE ou INSERT sur une colonne, utilisez [UPDATE()](../../t-sql/functions/update-trigger-functions-transact-sql.md).
+`COLUMNS_UPDATED` effectue un test pour déterminer si des actions UPDATE ou INSERT sont réalisées sur plusieurs colonnes. Pour tester des tentatives UPDATE ou INSERT sur une colonne, utilisez [UPDATE()](../../t-sql/functions/update-trigger-functions-transact-sql.md).
   
-COLUMNS_UPDATED retourne un ou plusieurs octets classés de la gauche vers la droite, dans chacun desquels le bit le moins significatif est le bit le plus à droite. Le bit le plus à droite de l'octet le plus à gauche représente la première colonne de la table, le suivant à gauche la deuxième colonne, et ainsi de suite. COLUMNS_UPDATED retourne plusieurs octets si la table sur laquelle le déclencheur est créé contient plus de huit colonnes, l'octet le moins significatif étant celui le plus à gauche. COLUMNS_UPDATED retourne TRUE pour toutes les colonnes des actions INSERT car les valeurs insérées dans ces colonnes sont explicites ou implicites (NULL).
+`COLUMNS_UPDATED` retourne un ou plusieurs octets classés de gauche à droite. Le bit le plus à droite dans chaque octet est le bit le moins significatif. Le bit le plus à droite de l’octet le plus à gauche représente la première colonne de la table, le suivant à gauche représente la deuxième colonne, etc. `COLUMNS_UPDATED` retourne plusieurs octets si la table sur laquelle le déclencheur est créé contient plus de huit colonnes, l’octet le moins significatif étant celui le plus à gauche. `COLUMNS_UPDATED` retourne TRUE pour toutes les colonnes des actions INSERT, car les valeurs insérées dans ces colonnes sont explicites ou implicites (NULL).
   
-Pour tester l'existence de mises à jour ou d'insertions dans des colonnes spécifiques, indiquez, dans la syntaxe, un opérateur au niveau du bit et un masque de bits d'entier couvrant ces colonnes. Par exemple, la table **t1** contient les colonnes **C1**, **C2**, **C3**, **C4** et **C5**. Pour vérifier que les colonnes **C2**, **C3** et **C4** sont toutes mises à jour (en supposant que la table **t1** possède un déclencheur UPDATE), indiquez dans la syntaxe **& 14**. Pour vérifier si seule la colonne **C2** est mise à jour, spécifiez **& 2**.
+Pour tester l’existence de mises à jour ou d’insertions dans des colonnes spécifiques, utilisez dans la syntaxe un opérateur au niveau du bit et un masque de bits d’entier des colonnes testées. Par exemple, la table **t1** contient les colonnes **C1**, **C2**, **C3**, **C4** et **C5**. Pour vérifier que les colonnes **C2**, **C3** et **C4** ont toutes été mises à jour avec succès (en supposant que la table **t1** ait un déclencheur UPDATE), indiquez dans la syntaxe **& 14**. Pour vérifier si seule la colonne **C2** est mise à jour, spécifiez **& 2**. Consultez [Exemple A](https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/functions/columns-updated-transact-sql.md#a-using-columns_updated-to-test-the-first-eight-columns-of-a-table) et [Exemple B](https://github.com/MicrosoftDocs/sql-docs/blob/live/docs/t-sql/functions/columns-updated-transact-sql.md#b-using-columns_updated-to-test-more-than-eight-columns) pour obtenir des exemples réels.
   
-COLUMNS_UPDATED peut être utilisé à n'importe quel endroit d'un déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)] INSERT ou UPDATE.
+Utilisez `COLUMNS_UPDATED` n’importe où dans un déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)] INSERT ou UPDATE.
   
-La colonne ORDINAL_POSITION de la vue INFORMATION_SCHEMA.COLUMNS n'est pas compatible avec le modèle binaire des colonnes retournées par COLUMNS_UPDATED. Pour obtenir un modèle binaire compatible avec COLUMNS_UPDATED, référencez la propriété `ColumnID` de la fonction système `COLUMNPROPERTY` lorsque vous interrogez la vue `INFORMATION_SCHEMA.COLUMNS`, comme illustré dans l’exemple suivant :
+La colonne ORDINAL_POSITION de la vue INFORMATION_SCHEMA.COLUMNS n’est pas compatible avec le modèle binaire des colonnes retournées par `COLUMNS_UPDATED`. Pour obtenir un modèle binaire compatible avec `COLUMNS_UPDATED`, référencez la propriété `ColumnID` de la fonction système `COLUMNPROPERTY` quand vous interrogez la vue `INFORMATION_SCHEMA.COLUMNS`, comme illustré dans l’exemple suivant :
   
 ```sql
 SELECT TABLE_NAME, COLUMN_NAME,  
@@ -70,19 +67,19 @@ WHERE TABLE_NAME = 'Person';
 ```  
   
 ## <a name="column-sets"></a>Jeux de colonnes
-Lorsqu'un jeu de colonnes est défini sur une table, la fonction COLUMNS_UPDATED présente les comportements suivants :
--   Lorsqu'une colonne membre du jeu de colonnes est mise à jour de manière explicite, le bit correspondant pour cette colonne est défini sur 1 et le bit pour le jeu de colonnes est défini sur 1.  
--   Lorsqu'un jeu de colonnes est mis à jour de manière explicite, le bit pour le jeu de colonnes est défini sur 1 et les bits pour toutes les colonnes éparses de cette table sont définis sur 1.  
+Quand un jeu de colonnes est défini sur une table, la fonction `COLUMNS_UPDATED` se comporte comme suit :
+-   Lors de la mise à jour explicite d’une colonne membre du jeu de colonnes, le bit correspondant à cette colonne est défini sur 1 et le bit du jeu de colonnes est défini sur 1.  
+-   Lors de la mise à jour explicite d’un jeu de colonnes, le bit du jeu de colonnes est défini sur 1 et les bits pour toutes les colonnes éparses de cette table sont définis sur 1.  
 -   Pour les opérations d'insertion, tous les bits sont définis sur 1.  
   
-     Étant donné que les modifications apportées à un jeu de colonnes entraînent l'affectation de la valeur 1 à toutes les colonnes du jeu de colonnes, les colonnes d'un jeu de colonnes qui n'ont pas été modifiées semblent l'avoir été. Pour plus d’informations sur les jeux de colonnes, consultez [Utiliser des jeux de colonnes](../../relational-databases/tables/use-column-sets.md).  
+     Comme des modifications apportées à un jeu de colonnes entraînent la réinitialisation de toutes les colonnes du jeu de colonnes à 1, les colonnes non modifiées d’un jeu de colonnes apparaissent comme étant modifiées. Pour plus d’informations sur les jeux de colonnes, consultez [Utiliser des jeux de colonnes](../../relational-databases/tables/use-column-sets.md).  
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-using-columnsupdated-to-test-the-first-eight-columns-of-a-table"></a>A. Utilisation de COLUMNS_UPDATED pour tester les huit premières colonnes d'une table  
-L'exemple suivant crée deux tables, `employeeData` et `auditEmployeeData`. La table `employeeData` contient les informations sensibles relatives aux salaires des employés et peut être modifiée par les membres du service des ressources humaines. Si le numéro de sécurité sociale, le salaire annuel ou le numéro de compte en banque d'un employé sont modifiés, un enregistrement d'audit est généré et inséré dans la table `auditEmployeeData`.
+Cet exemple crée deux tables, `employeeData` et `auditEmployeeData`. La table `employeeData` contient des informations sensibles relatives aux salaires des employés et les membres du service des ressources humaines peuvent la modifier. Si le numéro de sécurité sociale, le salaire annuel ou le numéro de compte bancaire d’un employé change, un enregistrement d’audit est généré et inséré dans la table d’audit `auditEmployeeData`.
   
-En utilisant la fonction `COLUMNS_UPDATED()`, il est possible de tester rapidement les modifications apportées aux colonnes qui contiennent les informations sensibles relatives aux employés. Vous ne pouvez utiliser `COLUMNS_UPDATED()` de cette façon que pour détecter les modifications apportées aux huit premières colonnes de la table.
+Avec la fonction `COLUMNS_UPDATED()`, nous pouvons tester rapidement si des modifications ont été apportées aux colonnes contenant des informations sensibles relatives aux employés. Cette utilisation de `COLUMNS_UPDATED()` fonctionne seulement pour détecter des modifications apportées aux huit premières colonnes de la table.
   
 ```sql
 USE AdventureWorks2012;  
@@ -118,15 +115,15 @@ GO
 CREATE TRIGGER dbo.updEmployeeData   
 ON dbo.employeeData   
 AFTER UPDATE AS  
-/*Check whether columns 2, 3 or 4 have been updated. If any or all  
+/* Check whether columns 2, 3 or 4 have been updated. If any or all  
 columns 2, 3 or 4 have been changed, create an audit record. The
-bitmask is: power(2,(2-1))+power(2,(3-1))+power(2,(4-1)) = 14. To test   
-whether all columns 2, 3, and 4 are updated, use = 14 instead of >0  
-(below).*/
+bitmask is: power(2, (2-1)) + power(2, (3-1)) + power(2, (4-1)) = 14. To test   
+whether all columns 2, 3, and 4 are updated, use = 14 instead of > 0  
+(below). */
   
    IF (COLUMNS_UPDATED() & 14) > 0  
-/*Use IF (COLUMNS_UPDATED() & 14) = 14 to see whether all columns 2, 3,   
-and 4 are updated.*/  
+/* Use IF (COLUMNS_UPDATED() & 14) = 14 to see whether all columns 2, 3,   
+and 4 are updated. */  
       BEGIN  
 -- Audit OLD record.  
       INSERT INTO dbo.auditEmployeeData  
@@ -158,14 +155,14 @@ and 4 are updated.*/
    END;  
 GO  
   
-/*Inserting a new employee does not cause the UPDATE trigger to fire.*/  
+/* Inserting a new employee does not cause the UPDATE trigger to fire. */  
 INSERT INTO employeeData  
    VALUES ( 101, 'USA-987-01', 23000, 'R-M53550M', N'Mendel', N'Roland', 32);  
 GO  
   
-/*Updating the employee record for employee number 101 to change the   
+/* Updating the employee record for employee number 101 to change the   
 salary to 51000 causes the UPDATE trigger to fire and an audit trail to   
-be produced.*/  
+be produced. */  
   
 UPDATE dbo.employeeData  
    SET emp_salary = 51000  
@@ -174,9 +171,9 @@ GO
 SELECT * FROM auditEmployeeData;  
 GO  
   
-/*Updating the employee record for employee number 101 to change both   
+/* Updating the employee record for employee number 101 to change both   
 the bank account number and social security number (SSN) causes the   
-UPDATE trigger to fire and an audit trail to be produced.*/  
+UPDATE trigger to fire and an audit trail to be produced. */  
   
 UPDATE dbo.employeeData  
    SET emp_bankAccountNumber = '133146A0', emp_SSN = 'R-M53550M'  
@@ -188,7 +185,7 @@ GO
 ```  
   
 ### <a name="b-using-columnsupdated-to-test-more-than-eight-columns"></a>B. Utilisation de COLUMNS_UPDATED pour tester plus de huit colonnes  
-Pour tester l'existence de mises à jour affectant des colonnes autres que les huit premières colonnes d'une table, utilisez la fonction `SUBSTRING` afin de tester le bit adéquat retourné par `COLUMNS_UPDATED`. L’exemple suivant teste l’existence de mises à jour affectant les colonnes `3`, `5` et `9` de la table `AdventureWorks2012.Person.Person`.
+Pour tester l’existence de mises à jour affectant des colonnes autres que les huit premières colonnes d’une table, utilisez la fonction `SUBSTRING` afin de tester le bit adéquat retourné par `COLUMNS_UPDATED`. Cet exemple teste l’existence de mises à jour affectant les colonnes `3`, `5` et `9` de la table `AdventureWorks2012.Person.Person`.
   
 ```sql
 USE AdventureWorks2012;  
@@ -198,8 +195,8 @@ IF OBJECT_ID (N'Person.uContact2', N'TR') IS NOT NULL
 GO  
 CREATE TRIGGER Person.uContact2 ON Person.Person  
 AFTER UPDATE AS  
-    IF ( (SUBSTRING(COLUMNS_UPDATED(),1,1) & 20 = 20)   
-        AND (SUBSTRING(COLUMNS_UPDATED(),2,1) & 1 = 1) )   
+    IF ( (SUBSTRING(COLUMNS_UPDATED(), 1, 1) & 20 = 20)   
+        AND (SUBSTRING(COLUMNS_UPDATED(), 2, 1) & 1 = 1) )   
     PRINT 'Columns 3, 5 and 9 updated';  
 GO  
   

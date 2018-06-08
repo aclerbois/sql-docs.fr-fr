@@ -2,26 +2,24 @@
 title: Pilote Node.js pour SQL Server | Documents Microsoft
 ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: node-js
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: c4cdbfa6-9b73-4b72-a1a6-e1b45d8a773d
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 5cf72af4ebd9b00c06b80a64cd6f3017d9cd4a63
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 2864b94779179b7023a326834b7fc48ae1b72c40
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nodejs-driver-for-sql-server"></a>Pilote Node.js pour SQL Server
 

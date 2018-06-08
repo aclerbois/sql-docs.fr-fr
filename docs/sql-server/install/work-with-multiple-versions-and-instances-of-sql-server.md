@@ -1,17 +1,13 @@
 ---
 title: Utiliser plusieurs versions et instances de SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/25/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - concurrent installations [SQL Server]
 - versions [SQL Server], multiple
@@ -23,16 +19,15 @@ helpviewer_keywords:
 - 32-bit edition [SQL Server]
 - editions [SQL Server], side-by-side installations
 ms.assetid: 93acefa8-bb41-4ccc-b763-7801f51134e0
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: ccae571c9784b781197bf5ec462b6a8142d56452
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: ff1d58e3a860083b764c142dbb0d437e8b449de5
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772715"
 ---
 # <a name="work-with-multiple-versions-and-instances-of-sql-server"></a>Utiliser plusieurs versions et instances de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

@@ -1,16 +1,15 @@
 ---
 title: Fonction LocalDBGetInstances | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: localdb
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - LocalDBGetInstances
@@ -18,16 +17,15 @@ apilocation:
 - sqluserinstance.dll
 apitype: DLLExport
 ms.assetid: f95a9980-8bc0-426c-8aa1-e2660b6784cf
-caps.latest.revision: 
+caps.latest.revision: 13
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 39e78268f6a0826f16a50f3cfe56e112cc1611f9
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 3121049938af0707ce30c68a4da6d9ca96ec7763
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="localdbgetinstances-function"></a>Fonction LocalDBGetInstances
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

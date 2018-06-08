@@ -1,33 +1,32 @@
 ---
-title: "Boîte de dialogue Création de table (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Création de table (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vdtsql.chm:69650
 - vdt.dlgbox.maketable
 ms.assetid: 5eb28dc3-828e-486c-9348-596bb5a04c85
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c7c6efce5afa21a2caa06d3fb9edf6922e7c2db4
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: b755ee7478e3ffb83a8ef3897f97c325c7e169e1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="make-table-dialog-box-visual-database-tools"></a>Boîte de dialogue Création de table (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Permet de nommer une table créée dans laquelle vous copiez des lignes. Cette boîte de dialogue s'affiche lorsque vous modifiez le type d'une requête pour la transformer en une requête MAKE TABLE. Pour modifier le type d'une requête, dans le menu **Concepteur de requêtes** , pointez sur **Modifier le type**, puis cliquez sur **Créer une table**.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Permet de nommer une table créée dans laquelle vous copiez des lignes. Cette boîte de dialogue s'affiche lorsque vous modifiez le type d'une requête pour la transformer en une requête MAKE TABLE. Pour modifier le type d'une requête, dans le menu **Concepteur de requêtes** , pointez sur **Modifier le type**, puis cliquez sur **Créer une table**.  
   
 ## <a name="options"></a>Options  
 **Nom de la table**  

@@ -1,30 +1,27 @@
 ---
 title: Glossaire ADO | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO, glossary
 ms.assetid: b0478836-4123-4357-969a-c5784fc28be5
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1b27ecc0b3905a12d453cc53d6ac941fc80708f9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a6ba068234cbede37eeb97f77da6305ae950b673
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-glossary-terms"></a>Termes du glossaire ADO
 Cette rubrique définit les termes pertinents pour ADO.
@@ -47,7 +44,7 @@ Cette rubrique définit les termes pertinents pour ADO.
 ## <a name="b"></a>B
  mappage de l’entrée A la liaison entre un champ dans une table et une variable. Dans les extensions ADO de Visual C++, **Recordset** champs sont mappés à des variables C/C++.
 
- valeur numérique de masque de bits A prévu pour une comparaison de valeurs de bit par bit avec d’autres valeurs numériques, généralement pour les options d’indicateur dans le paramètre ou les valeurs de retour. Cette comparaison est généralement effectuée par des opérateurs logiques au niveau du bit, tel que **et** et **ou** en Visual Basic,  **&**  et **&#124;** en C++.
+ valeur numérique de masque de bits A prévu pour une comparaison de valeurs de bit par bit avec d’autres valeurs numériques, généralement pour les options d’indicateur dans le paramètre ou les valeurs de retour. Cette comparaison est généralement effectuée par des opérateurs logiques au niveau du bit, tel que **et** et **ou** en Visual Basic, **&** et **&#124;** en C++.
 
  Par exemple, ADO **FieldAttributeEnum** valeurs peuvent être utilisées en tant que masques de bits pour déterminer les attributs d’un champ. Supposons que vous souhaitiez déterminer si un champ a été mise à jour. Pour cela, vous pouvez tester à l’expression suivante en Visual Basic :`Field.Attributes AND adFldUpdatable`
 
@@ -126,7 +123,7 @@ Cette rubrique définit les termes pertinents pour ADO.
  dynamique une propriété spécifique à un fournisseur de données ou le service de curseur. Le **propriétés** collection d’un objet est renseignée automatiquement avec ces (« dynamique »). Un objet n’a pas de propriétés dynamiques jusqu'à ce qu’il est connecté à une source de données via un fournisseur de données particulier. Voir aussi données fournisseur, le curseur.
 
 ## <a name="e"></a>E
- Liste d’énumération A de constantes nommées. Les valeurs énumérées ne doivent pas être uniques. Toutefois, le nom de chaque valeur doit être unique dans l’étendue où l’énumération est définie. Dans ADO, les énumérations sont utilisées pour le paramètre numérique et valeurs de retour, pour ajouter signification à code ADO et de protéger le développeur à partir des valeurs numériques (qui peuvent changer d’une version à l’autre). Par exemple, pour ouvrir un statique **Recordset**, utilisez le **adOpenStatic** valeur énumérée :`Recordset.Open ,,adOpenStatic`
+ Liste d’énumération A de constantes nommées. Les valeurs énumérées ne doivent pas être uniques. Toutefois, le nom de chaque valeur doit être unique dans l’étendue où l’énumération est définie. Dans ADO, les énumérations sont utilisées pour le paramètre numérique et valeurs de retour, pour ajouter signification à code ADO et de protéger le développeur à partir des valeurs numériques (qui peuvent changer d’une version à l’autre). Par exemple, pour ouvrir un statique **Recordset**, utilisez le **adOpenStatic** valeur énumérée : `Recordset.Open ,,adOpenStatic`
 
  Également appelé *constante énumérée*. Voir aussi *constante*.
 

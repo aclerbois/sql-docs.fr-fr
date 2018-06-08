@@ -1,16 +1,13 @@
 ---
-title: sys.dm_io_virtual_file_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_io_virtual_file_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 05/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_io_virtual_file_stats
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_io_virtual_file_stats dynamic management function
 ms.assetid: fa3e321f-6fe5-45ff-b397-02a0dd3d6b7d
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ab0b534ceea8712c9c197ea52f2da66065d3167
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2720aba7dc9b3d8c1a6e34db5a588829245ed97a
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmiovirtualfilestats-transact-sql"></a>sys.dm_io_virtual_file_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-asdw-xxx-md.md)]
@@ -61,17 +58,17 @@ sys.dm_pdw_nodes_io_virtual_file_stats
 ## <a name="arguments"></a>Arguments  
 
 
- *database_id* | NULL
+ *database_id* | VALEUR NULL
 
- **S’applique à :** SQL Server (à partir de 2008), base de données SQL Azure
+ **S’APPLIQUE À :** SQL Server (à partir de 2008), Azure SQL Database
 
  ID de la base de données. *database_id* est de type int, sans valeur par défaut. Les entrées autorisées sont l'ID d'une base de données ou la valeur NULL. Lorsque vous spécifiez la valeur NULL, toutes les bases de données de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont renvoyées.  
   
  La fonction intégrée [DB_ID](../../t-sql/functions/db-id-transact-sql.md) peut être spécifié.  
   
-*file_id* | NULL
+*FILE_ID* | VALEUR NULL
 
-**S’applique à :** SQL Server (à partir de 2008), base de données SQL Azure
+**S’APPLIQUE À :** SQL Server (à partir de 2008), Azure SQL Database
  
 ID du fichier. *FILE_ID* est de type int, sans valeur par défaut. Les entrées autorisées sont l'ID d'un fichier ou la valeur NULL. Lorsque vous spécifiez la valeur NULL, tous les fichiers de la base de données sont renvoyés.  
   
@@ -94,13 +91,13 @@ ID du fichier. *FILE_ID* est de type int, sans valeur par défaut. Les entrées 
 |**io_stall**|**bigint**|Durée totale (en millisecondes) d'attente des utilisateurs pour les entrées/sorties effectuées sur le fichier.|  
 |**size_on_disk_bytes**|**bigint**|Nombre d'octets utilisés sur le disque pour ce fichier. Pour les fichiers partiellement alloués, ce nombre est le nombre réel d'octets utilisés sur le disque pour les instantanés de la base de données.|  
 |**file_handle**|**varbinary**|Descripteur de fichier Windows pour ce fichier.|  
-|**io_stall_queued_read_ms**|**bigint**|**Ne s’applique pas aux :**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)].<br /><br /> Latence totale d'E/S introduite par la gouvernance des ressources d'E/S pour les lectures. N'accepte pas la valeur NULL. Pour plus d’informations, consultez [sys.dm_resource_governor_resource_pools &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-resource-governor-resource-pools-transact-sql.md).|  
+|**io_stall_queued_read_ms**|**bigint**|**Ne s’applique pas aux :**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)].<br /><br /> Latence totale d'E/S introduite par la gouvernance des ressources d'E/S pour les lectures. N'accepte pas la valeur NULL. Pour plus d’informations, consultez [sys.dm_resource_governor_resource_pools &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-resource-governor-resource-pools-transact-sql.md).|  
 |**io_stall_queued_write_ms**|**bigint**|**Ne s’applique pas aux :**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] via [!INCLUDE[ssSQL12](../../includes/sssql11-md.md)].<br /><br />  Latence totale d'E/S introduite par la gouvernance des ressources d'E/S pour les écritures. N'accepte pas la valeur NULL.|
-|**pdw_node_id**|**int**|**S’applique à :** [!INCLUDE[ssSDW](../../includes/sssdw-md.md)]</br></br>Identificateur du nœud pour la distribution.
+|**pdw_node_id**|**int**|**S’applique à** : [!INCLUDE[ssSDW](../../includes/sssdw-md.md)]</br></br>Identificateur du nœud pour la distribution.
  
   
 ## <a name="permissions"></a>Autorisations  
- Requiert l'autorisation VIEW SERVER STATE. Pour plus d’informations, consultez [les fonctions et vues de gestion dynamique &#40; Transact-SQL &#41; ](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).  
+ Requiert l'autorisation VIEW SERVER STATE. Pour plus d’informations, consultez [fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).  
   
 ## <a name="examples"></a>Exemples  
 
@@ -127,7 +124,7 @@ WHERE database_name = ‘tempdb’ AND file_id = 2;
 
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [J’ai O liés les fonctions et vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/i-o-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [I, O les fonctions et vues de gestion dynamique liées &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/i-o-related-dynamic-management-views-and-functions-transact-sql.md)   
  [sys.database_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md)   
  [sys.master_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-master-files-transact-sql.md)  
   

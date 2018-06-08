@@ -2,9 +2,8 @@
 title: catalog.execution_component_phases | Microsoft Docs
 ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: ''
 ms.component: system-views
 ms.reviewer: ''
 ms.suite: sql
@@ -13,16 +12,15 @@ ms.technology:
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 ms.assetid: 07a9a163-4787-40f7-b371-ac5c6cb4b095
-caps.latest.revision: ''
+caps.latest.revision: 8
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e625abfc3e1defea478c62a024587b4fe126866
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: ec2754c1a9ced1ada44d4d461e8f3e76c4bc6c66
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catalogexecutioncomponentphases"></a>catalog.execution_component_phases
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

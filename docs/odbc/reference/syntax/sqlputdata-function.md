@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLPutData | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLPutData
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLPutData
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLPutData
-helpviewer_keywords: SQLPutData function [ODBC]
+f1_keywords:
+- SQLPutData
+helpviewer_keywords:
+- SQLPutData function [ODBC]
 ms.assetid: 9a60f004-1477-4c54-a20c-7378e1116713
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6d1a3d60c2a6cd5ed19f0183ba51a5a016ccfc36
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0e612ac7a6df03349f7cf00eb83433a86556cf8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlputdata-function"></a>Fonction SQLPutData
 **Mise en conformité**  
@@ -69,7 +70,7 @@ SQLRETURN SQLPutData(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLPutData** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLPutData** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Chaîne ou des données binaires retournées pour un paramètre de sortie a entraîné la troncation des caractères non vides ou les données binaires non NULL. S’il s’agissait d’une valeur de chaîne, il a été tronqué à la droite. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
@@ -89,7 +90,7 @@ SQLRETURN SQLPutData(
 |HY009|Utilisation non valide d’un pointeur null|(DM) l’argument *DataPtr* était un pointeur null et que l’argument *StrLen_or_Ind* n’était pas 0, SQL_DEFAULT_PARAM ou SQL_NULL_DATA.|  
 |HY010|Erreur de séquence de fonction|(DM) l’appel de fonction précédente n’était pas un appel à **SQLPutData** ou **SQLParamData**.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution a été appelée pour le handle de connexion qui est associé à la *au paramètre StatementHandle*. Cette fonction asynchrone toujours en cours d’exécution lors de l’appel de la fonction SQLPutData.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, ou **SQLMoreResults** a été appelé pour le *au paramètre StatementHandle* et a retourné SQL_PARAM_DATA_AVAILABLE. Cette fonction a été appelée avant la récupération des données pour tous les paramètres transmis en continu.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution (pas celui-ci) a été appelée pour le *au paramètre StatementHandle* et toujours en cours d’exécution lorsque cette fonction a été appelée.|  
 |HY013|Erreur de gestion de mémoire|L’appel de fonction n’a pas pu être traité, car les objets sous-jacents de la mémoire ne sont pas accessible, éventuellement en raison d’une mémoire insuffisante.|  
-|HY019|Données non caractères et non binaires envoyées en fragments|**SQLPutData** a été appelé plusieurs fois pour un paramètre ou une colonne et il n’est pas utilisé pour envoyer des données de caractères C à une colonne avec un type de données de spécifique à la source de données, binaire ou caractère ou pour envoyer des données binaires de C à une colonne avec un caractère, binaire, ou de type de données spécifique à la source de données.|  
+|HY019|Données non caractères et non binaires envoyées en fragments|**SQLPutData** a été appelé plusieurs fois pour un paramètre ou une colonne, et il n’était pas utilisé pour envoyer des données de caractères C à une colonne avec un type de données de spécifique à la source de données, binaire ou caractère ou pour envoyer des données binaires de C à une colonne avec un caractère , binaire ou type de données de spécifique à la source de données.|  
 |HY020|Tentative de concaténation d’une valeur null|**SQLPutData** a été appelé plusieurs fois depuis l’appel retourné SQL_NEED_DATA et dans un de ces appels, le *StrLen_or_Ind* argument contenus SQL_NULL_DATA ou SQL_DEFAULT_PARAM.|  
 |HY090|Longueur de chaîne ou une mémoire tampon non valide|L’argument *DataPtr* n’était pas un pointeur null et que l’argument *StrLen_or_Ind* était inférieur à 0, mais pas égale à SQL_NTS ou SQL_NULL_DATA.|  
 |HY117|Connexion est interrompue en raison de l’état de transaction inconnu. Déconnecter uniquement et les fonctions en lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
@@ -101,7 +102,7 @@ SQLRETURN SQLPutData(
  Si **SQLPutData** est appelé lors de l’envoi des données pour un paramètre dans une instruction SQL, il peut retourner tout SQLSTATE qui peut être retournée par la fonction appelée pour exécuter l’instruction (**SQLExecute** ou **SQLExecDirect**). Si elle est appelée lors de l’envoi de données pour une colonne en cours de mise à jour ou ajoutés avec **SQLBulkOperations** ou mise à jour **SQLSetPos**, elle peut retourner tout SQLSTATE qui peut être retournée par **SQLBulkOperations** ou **SQLSetPos**.  
   
 ## <a name="comments"></a>Commentaires  
- **SQLPutData** peut être appelée pour fournir des données de data-at-execution de deux utilisations : données du paramètre à utiliser dans un appel à **SQLExecute** ou **SQLExecDirect**, ou les données de la colonne à utiliser lorsqu’une ligne est mise à jour ou ajoutée par un appel à **SQLBulkOperations** ou est mis à jour par un appel à **SQLSetPos**.  
+ **SQLPutData** peut être appelée pour fournir des données de data-at-execution de deux utilisations : données du paramètre à utiliser dans un appel à **SQLExecute** ou **SQLExecDirect**, ou les données de la colonne à utiliser lorsqu’une ligne est mise à jour ou ajouté par un appel à **SQLBulkOperations** ou est mis à jour par un appel à **SQLSetPos**.  
   
  Lorsqu’une application appelle **SQLParamData** pour déterminer les données d’envoyer, le pilote retourne un indicateur que l’application peut utiliser pour déterminer les données de paramètre pour envoyer ou où se trouvent les données de la colonne. Il retourne également SQL_NEED_DATA, ce qui est un indicateur à l’application qu’il doit appeler **SQLPutData** pour envoyer les données. Dans le *DataPtr* argument **SQLPutData**, l’application passe un pointeur vers la mémoire tampon qui contient les données réelles pour le paramètre ou la colonne.  
   
@@ -112,7 +113,7 @@ SQLRETURN SQLPutData(
 > [!NOTE]  
 >  Une application peut utiliser **SQLPutData** pour envoyer des données dans les parties uniquement lors de l’envoi des données de caractères C à une colonne avec un type de données de spécifique à la source de données, binaire ou caractère, ou lors de l’envoi des données binaires de C à une colonne avec un caractère, binaire ou données spécifique à la source de données. Si **SQLPutData** est appelée plusieurs fois dans toutes les autres conditions, il retourne SQL_ERROR et SQLSTATE HY019 (données Non caractères et non binaires envoyées en fragments).  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L’exemple suivant suppose un nom de source de données appelé Test. La base de données associée doit avoir une table que vous pouvez créer, comme suit :  
   
 ```  

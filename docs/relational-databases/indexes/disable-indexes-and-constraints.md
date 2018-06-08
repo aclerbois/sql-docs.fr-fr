@@ -1,17 +1,14 @@
 ---
-title: "Désactiver les index et contraintes | Microsoft Docs"
-ms.custom: 
+title: Désactiver les index et contraintes | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.disableindexes.f1
 helpviewer_keywords:
@@ -26,16 +23,16 @@ helpviewer_keywords:
 - index disabling [SQL Server]
 - indexed views [SQL Server], disabled indexes
 ms.assetid: 2198f1af-fa44-47e9-92df-f4fde322ba18
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 28
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 04a01391e07ff089e16179c8645e705d08aee449
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: eca111e19c0ab16b3f59c90ae42532b9b4192d7d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disable-indexes-and-constraints"></a>Désactiver les index et contraintes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

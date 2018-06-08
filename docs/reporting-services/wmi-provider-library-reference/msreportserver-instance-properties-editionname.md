@@ -1,28 +1,27 @@
 ---
-title: "EditionName, propriété (WMI MSReportServer_Instance) | Microsoft Docs"
-ms.custom: 
+title: EditionName, propriété (WMI MSReportServer_Instance) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: EditionName property
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- EditionName property
 ms.assetid: 983a5f94-f3c7-4b3a-943e-35fcb9822cc6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b627c58ee9c2b327ed365bd7df9255f23d4b7c63
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d5bc407c7472985c728817c88355edcaa8c72398
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msreportserverinstance-properties---editionname"></a>Propriétés MSReportServer_Instance - EditionName
   Retourne le nom explicite de l'édition du serveur de rapports. En lecture seule.  

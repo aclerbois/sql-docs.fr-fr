@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_107 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 107 (Database Engine error)
 ms.assetid: f33f514c-56aa-42e2-841b-e91244da90e2
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 244d3b26fce8c290c1eacce1ea902ae947f130f3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 46a7627b3dce6100ba77cf1fbc4b42081451c299
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver107"></a>MSSQLSERVER_107
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -64,12 +59,12 @@ Faites correspondre les préfixes de colonnes aux noms de tables ou d'alias spé
 SELECT T1.* FROM dbo.ErrorLog AS T1;  
 ```  
   
-ou  
+ou Gestionnaire de configuration  
   
 ```  
 SELECT ErrorLog.* FROM dbo.ErrorLog;  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [MSSQLSERVER_4104](~/relational-databases/errors-events/mssqlserver-4104-database-engine-error.md)  
   

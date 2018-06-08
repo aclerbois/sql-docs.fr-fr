@@ -1,35 +1,33 @@
 ---
-title: "Réparation de page automatique (groupes de disponibilité : mise en miroir de bases de données) | Microsoft Docs"
-ms.custom: 
+title: 'Réparation de page automatique (groupes de disponibilité : mise en miroir de bases de données) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - automatic page repair
 - Availability Groups [SQL Server], automatic page repair
 - database mirroring [SQL Server], automatic page repair
 - suspect pages [SQL Server]
 ms.assetid: cf2e3650-5fac-4f34-b50e-d17765578a8e
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MikeRayMSFT
 ms.author: mikeray
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b1f5007a8c6b8f222d0708692ecc802f6409738d
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: d76ab4cee846252b749a664619d1117eacd4aa93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="automatic-page-repair-availability-groups-database-mirroring"></a>Réparation de page automatique (groupes de disponibilité : mise en miroir de bases de données)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La réparation de page automatique est prise en charge par la mise en miroir de bases de données et par [!INCLUDE[ssHADR](../../includes/sshadr-md.md)]. Lorsque certains types d'erreurs endommagent une page et la rendent illisible, un serveur partenaire de mise en miroir de bases de données (principal ou miroir) ou un réplica de disponibilité (principal ou secondaire) tente de récupérer automatiquement la page. Le serveur partenaire/réplica qui ne peut pas lire la page demande une nouvelle copie de la page auprès de son serveur partenaire ou d'un autre réplica. Si cette demande réussit, la page illisible est remplacée par la copie lisible, ce qui permet généralement de résoudre l'erreur.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La réparation de page automatique est prise en charge par la mise en miroir de bases de données et par [!INCLUDE[ssHADR](../../includes/sshadr-md.md)]. Lorsque certains types d'erreurs endommagent une page et la rendent illisible, un serveur partenaire de mise en miroir de bases de données (principal ou miroir) ou un réplica de disponibilité (principal ou secondaire) tente de récupérer automatiquement la page. Le serveur partenaire/réplica qui ne peut pas lire la page demande une nouvelle copie de la page auprès de son serveur partenaire ou d'un autre réplica. Si cette demande réussit, la page illisible est remplacée par la copie lisible, ce qui permet généralement de résoudre l'erreur.  
   
  En règle générale, la mise en miroir de bases de données et [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] gèrent les erreurs d'E/S de manières équivalentes. Les quelques différences sont présentées ici de manière explicite.  
   
@@ -116,7 +114,7 @@ ms.lasthandoff: 12/05/2017
      Retourne une ligne pour chaque tentative de réparation de page automatique sur toute base de données mise en miroir sur l'instance de serveur.  
   
  
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Gérer la table suspect_pages &#40;SQL Server&#41;](../../relational-databases/backup-restore/manage-the-suspect-pages-table-sql-server.md)   
  [Vue d’ensemble des groupes de disponibilité Always On &#40;SQL Server&#41;](../../database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server.md)   
  [Mise en miroir de bases de données &#40;SQL Server&#41;](../../database-engine/database-mirroring/database-mirroring-sql-server.md)  

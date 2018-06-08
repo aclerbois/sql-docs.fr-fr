@@ -1,33 +1,30 @@
 ---
 title: 'ConnectionEvents (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - 'ConnectionEvents collection [ADO], Visual C++ syntax index with #import'
 ms.assetid: dd052d36-7730-4400-822b-0544fb1992b4
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c99d265baba06dd965e0d85bebd88dd1603d88ba
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f346f92726feb07b91a87afb31c422e9b0448930
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connectionevents-visual-c-syntax-index-with-import"></a>ConnectionEvents (Index de la syntaxe Visual C++ avec #import)
 ## <a name="events"></a>Événements  

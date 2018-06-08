@@ -1,35 +1,23 @@
 ---
-title: "Configurer le pare-feu Windows pour autoriser l’accès à Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- ports [Analysis Services]
-- Windows Firewall [Analysis Services]
-- firewall systems [Analysis Services]
-ms.assetid: 7673acc5-75f0-4703-9ce2-87425ea39d49
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer le pare-feu Windows pour autoriser l’accès à Analysis Services | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 0cb0930e6fd3faf0b44c5b8ac46359ec959b85c9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5145bda99e7c5518c3904e51485c4053d33a4a58
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-the-windows-firewall-to-allow-analysis-services-access"></a>Configurer le pare-feu Windows pour autoriser l'accès à Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une première étape essentielle pour mettre [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] à disposition sur le réseau consiste à déterminer si vous devez débloquer des ports dans un pare-feu. La plupart des installations nécessitent la création d'au moins une règle de trafic entrant dans le pare-feu qui autorise les connexions à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
+  Une première étape essentielle pour mettre [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] à disposition sur le réseau consiste à déterminer si vous devez débloquer des ports dans un pare-feu. La plupart des installations nécessitent la création d'au moins une règle de trafic entrant dans le pare-feu qui autorise les connexions à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
   
  Les conditions de configuration du pare-feu varient selon le mode d'installation de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]:  
   

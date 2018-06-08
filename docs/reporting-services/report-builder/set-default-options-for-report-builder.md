@@ -1,28 +1,27 @@
 ---
-title: "Définir les options par défaut du Générateur de rapports | Microsoft Docs"
-ms.custom: 
+title: Définir les options par défaut du Générateur de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: "10427"
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- "10427"
 ms.assetid: 423360de-9bed-462e-921f-60a5abab004f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: f50138fa4045822456105962aec3c8a6c2305fbe
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: a60776397119840d9042b872160c33f2228605d1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-default-options-for-report-builder"></a>Définir les options par défaut du Générateur de rapports
   Dans le Générateur de rapports, vous pouvez définir un certain nombre de paramètres par défaut utiles pour faciliter et accélérer la création des rapports.  Par exemple, si vous pouvez définir ou modifier le serveur de rapports par défaut, le Générateur de rapports enregistre vos rapports sur le même serveur de rapports automatiquement, sauf indication contraire.  

@@ -1,16 +1,14 @@
 ---
 title: LOG (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - LOG
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - logarithm of expression
 - LOG function
 ms.assetid: f7c39511-cd84-4362-93ba-0d93655217ee
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ab2d021e583c3f4bec009e7959ea4fccfea8c5a3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8b54647650d2fec61c4f8fa8847dbafba98d8b3e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="log-transact-sql"></a>LOG (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -61,7 +59,7 @@ LOG ( float_expression )
  *base*  
  Argument entier facultatif qui définit la base du logarithme.  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ## <a name="return-types"></a>Types de retour  
  **float**  
@@ -71,7 +69,7 @@ LOG ( float_expression )
   
  Le logarithme népérien est le logarithme en base **e**, où **e** est une constante irrationnelle environ égale à 2,718281828.  
   
- Le logarithme népérien de l’exponentiel d’un nombre est le nombre lui-même : LOG( EXP( *n* ) ) = *n*. De même, l’exponentiel du logarithme népérien d’un nombre est le nombre lui-même : EXP( LOG( *n* ) ) = *n*.  
+ Le logarithme népérien de l’exponentiel d’un nombre est le nombre lui-même : LOG( EXP( *n* ) ) = *n*. De même, l’exponentiel du logarithme népérien d’un nombre est le nombre lui-même : EXP( LOG( *n* ) ) = *n*.  
   
 ## <a name="examples"></a>Exemples  
   

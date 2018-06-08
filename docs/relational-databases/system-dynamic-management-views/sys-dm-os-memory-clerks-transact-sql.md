@@ -1,16 +1,13 @@
 ---
-title: sys.dm_os_memory_clerks (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_os_memory_clerks (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_os_memory_clerks
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_memory_clerks dynamic management view
 ms.assetid: 1d556c67-5c12-46d5-aa8c-7ec1bb858df7
-caps.latest.revision: 
+caps.latest.revision: 47
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 042afaa050206507b09508ce43900ec7c993d707
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 00fad2477b9dd6bd25f998d3d741bcb63c364d05
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmosmemoryclerks-transact-sql"></a>sys.dm_os_memory_clerks (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -57,13 +54,13 @@ ms.lasthandoff: 02/03/2018
 |**shared_memory_committed_kb**|**bigint**|Spécifie la quantité de mémoire partagée qui est validée par le régisseur de mémoire. N'accepte pas la valeur NULL.|  
 |**page_size_in_bytes**|**bigint**|Spécifie la granularité de l'allocation de page pour ce régisseur de mémoire. N'accepte pas la valeur NULL.|  
 |**page_allocator_address**|**varbinary(8)**|Spécifie l'adresse de l'allocateur de page mémoire. Cette adresse est unique pour un régisseur de mémoire et peut être utilisée dans **sys.dm_os_memory_objects** pour rechercher des objets de mémoire qui sont liés à cet employé. N'accepte pas la valeur NULL.|  
-|**host_address**|**varbinary(8)**|Spécifie l'adresse mémoire de l'hôte associé à ce régisseur de mémoire. Pour plus d’informations, consultez [sys.dm_os_hosts &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-os-hosts-transact-sql.md). Les composants, tels que [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, accès [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des ressources de mémoire via l’interface de l’hôte.<br /><br /> 0x00000000 = Le régisseur de mémoire appartient à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> N'accepte pas la valeur NULL.|  
+|**host_address**|**varbinary(8)**|Spécifie l'adresse mémoire de l'hôte associé à ce régisseur de mémoire. Pour plus d’informations, consultez [sys.dm_os_hosts &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-hosts-transact-sql.md). Les composants, tels que [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, accès [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des ressources de mémoire via l’interface de l’hôte.<br /><br /> 0x00000000 = Le régisseur de mémoire appartient à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> N'accepte pas la valeur NULL.|  
 |**pdw_node_id**|**int**|**S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]<br /><br /> L’identificateur du nœud qui se trouve sur cette distribution.|  
   
-## <a name="permissions"></a>Autorisations  
+## <a name="permissions"></a>Autorisations 
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.  
-    
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
   
 ## <a name="remarks"></a>Notes  
  Le gestionnaire de mémoire de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] se compose d'une hiérarchie à trois niveaux. La base de la hiérarchie est constituée par les nœuds de mémoire. Le niveau intermédiaire est constitué de régisseurs de mémoire, de caches mémoire et de pools de mémoires. Le niveau supérieur comprend les objets de mémoire. Ces objets sont généralement utilisés pour allouer de la mémoire dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
@@ -72,7 +69,7 @@ Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite
   
 ## <a name="see-also"></a>Voir aussi  
 
- [Système d’exploitation de serveur SQL relatives des vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)   
+ [Vues de gestion dynamique liées à système d’exploitation SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)   
  [sys.dm_os_sys_info &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-sys-info-transact-sql.md)   
  [sys.dm_exec_query_memory_grants &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-memory-grants-transact-sql.md)   
  [sys.dm_exec_requests &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)   

@@ -1,27 +1,24 @@
 ---
-title: "Prise en charge du pilote JDBC pour la haute disponibilité, la récupération d’urgence | Documents Microsoft"
-ms.custom: 
-ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+title: Prise en charge du pilote JDBC pour la haute disponibilité, la récupération d’urgence | Documents Microsoft
+ms.custom: ''
+ms.date: 04/04/2018
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 62de4be6-b027-427d-a7e5-352960e42877
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 621f31fbeddee6ec3705396b5d049f5496f4ae04
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 77ebc4b570d74fca0ec5bfbde5fc8d34c3f3aa30
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jdbc-driver-support-for-high-availability-disaster-recovery"></a>Pilote JDBC pour la prise en charge de la haute disponibilité et de la récupération d'urgence
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -63,7 +60,7 @@ Si vous utilisez Microsoft JDBC Driver 4.2 (ou réduire) pour SQL Server et si *
   
  Spécification de **multiSubnetFailover = true** lorsque la connexion à un élément autre qu’un écouteur du groupe de disponibilité ou d’une Instance de Cluster de basculement peut provoquer une diminution des performances et n’est pas pris en charge.  
   
- Si le gestionnaire de sécurité n'est pas installé, la machine virtuelle Java met en cache les adresses IP virtuelles pour une durée définie par défaut par votre implémentation JDK et les propriétés Java networkaddress.cache.ttl et networkaddress.cache.negative.ttl. Si le gestionnaire de sécurité JDK est installé, la machine virtuelle Java mettra en cache les adresses IP virtuelles et n'actualisera pas le cache par défaut. Vous devez définir la durée de vie (TTL, time-to-live – networkaddress.cache.ttl) sur un jour pour le cache de la machine virtuelle Java. Si vous ne modifiez pas la valeur par défaut en attribuant une valeur égale à un jour (environ), l'ancienne valeur ne sera pas supprimée définitivement du cache de la machine virtuelle Java lorsqu'une adresse IP virtuelle sera ajoutée ou mise à jour. Pour plus d’informations sur networkaddress.cache.ttl et networkaddress.cache.negative.ttl, consultez [http://download.oracle.com/javase/6/docs/technotes/guides/net/properties.html](http://download.oracle.com/javase/6/docs/technotes/guides/net/properties.html).  
+ Si le gestionnaire de sécurité n'est pas installé, la machine virtuelle Java met en cache les adresses IP virtuelles pour une durée définie par défaut par votre implémentation JDK et les propriétés Java networkaddress.cache.ttl et networkaddress.cache.negative.ttl. Si le gestionnaire de sécurité JDK est installé, la machine virtuelle Java mettra en cache les adresses IP virtuelles et n'actualisera pas le cache par défaut. Vous devez définir la durée de vie (TTL, time-to-live – networkaddress.cache.ttl) sur un jour pour le cache de la machine virtuelle Java. Si vous ne modifiez pas la valeur par défaut en attribuant une valeur égale à un jour (environ), l'ancienne valeur ne sera pas supprimée définitivement du cache de la machine virtuelle Java lorsqu'une adresse IP virtuelle sera ajoutée ou mise à jour. Pour plus d’informations sur networkaddress.cache.ttl et networkaddress.cache.negative.ttl, consultez [ http://download.oracle.com/javase/6/docs/technotes/guides/net/properties.html ](http://download.oracle.com/javase/6/docs/technotes/guides/net/properties.html).  
   
  Utilisez les instructions suivantes pour la connexion à un serveur dans un groupe de disponibilité ou dans une instance de cluster de basculement :  
   
@@ -93,29 +90,11 @@ Si vous utilisez Microsoft JDBC Driver 4.2 (ou réduire) pour SQL Server et si *
  Si vous mettez à niveau un [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] application qui utilise actuellement la mise en miroir de base de données à un scénario de sous-réseaux multiples, vous devez supprimer la **failoverPartner** propriété de connexion et remplacez-la par **multiSubnetFailover**  la valeur **true** et remplacez le nom du serveur dans la chaîne de connexion avec un écouteur de groupe de disponibilité. Si une chaîne de connexion utilise **failoverPartner** et **multiSubnetFailover = true**, le pilote génère une erreur. Toutefois, si une chaîne de connexion utilise **failoverPartner** et **multiSubnetFailover = false** (ou **ApplicationIntent = ReadWrite**), l’application utilise la base de données mise en miroir.  
   
  Le pilote retournera une erreur si la mise en miroir de base de données est utilisée sur la base de données primaire dans le groupe de disponibilité et si **multiSubnetFailover = true** est utilisé dans la chaîne de connexion qui se connecte à une base de données principale au lieu d’un groupe de disponibilité écouteur.  
-  
-## <a name="specifying-application-intent"></a>Spécification de l'intention d'application  
- Lorsque **applicationIntent = ReadOnly**, le client demande une charge de travail en lecture seule lors de la connexion à une base de données AlwaysOn est activé. Le serveur appliquera l'intention au moment de la connexion et durant une instruction de base de données USE, mais uniquement à une base de données compatible AlwaysOn.  
-  
- Le **applicationIntent** (mot clé) ne fonctionne pas avec les bases de données héritées en lecture seule.  
-  
- Une base de données peut autoriser ou interdire les charges de travail en lecture sur la base de données AlwaysOn ciblée. (Utilisez la clause **ALLOW_CONNECTIONS** des instructions **PRIMARY_ROLE** et **SECONDARY_ROLE**[!INCLUDE[tsql](../../includes/tsql_md.md)].)  
-  
- Le **applicationIntent** mot clé est utilisée pour activer le routage en lecture seule.  
-  
-## <a name="read-only-routing"></a>Routage en lecture seule  
- Le routage en lecture seule est une fonctionnalité qui permet de garantir la disponibilité d'un réplica de base de données en lecture seule. Pour activer le routage en lecture seule :  
-  
-1.  Vous devez vous connecter à un écouteur de groupe de disponibilité de groupe de disponibilité AlwaysOn.  
-  
-2.  Le **applicationIntent** mot clé de chaîne de connexion doit être définie sur **ReadOnly**.  
-  
-3.  Le groupe de disponibilité doit être configuré par l'administrateur de base de données pour activer le routage en lecture seule.  
-  
- Il est possible que plusieurs connexions utilisant le routage en lecture seule ne se connectent pas toutes au même réplica en lecture seule. Les modifications apportées à la synchronisation de base de données ou à la configuration du routage du serveur peuvent entraîner des connexions clientes à différents réplicas en lecture seule. Pour vérifier que toutes les demandes en lecture seule se connectent au même réplica en lecture seule, ne passez pas un écouteur de groupe de disponibilité ou l’adresse IP virtuelle à le **nom_serveur** mot clé de chaîne de connexion. Au lieu de cela, spécifiez le nom de l'instance en lecture seule.  
-  
- Le routage en lecture seule peut prendre plus longtemps que la connexion à la base de données principale, car il se connecte d'abord à la base de données principale, puis recherche la meilleure base de données secondaire accessible disponible. Pour cette raison, vous devez augmenter le délai de connexion.  
-  
+
+
+[!INCLUDE[specify-application-intent_read-only-routing](~/includes/paragraph-content/specify-application-intent-read-only-routing.md)]
+
+
 ## <a name="new-methods-supporting-multisubnetfailover-and-applicationintent"></a>Nouvelles méthodes prenant en charge multiSubnetFailover et applicationIntent  
  Les méthodes suivantes vous donnent un accès à la **multiSubnetFailover**, **applicationIntent** et **transparentNetworkIPResolution** chaîne de connexion mots clés :  
   
@@ -136,7 +115,7 @@ Si vous utilisez Microsoft JDBC Driver 4.2 (ou réduire) pour SQL Server et si *
  Le **getMultiSubnetFailover**, **setMultiSubnetFailover**, **getApplicationIntent**, **setApplicationIntent**, **getTransparentNetworkIPResolution** et **setTransparentNetworkIPResolution** méthodes sont également ajoutés à [classe SQLServerDataSource](../../connect/jdbc/reference/sqlserverdatasource-class.md), [ Classe SQLServerConnectionPoolDataSource](../../connect/jdbc/reference/sqlserverconnectionpooldatasource-class.md), et [classe SQLServerXADataSource](../../connect/jdbc/reference/sqlserverxadatasource-class.md).  
   
 ## <a name="ssl-certificate-validation"></a>Validation du certificat SSL  
- Un groupe de disponibilité se compose de plusieurs serveurs physiques. [!INCLUDE[jdbc_40](../../includes/jdbc_40_md.md)]prise en charge de **autre nom du sujet** dans les certificats SSL pour plusieurs hôtes peuvent être associés avec le même certificat. Pour plus d’informations sur SSL, consultez [prise en charge de SSL compréhension](../../connect/jdbc/understanding-ssl-support.md).  
+ Un groupe de disponibilité se compose de plusieurs serveurs physiques. [!INCLUDE[jdbc_40](../../includes/jdbc_40_md.md)] prise en charge de **autre nom du sujet** dans les certificats SSL pour plusieurs hôtes peuvent être associés avec le même certificat. Pour plus d’informations sur SSL, consultez [prise en charge de SSL compréhension](../../connect/jdbc/understanding-ssl-support.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Connexion à SQL Server avec le pilote JDBC](../../connect/jdbc/connecting-to-sql-server-with-the-jdbc-driver.md)   

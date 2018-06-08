@@ -1,34 +1,23 @@
 ---
-title: "Élément HoldoutMaxPercent | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément HoldoutMaxPercent | Documents Microsoft
+ms.date: 5/8/2018
+ms.prod: sql
+ms.custom: assl
+ms.reviewer: owend
+ms.technology: analysis-services
 ms.topic: reference
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: HoldoutMaxPercent
-helpviewer_keywords: HoldoutMaxPercent element
-ms.assetid: e375cc51-5f9d-4252-98a1-326ca0dbbf83
-caps.latest.revision: "19"
-author: Minewiskan
+author: minewiskan
 ms.author: owend
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5282451ccad6f4cd8f3deb80542f5b2d72e3e05d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4c2b6c560d497bb1f5a54e704063459505d71229
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="holdoutmaxpercent-element"></a>Élément HoldoutMaxPercent
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Spécifie le pourcentage maximal de cas dans la source de données qui sera utilisée pour la partition d’exclusion qui contient le jeu de tests d’un [MiningStructure](../../../analysis-services/scripting/objects/miningstructure-element-assl.md) élément. Les cas restants sont utilisés pour l'apprentissage. Une valeur de 0 indique qu'il n'existe aucune limite au nombre des cas pouvant être exclus en tant que jeu de tests.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Spécifie le pourcentage maximal de cas dans la source de données qui sera utilisée pour la partition d’exclusion qui contient le jeu de tests d’un [MiningStructure](../../../analysis-services/scripting/objects/miningstructure-element-assl.md) élément. Les cas restants sont utilisés pour l'apprentissage. Une valeur de 0 indique qu'il n'existe aucune limite au nombre des cas pouvant être exclus en tant que jeu de tests.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,9 +43,9 @@ ms.lasthandoff: 01/08/2018
 |Relation|Élément|  
 |------------------|-------------|  
 |Élément parent|[MiningStructure](../../../analysis-services/scripting/objects/miningstructure-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si vous spécifiez des valeurs pour les deux **HoldoutMaxPercent** et **HoldoutMaxCases**, l’algorithme limite la jeu de tests à la plus petite des deux valeurs.  
   
  Si **HoldoutMaxCases** a la valeur par défaut de 0, et une valeur n’a pas été définie pour **HoldoutMaxPercent**, l’algorithme utilise le jeu de données complet pour l’apprentissage.  
@@ -69,7 +58,7 @@ ms.lasthandoff: 01/08/2018
  L’élément qui correspond au parent de **HoldoutMaxPercent** dans l’objet d’objets AMO (Analysis Management) est modèle <xref:Microsoft.AnalysisServices.MiningStructure>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)   
+ [Propriétés &#40;ASSL&#41;](../../../analysis-services/scripting/properties/properties-assl.md)   
  [Holdoutmaxcases, élément](../../../analysis-services/scripting/properties/holdoutmaxcases-element.md)   
  [Holdoutseed, élément](../../../analysis-services/scripting/properties/holdoutseed-element.md)   
  [HoldoutActualSize, élément](../../../analysis-services/scripting/properties/holdoutactualsize-element.md)  

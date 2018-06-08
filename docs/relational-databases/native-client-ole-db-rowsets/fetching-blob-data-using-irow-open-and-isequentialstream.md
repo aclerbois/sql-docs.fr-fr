@@ -1,15 +1,14 @@
 ---
-title: "Extraction de données BLOB à l’aide d’IRow::Open et ISequentialStream | Documents Microsoft"
-ms.custom: 
+title: Extraction de données BLOB à l’aide d’IRow::Open et ISequentialStream | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-rowsets
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - fetching BLOB data
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - ISequentialStream interface
 - BLOBs, fetching
 ms.assetid: 439b3976-84e7-4d11-8dba-f668adbc9159
-caps.latest.revision: 
+caps.latest.revision: 29
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 537fa222500d24ce7b59d51116c48693c389c14d
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3716c9eedab9105a9671c296d2f55aaa3c624528
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetching-blob-data-using-irowopen-and-isequentialstream"></a>Extraction de données BLOB à l'aide d'IRow::Open et ISequentialStream
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

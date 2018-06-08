@@ -1,16 +1,15 @@
 ---
-title: "Choisir une langue lors de la création d’un index de recherche en texte intégral | Microsoft Docs"
-ms.custom: 
+title: Choisir une langue lors de la création d’un index de recherche en texte intégral | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.prod_service: database-engine, sql-database
+ms.prod_service: search, sql-database
 ms.component: search
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - languages [full-text search]
 - full-text indexes [SQL Server], languages
@@ -21,16 +20,16 @@ helpviewer_keywords:
 - languages [SQL Server], full-text indexes
 - word breakers [full-text search]
 ms.assetid: 670a5181-ab80-436a-be96-d9498fbe2c09
-caps.latest.revision: 
+caps.latest.revision: 49
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 14f63ec1dd20561721c7713183835e5296b79470
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 90d15ff0623ddef99d5209b4a6f3050ebef33486
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="choose-a-language-when-creating-a-full-text-index"></a>Choisir une langue lors de la création d'un index de recherche en texte intégral
 

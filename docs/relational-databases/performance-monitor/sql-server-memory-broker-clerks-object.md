@@ -1,33 +1,32 @@
 ---
 title: SQL Server, objet Memory Broker Clerks | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:Memory Broker Clerks
 ms.assetid: 47b9c236-66a3-4c42-97ee-da5555bdc046
-caps.latest.revision: 
+caps.latest.revision: 4
 author: dagiro
 ms.author: v-dagir
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9d86b986025348a829734d57625a0567041cd12d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: abc1812029cdf51d829b6e15a4049d05a7ae5383
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-memory-broker-clerks-object"></a>SQL Server, objet Memory Broker Clerks
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet de performance **SQLServer:Memory Broker Clerks** fournit des compteurs pour les statistiques relatives aux régisseurs de gestionnaire d’allocation de mémoire.
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+L’objet de performance **SQLServer:Memory Broker Clerks** fournit des compteurs pour les statistiques relatives aux régisseurs de gestionnaire d’allocation de mémoire.
 
 Le tableau suivant décrit les objets de performance **Memory Broker Clerks** SQL Server.
 

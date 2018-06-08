@@ -1,31 +1,31 @@
 ---
-title: "Modifier une fonction de partition | Microsoft Docs"
-ms.custom: 
+title: Modifier une fonction de partition | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: partitions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-partition
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ae5bfc09-f27a-4ea9-9518-485278b11674
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b2466c376c36403ec9f529e6dfb6b9242c10a7a3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b7b0639e19c4a1fcce079b9c660176b00c1508ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modify-a-partition-function"></a>Modifier une fonction de partition
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Vous pouvez modifier le partitionnement d’une table ou d’un index dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] en ajoutant ou supprimant le nombre de partitions spécifié (par incréments de 1) dans la fonction de partition de la table ou de l’index à l’aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsque vous ajoutez une partition, vous fractionnez une partition existante en deux partitions dont vous redéfinissez les limites. Lorsque vous supprimez une partition, vous fusionnez les limites de deux partitions pour n'en définir qu'une. Cette action a pour effet de remplir à nouveau une partition et de laisser l'autre non affectée.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Vous pouvez modifier le partitionnement d'une table ou d'un index dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] en ajoutant ou supprimant le nombre de partitions spécifié (par incréments de 1) dans la fonction de partition de la table ou de l'index à l'aide de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Lorsque vous ajoutez une partition, vous fractionnez une partition existante en deux partitions dont vous redéfinissez les limites. Lorsque vous supprimez une partition, vous fusionnez les limites de deux partitions pour n'en définir qu'une. Cette action a pour effet de remplir à nouveau une partition et de laisser l'autre non affectée.  
   
 > [!CAUTION]  
 >  Une même fonction de partition peut être utilisée par plusieurs tables ou index. Lorsque vous modifiez une fonction de partition, vous affectez toutes les fonctions dans une transaction unique. Vérifiez les dépendances de la fonction de partition avant de la modifier.  

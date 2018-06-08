@@ -1,16 +1,14 @@
 ---
-title: sp_attach_db (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_attach_db (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_attach_db_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_attach_db
 ms.assetid: 59bc993e-7913-4091-89cb-d2871cffda95
-caps.latest.revision: 
+caps.latest.revision: 69
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b17a11f31faff52e2519d2c10d34af88108f0399
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 1c275128a8e3c2bbce6165486e256fc5b34d402d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spattachdb-transact-sql"></a>sp_attach_db (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,11 +51,11 @@ sp_attach_db [ @dbname= ] 'dbname'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@dbname=** ] **'***dbnam* **'**  
+ [  **@dbname=** ] **' *** dbnam* **'**  
  Nom de la base de données à attacher au serveur. Le nom doit être unique. *dbname* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ **@filename1=** ] **'***filename_n***'**  
- Nom physique, y compris le chemin d'accès, d'un fichier de base de données. *Nom_de_fichier_n* est **nvarchar (260)**, avec NULL comme valeur par défaut. Jusqu'à 16 noms de fichier peuvent être spécifiés. Les noms de paramètre commencent à  **@filename1**  et  **@filename16** . La liste des noms de fichiers doit comprendre au moins le fichier primaire. Le fichier primaire contient les tables système pointant vers d'autres fichiers dans la base de données. Elle doit aussi comprendre tous les fichiers qui ont été déplacés après que la base de données fut détachée.  
+ [  **@filename1=** ] **'***Nom_de_fichier_n***'**  
+ Nom physique, y compris le chemin d'accès, d'un fichier de base de données. *Nom_de_fichier_n* est **nvarchar (260)**, avec NULL comme valeur par défaut. Jusqu'à 16 noms de fichier peuvent être spécifiés. Les noms de paramètre commencent à **@filename1** et **@filename16**. La liste des noms de fichiers doit comprendre au moins le fichier primaire. Le fichier primaire contient les tables système pointant vers d'autres fichiers dans la base de données. Elle doit aussi comprendre tous les fichiers qui ont été déplacés après que la base de données fut détachée.  
   
 > [!NOTE]  
 >  Cet argument crée un mappage vers le paramètre FILENAME de l'instruction CREATE DATABASE. Pour plus d’informations, consultez [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../t-sql/statements/create-database-sql-server-transact-sql.md).  
@@ -85,14 +82,14 @@ sp_attach_db [ @dbname= ] 'dbname'
   
 -   Si vous attachez la base de données à la même version et à la même instance de serveur que celles de la base de données d'origine, aucune opération supplémentaire n'est nécessaire.  
   
--   Si vous attachez la base de données à la même instance de serveur, mais avec une version mise à niveau, vous devez exécuter [sp_vupgrade_replication](../../relational-databases/system-stored-procedures/sp-vupgrade-replication-transact-sql.md) pour mettre à niveau de la réplication après l’opération d’attachement est terminée.  
+-   Si vous attachez la base de données à la même instance de serveur alors que sa version a été mise à niveau, vous devez exécuter [sp_vupgrade_replication](../../relational-databases/system-stored-procedures/sp-vupgrade-replication-transact-sql.md) pour mettre à jour la réplication à la fin de l’opération de rattachement.  
   
--   Si vous attachez la base de données à une autre instance de serveur, quelle que soit la version, vous devez exécuter [sp_removedbreplication](../../relational-databases/system-stored-procedures/sp-removedbreplication-transact-sql.md) pour supprimer la réplication une fois l’opération d’attachement terminée.  
+-   Si vous attachez la base de données à une instance de serveur différente, sans tenir compte de la version, vous devez exécuter [sp_removedbreplication](../../relational-databases/system-stored-procedures/sp-removedbreplication-transact-sql.md) pour supprimer la réplication, une fois l’opération de rattachement effectuée.  
   
  Lorsqu'une base de données est attachée ou restaurée pour la première fois à une nouvelle instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], une copie de la clé principale de la base de données (chiffrée par la clé principale du service) n'est pas encore stockée sur le serveur. Vous devez utiliser l’instruction **OPEN MASTER KEY** pour déchiffrer la clé principale de la base de données. Une fois la clé principale de la base de données déchiffrée, vous avez la possibilité d’activer le déchiffrement automatique dans le futur en exécutant l’instruction **ALTER MASTER KEY REGENERATE** pour fournir au serveur une copie de la clé principale de la base de données chiffrée avec la clé principale du service. Lorsqu'une base de données a été mise à niveau à partir d'une version antérieure, la clé DMK doit être régénérée de façon à utiliser le nouvel algorithme AES. Pour plus d’informations sur la régénération de la clé DMK, consultez [ALTER MASTER KEY &#40;Transact-SQL&#41;](../../t-sql/statements/alter-master-key-transact-sql.md). La durée nécessaire pour régénérer la clé DMK à mettre à niveau vers AES dépend du nombre d'objets protégés par la clé DMK. La régénération de la clé DMK à mettre à niveau vers AES est nécessaire une seule fois et n'a aucune incidence sur les régénérations ultérieures effectuées dans le cadre d'une stratégie de rotation de clés.  
   
 ## <a name="permissions"></a>Autorisations  
- Pour plus d’informations sur la gestion des autorisations lorsqu’une base de données est attachée, consultez [CREATE DATABASE &#40; SQL Server Transact-SQL &#41; ](../../t-sql/statements/create-database-sql-server-transact-sql.md).  
+ Pour plus d’informations sur la gestion des autorisations lorsqu’une base de données est attachée, consultez [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../t-sql/statements/create-database-sql-server-transact-sql.md).  
   
 ## <a name="examples"></a>Exemples  
  Dans l'exemple suivant, des fichiers sont attachés depuis [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] au serveur en cours.  

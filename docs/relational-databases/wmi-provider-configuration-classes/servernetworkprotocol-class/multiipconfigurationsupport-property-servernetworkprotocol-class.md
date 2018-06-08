@@ -1,16 +1,15 @@
 ---
-title: "Multiipconfigurationsupport, propriété (classe ServerNetworkProtocol) | Documents Microsoft"
-ms.custom: 
+title: Multiipconfigurationsupport, propriété (classe ServerNetworkProtocol) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - MultiIpConfigurationSupport Property (ServerNetworkProtocol Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - MultiIpConfigurationSupport property
 ms.assetid: 442c6133-4038-42db-a67d-2631285ac76b
-caps.latest.revision: 
+caps.latest.revision: 31
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff331a1e296a43bc911fd7fc522b10a663841846
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: d0ab21380ac5898a11bf41d24d40e7bf48f2a920
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiipconfigurationsupport-property-servernetworkprotocol-class"></a>Propriété MultiIpConfigurationSupport (classe ServerNetworkProtocol)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

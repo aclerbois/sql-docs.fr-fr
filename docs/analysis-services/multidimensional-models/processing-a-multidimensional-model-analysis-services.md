@@ -1,42 +1,23 @@
 ---
-title: "Traitement d’un modèle multidimensionnel (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- online mode [Analysis Services]
-- processing objects [Analysis Services]
-- partitions [Analysis Services], processing
-- jobs [Analysis Services]
-- objects [Analysis Services], processing
-- reprocessing objects
-- impact analysis [Analysis Services]
-- dimensions [Analysis Services], processing
-- project mode [Analysis Services]
-- cubes [Analysis Services], processing
-ms.assetid: 625aa5a6-aa09-4bac-be8a-778fa81c5a61
-caps.latest.revision: 
-author: Minewiskan
+title: Traitement d’un modèle multidimensionnel (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3b53e351836edaecfc37230b389b4fba308eb3d3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a09e1c4118576535371e16aa5e1a39a169b406fe
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="processing-a-multidimensional-model-analysis-services"></a>Traitement d’un modèle multidimensionnel (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le traitement est l'étape, ou la série d'étapes, dans lesquelles Analysis Services charge des données d'une source de données relationnelle dans un modèle multidimensionnel. Pour les objets qui utilisent le mode de stockage MOLAP, les données sont enregistrées sur le disque le dossier des fichiers de la base de données. Pour le mode de stockage ROLAP, le traitement s'effectue à la demande, en réponse à une requête MDX sur un objet. Pour les objets qui utilisent le stockage ROLAP, le traitement fait référence à la mise à jour du cache avant de retourner des résultats de la requête.  
+  Le traitement est l'étape, ou la série d'étapes, dans lesquelles Analysis Services charge des données d'une source de données relationnelle dans un modèle multidimensionnel. Pour les objets qui utilisent le mode de stockage MOLAP, les données sont enregistrées sur le disque le dossier des fichiers de la base de données. Pour le mode de stockage ROLAP, le traitement s'effectue à la demande, en réponse à une requête MDX sur un objet. Pour les objets qui utilisent le stockage ROLAP, le traitement fait référence à la mise à jour du cache avant de retourner des résultats de la requête.  
   
  Par défaut, le traitement s'effectue lorsque vous déployez une solution sur le serveur. Vous pouvez également traiter une partie d'une solution, ad hoc ou à l'aide d'outils tels que [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] ou [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)], ou selon une planification à l'aide de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] et de SQL Server Agent. Lorsque vous apportez une modification structurelle au modèle, telle que la suppression d'une dimension ou la modification de son niveau de compatibilité, vous devez réeffectuer le traitement afin de synchroniser les aspects physiques et logiques du modèle.  
   
@@ -87,6 +68,6 @@ Le traitement est l'étape, ou la série d'étapes, dans lesquelles Analysis Ser
   
 ## <a name="see-also"></a>Voir aussi  
  [Architecture logique &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
   
   

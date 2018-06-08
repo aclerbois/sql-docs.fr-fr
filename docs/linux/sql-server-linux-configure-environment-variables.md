@@ -1,25 +1,22 @@
 ---
-title: "Configurer les paramètres de SQL Server avec les variables d’environnement | Documents Microsoft"
-description: "Cet article décrit comment utiliser des variables d’environnement pour configurer les paramètres spécifiques de SQL Server 2017 sur Linux."
+title: Configurer les paramètres de SQL Server avec les variables d’environnement | Documents Microsoft
+description: Cet article décrit comment utiliser des variables d’environnement pour configurer les paramètres spécifiques de SQL Server 2017 sur Linux.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: On Demand
-ms.openlocfilehash: e6d21c8f2e7636ee787bbd735b3d69b71ac20671
-ms.sourcegitcommit: 57f45ee008141ddf009b1c1195442529e0ea1508
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: 602ec7d9beca11e2baa963bdf5b8e59df2f194d5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-sql-server-settings-with-environment-variables-on-linux"></a>Configurer les paramètres de SQL Server avec les variables d’environnement sur Linux
 
@@ -53,6 +50,7 @@ Vous pouvez utiliser plusieurs variables d’environnement différent pour confi
 | **MSSQL_AGENT_ENABLED** | Activer l’Agent SQL Server. Par exemple, 'true' est activé et 'false' est désactivé. Par défaut, l’agent est désactivé.  |
 | **MSSQL_MASTER_DATA_FILE** | Définit l’emplacement du fichier de données de base de données master. |
 | **MSSQL_MASTER_LOG_FILE** | Définit l’emplacement du fichier journal de la base de données master. |
+| **MSSQL_ERROR_LOG_FILE** | Définit l’emplacement des fichiers du journal des erreurs. |
 
 
 ## <a name="example-initial-setup"></a>Exemple : le programme d’installation initiale de

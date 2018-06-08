@@ -1,32 +1,33 @@
 ---
-title: "Autres exemples de requêtes XQuery sur le Type de données xml | Documents Microsoft"
-ms.custom: 
+title: Autres exemples de requêtes XQuery sur le Type de données xml | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-applies_to: SQL Server
-dev_langs: XML
+applies_to:
+- SQL Server
+dev_langs:
+- XML
 helpviewer_keywords:
 - XQuery, samples
 - sample applications [XQuery]
 ms.assetid: 2af66304-c021-427c-b3b3-e000ec0896cd
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: dfc060c20fd777f3930811d7a03ec3cb186d5df4
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: fa92635bcca9a206fcfb2f85e3da72e57facdeb1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="additional-sample-xqueries-against-the-xml-data-type"></a>Exemples supplémentaires de requêtes XQuery sur le type de données xml
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

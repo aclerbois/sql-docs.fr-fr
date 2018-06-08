@@ -1,35 +1,35 @@
 ---
-title: "Gestion de clés extensible (EKM) | Microsoft Docs"
-ms.custom: 
+title: Gestion de clés extensible (EKM) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Key Management
 - Extensible Key Management
 - EKM, described
 ms.assetid: 9bfaf500-2d1e-4c02-b041-b8761a9e695b
-caps.latest.revision: 
+caps.latest.revision: 46
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c642ca8448624c79b77f84c71619439918856767
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e00a78719febd9a452da5cd85220f2fb091ffa9b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extensible-key-management-ekm"></a>Gestion de clés extensible (EKM)
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit des fonctions de chiffrement de données en même temps que la *gestion de clés extensible* (EKM, Extensible Key Management) à l’aide du fournisseur de *l’API Microsoft Cryptography* (MSCAPI) pour le chiffrement et la génération de clés. Les clés de chiffrement pour les données et le chiffrement à clé sont créés dans des conteneurs de clé transitoires, et ils doivent être exportés d'un fournisseur avant d'être stockés dans la base de données. Cette approche permet à la gestion des clés, qui comprend une hiérarchie de clé de chiffrement et une sauvegarde de clé, d'être gérée par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit des fonctions de chiffrement de données en même temps que la *gestion de clés extensible* (EKM, Extensible Key Management) à l’aide du fournisseur de *l’API Microsoft Cryptography* (MSCAPI) pour le chiffrement et la génération de clés. Les clés de chiffrement pour les données et le chiffrement à clé sont créés dans des conteneurs de clé transitoires, et ils doivent être exportés d'un fournisseur avant d'être stockés dans la base de données. Cette approche permet à la gestion des clés, qui comprend une hiérarchie de clé de chiffrement et une sauvegarde de clé, d'être gérée par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
  Face à la demande croissante de conformité aux normes et aux problèmes liés à la confidentialité des données, les organisations font appel au chiffrement afin d'apporter une solution de « défense en profondeur ». Cette approche est souvent peu pratique car elle utilise uniquement des outils de gestion de chiffrement de base de données. Les fabricants de matériel fournissent des produits qui prennent en charge la gestion des clés dans l’entreprise à l’aide des *modules de la sécurité matériels* . Les périphériques HSM stockent des clés de chiffrement dans les modules matériels ou logiciels. Il s'agit d'une solution plus sécurisée parce que les clés de chiffrement ne résident pas avec les données de chiffrement.  
   
@@ -139,14 +139,14 @@ DECRYPTION BY EKM_AKey1
 >   
 >  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne prend pas en charge la signature des modules avec les clés asymétriques générées par un fournisseur EKM.  
   
-## <a name="related-tasks"></a>Tâches associées  
+## <a name="related-tasks"></a>Related Tasks  
  [Fournisseur EKM activé (option de configuration de serveur)](../../../database-engine/configure-windows/ekm-provider-enabled-server-configuration-option.md)  
   
  [Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM)](../../../relational-databases/security/encryption/enable-tde-on-sql-server-using-ekm.md)  
   
  [Gestion de clés extensible à l’aide d’Azure Key Vault &#40;SQL Server&#41;](../../../relational-databases/security/encryption/extensible-key-management-using-azure-key-vault-sql-server.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [CREATE CRYPTOGRAPHIC PROVIDER &#40;Transact-SQL&#41;](../../../t-sql/statements/create-cryptographic-provider-transact-sql.md)   
  [DROP CRYPTOGRAPHIC PROVIDER &#40;Transact-SQL&#41;](../../../t-sql/statements/drop-cryptographic-provider-transact-sql.md)   
  [ALTER CRYPTOGRAPHIC PROVIDER &#40;Transact-SQL&#41;](../../../t-sql/statements/alter-cryptographic-provider-transact-sql.md)   

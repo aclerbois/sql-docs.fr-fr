@@ -1,31 +1,29 @@
 ---
-title: "Mes paramètres pour l’intégration de Power BI (portail web) | Microsoft Docs"
+title: Mes paramètres pour l’intégration de Power BI (portail web) | Microsoft Docs
 ms.date: 08/17/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 f1_keywords:
 - pbi
 - power bi
 - power bi integration
 ms.assetid: 85c2fac7-80bf-45b7-8654-764b5f5231f5
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b2a72fe0100b29daf1a1eaa07172dd88eeacdcab
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 7d878ea994865096aac36397e9c32c8cf55b359c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="my-settings-for-power-bi-integration-web-portal"></a>Mes paramètres pour l’intégration de Power BI (portail web)
 

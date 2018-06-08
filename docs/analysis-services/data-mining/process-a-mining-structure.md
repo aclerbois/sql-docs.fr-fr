@@ -1,31 +1,23 @@
 ---
-title: "Traiter une Structure d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: mining structures [Analysis Services], processing
-ms.assetid: 4162f33e-c23f-4293-8905-271781e45fa4
-caps.latest.revision: "31"
-author: Minewiskan
+title: Traiter une Structure d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e0b57ba89ce1244a794c48e26c962acc8ed6419b
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 9cb977ace8ccd1856d9a08c8eeaa2cf698637e68
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="process-a-mining-structure"></a>traiter une structure d'exploration de données
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Avant de pouvoir parcourir ou utiliser les modèles d’exploration de données qui sont associés à une structure d’exploration de données, vous devez déployer le [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de projet et de traiter la structure d’exploration de données et les modèles d’exploration de données. De plus, si vous modifiez la structure d’exploration de données ou les modèles d’exploration de données, un message vous invite à les redéployer et les retraiter. Le traitement de la structure sous l’onglet **Structure d’exploration de données** du Concepteur d’exploration de données de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] traite tous les modèles associés.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Pour pouvoir consulter ou utiliser des modèles d'exploration de données associés à une structure d'exploration de données, vous devez déployer le projet [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et traiter la structure d'exploration de données et les modèles d'exploration de données. De plus, si vous modifiez la structure d’exploration de données ou les modèles d’exploration de données, un message vous invite à les redéployer et les retraiter. Le traitement de la structure sous l’onglet **Structure d’exploration de données** du Concepteur d’exploration de données de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] traite tous les modèles associés.  
   
  Vous pouvez traiter une structure d'exploration de données à l'aide de ces outils :  
   
@@ -52,6 +44,6 @@ ms.lasthandoff: 01/08/2018
 4.  Cliquez sur **fermer** dans les **traiter la Structure d’exploration de données - \<structure >** boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches et procédures relatives aux structures d’exploration de données](../../analysis-services/data-mining/mining-structure-tasks-and-how-tos.md)  
+ [Tâches de la Structure d’exploration de données et procédures](../../analysis-services/data-mining/mining-structure-tasks-and-how-tos.md)  
   
   

@@ -1,34 +1,30 @@
 ---
-title: "Blocked Process Report, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Blocked Process Report, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Blocked Process Report event class
 ms.assetid: e8acb408-938d-4b36-81dd-04f087410cc5
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 36d8b302c134bdb18e55f69eeeb7bb916d825929
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d53ded4ba749f5e0bed6b0c4908472ee9241130e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="blocked-process-report-event-class"></a>Blocked Process Report (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Blocked Process Report** indique qu’une tâche a été bloquée plus longtemps que la période spécifiée. Elle ne s'applique pas aux tâches système ou aux tâches en attente de ressources à blocage non détectable.  
+  La classe d’événements **Blocked Process Report** indique qu’une tâche a été bloquée plus longtemps que la période spécifiée. Elle ne s'applique pas aux tâches système ou aux tâches en attente de ressources à blocage non détectable.  
   
  Pour définir le seuil et la fréquence de génération des rapports, utilisez la commande **sp_configure** pour configurer l’option **Seuil de processus bloqué** qu’il est possible de définir en secondes. Par défaut, aucun rapport de processus bloqué n'est généré. Pour plus d’informations sur la définition de l’option **Seuil de processus bloqué**, consultez [Seuil de processus bloqué (option de configuration de serveur)](../../database-engine/configure-windows/blocked-process-threshold-server-configuration-option.md).  
   

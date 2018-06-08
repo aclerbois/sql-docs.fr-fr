@@ -1,17 +1,13 @@
 ---
-title: "Exécuter le débogueur Transact-SQL | Microsoft Docs"
-ms.custom: 
+title: Exécuter le débogueur Transact-SQL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Transact-SQL debugger, sysadmin requirement
 - Transact-SQL debugger, supported versions
@@ -25,19 +21,20 @@ helpviewer_keywords:
 - Transact-SQL debugger, keyboard shortcuts
 - Transact-SQL debugger, starting
 ms.assetid: 386f6d09-dbec-4dc7-9e8a-cd9a4a50168c
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9f67818832da03faacf25adee23a1261ce44f430
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: f47339d4fb116778760ca571bd58f03b2c81ff1f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="run-the-transact-sql-debugger"></a>Exécuter le débogueur Transact-SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez démarrer le débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] après avoir ouvert une fenêtre de l’éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Vous pouvez ensuite exécuter votre code [!INCLUDE[tsql](../../includes/tsql-md.md)] en mode débogage jusqu'à ce que vous arrêtiez le débogueur. Vous pouvez définir des options permettant de personnaliser la façon dont le débogueur s'exécute.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous pouvez démarrer le débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] après avoir ouvert une fenêtre de l’éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Vous pouvez ensuite exécuter votre code [!INCLUDE[tsql](../../includes/tsql-md.md)] en mode débogage jusqu'à ce que vous arrêtiez le débogueur. Vous pouvez définir des options permettant de personnaliser la façon dont le débogueur s'exécute.  
   
 ## <a name="starting-and-stopping-the-debugger"></a>Démarrage et arrêt du débogueur  
  La configuration requise pour démarrer le débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] est la suivante :  

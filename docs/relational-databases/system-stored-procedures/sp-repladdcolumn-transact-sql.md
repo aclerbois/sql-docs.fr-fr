@@ -1,16 +1,15 @@
 ---
 title: sp_repladdcolumn (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_repladdcolumn
 ms.assetid: d6220f9f-c738-4f9c-bcf8-419994e86c81
-caps.latest.revision: 
+caps.latest.revision: 37
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d638619d087d43b0820fdf21650a9b8db1f7cf63
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ad4517c4dfa5d71b63fdd07ff7a116f36f6c5038
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sprepladdcolumn-transact-sql"></a>sp_repladdcolumn (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -68,7 +66,7 @@ sp_repladdcolumn [ @source_object = ] 'source_object', [ @column = ] 'column' ]
  Nom de la publication à laquelle la nouvelle colonne est ajoutée. *publication_to_add* est **nvarchar (4000)**, avec une valeur par défaut **tous les**. Si **tous les**, puis toutes les publications contenant cette table sont affectées. Si *publication_to_add* est spécifié, seule cette publication contient la nouvelle colonne ajoutée.  
   
  [ @from_agent =] *from_agent*  
- Indique si la procédure stockée est exécutée par un agent de réplication. *from_agent* est **int**, avec une valeur par défaut **0**, où la valeur **1** est utilisée lorsque cette procédure stockée est exécutée par un agent de réplication et dans tous les autres cas, la valeur par défaut **0**doit être utilisé.  
+ Indique si la procédure stockée est exécutée par un agent de réplication. *from_agent* est **int**, avec une valeur par défaut **0**, où la valeur **1** est utilisé lors de cette procédure stockée est exécutée par un agent de réplication et chaque autres cas, la valeur par défaut **0**doit être utilisé.  
   
  [ @schema_change_script =] '*schema_change_script*'  
  Spécifie le nom et le chemin d'accès d'un script [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisé pour modifier les procédures stockées personnalisées générées par le système. *schema_change_script* est **nvarchar (4000)**, avec NULL comme valeur par défaut. La réplication permet aux procédures stockées personnalisées définies par l'utilisateur de remplacer une ou plusieurs procédures par défaut utilisées dans la réplication transactionnelle. *schema_change_script* est exécuté après une modification de schéma est apportée à un article de table répliqué à l’aide de sp_repladdcolumn et peut être utilisée pour effectuer l’une des opérations suivantes :  
@@ -94,7 +92,7 @@ sp_repladdcolumn [ @source_object = ] 'source_object', [ @column = ] 'column' ]
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe sysadmin et du rôle de base de données fixe db_owner peuvent exécuter sp_repladdcolumn.  
   
 ## <a name="see-also"></a>Voir aussi  

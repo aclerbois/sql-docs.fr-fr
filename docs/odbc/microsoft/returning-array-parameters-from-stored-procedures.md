@@ -1,30 +1,27 @@
 ---
-title: "Retour des paramètres de tableau à partir de procédures stockées | Documents Microsoft"
-ms.custom: 
+title: Retour des paramètres de tableau à partir de procédures stockées | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - stored procedures [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], stored procedures
 ms.assetid: 2018069b-da5d-4cee-a971-991897d4f7b5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f0742b7158ae8a3fe94b325dacc1c29807610e9b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6f67a9044dcd95b2b652c310e066843b7aa5d1ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="returning-array-parameters-from-stored-procedures"></a>Retourner les paramètres de tableau à partir de procédures stockées
 > [!IMPORTANT]  

@@ -1,36 +1,23 @@
 ---
-title: "Utilisation de l’extraction pour récupérer la Source de données (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- DRILLTHROUGH statement
-- retrieving data
-- queries [MDX], DRILLTHROUGH statement
-- data retrieval [MDX]
-ms.assetid: fe0ab170-25a9-45a8-a377-f71a67f77018
-caps.latest.revision: 
-author: Minewiskan
+title: Utilisation de l’extraction pour récupérer la Source de données (MDX) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1749970e49904d8788c08f8be29cd20d189ebca3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 81c873d0ea6e5c21d97fc719ce1c72a773df43e5
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-data-manipulation---retrieve-source-data-using-drillthrough"></a>Manipulation de données MDX - extraire à l’aide de l’extraction des données Source
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-L’instruction MDX (Multidimensional Expressions) utilise l’instruction [DRILLTHROUGH](../../../mdx/mdx-data-manipulation-drillthrough.md)pour récupérer un ensemble de lignes à partir des données sources d’une cellule d’un cube.  
+  L’instruction MDX (Multidimensional Expressions) utilise l’instruction [DRILLTHROUGH](../../../mdx/mdx-data-manipulation-drillthrough.md)pour récupérer un ensemble de lignes à partir des données sources d’une cellule d’un cube.  
   
  Pour exécuter une instruction **DRILLTHROUGH** sur un cube, une action d’extraction doit être définie pour ce dernier. Pour définir une action d’extraction, dans [!INCLUDE[ssBIDevStudioFull](../../../includes/ssbidevstudiofull-md.md)], dans le Concepteur de cube, dans la barre d’outils du volet **Actions** , cliquez sur **Nouvelle action d’extraction**. Dans la nouvelle action d’extraction, spécifiez le nom de l’action, la cible, la condition et les colonnes retournées par une instruction **DRILLTHROUGH** .  
   
@@ -63,6 +50,6 @@ RETURN [Department MeasureGroup].[Department Id], [Employee].[First Name]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Manipulation de données &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-data-manipulation-manipulating-data.md)  
+ [Manipulation de données & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-data-manipulation-manipulating-data.md)  
   
   

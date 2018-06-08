@@ -1,30 +1,27 @@
 ---
 title: Espace TempDB suffisant | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - TempDB space in RDS [ADO]
 ms.assetid: 09130db1-6248-4234-a1e5-a9c8e1622c06
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1b25883b6e0d2b52719b4227d0fbec1abdf31eae
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c86196fdf0320b5f3cb5028cb7d5db484c4da846
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ensuring-sufficient-tempdb-space"></a>Espace TempDB suffisant
 Si des erreurs surviennent lors de la gestion des [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objets nécessitant un espace de traitement dans Microsoft SQL Server 6.5, vous devrez peut-être augmenter la taille de TempDB. (Certaines requêtes nécessitent un espace de traitement temporaire ; par exemple, une requête avec une clause ORDER BY exige le tri de la **Recordset**, ce qui nécessite de l’espace temporaire.)  

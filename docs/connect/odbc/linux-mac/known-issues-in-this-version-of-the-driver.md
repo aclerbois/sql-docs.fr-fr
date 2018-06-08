@@ -1,29 +1,25 @@
 ---
-title: "Problèmes connus dans cette Version du pilote pour SQL Server | Documents Microsoft"
-ms.custom: 
+title: Problèmes connus dans cette Version du pilote pour SQL Server | Documents Microsoft
+ms.custom: ''
 ms.date: 02/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - known issues
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ebc56810753f7cc269afa0f98ee6e2e56e959878
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+manager: craigg
+ms.openlocfilehash: 9cd3bb6f733b9d9cac1dc3973e65199c9357bbbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="known-issues-in-this-version-of-the-driver"></a>Problèmes connus dans cette version du pilote
 

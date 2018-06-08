@@ -2,31 +2,28 @@
 title: Pilote OLE DB SQL Server Support for High Availability, Disaster Recovery | Documents Microsoft
 description: Pilote OLE DB pour SQL Server prend en charge pour la haute disponibilité, la récupération d’urgence
 ms.custom: ''
-ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.date: 04/04/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|features
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 05275a1f770ce4a01f583dda768872a26b5e3725
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+manager: craigg
+ms.openlocfilehash: 59c1000cff92dbe10b13c1de01afb12482b4e219
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ole-db-driver-for-sql-server-support-for-high-availability-disaster-recovery"></a>Pilote OLE DB SQL Server Support for High Availability, Disaster Recovery
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
-  Cette rubrique décrit le pilote OLE DB pour la prise en charge de SQL Server (ajouté dans [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)]) pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]. Pour plus d’informations sur [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], consultez [Écouteurs de groupe de disponibilité, connectivité client et basculement d’application &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/listeners-client-connectivity-application-failover.md), [Création et configuration des groupes de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server.md), [Clustering de basculement et groupes de disponibilité AlwaysOn &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server.md), et [Secondaires actifs : réplicas secondaires lisibles actifs &#40;groupes de disponibilité AlwaysOn&#41;](../../../database-engine/availability-groups/windows/active-secondaries-readable-secondary-replicas-always-on-availability-groups.md).  
+  Cet article explique le pilote OLE DB pour la prise en charge de SQL Server (ajouté dans [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)]) pour [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)]. Pour plus d’informations sur [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], consultez [Écouteurs de groupe de disponibilité, connectivité client et basculement d’application &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/listeners-client-connectivity-application-failover.md), [Création et configuration des groupes de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/creation-and-configuration-of-availability-groups-sql-server.md), [Clustering de basculement et groupes de disponibilité AlwaysOn &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/failover-clustering-and-always-on-availability-groups-sql-server.md), et [Secondaires actifs : réplicas secondaires lisibles actifs &#40;groupes de disponibilité AlwaysOn&#41;](../../../database-engine/availability-groups/windows/active-secondaries-readable-secondary-replicas-always-on-availability-groups.md).  
   
  Vous pouvez spécifier l’écouteur d’un groupe de disponibilité donné dans la chaîne de connexion. Si un pilote OLE DB pour l’application de SQL Server est connecté à une base de données dans un groupe de disponibilité qui bascule, la connexion d’origine est rompue et l’application doit ouvrir une nouvelle connexion pour continuer à fonctionner après le basculement.  
   
@@ -72,29 +69,11 @@ Une erreur de connexion se produit si les mots clés de connexion **MultiSubnetF
 Si vous mettez à niveau un pilote OLE DB pour l’application de SQL Server qui utilise actuellement la mise en miroir de base de données à un scénario de sous-réseaux multiples, vous devez supprimer la **Failover_Partner** propriété de connexion et remplacez-la par  **MultiSubnetFailover** la valeur **Oui** et remplacez le nom du serveur dans la chaîne de connexion avec un écouteur de groupe de disponibilité. Si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover=Yes**, le pilote génère une erreur. Toutefois, si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover=No** (ou **ApplicationIntent=ReadWrite**), l’application utilise la mise en miroir de bases de données.  
   
 Le pilote retournera une erreur si la mise en miroir de bases de données est utilisée pour la base de données principale au sein du groupe de disponibilité, et si **MultiSubnetFailover=Yes** est utilisé dans la chaîne de connexion qui établit une connexion avec une base de données principale au lieu d’un écouteur de groupe de disponibilité.  
-  
-## <a name="specifying-application-intent"></a>Spécification de l'intention d'application  
-Lorsque **ApplicationIntent = ReadOnly**, le client demande un travail en lecture lors de la connexion à une base de données Always On est activé. Le serveur applique l’intention au moment de la connexion et pendant une `USE` de base de données de l’instruction, mais uniquement à une base de données Always On est activé.  
-  
-Le mot clé **ApplicationIntent** ne fonctionne pas avec les bases de données en lecture seule existantes.  
-  
-Une base de données peut autoriser ou interdire les charges de travail en lecture sur la base de données AlwaysOn ciblée. (Utilisez la clause **ALLOW_CONNECTIONS** des instructions **PRIMARY_ROLE** et **SECONDARY_ROLE**[!INCLUDE[tsql](../../../includes/tsql-md.md)].)  
-  
-Le mot clé **ApplicationIntent** est utilisé pour activer le routage en lecture seule.  
-  
-## <a name="read-only-routing"></a>Routage en lecture seule  
-Le routage en lecture seule est une fonctionnalité qui peut garantir la disponibilité d'un réplica en lecture seule d'une base de données. Pour activer le routage en lecture seule :  
-  
-1.  Vous devez vous connecter à un écouteur du groupe de disponibilité Always On.  
-  
-2.  Dans la chaîne de connexion, le mot clé **ApplicationIntent** doit avoir la valeur **ReadOnly**.  
-  
-3.  Le groupe de disponibilité AlwaysOn doit être configuré par l’administrateur de base de données pour activer le routage en lecture seule.  
-  
-Il est possible que plusieurs connexions utilisant le routage en lecture seule ne se connectent pas toutes au même réplica en lecture seule. Les modifications apportées à la synchronisation de base de données ou à la configuration du routage du serveur peuvent entraîner des connexions clientes à différents réplicas en lecture seule. Pour vérifier que toutes les demandes en lecture seule se connectent au même réplica en lecture seule, ne passez pas un écouteur de groupe de disponibilité AlwaysOn pour la **Server** mot clé de chaîne de connexion. Au lieu de cela, spécifiez le nom de l'instance en lecture seule.  
-  
-Le routage en lecture seule peut prendre plus de temps que la connexion au réplica primaire car le routage en lecture seule se connecte d'abord au réplica primaire, puis recherche le meilleur réplica secondaire lisible disponible. Pour cette raison, vous devez augmenter le délai de connexion.  
-  
+
+
+[!INCLUDE[specify-application-intent_read-only-routing](~/includes/paragraph-content/specify-application-intent-read-only-routing.md)]
+
+
 ## <a name="ole-db"></a>OLE DB  
 Le pilote OLE DB pour SQL Server prend en charge la **ApplicationIntent** et **MultiSubnetFailover** mots clés.   
   
@@ -113,18 +92,15 @@ Les propriétés de connexion équivalentes sont :
   
 -   **DBPROP_INIT_PROVIDERSTRING**  
   
-Un pilote OLE DB pour les applications OLE DB pour SQL Server peut utiliser une des méthodes pour spécifier l’intention de l’application :  
+Un pilote OLE DB pour l’application de SQL Server peut utiliser une des méthodes pour spécifier l’intention de l’application :  
   
- **IDBInitialize::Initialize**  
+ -   **IDBInitialize::Initialize**  
  **IDBInitialize::Initialize** utilise le jeu de propriétés configuré précédemment pour initialiser la source de données et créer l’objet source de données. Spécifiez l'intention de l'application en tant que propriété de fournisseur ou dans le cadre de la chaîne de propriétés étendues.  
   
- **IDataInitialize::GetDataSource**  
+ -   **IDataInitialize::GetDataSource**  
  **IDataInitialize::GetDataSource** accepte une chaîne de connexion d’entrée qui peut contenir le mot clé **Application Intent**.  
   
- **IDBProperties::GetProperties**  
- **IDBProperties::GetProperties** récupère la valeur de la propriété définie actuellement sur la source de données.  Vous pouvez récupérer la valeur **Application Intent** au moyen des propriétés DBPROP_INIT_PROVIDERSTRING et SSPROP_INIT_APPLICATIONINTENT.  
-  
- **IDBProperties::SetProperties**  
+ -   **IDBProperties::SetProperties**  
  Pour définir la valeur de propriété **ApplicationIntent**, appelez **IDBProperties::SetProperties** qui passe la propriété **SSPROP_INIT_APPLICATIONINTENT** avec la valeur « **ReadWrite** » ou « **ReadOnly** » ou **DBPROP_INIT_PROVIDERSTRING** avec la valeur qui contient « **ApplicationIntent=ReadOnly** » ou « **ApplicationIntent=ReadWrite** ».  
   
 Vous pouvez spécifier l’intention de l’application dans le champ Propriétés de l’intention de l’application de l’onglet Tous de la boîte de dialogue **Propriétés de liaison de données**.  
@@ -133,13 +109,22 @@ Lorsque des connexions implicites sont établies, la connexion implicite utilise
   
 ### <a name="multisubnetfailover"></a>MultiSubnetFailover
 
-La propriété de connexion équivalente est la suivante :  
+Les propriétés de connexion équivalentes sont :  
   
 -   **SSPROP_INIT_MULTISUBNETFAILOVER**  
+  
+-   **DBPROP_INIT_PROVIDERSTRING**  
 
-La propriété SSPROP_INIT_MULTISUBNETFAILOVER est de type booléen. La propriété accepte les valeurs de la valeur VARIANT_TRUE ou VARIANT_FALSE.
+Un pilote OLE DB pour l’application de SQL Server peut utiliser une des méthodes suivantes pour définir l’option MultiSubnetFailover :  
 
-Pour définir la valeur de propriété MultiSubnetFailover, appelez **IDBProperties::SetProperties** en passant la propriété SSPROP_INIT_MULTISUBNETFAILOVER avec valeur **VARIANT_TRUE** ou **VARIANT_ FALSE**. 
+ -   **IDBInitialize::Initialize**  
+ **IDBInitialize::Initialize** utilise le jeu de propriétés configuré précédemment pour initialiser la source de données et créer l’objet source de données. Spécifiez l'intention de l'application en tant que propriété de fournisseur ou dans le cadre de la chaîne de propriétés étendues.  
+  
+ -   **IDataInitialize::GetDataSource**  
+ **IDataInitialize::GetDataSource** prend une chaîne de connexion d’entrée pouvant contenir le **MultiSubnetFailover** (mot clé).  
+
+-   **IDBProperties::SetProperties**  
+Pour définir le **MultiSubnetFailover** valeur de la propriété, appelez **IDBProperties::SetProperties** en passant le **SSPROP_INIT_MULTISUBNETFAILOVER** propriété dont la valeur  **VARIANT_TRUE** ou **VARIANT_FALSE** ou **DBPROP_INIT_PROVIDERSTRING** propriété avec la valeur contenant «**MultiSubnetFailover = Yes** « ou »**MultiSubnetFailover = No**».
 
 #### <a name="example"></a>Exemple
 

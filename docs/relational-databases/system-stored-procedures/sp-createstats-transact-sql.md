@@ -1,16 +1,14 @@
 ---
 title: sp_createstats (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_createstats_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_createstats
 ms.assetid: 8204f6f2-5704-40a7-8d51-43fc832eeb54
-caps.latest.revision: 
+caps.latest.revision: 47
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c89f3aed714fba775e2271425fb86949e3f26ac
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6c37e65276e14bc8687f9ffceb1f5a2a5f3ca655
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spcreatestats-transact-sql"></a>sp_createstats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -38,7 +36,7 @@ ms.lasthandoff: 11/27/2017
   
  sp_createstats est utile aux applications de tests des performances, par exemple, pour lesquelles les délais d'exécution des requêtes sont critiques, car il n'est pas possible d'attendre que l'optimiseur de requête génère des statistiques de colonnes uniques. Dans la plupart des cas, il n’est pas nécessaire d’utiliser sp_createstats ; l’optimiseur de requête génère des statistiques de colonnes uniques selon les besoins pour améliorer les plans lorsque le **AUTO_CREATE_STATISTICS** option est activée.  
   
- Pour plus d’informations sur les statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md). Pour plus d’informations sur la génération de statistiques de colonne unique, consultez le **AUTO_CREATE_STATISTICS** option [Options ALTER DATABASE SET &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-database-transact-sql-set-options.md).  
+ Pour plus d’informations sur les statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md). Pour plus d’informations sur la génération de statistiques de colonne unique, consultez le **AUTO_CREATE_STATISTICS** option [Options ALTER DATABASE SET &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql-set-options.md).  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -77,7 +75,7 @@ sp_createstats
   
  Lorsque la table contient un jeu de colonnes, sp_createstats ne crée pas de statistiques sur les colonnes éparses. Pour plus d’informations sur les jeux de colonnes et les colonnes éparses, consultez [utiliser des jeux de colonnes](../../relational-databases/tables/use-column-sets.md) et [utiliser des colonnes éparses](../../relational-databases/tables/use-sparse-columns.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle de base de données fixe db_owner.  
   
 ## <a name="examples"></a>Exemples  
@@ -105,7 +103,7 @@ GO
  [DBCC SHOW_STATISTICS &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-show-statistics-transact-sql.md)   
  [DROP STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/drop-statistics-transact-sql.md)   
  [UPDATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/update-statistics-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

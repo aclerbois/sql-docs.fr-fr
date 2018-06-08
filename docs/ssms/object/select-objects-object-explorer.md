@@ -1,31 +1,31 @@
 ---
-title: "Sélectionner des objets (Explorateur d’objets) | Microsoft Docs"
-ms.custom: 
+title: Sélectionner des objets (Explorateur d’objets) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.common.selectobjects.f1
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.common.selectobjects.f1
 ms.assetid: 692477fe-dd7c-403d-acd2-bb108b6077f1
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0d0caa751a54dba0f3e6d36f1d757d440c24d3ec
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 57d472c063bd4b2cf697186323942842f8d037c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-objects-object-explorer"></a>Sélectionner des objets (Explorateur d'objets)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] La boîte de dialogue **Sélectionner des objets** vous permet d’ajouter un objet dans une liste d’une autre boîte de dialogue. Le titre de la boîte de dialogue et les options disponibles dans cette boîte de dialogue dépendent de la manière dont elle a été ouverte. Seules les options disponibles apparaissent ; par exemple, seuls des noms de connexion sont disponibles lorsque vous sélectionnez un propriétaire pour un nouvel objet.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+La boîte de dialogue **Sélectionner des objets** vous permet d’ajouter un objet dans une liste d’une autre boîte de dialogue. Le titre de la boîte de dialogue et les options disponibles dans cette boîte de dialogue dépendent de la manière dont elle a été ouverte. Seules les options disponibles apparaissent ; par exemple, seuls des noms de connexion sont disponibles lorsque vous sélectionnez un propriétaire pour un nouvel objet.  
   
 ## <a name="options"></a>Options  
 **Sélectionnez ces types d'objets**  
@@ -40,6 +40,6 @@ Affiche une liste de types d'objets. Sélectionnez un ou plusieurs types en acti
 **Vérifier les noms**  
 Valide les noms d’objets dans la zone **Entrez les noms d’objets à sélectionner** . Si un nom d’objet non valide est répertorié, la boîte de dialogue **Nom introuvable** s’affiche. Cette boîte de dialogue permet de corriger ou supprimer le nom dans la liste des objets à sélectionner.  
   
-**...**  
+**Parcourir**  
 Affiche la boîte de dialogue **Rechercher des objets** . Celle-ci contient la liste des objets des types répertoriés dans la zone **Sélectionnez ces types d’objets** . Sélectionnez des objets dans cette liste en activant les cases à cocher correspondantes.  
   

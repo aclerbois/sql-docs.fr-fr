@@ -1,33 +1,32 @@
 ---
-title: "Personnaliser (page Barres d’outils) | Microsoft Docs"
-ms.custom: 
+title: Personnaliser (page Barres d’outils) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-menu
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.customize.toolbars
 - sql13.swb.vs.customizetool.f1
 ms.assetid: 51ce6254-5682-43ff-8beb-4116a75c652e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a9aaa2f4f281a4e41dd90e336c4dd4e39024bb20
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: d5531cc4ab340bafb7ea72ee811f987e011974dd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-toolbars-page"></a>Personnaliser (page Barres d'outils)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] L’onglet **Barres d’outils** vous permet de créer, de renommer, de supprimer et de réinitialiser des barres d’outils. Vous pouvez accéder à cet onglet en cliquant sur **Personnaliser** dans le menu **Outils** , puis en cliquant sur **Barres d'outils**.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+L'onglet **Barres d'outils** vous permet de créer, de renommer, de supprimer et de rétablir des barres d'outils. Vous pouvez accéder à cet onglet en cliquant sur **Personnaliser** dans le menu **Outils** , puis en cliquant sur **Barres d'outils**.  
   
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
 **Barres d'outils**  

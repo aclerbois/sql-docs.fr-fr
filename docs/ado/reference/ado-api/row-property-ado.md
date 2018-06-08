@@ -1,17 +1,15 @@
 ---
-title: "Row, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Row, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - ADORecordConstruction::PutRow
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - Row property [ADO]
 ms.assetid: 21019d89-2dd1-4a26-ac6f-384b81d66949
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 093b4fdc13df9ae1bc62ace896ca2f0d9d3f9cda
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8b62cd50996a98c94261454e069a8f8a2d2bb9ba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="row-property-ado"></a>Propriété de ligne (ADO)
 Obtient ou définit un OLE DB **ligne** objet à partir d’ou sur un [ADORecordConstruction Interface](../../../ado/reference/ado-api/adorecordconstruction-interface.md) objet. Lorsque vous utilisez **put Row** pour définir un **ligne** de l’objet, une ligne est transformée en ADO **enregistrement** objet.  

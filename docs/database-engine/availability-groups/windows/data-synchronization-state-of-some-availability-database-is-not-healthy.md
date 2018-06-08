@@ -1,29 +1,28 @@
 ---
-title: "L’état de synchronisation des données d’une base de données de disponibilité n’est pas sain | Microsoft Docs"
-ms.custom: 
+title: L’état de synchronisation des données d’une base de données de disponibilité n’est pas sain | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.agdashboard.drp3datasynchealthy.issues.f1
-helpviewer_keywords: Availability Groups [SQL Server], policies
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.agdashboard.drp3datasynchealthy.issues.f1
+helpviewer_keywords:
+- Availability Groups [SQL Server], policies
 ms.assetid: 89f95d15-33c6-4768-bccd-9dbf8c4f49a9
-caps.latest.revision: "15"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 15
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 24a7ea125b40bdc453ddb12655fa047099540685
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: f0fea3fbe253845c9a9c3c4052c1f374839c349d
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768325"
 ---
 # <a name="data-synchronization-state-of-some-availability-database-is-not-healthy"></a>L'état de synchronisation des données d'une base de données de disponibilité n'est pas sain
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

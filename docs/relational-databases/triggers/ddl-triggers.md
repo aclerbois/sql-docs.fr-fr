@@ -1,34 +1,33 @@
 ---
-title: "Déclencheurs DDL | Microsoft Docs"
-ms.custom: 
+title: Déclencheurs DDL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-ddl
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - DDL triggers, about DDL triggers
 ms.assetid: 1a4a6564-9820-4a14-9305-2c0e9ea37454
-caps.latest.revision: 
+caps.latest.revision: 35
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fe470ea983e3f397c5afdb41a3526dd87256746e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 19db6970253548827239adeb46a6ddc797dce59f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ddl-triggers"></a>Déclencheurs DDL
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Les déclencheurs DDL sont activés en réponse à différents événements DDL (Data Definition Language). Ces événements correspondent principalement à des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] commençant par les mots clés CREATE, ALTER, DROP, GRANT, DENY, REVOKE ou UPDATE STATISTICS. Certaines procédures stockées système qui effectuent des opérations de type DDL peuvent également activer des déclencheurs DDL.  
+  Les déclencheurs DDL sont activés en réponse à différents événements DDL (Data Definition Language). Ces événements correspondent principalement à des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] commençant par les mots clés CREATE, ALTER, DROP, GRANT, DENY, REVOKE ou UPDATE STATISTICS. Certaines procédures stockées système qui effectuent des opérations de type DDL peuvent également activer des déclencheurs DDL.  
   
  Utilisez des déclencheurs DDL dans les cas suivants :  
   

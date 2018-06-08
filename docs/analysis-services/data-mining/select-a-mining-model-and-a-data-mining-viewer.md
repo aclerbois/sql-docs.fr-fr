@@ -1,31 +1,23 @@
 ---
-title: "Sélectionnez un modèle d’exploration de données et une visionneuse d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Mining Model Viewer [Analysis Services], types
-ms.assetid: 3e5fb89d-3ab8-4d2e-9926-feeb38c02d3f
-caps.latest.revision: "33"
-author: Minewiskan
+title: Sélectionnez un modèle d’exploration de données et une visionneuse d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 66c80a12bb03635d48078f5be284e6718dc33e9e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: e5aa785c809589854d569b62e6d47364e3b2eb96
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="select-a-mining-model-and-a-data-mining-viewer"></a>Sélectionner un modèle d'exploration de données et une visionneuse d'exploration de données
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Vous pouvez explorer un modèle d’exploration de données en utilisant l’une des visionneuses sur le **visionneuse de modèle d’exploration de données** onglet du Concepteur d’exploration de données. Vous pouvez aisément basculer entre les modèles ou modifier la visionneuse utilisée.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Vous pouvez explorer un modèle d’exploration de données en utilisant l’une des visionneuses sous l’onglet **Visionneuse de modèle d’exploration de données** du Concepteur d’exploration de données. Vous pouvez aisément basculer entre les modèles ou modifier la visionneuse utilisée.  
   
 -   La zone de liste déroulante **Modèle d’exploration de données** de l’onglet **Visionneuse de modèle d’exploration de données** du Concepteur d’exploration de données dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] contient la liste de tous les modèles d’exploration de données qui se trouvent dans la structure d’exploration de données actuelle.  
   
@@ -46,6 +38,6 @@ ms.lasthandoff: 01/08/2018
  Le modèle d'exploration de données s'ouvre dans la visionneuse fournie pour ce type de modèle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tâches et procédures de la visionneuse de modèle d’exploration de données](../../analysis-services/data-mining/mining-model-viewer-tasks-and-how-tos.md)  
+ [Tâches de la visionneuse modèle d’exploration de données et de procédures](../../analysis-services/data-mining/mining-model-viewer-tasks-and-how-tos.md)  
   
   

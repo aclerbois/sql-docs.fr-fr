@@ -1,39 +1,23 @@
 ---
-title: "Présentation des ordre de passage et résoudre Order (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- evaluation order [MDX]
-- calculation order [MDX]
-- SOLVE_ORDER property
-- queries [MDX], solve orders
-- solve orders [MDX]
-- pass orders [MDX]
-- expressions [MDX], solve orders
-ms.assetid: 7ed7d4ee-4644-4c5d-99a4-c4b429d0203c
-caps.latest.revision: 
-author: Minewiskan
+title: Présentation des ordre de passage et résoudre Order (MDX) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e081b07e8512e49d2fb09a8b119373f53fa4075a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b4b865293cb9c76fb46e8fe12befb2a000d21907
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-data-manipulation---understanding-pass-order-and-solve-order"></a>Manipulation de données MDX - présentation de passage de commande et l’ordre de résolution
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Lorsqu'un cube est calculé dans le cadre d'un script MDX, il peut subir de nombreuses étapes de calcul, en fonction de l'utilisation de diverses fonctionnalités liées au calcul. Chacune de ces étapes porte le nom de test de calcul.  
+  Lorsqu'un cube est calculé dans le cadre d'un script MDX, il peut subir de nombreuses étapes de calcul, en fonction de l'utilisation de diverses fonctionnalités liées au calcul. Chacune de ces étapes porte le nom de test de calcul.  
   
  Un test de calcul peut être désigné par sa position ordinale, appelée numéro du test de calcul. Le nombre de tests nécessaires au calcul complet de toutes les cellules d'un cube représente la profondeur du test de calcul du cube.  
   
@@ -220,9 +204,9 @@ FROM [Adventure Works]
  L'ordre de résolution peut s'avérer très délicat à gérer, notamment dans les cubes qui contiennent de très nombreuses dimensions impliquant des membres calculés, des formules de cumul personnalisé ou des cellules calculées. Au moment où [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] évalue une requête MDX, [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prend en compte les valeurs d'ordre de résolution de tous les éléments impliqués dans un test de calcul donné, y compris les dimensions du cube spécifié dans la requête MDX.  
   
 ## <a name="see-also"></a>Voir aussi  
- [CalculationCurrentPass &#40; MDX &#41;](../../../mdx/calculationcurrentpass-mdx.md)   
- [CalculationPassValue &#40; MDX &#41;](../../../mdx/calculationpassvalue-mdx.md)   
- [CRÉER une instruction MEMBER &#40; MDX &#41;](../../../mdx/mdx-data-definition-create-member.md)   
- [Manipulation de données &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-data-manipulation-manipulating-data.md)  
+ [CalculationCurrentPass & #40 ; MDX & #41 ;](../../../mdx/calculationcurrentpass-mdx.md)   
+ [CalculationPassValue & #40 ; MDX & #41 ;](../../../mdx/calculationpassvalue-mdx.md)   
+ [CRÉER une instruction MEMBER & #40 ; MDX & #41 ;](../../../mdx/mdx-data-definition-create-member.md)   
+ [Manipulation de données & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-data-manipulation-manipulating-data.md)  
   
   

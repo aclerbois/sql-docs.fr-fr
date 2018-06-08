@@ -1,30 +1,28 @@
 ---
 title: Index | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/21/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - index types [SQL Server]
 ms.assetid: 00863b10-e77c-44c5-8ac2-bb4ac454eec6
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 45
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2031ca1d626efd56b4735c014ab614cde401b0f2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6532283a3315ad60587ce6fd126f91859f42f29f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708377"
 ---
 # <a name="indexes"></a>Index
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

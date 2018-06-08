@@ -1,34 +1,34 @@
 ---
-title: "Utiliser le connecteur SQL Server avec les fonctionnalités de chiffrement SQL | Microsoft Docs"
-ms.custom: 
+title: Utiliser le connecteur SQL Server avec les fonctionnalités de chiffrement SQL | Microsoft Docs
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Connector, using
 - EKM, with SQL Server Connector
 ms.assetid: 58fc869e-00f1-4d7c-a49b-c0136c9add89
-caps.latest.revision: 
+caps.latest.revision: 14
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e25ba8ad35a44088cee720ad626bb1524f3db1c0
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: b22b47922534fc38d72c1d89104a9a301cb3637e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-sql-server-connector-with-sql-encryption-features"></a>Utiliser le connecteur SQL Server avec les fonctionnalités de chiffrement SQL
-[!INCLUDE[appliesto-xx-asdb-xxxx-xxx-md](../../../includes/appliesto-xx-asdb-xxxx-xxx-md.md)] Les activités de chiffrement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] courantes à l’aide d’une clé asymétrique protégée par Azure Key Vault incluent les trois domaines suivants.  
+[!INCLUDE[appliesto-xx-asdb-xxxx-xxx-md](../../../includes/appliesto-xx-asdb-xxxx-xxx-md.md)]
+  Les activités de chiffrement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] courantes à l’aide d’une clé asymétrique protégée par le coffre Azure Key Vault incluent les trois domaines suivants.  
   
 -   Chiffrement TDE (Transparent Data Encryption) à l’aide d’une clé asymétrique dans Azure Key Vault  
   

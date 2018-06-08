@@ -1,36 +1,34 @@
 ---
 title: Rechercher dans les fichiers | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.findreplace.findinfiles
 - vs.findinfiles
 helpviewer_keywords:
 - Find in Files dialog box
 ms.assetid: bf92770a-33df-43ef-85ad-5a9223649b98
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4c304f4d8012cafed4474c40fab26831bed3ae76
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6416b27dc8c5ff853c74a4b6292878b29dd3b28b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="find-in-files"></a>Rechercher dans les fichiers
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] L’onglet **Rechercher dans les fichiers** de la fenêtre Rechercher et remplacer vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble de fichiers spécifié. Les concordances trouvées et les actions exécutées sont répertoriées dans la fenêtre Résultats de la recherche, sélectionnée dans **Options de résultat**.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  L’onglet **Rechercher dans les fichiers** de la fenêtre Rechercher et remplacer vous permet de rechercher une chaîne ou une expression dans le code d’un ensemble de fichiers spécifié. Les concordances trouvées et les actions exécutées sont répertoriées dans la fenêtre Résultats de la recherche, sélectionnée dans **Options de résultat**.  
   
  Vous pouvez également ouvrir la boîte de dialogue **Rechercher et remplacer** à l’aide de boutons de la barre d’outils et de touches de raccourci.  
   

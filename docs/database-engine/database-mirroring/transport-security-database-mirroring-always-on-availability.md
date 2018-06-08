@@ -1,17 +1,15 @@
 ---
-title: "Sécurité du transport - Mise en miroir de bases de données - Groupes de disponibilité Always On | Microsoft Docs"
-ms.custom: 
+title: Sécurité du transport - Mise en miroir de bases de données - Groupes de disponibilité Always On | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sessions [SQL Server], database mirroring
 - cryptography [SQL Server], database mirroring
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - transport security
 - database mirroring [SQL Server], security
 ms.assetid: 49239d02-964e-47c0-9b7f-2b539151ee1b
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff841106e99cd34bedd1d93e106fb04d452b411f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 88bbb9d536694df7e33ea0190c91319e4c2bbe37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transport-security---database-mirroring---always-on-availability"></a>Sécurité du transport - Mise en miroir de bases de données - Groupes de disponibilité Always On
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -58,7 +55,7 @@ ms.lasthandoff: 02/23/2018
   
 -   Si les instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnent comme des services sous des comptes de domaine différents (dans les mêmes domaines ou dans des domaines approuvés), la connexion de chaque compte doit être créée en **maître** sur chacune des autres instances de serveur, et cette connexion doit disposer d’autorisations CONNECT sur le point de terminaison.  
   
--   Si les instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnent comme le compte de service réseau, la connexion de chaque compte d’ordinateur hôte (*nom_domaine***\\***nom_ordinateur$*) doit être créée en **maître** sur chacun des autres serveurs, et cette connexion doit disposer d’autorisations CONNECT sur le point de terminaison. En effet, une instance de serveur s'exécutant sous le compte de service réseau s'authentifie à l'aide du compte de domaine de l'ordinateur hôte.  
+-   Si les instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnent comme le compte de service réseau, la connexion de chaque compte d’ordinateur hôte (*nom_domaine***\\*** nom_ordinateur$*) doit être créée en **maître** sur chacun des autres serveurs, et cette connexion doit disposer d’autorisations CONNECT sur le point de terminaison. En effet, une instance de serveur s'exécutant sous le compte de service réseau s'authentifie à l'aide du compte de domaine de l'ordinateur hôte.  
   
 > [!NOTE]  
 >  Pour obtenir un exemple de configuration d’une session de mise en miroir de bases de données utilisant l’authentification Windows, consultez [Exemple : configurer la mise en miroir de bases de données à l’aide de l’authentification Windows &#40;Transact-SQL&#41;](../../database-engine/database-mirroring/example-setting-up-database-mirroring-using-windows-authentication-transact-sql.md).  

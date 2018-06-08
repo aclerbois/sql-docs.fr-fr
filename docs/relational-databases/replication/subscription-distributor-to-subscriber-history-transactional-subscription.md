@@ -1,30 +1,29 @@
 ---
-title: "Abonnement, historique du serveur de distribution vers l’abonné (abonnement transactionnel) | Microsoft Docs"
-ms.custom: 
+title: Abonnement, historique du serveur de distribution vers l’abonné (abonnement transactionnel) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.monitor.subscription.disttosub.f1
 ms.assetid: 1aad5b82-592e-4907-92f7-b90794175be5
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 32e87fb72178cb89638718478d09aeb5cd0449cf
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 775a138a247c875eb04b3ca843f11e1bfea54dff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-distributor-to-subscriber-history-transactional-subscription"></a>Abonnement, Historique du serveur de distribution vers l'Abonné (Abonnement transactionnel)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

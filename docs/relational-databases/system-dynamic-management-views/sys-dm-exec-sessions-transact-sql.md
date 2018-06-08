@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_sessions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_sessions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_sessions_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_sessions dynamic management view
 ms.assetid: 2b7e8e0c-eea0-431e-819f-8ccd12ec8cfa
-caps.latest.revision: 
+caps.latest.revision: 60
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: f2cf9c01c280848403ca2998e550213f2de78ad6
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cc1293a87ddfb743964a40377ba126a2f745d59d
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecsessions-transact-sql"></a>sys.dm_exec_sessions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -52,7 +49,7 @@ ms.lasthandoff: 02/20/2018
 |client_version|**int**|Version du protocole TDS de l'interface utilisée par le client pour se connecter au serveur. La valeur est NULL pour les sessions internes. Autorise la valeur NULL.|  
 |client_interface_name|**nvarchar(32)**|Nom de la bibliothèque/pilote utilisé par le client pour communiquer avec le serveur. La valeur est NULL pour les sessions internes. Autorise la valeur NULL.|  
 |security_id|**varbinary(85)**|ID de sécurité Microsoft Windows associé à la connexion. N'accepte pas la valeur NULL.|  
-|login_name|**nvarchar(128)**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] nom de connexion sous lequel la session est en cours d’exécution. Pour connaître le nom de connexion d'origine qui a créé la session, consulez original_login_name. Peut être un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentifié nom de connexion ou un nom d’utilisateur de domaine authentifié Windows. N'accepte pas la valeur NULL.|  
+|login_name|**nvarchar(128)**|Nom de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sous lequel la session s'exécute actuellement. Pour connaître le nom de connexion d'origine qui a créé la session, consulez original_login_name. Peut être un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] authentifié nom de connexion ou un nom d’utilisateur de domaine authentifié Windows. N'accepte pas la valeur NULL.|  
 |nt_domain|**nvarchar(128)**|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Domaine Windows du client si la session utilise l'authentification Windows ou une connexion approuvée. La valeur est NULL pour les sessions internes et les utilisateurs qui n'appartiennent pas à un domaine. Autorise la valeur NULL.|  
 |nt_user_name|**nvarchar(128)**|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Nom d'utilisateur Windows du client si la session utilise l'authentification Windows ou une connexion approuvée. La valeur est NULL pour les sessions internes et les utilisateurs qui n'appartiennent pas à un domaine. Autorise la valeur NULL.|  
 |status|**nvarchar(30)**|État de la session. Valeurs possibles :<br /><br /> **En cours d’exécution** -une ou plusieurs demandes en cours d’exécution<br /><br /> **En veille** -aucune demande en cours d’exécution<br /><br /> **Dormant** – Session a été réinitialisée en raison du regroupement de connexions et est maintenant en état de préconnexion.<br /><br /> **Preconnect** -Session est dans le classifieur du gouverneur de ressources.<br /><br /> N'accepte pas la valeur NULL.|  
@@ -85,8 +82,8 @@ ms.lasthandoff: 02/20/2018
 |deadlock_priority|**int**|Paramètre DEADLOCK_PRIORITY pour la session. N'accepte pas la valeur NULL.|  
 |row_count|**bigint**|Nombre de lignes retournées dans la session jusqu'à présent. N'accepte pas la valeur NULL.|  
 |prev_error|**int**|ID de la dernière erreur retournée dans la session. N'accepte pas la valeur NULL.|  
-|original_security_id|**varbinary(85)**|[!INCLUDE[msCoName](../../includes/msconame-md.md)] ID de sécurité Windows qui est associé à original_login_name. N'accepte pas la valeur NULL.|  
-|original_login_name|**nvarchar(128)**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] nom de connexion utilisée par le client pour créer cette session. Il peut s'agir d'un nom de compte de connexion authentifié [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], d'un nom d'utilisateur de domaine authentifié Windows ou d'un utilisateur de base de données à relation contenant-contenu. Notez que la session a pu faire l'objet de nombreux changements de contexte implicites ou explicites après la connexion initiale. Par exemple, si [EXECUTE AS](../../t-sql/statements/execute-as-transact-sql.md) est utilisé. N'accepte pas la valeur NULL.|  
+|original_security_id|**varbinary(85)**|ID de sécurité [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows qui est associé à original_login_name. N'accepte pas la valeur NULL.|  
+|original_login_name|**nvarchar(128)**|Nom de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisé par le client pour créer cette session. Il peut s'agir d'un nom de compte de connexion authentifié [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], d'un nom d'utilisateur de domaine authentifié Windows ou d'un utilisateur de base de données à relation contenant-contenu. Notez que la session a pu faire l'objet de nombreux changements de contexte implicites ou explicites après la connexion initiale. Par exemple, si [EXECUTE AS](../../t-sql/statements/execute-as-transact-sql.md) est utilisé. N'accepte pas la valeur NULL.|  
 |last_successful_logon|**datetime**|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Heure de la dernière ouverture de session réussie pour original_login_name avant le démarrage de la session actuelle.|  
 |last_unsuccessful_logon|**datetime**|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Heure de la dernière ouverture de session qui a échoué pour original_login_name avant le démarrage de la session actuelle.|  
 |unsuccessful_logons|**bigint**|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Nombre d'ouvertures de sessions ayant échoué pour original_login_name entre last_successful_logon et login_time.|  
@@ -124,7 +121,7 @@ Tous les utilisateurs peuvent voir leurs propres informations de session.
 |sys.dm_exec_sessions|[sys.dm_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)|session_id|Un-à-zéro ou un-à-plusieurs|  
 |sys.dm_exec_sessions|[sys.dm_exec_connections](../../relational-databases/system-dynamic-management-views/sys-dm-exec-connections-transact-sql.md)|session_id|Un-à-zéro ou un-à-plusieurs|  
 |sys.dm_exec_sessions|[sys.dm_tran_session_transactions](../../relational-databases/system-dynamic-management-views/sys-dm-tran-session-transactions-transact-sql.md)|session_id|Un-à-zéro ou un-à-plusieurs|  
-|sys.dm_exec_sessions|[sys.dm_exec_cursors](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cursors-transact-sql.md)(session_id &#124; 0)|session_id CROSS APPLY<br /><br /> OUTER APPLY|Un-à-zéro ou un-à-plusieurs|  
+|sys.dm_exec_sessions|[Sys.dm_exec_cursors](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cursors-transact-sql.md)(session_id &#124; 0)|session_id CROSS APPLY<br /><br /> OUTER APPLY|Un-à-zéro ou un-à-plusieurs|  
 |sys.dm_exec_sessions|[sys.dm_db_session_space_usage](../../relational-databases/system-dynamic-management-views/sys-dm-db-session-space-usage-transact-sql.md)|session_id|Un à un|  
   
 ## <a name="examples"></a>Exemples  
@@ -190,7 +187,7 @@ WHERE c.session_id = @@SPID;
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)  
   
   
 

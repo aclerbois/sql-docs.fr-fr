@@ -1,27 +1,24 @@
 ---
-title: "Développement de reconnaissance du Pool de connexions dans un pilote ODBC | Documents Microsoft"
-ms.custom: 
+title: Développement de reconnaissance du Pool de connexions dans un pilote ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c63d5cae-24fc-4fee-89a9-ad0367cddc3e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b96e4ef1e53fec8361bd96dee81206efdf138538
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 795fa0d91e706b2c78bd12f492413ca10a04d35b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="developing-connection-pool-awareness-in-an-odbc-driver"></a>Développement de reconnaissance du Pool de connexions dans un pilote ODBC
 Cette rubrique décrit les détails du développement d’un pilote ODBC qui contient des informations sur la façon dont le pilote doit fournir des services de regroupement de connexion.  

@@ -1,31 +1,28 @@
 ---
-title: "L’utilisation de fonctions concises | Documents Microsoft"
-ms.custom: 
+title: L’utilisation de fonctions concises | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - concise functions [ODBC]
 - functions [ODBC], concise functions
 - descriptors [ODBC], concise functions
 ms.assetid: 31ac070f-8c59-4fd5-bd5a-466bb27dbca0
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fecf227f991a3c9c6edfb1ce29f5b3b781898e45
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c53a628eaaa3ca8348ce8917ace36da35c33f653
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-concise-functions"></a>L’utilisation de fonctions Concise
 Certaines fonctions ODBC accéder implicite aux descripteurs. Créateurs d’applications peuvent trouver plus pratique que l’appel **SQLSetDescField** ou **SQLGetDescField**. Ces fonctions sont appelées *concis* fonctionne car ils effectuent des fonctions, y compris les définir ou obtenir les champs de descripteur. Certaines fonctions concises permettent une application de définir ou de récupérer plusieurs champs de descripteur associés dans un seul appel de fonction.  

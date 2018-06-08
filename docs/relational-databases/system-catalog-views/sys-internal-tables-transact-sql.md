@@ -1,16 +1,14 @@
 ---
 title: Sys.internal_tables (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.internal_tables
@@ -23,36 +21,35 @@ helpviewer_keywords:
 - internal tables
 - sys.internal_tables catalog view
 ms.assetid: a5821c70-f150-4676-8476-3a31f7403dca
-caps.latest.revision: 
+caps.latest.revision: 52
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc5ab8560914be149128c55f563bc9e5b422d4d5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: fe0991279a517f10d3a00f56bc056aa6f0588ef7
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysinternaltables-transact-sql"></a>sys.internal_tables (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
-  Retourne une ligne par objet représentant une table interne. Les tables internes sont générées automatiquement par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour la prise en charge de différentes fonctionnalités. Par exemple, lorsque vous créez un index XML primaire, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée automatiquement une table interne pour assurer la persistance des données du document XML fragmenté. Tables internes apparaissent dans le **sys** schéma de chaque base de données et avoir des noms uniques, généré par le système qui indique leur fonction, par exemple, **xml_index_nodes_2021582240_32001** ou **queue_messages_1977058079**  
+  Retourne une ligne par objet représentant une table interne. Les tables internes sont générées automatiquement par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour la prise en charge de différentes fonctionnalités. Par exemple, lorsque vous créez un index XML primaire, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée automatiquement une table interne pour assurer la persistance des données du document XML fragmenté. Tables internes apparaissent dans le **sys** schéma de chaque base de données et avoir des noms uniques, généré par le système qui indique leur fonction, par exemple, **xml_index_nodes_2021582240_32001** ou  **queue_messages_1977058079**  
   
  Les tables internes ne contiennent pas de données accessibles aux utilisateurs et leur schéma est fixe et invariable. Vous ne pouvez pas faire référence à des noms de tables internes dans les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)]. Par exemple, vous ne pouvez pas exécuter une instruction telle que SELECT \* FROM  *\<sys.internal_table_name >*. Par contre, vous pouvez interroger les affichages catalogue pour voir les métadonnées des tables internes.  
   
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**\<Colonnes héritent de sys.objects >**||Pour obtenir la liste des colonnes qui hérite de cette vue, consultez [sys.objects &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md).|  
+|**\<Colonnes héritent de sys.objects >**||Pour obtenir la liste des colonnes qui hérite de cette vue, consultez [sys.objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md).|  
 |**internal_type**|**tinyint**|Type de la table interne :<br /><br /> 201 = **queue_messages**<br /><br /> 202 = **xml_index_nodes**<br /><br /> 203 = **fulltext_catalog_freelist**<br /><br /> 205 = **query_notification**<br /><br /> 206 = **service_broker_map**<br /><br /> 207 = **extended_indexes** (par exemple, un index spatial)<br /><br /> 208 = **filestream_tombstone**<br /><br /> 209 = **change_tracking**<br /><br /> 210 = **tracked_committed_transactions**|  
-|**internal_type_desc**|**nvarchar (60)**|Description du type de table interne :<br /><br /> QUEUE_MESSAGES<br /><br /> XML_INDEX_NODES<br /><br /> FULLTEXT_CATALOG_FREELIST<br /><br /> FULLTEXT_CATALOG_MAP<br /><br /> QUERY_NOTIFICATION<br /><br /> SERVICE_BROKER_MAP<br /><br /> EXTENDED_INDEXES<br /><br /> FILESTREAM_TOMBSTONE<br /><br /> CHANGE_TRACKING<br /><br /> TRACKED_COMMITTED_TRANSACTIONS|  
+|**internal_type_desc**|**nvarchar(60)**|Description du type de table interne :<br /><br /> QUEUE_MESSAGES<br /><br /> XML_INDEX_NODES<br /><br /> FULLTEXT_CATALOG_FREELIST<br /><br /> FULLTEXT_CATALOG_MAP<br /><br /> QUERY_NOTIFICATION<br /><br /> SERVICE_BROKER_MAP<br /><br /> EXTENDED_INDEXES<br /><br /> FILESTREAM_TOMBSTONE<br /><br /> CHANGE_TRACKING<br /><br /> TRACKED_COMMITTED_TRANSACTIONS|  
 |**parent_id**|**int**|ID du parent, qu'il soit ou non de portée de schéma. En l'absence de parent, a pour valeur 0.<br /><br /> **queue_messages** = **object_id** de file d’attente<br /><br /> **xml_index_nodes** = **object_id** de l’index xml<br /><br /> **fulltext_catalog_freelist** = **fulltext_catalog_id** du catalogue de texte intégral<br /><br /> **fulltext_index_map** = **object_id** de l’index de recherche en texte intégral<br /><br /> **query_notification**, ou **service_broker_map** = 0<br /><br /> **extended_indexes** = **object_id** d’un index étendu, tel qu’un index spatial<br /><br /> **object_id** de la table pour la table dans laquelle le suivi est activé = **change_tracking**|  
-|**parent_minor_id**|**int**|ID mineur du parent.<br /><br /> **xml_index_nodes** = **index_id** de l’index XML<br /><br /> **extended_indexes** = **index_id** d’un index étendu, tel qu’un index spatial<br /><br /> 0 = **queue_messages**, **fulltext_catalog_freelist**, **fulltext_index_map**, **query_notification**, **service_broker_map**, ou **change_tracking**|  
+|**parent_minor_id**|**int**|ID mineur du parent.<br /><br /> **xml_index_nodes** = **index_id** de l’index XML<br /><br /> **extended_indexes** = **index_id** d’un index étendu, tel qu’un index spatial<br /><br /> 0 = **queue_messages**, **fulltext_catalog_freelist**, **fulltext_index_map**, **query_notification**,  **service_broker_map**, ou **change_tracking**|  
 |**lob_data_space_id**|**int**|Une valeur différente de zéro représente l'ID d'espace de données (groupe de fichiers ou schéma de partition) qui contient les données LOB de cette table.|  
 |**filestream_data_space_id**|**int**|Réservé pour un usage ultérieur.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)] Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
   
 ## <a name="remarks"></a>Notes  
@@ -182,6 +179,6 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [Affichages catalogue d’objets &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)  
+ [Affichages catalogue de l’objet &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)  
   
   

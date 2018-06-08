@@ -1,31 +1,23 @@
 ---
-title: "À l’aide de SQL Server Profiler pour contrôler l’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Profiler [SQL Server Profiler], Analysis Services
-ms.assetid: 655ac93c-5c5c-4565-914b-915327f7d349
-caps.latest.revision: "15"
-author: Minewiskan
+title: À l’aide de SQL Server Profiler pour contrôler l’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ed8d92643804b0b73c6d73d304d1cdedfe53b39e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: a40a02e3fd19ac853c7c4b291bbc3875229c747f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="using-sql-server-profiler-to-monitor-data-mining-analysis-services---data-mining"></a>Utilisation de SQL Server Profiler pour contrôler l'exploration de données (Analysis Services – Exploration de données)
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Si vous disposez des autorisations nécessaires, vous pouvez utiliser SQL Server Profiler pour surveiller les activités d’exploration de données qui sont émises sous forme de demandes envoyées à une instance de SQL Server Analysis Services. L'activité d'exploration de données peut inclure le traitement de modèles ou de structures, de requêtes de prédiction ou de requêtes de contenu ou la création de nouveaux modèles ou structures.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Si vous avez les autorisations nécessaires, vous pouvez utiliser SQL Server Profiler pour contrôler les activités d'exploration de données émises sous la forme de demandes envoyées à une instance de SQL Server Analysis Services. L'activité d'exploration de données peut inclure le traitement de modèles ou de structures, de requêtes de prédiction ou de requêtes de contenu ou la création de nouveaux modèles ou structures.  
   
  SQL Server Profiler utilise une **trace** pour contrôler les requêtes envoyées par plusieurs clients, notamment [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], SQL Server Management Studio, les services web ou les compléments d’exploration de données pour Excel, à condition que l’ensemble des activités utilisent la même instance de SQL Server Analysis Services. Vous devez créer un suivi séparé pour chaque instance de SQL Server Analysis Services que vous souhaitez contrôler. Pour obtenir des informations générales sur les traces et l’utilisation de SQL Server Profiler, consultez [Utiliser SQL Server Profiler pour contrôler Analysis Services](../../analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services.md).  
   
@@ -34,7 +26,7 @@ ms.lasthandoff: 01/08/2018
 ## <a name="using-traces-to-monitor-data-mining"></a>Utilisation des suivis pour contrôler l'exploration de données  
  Lorsque vous capturez des informations dans un suivi, vous pouvez spécifier si les informations sont enregistrées dans un fichier ou dans une table sur une instance de SQL Server. Indépendamment de la méthode utilisée pour stocker les données, vous pouvez utiliser SQL Server Profiler pour consulter le suivi et filtrer par événements. Le tableau suivant répertorie certains événements et sous-classes de la trace [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] par défaut qui sont pertinents pour l'exploration de données.  
   
-|EventClass|EventSubclass|Description|  
+|EventClass|EventSubclass| Description|  
 |----------------|-------------------|-----------------|  
 |**Query Begin**<br /><br /> **Query End**|**0 - MDXQuery**|Contient le texte de tous les appels aux procédures stockées [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] .|  
 |**Query Begin**<br /><br /> **Query End**|**1 - DMXQuery**|Contient le texte et les résultats des instructions DMX (Data Mining Extensions).|  

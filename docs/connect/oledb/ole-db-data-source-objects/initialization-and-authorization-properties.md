@@ -3,14 +3,12 @@ title: Propriétés d’initialisation et d’autorisation | Documents Microsoft
 description: Propriétés d’initialisation et d’autorisation
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-data-source-objects
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,13 +19,12 @@ helpviewer_keywords:
 - initialization properties [OLE DB]
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6be9ab05f9f7a5c669e62f92c238be3d06dbf44d
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: a1387abeab92f44f606dc0817174a26d5ac84a1f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="initialization-and-authorization-properties"></a>Propriétés d'initialisation et d'autorisation
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -70,7 +67,7 @@ ms.lasthandoff: 03/30/2018
 |SSPROP_INIT_ENCRYPT|Type : VT_BOOL<br /><br /> Lecture/écriture : lecture/écriture<br /><br /> Valeur par défaut : VARIANT_FALSE<br /><br /> Description : pour chiffrer les données qui sont transmises sur le réseau, la propriété SSPROP_INIT_ENCRYPT a la valeur VARIANT_TRUE.<br /><br /> Si la fonctionnalité de chiffrement de protocole est activée, le chiffrement est systématiquement effectué, indépendamment de la valeur de SSPROP_INIT_ENCRYPT. Si cette fonctionnalité est désactivée et si SSPROP_INIT_ENCRYPT a la valeur VARIANT_TRUE, le chiffrement est effectué.<br /><br /> Si la fonctionnalité de chiffrement de protocole est désactivée et si SSPROP_INIT_ENCRYPT a la valeur VARIANT_FALSE, aucun chiffrement n'est effectué.|  
 |SSPROP_INIT_FAILOVERPARTNER|Type : VT_BSTR<br /><br /> R/W : lecture/écriture<br /><br /> Description : indique le nom du partenaire de basculement pour la mise en miroir de bases de données. Il s'agit d'une propriété d'initialisation qui ne peut être définie qu'avant l'initialisation. Après l'initialisation, elle retourne le nom du partenaire de basculement (s'il existe), qui est retourné par le serveur principal.<br /><br /> Cela permet à une application intelligente de mettre en cache le serveur de sauvegarde le plus récent ; toutefois, de telles applications doivent prendre en compte le fait que les informations sont mises à jour uniquement lorsque la connexion est établie au préalable (ou lorsqu'elle est réinitialisée, en cas de regroupement), et que ces informations peuvent devenir obsolètes dans le cas des connexions à long terme.<br /><br /> Après avoir établi la connexion, l'application peut interroger cet attribut pour déterminer l'identité du partenaire de basculement. Si le serveur principal n'a pas de partenaire de basculement, cette propriété retourne une chaîne vide. Pour plus d’informations, consultez [à l’aide de la mise en miroir de la base de données](../../oledb/features/using-database-mirroring.md).|  
 |SSPROP_INIT_FILENAME|Type : VT_BSTR<br /><br /> R/W : lecture/écriture<br /><br /> Description : indique le nom du fichier primaire d'une base de données pouvant être attachée. Cette base de données est attachée et devient la base de données par défaut de la connexion. Pour utiliser SSPROP_INIT_FILENAME, vous devez spécifier le nom de la base de données en tant que valeur de la propriété d'initialisation DBPROP_INIT_CATALOG. Si le nom de la base de données n'existe pas, la propriété recherche le nom de fichier primaire spécifié dans SSPROP_INIT_FILENAME, puis attache cette base de données avec le nom spécifié dans DBPROP_INIT_CATALOG. Si la base de données a été attachée précédemment, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne l'attache pas de nouveau.|  
-|SSPROP_INIT_MARSCONNECTION|Type : VT_BOOL<br /><br /> R/W : lecture/écriture<br /><br /> Valeur par défaut : VARIANT_FALSE<br /><br /> Description : indique si MARS (Multiple Active Result Sets) est activé pour la connexion. Cette option doit être définie à true avant l'établissement d'une connexion à la base de données. Pour plus d’informations, consultez [à l’aide de Multiple Active Result Sets &#40; MARS &#41; ](../../oledb/features/using-multiple-active-result-sets-mars.md).|  
+|SSPROP_INIT_MARSCONNECTION|Type : VT_BOOL<br /><br /> R/W : lecture/écriture<br /><br /> Valeur par défaut : VARIANT_FALSE<br /><br /> Description : indique si MARS (Multiple Active Result Sets) est activé pour la connexion. Cette option doit être définie à true avant l'établissement d'une connexion à la base de données. Pour plus d’informations, consultez [à l’aide de Multiple Active Result Sets & #40 ; MARS & #41 ; ](../../oledb/features/using-multiple-active-result-sets-mars.md).|  
 |SSPROP_INIT_NETWORKADDRESS|Type : VT_BSTR<br /><br /> R/W : lecture/écriture<br /><br /> Description : adresse réseau du serveur exécutant une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] spécifiée par la propriété DBPROP_INIT_DATASOURCE.|  
 |SSPROP_INIT_NETWORKLIBRARY|Type : VT_BSTR<br /><br /> R/W : lecture/écriture<br /><br /> Description : nom de la bibliothèque réseau (DLL) utilisée pour communiquer avec une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Le nom ne doit pas inclure le chemin d'accès ni l'extension de nom de fichier .dll.<br /><br /> La valeur par défaut peut être personnalisée à l'aide de l'utilitaire de configuration de client [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].<br /><br /> Remarque : Seul TCP et canaux nommés sont pris en charge par cette propriété. Si vous utilisez cette propriété avec un préfixe, vous obtenez un préfixe double, ce qui entraîne une erreur, car la propriété est utilisée pour générer un préfixe en interne.|  
 |SSPROP_INIT_PACKETSIZE|Type : VT_I4<br /><br /> R/W : lecture/écriture<br /><br /> Description : taille d'un paquet réseau en octets. La valeur de propriété relative à la taille du paquet doit être comprise entre 512 et 32 767. Le pilote OLE DB par défaut pour la taille du paquet réseau SQL Server est 4 096.|  
@@ -93,6 +90,6 @@ Server=MyServer;UID=MyUserName;
  Pour obtenir la liste des mots clés disponibles dans le pilote OLE DB pour SQL Server, consultez [à l’aide de mots clés de chaîne de connexion avec le pilote OLE DB pour SQL Server](../../oledb/applications/using-connection-string-keywords-with-oledb-driver-for-sql-server.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objets Source de données &#40; OLE DB &#41;](../../oledb/ole-db-data-source-objects/data-source-objects-ole-db.md)  
+ [Objets Source de données & #40 ; OLE DB & #41 ;](../../oledb/ole-db-data-source-objects/data-source-objects-ole-db.md)  
   
   

@@ -1,16 +1,14 @@
 ---
 title: sp_helplanguage (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helplanguage
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - sp_helplanguage
 - default languages
 ms.assetid: 8c4651a5-7dbc-49c5-8691-dc72103c2dfa
-caps.latest.revision: 
+caps.latest.revision: 19
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a94f66688ce53aef2dcf575d58e16ed6f2f1672b
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fdea1704b8942191bf79cb9074715f61eb9a9e81
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelplanguage-transact-sql"></a>sp_helplanguage (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -58,18 +56,18 @@ sp_helplanguage [ [ @language = ] 'language' ]
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**ID de langue**|**smallint**|Numéro d'identification de la langue.|  
-|**DateFormat**|**NCHAR(3)**|Format de la date.|  
+|**dateformat**|**nchar(3)**|Format de la date.|  
 |**DATEFIRST**|**tinyint**|Premier jour de la semaine : 1 pour lundi, 2 pour mardi, etc., jusqu'à 7 pour dimanche.|  
-|**mise à niveau**|**int**|Version [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de la dernière mise à niveau pour cette langue.|  
+|**Mise à niveau**|**int**|Version [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de la dernière mise à niveau pour cette langue.|  
 |**nom**|**sysname**|Nom de la langue.|  
 |**alias**|**sysname**|Nom de remplacement de la langue.|  
-|**mois**|**nvarchar(372)**|Noms des mois.|  
+|**Mois**|**nvarchar(372)**|Noms des mois.|  
 |**ShortMonths**|**nvarchar(132)**|Abréviations des noms des mois.|  
-|**jours d’utilisation**|**nvarchar(217)**|Noms des jours.|  
-|**LCID**|**int**|ID de paramètres régionaux Windows pour la langue.|  
+|**Jours d’utilisation**|**nvarchar(217)**|Noms des jours.|  
+|**lcid**|**int**|ID de paramètres régionaux Windows pour la langue.|  
 |**msglangid**|**smallint**|ID du groupe de messages du [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  
   
 ## <a name="examples"></a>Exemples  
@@ -89,9 +87,9 @@ sp_helplanguage;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [@@LANGUAGE &#40;Transact-SQL&#41;](../../t-sql/functions/language-transact-sql.md)   
- [SET LANGUAGE &#40; Transact-SQL &#41;](../../t-sql/statements/set-language-transact-sql.md)   
+ [SET LANGUAGE &#40;Transact-SQL&#41;](../../t-sql/statements/set-language-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

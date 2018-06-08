@@ -1,17 +1,16 @@
 ---
-title: "Comparaison de données de chaînes | Microsoft Docs"
-ms.custom: 
+title: Comparaison de données de chaînes | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - comparing string data
 - comparison options [Integration Services]
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - converting string data
 - string comparisons
 ms.assetid: 93aeb5bd-e208-46b7-8979-dea2dcd37d4c
-caps.latest.revision: 
+caps.latest.revision: 39
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3a706839de5dd4981e09c4bc1384ee45f86c0dcb
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c60572c425df10ab659239217424d789bfe2abc1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comparing-string-data"></a>comparaison de données de chaînes
   Les comparaisons de chaînes représentent une partie importante des transformations réalisées par [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]et peuvent également être utilisées pour l'évaluation d'expressions dans des variables et des expressions de propriétés. Ainsi, la transformation de tri peut comparer les valeurs d'un dataset afin de trier les données dans l'ordre croissant ou décroissant.  

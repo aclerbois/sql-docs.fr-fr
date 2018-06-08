@@ -1,49 +1,100 @@
 ---
 title: Notes de publication de SQL Server 2016 | Microsoft Docs
-ms.date: 03/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: ''
-ms.component: sql-non-specified
+ms.date: 04/24/2018
+ms.prod: sql
+ms.prod_service: sql
 ms.reviewer: ''
 ms.suite: sql
 ms.custom: ''
-ms.technology:
-- server-general
+ms.technology: supportability
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - build notes
 - release issues
 ms.assetid: c64077a2-bec8-4c87-9def-3dbfb1ea1fb6
-caps.latest.revision: ''
 author: craigg-msft
 ms.author: craigg
 manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 1a6d422098fdacb3a7bc6392b99fe63bb25c2c36
-ms.sourcegitcommit: 6e16d1616985d65484c72f5e0f34fb2973f828f4
+monikerRange: = sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2568e2d57cb05164153fa5a9b2a22a49bcb31dac
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sql-server-2016-release-notes"></a>Notes de publication de SQL Server 2016
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
   Cet article décrit les limitations et les problèmes des versions SQL Server 2016, notamment les Service Packs. Pour plus d’informations sur les nouveautés, consultez [Nouveautés de SQL Server 2016](https://docs.microsoft.com/en-us/sql/sql-server/what-s-new-in-sql-server-2016).
 
-> [![Télécharger à partir du Centre d’évaluation](../includes/media/download2.png)](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)  Télécharger SQL Server 2016 à partir du **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)**
->
-> [![Machine virtuelle Azure de petite taille](../includes/media/azure-vm.png)](https://azure.microsoft.com/marketplace/partners/microsoft/sqlserver2016sp1standardwindowsserver2016/) Vous avez un compte Azure ?  Cliquez **[ici](https://azure.microsoft.com/marketplace/partners/microsoft/sqlserver2016sp1standardwindowsserver2016/)** pour lancer une machine virtuelle avec SQL Server 2016 SP1 déjà installé.
->
-> [![Télécharger SSMS](../includes/media/download2.png)](../ssms/download-sql-server-management-studio-ssms.md) Pour obtenir la dernière version de SQL Server Management Studio, consultez **[Télécharger SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md)**.
+- [![Télécharger à partir du Centre d’évaluation](../includes/media/download2.png)](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)  Télécharger SQL Server 2016 à partir du **[Centre d’évaluation](https://www.microsoft.com/evalcenter/evaluate-sql-server-2016)**
+- [![Machine virtuelle Azure de petite taille](../includes/media/azure-vm.png)](https://azure.microsoft.com/marketplace/partners/microsoft/sqlserver2016sp1standardwindowsserver2016/) Vous avez un compte Azure ?  Cliquez **[ici](https://azure.microsoft.com/marketplace/partners/microsoft/sqlserver2016sp1standardwindowsserver2016/)** pour lancer une machine virtuelle avec SQL Server 2016 SP1 déjà installé.
+- [![Télécharger SSMS](../includes/media/download2.png)](../ssms/download-sql-server-management-studio-ssms.md) Pour obtenir la dernière version de SQL Server Management Studio, consultez **[Télécharger SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md)**.
+
+## <a name="bkmk_2016sp2"></a>SQL Server 2016 Service Pack 2 (SP2)
+
+![info_tip](../sql-server/media/info-tip.png) SQL Server 2016 SP2 inclut toutes les mises à jour cumulatives publiées après 2016 SP1, jusqu’à CU8 inclus. 
+
+- [![Centre de téléchargement Microsoft](../includes/media/download2.png)](https://go.microsoft.com/fwlink/?linkid=869608) [Télécharger SQL Server 2016 Service Pack 2 (SP2)](https://go.microsoft.com/fwlink/?linkid=869608)
+- Pour une liste complète des mises à jour, consultez [Informations de version de SQL Server 2016 Service Pack 2](https://support.microsoft.com/en-us/help/4052908/sql-server-2016-service-pack-2-release-information)
+
+Il peut s’avérer nécessaire de redémarrer le système après l’installation de SQL Server 2016 SP2. Nous vous recommandons de planifier et d’effectuer un redémarrage après l’installation de SQL Server 2016 SP2.
+
+Améliorations relatives aux performances et à la scalabilité incluses dans SQL Server 2016 SP2.
+|Fonctionnalité|Description|Informations complémentaires|
+|   --- |   --- |   --- |
+|Procédure améliorée de nettoyage de base de données de distribution |   Une table de base de données de distribution de grande taille causait une situation de blocage. Cette amélioration vise à éviter certains scénarios de blocage ou d’interblocage. |   [KB4040276](https://support.microsoft.com/help/4040276/fix-indirect-checkpoints-on-the-tempdb-database-cause-non-yielding)  |
+|Nettoyage du suivi des modifications    |   Amélioration des performances et de l’efficacité du nettoyage du suivi des modifications pour les tables Change Tracking.    |   [KB4052129](https://support.microsoft.com//help/4052129/update-for-manual-change-tracking-cleanup-procedure-in-sql-server-2016) |
+|Utiliser l’expiration du temps processeur pour annuler une requête Resource Governor   |   Améliore la gestion des demandes de requête en annulant réellement la requête, si les seuils du processeur pour une requête ont été atteints. Ce comportement est activé sous l’indicateur de trace 2422. |   [KB4038419](https://support.microsoft.com/help/4038419/add-cpu-timeout-to-resource-governor-request-max-cpu-time-sec)   |
+|SELECT INTO pour créer une table cible dans un groupe de fichiers    |   À partir de SQL Server 2016 SP2, la syntaxe T-SQL SELECT INTO prend en charge le chargement d’une table dans un groupe de fichiers autre qu’un groupe de fichiers par défaut de l’utilisateur, à l’aide du mot clé ON <Filegroup name> dans la syntaxe T-SQL. |       |
+|Point de contrôle indirect amélioré pour TempDB    |   Le point de contrôle indirect pour TempDB est amélioré pour minimiser la contention de verrouillage tournant sur DPLists. Cette amélioration permet à la charge de travail TempDB sur SQL Server 2016 de bénéficier immédiatement d’une croissance externe (scale out) si le point de contrôle indirect est défini sur ON pour TempDB.    |   [KB4040276](https://support.microsoft.com/en-us/help/4040276)   |
+|Performances de sauvegarde de base de données améliorées sur les machines à mémoire volumineuse  |   SQL Server 2016 SP2 optimise la façon dont nous drainons les E/S continues durant la sauvegarde, entraînant des gains significatifs en termes de performances de sauvegarde pour les bases de données petites à moyennes. Nous avons constaté une amélioration supérieure à 100 fois lors de sauvegardes de bases de données système sur une machine de 2 To. Le gain de performances diminue avec l’augmentation de la taille de la base de données, car les pages à sauvegarder et les E/S de la sauvegarde prennent plus de temps que les itérations du pool de mémoires tampons. Cette modification permet d’améliorer les performances de sauvegarde pour les clients hébergeant plusieurs bases de données de petite taille sur des serveurs haut de gamme volumineux dotés d’une grande capacité de mémoire.    |       |
+|Prise en charge de la compression de sauvegarde VDI pour les bases de données compatibles TDE   |   SQL Server 2016 SP2 ajoute la prise en charge de VDI pour permettre aux solutions de sauvegarde VDI de tirer parti de la compression pour les bases de données compatibles TDE. Avec cette amélioration, un nouveau format de sauvegarde a été introduit pour prendre en charge la compression de sauvegarde pour les bases de données compatibles TDE. Le moteur SQL Server gère en toute fluidité les formats de sauvegarde nouveaux et anciens pour restaurer les sauvegardes.   |       |
+|Chargement dynamique des paramètres de profil d’agent de réplication    |   Cette nouvelle amélioration permet le chargement dynamique des paramètres des agents de réplication sans avoir à redémarrer l’agent. Ce changement s’applique uniquement aux paramètres de profil d’agent les plus couramment utilisés. |       |
+|Prise en charge de l’option MAXDOP pour la création/mise à jour des statistiques |    Cette amélioration permet de spécifier l’option MAXDOP pour une instruction CREATE/UPDATE relative aux statistiques. Elle permet aussi de s’assurer que le paramètre MAXDOP correct est utilisé lorsque des statistiques sont mises à jour dans le cadre d’une opération de création ou de regénération de tous types d’index (si l’option MAXDOP est présente)   |   [KB4041809](https://support.microsoft.com/en-us/help/4041809)   |
+|Mise à jour des statistiques automatique améliorée pour les statistiques incrémentielles |    Dans certains scénarios, lorsque plusieurs modifications des données ont eu lieu sur plusieurs partitions d’une table entraînant le compteur de modifications totales pour les statistiques incrémentielles à dépasser le seuil de mise à jour automatique, mais sans que les partitions individuelles ne dépassent le seuil de mise à jour automatique, la mise à jour des statistiques peut être retardée jusqu’à ce que davantage de modifications aient lieu dans la table. Ce comportement est corrigé sous l’indicateur de trace 11024.   |       |
+
+Améliorations relatives à la prise en charge et aux diagnostics incluses dans SQL Server 2016 SP2.
+|Fonctionnalité |Description   |Informations complémentaires   |
+|   --- |   --- |   --- |
+|Prise en charge complète de DTC pour les bases de données dans un groupe de disponibilité    |   Les transactions entre bases de données faisant partie d’un groupe de disponibilité ne sont actuellement pas prises en charge pour SQL Server 2016. Avec SQL Server 2016 SP2, nous présentons la prise en charge complète des transactions distribuées avec des bases de données de groupes de disponibilité.   |       |
+|Mise à jour de la colonne is_encrypted de sys.databases pour refléter de manière correcte l’état du chiffrement pour TempDB |   La valeur de la colonne is_encryptedcolumn dans sys.databases est égale à 1 pour TempDB, même après la désactivation du chiffrement pour toutes les bases de données utilisateur et le redémarrage de SQL Server. Le comportement attendu est une valeur de 0, car TempDB n’est plus chiffré dans ce cas. À partir de SQL Server 2016 SP2, sys.databases.is_encrypted reflète maintenant de manière correcte l’état du chiffrement pour TempDB.  |       |
+|Nouvelles options DBCC CLONEDATABASE pour générer un clone et une sauvegarde vérifiés   |   Avec SQL Server 2016 SP2, DBCC CLONEDATABASE offre deux nouvelles options : créer un clone vérifié ou créer une sauvegarde vérifiée. Lorsqu’une base de données clone est créée avec l’option WITH VERIFY_CLONEDB, un clone de base de données cohérent est créé et vérifié. Celui-ci est pris en charge par Microsoft pour une utilisation en production. Une nouvelle propriété est présentée pour valider que le clone est vérifié SELECT DATABASEPROPERTYEX(‘clone_database_name’, ‘IsVerifiedClone’). Lorsqu’un clone est créé avec l’option BACKUP_CLONEDB, une sauvegarde est générée dans le même dossier que le fichier de données afin de faciliter, pour les utilisateurs, le déplacement du clone vers un autre serveur ou son envoi au Support technique Microsoft à des fins de résolution des problèmes.  |       |
+|Prise en charge de Service Broker (SSB) pour DBCC CLONEDATABASE    |   Commande DBCC CLONEDATABASE améliorée pour autoriser le script d’objets SSB.  |   [KB4092075](https://support.microsoft.com/en-us/help/4092075)   |
+|Nouvelle vue de gestion dynamique (DMV) pour surveiller l’utilisation de l’espace du magasin de versions TempDB    |   Une nouvelle DMV sys.dm_tran_version_store_space_usage est présentée dans SQL Server 2016 SP2 pour permettre le monitoring de l’utilisation du magasin de versions par TempDB. Les Administrateurs de base de données peuvent désormais planifier de manière proactive le dimensionnement de TempDB en fonction des exigences d’utilisation du magasin de versions par base de données, sans surcharge des performances en cas d’exécution sur des serveurs de production. |       |
+|Prise en charge complète des vidages (dumps) pour les agents de réplication | Actuellement, si les agents de réplication rencontrent une exception non gérée, le comportement par défaut est de créer un vidage minimal des symptômes de l’exception. Cela rend la résolution des problèmes d’une exception non gérée très difficile. Via cette modification, nous introduisons une nouvelle clé de registre, qui permet de créer un vidage complet pour les Agents de réplication.  |       |
+|Amélioration des événements étendus pour la lecture de l’échec de routage pour un groupe de disponibilité |   Auparavant, xEvent read_only_rout_fail se déclenchait si une liste de routage existait, mais qu’aucun des serveurs dans la liste de routage n’était disponible pour les connexions. SQL Server 2016 SP2 inclut des informations supplémentaires pour aider à résoudre ce type de problème. Il étend également les points de code où cet événement XEvent peut être déclenché.  |       |
+|Nouvelle vue de gestion dynamique (DMV) pour analyser le journal des transactions |   Ajout d’une nouvelle DMV sys.dm_db_log_stats qui retourne des attributs de niveau résumé et des informations sur les fichiers journaux des transactions des bases de données. |       |
+|Nouvelle vue de gestion dynamique (DMV) pour surveiller les informations du fichier journal virtuel |   Une nouvelle vue de gestion dynamique, sys.dm_db_log_info, est introduite dans SQL Server 2016 SP2 pour exposer les informations de fichier journal virtuel similaires à DBCC LOGINFO, afin de surveiller, alerter et éviter les problèmes T-Log potentiels rencontrés par les clients.    |       |
+|Informations de processeur dans sys.dm_os_sys_info|   De nouvelles colonnes ont été ajoutées à la DMV sys.dm_os_sys_info pour exposer les informations relatives au processeur, comme socket_count et cores_per_numa.  |       |
+|Informations d’extension modifiée dans sys.dm_db_file_space_usage| Une nouvelle colonne a été ajoutée à sys.dm_db_file_space_usage pour suivre le nombre d’extensions modifiées depuis la dernière sauvegarde complète.  |       |
+|Informations de segment dans sys.dm_exec_query_stats |   De nouvelles colonnes ont été ajoutées à sys.dm_exec_query_stats pour effectuer le suivi du nombre de segments columnstore ignorés et lus, comme total_columnstore_segment_reads et total_columnstore_segment_skips.   |   [KB4051358](https://support.microsoft.com/en-us/help/4051358)   |
+|Définition du niveau approprié de compatibilité pour une base de données de distribution  |   Après l’installation du Service Pack, le niveau de compatibilité de la base de données de distribution passe à 90. Ceci était dû à un chemin d’accès de code dans la procédure stockée sp_vupgrade_replication. Cette procédure stockée a été modifiée afin de définir le niveau de compatibilité correct pour la base de données de distribution.   |       |
+|Exposer les dernières informations DBCC CHECKDB correctes connues    |   Une nouvelle option de base de données a été ajoutée pour retourner par programme la dernière exécution de DBCC CHECKDB réussie. Les utilisateurs peuvent désormais interroger DATABASEPROPERTYEX([database], ‘lastgoodcheckdbtime’) pour obtenir une valeur unique représentant la date/l’heure de la dernière exécution réussie de DBCC CHECKDB sur la base de données spécifiée.  |       |
+|Améliorations de Showplan XML| [Informations sur les statistiques utilisées pour compiler le plan de requête](https://blogs.msdn.microsoft.com/sql_server_team/sql-server-2017-showplan-enhancements/), notamment, le nom des statistiques, le compteur de modifications, le pourcentage d’échantillonnage et la dernière mise à jour des statistiques. Remarque : ceci a été ajouté pour les modèles CE 120 et ultérieurs uniquement. Par exemple, non pris en charge pour CE 70.| |
+| |Un nouvel attribut [EstimateRowsWithoutRowgoal](https://blogs.msdn.microsoft.com/sql_server_team/more-showplan-enhancements-row-goal/) est ajouté à showplan XML si l’Optimiseur de requête utilise la logique « row goal ».| |
+| |Nouveaux attributs du runtime [UdfCpuTime et UdfElapsedTime](https://blogs.msdn.microsoft.com/sql_server_team/more-showplan-enhancements-udfs/) dans showplan XML, pour effectuer le suivi du temps passé dans UDF (User-Defined Functions) scalaire.| |
+| |Type d’attente CXPACKET ajouté à la [liste des 10 principales attentes possible](https://blogs.msdn.microsoft.com/sql_server_team/new-showplan-enhancements/) dans showplan XML – L’exécution de requête parallèle implique souvent des attentes CXPACKET, mais ce type d’attente ne répondait pas dans showplan XML. |       |
+| |Extension de l’avertissement de dépassement du runtime pour consigner le nombre de pages écrites dans TempDB durant un dépassement opérateur parallélisme.| |
+|Prise en charge de la réplication pour les bases de données avec classements de caractères supplémentaires  |   La réplication peut désormais être prise en charge sur les bases de données qui utilisent les classements de caractères supplémentaires. |       |
+|Traitement correct de Service Broker avec basculement du groupe de disponibilité |   Dans la mise en œuvre actuelle, quand Service Broker est activé sur des bases de données du groupe de disponibilité et qu’il y a un basculement du groupe de disponibilité, toutes les connexions Service Broker créées à partir du réplica principal restent ouvertes. Cette amélioration vise à fermer toutes les connexions ouvertes pendant un basculement du groupe de disponibilité. |       |
+|Résolution des problèmes améliorée des attentes de parallélisme |   avec l’ajout d’une nouvelle attente [CXCONSUMER](https://blogs.msdn.microsoft.com/sql_server_team/making-parallelism-waits-actionable/).   |       |
+|Cohérence améliorée entre les vues de gestion dynamiques (DMV) pour les mêmes informations |   La DMV sys.dm_exec_session_wait_stats effectue désormais le suivi des attentes CXPACKET et CXCONSUMER de manière cohérente avec la DMV sys.dm_os_wait_stats. |       |
+|Résolution des problèmes améliorée des blocages de parallélisme intra-requête | Nouvel événement étendu exchange_spill pour consigner le nombre de pages écrites dans TempDB lors d’un dépassement opérateur parallélisme, dans le nom de champ xEvent worktable_physical_writes.| |
+| |Les colonnes de dépassement dans les DMV sys.dm_exec_query_stats, sys.dm_exec_procedure_stats et sys.dm_exec_trigger_stats (comme total_spills) inclut aussi les données propagées par les opérateurs de parallélisme.| |
+| |Le graphe de blocage XML est amélioré pour les scénarios de blocage de parallélisme, avec davantage d’attributs ajoutés à la ressource exchangeEvent.| |
+| |Le graphe de blocage XML est amélioré pour les blocages impliquant des opérateurs en mode lot, avec davantage d’attributs ajoutés à la ressource SyncPoint.| |
+|Rechargement dynamique de certains paramètres de profil d’agent de réplication |   Dans la mise en œuvre actuelle des agents de réplication, toute modification dans le paramètre de profil d’agent requiert l’arrêt et le redémarrage de l’agent. Ces améliorations permettent le rechargement dynamique des paramètres sans avoir à redémarrer l’agent de réplication.   |       |
+
+![horizontal-bar.png](media/horizontal-bar.png)
 
 ## <a name="bkmk_2016sp1"></a>SQL Server 2016 Service Pack 1 (SP1)
-![info_tip](../sql-server/media/info-tip.png) SQL Server 2016 SP1 inclut tous les correctifs jusqu’à SQL Server 2016 RTM CU3, notamment la mise à jour de sécurité MS16-136. Elle contient un récapitulatif des solutions fournies dans les mises à jour cumulatives de SQL Server 2016 jusqu’à la dernière mise à jour cumulative - CU3 (incluse) et la mise à jour de sécurité MS16-136 publiée le 8 novembre 2016. 
+![info_tip](../sql-server/media/info-tip.png) SQL Server 2016 SP1 inclut toutes les mises à jour cumulatives jusqu’à SQL Server 2016 RTM CU3, notamment la mise à jour de sécurité MS16-136. Elle contient un récapitulatif des solutions fournies dans les mises à jour cumulatives de SQL Server 2016 jusqu’à la dernière mise à jour cumulative - CU3 (incluse) et la mise à jour de sécurité MS16-136 publiée le 8 novembre 2016.
 
 Les fonctionnalités suivantes sont disponibles dans les éditions Standard, Web, Express et Base de données locale de SQL Server SP1 (sauf indication contraire) :
 - Always Encrypted
 - Capture des changements de données (non disponible dans l’édition Express)
-- Columnstore
+- columnstore
 - Compression
 - Masquage dynamique des données
 - Audit à granularité fine
@@ -82,6 +133,8 @@ Il peut s’avérer nécessaire de redémarrer le système après l’installati
 - [SQL Server 2016 Service Pack 1 (SP1) Released](https://blogs.msdn.microsoft.com/sqlreleaseservices/sql-server-2016-service-pack-1-sp1-released/)
 - [Informations de version de SQL Server 2016 Service Pack 1](https://support.microsoft.com/kb/3182545)
 - ![info_tip](../sql-server/media/info-tip.png) [Update Center pour SQL Server ](https://msdn.microsoft.com/library/ff803383.aspx) pour obtenir des liens et des informations sur toutes les versions prises en charge, notamment les Service Packs de [!INCLUDE[ssNoVersion_md](../includes/ssnoversion-md.md)] 
+
+![horizontal-bar.png](media/horizontal-bar.png)
 
 ##  <a name="bkmk_2016_ga"></a> SQL Server 2016 Release - General Availability (GA)
 -   [Moteur de base de données (DG)](#bkmk_ga_instalpatch) 
@@ -162,24 +215,23 @@ De même, exécutez les procédures stockées ci-dessous du magasin de requêtes
 -   Utilisez l’option **Choisir l’aide en ligne ou locale** , puis sélectionnez « Utiliser l’aide en ligne ».    
     
 -   Utilisez l’option **Installer du contenu à partir d’une source en ligne** , puis téléchargez le contenu SQL Server 2014.    
-    
+
  **Aide (F1) :** par défaut, quand vous appuyez sur F1 dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)], la version en ligne de l’article d’aide F1 s’affiche dans le navigateur. Le problème vient de l’aide basée sur le navigateur même si vous avez configuré et installé l’aide locale. 
-     
-**Mise à jour du contenu :**    
-Dans SQL Server Management Studio et Visual Studio, l’application Visionneuse d’aide peut se figer (se bloquer) pendant l’ajout de la documentation. Pour résoudre ce problème, effectuez les étapes ci-dessous. Pour plus d’informations sur ce problème, consultez [La visionneuse d’aide Visual Studio se fige sur l’écran de démarrage](https://msdn.microsoft.com/library/mt654096.aspx).    
+
+**Mise à jour de contenu :** Dans SQL Server Management Studio et Visual Studio, l’application Visionneuse d’aide peut se figer (se bloquer) pendant l’ajout de la documentation. Pour résoudre ce problème, effectuez les étapes ci-dessous. Pour plus d’informations sur ce problème, consultez [La visionneuse d’aide Visual Studio se fige sur l’écran de démarrage](https://msdn.microsoft.com/library/mt654096.aspx).    
     
-* Ouvrez le fichier %LOCALAPPDATA%\Microsoft\HelpViewer2.2\HlpViewer_SSMS16_en-US.settings | HlpViewer_VisualStudio14_en-US.settings dans le Bloc-notes et remplacez la date dans le code ci-dessous par une date future.    
-    
-     
-```    
+* Ouvrez le fichier %LOCALAPPDATA%\Microsoft\HelpViewer2.2\HlpViewer_SSMS16_en-US.settings | HlpViewer_VisualStudio14_en-US.settings dans le Bloc-notes et remplacez la date dans le code ci-dessous par une date future.
+
+```
      Cache LastRefreshed="12/31/2017 00:00:00"    
-``` 
+```
 
 ## <a name="additional-information"></a>Informations supplémentaires
 + [Installation de SQL Server 2016](../database-engine/install-windows/installation-for-sql-server-2016.md)
 + [Centre de mise à jour SQL Server - liens et informations pour toutes les versions prises en charge](https://msdn.microsoft.com/library/ff803383.aspx)
 
+[!INCLUDE[get-help-options](../includes/paragraph-content/get-help-options.md)]
 
-[!INCLUDE[get-help-options](../includes/paragraph-content/get-help-options.md)]    
+[!INCLUDE[contribute-to-content](../includes/paragraph-content/contribute-to-content.md)]
 
-![MS_Logo_X-Small](../sql-server/media/ms-logo-x-small.png "MS_Logo_X-Small")    
+![MS_Logo_X-Small](../sql-server/media/ms-logo-x-small.png "MS_Logo_X-Small")

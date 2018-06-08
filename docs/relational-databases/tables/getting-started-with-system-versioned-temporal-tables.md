@@ -1,28 +1,25 @@
 ---
-title: "Prise en main des tables temporelles avec contrôle de version par le système | Microsoft Docs"
-ms.custom: 
+title: Prise en main des tables temporelles avec contrôle de version par le système | Microsoft Docs
+ms.custom: ''
 ms.date: 03/28/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d431f216-82cf-4d97-825e-bb35d3d53a45
-caps.latest.revision: 
+caps.latest.revision: 12
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 456602d6543527b1826dc21f93859f75629fd1a1
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6ee93c85f02d60c49c9813dc4756699d5bd7df87
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-system-versioned-temporal-tables"></a>Prise en main des tables temporelles de contrôle de version du système
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -44,10 +41,7 @@ Le schéma suivant illustre le flux de travail type relatif aux tables temporell
   
 -   [Modification du schéma d’une table temporelle à version contrôlée par le système](../../relational-databases/tables/changing-the-schema-of-a-system-versioned-temporal-table.md)  
   
--   [Arrêt du contrôle de version par le système sur une table temporelle à version contrôlée par le système](../../relational-databases/tables/stopping-system-versioning-on-a-system-versioned-temporal-table.md)  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Envoyez vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Getting%20Started%20with%20System-Versioned%20Temporal%20Tables%20page)  
+-   [Arrêt du contrôle de version du système sur une table temporelle avec contrôle de version par le système](../../relational-databases/tables/stopping-system-versioning-on-a-system-versioned-temporal-table.md)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

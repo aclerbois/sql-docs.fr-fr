@@ -1,17 +1,14 @@
 ---
-title: "Créer des vues indexées | Microsoft Docs"
-ms.custom: 
+title: Créer des vues indexées | Microsoft Docs
+ms.custom: ''
 ms.date: 01/22/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: views
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-views
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - indexed views [SQL Server], creating
 - clustered indexes, views
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - indexed views [SQL Server]
 - views [SQL Server], indexed views
 ms.assetid: f86dd29f-52dd-44a9-91ac-1eb305c1ca8d
-caps.latest.revision: 
+caps.latest.revision: 79
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 505c016f769a76c2908f607617db99a04e857ef1
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 556665c8b89dd8b3c2e1b608bdede9bf226c2a8f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-indexed-views"></a>Créer des vues indexées
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -94,7 +91,7 @@ Outre les options SET et les conditions requises pour les fonctions déterminist
   
 -   Quand vous créez l’index, l’option `IGNORE_DUP_KEY` doit être définie sur OFF (valeur par défaut).    
   
--   Les tables doivent être référencées par des noms en deux parties, *schéma***.***nom_table*, dans la définition de la vue.    
+-   Les tables doivent être référencées par des noms en deux parties, *schéma ***.*** nom_table*, dans la définition de la vue.    
   
 -   Les fonctions définies par l’utilisateur référencées dans la vue doivent avoir été créées avec l’option `WITH SCHEMABINDING`.    
   

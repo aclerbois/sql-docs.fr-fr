@@ -1,30 +1,20 @@
 ---
 title: PAS (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: NOT
-dev_langs: kbMDX
-helpviewer_keywords: NOT operator [MDX]
-ms.assetid: c11bd3b0-54b3-4a6d-babc-6067722194db
-caps.latest.revision: "26"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 08bfb5c70fe36e36b62482f51864adf20cc851e4
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 5020f461d2576bbac7d0292ca0bf75bd8033e173
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34580501"
 ---
 # <a name="not-mdx"></a>NOT (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,18 +32,18 @@ NOT Expression1
  *Expression1*  
  Expression MDX (Multidimensional Expressions) valide qui retourne une valeur numérique.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
  Valeur booléenne qui retourne **false** si l’argument a la valeur **true**; sinon, **true**.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **pas** opérateur traite l’expression en tant que valeur booléenne (zéro, 0, comme **false**; sinon, **true**) avant que l’opérateur effectue la négation logique. Le tableau suivant illustre comment la **pas** opérateur effectue la négation logique.  
   
-|*Expression1*|Valeur retournée|  
+|*Expression1*|Valeur de retour|  
 |-------------------|------------------|  
 |**true**|**false**|  
 |**false**|**true**|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)  
   
   

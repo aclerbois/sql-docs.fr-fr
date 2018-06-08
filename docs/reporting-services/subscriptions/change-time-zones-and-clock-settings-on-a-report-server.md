@@ -1,32 +1,30 @@
 ---
-title: "Modifier les fuseaux horaires et les paramètres d’horloge sur un serveur de rapports | Microsoft Docs"
-ms.custom: 
+title: Modifier les fuseaux horaires et les paramètres d’horloge sur un serveur de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - time zones [Reporting Services]
 - clocks [Reporting Services]
 - schedules [Reporting Services], clock settings
 - schedules [Reporting Services], time zones
 ms.assetid: 69a19468-baa1-40f6-b158-8afdab0f8968
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 91f37c8df4a278fef841b12ff727e8e11c04a808
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f9e613a2212a852f386343de6463d06b9b57b3ea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-time-zones-and-clock-settings-on-a-report-server"></a>Modifier les fuseaux horaires et les paramètres d'horloge sur un serveur de rapports
   Un serveur de rapports utilise toujours l'heure locale de l'ordinateur sur lequel il est installé. Vous ne pouvez pas le configurer de manière à utiliser un autre fuseau horaire. Si une application cliente pointe vers un serveur de rapports se trouvant dans un autre fuseau horaire, c'est le fuseau horaire du serveur de rapports qui sera utilisé pour effectuer une opération planifiée. Dans les pages de gestion SharePoint et le Gestionnaire de rapports, le fuseau horaire est indiqué sur chaque page de planification de sorte que vous savez exactement à quel moment doit se produire une opération planifiée. Par exemple, la page consacrée à la création de planifications personnalisées indiquera « Les heures sont exprimées en (UTC-08:00) Heure du Pacifique (États-Unis et Canada). »  
@@ -41,7 +39,7 @@ ms.lasthandoff: 01/09/2018
  Les valeurs d'horodatage de propriété (par exemple, l'heure à laquelle un dossier ou un élément de rapport lié est créé) ne sont pas synchronisées sur un nouveau fuseau horaire. Si vous créez un élément le 25 juin à 09:00, puis réinitialisez le fuseau horaire ou l'horloge, la valeur d'horodatage demeure le 25 juin à 09:00.  
   
 ## <a name="changing-the-time-zone-sharepoint-mode"></a>Modification du fuseau horaire (mode SharePoint)  
- La configuration de fuseau horaire pour le mode [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] SharePoint est gérée dans le cadre des paramètres régionaux de SharePoint. Pour plus d’informations, consultez [Regional settings (Paramètres régionaux) (SharePoint Server 2010 (http://technet.microsoft.com/library/cc824907.aspx)](http://technet.microsoft.com/library/cc824907.aspx).  
+ La configuration de fuseau horaire pour le mode [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] SharePoint est gérée dans le cadre des paramètres régionaux de SharePoint. Pour plus d'informations, consultez [Paramètres régionaux (SharePoint Server 2010 (http://technet.microsoft.com/library/cc824907.aspx)](http://technet.microsoft.com/library/cc824907.aspx).  
   
 ## <a name="changing-the-clock-settings"></a>Modification des paramètres d'horloge  
  Le changement de l'heure de l'horloge de l'ordinateur est sans effet sur les valeurs d'horodatage existantes (par exemple, si vous avancez l'horloge d'une heure, les valeurs d'horodatage des instantanés d'historique de rapport ne changent pas). On peut constater un délai de 10 secondes avant que le processeur de planification et de remise utilise le nouveau paramètre. Le délai véritable peut varier si vous avez modifié les paramètres de fréquence d'interrogation dans les fichiers de configuration.  

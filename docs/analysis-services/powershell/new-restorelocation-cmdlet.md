@@ -1,31 +1,23 @@
 ---
 title: Applet de commande New-RestoreLocation | Documents Microsoft
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 5ca13d8c-1c5d-4f02-869c-72e0defce6d7
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ca5bf33d2d528b8e216915170d7df528589a85c3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8ce57664514cc11bb0ff7dd72f94e900279b7a13
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="new-restorelocation-cmdlet"></a>Applet de commande New-RestoreLocation
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Spécifie les informations utilisées pour restaurer une base de données.  
+  Spécifie les informations utilisées pour restaurer une base de données.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -42,7 +34,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
   
 ## <a name="parameters"></a>Paramètres  
   
-### <a name="-file-string"></a>-File \<string>  
+### <a name="-file-string"></a>-Fichier \<chaîne >  
  Spécifie le nom du fichier de sauvegarde que vous restaurez.  
   
 |||  
@@ -53,7 +45,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-datasourceid-string"></a>-DataSourceId \<string>  
+### <a name="-datasourceid-string"></a>-DataSourceId \<chaîne >  
   
 |||  
 |-|-|  
@@ -63,7 +55,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-connectionstring-string"></a>-ConnectionString \<string>  
+### <a name="-connectionstring-string"></a>-ConnectionString \<chaîne >  
  Spécifie la chaîne de connexion d'une instance Analysis Services distante.  
   
 |||  
@@ -74,7 +66,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-datasourcetype-asrestoredatasourcetype"></a>-DataSourceType \<AS.RestoreDataSourceType>  
+### <a name="-datasourcetype-asrestoredatasourcetype"></a>-DataSourceType \<As. RestoreDataSourceType >  
  Spécifie si la source de données est distante ou locale, selon l'emplacement de la partition.  
   
 |||  
@@ -85,7 +77,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-folders-asrestorefolder"></a>-Folders \<AS.RestoreFolder>  
+### <a name="-folders-asrestorefolder"></a>-Dossiers \<As. RestoreFolder >  
  Spécifie des dossiers de partitions sur l'instance locale ou distante.  
   
 |||  
@@ -119,7 +111,7 @@ Spécifie les informations utilisées pour restaurer une base de données.
 |Accepter les caractères génériques ?|false|  
   
 ### <a name="-credential-pscredential"></a>-Credential \<PSCredential >  
- Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40; IIS &#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
+ Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40;IIS&#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
   
  Si ce paramètre est indiqué, le nom d'utilisateur et le mot de passe seront utilisés pour la connexion à l'instance du serveur d'analyse spécifiée. Si aucune information d'identification n'est indiquée, le compte Windows par défaut de l'utilisateur qui exécute l'outil sera utilisé.  
   

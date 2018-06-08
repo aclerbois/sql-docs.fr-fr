@@ -1,30 +1,27 @@
 ---
-title: "Messages d’erreur (le pilote ODBC pour Oracle) | Documents Microsoft"
-ms.custom: 
+title: Messages d’erreur (le pilote ODBC pour Oracle) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - error messages [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], error messages
 ms.assetid: 6e54fe40-8306-4c2b-9e60-e521705e5b4b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e400e690d93a576e94b5b333d45f11c24e4c972b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 9c88cbdd839725dd9cd2ee7cc26af3138eb59d5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="error-messages-odbc-driver-for-oracle"></a>Messages d’erreur (le pilote ODBC pour Oracle)
 > [!IMPORTANT]  

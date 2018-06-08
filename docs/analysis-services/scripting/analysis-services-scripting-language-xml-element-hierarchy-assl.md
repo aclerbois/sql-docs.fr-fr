@@ -1,44 +1,23 @@
 ---
-title: "Hiérarchie Analysis Services Scripting Language XML élément (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Hiérarchie Analysis Services Scripting Language XML élément (ASSL) | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: assl
 ms.topic: reference
-apiname:
-- Analysis Services Scripting Language XML Element Hierarchy
-apilocation:
-- http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- Analysis Services Scripting Language, elements
-- elements [Analysis Services Scripting Language]
-- ASSL, elements
-- objects [Analysis Services Scripting Language]
-- hierarchies [Analysis Services Scripting Language]
-ms.assetid: 343dbab9-4c2c-49b9-8f35-efc65f2216f1
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b45f5737bacd5b86d10584f8c6e0b131e1e658cf
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 663e646ff49d9e0f9e39c766b91ef5e2f148e4c4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-scripting-language-xml-element-hierarchy-assl"></a>Hiérarchie des éléments XML ASSL (Analysis Services Scripting Language)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le tableau suivant montre la hiérarchie des objets du langage ASSL (Analysis Services Scripting Language).  
+  Le tableau suivant montre la hiérarchie des objets du langage ASSL (Analysis Services Scripting Language).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -1943,8 +1922,8 @@ Le tableau suivant montre la hiérarchie des objets du langage ASSL (Analysis Se
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Analysis Services script éléments du langage XML &#40; ASSL &#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-elements-assl.md)   
- [Script de hiérarchie des types de données XML Language &#40; Analysis Services ASSL &#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-data-type-hierarchy-assl.md)   
- [Analysis Services Scripting Language &#40; ASSL de XMLA &#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
+ [Analysis Services script éléments du langage XML & #40 ; ASSL & #41 ;](../../analysis-services/scripting/analysis-services-scripting-language-xml-elements-assl.md)   
+ [Script de hiérarchie des types de données XML Language & #40 ; Analysis Services ASSL & #41 ;](../../analysis-services/scripting/analysis-services-scripting-language-xml-data-type-hierarchy-assl.md)   
+ [Analysis Services Scripting Language &#40;ASSL de XMLA&#41;](../../analysis-services/scripting/analysis-services-scripting-language-assl-for-xmla.md)  
   
   

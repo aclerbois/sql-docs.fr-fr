@@ -1,31 +1,24 @@
 ---
 title: Installer Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 04/11/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: cd6ac80d-b735-4e3e-a024-489f1409ad33
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: cdc4deb033afe212103a80a0e5b8413c13000433
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 0904dc53e17ed140310df38d1f63dc9fe3fc45cb
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708077"
 ---
 # <a name="install-sql-server-analysis-services"></a>Installer SQL Server Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-SQL Server Analysis Services est un serveur de base de données analytique hébergeant des modèles tabulaires, des cubes multidimensionnels et des modèles d’exploration de données que vous pouvez accéder à partir de rapports, feuilles de calcul et tableaux de bord.  
+  SQL Server Analysis Services est un serveur de base de données analytique hébergeant des modèles tabulaires, des cubes multidimensionnels et des modèles d’exploration de données que vous pouvez accéder à partir de rapports, feuilles de calcul et tableaux de bord.  
   
  Analysis Services est multi-instance, ce qui signifie que vous pouvez installer plusieurs copies sur un seul ordinateur ou exécuter des versions anciennes et nouvelles côte à côte. Les instances que vous installez sont exécutées dans un des trois modes, selon ce que vous avez spécifié pendant l’installation : multidimensionnel et exploration de données, tabulaire ou SharePoint. Si vous souhaitez utiliser plusieurs modes, vous devez avoir une instance distincte pour chacun.  
   
@@ -64,7 +57,7 @@ SQL Server Analysis Services est un serveur de base de données analytique hébe
   
 ```  
   
-Setup.exe /q /IAcceptSQLServerLicenseTerms /ACTION=install /FEATURES=AS /ASSERVERMODE=TABULAR /INSTANCENAME=ASTabular /INDICATEPROGRESS/ASSVCACCOUNT=<DomainName\UserName> /ASSVCPASSWORD=<StrongPassword> /ASSYSADMINACCOUNTS=<DomainName\UserName>   
+Setup.exe /q /IAcceptSQLServerLicenseTerms /ACTION=install /FEATURES=AS /ASSERVERMODE=TABULAR /INSTANCENAME=ASTabular /INDICATEPROGRESS /ASSVCACCOUNT=<DomainName\UserName> /ASSVCPASSWORD=<StrongPassword> /ASSYSADMINACCOUNTS=<DomainName\UserName>   
 ```  
   
  **INSTANCENAME** doit contenir moins de 17 caractères.  
@@ -73,11 +66,11 @@ Setup.exe /q /IAcceptSQLServerLicenseTerms /ACTION=install /FEATURES=AS /ASSERVE
   
  La casse est prise en compte pour**ASSERVERMODE** .  Toutes les valeurs doivent être exprimées en majuscules. Le tableau suivant décrit les valeurs valides pour **ASSERVERMODE**.  
   
-|Valeur| Description|  
+|Valeur|Description|  
 |-----------|-----------------|  
-|TABULAR|Ceci est la valeur par défaut. Si vous ne définissez pas **ASSERVERMODE**, le serveur est installé en mode tabulaire.|
+|TABULAR|Il s'agit de la valeur par défaut. Si vous ne définissez pas **ASSERVERMODE**, le serveur est installé en mode tabulaire.|
 |MULTIDIMENSIONAL|Cette valeur est facultative.|  
-|POWERPIVOT|Cette valeur est facultative. En pratique, si vous définissez le paramètre **ROLE** , le mode serveur est automatiquement défini sur 1, ce qui rend **ASSERVERMODE** facultatif pour une installation de [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint. Pour plus d’informations, consultez [Installer Power Pivot à partir de l’invite de commandes](http://msdn.microsoft.com/en-us/7f1f2b28-c9f5-49ad-934b-02f2fa6b9328).|  
+|POWERPIVOT|Cette valeur est facultative. En pratique, si vous définissez le paramètre **ROLE** , le mode serveur est automatiquement défini sur 1, ce qui rend **ASSERVERMODE** facultatif pour une installation de [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint. Pour plus d’informations, consultez [Installer Power Pivot à partir de l’invite de commandes](http://msdn.microsoft.com/7f1f2b28-c9f5-49ad-934b-02f2fa6b9328).|  
   
   
 ## <a name="see-also"></a>Voir aussi  

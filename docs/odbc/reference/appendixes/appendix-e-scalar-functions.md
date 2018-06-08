@@ -1,31 +1,28 @@
 ---
-title: "Annexe e : les fonctions scalaires | Documents Microsoft"
-ms.custom: 
+title: 'Annexe e : les fonctions scalaires | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL-92 functions [ODBC]
 - scalar functions [ODBC]
 - functions [ODBC], scalar
 ms.assetid: 59c7cd5e-32d6-43ab-bac3-7010322d105a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c622054c6c9d4c2314fe2ae0af9fb8574c338312
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: acaab68fab32c25ab101f65ccd196abe7ebceef2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendix-e-scalar-functions"></a>Annexe e : les fonctions scalaires
 ODBC spécifie les types suivants de fonctions scalaires, des informations détaillées sur chacun de ces types de fonction fournis dans les sections correspondantes de cette annexe. Les descriptions fonction incluent la syntaxe associée.  

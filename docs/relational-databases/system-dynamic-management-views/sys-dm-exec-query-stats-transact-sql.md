@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_query_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_query_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_query_stats_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_query_stats dynamic management view
 ms.assetid: eb7b58b8-3508-4114-97c2-d877bcb12964
-caps.latest.revision: 
+caps.latest.revision: 64
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8874b5ba3eca2f3e9d72874af7440934fc2ec20f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f758b902012ecbc3f13921fccd0326ec94fc918a
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecquerystats-transact-sql"></a>sys.dm_exec_query_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -46,7 +43,7 @@ ms.lasthandoff: 02/03/2018
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**sql_handle**|**varbinary(64)**  |Jeton qui fait référence au traitement ou à la procédure stockée dont fait partie la requête.<br /><br /> **sql_handle**, avec **statement_start_offset** et **statement_end_offset**, peut être utilisé pour extraire le texte SQL de la requête en appelant le **sys.dm_exec_sql_text** fonction de gestion dynamique.|  
+|**sql_handle**|**varbinary(64)**  |Jeton qui fait référence au traitement ou à la procédure stockée dont fait partie la requête.<br /><br /> **sql_handle**, avec **statement_start_offset** et **statement_end_offset**, peut être utilisé pour extraire le texte SQL de la requête en appelant le **sys.dm_exec_sql_ texte** fonction de gestion dynamique.|  
 |**statement_start_offset**|**int**|Indique, en octets, la position de début (à partir de 0) de la requête que la ligne décrit dans le texte de son traitement ou de son objet persistant.|  
 |**statement_end_offset**|**int**|Indique, en octets, la position de fin (à partir de 0) de la requête que la ligne décrit dans le texte de son traitement ou de son objet persistant. Pour les versions antérieures [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)], la valeur -1 indique la fin du lot. Les commentaires de fin sont n’incluent plus les.|  
 |**plan_generation_num**|**bigint**|Numéro de séquence permettant de distinguer les instances de plans après une recompilation.|  
@@ -110,27 +107,28 @@ ms.lasthandoff: 02/03/2018
 |**last_used_threads**|**bigint**|Le nombre de threads en parallèle utilisés lors de la dernière exécution de ce plan. Il sera toujours 0 pour l’interrogation d’une table optimisée en mémoire.<br /><br /> **S'applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
 |**min_used_threads**|**bigint**|Le nombre minimal de threads de parallèles utilisés ce plan jamais utilisé pendant une exécution. Il sera toujours 0 pour l’interrogation d’une table optimisée en mémoire.<br /><br /> **S'applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
 |**max_used_threads**|**bigint**|Le nombre maximal de threads de parallèles utilisés ce plan jamais utilisé pendant une exécution. Il sera toujours 0 pour l’interrogation d’une table optimisée en mémoire.<br /><br /> **S'applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
-|**total_columnstore_segment_reads**|**bigint**|La somme totale des segments columnstore lues par la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**last_columnstore_segment_reads**|**bigint**|Le nombre de segments de columnstore par la dernière exécution de la requête de lecture. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**min_columnstore_segment_reads**|**bigint**|Le nombre minimal de segments columnstore jamais lues par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**max_columnstore_segment_reads**|**bigint**|Le nombre maximal de segments columnstore jamais lues par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**total_columnstore_segment_skips**|**bigint**|La somme totale des segments columnstore ignoré par la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**last_columnstore_segment_skips**|**bigint**|Le nombre de segments de columnstore ignoré par la dernière exécution de la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**min_columnstore_segment_skips**|**bigint**|Le nombre minimal de segments columnstore jamais ignoré par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
-|**max_columnstore_segment_skips**|**bigint**|Le nombre maximal de segments columnstore jamais ignoré par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|
-|**total_spills**|**bigint**|Le nombre total de pages répandues par l’exécution de cette requête, car il a été compilé.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
-|**last_spills**|**bigint**|Le nombre de pages répandues la dernière exécution de la requête.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
-|**min_spills**|**bigint**|Le nombre minimal de pages de cette requête ont été répandues lors d’une exécution unique.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
-|**max_spills**|**bigint**|Le nombre maximal de pages que cette requête ont été répandues lors d’une exécution unique.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
+|**total_columnstore_segment_reads**|**bigint**|La somme totale des segments columnstore lues par la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**last_columnstore_segment_reads**|**bigint**|Le nombre de segments de columnstore par la dernière exécution de la requête de lecture. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**min_columnstore_segment_reads**|**bigint**|Le nombre minimal de segments columnstore jamais lues par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**max_columnstore_segment_reads**|**bigint**|Le nombre maximal de segments columnstore jamais lues par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**total_columnstore_segment_skips**|**bigint**|La somme totale des segments columnstore ignoré par la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**last_columnstore_segment_skips**|**bigint**|Le nombre de segments de columnstore ignoré par la dernière exécution de la requête. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**min_columnstore_segment_skips**|**bigint**|Le nombre minimal de segments columnstore jamais ignoré par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|    
+|**max_columnstore_segment_skips**|**bigint**|Le nombre maximal de segments columnstore jamais ignoré par la requête pendant une exécution. Ne peut pas avoir la valeur null.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|
+|**total_spills**|**bigint**|Le nombre total de pages répandues par l’exécution de cette requête, car il a été compilé.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
+|**last_spills**|**bigint**|Le nombre de pages répandues la dernière exécution de la requête.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
+|**min_spills**|**bigint**|Le nombre minimal de pages de cette requête ont été répandues lors d’une exécution unique.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
+|**max_spills**|**bigint**|Le nombre maximal de pages que cette requête ont été répandues lors d’une exécution unique.<br /><br /> **S’applique aux**: compter [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 et [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3|  
 |**pdw_node_id**|**int**|L’identificateur du nœud qui se trouve sur cette distribution.<br /><br /> **S’applique aux**: [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)], [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]| 
 
 > [!NOTE]
 > <sup>1</sup> des procédures stockées compilées en mode natif lors de la collecte de statistiques est activée, des temps de travail est collecté en millisecondes. Si la requête s’exécute en moins d’une milliseconde, la valeur sera 0.  
   
 ## <a name="permissions"></a>Autorisations  
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.
-  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+   
 ## <a name="remarks"></a>Notes  
  Les statistiques de la vue sont actualisées lorsqu'une requête est terminée.  
   
@@ -177,10 +175,10 @@ ORDER BY qs.execution_count DESC;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)    
+[Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)    
 [sys.dm_exec_sql_text &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md)    
 [sys.dm_exec_query_plan &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-plan-transact-sql.md)    
-[sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)     
+[Sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md)     
 [sys.dm_exec_trigger_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-trigger-stats-transact-sql.md)     
 [sys.dm_exec_cached_plans &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md)    
   

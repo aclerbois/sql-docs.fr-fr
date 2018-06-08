@@ -1,41 +1,23 @@
 ---
-title: "Agrégations et conceptions d’agrégation | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- aggregations [Analysis Services], about aggregations
-- storage [Analysis Services], aggregations
-- Storage Design Wizard
-- data summary [Analysis Services]
-- data storage [Analysis Services]
-- storing data [Analysis Services], aggregations
-- aggregations [Analysis Services]
-ms.assetid: 35bd8589-39fa-4e0b-b28f-5a07d70da0a2
-caps.latest.revision: 
-author: Minewiskan
+title: Agrégations et conceptions d’agrégation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f88fe2a55b2c6e56cd36db492d56893319c6bed5
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: af9eab2fb7d3df0fcb8a7416b43dd387583f4762
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="aggregations-and-aggregation-designs"></a>Agrégations et conceptions d'agrégation
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un objet <xref:Microsoft.AnalysisServices.AggregationDesign> définit un ensemble de définitions d'agrégation qu'il est possible de partager sur plusieurs partitions.  
+  Un objet <xref:Microsoft.AnalysisServices.AggregationDesign> définit un ensemble de définitions d'agrégation qu'il est possible de partager sur plusieurs partitions.  
   
  Un objet <xref:Microsoft.AnalysisServices.Aggregation> représente le résumé des données d'un groupe de mesures à une certaine granularité des dimensions.  
   

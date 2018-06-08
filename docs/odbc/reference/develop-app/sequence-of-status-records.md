@@ -1,31 +1,28 @@
 ---
-title: "Séquence d’enregistrements d’état | Documents Microsoft"
-ms.custom: 
+title: Séquence d’enregistrements d’état | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - diagnostic information [ODBC], diagnostic records
 - status records [ODBC]
 - diagnostic records [ODBC]
 ms.assetid: 0e0436cc-230f-44b0-b373-04a57e83ee76
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a101cf26b66f3556330354c0fa9ded4c6d9ad583
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c4b1e2ceea30ecb62dd96be283bb150d2e43385a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sequence-of-status-records"></a>Séquence d’enregistrements d’état
 Si deux ou plusieurs enregistrements d’état sont retournés, le Gestionnaire de pilotes et le pilote les classement selon les règles suivantes. L’enregistrement avec le rang le plus élevé est le premier enregistrement. La source d’un enregistrement (Gestionnaire de pilotes, pilotes, passerelle et ainsi de suite) n’est pas constitue lorsque les enregistrements de classement.  

@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetTypeInfo | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetTypeInfo
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetTypeInfo
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetTypeInfo
-helpviewer_keywords: SQLGetTypeInfo function [ODBC]
+f1_keywords:
+- SQLGetTypeInfo
+helpviewer_keywords:
+- SQLGetTypeInfo function [ODBC]
 ms.assetid: bdedb044-8924-4ca4-85f3-8b37578e0257
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 508b89f5ff60b5cf64a03d167bf1ad4476edb734
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ac27290ce265a673e113d0cb59195708a34bebd7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgettypeinfo-function"></a>Fonction SQLGetTypeInfo
 **Mise en conformité**  
@@ -51,7 +52,7 @@ SQLRETURN SQLGetTypeInfo(
  *Au paramètre StatementHandle*  
  [Entrée] Handle d’instruction pour le jeu de résultats.  
   
- *Type de données*  
+ *DataType*  
  [Entrée] Le type de données SQL. Cela doit être une des valeurs dans le [les Types de données SQL](../../../odbc/reference/appendixes/sql-data-types.md) section annexe d : les Types de données ou un type de données SQL spécifique au pilote. SQL_ALL_TYPES Spécifie que les informations sur tous les types de données doivent être renvoyées.  
   
 ## <a name="returns"></a>Valeur renvoyée  
@@ -60,10 +61,10 @@ SQLRETURN SQLGetTypeInfo(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetTypeInfo** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLGetTypeInfo** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
-|01 S 02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (Appeler **SQLGetStmtAttr** pour déterminer la valeur temporairement substituée.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé. Les attributs d’instruction qui peuvent être modifiés sont : SQL_ATTR_CONCURRENCY SQL_ATTR_CURSOR_TYPE, SQL_ATTR_KEYSET_SIZE, SQL_ATTR_MAX_LENGTH, SQL_ATTR_MAX_ROWS, SQL_ATTR_QUERY_TIMEOUT et SQL_ATTR_SIMULATE_CURSOR. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
+|01S02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (Appeler **SQLGetStmtAttr** pour déterminer la valeur temporairement substituée.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé. Les attributs d’instruction qui peuvent être modifiés sont : SQL_ATTR_CONCURRENCY SQL_ATTR_CURSOR_TYPE, SQL_ATTR_KEYSET_SIZE, SQL_ATTR_MAX_LENGTH, SQL_ATTR_MAX_ROWS, SQL_ATTR_QUERY_TIMEOUT et SQL_ATTR_SIMULATE_CURSOR. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
 |24000|État de curseur non valide|Un curseur a été ouvert sur le *au paramètre StatementHandle,* et **SQLFetch** ou **SQLFetchScroll** avait été appelée. Cette erreur est retournée par le Gestionnaire de pilotes si **SQLFetch** ou **SQLFetchScroll** n’a pas retourné SQL_NO_DATA et est retourné par le pilote si **SQLFetch** ou **SQLFetchScroll** a retourné SQL_NO_DATA.<br /><br /> Un jeu de résultats a été ouvert sur le *au paramètre StatementHandle*, mais **SQLFetch** ou **SQLFetchScroll** n’avait pas été appelée.|  
 |40001|Échec de la sérialisation|La transaction a été annulée en raison d’un blocage de ressource avec une autre transaction.|  
@@ -113,9 +114,9 @@ SQLRETURN SQLGetTypeInfo(
 > [!NOTE]  
 >  **SQLGetTypeInfo** peut ne pas retourner tous les types de données. Par exemple, un pilote peut ne pas retourne des types de données définis par l’utilisateur. Les applications peuvent utiliser n’importe quel type de données valide, indépendamment de si elle est retournée par **SQLGetTypeInfo**. Les types de données retournés par **SQLGetTypeInfo** sont celles prises en charge par la source de données. Elles sont prévues pour une utilisation dans les instructions de langage de définition de données (DDL). Pilotes peuvent retourner des données de jeu de résultats à l’aide des types de données autres que les types retournés par **SQLGetTypeInfo**. Pour créer le jeu de résultats pour une fonction de catalogue, le pilote peut utiliser un type de données qui n’est pas pris en charge par la source de données.  
   
-|Nom de colonne|colonne<br /><br /> nombre|Type de données|Commentaires|  
+|Nom de colonne|Colonne<br /><br /> nombre|Type de données|Commentaires|  
 |-----------------|-----------------------|---------------|--------------|  
-|TYPE_NAME (ODBC VERSION 2.0)| 1|Varchar non NULL|Nom du type de données dépend de la source de données ; par exemple, « CHAR() », « VARCHAR() », « MONEY », « LONG VARBINARY » ou « () CHAR pour les données BIT ». Les applications doivent utiliser ce nom dans **CREATE TABLE** et **ALTER TABLE** instructions.|  
+|TYPE_NAME (ODBC VERSION 2.0)|1|Varchar non NULL|Nom du type de données dépend de la source de données ; par exemple, « CHAR() », « VARCHAR() », « MONEY », « LONG VARBINARY » ou « () CHAR pour les données BIT ». Les applications doivent utiliser ce nom dans **CREATE TABLE** et **ALTER TABLE** instructions.|  
 |DATA_TYPE (ODBC VERSION 2.0)|2|Smallint non NULL|Type de données SQL. Cela peut être un type de données SQL ODBC ou un type de données SQL spécifique au pilote. Pour les types de données datetime ou interval, cette colonne renvoie le type de données concis (par exemple, SQL_TYPE_TIME ou SQL_INTERVAL_YEAR_TO_MONTH). Pour obtenir la liste des types de données ODBC SQL valides, consultez [les Types de données SQL](../../../odbc/reference/appendixes/sql-data-types.md) annexe d : Types de données. Pour plus d’informations sur les types de données spécifiques au pilote SQL, consultez la documentation du pilote.|  
 |COLUMN_SIZE (ODBC VERSION 2.0)|3|Entier|La taille de colonne maximale que le serveur prend en charge pour ce type de données. Pour les données numériques, il s’agit de la précision maximale. Pour les données de chaîne, il s’agit de la longueur en caractères. Pour les types de données datetime, il s’agit de la longueur en caractères de la représentation sous forme de chaîne (en supposant la précision maximale autorisée du composant en fractions de seconde). Valeur NULL est retournée pour les types de données où la taille de la colonne n’est pas applicable. Pour les types de données d’intervalle, il s’agit du nombre de caractères dans la représentation sous forme de caractère de l’intervalle de littéral (tel que défini par l’intervalle de début de précision ; consultez [longueur de Type de données de l’intervalle](../../../odbc/reference/appendixes/interval-data-type-length.md) annexe d : Types de données).<br /><br /> Pour plus d’informations sur la taille de colonne, consultez [taille de colonne, des chiffres décimaux, transférer la longueur en octets et la taille d’affichage](../../../odbc/reference/appendixes/column-size-decimal-digits-transfer-octet-length-and-display-size.md) annexe d : Types de données.|  
 |LITERAL_PREFIX (ODBC VERSION 2.0)|4|Varchar|Ou les caractères utilisés comme préfixe pour un littéral ; par exemple, un guillemet simple (') pour les types de données caractère ou 0 x pour les types de données binaires. Valeur NULL est retournée pour les types de données où un préfixe n’est pas applicable.|  

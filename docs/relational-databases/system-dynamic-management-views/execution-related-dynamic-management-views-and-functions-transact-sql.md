@@ -1,16 +1,12 @@
 ---
-title: "Fonctions (Transact-SQL) et les vues de gestion dynamique liées à l’exécution | Documents Microsoft"
-ms.custom: 
+title: Fonctions (Transact-SQL) et les vues de gestion dynamique liées à l’exécution | Documents Microsoft
+ms.custom: ''
 ms.date: 04/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,16 +14,15 @@ helpviewer_keywords:
 - dynamic management objects [SQL Server], execution
 - execution-related dynamic management objects [SQL Server]
 ms.assetid: aea07b33-f715-4b61-9d1e-8c77b03e9578
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 647edefd0490087429ccb96e601afb64c8131c9d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: f435d835e62ef5e129bba5bc33a9ec91cf1470b3
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="execution-related-dynamic-management-views-and-functions-transact-sql"></a>Fonctions et vues de gestion dynamique relatives à l'exécution (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +60,7 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [System Views &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90)  
+ [Vues système &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90)  
   
   
 

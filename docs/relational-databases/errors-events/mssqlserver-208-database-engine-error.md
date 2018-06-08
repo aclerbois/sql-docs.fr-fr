@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_208 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 208 (Database Engine error)
 ms.assetid: 4b1895f5-3197-4da1-af86-954c93507956
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 13
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7a803be52731350cdef93e917d31c88e8233da4f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: d28505b8f83d619171c83bf452a817a56efbd612
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver208"></a>MSSQLSERVER_208
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -77,7 +72,7 @@ Vérifiez les informations suivantes et corrigez l'instruction comme il convient
   
 -   L'utilisateur a l'autorisation d'accéder à l'objet. Pour vérifier les autorisations de l’utilisateur sur l’objet, utilisez la fonction système **Has_Perms_By_Name**.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [USE &#40;Transact-SQL&#41;](~/t-sql/language-elements/use-transact-sql.md)  
 [Configuration de la visibilité des métadonnées](~/relational-databases/security/metadata-visibility-configuration.md)  
 [HAS_PERMS_BY_NAME &#40;Transact-SQL&#41;](~/t-sql/functions/has-perms-by-name-transact-sql.md)  

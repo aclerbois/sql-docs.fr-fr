@@ -1,31 +1,29 @@
 ---
-title: "Rôles prédéfinis | Microsoft Docs"
-ms.custom: 
+title: Rôles prédéfinis | Microsoft Docs
+ms.custom: ''
 ms.date: 10/22/2015
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Reporting Services], defaults
 - default security
 - role-based security [Reporting Services], defaults
 ms.assetid: 6b46db51-7c30-467d-a251-50f50647fe21
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 492f85664f3a1068d32fca9910717d794fb6dc6e
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 59deac2a0b2e20d94fad6dc46f6d70a76ee884ef
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="role-definitions---predefined-roles"></a>Définitions de rôles - Rôles prédéfinis
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] est installé avec des rôles prédéfinis que vous pouvez utiliser pour accorder l'accès aux opérations du serveur de rapports. Chaque rôle prédéfini décrit une collection de tâches associées. Vous pouvez assigner des groupes et des comptes d'utilisateurs à des rôles prédéfinis pour fournir l'accès immédiat aux opérations du serveur de rapports.  
@@ -213,7 +211,7 @@ ms.lasthandoff: 01/09/2018
 |Afficher les propriétés du serveur de rapports|Afficher les propriétés qui s'appliquent au serveur de rapports, telles que le nom de l'application, l'état d'activation de Mes Rapports ainsi que les paramètres par défaut de l'historique de rapport.<br /><br /> Si vous supprimez cette tâche du rôle **Utilisateur système** , la page Paramètres du site n'est pas disponible. Par ailleurs, le titre de l'application n'est pas affiché en haut de chaque page. Par défaut, le titre du Gestionnaire de rapports est «[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]».|  
 |Afficher les planifications partagées|Afficher les planifications partagées qui sont utilisées pour exécuter les rapports ou actualiser un rapport.<br /><br /> Si vous supprimez cette tâche du rôle **Utilisateur système** , les utilisateurs ne peuvent pas sélectionner les planifications partagées à utiliser avec les abonnements et autres opérations planifiées.|  
   
- Le rôle **Utilisateur système** peut être utilisé pour compléter la sécurité par défaut. Vous pouvez inclure le rôle dans de nouvelles attributions de rôles qui étendent l'accès du serveur de rapports aux utilisateurs des rapports. Pour plus d’informations, consultez [Granting Permissions on a Native Mode Report Server](../../reporting-services/security/granting-permissions-on-a-native-mode-report-server.md).  
+ Le rôle **Utilisateur système** peut être utilisé pour compléter la sécurité par défaut. Vous pouvez inclure le rôle dans de nouvelles attributions de rôles qui étendent l'accès du serveur de rapports aux utilisateurs des rapports. Pour plus d’informations, consultez [Octroi d'autorisations sur un serveur de rapports en mode natif](../../reporting-services/security/granting-permissions-on-a-native-mode-report-server.md).  
   
 ## <a name="see-also"></a> Voir aussi  
  [Créer, supprimer ou modifier un rôle &#40;Management Studio&#41;](../../reporting-services/security/role-definitions-create-delete-or-modify.md)   

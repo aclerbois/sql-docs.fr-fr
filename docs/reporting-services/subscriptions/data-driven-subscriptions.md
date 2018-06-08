@@ -1,30 +1,28 @@
 ---
-title: "Abonnements pilotés par les données | Microsoft Docs"
-ms.custom: 
+title: Abonnements pilotés par les données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - subscriptions [Reporting Services], data-driven
 - data-driven subscriptions
 ms.assetid: ba009f62-0d4f-45e7-a27c-36fd5f0cd3a8
-caps.latest.revision: "56"
+caps.latest.revision: 56
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 8deb6531b2bc14cb156787c6de115af34f402cc4
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: a1aba2e3fe24e781039a436fddad866cf214a9ad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-driven-subscriptions"></a>abonnements pilotés par les données
   Un abonnement piloté par les données constitue un moyen d'utiliser des données d'abonnement dynamiques extraites à partir d'une source de données externe au moment de l'exécution. Un abonnement piloté par les données peut également utiliser du texte statique et des valeurs par défaut que vous spécifiez au moment de définir l'abonnement. Vous pouvez vous servir d'abonnements pilotés par les données pour effectuer les opérations suivantes :  

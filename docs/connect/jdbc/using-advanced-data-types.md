@@ -1,27 +1,24 @@
 ---
-title: "À l’aide des Types de données avancés | Documents Microsoft"
-ms.custom: 
+title: À l’aide des Types de données avancés | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b39461d3-48d6-4048-8300-1a886c00756d
-caps.latest.revision: "58"
+caps.latest.revision: 58
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 5ca19754f3332c1832405085ad1b04fb36380bd9
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 4bd8d2b92c6d998c10239f3502328b016de42045
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-advanced-data-types"></a>Utilisation des types de données avancés
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -50,7 +47,7 @@ ms.lasthandoff: 11/18/2017
 >  Valeurs CLOB peuvent être utilisées avec [!INCLUDE[ssVersion2005](../../includes/ssversion2005_md.md)] (ou version ultérieure) des types de données de grande valeur. Plus précisément, les types CLOB peuvent être utilisés avec la **varchar (max)** et **nvarchar (max)** des types de données, types d’objets BLOB peuvent être utilisés avec **varbinary (max)** et **image**  des types de données et les types NCLOB peuvent être utilisé avec **ntext** et **nvarchar (max)**.  
   
 ## <a name="large-value-data-types"></a>Types de données de grande valeur  
- Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], l’utilisation de données de grande valeur types nécessitait un traitement spécial. Les types de données à valeur élevée sont ceux qui dépassent la taille de ligne maximale de 8 Ko. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]introduit un spécificateur max pour **varchar**, **nvarchar**, et **varbinary** des types de données pour permettre le stockage de valeurs aussi grand que 2 ^ 31 octets. Colonnes de la table et [!INCLUDE[tsql](../../includes/tsql_md.md)] variables peuvent spécifier **varchar (max)**, **nvarchar (max)**, ou **varbinary (max)** des types de données.  
+ Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], l’utilisation de données de grande valeur types nécessitait un traitement spécial. Les types de données à valeur élevée sont ceux qui dépassent la taille de ligne maximale de 8 Ko. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] introduit un spécificateur max pour **varchar**, **nvarchar**, et **varbinary** des types de données pour permettre le stockage de valeurs aussi grand que 2 ^ 31 octets. Colonnes de la table et [!INCLUDE[tsql](../../includes/tsql_md.md)] variables peuvent spécifier **varchar (max)**, **nvarchar (max)**, ou **varbinary (max)** des types de données.  
   
  Les principaux scénarios de travail sur des types de données de grande valeur impliquent l'extraction d'une base de données ou l'ajout à une base de données. Les sections suivantes décrivent les différentes approches de réalisation de ces tâches.  
   
@@ -139,7 +136,7 @@ rs.updateRow();
  Pour plus d'informations sur les types de données de grande valeur, consultez « Utilisation de types de données de grande valeur » dans la documentation en ligne de SQL Server.  
   
 ## <a name="xml-data-type"></a>Type de données XML  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]fournit un **xml** type de données qui vous permet de stocker des documents XML et des fragments dans un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] base de données. Le **xml** type de données est un type de données intégré dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]et est quelque peu similaire aux autres types intégrés, tels que **int** et **varchar**. Comme avec d’autres types intégrés, vous pouvez utiliser la **xml** type de données comme type de colonne lorsque vous créez une table, comme un type de variable, un type de paramètre ou un type de retour de fonction ou dans [!INCLUDE[tsql](../../includes/tsql_md.md)] fonctions CAST et CONVERT.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] fournit un **xml** type de données qui vous permet de stocker des documents XML et des fragments dans un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] base de données. Le **xml** type de données est un type de données intégré dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]et est quelque peu similaire aux autres types intégrés, tels que **int** et **varchar**. Comme avec d’autres types intégrés, vous pouvez utiliser la **xml** type de données comme type de colonne lorsque vous créez une table, comme un type de variable, un type de paramètre ou un type de retour de fonction ou dans [!INCLUDE[tsql](../../includes/tsql_md.md)] fonctions CAST et CONVERT.  
   
  Dans le pilote JDBC, le **xml** type de données peut être mappé comme chaîne, tableau d’octets, flux, CLOB, BLOB ou objet SQLXML. Chaîne est la valeur par défaut. À partir de la version 2.0 du pilote JDBC, l'API JDBC 4.0 est prise en charge, ce qui permet l'introduction de l'interface SQLXML. L’interface SQLXML définit des méthodes pour interagir et manipuler des données XML. Le **SQLXML** type de données correspond à la [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] **xml** type de données. Pour plus d’informations sur comment lire et écrire des données XML depuis et vers la base de données relationnelle avec le **SQLXML** type de données Java, consultez [prise en charge des données XML](../../connect/jdbc/supporting-xml-data.md).  
   
@@ -151,7 +148,7 @@ rs.updateRow();
   
 -   Accès à XML en tant que tableau d'octets avec un BOM de début lors de l'encodage en UTF-16 pour l'échange avec d'autres processeurs XML et fichiers de disque  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]requiert un BOM de début pour le XML codé en UTF-16. L'application doit le fournir quand les valeurs de paramètre XML sont fournies en tant que tableaux d'octets. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]Retourne toujours les valeurs XML comme UTF-16 sans BOM des chaînes ou déclaration de codage incorporée. Lorsque des valeurs XML sont récupérées en tant que byte[], BinaryStream ou Blob, une marque d'ordre d'octet (BOM, Byte-Order Mark) UTF-16 est ajoutée au début de la valeur.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] requiert un BOM de début pour le XML codé en UTF-16. L'application doit le fournir quand les valeurs de paramètre XML sont fournies en tant que tableaux d'octets. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Retourne toujours les valeurs XML comme UTF-16 sans BOM des chaînes ou déclaration de codage incorporée. Lorsque des valeurs XML sont récupérées en tant que byte[], BinaryStream ou Blob, une marque d'ordre d'octet (BOM, Byte-Order Mark) UTF-16 est ajoutée au début de la valeur.  
   
  Pour plus d’informations sur la **xml** de type de données, consultez « Type de données xml » dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] la documentation en ligne.  
   

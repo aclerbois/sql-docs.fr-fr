@@ -1,31 +1,23 @@
 ---
-title: "Créez un nouveau projet de modèle tabulaire (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 001bed84-f50f-4961-bc25-9906728d99ec
-caps.latest.revision: 
-author: Minewiskan
+title: Créez un nouveau projet de modèle tabulaire (Analysis Services) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 65a4f062cb8ddc70c62853a448393e21607ec0ca
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 55713d12afb439e17702c8a9ce3727c613e95f92
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-new-tabular-model-project"></a>Créer un projet de modèle tabulaire
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Cet article décrit comment créer un projet de modèle tabulaire vide dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Une fois que le nouveau projet de modèle a été créé, vous pouvez commencer à créer votre projet de modèle en important des données à partir de sources de données.  
+  Cet article décrit comment créer un projet de modèle tabulaire vide dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Une fois que le nouveau projet de modèle a été créé, vous pouvez commencer à créer votre projet de modèle en important des données à partir de sources de données.  
   
 #### <a name="to-create-a-new-blank-tabular-model-project"></a>Pour créer un projet de modèle tabulaire vide  
   

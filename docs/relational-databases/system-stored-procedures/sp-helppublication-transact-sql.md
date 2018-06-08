@@ -1,16 +1,15 @@
 ---
 title: sp_helppublication (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helppublication
 ms.assetid: e801c3f0-dcbd-4b4a-b254-949a05f63518
-caps.latest.revision: 
+caps.latest.revision: 49
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aa78ce2aa9ed1ba80a7ee733a2e458ba231d968f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 532c1d371596cff80a547414a316ed0ec401728a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelppublication-transact-sql"></a>sp_helppublication (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,12 +47,12 @@ sp_helppublication [ [ @publication = ] 'publication' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@publication =** ] **'***publication***'**  
- Nom de la publication à afficher. *publication* est de type sysname, avec une valeur par défaut  **%** , qui retourne des informations sur toutes les publications.  
+ Nom de la publication à afficher. *publication* est de type sysname, avec une valeur par défaut **%**, qui retourne des informations sur toutes les publications.  
   
  [  **@found =** ] **'***trouvé***'** sortie  
  Indicateur désignant les lignes retournées. *trouvé*est **int** d’un paramètre OUTPUT, avec une valeur par défaut **23456**. **1** indique la publication a été trouvée. **0** indique la publication est introuvable.  
   
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Spécifie un non -[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveur de publication. *serveur de publication* est de type sysname, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -109,7 +107,7 @@ sp_helppublication [ [ @publication = ] 'publication' ]
 |enabled_for_het_sub|**int**|Spécifie si la publication prend en charge les Abonnés non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La valeur **1** signifie que non[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] abonnés sont pris en charge. La valeur **0** signifient que seuls [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] abonnés sont pris en charge. Pour plus d’informations, consultez [Non-SQL Server Subscribers](../../relational-databases/replication/non-sql/non-sql-server-subscribers.md).|  
 |enabled_for_p2p_conflictdetection|**int**|Spécifie si l'Agent de distribution détecte des conflits pour une publication activée pour la réplication d'égal à égal. La valeur **1** signifie que les conflits sont détectés. Pour plus d'informations, consultez [Conflict Detection in Peer-to-Peer Replication](../../relational-databases/replication/transactional/peer-to-peer-conflict-detection-in-peer-to-peer-replication.md).|  
 |originator_id|**int**|Spécifie un ID pour un nœud dans une topologie d'égal à égal. Cet ID est utilisé pour la détection de conflit si **enabled_for_p2p_conflictdetection** a la valeur **1**. Pour obtenir la liste des ID qui ont déjà été utilisés, interrogez la table système [Mspeer_originatorid_history](../../relational-databases/system-tables/mspeer-originatorid-history-transact-sql.md) .|  
-|p2p_continue_onconflict|**int**|Indique si l'Agent de distribution continue à traiter les modifications lorsqu'un conflit est détecté. La valeur **1** signifie que l’agent continue à traiter les modifications.<br /><br /> **\*\*Attention \* \***  nous vous recommandons d’utiliser la valeur par défaut **0**. Lorsque cette option a la valeur **1**, l’Agent de Distribution tente de converger les données de la topologie en appliquant la ligne en conflit à partir du nœud qui possède l’ID de donneur d’ordre le plus élevé. Cette méthode ne garantit pas la convergence. Vous devez vous assurer que la topologie est cohérente après la détection d'un conflit. Pour plus d'informations, consultez « Gestion des conflits » dans [Conflict Detection in Peer-to-Peer Replication](../../relational-databases/replication/transactional/peer-to-peer-conflict-detection-in-peer-to-peer-replication.md).|  
+|p2p_continue_onconflict|**int**|Indique si l'Agent de distribution continue à traiter les modifications lorsqu'un conflit est détecté. La valeur **1** signifie que l’agent continue à traiter les modifications.<br /><br /> **\*\* Attention \* \***  nous vous recommandons d’utiliser la valeur par défaut **0**. Lorsque cette option a la valeur **1**, l’Agent de Distribution tente de converger les données de la topologie en appliquant la ligne en conflit à partir du nœud qui possède l’ID de donneur d’ordre le plus élevé. Cette méthode ne garantit pas la convergence. Vous devez vous assurer que la topologie est cohérente après la détection d'un conflit. Pour plus d'informations, consultez « Gestion des conflits » dans [Conflict Detection in Peer-to-Peer Replication](../../relational-databases/replication/transactional/peer-to-peer-conflict-detection-in-peer-to-peer-replication.md).|  
 |alllow_partition_switch|**int**|Indique si les instructions ALTER TABLE…SWITCH peuvent être exécutées sur la base de données publiée. Pour plus d’informations, consultez [Répliquer des tables et des index partitionnés](../../relational-databases/replication/publish/replicate-partitioned-tables-and-indexes.md).|  
 |replicate_partition_switch|**int**|Indique si les instructions ALTER TABLE…SWITCH exécutées sur la base de données publiée doivent être répliquées sur les Abonnés. Cette option est valide uniquement si *allow_partition_switch* a la valeur **1**.|  
   
@@ -124,16 +122,16 @@ sp_helppublication [ [ @publication = ] 'publication' ]
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_helppublication](../../relational-databases/replication/codesnippet/tsql/sp-helppublication-trans_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle serveur fixe sysadmin sur le serveur de publication, les membres du rôle de base de données fixe db_owner de la base de données de publication ou les utilisateurs de la liste d'accès aux publications (PAL) peuvent exécuter sp_helppublication.  
   
  Pour un serveur de publication non-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], seuls les membres du rôle serveur fixe sysadmin sur le serveur de distribution, les membres du rôle de base de données fixe db_owner de la base de données de distribution ou les utilisateurs de la liste d'accès pour cette publication (PAL) peuvent exécuter sp_helppublication.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Afficher et modifier les propriétés d’une publication](../../relational-databases/replication/publish/view-and-modify-publication-properties.md)   
- [sp_addpublication &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addpublication-transact-sql.md)   
+ [sp_addpublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addpublication-transact-sql.md)   
  [sp_changepublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changepublication-transact-sql.md)   
- [sp_droppublication &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-droppublication-transact-sql.md)   
+ [sp_droppublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-droppublication-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  
   
   

@@ -1,16 +1,11 @@
 ---
-title: "Mise en route en exécutant l’Assistant Activer la base de données pour Stretch | Microsoft Docs"
-ms.custom: 
+title: Mise en route en exécutant l’Assistant Activer la base de données pour Stretch | Microsoft Docs
+ms.custom: ''
 ms.date: 08/05/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: stretch-database
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-stretch
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 f1_keywords:
 - sql13.swb.stretchwizard.f1
@@ -26,16 +21,15 @@ helpviewer_keywords:
 - Stretch Database, wizard
 - Enable Database for Stretch Wizard
 ms.assetid: 855dd9fc-f80c-4dbc-bf46-55a9736bfe15
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 976561b457dc1eac740df5075bf0a02fd5a95a23
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 13e5366037f3f399325d1a453601314f46ae6a67
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772965"
 ---
 # <a name="get-started-by-running-the-enable-database-for-stretch-wizard"></a>Mise en route en exécutant l’Assistant Activer la base de données pour Stretch
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly.md)]
@@ -186,12 +180,12 @@ Si vous souhaitez utiliser un autre type de fonction de filtre pour sélectionne
   
 ##  <a name="KnownIssues"></a> Résolution des problèmes liés à l'Assistant  
  **Échec de l’Assistant Stretch Database.**  
- Si Stretch Database n'est pas encore activé au niveau du serveur et que vous exécutez l'Assistant sans les autorisations d'administrateur du système nécessaires pour l'activer, l'Assistant échoue. Demandez à l'administrateur système d’activer Stretch Database sur l'instance de serveur local, puis exécutez à nouveau l'Assistant. Pour plus d'informations, consultez [Prérequis : Autorisation d’activer Stretch Database sur le serveur](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).  
+ Si Stretch Database n'est pas encore activé au niveau du serveur et que vous exécutez l'Assistant sans les autorisations d'administrateur du système nécessaires pour l'activer, l'Assistant échoue. Demandez à l'administrateur système d’activer Stretch Database sur l'instance de serveur local, puis exécutez à nouveau l'Assistant. Pour plus d'informations, consultez [Prerequisite: Permission to enable Stretch Database on the server](../../sql-server/stretch-database/enable-stretch-database-for-a-database.md#EnableTSQLServer).  
   
 ## <a name="next-steps"></a>Étapes suivantes  
  Activer des tables supplémentaires pour Stretch Database. Surveiller la migration des données et gérez les tables et les bases de données Stretch.  
   
--   [Activer Stretch Database pour une table](../../sql-server/stretch-database/enable-stretch-database-for-a-table.md) pour activer des tables supplémentaires.  
+-   [Enable Stretch Database for a table](../../sql-server/stretch-database/enable-stretch-database-for-a-table.md) pour activer des tables supplémentaires.  
   
 -   Pour connaître l’état de la migration de données, consultez [Surveiller et résoudre les problèmes de migration de données &#40;Stretch Database&#41;](../../sql-server/stretch-database/monitor-and-troubleshoot-data-migration-stretch-database.md).  
   

@@ -1,17 +1,16 @@
 ---
-title: "Créer des fonctions définies par l’utilisateur (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Créer des fonctions définies par l’utilisateur (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SCHEMABINDING clause
 - schema-bound functions [SQL Server]
@@ -19,20 +18,20 @@ helpviewer_keywords:
 - CREATE FUNCTION statement
 - valid statements [SQL Server]
 ms.assetid: f0d5dd10-73fd-4e05-9177-07f56552bdf7
-caps.latest.revision: 
+caps.latest.revision: 38
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d24e55ebdadf50271178462c8520eaacaf79360a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ae445c5232611e3e0e88c09b78021bcf106bceb5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-user-defined-functions-database-engine"></a>Créer des fonctions définies par l'utilisateur (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Cette rubrique décrit comment créer une fonction définie par l’utilisateur (UDF) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique décrit comment créer une fonction définie par l’utilisateur (UDF) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
 
   
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  

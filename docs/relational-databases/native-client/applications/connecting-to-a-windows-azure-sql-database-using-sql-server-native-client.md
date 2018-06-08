@@ -1,29 +1,29 @@
 ---
-title: "Connexion à une base de données SQL Azure Windows à l’aide de SQL Server Native Client | Documents Microsoft"
-ms.custom: 
+title: Connexion à une base de données SQL Azure Windows à l’aide de SQL Server Native Client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: native-client|applications
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 0dc20bb6-b142-4259-b87b-427d2ba798af
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d52109ed61ad125deadb35dacf7a0426601951c4
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1dc0139efdaa17cb1046b0661d9e704232a1df4c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="connecting-to-a-windows-azure-sql-database-using-sql-server-native-client"></a>Connexion à une base de données SQL Windows Azure à l'aide de SQL Server Native Client
+# <a name="connecting-to-a-windows-azure-sql-database-using-sql-server-native-client"></a>Connexion à une base de données Microsoft Azure SQL Database à l'aide de SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../../includes/snac-deprecated.md)]
 

@@ -1,33 +1,25 @@
 ---
 title: Installer SQL Server 2017 Machine Learning Server (autonome) | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2018
-ms.reviewer: 
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 5dcc5ee16f39ac8612106f40f98c4f85a060ec4d
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: cb906a8a05221204ec10310d652f6891861d35e2
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708267"
 ---
 # <a name="install-sql-server-2017-machine-learning-server-standalone-on-windows"></a>Installer SQL Server 2017 d’apprentissage Server (autonome) sur Windows
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Le programme d’installation de SQL Server inclut la possibilité d’installer un serveur qui s’exécute en dehors de SQL Server d’apprentissage. Cette option peut être utile si vous avez besoin développer de hautes performances machine learning solutions peuvent utiliser à distance les contextes de calcul, basculement indifféremment entre le serveur local et un ordinateur de formation serveur sur un cluster Spark ou sur un autre serveur SQL Server instance.
   
-Cet article décrit comment utiliser le programme d’installation de SQL Server pour installer la version autonome de **SQL serveur 2017 Machine Learning**. Si vous disposez d’une édition entreprise ou la Software Assurance, installez le serveur d’apprentissage autonome est gratuit.
+Cet article décrit comment utiliser le programme d’installation de SQL Server pour installer la version autonome de **SQL serveur 2017 Machine Learning**. 
 
 ## <a name="bkmk_prereqs"> </a> Liste de vérification de préinstallation
 
@@ -98,7 +90,7 @@ Le tableau suivant répertorie les chemins d’accès pour chaque installation.
 
 Un développement IDE n’est pas installé dans le cadre du programme d’installation. Des outils supplémentaires ne sont pas requis, comme tous les outils standards sont inclus qui serait fournie avec une distribution de R ou Python.
 
-Nous vous recommandons d’essayer la nouvelle version de [!INCLUDE[rsql_rtvs](../../includes/rsql-rtvs-md.md)] ou [Python pour Visual Studio](https://docs.microsoft.com/en-us/visualstudio/python/installing-python-support-in-visual-studio). Visual Studio prend en charge à la fois R et Python, ainsi que les outils de développement de base de données, la connectivité avec SQL Server et des Outils BI. Toutefois, vous pouvez utiliser n’importe quel environnement de développement par défaut, y compris RStudio.
+Nous vous recommandons d’essayer la nouvelle version de [!INCLUDE[rsql_rtvs](../../includes/rsql-rtvs-md.md)] ou [Python pour Visual Studio](https://docs.microsoft.com/visualstudio/python/installing-python-support-in-visual-studio). Visual Studio prend en charge à la fois R et Python, ainsi que les outils de développement de base de données, la connectivité avec SQL Server et des Outils BI. Toutefois, vous pouvez utiliser n’importe quel environnement de développement par défaut, y compris RStudio.
 
 ## <a name="get-help"></a>Obtenir de l’aide
 

@@ -1,32 +1,29 @@
 ---
-title: "Types de données C | Documents Microsoft"
-ms.custom: 
+title: Types de données C | Documents Microsoft
+ms.custom: ''
 ms.date: 07/12/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], C data types
 - C data types [ODBC], about C data types
 - C data types [ODBC]
 - C buffers [ODBC]
 ms.assetid: b681d260-3dbb-47df-a616-4910d727add7
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 31de2fc95be1a7ead0b61b2dde493caf8d484fe4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 288ca6cbd5553b963131d34b8e63640518f70ef4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-data-types"></a>Types de données C
 Types de données ODBC C indiquent le type de données de mémoires tampons de C utilisé pour stocker les données dans l’application.  
@@ -45,7 +42,7 @@ Types de données ODBC C indiquent le type de données de mémoires tampons de C
 |SQL_C_USHORT [j]|SQLUSMALLINT|entier court non signé|  
 |SQL_C_SLONG [j]|SQLINTEGER|nombre entier long|  
 |SQL_C_ULONG [j]|SQLUINTEGER|nombre entier long non signé|  
-|SQL_C_FLOAT|SQLREAL|FLOAT|  
+|SQL_C_FLOAT|SQLREAL|float|  
 |SQL_C_DOUBLE|SQLDOUBLE, SQLFLOAT|double|  
 |SQL_C_BIT|SQLCHAR|char non signé|  
 |SQL_C_STINYINT [j]|SQLSCHAR|char signé|  
@@ -139,7 +136,7 @@ struct tagSQLGUID {
   
  [c] dans ODBC 2. *x*, les types de données date, time et timestamp C sont SQL_C_DATE, SQL_C_TIME et SQL_C_TIMESTAMP.  
   
- [d] ODBC 3*.x* SQL_C_VARBOOKMARK, SQL_C_BOOKMARK pas les applications doivent utiliser. Lorsqu’un ODBC 3*.x* application fonctionne avec une API ODBC 2. *x* pilote, la version 3 ODBC*.x* du Gestionnaire de pilotes mappera SQL_C_VARBOOKMARK à SQL_C_BOOKMARK.  
+ [d] ODBC 3 *.x* SQL_C_VARBOOKMARK, SQL_C_BOOKMARK pas les applications doivent utiliser. Lorsqu’un ODBC 3 *.x* application fonctionne avec une API ODBC 2. *x* pilote, la version 3 ODBC *.x* du Gestionnaire de pilotes mappera SQL_C_VARBOOKMARK à SQL_C_BOOKMARK.  
   
  [e] un numéro est stocké dans le *val* champ de la structure SQL_NUMERIC_STRUCT comme un entier à l’échelle, en mode de primauté peu (l’octet de plus à gauche en cours de l’octet le moins significatif). Par exemple, le nombre 10.001 base 10, avec une échelle de 4, est mis à l’échelle à un entier de 100010. Comme il s’agit 186AA au format hexadécimal, la valeur dans SQL_NUMERIC_STRUCT serait « AA 86 01 00 00... 00", avec le nombre d’octets défini par le SQL_MAX_NUMERIC_LEN **#define**.  
   
@@ -151,9 +148,9 @@ struct tagSQLGUID {
   
  [h] _int64 ne peuvent pas être fournis par certains compilateurs.  
   
- [i] _SQL_C_BOOKMARK a été déconseillée dans ODBC 3*.x*.  
+ [i] _SQL_C_BOOKMARK a été déconseillée dans ODBC 3 *.x*.  
   
- [j] _SQL_C_SHORT, SQL_C_LONG et SQL_C_TINYINT ont été remplacés dans ODBC en types signés et non signés : SQL_C_SSHORT et SQL_C_USHORT, SQL_C_SLONG et SQL_C_ULONG et SQL_C_STINYINT et SQL_C_UTINYINT. Un ODBC 3*.x* pilote doit fonctionner avec ODBC 2. *x* applications doivent prendre en charge SQL_C_SHORT, SQL_C_LONG et SQL_C_TINYINT, étant donné que lorsqu’elles sont appelées, le Gestionnaire de pilotes transmet via le pilote.  
+ [j] _SQL_C_SHORT, SQL_C_LONG et SQL_C_TINYINT ont été remplacés dans ODBC en types signés et non signés : SQL_C_SSHORT et SQL_C_USHORT, SQL_C_SLONG et SQL_C_ULONG et SQL_C_STINYINT et SQL_C_UTINYINT. Un ODBC 3 *.x* pilote doit fonctionner avec ODBC 2. *x* applications doivent prendre en charge SQL_C_SHORT, SQL_C_LONG et SQL_C_TINYINT, étant donné que lorsqu’elles sont appelées, le Gestionnaire de pilotes transmet via le pilote.  
   
  [k] SQL_C_GUID peuvent être convertis uniquement aux SQL_CHAR ou SQL_WCHAR.  
   

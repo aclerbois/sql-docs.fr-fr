@@ -1,27 +1,25 @@
 ---
-title: "Régions de données imbriquées (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Régions de données imbriquées (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 15c2bc9b-428a-47ac-9630-8dde925d0595
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3333479da0d2989354242869c430712a3688e968
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 06a44ab13532845e8b894a3b936746ef7d0e1588
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nested-data-regions-report-builder-and-ssrs"></a>Régions de données imbriquées (Générateur de rapports et SSRS)
   En règle générale, vous pouvez imbriquer une région de données (par exemple un graphique) dans une autre région de données (par exemple une matrice) pour afficher des synthèses de données de façon concise ou pour proposer une représentation visuelle, ainsi qu'un tableau ou une matrice.  
@@ -84,7 +82,7 @@ ms.lasthandoff: 01/09/2018
  Vous pouvez définir un groupe pour une région de données de type Liste et ajouter ensuite un tableau matriciel et un graphique pour proposer des vues différentes des mêmes données. Pour obtenir cet effet, vous devez définir des expressions de groupe et de tri identiques pour le tableau matriciel et le graphique incorporés. Par définition, le tableau matriciel et le graphique utilisent les données du dataset de la région de données de liste parente.  
   
 > [!NOTE]  
->  Par défaut, lorsque vous ajoutez une région de données de liste à l'aire de conception, la liste inclut une ligne de détails. Vous pouvez modifier cette valeur par défaut en ajoutant une ligne de groupe et en supprimant la ligne de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+>  Par défaut, lorsque vous ajoutez une région de données de liste à l'aire de conception, la liste inclut une ligne de détails. Vous pouvez modifier cette valeur par défaut en ajoutant une ligne de groupe et en supprimant la ligne de détails. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS& #41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
   
  Pour plus d’informations, consultez [Présentation des groupes &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/understanding-groups-report-builder-and-ssrs.md) et [Ajouter, déplacer ou supprimer une table, une matrice ou une liste &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/add-move-or-delete-a-table-matrix-or-list-report-builder-and-ssrs.md).  
   

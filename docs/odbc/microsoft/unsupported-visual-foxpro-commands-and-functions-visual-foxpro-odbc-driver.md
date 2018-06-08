@@ -1,16 +1,14 @@
 ---
 title: Non pris en charge les fonctions et les commandes de Visual FoxPro | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FoxPro ODBC driver [ODBC], commands and functions
 - functions [ODBC], Visual FoxPro
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - Visual FoxPro commands and functions
 - FoxPro ODBC driver
 ms.assetid: afdb6b7e-738d-42ca-8053-67ae50873ca6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 85d11ebb5fd4245a7c6b5cf7c277e45d8df90011
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cfef52f471f9b87e7f6560b76e191aca1ba26172
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unsupported-visual-foxpro-commands-and-functions-visual-foxpro-odbc-driver"></a>Les commandes non prises en charge Visual FoxPro et les fonctions (le pilote ODBC Visual FoxPro)
 Le tableau suivant répertorie les commandes de FoxPro et les fonctions qui ne sont pas pris en charge par le pilote ODBC Visual FoxPro, mais sont pris en charge par Microsoft® Visual FoxPro.  
@@ -38,8 +35,8 @@ Le tableau suivant répertorie les commandes de FoxPro et les fonctions qui ne s
   
 ||||  
 |-|-|-|  
-|#DEFINE... #UNDEF|#IF... #ENDIF Directive de préprocesseur|#IFDEF &#124; #IFNDEF|  
-|#INCLUDE, Directive du préprocesseur|: Opérateur de résolution de portée|! Commande (voir exécuter &#124; ! Commande)|  
+|#DEFINE... #UNDEF|#IF... #ENDIF Directive de préprocesseur|#IFDEF &AMP;#124; #IFNDEF|  
+|#INCLUDE, Directive du préprocesseur|: Opérateur de résolution de portée|! Commande (voir exécution &#124; ! Commande)|  
 |? &#124; ?? Command|??? Command|\ &#124; \\\ Commande|  
 |@ ... Commande de la zone|@ ... Commande de la classe|@ ... Effacer, commande|  
 |@ ... MODIFIER - modifier des zones commande|@ ... REMPLIR, commande|@ ... GET|  
@@ -242,7 +239,7 @@ Le tableau suivant répertorie les commandes de FoxPro et les fonctions qui ne s
 |RENOMMER une commande de connexion|RENOMMER une commande de TABLE|RESTAURER à partir de la commande|  
 |Commande de rapport|REQUERY () (fonction)|RESTAURATION de la fenêtre commande|  
 |RESTAURER les commandes de MACROS|ÉCRAN commande RESTORE|RGBSCHEME (fonction))|  
-|Commande de reprise|RVB (fonction))|EXÉCUTER &#124; ! Command|  
+|Commande de reprise|RVB (fonction))|EXÉCUTEZ &AMP;#124; ! Command|  
 |Commande RMDIR|Fonction de ligne)||  
 |Commande RUNSCRIPT|RDLEVEL (fonction))||  
   

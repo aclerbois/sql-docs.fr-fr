@@ -1,30 +1,27 @@
 ---
 title: SQLGetTypeInfo (pilote dBASE) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLGetTypeInfo function [ODBC], dBASE Driver
 - DBase driver [ODBC], SQLGetTypeInfo
 ms.assetid: 6e9ce02b-97c7-4c1a-91e0-829df7459c84
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 791072c29eac366794b80869e2138c3aaffde56e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c79e3fb73d94480fb59e119816d23c415f659730
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgettypeinfo-dbase-driver"></a>SQLGetTypeInfo (pilote dBASE)
 > [!NOTE]  

@@ -1,34 +1,30 @@
 ---
-title: "CursorPrepare, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: CursorPrepare, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CursorPrepare event class
 ms.assetid: 990e50fb-b3ee-4366-8613-2c40d4a456f7
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e97aee3b314dddda05c5cfd90be851ec8e88cbd3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6e39d66cae44c0dad01e02526f6f005642bc7c29
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="cursorprepare-event-class"></a>CursorPrepare (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **CursorPrepare** décrit les événements de préparation des curseurs qui se produisent dans les curseurs d’API. Les événements de préparation de curseurs se produisent lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] compile une instruction SELECT associée à un curseur dans un plan d’exécution, mais ne crée pas le curseur.  
+  La classe d’événements **CursorPrepare** décrit les événements de préparation des curseurs qui se produisent dans les curseurs d’API. Les événements de préparation de curseurs se produisent lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] compile une instruction SELECT associée à un curseur dans un plan d’exécution, mais ne crée pas le curseur.  
   
  Incluez la classe d’événements **CursorPrepare** dans les traces qui enregistrent les performances des curseurs. Lorsque la classe d’événements **CursorPrepare** est incluse dans une trace, la charge générée varie selon la fréquence d’utilisation des curseurs sur la base de données pendant la trace. Si les curseurs sont fortement utilisés, la trace peut dégrader notablement les performances.  
   

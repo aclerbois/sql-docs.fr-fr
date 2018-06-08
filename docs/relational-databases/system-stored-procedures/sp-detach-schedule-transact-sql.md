@@ -1,16 +1,14 @@
 ---
-title: sp_detach_schedule (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_detach_schedule (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_detach_schedule
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_detach_schedule
 ms.assetid: 9a1fc335-1bef-4638-a33a-771c54a5dd19
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 784a8439519ad3a99edd35a085f306e838227151
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: df165b840d0785fb87e7e5abeffc72ca660317cf
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdetachschedule-transact-sql"></a>sp_detach_schedule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,19 +46,19 @@ sp_detach_schedule
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id=** ] *job_id*  
+ [  **@job_id=** ] *job_id*  
  Numéro d'identification du travail à partir duquel supprimer la planification. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name=** ] **'***job_name***'**  
+ [  **@job_name=** ] **'***job_name***'**  
  Nom du travail à partir duquel supprimer la planification. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
   
- [ **@schedule_id=** ] *schedule_id*  
+ [  **@schedule_id=** ] *id_de_la_planification*  
  Numéro d'identification de la planification à supprimer du travail. *id_de_la_planification* est **int**, avec NULL comme valeur par défaut.  
   
- [ **@schedule_name=** ] **'***schedule_name***'**  
+ [  **@schedule_name=** ] **'***nom_de_la_planification***'**  
  Nom de la planification à supprimer du travail. *nom_de_la_planification* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -89,7 +86,7 @@ sp_detach_schedule
   
  Pour en savoir plus sur les autorisations de ces rôles, consultez [Rôles de base de données fixes de l'Agent SQL Server](http://msdn.microsoft.com/library/719ce56b-d6b2-414a-88a8-f43b725ebc79).  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vérifie si l’utilisateur est propriétaire de la planification. Seuls les membres de la **sysadmin** rôle serveur fixe peut dissocier les planifications des travaux appartenant à un autre utilisateur.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] effectue une vérification pour déterminer si l'utilisateur est propriétaire de la planification. Seuls les membres de la **sysadmin** rôle serveur fixe peut dissocier les planifications des travaux appartenant à un autre utilisateur.  
   
 ## <a name="examples"></a>Exemples  
  L'exemple ci-dessous supprime l'association entre une planification `'NightlyJobs'` et un travail `'BackupDatabase'`.  

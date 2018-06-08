@@ -2,30 +2,29 @@
 title: Détermination des autorisations effectives du moteur de base de données | Microsoft Docs
 ms.custom: ''
 ms.date: 01/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: security
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - permissions, effective
 - effective permissions
 ms.assetid: 273ea09d-60ee-47f5-8828-8bdc7a3c3529
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4d93f80a8a662edd4e84309aa95803dc0e3cc57c
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0a2e2c205558f81b2141739bdc9b53bbb85d55f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determining-effective-database-engine-permissions"></a>Détermination des autorisations effectives du moteur de base de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -91,9 +90,8 @@ Pour comprendre les autorisations accordées à chaque rôle, consultez les desc
 
 Ce système est souple, ce qui signifie qu’il peut être plus complexe si la configuration voulue doit être précise. Pour simplifier les choses, il permet de créer des rôles, d’attribuer des autorisations aux rôles, puis d’ajouter des groupes d’utilisateurs à ces rôles. Et c’est encore plus simple si l’équipe de développement de la bases de données sépare l’activité par schémas, pour accorder ensuite des autorisations de rôle à un schéma entier plutôt qu’à des procédures ou des tables individuelles. Les scénarios réels sont complexes et les besoins de l’entreprise peuvent aboutir à des exigences de sécurité inattendues.   
 
-Le graphique suivant illustre les autorisations et leurs relations. Certaines des autorisations de niveau supérieur (telles que `CONTROL SERVER`) figurent plusieurs fois. Dans cet article, l’affiche est trop petite pour être lue correctement. Cliquez sur l’image pour télécharger le **Poster des autorisations du moteur de base de données** au format pdf.  
-  
- [![Autorisations de moteur de base de données](../../../relational-databases/security/media/database-engine-permissions.PNG)](https://aka.ms/sql-permissions-poster)
+[!INCLUDE[database-engine-permissions](../../../includes/paragraph-content/database-engine-permissions.md)]
+
 
 ### <a name="security-classes"></a>Classes de sécurité
 

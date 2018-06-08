@@ -1,15 +1,14 @@
 ---
-title: "Connexion à une Source de données (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Connexion à une Source de données (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-communication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - checking connection states
@@ -25,16 +24,16 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, data sources
 - SQL Server Native Client ODBC driver, connections
 ms.assetid: ae30dd1d-06ae-452b-9618-8fd8cd7ba074
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 88fb99a39ca8050c72622e1c4d6a99bc041561e6
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4daa642cbd60846cc4211de5e33cdad8e7a6d8db
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-a-data-source-odbc"></a>Connexion à une source de données (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -121,6 +120,6 @@ szErrorMsg: "[Microsoft][SQL Server Native Client]The ODBC
  La fonction d’une demande de gestion d’erreur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexions doivent appeler **SQLGetDiagRec** jusqu'à ce qu’il retourne SQL_NO_DATA. Il doit ensuite intervenir sur tous les messages autres que ceux avec un *pfNative* code 5701 ou 5703.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Communication avec SQL Server &#40; ODBC &#41;](../../relational-databases/native-client-odbc-communication/communicating-with-sql-server-odbc.md)  
+ [Communication avec SQL Server &#40;ODBC&#41;](../../relational-databases/native-client-odbc-communication/communicating-with-sql-server-odbc.md)  
   
   

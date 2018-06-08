@@ -1,15 +1,13 @@
 ---
-title: sys.fn_get_audit_file (Transact-SQL) | Microsoft Docs
+title: Sys.fn_get_audit_file (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 05/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: ''
 ms.component: system-functions
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - sys.fn_get_audit_file function
 - fn_get_audit_file function
 ms.assetid: d6a78d14-bb1f-4987-b7b6-579ddd4167f5
-caps.latest.revision: ''
+caps.latest.revision: 27
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 982113b9acc85b0dd340e2850ad6efb463a500cb
-ms.sourcegitcommit: 7246ef88fdec262fa0d34bf0e232f089e03a6911
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e09491347fec046bef09dc2fca06756998055150
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfngetauditfile-transact-sql"></a>sys.fn_get_audit_file (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

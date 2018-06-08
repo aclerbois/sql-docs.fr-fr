@@ -1,17 +1,15 @@
 ---
-title: "Prétraiter un schéma pour fusionner des schémas inclus | Microsoft Docs"
-ms.custom: 
+title: Prétraiter un schéma pour fusionner des schémas inclus | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - testing preprocessor tool
 - xsd:include
@@ -22,20 +20,19 @@ helpviewer_keywords:
 - preprocessor tool [XML schemas]
 - XML schemas [SQL Server]
 ms.assetid: cde1de5f-077a-4a6d-8a81-1ecb6e10d549
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb486493743bc51842c0531e1072aa1eac106d76
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 6667fd78bc2b345f8976edab3fbdf8197cf6dac7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="preprocess-a-schema-to-merge-included-schemas"></a>Prétraiter un schéma pour fusionner des schémas inclus
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-L’élément W3C XSD **include** assure la prise en charge de la modularité des schémas, selon laquelle un schéma XML peut être partitionné en plusieurs fichiers physiques. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prend pas en charge cet élément. Les schémas XML incluant cet élément seront rejetés par le serveur.  
+  L’élément W3C XSD **include** assure la prise en charge de la modularité des schémas, selon laquelle un schéma XML peut être partitionné en plusieurs fichiers physiques. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prend pas en charge cet élément. Les schémas XML incluant cet élément seront rejetés par le serveur.  
   
  En guise de solution, les schémas XML comportant la directive \<xsd:include> peuvent être prétraités de façon à copier et à fusionner le contenu de tous les schémas inclus en un seul et unique schéma à télécharger vers le serveur. Vous pouvez utiliser le code C# suivant pour le prétraitement. Les commentaires dans la première partie du code fournissent des informations sur son utilisation.  
   

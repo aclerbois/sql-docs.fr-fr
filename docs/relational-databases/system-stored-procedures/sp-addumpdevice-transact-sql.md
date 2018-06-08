@@ -1,16 +1,14 @@
 ---
 title: sp_addumpdevice (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addumpdevice_TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - backup devices [SQL Server], defining
 - sp_addumpdevice
 ms.assetid: c2d2ae49-0808-46d8-8444-db69a69d0ec3
-caps.latest.revision: 
+caps.latest.revision: 49
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dad0547ea803cfbf709b36f078d552435c848900
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: cbf23913e95b53e490d55099cde44b5ab60d3141
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddumpdevice-transact-sql"></a>sp_addumpdevice (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,18 +51,18 @@ sp_addumpdevice [ @devtype = ] 'device_type'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@devtype=** ] **'***device_type***'**  
+ [  **@devtype=** ] **'***device_type***'**  
  Type de périphérique de sauvegarde. *device_type* est **varchar (20)**, sans valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**disk**|Fichier de disque dur comme unité de sauvegarde.|  
-|**tape**|Tout périphérique à bandes géré par [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.<br /><br /> Remarque : la prise en charge des unités de sauvegarde sur bande sera supprimée dans une prochaine version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité.|  
+|**Disque**|Fichier de disque dur comme unité de sauvegarde.|  
+|**Bande**|Tout périphérique à bandes géré par [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.<br /><br /> Remarque : la prise en charge des unités de sauvegarde sur bande sera supprimée dans une prochaine version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité.|  
   
- [ **@logicalname =** ] **'***logical_name***'**  
+ [  **@logicalname =** ] **'***nom_logique***'**  
  Nom logique de l'unité de sauvegarde utilisée dans les instructions BACKUP et RESTORE. *nom_logique* est **sysname**, sans valeur par défaut, et ne peut pas être NULL.  
   
- [ **@physicalname =** ] **'***physical_name***'**  
+ [  **@physicalname =** ] **'***physical_name***'**  
  Nom physique de l'unité de sauvegarde. Les noms physiques doivent respecter les règles en vigueur pour les noms de fichiers du système d'exploitation ou les conventions d'affectation des noms pour les unités réseau, et doivent comprendre un chemin d'accès complet. *physical_name* est **nvarchar (260)**, sans valeur par défaut de valeur et ne peut pas être NULL.  
   
  Lorsque vous créez une unité de sauvegarde sur un site de réseau distant, assurez-vous que le nom sous lequel le [!INCLUDE[ssDE](../../includes/ssde-md.md)] a été démarré est capable d'assurer les opérations d'écriture sur l'ordinateur distant.  
@@ -75,10 +72,10 @@ sp_addumpdevice [ @devtype = ] 'device_type'
 > [!NOTE]  
 >  Cette procédure entre le nom physique spécifié dans le catalogue, mais elle ne tente pas de créer l'unité ou d'y accéder.  
   
- [ **@cntrltype =** ] **'***controller_type***'**  
+ [  **@cntrltype =** ] **'***type_de_contrôleur***'**  
  Obsolète. S'il est spécifié, ce paramètre est ignoré. Il est conservé uniquement pour des raisons de compatibilité descendante. Les nouvelles utilisations de **sp_addumpdevice** doit omettre ce paramètre.  
   
- [ **@devstatus =** ] **'***device_status***'**  
+ [  **@devstatus =** ] **'***état_unité***'**  
  Obsolète. S'il est spécifié, ce paramètre est ignoré. Il est conservé uniquement pour des raisons de compatibilité descendante. Les nouvelles utilisations de **sp_addumpdevice** doit omettre ce paramètre.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

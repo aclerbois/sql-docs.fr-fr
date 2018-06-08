@@ -1,33 +1,30 @@
 ---
 title: Position, objet (ADO MD) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Position
 helpviewer_keywords:
 - Position object [ADO MD]
 ms.assetid: 91eab784-3ce9-41d6-a840-9b0939ca0608
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6becc43857026e8ea74d13f7bb2ac5ad7dc0c251
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 44035b2df230ecbbf3ef9bbe757a706e4884e104
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="position-object-ado-md"></a>Position, objet (ADO MD)
 Représente un ensemble d’un ou plusieurs membres de différentes dimensions qui définit un point sur un axe.  

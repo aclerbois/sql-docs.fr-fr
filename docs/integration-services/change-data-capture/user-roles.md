@@ -1,28 +1,26 @@
 ---
-title: "Rôles d’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Rôles d’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: be0ec384-e03b-4483-96ca-02b289804d6a
-caps.latest.revision: 
+caps.latest.revision: 7
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0abefa916dda5690d033bc9cd74ac5f75245d408
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c96d380d5168a936dc5f4db51f2b52f68e30f49d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="user-roles"></a>Rôles d'utilisateur
   Cette section décrit les rôles d'utilisateur du service de capture de données modifiées pour Oracle par Attunity. Les rôles décrits sont des rôles de base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , les rôles Windows ou des rôles de base de données Oracle.  

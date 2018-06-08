@@ -1,16 +1,15 @@
 ---
 title: MSmerge_sessions (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSmerge_sessions system table
 ms.assetid: 09ada8fc-c148-4379-9524-7826b1b0216c
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a081578000d831f85f00d8de2da725e6d078e5a8
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: dded9db18b0a3048c3a4eb8a56869946fca8a1ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msmergesessions-transact-sql"></a>MSmerge_sessions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -41,9 +39,9 @@ ms.lasthandoff: 11/21/2017
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**session_id**|**int**|ID de la session de travail de l'Agent de fusion|  
-|**éléments agent_id**|**int**|ID de l'Agent de fusion|  
-|**heure_début**|**datetime**|Heure de début de l'exécution du travail|  
-|**heure_fin**|**datetime**|Heure de fin de l'exécution du travail|  
+|**agent_id**|**int**|ID de l'Agent de fusion|  
+|**start_time**|**datetime**|Heure de début de l'exécution du travail|  
+|**end_time**|**datetime**|Heure de fin de l'exécution du travail|  
 |**duration**|**int**|Durée cumulée (en secondes) de cette session de travail|  
 |**delivery_time**|**int**|Durée (en secondes) de l'application d'un traitement de modifications|  
 |**upload_time**|**int**|Durée (en secondes) du téléchargement des modifications sur le serveur de publication|  
@@ -72,7 +70,7 @@ ms.lasthandoff: 11/21/2017
 |**timestamp**|**timestamp**|Colonne timestamp de cette table|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

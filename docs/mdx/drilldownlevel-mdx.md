@@ -1,30 +1,20 @@
 ---
 title: DrilldownLevel (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: DRILLDOWNLEVEL
-dev_langs: kbMDX
-helpviewer_keywords: DrilldownLevel function
-ms.assetid: 47531ce5-1ac0-4aa9-a85c-824fb5d21e7c
-caps.latest.revision: "43"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: da071ef3ba43af94caf81e1016cb84a2bffc082f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 99e8c47164d920ec531bf6ab51e35979b060c35d
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578001"
 ---
 # <a name="drilldownlevel-mdx"></a>DrilldownLevel (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -52,7 +42,7 @@ DrilldownLevel(Set_Expression [,[Level_Expression] ,[Index]] [,INCLUDE_CALC_MEMB
  *Include_Calc_Members*  
  (Facultatif). Un indicateur spécifiant s'il faut inclure les membres calculés (s'ils existent) au niveau d'exploration.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **DrilldownLevel** fonction retourne un jeu d’enfant de membres dans un ordre hiérarchique, basé sur les membres inclus dans le jeu spécifié. L'ordre est conservé parmi les membres d'origine dans le jeu spécifié, à ceci près que tous les membres enfants inclus dans le jeu de résultats de la fonction sont placés immédiatement sous leur membre parent.  
   
  Pour une structure de données hiérarchique multiniveau donnée, vous pouvez choisir explicitement un niveau jusqu'où explorer. Il y a deux moyens mutuellement exclusifs de spécifier le niveau. La première approche consiste à définir le **level_expression** argument à l’aide d’une expression MDX qui retourne le niveau, une autre approche consiste à spécifier le **index** argument, à l’aide d’une expression numérique qui spécifie le niveau par numéro.  
@@ -63,7 +53,7 @@ DrilldownLevel(Set_Expression [,[Level_Expression] ,[Index]] [,INCLUDE_CALC_MEMB
   
  Si aucune expression de niveau ou valeur d'index n'est spécifiée, la fonction génère un jeu dans l'ordre hiérarchique en extrayant uniquement les enfants des membres situés au niveau le plus bas de la première dimension référencée dans le jeu spécifié.  
   
- Interrogez la propriété XMLA MdpropMdxDrillFunctions vous permet de vérifier le niveau de prise en charge par le serveur pour les fonctions d’extraction ; consultez [pris en charge les propriétés XMLA &#40; XMLA &#41; ](../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) pour plus d’informations.  
+ Interrogez la propriété XMLA MdpropMdxDrillFunctions vous permet de vérifier le niveau de prise en charge par le serveur pour les fonctions d’extraction ; consultez [pris en charge les propriétés XMLA &#40;XMLA&#41; ](../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) pour plus d’informations.  
   
 ## <a name="examples"></a>Exemples  
  Vous pouvez essayer les exemples suivants dans la fenêtre de requête MDX dans SSMS, en utilisant le cube Adventure Works.  
@@ -128,6 +118,6 @@ FROM [Adventure Works]
  Si vous supprimez seulement l'indicateur et que vous réexécutez la requête, vous obtenez les mêmes résultats sans le membre calculé, [West Coast].  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

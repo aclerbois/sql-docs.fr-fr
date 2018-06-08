@@ -1,15 +1,14 @@
 ---
-title: "Manipulation de données UDT | Documents Microsoft"
-ms.custom: 
+title: Manipulation de données UDT | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - TSQL
@@ -31,16 +30,15 @@ helpviewer_keywords:
 - invoking UDT methods
 - inserting data
 ms.assetid: 51b1a5f2-7591-4e11-bfe2-d88e0836403f
-caps.latest.revision: 
+caps.latest.revision: 14
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 365c7171b4bc00f718add4261ebcebab1cd5dfd2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 754687e8fd100950b851f50d34e14aa968da37dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-user-defined-types---manipulating-udt-data"></a>Utilisation des Types définis par l’utilisateur - de manipulation de données UDT
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

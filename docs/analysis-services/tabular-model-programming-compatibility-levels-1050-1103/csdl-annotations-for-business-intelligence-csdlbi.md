@@ -1,29 +1,19 @@
 ---
 title: Annotations CSDL pour Business Intelligence (CSDLBI) | Documents Microsoft
-ms.custom: ''
-ms.date: 03/30/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: ''
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: bf6f372a-bc67-45ea-a771-b2dc5b0527e5
-caps.latest.revision: 21
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f2f0d4c06b15a6bb2fab3eaf44a9bcb17f225a91
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 72559f9d1282f9d95ba2a875023e7a89a1afcfe1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="csdl-annotations-for-business-intelligence-csdlbi"></a>Annotations CSDL pour Business Intelligence (CSDLBI)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -48,7 +38,7 @@ ms.lasthandoff: 04/03/2018
 ### <a name="csdlbi-versions"></a>Versions de CSDLBI  
  La spécification CSDL d'origine (Entity Data Framework) prévoit la plupart des entités et des propriétés exigées pour prendre en charge la modélisation. Les annotations BI prennent en charge les spécifications particulières des modèles tabulaires, les propriétés de création de rapports requises pour les clients, tels que [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)], et les métadonnées supplémentaires requises pour les modèles multidimensionnels. Cette section décrit les mises à jour dans chaque version.  
   
- **CSDLBI 1.0**  
+ **CSDLBI VERSION 1.0**  
   
  Le jeu initial d'ajouts au schéma CSDL pour prendre en charge les modèles tabulaires [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] contenait des annotations afin de prendre en charge la modélisation des données, les calculs personnalisés et la présentation avancée :  
   
@@ -58,7 +48,7 @@ ms.lasthandoff: 04/03/2018
   
 -   Propriétés de visualisation et de navigation. Par exemple, des propriétés ont été ajoutées pour prendre en charge les champs de tri personnalisé, les images par défaut et  
   
- **CSDLBI 1.1**  
+ **1.1 DE CSDLBI**  
   
  Cette version du schéma CSDLBI inclut des ajouts pour la prise en charge des bases de données multidimensionnelles (telles que les cubes OLAP). Les nouveaux éléments et propriétés sont les suivants :  
   

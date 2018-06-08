@@ -1,16 +1,14 @@
 ---
 title: BEGIN DIALOG CONVERSATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DIALOG CONVERSATION
@@ -33,16 +31,15 @@ helpviewer_keywords:
 - encryption [SQL Server], conversations
 - starting conversations
 ms.assetid: 8e814f9d-77c1-4906-b8e4-668a86fc94ba
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 47
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a2ece31010207b6044504f099c11443a2fec0fa2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9fe9b50774df844b108fbd62c1fd1fb184ea86e1
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="begin-dialog-conversation-transact-sql"></a>BEGIN DIALOG CONVERSATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -92,7 +89,7 @@ WHERE database_id = DB_ID() ;
 > [!NOTE]  
 >  Cette option n'est pas disponible dans une base de données à relation contenant-contenu.  
   
- **'**CURRENT DATABASE**'**  
+ **'** CURRENT DATABASE **'**  
  Spécifie que la conversation utilise l’identificateur *service_broker_guid* pour la base de données actuelle.  
   
  ON CONTRACT *contract_name*  

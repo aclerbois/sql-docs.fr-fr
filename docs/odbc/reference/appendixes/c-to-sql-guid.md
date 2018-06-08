@@ -1,31 +1,28 @@
 ---
-title: "C en SQL : GUID | Documents Microsoft"
-ms.custom: 
+title: 'C en SQL : GUID | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data from c to SQL types [ODBC], guid
 - data conversions from C to SQL types [ODBC], guid
 - GUID data type [ODBC]
 ms.assetid: 9168b0b6-a828-4fef-b8cd-bdf439776f23
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9a393aefa101bef2738e15ed12b0f1679e4a6c9c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fc27c02bdd31cf2e18f6bfbb14e48666760a29a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-to-sql-guid"></a>C en SQL : GUID
 L’identificateur pour le type de données ODBC C de GUID est :  

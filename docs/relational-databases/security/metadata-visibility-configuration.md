@@ -1,17 +1,16 @@
 ---
-title: "Configuration de la visibilité des métadonnées | Microsoft Docs"
-ms.custom: 
+title: Configuration de la visibilité des métadonnées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - subcomponents visibility [SQL Server]
 - metadata [SQL Server], visibility
@@ -22,19 +21,20 @@ helpviewer_keywords:
 - database metadata [SQL Server]
 - metadata [SQL Server], permissions
 ms.assetid: 50d2e015-05ae-4014-a1cd-4de7866ad651
-caps.latest.revision: 
+caps.latest.revision: 51
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 10d93d94543bca50d57aee2647e28fadd16064a4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8b0d06ef7357d4986cc9af5902d36939efaadf24
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="metadata-visibility-configuration"></a>Configuration de la visibilité des métadonnées
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] La visibilité des métadonnées est limitée aux éléments sécurisables qu’un utilisateur détient ou pour lesquels des autorisations lui ont été accordées. Par exemple, la requête suivante retourne une ligne si l'utilisateur bénéficie d'une autorisation telle que SELECT ou INSERT sur la table `myTable`.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  La visibilité des métadonnées est limitée aux éléments sécurisables qu'un utilisateur détient ou pour lesquels des autorisations lui ont été accordées. Par exemple, la requête suivante retourne une ligne si l'utilisateur bénéficie d'une autorisation telle que SELECT ou INSERT sur la table `myTable`.  
   
 ```  
 SELECT name, object_id  
@@ -50,7 +50,7 @@ GO
   
 |||  
 |-|-|  
-|vues de catalogue ;|Procédures stockées du [!INCLUDE[ssDE](../../includes/ssde-md.md)] **sp_help**|  
+|Affichages catalogue|Procédures stockées du [!INCLUDE[ssDE](../../includes/ssde-md.md)] **sp_help**|  
 |Métadonnées exposant des fonctions intégrées|Affichages des schémas d'information|  
 |vues de compatibilité ;|Propriétés étendues|  
   
@@ -194,7 +194,7 @@ GO
 |**sys.sql_dependencies**|**sys.type_assembly_usages**|  
 |**sys.parameter_type_usages**|**sys.column_type_usages**|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-transact-sql.md)   
  [DENY &#40;Transact-SQL&#41;](../../t-sql/statements/deny-transact-sql.md)   
  [REVOKE &#40;Transact-SQL&#41;](../../t-sql/statements/revoke-transact-sql.md)   

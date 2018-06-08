@@ -1,40 +1,23 @@
 ---
-title: "Autoriser l’accès aux objets et des opérations (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- sql13.asvs.roledesignerdialog.general.f1
-- sql13.asvs.roledesignerdialog.membership.f1
-helpviewer_keywords:
-- access rights [Analysis Services], users
-- permissions [Analysis Services], users
-- security [Analysis Services], user access
-- user access rights [Analysis Services]
-- granting permissions [Analysis Services], users
-ms.assetid: af28524e-5eca-4dce-a050-da4f406ee1c7
-caps.latest.revision: 
-author: Minewiskan
+title: Autoriser l’accès aux objets et des opérations (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 956638a01fc1280d16bb6fd7a7ddade1978ceb2f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 88290b9598ffdbbcfc90a738654a9485107da464
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="authorizing-access-to-objects-and-operations-analysis-services"></a>Autorisation de l'accès à des objets et des opérations (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'accès utilisateur non-administratif aux cubes, aux dimensions et aux modèles d'exploration de données au sein d'une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est octroyé via l'appartenance à un ou à plusieurs rôles de base de données. [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] les administrateurs créent ces rôles de base de données, octroient des autorisations en lecture ou en lecture/écriture sur des objets [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , puis ajoutent des groupes et des utilisateurs [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows pour chaque rôle.  
+  L'accès utilisateur non-administratif aux cubes, aux dimensions et aux modèles d'exploration de données au sein d'une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est octroyé via l'appartenance à un ou à plusieurs rôles de base de données. [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] les administrateurs créent ces rôles de base de données, octroient des autorisations en lecture ou en lecture/écriture sur des objets [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , puis ajoutent des groupes et des utilisateurs [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows pour chaque rôle.  
   
  [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] détermine les autorisations effectives d'un utilisateur ou d'un groupe Windows en combinant les autorisations associées à chaque rôle de base de données auquel l'utilisateur ou le groupe appartient. Par conséquent, si un rôle de base de données n'autorise pas un utilisateur ou un groupe à afficher une dimension, une mesure ou un attribut et qu'un autre rôle de base de données autorise l'utilisateur ou le groupe, l'utilisateur ou le groupe peut afficher l'objet.  
   

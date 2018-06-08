@@ -1,0 +1,1 @@
+Groupe Basculements automatiques

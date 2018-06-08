@@ -1,16 +1,14 @@
 ---
 title: sp_OAGetProperty (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_OAGetProperty_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_OAGetProperty
 ms.assetid: 240eeeb9-6d8b-4930-b912-1d273ca0ab38
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a0132315386f5c7922ee778d4ec0067190c03fe9
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 31b9620e58029285d020371b261dc78cff55b078
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spoagetproperty-transact-sql"></a>sp_OAGetProperty (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,7 +48,7 @@ sp_OAGetProperty objecttoken , propertyname
  *objecttoken*  
  Jeton d’objet d’un objet OLE précédemment créé à l’aide de **sp_OACreate**.  
   
- *PropertyName*  
+ *propertyname*  
  Nom de la propriété de l'objet OLE à renvoyer.  
   
  *PropertyValue* **sortie**  
@@ -101,7 +98,7 @@ sp_OAGetProperty objecttoken , propertyname
 ## <a name="remarks"></a>Notes  
  Vous pouvez également utiliser **sp_OAMethod** pour obtenir une valeur de propriété.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle serveur fixe **sysadmin** .  
   
 ## <a name="examples"></a>Exemples  
@@ -133,7 +130,7 @@ END;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Stockées OLE Automation procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/ole-automation-stored-procedures-transact-sql.md)   
+ [Procédures stockées OLE Automation &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/ole-automation-stored-procedures-transact-sql.md)   
  [Exemple de script OLE Automation](../../relational-databases/stored-procedures/ole-automation-sample-script.md)  
   
   

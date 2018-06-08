@@ -1,28 +1,26 @@
 ---
 title: Commande de RETRAITER SET | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SET REPROCESS command [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SET REPROCESS command [ODBC]
 ms.assetid: b0708757-b1d7-42f3-8988-787f2a806b8b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ba3689fb9d70418d546d9583a537b2112a65a71b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f7dbfee063d403605fe2a72efada88ecf0d84e34
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-reprocess-command"></a>Commande de RETRAITER SET
 Spécifie le long combien de fois ou sur la façon de verrouiller un fichier ou un enregistrement après une tentative infructueuse de verrouillage.  
@@ -57,5 +55,5 @@ SET REPROCESS TO nAttempts [SECONDS] | TO AUTOMATIC
  EN MODE AUTOMATIQUE  
  Spécifie que Visual FoxPro tente de verrouiller l’enregistrement ou de fichiers indéfiniment. (Retraitement SET-2 est une commande équivalente).  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La première tentative de verrouillage d’un enregistrement ou un fichier n’est pas toujours réussie. Souvent, un enregistrement ou un fichier est verrouillé par un autre utilisateur sur le réseau. DÉFINIR le RETRAITER détermine si Visual FoxPro effectue des tentatives supplémentaires pour l’enregistrement ou le fichier de verrouillage lors de la tentative initiale a échoué. Vous pouvez spécifier la fréquence des tentatives supplémentaires sont effectuées ou pour la durée pendant laquelle les tentatives sont effectuées. Une routine ON ERROR affecte verrou comment échoue tentatives sont gérées.

@@ -1,30 +1,27 @@
 ---
-title: "Vue d’ensemble ODBC | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC [ODBC]
 - ODBC [ODBC], about ODBC
 ms.assetid: 233315bd-2b7f-4b20-9978-e920e1ea9a07
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9c69180bcf3babcfaaef5d513d6c47954478ef39
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 39ab7586ebc1cd63d028caab0d3c2f09b82c7172
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-overview"></a>Vue d’ensemble d’ODBC
 Connectivité de base de données ouverte (ODBC) est une interface de programmation largement répandue d’application (API) pour l’accès de la base de données. Il est basé sur les spécifications de l’Interface de niveau d’appel (CLI) d’Open Group et de la norme ISO/IEC pour l’API de la base de données et utilise le langage SQL (Structured Query) en tant que son langage d’accès de base de données.  

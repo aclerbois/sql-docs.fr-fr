@@ -1,15 +1,14 @@
 ---
-title: "Changements de comportement apportés à SQL Server Reporting Services dans SQL Server 2016 | Microsoft Docs"
+title: Changements de comportement apportés à SQL Server Reporting Services dans SQL Server 2016 | Microsoft Docs
 ms.date: 07/02/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - Reporting Services, backward compatibility
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - initializing installations [Reporting Services]
 - behavior changes [Reporting Services]
 ms.assetid: 2a767f0f-84f2-4099-8784-1e37790f858e
-caps.latest.revision: "69"
+caps.latest.revision: 69
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3b9205b6047e05741eae52d33951c20480c07eb3
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 01ea6c0eea113f3c80796a6f54a7aa88bbfbe10f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="behavior-changes-to-sql-server-reporting-services-in-sql-server-2016"></a>Changements de comportement apportés à SQL Server Reporting Services dans SQL Server 2016
 

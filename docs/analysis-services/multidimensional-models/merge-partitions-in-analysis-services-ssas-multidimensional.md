@@ -1,34 +1,23 @@
 ---
 title: Fusionner des Partitions dans Analysis Services (SSAS - multidimensionnel) | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- partitions [Analysis Services], merging
-- merging partitions [Analysis Services]
-ms.assetid: b3857b9b-de43-4911-989d-d14da0196f89
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 519136d681c257d27f93894db6a7c2652d273f87
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b488997ae97a54a2755847ad9112047015fb0eb5
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="merge-partitions-in-analysis-services-ssas---multidimensional"></a>Fusionner des partitions dans Analysis Services (SSAS - Multidimensionnel)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous pouvez fusionner des partitions dans une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] existante pour consolider les données de faits de plusieurs partitions du même groupe de mesures.  
+  Vous pouvez fusionner des partitions dans une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] existante pour consolider les données de faits de plusieurs partitions du même groupe de mesures.  
   
  [Scénarios courants](#bkmk_Scenario)  
   
@@ -140,9 +129,9 @@ Vous pouvez fusionner des partitions dans une base de données [!INCLUDE[ssASnov
   
 ## <a name="see-also"></a>Voir aussi  
  [Pour des objets de traitement Analysis Services](../../analysis-services/multidimensional-models/processing-analysis-services-objects.md)   
- [Partitions &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)   
- [Créer et gérer une Partition locale &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/create-and-manage-a-local-partition-analysis-services.md)   
- [Créer et gérer une Partition distante &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/create-and-manage-a-remote-partition-analysis-services.md)   
+ [Partitions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)   
+ [Créer et gérer une Partition locale & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/create-and-manage-a-local-partition-analysis-services.md)   
+ [Créer et gérer une Partition distante & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/create-and-manage-a-remote-partition-analysis-services.md)   
  [Définir l’écriture différée de Partition](../../analysis-services/multidimensional-models/set-partition-writeback.md)   
  [Partitions activées en écriture](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-write-enabled-partitions.md)   
  [Configurer le stockage des chaînes pour les Dimensions et Partitions](../../analysis-services/multidimensional-models/configure-string-storage-for-dimensions-and-partitions.md)  

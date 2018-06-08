@@ -1,27 +1,24 @@
 ---
-title: "Utilisation d’une connexion | Documents Microsoft"
-ms.custom: 
+title: Utilisation d’une connexion | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: cf8ee392-8a10-40a3-ae32-31c7b1efdd04
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 0c1f696dda8f0d784b412446f3c8fa8d9dc45859
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: bbcd46cd9da1ab189aeafe77c7275aa103ea51f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-a-connection"></a>Utilisation d'une connexion
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

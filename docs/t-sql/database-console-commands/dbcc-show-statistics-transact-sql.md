@@ -1,16 +1,13 @@
 ---
 title: DBCC SHOW_STATISTICS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SHOW_STATISTICS_TSQL
@@ -35,16 +32,16 @@ helpviewer_keywords:
 - densities [SQL Server]
 - displaying distribution statistics
 ms.assetid: 12be2923-7289-4150-b497-f17e76a50b2e
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 75
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 66f00526254a3592c3bb980ecf22c390b88cb687
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3ef8ab735511e5885fde7c3e5a218a75bc6f41fb
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-showstatistics-transact-sql"></a>DBCC SHOW_STATISTICS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -134,7 +131,7 @@ Le tableau suivant décrit les colonnes retournées dans le jeu de résultats lo
   
 ## <a name="Remarks"></a> Notes 
 
-La date de mise à jour des statistiques est stockée dans [l’objet blob des statistiques](../../relational-databases/statistics/statistics.md#DefinitionQOStatistics) avec [l’histogramme](#histogram) et le [vecteur de densité](#density), et non dans les métadonnées. Quand aucune donnée n’est lue pour générer des données de statistiques, l’objet blob des statistiques n’est pas créé, la date n’est pas disponible et la colonne *mise à jour* a la valeur Null. C’est le cas pour les statistiques filtrées pour lesquelles le prédicat ne retourne aucune ligne, ou pour les nouvelles tables vides.
+La date de mise à jour des statistiques est stockée dans l’[objet blob de statistiques](../../relational-databases/statistics/statistics.md#DefinitionQOStatistics) avec l’[histogramme](#histogram) et le [vecteur de densité](#density), et non dans les métadonnées. Quand aucune donnée n’est lue pour générer des données de statistiques, l’objet blob des statistiques n’est pas créé, la date n’est pas disponible et la colonne *mise à jour* a la valeur Null. C’est le cas pour les statistiques filtrées pour lesquelles le prédicat ne renvoie aucune ligne, ou pour les nouvelles tables vides.
   
 ## <a name="histogram"></a> Histogramme  
 Un histogramme mesure la fréquence des occurrences de chaque valeur distincte dans un jeu de données. L'optimiseur de requête calcule un histogramme sur les valeurs de colonnes de la première colonne clé de l'objet de statistiques, en sélectionnant les valeurs de colonnes au moyen d'un échantillonnage statistique des lignes ou d'une analyse complète de toutes les lignes dans la table ou la vue. Si l'histogramme est créé à partir d'un jeu de lignes échantillonnées, les totaux stockés pour le nombre de lignes et le nombre de valeurs distinctes sont des estimations et ne doivent pas nécessairement être des nombres entiers.

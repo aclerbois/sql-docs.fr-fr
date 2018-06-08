@@ -1,17 +1,14 @@
 ---
-title: "Utiliser les transactions marquées pour récupérer des bases de données associées uniformément | Microsoft Docs"
-ms.custom: 
+title: Utiliser les transactions marquées pour récupérer des bases de données associées uniformément | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transaction marks [SQL Server]
 - marked transactions [SQL Server]
@@ -23,16 +20,15 @@ helpviewer_keywords:
 - BEGIN TRAN...WITH MARK statement
 - two-phase commit
 ms.assetid: 50a73574-1a69-448e-83dd-9abcc7cb7e1a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c294b6643456930d2198a3fc80734facf95430c2
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cccec56e7d84618fab4127d11f7360d4cc2bd022
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-marked-transactions-to-recover-related-databases-consistently"></a>Utiliser les transactions marquées pour récupérer des bases de données associées uniformément
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,33 +1,33 @@
 ---
 title: Membres MSReportServer_ConfigurationSetting | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: MSReportServer_ConfigurationSetting Members
-apilocation: reportingservices.mof
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- MSReportServer_ConfigurationSetting Members
+apilocation:
+- reportingservices.mof
 apitype: MOFDef
 helpviewer_keywords:
 - WMI provider [Reporting Services], MSReportServer_ConfigurationSetting class
 - MSReportServer_ConfigurationSetting class
 ms.assetid: 5e21a53a-a2f8-4b35-a8d9-5483519e3857
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8c3ea3dfb366325d64469b1cda9f6b25b6460b5d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 264c9e8a705cac950a3b8fa2cbd2a5ba735f1b94
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msreportserverconfigurationsetting-members"></a>Membres MSReportServer_ConfigurationSetting
   La classe MSReportServer_ConfigurationSetting contient les propriétés et méthodes suivantes.  

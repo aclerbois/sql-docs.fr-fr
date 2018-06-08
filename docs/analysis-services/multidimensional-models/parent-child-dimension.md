@@ -1,41 +1,23 @@
 ---
 title: Dimensions parent-enfant | Documents Microsoft
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- hierarchies [Analysis Services], parent-child
-- dimensions [Analysis Services], parent-child
-- parent attributes [Analysis Services]
-- data members [Analysis Services]
-- hierarchies [Analysis Services], multilevel
-- self-joins
-- self-referencing relationships
-- members [Analysis Services], data
-- parent-child dimensions [Analysis Services]
-ms.assetid: 4657f5dc-d88e-48d2-a448-08f79bc89546
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 2c9416e3035d42db5e2087d14358344671288bb6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a9f9cda883822d093db624a4580a94093120ba41
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="parent-child-dimension"></a>Dimension parent-enfant
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une hiérarchie parent-enfant est une hiérarchie dans une dimension standard qui contient un attribut parent. Un attribut parent décrit une *relation d’auto-référencement*, ou *jointure réflexive*, dans une table de dimension principale. Les hiérarchies parent-enfant sont construites à partir d'un seul attribut parent. Un seul niveau est affecté à une hiérarchie parent-enfant parce que les niveaux présents dans la hiérarchie sont constitués à partir des relations parent-enfant entre les membres associés à l'attribut parent. La position d’un membre au sein d’une hiérarchie parent-enfant est déterminée par les propriétés **KeyColumns** et **RootMemberIf** de l’attribut parent, tandis que la position d’un membre au sein d’un niveau est déterminée par la propriété **OrderBy** de l’attribut parent. Pour plus d’informations sur les propriétés d’attributs, consultez [Attributs et hiérarchies d’attributs](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/attributes-and-attribute-hierarchies.md).  
+  Une hiérarchie parent-enfant est une hiérarchie dans une dimension standard qui contient un attribut parent. Un attribut parent décrit une *relation d’auto-référencement*, ou *jointure réflexive*, dans une table de dimension principale. Les hiérarchies parent-enfant sont construites à partir d'un seul attribut parent. Un seul niveau est affecté à une hiérarchie parent-enfant parce que les niveaux présents dans la hiérarchie sont constitués à partir des relations parent-enfant entre les membres associés à l'attribut parent. La position d’un membre au sein d’une hiérarchie parent-enfant est déterminée par les propriétés **KeyColumns** et **RootMemberIf** de l’attribut parent, tandis que la position d’un membre au sein d’un niveau est déterminée par la propriété **OrderBy** de l’attribut parent. Pour plus d’informations sur les propriétés d’attributs, consultez [Attributs et hiérarchies d’attributs](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/attributes-and-attribute-hierarchies.md).  
   
  À cause des relations parent-enfant existant entre les niveaux d'une hiérarchie parent-enfant, certains membres non-feuilles peuvent également avoir des données dérivées des sources de données sous-jacentes en plus des données agrégées des membres enfants.  
   

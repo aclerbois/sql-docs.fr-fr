@@ -1,33 +1,23 @@
 ---
-title: "Types de données dans Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 910be4f4-3010-41cd-9fdc-f0a79a0ce823
-caps.latest.revision: 
-author: Minewiskan
+title: Types de données dans Analysis Services | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7fcf359a6f760ffffa4e1a0682e4c4b45f4fe272
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3b7ac934afdc086a50020e9ba22ca2d236ee091b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-types-in-analysis-services"></a>Types de données dans Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Pour toutes les <xref:Microsoft.AnalysisServices.DataItem> objets, [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prend en charge le sous-ensemble de **System.Data.OleDb.OleDbType**. Pour définir ou lire le type de données, utilisez [Type de données DataItem &#40; ASSL &#41; ](../../../analysis-services/scripting/data-type/dataitem-data-type-assl.md).  
+  Pour toutes les <xref:Microsoft.AnalysisServices.DataItem> objets, [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prend en charge le sous-ensemble de **System.Data.OleDb.OleDbType**. Pour définir ou lire le type de données, utilisez [Type de données DataItem &#40;ASSL&#41;](../../../analysis-services/scripting/data-type/dataitem-data-type-assl.md).  
   
 ## <a name="supported-data-types"></a>Types de données pris en charge  
   

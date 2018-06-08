@@ -1,16 +1,14 @@
 ---
 title: HAS_PERMS_BY_NAME (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - HAS_PERMS_BY_NAME
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - testing permissions
 - HAS_PERMS_BY_NAME function
 ms.assetid: eaf8cc82-1047-4144-9e77-0e1095df6143
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b796f4f9ca3631f329b0261a39953e58964b58bb
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 03cbf8e7d51671a1534b4947ef69d97df7205c98
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="haspermsbyname-transact-sql"></a>HAS_PERMS_BY_NAME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -67,7 +64,7 @@ HAS_PERMS_BY_NAME ( securable , securable_class , permission
  Expression scalaire facultative de type **sysname** qui représente le nom de la sous-entité sécurisable sur laquelle l’autorisation est testée. La valeur par défaut est NULL.  
   
 > [!NOTE]  
->  Dans les versions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les éléments sécurisables sub ne peuvent pas utiliser des crochets sous la forme **'[***sub name***]'**. Utilisez **'***sub name***'** à la place.  
+>  Dans les versions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les éléments sub-securable ne peuvent pas utiliser de crochets sous la forme **'[***nom sub***]'**. Utilisez **'***nom sub***'** à la place.  
   
  *sub-securable_class*  
  Expression scalaire facultative de type **nvarchar(60)** qui représente la classe de la sous-entité sécurisable sur laquelle l’autorisation est testée. La valeur par défaut est NULL.  
@@ -112,7 +109,7 @@ SELECT class_desc FROM sys.fn_builtin_permissions(default);
   
 ### <a name="a-do-i-have-the-server-level-view-server-state-permission"></a>A. Ai-je l'autorisation VIEW SERVER STATE au niveau serveur ?  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 SELECT HAS_PERMS_BY_NAME(null, null, 'VIEW SERVER STATE');  
@@ -120,7 +117,7 @@ SELECT HAS_PERMS_BY_NAME(null, null, 'VIEW SERVER STATE');
   
 ### <a name="b-am-i-able-to-impersonate-server-principal-ps"></a>B. Puis-je emprunter l'identité du principal du serveur Ps ?  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 SELECT HAS_PERMS_BY_NAME('Ps', 'LOGIN', 'IMPERSONATE');  
@@ -191,6 +188,6 @@ SELECT name AS column_name,
  [Securables](../../relational-databases/security/securables.md)   
  [Hiérarchie des autorisations &#40;Moteur de base de données&#41;](../../relational-databases/security/permissions-hierarchy-database-engine.md)   
  [sys.fn_builtin_permissions &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-builtin-permissions-transact-sql.md)   
- [Vues de catalogue de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)  
+ [Affichages catalogue de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/security-catalog-views-transact-sql.md)  
   
   

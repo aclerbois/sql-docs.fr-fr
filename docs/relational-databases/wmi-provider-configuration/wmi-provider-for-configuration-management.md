@@ -1,15 +1,14 @@
 ---
 title: Fournisseur WMI pour les Concepts de gestion de Configuration | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - WMI Provider for Configuration Management
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - configuration management [WMI]
 - WMI Provider for Configuration Management, about WMI Provider for Configuration Management
 ms.assetid: 7e41db24-b915-4eb8-a1d6-e6948ee915b7
-caps.latest.revision: 
+caps.latest.revision: 24
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 398024a3d6329f60cce5d6cb64b7e7a26ae2de2b
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 5336850afaa1ac5073d0efbd81b4746b2acd5043
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wmi-provider-for-configuration-management"></a>fournisseur WMI pour Gestion de l'ordinateur
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

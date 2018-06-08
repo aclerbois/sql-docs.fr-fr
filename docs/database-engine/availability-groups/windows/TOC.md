@@ -44,6 +44,7 @@
 #### [Abonnés](replication-subscribers-and-always-on-availability-groups-sql-server.md)  
 ### [Reporting Services](reporting-services-with-always-on-availability-groups-sql-server.md)  
 ### [Service Broker](service-broker-with-always-on-availability-groups-sql-server.md)  
+## [Délais d’expiration du bail, du cluster et de la vérification d’intégrité](availability-group-lease-healthcheck-timeout.md)
 ## [Écouteurs, clients et basculement](listeners-client-connectivity-application-failover.md)  
 ## [Connexions et travaux](logins-and-jobs-for-availability-group-databases.md)  
 ## [Défaillances possibles pendant les sessions entre les réplicas](possible-failures-during-sessions-between-availability-replicas-sql-server.md)  
@@ -102,8 +103,7 @@
 ### [Mise à niveau d’instances de réplica](upgrading-always-on-availability-group-replica-instances.md)  
 ### [Afficher l’intégrité avec les stratégies](use-always-on-policies-to-view-the-health-of-an-availability-group-sql-server.md)  
 
-
-# Références
+# References
 ## [Applets de commande Powershell](overview-of-powershell-cmdlets-for-always-on-availability-groups-sql-server.md)  
 ## [Transact-SQL](transact-sql-statements-for-always-on-availability-groups.md)  
 
@@ -143,3 +143,17 @@
 ### [Certains réplicas de disponibilité n’ont pas un rôle sain](some-availability-replicas-do-not-have-a-healthy-role.md)  
 ### [Certains réplicas synchrones ne sont pas synchronisés](some-synchronous-replicas-are-not-synchronized.md)  
 ### [Le service de cluster WSFC est hors connexion](wsfc-cluster-service-is-offline.md)  
+## [Guide de dépannage et de monitoring](always-on-availability-groups-troubleshooting-and-monitoring-guide.md)
+### [Surveiller les performances pour les groupes de disponibilité](monitor-performance-for-always-on-availability-groups.md)
+### [Dépanner : dépassement de RPO du groupe de disponibilité](troubleshoot-availability-group-exceeded-rpo.md)
+### [Dépanner : dépassement de RTO du groupe de disponibilité](troubleshoot-availability-group-exceeded-rto.md)
+### [Dépanner : les changements sur le réplica principal ne sont pas reflétés sur le réplica secondaire](troubleshoot-primary-changes-not-reflected-on-secondary.md)
+### [Outils utiles pour le dépannage](useful-tools-for-troubleshooting.md)
+#### [Événements étendus](always-on-extended-events.md)
+#### [Journal de diagnostic d’intégrité](always-on-health-diagnostics-log.md)
+#### [Stratégies](always-on-policies.md)
+#### [Mémoires tampons en anneau](always-on-ring-buffers.md)
+#### [Types d’attente](always-on-wait-types.md)
+#### [CLUSTER.LOG](cluster-log-always-on-availability-groups.md)
+#### [Vues de gestion dynamique et de catalogue système](dynamic-management-views-and-system-catalog-views-always-on-availability-groups.md)
+#### [Journal des erreurs de SQL Server](sql-server-error-log-always-on-availability-groups.md)

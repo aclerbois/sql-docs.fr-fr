@@ -1,37 +1,34 @@
 ---
 title: Glossaire ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC [ODBC], glossary
 - glossary [ODBC]
 ms.assetid: e8227000-1944-42e5-a881-1f549e1ff9d1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4bb77308b74a57fa192acf9aba3fa7d88090d93a
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+manager: craigg
+ms.openlocfilehash: 0bd26d6d8d95399bfe1126f56f6f9b8c2d176e71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-glossary"></a>Glossaire ODBC
 ## <a name="a"></a>Un  
  **plan d’accès**  
  Un plan généré par le moteur de base de données pour exécuter une instruction SQL. Équivalent au code exécutable compilé à partir d’un langage de troisième génération tel que C.  
   
- **fonction d’agrégation**  
+ **Fonction d’agrégation**  
  Une fonction qui génère une valeur unique à partir d’un groupe de valeurs, souvent utilisé avec **GROUP BY** et **HAVING** clauses. Incluront des fonctions d’agrégation **AVG**, **nombre**, **MAX**, **MIN**, et **somme**. Également appelé *fonctions de jeu*. *Voir aussi* fonction scalaire.  
   
  **ANSI**  
@@ -43,13 +40,13 @@ ms.lasthandoff: 11/20/2017
  **API**  
  Interface de programmation d’application. Un ensemble de routines qu’une application utilise pour demander et exécuter des services de niveau inférieur. L’API ODBC est composé des fonctions ODBC.  
   
- **application**  
+ **Application**  
  Un programme exécutable qui appelle les fonctions de l’API ODBC.  
   
- **descripteur de paramètre d’application (APD)**  
+ **Descripteur de paramètre d’application (APD)**  
  Un descripteur qui décrit les paramètres dynamiques dans une instruction SQL avant toute conversion spécifiée par l’application.  
   
- **descripteur de ligne d’application (ARD)**  
+ **Descripteur de ligne d’application (ARD)**  
  Un descripteur qui représente les métadonnées de colonne et les données des mémoires tampon de l’application, qui décrit une ligne de données à la suite d’une conversion de données spécifiée par l’application.  
   
  **ARD**  
@@ -60,12 +57,12 @@ ms.lasthandoff: 11/20/2017
   
 ## <a name="b"></a>B  
  **changement de comportement**  
- Une modification de certaines fonctionnalités à partir d’ODBC 3*.x* comportement ODBC 2. *x* comportement, ou vice versa. Dû en modifiant l’attribut d’environnement SQL_ATTR_ODBC_VERSION.  
+ Une modification de certaines fonctionnalités à partir d’ODBC 3 *.x* comportement ODBC 2. *x* comportement, ou vice versa. Dû en modifiant l’attribut d’environnement SQL_ATTR_ODBC_VERSION.  
   
  **Objet binaire volumineux (BLOB)**  
  Toutes les données binaires pour un certain nombre d’octets, telles que 255. En général beaucoup plus longue. Ce type de données est généralement envoyé à et récupérée à partir de la source de données dans les parties. Également appelé *données long*.  
   
- **liaison**  
+ **Liaison**  
  Comme un verbe, le fait d’association d’une colonne dans un jeu de résultats ou un paramètre dans une instruction SQL à une variable d’application. Comme un nom, l’association.  
   
  **décalage de la liaison**  
@@ -74,17 +71,17 @@ ms.lasthandoff: 11/20/2017
  **curseur de bloc**  
  Un curseur capable d’extraire plusieurs lignes de données à la fois.  
   
- **mémoire tampon**  
+ **Mémoire tampon**  
  Une partie de la mémoire de l’application utilisée pour passer des données entre l’application et le pilote. Mémoires tampons sont souvent fournis par paires : un *tampon de données* et un *tampon de longueur de données*.  
   
- **octets**  
+ **byte**  
  Huit bits ou un octet. *Voir aussi* octet.  
   
 ## <a name="c"></a>C  
  **Type de données C**  
  Le type de données d’une variable dans un programme C, dans ce cas, l’application.  
   
- **catalogue**  
+ **catalog**  
  Ensemble de tables système dans une base de données qui décrivent la forme de la base de données. Également appelé un *schéma* ou *dictionnaire de données*.  
   
  **fonction de catalogue**  
@@ -96,16 +93,16 @@ ms.lasthandoff: 11/20/2017
  **client/serveur**  
  Une stratégie d’accès de base de données dans laquelle un ou plusieurs clients accéder aux données via un serveur. Les clients implémentent généralement l’interface utilisateur, tandis que les contrôles de serveur de base de données access.  
   
- **colonne**  
+ **column**  
  Conteneur pour un élément d’information dans une ligne unique. Également appelé *champ*.  
   
- **validation**  
+ **Validation**  
  Pour conserver les modifications dans une transaction.  
   
  **accès concurrentiel**  
  La capacité de plusieurs transactions à accéder aux mêmes données en même temps.  
   
- **niveau de conformité**  
+ **Niveau de conformité**  
  Un ensemble discret de fonctionnalités prises en charge par une source de données ou de pilote. ODBC définit des niveaux de conformité d’API et les niveaux de conformité SQL.  
   
  **connexion**  
@@ -117,7 +114,7 @@ ms.lasthandoff: 11/20/2017
  **handle de connexion**  
  Handle vers une structure de données qui contient des informations sur une connexion.  
   
- **ligne actuelle**  
+ **Ligne actuelle**  
  La ligne actuellement pointé par le curseur. Opérations positionnées agissent sur la ligne actuelle.  
   
  **cursor**  
@@ -133,10 +130,10 @@ ms.lasthandoff: 11/20/2017
  **mémoire tampon de longueur de données**  
  Une mémoire tampon utilisée pour transmettre la longueur de la valeur correspondante *tampon de données*. Le tampon de longueur de données est également utilisé pour stocker des indicateurs, tels que si la valeur de données est terminée.  
   
- **source de données**  
+ **Source de données**  
  Les données que l’utilisateur souhaite accéder et son système d’exploitation associé, SGBD et de plateforme de réseau (le cas échéant).  
   
- **type de données**  
+ **Type de données**  
  Le type d’un élément de données. ODBC définit des types de données C et SQL. *Voir aussi* indicateur de type.  
   
  **colonne de données d’exécution**  
@@ -148,7 +145,7 @@ ms.lasthandoff: 11/20/2017
  **database**  
  Collection de données dans un SGBD discrète. Également un SGBD.  
   
- **moteur de base de données**  
+ **Moteur de base de données**  
  Le logiciel dans un SGBD qui analyse et exécute des instructions SQL et accède aux données physiques.  
   
  **SGBD**  
@@ -169,13 +166,13 @@ ms.lasthandoff: 11/20/2017
  **base de données de bureau**  
  Un SGBD est conçu pour s’exécuter sur un ordinateur personnel. En général, ces SGBD ne fournit pas d’un moteur de base de données autonome et doit être accessible via un pilote de fichier. Les moteurs de ces pilotes ont généralement réduite de prise en charge pour SQL et les transactions. Par exemple, dBASE, Paradox, Btrieve ou Microsoft® FoxPro.  
   
- **diagnostic**  
+ **Diagnostic**  
  Un enregistrement contenant les informations de diagnostic sur la dernière fonction appelée et utilisé un handle donné. Les enregistrements de diagnostic sont associés de l’environnement, connexion, l’instruction et les handles de descripteur.  
   
  **DML**  
  Langage de Manipulation de données. Instructions SQL qui manipulent, par opposition à définir, des données. Par exemple, **insérer**, **mise à jour**, **supprimer**, et **sélectionnez**.  
   
- **pilote**  
+ **Pilote**  
  Une bibliothèque de routine qui expose les fonctions de l’API ODBC. Les pilotes sont spécifiques à un système SGBD unique.  
   
  **Gestionnaire de pilotes**  
@@ -187,14 +184,14 @@ ms.lasthandoff: 11/20/2017
  **curseur dynamique**  
  Un curseur de défilement capable de détecter les lignes mises à jour, supprimées ou insérées dans le jeu de résultats.  
   
- **instructions SQL dynamiques**  
+ **Instructions SQL dynamiques**  
  Type d’embedded SQL dans SQL instructions sont créées et compilées au moment de l’exécution. *Voir aussi* SQL statique.  
   
 ## <a name="e"></a>E  
  **Embedded SQL**  
  Les instructions SQL qui sont incluses directement dans un programme écrit dans un autre langage, tels que COBOL ou C. ODBC n’utilise pas embedded SQL. *Voir aussi* SQL statique *et* SQL dynamique.  
   
- **environnement**  
+ **Environnement**  
  Un contexte global de l’accès aux données ; associé à l’environnement est toute information globale par nature, telle qu’une liste de toutes les connexions dans cet environnement.  
   
  **handle d’environnement**  
@@ -203,7 +200,7 @@ ms.lasthandoff: 11/20/2017
  **clause d’échappement**  
  Une clause dans une instruction SQL.  
   
- **exécuter**  
+ **execute**  
  Pour exécuter une instruction SQL.  
   
 ## <a name="f"></a>F  
@@ -213,7 +210,7 @@ ms.lasthandoff: 11/20/2017
  **extraction**  
  Pour récupérer une ou plusieurs lignes à partir d’un jeu de résultats.  
   
- **champ**  
+ **field**  
  *Consultez* colonne.  
   
  **fichiers de pilote**  
@@ -225,21 +222,21 @@ ms.lasthandoff: 11/20/2017
  **clé étrangère**  
  Une ou plusieurs colonnes dans une table qui correspondent à la clé primaire dans une autre table.  
   
- **curseur avant uniquement**  
+ **Curseur avant uniquement**  
  Un curseur qui peut uniquement mettre en œuvre via le jeu de résultats et généralement n'extrait qu’une seule ligne à la fois. La plupart des bases de données relationnelles prennent en charge uniquement les curseurs avant uniquement.  
   
 ## <a name="h"></a>H  
- **handle**  
+ **Handle**  
  Une valeur qui identifie de façon unique un élément comme une structure de fichiers ou de données. Poignées sont uniquement explicites pour le logiciel qui crée et utilise les mais qui est passé par d’autres logiciels pour identifier les éléments. ODBC définit des handles pour les environnements, les connexions, les instructions et les descripteurs.  
   
 ## <a name="i"></a>I  
- **descripteur de paramètre d’implémentation (IPD)**  
+ **Descripteur de paramètre d’implémentation (IPD)**  
  Un descripteur qui décrit les paramètres dynamiques dans une instruction SQL après une conversion définie par l’application.  
   
- **descripteur de ligne d’implémentation (IRD)**  
+ **Descripteur de ligne d’implémentation (IRD)**  
  Un descripteur qui décrit une ligne de données avant toute conversion spécifiée par l’application.  
   
- **programme d’installation DLL**  
+ **Programme d’installation DLL**  
  Une DLL qui installe des composants ODBC et configure les sources de données.  
   
  **Integrity Enhancement Facility**  
@@ -248,7 +245,7 @@ ms.lasthandoff: 11/20/2017
  **niveau de conformité d’interface**  
  Le niveau de l’interface ODBC 3.7 pris en charge par un pilote. peut être Core, de niveau 1 ou de niveau 2.  
   
- **interopérabilité**  
+ **Interopérabilité**  
  Capacité d’une application à utiliser le même code lors de l’accès aux données dans le SGBD différents.  
   
  **IPD**  
@@ -261,24 +258,24 @@ ms.lasthandoff: 11/20/2017
  Commission électrotechnique d’organisation/International normes internationales. L’API ODBC est basée sur l’Interface au niveau de l’appel de norme ISO/IEC.  
   
 ## <a name="j"></a>J  
- **jointure**  
+ **Joindre**  
  Une opération dans une base de données relationnelle qui lie les lignes de deux ou plusieurs tables en faisant correspondre les valeurs dans les colonnes spécifiées.  
   
 ## <a name="k"></a>K  
  **clé**  
  Une ou plusieurs colonnes dont les valeurs identifient une ligne. *Voir aussi* clé étrangère *et* clé primaire.  
   
- **jeu de clés**  
+ **Jeu de clés**  
  Un jeu de clés utilisé par un curseur mixte ou pilotés par pour extraire des lignes.  
   
  **curseur keyset**  
  Un curseur de défilement qui détecte les lignes mises à jour et supprimées à l’aide d’un jeu de clés.  
   
 ## <a name="l"></a>L  
- **littéral**  
+ **literal**  
  Représentation sous forme de caractères de la valeur réelle des données dans une instruction SQL.  
   
- **verrouillage**  
+ **Verrouillage**  
  Le processus par lequel un SGBD limite l’accès à une ligne dans un environnement multi-utilisateur. Le SGBD définit généralement un bit sur une ligne ou de la page physique qui contient une ligne qui indique la ligne ou page est verrouillée.  
   
  **données de type long**  
@@ -291,7 +288,7 @@ ms.lasthandoff: 11/20/2017
  **mode de validation manuelle**  
  Un mode de validation de transaction dans laquelle les transactions doivent être explicitement validées en appelant **SQLTransact**.  
   
- **métadonnées**  
+ **Métadonnées**  
  Données qui décrivent un paramètre dans une instruction SQL ou une colonne dans un jeu de résultats. Par exemple, le type de données, longueur d’octet et la précision d’un paramètre.  
   
  **pilotes à plusieurs niveaux**  
@@ -317,7 +314,7 @@ ms.lasthandoff: 11/20/2017
  Ouvrir le groupe  
  Une société qui publie des normes. En particulier, il publie des normes de groupe d’accès SQL (trous).  
   
- **accès concurrentiel optimiste**  
+ **Accès concurrentiel optimiste**  
  Une stratégie pour accroître la simultanéité dans laquelle les lignes ne sont pas verrouillées. Au lieu de cela, avant d’être mis à jour ou supprimés, un curseur vérifie si elles ont été modifiés depuis leur dernière lecture. Dans ce cas, la mise à jour ou la suppression échoue. *Voir aussi* d’accès concurrentiel pessimiste.  
   
  **jointure externe**  
@@ -327,7 +324,7 @@ ms.lasthandoff: 11/20/2017
  Le propriétaire d’une table.  
   
 ## <a name="p"></a>P  
- **paramètre**  
+ **parameter**  
  Une variable dans une instruction SQL, marqués avec un marqueur de paramètre ou d’un point d’interrogation ( ?). Paramètres liés aux variables d’application et leurs valeurs récupérées lors de l’instruction est exécutée.  
   
  **descripteur de paramètre**  
@@ -351,23 +348,23 @@ ms.lasthandoff: 11/20/2017
  **instruction positionnée delete**  
  Une instruction SQL utilisée pour supprimer la ligne actuelle.  
   
- **préparer**  
+ **Préparer**  
  Pour compiler une instruction SQL. Un plan d’accès est créé par la préparation d’une instruction SQL.  
   
- **clé primaire**  
+ **Clé primaire**  
  Une ou plusieurs colonnes qui identifie de façon unique une ligne dans une table.  
   
- **procédure**  
+ **procedure**  
  Un groupe d’un ou plusieurs précompilé d’instructions SQL qui sont stockées sous la forme d’un objet nommé dans une base de données.  
   
  **colonne de procédure**  
  Un argument dans un appel de procédure, la valeur retournée par une procédure ou une colonne dans un jeu de résultats créé par une procédure.  
   
 ## <a name="q"></a>Q  
- **qualificateur**  
+ **Qualificateur**  
  Une base de données qui contient une ou plusieurs tables.  
   
- **requête**  
+ **Requête**  
  Une instruction SQL. Parfois utilisé pour signifier un **sélectionnez** instruction.  
   
  **identificateur entre guillemets**  
@@ -377,19 +374,19 @@ ms.lasthandoff: 11/20/2017
  **radical**  
  La base d’un système de nombre. Généralement de 2 ou 10.  
   
- **enregistrement**  
+ **Enregistrement**  
  *Consultez* ligne.  
   
  **jeu de résultats**  
  L’ensemble de lignes créé en exécutant un **sélectionnez** instruction.  
   
- **code de retour**  
+ **Code de retour**  
  La valeur retournée par une fonction ODBC.  
   
  **restaurer**  
  Pour retourner les valeurs modifiées par une transaction à leur état d’origine.  
   
- **ligne**  
+ **Ligne**  
  Un ensemble de colonnes associées qui décrivent une entité spécifique. Également appelé un *enregistrement*.  
   
  **descripteur de ligne**  
@@ -414,13 +411,13 @@ ms.lasthandoff: 11/20/2017
  **fonction scalaire**  
  Une fonction qui génère une valeur unique à partir d’une valeur unique. Par exemple, une fonction qui modifie la casse des données de type caractère.  
   
- **schéma**  
+ **schema**  
  *Consultez* catalogue.  
   
  **curseur de défilement**  
  Un curseur que vous pouvez vous déplacer vers l’avant ou vers l’arrière dans le jeu de résultats.  
   
- **sérialisation**  
+ **Sérialisation**  
  Si deux transactions s’exécutant simultanément produisent un résultat qui est identique à l’exécution de série (ou séquentielle) de ces transactions. Les transactions sont nécessaires pour préserver l’intégrité de base de données.  
   
  **base de données du serveur**  
@@ -453,7 +450,7 @@ ms.lasthandoff: 11/20/2017
  **Instruction SQL**  
  Une phrase complète dans SQL qui commence par un mot clé et complètement décrit une action à entreprendre. Par exemple, sélectionnez * à partir de commandes. Instructions SQL ne doivent pas être confondues avec les instructions.  
   
- **état**  
+ **state**  
  Une condition bien définie d’un élément. Par exemple, une connexion a sept États, y compris les données non allouées, allouées, connectées et nécessitant. Certaines opérations peuvent être effectuées uniquement lorsqu’un élément est dans un état particulier. Par exemple, une connexion peut être libérée uniquement lorsqu’il est dans un état alloué et non, par exemple, lorsqu’il est en état connecté.  
   
  **transition d’état**  
@@ -471,7 +468,7 @@ ms.lasthandoff: 11/20/2017
  **SQL statique**  
  Type d’embedded SQL dans SQL instructions sont codées en dur et compilées lorsque le reste du programme est compilé. *Voir aussi* SQL dynamique.  
   
- **procédure stockée**  
+ **Procédure stockée**  
  *Consultez* procédure.  
   
 ## <a name="t"></a>T  
@@ -484,10 +481,10 @@ ms.lasthandoff: 11/20/2017
  **transaction**  
  Une unité atomique de travail. Le travail dans une transaction doit être effectué dans son ensemble ; Si une partie de la transaction échoue, la transaction entière échoue.  
   
- **isolement des transactions**  
+ **Isolement des transactions**  
  Le fait de l’isolation des transactions entre les effets de toutes les autres transactions.  
   
- **niveau d’isolation de transaction**  
+ **Niveau d’isolation de transaction**  
  Mesure de la manière dont une transaction est isolée. Il existe cinq niveaux d’isolation de transaction : Read Uncommitted, Read Committed, Repeatable Read, Serializable et le contrôle de version.  
   
  **DLL de conversion**  
@@ -503,5 +500,5 @@ ms.lasthandoff: 11/20/2017
  Une valeur entière passée à ou retournée à partir d’une fonction ODBC pour indiquer le type de données d’une variable d’application, un paramètre ou une colonne. ODBC définit des indicateurs de type pour les types de données C et SQL.  
   
 ## <a name="v"></a>V  
- **vue**  
+ **Vue**  
  Un autre moyen de consulter les données dans une ou plusieurs tables. Une vue est généralement créée comme un sous-ensemble des colonnes à partir d’une ou plusieurs tables. Dans ODBC, les vues sont généralement équivalentes aux tables.

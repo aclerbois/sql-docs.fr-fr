@@ -1,16 +1,15 @@
 ---
-title: "srv_paramlen (API de procédure stockée étendue) | Microsoft Docs"
-ms.custom: 
+title: srv_paramlen (API de procédure stockée étendue) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: extended-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - srv_paramlen
@@ -22,22 +21,21 @@ dev_langs:
 helpviewer_keywords:
 - srv_paramlen
 ms.assetid: d1fe92ff-cad6-4396-8216-125e5642e81e
-caps.latest.revision: 
+caps.latest.revision: 32
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2c619d69e425f28c6a8416d2ef96bbc67602f311
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
-ms.translationtype: MT
+ms.openlocfilehash: 7ee434712db9ab3ac89bc78a80173c2d353c4852
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="srvparamlen-extended-stored-procedure-api"></a>srv_paramlen (API de procédure stockée étendue)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
     
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez plutôt l'intégration du CLR.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez l’intégration CLR à la place.  
   
  Retourne la longueur de données d'un paramètre d'appel de procédure stockée distante. Cette fonction a été remplacée par la fonction **srv_paraminfo**.  
   
@@ -62,7 +60,7 @@ n
  Indique le numéro du paramètre. Le premier paramètre est 1.  
   
 ## <a name="returns"></a>Valeur renvoyée  
- Longueur réelle, en octets, des données de paramètre. En l’absence de *n*ième paramètre ou de procédure stockée distante, la valeur -1 est retournée. Si le *n*ième paramètre est NULL, la valeur retournée est 0.  
+ Longueur réelle, en octets, des données de paramètre. En l’absence de *n*ième paramètre ou de procédure stockée distante, la valeur -1 est retournée. Si le *n*ième paramètre est NULL, la valeur retournée est 0.  
   
  Cette fonction retourne les valeurs suivantes, si le paramètre correspond à l’un des types de données système [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] ci-dessous.  
   

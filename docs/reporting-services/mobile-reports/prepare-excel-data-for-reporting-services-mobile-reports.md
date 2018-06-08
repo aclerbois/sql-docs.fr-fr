@@ -4,24 +4,22 @@ ms.custom: ''
 ms.date: 02/08/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: ''
 ms.component: mobile-reports
 ms.reviewer: ''
 ms.suite: pro-bi
 ms.technology: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 16698f8d-bfc7-4eca-9e97-82c99d8bc08e
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 57440dd767e421cb1448d8d365ebf894edbd065a
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 76f71b0f284602ae1860fcba5bc69f9221b0be33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-excel-data-for-reporting-services-mobile-reports"></a>Préparer les données Excel pour les rapports mobiles Reporting Services
   

@@ -1,30 +1,29 @@
 ---
 title: Source des objets blob Azure | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- integration-services
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.afpblobsrc.f1
 - sql14.dts.designer.afpblobsrc.f1
 ms.assetid: 80645c5c-88c8-4fb0-8607-de1bb7bffcbb
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 96203230b881dbdea9389daa6a2e726cd59d86af
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: d8066bcb801980cdae98620c25361ae358bb4fe3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-blob-source"></a>Azure Blob Source
   Le composant **Azure Blob Source** permet à un package SSIS de lire les données provenant d’un blob Azure. Les formats de fichier pris en charge sont CSV et AVRO.

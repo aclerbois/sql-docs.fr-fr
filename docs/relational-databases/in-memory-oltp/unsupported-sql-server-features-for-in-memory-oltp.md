@@ -1,28 +1,26 @@
 ---
-title: "Fonctionnalités SQL Server non prises en charge pour l’OLTP en mémoire | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités SQL Server non prises en charge pour l’OLTP en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 07/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c39f03a7-e223-4fd7-bd30-142e28f51654
-caps.latest.revision: 
+caps.latest.revision: 55
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5a2ccc853663dd125fec186b9e9e3834f28345c7
-ms.sourcegitcommit: 44cd5c651488b5296fb679f6d43f50d068339a27
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3a7393dfd780eb62aa6dff5ca70d89f297dc6952
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="unsupported-sql-server-features-for-in-memory-oltp"></a>Fonctionnalités SQL Server non prises en charge pour l’OLTP en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -38,7 +36,7 @@ Les fonctionnalités [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s
 |-------------------------|-------------------------|  
 |Compression de données pour les tables à mémoire optimisée.|Vous pouvez utiliser la fonctionnalité de compression de données pour compresser les données dans une base de données et réduire la taille de la base de données. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md).|  
 |Partitionnement des index HASH et des tables à mémoire optimisée, ainsi que des index non cluster.|Les données des tables et des index partitionnés sont divisées en unités qui peuvent être réparties sur plusieurs groupes de fichiers d'une base de données. Pour plus d’informations, consultez [Tables et index partitionnés](../../relational-databases/partitions/partitioned-tables-and-indexes.md).|  
-| Réplication | Les configurations de réplication autres que la réplication transactionnelle vers des tables à mémoire optimisée sur les abonnés sont incompatibles avec des tables ou des vues qui référencent des tables à mémoire optimisée.<br /><br />S’il existe un groupe de fichiers à mémoire optimisée, la réplication à l’aide de sync_mode=’database snapshot’ n’est pas prise en charge.<br /><br />Pour plus d’informations, consultez [Abonnés à la réplication de tables optimisées en mémoire](../../relational-databases/replication/replication-to-memory-optimized-table-subscribers.md).|
+| REPLICATION | Les configurations de réplication autres que la réplication transactionnelle vers des tables à mémoire optimisée sur les abonnés sont incompatibles avec des tables ou des vues qui référencent des tables à mémoire optimisée.<br /><br />S’il existe un groupe de fichiers à mémoire optimisée, la réplication à l’aide de sync_mode=’database snapshot’ n’est pas prise en charge.<br /><br />Pour plus d’informations, consultez [Abonnés à la réplication de tables optimisées en mémoire](../../relational-databases/replication/replication-to-memory-optimized-table-subscribers.md).|
 |Mise en miroir|La mise en miroir de bases de données n’est pas prise en charge pour les bases de données avec un groupe de fichiers MEMORY_OPTIMIZED_DATA. Pour plus d’informations sur la mise en miroir, consultez [Mise en miroir de bases de données &#40;SQL Server&#41;](../../database-engine/database-mirroring/database-mirroring-sql-server.md).|  
 |Reconstruire le journal|La reconstruction du journal, via un attachement ou ALTER DATABASE, n'est pas prise en charge pour les bases de données avec un groupe de fichiers MEMORY_OPTIMIZED_DATA.|  
 |Serveur lié|Vous ne peut pas accéder à des serveurs liés dans la même requête ou transaction en tant que tables à mémoire optimisée. Pour plus d’informations, consultez [Serveurs liés &#40;moteur de base de données&#41;](../../relational-databases/linked-servers/linked-servers-database-engine.md).|  
@@ -57,9 +55,9 @@ Les fonctionnalités [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s
 À quelques exceptions, les transactions de bases de données croisées ne sont pas prises en charge. Le tableau suivant décrit les cas sont pris en charge, et les restrictions correspondantes. (Voir aussi [Requêtes de bases de données croisées](../../relational-databases/in-memory-oltp/cross-database-queries.md).)  
 
 
-|Bases de données|Autorisé| Description|  
+|Bases de données|Autorisé|Description|  
 |---------------|-------------|-----------------|  
-| Bases de données utilisateur, **model** et **msdb**. | Non | Dans la plupart des cas, les requêtes et transactions de bases de données croisées ne sont *pas* prises en charge.<br /><br />Une requête ne peut pas accéder à d’autres bases de données si la requête utilise une table à mémoire optimisée ou une procédure stockée compilée en mode natif. Cette restriction s’applique aux transactions aussi bien qu’aux requêtes.<br /><br />Les exceptions sont les bases de données système **tempdb** et **MASTER**. La base de données **MASTER** est ici accessible en lecture seule. |
+| Bases de données utilisateur, **model** et **msdb**. | non | Dans la plupart des cas, les requêtes et transactions de bases de données croisées ne sont *pas* prises en charge.<br /><br />Une requête ne peut pas accéder à d’autres bases de données si la requête utilise une table à mémoire optimisée ou une procédure stockée compilée en mode natif. Cette restriction s’applique aux transactions aussi bien qu’aux requêtes.<br /><br />Les exceptions sont les bases de données système **tempdb** et **MASTER**. La base de données **MASTER** est ici accessible en lecture seule. |
 | Base de données **Resource**, **tempdb** | Oui | Dans une transaction qui traite les objets OLTP en mémoire, les bases de données système **Resource** et **tempdb** peuvent être utilisées sans restriction.
 
 
@@ -89,6 +87,6 @@ Les fonctionnalités [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s
     - L'authentification de la base de données à relation contenant-contenu est prise en charge. Toutefois, tous les objets OLTP en mémoire sont marqués comme étant des « relations contenant-contenu essentielles » dans la vue de gestion dynamique **dm_db_uncontained_entities**.
 
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 
 - [Prise en charge d'OLTP en mémoire par SQL Server](../../relational-databases/in-memory-oltp/sql-server-support-for-in-memory-oltp.md)

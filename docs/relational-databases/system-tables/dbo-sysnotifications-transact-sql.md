@@ -1,16 +1,14 @@
 ---
 title: dbo.sysnotifications (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.sysnotifications_TSQL
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sysnotifications system table
 ms.assetid: c5150d18-e8b7-48a7-ada7-77c583af6e41
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ea3f7a24c97a2ee0fd9664df0b81eb5b03f7f4b0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 7683c41b4c10d1f96cd84d3a9c4377161a452595
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbosysnotifications-transact-sql"></a>dbo.sysnotifications (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -42,6 +39,6 @@ ms.lasthandoff: 02/03/2018
 |-----------------|---------------|-----------------|  
 |**alert_id**|**int**|ID de l'alerte.|  
 |**operator_id**|**int**|ID de l'opérateur à qui la notification doit être envoyée.|  
-|**notification_method**|**tinyint**|Méthode de notification :<br /><br /> **1** = courrier électronique<br /><br /> **2** = radiomessagerie<br /><br /> **4** = **netsend**<br /><br /> **7** = all|  
+|**méthode_de_notification**|**tinyint**|Méthode de notification :<br /><br /> **1** = courrier électronique<br /><br /> **2** = radiomessagerie<br /><br /> **4** = **netsend**<br /><br /> **7** = all|  
   
   

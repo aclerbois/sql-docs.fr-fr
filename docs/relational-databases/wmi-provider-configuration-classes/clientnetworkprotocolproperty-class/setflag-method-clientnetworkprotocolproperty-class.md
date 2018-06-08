@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetFlag (classe ClientNetworkProtocolProperty) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetFlag (classe ClientNetworkProtocolProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetFlag Method (ClientNetworkProtocolProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetFlag method
 ms.assetid: 0407520f-2f84-4f68-b2b7-429697286c1b
-caps.latest.revision: 
+caps.latest.revision: 29
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a7831e175ff1743ccb0bea16c4ed51465d4d41e2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: f27cf4f176a024c37c4bbb0bebb76b830d44c1ba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setflag-method-clientnetworkprotocolproperty-class"></a>Méthode SetFlag (classe ClientNetworkProtocolProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,15 +1,14 @@
 ---
-title: "Utilisation d’images à l’aide de la tâche de script | Microsoft Docs"
-ms.custom: 
+title: Utilisation d’images à l’aide de la tâche de script | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-scripting-task-examples
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -27,16 +26,15 @@ helpviewer_keywords:
 - JPEG format [Integration Services]
 - .jpeg files
 ms.assetid: 74aeb7ab-51b2-4b9f-84ee-0b46a7908ab9
-caps.latest.revision: 
+caps.latest.revision: 42
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77962f05ede4b2650db4af59fdbde5ec42fdf1d5
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 664ac58f2423c1f4c603a32dff3892a3dde3db1c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-images-with-the-script-task"></a>Utilisation d'images à l'aide de la tâche de script
   Une base de données de produits ou d'utilisateurs contient généralement des images, en plus du texte et des données numériques. L’espace de noms **System.Drawing** dans le Microsoft .NET Framework fournit des classes permettant de manipuler des images.  

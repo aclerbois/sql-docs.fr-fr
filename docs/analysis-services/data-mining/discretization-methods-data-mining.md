@@ -1,41 +1,23 @@
 ---
-title: "Méthodes de discrétisation (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- content types [data mining]
-- discretization [Analysis Services]
-- columns [data mining], discretization
-- THRESHOLDS method
-- CLUSTERS method
-- DiscretizationBuckets property
-- AUTOMATIC method
-- EQUAL_AREAS method
-- coding [Data Mining]
-ms.assetid: 02c0df7b-6ca5-4bd0-ba97-a5826c9da120
-caps.latest.revision: 
-author: Minewiskan
+title: Méthodes de discrétisation (exploration de données) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1acf124467d3a6c5cdeb35a1d617e0dbc9d34d63
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 610108ce4edb6e3beb5c13398d0a79eca200bdba
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discretization-methods-data-mining"></a>Méthodes de discrétisation (exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Certains algorithmes utilisés pour créer des modèles d’exploration de données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] nécessitent des types de contenu spécifiques pour pouvoir fonctionner correctement. Par exemple, l'algorithme [!INCLUDE[msCoName](../../includes/msconame-md.md)] Naive Bayes ne peut pas utiliser de colonnes continues comme entrée ni prédire des valeurs continues. En outre, certaines colonnes peuvent contenir tellement de valeurs que l'algorithme ne peut pas identifier facilement les motifs intéressants qui ressortent des données et qui vont servir à créer un modèle.  
+  Certains algorithmes utilisés pour créer des modèles d’exploration de données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] nécessitent des types de contenu spécifiques pour pouvoir fonctionner correctement. Par exemple, l'algorithme [!INCLUDE[msCoName](../../includes/msconame-md.md)] Naive Bayes ne peut pas utiliser de colonnes continues comme entrée ni prédire des valeurs continues. En outre, certaines colonnes peuvent contenir tellement de valeurs que l'algorithme ne peut pas identifier facilement les motifs intéressants qui ressortent des données et qui vont servir à créer un modèle.  
   
  Dans ce cas, vous pouvez discrétiser les données des colonnes afin de pouvoir utiliser les algorithmes pour créer un modèle d'exploration de données. La*discrétisation* est le processus consistant à mettre des valeurs dans des compartiments afin d’obtenir un nombre limité d’états possibles. Les compartiments eux-mêmes sont traités comme des valeurs discrètes et ordonnées. Vous pouvez discrétiser les colonnes de nombres et de chaînes.  
   
@@ -64,11 +46,11 @@ Certains algorithmes utilisés pour créer des modèles d’exploration de donn�
   
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu des Types de &#40; exploration de données &#41;](../../analysis-services/data-mining/content-types-data-mining.md)   
- [Contenu des Types de &#40; DMX &#41;](../../dmx/content-types-dmx.md)   
+ [Contenu des Types de & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/content-types-data-mining.md)   
+ [Contenu des Types de & #40 ; DMX & #41 ;](../../dmx/content-types-dmx.md)   
  [Algorithmes d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)   
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
- [Types de données &#40; exploration de données &#41;](../../analysis-services/data-mining/data-types-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Types de données & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/data-types-data-mining.md)   
  [Colonnes de Structure d’exploration de données](../../analysis-services/data-mining/mining-structure-columns.md)   
  [Distributions de colonnes &#40;exploration de données&#41;](../../analysis-services/data-mining/column-distributions-data-mining.md)  
   

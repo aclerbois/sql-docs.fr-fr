@@ -1,16 +1,15 @@
 ---
 title: Expressions primaires (XQuery) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - literals [XQuery]
 - context item expressions [XQuery]
 ms.assetid: d4183c3e-12b5-4ca0-8413-edb0230cb159
-caps.latest.revision: 
+caps.latest.revision: 20
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 339cb237a14869c2d747d81e32bc572ba003a5e3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d7f9fdcd3eaa54b74366f90891893c88cbf1aa32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="primary-expressions-xquery"></a>Expressions primaires (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -54,7 +52,7 @@ ms.lasthandoff: 02/09/2018
  Un littéral chaîne peut également comprendre une référence de caractère (référence de style XML à un caractère Unicode) qui est identifiée par un point de code décimal ou hexadécimal. Par exemple, le symbole Euro peut être représenté par la référence de caractère « &\#8364 ; ».  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] utilise XML version 1.0 comme base pour l’analyse.  
+>  [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] s'appuie sur XML version 1.0 pour l'analyse.  
   
 ### <a name="examples"></a>Exemples  
  Les exemples suivants expliquent comment utiliser des littéraux, ainsi que des références d'entité et de caractère.  
@@ -191,6 +189,6 @@ SELECT @var.query('/ROOT[1]/a[./@attr]')
 -   L'importation de fonctions n'est pas prise en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Construction XML &#40; XQuery &#41;](../xquery/xml-construction-xquery.md)  
+ [Construction XML &#40;XQuery&#41;](../xquery/xml-construction-xquery.md)  
   
   

@@ -1,15 +1,14 @@
 ---
-title: "Prise en charge de l’ensemble de lignes de schéma (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Prise en charge de l’ensemble de lignes de schéma (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - schema rowsets [OLE DB]
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - SQL Server Native Client OLE DB provider, schema rowsets
 - rowsets [OLE DB], schema
 ms.assetid: a75b4b69-b095-4690-9b31-a2b32a67489e
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: afc0125c35d0eafbf70232ce5c10227b08f210b4
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a2ca9d0cb7c3b4a973b830d8f3287bd1fee92390
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="schema-rowset-support-ole-db"></a>Prise en charge des ensembles de lignes de schéma (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -61,10 +60,10 @@ ms.lasthandoff: 01/25/2018
 ## <a name="in-this-section"></a>Dans cette section  
  [Prise en charge de la requête dans les ensembles de lignes de schéma distribuées](../../../relational-databases/native-client/ole-db/schema-rowsets-distributed-query-support.md)  
   
- [Ensemble de lignes LINKEDSERVERS &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/schema-rowsets-linkedservers-rowset.md)  
+ [Ensemble de lignes LINKEDSERVERS &#40;OLE DB&#41;](../../../relational-databases/native-client/ole-db/schema-rowsets-linkedservers-rowset.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/sql-server-native-client-ole-db.md)   
+ [SQL Server Native Client & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client/ole-db/sql-server-native-client-ole-db.md)   
  [À l’aide des Types définis par l’utilisateur](../../../relational-databases/native-client/features/using-user-defined-types.md)  
   
   

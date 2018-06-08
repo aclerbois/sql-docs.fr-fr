@@ -1,30 +1,31 @@
 ---
-title: "Exemples de règles d’entreprise (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Exemples de règles d’entreprise (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3974b9be-4b7c-4a37-ab26-1a36ef455744
-caps.latest.revision: 
+caps.latest.revision: 21
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e01b4c5141011209f5fdf314711e9cc26595c5f5
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 68be5f600da960023548a5b9e5678c995766a71b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="business-rule-examples-master-data-services"></a>Exemples de règles d’entreprise (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
 Cet article présente des exemples de règles d’entreprise pour [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)]. Vous trouverez ces exemples dans les exemples de modèles qui sont inclus dans votre installation de [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)].   
   
 Pour obtenir des instructions sur la manière de déployer les exemples de modèles, consultez [Installation et configuration de Master Data Services](../master-data-services/master-data-services-installation-and-configuration.md).  
@@ -160,8 +161,7 @@ Pour obtenir des instructions sur la configuration du site web, consultez [Insta
 3. Cliquez sur l’entité à laquelle la règle s’applique, comme indiqué dans les tableaux ci-dessus, puis cliquez sur **Règles d’entreprise**.  
 4. Cliquez sur le nom de la règle d’entreprise que vous souhaitez afficher. L’interface utilisateur se développe pour afficher les instructions **If**, **Then** et **Else** .  
   
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute   
-Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com).   
+ 
   
   
   

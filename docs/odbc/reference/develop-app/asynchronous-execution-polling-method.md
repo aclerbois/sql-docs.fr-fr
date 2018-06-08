@@ -1,28 +1,26 @@
 ---
-title: "Exécution asynchrone (méthode d’interrogation) | Documents Microsoft"
-ms.custom: 
+title: Exécution asynchrone (méthode d’interrogation) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: asynchronous execution [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- asynchronous execution [ODBC]
 ms.assetid: 8cd21734-ef8e-4066-afd5-1f340e213f9c
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 357ee77565e711e886184d803540b5745edb1f25
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d64874a4633e7bede14051d882925f633dadc36c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="asynchronous-execution-polling-method"></a>Exécution asynchrone (méthode d’interrogation)
 Avant d’ODBC 3.8 et le Kit de développement logiciel Windows 7, opérations asynchrones ont été autorisées uniquement sur les fonctions de l’instruction. Pour plus d’informations, consultez la **l’exécution asynchrone d’opérations d’instruction**, plus loin dans cette rubrique.  
@@ -214,9 +212,9 @@ while ((rc = SQLExecDirect(hstmt1, SQLStatement, SQL_NTS)) == SQL_STILL_EXECUTIN
   
  Lorsque le regroupement de connexions est activé, **SQLEndTran** et **SQLSetConnectAttr** sont pris en charge pour les opérations asynchrones.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
-### <a name="description"></a>Description  
+### <a name="description"></a> Description  
  L’exemple suivant montre comment utiliser **SQLSetConnectAttr** pour permettre une exécution asynchrone pour les fonctions liées à la connexion.  
   
 ### <a name="code"></a>Code  
@@ -268,9 +266,9 @@ BOOL AsyncConnect (SQLHANDLE hdbc)
   
 ```  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
-### <a name="description"></a>Description  
+### <a name="description"></a> Description  
  Cet exemple illustre les opérations de validation asynchrone. Opérations de restauration possible également de cette manière.  
   
 ### <a name="code"></a>Code  

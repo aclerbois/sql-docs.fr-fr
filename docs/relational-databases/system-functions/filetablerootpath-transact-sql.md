@@ -1,15 +1,13 @@
 ---
-title: FileTableRootPath (Transact-SQL) | Microsoft Docs
+title: FileTableRootPath (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: system-functions
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - FileTableRootPath function
 ms.assetid: 0cba908a-c85c-4b09-b16a-df1cb333c629
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ec947c95930b1f705465e8dfd8b815dad2b2419
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 637653dc75154f00c14cb248703aec3645f313bb
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="filetablerootpath-transact-sql"></a>FileTableRootPath (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTypeMap (SQLServerConnection) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTypeMap (SQLServerConnection) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerConnection.getTypeMap
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerConnection.getTypeMap
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: c81bcf9a-2e24-4dfc-8c04-d612e9b7baca
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7d1eb32ad8b38b58923fb30ec1238c22048559e5
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8ee3c2a34840609f228c40dc1868747c9d42dfc3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettypemap-method-sqlserverconnection"></a>Méthode getTypeMap (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

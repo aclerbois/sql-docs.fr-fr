@@ -1,16 +1,14 @@
 ---
 title: RANK (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RANK
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - ranking rows
 - RANK function [Transact-SQL]
 ms.assetid: 2d96f6d2-5db7-4b3c-a63e-213c58e4af55
-caps.latest.revision: 
+caps.latest.revision: 62
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 657f152f295fd93d3749ed6ff4865cd753dc3e95
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 45f90acb599ec92b0673868c1ae8672dfd8931c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rank-transact-sql"></a>RANK (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -54,7 +52,7 @@ RANK ( ) OVER ( [ partition_by_clause ] order_by_clause )
   
 ## <a name="arguments"></a>Arguments  
  OVER **(** [ *partition_by_clause* ] *order_by_clause***)**  
- *partition_by_clause* divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction est appliquée. S'il n'est pas spécifié, la fonction gère toutes les lignes du jeu de résultats de la requête en un seul groupe. *order_by_clause* détermine l’ordre des données avant que la fonction soit appliquée. *order_by_clause* est requis. La \<clause ROWS ou RANGE> de la clause OVER ne peut pas être spécifiée pour la fonction RANK. Pour plus d’informations, consultez [OVER, clause &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
+ *partition_by_clause* divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction est appliquée. S'il n'est pas spécifié, la fonction gère toutes les lignes du jeu de résultats de la requête en un seul groupe. *order_by_clause* détermine l’ordre des données avant que la fonction soit appliquée. *order_by_clause* est requis. La \<clause ROWS ou RANGE> de la clause OVER ne peut pas être spécifiée pour la fonction RANK. Pour plus d’informations, consultez [Clause OVER &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
   
 ## <a name="return-types"></a>Types de retour  
  **bigint**  

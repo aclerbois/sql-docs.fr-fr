@@ -1,39 +1,19 @@
 ---
 title: Gestion des Transactions (XMLA) | Documents Microsoft
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- XML for Analysis, transactions
-- XMLA, transactions
-- explicit transactions [XMLA]
-- implicit transactions
-- transactions [XML for Analysis]
-- rolling back transactions, XMLA
-- reference counts [XML for Analysis]
-- committing transactions
-- starting transactions
-ms.assetid: f5112e01-82f8-4870-bfb7-caa00182c999
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9d7a8aefc8c018c56327cd4b5d0101523032dd60
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 1f2884d49f03d8557d72d8d6d48cdba432a8c37f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="managing-transactions-xmla"></a>Gestion des transactions (XMLA)
   Chaque commande XML for Analysis (XMLA) envoyé à une instance de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] s’exécute dans le contexte d’une transaction sur la session implicite ou explicite. Pour gérer chacune de ces transactions, vous utilisez la [BeginTransaction](../../analysis-services/xmla/xml-elements-commands/begintransaction-element-xmla.md), [CommitTransaction](../../analysis-services/xmla/xml-elements-commands/committransaction-element-xmla.md), et [RollbackTransaction](../../analysis-services/xmla/xml-elements-commands/rollbacktransaction-element-xmla.md) commandes. En utilisant ces commandes, vous pouvez créer des transactions implicites ou explicites, modifier le nombre de références de transaction, ainsi que les transactions de démarrage, de validation ou d'annulation.  
@@ -50,7 +30,7 @@ ms.lasthandoff: 02/15/2018
  De plus, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] annule les transactions implicites et explicites si la session active se termine avant que la transaction active n'ait abouti.  
   
 ## <a name="transactions-and-reference-counts"></a>Transactions et nombres de référence  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] conserve un décompte de références de transaction pour chaque session. Toutefois, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] ne prend pas en charge les transactions imbriquées dans la mesure où une seule transaction active est gérée par session. Si aucune transaction n'est active dans la session active, le nombre de références de transaction est défini à zéro.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] comptabilise le nombre de référence de transactions pour chaque session. Toutefois, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] ne prend pas en charge les transactions imbriquées dans la mesure où une seule transaction active est gérée par session. Si aucune transaction n'est active dans la session active, le nombre de références de transaction est défini à zéro.  
   
  En d’autres termes, chaque **BeginTransaction** commande incrémente le décompte de références d’une unité, tandis que chaque **CommitTransaction** décrémente commande le décompte de références d’une unité. Si un **CommitTransaction** à zéro, la commande définit le nombre de transactions [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] valide la transaction.  
   

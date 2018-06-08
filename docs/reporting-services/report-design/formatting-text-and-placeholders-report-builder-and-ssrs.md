@@ -1,16 +1,15 @@
 ---
-title: "Mise en forme du texte et des espaces réservés (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Mise en forme du texte et des espaces réservés (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql11.rtp.rptdesigner.placeholderproperties.font.f1
 - "10118"
@@ -19,16 +18,15 @@ f1_keywords:
 - "10132"
 - sql11.rtp.rptdesigner.textproperties.font.f1
 ms.assetid: 26a4baf2-7bc5-4634-b136-552687ffa477
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 18a17ad4befad58d70db0f52f08fe9c8bea98e06
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 54f5a77395aa11b52ee55d71de4d89e239a9201f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="formatting-text-and-placeholders-report-builder-and-ssrs"></a>Mise en forme du texte et des espaces réservés (Générateur de rapports et SSRS)
   Les zones de texte peuvent être des éléments de rapport ou correspondre aux cellules individuelles d'une région de données dans lesquelles figure du texte, un champ calculé, un pointeur renvoyant au champ d'une base de données ou une combinaison de ces trois éléments. Vous pouvez associer des polices et des couleurs, ajouter des styles gras et italiques et appliquer des styles de paragraphe (par exemple, un alignement et des retraits négatifs). Vous pouvez mettre en forme une zone de texte tout entière ou bien mettre en forme un texte spécifique, des nombres, des expressions ou des champs à l'intérieur de la zone de texte.  

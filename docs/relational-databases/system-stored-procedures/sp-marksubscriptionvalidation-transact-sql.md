@@ -1,16 +1,15 @@
 ---
 title: sp_marksubscriptionvalidation (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_marksubscriptionvalidation
 ms.assetid: e68fe0b9-5993-4880-917a-b0f661f8459b
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9b6286a062e41741145962cf123041812b6d366c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 1b088b43cfc625591d5160b6818949b0c933a696
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spmarksubscriptionvalidation-transact-sql"></a>sp_marksubscriptionvalidation (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,10 +47,10 @@ sp_marksubscriptionvalidation [ @publication = ] 'publication'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publication** =] **'***publication***'**  
+ [ **@publication**=] **'***publication***'**  
  Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
- [  **@subscriber** =] **'***abonné***'**  
+ [ **@subscriber**=] **'***abonné***'**  
  Nom de l'Abonné. *abonné* est de type sysname, sans valeur par défaut.  
   
  [  **@destination_db=**] **'***destination_db***'**  
@@ -74,13 +72,13 @@ sp_marksubscriptionvalidation [ @publication = ] 'publication'
   
  De non -[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveurs de publication, vous ne pouvez pas exécuter **sp_marksubscriptionvalidation** à partir d’une transaction explicite. Cela est dû au fait que les transactions explicites ne sont pas prises en charge sur la connexion du serveur lié utilisée pour accéder au serveur de publication.  
   
- **sp_marksubscriptionvalidation** doit être utilisée avec [sp_article_validation &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md), la valeur de **1** pour *subscription_level*et peut être utilisé avec les autres appels de **sp_marksubscriptionvalidation** pour marquer la transaction actuellement ouverte pour d’autres abonnés.  
+ **sp_marksubscriptionvalidation** doit être utilisée avec [sp_article_validation &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md), la valeur de **1** pour  *subscription_level*et peut être utilisé avec les autres appels de **sp_marksubscriptionvalidation** pour marquer la transaction actuellement ouverte pour d’autres abonnés.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_marksubscriptionvalidation**.  
   
 ## <a name="example"></a>Exemple  
- La requête suivante peut être appliquée à la base de données de publication pour publier des commandes de validation au niveau des abonnements. Ces commandes sont récupérées par les Agents de distribution des Abonnés spécifiés. Notez que la première transaction valide l’article '**art1**«, tandis que la seconde transaction valide »**art2**'. Notez également que les appels à **sp_marksubscriptionvalidation** et [sp_article_validation &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) ont été encapsulés dans une transaction. Nous ne recommandons qu’un seul appel à [sp_article_validation &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) par transaction. C’est parce que [sp_article_validation &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) détient un verrou de table partagé sur la table source pour la durée de la transaction. Les transactions courtes sont à privilégier pour maximiser l'accès simultané.  
+ La requête suivante peut être appliquée à la base de données de publication pour publier des commandes de validation au niveau des abonnements. Ces commandes sont récupérées par les Agents de distribution des Abonnés spécifiés. Notez que la première transaction valide l’article '**art1**«, tandis que la seconde transaction valide »**art2**'. Notez également que les appels à **sp_marksubscriptionvalidation** et [sp_article_validation &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) ont été encapsulés dans une transaction. Nous ne recommandons qu’un seul appel à [sp_article_validation &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) par transaction. C’est parce que [sp_article_validation &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-article-validation-transact-sql.md) détient un verrou de table partagé sur la table source pour la durée de la transaction. Les transactions courtes sont à privilégier pour maximiser l'accès simultané.  
   
 ```  
 begin tran  

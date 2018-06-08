@@ -1,32 +1,29 @@
 ---
-title: "Move, méthode-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Move, méthode-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Move method [ADO], Visual Basic example
 ms.assetid: 55eb797a-0205-40d2-a797-55b216d1d3bb
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 68061546bf86dca96d927d120a4b62f390d3dff6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 42992a8ce9c5a2dee50b6d1bac5e7a5950968e7e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="move-method-example-vb"></a>Exemple de méthode Move (VB)
 Cet exemple utilise le [déplacer](../../../ado/reference/ado-api/move-method-ado.md) méthode pour positionner le pointeur d’enregistrement basée sur l’entrée d’utilisateur.  

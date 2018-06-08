@@ -1,28 +1,26 @@
 ---
-title: "Guide du traitement des requêtes pour les tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Guide du traitement des requêtes pour les tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 065296fe-6711-4837-965e-252ef6c13a0f
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ee2351e74989e9a574b591366af4a8764b89dea0
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 24879b140f61519f6ac6132db519540acf4d1e8b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="a-guide-to-query-processing-for-memory-optimized-tables"></a>Guide du traitement des requêtes pour les tables optimisées en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -126,7 +124,7 @@ Pipeline de traitement des requêtes SQL Server
  Pour le premier exemple de requête, le moteur d'exécution demande des lignes à l'index cluster sur la table Customer, et à l'index non cluster sur la table Order, à partir des méthodes d'accès. Les méthodes d'accès parcourent les structures d'index B-tree pour récupérer les lignes demandées. Dans ce cas, toutes les lignes sont récupérées lorsque le plan appelle des analyses d'index complètes.  
   
 ## <a name="interpreted-includetsqlincludestsql-mdmd-access-to-memory-optimized-tables"></a>Accès en [!INCLUDE[tsql](../../includes/tsql-md.md)] interprété aux tables mémoire optimisées  
- [!INCLUDE[tsql](../../includes/tsql-md.md)] Les lots ad hoc et procédures stockées sont également considérés comme du [!INCLUDE[tsql](../../includes/tsql-md.md)]interprété. « Interprété » fait référence au fait que le plan de requête est interprété par le moteur d'exécution de requête pour chaque opérateur inclus dans le plan de requête. Le moteur d'exécution lit l'opérateur et ses paramètres, et effectue l'opération.  
+ [!INCLUDE[tsql](../../includes/tsql-md.md)] Les lots ad hoc et procédures stockées sont également considérés comme du [!INCLUDE[tsql](../../includes/tsql-md.md)]interprété. « Interprété » fait référence au fait que le plan de requête est interprété par le moteur d'exécution de requête pour chaque opérateur inclus dans le plan de requête. Le moteur d'exécution lit l'opérateur et ses paramètres, et effectue l'opération.  
   
  Le [!INCLUDE[tsql](../../includes/tsql-md.md)] interprété peut être utilisé pour accéder aux tables mémoire optimisées et sur disque. L'illustration suivante montre le traitement des requêtes pour l'accès en [!INCLUDE[tsql](../../includes/tsql-md.md)] interprété aux tables mémoire optimisées :  
   

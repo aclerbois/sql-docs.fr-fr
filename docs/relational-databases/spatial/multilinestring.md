@@ -1,35 +1,34 @@
 ---
 title: MultiLineString | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - MultiLineString geometry subtype [SQL Server]
 - geometry subtypes [SQL Server]
 ms.assetid: 95deeefe-d6c5-4a11-b347-379e4486e7b7
-caps.latest.revision: 
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d1beab5bca9da5cde53f98f9158334fb718e6f7d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: afb12ee323ca4ddec2e569a127fe90b80f359e40
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multilinestring"></a>MultiLineString
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Un objet **MultiLineString** est une collection de zéro ou de plusieurs instances de **geometry** ou **geographyLineString** .  
+  Un objet **MultiLineString** est une collection de zéro ou de plusieurs instances de **geometry** ou **geographyLineString** .  
   
 ## <a name="multilinestring-instances"></a>Instances MultiLineString  
  L’illustration suivante montre des exemples d’instances **MultiLineString** .  

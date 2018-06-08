@@ -1,31 +1,29 @@
 ---
-title: "Questions fréquentes (FAQ) pour les administrateurs de la réplication | Microsoft Docs"
-ms.custom: 
+title: Questions fréquentes (FAQ) pour les administrateurs de la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - administering replication, frequently asked questions
 - replication [SQL Server], administering
 ms.assetid: 5a9e4ddf-3cb1-4baf-94d6-b80acca24f64
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5324e1896067491c291d1c838ab787e4deb249f2
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: fd85694c8b2678d85b66db6c84b89a409fa0fc4a
+ms.sourcegitcommit: df382099ef1562b5f2d1cd506c1170d1db64de41
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/12/2018
 ---
 # <a name="frequently-asked-questions-for-replication-administrators"></a>Questions fréquentes (FAQ) pour les administrateurs de la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -166,7 +164,7 @@ ms.lasthandoff: 03/08/2018
 ## <a name="database-maintenance"></a>Maintenance de la base de données  
   
 ### <a name="why-cant-i-run-truncate-table-on-a-published-table"></a>Pourquoi ne puis-je pas exécuter TRUNCATE TABLE sur une table publiée ?  
- TRUNCATE TABLE est une opération non journalisée qui n'exécute pas de déclencheurs. Cette opération n'est pas autorisée, car la réplication ne peut assurer le suivi des modifications engendrées par cette opération : la réplication transactionnelle assure le suivi des modifications via le journal des transactions, la réplication de fusion via des déclencheurs sur les tables publiées.  
+ TRUNCATE TABLE est une instruction DDL qui ne consigne pas les suppressions de lignes individuelles et qui n’exécute pas de déclencheurs DML. Cette opération n’est pas autorisée, car la réplication ne peut pas assurer le suivi des modifications engendrées par cette opération : la réplication transactionnelle assure le suivi des modifications via le journal des transactions, tandis que la réplication de fusion s’en charge par le biais de déclencheurs DMS dans les tables publiées.  
   
 ### <a name="what-is-the-effect-of-running-a-bulk-insert-command-on-a-replicated-database"></a>Quel est l'effet de l'exécution d'une commande d'insertion en bloc sur une base de données répliquée ?  
  Pour la réplication transactionnelle, les insertions en bloc sont suivies et répliquées comme les autres insertions. Pour la réplication de fusion, vous devez vérifier que les métadonnées de suivi des modifications sont correctement mises à jour.  

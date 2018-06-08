@@ -1,17 +1,15 @@
 ---
-title: "Sécurité CLR stricte | Microsoft Docs"
-description: "Comment configurer la sécurité CLR stricte dans SQL Server"
-ms.custom: 
+title: Sécurité CLR stricte | Microsoft Docs
+description: Comment configurer la sécurité CLR stricte dans SQL Server
+ms.custom: ''
 ms.date: 06/20/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - clr strict security
 - clr_strict_security_TSQL
@@ -20,17 +18,16 @@ f1_keywords:
 helpviewer_keywords:
 - assemblies [CLR integration], strick security
 - clr strict security option
-ms.assetid: 
-caps.latest.revision: "0"
+ms.assetid: ''
+caps.latest.revision: 0
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01eebbd834d8c1877743f65220af48dd23739f94
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 3889d749e7b50300a42a165c46a029daee5feb56
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-strict-security"></a>Sécurité CLR stricte   
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

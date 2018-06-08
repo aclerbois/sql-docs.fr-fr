@@ -1,30 +1,31 @@
 ---
 title: ClusterDistance (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: ClusterDistance
-dev_langs: DMX
-helpviewer_keywords: ClusterDistance function
+f1_keywords:
+- ClusterDistance
+dev_langs:
+- DMX
+helpviewer_keywords:
+- ClusterDistance function
 ms.assetid: a13152b3-4cd1-4c79-8a3e-207624198330
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 0a3f0d8b9167a399249cce2183b5a03ae0995473
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 03e85862a5fc8a1a9daae56282294d9addad53f0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clusterdistance-dmx"></a>ClusterDistance (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -44,29 +45,29 @@ ClusterDistance([<ClusterID expression>])
 ## <a name="return-type"></a>Type de retour  
  Une valeur scalaire.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **ClusterDistance** fonction retourne la distance entre le cas d’entrée et le cluster ayant la probabilité la plus élevée pour qu’une entrée de cas.  
   
- En cas de clustering K-Means, puisque les cas ne peuvent appartenir qu'à un seul cluster, avec un poids d'appartenance de 1, la distance de cluster est toujours 0. Toutefois, dans le cas de K-Means, chaque cluster est supposé avoir un centroïde. Vous pouvez obtenir la valeur du centroïde en interrogeant ou en parcourant la table imbriquée NODE_DISTRIBUTION dans le contenu du modèle d'exploration de données. Pour plus d’informations, consultez [Mining Model Content for Clustering Models &#40;Analysis Services - Data Mining&#41;](../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md).  
+ En cas de clustering K-Means, puisque les cas ne peuvent appartenir qu'à un seul cluster, avec un poids d'appartenance de 1.0, la distance de cluster est toujours 0. Toutefois, dans le cas de K-Means, chaque cluster est supposé avoir un centroïde. Vous pouvez obtenir la valeur du centroïde en interrogeant ou en parcourant la table imbriquée NODE_DISTRIBUTION dans le contenu du modèle d'exploration de données. Pour plus d’informations, consultez [Mining Model Content for Clustering Models &#40;Analysis Services - Data Mining&#41;](../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md).  
   
  Dans le cas de la méthode de clustering EM, tous les points à l'intérieur du cluster sont considérés comme ayant la même probabilité ; il n'ya donc pas, par définition, de centroïde pour le cluster par conception. La valeur de **ClusterDistance** entre un cas particulier et un cluster particulier *N* est calculé comme suit :  
   
  ClusterDistance(N) =1–(membershipWeight(N))  
   
- - ou -  
+ Ou:  
   
  ClusterDistance(N) = 1 – ClusterProbability (N))  
   
 ## <a name="related-prediction-functions"></a>Fonctions de prédiction connexes  
  [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] fournit les fonctions supplémentaires suivantes permettant d'interroger des modèles de clustering :  
   
--   Utilisez le [Cluster &#40; DMX &#41;](../dmx/cluster-dmx.md) fonction pour retourner le cluster le plus probable.  
+-   Utilisez le [Cluster &#40;DMX&#41; ](../dmx/cluster-dmx.md) fonction pour retourner le cluster le plus probable.  
   
--   Utilisez le [ClusterProbability &#40; DMX &#41;](../dmx/clusterprobability-dmx.md) fonction permettant d’obtenir la probabilité qu’un cas appartienne à un cluster particulier. Cette valeur est l'inverse de la distance de cluster.  
+-   Utilisez le [ClusterProbability &#40;DMX&#41; ](../dmx/clusterprobability-dmx.md) fonction permettant d’obtenir la probabilité qu’un cas appartienne à un cluster particulier. Cette valeur est l'inverse de la distance de cluster.  
   
--   Utilisez le [PredictHistogram &#40; DMX &#41;](../dmx/predicthistogram-dmx.md) fonction pour retourner un histogramme de la probabilité du cas d’entrée dans chacun des clusters du modèle.  
+-   Utilisez le [PredictHistogram &#40;DMX&#41; ](../dmx/predicthistogram-dmx.md) fonction pour retourner un histogramme de la probabilité du cas d’entrée dans chacun des clusters du modèle.  
   
--   Utilisez le [PredictCaseLikelihood &#40; DMX &#41;](../dmx/predictcaselikelihood-dmx.md) fonction pour retourner une mesure comprise entre 0 et 1 qui indique la probabilité un cas d’entrée existe, compte tenu du modèle appris par l’algorithme.  
+-   Utilisez le [PredictCaseLikelihood &#40;DMX&#41; ](../dmx/predictcaselikelihood-dmx.md) fonction pour retourner une mesure comprise entre 0 et 1 qui indique la probabilité un cas d’entrée existe, compte tenu du modèle appris par l’algorithme.  
   
 ## <a name="example1-obtaining-cluster-distance-to-the-most-likely-cluster"></a>Exemple 1 : obtention de la distance de cluster au cluster le plus probable  
  L'exemple suivant retourne la distance séparant le cas spécifié du cluster auquel il est le plus susceptible d'appartenir.  
@@ -136,9 +137,9 @@ NATURAL PREDICTION JOIN
 |0.97008209236394|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Cluster &#40; DMX &#41;](../dmx/cluster-dmx.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
+ [Cluster &#40;DMX&#41;](../dmx/cluster-dmx.md)   
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
  [Contenu du modèle d’exploration de données pour le Clustering des modèles &#40; Analysis Services - Exploration de données &#41;](../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)  
   
   

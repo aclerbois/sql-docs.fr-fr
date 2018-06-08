@@ -1,16 +1,14 @@
 ---
-title: "REVOKE – Révoquer des autorisations de principal de serveur (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE – Révoquer des autorisations de principal de serveur (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -22,18 +20,17 @@ helpviewer_keywords:
 - logins [SQL Server], revoking
 - REVOKE statement, logins
 ms.assetid: 75409024-f150-4326-af16-9d60e900df18
-caps.latest.revision: 
+caps.latest.revision: 30
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6573515d0bb50695fcde4cf94e002aa5d6be7025
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: b67c4c1dfe03dfdd3fe94ceaddd631300f259bdf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-server-principal-permissions-transact-sql"></a>REVOKE – Révoquer des autorisations de principal de serveur (Transact-SQL)
+# <a name="revoke-server-principal-permissions-transact-sql"></a>REVOKE – révocation d'autorisations de principal de serveur (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet de révoquer des autorisations accordées et refusées sur une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

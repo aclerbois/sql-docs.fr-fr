@@ -1,29 +1,25 @@
 ---
-title: "SELECT et JOIN à partir de vues système pour les événements étendus dans SQL Server | Microsoft Docs"
-ms.custom: 
+title: SELECT et JOIN à partir de vues système pour les événements étendus dans SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 08/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 04521d7f-588c-4259-abc2-1a2857eb05ec
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e257fc470b6988141b5581650285d69c09b1f2a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 356cfffea1189b3d7efb042fcec7e26eedc9b747
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selects-and-joins-from-system-views-for-extended-events-in-sql-server"></a>SELECT et JOIN à partir de vues système pour les événements étendus dans SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

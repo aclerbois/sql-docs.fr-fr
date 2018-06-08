@@ -1,16 +1,13 @@
 ---
 title: DBCC INPUTBUFFER (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/04/2018
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC INPUTBUFFER
@@ -26,16 +23,15 @@ helpviewer_keywords:
 - statements [SQL Server], last statement
 - DBCC INPUTBUFFER statement
 ms.assetid: a44d702b-b3fb-4950-8c8f-1adcf3f514ba
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 51
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0d36f0e25c0f5959053e028cdfc95babf69c4e48
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: da4393aecd4371afc5a9a3cba0725b7bfa55b34c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-inputbuffer-transact-sql"></a>DBCC INPUTBUFFER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -104,7 +100,7 @@ Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], l’une des condi
 SELECT @@spid;  
 ```
   
-Sur les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Premium, l’autorisation VIEW DATABASE STATE est requise dans la base de données. Sur les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] standard et de base, le compte administrateur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] est requis.
+Pour les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Premium et critique pour l’entreprise, l’autorisation VIEW DATABASE STATE est requise dans la base de données. Pour les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard, De base et Usage général, le compte administrateur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] est requis.
   
 ## <a name="examples"></a>Exemples  
 L'exemple suivant exécute `DBCC INPUTBUFFER` sur une seconde connexion tandis qu'une longue transaction est en cours d'exécution sur une connexion précédente.

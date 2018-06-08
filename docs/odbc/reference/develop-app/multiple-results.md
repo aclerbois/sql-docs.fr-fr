@@ -1,16 +1,14 @@
 ---
-title: "Plusieurs résultats | Documents Microsoft"
-ms.custom: 
+title: Plusieurs résultats | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLMoreResults function [ODBC], multiple results
 - row counts [ODBC]
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - result sets [ODBC], multiple results
 - SQLGetInfo function [ODBC], multiple results
 ms.assetid: a3c32e4b-8fe7-4a33-ae39-ae664001f315
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e537a1a767d0789333659d1aa26e57e11c42195e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: be6cb4a2f7f03e63e3da9345b833b0382edd8e9d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="multiple-results"></a>Plusieurs résultats
 A *résultat* est un élément retourné par la source de données après une instruction est exécutée. ODBC comporte deux types de résultats : les jeux de résultats et des nombres de lignes. *Nombre de lignes* sont le nombre de lignes affectées par une instruction update, delete ou insert d’instruction. Les traitements, décrit dans [Batches of SQL Statements](../../../odbc/reference/develop-app/batches-of-sql-statements.md), peut générer plusieurs résultats.  

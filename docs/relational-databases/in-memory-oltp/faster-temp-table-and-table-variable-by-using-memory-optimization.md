@@ -1,28 +1,26 @@
 ---
-title: "Table temporaire et variable de table plus rapides à l’aide de l’optimisation en mémoire | Microsoft Docs"
-ms.custom: 
+title: Table temporaire et variable de table plus rapides à l’aide de l’optimisation en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 38512a22-7e63-436f-9c13-dde7cf5c2202
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 29b7fbe140943ba0f2f3493f00561e8cf2b509e2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bce01856dd7652b824e8ef38e06fb75c5cc63be4
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="faster-temp-table-and-table-variable-by-using-memory-optimization"></a>Table temporaire et variable de table plus rapides à l’aide de l’optimisation en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
 title: CREATE EXTERNAL TABLE (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 11/27/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 5/14/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE_EXTERNAL_TABLE
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - External, table create
 - PolyBase, external table
 ms.assetid: 6a6fd8fe-73f5-4639-9908-2279031abdec
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 30
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 146fd91bfab0ceb5d9b289ef9be6c7446c77f073
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0ea81621b94490c267b6d7c9f3e010bd22279610
+ms.sourcegitcommit: 0cc2cb281e467a13a76174e0d9afbdcf4ccddc29
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/15/2018
 ---
 # <a name="create-external-table-transact-sql"></a>CREATE EXTERNAL TABLE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]
@@ -43,7 +41,7 @@ ms.lasthandoff: 02/24/2018
 >  PolyBase est pris en charge uniquement sur SQL Server 2016 (ou ultérieur), Azure SQL Data Warehouse et Parallel Data Warehouse. Les requêtes de base de données élastique sont prises en charge uniquement sur Azure SQL Database version 12 ou ultérieure.  
 
 
-- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] SQL Server utilise les tables externes pour accéder aux données stockées dans un cluster Hadoop ou dans le Stockage Blob Azure. Peut également être utilisé afin de créer une table externe pour une [requête de base de données élastique](https://azure.microsoft.com/documentation/articles/sql-database-elastic-query-overview/).  
+- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise les tables externes pour accéder aux données stockées dans un cluster Hadoop ou dans le stockage Blob Azure. Peut également être utilisé afin de créer une table externe pour une [requête de base de données élastique](https://azure.microsoft.com/documentation/articles/sql-database-elastic-query-overview/).  
   
  Utilisez une table externe pour :  
   
@@ -135,9 +133,10 @@ CREATE EXTERNAL TABLE [ database_name . [ schema_name ] . | schema_name. ] table
   
 <reject_options> ::=  
 {  
-    | REJECT_TYPE = value | percentage  
-    | REJECT_VALUE = reject_value  
-    | REJECT_SAMPLE_VALUE = reject_sample_value  
+    | REJECT_TYPE = value | percentage,  
+    | REJECT_VALUE = reject_value,  
+    | REJECT_SAMPLE_VALUE = reject_sample_value,
+    | REJECTED_ROW_LOCATION = '\REJECT_Directory'
   
 }  
 ```  
@@ -182,6 +181,12 @@ CREATE EXTERNAL TABLE [ database_name . [ schema_name ] . | schema_name. ] table
   
  LOCATION =  '*folder_or_filepath*'  
  Spécifie le dossier, ou le chemin et le nom du fichier, où se trouvent les données Hadoop ou Azure Blob Storage. L’emplacement commence au dossier racine. Le dossier racine est l’emplacement de données qui est spécifié dans la source de données externe.  
+
+
+Dans SQL Server, l’instruction CREATE EXTERNAL TABLE crée le chemin et le dossier s’ils n’existent pas déjà. Vous pouvez ensuite utiliser INSERT INTO pour exporter les données d’une table SQL Server locale dans la source de données externe. Pour plus d’informations, consultez [Requêtes PolyBase](/sql/relational-databases/polybase/polybase-queries). 
+
+Dans SQL Data Warehouse et Analytics Platform System, l’instruction [CREATE EXTERNAL TABLE AS SELECT](create-external-table-as-select-transact-sql.md) crée le chemin et le dossier s’ils n’existent pas. Dans ces deux produits, CREATE EXTERNAL TABLE ne crée pas le chemin ni le dossier.
+
   
  Si vous spécifiez LOCATION comme étant un dossier, une requête PolyBase qui sélectionne des données dans la table externe récupère les fichiers dans le dossier et dans tous ses sous-dossiers. Tout comme Hadoop, PolyBase ne retourne pas le contenu des dossiers masqués. Il ne retourne pas non plus les fichiers dont le nom commence par un trait de soulignement (_) ou un point (.).  
   
@@ -230,7 +235,8 @@ CREATE EXTERNAL TABLE [ database_name . [ schema_name ] . | schema_name. ] table
 > [!NOTE]  
 >  Étant donné que PolyBase calcule le pourcentage de lignes ayant échoué à intervalles, le pourcentage de lignes ayant échoué peut dépasser la valeur de *reject_value*.  
   
- Exemple :  
+
+Exemple :  
   
  Cet exemple montre comment les trois options REJECT interagissent les unes avec les autres. Par exemple, si REJECT_TYPE = percentage, REJECT_VALUE = 30 et REJECT_SAMPLE_VALUE = 100, le scénario suivant peut se produire :  
   
@@ -243,6 +249,13 @@ CREATE EXTERNAL TABLE [ database_name . [ schema_name ] . | schema_name. ] table
 -   Le pourcentage de lignes ayant échoué est recalculé et on obtient 50 %. Le pourcentage de lignes ayant échoué a donc dépassé la valeur de rejet de 30 %.  
   
 -   La requête PolyBase échoue après le rejet de 50 % des 200 premières lignes qu’elle a tenté de retourner. Notez que les lignes correspondantes sont retournées avant que la requête PolyBase ne détecte que le seuil de rejet a été dépassé.  
+  
+REJECTED_ROW_LOCATION = *Emplacement de répertoire*
+  
+  Spécifie le répertoire dans la Source de données externe dans lequel les lignes rejetées et le fichier d’erreur correspondant doivent être écrits.
+Si le chemin spécifié n’existe pas, PolyBase en crée un en votre nom. Un répertoire enfant est créé sous le nom « _rejectedrows ». Le caractère «_   » garantit que le répertoire est placé dans une séquence d’échappement pour le traitement d’autres données, sauf s’il est explicitement nommé dans le paramètre d’emplacement (location). Dans ce répertoire figure un dossier qui est créé d’après l’heure de soumission du chargement dans le format YearMonthDay - HourMinuteSecond (par exemple, 20180330-173205). Dans ce dossier, deux types de fichiers sont écrits : le fichier _reason (raison) et le fichier de données. 
+
+Les fichiers de raison et les fichiers de données ont tous deux le queryID associé à l’instruction CTAS. Comme les données et la raison se trouvent dans des fichiers distincts, les fichiers correspondants ont un suffixe analogue. 
   
  Options de table externe partitionnée  
  Spécifie la source de données externe (source de données non SQL Server) et une méthode de distribution pour la [requête de base de données élastique](https://azure.microsoft.com/documentation/articles/sql-database-elastic-query-overview/).  

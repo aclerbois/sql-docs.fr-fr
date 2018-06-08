@@ -1,17 +1,16 @@
 ---
 title: Projets et solutions Integration Services (SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssis.importprojectwizard.f1
 helpviewer_keywords:
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - folders [Integration Services]
 - projects [Integration Services], about projects
 ms.assetid: 28ea8120-0a79-4029-93f0-07d521b32bee
-caps.latest.revision: 
+caps.latest.revision: 63
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b1d5948bbcd6531b5a69cc85699cbdf06d87c662
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d4e577a650ddc06599d65d5ea87f34e786ccefc9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-ssis-projects-and-solutions"></a>Projets et solutions Integration Services (SSIS)
   [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] fournit [!INCLUDE[ssBIDevStudioFull](../includes/ssbidevstudiofull-md.md)] pour le développement de packages [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] .  

@@ -1,36 +1,23 @@
 ---
 title: Surveiller une Instance Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- monitoring [Analysis Services - multidimensional data]
-- multidimensional data [Analysis Services], monitoring
-- monitoring performance [SQL Server], SQL Server Profiler
-- performance [SQL Server], monitoring tools
-ms.assetid: 2f0ab717-05f3-427e-b8cd-a8bdca374add
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5c583616f8ba9a7ae1f4104e22cf5dd3a4ec5d87
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: c0cea9747a87286d0eb3e71ae078772fc073ad6f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="monitor-an-analysis-services-instance"></a>Analyser une instance Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Surveillez les performances de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] en utilisant [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] ou l’Analyseur de performances, une application parfois désignée sous l’appellation **PerfMon**. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de créer et gérer des traces et analyser et relire les résultats de trace. L'Analyseur de performances rend compte de l'état du serveur, indexé en fonction de certains compteurs qui sont présentés dans la prochaine section.  
+  Surveillez les performances de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] en utilisant [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] ou l’Analyseur de performances, une application parfois désignée sous l’appellation **PerfMon**. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]vous permet de créer et gérer des traces et analyser et relire les résultats de trace. L'Analyseur de performances rend compte de l'état du serveur, indexé en fonction de certains compteurs qui sont présentés dans la prochaine section.  
   
 > [!NOTE]  
 >  Pour plus d’informations sur la surveillance, consultez le [Guide des opérations SQL Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=225539).  
@@ -44,7 +31,7 @@ Surveillez les performances de [!INCLUDE[ssASnoversion](../../includes/ssasnover
   
  [Surveiller Analysis Services avec des événements étendus SQL Server](../../analysis-services/instances/monitor-analysis-services-with-sql-server-extended-events.md)  
   
- [Utiliser dynamique vues de gestion &#40; vues de gestion dynamique &#41; pour surveiller Analysis Services](../../analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services.md)  
+ [Utiliser dynamique vues de gestion & #40 ; vues de gestion dynamique & #41 ; pour surveiller Analysis Services](../../analysis-services/instances/use-dynamic-management-views-dmvs-to-monitor-analysis-services.md)  
   
  [Compteurs de performance ](../../analysis-services/instances/performance-counters-ssas.md)  
   

@@ -1,27 +1,24 @@
 ---
 title: Membres de SQLServerPreparedStatement | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2363902f-d4c6-4cd4-a5fc-86079eb9e418
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 05f80d22f4eb968f6db9ce24a8c5e9808bd43356
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 275115e8d23c48a564528de57fee14ae19513e00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverpreparedstatement-members"></a>Membres de SQLServerPreparedStatement
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -45,12 +42,12 @@ ms.lasthandoff: 11/18/2017
 |Nom| Description|  
 |----------|-----------------|  
 |[addBatch](../../../connect/jdbc/reference/addbatch-method-sqlserverpreparedstatement.md)|Ajoute un ensemble de paramètres au lot de commandes pour cet objet d’instruction.|  
-|[Annuler](../../../connect/jdbc/reference/cancel-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Annule l’instruction SQL en cours d’exécution par cet objet d’instruction.|  
+|[annuler](../../../connect/jdbc/reference/cancel-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Annule l’instruction SQL en cours d’exécution par cet objet d’instruction.|  
 |[clearBatch](../../../connect/jdbc/reference/clearbatch-method-sqlserverpreparedstatement.md)|Vide la liste actuelle des commandes SQL pour ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
 |[clearParameters](../../../connect/jdbc/reference/clearparameters-method-sqlserverpreparedstatement.md)|Efface immédiatement les valeurs des paramètres actuels.|  
 |[clearWarnings](../../../connect/jdbc/reference/clearwarnings-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Efface tous les avertissements signalés sur cet objet d’instruction.|  
 |[Fermer](../../../connect/jdbc/reference/close-method-sqlserverpreparedstatement.md)|Libère les ressources JDBC de cet objet d’instruction immédiatement au lieu de patienter jusqu'à leur libération automatique et de base de données.|  
-|[exécuter](../../../connect/jdbc/reference/execute-method-sqlserverpreparedstatement.md)|Exécute l’instruction SQL dans cet objet d’instruction, ce qui peut être n’importe quel type d’instruction SQL.|  
+|[execute](../../../connect/jdbc/reference/execute-method-sqlserverpreparedstatement.md)|Exécute l’instruction SQL dans cet objet d’instruction, ce qui peut être n’importe quel type d’instruction SQL.|  
 |[executeBatch](../../../connect/jdbc/reference/executebatch-method-sqlserverpreparedstatement.md)|Envoie un lot de commandes à exécuter à la base de données. En cas d'exécution correcte de toutes les commandes, un tableau des nombres de mises à jour est retourné.|  
 |[executeQuery](../../../connect/jdbc/reference/executequery-method-sqlserverpreparedstatement.md)|Exécute la requête SQL dans cet objet d’instruction et retourne le [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) objet qui est généré par la requête.|  
 |[executeUpdate](../../../connect/jdbc/reference/executeupdate-method-sqlserverpreparedstatement.md)|Exécute l’instruction SQL dans cet objet d’instruction, qui doit être une SQL INSERT, l’instruction UPDATE, MERGE ou DELETE ; ou une instruction SQL qui ne retourne rien, telle qu’une instruction DDL.|  
@@ -71,7 +68,7 @@ ms.lasthandoff: 11/18/2017
 |[getResultSetType](../../../connect/jdbc/reference/getresultsettype-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Récupère le jeu de résultats type pour [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) objets générés par cet objet d’instruction.|  
 |[getUpdateCount](../../../connect/jdbc/reference/getupdatecount-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md),) récupère le résultat actuel en tant qu’un nombre de mises à jour.|  
 |[getWarnings](../../../connect/jdbc/reference/getwarnings-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Récupère le premier avertissement signalé par des appels sur cet objet d’instruction.|  
-|[isClosed](../../../connect/jdbc/reference/isclosed-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Indique si cet objet d’instruction a été fermé.|  
+|[IsClosed](../../../connect/jdbc/reference/isclosed-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Indique si cet objet d’instruction a été fermé.|  
 |[isPoolable](../../../connect/jdbc/reference/ispoolable-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Retourne une valeur qui indique s'il est possible d'ajouter une instruction au regroupement d'instructions fourni par l'utilisateur.|  
 |[isWrapperFor](../../../connect/jdbc/reference/iswrapperfor-method-sqlserverpreparedstatement.md)|Indique si cet objet d'instruction est un wrapper pour l'interface spécifiée.|  
 |[setArray](../../../connect/jdbc/reference/setarray-method-sqlserverpreparedstatement.md)|Définit le nombre de paramètre désigné à l’objet de tableau donné.|  
@@ -81,7 +78,7 @@ ms.lasthandoff: 11/18/2017
 |[setBlob](../../../connect/jdbc/reference/setblob-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné à l’objet Blob spécifié.|  
 |[SetBoolean](../../../connect/jdbc/reference/setboolean-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné à l’objet **booléenne** valeur.|  
 |[setByte](../../../connect/jdbc/reference/setbyte-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné à l’objet **octets** valeur.|  
-|[setBytes](../../../connect/jdbc/reference/setbytes-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné selon le tableau d'octets spécifié.|  
+|[SetBytes](../../../connect/jdbc/reference/setbytes-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné selon le tableau d'octets spécifié.|  
 |[setCharacterStream](../../../connect/jdbc/reference/setcharacterstream-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné à l’objet Reader spécifié.|  
 |[setClob](../../../connect/jdbc/reference/setclob-method-sqlserverpreparedstatement.md)|Définit le paramètre désigné à l’objet Clob donné.|  
 |[setCursorName](../../../connect/jdbc/reference/setcursorname-method-sqlserverstatement.md)|(Héritée de [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md).) Affecte la chaîne spécifiée en tant que nom de curseur SQL en vue de son utilisation par les méthodes d'exécution suivantes.|  

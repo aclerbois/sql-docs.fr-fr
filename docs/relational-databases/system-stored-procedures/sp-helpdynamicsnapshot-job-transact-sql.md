@@ -1,16 +1,15 @@
 ---
-title: sp_helpdynamicsnapshot_job (Transact-SQL) | Documents Microsoft
-ms.custom: 
+title: sp_helpdynamicsnapshot_job (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -26,16 +25,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_helpdynamicsnapshot_job
 ms.assetid: d6dfdf26-f874-495f-a8a6-8780699646d7
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8f9accc8ae7ffb64d82fa10c3b60a2f8fec44b8a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 17a7d69869e9879d485f1a8cac107836a5984a44
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sphelpdynamicsnapshotjob-transact-sql"></a>sp_helpdynamicsnapshot_job (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -55,10 +53,10 @@ sp_helpdynamicsnapshot_job [ [ @publication = ] 'publication' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@publication =** ] **'***publication***'**  
- Nom de la publication. *publication* est **sysname**, avec une valeur par défaut  **%** , qui retourne des informations sur tous les travaux de capture instantanée de données filtrées qui correspondent à la chaîne *dynamic_snapshot_jobid*et *dynamic_snapshot_jobname*pour toutes les publications.  
+ Nom de la publication. *publication* est **sysname**, avec une valeur par défaut **%**, qui retourne des informations sur tous les travaux de capture instantanée de données filtrées qui correspondent à la chaîne *dynamic_ snapshot_jobid*et *dynamic_snapshot_jobname*pour toutes les publications.  
   
  [  **@dynamic_snapshot_jobname =** ] **'***dynamic_snapshot_jobname***'**  
- Nom d'un travail d'instantané de données filtrées. *dynamic_snapshot_jobname*est **sysname**, avec comme valeur par défaut  **%** », qui retourne tous les travaux dynamiques d’une publication avec l’objet *dynamic_snapshot_jobid*. Si aucun nom de travail n'est défini explicitement lors de la création du travail, le nom du travail a le format suivant :  
+ Nom d'un travail d'instantané de données filtrées. *dynamic_snapshot_jobname*est **sysname**, avec comme valeur par défaut **%**», qui retourne tous les travaux dynamiques d’une publication avec l’objet *dynamic_ snapshot_jobid*. Si aucun nom de travail n'est défini explicitement lors de la création du travail, le nom du travail a le format suivant :  
   
 ```  
 'dyn_' + <name of the standard snapshot job> + <GUID>  
@@ -69,7 +67,7 @@ sp_helpdynamicsnapshot_job [ [ @publication = ] 'publication' ]
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
-|Nom de colonne|Type de données|Description|  
+|Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**id**|**int**|Identifie le travail d'instantané de données filtrées.|  
 |**job_name**|**sysname**|Nom du travail d'instantané de données filtrées.|  
@@ -85,8 +83,8 @@ sp_helpdynamicsnapshot_job [ [ @publication = ] 'publication' ]
 |**frequency_recurrence_factor**|**int**|Nombre de semaines ou de mois entre les exécutions planifiées de l'Agent.|  
 |**active_start_date**|**int**|Date de la première exécution planifiée de l'Agent, au format AAAAMMJJ.|  
 |**active_end_date**|**int**|Date de la dernière exécution planifiée de l'Agent, au format AAAAMMJJ.|  
-|**heure_de_début_active**|**int**|Heure de la première exécution planifiée de l'Agent, au format HHMMSS.|  
-|**heure_fin_active**|**int**|Heure de la dernière exécution planifiée de l'Agent, au format HHMMSS.|  
+|**active_start_time**|**int**|Heure de la première exécution planifiée de l'Agent, au format HHMMSS.|  
+|**active_end_time**|**int**|Heure de la dernière exécution planifiée de l'Agent, au format HHMMSS.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
@@ -96,7 +94,7 @@ sp_helpdynamicsnapshot_job [ [ @publication = ] 'publication' ]
   
  Si toutes les valeurs par défaut des paramètres sont utilisées, les informations sur tous les travaux d'instantané de données partitionnées pour l'ensemble de la base de données de publication sont renvoyées.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe le **db_owner** fixe le rôle de base de données et la liste d’accès pour la publication peut exécuter **sp_helpdynamicsnapshot_job**.  
   
 ## <a name="see-also"></a>Voir aussi  

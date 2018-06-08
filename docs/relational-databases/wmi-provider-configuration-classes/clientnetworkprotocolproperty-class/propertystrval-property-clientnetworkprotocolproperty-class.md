@@ -1,16 +1,15 @@
 ---
-title: "Propriété PropertyStrVal (classe ClientNetworkProtocolProperty) | Documents Microsoft"
-ms.custom: 
+title: Propriété PropertyStrVal (classe ClientNetworkProtocolProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - PropertyStrVal Property (ClientNetworkProtocolProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - PropertyStrVal property
 ms.assetid: eeb15b13-4fee-47ac-81c3-cba19d450bd9
-caps.latest.revision: 
+caps.latest.revision: 29
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e7c5a8826a3dddb1bfb2d51fab47a69bb1e57a21
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 49066d42fa531ae4381e51b8632e1c9dc1c7b1b1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="propertystrval-property-clientnetworkprotocolproperty-class"></a>Propriété PropertyStrVal (classe ClientNetworkProtocolProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

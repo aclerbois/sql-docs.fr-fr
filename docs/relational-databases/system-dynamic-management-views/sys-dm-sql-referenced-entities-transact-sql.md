@@ -1,16 +1,13 @@
 ---
-title: sys.dm_sql_referenced_entities (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_sql_referenced_entities (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 11/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_sql_referenced_entities_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_sql_referenced_entities dynamic management function
 ms.assetid: 077111cb-b860-4d61-916f-bac5d532912f
-caps.latest.revision: 
+caps.latest.revision: 46
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8af92c77cf5ab1f1c43f5c4cb529fe97b7de787a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a5eef60da505ab939908c22ce47311dfb5f070ea
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmsqlreferencedentities-transact-sql"></a>sys.dm_sql_referenced_entities (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -71,12 +68,12 @@ sys.dm_sql_referenced_entities (
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ *schema_name*. ] *referencing_entity_name*  
+ [ *nom_schéma*. ] *referencing_entity_name*  
  Nom de l'entité de référence. *schema_name* est requis lorsque la classe de référence est OBJECT.  
   
  *schema_name.referencing_entity_name* est **nvarchar (517)**.  
   
- *<referencing_class>* ::=  { OBJECT | DATABASE_DDL_TRIGGER   | SERVER_DDL_TRIGGER }  
+ *< Referencing_class >* :: = {objet | DATABASE_DDL_TRIGGER | SERVER_DDL_TRIGGER}  
  Classe de l'entité de référence spécifiée. Une seule classe peut être spécifiée par instruction.  
   
  *< referencing_class >* est **nvarchar (60)**.  
@@ -86,7 +83,7 @@ sys.dm_sql_referenced_entities (
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |referencing_minor_id|**int**|ID de colonne lorsque l'entité de référence est une colonne ; sinon 0. N'accepte pas la valeur NULL.|  
-|referenced_server_name|**sysname**|Nom du serveur de l'entité référencée.<br /><br /> Cette colonne est remplie pour les dépendances entre serveurs qui sont établies en spécifiant un nom en quatre parties valide. Pour plus d’informations sur les noms en plusieurs parties, consultez [Conventions de syntaxe Transact-SQL &#40; Transact-SQL &#41; ](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).<br /><br /> NULL pour les dépendances non liées au schéma pour lesquelles l'entité a été référencée sans spécifier un nom en quatre parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
+|referenced_server_name|**sysname**|Nom du serveur de l'entité référencée.<br /><br /> Cette colonne est remplie pour les dépendances entre serveurs qui sont établies en spécifiant un nom en quatre parties valide. Pour plus d’informations sur les noms en plusieurs parties, consultez [Conventions de syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).<br /><br /> NULL pour les dépendances non liées au schéma pour lesquelles l'entité a été référencée sans spécifier un nom en quatre parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
 |referenced_database_name|**sysname**|Nom de la base de données de l'entité référencée.<br /><br /> Cette colonne est remplie pour les références des bases de données croisées et entre serveurs qui sont établies en spécifiant un nom en trois ou quatre parties valide.<br /><br /> NULL pour les références non liées au schéma en cas de spécification à l'aide d'un nom en une ou deux parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
 |referenced_schema_name|**sysname**|Schéma auquel l'entité référencée appartient.<br /><br /> NULL pour les références non liées au schéma dans lesquelles l'entité a été référencée sans spécifier le nom de schéma.<br /><br /> Jamais NULL pour les références liées au schéma.|  
 |referenced_entity_name|**sysname**|Nom de l'entité référencée. N'accepte pas la valeur NULL.|  
@@ -102,7 +99,7 @@ sys.dm_sql_referenced_entities (
 |is_select_all|**bit**|**S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> 1 = L'objet est utilisé dans une clause SELECT * (au niveau de l'objet uniquement).|  
 |is_all_columns_found|**bit**|**S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> 1 = Toutes les dépendances de colonne pour l'objet ont été trouvées.<br /><br /> 0 = Les dépendances de colonne pour l'objet n'ont pas été trouvées.|
 |is_insert_all|**bit**|**S'applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> 1 = l’objet est utilisé dans une instruction INSERT sans liste de colonnes (au niveau objet uniquement).|  
-|is_incomplete|**bit**|**S’applique aux**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> 1 = l’objet ou de la colonne a une erreur de liaison et est incomplet.|
+|is_incomplete|**bit**|**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] SP2 à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> 1 = l’objet ou de la colonne a une erreur de liaison et est incomplet.|
   
 ## <a name="exceptions"></a>Exceptions  
  Retourne un jeu de résultats vide sous chacune des conditions suivantes :  
@@ -128,14 +125,14 @@ sys.dm_sql_referenced_entities (
 |-----------------|------------------------|-----------------------|  
 |Table|Oui*|Oui|  
 |Affichage|Oui|Oui|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] procédure stockée **|Oui|Oui|  
+|Procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)]**|Oui|Oui|  
 |Procédure stockée CLR|non|Oui|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] fonction définie par l'utilisateur|Oui|Oui|  
+|Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur|Oui|Oui|  
 |Fonction CLR définie par l'utilisateur|non|Oui|  
 |Déclencheur CLR (DML et DDL)|non|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DML|Oui|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DDL au niveau de la base de données|Oui|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DDL au niveau du serveur|Oui|non|  
+|Déclencheur DML [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau de la base de données [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau du serveur [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
 |Procédures stockées étendues|non|Oui|  
 |File d'attente|non|Oui|  
 |Synonyme|non|Oui|  
@@ -143,7 +140,7 @@ sys.dm_sql_referenced_entities (
 |Collection de schémas XML|non|Oui|  
 |Fonction de partition|non|Oui|  
   
- \*Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
+ \* Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
   
  ** Les procédures stockées numérotées avec une valeur entière supérieure à 1 ne sont pas suivies en tant qu'entité de référence ou référencée.  
   

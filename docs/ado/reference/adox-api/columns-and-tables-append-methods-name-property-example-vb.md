@@ -1,33 +1,30 @@
 ---
-title: "Tables et colonnes ajouter des méthodes, nom de propriété Exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Tables et colonnes ajouter des méthodes, nom de propriété Exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Name property [ADOX], Visual Basic example
 - Append method [ADOX], Visual Basic example
 ms.assetid: 678e5546-df5d-4cd0-bfe9-6cf13cb385c0
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8d8756e3e72b656206ed4e30bc54ba42f00f25ef
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 922e2cf68402fe47a358d46ba2209b8506a46e3a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columns-and-tables-append-methods-name-property-example-vb"></a>Colonnes et Tables ajouter des méthodes, exemple de propriété Name (VB)
 Le code suivant montre comment créer une nouvelle table.  

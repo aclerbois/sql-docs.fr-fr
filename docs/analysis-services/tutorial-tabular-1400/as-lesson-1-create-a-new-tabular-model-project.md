@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 1 : créer un projet de modèle tabulaire | Documents Microsoft"
-description: "Décrit comment créer un nouveau projet de didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 1 : créer un projet de modèle tabulaire | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 6b8d24a31ade8fe621ef2a71b932e87c13211451
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 403e6d04d339e3126afe964bd919304d04295c0b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-tabular-model-project"></a>Créer un projet de modèle tabulaire
 
@@ -55,7 +47,7 @@ Cet article est la première leçon du didacticiel de conception de modèle tabu
       
 6.  Dans **le niveau de compatibilité**, sélectionnez **2017 / Azure Analysis Services de SQL Server (1400)**.   
  
-    ![as-lesson1-tmd](../tutorial-tabular-1400/media/as-lesson1-tmd.png)
+    ![en tant que-lesson1-tmd](../tutorial-tabular-1400/media/as-lesson1-tmd.png)
       
     Si vous ne voyez pas SQL Server 2017 / Azure Analysis Services (1400) dans la zone de liste de niveau de compatibilité, vous n’utilisez pas la dernière version de SQL Server Data Tools. Pour obtenir la version la plus récente, consultez [Installer les outils de données SQL Server](https://docs.microsoft.com/sql/ssdt/download-sql-server-data-tools-ssdt).  
       
@@ -66,15 +58,15 @@ Maintenant que vous avez créé un nouveau projet de modèle tabulaire, prenons 
   
 Une fois votre projet est créé, il s’ouvre dans Visual Studio. Sur le côté droit, dans **l’Explorateur de modèles tabulaires**, vous voyez une arborescence des objets dans votre modèle. Étant donné que vous n’avez pas encore importé des données, les dossiers sont vides. Vous pouvez cliquer sur un dossier de l’objet pour effectuer des actions, similaires à la barre de menus. À mesure que vous parcourez ce didacticiel, vous utilisez l’Explorateur de modèles tabulaires pour naviguer dans différents objets dans votre projet de modèle.
 
-![as-lesson1-tme](../tutorial-tabular-1400/media/as-lesson1-tme.png)
+![en tant que-lesson1-durée](../tutorial-tabular-1400/media/as-lesson1-tme.png)
 
 Cliquez sur le **l’Explorateur de solutions** onglet. Ici, vous voyez votre **Model.bim** fichier. Si vous ne voyez pas la fenêtre du concepteur vers la gauche (la fenêtre vide avec l’onglet Model.bim), dans **l’Explorateur de solutions**, sous **projet AW Internet Sales**, double-cliquez sur le **Model.bim** fichier. Le fichier Model.bim contient les métadonnées pour votre projet de modèle. 
 
-![as-lesson1-se](../tutorial-tabular-1400/media/as-lesson1-se.png)
+![en tant que-lesson1-se](../tutorial-tabular-1400/media/as-lesson1-se.png)
   
 Cliquez sur **Model.bim**. Dans le **propriétés** fenêtre, vous consultez les propriétés de modèle, qui est plus importantes le **DirectQuery Mode** propriété. Cette propriété spécifie si le modèle est déployé en mode In-Memory (désactivé) ou en mode DirectQuery (activé). Pour ce didacticiel, vous créez et déployez votre modèle en mode In-Memory.
 
-![as-lesson1-properties](../tutorial-tabular-1400/media/as-lesson1-properties.png)
+![en tant que-lesson1-propriétés](../tutorial-tabular-1400/media/as-lesson1-properties.png)
   
 Lorsque vous créez un projet de modèle, certaines de ses propriétés sont définies automatiquement en fonction des paramètres de modélisation des données qui peuvent être spécifiés dans le **outils** menu > **Options** boîte de dialogue. Les propriétés de sauvegarde de données, de rétention de l'espace de travail et du serveur de l'espace de travail spécifient comment et où la base de données d'espace de travail (votre base de données de conception de modèle) est sauvegardée, conservée en mémoire et construite. Vous pouvez modifier ces paramètres ultérieurement si nécessaire, mais pour l’instant, laissez ces propriétés inchangées.  
 

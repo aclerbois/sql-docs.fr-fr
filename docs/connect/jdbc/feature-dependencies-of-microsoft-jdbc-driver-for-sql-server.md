@@ -1,28 +1,24 @@
 ---
-title: "Fonctionnalité des dépendances du pilote JDBC de Microsoft pour SQL Server | Documents Microsoft"
-ms.custom: 
+title: Fonctionnalité des dépendances du pilote JDBC de Microsoft pour SQL Server | Documents Microsoft
+ms.custom: ''
 ms.date: 02/28/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 939a8773-2583-49a4-bf00-6b892fbe39dc
-caps.latest.revision: 
+caps.latest.revision: 57
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 703a27220a80744c46ca0bc7667756cec1ab6596
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 052628258ae1d8c1f31430ea132ed594a976be98
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="feature-dependencies-of-microsoft-jdbc-driver-for-sql-server"></a>Dépendances de fonctionnalité de Microsoft JDBC Driver pour SQL Server
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -95,7 +91,7 @@ Les projets spécifiques qui nécessitent une des deux fonctionnalités ci-dessu
         - Dans cette version du pilote, votre application ne requiert pas l’utilisation de ADALSQL. DLL. Selon les systèmes d’exploitation. Pour **les systèmes d’exploitation Non Windows**, le pilote requiert le ticket Kerberos pour utiliser l’authentification de ActiveDirectoryIntegrated. Consultez [ticket Kerberos de définie sur Windows, Linux et Mac](https://docs.microsoft.com/sql/connect/jdbc/connecting-using-azure-active-directory-authentication#set-kerberos-ticket-on-windows-linux-and-mac) pour plus d’informations. Pour **systèmes d’exploitation Windows**, pilote par défaut vérifie si sqljdbc_auth.dll est chargé et ne nécessite pas de dépendance le programme d’installation ou adal4j du ticket Kerberos. Toutefois, si sqljdbc_auth.dll n’est pas chargé, pilote se comporte de la même façon que les systèmes d’exploitation non Windows, nécessite le programme d’installation, ce qui est décrit dans l’exemple suivant : un exemple d’application à l’aide de cette fonctionnalité, vous pouvez trouver [ici](../../connect/jdbc/connecting-using-azure-active-directory-authentication.md) .
 
  ## <a name="see-also"></a>Voir aussi  
- [JDBC Driver GitHub Repository](https://github.com/microsoft/mssql-jdbc)  
+ [Référentiel GitHub de pilote JDBC](https://github.com/microsoft/mssql-jdbc)  
  [Référence d’API du pilote JDBC](../../connect/jdbc/reference/jdbc-driver-api-reference.md)  
   
   

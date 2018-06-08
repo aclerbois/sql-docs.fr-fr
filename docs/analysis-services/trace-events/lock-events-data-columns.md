@@ -1,31 +1,23 @@
 ---
-title: "Verrouiller des colonnes de données d’événements | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Verrouiller des colonnes de données d’événements | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: trace-events
 ms.topic: reference
-ms.assetid: c223157f-41a0-405c-bc1a-41c999506936
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 71b4a1d084d56cdb260ac6ed4dd9688a7e388df3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 6e11799b722035a5fafaca9b5a0cde2529c41102
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lock-events-data-columns"></a>Colonnes de données des événements de verrou
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La catégorie d'événements Verrous contient les classes d'événements suivantes :  
+  La catégorie d'événements Verrous contient les classes d'événements suivantes :  
   
 |**ID d'événement**|**Nom d'événement**|**Description de l'événement**|  
 |------------------|--------------------|---------------------------|  

@@ -1,33 +1,30 @@
 ---
 title: Flux (syntaxe ADO pour Visual C++) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - Stream collection [ADO]
 ms.assetid: dddcceef-9296-4fb3-8eca-94b17d0148de
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 54fedd82115df28db578c866a24ebc7ba0d345af
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: f3476b846f70f07ca6fd030ac4e25a3c69cfaf88
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stream-ado-for-visual-c-syntax"></a>Flux (syntaxe ADO pour Visual C++)
 ## <a name="methods"></a>Méthodes  

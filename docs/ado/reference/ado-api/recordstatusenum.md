@@ -1,33 +1,30 @@
 ---
 title: RecordStatusEnum | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - RecordStatusEnum
 helpviewer_keywords:
 - RecordStatusEnum enumeration [ADO]
 ms.assetid: 506fdd70-4452-4e83-95d5-c94311988dfa
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2315d18add9b25aab826d47346d8725aaa2af6e7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 0b46c441bf8b54103c8a3b277e1ef21f18cdfca6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recordstatusenum"></a>RecordStatusEnum
 Spécifie le [état](../../../ado/reference/ado-api/status-property-ado-recordset.md) d’un enregistrement en ce qui concerne les mises à jour par lots et d’autres opérations en bloc.  

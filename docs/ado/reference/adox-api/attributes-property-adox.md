@@ -1,17 +1,15 @@
 ---
-title: "Attributs, propriété (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Attributs, propriété (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Column::put_Attributes
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - Attributes property [ADOX]
 ms.assetid: e3abb359-79a3-4c22-b3a8-2900817e0d23
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5502bb8b4bac9945ec21aa1fc9c4e94c2636156d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6412d06a833f85ff8cde592479112a739e4bbc7d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="attributes-property-adox"></a>Attributs, propriété (ADOX)
 Décrit les caractéristiques de la colonne.  

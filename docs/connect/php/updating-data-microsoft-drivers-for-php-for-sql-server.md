@@ -2,27 +2,24 @@
 title: Mise à jour des données (pilotes Microsoft SQL Server pour PHP) | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: dd323f83-f415-4fa4-8457-89dad6d321d0
-caps.latest.revision: ''
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b34df07ff8c95f4ec08cc853f5a18ba8675ed016
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: ca9f235b5d4d96c2d5ad335e7b9c1ad4236c8bc4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-data-microsoft-drivers-for-php-for-sql-server"></a>Mise à jour des données (Pilotes Microsoft SQL Server pour PHP)
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

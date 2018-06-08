@@ -1,30 +1,29 @@
 ---
-title: "Méthode Execute (java.lang.String, int[]) | Documents Microsoft"
-ms.custom: 
+title: Méthode Execute (java.lang.String, int[]) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerStatement.execute (javal.lang.String.int[])
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerStatement.execute (javal.lang.String.int[])
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: dc73d1c3-e756-43af-b1fc-ac438cbd0965
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3fa9cc8796aeb415a58b8c4d65c2f346f57febb0
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: afe080df57157ae62e604ff8057027a45df39fc1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-method-javalangstring-int"></a>Méthode execute (java.lang.String, int[])
 
@@ -39,7 +38,7 @@ public final boolean execute(
 ```
 
 #### <a name="parameters"></a>Paramètres
-*SQL*
+*sql*
 
 A **chaîne** qui contient une instruction SQL.
 
@@ -58,7 +57,7 @@ Cette méthode execute est spécifiée par la méthode d’exécution dans l’i
 
 ## <a name="see-also"></a>Voir aussi
 
-[exécuter la méthode &#40; SQLServerStatement &#41;](./execute-method-sqlserverstatement.md)
+[exécuter la méthode &#40;SQLServerStatement&#41;](./execute-method-sqlserverstatement.md)
 
 [Membres de SQLServerStatement](./sqlserverstatement-members.md)
 

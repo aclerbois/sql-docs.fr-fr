@@ -1,32 +1,19 @@
 ---
 title: Utiliser SQL Server Profiler pour surveiller Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 01/23/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Profiler, Analysis Services
-- monitoring Analysis Services [SQL Server]
-- performance [Analysis Services], SQL Server Profiler
-- Profiler [SQL Server Profiler], Analysis Services
-ms.assetid: 8b77dafc-4584-4e93-8ad7-299304391bfd
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 736b5de1af85d3143e8b258de0a3b388e5d2ea01
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e9e4407abe5565931994d9dcca4cd0326577dbf4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-sql-server-profiler-to-monitor-analysis-services"></a>Utiliser SQL Server Profiler pour contrôler Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]

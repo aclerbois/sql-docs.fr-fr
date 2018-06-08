@@ -1,31 +1,27 @@
 ---
-title: "Attacher des indicateurs de requête à un repère de plan | Microsoft Docs"
-ms.custom: 
+title: Attacher des indicateurs de requête à un repère de plan | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-plan-guides
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2131f796-6359-4f9e-9047-da0b3d4dedaf
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c40b32936d616205850fe62877eb8b0dc7640486
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: ad96c6c7a9b0904c48f49c5459ce46588bb559b3
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="attach-query-hints-to-a-plan-guide"></a>Attacher des indicateurs de requête à un repère de plan
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Toute combinaison d’indicateurs de requête valides peut être utilisée dans un repère de plan. Lorsqu'un repère de plan correspond à une requête, la clause OPTION spécifiée dans la clause des indicateurs d'un repère de plan est ajoutée à la requête avant qu'elle ne soit compilée et optimisée. Si une requête mise en correspondance avec un repère de plan possède déjà une clause OPTION, les indicateurs de requête spécifiés dans le repère de plan remplacent ceux existant dans la requête. Toutefois, pour qu'un repère de plan corresponde à une requête possédant déjà une clause OPTION, vous devez inclure la clause OPTION de la requête lorsque vous spécifiez le texte de la requête avec laquelle établir la correspondance dans l'instruction sp_create_plan_guide. Si vous souhaitez que les indicateurs spécifiés dans le repère de plan soient ajoutés aux indicateurs qui existent déjà sur la requête, au lieu de les remplacer, vous devez spécifier les indicateurs d'origine et les indicateurs supplémentaires dans la clause OPTION du repère de plan.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Toute combinaison d'indicateurs de requête valides peut être utilisée dans un repère de plan. Lorsqu'un repère de plan correspond à une requête, la clause OPTION spécifiée dans la clause des indicateurs d'un repère de plan est ajoutée à la requête avant qu'elle ne soit compilée et optimisée. Si une requête mise en correspondance avec un repère de plan possède déjà une clause OPTION, les indicateurs de requête spécifiés dans le repère de plan remplacent ceux existant dans la requête. Toutefois, pour qu'un repère de plan corresponde à une requête possédant déjà une clause OPTION, vous devez inclure la clause OPTION de la requête lorsque vous spécifiez le texte de la requête avec laquelle établir la correspondance dans l'instruction sp_create_plan_guide. Si vous souhaitez que les indicateurs spécifiés dans le repère de plan soient ajoutés aux indicateurs qui existent déjà sur la requête, au lieu de les remplacer, vous devez spécifier les indicateurs d'origine et les indicateurs supplémentaires dans la clause OPTION du repère de plan.  
   
 > [!CAUTION]  
 >  Les repères de plan qui utilisent les indicateurs de requête à mauvais escient peuvent entraîner des problèmes de compilation, d'exécution ou de performances. Les repères de plan doivent être utilisés uniquement par des administrateurs de base de données et des développeurs expérimentés.  

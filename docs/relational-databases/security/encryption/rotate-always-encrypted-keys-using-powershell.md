@@ -1,28 +1,26 @@
 ---
-title: "Permuter des clés Always Encrypted à l’aide de PowerShell | Microsoft Docs"
-ms.custom: 
+title: Permuter des clés Always Encrypted à l’aide de PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: security
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: security, sql-database"
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-security
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: security
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5117b4fd-c8d3-48d5-87c9-756800769f31
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 71bd82e9db46d763e5d405ef8749adefcfe32a0f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fed2dac0cb435e906a3c880022f53fdc35880754
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34581981"
 ---
 # <a name="rotate-always-encrypted-keys-using-powershell"></a>Permuter des clés Always Encrypted à l’aide de PowerShell
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -315,7 +313,7 @@ Vous pouvez faire pivoter une clé de chiffrement de colonne à l’aide d’une
 |Étape 3. S’authentifier auprès d’Azure, si votre clé principale de colonne (qui protège la clé de chiffrement de colonne, soumise à permutation) est stockée dans Azure Key Vault. | [Add-SqlAzureAuthenticationContext](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/add-sqlazureauthenticationcontext) | Oui | non
 |Étape 4. Générer une clé de chiffrement de colonne, la chiffrer avec la clé principale de colonne et créer les métadonnées de clé de chiffrement de colonne dans la base de données.  | [New-SqlColumnEncryptionKey](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/new-sqlcolumnencryptionkey)<br><br>**Remarque :** Utilisez une variation de l’applet de commande qui génère et chiffre en interne une clé de chiffrement de colonne.<br>En arrière-plan, l’applet de commande exécute l’instruction [CREATE COLUMN ENCRYPTION KEY (Transact-SQL)](../../../t-sql/statements/create-column-encryption-key-transact-sql.md) pour créer les métadonnées de clé. | Oui | Oui
 |Étape 5. Rechercher toutes les colonnes chiffrées avec l’ancienne clé de chiffrement de colonne. | [Guide de programmation SMO (SQL Server Management Objects)](../../../relational-databases/server-management-objects-smo/sql-server-management-objects-smo-programming-guide.md) | non | Oui
-|Étape 6. Créer un objet *SqlColumnEncryptionSettings* pour chaque colonne concernée.  SqlColumnMasterKeySettings est un objet qui existe en mémoire (dans PowerShell). Il spécifie le schéma de chiffrement cible pour une colonne. Dans ce cas, l’objet doit spécifier que la colonne concernée doit être chiffrée à l’aide de la nouvelle clé de chiffrement de colonne. | [New-SqlColumnEncryptionSettings](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/new-sqlcolumnencryptionkeysettings) | non | non
+|Étape 6. Créer un objet *SqlColumnEncryptionSettings* pour chaque colonne concernée.  SqlColumnMasterKeySettings est un objet qui existe en mémoire (dans PowerShell). Il spécifie le schéma de chiffrement cible pour une colonne. Dans ce cas, l’objet doit spécifier que la colonne concernée doit être chiffrée à l’aide de la nouvelle clé de chiffrement de colonne. | [New-SqlColumnEncryptionSettings](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/new-sqlcolumnencryptionsettings) | non | non
 |Étape 7. Rechiffrer les colonnes identifiées à l’étape 5 à l’aide de la nouvelle clé de chiffrement de colonne. | [Set-SqlColumnEncryption](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/set-sqlcolumnencryption)<br><br>**Remarque :** cette étape peut prendre longtemps. Vos applications ne pourront pas accéder aux tables pendant toute la durée de l’opération ou pendant une partie de l’opération, selon l’approche sélectionnée (en ligne ou hors ligne). | Oui | Oui
 |Étape 8. Supprimer les métadonnées de l’ancienne clé de chiffrement de colonne. | [Remove-SqlColumnEncryptionKey](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/remove-sqlcolumnencryptionkey) | non | Oui
 

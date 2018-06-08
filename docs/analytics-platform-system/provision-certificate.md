@@ -1,32 +1,26 @@
 ---
-title: "Certificat PDW (système de plateforme Analytique) d’approvisionnement"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "La page Configuration de certificats PDW du Gestionnaire de Configuration système Analytique plateforme importe ou supprime le certificat utilisé par PDW."
-ms.date: 01/05/2017
-ms.topic: article
-ms.assetid: 0a423b7d-c6ea-45c1-80b0-26758170594c
-caps.latest.revision: "22"
-ms.openlocfilehash: c6cbaf559e51103648a4238245d44425c4d5af77
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Certificat de configuration - système de plateforme Analytique | Documents Microsoft
+description: Configuration de certificats dans le système de plateforme d’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 82907692bbba3ad92e796e8ecc8bb99e3141cb1a
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="pdw-certificate-provisioning"></a>Configuration de certificats PDW
+# <a name="certificate-provisioning-in-analytics-platform-system"></a>Configuration de certificats dans le système de plateforme Analytique
 Le **fourniture des certificats PDW** page du système de plateforme Analytique**Configuration Manager** importe ou supprime le certificat utilisé par PDW. 
 
 Un certificat pour chiffrer les connexions peut aider à une communication sécurisée au nœud de contrôle via les clients de SQL Server, les outils qui utilisent les pilotes SQL Server PDW, le [Console d’administration](monitor-the-appliance-by-using-the-admin-console.md), et charge les Services d’intégration. 
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Avant d’installer le certificat, procédez comme suit :  
   
 1.  Obtenir un certificat de sécurité. Si vous avez besoin de plus d’informations sur la façon d’obtenir un certificat de sécurité, contactez le Support Microsoft.  
@@ -53,7 +47,7 @@ Les instructions suivantes indiquent comment importer ou de supprimer le certifi
 ### <a name="to-import-the-certificate"></a>Pour importer le certificat  
   
 1.  Lancer le **Configuration Manager**.  
-Pour plus d’informations, consultez [lance le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41; ](launch-the-configuration-manager.md).  
+Pour plus d’informations, consultez [lancer le Gestionnaire de Configuration &#40;système de plateforme Analytique&#41;](launch-the-configuration-manager.md).  
 
 2.  Dans le volet gauche de la **Configuration Manager**, développez **topologie de l’entrepôt de données parallèle**, puis cliquez sur **certificats**.  
   
@@ -84,4 +78,4 @@ SQL Server PDW continuera à chiffrer les connexions en cours, mais n’utilise 
 ![Certificat PDW des appliances DWConfig](media/dwconfig-appl-pdw-cert.png "certificat PDW des appliances DWConfig")  
   
 ## <a name="see-also"></a>Voir aussi  
-[Lancez le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41;](launch-the-configuration-manager.md)  
+[Lancez le Gestionnaire de Configuration &#40;Analytique plate-forme système&#41;](launch-the-configuration-manager.md)  

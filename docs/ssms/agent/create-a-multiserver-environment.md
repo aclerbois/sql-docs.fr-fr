@@ -2,32 +2,30 @@
 title: Créer un environnement multiserveur | Microsoft Docs
 ms.custom: ''
 ms.date: 01/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms-agent
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Agent, multiserver environments
 - master servers [SQL Server], about master servers
 - target servers [SQL Server], about target servers
 - multiserver environments [SQL Server]
 ms.assetid: edc2b60d-15da-40a1-8ba3-f1d473366ee6
-caps.latest.revision: ''
+caps.latest.revision: 6
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a32a243f03f85fcc432c3a84cf31f82cf2e70c69
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 48b5e195f437b3bc173869ac7d8a7334c741e2b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-multiserver-environment"></a>Créer un environnement multiserveur
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]

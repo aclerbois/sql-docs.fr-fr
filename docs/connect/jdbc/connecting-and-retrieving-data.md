@@ -1,27 +1,24 @@
 ---
-title: "Connexion et l’extraction de données | Documents Microsoft"
-ms.custom: 
+title: Connexion et l’extraction de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ce43cc20-46a3-42ff-a3fb-75ad1ed10e08
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 856e4ea4fe28bf8884ea498a747d0bb4e9753699
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 049b3cbc3a5ddebd30aa111f7c3bd62d46360f43
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-and-retrieving-data"></a>Connexion et extraction de données
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

@@ -1,24 +1,21 @@
 ---
-title: "Configurer un conteneur de SQL Server dans Kubernetes pour la haute disponibilité | Documents Microsoft"
-description: "Ce didacticiel montre comment déployer une solution de haute disponibilité de SQL Server avec Kubernetes sur le Service de conteneur Azure."
+title: Configurer un conteneur de SQL Server dans Kubernetes pour la haute disponibilité | Documents Microsoft
+description: Ce didacticiel montre comment déployer une solution de haute disponibilité de SQL Server avec Kubernetes sur le Service de conteneur Azure.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 01/10/2018
 ms.topic: tutorial
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux,mvc
-ms.technology: database-engine
-ms.workload: Inactive
-ms.openlocfilehash: a21856b3a864373f84ad304484ecdd88ac17f52a
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.openlocfilehash: 4aaaee69ab9c81df2161f465c2c725d5b2be3c17
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="configure-a-sql-server-container-in-kubernetes-for-high-availability"></a>Configurer un conteneur de SQL Server dans Kubernetes pour la haute disponibilité
 
@@ -61,7 +58,7 @@ Dans le diagramme suivant, le nœud qui héberge le `mssql-server` conteneur a �
    >[!NOTE]
    >Pour protéger contre les défaillances de nœud, un cluster Kubernetes nécessite plus d’un nœud.
 
-* **Azure CLI 2.0.23**
+* **CLI Azure 2.0.23**
    - Les instructions de ce didacticiel ont été validées par rapport à 2.0.23 CLI d’Azure.
 
 ## <a name="create-an-sa-password"></a>Créer un mot de passe
@@ -279,7 +276,7 @@ Si vous avez configuré le conteneur comme décrit, vous pouvez vous connecter �
 
 Vous pouvez utiliser les applications suivantes pour vous connecter à l’instance de SQL Server. 
 
-* [SSMS](http://docs.microsoft.com/sql/linux/sql-server-linux-develop-use-ssms)
+* [SSMS](http://docs.microsoft.com/sql/linux/sql-server-linux-manage-ssms)
 
 * [SSDT](http://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-ssdt)
 

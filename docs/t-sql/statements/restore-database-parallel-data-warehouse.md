@@ -1,28 +1,26 @@
 ---
 title: RESTORE DATABASE (Parallel Data Warehouse) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d915bfc1-e392-4a3a-9d94-08682cf3c864
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 8
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ba8aa12f38fce6ac00f88f0015008da25a59b88
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ed7e6aeb0630a20ee39d512fc17dfe24040737f2
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="restore-database-parallel-data-warehouse"></a>RESTORE DATABASE (Parallel Data Warehouse)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md.md)]
@@ -82,9 +80,9 @@ RESTORE HEADERONLY
   
 -   Le chemin du répertoire de sauvegarde ne peut pas être un chemin local ni un emplacement sur un nœud d’appliance [!INCLUDE[ssPDW](../../includes/sspdw-md.md)].  
   
--   La longueur maximale du chemin UNC et du nom du répertoire de sauvegarde est de 200 caractères.  
+-   La longueur maximale du chemin UNC et du nom du répertoire de sauvegarde est de 200 caractères.  
   
--   Le serveur ou l’hôte doit être spécifié avec une adresse IP.  
+-   Le serveur ou l’hôte doivent être spécifiés comme une adresse IP.  
   
  RESTORE HEADERONLY  
  Spécifie le retour des seules informations d’en-tête d’une sauvegarde de base de données utilisateur unique. L’en-tête comprend différents champs, notamment le texte descriptif de la sauvegarde et le nom de la sauvegarde. Le nom de la sauvegarde ne doit pas nécessairement être le même que celui du répertoire où sont stockés les fichiers de sauvegarde.  

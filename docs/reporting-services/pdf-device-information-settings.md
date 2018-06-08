@@ -4,7 +4,6 @@ ms.custom: ''
 ms.date: 03/16/2018
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: ''
 ms.component: reporting-services
 ms.reviewer: ''
 ms.suite: pro-bi
@@ -15,16 +14,15 @@ helpviewer_keywords:
 - device information settings [Reporting Services], PDF rendering
 - PDF [Reporting Services]
 ms.assetid: 9a4aabe5-dbdc-4884-b999-1200983fee47
-caps.latest.revision: ''
+caps.latest.revision: 41
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0bd2635a54003fd663dadcf6d3bc5991c1841988
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 0f0ec8d6bfe88182f84078aa8155afed9f149828
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdf-device-information-settings"></a>Paramètres d'informations de périphérique PDF
   Le tableau suivant répertorie les paramètres d'informations de périphérique qui permettent un rendu des rapports au format PDF.  

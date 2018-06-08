@@ -1,17 +1,15 @@
 ---
-title: "Source, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Source, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Cellset::Source
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Source property [ADO MD]
 ms.assetid: 875a99ea-7f1a-4570-87b1-5ecbebbcf845
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1acecf9cbaa00746b23a4655bd845f42af23693e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6b96e3324edbc3374260db80ab17eb733a0cdee0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="source-property-ado-md"></a>Source, propriété (ADO MD)
 Indique la source de données dans le [ensemble de cellules](../../../ado/reference/ado-md-api/cellset-object-ado-md.md).  

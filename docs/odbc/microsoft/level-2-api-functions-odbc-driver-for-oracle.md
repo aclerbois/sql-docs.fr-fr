@@ -1,16 +1,14 @@
 ---
-title: "Fonctions d’API de niveau 2 (le pilote ODBC pour Oracle) | Documents Microsoft"
-ms.custom: 
+title: Fonctions d’API de niveau 2 (le pilote ODBC pour Oracle) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC level 2 API functions [ODBC]
 - functions [ODBC], ODBC driver for Oracle
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - API functions [ODBC]
 - level 2 API functions [ODBC]
 ms.assetid: d9f49520-72d7-4234-8635-260d0ce4199c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 452af0d9daf66cee389f10029ea302efca14cf93
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a3209e07c2601de33b9d83a422ca8f986fb9326b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="level-2-api-functions-odbc-driver-for-oracle"></a>Fonctions d’API de niveau 2 (le pilote ODBC pour Oracle)
 > [!IMPORTANT]  

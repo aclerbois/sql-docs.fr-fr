@@ -1,16 +1,14 @@
 ---
 title: char et varchar (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 7/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - varchar
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - variable-length data types [SQL Server]
 - varchar data type
 ms.assetid: 282cd982-f4fb-4b22-b2df-9e8478f13f6a
-caps.latest.revision: 
+caps.latest.revision: 48
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4c383e3b3ff5b79604454f80443c9042633797bf
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0d07b9fec8168a21ff492ac216f08881ff278932
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="char-and-varchar-transact-sql"></a>char et varchar (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -42,9 +40,9 @@ ms.lasthandoff: 11/21/2017
 Ces types de données sont de longueur fixe ou de longueur variable.  
   
 ## <a name="arguments"></a>Arguments  
-**char** [ ( *n* ) ] Données de type chaîne non-Unicode de longueur fixe. *n* définit la longueur de chaîne et doit être une valeur comprise entre 1 et 8 000. La taille de stockage est égale à *n* octets. Le synonyme ISO de **char** est **character**.
+**char** [ ( *n* ) ] Données de type chaîne non Unicode de longueur fixe. *n* définit la longueur de chaîne et doit être une valeur comprise entre 1 et 8 000. La taille de stockage est égale à *n* octets. Le synonyme ISO de **char** est **character**.
   
-**varchar** [ ( *n* | **max** ) ] Données de type chaîne non-Unicode de longueur variable. *n* définit la longueur de chaîne et peut être une valeur comprise entre 1 et 8 000. **max** indique que la taille de stockage maximale est de 2^31-1 octets (2 Go). La taille mémoire est la longueur réelle des données entrées, plus deux octets. Les synonymes ISO de **varchar** sont **charvarying** ou **charactervarying**.
+**varchar** [ ( *n* | **max** ) ] Données de type chaîne non Unicode de longueur variable. *n* définit la longueur de chaîne et peut être une valeur comprise entre 1 et 8 000. **max** indique que la taille de stockage maximale est de 2^31-1 octets (2 Go). La taille mémoire est la longueur réelle des données entrées, plus deux octets. Les synonymes ISO de **varchar** sont **charvarying** ou **charactervarying**.
   
 ## <a name="remarks"></a>Notes   
 Quand la valeur de *n* n’est spécifiée ni dans une définition de données ni dans une instruction de déclaration de variable, la longueur par défaut est 1. Quand la valeur de *n* n’est pas précisée avec les fonctions CAST et CONVERT, la longueur par défaut est 30.

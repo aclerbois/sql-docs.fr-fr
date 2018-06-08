@@ -1,15 +1,14 @@
 ---
-title: "À l’aide de l’en-tête SQL Server Native Client et les fichiers de bibliothèque | Documents Microsoft"
-ms.custom: 
+title: À l’aide de l’en-tête SQL Server Native Client et les fichiers de bibliothèque | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|applications
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - header files [SQL Server Native Client]
@@ -24,16 +23,16 @@ helpviewer_keywords:
 - ODBC applications, header files
 - SQLNCLI, library files
 ms.assetid: 69889a98-7740-4667-aecd-adfc0b37f6f0
-caps.latest.revision: 
+caps.latest.revision: 63
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f1e71dc914c812e452636eddf664300c2820785b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e7fcb33012d766c2585e11468e23a3591a4b2650
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-the-sql-server-native-client-header-and-library-files"></a>Utilisation des fichiers bibliothèques et de l'en-tête SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -43,7 +42,7 @@ ms.lasthandoff: 01/25/2018
   
  Les fichiers bibliothèque et d'en-tête [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client sont installés à l'emplacement suivant :  
   
- *%Program Files%*\Microsoft SQL Server\110\SDK  
+ *%Program Files%* \Microsoft SQL Server\110\SDK  
   
  Le fichier d'en-tête [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client (sqlncli.h) peut être utilisé pour ajouter la fonctionnalité d'accès aux données [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client à vos applications personnalisées. Le fichier d'en-tête [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client contient l'ensemble des définitions, attributs, propriétés et interfaces nécessaires pour tirer parti des nouvelles fonctionnalités introduites dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)].  
   

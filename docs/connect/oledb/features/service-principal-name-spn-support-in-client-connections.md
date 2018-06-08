@@ -3,14 +3,12 @@ title: Prise en charge du nom de Principal du service (SPN) dans les connexions 
 description: Prise en charge du nom de Principal du service (SPN) dans les connexions clientes
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|features
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -19,13 +17,12 @@ helpviewer_keywords:
 - SPNs [SQL Server]
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 83487ad72148e7b82ccb20194032a4df09175668
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: c119c14cbd0441d22b8e97f8d168d10d652e86d7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="service-principal-name-spn-support-in-client-connections"></a>Prise en charge des noms de principaux du service (SPN) dans les connexions clientes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

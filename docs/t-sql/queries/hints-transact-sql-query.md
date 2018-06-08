@@ -1,15 +1,13 @@
 ---
 title: Indicateurs de requête (Transact-SQL) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/11/2018
-ms.prod: sql-non-specified
+ms.date: 05/14/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: ''
 ms.component: t-sql|queries
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -57,16 +55,15 @@ helpviewer_keywords:
 - EXTERNALPUSHDOWN query hint
 - USE HINT query hint
 ms.assetid: 66fb1520-dcdf-4aab-9ff1-7de8f79e5b2d
-caps.latest.revision: ''
+caps.latest.revision: 136
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: f13c32bbc1852c06a88df7a9ab24443be9d1c4d5
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 1a5246b1d7d6a00e4500c95bae20fb2975bbebc9
+ms.sourcegitcommit: bac61a04d11fdf61deeb03060e66621c0606c074
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/14/2018
 ---
 # <a name="hints-transact-sql---query"></a>Indicateurs (Transact-SQL) - Requête
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -282,6 +279,9 @@ ms.lasthandoff: 03/15/2018
  Indique à SQL Server de générer un plan de requête qui utilise l’hypothèse de relation contenant-contenu simple, au lieu de l’hypothèse par défaut de relation contenant-contenu de base pour les jointures, avec le modèle [d’estimation de la cardinalité](../../relational-databases/performance/cardinality-estimation-sql-server.md) de l’optimiseur de requête fourni dans [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] ou les versions ultérieures. Cela équivaut à utiliser [l’indicateur de trace](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) 9476. 
 *  'FORCE_DEFAULT_CARDINALITY_ESTIMATION'  
  Force l’optimiseur de requête à utiliser le modèle [d’estimation de la cardinalité](../../relational-databases/performance/cardinality-estimation-sql-server.md) qui correspond au niveau de compatibilité de la base de données. Cet indicateur substitue [l’indicateur de trace](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) 9481 ou le paramètre de [configuration au niveau base de données](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) LEGACY_CARDINALITY_ESTIMATION=ON.
+* « DISABLE_INTERLEAVED_EXECUTION_TVF » désactive l’exécution entrelacée pour les fonctions table à instructions multiples.
+* « DISABLE_BATCH_MODE_MEMORY_GRANT_FEEDBACK » désactive le retour d’allocation de mémoire en mode batch.
+* « DISABLE_BATCH_MODE_ADAPTIVE_JOINS » désactive les jointures adaptatives en mode batch.
  
 > [!TIP]
 > Les noms d’indicateur respectent la casse.
@@ -291,7 +291,7 @@ ms.lasthandoff: 03/15/2018
 > [!IMPORTANT] 
 > Certains indicateurs USE HINT peuvent être en conflit avec des indicateurs de trace activés au niveau global ou session, ou avec des paramètres de configuration au niveau base de données. Dans ce cas, l’indicateur de niveau requête (USE HINT) est toujours prioritaire. En présence d’un conflit entre l’indicateur USE HINT et un autre indicateur de requête ou un indicateur de trace activé au niveau requête (par exemple, par QUERYTRACEON), [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] génère une erreur quand vous tentez d’exécuter la requête. 
 
- USE PLAN N**'***xml_plan***'**     
+ USE PLAN N **'***xml_plan***'**     
  Force l’optimiseur de requête à utiliser un plan de requête existant pour une requête spécifiée par **'***xml_plan***'**. USE PLAN ne peut pas être spécifié avec des instructions INSERT, UPDATE, MERGE ou DELETE.  
   
 TABLE HINT **(***exposed_object_name* [ **,** \<table_hint> [ [**,** ]...*n* ] ] **)** Applique l’indicateur de table spécifié à la table ou la vue qui correspond à *exposed_object_name*. Nous vous recommandons d’utiliser un indicateur de table comme indicateur de requête uniquement dans le contexte d’un [repère de plan](../../relational-databases/performance/plan-guides.md).  

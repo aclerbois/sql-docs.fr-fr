@@ -1,28 +1,26 @@
 ---
 title: Commande SET DELETED | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SET DELETED command [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SET DELETED command [ODBC]
 ms.assetid: 6b5e0086-156d-471d-8e7f-6c5fa9686cd5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 50364dfbbebb7b16b1438e3e17e0e1bbabc30cef
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 74cd0c5752728320acf09768d876bae37b6e193b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-deleted-command"></a>Commande SET DELETED
 Spécifie si les enregistrements marqués pour suppression sont traités et si elles sont disponibles pour une utilisation dans d’autres commandes.  
@@ -41,7 +39,7 @@ SET DELETED ON | OFF
  OFF  
  Spécifie que les enregistrements marqués pour suppression peut être accessible par les commandes qui agissent sur les enregistrements (y compris les enregistrements dans les tables associées) à l’aide d’une étendue.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Interroge que (de DELETED) pour tester le statut des enregistrements d’utilisation peut être optimisée à l’aide de la technologie Visual FoxPro Rushmore si la table est indexée sur (de supprimés).  
   
 > [!IMPORTANT]  

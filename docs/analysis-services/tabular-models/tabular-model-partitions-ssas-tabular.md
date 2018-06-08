@@ -1,33 +1,23 @@
 ---
-title: "Partitions de modèles tabulaires | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- sql13.asvs.ssms.partitions.partitionmgr.imbi.f1
-ms.assetid: 041c269f-a229-4a41-8794-6ba4b014ef83
-caps.latest.revision: 
-author: Minewiskan
+title: Partitions de modèles tabulaires | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: daaca1355790577310419ad5a48395cd9cb8ff34
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 55e056a0703e9f81d02138f2942d4782d81ee9b2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-model-partitions"></a>Partitions de modèle tabulaire 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Les partitions divisent une table en sections logiques. Chaque partition peut ensuite être traitée (actualisée) indépendamment d'autres partitions. Les partitions définies pour un modèle au cours de la création de modèles sont dupliquées dans un modèle déployé. Une fois le déploiement terminé, vous pouvez gérer ces partitions et créer de nouvelles partitions à l'aide de la boîte de dialogue **Partitions** dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou à l'aide d'un script. Les informations fournies dans cette rubrique décrivent des partitions dans une base de données de modèle tabulaire déployée. Pour plus d’informations sur la création et la gestion des partitions pendant la création du modèle, consultez [Partitions](../../analysis-services/tabular-models/partitions-ssas-tabular.md).  
+  Les partitions divisent une table en sections logiques. Chaque partition peut ensuite être traitée (actualisée) indépendamment d'autres partitions. Les partitions définies pour un modèle au cours de la création de modèles sont dupliquées dans un modèle déployé. Une fois le déploiement terminé, vous pouvez gérer ces partitions et créer de nouvelles partitions à l'aide de la boîte de dialogue **Partitions** dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou à l'aide d'un script. Les informations fournies dans cette rubrique décrivent des partitions dans une base de données de modèle tabulaire déployée. Pour plus d’informations sur la création et la gestion des partitions pendant la création du modèle, consultez [Partitions](../../analysis-services/tabular-models/partitions-ssas-tabular.md).  
   
  Sections de cette rubrique :  
   

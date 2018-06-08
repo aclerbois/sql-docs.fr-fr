@@ -1,17 +1,16 @@
 ---
-title: "Améliorer les performances de la réplication transactionnelle | Microsoft Docs"
-ms.custom: 
+title: Améliorer les performances de la réplication transactionnelle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - publications [SQL Server replication], design and performance
 - performance [SQL Server replication], transactional replication
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - transactional replication, performance
 - Log Reader Agent, performance
 ms.assetid: 67084a67-43ff-4065-987a-3b16d1841565
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fdb5ea97fb6e6d643f64e4ff8c7fb2e6164311ad
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 2c586823c0ad4b270ba03283e4ce75b9f2f9c022
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enhance-transactional-replication-performance"></a>Améliorer les performances de la réplication transactionnelle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

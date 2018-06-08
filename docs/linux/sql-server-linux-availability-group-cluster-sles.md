@@ -1,25 +1,22 @@
 ---
-title: "Configurer SLES Cluster pour le groupe de disponibilité de SQL Server | Documents Microsoft"
-description: 
+title: Configurer SLES Cluster pour le groupe de disponibilité de SQL Server | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.date: 05/17/2017
+ms.date: 04/30/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 85180155-6726-4f42-ba57-200bf1e15f4d
-ms.workload: Inactive
-ms.openlocfilehash: 9b0c068ce56a2f499ee452b56ca54025485163f5
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: dc6298c55104aeabcf2da799be4ed1977ea39620
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-sles-cluster-for-sql-server-availability-group"></a>Configurer SLES Cluster pour le groupe de disponibilité de SQL Server
 
@@ -33,7 +30,7 @@ Pour plus d’informations sur la configuration du cluster, les options de l’a
 >À ce stade, l’intégration de SQL Server avec STIMULATEUR sur Linux n’est pas comme exhaustivement comme WSFC sur Windows. Service SQL Server sur Linux n’est pas compatible avec les clusters. STIMULATEUR gère l’ensemble de l’orchestration de ressources de cluster, y compris la ressource de groupe de disponibilité. Sur Linux, ne vous fiez pas à toujours sur Disponibilité groupe vues de gestion dynamique (DMV) qui fournissent des informations de cluster comme sys.dm_hadr_cluster. En outre, nom de réseau virtuel est spécifique à WSFC, il n’existe aucun équivalent de la même dans STIMULATEUR. Vous pouvez toujours créer un écouteur pour l’utiliser pour la reconnexion après un basculement transparente, mais vous devez inscrire manuellement le nom de l’écouteur sur le serveur DNS avec l’adresse IP utilisée pour créer la ressource IP virtuelle (comme expliqué dans les sections suivantes).
 
 
-## <a name="roadmap"></a>Roadmap
+## <a name="roadmap"></a>Feuille de route
 
 La procédure de création d’un groupe de disponibilité pour la haute disponibilité diffère entre les serveurs Linux et d’un cluster de basculement Windows Server. La liste suivante décrit les étapes principales : 
 
@@ -94,7 +91,7 @@ La première étape consiste à configurer le système d’exploitation sur les 
 
 Sur des serveurs Linux, configurer le groupe de disponibilité, puis configurez les ressources de cluster. Pour configurer le groupe de disponibilité, consultez [configurer groupe de disponibilité AlwaysOn pour SQL Server sur Linux](sql-server-linux-availability-group-configure-ha.md)
 
-## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer STIMULATEUR sur chaque nœud de cluster
+## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer Pacemaker sur chaque nœud de cluster
 
 1. Installer l’extension de la haute disponibilité
 
@@ -189,16 +186,31 @@ Si vous avez configuré les nœuds de cluster existants avec les `YaST` module d
 
 Après avoir ajouté tous les nœuds, vérifiez si vous devez ajuster la stratégie quorum non dans les options de cluster global. Cela est particulièrement important pour les clusters à deux nœuds. Pour plus d’informations, consultez la Section 4.1.2, Option non-quorum-policy. 
 
-## <a name="set-cluster-property-start-failure-is-fatal-to-false"></a>Définissez la propriété cluster start-échec-est-irrécupérable false
+## <a name="set-cluster-property-cluster-recheck-interval"></a>Définir la propriété cluster cluster-revérification-intervalle
 
-`Start-failure-is-fatal` Indique si un échec pour démarrer une ressource sur un nœud empêche d’autres tentatives de démarrage sur ce nœud. Lorsque la valeur `false`, le cluster décide s’il faut essayer de démarrer sur le même nœud en fonction d’actuelle count et migration seuil d’échec la ressource. Par conséquent, après que le basculement se produit, les tentatives de STIMULATEUR à partir de la disponibilité ressource groupe sur l’ancien principal une fois que l’instance SQL est disponible. STIMULATEUR s’occupe de rétrograder le réplica secondaire, et il rejoint automatiquement le groupe de disponibilité. En outre, si `start-failure-is-fatal` a la valeur `false`, le cluster se replie sur les limites de failcount configuré configurés avec un seuil de migration. Assurez-vous que la valeur par défaut pour le seuil de migration est mis à jour en conséquence.
+`cluster-recheck-interval` Indique l’intervalle d’interrogation à laquelle le cluster vérifie les modifications dans les paramètres des ressources, des contraintes ou des autres options de cluster. Si un réplica tombe en panne, le cluster tente de redémarrer le réplica à un intervalle est lié par le `failure-timeout` valeur et le `cluster-recheck-interval` valeur. Par exemple, si `failure-timeout` est défini à 60 secondes et `cluster-recheck-interval` est définie à 120 secondes, le redémarrage sera tenté à un intervalle est supérieur à 60 secondes, mais moins de 120 secondes. Nous vous recommandons de définir d’expiration de l’échec à 60 s et de cluster-revérification-intervalle à une valeur qui est supérieure à 60 secondes. Paramètre d’intervalle de revérification de cluster sur une petite valeur n’est pas recommandé.
 
-Pour mettre à jour la valeur de propriété d’exécution false :
+Pour mettre à jour la valeur de propriété à `2 minutes` exécuter :
+
 ```bash
-sudo crm configure property start-failure-is-fatal=false
-sudo crm configure rsc_defaults migration-threshold=5000
+crm configure property cluster-recheck-interval=2min
 ```
-Si la propriété a la valeur par défaut `true`, si la première tentative de démarrage de la ressource échoue, l’intervention de l’utilisateur est nécessaire après un basculement automatique pour nettoyer le nombre d’échecs de ressource et de réinitialiser la configuration à l’aide de : `sudo crm resource cleanup <resourceName>` commande.
+
+> [!IMPORTANT] 
+> Si vous disposez déjà d’une ressource de groupe de disponibilité gérée par un cluster STIMULATEUR, notez que toutes les distributions qui utilisent le dernier package 1.1.18-11.el7 STIMULATEUR disponible introduisent un changement de comportement pour le cluster start-échec-est-irrécupérable paramètre lorsque son la valeur est false. Cette modification affecte le flux de travail de basculement. Si un réplica principal connaît une panne, le cluster est prévu pour basculer vers un des réplicas secondaires disponibles. Au lieu de cela, les utilisateurs Remarquez que le cluster conserve la tentative de démarrage du réplica principal a échoué. Si ce principal est jamais en ligne (en raison d’une panne permanente), le cluster ne bascule vers un autre réplica secondaire disponible. Grâce à cette modification, une configuration précédemment recommandée pour définir le début-échec-est-irrécupérable n’est plus valide et que le paramètre doit être restauré à sa valeur par défaut de `true`. En outre, la ressource de groupe de disponibilité doit être mis à jour pour inclure le `failover-timeout` propriété. 
+>
+>Pour mettre à jour la valeur de propriété à `true` exécuter :
+>
+>```bash
+>crm configure property start-failure-is-fatal=true
+>```
+>
+>Mettre à jour de votre propriété de ressource de groupe de disponibilité existante `failure-timeout` à `60s` exécuter (remplacez `ag1` par le nom de votre ressource de groupe de disponibilité) : 
+>
+>```bash
+>crm configure edit ag1
+># In the text editor, add `meta failure-timeout=60s` after any `param`s and before any `op`s
+>```
 
 Pour plus d’informations sur les propriétés du cluster STIMULATEUR, consultez [configuration des ressources de Cluster](https://www.suse.com/documentation/sle_ha/book_sleha/data/sec_ha_config_crm_resources.html).
 
@@ -239,22 +251,23 @@ Exécutez la commande sur l’un des nœuds du cluster :
 1. Dans l’invite de crm, exécutez la commande suivante pour configurer les propriétés de ressource.
 
    ```bash
-primitive ag_cluster \
-   ocf:mssql:ag \
-   params ag_name="ag1" \
-   op start timeout=60s \
-   op stop timeout=60s \
-   op promote timeout=60s \
-   op demote timeout=10s \
-   op monitor timeout=60s interval=10s \
-   op monitor timeout=60s interval=11s role="Master" \
-   op monitor timeout=60s interval=12s role="Slave" \
-   op notify timeout=60s
-ms ms-ag_cluster ag_cluster \
-   meta master-max="1" master-node-max="1" clone-max="3" \
-  clone-node-max="1" notify="true" \
-commit
-   ```
+   primitive ag_cluster \
+      ocf:mssql:ag \
+      params ag_name="ag1" \
+      meta failure-timeout=60s \
+      op start timeout=60s \
+      op stop timeout=60s \
+      op promote timeout=60s \
+      op demote timeout=10s \
+      op monitor timeout=60s interval=10s \
+      op monitor timeout=60s interval=11s role="Master" \
+      op monitor timeout=60s interval=12s role="Slave" \
+      op notify timeout=60s
+   ms ms-ag_cluster ag_cluster \
+      meta master-max="1" master-node-max="1" clone-max="3" \
+     clone-node-max="1" notify="true" \
+   commit
+      ```
 
 [!INCLUDE [required-synchronized-secondaries-default](../includes/ss-linux-cluster-required-synchronized-secondaries-default.md)]
 

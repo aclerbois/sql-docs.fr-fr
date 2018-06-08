@@ -1,34 +1,30 @@
 ---
-title: "SP:CacheInsert, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SP:CacheInsert, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SP:CacheInsert event class
 ms.assetid: 37fb9bec-b462-4563-8e50-ec84d5407e20
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a162db1162eb99902b7afab84aa42f83205ba5ee
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ea951b96f98d356e3d5d434db00ec0ca795a2478
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="spcacheinsert-event-class"></a>SP:CacheInsert, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SP:CacheInsert indique que la procédure stockée a été insérée dans le cache de procédure.  
+  La classe d'événements SP:CacheInsert indique que la procédure stockée a été insérée dans le cache de procédure.  
   
 ## <a name="spcacheinsert-event-class-data-columns"></a>Colonnes de la classe d'événements SP:CacheInsert  
   

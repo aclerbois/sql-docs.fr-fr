@@ -1,30 +1,29 @@
 ---
-title: "Méthode setApplicationName (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setApplicationName (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.setApplicationName
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.setApplicationName
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 24d6e48d-53c4-4da2-a6de-1cdff463c9cd
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6b7d9477ec7fd38d464decb22c943cdc62eb7975
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 83dc2762c52a8564755355199faa59b1eb25991e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setapplicationname-method-sqlserverdatasource"></a>Méthode setApplicationName (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public void setApplicationName(java.lang.String applicationName)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *applicationName*  
+ *ApplicationName*  
   
  A **chaîne** qui contient le nom de l’application.  
   
@@ -47,7 +46,7 @@ public void setApplicationName(java.lang.String applicationName)
  Le nom de l’application est utilisé pour identifier l’application dans différentes [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] profilage et outils de journalisation. Si le nom de l’application n’est pas défini, la méthode getApplicationName retourne la chaîne non localisée «[!INCLUDE[jdbcNoVersion](../../../includes/jdbcnoversion_md.md)]».  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

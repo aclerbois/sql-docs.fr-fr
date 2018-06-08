@@ -1,32 +1,31 @@
 ---
-title: "Sécurité de l’Agent d’instantané | Microsoft Docs"
-ms.custom: 
+title: Sécurité de l’Agent d’instantané | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.security.SSA.f1
 helpviewer_keywords:
 - Snapshot Agent Security dialog box
 ms.assetid: 64e84c67-acc6-4906-98d4-3451767363fe
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2495deee6706df0dd9e47c6b61d87dc0a15562d2
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 16c8be2ff4c22d394f1b9af7d00b8ae9e646065e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="snapshot-agent-security"></a>Sécurité de l'Agent d'instantané
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

@@ -1,16 +1,15 @@
 ---
 title: sp_dropdistpublisher (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dropdistpublisher
 ms.assetid: c0bdd3de-3be0-455c-898a-98d4660e7ce3
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8060e5788004b743e58e0d0d424dcc0910459573
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: bf5001349f38cf69a130d35f57424b8820af61fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdropdistpublisher-transact-sql"></a>sp_dropdistpublisher (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -56,7 +54,7 @@ sp_dropdistpublisher [ @publisher = ] 'publisher'
   
  Si **0**, la réplication vérifie que le serveur de publication distant a désinstallé le serveur local comme serveur de distribution. Si le serveur de publication est local, la réplication vérifie qu'il ne reste aucun objet de publication ou de distribution sur le serveur local.  
   
- Si **1**, tous les objets de réplication associés à l’éditeur de distribution sont supprimés, même si un serveur de publication distant ne peut pas être atteint. Après cela, le serveur de publication distant doit désinstaller la réplication à l’aide [sp_dropdistributor](../../relational-databases/system-stored-procedures/sp-dropdistributor-transact-sql.md) avec  **@ignore_distributor**   =  **1**.  
+ Si **1**, tous les objets de réplication associés à l’éditeur de distribution sont supprimés, même si un serveur de publication distant ne peut pas être atteint. Après cela, le serveur de publication distant doit désinstaller la réplication à l’aide [sp_dropdistributor](../../relational-databases/system-stored-procedures/sp-dropdistributor-transact-sql.md) avec **@ignore_distributor**  =  **1**.  
   
  [  **@ignore_distributor=** ] *ignore_distributor*  
  Spécifie si les objets de distribution sont conservés sur le serveur de distribution lorsque le serveur de publication est supprimé. *ignore_distributor* est **bits** et peut prendre l’une des valeurs suivantes :  
@@ -76,12 +74,12 @@ sp_dropdistpublisher [ @publisher = ] 'publisher'
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_DropDistPub](../../relational-databases/replication/codesnippet/tsql/sp-dropdistpublisher-tra_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_dropdistpublisher**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Désactiver la publication et la distribution](../../relational-databases/replication/disable-publishing-and-distribution.md)   
- [sp_adddistpublisher &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-adddistpublisher-transact-sql.md)   
+ [sp_adddistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-adddistpublisher-transact-sql.md)   
  [sp_changedistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changedistpublisher-transact-sql.md)   
  [sp_helpdistpublisher &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdistpublisher-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  

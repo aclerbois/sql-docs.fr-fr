@@ -1,16 +1,14 @@
 ---
-title: "Liaison de données relationnelles dans des données XML | Microsoft Docs"
-ms.custom: 
+title: Liaison de données relationnelles dans des données XML | Microsoft Docs
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - variables [XML in SQL Server], relational data binding
 - columns [XML in SQL Server], relational data binding
 ms.assetid: 03d013a9-b53f-46c3-9628-da77f099c74a
-caps.latest.revision: 
+caps.latest.revision: 36
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 87dca9b5bcd70335a6121b1be1e49f4cc352826e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: db924e662687ab79d207fe3e1e33ccc75aecd059
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-relational-data-inside-xml-data"></a>Liaison de données relationnelles dans des données XML
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

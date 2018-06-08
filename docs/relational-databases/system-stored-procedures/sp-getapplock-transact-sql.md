@@ -1,16 +1,14 @@
 ---
 title: sp_getapplock (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_getapplock_TSQL
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - application locks
 - sp_getapplock
 ms.assetid: e1e85908-9f31-47cf-8af6-88c77e6f24c9
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5c7b65a7330a1b87e7ee81a4f76a715038cd3d6d
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 16d750e07e8c61959e43fe15e1e3cfb47c8bf1c0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spgetapplock-transact-sql"></a>sp_getapplock (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -61,10 +59,10 @@ sp_getapplock [ @Resource = ] 'resource_name' ,
 >  Une fois qu'un verrou d'application a été acquis, seuls les 32 premiers caractères peuvent être récupérés sous forme de texte brut ; les autres caractères sont hachés.  
   
  [ @LockMode=] '*argument lock_mode*'  
- Mode de verrouillage à obtenir pour une ressource spécifique. *l’argument Lock_Mode* est **nvarchar(32)** et n’a aucune valeur par défaut. La valeur peut être une des opérations suivantes : **Shared**, **mise à jour**, **IntentShared**, **IntentExclusive**, ou **exclusif**.  
+ Mode de verrouillage à obtenir pour une ressource spécifique. L’argument *lock_mode* est de type **nvarchar(32)** et n’a pas de valeur par défaut. La valeur peut être une des opérations suivantes : **Shared**, **mise à jour**, **IntentShared**, **IntentExclusive**, ou **exclusif**.  
   
  [ @LockOwner=] '*lock_owner*'  
- Est le propriétaire du verrou, qui est la *lock_owner* valeur lorsque le verrou a été demandé. *lock_owner* est **nvarchar(32)**. La valeur peut être **Transaction** (la valeur par défaut) ou **Session**. Lorsque le *lock_owner* valeur est **Transaction**, par défaut ou spécifiée explicitement, sp_getapplock doit être exécutée à partir d’une transaction.  
+ Propriétaire du verrou, qui est la valeur de *lock_owner* lorsque le verrou a été demandé. *lock_owner* est de type **nvarchar(32)**. La valeur peut être **Transaction** (valeur par défaut) ou **Session**. Lorsque le *lock_owner* valeur est **Transaction**, par défaut ou spécifiée explicitement, sp_getapplock doit être exécutée à partir d’une transaction.  
   
  [ @LockTimeout=] '*valeur*'  
  Valeur de délai d'attente de verrou, en millisecondes. La valeur par défaut est la même que la valeur renvoyée par@LOCK_TIMEOUT. Pour indiquer qu'une demande de verrou doit retourner une erreur plutôt que d'attendre le verrou quand elle ne peut pas être accordée immédiatement, spécifiez 0.  
@@ -142,7 +140,7 @@ GO
   
  Utilisez la vue de gestion dynamique sys.dm_tran_locks ou la procédure stockée système sp_lock pour examiner les informations de verrou. Vous pouvez également utiliser [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour surveiller les verrous.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle public.  
   
 ## <a name="examples"></a>Exemples  
@@ -170,8 +168,8 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [APPLOCK_MODE &#40; Transact-SQL &#41;](../../t-sql/functions/applock-mode-transact-sql.md)   
- [APPLOCK_TEST &#40; Transact-SQL &#41;](../../t-sql/functions/applock-test-transact-sql.md)   
- [sp_releaseapplock &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-releaseapplock-transact-sql.md)  
+ [APPLOCK_MODE &#40;Transact-SQL&#41;](../../t-sql/functions/applock-mode-transact-sql.md)   
+ [APPLOCK_TEST &#40;Transact-SQL&#41;](../../t-sql/functions/applock-test-transact-sql.md)   
+ [sp_releaseapplock &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-releaseapplock-transact-sql.md)  
   
   

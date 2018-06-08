@@ -1,30 +1,29 @@
 ---
-title: "Méthode getAttributes (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getAttributes (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getAttributes
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getAttributes
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 4dc784ed-4699-4197-9af5-6e03da80d14c
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 241faa179b627a9a2e7bc32d0c2e932342a8d920
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 21a129e92958022b692db1745ed4be0fd5e66093
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getattributes-method-sqlserverdatabasemetadata"></a>Méthode getAttributes (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -45,7 +44,7 @@ public java.sql.ResultSet getAttributes(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  A **chaîne** qui contient le nom du catalogue.  
   

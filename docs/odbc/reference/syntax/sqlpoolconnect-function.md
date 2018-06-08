@@ -1,28 +1,26 @@
 ---
 title: Fonction de SQLPoolConnect | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLPoolConnect function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLPoolConnect function [ODBC]
 ms.assetid: 41322737-890d-4a81-aed2-06cc3d546962
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fd862492513daceda364205d965b1d00e6cb649f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 141ba45aca6a6bcc25503ef73d575793f1cf5b15
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlpoolconnect-function"></a>SQLPoolConnect (fonction)
 **Mise en conformité**  
@@ -66,7 +64,7 @@ SQLRETURN  SQLPoolConnect(
 ## <a name="diagnostics"></a>Diagnostics  
  Semblable à [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md) pour tout d’entrée d’une erreur de validation, à ceci près que le Gestionnaire de pilotes utilise un **HandleType** de SQL_HANDLE_DBC_INFO_TOKEN et un **gérer** de *hDbcInfoToken*.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le Gestionnaire de pilotes garantit que le parent HENV gérer de *pas* et *hDbcInfoToken* sont les mêmes.  
   
  Contrairement aux [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md), il est sans *DriverCompletion* argument pour inviter les utilisateurs à entrer des informations de connexion. Une boîte de dialogue invite n’est pas autorisée dans le scénario de regroupement.  

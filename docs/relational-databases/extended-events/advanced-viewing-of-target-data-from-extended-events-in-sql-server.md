@@ -1,27 +1,25 @@
 ---
-title: "Affichage avancé des données cibles d’événements étendus dans SQL Server | Microsoft Docs"
-ms.custom: 
+title: Affichage avancé des données cibles d’événements étendus dans SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 10/04/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b2e839d7-1872-46d9-b7b7-6dcb3984829f
-caps.latest.revision: 
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.openlocfilehash: 7415e768584c9256eaa600cb2302c7cc9aa0d529
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 31cb896ef8527bc5e57dff87f80bb83198a7d6ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="advanced-viewing-of-target-data-from-extended-events-in-sql-server"></a>Affichage avancé des données cibles d’événements étendus dans SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -36,7 +34,7 @@ Cet article explique comment vous pouvez utiliser les fonctionnalités avancées
 
 
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>Conditions préalables requises
 
 Cet article considère que vous savez déjà créer et démarrer une session d’événements. Des instructions sur la façon de créer une session d’événements sont fournies au début de l’article suivant :
 

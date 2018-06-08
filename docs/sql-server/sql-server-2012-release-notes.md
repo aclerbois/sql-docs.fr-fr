@@ -1,32 +1,30 @@
 ---
-title: "Notes de publication de SQL Server 2012 | Microsoft Docs"
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
-ms.component: sql-non-specified
-ms.technology: server-general
-ms.custom: 
+title: Notes de publication de SQL Server 2012 | Microsoft Docs
+ms.prod: sql
+ms.prod_service: sql
+ms.technology: supportability
+ms.custom: ''
 ms.date: 01/31/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Release Notes, SQL Server
 ms.assetid: 9ccb390a-67a9-4593-85ea-2b4c41c4620f
-caps.latest.revision: 
 author: craigg-msft
 ms.author: craigg
 manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e7adc5d4b4fdcf8886b2c8d08bce8de90d9b3eb1
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+monikerRange: = sql-server-2014 || = sqlallproducts-allversions
+ms.openlocfilehash: cf9360da746f08bc555a4796d5134a11c6b08d32
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-2012-release-notes"></a>Notes de publication de SQL Server 2012
-[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)] Ce document Notes de publication décrit les problèmes connus que vous devez examiner avant d’installer ou de dépanner Microsoft SQL Server 2012 ([cliquez ici pour le télécharger](http://go.microsoft.com/fwlink/?LinkId=238647)). Ce document Notes de publication, uniquement disponible en ligne (absent du support d'installation), est régulièrement mis à jour.  
+[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
+Ce document Notes de publication décrit les problèmes connus que vous devez examiner avant d'installer ou de dépanner Microsoft SQL Server 2012 ([cliquez ici pour le télécharger](http://go.microsoft.com/fwlink/?LinkId=238647)). Ce document Notes de publication, uniquement disponible en ligne (absent du support d'installation), est régulièrement mis à jour.  
   
 Pour plus d'informations sur le démarrage et l'installation de SQL Server 2012, consultez le fichier Lisez-moi de SQL Server 2012. Le document Lisez-moi est disponible sur le support d'installation et sur la page de téléchargement du fichier [Lisez-moi](http://download.microsoft.com/download/3/B/D/3BD9DD65-D3E3-43C3-BB50-0ED850A82AD5/ENU/Readme.htm) . Vous pouvez également trouver des informations supplémentaires dans la [documentation en ligne de SQL Server](http://go.microsoft.com/fwlink/?LinkId=190948) et sur les [forums SQL Server](http://go.microsoft.com/fwlink/?LinkId=213599).  
   
@@ -69,7 +67,7 @@ Lisez les informations répertoriées ci-dessous avant d'installer [!INCLUDE[ssC
 <pre>The following error has occurred:  
 Service 'SQLBrowser' start request failed. Click 'Retry' to retry the failed action, or click 'Cancel' to cancel this action and continue setup.</pre>  
   
-ou  
+ou Gestionnaire de configuration  
   
 <pre>The following error has occurred:  
 SQL Server Browser configuration for feature 'SQL_Browser_Redist_SqlBrowser_Cpu32' was cancelled by user after a previous installation failure. The last attempted step: Starting the SQL Server Browser service 'SQLBrowser', and waiting for up to '900' seconds for the process to complete.</pre>  
@@ -303,7 +301,7 @@ Il existe un certain nombre de problèmes avec la tâche de traitement AS lorsqu
 ## <a name="BOL"></a>3.0 Documentation en ligne  
   
 ### <a name="31-help-viewer-for-sql-server-crashes-in-environments-configured-to-run-only-ipv6"></a>3.1 La visionneuse de l'aide pour SQL Server se bloque dans les environnements configurés pour exécuter uniquement IPv6  
-**Problème :**si votre environnement est configuré pour exécuter uniquement IPv6, la visionneuse de l'aide pour SQL Server 2012 se bloque et vous obtenez le message d'erreur suivant :  
+**Problème :** si votre environnement est configuré pour exécuter uniquement IPv6, la visionneuse de l'aide pour SQL Server 2012 se bloque et vous obtenez le message d'erreur suivant :  
   
 `HelpLibAgent.exe has stopped working.`  
   
@@ -312,7 +310,7 @@ Il existe un certain nombre de problèmes avec la tâche de traitement AS lorsqu
   
 **Solution de contournement**: pour résoudre ce problème, activez IPv4 ou suivez les étapes ci-après pour ajouter une entrée de Registre et créer une liste de contrôle d'accès (ACL) afin d'activer IPv6 pour la visionneuse de l'aide :  
   
-1.  Créez une clé de registre ayant pour nom « IPv6 » et pour valeur «1 (DWORD(32 bit)) » sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v1.0.  
+1.  Créez une clé de registre ayant pour nom « IPv6 » et pour valeur «&1; (DWORD(32 bit)) » sous HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\v1.0.  
   
 2.  Définissez l'ACL de sécurité pour le port d'IPv6, en exécutant la commande qui suit à partir d'une fenêtre CMD d'administration  
   
@@ -332,7 +330,7 @@ Il existe un certain nombre de problèmes avec la tâche de traitement AS lorsqu
 ### <a name="42-to-reinstall-data-quality-server-delete-the-dqs-objects-after-uninstalling-data-quality-server"></a>4.2 Pour réinstaller Data Quality Server, supprimez les objets DQS après avoir désinstallé Data Quality Server  
 **Problème** : si vous désinstallez Data Quality Server, les objets DQS (bases de données DQS, connexions DQS et une procédure stockée DQS) ne sont pas supprimés de l'instance SQL Server.  
   
-**Solution de contournement** : pour réinstaller Data Quality Server sur le même ordinateur et dans la même instance SQL Server, vous devez supprimer manuellement les objets DQS de l'instance SQL Server. Par ailleurs, vous devez également supprimer les fichiers de bases de données DQS (DQS_MAIN, DQS_PROJECTS et DQS_STAGING_DATA) du dossier C:\Program Files\Microsoft SQL Server\MSSQL11.<SQL_Server_Instance>\MSSQL\DATA de votre ordinateur avant de réinstaller Data Quality Server. Sinon, l'installation de Data Quality Server échoue. Déplacez les fichiers de base de données au lieu de les supprimer si vous souhaitez conserver des données, telles que les bases de connaissances ou les projets de qualité des données. Pour plus d'informations sur la suppression des objets DQS une fois la désinstallation terminée, consultez [Supprimer les objets serveur DQS](http://msdn.microsoft.com/library/hh231667.aspx).  
+**Solution de contournement** : pour réinstaller Data Quality Server sur le même ordinateur et dans la même instance SQL Server, vous devez supprimer manuellement les objets DQS de l'instance SQL Server. Par ailleurs, vous devez également supprimer les fichiers de bases de données DQS (DQS_MAIN, DQS_PROJECTS et DQS_STAGING_DATA) du dossier C:\Program Files\Microsoft SQL Server\MSSQL11.<SQL_Server_Instance>\MSSQL\DATA de votre ordinateur avant de réinstaller Data Quality Server. Sinon, l'installation de Data Quality Server échoue. Déplacez les fichiers de base de données au lieu de les supprimer si vous souhaitez conserver des données, telles que les bases de connaissances ou les projets de qualité des données. Pour plus d'informations sur la suppression des objets DQS une fois la désinstallation terminée, consultez [Supprimer les objets serveur DQS](http://msdn.microsoft.com/library/hh231667.aspx).  
   
 ### <a name="43-indication-of-a-terminated-knowledge-discovery-or-interactive-cleansing-activity-is-delayed"></a>4.3 Indication d'une découverte de connaissances terminée ou retard d'une activité de nettoyage interactif  
 **Problème** : si un administrateur met fin à une activité dans l'écran Analyse des activités, un utilisateur interactif exécutant la découverte des connaissances, la gestion de domaine ou une activité de nettoyage interactif ne reçoit aucune indication selon laquelle son activité est terminée tant qu'il n'a pas effectué l'opération suivante.  
@@ -380,7 +378,7 @@ Dans un projet de qualité de nettoyage des données, si vous avez mappé un cha
 **Solution de contournement** : supprimez le ; (point-virgule) du nom de la feuille dans le dossier Excel qui contient les données source à mapper, puis réessayez.  
   
 ### <a name="414-issue-with-date-or-datetime-values-in-unmapped-source-fields-in-excel-during-cleansing-and-matching"></a>4.14 Problème avec les valeurs Date ou DateTime dans des champs sources non mappés dans Excel pendant le nettoyage et la mise en correspondance  
-**Problème :**si les données source sont dans Excel et que vous n'avez pas mappé les champs sources contenant les valeurs de type de données **Date** ou **DateTime** , les événements suivants se produisent pendant les activités de nettoyage et de mise en correspondance :  
+**Problème :** si les données source sont dans Excel et que vous n'avez pas mappé les champs sources contenant les valeurs de type de données **Date** ou **DateTime** , les événements suivants se produisent pendant les activités de nettoyage et de mise en correspondance :  
   
 -   Les valeurs **Date** non mappées sont affichées et exportées au format yyyymmdd.  
   
@@ -478,7 +476,7 @@ Nom d'objet 'sys.federations' non valide. (Microsoft SQL Server, Error: 208)</pr
 ### <a name="55-new-maintenance-plan-layout-not-compatible-with-earlier-sql-server-tools"></a>5.5 La nouvelle mise en page des plans de maintenance n'est pas compatible avec les versions antérieures des outils SQL Server  
 **Problème** : lorsque les outils de gestion de SQL Server 2012 sont utilisés pour modifier un plan de maintenance existant créé dans une version précédente des outils de gestion de SQL Server (SQL Server 2008 R2, SQL Server 2008 ou SQL Server 2005), le plan de maintenance est enregistré sous un nouveau format. Les versions précédentes des outils de gestion SQL Server ne prennent pas en charge ce nouveau format.  
   
-**Solution de contournement :**aucune  
+**Solution de contournement :** aucune  
   
 ### <a name="56-intellisense-has-limitations-when-logged-in-to-a-contained-database"></a>5.6 Intellisense présente des restrictions lors de la connexion à une base de données à relation contenant-contenu  
 Problème : Intellisense dans SQL Server Management Studio (SSMS) et SQL Server Data Tools (SSDT) ne fonctionne pas comme attendu lorsque des utilisateurs à relation contenant-contenu sont connectés à des bases de données à relation contenant-contenu. Il est possible d'observer le comportement suivant dans de tels cas :  
@@ -489,7 +487,7 @@ Problème : Intellisense dans SQL Server Management Studio (SSMS) et SQL Server 
   
 3.  L'aide des info-bulles ne s'affiche pas dans les fonctions intégrées.  
   
-**Solution de contournement :**aucune  
+**Solution de contournement :** aucune  
   
 ### <a name="57-alwayson-availability-groups"></a>5.7 Groupes de disponibilité AlwaysOn  
 Avant de créer un groupe de disponibilité, consultez [Conditions préalables, restrictions et recommandations pour les groupes de disponibilité AlwaysOn (SQL Server)](http://go.microsoft.com/?linkid=9753168) dans la documentation en ligne. Pour une introduction aux groupes de disponibilité AlwaysOn, consultez [Groupes de disponibilité AlwaysOn (SQL Server)](http://go.microsoft.com/?linkid=9753166)dans la documentation en ligne.  
@@ -506,14 +504,14 @@ Le tableau suivant récapitule les pilotes pris en charge pour les groupes de di
 |Pilote|Basculement de sous-réseaux multiples|Intention de l'application|Routage en lecture seule|Basculement de sous-réseaux multiples : basculement plus rapide du point de terminaison d'un sous-réseau unique|Basculement de sous-réseaux multiples : résolution d'instance nommée pour des instances de cluster SQL|  
 |----------|--------------------------|----------------------|----------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------|  
 |SQL Native Client 11.0 ODBC|Oui|Oui|Oui|Oui|Oui|  
-|SQL Native Client 11.0 OLEDB|Non|Oui|Oui|Non|Non|  
+|SQL Native Client 11.0 OLEDB|non|Oui|Oui|non|non|  
 |ADO.NET avec .NET Framework 4.0 et correctif logiciel de connectivité**\&#42;**|Oui|Oui|Oui|Oui|Oui|  
 |ADO.NET avec .NET Framework 3.5 SP1 et correctif logiciel de connectivité **\&#42;\&#42;**|Oui|Oui|Oui|Oui|Oui|  
 |Microsoft JDBC Driver 4.0 pour SQL Server|Oui|Oui|Oui|Oui|Oui|  
   
-**\&#42;** Téléchargez le correctif logiciel de connectivité pour ADO .NET avec .NET Framework 4.0 : [http://support.microsoft.com/kb/2600211](http://support.microsoft.com/kb/2600211).  
+**\&#42;** Télécharger le correctif logiciel de connectivité pour ADO .NET avec .NET Framework 4.0 : [http://support.microsoft.com/kb/2600211](http://support.microsoft.com/kb/2600211).  
   
-**\&#42;\&#42;** Téléchargez le correctif logiciel de connectivité pour ADO .NET avec .NET Framework 3.5 SP1 : [http://support.microsoft.com/kb/2654347](http://support.microsoft.com/kb/2654347).  
+**\&#42;\&#42;** Télécharger le correctif logiciel de connectivité pour ADO.NET avec .NET Framework 3.5 SP1 : [http://support.microsoft.com/kb/2654347](http://support.microsoft.com/kb/2654347).  
   
 **Mot clé MultiSubnetFailover et fonctionnalités associées**  
   
@@ -611,10 +609,10 @@ Le service de capture de données modifiées pour Oracle est un service Windows 
   
 3.  Installez SQL Server 2012 avec la fonctionnalité MDS sur le nœud de cluster principal, puis installez SQL Server 2012 avec la fonctionnalité MDS sur des nœuds de cluster supplémentaires.  
   
-Pour plus d'informations sur les problèmes et la réalisation des étapes ci-dessus, consultez [http://support.microsoft.com/kb/2683467](http://support.microsoft.com/kb/2683467).  
+Pour plus d’informations sur les problèmes et la réalisation des étapes ci-dessus, consultez [http://support.microsoft.com/kb/2683467](http://support.microsoft.com/kb/2683467).  
   
 ### <a name="72-microsoft-silverlight-5-required"></a>7.2 Microsoft Silverlight 5 est requis  
-Pour travailler dans l'application Web Master Data Manager, Silverlight 5.0 doit être installé sur l'ordinateur client. Si vous n'avez pas la version requise de Silverlight, vous êtes invité à l'installer lorsque vous accédez à une partie de l'application Web qui l'utilise. Installez Silverlight 5 depuis la page [http://go.microsoft.com/fwlink/?LinkId=243096](http://go.microsoft.com/fwlink/?LinkId=243096).  
+Pour travailler dans l'application Web Master Data Manager, Silverlight 5.0 doit être installé sur l'ordinateur client. Si vous n'avez pas la version requise de Silverlight, vous êtes invité à l'installer lorsque vous accédez à une partie de l'application Web qui l'utilise. Vous pouvez installer Silverlight 5 à partir de [http://go.microsoft.com/fwlink/?LinkId=243096](http://go.microsoft.com/fwlink/?LinkId=243096).  
   
 ![horizontal_bar](media/horizontal-bar.png "horizontal_bar")  
   
@@ -635,7 +633,7 @@ SQL Server 2012 inclut StreamInsight 2.0. StreamInsight 2.0 nécessite une licen
 ### <a name="101-link-to-install-upgrade-advisor-is-not-enabled-on-chinese-hk-operating-systems"></a>10.1 Le lien permettant d'installer le Conseiller de mise à niveau n'est pas activé sur les systèmes d'exploitation chinois (HK)  
 Problème : lorsque vous essayez d'installer le conseiller de mise à niveau sur des systèmes d'exploitation prenant en charge une version Windows en chinois (Hong-Kong), le lien permettant l'installation risque de ne pas être activé.  
   
-**Solution de contournement :**localisez le fichier **SQLUA.msi** sur votre support SQL Server 2012 dans `\1028_CHT_LP\x64\redist\Upgrade Advisor` ou `\1028_CHT_LP\x86\redist\Upgrade Advisor`, selon l'architecture de votre système d'exploitation.  
+**Solution de contournement :** localisez le fichier **SQLUA.msi** sur votre support SQL Server 2012 dans `\1028_CHT_LP\x64\redist\Upgrade Advisor` ou `\1028_CHT_LP\x86\redist\Upgrade Advisor`, selon l'architecture de votre système d'exploitation.  
   
 ![horizontal_bar](media/horizontal-bar.png "horizontal_bar")  
   

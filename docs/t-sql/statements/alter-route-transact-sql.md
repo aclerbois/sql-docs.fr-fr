@@ -1,16 +1,14 @@
 ---
 title: ALTER ROUTE (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 03/30/2018
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_ROUTE_TSQL
@@ -24,21 +22,24 @@ helpviewer_keywords:
 - removing routes
 - routes [Service Broker], modifying
 ms.assetid: 8dfb7b16-3dac-4e1e-8c97-adf2aad07830
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 33
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e9ae2ef58b234919dab8057b00afd64efa0cc89b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f84ed9bb1a02658938f6e5d9eca9389547763b85
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-route-transact-sql"></a>ALTER ROUTE (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
+[!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
 
-  Modifie les informations relatives à un itinéraire existant dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  Modifie les informations relatives à un itinéraire existant dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. 
+
+
+[!INCLUDE[ssMIlimitation](../../includes/sql-db-mi-limitation.md)] 
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -87,11 +88,14 @@ WHERE database_id = DB_ID();
  Spécifie la durée, en secondes, pendant laquelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] conserve l'itinéraire dans la table de routage. Lorsque la durée de vie expire, l'itinéraire expire et [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'en tient plus compte lors de la sélection d'un itinéraire pour une nouvelle conversation. Si cette clause est omise, la durée de vie de l'itinéraire reste la même.  
   
  ADDRESS **='***next_hop_address'*  
+
+ Pour SQL Database Managed Instance, `ADDRESS` doit être local.
+
  Spécifie l'adresse réseau pour cet itinéraire. *next_hop_address* spécifie une adresse TCP/IP au format suivant :  
   
  **TCP://** { *dns_name* | *netbios_name* |*ip_address* } **:** *port_number*  
   
- Le *port_number* spécifié doit correspondre au numéro de port du point de terminaison de [!INCLUDE[ssSB](../../includes/sssb-md.md)] pour une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur l’ordinateur spécifié. Cela peut être obtenu en exécutant la requête ci-après dans la base de données sélectionnée :  
+ Le *port_number* spécifié doit correspondre au numéro de port du point de terminaison de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour une instance de [!INCLUDE[ssSB](../../includes/sssb-md.md)] sur l’ordinateur spécifié. Cela peut être obtenu en exécutant la requête ci-après dans la base de données sélectionnée :  
   
 ```  
 SELECT tcpe.port  
@@ -115,7 +119,7 @@ WHERE ssbe.name = N'MyServiceBrokerEndpoint';
   
  **TCP://**{ *dns_name* | *netbios_name* | *ip_address* } **:** *port_number*  
   
- Le *port_number* spécifié doit correspondre au numéro de port du point de terminaison de [!INCLUDE[ssSB](../../includes/sssb-md.md)] pour une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur l’ordinateur spécifié. Cela peut être obtenu en exécutant la requête ci-après dans la base de données sélectionnée :  
+ Le *port_number* spécifié doit correspondre au numéro de port du point de terminaison de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour une instance de [!INCLUDE[ssSB](../../includes/sssb-md.md)] sur l’ordinateur spécifié. Cela peut être obtenu en exécutant la requête ci-après dans la base de données sélectionnée :  
   
 ```  
 SELECT tcpe.port  

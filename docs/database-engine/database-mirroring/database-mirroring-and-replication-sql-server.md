@@ -1,35 +1,32 @@
 ---
-title: "Mise en miroir de bases de données et réplication (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données et réplication (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
 - replication [SQL Server], database mirroring and
 ms.assetid: 82796217-02e2-4bc5-9ab5-218bae11a2d6
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 31e0e930a3ebc1d81d3182de30e8cb3ae5b4d701
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9cc2c02b5d2f8f75607ed5afe555bbffc3b77c34
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-and-replication-sql-server"></a>Mise en miroir de bases de données et réplication (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-La mise en miroir des bases de données peut avoir lieu en parallèle à la réplication afin d'améliorer la disponibilité de la base de données de publication. La mise en miroir des bases de données consiste à avoir deux exemplaires d'une même base de données qui résident généralement sur des ordinateurs différents. À un moment donné précis, les clients ne peuvent accéder qu'à un seul exemplaire de la base de données. Cet exemplaire s'appelle la base de données principale. Les mises à jour apportées par les clients sur la base de données principale sont appliquées à l'autre exemplaire de la base de données, appelé base de données miroir. La mise en miroir consiste à répercuter dans la base de données miroir chaque insertion, mise à jour ou suppression apportée à la base de données principale.  
+  La mise en miroir des bases de données peut avoir lieu en parallèle à la réplication afin d'améliorer la disponibilité de la base de données de publication. La mise en miroir des bases de données consiste à avoir deux exemplaires d'une même base de données qui résident généralement sur des ordinateurs différents. À un moment donné précis, les clients ne peuvent accéder qu'à un seul exemplaire de la base de données. Cet exemplaire s'appelle la base de données principale. Les mises à jour apportées par les clients sur la base de données principale sont appliquées à l'autre exemplaire de la base de données, appelé base de données miroir. La mise en miroir consiste à répercuter dans la base de données miroir chaque insertion, mise à jour ou suppression apportée à la base de données principale.  
   
  Le basculement de réplication vers un miroir est entièrement pris en charge pour les bases de données de publication, avec la prise en charge limitée des bases de données d'abonnement. La mise en miroir de bases de données n'est pas prise en charge pour la base de données de distribution. Pour plus d’informations sur la façon de récupérer une base de données de distribution ou d’abonnement sans avoir à reconfigurer la réplication, consultez [Sauvegarder et restaurer des bases de données répliquées](../../relational-databases/replication/administration/back-up-and-restore-replicated-databases.md).   
   

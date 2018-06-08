@@ -1,25 +1,23 @@
 ---
-title: "Fonctionnalités de collection de sites de Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités de collection de sites de Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server-sharepoint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2bf533a432526a99dfaca1b46caf95f274dd562b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 100ec0e739dc397b8173259abcfaf7c8e6cdfd9e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-site-collection-features"></a>Fonctionnalités de collection de sites de Reporting Services
 
@@ -40,7 +38,7 @@ Le mode SharePoint de Reporting Services fournit trois fonctionnalités de colle
 |-------------|-----------------|  
 |**Fonctionnalité Administration centrale du serveur de rapports**|Active les fonctionnalités de gestion de l’intégration avec un serveur de rapports Reporting Services. Cette fonctionnalité est uniquement installée et utilisée dans la collection de sites Administration centrale de SharePoint.<br /><br /> La fonctionnalité d’intégration du serveur de rapports est activée automatiquement dans la collection de sites Administration centrale de SharePoint après l’installation du complément [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssRSCurrent](../../includes/ssrscurrent-md.md)] pour les produits SharePoint. Dans certaines circonstances, vous devrez activer cette fonctionnalité manuellement. Pour activer la fonctionnalité de serveur de rapports, utilisez les pages Reporting Services de la page Paramètres du site de l’Administration centrale de SharePoint.<br /><br /> La version [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] Reporting Services et les versions ultérieures du complément pour les produits SharePoint activent la fonctionnalité d’intégration du serveur de rapports pour toutes les collections de sites existantes pendant l’installation du complément. En outre, la fonctionnalité est automatiquement active pour les nouvelles collections de sites.|  
 |**Fonctionnalité d'intégration du serveur de rapports**|Permet la création de rapports détaillés au moyen de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Reporting Services.<br /><br /> Cette fonctionnalité est activée par défaut.|  
-|**Fonctionnalité d'intégration de Power View**|Active l’exploration interactive de données et la présentation visuelle dans les classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et les bases de données tabulaires Analysis Services.<br /><br /> Cette fonctionnalité est accessible via les menus contextuels des sources de données suivantes :<br /><br /> **.rdlx**<br /><br /> **.rsds**<br /><br /> fichier de connexion**.bism** <br /><br /> <br /><br /> Si [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] n'apparaît pas dans les menus contextuels, vérifiez que **Fonctionnalité d'intégration de Power View** est activé.<br /><br /> Cette fonctionnalité est désactivée par défaut.|  
+|**Fonctionnalité d'intégration de Power View**|Active l’exploration interactive de données et la présentation visuelle dans les classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et les bases de données tabulaires Analysis Services.<br /><br /> Cette fonctionnalité est accessible via les menus contextuels des sources de données suivantes :<br /><br /> **.rdlx**<br /><br /> **.rsds**<br /><br /> fichier de connexion **.bism** <br /><br /> <br /><br /> Si [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] n'apparaît pas dans les menus contextuels, vérifiez que **Fonctionnalité d'intégration de Power View** est activé.<br /><br /> Cette fonctionnalité est désactivée par défaut.|  
 
 ## <a name="next-steps"></a>Étapes suivantes
 

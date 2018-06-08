@@ -1,31 +1,28 @@
 ---
-title: "L’Interface IRDSService (RDS) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: L’Interface IRDSService (RDS) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - IRDSService interface [ADO]
 ms.assetid: 01044c3a-ed38-4144-bc43-fe38a6d22d04
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0e360c609905f7983de95c704fe49ca72d043f71
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c9fce6711b2467647e8427d76322bbb5d9bdd5ce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="irdsservice-interface-rds"></a>Interface IRDSService (RDS)
 Expose les [InvokeService (RDS)](../../../ado/reference/rds-api/invokeservice-rds.md) (méthode), qui est utilisé pour retourner un pointeur vers l’interface demandée sur une version plus performante de l’objet.  

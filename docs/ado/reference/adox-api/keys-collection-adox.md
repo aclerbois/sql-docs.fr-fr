@@ -1,17 +1,15 @@
 ---
-title: "Clés de Collection (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Clés de Collection (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Table::Keys
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Keys collection [ADOX]
 ms.assetid: cdb31c76-e559-475c-b33a-aac24f73e70e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 31b99b28a878048a59b6fd5b79760a1b70c1cd56
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2f85bb15e6a8949299f0340530de6ffeb335389f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="keys-collection-adox"></a>Collection de clés (ADOX)
 Contient tous les [clé](../../../ado/reference/adox-api/key-object-adox.md) les objets d’un [table](../../../ado/reference/adox-api/table-object-adox.md).  

@@ -1,27 +1,24 @@
 ---
 title: La connexion avec le chiffrement SSL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ec91fa8a-ab7e-4c1e-a05a-d7951ddf33b1
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: c359bd9c80317302288b56b1a5216b68f30e34ab
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 49c6aaf771bb5335b8ba649869a4a8cf13894e82
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-with-ssl-encryption"></a>Connexion avec le chiffrement SSL
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

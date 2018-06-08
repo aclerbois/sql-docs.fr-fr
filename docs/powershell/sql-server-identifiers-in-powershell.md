@@ -1,16 +1,13 @@
 ---
-title: "Identificateurs SQL Server dans PowerShell | Microsoft Docs"
-ms.custom: 
+title: Identificateurs SQL Server dans PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: powershell
-ms.service: 
-ms.component: powershell
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: scripting
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Cmdlets [SQL Server], Encode-Sqlname
 - PowerShell [SQL Server], identifiers
@@ -21,16 +18,15 @@ helpviewer_keywords:
 - identifiers [SQL Server], PowerShell
 - Cmdlets [SQL Server], Decode-Sqlname
 ms.assetid: 651099b0-33b4-453a-a864-b067f21eb8b9
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a9e0c6458702647e3f7acd12b7ee4994fc396d72
-ms.sourcegitcommit: 779f3398e4e3f4c626d81ae8cedad153bee69540
+ms.openlocfilehash: 2df709e52d78a9d1b6401bfff0dc6e8ecf65148e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sql-server-identifiers-in-powershell"></a>Identificateurs SQL Server dans PowerShell
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

@@ -1,32 +1,33 @@
 ---
 title: SQLExecDirect, fonction | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLExecDirect
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLExecDirect
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLExecDirect
-helpviewer_keywords: SQLExecDirect function [ODBC]
+f1_keywords:
+- SQLExecDirect
+helpviewer_keywords:
+- SQLExecDirect function [ODBC]
 ms.assetid: 985fcee1-f204-425c-bdd1-deb0e7d7bbd9
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 9e2db598d233bb36eadd8161dc63a6be9a8ac4be
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e6af2069f900c4844d6d16fad3b7b8b920894098
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlexecdirect-function"></a>SQLExecDirect, fonction
 **Mise en conformité**  
@@ -61,7 +62,7 @@ SQLRETURN SQLExecDirect(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLExecDirect** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLExecDirect** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01001|Conflit d’opération de curseur|\**StatementText* contenus une position de mettre à jour ou de l’instruction delete, et aucune ligne ou plusieurs lignes ont été mis à jour ou supprimés. (Pour plus d’informations sur les mises à jour de plusieurs lignes, consultez la description de la SQL_ATTR_SIMULATE_CURSOR *attribut* dans **SQLSetStmtAttr**.)<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
@@ -69,15 +70,15 @@ SQLRETURN SQLExecDirect(
 |01004|Données de type chaîne, droite tronquées|Chaîne ou des données binaires retournées pour une entrée/sortie ou paramètre de sortie a entraîné la troncation des caractères non vides ou les données binaires non NULL. S’il s’agissait d’une valeur de chaîne, il a été tronqué à la droite. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01006|Privilège non révoqué|\**StatementText* contenait un **RÉVOQUER** instruction et l’utilisateur n’ont pas le privilège spécifié. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01007|Privilège n'accordé pas|*\*StatementText* a été un **GRANT** instruction et l’utilisateur n’ont pas reçu le privilège spécifié.|  
-|01 S 02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (**SQLGetStmtAttr** peut être appelée pour déterminer quelle est la valeur substituée temporairement.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé, à quel point l’attribut d’instruction reprend sa valeur précédente. Les attributs d’instruction qui peuvent être modifiés sont :<br /><br /> SQL_ ATTR_CONCURRENCY SQL_ ATTR_CURSOR_TYPE SQL_ ATTR_KEYSET_SIZE SQL_ ATTR_MAX_LENGTH SQL_ ATTR_MAX_ROWS SQL_ ATTR_QUERY_TIMEOUT SQL_ ATTR_SIMULATE_CURSOR<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
+|01S02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (**SQLGetStmtAttr** peut être appelée pour déterminer quelle est la valeur substituée temporairement.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé, à quel point l’attribut d’instruction reprend sa valeur précédente. Les attributs d’instruction qui peuvent être modifiés sont :<br /><br /> SQL_ ATTR_CONCURRENCY SQL_ ATTR_CURSOR_TYPE SQL_ ATTR_KEYSET_SIZE SQL_ ATTR_MAX_LENGTH SQL_ ATTR_MAX_ROWS SQL_ ATTR_QUERY_TIMEOUT SQL_ ATTR_SIMULATE_CURSOR<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01 S 07|Troncation fractionnelle|Les données retournées pour une entrée/sortie ou paramètre de sortie a été tronqué de sorte que la partie fractionnaire d’un type de données numérique a été tronquée ou la partie fractionnaire du composant d’un type de données heure, timestamp ou intervalle de temps a été tronquée.<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
-|07002|Champ COUNT incorrect|Le nombre de paramètres spécifiés dans **SQLBindParameter** était inférieur au nombre de paramètres dans l’instruction SQL contenue dans \* *StatementText*.<br /><br /> **SQLBindParameter** a été appelée avec *ParameterValuePtr* un pointeur null, la valeur *StrLen_or_IndPtr* ne pas la valeur SQL_NULL_DATA ou SQL_DATA_AT_EXEC, et *InputOutputType* ne pas la valeur SQL_PARAM_OUTPUT, afin que le nombre de paramètres spécifiés dans **SQLBindParameter** était supérieur au nombre de paramètres dans l’instruction SQL contenue dans **StatementText*.|  
+|07002|Champ COUNT incorrect|Le nombre de paramètres spécifiés dans **SQLBindParameter** était inférieur au nombre de paramètres dans l’instruction SQL contenue dans \* *StatementText*.<br /><br /> **SQLBindParameter** a été appelée avec *ParameterValuePtr* un pointeur null, la valeur *StrLen_or_IndPtr* ne pas la valeur SQL_NULL_DATA ou SQL_DATA_AT_EXEC, et *InputOutputType*  ne pas la valeur SQL_PARAM_OUTPUT, afin que le nombre de paramètres spécifiés dans **SQLBindParameter** était supérieur au nombre de paramètres dans l’instruction SQL contenue dans **StatementText* .|  
 |07006|Violation de l’attribut de type de données restreint|La valeur de données identifiée par le *ValueType* argument dans **SQLBindParameter** pour le paramètre dépendant n’a pas pu être converti au type de données identifié par le *ParameterType* argument dans **SQLBindParameter**.<br /><br /> La valeur des données retournées pour un paramètre en tant que SQL_PARAM_INPUT_OUTPUT ou SQL_PARAM_OUTPUT pas pu être convertie vers le type de données identifié par le *ValueType* argument dans **SQLBindParameter**.<br /><br /> (Si les valeurs de données pour une ou plusieurs lignes n’a pas pu être converties, mais une ou plusieurs lignes ont été retournés avec succès, cette fonction retourne SQL_SUCCESS_WITH_INFO.)|  
 |07007|Violation de valeur de paramètre réservé|Le type de paramètre SQL_PARAM_INPUT_OUTPUT_STREAM est utilisé uniquement pour un paramètre qui envoie et reçoit des données dans les parties. Une entrée de la mémoire tampon dépendante n’est pas autorisée pour ce type de paramètre.<br /><br /> Cette erreur se produit lorsque le type de paramètre est SQL_PARAM_INPUT_OUTPUT et lorsque la \* *StrLen_or_IndPtr* spécifié dans **SQLBindParameter** n’est pas égal à SQL_NULL_DATA, SQL_DEFAULT_PARAM, SQL_LEN_DATA_AT_EXEC(len) ou SQL_DATA_AT_EXEC.|  
 |07 S 01|Utilisation non valide du paramètre par défaut|Un paramètre défini avec **SQLBindParameter**, a été SQL_DEFAULT_PARAM, et le paramètre correspondant n’avait pas de valeur par défaut.|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
 |21S01|Liste de valeurs d’insertion ne correspond pas à la liste des colonnes|\**StatementText* contenait un **insérer** instruction et le nombre de valeurs à insérer ne correspond pas au degré de la table dérivée.|  
-|21S02|Degré de la table dérivée ne correspond pas à la liste des colonnes|\**StatementText* contenus un **CREATE VIEW** l’instruction et la liste de colonnes non qualifiés (le nombre de colonnes spécifié pour l’affichage dans le *identificateur de la colonne* arguments de l’instruction SQL) contenait des noms plus que le nombre de colonnes dans la table dérivée définie par le *spécification de requête* argument de l’instruction SQL.|  
+|21S02|Degré de la table dérivée ne correspond pas à la liste des colonnes|\**StatementText* contenus un **CREATE VIEW** l’instruction et la liste de colonnes non qualifiés (le nombre de colonnes spécifié pour l’affichage dans le *identificateur de la colonne* arguments de l’instruction SQL instruction) contenait des noms plus que le nombre de colonnes dans la table dérivée définie par le *-spécification de la requête* argument de l’instruction SQL.|  
 |22001|Chaîne de données sont tronquées à droite|L’affectation d’un caractère ou d’une valeur binaire à une colonne a entraîné la troncation des données de type caractère non vides ou les données binaires non null.|  
 |22002|Variable indicateur requise mais non fournie|Données de type NULL a été liées à un paramètre de sortie dont *StrLen_or_IndPtr* définie par **SQLBindParameter** était un pointeur null.|  
 |22003|Valeur numérique hors limites|**StatementText* contenait une instruction SQL qui contenait un littéral ou un paramètre numérique lié, et la valeur a provoqué la partie entière (par opposition aux fractions de seconde) le nombre à tronquer lorsque affecté à la colonne de table associée.<br /><br /> Renvoi d’une valeur numérique (comme numérique ou chaîne) pour un ou plusieurs paramètres d’entrée/sortie ou de sortie aurait entraîné la partie entière (par opposition aux fractions de seconde) le nombre à tronquer.|  
@@ -86,8 +87,8 @@ SQLRETURN SQLExecDirect(
 |22012|Division par zéro|**StatementText* contient une instruction SQL qui contenue une expression arithmétique ayant provoqué la division par zéro.<br /><br /> Une expression arithmétique calculée pour une entrée/sortie ou paramètre de sortie a entraîné de division par zéro.|  
 |22015|Dépassement du champ Intervalle|*\*StatementText* contient un paramètre numérique ou intervalle exact qui, lorsque converti en un type de données SQL de l’intervalle, a entraîné une perte de chiffres significatifs.<br /><br /> *\*StatementText* contient un paramètre d’intervalle avec plus d’un champ que, lorsque converti en un type de données numériques dans une colonne, n’ont aucune représentation dans le type de données numérique.<br /><br /> *\*StatementText* contient des données de paramètre qui a été affectées à un intervalle de type SQL, et il n’a pas de représentation de la valeur de type C dans l’intervalle de type SQL.<br /><br /> Affectation d’un paramètre d’entrée/sortie ou de sortie qui a une valeur numérique exacte ou un intervalle de type SQL à un type d’intervalle C a entraîné une perte de chiffres significatifs.<br /><br /> Lorsqu’un paramètre d’entrée/sortie ou de sortie a été affecté à une structure d’intervalle C, il n’a pas de représentation des données dans la structure de données d’intervalle.|  
 |22018|Valeur de caractère non valide pour la spécification de la casse|*\*StatementText* contenait un type C qui était un numérique exact ou approximatif, une valeur datetime ou un type de données d’intervalle ; le type SQL de la colonne a un type de données caractère ; et la valeur dans la colonne n’est pas un littéral valid du type C dépendant.<br /><br /> Lorsqu’un paramètre d’entrée/sortie ou de sortie a été retourné, le type SQL a été un numérique exact ou approximatif, une valeur datetime ou un type de données intervalle ; le type C a été SQL_C_CHAR ; et la valeur dans la colonne n’est pas un littéral valid du type SQL lié.|  
-|22019|Caractère d’échappement non valide|\**StatementText* contenait une instruction SQL qui contenait un **comme** prédicat avec une **échappement** dans les **où** clause et la longueur de ces caractères d’échappement **échappement** n’est pas égale à 1.|  
-|22025|Séquence d’échappement non valide|\**StatementText* contenait une instruction SQL contenant «**comme** *valeur de modèle* **échappement** *caractère d’échappement*» dans le **où** clause et le caractère suivant le caractère d’échappement dans la valeur de modèle n’est pas une « % » ou « _ ».|  
+|22019|Caractère d’échappement non valide|\**StatementText* contenait une instruction SQL qui contenait un **comme** prédicat avec une **échappement** dans les **où** clause et la longueur de la séquence d’échappement caractère suivant **d’échappement** n’est pas égale à 1.|  
+|22025|Séquence d’échappement non valide|\**StatementText* contenait une instruction SQL contenant «**comme** *valeur de modèle* **échappement** *caractère d’échappement* « dans le **où** clause et le caractère suivant le caractère d’échappement dans la valeur de modèle n’est pas une « % » ou « _ ».|  
 |23000|Violation de contrainte d’intégrité|**StatementText* contenait une instruction SQL qui contenait un littéral ou un paramètre. La valeur du paramètre était NULL pour une colonne définie comme NOT NULL dans la colonne de table associée, une valeur en double a été fournie pour une colonne doit contenir uniquement des valeurs uniques ou une autre contrainte d’intégrité a été violée.|  
 |24000|État de curseur non valide|Un curseur a été positionné sur le *au paramètre StatementHandle* par **SQLFetch** ou **SQLFetchScroll**. Cette erreur est retournée par le Gestionnaire de pilotes si **SQLFetch** ou **SQLFetchScroll** n’a pas retourné SQL_NO_DATA et est retourné par le pilote si **SQLFetch** ou **SQLFetchScroll** a retourné SQL_NO_DATA.<br /><br /> Un curseur a été ouvert, mais pas positionné sur le *au paramètre StatementHandle*.<br /><br /> **StatementText* contenus une position de mettre à jour ou de l’instruction delete, et le curseur est positionné avant le début du jeu de résultats ou après la fin du jeu de résultats.|  
 |34000|Nom de curseur non valide|**StatementText* contenus une position de mettre à jour ou de l’instruction delete, et le curseur référencé par l’instruction en cours d’exécution n’est pas ouvert.|  
@@ -101,7 +102,7 @@ SQLRETURN SQLExecDirect(
 |42S11|L’index existe déjà|\**StatementText* contenait un **CREATE INDEX** instruction et le nom de l’index spécifié existaient déjà.<br /><br /> \**StatementText* contenait un **CREATE SCHEMA** instruction et le nom de l’index spécifié existaient déjà.|  
 |42S12|Index non trouvé|\**StatementText* contenait un **DROP INDEX** instruction et le nom de l’index spécifié n’existent pas.|  
 |42S21|La colonne existe déjà|\**StatementText* contenait un **ALTER TABLE** instruction et la colonne spécifiée dans le **ajouter** clause n’est pas unique ou identifie une colonne existante dans la table de base.|  
-|42S22|Colonne introuvable|\**StatementText* contenait un **CREATE INDEX** instruction et la valeur d’un ou plusieurs de la colonne spécifiées dans la liste des colonnes de noms n’existent pas.<br /><br /> \**StatementText* contenait un **GRANT** ou **RÉVOQUER** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **sélectionnez**, **supprimer**, **insérer**, ou **mise à jour** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **CREATE TABLE** instruction et une colonne spécifiée dans une contrainte (faisant référence à une table autre que celui en cours de création) n’existent pas.<br /><br /> \**StatementText* contenait un **CREATE SCHEMA** instruction et un nom de colonne spécifié n’existent pas.|  
+|42S22|Colonne introuvable|\**StatementText* contenait un **CREATE INDEX** instruction et la valeur d’un ou plusieurs de la colonne spécifiées dans la liste des colonnes de noms n’existent pas.<br /><br /> \**StatementText* contenait un **GRANT** ou **RÉVOQUER** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **sélectionnez**, **supprimer**, **insérer**, ou **mise à jour** instruction et un nom de colonne spécifiée n’existe pas.<br /><br /> \**StatementText* contenait un **CREATE TABLE** instruction et une colonne spécifiée dans une contrainte (faisant référence à une table autre que celui en cours de création) n’existent pas.<br /><br /> \**StatementText* contenait un **CREATE SCHEMA** instruction et un nom de colonne spécifié n’existent pas.|  
 |44000|Violation de WITH CHECK OPTION|L’argument *StatementText* contenus un **insérer** instruction exécutée sur une table affichée ou une table dérivée à partir de la table affichée qui a été créée en spécifiant **WITH CHECK OPTION**, telle qu’une ou plusieurs lignes affectées par la **insérer** instruction ne pourra plus être présente dans la table affichée.<br /><br /> L’argument *StatementText* contenus un **mise à jour** instruction exécutée sur une table affichée ou une table dérivée à partir de la table affichée qui a été créée en spécifiant **WITH CHECK OPTION**, telle qu’une ou plusieurs lignes affectées par la **mise à jour** instruction ne pourra plus être présente dans la table affichée.|  
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans les  *\*MessageText* tampon décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou à l’achèvement de la fonction.|  

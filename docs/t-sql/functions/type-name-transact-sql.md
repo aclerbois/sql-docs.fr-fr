@@ -1,16 +1,14 @@
 ---
 title: TYPE_NAME (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TYPE_NAME_TSQL
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - data types [SQL Server], names
 - TYPE_NAME function
 ms.assetid: e4075a2e-5f70-440f-986b-9ec8434e07c1
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: efd210bc036ed301f426e81feb6c783984f9fb4d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 297cfa981df9478b8a26d2c6401c3ddbdaa01a9d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="typename-transact-sql"></a>TYPE_NAME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -63,7 +61,7 @@ TYPE_NAME ( type_id )
 ## <a name="remarks"></a>Notes   
  TYPE_NAME renvoie la valeur NULL lorsque *type_id* n’est pas valide ou lorsque l’appelant n’a pas les autorisations suffisantes pour référencer le type.  
   
- TYPE_NAME fonctionne pour les types de données système ainsi que pour les types de données définis par l'utilisateur. Le type peut être contenu dans n'importe quel schéma, mais un nom de type non qualifié est toujours renvoyé. Cela signifie que le nom n’a pas le préfixe *schema***.** .  
+ TYPE_NAME fonctionne pour les types de données système ainsi que pour les types de données définis par l'utilisateur. Le type peut être contenu dans n'importe quel schéma, mais un nom de type non qualifié est toujours renvoyé. Cela signifie que le nom n’a pas le préfixe *schema***.**  
   
  Les fonctions système peuvent être utilisées dans la liste de sélection, dans une clause WHERE, et partout où une expression est autorisée. Pour plus d’informations, consultez [Expressions &#40;Transact-SQL&#41;](../../t-sql/language-elements/expressions-transact-sql.md) et [WHERE &#40;Transact-SQL&#41;](../../t-sql/queries/where-transact-sql.md).  
   

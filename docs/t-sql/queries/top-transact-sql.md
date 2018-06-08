@@ -1,16 +1,14 @@
 ---
 title: TOP (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TOP_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - TOP clause, about TOP clause
 - queries [SQL Server], results
 ms.assetid: da983c0a-06c5-4cf8-a6a4-7f9d66f34f2c
-caps.latest.revision: 
+caps.latest.revision: 60
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 926de1152e7c1223441d9ac85da11246049e31ea
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 26eda1bce8b9f7775b2cada2e9633115020e94fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="top-transact-sql"></a>TOP (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -88,7 +86,7 @@ ms.lasthandoff: 02/19/2018
 ## <a name="interoperability"></a>Interopérabilité  
  L'expression TOP n'affecte pas les instructions qui peuvent être exécutées en raison d'un déclencheur. Les tables **inserted** et **deleted** dans les déclencheurs retournent seulement les lignes réellement affectées par les instructions INSERT, UPDATE, MERGE ou DELETE. Par exemple, si un INSERT TRIGGER est déclenché comme résultat d'une instruction INSERT qui a utilisé une clause TOP,  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tient compte de la mise à jour de lignes par le biais des vues. La clause TOP pouvant être incluse dans la définition de la vue, des lignes peuvent disparaître de la vue à la suite d'une mise à jour si les lignes ne répondent plus aux conditions de l'expression TOP.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tient compte de la mise à jour de lignes via des vues. La clause TOP pouvant être incluse dans la définition de la vue, des lignes peuvent disparaître de la vue à la suite d'une mise à jour si les lignes ne répondent plus aux conditions de l'expression TOP.  
   
  Quand elle est spécifiée dans l'instruction MERGE, la clause TOP est appliquée *après* la jointure de l'intégralité de la table source et de la table cible, et après la suppression des lignes jointes qui ne sont pas éligibles pour une action d'insertion, de mise à jour ou de suppression. La clause TOP réduit le nombre de lignes jointes à la valeur spécifiée et les actions INSERT, UPDATE ou DELETE sont appliquées aux lignes jointes restantes sans respecter un ordre particulier. Les lignes ne sont donc pas réparties selon un ordre particulier dans le cadre des actions définies dans les clauses WHEN. Par exemple, la spécification de la clause TOP (10) affecte 10 lignes, dont 7 peuvent être mises à jour et 3 insérées, ou alors 1 ligne peut être supprimée, 5 mises à jour et 4 insérées, et ainsi de suite. Étant donné que l'instruction MERGE effectue une analyse complète des tables source et cible, les performances d'E/S peuvent être affectées lorsque la clause TOP est utilisée pour modifier une table volumineuse en créant plusieurs lots. Dans ce scénario, il est important de s'assurer que tous les lots consécutifs ciblent les nouvelles lignes.  
   
@@ -234,7 +232,7 @@ GO
 ###  <a name="DML"></a> Limitation des lignes affectées par DELETE, INSERT ou UPDATE  
   
 #### <a name="a-using-top-to-limit-the-number-of-rows-deleted"></a>A. Utilisation de TOP pour limiter le nombre de lignes supprimées  
- Quand une clause TOP (*n*) est utilisée avec DELETE, l'opération de suppression est effectuée sur une sélection non définie de *n* lignes. Autrement dit, l'instruction DELETE choisit un nombre (*n*) de lignes qui répondent aux critères définis dans la clause WHERE. L'exemple suivant supprime `20` lignes de la table `PurchaseOrderDetail` dont la date d'échéance est antérieure au 1er juillet 2002.  
+ Quand une clause TOP (*n*) est utilisée avec DELETE, l’opération de suppression est effectuée sur une sélection non définie de *n* lignes. Autrement dit, l’instruction DELETE choisit un nombre (*n*) de lignes qui répondent aux critères définis dans la clause WHERE. L'exemple suivant supprime `20` lignes de la table `PurchaseOrderDetail` dont la date d'échéance est antérieure au 1er juillet 2002.  
   
 ```sql  
 USE AdventureWorks2012;  
@@ -300,7 +298,7 @@ GO
 ```  
   
 #### <a name="c-using-top-to-limit-the-number-of-rows-updated"></a>C. Utilisation de TOP pour limiter le nombre de lignes mises à jour  
- L'exemple suivant utilise la clause TOP pour mettre à jour des lignes dans une table. Quand une clause TOP (*n*) est utilisée avec UPDATE, l'opération de mise à jour est effectuée sur une sélection non définie de lignes. Autrement dit, l'instruction UPDATE choisit un nombre (*n*) de lignes qui répondent aux critères définis dans la clause WHERE. L'exemple suivant retire 10 clients à un vendeur et les attribue à un autre vendeur.  
+ L'exemple suivant utilise la clause TOP pour mettre à jour des lignes dans une table. Quand une clause TOP (*n*) est utilisée avec UPDATE, l’opération de mise à jour est effectuée sur une sélection non définie de lignes. Autrement dit, l’instruction UPDATE choisit un nombre (*n*) de lignes qui répondent aux critères définis dans la clause WHERE. L'exemple suivant retire 10 clients à un vendeur et les attribue à un autre vendeur.  
   
 ```sql  
 USE AdventureWorks2012;  

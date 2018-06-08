@@ -1,30 +1,29 @@
 ---
-title: "Méthode setLogWriter (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setLogWriter (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.setLogWriter
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.setLogWriter
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 7a77d8ef-2211-4bf8-af35-020fc896c073
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d9192992c3f530b5418ef65aaab0708a4299698f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8f4b38c84d1f4a2605dfdd7624501180ae2f20d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setlogwriter-method-sqlserverdatasource"></a>Méthode setLogWriter (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public void setLogWriter(java.io.PrintWriter out)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *sortie*  
+ *Sortie*  
   
  Un objet PrintWriter.  
   
@@ -47,7 +46,7 @@ public void setLogWriter(java.io.PrintWriter out)
  Cette méthode setLogWriter est spécifiée par la méthode setLogWriter dans l’interface javax.sql.DataSource.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

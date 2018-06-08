@@ -1,31 +1,29 @@
 ---
-title: "Configurer un déploiement avec montée en puissance parallèle de serveurs de rapports en mode natif | Microsoft Docs"
-ms.custom: 
+title: Configurer un déploiement avec montée en puissance parallèle de serveurs de rapports en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report servers [Reporting Services], deployments
 - deploying [Reporting Services], scale-out deployment model
 - scale-out deployments [Reporting Services]
 ms.assetid: b30d0308-4d9b-4f85-9f83-dece4dcb2775
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 10c05be9afbf0f9e272e35f73957ddb3a19c65f2
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 5c832e283da1b853cf135e7f6d9dba8af042effb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-a-native-mode-report-server-scale-out-deployment"></a>Configurer un déploiement par montée en puissance parallèle de serveurs de rapports en mode natif.
 

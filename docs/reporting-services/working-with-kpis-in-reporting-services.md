@@ -1,27 +1,25 @@
 ---
-title: "Utilisation des indicateurs de performance clés dans Reporting Services | Microsoft Docs"
+title: Utilisation des indicateurs de performance clés dans Reporting Services | Microsoft Docs
 ms.date: 07/02/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: a28cf500-6d47-4268-a248-04837e7a09eb
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 6a565e8722385438bddf7b4f01d93ca0be05986f
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 74c0cd02499ab10f2aeded7cc528c7db244cd2cb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-kpis-in-reporting-services"></a>Utilisation des indicateurs de performance clés dans Reporting Services
 

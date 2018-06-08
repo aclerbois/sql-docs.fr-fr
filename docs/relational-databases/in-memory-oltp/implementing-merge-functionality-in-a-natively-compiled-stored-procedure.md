@@ -1,28 +1,26 @@
 ---
-title: "Implémentation de la fonctionnalité MERGE dans une procédure stockée compilée en mode natif | Microsoft Docs"
-ms.custom: 
+title: Implémentation de la fonctionnalité MERGE dans une procédure stockée compilée en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d4bcdc36-3302-4abc-9b35-64ec2b920986
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4c286630c2aa208e76d936e2fd593f3256003cfc
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 261700580577c008bacce1059e50747e094c2a63
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="implementing-merge-functionality-in-a-natively-compiled-stored-procedure"></a>Implémentation de la fonctionnalité MERGE dans une procédure stockée compilée en mode natif
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

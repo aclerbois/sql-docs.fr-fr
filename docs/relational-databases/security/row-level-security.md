@@ -1,17 +1,14 @@
 ---
-title: "Sécurité au niveau des lignes | Microsoft Docs"
-ms.custom: 
+title: Sécurité au niveau des lignes | Microsoft Docs
+ms.custom: ''
 ms.date: 03/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: security
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - access control predicates
 - row level security
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - row level security described
 - predicate based security
 ms.assetid: 7221fa4e-ca4a-4d5c-9f93-1b8a4af7b9e8
-caps.latest.revision: 
+caps.latest.revision: 47
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d039c1e5bb76fb9b994e9d5fc2a89df64e320c3b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 78a3e1731204dc8d75a4783135dc10caa8e4d164
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="row-level-security"></a>Sécurité au niveau des lignes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -43,7 +40,7 @@ ms.lasthandoff: 11/21/2017
   
  Implémentez une sécurité au niveau des lignes à l’aide de l’instruction [CREATE SECURITY POLICY](../../t-sql/statements/create-security-policy-transact-sql.md)[!INCLUDE[tsql](../../includes/tsql-md.md)] , et de prédicats créés en tant que [fonctions table incluses](../../relational-databases/user-defined-functions/create-user-defined-functions-database-engine.md).  
   
-**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)), [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([Obtenez-le](http://azure.micosoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).  
+**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)), [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([Obtenez-le](http://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).  
   
 
 ##  <a name="Description"></a> Description  
@@ -79,7 +76,7 @@ ms.lasthandoff: 11/21/2017
   
 -   La définition de plusieurs stratégies de sécurité actives contenant des prédicats sans chevauchement réussit.  
   
- Les prédicats de filtre se comportent comme suit :  
+ Les prédicats de filtre se comportent comme suit :  
   
 -   Définir une stratégie de sécurité qui filtre les lignes d'une table. L'application ignore que des lignes ont été filtrées pour les opérations **SELECT**, **UPDATE**et **DELETE** , y compris dans les cas où la totalité des lignes a été filtrée. L'application peut **INSERT** toutes les lignes, qu'elles soient ou non filtrées lors de toute autre opération.  
   
@@ -106,7 +103,7 @@ ms.lasthandoff: 11/21/2017
  En termes plus formels, la sécurité au niveau des lignes introduit le contrôle d'accès basé sur le prédicat. Elle propose une évaluation flexible, centralisée et basée sur le prédicat, qui peut prendre en compte les métadonnées ou tout autre critère que l'administrateur détermine comme approprié. Le prédicat est utilisé comme critère pour déterminer si l'utilisateur a l'accès approprié aux données en fonction de ses propres attributs. Le contrôle d'accès basé sur l'étiquette peut être implémenté à l'aide du contrôle d'accès basé sur le prédicat.  
   
   
-##  <a name="Permissions"></a> Autorisations  
+##  <a name="Permissions"></a> Permissions  
  La création, modification ou suppression des stratégies de sécurité nécessite l'autorisation **ALTER ANY SECURITY POLICY** . La création ou suppression d'une stratégie de sécurité nécessite l'autorisation **ALTER** sur le schéma.  
   
  En outre, les autorisations suivantes sont requises pour chaque prédicat ajouté :  
@@ -362,7 +359,7 @@ REVERT;
 GO  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [CREATE SECURITY POLICY &#40;Transact-SQL&#41;](../../t-sql/statements/create-security-policy-transact-sql.md)   
  [ALTER SECURITY POLICY &#40;Transact-SQL&#41;](../../t-sql/statements/alter-security-policy-transact-sql.md)   
  [DROP SECURITY POLICY &#40;Transact-SQL&#41;](../../t-sql/statements/drop-security-policy-transact-sql.md)   

@@ -1,15 +1,14 @@
 ---
-title: "Mappage des Types de données (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Mappage des Types de données (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-results
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - mapping data types [ODBC]
@@ -21,16 +20,16 @@ helpviewer_keywords:
 - sql_variant data type
 - SQL Server Native Client ODBC driver, data types
 ms.assetid: 4ba0924d-9fca-4c48-aced-0a8d817b3dde
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4f7d92d0580f7c56a17f1de332204622eee15948
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 2fa9ef65906c70a3542fbdd617661c59a64bbad9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-data-types-odbc"></a>Mappage de types de données (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -98,6 +97,6 @@ while ((retcode = SQLFetch (hstmt))==SQL_SUCCESS)
  **SQL_SS_VARIANT**, un nouveau type de données spécifiques à la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pilote ODBC Native Client, est utilisé pour les données envoyées à un **sql_variant** colonne. Lors de l’envoi des données au serveur à l’aide de paramètres (par exemple, INSERT INTO TableName VALUES ( ?, ?)), [SQLBindParameter](../../relational-databases/native-client-odbc-api/sqlbindparameter.md) est utilisée pour spécifier les informations de paramètre, y compris le type C et le correspondant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type. Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pilote ODBC Native Client convertit le type de données C à un des approprié **sql_variant** sous-types.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Le traitement des résultats &#40; ODBC &#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)  
+ [Le traitement des résultats &#40;ODBC&#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)  
   
   

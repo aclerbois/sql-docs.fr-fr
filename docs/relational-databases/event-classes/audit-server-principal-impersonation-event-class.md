@@ -1,34 +1,30 @@
 ---
-title: "Audit Server Principal Impersonation, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Server Principal Impersonation, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Server Principal Impersonation event class
 ms.assetid: 6fee1a15-325a-4f09-a95d-deecf8af1b9f
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3d9a61907ddbdb0ee093cc1b24e0e725bda3c981
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 54994b8c27919fed297a70573fc70eb0990d14ba
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-server-principal-impersonation-event-class"></a>Audit Server Principal Impersonation (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Server Principal Impersonation** se produit lors d’un emprunt d’identité dans l’étendue du serveur, comme EXECUTE AS \<*ID_connexion*>.  
+  La classe d’événements **Audit Server Principal Impersonation** se produit lors d’un emprunt d’identité dans l’étendue du serveur, comme EXECUTE AS \<*ID_connexion*>.  
   
 ## <a name="audit-server-principal-impersonation-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Server Principal Impersonation  
   

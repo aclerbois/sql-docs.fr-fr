@@ -1,28 +1,26 @@
 ---
 title: catalog.add_data_tap_by_guid | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 ms.assetid: ed9d7fa3-61a1-4e21-ba43-1ead7dfc74eb
-caps.latest.revision: 
+caps.latest.revision: 15
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 088d7eeda34d83a0bd54b0626216663725a94d5d
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 39d6e9d5fda554530f321e6887230812b6810ddc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catalogadddatatapbyguid"></a>catalog.add_data_tap_by_guid
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -55,7 +53,7 @@ catalog add_data_tap_by_guid [ @execution_id = ] execution_id
  *dataflow_path_id_string* est de type **nvarchar(4000)**.  
   
  [ @data_filename = ] *data_filename*  
- Nom du fichier qui stocke les données drainées. Si la tâche de flux de données s'exécute à l'intérieur d'un conteneur de boucles Foreach ou For, des fichiers distincts stockent les données drainées pour chaque itération de la boucle. Chaque fichier a pour préfixe un nombre qui correspond à une itération. Les fichiers de drainage de données sont écrits dans le dossier « *\<dossier d’installation de SQL Server>*\130\DTS\\ ». *data_filename* est de type **nvarchar(4000)**.  
+ Nom du fichier qui stocke les données drainées. Si la tâche de flux de données s'exécute à l'intérieur d'un conteneur de boucles Foreach ou For, des fichiers distincts stockent les données drainées pour chaque itération de la boucle. Chaque fichier a pour préfixe un nombre qui correspond à une itération. Les fichiers de drainage de données sont écrits dans le dossier « *\<dossier d’installation de SQL Server>* \130\DTS\\ ». *data_filename* est de type **nvarchar(4000)**.  
   
  [ @max_rows = ] max_rows  
  Nombre de lignes capturées pendant le drainage de données. Si cette valeur n'est pas spécifiée, toutes les lignes sont capturées. max_rows est de type **int**.  

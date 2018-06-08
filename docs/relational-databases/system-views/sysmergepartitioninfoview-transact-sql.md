@@ -1,16 +1,15 @@
 ---
 title: sysmergepartitioninfoview (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmergepartitioninfoview view
 ms.assetid: 714e2935-1bc7-4901-aea2-64b1bbda03d6
-caps.latest.revision: 
+caps.latest.revision: 16
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ee0a46b7ec48d16bb2af2d528b4e832298c36a39
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: b3a1362e62d6e078b7847a8d37af31614a082162
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sysmergepartitioninfoview-transact-sql"></a>sysmergepartitioninfoview (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +47,7 @@ ms.lasthandoff: 02/03/2018
 |**description**|**nvarchar(255)**|Brève description de l'article.|  
 |**pre_creation_command**|**tinyint**|L’action par défaut à effectuer lorsque l’article est créé dans la base de données d’abonnement :<br /><br /> **0** = aucune - si la table existe déjà sur l’abonné, aucune action n’est effectuée.<br /><br /> **1** = Supprimer - supprime la table avant de la recréer.<br /><br /> **2** = supprimer - entraîne une suppression basée sur la clause WHERE dans le filtre de sous-ensemble.<br /><br /> **3** = Truncate : identique à 2, mais supprime des pages au lieu de lignes. Toutefois, n'accepte pas la clause WHERE.|  
 |**pubid**|**uniqueidentifier**|ID de la publication à laquelle appartient l'article actif.|  
-|**nickname**|**int**|Le mappage de surnom pour l'identification de l'article.|  
+|**Surnom**|**int**|Le mappage de surnom pour l'identification de l'article.|  
 |**column_tracking**|**int**|L’indique si le suivi des colonnes est implémentée pour l’article.|  
 |**status**|**tinyint**|Indique l'état de l'article, qui peut être l'un des suivants :<br /><br /> **1** = Unsynced - le script de traitement initial pour publier la table sera exécuté lors de la prochaine exécution de l’Agent d’instantané.<br /><br /> **2** = active - le script de traitement initial pour publier la table a été exécuté.|  
 |**conflict_table**|**sysname**|Nom de la table locale qui contient les enregistrements en conflit pour l'article actif. Cette table est fournie à titre d'information uniquement et son contenu peut être modifié ou supprimé à l'aide des routines personnalisées de résolution de conflits ou directement par l'administrateur.|  
@@ -62,7 +60,7 @@ ms.lasthandoff: 02/03/2018
 |**select_proc**|**sysname**|Nom de la procédure stockée générée automatiquement que l'Agent de fusion utilise pour effectuer les verrouillages et rechercher des colonnes et des lignes pour un article.|  
 |**metadata_select_proc**|**sysname**|Nom de la procédure stockée générée automatiquement et utilisée pour accéder aux métadonnées des tables système de réplication de fusion.|  
 |**delete_proc**|**sysname**|Procédure utilisée pour supprimer des lignes pendant la synchronisation.|  
-|**schema_option**|**binary(8)**|Bitmap de l'option de génération de schéma pour l'article donné. Pour plus d’informations sur pris en charge *schema_option* valeurs, consultez [sp_addmergearticle &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).|  
+|**schema_option**|**binary(8)**|Bitmap de l'option de génération de schéma pour l'article donné. Pour plus d’informations sur pris en charge *schema_option* valeurs, consultez [sp_addmergearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergearticle-transact-sql.md).|  
 |**destination_object**|**sysname**|Nom de la table créée sur l'Abonné.|  
 |**destination_owner**|**sysname**|Le nom du propriétaire de l’objet de destination.|  
 |**resolver_clsid**|**nvarchar(50)**|ID de l'outil personnalisé de résolution des conflits Cette valeur est NULL dans le cas d'un gestionnaire de logique métier.|  
@@ -88,7 +86,7 @@ ms.lasthandoff: 02/03/2018
 |**processing_order**|**int**|Indique l’ordre de traitement des articles dans une publication de fusion ; où la valeur **0** indique que l’article n’est pas ordonné, et les articles sont traités dans l’ordre de la plus petite à la plus élevée. Si deux articles ont la même valeur, ils sont traités simultanément. Pour plus d’informations, consultez [Spécifier l’ordre de traitement d’articles de fusion](../../relational-databases/replication/merge/specify-the-processing-order-of-merge-articles.md).|  
 |**upload_options**|**tinyint**|Indique si des modifications peuvent être effectuées sur l'Abonné ou téléchargés à partir de l'Abonné ; peut prendre l'une des valeurs suivantes :<br /><br /> **0** = il n’existe aucune restriction sur les mises à jour effectuées sur l’abonné ; toutes les modifications sont téléchargées sur le serveur de publication.<br /><br /> **1** = les modifications sont autorisées sur l’abonné, mais elles ne sont pas téléchargées sur le serveur de publication.<br /><br /> **2** = les modifications ne sont pas autorisées sur l’abonné.|  
 |**published_in_tran_pub**|**bit**|Indique qu'un article d'une publication de fusion est également publié dans une publication transactionnelle.<br /><br /> **0** = l’article n’est pas publié dans un article transactionnel.<br /><br /> **1** = l’article est également publié dans un article transactionnel.|  
-|**lightweight**|**bit**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
+|**légère**|**bit**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**procname_postfix**|**nchar(32)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**well_partitioned_lightweight**|**bit**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**before_upd_view_objid**|**int**|ID de la vue de la table avant les mises à jour.|  
@@ -96,14 +94,14 @@ ms.lasthandoff: 02/03/2018
 |**compensate_for_errors**|**bit**|Indique si des actions de compensation interviennent lorsque des erreurs se produisent pendant la synchronisation.<br /><br /> **0** = Compensating actions sont désactivées.<br /><br /> **1** = les modifications qui ne peut pas être appliquées à un abonné ou un serveur de publication entraînent toujours des actions de compensation pour annuler ces modifications, qui est le comportement par défaut pour la réplication de fusion.<br /><br /> Remarque : Une valeur de **0** entraîne une non-convergence.|  
 |**pub_range**|**bigint**|Taille de la plage d'identité du serveur de publication.|  
 |**range**|**bigint**|Taille des valeurs d'identité consécutives qui seraient affectées aux abonnés dans le cas d'un ajustement.|  
-|**threshold**|**int**|Seuil de la plage d'identité exprimé en pourcentage.|  
+|**Seuil**|**int**|Seuil de la plage d'identité exprimé en pourcentage.|  
 |**stream_blob_columns**|**bit**|Indique si la fonction d'optimisation de diffusion est utilisée pour les colonnes d'objets binaires volumineux. **1** signifie que l’optimisation est tentée.|  
 |**preserve_rowguidcol**|**bit**|Indique si la réplication utilise une colonne rowguid existante. La valeur **1** signifie qu’une colonne ROWGUIDCOL existante est utilisée. **0** signifie que la réplication a ajouté la colonne ROWGUIDCOL.|  
 |**partition_view_id**|**int**|Identifie la vue définissant une partition d'abonné.|  
 |**repl_view_id**|**int**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**partition_deleted_view_rule**|**sysname**|Instruction utilisée à l'intérieur d'un déclencheur de réplication de fusion pour extraire l'ID de partition pour chaque ligne supprimée ou mise à jour en fonction de ses anciennes valeurs de colonne.|  
-|**partition_inserted_view_rule**|**Sysname**|Instruction utilisée à l'intérieur d'un déclencheur de réplication de fusion pour extraire l'ID de partition pour chaque ligne insérée ou mise à jour en fonction de ses anciennes valeurs de colonne.|  
-|**membership_eval_proc_name**|**sysname**|Le nom de la procédure qui évalue les ID de partition actuel de lignes dans [MSmerge_contents &#40; Transact-SQL &#41; ](../../relational-databases/system-tables/msmerge-contents-transact-sql.md).|  
+|**partition_inserted_view_rule**|**sysname**|Instruction utilisée à l'intérieur d'un déclencheur de réplication de fusion pour extraire l'ID de partition pour chaque ligne insérée ou mise à jour en fonction de ses anciennes valeurs de colonne.|  
+|**membership_eval_proc_name**|**sysname**|Le nom de la procédure qui évalue les ID de partition actuel de lignes dans [MSmerge_contents &#40;Transact-SQL&#41;](../../relational-databases/system-tables/msmerge-contents-transact-sql.md).|  
 |**column_list**|**sysname**|Liste séparée par des virgules des colonnes publiées dans un article.|  
 |**column_list_blob**|**sysname**|Liste séparée par des virgules des colonnes publiées dans un article, y compris les colonnes d'objets binaires volumineux.|  
 |**expand_proc**|**sysname**|Nom de la procédure qui réévalue les ID de partition de toutes les lignes enfants d'une ou plusieurs lignes parents nouvellement insérées ayant fait l'objet d'une modification de partition ou qui ont été supprimées.|  
@@ -117,8 +115,8 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Gérer les Partitions d’une Publication de fusion avec des filtres paramétrés](../../relational-databases/replication/publish/manage-partitions-for-a-merge-publication-with-parameterized-filters.md)   
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
- [Vues de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
  [sp_addmergepartition &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergepartition-transact-sql.md)   
  [sp_helpmergepartition &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergepartition-transact-sql.md)  
   

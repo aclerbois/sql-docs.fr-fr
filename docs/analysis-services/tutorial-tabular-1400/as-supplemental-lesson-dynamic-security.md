@@ -1,27 +1,19 @@
 ---
-title: "Leçon supplémentaire de Analysis Services tutorial : sécurité dynamique | Documents Microsoft"
-description: "Décrit comment utiliser la sécurité dynamique à l’aide de filtres de lignes dans le didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon supplémentaire de Analysis Services tutorial : sécurité dynamique | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 4f304535ab43563b64757ccfc812498df4467762
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfile"
+ms.openlocfilehash: 2e5fd35b35a61e7844808e7fff053d6fb7a0434b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="supplemental-lesson---dynamic-security"></a>Leçon supplémentaire - sécurité dynamique
 

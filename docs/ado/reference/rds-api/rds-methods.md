@@ -1,30 +1,28 @@
 ---
-title: "Méthodes des services Bureau à distance | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Méthodes des services Bureau à distance | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS methods [ADO]
 - methods [ADO], RDS
 ms.assetid: c2c6af1a-3c44-4c9d-ad33-b381552c71af
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b2f4f52ffde70ad0d045acf5228045ad3baf84c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 58642bdd8ac5195f52ba20a403d7787ac3c48668
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rds-methods"></a>Méthodes des services Bureau à distance
 > [!IMPORTANT]

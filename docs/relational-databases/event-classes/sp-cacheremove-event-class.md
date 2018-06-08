@@ -1,34 +1,30 @@
 ---
-title: "SP:CacheRemove, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SP:CacheRemove, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SP:CacheRemove event class
 ms.assetid: aaa3c5c4-2d3a-4832-a473-ce9bd4fb1c17
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 882338123b5ebf4c398834bcc2709b4acd126360
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d0cbe04450a75101d93d890148676da0c1e7de09
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="spcacheremove-event-class"></a>SP:CacheRemove, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SP:CacheRemove indique que la procédure stockée a été supprimée du cache de plan.  
+  La classe d'événements SP:CacheRemove indique que la procédure stockée a été supprimée du cache de plan.  
   
 ## <a name="spcacheremove-event-class-data-columns"></a>Colonnes de la classe d'événements SP:CacheRemove  
   

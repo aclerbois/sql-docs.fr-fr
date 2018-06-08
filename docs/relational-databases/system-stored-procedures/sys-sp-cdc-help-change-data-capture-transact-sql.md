@@ -1,16 +1,14 @@
 ---
 title: Sys.sp_cdc_help_change_data_capture (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_cdc_help_change_data_capture_TSQL
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - sys.sp_cdc_help_change_data_capture
 - sp_cdc_help_change_data_capture
 ms.assetid: 91fd41f5-1b4d-44fe-a3b5-b73eff65a534
-caps.latest.revision: 
+caps.latest.revision: 25
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6d3c187f86ab51d8a96a4ea0115830963f058ff1
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: b1fd52d38d96f83c6be7c0a327fca797f934a466
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysspcdchelpchangedatacapture-transact-sql"></a>sys.sp_cdc_help_change_data_capture (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -92,7 +89,7 @@ sys.sp_cdc_help_change_data_capture
 ## <a name="remarks"></a>Notes  
  Lorsque les deux *source_schema* et *source_name* par défaut avec la valeur NULL ou sont explicitement la valeur NULL, cette procédure stockée retourne des informations pour la base de données toutes les instances de capture auquel l’appelant a accès SELECT à. Lorsque *source_schema* et *source_name* sont non NULL, seules les informations sur la table activée nommée spécifique sont retournées.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Lorsque *source_schema* et *source_name* ont la valeur NULL, l’autorisation de l’appelant détermine les tables activées qui sont inclus dans le jeu de résultats. Les appelants doivent avoir l'autorisation SELECT sur toutes les colonnes capturées de l'instance de capture et être membres d'un rôle de régulation défini pour les informations de table à inclure. Les membres du rôle de base de données db_owner peuvent afficher des informations concernant toutes les instances de capture définies. Lorsque des informations pour une table activée spécifique sont demandées, les mêmes critères SELECT et d'appartenance sont appliqués pour la table nommée.  
   
 ## <a name="examples"></a>Exemples  

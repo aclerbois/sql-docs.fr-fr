@@ -1,32 +1,29 @@
 ---
-title: "Fonction de mise en conformité | Documents Microsoft"
-ms.custom: 
+title: Fonction de mise en conformité | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - conformance levels [ODBC], function
 - function conformance levels [ODBC]
 - data sources [ODBC], conformance levels
 - ODBC drivers [ODBC], conformance levels
 ms.assetid: bb5d68cf-d238-481e-babc-2e9401b4700e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fb178c2359ee9b1df4754615316f80b8284e84a6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 182b53071f5d7d4c3486a84f789954e12772e0bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="function-conformance"></a>Mise en conformité (fonction)
 Le tableau suivant indique le niveau de conformité de chaque fonction ODBC, où cela est bien défini.  

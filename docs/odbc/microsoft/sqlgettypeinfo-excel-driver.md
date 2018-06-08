@@ -1,30 +1,27 @@
 ---
 title: SQLGetTypeInfo (pilote Excel) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLGetTypeInfo function [ODBC], Excel Driver
 - Excel driver [ODBC], SQLGetTypeInfo
 ms.assetid: 708845be-e6a1-4677-8113-c52819a43fa4
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bb9d575ce17c4e4d8f825d5ae9f6767b22613493
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cc8117eecd0ae67c01705de3c9ee992535aef4fa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgettypeinfo-excel-driver"></a>SQLGetTypeInfo (pilote Excel)
 > [!NOTE]  

@@ -1,33 +1,30 @@
 ---
-title: "CommandTimeout, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: CommandTimeout, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Command15::CommandTimeout
 helpviewer_keywords:
 - CommandTimeout property [ADO]
 ms.assetid: c611f857-d6b0-4dca-8925-f4a02e769eb0
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a7848d7fb51a01c35f8a8699b89ea132da36396b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5bbd07b516902db0dc952761e7cc1e38fa6958ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="commandtimeout-property-ado"></a>CommandTimeout, propriété (ADO)
 Indique le délai d’attente lors de l’exécution d’une commande avant d’abandonner la tentative et de générer une erreur.  

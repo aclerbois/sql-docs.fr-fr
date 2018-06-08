@@ -1,16 +1,15 @@
 ---
 title: sp_addmergepullsubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergepullsubscription
 ms.assetid: d63909a0-8ea7-4734-9ce8-8204d936a3e4
-caps.latest.revision: 
+caps.latest.revision: 44
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 64af301fda7ee871c30611698b1385fa8bd318f0
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6d02490784dbbae3dba91aab940257300b4445eb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergepullsubscription-transact-sql"></a>sp_addmergepullsubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -62,7 +60,7 @@ sp_addmergepullsubscription [ @publication= ] 'publication'
  Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, avec NULL comme valeur par défaut.  
   
  [  **@subscriber_type=**] **'***subscriber_type***'**  
- Type d'abonné. *subscriber_type* est **nvarchar (15)**et peut être **global**, **local** ou **anonyme**. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures, abonnements locaux sont désignés comme des abonnements clients et les abonnements globaux sont désignés comme des abonnements serveur.  
+ Type d'abonné. *subscriber_type* est **nvarchar (15)** et peut être **global**, **local** ou **anonyme**. Dans [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] et versions ultérieures, abonnements locaux sont désignés comme des abonnements clients et les abonnements globaux sont désignés comme des abonnements serveur.  
   
  [  **@subscription_priority=**] *priorité_d*  
  Est la priorité d’abonnement. *priorité_d*est **réel**, avec NULL comme valeur par défaut. Pour les abonnements locaux et anonymes, la priorité est **0.0**. La priorité est utilisée par le résolveur par défaut pour déterminer un gagnant lorsque des conflits sont détectés. Pour les abonnés globaux, la priorité de l'abonnement doit être inférieure à 100, qui correspond à la priorité du serveur de publication.  
@@ -89,16 +87,16 @@ sp_addmergepullsubscription [ @publication= ] 'publication'
   
  [!code-sql[HowTo#sp_addmergepullsub_websync_anon](../../relational-databases/replication/codesnippet/tsql/sp-addmergepullsubscript_0_2.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addmergepullsubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md)   
+ [Créer un abonnement par extraction](../../relational-databases/replication/create-a-pull-subscription.md)   
  [S’abonner à des publications](../../relational-databases/replication/subscribe-to-publications.md)   
- [sp_addmergepullsubscription_agent &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addmergepullsubscription-agent-transact-sql.md)   
- [sp_changemergepullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-changemergepullsubscription-transact-sql.md)   
- [sp_dropmergepullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropmergepullsubscription-transact-sql.md)   
- [sp_helpmergepullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpmergepullsubscription-transact-sql.md)   
+ [sp_addmergepullsubscription_agent &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addmergepullsubscription-agent-transact-sql.md)   
+ [sp_changemergepullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergepullsubscription-transact-sql.md)   
+ [sp_dropmergepullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropmergepullsubscription-transact-sql.md)   
+ [sp_helpmergepullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpmergepullsubscription-transact-sql.md)   
  [sp_helpsubscription_properties &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpsubscription-properties-transact-sql.md)  
   
   

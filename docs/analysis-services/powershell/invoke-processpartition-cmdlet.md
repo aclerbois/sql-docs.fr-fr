@@ -1,30 +1,23 @@
 ---
 title: Applet de commande Invoke-ProcessPartition | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 516fab44-734e-425b-9bd0-b4aee1fd338f
-caps.latest.revision: "9"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f36ab9dbb5054c4014e03718a99fc28033e4d9ba
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4a23067591d18ad4795201e93a207bc27c0f7d8b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-processpartition-cmdlet"></a>Applet de commande Invoke-ProcessPartition
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Traitez une partition à l’aide d’une variable de type de traitement spécifique.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Traitez une partition en utilisant une variable de type de traitement spécifique.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -34,7 +27,7 @@ ms.lasthandoff: 01/08/2018
   
  `Invoke-ProcessPartition –DatabasePartition <Microsoft.AnalysisServices.Partition> [-ProcessType] <Microsoft.AnalysisServices.ProcessType> [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L'applet de commande Invoke-ProcessParition traite une partition spécifique d'une base de données Analysis Services pour un cube et un groupe de mesures donnés. La valeur ProcessType détermine l'étendue de l'opération. Lors du traitement d'une partition, vous devez spécifier le type de traitement. Pour plus d’informations, consultez [Options et paramètres de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -56,7 +49,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
@@ -113,8 +106,8 @@ ms.lasthandoff: 01/08/2018
   
 |||  
 |-|-|  
-|Entrées|None|  
-|Sorties|None|  
+|Entrées|Aucun|  
+|Sorties|Aucun|  
   
 ## <a name="example-1"></a>Exemple 1  
  `PS SQL SERVER:\sqlas\locahost\default\Databases\AWTEST\Cubes\Adventure Works\MeasureGroups\Sales Orders\Partitions\Total_Orders_2004 > Get-Item .| Invoke-ProcessPartition –ProcessType:ProcessDefault`  

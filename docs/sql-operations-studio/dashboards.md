@@ -1,26 +1,25 @@
 ---
-title: "Accéder rapidement aux analyses et tâches courantes dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "En savoir plus sur l’affichage des widgets intéressante dans Studio des opérations SQL (version préliminaire)."
+title: Accéder rapidement aux analyses et tâches courantes dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft
+description: En savoir plus sur l’affichage des widgets intéressante dans Studio des opérations SQL (version préliminaire).
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7b501b653920d2a8ff7e3e8ed4656c8154b344f6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 8ed47935a863a14d68385c540ce68d0e75e99799
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="dashboards-in-includename-sosincludesname-sos-shortmd"></a>Tableaux de bord dans[!INCLUDE[name-sos](../includes/name-sos-short.md)]
+# <a name="dashboards-in-includename-sosincludesname-sos-shortmd"></a>Tableaux de bord dans [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 
 Pour afficher un tableau de bord, avec le bouton d’un serveur ou base de données, puis sélectionnez **gérer**.
 
@@ -107,11 +106,11 @@ Un widget d’un aperçu et les détails de l’analyse, vous pouvez facilement 
 
 ## <a name="sample-insight-action-definition"></a>Exemple de définition d’Action d’analyse
 
-```"actions"{}```définit une action d’analyse. Action peut être définie sur une étendue spécifique tel que ```"server"```, ```"database"``` et ainsi de suite et [!INCLUDE[name-sos](../includes/name-sos-short.md)] transmet les informations de contexte de connexion actuel à l’action. 
+```"actions"{}``` définit une action d’analyse. Action peut être définie sur une étendue spécifique tel que ```"server"```, ```"database"``` et ainsi de suite et [!INCLUDE[name-sos](../includes/name-sos-short.md)] transmet les informations de contexte de connexion actuel à l’action. 
 
-Par exemple, action de restauration au lancement de la base de données WideWorldImporters, ```"database": "${Database}"``` définition indique pour passer ```Database``` valeur de colonne dans les résultats de votre requête pour l’action de restauration. Action de restauration démarre ensuite pour la base de données. ```"types"```est un tableau json et plusieurs actions peuvent être répertoriées dans le tableau. Il est en fait un menu contextuel dans la boîte de dialogue Détails de l’analyse que l’utilisateur pouvez cliquer sur et effectuer l’action. 
+Par exemple, action de restauration au lancement de la base de données WideWorldImporters, ```"database": "${Database}"``` définition indique pour passer ```Database``` valeur de colonne dans les résultats de votre requête pour l’action de restauration. Action de restauration démarre ensuite pour la base de données. ```"types"``` est un tableau json et plusieurs actions peuvent être répertoriées dans le tableau. Il est en fait un menu contextuel dans la boîte de dialogue Détails de l’analyse que l’utilisateur pouvez cliquer sur et effectuer l’action. 
 
-> [!INCLUDE[name-sos](../includes/name-sos-short.md)]Aperçu 0.17.1 a activé « backup », « restore », « nouvelle requête » et « nouvelle database » en tant que types d’action.
+> [!INCLUDE[name-sos](../includes/name-sos-short.md)] Aperçu 0.17.1 a activé « backup », « restore », « nouvelle requête » et « nouvelle database » en tant que types d’action.
 
 ```json
 "details": {

@@ -1,41 +1,23 @@
 ---
-title: "Accès aux données de modèle multidimensionnel (Analysis Services - données multidimensionnelles) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SSAS, data access interfaces
-- objects [Analysis Services], data access interfaces
-- Analysis Services data access interfaces
-- data retrieval [Analysis Services]
-- retrieving data
-- metadata [Analysis Services]
-- data access interfaces [Analysis Services]
-- manipulating objects [Analysis Services]
-- Analysis Services data access interfaces, about data access interfaces
-ms.assetid: 46388efb-3c78-47a2-b5c9-5a69ff394d03
-caps.latest.revision: 
-author: Minewiskan
+title: Accès aux données de modèle multidimensionnel (Analysis Services - données multidimensionnelles) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 8e1271ca7bf45132f07a9a94ddef70bf5379084f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5bbf66795c7ac21b0c638aadffaa7bd2ab0a5974
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multidimensional-model-data-access-analysis-services---multidimensional-data"></a>Accès aux données de modèles multidimensionnels (Analysis Services - Données multidimensionnelles)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Utilisez les informations de cette rubrique pour savoir comment accéder aux données multidimensionnelles de [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] à l'aide des méthodes de programmation, d'un script ou d'applications clientes incluant la prise en charge intégrée pour se connecter à un serveur [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] sur votre réseau.  
+  Utilisez les informations de cette rubrique pour savoir comment accéder aux données multidimensionnelles de [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] à l'aide des méthodes de programmation, d'un script ou d'applications clientes incluant la prise en charge intégrée pour se connecter à un serveur [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] sur votre réseau.  
   
  Cette rubrique contient les sections suivantes :  
   
@@ -76,11 +58,11 @@ Utilisez les informations de cette rubrique pour savoir comment accéder aux don
   
  [Interrogation de données multidimensionnelles à l'aide de MDX](../../../analysis-services/multidimensional-models/mdx/querying-multidimensional-data-with-mdx.md)  
   
- [Concepts clés dans MDX &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md)  
+ [Concepts clés dans MDX & #40 ; Analysis Services & #41 ;](../../../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md)  
   
  [Principes de base des requêtes MDX &#40;Analysis Services&#41;](../../../analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services.md)  
   
- [Principes de base de script MDX &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-scripting-fundamentals-analysis-services.md)  
+ [Principes de base de script MDX & #40 ; Analysis Services & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-scripting-fundamentals-analysis-services.md)  
   
 ##  <a name="bkmk_api"></a> Interfaces de programmation  
  Lorsque vous développez une application personnalisée qui utilise des données multidimensionnelles, votre approche pour accéder aux données tombera très probablement dans l'une des catégories suivantes :  
@@ -104,7 +86,7 @@ Utilisez les informations de cette rubrique pour savoir comment accéder aux don
   
 ## <a name="see-also"></a>Voir aussi  
  [Se connecter à Analysis Services](../../../analysis-services/instances/connect-to-analysis-services.md)   
- [Développement avec Analysis Services Scripting Language &#40; ASSL &#41;](../../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
+ [Développement avec Analysis Services Scripting Language &#40;ASSL&#41;](../../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
  [Développement avec XMLA dans Analysis Services](../../../analysis-services/multidimensional-models-scripting-language-assl-xmla/developing-with-xmla-in-analysis-services.md)   
  [Accès aux données de modèle tabulaire](../../../analysis-services/tabular-models/tabular-model-data-access.md)  
   

@@ -1,16 +1,14 @@
 ---
 title: Sys.sql_expression_dependencies (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.sql_expression_dependencies
@@ -22,23 +20,23 @@ dev_langs:
 helpviewer_keywords:
 - sys.sql_expression_dependencies catalog view
 ms.assetid: 78a218e4-bf99-4a6a-acbf-ff82425a5946
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 099229e10b875d738e970d8f2c4a0c9ac3e7b5e6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: cc3d777c55d7591f880317bc0f9d701b0cb59ad0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syssqlexpressiondependencies-transact-sql"></a>sys.sql_expression_dependencies (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]
 
   Contient une ligne pour chaque dépendance par nom sur une entité définie par l'utilisateur dans la base de données actuelle. Cela inclut les dépendances entre les fonctions définies par l’utilisateur scalaires compilées en mode natif et d’autres [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] modules. Une dépendance entre deux entités est créée lorsqu’une entité, appelée la *entité référencée*, apparaît par nom dans une expression SQL rendue persistante d’une autre entité, appelée la *entité de référence*. Par exemple, lorsqu'une table est référencée dans la définition d'une vue, la vue, comme entité de référence, dépend de la table, l'entité référencée. Si la table est supprimée, la vue est inutilisable.  
   
- Pour plus d’informations, consultez [Scalar User-Defined des fonctions pour l’OLTP en mémoire](../../relational-databases/in-memory-oltp/scalar-user-defined-functions-for-in-memory-oltp.md).  
+ Pour plus d’informations, consultez [Fonctions scalaires définies par l’utilisateur pour l’OLTP en mémoire](../../relational-databases/in-memory-oltp/scalar-user-defined-functions-for-in-memory-oltp.md).  
   
  Vous pouvez utiliser cet affichage catalogue pour signaler des informations de dépendance pour les entités suivantes :  
   
@@ -57,11 +55,11 @@ ms.lasthandoff: 11/21/2017
 |referencing_id|**int**|ID de l'entité de référence. N'accepte pas la valeur NULL.|  
 |referencing_minor_id|**int**|ID de colonne lorsque l'entité de référence est une colonne ; sinon 0. N'accepte pas la valeur NULL.|  
 |referencing_class|**tinyint**|Classe de l'entité de référence.<br /><br /> 1 = Objet ou colonne<br /><br /> 12 = Déclencheur DDL de base de données<br /><br /> 13 = Déclencheur DDL de serveur<br /><br /> N'accepte pas la valeur NULL.|  
-|referencing_class_desc|**nvarchar (60)**|Description de la classe de l'entité de référence.<br /><br /> OBJECT_OR_COLUMN<br /><br /> DATABASE_DDL_TRIGGER<br /><br /> SERVER_DDL_TRIGGER<br /><br /> N'accepte pas la valeur NULL.|  
+|referencing_class_desc|**nvarchar(60)**|Description de la classe de l'entité de référence.<br /><br /> OBJECT_OR_COLUMN<br /><br /> DATABASE_DDL_TRIGGER<br /><br /> SERVER_DDL_TRIGGER<br /><br /> N'accepte pas la valeur NULL.|  
 |is_schema_bound_reference|**bit**|1 = l'entité référencée est liée au schéma.<br /><br /> 0 = l'entité référencée n'est pas liée au schéma.<br /><br /> N'accepte pas la valeur NULL.|  
 |referenced_class|**tinyint**|Classe de l'entité référencée.<br /><br /> 1 = Objet ou colonne<br /><br /> 6 = Type<br /><br /> 10 = Collection du schéma XML<br /><br /> 21 = Fonction de partition<br /><br /> N'accepte pas la valeur NULL.|  
-|referenced_class_desc|**nvarchar (60)**|Description de la classe de l'entité référencée.<br /><br /> OBJECT_OR_COLUMN<br /><br /> TYPE<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> PARTITION_FUNCTION<br /><br /> N'accepte pas la valeur NULL.|  
-|referenced_server_name|**sysname**|Nom du serveur de l'entité référencée.<br /><br /> Cette colonne est remplie pour les dépendances entre serveurs qui sont établies en spécifiant un nom en quatre parties valide. Pour plus d’informations sur les noms en plusieurs parties, consultez [Conventions de syntaxe Transact-SQL &#40; Transact-SQL &#41; ](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).<br /><br /> NULL pour les entités non liées au schéma pour lesquelles l'entité a été référencée sans spécifier un nom en quatre parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
+|referenced_class_desc|**nvarchar(60)**|Description de la classe de l'entité référencée.<br /><br /> OBJECT_OR_COLUMN<br /><br /> TYPE<br /><br /> XML_SCHEMA_COLLECTION<br /><br /> PARTITION_FUNCTION<br /><br /> N'accepte pas la valeur NULL.|  
+|referenced_server_name|**sysname**|Nom du serveur de l'entité référencée.<br /><br /> Cette colonne est remplie pour les dépendances entre serveurs qui sont établies en spécifiant un nom en quatre parties valide. Pour plus d’informations sur les noms en plusieurs parties, consultez [Conventions de syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).<br /><br /> NULL pour les entités non liées au schéma pour lesquelles l'entité a été référencée sans spécifier un nom en quatre parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
 |referenced_database_name|**sysname**|Nom de la base de données de l'entité référencée.<br /><br /> Cette colonne est remplie pour les références des bases de données croisées et entre serveurs qui sont établies en spécifiant un nom en trois ou quatre parties valide.<br /><br /> NULL pour les références non liées au schéma en cas de spécification à l'aide d'un nom en une ou deux parties.<br /><br /> NULL pour les entités liées au schéma, car ils doivent être dans la même base de données et par conséquent peuvent uniquement être définies à l’aide de deux parties (*schema.object*) nom.|  
 |referenced_schema_name|**sysname**|Schéma auquel l'entité référencée appartient.<br /><br /> NULL pour les références non liées au schéma dans lesquelles l'entité a été référencée sans spécifier le nom de schéma.<br /><br /> Jamais NULL pour les références liées au schéma, car les entités liées au schéma doivent être définies et référencées en utilisant un nom en deux parties.|  
 |referenced_entity_name|**sysname**|Nom de l'entité référencée. N'accepte pas la valeur NULL.|  
@@ -77,30 +75,30 @@ ms.lasthandoff: 11/21/2017
 |-----------------|------------------------|-----------------------|  
 |Table|Oui*|Oui|  
 |Affichage|Oui|Oui|  
-|Index filtré|Oui**|Non|  
-|Statistiques filtrées|Oui**|Non|  
+|Index filtré|Oui**|non|  
+|Statistiques filtrées|Oui**|non|  
 |Procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)]***|Oui|Oui|  
-|Procédure stockée CLR|Non|Oui|  
+|Procédure stockée CLR|non|Oui|  
 |Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur|Oui|Oui|  
-|Fonction CLR définie par l'utilisateur|Non|Oui|  
-|Déclencheur CLR (DML et DDL)|Non|Non|  
-|Déclencheur DML [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|Non|  
-|Déclencheur DDL au niveau de la base de données [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|Non|  
-|Déclencheur DDL au niveau du serveur [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|Non|  
-|Procédures stockées étendues|Non|Oui|  
-|File d'attente|Non|Oui|  
-|Synonyme|Non|Oui|  
-|Type (alias et type CLR défini par l'utilisateur)|Non|Oui|  
-|Collection de schémas XML|Non|Oui|  
-|Fonction de partition|Non|Oui|  
+|Fonction CLR définie par l'utilisateur|non|Oui|  
+|Déclencheur CLR (DML et DDL)|non|non|  
+|Déclencheur DML [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau de la base de données [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau du serveur [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Procédures stockées étendues|non|Oui|  
+|File d'attente|non|Oui|  
+|Synonyme|non|Oui|  
+|Type (alias et type CLR défini par l'utilisateur)|non|Oui|  
+|Collection de schémas XML|non|Oui|  
+|Fonction de partition|non|Oui|  
   
- \*Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
+ \* Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
   
  ** Chaque colonne utilisée dans le prédicat de filtre est suivie en tant qu'entité de référence.  
   
  *** Les procédures stockées numérotées avec une valeur entière supérieure à 1 ne sont pas suivies en tant qu'entité de référence ou référencée.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation VIEW DEFINITION sur la base de données et l'autorisation SELECT sur sys.sql_expression_dependencies pour la base de données. Par défaut, l'autorisation SELECT est accordée uniquement aux membres du rôle de base de données fixe db_owner. Lorsque les autorisations SELECT et VIEW DEFINITION sont accordées à un autre utilisateur, le bénéficiaire peut consulter toutes les dépendances dans la base de données.  
   
 ## <a name="examples"></a>Exemples  

@@ -1,31 +1,26 @@
 ---
-title: "Créer un pool de ressources | Microsoft Docs"
-ms.custom: 
+title: Créer un pool de ressources | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: resource-governor
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - resource pools [SQL Server], create
 - Resource Governor, resource pool create
 ms.assetid: 44dd0567-a4c8-4c72-89ff-e76f6ddef344
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3f708493732b1725327c31b4581c23e645f24f67
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: 7ae0ba1f2ef64542a6b88bfdf189f37d437b18b0
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="create-a-resource-pool"></a>Créer un pool de ressources
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

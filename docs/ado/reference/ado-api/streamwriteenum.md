@@ -1,33 +1,30 @@
 ---
-title: StreamWriteEnum | Microsoft Docs
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: StreamWriteEnum | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - StreamWriteEnum
 helpviewer_keywords:
 - StreamWriteEnum enumeration [ADO]
 ms.assetid: bdbf3405-a0bd-4f02-85d4-e3fe8da3f3f7
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 36c18f5452a07e5dc44a9396ee993a163b98d3bd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2b81765d125680bc52a8e95adcb3828df36bfc0a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="streamwriteenum"></a>StreamWriteEnum
 Indique si un séparateur de ligne est ajouté à la chaîne écrite dans un [flux](../../../ado/reference/ado-api/stream-object-ado.md) objet.  

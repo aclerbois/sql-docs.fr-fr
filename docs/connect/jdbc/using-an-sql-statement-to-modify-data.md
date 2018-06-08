@@ -1,27 +1,24 @@
 ---
-title: "À l’aide d’une instruction SQL pour modifier les données | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’une instruction SQL pour modifier les données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4704199b-c0ae-4c77-8a2e-6963715b4ffb
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 27923be2ebcb56c79dc08ecec1fc1b27de7c04a3
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 0d02d5187e869eb626cfddde9e12bcf55feed51a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-an-sql-statement-to-modify-data"></a>Utilisation d'une instruction SQL pour modifier des données
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

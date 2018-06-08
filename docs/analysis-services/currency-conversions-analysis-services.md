@@ -1,35 +1,19 @@
 ---
-title: "Conversions monétaires (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- multiple currency conversions
-- monetary data [SQL Server]
-- currency [Analysis Services]
-- converting currency
-- one-to-many currency conversions
-- many-to-many currency conversions [Analysis Services]
-- many-to-one currency conversions [Analysis Services]
-ms.assetid: e03f491c-7df8-46a0-ade9-f2e55b68db85
-caps.latest.revision: "18"
-author: Minewiskan
+title: Conversions monétaires (Analysis Services) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b454d405b6175c200d8be9426fafb7e79be25e70
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: ebcce8d042b7a87771f99bac53b78bb59af6f7e1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="currency-conversions-analysis-services"></a>Conversions monétaires (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas-aas](../includes/ssas-appliesto-sqlas-aas.md)]

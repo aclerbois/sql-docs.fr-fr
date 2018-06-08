@@ -3,14 +3,12 @@ title: Objets BLOB et OLE | Documents Microsoft
 description: Objets BLOB et OLE
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-blobs
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,20 +19,19 @@ helpviewer_keywords:
 - large data, OLE objects
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2afff6a5d9f19c0db2063ab0e0c486cc7460e971
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: e78fe8db35684bb35e4111a38d3d0ba938891785
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="blobs-and-ole-objects"></a>Objets BLOB et OLE
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
   Le pilote OLE DB pour SQL Server expose la **ISequentialStream** interface pour prendre en charge d’accès client aux [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] **ntext**, **texte**, **image** , **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, et les types de données xml sous forme binaire des objets volumineux (BLOB). Le **en lecture** méthode sur **ISequentialStream** permet au consommateur de récupérer le volume de données en segments maniables.  
   
- Pour obtenir un exemple illustrant cette fonctionnalité, consultez [de définition de données volumineux &#40; OLE DB &#41;](../../oledb/ole-db-how-to/set-large-data-ole-db.md).  
+ Pour obtenir un exemple illustrant cette fonctionnalité, consultez [de définition de données volumineux & #40 ; OLE DB & #41 ;](../../oledb/ole-db-how-to/set-large-data-ole-db.md).  
   
  Le pilote OLE DB pour SQL Server peut utiliser implémentée par un consommateur **IStorage** interface lorsque le consommateur fournit le pointeur d’interface dans un accesseur lié pour la modification des données.  
   
@@ -71,7 +68,7 @@ ms.lasthandoff: 03/30/2018
 -   [Prise en charge de diffusion en continu pour les paramètres de sortie BLOB](../../oledb/ole-db-blobs/streaming-support-for-blob-output-parameters.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote d’OLE DB pour SQL Server &#40;OLE DB&#41;](../../oledb/ole-db/oledb-driver-for-sql-server-ole-db.md)        
+ [Programmation de SQL Server OLE DB pilote](../../oledb/ole-db/oledb-driver-for-sql-server-programming.md)        
  [À l’aide des Types de valeur élevée](../../oledb/features/using-large-value-types.md)  
   
   

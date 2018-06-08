@@ -1,33 +1,31 @@
 ---
-title: "Tâche Vérifier l’intégrité de la base de données (Plan de maintenance) | Microsoft Docs"
-ms.custom: 
+title: Tâche Vérifier l’intégrité de la base de données (Plan de maintenance) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.maint.maintplanproperties.integrity.f1
 - sql13.swb.maint.integrity.f1
 helpviewer_keywords:
 - Check Database Integrity Task dialog box
 ms.assetid: 3534494a-5dfe-4738-b49a-e7fabd731c47
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 60f26433932c754a5aadbd79d9527d4e2638f75d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: bed0e36e8e6ac82e642942ea208e9378de365136
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="check-database-integrity-task-maintenance-plan"></a>Tâche Vérifier l'intégrité de la base de données (Plan de maintenance)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

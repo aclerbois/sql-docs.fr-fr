@@ -1,17 +1,16 @@
 ---
-title: "Outils de dépannage de la connectivité des packages | Microsoft Docs"
-ms.custom: 
+title: Outils de dépannage de la connectivité des packages | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Integration Services packages, troubleshooting
 - SSIS packages, troubleshooting
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - errors [Integration Services], troubleshooting
 - packages [Integration Services], troubleshooting
 ms.assetid: 08a019f5-8ba7-4527-97c1-e9846d4022ff
-caps.latest.revision: 
+caps.latest.revision: 13
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 223023cae5ba0ca6ac2fab8298334547875ab4d2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5e2f31558db8716f0f04db0f6676e47ab55d9257
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshooting-tools-for-package-connectivity"></a>Outils de dépannage de la connectivité des packages
 [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] inclut des fonctionnalités et des outils que vous pouvez utiliser pour dépanner la connectivité entre les packages et les sources de données à partir desquelles les packages extraient et chargent des données.  

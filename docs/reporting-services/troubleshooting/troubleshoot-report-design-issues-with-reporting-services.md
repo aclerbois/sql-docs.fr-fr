@@ -1,27 +1,25 @@
 ---
-title: "Résoudre les problèmes de conception de rapports avec Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes de conception de rapports avec Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 02/27/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a0d103da-5a3e-475c-a71a-9e23476095e2
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1a4660fb6aaf21c418ecf19d9ef5953015eaa36e
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3e81a3b98bbfe6507c768e541ac0fc613d28d52e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-report-design-issues-with-reporting-services"></a>Résoudre les problèmes de conception de rapports avec Reporting Services
 Des problèmes de conception de rapport peuvent se produire lorsque vous créez la mise en page de rapport en mode Conception dans une application de création de rapport. Utilisez cette rubrique pour vous aider à résoudre ces problèmes.   

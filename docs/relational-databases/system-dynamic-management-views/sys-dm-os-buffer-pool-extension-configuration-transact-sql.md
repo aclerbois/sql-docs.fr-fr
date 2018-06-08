@@ -1,16 +1,12 @@
 ---
-title: sys.dm_os_buffer_pool_extension_configuration (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_os_buffer_pool_extension_configuration (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 09/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_os_buffer_pool_extension_configuration
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_buffer_pool_extension_configuration dynamic management view
 ms.assetid: d52cc481-4d29-4f33-b63d-231ec35d092f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d9762b7b907c024807f93334f8dd9dd9b3521b66
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ecc569a1f112bba0ec49c46da77c1dbc29fcddab
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmosbufferpoolextensionconfiguration-transact-sql"></a>sys.dm_os_buffer_pool_extension_configuration (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-xxxx-xxxx-xxx-md.md)]
@@ -73,6 +68,6 @@ WHERE is_in_bpool_extension <> 0
   
 ## <a name="see-also"></a>Voir aussi  
  [Extension du Pool de mémoires tampons](../../database-engine/configure-windows/buffer-pool-extension.md)   
- [Sys.dm_os_buffer_descriptors &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-buffer-descriptors-transact-sql.md)  
+ [Sys.dm_os_buffer_descriptors & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-dynamic-management-views/sys-dm-os-buffer-descriptors-transact-sql.md)  
   
   

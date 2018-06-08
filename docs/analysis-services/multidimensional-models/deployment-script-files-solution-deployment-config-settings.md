@@ -1,33 +1,19 @@
 ---
 title: Spécification des paramètres de Configuration pour le déploiement de solutions | Documents Microsoft
-ms.custom: ''
-ms.date: 03/27/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-helpviewer_keywords:
-- Analysis Services Deployment Wizard, configuration settings
-- input files [Analysis Services]
-- configuration options [Analysis Services]
-- Analysis Services deployments, configuration settings
-- deploying [Analysis Services], configuration settings
-ms.assetid: 953814a3-85ef-40cc-b46a-d532aa7a6569
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c5cb1d30f65e38b69fbde629fb940b94c5864f8d
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: f711dc12ed5014dbc397e5a72f97f55350da7d38
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deployment-script-files---solution-deployment-config-settings"></a>Fichiers de Script de déploiement - paramètres de configuration de déploiement de Solution
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]

@@ -1,17 +1,14 @@
 ---
-title: sys.dm_db_stats_histogram (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_stats_histogram (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sys.dm_db_stats_histogram
 - sys.dm_db_stats_histogram_TSQL
@@ -22,18 +19,18 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_stats_histogram dynamic management function
 ms.assetid: 1897fd4a-8d51-461e-8ef2-c60be9e563f2
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4ce36dbcac1e0df3f8cbe4020e87fc32af36920a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: af1930b1cd5f8536c9e9f196a8ea739538042ca0
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sysdmdbstatshistogram-transact-sql"></a>sys.dm_db_stats_histogram (Transact-SQL)
+# <a name="sysdmdbstatshistogram-transact-sql"></a>Sys.dm_db_stats_histogram (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
 Retourne l’histogramme des statistiques pour l’objet de base de données spécifiée (table ou vue indexée) dans le courant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] base de données. Semblable à `DBCC SHOW_STATISTICS WITH HISTOGRAM`.
@@ -62,9 +59,9 @@ sys.dm_db_stats_histogram (object_id, stats_id)
 |stats_id |**int**|ID de l'objet de statistiques. Unique dans la table ou la vue indexée. Pour plus d’informations, consultez [sys.stats &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-stats-transact-sql.md).|  
 |step_number |**int** |Le numéro de l’étape dans l’histogramme. |
 |range_high_key |**sql_variant** |Valeur de colonne de limite supérieure pour une étape d'histogramme. La valeur de colonne est également appelée « valeur de clé ».|
-|range_rows |**real** |Nombre estimé de lignes dont la valeur de colonne est comprise dans une étape d'histogramme, à l'exception de la limite supérieure. |
+|RANGE_ROWS |**real** |Nombre estimé de lignes dont la valeur de colonne est comprise dans une étape d'histogramme, à l'exception de la limite supérieure. |
 |equal_rows |**real** |Nombre estimé de lignes dont la valeur de colonne est égale à la limite supérieure de l'étape d'histogramme. |
-|distinct_range_rows |**bigint** |Nombre estimé de lignes ayant une valeur de colonne distincte dans une étape d'histogramme, à l'exception de la limite supérieure. |
+|DISTINCT_RANGE_ROWS |**bigint** |Nombre estimé de lignes ayant une valeur de colonne distincte dans une étape d'histogramme, à l'exception de la limite supérieure. |
 |average_range_rows |**real** |Nombre moyen de lignes avec des valeurs de colonne en double dans une étape d’histogramme, à l’exclusion de la limite supérieure (`RANGE_ROWS / DISTINCT_RANGE_ROWS` pour `DISTINCT_RANGE_ROWS > 0`). |
   
  ## <a name="remarks"></a>Notes  

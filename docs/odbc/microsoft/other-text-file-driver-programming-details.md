@@ -1,31 +1,28 @@
 ---
-title: "Autres détails de programmation du pilote de fichier texte | Documents Microsoft"
-ms.custom: 
+title: Autres détails de programmation du pilote de fichier texte | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC desktop database drivers [ODBC], text file driver
 - desktop database drivers [ODBC], text file driver
 - Jet-based ODBC drivers [ODBC], text file driver
 ms.assetid: bfa85e91-060e-4d70-88c3-f5c48df634f1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 81d7b06199ccdffac5af32f4d8c0aa7b8c537ae6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 8b4af51dc239dc7a361b9214db85a3a0d583fe9c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="other-text-file-driver-programming-details"></a>Autres détails de programmation du pilote de fichier texte
 > [!NOTE]  

@@ -1,34 +1,30 @@
 ---
-title: "Plan Guide Successful, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Plan Guide Successful, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Plan Guide Successful event class
 ms.assetid: fecfbb6c-56c9-4db4-84d3-00d6e338355a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf687c1bb8ef94f4af34a9e64ebbb72fe5dec590
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ee78220835b6c3585e3c7f74f333cad36598bf15
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="plan-guide-successful-event-class"></a>Plan Guide Successful, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Plan Guide Successful indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a produit correctement un plan d'exécution pour une requête ou un lot qui contenait un repère de plan. L'événement est déclenché lorsque les conditions suivantes sont remplies :  
+  La classe d'événements Plan Guide Successful indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a produit correctement un plan d'exécution pour une requête ou un lot qui contenait un repère de plan. L'événement est déclenché lorsque les conditions suivantes sont remplies :  
   
 -   Le module ou le lot dans la définition de repère de plan correspond au module ou lot exécuté.  
   

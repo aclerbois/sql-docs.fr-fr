@@ -1,16 +1,14 @@
 ---
-title: "GRANT - Octroyer des autorisations sur un schéma (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: GRANT - Octroyer des autorisations sur un schéma (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,18 @@ helpviewer_keywords:
 - GRANT statement, schemas
 - granting permissions [SQL Server], schemas
 ms.assetid: b2aa1fc8-e7af-45d2-9f80-737543c8aa95
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 35e4775e421102931c0864dee97be0a862901416
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 03fe0d161a6c8c7315812b92eb74f52b25a3a812
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="grant-schema-permissions-transact-sql"></a>GRANT - Octroyer des autorisations sur un schéma (Transact-SQL)
+# <a name="grant-schema-permissions-transact-sql"></a>GRANT - Autorisations sur un schéma (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
   Accorde des autorisations sur un schéma.  
@@ -51,8 +49,8 @@ GRANT permission  [ ,...n ] ON SCHEMA :: schema_name
  *permission*  
  Spécifie une autorisation qu'il est possible d'accorder sur un schéma. Pour obtenir la liste des autorisations, consultez la section Notes, plus loin dans cette rubrique.  
   
- ON SCHEMA **::** schema*_name*  
- Indique le schéma sur lequel l'autorisation est accordée. Le qualificateur d’étendue **::** est obligatoire.  
+ ON SCHEMA **::** schema *_name*  
+ Indique le schéma sur lequel l'autorisation est accordée. Le qualificateur d’étendue **::** est obligatoire.  
   
  *database_principal*  
  Spécifie le principal auquel l'autorisation est accordée. Il peut s'agir :  
@@ -114,7 +112,7 @@ AS *granting_principal*
   
  L'utilisateur U1 bénéficie de l'autorisation CREATE VIEW sur la base de données et de l'autorisation SELECT sur le schéma S1. Par conséquent, l'utilisateur U1 peut créer une vue dans le schéma S1 pour interroger les données de l'objet refusé T1, puis accéder à cet objet à l'aide de la vue.  
   
- Pour plus d'informations, consultez l'article 914847 de la Base de connaissances Microsoft.  
+ Pour plus d'informations, consultez l'article 914847de la Base de connaissances Microsoft.  
   
 ## <a name="permissions"></a>Autorisations  
  Le fournisseur d'autorisations (ou le principal spécifié avec l'option AS) doit posséder l'autorisation elle-même avec l'option GRANT OPTION ou une autorisation plus élevée qui implique l'autorisation accordée.  

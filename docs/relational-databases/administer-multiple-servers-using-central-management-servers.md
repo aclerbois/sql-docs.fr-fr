@@ -1,17 +1,16 @@
 ---
-title: "Administrer plusieurs serveurs à l’aide de serveurs de gestion centralisée | Microsoft Docs"
-ms.custom: 
+title: Administrer plusieurs serveurs à l’aide de serveurs de gestion centralisée | Microsoft Docs
+ms.custom: ''
 ms.date: 08/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - multiserver queries
 - central management server
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - target configuration [SQL Server]
 - server configuration [SQL Server]
 ms.assetid: 427911a7-57d4-4542-8846-47c3267a5d9c
-caps.latest.revision: 
+caps.latest.revision: 27
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 778ca272ca6e7cc4a8d3092386457dc2ae5899b2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: c4a2eb01959ffc59a1252100193fffea348c8f86
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="administer-multiple-servers-using-central-management-servers"></a>Administrer plusieurs serveurs à l'aide de serveurs de gestion centralisée
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

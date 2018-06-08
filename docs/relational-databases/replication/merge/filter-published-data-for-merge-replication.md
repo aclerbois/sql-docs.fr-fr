@@ -1,31 +1,29 @@
 ---
-title: "Filtrer des données publiées en vue de la réplication de fusion | Microsoft Docs"
-ms.custom: 
+title: Filtrer des données publiées en vue de la réplication de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication [SQL Server replication], filtering published data
 - replication [SQL Server], filtering published data
 ms.assetid: 46c5023d-7a3b-4455-becc-e159fcb5d6c4
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9ea3df63d6d52a166a49875aacf8e4ed41ae7985
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: b8dddd64808225f92d060e51d56cc7ecfdc3a7f4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-published-data-for-merge-replication"></a>Filtrer des données publiées en vue de la réplication de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,28 +1,27 @@
 ---
-title: "Propriétés du serveur (page Historique) | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur (page Historique) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/10/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.reportserver.serverproperties.history.f1
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.reportserver.serverproperties.history.f1
 ms.assetid: be9d8018-a46f-4625-9ae1-138ebe6b38ba
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c3a35614725f7e3e9c4ed7ca4c9ab57624970776
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e0c9f8065d9d66f52a86554bcb219eb4e4406cd9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-properties-history-page"></a>Propriétés du serveur (page Historique)
   Utilisez cette page [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] dans [!INCLUDE[ssManStudioFull_md](../../includes/ssmanstudiofull-md.md)] pour définir le nombre de copies par défaut que l’historique de rapport doit conserver. La valeur par défaut fournit un paramètre initial qui établit les limites de l'historique de tous les rapports. Ces paramètres sont modifiables pour chaque rapport.  

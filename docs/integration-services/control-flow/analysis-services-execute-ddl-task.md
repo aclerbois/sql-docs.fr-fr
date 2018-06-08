@@ -1,17 +1,16 @@
 ---
-title: "DDL d’exécution de SQL Server Analysis Services, tâche | Microsoft Docs"
-ms.custom: 
+title: DDL d’exécution de SQL Server Analysis Services, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.asexecuteddltask.f1
 - sql13.dts.designer.asexecuteddltask.general.f1
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - Analysis Services Execute DDL task
 - DDL
 ms.assetid: 7f25c8c6-b601-41f2-9553-be0a2ee0751a
-caps.latest.revision: 
+caps.latest.revision: 48
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aba320cac8593357039ed9ab4977dbb5fda091cc
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: f33b2da7660c4e230bb20e38b309d73b2f07bcf6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="analysis-services-execute-ddl-task"></a>Tâche DDL d'exécution de SQL Server Analysis Services
   La tâche DDL d'exécution de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] exécute des instructions DDL (Data Definition Language) qui peuvent créer, supprimer ou modifier des modèles d'exploration de données et des objets multidimensionnels tels que des cubes et des dimensions. Par exemple, une instruction DDL peut créer une partition dans le cube **Adventure Works** ou supprimer une dimension dans [!INCLUDE[ssAWDWsp](../../includes/ssawdwsp-md.md)], l’exemple de base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] inclus dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

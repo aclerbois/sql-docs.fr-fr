@@ -1,25 +1,23 @@
 ---
-title: "Définir les options de traitement (Reporting Services en mode intégré SharePoint)| Microsoft Docs"
-ms.custom: 
+title: Définir les options de traitement (Reporting Services en mode intégré SharePoint)| Microsoft Docs
+ms.custom: ''
 ms.date: 10/05/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server-sharepoint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1b9c5a476c346812140919006fd6f2d3e0d721ac
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: aa011aa0429646f51cf8a75660e116b0b49457ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-processing-options-reporting-services-in-sharepoint-integrated-mode"></a>Définir les options de traitement (Reporting Services en mode intégré SharePoint)
 

@@ -1,17 +1,15 @@
 ---
-title: "Exemple de propriétés de connexion (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriétés de connexion (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - ConnectionTimeout property [ADO], VC++ example
 - State property [ADO], VC++ example
 ms.assetid: c6bd2609-4c49-462f-a1aa-7bee0f615adb
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 54105075f853a46ccb00379738c844246451701a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6a062757c4721a0d2f275381e5aafdae6d5d5238
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connectionstring-connectiontimeout-and-state-properties-example-vc"></a>ConnectionString, ConnectionTimeout et l’état d’exemple (VC ++)
 Cet exemple illustre différentes façons d’utiliser le [ConnectionString](../../../ado/reference/ado-api/connectionstring-property-ado.md) propriété pour ouvrir un [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet. Elle utilise également le [ConnectionTimeout](../../../ado/reference/ado-api/connectiontimeout-property-ado.md) propriété à définir un délai de connexion et le [état](../../../ado/reference/ado-api/state-property-ado.md) propriété pour vérifier l’état des connexions. La fonction GetState est requise pour exécuter cette procédure.  

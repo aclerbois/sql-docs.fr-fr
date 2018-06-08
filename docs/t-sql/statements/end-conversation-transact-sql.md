@@ -1,16 +1,14 @@
 ---
 title: END CONVERSATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - END DIALOG
@@ -27,16 +25,15 @@ helpviewer_keywords:
 - conversations [Service Broker], ending
 - ending conversations [SQL Server]
 ms.assetid: 4415a126-cd22-4a5e-b84a-d8c68515c83b
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 35
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d68dcecf84cb24b0c06876d40742c8f5ffe8124d
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 940a843a643f35c58db74948dd9bf71c50c09b58
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="end-conversation-transact-sql"></a>END CONVERSATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -67,7 +64,7 @@ END CONVERSATION conversation_handle
  Est le message d’erreur. *failure_text* est de type **nvarchar(3000)**. Le texte d'échec est un texte défini par l'utilisateur qui est inclus dans le message d'erreur envoyé à l'autre côté de la conversation.  
   
  WITH CLEANUP  
- Supprime tous les messages et les entrées de vue de catalogue pour un côté d'une conversation qui ne peut pas se terminer normalement. L'autre côté de la conversation n'est pas notifié du nettoyage. [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] supprime le point de terminaison, tous les messages de la conversation dans la file d’attente de transmission, ainsi que tous les messages pour la conversation dans la file d’attente du service. Les administrateurs peuvent utiliser cette option pour supprimer des conversations qui ne peuvent pas se terminer normalement. Si, par exemple, le service distant a été supprimé définitivement, un administrateur peut utiliser WITH CLEANUP pour supprimer les conversations avec ce service. N’utilisez pas WITH CLEANUP dans le code d’une application [!INCLUDE[ssSB](../../includes/sssb-md.md)]. Si END CONVERSATION WITH CLEANUP est exécuté avant que le point de terminaison de réception n'accuse réception d'un message, le point de terminaison d'envoi renverra le message. Cela peut éventuellement entraîner la réexécution du dialogue.  
+ Supprime tous les messages et les entrées d'affichage catalogue pour un côté d'une conversation qui ne peut pas se terminer normalement. L'autre côté de la conversation n'est pas notifié du nettoyage. [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] supprime le point de terminaison, tous les messages de la conversation dans la file d’attente de transmission, ainsi que tous les messages pour la conversation dans la file d’attente du service. Les administrateurs peuvent utiliser cette option pour supprimer des conversations qui ne peuvent pas se terminer normalement. Si, par exemple, le service distant a été supprimé définitivement, un administrateur peut utiliser WITH CLEANUP pour supprimer les conversations avec ce service. N’utilisez pas WITH CLEANUP dans le code d’une application [!INCLUDE[ssSB](../../includes/sssb-md.md)]. Si END CONVERSATION WITH CLEANUP est exécuté avant que le point de terminaison de réception n'accuse réception d'un message, le point de terminaison d'envoi renverra le message. Cela peut éventuellement entraîner la réexécution du dialogue.  
   
 ## <a name="remarks"></a>Notes   
  Mettre fin à une conversation verrouille le groupe de conversations auquel appartient le *conversation_handle* fourni. Lorsqu'une conversation se termine, [!INCLUDE[ssSB](../../includes/sssb-md.md)] supprime tous les messages qui la concernent de la file d'attente du service.  
@@ -80,7 +77,7 @@ END CONVERSATION conversation_handle
   
 -   Si la conversation se termine avec une erreur et qu’elle est toujours active avec le service distant, [!INCLUDE[ssSB](../../includes/sssb-md.md)] envoie un message de type `http://schemas.microsoft.com/SQL/ServiceBroker/Error` au service distant. [!INCLUDE[ssSB](../../includes/sssb-md.md)] supprime, dans ce cas, tous les messages de cette conversation qui sont encore dans la file d'attente de transmission.  
   
--   La clause WITH CLEANUP permet à un administrateur de base de données de supprimer les conversations qui ne peuvent pas se terminer normalement. Cette option supprime tous les messages et les entrées de vue de catalogue de la conversation. Notez, dans ce cas, que le côté distant de la conversation n'est pas averti de la fin de la conversation et risque de ne pas recevoir les messages qui ont été envoyés par une application mais qui n'ont pas encore été transmis sur le réseau. Évitez d'utiliser cette option, sauf si la conversation ne peut pas se terminer normalement.  
+-   La clause WITH CLEANUP permet à un administrateur de base de données de supprimer les conversations qui ne peuvent pas se terminer normalement. Cette option supprime tous les messages et les entrées d'affichage catalogue concernant la conversation. Notez, dans ce cas, que le côté distant de la conversation n'est pas averti de la fin de la conversation et risque de ne pas recevoir les messages qui ont été envoyés par une application mais qui n'ont pas encore été transmis sur le réseau. Évitez d'utiliser cette option, sauf si la conversation ne peut pas se terminer normalement.  
   
  Au terme d'une conversation, une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] SEND qui spécifie le descripteur de conversation provoque une erreur [!INCLUDE[tsql](../../includes/tsql-md.md)]. Si des messages liés à cette conversation sont envoyés par l'autre côté de la conversation, [!INCLUDE[ssSB](../../includes/sssb-md.md)] les refuse.  
   

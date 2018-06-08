@@ -1,16 +1,14 @@
 ---
 title: CREATE CREDENTIAL (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREDENTIAL_TSQL
@@ -26,16 +24,17 @@ helpviewer_keywords:
 - CREATE CREDENTIAL statement
 - credentials [SQL Server], CREATE CREDENTIAL statement
 ms.assetid: d5e9ae69-41d9-4e46-b13d-404b88a32d9d
-caps.latest.revision: 
+caps.latest.revision: 51
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 200adf6302cb0c86f487a7480579a173403ed14c
-ms.sourcegitcommit: 3ed9be04cc7fb9ab1a9ec230c298ad2932acc71b
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d1dbc4b6f4cf3dcb464f8e402bfd9d2579e63078
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/17/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34582021"
 ---
 # <a name="create-credential-transact-sql"></a>CREATE CREDENTIAL (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdbmi-xxxx-xxx-md.md)]
@@ -150,7 +149,7 @@ EXEC ('CREATE CREDENTIAL Azure_EKM_TDE_cred
 ### <a name="d-creating-a-credential-using-a-sas-token"></a>D. Création d’informations d’identification à l’aide d’un jeton SAP  
  **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658).  
   
- L’exemple suivant crée des informations d’identification avec signature d’accès partagé à l’aide d’un jeton SAP.  Pour un tutoriel montrant comment créer une stratégie d’accès stockée et une signature d’accès partagé sur un conteneur Azure, puis créer des informations d’identification à l’aide de la signature d’accès partagé, consultez [Tutoriel : Utiliser le service Stockage Blob Azure avec SQL Server 2016](Tutorial:%20Using%20the%20Microsoft%20Azure%20Blob%20storage%20service%20with%20SQL%20Server%202016%20databases.md).  
+ L’exemple suivant crée des informations d’identification avec signature d’accès partagé à l’aide d’un jeton SAP.  Pour un tutoriel montrant comment créer une stratégie d’accès stockée et une signature d’accès partagé sur un conteneur Azure, puis créer des informations d’identification à l’aide de la signature d’accès partagé, consultez [Tutoriel : Utiliser le service Stockage Blob Azure avec SQL Server 2016](../../relational-databases/tutorial-use-azure-blob-storage-service-with-sql-server-2016.md).  
   
 > [!IMPORTANT]  
 >  L’argument **CREDENTIAL NAME** exige que le nom corresponde au chemin du conteneur, commence par https et ne se termine pas par une barre oblique. L’argument **IDENTITY** nécessite le nom, *SHARED ACCESS SIGNATURE*. L’argument **SECRET** nécessite le jeton de signature d’accès partagé.  

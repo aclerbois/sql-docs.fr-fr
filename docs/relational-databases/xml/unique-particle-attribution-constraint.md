@@ -1,17 +1,15 @@
 ---
-title: "Contrainte d’attribution de particule unique | Microsoft Docs"
-ms.custom: 
+title: Contrainte d’attribution de particule unique | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - unique particle attribution
 helpviewer_keywords:
@@ -20,20 +18,19 @@ helpviewer_keywords:
 - UPA constraint rule
 - unique particle attribution constraint rule
 ms.assetid: 6bb879e9-a5ee-402e-94e4-fe8cec5966b0
-caps.latest.revision: 
+caps.latest.revision: 14
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0e19f33b48fda8ef1a476ff78fac176722b7af9d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: a811825c11d13f579ef029b828dd4d7aa91b1427
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unique-particle-attribution-constraint"></a>Contrainte d'attribution de particule unique
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Dans XSD, les modèles de contenu complexe sont soumis à la règle de la contrainte d'attribution de particule unique. Cette règle requiert que chaque élément d'un document d'instance corresponde sans ambiguïté à exactement une particule `<xsd:element>` ou `<xsd:any>` dans le modèle de contenu de son parent. Tout schéma qui contient un type avec un modèle de contenu potentiellement ambigu est rejeté.  
+  Dans XSD, les modèles de contenu complexe sont soumis à la règle de la contrainte d'attribution de particule unique. Cette règle requiert que chaque élément d'un document d'instance corresponde sans ambiguïté à exactement une particule `<xsd:element>` ou `<xsd:any>` dans le modèle de contenu de son parent. Tout schéma qui contient un type avec un modèle de contenu potentiellement ambigu est rejeté.  
   
  Les causes d'ambiguïté les plus courantes sont les caractères génériques et les particules `<xsd:any>` ayant des plages d'occurrences variables, telles que minOccurs < maxOccurs. Par exemple, le modèle de contenu suivant est ambigu car un élément <`e1`> peut correspondre à l’élément `<xsd:element>` ou à l’élément `<xsd:any>`.  
   
@@ -94,7 +91,7 @@ Dans XSD, les modèles de contenu complexe sont soumis à la règle de la contra
   
 -   Appendix H : Analysis of the Unique Particle Attribution Constraint (non-normative)  
   
- Ce document est disponible à l’adresse [http://www.w3.org/TR/xmlschema-1](http://go.microsoft.com/fwlink/?linkid=48881).  
+ Pour lire le document, consultez [http://www.w3.org/TR/xmlschema-1](http://go.microsoft.com/fwlink/?linkid=48881).  
   
 ## <a name="see-also"></a> Voir aussi  
  [Collections de schémas XML &#40;SQL Server&#41;](../../relational-databases/xml/xml-schema-collections-sql-server.md)  

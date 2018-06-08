@@ -1,29 +1,20 @@
 ---
 title: KPICurrentTimeMember (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: KPICurrentTimeMember function
-ms.assetid: b7011335-1df9-460a-8cfa-452a687156da
-caps.latest.revision: "14"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: e7d2bf9e46d81d594adb84030aef759dc650debd
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: a2d74a53277854e17cd184dea14736f028f892f8
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578821"
 ---
 # <a name="kpicurrenttimemember-mdx"></a>KPICurrentTimeMember (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -41,10 +32,10 @@ KPICurrentTimeMember(KPI_Name)
  *KPI_Nam*e  
  Expression de chaîne valide qui précise le nom de l'indicateur de performance clé.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Un KPI peut posséder un membre de temps différent du membre par défaut de la dimension de temps.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

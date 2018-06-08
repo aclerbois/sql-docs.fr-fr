@@ -1,29 +1,29 @@
 ---
 title: Didacticiels sur Reporting Services (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
-helpviewer_keywords: tutorials [Reporting Services]
+applies_to:
+- SQL Server 2016
+helpviewer_keywords:
+- tutorials [Reporting Services]
 ms.assetid: e90cc448-563b-4dbb-9776-defb8640ec66
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 1a22cac75e2ac8e23e282e1a317559e61197cfa9
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 08096896918f1dd42670c23d4b063de70d33042a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-tutorials-ssrs"></a>Didacticiels sur Reporting Services (SSRS)
 

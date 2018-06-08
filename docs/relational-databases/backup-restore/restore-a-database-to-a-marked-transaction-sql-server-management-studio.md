@@ -1,17 +1,14 @@
 ---
-title: "Restaurer une base de données jusqu’à une transaction marquée (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Restaurer une base de données jusqu’à une transaction marquée (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.restoretlog.markedtransaction.f1
 helpviewer_keywords:
@@ -19,19 +16,19 @@ helpviewer_keywords:
 - restoring databases [SQL Server], marked transactions
 - marked transactions [SQL Server], restoring
 ms.assetid: 8f0ea144-1819-4832-905f-e5d0f49b066b
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ac710301841953674c6c9237fde6d87fb8309379
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cd739f322d79be0f37497bfa50779e6da6648b8e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-a-database-to-a-marked-transaction-sql-server-management-studio"></a>Restaurer une base de données jusqu'à une transaction marquée (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Quand une base de données se trouve dans l’état de restauration, vous pouvez utiliser la boîte de dialogue **Restaurer le journal des transactions** pour restaurer la base de données jusqu’à une transaction marquée dans les sauvegardes du journal disponibles.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Quand une base de données se trouve dans l’état de restauration, vous pouvez utiliser la boîte de dialogue **Restaurer le journal des transactions** pour restaurer la base de données jusqu’à une transaction marquée dans les sauvegardes du journal disponibles.  
   
 > [!NOTE]  
 >  Pour plus d’informations, consultez [Utiliser les transactions marquées pour récupérer des bases de données associées uniformément &#40;mode de récupération complète&#41;](../../relational-databases/backup-restore/use-marked-transactions-to-recover-related-databases-consistently.md) et [Récupération de bases de données associées contenant une transaction marquée](../../relational-databases/backup-restore/recovery-of-related-databases-that-contain-marked-transaction.md).  

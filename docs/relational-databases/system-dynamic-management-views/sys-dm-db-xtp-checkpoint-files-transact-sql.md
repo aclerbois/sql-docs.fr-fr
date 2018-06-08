@@ -1,16 +1,14 @@
 ---
-title: sys.dm_db_xtp_checkpoint_files (Transact-SQL) | Microsoft Docs
+title: Sys.dm_db_xtp_checkpoint_files (Transact-SQL) | Documents Microsoft
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - database-engine-imoltp
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_db_xtp_checkpoint_files
@@ -22,23 +20,23 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_xtp_checkpoint_files dynamic management view
 ms.assetid: ac8e6333-7a9f-478a-b446-5602283e81c9
-caps.latest.revision: 
+caps.latest.revision: 49
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fff8a7cff566b555c0cc28ff6e60c67815956738
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c4ad13459024604d748c1dac8a6649c09a53f10f
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdbxtpcheckpointfiles-transact-sql"></a>sys.dm_db_xtp_checkpoint_files (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]
 
   Affiche des informations sur les fichiers de point de contrôle, y compris la taille de fichier, l'emplacement physique et l'ID de la transaction.  
   
-> **Remarque :** pour le point de contrôle actuel n’est pas fermée, la colonne d’état de s`ys.dm_db_xtp_checkpoint_files` sera UNDER CONSTRUCTION pour les nouveaux fichiers. Un point de contrôle se ferme automatiquement lorsqu’il existe suffisamment croissance du journal des transactions depuis le dernier point de contrôle, ou si vous exécutez le `CHECKPOINT` commande ([CHECKPOINT &#40; Transact-SQL &#41; ](../../t-sql/language-elements/checkpoint-transact-sql.md)).  
+> **Remarque :** pour le point de contrôle actuel n’est pas fermée, la colonne d’état de s`ys.dm_db_xtp_checkpoint_files` sera UNDER CONSTRUCTION pour les nouveaux fichiers. Un point de contrôle se ferme automatiquement lorsqu’il existe suffisamment croissance du journal des transactions depuis le dernier point de contrôle, ou si vous exécutez le `CHECKPOINT` commande ([point de contrôle &#40;Transact-SQL&#41;](../../t-sql/language-elements/checkpoint-transact-sql.md)).  
   
  Un groupe de fichiers mémoire optimisé utilise en interne des fichiers en mode append-only pour stocker les lignes insérées et supprimées pour les tables en mémoire. Il existe deux types de fichiers : Un fichier de données contient les lignes insérées un fichier delta contient des références à des lignes supprimées. 
   
@@ -46,12 +44,12 @@ ms.lasthandoff: 02/03/2018
   
  Pour plus d’informations, consultez [création et gestion du stockage des objets mémoire optimisés](../../relational-databases/in-memory-oltp/creating-and-managing-storage-for-memory-optimized-objects.md).  
   
-##  <a name="bkmk_2016"></a>[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures  
- Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_files`, en commençant par  **[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]** .  
+##  <a name="bkmk_2016"></a> [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] et versions ultérieures  
+ Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_files`, en commençant par **[!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]**.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
-|container_id|**int**|ID du conteneur (représenté en tant que fichier de type FILESTREAM dans sys.database_files) dont les données ou le fichier delta font partie. Jointures avec file_id dans [sys.database_files &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md).|  
+|container_id|**int**|ID du conteneur (représenté en tant que fichier de type FILESTREAM dans sys.database_files) dont les données ou le fichier delta font partie. Jointures avec file_id dans [sys.database_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md).|  
 |container_guid|**uniqueidentifier**|GUID du conteneur, le fichier racine, de données ou delta fait partie. Jointures avec file_guid dans la table sys.database_files.|  
 |checkpoint_file_id|**uniqueidentifier**|GUID du fichier de point de contrôle.|  
 |relative_file_path|**nvarchar (256)**|Chemin d’accès du fichier relatif au conteneur, à qu'il est mappé.|  
@@ -70,14 +68,14 @@ ms.lasthandoff: 02/03/2018
 |end_checkpoint_id|**bigint**|ID du point de contrôle final.|  
 |last_updated_checkpoint_id|**bigint**|ID du dernier point de contrôle dans ce fichier de mise à jour.|  
 |encryption_status|**smallint**|0, 1, 2|  
-|encryption_status_desc|**nvarchar(60)**|0 = > UNENCRTPTED<br /><br /> 1 = > CHIFFRÉE AVEC LA CLÉ 1<br /><br /> 2 = > CHIFFRÉE AVEC LA CLÉ 2. Valide uniquement pour les fichiers actifs.|  
+|encryption_status_desc|**nvarchar(60)**|0 = &GT; UNENCRTPTED<br /><br /> 1 = &GT; CHIFFRÉE AVEC LA CLÉ 1<br /><br /> 2 = &GT; CHIFFRÉE AVEC LA CLÉ 2. Valide uniquement pour les fichiers actifs.|  
   
 ##  <a name="bkmk_2014"></a> [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]  
- Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_files`, pour  **[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]** .  
+ Le tableau suivant décrit les colonnes de `sys.dm_db_xtp_checkpoint_files`, pour **[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]**.  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
-|container_id|**int**|ID du conteneur (représenté en tant que fichier de type FILESTREAM dans sys.database_files) dont les données ou le fichier delta font partie. Jointures avec file_id dans [sys.database_files &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md).|  
+|container_id|**int**|ID du conteneur (représenté en tant que fichier de type FILESTREAM dans sys.database_files) dont les données ou le fichier delta font partie. Jointures avec file_id dans [sys.database_files &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-files-transact-sql.md).|  
 |container_guid|**uniqueidentifier**|GUID du conteneur dont les données ou le fichier delta font partie.|  
 |checkpoint_file_id|**GUID**|ID du fichier de données ou delta.|  
 |relative_file_path|**nvarchar (256)**|Chemin d'accès au fichier de données ou delta, relatif à l'emplacement du conteneur.|  
@@ -128,6 +126,6 @@ ORDER BY state, file_type
 
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues de gestion dynamique de Table optimisée en mémoire &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique des tables optimisées en mémoire &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
   
   

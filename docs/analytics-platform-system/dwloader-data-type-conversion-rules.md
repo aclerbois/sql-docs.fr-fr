@@ -1,36 +1,30 @@
 ---
-title: "Type de données des règles de conversion de dwloader"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Cette rubrique décrit les formats de données d’entrée et les conversions de types de données implicites qui dwloader que chargeur de ligne de commande prend en charge lors du chargement des données dans PDW."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 79c48520-b08b-4b15-a943-a551cc90a2c4
-caps.latest.revision: "30"
-ms.openlocfilehash: 29cf43b7bb5ea38d821e62b03cc125fe5e0fc30c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Parallel Data Warehouse - les règles de conversion de type de données de Dwloader | Documents Microsoft
+description: Cette rubrique décrit les formats de données d’entrée et les conversions de types de données implicites qui dwloader que chargeur de ligne de commande prend en charge lors du chargement de données dans Parallel Data Warehouse (PDW). »
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: ecfc29c92bc99827ee943ff665524ff49e82a8df
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="data-type-conversion-rules-for-dwloader"></a>Type de données des règles de conversion de dwloader
+# <a name="data-type-conversion-rules-for-dwloader---parallel-data-warehouse"></a>Type de données des règles de conversion de dwloader - Parallel Data Warehouse
 Cette rubrique décrit les formats de données d’entrée et les conversions de types de données implicites qui [dwloader de ligne de commande chargeur](dwloader.md) prend en charge lors du chargement des données dans PDW. Les conversions implicites de données se produisent lorsque les données d’entrée ne correspondent pas le type de données dans la table cible de SQL Server PDW. Utilisez ces informations lorsque vous concevez votre processus de chargement pour vous assurer de vos données sera chargé avec succès dans SQL Server PDW.  
    
   
 ## <a name="InsertBinaryTypes"></a>Insertion de littéraux dans les Types de données binaires  
-Le tableau suivant définit les types de littéral acceptés, format et les règles de conversion pour le chargement d’une valeur littérale dans une colonne SQL Server PDW de type **binaire** (*n*) ou  **varbinary**(*n*).  
+Le tableau suivant définit les types de littéral acceptés, format et les règles de conversion pour le chargement d’une valeur littérale dans une colonne SQL Server PDW de type **binaire** (*n*) ou **varbinary** (*n*).  
   
 |Type de données d’entrée|Exemples de données d’entrée|Conversion en type binary ou varbinary, Type de données|  
 |-------------------|-----------------------|-----------------------------------------------|  
-|Littéral binaire|[0 x] *hexidecimal_string*<br /><br />Exemple : 12Ef ou 0x12Ef|Le préfixe 0 x est facultatif.<br /><br />La longueur de source de données ne peut pas dépasser le nombre d’octets spécifié pour le type de données.<br /><br />Si la longueur de source de données est inférieure à la taille de la **binaire** de type de données, les données sont complétées à droite avec des zéros non significatifs pour atteindre la taille de type de données.|  
+|Littéral binaire|[0x]*hexidecimal_string*<br /><br />Exemple : 12Ef ou 0x12Ef|Le préfixe 0 x est facultatif.<br /><br />La longueur de source de données ne peut pas dépasser le nombre d’octets spécifié pour le type de données.<br /><br />Si la longueur de source de données est inférieure à la taille de la **binaire** de type de données, les données sont complétées à droite avec des zéros non significatifs pour atteindre la taille de type de données.|  
   
 ## <a name="InsertDateTimeTypes"></a>Insertion de littéraux dans les Types de Date et heure  
 Les littéraux de date et d’heure sont représentées à l’aide de littéraux de chaîne dans un format spécifique, placé entre guillemets simples. Les tableaux suivants décrivent les types de littéral autorisées, le format et les règles de conversion pour le chargement d’une date ou un littéral d’heure dans une colonne de type **datetime**, **smalldatetime**, **date**, **temps**, **datetimeoffset**, ou **datetime2**. Les tableaux définissent le format par défaut pour le type de données spécifiée. Autres formats qui peuvent être spécifiées sont définies dans la section [Formats Datetime](#DateFormats). Les littéraux de date et d’heure ne peut pas inclure des espaces de début ou de fin. **date**, **smalldatetime**, et les valeurs null ne peut pas être chargés en mode de largeur fixe.  
@@ -76,7 +70,7 @@ Le tableau suivant définit le format par défaut et les règles pour le chargem
 |Littéral de chaîne dans **smalldatetime** format|'AAAA-MM-JJ HH'<br /><br />Exemple : « 2007-05-08 12:35 '|Secondes, les chiffres fractionnaires restants et les valeurs de décalage sont définies à 0 lorsque la valeur est insérée.|  
 |Littéral de chaîne dans **date** format|« AAAA-MM-JJ »<br /><br />Exemple : « 2007-05-08'|Valeurs d’heure (heures, minutes, secondes et fractions) sont définies à 0 lorsque la valeur est insérée. Par exemple, le littéral ' 2007-05-08' est inséré en tant que « 2007-05-08 00:00:00.0000000 + 00:00 ».|  
 |Littéral de chaîne dans **datetime2** format|'AAAA-MM-JJ ss.fffffff'<br /><br />Exemple : « 2007-05-08 12:35:29.1234567'|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
-|Littéral de chaîne dans **datetimeoffset** format|' : ss.fffffff AAAA-MM-JJ {+ &#124; ;-} hh : mm '<br /><br />Exemple : « 2007-05-08 12:35:29.1234567 + 12:15 '|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
+|Littéral de chaîne dans **datetimeoffset** format|' : ss.fffffff AAAA-MM-jj {+&#124;-} hh : mm '<br /><br />Exemple : « 2007-05-08 12:35:29.1234567 + 12:15 '|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
   
 ### <a name="datetime2-data-type"></a>Type de données datetime2  
 Le tableau suivant définit le format par défaut et les règles pour le chargement des valeurs littérales dans une colonne de type **datetime2** (*n*). Le format par défaut est 'AAAA-MM-JJ ss.fffffff'. Une chaîne vide (") est convertie en la valeur par défaut ' 1900-01-01-12:00:00 ». Les chaînes qui contiennent uniquement des espaces à droite (' ') génère une erreur. Le nombre de chiffres fractionnaires dépend de la définition de colonne. Par exemple, une colonne définie en tant que **datetime2** (2) aura deux chiffres fractionnaires.  
@@ -91,34 +85,34 @@ Le tableau suivant définit le format par défaut et les règles pour le chargem
 ### <a name="DateFormats"></a>Formats de date/heure  
 Dwloader prend en charge les formats de données suivants pour les données d’entrée son chargement dans SQL Server PDW. Plus de détails sont répertoriés après le tableau.  
   
-|DATETIME|smalldatetime|Date|datetime2|datetimeoffset|  
+|datetime|smalldatetime|date|datetime2|datetimeoffset|  
 |------------|-----------------|--------|-------------|------------------|  
-|[M [M]] M-[d] [aa] d-yy HH : mm : [.fff]|[M [M]] M-[d] [aa] d-yy HH : mm [ : 00]|[M [M]] M-[d] d-[aa] AA|[M [M]] M-[d] [aa] d-yy HH : mm : [.fffffff]|[M [M]] M-[d] [aa] d-yy HH : mm : [.fffffff] zzz|  
-|[M [M]] M-[d] [aa] d-yy HH : mm : [.fff] [tt]|[M [M]] M-[d] [aa] d-yy HH : mm [ : 00] [tt]||[M [M]] M-[d] [aa] d-yy HH : mm : [.fffffff] [tt]|[M [M]] M-[d] [aa] d-yy HH : mm : [.fffffff] [tt] zzz|  
-|[M [M]] M [aa] AA-[d]-d hh : mm : [.fff]|[M [M]] M [aa] AA-[d]-d hh : mm [ : 00]|[M [M]] M [aa] AA-[d]-d|[M [M]] M [aa] AA-[d]-d hh : mm : [.fffffff]|[M [M]] M [aa] AA-[d]-d hh : mm : [.fffffff] zzz|  
-|[M [M]] M-[aa] AA-[d] HH : mm : d [.fff] [tt]|[M [M]] M-[aa] AA-[d] HH : mm d [ : 00] [tt]||[M [M]] M-[aa] AA-[d] HH : mm : d [.fffffff] [tt]|[M [M]] M-[aa] AA-[d] HH : mm : d [.fffffff] [tt] zzz|  
-|[aa] AA-[M [M]] [d] M-d hh : mm : [.fff]|[aa] AA-[M [M]] [d] M-d hh : mm [ : 00]|[aa] AA-[M [M]] [d] M-d|[aa] AA-[M [M]] [d] M-d hh : mm : [.fffffff]|[aa] AA-[M [M]] HH : mm : d [.fffffff] zzz de M-[d]|  
-|[aa] AA-[M [M]] [d] M-d hh : mm : [.fff] [tt]|[aa] AA-[M [M]] [d] M-d hh : mm [ : 00] [tt]||[aa] AA-[M [M]] [d] M-d hh : mm : [.fffffff] [tt]|[aa] AA-[M [M]] [d] M-d hh : mm : [.fffffff] [tt] zzz|  
-|[aa] AA-[d] [M [M]] d-M hh : mm : [.fff]|[aa] AA-[d] [M [M]] d-M hh : mm [ : 00]|[aa] AA - d [d]-[M [M]] M|[aa] AA-[d] [M [M]] d-M hh : mm : [.fffffff]|[aa] AA-[d] M hh : mm : [.fffffff] zzz de d-[M [M]]|  
-|[aa] AA-[d] [M [M]] d-M hh : mm : [.fff] [tt]|[aa] AA-[d] [M [M]] d-M hh : mm [ : 00] [tt]||[aa] AA-[d] [M [M]] d-M hh : mm : [.fffffff] [tt]|[aa] AA-[d] [M [M]] d-M hh : mm : [.fffffff] [tt] zzz|  
-|[d] [M [M]] d-M-[aa] AA HH : mm : [.fff]|[d] [M [M]] d-M-[aa] AA HH : mm [ : 00]|[d] [M [M]] d-M-[aa] AA|[d] [M [M]] d-M-[aa] AA HH : mm : [.fffffff]|[d] [M [M]] d-M-[aa] AA HH : mm : [.fffffff] zzz|  
-|[d] [M [M]] d-M-[aa] AA HH : mm : [.fff] [tt]|[d] [M [M]] d-M-[aa] AA HH : mm [ : 00] [tt]||[d] [M [M]] d-M-[aa] AA HH : mm : [.fffffff] [tt]|[d] [M [M]] d-M-[aa] AA HH : mm : [.fffffff] [tt] zzz|  
-|d [d]-[aa] AA-[M [M]] M hh : mm : [.fff]|d [d]-[aa] AA-[M [M]] M hh : mm [ : 00]|d [d]-[aa] AA-[M [M]] M|d [d]-[aa] AA-[M [M]] M hh : mm : [.fffffff]|[d] d-[aa] AA-[M [M]] M hh : mm : [.fffffff] zzz|  
-|[d] d-[aa] AA-[M [M]] M hh : mm : [.fff] [tt]|[d] d-[aa] AA-[M [M]] M hh : mm [ : 00] [tt]||[d] d-[aa] AA-[M [M]] M hh : mm : [.fffffff] [tt]|[d] d-[aa] AA-[M [M]] M hh : mm : [.fffffff] [tt] zzz|  
+|[M[M]]M-[d]d-[yy]yy HH:mm:ss[.fff]|[M[M]]M-[d]d-[yy]yy HH:mm[:00]|[M[M]]M-[d]d-[yy]yy|[M[M]]M-[d]d-[yy]yy HH:mm:ss[.fffffff]|[M[M]]M-[d]d-[yy]yy HH:mm:ss[.fffffff] zzz|  
+|[M[M]]M-[d]d-[yy]yy hh:mm:ss[.fff][tt]|[M[M]]M-[d]d-[yy]yy hh:mm[:00][tt]||[M[M]]M-[d]d-[yy]yy hh:mm:ss[.fffffff][tt]|[M[M]]M-[d]d-[yy]yy hh:mm:ss[.fffffff][tt] zzz|  
+|[M[M]]M-[yy]yy-[d]d HH:mm:ss[.fff]|[M[M]]M-[yy]yy-[d]d HH:mm[:00]|[M[M]]M-[yy]yy-[d]d|[M[M]]M-[yy]yy-[d]d HH:mm:ss[.fffffff]|[M[M]]M-[yy]yy-[d]d HH:mm:ss[.fffffff] zzz|  
+|[M[M]]M-[yy]yy-[d]d hh:mm:ss[.fff][tt]|[M[M]]M-[yy]yy-[d]d hh:mm[:00][tt]||[M[M]]M-[yy]yy-[d]d hh:mm:ss[.fffffff][tt]|[M[M]]M-[yy]yy-[d]d hh:mm:ss[.fffffff][tt] zzz|  
+|[yy]yy-[M[M]]M-[d]d HH:mm:ss[.fff]|[yy]yy-[M[M]]M-[d]d HH:mm[:00]|[yy]yy-[M[M]]M-[d]d|[yy]yy-[M[M]]M-[d]d HH:mm:ss[.fffffff]|[yy]yy-[M[M]]M-[d]d HH:mm:ss[.fffffff]  zzz|  
+|[yy]yy-[M[M]]M-[d]d hh:mm:ss[.fff][tt]|[yy]yy-[M[M]]M-[d]d hh:mm[:00][tt]||[yy]yy-[M[M]]M-[d]d hh:mm:ss[.fffffff][tt]|[yy]yy-[M[M]]M-[d]d hh:mm:ss[.fffffff][tt] zzz|  
+|[yy]yy-[d]d-[M[M]]M HH:mm:ss[.fff]|[yy]yy-[d]d-[M[M]]M HH:mm[:00]|[yy]yy-[d]d-[M[M]]M|[yy]yy-[d]d-[M[M]]M HH:mm:ss[.fffffff]|[yy]yy-[d]d-[M[M]]M HH:mm:ss[.fffffff]  zzz|  
+|[yy]yy-[d]d-[M[M]]M hh:mm:ss[.fff][tt]|[yy]yy-[d]d-[M[M]]M hh:mm[:00][tt]||[yy]yy-[d]d-[M[M]]M hh:mm:ss[.fffffff][tt]|[yy]yy-[d]d-[M[M]]M hh:mm:ss[.fffffff][tt] zzz|  
+|[d]d-[M[M]]M-[yy]yy HH:mm:ss[.fff]|[d]d-[M[M]]M-[yy]yy HH:mm[:00]|[d]d-[M[M]]M-[yy]yy|[d]d-[M[M]]M-[yy]yy HH:mm:ss[.fffffff]|[d]d-[M[M]]M-[yy]yy HH:mm:ss[.fffffff] zzz|  
+|[d]d-[M[M]]M-[yy]yy hh:mm:ss[.fff][tt]|[d]d-[M[M]]M-[yy]yy hh:mm[:00][tt]||[d]d-[M[M]]M-[yy]yy hh:mm:ss[.fffffff][tt]|[d]d-[M[M]]M-[yy]yy hh:mm:ss[.fffffff][tt] zzz|  
+|[d]d-[yy]yy-[M[M]]M HH:mm:ss[.fff]|[d]d-[yy]yy-[M[M]]M HH:mm[:00]|[d]d-[yy]yy-[M[M]]M|[d]d-[yy]yy-[M[M]]M HH:mm:ss[.fffffff]|[d]d-[yy]yy-[M[M]]M HH:mm:ss[.fffffff]  zzz|  
+|[d]d-[yy]yy-[M[M]]M hh:mm:ss[.fff][tt]|[d]d-[yy]yy-[M[M]]M hh:mm[:00][tt]||[d]d-[yy]yy-[M[M]]M hh:mm:ss[.fffffff][tt]|[d]d-[yy]yy-[M[M]]M hh:mm:ss[.fffffff][tt] zzz|  
   
 Détails :  
   
--   Pour séparer les valeurs mois, jour et année, vous pouvez utiliser ':', '/' ou '. '. Par souci de simplicité, la table utilise uniquement le séparateur ':'.  
+-   Pour séparer les valeurs mois, jour et année, vous pouvez utiliser ':', '/' ou '. '. Par souci de simplicité, le tableau utilise uniquement le séparateur « – ».  
   
 -   Pour spécifier le mois sous forme de texte utilisez trois caractères ou plus. Mois avec 1 ou 2 caractères seront interprétés comme un nombre.  
   
 -   Pour séparer les valeurs d’heure, utilisez le ' : ' symbole.  
   
--   Lettres entourés crochets sont facultatifs.  
+-   Les lettres entre crochets sont facultatives.  
   
--   Les lettres « tt » désigner [AM | PM | am | pm]. AM est la valeur par défaut. Lorsque « tt » est spécifié, la valeur d’heure (hh) doit être dans la plage de 0 à 12.  
+-   Les lettres « tt » correspondent aux mentions [AM|PM|am|pm]. AM est la valeur par défaut. Lorsque « tt » est spécifié, la valeur d’heure (hh) doit être comprise entre 0 et 12.  
   
--   Les lettres « zzz » désigne le décalage de fuseau horaire pour fuseau horaire du système dans le format {+ |-} HH:ss].  
+-   Les lettres « zzz » désignent le décalage par rapport au fuseau horaire du système, au format {+|-}HH:ss].  
   
 ## <a name="InsertNumerictypes"></a>Insertion de littéraux dans les Types numériques  
 Les tableaux suivants définissent les règles de format et de conversion de valeur par défaut pour le chargement d’une valeur littérale dans une colonne SQL Server PDW qui utilise un type numérique.  

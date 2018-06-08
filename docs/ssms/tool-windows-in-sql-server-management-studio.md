@@ -1,30 +1,28 @@
 ---
-title: "Fenêtres Outil dans SQL Server Management Studio | Microsoft Docs"
-ms.custom: 
+title: Fenêtres Outil dans SQL Server Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], tool windows
 - tool windows [SQL Server Management Studio]
 ms.assetid: d3be5062-234c-43a8-8d47-cce111dd3c25
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f7532ce73258e22fee8587b93ea836af98234f1b
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: e1a7706eb126c28a40f06917ea6b7e976ce89efb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tool-windows-in-sql-server-management-studio"></a>Fenêtres Outil dans SQL Server Management Studio
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

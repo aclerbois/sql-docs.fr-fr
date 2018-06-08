@@ -1,16 +1,14 @@
 ---
-title: sp_syscollector_set_cache_window (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_syscollector_set_cache_window (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_syscollector_set_cache_window
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_syscollector_set_cache_window stored procedure
 - data collector [SQL Server], stored procedures
 ms.assetid: 660f2749-392f-46bf-89f3-27764d848507
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b4b7e8127273d07c2c414e27a798b47995d0a364
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 3b5d457ff251535e483658f8be6bcdab847b5ee8
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsyscollectorsetcachewindow-transact-sql"></a>sp_syscollector_set_cache_window (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,14 +45,14 @@ sp_syscollector_set_cache_window [ @cache_window = ] cache_window
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ @cache_window = ] *cache_window*  
+ [ @cache_window =] *cache_window*  
  Nombre de tentatives de téléchargement de données dans l'entrepôt de données de gestion en cas d'échec sans perte de données. *cache_window* est **int** avec une valeur par défaut de 1. *cache_window* peut avoir l’une des valeurs suivantes :  
   
 |Valeur| Description|  
 |-----------|-----------------|  
 |-1|Mise en cache de toutes les données de téléchargement des échecs de téléchargement précédents.|  
 |0|Ne pas mettre en cache de données après un échec de téléchargement.|  
-|*n*|Mettre en cache les données des n échecs de téléchargement précédents, où  *n*  > = 1.|  
+|*n*|Mettre en cache les données des n échecs de téléchargement précédents, où *n* > = 1.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  

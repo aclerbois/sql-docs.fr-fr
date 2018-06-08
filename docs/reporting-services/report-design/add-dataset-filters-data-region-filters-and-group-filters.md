@@ -1,27 +1,25 @@
 ---
-title: "Ajouter des filtres de datasets, des filtres de régions de données et des filtres de groupes | Microsoft Docs"
-ms.custom: 
+title: Ajouter des filtres de datasets, des filtres de régions de données et des filtres de groupes | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: fcca7243-a702-4725-8e6f-cf118e988acf
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3b3d4f355e52f27689dad4f157ca65edad99fa99
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 58b46f8ae50aaf31318d75a45ad767170c15b575
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-dataset-filters-data-region-filters-and-group-filters"></a>Ajouter des filtres de datasets, des filtres de régions de données et des filtres de groupes
   Dans un rapport, un filtre est une partie d'un dataset, d'une région de données ou d'un groupe de régions de données que vous créez pour limiter les données utilisées dans le rapport. Les filtres vous aident à contrôler les données de rapport si vous ne pouvez pas modifier la requête de dataset, par exemple, si vous utilisez un dataset partagé.  

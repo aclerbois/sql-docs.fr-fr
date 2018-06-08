@@ -1,25 +1,22 @@
 ---
-title: "Configurer les paramètres de SQL Server sur Linux | Documents Microsoft"
-description: "Cet article décrit comment utiliser l’outil mssql-conf pour configurer les paramètres de SQL Server 2017 sur Linux."
+title: Configurer les paramètres de SQL Server sur Linux | Documents Microsoft
+description: Cet article décrit comment utiliser l’outil mssql-conf pour configurer les paramètres de SQL Server 2017 sur Linux.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/20/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 06798dff-65c7-43e0-9ab3-ffb23374b322
-ms.workload: On Demand
-ms.openlocfilehash: 7b921f563b769a1a4c6a3edb5089a04050d0df74
-ms.sourcegitcommit: 57f45ee008141ddf009b1c1195442529e0ea1508
+ms.openlocfilehash: 6369c3144a9ce641765358621027729ce235f69d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-sql-server-on-linux-with-the-mssql-conf-tool"></a>Configurer SQL Server sur Linux avec l’outil mssql-conf
 
@@ -47,7 +44,7 @@ ms.lasthandoff: 02/21/2018
 | [Limite de mémoire](#memorylimit) | Définir la limite de mémoire pour SQL Server. |
 | [Port TCP](#tcpport) | Modifiez le port sur lequel SQL Server écoute les connexions. |
 | [TLS](#tls) | Configurer la sécurité de niveau Transport. |
-| [Traceflags](#traceflags) | Définissez les traceflags qui va utiliser le service. |
+| [TraceFlags](#traceflags) | Définissez les traceflags qui va utiliser le service. |
 
 > [!TIP]
 > Certains de ces paramètres peuvent également être configuré avec les variables d’environnement. Pour plus d’informations, consultez [des paramètres de configuration de SQL Server avec les variables d’environnement](sql-server-linux-configure-environment-variables.md).
@@ -62,7 +59,7 @@ ms.lasthandoff: 02/21/2018
 
 ## <a id="agent"></a> Activer l’Agent SQL Server
 
-Le **sqlagent.enabled** paramètre active [l’Agent SQL Server](sql-server-linux-run-sql-server-agent-job.md). Par défaut, l’Agent SQL Server est désactivé.
+Le **sqlagent.enabled** paramètre active [l’Agent SQL Server](sql-server-linux-run-sql-server-agent-job.md). Par défaut, l’Agent SQL Server est désactivé. Si **sqlagent.enabled** n’est pas présent dans le fichier de paramètres mssql.conf, puis SQL Server en interne part du principe que l’Agent SQL Server est activé.
 
 Pour modifier ces paramètres, procédez comme suit :
 
@@ -357,10 +354,10 @@ La première capture phase est contrôlée par le **coredump.coredumptype** para
 
     | Type |  Description |
     |-----|-----|
-    | **mini** | Mini est le plus petit type de fichier de vidage. Il utilise les informations de système de Linux pour déterminer les threads et les modules dans le processus. L’image mémoire contient uniquement les modules et les piles de threads d’environnement hôte. Il ne contient pas de références de mémoire indirect ou des variables globales. |
+    | **Mini** | Mini est le plus petit type de fichier de vidage. Il utilise les informations de système de Linux pour déterminer les threads et les modules dans le processus. L’image mémoire contient uniquement les modules et les piles de threads d’environnement hôte. Il ne contient pas de références de mémoire indirect ou des variables globales. |
     | **miniplus** | MiniPlus est similaire à mini, mais il inclut la mémoire supplémentaire. Il prend en charge les mécanismes internes de SQLPAL et de l’environnement hôte, en ajoutant les régions de mémoire suivantes pour le vidage :</br></br> -Globals divers</br> -Toute la mémoire au-dessus de 64 To</br> -All nommé trouvées dans les régions   **/proc / $pid/mappages**</br> -Mémoire indirecte des threads et des piles</br> -Informations sur le thread</br> -Associé de Teb et de Peb</br> -Informations module</br> -Arborescence VMM et VAD |
-    | **filtered** | Conception utilise filtré en fonction des soustraction où toute la mémoire dans le processus est incluse, sauf si spécifiquement exclus. La conception comprend les mécanismes internes de SQLPAL et de l’environnement hôte, à l’exception de certaines régions à partir de l’image mémoire.
-    | **full** | Complète un vidage de processus complète qui inclut toutes les régions se trouve dans **/proc / $pid/mappages**. Cela n’est pas contrôlé par **coredump.captureminiandfull** paramètre. |
+    | **Filtré** | Conception utilise filtré en fonction des soustraction où toute la mémoire dans le processus est incluse, sauf si spécifiquement exclus. La conception comprend les mécanismes internes de SQLPAL et de l’environnement hôte, à l’exception de certaines régions à partir de l’image mémoire.
+    | **Complète** | Complète un vidage de processus complète qui inclut toutes les régions se trouve dans **/proc / $pid/mappages**. Cela n’est pas contrôlé par **coredump.captureminiandfull** paramètre. |
 
 ## <a id="dbmail"></a> Définir le profil de messagerie de base de données par défaut pour SQL Server sur Linux
 
@@ -474,10 +471,10 @@ Les options suivantes configurent TLS pour une instance de SQL Server est en cou
 
 |Option | Description |
 |--- |--- |
-|**network.forceencryption** |La valeur 1, puis [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] force toutes les connexions à chiffrer. Par défaut, cette option est 0. |
+|**Network.ForceEncryption** |La valeur 1, puis [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] force toutes les connexions à chiffrer. Par défaut, cette option est 0. |
 |**network.tlscert** |Le chemin d’accès absolu pour le certificat du fichier qui [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] utilise pour TLS. Exemple : `/etc/ssl/certs/mssql.pem` le fichier de certificat doit être accessible par le compte mssql. Microsoft vous recommande de restreindre l’accès au fichier à l’aide de `chown mssql:mssql <file>; chmod 400 <file>`. |
 |**network.tlskey** |Le chemin d’accès absolu à la clé privée du fichier qui [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] utilise pour TLS. Exemple : `/etc/ssl/private/mssql.key` le fichier de certificat doit être accessible par le compte mssql. Microsoft vous recommande de restreindre l’accès au fichier à l’aide de `chown mssql:mssql <file>; chmod 400 <file>`. |
-|**network.tlsprotocols** |Une liste séparée par des virgules de quels TLS protocoles sont autorisés par SQL Server. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] tente toujours de négocier le protocole autorisé les plus fortes. Si un client ne prend pas en charge n’importe quel protocole autorisé, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] rejette la tentative de connexion.  Pour la compatibilité, tous les protocoles pris en charge sont autorisés par défaut (1.2, 1.1, 1.0).  Si vos clients prennent en charge TLS 1.2, Microsoft vous recommande d’autoriser uniquement TLS 1.2. |
+|**Network.tlsprotocols** |Une liste séparée par des virgules de quels TLS protocoles sont autorisés par SQL Server. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] tente toujours de négocier le protocole autorisé les plus fortes. Si un client ne prend pas en charge n’importe quel protocole autorisé, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] rejette la tentative de connexion.  Pour la compatibilité, tous les protocoles pris en charge sont autorisés par défaut (1.2, 1.1, 1.0).  Si vos clients prennent en charge TLS 1.2, Microsoft vous recommande d’autoriser uniquement TLS 1.2. |
 |**network.tlsciphers** |Spécifie les chiffrements autorisés par [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] pour TLS. Cette chaîne doit être mise en forme par [format de liste de chiffrement d’OpenSSL](https://www.openssl.org/docs/man1.0.2/apps/ciphers.html). En règle générale, vous ne devez pas modifier cette option. <br /> Par défaut, les chiffrements suivants sont autorisés : <br /> `ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES128-SHA256:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES256-SHA:ECDHE-ECDSA-AES128-SHA:ECDHE-RSA-AES256-SHA:ECDHE-RSA-AES128-SHA:AES256-GCM-SHA384:AES128-GCM-SHA256:AES256-SHA256:AES128-SHA256:AES256-SHA:AES128-SHA` |
 | **network.kerberoskeytabfile** |Chemin d’accès au fichier keytab Kerberos |
 

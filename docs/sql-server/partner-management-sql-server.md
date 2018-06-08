@@ -4,32 +4,31 @@ description: Listes de partenaires tiers avec des solutions pour la surveillance
 services: sql-server
 documentationcenter: NA
 author: MikeRayMSFT
-manager: jhubbard
-editor: 
-ms.assetid: 
-ms.service: 
+manager: craigg
+editor: ''
+ms.assetid: ''
 ms.component: sql-non-specified
 ms.suite: sql
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
-ms.workload: sql-server
-ms.custom: 
+ms.custom: ''
 ms.date: 17/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
 ms.author: mikeray
-ms.openlocfilehash: becde7ea17d456f697d247e6b03fe97b3ce74b8f
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+ms.openlocfilehash: 80a7cceee6693b00e2bd61bbdb82229edef5d8d7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-managing-partners"></a>Partenaires pour la gestion de SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour gérer vos services SQL Server, vous pouvez choisir parmi un large éventail d’outils de pointe.  Cet article présente les sociétés partenaires de Microsoft offrant des solutions de gestion qui prennent en charge Microsoft SQL Server.
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Pour gérer vos services SQL Server, vous pouvez choisir parmi un large éventail d’outils de pointe.  Cet article présente les sociétés partenaires de Microsoft offrant des solutions de gestion qui prennent en charge Microsoft SQL Server.
 
 ## <a name="our-management-partners"></a>Nos partenaires pour la gestion
-| Partenaire |  Description | Liens |
+| Partenaire | Description | Liens |
 | --- | --- | --- | --- |
 |![idera][1] |**IDERA**<br>SQL Compliance Manager est une solution d’audit complète qui montre qui a fait quoi, quand et comment sur les serveurs SQL Server, permettant de garantir la conformité avec les réglementations et les exigences de sécurité des données.<br><br>[Configuration système requise][idera_requirements]|<!--[Marketplace][idera_marketplace]<br>-->[Site web][idera_website]<br>[Twitter][idera_twitter]<br>[Vidéo][idera_youtube] | |
 

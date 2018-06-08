@@ -1,30 +1,31 @@
 ---
 title: ET (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: AND
-dev_langs: kbMDX
-helpviewer_keywords: AND, MDX
+f1_keywords:
+- AND
+dev_langs:
+- kbMDX
+helpviewer_keywords:
+- AND, MDX
 ms.assetid: 398fd483-d010-4524-b115-0becad66f25c
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 4ddc10c3c32b6ac2cd411e04afd1775bdd3fc02f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 870aac2a9eb1c799cf6d83ddbe119d91c1f11f8e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="and-mdx"></a>AND (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -48,7 +49,7 @@ Expression1 AND Expression2
 ## <a name="return-value"></a>Valeur retournée  
  Valeur booléenne qui retourne la valeur true si les deux paramètres donnent comme résultat **true**; sinon, **false**.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **AND** opérateur traite les deux expressions en tant que valeurs booléennes (zéro, 0, comme **false**; sinon, **true**) avant que l’opérateur effectue la conjonction logique. Le tableau suivant illustre comment la **AND** opérateur effectue la conjonction logique.  
   
 |*Expression1*|*Expression2*|Valeur retournée|  
@@ -58,7 +59,7 @@ Expression1 AND Expression2
 |**false**|**true**|**false**|  
 |**false**|**false**|**false**|  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
   
 ```  
 -- This query returns the gross profit margin (GPM)  
@@ -79,6 +80,6 @@ WHERE
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)  
   
   

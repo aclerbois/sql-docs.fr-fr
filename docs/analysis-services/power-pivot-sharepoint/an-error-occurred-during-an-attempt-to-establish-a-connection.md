@@ -1,31 +1,23 @@
 ---
-title: "Une erreur s’est produite lors d’une tentative pour établir une connexion | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-ms.assetid: 1b951da1-f62d-43d2-b40b-270a4a9ab92c
-caps.latest.revision: 
-author: Minewiskan
+title: Une erreur s’est produite lors d’une tentative pour établir une connexion | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9c68d97f72337a141be4f50e7ad775a9dff647f4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b4a588919b553f076d49a68f695e7f0763177a78
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="an-error-occurred-during-an-attempt-to-establish-a-connection"></a>Une erreur s’est produite lors d’une tentative pour établir une connexion
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette erreur se produit si vous interrogez des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] sur un serveur sur lequel [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint n’est pas installé. Elle se produit également si le service SQL Server Analysis Services ([!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]) est arrêté, ou si vous essayez d’afficher des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] d’une version antérieure.  
+  Cette erreur se produit si vous interrogez des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] sur un serveur sur lequel [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint n’est pas installé. Elle se produit également si le service SQL Server Analysis Services ([!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]) est arrêté, ou si vous essayez d’afficher des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] d’une version antérieure.  
   
 ## <a name="details"></a>Détails  
   

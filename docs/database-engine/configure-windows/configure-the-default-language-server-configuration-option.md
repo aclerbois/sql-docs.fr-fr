@@ -1,28 +1,26 @@
 ---
-title: "Configurer l’option de configuration de serveur default language | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur default language | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: default language option
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- default language option
 ms.assetid: c08c26d8-5a62-487e-a4ee-4c529e4f9287
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2e75839ae9482c3f5c5ee1baa8607e51b63c048e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d23377ab94d14be40be698089aea48b71b1ed906
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-default-language-server-configuration-option"></a>Configurer l'option de configuration de serveur default language
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,12 @@
 ---
-title: sys.dm_exec_plan_attributes (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_plan_attributes (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 10/20/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_exec_plan_attributes_TSQL
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_plan_attributes dynamic management function
 ms.assetid: dacf3ab3-f214-482e-aab5-0dab9f0a3648
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c9a90a964bd8c1fce911e62ac9081b47d349e0a5
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 7a815fe805aeb1a1a4f919353225ba04f6e3fb41
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecplanattributes-transact-sql"></a>sys.dm_exec_plan_attributes (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -67,9 +62,9 @@ Dans le tableau ci-dessus, **attribut** peut avoir les valeurs suivantes :
 |dbid|**int**|ID de la base de données contenant l'entité à laquelle le plan fait référence.<br /><br /> Pour des plans ad hoc ou préparés, il s'agit de l'ID de la base de données à partir duquel est exécuté le lot.|  
 |dbid_execute|**int**|Pour les objets système stockés dans le **ressources** de base de données, l’ID de base de données à partir de laquelle le plan mis en cache est exécuté. Dans tous les autres cas, il est égal à 0.|  
 |user_id|**int**|Une valeur de -2 indique que le lot soumis ne dépend pas de la résolution implicite des noms et peut être partagé entre différents utilisateurs. Cette méthode est recommandée. Toute autre valeur représente l'ID de l'utilisateur soumettant la requête dans la base de données.| 
-|language_id|**smallint**|ID de la langue de la connexion qui a créé l'objet dans le cache. Pour plus d’informations, consultez [sys.syslanguages &#40; Transact-SQL &#41; ](../../relational-databases/system-compatibility-views/sys-syslanguages-transact-sql.md).|  
-|date_format|**smallint**|Format de date de la connexion qui a créé l'objet dans le cache Pour plus d’informations, consultez [SET DATEFORMAT &#40; Transact-SQL &#41; ](../../t-sql/statements/set-dateformat-transact-sql.md).|  
-|date_first|**tinyint**|Valeur date first. Pour plus d’informations, consultez [SET DATEFIRST &#40; Transact-SQL &#41; ](../../t-sql/statements/set-datefirst-transact-sql.md).|  
+|language_id|**smallint**|ID de la langue de la connexion qui a créé l'objet dans le cache. Pour plus d’informations, consultez [sys.syslanguages &#40;Transact-SQL&#41;](../../relational-databases/system-compatibility-views/sys-syslanguages-transact-sql.md).|  
+|date_format|**smallint**|Format de date de la connexion qui a créé l'objet dans le cache Pour plus d’informations, consultez [SET DATEFORMAT &#40;Transact-SQL&#41;](../../t-sql/statements/set-dateformat-transact-sql.md).|  
+|date_first|**tinyint**|Valeur date first. Pour plus d’informations, consultez [SET DATEFIRST &#40;Transact-SQL&#41;](../../t-sql/statements/set-datefirst-transact-sql.md).|  
 |status|**int**|Bits d'état interne qui font partie de la clé de recherche en cache.|  
 |required_cursor_options|**int**|Options de curseur spécifiées par l'utilisateur (type de curseur par exemple).|  
 |acceptable_cursor_options|**int**|Options de curseur dans lesquelles [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut convertir implicitement afin de prendre en charge l'exécution de l'instruction. Par exemple, l'utilisateur peut spécifier un curseur dynamique, mais l'optimiseur de requête peut convertir ce type de curseur en curseur statique.|  
@@ -87,10 +82,10 @@ Dans le tableau ci-dessus, **attribut** peut avoir les valeurs suivantes :
 |merge_action_type|**smallint**|Type du plan d'exécution du déclencheur utilisé à la suite d'une instruction MERGE.<br /><br /> 0 indique un plan de non-déclencheur, un plan de déclencheur qui ne s'exécute pas à la suite d'une instruction MERGE ou un plan de déclencheur qui s'exécute à la suite d'une instruction MERGE qui spécifie uniquement une action DELETE.<br /><br /> 1 indique un plan de déclencheur INSERT qui s'exécute à la suite d'une instruction MERGE.<br /><br /> 2 indique un plan de déclencheur UPDATE qui s'exécute à la suite d'une instruction MERGE.<br /><br /> 3 indique un plan de déclencheur DELETE qui s'exécute à la suite d'une instruction MERGE contenant une action INSERT ou UPDATE correspondante.<br /><br /> Pour les déclencheurs imbriqués exécutés par des actions en cascade, cette valeur correspond à l'action de l'instruction MERGE qui a provoqué la cascade.|  
   
 ## <a name="permissions"></a>Autorisations  
- Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] requiert l’autorisation VIEW SERVER STATE sur le serveur.  
-  
- Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] niveaux Premium requiert l’autorisation VIEW DATABASE STATE dans la base de données. Sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard et les niveaux de base nécessite le [!INCLUDE[ssSDS](../../includes/sssds-md.md)] compte d’administrateur.  
-  
+
+Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
+
 ## <a name="remarks"></a>Notes  
   
 ## <a name="set-options"></a>Définir les options  
@@ -176,8 +171,8 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
- [Sys.dm_exec_cached_plans &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Sys.dm_exec_cached_plans &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-cached-plans-transact-sql.md)   
  [sys.databases &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-databases-transact-sql.md)   
  [sys.objects &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md)  
   

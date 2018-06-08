@@ -1,12 +1,12 @@
 ---
-title: "Fonctionnement des opérations d’index en ligne | Microsoft Docs"
-ms.custom: 
+title: Fonctionnement des opérations d’index en ligne | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.reviewer: 
-ms.technology: dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: sql
+ms.reviewer: ''
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - online index operations
 - source indexes [SQL Server]
@@ -15,20 +15,19 @@ helpviewer_keywords:
 - temporary mapping index [SQL Server]
 - index temporary mappings [SQL Server]
 ms.assetid: eef0c9d1-790d-46e4-a758-d0bf6742e6ae
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
+caps.latest.revision: 28
+author: MikeRayMSFT
+ms.author: mikeray
+manager: craigg
 ms.suite: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: indexes
-ms.workload: Inactive
-ms.openlocfilehash: 3a06dc9f01b2cf889605770beb57940b7f10558b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b863b7f22b87b35fdec90812170aad1e4121b433
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="how-online-index-operations-work"></a>Fonctionnement des opérations d'index en ligne
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

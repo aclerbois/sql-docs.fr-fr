@@ -2,32 +2,30 @@
 title: Mettre à niveau Integration Services | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: ''
 ms.component: install-windows
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Integration Services, upgrading
 - SSIS, upgrading
 - SQL Server Integration Services, upgrading
 - upgrading Integration Services
 ms.assetid: 04f9863c-ba0b-47c5-af91-f2d41b078a23
-caps.latest.revision: ''
+caps.latest.revision: 53
 author: MikeRayMSFT
 ms.author: mikeray
 manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: e7617074c17989315b75272611688f1bd77d97d2
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
+ms.openlocfilehash: b22da94c6d94532fdf12eba1399008254e533de9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-integration-services"></a>Mettre à niveau Integration Services
   Si [!INCLUDE[ssISversion10](../../includes/ssisversion10-md.md)] (ou une version ultérieure) est installé sur votre ordinateur, vous pouvez effectuer une mise à niveau vers [!INCLUDE[ssISCurrent](../../includes/ssiscurrent-md.md)].  
@@ -43,12 +41,12 @@ ms.lasthandoff: 03/20/2018
  Nous vous avons recommandé d'exécuter le Conseiller de mise à niveau avant de procéder à la mise à niveau vers [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. Le Conseiller de mise à niveau signale des problèmes que vous pouvez rencontrer si vous effectuez une migration de packages [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] existants vers le nouveau format de package que [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] utilise.  
   
 > [!NOTE]  
->  La prise en charge de la migration ou de l’exécution des packages DTS (Data Transformation Services) a été suspendue dans la version actuelle de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Les fonctionnalités DTS suivantes ne sont plus disponibles.  
+>  La prise en charge de la migration ou de l’exécution de packages DTS (Data Transformation Services) a été suspendue dans SQL Server 2012. Les fonctionnalités DTS suivantes ne sont plus disponibles.  
 >   
 >  -   Runtime DTS ;  
-> -   DTS API ;  
-> -   Assistant Migration de package pour la migration de packages DTS vers la prochaine version de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ;  
-> -   Prise en charge de la maintenance des packages DTS dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ;  
+> -   DTS API ;  
+> -   Assistant Migration de package pour la migration de packages DTS vers la prochaine version de [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]  
+> -   Prise en charge de la maintenance des packages DTS dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]  
 > -   Tâche d'exécution de package DTS 2000 ;  
 > -   analyse du Conseiller de mise à niveau des packages DTS.  
 >   
@@ -96,7 +94,7 @@ ms.lasthandoff: 03/20/2018
   
     -   Déplace les données du journal de la table système msdb.sysdtslog90 vers la table système msdb.sysssislog.  
   
--   Supprime les tables système msdb.sysdts\*90 et les procédures stockées utilisées pour y accéder après avoir déplacé les données vers les nouvelles tables msdb.sysssis\* . Toutefois, la mise à niveau remplace la table sysdtslog90 par une vue qui est également nommée sysdtslog90. Cette nouvelle vue sysdtslog90 présente la nouvelle table système msdb.sysssislog. Cela garantit que les rapports basés sur la table du journal continuent à s'exécuter sans interruption.  
+-   Supprime les tables système msdb.sysdts*90 et les procédures stockées utilisées pour y accéder après avoir déplacé les données vers les nouvelles tables msdb.sysssis\* . Toutefois, la mise à niveau remplace la table sysdtslog90 par une vue qui est également nommée sysdtslog90. Cette nouvelle vue sysdtslog90 présente la nouvelle table système msdb.sysssislog. Cela garantit que les rapports basés sur la table du journal continuent à s'exécuter sans interruption.  
   
 -   Pour contrôler l'accès aux packages, crée trois nouveaux rôles de base de données fixes : db_ssisadmin, db_ssisltduser et db_ssisoperator. Les rôles [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)][!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] de db_dtsadmin, db_dtsltduser et db_dtsoperator ne sont pas supprimés, mais deviennent membres des nouveaux rôles correspondants.  
   

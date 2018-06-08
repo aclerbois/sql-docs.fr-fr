@@ -1,33 +1,31 @@
 ---
 title: Commande OLE DB, transformation | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.oledbcommandtrans.f1
 helpviewer_keywords:
 - statements [Integration Services]
 - OLE DB Command transformation
 ms.assetid: baa6735c-5acf-4759-b077-1216aca16c6c
-caps.latest.revision: 
+caps.latest.revision: 55
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b759d86a0a501364cdb5f4a1544ac2eb3df8d717
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 1f0f455371c8ce7c5a2f5b7a02b9dc9e5d712f2d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ole-db-command-transformation"></a>transformation de commande OLE DB
   La transformation de commande OLE DB exécute une instruction SQL pour chaque ligne d'un flux de données. Par exemple, vous pouvez exécuter une instruction SQL qui insère, met à jour ou supprime des lignes d'une table de base de données.  

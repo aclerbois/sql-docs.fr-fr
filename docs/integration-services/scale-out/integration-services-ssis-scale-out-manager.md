@@ -1,28 +1,26 @@
 ---
 title: SQL Server Integration Services Scale Out Manager | Microsoft Docs
 ms.description: This article describes the Scale Out Manager tool which you can use to manager SSIS Scale Out
-ms.custom: 
+ms.custom: ''
 ms.date: 12/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: scale-out
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
-caps.latest.revision: 
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+caps.latest.revision: 1
 author: haoqian
 ms.author: haoqian
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e0180a4820781e19b728ddb1157db2010a8988ec
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 4f5ea5696c99a10b2e9b64a92c91c38e117430cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-scale-out-manager"></a>Integration Services Scale Out Manager
 

@@ -1,16 +1,13 @@
 ---
 title: DBCC USEROPTIONS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC USEROPTIONS
@@ -24,16 +21,15 @@ helpviewer_keywords:
 - active SET options
 - SET statement, active SET options
 ms.assetid: 565ab112-7af1-4c18-a579-07cdb332f539
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 41
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f3bf507ff174822e5133326555e8a9d2ab25f6e5
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bd94360f42130c2ab60e58b6d7608c82b236077e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-useroptions-transact-sql"></a>DBCC USEROPTIONS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

@@ -1,32 +1,26 @@
 ---
-title: "Afficher les propriétés de Resource Governor | Microsoft Docs"
-ms.custom: 
+title: Afficher les propriétés de Resource Governor | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: resource-governor
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.rg.properties.f1
 helpviewer_keywords:
 - Resource Governor, properties
 ms.assetid: de3510df-f792-4a9d-80fa-f198fd36cdc8
-caps.latest.revision: 
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 247d759d0ab40ce50383cf44f5af82566052c41b
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: f345af10cd9f76b12e7f9b6e4871b11d4f953771
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="view-resource-governor-properties"></a>Afficher les propriétés du gouverneur de ressources
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

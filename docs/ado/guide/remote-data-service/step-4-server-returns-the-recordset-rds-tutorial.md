@@ -1,30 +1,27 @@
 ---
-title: "Étape 4 : Le serveur retourne l’objet Recordset (didacticiel RDS) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Étape 4 : Le serveur retourne l’objet Recordset (didacticiel RDS) | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS tutorial [ADO], server returns Recordset
 ms.assetid: 3d1855c4-419c-4810-b5ea-6c874b5e2905
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 33d7afeb5912ff46a0f90a30ea1203f2040cb689
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7307eeef65ce29f02d864396100134a8082a754d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-4-server-returns-the-recordset-rds-tutorial"></a>Étape 4 : Le serveur retourne le jeu d’enregistrements (didacticiel sur les services Bureau à distance)
 > [!IMPORTANT]

@@ -1,32 +1,33 @@
 ---
 title: Enregistrer sous | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-menu
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.saveas
-helpviewer_keywords: Save As dialog box
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vs.saveas
+helpviewer_keywords:
+- Save As dialog box
 ms.assetid: 61347757-f5a3-481d-8b05-1fed086629b6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 16e9002516156238be7eac9faa203b64f0d23318
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: d512ff8a9093433eefd5bf6eef9946433dbebda8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-as"></a>Enregistrer sous
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Permet d’enregistrer une instance de l’élément actif à l’emplacement spécifié et dans un format de fichier spécifique. Pour afficher cette boîte de dialogue, cliquez sur **Enregistrer** *<file>* **sous** dans le menu **Fichier** (où *<file>* est le nom de l’élément actif), ou appuyez sur Alt+F, A dans l’éditeur de code.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Permet d’enregistrer une instance de l’élément actif à l’emplacement spécifié et dans un format de fichier spécifique. Pour afficher cette boîte de dialogue, cliquez sur **Enregistrer** *<file>* **sous** dans le menu **Fichier** (où *<file>* est le nom de l’élément actif), ou appuyez sur Alt+F, A dans l’éditeur de code.  
   
 ## <a name="central-panel"></a>Volet central  
 **Enregistrer dans**  
@@ -36,7 +37,7 @@ Recherchez le dossier de projet existant dans ce menu déroulant. Si vous sélec
 Utilisez cette option pour afficher le nom de fichier actuel, changer le nom de fichier ou filtrer les fichiers et les dossiers qui sont affichés. Pour filtrer les fichiers et les dossiers affichés, entrez un nom de fichier complet ou partiel sur lequel doit s'effectuer le filtrage. Vous pouvez utiliser l'astérisque (`*`) comme caractère générique.  
   
 > [!TIP]  
-> Pour afficher des fichiers qui se trouvent sur le web ou sur un réseau, entrez une URL ou un chemin réseau dans la zone **Nom de fichier** . Par exemple, « http://monsiteweb » affiche les fichiers disponibles à l’emplacement « monsiteweb », tandis que «\\\monserveur\partage » affiche les fichiers disponibles à l’emplacement « partage » sur « monserveur ».  
+> Pour afficher des fichiers qui se trouvent sur le web ou sur un réseau, entrez une URL ou un chemin réseau dans la zone **Nom de fichier** . Par exemple, « http://mywebsite » affiche les fichiers disponibles à l’emplacement « monsiteweb », tandis que «\\\monserveur\partage » affiche les fichiers disponibles à l’emplacement « partage » sur « monserveur ».  
   
 **Enregistrer en tant que**  
 Utilisez cette option pour choisir un nouveau type de fichier pour l'élément sélectionné. Les types de fichiers proposés représentent tous les types de fichiers disponibles dans lesquels l'élément sélectionné peut être converti.  

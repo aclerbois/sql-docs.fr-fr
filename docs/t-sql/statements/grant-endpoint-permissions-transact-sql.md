@@ -1,16 +1,14 @@
 ---
 title: GRANT - Octroyer des autorisations sur un point de terminaison (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,17 @@ helpviewer_keywords:
 - GRANT statement, endpoints
 - permissions [SQL Server], endpoints
 ms.assetid: 9eda885c-fc3a-4c9d-8de6-ce07fb35a934
-caps.latest.revision: 
+caps.latest.revision: 16
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9106f72b1e7d8c137b4a2f80d332db87750309ee
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4f83a459ea3f649b407c3a5ed2340422edec78ed
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="grant-endpoint-permissions-transact-sql"></a>GRANT - Octroyer des autorisations sur un point de terminaison (Transact-SQL)
+# <a name="grant-endpoint-permissions-transact-sql"></a>GRANT – octroi d'autorisations de point de terminaison (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet d'accorder des autorisations sur un point de terminaison.  
@@ -85,7 +82,7 @@ GRANT permission  [ ,...n ] ON ENDPOINT :: endpoint_name
 ## <a name="remarks"></a>Notes   
  Les autorisations dans l’étendue du serveur peuvent être accordées seulement quand la base de données active est **master**.  
   
- Des informations sur les points de terminaison sont consultables dans la vue de catalogue [sys.endpoints](../../relational-databases/system-catalog-views/sys-endpoints-transact-sql.md). Des informations sur les autorisations de serveur sont consultables dans la vue de catalogue [sys.server_permissions](../../relational-databases/system-catalog-views/sys-server-permissions-transact-sql.md) et des informations sur les principaux de serveur sont consultables dans la vue de catalogue [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
+ Des informations sur les points de terminaison sont consultables dans la vue de catalogue [sys.endpoints](../../relational-databases/system-catalog-views/sys-endpoints-transact-sql.md). Des informations sur les autorisations de serveur sont consultables dans la vue de catalogue [sys.server_permissions](../../relational-databases/system-catalog-views/sys-server-permissions-transact-sql.md), et des informations sur les principaux de serveur sont consultables dans la vue de catalogue [sys.server_principals](../../relational-databases/system-catalog-views/sys-server-principals-transact-sql.md).  
   
  Un point de terminaison est un élément sécurisable au niveau serveur. Les autorisations les plus spécifiques et limitées qu'il est possible d'accorder sur un point de terminaison sont répertoriées dans le tableau ci-dessous, avec les autorisations plus générales qui les incluent de manière implicite.  
   

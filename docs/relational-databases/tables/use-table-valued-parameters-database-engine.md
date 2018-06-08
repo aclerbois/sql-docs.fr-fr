@@ -1,36 +1,33 @@
 ---
-title: "Utiliser les paramètres table (Moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Utiliser les paramètres table (Moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - table-valued parameters
 - table-valued parameters, about table-valued parameters
 - parameters [SQL Server], table-valued
 - TVP See table-valued parameters
 ms.assetid: 5e95a382-1e01-4c74-81f5-055612c2ad99
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ed7f2311343668c75a5f2637110385995d838f0a
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ff370e7b4814397b067fd82c566fe809bc27e18a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-table-valued-parameters-database-engine"></a>Utiliser les paramètres table (Moteur de base de données)
-[!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]
+[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Les paramètres table sont déclarés en utilisant des types de table définis par l'utilisateur. Vous pouvez utiliser des paramètres table pour envoyer plusieurs lignes de données à une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ou à une routine, telle qu'une procédure stockée ou une fonction, sans créer de table temporaire ou de nombreux paramètres.  
   

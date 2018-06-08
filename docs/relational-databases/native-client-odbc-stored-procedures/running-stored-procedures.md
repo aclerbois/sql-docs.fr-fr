@@ -1,15 +1,14 @@
 ---
-title: "Exécution de procédures stockées | Documents Microsoft"
-ms.custom: 
+title: Exécution de procédures stockées | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC, stored procedures
@@ -17,16 +16,17 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, stored procedures
 - stored procedures [ODBC], executing
 ms.assetid: 866b6dd3-2acd-4dfb-aeca-a0352b2d4c6a
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5deaa43466320e4900b8247cd9e80ef997401e69
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c22a7b233459c446d708b1c5c177cd2f2ad9344f
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708017"
 ---
 # <a name="running-stored-procedures"></a>Exécution des procédures stockées
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -34,7 +34,7 @@ ms.lasthandoff: 01/25/2018
 
   Une procédure stockée est un objet exécutable stocké dans une base de données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge :  
   
--   Les procédures stockées :  
+-   Procédures stockées :  
   
      une ou plusieurs instructions SQL précompilées en une seule procédure exécutable.  
   
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/25/2018
   
      Les procédures stockées étendues peuvent utiliser les fonctionnalités C et C++ non disponibles dans les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
-     Pour obtenir un exemple montrant comment appeler une procédure stockée, consultez [traiter des Codes de retour et les paramètres de sortie &#40; ODBC &#41;](../../relational-databases/native-client-odbc-how-to/running-stored-procedures-process-return-codes-and-output-parameters.md).  
+     Pour obtenir un exemple montrant comment appeler une procédure stockée, consultez [traiter des Codes de retour et les paramètres de sortie &#40;ODBC&#41;](../../relational-databases/native-client-odbc-how-to/running-stored-procedures-process-return-codes-and-output-parameters.md).  
   
 ## <a name="in-this-section"></a>Dans cette section  
   
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/25/2018
 -   [Traitement des résultats des procédures stockées](../../relational-databases/native-client-odbc-stored-procedures/processing-stored-procedure-results.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
- [En cours d’exécution stockées rubriques de procédures &#40; ODBC &#41;](http://msdn.microsoft.com/library/c2220182-a23d-4475-b353-77a77ab613d6)  
+ [SQL Server Native Client &#40;ODBC&#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)   
+ [Rubriques de procédures stockées en cours d’exécution &#40;ODBC&#41;](http://msdn.microsoft.com/library/c2220182-a23d-4475-b353-77a77ab613d6)  
   
   

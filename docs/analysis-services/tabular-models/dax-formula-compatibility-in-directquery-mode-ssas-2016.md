@@ -1,27 +1,19 @@
 ---
-title: "Compatibilité des formules DAX en mode DirectQuery | Documents Microsoft"
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: multidimensional-tabular
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d2fbafe6-d7fb-437b-b32b-fa2446023fa5
-caps.latest.revision: 
-author: Minewiskan
+title: Compatibilité des formules DAX en mode DirectQuery | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 92c5801fe05dfa19e136e15f15227e50af64f769
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 2005742b524db0ec5587ad3f8d959b03dec6965b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="dax-formula-compatibility-in-directquery-mode"></a>Compatibilité des formules DAX en mode DirectQuery 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
@@ -52,7 +44,7 @@ Ces fonctions n’ont pas été optimisées pour l’utilisation de DirectQuery.
 
 Les raisons pour lesquelles une fonction particulière n’est pas optimisée pour DirectQuery sont que le moteur relationnel sous-jacent ne peut pas effectuer de calculs équivalents à ceux effectués par le moteur xVelocity, ou que la formule ne peut pas être convertie en une expression SQL équivalente. Dans d’autres cas, les performances de l’expression convertie et des calculs résultants peuvent ne pas être acceptables.
 
-Pour obtenir des informations sur toutes les fonctions DAX, consultez [Référence des fonctions DAX]. (https://msdn.microsoft.com/en-us/library/ee634396.aspx)
+Pour obtenir des informations sur toutes les fonctions DAX, consultez la [référence des fonctions DAX]. (https://msdn.microsoft.com/en-us/library/ee634396.aspx)
 
 ## <a name="dax-operators-in-directquery-mode"></a>Opérateurs DAX en mode DirectQuery
 Tous les opérateurs de comparaison et d’arithmétique DAX sont entièrement pris en charge en mode DirectQuery. Pour plus d’informations, consultez [Référence des opérateurs DAX](https://msdn.microsoft.com/library/ee634237.aspx).

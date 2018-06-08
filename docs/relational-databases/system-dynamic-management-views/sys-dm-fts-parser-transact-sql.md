@@ -1,16 +1,12 @@
 ---
-title: sys.dm_fts_parser (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_fts_parser (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_fts_parser_TSQL
@@ -23,16 +19,15 @@ helpviewer_keywords:
 - sys.dm_fts_parser dynamic management function
 - troubleshooting [SQL Server], full-text search
 ms.assetid: 2736d376-fb9d-4b28-93ef-472b7a27623a
-caps.latest.revision: 
+caps.latest.revision: 37
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 97e1eb8f7c4b37e8f1d3bb84ff7b1607712f729c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 717e97ca38fdc68b0ba807f546a253793234375b
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmftsparser-transact-sql"></a>sys.dm_fts_parser (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -77,15 +72,15 @@ sys.dm_fts_parser('query_string', lcid, stoplist_id, accent_sensitivity)
 |-----------------|---------------|-----------------|  
 |mot clé|**varbinary(128)**|Représentation hexadécimale d'un mot clé donné retournée par un analyseur lexical. Cette représentation permet de stocker le mot clé dans l'index de recherche en texte intégral. Cette valeur n’est pas lisible, mais il est utile pour un mot clé donné de sortie retournées par les autres vues de gestion dynamique qui retournent le contenu d’un index de recherche en texte intégral, tel que [sys.dm_fts_index_keywords](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-transact-sql.md) et [sys.dm_fts_index_keywords_by_document](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md).<br /><br /> **Remarque :** OxFF représente le caractère spécial qui indique la fin d’un fichier ou un jeu de données.|  
 |group_id|**int**|Contient une valeur entière qui est utile pour différencier le groupe logique à partir duquel un terme donné a été généré. Par exemple, « `Server AND DB OR FORMSOF(THESAURUS, DB)"` » produit les valeurs group_id suivantes en anglais :<br /><br /> 1 : serveur<br />2 : BASE DE DONNÉES<br />3 : BASE DE DONNÉES|  
-|phrase_id|**int**|Contient une valeur entière qui est utile pour différencier les cas dans lesquels les formes alternatives de mots composés, tels que le texte intégral, sont émises par l'analyseur lexical. Il peut arriver qu'en présence de mots composés (« multi-million ») des formes alternatives soient émises par l'analyseur lexical. Ces formes alternatives (expressions) doivent parfois être différenciées.<br /><br /> Par exemple, « `multi-million` » produit les valeurs phrase_id suivantes en anglais :<br /><br /> 1 pour`multi`<br />1 pour`million`<br />2 pour`multimillion`|  
-|occurrence|**int**|Indique l'ordre de chaque terme dans le résultat de l'analyse. Par exemple, pour l'expression « `SQL Server query processor` », l'occurrence contiendrait les valeurs d'occurrence suivantes pour les termes de l'expression, en anglais :<br /><br /> 1 pour`SQL`<br />2 pour`Server`<br />3 pour`query`<br />4 pour`processor`|  
+|phrase_id|**int**|Contient une valeur entière qui est utile pour différencier les cas dans lesquels les formes alternatives de mots composés, tels que le texte intégral, sont émises par l'analyseur lexical. Il peut arriver qu'en présence de mots composés (« multi-million ») des formes alternatives soient émises par l'analyseur lexical. Ces formes alternatives (expressions) doivent parfois être différenciées.<br /><br /> Par exemple, « `multi-million` » produit les valeurs phrase_id suivantes en anglais :<br /><br /> 1 pour `multi`<br />1 pour `million`<br />2 pour `multimillion`|  
+|occurrence|**int**|Indique l'ordre de chaque terme dans le résultat de l'analyse. Par exemple, pour l'expression « `SQL Server query processor` », l'occurrence contiendrait les valeurs d'occurrence suivantes pour les termes de l'expression, en anglais :<br /><br /> 1 pour `SQL`<br />2 pour `Server`<br />3 pour `query`<br />4 pour `processor`|  
 |special_term|**nvarchar(4000)**|Contient des informations sur les caractéristiques du terme émis par l'analyseur lexical, informations qui peuvent être l'une des suivantes :<br /><br /> Concordance exacte<br /><br /> Mot parasite<br /><br /> Fin de phrase<br /><br /> Fin de paragraphe<br /><br /> Fin de chapitre|  
 |display_term|**nvarchar(4000)**|Contient la forme explicite du mot clé. Comme avec les fonctions conçues pour accéder au contenu de l'index de recherche en texte intégral, ce terme affiché peut ne pas être identique au terme d'origine en raison des limitations inhérentes à la dénormalisation. Toutefois, il doit être suffisamment précis pour vous permettre de l'identifier à partir de l'entrée d'origine.|  
 |expansion_type|**int**|Contient des informations sur la nature de l'expansion d'un terme donné, informations qui peuvent être l'une des suivantes :<br /><br /> 0 =Cas de mot unique<br /><br /> 2=Expansion fléchie<br /><br /> 4=Expansion/remplacement du dictionnaire des synonymes<br /><br /> Par exemple, considérez un cas dans lequel le dictionnaire des synonymes définit run comme expansion de `jog` :<br /><br /> `<expansion>`<br /><br /> `<sub>run</sub>`<br /><br /> `<sub>jog</sub>`<br /><br /> `</expansion>`<br /><br /> Le terme `FORMSOF (FREETEXT, run)` génère la sortie suivante :<br /><br /> `run` with expansion_type=0<br /><br /> `runs` with expansion_type=2<br /><br /> `running` with expansion_type=2<br /><br /> `ran` with expansion_type=2<br /><br /> `jog` with expansion_type=4|  
-|source_term|**nvarchar(4000)**|Terme ou expression à partir duquel un terme donné à été généré ou analysé. Par exemple, une requête sur '"`word breakers" AND stemmers'` produit les valeurs source_term suivantes en anglais :<br /><br /> `word breakers`pour le display_term`word`<br />`word breakers`pour le display_term`breakers`<br />`stemmers`pour le display_term`stemmers`|  
+|source_term|**nvarchar(4000)**|Terme ou expression à partir duquel un terme donné à été généré ou analysé. Par exemple, une requête sur '"`word breakers" AND stemmers'` produit les valeurs source_term suivantes en anglais :<br /><br /> `word breakers` pour le display_term`word`<br />`word breakers` pour le display_term`breakers`<br />`stemmers` pour le display_term`stemmers`|  
   
 ## <a name="remarks"></a>Notes  
- **Sys.dm_fts_parser** prend en charge la syntaxe et les fonctionnalités de prédicats de texte intégral, tel que [contient](../../t-sql/queries/contains-transact-sql.md) et [FREETEXT](../../t-sql/queries/freetext-transact-sql.md)et les fonctions, telles que [CONTAINSTABLE](../../relational-databases/system-functions/containstable-transact-sql.md) et [FREETEXTTABLE](../../relational-databases/system-functions/freetexttable-transact-sql.md).  
+ **Sys.dm_fts_parser** prend en charge la syntaxe et les fonctionnalités de prédicats de texte intégral, tel que [contient](../../t-sql/queries/contains-transact-sql.md) et [FREETEXT](../../t-sql/queries/freetext-transact-sql.md)et les fonctions, telles que [CONTAINSTABLE](../../relational-databases/system-functions/containstable-transact-sql.md)et [FREETEXTTABLE](../../relational-databases/system-functions/freetexttable-transact-sql.md).  
   
 ## <a name="using-unicode-for-parsing-special-characters"></a>Utilisation d'Unicode pour l'analyse des caractères spéciaux  
  Lorsque vous analysez une chaîne de requête **sys.dm_fts_parser** utilise le classement de la base de données à laquelle vous êtes connecté, sauf si vous spécifiez la chaîne de requête au format Unicode. Par conséquent, une chaîne non-Unicode qui contient des caractères spéciaux, tels qu’ü ou ç, la sortie peut être inattendue, selon le classement de la base de données. Pour traiter une chaîne de requête indépendamment du classement de base de données, préfixez la chaîne avec `N`, autrement dit, `N'` *query_string*`'`.  
@@ -170,13 +165,13 @@ SELECT * FROM sys.dm_fts_parser(N'français', 1036, 5, 1);
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Recherche en texte intégral et fonctions et vues de gestion dynamique de la recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
+ [Recherche en texte intégral et les fonctions et vues de gestion dynamique de la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
  [Recherche en texte intégral](../../relational-databases/search/full-text-search.md)   
  [Configurer et gérer les analyseurs lexicaux et générateurs de formes dérivées pour la recherche](../../relational-databases/search/configure-and-manage-word-breakers-and-stemmers-for-search.md)   
  [Configurer et gérer des fichiers de dictionnaire des synonymes pour la recherche en texte intégral](../../relational-databases/search/configure-and-manage-thesaurus-files-for-full-text-search.md)   
  [Configurer et gérer des mots vides et listes de mots vides pour la recherche en texte intégral](../../relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search.md)   
- [Requête avec la recherche en texte intégral](../../relational-databases/search/query-with-full-text-search.md)   
- [Requête avec la recherche en texte intégral](../../relational-databases/search/query-with-full-text-search.md)   
+ [Exécuter une requête avec une recherche en texte intégral](../../relational-databases/search/query-with-full-text-search.md)   
+ [Exécuter une requête avec une recherche en texte intégral](../../relational-databases/search/query-with-full-text-search.md)   
  [Éléments sécurisables](../../relational-databases/security/securables.md)  
   
   

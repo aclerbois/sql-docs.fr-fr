@@ -1,16 +1,15 @@
 ---
 title: MSreplication_queue (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSreplication_queue system table
 ms.assetid: 664bf817-8021-4417-96d6-2bb1e4baabff
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 25bbbc37215010d60cd20a01ea06cb35176eabf5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 1230ab84f1d5082fd1f8b9482702a9361b7b9f2e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msreplicationqueue-transact-sql"></a>MSreplication_queue (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -42,9 +40,9 @@ ms.lasthandoff: 11/21/2017
 |-----------------|---------------|-----------------|  
 |**publisher** (serveur de publication)|**sysname**|Le nom du serveur de publication.|  
 |**publisher_db**|**sysname**|Le nom de la base de données de publication.|  
-|**publication**|**sysname**|Nom de la publication.|  
-|**tranid**|**sysname**|Identificateur de transaction sous lequel la commande en file d'attente a été exécutée.|  
-|**données**|**varbinary (8000)**|Flux d'octets empaqueté où étaient stockées les informations sur la commande mise en file d'attente.|  
+|**Publication**|**sysname**|Nom de la publication.|  
+|**Tranid**|**sysname**|Identificateur de transaction sous lequel la commande en file d'attente a été exécutée.|  
+|**data**|**varbinary(8000)**|Flux d'octets empaqueté où étaient stockées les informations sur la commande mise en file d'attente.|  
 |**datalen**|**int**|Longueur des données en octets.|  
 |**CommandType**|**int**|Type de commande mise en file d'attente :<br /><br /> 1 = Commande utilisateur dans une transaction<br /><br /> 2 = Commande de synchronisation d'abonnement|  
 |**insertdate**|**datetime**|Date d'insertion.|  
@@ -52,7 +50,7 @@ ms.lasthandoff: 11/21/2017
 |**cmdstate**|**bit**|État de la commande :<br /><br /> 0 = Terminée<br /><br /> 1 = Partiellement exécutée|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

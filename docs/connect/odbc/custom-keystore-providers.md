@@ -1,27 +1,24 @@
 ---
-title: "Les fournisseurs de magasins de clés personnalisé | Documents Microsoft"
-ms.custom: 
+title: Les fournisseurs de magasins de clés personnalisé | Documents Microsoft
+ms.custom: ''
 ms.date: 07/12/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a6166d7d-ef34-4f87-bd1b-838d3ca59ae7
-caps.latest.revision: "1"
+caps.latest.revision: 1
 ms.author: v-chojas
-manager: jhubbard
+manager: craigg
 author: MightyPen
-ms.workload: Inactive
-ms.openlocfilehash: 4c6f936ee92c23f38c78dc219be25ef051e02bb0
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+ms.openlocfilehash: 0d3a3b25ca2ead96d23b0d367ab633d900951de8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="custom-keystore-providers"></a>Fournisseurs de magasins de clés personnalisé
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]
@@ -195,7 +192,7 @@ Le **onError** paramètre pointe vers une fonction de rapport d’erreurs, avec 
 |`msg`|[Entrée] Le message d’erreur à signaler. Chaîne à caractères larges se terminant par null. Pour autoriser des informations paramétrables à présent, cette chaîne peut contenir des séquences de mise en forme insérer sous la forme accepté par le [FormatMessage](https://msdn.microsoft.com/library/windows/desktop/ms679351(v=vs.85).aspx) (fonction). Fonctionnalité étendue peut être spécifiée par ce paramètre, comme décrit ci-dessous.|
 |...|[Entrée] Paramètres variadic supplémentaires en fonction des spécificateurs de format du message, comme il convient.|
 
-Pour signaler quand une erreur s’est produite, l’onError fournisseur appelle, en fournissant le paramètre de contexte passé dans la fonction de fournisseur par le pilote et un message d’erreur avec des paramètres facultatifs supplémentaires à mettre en forme qu’elle contient. Le fournisseur peut appeler cette fonction plusieurs fois pour publier plusieurs messages d’erreur consécutives au sein de l’appel d’un fournisseur-fonction. Exemple :
+Pour signaler quand une erreur s’est produite, l’onError fournisseur appelle, en fournissant le paramètre de contexte passé dans la fonction de fournisseur par le pilote et un message d’erreur avec des paramètres facultatifs supplémentaires à mettre en forme qu’elle contient. Le fournisseur peut appeler cette fonction plusieurs fois pour publier plusieurs messages d’erreur consécutives au sein de l’appel d’un fournisseur-fonction. Par exemple :
 
 ```
     if (!doSomething(...))

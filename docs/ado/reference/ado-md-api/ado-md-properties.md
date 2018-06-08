@@ -1,31 +1,28 @@
 ---
-title: "Propriétés ADO MD | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriétés ADO MD | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO MD, properties
 - properties [ADO MD]
 ms.assetid: 11ca7e42-ab6a-47da-ab32-55abab663069
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ae381b20c4073ff5da87b6e3d26a964ed6a6ca60
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 38c342d5f4b44c855ec729dfbb41341f337e14a7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-md-properties"></a>Propriétés ADO MD
 |||  
@@ -46,7 +43,7 @@ ms.lasthandoff: 02/09/2018
 |[LevelDepth](../../../ado/reference/ado-md-api/leveldepth-property-ado-md.md)|Indique le nombre de niveaux entre la racine de la hiérarchie et un membre.|  
 |[LevelName](../../../ado/reference/ado-md-api/levelname-property-ado-md.md)|Indique le nom du niveau d’un membre.|  
 |[Nom](../../../ado/reference/ado-md-api/name-property-ado-md.md)|Indique le nom d’un objet.|  
-|[Ordinal (Cell)](../../../ado/reference/ado-md-api/ordinal-property-ado-md-cell.md)|Identifie de façon unique une cellule par sa position dans un ensemble de cellules.|  
+|[Ordinal (cellule)](../../../ado/reference/ado-md-api/ordinal-property-ado-md-cell.md)|Identifie de façon unique une cellule par sa position dans un ensemble de cellules.|  
 |[Ordinal (Position)](../../../ado/reference/ado-md-api/ordinal-property-ado-md-position.md)|Identifie de façon unique une position le long d’un axe.|  
 |[Parent](../../../ado/reference/ado-md-api/parent-property-ado-md.md)|Indique le membre qui est le parent du membre actuel dans une hiérarchie.|  
 |[ParentSameAsPrev](../../../ado/reference/ado-md-api/parentsameasprev-property-ado-md.md)|Indique si le parent de ce membre de position est le même que le parent du membre immédiatement précédent.|  

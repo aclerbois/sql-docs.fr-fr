@@ -1,30 +1,27 @@
 ---
-title: "Résoudre les problèmes de connexion au moteur de base de données SQL Server | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes de connexion au moteur de base de données SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 02/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - troubleshooting, connecting to Database Engine
 - connecting to Database Engine, troubleshooting
 ms.assetid: 474c365b-c451-4b07-b636-1653439f4b1f
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9a5ff7baa53924206192db30e8ae9f50cef02cff
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: fda5188298c2cae3b56bdb4119ae1bbc96679a2f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-connecting-to-the-sql-server-database-engine"></a>Résoudre les problèmes de connexion au moteur de base de données SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

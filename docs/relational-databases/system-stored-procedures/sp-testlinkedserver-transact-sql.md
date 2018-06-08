@@ -1,16 +1,14 @@
 ---
 title: sp_testlinkedserver (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_testlinkedserver
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_testlinkedserver
 ms.assetid: e63ca7d4-47d6-455e-9aac-421f9683dadc
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f3b237d7d48547fec3cad0c1dc412a24a54d4487
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 059f4056b418122c3ee8b89c17dea99909677ce2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sptestlinkedserver-transact-sql"></a>sp_testlinkedserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,9 +47,9 @@ sp_testlinkedserver [ @servername ] = servername
  Est le nom du serveur lié. *nom_serveur* est **sysname**, sans valeur par défaut.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
- Aucune  
+ Aucun  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Les autorisations ne sont pas vérifiées ; cependant, l'appelant doit disposer du mappage de connexion d'accès approprié.  
   
 ## <a name="examples"></a>Exemples  

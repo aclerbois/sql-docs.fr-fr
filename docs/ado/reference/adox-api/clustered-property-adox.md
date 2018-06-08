@@ -1,17 +1,15 @@
 ---
-title: "Clustered, propriété (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Clustered, propriété (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Index::put_Clustered
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - Clustered property [ADOX]
 ms.assetid: 9b62fb35-de43-425a-83ca-77af4e33fea9
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff996467ecc3bb0d5fc1f84d370e3b6287e70866
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 0258b5b5e6af9aaf86e578567a2cf19b05cd1266
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clustered-property-adox"></a>Clustered, propriété (ADOX)
 Indique si l’index est groupé.  

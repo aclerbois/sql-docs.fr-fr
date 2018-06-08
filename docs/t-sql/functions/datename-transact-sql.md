@@ -1,16 +1,14 @@
 ---
 title: DATENAME (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DATENAME_TSQL
@@ -27,16 +25,16 @@ helpviewer_keywords:
 - comparing dates times [SQL Server]
 - dates [SQL Server], dateparts
 ms.assetid: 11855b56-c554-495d-aad4-ba446990153b
-caps.latest.revision: 
+caps.latest.revision: 59
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 22dc10851e3185512527f82f593fdc2cdb2b765f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 8cf093318d49fcf6d28777cf4381dead7110bcab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="datename-transact-sql"></a>DATENAME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -76,7 +74,7 @@ Partie de la *date* à renvoyer. Le tableau suivant répertorie tous les argumen
 |**ISO_WEEK**|**ISOWK, ISOWW**|  
   
 *date*  
-Expression qui peut être résolue en une valeur **time**, **date**, **smalldatetime**, **datetime**, **datetime2** ou **datetimeoffset**. *date* peut être une expression, une expression de colonne, une variable définie par l’utilisateur ou un littéral de chaîne.  
+Expression qui peut être résolue en valeur **time**, **date**, **smalldatetime**, **datetime**, **datetime2** ou **datetimeoffset**. *date* peut être une expression, une expression de colonne, une variable définie par l’utilisateur ou un littéral de chaîne.  
 Pour éviter toute ambiguïté, représentez les années à l'aide de quatre chiffres. Pour obtenir des informations sur les années à deux chiffres, consultez [Configurer l’option de configuration de serveur d’année de coupure à deux chiffres](../../database-engine/configure-windows/configure-the-two-digit-year-cutoff-server-configuration-option.md).
   
 ## <a name="return-type"></a>Type de retour  
@@ -94,7 +92,7 @@ Lorsque le paramètre *date* a un argument de type de données **date**, la vale
 Si l’argument *datepart* est de type **TZoffset** (**tz**) et que l’argument *date* n’a aucun décalage de fuseau horaire, la valeur 0 est renvoyée.
   
 ## <a name="smalldatetime-date-argument"></a>Argument date smalldatetime  
-Lorsque *date* est de type [smalldatetime](../../t-sql/data-types/smalldatetime-transact-sql.md), les secondes sont renvoyées sous la forme 00.
+Quand *date* a la valeur [smalldatetime](../../t-sql/data-types/smalldatetime-transact-sql.md), les secondes sont renvoyées sous la forme 00.
   
 ## <a name="default-returned-for-a-datepart-that-is-not-in-the-date-argument"></a>Valeur par défaut retournée pour une partie de date qui ne figure pas dans l'argument date  
 Si le type de données de l’argument *date* n’a pas l’argument *datepart* spécifié, la valeur par défaut pour ce *datepart* sera renvoyée uniquement lors de la spécification d’un littéral pour *date*.
@@ -119,7 +117,7 @@ SELECT DATENAME(year, @t);
 ## <a name="remarks"></a>Notes   
 DATENAME peut être utilisé dans la liste de sélection, WHERE, HAVING, GROUP BY et les clauses ORDER BY.
   
-Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], DATENAME convertit des littéraux de chaîne implicitement en type **datetime2**. Cela signifie que DATENAME ne prend pas en charge le format YDM lorsque la date est transmise en tant que chaîne. Vous devez convertir explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format YDM.
+Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], DATENAME convertit des littéraux de chaîne implicitement en type **datetime2**. Cela signifie que DATENAME ne prend pas en charge le format YDM lorsque la date est transmise en tant que chaîne. Vous devez caster explicitement la chaîne en type **datetime** ou **smalldatetime** pour utiliser le format AJM.
   
 ## <a name="examples"></a>Exemples  
 L'exemple suivant retourne les parties de la date spécifiée.

@@ -1,16 +1,14 @@
 ---
 title: ALTER LOGIN (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 05/01/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/17/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_LOGIN_TSQL
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - names [SQL Server], logins
 - modifying login accounts
 ms.assetid: e247b84e-c99e-4af8-8b50-57586e1cb1c5
-caps.latest.revision: 
+caps.latest.revision: 68
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fc5c2a17e3d75cb743c6c0e3a335d911e102de0e
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c39118f020f50d3349e15cb5581e52347e74ee70
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-login-transact-sql"></a>ALTER LOGIN (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -83,7 +81,7 @@ ALTER LOGIN login_name
 ```  
   
 ```  
--- Syntax for Azure SQL Database  
+-- Syntax for Azure SQL Database and Azure SQL Data Warehouse 
   
 ALTER LOGIN login_name   
   {   
@@ -104,7 +102,7 @@ ALTER LOGIN login_name
 ```  
   
 ```  
--- Syntax for Azure SQL Data Warehouse and Parallel Data Warehouse  
+-- Syntax for Parallel Data Warehouse  
   
 ALTER LOGIN login_name   
     {   
@@ -158,7 +156,7 @@ ALTER LOGIN login_name
  S'applique uniquement aux connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Mot de passe actuel de la connexion à laquelle un nouveau mot de passe doit être attribué. Les mots de passe respectent la casse.  
   
  MUST_CHANGE  
- **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], et Parallel Data Warehouse.  
   
  S'applique uniquement aux connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si vous incluez cette option, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] demande un mot de passe actualisé lors de la première utilisation de la connexion modifiée.  
   
@@ -177,12 +175,12 @@ ALTER LOGIN login_name
  Nouveau nom de la connexion à renommer. S'il s'agit d'une connexion Windows, le SID du principal Windows correspondant au nouveau nom doit correspondre au SID de la connexion dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le nouveau nom d’une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas contenir une barre oblique inverse (\\).  
   
  CHECK_EXPIRATION = { ON | **OFF** }  
- **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], et Parallel Data Warehouse.  
   
  S'applique uniquement aux connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Spécifie si les règles d'expiration des mots de passe doivent être imposées sur cette connexion. La valeur par défaut est OFF.  
   
  CHECK_POLICY **=** { **ON** | OFF }  
- **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], et Parallel Data Warehouse.  
   
  S'applique uniquement aux connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Spécifie que les stratégies de mot de passe Windows de l'ordinateur sur lequel [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s'exécute doivent être imposées sur cette connexion. La valeur par défaut est ON.  
   
@@ -197,7 +195,7 @@ ALTER LOGIN login_name
  Supprime tout mappage existant de la connexion sur des informations d'identification du serveur. Pour plus d’informations, consultez [Informations d’identification &#40;moteur de base de données&#41;](../../relational-databases/security/authentication-access/credentials-database-engine.md).  
   
  UNLOCK  
- **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], et Parallel Data Warehouse.  
   
  S'applique uniquement aux connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Spécifie qu'une connexion verrouillée doit être déverrouillée.  
   

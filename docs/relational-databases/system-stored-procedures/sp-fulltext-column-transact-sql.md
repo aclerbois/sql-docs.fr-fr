@@ -1,16 +1,14 @@
 ---
-title: sp_fulltext_column (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_fulltext_column (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_fulltext_column_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_fulltext_column
 ms.assetid: a84cc45d-1b50-44af-85df-2ea033b8a6a9
-caps.latest.revision: 
+caps.latest.revision: 36
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1099b9ee7ebf38703701a2160e15d24b80ba859
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6c1a53e05eef89584526846c3f3d3c6324164a94
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spfulltextcolumn-transact-sql"></a>sp_fulltext_column (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-xxx-md.md)]
@@ -53,30 +51,30 @@ sp_fulltext_column [ @tabname= ] 'qualified_table_name' ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@tabname=** ] **'***qualified_table_name***'**  
+ [  **@tabname=** ] **'***nom_table_qualifée***'**  
  Nom de table en une ou deux parties. La table doit déjà exister dans la base de données actuelle. La table doit avoir un index de recherche en texte intégral. *nom_table_qualifée* est **nvarchar (517)**, sans valeur par défaut.  
   
- [ **@colname=** ] **'***column_name***'**  
+ [  **@colname=** ] **'***column_name***'**  
  Est le nom d’une colonne dans *nom_table_qualifée*. La colonne doit être de type caractère, **varbinary (max)** ou **image** colonne et ne peut pas être une colonne calculée. *column_name* est **sysname**, sans valeur par défaut.  
   
 > [!NOTE]  
 >  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut créer des index de recherche en texte intégral de données texte stockées dans des colonnes de **varbinary (max)** ou **image** type de données. Les images et les dessins ne sont pas indexés.  
   
- [ **@action=** ] **'***action***'**  
+ [  **@action=** ] **'***action***'**  
  Action à exécuter. *action* est **varchar (20)**, sans valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
 |**add**|Ajoute *column_name* de *nom_table_qualifée* à l’index de recherche en texte intégral inactif de la table. Cette action permet d'appliquer à la colonne une indexation de texte intégral.|  
-|**drop**|Supprime *column_name* de *nom_table_qualifée* à partir de l’index de recherche en texte intégral inactif de la table.|  
+|**DROP**|Supprime *column_name* de *nom_table_qualifée* à partir de l’index de recherche en texte intégral inactif de la table.|  
   
- [ **@language=** ] **'***language_term***'**  
- Langue des données stockées dans la colonne. Pour obtenir la liste des langues incluses dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [sys.fulltext_languages &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-fulltext-languages-transact-sql.md).  
+ [  **@language=** ] **'***language_term***'**  
+ Langue des données stockées dans la colonne. Pour obtenir la liste des langues incluses dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [sys.fulltext_languages &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-fulltext-languages-transact-sql.md).  
   
 > [!NOTE]  
 >  Utilisez l'analyse indépendante lorsqu'une colonne contient des données dans plusieurs langues ou dans une langue non prise en charge. La langue par défaut est spécifiée par l'option de configuration « Default Full-Text Language ».  
   
- [ **@type_colname =** ] **'***type_column_name***'**  
+ [  **@type_colname =** ] **'***type_column_name***'**  
  Est le nom d’une colonne dans *nom_table_qualifée* qui contient le type de document de *column_name*. Cette colonne doit être **char**, **nchar**, **varchar**, ou **nvarchar**. Il est utilisé uniquement lorsque le type de données de *column_name* est de type **varbinary (max)** ou **image**. *type_column_name* est **sysname**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -130,6 +128,6 @@ WHERE CONTAINS(spanishCol, 'formsof(inflectional, trabajar)')
  [sp_help_fulltext_tables &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-tables-transact-sql.md)   
  [sp_help_fulltext_tables_cursor &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-tables-cursor-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Recherche en texte intégral et la recherche sémantique stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
+ [Procédures stockées de recherche en texte intégral et la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
   
   

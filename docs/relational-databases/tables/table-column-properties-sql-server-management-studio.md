@@ -1,32 +1,29 @@
 ---
-title: "Propriétés des colonnes de table (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Propriétés des colonnes de table (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/08/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vdtsql.chm:65558
 - vdtsql.chm:69657
 - vdt.ppg.columns
 ms.assetid: 09830897-cc10-46b8-95f5-e0e9681b668c
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2d2860c28663df8c5b2fc9ef995dafdefcb892e2
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a435872914c99990d57804aef0e7e869e1d4737e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="table-column-properties-sql-server-management-studio"></a>Propriétés des colonnes de table (SQL Server Management Studio)
 [!INCLUDE[tsql-appliesto-ss2016-all-md](../../includes/tsql-appliesto-ss2016-all-md.md)]

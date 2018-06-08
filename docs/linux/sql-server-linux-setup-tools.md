@@ -1,4 +1,4 @@
-﻿---
+---
 title: Installer les outils de ligne de commande de SQL Server sur Linux | Documents Microsoft
 description: Cet article décrit comment installer les outils SQL Server sur Linux.
 author: rothja
@@ -6,20 +6,17 @@ ms.author: jroth
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
+ms.prod: sql
 ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: eff8e226-185f-46d4-a3e3-e18b7a439e63
-ms.workload: Active
-ms.openlocfilehash: 92b04366f3dbcba517c5c82b0e7d65e862890cc3
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 6a5625563e32923abefe3dee3bcb29a694303d42
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="install-sqlcmd-and-bcp-the-sql-server-command-line-tools-on-linux"></a>Installer les outils de ligne de commande SQL Server sqlcmd et bcp sur Linux
 
@@ -42,7 +39,7 @@ Cet article décrit comment installer les outils de ligne de commande. Si vous r
 
 ## <a name="a-idrhelainstall-tools-on-rhel-7"></a><a id="RHEL"><a/>Installer les outils sur RHEL 7
 
-Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Red Hat Enterprise Linux. 
+Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Red Hat Enterprise Linux.  
 
 1. Activer le mode Super utilisateur.
 
@@ -68,7 +65,7 @@ Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Red
    sudo yum remove unixODBC-utf16 unixODBC-utf16-devel
    ```
 
-1. Exécutez les commandes suivantes pour installer **mssql-tools** avec le kit du développeur unixODBC.
+1. Exécutez les commandes suivantes pour installer **mssql-tools** avec le package développeur unixODBC.
 
    ```bash
    sudo yum install mssql-tools unixODBC-devel
@@ -98,9 +95,9 @@ Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Red
 
 ## <a id="ubuntu"></a>Installer les outils sur Ubuntu 16.04
 
-Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Ubuntu. 
+Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Ubuntu.  
 
-1. Importez les clés publiques GPG de référentiel. 
+1. Importez les clés publiques GPG de référentiel.
 
    ```bash
    curl https://packages.microsoft.com/keys/microsoft.asc | sudo apt-key add -
@@ -143,7 +140,7 @@ Utilisez les étapes suivantes pour installer le package **mssql-tools** sur Ubu
 
 ## <a id="SLES"></a>Installer les outils sur SLES 12
 
-Utilisez les étapes suivantes pour installer le package **mssql-tools** sur SUSE Linux Enterprise Server. 
+Utilisez les étapes suivantes pour installer le package **mssql-tools** sur SUSE Linux Enterprise Server.  
 
 1. Ajouter le référentiel Microsoft SQL Server à Zypper.
 
@@ -207,7 +204,7 @@ Depuis SQL Server 2017 CTP 2.0, les outils de ligne de commande de SQL Server so
 
 [!INCLUDE[SQL Server Linux offline package installation](../includes/sql-server-linux-offline-package-install-intro.md)]
 
-Le tableau suivant fournit l’emplacement pour les packages d’outils les plus récents :
+Le tableau suivant fournit l’emplacement pour les packages d’outils les plus récents :
 
 | Package d’outils | Version | Télécharger |
 |-----|-----|-----|
@@ -216,7 +213,7 @@ Le tableau suivant fournit l’emplacement pour les packages d’outils les plus
 | Ubuntu 16.04 Debian package des outils | 14.0.5.0-1 | [package de Debian MSSQL-outils](https://packages.microsoft.com/ubuntu/16.04/prod/pool/main/m/mssql-tools/mssql-tools_14.0.5.0-1_amd64.deb) |
 | Ubuntu 16.10 Debian package des outils | 14.0.5.0-1 | [package de Debian MSSQL-outils](https://packages.microsoft.com/ubuntu/16.10/prod/pool/main/m/mssql-tools/mssql-tools_14.0.5.0-1_amd64.deb) |
 
-Ces packages dépendent de **msodbcsql**, qui doit être installé en premier. **msodbcsql** a également une dépendance sur le **unixODBC-devel** (RPM) ou **unixodbc-dev** (Debian). L’emplacement des packages **msodbcsql** est répertorié dans le tableau suivant :
+Ces packages dépendent de **msodbcsql**, qui doit être installé en premier. **msodbcsql** a également une dépendance sur le **unixODBC-devel** (RPM) ou **unixodbc-dev** (Debian). L’emplacement des packages **msodbcsql** est répertorié dans le tableau suivant :
 
 | package de msodbcsql | Version | Télécharger |
 |-----|-----|-----|
@@ -229,7 +226,7 @@ Pour installer manuellement ces packages, procédez comme suit :
 
 1. **Déplacez les packages téléchargés sur votre ordinateur Linux**. Si vous avez utilisé un autre ordinateur pour télécharger les packages, une façon de déplacer les packages vers l’ordinateur Linux est d'utiliser la commande **scp**.
 
-1. Installez **et les packages**mssql-tools**et**msodbc**.   Si vous obtenez des erreurs de dépendance, ignorez-les jusqu'à l’étape suivante.
+1. Installez **et les packages**mssql-tools**et**msodbc **.   Si vous obtenez des erreurs de dépendance, ignorez-les jusqu'à l’étape suivante.
 
     | Plateforme | Commandes d’installation de package |
     |-----|-----|
@@ -269,6 +266,6 @@ Pour obtenir un exemple montrant comment utiliser **sqlcmd** pour se connecter �
 - [Installer sur Red Hat Enterprise Linux](quickstart-install-connect-red-hat.md)
 - [Installer sur SUSE Linux Enterprise Server](quickstart-install-connect-suse.md)
 - [Installer sur Ubuntu](quickstart-install-connect-ubuntu.md)
-- [Exécutez sur Docker](quickstart-install-connect-ubuntu.md)
+- [Exécuter sur Docker](quickstart-install-connect-ubuntu.md)
 
-Pour obtenir un exemple montrant comment utiliser **bcp** pour importer et exporter des données en bloc, consultez [copie de données en bloc vers SQL Server sur Linux](sql-server-linux-migrate-bcp.md).
+Pour obtenir un exemple montrant comment utiliser **bcp** pour importer et exporter des données en bloc, consultez [opie de données en bloc vers SQL Server sur Linux](sql-server-linux-migrate-bcp.md).

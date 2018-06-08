@@ -1,32 +1,29 @@
 ---
-title: "L’exemple AddNew (méthode) (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: L’exemple AddNew (méthode) (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - AddNew method [ADO], Visual Basic example
 ms.assetid: d439e097-65f3-471d-8799-5a1263beb3c1
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a9ff526eadc0d21407223841c59c424548e0f264
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 73ad0d73039371a739cd7afa4c2b60a1949fdf90
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="addnew-method-example-vb"></a>Exemple AddNew (méthode) (VB)
 Cet exemple utilise le [AddNew](../../../ado/reference/ado-api/addnew-method-ado.md) méthode pour créer un nouvel enregistrement avec le nom spécifié.  

@@ -1,30 +1,28 @@
 ---
-title: "Paramètres (GUI) (MySQLToSQL) du projet | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (GUI) (MySQLToSQL) du projet | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: fd92aa77-21e3-41ac-8f3e-08608a734b7f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3631366693d295e11b740a5ae1a27850d07cc365
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6edf8639163114a7de885c7069d95ee5444973a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-gui--mysqltosql"></a>Paramètres du projet (GUI) (MySQLToSQL)
 Les paramètres de projet d’interface graphique utilisateur vous permettent de configurer l’affichage des données sur le **données** onglet et s’il faut inclure des rapports de données avec les rapports d’évaluation.  

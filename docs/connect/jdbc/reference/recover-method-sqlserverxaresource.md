@@ -1,30 +1,29 @@
 ---
-title: "Méthode recover (SQLServerXAResource) | Documents Microsoft"
-ms.custom: 
+title: Méthode recover (SQLServerXAResource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerXAResource.recover
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerXAResource.recover
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 840ecfcf-0dd3-4b7b-976f-dc9a96cd1464
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 73f341196b8dd86a098031afc8c556ceb7f26a2c
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d2e30fa3b1fc9d5ab419cd0f8f8b2b7bbcf018b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recover-method-sqlserverxaresource"></a>Méthode recover (SQLServerXAResource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public javax.transaction.xa.Xid[] recover(int flags)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *indicateurs*  
+ *flags*  
   
  Un **int** valeur qui peut prendre l’une des valeurs suivantes : XAResource.TMSTARTRSCAN ou XAResource.TMENDRSCAN ou XAResource.TMNOFLAGS ou XAResource.TMSTARTTRSCAN | XAResource.TMENDRSCAN.  
   

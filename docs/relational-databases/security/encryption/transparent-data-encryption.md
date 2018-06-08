@@ -1,17 +1,16 @@
 ---
-title: "Chiffrement TDE (Transparent Data Encryption) | Microsoft Docs"
-ms.custom: 
+title: Chiffrement TDE (Transparent Data Encryption) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Transparent Data Encryption
 - database encryption key, about
@@ -21,16 +20,16 @@ helpviewer_keywords:
 - Transparent Data Encryption, about
 - encryption [SQL Server], transparent data encryption
 ms.assetid: c75d0d4b-4008-4e71-9a9d-cee2a566bd3b
-caps.latest.revision: 
+caps.latest.revision: 75
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0dc91fd8963b438902ee29ffb64d6cac0bb2d2f9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 270c13eeb22078db8ae2ca1b65fd049d969f174a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transparent-data-encryption-tde"></a>Chiffrement transparent des données (TDE)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -59,7 +58,7 @@ ms.lasthandoff: 11/21/2017
   
  **Informations applicables à [!INCLUDE[ssSDS](../../../includes/sssds-md.md)]**  
   
- Quand vous utilisez le chiffrement transparent des données avec [!INCLUDE[sqldbesa](../../../includes/sqldbesa-md.md)] V12, le certificat de niveau serveur stocké dans la base de données master est automatiquement créé par [!INCLUDE[ssSDS](../../../includes/sssds-md.md)]. Pour déplacer une base de données avec chiffrement transparent des données sur [!INCLUDE[ssSDS](../../../includes/sssds-md.md)] , vous devez déchiffrer la base de données, la déplacer, puis réactiver le chiffrement transparent des données sur la [!INCLUDE[ssSDS](../../../includes/sssds-md.md)]de destination. Pour obtenir des instructions pas à pas pour le chiffrement transparent des données sur [!INCLUDE[ssSDS](../../../includes/sssds-md.md)], consultez [Transparent Data Encryption with Azure SQL Database](../../../relational-databases/security/encryption/transparent-data-encryption-azure-sql.md).  
+ Quand vous utilisez le chiffrement transparent des données avec [!INCLUDE[sqldbesa](../../../includes/sqldbesa-md.md)] V12, le certificat de niveau serveur stocké dans la base de données master est automatiquement créé par [!INCLUDE[ssSDS](../../../includes/sssds-md.md)]. Pour déplacer une base de données avec chiffrement transparent des données sur [!INCLUDE[ssSDS](../../../includes/sssds-md.md)] , vous devez déchiffrer la base de données, la déplacer, puis réactiver le chiffrement transparent des données sur la [!INCLUDE[ssSDS](../../../includes/sssds-md.md)]de destination. Pour obtenir des instructions pas à pas relatives au chiffrement transparent des données dans [!INCLUDE[ssSDS](../../../includes/sssds-md.md)], consultez [Chiffrement transparent des données avec Azure SQL Database](../../../relational-databases/security/encryption/transparent-data-encryption-azure-sql.md).  
   
  **Informations applicables à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]**  
   
@@ -188,7 +187,7 @@ GO
   
 -   Création d'un instantané  
   
- Les opérations ou conditions suivantes empêchent l'exécution des instructions CREATE DATABASE ENCRYPTION KEY, ALTER DATABASE ENCRYPTION KEY, DROP DATABASE ENCRYPTION KEY ou ALTER DATABASE...SET ENCRYPTION :  
+ Les opérations ou conditions suivantes empêchent l'exécution des instructions CREATE DATABASE ENCRYPTION KEY, ALTER DATABASE ENCRYPTION KEY, DROP DATABASE ENCRYPTION KEY ou ALTER DATABASE...SET ENCRYPTION :  
   
 -   La base de données est en lecture seule ou a des groupes de fichiers en lecture seule.  
   
@@ -241,18 +240,18 @@ GO
 ## <a name="transparent-data-encryption-and-in-memory-oltp"></a>Chiffrement transparent des données et OLTP en mémoire  
  Le chiffrement transparent des données (TDE) peut être activé sur une base de données contenant des objets de l'OLTP en mémoire. Dans [!INCLUDE[ssSQL15](../../../includes/sssql15-md.md)] et [!INCLUDE[ssSDSfull](../../../includes/sssdsfull-md.md)] , les enregistrements de journal et les données de l’OLTP en mémoire sont chiffrés si le chiffrement transparent des données (TDE) est activé. Dans [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] , les enregistrements de journal de l’OLTP en mémoire sont chiffrés si le chiffrement transparent des données (TDE) est activé, mais les fichiers dans le groupe de fichiers MEMORY_OPTIMIZED_DATA ne sont pas chiffrés.  
   
-## <a name="related-tasks"></a>Tâches associées  
+## <a name="related-tasks"></a>Related Tasks  
  [Déplacer une base de données protégée par le chiffrement transparent des données vers un autre serveur SQL Server](../../../relational-databases/security/encryption/move-a-tde-protected-database-to-another-sql-server.md)  
  [Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM)](../../../relational-databases/security/encryption/enable-tde-on-sql-server-using-ekm.md)  
  [Gestion de clés extensible à l’aide d’Azure Key Vault &#40;SQL Server&#41;](../../../relational-databases/security/encryption/extensible-key-management-using-azure-key-vault-sql-server.md)  
   
-## <a name="related-content"></a>Contenu connexe  
+## <a name="related-content"></a>Contenu associé  
  [Chiffrement transparent des données avec Azure SQL Database](../../../relational-databases/security/encryption/transparent-data-encryption-azure-sql.md)  
  [Prise en main du chiffrement transparent des données (TDE) sur SQL Data Warehouse](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-encryption-tde-tsql/)  
  [Chiffrement SQL Server](../../../relational-databases/security/encryption/sql-server-encryption.md)  
  [SQL Server et clés de chiffrement de base de données &#40;moteur de base de données&#41;](../../../relational-databases/security/encryption/sql-server-and-database-encryption-keys-database-engine.md)  
    
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Centre de sécurité pour le moteur de base de données SQL Server et Azure SQL Database](../../../relational-databases/security/security-center-for-sql-server-database-engine-and-azure-sql-database.md)   
  [FILESTREAM &#40;SQL Server&#41;](../../../relational-databases/blob/filestream-sql-server.md)  
   

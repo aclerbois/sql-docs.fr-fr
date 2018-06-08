@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur un assembly (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur un assembly (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,18 +16,17 @@ helpviewer_keywords:
 - REVOKE statement, assemblies
 - assemblies [CLR integration], permissions
 ms.assetid: f88e9da1-2c0b-4bdd-9ec5-44467707cb46
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fd735936ae0e1ffc03b98e93ff1edf0dd5bf2e08
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 10c136f398599e1a0efa2f45b2f48b1209771928
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-assembly-permissions-transact-sql"></a>REVOKE - Révoquer des autorisations sur un assembly (Transact-SQL)
+# <a name="revoke-assembly-permissions-transact-sql"></a>REVOKE - Autorisations sur un assembly (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Révoque des autorisations sur un assembly.  
@@ -58,7 +55,7 @@ REVOKE [ GRANT OPTION FOR ] permission [ ,...n ]
  Spécifie une autorisation qu'il est possible de révoquer sur un assembly. Voir ci-dessous.  
   
  ON ASSEMBLY **::***assembly_name*  
- Spécifie l'assembly sur lequel l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
+ Spécifie l'assembly sur lequel l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
   
  *database_principal*  
  Spécifie le principal pour lequel l'autorisation est révoquée. Il peut s'agir :  

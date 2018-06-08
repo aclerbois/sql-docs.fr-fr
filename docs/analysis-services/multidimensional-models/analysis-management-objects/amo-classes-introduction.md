@@ -1,32 +1,19 @@
 ---
-title: "Présentation des Classes AMO | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- objects [Analysis Management Objects]
-- classes [AMO]
-ms.assetid: d3c066bc-f812-4d53-9e96-9e306f2fc580
-caps.latest.revision: 
-author: Minewiskan
+title: Présentation des Classes AMO | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b288d323d4de3272afb434f3782c1df133e304af
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d4ce765472a57dbbd2359fe0f2f6d363963c1996
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="amo-classes---introduction"></a>Classes AMO - Introduction
   Objets AMO (Analysis Management) est une bibliothèque de classes conçue pour gérer une instance de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] à partir d’une application cliente. Les classes AMO sont des classes que vous utilisez pour administrer des objets [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] tels que les bases de données, les dimensions, les cubes, les structures et modèles d'exploration de données, les rôles et autorisations, les exceptions, etc.  
@@ -47,8 +34,8 @@ ms.lasthandoff: 02/15/2018
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.AnalysisServices>   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
- [Développement avec Analysis Management Objects &#40; AMO &#41;](../../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)  
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
+ [Développement avec Analysis Management Objects & #40 ; AMO & #41 ;](../../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)  
   
   

@@ -1,16 +1,15 @@
 ---
-title: "Le propriété AcceptStop (classe SqlService) | Documents Microsoft"
-ms.custom: 
+title: Le propriété AcceptStop (classe SqlService) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - AcceptStop Property (SqlService Class)
@@ -19,16 +18,15 @@ apilocation:
 helpviewer_keywords:
 - AcceptStop property
 ms.assetid: bf8ffe79-4f4c-4a2d-82e5-2ae8f5d466c5
-caps.latest.revision: 
+caps.latest.revision: 35
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e7790ad93e9eaf06374b5520a196c924f38d6d84
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: e5d6e5d1100e68788a1a43a9a7e3f003ca205cef
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="acceptstop-property-sqlservice-class"></a>Propriété AcceptStop (classe SqlService)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

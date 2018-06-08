@@ -1,29 +1,19 @@
 ---
-title: "4-6-spécification des relations d’attributs dans une hiérarchie définie par l’utilisateur | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 456c2a47-d395-45f9-9efa-89f3fa2ac621
-caps.latest.revision: 
-author: Minewiskan
+title: 4-6-spécification des relations d’attributs dans une hiérarchie définie par l’utilisateur | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 77b8a5621b71eec40546d79d73ab1672dfff6a7e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 712172f7c74e1c7efa7766ce4c25a9a8fca173f0
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="4-6-specifying-attribute-relationships-in-user-defined-hierarchy"></a>4-6-spécification des relations d’attributs dans une hiérarchie définie par l’utilisateur
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]

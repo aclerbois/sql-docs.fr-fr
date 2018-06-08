@@ -1,16 +1,15 @@
 ---
 title: MSmerge_partition_groups (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSmerge_partition_groups system table
 ms.assetid: 5d56d780-ee40-4afc-9c2a-d1723d86e430
-caps.latest.revision: 
+caps.latest.revision: 13
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fe1c16abfef4293a6d9013b3ef3eea8782a5a0d5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: db3ea31b69a96c72bf9c8442b94e891532393d6a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msmergepartitiongroups-transact-sql"></a>MSmerge_partition_groups (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -44,10 +42,10 @@ ms.lasthandoff: 11/21/2017
 |**publication_number**|**smallint**|Le numéro de publication, qui est stocké dans **sysmergepublications**.|  
 |**maxgen_whenadded**|**bigint**|Génération la plus élevée connue sur le serveur de publication au moment de l'insertion de la ligne dans cette table.|  
 |**using_partition_groups**|**bit**|Indique si la partition appartient à une publication qui utilise des partitions précalculées. Peut être l'une des valeurs suivantes :<br /><br /> **0** = publication n’utilise pas les partitions précalculées.<br /><br /> **1** = la publication utilise des partitions précalculées<br /><br /> Pour plus d’informations, consultez [Optimiser les performances des filtres paramétrés avec des partitions précalculées](../../relational-databases/replication/merge/parameterized-filters-optimize-for-precomputed-partitions.md).|  
-|**HOST_NAME_FN**|**nvarchar (128)**|Valeur fournie lors de l'utilisation du filtre de lignes paramétrable en vue de générer des partitions. Pour plus d'informations, voir [Parameterized Row Filters](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).|  
+|**HOST_NAME_FN**|**nvarchar(128)**|Valeur fournie lors de l'utilisation du filtre de lignes paramétrable en vue de générer des partitions. Pour plus d'informations, consultez [Parameterized Row Filters](../../relational-databases/replication/merge/parameterized-filters-parameterized-row-filters.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

@@ -1,17 +1,14 @@
 ---
 title: Modifier la couleur, la taille et le style de la police | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - size [SQL Server], fonts
 - modifying fonts
@@ -20,19 +17,20 @@ helpviewer_keywords:
 - Query Editor [SQL Server Management Studio], managing fonts
 - text fonts [SQL Server Management Studio]
 ms.assetid: 5c3061db-23c5-4d9f-a6ab-6b53a1a83f88
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 86bd0ea46e11f544b543c952b9630654a67f95de
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ff6b4fe47edf08fe8f46a886f9fba68b65de2142
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="change-font-color-size-and-style"></a>Modifier la couleur, la taille et le style de la police
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez personnaliser l’apparence du texte dans l’Éditeur et dans d’autres emplacements dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous pouvez personnaliser l'apparence du texte dans l'Éditeur et dans d'autres emplacements dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].  
   
 ### <a name="to-change-font-color-size-and-style-in-the-editor"></a>Pour modifier la couleur, la taille et le style de la police dans l'Éditeur  
   

@@ -1,17 +1,16 @@
 ---
 title: Cast (expression SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CAST function
 - cast operator
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - data types [Integration Services], expressions
 - data types [Integration Services], converting
 ms.assetid: d4e915cc-1c7b-4b2e-93b0-13a8b0cb9242
-caps.latest.revision: 
+caps.latest.revision: 61
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 66e8c901a01e3d8fc1fe2744891e17d4056d81a6
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 629c4e06a41ad7f15dd1420ca3e7828512a1cf0e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cast-ssis-expression"></a>Cast (expression SSIS)
   Convertit explicitement une expression d'un type de données vers un autre. L'opérateur de conversion peut également fonctionner comme opérateur de troncation.  

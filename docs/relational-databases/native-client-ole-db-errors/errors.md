@@ -1,15 +1,14 @@
 ---
 title: Erreurs | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-errors
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Native Client OLE DB provider, errors
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - OLE DB error handling, about error handling
 - OLE DB error handling
 ms.assetid: bd0612f4-96ef-4919-b0f9-b5447210fe93
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fd82c09514ebcfe70c3ea295cc8f9c5236756a49
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1c722a870a5ac6d9715f874b3135d4ed0058ac63
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707307"
 ---
 # <a name="errors"></a>Erreurs
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -47,11 +47,11 @@ ms.lasthandoff: 01/25/2018
   
 -   [Codes de retour](../../relational-databases/native-client-ole-db-errors/return-codes.md)  
   
--   [Pour plus d’informations dans les Interfaces d’erreur](../../relational-databases/native-client-ole-db-errors/information-in-error-interfaces.md)  
+-   [Informations dans les interfaces d’erreur](../../relational-databases/native-client-ole-db-errors/information-in-error-interfaces.md)  
   
--   [Détail de l’erreur SQL Server](../../relational-databases/native-client-ole-db-errors/sql-server-error-detail.md)  
+-   [Détails des erreurs SQL Server](../../relational-databases/native-client-ole-db-errors/sql-server-error-detail.md)  
   
--   [Erreur lors de la récupération d’informations](../../relational-databases/native-client-ole-db-errors/retrieving-error-information.md)  
+-   [Extraction des informations sur les erreurs](../../relational-databases/native-client-ole-db-errors/retrieving-error-information.md)  
   
 -   [Résultats des messages SQL Server](../../relational-databases/native-client-ole-db-errors/sql-server-message-results.md)  
   

@@ -1,16 +1,14 @@
 ---
 title: ALTER BROKER PRIORITY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_BROKER_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - ALTER BROKER PRIORITY statement
 - ssbdiagnose
 ms.assetid: 15fda1b2-e4dd-4f9d-935a-2e38926075b2
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 27
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 833c0bed38d02905b3a260f50824825c9859484f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b2d1a1a436c099e2a3f9dc7e29ebffdb79ddeb48
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-broker-priority-transact-sql"></a>ALTER BROKER PRIORITY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -68,7 +65,7 @@ FOR CONVERSATION
  Spécifie le nom d'un contrat à utiliser comme critère pour déterminer si la priorité de conversation s'applique à une conversation. *ContractName* est un identificateur [!INCLUDE[ssDE](../../includes/ssde-md.md)], et vous devez spécifier le nom d’un contrat de base de données active.  
   
  *ContractName*  
- Indique que la priorité de conversation peut être appliquée uniquement aux conversations dans lesquelles l’instruction BEGIN DIALOG qui a démarré la conversation spécifiait ON CONTRACT *ContractName*.  
+ Indique que la priorité de conversation peut être appliquée uniquement aux conversations dans lesquelles l’instruction BEGIN DIALOG qui a démarré la conversation spécifiait ON CONTRACT *ContractName*.  
   
  ANY  
  Indique que la priorité de conversation peut être appliquée à n'importe quelle conversation, quel que soit le contrat qu'elle utilise.  
@@ -110,7 +107,7 @@ FOR CONVERSATION
  Si REMOTE_SERVICE_NAME n'est pas spécifié, la propriété du service distant de la priorité de conversation n'est pas modifiée.  
   
  PRIORITY_LEVEL = { *PriorityValue* | **DEFAULT** }  
- Spécifie le niveau de priorité à attribuer à un point de terminaison qui utilise les contrats et les services spécifiés dans la priorité de conversation. *PriorityValue* doit être un littéral entier compris entre 1 (priorité la plus faible) et 10 (priorité la plus élevée).  
+ Spécifie le niveau de priorité à attribuer à un point de terminaison qui utilise les contrats et les services spécifiés dans la priorité de conversation. *PriorityValue* doit être un littéral entier compris entre 1 (priorité la plus faible) et 10 (priorité la plus élevée).  
   
  Si PRIORITY_LEVEL n'est pas spécifié, la propriété du niveau de priorité de la conversation n'est pas modifiée.  
   

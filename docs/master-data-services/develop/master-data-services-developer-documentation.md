@@ -1,31 +1,32 @@
 ---
-title: "Documentation du développeur Master Data Services | Microsoft Docs"
-ms.custom: 
+title: Documentation du développeur Master Data Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: develop
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
 ms.assetid: 067b1f69-84eb-4a13-b220-120cd63704b4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 21898c90044ec62c1a7d55fbcfa0cf03d46ba7ce
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 30eec29a14454c2e95f2fd21a08d87ac9dce1782
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="master-data-services-developer-documentation"></a>Documentation du développeur Master Data Services
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Recherchez des informations sur l'écriture du code pour personnaliser la façon dont vous et les utilisateurs interagissez avec [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)]. Apprenez comment :  
   
 -   Ecrire un programme qui accède au service Web [!INCLUDE[ssMDSmdm](../../includes/ssmdsmdm-md.md)]. Le service Web [!INCLUDE[ssMDSmdm](../../includes/ssmdsmdm-md.md)] est un service Windows Communication Foundation (WCF) utilisé par les développeurs pour contrôler les fonctionnalités de [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)] via du code.  

@@ -1,15 +1,14 @@
 ---
-title: "Configuration système requise pour SQL Server Native Client | Documents Microsoft"
-ms.custom: 
+title: Configuration système requise pour SQL Server Native Client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - system requirements [SQL Server Native Client]
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - SQL Server Native Client, system requirements
 - SQLNCLI, system requirements
 ms.assetid: 1c8e2f8a-a440-44da-8e3a-af632d34c52c
-caps.latest.revision: 
+caps.latest.revision: 60
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a996923fd4f5c181e2f72869b482b42a58eae094
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3480390a74154abb3414070ac1afe6d77ababbbb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-requirements-for-sql-server-native-client"></a>Configuration requise pour SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -76,11 +75,11 @@ ms.lasthandoff: 01/25/2018
 |Type de données|SQL Server Native Client<br /><br /> SQL Server 2005|SQL Server Native Client 11.0<br /><br /> [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|Windows Data Access Components, MDAC et<br /><br /> applications OLE DB SQL Server Native Client avec DataTypeCompatibility=80|  
 |---------------|--------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|  
 |CLR UDT (\<= 8 Ko)|udt|Udt|Varbinary|  
-|varbinary(max)|varbinary|varbinary|Image|  
+|varbinary(max)|varbinary|varbinary|image|  
 |varchar(max)|varchar|varchar|Texte|  
 |nvarchar(max)|nvarchar|nvarchar|Ntext|  
 |xml|xml|xml|Ntext|  
-|CLR UDT (>= 8 Ko)|udt|varbinary|Image|  
+|CLR UDT (>= 8 Ko)|udt|varbinary|image|  
 |date|date|varchar|Varchar|  
 |datetime2|datetime2|varchar|Varchar|  
 |datetimeoffset|datetimeoffset|varchar|Varchar|  

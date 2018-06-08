@@ -9,4 +9,5 @@
 # [Changer le compte pour la journalisation Scale Out](change-logdb-account.md)
 # [Gérer les certificats pour Scale Out](deal-with-certificates-in-ssis-scale-out.md)
 # [Haute disponibilité pour Scale Out](scale-out-support-for-high-availability.md)
+# [Haute disponibilité au moyen d’une instance de cluster de basculement SQL Server](scale-out-failover-cluster-instance.md)
 # [Résoudre les problèmes de Scale Out](troubleshooting-scale-out.md)

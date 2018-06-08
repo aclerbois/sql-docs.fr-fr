@@ -1,34 +1,33 @@
 ---
 title: SQL Server, objet Buffer Manager | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:Memory Manager
 - Memory Manager object
 ms.assetid: dbf49000-eeb0-4e9c-a361-5092363920dc
-caps.latest.revision: 
+caps.latest.revision: 29
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3e385362666a573b97579a3f0e99924152b1bcdd
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 89b69f14e131453519bbaae77f16d629444eb169
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-memory-manager-object"></a>Objet SQLServer:Memory Manager
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet **Gestionnaire de mémoire** de Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs permettant de surveiller l’utilisation globale de la mémoire du serveur. La surveillance globale de l'utilisation de la mémoire du serveur afin de mesurer l'activité de l'utilisateur et son exploitation des ressources peut être utile pour détecter les goulots d'étranglement des performances. La surveillance de la mémoire utilisée par une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vous aide à déterminer :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet **Gestionnaire de mémoire** de Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs permettant de surveiller l'utilisation globale de la mémoire du serveur. La surveillance globale de l'utilisation de la mémoire du serveur afin de mesurer l'activité de l'utilisateur et son exploitation des ressources peut être utile pour détecter les goulots d'étranglement des performances. La surveillance de la mémoire utilisée par une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vous aide à déterminer :  
   
 -   si des goulots d'étranglement existent en raison d'une quantité de mémoire physique disponible inadéquate pour le stockage de données fréquemment accédées dans le cache ; Si tel est le cas, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit extraire les données du disque.  
   
@@ -54,7 +53,7 @@ ms.lasthandoff: 01/18/2018
 |**Demandes de mémoire satisfaites**|Spécifie le nombre total de processus qui ont acquis avec succès une allocation de mémoire de l'espace de travail.|  
 |**Demandes de mémoire en attente**|Spécifie le nombre total de processus en attente d'une allocation de mémoire de l'espace de travail.|  
 |**Mémoire de l'optimiseur (Ko)**|Spécifie la quantité totale de mémoire dynamique utilisée par le serveur pour l'optimisation des requêtes.|  
-|**Mémoire réservée du serveur (Ko)**|Indique la quantité de mémoire réservée par le serveur pour un usage futur. Ce compteur affiche la quantité actuellement inutilisée de **Mémoire réservée de l’espace de travail (Ko)**octroyée initialement.|  
+|**Mémoire réservée du serveur (Ko)**|Indique la quantité de mémoire réservée par le serveur pour un usage futur. Ce compteur affiche la quantité actuellement inutilisée de **Mémoire réservée de l’espace de travail (Ko)** octroyée initialement.|  
 |**Mémoire du cache SQL (Ko)**|Spécifie la quantité totale de mémoire dynamique utilisée par le serveur pour le cache SQL dynamique.|  
 |**Mémoire détournée du serveur (Ko)**|Spécifie la quantité de mémoire utilisée par le serveur à d'autres fins que les pages de bases de données.|  
 |**Mémoire du serveur cible (Ko)**|Indique la quantité idéale de mémoire que le serveur peut consommer.|  

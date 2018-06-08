@@ -1,30 +1,28 @@
 ---
-title: "Paramètres (GUI) (SybaseToSQL) du projet | Documents Microsoft"
-ms.custom: 
+title: Paramètres (GUI) (SybaseToSQL) du projet | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: cbd6ddc9-8abd-4fa9-bffd-631e54894ce8
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 476fd7243dbba4e17fcc77ece24b21a59c10f5d3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b5e657af12ee7bbb27c3b67994d7f2a199f4d67d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-gui-sybasetosql"></a>Paramètres du projet (GUI) (SybaseToSQL)
 Les paramètres de projet d’interface graphique utilisateur vous permettent de configurer l’affichage des données sur le **données** onglet et s’il faut afficher le rapport d’évaluation après la conversion ou non.  

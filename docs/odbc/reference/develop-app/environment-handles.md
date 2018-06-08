@@ -1,30 +1,27 @@
 ---
-title: "Handles d’environnement | Documents Microsoft"
-ms.custom: 
+title: Handles d’environnement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - environment handles [ODBC]
 - handles [ODBC], environment
 ms.assetid: 917f1b0c-272b-4e37-a1f5-87cd24b9fa21
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fa388a7724fdda836a9a82b3f00476ed0a4288bf
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a84e7d5939eb4d4c57b7f59db6d719627cf4be3b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="environment-handles"></a>Handles d’environnement
 Un *environnement* est un contexte global d’accès aux données ; associé à un environnement est toute information globale par nature, telles que :  

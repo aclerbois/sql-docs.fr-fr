@@ -1,17 +1,15 @@
 ---
 title: Champs de la Collection (ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Fields
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - Fields collection [ADO]
 ms.assetid: 7c371474-b88f-4730-afa5-44163a0488d5
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 167af555c9983598354faa1de4bc4603a9bac006
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4eebfb3b3e401585829446872545063448ec87d6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fields-collection-ado"></a>Collection de champs (ADO)
 Contient tous les [champ](../../../ado/reference/ado-api/field-object.md) les objets d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) ou [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) objet.  

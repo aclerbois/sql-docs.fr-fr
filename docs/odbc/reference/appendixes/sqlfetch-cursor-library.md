@@ -1,28 +1,26 @@
 ---
-title: "SQLFetch (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLFetch (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLFetch function [ODBC], Cursor Library
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLFetch function [ODBC], Cursor Library
 ms.assetid: 35a0d493-778b-4fb1-84ee-a13540e2fe0e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 05bfa99a97afa812928e91b7f0a77ced1eb4d1eb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 867a541b5135b0577e4e23c83ad18c603227270d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlfetch-cursor-library"></a>SQLFetch (bibliothèque de curseurs)
 > [!IMPORTANT]  

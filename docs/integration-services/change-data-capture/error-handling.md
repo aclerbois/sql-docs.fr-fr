@@ -1,27 +1,26 @@
 ---
 title: Gestion des erreurs | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ff79e19d-afca-42a4-81b0-62d759380d11
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.openlocfilehash: 93a8df11a73ebb9abc21e94147c5ba2fbc0abd87
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bd409daab0e317cff3ad474bda2963115caa1c60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="error-handling"></a>Gestion des erreurs
   Une instance Oracle CDC exploite les modifications d'une base de données source Oracle (un cluster Oracle RAC est considéré comme une seule base de données) et écrit les modifications validées dans les tables de modifications dans une base de données CDC de l'instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] cible.  

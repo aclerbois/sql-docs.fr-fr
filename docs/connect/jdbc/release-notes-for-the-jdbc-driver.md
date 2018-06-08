@@ -1,28 +1,24 @@
 ---
 title: Notes de publication pour le pilote JDBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 074f211e-984a-4b76-bb15-ee36f5946f12
-caps.latest.revision: 
+caps.latest.revision: 206
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 49710c98aad4af9373dd35ebf50960f32d999c10
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 1ec71defcba0a6f122d3c3ff9a098e163f07079c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="release-notes-for-the-jdbc-driver"></a>Notes de publication pour le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

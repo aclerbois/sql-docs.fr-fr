@@ -1,29 +1,28 @@
 ---
 title: Fonction de SQLCompleteAsync | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: SQLCompleteAsync
-helpviewer_keywords: SQLCompleteAsync function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- SQLCompleteAsync
+helpviewer_keywords:
+- SQLCompleteAsync function [ODBC]
 ms.assetid: 1b97c46a-d2e5-4540-8239-9d975e5321c6
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 91a6449e07ff83fd6bb7478bfc52cb077a76c955
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0d3b851fd61209df8a721264e50e5cf1f298da87
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcompleteasync-function"></a>SQLCompleteAsync (fonction)
 **Mise en conformité**  

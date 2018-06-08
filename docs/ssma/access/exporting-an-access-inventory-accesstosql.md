@@ -1,16 +1,15 @@
 ---
-title: "Exportation d’un accès d’inventaire (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Exportation d’un accès d’inventaire (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - inventories of Access databases
 - querying exported metadata
 ms.assetid: 7e1941fb-3d14-4265-aff6-c77a4026d0ed
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7f1ca36e752e0df28ca4b1fb3dcc7dff6f8895cf
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7d0877666e13f490463e77ec30bf7792367747d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="exporting-an-access-inventory-accesstosql"></a>Exportation d’un accès d’inventaire (AccessToSQL)
 Si vous disposez de plusieurs bases de données Access et que vous n’êtes pas sûr pour faire migrer vers ceux qui [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], vous pouvez exporter un inventaire de toutes les bases de données Access dans un projet. Vous pouvez ensuite consulter et interroger les métadonnées de l’inventaire pour déterminer les bases de données et les objets au sein de ces bases de données à migrer. Cet inventaire vous permet de rapidement trouver des réponses aux questions, telles que les éléments suivants :  
@@ -124,7 +122,7 @@ Pour plus d’informations sur l’ajout de bases de données à des projets, co
   
 5.  Dans le **authentification** menu déroulant, sélectionnez le type d’authentification à utiliser pour la connexion. Pour utiliser le compte Windows actuel, sélectionnez **l’authentification Windows**. Pour utiliser un [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] connexion, sélectionnez **l’authentification SQL Server**, puis indiquez un nom d’utilisateur et un mot de passe.  
   
-Pour plus d’informations sur la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], consultez [la connexion à SQL Server &#40; AccessToSQL &#41; ](../../ssma/access/connecting-to-sql-server-accesstosql.md).  
+Pour plus d’informations sur la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], consultez [connexion à SQL Server &#40;AccessToSQL&#41;](../../ssma/access/connecting-to-sql-server-accesstosql.md).  
   
 **Pour exporter les informations d’inventaire**  
   

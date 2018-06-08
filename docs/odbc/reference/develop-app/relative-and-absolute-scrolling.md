@@ -1,35 +1,32 @@
 ---
-title: "Défilement relative et absolue | Documents Microsoft"
-ms.custom: 
+title: Défilement relative et absolue | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - absolute scrolling [ODBC]
 - relative scrolling [ODBC]
 - scrollable cursors [ODBC]
 - cursors [ODBC], scrollable
 ms.assetid: 3d0ff48d-fef5-4c01-bb1d-a583e6269b66
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c7ade62e1c7760b7542b1e4dd82668c11f2947c8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 93f92b1cd5369ade8102b2505ef37f1da29dde4f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="relative-and-absolute-scrolling"></a>Absolues et le défilement
-La plupart des options de défilement dans **SQLFetchScroll** positionnez le curseur par rapport à la position actuelle ou à une position absolue. **SQLFetchScroll** prend en charge l’extraction de la suivante, précédente, première et dernière ensembles de lignes, comme l’extraction de bien comme étant relative (extraire l’ensemble de lignes  *n*  lignes à partir du début de l’ensemble de lignes en cours) et l’extraction absolue (extraire l’ensemble de lignes en commençant à la ligne  *n* ). Si  *n*  est négatif dans une extraction absolue, les lignes sont comptées à partir de la fin du jeu de résultats. Par conséquent, une extraction absolue de ligne -1 signifie que l’extraction l’ensemble de lignes qui commence par la dernière ligne du jeu de résultats.  
+La plupart des options de défilement dans **SQLFetchScroll** positionnez le curseur par rapport à la position actuelle ou à une position absolue. **SQLFetchScroll** prend en charge l’extraction de la suivante, précédente, première et dernière ensembles de lignes, comme l’extraction de bien comme étant relative (extraire l’ensemble de lignes *n* lignes à partir du début de l’ensemble de lignes en cours) et absolu l’extraction (fetch le démarrage de l’ensemble de lignes à la ligne *n*). Si *n* est négatif dans une extraction absolue, les lignes sont comptées à partir de la fin du jeu de résultats. Par conséquent, une extraction absolue de ligne -1 signifie que l’extraction l’ensemble de lignes qui commence par la dernière ligne du jeu de résultats.  
   
  Les curseurs dynamiques détectent les lignes insérées et supprimées du jeu de résultats, il n’existe aucun moyen pour les curseurs dynamiques récupérer la ligne à un nombre autre que la lecture à partir du début du jeu de résultats, qui est susceptible d’être lente. En outre, l’extraction absolue n’est pas très utile dans les curseurs dynamiques, car les numéros de ligne modifié lorsque des lignes sont insérées et supprimées ; Par conséquent, l’extraction de successivement le même nombre de lignes peut produire une des lignes différentes.  
   

@@ -1,34 +1,30 @@
 ---
 title: Utiliser la session system_health | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - extended events [SQL Server], system health session
 - extended events [SQL Server], system_health session
 - system_health session [SQL Server extended events]
 - system health session [SQL Server extended events]
 ms.assetid: 1e1fad43-d747-4775-ac0d-c50648e56d78
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ebc3bfc6f6094036189db1c8fd697997b0ad469
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 45966acabfd6681d6f5a5a464c2ce9cf0e0fcffd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-systemhealth-session"></a>Utiliser la session system_health
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

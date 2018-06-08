@@ -1,28 +1,19 @@
 ---
-title: "Leçon 6 : Créer des colonnes calculées | Documents Microsoft"
-ms.custom: 
-ms.date: 03/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: d126766a-5699-4e9f-8213-8c7eea0fc14e
-caps.latest.revision: "26"
-author: Minewiskan
+title: 'Leçon 6 : Créer des colonnes calculées | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 58d361452f134976b7f90ce983b3bc5b7ba28d46
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c3b86f84567e85fb604883e7cd7f8de83feb252e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-5-create-calculated-columns"></a>Leçon 5 : Créer des colonnes calculées
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -33,7 +24,7 @@ Vous allez créer cinq nouvelles colonnes calculées dans trois tables différen
   
 Durée estimée pour effectuer cette leçon : **15 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables  
 Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit être suivi dans l'ordre. Avant d’effectuer les tâches de cette leçon, vous devez avoir terminé la leçon précédente : [leçon 4 : créer des relations](../analysis-services/lesson-4-create-relationships.md). 
   
 ## <a name="create-calculated-columns"></a>Créer des colonnes calculées  

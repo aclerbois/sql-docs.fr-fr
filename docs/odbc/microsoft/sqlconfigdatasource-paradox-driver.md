@@ -1,30 +1,27 @@
 ---
 title: SQLConfigDataSource (pilote Paradox) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLConfigDataSource function [ODBC], Paradox Driver
 - Paradox driver [ODBC], SQLConfigDataSource
 ms.assetid: 59e84c4e-debe-49d7-b97b-84c736b0c793
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d1c567bd1490c41822b3df89f04c0d907b0f1a92
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b308748a351617808ca74863c681e562a9df74a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlconfigdatasource-paradox-driver"></a>SQLConfigDataSource (pilote Paradox)
 > [!NOTE]  
@@ -32,7 +29,7 @@ ms.lasthandoff: 12/21/2017
   
  Le **SQLConfigDataSource** fonction qui est utilisée pour ajouter, modifier ou supprimer une source de données utilise dynamiquement les mots clés suivants.  
   
-|Mot clé|Description|  
+|Mot clé| Description|  
 |-------------|-----------------|  
 |COLLATINGSEQUENCE|La séquence dans laquelle les champs sont triés.<br /><br /> Lorsque le pilote Paradox est utilisé, la séquence peut être ASCII (par défaut), International, suédois-finnois ou Norvégien-Danois.<br /><br /> L’option est définie en tant que même **séquence de classement** dans la boîte de dialogue d’installation.|  
 |DBQ|Le nom du fichier de base de données.<br /><br /> L’option est définie en tant que même **base de données** dans la boîte de dialogue d’installation.|  

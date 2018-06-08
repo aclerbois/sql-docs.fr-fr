@@ -1,32 +1,30 @@
 ---
-title: "Propriétés du serveur de distribution, Général | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur de distribution, Général | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.configdistwizard.distproperties.general.f1
 helpviewer_keywords:
 - Distributor Properties dialog box
 ms.assetid: ab4120ec-e524-4c0c-8b48-f2f40adb1a3b
-caps.latest.revision: 
+caps.latest.revision: 22
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c0fbc596c79b54a84f363ea57bf5a49442001bfa
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: e06ffa4473bf9f92509252b851e3e93a6b16beae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="distributor-properties-general"></a>Propriétés du serveur de distribution, Général
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

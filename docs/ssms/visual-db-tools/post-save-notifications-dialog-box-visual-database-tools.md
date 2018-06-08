@@ -1,34 +1,33 @@
 ---
-title: "Notifications post-enregistrement, boîte de dialogue (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Notifications post-enregistrement, boîte de dialogue (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vdtsql.chm:65546
 - vdt.dlgbox.saveincomplete
 - vdtsql.chm:98831
 ms.assetid: 195dda61-308a-4c94-8f57-1fd01ab1e521
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5669c143e5e8c0f8da376b59d8e17a77a42a54dd
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: e08b0ff2ec2f69b7f2796b6bb3956c82ccda7373
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="post-save-notifications-dialog-box-visual-database-tools"></a>Boîte de dialogue Notifications post-enregistrement (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette boîte de dialogue apparaît en cas d’erreurs lors d’une tentative d’enregistrement des changements apportés à une table. Cette boîte de dialogue énumère les objets qui ont été enregistrés dans la base de données avec succès, les objets qui n'ont pas été enregistrés et les erreurs rencontrées.  
+# <a name="post-save-notifications-dialog-box-visual-database-tools"></a>Notifications post-enregistrement, boîte de dialogue (Visual Database Tools)
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Cette boîte de dialogue apparaît en cas d'erreurs lors d'une tentative d'enregistrement des modifications apportées à une table. Cette boîte de dialogue énumère les objets qui ont été enregistrés dans la base de données avec succès, les objets qui n'ont pas été enregistrés et les erreurs rencontrées.  
   
 ## <a name="options"></a>Options  
 **Enregistrer comme fichier texte**  

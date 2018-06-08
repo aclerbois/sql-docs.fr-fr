@@ -1,31 +1,23 @@
 ---
-title: "Partitions dans les modèles multidimensionnels | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 26e01dc7-fa49-4b1f-99eb-7799d1b4dcd2
-caps.latest.revision: 
-author: Minewiskan
+title: Partitions dans les modèles multidimensionnels | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6984e77d1969db95ac8b8659ba841085ce7ef7c8
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8efdd2dcf936270a93ffd9cac694fd2aaccbe6e1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="partitions-in-multidimensional-models"></a>Partitions dans les modèles multidimensionnels
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une *partition* permet le stockage physique des données de faits chargées dans un groupe de mesures. Une partition unique est créée automatiquement pour chaque groupe de mesures, mais il est courant de créer des partitions supplémentaires qui segmentent encore davantage les données, ce qui permet un traitement plus efficace et des performances de requête plus rapides.  
+  Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une *partition* permet le stockage physique des données de faits chargées dans un groupe de mesures. Une partition unique est créée automatiquement pour chaque groupe de mesures, mais il est courant de créer des partitions supplémentaires qui segmentent encore davantage les données, ce qui permet un traitement plus efficace et des performances de requête plus rapides.  
   
  Le traitement est plus efficace car les partitions peuvent être traitées indépendamment et en parallèle, sur un ou plusieurs serveurs. Les requêtes s'exécutent plus rapidement car chaque partition peut être configurée de manière à ce que les modes de stockage et les optimisations d'agrégation génèrent des temps de réponse plus courts. Par exemple, choisir le stockage MOLAP pour les partitions qui contiennent des données plus récentes s'avère généralement plus rapide que le stockage ROLAP. De même, si vous partitionnez par date, les partitions qui contiennent les données plus récentes peuvent bénéficier de davantage d'optimisations que les partitions qui contiennent des données plus anciennes auxquelles l'accès est moins fréquent. Notez que varier le stockage et la conception d'agrégation par partition aura un impact négatif sur les futures opérations de fusion. Veillez à déterminer si la fusion est un élément essentiel de votre stratégie de la gestion des partitions avant d'optimiser des partitions individuelles.  
   
@@ -53,11 +45,11 @@ Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], une *partiti
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Créer et gérer une Partition locale &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/create-and-manage-a-local-partition-analysis-services.md)|Contient des informations sur la façon de partitionner des données à l'aide de filtres ou de tables de faits différentes sans duplication des données.|  
-|[Définir le stockage des partitions &#40; Analysis Services - multidimensionnel &#41;](../../analysis-services/multidimensional-models/set-partition-storage-analysis-services-multidimensional.md)|Explique comment configurer le stockage de partitions.|  
-|[Modifier ou supprimer des Partitions &#40; Analysis Services - multidimensionnel &#41;](../../analysis-services/multidimensional-models/edit-or-delete-partitions-analyisis-services-multidimensional.md)|Décrit comment afficher et modifier des partitions.|  
-|[Fusionner des Partitions dans Analysis Services &#40; SSAS - multidimensionnel &#41;](../../analysis-services/multidimensional-models/merge-partitions-in-analysis-services-ssas-multidimensional.md)|Contient des informations sur la façon de fusionner les partitions qui ont des tables de faits ou des segments de données différents sans duplication des données.|  
+|[Créer et gérer une Partition locale & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/create-and-manage-a-local-partition-analysis-services.md)|Contient des informations sur la façon de partitionner des données à l'aide de filtres ou de tables de faits différentes sans duplication des données.|  
+|[Définir le stockage des partitions & #40 ; Analysis Services - multidimensionnel & #41 ;](../../analysis-services/multidimensional-models/set-partition-storage-analysis-services-multidimensional.md)|Explique comment configurer le stockage de partitions.|  
+|[Modifier ou supprimer des Partitions & #40 ; Analysis Services - multidimensionnel & #41 ;](../../analysis-services/multidimensional-models/edit-or-delete-partitions-analyisis-services-multidimensional.md)|Décrit comment afficher et modifier des partitions.|  
+|[Fusionner des Partitions dans Analysis Services & #40 ; SSAS - multidimensionnel & #41 ;](../../analysis-services/multidimensional-models/merge-partitions-in-analysis-services-ssas-multidimensional.md)|Contient des informations sur la façon de fusionner les partitions qui ont des tables de faits ou des segments de données différents sans duplication des données.|  
 |[Définir l’écriture différée de Partition](../../analysis-services/multidimensional-models/set-partition-writeback.md)|Explique comment activer l'écriture sur une partition.|  
-|[Créer et gérer une Partition distante &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/create-and-manage-a-remote-partition-analysis-services.md)|Décrit comment créer et gérer une partition distante.|  
+|[Créer et gérer une Partition distante & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/create-and-manage-a-remote-partition-analysis-services.md)|Décrit comment créer et gérer une partition distante.|  
   
   

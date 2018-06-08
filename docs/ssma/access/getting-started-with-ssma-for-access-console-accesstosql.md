@@ -1,30 +1,28 @@
 ---
 title: Prise en main de SSMA pour Access Console (AccessToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 8585ec16-7e0a-483a-b250-adab9b9232a3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bc7b11e4317eb6f982a31bdd1fee17b9c54cbe04
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 60c9a1775c1d5acf9f3c4b26d061d991941d07d6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-ssma-for-access-console-accesstosql"></a>Prise en main de SSMA pour Access Console (AccessToSQL)
 Cette section décrit la procédure pour lancer et commencer à l’application de console accès. Dans la liste, qu’elle contient, sont les conventions utilisées dans une fenêtre de sortie de Console de SSMA classique.  
@@ -41,13 +39,13 @@ Utilisez les étapes suivantes pour démarrer l’application de console SSMA :
 ## <a name="procedure-for-using-the-ssma-console"></a>Procédure d’utilisation de la Console SSMA  
 Une fois que la console est lancée correctement sur votre système Windows, vous pouvez utiliser les étapes suivantes pour travailler dessus :  
   
-1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40; AccessToSQL &#41; ](../../ssma/access/creating-script-files-accesstosql.md).  
+1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40;AccessToSQL&#41;](../../ssma/access/creating-script-files-accesstosql.md).  
   
-2.  [Création de fichiers de la valeur de la Variable &#40; AccessToSQL &#41;](../../ssma/access/creating-variable-value-files-accesstosql.md)  
+2.  [Création de fichiers de la valeur de la Variable &#40;AccessToSQL&#41;](../../ssma/access/creating-variable-value-files-accesstosql.md)  
   
-3.  [Créer les fichiers de connexion de serveur &#40; AccessToSQL &#41;](../../ssma/access/creating-the-server-connection-files-accesstosql.md)  
+3.  [Création des fichiers de connexion serveur &#40;AccessToSQL&#41;](../../ssma/access/creating-the-server-connection-files-accesstosql.md)  
   
-4.  [L’exécution de la Console SSMA &#40; AccessToSQL &#41; ](../../ssma/access/executing-the-ssma-console-accesstosql.md) selon les besoins de votre projet  
+4.  [L’exécution de la Console SSMA &#40;AccessToSQL&#41; ](../../ssma/access/executing-the-ssma-console-accesstosql.md) selon les besoins de votre projet  
   
 Fonctionnalités supplémentaires :  
   
@@ -62,7 +60,7 @@ Lors de l’exécution des commandes de script SSMA et des options, le programme
   
 Interprétation de couleur de la sortie de console dans le tableau suivant :  
   
-|Couleur|Description|  
+|Color| Description|  
 |---------|---------------|  
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Cachet de date et heure, le message à l’utilisateur|  

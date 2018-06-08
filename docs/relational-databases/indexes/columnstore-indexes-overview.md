@@ -1,17 +1,14 @@
 ---
-title: "Index columnstore - Présentation | Microsoft Docs"
-ms.custom: 
-ms.date: 03/07/2016
-ms.prod: sql-non-specified
+title: Index columnstore - Présentation | Microsoft Docs
+ms.custom: ''
+ms.date: 04/03/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - indexes creation, columnstore
 - indexes [SQL Server], columnstore
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - columnstore index, described
 - xVelocity, columnstore indexes
 ms.assetid: f98af4a5-4523-43b1-be8d-1b03c3217839
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 80
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a7a01a3b1aab2ffa1850434928f4de3bce39bcd4
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1987c099ba787f36dac77eb08a8e88b1e7c71869
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnstore-indexes---overview"></a>Index columnstore - Présentation
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -74,12 +71,16 @@ Les *index columnstore* sont la norme pour le stockage et l’interrogation des 
   
  Pour réduire la fragmentation des segments de colonne et améliorer les performances, l’index columnstore peut stocker des données temporaires dans un index cluster, appelé deltastore, plus une liste btree d’ID pour les lignes supprimées. Les opérations deltastore sont effectuées en coulisse. Pour retourner des résultats de requête corrects, l'index columnstore cluster associe les résultats de columnstore et de deltastore.  
   
- deltastore  
- Utilisé avec les index columnstore cluster uniquement, un *deltastore* est un index cluster qui améliore la compression columnstore et les performances en stockant les lignes jusqu’à ce que le nombre de lignes atteigne un seuil et que celles-ci soient déplacées dans le columnstore.  
+ Rowgroup delta  
+ Utilisé uniquement avec des index de stockage de colonnes, un *rowgroup delta* est un index cluster qui améliore la compression columnstore et les performances en stockant les lignes jusqu’à ce que le nombre de lignes atteigne un seuil et que celles-ci soient déplacées dans le columnstore.  
+
+ Lorsqu’un rowgroup delta atteint le nombre maximal de lignes, il est fermé. Un processus de déplacement de tuple vérifie les groupes de lignes fermés. Lorsqu'il trouve un rowgroup fermé, il le compresse et le stocke dans le columnstore.  
   
- Lors d'un chargement en masse important, la plupart des lignes sont directement placées dans le columnstore sans passer par le deltastore. Certaines lignes à la fin du chargement en masse peuvent être en trop petit nombre pour atteindre la taille minimale d'un rowgroup, qui est de 102 400 lignes. Dans ce cas, les lignes finales sont placées dans le deltastore plutôt que dans le columnstore. Pour les petits chargements en masse de taille inférieure à 102 400 lignes, toutes les lignes vont directement au deltastore.  
+deltastore Un index columnstore peut avoir plusieurs rowgroups delta.  Tous les rowgroups delta sont appelés collectivement le *deltastore*.   
+
+Lors d'un chargement en masse important, la plupart des lignes sont directement placées dans le columnstore sans passer par le deltastore. Certaines lignes à la fin du chargement en masse peuvent être en trop petit nombre pour atteindre la taille minimale d'un rowgroup, qui est de 102 400 lignes. Dans ce cas, les lignes finales sont placées dans le deltastore plutôt que dans le columnstore. Pour les petits chargements en masse de taille inférieure à 102 400 lignes, toutes les lignes vont directement au deltastore.  
   
- Lorsque le deltastore atteint le nombre maximal de lignes, il est fermé. Un processus de déplacement de tuple vérifie les groupes de lignes fermés. Lorsqu'il trouve un rowgroup fermé, il le compresse et le stocke dans le columnstore.  
+
   
  index columnstore non cluster  
  Un *index columnstore non cluster* et un index columnstore cluster fonctionnent de la même manière. La différence réside dans le fait qu’un index non cluster est un index secondaire créé sur une table rowstore tandis qu’un index cluster columnstore est le stockage principal pour la table entière.  

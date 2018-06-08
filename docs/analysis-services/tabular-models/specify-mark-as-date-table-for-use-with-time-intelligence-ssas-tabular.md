@@ -1,30 +1,23 @@
 ---
-title: "Spécifier la marque comme Table de dates | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 30841d1f-0c3b-4575-8f4a-27a1492e248c
-caps.latest.revision: "5"
-author: Minewiskan
+title: Spécifier la marque comme Table de dates | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2520764fdd298dc63d6af5b2d44fd41bd67160ce
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: f6a4ad929c866658ce241f33ddd2a5326dc78e19
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="specify-mark-as-date-table-for-use-with-time-intelligence"></a>Spécifier la marque comme Table de dates à utiliser avec time intelligence
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Pour pouvoir utiliser les fonctions time intelligence dans les formules DAX, vous devez spécifier une table de dates et une colonne d’identificateur unique (datetime) du type de données Date. Une fois qu'une colonne dans la table de dates est spécifiée comme identificateur unique, vous pouvez créer des relations entre les colonnes de cette table et de toutes les tables de faits.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Pour pouvoir utiliser les fonctions time intelligence dans les formules DAX, vous devez spécifier une table de dates et une colonne d’identificateur unique (datetime) du type de données Date. Une fois qu'une colonne dans la table de dates est spécifiée comme identificateur unique, vous pouvez créer des relations entre les colonnes de cette table et de toutes les tables de faits.  
   
  Lorsque vous utilisez les fonctions time intelligence, les règles suivantes s’appliquent :  
   
@@ -44,7 +37,7 @@ ms.lasthandoff: 01/08/2018
   
 2.  Cliquez sur le menu **Table** , cliquez sur **Date**, puis cliquez sur **Marquer en tant que table de dates**  
   
-3.  Dans la boîte de dialogue **Marquer en tant que table de dates** , dans la zone de liste **Date** , sélectionnez une colonne à utiliser comme identificateur unique. Cette colonne doit contenir des valeurs uniques et doit avoir le type de données Date. Exemple :  
+3.  Dans la boîte de dialogue **Marquer en tant que table de dates** , dans la zone de liste **Date** , sélectionnez une colonne à utiliser comme identificateur unique. Cette colonne doit contenir des valeurs uniques et doit avoir le type de données Date. Par exemple :  
   
     |Date|  
     |----------|  

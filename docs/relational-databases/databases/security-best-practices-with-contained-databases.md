@@ -1,30 +1,28 @@
 ---
-title: "Bonnes pratiques de sécurité pour les bases de données à relation contenant-contenu | Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques de sécurité pour les bases de données à relation contenant-contenu | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - contained database, threats
 ms.assetid: 026ca5fc-95da-46b6-b882-fa20f765b51d
-caps.latest.revision: 
+caps.latest.revision: 14
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c18410a29b500b3fd4fadfac987b1e94503ec7bb
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 360fd0262fdfad643e86fa7c8fd9eb075300c682
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-best-practices-with-contained-databases"></a>Bonnes pratiques de sécurité recommandées avec les bases de données à relation contenant-contenu
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

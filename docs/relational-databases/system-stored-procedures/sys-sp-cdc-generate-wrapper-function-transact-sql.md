@@ -1,16 +1,14 @@
 ---
 title: Sys.sp_cdc_generate_wrapper_function (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_cdc_generate_wrapper_function_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sys.sp_cdc_generate_wrapper_function
 - sp_cdc_generate_wrapper_function
 ms.assetid: 85bc086d-8a4e-4949-a23b-bf53044b925c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b32fc0848943814052a72e4b3f91eb4f5556a4bc
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 0f8f81b97ad6b1c1bf09ee33bd460aab01872327
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysspcdcgeneratewrapperfunction-transact-sql"></a>sys.sp_cdc_generate_wrapper_function (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -76,7 +73,7 @@ sys.sp_cdc_generate_wrapper_function
   
 |Nom de colonne|Type de colonne| Description|  
 |-----------------|-----------------|-----------------|  
-|**nom de la fonction**|**nvarchar(145)**|Nom de la fonction générée.|  
+|**function_name**|**nvarchar(145)**|Nom de la fonction générée.|  
 |**create_script**|**nvarchar(max)**|Script qui crée la fonction wrapper de l'instance de capture.|  
   
 ## <a name="remarks"></a>Notes  
@@ -112,6 +109,6 @@ DEALLOCATE #hfunctions;
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées de capture des données modifiées &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/change-data-capture-stored-procedures-transact-sql.md)   
- [Capture de données modifiées &#40; SSIS &#41;](../../integration-services/change-data-capture/change-data-capture-ssis.md)  
+ [Capture de données modifiées &#40;SSIS&#41;](../../integration-services/change-data-capture/change-data-capture-ssis.md)  
   
   

@@ -1,17 +1,16 @@
 ---
-title: "Déploiement de packages hérités (SSIS) | Microsoft Docs"
-ms.custom: 
+title: Déploiement de packages hérités (SSIS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: packages
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.packageconfigurationorganizer.f1
 - sql13.dts.configwizard.finishdtsconfiguration.f1
@@ -34,16 +33,15 @@ helpviewer_keywords:
 - packages [Integration Services], deploying
 - SSIS packages, deploying
 ms.assetid: 0f5fc7be-e37e-4ecd-ba99-697c8ae3436f
-caps.latest.revision: 
+caps.latest.revision: 46
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f0a4d37996a1add0c028f9481b1dc232190a19a3
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 778901dae6c0504d84eb7cb93667d0ac4024e9ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="legacy-package-deployment-ssis"></a>Déploiement de packages hérités (SSIS)
   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] comprend des outils et des assistants qui facilitent le déploiement de packages de l’ordinateur de développement au serveur de production ou à d’autres ordinateurs.  
@@ -344,7 +342,7 @@ ConfiguredValueType NVARCHAR(20) NOT NULL
 |Valeur|Description|  
 |-----------|-----------------|  
 |**Nom du fichier de configuration**|Tapez le chemin d'accès du fichier de configuration généré par l'Assistant.|  
-|**...**|La boîte de dialogue **Sélectionner l’emplacement du fichier de configuration** permet de spécifier le chemin d’accès au fichier de configuration généré par l’Assistant. Si le fichier n'existe pas, l'Assistant le crée.|  
+|**Parcourir**|La boîte de dialogue **Sélectionner l’emplacement du fichier de configuration** permet de spécifier le chemin d’accès au fichier de configuration généré par l’Assistant. Si le fichier n'existe pas, l'Assistant le crée.|  
   
  **L'emplacement de la configuration est stocké dans une variable d'environnement**  
  Permet de spécifier la variable d’environnement dans laquelle stocker la configuration.  
@@ -654,7 +652,7 @@ ConfiguredValueType NVARCHAR(20) NOT NULL
  **Dossier**  
  Définissez le chemin d'accès et le dossier de copie du package et de ses dépendances.  
   
- **...**  
+ **Parcourir**  
  Accédez au dossier cible via la boîte de dialogue **Rechercher un dossier** .  
   
  **Suivant**  

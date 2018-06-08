@@ -1,27 +1,25 @@
 ---
-title: "Ajouter des données à partir de sources de données externes (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajouter des données à partir de sources de données externes (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 924a2ec3-150c-4bb2-83c9-4c7b440e8c03
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8d81ff7ff9d78eed04f1b635f45b661dda601808
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: fa81a4bd306e62c7f370cb024b5289f8db7421be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-data-from-external-data-sources-ssrs"></a>Ajouter des données à partir de sources de données externes (SSRS)
   Pour récupérer des données à partir d'une source de données externe, vous utilisez une connexion de données. Les informations de connexion de données sont fournies habituellement par le propriétaire de la source de données externe, qui est chargé d'accorder les autorisations nécessaires et de spécifier les types d'informations d'identification à utiliser. Les informations de connexion de données sont enregistrées en tant que source de données de rapport. Le type de source de données spécifie l'extension de données à utiliser pour récupérer les données.  

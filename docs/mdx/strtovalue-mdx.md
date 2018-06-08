@@ -1,30 +1,20 @@
 ---
 title: StrToValue (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: STRTOVALUE
-dev_langs: kbMDX
-helpviewer_keywords: StrToValue function
-ms.assetid: 118a9c4f-74a3-48d5-a4f4-318664bc51bc
-caps.latest.revision: "30"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 37424120aee0b38303b086019e2fb74a823cdc1b
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 1cf21e5b5dac57ce2d0c59e0ab82263727260792
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582291"
 ---
 # <a name="strtovalue-mdx"></a>StrToValue (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,7 +32,7 @@ StrToValue(MDX_Expression [,CONSTRAINED] )
  *MDX_Expression*  
  Expression de chaîne valide résolue, directement ou indirectement, à une cellule unique.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **StrToValue** fonction retourne la valeur numérique spécifiée par l’expression MDX. Le **StrToValue** fonction est généralement utilisée avec les fonctions définies par l’utilisateur pour retourner une expression MDX à partir d’une fonction externe vers une instruction MDX qui peut être résolue en une seule cellule.  
   
 -   En cas d'utilisation de l'indicateur CONSTRAINED, l'expression MDX doit contenir uniquement une valeur scalaire. L'indicateur CONSTRAINED est employé pour réduire les risques d'attaques par injection au travers de la chaîne spécifiée. Si une expression MDX qui ne peut être directement résolue à une valeur scalaire est fournie, l'erreur suivante s'affiche : « Les restrictions imposées par l'indicateur CONSTRAINED dans la fonction STRTOVALUE n'ont pas été respectées ».  
@@ -52,7 +42,7 @@ StrToValue(MDX_Expression [,CONSTRAINED] )
 > [!NOTE]  
 >  Le retour du résultat d'une expression MDX sous forme de valeur numérique peut s'avérer utile si la valeur est stockée sous forme de texte et si vous souhaitez appliquer des opérations arithmétiques aux valeurs retournées.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L’exemple suivant utilise le **StrToValue** fonction pour retourner le poids de chaque bicyclette en tant que valeur.  
   
 ```  
@@ -68,6 +58,6 @@ WHERE [Product].[Product Categories].[Bikes]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

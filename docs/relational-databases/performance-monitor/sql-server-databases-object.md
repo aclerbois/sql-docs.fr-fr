@@ -1,36 +1,35 @@
 ---
-title: "SQL Server, objet Databases | Microsoft Docs"
-ms.custom: 
+title: SQL Server, objet Databases | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - Databases object
 - SQLServer:Databases
 - Availability Groups [SQL Server], performance counters
 ms.assetid: a7f9e7d4-fff4-4c72-8b3e-3f18dffc8919
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c92dc55eedaf801ad283ecb18bb55a25ba49f4b1
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 2349e70ca346a28743b5161ff1d2d554b4914c44
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-databases-object"></a>SQL Server, objet Databases
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet **SQLServer:Databases** dans SQL Server fournit des compteurs pour analyser les opérations de copie en bloc, le débit des sauvegardes et des restaurations, ainsi que l’activité des journaux des transactions. Surveillez les transactions et le journal des transactions pour déterminer l'intensité de l'activité de l'utilisateur dans la base de données et le taux de remplissage du journal des transactions. Le volume d'activité de l'utilisateur peut déterminer les performances de la base de données et affecter la taille du journal, le verrouillage et la réplication. La surveillance de l'activité du journal de bas niveau afin de mesurer l'activité de l'utilisateur et l'exploitation des ressources peut permettre d'identifier les goulots d'étranglement des performances.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’objet **SQLServer:Databases** dans SQL Server fournit des compteurs pour analyser les opérations de copie en bloc, le débit des sauvegardes et des restaurations, ainsi que l’activité des journaux des transactions. Surveillez les transactions et le journal des transactions pour déterminer l'intensité de l'activité de l'utilisateur dans la base de données et le taux de remplissage du journal des transactions. Le volume d'activité de l'utilisateur peut déterminer les performances de la base de données et affecter la taille du journal, le verrouillage et la réplication. La surveillance de l'activité du journal de bas niveau afin de mesurer l'activité de l'utilisateur et l'exploitation des ressources peut permettre d'identifier les goulots d'étranglement des performances.  
   
  Plusieurs instances de l’objet **Databases** , chacune représentant une seule base de données, peuvent être analysées simultanément.  
   

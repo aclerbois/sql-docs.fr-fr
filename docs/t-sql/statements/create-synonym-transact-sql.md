@@ -1,16 +1,14 @@
 ---
 title: CREATE SYNONYM (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE_SYNONYM_TSQL
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - CREATE SYNONYM statement
 - synonyms [SQL Server], creating
 ms.assetid: 41313809-e970-449c-bc35-85da2ef96e48
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 5dd9893a3832a2fc1bd40d56b119096718b2cf42
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 0ebe56d6cff65c579828f9cdce1a879317075d94
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-synonym-transact-sql"></a>CREATE SYNONYM (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -103,7 +100,7 @@ CREATE SYNONYM [ schema_name_1. ] synonym_name FOR < object >
 |Procédure de réplication et de filtrage|Procédure stockée étendue|  
 |Fonction scalaire SQL|Fonction table SQL|  
 |Fonction table inline SQL|Procédure stockée SQL|  
-|View|Table<sup>1</sup> (définie par l’utilisateur)|  
+|Affichage|Table<sup>1</sup> (définie par l’utilisateur)|  
   
  <sup>1 Inclut les tables temporaires locales et globales</sup>  
   

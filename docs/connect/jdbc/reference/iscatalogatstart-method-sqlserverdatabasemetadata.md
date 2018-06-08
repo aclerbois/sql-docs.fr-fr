@@ -1,30 +1,29 @@
 ---
-title: "Méthode isCatalogAtStart (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode isCatalogAtStart (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.isCatalogAtStart
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.isCatalogAtStart
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 665173d2-14c7-4ce1-954e-4adb53fb9b39
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 719ec834d99f38ff97267a4b9b16c8118542721b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d81803b9e10a635b168fd1aed20a242fdf2dd80e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iscatalogatstart-method-sqlserverdatabasemetadata"></a>Méthode isCatalogAtStart (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

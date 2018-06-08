@@ -1,32 +1,29 @@
 ---
-title: "Considérations sur la programmation pilote Paradox | Documents Microsoft"
-ms.custom: 
+title: Considérations sur la programmation pilote Paradox | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Paradox driver [ODBC]
 - ODBC desktop database drivers [ODBC], Paradox driver
 - desktop database drivers [ODBC], Paradox driver
 - Jet-based ODBC drivers [ODBC], Paradox driver
 ms.assetid: 327e952b-e7d5-4209-9423-f4b49cea272f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4016fb6fd5cb23e99bf642a5c484d9c001fc7604
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 46712459f073ae27a2c14d67a41ea018a98b2823
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="paradox-driver-programming-considerations"></a>Considérations sur la programmation pilote Paradox
 Cette section contient les rubriques suivantes :  

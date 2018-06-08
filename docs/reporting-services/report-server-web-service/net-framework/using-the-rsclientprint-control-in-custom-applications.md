@@ -1,33 +1,32 @@
 ---
-title: "Utilisation du contrôle RSClientPrint dans des applications personnalisées | Microsoft Docs"
-ms.custom: 
+title: Utilisation du contrôle RSClientPrint dans des applications personnalisées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - RSPrintClient control
 - print controls [Reporting Services]
 - custom printing [Reporting Services]
 - client-side printing
 ms.assetid: 8c0bdd18-8905-4e22-9774-a240fc81a8a7
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 34becf7210dd08dbf663d99e6cf5cd1b7f57c190
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 67ee94b303f8d75e3249b1f20b2ed891c632dc92
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-the-rsclientprint-control-in-custom-applications"></a>Utilisation du contrôle RSClientPrint dans les applications personnalisées
   Le contrôle [!INCLUDE[msCoName](../../../includes/msconame-md.md)] ActiveX **RSPrintClient** permet une impression côté client des rapports affichés dans la Visionneuse HTML. À partir de la boîte de dialogue **Imprimer** de ce contrôle, un utilisateur peut démarrer un travail d’impression, afficher l’aperçu d’un rapport, spécifier les pages à imprimer et modifier les marges. Lors d'une impression côté client, le serveur de rapports génère le rendu du rapport dans l'extension de rendu (EMF) d'image, puis utilise les fonctionnalités d'impression du système d'exploitation afin de créer le travail d'impression et de l'envoyer à une imprimante.  

@@ -1,27 +1,21 @@
 ---
-title: "Capacité de stockage et le traitement de la plateforme Analytique"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Vos exigences professionnelles de déterminer le nombre d’unités d’échelle de données et la taille des disques de nœud de calcul dont vous avez besoin dans votre solution de système de plateforme Analytique (APS)."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 2c32fec4-e97c-4797-b7f8-7c8d4301b7b6
-caps.latest.revision: "7"
-ms.openlocfilehash: 9d7f933c45f05d7d4226a2f64fd41eff8d1c914a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Capacité de traitement et de stockage - système de plateforme d’Analytique | Documents Microsoft
+description: Vos exigences professionnelles de déterminer le nombre d’unités d’échelle de données et la taille des disques de nœud de calcul dont vous avez besoin dans votre solution de système de plateforme Analytique (APS).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: f552372ac108d219ad410b88ec9911ecaea63ab3
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="analytics-platform-system-processing-and-storage-capacity"></a>Capacité de traitement et de stockage de système de plateforme Analytique
+# <a name="processing-and-storage-capacity-in-analytics-platform-system"></a>Capacité de traitement et de stockage dans le système de plateforme Analytique
 Vos exigences professionnelles de déterminer le nombre d’unités d’échelle de données et la taille des disques de nœud de calcul dont vous avez besoin dans votre solution de système de plateforme Analytique (APS). Utilisez ces calculs de traitement et de stockage pour guider la capacité de votre achat et les décisions de planification.  
   
   
@@ -39,7 +33,7 @@ Extension est le pourcentage de capacité de gain en augmentant la Uunits de mis
   
 |Unités d’échelle de données|Nœuds de calcul|Cœurs de processeur|Mémoire (Go)|Extension|  
 |--------------------|-----------------|-------------|-----------------|----------|  
-| 1|2|32|512|-|  
+|1|2|32|512|-|  
 |2|4|64|1024|100%|  
 |3|6|96|1536|50|  
 |4|8|128|2048|33%|  
@@ -70,7 +64,7 @@ Extension est le pourcentage de capacité de gain en augmentant la Uunits de mis
   
 |Unités d’échelle de données|Nœuds de calcul|Cœurs de processeur|Mémoire (Go)|Extension|  
 |--------------------|-----------------|-------------|-----------------|----------|  
-| 1|3|48|768|-|  
+|1|3|48|768|-|  
 |2|6|96|1536|100%|  
 |3|9|144|2,304|50|  
 |4|12|192|3,072|33%|  

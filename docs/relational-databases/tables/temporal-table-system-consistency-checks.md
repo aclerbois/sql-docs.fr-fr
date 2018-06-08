@@ -1,28 +1,25 @@
 ---
-title: "Vérifications de cohérence système des tables temporelles | Microsoft Docs"
-ms.custom: 
+title: Vérifications de cohérence système des tables temporelles | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ec081d42-57e4-43c7-9e1c-317ba8f23437
-caps.latest.revision: 
+caps.latest.revision: 10
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc854ba076a5f5a831beb5009bdd5c0e25f654c5
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 563041dde8ce992eeab912ea8b4c20144e7258ef
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="temporal-table-system-consistency-checks"></a>Vérifications de cohérence système des tables temporelles
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -65,9 +62,6 @@ ms.lasthandoff: 01/18/2018
   
 ## <a name="dbcc-checkconstraints"></a>DBCC CHECKCONSTRAINTS  
  La commande **DBCC CHECKCONSTRAINTS** inclut des vérifications de cohérence des données temporelles. Pour plus d’informations, consultez [DBCC CHECKCONSTRAINTS &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-checkconstraints-transact-sql.md).  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Temporal%20Table%20System%20Consistency%20Checks%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

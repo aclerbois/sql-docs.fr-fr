@@ -1,16 +1,12 @@
 ---
-title: sys.dm_fts_index_keywords_position_by_document (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_fts_index_keywords_position_by_document (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_fts_index_keywords_position_by_document_TSQL
@@ -22,18 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_fts_index_keywords_position_by_document dynamic management view
 ms.assetid: 0d70184f-baa2-411b-a32d-a4c5af890edd
-caps.latest.revision: 
+caps.latest.revision: 5
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: afb129fac832bafca777747b078d4f44e18f2422
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: b02615dbc260c951a08d3bfa5279b20464653203
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sysdmftsindexkeywordspositionbydocument-transact-sql"></a>sys.dm_fts_index_keywords_position_by_document (Transact-SQL)
+# <a name="sysdmftsindexkeywordspositionbydocument-transact-sql"></a>Sys.dm_fts_index_keywords_position_by_document (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
 
   Retourne les informations de position de mot clé dans les documents indexés.  
@@ -49,10 +44,10 @@ OBJECT_ID('table_name')
 ```  
   
 ## <a name="arguments"></a>Arguments  
- db_id('*database_name*')  
+ DB_ID ('*nom_base_de_données*')  
  Un appel à la [DB_ID()](../../t-sql/functions/db-id-transact-sql.md) (fonction). Cette fonction accepte un nom de base de données et retourne l’ID de base de données, les sys.dm_fts_index_keywords_position_by_document utilise pour rechercher la base de données spécifié.  
   
- object_id('*table_name*')  
+ object_id ('*table_name*')  
  Un appel à la [OBJECT_ID()](../../t-sql/functions/object-id-transact-sql.md) (fonction). Cette fonction accepte un nom de table et retourne l'ID de la table contenant l'index de recherche en texte intégral à examiner.  
   
 ## <a name="table-returned"></a>Table retournée  
@@ -100,9 +95,9 @@ WHERE document_id = 7 AND display_term = 'performance';
 ## <a name="see-also"></a>Voir aussi  
  [Recherche en texte intégral](../../relational-databases/search/full-text-search.md)   
  [Améliorer les performances des index de recherche en texte intégral](../../relational-databases/search/improve-the-performance-of-full-text-indexes.md)   
- [Recherche en texte intégral et les fonctions de recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-functions/full-text-search-and-semantic-search-functions-transact-sql.md)   
- [Recherche en texte intégral et fonctions et vues de gestion dynamique de la recherche sémantique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
- [Recherche en texte intégral et la recherche sémantique stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)   
+ [Recherche en texte intégral et les fonctions de recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-functions/full-text-search-and-semantic-search-functions-transact-sql.md)   
+ [Recherche en texte intégral et les fonctions et vues de gestion dynamique de la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/full-text-and-semantic-search-dynamic-management-views-functions.md)   
+ [Procédures stockées de recherche en texte intégral et la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)   
  [Rechercher les propriétés du document à l’aide des listes de propriétés de recherche](../../relational-databases/search/search-document-properties-with-search-property-lists.md)   
  [sys.dm_fts_index_keywords_by_document &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-keywords-by-document-transact-sql.md)  
   

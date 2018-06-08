@@ -1,28 +1,25 @@
 ---
-title: "Nouveautés de SSMA pour Oracle (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Nouveautés de SSMA pour Oracle (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2018
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f305ebb6-7393-4a43-abb3-6332b739d690
-caps.latest.revision: 
+caps.latest.revision: 24
 author: Shamikg
 ms.author: Shamikg
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63bc96b49c351d9923c5e4d4ae59056c7911ae40
-ms.sourcegitcommit: 6a5b80cac78fe5c2d2567a391daa335f9b4b3637
+ms.openlocfilehash: d80bf7637c5c17cdade7c47f25265a6d2b6c94c1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/01/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="whats-new-in-ssma-for-oracle-oracletosql"></a>Nouveautés de SSMA pour Oracle (OracleToSQL)
 Cette rubrique répertorie SSMA pour les modifications d’Oracle dans chaque version.  
@@ -83,7 +80,7 @@ La version v7.3 de SSMA pour Oracle contient les modifications suivantes :
   - Bibliothèques peuvent être consommées par SSMA pour effectuer des conversions personnalisées.
     - Vous pouvez maintenant construire le code qui peut gérer les conversions de syntaxe personnalisée et les conversions qui n’ont pas été précédemment traitées par SSMA.
       - Obtenir des instructions sur la création d’un convertisseur personnalisé sont disponibles dans ce billet de blog, [fonctions de conversion d’extension Assistant Migration SQL Server](https://blogs.msdn.microsoft.com/datamigration/2017/02/21/2185/).
-      - Exemple de projet pour la conversion peut être le télécharger [billet de blog](https://blogs.msdn.microsoft.com/datamigration/ssmafororacleconversionsample/).
+      - Télécharger un exemple de projet pour la conversion à partir de ce [billet de blog](https://blogs.msdn.microsoft.com/datamigration/ssmafororacleconversionsample/).
 
 
 ## <a name="ssma-v72"></a>SSMA v7.2
@@ -97,7 +94,7 @@ La version de v7.1 de SSMA pour Oracle contient les modifications suivantes :
 - SSMA prend désormais en charge les mises à jour automatiques pour télécharger la dernière version de SSMA dès qu’elles sont disponibles.
 - Fichiers binaires installables de SSMA sont maintenant remis via des fichiers de package Windows installer (.msi).
 
-**Resources**
+**Ressources**
 
 [Extension des capacités de SQL Server Migration Assistant conversion](https://blogs.msdn.microsoft.com/datamigration/2017/02/21/2185/)
 
@@ -106,18 +103,28 @@ La version de v7.1 de SSMA pour Oracle contient les modifications suivantes :
 ## <a name="may-2016"></a>Mai 2016  
 La version de mai 2016 de SSMA pour Oracle contient les modifications suivantes :  
 
--   Ajout de la prise en charge pour SQL Server 2016.
--   Conversion ajoutée des tables d’archive restauration Oracle aux tables temporelles de SQL Server.
--   Ajout de conversion de la stratégie de VPD Oracle convertir des objets de stratégie de SQL Server (sécurité de niveau ligne pour Oracle).
--   Une diminution des temps de chargement initial pour Oracle.
--   Analyseur amélioré et le programme de résolution.
--   Supprimé vérification du programme d’installation pour .net 2.0.
--   Dépendance Extension Pack mis à jour à partir de .net 3.5 pour .net 4.0.
--   Fixe « enregistrer le projet » et « ouvrir le projet » des commandes pour la Console de SSMA.
--   Commande securepassword « fixe » pour la Console de SSMA.
--   Correction de comptage des objets pour le chargement initial.
--   Correction de la conversion des types de données caractères pour Oracle.
--   Résolution du bogue dans les paramètres globaux.
+- Ajout de la prise en charge pour SQL Server 2016.
+- Conversion ajoutée des tables d’archive restauration Oracle aux tables temporelles de SQL Server.
+
+    **Remarque** -SSMA ne copie pas les données d’historique à partir des tables d’Archive de données de restauration Oracle. Par conséquent, les données d’historique doivent être copiées manuellement pendant le processus de migration. En outre, tandis que SSMA n’affiche pas la table d’historique dans l’Explorateur de métadonnées SQL Server, car il est traité comme une table système, vous pouvez afficher la table d’historique dans SQL Server Management Studio.
+    SQL Server 2016 ne prend pas en charge plusieurs fonctionnalités de restauration d’Oracle, notamment :
+    - Requêtes de Transaction de restauration Oracle
+    - Package DBMS_FLASHBACK
+    - Opération de restauration
+    - Archive de données de restauration
+    - Table de restauration
+    - Suppression de la restauration
+    - La base de données
+- Conversion ajoutée de la stratégie de VPD Oracle à des objets de stratégie de SQL Server (sécurité de niveau ligne pour Oracle).
+- Une diminution des temps de chargement initial pour Oracle.
+- Analyseur amélioré et le programme de résolution.
+- Supprimé vérification du programme d’installation pour .net 2.0.
+- Dépendance Extension Pack mis à jour à partir de .net 3.5 pour .net 4.0.
+- Fixe « enregistrer le projet » et « ouvrir le projet » des commandes pour la Console de SSMA.
+- Commande securepassword « fixe » pour la Console de SSMA.
+- Correction de comptage des objets pour le chargement initial.
+- Correction de la conversion des types de données caractères pour Oracle.
+- Résolution du bogue dans les paramètres globaux.
   
 ## <a name="march-2016"></a>Mars 2016  
 La version préliminaire de mars 2016 de SSMA pour Oracle contient les modifications suivantes :  

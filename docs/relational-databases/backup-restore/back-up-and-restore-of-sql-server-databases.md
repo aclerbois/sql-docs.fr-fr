@@ -2,16 +2,13 @@
 title: Sauvegarder et restaurer des bases de données SQL Server | Microsoft Docs
 ms.custom: ''
 ms.date: 03/30/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: backup-restore
+ms.prod: sql
+ms.prod_service: backup-restore
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
+ms.technology: backup-restore
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - disaster recovery [SQL Server], see restoring [SQL Server]
 - backups [SQL Server]
@@ -29,23 +26,20 @@ caps.latest.revision: 91
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4dddfcc3841704e7863a55253e8152b44d73a8d9
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: f5a985cffb4aa982e598cbaaeb5c8ddb57133fd7
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708027"
 ---
 # <a name="back-up-and-restore-of-sql-server-databases"></a>Sauvegarde et restauration des bases de données SQL Server
-[!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]
-
-  Cette rubrique décrit les avantages de la sauvegarde des bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , les termes de sauvegarde et de restauration de base, et présente les stratégies de sauvegarde et de restauration pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ainsi que les questions de sécurité pour la sauvegarde et la restauration de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . 
-  
-[!INCLUDE[ssMIlimitation](../../includes/sql-db-mi-limitation.md)]
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cet article décrit les avantages de la sauvegarde des bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], les conditions de sauvegarde et de restauration de base, et présente les stratégies de sauvegarde et de restauration pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ainsi que les questions de sécurité pour la sauvegarde et la restauration de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. 
 
 > **Vous recherchez des instructions pas à pas ?** Cette rubrique **ne fournit aucune instruction spécifique sur la procédure de sauvegarde**. Si vous souhaitez effectuer correctement vos sauvegardes, faites défiler cette page vers le bas vers la section des liens organisée par tâche de sauvegarde, et spécifiez si vous souhaitez utiliser SSMS ou T-SQL.  
   
- Le composant de sauvegarde et restauration de SQL Server apporte une sécurité essentielle pour la protection des données cruciales stockées dans vos bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour réduire le risque de perte catastrophique de données, vous devez sauvegarder régulièrement vos bases de données pour conserver les modifications apportées à vos données. Une stratégie de sauvegarde et de restauration correctement planifiée permet de protéger les bases de données contre toute perte de données provoquée par différentes défaillances. Vous pouvez tester votre stratégie en restaurant un ensemble de sauvegardes, puis en récupérant votre base de données pour vous préparer à réagir efficacement en cas de sinistre.  
+ Le composant de sauvegarde et restauration de SQL Server apporte une sécurité essentielle pour la protection des données cruciales stockées dans vos bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour réduire le risque de perte catastrophique de données, vous devez sauvegarder régulièrement vos bases de données pour conserver les modifications apportées à vos données. Une stratégie de sauvegarde et de restauration correctement planifiée permet de protéger les bases de données contre toute perte de données provoquée par différentes défaillances. Vous pouvez tester votre stratégie en restaurant un ensemble de sauvegardes, puis en récupérant votre base de données pour vous préparer à réagir efficacement en cas de sinistre.
   
  Outre le stockage local pour stocker les sauvegardes, SQL Server prend également en charge la sauvegarde et la restauration à partir du service de Stockage Blob Windows Azure. Pour plus d’informations, consultez [Sauvegarde et restauration SQL Server avec le service de stockage d’objets blob Microsoft Azure](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md). Pour les fichiers de base de données stockés à l’aide du service Microsoft Azure Blob Storage, [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] offre la possibilité d’utiliser des instantanés Azure pour obtenir des sauvegardes quasi instantanées et des restaurations plus rapides. Pour plus d’informations, consultez [Sauvegarde d’instantanés de fichiers pour les fichiers de base de données dans Azure](../../relational-databases/backup-restore/file-snapshot-backups-for-database-files-in-azure.md).  
   
@@ -54,12 +48,9 @@ ms.lasthandoff: 04/04/2018
 
      Avec des sauvegardes valides d'une base de données, vous pouvez récupérer vos données suite à de nombreuses défaillances, par exemple :  
   
-    -   défaillance du support ;  
-  
-    -   erreurs utilisateur, telles que la suppression d'une table par inadvertance ;  
-  
-    -   défaillances matérielles, telles qu'un lecteur de disque endommagé ou la perte permanente d'un serveur ;  
-  
+    -   défaillance du support ;    
+    -   erreurs utilisateur, telles que la suppression d'une table par inadvertance ;    
+    -   défaillances matérielles, telles qu'un lecteur de disque endommagé ou la perte permanente d'un serveur ;    
     -   catastrophes naturelles. Utilisez Sauvegarde SQL Server dans le service de stockage d'objets blob Windows Azure pour créer une sauvegarde hors site dans une autre région que celle de votre emplacement local, qui sera disponible en cas de catastrophe naturelle affectant votre emplacement local.  
   
 -   Par ailleurs, il peut être utile d'effectuer des sauvegardes d'une base de données afin d'effectuer des tâches administratives de routine, telles que la copie d'une base de données d'un serveur vers un autre, la configuration de [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] ou la mise en miroir de bases de données et l'archivage.  
@@ -75,7 +66,7 @@ unité de**sauvegarde**
  Unité de disque ou de bande sur laquelle les sauvegardes de SQL Server sont écrites et à partir de laquelle elles peuvent être restaurées. Les sauvegardes SQL Server peuvent également être écrites dans un service Stockage Blob Microsoft Azure, et le format d’ **URL** est utilisé pour spécifier la destination et le nom du fichier de sauvegarde. Pour plus d’informations, consultez [Sauvegarde et restauration SQL Server avec le service de stockage d’objets blob Microsoft Azure](../../relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service.md).  
   
 **support de sauvegarde**  
- Une ou plusieurs bandes ou un ou plusieurs fichiers disque sur lesquels une ou plusieurs sauvegardes ont été écrites.  
+ Une ou plusieurs bandes ou un ou plusieurs fichiers sur disque sur lesquels une ou plusieurs sauvegardes ont été écrites.  
   
 **sauvegarde de données**  
  Sauvegarde de données dans une base de données complète (sauvegarde de base de données), une base de données partielle (sauvegarde partielle) ou un ensemble de fichiers ou groupes de fichiers (sauvegarde de fichiers).  
@@ -107,10 +98,10 @@ unité de**sauvegarde**
  ##  <a name="backup-and-restore-strategies"></a>Stratégies de sauvegarde et de restauration  
  Les sauvegardes et restaurations de données doivent être adaptées à un environnement particulier et doivent pouvoir utiliser les ressources disponibles. Pour qu'elles soient efficaces, les sauvegardes et restaurations aux fins de récupération doivent par conséquent faire l'objet d'une stratégie. Une stratégie de sauvegarde et de restauration bien conçue doit maximiser la disponibilité des données et minimiser la perte de données, en prenant en compte les besoins spécifiques de votre entreprise.  
   
-#### <a name="important"></a>Important ! 
-**Placez la base de données et les sauvegardes sur des périphériques distincts. Dans le cas contraire, si le périphérique contenant la base de données tombe en panne, vos sauvegardes ne seront pas disponibles. Le fait de placer les données et les sauvegardes sur des périphériques distincts augmente également les performances d’E/S pour l’écriture des sauvegardes et l’utilisation en production de la base de données.**  
+  > [!IMPORTANT] 
+  > Placez la base de données et les sauvegardes sur des périphériques distincts. Dans le cas contraire, si le périphérique contenant la base de données tombe en panne, vos sauvegardes ne seront pas disponibles. En plaçant les données et les sauvegardes sur des périphériques distincts, vous améliorez également les performances d’E/S pour l’écriture des sauvegardes et l’utilisation en production de la base de données.**  
   
- Une stratégie de sauvegarde et de restauration s'articule autour de deux pôles : la sauvegarde et la restauration. Le pôle sauvegarde définit le type et la fréquence des sauvegardes, la nature et la vitesse du matériel employé, la manière dont les sauvegardes seront testées, ainsi que les modalités et l'emplacement de stockage des supports de sauvegarde (sans oublier les considérations relatives à la sécurité). Le pôle restauration détermine le responsable des restaurations et leurs modalités d'exécution pour atteindre les objectifs de l'entreprise en termes de disponibilité de la base de données et de limitation des pertes de données. Nous vous recommandons de documenter vos procédures de sauvegarde et de restauration, sans oublier de conserver une copie de la documentation dans votre dossier d'exploitation.  
+ Une stratégie de sauvegarde et de restauration s'articule autour de deux pôles : la sauvegarde et la restauration. Le pôle sauvegarde de la stratégie définit le type et la fréquence des sauvegardes, la nature et la vitesse du matériel employé, la manière dont les sauvegardes sont testées, ainsi que les modalités et l’emplacement de stockage des supports de sauvegarde (sans oublier les questions de sécurité). Le pôle restauration détermine le responsable des restaurations et leurs modalités d'exécution pour atteindre les objectifs de l'entreprise en termes de disponibilité de la base de données et de limitation des pertes de données. Nous vous recommandons de documenter vos procédures de sauvegarde et de restauration, sans oublier de conserver une copie de la documentation dans votre dossier d'exploitation.  
   
  La conception d'une stratégie de sauvegarde et de restauration efficace nécessite une planification, une mise en œuvre et des tests rigoureux. Il est nécessaire d'effectuer des tests. Vous ne disposez d'aucune stratégie de sauvegarde tant que vous n'avez pas restauré comme il se doit les sauvegardes dans toutes les combinaisons incluses dans votre stratégie de restauration. Vous devez prendre en compte différents facteurs. Ces options en question sont les suivantes :  
   
@@ -154,12 +145,46 @@ unité de**sauvegarde**
    
 >  Pour plus d’informations sur les restrictions d’accès concurrentiel lors d’une sauvegarde, consultez [Vue d’ensemble de la sauvegarde &#40;SQL Server&#41;](../../relational-databases/backup-restore/backup-overview-sql-server.md).  
   
- Après avoir choisi les types de sauvegardes dont vous avez besoin et défini la fréquence à laquelle vous devez effectuer chaque type, nous vous recommandons de prévoir des sauvegardes régulières dans le cadre d'un plan de maintenance de la base de données. Pour plus d'informations sur les plans de maintenance et leur création pour les sauvegardes de base de données et de journaux, consultez [Use the Maintenance Plan Wizard](../../relational-databases/maintenance-plans/use-the-maintenance-plan-wizard.md).  
+ Après avoir choisi les types de sauvegardes dont vous avez besoin et défini la fréquence à laquelle vous devez effectuer chaque type, nous vous recommandons de prévoir des sauvegardes régulières dans le cadre d'un plan de maintenance de la base de données. Pour plus d'informations sur les plans de maintenance et leur création pour les sauvegardes de base de données et de journaux, consultez [Use the Maintenance Plan Wizard](../../relational-databases/maintenance-plans/use-the-maintenance-plan-wizard.md).
   
 ### <a name="test-your-backups"></a>Évaluer vos sauvegardes  
- Vous ne disposez d'aucune stratégie de restauration tant que vous n'avez pas testé vos sauvegardes. Il est essentiel de procéder à une évaluation minutieuse de votre stratégie de sauvegarde pour chacune de vos bases de données en restaurant une copie de la base de données sur un système de test. Vous devez tester la restauration de chaque type de sauvegarde que vous envisagez d'utiliser.  
+ Vous ne disposez d'aucune stratégie de restauration tant que vous n'avez pas testé vos sauvegardes. Il est essentiel de procéder à une évaluation minutieuse de votre stratégie de sauvegarde pour chacune de vos bases de données en restaurant une copie de la base de données sur un système de test. Vous devez tester la restauration de chaque type de sauvegarde que vous envisagez d'utiliser.
   
- Nous vous recommandons la tenue d'un manuel des opérations pour chaque base de données. Ce manuel doit consigner l'emplacement des sauvegardes, les noms des unités de sauvegarde (le cas échéant) et le temps requis pour la restauration des sauvegardes de test.  
+ Nous vous recommandons la tenue d'un manuel des opérations pour chaque base de données. Ce manuel doit consigner l'emplacement des sauvegardes, les noms des unités de sauvegarde (le cas échéant) et le temps requis pour la restauration des sauvegardes de test.
+
+## <a name="monitor-progress-with-xevent"></a>Surveiller la progression avec un xEvent
+Les opérations de sauvegarde et de restauration peuvent prendre beaucoup de temps en raison de la taille de la base de données et de la complexité des opérations impliquées. En cas de problème avec l’une ou l’autre des opérations, vous pouvez utiliser l’événement étendu **backup_restore_progress_trace** pour surveiller la progression en direct. Pour plus d'informations sur les événements étendus, consultez [Événements étendus](../extended-events/extended-events.md).
+
+  >[!WARNING]
+  > L’utilisation de l’événement étendu backup_restore_progress_trace peut impacter les performances et consommer une grande quantité d’espace disque. Utilisez-le sur de courtes périodes, avec précaution, et effectuez des tests avant l’implémentation en production.
+
+
+```sql
+-- Create the backup_restore_progress_trace extended event esssion
+CREATE EVENT SESSION [BackupRestoreTrace] ON SERVER 
+ADD EVENT sqlserver.backup_restore_progress_trace
+ADD TARGET package0.event_file(SET filename=N'BackupRestoreTrace')
+WITH (MAX_MEMORY=4096 KB,EVENT_RETENTION_MODE=ALLOW_SINGLE_EVENT_LOSS,MAX_DISPATCH_LATENCY=5 SECONDS,MAX_EVENT_SIZE=0 KB,MEMORY_PARTITION_MODE=NONE,TRACK_CAUSALITY=OFF,STARTUP_STATE=OFF)
+GO
+
+-- Start the event session  
+ALTER EVENT SESSION [BackupRestoreTrace]  
+ON SERVER  
+STATE = start;  
+GO  
+
+-- Stop the event session  
+ALTER EVENT SESSION [BackupRestoreTrace]  
+ON SERVER  
+STATE = stop;  
+GO  
+```
+
+### <a name="sample-output-from-extended-event"></a>Exemple de sortie d’un événement étendu 
+
+![Exemple de sortie d’un xevent de sauvegarde](media/back-up-and-restore-of-sql-server-databases/backup-xevent-example.png)
+![Exemple de sortie d’un xevent de restauration](media/back-up-and-restore-of-sql-server-databases/restore-xevent-example.png)
+ 
   
 ## <a name="more-about-backup-tasks"></a>En savoir plus sur les tâches de sauvegarde  
 -   [Créer un plan de maintenance](../../relational-databases/maintenance-plans/create-a-maintenance-plan.md)  

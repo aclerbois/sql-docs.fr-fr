@@ -1,30 +1,31 @@
 ---
 title: OPENROWSET (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: OPENROWSET
-dev_langs: DMX
-helpviewer_keywords: OPENROWSET statement
+f1_keywords:
+- OPENROWSET
+dev_langs:
+- DMX
+helpviewer_keywords:
+- OPENROWSET statement
 ms.assetid: 8c8b61b4-2bf6-46c7-8976-51484004dc22
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 2a3a7f8e9cbfcb6791cee28bb412be0ff51fc5df
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: f7ed5b65bf1f8ecf01d6b01939311de562eb85b3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ltsource-data-querygt---openrowset"></a>&lt;requête de source de données&gt; -OPENROWSET
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -39,7 +40,7 @@ OPENROWSET(provider_name,provider_string,query_syntax)
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *Nom_Fournisseur*  
+ *provider_name*  
  Nom d'un fournisseur OLE DB  
   
  *provider_string*  
@@ -48,7 +49,7 @@ OPENROWSET(provider_name,provider_string,query_syntax)
  *query_syntax*  
  Syntaxe de requête qui retourne un ensemble de lignes.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le fournisseur d’exploration de données établit une connexion à l’objet de source de données à l’aide de *Nom_Fournisseur* et *provider_string,* et s’exécute la requête spécifiée dans *query_syntax* pour récupérer l’ensemble de lignes à partir de la source de données.  
   
 ## <a name="examples"></a>Exemples  
@@ -64,8 +65,8 @@ OPENROWSET
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [&#60; requête de source de données &#62;](../dmx/source-data-query.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Guide de référence des instructions DMX &#40;Data Mining Extensions&#41;](../dmx/data-mining-extensions-dmx-statements.md)  
+ [&#60;requête de source de données&#62;](../dmx/source-data-query.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)  
   
   

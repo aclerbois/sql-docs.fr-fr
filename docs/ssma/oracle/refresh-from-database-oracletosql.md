@@ -1,27 +1,25 @@
 ---
-title: "Actualiser à partir de la base de données (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Actualiser à partir de la base de données (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 84492f44-c368-4c75-954d-7307a2d2bbc0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: ad8beabee5fdcf839b63220f7063f7f9640b2531
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 4ce7ef56e02e3d9fac5aabf6251e5cfac9dd93cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="refresh-from-database-oracletosql"></a>Actualiser à partir de la base de données (OracleToSQL)
 Le **Actualiser à partir de la base de données** boîte de dialogue vous permet de sélectionner les objets à actualiser à partir de la base de données Oracle. Lignes dans la boîte de dialogue sont codées par couleur en fonction de l’état des métadonnées :  
@@ -34,7 +32,7 @@ Le **Actualiser à partir de la base de données** boîte de dialogue vous perme
   
 -   Si l’objet est nouveau dans la base de données Oracle, la ligne est rose.  
   
-Vous pouvez spécifier des paramètres d’actualisation objet par défaut dans le **les paramètres de projet** boîte de dialogue. Pour plus d’informations, consultez [paramètres du projet &#40; Synchronisation &#41; &#40; OracleToSQL &#41; ](../../ssma/oracle/project-settings-synchronization-oracletosql.md).  
+Vous pouvez spécifier des paramètres d’actualisation objet par défaut dans le **les paramètres de projet** boîte de dialogue. Pour plus d’informations, consultez [les paramètres de projet&#40;synchronisation&#41; &#40;OracleToSQL&#41;](../../ssma/oracle/project-settings-synchronization-oracletosql.md).  
   
 Pour accéder à la **Actualiser à partir de la base de données** boîte de dialogue, avec le bouton droit, un objet dans l’Explorateur de métadonnées d’Oracle et cliquez sur **Actualiser à partir de la base de données**.  
   

@@ -1,16 +1,15 @@
 ---
-title: "Propriété NumberOfFlags (classe ClientNetworkProtocol) | Documents Microsoft"
-ms.custom: 
+title: Propriété NumberOfFlags (classe ClientNetworkProtocol) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - NumberOfFlags Property (ClientNetworkProtocol Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - NumberOfFlags property
 ms.assetid: 7a656644-2154-419f-9787-99877f597770
-caps.latest.revision: 
+caps.latest.revision: 32
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 386ec03045808094b78cf9a6597524330c45bc5f
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: ff2f521c76adc481fb290200f00837de46058562
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="numberofflags-property-clientnetworkprotocol-class"></a>Propriété NumberOfFlags (classe ClientNetworkProtocol)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

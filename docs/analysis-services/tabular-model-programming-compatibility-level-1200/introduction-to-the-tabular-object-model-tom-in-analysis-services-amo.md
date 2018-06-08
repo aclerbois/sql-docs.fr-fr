@@ -1,36 +1,28 @@
 ---
-title: "Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-ms.assetid: 57a4a934-ecd0-4365-8147-d36899d86751
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 7efb5e145bbc4b481f73624a4c0d08d9698dc24c
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 9a075f78694727d723b70bd0ffcb7c23d10210f1
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
-# <a name="introduction-to-the-tabular-object-model-tom-in-analysis-services-amo"></a>Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO
+# <a name="understanding-tabular-object-model-tom-in-analysis-services-amo"></a>Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Le modèle d’objet tabulaire (TOM) est une extension de la bibliothèque cliente objet AMO (Analysis Services Management Objects), créée pour prendre en charge des scénarios de programmation pour les modèles tabulaires créés au niveau de compatibilité 1200 et supérieur. Comme avec AMO, TOM fournit un moyen par programmation pour gérer les fonctions d’administration telles que la création de modèles, l’importation et l’actualisation des données et attribution des rôles et autorisations.  
+  Le modèle d’objet tabulaire (TOM) est une extension de la bibliothèque cliente objet AMO (Analysis Services Management Objects), créée pour prendre en charge des scénarios de programmation pour les modèles tabulaires créés au niveau de compatibilité 1200 et supérieur. Comme avec AMO, TOM fournit un moyen par programmation pour gérer les fonctions d’administration telles que la création de modèles, l’importation et l’actualisation des données et attribution des rôles et autorisations.  
   
 TOM expose des métadonnées tabulaires native, tel que **modèle**, **tables**, **colonnes**, et **relations** objets.  Une vue d’ensemble de l’arborescence du modèle objet, vous trouverez ci-dessous, illustre la façon dont les éléments sont liés.  
   
  TOM étant une extension d’AMO, toutes les classes qui représentent des nouveaux objets tabulaires introduites dans SQL Server 2016 sont implémentées dans un nouvel assembly Microsoft.AnalysisServices.Tabular.dll. Les classes à usage général d’AMO ont été déplacées à l’assembly de Microsoft.AnalysisServices.Core. Votre code doit faire référence aux deux assemblys.
-Consultez [installer, de distribuer et de faire référence à l’objet de modèle tabulaire &#40; Microsoft.AnalysisServices.Tabular &#41; ](../../analysis-services/tabular-model-programming-compatibility-level-1200/install-distribute-and-reference-the-tabular-object-model.md) pour plus d’informations.  
+Consultez [installer, de distribuer et de faire référence à l’objet de modèle tabulaire &#40;Microsoft.AnalysisServices.Tabular&#41; ](../../analysis-services/tabular-model-programming-compatibility-level-1200/install-distribute-and-reference-the-tabular-object-model.md) pour plus d’informations.  
   
  Actuellement, l’API est disponible uniquement pour le code managé via le .NET framework. Pour consulter la liste complète des options, y compris le script et requête prise en charge, de programmation voir [programmation de modèle tabulaire pour 1200 de niveau de compatibilité](../../analysis-services/tabular-model-programming-compatibility-level-1200/tabular-model-programming-for-compatibility-level-1200.md).  
   

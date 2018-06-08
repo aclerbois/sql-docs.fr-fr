@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTableName (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTableName (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSetMetaData.getTableName
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSetMetaData.getTableName
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 9a077b50-cc5a-4301-9398-49ea68544e89
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8fba612435edca6d66f282af902b3fa4fecc4c2f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 941b9cbf8b8d3dff56713b570e838bcf8bd499c1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettablename-method-sqlserverresultsetmetadata"></a>Méthode getTableName (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public java.lang.String getTableName(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Un **int** qui indique l’index de colonne.  
   

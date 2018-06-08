@@ -1,16 +1,14 @@
 ---
-title: "Demander à l’utilisateur des informations de connexion | Documents Microsoft"
-ms.custom: 
+title: Demander à l’utilisateur des informations de connexion | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to data source [ODBC], SqlConnect
 - connecting to driver [ODBC], prompting user for information
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - prompting user for connection information [ODBC]
 - SQLDriverConnect function [ODBC], prompting user for connection information
 ms.assetid: da98e9b9-a4ac-4a9d-bae6-e9252b1fe1e5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f72a196447399b6df74de8d46fa1eee572910fac
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 305d8bf4c3e18fdb610c6b67b7c678c43e83c6f0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prompting-the-user-for-connection-information"></a>Demander à l’utilisateur des informations de connexion
 Si l’application utilise **SQLConnect** et doit demander à l’utilisateur pour toutes les informations de connexion, telles qu’un nom d’utilisateur et un mot de passe, il doit le faire lui-même. Cela permet l’application de contrôler son « apparence », il peut forcer l’application pour contenir le code spécifique au pilote. Cela se produit lorsque l’application doit demander à l’utilisateur pour les informations de connexion spécifiques au pilote. Cela présente une situation impossible pour les applications génériques qui sont conçues pour fonctionner avec tous les pilotes, y compris les pilotes qui n’existent pas lorsque l’application est écrite.  

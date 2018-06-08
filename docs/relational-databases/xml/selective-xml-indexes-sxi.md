@@ -1,32 +1,29 @@
 ---
-title: "Index XML sélectifs (SXI) | Microsoft Docs"
-ms.custom: 
+title: Index XML sélectifs (SXI) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 598ecdcd-084b-4032-81b2-eed6ae9f5d44
-caps.latest.revision: 
+caps.latest.revision: 9
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e845dd3ae91488060e72ad75c3f60d7dc0c7977
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 1bc3e5c4f5476fe97a096a2e1a1e4ca9748f709e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selective-xml-indexes-sxi"></a>Index XML sélectifs (SXI)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Les index XML sélectifs sont un autre type d'index XML disponible en plus des index XML ordinaires. Les objectifs de la fonctionnalité d'index XML sélectif sont les suivants :  
+  Les index XML sélectifs sont un autre type d'index XML disponible en plus des index XML ordinaires. Les objectifs de la fonctionnalité d'index XML sélectif sont les suivants :  
   
 -   Améliorer les performances des requêtes sur les données XML stockées dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   

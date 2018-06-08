@@ -1,42 +1,23 @@
 ---
-title: "Structures d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- attributes [data mining]
-- mining structures [Analysis Services], about mining structures
-- mining structures [Analysis Services]
-- data mining [Analysis Services], structure
-- Analysis Services objects, data mining objects
-- data mining [Analysis Services], models
-- algorithms [data mining]
-- data mining [Analysis Services], objects
-- mining models [Analysis Services]
-- mining models [Analysis Services], about data mining models
-ms.assetid: 39748290-c32a-48e6-92a6-0c3a9223773a
-caps.latest.revision: 
-author: Minewiskan
+title: Structures d’exploration de données (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6b7467be225e2468be21603f3e40de04050dc6b4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2c5a71b864a1ec032112c2a73b965b82775e5b92
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mining-structures-analysis-services---data-mining"></a>Structures d'exploration de données (Analysis Services – exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La structure d'exploration de données définit les données à partir desquelles les modèles d'exploration de données sont construits : elle spécifie la vue de source de données, le nombre et le type de colonnes, ainsi qu'une partition facultative en jeux d'apprentissage et en jeux de test. Une structure d'exploration de données individuelle peut prendre en charge plusieurs modèles d'exploration de données qui partagent le même domaine. Le diagramme suivant illustre la relation de la structure d'exploration de données par rapport à la source de données et à ses modèles d'exploration de données constitutifs.  
+  La structure d'exploration de données définit les données à partir desquelles les modèles d'exploration de données sont construits : elle spécifie la vue de source de données, le nombre et le type de colonnes, ainsi qu'une partition facultative en jeux d'apprentissage et en jeux de test. Une structure d'exploration de données individuelle peut prendre en charge plusieurs modèles d'exploration de données qui partagent le même domaine. Le diagramme suivant illustre la relation de la structure d'exploration de données par rapport à la source de données et à ses modèles d'exploration de données constitutifs.  
   
  ![Traitement des données : source à structure à modèle](../../analysis-services/data-mining/media/dmcon-modelarch.gif "traitement des données : source à structure à modèle")  
   
@@ -129,6 +110,6 @@ La structure d'exploration de données définit les données à partir desquelle
   
 ## <a name="see-also"></a>Voir aussi  
  [Objets de bases de données &#40;Analysis Services - Données multidimensionnelles &#41;](../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)   
- [Les modèles d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)  
+ [Les modèles d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)  
   
   

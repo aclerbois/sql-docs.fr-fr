@@ -1,28 +1,25 @@
 ---
-title: "Création d’une table temporelle avec contrôle de version du système | Microsoft Docs"
-ms.custom: 
+title: Création d’une table temporelle avec contrôle de version du système | Microsoft Docs
+ms.custom: ''
 ms.date: 05/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 21e6d74f-711f-40e6-a8b7-85f832c5d4b3
-caps.latest.revision: 
+caps.latest.revision: 20
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d9980d3617c66d3d000af32cfbe4c50b957bcc24
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 03077d7ede10d42b4d4812ce6ef93a35dd295a22
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="creating-a-system-versioned-temporal-table"></a>Création d’une table temporelle avec gestion de version du système
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -177,7 +174,7 @@ ALTER TABLE InsurancePolicy
   
 #### <a name="important-remarks"></a>Remarques importantes  
   
--   L’ajout de colonnes n’acceptant pas les valeurs Null et comportant des valeurs par défaut à une table existante contenant des données est une opération sur la taille des données pour toutes les éditions autres que SQL Server Enterprise Edition (version sur laquelle il s’agit d’une opération de métadonnées). Sur SQL Server Édition Standard, l’ajout d’une colonne non Null à une table de l’historique volumineuse contenant des données peut être une opération coûteuse.  
+-   L’ajout de colonnes n’acceptant pas les valeurs Null et comportant des valeurs par défaut à une table existante contenant des données est une opération sur la taille des données pour toutes les éditions autres que SQL Server Entreprise Edition (version sur laquelle il s’agit d’une opération de métadonnées). Sur SQL Server Édition Standard, l’ajout d’une colonne non Null à une table de l’historique volumineuse contenant des données peut être une opération coûteuse.  
   
 -   Les contraintes applicables aux colonnes de fin et de début de la période doivent être choisies avec soin :  
   
@@ -187,7 +184,7 @@ ALTER TABLE InsurancePolicy
   
 -   L’ajout d’une période entraîne une vérification de cohérence des données sur la table actuelle pour s’assurer que les valeurs par défaut pour les colonnes de période sont valides.  
   
--   Quand une table de l’historique existant est spécifiée lors de l’activation de **SYSTEM_VERSIONING**, une vérification de cohérence des données temporelles est effectuée sur les tables actuelles et de l’historique. Elle peut être ignorée si vous spécifiez **DATA_CONISTENCY_CHECK = OFF** comme paramètre supplémentaire.  
+-   Quand une table de l’historique existant est spécifiée lors de l’activation de **SYSTEM_VERSIONING**, une vérification de cohérence des données temporelles est effectuée sur les tables actuelles et de l’historique. Elle peut être ignorée si vous spécifiez **DATA_CONSISTENCY_CHECK = OFF** comme paramètre supplémentaire.  
   
 ### <a name="migrate-existing-tables-to-built-in-support"></a>Migrer de tables existantes vers la prise en charge intégrée  
  Cet exemple montre comment migrer une solution basée sur des déclencheurs vers la prise en charge temporelle intégrée. Pour cet exemple, nous partons du principe que la solution personnalisée active fractionne les données actuelles et historiques en deux tables utilisateur séparées (**ProjectTaskCurrent** et **ProjectTaskHistory**). Si votre solution utilise une table unique pour stocker les lignes réelles et historiques, vous devez fractionner les données en deux tables avant d’effectuer les étapes de migration présentées dans cet exemple :  
@@ -215,9 +212,7 @@ ALTER TABLE ProjectTaskCurrent
   
 -   Il est vivement recommandé de définir **SYSTEM_VERSIONING** avec **DATA_CONSISTENCY_CHECK = ON** pour appliquer les vérifications de cohérence des données sur les données existantes.  
   
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Creating%20a%20System-Versioned%20Temporal%20Table%20page)  
-  
+ 
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   
  [Prise en main des tables temporelles avec versions gérées par le système](../../relational-databases/tables/getting-started-with-system-versioned-temporal-tables.md)   

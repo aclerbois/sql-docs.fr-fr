@@ -1,26 +1,20 @@
 ---
-title: Gestion et configuration | Documents Microsoft
-ms.custom: ''
-ms.date: 05/31/2016
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Configurer et gérer des instances de SQL Server Machine Learning Service | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: e1db968dd15463dcfaf7fb4e55b5166b6310d264
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: b24832c8debe12c11aaa337e9558d99e7fae5ae0
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585501"
 ---
-# <a name="configuration-and-management"></a>Configuration et gestion
+# <a name="configure-and-manage-machine-learning-components-in-sql-server"></a>Configurer et gérer les composants de la machine learning dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Cet article fournit des liens vers des informations plus détaillées sur la façon de configurer un serveur pour prendre en charge des services d’apprentissage machine avec SQL Server dans les produits suivants :
@@ -40,7 +34,7 @@ Cet article fournit des liens vers des informations plus détaillées sur la fa�
 
 Ces articles décrivent comment installer de nouveaux packages R sur l’instance de SQL Server, gestion des bibliothèques de package de R et restaurer des bibliothèques de package après une restauration de base de données.
 
-+ [Installation et gestion des packages R](installing-and-managing-r-packages.md)
++ [Par défaut R et Python packages dans SQL Server](installing-and-managing-r-packages.md)
 + [L’installation de nouveaux Packages R](install-additional-r-packages-on-sql-server.md)
 + [Activer la gestion de Package pour une Instance à l’aide de rôles de base de données](r-package-how-to-enable-or-disable.md)
 + [Créer un référentiel de packages Local à l’aide de miniCRAN](create-a-local-package-repository-using-minicran.md)

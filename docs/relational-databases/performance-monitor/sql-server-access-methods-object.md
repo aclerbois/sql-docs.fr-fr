@@ -1,34 +1,33 @@
 ---
 title: SQL Server - Objet Access Methods | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Access Methods object
 - SQLServer:Access Methods
 ms.assetid: 27558585-e780-48bb-a042-30d664662ebc
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dfbbfd6ac0e746fc8165186745006a1834f5aebe
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d384974e39066d0d1a150e2557872f6f1274be93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-access-methods-object"></a>SQL Server - Objet Access Methods
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet **Access Methods** de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs permettant de surveiller l’accès aux données logiques de la base de données. Les compteurs **Gestionnaire de tampons** permettent de surveiller l'accès physique aux pages de bases de données sur le disque. La surveillance des méthodes d'accès aux données de la base de données permet de déterminer s'il est possible d'améliorer les performances des requêtes en ajoutant ou en modifiant des index, en ajoutant ou en déplaçant des partitions, en ajoutant des fichiers ou des groupes de fichiers, en défragmentant des index ou en réécrivant des requêtes. Il est également possible d'utiliser les compteurs **Méthodes d'accès** pour surveiller le volume des données, les index ou l'espace libre dans la base de données. Ils indiquent ainsi le volume des données et leur fragmentation pour chaque instance du serveur. Une fragmentation excessive des index peut nuire aux performances.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet **Access Methods** de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs permettant de surveiller l'accès aux données logiques de la base de données. Les compteurs **Gestionnaire de tampons** permettent de surveiller l'accès physique aux pages de bases de données sur le disque. La surveillance des méthodes d'accès aux données de la base de données permet de déterminer s'il est possible d'améliorer les performances des requêtes en ajoutant ou en modifiant des index, en ajoutant ou en déplaçant des partitions, en ajoutant des fichiers ou des groupes de fichiers, en défragmentant des index ou en réécrivant des requêtes. Il est également possible d'utiliser les compteurs **Méthodes d'accès** pour surveiller le volume des données, les index ou l'espace libre dans la base de données. Ils indiquent ainsi le volume des données et leur fragmentation pour chaque instance du serveur. Une fragmentation excessive des index peut nuire aux performances.  
   
  Pour des informations détaillées sur le volume, la fragmentation et l'utilisation des données, utilisez les vues de gestion dynamique suivantes :  
   

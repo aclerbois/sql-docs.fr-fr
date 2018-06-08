@@ -1,29 +1,27 @@
 ---
-title: "Effectuer une évaluation de la migration de SQL Server (Assistant Migration de données) | Documents Microsoft"
-ms.custom: 
+title: Effectuer une évaluation de la migration de SQL Server (Assistant Migration de données) | Documents Microsoft
+ms.custom: ''
 ms.date: 10/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
-helpviewer_keywords: Data Migration Assistant, Assess
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
+helpviewer_keywords:
+- Data Migration Assistant, Assess
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1c23f8d37e7af9daad2af78164a21adbe8c613a3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 30c44a7aba2a721501996d7a1d53a6a4a83a345e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="perform-a-sql-server-migration-assessment"></a>Effectuer une évaluation de la migration de SQL Server
 Les instructions pas à pas suivantes vous aider à effectuer votre première évaluation de la migration vers local SQL Server, SQL Server s’exécutant sur une machine virtuelle Azure, ou la base de données SQL Azure, à l’aide de l’Assistant Migration de données.

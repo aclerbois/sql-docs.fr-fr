@@ -1,34 +1,30 @@
 ---
-title: "RPC:Completed, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: RPC:Completed, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 12/04/2015
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RPC:Completed event class
 ms.assetid: 0d526201-94c9-4e4c-afb1-4213df1815ba
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4f3dd125555180acb996579ff07f184a8092722c
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d0faf036f55d554dc42d9be9d0d44a0a51087f86
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="rpccompleted-event-class"></a>RPC:Completed (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements RPC:Completed indique qu'un appel de procédure distante a été réglé.  
+  La classe d'événements RPC:Completed indique qu'un appel de procédure distante a été réglé.  
   
 ## <a name="rpccompleted-event-class-data-columns"></a>Colonnes de données de la classe d'événements RPC:Completed  
   

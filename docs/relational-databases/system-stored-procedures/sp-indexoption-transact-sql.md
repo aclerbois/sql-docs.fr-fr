@@ -1,16 +1,14 @@
 ---
 title: sp_indexoption (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_indexoption
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_indexoption
 ms.assetid: 75f836be-d322-4a53-a45d-25bee6b42a52
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8b5b63c7f76695853ab216aee1aaab63a3139cc2
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: 6bc44ee2cbce8c96b314172a2bb856a9c3346e2a
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spindexoption-transact-sql"></a>sp_indexoption (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -39,7 +36,7 @@ ms.lasthandoff: 01/02/2018
  Le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] choisit automatiquement le niveau de verrouillage, à savoir table, ligne ou page. Vous n'avez pas besoin de définir ces options manuellement. **sp_indexoption** est destinée aux utilisateurs expérimentés qui savent avec certitude quel type de verrou est toujours.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepNextAvoid](../../includes/ssnotedepnextavoid-md.md)]Au lieu de cela, utilisez [ALTER INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-index-transact-sql.md).  
+>  [!INCLUDE[ssNoteDepNextAvoid](../../includes/ssnotedepnextavoid-md.md)] Au lieu de cela, utilisez [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md).  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -59,7 +56,7 @@ sp_indexoption [ @IndexNamePattern = ] 'table_or_index_name'
  [  **@OptionName =**] **'***option_name***'**  
  Nom d'option d'index. *option_name* est **varchar (35)**, sans valeur par défaut. *option_name* peut avoir l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |**AllowRowLocks**|Si la valeur est TRUE, les verrous de ligne sont autorisés lors de l'accès à l'index. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] détermine le moment où les verrous de ligne sont utilisés. Si la valeur est FALSE, les verrous de ligne ne sont pas utilisés. La valeur par défaut est TRUE.|  
 |**AllowPageLocks**|Si la valeur est TRUE, les verrous de page sont autorisés lors de l'accès à l'index. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] détermine le moment où les verrous de page sont utilisés. Si la valeur est FALSE, les verrous de page ne sont pas utilisés. La valeur par défaut est TRUE.|  
@@ -72,7 +69,7 @@ sp_indexoption [ @IndexNamePattern = ] 'table_or_index_name'
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou supérieur à 0 (échec)  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Les index XML ne sont pas pris en charge. Si un index XML est spécifié ou qu'un nom de table est spécifié sans nom d'index et que la table contient un index XML, l'instruction échoue. Pour définir ces options, utilisez [ALTER INDEX](../../t-sql/statements/alter-index-transact-sql.md) à la place.  
   
  Pour afficher la page Propriétés de verrouillage et ligne actuelle, utilisez [INDEXPROPERTY](../../t-sql/functions/indexproperty-transact-sql.md) ou [sys.indexes](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md) vue de catalogue.  

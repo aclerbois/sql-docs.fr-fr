@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLProcedureColumns | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLProcedureColumns
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLProcedureColumns
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLProcedureColumns
-helpviewer_keywords: SQLProcedureColumns function [ODBC]
+f1_keywords:
+- SQLProcedureColumns
+helpviewer_keywords:
+- SQLProcedureColumns function [ODBC]
 ms.assetid: 4ca37b28-a6df-465b-8988-d422d37fc025
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c5d5ceb9f955d8eb583181d789847eeb79d1b0a5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3077585de15ac3ceb42ce1b1d258c67178fe2e0a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlprocedurecolumns-function"></a>Fonction SQLProcedureColumns
 **Mise en conformité**  
@@ -63,7 +64,7 @@ SQLRETURN SQLProcedureColumns(
  *NameLength1*  
  [Entrée] Longueur en caractères de **CatalogName*.  
   
- *SchemaName*  
+ *schemaName*  
  [Entrée] Modèle de recherche de chaîne pour les noms de schéma de procédure. Si un pilote prend en charge les schémas pour certaines procédures, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, une chaîne vide (« ») indique les procédures qui n’ont pas de schémas.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_TRUE, *SchemaName* est traité comme un identificateur et ses cas n’est pas significatif. S’il s’agit de SQL_FALSE, *SchemaName* est un argument de valeur de modèle ; il est traité littéralement, et ses cas est significatif.  
@@ -79,7 +80,7 @@ SQLRETURN SQLProcedureColumns(
  *NameLength3*  
  [Entrée] Longueur en caractères de **ProcName*.  
   
- *Nom de colonne*  
+ *ColumnName*  
  [Entrée] Modèle de recherche de chaîne pour les noms de colonne.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_TRUE, *ColumnName* est traité comme un identificateur et ses cas n’est pas significatif. S’il s’agit de SQL_FALSE, *ColumnName* est un argument de valeur de modèle ; il est traité littéralement, et ses cas est significatif.  
@@ -93,7 +94,7 @@ SQLRETURN SQLProcedureColumns(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLProcedureColumns** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLProcedureColumns** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -158,7 +159,7 @@ SQLRETURN SQLProcedureColumns(
   
 |Nom de colonne|Numéro de colonne|Type de données|Commentaires|  
 |-----------------|-------------------|---------------|--------------|  
-|PROCEDURE_CAT (ODBC VERSION 2.0)| 1|Varchar|Nom du catalogue de procédure ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines procédures, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les procédures qui n’ont pas de catalogues.|  
+|PROCEDURE_CAT (ODBC VERSION 2.0)|1|Varchar|Nom du catalogue de procédure ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines procédures, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les procédures qui n’ont pas de catalogues.|  
 |PROCEDURE_SCHEM (ODBC VERSION 2.0)|2|Varchar|Nom de schéma de procédure ; NULL si non applicable à la source de données. Si un pilote prend en charge les schémas pour certaines procédures, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les procédures qui n’ont pas de schémas.|  
 |NOM_PROCÉDURE (ODBC VERSION 2.0)|3|Varchar non NULL|Nom de la procédure. Une chaîne vide est retournée pour une procédure qui n’a pas de nom.|  
 |COLUMN_NAME (ODBC VERSION 2.0)|4|Varchar non NULL|Nom de colonne de procédure. Le pilote retourne une chaîne vide pour une colonne de procédure qui n’a pas de nom.|  

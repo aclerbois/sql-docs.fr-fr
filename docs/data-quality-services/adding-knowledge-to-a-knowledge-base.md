@@ -2,29 +2,30 @@
 title: Ajout de connaissances à une base de connaissances | Microsoft Docs
 ms.custom: ''
 ms.date: 06/04/2013
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: da148a7f-55bc-4990-a157-e61968b831d7
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 50aa4f48ea862facd6863d59f47128f0376a4e12
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 012d198b941623bb93b660f1a0e5ce310905914e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-knowledge-to-a-knowledge-base"></a>Ajout de connaissances à une base de connaissances
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit les différentes façons d'ajouter des connaissances à une base de connaissances dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Avant de pouvoir effectuer des opérations de qualité des données, vous devez disposer de connaissances sur les données. Pour acquérir ces connaissances, vous devez créer et maintenir une base de connaissances de qualité des données, et y ajouter des connaissances liées à un type spécifique de source de données. La base de connaissances est un référentiel de connaissances sur vos données qui vous permet de comprendre vos données et de préserver leur intégrité.  
   
  La base de connaissances contient des domaines de données en rapport avec la source de données. Pour chaque domaine de données, la base de données DQKB stocke l'ensemble des termes, fautes d'orthographe, règles de validation et d'entreprise, et données de référence identifiés qui peuvent être utilisés pour effectuer des actions de qualité des données sur la source de données. DQS utilise ces connaissances pour identifier les données incorrectes ou non valides, ou pour effectuer des mises en correspondance.  

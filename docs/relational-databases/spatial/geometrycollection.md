@@ -1,35 +1,34 @@
 ---
 title: GeometryCollection | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - GeomCollection geometry subtype [SQL Server]
 - geometry subtypes [SQL Server]
 ms.assetid: 4445c0d9-a66b-4d7c-88e4-a66fa6f7d9fd
-caps.latest.revision: 
+caps.latest.revision: 17
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 30eca98c9f63563e5556cb7db440f9a9f472abe2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 19b017f9a097b1bf18db2c9d79aaf5793de007a3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="geometrycollection"></a>GeometryCollection
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Un objet **GeometryCollection** est une collection de zéro ou plusieurs instances de **geometry** ou **geography** . Un objet **GeometryCollection** peut être vide.  
+  Un objet **GeometryCollection** est une collection de zéro ou plusieurs instances de **geometry** ou **geography** . Un objet **GeometryCollection** peut être vide.  
   
 ## <a name="geometrycollection-instances"></a>Instances GeometryCollection  
   

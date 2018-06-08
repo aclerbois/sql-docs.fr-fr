@@ -1,28 +1,26 @@
 ---
 title: Fonction de SQLSetConnectAttrForDbcInfo | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetConnectAttrForDbcInfo function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetConnectAttrForDbcInfo function [ODBC]
 ms.assetid: a28fadb9-b998-472a-b252-709507e92005
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8ef62393ac00b7d094e6ba47613038fdf7ac2175
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4c6d7bab7f8c2003c8a48017e7465e200622badf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetconnectattrfordbcinfo-function"></a>SQLSetConnectAttrForDbcInfo (fonction)
 **Mise en conformité**  
@@ -45,13 +43,13 @@ SQLRETURN  SQLSetConnectAttrForDbcInfo(
  *hDbcInfoToken*  
  [Entrée] Descripteur du jeton.  
   
- *Attribute*  
+ *Attribut*  
  [Entrée] Attribut à définir. La liste d’attributs valides est spécifiques aux pilotes et les mêmes que pour [SQLSetConnectAttr](../../../odbc/reference/syntax/sqlsetconnectattr-function.md).  
   
  *ValuePtr*  
  [Entrée] Pointeur vers la valeur à associer à *attribut*. Selon la valeur de *attribut*, *ValuePtr* correspond à une valeur d’entier non signé 32 bits ou pointe vers une chaîne de caractères terminée par null. Notez que si le *attribut* argument est une valeur spécifique au pilote, la valeur de *ValuePtr* peut être un entier signé.  
   
- *StringLength*  
+ *stringLength*  
  [Entrée] Si *attribut* est un attribut défini par ODBC et *ValuePtr* pointe vers une chaîne de caractères ou d’un tampon binaire, cet argument doit être la longueur de **ValuePtr*. Pour les données de chaîne de caractères, cet argument doit contenir le nombre d’octets dans la chaîne.  
   
  Si *attribut* est un attribut défini par ODBC et *ValuePtr* est un entier, *StringLength* est ignoré.  
@@ -72,7 +70,7 @@ SQLRETURN  SQLSetConnectAttrForDbcInfo(
 ## <a name="diagnostics"></a>Diagnostics  
  Identique à [SQLSetConnectAttr](../../../odbc/reference/syntax/sqlsetconnectattr-function.md), sauf que le Gestionnaire de pilotes utilisera un **HandleType** de SQL_HANDLE_DBC_INFO_TOKEN et un **gérer** de *hDbcInfoToken*.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  **SQLSetConnectAttrForDbcInfo** est identique à **SQLSetConnectAttr**, mais il définit l’attribut sur le jeton d’informations de connexion, au lieu de sur le handle de connexion. Par exemple, si **SQLSetConnectAttr** ne reconnaît pas un attribut, **SQLSetConnectAttrForDbcInfo** doit aussi retourner SQL_ERROR pour cet attribut.  
   
  Chaque fois que le pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le pilote doit ignorer cet attribut pour calculer l’ID du pool. En outre, le Gestionnaire de pilotes obtiendra les informations de diagnostic à partir de *hDbcInfoToken*et retourne SQL_SUCCESS_WITH_INFO, à l’application dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) et [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md). Par conséquent, une application peut récupérer des détails sur la raison pour laquelle certains attributs ne peut pas être définis.  

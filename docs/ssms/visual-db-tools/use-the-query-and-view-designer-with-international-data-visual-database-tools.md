@@ -1,16 +1,15 @@
 ---
-title: "Utiliser le Concepteur de requêtes et de vues avec des données internationales | Microsoft Docs"
-ms.custom: 
+title: Utiliser le Concepteur de requêtes et de vues avec des données internationales | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Visual Database Tools [SQL Server], international data
 - queries [SQL Server], international data
@@ -24,19 +23,19 @@ helpviewer_keywords:
 - SQL pane [Visual Database Tools]
 - multiple language support [SQL Server], Query and View Designer
 ms.assetid: 4b51c56f-f902-4e72-b919-e36127369b63
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 729e6f96755bc033ac151fdd24526eaeb9fafc15
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 21490c08899d7dc154840dd3196ae32e22850f37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-the-query-and-view-designer-with-international-data-visual-database-tools"></a>Utiliser le Concepteur de requêtes et de vues avec des données internationales (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez utiliser le [Concepteur de requêtes et de vues](../../ssms/visual-db-tools/query-and-view-designer-tools-visual-database-tools.md) quelle que soit la langue utilisée dans les données et le système d’exploitation Windows. Vous trouverez ci-dessous les quelques différences que vous pourrez rencontrer ainsi que des informations sur la gestion des données dans des applications internationales.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez utiliser le [Concepteur de requêtes et de vues](../../ssms/visual-db-tools/query-and-view-designer-tools-visual-database-tools.md) quelle que soit la langue utilisée dans les données et le système d’exploitation Windows. Vous trouverez ci-dessous les quelques différences que vous pourrez rencontrer ainsi que des informations sur la gestion des données dans des applications internationales.  
   
 ## <a name="localized-information-in-the-criteria-and-sql-panes"></a>Informations localisées dans les volets Critères et SQL  
 Si vous utilisez le volet Critères pour créer votre requête, vous pouvez entrer vos informations dans le format prévu sur votre ordinateur, dans les Paramètres régionaux de Windows. Par exemple, si vous recherchez des données, vous pouvez entrer les données dans les colonnes Critères en utilisant le format auquel vous êtes habitué, avec les quelques exceptions suivantes :  

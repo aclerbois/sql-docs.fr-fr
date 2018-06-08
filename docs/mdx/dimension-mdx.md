@@ -1,30 +1,20 @@
 ---
 title: Dimension (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: Dimension
-dev_langs: kbMDX
-helpviewer_keywords: Dimension function
-ms.assetid: 0e3ce539-1d34-45ca-8342-67796e11b730
-caps.latest.revision: "32"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 0da55878251f8235b9e262e38356a0eacc19d3a1
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: af73d6f08432a63a207c06d361354d6e45b6a07d
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577931"
 ---
 # <a name="dimension-mdx"></a>Dimension (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -82,10 +72,10 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Nombre &#40; Niveaux de hiérarchie &#41; &#40; MDX &#41;](../mdx/count-hierarchy-levels-mdx.md)   
- [Nombre &#40; Définir le &#41; &#40; MDX &#41;](../mdx/count-set-mdx.md)   
- [Niveaux &#40; MDX &#41;](../mdx/levels-mdx.md)   
- [Les membres &#40; Définir le &#41; &#40; MDX &#41;](../mdx/members-set-mdx.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Nombre &#40;des niveaux de hiérarchie&#41; &#40;MDX&#41;](../mdx/count-hierarchy-levels-mdx.md)   
+ [Nombre &#40;définir&#41; &#40;MDX&#41;](../mdx/count-set-mdx.md)   
+ [Niveaux &#40;MDX&#41;](../mdx/levels-mdx.md)   
+ [Membres &#40;définir&#41; &#40;MDX&#41;](../mdx/members-set-mdx.md)   
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

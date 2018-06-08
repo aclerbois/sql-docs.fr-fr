@@ -1,16 +1,14 @@
 ---
-title: sys.fn_my_permissions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.fn_my_permissions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.fn_my_permissions_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - fn_my_permissions function
 - sys.fn_my_permissions function
 ms.assetid: 30f97f00-03d8-443a-9de9-9ec420b7699b
-caps.latest.revision: 
+caps.latest.revision: 21
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 3c83af3c3c59b52a4a7c9fb2e127ab3bd03fb87d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b837943f16a7c8882b4e35aef3f769a3d731cd38
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfnmypermissions-transact-sql"></a>sys.fn_my_permissions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,10 +47,10 @@ fn_my_permissions ( securable , 'securable_class' )
   
 ## <a name="arguments"></a>Arguments  
  *securable*  
- Indique le nom de l'élément sécurisable. Si l'élément sécurisable est le serveur ou une base de données, cette valeur doit être définie sur NULL. *élément sécurisable* est une expression scalaire de type **sysname**. *élément sécurisable* peut être un nom en plusieurs parties.  
+ Indique le nom de l'élément sécurisable. Si l'élément sécurisable est le serveur ou une base de données, cette valeur doit être définie sur NULL. *securable* est une expression scalaire de type **sysname**. *élément sécurisable* peut être un nom en plusieurs parties.  
   
  '*securable_class*'  
- Nom de la classe de l'élément sécurisable pour lequel les autorisations sont affichées. *securable_class* est un **sysname**. *securable_class* doit être une des opérations suivantes : rôle d’APPLICATION, ASSEMBLY, clé asymétrique, certificat, contrat, de base de données, point de terminaison, FULLTEXT CATALOG, LOGIN, MESSAGE TYPE, objet, REMOTE SERVICE BINDING, rôle, itinéraire, schéma, serveur, SERVICE, clé symétrique, TYPE, utilisateur, COLLECTION de schémas XML.  
+ Nom de la classe de l'élément sécurisable pour lequel les autorisations sont affichées. *securable_class* est un **sysname**. *securable_class* doit être une des opérations suivantes : rôle d’APPLICATION, ASSEMBLY, une clé asymétrique, certificat, contrat, de base de données, point de terminaison, FULLTEXT CATALOG, LOGIN, MESSAGE TYPE, objet, REMOTE SERVICE BINDING, rôle, itinéraire, schéma, serveur, SERVICE , CLÉ SYMÉTRIQUE, TYPE, UTILISATEUR, COLLECTION DE SCHÉMAS XML.  
   
 ## <a name="columns-returned"></a>Colonnes retournées  
  Le tableau suivant répertorie les colonnes qui **fn_my_permissions** retourne. Chaque ligne renvoyée décrit une autorisation détenue par le contexte de sécurité actuel sur l'élément sécurisable. Renvoie NULL si la requête échoue.  

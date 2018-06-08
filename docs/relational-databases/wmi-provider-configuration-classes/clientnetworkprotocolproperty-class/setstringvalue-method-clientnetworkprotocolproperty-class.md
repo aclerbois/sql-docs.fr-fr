@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetStringValue (classe ClientNetworkProtocolProperty) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetStringValue (classe ClientNetworkProtocolProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetStringValue Method (ClientNetworkProtocolProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetStringValue method
 ms.assetid: 88d67b22-0eea-48c9-ab73-e0b4907953df
-caps.latest.revision: 
+caps.latest.revision: 12
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 85367d0a254f0f9941b5b41e2c02f0fadb9f1949
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: ccb88c9c6291dad3e65b941e322dbc0a3f3d1164
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setstringvalue-method-clientnetworkprotocolproperty-class"></a>Méthode SetStringValue (classe ClientNetworkProtocolProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

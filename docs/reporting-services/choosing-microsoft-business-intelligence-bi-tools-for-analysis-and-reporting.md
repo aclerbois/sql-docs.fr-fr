@@ -1,27 +1,25 @@
 ---
-title: "Choix des outils Microsoft Business Intelligence (BI) pour l’analyse et les rapports | Microsoft Docs"
-ms.custom: 
+title: Choix des outils Microsoft Business Intelligence (BI) pour l’analyse et les rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 09/12/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: d0e16108-7123-4788-87b3-05db962dbc94
-caps.latest.revision: 
+caps.latest.revision: 16
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: fca144fd34a3b0e506ab19daba46c16b3760a0e8
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b0268948fe26b5f1f008cd2a3fbc2c5e83bc6c03
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choosing-microsoft-business-intelligence-bi-tools-for-analysis-and-reporting"></a>Choix des outils Microsoft Business Intelligence (BI) pour l’analyse et les rapports
 Le choix de l’outil professionnel approprié de Business Intelligence peut être accablant. En savoir plus sur les différentes offres de Microsoft et trouver celle qui convient le mieux à vos besoins.

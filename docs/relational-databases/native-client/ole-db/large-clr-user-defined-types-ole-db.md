@@ -1,29 +1,28 @@
 ---
-title: "Types CLR volumineux définis par l’utilisateur (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Types CLR volumineux définis par l’utilisateur (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - large CLR user-defined types [OLE DB]
 ms.assetid: 4bf12058-0534-42ca-a5ba-b1c23b24d90f
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a6bdb5767937e4fbfdf7dd92cc683fe7830e066a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6959f7e6993a6d9f024a8201056f57c0b85b54f1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="large-clr-user-defined-types-ole-db"></a>Types CLR volumineux définis par l'utilisateur (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 01/25/2018
 
   Cette rubrique traite des modifications apportées à OLE DB dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client pour prendre en charge les types définis par l'utilisateur (UDT) du CLR (Common Language Runtime) volumineux.  
   
- Pour plus d’informations sur la prise en charge pour les UDT volumineux du CLR dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client, consultez [Large CLR User-Defined Types](../../../relational-databases/native-client/features/large-clr-user-defined-types.md). Pour obtenir un exemple, consultez [utilisation grand CLR UDT &#40; OLE DB &#41;](../../../relational-databases/native-client-ole-db-how-to/use-large-clr-udts-ole-db.md).  
+ Pour plus d’informations sur la prise en charge pour les UDT volumineux du CLR dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client, consultez [Large CLR User-Defined Types](../../../relational-databases/native-client/features/large-clr-user-defined-types.md). Pour obtenir un exemple, consultez [utilisation grand CLR UDT &#40;OLE DB&#41;](../../../relational-databases/native-client-ole-db-how-to/use-large-clr-udts-ole-db.md).  
   
 ## <a name="data-format"></a>Format de données  
  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client utilise ~0 pour représenter la longueur des valeurs qui sont de taille illimitée pour les types d'objets volumineux (LOB). ~0 représente également la taille des types UDT du CLR supérieurs à 8 000 octets.  

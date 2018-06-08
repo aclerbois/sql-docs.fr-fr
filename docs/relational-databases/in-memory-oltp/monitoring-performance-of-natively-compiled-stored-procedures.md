@@ -1,35 +1,33 @@
 ---
-title: "Surveillance des performances des procédures stockées compilées en mode natif | Microsoft Docs"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: sql-non-specified
+title: Surveillance des performances des procédures stockées compilées en mode natif | Microsoft Docs
+ms.custom: ''
+ms.date: 04/03/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 55548cb2-77a8-4953-8b5a-f2778a4f13cf
-caps.latest.revision: 
+caps.latest.revision: 11
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a5f180e94f835adaa91812e0341dab85d382c2c2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d62096acba1d44cfa15af8ae6028ec2b756a117c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="monitoring-performance-of-natively-compiled-stored-procedures"></a>Surveillance des performances des procédures stockées compilées en mode natif
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-  Cette rubrique explique comment surveiller les performances des procédures stockées compilées en mode natif.  
+  Cet article explique comment surveiller les performances des procédures stockées compilées en mode natif et celles d’autres modules T-SQL compilés en mode natif.  
   
 ## <a name="using-extended-events"></a>Utilisation des événements étendus  
- Utilisez l’événement étendu **sp_statement_completed** pour tracer l’exécution d’une requête. Créez une session d'événements étendus avec cet événement, éventuellement avec un filtre sur object_id pour une procédure stockée compilée en mode natif. L'événement étendu est déclenché après l'exécution de chaque requête. Le temps processeur et la durée signalés par l'événement étendu indiquent l'UC utilisée par la requête et le temps d'exécution. Une procédure stockée compilée en mode natif qui utilise beaucoup de temps processeur peut rencontrer des problèmes de performances.  
+ Utilisez l’événement étendu **sp_statement_completed** pour tracer l’exécution d’une requête. Créez une session d’événements étendus avec cet événement, éventuellement avec un filtre sur object_id pour une procédure stockée compilée en mode natif. L’événement étendu est déclenché après l’exécution de chaque requête. Le temps processeur et la durée signalés par l'événement étendu indiquent l'UC utilisée par la requête et le temps d'exécution. Une procédure stockée compilée en mode natif qui utilise beaucoup de temps processeur peut rencontrer des problèmes de performances.  
   
  Vous pouvez utiliser**line_number**et **object_id** dans l’événement étendu pour analyser la requête. La requête suivante peut être utilisée pour extraire la définition de procédure. Le numéro de ligne peut être utilisé pour identifier la requête dans la définition :  
   
@@ -39,21 +37,39 @@ select [definition] from sys.sql_modules where object_id=object_id
   
  Pour plus d’informations sur l’événement étendu **sp_statement_completed** , consultez [Procédure : extraire l’instruction qui a provoqué un événement](http://blogs.msdn.com/b/extended_events/archive/2010/05/07/making-a-statement-how-to-retrieve-the-t-sql-statement-that-caused-an-event.aspx).  
   
-## <a name="using-data-management-views"></a>Utilisation des vues de gestion des données  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la collecte de statistiques d'exécution des procédures stockées compilées en mode natif, au niveau de la procédure et au niveau de la requête. Le collecte des statistiques d'exécution n'est pas activée par défaut en raison de l'impact sur les performances.  
-  
- Vous pouvez activer et désactiver la collecte de statistiques sur les procédures stockées compilées en mode natif par le biais de [sys.sp_xtp_control_proc_exec_stats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-proc-exec-stats-transact-sql.md).  
-  
- Quand la collecte de statistiques est activée avec [sys.sp_xtp_control_proc_exec_stats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-proc-exec-stats-transact-sql.md), vous pouvez utiliser [sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md) pour surveiller les performances d’une procédure stockée compilée en mode natif.  
-  
- Quand la collecte de statistiques est activée avec [sys.sp_xtp_control_query_exec_stats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-query-exec-stats-transact-sql.md), vous pouvez utiliser [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md) pour surveiller les performances d’une procédure stockée compilée en mode natif.  
-  
- Au démarrage de la collection, activez la collection de statistiques. Ensuite, exécutez la procédure stockée compilée en mode natif. À l'issue de la collection, désactivez la collection de statistiques. Ensuite, analysez les statistiques d'exécution retournées par les vues de gestion dynamique.  
-  
+## <a name="using-data-management-views-and-query-store"></a>Utilisation des vues de gestion des données et du magasin des requêtes
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et [!INCLUDE[ssSDS](../../includes/sssds-md.md)] prennent en charge la collecte de statistiques d’exécution des procédures stockées compilées en mode natif, au niveau de la procédure et au niveau de la requête. Le collecte des statistiques d'exécution n'est pas activée par défaut en raison de l'impact sur les performances.  
+
+Les statistiques d’exécution sont présentées dans les vues système [sys.dm_exec_procedure_stats](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md) et [sys.dm_exec_query_stats](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md), ainsi que dans le [magasin des requêtes](../../relational-databases/performance/monitoring-performance-by-using-the-query-store.md).
+
+### <a name="enabling-procedure-level-execution-statistics-collection"></a>Activation de la collecte des statistiques d’exécution au niveau de la procédure
+
+**[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]** : pour activer ou désactiver la collecte des statistiques sur les procédures stockées compilées en mode natif au niveau de la procédure, utilisez [sys.sp_xtp_control_proc_exec_stats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-proc-exec-stats-transact-sql.md).  L’instruction suivante active la collecte des statistiques d’exécution au niveau de la procédure pour tous les modules T-SQL compilés en mode natif sur l’instance actuelle :
+```sql
+EXEC sys.sp_xtp_control_proc_exec_stats 1
+```
+
+**[!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]** : pour activer ou désactiver la collecte des statistiques sur les procédures stockées compilées en mode natif au niveau de la procédure, utilisez l’option de [configuration délimitée à la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) `XTP_PROCEDURE_EXECUTION_STATISTICS`. L’instruction suivante active la collecte des statistiques d’exécution au niveau de la procédure pour tous les modules T-SQL compilés en mode natif dans la base de données actuelle :
+```sql
+ALTER DATABASE SCOPED CONFIGURATION SET XTP_PROCEDURE_EXECUTION_STATISTICS = ON
+```
+
+### <a name="enabling-query-level-execution-statistics-collection"></a>Activation de la collecte des statistiques d’exécution au niveau de la requête
+
+**[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]** : pour activer ou désactiver la collecte des statistiques sur les procédures stockées compilées en mode natif au niveau de la requête, utilisez [sys.sp_xtp_control_query_exec_stats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-control-query-exec-stats-transact-sql.md).  L’instruction suivante active la collecte des statistiques d’exécution au niveau de la requête pour tous les modules T-SQL compilés en mode natif sur l’instance actuelle :
+```sql
+EXEC sys.sp_xtp_control_query_exec_stats 1
+```
+
+**[!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]** : pour activer ou désactiver la collecte des statistiques sur les procédures stockées compilées en mode natif au niveau de l’instruction, utilisez l’option de [configuration délimitée à la base de données](../../t-sql/statements/alter-database-scoped-configuration-transact-sql.md) `XTP_QUERY_EXECUTION_STATISTICS`. L’instruction suivante active la collecte des statistiques d’exécution au niveau de la requête pour tous les modules T-SQL compilés en mode natif dans la base de données actuelle :
+```sql
+ALTER DATABASE SCOPED CONFIGURATION SET XTP_QUERY_EXECUTION_STATISTICS = ON
+```
+
+## <a name="sample-queries"></a>Exemples de requêtes
+
  Une fois recueillies, les statistiques d’exécution des procédures stockées compilées en mode natif peuvent être interrogées pour une procédure à l’aide de [sys.dm_exec_procedure_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-procedure-stats-transact-sql.md) et pour les requêtes à l’aide de [sys.dm_exec_query_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-stats-transact-sql.md).  
-  
-> [!NOTE]  
->  Pour les procédures stockées compilées en mode natif avec collection de statistiques activée, le temps de travail est collecté en millisecondes. Si la requête s'exécute en moins d'une milliseconde, la valeur est 0. Pour les procédures stockées compilées en mode natif, **total_worker_time** peut être inexact si plusieurs exécutions sont réalisées en moins d’une milliseconde.  
+ 
   
  La requête suivante retourne les noms de procédure et les statistiques d'exécution des procédures stockées compilées en mode natif dans la base de données active, après collection de statistiques :  
   
@@ -77,7 +93,7 @@ from sys.sql_modules where uses_native_compilation=1)
 order by total_worker_time desc  
 ```  
   
- La requête suivante retourne le texte des requêtes ainsi que les statistiques d'exécution de toutes les requêtes dans les procédures stockées compilées en mode natif dans la base de données active pour laquelle les statistiques ont été collectées, triées par temps total de travail, dans l'ordre décroissant :  
+ La requête suivante retourne le texte des requêtes ainsi que les statistiques d'exécution de toutes les requêtes dans les procédures stockées compilées en mode natif dans la base de données active pour laquelle les statistiques ont été collectées, triées par temps total de travail, dans l'ordre décroissant :  
   
 ```sql  
 select st.objectid,   
@@ -99,7 +115,9 @@ where  st.dbid=db_id() and st.objectid in (select object_id
 from sys.sql_modules where uses_native_compilation=1)  
 order by qs.total_worker_time desc  
 ```  
-  
+
+## <a name="query-execution-plans"></a>Plans d’exécution de requête
+
  Les procédures stockées compilées en mode natif prennent en charge SHOWPLAN_XML (plan d'exécution de requêtes). Le plan d'exécution estimé permet d'inspecter le plan de requête, afin de trouver des problèmes de plan erroné. Causes courantes de plans incorrects :  
   
 -   Les statistiques n'ont pas été mises à jour avant de créer la procédure.  

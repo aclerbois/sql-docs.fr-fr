@@ -1,30 +1,27 @@
 ---
-title: "Vue d’ensemble des schémas et données multidimensionnels | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Vue d’ensemble des schémas et données multidimensionnels | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - multidimensional schemas and data
 ms.assetid: ce37fa06-c581-4d80-9a9b-c3aa66408909
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 518cb68ec75fb998ee2a53500db0dc096a38d678
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e7dad7be35de7e15ae560f56c3ad51f7222be53b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="overview-of-multidimensional-schemas-and-data"></a>Vue d’ensemble des schémas et données multidimensionnels
 ## <a name="understanding-multidimensional-schemas"></a>Présentation des schémas multidimensionnels  
@@ -65,15 +62,15 @@ Hamburg, Munich, Stuttgart}
   
  Chaque niveau a un jeu de membres, comme suit :  
   
--   Le monde`= {All}`  
+-   Le monde `= {All}`  
   
--   Continents`= {North America, Europe}`  
+-   Continents `= {North America, Europe}`  
   
--   Pays`= {Canada, USA, UK, Germany}`  
+-   Pays `= {Canada, USA, UK, Germany}`  
   
--   Régions`= {Canada-East, Canada-West, USA-NE, USA-NW, USA-SE, USA-SW, England, Ireland, Scotland, Wales, Germany-North, Germany-South}`  
+-   Régions `= {Canada-East, Canada-West, USA-NE, USA-NW, USA-SE, USA-SW, England, Ireland, Scotland, Wales, Germany-North, Germany-South}`  
   
--   Villes`= {Ottawa, Toronto, Vancouver, Calgary, Seattle, Boise, Los Angeles, Houston, Shreveport, Miami, Boston, New York, London, Dover, Glasgow, Edinburgh, Cardiff, Pembroke, Belfast, Derry, Berlin, Hamburg, Munich, Stuttgart}`  
+-   Villes `= {Ottawa, Toronto, Vancouver, Calgary, Seattle, Boise, Los Angeles, Houston, Shreveport, Miami, Boston, New York, London, Dover, Glasgow, Edinburgh, Cardiff, Pembroke, Belfast, Derry, Berlin, Hamburg, Munich, Stuttgart}`  
   
 ### <a name="members"></a>Membres  
  Membres de niveau feuille d’une hiérarchie ont pas d’enfants, et membres au niveau racine ont aucun parent. Tous les autres membres ont au moins un parent et au moins un enfant. Par exemple, un parcours partiels de l’arborescence de la hiérarchie dans la dimension Geography génère les relations parent-enfant suivantes :  

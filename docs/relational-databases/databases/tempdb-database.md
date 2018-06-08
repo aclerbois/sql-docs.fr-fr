@@ -1,17 +1,17 @@
 ---
-title: "tempdb, base de données | Microsoft Docs"
-description: "Cette rubrique fournit des détails sur la configuration et l’utilisation de la base de données tempdb dans SQL Server et Azure SQL Database"
+title: tempdb, base de données | Microsoft Docs
+description: Cette rubrique fournit des détails sur la configuration et l’utilisation de la base de données tempdb dans SQL Server et Azure SQL Database
 ms.custom: P360
 ms.date: 12/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
+ms.service: ''
 ms.component: databases
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - temporary tables [SQL Server], tempdb database
 - tempdb database [SQL Server], about tempdb
@@ -20,16 +20,18 @@ helpviewer_keywords:
 ms.assetid: ce4053fb-e37a-4851-b711-8e504059a780
 author: stevestein
 ms.author: sstein
-manager: jhubbard
+manager: craigg
 ms.reviewer: carlrab
-ms.openlocfilehash: 813f361d52b4f4bbd3a9b9f5693278d08ac9432c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f01d67583604948c32968c90975bcfd184a11c38
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tempdb-database"></a>Base de données tempdb
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] La base de données système **tempdb** est une ressource globale disponible pour tous les utilisateurs connectés à l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou à SQL Database. La base de données tempdb peut stocker les éléments suivants :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  La base de données système **tempdb** est une ressource globale à la disposition de tous les utilisateurs connectés à l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou à SQL Database. La base de données tempdb peut stocker les éléments suivants :  
   
 - Les **objets utilisateurs** temporaires créés explicitement, tels que les tables et index temporaires locaux ou globaux, les procédures stockées temporaires, les variables de table, les tables retournées dans des fonctions table, ou les curseurs.  
 - Les **objets internes** créés par le moteur de base de données. notamment :
@@ -105,6 +107,9 @@ Les opérations effectuées dans **tempdb** font l’objet d’un enregistrement
   
 ## <a name="tempdb-database-in-sql-database"></a>Base de données tempdb dans SQL Database
 
+
+### <a name="tempdb-sizes-for-dtu-based-service-tiers"></a>Tailles de tempdb pour les niveaux de service basés sur DTU
+
 |SLO|Taille maximale du fichier de données tempdb (Mo)|Nombre de fichiers de données tempdb|Taille maximale des données tempdb (Mo)|
 |---|---:|---:|---:|
 |Simple|14,225| 1|14,225|
@@ -128,6 +133,9 @@ Les opérations effectuées dans **tempdb** font l’objet d’un enregistrement
 |Pools élastiques De base (toutes les configurations de DTU)|14,225|12|170,700| 
 ||||
 
+### <a name="tempdb-sizes-for-vcore-based-service-tiers"></a>Tailles de tempdb pour les niveaux de service basés sur vCore
+
+Consultez les limites des ressources basées sur vCore](https://review.docs.microsoft.com/azure/sql-database/sql-database-vcore-resource-limits)
 
 ## <a name="restrictions"></a>Restrictions  
  Les opérations suivantes ne peuvent pas être effectuées sur la base de données **tempdb** :  

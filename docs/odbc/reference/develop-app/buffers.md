@@ -1,16 +1,14 @@
 ---
-title: "Mémoires tampons | Documents Microsoft"
-ms.custom: 
+title: Mémoires tampons | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - input buffers [ODBC]
 - length/indicator buffers [ODBC]
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - application buffers [ODBC]
 - buffers [ODBC]
 ms.assetid: 42c5226c-cb40-4d1e-809f-2ea50ce6bd55
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ceb263eb42a4ef58c38f18eba98736a4c9de89e2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 90162445e385f42ed4b69232e58b63d3e7e8d52a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="buffers"></a>Mémoires tampons
 Une mémoire tampon est tout élément de la mémoire de l’application utilisée pour passer des données entre l’application et le pilote. Par exemple, mémoires tampons d’application peuvent être associées, ou *lié,* avec les colonnes du jeu de résultats **SQLBindCol**. Comme chaque ligne est extraite, les données sont retournées pour chaque colonne dans ces mémoires tampons. *Entrée de mémoires tampons* sont utilisés pour passer des données à partir de l’application au pilote ; *tampons de sortie* sont utilisées pour retourner des données à partir du pilote à l’application.  
@@ -40,7 +37,7 @@ Une mémoire tampon est tout élément de la mémoire de l’application utilis�
   
  Ces mémoires tampons sont généralement fournis par paires. *Mémoires tampons de données* sont utilisée pour transmettre les données proprement dites, alors que *tampons de l’indicateur/longueur* sont utilisés pour passer la longueur des données dans le tampon de données ou une valeur spéciale tels que SQL_NULL_DATA, ce qui indique que les données sont NULL. La longueur des données dans un tampon de données est différente de la taille du tampon de données. L’illustration suivante montre la relation entre la mémoire tampon de données et de la mémoire tampon de longueur / d’indicateur.  
   
- ![Mémoire tampon de données et longueur &#47; de la mémoire tampon d’indicateur](../../../odbc/reference/develop-app/media/pr09.gif "pr09")  
+ ![Mémoire tampon de données et longueur&#47;tampon de l’indicateur](../../../odbc/reference/develop-app/media/pr09.gif "pr09")  
   
  Une mémoire tampon de longueur / d’indicateur est nécessaire chaque fois que le tampon de données contient des données de longueur variable, telles que binaire ou caractère. Si la mémoire tampon de données contient des données de longueur fixe, par exemple une structure entier ou date, une mémoire tampon de longueur / d’indicateur est nécessaire que pour passer des valeurs d’indicateur, car la longueur des données est déjà connue. Si une application utilise une mémoire tampon de longueur / d’indicateur avec des données de longueur fixe, le pilote ignore toutes les longueurs passées dans celui-ci.  
   

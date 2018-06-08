@@ -1,16 +1,14 @@
 ---
 title: CREATE EVENT NOTIFICATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE_EVENT_NOTIFICATION_TSQL
@@ -26,16 +24,15 @@ helpviewer_keywords:
 - events [SQL Server], notifications
 - event notifications [SQL Server], creating
 ms.assetid: dbbff0e8-9e25-4f12-a1ba-e12221d16ac2
-caps.latest.revision: 
+caps.latest.revision: 64
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e171027878b85c0df5ce25756f2a223675d21feb
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: 00939442ed98e69daf12b8450fce7a98586ea9b1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-event-notification-transact-sql"></a>CREATE EVENT NOTIFICATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -78,13 +75,13 @@ TO SERVICE 'broker_service' , { 'broker_instance_specifier' | 'current database'
  WITH FAN_IN  
  Indique à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d'envoyer un seul message par événement au service spécifié pour toutes les notifications d'événement qui :  
   
--   Sont créées pour le même événement.  
+-   sont créées pour le même événement ;  
   
--   Sont créées par le même principal (identifié par le même SID).  
+-   sont créées par le même principal (identifié par le même SID).  
   
 -   Spécifient le même service et *broker_instance_specifier*.  
   
--   Spécifient WITH FAN_IN.  
+-   spécifient WITH FAN_IN.  
   
  Par exemple, trois notifications d'événements sont créées. Toutes les notifications d'événements spécifient FOR ALTER_TABLE, WITH FAN_IN, la même clause TO SERVICE, et sont créées par le même identificateur de sécurité (SID). Lorsqu'une instruction ALTER TABLE est exécutée, les messages créés par ces trois notifications d'événements sont fusionnés en un message. Par conséquent, le service cible reçoit uniquement un message de l'événement.  
   
@@ -137,7 +134,7 @@ TO SERVICE 'broker_service' , { 'broker_instance_specifier' | 'current database'
 > [!NOTE]  
 >  Dans les exemples A et B ci-dessous, le GUID dans la clause `TO SERVICE 'NotifyService'` ('8140a771-3c4b-4479-8ac0-81008ab17984') est spécifique à l'ordinateur sur lequel l'exemple a été installé. Pour cette instance, il s'agit du GUID de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)].  
 >   
->  Pour copier et exécuter ces exemples, vous devez remplacer ce GUID par un GUID de votre ordinateur et de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Comme expliqué dans la section Arguments ci-dessus, vous pouvez acquérir le **'***broker_instance_specifier***'** en interrogeant la colonne service_broker_guid de la vue de catalogue sys.databases.  
+>  Pour copier et exécuter ces exemples, vous devez remplacer ce GUID par un GUID de votre ordinateur et de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Comme expliqué dans la section Arguments ci-dessus, vous pouvez acquérir **'***broker_instance_specifier***'** en interrogeant la colonne service_broker_guid de la vue de catalogue sys.databases.  
   
 ### <a name="a-creating-an-event-notification-that-is-server-scoped"></a>A. Création d'une notification d'événement dont l'étendue correspond au serveur  
  L'exemple suivant crée les objets nécessaires pour configurer un service cible à l'aide de [!INCLUDE[ssSB](../../includes/sssb-md.md)]. Le service cible fait référence au type de message et de contrat du service à l'origine de l'initialisation spécifique aux notifications d'événements La notification d'événement est ensuite créée sur le service cible qui envoie une notification chaque fois qu'un événement de trace `Object_Created` se produit sur l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
@@ -186,7 +183,7 @@ WHERE name = 'log_ddl1';
 ```  
   
 ### <a name="d-getting-information-about-an-event-notification-that-is-database-scoped"></a>D. Obtention d'informations sur une notification d'événement dont l'étendue correspond à une base de données  
- L'exemple suivant interroge la vue de catalogue `sys.event_notifications` pour obtenir des métadonnées sur la notification d'événement `Notify_ALTER_T1` créée avec une étendue de base de données.  
+ L'exemple suivant interroge l'affichage catalogue `sys.event_notifications` pour obtenir des métadonnées sur la notification d'événement `Notify_ALTER_T1` créée avec une étendue de base de données.  
   
 ```sql  
 SELECT * FROM sys.event_notifications  

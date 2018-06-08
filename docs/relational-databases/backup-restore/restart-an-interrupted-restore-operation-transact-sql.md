@@ -1,17 +1,14 @@
 ---
-title: "Redémarrer une opération de restauration interrompue (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Redémarrer une opération de restauration interrompue (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interrupted restore operation
 - restoring databases [SQL Server], restarting interrupted operation
@@ -20,19 +17,19 @@ helpviewer_keywords:
 - restarting interrupted restore operation
 - restoring interrupted operation [SQL Server]
 ms.assetid: 6413a07d-fd90-448d-8f29-12c5a1972618
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5cba33054e2b0d3251d3e297adef003c4eb3240
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 4559e789e2161c7a0144629615979ce9e262314a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restart-an-interrupted-restore-operation-transact-sql"></a>Redémarrer une opération de restauration interrompue (Transact-SQL)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment redémarrer une opération de restauration interrompue.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment redémarrer une opération de restauration interrompue.  
   
 ### <a name="to-restart-an-interrupted-restore-operation"></a>Pour redémarrer une opération de restauration interrompue  
   

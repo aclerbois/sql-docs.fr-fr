@@ -1,30 +1,28 @@
 ---
 title: Prise en charge de Hadoop et HDFS dans Integration Services (SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - SQL13.SSIS.HADOOP.F1
 ms.assetid: fea03c62-9361-4b6f-b4ce-8fe0f94b34f2
-caps.latest.revision: 
+caps.latest.revision: 6
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e60b390dcb8549c1e776f83ef00049ff1b78d3ce
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 44ab62115a02e39fc40b653689a997f9eafd8e5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hadoop-and-hdfs-support-in-integration-services-ssis"></a>Prise en charge de Hadoop et HDFS dans Integration Services (SSIS)
   SQL Server 2016 Integration Services (SSIS) inclut les composants ci-après qui offrent une prise en charge de Hadoop et HDFS en local.  

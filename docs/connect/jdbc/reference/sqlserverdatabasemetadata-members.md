@@ -1,27 +1,24 @@
 ---
 title: Membres de SQLServerDatabaseMetaData | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 327ba0bc-438a-494c-b119-1cd4a096bb58
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a467dca2697056235c1ac4584f6eea299d5f0e17
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 99e11d827cfc8e81f00a471b06521f33e872d64e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverdatabasemetadata-members"></a>Membres de SQLServerDatabaseMetaData
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -51,7 +48,7 @@ ms.lasthandoff: 11/18/2017
 |[dataDefinitionIgnoredInTransactions](../../../connect/jdbc/reference/datadefinitionignoredintransactions-method-sqlserverdatabasemetadata.md)|Récupère les informations déterminant si cette base de données ignore une instruction de définition des données dans une transaction.|  
 |[deletesAreDetected](../../../connect/jdbc/reference/deletesaredetected-method-sqlserverdatabasemetadata.md)|Récupère, supprimer ou non d’une ligne visible peut être détectée en appelant le [rowDeleted](../../../connect/jdbc/reference/rowdeleted-method-sqlserverresultset.md) méthode de la [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) classe.|  
 |[doesMaxRowSizeIncludeBlobs](../../../connect/jdbc/reference/doesmaxrowsizeincludeblobs-method-sqlserverdatabasemetadata.md)|Récupère si la valeur de retour pour la [getMaxRowSize](../../../connect/jdbc/reference/getmaxrowsize-method-sqlserverdatabasemetadata.md) méthode inclut les types de données SQL LONGVARCHAR et LONGVARBINARY.|  
-|[getAttributes](../../../connect/jdbc/reference/getattributes-method-sqlserverdatabasemetadata.md)|Récupère une description de l'attribut donné du type donné pour un type défini par l'utilisateur disponible dans le schéma et le catalogue donnés.|  
+|[GetAttributes](../../../connect/jdbc/reference/getattributes-method-sqlserverdatabasemetadata.md)|Récupère une description de l'attribut donné du type donné pour un type défini par l'utilisateur disponible dans le schéma et le catalogue donnés.|  
 |[getBestRowIdentifier](../../../connect/jdbc/reference/getbestrowidentifier-method-sqlserverdatabasemetadata.md)|Récupère une description du jeu optimal de colonnes d'une table qui identifie une ligne de façon unique.|  
 |[getCatalogs](../../../connect/jdbc/reference/getcatalogs-method-sqlserverdatabasemetadata.md)|Récupère les noms de catalogues disponibles sur le serveur connecté.|  
 |[getCatalogSeparator](../../../connect/jdbc/reference/getcatalogseparator-method-sqlserverdatabasemetadata.md)|Récupère le **chaîne** que cette base de données utilise en tant que séparateur entre un nom de table et de catalogue.|  
@@ -119,10 +116,10 @@ ms.lasthandoff: 11/18/2017
 |[getTables](../../../connect/jdbc/reference/gettables-method-sqlserverdatabasemetadata.md)|Récupère une description des tables disponibles dans le modèle de nom de catalogue, de schéma ou de table donné.|  
 |[getTableTypes](../../../connect/jdbc/reference/gettabletypes-method-sqlserverdatabasemetadata.md)|Récupère les types de tables disponibles dans la base de données actuelle.|  
 |[getTimeDateFunctions](../../../connect/jdbc/reference/gettimedatefunctions-method-sqlserverdatabasemetadata.md)|Récupère une liste séparée par des virgules des fonctions de date et heure disponibles avec cette base de données.|  
-|[getTypeInfo](../../../connect/jdbc/reference/gettypeinfo-method-sqlserverdatabasemetadata.md)|Récupère une description de tous les types SQL standard pris en charge par la base de données actuelle.|  
+|[GetTypeInfo](../../../connect/jdbc/reference/gettypeinfo-method-sqlserverdatabasemetadata.md)|Récupère une description de tous les types SQL standard pris en charge par la base de données actuelle.|  
 |[getUDTs](../../../connect/jdbc/reference/getudts-method-sqlserverdatabasemetadata.md)|Récupère une description des types définis par l'utilisateur dans un schéma particulier.|  
-|[getURL.](../../../connect/jdbc/reference/geturl-method-sqlserverdatabasemetadata.md)|Récupère l'URL pour cette base de données.|  
-|[getUserName](../../../connect/jdbc/reference/getusername-method-sqlserverdatabasemetadata.md)|Récupère le nom d'utilisateur tel qu'il est connu dans cette base de données.|  
+|[getURL](../../../connect/jdbc/reference/geturl-method-sqlserverdatabasemetadata.md)|Récupère l'URL pour cette base de données.|  
+|[GetUserName](../../../connect/jdbc/reference/getusername-method-sqlserverdatabasemetadata.md)|Récupère le nom d'utilisateur tel qu'il est connu dans cette base de données.|  
 |[getVersionColumns](../../../connect/jdbc/reference/getversioncolumns-method-sqlserverdatabasemetadata.md)|Récupère une description des colonnes d'une table qui reflète automatiquement la mise à jour d'une valeur d'une ligne.|  
 |[insertsAreDetected](../../../connect/jdbc/reference/insertsaredetected-method-sqlserverdatabasemetadata.md)|Récupère ou non une insertion de ligne visible peut être détectée en appelant la méthode [rowInserted](../../../connect/jdbc/reference/rowinserted-method-sqlserverresultset.md) méthode de la [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) classe.|  
 |[isCatalogAtStart](../../../connect/jdbc/reference/iscatalogatstart-method-sqlserverdatabasemetadata.md)|Récupère les informations déterminant si un catalogue s'affiche au début d'un nom de table complet.|  

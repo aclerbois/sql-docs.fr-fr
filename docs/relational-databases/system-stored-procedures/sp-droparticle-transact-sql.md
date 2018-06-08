@@ -1,16 +1,15 @@
 ---
 title: sp_droparticle (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_droparticle
 ms.assetid: 09fec594-53f4-48a5-8edb-c50731c7adb2
-caps.latest.revision: 
+caps.latest.revision: 25
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c2d3ec47a41e2783bc5bab5a5eaaf1a4cedd3de
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a05199bb255a3ae4050f2bca7a6d2f4352d5533a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdroparticle-transact-sql"></a>sp_droparticle (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -67,13 +65,13 @@ sp_droparticle [ @publication= ] 'publication'
   
  **1** indique que les modifications apportées à l’article peuvent invalider l’instantané n’est pas valide, s’il existe des abonnements nécessitant un nouvel instantané pour générer un nouvel instantané et de l’instantané existant soit marqué comme obsolète.  
   
- [  **@publisher** =] **'***publisher***'**  
+ [ **@publisher**=] **'***publisher***'**  
  Spécifie un non -[!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveur de publication. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  *serveur de publication* ne doit pas être utilisé lors de la modification des propriétés de l’article sur un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] serveur de publication.  
   
- [  **@from_drop_publication** =] *from_drop_publication*  
+ [ **@from_drop_publication**=] *from_drop_publication*  
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -82,23 +80,23 @@ sp_droparticle [ @publication= ] 'publication'
 ## <a name="remarks"></a>Notes  
  **sp_droparticle** est utilisé dans la réplication transactionnelle et d’instantané.  
   
- Pour les articles filtrés horizontalement, **sp_droparticle** vérifie le **type** colonne de l’article dans la [sysarticles &#40; Transact-SQL &#41; ](../../relational-databases/system-tables/sysarticles-transact-sql.md) table afin de déterminer si une vue ou un filtre doit également être supprimé. Si une vue ou un filtre ont été générés automatiquement, ils sont supprimés avec l'article. S'ils ont été créés manuellement, ils ne sont pas supprimés.  
+ Pour les articles filtrés horizontalement, **sp_droparticle** vérifie le **type** colonne de l’article dans la [sysarticles &#40;Transact-SQL&#41; ](../../relational-databases/system-tables/sysarticles-transact-sql.md) table déterminer si une vue ou un filtre doit également être supprimé. Si une vue ou un filtre ont été générés automatiquement, ils sont supprimés avec l'article. S'ils ont été créés manuellement, ils ne sont pas supprimés.  
   
  L’exécution de **sp_droparticle** pour supprimer un article d’une publication ne supprime pas l’objet à partir de la base de données de publication ou de l’objet correspondant de la base de données d’abonnement. Utilisez `DROP <object>` pour supprimer ces objets manuellement si nécessaire.  
   
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_droparticle](../../relational-databases/replication/codesnippet/tsql/sp-droparticle-transact-_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_droparticle**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Supprimer un Article](../../relational-databases/replication/publish/delete-an-article.md)   
  [Ajouter et supprimer des articles de publications existantes](../../relational-databases/replication/publish/add-articles-to-and-drop-articles-from-existing-publications.md)   
- [sp_addarticle &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md)   
+ [sp_addarticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addarticle-transact-sql.md)   
  [sp_changearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changearticle-transact-sql.md)   
  [sp_helparticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helparticle-transact-sql.md)   
- [sp_helparticlecolumns &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helparticlecolumns-transact-sql.md)   
+ [sp_helparticlecolumns &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helparticlecolumns-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  
   
   

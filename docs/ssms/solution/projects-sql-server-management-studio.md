@@ -1,30 +1,29 @@
 ---
 title: Projets (SQL Server Management Studio) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c13af859-ca66-4e43-b76a-0650ac6566c0
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6aee221e94bfddd9ef968d5868c07ae2d9291d91
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: f2329d95d6f93ad639d85ce85f3d1f35752eaef0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="projects-sql-server-management-studio"></a>Projets (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Un projet [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)] est une collection de scripts et de fichiers associés de façon logique qui peuvent être enregistrés ensemble en vue de l’administration et du développement d’une base de données.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Un projet [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)] est une collection de scripts et de fichiers associés de façon logique qui peuvent être enregistrés ensemble en vue de l'administration et du développement d'une base de données.  
   
 ## <a name="script-project-overview"></a>Vue d'ensemble des projets de script  
 [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] sont affichés dans le composant Explorateur de solutions de [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)]. Une projet de script peut contenir aucun ou plusieurs fichiers de projet. Vous pouvez ajouter un projet à une solution ou combiner plusieurs projets dans une solution.  

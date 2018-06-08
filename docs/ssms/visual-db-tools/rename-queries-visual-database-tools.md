@@ -1,33 +1,32 @@
 ---
-title: "Renommer des requêtes (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Renommer des requêtes (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - renaming queries
 - queries [SQL Server], names
 ms.assetid: a263483e-87ba-49c4-b154-3e7bdf33063b
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3648fff573d8f687f7d91a99bd58a7c7525a76bf
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 5a84cfa1ff23526899175ac4d53c5f5f086381d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rename-queries-visual-database-tools"></a>Renommer des requêtes (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez renommer toute requête qui n’est pas actuellement ouverte en vue de la modifier. La procédure suivante suppose que la requête que vous souhaitez renommer est fermée.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez renommer toute requête qui n'est pas actuellement ouverte en vue de la modifier. La procédure suivante suppose que la requête que vous souhaitez renommer est fermée.  
   
 ### <a name="to-rename-a-query"></a>Pour renommer une requête  
   

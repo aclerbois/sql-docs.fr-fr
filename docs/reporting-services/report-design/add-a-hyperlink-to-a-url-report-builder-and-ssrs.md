@@ -1,27 +1,25 @@
 ---
-title: "Ajouter un lien hypertexte à une URL (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajouter un lien hypertexte à une URL (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/07/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d3392c0b-7b62-4d27-bc04-2bd0c5487d08
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: bfecbec1812a15ec582c8e5d91afb8e471f8de3d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 80fb8d9b4f416933e19931aeb29fdb33f533e9f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-a-hyperlink-to-a-url-report-builder-and-ssrs"></a>Ajouter un lien hypertexte à une URL (Générateur de rapports et SSRS)
 Découvrez comment ajouter des actions de lien hypertexte à des zones de texte, des images, des graphiques et des jauges aux rapports paginés [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)]  . Les liens peuvent mener à d’autres rapports, aux signets d’un rapport ou à des URL dynamiques ou statiques. 

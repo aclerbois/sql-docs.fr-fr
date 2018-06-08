@@ -1,30 +1,28 @@
 ---
-title: "Instances du moteur de base de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Instances du moteur de base de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: af9ae643-9866-4014-b36f-11ab556a773e
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 64065e9cf9ce2429ba98b8ca46bac3b000020d6b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 34db3b2fe4d33fd7680fe22ecca31f5885742916
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-engine-instances-sql-server"></a>Instances du moteur de base de données (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] est une copie de l’exécutable **sqlservr.exe** qui s’exécute en tant que service du système d’exploitation. Chaque instance gère plusieurs bases de données système et une ou plusieurs bases de données utilisateur. Chaque ordinateur peut exécuter plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Les applications se connectent à l'instance afin d'effectuer des travaux dans une base de données gérée par l'instance.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] est une copie de l’exécutable **sqlservr.exe** qui s’exécute en tant que service du système d’exploitation. Chaque instance gère plusieurs bases de données système et une ou plusieurs bases de données utilisateur. Chaque ordinateur peut exécuter plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Les applications se connectent à l'instance afin d'effectuer des travaux dans une base de données gérée par l'instance.  
   
 ## <a name="instances"></a>Instances  
  Une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] s'exécute en tant que service, celui-ci gérant toutes les demandes des applications concernant l'utilisation des données dans les bases de données gérées par cette instance. Il s'agit de la cible des demandes de connexion émanant des applications. La connexion passe par une connexion réseau si l'application et l'instance se trouvent sur des ordinateurs différents. Si l'application et l'instance se trouvent sur le même ordinateur, la connexion SQL Server peut s'exécuter en tant que connexion réseau ou en tant que connexion en mémoire. Une fois qu'une connexion est établie, une application envoie des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] sur la connexion à l'instance. L'instance résout les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] en opérations sur les données et les objets dans les bases de données. Si les autorisations requises ont été accordées aux informations d'identification de la connexion, l'instance effectue le travail. Toutes les données récupérées sont retournées à l'application, de même que les éventuels messages (notamment les erreurs).  

@@ -1,39 +1,105 @@
 ---
 title: SQL Server Management Studio - Journal des modifications (SSMS) | Microsoft Docs
 ms.custom: ''
-ms.date: 03/20/2018
-ms.prod: sql-non-specified
+ms.date: 05/09/2018
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 3dc76cc1-3b4c-4719-8296-f69ec1b476f9
-caps.latest.revision: ''
+caps.latest.revision: 72
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9865ff96b084d70b3dcd067ad8d57c7cece01a62
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: e5190c4bbd8e0ade4f32831f5d696cc6f26296e5
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sql-server-management-studio---changelog-ssms"></a>SQL Server Management Studio - Journal des modifications (SSMS)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 Cet article fournit des détails sur les mises à jour, les améliorations et les correctifs de bogues des versions actuelles et précédentes de SSMS. Téléchargez les [versions précédentes de SSMS ci-dessous](#previous-ssms-releases).
 
 
-## <a name="ssms-176download-sql-server-management-studio-ssmsmd"></a>[SSMS 17.6](download-sql-server-management-studio-ssms.md)
+## <a name="ssms-177download-sql-server-management-studio-ssmsmd"></a>[SSMS 17.7](download-sql-server-management-studio-ssms.md)
 
-Numéro de version : 17.6<br>
+Numéro de version : 17.7<br>
+Numéro de build : 14.0.17254.0<br>
+Date de sortie : 9 mai 2018
+
+### <a name="whats-new"></a>Nouveautés
+
+**SSMS général**
+
+Moniteur de réplication :   
+- Le moniteur de réplication prend désormais en charge l’inscription d’un écouteur pour les scénarios où la base de données du serveur de publication et/ou la base de données du serveur de distribution font partie du groupe de disponibilité. Vous pouvez maintenant analyser les environnements de réplication quand la base de données du serveur de publication et ou la base de données de distribution font partie de groupes de disponibilité AlwaysOn. 
+ 
+Azure SQL Data Warehouse : 
+- Ajout de la prise en charge de l’emplacement de ligne rejetée pour les tables externes dans Azure SQL Data Warehouse. 
+
+**Integration Services (IS)**
+
+- Ajout d’une fonctionnalité de planification pour les packages SSIS déployés dans Azure SQL Database. Contrairement à SQL Server local et SQL Database Managed Instance (préversion), qui proposent SQL Server Agent comme planificateur de travaux de première classe, SQL Database n’intègre pas de planificateur. Cette nouvelle fonctionnalité SSMS propose une interface utilisateur bien connue qui s’apparente à celle de SQL Server Agent pour la planification des packages déployés dans SQL Database. Si vous utilisez SQL Database pour héberger la base de données de catalogues SSIS, SSISDB, vous pouvez utiliser cette fonctionnalité SSMS pour générer les pipelines, les activités et les déclencheurs Data Factory nécessaires à la planification de packages SSIS. Vous pouvez ensuite modifier et étendre ces objets dans Data Factory. Pour plus d’informations, consultez [Planifier l’exécution d’un package SSIS sur Azure SQL Database à l’aide de SSMS](../integration-services/lift-shift/ssis-azure-schedule-packages-ssms.md). Pour en savoir plus sur les pipelines, les activités et les déclencheurs Azure Data Factory, consultez [Pipelines et activités dans Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipelines-activities) et [Exécution de pipelines et déclencheurs dans Azure Data Factory](https://docs.microsoft.com/azure/data-factory/concepts-pipeline-execution-triggers).
+- Prise en charge de la planification de packages SSIS dans SQL Agent sur une instance managée SQL. Il est désormais possible de créer des travaux SQL Agent pour exécuter des packages SSIS sur l’instance managée. 
+
+### <a name="bug-fixes"></a>Correctifs de bogues
+
+**SSMS général** 
+
+Plan de maintenance :   
+- Correction d’un problème où toute tentative de modification de la planification d’un plan de maintenance existant se traduisait par la levée d’une exception. Pour plus d’informations, consultez [SSMS 17.6 crashes when clicking on a schedule in a maintenance plan](https://feedback.azure.com/forums/908035-sql-server/suggestions/33712924).
+
+AlwaysOn : 
+- Correction d’un problème où le tableau de bord de latence AlwaysOn ne fonctionnait pas avec SQL Server 2012.
+ 
+Création de scripts : 
+- Correction d’un problème où la création d’un script de procédure stockée pour Azure SQL Data Warehouse ne fonctionnait pas pour un utilisateur non administrateur.
+- Correction d’un problème où la création d’un script de base de données pour Azure SQL Database ne donnait pas lieu à la création d’un script pour les propriétés *SCOPED CONFIGURATION*.
+ 
+Télémétrie : 
+- Correction d’un problème où SSMS se bloquait au moment de se connecter à un serveur après avoir renoncé à l’envoi de données de télémétrie.
+ 
+Azure SQL Database : 
+- Correction d’un problème où l’utilisateur ne pouvait pas définir ou modifier le niveau de compatibilité (liste déroulante vide). Remarque : pour définir le niveau de compatibilité à 150, l’utilisateur doit toujours utiliser le bouton *Script* et modifier manuellement le script. 
+ 
+SMO : 
+- Paramètre Taille du journal des erreurs affiché dans SMO. Pour plus d’informations, consultez [Set the Maximum Size of the SQL Server Error Logs](https://feedback.azure.com/forums/908035-sql-server/suggestions/33624115).  
+- Correction de la création de scripts de sauts de ligne dans SMO sur Linux.
+- Diverses améliorations sur le plan des performances pendant la récupération de propriétés rarement utilisées.  
+
+IntelliSense : 
+- Amélioration des performances : réduction du volume de requêtes IntelliSense pour les données de colonne. Cela est particulièrement utile quand les tables utilisées contiennent une multitude de colonnes. 
+
+Paramètres utilisateur SSMS :
+- Correction d’un problème où la page d’options ne se redimensionnait pas correctement.
+
+Divers :  
+- Amélioration de l’affichage de texte dans la page de *détails des statistiques*. 
+
+**Integration Services (IS)**
+
+- Meilleure prise en charge d’Azure SQL Database Managed Instance.
+- Correction d’un problème où l’utilisateur ne pouvait pas créer de catalogue pour SQL Server 2014 ou version antérieure.
+- Correction de deux problèmes liés aux rapports :
+   - Suppression du nom d’ordinateur pour les serveurs Azure.
+   - Gestion améliorée du nom d’objet localisé.
+
+
+### <a name="known-issues"></a>Problèmes connus
+
+Certaines boîtes de dialogue affichent une erreur d’édition non valide quand les nouvelles éditions *Usage général* ou *Critique pour l’entreprise* d’Azure SQL Database sont utilisées.
+
+## <a name="downloadssdtmediadownloadpng-ssms-176httpsgomicrosoftcomfwlinklinkid870039"></a>![télécharger](../ssdt/media/download.png) [SSMS 17.6](https://go.microsoft.com/fwlink/?linkid=870039)
+
 Numéro de build : 14.0.17230.0<br>
 Date de sortie : 20 mars 2018
+
+[Chinois (République populaire de Chine)](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x804) | [Chinois (Taïwan)](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x404) | [Anglais (États-Unis)](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x409) | [Français](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x40c) | [Allemand | ](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x407)[Italien](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x410) | [Japonais](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x411) | [Coréen](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x412) | [Portugais (Brésil)](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x416) | [Russe](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x419) | [Espagnol](https://go.microsoft.com/fwlink/?linkid=870039&clcid=0x40a)
 
 ### <a name="whats-new"></a>Nouveautés
 
@@ -52,7 +118,6 @@ SQL Database Managed Instance :
    - Prise en charge des travaux de l’Agent SQL.
    - Prise en charge des serveurs liés.
 - Vous pouvez en savoir plus sur les instances managées [ici](https://azure.microsoft.com/blog/migrate-your-databases-to-a-fully-managed-service-with-azure-sql-database-managed-instance/).
-
 
 Explorateur d'objets :
 - Paramètres ajoutés pour ne pas imposer des crochets autour des noms lors d’un glisser-déplacer à partir de l’Explorateur d’objets vers une fenêtre de requête. (Suggestions des utilisateurs [32911933](https://feedback.azure.com/forums/908035-sql-server/suggestions/32911933) et [32671051](https://feedback.azure.com/forums/908035-sql-server/suggestions/32671051).)
@@ -109,7 +174,8 @@ Messagerie de base de données :
 
 ### <a name="known-issues"></a>Problèmes connus
 
-Il n’existe actuellement aucun problème connu dans cette version.
+> [!WARNING]
+> Il existe un problème connu où SSMS 17.6 devient instable et plante lors de l’utilisation de [Plans de maintenance](../relational-databases/maintenance-plans/maintenance-plans.md). Si vous utilisez des plans de maintenance, n’installez pas SSMS 17.6. Revenez à SSMS 17.5 si vous avez déjà installé 17.6 et que ce problème vous affecte. 
 
 ## <a name="previous-ssms-releases"></a>Versions précédentes de SSMS
 
@@ -666,7 +732,7 @@ http://connect.microsoft.com/SQLServer/feedback/details/3106561/sql-server-manag
 - Le fournisseur SQLAS PowerShell : Ajout de la propriété LastProcessed aux dossiers Dimension et MeasureGroup. [Article de Microsoft Connect](http://connect.microsoft.com/SQLServer/feedback/details/3111879)
 - Statistiques sur les requêtes en direct : Résolution d’un problème où elles montraient seulement la première requête dans un lot. [Article de Microsoft Connect] (http://connect.microsoft.com/SQLServer/feedback/details/3114221)  
 - Plan d’exécution de requêtes : Affichage du maximum au lieu de la somme pour les threads dans la fenêtre Propriétés.
-- Magasin de requêtes : Ajout d’un nouveau rapport sur les requêtes avec les variations fortes des exécutions.
+- Magasin de requêtes : Ajout d’un nouveau rapport sur les requêtes avec les variation fortes des exécutions.
 - Problèmes de performances de l’Explorateur d’objets : [Article de Microsoft Connect](http://connect.microsoft.com/SQLServer/feedback/details/3114074)
     - Le menu contextuel pour les tables se bloque momentanément
     - SSMS est lent quand l’utilisateur clique avec le bouton droit sur un index pour une table (via une connexion (Internet) à distance). 

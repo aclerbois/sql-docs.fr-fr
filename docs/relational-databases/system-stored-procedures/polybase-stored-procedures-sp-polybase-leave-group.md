@@ -1,35 +1,30 @@
 ---
-title: sp_polybase_leave_group (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_polybase_leave_group (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: system-stored-procedures
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-polybase
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: polybase
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sp_polybase_leave_group
 - sp_polybase_leave_group_TSQL
 helpviewer_keywords:
 - sp_polybase_leave_group
 ms.assetid: ef87a8f1-5407-47b5-b8bf-bd7d08c0f0fe
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 11
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e108a8013a6d81eeedf1a27e0e294ab702dd56e4
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 8ad3a202ff910d19ea70192eb9cc5e114a8a4cb9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/19/2018
 ---
-# <a name="polybase-stored-procedures---sppolybaseleavegroup"></a>Procédures stockées PolyBase - sp_polybase_leave_group
+# <a name="sppolybaseleavegroup-transact-sql"></a>sp_polybase_leave_group (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
 
   Supprime une instance de SQL Server à partir d’un groupe PolyBase pour le calcul de la montée en puissance parallèle. 

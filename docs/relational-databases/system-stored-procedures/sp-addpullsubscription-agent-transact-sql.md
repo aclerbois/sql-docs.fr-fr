@@ -1,16 +1,15 @@
 ---
 title: sp_addpullsubscription_agent (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addpullsubscription_agent
 ms.assetid: b9c2eaed-6d2d-4b78-ae9b-73633133180b
-caps.latest.revision: 
+caps.latest.revision: 44
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01f7e3cdecd4c0a95c9d91104e2feee39f00252b
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: 82689b234a6294ef4c13c801ba88a7d700b0db44
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddpullsubscriptionagent-transact-sql"></a>sp_addpullsubscription_agent (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -91,7 +89,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
  [  **@publisher=**] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
- [  **@publisher_db=**] **'***publisher_db'*  
+ [  **@publisher_db=**] **' *** publisher_db'*  
  Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, avec NULL comme valeur par défaut. *publisher_db* est ignoré par les serveurs de publication Oracle.  
   
  [  **@publication=**] **'***publication***'**  
@@ -174,7 +172,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
  [  **@frequency_relative_interval=**] *frequency_relative_interval*  
  Date de l'Agent de distribution. Ce paramètre est utilisé lorsque *frequency_type* a la valeur **32** (mensuel relatif). *frequency_relative_interval* est **int**, et peut prendre l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |**1** (par défaut)|Première|  
 |**2**|Seconde|  
@@ -188,7 +186,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
  [  **@frequency_subday=**] *frequency_subday*  
  Fréquence de replanification nécessaire pendant la période définie. *frequency_subday* est **int**, et peut prendre l’une des valeurs suivantes.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |**1** (par défaut)|Une fois|  
 |**2**|Seconde|  
@@ -210,7 +208,7 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
  [  **@active_end_date=**] *active_end_date*  
  Date à laquelle l’Agent de distribution cesse d'être planifié, au format AAAAMMJJ. *active_end_date* est **int**, avec une valeur par défaut **0**.  
   
- [  **@distribution_jobid =**] *id_tâche_distribution***sortie**  
+ [  **@distribution_jobid =**] *id_tâche_distribution *** sortie**  
  ID de l'Agent de distribution pour ce travail. *id_tâche_distribution* est **Binary (16)**, avec la valeur par défaut est NULL et il est un paramètre de sortie.  
   
  [  **@encrypted_distributor_password=**] *mot_de_passe_distributeur_crypté*  
@@ -231,48 +229,48 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
  [  **@ftp_password=**] **'***ftp_password***'**  
  Pour compatibilité descendante uniquement.  
   
- [  **@alt_snapshot_folder=** ] **'***alternate_snapshot_folder'*  
+ [  **@alt_snapshot_folder=** ] **' *** alternate_snapshot_folder'*  
  Indique l'emplacement du dossier de remplacement pour l'instantané. *alternate_snapshot_folder* est **nvarchar (255)**, avec NULL comme valeur par défaut.  
   
- [  **@working_directory** =] **'***working_director***'**  
+ [ **@working_directory**=] **'***working_director***'**  
  Nom du répertoire de travail utilisé pour stocker les fichiers de données et de schéma destinés à la publication. *working_directory* est **nvarchar (255)**, avec NULL comme valeur par défaut. Le nom doit être indiqué au format UNC.  
   
- [  **@use_ftp** =] **'***use_ftp***'**  
+ [ **@use_ftp**=] **'***use_ftp***'**  
  Spécifie l’utilisation de FTP au lieu du protocole usuel pour extraire les instantanés. *use_ftp* est **nvarchar (5)**, avec FALSE comme valeur par défaut.  
   
- [  **@publication_type** =] *publication_type*  
+ [ **@publication_type**=] *publication_type*  
  Indique le type de réplication de la publication. *publication_type* est un **tinyint** avec une valeur par défaut **0**. Si **0**, publication est un type de transaction. Si **1**, publication est de type instantané. Si **2**, publication est un type de fusion.  
   
- [  **@dts_package_name** =] **'***l’argument dts_package_name***'**  
+ [ **@dts_package_name**=] **'***l’argument dts_package_name***'**  
  Spécifie le nom du package DTS. *l’argument dts_package_name* est un **sysname** avec NULL comme valeur par défaut. Par exemple, pour spécifier un package nommé `DTSPub_Package`, le paramètre est le suivant : `@dts_package_name = N'DTSPub_Package'`.  
   
- [  **@dts_package_password** =] **'***dts_package_password***'**  
+ [ **@dts_package_password**=] **'***dts_package_password***'**  
  Spécifie le mot de passe du package, s'il existe. *dts_package_password* est **sysname** avec NULL comme valeur par défaut, ce qui signifie un mot de passe n’est pas sur le package.  
   
 > [!NOTE]  
 >  Vous devez spécifier un mot de passe si *l’argument dts_package_name* est spécifié.  
   
- [  **@dts_package_location** =] **'***dts_package_location***'**  
+ [ **@dts_package_location**=] **'***dts_package_location***'**  
  Spécifie l'emplacement du package. *dts_package_location* est un **nvarchar(12)**, avec une valeur par défaut **abonné**. L’emplacement du package peut être **distributeur** ou **abonné**.  
   
- [  **@reserved** =] **'***réservé***'**  
+ [ **@reserved**=] **'***réservé***'**  
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   
- [  **@offloadagent** =] '*remote_agent_activation*'  
+ [ **@offloadagent**=] '*remote_agent_activation*'  
  > [!NOTE]  
 >  L'activation d'agent distant est déconseillée et n'est plus prise en charge. Ce paramètre est uniquement pris en charge pour assurer la compatibilité descendante des scripts. Paramètre *remote_agent_activation* à une valeur autre que **false** génère une erreur.  
   
- [  **@offloadserver** =] '*remote_agent_server_name*'  
+ [ **@offloadserver**=] '*remote_agent_server_name*'  
  > [!NOTE]  
 >  L'activation d'agent distant est déconseillée et n'est plus prise en charge. Ce paramètre est uniquement pris en charge pour assurer la compatibilité descendante des scripts. Paramètre *remote_agent_server_name* à n’importe quelle valeur non NULL génère une erreur.  
   
- [  **@job_name** =] '*job_name*'  
+ [ **@job_name**=] '*job_name*'  
  Nom d'un travail de l'agent existant. *job_name* est **sysname**, avec NULL comme valeur par défaut. Ce paramètre n'est indiqué que lorsque l'abonnement est synchronisé grâce à un travail existant plutôt qu'un nouveau travail (étant le comportement par défaut). Si vous n’êtes pas un membre de la **sysadmin** rôle serveur fixe, vous devez spécifier *job_login* et *job_password* lorsque vous spécifiez *job_name*.  
   
- [  **@job_login** =] **'***job_login***'**  
+ [ **@job_login**=] **'***job_login***'**  
  Nom de connexion du compte Windows sous lequel l'Agent s'exécute. *job_login* est **nvarchar (257)**, sans valeur par défaut. C'est ce compte Windows qui est destiné à toujours être utilisé pour les connexions des Agents à l'Abonné.  
   
- [  **@job_password** =] **'***job_password***'**  
+ [ **@job_password**=] **'***job_password***'**  
  Mot de passe du compte Windows sous lequel l'Agent s'exécute. *job_password* est **sysname**, sans valeur par défaut.  
   
 > [!IMPORTANT]  
@@ -281,22 +279,22 @@ sp_addpullsubscription_agent [ @publisher = ] 'publisher'
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  **sp_addpullsubscription_agent** est utilisé dans la réplication de capture instantanée et la réplication transactionnelle.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_addtranpullsubscriptionagent](../../relational-databases/replication/codesnippet/tsql/sp-addpullsubscription-a_1.sql)]  
   
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addpullsubscription_agent**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md)   
- [Subscribe to Publications](../../relational-databases/replication/subscribe-to-publications.md)   
- [sp_addpullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addpullsubscription-transact-sql.md)   
- [sp_change_subscription_properties &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-change-subscription-properties-transact-sql.md)   
- [sp_droppullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-droppullsubscription-transact-sql.md)   
- [sp_helppullsubscription &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helppullsubscription-transact-sql.md)   
+ [Créer un abonnement par extraction](../../relational-databases/replication/create-a-pull-subscription.md)   
+ [S’abonner à des publications](../../relational-databases/replication/subscribe-to-publications.md)   
+ [sp_addpullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addpullsubscription-transact-sql.md)   
+ [sp_change_subscription_properties &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-change-subscription-properties-transact-sql.md)   
+ [sp_droppullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-droppullsubscription-transact-sql.md)   
+ [sp_helppullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helppullsubscription-transact-sql.md)   
  [sp_helpsubscription_properties &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpsubscription-properties-transact-sql.md)  
   
   

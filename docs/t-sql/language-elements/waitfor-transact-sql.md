@@ -1,16 +1,14 @@
 ---
 title: WAITFOR (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - WAITFOR
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - WAITFOR statement
 - timing executions
 ms.assetid: 8e896e73-af27-4cae-a725-7a156733f3bd
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 2a1453c5d7beaf9d4ab9d140a0414e730c9d651a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bbf4b982faa988290573368818f4d75961fd38c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="waitfor-transact-sql"></a>WAITFOR (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -65,13 +62,13 @@ WAITFOR
  Période de temps qui doit s'écouler, dans la limite de 24 heures, avant la poursuite de l'exécution d'un traitement d'instructions, d'une procédure stockée ou d'une transaction.  
   
  '*time_to_pass*'  
- Durée de l'attente. *time_to_pass* peut être spécifié dans tout format accepté pour les données **datetime** ou en tant que variable locale. Vous ne pouvez pas spécifier de dates ; par conséquent, la partie date de la valeur **datetime** n’est pas autorisée.  
+ Durée de l'attente. *time_to_pass* peut être spécifié dans tout format accepté pour les données **datetime** ou en tant que variable locale. Vous ne pouvez pas spécifier de dates ; par conséquent, la partie date de la valeur **datetime** n’est pas autorisée. Elle est au format hh:mm[[:ss].mss].
   
  TIME  
  Heure spécifiée de l'exécution du traitement d'instructions, de la procédure stockée ou de la transaction.  
   
  '*time_to_execute*'  
- Heure à laquelle se termine l'instruction WAITFOR. *time_to_execute* peut être spécifié dans tout format accepté pour les données **datetime** ou en tant que variable locale. Vous ne pouvez pas spécifier de dates ; par conséquent, la partie date de la valeur **datetime** n’est pas autorisée.  
+ Heure à laquelle se termine l'instruction WAITFOR. *time_to_execute* peut être spécifié dans tout format accepté pour les données **datetime** ou en tant que variable locale. Vous ne pouvez pas spécifier de dates ; par conséquent, la partie date de la valeur **datetime** n’est pas autorisée. Elle est au format hh:mm[[:ss].mss] et peut facultativement inclure la date au format 1900-01-01.
   
  *receive_statement*  
  Instruction RECEIVE valide.  

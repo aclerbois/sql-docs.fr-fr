@@ -1,30 +1,29 @@
 ---
 title: Champ SSTRANSTIGHTLYCPLD (SQLServerXAResource) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SSTRANSTIGHTLYCPLD Field (SQLServerXAResource)
-apilocation: SSTRANSTIGHTLYCPLD Field (SQLServerXAResource)
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SSTRANSTIGHTLYCPLD Field (SQLServerXAResource)
+apilocation:
+- SSTRANSTIGHTLYCPLD Field (SQLServerXAResource)
 apitype: Assembly
 ms.assetid: 379857c3-9de1-4964-8782-32df317cbfbb
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 88a6ea09e8809ac028b45e2bd0fd2035b095430b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8323c328938188b16d56f9dfa05c3dfd2be16c75
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sstranstightlycpld-field-sqlserverxaresource"></a>Champ SSTRANSTIGHTLYCPLD (SQLServerXAResource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

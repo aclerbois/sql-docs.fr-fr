@@ -1,29 +1,29 @@
 ---
-title: "Utilisation d’OPENJSON avec un schéma explicite (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Utilisation d’OPENJSON avec un schéma explicite (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OPENJSON, with explicit schema
 ms.assetid: 9c1c3bfb-e1ad-4659-b94f-722b0848d5a2
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 13
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a6ba49bfbb64fe21028792330cf7ac19494180d0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 72535459b905822b6f74eb3fd80ba3a9dd669ccc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-openjson-with-an-explicit-schema-sql-server"></a>Utilisation d’OPENJSON avec un schéma explicite (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

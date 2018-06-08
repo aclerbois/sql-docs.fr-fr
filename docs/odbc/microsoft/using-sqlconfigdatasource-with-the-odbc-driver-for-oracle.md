@@ -2,16 +2,13 @@
 title: À l’aide de SQLConfigDatasource avec le pilote ODBC pour Oracle | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
-ms.component: odbc
+ms.prod: sql
+ms.prod_service: connectivity
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLConfigDataSource function [ODBC], ODBC driver for Oracle
 ms.assetid: e535d1ef-aff9-4ae7-a3ed-ef4ca2584289
@@ -19,12 +16,11 @@ caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 90ebd3887adec06bfc0ec100101adf7ad7302645
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 5859b6cc446e74c12b2fb09436246d693a3beea3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-sqlconfigdatasource-with-the-odbc-driver-for-oracle"></a>À l’aide de SQLConfigDatasource avec le pilote ODBC pour Oracle
 > [!IMPORTANT]  

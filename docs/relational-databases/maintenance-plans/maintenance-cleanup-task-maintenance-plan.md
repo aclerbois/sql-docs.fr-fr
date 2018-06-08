@@ -1,35 +1,34 @@
 ---
-title: "Tâche de nettoyage de maintenance (Plan de maintenance) | Microsoft Docs"
-ms.custom: 
+title: Tâche de nettoyage de maintenance (Plan de maintenance) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.maint.cleanup.f1
 helpviewer_keywords:
 - Maintenance Cleanup Task dialog box
 ms.assetid: 022b679c-6799-4c13-9185-814224a20412
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d083329514a3e8a12362bc7277ee50bd34add7d3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 689b00b0da037fd5b72d5b8785c337781cc3e0b8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maintenance-cleanup-task-maintenance-plan"></a>Tâche de nettoyage de maintenance (Plan de maintenance)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez la **Tâche de nettoyage de maintenance** pour supprimer les anciens fichiers associés à des plans de maintenance, notamment les rapports texte créés par les plans de maintenance et les fichiers de sauvegarde de base de données.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez la **Tâche de nettoyage de maintenance** pour supprimer les anciens fichiers associés à des plans de maintenance, notamment les rapports texte créés par les plans de maintenance et les fichiers de sauvegarde de base de données.  
   
 > [!NOTE]  
 >  La tâche de nettoyage de maintenance ne supprime pas automatiquement les fichiers dans les sous-dossiers du répertoire spécifié. Cette fonctionnalité réduit la possibilité d'une attaque malveillante qui utilise la tâche de nettoyage de maintenance pour supprimer des fichiers. Pour supprimer des fichiers dans les sous-dossiers de premier niveau, vous devez sélectionner **Inclure les sous-dossiers de premier niveau**.  

@@ -1,31 +1,28 @@
 ---
-title: "Autres détails de programmation du pilote accès | Documents Microsoft"
-ms.custom: 
+title: Autres détails de programmation du pilote accès | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC desktop database drivers [ODBC], Access driver
 - Jet-based ODBC drivers [ODBC], Access driver
 - desktop database drivers [ODBC], Access driver
 ms.assetid: cbd46df1-cc6d-4fd4-b401-c68ca85e15c6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 702fc3a26fb59ac04074c5d765cf8ccb3f2e76e4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a5fe2c5ceebbd4995a4aba82c00a9da57eed207f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="other-access-driver-programming-details"></a>Autres détails de programmation du pilote Access
 > [!NOTE]  

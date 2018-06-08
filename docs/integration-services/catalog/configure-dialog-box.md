@@ -1,32 +1,30 @@
 ---
-title: "Boîte de dialogue Configurer | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Configurer | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.configure.f1
 - sql13.SSIS.SSMS.ISPROJECTPROP.REFERENCES.F1
 - sql13.SSIS.SSMS.ISPROJECTPROP.PARAMETERS.F1
 ms.assetid: 10183c8d-b1be-420f-972a-96ea97d4f4d8
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77e862cd82fb7eb8afc294871bfcff50e9b49dd1
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 751a027e0b07de1ce451cd77b0e8b05d38f14591
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-dialog-box"></a>Boîte de dialogue Configurer
   Utilisez la boîte de dialogue **Configurer** pour configurer les paramètres, les gestionnaires de connexions, ainsi que les références aux environnements, pour les packages et les projets.  

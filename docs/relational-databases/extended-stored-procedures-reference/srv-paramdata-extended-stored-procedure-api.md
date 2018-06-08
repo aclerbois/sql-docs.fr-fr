@@ -1,16 +1,15 @@
 ---
-title: "srv_paramdata (API de procédure stockée étendue) | Microsoft Docs"
-ms.custom: 
+title: srv_paramdata (API de procédure stockée étendue) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: extended-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - srv_paramdata
@@ -22,22 +21,21 @@ dev_langs:
 helpviewer_keywords:
 - srv_paramdata
 ms.assetid: 3104514d-b404-47c9-b6d7-928106384874
-caps.latest.revision: 
+caps.latest.revision: 30
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e5837ecf48a6e97f5408d86f20b39e057285d64b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
-ms.translationtype: MT
+ms.openlocfilehash: d73d1e6f2cf07edf29d96ef358b085a89e427a5c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="srvparamdata-extended-stored-procedure-api"></a>srv_paramdata (API de procédure stockée étendue)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
     
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez plutôt l'intégration du CLR.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez l’intégration CLR à la place.  
   
  Retourne la valeur d'un paramètre d'appel de procédure stockée distante. Cette fonction a été remplacée par la fonction **srv_paraminfo**.  
   
@@ -62,7 +60,7 @@ n
  Numéro du paramètre. Le premier paramètre est le numéro 1.  
   
 ## <a name="returns"></a>Valeur renvoyée  
- Pointeur vers la valeur de paramètre. Si le *n*ième paramètre a la valeur NULL ou qu’il n’existe pas de *n*ième paramètre ni de procédure stockée distante, la valeur NULL est retournée. Si la valeur de paramètre est une chaîne, elle peut ne pas se terminer par le caractère NULL. Utilisez **srv_paramlen** pour déterminer la longueur de la chaîne.  
+ Pointeur vers la valeur de paramètre. Si le *n*ième paramètre est NULL, qu’il n’y a pas de *n*ième paramètre ou qu’il n’y a aucune procédure stockée distante, la valeur NULL est retournée. Si la valeur de paramètre est une chaîne, elle peut ne pas se terminer par le caractère NULL. Utilisez **srv_paramlen** pour déterminer la longueur de la chaîne.  
   
  Cette fonction retourne les valeurs suivantes, si le paramètre est l’un des types de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les données du pointeur indiquent si le pointeur pour le type de données est valide (VP), NULL ou non applicable (N/A), et le contenu des données désignées par le pointeur.  
   

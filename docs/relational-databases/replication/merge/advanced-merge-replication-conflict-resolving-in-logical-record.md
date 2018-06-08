@@ -1,31 +1,29 @@
 ---
-title: "Détection et résolution des conflits dans les enregistrements logiques | Microsoft Docs"
-ms.custom: 
+title: Détection et résolution des conflits dans les enregistrements logiques | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logical records [SQL Server replication]
 - conflict resolution [SQL Server replication], merge replication
 ms.assetid: f2e55040-ca69-4ccf-97d1-c362e1633f26
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf0e0b8e3ba93be66ad8e4dd64d6d837b294d0a3
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 9c4d0f56f272b9f34765bb719554d4ef97273330
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="advanced-merge-replication-conflict---resolving-in-logical-record"></a>Conflit de réplication de fusion avancée - Résolution dans les enregistrements logiques
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

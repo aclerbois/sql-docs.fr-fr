@@ -1,16 +1,14 @@
 ---
-title: "Taille de l’ensemble de lignes | Documents Microsoft"
-ms.custom: 
+title: Taille de l’ensemble de lignes | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - rowset size [ODBC]
 - cursors [ODBC], block
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - block cursors [ODBC]
 - result sets [ODBC], block cursors
 ms.assetid: 60366ae8-175c-456a-ae5e-bdd860786911
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0eb3e03c3fd2cad60b8f4a0e6c65aaaebbda03bb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c0fa3d2feb8bcd3c4c342567e67f403edfb8029a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rowset-size"></a>Taille de l’ensemble de lignes
 La taille de l’ensemble de lignes à utiliser dépend de l’application. Applications basées sur l’écran suivent généralement une des deux stratégies. La première consiste à définir la taille de l’ensemble de lignes au nombre de lignes affichées sur l’écran ; Si l’utilisateur redimensionne l’écran, l’application modifie la taille de l’ensemble de lignes en conséquence. La seconde consiste à définir la taille de l’ensemble de lignes à un plus grand nombre, telle que 100, ce qui réduit le nombre d’appels à la source de données. L’application fait défiler localement dans l’ensemble de lignes lorsque cela est possible et extrait les nouvelles lignes uniquement lorsqu’il fait défiler à l’extérieur de l’ensemble de lignes.  

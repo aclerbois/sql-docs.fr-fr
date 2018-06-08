@@ -1,17 +1,16 @@
 ---
-title: "Vue d’ensemble du modèle de publication de réplication"
-ms.custom: 
+title: Vue d’ensemble du modèle de publication de réplication
+ms.custom: ''
 ms.date: 09/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], publishing model
 - subscriptions [SQL Server replication], about subscriptions
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - publications [SQL Server replication], about publications
 - Distributors [SQL Server replication]
 ms.assetid: b9567832-e6a8-45b2-a3ed-ea12aa002f4b
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 829b10de456344b75be6f1bbacbde00be3d8c2cf
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 612b3d673a6e6e6d8df8f67aec6a116d82ec0599
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-publishing-model-overview"></a>Vue d’ensemble du modèle de publication de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

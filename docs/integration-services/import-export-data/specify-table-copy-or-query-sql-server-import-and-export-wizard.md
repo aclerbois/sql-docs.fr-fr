@@ -1,30 +1,28 @@
 ---
-title: "Spécifier la copie ou l’interrogation de table (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Spécifier la copie ou l’interrogation de table (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.impexpwizard.specifytablecopyorquery.f1
 ms.assetid: 08aa7158-40e6-4ef3-84d3-1265a8ba194c
-caps.latest.revision: 
+caps.latest.revision: 69
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 56babe19727ca9ac7e0f364f64c91716508f4dfc
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b7ca7c6b24514df7d27c42cfaab8aeb304454d5e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-table-copy-or-query-sql-server-import-and-export-wizard"></a>Spécifier la copie ou l'interrogation de table (Assistant Importation et Exportation SQL Server)
   Une fois que vous avez fourni les informations relatives à la destination de vos données et à la façon de s’y connecter, l’Assistant Importation et Exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche **Spécifier la copie ou l’interrogation de table**. Dans cette page, choisissez l’une des options suivantes.

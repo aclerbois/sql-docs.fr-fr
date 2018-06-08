@@ -1,34 +1,31 @@
 ---
-title: "Instructions SQL saisies par l’utilisateur | Documents Microsoft"
-ms.custom: 
+title: Instructions SQL saisies par l’utilisateur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - user-entered SQL statements [ODBC]
 - SQL statements [ODBC], constructing
 - SQL statements [ODBC], entered by user
 ms.assetid: 109af162-93ba-425a-8fe5-49c7dc7cc784
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d0a6e8d81141c5bfbfe48a5fe234471ffe506f11
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1be7159d7f56226c94b6cbfa335883b73df15de1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-statements-entered-by-the-user"></a>Instructions SQL saisies par l’utilisateur
-Les applications qui effectuent une analyse ad hoc couramment autorisent l’utilisateur à entrer des instructions SQL directement. Exemple :  
+Les applications qui effectuent une analyse ad hoc couramment autorisent l’utilisateur à entrer des instructions SQL directement. Par exemple :  
   
 ```  
 SQLCHAR *     Statement, SqlState[6], Msg[SQL_MAX_MESSAGE_LENGTH];  

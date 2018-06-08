@@ -1,27 +1,25 @@
 ---
-title: "Étape 2 : Créer une base de données SQL pour le développement de ADO.NET | Documents Microsoft"
-ms.custom: 
+title: 'Étape 2 : Créer une base de données SQL pour le développement de ADO.NET | Documents Microsoft'
+ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado-net
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: dd0f6329-d379-458e-aba1-7b0b9e7277ae
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1e5c344cbe7aef66bab9b4812427b747962e46e7
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 3a20f0b0add4807d14f6b3fe69f46648929571c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-2-create-a-sql-database-for-adonet-development"></a>Étape 2 : Créer une base de données SQL pour le développement d’ADO.NET
 

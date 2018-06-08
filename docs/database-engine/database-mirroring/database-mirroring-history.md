@@ -1,31 +1,31 @@
 ---
-title: "Historique de la mise en miroir de bases de données | Microsoft Docs"
-ms.custom: 
+title: Historique de la mise en miroir de bases de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.dbmmonitor.databasemirroringhistory.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.dbmmonitor.databasemirroringhistory.f1
 ms.assetid: 1d6e4b10-4a23-47d7-9918-c417992f09d3
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3e3bf2700f9570a41f07d18d376332080daa99cd
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 512f75d4210ba8d873917552c3eb42c831367b4d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-history"></a>Historique de la mise en miroir de bases de données
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez cette boîte de dialogue pour afficher l’historique d’état de la mise en miroir d’une base de données sur une instance de serveur spécifiée.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez cette boîte de dialogue pour afficher l'historique d'état de la mise en miroir d'une base de données sur une instance de serveur spécifiée.  
   
  **Pour utiliser SQL Server Management Studio pour contrôler la mise en miroir de base de données**  
   

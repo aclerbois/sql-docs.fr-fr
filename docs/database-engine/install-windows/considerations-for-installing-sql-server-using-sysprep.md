@@ -1,27 +1,24 @@
 ---
-title: "Considérations relatives à l’installation de SQL Server à l’aide de SysPrep | Microsoft Docs"
-ms.custom: 
+title: Considérations relatives à l’installation de SQL Server à l’aide de SysPrep | Microsoft Docs
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e1792eeb-2874-4653-b20e-3063f4eb4e5d
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 22
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: e1089089d6e0eb1a3085dad9306a6e598535b739
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6131d50d47c00dd8b36113b65da6ebbb0c9abe7d
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771415"
 ---
 # <a name="considerations-for-installing-sql-server-using-sysprep"></a>Considérations relatives à l'installation de SQL Server à l'aide de SysPrep
 

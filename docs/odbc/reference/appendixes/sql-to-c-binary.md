@@ -1,32 +1,29 @@
 ---
 title: 'SQL C: binaire | Documents Microsoft'
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data from SQL to c types [ODBC], binary
 - binary data type [ODBC]
 - data conversions from SQL to C types [ODBC], binary
 - binary data transfers [ODBC]
 ms.assetid: 8c519072-ae4c-4d32-9d4e-775e3d3d6389
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 293c18d2206d1b034eadc532f8850c6599e904e1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b18b421173945869d5ff57fea8a7716aa0459fb5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-to-c-binary"></a>SQL à c : binaire
 Les identificateurs pour les types de données ODBC SQL binaires sont :  

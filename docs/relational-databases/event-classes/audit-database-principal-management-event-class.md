@@ -1,34 +1,30 @@
 ---
-title: "Audit Database Principal Management, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Database Principal Management, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Database Principal Management event class
 ms.assetid: 594eec78-677c-4500-ae9b-e400abf6f39c
-caps.latest.revision: 
+caps.latest.revision: 19
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 404a0b01294facff15f3f09ba3b6d98ba5e1d567
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 32769a922f686b1c93d7c78f98176aebd48d638c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-database-principal-management-event-class"></a>Audit Database Principal Management (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Database Principal Management** se produit quand des principaux, tels que des utilisateurs, sont créés, modifiés ou supprimés d’une base de données.  
+  La classe d’événements **Audit Database Principal Management** se produit quand des principaux, tels que des utilisateurs, sont créés, modifiés ou supprimés d’une base de données.  
   
 ## <a name="audit-database-principal-management-event-class-data-columns"></a>Colonnes de la classe d'événements Audit Database Principal Management  
   

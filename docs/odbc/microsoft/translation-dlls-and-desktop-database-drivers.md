@@ -1,32 +1,29 @@
 ---
-title: "DLL de traduction et de bureau de base de données pilotes | Documents Microsoft"
-ms.custom: 
+title: DLL de traduction et de bureau de base de données pilotes | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - translation DLLs [ODBC]
 - ODBC desktop database drivers [ODBC], translation DLL
 - Jet-based ODBC drivers [ODBC], translation DLL
 - desktop database drivers [ODBC], translation DLL
 ms.assetid: 09ebe734-39a0-4af0-a39b-1d5479f69635
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 01307593b2729fbf9a0bdfb5ade41f85b843d038
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5fc9d308bf83aa8ee5f7386f30559b269f91baf8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="translation-dlls-and-desktop-database-drivers"></a>DLL de traduction et les pilotes de base de données de bureau
 Non pris en charge.

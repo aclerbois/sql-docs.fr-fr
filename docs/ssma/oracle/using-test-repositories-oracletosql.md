@@ -1,30 +1,28 @@
 ---
-title: "À l’aide de référentiels de Test (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: À l’aide de référentiels de Test (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Test Cases Repository
 - Test Results Repository
 ms.assetid: f941cce4-d3e3-4aeb-a88a-4f101a97a9f4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 4412d7de5cd86071f2d1c25354e85266f33bccc7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: aea9c873a139ed53b64098ef88c9e23aef39bef4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-test-repositories-oracletosql"></a>À l’aide de référentiels de Test (OracleToSQL)
 Le référentiel de Test de SSMA magasins SSMA testeur des cas de test et les résultats des tests pour une utilisation ultérieure. Les données de référentiel sont enregistrées dans les tables SQL Server **TestCaseRepository** et **RunTestCaseResultRepository** dans le schéma **ssma_oracle_utilities** de **ssmatesterdb** base de données.  
@@ -77,11 +75,11 @@ Les informations suivantes sur les résultats des tests s’affiche dans la gril
   
 Les boutons suivants sont disponibles sur la page de résultats de Test :  
   
--   Cliquez sur le **vue** pour ouvrir [afficher des rapports de cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/viewing-test-case-reports-oracletosql.md) de résultat de cas de Test actuel.  
+-   Cliquez sur le **vue** pour ouvrir [afficher des rapports de cas de Test &#40;OracleToSQL&#41; ](../../ssma/oracle/viewing-test-case-reports-oracletosql.md) de résultat de cas de Test actuel.  
   
 -   Cliquez sur le **supprimer** bouton pour supprimer le résultat du Test sélectionné  
   
 ## <a name="see-also"></a>Voir aussi  
-[Exécuter des cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/running-test-cases-oracletosql.md)  
-[Test de migration des objets de base de données &#40; OracleToSQL &#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
+[Exécuter des cas de Test &#40;OracleToSQL&#41;](../../ssma/oracle/running-test-cases-oracletosql.md)  
+[Test de migration des objets de base de données &#40;OracleToSQL&#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
   

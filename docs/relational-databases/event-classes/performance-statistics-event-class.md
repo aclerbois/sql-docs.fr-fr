@@ -1,34 +1,30 @@
 ---
-title: "Performance Statistics, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Performance Statistics, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Performance Statistics event class
 ms.assetid: da9cd2c4-6fdd-4ada-b74f-105e3541393c
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b3b788ea13beced99f19a35707591ecf90c5dd5d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 54ba7634152d355f16d73a48f0a430e83b861fc5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="performance-statistics-event-class"></a>Performance Statistics (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Performance Statistics permet de surveiller les performances des requêtes, des procédures stockées et des déclencheurs en cours d'exécution. Chacune des six sous-classes d'événements indique un événement dans la durée de vie des requêtes, des procédures stockées et des déclencheurs au sein du système. En combinant ces sous-classes d'événements aux vues de gestion dynamique sys.dm_exec_query_stats, sys.dm_exec_procedure_statset sys.dm_exec_trigger_stats correspondantes, vous pouvez reconstituer l'historique des performances d'une requête, d'une procédure stockée ou d'un déclencheur donnés.  
+  La classe d'événements Performance Statistics permet de surveiller les performances des requêtes, des procédures stockées et des déclencheurs en cours d'exécution. Chacune des six sous-classes d'événements indique un événement dans la durée de vie des requêtes, des procédures stockées et des déclencheurs au sein du système. En combinant ces sous-classes d'événements aux vues de gestion dynamique sys.dm_exec_query_stats, sys.dm_exec_procedure_statset sys.dm_exec_trigger_stats correspondantes, vous pouvez reconstituer l'historique des performances d'une requête, d'une procédure stockée ou d'un déclencheur donnés.  
   
 ## <a name="performance-statistics-event-class-data-columns"></a>Colonnes de données de la classe d'événements Performance Statistics  
  Les tableaux suivants décrivent les colonnes des données de la classe d’événements associées à chaque sous-classe des événements suivantes : EventSubClass 0, EventSubClass 1,EventSubClass 2,EventSubClass 3, EventSubClass 4 et EventSubClass 5.  
@@ -61,7 +57,7 @@ La classe d'événements Performance Statistics permet de surveiller les perform
 |DatabaseID|**Int**|ID de la base de données spécifiée par l'instruction USE *database* ou celui de la base de données par défaut si aucune instruction USE *database* n'a été spécifiée pour une instance donnée. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] affiche le nom de la base de données si la colonne de données ServerName est capturée dans la trace et que le serveur est disponible. Déterminez la valeur pour une base de données à l'aide de la fonction DB_ID.|3|Oui|  
 |EventSequence|**Int**|Séquence d'un événement donné au sein de la demande.|51|non|  
 |SessionLoginName|**nvarchar**|Nom de connexion de l'utilisateur à l'origine de la session. Par exemple, si vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en utilisant le nom Connexion1 et que vous exécutez une instruction en tant que Connexion2, SessionLoginName affiche Connexion1 et LoginName, Connexion2. Cette colonne affiche à la fois les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows.|64|Oui|  
-|EventSubClass|**Int**|Type de sous-classe d'événements.<br /><br /> 1 = Les requêtes d'une procédure stockée ont été compilées.<br /><br /> Les types EventSubClass suivants sont générés dans la trace pour les procédures stockées.<br /><br /> Pour les procédures stockées avec un nombre *n* de requêtes :<br /><br /> *n* de type 1|21|Oui|  
+|EventSubClass|**Int**|Type de sous-classe d'événements.<br /><br /> 1 = Les requêtes d'une procédure stockée ont été compilées.<br /><br /> Les types EventSubClass suivants sont générés dans la trace pour les procédures stockées.<br /><br /> Pour les procédures stockées avec un nombre *n* de requêtes :<br /><br /> Nombre*n* de type 1|21|Oui|  
 |IntegerData2|**Int**|Fin de l'instruction dans la procédure stockée.<br /><br /> -1 pour la fin de la procédure stockée.|55|Oui|  
 |ObjectID|**Int**|ID affecté à l'objet par le système.|22|Oui|  
 |Offset|**Int**|Décalage de départ de l'instruction dans la procédure stockée ou le lot.|61|Oui|  
@@ -85,7 +81,7 @@ La classe d'événements Performance Statistics permet de surveiller les perform
 |DatabaseID|**Int**|ID de la base de données spécifiée par l'instruction USE *database* ou celui de la base de données par défaut si aucune instruction USE *database* n'a été spécifiée pour une instance donnée. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] affiche le nom de la base de données si la colonne de données ServerName est capturée dans la trace et que le serveur est disponible. Déterminez la valeur pour une base de données à l'aide de la fonction DB_ID.|3|Oui|  
 |EventSequence|**Int**|Séquence d'un événement donné au sein de la demande.|51|non|  
 |SessionLoginName|**nvarchar**|Nom de connexion de l'utilisateur à l'origine de la session. Par exemple, si vous vous connectez à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en utilisant le nom Connexion1 et que vous exécutez une instruction en tant que Connexion2, SessionLoginName affiche Connexion1 et LoginName, Connexion2. Cette colonne affiche à la fois les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et Windows.|64|Oui|  
-|EventSubClass|**Int**|Type de sous-classe d'événements.<br /><br /> 2 = Les requêtes d'une instruction SQL ad hoc ont été compilées.<br /><br /> Les types EventSubClass suivants sont générés dans la trace pour les traitements ad hoc.<br /><br /> Pour les lots ad hoc avec un nombre *n* de requêtes :<br /><br /> *n* de type 2|21|Oui|  
+|EventSubClass|**Int**|Type de sous-classe d'événements.<br /><br /> 2 = Les requêtes d'une instruction SQL ad hoc ont été compilées.<br /><br /> Les types EventSubClass suivants sont générés dans la trace pour les traitements ad hoc.<br /><br /> Pour les lots ad hoc avec un nombre *n* de requêtes :<br /><br /> Nombre*n* de type 2|21|Oui|  
 |IntegerData2|**Int**|Fin de l'instruction dans le traitement.<br /><br /> -1 pour la fin du traitement.|55|Oui|  
 |ObjectID|**Int**|Néant|22|Oui|  
 |Offset|**Int**|Décalage de départ de l'instruction dans le traitement.<br /><br /> 0 pour le début du traitement.|61|Oui|  

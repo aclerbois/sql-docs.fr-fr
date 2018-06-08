@@ -3,27 +3,24 @@ title: En bloc a été apportée pour une meilleure Types Date et heure (OLE DB)
 description: Modifications de copie en bloc pour une meilleure types date et heure (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-date-time
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - OLE DB, bulk copy operations
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 01bdcb939413fb0ff917d7e037a3ab5124bb4075
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 50917ad4c9d6184c32e8681c9b6bc455f5c61abc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bulk-copy-changes-for-enhanced-date-and-time-types-ole-db"></a>Modifications de copie en bloc pour une meilleure Types Date et heure (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -90,7 +87,7 @@ ms.lasthandoff: 03/30/2018
 |type de stockage de fichier|Type de données du fichier hôte|Tapez dans msoledbsql.h pour une utilisation avec IBCPSession::BCPColFmt|Valeur|  
 |-----------------------|-------------------------|-----------------------------------------------------------|-----------|  
 |DateTime|SQLDATETIME|BCP_TYPE_SQLDATETIME|0x3d|  
-|Smalldatetime|SQLDATETIM4|BCP_TYPE_SQLDATETIME4|0x3a|  
+|Smalldatetime|SQLDATETIM4|BCP_TYPE_SQLDATETIM4|0x3a|  
 |Date|SQLDATE|BCP_TYPE_SQLDATE|0x28|  
 |Time|SQLTIME|BCP_TYPE_SQLTIME|0x29|  
 |Datetime2|SQLDATETIME2|BCP_TYPE_SQLDATETIME2|0x2a|  
@@ -119,21 +116,21 @@ ms.lasthandoff: 03/30/2018
 |Symbole|Signification|  
 |------------|-------------|  
 |-|Aucune conversion n'est prise en charge.<br />|  
-|1|Si les données fournies ne sont pas valides, un enregistrement de diagnostic ODBC est généré avec SQLSTATE 22007 et le message « Format datetime non valide ». Pour les valeurs datetimeoffset, la partie heure doit se situer dans la plage après la conversion au format UTC, même si aucune conversion au format UTC n'est demandée. Ceci tient au fait que TDS et le serveur normalisent toujours l'heure dans les valeurs datetimeoffset pour UTC. Par conséquent, le client doit vérifier que les composants heure se situent dans la plage prise en charge après la conversion au format UTC.|  
+|1|Si les données fournies ne sont pas valides, une erreur est publiée. Pour les valeurs datetimeoffset, la partie heure doit se situer dans la plage après la conversion au format UTC, même si aucune conversion au format UTC n'est demandée. Ceci tient au fait que TDS et le serveur normalisent toujours l'heure dans les valeurs datetimeoffset pour UTC. Par conséquent, le client doit vérifier que les composants heure se situent dans la plage prise en charge après la conversion au format UTC.|  
 |2|Le composant heure est ignoré.|  
-|3|Pour ODBC, s'il se produit une troncation avec perte de données, un enregistrement de diagnostic est généré avec SQLSTATE 22001 et le message « Troncation à droite de la chaîne de données ». Le nombre de chiffres des fractions de seconde (l'échelle) est déterminé à partir de la taille de la colonne de destination, conformément au tableau suivant : Pour les tailles de colonne supérieures à la plage du tableau, une échelle de 7 est nécessaire. Cette conversion accepte jusqu'à neuf chiffres de fractions de seconde, valeur maximale autorisée par ODBC.<br /><br /> **Type :** DBTIME2<br /><br /> **Implicite échelle 0** 8<br /><br /> **Implicite échelle 1..7** 10,16<br /><br /> <br /><br /> **Type :** DBTIMESTAMP<br /><br /> **Implicite échelle 0 :** 19<br /><br /> **Implicite échelle 1..7 :** 21..27<br /><br /> <br /><br /> **Type :** DBTIMESTAMPOFFSET<br /><br /> **Implicite échelle 0 :** 26<br /><br /> **Implicite échelle 1..7 :** 28..34<br /><br /> Pour OLE DB, s'il se produit une troncation avec perte de données, une erreur est publiée. Pour datetime2, le nombre de chiffres des fractions de seconde (l'échelle) est déterminé à partir de la taille de la colonne de destination, conformément au tableau suivant : Pour les tailles de colonne supérieures à la plage du tableau, une échelle de 9 est nécessaire. Cette conversion accepte jusqu'à neuf chiffres de fractions de seconde, valeur maximale autorisée par OLE DB.<br /><br /> **Type :** DBTIME2<br /><br /> **Implicite échelle 0** 8<br /><br /> **Implicite échelle 1..9** 1..9<br /><br /> <br /><br /> **Type :** DBTIMESTAMP<br /><br /> **Implicite échelle 0 :** 19<br /><br /> **Implicite échelle 1..9 :** 21..29<br /><br /> <br /><br /> **Type :** DBTIMESTAMPOFFSET<br /><br /> **Implicite échelle 0 :** 26<br /><br /> **Implicite échelle 1..9 :** 28..36|  
+|3|Si une troncation avec perte de données se produit, une erreur est publiée. Pour datetime2, le nombre de chiffres des fractions de seconde (l'échelle) est déterminé à partir de la taille de la colonne de destination, conformément au tableau suivant : Pour les tailles de colonne supérieures à la plage du tableau, une échelle de 9 est nécessaire. Cette conversion accepte jusqu'à neuf chiffres de fractions de seconde, valeur maximale autorisée par OLE DB.<br /><br /> **Type :** DBTIME2<br /><br /> **Implicite échelle 0** 8<br /><br /> **Implicite échelle 1..9** 1..9<br /><br /> <br /><br /> **Type :** DBTIMESTAMP<br /><br /> **Implicite échelle 0 :** 19<br /><br /> **Implicite échelle 1..9 :** 21..29<br /><br /> <br /><br /> **Type :** DBTIMESTAMPOFFSET<br /><br /> **Implicite échelle 0 :** 26<br /><br /> **Implicite échelle 1..9 :** 28..36|  
 |4|Le composant date est ignoré.|  
 |5|Le composant fuseau horaire est défini au format UTC (par exemple, 00:00).|  
 |6|L'heure est définie avec la valeur zéro.|  
 |7|La date est définie avec la valeur 1900-01-01.|  
 |8|Le décalage horaire est ignoré.|  
-|9|La chaîne est analysée et convertie en valeur date, datetime, datetimeoffset ou time, selon le premier caractère de ponctuation rencontré et la présence de composants restants. La chaîne est ensuite convertie en type cible, selon les règles de la table à la fin de cet article pour le type source découvert par ce processus. Si les données fournies ne peuvent pas être analysées sans erreur, ou si un composant quelconque est en dehors de la plage autorisée, ou s'il n'y a aucune conversion du type de littéral au type cible, une erreur est publiée (OLE DB) ou un enregistrement de diagnostic ODBC est généré avec SQLSTATE 22018 et le message « Valeur de caractère non valide pour la spécification de la casse ». Pour les paramètres datetime et smalldatetime, si l'année est en dehors de la plage prise en charge par ces types, une erreur est publiée (OLE DB) ou un enregistrement de diagnostic ODBC est généré avec SQLSTATE 22007 et le message « Format datetime non valide ».<br /><br /> Pour datetimeoffset, la valeur doit se situer dans la plage après la conversion au format UTC, même si aucune conversion au format UTC n'est demandée. Cela tient au fait que TDS et le serveur normalisent toujours l'heure des valeurs datetimeoffset pour UTC, si bien que le client doit vérifier que les composants heure se situent dans la plage prise en charge après la conversion au format UTC. Si la valeur n'est pas dans la plage UTC prise en charge, une erreur est publiée (OLE DB) ou un enregistrement de diagnostic ODBC est généré avec SQLSTATE 22007 et le message « Format datetime non valide ».|  
-|10|S'il se produit une troncation avec perte de données lors d'une conversion de client à serveur, une erreur est publiée (OLE DB) ou un enregistrement de diagnostic ODBC est généré avec SQLSTATE 22008 et le message « Dépassement de la capacité du champ datetime ». Cette erreur se produit également si la valeur est située en dehors de la plage qui peut être représentée par la plage UTC utilisée par le serveur. S'il se produit une troncation de secondes ou de fractions de seconde lors d'une conversion de serveur à client, seul un avertissement est émis.|  
-|11|S'il se produit une troncation avec perte de données, un enregistrement de diagnostic est généré.<br /><br /> Lors d'une conversion de serveur à client, il s'agit d'un avertissement (ODBC SQLSTATE S1000).<br /><br /> Lors d'une conversion de client à serveur, il s'agit d'une erreur (ODBC SQLSTATE 22001).|  
+|9|La chaîne est analysée et convertie en valeur date, datetime, datetimeoffset ou time, selon le premier caractère de ponctuation rencontré et la présence de composants restants. La chaîne est ensuite convertie en type cible, selon les règles de la table à la fin de cet article pour le type source découvert par ce processus. Si les données fournies ne peuvent pas être analysées sans erreur, ou si n’importe quelle partie du composant est en dehors de la plage autorisée, ou s’il n’existe aucune conversion de type de littéral en type cible, une erreur est publiée. Pour les paramètres datetime et smalldatetime, si l’année est en dehors de la plage que prise en charge de ces types, une erreur est publiée.<br /><br /> Pour datetimeoffset, la valeur doit se situer dans la plage après la conversion au format UTC, même si aucune conversion au format UTC n'est demandée. Cela tient au fait que TDS et le serveur normalisent toujours l'heure des valeurs datetimeoffset pour UTC, si bien que le client doit vérifier que les composants heure se situent dans la plage prise en charge après la conversion au format UTC. Si la valeur n’est pas dans la plage UTC prise en charge, une erreur est publiée.|  
+|10|Client pour les conversions de serveur, si une troncation avec perte de données se produit une erreur est envoyée. Cette erreur se produit également si la valeur est située en dehors de la plage qui peut être représentée par la plage UTC utilisée par le serveur. S'il se produit une troncation de secondes ou de fractions de seconde lors d'une conversion de serveur à client, seul un avertissement est émis.|  
+|11|Client pour les conversions de serveur, si une troncation avec perte de données se produit une erreur est envoyée.|
 |12|Les secondes sont réinitialisées et les fractions de seconde sont ignorées. Aucune erreur de troncation n'est possible.|  
 |Néant|Le comportement existant et antérieur de [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)] est conservé.|  
   
 ## <a name="see-also"></a>Voir aussi     
- [Date et heure améliorations &#40; OLE DB &#41;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
+ [Date et heure améliorations & #40 ; OLE DB & #41 ;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
   
   

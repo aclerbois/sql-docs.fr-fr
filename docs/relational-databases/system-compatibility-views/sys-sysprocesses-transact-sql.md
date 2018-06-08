@@ -1,16 +1,14 @@
 ---
-title: sys.sysprocesses (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.sysprocesses (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-compatibility-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysprocesses_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sys.sysprocesses compatibility view
 - sysprocesses system table
 ms.assetid: 60a36d36-54b3-4bd6-9cac-702205a21b16
-caps.latest.revision: 
+caps.latest.revision: 57
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 551d266374d6fd367eb4bba9e1d76a6322461c31
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c3a27e699312793e734d9a94680677eb509a2bd5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syssysprocesses-transact-sql"></a>sys.sysprocesses (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -44,7 +41,7 @@ ms.lasthandoff: 02/09/2018
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|spid|**smallint**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ID de session.|  
+|spid|**smallint**|ID de la session [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |kpid|**smallint**|ID de thread Windows.|  
 |blocked|**smallint**|ID de la session qui bloque la demande. Si cette colonne est NULL, la demande n'est pas bloquée, ou les informations de session de la session bloquant la demande ne sont pas disponibles (ou ne peuvent pas être identifiées).<br /><br /> -2 = La ressource qui bloque la demande appartient à une transaction distribuée orpheline.<br /><br /> -3 = La ressource qui bloque la demande appartient à une transaction de récupération différée.<br /><br /> -4 = L'ID de session du propriétaire du verrou qui bloque la demande n'a pas pu être déterminé en raison de transitions d'état de verrou interne.|  
 |waittype|**binary(2)**|Réservé.|  
@@ -60,7 +57,7 @@ ms.lasthandoff: 02/09/2018
 |last_batch|**datetime**|Dernière exécution par un processus client d'un appel de procédure stockée distante ou d'une instruction EXECUTE.|  
 |ecid|**smallint**|ID du contexte d'exécution utilisé pour identifier de façon unique les sous-threads exécutés pour le compte d'un seul et même processus.|  
 |open_tran|**smallint**|Nombre de transactions en cours pour le processus.|  
-|status|**nchar(30)**|État de l'ID processus. Les valeurs possibles sont les suivantes :<br /><br /> **dormant**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialise la session.<br /><br /> **en cours d’exécution** = la session est en cours d’un ou plusieurs lots. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [à l’aide de Multiple Active Result Sets &#40; MARS &#41; ](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **arrière-plan** = la session s’exécute une tâche en arrière-plan, telles que la détection de blocage.<br /><br /> **restauration** = la session a une annulation de la transaction dans le processus.<br /><br /> **en attente** = la session est en attente d’un thread de travail soient disponibles.<br /><br /> **exécutable** = la tâche dans la session est dans la file d’attente exécutable d’un planificateur lors de l’attente pour obtenir un quantum.<br /><br /> **spinloop** = la tâche dans la session est en attente d’un verrouillage spinlock se libère.<br /><br /> **suspendu** = la session est en attente d’un événement, telles que les e/s, pour terminer.|  
+|status|**nchar(30)**|État de l'ID processus. Les valeurs possibles sont les suivantes :<br /><br /> **dormant**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] réinitialise la session.<br /><br /> **en cours d’exécution** = la session est en cours d’un ou plusieurs lots. Lorsque la fonctionnalité MARS (Multiple Active Result Sets) est activée, une session peut exécuter plusieurs traitements. Pour plus d’informations, consultez [à l’aide de Multiple Active Result Sets & #40 ; MARS & #41 ; ](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).<br /><br /> **arrière-plan** = la session s’exécute une tâche en arrière-plan, telles que la détection de blocage.<br /><br /> **restauration** = la session a une annulation de la transaction dans le processus.<br /><br /> **en attente** = la session est en attente d’un thread de travail soient disponibles.<br /><br /> **exécutable** = la tâche dans la session est dans la file d’attente exécutable d’un planificateur lors de l’attente pour obtenir un quantum.<br /><br /> **spinloop** = la tâche dans la session est en attente d’un verrouillage spinlock se libère.<br /><br /> **suspendu** = la session est en attente d’un événement, telles que les e/s, pour terminer.|  
 |sid|**binary(86)**|GUID (Globally Unique Identifier) de l'utilisateur.|  
 |hostname|**nchar(128)**|Nom de la station de travail.|  
 |program_name|**nchar(128)**|Nom du logiciel d'application.|  
@@ -81,8 +78,8 @@ ms.lasthandoff: 02/09/2018
  Si un utilisateur dispose de l'autorisation VIEW SERVER STATE sur le serveur, il voit toutes les sessions en cours d'exécution dans l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ; sinon, il ne voit que la session actuelle.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
- [Mappage des Tables système pour les vues système &#40; Transact-SQL &#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Mappage des Tables système avec les vues système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
  [Affichages de compatibilité &#40;Transact-SQL&#41;](~/relational-databases/system-compatibility-views/system-compatibility-views-transact-sql.md)  
   
   

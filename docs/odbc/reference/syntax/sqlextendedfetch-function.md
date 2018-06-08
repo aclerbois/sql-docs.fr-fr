@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLExtendedFetch | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLExtendedFetch
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLExtendedFetch
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLExtendedFetch
-helpviewer_keywords: SQLExtendedFetch function [ODBC]
+f1_keywords:
+- SQLExtendedFetch
+helpviewer_keywords:
+- SQLExtendedFetch function [ODBC]
 ms.assetid: 940b5cf7-581c-4ede-8533-c67d5e9ef488
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 100b877fb6adc71b0f42dd41a0bc8a8d437b1d1a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1a02b1c2e050b6fc7a0724286c7f023cb376e7bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlextendedfetch-function"></a>SQLExtendedFetch (fonction)
 **Mise en conformité**  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/21/2017
  **SQLExtendedFetch** extrait l’ensemble spécifié de lignes de données du jeu de résultats et retourne les données pour toutes les colonnes liées. Ensembles de lignes peut être spécifié à une position relative ou absolue ou par signet.  
   
 > [!NOTE]  
->  Dans ODBC 3*.x*, **SQLExtendedFetch** a été remplacé par **SQLFetchScroll**. ODBC 3*.x* applications ne doivent pas appeler **SQLExtendedFetch**; au lieu de cela, ils doivent appeler **SQLFetchScroll**. Le Gestionnaire de pilotes mappe **SQLFetchScroll** à **SQLExtendedFetch** lorsque vous travaillez avec une API ODBC 2*.x* pilote. ODBC 3*.x* pilotes doivent prendre en charge **SQLExtendedFetch** s’ils veulent travailler avec ODBC 2*.x* les applications qui l’appellent. Pour plus d’informations, consultez « Commentaires » et [curseurs de bloc, les curseurs permettant le défilement et la compatibilité descendante](../../../odbc/reference/appendixes/block-cursors-scrollable-cursors-and-backward-compatibility.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  
+>  Dans ODBC 3 *.x*, **SQLExtendedFetch** a été remplacé par **SQLFetchScroll**. ODBC 3 *.x* applications ne doivent pas appeler **SQLExtendedFetch**; au lieu de cela, ils doivent appeler **SQLFetchScroll**. Le Gestionnaire de pilotes mappe **SQLFetchScroll** à **SQLExtendedFetch** lorsque vous travaillez avec une API ODBC 2 *.x* pilote. ODBC 3 *.x* pilotes doivent prendre en charge **SQLExtendedFetch** s’ils veulent travailler avec ODBC 2 *.x* les applications qui l’appellent. Pour plus d’informations, consultez « Commentaires » et [curseurs de bloc, les curseurs permettant le défilement et la compatibilité descendante](../../../odbc/reference/appendixes/block-cursors-scrollable-cursors-and-backward-compatibility.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -76,7 +77,7 @@ SQLRETURN SQLExtendedFetch(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLExtendedFetch** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLError**. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLExtendedFetch** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire. Si une erreur se produit sur une colonne unique, **SQLGetDiagField** peut être appelé avec un *DiagIdentifier* de SQL_DIAG_COLUMN_NUMBER pour déterminer la colonne de l’erreur s’est produite ; et **SQLGetDiagField** peut être appelé avec un *DiagIdentifier* de SQL_DIAG_ROW_NUMBER pour déterminer la ligne qui contient cette colonne.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Retourné pour une colonne de données binary ou String a entraîné la troncation des caractères non vides ou les données binaires non NULL. S’il s’agissait d’une valeur de chaîne, il a été tronqué à la droite. S’il s’agissait d’une valeur numérique, la partie fractionnaire du nombre a été tronquée.  (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
@@ -124,9 +125,9 @@ SQLRETURN SQLExtendedFetch(
   
 -   Les appels à **SQLExtendedFetch** ne peut pas être mélangés avec les appels à **SQLFetch** ou **SQLFetchScroll**et si **SQLBulkOperations** est appelée avant toute fonction d’extraction, **SQLExtendedFetch** ne peut pas être appelée tant que le curseur est fermé et rouvert. Autrement dit, **SQLExtendedFetch** peut être appelée uniquement dans l’état de l’instruction S7. Pour plus d’informations, consultez [Transitions de l’instruction](../../../odbc/reference/appendixes/statement-transitions.md) dans les Tables de Transition d’état annexe b : ODBC.  
   
- Lorsqu’une application appelle **SQLFetchScroll** lors de l’utilisation d’une API ODBC 2*.x* pilote, le Gestionnaire de pilotes est mappé à cet appel à **SQLExtendedFetch**. Pour plus d’informations, consultez « SQLFetchScroll et ODBC 2*.x* pilotes » dans [SQLFetchScroll](../../../odbc/reference/syntax/sqlfetchscroll-function.md).  
+ Lorsqu’une application appelle **SQLFetchScroll** lors de l’utilisation d’une API ODBC 2 *.x* pilote, le Gestionnaire de pilotes est mappé à cet appel à **SQLExtendedFetch**. Pour plus d’informations, consultez « SQLFetchScroll et ODBC 2 *.x* pilotes » dans [SQLFetchScroll](../../../odbc/reference/syntax/sqlfetchscroll-function.md).  
   
- Dans ODBC 2*.x*, **SQLExtendedFetch** a été appelé pour extraire plusieurs lignes et **SQLFetch** a été appelé pour extraire une seule ligne. Dans ODBC 3*.x*, quant à eux, **SQLFetch** peut être appelé pour extraire plusieurs lignes.  
+ Dans ODBC 2 *.x*, **SQLExtendedFetch** a été appelé pour extraire plusieurs lignes et **SQLFetch** a été appelé pour extraire une seule ligne. Dans ODBC 3 *.x*, quant à eux, **SQLFetch** peut être appelé pour extraire plusieurs lignes.  
   
 ## <a name="related-functions"></a>Fonctions connexes  
   

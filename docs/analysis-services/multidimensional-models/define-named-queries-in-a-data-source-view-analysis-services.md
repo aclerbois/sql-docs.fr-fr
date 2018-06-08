@@ -1,35 +1,23 @@
 ---
-title: "Définir des requêtes nommées dans une vue de Source de données (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- named queries [Analysis Services], creating
-- modifying named queries
-- data source views [Analysis Services], named queries
-ms.assetid: f09ba8aa-950e-4c0d-961e-970de13200be
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des requêtes nommées dans une vue de Source de données (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e82aedbca1db294e94a803db8541c2ff88876211
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: bee48d9927e9caaea28fd201480e507e5cfa7d9d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="define-named-queries-in-a-data-source-view-analysis-services"></a>Définir des requêtes nommées dans une vue de source de données (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une requête nommée est une expression SQL représentée sous forme de table. Dans une requête nommée, vous pouvez spécifier une expression SQL pour sélectionner les lignes et les colonnes retournées d'une ou de plusieurs tables dans une ou plusieurs sources de données. Une requête nommée est similaire à toute autre table dans une vue de source de données (DSV) avec des lignes et des relations, si ce n'est que la requête nommée se base sur une expression.  
+  Une requête nommée est une expression SQL représentée sous forme de table. Dans une requête nommée, vous pouvez spécifier une expression SQL pour sélectionner les lignes et les colonnes retournées d'une ou de plusieurs tables dans une ou plusieurs sources de données. Une requête nommée est similaire à toute autre table dans une vue de source de données (DSV) avec des lignes et des relations, si ce n'est que la requête nommée se base sur une expression.  
   
  Une requête nommée vous permet d'étendre le schéma relationnel des tables existantes dans une vue de source de données (DSV) sans modifier la source de données sous-jacente. Par exemple, une série de requêtes nommées peuvent être utilisées pour diviser une table de dimension complexe en tables plus petites et plus simples à utiliser dans les dimensions de base de données. Vous pouvez également utiliser une requête nommée pour joindre plusieurs tables de base de données d'une ou plusieurs sources de données dans une seule table de vue de source de données.  
   
@@ -69,6 +57,6 @@ Une requête nommée est une expression SQL représentée sous forme de table. D
   
 ## <a name="see-also"></a>Voir aussi  
  [Vues de sources de données dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/data-source-views-in-multidimensional-models.md)   
- [Définir des calculs nommés dans une vue de Source de données &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/define-named-calculations-in-a-data-source-view-analysis-services.md)  
+ [Définir des calculs nommés dans une vue de Source de données & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/define-named-calculations-in-a-data-source-view-analysis-services.md)  
   
   

@@ -1,28 +1,24 @@
 ---
-title: "Télécharger le pilote ODBC pour SQL Server | Documents Microsoft"
-ms.custom: 
+title: Télécharger le pilote ODBC pour SQL Server | Documents Microsoft
+ms.custom: ''
 ms.date: 03/13/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 53b09784-bb9d-4fd4-99d3-0492b3308ac4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: afd906dfbfe11310747cb8876e8e0e217854d5e3
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+manager: craigg
+ms.openlocfilehash: 1dd3008422b71d2ddc84b4e79318a1a16f70379e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="download-odbc-driver-for-sql-server"></a>Télécharger le pilote ODBC de SQL Server
 

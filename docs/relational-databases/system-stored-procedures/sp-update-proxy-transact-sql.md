@@ -1,16 +1,14 @@
 ---
-title: sp_update_proxy (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_update_proxy (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_update_proxy
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - ALTER PROXY statement
 - sp_update_proxy
 ms.assetid: 864fd0e6-9d61-4f07-92ef-145318d2f881
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: be0c172698bd3fa45b124f40aab261c5840304bb
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 072c36097eb465fa43a785c59d4b0ef73d6d351f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spupdateproxy-transact-sql"></a>sp_update_proxy (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -54,34 +51,34 @@ sp_update_proxy
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@proxy_id**= ] *id*  
+ [ **@proxy_id**=] *id*  
  Numéro d'identification du proxy à modifier. Le *proxy_id* est **int**, avec NULL comme valeur par défaut.  
   
- [  **@proxy_name** =] **'***proxy_name***'**  
+ [ **@proxy_name**=] **'***proxy_name***'**  
  Nom du proxy à modifier. Le *proxy_name* est **sysname**, avec NULL comme valeur par défaut.  
   
- [  **@credential_name**  =] **'***credential_name***'**  
+ [ **@credential_name** =] **'***credential_name***'**  
  Nom relatif aux nouvelles informations d'identification du proxy. Le *credential_name* est **sysname**, avec NULL comme valeur par défaut. Soit *credential_name* ou *credential_id* peut être spécifié.  
   
- [  **@credential_id**  =] *credential_id*  
+ [ **@credential_id** =] *credential_id*  
  Numéro d'identification des nouvelles informations d'identification du proxy. Le *credential_id* est **int**, avec NULL comme valeur par défaut. Soit *credential_name* ou *credential_id* peut être spécifié.  
   
- [  **@new_name** =] **'***nouveau_nom***'**  
+ [ **@new_name**=] **'***nouveau_nom***'**  
  Le nouveau nom du proxy. Le *nouveau_nom* est **sysname**, avec NULL comme valeur par défaut. Quand il est fourni, la procédure modifie le nom du proxy à *nouveau_nom*. Si cet argument est NULL, le nom du proxy reste inchangé.  
   
- [  **@enabled**  =] *is_enabled*  
+ [ **@enabled** =] *is_enabled*  
  Indique si le proxy est activé. Le *is_enabled* indicateur est **tinyint**, avec NULL comme valeur par défaut. Lorsque *is_enabled* est **0**, le proxy n’est pas activé et ne peut pas être utilisé par une étape de travail. Si cet argument est NULL, l'état du proxy reste inchangé.  
   
- [ **@description**= ] **'***description***'**  
+ [ **@description**=] **'***description***'**  
  Nouvelle description du proxy. Le *description* est **nvarchar (512)**, avec NULL comme valeur par défaut. Si cet argument est NULL, la description du proxy reste inchangé.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- Soit  **@proxy_name**  ou  **@proxy_id**  doit être spécifié. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer le même proxy, sinon la procédure stockée échoue.  
+ Soit **@proxy_name** ou **@proxy_id** doit être spécifié. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer le même proxy, sinon la procédure stockée échoue.  
   
- Soit  **@credential_name**  ou  **@credential_id**  doit être spécifié pour modifier les informations d’identification pour le proxy. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer les mêmes informations d'identification, sinon la procédure stockée échoue.  
+ Soit **@credential_name** ou **@credential_id** doit être spécifié pour modifier les informations d’identification pour le proxy. Si ces deux arguments sont spécifiés, ils doivent tous les deux référencer les mêmes informations d'identification, sinon la procédure stockée échoue.  
   
  Cette procédure modifie le proxy sans modifier son accès. Pour modifier l’accès à un serveur proxy, utilisez **sp_grant_login_to_proxy** et **sp_revoke_login_from_proxy**.  
   
@@ -102,7 +99,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’Agent SQL Server stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
+ [Procédures stockées de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
  [Implémenter la sécurité de l’Agent SQL Server](http://msdn.microsoft.com/library/d770d35c-c8de-4e00-9a85-7d03f45a0f0d)   
  [sp_add_proxy &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-proxy-transact-sql.md)   
  [sp_delete_proxy &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-delete-proxy-transact-sql.md)   

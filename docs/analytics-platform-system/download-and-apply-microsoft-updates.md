@@ -1,28 +1,21 @@
 ---
-title: "Téléchargez et appliquez les mises à jour Microsoft (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 4f69df44-8549-4a8a-b10c-f91908594856
-caps.latest.revision: "51"
-ms.openlocfilehash: 7c91a5ed97d5aedfa456fd63e16c0178c5241706
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Télécharger les mises à jour Microsoft - système de plateforme Analytique | Documents Microsoft
+description: Cette rubrique explique comment télécharger les mises à jour à partir du catalogue Microsoft Update pour Windows Server Update Services (WSUS) et appliquer ces mises à jour sur les serveurs de matériel système Analytique de la plateforme. Microsoft Update va installer toutes les mises à jour pour Windows et SQL Server. WSUS est installé sur l’ordinateur virtuel VMM de l’application.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: b98a2be90f222fc2c531c1f1983f8882bdab640e
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="download-and-apply-microsoft-updates"></a>Téléchargez et appliquez les mises à jour Microsoft
+# <a name="download-and-apply-microsoft-updates-for-analytics-platform-system"></a>Téléchargez et appliquez les mises à jour Microsoft pour système de plateforme Analytique
 Cette rubrique explique comment télécharger les mises à jour à partir du catalogue Microsoft Update pour Windows Server Update Services (WSUS) et appliquer ces mises à jour sur les serveurs de matériel système Analytique de la plateforme. Microsoft Update va installer toutes les mises à jour pour Windows et SQL Server. WSUS est installé sur l’ordinateur virtuel VMM de l’application.  
   
 ## <a name="TOP"></a>Avant de commencer  
@@ -32,22 +25,22 @@ Cette rubrique explique comment télécharger les mises à jour à partir du cat
 >   
 > N’appliquez pas de Microsoft Updates pendant que l’appareil est en cours d’utilisation. Mise à jour peut entraîner des nœuds de dispositifs de redémarrer. Les mises à jour doivent être appliquées pendant une fenêtre de maintenance lorsque l’application n’est pas utilisée.  
   
-### <a name="prerequisites"></a>Prerequisites  
+### <a name="prerequisites"></a>Configuration requise  
 Avant d’effectuer ces étapes, vous devez :  
   
--   Configurer WSUS sur votre appareil en suivant les instructions dans [configurer Windows Server Update Services &#40; WSUS &#41; &#40; Système de plateforme Analytique &#41; ](configure-windows-server-update-services-wsus.md).  
+-   Configurer WSUS sur votre appareil en suivant les instructions de [configurer Windows Server Update Services &#40;WSUS&#41; &#40;système de plateforme Analytique&#41;](configure-windows-server-update-services-wsus.md).  
   
 -   Connaissance des informations de connexion administrateur de domaine de l’ensemble fibre optique.  
   
 -   Avoir une connexion avec des autorisations pour accéder à la Console d’administration système Analytique plateforme et afficher des informations d’état appliance.  
   
--   Dans la plupart des cas, WSUS doit accéder aux serveurs en dehors de l’application. Pour prendre en charge ce scénario d’utilisation du système de plateforme Analytique DNS peut être configuré pour prendre en charge d’un redirecteur de nom externe qui autorise les hôtes de système de plateforme Analytique et les Machines virtuelles (VM) à utiliser des serveurs DNS externes pour résoudre les noms en dehors de la équipement. Pour plus d’informations, consultez [utiliser un redirecteur DNS pour résoudre les noms DNS Non Appliance &#40; Système de plateforme Analytique &#41; ](use-a-dns-forwarder-to-resolve-non-appliance-dns-names.md).  
+-   Dans la plupart des cas, WSUS doit accéder aux serveurs en dehors de l’application. Pour prendre en charge ce scénario d’utilisation du système de plateforme Analytique DNS peut être configuré pour prendre en charge d’un redirecteur de nom externe qui autorise les hôtes de système de plateforme Analytique et les Machines virtuelles (VM) à utiliser des serveurs DNS externes pour résoudre les noms en dehors de la équipement. Pour plus d’informations, consultez [utiliser un redirecteur DNS pour résoudre les noms DNS Non Appliance &#40;système de plateforme Analytique&#41;](use-a-dns-forwarder-to-resolve-non-appliance-dns-names.md).  
   
 ## <a name="bkmk_ImportUpdates"></a>Pour télécharger et appliquer les mises à jour Microsoft  
   
 #### <a name="verify-the-appliance-state-indicators"></a>Vérifiez les indicateurs d’état appliance  
   
-1.  Ouvrez la Console d’administration et accédez à la page État de l’application. Pour plus d’informations, consultez [contrôler le matériel à l’aide de la Console d’administration &#40; Système de plateforme Analytique &#41;](monitor-the-appliance-by-using-the-admin-console.md)  
+1.  Ouvrez la Console d’administration et accédez à la page État de l’application. Pour plus d’informations, consultez [contrôler le matériel à l’aide de la Console d’administration &#40;Analytique plate-forme système&#41;](monitor-the-appliance-by-using-the-admin-console.md)  
   
 2.  Vérifiez les indicateurs d’état pour tous les nœuds de l’état de l’application.  
   
@@ -85,7 +78,7 @@ Avant d’effectuer ces étapes, vous devez :
   
     ![Sélectionnez toutes les mises à jour s’applique et cliquez sur Approuver. ] (./media/download-and-apply-microsoft-updates/SQL_Server_PDW_WSUSSelectApprove.png "SQL_Server_PDW_WSUSSelectApprove")  
   
-4.  Sélectionnez le groupe de serveurs matériel que vous avez créé dans [configurer Windows Server Update Services &#40; WSUS &#41; &#40; Système de plateforme Analytique &#41; ](configure-windows-server-update-services-wsus.md).  
+4.  Sélectionnez le groupe de serveurs matériel que vous avez créé dans [configurer Windows Server Update Services &#40;WSUS&#41; &#40;système de plateforme Analytique&#41;](configure-windows-server-update-services-wsus.md).  
   
 5.  Cliquez sur **approuvée pour l’installation**, puis cliquez sur **OK**.  
   
@@ -111,9 +104,9 @@ Avant d’effectuer ces étapes, vous devez :
   
 #### <a name="apply-microsoft-updates"></a>Appliquer les mises à jour Microsoft  
   
-1.  Avant de commencer, ouvrez le [contrôler le matériel à l’aide de la Console d’administration &#40; Système de plateforme Analytique &#41; ](monitor-the-appliance-by-using-the-admin-console.md), cliquez sur le **état des appliances** onglet et vérifiez que le **Cluster** et **réseau** colonnes afficher vert (ou NA) pour tous les nœuds. Si toutes les alertes existent dans une de ces colonnes, l’application n’est peut-être pas en mesure d’installer les mises à jour correctement. Résoudre toutes les alertes existantes dans le **Cluster** et **réseau** colonnes avant de continuer.  
+1.  Avant de commencer, ouvrez le [contrôler le matériel à l’aide de la Console d’administration &#40;système de plateforme d’Analytique&#41;](monitor-the-appliance-by-using-the-admin-console.md), cliquez sur le **état des appliances** onglet et vérifiez que le  **Cluster** et **réseau** colonnes afficher vert (ou NA) pour tous les nœuds. Si toutes les alertes existent dans une de ces colonnes, l’application n’est peut-être pas en mesure d’installer les mises à jour correctement. Résoudre toutes les alertes existantes dans le **Cluster** et **réseau** colonnes avant de continuer.  
   
-2.  Ouvrez une session sur le *< nom_domaine >***-HST01** nœud en tant que l’administrateur de domaine de l’ensemble fibre optique.  
+2.  Ouvrez une session sur le *< nom_domaine > ***-HST01** nœud en tant que l’administrateur de domaine de l’ensemble fibre optique.  
   
 3.  Pour appliquer toutes les mises à jour approuvées pour WSUS, exécutez le programme de mise à jour. Consultez [exécuter le programme de mise à jour](#RunUpdateWizard) ci-dessous pour obtenir des instructions.  
   
@@ -125,11 +118,11 @@ Avant d’effectuer ces étapes, vous devez :
   
 3.  Développez **tous les ordinateurs**.  
   
-4.  Sélectionnez le groupe de serveurs matériel que vous avez créé dans [configurer Windows Server Update Services &#40; WSUS &#41; &#40; Système de plateforme Analytique &#41; ](configure-windows-server-update-services-wsus.md).  
+4.  Sélectionnez le groupe de serveurs matériel que vous avez créé dans [configurer Windows Server Update Services &#40;WSUS&#41; &#40;système de plateforme Analytique&#41;](configure-windows-server-update-services-wsus.md).  
   
 5.  Dans le **état** menu déroulant, sélectionnez **tout** et cliquez sur **Actualiser**.  
   
-6.  Développez **mettre à jour des Services**,  *<appliance name>* - VMM, **mises à jour**, **les mises à jour**, où  *<appliance name>*  est le nom de votre application.  
+6.  Développez **mettre à jour des Services**, *<appliance name>*- VMM, **mises à jour**, **les mises à jour**, où *<appliance name>* est le nom de votre application.  
   
 7.  Dans le **les mises à jour** ensemble de la fenêtre **approbation** à **toutes sauf refusées**.  
   
@@ -141,7 +134,7 @@ Avant d’effectuer ces étapes, vous devez :
   
 #### <a name="ensure-there-are-no-critical-alerts-in-the-sql-server-pdw-admin-console"></a>Ne vérifiez aucune alerte critique dans la Console d’administration SQL Server PDW  
   
-1.  Ouvrez la Console d’administration, cliquez sur l’onglet État de l’application. Consultez [contrôler le matériel à l’aide de la Console d’administration &#40; Système de plateforme Analytique &#41; ](monitor-the-appliance-by-using-the-admin-console.md).  
+1.  Ouvrez la Console d’administration, cliquez sur l’onglet État de l’application. Consultez [contrôler le matériel à l’aide de la Console d’administration &#40;système de plateforme Analytique&#41;](monitor-the-appliance-by-using-the-admin-console.md).  
   
 2.  Vérifiez que le **Cluster** et **réseau** colonnes afficher vert (ou NA) pour tous les nœuds. Si toutes les alertes existent dans une de ces colonnes, l’application n’est peut-être pas en mesure d’installer les mises à jour correctement. Il existe des alertes critiques, contactez le support.  
   
@@ -153,7 +146,7 @@ Suivez ces instructions pour exécuter le programme de mise à jour de système 
   
 1.  Assurez-vous que vous êtes connecté dans le nœud HST01 en tant que l’administrateur de domaine de l’ensemble fibre optique.  
   
-2.  Ouvrez une fenêtre d’invite de commandes et entrez les commandes suivantes. Remplacez  *<parameter>*  avec les informations désignées.  
+2.  Ouvrez une fenêtre d’invite de commandes et entrez les commandes suivantes. Remplacez *<parameter>* avec les informations désignées.  
   
 **Pour exécuter la mise à jour de Microsoft :**  
   
@@ -168,8 +161,8 @@ C:\pdwinst\media\setup.exe /action="ReportMicrosoftUpdateClientStatus" /DomainAd
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
-[Désinstaller les mises à jour Microsoft &#40; Système de plateforme Analytique &#41;](uninstall-microsoft-updates.md)  
-[Appliquer des correctifs de système de plateforme Analytique &#40; Système de plateforme Analytique &#41;](apply-analytics-platform-system-hotfixes.md)  
-[Désinstallation des correctifs de système de plateforme Analytique &#40; Système de plateforme Analytique &#41;](uninstall-analytics-platform-system-hotfixes.md)  
-[Logiciel de maintenance &#40; Système de plateforme Analytique &#41;](software-servicing.md)  
+[Désinstaller les mises à jour Microsoft &#40;Analytique plate-forme système&#41;](uninstall-microsoft-updates.md)  
+[Appliquer des correctifs de système de plateforme Analytique &#40;Analytique plate-forme système&#41;](apply-analytics-platform-system-hotfixes.md)  
+[Désinstallation de correctifs de système de plateforme Analytique &#40;Analytique plate-forme système&#41;](uninstall-analytics-platform-system-hotfixes.md)  
+[Maintenance de logiciel &#40;Analytique plate-forme système&#41;](software-servicing.md)  
   

@@ -1,16 +1,14 @@
 ---
-title: "SQL : overflow-field (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: 'SQL : overflow-field (SQLXML 4.0) | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - overflow-field annotation
@@ -18,20 +16,20 @@ helpviewer_keywords:
 - overflow data [SQLXML]
 - sql:overflow-field
 ms.assetid: f005182b-6151-432d-ab22-3bc025742cd3
-caps.latest.revision: 
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f5b58728bc2af55830cc66ba0ed8f011095f2d5e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5f4527068d0fd0f83987f5e145226c091a7913c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="annotation-interpretation---sqloverflow-field"></a>Interprétation d’annotation - SQL : Overflow-champ
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Dans un schéma, vous pouvez identifier une colonne en tant que colonne de dépassement destinée à recevoir toutes les données non consommées du document XML. Cette colonne est spécifiée dans le schéma à l’aide de la **SQL : Overflow-champ** annotation. Un schéma peut contenir plusieurs colonnes de dépassement.  
+  Dans un schéma, vous pouvez identifier une colonne en tant que colonne de dépassement destinée à recevoir toutes les données non consommées du document XML. Cette colonne est spécifiée dans le schéma à l’aide de la **SQL : Overflow-champ** annotation. Un schéma peut contenir plusieurs colonnes de dépassement.  
   
  Chaque fois qu’un nœud XML (élément ou attribut) pour lesquelles il existe un **SQL : Overflow-champ** annotation définie entre dans l’étendue, la colonne de dépassement est activée et reçoit des données non consommées. Lorsque le nœud sort de la portée, la colonne de dépassement n'est plus active et le chargement en masse XML active le champ de dépassement précédent (le cas échéant).  
   

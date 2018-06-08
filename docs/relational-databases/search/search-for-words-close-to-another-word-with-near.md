@@ -1,17 +1,15 @@
 ---
-title: "Recherche de mots dans le voisinage d’autres mots avec NEAR | Microsoft Docs"
-ms.custom: 
+title: Recherche de mots dans le voisinage d’autres mots avec NEAR | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -23,20 +21,20 @@ helpviewer_keywords:
 - full-text queries [SQL Server], proximity
 - queries [full-text search], proximity
 ms.assetid: 87520646-4865-49ae-8790-f766b80a41f3
-caps.latest.revision: 
+caps.latest.revision: 65
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 74732252ddb62adc02b532a23fdfe588fbbed2b9
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6259d7685ef0e06855325c6903daa204ee83fbf2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="search-for-words-close-to-another-word-with-near"></a>Recherche de mots dans le voisinage d'autres mots avec NEAR
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Vous pouvez utiliser le *terme de proximité* **NEAR** dans un prédicat [CONTAINS](../../t-sql/queries/contains-transact-sql.md) ou une fonction [CONTAINSTABLE](../../relational-databases/system-functions/containstable-transact-sql.md) pour rechercher des mots ou des expressions à proximité les uns des autres. 
+  Vous pouvez utiliser le *terme de proximité* **NEAR** dans un prédicat [CONTAINS](../../t-sql/queries/contains-transact-sql.md) ou une fonction [CONTAINSTABLE](../../relational-databases/system-functions/containstable-transact-sql.md) pour rechercher des mots ou des expressions à proximité les uns des autres. 
   
 ##  <a name="Custom_NEAR"></a> Vue d’ensemble de NEAR  
 **NEAR** offre les fonctionnalités suivantes :  

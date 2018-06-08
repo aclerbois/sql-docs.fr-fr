@@ -1,16 +1,15 @@
 ---
-title: "Défaillances possibles pendant la mise en miroir d’une base de données | Microsoft Docs"
-ms.custom: 
+title: Défaillances possibles pendant la mise en miroir d’une base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - time-out period [SQL Server database mirroring]
 - soft errors [SQL Server]
@@ -20,19 +19,19 @@ helpviewer_keywords:
 - hard errors
 - failed database mirroring sessions [SQL Server]
 ms.assetid: d7031f58-5f49-4e6d-9a62-9b420f2bb17e
-caps.latest.revision: "59"
+caps.latest.revision: 59
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 16801b4bcf5cfbaf01090d716d4e77f0fbdd1e41
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 360bc997365b6e3758d8d13dc97d28c9b81608f2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="possible-failures-during-database-mirroring"></a>Défaillances possibles pendant la mise en miroir d’une base de données
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Des problèmes physiques, de système d’exploitation ou propres à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent être responsables de l’échec d’une session de mise en miroir de bases de données. La mise en miroir de bases de données ne contrôle pas régulièrement les composants sur lesquels Sqlservr.exe s'appuie pour vérifier s'ils fonctionnent correctement ou s'ils ont échoué. Toutefois, pour certains types d'échecs, le composant affecté signale une erreur à Sqlservr.exe. Une erreur signalée par un autre composant est appelée *erreur matérielle*. La mise en miroir de bases de données implémente ses propres mécanismes de délai d'attente pour détecter les autres erreurs qui passeraient sinon inaperçues. En cas de délai d’attente de la mise en miroir, une *erreur logicielle*se produit quand la mise en miroir de bases de données détermine qu’une défaillance s’est produite. Toutefois, certaines erreurs qui se produisent au niveau de l'instance SQL Server n'entraîne pas de délai d'attente de la mise en miroir et peuvent ne pas être détectées.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Des problèmes physiques, de système d'exploitation ou propres à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent être responsables de l'échec d'une session de mise en miroir de bases de données. La mise en miroir de bases de données ne contrôle pas régulièrement les composants sur lesquels Sqlservr.exe s'appuie pour vérifier s'ils fonctionnent correctement ou s'ils ont échoué. Toutefois, pour certains types d'échecs, le composant affecté signale une erreur à Sqlservr.exe. Une erreur signalée par un autre composant est appelée *erreur matérielle*. La mise en miroir de bases de données implémente ses propres mécanismes de délai d'attente pour détecter les autres erreurs qui passeraient sinon inaperçues. En cas de délai d’attente de la mise en miroir, une *erreur logicielle*se produit quand la mise en miroir de bases de données détermine qu’une défaillance s’est produite. Toutefois, certaines erreurs qui se produisent au niveau de l'instance SQL Server n'entraîne pas de délai d'attente de la mise en miroir et peuvent ne pas être détectées.  
   
 > [!IMPORTANT]  
 >  Les défaillances dans les bases de données autres que les bases de données mises en miroir ne sont pas détectables dans une session de mise en miroir de bases de données. En outre, il est peu vraisemblable qu'une défaillance du disque de données soit détectée, sauf si la base de données est redémarrée en raison de la défaillance d'un disque de données.  

@@ -1,30 +1,29 @@
 ---
-title: "Méthode getSendStringParametersAsUnicode (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode getSendStringParametersAsUnicode (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.getSendStringParametersAsUnicode
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.getSendStringParametersAsUnicode
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 3836d0ab-c3fb-41ff-bb89-10389594ae51
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d7eb3b6f95939250d2eccf7edaaa06aace8d743f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 338343f56f765e33fe0a8d81e6284bc4e84cf564
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getsendstringparametersasunicode-method-sqlserverdatasource"></a>Méthode getSendStringParametersAsUnicode (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -47,7 +46,7 @@ public boolean getSendStringParametersAsUnicode()
  Pour plus d’informations sur la propriété de connexion sendStringParametersAsUnicode, consultez [définissant les propriétés de connexion](../../../connect/jdbc/setting-the-connection-properties.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

@@ -1,33 +1,30 @@
 ---
 title: 'RecordsetEvents (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - RecordsetEvents collection [ADO]
 ms.assetid: b7021f11-8242-4e9f-92e9-1a4472673fb1
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7b30117acb4aa0a621b7bb1b2361b09b58912d99
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9703ca2b2a3933842169a45efe5e0631bc002545
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recordsetevents-visual-c-syntax-index-with-import"></a>RecordsetEvents (Index de la syntaxe Visual C++ avec #import)
 ## <a name="events"></a>Événements  

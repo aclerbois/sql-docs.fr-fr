@@ -1,28 +1,25 @@
 ---
-title: "Étape 2 : Initialiser la zone de liste principale | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Étape 2 : Initialiser la zone de liste principale | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a1454493-1c86-46c2-ada8-d3c6fcdaf3c1
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 60ece26fab2c6f691614b609d1dd3f07f42231e4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 45ffd682eaa9213b13aaf3afb1ccc6edf470ca58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-2-initialize-the-main-list-box"></a>Étape 2 : Initialiser la zone de liste principale
 Pour déclarer les objets Record et Recordset globaux, insérez le code suivant dans (général) (déclarations) pour Form1 :  
@@ -52,7 +49,7 @@ Private Sub Form_Load()
 End Sub  
 ```  
   
- Ce code instancie les objets Record et Recordset globaux. L’objet Record, `grec`, est ouvert avec l’URL définie comme ActiveConnection. Si l’URL existe, il est ouvert ; Si elle n’existe pas déjà, il est créé. Notez que vous devez remplacer « http://servername/foldername/ » avec une URL valide à partir de votre environnement.  
+ Ce code instancie les objets Record et Recordset globaux. L’objet Record, `grec`, est ouvert avec l’URL définie comme ActiveConnection. Si l’URL existe, il est ouvert ; Si elle n’existe pas déjà, il est créé. Notez que vous devez remplacer «http://servername/foldername/» avec une URL valide à partir de votre environnement.  
   
  L’objet Recordset, `grs`, est ouvert sur les enfants de l’enregistrement, `grec`. Puis `lstMain` est remplie avec les noms de fichiers des ressources publiées à l’URL.  
   

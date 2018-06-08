@@ -2,16 +2,15 @@
 title: Analyser les performances avec le moniteur de réplication | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: replication
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - monitoring performance [SQL Server replication], Replication Monitor
 - Log Reader Agent, monitoring
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - Distribution Agent, monitoring
 - monitoring performance [SQL Server replication]
 ms.assetid: f212397d-1bfd-496b-a246-668952891d09
-caps.latest.revision: ''
+caps.latest.revision: 36
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 590c82fa430be2c34796b6ae5201a0ef7efba7c1
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: b32f10e884b501eec72b526dce06b703089a046a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="monitor-performance-with-replication-monitor"></a>Analyser les performances avec le Moniteur de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,17 +1,15 @@
 ---
-title: "BeginTrans, CommitTrans et RollbackTrans, méthodes-exemple (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: BeginTrans, CommitTrans et RollbackTrans, méthodes-exemple (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - RollbackTrans method [ADO], VC++ example
 - CommitTrans method [ADO], VC++ example
 ms.assetid: 4ac19647-73e7-4edf-9913-25c8fd927e36
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8308c891ec2732a84c48216b91f04b03caccaece
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6a42231057d6cf147cf36b1019767f86b229fff9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="begintrans-committrans-and-rollbacktrans-methods-example-vc"></a>BeginTrans, CommitTrans et RollbackTrans, méthodes-exemple (VC ++)
 Cet exemple modifie le type de tous les livres de psychologie dans le ***titres*** table de la base de données. Après le [BeginTrans](../../../ado/reference/ado-api/begintrans-committrans-and-rollbacktrans-methods-ado.md) méthode démarre une transaction qui isole toutes les modifications apportées à la ***titres*** table, le [CommitTrans](../../../ado/reference/ado-api/begintrans-committrans-and-rollbacktrans-methods-ado.md) méthode enregistre les modifications. Vous pouvez utiliser la [restauration](../../../ado/reference/ado-api/begintrans-committrans-and-rollbacktrans-methods-ado.md) méthode pour annuler les modifications que vous avez enregistré à l’aide de la [mise à jour](../../../ado/reference/ado-api/update-method.md) (méthode).  

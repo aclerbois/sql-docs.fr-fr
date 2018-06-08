@@ -1,32 +1,33 @@
 ---
 title: SQLParamData, fonction | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLParamData
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLParamData
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLParamData
-helpviewer_keywords: SQLParamData function [ODBC]
+f1_keywords:
+- SQLParamData
+helpviewer_keywords:
+- SQLParamData function [ODBC]
 ms.assetid: 68fe010d-9539-4e5b-a260-c8d32423b1db
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4449d7b0af1c8138680d11b71b0a696d5f2d65fa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2debf8a85ad31533995613c5e06c17a6e4040d5a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlparamdata-function"></a>SQLParamData, fonction
 **Mise en conformité**  
@@ -57,7 +58,7 @@ SQLRETURN SQLParamData(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLParamData** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLParamData** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |07006|Violation de l’attribut de type de données restreint|La valeur de données identifiée par le *ValueType* argument dans **SQLBindParameter** pour le paramètre dépendant n’a pas pu être converti au type de données identifié par le *ParameterType* argument dans **SQLBindParameter**.<br /><br /> La valeur des données retournées pour un paramètre en tant que SQL_PARAM_INPUT_OUTPUT ou SQL_PARAM_OUTPUT pas pu être convertie vers le type de données identifié par le *ValueType* argument dans **SQLBindParameter**.<br /><br /> (Si les valeurs de données pour une ou plusieurs lignes n’a pas pu être converties, mais une ou plusieurs lignes ont été retournés avec succès, cette fonction retourne SQL_SUCCESS_WITH_INFO.)|  
@@ -68,7 +69,7 @@ SQLRETURN SQLParamData(
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans les  *\*MessageText* tampon décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer de la mémoire qui est requis pour prendre en charge l’exécution ou à l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour le *au paramètre StatementHandle*. La fonction a été appelée et avant qu’elle terminée l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *au paramètre StatementHandle*; la fonction a été appelée puis de nouveau sur le *au paramètre StatementHandle*.<br /><br /> La fonction a été appelée et avant qu’elle terminée l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *au paramètre StatementHandle* à partir d’un autre thread dans une application multithread.|  
-|HY010|Erreur de séquence de fonction|(DM) l’appel de fonction précédente n’était pas un appel à **SQLExecDirect**, **SQLExecute**, **SQLBulkOperations**, ou **SQLSetPos** où le code de retour était SQL_NEED_DATA ou l’appel de fonction précédente était un appel à **SQLPutData**.<br /><br /> L’appel de fonction précédente a été un appel à **SQLParamData**.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution a été appelée pour le handle de connexion qui est associé à la *au paramètre StatementHandle*. Cette fonction asynchrone toujours en cours d’exécution lorsque le **SQLParamData** fonction a été appelée.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution (pas celui-ci) a été appelée pour le *au paramètre StatementHandle* et toujours en cours d’exécution lorsque cette fonction a été appelée.<br /><br /> **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**, ou **SQLSetPos** a été appelé pour le *au paramètre StatementHandle* et retourné SQL_NEED_DATA. **SQLCancel** a été appelé avant l’envoi de données pour tous les paramètres de data-at-execution ou les colonnes.|  
+|HY010|Erreur de séquence de fonction|(DM) l’appel de fonction précédente n’était pas un appel à **SQLExecDirect**, **SQLExecute**, **SQLBulkOperations**, ou **SQLSetPos** où le code de retour était SQL_NEED_DATA ou l’appel de fonction précédente était un appel à **SQLPutData**.<br /><br /> L’appel de fonction précédente a été un appel à **SQLParamData**.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution a été appelée pour le handle de connexion qui est associé à la *au paramètre StatementHandle*. Cette fonction asynchrone toujours en cours d’exécution lorsque le **SQLParamData** fonction a été appelée.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution (pas celui-ci) a été appelée pour le *au paramètre StatementHandle* et toujours en cours d’exécution lorsque cette fonction a été appelée.<br /><br /> **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**, ou **SQLSetPos** a été appelé pour le *au paramètre StatementHandle* et SQL_NEED_DATA retourné. **SQLCancel** a été appelé avant l’envoi de données pour tous les paramètres de data-at-execution ou les colonnes.|  
 |HY013|Erreur de gestion de mémoire|L’appel de fonction n’a pas pu être traité, car les objets sous-jacents de la mémoire ne sont pas accessible, éventuellement en raison d’une mémoire insuffisante.|  
 |HY117|Connexion est interrompue en raison de l’état de transaction inconnu. Déconnecter uniquement et les fonctions en lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
 |HYT01|Délai de connexion a expiré.|Le délai d’expiration de connexion a expiré avant que la source de données a répondu à la demande. Le délai d’expiration de connexion est défini par le **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
@@ -79,7 +80,7 @@ SQLRETURN SQLParamData(
  Si **SQLParamData** est appelé lors de l’envoi des données pour un paramètre dans une instruction SQL, il peut retourner tout SQLSTATE qui peut être retournée par la fonction appelée pour exécuter l’instruction (**SQLExecute** ou **SQLExecDirect**). Si elle est appelée lors de l’envoi de données pour une colonne en cours de mise à jour ou ajoutés avec **SQLBulkOperations** ou mise à jour **SQLSetPos**, elle peut retourner tout SQLSTATE qui peut être retournée par **SQLBulkOperations** ou **SQLSetPos**.  
   
 ## <a name="comments"></a>Commentaires  
- **SQLParamData** peut être appelée pour fournir des données de data-at-execution de deux utilisations : les données de paramètre qui seront utilisées dans un appel à **SQLExecute** ou **SQLExecDirect**, ou les données de la colonne qui seront utilisées lorsqu’une ligne est mise à jour ou ajoutée par un appel à **SQLBulkOperations** ou mis à jour par un appel à **SQLSetPos**. Au moment de l’exécution, **SQLParamData** retourne à l’application requiert le pilote d’un indicateur de données.  
+ **SQLParamData** peut être appelée pour fournir des données de data-at-execution de deux utilisations : les données de paramètre qui seront utilisées dans un appel à **SQLExecute** ou **SQLExecDirect**, ou les données de la colonne qui seront utilisé lorsque une ligne est mise à jour ou ajoutée par un appel à **SQLBulkOperations** ou mis à jour par un appel à **SQLSetPos**. Au moment de l’exécution, **SQLParamData** retourne à l’application requiert le pilote d’un indicateur de données.  
   
  Lorsqu’une application appelle **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**, ou **SQLSetPos**, le pilote retourne SQL_NEED_DATA s’il a besoin de données de data-at-execution. Une application appelle ensuite **SQLParamData** pour déterminer les données à envoyer. Si le pilote requiert des données de paramètre, le pilote retourne dans le  *\*ValuePtrPtr* sortie de la mémoire tampon la valeur de l’application placée dans le tampon de l’ensemble de lignes. L’application peut utiliser cette valeur pour déterminer les données de paramètre demande le pilote. Si le pilote requiert des données de la colonne, le pilote retourne dans le  *\*ValuePtrPtr* mettre en mémoire tampon l’adresse de la colonne a été initialement liée, comme suit :  
   
@@ -87,7 +88,7 @@ SQLRETURN SQLParamData(
   
  où les variables sont définies comme indiqué dans le tableau suivant.  
   
-|Variable|Description|  
+|Variable| Description|  
 |--------------|-----------------|  
 |*Adresse de lié*|L’adresse spécifiée avec la *TargetValuePtr* argument dans **SQLBindCol**.|  
 |*Décalage de la liaison*|La valeur stockée à l’adresse spécifiée avec l’attribut d’instruction SQL_ATTR_ROW_BIND_OFFSET_PTR.|  

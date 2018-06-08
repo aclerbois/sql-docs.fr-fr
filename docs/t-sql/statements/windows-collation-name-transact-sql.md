@@ -1,16 +1,14 @@
 ---
 title: Nom de classement Windows (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - collations [SQL Server], Windows collations
 - Collation Designator
 ms.assetid: acceef84-2c68-46e2-a021-be019b7ab14e
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f0f99bd7b467ddae5362b8d806a43098c849c314
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: de2d55bbe2dafaa02886a1e0deeb675a43469e60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="windows-collation-name-transact-sql"></a>Nom de classement Windows (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -226,7 +224,7 @@ SELECT * FROM sys.fn_helpcollations() WHERE name NOT LIKE 'SQL%';
   
  <sup>1</sup> Les classements Windows Unicode seulement ne peuvent être appliqués qu’à des données de niveau colonne ou de niveau expression. Ils ne peuvent pas être utilisés en tant que classements de serveur ou de base de données.  
   
- <sup>2</sup>Comme le classement chinois (Taiwan), le chinois (Macao) utilise les règles du chinois simplifié ; contrairement au chinois (Taiwan), il utilise la page de codes 950.  
+ <sup>2</sup>Comme le classement chinois (Taiwan), le chinois (Macao (R.A.S.)) utilise les règles du chinois simplifié ; contrairement au chinois (Taiwan), il utilise la page de codes 950.  
   
 ## <a name="see-also"></a> Voir aussi  
  [Prise en charge d'Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md)   

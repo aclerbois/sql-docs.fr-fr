@@ -1,17 +1,13 @@
 ---
-title: "Considérations sur la sécurité pour une installation SQL Server | Microsoft Docs"
-ms.custom: 
+title: Considérations sur la sécurité pour une installation SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 08/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - firewall systems [SQL Server]
 - server message blocks [SQL Server]
@@ -29,15 +25,16 @@ helpviewer_keywords:
 - file system security [SQL Server]
 - installing SQL Server, security
 ms.assetid: cf96155f-30a8-48b7-8d6b-24ce90dafdc7
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.openlocfilehash: 65e1702f5886205858c5fc917d15837f6a3dfa8c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+caps.latest.revision: 48
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: c5ff5f8211acbafff7e6a55453744386a3b77ec6
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772455"
 ---
 # <a name="security-considerations-for-a-sql-server-installation"></a>Considérations sur la sécurité pour une installation SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

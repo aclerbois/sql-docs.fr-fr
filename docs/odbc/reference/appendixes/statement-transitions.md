@@ -1,36 +1,33 @@
 ---
 title: Instruction Transitions | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transitioning states [ODBC], statement
 - state transitions [ODBC], statement
 - statement transitions [ODBC]
 ms.assetid: 3d70e0e3-fe83-4b4d-beac-42c82495a05b
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 50a20cb922b3f608a9d16cd24d5c288b096e01ca
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5f20ec0efb42e877695c44f4d62c4ffc1ae79806
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="statement-transitions"></a>Transitions d’instruction
 Instructions ODBC ont les états suivants.  
   
-|État|Description|  
+|État| Description|  
 |-----------|-----------------|  
 |S0|Instruction non allouée. (L’état de connexion doit être C4, C5 ou C6. Pour plus d’informations, consultez [connexion Transitions](../../../odbc/reference/appendixes/connection-transitions.md).)|  
 |S1|Instruction allouée.|  
@@ -41,7 +38,7 @@ Instructions ODBC ont les états suivants.
 |S6|Curseur positionné avec **SQLFetch** ou **SQLFetchScroll**.|  
 |S7|Curseur positionné avec **SQLExtendedFetch**.|  
 |S8|Fonction a besoin de données. **SQLParamData** n’a pas été appelée.|  
-|F9|Fonction a besoin de données. **SQLPutData** n’a pas été appelée.|  
+|S9|Fonction a besoin de données. **SQLPutData** n’a pas été appelée.|  
 |S10|Fonction a besoin de données. **SQLPutData** a été appelée.|  
 |F11|En cours d’exécution. Une instruction reste dans cet état après qu’une fonction qui est exécutée de façon asynchrone retourne SQL_STILL_EXECUTING. Une instruction est temporairement dans cet état lors de n’importe quelle fonction qui accepte qu'un descripteur d’instruction est en cours d’exécution. Séjour dans un état F11 n’est pas affiché dans les tables d’état à l’exception de la table d’état pour **SQLCancel**. Lorsqu’une instruction est temporairement dans état F11, la fonction peut être annulée en appelant **SQLCancel** à partir d’un autre thread.|  
 |S12|Annulation de l’exécution asynchrone. Dans S12, une application doit appeler la fonction annulée jusqu'à ce qu’elle retourne une valeur différente de SQL_STILL_EXECUTING. La fonction a été correctement annulée uniquement si la fonction retourne SQL_ERROR et SQLSTATE HY008 (opération annulée). Si elle retourne une autre valeur, tels que SQL_SUCCESS, l’opération d’annulation a échoué et la fonction exécutée normalement.|  
@@ -329,7 +326,7 @@ Instructions ODBC ont les états suivants.
   
  [1] cette ligne affiche les transitions lorsque *Option* a été SQL_CLOSE.  
   
- [2] de cette ligne affiche les transitions lorsque *Option* était SQL_UNBIND ou SQL_RESET_PARAMS. Si le *Option* SQL_DROP a été l’argument et le pilote sous-jacent est un ODBC 3*.x* pilote, le Gestionnaire de pilotes mappe à un appel à **SQLFreeHandle** avec *HandleType* défini à SQL_HANDLE_STMT. Pour plus d’informations, consultez le tableau de transition pour [SQLFreeHandle](../../../odbc/reference/syntax/sqlfreehandle-function.md).  
+ [2] de cette ligne affiche les transitions lorsque *Option* était SQL_UNBIND ou SQL_RESET_PARAMS. Si le *Option* SQL_DROP a été l’argument et le pilote sous-jacent est un ODBC 3 *.x* pilote, le Gestionnaire de pilotes mappe à un appel à **SQLFreeHandle** avec *HandleType* défini à SQL_HANDLE_STMT. Pour plus d’informations, consultez le tableau de transition pour [SQLFreeHandle](../../../odbc/reference/syntax/sqlfreehandle-function.md).  
   
 ## <a name="sqlgetconnectattr"></a>SQLGetConnectAttr  
   
@@ -474,7 +471,7 @@ Instructions ODBC ont les états suivants.
   
 ## <a name="sqlparamdata-need-data-states"></a>SQLParamData (besoin des États de données)  
   
-|S8<br /><br /> Besoin de données|F9<br /><br /> Devez placer|S10<br /><br /> Peut placer|  
+|S8<br /><br /> Besoin de données|S9<br /><br /> Devez placer|S10<br /><br /> Peut placer|  
 |----------------------|---------------------|---------------------|  
 |S1 [e] et [1] S2 [e], [nr] et S3 [2] [e], [r] et [2] S5 [e] et [4] S6 [e] et [5] S7 [e] et F9 [3] [d] F11 [x]|HY010|S1 [e] et [1] S2 [e], [nr] et S3 [2] [e], [r] et [2] S4 [s], [nr], et ([1] ou [2]) S5 [s], [r], et ([1] ou [2]) S5 ([s] ou [e]) et [4] S6 ([s] ou [e]) et [5] S7 ([s] ou [e]) et F9 [3] [d] F11 [x]|  
   
@@ -516,7 +513,7 @@ Instructions ODBC ont les états suivants.
   
 ## <a name="sqlputdata-need-data-states"></a>SQLPutData (besoin des États de données)  
   
-|S8<br /><br /> Besoin de données|F9<br /><br /> Devez placer|S10<br /><br /> Peut placer|  
+|S8<br /><br /> Besoin de données|S9<br /><br /> Devez placer|S10<br /><br /> Peut placer|  
 |----------------------|---------------------|---------------------|  
 |HY010|S1 [e] et [1] S2 [e], [nr] et S3 [2] [e], [r] et [2] S5 [e] et [4] S6 [e] et [5] S7 [e] et [3] S10 [s] F11 [x]|--S1 [s] [e] et [1] S2 [e], [nr] et S3 [2] [e], [r] et [2] S5 [e] et [4] S6 [e] et [5] S7 [e] et [3] F11 [x] HY011 [6]|  
   

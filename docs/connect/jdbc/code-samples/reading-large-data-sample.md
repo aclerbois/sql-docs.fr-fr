@@ -1,26 +1,24 @@
 ---
-title: "Lors de la lecture des données volumineuses exemple | Documents Microsoft"
-ms.custom: 
+title: Lors de la lecture des données volumineuses exemple | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6c986144-3854-4352-8331-e79eccbefc28
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.openlocfilehash: 8f606a7e86c4424932d470b94d558239ba566488
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d75c6fcf4148a4aa27dee51300d41a8c42e80acf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reading-large-data-sample"></a>Exemple de lecture de données volumineuses
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -1,30 +1,20 @@
 ---
 title: NonEmptyCrossjoin (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: NONEMPTYCROSSJOIN
-dev_langs: kbMDX
-helpviewer_keywords: NonEmptyCrossjoin function
-ms.assetid: 3dc9522d-9126-4f7a-b587-216fa7a06c62
-caps.latest.revision: "33"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: ffa983a749245022d0815906fe8e17850f9aabdf
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 5d77262ce3f6cf4f9e9cb1720d42b1bcbd85f31f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34580681"
 ---
 # <a name="nonemptycrossjoin-mdx"></a>NonEmptyCrossjoin (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -48,7 +38,7 @@ NonEmptyCrossjoin(Set_Expression1 [ ,Set_Expression2,...] [,Count ] )
  *Nombre*  
  Expression numérique valide qui précise le nombre de jeux à retourner.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **NonEmptyCrossjoin** fonction retourne le produit croisé de deux ou plusieurs jeux sous la forme d’un jeu, en excluant les tuples vides ou des tuples sans les données fournies par les tables de faits sous-jacentes. En raison de la façon dont le **NonEmptyCrossjoin** fonction, tous les calculés membres sont automatiquement exclus.  
   
  Si *nombre* n’est pas spécifié, la fonction cross joint tous les jeux spécifiés et exclut les membres vides du jeu obtenu. Si un nombre de jeux est défini, la fonction joint les nombres des jeux spécifiés entre eux en commençant par le premier jeu spécifié. Le **NonEmptyCrossjoin** fonction utilise tous les jeux restants qui sont spécifiées dans les jeux spécifiés suivants, mais qui n’ont pas été croisé joint pour déterminer quels membres sont considérés comme non vides dans la boîte entre le jeu joint. Le **NonEmptyCrossjoin** fonction respecte la **NON_EMPTY_BEHAVIOR** définition des mesures calculées.  
@@ -57,6 +47,6 @@ NonEmptyCrossjoin(Set_Expression1 [ ,Set_Expression2,...] [,Count ] )
 >  Cette fonction est déconseillée et vous ne devez pas l'utiliser ; elle est conservée uniquement pour maintenir la compatibilité descendante. Au lieu de cela, vous devez utiliser le [Exists (MDX)](../mdx/exists-mdx.md) fonction avec l’argument de nom de groupe de mesures ou la [NonEmpty (MDX)](../mdx/nonempty-mdx.md) (fonction).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

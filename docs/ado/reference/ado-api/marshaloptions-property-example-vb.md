@@ -1,32 +1,29 @@
 ---
-title: "Exemple de propriété MarshalOptions (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriété MarshalOptions (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - MarshalOptions property [ADO], Visual Basic example
 ms.assetid: ae576b2c-65aa-4838-872a-85e618806dc8
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 52b47718ea0fdc01f768b460e5f18f1773353bee
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b04608d3e8cad81d04769b42341cbd97303c38ad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="marshaloptions-property-example-vb"></a>Exemple de propriété MarshalOptions (VB)
 Cet exemple utilise le [MarshalOptions](../../../ado/reference/ado-api/marshaloptions-property-ado.md) propriété pour spécifier quelles lignes sont envoyées au serveur, toutes les lignes ou uniquement les lignes modifiées.  

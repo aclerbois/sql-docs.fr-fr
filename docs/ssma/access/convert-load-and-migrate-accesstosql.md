@@ -1,16 +1,15 @@
 ---
 title: Convertir, charger et migrer (AccessToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - migrating databases, one-click
 - one-click migration
 ms.assetid: 4ec83e96-88a5-4b7b-8d5a-f3429d9a936b
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 44683ae2b0650a86c04c5a184417f17e5b3acbef
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fef63f5a51baf9f35b1729119901cc8da2b322b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="convert-load-and-migrate-accesstosql"></a>Convertir, charger et migrer (AccessToSQL)
 Le **convertir, charger et migrer** boîte de dialogue signale l’état de la migration lorsque vous utilisez le bouton Convertir, charge et de migration ou l’Assistant de Migration.  

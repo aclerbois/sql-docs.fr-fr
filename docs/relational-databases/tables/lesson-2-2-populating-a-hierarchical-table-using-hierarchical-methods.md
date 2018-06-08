@@ -1,17 +1,14 @@
 ---
-title: "Remplissage d’une table hiérarchique à l’aide de méthodes hiérarchiques | Microsoft Docs"
-ms.custom: 
+title: Remplissage d’une table hiérarchique à l’aide de méthodes hiérarchiques | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 f1_keywords:
@@ -19,20 +16,19 @@ f1_keywords:
 helpviewer_keywords:
 - HierarchyID
 ms.assetid: 2c95fa60-5b8e-4a05-ac09-cffe2b05900a
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 24e6481c9f9122786d46cf7b813fdbdddac2ef74
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: 8946a829fac0e45fac8259d0f02c65b3874264e5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-2-2---populating-a-hierarchical-table-using-hierarchical-methods"></a>Leçon 2-2 : Remplissage d’une table hiérarchique à l’aide de méthodes hiérarchiques
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
-[!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] a 8 employés travaillant au service Marketing. La hiérarchie des employés se présente comme suit :  
+[!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] a 8 employés travaillant dans le service Marketing. La hiérarchie des employés se présente comme suit :  
   
 **David**, **EmployeeID** 6, est le directeur du marketing. **David**est le supérieur de trois spécialistes en marketing :  
   

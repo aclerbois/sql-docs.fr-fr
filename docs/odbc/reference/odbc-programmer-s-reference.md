@@ -1,30 +1,28 @@
 ---
-title: "ODBC programmeur &#39; s référence | Documents Microsoft"
-ms.custom: 
+title: Programmeur ODBC&#39;s référence | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC [ODBC], reference
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC [ODBC], reference
 ms.assetid: b33c3c43-ae66-44a3-be17-9cd82624dd96
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: b934652505039a021d2b08c0fa5314614ce9c609
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6b4ac57816359fe1b69fb46d5d60967804cde5d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="odbc-programmer39s-reference"></a>Programmeur ODBC &#39; s référence
+# <a name="odbc-programmer39s-reference"></a>Programmeur ODBC&#39;s référence
 Le *de référence du programmeur ODBC* contient les sections suivantes.  
   
 -   [Nouveautés dans ODBC 3.8](../../odbc/reference/what-s-new-in-odbc-3-8.md) répertorie les nouvelles fonctionnalités ODBC qui ont été ajoutées dans le SDK Windows 8.  

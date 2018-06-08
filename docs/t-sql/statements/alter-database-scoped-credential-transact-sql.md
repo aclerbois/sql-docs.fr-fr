@@ -1,16 +1,14 @@
 ---
 title: ALTER DATABASE SCOPED CREDENTIAL (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/27/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER DATABASE SCOPED CREDENTIAL
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - ALTER DATABASE SCOPED CREDENTIAL statement
 - credentials [SQL Server], ALTER DATABASE SCOPED CREDENTIAL statement
 ms.assetid: 966b75b5-ca87-4203-8bf9-95c4e00cb0b5
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0b64dc761f5af95ab913291d6aa488ced8fba8cf
-ms.sourcegitcommit: b4fd145c27bc60a94e9ee6cf749ce75420562e6b
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || = sqlallproducts-allversions
+ms.openlocfilehash: e4a0d0fac45816dd8cde887b3bd33619cb6cb095
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/01/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-database-scoped-credential-transact-sql"></a>ALTER DATABASE SCOPED CREDENTIAL (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-asdw-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-asdw-xxx-md.md)]
@@ -56,7 +54,7 @@ ALTER DATABASE SCOPED CREDENTIAL credential_name WITH IDENTITY = 'identity_name'
  SECRET **='***secret***'**  
  Spécifie le secret requis pour l'authentification sortante. *secret* est obligatoire pour importer un fichier à partir du stockage Blob Azure. *secret* peut être facultatif à d’autres fins.   
 >  [!WARNING]
->  La valeur de clé SAP peut commencer par un point d’interrogation (« ? »). Quand vous utilisez la clé SAP, vous devez supprimer le caractère « ? » initial. Sinon, vos efforts risquent d’être vains.    
+>  La valeur de clé SAP peut commencer par un point d’interrogation (« ? »). Quand vous utilisez la clé SAP, vous devez supprimer le caractère « ? » initial. Sinon, vos efforts risquent d’être vains.    
   
 ## <a name="remarks"></a>Notes   
  Quand des informations d’identification délimitées à la base de données sont modifiées, les valeurs *identity_name* et *secret* sont réinitialisées. Si l'argument facultatif SECRET n'est pas spécifié, sa valeur stockée est NULL.  

@@ -1,29 +1,19 @@
 ---
-title: "Leçon 3 : Renommer des colonnes | Documents Microsoft"
-ms.custom: 
-ms.date: 03/09/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: 5fc8ba1a-2b30-4775-9b3b-c09dee711b3e
-caps.latest.revision: "22"
-author: Minewiskan
+title: 'Leçon 3 : Renommer des colonnes | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-robots: noindex,nofollow
-ms.workload: Inactive
-ms.openlocfilehash: 2cfc73728765784c3471c3bfcc0e68382b54b845
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: 05a6364fea51b24fa5d093fea39393afe16d7678
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="rename-columns"></a>Renommer des colonnes
 [!INCLUDE[ssas-appliesto-sqlas-aas](../includes/ssas-appliesto-sqlas-aas.md)]

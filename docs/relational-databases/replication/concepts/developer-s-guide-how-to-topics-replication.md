@@ -1,29 +1,27 @@
 ---
-title: "Guide du développeur : rubriques de guide pratique (réplication) | Microsoft Docs"
-ms.custom: 
+title: 'Guide du développeur : rubriques de guide pratique (réplication) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
 ms.assetid: c6c15ae6-da52-4638-93d3-61c7242e8a0b
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a6f7342fe198add76b574366ca4a4f78c822facf
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 8ea57ad6fed81479ee7191b683f9c79ef35fd67c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="developer39s-guide-how-to-topics-replication"></a>Guide du développeur : rubriques de guide pratique (réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,17 +1,16 @@
 ---
-title: "Exécuter des requêtes SQL, tâche | Microsoft Docs"
-ms.custom: 
+title: Exécuter des requêtes SQL, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.executesqltask.f1
 - sql13.dts.designer.executesqltask.general.f1
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - batches [Integration Services]
 - Execute SQL task [Integration Services]
 ms.assetid: bebb2e8c-0410-43b2-ac2f-6fc80c8f2e9e
-caps.latest.revision: 
+caps.latest.revision: 115
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 82f72b4696d1169055c5726d9095eff70715b523
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 48c90af75a51d0b849f1ce7b0a714bd403e9018d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-sql-task"></a>Tâche d’exécution de requêtes SQL
   La tâche d'exécution SQL exécute des instructions ou des procédures stockées SQL à partir d'un package. La tâche peut contenir une seule ou plusieurs instructions SQL s'exécutant de façon séquentielle. Vous pouvez utiliser la tâche d'exécution SQL aux fins suivantes :  
@@ -174,7 +172,7 @@ Pour plus d’informations sur le langage Transact-SQL, consultez [Référence T
   
  **Rubriques connexes :**  [Exécution préparée](../../relational-databases/native-client-odbc-queries/executing-statements/prepared-execution.md)  
   
- **...**  
+ **Parcourir**  
  Utilisez la boîte de dialogue **Ouvrir** pour rechercher un fichier qui contient une instruction SQL. Sélectionnez un fichier dont vous voulez copier le contenu en tant qu'instruction SQL dans la propriété **SQLStatement** .  
   
  **Générer la requête**  

@@ -1,30 +1,29 @@
 ---
-title: "Méthode setEncrypt (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setEncrypt (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: setEncrypt Method (SQLServerDataSource)
-apilocation: setEncrypt Method (SQLServerDataSource)
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- setEncrypt Method (SQLServerDataSource)
+apilocation:
+- setEncrypt Method (SQLServerDataSource)
 apitype: Assembly
 ms.assetid: 0c85a9c1-f27c-457e-8461-403cc03e2d17
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9e90e49bff2956be8aa6950ec9612ea534921aac
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 723c5c5402fb32f0ad74bf303dd7c682b88d1c84
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setencrypt-method-sqlserverdatasource"></a>Méthode setEncrypt (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public void setEncypt(boolean encrypt)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *chiffrer*  
+ *Chiffrer*  
   
  **true** si le chiffrement Secure Sockets Layer (SSL) est activé entre le client et le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)]. Dans le cas contraire, la valeur est **false**.  
   
@@ -59,7 +58,7 @@ public void setEncypt(boolean encrypt)
  Si la propriété de chiffrement est n’est pas spécifiée ou la valeur **false**, le pilote ne force pas le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] pour prendre en charge le chiffrement SSL. Si le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] instance n’est pas configurée pour forcer le chiffrement SSL, une connexion est établie sans codage. Si le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] instance est configurée pour forcer le chiffrement SSL, le [!INCLUDE[jdbcNoVersion](../../../includes/jdbcnoversion_md.md)] automatiquement activer le chiffrement SSL lors de fonctionne correctement configuré JVM, sinon la connexion est interrompue et le pilote génère une erreur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

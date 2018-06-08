@@ -1,36 +1,35 @@
 ---
-title: "Tâche Reconstruire l’index (Plan de maintenance) | Microsoft Docs"
-ms.custom: 
+title: Tâche Reconstruire l’index (Plan de maintenance) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - reindex
 - sql13.swb.maint.reindex.f1
 helpviewer_keywords:
 - Rebuild Index Task dialog box
 ms.assetid: 33e2940b-139f-4563-b0cb-5683f08bd879
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f077a5071cfb7f3da4114fde9453cfa2c331783f
-ms.sourcegitcommit: 44cd5c651488b5296fb679f6d43f50d068339a27
+ms.openlocfilehash: 27392a1b2ad04033e8b5a6dab14f55246279ae57
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rebuild-index-task-maintenance-plan"></a>Tâche Reconstruire l'index (Plan de maintenance)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez la boîte de dialogue **Tâche Reconstruire l’index** pour recréer les index des tables de la base de données en définissant un nouveau facteur de remplissage. Le facteur de remplissage détermine la quantité d'espace disponible sur chaque page de l'index pour permettre l'extension ultérieure de l'index. Au fur et à mesure que des données sont ajoutées à la table, l'espace libre se remplit parce que le facteur de remplissage n'est pas conservé. Réorganiser les pages d'index et les données permet de recouvrer de l'espace libre.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez la boîte de dialogue **Tâche Reconstruire l’index** pour recréer les index des tables de la base de données en définissant un nouveau facteur de remplissage. Le facteur de remplissage détermine la quantité d'espace disponible sur chaque page de l'index pour permettre l'extension ultérieure de l'index. Au fur et à mesure que des données sont ajoutées à la table, l'espace libre se remplit parce que le facteur de remplissage n'est pas conservé. Réorganiser les pages d'index et les données permet de recouvrer de l'espace libre.  
   
  La **Tâche Reconstruire l'index** utilise l'instruction ALTER INDEX. Pour plus d’informations sur les options décrites dans cette page, consultez [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md).  
   
@@ -85,7 +84,7 @@ ms.lasthandoff: 11/17/2017
  Utilisez l'option `ONLINE` qui permet aux utilisateurs d'accéder à la table sous-jacente ou aux données d'index cluster, ainsi qu'à tous les index non-cluster associés au cours des opérations d'index.  
   
 > [!NOTE]  
->  Les opérations d'index en ligne ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
+>  Les opérations d'index en ligne ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
  **Ne pas reconstruire les index | Reconstruire des index en mode hors connexion**  
  Indiquez de quelle manière le système doit traiter les types d’index qui ne peuvent pas être recréés lorsqu’ils sont en ligne.  
@@ -131,13 +130,13 @@ ms.lasthandoff: 11/17/2017
  **Utiliser un nom d'utilisateur et un mot de passe spécifiques**  
  Se connecte à une instance de [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] à l'aide de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Cette option n'est pas disponible.  
   
- **Nom d'utilisateur**  
+ **User name**  
  Fournit le nom d'utilisateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à utiliser pour l'authentification. Cette option n'est pas disponible.  
   
  **Mot de passe**  
  Fournit un mot de passe à utiliser pour l'authentification. Cette option n'est pas disponible.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md)   
  [DBCC DBREINDEX &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-dbreindex-transact-sql.md)   
  [CREATE INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-index-transact-sql.md)   

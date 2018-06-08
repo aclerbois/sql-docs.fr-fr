@@ -1,27 +1,25 @@
 ---
-title: "Ajout de données à une région de données de tableau matriciel (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajout de données à une région de données de tableau matriciel (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8f1d0a76-afed-480f-98fb-89e2d4eb09b1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2bf18d57ac033120507c9c2ab5df9b98bf5cc2db
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8f788ced74e5833607f490012685b05ecef7b704
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-data-to-a-tablix-data-region-report-builder-and-ssrs"></a>Ajout de données à une région de données de tableau matriciel (Générateur de rapports et SSRS)
 Dans les rapports paginés [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , pour afficher les données d’un dataset de rapport dans une table ou une matrice, spécifiez dans chaque cellule de données le nom d’un champ de dataset à afficher. Vous pouvez afficher des données de détail ou des données groupées. Si vous ajoutez des groupes à une table ou à une matrice, les lignes et les colonnes des valeurs de groupe et les données de groupe sont automatiquement ajoutées. Vous pouvez ensuite ajouter des totaux et des sous-totaux pour vos données.  

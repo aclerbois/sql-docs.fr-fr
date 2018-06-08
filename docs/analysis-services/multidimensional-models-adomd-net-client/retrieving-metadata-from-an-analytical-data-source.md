@@ -1,32 +1,19 @@
 ---
-title: "Récupération de métadonnées à partir d’une Source de données analytiques | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- metadata [ADOMD.NET]
-- retrieving metadata
-ms.assetid: 00043ebd-7164-4ceb-b945-6e44378ea00a
-caps.latest.revision: 
-author: Minewiskan
+title: Récupération de métadonnées à partir d’une Source de données analytiques | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: adomd
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f2e387b3c60c2738e5da4f2b28af4aa75f2735ce
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 277332c5e98262fa2877b70b416362bcc61a6bc8
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="retrieving-metadata-from-an-analytical-data-source"></a>Récupération de métadonnées à partir d'une source de données analytiques
   Les métadonnées s'avèrent importantes pour les applications qui récupèrent et utilisent des données analytiques. Lorsqu'il s'agit de récupérer les données d'une source de données, la dimensionnalité de telles données est prévisible, même en présence de dataset imbriqués. Les jeux de résultats d'une base de données relationnelle présentent généralement une structure bidimensionnelle ou scalaire. Toutefois, les données extraites de sources de données analytiques peuvent avoir une dimensionnalité variable, organisées selon des hiérarchies d'une grande profondeur potentielle.  
@@ -38,7 +25,7 @@ ms.lasthandoff: 02/15/2018
   
  Pour plus d’informations : [fonctionne avec le modèle objet ADOMD.NET](../../analysis-services/multidimensional-models-adomd-net-client/retrieving-metadata-working-with-adomd-net-object-model.md)  
   
- **Schema Rowsets**  
+ **Ensembles de lignes de schéma**  
  Une autre méthode de récupération de métadonnées, complète mais plus difficile, est celle qui consiste à utiliser des ensembles de lignes de schéma. Un ensemble de lignes de schéma est un ensemble de lignes OLE DB qui encapsule la description de tous les objets d'un type particulier dans la base de données. Les informations de schéma contenues dans une source de données analytiques englobent notamment les bases de données ou les catalogues disponibles à partir de la source de données, les cubes et les modèles d'exploration d'une base de données, les rôles qui existent pour les cubes au niveau de la source de données, et ainsi de suite. Ces métadonnées peuvent être récupérées à l’aide de la <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.GetSchemaDataSet%2A> méthode, soit en passant une **GUID** ou XML pour le nom de l’analyse (XMLA).  
   
  Pour plus d’informations : [utilisation des ensembles de lignes de schéma dans ADOMD.NET](../../analysis-services/multidimensional-models-adomd-net-client/retrieving-metadata-working-with-schema-rowsets.md)  
@@ -62,7 +49,7 @@ ms.lasthandoff: 02/15/2018
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.InputDataSources>|[Ensemble de lignes MDSCHEMA_INPUT_DATASOURCES](../../analysis-services/schema-rowsets/ole-db-olap/mdschema-input-datasources-rowset.md)||  
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Instances>|[Ensemble de lignes DISCOVER_INSTANCES](../../analysis-services/schema-rowsets/ole-db-olap/discover-instances-rowset.md)||  
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Jobs>|**DISCOVER_JOBS**||  
-|<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Keywords>|[Ensemble de lignes DISCOVER_KEYWORDS &#40; OLE DB pour OLAP &#41;](../../analysis-services/schema-rowsets/ole-db-olap/discover-keywords-rowset-ole-db-for-olap.md)||  
+|<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Keywords>|[Ensemble de lignes DISCOVER_KEYWORDS & #40 ; OLE DB pour OLAP & #41 ;](../../analysis-services/schema-rowsets/ole-db-olap/discover-keywords-rowset-ole-db-for-olap.md)||  
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Kpis>|[Ensemble de lignes MDSCHEMA_KPIS](../../analysis-services/schema-rowsets/ole-db-olap/mdschema-kpis-rowset.md)|AdomdConnection.Cubes[].KPIs|  
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Levels>|[Ensemble de lignes MDSCHEMA_LEVELS](../../analysis-services/schema-rowsets/ole-db-olap/mdschema-levels-rowset.md)|AdomdConnection.Cubes[].Dimensions[].Hierarchies[].Levels|  
 |<xref:Microsoft.AnalysisServices.AdomdClient.AdomdSchemaGuid.Literals>|[Ensemble de lignes DISCOVER_LITERALS](../../analysis-services/schema-rowsets/xml/discover-literals-rowset.md)||  

@@ -1,36 +1,23 @@
 ---
 title: Accorder des autorisations sur une dimension (Analysis Services) | Documents Microsoft
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.asvs.roledesignerdialog.dimensions.f1
-helpviewer_keywords:
-- dimensions [Analysis Services], security
-- read/write permissions
-- user access rights [Analysis Services], dimensions
-- permissions [Analysis Services], dimensions
-ms.assetid: be5b2746-0336-4b12-827e-131462bdf605
-caps.latest.revision: "39"
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dba9778b626da43a404c773eaeb1745b3bcd3528
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 396969e35cff70f94bfe07ea1cf57d5221f485e2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="grant-permissions-on-a-dimension-analysis-services"></a>Octroyer des autorisations sur une dimension (Analysis Services)
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Sécurité de dimension est utilisée pour définir les autorisations sur un objet de dimension, et non sur ses données. En général, l'autorisation ou le refus de l'accès aux opérations de traitement est le principal objectif de la définition des autorisations sur une dimension.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  La sécurité de dimension sert à définir des autorisations sur un objet de dimension, et non sur ses données. En général, l'autorisation ou le refus de l'accès aux opérations de traitement est le principal objectif de la définition des autorisations sur une dimension.  
   
  Mais peut-être votre objectif n'est-il pas de contrôler les opérations de traitement, mais plutôt l'accès aux données d'une dimension ou aux attributs et hiérarchies qu'elle contient. Par exemple, une société ayant des divisions de ventes régionales souhaitera peut-être interdire l'accès aux chiffres des ventes au personnel étranger à la division en question. Pour autoriser ou refuser l'accès à une partie des données de dimension pour différentes composants, vous pouvez définir des autorisations sur des attributs de dimension et des membres de dimension. Notez que vous ne pouvez pas refuser l'accès à un objet de dimension proprement dit, mais uniquement à ses données. Si votre objectif immédiat consiste à autoriser ou à refuser l’accès aux membres d’une dimension, notamment les droits d’accès à des hiérarchies d’attributs spécifiques, consultez [Octroyer un accès personnalisé à des données de dimension &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-custom-access-to-dimension-data-analysis-services.md) pour plus d’informations.  
   
@@ -63,7 +50,7 @@ ms.lasthandoff: 01/08/2018
 ## <a name="set-permissions-on-a-cube-dimension"></a>Définir des autorisations sur une dimension de cube  
  Les dimensions de cube sont des dimensions de base de données qui ont été ajoutées à un cube. En tant que telles, elles dépendent structurellement des groupes de mesures associés. Bien que vous puissiez traiter ces objets de manière atomique, en termes d'autorisation, il est plus logique de traiter le cube et les dimensions de cube comme une seule et même entité.  
   
-1.  Dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], connectez-vous à l’instance d’ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], développez **Rôles** pour la base de données appropriée dans l’Explorateur d’objets, puis cliquez sur un rôle de base de données (ou créez un rôle de base de données).  
+1.  Dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], connectez-vous à l’instance d’[!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], développez **Rôles** pour la base de données appropriée dans l’Explorateur d’objets, puis cliquez sur un rôle de base de données (ou créez un rôle de base de données).  
   
 2.  Dans le **Dimensions** volet, affectez à la dimension est définie sur \<cube-name > **dimensions de cube**.  
   
@@ -74,9 +61,9 @@ ms.lasthandoff: 01/08/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Rôles et autorisations &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/roles-and-permissions-analysis-services.md)   
- [Octroyer des autorisations de cube ou de modèle &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-cube-or-model-permissions-analysis-services.md)   
- [Accorder des autorisations sur les structures d’exploration de données et modèles &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/grant-permissions-on-data-mining-structures-and-models-analysis-services.md)   
- [Octroyer un accès personnalisé à la dimension de données &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/grant-custom-access-to-dimension-data-analysis-services.md)   
- [Octroyer un accès personnalisé à des données de cellule &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-custom-access-to-cell-data-analysis-services.md)  
+ [Grant – octroi cube ou autorisations de modèle & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/grant-cube-or-model-permissions-analysis-services.md)   
+ [Accorder des autorisations sur les structures d’exploration de données et modèles &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/grant-permissions-on-data-mining-structures-and-models-analysis-services.md)   
+ [Octroyer un accès personnalisé à la dimension de données & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/grant-custom-access-to-dimension-data-analysis-services.md)   
+ [Octroyer un accès personnalisé à la cellule de données & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/grant-custom-access-to-cell-data-analysis-services.md)  
   
   

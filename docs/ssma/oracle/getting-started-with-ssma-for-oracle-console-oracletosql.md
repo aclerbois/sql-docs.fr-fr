@@ -1,30 +1,28 @@
 ---
 title: Prise en main de SSMA pour Oracle Console (OracleToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Oracle Console, Console Output Conventions
 - Oracle Console, Launching Console
 ms.assetid: 667a5e4a-6848-4973-a72d-1287f64718ac
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: f73c9250dd75d3beb5ec16cdb70fb3a4f7c57b20
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 95da4265bcaf56f7abbd5e445d93760790752b22
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-ssma--for-oracle-console-oracletosql"></a>Prise en main de SSMA pour Oracle Console (OracleToSQL)
 Cette section décrit la procédure pour lancer et commencer à l’application de console Oracle. Dans la liste, qu’elle contient, sont les conventions utilisées dans une fenêtre de sortie de Console de SSMA classique.  
@@ -41,13 +39,13 @@ Utilisez les étapes suivantes pour démarrer l’application de console SSMA :
 ## <a name="procedure-for-using-the-ssma-console"></a>Procédure d’utilisation de la Console SSMA  
 Une fois que la console est lancée correctement sur votre système Windows, vous pouvez utiliser les étapes suivantes pour travailler dessus :  
   
-1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40; OracleToSQL &#41;](../../ssma/oracle/creating-script-files-oracletosql.md) .  
+1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40;OracleToSQL&#41; ](../../ssma/oracle/creating-script-files-oracletosql.md) .  
   
-2.  [Création de fichiers de la valeur de la Variable &#40; OracleToSQL &#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md)  
+2.  [Création de fichiers de la valeur de la Variable &#40;OracleToSQL&#41;](../../ssma/oracle/creating-variable-value-files-oracletosql.md)  
   
-3.  [Créer les fichiers de connexion de serveur &#40; OracleToSQL &#41;](../../ssma/oracle/creating-the-server-connection-files-oracletosql.md)  
+3.  [Création des fichiers de connexion serveur &#40;OracleToSQL&#41;](../../ssma/oracle/creating-the-server-connection-files-oracletosql.md)  
   
-4.  [L’exécution de la Console SSMA &#40; OracleToSQL &#41; ](../../ssma/oracle/executing-the-ssma-console-oracletosql.md) selon les besoins de votre projet  
+4.  [L’exécution de la Console SSMA &#40;OracleToSQL&#41; ](../../ssma/oracle/executing-the-ssma-console-oracletosql.md) selon les besoins de votre projet  
   
 Fonctionnalités supplémentaires :  
   
@@ -62,7 +60,7 @@ Lors de l’exécution des commandes de script SSMA et des options, le programme
   
 Interprétation de couleur de la sortie de console dans le tableau suivant :  
   
-|Couleur|Description|  
+|Color| Description|  
 |---------|---------------|  
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Cachet de date et heure, le message à l’utilisateur|  

@@ -1,31 +1,23 @@
 ---
 title: Tables et colonnes | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: c428d717-05de-436c-b9dc-e8c1925a60ca
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 19f955231a5a68cc52ae9c867d0ea64f9c3daddf
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 10133b2843c01f16134c028140394247c2669236
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tables-and-columns"></a>Tables et colonnes 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Après avoir ajouté des tables et des données dans un modèle à l'aide de l'Assistant Importation de table, vous pouvez commencer à utiliser les tables en ajoutant de nouvelles colonnes de données, en créant des relations entre les tables, en définissant des calculs qui étendent les données, et en filtrant et en triant des données dans les tables pour un affichage plus aisé.  
+  Après avoir ajouté des tables et des données dans un modèle à l'aide de l'Assistant Importation de table, vous pouvez commencer à utiliser les tables en ajoutant de nouvelles colonnes de données, en créant des relations entre les tables, en définissant des calculs qui étendent les données, et en filtrant et en triant des données dans les tables pour un affichage plus aisé.  
   
  Sections de cette rubrique :  
   

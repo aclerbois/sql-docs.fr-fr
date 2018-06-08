@@ -1,27 +1,24 @@
 ---
-title: "Installer SQL Server 2016 sur Server Core | Microsoft Docs"
-ms.custom: 
+title: Installer SQL Server 2016 sur Server Core | Microsoft Docs
+ms.custom: ''
 ms.date: 09/05/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 1dd294cc-5b69-4d0c-9005-3e307b75678b
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 43
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 7de58227a8da5f90921b1e973a63949f71a25b52
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 979cb0b59ba0528ef7450de0fc4a7b96dd9d4338
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770915"
 ---
 # <a name="install-sql-server-on-server-core"></a>Installer SQL Server sur Server Core
 
@@ -33,7 +30,7 @@ L’option d’installation Server Core offre l’environnement minimal requis p
   
  Pour obtenir la liste des systèmes d’exploitation pris en charge, consultez [Configurations matérielle et logicielle requises pour l’installation de SQL Server](../../sql-server/install/hardware-and-software-requirements-for-installing-sql-server.md).
 
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
   
 |Condition requise|Procédure d'installation|  
 |-----------------|--------------------|  
@@ -47,24 +44,24 @@ L’option d’installation Server Core offre l’environnement minimal requis p
   
 |Fonctionnalité|Pris en charge|Informations supplémentaires|  
 |-------------|---------------|----------------------------|  
-|[!INCLUDE[ssDE](../../includes/ssde-md.md)] Services|Oui||  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] REPLICATION|Oui||  
+|du[!INCLUDE[ssDE](../../includes/ssde-md.md)] |Oui||  
+|Réplication[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] |Oui||  
 |Recherche en texte intégral|Oui||  
 |[!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]|Oui||  
 |[!INCLUDE[rsql_productname_md](../../includes/rsql-productname-md.md)]|Oui||  
 |[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]|non||  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Data Tools (SSDT)|non||  
 |Connectivité des outils clients|Oui||  
-|Integration Services, serveur|Oui|Pour en savoir plus sur le nouveau serveur Integration Services et ses fonctionnalités dans [!INCLUDE[ssCurrent](../../integration-services/what-s-new-in-integration-services-in-sql-server-2016.md).|  
+|Integration Services, serveur|Oui||  
 |Compatibilité descendante des outils clients|non||  
 |Kit de développement logiciel (SDK) des outils clients|non||  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Documentation en ligne|non||  
+|Documentation en ligne[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] |non||  
 |Outils de gestion - Base|À distance uniquement|L’installation de ces fonctionnalités sur Server Core n’est pas prise en charge. Ces composants peuvent être installés sur un serveur autre que Server Core et être connectés aux services de [!INCLUDE[ssDE](../../includes/ssde-md.md)] installés sur Server Core.|  
 |Outils d'administration – Complets|À distance uniquement|L’installation de ces fonctionnalités sur Server Core n’est pas prise en charge. Ces composants peuvent être installés sur un serveur autre que Server Core et être connectés aux services de [!INCLUDE[ssDE](../../includes/ssde-md.md)] installés sur Server Core.|  
 |Distributed Replay Controller|non||  
 |Distributed Replay Client|À distance uniquement|L’installation de ces fonctionnalités sur Server Core n’est pas prise en charge. Ces composants peuvent être installés sur un serveur autre que Server Core et être connectés aux services de [!INCLUDE[ssDE](../../includes/ssde-md.md)] installés sur Server Core.|  
 |Kit de développement logiciel (SDK) de l'option Connectivité client de SQL|Oui||  
-|Microsoft Sync Framework|Oui|Microsoft Sync Framework n’est pas inclus dans le package d’installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] . Vous pouvez télécharger la version appropriée de Sync Framework à partir de cette [page du Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkId=221788) (http://go.microsoft.com/fwlink/?LinkId=221788) et l’installer sur un ordinateur exécutant Server Core.|  
+|Microsoft Sync Framework|Oui|Microsoft Sync Framework n’est pas inclus dans le package d’installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] . Vous pouvez télécharger la version appropriée de Sync Framework à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkId=221788) (page http://go.microsoft.com/fwlink/?LinkId=221788)) et l’installer sur un ordinateur exécutant Server Core.|  
 |[!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)]|non||  
 |[!INCLUDE[ssDQSnoversion](../../includes/ssdqsnoversion-md.md)]|non||  
   
@@ -73,9 +70,9 @@ L’option d’installation Server Core offre l’environnement minimal requis p
   
 |||  
 |-|-|  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] éditions|Tous les éditions 64 bits de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]*|  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] langue|Toutes les langues|  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] langue sur la langue du système d’exploitation/paramètres régionaux (combinaison)|ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows JPN (japonais)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows GER (allemand)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows CHS (chinois-Chine)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows ARA (Arabe (Arabie-Saoudite))<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows THA (thaïlandais)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows TRK (turque)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows pt-PT (portugais Portugal)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows ENG (anglais)|  
+|Éditions de[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] |Tous les éditions 64 bits de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] |  
+|Langue de[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] |Tous les langages|  
+|Langage[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur le langage du système d'exploitation/paramètres régionaux (combinaison)|ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows JPN (japonais)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows GER (allemand)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows CHS (chinois-Chine)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows ARA (Arabe (Arabie-Saoudite))<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows THA (thaïlandais)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows TRK (turque)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows pt-PT (portugais Portugal)<br /><br /> ENG [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur Windows ENG (anglais)|  
 |Édition Windows|[!INCLUDE[winserver2016_datacenter_md](../../includes/winserver2016-datacenter-md.md)]<br/><br/>[!INCLUDE[winserver2016_standard_md](../../includes/winserver2016-standard-md.md)]<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] R2 Datacenter<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] R2 Standard<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] R2 Essentials<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] R2 Foundation<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] Datacenter<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] Standard<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] Essentials<br/><br/>[!INCLUDE[win8srv](../../includes/win8srv-md.md)] Foundation|  
   
 ## <a name="upgrade"></a>UPGRADE 

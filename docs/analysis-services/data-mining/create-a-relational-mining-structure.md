@@ -1,37 +1,23 @@
 ---
-title: "Créer une Structure d’exploration de données relationnelles | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- dimensions [Analysis Services], data mining
-- data mining [Analysis Services], structure
-- mining structures [Analysis Services], creating
-- relational mining models [Analysis Services]
-- OLAP mining models [Analysis Services]
-ms.assetid: 5547d639-377d-4ca7-88fc-ce1f9e2babc5
-caps.latest.revision: 
-author: Minewiskan
+title: Créer une Structure d’exploration de données relationnelles | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6ea3691ad03e5133d14f6aa8f99324957eb0c2b4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: fe3958698c41cc54b6606255ced3a79133c66320
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-relational-mining-structure"></a>Créer une structure d'exploration de données relationnelle
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La plupart des modèles d'exploration de données sont basés sur des sources de données relationnelles. Les avantages de la création d'un modèle d'exploration de données relationnel sont que vous pouvez compiler des données ad hoc et effectuer l'apprentissage et la mise à jour d'un modèle sans entrer dans la complexité d'une création de cube.  
+  La plupart des modèles d'exploration de données sont basés sur des sources de données relationnelles. Les avantages de la création d'un modèle d'exploration de données relationnel sont que vous pouvez compiler des données ad hoc et effectuer l'apprentissage et la mise à jour d'un modèle sans entrer dans la complexité d'une création de cube.  
   
  Une structure d'exploration de données relationnelle peut ajouter des données provenant de sources disparates. Les données brutes peuvent être stockées dans des tables, des fichiers ou des systèmes de bases de données relationnelles, à condition que les données puissent être définies dans la vue de source de données. Par exemple, vous devez utiliser une structure d'exploration de données relationnelle si vos données se trouvent dans Excel, un entrepôt de données SQL Server ou une base de données de rapports SQL Server, ou dans des sources externes accessibles via des fournisseurs OLE DB ou ODBC.  
   
@@ -133,7 +119,7 @@ La plupart des modèles d'exploration de données sont basés sur des sources de
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepteur d’exploration de données](../../analysis-services/data-mining/data-mining-designer.md)   
- [Assistant exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md)   
+ [Assistant exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md)   
  [Propriétés du modèle d’exploration de données](../../analysis-services/data-mining/mining-model-properties.md)   
  [Propriétés de Structure d’exploration de données et les colonnes de Structure](../../analysis-services/data-mining/properties-for-mining-structure-and-structure-columns.md)   
  [Tâches de la Structure d’exploration de données et procédures](../../analysis-services/data-mining/mining-structure-tasks-and-how-tos.md)  

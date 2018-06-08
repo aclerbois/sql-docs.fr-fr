@@ -1,32 +1,28 @@
 ---
-title: "Exemple : restauration en ligne d’un fichier en lecture/écriture (mode de récupération complète) | Microsoft Docs"
-ms.custom: 
+title: 'Exemple : restauration en ligne d’un fichier en lecture/écriture (mode de récupération complète) | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full recovery model [SQL Server], RESTORE example
 - online restores [SQL Server], full recovery model
 - restore sequences [SQL Server], online
 ms.assetid: 0dbeda81-1464-44ba-9011-914900096368
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a73ddcb2536293577c5e0fbeb1c2627795df3ca5
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 731c3e98bb6bc906c165bc4b7c3d97c85b919cd0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="example-online-restore-of-a-read-write-file-full-recovery-model"></a>Exemple : restauration en ligne d’un fichier en lecture/écriture (mode de récupération complète)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

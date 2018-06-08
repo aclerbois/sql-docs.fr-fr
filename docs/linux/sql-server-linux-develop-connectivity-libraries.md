@@ -1,25 +1,22 @@
 ---
-title: "Bibliothèques de connectivité et frameworks | Documents Microsoft"
-description: "Le tableau ci-dessous répertorie les bibliothèques de connectivité ou les pilotes que les applications clientes peuvent utiliser à partir d'une variété de langues pour se connecter et utiliser Microsoft SQL Server fonctionnant sur site ou dans le cloud, sous Linux, Windows ou Docker, ainsi qu'Azure SQL Database et Azure SQL Data Warehouse."
+title: Bibliothèques de connectivité et frameworks | Documents Microsoft
+description: Le tableau ci-dessous répertorie les bibliothèques de connectivité ou les pilotes que les applications clientes peuvent utiliser à partir d'une variété de langues pour se connecter et utiliser Microsoft SQL Server fonctionnant sur site ou dans le cloud, sous Linux, Windows ou Docker, ainsi qu'Azure SQL Database et Azure SQL Data Warehouse.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 80efe5ff-09ba-48a0-ac93-a91d62cff47c
-ms.workload: Inactive
-ms.openlocfilehash: 0e5a08655bcfea396bcf599ef65e7a8e1f126575
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 08462e771763b5aeb2b93e64ad6ca28e3b58313a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="connectivity-libraries-and-frameworks-for-microsoft-sql-server"></a>Les bibliothèques de connectivité et des infrastructures pour Microsoft SQL Server
 

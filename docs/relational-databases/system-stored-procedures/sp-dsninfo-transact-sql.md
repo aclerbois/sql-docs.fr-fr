@@ -1,16 +1,15 @@
 ---
 title: sp_dsninfo (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_dsninfo
 ms.assetid: 34648615-814b-42bc-95a3-50e86b42ec4d
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4882ce3dd87c60f4fceaeb2b770c8879fadf3b78
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 5a9c04611a342f81b6aa0a0b403eb6ff4ce8a643
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spdsninfo-transact-sql"></a>sp_dsninfo (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,7 +58,7 @@ sp_dsninfo [ @dsn =] 'dsn'
 |-----------|-----------------|  
 |**DBMS_NAME**|Spécifie le nom du fournisseur de la source de données.|  
 |**DBMS_VERSION**|Spécifie la version de la source de données.|  
-|**NOM_BASE_DE_DONNÉES**|Spécifie le nom de la base de données.|  
+|**DATABASE_NAME**|Spécifie le nom de la base de données.|  
 |**SQL_SUBSCRIBER**|Spécifie que la source de données peut être un Abonné.|  
   
  [  **@login =**] **'***connexion***'**  
@@ -84,19 +82,19 @@ sp_dsninfo [ @dsn =] 'dsn'
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**Type d’information**|**nvarchar (64)**|Types d'information, tels que DBMS_NAME, DBMS_VERSION, DATABASE_NAME, SQL_SUBSCRIBER.|  
-|**Valeur**|**nvarchar(512)**|Valeur du type d'information associé.|  
+|**Type d’information**|**nvarchar(64)**|Types d'information, tels que DBMS_NAME, DBMS_VERSION, DATABASE_NAME, SQL_SUBSCRIBER.|  
+|**Value**|**nvarchar(512)**|Valeur du type d'information associé.|  
   
 ## <a name="remarks"></a>Notes  
  **sp_dsninfo** est utilisée dans tous les types de réplication.  
   
  **sp_dsninfo** récupère ODBC ou OLE DB informations de source de données qui indique si la base de données peut être utilisé pour la réplication ou l’interrogation.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_dsninfo**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_enumdsn &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-enumdsn-transact-sql.md)   
+ [sp_enumdsn &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-enumdsn-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

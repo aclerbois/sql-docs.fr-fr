@@ -1,16 +1,14 @@
 ---
-title: sp_fulltext_table (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_fulltext_table (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_fulltext_table_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_fulltext_table
 ms.assetid: a765f311-07fc-4af3-b74c-e9a027fbecce
-caps.latest.revision: 
+caps.latest.revision: 17
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1827d90dab1dc4be8acbc3cf3e00bfe97d4b1bae
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b6c759bd422ae815a284ae2cd14bc8b1861281ad
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spfulltexttable-transact-sql"></a>sp_fulltext_table (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-xxx-md.md)]
@@ -55,10 +53,10 @@ sp_fulltext_table
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@tabname=**] **'***qualified_table_name***'**  
+ [  **@tabname=**] **'***nom_table_qualifée***'**  
  Nom de table en une ou deux parties. La table doit déjà exister dans la base de données actuelle. *nom_table_qualifée* est **nvarchar (517)**, sans valeur par défaut.  
   
- [ **@action=**] **'***action***'**  
+ [  **@action=**] **'***action***'**  
  Action à exécuter. *action* est **nvarchar (50)**, sans valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
@@ -66,7 +64,7 @@ sp_fulltext_table
 |**Créer**|Crée les métadonnées pour un index de recherche en texte intégral pour la table référencée par *nom_table_qualifée* et spécifie que les données d’index de recherche en texte intégral pour cette table doivent résider dans *fulltext_catalog_name*. Cette opération permet également l’utilisation de *nom_index_unique* en tant que la colonne de clé de recherche en texte intégral. Cet index unique doit déjà exister et être défini sur une colonne de la table.<br /><br /> Une recherche en texte intégral ne peut pas être réalisée vis à vis de cette table tant que le catalogue de texte intégral n'est pas rempli.|  
 |**Supprimer**|Supprime les métadonnées de l’index de recherche en texte intégral pour *nom_table_qualifée*. Si cet index est actif, il est automatiquement désactivé avant d'être supprimé. Il n'est pas nécessaire de supprimer les colonnes avant de supprimer l'index de texte intégral.|  
 |**Activate**|Active la possibilité pour les données d’index de texte intégral doivent être collectées pour *nom_table_qualifée*, une fois qu’il a été désactivé. Une colonne au moins doit faire partie de l'index de texte intégral pour pouvoir activer cette option.<br /><br /> Un index de texte intégral est automatiquement activé (au niveau du remplissage) dès l'ajout de la première colonne à indexer. Si la dernière colonne est supprimée de l'index, celui-ci devient inactif. Si le suivi des modifications est activé, l'activation d'un index inactif démarre un nouveau remplissage.<br /><br /> Notez que cela n’est pas réellement effectué de l’index de recherche en texte intégral, mais simplement la table est inscrite dans le catalogue de texte intégral dans le système de fichiers afin que les lignes à partir de *nom_table_qualifée* peuvent être récupérées au cours du remplissage d’index de recherche en texte intégral suivant.|  
-|**Deactivate**|Désactive l’index de recherche en texte intégral pour *nom_table_qualifée* afin que les données de l’index de recherche en texte intégral n’est plus peuvent être regroupées pour le *nom_table_qualifée*. Les métadonnées de l'index de texte intégral sont conservées et la table peut être réactivée.<br /><br /> Si le suivi des modifications est activé, la désactivation d'un index actif gèle l'état de l'index : tout remplissage en cours est arrêté et aucune modification supplémentaire n'est diffusée à l'index.|  
+|**Désactiver**|Désactive l’index de recherche en texte intégral pour *nom_table_qualifée* afin que les données de l’index de recherche en texte intégral n’est plus peuvent être regroupées pour le *nom_table_qualifée*. Les métadonnées de l'index de texte intégral sont conservées et la table peut être réactivée.<br /><br /> Si le suivi des modifications est activé, la désactivation d'un index actif gèle l'état de l'index : tout remplissage en cours est arrêté et aucune modification supplémentaire n'est diffusée à l'index.|  
 |**start_change_tracking**|Démarre un remplissage incrémentiel de l'index de texte intégral. Si la table ne dispose pas de données d'une colonne de type timestamp, démarre un remplissage complet de l'index de texte intégral. Démarre le suivi des modifications apportées à la table.<br /><br /> Suivi des modifications de texte intégral ne suit pas toutes les opérations WRITETEXT ou UPDATETEXT effectuées sur les colonnes indexées en texte intégral qui sont de type **image**, **texte**, ou **ntext**.|  
 |**stop_change_tracking**|Arrête le suivi des modifications apportées à la table.|  
 |**update_index**|Diffuse le jeu courant des modifications suivies à l'index de texte intégral.|  
@@ -76,10 +74,10 @@ sp_fulltext_table
 |**start_incremental**|Démarre un remplissage incrémentiel de l'index de texte intégral de la table.|  
 |**Arrêter**|Arrête un remplissage complet ou incrémentiel.|  
   
- [ **@ftcat=**] **'***fulltext_catalog_name***'**  
+ [  **@ftcat=**] **'***fulltext_catalog_name***'**  
  Est un nom de catalogue de texte intégral existant valide pour un **créer** action. Pour toutes les autres actions, ce paramètre doit avoir la valeur NULL. *fulltext_catalog_name* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ **@keyname=**] **'***unique_index_name***'**  
+ [  **@keyname=**] **'***nom_index_unique***'**  
  Est un index valide non null de colonne de clé unique, unique sur *nom_table_qualifée* pour un **créer** action. Pour toutes les autres actions, ce paramètre doit avoir la valeur NULL. *nom_index_unique* est **sysname**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -144,6 +142,6 @@ GO
  [sp_help_fulltext_tables_cursor &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-fulltext-tables-cursor-transact-sql.md)   
  [sp_helpindex &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpindex-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Recherche en texte intégral et la recherche sémantique stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
+ [Procédures stockées de recherche en texte intégral et la recherche sémantique &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/full-text-search-and-semantic-search-stored-procedures-transact-sql.md)  
   
   

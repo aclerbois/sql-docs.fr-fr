@@ -1,31 +1,29 @@
 ---
-title: "Sécurité de la réplication sur Internet | Microsoft Docs"
-ms.custom: 
+title: Sécurité de la réplication sur Internet | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [SQL Server replication], Internet
 - Internet [SQL Server replication], security
 ms.assetid: 25b7af05-2721-4b24-9083-fb671e8bf4e0
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4f259ae85bfb44dc538c5d6a049334fc51edc4a0
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 664b86ae76c3113d14c823c3b4ae34df58aac579
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="securing-replication-over-the-internet"></a>Sécurité de la réplication sur Internet
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

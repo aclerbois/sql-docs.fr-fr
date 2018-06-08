@@ -1,16 +1,14 @@
 ---
-title: "Sys.dm_continuous_copy_status (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.dm_continuous_copy_status (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
-ms.component: dmv's
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_continuous_copy_status_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - dm_continuous_copy_status
 - sys.dm_continuous_copy_status
 ms.assetid: 411b2e71-4421-4ef5-900d-5af068750899
-caps.latest.revision: 
+caps.latest.revision: 18
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 34d840580edb8bb15f4af379575bc0f24b44edcc
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: 478e5ed025fb371d7b615e39580865346413d4b6
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmcontinuouscopystatus-azure-sql-database"></a>Sys.dm_continuous_copy_status (base de données de SQL Azure)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]
@@ -66,7 +64,7 @@ Si vous utilisez une base de données SQL V12, vous devez utiliser [sys.dm_geo_r
  Comme le **sys.dm_database_copies** vue, **sys.dm_continuous_copy_status** reflète l’état de la relation de copie continue dans lequel la base de données est soit actif ou principal base de données secondaire. Contrairement aux **sys.dm_database_copies**, **sys.dm_continuous_copy_status** contient plusieurs colonnes qui fournissent des détails sur les opérations et les performances. Ces colonnes comprennent **last_replication**, et **replication_lag_sec**...  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sys.dm_database_copies &#40; Base de données SQL Azure &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-database-copies-azure-sql-database.md)   
- [Géo-réplication Active stockées procédures &#40; Transact-SQL &#41;](http://msdn.microsoft.com/library/81658ee4-4422-4d73-bf7a-86a07422cb0d)  
+ [Sys.dm_database_copies &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-database-copies-azure-sql-database.md)   
+ [Géo-réplication Active les procédures stockées &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/81658ee4-4422-4d73-bf7a-86a07422cb0d)  
   
   

@@ -1,16 +1,14 @@
 ---
-title: sysmail_update_profile_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_update_profile_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_update_profile_sp
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_update_profile_sp
 ms.assetid: eaedf7ce-a8d5-4ab9-99e0-d77d5be19e90
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1da9b999f30a31928849f5a31a2144117d94e1f7
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: a1b6d810355590ddc69c0b57fa0fc3e24e461696
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailupdateprofilesp-transact-sql"></a>sysmail_update_profile_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,13 +44,13 @@ sysmail_update_profile_sp [ [ @profile_id = ] profile_id , ] [ [ @profile_name =
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  Identificateur du profil à mettre à jour. *profile_id* est **int**, avec NULL comme valeur par défaut. Au moins un des *profile_id* ou *profile_name* doit être spécifié. Si les deux arguments sont indiqués, la procédure modifie le nom du profil.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du profil à mettre à jour ou nouveau nom pour le profil. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Au moins un des *profile_id* ou *profile_name* doit être spécifié. Si les deux arguments sont indiqués, la procédure modifie le nom du profil.  
   
- [ **@description** = ] **'***description***'**  
+ [ **@description** =] **'***description***'**  
  Nouvelle description du profil. *Description* est **nvarchar (256)**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -93,6 +90,6 @@ EXECUTE msdb.dbo.sysmail_update_profile_sp
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
  [Créer un compte de messagerie de base de données](../../relational-databases/database-mail/create-a-database-mail-account.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

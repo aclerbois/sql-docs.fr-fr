@@ -1,16 +1,14 @@
 ---
-title: "UnionAggregate (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: UnionAggregate (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - UnionAggregate
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - UnionAggregate method (geography)
 ms.assetid: 1a3aeef1-5b0e-4ae8-aeb7-c4aab22f42ab
-caps.latest.revision: 
+caps.latest.revision: 13
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63299cfd3847f236f5908085b824b7b271dafc7a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0422d5be60728fac22d8fbe76ddc0ee9d2ac3fa3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unionaggregate-geography-data-type"></a>UnionAggregate (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

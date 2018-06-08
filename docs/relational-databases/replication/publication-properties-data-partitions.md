@@ -1,30 +1,28 @@
 ---
-title: "Propriétés de publication, Partitions de données | Microsoft Docs"
-ms.custom: 
+title: Propriétés de publication, Partitions de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.newpubwizard.pubproperties.datapartitions.f1
 ms.assetid: 5869edb7-d05f-495b-b828-b7fd5e828d20
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4c3934697f01070c587aa1e20670bb42e34e9500
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 7839c1bb3f4bf944ba230472abdca3a81fa58d38
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publication-properties-data-partitions"></a>Propriétés de publication, Partitions de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -32,7 +30,7 @@ ms.lasthandoff: 03/08/2018
   
 ## <a name="options"></a>Options  
  **Ajouter**  
- Cliquez sur **Ajouter** pour définir une partition. Dans la boîte de dialogue **Ajouter une partition de données** , définissez les valeurs de **HOST_NAME()** et/ou de **SUSER_SNAME()**et spécifiez une planification d'actualisation des instantanés.  
+ Cliquez sur **Ajouter** pour définir une partition. Dans la boîte de dialogue **Ajouter une partition de données** , définissez les valeurs de **HOST_NAME()** et/ou de **SUSER_SNAME()** et spécifiez une planification d'actualisation des instantanés.  
   
  **Modifier**  
  Sélectionnez une partition existante dans la grille et cliquez sur **Modifier** pour modifier la partition.  

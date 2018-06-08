@@ -1,16 +1,14 @@
 ---
-title: "La gestion des problèmes d’accès concurrentiel de base de données dans les codes (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: La gestion des problèmes d’accès concurrentiel de base de données dans les codes (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - <before> block
@@ -23,20 +21,20 @@ helpviewer_keywords:
 - concurrency [SQLXML]
 - intermediate concurrency protection [SQLXML]
 ms.assetid: d4b908d1-b25b-4ad9-8478-9cd882e8c44e
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1e19d8397d59b4c85d60593c63faa5bc6f0f2ea4
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 73ae79d0831820366f5ec6454573df26c7b36e01
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="handling-database-concurrency-issues-in-updategrams-sqlxml-40"></a>Gestion des problèmes d'accès concurrentiel aux bases de données dans les codes de mise à jour (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Comme d'autres mécanismes de mise à jour de base de données, les codes de mise à jour doivent faire face à des mises à jour simultanées de données dans un environnement multi-utilisateur. Les codes de mise à jour utilisent le contrôle d'accès concurrentiel optimiste, qui utilise la comparaison des données de champ sélectionnées comme instantanés pour garantir que les données à mettre à jour n'ont pas été altérées par une autre application utilisateur depuis qu'elles ont été lues à partir de la base de données. Codes incluent ces valeurs d’instantané dans le  **\<avant >** bloc des codes. Avant la mise à jour de la base de données, mise à jour vérifie les valeurs qui sont spécifiés dans le  **\<avant >** bloc par rapport aux valeurs actuellement dans la base de données pour vous assurer que la mise à jour est valide.  
+  Comme d'autres mécanismes de mise à jour de base de données, les codes de mise à jour doivent faire face à des mises à jour simultanées de données dans un environnement multi-utilisateur. Les codes de mise à jour utilisent le contrôle d'accès concurrentiel optimiste, qui utilise la comparaison des données de champ sélectionnées comme instantanés pour garantir que les données à mettre à jour n'ont pas été altérées par une autre application utilisateur depuis qu'elles ont été lues à partir de la base de données. Codes incluent ces valeurs d’instantané dans le  **\<avant >** bloc des codes. Avant la mise à jour de la base de données, mise à jour vérifie les valeurs qui sont spécifiés dans le  **\<avant >** bloc par rapport aux valeurs actuellement dans la base de données pour vous assurer que la mise à jour est valide.  
   
  Le contrôle d'accès concurrentiel optimiste offre trois niveaux de protection dans un code de mise à jour : bas (aucune), intermédiaire et haut. Vous pouvez décider de quel niveau de protection vous avez besoin en spécifiant le code de mise à jour en conséquence.  
   
@@ -195,6 +193,6 @@ Comme d'autres mécanismes de mise à jour de base de données, les codes de mis
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

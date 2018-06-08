@@ -1,28 +1,26 @@
 ---
 title: SQLTables (le pilote ODBC Visual FoxPro) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLTables function [ODBC], Visual FoxPro ODBC Driver
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLTables function [ODBC], Visual FoxPro ODBC Driver
 ms.assetid: 69e2a038-5def-423f-91aa-8756e069dd2a
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 75a251ab1c392b1a351ee36c39fe340f2122c610
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e8eccd686c1c4e3226a929cb39ee16e1921435ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqltables-visual-foxpro-odbc-driver"></a>SQLTables (le pilote ODBC Visual FoxPro)
 > [!NOTE]  

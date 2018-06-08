@@ -1,30 +1,29 @@
 ---
-title: "Méthode usesLocalFilePerTable (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode usesLocalFilePerTable (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.usesLocalFilePerTable
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.usesLocalFilePerTable
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 1fafb076-2bb7-4845-9c02-788479f00ca2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 506d7a6edf3c4ab113a3796fde5ad87acbf930a4
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 3a45d7bb5cfe5439108ce0adeb060e48ca94c774
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="useslocalfilepertable-method-sqlserverdatabasemetadata"></a>Méthode usesLocalFilePerTable (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

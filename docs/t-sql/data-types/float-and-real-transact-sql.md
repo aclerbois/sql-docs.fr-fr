@@ -1,16 +1,14 @@
 ---
 title: float et real (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - float
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - floating point data [SQL Server]
 - real data type
 ms.assetid: 08ea66b7-624e-4d8b-86bc-750ff76cdfc5
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 5f955e5d367a17602959f5294f9fb5d393b186b5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7a9980c471f81b00f4011b449a1dfcaf9a1f5c98
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="float-and-real-transact-sql"></a>float et real (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -52,7 +50,7 @@ Types de données approximatives à utiliser avec des données numériques à vi
 |**25-53**|15 chiffres|8 octets|  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] traite *n* comme l’une de deux valeurs possibles. Si **1**<=n<=**24**, *n* est considéré comme égal à **24**. Si **25**<=n<=**53**, *n* est considéré comme égal à **53**.  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] considère *n* comme l’une des deux valeurs possibles. Si **1**<=n<=**24**, *n* est considéré comme égal à **24**. Si **25**<=n<=**53**, *n* est considéré comme égal à **53**.  
   
 Le type de données **float**[**(n)**] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est conforme à la norme ISO pour toutes les valeurs de *n* comprises entre **1** et **53**. Le synonyme de **double precision** est **float(53)**.
   

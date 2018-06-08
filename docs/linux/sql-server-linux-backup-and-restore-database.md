@@ -1,25 +1,22 @@
 ---
-title: "Sauvegarde et restauration des bases de données SQL Server sur Linux | Documents Microsoft"
-description: "Découvrez comment sauvegarder et restaurer des bases de données SQL Server sur Linux."
+title: Sauvegarde et restauration des bases de données SQL Server sur Linux | Documents Microsoft
+description: Découvrez comment sauvegarder et restaurer des bases de données SQL Server sur Linux.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 11/14/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: d30090fb-889f-466e-b793-5f284fccc4e6
-ms.workload: On Demand
-ms.openlocfilehash: 96450590b55a6cb9cf6fcf517380bc25a13c1431
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 6e4699fb2ffadc3aaad73c4032073ff8567c856c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="backup-and-restore-sql-server-databases-on-linux"></a>Sauvegarde et restauration de bases de données SQL Server sur Linux
 

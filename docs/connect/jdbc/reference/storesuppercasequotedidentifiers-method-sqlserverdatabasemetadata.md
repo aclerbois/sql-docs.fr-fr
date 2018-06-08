@@ -1,30 +1,29 @@
 ---
-title: "Méthode storesUpperCaseQuotedIdentifiers | Documents Microsoft"
-ms.custom: 
+title: Méthode storesUpperCaseQuotedIdentifiers | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.storesUpperCaseQuotedIdentifiers
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.storesUpperCaseQuotedIdentifiers
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 936ec140-2597-44e6-82d3-3994a676ee35
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 115c85924a3ed1b398376bef9403b15e86883441
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7642f58131aea24525f8bcea9d9ad536e409cd58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="storesuppercasequotedidentifiers-method-sqlserverdatabasemetadata"></a>Méthode storesUpperCaseQuotedIdentifiers (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

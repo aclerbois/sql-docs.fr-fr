@@ -1,15 +1,14 @@
 ---
-title: "L’inscription des Types définis par l’utilisateur dans SQL Server | Documents Microsoft"
-ms.custom: 
+title: L’inscription des Types définis par l’utilisateur dans SQL Server | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - TSQL
@@ -35,20 +34,19 @@ helpviewer_keywords:
 - UDTs [CLR integration], registering
 - ADD FILE clause
 ms.assetid: f7da3e92-e407-4f0b-b3a3-f214e442b37d
-caps.latest.revision: 
+caps.latest.revision: 25
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 49a0a9d7c9bf8d023b748a34b622ba15e6406233
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c008844b49d907eb03e2358327f0f71959495675
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registering-user-defined-types-in-sql-server"></a>Inscription des types définis par l'utilisateur dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Pour pouvoir utiliser un type défini par l’utilisateur (UDT) dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous devez l’inscrire. L'inscription d'un UDT comprend l'inscription de l'assembly et la création du type dans la base de données dans laquelle vous souhaitez l'utiliser. La portée des UDT se limite à une seule base de données. Ils ne peuvent pas être utilisés dans plusieurs bases de données à moins d'inscrire le même assembly et UDT dans chaque base de données. Une fois l'assembly de l'UDT inscrit et le type créé, vous pouvez utiliser l'UDT dans [!INCLUDE[tsql](../../includes/tsql-md.md)] et dans le code client. Pour plus d’informations, consultez [Types CLR définis par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types.md).  
+  Pour pouvoir utiliser un type défini par l’utilisateur (UDT) dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous devez l’inscrire. L'inscription d'un UDT comprend l'inscription de l'assembly et la création du type dans la base de données dans laquelle vous souhaitez l'utiliser. La portée des UDT se limite à une seule base de données. Ils ne peuvent pas être utilisés dans plusieurs bases de données à moins d'inscrire le même assembly et UDT dans chaque base de données. Une fois l'assembly de l'UDT inscrit et le type créé, vous pouvez utiliser l'UDT dans [!INCLUDE[tsql](../../includes/tsql-md.md)] et dans le code client. Pour plus d’informations, consultez [Types CLR définis par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types.md).  
   
 ## <a name="using-visual-studio-to-deploy-udts"></a>Utilisation de Visual Studio pour déployer des UDT  
  Le moyen le plus simple de déployer votre UDT consiste à utiliser [!INCLUDE[msCoName](../../includes/msconame-md.md)] Visual Studio. Toutefois, dans des scénarios de déploiement plus complexes et pour une souplesse maximale, utilisez [!INCLUDE[tsql](../../includes/tsql-md.md)] comme discuté plus loin dans cette rubrique.  
@@ -66,7 +64,7 @@ Pour pouvoir utiliser un type défini par l’utilisateur (UDT) dans [!INCLUDE[m
 5.  À partir de la **générer** menu, sélectionnez **déployer**. L'assembly est alors inscrit et le type est créé dans la base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 ## <a name="using-transact-sql-to-deploy-udts"></a>Utilisation de Transact-SQL pour déployer des UDT  
- Le syntaxe [!INCLUDE[tsql](../../includes/tsql-md.md)] CREATE ASSEMBLY est utilisée pour inscrire l'assembly dans la base de données dans laquelle vous souhaitez utiliser l'UDT. L'assembly est stocké en interne dans les tables système de la base de données, et non en externe dans le système de fichiers. Si l'UDT est dépendant d'assemblys externes, ces derniers doivent également être chargés dans la base de données. L'instruction CREATE TYPE est utilisée pour créer l'UDT dans la base de données dans laquelle il sera utilisé. Pour plus d’informations, consultez [CREATE ASSEMBLY &#40; Transact-SQL &#41; ](../../t-sql/statements/create-assembly-transact-sql.md) et [CREATE TYPE &#40; Transact-SQL &#41; ](../../t-sql/statements/create-type-transact-sql.md).  
+ Le syntaxe [!INCLUDE[tsql](../../includes/tsql-md.md)] CREATE ASSEMBLY est utilisée pour inscrire l'assembly dans la base de données dans laquelle vous souhaitez utiliser l'UDT. L'assembly est stocké en interne dans les tables système de la base de données, et non en externe dans le système de fichiers. Si l'UDT est dépendant d'assemblys externes, ces derniers doivent également être chargés dans la base de données. L'instruction CREATE TYPE est utilisée pour créer l'UDT dans la base de données dans laquelle il sera utilisé. Pour plus d’informations, consultez [CREATE ASSEMBLY & #40 ; Transact-SQL & #41 ; ](../../t-sql/statements/create-assembly-transact-sql.md) et [CREATE TYPE & #40 ; Transact-SQL & #41 ; ](../../t-sql/statements/create-type-transact-sql.md).  
   
 ### <a name="using-create-assembly"></a>Utilisation de CREATE ASSEMBLY  
  Le syntaxe CREATE ASSEMBLY permet d'inscrire l'assembly dans la base de données dans laquelle vous souhaitez utiliser l'UDT. Une fois l'assembly inscrit, il n'a plus de dépendances.  
@@ -99,7 +97,7 @@ FROM 0xfeac4 … 21ac78
 > [!NOTE]  
 >  La syntaxe CREATE TYPE est également utilisée pour la création de native [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] données alias types et est destiné à remplacer **sp_addtype** comme un moyen de créer des types de données alias. Certains arguments facultatifs de la syntaxe CREATE TYPE se rapportent à la création d'UDT et ne peuvent pas être appliqués à la création de types de données d'alias.  
   
- Pour plus d’informations, consultez [CREATE TYPE &#40; Transact-SQL &#41; ](../../t-sql/statements/create-type-transact-sql.md).  
+ Pour plus d’informations, consultez [CREATE TYPE & #40 ; Transact-SQL & #41 ; ](../../t-sql/statements/create-type-transact-sql.md).  
   
 #### <a name="example"></a>Exemple  
  Les éléments suivants [!INCLUDE[tsql](../../includes/tsql-md.md)] instruction crée le **Point** type. EXTERNAL NAME est spécifié à l’aide de la syntaxe de dénomination en deux parties de *AssemblyName*. *Nom_udt*.  
@@ -154,7 +152,7 @@ SELECT o.name AS major_name, o.type_desc AS major_type_desc
  Vous ne pouvez pas modifier un UDT qui a été créé dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Vous pouvez toutefois modifier l'assembly sur lequel repose ce type. Dans la plupart des cas, vous devez supprimer l'UDT de la base de données à l'aide de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] DROP TYPE, apporter des modifications à l'assembly sous-jacent et le recharger à l'aide de l'instruction ALTER ASSEMBLY. Vous devez ensuite recréer l'UDT et tout objet dépendant.  
   
 ### <a name="example"></a>Exemple  
- L'instruction ALTER ASSEMBLY est utilisée une fois que vous avez modifié le code source dans votre assembly UDT et l'avez recompilé. Elle copie le fichier .dll sur le serveur et le lie au nouvel assembly. Pour la syntaxe complète, consultez [ALTER ASSEMBLY &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-assembly-transact-sql.md).  
+ L'instruction ALTER ASSEMBLY est utilisée une fois que vous avez modifié le code source dans votre assembly UDT et l'avez recompilé. Elle copie le fichier .dll sur le serveur et le lie au nouvel assembly. Pour la syntaxe complète, consultez [ALTER ASSEMBLY & #40 ; Transact-SQL & #41 ; ](../../t-sql/statements/alter-assembly-transact-sql.md).  
   
  L'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ALTER ASSEMBLY suivante recharge l'assembly Point.dll à partir de l'emplacement spécifié sur le disque.  
   
@@ -184,7 +182,7 @@ ADD FILE FROM '\\Projects\Point\Point.cs' AS PointSource;
  **file_id**  
  Nombre identifiant chaque objet, avec le premier objet associé à une donnée **assembly_id** possède la valeur 1. S’il existe plusieurs objets associés au même **assembly_id**, chaque **file_id** valeur est incrémentée de 1.  
   
- **content**  
+ **contenu**  
  Représentation hexadécimale de l'assembly ou du fichier.  
   
  Vous pouvez utiliser la fonction CAST ou CONVERT pour convertir le contenu de la **contenu** colonne en texte lisible. La requête suivante convertit le contenu du fichier Point.cs en texte lisible, en utilisant le nom indiqué dans la clause WHERE pour limiter le jeu de résultats à une ligne unique.  

@@ -1,31 +1,30 @@
 ---
 title: La gestion des sauvegardes (SybaseToSQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Tester Component,Managing Backups
+helpviewer_keywords:
+- Tester Component,Managing Backups
 ms.assetid: 266d987c-ecc5-4fa4-bfdf-8c584f1a1332
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 89df7322e4025ffb79f3ae2aecb2ef67fa52c8d7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 85ccefaddf6e8f0bad35d3a01d1b355f0482db9c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="managing-backups-sybasetosql"></a>La gestion des sauvegardes (SybaseToSQL)
 Gestion de sauvegarde Sybase vous permet de sauvegarde et restauration de données de la table avant ou après l’exécution d’un test. Vous pouvez également gérer le contenu de la sauvegarde avec la boîte de dialogue gérer du contenu de sauvegarde.  
@@ -43,7 +42,7 @@ Les boutons suivants sont disponibles dans la boîte de dialogue :
   
 -   Cliquez sur le **Annuler** pour fermer la boîte de dialogue.  
   
-### <a name="restore"></a>Restaurer  
+### <a name="restore"></a>Restore  
 Pour ouvrir la boîte de dialogue de restauration, dans le menu testeur, pointez sur la gestion de sauvegarde Sybase, puis cliquez sur restauration... Vous y trouverez une arborescence contenant les tables disponibles dans la sauvegarde. Sélectionnez une ou plusieurs tables pour restaurer ses données.  
   
 Les boutons suivants sont disponibles dans la boîte de dialogue :  
@@ -79,7 +78,7 @@ Les boutons suivants sont disponibles dans la boîte de dialogue :
   
 -   Cliquez sur le **Annuler** pour fermer la boîte de dialogue.  
   
-### <a name="restore"></a>Restaurer  
+### <a name="restore"></a>Restore  
 Pour ouvrir la boîte de dialogue de restauration, dans le menu testeur point de gestion de sauvegarde SQL Server, la restauration, cliquez sur... Vous y trouverez une arborescence contenant les tables disponibles dans la sauvegarde. Sélectionnez un ou plusieurs table pour restaurer ses données.  
   
 Les boutons suivants sont disponibles dans la boîte de dialogue :  
@@ -102,5 +101,5 @@ Les boutons suivants sont disponibles dans la boîte de dialogue :
 -   Cliquez sur le **fermer** pour fermer la boîte de dialogue.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Test de migration des objets de base de données &#40; SybaseToSQL &#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
+[Test de migration des objets de base de données &#40;SybaseToSQL&#41;](../../ssma/sybase/testing-migrated-database-objects-sybasetosql.md)  
   

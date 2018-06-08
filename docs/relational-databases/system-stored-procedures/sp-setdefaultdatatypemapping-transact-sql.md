@@ -1,16 +1,15 @@
 ---
 title: sp_setdefaultdatatypemapping (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_setdefaultdatatypemapping
 ms.assetid: 7394e8ca-4ce1-4e99-a784-205007c2c248
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 28b267b8e03fed032811aeaa98bbbf8b7c4b515c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6b8d3751448d553666f7b7301c42329f32a7713a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spsetdefaultdatatypemapping-transact-sql"></a>sp_setdefaultdatatypemapping (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -66,7 +64,7 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
  [  **@mapping_id=** ] *mapping_id*  
  Identifie un mappage de types de données existant.  *mapping_id* est **int**, avec NULL comme valeur par défaut. Si vous spécifiez *mapping_id*, puis les paramètres restants ne sont pas obligatoires.  
   
- [  **@source_dbms** =] **'***source_dbms***'**  
+ [ **@source_dbms**=] **'***source_dbms***'**  
  Nom du SGBD à partir duquel les types de données sont mappés. *source_dbms* est **sysname**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
@@ -80,7 +78,7 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
  [  **@source_version=** ] **'***source_version***'**  
  Numéro de version du SGBD source. *source_version* est **varchar (10)**, avec NULL comme valeur par défaut.  
   
- [  **@source_type** =] **'***source_type***'**  
+ [ **@source_type**=] **'***source_type***'**  
  Type de données répertorié dans le SGBD source. *source_type* est **sysname**. Vous devez spécifier ce paramètre si *mapping_id* a la valeur NULL.  
   
  [  **@source_length_min=** ] *source_length_min*  
@@ -104,7 +102,7 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
  [  **@source_nullable=** ] *source_nullable*  
  Indique si le type de données du SGBD source prend en charge la valeur NULL. *source_nullable* est **bits**, avec NULL comme valeur par défaut. **1** signifie que les valeurs NULL sont prises en charge.  
   
- [  **@destination_dbms**  =] **'***destination_dbms***'**  
+ [ **@destination_dbms** =] **'***destination_dbms***'**  
  Nom du SGBD de destination. *destination_dbms* est **sysname**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
@@ -115,10 +113,10 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
 |**SYBASE**|Base de données Sybase de destination.|  
 |NULL (par défaut)||  
   
- [  **@destination_version** =] **'***destination_version***'**  
+ [ **@destination_version**=] **'***destination_version***'**  
  Est la version de produit du SGBD de destination. *destination_version* est **varchar (10)**, avec NULL comme valeur par défaut.  
   
- [  **@destination_type** =] **'***destination_type***'**  
+ [ **@destination_type**=] **'***destination_type***'**  
  Le type de données est répertorié dans le SGBD de destination. *destination_type* est **sysname**, avec NULL comme valeur par défaut.  
   
  [  **@destination_length=** ] *destination_length*  
@@ -141,12 +139,12 @@ sp_setdefaultdatatypemapping [ [ @mapping_id = ] mapping_id ]
   
  Les mappages de types de données par défaut s'appliquent à toutes les topologies de réplication qui comprennent le SGBD spécifié.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_setdefaultdatatypemapping**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Spécifier des mappages de Type de données pour un serveur de publication Oracle](../../relational-databases/replication/publish/specify-data-type-mappings-for-an-oracle-publisher.md)   
- [sp_getdefaultdatatypemapping &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-getdefaultdatatypemapping-transact-sql.md)   
- [sp_helpdatatypemap &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helpdatatypemap-transact-sql.md)  
+ [sp_getdefaultdatatypemapping &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-getdefaultdatatypemapping-transact-sql.md)   
+ [sp_helpdatatypemap &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdatatypemap-transact-sql.md)  
   
   

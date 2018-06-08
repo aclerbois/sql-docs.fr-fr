@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_requests (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_requests (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_exec_requests_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_requests dynamic management view
 ms.assetid: 4161dc57-f3e7-4492-8972-8cfb77b29643
-caps.latest.revision: 
+caps.latest.revision: 67
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c66516230609677ae4f7598dc81fb8df4758e84e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1b8e51c1078ebe9b1fd2784a14e8c8e1575eae27
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexecrequests-transact-sql"></a>sys.dm_exec_requests (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -56,7 +53,7 @@ ms.lasthandoff: 02/03/2018
 |user_id|**int**|ID de l'utilisateur qui a envoyé la demande. N'accepte pas la valeur NULL.|  
 |connection_id|**uniqueidentifier**|ID de la connexion à laquelle la demande est parvenue. Autorise la valeur NULL.|  
 |blocking_session_id|**smallint**|ID de la session qui bloque la demande. Si cette colonne est NULL, la demande n'est pas bloquée, ou les informations de session de la session bloquant la demande ne sont pas disponibles (ou ne peuvent pas être identifiées).<br /><br /> -2 = La ressource qui bloque la demande appartient à une transaction distribuée orpheline.<br /><br /> -3 = La ressource qui bloque la demande appartient à une transaction de récupération différée.<br /><br /> -4 = L'ID de session du propriétaire du verrou qui bloque la demande n'a pas pu être déterminé pour le moment en raison de transitions d'état de verrou interne.|  
-|wait_type|**nvarchar(60)**|Si la demande est actuellement bloquée, cette colonne retourne le type d'attente. Autorise la valeur NULL.<br /><br /> Pour plus d’informations sur les types d’attentes, consultez [sys.dm_os_wait_stats &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql.md).|  
+|wait_type|**nvarchar(60)**|Si la demande est actuellement bloquée, cette colonne retourne le type d'attente. Autorise la valeur NULL.<br /><br /> Pour plus d’informations sur les types d’attentes, consultez [sys.dm_os_wait_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-wait-stats-transact-sql.md).|  
 |wait_time|**int**|Si la demande est actuellement bloquée, cette colonne retourne la durée de l'attente, en millisecondes. N'accepte pas la valeur NULL.|  
 |last_wait_type|**nvarchar(60)**|Si la demande a été bloquée précédemment, cette colonne indique le type de la dernière attente. N'accepte pas la valeur NULL.|  
 |wait_resource|**nvarchar (256)**|Si la demande est actuellement bloquée, cette colonne retourne la ressource attendue par la demande. N'accepte pas la valeur NULL.|  
@@ -104,7 +101,7 @@ ms.lasthandoff: 02/03/2018
 |is_resumable |**bit** |**S'applique à**: [!INCLUDE[sssqlv14-md](../../includes/sssqlv14-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Indique si la demande est une opération d’index peut être repris. |  
   
 ## <a name="permissions"></a>Autorisations  
- Si l’utilisateur a `VIEW SERVER STATE` autorisation sur le serveur, l’utilisateur voit en cours d’exécution toutes les sessions sur l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]; sinon, l’utilisateur voit uniquement la session active. `VIEW SERVER STATE`ne peut pas être accordées dans [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] donc `sys.dm_exec_requests` est toujours limitée à la connexion actuelle. 
+ Si l’utilisateur a `VIEW SERVER STATE` autorisation sur le serveur, l’utilisateur voit en cours d’exécution toutes les sessions sur l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]; sinon, l’utilisateur voit uniquement la session active. `VIEW SERVER STATE` ne peut pas être accordées dans [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] donc `sys.dm_exec_requests` est toujours limitée à la connexion actuelle. 
   
 ## <a name="examples"></a>Exemples  
   
@@ -154,7 +151,7 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
  [sys.dm_os_memory_clerks &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-memory-clerks-transact-sql.md)   
  [sys.dm_os_sys_info &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-sys-info-transact-sql.md)   
  [sys.dm_exec_query_memory_grants &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-memory-grants-transact-sql.md)   

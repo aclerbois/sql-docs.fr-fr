@@ -1,26 +1,23 @@
 ---
-title: "Configuration de PolyBase | Microsoft Docs"
-ms.custom: 
+title: Configuration de PolyBase | Microsoft Docs
+ms.custom: ''
 ms.date: 02/15/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: polybase
-ms.reviewer: 
+ms.component: database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-author: barbkess
-ms.author: barbkess
+ms.technology: polybase
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a202fe4cb2a6f6bd24ce6279259e6cbc46a622f6
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+ms.openlocfilehash: c2e53e939a1431664ea0a8446983a22879a913ad
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="polybase-configuration"></a>Configuration de PolyBase
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

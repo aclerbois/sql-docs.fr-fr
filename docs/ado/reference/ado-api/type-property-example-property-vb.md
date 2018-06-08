@@ -1,32 +1,29 @@
 ---
-title: "Tapez l’exemple de propriété (propriété) (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Tapez l’exemple de propriété (propriété) (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Type property [property] [ADO], Visual Basic example
 ms.assetid: 2ee8e4c5-1d66-4a77-8892-6dad7e07e611
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ea71c68359ffb7c312b38675ae55f26e8eee479
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9eb68831c1d89ab9421d6e53452e5a6327185e3f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-property-example-property-vb"></a>Exemple de propriété de type (propriété) (VB)
 Cet exemple illustre la [Type](../../../ado/reference/ado-api/type-property-ado.md) propriété. Il s’agit d’un modèle d’un utilitaire qui répertorie les noms et types de collection, tel que [propriétés](../../../ado/reference/ado-api/properties-collection-ado.md), [champs](../../../ado/reference/ado-api/fields-collection-ado.md), etc.  

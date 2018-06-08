@@ -1,16 +1,14 @@
 ---
-title: "GetLevel (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: GetLevel (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - GetLevel
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - GetLevel [Database Engine]
 ms.assetid: 81577d7e-8ff6-4e73-b7f4-94c03d4921e7
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a12afc32b16a6cd6af3cf5a5551b783a450207e1
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6d2b31e1ce60030b171262aa96989edf554d4e0e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getlevel-database-engine"></a>GetLevel (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

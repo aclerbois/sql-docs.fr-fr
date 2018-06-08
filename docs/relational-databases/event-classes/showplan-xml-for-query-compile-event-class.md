@@ -1,34 +1,30 @@
 ---
-title: "Showplan XML for Query Compile, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Showplan XML for Query Compile, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Showplan XML For Query Compile event class
 ms.assetid: 48919fcb-3a22-43ca-a63c-b210cf2c32d5
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b5a1be067d92999fa0b6ae6920e080f5988b79a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5e22e0faf5f362a5022c0aeb0382818269a151ce
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="showplan-xml-for-query-compile-event-class"></a>Showplan XML for Query Compile, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Showplan XML For Query Compile intervient lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compile une instruction SQL. Incluez cette classe d’événements pour identifier les opérateurs Showplan dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+  La classe d'événements Showplan XML For Query Compile intervient lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] compile une instruction SQL. Incluez cette classe d’événements pour identifier les opérateurs Showplan dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  La classe d'événements Showplan XML For Query Compile affiche des données de compilation complètes, de sorte que les traces qui contiennent cette classe d'événements peuvent entraîner une baisse significative des performances. Pour limiter ce problème, n'utilisez cette classe d'événements qu'avec les traces surveillant des problèmes spécifiques pendant de brèves périodes.  
   

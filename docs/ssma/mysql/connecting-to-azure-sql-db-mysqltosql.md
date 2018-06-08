@@ -1,16 +1,15 @@
 ---
-title: "Connexion à la base de données SQL Azure (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connexion à la base de données SQL Azure (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Connecting to SQL Azure, SQL Azure permissions
 - Connecting to SQL Azure, synchronization
 ms.assetid: d0b6f16a-1880-459d-a0c7-28b7ef15c56a
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: eb1ee676132fb2a87af01b2674aa45bbc756ec6b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: caa08a1a450e53e42e2b27bad33a7610e65220bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-azure-sql-db-mysqltosql"></a>Connexion à la base de données SQL Azure (MySQLToSQL)
 Pour migrer des bases de données MySQL vers SQL Azure, vous devez vous connecter à l’instance cible de SQL Azure. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à toutes les bases de données dans l’instance de SQL Azure et affiche les métadonnées de la base de données dans l’Explorateur de métadonnées SQL Azure. SSMA stocke les informations de l’instance de SQL Azure, vous êtes connecté à, mais ne stockez pas les mots de passe.  
@@ -46,7 +44,7 @@ Le compte qui est utilisé pour se connecter à SQL Azure nécessite des autoris
 ## <a name="establishing-a-sql-azure-connection"></a>L’établissement d’un service SQL Azure connexion  
 Avant de convertir des objets de base de données MySQL à la syntaxe de SQL Azure, vous devez établir une connexion à l’instance de SQL Azure dans lequel vous souhaitez migrer les bases de données ou la base de données MySQL.  
   
-Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de MySQL après que vous être connecté à SQL Azure. Pour plus d’informations, consultez [mappage de bases de données MySQL pour les schémas SQL Server &#40; MySQLToSQL &#41;](../../ssma/mysql/mapping-mysql-databases-to-sql-server-schemas-mysqltosql.md)  
+Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de MySQL après que vous être connecté à SQL Azure. Pour plus d’informations, consultez [mappage de bases de données MySQL pour les schémas SQL Server &#40;MySQLToSQL&#41;](../../ssma/mysql/mapping-mysql-databases-to-sql-server-schemas-mysqltosql.md)  
   
 > [!IMPORTANT]  
 > Avant d’essayer de se connecter à SQL Azure, assurez-vous que l’instance de SQL Azure est en cours d’exécution et peut accepter des connexions.  
@@ -88,14 +86,14 @@ Les métadonnées sur les bases de données SQL Azure ne sont pas automatiquemen
 ## <a name="next-step"></a>Étape suivante  
 L’étape suivante de la migration dépend des besoins de votre projet :  
   
--   Pour personnaliser le mappage entre les schémas de MySQL et des bases de données SQL Azure et des schémas, consultez [mappage de bases de données MySQL pour les schémas SQL Server &#40; MySQLToSQL &#41;](../../ssma/mysql/mapping-mysql-databases-to-sql-server-schemas-mysqltosql.md)  
+-   Pour personnaliser le mappage entre les schémas de MySQL et des bases de données SQL Azure et des schémas, consultez [mappage de bases de données MySQL pour les schémas SQL Server &#40;MySQLToSQL&#41;](../../ssma/mysql/mapping-mysql-databases-to-sql-server-schemas-mysqltosql.md)  
   
--   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40; MySQLToSQL &#41;](../../ssma/mysql/setting-project-options-mysqltosql.md)  
+-   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40;MySQLToSQL&#41;](../../ssma/mysql/setting-project-options-mysqltosql.md)  
   
--   Pour personnaliser le mappage des types de données source et cible, consultez [MySQL de mappage et les Types de données SQL Server &#40; MySQLToSQL &#41;](../../ssma/mysql/mapping-mysql-and-sql-server-data-types-mysqltosql.md)  
+-   Pour personnaliser le mappage des types de données source et cible, consultez [MySQL de mappage et les Types de données SQL Server &#40;MySQLToSQL&#41;](../../ssma/mysql/mapping-mysql-and-sql-server-data-types-mysqltosql.md)  
   
--   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données MySQL dans des définitions d’objets SQL Azure. Pour plus d’informations, consultez [conversion des bases de données MySQL &#40; MySQLToSQL &#41;](../../ssma/mysql/converting-mysql-databases-mysqltosql.md)  
+-   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données MySQL dans des définitions d’objets SQL Azure. Pour plus d’informations, consultez [conversion des bases de données MySQL &#40;MySQLToSQL&#41;](../../ssma/mysql/converting-mysql-databases-mysqltosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSql &#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
+[Bases de données de migration de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSql&#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
   

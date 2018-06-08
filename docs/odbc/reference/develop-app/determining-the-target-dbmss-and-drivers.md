@@ -1,30 +1,27 @@
 ---
-title: "Détermination de la cible SGBD et les pilotes | Documents Microsoft"
-ms.custom: 
+title: Détermination de la cible SGBD et les pilotes | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - target DBMSs and drivers in interoperability [ODBC]
 - interoperability [ODBC], target dbmss and drivers
 ms.assetid: 23bee0f6-e12a-4598-b34e-df11a8086829
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 515b89b4b99d73584cf1f88783296e49f6ab298d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fd4dc48994a028b2f8569da05511fa5c2b078165
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determining-the-target-dbmss-and-drivers"></a>Détermination de la cible SGBD et les pilotes
 La question suivante à prendre en compte est, quelles sont la SGBD cible pour l’application et les pilotes sont disponibles qui prennent en charge ces SGBD ? Étant donné que les applications génériques ont tendance à être hautement interopérable, la question de cible de SGBD est plus applicable à des applications personnalisées et verticales. Toutefois, la question de pilotes cibles s’applique à toutes les applications, car les pilotes peuvent varier dans la vitesse, la qualité, la prise en charge de la fonctionnalité et disponibilité. Également, si les pilotes doivent être redistribué par l’application, le coût et la disponibilité des régimes de licences en doivent être pris en compte.  

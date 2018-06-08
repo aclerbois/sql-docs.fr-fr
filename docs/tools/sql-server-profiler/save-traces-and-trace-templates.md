@@ -1,16 +1,14 @@
 ---
-title: "Enregistrer des Traces et des modèles de Trace | Documents Microsoft"
-ms.custom: 
+title: Enregistrer des Traces et des modèles de Trace | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - saving traces
 - traces [SQL Server], saving
@@ -21,19 +19,19 @@ helpviewer_keywords:
 - importing trace templates
 - SQL Server Profiler, templates
 ms.assetid: 957e6bf8-e7a3-4a59-a1cd-0a41538a8158
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77aa4dc8d36f7d46cf7685c1d371516044bc6427
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: f6c745679dcae70ebb1fbf5e5bbdd667bf839020
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-traces-and-trace-templates"></a>Enregistrer des traces et de modèles de trace
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Il est important de distinguer l’enregistrement de fichiers de trace à partir de l’enregistrement de modèles de trace. L'enregistrement d'un fichier de trace suppose l'enregistrement des données d'événement capturées à un emplacement précis. L'enregistrement d'un modèle de trace suppose l'enregistrement de la définition de la trace, par exemple les colonnes de données, les classes d'événements ou les filtres spécifiés.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Il est important de faire la distinction entre l'enregistrement de fichiers de trace et l'enregistrement de modèles de trace. L'enregistrement d'un fichier de trace suppose l'enregistrement des données d'événement capturées à un emplacement précis. L'enregistrement d'un modèle de trace suppose l'enregistrement de la définition de la trace, par exemple les colonnes de données, les classes d'événements ou les filtres spécifiés.  
   
 ## <a name="saving-traces"></a>enregistrement des traces  
  Enregistrez les données d'événement capturées dans un fichier ou une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] lorsque vous devez analyser ou relire ultérieurement les données capturées. Un fichier de trace permet d'effectuer les opérations suivantes :  
@@ -53,10 +51,10 @@ ms.lasthandoff: 01/17/2018
 >  Les utilisateurs qui disposent des autorisations SHOWPLAN, ALTER TRACE ou VIEW SERVER STATE peuvent afficher les requêtes capturées dans une sortie Showplan. Ces requêtes peuvent contenir des informations critiques telles que les mots de passe. C’est pourquoi, il est recommandé de n’accorder ces autorisations qu’aux utilisateurs qui sont autorisés à afficher les informations critiques, tels que les membres du rôle de base de données fixe **db_owner** ou les membres du rôle serveur fixe **sysadmin** . Il est également recommandé d'enregistrer les fichiers Showplan ou de trace qui contiennent des événements Showplan uniquement sur un emplacement qui utilise le système de fichiers NTFS et que vous limitiez l'accès aux utilisateurs qui sont autorisés à afficher les informations critiques.  
   
 ## <a name="saving-templates"></a>Enregistrement de modèles  
- La définition de modèle d'une trace inclut les classes d'événements, les colonnes de données, les filtres et toutes les autres propriétés (à l'exception des données d'événement capturées) utilisées pour créer une trace. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] fournit des modèles système prédéfinis pour les tâches de suivi courantes et pour certaines tâches spécifiques, telles que la création d'une charge de travail que l'Assistant Paramétrage du moteur de base de données peut utiliser pour affiner la conception physique de la base de données. Vous pouvez également créer et enregistrer des modèles définis par l'utilisateur.  
+ La définition de modèle d'une trace inclut les classes d'événements, les colonnes de données, les filtres et toutes les autres propriétés (à l'exception des données d'événement capturées) utilisées pour créer une trace. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] fournit des modèles système prédéfinis pour les tâches de suivi courantes et pour certaines tâches spécifiques, telles que la création d’une charge de travail que l’Assistant Paramétrage du moteur de base de données peut utiliser pour affiner la conception physique de la base de données. Vous pouvez également créer et enregistrer des modèles définis par l'utilisateur.  
   
 ### <a name="importing-and-exporting-templates"></a>Importation et exportation de modèles  
- [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] vous permet d'importer et d'exporter des modèles d'un serveur à un autre. L'exportation d'un modèle transfère une copie d'un modèle existant vers un répertoire que vous spécifiez. L'importation d'un modèle crée une copie d'un modèle que vous spécifiez. Lorsque ces modèles sont affichés dans le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)], vous pouvez les distinguer des modèles système grâce au terme « (utilisateur) » ajouté à la suite du nom du modèle. Vous ne pouvez ni remplacer, ni modifier directement un modèle système prédéfini.  
+ [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] vous permet d’importer et d’exporter des modèles d’un serveur à un autre. L'exportation d'un modèle transfère une copie d'un modèle existant vers un répertoire que vous spécifiez. L'importation d'un modèle crée une copie d'un modèle que vous spécifiez. Lorsque ces modèles sont affichés dans le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)], vous pouvez les distinguer des modèles système grâce au terme « (utilisateur) » ajouté à la suite du nom du modèle. Vous ne pouvez ni remplacer, ni modifier directement un modèle système prédéfini.  
   
 ### <a name="analyzing-performance-with-templates"></a>Analyse des performances avec des modèles  
  Si vous analysez fréquemment [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], utilisez des modèles pour analyser les performances. Les modèles capturent les mêmes données d'événement chaque fois et utilisent la même définition de trace pour analyser les mêmes événements. Vous n'avez pas besoin de définir les classes d'événements et les colonnes de données chaque fois que vous créez une trace. En outre, un modèle peut être donné à un autre utilisateur pour analyser des événements [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] spécifiques. Par exemple, un fournisseur de support technique peut fournir un modèle à un client. Le client utilise le modèle pour capturer les données d'événement requises qui sont ensuite envoyées au fournisseur de support technique pour analyse.  
@@ -67,12 +65,12 @@ ms.lasthandoff: 01/17/2018
   
  [sp_trace_create &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-trace-create-transact-sql.md)  
   
-## <a name="see-also"></a>Voir aussi  
- [Enregistrer les résultats de Trace dans une Table &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/save-trace-results-to-a-table-sql-server-profiler.md)   
- [Créer un modèle de Trace &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/create-a-trace-template-sql-server-profiler.md)   
- [Dériver un modèle à partir d’une Trace en cours d’exécution &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/derive-a-template-from-a-running-trace-sql-server-profiler.md)   
- [Dériver un modèle à partir d’un fichier de Trace ou Table de Trace &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/derive-a-template-from-a-trace-file-or-trace-table-sql-server-profiler.md)   
- [Exporter un modèle de Trace &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/export-a-trace-template-sql-server-profiler.md)   
+## <a name="see-also"></a> Voir aussi  
+ [Enregistrer des résultats d’une trace dans une table &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/save-trace-results-to-a-table-sql-server-profiler.md)   
+ [Créer un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/create-a-trace-template-sql-server-profiler.md)   
+ [Dériver un modèle à partir d’une trace en cours d’exécution &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/derive-a-template-from-a-running-trace-sql-server-profiler.md)   
+ [Dériver un modèle à partir d’un fichier de trace ou d’une table de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/derive-a-template-from-a-trace-file-or-trace-table-sql-server-profiler.md)   
+ [Exporter un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/export-a-trace-template-sql-server-profiler.md)   
  [Importer un modèle de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/import-a-trace-template-sql-server-profiler.md)  
   
   

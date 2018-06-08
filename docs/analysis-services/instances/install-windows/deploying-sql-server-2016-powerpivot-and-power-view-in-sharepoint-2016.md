@@ -1,27 +1,19 @@
 ---
-title: "Déploiement de SQL Server 2016 PowerPivot et Power View dans SharePoint 2016 | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 2d0a9834-db91-403f-847c-79a8f49fc916
-caps.latest.revision: 
-author: Minewiskan
+title: Déploiement de SQL Server 2016 PowerPivot et Power View dans SharePoint 2016 | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 166ce8f52401d5cd5cad70e19aea37871d57afe4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: aec63db2590e48bcbd605fea8e3ccfdad7073e78
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploying-sql-server-2016-powerpivot-and-power-view-in-sharepoint-2016"></a>Déploiement de SQL Server 2016 PowerPivot et de Power View dans SharePoint 2016
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]

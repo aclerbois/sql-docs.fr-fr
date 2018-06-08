@@ -1,35 +1,32 @@
 ---
-title: "Utiliser la fenêtre Propriétés dans Management Studio | Microsoft Docs"
-ms.custom: 
+title: Utiliser la fenêtre Propriétés dans Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - viewing properties
 - Properties window [SQL Server Management Studio]
 - complex properties [SQL Server Management Studio]
 ms.assetid: 903d4aca-f57c-43d9-a893-702eceaa7004
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 22b1e823ce0c17afe17eee0da4e3c1f62678b079
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 28304f4a077d345dd2253c1141354627c6388b9c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-the-properties-window-in-management-studio"></a>Utiliser la fenêtre Propriétés dans Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] La fenêtre Propriétés décrit l’état d’un élément dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], tel qu’une connexion ou un opérateur Showplan, et fournit des informations sur les objets de base de données, tels que les tables, les vues et les concepteurs.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  La fenêtre Propriétés décrit l'état d'un élément dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], tel qu'une connexion ou un opérateur Showplan, et fournit des informations sur les objets de base de données tels que les tables, les vues et les concepteurs.  
   
  Vous pouvez également utiliser la fenêtre Propriétés pour afficher les propriétés de la connexion active. La plupart des propriétés sont en lecture seule dans la fenêtre Propriétés. Toutefois, elles peuvent être modifiées à d'autres emplacements dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)]. Par exemple, la propriété Database d'une requête est en lecture seule dans la fenêtre Propriétés mais elle peut être modifiée dans la barre d'outils.  
   

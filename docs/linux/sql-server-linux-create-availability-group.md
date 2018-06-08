@@ -1,24 +1,21 @@
 ---
-title: "Créer et configurer un groupe de disponibilité pour SQL Server sur Linux | Documents Microsoft"
-description: "Ce didacticiel montre comment créer et configurer des groupes de disponibilité pour SQL Server sur Linux."
+title: Créer et configurer un groupe de disponibilité pour SQL Server sur Linux | Documents Microsoft
+description: Ce didacticiel montre comment créer et configurer des groupes de disponibilité pour SQL Server sur Linux.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 12/11/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: On Demand
-ms.openlocfilehash: 97ec3cd688f69995f4d907d305ce4d14d4724efc
-ms.sourcegitcommit: 6e16d1616985d65484c72f5e0f34fb2973f828f4
+ms.technology: linux
+ms.openlocfilehash: 549b34aa918f65da20c3398e1d38491841b5c6fc
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="create-and-configure-an-availability-group-for-sql-server-on-linux"></a>Créer et configurer un groupe de disponibilité pour SQL Server sur Linux
 
@@ -678,7 +675,7 @@ La ressource de groupe de disponibilité est créée est un type spécial de res
 
 ## <a name="next-steps"></a>Étapes suivantes
 
-Dans ce didacticiel, vous avez appris à créer et configurer un groupe de disponibilité pour [!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)] sur Linux. Vous avez appris à :
+Dans ce didacticiel, vous avez appris à créer et configurer un groupe de disponibilité pour [!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)] sur Linux. Vous avez appris à : 
 > [!div class="checklist"]
 > * Activer les groupes de disponibilité.
 > * Points de terminaison de créer le groupe de disponibilité et les certificats.

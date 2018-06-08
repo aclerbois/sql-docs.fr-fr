@@ -1,16 +1,14 @@
 ---
 title: GRANT - Accorder des autorisations sur un serveur (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,17 @@ helpviewer_keywords:
 - servers [SQL Server], permissions
 - granting permissions [SQL Server], servers
 ms.assetid: 7e880a5a-3bdc-491f-a167-7a9ed338be7f
-caps.latest.revision: 
+caps.latest.revision: 36
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 424bb9cf8db72c399a733d1e4ffe3eb55bd14427
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 87378112d7f2d3be2b4ca4552208cace3741927d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="grant-server-permissions-transact-sql"></a>GRANT - Accorder des autorisations sur un serveur (Transact-SQL)
+# <a name="grant-server-permissions-transact-sql"></a>GRANT – octroi d'autorisations de serveur (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet d'accorder des autorisations sur un serveur. 

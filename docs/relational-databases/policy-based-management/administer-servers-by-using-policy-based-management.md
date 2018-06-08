@@ -1,17 +1,16 @@
 ---
-title: "Administrer des serveurs à l’aide de la Gestion basée sur des stratégies | Microsoft Docs"
-ms.custom: 
+title: Administrer des serveurs à l’aide de la Gestion basée sur des stratégies | Microsoft Docs
+ms.custom: ''
 ms.date: 08/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - facet See facets
 - Declarative Management Framework See Policy-Based Management
@@ -23,19 +22,19 @@ helpviewer_keywords:
 - facets [Policy-Based Management], about facets
 - PolicyAdministratorRole role
 ms.assetid: ef2a7b3b-614b-405d-a04a-2464a019df40
-caps.latest.revision: 
+caps.latest.revision: 76
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 928ac23212fc1941db34ee409d6adec44142b79e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 8bd3cc266d1f706179c6627316dcd8dfcdcf4a09
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="administer-servers-by-using-policy-based-management"></a>Administrer des serveurs à l'aide de la Gestion basée sur des stratégies
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La Gestion basée sur des stratégies est un système de stratégies permettant de gérer une ou plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Utilisez la Gestion basée sur des stratégies pour créer des conditions qui contiennent des expressions de condition. Ensuite, créez des stratégies qui appliquent les conditions à des objets cibles de base de données.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+   La Gestion basée sur des stratégies est un système de stratégies permettant de gérer une ou plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Utilisez la Gestion basée sur des stratégies pour créer des conditions qui contiennent des expressions de condition. Ensuite, créez des stratégies qui appliquent les conditions à des objets cibles de base de données.  
 
 Par exemple, en tant qu’administrateur de la base de données, vous souhaiterez peut-être vous assurer que la messagerie de base de données n’est pas activée sur certains serveurs afin de créer une condition et une stratégie qui définit cette option de serveur. 
    

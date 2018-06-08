@@ -1,16 +1,14 @@
 ---
-title: "GRANT - Octroyer des autorisations sur une liste de propriétés de recherche (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: GRANT - Octroyer des autorisations sur une liste de propriétés de recherche (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,18 @@ helpviewer_keywords:
 - granting permissions [SQL Server], search property lists
 - GRANT statement, search property list permissions
 ms.assetid: bb2d2550-9c0e-4a88-b50c-12e481d4d3ae
-caps.latest.revision: 
+caps.latest.revision: 10
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5af3884c41ad4f240ed53215b0d0e807cacf64a4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7abafb76d46f69a5d548f6457ae170caf77cae50
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="grant-search-property-list-permissions-transact-sql"></a>GRANT - Octroyer des autorisations sur une liste de propriétés de recherche (Transact-SQL)
+# <a name="grant-search-property-list-permissions-transact-sql"></a>Autorisations de liste de propriétés de recherche GRANT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-all-md](../../includes/tsql-appliesto-ss2012-all-md.md)]
 
   Accorde des autorisations dans une liste de propriétés de recherche.  

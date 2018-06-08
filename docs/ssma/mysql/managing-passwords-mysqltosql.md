@@ -1,16 +1,15 @@
 ---
 title: La gestion des mots de passe (MySQLToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Password management, importing or exporting encrypted password
 - Password management, securing password
 ms.assetid: 4ffbc587-ea3f-49ad-bc42-a654f672325e
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 95ef6e3271cb4374a5df35427f8a681f0eaa04ce
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d7e8e7cc64df1c5c8211e1d0ead7ef1642116dff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="managing-passwords-mysqltosql"></a>La gestion des mots de passe (MySQLToSQL)
 Cette section est sur la sécurisation de la procédure pour importer ou exporter les sur les serveurs et les mots de passe de base de données :  
@@ -45,7 +43,7 @@ Spécifiez un mot de passe à l’aide d’une des trois méthodes suivantes :
   
 1.  **Texte clair :** tapez le mot de passe de base de données dans l’attribut de la valeur du nœud « password ». Il se trouve sous le nœud de définition de serveur dans la section serveur du fichier de script ou du fichier de connexion de serveur.  
   
-    Les mots de passe en texte clair ne sont pas sécurisées. Par conséquent, vous rencontrerez le message d’avertissement suivant dans la sortie de console : *» serveur &lt;id de serveur&gt; mot de passe est fournie sous forme de texte en clair non sécurisées, application Console SSMA fournit une option pour protéger le mot de passe via le chiffrement, consultez l’option – securepassword dans le fichier d’aide SSMA pour plus d’informations. »*  
+    Les mots de passe en texte clair ne sont pas sécurisées. Par conséquent, vous rencontrerez le message d’avertissement suivant dans la sortie de console : *» serveur &lt;id de serveur&gt; mot de passe est fournie sous forme de texte en clair non sécurisées, application Console SSMA fournit une option de protection de la mot de passe via le chiffrement, veuillez consultez – securepassword option SSMA fichier d’aide pour plus d’informations. »*  
   
     **Mots de passe chiffrés :** le mot de passe, dans ce cas, est stocké dans un formulaire chiffré sur l’ordinateur local dans ProtectedStorage.ssma.  
   

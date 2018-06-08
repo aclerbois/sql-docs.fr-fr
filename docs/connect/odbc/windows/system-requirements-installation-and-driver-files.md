@@ -1,28 +1,24 @@
 ---
-title: "Configuration système requise, Installation et fichiers de pilote | Documents Microsoft"
-ms.custom: 
+title: Configuration système requise, Installation et fichiers de pilote | Documents Microsoft
+ms.custom: ''
 ms.date: 02/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d90fa182-1dab-4d6f-bd85-a04dd1479986
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 8e23264905c2a8b706b32a906d7dbf2dc3dd165b
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+manager: craigg
+ms.openlocfilehash: 10e4d020bac05317e76dabea46495d58def71cf0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-requirements-installation-and-driver-files"></a>Configuration système requise, installation et fichiers de pilote
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -102,10 +98,10 @@ Par exemple, lorsque vous compilez une application ODBC avec `msodbcsql11.lib` e
 |---------------|-----------------|  
 |msodbcsql17.dll ou <br> msodbcsql13.dll ou <br> msodbcsql11.dll|Fichier DDL (Dynamic-Link Library) contenant l’ensemble des fonctionnalités du pilote. Ce fichier est installé dans % SYSTEMROOT%\System32.|  
 |msodbcdiag17.dll ou <br> msodbcdiag13.dll ou <br> msodbcdiag11.dll|Le fichier de bibliothèque de liens dynamiques (DLL) qui contient l’interface de diagnostics (suivi) du pilote. Ce fichier est installé dans % SYSTEMROOT%\System32.|
-|msodbcsqlr17.rll or <br> msodbcsqlr13.rll ou <br> msodbcsqlr11.rll|Fichier de ressources qui accompagne la bibliothèque du pilote. Ce fichier est installé dans % SYSTEMROOT%\System32\1033.| 
-|s13ch_msodbcsql.chm or <br> s11ch_msodbcsql.chm |Le fichier d’aide Assistant Source de données qui explique comment créer une source de données pour le pilote. Ce fichier est installé dans %SYSTEMROOT%\System32\1033 <br /> <br /> **Remarque :** aucun fichier chm 17 du pilote ODBC. |  
+|msodbcsqlr17.rll ou <br> msodbcsqlr13.rll ou <br> msodbcsqlr11.rll|Fichier de ressources qui accompagne la bibliothèque du pilote. Ce fichier est installé dans % SYSTEMROOT%\System32\1033.| 
+|s13ch_msodbcsql.chm ou <br> s11ch_msodbcsql.chm |Le fichier d’aide Assistant Source de données qui explique comment créer une source de données pour le pilote. Ce fichier est installé dans %SYSTEMROOT%\System32\1033 <br /> <br /> **Remarque :** aucun fichier chm 17 du pilote ODBC. |  
 |msodbcsql.h|Le fichier d’en-tête qui contient toutes les nouvelles définitions nécessaires à l’utilisation du pilote.<br /><br /> **Remarque :**  vous ne pouvez pas référencer msodbcsql.h et odbcss.h dans le même programme.<br /><br /> msodbcsql.h 17 du pilote ODBC ou 13 est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\130\SDK. <br /> msodbcsql.h pour ODBC Driver 11 est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\110\SDK.| 
-|msodbcsql17.lib or <br> msodbcsql13.lib or <br> msodbcsql11.lib|Le fichier bibliothèque nécessaire pour appeler le **bcp** fonctions utilitaires qui font partie du pilote.<br /><br /> **Remarque :** si vous référencez ce fichier de bibliothèque dans votre programme, assurez-vous qu’il est dans votre chemin système et dans le chemin d’accès de système de ceux qui utilisent l’application.<br /><br /> msodbcsql17.lib ou msodbcsql13.lib est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\130\SDK.<br /> msodbcsql11.lib est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\110\SDK.|
+|msodbcsql17.lib ou <br> msodbcsql13.lib ou <br> msodbcsql11.lib|Le fichier bibliothèque nécessaire pour appeler le **bcp** fonctions utilitaires qui font partie du pilote.<br /><br /> **Remarque :** si vous référencez ce fichier de bibliothèque dans votre programme, assurez-vous qu’il est dans votre chemin système et dans le chemin d’accès de système de ceux qui utilisent l’application.<br /><br /> msodbcsql17.lib ou msodbcsql13.lib est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\130\SDK.<br /> msodbcsql11.lib est installé dans %PROGRAMFILES%\Microsoft SQL Server\Client SDK\ODBC\110\SDK.|
 
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,30 +1,29 @@
 ---
-title: "Méthode getColumnDisplaySize (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getColumnDisplaySize (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSetMetaData.getColumnDisplaySize
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSetMetaData.getColumnDisplaySize
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 21c25443-bd2b-4b60-9798-4efe2c158952
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 71daaceaa0372840fdcc47ad12587d6d3b1ef58b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 97d5899370329d49d6ed289e8742ebcab6d402d8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getcolumndisplaysize-method-sqlserverresultsetmetadata"></a>Méthode getColumnDisplaySize (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public int getColumnDisplaySize(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Un **int** qui indique l’index de colonne.  
   
@@ -52,7 +51,7 @@ public int getColumnDisplaySize(int column)
 ## <a name="remarks"></a>Notes  
  Cette méthode getColumnDisplaySize est spécifiée par la méthode getColumnDisplaySize dans l’interface java.sql.ResultSetMetaData.  
   
- [!INCLUDE[msCoName](../../../includes/msconame_md.md)][!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] Version 3.0 du pilote JDBC comporte des modifications de comportement dans la colonne COLUMN_SIZE. Consultez [SQLServerDatabaseMetaData.getColumns](../../../connect/jdbc/reference/getcolumns-method-sqlserverdatabasemetadata.md) pour plus d’informations.  
+ [!INCLUDE[msCoName](../../../includes/msconame_md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] Version 3.0 du pilote JDBC comporte des modifications de comportement dans la colonne COLUMN_SIZE. Consultez [SQLServerDatabaseMetaData.getColumns](../../../connect/jdbc/reference/getcolumns-method-sqlserverdatabasemetadata.md) pour plus d’informations.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Membres de SQLServerResultSetMetaData](../../../connect/jdbc/reference/sqlserverresultsetmetadata-members.md)   

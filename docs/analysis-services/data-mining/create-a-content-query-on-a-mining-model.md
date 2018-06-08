@@ -1,31 +1,23 @@
 ---
-title: "Créer une requête de contenu sur un modèle d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: content queries [DMX]
-ms.assetid: a0ce837a-89ed-46cf-9ce1-801ccb75fa04
-caps.latest.revision: "17"
-author: Minewiskan
+title: Créer une requête de contenu sur un modèle d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 77cca4b8462befde098dc522067b44131a009fc8
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 7a0bc8d9a216f55f04cab4a4012945d2b11cf429
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-content-query-on-a-mining-model"></a>Créer une requête de contenu sur un modèle d'exploration de données
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Vous pouvez interroger le contenu du modèle d’exploration de données par programme en utilisant AMO ou XML/A, mais il est plus facile de créer des requêtes à l’aide de DMX. Vous pouvez créer des requêtes sur les ensembles de lignes de schéma d'exploration de données en établissant une connexion à l'instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et en créant une requête utilisant les vues DMV fournies par [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Vous pouvez interroger par programme le contenu du modèle d'exploration de données en utilisant AMO ou XML/A, mais il est plus facile de créer des requêtes à l'aide de DMX. Vous pouvez créer des requêtes sur les ensembles de lignes de schéma d'exploration de données en établissant une connexion à l'instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] et en créant une requête utilisant les vues DMV fournies par [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
   
  Les procédures suivantes montrent comment créer des requêtes sur un modèle d'exploration de données en utilisant DMX, et comment interroger les ensembles de lignes de schéma d'exploration de données.  
   
@@ -49,7 +41,7 @@ ms.lasthandoff: 01/08/2018
   
      Si vous ne voulez pas taper le nom, vous pouvez sélectionner un modèle d'exploration de données dans l' **Explorateur d'objets** et le faire glisser dans le modèle.  
   
-6.  Dans la ligne, `SELECT`  *\<liste de sélection, la liste expr, \* >* , tapez les noms de colonnes dans l’ensemble de lignes du schéma de contenu du modèle d’exploration de données.  
+6.  Dans la ligne, `SELECT` *\<liste de sélection, la liste expr, \* >*, tapez les noms de colonnes dans l’ensemble de lignes du schéma de contenu du modèle d’exploration de données.  
   
      Pour afficher une liste des colonnes que vous pouvez retourner dans les requêtes de contenu de modèle d’exploration de données, consultez [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md).  
   
@@ -83,7 +75,7 @@ ms.lasthandoff: 01/08/2018
     >  Pour afficher la liste de tous les ensembles de lignes de schéma que vous pouvez interroger sur l'instance active, utilisez cette requête : `SELECT * FROM $system.`DISCOVER_SCHEMA_ROWSETS. Ou, pour obtenir la liste des ensembles de lignes de schéma spécifiques à l'exploration de données, consultez [Data Mining Schema Rowsets](../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Contenu du modèle d’exploration &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
- [Ensembles de lignes de schéma d’exploration de données](../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Contenu du modèle d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-analysis-services-data-mining.md)   
+ [Ensembles de lignes de schéma de données d’exploration de données](../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

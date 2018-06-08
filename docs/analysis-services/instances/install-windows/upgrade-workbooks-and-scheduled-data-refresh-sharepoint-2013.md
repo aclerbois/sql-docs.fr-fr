@@ -1,32 +1,23 @@
 ---
-title: "Mettre à niveau les classeurs et l’actualisation planifiée des données (SharePoint 2013) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: a49c4af4-e243-4926-be97-74da1f9d54eb
-caps.latest.revision: 
-author: Minewiskan
+title: Mettre à niveau les classeurs et l’actualisation planifiée des données (SharePoint 2013) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b76561da72c6a4502f451d9ee39f8e9f90c97546
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c6d2b264ca7f6910e3d652d560b276e4056fdc66
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="upgrade-workbooks-and-scheduled-data-refresh-sharepoint-2013"></a>Mettre à niveau les classeurs et l'actualisation planifiée des données (SharePoint 2013)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique traite de l’utilisation des classeurs créés dans les environnements [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] précédents et comment mettre à niveau les classeurs [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] afin de pouvoir tirer parti des nouvelles fonctionnalités introduites dans cette version. Pour en savoir plus sur les nouvelles fonctionnalités, consultez [Nouveautés de Power Pivot](http://go.microsoft.com/fwlink/?LinkID=203917).  
+  Cette rubrique traite de l’utilisation des classeurs créés dans les environnements [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] précédents et comment mettre à niveau les classeurs [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] afin de pouvoir tirer parti des nouvelles fonctionnalités introduites dans cette version. Pour en savoir plus sur les nouvelles fonctionnalités, consultez [Nouveautés de Power Pivot](http://go.microsoft.com/fwlink/?LinkID=203917).  
   
 > [!WARNING]  
 >  Vous ne pouvez pas restaurer la mise à niveau de classeurs qui sont mis à niveau automatiquement sur le serveur. Une fois qu'un classeur est mis à niveau, il le reste. Pour utiliser une version antérieure, vous pouvez republier le classeur précédent dans SharePoint, restaurer une version antérieure ou recycler le classeur. Pour plus d'informations sur la restauration ou le recyclage d'un document dans SharePoint, consultez [Planifier la protection du contenu à l’aide de corbeilles et du contrôle de version](http://go.microsoft.com/fwlink/?LinkId=238669).  
@@ -170,6 +161,6 @@ PS C:\Windows\system32> Set-PowerPivotSystemService –WorkbookUpgradeOnDataRefr
  [Migrer PowerPivot vers SharePoint 2013](../../../analysis-services/instances/install-windows/migrate-power-pivot-to-sharepoint-2013.md)   
  [Mettre à niveau Power Pivot pour SharePoint](../../../database-engine/install-windows/upgrade-power-pivot-for-sharepoint.md)   
  [Nouveautés d’Analysis Services](../../../analysis-services/what-s-new-in-analysis-services.md)   
- [L’actualisation des données de la vue historique &#40; PowerPivot pour SharePoint &#41;](../../../analysis-services/power-pivot-sharepoint/view-data-refresh-history-power-pivot-for-sharepoint.md)  
+ [Afficher l’historique d’actualisation des données &#40;Power Pivot pour SharePoint&#41;](../../../analysis-services/power-pivot-sharepoint/view-data-refresh-history-power-pivot-for-sharepoint.md)  
   
   

@@ -1,28 +1,27 @@
 ---
-title: "Accès au fournisseur WMI par programmation | Microsoft Docs"
-ms.custom: 
+title: Accès au fournisseur WMI par programmation | Microsoft Docs
+ms.custom: ''
 ms.date: 11/02/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 ms.assetid: 67bd266b-1484-4863-8152-060a993420a9
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6167017f95710641ef756c24a6619d4292a2030a
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: fdea3dd2704ec7db762e74e39f3458072b008d15
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="accessing-the-wmi-provider-programmatically"></a>Accès au fournisseur WMI par programmation
 

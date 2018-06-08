@@ -1,27 +1,25 @@
 ---
-title: "Configurer l’e-mail pour une application de service Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Configurer l’e-mail pour une application de service Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 05/10/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 38fc34a6-aae7-4dde-9ad2-f1eee0c42a9f
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b0ea9e920b39a6dac783ccff2656f0b3c5936dce
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: b63ac196abcda7b8889e586d27d5559b7fb1a5c8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-e-mail-for-a-reporting-services-service-application"></a>Configurer la messagerie électronique pour une application de service Reporting Services
 

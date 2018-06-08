@@ -1,17 +1,16 @@
 ---
-title: "Spécifier les premier et dernier déclencheurs | Microsoft Docs"
-ms.custom: 
+title: Spécifier les premier et dernier déclencheurs | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-dml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - first triggers [SQL Server]
 - last triggers
@@ -19,20 +18,20 @@ helpviewer_keywords:
 - INSTEAD OF triggers
 - AFTER triggers
 ms.assetid: 9e6c7684-3dd3-46bb-b7be-523b33fae4d5
-caps.latest.revision: 
+caps.latest.revision: 24
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e9aa886d4456a2dbfbad2c82aca4db83d119357a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d38429267ba3a147df7450835947aebbca6493e6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-first-and-last-triggers"></a>Spécifier les premier et dernier déclencheurs
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Vous pouvez définir l'un des déclencheurs AFTER associés à une table comme étant le premier ou le dernier déclencheur AFTER activé pour chaque action de déclenchement INSERT, DELETE et UPDATE. L'ordre d'exécution des déclencheurs AFTER activés entre les premier et dernier déclencheurs est indéfini.  
+  Vous pouvez définir l'un des déclencheurs AFTER associés à une table comme étant le premier ou le dernier déclencheur AFTER activé pour chaque action de déclenchement INSERT, DELETE et UPDATE. L'ordre d'exécution des déclencheurs AFTER activés entre les premier et dernier déclencheurs est indéfini.  
   
  Pour spécifier l’ordre d’exécution d’un déclencheur AFTER, utilisez la procédure stockée **sp_settriggerorder** . **sp_settriggerorder** comporte les options suivantes.  
   
@@ -59,7 +58,7 @@ sp_settriggerorder @triggername = 'MyTrigger', @order = 'first', @stmttype = 'UP
   
  Si une instruction ALTER TRIGGER modifie un premier ou un dernier déclencheur, l’attribut **First** ou **Last** est supprimé et l’ordre d’exécution prend la valeur **None**. L’ordre d’exécution doit être réinitialisé à l’aide de **sp_settriggerorder**.  
   
- La fonction OBJECTPROPERTY signale si un déclencheur est défini comme le premier ou le dernier à l’aide des propriétés **ExecIsFirstTrigger** et **ExecIsLastTrigger**.  
+ La fonction OBJECTPROPERTY signale si un déclencheur est premier ou dernier utilisant les propriétés suivantes : **ExecIsFirstInsertTrigger**, **ExecIsFirstUpdateTrigger**, **ExecIsFirstDeleteTrigger**, **ExecIsLastInsertTrigger**, **ExecIsLastUpdateTrigger** et **ExecIsLastDeleteTrigger**.  
   
  La réplication génère automatiquement un premier déclencheur pour toute table qui est incluse dans un abonnement avec mise à jour immédiate ou en attente. Elle nécessite un déclencheur qui soit le premier. Elle génère une erreur si vous essayez d'inclure une table détenant un premier déclencheur dans un abonnement mis à jour immédiatement ou en attente. Si vous tentez de définir un déclencheur comme premier déclencheur après qu’une table a été incluse dans un abonnement, **sp_settriggerorder** retourne une erreur. Si vous utilisez ALTER sur le déclencheur de réplication ou si vous utilisez **sp_settriggerorder** pour que l’ordre corresponde au premier déclencheur ou pour qu’il n’y ait aucun ordre spécifique, l’abonnement ne fonctionnera pas correctement.  
   

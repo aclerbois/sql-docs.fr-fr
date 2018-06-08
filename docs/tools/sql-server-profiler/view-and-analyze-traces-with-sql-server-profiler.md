@@ -1,16 +1,14 @@
 ---
-title: Afficher et analyser des Traces avec SQL Server Profiler | Documents Microsoft
-ms.custom: 
+title: Afficher et analyser des traces avec SQL Server Profiler | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiler [SQL Server Profiler], viewing traces
 - SQL Server Profiler, viewing traces
@@ -21,24 +19,24 @@ helpviewer_keywords:
 - Profiler [SQL Server Profiler], troubleshooting
 - traces [SQL Server], events
 ms.assetid: 17e821ca-a12e-4192-acc1-96765d9ae266
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b15547e2d5d49a9709d118f69ea8d4590e5ff1c0
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 27a824b14839fd82284f151ffbcf92658c2fef78
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-and-analyze-traces-with-sql-server-profiler"></a>Afficher et analyser des traces avec SQL Server Profiler
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Utilisez [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour afficher les données d’événement capturées dans une trace. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] affiche les données selon les propriétés de trace définies. L’une des façons d'analyser les données de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] consiste à les copier dans un autre programme, par exemple [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou l'Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . [!INCLUDE[ssDE](../../includes/ssde-md.md)] L’Assistant Paramétrage peut utiliser un fichier de trace qui contient des événements de traitement SQL et d’appels de procédures distantes si la colonne de données **Text** est présente dans la trace. Pour vous assurer que les colonnes et les événements nécessaires sont bien présents pour être utilisés avec l'Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] , utilisez le modèle de paramétrage prédéfini fourni avec [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour afficher les données d'événement capturées dans une trace. [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] affiche les données selon les propriétés de trace définies. L’une des façons d'analyser les données de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] consiste à les copier dans un autre programme, par exemple [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou l'Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . [!INCLUDE[ssDE](../../includes/ssde-md.md)] L’Assistant Paramétrage peut utiliser un fichier de trace qui contient des événements de traitement SQL et d’appels de procédures distantes si la colonne de données **Text** est présente dans la trace. Pour vous assurer que les colonnes et les événements nécessaires sont bien présents pour être utilisés avec l'Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] , utilisez le modèle de paramétrage prédéfini fourni avec [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
   
  Si vous ouvrez une trace en utilisant le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)], il n'est pas nécessaire que le fichier de trace porte l'extension .trc si le fichier a été créé par le [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] ou des procédures stockées du système de trace SQL.  
   
 > [!NOTE]  
->  [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)]peut également lire les fichiers journaux SQL Trace et les fichiers de script SQL génériques. Si vous ouvrez un fichier de trace SQL qui ne porte pas l’extension .log, par exemple le fichier trace.txt, spécifiez **SQLTrace_Log** comme format de fichier.  
+>  [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] peut également lire les fichiers .log de trace SQL et les fichiers de script SQL génériques. Si vous ouvrez un fichier de trace SQL qui ne porte pas l’extension .log, par exemple le fichier trace.txt, spécifiez **SQLTrace_Log** comme format de fichier.  
   
  Vous pouvez configurer le format d'horodatage du [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour vous aider dans l'analyse des traces.  
   
@@ -87,12 +85,12 @@ AND     CPU < (Duration * 1000)
   
  La même technique peut être utilisée pour retrouver des événements regroupés. Une fois que vous avez trouvé les événements recherchés, regroupez-les par **ClientProcessID**, **ApplicationName**, ou autre classe d’événements pour afficher les activités qui y sont liées dans l’ordre chronologique.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Afficher une trace enregistrée &#40;Transact-SQL&#41;](../../relational-databases/sql-trace/view-a-saved-trace-transact-sql.md)   
  [sys.fn_trace_getinfo &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-trace-getinfo-transact-sql.md)   
- [Afficher les informations de filtre &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/view-filter-information-sql-server-profiler.md)   
- [Afficher les informations de filtre &#40; Transact-SQL &#41;](../../relational-databases/sql-trace/view-filter-information-transact-sql.md)   
- [Ouvrir un fichier de Trace &#40; SQL Server Profiler &#41;](../../tools/sql-server-profiler/open-a-trace-file-sql-server-profiler.md)   
+ [Afficher des informations de filtre &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/view-filter-information-sql-server-profiler.md)   
+ [Afficher des informations de filtre &#40;Transact-SQL&#41;](../../relational-databases/sql-trace/view-filter-information-transact-sql.md)   
+ [Ouvrir un fichier de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/open-a-trace-file-sql-server-profiler.md)   
  [Ouvrir une table de trace &#40;SQL Server Profiler&#41;](../../tools/sql-server-profiler/open-a-trace-table-sql-server-profiler.md)  
   
   

@@ -1,34 +1,30 @@
 ---
 title: SP:CacheMiss Event Class | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SP:CacheMiss event class
 ms.assetid: 82229233-f772-4558-95a0-d54584d1b1ae
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a68b4ddb187fc9ff48bb0cb85c6d63dc61cca714
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6fd6f27b4ab5f76ebc5b50fa117eaf79e3f50b22
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="spcachemiss-event-class"></a>SP:CacheMiss (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SP:CacheMiss indique que la procédure est introuvable dans le cache. Si la classe d'événements SP:CacheMiss apparaît fréquemment, cela peut indiquer qu'un supplément de mémoire doit être mis à la disposition de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], augmentant ainsi la taille du cache de procédure.  
+  La classe d'événements SP:CacheMiss indique que la procédure est introuvable dans le cache. Si la classe d'événements SP:CacheMiss apparaît fréquemment, cela peut indiquer qu'un supplément de mémoire doit être mis à la disposition de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], augmentant ainsi la taille du cache de procédure.  
   
 ## <a name="spcachemiss-event-class-data-columns"></a>Colonnes de données de la classe d'événements SP:CacheMiss  
   

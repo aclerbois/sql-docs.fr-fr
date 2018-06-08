@@ -2,16 +2,15 @@
 title: Filtres de lignes paramétrés | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: replication
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - publications [SQL Server replication], dynamic filters
 - merge replication [SQL Server replication], dynamic filters
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - filters [SQL Server replication], parameterized
 - dynamic filters [SQL Server replication]
 ms.assetid: b48a6825-068f-47c8-afdc-c83540da4639
-caps.latest.revision: ''
+caps.latest.revision: 69
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 334abcb537765b94212fb8a17a5459e85ebb967e
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 7cf73ea957e5a918618b1172b65a905439831689
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameterized-filters---parameterized-row-filters"></a>Filtres paramétrés - Filtres de lignes paramétrés
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -42,7 +40,7 @@ ms.lasthandoff: 03/08/2018
   
  Les filtres paramétrés sont utilisés sur une seule table et généralement combinés à des filtres de jointure afin d'étendre le filtrage aux tables connexes. Pour plus d’informations, voir [Join Filters](../../../relational-databases/replication/merge/join-filters.md).  
   
- Pour définir ou modifier un filtre de lignes paramétré, consultez [Définir et modifier un filtre de lignes paramétrable pour un article de fusion](../../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
+ Pour définir ou modifier un filtre de lignes paramétré, consultez [Define and Modify a Parameterized Row Filter for a Merge Article](../../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md).  
   
 ## <a name="how-parameterized-filters-work"></a>Fonctionnement des filtres paramétrés  
  Un filtre de lignes paramétré utilise une clause WHERE pour sélectionner les données appropriées à publier. Plutôt que de spécifier une valeur littérale dans la clause (comme dans un filtre de lignes statique), vous spécifiez l'une des deux fonctions système suivantes ou les deux : SUSER_SNAME() et HOST_NAME(). Il est également possible d'utiliser des fonctions définies par l'utilisateur mais elles doivent inclure SUSER_SNAME() ou HOST_NAME() dans le corps de la fonction ou évaluer l'une de ces fonctions système (par exemple, `MyUDF(SUSER_SNAME()`). Si une fonction définie par l'utilisateur inclut SUSER_SNAME() ou HOST_NAME() dans le corps de la fonction, vous ne pouvez pas passer de paramètres à la fonction.  

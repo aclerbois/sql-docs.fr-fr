@@ -1,30 +1,27 @@
 ---
-title: "Liaison de paramètres par nom (paramètres nommés) | Documents Microsoft"
-ms.custom: 
+title: Liaison de paramètres par nom (paramètres nommés) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - named parameters [ODBC]
 - binding parameters by name [ODBC]
 ms.assetid: e2c3da5a-6c10-4dd5-acf9-e951eea71a6b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a9548f671ce082d41423c1f85eb543c55b6194a2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b2fc52c7bd989884b80c489801e76b51981270c7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-parameters-by-name-named-parameters"></a>Liaison de paramètres par nom (paramètres nommés)
 Certains SGBD permettre à une application spécifier les paramètres à une procédure stockée par nom et non par la position dans l’appel de procédure. Ces paramètres sont appelés *des paramètres nommés*. ODBC prend en charge l’utilisation de paramètres nommés. Dans ODBC, les paramètres nommés sont utilisés uniquement dans les appels aux procédures stockées et ne peut pas être utilisés dans d’autres instructions SQL.  

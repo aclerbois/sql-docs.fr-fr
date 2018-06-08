@@ -1,16 +1,15 @@
 ---
 title: MSmerge_history (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSmerge_history system table
 ms.assetid: 936195ad-ca07-41a8-a1a0-6699b6e63403
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bec33dfc63fb25943be93ff79c2a15136473c06a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 1e28c0aae7f29099ebef75d5c0aa7ef81eec0379
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msmergehistory-transact-sql"></a>MSmerge_history (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -41,14 +39,14 @@ ms.lasthandoff: 11/21/2017
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**session_id**|**int**|ID du travail d'Agent de fusion|  
-|**éléments agent_id**|**int**|ID de l'Agent de fusion|  
-|**commentaires**|**nvarchar(255)**|Texte du message.|  
+|**agent_id**|**int**|ID de l'Agent de fusion|  
+|**Commentaires**|**nvarchar(255)**|Texte du message.|  
 |**ID_erreur**|**int**|L’ID d’une erreur dans le [MSrepl_errors](../../relational-databases/system-tables/msrepl-errors-transact-sql.md) (table système).|  
 |**timestamp**|**timestamp**|Colonne timestamp de cette table|  
 |**updatable_row**|**bit**|La valeur **1** si la ligne d’historique peut être remplacée.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

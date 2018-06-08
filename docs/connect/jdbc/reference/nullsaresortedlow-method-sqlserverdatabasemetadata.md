@@ -1,30 +1,29 @@
 ---
-title: "Méthode nullsAreSortedLow (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode nullsAreSortedLow (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.nullsAreSortedLow
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.nullsAreSortedLow
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 30c06a9d-3513-42d0-8b2a-5a20ac31eb0e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a06381e1c7901938363f0c81134ad777ec4fee2a
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: eb6a7e3491dd6d9f4e55b6eb5548276aaeca94ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nullsaresortedlow-method-sqlserverdatabasemetadata"></a>Méthode nullsAreSortedLow (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -1,70 +1,18 @@
 ---
-title: "Propriétés du journal | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- QueryLogFileSize property
-- QueryLogTableName property
-- TraceBackgroundDistributionPeriod property
-- TraceMaxRowsetSize property
-- NullKeyConvertedToUnknown property
-- CrashReportsFolder property
-- TraceDefinitionFile property
-- SQLDumperFlagsOn property
-- KeyErrorLimit property
-- SnapshotDefinitionFile property
-- MinidumpErrorList property
-- ErrorLogFileName property
-- KeyDuplicate property
-- IgnoreDataTruncation property
-- logs [Analysis Services]
-- Enabled property
-- FileSizeMB property
-- TraceFileWriteTrailerPeriod property
-- TraceQueryResponseTextChunkSize property
-- File property
-- FileBufferSize property
-- TraceRowsetBackgroundFlushPeriod property
-- ErrorLogFileSize property
-- TraceRequestParameters property
-- KeyErrorLimitAction property
-- CreateQueryLogTable property
-- LogDir property
-- TraceBackgroundFlushPeriod property
-- TraceFileBufferSize property
-- SQLDumperFlagsOff property
-- QueryLogConnectionString property
-- KeyNotFound property
-- KeyErrorLogFile property
-- TraceReportFQDN property
-- KeyErrorAction property
-- QueryLogFileName property
-- MessageLogs property
-- MiniDumpFlagsOn property
-- SnapshotFrequencySec property
-- QueryLogSampling property
-- CreateAndSendCrashReports property
-- LogDurationSec property
-ms.assetid: 33fd90ee-cead-48f0-8ff9-9b458994c766
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8add9f86817ba2a4a6ae32b0b3151b7f488966e1
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0d6f3ef84c6df07abf30cef16102ef13277bff47
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="log-properties"></a>Propriétés du journal
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -83,7 +31,7 @@ ms.lasthandoff: 02/15/2018
  Propriété avancée que vous ne devez pas modifier, sauf si vous bénéficiez de l'assistance du support technique [!INCLUDE[msCoName](../../includes/msconame-md.md)] .  
   
 ## <a name="error-log"></a>Journal des erreurs de SQL Server  
- Vous pouvez définir ces propriétés au niveau de l'instance du serveur pour modifier les valeurs par défaut de la configuration d'erreur qui s'affichent dans d'autres outils et concepteurs. Consultez [Configuration d’erreur pour le Cube, Partition et le traitement de Dimension &#40; SSAS - multidimensionnel &#41; ](../../analysis-services/multidimensional-models/error-configuration-for-cube-partition-and-dimension-processing.md) et <xref:Microsoft.AnalysisServices.MiningStructure.ErrorConfiguration%2A> pour plus d’informations.  
+ Vous pouvez définir ces propriétés au niveau de l'instance du serveur pour modifier les valeurs par défaut de la configuration d'erreur qui s'affichent dans d'autres outils et concepteurs. Consultez [Configuration d’erreur pour le Cube, la Partition et le traitement de Dimension &#40;SSAS - multidimensionnel&#41; ](../../analysis-services/multidimensional-models/error-configuration-for-cube-partition-and-dimension-processing.md) et <xref:Microsoft.AnalysisServices.MiningStructure.ErrorConfiguration%2A> pour plus d’informations.  
   
  **ErrorLog\ErrorLogFileName**  
  Propriété utilisée comme valeur par défaut durant une opération de traitement effectuée par le serveur.  

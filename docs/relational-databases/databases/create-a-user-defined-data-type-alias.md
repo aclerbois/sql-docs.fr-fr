@@ -1,37 +1,36 @@
 ---
-title: "Créer un type de données d’alias défini par l’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Créer un type de données d’alias défini par l’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.userdefineddatatype.general.f1
 - sql13.swb.new.datatype.properties.general.f1
 helpviewer_keywords:
 - alias data types [SQL Server], creating
 ms.assetid: b1dd8413-0cd0-411b-a79b-1bb043ccc62d
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5a2acca73084c6815410f9e0f151ab12c7d5e0b3
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 411b717866ff137b498d12aff3994e2a7436101d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-user-defined-data-type-alias"></a>Créer un type de données d'alias défini par l'utilisateur
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette rubrique explique comment créer un nouvel alias de type de données défini par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
+  Cette rubrique explique comment créer un nouvel alias de type de données défini par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   
@@ -76,7 +75,7 @@ Cette rubrique explique comment créer un nouvel alias de type de données défi
      **Longueur/Précision**  
      Affiche la longueur ou la précision du type de données. **Longueur** s’applique aux types de données définis par l’utilisateur basés sur les caractères ; **Précision** s’applique uniquement aux types de données définis par l’utilisateur qui sont numériques. Le nom change en fonction du type de données sélectionné précédemment. Cette zone ne peut pas être modifiée si la longueur ou la précision du type de données sélectionné est fixe.  
   
-     La longueur n’est pas affichée pour les types de données **nvarchar(max)**, **varchar(max)**ou **varbinary(max)** .  
+     La longueur n’est pas affichée pour les types de données **nvarchar(max)**, **varchar(max)** ou **varbinary(max)** .  
   
      **Nom**  
      Si vous créez un nouvel alias de type de données défini par l'utilisateur, tapez un nom unique à utiliser dans la base de données pour représenter le type de données défini par l'utilisateur. Le nombre maximal de caractères doit correspondre au type de données système **sysname** . Le nom d'un alias de type de données défini par l'utilisateur existant n'est pas modifiable.  
@@ -102,7 +101,7 @@ Cette rubrique explique comment créer un nouvel alias de type de données défi
   
      Pour les types de données **nchar** et **nvarchar** , la valeur de stockage équivaut toujours au double de la valeur contenue dans **Longueur**.  
   
-     Le stockage n’est pas affiché pour les types de données **nvarchar(max)**, **varchar(max)**ou **varbinary(max)** .  
+     Le stockage n’est pas affiché pour les types de données **nvarchar(max)**, **varchar(max)** ou **varbinary(max)** .  
   
 2.  Dans la boîte de dialogue **Nouveau type de données défini par l’utilisateur** , dans la zone **Schéma** , entrez le schéma qui doit détenir cet alias de type de données ou utilisez le bouton Parcourir pour sélectionner le schéma.  
   

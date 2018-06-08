@@ -1,32 +1,19 @@
 ---
 title: Déployer des Solutions de modèle à l’aide de l’Assistant Déploiement | Documents Microsoft
-ms.custom: ''
-ms.date: 03/27/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-helpviewer_keywords:
-- Analysis Services Deployment Wizard
-- deploying [Analysis Services], Analysis Services Deployment Wizard
-- Analysis Services deployments, Analysis Services Deployment Wizard
-- Analysis Services Deployment Wizard, about Analysis Services Deployment Wizard
-ms.assetid: ff711e8e-971c-43ba-b479-effc034af4a4
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f4e810f0ca82140f40f353a694b5c937764698b0
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: cde312f2bfad67c6cfe61a9b8379973c1f59a56c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-model-solutions-using-the-deployment-wizard"></a>Deploy Model Solutions Using the Deployment Wizard
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]

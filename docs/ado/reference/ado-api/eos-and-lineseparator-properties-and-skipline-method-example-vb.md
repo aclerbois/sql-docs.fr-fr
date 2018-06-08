@@ -1,17 +1,15 @@
 ---
-title: "Fin du support et LineSeparator, propriétés et SkipLine, méthode-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Fin du support et LineSeparator, propriétés et SkipLine, méthode-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - Skipline method [ADO], Visual Basic example
 - EOS property [ADO], Visual Basic example
 ms.assetid: 77ce3042-9ebc-44ba-a4ff-0f1b1fd4a9c4
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e333bc3eeefcdf4e6ba4439833b2aef9c6f8d25
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 30574dbeff5b8dded6f1f5ae7b7b01082962749d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="eos-and-lineseparator-properties-and-skipline-method-example-vb"></a>Fin du support et LineSeparator, propriétés et SkipLine, méthode-exemple (VB)
 Cet exemple montre comment manipuler le texte ligne par ligne le flux de données à la fois. Effet de modifier le séparateur de ligne à partir de la valeur par défaut retour chariot / (**adCRLF**) pour simplement le saut de ligne (**adLF**) ou un retour chariot (**adCR simple**) s’affiche.  

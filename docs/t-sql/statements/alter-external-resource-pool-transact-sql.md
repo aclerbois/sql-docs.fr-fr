@@ -1,16 +1,14 @@
 ---
 title: ALTER EXTERNAL RESOURCE POOL (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_EXTERNAL_RESOURCE_POOL_TSQL
@@ -19,20 +17,19 @@ dev_langs:
 helpviewer_keywords:
 - ALTER EXTERNAL RESOURCE POOL statement
 ms.assetid: 634c327d-971b-49ba-b8a2-e243a04040db
-caps.latest.revision: 
+caps.latest.revision: 10
 author: jeannt
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cb4073a8114e953dc9df87614a63e074ab8c9683
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4c4d3653b7fc499f8997d4fc0097ae88bba9eb12
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-external-resource-pool-transact-sql"></a>ALTER EXTERNAL RESOURCE POOL (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
-**S’applique à : ** [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)] [!INCLUDE[rsql-productname-md](../../includes/rsql-productname-md.md)] et [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] [!INCLUDE[rsql-productnamenew-md](../../includes/rsql-productnamenew-md.md)]
+**S’applique à** : [!INCLUDE[sssql15-md](../../includes/sssql15-md.md)] [!INCLUDE[rsql-productname-md](../../includes/rsql-productname-md.md)] et [!INCLUDE[sssql17-md](../../includes/sssql17-md.md)] [!INCLUDE[rsql-productnamenew-md](../../includes/rsql-productnamenew-md.md)]
 
 Change un pool externe Resource Governor qui spécifie quelles ressources peuvent être utilisées par les processus externes. 
 
@@ -72,21 +69,21 @@ Quand il est utilisé avec l’instruction `ALTER EXTERNAL RESOURCE POOL`, le pa
 
 
 MAX_CPU_PERCENT =*value*  
-Spécifie la bande passante de l’UC moyenne maximale que toutes les demandes du pool de ressources externe peuvent recevoir en cas de contention de l’UC. *value* est un entier, qui est défini par défaut à 100. *value* peut être compris entre 1 et 100.
+Spécifie la bande passante processeur moyenne maximale que toutes les demandes du pool de ressources externes peuvent recevoir en cas de contention du processeur. *value* est un entier dont le paramètre par défaut est 100. *value* peut être compris entre 1 et 100.
 
 
 AFFINITY {CPU = AUTO | ( \<CPU_range_spec> ) | NUMANODE = (\<NUMA_node_range_spec>)}  
 Joint le pool de ressources externe aux UC spécifiées. La valeur par défaut est AUTO.
 
-AFFINITY CPU = **(** \<CPU_range_spec> **)** mappe le pool de ressources externe aux UC [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] identifiées par les valeurs CPU_ID données. Quand vous utilisez AFFINITY NUMANODE = **(** \<NUMA_node_range_spec> **)**, le pool de ressources externe est associé par affinité aux UC physiques [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] correspondant au nœud NUMA ou à la plage de nœuds spécifique.
+AFFINITY CPU = **(** \<CPU_range_spec> **)** mappe le pool de ressources externes aux unités centrales [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] identifiées par les valeurs CPU_ID données. Quand vous utilisez AFFINITY NUMANODE =  **(** \<NUMA_node_range_spec> **)**, le pool de ressources externes est associé par affinité aux unités centrales physiques [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] correspondant au nœud NUMA ou à la plage de nœuds spécifique.
 
 
 MAX_MEMORY_PERCENT =*value*  
-Spécifie la mémoire totale du serveur qui peut être utilisée par les demandes dans ce pool de ressources externe. *value* est un entier, qui est défini par défaut à 100. *value* peut être compris entre 1 et 100.
+Spécifie la mémoire totale du serveur qui peut être utilisée par les demandes dans ce pool de ressources externes. *value* est un entier dont le paramètre par défaut est 100. La plage autorisée pour *value* est comprise entre 1 et 100.
 
 
 MAX_PROCESSES =*value*  
-Spécifie le nombre maximal de processus autorisés pour le pool de ressources externe. Spécifiez 0 pour définir un seuil illimité pour le pool, qui est alors limité uniquement par les ressources de l’ordinateur. La valeur par défaut est 0.
+Spécifie le nombre maximal de processus autorisés pour le pool de ressources externes. Spécifiez 0 pour définir un seuil illimité pour le pool, qui est alors limité uniquement par les ressources de l’ordinateur. La valeur par défaut est 0.
 
 ## <a name="remarks"></a>Notes 
 

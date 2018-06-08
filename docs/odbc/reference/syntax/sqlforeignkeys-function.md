@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLForeignKeys | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLForeignKeys
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLForeignKeys
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLForeignKeys
-helpviewer_keywords: SQLForeignKeys function [ODBC]
+f1_keywords:
+- SQLForeignKeys
+helpviewer_keywords:
+- SQLForeignKeys function [ODBC]
 ms.assetid: 07f3f645-f643-4d39-9a10-70a72f24e608
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ba8f395a556d976f2698ce9646db2e830e7a69aa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c5e90ce8d272b7345a9cd6f450df6293c63d4151
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlforeignkeys-function"></a>Fonction SQLForeignKeys
 **Mise en conformité**  
@@ -119,7 +120,7 @@ SQLRETURN SQLForeignKeys(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLForeignKeys** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLForeignKeys** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -159,9 +160,9 @@ SQLRETURN SQLForeignKeys(
   
  Les longueurs des colonnes VARCHAR ne figurent pas dans la table ; les longueurs réelles dépendant de la source de données. Pour déterminer la longueur réelle du PKTABLE_CAT FKTABLE_CAT, PKTABLE_SCHEM ou FKTABLE_SCHEM, colonnes nom_de_la_pktable ou FKTABLE_NAME et PKCOLUMN_NAME ou FKCOLUMN_NAME, une application peut appeler **SQLGetInfo** avec les options SQL_MAX_CATALOG_NAME_LEN, SQL_MAX_SCHEMA_NAME_LEN, SQL_MAX_TABLE_NAME_LEN et SQL_MAX_COLUMN_NAME_LEN.  
   
- Les colonnes suivantes ont été renommés pour ODBC 3*. x.* Les changements de nom de colonne n’affectent pas la compatibilité descendante, car les applications lier par numéro de colonne.  
+ Les colonnes suivantes ont été renommés pour ODBC 3 *. x.* Les changements de nom de colonne n’affectent pas la compatibilité descendante, car les applications lier par numéro de colonne.  
   
-|Colonne de ODBC 2.0|ODBC 3*.x* colonne|  
+|Colonne de ODBC 2.0|ODBC 3 *.x* colonne|  
 |---------------------|-----------------------|  
 |PKTABLE_QUALIFIER|PKTABLE_CAT|  
 |PKTABLE_OWNER|PKTABLE_SCHEM|  
@@ -172,7 +173,7 @@ SQLRETURN SQLForeignKeys(
   
 |Nom de colonne|Numéro de colonne|Type de données|Commentaires|  
 |-----------------|-------------------|---------------|--------------|  
-|PKTABLE_CAT (ODBC VERSION 1.0)| 1|Varchar|Nom du catalogue de table de clé primaire ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
+|PKTABLE_CAT (ODBC VERSION 1.0)|1|Varchar|Nom du catalogue de table de clé primaire ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
 |PKTABLE_SCHEM (ODBC VERSION 1.0)|2|Varchar|Nom du schéma de table de clé primaire ; NULL si non applicable à la source de données. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de schémas.|  
 |NOM_DE_LA_PKTABLE (ODBC 1.0)|3|Varchar non NULL|Nom de la table de clé primaire.|  
 |PKCOLUMN_NAME (ODBC VERSION 1.0)|4|Varchar non NULL|Nom de la colonne de clé primaire. Le pilote retourne une chaîne vide pour une colonne qui n’a pas de nom.|  
@@ -181,8 +182,8 @@ SQLRETURN SQLForeignKeys(
 |FKTABLE_NAME (ODBC 1.0)|7|Varchar non NULL|Nom de la table de clé étrangère.|  
 |FKCOLUMN_NAME (ODBC VERSION 1.0)|8|Varchar non NULL|Nom de la colonne de clé étrangère. Le pilote retourne une chaîne vide pour une colonne qui n’a pas de nom.|  
 |KEY_SEQ (ODBC 1.0)|9|Smallint non NULL|Numéro de séquence de colonne de clé (en commençant par 1).|  
-|UPDATE_RULE (ODBC 1.0)|10|Smallint|Action à appliquer à la clé étrangère lorsque l’opération SQL est **mise à jour**. Peut avoir l’une des valeurs suivantes. (La table référencée est la table qui contient la clé primaire ; la table de référence est la table qui contient la clé étrangère).<br /><br /> SQL_CASCADE : Lors de la mise à jour de la clé primaire de la table référencée, la clé étrangère de la table de référence est également mis à jour.<br /><br /> SQL_NO_ACTION : Si une mise à jour de la clé primaire de la table référencée provoquerait une « référence non résolue » dans la table de référence (autrement dit, les lignes dans la table de référence n’aurait aucuns équivalents dans la table référencée), la mise à jour est rejetée. Si une mise à jour de la clé étrangère de la table de référence créerait une valeur qui n’existe pas en tant que valeur de la clé primaire de la table référencée, la mise à jour est rejetée. (Cette action est le même que l’action SQL_RESTRICT dans ODBC 2*.x*.)<br /><br /> SQL_SET_NULL : Une ou plusieurs lignes dans la table référencée sont mises à jour de manière à ce qu’un ou plusieurs composants de la clé primaire sont modifiées, les composants de la clé étrangère dans la table de référence qui correspondent aux composants modifiés de la clé primaire ont des valeurs NULL dans toutes les lignes correspondantes de la table de référence.<br /><br /> SQL_SET_DEFAULT : Une ou plusieurs lignes dans la table référencée sont mises à jour de manière à ce qu’un ou plusieurs composants de la clé primaire sont modifiées, les composants de la clé étrangère dans la table de référence qui correspondent aux composants modifiés de la clé primaire sont définis aux valeurs par défaut applicables à toutes les lignes correspondantes de la table de référence.<br /><br /> NULL si non applicable à la source de données.|  
-|DELETE_RULE (ODBC 1.0)|11|Smallint|Action à appliquer à la clé étrangère lorsque l’opération SQL est **supprimer**. Peut avoir l’une des valeurs suivantes. (La table référencée est la table qui contient la clé primaire ; la table de référence est la table qui contient la clé étrangère).<br /><br /> SQL_CASCADE : Lorsqu’une ligne dans la table référencée est supprimée, toutes les lignes correspondantes dans les tables de référence sont également supprimés.<br /><br /> SQL_NO_ACTION : Si une suppression d’une ligne dans la table référencée provoquerait une « référence non résolue » dans la table de référence (autrement dit, les lignes dans la table de référence n’aurait aucuns équivalents dans la table référencée), la mise à jour est rejetée. (Cette action est le même que l’action SQL_RESTRICT dans ODBC 2*.x*.)<br /><br /> SQL_SET_NULL : Lorsqu’une ou plusieurs lignes dans la table référencée sont supprimées, chaque composant de la clé étrangère de la table de référence est défini sur NULL dans toutes les lignes correspondantes de la table de référence.<br /><br /> SQL_SET_DEFAULT : Lorsqu’une ou plusieurs lignes dans la table référencée sont supprimées, chaque composant de la clé étrangère de la table de référence est défini sur la valeur par défaut applicable dans toutes les lignes correspondantes de la table de référence.<br /><br /> NULL si non applicable à la source de données.|  
+|UPDATE_RULE (ODBC 1.0)|10|Smallint|Action à appliquer à la clé étrangère lorsque l’opération SQL est **mise à jour**. Peut avoir l’une des valeurs suivantes. (La table référencée est la table qui contient la clé primaire ; la table de référence est la table qui contient la clé étrangère).<br /><br /> SQL_CASCADE : Lors de la mise à jour de la clé primaire de la table référencée, la clé étrangère de la table de référence est également mis à jour.<br /><br /> SQL_NO_ACTION : Si une mise à jour de la clé primaire de la table référencée provoquerait une « référence non résolue » dans la table de référence (autrement dit, les lignes dans la table de référence n’aurait aucuns équivalents dans la table référencée), la mise à jour est rejetée. Si une mise à jour de la clé étrangère de la table de référence créerait une valeur qui n’existe pas en tant que valeur de la clé primaire de la table référencée, la mise à jour est rejetée. (Cette action est le même que l’action SQL_RESTRICT dans ODBC 2 *.x*.)<br /><br /> SQL_SET_NULL : Une ou plusieurs lignes dans la table référencée sont mises à jour de manière à ce qu’un ou plusieurs composants de la clé primaire sont modifiées, les composants de la clé étrangère dans la table de référence qui correspondent aux composants modifiés de la clé primaire ont des valeurs NULL dans toutes les lignes correspondantes de la table de référence.<br /><br /> SQL_SET_DEFAULT : Une ou plusieurs lignes dans la table référencée sont mises à jour de manière à ce qu’un ou plusieurs composants de la clé primaire sont modifiées, les composants de la clé étrangère dans la table de référence qui correspondent aux composants modifiés de la clé primaire sont définis aux valeurs par défaut applicables à toutes les lignes correspondantes de la table de référence.<br /><br /> NULL si non applicable à la source de données.|  
+|DELETE_RULE (ODBC 1.0)|11|Smallint|Action à appliquer à la clé étrangère lorsque l’opération SQL est **supprimer**. Peut avoir l’une des valeurs suivantes. (La table référencée est la table qui contient la clé primaire ; la table de référence est la table qui contient la clé étrangère).<br /><br /> SQL_CASCADE : Lorsqu’une ligne dans la table référencée est supprimée, toutes les lignes correspondantes dans les tables de référence sont également supprimés.<br /><br /> SQL_NO_ACTION : Si une suppression d’une ligne dans la table référencée provoquerait une « référence non résolue » dans la table de référence (autrement dit, les lignes dans la table de référence n’aurait aucuns équivalents dans la table référencée), la mise à jour est rejetée. (Cette action est le même que l’action SQL_RESTRICT dans ODBC 2 *.x*.)<br /><br /> SQL_SET_NULL : Lorsqu’une ou plusieurs lignes dans la table référencée sont supprimées, chaque composant de la clé étrangère de la table de référence est défini sur NULL dans toutes les lignes correspondantes de la table de référence.<br /><br /> SQL_SET_DEFAULT : Lorsqu’une ou plusieurs lignes dans la table référencée sont supprimées, chaque composant de la clé étrangère de la table de référence est défini sur la valeur par défaut applicable dans toutes les lignes correspondantes de la table de référence.<br /><br /> NULL si non applicable à la source de données.|  
 |FK_NAME (ODBC VERSION 2.0)|12|Varchar|Nom de clé étrangère. NULL si non applicable à la source de données.|  
 |PK_NAME (ODBC VERSION 2.0)|13|Varchar|Nom de clé primaire. NULL si non applicable à la source de données.|  
 |DEFERRABILITY (ODBC 3.0)|14|Smallint|SQL_INITIALLY_DEFERRED, SQL_INITIALLY_IMMEDIATE, SQL_NOT_DEFERRABLE.|  
@@ -206,19 +207,19 @@ SQLRETURN SQLForeignKeys(
   
 |TABLE_NAME|COLUMN_NAME|KEY_SEQ|  
 |-----------------|------------------|--------------|  
-|ORDERS|ORDERID| 1|  
+|ORDERS|ORDERID|1|  
   
  Ensuite, l’exemple appelle **SQLForeignKeys** pour obtenir les clés étrangères dans d’autres tables qui font référence à la clé primaire de la table ORDERS. Le jeu de résultats aura une ligne ; les colonnes importantes sont présentées dans le tableau suivant.  
   
 |PKTABLE_NAME|PKCOLUMN_NAME|FKTABLE_NAME|FKCOLUMN_NAME|KEY_SEQ|  
 |-------------------|--------------------|-------------------|--------------------|--------------|  
-|ORDERS|CUSTID|LIGNES|CUSTID| 1|  
+|ORDERS|CUSTID|LIGNES|CUSTID|1|  
   
  Enfin, l’exemple appelle **SQLForeignKeys** pour obtenir les clés étrangères dans la table ORDERS qui font référence aux clés primaires d’autres tables. Le jeu de résultats aura une ligne ; les colonnes importantes sont présentées dans le tableau suivant.  
   
 |PKTABLE_NAME|PKCOLUMN_NAME|FKTABLE_NAME|FKCOLUMN_NAME|KEY_SEQ|  
 |-------------------|--------------------|-------------------|--------------------|--------------|  
-|CLIENTS|CUSTID|ORDERS|CUSTID| 1|  
+|CLIENTS|CUSTID|ORDERS|CUSTID|1|  
   
 ```  
 #define TAB_LEN SQL_MAX_TABLE_NAME_LEN + 1  

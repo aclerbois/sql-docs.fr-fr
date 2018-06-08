@@ -1,27 +1,19 @@
 ---
-title: "Outils et applications utilisés dans Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 05/11/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-ms.assetid: 0ddb3b7a-7464-4d04-8659-11cb2e4cf3c3
-caps.latest.revision: "17"
-author: Minewiskan
+title: Outils et applications utilisés dans Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 6dbb05ab73e9994d4f3c14a9bdfd919ec48c6f29
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: e2ff1808739eff4aed9ad34bef5d512f7539b7a6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tools-and-applications-used-in-analysis-services"></a>Outils et applications utilisés dans Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas-aas](../includes/ssas-appliesto-sqlas-aas.md)]

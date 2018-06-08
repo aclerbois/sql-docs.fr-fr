@@ -1,16 +1,15 @@
 ---
-title: "Numberofprops, propriété (classe ClientNetworkProtocol) | Documents Microsoft"
-ms.custom: 
+title: Numberofprops, propriété (classe ClientNetworkProtocol) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - NumberOfProps Property (ClientNetworkProtocol Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - NumberOfProps property
 ms.assetid: 9c508bc5-c7a4-4db1-b3bf-c7098c66435a
-caps.latest.revision: 
+caps.latest.revision: 34
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 82e77ba43d4df292f069e92ed1d777d0dc6ff103
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 77baccff2e4748929ab4751f4080a164311543c5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="numberofprops-property-clientnetworkprotocol-class"></a>Propriété NumberOfProps (classe ClientNetworkProtocol)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

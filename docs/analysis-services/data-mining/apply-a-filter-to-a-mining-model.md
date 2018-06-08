@@ -1,36 +1,23 @@
 ---
-title: "Appliquer un filtre à un modèle d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/19/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- model filter [data mining]
-- filters [data mining]
-- filtering input rows [Analysis Services]
-- filtering data [Analysis Services]
-ms.assetid: 4d0abeb5-e939-46d3-9097-6e0358244300
-caps.latest.revision: 
-author: Minewiskan
+title: Appliquer un filtre à un modèle d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 57fedca20966d9ad7520b51ee850738e1e51b0e9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a3e192718ed0e1c3597f4e0f76c951a96530c6c7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="apply-a-filter-to-a-mining-model"></a>Appliquer un filtre à un modèle d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Si votre structure d'exploration de données contient une table imbriquée, vous pouvez appliquer un filtre à la table de cas, à la table imbriquée, ou aux deux.  
+  Si votre structure d'exploration de données contient une table imbriquée, vous pouvez appliquer un filtre à la table de cas, à la table imbriquée, ou aux deux.  
   
  La procédure suivante indique comment créer les deux types de filtres : filtres de cas et filtres sur les lignes de la table imbriquée.  
   
@@ -132,7 +119,7 @@ EXISTS (SELECT * FROM [<nested table name>] WHERE [Model] <> 'Water Bottle' )
     >  Si vous modifiez manuellement quelque partie que ce soit d'une expression de filtre, la grille est alors désactivée et vous devez utiliser l'expression de filtre en mode édition de texte uniquement. Pour restaurer le mode de modification de grille, vous devez effacer l'expression de filtre et recommencer.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Filtres pour les modèles d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/filters-for-mining-models-analysis-services-data-mining.md)   
+ [Filtres pour les modèles d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/filters-for-mining-models-analysis-services-data-mining.md)   
  [Tâches liées aux modèles d’exploration de données et procédures](../../analysis-services/data-mining/mining-model-tasks-and-how-tos.md)   
  [Supprimer un filtre d’un modèle d’exploration de données](../../analysis-services/data-mining/delete-a-filter-from-a-mining-model.md)  
   

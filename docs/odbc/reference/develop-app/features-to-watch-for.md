@@ -1,28 +1,26 @@
 ---
-title: "Fonctionnalités à la fenêtre Espion pour | Documents Microsoft"
-ms.custom: 
+title: Fonctionnalités à la fenêtre Espion pour | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: interoperability [ODBC], writing interoperable applications
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- interoperability [ODBC], writing interoperable applications
 ms.assetid: 0fb1693b-11c3-43b1-bb16-c3323b7b2d45
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0a2e4c0e37d62eccccf1e0af0f2acc28ed09e8b6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 704fc0c45706e80408218d185146a438099da829
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="features-to-watch-for"></a>Fonctionnalités à surveiller
 Cette section décrit un nombre de fonctions qui les développeurs d’applications utilisent souvent pour reçoivent. En fait, ces fonctionnalités varient largement dans prise en charge et les modalités de prise en charge entre des SGBD ; Échec de code pour les est susceptible de causer des problèmes dans les applications interopérables.  

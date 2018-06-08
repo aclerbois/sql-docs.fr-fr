@@ -1,17 +1,14 @@
 ---
-title: "Jeux de supports de sauvegarde en miroir (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Jeux de supports de sauvegarde en miroir (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - recovery [SQL Server], mirrored backups
 - mirrored media sets [SQL Server]
@@ -21,16 +18,15 @@ helpviewer_keywords:
 - media sets [SQL Server], mirrored backup media sets
 - backup media [SQL Server], mirrored media
 ms.assetid: 05a0b8d1-3585-4f77-972f-69d1c0d4aa9b
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fbc768c2ce1a0284ffdfe109cfd68e1184a33360
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 19a85e14df3eba30b21edee53c8ff5f3fe446cde
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mirrored-backup-media-sets-sql-server"></a>Jeux de supports de sauvegarde en miroir (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

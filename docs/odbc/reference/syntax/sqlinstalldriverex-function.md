@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLInstallDriverEx | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLInstallDriverEx
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLInstallDriverEx
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLInstallDriverEx
-helpviewer_keywords: SQLInstallDriverEx function [ODBC]
+f1_keywords:
+- SQLInstallDriverEx
+helpviewer_keywords:
+- SQLInstallDriverEx function [ODBC]
 ms.assetid: 1dd74544-f4e9-46e1-9b5f-c11d84fdab4c
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4179bf04131f256c5a37cb01c079035a569a07af
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4c4ba55c94f36052d525c79c3c472e7e5c28d6a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlinstalldriverex-function"></a>SQLInstallDriverEx (fonction)
 **Mise en conformité**  
@@ -87,7 +88,7 @@ BOOL SQLInstallDriverEx(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLInstallDriverEx** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_INVALID_BUFF_LEN|Longueur de la mémoire tampon non valide|Le *lpszPathOut* argument n’était pas suffisamment grande pour contenir le chemin de sortie. La mémoire tampon contient le chemin d’accès tronquée.<br /><br /> Le *cbPathOutMax* argument était 0, et *fréquents* a été ODBC_INSTALL_COMPLETE.|  
@@ -101,9 +102,9 @@ BOOL SQLInstallDriverEx(
 ## <a name="comments"></a>Commentaires  
  Le *lpszDriver* argument est une liste d’attributs sous la forme de paires mot clé-valeur. Chaque paire se termine par un octet null, et la liste entière se termine par un octet null. (Autrement dit, deux octets null marquent la fin de la liste.) Le format de cette liste est la suivante :  
   
- *pilote-desc*  **\\** 0Driver**=***pilote-DLL-nom de fichier***\\**0 [le programme d’installation**=***le programme d’installation-DLL-nom de fichier***\\**0]  
+ *pilote-desc* **\\**0Driver**=***pilote-DLL-nom de fichier***\\**0 [le programme d’installation **= ***le programme d’installation-DLL-nom de fichier***\\**0]  
   
- [*pilote-attr-mot_clé1***=***value1***\\**0] [*pilote-attr-mot Clé2***=***value2***\\**0]...  **\\** 0  
+ [*pilote-attr-mot_clé1***=*** value1 ***\\**0] [* pilote-attr-mot Clé2***=*** value2 ***\\**0]... **\\**0  
   
  où \0 est un octet null et *pilote-attr-keywordn* est n’importe quel mot clé d’attribut pilote. Les mots clés doivent apparaître dans l’ordre spécifié. Par exemple, supposons qu’un pilote pour les fichiers de texte mis en forme possède de pilote séparé et le programme d’installation DLL et pouvez utiliser des fichiers portant les extensions .txt et .csv. Le *lpszDriver* argument pour ce pilote peut être comme suit :  
   
@@ -132,7 +133,7 @@ SQL Server\0Driver=SQLSRVR.DLL\0\0
 > [!NOTE]  
 >  Si le pilote a été installé précédemment et **SQLInstallDriverEx** est appelée pour installer le pilote dans un répertoire différent, la fonction renvoie la valeur TRUE, mais *lpszPathOut* inclut le répertoire où le pilote a déjà été installé. Il n’inclut pas le répertoire entré dans le *lpszDriver* argument.  
   
- La longueur du chemin d’accès dans *lpszPathOut* dans **SQLInstallDriverEx** permet un processus d’installation en deux phases, pour une application peut déterminer quel *cbPathOutMax* doit être en appelant **SQLInstallDriverEx** avec un *fréquents* du mode ODBC_INSTALL_INQUIRY. Cela retourne le nombre total d’octets disponible dans le *pcbPathOut* mémoire tampon. **SQLInstallDriverEx** peut ensuite être appelée avec un *fréquents* de ODBC_INSTALL_COMPLETE et *cbPathOutMax* affectée à la valeur de l’argument le *pcbPathOut* tampon, ainsi que le caractère de fin de la valeur null.  
+ La longueur du chemin d’accès dans *lpszPathOut* dans **SQLInstallDriverEx** permet un processus d’installation en deux phases, pour une application peut déterminer quel *cbPathOutMax* doit être en appelant **SQLInstallDriverEx** avec un *fréquents* du mode ODBC_INSTALL_INQUIRY. Cela retourne le nombre total d’octets disponible dans le *pcbPathOut* mémoire tampon. **SQLInstallDriverEx** peut ensuite être appelée avec un *fréquents* de ODBC_INSTALL_COMPLETE et *cbPathOutMax* affectée à la valeur de l’argument le *pcbPathOut*mémoire tampon, ainsi que le caractère de fin de la valeur null.  
   
  Si vous choisissez de ne pas utiliser le modèle en deux phases pour **SQLInstallDriverEx**, vous devez définir *cbPathOutMax*, qui définit la taille du stockage pour le chemin d’accès du répertoire cible, à la valeur _MAX_PATH, tel que défini dans Stdlib.h, pour empêcher la troncation.  
   

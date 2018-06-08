@@ -1,30 +1,28 @@
 ---
-title: "Propriété SQL | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Propriété SQL | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - SQL property [RDS]
 ms.assetid: e0dabf23-a159-4fe5-a962-3df544a21f5c
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 406d5cd5fcf159d9354ef0af0b7036e3ebd24bab
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a5ddbfa6b69f4859f61130e8ec1c9b758c40cf64
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-property"></a>Propriété SQL
 Indique la chaîne de requête utilisée pour récupérer le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  
@@ -43,7 +41,7 @@ Run time: DataControl.SQL = "QueryString"
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *QueryString*  
+ *Chaîne de requête*  
  A **chaîne** valeur qui contient une demande de données SQL valide.  
   
  *DataControl*  

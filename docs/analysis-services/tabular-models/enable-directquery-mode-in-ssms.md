@@ -1,31 +1,23 @@
 ---
 title: Activer le mode DirectQuery dans SSMS | Documents Microsoft
-ms.custom: 
-ms.date: 02/22/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: a5d439a9-5be1-4145-90e8-90777d80e98b
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 544725a89521eb86f61fcfd3194c3d56be9da606
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: e643f90a5df9b113f2fd59a2328868131bf9c63d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="enable-directquery-mode-in-ssms"></a>Activer le mode DirectQuery dans SSMS
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Vous pouvez modifier les propriétés d’accès aux données d’un modèle tabulaire déjà déployé en activant le mode DirectQuery où des requêtes s’exécutent sur une source de données relationnelle principale plutôt que sur des données mises en cache résidant dans la mémoire.  
+  Vous pouvez modifier les propriétés d’accès aux données d’un modèle tabulaire déjà déployé en activant le mode DirectQuery où des requêtes s’exécutent sur une source de données relationnelle principale plutôt que sur des données mises en cache résidant dans la mémoire.  
   
  Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], les étapes de configuration de DirectQuery varient en fonction du niveau de compatibilité du modèle. Vous trouverez ci-dessous des étapes qui fonctionnent pour tous les niveaux de compatibilité.  
   

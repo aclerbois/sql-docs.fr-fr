@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 11 : créer des rôles | Documents Microsoft"
-description: "Décrit comment créer des rôles dans le projet du didacticiel Analysis Services."
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 11 : créer des rôles | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: b3ed6028a02b117fb6cdb87a8097d1e1eab48b0f
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfiles"
+ms.openlocfilehash: 8e630d53aed8f722c2de4a21afea8391cefe8bd8
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-roles"></a>Créer les rôles
 
@@ -60,7 +52,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
   
 4.  Dans la colonne **Autorisations** , cliquez sur la liste déroulante, puis sélectionnez l’autorisation **Lecture** . 
 
-    ![as-lesson11-new-role](../tutorial-tabular-1400/media/as-lesson11-new-role.png) 
+    ![en tant que-lesson11-nouvelle-role](../tutorial-tabular-1400/media/as-lesson11-new-role.png) 
   
 5.  Facultatif : Cliquez sur le **membres** onglet, puis cliquez sur **ajouter**. Dans la boîte de dialogue **Sélectionner des utilisateurs ou des groupes** , entrez les utilisateurs ou les groupes Windows de votre organisation à inclure dans le rôle.  
   
@@ -79,7 +71,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
     ```
     
     Une formule de filtre de lignes doit être résolue en une valeur booléenne (TRUE/FALSE). Avec cette formule, vous spécifiez que seules les lignes avec la valeur de Code pays/région « US » sont visibles par l’utilisateur.  
-    ![as-lesson11-role-filter](../tutorial-tabular-1400/media/as-lesson11-role-filter.png) 
+    ![en tant que-lesson11-rôle-filtre](../tutorial-tabular-1400/media/as-lesson11-role-filter.png) 
   
 6.  Facultatif : Cliquez sur le **membres** onglet, puis cliquez sur **ajouter**. Dans la boîte de dialogue **Sélectionner des utilisateurs ou des groupes** , entrez les utilisateurs ou les groupes Windows de votre organisation à inclure dans le rôle.  
   

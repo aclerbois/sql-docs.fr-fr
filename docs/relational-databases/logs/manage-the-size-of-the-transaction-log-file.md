@@ -1,32 +1,28 @@
 ---
-title: "Gérer la taille du fichier journal de transactions | Microsoft Docs"
-ms.custom: 
+title: Gérer la taille du fichier journal de transactions | Microsoft Docs
+ms.custom: ''
 ms.date: 01/05/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: logs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-transaction-log
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transaction logs [SQL Server], size management
 - manage log size
 - log size, manage
 ms.assetid: 3a70e606-303f-47a8-96d4-2456a18d4297
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b604f834bbc1e3f08c30f3feae06d637036610d6
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: e4558680d089b0da1c756524e3cdab5d38c4ba74
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-the-size-of-the-transaction-log-file"></a>Gérer la taille du fichier journal des transactions
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

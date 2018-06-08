@@ -2,27 +2,26 @@
 title: Nouveautés de SQL Server 2017 | Microsoft Docs
 ms.custom: ''
 ms.date: 10/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: ''
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - server-general
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0b57f375-9242-4bb2-9d4b-c560d5a93524
-caps.latest.revision: ''
+caps.latest.revision: 71
 author: craigg-msft
 ms.author: craigg
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 47d6f056dce4ad26a10e082d27119523fde303d0
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+manager: craigg
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3c433301c633813fb5d04f95ec5e2dd14a85bc6c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="whats-new-in-sql-server-2017"></a>Nouveautés de SQL Server 2017
 [!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]

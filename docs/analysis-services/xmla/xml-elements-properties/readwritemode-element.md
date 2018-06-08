@@ -1,32 +1,24 @@
 ---
-title: "Élément ReadWriteMode | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément ReadWriteMode | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: ReadWriteMode command
-ms.assetid: 379bcaca-bb7e-4934-a9e7-21f8ede2fdc7
-caps.latest.revision: "13"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 05a5397987761530d783097ec76914b01fe5356c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0d528567e22c3ba19b49eefff10d886703a0d29a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576491"
 ---
 # <a name="readwritemode-element"></a>Élément ReadWriteMode
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Le **ReadWriteMode** propriété de base de données détermine si la base de données est dans **ReadWrite** mode ou dans **ReadOnly** mode. Ce sont les deux seules valeurs possibles de la propriété.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  La propriété de base de données **ReadWriteMode** spécifie si la base de données est en mode **ReadWrite** ou en mode **ReadOnly** . Ce sont les deux seules valeurs possibles de la propriété.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -39,7 +31,7 @@ ms.lasthandoff: 01/08/2018
 </Database>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -54,7 +46,7 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Base de données](../../../analysis-services/xmla/xml-elements-properties/database-element-xmla.md)|  
 |Éléments enfants|None|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Les bases de données sont créées uniquement en mode **ReadWrite** . Les bases de données ne peuvent pas être créées en mode **ReadOnly** .  
   
  La valeur de l'élément **ReadWriteMode** est limitée à l'une des chaînes répertoriées dans le tableau suivant.  
@@ -64,7 +56,7 @@ ms.lasthandoff: 01/08/2018
 |*En lecture seule*|Aucune modification ou mise à jour ne peut être appliquée à la base de données.|  
 |*Lecture/écriture*|Les modifications et mises à jour peuvent être appliquées à la base de données.|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a>Voir aussi
  [Élément Attach](../../../analysis-services/xmla/xml-elements-commands/attach-element.md)   
  [Attacher et détacher des bases de données Analysis Services](../../../analysis-services/multidimensional-models/attach-and-detach-analysis-services-databases.md)   
  [Déplacer une base de données Analysis Services](../../../analysis-services/multidimensional-models/move-an-analysis-services-database.md)   

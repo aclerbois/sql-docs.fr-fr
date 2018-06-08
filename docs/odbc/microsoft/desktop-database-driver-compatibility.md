@@ -1,16 +1,14 @@
 ---
-title: "Compatibilité des pilotes de bureau de base de données | Documents Microsoft"
-ms.custom: 
+title: Compatibilité des pilotes de bureau de base de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - compatibility [ODBC], Unicode
 - Unicode [ODBC], desktop database drivers
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - desktop database drivers [ODBC], Unicode
 - Jet-based ODBC drivers [ODBC], Unicode
 ms.assetid: dd695638-1a0b-4e27-8a6a-9510ebb5a5ee
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fcb8ad39a2ba24890394bb05cb30f1ddb5b63d2e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5fb1e93c996b68a3110449dab797beb5c93208b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="desktop-database-driver-compatibility"></a>Compatibilité de pilote de base de données de bureau
 Unicode est une méthode d’encodage de caractères logiciel traite tous les caractères comme ayant une largeur fixe de deux octets. Cette méthode est utilisée comme alternative à l’encodage de caractères Windows ANSI, qui, car il représente les caractères dans un seul octet, est limitée à 256 caractères. Étant donné que Unicode peut représenter plus de 65 000 caractères, il prend en charge plusieurs langues dont les caractères ne sont pas représentés au format ANSI.  

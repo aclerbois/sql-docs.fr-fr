@@ -1,33 +1,19 @@
 ---
-title: "Création multidimensionnelles de modèles à l’aide de SQL Server Data Tools (SSDT) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SSAS, environments
-- Analysis Services, development
-- SQL Server Analysis Services, environments
-- projects [Analysis Services]
-- solutions [Analysis Services]
-ms.assetid: 132ed779-3ec8-4734-9698-802116d1b017
-caps.latest.revision: 
-author: Minewiskan
+title: Création multidimensionnelles de modèles à l’aide de SQL Server Data Tools (SSDT) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 805970696879c47c203deb3dc423300f5274aa1d
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 576b2e2654bdae98bd3f9464f162715c002c60e3
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="creating-multidimensional-models-using-sql-server-data-tools-ssdt"></a>Création de modèles MDX à l'aide des Outils de données SQL Server (SSDT)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -78,7 +64,7 @@ ms.lasthandoff: 02/23/2018
   
 -   [Configurer les propriétés d’un projet Analysis Services &#40;SSDT&#41;](../../analysis-services/multidimensional-models/configure-analysis-services-project-properties-ssdt.md)  
   
--   [Générer des projets Analysis Services &#40; SSDT &#41;](../../analysis-services/multidimensional-models/build-analysis-services-projects-ssdt.md)  
+-   [Générer des projets Analysis Services & #40 ; SSDT & #41 ;](../../analysis-services/multidimensional-models/build-analysis-services-projects-ssdt.md)  
   
 -   [Déployer des projets Analysis Services &#40;SSDT&#41;](../../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md)  
   

@@ -2,14 +2,12 @@
 title: managed_backup.sp_backup_config_schedule (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: system-stored-procedures
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - managed_backup.sp_backup_config_schedule
 - sp_backup_config_schedule
 ms.assetid: 82541160-d1df-4061-91a5-6868dd85743a
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6325c940487b37fea083a923a20f884bd872a0b4
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 8ebeca4b0a1c9079f8786303207bcbae4dfe74c3
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managedbackupspbackupconfigschedule-transact-sql"></a>managed_backup.sp_backup_config_schedule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -45,7 +42,8 @@ ms.lasthandoff: 03/28/2018
   
 ```vb  
 EXEC managed_backup.sp_backup_config_schedule   
-    [@database_name = ] 'database_name'    ,[@scheduling_option = ] {'Custom' | 'System'}  
+    [@database_name = ] 'database_name'
+    ,[@scheduling_option = ] {'Custom' | 'System'}  
     ,[@full_backup_freq_type = ] {'Daily' | 'Weekly'}  
     ,[@days_of_week = ] 'days_of_the_week'  
     ,[@backup_begin_time = ] 'begin time of the backup window'  

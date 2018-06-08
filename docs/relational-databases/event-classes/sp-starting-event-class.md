@@ -1,34 +1,30 @@
 ---
-title: "SP:Starting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SP:Starting, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SP:Starting event class
 ms.assetid: ef55e579-080d-4650-a7fc-4dd03ed8e391
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6043e569e8684e6f978aab5ecb7f6a3213af75d3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1db926c3406c43baee64d10d53815ce33005f08e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="spstarting-event-class"></a>SP:Starting, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SP:Starting indique que l'exécution d'une procédure stockée débute.  
+  La classe d'événements SP:Starting indique que l'exécution d'une procédure stockée débute.  
   
 ## <a name="spstarting-event-class-data-columns"></a>Colonnes de données de la classe d'événements SP:Starting  
   

@@ -1,16 +1,14 @@
 ---
 title: FETCH (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - FETCH
@@ -26,16 +24,15 @@ helpviewer_keywords:
 - SCROLL option
 - row fetching [SQL Server]
 ms.assetid: 5d68dac2-f91b-4342-bb4e-209ee132665f
-caps.latest.revision: 
+caps.latest.revision: 43
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fae1e085c26c2bcbc6b2605187b4554dba414642
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 7abb27f973c2759a5065769a578b1c8e15fe305f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetch-transact-sql"></a>FETCH (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -73,10 +70,10 @@ FETCH
  Renvoie la dernière ligne dans le curseur et la transforme en ligne courante.  
   
  ABSOLUTE { *n*| @*nvar*}  
- Si *n* ou @*nvar* est un nombre positif, retourne la ligne située à *n* lignes du début du curseur et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est un nombre négatif, retourne la ligne située à *n* lignes de la fin du curseur et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est égal à 0, aucune ligne n’est renvoyée. *n* doit être une constante entière et @*nvar* du type **smallint**, **tinyint** ou **int**.  
+ Si *n* ou @*nvar* est un nombre positif, retourne la ligne située à *n* lignes du début du curseur et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est un nombre négatif, retourne la ligne située à *n* lignes de la fin du curseur et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est égal à 0, aucune ligne n’est retournée. *n* doit être une constante entière et @*nvar* du type **smallint**, **tinyint** ou **int**.  
   
  RELATIVE { *n*| @*nvar*}  
- Si *n* ou @*nvar* est un nombre positif, retourne la ligne située à *n* lignes au-delà de la ligne actuelle et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est un nombre négatif, retourne la ligne située à *n* lignes avant la ligne actuelle et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est égal à 0, la ligne actuelle est retournée. Si FETCH RELATIVE est spécifié avec *n* ou @*nvar* défini sur un nombre négatif ou égal à 0 lors de la première extraction effectuée sur un curseur, aucune ligne n’est retournée. *n* doit être une constante entière et @*nvar* du type **smallint**, **tinyint** ou **int**.  
+ Si *n* ou @*nvar* est un nombre positif, retourne la ligne située à *n* lignes au-delà de la ligne actuelle et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est un nombre négatif, retourne la ligne située à *n* lignes avant la ligne actuelle et transforme la ligne retournée en nouvelle ligne actuelle. Si *n* ou @*nvar* est égal à 0, la ligne actuelle est retournée. Si FETCH RELATIVE est spécifié avec *n* ou @*nvar* défini sur un nombre négatif ou égal à 0 lors de la première extraction effectuée sur un curseur, aucune ligne n’est retournée. *n* doit être une constante entière et @*nvar* du type **smallint**, **tinyint** ou **int**.  
   
  GLOBAL  
  Indique que *cursor_name* fait référence à un curseur global.  

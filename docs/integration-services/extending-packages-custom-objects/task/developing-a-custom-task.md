@@ -1,15 +1,14 @@
 ---
-title: "Développement d’une tâche personnalisée | Microsoft Docs"
-ms.custom: 
+title: Développement d’une tâche personnalisée | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -27,16 +26,15 @@ helpviewer_keywords:
 - tasks [Integration Services], custom
 - TaskHost object
 ms.assetid: dcbd8615-fa6d-4ddb-b8a5-0b19dddd6239
-caps.latest.revision: 
+caps.latest.revision: 67
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 173662d19cd2cfa26962ff31b81f4edf5a2ee88e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 853a6e9eceaa364db25c99050c59005e0e9ad27a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="developing-a-custom-task"></a>Développement d'une tâche personnalisée
   [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] utilise des tâches pour effectuer des unités de travail en soutien à l'extraction, la transformation et le chargement de données. [!INCLUDE[ssISnoversion](../../../includes/ssisnoversion-md.md)] inclut une variété de tâches qui effectuent les actions les plus fréquemment utilisées, allant de l'exécution d'une instruction SQL au téléchargement d'un fichier à partir d'un site FTP. Si les tâches incluses et les actions prises en charge ne répondent pas complètement à vos besoins, vous pouvez créer une tâche personnalisée.  

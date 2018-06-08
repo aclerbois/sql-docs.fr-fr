@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetEnable (classe ServerNetworkProtocolIPAddress) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetEnable (classe ServerNetworkProtocolIPAddress) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetEnable Method (ServerNetworkProtocolIPAddress Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetEnable method
 ms.assetid: baa86deb-95dd-416f-b2c7-cec1dfb91ab4
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 512fc26a961ccdf20167a232ba2bbce094f62d0e
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 6ba0f061225d9a7cfc01f94d5172167aeec1a63a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setenable-method-servernetworkprotocolipaddress-class"></a>Méthode SetEnable (classe ServerNetworkProtocolIPAddress)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

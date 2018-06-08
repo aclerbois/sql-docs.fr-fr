@@ -1,17 +1,16 @@
 ---
-title: "Éléments sécurisables | Microsoft Docs"
-ms.custom: 
+title: Éléments sécurisables | Microsoft Docs
+ms.custom: ''
 ms.date: 10/18/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.roleproperties.selectobject.f1
 helpviewer_keywords:
@@ -21,16 +20,16 @@ helpviewer_keywords:
 - hierarchies [SQL Server], securables
 - server securables [SQL Server]
 ms.assetid: bfa748f0-70b0-453c-870a-04b7b205b9ff
-caps.latest.revision: 
+caps.latest.revision: 41
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 872f68edea028965624fdb06ea82973e5a8480fa
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d829c96618376895a3d1b3c402b80fc3c945cbdc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="securables"></a>Éléments sécurisables
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -48,7 +47,7 @@ ms.lasthandoff: 11/21/2017
   
 -   Rôle serveur  
   
--   base de données  
+-   Base de données  
   
 ## <a name="securable-scope-database"></a>Étendue des éléments sécurisables : base de données  
  Les éléments sécurisables de la **base de données** sont les suivants :  
@@ -104,7 +103,7 @@ ms.lasthandoff: 11/21/2017
   
     -   Synonyme  
   
-    -   Table  
+    -   Table de charge de travail  
   
     -   Affichage 
     
@@ -116,7 +115,7 @@ ms.lasthandoff: 11/21/2017
 > [!CAUTION]  
 >  Les autorisations par défaut accordées aux objets système au moment de l'installation sont évaluées avec soin par rapport aux menaces potentielles et ne doivent pas être modifiées dans le cadre du renforcement de l'installation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les modifications apportées aux autorisations sur les objets système peuvent limiter ou rompre le fonctionnement et pourraient potentiellement laisser votre installation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans un état non pris en charge.  
   
-## <a name="related-content"></a>Contenu connexe  
+## <a name="related-content"></a>Contenu associé  
  [Prise en main des autorisations du moteur de base de données](../../relational-databases/security/authentication-access/getting-started-with-database-engine-permissions.md)  
   
  [Sécurisation de SQL Server](../../relational-databases/security/securing-sql-server.md)  

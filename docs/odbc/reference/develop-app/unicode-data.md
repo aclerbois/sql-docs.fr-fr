@@ -1,32 +1,29 @@
 ---
-title: "Les données Unicode | Documents Microsoft"
-ms.custom: 
+title: Les données Unicode | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode [ODBC], data
 - data types [ODBC], Unicode
 - C data types [ODBC], Unicode
 - SQL data types [ODBC], Unicode
 ms.assetid: abc28718-e6d9-49fb-97ff-402d50c3c375
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e3bb3278fe83922aee29aa8348d32b3fbc757511
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ee404891b20f721cec0ea9e56b9eab1e78ad6f8f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="unicode-data"></a>Données Unicode
 Types de données SQL Unicode sont fournies pour décrire les données qui se trouve au format Unicode en mode natif dans le SGBD. Un type de données C Unicode est fourni pour permettre à une application lier des données dans une mémoire tampon Unicode. Le Gestionnaire de pilotes peut convertir les données à partir d’un type Unicode C (SQL_C_WCHAR) afin de faciliter la fonction avec un pilote ANSI.  

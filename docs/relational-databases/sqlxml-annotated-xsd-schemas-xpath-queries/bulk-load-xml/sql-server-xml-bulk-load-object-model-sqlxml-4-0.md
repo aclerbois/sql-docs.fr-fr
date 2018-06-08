@@ -1,16 +1,14 @@
 ---
-title: "SQL Server en bloc charge modèle d’objet XML (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: SQL Server en bloc charge modèle d’objet XML (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - bulk load [SQLXML], object model
@@ -34,20 +32,20 @@ helpviewer_keywords:
 - Execute method
 - XML Bulk Load [SQLXML], object model
 ms.assetid: a9efbbde-ed2b-4929-acc1-261acaaed19d
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b954b9690d8e6f67995a45336296e2ff1f404f1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 43ca8f3b345f5db9c0d11217caef744e9172bd22
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-xml-bulk-load-object-model-sqlxml-40"></a>Modèle objet de chargement en masse XML de SQL Server (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Microsoft [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] modèle d’objet de chargement en masse XML se compose de l’objet SQLXMLBulkLoad. Cet objet prend en charge les méthodes et les propriétés suivantes.  
+  Microsoft [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] modèle d’objet de chargement en masse XML se compose de l’objet SQLXMLBulkLoad. Cet objet prend en charge les méthodes et les propriétés suivantes.  
   
 ## <a name="methods"></a>Méthodes  
  Execute  

@@ -1,31 +1,26 @@
 ---
-title: "MSSQLSERVER_5515 | Microsoft Docs"
-ms.custom: 
+title: MSSQLSERVER_5515 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 5515 (Database Engine error)
 ms.assetid: ccd793bc-ba5d-4782-8d72-731fd01fc177
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
 robots: noindex,nofollow
-ms.workload: Inactive
-ms.openlocfilehash: 78b87a2dea7dabd07f8a9c542c3e808511f7118b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c30a1ad69d9e65886fc8138a9a781f4844745731
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver5515"></a>MSSQLSERVER_5515
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

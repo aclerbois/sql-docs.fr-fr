@@ -1,33 +1,31 @@
 ---
-title: "Surveillance des groupes de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Surveillance des groupes de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/08/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], monitoring
 - Availability Groups [SQL Server], troubleshooting
 ms.assetid: 1d5e3291-0d0a-45a1-88e5-1fc242d17210
-caps.latest.revision: "27"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 27
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: bc061ce1dd4ea316daefa7a5dee7212c387d7820
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 39d3c9694ab25320bc2326f7464bf0948a3abc88
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771435"
 ---
 # <a name="monitoring-of-availability-groups-sql-server"></a>Surveillance des groupes de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour surveiller les propriétés et l’état d’un groupe de disponibilité Always On, vous pouvez utiliser les outils suivants.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pour surveiller les propriétés et l’état d’un groupe de disponibilité Always On, vous pouvez utiliser les outils suivants.  
   
 |Outil|Brève description|Liens|  
 |----------|-----------------------|-----------|  

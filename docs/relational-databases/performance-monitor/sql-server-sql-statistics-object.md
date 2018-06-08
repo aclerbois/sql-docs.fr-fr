@@ -1,34 +1,33 @@
 ---
 title: SQL Server, objet SQL Statistics | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:SQL Statistics
 - SQL Statistics object
 ms.assetid: da7dbb4b-f632-45a0-b1ab-c35cc2695c86
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ab8c2fa693b264707e89f4438d408f4c513e565
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 32a3d6216f05f8cb02d50a932a5c14f0fc91e442
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-sql-statistics-object"></a>Objet SQLServer:SQL Statistics
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet **SQLServer:SQL Statistics** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs pour surveiller la compilation et le type de demandes transmises à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La surveillance du nombre de compilations et de recompilations de requêtes, ainsi que le nombre de lots reçus par une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous donne une idée de la rapidité avec laquelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] traite les requêtes utilisateur et de l'efficacité avec laquelle l'optimiseur de requêtes traite les requêtes.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’objet **SQLServer:SQL Statistics** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs pour surveiller la compilation et le type de demandes transmises à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La surveillance du nombre de compilations et de recompilations de requêtes, ainsi que le nombre de lots reçus par une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous donne une idée de la rapidité avec laquelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] traite les requêtes utilisateur et de l'efficacité avec laquelle l'optimiseur de requêtes traite les requêtes.  
   
  La compilation constitue une partie significative du délai d'exécution d'une requête. Pour économiser le coût de compilation, [!INCLUDE[ssDE](../../includes/ssde-md.md)] enregistre le plan de requête compilée dans un cache des requêtes. L'objectif du cache est de réduire la durée de compilation en conservant les requêtes compilées en vue d'une utilisation ultérieure, éliminant ainsi la nécessité de recompiler des requêtes si elles sont exécutées ultérieurement. Toutefois, chaque requête doit être compilée au moins une fois. La recompilation des requêtes peut être due aux facteurs suivants :  
   

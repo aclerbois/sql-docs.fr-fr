@@ -1,16 +1,14 @@
 ---
 title: CREATE FULLTEXT CATALOG (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CATALOG_TSQL
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - full-text catalogs [SQL Server], creating
 - CREATE FULLTEXT CATALOG statement
 ms.assetid: d7a8bd93-e2d7-4a40-82ef-39069e65523b
-caps.latest.revision: 
+caps.latest.revision: 60
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 65872ec24d605e61bf284446c976c51b053e999c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c7fdb32323a7bab65f518ad82b39b432c41d11f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-fulltext-catalog-transact-sql"></a>CREATE FULLTEXT CATALOG (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -48,7 +45,7 @@ ms.lasthandoff: 11/21/2017
  Vous ne pouvez pas créer des catalogues de texte intégral dans les bases de données **Master**, **model** ou **tempdb**.  
   
 > [!IMPORTANT]  
->  Depuis [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], un catalogue de texte intégral est un objet virtuel qui n'appartient à aucun groupe de fichiers. Un catalogue de texte intégral est un concept logique qui fait référence à un groupe d'index de recherche en texte intégral.  
+>  À compter de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)], un catalogue de texte intégral est un objet virtuel qui n'appartient à aucun groupe de fichiers. Un catalogue de texte intégral est un concept logique qui fait référence à un groupe d'index de recherche en texte intégral.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -69,7 +66,7 @@ CREATE FULLTEXT CATALOG catalog_name
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *catalog_name*  
+ *CATALOG_NAME*  
  Nom du nouveau catalogue. Les catalogues doivent se différencier par des noms uniques dans la base de données active. De même, le nom du fichier correspondant au catalogue de texte intégral (voir ON FILEGROUP) doit être unique parmi tous les autres fichiers de la base de données. Si le nom du catalogue est déjà utilisé par un autre catalogue de la base de données, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] renvoie une erreur.  
   
  Le nom du catalogue ne doit pas dépasser 120 caractères.  

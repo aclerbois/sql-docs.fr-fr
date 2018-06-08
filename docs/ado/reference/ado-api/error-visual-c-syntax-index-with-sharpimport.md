@@ -1,33 +1,30 @@
 ---
 title: 'Erreur (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - 'Error collection [ADO], Visual C++ syntax index with #import'
 ms.assetid: 1ee59754-59c8-48e2-a4fb-242fa788c1f9
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1fa3d08ab56531070ca6c46ebd218ad67e243c0d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2e31a71a3a8d5a457c67159d6c1b96b4203b4559
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="error-visual-c-syntax-index-with-import"></a>Erreur (Index de la syntaxe Visual C++ avec #import)
 ## <a name="properties"></a>Propriétés  

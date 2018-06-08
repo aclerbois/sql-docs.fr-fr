@@ -1,31 +1,29 @@
 ---
-title: "Créer et gérer des abonnements pour des serveurs de rapports en mode SharePoint | Microsoft Docs"
-ms.custom: 
+title: Créer et gérer des abonnements pour des serveurs de rapports en mode SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - subscriptions [Reporting Services], creating
 - subscriptions [Reporting Services], deleting
 - subscriptions [Reporting Services], managing
 ms.assetid: 44be7ee2-33ce-46e4-9d1a-a20aaf43a227
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 31d672c16ed9cf4854be7b64507daaf381a6a175
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 67991ac7def0691b3d2df38ce54ea34766dbd574
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-manage-subscriptions-for-sharepoint-mode-report-servers"></a>Créer et gérer des abonnements pour des serveurs de rapports en mode SharePoint
   Vous pouvez créer des abonnements [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] pour remettre les rapports à partir d’une application web SharePoint qui est intégrée à un serveur de rapports en mode SharePoint. Les abonnements peuvent remettre des rapports dans une bibliothèque de documents, un dossier de fichiers ou sous forme de courrier électronique. Cette rubrique résume les conditions requises et les étapes de création d’un abonnement [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] .  
@@ -61,7 +59,7 @@ ms.lasthandoff: 01/09/2018
   
  Lorsque vous créez un abonnement, vous pouvez sélectionner un format de fichier de sortie. Tous les rapports ne fonctionnent pas de manière optimale dans tous les formats. Avant de sélectionner un format dans un abonnement, ouvrez le rapport et exportez-le vers différents formats afin de vous assurer qu'il s'affiche comme vous le souhaitez.  
   
- Les utilisateurs ont besoin de l'autorisation de liste **Modifier des éléments** dans SharePoint s'ils souhaitent pouvoir créer des abonnements [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Pour plus d'informations, consultez [SharePoint Site and List Permission Reference for Report Server Items](../../reporting-services/security/sharepoint-site-and-list-permission-reference-for-report-server-items.md)  
+ Les utilisateurs ont besoin de l'autorisation de liste **Modifier des éléments** dans SharePoint s'ils souhaitent pouvoir créer des abonnements [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Pour plus d'informations, consultez [Article de référence sur les autorisations de site SharePoint et de listes pour les éléments de serveur de rapports](../../reporting-services/security/sharepoint-site-and-list-permission-reference-for-report-server-items.md)  
   
 > [!IMPORTANT]  
 >  Un abonnement qui remet un rapport dans une bibliothèque ou dans un dossier partagé crée un nouveau fichier statique basé sur le rapport d'origine, mais ce n'est pas une véritable définition de rapport qui s'exécute dans le composant WebPart de visionneuse de rapports. Si le rapport d'origine dispose de fonctionnalités interactives (par exemple de liens d'extraction) ou d'un contenu dynamique, ces fonctionnalités ne sont pas disponibles dans le fichier statique remis à l'emplacement cible. Si vous sélectionnez une « page Web », vous pouvez préserver une certaine interactivité, mais comme le document n'est pas un fichier .rdl qui s'exécute dans la visionneuse de rapports, cliquer dans un rapport crée de nouvelles pages dans la session du navigateur que vous devez parcourir pour retourner au site.  

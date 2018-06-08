@@ -1,34 +1,33 @@
 ---
 title: Supprimer une solution | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - removing solutions
 - solutions [SQL Server Management Studio], deleting
 - deleting solutions
 ms.assetid: 750bb2ac-4f69-4c8d-9db5-3f33837b6dff
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 734a0e6e42282eed62416cc0d360b6d7bc53f6a7
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: f3db507fe5904127001ecec87ab0255c01298328
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-a-solution"></a>Supprimer une solution
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] La suppression d’une solution entraîne la suppression définitive des fichiers du stockage physique ainsi que des éléments de fichiers dans la solution.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+La suppression d'une solution entraîne la suppression définitive des fichiers du stockage physique ainsi que des éléments de fichiers dans la solution.  
   
 > [!NOTE]  
 > Contrairement aux projets et aux éléments, une solution ne peut faire l'objet que d'une suppression définitive et ne peut pas être supprimée temporairement.  

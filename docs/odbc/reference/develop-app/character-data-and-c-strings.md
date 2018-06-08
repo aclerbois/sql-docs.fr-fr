@@ -1,16 +1,14 @@
 ---
-title: "Caractères de données et chaînes C | Documents Microsoft"
-ms.custom: 
+title: Caractères de données et chaînes C | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data buffers [ODBC], length
 - data buffers [ODBC], character data
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - buffers [ODBC], length
 - C strings and buffers [ODBC]
 ms.assetid: 3a141cb4-229d-4027-9349-615cb2995e36
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9ea6f6c65e1250a999d019e7cf8b81510b227831
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c23f124aeba138e0ffecc432f28fde4c11c7d1b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="character-data-and-c-strings"></a>Données de caractères et chaînes C
 Les paramètres d’entrée qui font référence à des données de caractères de longueur variable (par exemple, les noms de colonnes, les paramètres dynamiques et valeurs d’attribut de chaîne) ont un paramètre de longueur. Si l’application termine par le caractère null, comme cela est courant en C, les chaînes, il fournit en tant qu’argument, la longueur en octets de la chaîne (ne pas y compris la marque de fin null) ou SQL_NTS (String Null-Terminated). Un argument de longueur non négative indique la longueur réelle de la chaîne associée. L’argument de longueur peut être 0 pour spécifier une chaîne de longueur nulle, ce qui est différent de celui à partir d’une valeur NULL. La valeur négative SQL_NTS dirige le pilote pour déterminer la longueur de la chaîne en recherchant le caractère de fin de la valeur null.  

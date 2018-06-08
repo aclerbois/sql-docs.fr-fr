@@ -1,31 +1,28 @@
 ---
-title: "Déterminer ce qui est pris en charge | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Déterminer ce qui est pris en charge | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - editing data [ADO], Supports method
 - Supports method [ADO]
 ms.assetid: 65090cba-6d46-4775-8d61-f6838e7752a6
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 31d9ca56af28416f68555511a3d4a8439d370200
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: dd86d96489e59926935567a0f8aa7cb23bf9f3ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determining-what-is-supported"></a>Déterminer ce qui est pris en charge
 Le **prend en charge** méthode est utilisée pour déterminer si un élément spécifié **Recordset** objet prend en charge un type particulier de fonctionnalité. Il présente la syntaxe suivante :  

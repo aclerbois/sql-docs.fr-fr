@@ -1,30 +1,27 @@
 ---
 title: SQLSetConnectOption (pilote Paradox) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLSetConnectOption function [ODBC], Paradox Driver
 - Paradox driver [ODBC], SQLSetConnectOption
 ms.assetid: 050ee2be-594e-4dbd-af67-8b6aae756cd1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b242e3745462b1322468306e66e1123ae43e4e35
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 8a4edef9b5c4f48a3abba39962978a9e38a008ff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetconnectoption-paradox-driver"></a>SQLSetConnectOption (pilote Paradox)
 > [!NOTE]  

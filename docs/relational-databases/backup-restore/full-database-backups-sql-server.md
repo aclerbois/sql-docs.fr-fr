@@ -1,17 +1,14 @@
 ---
-title: "Sauvegardes complètes de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Sauvegardes complètes de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full backups [SQL Server]
 - backups [SQL Server], database
@@ -22,19 +19,19 @@ helpviewer_keywords:
 - size [SQL Server], backups
 - database backups [SQL Server], about backing up databases
 ms.assetid: 4d933d19-8d21-4aa1-8153-d230cb3a3f99
-caps.latest.revision: 
+caps.latest.revision: 64
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3401d8b698fc703b881f7e3f1a2a503e94e2b0d7
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: bcae233530af66b250f50c86047d1bff1ea9ca48
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="full-database-backups-sql-server"></a>Sauvegardes complètes de bases de données (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une sauvegarde complète de base de données permet de sauvegarder l'intégralité d'une base de données. Ce type de sauvegarde comprend une partie du journal des transactions afin que toute la base de données puisse être récupérée après la restauration d'une sauvegarde complète de la base de données. Les sauvegardes complètes de base de données représentent la base de données à l'issue de l'opération de sauvegarde.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une sauvegarde complète de base de données permet de sauvegarder l'intégralité d'une base de données. Ce type de sauvegarde comprend une partie du journal des transactions afin que toute la base de données puisse être récupérée après la restauration d'une sauvegarde complète de la base de données. Les sauvegardes complètes de base de données représentent la base de données à l'issue de l'opération de sauvegarde.  
   
 > [!TIP]  
 >  À mesure que la taille d'une base de données augmente, les sauvegardes complètes de base de données nécessitent davantage de temps et d'espace de stockage. Par conséquent, pour les bases de données volumineuses, il est conseillé de compléter les sauvegardes complètes avec une série de *sauvegardes différentielles de base de données*. Pour plus d’informations, consultez [Sauvegardes différentielles &#40;SQL Server&#41;](../../relational-databases/backup-restore/differential-backups-sql-server.md).  

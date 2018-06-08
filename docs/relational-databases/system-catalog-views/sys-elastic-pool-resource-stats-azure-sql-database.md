@@ -1,16 +1,15 @@
 ---
-title: "Sys.elastic_pool_resource_stats (de base de données SQL Azure) | Documents Microsoft"
-ms.custom: 
-ms.date: 09/30/2016
-ms.prod: 
+title: Sys.elastic_pool_resource_stats (de base de données SQL Azure) | Documents Microsoft
+ms.custom: ''
+ms.date: 04/06/2018
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - Azure SQL Database
@@ -22,16 +21,16 @@ helpviewer_keywords:
 - elastic_pool_resource_stats_TSQL
 - elastic_pool_resource_stats
 ms.assetid: f242c1bd-3cc8-4c8b-8aaf-c79b6a8a0329
-caps.latest.revision: 
+caps.latest.revision: 18
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7af69bdd1f98560d3a6ae9699551b4f3062f68c6
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: a04b60738a48ddbe09db3eb8d7032d2f08b4ba9c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syselasticpoolresourcestats-azure-sql-database"></a>Sys.elastic_pool_resource_stats (de base de données SQL Azure)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]
@@ -47,12 +46,12 @@ ms.lasthandoff: 02/03/2018
 |**start_time**|**datetime2**|Heure UTC indiquant le début de l’intervalle de rapports de 15 secondes.|  
 |**end_time**|**datetime2**|Heure UTC indiquant la fin de l’intervalle de rapports de 15 secondes.|  
 |**elastic_pool_name**|**nvarchar(128)**|Nom du pool élastique de base de données.|  
-|**avg_cpu_percent**|**decimal(5,2)**|Utilisation de calcul moyenne en pourcentage de la limite du pool.|  
-|**avg_data_io_percent**|**decimal(5,2)**|Utilisation d’e/s moyenne en pourcentage de la limite du pool.|  
-|**avg_log_write_percent**|**decimal(5,2)**|L’utilisation des ressources d’écriture moyenne en pourcentage de la limite du pool.|  
-|**avg_storage_percent**|**decimal(5,2)**|Moyenne de l’utilisation du stockage en pourcentage de la limite de stockage du pool.|  
-|**max_worker_percent**|**decimal(5,2)**|Traitements simultanés maximales (demandes) en pourcentage de la limite du pool.|  
-|**max_session_percent**|**decimal(5,2)**|Nombre maximal de sessions simultané en pourcentage de la limite du pool.|  
+|**avg_cpu_percent**|**Decimal(5,2)**|Utilisation de calcul moyenne en pourcentage de la limite du pool.|  
+|**avg_data_io_percent**|**Decimal(5,2)**|Utilisation d’e/s moyenne en pourcentage de la limite du pool.|  
+|**avg_log_write_percent**|**Decimal(5,2)**|L’utilisation des ressources d’écriture moyenne en pourcentage de la limite du pool.|  
+|**avg_storage_percent**|**Decimal(5,2)**|Moyenne de l’utilisation du stockage en pourcentage de la limite de stockage du pool.|  
+|**max_worker_percent**|**Decimal(5,2)**|Traitements simultanés maximales (demandes) en pourcentage de la limite du pool.|  
+|**max_session_percent**|**Decimal(5,2)**|Nombre maximal de sessions simultané en pourcentage de la limite du pool.|  
 |**elastic_pool_dtu_limit**|**int**|Max pool élastique DTU paramètre actuel de ce pool élastique pendant cet intervalle.|  
 |**elastic_pool_storage_limit_mb**|**bigint**|Limite de stockage maximale du pool élastique actuelle définition pour ce pool élastique en mégaoctets pendant cet intervalle.|  
   
@@ -84,7 +83,7 @@ ORDER BY end_time DESC;
 ## <a name="see-also"></a>Voir aussi  
  [Réduire croissance des bases de données élastiques](https://azure.microsoft.com/documentation/articles/sql-database-elastic-pool/)   
  [Créer et gérer un pool élastique de base de données SQL (version préliminaire)](https://azure.microsoft.com/documentation/articles/sql-database-elastic-pool-portal/)   
- [sys.resource_stats &#40;Azure SQL Database&#41;](../../relational-databases/system-catalog-views/sys-resource-stats-azure-sql-database.md)   
- [sys.dm_db_resource_stats &#40;Azure SQL Database&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database.md)  
+ [Sys.resource_stats &#40;base de données SQL Azure&#41;](../../relational-databases/system-catalog-views/sys-resource-stats-azure-sql-database.md)   
+ [Sys.dm_db_resource_stats &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-resource-stats-azure-sql-database.md)  
   
   

@@ -1,33 +1,30 @@
 ---
 title: ParameterAttributesEnum | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - ParameterAttributesEnum
 helpviewer_keywords:
 - ParameterAttributesEnum enumeration [ADO]
 ms.assetid: 7ef6c728-5eda-4bde-8052-02d2db1d2cfe
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 628e359b698b94031df33ef85b27be7731480bde
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7d9e1da870fc405e3a7d59c554f01396ffaf2623
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameterattributesenum"></a>ParameterAttributesEnum
 Spécifie les attributs d’un [paramètre](../../../ado/reference/ado-api/parameter-object.md) objet.  

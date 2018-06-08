@@ -1,30 +1,27 @@
 ---
-title: "Prise en charge des Types de données (le pilote ODBC pour Oracle) | Documents Microsoft"
-ms.custom: 
+title: Prise en charge des Types de données (le pilote ODBC pour Oracle) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], data types
 ms.assetid: 21d5f8d9-a3aa-4aa4-bc37-ff8bc90c0870
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f27ad3bca1f6106c2645823b3e02bf67723dd2a1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4f6e80b887659679992091a32faf2763d71d9f6f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-data-types-odbc-driver-for-oracle"></a>Types de données pris en charge (pilote ODBC pour Oracle)
 > [!IMPORTANT]  

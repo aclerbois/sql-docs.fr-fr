@@ -1,16 +1,14 @@
 ---
-title: "Taille de la colonne, des chiffres décimaux, le transfert de la longueur en octets, taille d’affichage | Documents Microsoft"
-ms.custom: 
+title: Taille de la colonne, des chiffres décimaux, le transfert de la longueur en octets, taille d’affichage | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - display size of data types [ODBC]
 - data types [ODBC], column size
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - column size of data types [ODBC]
 - data types [ODBC], transfer octet length
 ms.assetid: 723107a1-be08-4ea3-a8c0-b2c45d38d1aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fa5322870c92ee8c48d9d4dc49fbc5a50b6b3e7e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f4a63c37dae0e8cbb06f00f5d043576028dd0508
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-size-decimal-digits-transfer-octet-length-and-display-size---odbc"></a>Taille de colonne, des chiffres décimaux, transférer la longueur en octets et afficher la taille - ODBC
 Types de données sont caractérisent par leur taille de colonne (ou paramètre), de chiffres décimaux, de longueur et affichent la taille. Les fonctions ODBC suivantes retournent ces attributs pour un paramètre dans une instruction SQL ou pour un type de données SQL sur une source de données. Chaque fonction ODBC retourne un ensemble différent de ces attributs, comme suit :  

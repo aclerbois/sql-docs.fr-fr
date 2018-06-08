@@ -1,37 +1,32 @@
 ---
-title: "Charger les données avec INSERT"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Vous pouvez utiliser l’instruction INSERT tsql pour charger des données dans un SQL Server Parallel Data Warehouse (PDW) distribuées ou table répliquée."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 6e951b0e-e95b-4fd1-b5f3-c65607aee0d8
-caps.latest.revision: "21"
-ms.openlocfilehash: 625b6938ebbb2d0b753cb1a35f5c1df7372c6cca
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Charger les données avec INSERT - Parallel Data Warehouse | Documents Microsoft
+description: Pour charger des données dans un Parallel Data Warehouse (PDW) à l’aide de l’instruction T-SQL INSERT distribuées ou table répliquée.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: b7a05e5381c2ad687c37926ad449cd6765403ceb
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585781"
 ---
-# <a name="load-data-with-insert"></a>Charger les données avec INSERT
+# <a name="load-data-with-insert-into-parallel-data-warehouse"></a>Charger des données avec INSERT dans Parallel Data Warehouse
 
-Vous pouvez utiliser l’instruction INSERT tsql pour charger des données dans un SQL Server Parallel Data Warehouse (PDW) distribuées ou table répliquée. Pour plus d’informations sur l’insertion, consultez [insérer](../t-sql/statements/insert-transact-sql.md). Pour les tables répliquées et toutes les colonnes non-distribution dans une table distribuée, PDW utilise SQL Server pour convertir implicitement les valeurs de données spécifiées dans l’instruction pour le type de données de la colonne de destination. Pour plus d’informations sur les règles de conversion de données SQL Server, consultez [de types de données pour SQL](http://msdn.microsoft.com/library/ms191530&#40;v=sql11&#40;.aspx). Toutefois, pour les colonnes de distribution, PDW prend en charge uniquement un sous-ensemble des conversions implicites qui prend en charge de SQL Server. Par conséquent, lorsque vous utilisez l’instruction INSERT pour charger des données dans une colonne de distribution, la source de données doit être spécifié dans un des formats définis dans les tableaux suivants.  
+Vous pouvez utiliser l’instruction INSERT tsql pour charger des données dans un SQL Server Parallel Data Warehouse (PDW) distribuées ou table répliquée. Pour plus d’informations sur l’insertion, consultez [insérer](../t-sql/statements/insert-transact-sql.md). Pour les tables répliquées et toutes les colonnes non-distribution dans une table distribuée, PDW utilise SQL Server pour convertir implicitement les valeurs de données spécifiées dans l’instruction pour le type de données de la colonne de destination. Pour plus d’informations sur les règles de conversion de données SQL Server, consultez [de types de données pour SQL](http://msdn.microsoft.com/library/ms191530\(v=sql11\).aspx). Toutefois, pour les colonnes de distribution, PDW prend en charge uniquement un sous-ensemble des conversions implicites qui prend en charge de SQL Server. Par conséquent, lorsque vous utilisez l’instruction INSERT pour charger des données dans une colonne de distribution, la source de données doit être spécifié dans un des formats définis dans les tableaux suivants.  
   
   
 ## <a name="InsertingLiteralsBinary"></a>Insérer des littéraux dans les types binaires  
-Le tableau suivant définit les types de littéral acceptés, format et les règles de conversion pour l’insertion d’une valeur littérale dans une colonne de distribution de type **binaire** (*n*) ou  **varbinary**(*n*).  
+Le tableau suivant définit les types de littéral acceptés, format et les règles de conversion pour l’insertion d’une valeur littérale dans une colonne de distribution de type **binaire** (*n*) ou **varbinary** (*n*).  
   
 |Type de littéral|Format|Règles de conversion|  
 |----------------|----------|--------------------|  
-|Littéral binaire|0 x*hexidecimal_string*<br /><br />Exemple : 0x12Ef|Les littéraux binaires doivent être précédés de 0 x.<br /><br />La longueur de source de données ne peut pas dépasser le nombre d’octets spécifié pour le type de données.<br /><br />Si la longueur de source de données est inférieure à la taille de la **binaire** de type de données, les données sont complétées à droite avec des zéros non significatifs pour atteindre la taille de type de données.|  
+|Littéral binaire|0x*hexidecimal_string*<br /><br />Exemple : 0x12Ef|Les littéraux binaires doivent être précédés de 0 x.<br /><br />La longueur de source de données ne peut pas dépasser le nombre d’octets spécifié pour le type de données.<br /><br />Si la longueur de source de données est inférieure à la taille de la **binaire** de type de données, les données sont complétées à droite avec des zéros non significatifs pour atteindre la taille de type de données.|  
   
 ## <a name="InsertingLiteralsDateTime"></a>Insérer des littéraux dans les types de date et d’heure  
 Les littéraux de date et d’heure sont représentées à l’aide des valeurs de caractère dans un format spécifique, placé entre guillemets simples. Les tableaux suivants décrivent les types de littéral autorisés, le format et les règles de conversion pour l’insertion d’une date ou un littéral d’heure dans une colonne de distribution SQL Server PDW de type **datetime**, **smalldatetime**, **date**, **temps**, **datetimeoffset**, ou **datetime2**.  
@@ -77,7 +72,7 @@ Le tableau suivant définit les formats acceptés et les règles pour insérer d
 |Littéral de chaîne dans **smalldatetime** format|'AAAA-MM-JJ HH'<br /><br />Exemple : « 2007-05-08 12:35 '|Secondes, les chiffres fractionnaires restants et les valeurs de décalage sont définies à 0 lorsque la valeur est insérée.|  
 |Littéral de chaîne dans **date** format|« AAAA-MM-JJ »<br /><br />Exemple : « 2007-05-08'|Valeurs d’heure (heures, minutes, secondes et fractions) sont définies à 0 lorsque la valeur est insérée. Par exemple, le littéral ' 2007-05-08' est inséré en tant que « 2007-05-08 00:00:00.0000000 + 00:00 ».|  
 |Littéral de chaîne dans **datetime2** format|'AAAA-MM-JJ.nnnnnnn'<br /><br />Exemple : « 2007-05-08 12:35:29.1234567'|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
-|Littéral de chaîne dans **datetimeoffset** format|' AAAA-MM-JJ.nnnnnnn {+ &#124; ;-} hh : mm '<br /><br />Exemple : « 2007-05-08 12:35:29.1234567 + 12:15 '|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
+|Littéral de chaîne dans **datetimeoffset** format|' AAAA-MM-JJ.nnnnnnn {+&#124;-} hh : mm '<br /><br />Exemple : « 2007-05-08 12:35:29.1234567 + 12:15 '|La source de données ne peut pas dépasser le nombre spécifié de fraction de seconde dans la colonne de datetimeoffset. Si la source de données possède un nombre plus petit ou égal de fraction de seconde, les données sont complétées à droite avec des zéros. Par exemple, si le type de données est datetimeoffset (5), la valeur littérale ' 2007-05-08 12:35:29.123 + 12:15 ' est inséré en tant que ' 12:35:29.12300 + 12:15 '.|  
   
 ### <a name="datetime2-data-type"></a>type de données DATETIME2  
 Le tableau suivant définit les formats acceptés et les règles pour insérer des valeurs littérales dans une colonne de distribution de type **datetime2** (*n*). Le format par défaut est 'AAAA-MM-JJ.nnnnnnn'. Une chaîne vide (") est convertie en la valeur par défaut ' 1900-01-01-12:00:00 ». Les chaînes qui contiennent uniquement des espaces à droite (' ') génère une erreur. Le nombre de chiffres fractionnaires dépend de la définition de colonne. Par exemple, une colonne définie en tant que **datetime2** (2) aura deux chiffres fractionnaires.  

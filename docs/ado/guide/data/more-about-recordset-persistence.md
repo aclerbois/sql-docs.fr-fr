@@ -1,33 +1,30 @@
 ---
-title: "Plus en détail la persistance des objets Recordset | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Plus en détail la persistance des objets Recordset | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - persisting data [ADO]
 - data updates [ADO], persisting data
 - data persistence [ADO]
 - updating data [ADO], persisting data
 ms.assetid: a9b287f5-04b0-4514-8143-f67879ca9842
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5dedcc3c1326c8b71844637c24f81835472ae9e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4a5c0d8bda0d3d881dfcb1dfd99706b28e5fb733
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="more-about-recordset-persistence"></a>En savoir plus sur la persistance des objets Recordset
 Prend en charge de l’objet ADO Recordset stocker le contenu d’un **Recordset** dans un fichier à l’aide de son [enregistrer](../../../ado/reference/ado-api/save-method.md) (méthode). Le fichier stocké de façon permanente se trouve sur un ordinateur local lecteur, serveur, ou en tant qu’URL sur un serveur Web de site. Une version ultérieure, le fichier peut être restauré avec l’option le [ouvrir](../../../ado/reference/ado-api/open-method-ado-recordset.md) méthode de la **Recordset** objet ou le [Execute](../../../ado/reference/ado-api/execute-method-ado-connection.md) méthode de la [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet.  
@@ -87,5 +84,5 @@ dc.Refresh
 ## <a name="see-also"></a>Voir aussi  
  [GetString, méthode (ADO)](../../../ado/reference/ado-api/getstring-method-ado.md)   
  [Fournisseur de persistance Microsoft OLE DB (fournisseur de services ADO)](../../../ado/guide/appendixes/microsoft-ole-db-persistence-provider-ado-service-provider.md)   
- [Recordset Object (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
+ [Objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
  [Flux et persistance](../../../ado/guide/data/streams-and-persistence.md)

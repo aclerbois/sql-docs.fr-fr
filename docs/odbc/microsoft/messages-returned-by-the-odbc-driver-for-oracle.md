@@ -1,30 +1,27 @@
 ---
-title: "Messages renvoyés par le pilote ODBC pour Oracle | Documents Microsoft"
-ms.custom: 
+title: Messages renvoyés par le pilote ODBC pour Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - error messages [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], error messages
 ms.assetid: 150bde1d-adb6-4e77-90e9-4dc93499a746
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ba9f7e11a2897b1ff1842f7597680f6645ff0fad
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0680f839b96bf3a792ce0c4ac16d10ffc9a64f00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="messages-returned-by-the-odbc-driver-for-oracle"></a>Messages renvoyés par le pilote ODBC pour Oracle
 > [!IMPORTANT]  

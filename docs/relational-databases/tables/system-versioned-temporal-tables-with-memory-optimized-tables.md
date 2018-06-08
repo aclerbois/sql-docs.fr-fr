@@ -1,28 +1,26 @@
 ---
-title: "Tables temporelles avec version gérée par le système avec des tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Tables temporelles avec version gérée par le système avec des tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 07/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 23274522-e5cf-4095-bed8-bf986d6342e0
-caps.latest.revision: 
+caps.latest.revision: 16
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 66cf48a0435cdb14681ab996d7707cc4e082c0d9
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b8f6870e0e7881f9ce31a7b9d120b4fb4906a926
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34563717"
 ---
 # <a name="system-versioned-temporal-tables-with-memory-optimized-tables"></a>Tables temporelles avec version gérée par le système avec tables optimisées en mémoire
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -45,7 +43,7 @@ ms.lasthandoff: 01/18/2018
   
 -   La table d’historique de la table à système par version optimisée en mémoire doit être sur disque, qu’elle soit créée par l’utilisateur final ou le système.  
   
--   Les requêtes qui affectent uniquement la table active (en mémoire) peuvent être utilisées dans des [modules T-SQL compilés en mode natif](https://msdnstage.redmond.corp.microsoft.com/en-us/library/dn133184.aspx). Les requêtes temporelles utilisant la clause FOR SYSTEM TIME ne sont pas prises en charge dans les modules compilés en mode natif. L’utilisation de la clause FOR SYSTEM TIME avec les tables optimisées en mémoire dans les requêtes ad hoc et les modules non natifs est prise en charge.  
+-   Les requêtes qui affectent uniquement la table active (en mémoire) peuvent être utilisées dans des [modules T-SQL compilés en mode natif](https://msdn.microsoft.com/en-us/library/dn133184.aspx). Les requêtes temporelles utilisant la clause FOR SYSTEM TIME ne sont pas prises en charge dans les modules compilés en mode natif. L’utilisation de la clause FOR SYSTEM TIME avec les tables optimisées en mémoire dans les requêtes ad hoc et les modules non natifs est prise en charge.  
   
 -   Quand **SYSTEM_VERSIONING = ON**, une table de mise en lots interne optimisée en mémoire est automatiquement créée pour accepter les dernières modifications apportées à la table à système par version qui résultent d’opérations de mise à jour et de suppression sur la table optimisée en mémoire actuelle.  
   
@@ -83,9 +81,6 @@ ms.lasthandoff: 01/18/2018
   
  Vous pouvez appliquer un vidage des données en appelant [sp_xtp_flush_temporal_history](../../relational-databases/system-stored-procedures/temporal-table-sp-xtp-flush-temporal-history.md) et en spécifiant le schéma et le nom de la table :   
 **sys.sp_xtp_flush_temporal_history  @schema_name, @object_name**. Cette commande exécutée par l’utilisateur fait appel au même processus de déplacement de données que lorsque la tâche de vidage de données est appelée par le système selon la planification interne.  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20System-Versioned%20Temporal%20Tables%20with%20Memory-Optimized%20Tables%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

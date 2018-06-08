@@ -1,35 +1,27 @@
 ---
-title: "Utiliser des flux de données (PowerPivot pour SharePoint) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 50140fdf-6fd1-41a1-9c14-8ecfb97ba2e1
-caps.latest.revision: 
-author: Minewiskan
+title: Utiliser des flux de données (PowerPivot pour SharePoint) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 264e09ecf72a638230a85ccf64c34ea66ccf86b3
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: ac7d32ccb99776a85d82c3bc310bc29cdd82954b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="use-data-feeds-power-pivot-for-sharepoint"></a>Utiliser des flux de données (Power Pivot pour SharePoint)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les flux de données comportent un ou plusieurs flux de données générés à partir d'une source de données en ligne et transmis en continu à un document ou une application de destination. Si vous utilisez [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour Excel, les flux de données peuvent vous aider à obtenir des données d’entreprise ou des données métiers existantes à partir de sources de données arbitraires pour les afficher dans la fenêtre [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] de votre classeur Excel 2010. Après avoir importé un flux dans un classeur, vous pouvez y faire référence ultérieurement dans toute opération d'actualisation des données que vous planifiez sur un serveur SharePoint.  
+  Les flux de données comportent un ou plusieurs flux de données générés à partir d'une source de données en ligne et transmis en continu à un document ou une application de destination. Si vous utilisez [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour Excel, les flux de données peuvent vous aider à obtenir des données d’entreprise ou des données métiers existantes à partir de sources de données arbitraires pour les afficher dans la fenêtre [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] de votre classeur Excel 2010. Après avoir importé un flux dans un classeur, vous pouvez y faire référence ultérieurement dans toute opération d'actualisation des données que vous planifiez sur un serveur SharePoint.  
   
  La façon dont vous utilisez un flux varie selon que vous utilisez les fonctionnalités d'exportation intégrées dans les applications qui prennent en charge les flux Atom ou que vous créez et utilisez des services de données personnalisés. Les applications capables de publier et de lire des données XML Atom fournissent un transfert de données transparent ; la mécanique des flux et services de données est invisible pour l'utilisateur. À ses yeux, un utilisateur ne fait que déplacer des données d'une application vers un autre.  
   
- [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] et Microsoft SharePoint 2010 fournissent des données de flux qui peuvent être utilisés dans [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] classeurs. Vous pouvez utiliser les informations de cette rubrique pour apprendre à accéder à des flux de rapports et listes que vous avez déjà.  
+ [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] et Microsoft SharePoint 2010 fournissent des flux de données qui peuvent être utilisés dans des classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Vous pouvez utiliser les informations de cette rubrique pour apprendre à accéder à des flux de rapports et listes que vous avez déjà.  
   
  Cette rubrique contient les sections suivantes :  
   

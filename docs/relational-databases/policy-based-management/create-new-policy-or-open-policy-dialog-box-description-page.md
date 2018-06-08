@@ -1,31 +1,30 @@
 ---
-title: "Boîte de dialogue Créer une nouvelle stratégie ou Ouvrir une stratégie, page Description | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Créer une nouvelle stratégie ou Ouvrir une stratégie, page Description | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8964399b-ece9-44cd-b7f6-c5f14c295cb2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc54ea269d627ce3935c307ef9f5c330c603e99d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: b49ddb5ee929e96aff6a457a05a421c88d1e0f12
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-new-policy-or-open-policy-dialog-box-description-page"></a>Boîte de dialogue Créer une nouvelle stratégie ou Ouvrir une stratégie, page Description
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez cette boîte de dialogue pour ajouter une description et des informations supplémentaires à une stratégie de la Gestion basée sur des stratégies.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez cette boîte de dialogue pour ajouter une description et des informations supplémentaires à une stratégie de la Gestion basée sur des stratégies.  
   
 ## <a name="options"></a>Options  
  **Catégorie**  

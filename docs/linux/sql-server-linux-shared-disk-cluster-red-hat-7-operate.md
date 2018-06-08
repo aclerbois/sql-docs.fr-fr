@@ -1,25 +1,22 @@
 ---
-title: "Fonctionner Red Hat Enterprise Linux partagé du cluster pour SQL Server | Documents Microsoft"
-description: "Implémenter la haute disponibilité en configurant des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server."
+title: Fonctionner Red Hat Enterprise Linux partagé du cluster pour SQL Server | Documents Microsoft
+description: Implémenter la haute disponibilité en configurant des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 075ab7d8-8b68-43f3-9303-bbdf00b54db1
-ms.workload: Inactive
-ms.openlocfilehash: 36834e634f26e7918b6577379c24b9914d41f308
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 71fef5396f5be6fa615de190a9374c646f467e7e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="operate-red-hat-enterprise-linux-shared-disk-cluster-for-sql-server"></a>Fonctionnement des clusters de disques partagés Red Hat Enterprise Linux pour SQL Server
 
@@ -138,7 +135,7 @@ Afficher les journaux de l’agent de ressources dans `/var/log/cluster/corosync
    sudo chmod 600 /var/opt/mssql/passwd
    ```
 
-3. Sur le nouveau nœud, ouvrez les ports du pare-feu STIMULATEUR. Pour ouvrir ces ports avec `firewalld`, exécutez la commande suivante :
+3. Sur le nouveau nœud, ouvrez les ports du pare-feu STIMULATEUR. Pour ouvrir ces ports avec `firewalld`, exécutez la commande suivante :
 
    ```bash
    sudo firewall-cmd --permanent --add-service=high-availability
@@ -261,7 +258,7 @@ Dans l’exemple, `partition with quorum` signifie qu’un quorum de la majorit�
 
 Vérifiez les éléments suivants lorsqu’un nœud est hors connexion.
 
-- **Firewall**
+- **Pare-feu**
 
     Les ports suivants doivent être ouverts sur tous les nœuds pour STIMULATEUR être en mesure de communiquer.
     

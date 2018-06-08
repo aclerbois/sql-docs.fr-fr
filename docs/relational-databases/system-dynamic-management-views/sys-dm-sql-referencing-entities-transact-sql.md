@@ -1,16 +1,13 @@
 ---
-title: sys.dm_sql_referencing_entities (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_sql_referencing_entities (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_sql_referencing_entities
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_sql_referencing_entities dynamic management function
 ms.assetid: c16f8f0a-483f-4feb-842e-da90426045ae
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 35e2f1be36365c2b1f5c8801a9e0d7749c70de7d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: adf5f058b8eb39f4eecfd13d922ba723664a73a0
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmsqlreferencingentities-transact-sql"></a>sys.dm_sql_referencing_entities (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -66,14 +63,14 @@ sys.dm_sql_referencing_entities (
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *schema_name.referenced*_*entity_name*  
+ *schema_name.Referenced*_*nom_entité*  
  Est le nom de l’entité référencée.  
   
  *schema_name* est obligatoire sauf lorsque la classe référencée est PARTITION_FUNCTION.  
   
  *schema_name.referenced_entity_name* est **nvarchar (517)**.  
   
- *<referenced_class>* ::= { OBJECT  | TYPE | XML_SCHEMA_COLLECTION | PARTITION_FUNCTION }  
+ *< Referenced_class >* :: = {objet | TYPE | XML_SCHEMA_COLLECTION | PARTITION_FUNCTION}  
  Classe de l'entité référencée. Une seule classe peut être spécifiée par instruction.  
   
  *< referenced_class >* est **nvarchar**(60).  
@@ -109,14 +106,14 @@ sys.dm_sql_referencing_entities (
 |-----------------|------------------------|-----------------------|  
 |Table|Oui*|Oui|  
 |Affichage|Oui|Oui|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] procédure stockée **|Oui|Oui|  
+|Procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)]**|Oui|Oui|  
 |Procédure stockée CLR|non|Oui|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] fonction définie par l'utilisateur|Oui|Oui|  
+|Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur|Oui|Oui|  
 |Fonction CLR définie par l'utilisateur|non|Oui|  
 |Déclencheur CLR (DML et DDL)|non|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DML|Oui|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DDL au niveau de la base de données|Oui|non|  
-|[!INCLUDE[tsql](../../includes/tsql-md.md)] déclencheur DDL au niveau du serveur|Oui|non|  
+|Déclencheur DML [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau de la base de données [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
+|Déclencheur DDL au niveau du serveur [!INCLUDE[tsql](../../includes/tsql-md.md)]|Oui|non|  
 |Procédures stockées étendues|non|Oui|  
 |File d'attente|non|Oui|  
 |Synonyme|non|Oui|  
@@ -124,7 +121,7 @@ sys.dm_sql_referencing_entities (
 |Collection de schémas XML|non|Oui|  
 |Fonction de partition|non|Oui|  
   
- \*Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
+ \* Une table est suivie comme entité de référence uniquement lorsqu’il fait référence à un [!INCLUDE[tsql](../../includes/tsql-md.md)] module, type défini par l’utilisateur ou collection de schémas XML dans la définition d’une colonne calculée, une contrainte CHECK ou une contrainte par défaut.  
   
  ** Les procédures stockées numérotées avec une valeur entière supérieure à 1 ne sont pas suivies en tant qu'entité de référence ou référencée.  
   

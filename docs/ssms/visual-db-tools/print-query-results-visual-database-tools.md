@@ -1,35 +1,34 @@
 ---
-title: "Imprimer les résultats d’une requête (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Imprimer les résultats d’une requête (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - result sets [SQL Server], queries
 - results [SQL Server], query
 - queries [SQL Server], results
 - printing query results
 ms.assetid: 025497d1-54a0-402c-81d8-b8b597a0de11
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 60759d9fb81b6602665325dc8f5c9f5fba702d99
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 862012b8260a98dfd9ea79e6e0b2ab7946f2a513
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="print-query-results-visual-database-tools"></a>Imprimer les résultats d'une requête (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour imprimer les résultats de votre requête, vous pouvez copier le contenu du [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md) dans un autre programme Windows, un traitement de texte par exemple, puis le mettre en forme et l’imprimer.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Pour imprimer les résultats de votre requête, vous pouvez copier le contenu du [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md) dans un autre programme Windows, un traitement de texte par exemple, puis le mettre en forme et l’imprimer.  
   
 Le Concepteur de requêtes et de vues met les résultats de la requête dans le Presse-papiers, où il sépare les colonnes par des tabulations et les lignes par un retour chariot/nouvelle ligne.  
   

@@ -1,38 +1,35 @@
 ---
 title: Liaison selon les colonnes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - column-wise binding [ODBC]
 - result sets [ODBC], binding columns
 - binding columns [ODBC]
 ms.assetid: 86d37637-3a25-455d-9c82-a0d7bff8d70d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7fe322c1184c4b46eb2354a58177f5cb00aa6f10
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 77b82a8ab37f4da51801f860638b5c03e6c499aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-wise-binding"></a>Liaison selon les colonnes
 Lorsque vous utilisez la liaison, une application lie une ou deux, dans certains cas trois, tableaux ou à chaque colonne pour laquelle les données sont à retourner. Le premier tableau conserve les valeurs de données, et le deuxième tableau conserve les mémoires tampons de longueur / d’indicateur. Indicateurs et des valeurs de longueur peuvent être stockés dans les mémoires tampon distincte en définissant les champs de descripteur SQL_DESC_INDICATOR_PTR et SQL_DESC_OCTET_LENGTH_PTR à des valeurs différentes ; Si cette opération est effectuée, un troisième tableau est lié. Chaque tableau contient autant d’éléments qu’il existe des lignes dans l’ensemble de lignes.  
   
  L’application déclare qu’il utilise la liaison avec l’attribut d’instruction SQL_ATTR_ROW_BIND_TYPE, qui détermine le type de liaison pour les mémoires tampons d’ensemble de lignes au lieu du paramètre défini des mémoires tampons. Le pilote retourne les données pour chaque ligne dans les éléments consécutifs de chaque tableau. L’illustration suivante montre le fonctionnement selon les colonnes de la liaison.  
   
- ![Colonne &#45; liaison judicieux de trois colonnes](../../../odbc/reference/develop-app/media/pr21.gif "pr21")  
+ ![Colonne&#45;liaison judicieux de trois colonnes](../../../odbc/reference/develop-app/media/pr21.gif "pr21")  
   
  Par exemple, le code suivant lie des tableaux d’éléments de 10 pour les colonnes OrderID, vendeur et l’état :  
   

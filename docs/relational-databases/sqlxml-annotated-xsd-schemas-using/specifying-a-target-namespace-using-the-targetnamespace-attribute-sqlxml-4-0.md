@@ -1,16 +1,14 @@
 ---
-title: "Spécification d’une cible Namespace à l’aide de l’attribut (SQLXML 4.0) targetNamespace | Documents Microsoft"
-ms.custom: 
+title: Spécification d’une cible Namespace à l’aide de l’attribut (SQLXML 4.0) targetNamespace | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - namespaces [SQLXML], annotated XSD schemas
@@ -22,20 +20,20 @@ helpviewer_keywords:
 - elementFormDefault attribute
 - target namespaces [SQLXML]
 ms.assetid: f3df9877-6672-4444-8245-2670063c9310
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9b0b325cea845e82519752b04591c2c7724b1acf
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 0c755e668f5d7360d9d37f352d1cc32295b3cf5c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specifying-a-target-namespace-using-the-targetnamespace-attribute-sqlxml-40"></a>Spécification d'un espace de noms cible à l'aide de l'attribut targetNamespace (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Dans l’écriture de schémas XSD, vous pouvez utiliser le schéma XSD **targetNamespace** attribut pour spécifier un espace de noms cible. Cette rubrique décrit comment le schéma XSD **targetNamespace**, **elementFormDefault**, et **attributeFormDefault** travail, comment ils affectent l’instance XML qui est généré et comment les requêtes XPath sont spécifiées avec les espaces de noms d’attributs.  
+  Dans l’écriture de schémas XSD, vous pouvez utiliser le schéma XSD **targetNamespace** attribut pour spécifier un espace de noms cible. Cette rubrique décrit comment le schéma XSD **targetNamespace**, **elementFormDefault**, et **attributeFormDefault** travail, comment ils affectent l’instance XML qui est généré et comment les requêtes XPath sont spécifiées avec les espaces de noms d’attributs.  
   
  Vous pouvez utiliser la **xsd : targetNamespace** attribut pour placer des éléments et attributs de l’espace de noms par défaut dans un autre espace de noms. Vous pouvez également spécifier si les éléments et attributs du schéma déclarés localement doivent apparaître qualifiés par un espace de noms, soit explicitement en utilisant un préfixe, soit implicitement par défaut. Vous pouvez utiliser la **elementFormDefault** et **attributeFormDefault** attributs sur le  **\<xsd : Schema >** élément pour spécifier globalement la qualification des éléments locaux et des attributs ou vous pouvez utiliser la **formulaire** attribut pour spécifier les différents éléments et attributs séparément.  
   

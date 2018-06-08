@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsResultSetHoldability (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsResultSetHoldability (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsResultSetHoldability
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsResultSetHoldability
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: ab575792-fd11-4ff3-8847-1368e7a322c5
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2648c901e1ee3e7365b81d71056b0a87663c5ddc
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 6ce9aa5a562b4ec2b3641ac63b62c251842df443
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsresultsetholdability-method-sqlserverdatabasemetadata"></a>Méthode supportsResultSetHoldability (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

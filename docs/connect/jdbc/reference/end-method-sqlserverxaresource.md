@@ -1,30 +1,29 @@
 ---
-title: "Méthode End (SQLServerXAResource) | Documents Microsoft"
-ms.custom: 
+title: Méthode End (SQLServerXAResource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerXAResource.end
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerXAResource.end
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: e6418b27-793b-4b36-8dfb-756aec7bcbba
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2228ac4825056e4c9733b479f4daf02ec484df10
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 2a6896afefcfc25e349338b333626a0d0f8bac16
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="end-method-sqlserverxaresource"></a>Méthode end (SQLServerXAResource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -44,7 +43,7 @@ public void end(javax.transaction.xa.Xid xid,
   
  Un objet Xid.  
   
- *indicateurs*  
+ *flags*  
   
  Un **int** valeur.  
   

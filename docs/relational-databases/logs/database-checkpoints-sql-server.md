@@ -1,17 +1,14 @@
 ---
-title: "Points de contrôle de base de données (SQL Server) | Microsoft Docs"
+title: Points de contrôle de base de données (SQL Server) | Microsoft Docs
 ms.date: 09/23/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: logs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.custom: ''
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - automatic checkpoints
 - transaction logs [SQL Server], checkpoints
@@ -29,16 +26,16 @@ helpviewer_keywords:
 - flushing pages
 - active logs
 ms.assetid: 98a80238-7409-4708-8a7d-5defd9957185
-caps.latest.revision: 
+caps.latest.revision: 74
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7c82c775f808b1747261f3ce33d46ca467d8bca1
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dd0160149410a5de96158f1137972fcafdbeba8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-checkpoints-sql-server"></a>Points de contrôle de base de données (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -52,22 +49,21 @@ Pour des raisons de performances, le [!INCLUDE[ssDE](../../includes/ssde-md.md)]
   
 |Nom   |[!INCLUDE[tsql](../../includes/tsql-md.md)] .|Description|  
 |----------|----------------------------------|-----------------|  
-|Automatic|EXEC sp_configure **'**recovery interval**','***seconds***'**|Émis automatiquement en arrière-plan pour respecter la limite de durée supérieure suggérée par l'option de configuration de serveur **recovery interval** . Les points de contrôle automatiques s'exécutent jusqu'à la fin.  Les points de contrôle automatiques sont accélérés en fonction du nombre d’écritures en attente et si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] détecte une augmentation de latence d’écriture supérieure à 50 millisecondes.<br /><br /> Pour plus d'informations, consultez [Configure the recovery interval Server Configuration Option](../../database-engine/configure-windows/configure-the-recovery-interval-server-configuration-option.md).|  
+|Automatic|EXEC sp_configure **'** recovery interval **','***seconds***'**|Émis automatiquement en arrière-plan pour respecter la limite de durée supérieure suggérée par l'option de configuration de serveur **recovery interval** . Les points de contrôle automatiques s'exécutent jusqu'à la fin.  Les points de contrôle automatiques sont accélérés en fonction du nombre d’écritures en attente et si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] détecte une augmentation de latence d’écriture supérieure à 50 millisecondes.<br /><br /> Pour plus d'informations, consultez [Configure the recovery interval Server Configuration Option](../../database-engine/configure-windows/configure-the-recovery-interval-server-configuration-option.md).|  
 |Indirect|ALTER DATABASE … SET TARGET_RECOVERY_TIME **=***target_recovery_time* { SECONDS &#124; MINUTES }|Émis en arrière-plan pour obtenir un temps de récupération cible spécifié par l'utilisateur pour une base de données. À partir de [!INCLUDE[ssSQL15_md](../../includes/sssql15-md.md)], la valeur par défaut est de 1 minute. La valeur par défaut est 0 pour les anciennes versions, ce qui indique que la base de données utilisera les points de contrôle automatiques, dont la fréquence dépend du paramètre d’intervalle de récupération de l’instance de serveur.<br /><br /> Pour plus d'informations, consultez [Modifier la durée de récupération cible d’une base de données &#40;SQL Server&#41;](../../relational-databases/logs/change-the-target-recovery-time-of-a-database-sql-server.md).|  
 |Manuel|CHECKPOINT [ *checkpoint_duration* ]|Émis lorsque vous exécutez une commande CHECKPOINT [!INCLUDE[tsql](../../includes/tsql-md.md)] . Le point de contrôle manuel intervient dans la base de données active pour votre connexion. Par défaut, les points de contrôle manuels s'exécutent jusqu'à la fin. L'accélération fonctionne de la même manière que pour les points de contrôle automatiques.  Le paramètre *checkpoint_duration* peut aussi spécifier la durée demandée (en secondes) de l’exécution du point de contrôle.<br /><br /> Pour plus d'informations, consultez [CHECKPOINT &#40;Transact-SQL&#41;](../../t-sql/language-elements/checkpoint-transact-sql.md).|  
 |Interne|Aucun.|Émis par différentes opérations de serveur, telles que la création de sauvegarde et d'instantané de base de données pour garantir que les images de disque correspondent à l'état actuel du journal.|  
   
->[!NOTE]
+> [!NOTE]
 > L’option d’installation avancée **-k** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permet à un administrateur de base de données de limiter le comportement d’E/S de point de contrôle en fonction du débit du sous-système d’E/S pour certains types de points de contrôle. L’option d’installation **-k** s’applique aux points de contrôle automatiques, ainsi qu’à tous les points de contrôle manuels et internes non accélérés.  
   
  Pour les points de contrôle automatiques, manuels et internes, seules les modifications apportées après le dernier point de contrôle doivent être restaurées par progression lors de la récupération de la base de données. Cela réduit le temps nécessaire pour récupérer une base de données.  
   
->[!IMPORTANT]
-> Les transactions non validées longues augmentent le temps de récupération pour tous les types de points de contrôle.  
-  
+> [!IMPORTANT]
+> Les transactions non validées longues augmentent le temps de récupération pour tous les types de points de contrôle.   
   
 ##  <a name="InteractionBwnSettings"></a> Interaction des options TARGET_RECOVERY_TIME et « recovery interval »  
- Le tableau suivant résume l’interaction entre le paramètre **sp_configure’**recovery interval**’** à l’échelle du serveur et le paramètre ALTER DATABASE… TARGET_RECOVERY_TIME spécifique à la base de données.  
+ Le tableau suivant résume l’interaction entre le paramètre **sp_configure’** recovery interval **’** à l’échelle du serveur et le paramètre ALTER DATABASE… TARGET_RECOVERY_TIME spécifique à la base de données.  
   
 |target_recovery_time|'recovery interval'|Type de point de contrôle utilisé|  
 |----------------------------|-------------------------|-----------------------------|  
@@ -76,33 +72,31 @@ Pour des raisons de performances, le [!INCLUDE[ssDE](../../includes/ssde-md.md)]
 |>0|Non applicable.|Points de contrôle indirects dont le temps de récupération cible est déterminé par le paramètre TARGET_RECOVERY_TIME, exprimé en secondes.|  
   
 ##  <a name="AutomaticChkpt"></a> Points de contrôle automatiques  
- Un point de contrôle automatique se produit chaque fois que le nombre d’enregistrements de journal atteint le nombre que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] estime pouvoir traiter pendant la durée spécifiée dans l’option de configuration de serveur **recovery interval** . 
+Un point de contrôle automatique se produit chaque fois que le nombre d’enregistrements de journal atteint le nombre que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] estime pouvoir traiter pendant la durée spécifiée dans l’option de configuration de serveur **recovery interval** . 
  
- Dans chaque base de données sans temps de récupération cible défini par l'utilisateur, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] génère des points de contrôle automatiques. La fréquence dépend de l’option de configuration de serveur avancée **recovery interval** , qui spécifie la durée maximale qu’une instance de serveur donnée doit utiliser pour récupérer une base de données lors d’un redémarrage du système. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] estime le nombre maximal d'enregistrements de journal qu'il peut traiter dans l'intervalle de récupération. Lorsqu’une base de données qui utilise les points de contrôle automatiques atteint ce nombre maximal d’enregistrements du journal, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] émet un point de contrôle sur la base de données. 
+Dans chaque base de données sans temps de récupération cible défini par l'utilisateur, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] génère des points de contrôle automatiques. La fréquence dépend de l’option de configuration de serveur avancée **recovery interval** , qui spécifie la durée maximale qu’une instance de serveur donnée doit utiliser pour récupérer une base de données lors d’un redémarrage du système. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] estime le nombre maximal d'enregistrements de journal qu'il peut traiter dans l'intervalle de récupération. Lorsqu’une base de données qui utilise les points de contrôle automatiques atteint ce nombre maximal d’enregistrements du journal, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] émet un point de contrôle sur la base de données. 
  
- L’intervalle de temps entre les points de contrôle automatiques peut varier **fortement** . Une base de données avec une charge de travail transactionnelle substantielle aura des points de contrôle plus fréquents qu’une base de données utilisée principalement pour des opérations en lecture seule. En mode de récupération simple, un point de contrôle automatique est également mis en file d’attente si le journal est rempli à 70 %.  
+L’intervalle de temps entre les points de contrôle automatiques peut varier **fortement** . Une base de données avec une charge de travail transactionnelle substantielle aura des points de contrôle plus fréquents qu’une base de données utilisée principalement pour des opérations en lecture seule. En mode de récupération simple, un point de contrôle automatique est également mis en file d’attente si le journal est rempli à 70 %.  
   
 En mode de récupération simple, à moins qu'un facteur retarde la troncation du journal, un point de contrôle automatique tronque la section inutilisée du journal des transactions. À l’inverse, en mode de récupération utilisant les journaux de transactions, une fois qu’une chaîne de sauvegarde du journal a été établie, les points de contrôle automatiques ne provoquent pas la troncation du journal. Pour plus d'informations, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
   
- Après une panne système, le temps nécessaire pour récupérer une base de données dépend principalement de la quantité d’E/S aléatoire nécessaire aux pages de restauration par progression qui ont été modifiées au moment de l’incident. Cela signifie que le paramètre **recovery interval** n'est pas fiable. Il ne peut pas déterminer une durée précise de récupération. De plus, lorsqu'un point de contrôle automatique est en cours, l'activité d'E/S générale des données augmente considérablement et de manière imprévisible.  
-  
- 
+Après une panne système, le temps nécessaire pour récupérer une base de données dépend principalement de la quantité d’E/S aléatoire nécessaire aux pages de restauration par progression qui ont été modifiées au moment de l’incident. Cela signifie que le paramètre **recovery interval** n'est pas fiable. Il ne peut pas déterminer une durée précise de récupération. De plus, lorsqu'un point de contrôle automatique est en cours, l'activité d'E/S générale des données augmente considérablement et de manière imprévisible.  
+   
 ###  <a name="PerformanceImpact"></a> Impact de l’intervalle de récupération sur les performances de récupération  
- Pour un système de traitement transactionnel en ligne (OLTP, online transaction processing), qui utilise de petites transactions, le paramètre **recovery interval** est le principal facteur déterminant le temps de récupération. Toutefois, l’option **recovery interval** n’affecte pas le temps nécessaire pour annuler une transaction longue. La récupération d’une base de données avec une transaction longue peut prendre beaucoup plus de temps que la valeur spécifiée dans l’option **recovery interval** . 
+Pour un système de traitement transactionnel en ligne (OLTP, online transaction processing), qui utilise de petites transactions, le paramètre **recovery interval** est le principal facteur déterminant le temps de récupération. Toutefois, l’option **recovery interval** n’affecte pas le temps nécessaire pour annuler une transaction longue. La récupération d’une base de données avec une transaction longue peut prendre beaucoup plus de temps que la valeur spécifiée dans l’option **recovery interval** . 
  
- Par exemple, si une transaction d’exécution longue a mis deux heures pour effectuer des mises à jour avant la défaillance de l’instance de serveur, la récupération elle-même prendra beaucoup plus de temps pour restaurer la transaction longue que la valeur spécifiée pour l’option **recovery interval** . Pour plus d’informations sur l’impact d’une transaction longue sur la durée de récupération, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
+Par exemple, si une transaction d’exécution longue a mis deux heures pour effectuer des mises à jour avant la défaillance de l’instance de serveur, la récupération elle-même prendra beaucoup plus de temps pour restaurer la transaction longue que la valeur spécifiée pour l’option **recovery interval** . Pour plus d’informations sur l’impact d’une transaction longue sur la durée de récupération, consultez [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md).  
   
- En général, les valeurs par défaut fournissent les performances de récupération optimales. Toutefois, modifier l'intervalle de récupération peut améliorer les performances dans les circonstances suivantes :  
+En général, les valeurs par défaut fournissent les performances de récupération optimales. Toutefois, modifier l'intervalle de récupération peut améliorer les performances dans les circonstances suivantes :  
   
 -   Si la récupération prend régulièrement beaucoup plus d'une minute lorsque les transactions longues ne sont pas restaurées.  
   
 -   Si vous remarquez que les points de contrôle fréquents altèrent les performances sur une base de données.  
   
- Si vous décidez d'augmenter le paramètre **recovery interval** , nous vous recommandons de l'augmenter progressivement par de petits incréments et d'évaluer l'effet de chaque augmentation incrémentielle sur les performances de récupération. Cette approche est importante, car à mesure que le paramètre **recovery interval** augmente, la récupération de la base de données prend plus de longtemps. Par exemple, si vous indiquez un **recovery interval** de 10 minutes, la récupération prend environ 10 fois plus de temps que si le paramètre **recovery interval** est défini sur 1 minute.  
-  
+Si vous décidez d'augmenter le paramètre **recovery interval** , nous vous recommandons de l'augmenter progressivement par de petits incréments et d'évaluer l'effet de chaque augmentation incrémentielle sur les performances de récupération. Cette approche est importante, car à mesure que le paramètre **recovery interval** augmente, la récupération de la base de données prend plus de longtemps. Par exemple, si vous indiquez un **recovery interval** de 10 minutes, la récupération prend environ 10 fois plus de temps que si le paramètre **recovery interval** est défini sur 1 minute.  
   
 ##  <a name="IndirectChkpt"></a> Points de contrôle indirects  
- Les points de contrôle indirects, nouveauté de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], sont une alternative de base de données configurable aux points de contrôle automatiques. En cas de panne système, les points de contrôle indirects fournissent un temps de récupération plus prédictible et plus rapide que les points de contrôle automatiques. Les points de contrôle indirects offrent les avantages suivants :  
+Les points de contrôle indirects, nouveauté de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], sont une alternative de base de données configurable aux points de contrôle automatiques. En cas de panne système, les points de contrôle indirects fournissent un temps de récupération plus prédictible et plus rapide que les points de contrôle automatiques. Les points de contrôle indirects offrent les avantages suivants :  
   
 -   Une charge de travail transactionnelle en ligne sur une base de données configurée pour les points de contrôle indirects peut rencontrer une dégradation des performances. Les points de contrôle indirects permettent de s’assurer que le nombre de pages de modifications est inférieur à un certain seuil afin que la récupération de la base de données se termine dans le temps de récupération cible. 
 
@@ -112,14 +106,14 @@ L’option de configuration de l’intervalle de récupération utilise le nombr
   
 -   Les points de contrôle indirects réduisent les pics d'E/S associées au point de contrôle en entrant en continu des pages de modifications sur le disque en arrière-plan.  
   
- Une charge de travail transactionnelle en ligne sur une base de données configurée pour les points de contrôle indirects peut rencontrer une dégradation des performances. Cela est dû au fait que l'enregistreur en arrière-plan utilisé par le point de contrôle indirect augmente parfois la charge d'écriture totale pour une instance de serveur.  
+Une charge de travail transactionnelle en ligne sur une base de données configurée pour les points de contrôle indirects peut rencontrer une dégradation des performances. Cela est dû au fait que l'enregistreur en arrière-plan utilisé par le point de contrôle indirect augmente parfois la charge d'écriture totale pour une instance de serveur.  
  
- > [!IMPORTANT]
- > Le point de contrôle indirect est le comportement par défaut pour les nouvelles bases de données créées dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]. Les bases de données qui ont été mises à niveau sur place ou restaurées à partir d’une version précédente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utiliseront le comportement de point de contrôle automatique précédent, sauf s’ils sont modifiés explicitement pour utiliser le point de contrôle indirect.
-  
+> [!IMPORTANT]
+> Le point de contrôle indirect est le comportement par défaut pour les nouvelles bases de données créées dans [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)], notamment les bases de données Model et TempDB.          
+> Les bases de données qui ont été mises à niveau sur place ou restaurées à partir d’une version précédente de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utiliseront le comportement de point de contrôle automatique précédent, sauf si elles sont modifiées explicitement pour utiliser le point de contrôle indirect.       
   
 ##  <a name="EventsCausingChkpt"></a> Points de contrôle internes  
- Les points de contrôle internes sont générés par les divers composants serveur pour garantir que les images de disque correspondent à l'état actuel du journal. Les points de contrôle internes sont générés en réponse aux événements suivants :  
+Les points de contrôle internes sont générés par les divers composants serveur pour garantir que les images de disque correspondent à l'état actuel du journal. Les points de contrôle internes sont générés en réponse aux événements suivants :  
   
 -   Des fichiers de base de données ont été ajoutés ou supprimés à l'aide de l'instruction ALTER DATABASE.  
   
@@ -131,8 +125,7 @@ L’option de configuration de l’intervalle de récupération utilise le nombr
   
 -   Une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est arrêtée par l’arrêt du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (MSSQLSERVER). Ces opérations provoquent la création d'un point de contrôle dans chaque base de données dans l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
--   La mise hors connexion d'une instance de cluster de basculement (FCI) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
-  
+-   La mise hors connexion d'une instance de cluster de basculement (FCI) [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .      
   
 ##  <a name="RelatedTasks"></a> Tâches associées  
  **Pour modifier l'intervalle de récupération sur une instance de serveur**  
@@ -149,7 +142,7 @@ L’option de configuration de l’intervalle de récupération utilise le nombr
 
   
 ## <a name="see-also"></a>Voir aussi  
- - [Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md) 
- -   [Architecture physique du journal des transactions](http://technet.microsoft.com/library/ms179355.aspx) (dans la documentation en ligne [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] , mais toutefois applicable)  
+[Journal des transactions &#40;SQL Server&#41;](../../relational-databases/logs/the-transaction-log-sql-server.md)            
+[Architecture physique du journal des transactions](http://technet.microsoft.com/library/ms179355.aspx) (dans la documentation en ligne [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] , mais toutefois applicable)       
   
   

@@ -1,31 +1,28 @@
 ---
 title: Instructions DDL | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], interoperability
 - interoperability of SQL statements [ODBC], DDL statements
 - DDL statements [ODBC]
 ms.assetid: 96ac9859-5976-4b06-ae1f-2fec3231e266
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 69fedff83875bf08625ee97ecab93a02a856cc21
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d077c86fb7a87658bc62d9530e9019e9f25da987
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ddl-statements"></a>Instructions DDL
 Instructions de langage de définition (DDL) de données varient considérablement SGBD. SQL ODBC définit des instructions pour les opérations de définition de données courantes : créer et supprimer des tables, des index et vues ; modification des tables ; l’octroi et révocation des privilèges. Toutes les autres instructions DDL sont spécifiques à la source de données. Par conséquent, les applications interopérables ne peut pas effectuer certaines opérations de définition de données. En règle générale, cela n’est pas un problème, car ces opérations ont tendance à être très propres au SGBD et sont meilleures gauche pour le logiciel d’administration propriétaire de la base de données fourni avec la plupart des SGBD ou le programme d’installation fourni avec le pilote.  

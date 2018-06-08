@@ -1,31 +1,20 @@
 ---
-title: "Référence du langage MDX (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords:
-- Multidimensional Expressions [Analysis Services], language reference
-- MDX [Analysis Services], language reference
-ms.assetid: 8ceaedd3-7679-4300-83a5-4809243cdc5d
-caps.latest.revision: "27"
-author: Minewiskan
+title: Référence du langage MDX (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: e5cf88778cdd78c7119d94754d246dbba3709adb
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 9860b483ed30550f6f320655f8b4cd70c8a30b73
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34580251"
 ---
 # <a name="mdx-language-reference-mdx"></a>Guide de référence du langage MDX (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -36,13 +25,13 @@ ms.lasthandoff: 01/08/2018
   
 |Rubrique|Description|  
 |-----------|-----------------|  
-|[Conventions de syntaxe MDX &#40; MDX &#41;](../mdx/mdx-syntax-conventions-mdx.md)|Décrit brièvement les conventions de syntaxe utilisées dans le guide de référence du langage MDX.|  
-|[Référence des instructions MDX &#40; MDX &#41;](../mdx/mdx-statement-reference-mdx.md)|Décrit les instructions de script, de définition de données et de manipulation de données disponibles dans le langage MDX.|  
-|[Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)|Répertorie les opérateurs disponibles dans le langage MDX.|  
-|[Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)|Décrit les fonctions disponibles dans le langage MDX.|  
+|[Conventions de syntaxe MDX &#40;MDX&#41;](../mdx/mdx-syntax-conventions-mdx.md)|Décrit brièvement les conventions de syntaxe utilisées dans le guide de référence du langage MDX.|  
+|[Référence des instructions MDX &#40;MDX&#41;](../mdx/mdx-statement-reference-mdx.md)|Décrit les instructions de script, de définition de données et de manipulation de données disponibles dans le langage MDX.|  
+|[Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)|Répertorie les opérateurs disponibles dans le langage MDX.|  
+|[Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)|Décrit les fonctions disponibles dans le langage MDX.|  
 |[Mots réservés MDX](../mdx/mdx-reserved-words.md)|Fournit la liste des mots réservés utilisés dans le langage MDX.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Expressions multidimensionnelles &#40; MDX &#41; Référence](../mdx/multidimensional-expressions-mdx-reference.md)  
+ [Expressions multidimensionnelles &#40;MDX&#41; référence](../mdx/multidimensional-expressions-mdx-reference.md)  
   
   

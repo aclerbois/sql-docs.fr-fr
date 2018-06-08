@@ -1,34 +1,23 @@
 ---
-title: "Solutions d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data mining [Analysis Services], about data mining
-- data mining [Analysis Services], development
-ms.assetid: 84f6548d-ebb0-4e10-9b29-66253fa0a04a
-caps.latest.revision: 
-author: Minewiskan
+title: Solutions d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 595282e28a55171ed5a528d28f37500a21f71c0d
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5e52afe834120b661bd885be4e00491385b8b917
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-solutions"></a>Solutions d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une solution d'exploration de données est une solution [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] qui contient un ou plusieurs projets d'exploration de données.  
+  Une solution d'exploration de données est une solution [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] qui contient un ou plusieurs projets d'exploration de données.  
   
  Les rubriques de cette section fournissent des informations sur la façon de concevoir et d’implémenter une solution d’exploration de données intégrée à l’aide de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Pour une présentation du processus de conception d’exploration de données et des outils connexes, consultez [Concepts d’exploration de données](../../analysis-services/data-mining/data-mining-concepts.md).  
   
@@ -85,13 +74,13 @@ Une solution d'exploration de données est une solution [!INCLUDE[ssASnoversion]
   
 |Tâches|Rubriques|  
 |-----------|------------|  
-|Testez les modèles que vous créez, validez la qualité de vos données d'apprentissage et créez des graphiques qui représentent la précision des modèles d'exploration de données.|[Test et Validation &#40; exploration de données &#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)|  
+|Testez les modèles que vous créez, validez la qualité de vos données d'apprentissage et créez des graphiques qui représentent la précision des modèles d'exploration de données.|[Test et Validation & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)|  
 |Effectuez l'apprentissage du modèle en remplissant la structure et les modèles associés avec des données. Mettez à jour et étendez des modèles avec de nouvelles données.|[Traitement des objets d’exploration de données](../../analysis-services/data-mining/processing-data-mining-objects.md)|  
 |Personnalisez un modèle d'exploration de données en appliquant des filtres aux données d'apprentissage, en choisissant un algorithme différent ou en définissant des paramètres d'algorithme avancés.|[Personnaliser la Structure et les modèles d’exploration de données](../../analysis-services/data-mining/customize-mining-models-and-structure.md)|  
-|Personnalisez un modèle d'exploration de données en appliquant des filtres aux données utilisées dans l'apprentissage du modèle.|[Ajouter des modèles d’exploration de données à une Structure &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/add-mining-models-to-a-structure-analysis-services-data-mining.md)|  
+|Personnalisez un modèle d'exploration de données en appliquant des filtres aux données utilisées dans l'apprentissage du modèle.|[Ajouter des modèles d’exploration de données à une Structure & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/add-mining-models-to-a-structure-analysis-services-data-mining.md)|  
 |Mettez à jour et gérer des solutions d'exploration de données.|Lien à déterminer|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Didacticiels d’exploration de données &#40; Analysis Services &#41;](../../analysis-services/data-mining-tutorials-analysis-services.md)  
+ [Didacticiels d’exploration de données & #40 ; Analysis Services & #41 ;](../../analysis-services/data-mining-tutorials-analysis-services.md)  
   
   

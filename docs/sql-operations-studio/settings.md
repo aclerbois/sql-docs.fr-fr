@@ -1,30 +1,29 @@
 ---
-title: "Studio d’opérations SQL (aperçu) utilisateur et les paramètres de l’espace de travail | Documents Microsoft"
-description: "Comment modifier les paramètres de l’espace de travail et les Studio des opérations SQL (aperçu) utilisateur."
+title: Studio d’opérations SQL (aperçu) utilisateur et les paramètres de l’espace de travail | Documents Microsoft
+description: Comment modifier les paramètres de l’espace de travail et les Studio des opérations SQL (aperçu) utilisateur.
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6e87461fb2973bec630ed21975a80cdbc17cd1cd
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 67f60d30693eeb60030f3a977ec1bcf5a1f98be1
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="user-and-workspace-settings"></a>Utilisateur et les paramètres de l’espace de travail
 
 Il est facile à configurer [!INCLUDE[name-sos](../includes/name-sos-short.md)] à votre convenance via des paramètres. Presque toutes les parties de [!INCLUDE[name-sos](../includes/name-sos-short.md)]d’éditeur, l’interface utilisateur et le comportement fonctionnel propose les options que vous pouvez modifier.
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)]fournit deux portées différentes pour les paramètres :
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] fournit deux portées différentes pour les paramètres :
 
 * **Utilisateur** ces paramètres s’appliquent globalement à une instance de [!INCLUDE[name-sos](../includes/name-sos-short.md)] vous ouvrez.
 * **Espace de travail** paramètres de l’espace de travail sont des paramètres spécifiques à un dossier sur votre ordinateur et sont disponibles uniquement lorsque le dossier est ouvert dans la barre latérale de l’Explorateur. Paramètres définis sur cette étendue de remplacent l’étendue de l’utilisateur.
@@ -35,7 +34,7 @@ La commande de menu **fichier** > **préférences** > **paramètres** (**Code** 
 
 Vous pouvez également ouvrir les paramètres utilisateur et l’espace de travail à partir de la **Palette de commandes** (**Ctrl + Maj + P**) avec **préférences : ouvrir les paramètres utilisateur** et  **Préférences : Paramètres d’espace de travail ouvert** ou utilisez le raccourci clavier (**Ctrl +**).
 
-L’exemple suivant désactive les numéros de ligne dans l’éditeur et configure les lignes de texte à la ligne automatiquement en fonction de la taille de l’éditeur.
+L’exemple suivant désactive les numéros de ligne dans l’éditeur et configure les lignes de code pour être mises en retrait automatiquement.
 
 ![Exemples de paramètres](media/settings/sample-settings.png)
 

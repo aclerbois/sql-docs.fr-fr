@@ -1,27 +1,25 @@
 ---
-title: "Types de données dans les expressions (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Types de données dans les expressions (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 94fdf921-270c-4c12-87b3-46b1cc98fae5
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e8f9aac801e823f364070fc2b3ce2e6b4b015f78
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 61d9e125f12d9c642408316ccb936e54f2a29372
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-types-in-expressions-report-builder-and-ssrs"></a>Types de données dans les expressions (Générateur de rapports et SSRS)
   Les données sont représentées par différents types de données permettant de les stocker et de les traiter de manière efficace. Les types de données typiques incluent du texte (également appelé chaînes), des numéros avec et sans décimales, des dates, des heures et des images. Les valeurs dans un rapport doivent être un type de données RDL (Report Definition Language). Vous pouvez mettre en forme une valeur selon votre préférence lorsque vous l'affichez dans un rapport. Par exemple, un champ qui représente une devise est stocké dans la définition de rapport sous la forme d'un nombre à virgule flottante, mais peut être affiché sous divers formats en fonction de la propriété de format choisie.  

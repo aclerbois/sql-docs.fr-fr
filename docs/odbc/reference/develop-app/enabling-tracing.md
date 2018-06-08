@@ -1,28 +1,26 @@
 ---
-title: "L’activation du suivi | Documents Microsoft"
-ms.custom: 
+title: L’activation du suivi | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: tracing options [ODBC], enabling
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- tracing options [ODBC], enabling
 ms.assetid: 48e318bd-2487-4708-a698-ea01f36a45e9
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 21f9d8b3d96f2860ed532279acc74ac3f7c717dc
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ad1f3aa8fc8280748eb7e3a99a62c500e0b283dd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enabling-tracing"></a>L’activation du traçage
 Le suivi peut être activé dans le code suivant trois façons :  

@@ -1,16 +1,14 @@
 ---
 title: MOVE CONVERSATION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - MOVE_CONVERSATION_TSQL
@@ -26,16 +24,15 @@ helpviewer_keywords:
 - conversations [Service Broker], groups
 - conversations [Service Broker], moving
 ms.assetid: 1da4d2c9-e767-434e-b49b-615711a7f626
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 28
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd8c5e548bf45fe4a2fc6bf0638ebb5282981263
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0c8904ce40875ccf38bc89be72e8ee61ca7c44e0
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="move-conversation-transact-sql"></a>MOVE CONVERSATION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,7 +58,7 @@ MOVE CONVERSATION conversation_handle
  Variable ou constante contenant l'identificateur du groupe de conversations destinataire. *conversation_group_id* doit être de type **uniqueidentifier**.  
   
 ## <a name="remarks"></a>Notes   
- L’instruction MOVE CONVERSATION déplace la conversation spécifiée par *conversation_handle* vers le groupe de conversations identifié par *conversation_group_id*. Les dialogues ne peuvent être redirigés qu'entre des groupes de conversations associés à la même file d'attente.  
+ L’instruction MOVE CONVERSATION déplace la conversation spécifiée par *conversation_handle* vers le groupe de conversations identifié par *conversation_group_id*. Les dialogues ne peuvent être redirigés qu'entre des groupes de conversation associés à la même file d'attente.  
   
 > [!IMPORTANT]  
 >  Si l’instruction MOVE CONVERSATION n’est pas la première d’un lot ou d’une procédure stockée, l’instruction qui précède doit se terminer par un point-virgule (**;**), le terminateur d’instruction [!INCLUDE[tsql](../../includes/tsql-md.md)].  

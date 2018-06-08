@@ -1,32 +1,29 @@
 ---
-title: "Supprimer les relations entre les clés étrangères | Microsoft Docs"
-ms.custom: 
+title: Supprimer les relations entre les clés étrangères | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - foreign keys [SQL Server], deleting
 - removing foreign keys
 - deleting foreign keys
 ms.assetid: 9c9e9ae4-9e03-4137-acb6-b18928a0c4ca
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4b4895a31825a1335ece67be3dc986145e3d2a21
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: aaf9de608215811dd6cbdec740cf1f5f3cfa6ae8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-foreign-key-relationships"></a>Supprimer les relations entre les clés étrangères
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

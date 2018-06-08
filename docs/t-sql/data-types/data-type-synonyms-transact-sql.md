@@ -1,16 +1,14 @@
 ---
-title: "Synonymes des types de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: Synonymes des types de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 7/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - alternate names [SQL Server]
 - synonyms [SQL Server], data types
 ms.assetid: 390eef67-1a49-4185-a971-e07765be9717
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 07b4ada74ee54bf1c892e0938dd794e17ea4c0cb
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4b0e16289f244a8b1fdf24bb3b41e253a1d70c5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-synonyms-transact-sql"></a>Synonymes des types de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -45,8 +42,8 @@ Les synonymes des types de données sont inclus dans [!INCLUDE[ssNoVersion](../.
 |**character varying(** *n* **)**|**varchar(n)**|  
 |**Dec**|**decimal**|  
 |**Double precision**|**float**|  
-|**float**[**(***n***)**] pour *n* = 1-7|**real**|  
-|**float**[**(***n***)**] pour *n* = 8-15|**float**|  
+|**float**[**(***n***)**] for *n* = 1-7|**real**|  
+|**float**[**(***n***)**] for *n* = 8-15|**float**|  
 |**entier**|**Int**|  
 |**national character(** *n* **)**|**nchar(n)**|  
 |**national char(** *n* **)**|**nchar(n)**|  

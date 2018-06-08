@@ -1,33 +1,30 @@
 ---
-title: "Mettre à niveau les instances de SQL Server s’exécutant sur des clusters Windows Server 2008/2008 R2/2012 | Microsoft Docs"
+title: Mettre à niveau les instances de SQL Server s’exécutant sur des clusters Windows Server 2008/2008 R2/2012 | Microsoft Docs
 ms.date: 1/25/2018
 ms.suite: sql
-ms.prod: sql-non-specified
-ms.prod_service: database engine
-ms.component: failover-clustuers
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: sql
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading failover clusters
 - clusters [SQL Server], upgrading
 - failover clustering [SQL Server], upgrading
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 3337f1c438f303775d923ec12b14891c13b36c03
-ms.sourcegitcommit: 0a9c29c7576765f3b5774b2e087852af42ef4c2d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 98875ca77fcc6b0f49f33d79d552c658b61daa3e
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772995"
 ---
 # <a name="upgrade-sql-server-instances-running-on-windows-server-20082008-r22012-clusters"></a>Mettre à niveau les instances de SQL Server s’exécutant sur des clusters Windows Server 2008/2008 R2/2012
 
 [!INCLUDE[nextref-longhorn-md](../../../includes/nextref-longhorn-md.md)], [!INCLUDE[winserver2008r2-md](../../../includes/winserver2008r2-md.md)] et [!INCLUDE[win8srv-md](../../../includes/win8srv-md.md)] empêchent les clusters de basculement Windows Server d’effectuer des mises à niveau du système d’exploitation sur place, ce qui limite la version autorisée de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion.md)] pour un cluster. Une fois que le cluster est mis à niveau avec au moins [!INCLUDE[winblue-server-2-md](../../../includes/winblue-server-2-md.md)], il peut rester à jour.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 -   Avant d’effectuer l’une des stratégies de migration, un cluster de basculement Windows Server parallèle avec Windows Server 2016/2012 R2 doit être préparé. Tous les nœuds comprenant des instances de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion.md)] doivent être joints au cluster Windows où les instances de cluster de basculement parallèles sont installées. Aucun ordinateur autonome **ne doit** être joint au cluster de basculement Windows Server avant la migration. Les bases de données utilisateur doivent être synchronisées dans le nouvel environnement avant la migration.
 -   Toutes les instances de destination doivent exécuter la même version de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion.md)] que leur instance parallèle dans l’environnement d’origine, avec les mêmes noms et ID d’instance, et elles doivent être installées avec les mêmes fonctionnalités. Les chemins d’installation et la structure de répertoire doivent être identiques sur les ordinateurs de destination. Cela n’inclut pas les noms de réseaux virtuels des instances de cluster de basculement, qui doivent être différents avant la migration. Toutes les fonctionnalités activées par l’instance d’origine (Always On, FILESTREAM, etc.) doivent être activées sur l’instance de destination.

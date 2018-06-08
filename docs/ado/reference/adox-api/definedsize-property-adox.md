@@ -1,17 +1,15 @@
 ---
-title: "DefinedSize, propriété (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: DefinedSize, propriété (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Column::DefinedSize
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - DefinedSize property [ADOX]
 ms.assetid: 762b8937-c31c-4e90-bb85-506d991e8280
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6a316c2cbd05fd4ec0df58d79f48b1f3922509f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 522f1124f2c6f943b88a8c28b776707b2431122b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="definedsize-property-adox"></a>DefinedSize, propriété (ADOX)
 Indique la taille maximale définie de la colonne.  

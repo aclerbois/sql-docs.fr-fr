@@ -1,31 +1,29 @@
 ---
-title: "Utiliser le tableau de bord du groupe de disponibilité Always On (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Utiliser le tableau de bord du groupe de disponibilité Always On (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/30/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.agdashboard.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.agdashboard.f1
 helpviewer_keywords:
 - Availability Groups [SQL Server], policies
 - Availability Groups [SQL Server], dashboard
 ms.assetid: c9ba2589-139e-42bc-99e1-94546717c64d
-caps.latest.revision: "30"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 30
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5aa07d7f0664e89aca776375d5a173ca93fd4624
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+ms.openlocfilehash: f4512fb251a34eaeb53bfdc18bb3bec98473f0cf
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770555"
 ---
 # <a name="use-the-always-on-availability-group-dashboard-sql-server-management-studio"></a>Utiliser le tableau de bord du groupe de disponibilité Always On (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -63,7 +61,7 @@ ms.lasthandoff: 11/20/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
  Requiert les autorisations CONNECT, VIEW SERVER STATE et VIEW ANY DEFINITION.  
   
 ##  <a name="SSMSProcedure"></a> Pour démarrer le tableau de bord Always On  
@@ -142,7 +140,7 @@ Le volet **Réplica de disponibilité** affiche les colonnes suivantes :
 -   **Manuel**. Indique qu'aucun réplica n'est en mode de basculement automatique.  
   
  **État de synchronisation**  
- Indique si un réplica secondaire est actuellement synchronisé avec le réplica principal. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
+ Indique si un réplica secondaire est actuellement synchronisé avec le réplica principal. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
   
 -   **Non synchronisé**. Une ou plusieurs bases de données du réplica ne sont pas synchronisées ou n'ont pas encore été jointes au groupe de disponibilité.  
   
@@ -159,7 +157,7 @@ Le volet **Réplica de disponibilité** affiche les colonnes suivantes :
  Énonce le nom du problème. Cette valeur est affichée par défaut. Pour obtenir la liste de tous les problèmes de stratégie Always On, consultez [Stratégies Always On pour les problèmes opérationnels avec des groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/always-on-policies-for-operational-issues-always-on-availability.md).  
   
  **Mode de disponibilité**  
- Indique que la propriété de réplica que vous définissez séparément pour chaque réplica de disponibilité. Cette valeur est masquée par défaut. Les valeurs possibles sont les suivantes :  
+ Indique que la propriété de réplica que vous définissez séparément pour chaque réplica de disponibilité. Cette valeur est masquée par défaut. Les valeurs possibles sont les suivantes :  
   
 -   **Asynchrone**. Le réplica secondaire n'est jamais synchronisé avec le réplica principal.  
   
@@ -172,7 +170,7 @@ Le volet **Réplica de disponibilité** affiche les colonnes suivantes :
  Indique le mode utilisé pour se connecter au réplica secondaire.  Cette valeur est masquée par défaut.  
   
  **État de la connexion**  
- Indique si un réplica secondaire est actuellement connecté au réplica principal. Cette colonne est masquée par défaut. Les valeurs possibles sont les suivantes :  
+ Indique si un réplica secondaire est actuellement connecté au réplica principal. Cette colonne est masquée par défaut. Les valeurs possibles sont les suivantes :  
   
 -   **Déconnecté**. Pour un réplica de disponibilité distant, indique qu'il est déconnecté du réplica de disponibilité local. La réponse du réplica local à l'état déconnecté dépend de son rôle, comme suit :  
   
@@ -272,14 +270,14 @@ Le volet **Réplica de disponibilité** affiche les colonnes suivantes :
     >  Lorsqu'une base de données est dans l'état INITIALIZING, forcer le basculement vers le réplica secondaire laisse toujours cette base de données dans un état dans lequel elle ne peut pas être démarrée.  
   
  **Failover Readiness**  
- Indique le réplica de disponibilité qui peut basculer avec ou sans perte possible de données. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
+ Indique le réplica de disponibilité qui peut basculer avec ou sans perte possible de données. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
   
 -   **Perte de données**  
   
 -   **Aucune perte de données**  
   
  **Problèmes**  
- Énonce le nom du problème. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
+ Énonce le nom du problème. Cette colonne est affichée par défaut. Les valeurs possibles sont les suivantes :  
   
 -   **Avertissements**. Cliquez pour afficher les problèmes d'avertissements et de seuils.  
   
@@ -360,7 +358,7 @@ Le volet **Réplica de disponibilité** affiche les colonnes suivantes :
   
 -   [Utiliser les stratégies Always On pour afficher l’intégrité d’un groupe de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/use-always-on-policies-to-view-the-health-of-an-availability-group-sql-server.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [sys.dm_os_performance_counters &#40;Transact-SQL&#41;](../../../relational-databases/system-dynamic-management-views/sys-dm-os-performance-counters-transact-sql.md)   
  [Surveillance des groupes de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/monitoring-of-availability-groups-sql-server.md)  
   

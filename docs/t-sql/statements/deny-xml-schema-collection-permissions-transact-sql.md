@@ -1,16 +1,14 @@
 ---
-title: "DENY – refus d’autorisations de collection de schémas XML (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY – refus d’autorisations de collection de schémas XML (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - DENY statement, XML schema collections
 - schema collections [SQL Server], permissions
 ms.assetid: 159969a7-8313-41bc-bb19-c55af76597e6
-caps.latest.revision: 
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a2851147a37d9a99ab2f1fee8c1e3083e7a5f4fd
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 304ae82453db1578455f157004e7051c32527a20
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deny-xml-schema-collection-permissions-transact-sql"></a>DENY – refus d'autorisations de collection de schémas XML (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -104,7 +101,7 @@ DENY permission  [ ,...n ] ON
  Spécifie un utilisateur de base de données sans principal au niveau serveur correspondant.  
   
 ## <a name="remarks"></a>Notes   
- Des informations sur les collections de schémas XML sont visibles dans la vue de catalogue [sys.xml_schema_collections](../../relational-databases/system-catalog-views/sys-xml-schema-collections-transact-sql.md).  
+ Des informations sur les collections de schémas XML sont consultables dans la vue de catalogue [sys.xml_schema_collections](../../relational-databases/system-catalog-views/sys-xml-schema-collections-transact-sql.md).  
   
  Une collection de schémas XML est un élément sécurisable de niveau schéma inclus dans le schéma qui est son parent dans la hiérarchie des autorisations. Les autorisations les plus spécifiques et limitées qu'il est possible de refuser sur une collection de schémas XML sont répertoriées dans le tableau ci-dessous, avec les autorisations plus générales qui les incluent de manière implicite.  
   

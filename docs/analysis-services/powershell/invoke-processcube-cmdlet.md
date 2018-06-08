@@ -1,30 +1,23 @@
 ---
 title: Applet de commande Invoke-ProcessCube | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: b10ba7c1-8f10-4e72-9626-f9285e4341fd
-caps.latest.revision: "9"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5564256b3953c9173f433201506204d7ca24677e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 5e058504efc62466c64d186d9a39e33627860f15
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-processcube-cmdlet"></a>Applet de commande Invoke-ProcessCube
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Traitez un cube à l’aide d’une variable de type de traitement spécifique.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Traitez un cube en utilisant une variable de type de traitement spécifique.  
   
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -34,7 +27,7 @@ ms.lasthandoff: 01/08/2018
   
  `Invoke-ProcessCube –DatabaseCube <Microsoft.AnalysisServices.Cube> [-ProcessType] <Microsoft.AnalysisServices.ProcessType> [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L'applet de commande Invoke-ProcessCube traite un cube au niveau que vous spécifiez. Par exemple, ProcessFull remplace les données existantes par toutes les nouvelles données. Lors du traitement d'un cube, vous devez spécifier le type de traitement. Pour plus d’informations, consultez [Options et paramètres de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md).  
   
 ## <a name="parameters"></a>Paramètres  
@@ -56,7 +49,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
@@ -91,8 +84,8 @@ ms.lasthandoff: 01/08/2018
   
 |||  
 |-|-|  
-|Entrées|None|  
-|Sorties|None|  
+|Entrées|Aucun|  
+|Sorties|Aucun|  
   
 ## <a name="example-1"></a>Exemple 1  
  `PS SQL SERVER:\sqlas\locahost\default\Databases\AWTEST\Cubes\Adventure Works > Get-Item .| Invoke-ProcessCube–ProcessType:ProcessDefault`  

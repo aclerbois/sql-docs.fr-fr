@@ -1,32 +1,29 @@
 ---
 title: Afficher la taille | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - display size of data types [ODBC]
 - size of data types [ODBC]
 - data types [ODBC], display size
 - SQL data types [ODBC], column characteristics
 ms.assetid: 9f7f766f-2492-463c-aab7-f2476e222042
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 222150f200720a9213bc8f04cf7900771c2e0619
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cd66f8e88187447209ea55ac9dea77437f34bbaa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="display-size"></a>Taille d’affichage
 La taille d’affichage d’une colonne est le nombre maximal de caractères nécessaires pour afficher des données sous forme de caractères. Le tableau suivant définit la taille d’affichage pour chaque type de données ODBC SQL.  

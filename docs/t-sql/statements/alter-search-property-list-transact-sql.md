@@ -1,16 +1,14 @@
 ---
 title: ALTER SEARCH PROPERTY LIST (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_SEARCH_PROPERTY_TSQL
@@ -26,16 +24,15 @@ helpviewer_keywords:
 - search property lists [SQL Server], altering
 - ALTER SEARCH PROPERTY LIST statement
 ms.assetid: 0436e4a8-ca26-4d23-93f1-e31e2a1c8bfb
-caps.latest.revision: 
+caps.latest.revision: 55
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b56d1ae0be7a8aaef93011d6ecfde378a3e8fe91
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 6829d0ae3e0b206a6156ff2f6551e79fa4e5bea7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-search-property-list-transact-sql"></a>ALTER SEARCH PROPERTY LIST (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -73,7 +70,7 @@ SELECT name FROM sys.registered_search_property_lists;
  Ajoute une propriété de recherche spécifiée à la liste de propriétés spécifiée par *list_name*. La propriété est inscrite pour la liste des propriétés de recherche. Avant que les propriétés récemment ajoutées puissent être utilisées pour la recherche de propriétés, l'index ou les index de recherche en texte intégral associé doivent être remplis à nouveau. Pour plus d’informations, consultez [ALTER FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-fulltext-index-transact-sql.md).  
   
 > [!NOTE]  
->  Pour ajouter une propriété de recherche donnée à une liste de propriétés de recherche, vous devez fournir son GUID du jeu de propriétés (*property_set_guid*) et son ID entier de propriété (*property_int_id*). Pour plus d'informations, consultez la section « Obtention de GUID de jeux de propriétés et d'identificateurs », dans la suite de cette rubrique.  
+>  Pour ajouter une propriété de recherche donnée à une liste de propriétés de recherche, vous devez fournir son GUID du jeu de propriétés (*property_set_guid*) et son ID entier de propriété (*property_int_id*). Pour plus d'informations, consultez la section« Obtention de GUID de jeux de propriétés et d'identificateurs », dans la suite de cette rubrique.  
   
  *property_name*  
  Spécifie le nom à utiliser pour identifier la propriété dans les requêtes de texte intégral. *property_name* doit identifier de manière unique la propriété dans le jeu de propriétés. Un nom de propriété peut contenir des espaces internes. La longueur maximale de *property_name* est de 256 caractères. Ce nom peut être un nom convivial, comme Auteur ou Domicile, ou ce peut être le nom canonique Windows de la propriété, comme **System.Author** ou **System.Contact.HomeAddress**.  
@@ -137,7 +134,7 @@ WITH (
  La recherche en texte intégral mappe une propriété de recherche à un index de recherche en texte intégral à l'aide de son GUID du jeu de propriétés et d'un identificateur de propriété entier. Pour plus d’informations sur la façon d’obtenir ces valeurs pour les propriétés définies par Microsoft, consultez [Recherche des GUID du jeu de propriétés et des ID d’entier de propriétés pour les propriétés de recherche](../../relational-databases/search/find-property-set-guids-and-property-integer-ids-for-search-properties.md). Pour plus d'informations sur les propriétés définies par un éditeur de logiciels indépendant (ISV), consultez la documentation de ce dernier.  
   
 ## <a name="making-added-properties-searchable"></a>Recherche possible avec des propriétés ajoutées  
- L'ajout d'une propriété de recherche à une liste de propriétés de recherche permet d'inscrire la propriété. Une propriété ajoutée récemment peut être spécifiée immédiatement dans les requêtes [CONTAINS](../../t-sql/queries/contains-transact-sql.md). Toutefois, les requêtes de texte intégral délimitées aux propriétés sur une propriété ajoutée récemment ne retourneront pas de documents tant que l'index de recherche en texte intégral associé n'aura pas été à nouveau rempli. Par exemple, la requête délimitée aux propriétés suivante sur une propriété ajoutée récemment, *new_search_property*, ne retourne pas de documents tant que l’index de recherche en texte intégral associé à la table cible (*table_name*) n’a pas été à nouveau rempli :  
+ L'ajout d'une propriété de recherche à une liste de propriétés de recherche permet d'inscrire la propriété. Une propriété ajoutée récemment peut être spécifiée immédiatement dans les requêtes [CONTAINS](../../t-sql/queries/contains-transact-sql.md). Toutefois, les requêtes de texte intégral avec étendue aux propriétés sur une propriété ajoutée récemment ne retourneront pas de documents tant que l'index de recherche en texte intégral associé n'aura pas été à nouveau rempli. Par exemple, la requête délimitée aux propriétés suivante sur une propriété ajoutée récemment, *new_search_property*, ne retourne pas de documents tant que l’index de recherche en texte intégral associé à la table cible (*table_name*) n’a pas été à nouveau rempli :  
   
 ```  
 SELECT column_name  
@@ -206,7 +203,7 @@ ALTER SEARCH PROPERTY LIST DocumentPropertyList
 ```  
   
 > [!NOTE]  
->  Vous devez associer une liste de propriétés de recherche donnée à un index de recherche en texte intégral avant de pouvoir l'utiliser dans le cadre de requêtes délimitées aux propriétés. Pour ce faire, utilisez une instruction [ALTER FULLTEXT INDEX](../../t-sql/statements/alter-fulltext-index-transact-sql.md) et spécifiez la clause SET SEARCH PROPERTY LIST.  
+>  Vous devez associer une liste de propriétés de recherche donnée à un index de recherche en texte intégral avant de pouvoir l'utiliser dans le cadre de requêtes avec étendue aux propriétés. Pour ce faire, utilisez une instruction [ALTER FULLTEXT INDEX](../../t-sql/statements/alter-fulltext-index-transact-sql.md) et spécifiez la clause SET SEARCH PROPERTY LIST.  
   
 ### <a name="b-dropping-a-property"></a>B. Suppression d'une propriété  
  L'exemple suivant supprime la propriété `Comments` dans la liste de propriétés `DocumentPropertyList`.  

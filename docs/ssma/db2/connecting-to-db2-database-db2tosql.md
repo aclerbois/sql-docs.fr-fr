@@ -1,30 +1,28 @@
 ---
-title: "Connexion à la base de données DB2 (DB2ToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connexion à la base de données DB2 (DB2ToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-db2
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 5eb5801d-f0c3-4127-97c0-0b1ef49f4844
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f718f75a750d376bdae9ff7bfab10f298107822d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d9f3d4b687c86804cc2339d675333c3a7e73ff6b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-db2-database-db2tosql"></a>Connexion à la base de données DB2 (DB2ToSQL)
 Pour migrer des bases de données DB2 [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], vous devez vous connecter à la base de données DB2 que vous souhaitez migrer. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à tous les schémas de DB2, puis l’affiche dans le volet Explorateur de métadonnées de DB2. SSMA stocke des informations sur le serveur de base de données, mais ne stocke pas les mots de passe.  
@@ -84,7 +82,7 @@ Lorsque vous vous connectez à une base de données, SSMA lit les métadonnées 
   
     `Data Source=MyDB2DB;Integrated Security=yes;`  
   
-    Pour plus d’informations, consultez [se connecter à Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md).  
+    Pour plus d’informations, consultez [se connecter à Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md).  
   
 ## <a name="reconnecting-to-db2"></a>Rétablir la connexion à DB2  
 Votre connexion au serveur de base de données reste active jusqu'à ce que vous fermez le projet. Lorsque vous rouvrez le projet, vous devez vous reconnecter si vous souhaitez une connexion active à la base de données. Vous pouvez travailler hors connexion jusqu'à ce que vous souhaitez mettre à jour les métadonnées, charger des objets de base de données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], et migrer les données.  
@@ -119,5 +117,5 @@ Métadonnées relatives à la base de données DB2 ne sont pas actualisée autom
 -   L’étape suivante du processus de migration consiste à [connexion à SQL Server](http://msdn.microsoft.com/en-us/b59803cb-3cc6-41cc-8553-faf90851410e).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de DB2 pour SQL Server &#40; DB2ToSQL &#41;](../../ssma/db2/migrating-db2-databases-to-sql-server-db2tosql.md)  
+[Bases de données DB2 migration vers SQL Server &#40;DB2ToSQL&#41;](../../ssma/db2/migrating-db2-databases-to-sql-server-db2tosql.md)  
   

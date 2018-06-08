@@ -1,15 +1,14 @@
 ---
-title: "Types CLR définis par l’utilisateur | Documents Microsoft"
-ms.custom: 
+title: Types CLR définis par l’utilisateur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - validation [CLR integration]
@@ -34,16 +33,15 @@ helpviewer_keywords:
 - invoking UDT methods
 - indexes [CLR integration]
 ms.assetid: 27c4889b-c543-47a8-a630-ad06804f92df
-caps.latest.revision: 
+caps.latest.revision: 67
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 79f5a6c9c827d3502cf7c636ffb5e49bd16f0b13
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 962f3ea6789f0a4dd9fa5ad6169801b3dd589223
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-user-defined-types"></a>Types CLR définis par l'utilisateur
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -73,7 +71,7 @@ ms.lasthandoff: 02/09/2018
     > [!NOTE]  
     >  Dans les versions antérieures à [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)], les types UDT créés à partir d'assemblys .NET Framework n'étaient pas pris en charge. Toutefois, vous pouvez toujours utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des types de données alias à l’aide de **sp_addtype**. La syntaxe CREATE TYPE peut être utilisée pour créer à la fois des types de données définis par l'utilisateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] natifs et des types UDT.  
   
-4.  **Créer des tables, des variables ou des paramètres à l’aide de l’UDT** compter [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)], un type défini par l’utilisateur peut être utilisé en tant que définition de colonne d’une table, en tant que variable dans un [!INCLUDE[tsql](../../includes/tsql-md.md)] lot, ou en tant qu’argument d’un [!INCLUDE[tsql](../../includes/tsql-md.md)] fonction ou procédure stockée.  
+4.  **Créer des tables, des variables ou des paramètres à l’aide de l’UDT** commençant par [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)], un type défini par l’utilisateur peut être utilisé en tant que définition de colonne d’une table, en tant que variable dans un [!INCLUDE[tsql](../../includes/tsql-md.md)] lot, ou en tant qu’argument d’un [!INCLUDE[tsql](../../includes/tsql-md.md)] de fonction ou stockées procédure.  
   
 ## <a name="in-this-section"></a>Dans cette section  
  [Création d’un Type défini par l’utilisateur](../../relational-databases/clr-integration-database-objects-user-defined-types/creating-user-defined-types.md)  

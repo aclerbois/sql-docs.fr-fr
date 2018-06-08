@@ -1,17 +1,13 @@
 ---
-title: "Éditeur XML (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Éditeur XML (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.editor.xml.f1
 - sql13.swb.editorxml.f1
@@ -20,19 +16,20 @@ f1_keywords:
 helpviewer_keywords:
 - XML Designer [SQL Server Management Studio]
 ms.assetid: 0824a5ce-e67b-4b53-98d9-d371faf2d23c
-caps.latest.revision: 
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f434c04ccf8d15d5bddd9c91ffe06bb9c6f69b40
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d5abdb3d615448c575b40facbeea3f8c6c734d58
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="xml-editor-sql-server-management-studio"></a>Éditeur XML (SQL Server Management Studio)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Fournit un ensemble d’outils visuels pour utiliser des schémas XML, des groupes de données ADO.NET et des documents XML. Le Concepteur XML prend en charge le langage de définition de schéma XML (XSD, XML Schema Definition) défini par le World Wide Web Consortium (WC3), mais pas les définitions de type de document (DTD) ni les autres langages de schéma XML, tel XDR (XML-Data Reduced).  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Fournit un ensemble d'outils visuels pour utiliser des schémas XML, des groupes de données ADO.NET et des documents XML. Le Concepteur XML prend en charge le langage de définition de schéma XML (XSD, XML Schema Definition) défini par le World Wide Web Consortium (WC3), mais pas les définitions de type de document (DTD) ni les autres langages de schéma XML, tel XDR (XML-Data Reduced).  
   
  Pour afficher le concepteur, ajoutez un groupe de données, un schéma XML ou un fichier XML à votre projet ou ouvrez l'un des types de fichiers énumérés dans le tableau suivant.  
   

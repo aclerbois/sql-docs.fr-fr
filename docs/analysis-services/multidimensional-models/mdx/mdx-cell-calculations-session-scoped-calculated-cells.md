@@ -1,28 +1,19 @@
 ---
-title: "Création d’étendue de Session de cellules calculées | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: session-scoped calculated members [MDX]
-ms.assetid: f2d14a89-6286-4e74-9afb-091076f93f21
-caps.latest.revision: "14"
-author: Minewiskan
+title: Création d’étendue de Session de cellules calculées | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b4b43145a59c557c4efd981b5a8013dcedd501bd
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4ca621d103f294a88fec93dbf6f24d7402279efa
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-cell-calculations---session-scoped-calculated-cells"></a>Calculs de cellules MDX - cellules calculées au niveau de Session
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
@@ -89,6 +80,6 @@ FOR String_Expression AS 'MDX_Expression'
 |Jeu de descendants|Expression de jeu MDX qui prend la valeur des descendants d'un membre spécifié. La fonction MDX **Descendants**(*Member_Expression*, *Level_Expresion*, *Desc_Flag*) en est un exemple.<br /><br /> Pour plus d’informations, consultez [Descendants &#40;MDX&#41;](../../../mdx/descendants-mdx.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de calculs de cellules à l’aide de la syntaxe MDX &#40;MDX&#41;](../../../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-build-cell-calculations.md)  
+ [Création de calculs de cellules dans MDX & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-build-cell-calculations.md)  
   
   

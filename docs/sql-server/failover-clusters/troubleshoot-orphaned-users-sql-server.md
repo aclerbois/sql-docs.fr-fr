@@ -1,16 +1,14 @@
 ---
-title: "Résoudre les problèmes liés aux utilisateurs orphelins (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes liés aux utilisateurs orphelins (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/14/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
-ms.suite: 
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.reviewer: ''
+ms.suite: ''
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - orphaned users [SQL Server]
 - logins [SQL Server], orphaned users
@@ -20,16 +18,16 @@ helpviewer_keywords:
 - database mirroring [SQL Server], metadata
 - users [SQL Server], orphaned
 ms.assetid: 11eefa97-a31f-4359-ba5b-e92328224133
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MikeRayMSFT
 ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 1780f563d2e4f9533ebe1f82deefe7b785b6ec8c
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1f39094bc2233fe296443605870e8c12eca2c473
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-orphaned-users-sql-server"></a>Résoudre les problèmes liés aux utilisateurs orphelins (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -42,7 +40,7 @@ ms.lasthandoff: 12/05/2017
 ## <a name="background"></a>Arrière-plan  
  Pour connecter une base de données à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec un principal de sécurité (identité de l’utilisateur de base de données) basé sur un utilisateur, le principal doit disposer d’un identifiant valide dans la base de données **master** . Cette connexion est utilisée dans le processus d'authentification chargé de vérifier l’identité du principal pour s’assurer que le principal est autorisé à se connecter à l'instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les connexions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d’une instance de serveur sont visibles dans l’affichage catalogue **sys.server_principals** et l’affichage de compatibilité **sys.syslogins** .  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] accèdent aux bases de données en tant qu’utilisateur de base de données mappé à l’utilisateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Il y a trois exceptions à cette règle :  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] accèdent aux bases de données en tant qu’utilisateur de base de données mappé à l’utilisateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Il y a trois exceptions à cette règle :  
   
 -   Les utilisateurs de base de données à relation contenant-contenu  
   
@@ -126,7 +124,7 @@ ALTER LOGIN <login_name> WITH PASSWORD = '<enterStrongPasswordHere>';
   
  La procédure déconseillée [sp_change_users_login](../../relational-databases/system-stored-procedures/sp-change-users-login-transact-sql.md) fonctionne également avec les utilisateurs orphelins. `sp_change_users_login` avec [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [CREATE LOGIN &#40;Transact-SQL&#41;](../../t-sql/statements/create-login-transact-sql.md)   
  [ALTER USER &#40;Transact-SQL&#41;](../../t-sql/statements/alter-user-transact-sql.md)   
  [CREATE USER &#40;Transact-SQL&#41;](../../t-sql/statements/create-user-transact-sql.md)   

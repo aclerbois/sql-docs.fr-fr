@@ -1,33 +1,30 @@
 ---
-title: "Exécuter des fichiers de script Transact-SQL à l’aide de sqlcmd | Microsoft Docs"
-ms.custom: 
+title: Exécuter des fichiers de script Transact-SQL à l’aide de sqlcmd | Microsoft Docs
+ms.custom: ''
 ms.date: 07/15/2016
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transact sql scripts
 ms.assetid: 90067eb8-ca3e-44e8-bb1a-bf7d1a359423
-caps.latest.revision: 
-author: mightypen
+caps.latest.revision: 42
+author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 815b9a2deb8dd4c3f81e46257ae3756eeefe9512
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ee3e53e4d6cfeba2e1cedf2a2c6e3a5500f0e633
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlcmd---run-transact-sql-script-files"></a>sqlcmd - Exécuter des fichiers de script Transact-SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez **sqlcmd** pour exécuter un fichier de script Transact-SQL. Un fichier de script Transact-SQL est un fichier texte qui peut contenir une combinaison d’instructions Transact-SQL, de commandes **sqlcmd** et de variables de script.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+ Utilisez **sqlcmd** pour exécuter un fichier de script Transact-SQL. Un fichier de script Transact-SQL est un fichier texte qui peut contenir une combinaison d’instructions Transact-SQL, de commandes **sqlcmd** et de variables de script.  
 
 ## <a name="create-a-script-file"></a>Créer un fichier de script  
  Pour créer un fichier de script Transact-SQL simple à l’aide du Bloc-notes, procédez comme suit :  

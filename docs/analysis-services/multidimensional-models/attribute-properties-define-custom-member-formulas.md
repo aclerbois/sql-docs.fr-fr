@@ -1,36 +1,23 @@
 ---
-title: "Définir des formules de membre personnalisées | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- members [Analysis Services], custom
-- custom rollup formulas [Analysis Services]
-- MDX [Analysis Services], custom rollup formulas
-- custom member formulas [Analysis Services]
-ms.assetid: 258304e2-d900-4013-97e3-871f51dfdce2
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des formules de membre personnalisées | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a81bd6be288a17ca22d82a63f8a7e8952b506772
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: cfeee065f99a9071f7175d8344f7e6eae84a7bc6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-properties---define-custom-member-formulas"></a>Propriétés d’attribut : permet de définir des formules de membre personnalisées
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous pouvez définir une expression MDX (Multidimensional Expressions) appelée formule de membre personnalisée pour fournir les valeurs des membres d'un attribut spécifié. Une colonne d'une table issue d'une vue de source de données fournit, pour chaque membre d'un attribut, l'expression utilisée pour fournir la valeur de ce membre.  
+  Vous pouvez définir une expression MDX (Multidimensional Expressions) appelée formule de membre personnalisée pour fournir les valeurs des membres d'un attribut spécifié. Une colonne d'une table issue d'une vue de source de données fournit, pour chaque membre d'un attribut, l'expression utilisée pour fournir la valeur de ce membre.  
   
  Les formules de membre personnalisées déterminent les valeurs de cellule associées aux membres et ont priorité sur les fonctions d'agrégation des mesures. Les formules de membres personnalisées sont écrites dans MDX. Chaque formule de membre personnalisée s'applique à un seul membre. Les formules de membre personnalisées sont stockées dans la table de dimension ou dans une autre table qui entretient une relation de clé étrangère avec la table de dimension.  
   

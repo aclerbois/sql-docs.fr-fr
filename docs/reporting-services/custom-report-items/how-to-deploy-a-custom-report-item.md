@@ -1,29 +1,29 @@
 ---
-title: "Procédure : déployer un élément de rapport personnalisé | Microsoft Docs"
-ms.custom: 
+title: 'Procédure : déployer un élément de rapport personnalisé | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/18/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: custom-report-items
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: custom report items, deploying
+applies_to:
+- SQL Server 2016 Preview
+helpviewer_keywords:
+- custom report items, deploying
 ms.assetid: 80e97b0d-e355-4240-aebd-08cbc84089ed
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: cbbd9a7fc05e7149dcb03eab3ed3c522500b7e0a
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2d4bebf1490bb2da15486fce177932cb1aecf5c7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-deploy-a-custom-report-item"></a>Procédure : déployer un élément de rapport personnalisé
   Pour déployer un élément de rapport personnalisé dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], vous devez d'abord modifier les fichiers de configuration du serveur de rapports, puis copier les assemblys correspondant aux composants de conception et d'exécution dans les dossiers d'application appropriés, et ce à la fois pour le Concepteur de rapports et le serveur de rapports.  

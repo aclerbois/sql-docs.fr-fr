@@ -1,28 +1,17 @@
 ---
 title: Retour à la ligne de code Python dans une procédure stockée | Documents Microsoft
-titleSuffix: SQL Server
-ms.custom: ''
-ms.date: 02/28/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2017
-dev_langs:
-- Python
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.openlocfilehash: fa802c2ae213168d7b6d16cecbfad2eb540dce66
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 3b7ffeac0dfe1e441f188aae67e28004e294fc3e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="wrap-python-code-in-a-stored-procedure"></a>Retour à la ligne de code Python dans une procédure stockée
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -42,10 +31,10 @@ Bien qu’il soit possible de configurer un client distant et exécuter le code 
 2. Créer une base de données pour ce projet et de modifier le contexte de votre **requête** fenêtre à utiliser la nouvelle base de données.
 
     ```sql
-    CREATE DATABASE sqlpy;
-    GO;
-    USE sqlpy;
-    GO;
+    CREATE DATABASE sqlpy
+    GO
+    USE sqlpy
+    GO
     ```
 
     > [!TIP] 

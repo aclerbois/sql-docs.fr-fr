@@ -1,27 +1,26 @@
 ---
-title: "Lire une colonne FILESTREAM dans le fichier à l’aide d’IBCPSession (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Lire une colonne FILESTREAM dans le fichier à l’aide d’IBCPSession (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-how-to
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: ab3ce02a-549d-4e01-87b9-d15281fba349
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 136ffdbe99583b38743c1f98d7f8b73ac5774330
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6c13b3dfc5113e780cd7250ed417dc07d9fe9cfa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="read-a-filestream-column-to-file-using-ibcpsession-ole-db"></a>Lire une colonne FILESTREAM dans un fichier à l'aide d'IBCPSession (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -29,16 +28,16 @@ ms.lasthandoff: 01/24/2018
 
   Cet exemple lit une colonne Filestream dans un fichier à l'aide de l'interface IBCPSession et écrit un fichier de format.  
   
- Pour plus d’informations sur la fonctionnalité filestream, consultez [prise en charge FILESTREAM &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/filestream-support-ole-db.md).  
+ Pour plus d’informations sur la fonctionnalité filestream, consultez [prise en charge FILESTREAM &#40;OLE DB&#41;](../../../relational-databases/native-client/ole-db/filestream-support-ole-db.md).  
   
 ## <a name="example"></a>Exemple  
  Assurez-vous que votre variable d'environnement INCLUDE inclut le répertoire qui contient sqlncli.h.  
   
  Utilisez l'un des exemples suivants pour créer la table à partir de laquelle cet exemple lit :  
   
--   [Envoyer des données à une colonne FILESTREAM à l’aide d’interface ISequentialStream liée au paramètre ICommandText &#40; OLE DB &#41;](../../../relational-databases/native-client-ole-db-how-to/filestream/send-data-to-filestream-isequentialstream-bound-to-icommandtext.md)  
+-   [Envoyer des données à une colonne FILESTREAM à l’aide d’interface ISequentialStream liée au paramètre ICommandText & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client-ole-db-how-to/filestream/send-data-to-filestream-isequentialstream-bound-to-icommandtext.md)  
   
--   [Envoyer des données à une colonne FILESTREAM à l’aide d’IRowsetFastUpload &#40; OLE DB &#41;](../../../relational-databases/native-client-ole-db-how-to/filestream/send-data-to-a-filestream-column-using-irowsetfastupload-ole-db.md)  
+-   [Envoyer des données à une colonne FILESTREAM à l’aide d’IRowsetFastUpload & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client-ole-db-how-to/filestream/send-data-to-a-filestream-column-using-irowsetfastupload-ole-db.md)  
   
  Copiez la première liste de code et collez-la dans un fichier appelé ISSHelper.h.  
   

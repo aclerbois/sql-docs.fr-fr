@@ -1,26 +1,25 @@
 ---
-title: "Les widgets Insight permet d’analyser les serveurs et bases de données SQL opérations Studio (version préliminaire) | Documents Microsoft"
-description: "Découvrez les widgets insight dans Studio des opérations SQL (version préliminaire)."
+title: Les widgets Insight permet d’analyser les serveurs et bases de données SQL opérations Studio (version préliminaire) | Documents Microsoft
+description: Découvrez les widgets insight dans Studio des opérations SQL (version préliminaire).
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: article"
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d810e0b5ed89b93ac3d56a12758285fbd297092b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 77f34ceebb4f02c829b2df3efcae5e64c2eaa1bf
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="manage-servers-and-databases-with-insight-widgets-in-includename-sosincludesname-sos-shortmd"></a>Gérer les serveurs et bases de données avec les widgets d’un aperçu[!INCLUDE[name-sos](../includes/name-sos-short.md)]
+# <a name="manage-servers-and-databases-with-insight-widgets-in-includename-sosincludesname-sos-shortmd"></a>Gérer les serveurs et bases de données avec les widgets d’un aperçu [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 
 Les widgets Insight prennent les requêtes Transact-SQL (T-SQL) vous permet de surveiller les serveurs et bases de données et les transforme en visualisations détaillées. 
 
@@ -41,7 +40,7 @@ Pour lancer et commencer à créer différents types de widgets d’informations
 
 ## <a name="sql-queries"></a>Requêtes SQL 
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)]tente d’éviter d’introduire encore un autre utilisateur de langue ou nombre élevé de l’interface afin d’essayer d’utiliser autant que possible le T-SQL avec une configuration minimale JSON. Configuration des widgets d’insight avec T-SQL s’appuie sur le nombre d’innombrables des sources existantes de requêtes T-SQL utiles qui peuvent être activés dans les widgets instructif.
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] tente d’éviter d’introduire encore un autre utilisateur de langue ou nombre élevé de l’interface afin d’essayer d’utiliser autant que possible le T-SQL avec une configuration minimale JSON. Configuration des widgets d’insight avec T-SQL s’appuie sur le nombre d’innombrables des sources existantes de requêtes T-SQL utiles qui peuvent être activés dans les widgets instructif.
 
 Les widgets Insight sont composées d’une ou deux requêtes T-SQL :
 * *Requête de widget Insight* est obligatoire et est la requête qui retourne les données qui apparaissent dans le widget.
@@ -49,7 +48,7 @@ Les widgets Insight sont composées d’une ou deux requêtes T-SQL :
 
 Une requête de widget insight définit un jeu de données qui affiche un nombre, un graphique ou un graphique. Requête de détails de l’aperçu est utilisée pour répertorier des informations de détail des informations pertinentes dans un format tabulaire dans le volet de détails de l’analyse. 
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)]exécute des requêtes de widget insight et mappe le jeu de résultats de requête au jeu de données d’un graphique, puis effectue le rendu. Lorsque les utilisateurs ouvrent les détails d’une information, il exécute la requête de détails d’un aperçu et imprime le résultat dans un affichage de grille dans la boîte de dialogue.
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] exécute des requêtes de widget insight et mappe le jeu de résultats de requête au jeu de données d’un graphique, puis effectue le rendu. Lorsque les utilisateurs ouvrent les détails d’une information, il exécute la requête de détails d’un aperçu et imprime le résultat dans un affichage de grille dans la boîte de dialogue.
 
 L’idée est d’écrire une requête T-SQL d’une manière afin qu’il peut être utilisé comme un jeu de données d’un nombre, le graphique et le widget de graphique. 
 

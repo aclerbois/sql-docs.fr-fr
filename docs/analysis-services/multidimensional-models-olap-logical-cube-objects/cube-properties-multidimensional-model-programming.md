@@ -1,59 +1,28 @@
 ---
-title: "Programmation du modèle multidimensionnel - propriétés de cube | Documents Microsoft"
-ms.custom: 
-ms.date: 03/17/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- Collation property
-- ID property
-- ErrorConfiguration property
-- cubes [Analysis Services], properties
-- Description property
-- DefaultMeasure property
-- ProcessingMode property
-- AggregationPrefix property
-- EstimatedRows property
-- Visible property
-- StorageLocation property
-- StorageMode property
-- ScriptErrorHandlingMode property
-- Source property
-- ScriptCacheProcessingMode property
-- Language property
-- Name property
-- properties [Analysis Services], cubes
-- ProcessingPriority property
-- ProactiveCaching property
-ms.assetid: 72ca3387-620d-4473-8e23-7fe1f2b3d5bf
-caps.latest.revision: 
-author: Minewiskan
+title: Programmation du modèle multidimensionnel - propriétés de cube | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0d22d6fd46939b435cc0a8a6f25268aea0a192d6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 85453133ab9facd9f3ed56ad98fa2761ac527e40
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="cube-properties---multidimensional-model-programming"></a>Programmation du modèle multidimensionnel - propriétés de cube
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les cubes ont un grand nombre de propriétés que vous pouvez définir pour affecter le comportement à l'échelle du cube. Ces propriétés sont présentées dans le tableau suivant.  
+  Les cubes ont un grand nombre de propriétés que vous pouvez définir pour affecter le comportement à l'échelle du cube. Ces propriétés sont présentées dans le tableau suivant.  
   
 > [!NOTE]  
 >  Certaines propriétés sont définies automatiquement lors de la création du cube et ne peuvent pas être modifiées.  
   
- Pour plus d’informations sur la définition des propriétés de cube, consultez [Concepteur de Cube &#40; Analysis Services - données multidimensionnelles &#41; ](http://msdn.microsoft.com/library/a6692467-da88-4312-8b03-d812f2ae5a96).  
+ Pour plus d’informations sur la définition des propriétés de cube, consultez [le Concepteur de Cube &#40;Analysis Services - données multidimensionnelles&#41;](http://msdn.microsoft.com/library/a6692467-da88-4312-8b03-d812f2ae5a96).  
   
 |Propriété| Description|  
 |--------------|-----------------|  
@@ -80,6 +49,6 @@ Les cubes ont un grand nombre de propriétés que vous pouvez définir pour affe
 >  Pour plus d’informations sur la définition des valeurs pour la propriété ErrorConfiguration lorsque vous travaillez avec des valeurs null et d’autres problèmes d’intégrité des données, consultez [la gestion des problèmes d’intégrité des données dans Analysis Services 2005](http://go.microsoft.com/fwlink/?LinkId=81891).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mise en cache proactive &#40; Partitions &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-proactive-caching.md)  
+ [Mise en cache proactive & #40 ; Partitions & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-proactive-caching.md)  
   
   

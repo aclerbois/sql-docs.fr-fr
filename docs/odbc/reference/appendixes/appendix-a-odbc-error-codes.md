@@ -1,31 +1,28 @@
 ---
-title: "Annexe a : Codes d’erreur ODBC | Documents Microsoft"
-ms.custom: 
+title: 'Annexe a : Codes d’erreur ODBC | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - error codes [ODBC]
 - SQLSTATE [ODBC]
 - error codes [ODBC], SQLSTATE
 ms.assetid: c06902e4-721d-42e2-b818-05f0e18e4ce0
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: af6533afbeb3b47c548e5475604136ae5fdc894b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c2f8c75c0066716eed74f6d53ee28413f9ae74ab
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendix-a-odbc-error-codes"></a>Annexe A : codes d'erreur ODBC
 Cette rubrique décrit les valeurs SQLSTATE pour ODBC 3. *x*. Pour plus d’informations sur ODBC 3. *x* valeurs SQLSTATE, consultez [mappages SQLSTATE](../../../odbc/reference/develop-app/sqlstate-mappings.md).  
@@ -37,7 +34,7 @@ Cette rubrique décrit les valeurs SQLSTATE pour ODBC 3. *x*. Pour plus d’info
 > [!NOTE]  
 >  Bien que l’exécution réussie d’une fonction est généralement indiquée par une valeur de retour SQL_SUCCESS, la valeur SQLSTATE 00000 indique également la réussite.  
   
-|SQLSTATE|Error|Peut être retourné à partir de|  
+|SQLSTATE|Erreur|Peut être retourné à partir de|  
 |--------------|-----------|--------------------------|  
 |01000|Avertissement général|Toutes les fonctions ODBC à l’exception :<br /><br /> **SQLError**<br /><br /> **SQLGetDiagField**<br /><br /> **SQLGetDiagRec**|  
 |01001|Conflit d’opération de curseur|**SQLExecDirect**<br /><br /> **SQLExecute**<br /><br /> **SQLParamData**<br /><br /> **SQLSetPos**|  
@@ -48,7 +45,7 @@ Cette rubrique décrit les valeurs SQLSTATE pour ODBC 3. *x*. Pour plus d’info
 |01007|Privilège n'accordé pas|**SQLExecDirect**<br /><br /> **SQLExecute**<br /><br /> **SQLParamData**|  
 |01 S 00|Attribut de chaîne de connexion non valide|**SQLBrowseConnect**<br /><br /> **SQLDriverConnec**|  
 |01 S 01|Erreur de ligne|**SQLBulkOperations**<br /><br /> **SQLExtendedFetch**<br /><br /> **SQLSetPos**|  
-|01 S 02|Valeur de l’option modifiée|**SQLBrowseConnect**<br /><br /> **SQLConnect**<br /><br /> **SQLDriverConnect**<br /><br /> **SQLExecDirect**<br /><br /> **SQLExecute**<br /><br /> **SQLParamData**<br /><br /> **SQLPrepare**<br /><br /> **SQLSetConnectAttr**<br /><br /> **SQLSetDescField**<br /><br /> **SQLSetEnvAttr**<br /><br /> **SQLSetStmtAttr**|  
+|01S02|Valeur de l’option modifiée|**SQLBrowseConnect**<br /><br /> **SQLConnect**<br /><br /> **SQLDriverConnect**<br /><br /> **SQLExecDirect**<br /><br /> **SQLExecute**<br /><br /> **SQLParamData**<br /><br /> **SQLPrepare**<br /><br /> **SQLSetConnectAttr**<br /><br /> **SQLSetDescField**<br /><br /> **SQLSetEnvAttr**<br /><br /> **SQLSetStmtAttr**|  
 |01S06|Tentative de récupération avant que le jeu de résultats renvoyé le premier ensemble de lignes|**SQLExtendedFetch**<br /><br /> **SQLFetchScroll**|  
 |01 S 07|Troncation fractionnelle|**SQLBulkOperations**<br /><br /> **SQLExecDirect**<br /><br /> **SQLExecute**<br /><br /> **SQLExtendedFetch**<br /><br /> **SQLFetch**<br /><br /> **SQLFetchScroll**<br /><br /> **SQLGetData**<br /><br /> **SQLParamData**<br /><br /> **SQLSetPos**|  
 |01S08|Erreur pendant l’enregistrement de la source de données fichier|**SQLDriverConnect**|  

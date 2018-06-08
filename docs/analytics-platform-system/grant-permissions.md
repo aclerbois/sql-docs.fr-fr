@@ -1,26 +1,22 @@
 ---
-title: Accorder des autorisations
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.openlocfilehash: d7d685d15eb0e5704698ebd2b79c20589f49ee16
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Autorisations GRANT T-SQL - Parallel Data Warehouse | Documents Microsoft
+description: Autorisations GRANT T-SQL pour les opérations de base de données dans Parallel Data Warehouse.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 01ef7b199a07be8bbc2dc1dee40d9c4d5771db1b
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="grant-permissions"></a>Accorder des autorisations
+# <a name="grant-t-sql-permissions-for-parallel-data-warehouse"></a>Autorisations GRANT T-SQL pour Parallel Data Warehouse
+Autorisations GRANT T-SQL pour les opérations de base de données dans Parallel Data Warehouse.
 
 ## <a name="grant-permissions-to-submit-database-queries"></a>Accorder des autorisations pour soumettre des requêtes de base de données
 Cette section explique comment accorder des autorisations aux rôles de base de données et aux utilisateurs d’interroger des données sur l’appliance SQL Server PDW.  
@@ -221,7 +217,7 @@ For a list of all permissions, see [Permissions: GRANT, DENY, REVOKE &#40;SQL Se
 -->
 
 ## <a name="grant-permissions-to-monitor-the-appliance"></a>Accorder des autorisations pour contrôler le matériel
-SQL Server PDW peut être surveillée à l’aide des vues système SQL Server PDW ou Console d’administration. Connexions requièrent le niveau de serveur **VIEW SERVER STATE** autorisation d’analyse de l’application. Connexions nécessitent la **ALTER ANY CONNECTION** autorisé à mettre fin aux connexions à l’aide de la Console d’administration ou le **KILL** commande. Pour plus d’informations sur les autorisations requises pour utiliser la Console d’administration, consultez [accorder des autorisations pour utiliser la Console d’administration &#40; SQL Server PDW &#41; ](#grant-permissions-to-use-the-admin-console).  
+SQL Server PDW peut être surveillée à l’aide des vues système SQL Server PDW ou Console d’administration. Connexions requièrent le niveau de serveur **VIEW SERVER STATE** autorisation d’analyse de l’application. Connexions nécessitent la **ALTER ANY CONNECTION** autorisé à mettre fin aux connexions à l’aide de la Console d’administration ou le **KILL** commande. Pour plus d’informations sur les autorisations requises pour utiliser la Console d’administration, consultez [accorder des autorisations pour utiliser la Console d’administration &#40;SQL Server PDW&#41;](#grant-permissions-to-use-the-admin-console).  
   
 ### <a name="PermsAdminConsole"></a>Accorder l’autorisation d’analyse de l’application à l’aide de vues système  
 Les instructions SQL suivantes créent une connexion nommée `monitor_login` et accorde le **VIEW SERVER STATE** autorisé au `monitor_login` connexion.  

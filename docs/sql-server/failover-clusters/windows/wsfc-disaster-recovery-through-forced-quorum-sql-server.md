@@ -1,36 +1,34 @@
 ---
-title: "Récupération d’urgence WSFC par le quorum forcé (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Récupération d’urgence WSFC par le quorum forcé (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
 - quorum [SQL Server], AlwaysOn and WSFC quorum
 - failover clustering [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 6cefdc18-899e-410c-9ae4-d6080f724046
-caps.latest.revision: "21"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 16d17e02c0594f3906651b0f270c8a36e891e69d
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+caps.latest.revision: 21
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 428315adfdf9b0535fd349c18f61c4f741b90823
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772955"
 ---
 # <a name="wsfc-disaster-recovery-through-forced-quorum-sql-server"></a>Récupération d'urgence WSFC par le quorum forcé (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’échec du quorum est généralement dû à un problème systémique grave, à un échec de communication persistant ou à une mauvaise configuration impliquant plusieurs nœuds dans le cluster WSFC.  Une intervention manuelle est nécessaire pour la récupération d'une défaillance de quorum.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'échec du quorum est généralement dû à un problème systémique grave, à un échec de communication persistant ou à une mauvaise configuration impliquant plusieurs nœuds dans le cluster WSFC.  Une intervention manuelle est nécessaire pour la récupération d'une défaillance de quorum.  
   
--   **Avant de commencer :**  [Conditions préalables](#Prerequisites), [Sécurité](#Security)  
+-   **Before you start:**  [Prerequisites](#Prerequisites), [Security](#Security)  
   
 -   **Récupération d'urgence WSFC par le quorum forcé** [Récupération d'urgence WSFC par le quorum forcé](#Main)  
   
@@ -121,13 +119,13 @@ ms.lasthandoff: 12/05/2017
   
 -   [Utiliser le tableau de bord Always On &#40;SQL Server Management Studio&#41;](../../../database-engine/availability-groups/windows/use-the-always-on-dashboard-sql-server-management-studio.md)
   
-##  <a name="RelatedContent"></a> Contenu connexe  
+##  <a name="RelatedContent"></a> Contenu associé  
   
 -   [Afficher les événements et journaux pour un cluster de basculement](http://technet.microsoft.com/library/cc772342\(WS.10\).aspx)  
   
 -   [Applets de commande de cluster de basculement Get-ClusterLog](http://technet.microsoft.com/library/ee461045.aspx)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Clustering de basculement Windows Server &#40;WSFC&#41; avec SQL Server](../../../sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server.md)  
   
   

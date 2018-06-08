@@ -1,39 +1,24 @@
 ---
-title: "Source de l’élément (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Source de l’élément (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: Source Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- urn:schemas-microsoft-com:xml-analysis#Source
-- http://schemas.microsoft.com/analysisservices/2003/engine#Source
-- microsoft.xml.analysis.source
-helpviewer_keywords: Source element
-ms.assetid: 4d4665ae-e20f-4baf-ab0f-848660caf500
-caps.latest.revision: "17"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5e3c02c0702b343ca0271bdc61601631d07dd68f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 8aaef002e649e01a51b99bd007ae5459e8cdbd97
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576421"
 ---
 # <a name="source-element-xmla"></a>Élément Source (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Représente une partition source à fusionner lors une [MergePartitions](../../../analysis-services/xmla/xml-elements-commands/mergepartitions-element-xmla.md) commande.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Représente une partition source à fusionner lors une [MergePartitions](../../../analysis-services/xmla/xml-elements-commands/mergepartitions-element-xmla.md) commande.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -49,7 +34,7 @@ ms.lasthandoff: 01/08/2018
 </Sources>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -64,10 +49,10 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Sources](../../../analysis-services/xmla/xml-elements-properties/sources-element-xmla.md)|  
 |Éléments enfants|[CubeID](../../../analysis-services/xmla/xml-elements-properties/cubeid-element-xmla.md), [DatabaseID](../../../analysis-services/xmla/xml-elements-properties/databaseid-element-xmla.md), [MeasureGroupID](../../../analysis-services/xmla/xml-elements-properties/measuregroupid-element-xmla.md), [PartitionID](../../../analysis-services/xmla/xml-elements-properties/partitionid-element-xmla.md)|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **Source** élément est une référence d’objet à une partition unique à fusionner dans une partition cible spécifiée par la **cible** élément du parent **MergePartitions** élément.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant associe l'ensemble des quatre partitions du groupe de mesures `Internet Sales` dans la partition cible `Internet_Sales_2004` . L’exemple fait référence à la **Adventure Works** cube de la [!INCLUDE[ssAWDWsp](../../../includes/ssawdwsp-md.md)] exemple [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] base de données.  
   
 ```  
@@ -84,8 +69,8 @@ ms.lasthandoff: 01/08/2018
 </MergePartitions>  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Élément cible &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/target-element-xmla.md)   
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Cibler élément &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/target-element-xmla.md)   
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

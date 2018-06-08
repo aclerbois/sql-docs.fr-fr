@@ -1,16 +1,15 @@
 ---
-title: "Tables, matrices et listes (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Tables, matrices et listes (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rtp.rptdesigner.tablixgroup.f1
 - "10045"
@@ -37,16 +36,15 @@ f1_keywords:
 - "10043"
 - sql13.rtp.rptdesigner.groupproperties.pagebreaks.f1
 ms.assetid: 9dcf3fc8-bf9c-4a14-a03d-e78254aa4098
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 1caed0f401f74ad420475aae125ba47558d0163a
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2ee7b2cd3b9a1ea25bf04656af7339e93913af04
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tables-matrices-and-lists-report-builder-and-ssrs"></a>Tables, matrices et listes (Générateur de rapports et SSRS)
  Dans [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)], les tables, matrices et listes sont des *régions de données* qui affichent les données du rapport paginé dans des cellules organisées en lignes et colonnes. Les cellules contiennent en général des données texte, telles que du texte, des dates et des nombres, mais elles peuvent également contenir des jauges, des graphiques ou des éléments de rapport, par exemple des images. Ensemble, les tables, matrices et listes sont fréquemment connues sous le nom de régions de données de *tableau matriciel* .  
@@ -112,7 +110,7 @@ ms.lasthandoff: 01/09/2018
  L'Assistant vous guide pendant la procédure pour générer et configurer rapidement une table ou matrice. Une fois l'Assistant terminé ou si vous créez les régions de données de tableau matriciel de bout en bout, vous pouvez les configurer et les améliorer davantage. Les boîtes de dialogue, disponibles dans les menus contextuels sur les régions de données, facilitent la définition des propriétés utilisées le plus souvent pour les sauts de page, la répétition et la visibilité des en-têtes et pieds de page, les options d'affichage, les filtres et le tri. En outre, la région de données de tableau matriciel fournit une multitude de propriétés supplémentaires, que vous pouvez définir uniquement dans le volet Propriétés du Générateur de rapports. Par exemple, si vous souhaitez afficher un message quand le dataset pour une table, matrice ou liste est vide, vous spécifiez le texte du message dans la propriété de tableau matriciel NoRowsMessage dans le volet Propriétés.  
   
 ##  <a name="ChangingBetweenTablixTemplates"></a> Modification entre les modèles de tableau matriciel  
- Vous n'êtes pas tenu de rester à votre choix de modèle de tableau matriciel initial. À mesure que vous ajoutez des groupes, des totaux et des étiquettes, vous pouvez être amené à apporter des modifications à votre conception de tableau matriciel. Par exemple, vous pouvez commencer avec une table, puis supprimer la ligne de détails et ajouter des groupes de colonnes. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS&#41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
+ Vous n'êtes pas tenu de rester à votre choix de modèle de tableau matriciel initial. À mesure que vous ajoutez des groupes, des totaux et des étiquettes, vous pouvez être amené à apporter des modifications à votre conception de tableau matriciel. Par exemple, vous pouvez commencer avec une table, puis supprimer la ligne de détails et ajouter des groupes de colonnes. Pour plus d’informations, consultez [Exploration de la souplesse d’une région de données de tableau matriciel &#40;Générateur de rapports et SSRS& #41;](../../reporting-services/report-design/exploring-the-flexibility-of-a-tablix-data-region-report-builder-and-ssrs.md).  
   
  Vous pouvez poursuivre le développement d'une table, d'une matrice ou d'une liste en y ajoutant toute fonctionnalité de tableau matriciel. Les fonctionnalités de tableau matriciel assurent l'affichage de données de détail ou d'agrégats de données groupées dans des lignes et des colonnes. Vous pouvez créer des groupes imbriqués, des groupes adjacents indépendants ou des groupes récursifs. Vous pouvez filtrer et trier des données groupées et facilement associer des groupes en incluant plusieurs expressions de groupe dans une définition de groupe.  
   

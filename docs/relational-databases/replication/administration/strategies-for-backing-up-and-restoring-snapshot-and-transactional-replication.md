@@ -1,17 +1,16 @@
 ---
-title: "Stratégies de sauvegarde et de restauration de la réplication transactionnelle et d’instantané | Microsoft Docs"
-ms.custom: 
+title: Stratégies de sauvegarde et de restauration de la réplication transactionnelle et d’instantané | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backups [SQL Server replication], snapshot replication
 - restoring [SQL Server replication], transactional replication
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - sync with backup [SQL Server replication]
 - backups [SQL Server replication], transactional replication
 ms.assetid: a8afcdbc-55db-4916-a219-19454f561f9e
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 22b5c813c5dbe9441e605a8f69a67d79cd699bc3
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: bcb4fbdca1bf52c410a9d71e4aaf9b391475024f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="strategies-for-backing-up-and-restoring-snapshot-and-transactional-replication"></a>Stratégies de sauvegarde et de restauration de la réplication transactionnelle et d'instantané
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

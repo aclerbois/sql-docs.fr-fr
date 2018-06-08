@@ -1,27 +1,25 @@
 ---
-title: "Bien démarrer avec le contrôle ReportViewer 2016 | Microsoft Docs"
-ms.custom: 
+title: Bien démarrer avec le contrôle ReportViewer 2016 | Microsoft Docs
+ms.custom: ''
 ms.date: 06/12/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: application-integration
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 01a821c4-2920-400c-be03-93d26c749bb1
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 9b177bb647fd1c9daf5fb330f3bff15cf3e73ab3
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 1395b2351ebba9aa1d805b651640593942aaa9cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integrating-reporting-services-using-reportviewer-controls---get-started"></a>Intégration de Reporting Services à l’aide de contrôles ReportViewer - Bien démarrer
 

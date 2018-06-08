@@ -1,16 +1,12 @@
 ---
-title: sys.dm_qn_subscriptions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_qn_subscriptions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_qn_subscriptions
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_qn_subscriptions dynamic management view
 ms.assetid: a3040ce6-f5af-48fc-8835-c418912f830c
-caps.latest.revision: 
+caps.latest.revision: 26
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2fdc34ae033de8baf0173bc7c86bd0fe05c7668f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e3f6886a16b8b1d87c2864ed93fd8be764700dc5
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="query-notifications---sysdmqnsubscriptions"></a>-Les Notifications de requête sys.dm_qn_subscriptions
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -45,7 +40,7 @@ ms.lasthandoff: 02/03/2018
 |**sid**|**varbinary(85)**|ID de sécurité du principal du serveur qui a créé cet abonnement et qui en est propriétaire.|  
 |**object_id**|**int**|ID de la table interne qui stocke les informations sur les paramètres de l'abonnement.|  
 |**created**|**datetime**|Date et heure de création de l’abonnement.|  
-|**timeout**|**int**|Délai d'expiration de l'abonnement, en secondes. La notification est marquée pour se déclencher après ce délai.<br /><br /> Remarque : L’heure de déclenchement réel peut dépasser le délai d’attente spécifié. Cependant, si une modification qui invalide l'abonnement a lieu après le délai d'expiration, mais avant le déclenchement de l'abonnement, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fait en sorte que le déclenchement ait lieu au moment de la modification.|  
+|**Délai d’attente**|**int**|Délai d'expiration de l'abonnement, en secondes. La notification est marquée pour se déclencher après ce délai.<br /><br /> Remarque : L’heure de déclenchement réel peut dépasser le délai d’attente spécifié. Cependant, si une modification qui invalide l'abonnement a lieu après le délai d'expiration, mais avant le déclenchement de l'abonnement, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fait en sorte que le déclenchement ait lieu au moment de la modification.|  
 |**status**|**int**|Indique l'état de l'abonnement. Consultez le tableau sous la section Remarques pour obtenir la liste de codes.|  
   
 ## <a name="relationship-cardinalities"></a>Cardinalités de la relation  
@@ -140,7 +135,7 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Notifications de requêtes relatives des vues de gestion dynamique &#40; Transact-SQL &#41;](http://msdn.microsoft.com/library/92eb22d8-33f3-4c17-b32e-e23acdfbd8f4)   
- [KILL QUERY NOTIFICATION SUBSCRIPTION &#40; Transact-SQL &#41;](../../t-sql/language-elements/kill-query-notification-subscription-transact-sql.md)  
+ [Vues de gestion dynamique liées aux Notifications de requête &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/92eb22d8-33f3-4c17-b32e-e23acdfbd8f4)   
+ [KILL QUERY NOTIFICATION SUBSCRIPTION &#40;Transact-SQL&#41;](../../t-sql/language-elements/kill-query-notification-subscription-transact-sql.md)  
   
   

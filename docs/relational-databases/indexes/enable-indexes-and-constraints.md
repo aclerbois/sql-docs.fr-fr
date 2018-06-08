@@ -1,17 +1,14 @@
 ---
 title: Activer les index et contraintes | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - indexes [SQL Server], enabling
 - nonclustered indexes [SQL Server], enabling a disabled index
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - constraints [SQL Server], enabling
 - clustered indexes, enabling disabled indexes
 ms.assetid: c55c8865-322e-4ab0-ba04-ea1f56735353
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 27
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7d57ace5eda942fe9dba91d8a4f521bbd1dbca25
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a128f53b779b6c3ea99aa694bfb96e61c334b722
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-indexes-and-constraints"></a>Activer les index et contraintes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

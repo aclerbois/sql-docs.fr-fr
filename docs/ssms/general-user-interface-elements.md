@@ -1,33 +1,32 @@
 ---
-title: "Éléments généraux relatifs à l’interface utilisateur | Microsoft Docs"
-ms.custom: 
+title: Éléments généraux relatifs à l’interface utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], user interface elements
 - user interface [SQL Server Management Studio]
 ms.assetid: 436d9afb-09c3-4838-9b54-4449a5178d0f
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4ab10f8b0aaab9cc0c967187dea73e10739164f6
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 68f0894a8b02d730d71684dcfb5e5a3e2861c7ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="general-user-interface-elements"></a>Éléments généraux relatifs à l'interface utilisateur
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] **L’éditeur**, la fenêtre **Propriétés** et la **boîte à outils** représentent certains des éléments d’interface utilisateur de base de [!INCLUDE[msCoName](../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+**L’éditeur**, la fenêtre **Propriétés** et la **boîte à outils** représentent certains des éléments d’interface utilisateur de base de [!INCLUDE[msCoName](../includes/msconame_md.md)] [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull_md.md)].  
   
 ## <a name="in-this-section"></a>Dans cette section  
 [Boîte de dialogue À propos de](../ssms/about-dialog-box.md)  

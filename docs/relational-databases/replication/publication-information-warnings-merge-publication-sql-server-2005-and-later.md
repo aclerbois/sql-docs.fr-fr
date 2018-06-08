@@ -1,30 +1,28 @@
 ---
-title: "Informations de publication, Avertissements (Publication de fusion, SQL Server 2005 et versions ultérieures) | Microsoft Docs"
-ms.custom: 
+title: Informations de publication, Avertissements (Publication de fusion, SQL Server 2005 et versions ultérieures) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.monitor.publicationinfo.warningsandagents.merge.f1
 ms.assetid: 9bef3565-5f13-42ac-8723-ebe55b0c11e6
-caps.latest.revision: 
+caps.latest.revision: 27
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ff89a5c3cd17f79ae90d57e987edd30827e3bee0
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 4f9933a5de6a2d1b3688e3e01122978bf3fd6e36
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publication-information-warnings-merge-publication-sql-server-2005-and-later"></a>Informations de publication, Avertissements (Publication de fusion, SQL Server 2005 et versions ultérieures)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

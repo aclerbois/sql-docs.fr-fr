@@ -1,32 +1,29 @@
 ---
-title: "L’inscription d’un objet métier personnalisé | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: L’inscription d’un objet métier personnalisé | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - custom business object in RDS [ADO]
 - registering custom business objects in RDS [ADO]
 - business objects in RDS [ADO]
 ms.assetid: e9032ad8-d14c-42e3-ba13-cb5f00084a79
-caps.latest.revision: 
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1b95345c2c3818330bf442b56671192d9a47cad6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d0102bc6f817c67bc61ef2c4f73d05f1bf86d099
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registering-a-custom-business-object"></a>L’inscription d’un objet métier personnalisé
 Pour permettre l’exécution d’un objet métier personnalisé (.dll ou .exe) via le serveur Web, le ProgID de l’objet métier doit être entrée dans le Registre comme indiqué dans cette procédure. Cette fonctionnalité RDS protège la sécurité de votre serveur Web en cours d’exécution que les exécutables approuvés.  

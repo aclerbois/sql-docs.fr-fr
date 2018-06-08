@@ -1,29 +1,20 @@
 ---
 title: CurrentOrdinal (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: functions [MDX], CurrentOrdinal
-ms.assetid: f127e0f1-c3f5-4cae-ad4c-b851e8728036
-caps.latest.revision: "16"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: f3ce47ba796d9b4e81588baaa7c21cba2f5a4aa7
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 281edfa10d371c94b831319bdca528b99310a10a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578731"
 ---
 # <a name="currentordinal-mdx"></a>CurrentOrdinal (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -41,7 +32,7 @@ Set_Expression.CurrentOrdinal
  *Set_Expression*  
  Une expression MDX (Multidimensional Expressions) valide qui retourne un jeu.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Lors du parcours d’un jeu, comme avec la [Filter (MDX)](../mdx/filter-mdx.md) ou [Generate (MDX)](../mdx/generate-mdx.md) fonctions, les **CurrentOrdinal** fonction retourne le numéro d’itération.  
   
 ## <a name="examples"></a>Exemples  
@@ -92,6 +83,6 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

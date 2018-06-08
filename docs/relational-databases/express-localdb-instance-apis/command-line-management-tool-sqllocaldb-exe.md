@@ -1,29 +1,27 @@
 ---
-title: "Outil de gestion de ligne de commande : SqlLocalDB.exe | Documents Microsoft"
-ms.custom: 
+title: 'Outil de gestion de ligne de commande : SqlLocalDB.exe | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: localdb
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apilocation:
 - sqluserinstance.dll
 ms.assetid: dd0882b1-a8a9-447a-8bdf-0f9d7f36d336
-caps.latest.revision: 
+caps.latest.revision: 9
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9ef2f4341c5f1b6e2e1558930e0e58227e093271
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: eba929c35e7e6010bbb12089a7a69f4c52be74dd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-line-management-tool-sqllocaldbexe"></a>Outil de gestion en ligne de commande : SqlLocalDB.exe
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

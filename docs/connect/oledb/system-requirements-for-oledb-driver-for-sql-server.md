@@ -3,14 +3,12 @@ title: Configuration système requise pour le pilote OLE DB pour SQL Server | Do
 description: Configuration requise pour le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -20,16 +18,17 @@ helpviewer_keywords:
 - MSOLEDBSQL, system requirements
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0669847f648668144e079bc7437d28e8a5ad7a87
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: e109f228d8b902e5c34b4ed5731b80e315fffe3c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-requirements-for-ole-db-driver-for-sql-server"></a>Configuration système requise pour le pilote OLE DB pour SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../includes/driver_oledb_download.md)]
 
   Pour utiliser les fonctionnalités d'accès aux données de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], par exemple MARS, les logiciels suivants doivent être installés :  
 
@@ -69,19 +68,19 @@ ms.lasthandoff: 03/30/2018
 
  IDBInfo::GetKeywords retourne toujours une liste de mots-clés qui correspond à la version du serveur sur la connexion et n’est pas affectée par **DataTypeCompatibility**.  
 
-|Type de données|Pilote d’OLE DB pour SQL Server<br /><br />SQL Server 2005|SQL Server Native Client 11.0<br /><br /> [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|Pilote d’OLE DB pour SQL Server|Windows Data Access Components, MDAC et<br /><br /> Pilote OLE DB pour les applications OLE DB pour SQL Server avec DataTypeCompatibility = 80|  
+|Type de données|SQL Server Native Client<br /><br />SQL Server 2005|SQL Server Native Client 11.0<br /><br /> [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|Pilote d’OLE DB pour SQL Server|Windows Data Access Components, MDAC et<br /><br /> Pilote OLE DB pour les applications OLE DB pour SQL Server avec DataTypeCompatibility = 80|  
 |---------------|--------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|  
-|CLR UDT (\<= 8 Ko)|udt|Udt|Udt|Varbinary|  
+|CLR UDT (\<= 8 Ko)|udt|udt|udt|Varbinary|  
 |varbinary(max)|varbinary|varbinary|varbinary|image|  
 |varchar(max)|varchar|varchar|varchar|Texte|  
 |nvarchar(max)|nvarchar|nvarchar|nvarchar|Ntext|  
 |xml|xml|xml|xml|Ntext|  
-|CLR UDT (>= 8 Ko)|udt|varbinary|varbinary|image|  
-|date|date|varchar|varchar|Varchar|  
-|datetime2|datetime2|varchar|varchar|Varchar|  
-|datetimeoffset|datetimeoffset|varchar|varchar|Varchar|  
-|time|time|varchar|varchar|Varchar|  
+|CLR UDT (>= 8 Ko)|varbinary|udt|udt|image|  
+|date|varchar|date|date|Varchar|  
+|datetime2|varchar|datetime2|datetime2|Varchar|  
+|datetimeoffset|varchar|datetimeoffset|datetimeoffset|Varchar|  
+|time|varchar|time|time|Varchar|  
 
 ## <a name="see-also"></a>Voir aussi  
- [Programmation de SQL Server OLE DB pilote](../oledb/oledb-driver-for-sql-server-programming.md)   
- [Installation du pilote OLE DB pour SQL Server](../oledb/applications/installing-oledb-driver-for-sql-server.md)  
+ [Pilote d’OLE DB pour SQL Server](../oledb/oledb-driver-for-sql-server.md)   
+ [Installation d’OLE DB Driver pour SQL Server](../oledb/applications/installing-oledb-driver-for-sql-server.md)  

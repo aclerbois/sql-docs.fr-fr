@@ -1,34 +1,33 @@
 ---
 title: SQL Server, objet Broker - DBM Transport | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Broker / DBM Transport object
 - SQLServer:Broker/DBM Transport
 ms.assetid: eddb60b6-20a9-416c-adf3-4bc1687944fa
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2939dbbd505021da7a8623c5671ad7bd3063cc7a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: dc79e7ca28f76cb2a2e81995448ea6f645d058a5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-broker---dbm-transport-object"></a>SQL Server, objet Broker - DBM Transport
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet de performance **Broker/DBM Transport** contient des compteurs de performances qui recueillent des informations concernant l’activité réseau relative à Service Broker et à la mise en miroir de bases de données. Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’objet de performance **Broker / DBM Transport** contient des compteurs de performances qui recueillent des informations concernant l’activité réseau relative à Service Broker et à la mise en miroir de bases de données. Le tableau ci-dessous répertorie les compteurs inclus dans cet objet.  
   
 |Compteur SQL Server Broker/DBM Transport|Description|  
 |------------------------------------------------|-----------------|  

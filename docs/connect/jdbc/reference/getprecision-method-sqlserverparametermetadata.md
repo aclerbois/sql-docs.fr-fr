@@ -1,30 +1,29 @@
 ---
-title: "Méthode getPrecision (SQLServerParameterMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getPrecision (SQLServerParameterMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerParameterMetaData.getPrecision
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerParameterMetaData.getPrecision
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 8bd79484-bab6-423b-978f-d7ec7132ebeb
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 24ae94a05a20750fbfb8b80a9ab905753070ecbb
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: aaedd40b28aabcfda5ebf5526cf6921807876054
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getprecision-method-sqlserverparametermetadata"></a>Méthode getPrecision (SQLServerParameterMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public int getPrecision(int param)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *Param*  
+ *param*  
   
  Un **int** qui indique l’index de paramètre.  
   

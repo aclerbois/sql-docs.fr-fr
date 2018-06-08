@@ -1,15 +1,14 @@
 ---
-title: "Procédures stockées | Documents Microsoft"
-ms.custom: 
+title: Procédures stockées | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - OLE DB, stored procedures
@@ -17,22 +16,22 @@ helpviewer_keywords:
 - SQL Server Native Client OLE DB provider, stored procedures
 - stored procedures [OLE DB], about OLE DB stored procedures
 ms.assetid: 75611e40-789f-412b-91e5-0cc0b8d289ef
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd5e8a5dc46662f864ea0f17f8a93f8f2a19826a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4737aad3f4a5bd7cd4807155321574f9f864d44d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stored-procedures"></a>Procédures stockées
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../../includes/snac-deprecated.md)]
 
-  Une procédure stockée ([procédures stockées &#40; moteur de base de données &#41;](../../../relational-databases/stored-procedures/stored-procedures-database-engine.md)) est un objet exécutable stocké dans une base de données. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prend en charge :  
+  Une procédure stockée ([procédures stockées & #40 ; moteur de base de données & #41 ;](../../../relational-databases/stored-procedures/stored-procedures-database-engine.md)) est un objet exécutable stocké dans une base de données. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] prend en charge :  
   
 -   Procédures stockées  
   
@@ -44,9 +43,9 @@ ms.lasthandoff: 01/25/2018
   
 ## <a name="in-this-section"></a>Dans cette section  
   
--   [En cours d’exécution procédures stockées &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/stored-procedures-running.md)  
+-   [En cours d’exécution procédures stockées & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client/ole-db/stored-procedures-running.md)  
   
--   [Appeler une procédure stockée &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/stored-procedures-calling.md)  
+-   [Appeler une procédure stockée & #40 ; OLE DB & #41 ;](../../../relational-databases/native-client/ole-db/stored-procedures-calling.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [SQL Server Native Client &#40;OLE DB&#41;](../../../relational-databases/native-client/ole-db/sql-server-native-client-ole-db.md)  

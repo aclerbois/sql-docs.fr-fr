@@ -1,34 +1,30 @@
 ---
-title: "Protocoles pour MSSQLSERVER (onglet indicateurs) les propriétés | Documents Microsoft"
-ms.custom: 
+title: Propriétés de Protocoles pour MSSQLSERVER (onglet Indicateurs) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - MSSQLSERVER property protocols
 ms.assetid: 4d38e6e9-f95f-4e79-ae45-89f631037528
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eeca5f9ce24cd9ff24663a05344bd8543b1141b7
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: 9860599e0865871a928d34ddd8f38bad11c1213e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="protocols-for-mssqlserver-properties-flags-tab"></a>Propriétés de Protocoles pour MSSQLSERVER (onglet Indicateurs)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-Lorsqu'un certificat est installé sur le serveur, utilisez l'onglet **Indicateurs** dans la boîte de dialogue **Propriétés de Protocoles pour MSSQLSERVER** pour afficher ou spécifier les options de chiffrement de protocole et de masquage d'instance. [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être redémarré pour activer ou désactiver la **ForceEncryption** paramètre.  
+  Lorsqu'un certificat est installé sur le serveur, utilisez l'onglet **Indicateurs** dans la boîte de dialogue **Propriétés de Protocoles pour MSSQLSERVER** pour afficher ou spécifier les options de chiffrement de protocole et de masquage d'instance. [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être redémarré pour activer ou désactiver le paramètre **ForceEncryption** .  
   
  Pour chiffrer les connexions, vous devez fournir un certificat au [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] . Si aucun certificat n’est installé, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] génère un certificat auto-signé lors du démarrage de l’instance. Ce certificat autosigné peut être utilisé à la place d'un certificat émanant d'une autorité de certification approuvée, mais il ne fournit ni authentification ni non-répudiation.  
   
@@ -40,7 +36,7 @@ Lorsqu'un certificat est installé sur le serveur, utilisez l'onglet **Indicateu
  Le processus de connexion est toujours chiffré. Quand l’option **ForceEncryption** a la valeur **Oui**, toutes les communications client/serveur sont chiffrées et les clients qui se connectent au [!INCLUDE[ssDE](../../includes/ssde-md.md)] doivent être configurés de manière à approuver l’autorité racine du certificat du serveur. Pour plus d’informations, consultez « Procédure : activer des connexions chiffrées dans le [!INCLUDE[ssDE](../../includes/ssde-md.md)] (Gestionnaire de configuration[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ) » dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="cluster-servers"></a>Serveurs clusters  
- Si vous souhaitez utiliser le chiffrement à l'aide d'un cluster de basculement, vous devez installer le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Par exemple, si vous disposez d’un cluster à deux nœuds, avec les nœuds nommés « test1.  *\<votre société >*.com » et « test2. *\<votre société >*.com » et un serveur virtuel nommé « virtsql », vous devez installer un certificat pour « virtsql. *\<votre société >*.com » sur les deux nœuds. Vous pouvez ensuite activer la case à cocher **ForceEncryption** du **Gestionnaire de configurations SQL Server** pour configurer le chiffrement du cluster de basculement.  
+ Si vous souhaitez utiliser le chiffrement à l'aide d'un cluster de basculement, vous devez installer le certificat du serveur avec le nom DNS complet du serveur virtuel sur tous les nœuds du cluster de basculement. Par exemple, si vous disposez d’un cluster à deux nœuds nommés « test1.*\<votre_société>.* com » et « test2.*\<votre_société*.com », ainsi que d’un serveur virtuel nommé « virtsql », vous devez installer un certificat pour « virtsql.*\<votre_société*.com » sur les deux nœuds. Vous pouvez ensuite activer la case à cocher **ForceEncryption** du **Gestionnaire de configurations SQL Server** pour configurer le chiffrement du cluster de basculement.  
   
 ## <a name="options"></a>Options  
  **ForceEncryption**  

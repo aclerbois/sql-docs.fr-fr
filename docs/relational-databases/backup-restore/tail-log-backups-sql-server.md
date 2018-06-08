@@ -1,17 +1,14 @@
 ---
-title: "Sauvegardes de la fin du journal (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Sauvegardes de la fin du journal (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/01/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backing up [SQL Server], tail of log
 - transaction log backups [SQL Server], tail-log backups
@@ -20,19 +17,19 @@ helpviewer_keywords:
 - tail-log backups
 - backups [SQL Server], tail-log backups
 ms.assetid: 313ddaf6-ec54-4a81-a104-7ffa9533ca58
-caps.latest.revision: 
+caps.latest.revision: 55
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 06e3604fcd70a4ce7948d704d923c84cbc5acf2a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 70b11ff22c345737e95e32695cbe187d846cac00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tail-log-backups-sql-server"></a>Sauvegardes de la fin du journal (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique s’applique uniquement à la sauvegarde et la restauration des bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] employant le mode de récupération complète ou le mode de récupération utilisant les journaux de transactions.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique s'applique uniquement à la sauvegarde et la restauration des bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] employant le mode de récupération complète ou le mode de récupération utilisant les journaux de transactions.  
   
  Une *sauvegarde de la fin du journal* capture tous les enregistrements de journal qui n’ont pas encore été sauvegardés (la *fin du journal*) pour empêcher toute perte de travail et préserver la continuité de la séquence de journaux de transactions consécutifs. Avant de pouvoir récupérer une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] aux date et heure les plus récentes, vous devez sauvegarder la fin de son journal des transactions. La sauvegarde de la fin du journal est la dernière sauvegarde intéressante dans le plan de récupération de la base de données.  
   

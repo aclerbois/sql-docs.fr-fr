@@ -1,16 +1,14 @@
 ---
 title: GROUPING (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - GROUPING
@@ -25,21 +23,20 @@ helpviewer_keywords:
 - GROUPING function
 - CUBE operator
 ms.assetid: 4efa3868-1fc4-4626-8fb1-e863cc03e422
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: cb9c9e7f4e5fe4a82c6f7a451614fde82e730e08
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 513a61c37f0a885bd4f594af062ce6137b84f882
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="grouping-transact-sql"></a>GROUPING (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-  Indique si une expression de colonne spécifiée dans une liste GROUPE PAR est regroupée ou non. GROUPING retourne 1 pour agrégation ou 0 pour aucune agrégation dans le jeu de résultats. GROUPING peut être utilisé uniquement dans les clauses de liste SELECT \<select>, HAVING et ORDER BY lorsque GROUP BY est spécifié.  
+  Indique si une expression de colonne spécifiée dans une liste GROUP BY est agrégée ou non. GROUPING retourne 1 pour agrégé ou 0 pour non agrégé dans le jeu de résultats. GROUPING ne peut être utilisé que dans les clauses SELECT \<select list>, HAVING et ORDER BY lorsque GROUP BY est spécifié.   
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -58,10 +55,12 @@ GROUPING ( <column_expression> )
  **tinyint**  
   
 ## <a name="remarks"></a>Notes   
- GROUPING sert à distinguer les valeurs NULL retournées par CUBE, ROLLUP ou GROUPING SETS des valeurs NULL standard. La valeur NULL retournée comme résultat d'une opération CUBE, ROLLUP ou GROUPING SETS est une utilisation spéciale de NULL. Elle agit comme un espace réservé d'une colonne dans l'ensemble de résultats et signifie « tout ».  
+ GROUPING sert à distinguer les valeurs NULL retournées par CUBE, ROLLUP ou GROUPING SETS des valeurs NULL standard. La valeur NULL retournée comme résultat d'une opération CUBE, ROLLUP ou GROUPING SETS est une utilisation spéciale de NULL. Elle agit comme espace réservé de colonne dans le jeu de résultats et signifie « All » (tout). 
+  
   
 ## <a name="examples"></a>Exemples  
- L'exemple suivant regroupe `SalesQuota` et totalise les montants `SaleYTD` dans la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. La fonction `GROUPING` est appliquée à la colonne `SalesQuota`.  
+ L'exemple suivant groupe `SalesQuota` et agrège les montants `SaleYTD` dans la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. 
+ La fonction `GROUPING` est appliquée à la colonne `SalesQuota`.  
   
 ```  
 SELECT SalesQuota, SUM(SalesYTD) 'TotalSalesYTD', GROUPING(SalesQuota) AS 'Grouping'  
@@ -70,7 +69,11 @@ GROUP BY SalesQuota WITH ROLLUP;
 GO  
 ```  
   
- L'ensemble de résultats indique deux valeurs NULL sous `SalesQuota`. La première `NULL` représente le groupe des valeurs NULL de cette colonne dans la table. La seconde `NULL` se trouve dans la ligne résumée ajoutée par l'opération ROLLUP. La ligne résumée indique les montants `TotalSalesYTD` pour tous les groupes `SalesQuota` et est indiquée par `1` dans la colonne `Grouping`.  
+ Le jeu de résultats indique deux valeurs NULL sous `SalesQuota`.
+ La première valeur `NULL` représente le groupe des valeurs NULL de cette colonne dans la table. 
+ La seconde valeur `NULL` se trouve dans la ligne résumée ajoutée par l'opération ROLLUP. 
+ La ligne du total indique les montants `TotalSalesYTD` pour tous les groupes `SalesQuota` et est indiquée par `1` dans la colonne `Grouping`. 
+  
   
  [!INCLUDE[ssResult](../../includes/ssresult-md.md)]  
   

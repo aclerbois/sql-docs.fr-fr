@@ -1,17 +1,15 @@
 ---
-title: "Index XML (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Index XML (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - removing indexes
 - deleting indexes
@@ -36,20 +34,19 @@ helpviewer_keywords:
 - PROPERTY index
 - XML indexes [SQL Server], creating
 ms.assetid: f5c9209d-b3f3-4543-b30b-01365a5e7333
-caps.latest.revision: 
+caps.latest.revision: 59
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6ae2dbced7f4a077bcab341abf84eba5c189c3da
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 7b5109d315e3c4bafdf7af1d1c8b1bf3734e3e6d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-indexes-sql-server"></a>Index XML (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Des index XML peuvent être créés sur des colonnes de type **xml** . L'indexation porte sur les balises, les valeurs et les chemins d'accès rencontrés dans les instances XML de la colonne et contribue à l'optimisation des performances des requêtes. Votre application peut bénéficier d'un index XML dans les situations suivantes :  
+  Des index XML peuvent être créés sur des colonnes de type **xml** . L'indexation porte sur les balises, les valeurs et les chemins d'accès rencontrés dans les instances XML de la colonne et contribue à l'optimisation des performances des requêtes. Votre application peut bénéficier d'un index XML dans les situations suivantes :  
   
 -   Les requêtes portant sur des colonnes XML sont fréquentes dans votre charge de travail. Le coût de la maintenance des index XML au cours de la modification des données doit être pris en compte lors de l'évaluation des avantages.  
   

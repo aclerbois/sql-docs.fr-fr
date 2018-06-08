@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_137 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 137 (Database Engine error)
 ms.assetid: 47fb4212-2165-4fec-bc41-6d548465d7be
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0c242db0377a97305c26e35b53e165346af87815
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a7b3d57b868d9602707889c0142d9f0ca7d730c7
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver137"></a>MSSQLSERVER_137
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -62,7 +57,7 @@ EXECUTE ('SELECT @mycol FROM Production.Product;');
 ## <a name="user-action"></a>Action de l'utilisateur  
 Vérifiez que toutes variables utilisées dans un script SQL ont été déclarées avant d'être utilisées par ailleurs dans le script.  
   
-Réécrivez le script afin qu'il ne fasse pas référence aux variables de l'instruction EXECUTE déclarées en dehors. Par exemple :  
+Réécrivez le script afin qu'il ne fasse pas référence aux variables de l'instruction EXECUTE déclarées en dehors. Exemple :  
   
 USE AdventureWorks2012 ;  
   
@@ -74,7 +69,7 @@ SET @mycol = 'Name';
   
 EXECUTE ('SELECT ' + @mycol + ' FROM Production.Product';) ;  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [EXECUTE &#40;Transact-SQL&#41;](~/t-sql/language-elements/execute-transact-sql.md)  
 [Instructions SET &#40;Transact-SQL&#41;](~/t-sql/statements/set-statements-transact-sql.md)  
 [DECLARE @local_variable &#40;Transact-SQL&#41;](~/t-sql/language-elements/declare-local-variable-transact-sql.md)  

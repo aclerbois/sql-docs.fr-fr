@@ -1,32 +1,31 @@
 ---
-title: "Documentation du développeur Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Documentation du développeur Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - developer's guide [Reporting Services]
 - Reporting Services, programming
 - programming [Reporting Services]
 ms.assetid: d8afa405-1012-4349-a72d-e10d94f8453d
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 508253c11026074dc19ce93f173c036ae2751786
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d11e62a8a0a1f90d894c32c82aef938f89a61851
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-developer-documentation"></a>Documentation du développeur Reporting Services
   [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] offre plusieurs interfaces de programmation dont vous pouvez tirer parti dans vos propres applications. Vous pouvez utiliser les fonctionnalités existantes de [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] pour créer des outils de génération de rapports et de gestion personnalisés dans des sites Web et des applications Windows, ou vous pouvez étendre la plateforme [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)].  
@@ -40,9 +39,12 @@ ms.lasthandoff: 01/09/2018
  [Intégration de Reporting Services dans des applications](../reporting-services/application-integration/integrating-reporting-services-into-applications.md)  
  Fournit une vue d'ensemble de la manière d'utiliser [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] pour intégrer la création de rapports dans des applications personnalisées. Décrit les situations dans lesquelles utiliser l'accès URL direct et le service Web pour accéder au serveur de rapports.  
   
- [Service Web des serveurs de rapports](../reporting-services/report-server-web-service/report-server-web-service.md)  
+ [Service Web Report Server pour les applications ASP.NET et traditionnelles](../reporting-services/report-server-web-service/report-server-web-service.md)  
  Le service Web Report Server donne accès aux fonctionnalités complètes du serveur de rapports. Le service Web utilise SOAP sur HTTP et est conçu pour servir d'interface de communication entre les programmes clients et le serveur de rapports. Le service Web et ses méthodes exposent les fonctionnalités du serveur de rapports et vous permettent de créer des outils personnalisés pour n'importe quelle partie du cycle de vie du rapport, depuis la gestion jusqu'à l'exécution.  
-  
+ 
+ [Développer des applications modernes avec des API REST](developer/rest-api.md)</br>
+ Les API REST Reporting Services fournissent un accès par programmation aux objets d’un catalogue de serveur de rapports Reporting Services. En utilisant les API REST, vous pouvez parcourir l’arborescence des dossiers, découvrir le contenu d’un dossier ou télécharger une définition de rapport. Vous pouvez également créer, mettre à jour et supprimer des objets.
+
  [Accès URL &#40;SSRS&#41;](../reporting-services/url-access-ssrs.md)  
  [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] prend en charge un jeu complet de demandes basées sur une URL que vous pouvez utiliser comme point d'accès rapide et facile pour la navigation et la consultation des rapports. Vous pouvez utiliser cette technologie conjointement au service Web Report Server pour intégrer une solution de création de rapports complète dans vos applications de gestion personnalisées. L'accès URL s'avère particulièrement utile lors de l'intégration de rapports dans le cadre d'un portail Web ou lors de la consultation de rapports à partir d'un navigateur Web.  
   

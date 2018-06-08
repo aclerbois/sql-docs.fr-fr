@@ -1,32 +1,29 @@
 ---
-title: "Clustered, propriété-Exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Clustered, propriété-Exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Clustered property [ADOX], Visual Basic example
 ms.assetid: 1cd30769-c8af-43e7-be27-12ed0434daa1
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2d1fd197bf6b50ad4f5fbf31591c9ce33f39956a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d0550867bb66b87d8396e87d0e883a81a2ffae51
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clustered-property-example-vb"></a>Exemple de propriété Clustered (VB)
 Cet exemple illustre la [Clustered](../../../ado/reference/adox-api/clustered-property-adox.md) propriété d’un [Index](../../../ado/reference/adox-api/index-object-adox.md). Notez que les bases de données Microsoft Jet ne prennent pas charge les index ordonnés en clusters, cet exemple retourne **False** pour le **Clustered** propriété de tous les index dans le **Northwind** base de données.  

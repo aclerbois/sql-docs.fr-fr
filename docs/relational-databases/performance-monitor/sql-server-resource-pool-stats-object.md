@@ -1,34 +1,33 @@
 ---
 title: SQL Server, objet Resource Pool Stats | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Reosurce Pool Stats object
 - 'SQLServer: Resource Pool Stats object'
 ms.assetid: bb46e029-fcf9-4aeb-a066-be41e7668fb9
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 626e2db49945df2262db203dde46f78d5b5bde81
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 26a4d2ab7c1a39b2cdaa2865f6f5cc025d59a886
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-resource-pool-stats-object"></a>SQLServer, objet Statistiques des pools de ressources
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet SQLServer:Resource Pool Stats contient des compteurs de performances qui créent des rapports d’information sur les statistiques du pool des ressources de Resource Governor.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet SQLServer:Resource Pool Stat contient des compteurs de performance qui créent des rapports d'information sur les statistiques du pool des ressources de Resource Governor.  
   
  Chaque pool de ressources actif crée une instance de l'objet de performance SQLServer : Statistiques des pools de ressources (SQLServer:Resource Pool Stats) ayant le même nom d'instance que le nom du pool de ressources de Resource Governor. Le tableau suivant décrit les compteurs pris en charge sur cette instance.  
   

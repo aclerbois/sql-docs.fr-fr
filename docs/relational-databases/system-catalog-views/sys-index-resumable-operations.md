@@ -1,16 +1,14 @@
 ---
-title: sys.index_resumable_operations (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.index_resumable_operations (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 07/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.reviewer: 
-ms.service: 
+ms.reviewer: ''
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.index_resumable_operations_TSQL
@@ -20,17 +18,17 @@ dev_langs:
 helpviewer_keywords:
 - sys.indexes
 - sys.index_resumable_operations
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: 1
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 53b6aad214f3d1760bb03ff340e5a5dab30c1067
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2017 || = sqlallproducts-allversions
+ms.openlocfilehash: 0d68f6e0946f9b5fb781448b2973939831b6cab9
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="indexresumableoperations-transact-sql"></a>index_resumable_operations (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2017-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-asdb-xxxx-xxx-md.md)]
@@ -45,7 +43,7 @@ ms.lasthandoff: 02/03/2018
 |**sql_text**|**nvarchar(max)**|Texte de l’instruction DDL T-SQL|
 |**last_max_dop**|**smallint**|La dernière MAX_DOP utilisé (par défaut = 0)|
 |**partition_number**|**int**|Numéro de partition dans l’index ou le segment de mémoire propriétaire. Pour les index et les tables non partitionnées ou dans le cas de toutes les partitions sont en cours régénération de la valeur de cette colonne est NULL.|
-|**state**|**tinyint**|État opérationnel de l’index peut être repris :<br /><br />0 = en cours d’exécution<br /><br />1=Pause|
+|**state**|**tinyint**|État opérationnel de l’index peut être repris :<br /><br />0 = en cours d’exécution<br /><br />1 = pause|
 |**state_desc**|**nvarchar(60)**|Description de l’état opérationnel d’index peut être repris (en cours d’exécution ou suspendu)|  
 |**start_time**|**datetime**|Heure de début d’une opération de index (pas de valeur nulle)|
 |**last_pause_time**|**datatime**| Opération d’index dernier temps de pause (null). NULL si l’opération est en cours d’exécution et jamais en pause.|
@@ -65,7 +63,7 @@ SELECT * FROM  sys.index_resumable_operations WHERE STATE = 1;
   
 ## <a name="see-also"></a>Voir aussi 
  [ALTER INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-index-transact-sql.md)    
- [Catalog views &#40;Transact-SQL&#41;](catalog-views-transact-sql.md) [Object catalog views &#40;Transact-SQL&#41;](object-catalog-views-transact-sql.md) [sys.indexes &#40;Transact-SQL&#41;](sys-xml-indexes-transact-sql.md) [sys.index_columns &#40;Transact-SQL&#41;](sys-index-columns-transact-sql.md)   
+ [Affichages catalogue &#40;Transact-SQL&#41; ](catalog-views-transact-sql.md) [affichages catalogue de l’objet &#40;Transact-SQL&#41; ](object-catalog-views-transact-sql.md) [sys.indexes &#40;Transact-SQL&#41; ](sys-xml-indexes-transact-sql.md) [sys.index_columns &#40;Transact-SQL&#41;](sys-index-columns-transact-sql.md)   
  [sys.xml_indexes &#40;Transact-SQL&#41;](sys-xml-indexes-transact-sql.md)   
  [sys.objects &#40;Transact-SQL&#41;](sys-index-columns-transact-sql.md)   
  [sys.key_constraints &#40;Transact-SQL&#41;](sys-key-constraints-transact-sql.md)   

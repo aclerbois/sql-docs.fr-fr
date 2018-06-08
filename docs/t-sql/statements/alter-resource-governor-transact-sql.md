@@ -1,16 +1,14 @@
 ---
 title: ALTER RESOURCE GOVERNOR (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER RESOURCE GOVERNOR
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - ALTER RESOURCE GOVERNOR
 - RECONFIGURE, ALTER RESOURCE GOVERNOR
 ms.assetid: 442c54bf-a0a6-4108-ad20-db910ffa6e3c
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 49
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7650a9eec60108a5dbd228b21a27573cc72ca4fc
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 312448ec80ce4f63a62cba9bee1db251655c7835
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-resource-governor-transact-sql"></a>ALTER RESOURCE GOVERNOR (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -94,7 +91,7 @@ ALTER RESOURCE GOVERNOR
 > [!IMPORTANT]  
 >  L'instruction ALTER RESOURCE GOVERNOR RECONFIGURE doit être exécutée pour que les modifications de configuration soient appliquées.  
   
- CLASSIFIER_FUNCTION = { *schema_name***.***function_name* | NULL }  
+ CLASSIFIER_FUNCTION = { *schema_name ***.*** function_name* | NULL }  
  Enregistre la fonction de classification spécifiée par *schema_name.function_name*. Cette fonction classifie chaque nouvelle session et assigne les demandes et requêtes de session à un groupe de charges de travail. Lorsque la valeur NULL est utilisée, les nouvelles sessions sont assignées automatiquement au groupe de charges de travail par défaut.  
   
  RESET STATISTICS  

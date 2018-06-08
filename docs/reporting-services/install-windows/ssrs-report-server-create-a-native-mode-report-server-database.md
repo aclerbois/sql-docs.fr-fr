@@ -1,30 +1,28 @@
 ---
-title: "Créer une base de données du serveur de rapports en mode natif (Gestionnaire de configuration de SSRS) | Microsoft Docs"
-ms.custom: 
+title: Créer une base de données du serveur de rapports en mode natif (Gestionnaire de configuration de SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/24/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report servers [Reporting Services], databases
 - databases [Reporting Services], creating
 ms.assetid: 81b9f4ad-800b-4688-8b47-a5a83dc8ff10
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 86daba14047f2cc0f86fc77dc73d9d2474540305
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 20b53dc4af07f18f4bcb9161e786b3542b162e37
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-native-mode-report-server-database"></a>Créer une base de données du serveur de rapports en mode natif
 

@@ -1,16 +1,14 @@
 ---
-title: "STMLineFromWKB (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: STMLineFromWKB (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STMLineFromWKB_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STMLineFromWKB method
 ms.assetid: 05ca6d65-4799-4b9a-9672-cfebae95f23e
-caps.latest.revision: 
+caps.latest.revision: 15
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3130c8b4b20e4d3c1cd65637693ef0c141cb3f9f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b047684d5adf1247bf4a294c43796fe593ef0aa6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stmlinefromwkb-geography-data-type"></a>STMLineFromWKB (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

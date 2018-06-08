@@ -1,17 +1,13 @@
 ---
-title: "Outils d’analyse et de paramétrage des performances | Microsoft Docs"
-ms.custom: 
+title: Outils d’analyse et de paramétrage des performances | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - tools [SQL Server], monitoring performance
 - monitoring server performance [SQL Server], tools
@@ -22,19 +18,19 @@ helpviewer_keywords:
 - performance [SQL Server], monitoring tools
 - server performance [SQL Server], tools
 ms.assetid: 31529dfe-68e7-49f7-b3c2-39fcecf33a95
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5121d6d12b0c009a6463f461204da027f67f16ef
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 185096f5e4d9a2722d720fe37549f22cd5e608e7
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="performance-monitoring-and-tuning-tools"></a>Outils d'analyse et de paramétrage des performances
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit un ensemble complet d’outils permettant de surveiller les événements de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et de paramétrer la structure physique de la base de données. Le choix de l'outil dépend du type de surveillance ou de paramétrage à effectuer et des événements spécifiques à contrôler.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit un ensemble complet d'outils permettant de surveiller les événements de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et de paramétrer la structure physique de la base de données. Le choix de l'outil dépend du type de surveillance ou de paramétrage à effectuer et des événements spécifiques à contrôler.  
   
  Les outils de surveillance et de paramétrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont les suivants :  
   

@@ -3,9 +3,8 @@ title: IBCPSession::BCPDone (OLE DB) | Documents Microsoft
 description: IBCPSession::BCPDone (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-interfaces
 ms.reviewer: ''
 ms.suite: sql
@@ -20,13 +19,12 @@ helpviewer_keywords:
 - BCPDone method
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0195d193614894085b5d4ddc1dc8dee3372fb24c
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: be47a1af02449515eeea9e5c395796f602bbcf0e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsessionbcpdone-ole-db"></a>IBCPSession::BCPDone (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -35,7 +33,7 @@ ms.lasthandoff: 03/30/2018
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp  
   
 HRESULT BCPDone(void);  
 ```  
@@ -55,7 +53,7 @@ HRESULT BCPDone(void);
   
  L'instruction [!INCLUDE[tsql](../../../includes/tsql-md.md)] suivante doit être exécutée avant d'exécuter cet exemple :  
   
-```  
+```sql  
 create table fltest(col1 int, col2 int, col3 image)  
 insert into fltest values (1, 1, 0x0FF)  
 insert into fltest values (2, 2, 0xF00)  
@@ -71,9 +69,7 @@ insert into fltest values (4, 4, 0xFAD)
   
  **bcp master... fltest dans un fichier outfile.dat - n -T -S** *server*  
   
- Vous devez spécifier msoledbsql.lib lors de la compilation de cet exemple.  
-  
-```  
+```cpp  
 #define DBINITCONSTANTS   // Defined to initialize constants in oledb.h  
 #define INITGUID  
 #define MAX_ROWS  100  

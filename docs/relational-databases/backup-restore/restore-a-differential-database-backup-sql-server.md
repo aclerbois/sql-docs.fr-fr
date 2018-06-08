@@ -1,17 +1,14 @@
 ---
-title: "Restaurer une sauvegarde différentielle de base de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Restaurer une sauvegarde différentielle de base de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full differential backups [SQL Server]
 - restoring databases [SQL Server], full differential backups
@@ -19,16 +16,15 @@ helpviewer_keywords:
 - database restores [SQL Server], full differential backups
 - backing up databases [SQL Server], full differential backups
 ms.assetid: 0dd971a4-ee38-4dd3-9f30-ef77fc58dd11
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d5a965b04e6c09bfe067b3894cac0591fefd0247
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a4be76c0ab6001f7c11731a4ec963a366065b138
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-a-differential-database-backup-sql-server"></a>Restaurer une sauvegarde différentielle de base de données (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

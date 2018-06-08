@@ -1,34 +1,32 @@
 ---
-title: "Créer un fichier de format (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Créer un fichier de format (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/23/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - format files [SQL Server], creating
 ms.assetid: f680b4a0-630f-4052-9c79-d348c1076f7b
-caps.latest.revision: 
+caps.latest.revision: 57
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 39e7e7d14ab96b696ac5b849b413544f1de24c14
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6b49b51f61faf046f5145267c7fa6d45deecc53f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-format-file-sql-server"></a>Créer un fichier de format (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Lorsque vous importez des données en bloc dans une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou exportez en bloc des données à partir d'une table, utilisez un fichier de format vers un système souple pour l'écriture de fichiers de données nécessitant peu ou pas d'édition pour la conformité aux autres formats de données ou pour la lecture des fichiers de données provenant d'autres logiciels.  
+  Lorsque vous importez des données en bloc dans une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou exportez en bloc des données à partir d'une table, utilisez un fichier de format vers un système souple pour l'écriture de fichiers de données nécessitant peu ou pas d'édition pour la conformité aux autres formats de données ou pour la lecture des fichiers de données provenant d'autres logiciels.  
   
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge deux types de fichier de format : format XML et format non-XML. Le format non-XML est le format d'origine pris en charge dans les versions précédentes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   

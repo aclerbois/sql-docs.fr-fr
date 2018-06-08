@@ -1,17 +1,14 @@
 ---
-title: "Enregistrer un plan d’exécution au format XML | Microsoft Docs"
-ms.custom: 
+title: Enregistrer un plan d’exécution au format XML | Microsoft Docs
+ms.custom: ''
 ms.date: 08/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - XML query plans [SQL Server]
 - opening execution plans
@@ -19,19 +16,20 @@ helpviewer_keywords:
 - execution plans [SQL Server], saving
 - saving execution plans
 ms.assetid: c439e53b-56f3-4442-97c6-dabd48a203d8
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: caa43dba8d4ce0abdd5dc14f113a5fbfcf58d3ec
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 2d48e9e6902e3bd201b395aa817d3ec3f26ad222
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="save-an-execution-plan-in-xml-format"></a>Enregistrer un plan d'exécution au format XML
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Utilisez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour enregistrer un plan d’exécution en tant que fichier XML, puis pour l’ouvrir et le consulter.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Utilisez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour enregistrer un plan d'exécution en tant que fichier XML, puis pour l'ouvrir et le consulter.  
   
  Pour utiliser la fonctionnalité de plan d'exécution de [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)], ou les options SET de Showplan XML, les utilisateurs doivent disposer des autorisations appropriées pour exécuter la requête [!INCLUDE[tsql](../../includes/tsql-md.md)] pour laquelle un plan d'exécution est généré et doivent obtenir l'autorisation SHOWPLAN pour toutes les bases de données référencées par la requête.  
   
@@ -75,7 +73,7 @@ ms.lasthandoff: 01/18/2018
   
 5.  Dans la boîte de dialogue **Enregistrer** **les résultats \<de la grille ou du texte>**, dans la zone **Type de fichier**, cliquez sur **Tous les fichiers (\*.\*)**.  
   
-6.  Dans la boîte de dialogue **Nom de fichier**, fournissez un nom au format \<nom**>.sqlplan**, puis cliquez sur **Enregistrer**.  
+6.  Dans la boîte de dialogue **Nom de fichier**, fournissez un nom au format \<nom **>.sqlplan**, puis cliquez sur **Enregistrer**.  
   
 ### <a name="to-save-an-execution-plan-by-using-sql-server-management-studio-options"></a>Pour enregistrer un plan d'exécution avec les options de SQL Server Management Studio  
   
@@ -87,7 +85,7 @@ ms.lasthandoff: 01/18/2018
   
 3.  Dans la boîte de dialogue **Enregistrer sous**, assurez-vous que **Type de fichier** est défini à **Fichiers de plan d’exécution (\*.sqlplan)**.  
   
-4.  Dans la boîte de dialogue **Nom de fichier**, fournissez un nom au format \<nom**>.sqlplan**, puis cliquez sur **Enregistrer**.  
+4.  Dans la boîte de dialogue **Nom de fichier**, fournissez un nom au format \<nom **>.sqlplan**, puis cliquez sur **Enregistrer**.  
   
 ### <a name="to-open-a-saved-xml-query-plan-in-sql-server-management-studio"></a>Pour ouvrir un plan de requête XML dans SQL Server Management Studio  
   

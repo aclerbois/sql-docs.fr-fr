@@ -1,33 +1,34 @@
 ---
-title: "Envoyer par e-mail un fichier de requête de raccourci (Complément MDS pour Excel) | Microsoft Docs"
-ms.custom: 
+title: Envoyer par e-mail un fichier de requête de raccourci (Complément MDS pour Excel) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: microsoft-excel-add-in
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5d46f20a-b04a-45c7-82af-02a2baaabbd7
-caps.latest.revision: 
+caps.latest.revision: 7
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dbc5fe44566779dae76d3bb314c97a126630fd87
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 22212ddc6cc612eb398be3eba212ddd64426a3c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="email-a-shortcut-query-file-mds-add-in-for-excel"></a>Envoyer par courrier électronique un fichier de requête de raccourci (Complément MDS pour Excel)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans le [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)][!INCLUDE[ssMDSXLS](../../includes/ssmdsxls-md.md)], vous pouvez envoyer par e-mail un fichier de requête de raccourci à un autre utilisateur lorsque vous voulez vous assurer qu’il utilise les mêmes données que vous. Il est préférable de partager les requêtes plutôt qu'enregistrer la feuille de calcul et l'envoyer par courrier électronique.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour effectuer cette procédure :  
   
 -   Vous devez avoir installé Outlook 2010 ou une version ultérieure.  

@@ -1,16 +1,14 @@
 ---
 title: CREATE DATABASE (SQL Server Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DATABASE_TSQL
@@ -38,16 +36,15 @@ helpviewer_keywords:
 - moving databases
 - attaching databases [SQL Server], CREATE DATABASE...FOR ATTACH
 ms.assetid: 29ddac46-7a0f-4151-bd94-75c1908c89f8
-caps.latest.revision: 
+caps.latest.revision: 212
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 7c6e52f8e36ed40e18c2aeab162a75c39f186c97
-ms.sourcegitcommit: 82c9868b5bf95e5b0c68137ba434ddd37fc61072
+ms.openlocfilehash: 356a00b1c83220e0be211ee0357d2736533a3906
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-database-sql-server-transact-sql"></a>CREATE DATABASE (SQL Server Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,7 +55,7 @@ ms.lasthandoff: 01/22/2018
   
 ## <a name="syntax"></a>Syntaxe  
 
-Créer une base de données    
+création d'une base de données ;    
 
 ```  
 CREATE DATABASE database_name   
@@ -152,11 +149,11 @@ CREATE DATABASE database_snapshot_name
   
  *database_name* peut comporter 128 caractères maximum, à moins qu’aucun nom logique ne soit spécifié pour le fichier journal. Si aucun nom logique de fichier journal n’est spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] génère *logical_file_name* et the *os_file_name* pour le journal en ajoutant un suffixe à *database_name*. Cela limite la taille de *database_name* à 123 caractères de sorte que le nom logique du fichier généré ne comporte pas plus de 128 caractères.  
   
- Si le nom de fichier de données n’est pas spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise *database_name* à la fois comme *logical_file_name* et comme *os_file_name*. Le chemin par défaut est obtenu à partir du Registre. Le chemin par défaut peut être modifié à l’aide de **Propriétés du serveur (page Paramètres de base de données)** dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)]. La modification du chemin d'accès par défaut requiert le redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+ Si le nom de fichier de données n’est pas spécifié, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise *database_name* à la fois comme *logical_file_name* et comme *os_file_name*. Le chemin d'accès par défaut est obtenu à partir du Registre. Le chemin par défaut peut être modifié à l’aide de **Propriétés du serveur (page Paramètres de base de données)** dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)]. La modification du chemin d'accès par défaut requiert le redémarrage de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
  CONTAINMENT = { NONE | PARTIAL }  
 
-**S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].
+**S’applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie l'état de la relation contenant-contenu de la base de données. NONE = base de données sans relation contenant-contenu. PARTIAL = Base de données à relation contenant-contenu partielle.  
   
@@ -164,7 +161,7 @@ CREATE DATABASE database_snapshot_name
  Spécifie que les fichiers disque servant à stocker les parties données de la base de données (fichiers des données) sont définis de manière explicite. ON est nécessaire s’il est suivi d’une liste d’éléments \<filespec> séparés par des virgules, définissant les fichiers de données du groupe de fichiers primaire. La liste des fichiers du groupe de fichiers primaire peut être suivie d’une liste facultative d’éléments \<filegroup> séparés par des virgules, définissant les groupes de fichiers utilisateur et leurs fichiers.  
   
  PRIMARY  
- Spécifie que la liste \<filespec> associée définit le fichier primaire. Le premier fichier spécifié dans l’entrée \<filespec> du groupe de fichiers primaire devient le fichier primaire. Une base de données ne peut avoir qu’un seul fichier primaire. Pour plus d'informations, consultez [Groupes de fichiers et fichiers de base de données](../../relational-databases/databases/database-files-and-filegroups.md).  
+ Spécifie que la liste \<filespec> associée définit le fichier primaire. Le premier fichier spécifié dans l’entrée \<filespec> du groupe de fichiers primaire devient le fichier primaire. Une base de données ne peut avoir qu’un seul fichier primaire. Pour plus d'informations, consultez [Database Files and Filegroups](../../relational-databases/databases/database-files-and-filegroups.md).  
   
  Si vous ne précisez pas PRIMARY, le premier fichier spécifié dans l'instruction CREATE DATABASE devient le fichier primaire.  
   
@@ -384,7 +381,7 @@ CREATE DATABASE database_snapshot_name
  Spécifie l'incrément de croissance automatique du fichier. Le paramètre FILEGROWTH d'un fichier ne peut dépasser le paramètre MAXSIZE. FILEGROWTH ne peut pas être spécifié quand *os_file_name* est spécifié en tant que chemin UNC. FILEGROWTH ne s'applique pas à un groupe de fichiers FILESTREAM.  
   
  *growth_increment*  
- Quantité d’espace ajoutée au fichier chaque fois qu’un espace supplémentaire s’avère nécessaire.  
+ Quantité d’espace ajoutée au fichier quand de l’espace supplémentaire est nécessaire.  
   
  La valeur peut être exprimée en Mo, Ko, Go, To ou pourcentage (%). Si un nombre est mentionné sans spécifier Mo, Ko ou %, la valeur par défaut est Mo. Lorsque % est spécifié, la taille de l'incrément de croissance est le pourcentage choisi de la taille du fichier au moment où l'incrémentation a lieu. La taille spécifiée est arrondie à la valeur multiple de 64 Ko la plus proche, et la valeur minimale est de 64 Ko.  
   
@@ -489,7 +486,7 @@ Certaines fonctionnalités de base de données dépendent de fonctionnalités ou
  Sauf si FOR ATTACH est spécifié, chaque nouvelle base de données hérite des paramètres d'option de base de données de la base de données model. Par exemple, l’option de base de données auto shrink a la valeur **true** dans model et dans toutes les nouvelles bases de données que vous créez. Si vous modifiez les options de la base de données model, ces nouveaux paramètres d'options sont valables pour toutes les nouvelles bases de données que vous créez. Les opérations de modification dans la base de données model n'affectent pas les bases de données existantes. Si vous avez précisé FOR ATTACH dans l'instruction CREATE DATABASE, la nouvelle base de données héritera des paramètres d'option de la base de données originale.  
   
 ## <a name="viewing-database-information"></a>Affichage des informations de bases de données  
- Vous pouvez utiliser les vues de catalogue, les fonctions système et les procédures stockées du système pour retourner des informations sur les bases de données, les fichiers et les groupes de fichiers. Pour plus d’informations, consultez [Vues système &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90).  
+ Vous pouvez utiliser les affichages catalogue, les fonctions système et les procédures stockées du système pour retourner des informations sur les bases de données, les fichiers et les groupes de fichiers. Pour plus d’informations, consultez [Vues système &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90).  
   
 ## <a name="permissions"></a>Autorisations  
  L'autorisation CREATE DATABASE, CREATE ANY DATABASE ou ALTER ANY DATABASE est obligatoire.  

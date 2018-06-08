@@ -1,17 +1,16 @@
 ---
-title: "Contrôle d’accès pour les données sensibles présentes dans les packages | Microsoft Docs"
-ms.custom: 
+title: Contrôle d’accès pour les données sensibles présentes dans les packages | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.packageprotectionlevel.f1
 - sql13.ssis.bids.projectprotectionlevel.f1
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - cryptography [Integration Services]
 - security [Integration Services], protection levels
 ms.assetid: d4b073c4-4238-41fc-a258-4e114216e185
-caps.latest.revision: 
+caps.latest.revision: 44
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fd094efc965679119e0a15d9fc0fc97be27db4f4
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 329a9cbc48f2576160c53701dc199fb689ad9674
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="access-control-for-sensitive-data-in-packages"></a>Contrôle d'accès pour les données sensibles présentes dans les packages
   Pour protéger les données d'un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] , vous pouvez définir un niveau de protection qui permet de protéger uniquement les données sensibles ou toutes les données du package. En outre, vous pouvez chiffrer ces données avec un mot de passe ou une clé utilisateur ou vous fier à la base de données pour chiffrer les données. De plus, le niveau de protection que vous utilisez pour un package n'est pas nécessairement statique, mais change tout au long du cycle de vie du package. On définit souvent un niveau de protection pendant le développement et un autre dès le déploiement du package.  

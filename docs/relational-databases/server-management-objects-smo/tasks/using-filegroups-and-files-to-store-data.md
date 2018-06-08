@@ -1,15 +1,14 @@
 ---
-title: "À l’aide de groupes de fichiers et de fichiers pour stocker des données | Documents Microsoft"
-ms.custom: 
+title: À l’aide de groupes de fichiers et de fichiers pour stocker des données | Documents Microsoft
+ms.custom: ''
 ms.date: 08/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: smo
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - filegroups [SMO]
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - files [SMO], about files
 - storage [SMO]
 ms.assetid: 7e2327ce-e1a6-4904-83d1-0944b24a7b43
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5622269022dcbf63d717fb2dec2efac7692f0e52
-ms.sourcegitcommit: cb2f9d4db45bef37c04064a9493ac2c1d60f2c22
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 12b85dd1126880721d9bf67d3f4337b39e67f94e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-filegroups-and-files-to-store-data"></a>Utilisation de fichiers ou de groupes de fichiers pour stocker des données
 [!INCLUDE[appliesto-ss-asdb-asdw-xxx-md](../../../includes/appliesto-ss-asdb-asdw-xxx-md.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 01/12/2018
  Chaque base de données créée automatiquement possède un groupe de fichiers nommé "Primary" et un fichier de données avec le même nom que la base de données. D'autres fichiers et groupes peuvent être ajoutés aux collections.  
   
 ## <a name="examples"></a>Exemples  
- Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C &#35; Projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
+ Dans les exemples de code suivants, vous devez sélectionner l'environnement, le modèle et le langage de programmation à utiliser pour créer votre application. Pour plus d’informations, consultez [créer un Visual C&#35; projet SMO dans Visual Studio .NET](../../../relational-databases/server-management-objects-smo/how-to-create-a-visual-csharp-smo-project-in-visual-studio-net.md).  
   
 ## <a name="adding-filegroups-and-datafiles-to-a-database-in-visual-basic"></a>Ajout de groupes de fichiers et de fichiers de données à une base de données en Visual Basic  
  Le groupe de fichiers et le fichier de données primaires sont créés automatiquement avec les valeurs de propriété par défaut. L'exemple de code spécifie quelques valeurs de propriété que vous pouvez utiliser. Sinon, les valeurs de propriété par défaut sont utilisées.  

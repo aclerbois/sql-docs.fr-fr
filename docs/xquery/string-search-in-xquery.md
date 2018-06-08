@@ -1,16 +1,15 @@
 ---
-title: "Chaîne de recherche dans XQuery | Documents Microsoft"
-ms.custom: 
+title: Chaîne de recherche dans XQuery | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - searches [SQL Server], XML documents
 - XQuery, string search
 ms.assetid: edc62024-4c4c-4970-b5fa-2e54a5aca631
-caps.latest.revision: 
+caps.latest.revision: 23
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44b938d202d61eb576bf520707b1b1db1fd283e8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: cdd490ca34a1fa95a341da7665031659ffd099b6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="string-search-in-xquery"></a>Recherche de chaînes dans XQuery
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

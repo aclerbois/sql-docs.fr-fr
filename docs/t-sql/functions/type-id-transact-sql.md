@@ -1,16 +1,14 @@
 ---
 title: TYPE_ID (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TYPE_ID
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - type IDs [SQL Server]
 - data types [SQL Server], IDs
 ms.assetid: 647d17ef-b878-4922-b446-56642322ebad
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8d307359649804e1f57dc427edd907e15ba15bb0
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9b909c11e7a5268c85ea475172e50d332626b02d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="typeid-transact-sql"></a>TYPE_ID (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -48,7 +46,7 @@ TYPE_ID ( [ schema_name ] type_name )
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *type_name*  
+ *TYPE_NAME*  
  Nom du type de données. *type_name* est de type **nvarchar**. *type_name* peut être un type de données défini par l’utilisateur ou un type de données système.  
   
 ## <a name="return-types"></a>Types de retour  

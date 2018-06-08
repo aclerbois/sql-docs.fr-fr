@@ -1,7 +1,7 @@
-# [OLE DB Driver pour SQL Server (OLE DB)](oledb-driver-for-sql-server-ole-db.md)
+# [Programmation OLE DB Driver pour SQL Server](oledb-driver-for-sql-server-programming.md)
 
 # Domaines spécifiques
-## [OLE DB Driver pour SQL Server +](../../oledb/ole-db-driver/creating-a-oledb-driver-for-sql-server-application.md)
+## [Créer des applications OLE DB Driver pour SQL Server +](../../oledb/ole-db-driver/creating-a-oledb-driver-for-sql-server-application.md)
 ## [Objets source de données (OLE DB) +](../../oledb/ole-db-data-source-objects/data-source-objects-ole-db.md)
 ## [Commandes +](../../oledb/ole-db-commands/commands.md)
 ## [Ensembles de lignes +](../../oledb/ole-db-rowsets/rowsets.md)
@@ -15,13 +15,12 @@
 ## [Interfaces +](../../oledb/ole-db-interfaces/oledb-driver-for-sql-server-ole-db-interfaces.md)
 ## [Procédure +](../../oledb/ole-db-how-to/ole-db-how-to-topics.md)
 
-# [Prise en charge de FILESTREAM (OLE DB)](filestream-support-ole-db.md)
-# [Types CLR volumineux définis par l’utilisateur (OLE DB)](large-clr-user-defined-types-ole-db.md)
-# [Prise en charge des ensembles de lignes de schéma (OLE DB)](schema-rowset-support-ole-db.md)
+# [Types CLR volumineux définis par l’utilisateur](large-clr-user-defined-types-ole-db.md)
+# [Prise en charge des ensembles de lignes de schéma](schema-rowset-support-ole-db.md)
 # [Ensembles de lignes de schéma - Prise en charge des requêtes distribuées](schema-rowsets-distributed-query-support.md)
 # [Ensembles de lignes de schéma - Ensemble de lignes LINKEDSERVERS](schema-rowsets-linkedservers-rowset.md)
-# [Noms de principaux du service (SPN) dans les connexions clientes (OLE DB)](service-principal-names-spns-in-client-connections-ole-db.md)
-# [Prise en charge des colonnes éparses (OLE DB)](sparse-columns-support-ole-db.md)
+# [Noms de principaux du service (SPN) dans les connexions clientes](service-principal-names-spns-in-client-connections-ole-db.md)
+# [Prise en charge des colonnes éparses](sparse-columns-support-ole-db.md)
 # [Procédures stockées - Appel](stored-procedures-calling.md)
 # [Procédures stockées - Exécution](stored-procedures-running.md)
 # [Procédures stockées](stored-procedures.md)

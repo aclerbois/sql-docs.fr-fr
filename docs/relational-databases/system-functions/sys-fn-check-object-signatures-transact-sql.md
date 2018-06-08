@@ -1,16 +1,14 @@
 ---
-title: sys.fn_check_object_signatures (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.fn_check_object_signatures (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.fn_check_object_signatures_TSQL
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.fn_check_object_signatures function
 ms.assetid: 47509566-d3d7-46a9-89c1-91b4895d56b9
-caps.latest.revision: 
+caps.latest.revision: 15
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c09d861dd588e4edf0fca567b5a379e95ce58209
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4d516472fb5ccec63498d7ab13401e2df1f4bf10
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfncheckobjectsignatures-transact-sql"></a>sys.fn_check_object_signatures (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
@@ -60,7 +58,7 @@ fn_ check_object_signatures (
   
  @*classe* est **sysname**.  
   
- { @*thumbprint* }  
+ {@*l’empreinte numérique* }  
  Hachage SHA-1 du certificat avec lequel la clé est chiffrée ou GUID de la clé asymétrique avec laquelle la clé est chiffrée. @*l’empreinte numérique* est **varbinary(20)**.  
   
 ## <a name="tables-returned"></a>Tables retournées  
@@ -68,7 +66,7 @@ fn_ check_object_signatures (
   
 |Colonne|Type| Description|  
 |------------|----------|-----------------|  
-|type|**nvarchar(120)**|Retourne une description de type ou un assembly.|  
+|Type|**nvarchar(120)**|Retourne une description de type ou un assembly.|  
 |entity_id|**int**|Retourne l'ID de l'objet en cours d'évaluation.|  
 |is_signed|**int**|Retourne la valeur 0 lorsque l'objet n'est pas signé par l'empreinte numérique fournie. Retourne la valeur 1 lorsque l'objet est signé par l'empreinte numérique fournie.|  
 |is_signature_valid|**int**|Lorsque is_signed a la valeur 1, retourne la valeur 0 lorsque la signature n'est pas valide. Retourne la valeur 1 lorsque la signature est valide.<br /><br /> Lorsque is_signed a la valeur 0, retourne toujours la valeur 0.|  

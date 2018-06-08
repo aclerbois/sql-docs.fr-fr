@@ -1,31 +1,23 @@
 ---
-title: "Propriétés de membre intrinsèques (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: intrinsic member properties [MDX]
-ms.assetid: 84e6fe64-9b37-4e79-bedf-ae02e80bfce8
-caps.latest.revision: "41"
-author: Minewiskan
+title: Propriétés de membre intrinsèques (MDX) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 823c8c1c387d2fb234fcf042cd416ce6e1ebb550
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 97e1507617d710373dea39b546b74fc77a1d90de
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-member-properties---intrinsic-member-properties"></a>Propriétés de membre MDX - propriétés de membre intrinsèques
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)][!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] expose les propriétés intrinsèques sur les membres de dimension que vous pouvez inclure dans une requête pour retourner des données supplémentaires ou des métadonnées pour une utilisation dans une application personnalisée, ou pour vous aider dans l’analyse du modèle ou la construction. Si vous utilisez les outils clients SQL Server, vous pouvez voir les propriétés intrinsèques dans SQL Server Management Studio (SSMS).  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] expose les propriétés intrinsèques sur les membres de dimension que vous pouvez inclure dans une requête afin de retourner des informations supplémentaires ou des métadonnées à utiliser dans une application personnalisée, ou pour faciliter l’analyse ou la construction d’un modèle. Si vous utilisez les outils clients SQL Server, vous pouvez voir les propriétés intrinsèques dans SQL Server Management Studio (SSMS).  
   
  Les propriétés intrinsèques sont **ID**, **KEY**, **KEYx**et **NAME**, lesquelles sont des propriétés exposées par chaque membre, à tout niveau. Vous pouvez également retourner les informations de position, telles que **LEVEL_NUMBER** ou **PARENT_UNIQUE_NAME**, entre autres choses.  
   
@@ -64,7 +56,7 @@ ms.lasthandoff: 01/08/2018
 ## <a name="context-sensitive-member-properties"></a>Propriétés de membre sensibles au contexte  
  Tous les membres de dimension ou de niveau prennent en charge une série de propriétés de membre intrinsèques sensibles au contexte. Le tableau suivant en dresse la liste.  
   
-|Propriété|Description|  
+|Propriété| Description|  
 |--------------|-----------------|  
 |**ID**|Identificateur géré en interne pour le membre.|  
 |**Key**|Valeur de la clé du membre dans le type de données d'origine. MEMBER_KEY est fournie à des fins de compatibilité descendante.  MEMBER_KEY a la même valeur que KEY0 pour les clés non composites et la propriété MEMBER_KEY est Null pour les clés composites.|  
@@ -94,7 +86,7 @@ ms.lasthandoff: 01/08/2018
 > [!NOTE]  
 >  Les colonnes du jeu de lignes du schéma MEMBERS prennent en charge les propriétés de membre intrinsèques répertoriées dans le tableau suivant. Pour plus d’informations sur l’ensemble de lignes du schéma **MEMBERS** , consultez [Ensemble de lignes MDSCHEMA_MEMBERS](../../../analysis-services/schema-rowsets/ole-db-olap/mdschema-members-rowset.md).  
   
-|Propriété|Description|  
+|Propriété| Description|  
 |--------------|-----------------|  
 |**CATALOG_NAME**|Nom du cube auquel ce membre appartient.|  
 |**CHILDREN_CARDINALITY**|Nombre d'enfants de ce membre. Ce nombre peut être une estimation, et ne doit pas être considéré comme le compte exact. Les fournisseurs doivent renvoyer la meilleure estimation possible.|  
@@ -135,7 +127,7 @@ ms.lasthandoff: 01/08/2018
   
  Cette instruction retourne la description de chaque membre de la dimension de l'axe. Si vous avez tenté de qualifier la propriété avec une dimension ou un niveau, comme dans *Dimension*`.DESCRIPTION` ou dans *Level*`.DESCRIPTION`, l’instruction n’est pas validée.  
   
-### <a name="example"></a> Exemple  
+### <a name="example"></a>Exemple  
  Les exemples suivants montrent des requêtes MDX qui retournent les propriétés intrinsèques.  
   
  **Exemple 1 : utiliser les propriétés intrinsèques contextuelles dans une requête**  
@@ -212,15 +204,15 @@ FROM [Adventure Works]
   
 ## <a name="see-also"></a>Voir aussi  
  [PeriodsToDate &#40;MDX&#41;](../../../mdx/periodstodate-mdx.md)   
- [Enfants &#40; MDX &#41;](../../../mdx/children-mdx.md)   
- [Hierarchize &#40; MDX &#41;](../../../mdx/hierarchize-mdx.md)   
- [Count &#40;Set&#41; &#40;MDX&#41;](../../../mdx/count-set-mdx.md)   
- [Filtre &#40; MDX &#41;](../../../mdx/filter-mdx.md)   
- [AddCalculatedMembers &#40; MDX &#41;](../../../mdx/addcalculatedmembers-mdx.md)   
- [DrilldownLevel &#40; MDX &#41;](../../../mdx/drilldownlevel-mdx.md)   
- [Propriétés &#40; MDX &#41;](../../../mdx/properties-mdx.md)   
- [PrevMember &#40; MDX &#41;](../../../mdx/prevmember-mdx.md)   
- [Utilisation des propriétés de membre &#40;MDX&#41;](../../../analysis-services/multidimensional-models/mdx/mdx-member-properties.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../../../mdx/mdx-function-reference-mdx.md)  
+ [Enfants &#40;MDX&#41;](../../../mdx/children-mdx.md)   
+ [Hierarchize & #40 ; MDX & #41 ;](../../../mdx/hierarchize-mdx.md)   
+ [Nombre & #40 ; Définir le & #41 ; & #40 ; MDX & #41 ;](../../../mdx/count-set-mdx.md)   
+ [Filtre & #40 ; MDX & #41 ;](../../../mdx/filter-mdx.md)   
+ [AddCalculatedMembers & #40 ; MDX & #41 ;](../../../mdx/addcalculatedmembers-mdx.md)   
+ [DrilldownLevel & #40 ; MDX & #41 ;](../../../mdx/drilldownlevel-mdx.md)   
+ [Propriétés & #40 ; MDX & #41 ;](../../../mdx/properties-mdx.md)   
+ [PrevMember &#40;MDX&#41;](../../../mdx/prevmember-mdx.md)   
+ [À l’aide des propriétés de membre & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-member-properties.md)   
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../../../mdx/mdx-function-reference-mdx.md)  
   
   

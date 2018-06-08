@@ -1,30 +1,20 @@
 ---
 title: IIf (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: IIF
-dev_langs: kbMDX
-helpviewer_keywords: IIf function
-ms.assetid: ec7b35e6-f4c5-40bf-93c8-b83c1cc26fe2
-caps.latest.revision: "41"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: e859e97cd013e7910238ef373bc4b4f5724df02c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 7551a19e5cbb58d5eab9b2da4dae1c17cf19e79c
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581031"
 ---
 # <a name="iif-mdx"></a>IIf (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -50,7 +40,7 @@ IIf(Logical_Expression, Expression1 [HINT <hints>], Expression2 [HINT <hints>])
  *Indicateur de expression2 [hâtif | Strict | Lazy]]*  
  Utilisé lors de l’expression logique renvoie **false**. Expression2 doit être une expression MDX (Multidimensional Expressions) valide.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La condition spécifiée par l’expression logique prend la valeur de **false** lorsque la valeur de cette expression est zéro. Toute autre valeur prend la valeur de **true**.  
   
  Lorsque la condition est **true**, le **IIf** fonction retourne la première expression. Sinon, la fonction retourne la seconde expression.  
@@ -188,6 +178,6 @@ IIf(Logical_Expression, Expression1 [HINT <hints>], Expression2 [HINT <hints>])
  `FROM [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

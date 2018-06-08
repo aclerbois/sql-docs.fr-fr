@@ -1,37 +1,23 @@
 ---
-title: "À l’aide d’écriture différée de cubes (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- writeback [Analysis Services], cubes
-- cubes [Analysis Services], modifying
-- modifying cubes
-- UPDATE CUBE statement
-- cubes [Analysis Services], writeback
-ms.assetid: ae2385fc-7fa0-4f8e-98d7-dcb0a5f0eeea
-caps.latest.revision: 
-author: Minewiskan
+title: À l’aide d’écriture différée de cubes (MDX) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f658740766736a83dd374cf647523ea9f8e2bfe4
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: dc950c69a25ff976b8cdf1cd7cb4252c2584e0af
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-data-modification---using-cube-writebacks"></a>Modification des données MDX - à l’aide d’écriture différée de cubes
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Pour mettre à jour un cube, vous pouvez utiliser l’instruction [UPDATE CUBE](../../../mdx/mdx-data-manipulation-update-cube.md). Celle-ci permet de mettre à jour un tuple avec une valeur spécifique. Pour utiliser efficacement l'instruction UPDATE CUBE afin de mettre à jour un cube, vous devez comprendre la syntaxe de l'instruction, les conditions d'erreur susceptibles de se produire, ainsi que les effets potentiels des mises à jour sur un cube.  
+  Pour mettre à jour un cube, vous pouvez utiliser l’instruction [UPDATE CUBE](../../../mdx/mdx-data-manipulation-update-cube.md). Celle-ci permet de mettre à jour un tuple avec une valeur spécifique. Pour utiliser efficacement l'instruction UPDATE CUBE afin de mettre à jour un cube, vous devez comprendre la syntaxe de l'instruction, les conditions d'erreur susceptibles de se produire, ainsi que les effets potentiels des mises à jour sur un cube.  
   
 ## <a name="update-cube-statement-syntax"></a>Syntaxe de l'instruction UPDATE CUBE  
  La syntaxe suivante décrit l'instruction UPDATE CUBE :  
@@ -124,6 +110,6 @@ USE_EQUAL_ALLOCATION
 -   modification de la granularité d'une dimension comprise dans l'écriture différée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Modification des données &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-data-modification-modifying-data.md)  
+ [Modification des données & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-data-modification-modifying-data.md)  
   
   

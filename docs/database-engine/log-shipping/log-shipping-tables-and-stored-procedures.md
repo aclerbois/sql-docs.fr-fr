@@ -1,16 +1,13 @@
 ---
-title: "Tables et procédures stockées de copie des journaux de transaction | Microsoft Docs"
-ms.custom: 
+title: Tables et procédures stockées de copie des journaux de transaction | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: log-shipping
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - secondary servers [SQL Server]
 - monitor servers [SQL Server]
@@ -18,19 +15,20 @@ helpviewer_keywords:
 - log shipping [SQL Server], stored procedures
 - primary servers [SQL Server]
 ms.assetid: 03420810-4c38-4c0c-adf0-913eb044c50a
-caps.latest.revision: "20"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 20
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 85f6f5c81e154bd4fcc6da3f28790ba6dedd6673
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: fc9e2c3aadf5bb153d40536a5145b259e2163a17
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771835"
 ---
 # <a name="log-shipping-tables-and-stored-procedures"></a>Log Shipping Tables and Stored Procedures
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique décrit toutes les tables et procédures stockées associées à une configuration d’envoi de journaux. Toutes les tables liées à l’envoi de journaux sont stockées, sur chaque serveur, dans **msdb** . Le tableau ci-dessous décrit les tables et les procédures stockées utilisées par serveur, au sein d'une configuration d'envoi de journaux.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique décrit toutes les tables et procédures stockées associées à une configuration d'envoi de journaux. Toutes les tables liées à l’envoi de journaux sont stockées, sur chaque serveur, dans **msdb** . Le tableau ci-dessous décrit les tables et les procédures stockées utilisées par serveur, au sein d'une configuration d'envoi de journaux.  
   
 ## <a name="primary-server-tables"></a>Tables du serveur principal  
   

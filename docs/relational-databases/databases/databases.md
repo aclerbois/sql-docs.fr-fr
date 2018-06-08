@@ -1,41 +1,41 @@
 ---
-title: "Bases de données | Microsoft Docs"
-ms.custom: 
+title: Bases de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data warehouse [SQL Server]
 - OLTP databases [SQL Server]
 - databases [SQL Server], about databases
 ms.assetid: 316eea58-81b8-4bf3-a1fc-801946740e94
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f2dd347a2f17cd4712deb64e6dcd6c9a55e7cb15
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e4382d10ca8fcae916d82726ae4932b3518df362
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708277"
 ---
 # <a name="databases"></a>Bases de données
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , une base de données est constituée d'une collection de tables qui renferment un ensemble spécifique de données structurées. Une table se compose de lignes, également appelées enregistrements ou tuples, et de colonnes, également appelées attributs. Chaque colonne d'une table est conçue pour stocker un certain type d'informations, par exemple, des données, des noms, des valeurs monétaires ou des nombres.  
+  Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , une base de données est constituée d'une collection de tables qui renferment un ensemble spécifique de données structurées. Une table se compose de lignes, également appelées enregistrements ou tuples, et de colonnes, également appelées attributs. Chaque colonne d'une table est conçue pour stocker un certain type d'informations, par exemple, des données, des noms, des valeurs monétaires ou des nombres.  
   
 ## <a name="basic-information-about-databases"></a>Informations générales sur les bases de données  
  Une ou plusieurs instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent être installées sur un ordinateur. Chaque instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut contenir une ou plusieurs bases de données.  Dans une base de données, il existe un ou plusieurs groupes d'appropriation d'objets appelés schémas. Chaque schéma contient divers objets de base de données tels que des tables, des vues et des procédures stockées. Certains objets, tels que les certificats et les clés asymétriques, sont présents dans une base de données, mais pas dans un schéma. Pour plus d’informations sur la création de tables, consultez [Tables](../../relational-databases/tables/tables.md).  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Les bases de données sont stockées dans des fichiers du système de fichiers. Les fichiers peuvent être regroupés en groupes de fichiers. Pour plus d’informations sur les fichiers et groupes de fichiers, consultez [Groupes de fichiers et fichiers de base de données](../../relational-databases/databases/database-files-and-filegroups.md).  
+ Les bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont stockées dans des fichiers du système de fichiers. Les fichiers peuvent être regroupés en groupes de fichiers. Pour plus d’informations sur les fichiers et groupes de fichiers, consultez [Groupes de fichiers et fichiers de base de données](../../relational-databases/databases/database-files-and-filegroups.md).  
   
  Lorsque les utilisateurs accèdent à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , ils sont identifiés comme connexion. Lorsque les utilisateurs accèdent à une base de données, ils sont identifiés comme utilisateur de base de données. Un utilisateur de base de données peut être basé sur une connexion. Si les bases de données à relation contenant-contenu sont activées, il est possible de créer un utilisateur de base de données qui n'est pas basé sur une connexion. Pour plus d’informations sur les utilisateurs, consultez [CREATE USER &#40;Transact-SQL&#41;](../../t-sql/statements/create-user-transact-sql.md).  
   

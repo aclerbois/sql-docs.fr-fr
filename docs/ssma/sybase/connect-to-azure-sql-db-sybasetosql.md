@@ -1,30 +1,28 @@
 ---
-title: "Se connecter à la base de données SQL Azure (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Se connecter à la base de données SQL Azure (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 96538007-1099-40c8-9902-edd07c5620ee
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1267aecb68c344b6de0fad2c7c129a0b6ab2205c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f73b6e88e457ef74a82512876715a333d0a52d71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-azure-sql-db--sybasetosql"></a>Se connecter à la base de données SQL Azure (SybaseToSQL)
 Utilisez la connexion à la boîte de dialogue base de données SQL Azure pour se connecter à la base de données de la base de données SQL Azure que vous souhaitez migrer.  
@@ -36,14 +34,14 @@ Pour accéder à cette boîte de dialogue, dans le **fichier** menu, sélectionn
   
 Sélectionnez ou entrez le nom du serveur pour la connexion à la base de données SQL Azure.  
   
-**Sauvegarde de la base de données**  
+**Base de données**  
   
 Sélectionnez, entrez ou **Parcourir** le nom de la base de données.  
   
 > [!IMPORTANT]  
 > SSMA pour Sybase ne prend pas en charge la connexion à la base de données master dans la base de données SQL Azure.  
   
-**User name**  
+**Nom d'utilisateur**  
   
 Entrez le nom d’utilisateur SSMA utilisera pour se connecter à la base de données de la base de données SQL Azure  
   

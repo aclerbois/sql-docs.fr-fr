@@ -1,31 +1,28 @@
 ---
 title: Pilote Microsoft ODBC pour SQL Server | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 9f2ae91b-06af-4c9a-9d24-062df7bc4662
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 3f890f21a9c4301e10ad11da304d6d07b31fb87f
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: 5142268f69db446dc588af17d7b532ba680c24d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-odbc-driver-for-sql-server"></a>Pilote Microsoft ODBC pour SQL Server
 
-![Téléchargement-bas encerclé](../../ssdt/media/download.png)[pour télécharger le pilote ODBC](../sql-connection-libraries.md#anchor-20-drivers-relational-access)
+[!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]
 
 ODBC est l’API d’accès de données native principale pour les applications écrites en C et C++ pour SQL Server. Il existe un pilote ODBC pour la plupart des sources de données. Autres langues que vous peuvent utiliser ODBC incluent COBOL, Perl, PHP et Python. ODBC est largement utilisé dans les scénarios d’intégration de données.
 
@@ -33,15 +30,15 @@ Le pilote ODBC est fourni avec des outils comme [ **sqlcmd** ](../../tools/sqlcm
 
 ## <a name="code-example-in-c"></a>Exemple de code en C++
 
-Nous avons un fichier de petite .zip qui contient le code source d’un programme C++ qui utilise ODBC :
+L’exemple C++ suivant illustre l’utilisation de l’API ODBC pour se connecter à et d’accéder à une base de données :
 
 - [Exemple de code C++, l’utilisation d’ODBC](../../odbc/reference/sample-odbc-program.md)
 
 ## <a name="download"></a>Télécharger
 
-- ![Téléchargement-bas encerclé](../../ssdt/media/download.png)[pour télécharger le pilote ODBC](../sql-connection-libraries.md#anchor-20-drivers-relational-access)
+- ![Téléchargement-bas encerclé](../../ssdt/media/download.png)[pour télécharger le pilote ODBC](download-odbc-driver-for-sql-server.md)
 
-## <a name="documentation"></a>Documentation  
+## <a name="documentation"></a>Documentation
 
 ### <a name="features"></a>Fonctionnalités
 

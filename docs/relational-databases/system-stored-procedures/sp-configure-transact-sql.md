@@ -2,14 +2,12 @@
 title: sp_configure (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 03/16/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: ''
 ms.component: system-stored-procedures
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_configure
 ms.assetid: d18b251d-b37a-4f5f-b50c-502d689594c8
-caps.latest.revision: ''
+caps.latest.revision: 60
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 63ab5d253d26375b3f53cb0f38ffa96f56e0a93d
-ms.sourcegitcommit: 270de8a0260fa3c0ecc37f91eec4a5aee9b9834a
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 05074a051f39e8b2dd81314ed6e230868c410c49
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spconfigure-transact-sql"></a>sp_configure (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/t-sql-appliesto-ss-asdbmi-xxxx-pwd-md.md)]
@@ -173,7 +171,7 @@ EXEC sp_configure @configname='hadoop connectivity';
  Définition de la connectivité Hadoop requiert quelques étapes supplémentaires en plus des sp_configure. Pour connaître la procédure complète, consultez [CREATE EXTERNAL DATA SOURCE &#40;Transact-SQL&#41;](../../t-sql/statements/create-external-data-source-transact-sql.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [RECONFIGURE &#40; Transact-SQL &#41;](../../t-sql/language-elements/reconfigure-transact-sql.md)   
+ [RECONFIGURE & #40 ; Transact-SQL & #41 ;](../../t-sql/language-elements/reconfigure-transact-sql.md)   
  [Instructions SET &#40;Transact-SQL&#41;](../../t-sql/statements/set-statements-transact-sql.md)   
  [Options de configuration de serveur &#40;SQL Server&#41;](../../database-engine/configure-windows/server-configuration-options-sql-server.md)   
  [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md)   

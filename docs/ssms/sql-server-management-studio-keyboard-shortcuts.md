@@ -1,16 +1,16 @@
 ---
 title: Raccourcis clavier dans SQL Server Management Studio | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], shortcuts
 - keyboard shortcuts [SQL Server Management Studio]
@@ -22,19 +22,19 @@ helpviewer_keywords:
 - shortcuts [SQL Server Management Studio]
 - accelerator keys
 ms.assetid: 98baaac4-0727-4ce4-8bfe-c63793ae69b8
-caps.latest.revision: "82"
+caps.latest.revision: 82
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8d206355149899d1e8f9df816d45b2f64fe2c4cb
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 7a4e0ddf3ca23438a761b330238c9aa7356b8f7b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-management-studio-keyboard-shortcuts"></a>Raccourcis clavier dans SQL Server Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] propose deux schémas de clavier. Par défaut, il utilise le schéma [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] avec les raccourcis clavier basés sur [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 2010. [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] offre également un schéma de clavier semblable au schéma standard de [!INCLUDE[ssKilimanjaro](../includes/sskilimanjaro-md.md)]. Pour modifier le schéma de clavier ou ajouter d'autres raccourcis clavier, cliquez dans le menu **Outils** sur **Options**. Sélectionnez le schéma de clavier désiré dans la page **Environnement**, **Clavier** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] propose deux schémas de clavier. Par défaut, il utilise le schéma [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)] avec les raccourcis clavier basés sur [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[vsprvs](../includes/vsprvs-md.md)] 2010. [!INCLUDE[ssManStudio](../includes/ssmanstudio-md.md)] offre également un schéma de clavier semblable au schéma standard de [!INCLUDE[ssKilimanjaro](../includes/sskilimanjaro-md.md)]. Pour modifier le schéma de clavier ou ajouter d'autres raccourcis clavier, cliquez dans le menu **Outils** sur **Options**. Sélectionnez le schéma de clavier désiré dans la page **Environnement**, **Clavier** .  
   
 > [!NOTE]  
 >  Pour afficher uniquement les titres, cliquez sur **Réduire tout** en haut de cette page.  

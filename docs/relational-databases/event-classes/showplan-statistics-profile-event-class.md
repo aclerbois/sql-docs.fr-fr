@@ -1,34 +1,30 @@
 ---
-title: "Showplan XML Statistics Profile, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Showplan XML Statistics Profile, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Showplan Statistics Profile event class
 ms.assetid: fa9e1330-a217-491c-ad7c-2c1c4015d1bb
-caps.latest.revision: 
+caps.latest.revision: 39
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: defe49c1c4ec5565ce974c845d1647efe4445a88
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f442a9f5db6adacf1857231ef7b7fca37ceeda09
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="showplan-statistics-profile-event-class"></a>Showplan XML Statistics Profile, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Showplan Statistics Profile se produit lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SQL. Les informations comprises sont un sous-ensemble des informations disponibles dans la classe d’événements Showplan XML Statistics Profile.  
+  La classe d'événements Showplan Statistics Profile se produit lorsque [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SQL. Les informations comprises sont un sous-ensemble des informations disponibles dans la classe d’événements Showplan XML Statistics Profile.  
   
  La classe d’événements Showplan XML Statistics Profile affiche les données complètes du processus de compilation. Les traces qui incluent Showplan XML Statistics Profile peuvent entraîner une baisse significative des performances. Pour minimiser cet effet, limitez l'utilisation de cette classe d'événements aux traces surveillant des problèmes particuliers durant de brèves périodes de temps.  
   

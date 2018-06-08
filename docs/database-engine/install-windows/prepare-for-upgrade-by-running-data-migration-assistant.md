@@ -1,28 +1,24 @@
 ---
-title: "Préparer la mise à niveau en exécutant l’Assistant Migration des données | Microsoft Docs"
-ms.custom: 
+title: Préparer la mise à niveau en exécutant l’Assistant Migration des données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: eabcc635-7adf-4e45-b6f1-158d6e024908
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fb81d63eaf17a6ae077efe8c9aa5eb9039b32d87
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 33f919424752b26d49fb44a7136cd60e38eb1437
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771555"
 ---
 # <a name="prepare-for-upgrade-by-running-data-migration-assistant"></a>Préparer la mise à niveau en exécutant l’Assistant Migration des données
 

@@ -1,16 +1,14 @@
 ---
-title: "IsDescendantOf (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: IsDescendantOf (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 7/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - IsDescendant_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - IsDescendantOf [Database Engine]
 ms.assetid: edc80444-b697-410f-9419-0f63c9b5618d
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 291a38e51da8e342d96b3a5feac90fbbc2a00d46
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 679f75007cc60521f569a42a5c580f8553b61eca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="isdescendantof-database-engine"></a>IsDescendantOf (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

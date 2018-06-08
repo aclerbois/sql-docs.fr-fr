@@ -1,34 +1,30 @@
 ---
-title: "TM: Promote Tran Starting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: 'TM: Promote Tran Starting, classe d’événements | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'TM: Promote Tran Starting event class'
 ms.assetid: 32da85bb-d980-4044-8572-31372867649b
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a7c6be666cc8a7ff2e71f0632462e3db03e18f67
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 00dced2cb67cd232746993e551ddde5d0f61de0b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tm-promote-tran-starting-event-class"></a>TM: Promote Tran Starting, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements TM: Promote Tran Starting indique qu'une demande PROMOTE TRANSACTION commence. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions.  
+  La classe d'événements TM: Promote Tran Starting indique qu'une demande PROMOTE TRANSACTION commence. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions.  
   
 ## <a name="tm-promote-tran-starting-event-class-data-columns"></a>Colonnes de la classe d'événements TM: Promote Tran Starting  
   

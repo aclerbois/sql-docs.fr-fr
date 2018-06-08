@@ -1,17 +1,14 @@
 ---
-title: "Afficher les fichiers de données et les fichiers journaux dans un jeu de sauvegarde (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Afficher les fichiers de données et les fichiers journaux dans un jeu de sauvegarde (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database backups [SQL Server], viewing backup sets
 - viewing backup set information
@@ -20,16 +17,15 @@ helpviewer_keywords:
 - transaction log backups [SQL Server], viewing backup sets
 - backing up [SQL Server], viewing backup sets
 ms.assetid: abb6420c-f809-426e-aeb4-d0a74989cf39
-caps.latest.revision: 
+caps.latest.revision: 23
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b268bb0b49ebfeda4d6725eeb659acddd43a73ba
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d57a067f4536d0b96f51947b39641f592c9991b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-data-and-log-files-in-a-backup-set-sql-server"></a>Afficher les fichiers de données et les fichiers journaux dans un jeu de sauvegarde (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

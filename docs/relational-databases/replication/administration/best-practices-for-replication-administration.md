@@ -1,31 +1,29 @@
 ---
-title: "Bonnes pratiques en matière d’administration de la réplication| Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques en matière d’administration de la réplication| Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - administering replication, best practices
 - replication [SQL Server], administering
 ms.assetid: 850e8a87-b34c-4934-afb5-a1104f118ba8
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8095467cab3e2548db2afd626190b27b1f5a824f
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 00683ffe3901a02f2996f638ed7ec231acf3f98d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="best-practices-for-replication-administration"></a>Bonnes pratiques en matière d’administration de la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

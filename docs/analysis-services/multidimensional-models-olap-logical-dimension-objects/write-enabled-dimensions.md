@@ -1,34 +1,19 @@
 ---
-title: "Dimensions activées en écriture | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords:
-- write-enabled dimensions [Analysis Services]
-- dimensions [Analysis Services], write-enabled
-- dimension writeback [Analysis Services]
-- write-enabled cubes [Analysis Services]
-- writeback [Analysis Services], dimensions
-ms.assetid: 0bac050d-cd3b-427b-884a-65a91be89500
-caps.latest.revision: "38"
-author: Minewiskan
+title: Dimensions activées en écriture | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 175199b7090abc373e0ac39d1e99e81480df4e2e
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 23f2fff5a78be0dad52f674a8d23c1922a86391c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="write-enabled-dimensions"></a>Dimensions activées en écriture
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -70,6 +55,6 @@ ms.lasthandoff: 01/08/2018
 ## <a name="see-also"></a>Voir aussi  
  [Propriétés de Dimension de base de données](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/database-dimension-properties.md)   
  [Partitions activées en écriture](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-write-enabled-partitions.md)   
- [Dimensions &#40;Analysis Services - Données multidimensionnelles&#41;](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md)  
+ [Dimensions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md)  
   
   

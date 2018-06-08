@@ -1,27 +1,25 @@
 ---
-title: "Paramètres globaux (testeur) (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres globaux (testeur) (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4acc0f2a-85ba-4c99-856a-89030f5c418e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 4aa9d87eefc0b268fbd8fca9cabf26e7cd27b663
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 541be9baa654371e6e5aaca18c91e860d058c7fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="global-settings-tester-oracletosql"></a>Paramètres globaux (testeur) (OracleToSQL)
 Utilisez la page testeur de la **paramètres globaux** boîte de dialogue pour spécifier les paramètres de SSMA testeur.  
@@ -70,5 +68,5 @@ Les options suivantes sont disponibles pour ce paramètre :
 2.  non  
   
 ## <a name="see-also"></a>Voir aussi  
-[Terminer la préparation du cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
+[Préparation du cas de Test de fin &#40;OracleToSQL&#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
   

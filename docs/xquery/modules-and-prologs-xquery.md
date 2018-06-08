@@ -1,16 +1,15 @@
 ---
 title: Modules et prologues (XQuery) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - XQuery, prolog
 - prolog
 ms.assetid: 0f17b4a4-6234-41d4-a996-6db4e27bff7e
-caps.latest.revision: 
+caps.latest.revision: 13
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 09599ba6001a1d73786f7cc98767957fdcabf436
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 08d19f2a24c243647b4004a557fd25bf96d2dd62
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modules-and-prologs-xquery"></a>Modules et prologues (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -62,7 +60,7 @@ ms.lasthandoff: 02/09/2018
 -   Déclaration de fonction (`declare function`)  
   
 ## <a name="in-this-section"></a>Dans cette section  
- [XQuery Prolog](../xquery/modules-and-prologs-xquery-prolog.md)  
+ [Prologue XQuery](../xquery/modules-and-prologs-xquery-prolog.md)  
  Décrit le prologue XQuery.  
   
 ## <a name="see-also"></a>Voir aussi  

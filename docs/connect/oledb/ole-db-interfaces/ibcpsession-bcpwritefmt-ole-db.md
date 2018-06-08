@@ -1,11 +1,10 @@
 ---
-title: IBCPSession::BCPWriteFmt (OLE DB) | Microsoft Docs
+title: IBCPSession::BCPWriteFmt (OLE DB) | Documents Microsoft
 description: À l’aide de IBCPSession::BCPWriteFmt pour enregistrer les fichiers de format dans un format xml ou texte (OLE DB)
 ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-interfaces
 ms.reviewer: ''
 ms.suite: sql
@@ -20,13 +19,12 @@ helpviewer_keywords:
 - BCPWriteFmt method
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e308195335eb2836a0109fec49d7fecf15a63e9e
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 0d332e1044868886ec7b899f94d383c63b1c4eb9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsessionbcpwritefmt-ole-db"></a>IBCPSession::BCPWriteFmt (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

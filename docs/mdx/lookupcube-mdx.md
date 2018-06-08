@@ -1,30 +1,31 @@
 ---
 title: LookupCube (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: LOOKUPCUBE
-dev_langs: kbMDX
-helpviewer_keywords: LookupCube function
+f1_keywords:
+- LOOKUPCUBE
+dev_langs:
+- kbMDX
+helpviewer_keywords:
+- LookupCube function
 ms.assetid: 243fa101-328a-4016-86e0-d8b5977e15a9
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: a2b5e06839166528482a52fffc594d933a30ee57
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: b21de8eae8df0d591ab99038065a24ed85453ed1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lookupcube-mdx"></a>LookupCube (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -52,7 +53,7 @@ LookupCube(Cube_Name, String_Expression )
  *String_Expression*  
  Expression de chaîne valide qui correspond généralement à une expression MDX (Multidimensional Expressions) valide des coordonnées des cellules qui retourne une chaîne.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si une expression numérique est spécifiée, la **LookupCube** fonction évalue l’expression numérique spécifiée dans le cube spécifié et retourne la valeur numérique qui en résulte.  
   
  Si une expression de chaîne est spécifiée, le **LookupCube** fonction évalue l’expression de chaîne spécifiée dans le cube spécifié et retourne la valeur de chaîne qui en résulte.  
@@ -76,6 +77,6 @@ LookupCube(Cube_Name, String_Expression )
  `FROM [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../mdx/mdx-function-reference-mdx.md)  
   
   

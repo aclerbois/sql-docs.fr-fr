@@ -1,32 +1,30 @@
 ---
-title: "Éditeur d’expressions de la propriété | Microsoft Docs"
-ms.custom: 
+title: Éditeur d’expressions de la propriété | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.propertyexpressionseditor.f1
 helpviewer_keywords:
 - Property Expressions Editor dialog box
 ms.assetid: 4c8b1681-d8fe-4f92-b76f-a396eb921c0c
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 35043f343fe16ac5c848d0c7dd2f9b21b95b18a5
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 2297a29d62f508d4b72e519ae4d0e615720bebd6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="property-expressions-editor"></a>Éditeur d'expressions de la propriété
   Utilisez la boîte de dialogue **Éditeur d'expressions de la propriété** pour créer, modifier ou supprimer les expressions de la propriété qui mettent à jour les valeurs de propriété.  

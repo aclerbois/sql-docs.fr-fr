@@ -1,34 +1,30 @@
 ---
-title: "Lock:Timeout (timeout &gt; 0), classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Lock:Timeout (timeout &gt; 0), classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Timeout event class
 ms.assetid: d755833a-d7eb-4973-9352-67a2fba2442a
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 30cd2031c1ebe36385f4a7f99fea9461ef5d6a48
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ac93d6b7cdb674405a8964e7849dd7f7d071108b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="locktimeout-timeout-gt-0-event-class"></a>Lock:Timeout (timeout &gt;0), classe d’événements
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Lock:Timeout (timeout > 0)** indique qu’une demande de verrou sur une ressource (par exemple une page) a dépassé le délai d’attente parce qu’une autre transaction retient un verrou bloquant sur la ressource exigée. Cette classe d'événements se comporte de la même manière que la classe d'événements **Lock:Timeout** , sauf qu'elle n'inclut pas d'événements ou la valeur de dépassement de délai est 0.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La classe d’événements **Lock:Timeout (timeout > 0)** indique qu’une demande de verrou sur une ressource (par exemple une page) a dépassé le délai d’attente parce qu’une autre transaction retient un verrou bloquant sur la ressource exigée. Cette classe d'événements se comporte de la même manière que la classe d'événements **Lock:Timeout** , sauf qu'elle n'inclut pas d'événements ou la valeur de dépassement de délai est 0.  
   
  Incluez la classe d’événements **Lock:Timeout (timeout > 0)** dans les traces où vous utilisez des sondes de verrou ou d’autres processus dont les valeurs de dépassement de délai sont nulles. Ceci vous permet de voir où se produisent les véritables dépassements de délai sans la présence des valeurs de dépassement de délai nulles.  
   

@@ -1,31 +1,30 @@
 ---
-title: "Mappage des schémas de Sybase ASE aux schémas SQL Server (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Mappage des schémas de Sybase ASE aux schémas SQL Server (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Schema Mapping
+helpviewer_keywords:
+- Schema Mapping
 ms.assetid: 2c927003-c49d-4fe1-8e3e-5b2899166268
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1e0b8dad8d5742782ed3b3828806c5122092b37b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ffcec58a7c90bb7e95efd7e770ad7f49610a7cd2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-sybase-ase-schemas-to-sql-server-schemas-sybasetosql"></a>Sybase ASE schémas de mappage de schémas SQL Server (SybaseToSQL)
 Dans Sybase Adaptive Server Enterprise (ASE), chaque base de données a un ou plusieurs schémas. Par défaut, SSMA migre tous les objets dans une base de données et le schéma à la même base de données et le même schéma dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure. Toutefois, vous pouvez personnaliser le mappage entre ASE et [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou des schémas et des bases de données SQL Azure.  
@@ -69,9 +68,9 @@ Si vous personnalisez le mappage entre un schéma ASE et un [!INCLUDE[ssNoVersio
   
 1.  Sous l’onglet mappage de schéma, sélectionnez n’importe quelle ligne, puis cliquez sur **rétablir par défaut** pour rétablir la base de données par défaut et le schéma.  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Étapes suivantes  
 Si vous souhaitez analyser la conversion des objets de Sybase ASE dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou des objets de SQL Azure, vous pouvez [créer un rapport de conversion](http://msdn.microsoft.com/en-us/eb996b7c-1eef-4f73-b5e6-2fa6faf7336c). Dans le cas contraire, vous pouvez [convertir les définitions d’objets de base de données ASE](http://msdn.microsoft.com/en-us/509cb65d-2f54-427a-83d7-37919cc4e3e3) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou définitions d’objets SQL Azure.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration Sybase ASE bases de données SQL Server : base de données SQL Azure &#40; SybaseToSQL &#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
+[Migration des bases de données de Sybase ASE à SQL Server - base de données SQL Azure &#40;SybaseToSQL&#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
   

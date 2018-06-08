@@ -1,34 +1,30 @@
 ---
-title: "Audit Server Starts and Stops, classe d’événements"
-ms.custom: 
+title: Audit Server Starts and Stops, classe d’événements
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Server Starts and Stops event class
 ms.assetid: 8ddb55af-c77b-4d07-b803-a97320c0804e
-caps.latest.revision: 
+caps.latest.revision: 18
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c98ab43400cd3dcd7f29e1cd463322906539a5e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ecc94f1209d37b3a66cafcf11ddbd211d239909b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-server-starts-and-stops-event-class"></a>Audit Server Starts and Stops (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Server Starts and Stops** se produit quand l’état du service [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est modifié.  
+  La classe d’événements **Audit Server Starts and Stops** se produit quand l’état du service [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est modifié.  
   
 ## <a name="audit-server-starts-and-stops-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Server Starts and Stops  
   

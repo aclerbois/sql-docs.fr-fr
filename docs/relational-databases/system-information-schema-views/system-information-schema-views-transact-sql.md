@@ -1,16 +1,13 @@
 ---
-title: "Vues de schémas d’informations système (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: Vues de schémas d’informations système (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: system-information-schema-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -21,19 +18,18 @@ helpviewer_keywords:
 - views [SQL Server], information schema
 - system views [SQL Server], information schema
 ms.assetid: 7e9f1dfe-27e9-40e7-8fc7-bfc5cae6be10
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 361e6385eb14d6ea3ae2826c1b8aa184c167e50a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 2a3c0ef6d8a3c4c774b441e807c4ca513b214f26
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="system-information-schema-views-transact-sql"></a>Vues de schémas d’informations système (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
+[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Une vue de schémas d'informations est l'une des diverses méthodes que fournit [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour l'obtention de métadonnées. Les vues de schémas d'informations fournissent une vue interne indépendante des tables système des métadonnées [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Elles permettent aux applications de fonctionner correctement bien que des changements importants aient été apportés aux tables système sous-jacentes. Les vues de schémas d'informations incluses dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont conformes à la norme ISO pour INFORMATION_SCHEMA.  
   
@@ -45,7 +41,7 @@ ms.lasthandoff: 11/21/2017
 |Nom SQL Server|Nom standard SQL équivalent|  
 |---------------------|-----------------------------------------------|  
 |Base de données|Catalogue|  
-|schéma|schéma|  
+|Schéma|Schéma|  
 |Objet|Objet|  
 |type de données défini par l'utilisateur|Domaine|  
   
@@ -66,7 +62,7 @@ ms.lasthandoff: 11/21/2017
   
  En outre, certaines vues comprennent des références à d'autres classes de données telles que les données de type caractère ou binaire.  
   
- Lorsque vous faites référence aux vues de schémas d'informations, vous devez utiliser un nom qualifié qui inclut le nom de schéma `INFORMATION_SCHEMA`. Exemple :  
+ Lorsque vous faites référence aux vues de schémas d'informations, vous devez utiliser un nom qualifié qui inclut le nom de schéma `INFORMATION_SCHEMA`. Par exemple :  
   
 ```  
 SELECT TABLE_CATALOG, TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME, COLUMN_DEFAULT  
@@ -76,7 +72,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues système &#40; Transact-SQL &#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90)   
+ [Vues système &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/35a6161d-7f43-4e00-bcd3-3091f2015e90)   
  [Types de données &#40;Transact-SQL&#41;](../../t-sql/data-types/data-types-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   

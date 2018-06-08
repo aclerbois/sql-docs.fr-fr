@@ -1,32 +1,30 @@
 ---
-title: "Définir les filtres | Microsoft Docs"
-ms.custom: 
+title: Définir les filtres | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.replconflictviewer.definefilters.f1
 helpviewer_keywords:
 - Define Filters dialog box
 ms.assetid: 1fa71d22-ce5a-4aae-ba05-4d755842aeac
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4baa09c02936eb9e67bbcbcbf2b69d70253a4111
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 3e77e09f8c8ce6bf6e60caa26c4bd328f9412400
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="define-filters"></a>Définir les filtres
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

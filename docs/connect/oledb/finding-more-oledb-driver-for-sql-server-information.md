@@ -3,14 +3,12 @@ title: Recherche de plusieurs pilotes de base de données OLE pour des informati
 description: Où trouver des pilotes OLE DB plus pour plus d’informations de SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -18,16 +16,17 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, additional resources
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2ead0a24c87c099845b8a34906330c7983559359
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 088c6853cb190e9e19cc8edc032e5fd2baa787dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="finding-more-ole-db-driver-for-sql-server-information"></a>Recherche de plusieurs pilotes de base de données OLE pour des informations sur SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../includes/driver_oledb_download.md)]
 
   Pour plus d’informations sur le pilote OLE DB pour SQL Server et d’autres types de programmation d’accès aux données, consultez les ressources en ligne suivantes :  
   
@@ -44,6 +43,6 @@ ms.lasthandoff: 03/30/2018
   
 
 ## <a name="see-also"></a>Voir aussi  
- [Programmation de SQL Server OLE DB pilote](../oledb/oledb-driver-for-sql-server-programming.md)  
+ [OLE DB Driver pour SQL Server](../oledb/oledb-driver-for-sql-server.md)  
   
   

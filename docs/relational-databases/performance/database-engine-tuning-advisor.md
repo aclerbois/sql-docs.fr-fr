@@ -1,33 +1,29 @@
 ---
-title: "Assistant Paramétrage du moteur de base de données | Microsoft Docs"
-ms.custom: 
+title: Assistant Paramétrage du moteur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 01/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dta.general.f1
 ms.assetid: 50dd0a0b-a407-4aeb-bc8b-b02a793aa30a
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 11720ea18ba01bd0cdaec11e4500dc5cba5ef24c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: e0e0e2911f15ef9bc8e814ac056e6e63bf165a59
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="database-engine-tuning-advisor"></a>Database Engine Tuning Advisor
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’Assistant Paramétrage du moteur de base de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] analyse les bases de données et émet des recommandations que vous pouvez utiliser pour optimiser les performances des requêtes. L'Assistant Paramétrage du moteur de base de données vous permet de sélectionner et de créer un ensemble optimal d'index, de vues indexées ou de partitions de table sans devoir être un expert familiarisé avec la structure de la base de données ou les mécanismes internes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Vous pouvez effectuer les tâches suivantes à l'aide de l'Assistant Paramétrage du moteur de base de données :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'Assistant Paramétrage du moteur de base de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] analyse les bases de données et émet des recommandations que vous pouvez utiliser pour optimiser les performances des requêtes. L'Assistant Paramétrage du moteur de base de données vous permet de sélectionner et de créer un ensemble optimal d'index, de vues indexées ou de partitions de table sans devoir être un expert familiarisé avec la structure de la base de données ou les mécanismes internes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Vous pouvez effectuer les tâches suivantes à l'aide de l'Assistant Paramétrage du moteur de base de données :  
   
 -   Résoudre les problèmes liés aux performances d'une requête de problème spécifique  
   

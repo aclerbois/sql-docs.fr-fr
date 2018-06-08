@@ -1,33 +1,31 @@
 ---
-title: "Mapper des paramètres de requête à des variables dans un composant de flux de données | Microsoft Docs"
-ms.custom: 
+title: Mapper des paramètres de requête à des variables dans un composant de flux de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - queries [Integration Services], parameter mapping
 - parameters [Integration Services]
 - mapping query parameters to variables [Integration Services]
 - variables [Integration Services], mapping parameters to
 ms.assetid: 5e26977c-758c-46d6-acf1-4fd9238f0950
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 306d22adf7e49ab9eb8ae2844ad0cc322c96479f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 399c701cdf5326ad2a2ff589642ae8dcb95cc1a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="map-query-parameters-to-variables-in-a-data-flow-component"></a>Mapper des paramètres de requête à des variables dans un composant de flux de données
   Lorsque vous configurez la source OLE DB pour utiliser des requêtes paramétrables, vous pouvez mapper les paramètres à des variables.  

@@ -1,31 +1,23 @@
 ---
-title: "Bidirectionnelles entre les filtres dans les modèles tabulaires | Documents Microsoft"
-ms.custom: 
-ms.date: 02/21/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: multidimensional-tabular
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 5e810707-f58d-4581-8f99-7371fa75b6ac
-caps.latest.revision: 
-author: Minewiskan
+title: Bidirectionnelles entre les filtres dans les modèles tabulaires | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b3d4854a602dc3eb7b02a50dc760409243a64313
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 89c3aee1bb762a5725e3242c88284d07abdb8de7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="bi-directional-cross-filters-in-tabular-models"></a>Les filtres croisés bidirectionnels dans les modèles tabulaires
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-L’une des nouveautés de SQL Server 2016 est son approche intégrée d’activation des *filtres croisés bidirectionnels* dans les modèles tabulaires. Grâce à elle, plus besoin de concevoir manuellement des solutions de contournement DAX pour propager un contexte de filtre dans les relations de table.  
+  L’une des nouveautés de SQL Server 2016 est son approche intégrée d’activation des *filtres croisés bidirectionnels* dans les modèles tabulaires. Grâce à elle, plus besoin de concevoir manuellement des solutions de contournement DAX pour propager un contexte de filtre dans les relations de table.  
   
  Décomposons les éléments constitutifs de ce concept : le *filtrage croisé* est la possibilité de définir un contexte de filtre sur une table en fonction des valeurs d’une table associée ; *bidirectionnel* renvoie au transfert d’un contexte de filtre vers une deuxième table associée située à l’autre extrémité d’une relation de table. Comme son nom l’indique, vous pouvez procéder à un découpage dans les deux directions de la relation et pas seulement dans un seul sens.  En interne, le filtrage bidirectionnel étend le contexte de filtre pour interroger un sur-ensemble de vos données.  
   
@@ -66,14 +58,14 @@ L’une des nouveautés de SQL Server 2016 est son approche intégrée d’activ
 ## <a name="walkthrough-an-example"></a>Procédure pas à pas appliquée à un exemple  
  Le meilleur moyen de comprendre l’intérêt du filtrage croisé bidirectionnel est d’utiliser un exemple. Pour les besoins de cet exemple, nous utiliserons le jeu de données suivant tiré de [ContosoRetailDW](http://www.microsoft.com/en-us/download/details.aspx?id=18279), dont la cardinalité et les filtres croisés sont ceux créés par défaut.  
   
- ![SSAS-BIDI-2-Model](../../analysis-services/tabular-models/media/ssas-bidi-2-model.PNG "SSAS-BIDI-2-Model")  
+ ![Modèle SSAS-BIDI-2](../../analysis-services/tabular-models/media/ssas-bidi-2-model.PNG "modèle SSAS-BIDI-2")  
   
 > [!NOTE]  
 >  Par défaut, pendant l’importation des données, des relations de table sont créées automatiquement dans des configurations de type plusieurs-à-un. Celles-ci dérivent des relations de clé étrangère et de clé primaire entre la table de faits et les tables de dimension associées.  
   
  À noter que la direction du filtrage va des tables de dimension vers la table de faits (promotions, products, dates, customer geography sont tous des filtres valides qui parviennent à produire une mesure agrégée, la valeur réelle variant en fonction des dimensions utilisées).  
   
- ![ssas-bidi-3-defaultrelationships](../../analysis-services/tabular-models/media/ssas-bidi-3-defaultrelationships.PNG "ssas-bidi-3-defaultrelationships")  
+ ![SSAS-bidi-3-defaultrelationships](../../analysis-services/tabular-models/media/ssas-bidi-3-defaultrelationships.PNG "ssas-bidi-3-defaultrelationships")  
   
  Pour ce schéma en étoile simple, un test dans Excel confirme que les données sont parfaitement découpées quand le filtrage part des tables de dimension au niveau des lignes et des colonnes vers les données agrégées fournies par une mesure **Sum of Sales** (Total des ventes) située dans le tableau central **FactOnlineSales** .  
   
@@ -87,7 +79,7 @@ L’une des nouveautés de SQL Server 2016 est son approche intégrée d’activ
   
  Après avoir ajouté un filtre croisé bidirectionnel entre **FactOnlineSales** et **DimProduct**, les lignes de la table product sont maintenant correctement filtrées par fabricant et date.  
   
- ![ssas-bidi-6-prodcount-withfilter](../../analysis-services/tabular-models/media/ssas-bidi-6-prodcount-withfilter.png "ssas-bidi-6-prodcount-withfilter")  
+ ![SSAS-bidi-6-prodcount-withfilter](../../analysis-services/tabular-models/media/ssas-bidi-6-prodcount-withfilter.png "ssas-bidi-6-prodcount-withfilter")  
   
 ## <a name="learn-step-by-step"></a>Obtenir des informations étape par étape  
  Vous pouvez tester le filtrage croisé bidirectionnel en parcourant cette procédure pas à pas. Pour ce faire, voici ce dont vous avez besoin :  
@@ -147,11 +139,11 @@ L’une des nouveautés de SQL Server 2016 est son approche intégrée d’activ
 ### <a name="review-default-table-relationships"></a>Examiner les relations de table par défaut  
  Basculez vers la vue de diagramme : **Modèle** > **Vue du modèle** > **Vue de diagramme**. La cardinalité et les relations actives sont indiquées visuellement. Les relations entre deux tables associées sont toutes de type un-à-plusieurs.  
   
- ![SSAS-BIDI-2-Model](../../analysis-services/tabular-models/media/ssas-bidi-2-model.PNG "SSAS-BIDI-2-Model")  
+ ![Modèle SSAS-BIDI-2](../../analysis-services/tabular-models/media/ssas-bidi-2-model.PNG "modèle SSAS-BIDI-2")  
   
  Vous pouvez aussi cliquer sur **Table** > **Gérer les relations** pour afficher les mêmes informations dans une disposition de table.  
   
- ![ssas-bidi-3-defaultrelationships](../../analysis-services/tabular-models/media/ssas-bidi-3-defaultrelationships.PNG "ssas-bidi-3-defaultrelationships")  
+ ![SSAS-bidi-3-defaultrelationships](../../analysis-services/tabular-models/media/ssas-bidi-3-defaultrelationships.PNG "ssas-bidi-3-defaultrelationships")  
   
 ### <a name="create-measures"></a>Créer des mesures  
  Vous aurez besoin d’une agrégation pour faire la somme des montants de ventes selon les différentes facettes des données dimensionnelles. Dans **DimProduct,** vous pouvez créer une mesure qui calcule le nombre de produits. Vous pouvez ensuite utiliser cette mesure dans une analyse de merchandising produit qui indique le nombre de produits ayant contribué aux ventes pour une année, une région ou un type de client donnés.  

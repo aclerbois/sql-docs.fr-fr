@@ -1,30 +1,27 @@
 ---
-title: "Commencer à utiliser les groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Commencer à utiliser les groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 helpviewer_keywords:
 - Availability Groups [SQL Server], deploying
 - Availability Groups [SQL Server], about
 ms.assetid: 33f2f2d0-79e0-4107-9902-d67019b826aa
-caps.latest.revision: "53"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 53
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ad3286b87c3b0db9804a64291a4d30b8ab216e6a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d01cb1d1cef4236549b7875958c8f8cfe7ed68f7
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769595"
 ---
 # <a name="getting-started-with-always-on-availability-groups-sql-server"></a>Commencer à utiliser les groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

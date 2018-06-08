@@ -1,31 +1,28 @@
 ---
-title: "Créer une sauvegarde chiffrée | Microsoft Docs"
-ms.custom: 
+title: Créer une sauvegarde chiffrée | Microsoft Docs
+ms.custom: ''
 ms.date: 08/04/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e29061d3-c2ab-4d98-b9be-8e90a11d17fe
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ee0ec30a5ec6f6fc6977d74ff4b00a35781e2ac
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d963909a74b3d82bc9f851eff18ccf48036b9657
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-an-encrypted-backup"></a>Créer une sauvegarde chiffrée
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique décrit les étapes nécessaires pour créer une sauvegarde chiffrée à l’aide de Transact-SQL.  Par exemple, à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], consultez [Créer une sauvegarde complète de base de données (SQL Server)](../../relational-databases/backup-restore/create-a-full-database-backup-sql-server.md). 
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique décrit les étapes nécessaires pour créer une sauvegarde chiffrée à l'aide de Transact-SQL.  Par exemple, à l’aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], consultez [Créer une sauvegarde complète de base de données (SQL Server)](../../relational-databases/backup-restore/create-a-full-database-backup-sql-server.md). 
   
 ## <a name="backup-to-disk-with-encryption"></a>Sauvegarde sur disque avec chiffrement  
  **Configuration requise :**  

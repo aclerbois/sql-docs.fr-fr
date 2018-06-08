@@ -1,16 +1,14 @@
 ---
-title: "Sélectionnez pour les instructions de mise à jour de traitement | Documents Microsoft"
-ms.custom: 
+title: Sélectionnez pour les instructions de mise à jour de traitement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC cursor library [ODBC], statement processing
 - SQL statements [ODBC], select for update statements
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - ODBC cursor library [ODBC], select for update statements
 - cursor library [ODBC], statement processing
 ms.assetid: 8d2e79a4-5daf-458e-a536-d8b6e588753e
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4c065a3194e492d7f05bae4b857eda293aa523cd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ede999422f6b52112356aa7c9c4b7715eafb96c6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-select-for-update-statements"></a>Sélectionnez pour les instructions de mise à jour de traitement
 > [!IMPORTANT]  

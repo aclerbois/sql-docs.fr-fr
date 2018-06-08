@@ -1,35 +1,23 @@
 ---
-title: "Exemples de requêtes de modèle Naive Bayes | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- naive bayes model [Analysis Services]
-- naive bayes algorithms [Analysis Services]
-- content queries [DMX]
-ms.assetid: e642bd7d-5afa-4dfb-8cca-4f84aadf61b0
-caps.latest.revision: 
-author: Minewiskan
+title: Exemples de requêtes de modèle Naive Bayes | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1fa67a1dce190a145588f90b740213f6400612dd
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 4f4ea8c07865980caa6f817e2920599d1a9003d0
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="naive-bayes-model-query-examples"></a>Exemples de requêtes de modèle Naive Bayes
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez soit créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, soit créer une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Vous pouvez également récupérer les métadonnées relatives au modèle en utilisant une requête sur l'ensemble de lignes de schéma d'exploration de données. Cette section explique comment créer ces requêtes pour les modèles basés sur l'algorithme MNB (Microsoft Naive Bayes).  
+  Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez soit créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, soit créer une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Vous pouvez également récupérer les métadonnées relatives au modèle en utilisant une requête sur l'ensemble de lignes de schéma d'exploration de données. Cette section explique comment créer ces requêtes pour les modèles basés sur l'algorithme MNB (Microsoft Naive Bayes).  
   
  **Requêtes de contenu**  
   
@@ -251,19 +239,19 @@ AS t
 |||  
 |-|-|  
 |Fonction de prédiction|Utilisation|  
-|[IsDescendant &#40; DMX &#41;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le modèle.|  
-|[Prédire &#40; DMX &#41;](../../dmx/predict-dmx.md)|Retourne une valeur ou un ensemble de valeurs prédites pour une colonne spécifiée.|  
-|[PredictAdjustedProbability &#40; DMX &#41;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
-|[PredictAssociation &#40; DMX &#41;](../../dmx/predictassociation-dmx.md)|Prédit l'appartenance à un dataset associatif.|  
-|[PredictNodeId &#40; DMX &#41;](../../dmx/predictnodeid-dmx.md)|Retourne Node_ID pour chaque cas.|  
-|[PredictProbability &#40; DMX &#41;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
-|[PredictSupport &#40; DMX &#41;](../../dmx/predictsupport-dmx.md)|Retourne la valeur de support pour un état spécifié.|  
+|[IsDescendant & #40 ; DMX & #41 ;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le modèle.|  
+|[Prédire & #40 ; DMX & #41 ;](../../dmx/predict-dmx.md)|Retourne une valeur ou un ensemble de valeurs prédites pour une colonne spécifiée.|  
+|[PredictAdjustedProbability & #40 ; DMX & #41 ;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
+|[PredictAssociation & #40 ; DMX & #41 ;](../../dmx/predictassociation-dmx.md)|Prédit l'appartenance à un dataset associatif.|  
+|[PredictNodeId & #40 ; DMX & #41 ;](../../dmx/predictnodeid-dmx.md)|Retourne Node_ID pour chaque cas.|  
+|[PredictProbability & #40 ; DMX & #41 ;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
+|[PredictSupport & #40 ; DMX & #41 ;](../../dmx/predictsupport-dmx.md)|Retourne la valeur de support pour un état spécifié.|  
   
  Pour connaître la syntaxe de fonctions spécifiques, consultez [Informations de référence sur les fonctions DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-function-reference.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Référence technique de Microsoft Naive Bayes algorithme](../../analysis-services/data-mining/microsoft-naive-bayes-algorithm-technical-reference.md)   
  [Algorithme Microsoft Naive Bayes](../../analysis-services/data-mining/microsoft-naive-bayes-algorithm.md)   
- [Contenu du modèle d’exploration de données pour les modèles Naive Bayes &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles Naive Bayes & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-naive-bayes-models-analysis-services-data-mining.md)  
   
   

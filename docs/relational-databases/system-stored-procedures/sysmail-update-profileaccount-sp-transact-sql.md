@@ -1,16 +1,14 @@
 ---
 title: sysmail_update_profileaccount_sp (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_update_profileaccount_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_update_profileaccount_sp
 ms.assetid: 92ca7488-29db-414e-8e36-08b0a8f542bb
-caps.latest.revision: 
+caps.latest.revision: 41
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fc4c797f149d3139beede4617a7b81721397615c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ee2f44070644e305163e6a7ae38eea9a81ba9fa1
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailupdateprofileaccountsp-transact-sql"></a>sysmail_update_profileaccount_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,19 +46,19 @@ sysmail_update_profileaccount_sp  { [ @profile_id = ] profile_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  Identificateur du profil à mettre à jour. *profile_id* est **int**, avec NULL comme valeur par défaut. Soit le *profile_id* ou *profile_name* doit être spécifié.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du profil à mettre à jour. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Soit le *profile_id* ou *profile_name* doit être spécifié.  
   
- [ **@account_id** = ] *account_id*  
+ [ **@account_id** =] *account_id*  
  ID du compte à mettre à jour. *account_id* est **int**, avec NULL comme valeur par défaut. Soit le *account_id* ou *account_name* doit être spécifié.  
   
- [  **@account_name**  =] **'***account_name***'**  
+ [ **@account_name** =] **'***account_name***'**  
  Nom du compte à mettre à jour. *account_name* est **sysname**, avec NULL comme valeur par défaut. Soit le *account_id* ou *account_name* doit être spécifié.  
   
- [ **@sequence_number** = ] *sequence_number*  
+ [ **@sequence_number** =] *numéros de séquence*  
  Nouveau numéro de séquence du compte. *numéros de séquence* est **int**, sans valeur par défaut. Le numéro de séquence détermine l'ordre dans lequel les comptes sont utilisés dans le profil.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -96,6 +93,6 @@ EXECUTE msdb.dbo.sysmail_update_profileaccount_sp
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte de messagerie de base de données](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

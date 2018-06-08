@@ -1,31 +1,30 @@
 ---
 title: Travailler avec les fichiers de Script de la Console exemple (MySQLToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Sample console script files
+helpviewer_keywords:
+- Sample console script files
 ms.assetid: 7e6aaa8a-5f5c-414d-9fb8-21e56b9ffaef
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8647293328bd0da43c095ddebb4844917afdc580
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f683e6a1be376b63c5cf95f1e7535b686bc8321a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-the-sample-console-script-files-mysqltosql"></a>Travailler avec les fichiers de Script de la Console exemple (MySQLToSQL)
 Quelques exemples de fichiers ont été fournis avec le produit pour la référence de l’utilisateur et son utilisation. Cette section décrit la façon de personnaliser ces scripts en fonction des besoins des utilisateurs finaux.  
@@ -49,11 +48,11 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     -   L’utilisateur peut se connecter à la base de données requis en modifiant simplement les valeurs à la source requis et les définitions de serveur cible. Dans l’exemple fourni toutes les valeurs ont été fournis comme variable les valeurs qui sont disponibles dans le **VariableValueFileSample.xml**.  Tous les autres paramètres de connexion peuvent être supprimées du fichier de connexion de serveur de travail de l’utilisateur.  
   
-    -   Pour plus d’informations sur la connexion au serveur source et cible, consultez [créer les fichiers de connexion de serveur &#40; MySQLToSQL &#41; ](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md) .  
+    -   Pour plus d’informations sur la connexion au serveur source et cible, consultez [création des fichiers de connexion serveur &#40;MySQLToSQL&#41; ](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md) .  
   
 -   **VariableValueFileSample.xml :** toutes les variables qui ont été utilisés dans la console de l’exemple des fichiers de script et `ServersConnectionFileSample.xml` ont été assemblés dans ce fichier. Pour exécuter les exemples de scripts de console que l’utilisateur a simplement à remplacer la variable de l’exemple avec l’utilisateur, les valeurs celles définies et passer ce fichier comme un argument de ligne de commande supplémentaires, ainsi que le fichier de script.  
   
-    Pour plus d’informations sur le fichier de valeurs Variable, consultez [création de fichiers de valeur Variable &#40; MySQLToSQL &#41; ](../../ssma/mysql/creating-variable-value-files-mysqltosql.md).  
+    Pour plus d’informations sur le fichier de valeurs Variable, consultez [création de fichiers de valeur Variable &#40;MySQLToSQL&#41;](../../ssma/mysql/creating-variable-value-files-mysqltosql.md).  
   
 -   **AssessmentReportGenerationSample.xml :** cet exemple permet à l’utilisateur Générer un rapport d’évaluation xml qui peut être utilisé par l’utilisateur pour l’analyse avant de commencer à convertir et migrer des données.  
   
@@ -61,7 +60,7 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     Si l’utilisateur doit évaluer plusieurs objets / bases de données qu’il peut spécifier plusieurs `metabase-object` nœuds, comme illustré dans le `generate-assessment-report` 4 d’exemple de la commande de l’exemple de fichier de script de console.  
   
-    Pour plus d’informations sur la génération de rapports, consultez [génération de rapports &#40; MySQLToSQL &#41; ](../../ssma/mysql/generating-reports-mysqltosql.md).  
+    Pour plus d’informations sur la génération de rapports, consultez [génération de rapports &#40;MySQLToSQL&#41;](../../ssma/mysql/generating-reports-mysqltosql.md).  
   
     **Remarques :**  
   
@@ -88,9 +87,9 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     Mappage de schéma de base de données source vers le schéma cible.  
   
-    **Attribute**  
+    **Attribut**  
   
-    -   `source-schema:`Spécifie la base de données source qui nécessite d’être converti.  
+    -   `source-schema:` Spécifie la base de données source qui nécessite d’être converti.  
   
     -   `sql-server-schema`: Spécifie la base de données cible qui doit être migré vers  
   
@@ -102,9 +101,9 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     2.  Si l’utilisateur doit évaluer plusieurs objets / bases de données qu’il peut spécifier plusieurs `metabase-object` nœuds, comme illustré dans le `convert-schema` 4 d’exemple de la commande de l’exemple de fichier de script de console.  
   
-    **Attribute**  
+    **Attribut**  
   
-    `object-name`: Permet de spécifier la base de données source / nom qui nécessite d’être converti de l’objet. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le`object-name`  
+    `object-name`: Permet de spécifier la base de données source / nom qui nécessite d’être converti de l’objet. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le `object-name`  
   
     **Nom de la commande**  
   
@@ -114,9 +113,9 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     2.  Si l’utilisateur doit évaluer plusieurs objets / bases de données qu’il peut spécifier plusieurs `metabase-object` nœuds, comme illustré dans le `synchronize-target` 3 d’exemple de la commande de l’exemple de fichier de script de console.  
   
-    **Attribute**  
+    **Attribut**  
   
-    `object-name:`Spécifiez la base de données sql server / nom qui nécessite la création de l’objet. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le`object-name`  
+    `object-name:` Spécifiez la base de données sql server / nom qui nécessite la création de l’objet. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le `object-name`  
   
     **Nom de la commande**  
   
@@ -126,12 +125,12 @@ Les fichiers de script de console exemple suivants couvrant les différents scé
   
     2.  Si l’utilisateur doit évaluer plusieurs objets / bases de données qu’il peut spécifier plusieurs `metabase-object` nœuds, comme illustré dans le `migrate-data` exemple 2 de la commande de l’exemple de fichier de script de console.  
   
-    **Attribute**  
+    **Attribut**  
   
-    `object-name:`Spécifie la source de données / tables nom qui nécessite d’être migrée. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le`object-name`  
+    `object-name:` Spécifie la source de données / tables nom qui nécessite d’être migrée. Vérifiez que le correspondant `object-type` est modifié en fonction du type d’objet qui est spécifié dans le `object-name`  
   
 ## <a name="see-also"></a>Voir aussi  
-[Création de fichiers de la valeur de la Variable &#40; MySQLToSQL &#41;](../../ssma/mysql/creating-variable-value-files-mysqltosql.md)  
-[Créer les fichiers de connexion de serveur &#40; MySQLToSQL &#41;](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md)  
-[Génération de rapports &#40; MySQLToSQL &#41;](../../ssma/mysql/generating-reports-mysqltosql.md)  
+[Création de fichiers de la valeur de la Variable &#40;MySQLToSQL&#41;](../../ssma/mysql/creating-variable-value-files-mysqltosql.md)  
+[Création des fichiers de connexion serveur &#40;MySQLToSQL&#41;](../../ssma/mysql/creating-the-server-connection-files-mysqltosql.md)  
+[Génération de rapports &#40;MySQLToSQL&#41;](../../ssma/mysql/generating-reports-mysqltosql.md)  
   

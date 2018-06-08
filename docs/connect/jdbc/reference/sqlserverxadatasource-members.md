@@ -1,27 +1,24 @@
 ---
 title: Membres de SQLServerXADataSource | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 04178645-915f-4569-8907-d45e299bbe7d
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 257bbe29b71c558002c6d22d7d05cc01f7e24e12
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7b41b37922855c65d9e02f7443aae8401c033e5d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverxadatasource-members"></a>Membres de SQLServerXADataSource
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -61,7 +58,7 @@ ms.lasthandoff: 11/18/2017
 |[getSelectMethod](../../../connect/jdbc/reference/getselectmethod-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) retourne le type de curseur par défaut qui est utilisé pour tous les jeux de résultats qui sont créés à l’aide de cet objet de source de données.|  
 |[getSendStringParametersAsUnicode](../../../connect/jdbc/reference/getsendstringparametersasunicode-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) retourne un **booléenne** valeur qui indique si l’envoi de **chaîne** paramètres au serveur au format UNICODE est activé.|  
 |[getServerName](../../../connect/jdbc/reference/getservername-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) retourne le nom de l’ordinateur qui est en cours d’exécution [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].|  
-|[getURL.](../../../connect/jdbc/reference/geturl-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) renvoie l’URL qui est utilisé pour se connecter à la source de données.|  
+|[getURL](../../../connect/jdbc/reference/geturl-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) renvoie l’URL qui est utilisé pour se connecter à la source de données.|  
 |[getUser](../../../connect/jdbc/reference/getuser-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) renvoie le nom d’utilisateur qui est utilisé pour se connecter à la source de données.|  
 |[getWorkstationID](../../../connect/jdbc/reference/getworkstationid-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) retourne le nom du client de nom de l’ordinateur qui est utilisé pour se connecter à la source de données.|  
 |[getXAConnection](../../../connect/jdbc/reference/getxaconnection-method-sqlserverxadatasource.md)|Essaie d'établir une connexion de base de données physique qui peut être utilisée dans une transaction distribuée.|  
@@ -80,7 +77,7 @@ ms.lasthandoff: 11/18/2017
 |[setLoginTimeout](../../../connect/jdbc/reference/setlogintimeout-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit le nombre de secondes pendant lesquelles cet objet de source de données doit patienter lors de la tentative établir une connexion.|  
 |[setLogWriter](../../../connect/jdbc/reference/setlogwriter-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit un flux de sortie de caractères à utiliser pour tous les messages de journalisation et le suivi.|  
 |[setMultiSubnetFailover](../../../connect/jdbc/reference/setmultisubnetfailover-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit la valeur de la **multiSubnetFailover** propriété de connexion.|  
-|[méthode setPassword](../../../connect/jdbc/reference/setpassword-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit le mot de passe qui servira à se connecter à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].|  
+|[setPassword](../../../connect/jdbc/reference/setpassword-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit le mot de passe qui servira à se connecter à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].|  
 |[setPortNumber](../../../connect/jdbc/reference/setportnumber-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit le numéro de port à utiliser pour communiquer avec [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].|  
 |[setSelectMethod](../../../connect/jdbc/reference/setselectmethod-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit le type de curseur par défaut qui est utilisé pour tous les jeux de résultats qui sont créés à l’aide de cet objet de source de données.|  
 |[setSendStringParametersAsUnicode](../../../connect/jdbc/reference/setsendstringparametersasunicode-method-sqlserverdatasource.md)|(Héritée de [SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-class.md)) définit un **booléenne** valeur qui indique lors de l’envoi **chaîne** paramètres au serveur au format UNICODE est activé.|  

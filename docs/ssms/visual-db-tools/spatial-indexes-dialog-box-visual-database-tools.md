@@ -1,31 +1,31 @@
 ---
-title: "Index spatiaux, boîte de dialogue (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Index spatiaux, boîte de dialogue (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vdt.dlgbox.spatialindexes
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vdt.dlgbox.spatialindexes
 ms.assetid: 4d84239a-68c7-4aa2-8602-2b51dd07260f
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bfaa6bfd65d898bedcbf7568f86c99b9c4b6a952
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: fb7c869dbf087db4c59eb9e5ba30c48f6e33f055
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spatial-indexes-dialog-box-visual-database-tools"></a>Index spatiaux, boîte de dialogue (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez la boîte de dialogue **Index spatiaux** pour créer des index pour les colonnes du type de données **géométrie** ou **géographie** (*colonnes spatiales*), qui ne peuvent pas être indexées à l’aide de la boîte de dialogue **Index/Clés**. Chaque colonne spatiale peut avoir plusieurs index spatiaux, mais ils doivent être créés un par un.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Utilisez la boîte de dialogue **Index spatiaux** pour créer des index pour les colonnes du type de données **géométrie** or **géographie** (*colonnes spatiales*), qui ne peuvent pas être indexées à l'aide de la boîte de dialogue **Index/Clés** . Chaque colonne spatiale peut avoir plusieurs index spatiaux, mais ils doivent être créés un par un.  
   
 Pour plus d'informations sur les restrictions relatives à la création d'index spatiaux, consultez [Vue d'ensemble des index spatiaux](http://msdn.microsoft.com/en-us/b1ae7b78-182a-459e-ab28-f743e43f8293).  
   
@@ -93,7 +93,7 @@ Développée, elle affiche les champs de propriétés de **Nom** et **Descriptio
 Indique le nom de l'index spatial. Lorsqu'un nouvel index est créé, il obtient un nom par défaut basé sur la table affichée dans la fenêtre active du Concepteur de tables. Vous pouvez modifier le nom à tout moment.  
   
 **Description**  
-Décrit l'index. Pour écrire une description plus détaillée, cliquez sur **Description** , puis sur le bouton de sélection**(...)**qui apparaît à droite du champ de propriété. Vous obtiendrez une zone d'écriture plus large.  
+Décrit l'index. Pour écrire une description plus détaillée, cliquez sur **Description** , puis sur le bouton de sélection **(...)** qui apparaît à droite du champ de propriété. Vous obtiendrez une zone d'écriture plus large.  
   
 **Catégorie Concepteur de tables**  
 Développée, elle affiche des informations sur les propriétés de cet index spatial.  

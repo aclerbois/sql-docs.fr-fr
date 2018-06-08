@@ -3,14 +3,12 @@ title: Prise en charge de Type de données pour OLE DB Date et heure améliorati
 description: Prise en charge du type de données pour les améliorations de date et d’heure OLE DB
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-date-time
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -18,13 +16,12 @@ helpviewer_keywords:
 - OLE DB, date/time improvements
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bbfdaf039668820a108c3f261ca7162c17cd4c09
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 66756bbb8179e9d7644d053dd76c4ab8223032d8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-support-for-ole-db-date-and-time-improvements"></a>Prise en charge du Type de données pour OLE DB Date et heure améliorations
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -182,12 +179,12 @@ enum SQLVARENUM {
 |----------------------------------|-----------------------------------------|-----------|  
 |DBTYPE_DBDATE|date||  
 |DBTYPE_DBTIMESTAMP|**datetime2**(p)|Le pilote OLE DB pour SQL Server inspecte les membres *bScale* membre pour déterminer la précision en fractions de seconde.|  
-|DBTYPE_DBTIME2|**time**(p)|Le pilote OLE DB pour SQL Server inspecte les membres *bScale* membre pour déterminer la précision en fractions de seconde.|  
+|DBTYPE_DBTIME2|**temps**(p)|Le pilote OLE DB pour SQL Server inspecte les membres *bScale* membre pour déterminer la précision en fractions de seconde.|  
 |DBTYPE_DBTIMESTAMPOFFSET|**datetimeoffset**(p)|Le pilote OLE DB pour SQL Server inspecte les membres *bScale* membre pour déterminer la précision en fractions de seconde.|  
   
  Lorsqu’une application spécifie DBTYPE_DBTIMESTAMP dans *wType*, il peut remplacer le mappage à **datetime2** , vous devez fournir un nom de type dans *pwszTypeName*. Si **datetime** est spécifié, *bScale* doit être 3. Si **smalldatetime** est spécifié, *bScale* doit être 0. Si *bScale* n’est pas cohérent avec *wType* et *pwszTypeName*, DB_E_BADSCALE est retourné.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Date et heure améliorations &#40; OLE DB &#41;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
+ [Date et heure améliorations & #40 ; OLE DB & #41 ;](../../oledb/ole-db-date-time/date-and-time-improvements-ole-db.md)  
   
   

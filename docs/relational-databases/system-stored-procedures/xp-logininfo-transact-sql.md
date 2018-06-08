@@ -1,16 +1,14 @@
 ---
 title: xp_logininfo (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - xp_logininfo_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - xp_logininfo
 ms.assetid: ee7162b5-e11f-4a0e-a09c-1878814dbbbd
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b77eb07126cc739908713d8172695db9098d20d9
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: ae6820bc76ff2bb98360a77c4c3a5432d1e18af5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="xplogininfo-transact-sql"></a>xp_logininfo (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +49,7 @@ xp_logininfo [ [ @acctname = ] 'account_name' ]
  Nom d'un utilisateur ou groupe Windows autorisé à accéder à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *account_name* est **sysname**, avec NULL comme valeur par défaut. Si *account_name* n’est pas spécifié, tous les groupes Windows et les utilisateurs Windows qui ont été explicitement accordé l’autorisation de se connecter sont signalés. *account_name* doivent être qualifiés complets. Par exemple, « ADVWKS4\macraes » ou « BUILTIN\Administrators ».  
   
  **'all'** | **« membres »**  
- Spécifie s'il faut rapporter les informations sur tous les chemins d'autorisation du compte ou sur les membres du groupe Windows. **@option**est **varchar (10)**, avec NULL comme valeur par défaut. À moins que **tous les** est spécifié, seul le chemin de la première autorisation s’affiche.  
+ Spécifie s'il faut rapporter les informations sur tous les chemins d'autorisation du compte ou sur les membres du groupe Windows. **@option** est **varchar (10)**, avec NULL comme valeur par défaut. À moins que **tous les** est spécifié, seul le chemin de la première autorisation s’affiche.  
   
  [  **@privilege =** ] *nom_variable*  
  Paramètre de sortie qui retourne le niveau de privilège du compte Windows spécifié. *nom_variable* est **varchar (10)**, avec une valeur par défaut « Not wanted ». Le niveau de privilège renvoyé est **utilisateur**, **admin**, ou **null**.  
@@ -67,9 +64,9 @@ xp_logininfo [ [ @acctname = ] 'account_name' ]
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**nom du compte**|**sysname**|Nom de compte Windows complet.|  
+|**Nom du compte**|**sysname**|Nom de compte Windows complet.|  
 |**type**|**char (8)**|Type de compte Windows. Les valeurs valides sont **utilisateur** ou **groupe**.|  
-|**privilège**|**char (9)**|Privilège d'accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les valeurs valides sont **admin**, **utilisateur**, ou **null**.|  
+|**privilège**|**char(9)**|Privilège d'accès à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les valeurs valides sont **admin**, **utilisateur**, ou **null**.|  
 |**nom de connexion mappé**|**sysname**|Pour les comptes d’utilisateurs qui ont des privilèges d’utilisateur, **mappé le nom de connexion** indique le nom de connexion mappé que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] essaie d’utiliser lors de la connexion avec ce compte en utilisant les règles de mappage avec le nom de domaine est ajouté avant qu’il.|  
 |**chemin d’accès de l’autorisation**|**sysname**|Membre du groupe qui autorise l'accès au compte|  
   
@@ -84,7 +81,7 @@ xp_logininfo [ [ @acctname = ] 'account_name' ]
   
  **xp_logininfo** retourne uniquement les informations de groupes globaux Active Directory, les groupes universels pas.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance au **sysadmin** rôle serveur fixe ou l’appartenance au **public** rôle de base de données fixe dans le **master** base de données avec l’autorisation EXECUTE accordée.  
   
 ## <a name="examples"></a>Exemples  
@@ -99,6 +96,6 @@ EXEC xp_logininfo 'BUILTIN\Administrators';
  [sp_grantlogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-grantlogin-transact-sql.md)   
  [sp_revokelogin &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-revokelogin-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Étendues générales des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/general-extended-stored-procedures-transact-sql.md)  
+ [Procédures stockées étendues générales &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/general-extended-stored-procedures-transact-sql.md)  
   
   

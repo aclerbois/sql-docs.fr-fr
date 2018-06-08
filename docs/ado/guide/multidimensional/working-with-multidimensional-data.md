@@ -1,35 +1,32 @@
 ---
-title: "Utilisation des données multidimensionnelles | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Utilisation des données multidimensionnelles | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - multidimensional data [ADO]
 ms.assetid: 84387746-aa3e-44fd-ad6c-a8214a6966dc
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c96d7fda2e02aeefa6225f1cea602f6ed6c7dc2e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1d7b5257bf0161c4064f1f25be5c223f46787e4f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-multidimensional-data"></a>Utilisation des données multidimensionnelles
 A *ensemble de cellules* est le résultat d’une requête sur des données multidimensionnelles. Il se compose d’une collection d’axes, généralement pas plus de quatre axes et généralement deux ou trois. Un *axe* est une collection de membres à partir d’une ou plusieurs dimensions, qui est utilisée pour rechercher ou filtrer des valeurs spécifiques dans un cube.  
   
- A *position* est un point sur un axe. Pour un axe consistant en une seule dimension, ces positions sont un sous-ensemble des membres de dimension. Si un axe comprend plusieurs dimensions, chaque position est une entité composée, ce qui a  *n*  parties where  *n*  est le nombre de dimensions orientées le long de cet axe. Chaque partie de la position est un membre d’une dimension qui le composent.  
+ A *position* est un point sur un axe. Pour un axe consistant en une seule dimension, ces positions sont un sous-ensemble des membres de dimension. Si un axe comprend plusieurs dimensions, chaque position est une entité composée, ce qui a *n* parties where *n* est le nombre de dimensions orientées le long de cet axe. Chaque partie de la position est un membre d’une dimension qui le composent.  
   
  Par exemple, si les dimensions géographie et produit à partir d’un cube contenant des données de ventes sont orientées le long de l’axe des x d’un ensemble de cellules, une position le long de cet axe peut contenir les membres « USA » et « Ordinateurs ». Dans cet exemple, la détermination de la position le long de l’axe des abscisses requiert que les membres de chaque dimension sont orientés le long de l’axe.  
   

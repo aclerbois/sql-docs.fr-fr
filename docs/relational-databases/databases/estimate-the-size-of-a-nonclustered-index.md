@@ -1,16 +1,16 @@
 ---
-title: "Estimer la taille d’un index non-cluster | Microsoft Docs"
-ms.custom: 
+title: Estimer la taille d’un index non-cluster | Microsoft Docs
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: SQL
 ms.prod_service: database-engine, sql-database
 ms.component: indexes
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - space allocation [SQL Server], index size
 - size [SQL Server], tables
@@ -21,16 +21,16 @@ helpviewer_keywords:
 - designing databases [SQL Server], estimating size
 - calculating table size
 ms.assetid: c183b0e4-ef4c-4bfc-8575-5ac219c25b0a
-caps.latest.revision: 
+caps.latest.revision: 40
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 03eaa651f6184c9dc1dc53913e1662798664b983
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a73e9c741ef92adc7f43a1edbc1be52d54be450f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="estimate-the-size-of-a-nonclustered-index"></a>Estimer la taille d'un index non-cluster
 

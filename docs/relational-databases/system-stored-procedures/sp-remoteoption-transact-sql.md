@@ -1,16 +1,14 @@
 ---
 title: sp_remoteoption (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_remoteoption_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_remoteoption
 ms.assetid: c9a7309b-eab7-4192-a414-e282581af4e5
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4c5670e022bee797cbabb6ec603ca66db79ef2f7
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 97bc35671edc276444a0580ac8346def43d215e8
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spremoteoption-transact-sql"></a>sp_remoteoption (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,6 +55,6 @@ sp_remoteoption [ [ @remoteserver = ] 'remoteserver' ]
  `The trusted option in remote login mapping is no longer supported.`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Serveurs liés &#40;moteur de base de données&#41;](../../relational-databases/linked-servers/linked-servers-database-engine.md)  
+ [Liés serveurs & #40 ; moteur de base de données & #41 ;](../../relational-databases/linked-servers/linked-servers-database-engine.md)  
   
   

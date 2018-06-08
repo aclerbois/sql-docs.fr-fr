@@ -1,33 +1,30 @@
 ---
-title: "Attributs et propriétés nom-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Attributs et propriétés nom-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Attributes property [ADO], Visual Basic example
 - Name property [ADO], Visual Basic example
 ms.assetid: 258bdce3-1819-44a2-9217-105879c789ef
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 28506a9073abf5c71a049aec7a651d4896c8ff9b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b4ea31a718fad93c01f32dab8dcbe5b7ea7e7f9c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="attributes-and-name-properties-example-vb"></a>Attributs et propriétés nom-exemple (VB)
 Cet exemple affiche la valeur de la [attributs](../../../ado/reference/ado-api/attributes-property-ado.md) propriété [connexion](../../../ado/reference/ado-api/connection-object-ado.md), [champ](../../../ado/reference/ado-api/field-object.md), et [propriété](../../../ado/reference/ado-api/property-object-ado.md) objets. Elle utilise le [nom](../../../ado/reference/ado-api/name-property-ado.md) pour afficher le nom de chaque propriété **champ** et **propriété** objet.  

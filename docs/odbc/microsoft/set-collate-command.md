@@ -1,28 +1,26 @@
 ---
 title: Commande SET COLLATE | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: set collate command [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- set collate command [ODBC]
 ms.assetid: 00efbcd4-fea8-4061-86a5-82de413cb753
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 735e28da49e0c8a9dc3a12d9a29d107209ec99dd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f1ce3b75134da55286f40dc77cf6f6ba7de7e5b6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-collate-command"></a>Commande SET COLLATE
 Spécifie une séquence de classement pour les champs de type caractère dans l’indexation suivantes et les opérations de tri.  
@@ -38,7 +36,7 @@ SET COLLATE TO cSequenceName
  *cSequenceName*  
  Spécifie une séquence de classement. Les options de séquence de classement disponibles sont décrits dans le tableau suivant.  
   
-|Options|Langue|  
+|Options|Langage|  
 |-------------|--------------|  
 |NÉERLANDAIS|Néerlandais|  
 |GENERAL|Anglais, Français, allemand, Espagnol moderne, portugais et autres langues d’Europe occidentale|  
@@ -73,7 +71,7 @@ SET COLLATE TO "SWEFIN"
 SET COLLATE TO cSequenceName  
 ```  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  VALEUR COLLATE vous permet d’ordonner les tables contenant les caractères accentués pour toutes les langues prises en charge. Modification du paramètre de valeur COLLATE n’affecte pas l’ordre de classement des index précédemment ouverts. Visual FoxPro gère automatiquement les index existants, permettant de créer différents types d’index, même pour le même champ.  
   
  Par exemple, si un index est créé avec la valeur COLLATE général la valeur et le paramètre de valeur COLLATE est modifié en espagnol, l’index conserve la séquence de classement général.  

@@ -1,16 +1,15 @@
 ---
 title: Les fonctions de copie en bloc | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-extensions-bulk-copy-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Native Client ODBC driver, bulk copy
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - ODBC, bulk copy operations
 - functions [ODBC]
 ms.assetid: 6526b892-1d58-4f55-8335-f09887f6ea02
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 488c3f5ec2cc7785333f80ae4bb73dc3961990a6
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 782a0b720d0f1bbbb0ecf270b903f8700e6ad33e
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707827"
 ---
 # <a name="sql-server-driver-extensions---bulk-copy-functions"></a>Extensions de pilote SQL Server - fonctions de copie en bloc
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -81,6 +81,6 @@ ms.lasthandoff: 01/24/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Extensions du pilote SQL Server](http://msdn.microsoft.com/library/1043bc93-965d-4939-bd1c-21e9d8d3e9ac)   
- [Exécution d’opérations de copie en bloc &#40; ODBC &#41;](../../relational-databases/native-client-odbc-bulk-copy-operations/performing-bulk-copy-operations-odbc.md)  
+ [Exécution d’opérations de copie en bloc &#40;ODBC&#41;](../../relational-databases/native-client-odbc-bulk-copy-operations/performing-bulk-copy-operations-odbc.md)  
   
   

@@ -1,17 +1,14 @@
 ---
-title: "Espace disque nécessaire pour les opérations DDL d’index | Microsoft Docs"
-ms.custom: 
+title: Espace disque nécessaire pour les opérations DDL d’index | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - disk space [SQL Server], indexes
 - index disk space [SQL Server]
@@ -19,16 +16,15 @@ helpviewer_keywords:
 - indexes [SQL Server], disk space requirements
 - temporary disk space [SQL Server]
 ms.assetid: 35930826-c870-44c1-a966-a6a4638f62ef
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 39
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c71784eb7a7a8e9ed2456cb7ae7718fafc9e1e6a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: c6ef492b0e1849ea9d01864028404d1e152bc390
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="disk-space-requirements-for-index-ddl-operations"></a>Espace disque nécessaire pour les opérations DDL d'index
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

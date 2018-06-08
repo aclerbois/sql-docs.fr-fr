@@ -1,34 +1,30 @@
 ---
-title: "Audit Add DB User (classe d’événements) | Microsoft Docs"
-ms.custom: 
+title: Audit Add DB User (classe d’événements) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Add DB User event class
 ms.assetid: ac9ed573-c84d-444c-81fb-923a6240c1ef
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f77357183147cf4fc5e6a651fae6543bd4d7743a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 272c75f1958c688441b621dfdd8ed92d4505ecf0
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-add-db-user-event-class"></a>Audit Add DB User (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Add DB User** est générée lorsqu’une connexion est ajoutée ou supprimée comme utilisateur de base de données dans une base de données. Cette classe d’événements est utilisée avec les procédures stockées **sp_grantdbaccess**, **sp_revokedbaccess**, **sp_adduser**et **sp_dropuser** .  
+  La classe d’événements **Audit Add DB User** est générée lorsqu’une connexion est ajoutée ou supprimée comme utilisateur de base de données dans une base de données. Cette classe d’événements est utilisée avec les procédures stockées **sp_grantdbaccess**, **sp_revokedbaccess**, **sp_adduser**et **sp_dropuser** .  
   
  Cette classe d'événements pourrait être supprimée dans une version ultérieure de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Nous vous recommandons d’utiliser la casse d’événements **Audit Database Principal Management** à la place.  
   

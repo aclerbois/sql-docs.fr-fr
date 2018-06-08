@@ -1,27 +1,25 @@
 ---
-title: "Nouvelles fonctionnalités de l’interface graphique utilisateur de SSMA pour Oracle (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Nouvelles fonctionnalités de l’interface graphique utilisateur de SSMA pour Oracle (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 62e2d30f-a73f-42d9-a6ab-3510a8198f4e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 6de8f6e3ccb01838117aa1696c873aec117bbb81
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 4fdbb359f9c8ebd9d1ecd4133b115c7700a6cda5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-gui-features-in-ssma-for-oracle-oracletosql"></a>Nouvelles fonctionnalités de l’interface graphique utilisateur de SSMA pour Oracle (OracleToSQL)
 Ce chapitre décrit les nouvelles fonctionnalités de l’Interface utilisateur SSMA.  

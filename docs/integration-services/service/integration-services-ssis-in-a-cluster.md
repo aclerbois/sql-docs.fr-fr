@@ -1,28 +1,26 @@
 ---
 title: Integration Services (SSIS) dans un cluster | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0216266d-d866-4ea2-bbeb-955965f4d7c2
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 15c927bf78faa7705a27dafce3517de7f05e50d4
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: dfab44cc1e7b73e7172e5195c49268b97c94857f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-ssis-in-a-cluster"></a>Integration Services (SSIS) dans un cluster
   Le clustering [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] n’est pas recommandé, car le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] n’est pas un service cluster ou prenant en charge les clusters. De plus, il ne prend pas en charge le basculement d’un nœud de cluster à un autre. Par conséquent, dans un environnement cluster, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] doit être installé et démarré en tant que service autonome sur chaque nœud du cluster.  
@@ -38,7 +36,7 @@ ms.lasthandoff: 01/25/2018
   
 -   **Quand un basculement se produit, les packages en cours d’exécution ne redémarrent pas.**
     
-    Vous pouvez récupérer des échecs de package en redémarrant les packages à partir des points de contrôle. Vous pouvez effectuer le redémarrage à partir des points de contrôle sans configurer le service en tant que ressource de cluster. Pour plus d'informations, consultez [Restart Packages by Using Checkpoints](../../integration-services/packages/restart-packages-by-using-checkpoints.md).  
+    Vous pouvez récupérer des échecs de package en redémarrant les packages à partir des points de contrôle. Vous pouvez effectuer le redémarrage à partir des points de contrôle sans configurer le service en tant que ressource de cluster. Pour plus d'informations, consultez [Redémarrer des packages à l'aide de points de contrôle](../../integration-services/packages/restart-packages-by-using-checkpoints.md).  
   
 -   Lorsque vous configurez le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] dans un groupe de ressources différent de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], vous ne pouvez pas utiliser [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] à partir d’ordinateurs clients pour gérer les packages stockés dans la base de données msdb. Le service [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ne peut pas déléguer d’informations d’identification dans ce scénario à deux tronçons.  
   

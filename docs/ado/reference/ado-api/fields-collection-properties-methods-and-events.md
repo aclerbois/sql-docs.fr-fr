@@ -1,30 +1,27 @@
 ---
-title: "Champs de propriétés de la Collection, méthodes et événements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Champs de propriétés de la Collection, méthodes et événements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Fields collection [ADO], members
 ms.assetid: 8cc13e41-7ed8-40df-9a74-5bf846c14c06
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4bc7d293661994f74abc936b94dc7f5870ec2472
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: fe0376903ad6614c4dce032c84bc011fbb2780ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fields-collection-properties-methods-and-events"></a>Propriétés de Collection de champs, méthodes et événements
 ## <a name="properties"></a>Propriétés  

@@ -1,16 +1,15 @@
 ---
-title: "sp_wait_for_database_copy_sync (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: sp_wait_for_database_copy_sync (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: database-engine, sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-stored-procedures
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_wait_for_database_copy_sync_TSQL
@@ -20,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_wait_for_database_copy_sync
 ms.assetid: 7068da7f-cb74-47f2-b064-eb076a0d3885
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6ca693b57fe2178a1b817ca76579ad3e7194f7c0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6658ab7b1b68637978ca76ea709c4c0a23414d07
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="active-geo-replication---spwaitfordatabasecopysync"></a>Géo-réplication Active - sp_wait_for_database_copy_sync
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -82,7 +81,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys.dm_continuous_copy_status &#40;Azure SQL Database&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-continuous-copy-status-azure-sql-database.md)   
- [Les fonctions et vues de gestion dynamique de géo-réplication &#40; Base de données SQL Azure &#41;](../../relational-databases/system-dynamic-management-views/geo-replication-dynamic-management-views-and-functions-azure-sql-database.md)  
+ [Sys.dm_continuous_copy_status &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-continuous-copy-status-azure-sql-database.md)   
+ [Fonctions et vues de gestion dynamique de géo-réplication &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/geo-replication-dynamic-management-views-and-functions-azure-sql-database.md)  
   
   

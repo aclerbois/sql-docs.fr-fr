@@ -1,33 +1,30 @@
 ---
-title: "Utilisateurs et groupes Append, ChangePassword, méthodes-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Utilisateurs et groupes Append, ChangePassword, méthodes-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - ChangePassword method [ADOX], Visual Basic example
 - Append method [ADOX], Visual Basic example
 ms.assetid: c9426757-9cdd-4a95-b506-d3d011569109
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 04b09bd74a1bdd56fb91b83c6bf36b68365f59bb
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4ad64050af9fd606008064c0ff96ab1d90a926bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="groups-and-users-append-changepassword-methods-example-vb"></a>Utilisateurs et groupes Append, ChangePassword, méthodes-exemple (VB)
 Cet exemple illustre la [Append](../../../ado/reference/adox-api/append-method-adox-groups.md) méthode de [groupes](../../../ado/reference/adox-api/groups-collection-adox.md), ainsi que le [Append](../../../ado/reference/adox-api/append-method-adox-users.md) méthode de [utilisateurs](../../../ado/reference/adox-api/users-collection-adox.md) en ajoutant un nouvel [groupe](../../../ado/reference/adox-api/group-object-adox.md) et un nouveau [utilisateur](../../../ado/reference/adox-api/user-object-adox.md) au système. La nouvelle **groupe** est ajouté à la **groupes** collection de la nouvelle **utilisateur**. Par conséquent, la nouvelle **utilisateur** est ajouté à la **groupe**. En outre, le [ChangePassword](../../../ado/reference/adox-api/changepassword-method-adox.md) méthode est utilisée pour spécifier le **utilisateur** mot de passe.  

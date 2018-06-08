@@ -1,17 +1,14 @@
 ---
-title: "Assistant Générer et publier des scripts | Microsoft Docs"
-ms.custom: 
+title: Assistant Générer et publier des scripts | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql9.swb.generatescriptswizard.chooseviews.f1
 - sql13.swb.generatescriptswizard.manageproviders.f1
@@ -45,23 +42,24 @@ helpviewer_keywords:
 - databases [SQL Server], generating scripts
 - Publish Database Wizard
 ms.assetid: 5ee520ba-ec7e-4199-a441-189e9e264b37
-caps.latest.revision: 
+caps.latest.revision: 45
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6a9e1ba4f4afadc27174f3dfd61b03005a33ef16
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d755a56c4ee302ed0f249bac303b082b9031a239
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="generate-and-publish-scripts-wizard"></a>Assistant Générer et publier des scripts
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez utiliser **l’Assistant Générer et publier des scripts** pour créer des scripts afin de transférer une base de données d’une instance du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] ou de [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] vers une autre instance. Vous pouvez générer des scripts pour une base de données sur une instance du moteur de base de données dans votre réseau local ou à partir de [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Les scripts générés peuvent être exécutés sur une autre instance du moteur de base de données ou [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Vous pouvez également utiliser l'Assistant pour publier directement le contenu d'une base de données sur un service Web créé à l'aide des Services de publication de base de données. Vous pouvez créer des scripts pour une base de données entière ou les limiter à des objets spécifiques.  
-  
-1.  **Avant de commencer :**  [Publication sur un service hébergé](#PubHostSvc), [Autorisations](#Permissions)  
-  
-2.  **Pour générer ou publier un script, à l'aide de :**  [L'Assistant Générer et publier des scripts](#GenPubScriptWiz)  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous pouvez utiliser l’ **Assistant Générer et publier des scripts** pour créer des scripts afin de transférer une base de données d’une instance du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] ou de [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]vers une autre. Vous pouvez générer des scripts pour une base de données sur une instance du moteur de base de données dans votre réseau local ou à partir de [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Les scripts générés peuvent être exécutés sur une autre instance du moteur de base de données ou [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Vous pouvez également utiliser l'Assistant pour publier directement le contenu d'une base de données sur un service Web créé à l'aide des Services de publication de base de données. Vous pouvez créer des scripts pour une base de données entière ou les limiter à des objets spécifiques.  
+
+Pour un tutoriel plus détaillé sur l’utilisation de l’Assistant Générer et publier des scripts, consultez [Tutoriel : Générer et publier des scripts](https://docs.microsoft.com/en-us/sql/ssms/tutorials/scripting-ssms#script-database-using-generate-scripts-option).
+
+
   
 ## <a name="before-you-begin"></a>Avant de commencer  
  Les bases de données source et cible peuvent se trouver sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)]ou sur une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] qui exécute [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] ou une version ultérieure.  
@@ -82,40 +80,34 @@ ms.lasthandoff: 01/24/2018
 1.  Dans l' **Explorateur d'objets**, développez le nœud pour l'instance qui contient la base de données devant faire l'objet d'un script.  
   
 2.  Pointez sur **Tâches**, puis cliquez sur **Générer des scripts**.  
+
+    ![Assistant Générer des scripts](media/generate-and-publish-scripts-wizard/generatescripts.png)
   
 3.  Renseignez les boîtes de dialogue de l'Assistant :  
   
     -   [Page Introduction](#Introduction)  
-  
-    -   [Page Sélectionner les objets](#ChooseObjects)  
-  
+    -   [Page Sélectionner les objets](#ChooseObjects)   
     -   [Page Définir les options de script](#SetScriptOpt)  
-  
     -   [Page Options de script avancées](#AdvScriptOpt)  
-  
-    -   [Page Gérer les fournisseurs](#MgProviders)  
-  
+    -   [Page Gérer les fournisseurs](#MgProviders)   
     -   [Page Options de publication avancées](#AdvPubOpts)  
-  
     -   [Page Configuration du fournisseur](#ProvConfig)  
-  
-    -   [Page Résumé](#Summary)  
-  
+    -   [Page Résumé](#Summary)   
     -   [Page Enregistrer ou publier des scripts](#SavePubScripts)  
   
 ###  <a name="Introduction"></a> Page Introduction  
  Cette page décrit la procédure de création ou de publication d'un script.  
   
- **Ne plus afficher cette page** - Permet d’ignorer cette page la prochaine fois que vous démarrez l’**Assistant Générer et publier des scripts**.  
+ **Ne plus afficher cette page** - Permet d’ignorer cette page la prochaine fois que vous démarrez l’ **Assistant Générer et publier des scripts**.  
   
- **Suivant >** - Passe à la page **Choisir une méthode**.  
-  
- **Annuler** - Termine l’Assistant sans générer ou publier un script à partir de la base de données.  
+  ![Page Introduction](media/generate-and-publish-scripts-wizard/intro.png)
   
 ###  <a name="ChooseObjects"></a> Page Sélectionner les objets  
  Utilisez cette page pour choisir les objets que vous souhaitez inclure dans les scripts générés par cet Assistant. Dans la page suivante de l'Assistant, vous aurez la possibilité d'enregistrer ces scripts à l'emplacement de votre choix ou de les utiliser pour publier des objets de base de données sur un fournisseur d'hébergement Web distant sur lequel les [Services de publication de base de données SQL Server](http://go.microsoft.com/fwlink/?LinkId=142025)sont installés.  
   
- **Générer un script pour la base de données entière** - Cliquez sur cette option pour générer des scripts pour tous les objets de la base de données et pour inclure un script pour la base de données elle-même.  
+ **Générer un script pour la base de données entière** - Cliquez sur cette option pour générer des scripts pour tous les objets de la base de données et pour inclure un script pour la base de données elle-même. 
+
+   ![Générer un script de la base de données entière](media/generate-and-publish-scripts-wizard/scriptall.png) 
   
  **Sélectionner des objets de base de données spécifiques** - Cliquez sur cette option pour limiter l’action de l’Assistant à la génération de scripts uniquement pour les objets de la base de données que vous choisissez :  
   
@@ -124,6 +116,8 @@ ms.lasthandoff: 01/24/2018
 -   **Sélectionner tout** - Coche toutes les cases disponibles.  
   
 -   **Désélectionner tout** - Décoche toutes les cases. Vous devez ensuite activer au moins un objet de base de données pour poursuivre.  
+
+   ![Sélectionner les objets à inclure dans le script](media/generate-and-publish-scripts-wizard/scriptspecificobjects.png)
   
 ###  <a name="SetScriptOpt"></a> Page Définir les options de script  
  Utilisez cette page pour spécifier si vous souhaitez que l'Assistant enregistre les scripts à l'emplacement de votre choix ou les utilise pour publier des objets de base de données sur un fournisseur d'hébergement Web distant. Pour publier, vous devez avoir accès à un service Web installé à l'aide des Database Publishing Services.  
@@ -131,8 +125,8 @@ ms.lasthandoff: 01/24/2018
  **Options** - Si vous souhaitez que l’Assistant enregistre les scripts à l’emplacement de votre choix, sélectionnez **Enregistrer les scripts à un emplacement spécifique**. Vous pourrez exécuter les scripts ultérieurement sur une instance du moteur de base de données ou sur [!INCLUDE[ssSDS](../../includes/sssds-md.md)]. Si vous souhaitez que l'Assistant publie vos objets de base de données sur un fournisseur d'hébergement Web distant, sélectionnez **Publier sur le service Web**.  
   
  **Enregistrer les scripts à un emplacement spécifique** - Permet d’enregistrer un ou plusieurs fichiers de script Transact-SQL à un emplacement que vous spécifiez.  
-  
--   **Avancé** - Permet d’afficher la boîte de dialogue **Options de script avancées** dans laquelle vous pouvez sélectionner des options avancées pour générer des scripts.  
+
+  ![Enregistrer](media/generate-and-publish-scripts-wizard/save.png)   
   
 -   **Enregistrer dans le fichier** - Permet d’enregistrer le script dans un ou plusieurs fichiers .sql. Cliquez sur le bouton**Parcourir**pour spécifier le nom et l’emplacement du fichier. Activez la case à cocher **Remplacer le fichier existant** pour remplacer le fichier s'il en existe déjà un du même nom. Cliquez sur **Fichier unique** ou **Fichier unique par objet** pour spécifier comment les scripts doivent être générés. Cliquez sur **Texte Unicode** ou **Texte ANSI** pour spécifier le type de texte qui doit être utilisé dans le script.  
   
@@ -152,6 +146,8 @@ ms.lasthandoff: 01/24/2018
   
 ###  <a name="AdvScriptOpt"></a> Page Options de script avancées  
  Utilisez cette page pour spécifier la façon dont vous souhaitez que cet Assistant génère des scripts. De nombreuses options sont disponibles. Les options sont grisées si elles ne sont pas prises en charge par la version de SQL Server ou [!INCLUDE[ssSDS](../../includes/sssds-md.md)] spécifiée dans **Type de moteur de base de données**.  
+
+![Options avancées](media/generate-and-publish-scripts-wizard/advanced.png)
   
  **Options** - Spécifiez les options avancées en sélectionnant une valeur dans la liste des paramètres disponibles située à droite de chaque option.  
   
@@ -240,6 +236,8 @@ ms.lasthandoff: 01/24/2018
   
 ###  <a name="AdvPubOpts"></a> Page Options de publication avancées  
  Utilisez cette page pour spécifier la façon dont vous souhaitez que cet Assistant publie une base de données. De nombreuses options sont disponibles. Les options sont grisées si elles ne sont pas prises en charge par la version de SQL Server ou [!INCLUDE[ssSDS](../../includes/sssds-md.md)] spécifiée dans **Type de moteur de base de données**.  
+
+  ![Publication avancée](media/generate-and-publish-scripts-wizard/advancedpublish.png)
   
  **Options** - Spécifiez les options avancées en sélectionnant une valeur dans la liste des paramètres disponibles située à droite de chaque option.  
   

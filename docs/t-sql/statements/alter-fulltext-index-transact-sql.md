@@ -1,16 +1,14 @@
 ---
 title: ALTER FULLTEXT INDEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/27/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER FULLTEXT INDEX
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - search property lists [SQL Server], associating with full-text indexes
 - ALTER FULLTEXT INDEX statement
 ms.assetid: b6fbe9e6-3033-4d1b-b6bf-1437baeefec3
-caps.latest.revision: 
+caps.latest.revision: 95
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 022cec421b1827c525d18d04d42bdd648936d147
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: f757ad0379550472fe7f75628990180e5ba5b234
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-fulltext-index-transact-sql"></a>ALTER FULLTEXT INDEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -88,10 +85,10 @@ ALTER FULLTEXT INDEX ON table_name
 >  Pour plus d'informations sur l'interaction entre le suivi des modifications et WITH NO POPULATION, consultez la section « Remarques », plus loin dans cette rubrique.  
   
  MANUAL  
- Indique que les modifications suivies seront propagées manuellement en appelant l'instruction ALTER FULLTEXT INDEX … START UPDATE POPULATION [!INCLUDE[tsql](../../includes/tsql-md.md)] statement (*manual population*). Vous pouvez utiliser l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour appeler régulièrement cette instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] .  
+ Indique que les modifications suivies seront propagées manuellement en appelant l'instruction ALTER FULLTEXT INDEX … START UPDATE POPULATION [!INCLUDE[tsql](../../includes/tsql-md.md)] (*alimentation manuelle*). Vous pouvez utiliser l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour appeler régulièrement cette instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] .  
   
  AUTO  
- Indique que les modifications suivies seront propagées automatiquement à mesure que les données seront modifiées dans la table de base (*remplissage automatique*). Même si les modifications sont propagées automatiquement, elles n'apparaissent pas nécessairement immédiatement dans l'index de recherche en texte intégral. AUTO est la valeur par défaut.  
+ Indique que les modifications suivies seront propagées automatiquement à mesure que les données seront modifiées dans la table de base (*alimentation automatique*). Même si les modifications sont propagées automatiquement, elles n'apparaissent pas nécessairement immédiatement dans l'index de recherche en texte intégral. AUTO est la valeur par défaut.  
   
  OFF  
  Spécifie que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne conservera pas de liste des modifications apportées aux données indexées.  
@@ -125,9 +122,9 @@ ALTER FULLTEXT INDEX ON table_name
   
  Si la valeur est au format DBCS (jeu de caractères codés sur deux octets), [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] la convertit en Unicode.  
   
- Les ressources telles que les analyseurs lexicaux et les générateurs de formes dérivées doivent être activées pour la langue spécifiée comme *language_term*. Si ces ressources ne prennent pas en charge la langue spécifiée, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur.  
+ Les ressources, telles que les analyseurs lexicaux et les générateurs de formes dérivées, doivent être activées pour la langue spécifiée comme *language_term*. Si ces ressources ne prennent pas en charge la langue spécifiée, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur.  
   
- Pour les colonnes de type non-BLOB et non-XML contenant des données texte dans plusieurs langues, ou lorsque la langue du texte stocké dans la colonne est inconnue, utilisez la ressource de langue neutre (0x0). Pour les documents stockés dans des colonnes de type XML ou BLOB, l'encodage linguistique du document est utilisé lors de l'indexation. Par exemple, dans les colonnes de type XML, l'attribut xml:lang des documents XML identifie la langue. Lors d’une requête, la valeur précédemment spécifiée dans *language_term* devient la langue par défaut utilisée pour les requêtes de texte intégral, sauf si *language_term* est spécifié dans le cadre d’une requête de texte intégral.  
+ Pour les colonnes de type non-BLOB et non-XML contenant des données texte dans plusieurs langues, ou lorsque la langue du texte stocké dans la colonne est inconnue, utilisez la ressource de langue neutre (0x0). Pour les documents stockés dans des colonnes de type XML ou BLOB, l'encodage linguistique du document est utilisé lors de l'indexation. Par exemple, dans les colonnes de type XML, l'attribut xml:lang des documents XML identifie la langue. Au moment de la requête, la valeur précédemment spécifiée dans *language_term* devient la langue par défaut utilisée pour les requêtes de texte intégral, sauf si *language_term* est spécifié dans le cadre d’une requête de texte intégral.  
   
  STATISTICAL_SEMANTICS  
  **S'applique à**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
@@ -222,7 +219,7 @@ ALTER FULLTEXT INDEX ON table_name
 |Activée.|Spécifié|Une erreur est levée et l'index n'est pas modifié.|  
 |Activé|Non spécifié|Un remplissage complet est effectué sur l'index.|  
   
- Pour plus d’informations sur l’alimentation d’index de recherche en texte intégral, consultez [Alimenter des index de recherche en texte intégral](../../relational-databases/search/populate-full-text-indexes.md).  
+ Pour plus d’informations sur l’alimentation d’index les index de recherche en texte intégral, consultez [Alimenter des index de recherche en texte intégral](../../relational-databases/search/populate-full-text-indexes.md).  
   
 ## <a name="changing-the-search-property-list-causes-rebuilding-the-index"></a>La modification de la liste des propriétés de recherche provoque la reconstruction de l'index  
  La première fois qu'un index de recherche en texte intégral est associé à une liste de propriétés de recherche, l'index doit faire l'objet d'un nouveau remplissage afin d'indexer des termes de recherche spécifiques aux propriétés. Les données d'index existantes ne sont pas tronquées.  

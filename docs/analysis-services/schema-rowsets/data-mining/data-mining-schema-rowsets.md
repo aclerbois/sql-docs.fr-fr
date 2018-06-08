@@ -1,38 +1,23 @@
 ---
-title: "Ensembles de lignes de schéma d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Ensembles de lignes de schéma d’exploration de données | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- schema rowsets [Analysis Services], data mining
-- schema rowsets [Analysis Services]
-- rowsets [Analysis Services], data mining
-- data mining [Analysis Services], schema rowsets
-ms.assetid: bd7d5df5-500b-4159-8467-880e141bc043
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: de34fa80e547b38216ca83458501347888488774
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0324ee3b35f4b45162b9646d2d0e9cfeada47551
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-schema-rowsets"></a>Data Mining Schema Rowsets
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Un serveur qui est en cours d’exécution [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prend en charge les ensembles de lignes de schéma d’exploration de données suivantes. Pour vérifier si un fournisseur XML/A particulier prend en charge un ensemble de lignes spécifique, utilisez la [DISCOVER_ENUMERATORS](../../../analysis-services/schema-rowsets/xml/discover-enumerators-rowset.md) ensemble de lignes avec le [Discover](../../../analysis-services/xmla/xml-elements-methods-discover.md) (méthode).  
+  Un serveur qui est en cours d’exécution [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prend en charge les ensembles de lignes de schéma d’exploration de données suivantes. Pour vérifier si un fournisseur XML/A particulier prend en charge un ensemble de lignes spécifique, utilisez la [DISCOVER_ENUMERATORS](../../../analysis-services/schema-rowsets/xml/discover-enumerators-rowset.md) ensemble de lignes avec le [Discover](../../../analysis-services/xmla/xml-elements-methods-discover.md) (méthode).  
   
  Dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)], les ensembles de lignes de schéma d'exploration de données sont également exposés en tant que tables en langage Transact-SQL, dans le schéma $SYSTEM. Par exemple, la requête suivante sur une instance Analysis Services retourne la liste des schémas disponibles sur l'instance actuelle.  
   
@@ -59,6 +44,6 @@ SELECT * FROM [$system].[DBSCHEMA_TABLES]
   
 ## <a name="see-also"></a>Voir aussi  
  [Ensembles de lignes de schéma de Analysis Services](../../../analysis-services/schema-rowsets/analysis-services-schema-rowsets.md)   
- [Ensembles de lignes de schéma de données d’exploration de données &#40; SSAs &#41;](../../../analysis-services/data-mining/data-mining-schema-rowsets-ssas.md)  
+ [Ensembles de lignes de schéma d’exploration de données &#40;SSAs&#41;](../../../analysis-services/data-mining/data-mining-schema-rowsets-ssas.md)  
   
   

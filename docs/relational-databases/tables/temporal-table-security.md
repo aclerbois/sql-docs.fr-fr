@@ -1,28 +1,25 @@
 ---
-title: "Sécurité de la table temporelle | Microsoft Docs"
-ms.custom: 
+title: Sécurité de la table temporelle | Microsoft Docs
+ms.custom: ''
 ms.date: 02/21/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 60e5d6f6-a26d-4bba-aada-42e382bbcd38
-caps.latest.revision: 
+caps.latest.revision: 9
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c86f951c3e6f8d553ea61ed959cac6ade235b54
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8ee27537dd58803a79291ea75a47e51d1cd53936
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="temporal-table-security"></a>Sécurité de la table temporelle
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -75,9 +72,6 @@ ms.lasthandoff: 01/18/2018
   
 ## <a name="security-of-select-statement"></a>Sécurité de l’instruction SELECT  
  L’autorisation**SELECT** reste inchangée pour les instructions **SELECT** qui n’affectent pas la table d’historique. Pour les instructions **SELECT** qui affectent la table d’historique, l’autorisation **SELECT** est nécessaire sur la table en cours et la table d’historique.  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Temporal%20Table%20Security%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

@@ -1,31 +1,23 @@
 ---
-title: "Connexion de modèle sémantique BI PowerPivot (.bism) de l’alimentation | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 08828eec-4f8c-4f34-a145-e442f7b7031d
-caps.latest.revision: 
-author: Minewiskan
+title: Connexion de modèle sémantique BI PowerPivot (.bism) de l’alimentation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 78b908cfe8e5601ecd5d8fcea6c6816459d6e73a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8841a67a13db4321618c82f3b1e830988dce9a35
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-pivot-bi-semantic-model-connection-bism"></a>Connexion de modèle sémantique BI Power Pivot (.bism)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une connexion de modèle sémantique BI (.bism) est une connexion portable qui connecte des rapports Excel ou Power View à une base de données de modèle tabulaire Analysis Services, ou une instance Analysis Services en mode multidimensionnel. Si vous connaissez les fichiers Office Data Connection (.odc), vous remarquerez des similitudes avec la définition et l'utilisation d'une connexion .bism.  
+  Une connexion de modèle sémantique BI (.bism) est une connexion portable qui connecte des rapports Excel ou Power View à une base de données de modèle tabulaire Analysis Services, ou une instance Analysis Services en mode multidimensionnel. Si vous connaissez les fichiers Office Data Connection (.odc), vous remarquerez des similitudes avec la définition et l'utilisation d'une connexion .bism.  
   
  Une connexion de modèle sémantique BI est créée et accessible via SharePoint. La création de connexions de modèles sémantiques BI active les commandes de lancement rapide sur une connexion de modèle sémantique BI dans une bibliothèque. Les commandes de lancement rapide ouvrent un nouveau classeur Excel ou les options de modification du fichier de connexion. Si Reporting Services est installé, vous verrez également une commande permettant de créer un rapport [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] .  
   
@@ -34,7 +26,7 @@ Une connexion de modèle sémantique BI (.bism) est une connexion portable qui 
 ##  <a name="bkmk_prereq"></a> Bases de données prises en charge  
  Une connexion de modèle sémantique BI pointe sur des données de modèle tabulaire. Il y a trois sources pour ces données :  
   
--   Base de données model tabulaire s'exécutant dans une instance d'Analysis Services autonome en mode serveur tabulaire. Déploiement d'une instance d'Analysis Services autonome extérieure à la batterie. L'accès aux sources de données de la batterie requiert des autorisations supplémentaires, abordées plus loin dans cette rubrique : [Create a BI Semantic Model Connection to a Tabular Model Database](../../analysis-services/power-pivot-sharepoint/create-a-bi-semantic-model-connection-to-a-tabular-model-database.md).  
+-   Base de données model tabulaire s'exécutant dans une instance d'Analysis Services autonome en mode serveur tabulaire. Déploiement d'une instance d'Analysis Services autonome extérieure à la batterie. L'accès aux sources de données de la batterie requiert des autorisations supplémentaires, abordées plus loin dans cette rubrique : [Créer une connexion de modèle sémantique BI à une base de données model tabulaire](../../analysis-services/power-pivot-sharepoint/create-a-bi-semantic-model-connection-to-a-tabular-model-database.md).  
   
 -   [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] enregistrés sur SharePoint. Les bases de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] incorporées dans les classeurs Excel sont équivalentes aux bases de données de modèle tabulaire qui s’exécutent sur un serveur Analysis Services autonome en mode tabulaire. Si vous utilisez déjà [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour Excel et [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint, vous pouvez définir une connexion de modèle sémantique BI qui pointe sur des classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] dans une bibliothèque SharePoint et créer des rapports [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] à partir des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] existantes.  Vous pouvez utiliser les classeurs créés dans les versions SQL Server 2008 R2 ou [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour Excel.  
   

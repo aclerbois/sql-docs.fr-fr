@@ -1,28 +1,26 @@
 ---
-title: "Détermination installé des composants Oracle | Documents Microsoft"
-ms.custom: 
+title: Détermination installé des composants Oracle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC driver for Oracle [ODBC], determining installed components
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC driver for Oracle [ODBC], determining installed components
 ms.assetid: 3b018f6a-9db0-4aa1-8ec4-afc5f76d7cad
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ce199d68eacb812958d2124e0230d635345e5908
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6f4c2c85def4d413e9a3cca87e83b6f3b5e23780
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="determining-installed-oracle-components"></a>Détermination installé des composants Oracle
 > [!IMPORTANT]  

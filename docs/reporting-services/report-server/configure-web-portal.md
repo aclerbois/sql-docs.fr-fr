@@ -1,34 +1,33 @@
 ---
 title: Configurer le portail web | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/10/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: the web portal [Reporting Services], configuring
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- the web portal [Reporting Services], configuring
 ms.assetid: e918986c-af15-48f6-8178-256aed829c6a
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0a6316978d5799462526a28c196bd70100bf3c09
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 22785efbc453e966dff209633e6d0aceeaff328f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-web-portal"></a>Configurer le portail web
 
 Le portail web est une application web frontale utilisée pour afficher des rapports, gérer le contenu d’un serveur de rapports et accorder aux utilisateurs l’accès à un serveur de rapports en mode natif. Le portail web est installé avec le service web Report Server dans la même instance du serveur de rapports et est configuré si vous sélectionnez l’option **Installer la configuration par défaut en mode Natif** dans le programme d’installation. Vous pouvez également configurer le portail web après son installation. Cette rubrique fournit des informations sur les scénarios de configuration suivants du portail web :
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour utiliser le portail web, vous devez satisfaire aux prérequis suivants :
 

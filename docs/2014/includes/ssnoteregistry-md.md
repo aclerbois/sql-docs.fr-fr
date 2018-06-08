@@ -1,0 +1,1 @@
+Une modification incorrecte du Registre peut sérieusement endommager votre système. Avant d'apporter des modifications au Registre, nous vous recommandons de sauvegarder les données importantes qui se trouvent sur l'ordinateur.

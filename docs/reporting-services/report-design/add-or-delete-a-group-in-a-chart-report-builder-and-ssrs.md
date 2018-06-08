@@ -1,27 +1,25 @@
 ---
-title: "Ajouter ou supprimer un groupe dans une région de données (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajouter ou supprimer un groupe dans une région de données (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 0445b0ac-acae-4462-80fb-fe9735ac66db
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 818226f2942dfa37b5669fac8af17abed817de53
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: bee42d613661c7057c832f77e5a4de6b21977e92
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-delete-a-group-in-a-chart-report-builder-and-ssrs"></a>Ajouter ou supprimer un groupe dans un graphique (Générateur de rapports et SSRS)
 Dans les rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] paginés, cliquez dans la région de données de graphique pour afficher le volet **Données du graphique** . Créez des groupes en faisant glisser des champs de dataset vers les zones **Groupes de séries** et **Groupes de catégories** . Pour ajouter des groupes imbriqués, ajoutez plusieurs champs à la zone.  

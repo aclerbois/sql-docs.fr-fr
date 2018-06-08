@@ -1,32 +1,28 @@
 ---
-title: "Définir la date d’expiration d’une sauvegarde (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Définir la date d’expiration d’une sauvegarde (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backing up databases [SQL Server], expiration dates
 - expiration [SQL Server]
 - database backups [SQL Server], expiration dates
 ms.assetid: 76e814df-6487-4893-9f09-7759f1863a5c
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5630b7b8cb705f32980ae10d278807fdfa88a811
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 400ddef2411b5f5933c3ba1841c5e3606233a2c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-the-expiration-date-on-a-backup-sql-server"></a>Définir la date d'expiration d'une sauvegarde (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,30 +1,28 @@
 ---
-title: "Sélectionner les objets à transférer | Microsoft Docs"
-ms.custom: 
+title: Sélectionner les objets à transférer | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.transfertasks.selectobjectsmodaldialogs.f1
 ms.assetid: 57941e52-374a-4c07-84eb-9899ff1bb119
-caps.latest.revision: 
+caps.latest.revision: 16
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3c8cb89e62e6e86fc355e3c690aa4f2f29b4211d
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 950500222d6203389b489660f2feb7ea65423cb4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-objects-to-transfer"></a>Sélectionner les objets à transférer
   Utilisez cette boîte de dialogue pour sélectionner les objets à transférer d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à une autre à l'aide d'une tâche de transfert [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] .  

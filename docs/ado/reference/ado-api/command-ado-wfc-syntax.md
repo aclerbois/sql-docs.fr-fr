@@ -1,31 +1,28 @@
 ---
 title: Commande (ADO - syntaxe WFC) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Command collection [ADO], ADO/WFC syntax
 ms.assetid: 39d0aa06-03ac-4c9a-8400-83947756ef99
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 310b7c246fc5d7006cc2e358340d0aa062dc3ab3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c5e5b50a3e7b05d77c582a3b02c1f9b366dbc066
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-ado---wfc-syntax"></a>Commande (ADO - syntaxe WFC)
 ## <a name="package-commswfcdata"></a>package com.ms.wfc.data  

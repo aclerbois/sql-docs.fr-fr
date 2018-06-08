@@ -5,12 +5,11 @@ ms.date: 01/19/2017
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology: drivers
-ms.topic: article
+ms.technology: connectivity
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO, reference
 ms.assetid: 6dc27c85-84e1-472a-b057-d1854b8c98a3
@@ -18,12 +17,11 @@ caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0c171d20f520b1ed20d1c8106dde8d6fae159957
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: bbc0feedf9e45c29a6d0494654b42338c1f6e670
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-programmer39s-reference"></a>Programmeur ADO&#39;s référence
 Cette section contient les rubriques suivantes.  

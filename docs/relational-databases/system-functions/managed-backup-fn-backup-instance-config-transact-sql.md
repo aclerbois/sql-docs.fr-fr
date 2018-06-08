@@ -1,16 +1,14 @@
 ---
 title: managed_backup.fn_backup_instance_config (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - fn_backup_instance_config
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - smart_admin.fn_backup_instance_config
 - fn_backup_instance_config
 ms.assetid: 2382a547-c0c9-4e1d-87c9-d8526192eb5a
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bad83cf900e1946612eb1065e4e413760c84d76f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 4dae80911e6508a1a398cf208300bf4145faeecc
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="managedbackupfnbackupinstanceconfig-transact-sql"></a>managed_backup.fn_backup_instance_config (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -60,7 +57,7 @@ managed_backup.fn_backup_db_config ()
 |is_smart_backup_enabled|INT|Affiche 1 lorsque la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] est activée et 0 lorsque la [!INCLUDE[ss_smartbackup](../../includes/ss-smartbackup-md.md)] est désactivée.|  
 |credential_name|SYSNAME|Informations d'identification SQL par défaut utilisées pour authentifier le stockage.|  
 |retention_days|INT|Période de rétention par défaut définie au niveau de l'instance.|  
-|storage_url|NVARCHAR(1024)|URL du compte de stockage par défaut définie au niveau de l'instance.|  
+|storage_url|NVARCHAR (1024)|URL du compte de stockage par défaut définie au niveau de l'instance.|  
 |encryption_algorithm|SYSNAME|Nom de l’algorithme de chiffrement. A la valeur NULL, si le chiffrement n'est pas spécifié.|  
 |encryptor_type|NVARCHAR(32)|Type de chiffreur utilisé : certificat ou clé asymétrique A la valeur NULL, si aucun chiffreur n'est spécifié.|  
 |encryptor_name|SYSNAME|Nom du certificat ou de la clé asymétrique. A la valeur NULL, si aucun nom n'est spécifié.|  

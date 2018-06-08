@@ -1,28 +1,22 @@
 ---
-title: "Haute disponibilité de système de plateforme Analytique"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Décrit l’architecture système de plateforme Analytique (APS) pour la haute disponibilité."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 5ab245e9-0316-4d25-a626-4745ce856925
-caps.latest.revision: "9"
-ms.openlocfilehash: 11733b45ba25f625ea2d3d601939973e9137b15d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Haute disponibilité dans le système de plateforme Analytique | Documents Microsoft
+description: Découvrez l’architecture de système de plateforme Analytique (APS) pour la haute disponibilité.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 5c8a562ab105e1bc40b590916d0881757036aeff
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="analytics-platform-system-high-availability"></a>Haute disponibilité de système de plateforme Analytique
-Décrit l’architecture système de plateforme Analytique (APS) pour la haute disponibilité.  
+Découvrez l’architecture de système de plateforme Analytique (APS) pour la haute disponibilité.  
   
 ## <a name="high-availability-architecture"></a>Architecture haute disponibilité  
 ![Architecture des appliances](media/appliance-architecture.png "architecture des appliances")  

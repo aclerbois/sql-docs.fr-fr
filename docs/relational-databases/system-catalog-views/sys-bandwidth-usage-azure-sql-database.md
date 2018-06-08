@@ -1,16 +1,15 @@
 ---
-title: "Sys.bandwidth_usage (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.bandwidth_usage (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - bandwidth_usage
@@ -23,16 +22,16 @@ helpviewer_keywords:
 - sys.bandwidth_usage
 - bandwidth_usage
 ms.assetid: 43ed8435-f059-4907-b5c0-193a258b394a
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d30cab1768b293c7cbc2e53729f8e8e8564a53d3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: e34541614f20c4fedd8a691fc3c1c13d1929fb3c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysbandwidthusage-azure-sql-database"></a>sys.bandwidth_usage (Azure SQL Database)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]
@@ -49,12 +48,12 @@ ms.lasthandoff: 11/21/2017
 |-----------------|-----------------|  
 |**time**|Heure à laquelle la bande passante a été consommée. Les lignes de cette vue sont par heure. Par exemple, 2009-09-19 02:00:00.000 indique que la bande passante a été consommée le 19 septembre 2009 entre 2h00 et 3h00.|  
 |**database_name**|Nom de la base de données qui a utilisé la bande passante.|  
-|**direction**|Type de bande passante utilisé, un des suivants :<br /><br /> Entrée : Les données qui sont déplacées dans le [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> Sortant : Les données qui sont déplacées hors de la [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].|  
-|**classe**|Classe de bande passante utilisée, une des suivantes :<br />Interne : Les données qui sont déplacent au sein de la plateforme Azure.<br />Externes : Données qui se déplacent hors de la plateforme Azure.<br /><br /> Cette classe est retournée uniquement si la base de données est engagée dans une relation de copie continue entre les régions ([!INCLUDE[ssGeoDR](../../includes/ssgeodr-md.md)]). Si la base de données ne participe pas à une relation de copie continue, les lignes « Interlink » ne sont pas retournées. Pour plus d'informations, consultez la section « Notes », plus loin dans cette rubrique.|  
+|**Direction**|Type de bande passante utilisé, un des suivants :<br /><br /> Entrée : Les données qui sont déplacées dans le [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> Sortant : Les données qui sont déplacées hors de la [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].|  
+|**class**|Classe de bande passante utilisée, une des suivantes :<br />Interne : Les données qui sont déplacent au sein de la plateforme Azure.<br />Externes : Données qui se déplacent hors de la plateforme Azure.<br /><br /> Cette classe est retournée uniquement si la base de données est engagée dans une relation de copie continue entre les régions ([!INCLUDE[ssGeoDR](../../includes/ssgeodr-md.md)]). Si la base de données ne participe pas à une relation de copie continue, les lignes « Interlink » ne sont pas retournées. Pour plus d'informations, consultez la section « Notes », plus loin dans cette rubrique.|  
 |**time_period**|La période d’utilisation est pointe ou fixes. La période de pointe (Peak) repose sur la zone dans laquelle le serveur a été créé. Par exemple, si un serveur a été créé dans la zone « US_Northwest », la période de pointe est définie comme étant entre 10h00 et et 18 h 00. PST.|  
-|**quantité**|Quantité de bande passante, en kilo-octets (Ko), qui a été utilisée.|  
+|**Quantité**|Quantité de bande passante, en kilo-octets (Ko), qui a été utilisée.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Cette vue est disponible uniquement dans les **master** base de données pour la connexion du principal au niveau du serveur.  
   
 ## <a name="remarks"></a>Notes  

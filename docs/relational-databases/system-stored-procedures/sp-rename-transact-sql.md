@@ -1,16 +1,14 @@
 ---
-title: sp_rename (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_rename (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/09/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_rename_TSQL
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - sp_rename
 - renaming tables
 ms.assetid: bc3548f0-143f-404e-a2e9-0a15960fc8ed
-caps.latest.revision: 
+caps.latest.revision: 54
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 158974d93e031d689318ea22f3bd0ba8189553ee
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 97d14dc014827310706bdea8143e41a628a666d6
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sprename-transact-sql"></a>sp_rename (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -64,7 +62,7 @@ sp_rename [ @objname = ] 'object_name' , [ @newname = ] 'new_name'
 > [!NOTE]  
 >  Les noms de déclencheurs ne peuvent pas commencer par # ou par ##.  
   
- [ @objtype = ] '*object_type*'  
+ [ @objtype =] '*object_type*'  
  Type d'objet renommé. *object_type* est **varchar(13)**, avec NULL comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
@@ -73,7 +71,7 @@ sp_rename [ @objname = ] 'object_name' , [ @newname = ] 'new_name'
 |DATABASE|Base de données définie par l'utilisateur. Ce type d'objet est nécessaire pour renommer une base de données.|  
 |INDEX|Index défini par l'utilisateur. Renommer un index avec des statistiques, renomme également automatiquement les statistiques.|  
 |OBJECT|Un élément d’un type de suivi dans [sys.objects](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md). Par exemple, OBJECT peut être utilisé pour renommer des objets, y compris des contraintes (CHECK, FOREIGN KEY, PRIMARY/UNIQUE KEY), des tables utilisateur et des règles.|  
-|STATISTICS|**S’applique aux**: [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> Statistiques créées explicitement par un utilisateur ou créées implicitement avec un index. Renommer les statistiques d'un index renomme également automatiquement l'index.|  
+|STATISTICS|**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> Statistiques créées explicitement par un utilisateur ou créées implicitement avec un index. Renommer les statistiques d'un index renomme également automatiquement l'index.|  
 |USERDATATYPE|A [Types définis par l’utilisateur CLR](../../relational-databases/clr-integration-database-objects-user-defined-types/clr-user-defined-types.md) ajouté par l’exécution de [CREATE TYPE](../../t-sql/statements/create-type-transact-sql.md) ou [sp_addtype](../../relational-databases/system-stored-procedures/sp-addtype-transact-sql.md).|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -213,6 +211,6 @@ sp_rename 'Person.Person.ContactMail1', 'NewContact','Statistics';
  [sys.sql_expression_dependencies &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-sql-expression-dependencies-transact-sql.md)   
  [sys.sql_modules &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-sql-modules-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
   
   

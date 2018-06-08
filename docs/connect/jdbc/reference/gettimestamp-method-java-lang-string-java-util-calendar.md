@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTimestamp (java.lang.String, java.util.Calendar) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTimestamp (java.lang.String, java.util.Calendar) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerCallableStatement.getTimestamp (java.lang.String,java.util.Calendar)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerCallableStatement.getTimestamp (java.lang.String,java.util.Calendar)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 770668d9-2e52-4ff0-be2f-ebf78fd41644
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 473c200a5fcd78690086c988e3f65d628550dc02
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 9d9ddd1eb04d53db86d882c4b09659ff9cb8ae27
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettimestamp-method-javalangstring-javautilcalendar"></a>Méthode getTimestamp (java.lang.String, java.util.Calendar)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -60,7 +59,7 @@ public java.sql.Timestamp getTimestamp(java.lang.String name,
  Cette méthode retourne des valeurs uniquement à partir de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] **datetime** et **smalldatetime** colonnes.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode getTimestamp &#40; SQLServerCallableStatement &#41;](../../../connect/jdbc/reference/gettimestamp-method-sqlservercallablestatement.md)   
+ [Méthode getTimestamp &#40;SQLServerCallableStatement&#41;](../../../connect/jdbc/reference/gettimestamp-method-sqlservercallablestatement.md)   
  [Membres de SQLServerCallableStatement](../../../connect/jdbc/reference/sqlservercallablestatement-members.md)   
  [SQLServerCallableStatement, classe](../../../connect/jdbc/reference/sqlservercallablestatement-class.md)  
   

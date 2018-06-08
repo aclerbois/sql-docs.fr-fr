@@ -1,17 +1,15 @@
 ---
-title: "DrilledDown, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: DrilledDown, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - DrilledDown
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - DrilledDown property [ADO MD]
 ms.assetid: bf39dd36-fc7a-4f6e-86c0-fa71430c0d86
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 97ec87e699cd25027a7e09a37d46fa384e24d27b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c34f12d84c53d782b2629a408d9182ac36a37db0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drilleddown-property-ado-md"></a>DrilledDown, propriété (ADO MD)
 Indique si les enfants suivent immédiatement la [membre](../../../ado/reference/ado-md-api/member-object-ado-md.md) sur l’axe.  

@@ -1,36 +1,36 @@
 ---
-title: "Modifier les lignes dans le volet Résultats (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Modifier les lignes dans le volet Résultats (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vdt.pane.results
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vdt.pane.results
 helpviewer_keywords:
 - View Designer, Results pane
 - modifying rows
 - Query Designer [SQL Server], Results pane
 - Results pane
 ms.assetid: de36f636-cfe9-4ae6-a474-06e9c51f9f0c
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6ad965ba099a52dfb025c8d85d6fce3cf3bf9979
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 1129afd0a784696750f17cda283b69bbf9fc7d2f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="edit-rows-in-the-results-pane-visual-database-tools"></a>Modifier les lignes dans le volet Résultats (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Dans la plupart des cas, vous pouvez modifier les données dans le [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md). Pour plus d’informations sur la modification de données, consultez [Règles relatives à la mise à jour des résultats &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/rules-for-updating-results-visual-database-tools.md) et [Utiliser des données du volet de résultats &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/work-with-data-in-the-results-pane-visual-database-tools.md).  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Dans la plupart des cas, vous pouvez modifier les données dans le [volet Résultats](../../ssms/visual-db-tools/results-pane-visual-database-tools.md). Pour plus d’informations sur la modification de données, consultez [Règles relatives à la mise à jour des résultats &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/rules-for-updating-results-visual-database-tools.md) et [Utiliser des données du volet de résultats &#40;Visual Database Tools&#41;](../../ssms/visual-db-tools/work-with-data-in-the-results-pane-visual-database-tools.md).  
   
 ### <a name="to-edit-data-in-the-results-pane"></a>Pour modifier des données dans le volet Résultats  
   

@@ -1,33 +1,30 @@
 ---
-title: "Filter et RecordCount propriétés exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Filter et RecordCount propriétés exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - RecordCount property [ADO], Visual Basic example
 - Filter property [ADO], Visual Basic example
 ms.assetid: e8bc63c7-8967-438a-9a49-512478a87a15
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c0214769a09f0a7a2e572082d7972cd7606c27f4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 21e800cb39d13abe904e02ff2ca23a1eb8936ee1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-and-recordcount-properties-example-vb"></a>Filter et RecordCount propriétés exemple (VB)
 Cet exemple montre comment ouvrir un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) sur la table Publishers dans le ***Pubs*** base de données. Il utilise ensuite la [filtre](../../../ado/reference/ado-api/filter-property.md) propriété pour limiter le nombre d’enregistrements visibles aux éditeurs d’un pays/une région particulière. Le **RecordCount** propriété est utilisée pour afficher la différence entre les jeux d’enregistrements filtrés et non filtrés.  

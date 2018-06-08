@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLSetConnectAttr | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLSetConnectAttr
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLSetConnectAttr
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLSetConnectAttr
-helpviewer_keywords: SQLSetConnectAttr function [ODBC]
+f1_keywords:
+- SQLSetConnectAttr
+helpviewer_keywords:
+- SQLSetConnectAttr function [ODBC]
 ms.assetid: 97fc7445-5a66-4eb9-8e77-10990b5fd685
-caps.latest.revision: "83"
+caps.latest.revision: 83
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 806acdd35452ff22e922158ed071d41d8e45f031
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: bd64bb19ed9bc7beed48e9920b61139ae791d983
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetconnectattr-function"></a>Fonction SQLSetConnectAttr
 **Mise en conformité**  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/21/2017
  **SQLSetConnectAttr** définit les attributs qui régissent les aspects de connexions.  
   
 > [!NOTE]  
->  Pour plus d’informations sur ce que le Gestionnaire de pilotes mappe cette fonction pour lorsqu’un ODBC 3*.x* application fonctionne avec une API ODBC 2*.x* pilote, consultez [mappage des fonctions de remplacement pour la compatibilité descendante des Applications](../../../odbc/reference/develop-app/mapping-replacement-functions-for-backward-compatibility-of-applications.md).  
+>  Pour plus d’informations sur ce que le Gestionnaire de pilotes mappe cette fonction pour lorsqu’un ODBC 3 *.x* application fonctionne avec une API ODBC 2 *.x* pilote, consultez [mappage des fonctions de remplacement pour la compatibilité descendante des Applications](../../../odbc/reference/develop-app/mapping-replacement-functions-for-backward-compatibility-of-applications.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -53,13 +54,13 @@ SQLRETURN SQLSetConnectAttr(
  *Handle de connexion*  
  [Entrée] Handle de connexion.  
   
- *Attribute*  
+ *Attribut*  
  [Entrée] Attribut à définir, répertoriés dans « Commentaires ».  
   
  *ValuePtr*  
  [Entrée] Pointeur vers la valeur à associer à *attribut*. Selon la valeur de *attribut*, *ValuePtr* sera une valeur entière non signée ou pointe vers une chaîne de caractères terminée par null. Notez que le type de l’intégrale de la *attribut* argument ne peut pas être de longueur fixe, consultez la section commentaires pour plus de détails.  
   
- *StringLength*  
+ *stringLength*  
  [Entrée] Si *attribut* est un attribut défini par ODBC et *ValuePtr* pointe vers une chaîne de caractères ou d’un tampon binaire, cet argument doit être la longueur de **ValuePtr*. Pour les données de chaîne de caractères, cet argument doit contenir le nombre d’octets dans la chaîne.  
   
  Si *attribut* est un attribut défini par ODBC et *ValuePtr* est un entier, *StringLength* est ignoré.  
@@ -82,10 +83,10 @@ SQLRETURN SQLSetConnectAttr(
   
  Le pilote peut retourner SQL_SUCCESS_WITH_INFO pour fournir des informations sur le résultat de la définition d’une option.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
-|01 S 02|Valeur de l’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée dans *ValuePtr* et une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
+|01S02|Valeur de l’option modifiée|Le pilote ne prenait pas en charge la valeur spécifiée dans *ValuePtr* et une valeur similaire. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08002|Nom de la connexion en cours d’utilisation|Le *attribut* argument a été SQL_ATTR_ODBC_CURSORS, et le pilote a été déjà connecté à la source de données.|  
 |08003|Connexion non ouverte|(DM) un *attribut* valeur a été spécifiée nécessitant une connexion ouverte, mais la *handle de connexion* n’était pas dans un état connecté.|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -121,15 +122,15 @@ SQLRETURN SQLSetConnectAttr(
  Les attributs actuellement définis et la version d’ODBC dans lequel elles ont été ajoutées sont affichés dans le tableau plus loin dans cette section. Il est probable que des attributs seront définis pour tirer parti de différentes sources de données. Une plage d’attributs est réservée par ODBC ; les développeurs de pilote doivent réserver valeurs pour leur propre usage spécifiques au pilote à partir d’Open Group.  
   
 > [!NOTE]  
->  La possibilité de définir des attributs de l’instruction au niveau de la connexion en appelant **SQLSetConnectAttr** a été déconseillée dans ODBC 3*.x*. ODBC 3*.x* applications ne doivent jamais définir les attributs d’instruction au niveau de la connexion. ODBC 3*.x* les attributs d’instruction ne peut pas être définies au niveau de la connexion, à l’exception des attributs SQL_ATTR_METADATA_ID et SQL_ATTR_ASYNC_ENABLE, qui sont des attributs de connexion et les attributs d’instruction et peut être définie au niveau de la connexion ou de niveau de l’instruction.  
+>  La possibilité de définir des attributs de l’instruction au niveau de la connexion en appelant **SQLSetConnectAttr** a été déconseillée dans ODBC 3 *.x*. ODBC 3 *.x* applications ne doivent jamais définir les attributs d’instruction au niveau de la connexion. ODBC 3 *.x* les attributs d’instruction ne peut pas être définies au niveau de la connexion, à l’exception des attributs SQL_ATTR_METADATA_ID et SQL_ATTR_ASYNC_ENABLE, qui sont des attributs de connexion et les attributs d’instruction et peut être définie au niveau de la connexion ou de niveau de l’instruction.  
 >   
->  ODBC 3*.x* pilotes doivent prennent uniquement en charge cette fonctionnalité s’ils doivent collaborer avec ODBC 2*.x* application qui définira ODBC 2*.x* options d’instruction au niveau de la connexion. Pour plus d’informations, consultez [SQLSetConnectOption mappage](../../../odbc/reference/appendixes/sqlsetconnectoption-mapping.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  
+>  ODBC 3 *.x* pilotes doivent prennent uniquement en charge cette fonctionnalité s’ils doivent collaborer avec ODBC 2 *.x* application qui définira ODBC 2 *.x* options d’instruction au niveau de la connexion. Pour plus d’informations, consultez [SQLSetConnectOption mappage](../../../odbc/reference/appendixes/sqlsetconnectoption-mapping.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  
   
  Une application peut appeler **SQLSetConnectAttr** à tout moment entre le moment où la connexion est allouée et libérée. Tous les attributs de connexion et d’instruction a été définis par l’application pour la connexion persistant jusqu'à **SQLFreeHandle** est appelée sur la connexion. Par exemple, si une application appelle **SQLSetConnectAttr** avant de se connecter à une source de données, l’attribut persiste même si **SQLSetConnectAttr** échoue dans le pilote lors de l’application se connecte à la source de données si une application définit un attribut spécifique au pilote, l’attribut persiste même si l’application se connecte à un autre pilote sur la connexion.  
   
  Certains attributs de connexion peuvent être définies uniquement avant une connexion a été établie ; d’autres utilisateurs peuvent être définis uniquement après qu’une connexion a été établie. Le tableau suivant indique les attributs de connexion qui doivent être définies avant ou après qu’une connexion a été établie. *Soit* indique que l’attribut peut être défini avant ou après la connexion.  
   
-|Attribute|Définir avant ou après la connexion ?|  
+|Attribut|Définir avant ou après la connexion ?|  
 |---------------|-------------------------------------|  
 |SQL_ATTR_ACCESS_MODE|[1]|  
 |SQL_ATTR_ASYNC_DBC_EVENT|Avant ou après|  
@@ -167,9 +168,9 @@ SQLRETURN SQLSetConnectAttr(
   
  Le format des informations définies le \* *ValuePtr* dépend de la mémoire tampon spécifiées *attribut*. **SQLSetConnectAttr** acceptera les informations d’attribut dans un des deux formats : une chaîne de caractères terminée par une valeur null ou une valeur entière. Le format de chaque est indiqué dans la description de l’attribut. Désigné par des chaînes de caractères le *ValuePtr* argument de **SQLSetConnectAttr** avoir une longueur de *StringLength* octets.  
   
- Le *StringLength* argument est ignoré si la longueur est définie par l’attribut, comme c’est le cas pour tous les attributs introduite dans ODBC 2*.x* ou une version antérieure.  
+ Le *StringLength* argument est ignoré si la longueur est définie par l’attribut, comme c’est le cas pour tous les attributs introduite dans ODBC 2 *.x* ou une version antérieure.  
   
-|*Attribute*|*ValuePtr* contenu|  
+|*Attribut*|*ValuePtr* contenu|  
 |-----------------|-------------------------|  
 |SQL_ATTR_ACCESS_MODE (ODBC VERSION 1.0)|Une valeur SQLUINTEGER. SQL_MODE_READ_ONLY est utilisé par le pilote ou d’une source de données comme un indicateur de la connexion n’est pas requise pour prendre en charge les instructions SQL qui génèrent des mises à jour. Ce mode peut être utilisé pour optimiser les stratégies de verrouillage, gestion des transactions ou des autres zones en fonction de la source de données ou de pilote. Le pilote n’est pas requis pour éviter de telles instructions d’envoi vers la source de données. Le comportement du pilote et de la source de données lorsque vous êtes invité à traiter les instructions SQL qui ne sont pas en lecture seule lors d’une connexion en lecture seule est défini par l’implémentation. SQL_MODE_READ_WRITE est la valeur par défaut.|  
 |SQL_ATTR_ASYNC_DBC_EVENT (ODBC 3.8)|Valeur SQLPOINTER qui est un handle d’événement.<br /><br /> Notification de la fin de fonctions asynchrones est activée en appelant **SQLSetConnectAttr** avec l’attribut SQL_ATTR_ASYNC_STMT_EVENT et en spécifiant le descripteur d’événement. **Remarque :** la méthode de notification n’est pas pris en charge avec la bibliothèque de curseurs. Une application message d’erreur si elle tente d’activer la bibliothèque de curseurs via SQLSetConnectAttr, lorsque la méthode de notification est activée.|  
@@ -178,7 +179,7 @@ SQLRETURN SQLSetConnectAttr(
 |SQL_ATTR_ASYNC_DBC_PCONTEXT (ODBC 3.8)|Une valeur SQLPOINTER qui pointe vers la structure de contexte.<br /><br /> Seul le Gestionnaire de pilotes peut appeler d’un pilote **SQLSetStmtAttr** fonction avec cet attribut.|  
 |SQL_ATTR_ASYNC_ENABLE (ODBC 3.0)|Une valeur SQLULEN qui indique si une fonction appelée avec une instruction sur la connexion spécifiée est exécutée de façon asynchrone :<br /><br /> SQL_ASYNC_ENABLE_OFF = prise en charge de l’exécution asynchrone au niveau de connexion désactiver pour les opérations d’instruction (la valeur par défaut).<br /><br /> SQL_ASYNC_ENABLE_ON = prise en charge de l’exécution asynchrone au niveau de connexion activer pour les opérations de l’instruction.<br /><br /> Cet attribut peut être définie si **SQLGetInfo** avec les informations SQL_ASYNC_MODE type retourne SQL_AM_CONNECTION ou SQL_AM_STATEMENT.|  
 |SQL_ATTR_AUTO_IPD (ODBC 3.0)|Une valeur SQLUINTEGER en lecture seule qui spécifie si le remplissage automatique de l’IPD après un appel à **SQLPrepare** est pris en charge :<br /><br /> SQL_TRUE = le remplissage automatique de l’IPD après un appel à **SQLPrepare** est pris en charge par le pilote.<br /><br /> SQL_FALSE = le remplissage automatique de l’IPD après un appel à **SQLPrepare** n’est pas pris en charge par le pilote. Les serveurs ne prenant pas en charge des instructions préparées ne sera pas en mesure de remplir l’IPD automatiquement.<br /><br /> Si SQL_TRUE est retournée pour l’attribut de connexion SQL_ATTR_AUTO_IPD, vous pouvez définir l’attribut d’instruction SQL_ATTR_ENABLE_AUTO_IPD pour activer ou désactiver le remplissage automatique de l’IPD. Si SQL_ATTR_AUTO_IPD est SQL_FALSE, SQL_ATTR_ENABLE_AUTO_IPD ne peut pas être définie à SQL_TRUE. La valeur par défaut de SQL_ATTR_ENABLE_AUTO_IPD est égale à la valeur de SQL_ATTR_AUTO_IPD.<br /><br /> Cet attribut de connexion peut être retourné par **SQLGetConnectAttr** mais ne peut pas être définie à **SQLSetConnectAttr**.|  
-|SQL_ATTR_AUTOCOMMIT (ODBC 1.0)|Valeur SQLUINTEGER qui spécifie s’il faut utiliser le mode de validation automatique ou validation manuelle :<br /><br /> SQL_AUTOCOMMIT_OFF = le pilote utilise le mode de validation manuelle et l’application doit explicitement valider ou annuler les transactions avec **SQLEndTran**.<br /><br /> SQL_AUTOCOMMIT_ON = le pilote utilise le mode de validation automatique. Chaque instruction est validée immédiatement après son exécution. Il s'agit du paramètre par défaut. Toutes les transactions ouvertes sur la connexion sont validées lorsque SQL_ATTR_AUTOCOMMIT a la valeur SQL_AUTOCOMMIT_ON pour changer de mode de validation manuelle en mode de validation automatique.<br /><br /> Pour plus d’informations, consultez [en Mode de validation](../../../odbc/reference/develop-app/commit-mode.md). **Important :** certaines sources de données supprimer les plans d’accès et fermer les curseurs pour toutes les instructions sur une connexion chaque fois qu’une instruction est validée ; mode de validation automatique peut entraîner cette situation après l’exécution de chaque instruction de l’autre ou lorsque le curseur est fermé pour une requête. Pour plus d’informations, consultez les types d’informations SQL_CURSOR_COMMIT_BEHAVIOR et SQL_CURSOR_ROLLBACK_BEHAVIOR dans [SQLGetInfo](../../../odbc/reference/syntax/sqlgetinfo-function.md) et [effet des Transactions sur les curseurs et des instructions préparées](../../../odbc/reference/develop-app/effect-of-transactions-on-cursors-and-prepared-statements.md). <br /><br /> Lorsqu’un lot est exécuté en mode de validation automatique, deux opérations sont possibles. Le lot entier peut être traité en tant qu’unité autocommitable ou chaque instruction dans un lot est traitée comme une unité autocommitable. Certaines sources de données peuvent prendre en charge les deux de ces comportements et peuvent fournir un moyen de choisir un ou l’autre. Il n’est définie par le pilote si un lot est traité comme une unité autocommitable ou si chaque instruction du lot est autocommitable.|  
+|SQL_ATTR_AUTOCOMMIT (ODBC 1.0)|Valeur SQLUINTEGER qui spécifie s’il faut utiliser le mode de validation automatique ou validation manuelle :<br /><br /> SQL_AUTOCOMMIT_OFF = le pilote utilise le mode de validation manuelle et l’application doit explicitement valider ou annuler les transactions avec **SQLEndTran**.<br /><br /> SQL_AUTOCOMMIT_ON = le pilote utilise le mode de validation automatique. Chaque instruction est validée immédiatement après son exécution. Il s'agit du paramètre par défaut. Toutes les transactions ouvertes sur la connexion sont validées lorsque SQL_ATTR_AUTOCOMMIT a la valeur SQL_AUTOCOMMIT_ON pour changer de mode de validation manuelle en mode de validation automatique.<br /><br /> Pour plus d’informations, consultez [en Mode de validation](../../../odbc/reference/develop-app/commit-mode.md). **Important :** certaines sources de données supprimer les plans d’accès et fermer les curseurs pour toutes les instructions sur une connexion chaque fois qu’une instruction est validée ; mode de validation automatique peut entraîner cette situation après l’exécution de chaque instruction de l’autre ou lorsque le curseur est fermeture d’une requête. Pour plus d’informations, consultez les types d’informations SQL_CURSOR_COMMIT_BEHAVIOR et SQL_CURSOR_ROLLBACK_BEHAVIOR dans [SQLGetInfo](../../../odbc/reference/syntax/sqlgetinfo-function.md) et [effet des Transactions sur les curseurs et des instructions préparées](../../../odbc/reference/develop-app/effect-of-transactions-on-cursors-and-prepared-statements.md). <br /><br /> Lorsqu’un lot est exécuté en mode de validation automatique, deux opérations sont possibles. Le lot entier peut être traité en tant qu’unité autocommitable ou chaque instruction dans un lot est traitée comme une unité autocommitable. Certaines sources de données peuvent prendre en charge les deux de ces comportements et peuvent fournir un moyen de choisir un ou l’autre. Il n’est définie par le pilote si un lot est traité comme une unité autocommitable ou si chaque instruction du lot est autocommitable.|  
 |SQL_ATTR_CONNECTION_DEAD<br /><br /> (ODBC 3.5)|Valeur SQLUINTEGER en lecture seule qui indique l’état de la connexion. Si SQL_CD_TRUE, la connexion a été perdue. Si SQL_CD_FALSE, la connexion est toujours active.|  
 |SQL_ATTR_CONNECTION_TIMEOUT (ODBC 3.0)|Une valeur SQLUINTEGER correspondant au nombre de secondes à attendre pour toute demande sur la connexion à effectuer avant de retourner à l’application. Le pilote doit retourner la valeur SQLSTATE HYT00 (expiration du délai) à tout moment, qu’il est possible de délai d’attente dans une situation non associée à l’exécution de la requête ou de la connexion.<br /><br /> Si *ValuePtr* est égal à 0 (la valeur par défaut), il n’existe aucun délai d’expiration.|  
 |SQL_ATTR_CURRENT_CATALOG (ODBC VERSION 2.0)|Une chaîne de caractères contenant le nom du catalogue à utiliser par la source de données. Par exemple, dans SQL Server, le catalogue est une base de données, le pilote envoie un **utilisez** *base de données* instruction à la source de données, où *base de données* est la base de données spécifiée dans \* *ValuePtr*. Pour un pilote de niveau unique, le catalogue peut être un répertoire, et le pilote modifie son répertoire actif pour le répertoire spécifié dans **ValuePtr*.|  

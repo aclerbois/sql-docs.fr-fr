@@ -1,35 +1,33 @@
 ---
-title: "Service SQL Server Browser (moteur de base de données et SSAS) | Microsoft Docs"
-ms.custom: 
+title: Service SQL Server Browser (moteur de base de données et SSAS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - services [SQL Server], security
 - SQL Browser service (See SQL Server Browser service)
 - Browser Service
 - SQL Server Browser service
 ms.assetid: 5c236ddc-766d-4a30-af1e-cc6176eca690
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: cf94cff3e764a7079eb5166a6a204453fd217ce3
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 30dbda01d302bb70a9a4297c3eb9e38b60a6ba49
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-browser-service-database-engine-and-ssas"></a>Service SQL Server Browser (moteur de base de données et SSAS)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser s’exécute en tant que service Windows. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l'écoute des demandes entrantes pour les ressources [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et fournit des informations sur les instances [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installées sur l'ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser contribue aux actions suivantes :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Le programme [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Browser s’exécute en tant que service Windows. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l'écoute des demandes entrantes pour les ressources [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et fournit des informations sur les instances [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] installées sur l'ordinateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser contribue aux actions suivantes :  
   
 -   Affichage de la liste des serveurs disponibles  
   

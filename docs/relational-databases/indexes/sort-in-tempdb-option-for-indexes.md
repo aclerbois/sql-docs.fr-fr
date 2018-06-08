@@ -1,17 +1,14 @@
 ---
 title: Option SORT_IN_TEMPDB pour les index | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SORT_IN_TEMPDB option
 - disk space [SQL Server], indexes
@@ -20,16 +17,16 @@ helpviewer_keywords:
 - indexes [SQL Server], tempdb database
 - index creation [SQL Server], tempdb database
 ms.assetid: 754a003f-fe51-4d10-975a-f6b8c04ebd35
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 26
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: dc20b72e294451f4c1475d04d63b037c86fd562d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 71d1ac448c2dce243fe8d8b48603f26c84331d8c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sortintempdb-option-for-indexes"></a>Option SORT_IN_TEMPDB pour les index
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

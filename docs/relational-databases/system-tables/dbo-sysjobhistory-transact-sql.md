@@ -1,16 +1,14 @@
 ---
-title: dbo.sysjobhistory (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: dbo.sysjobhistory (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/03/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.sysjobhistory_TSQL
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sysjobhistory system table
 ms.assetid: 1b1fcdbb-2af2-45e6-bf3f-e8279432ce13
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 70897838b8fa8ce10c83308829cd1f5cba87e40d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 3ab9fbfb6a574f8f6c91ee15789c67cac204d5f3
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="dbosysjobhistory-transact-sql"></a>dbo.sysjobhistory (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,9 +44,9 @@ ms.lasthandoff: 02/03/2018
 |**step_id**|**int**|ID de l'étape dans le travail|  
 |**step_name**|**sysname**|Nom de l'étape|  
 |**sql_message_id**|**int**|Identificateur de tout message d'erreur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourné en cas d'échec du travail.|  
-|**sql_severity**|**int**|Gravité des erreurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
+|**gravité_sql**|**int**|Gravité des erreurs [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**message**|**nvarchar(4000)**|Texte éventuel d'une erreur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
-|**run_status**|**int**|État de l'exécution du travail :<br /><br /> **0** = Échec<br /><br /> **1** = a réussi<br /><br /> **2** = nouvelle tentative<br /><br /> **3** = annulée|  
+|**run_status**|**int**|État de l'exécution du travail :<br /><br /> **0** = Échec<br /><br /> **1** = a réussi<br /><br /> **2** = nouvelle tentative<br /><br /> **3** = annulée<br /><br /> **4** = en cours|  
 |**run_date**|**int**|Date du début d'exécution du travail ou de l'étape. Pour l'historique des travaux en cours, date et heure de l'écriture de l'historique.|  
 |**run_time**|**int**|Heure de début de l'étape ou du travail.|  
 |**run_duration**|**int**|Temps écoulé dans l’exécution du travail ou de l’étape de **HHMMSS** format.|  

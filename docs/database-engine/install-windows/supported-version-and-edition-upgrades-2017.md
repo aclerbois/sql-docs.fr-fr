@@ -1,32 +1,29 @@
 ---
-title: "Mises à niveau de version et d’édition prises en charge - SQL Server 2017 | Microsoft Docs"
-ms.custom: 
+title: Mises à niveau de version et d’édition prises en charge - SQL Server 2017 | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - components [SQL Server], adding to existing installations
 - versions [SQL Server], upgrading
 - upgrading SQL Server, upgrades supported
 - cross-language support
 ms.assetid: 702359c4-6ca9-42a8-860c-a95a802898a1
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 148
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 7c2a3c833c717359ce1681a9fb5eb149cd38a335
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 38cf5757ef560145945543aa0932ba65046cb9b1
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771405"
 ---
 # <a name="supported-version-and-edition-upgrades-for-sql-server-2017"></a>Mises à niveau de version et d’édition prises en charge pour SQL Server 2017
 

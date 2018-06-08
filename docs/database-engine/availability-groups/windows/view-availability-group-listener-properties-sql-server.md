@@ -1,32 +1,32 @@
 ---
-title: "Afficher les propriétés d’un écouteur de groupe de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Afficher les propriétés d’un écouteur de groupe de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/11/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygrouplistenerproperties.general.f1
-helpviewer_keywords: Availability Groups [SQL Server], monitoring
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygrouplistenerproperties.general.f1
+helpviewer_keywords:
+- Availability Groups [SQL Server], monitoring
 ms.assetid: aca0d016-3228-40b8-bdc3-285ed6d9b280
-caps.latest.revision: "18"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 18
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a45bef71e8b715e6c9967c3c050cefb2873e3fe9
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 44b94de7cb021c407f668a091c3ac90f06d02ae3
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770305"
 ---
 # <a name="view-availability-group-listener-properties-sql-server"></a>Afficher les propriétés d’un écouteur de groupe de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment afficher les propriétés d’un *écouteur de groupe de disponibilité* Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment afficher les propriétés d’un *écouteur de groupe de disponibilité* Always On à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)] dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
 -   **Pour afficher les propriétés d'un écouteur, utilisez :**  
   

@@ -1,16 +1,14 @@
 ---
 title: CREATE FUNCTION (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - FUNCTION
@@ -38,16 +36,15 @@ helpviewer_keywords:
 - scalar-valued functions
 - functions [SQL Server], invoking
 ms.assetid: 864b393f-225f-4895-8c8d-4db59ea60032
-caps.latest.revision: 
+caps.latest.revision: 162
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 76b25e852e94ff6a511d8b18adb31f9da883a7fe
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: a2b6f3905029c6929f4c747f3d34fa54bfde0f07
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-function-transact-sql"></a>CREATE FUNCTION (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -291,7 +288,7 @@ RETURNS return_data_type
  Spécifiez un nom de paramètre en plaçant le signe @ comme premier caractère. Le nom de paramètre doit suivre les règles applicables aux identificateurs. Un paramètre étant local à une fonction, vous pouvez utiliser le même nom dans d'autres fonctions. Les paramètres ne peuvent que prendre la place de constantes ; ils ne peuvent pas être utilisés à la place de noms de tables, de colonnes ou d'autres objets de base de données.  
   
 > [!NOTE]  
->  ANSI_WARNINGS n'est pas honoré lorsque vous transmettez des paramètres dans une procédure stockée, dans une fonction définie par l'utilisateur ou lorsque vous déclarez et définissez des variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)**, puis qu’une valeur comprenant plus de trois caractères lui est affectée, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
+>  ANSI_WARNINGS n'est pas honoré lorsque vous transmettez des paramètres dans une procédure stockée, dans une fonction définie par l'utilisateur ou lorsque vous déclarez et définissez des variables dans une instruction par lot. Par exemple, si une variable est définie comme **char(3)**, puis réglée sur une valeur supérieure à trois caractères, les données sont tronquées à la taille définie et l’instruction INSERT ou UPDATE réussit.  
   
  [ *type_schema_name*. ] *parameter_data_type*  
  Type de données de paramètre et, éventuellement, schéma auquel il appartient. Dans le cas des fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)], tous les types de données, notamment les types CLR définis par l’utilisateur et les types de tables définis par l’utilisateur, sont autorisés à l’exception du type de données **timestamp**. Dans le cas des fonctions CLR, tous les types de données, notamment les types CLR définis par l’utilisateur, sont autorisés à l’exception des types de tables définis par l’utilisateur **text**, **ntext** et **image**, et des types de données **timestamp**. Les types non scalaires **cursor** et **table** ne peuvent pas être spécifiés comme type de données de paramètre dans les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou CLR.  
@@ -363,14 +360,14 @@ RETURNS return_data_type
 `MyFood.[MyFood.MyClass].MyStaticMethod`  
   
 > [!NOTE]  
->  Par défaut, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas exécuter du code CLR. Vous pouvez créer, modifier et supprimer des objets d’une base de données qui font référence à des modules CLR (Common Language Runtime) ; cependant, vous ne pouvez pas exécuter ces références dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tant que vous n’avez pas activé l’[option clr enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md). Pour activer cette option, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
+>  Par défaut, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas exécuter du code CLR. Vous pouvez créer, modifier et supprimer des objets d’une base de données qui font référence à des modules CLR (Common Language Runtime) ; cependant, vous ne pouvez pas exécuter ces références dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] tant que vous n’avez pas activé l’[option CLR enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md). Pour activer cette option, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
   
 > [!NOTE]  
 >  Cette option n'est pas disponible dans une base de données à relation contenant-contenu.  
   
- *\<*table_type_definition*>* ( { \<column_definition> \<column_constraint>    | \<computed_column_definition> }    [ \<table_constraint> ] [ ,...*n* ] ) Définit le type de données de table pour une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)]. La déclaration de table comprend des définitions de colonne et des contraintes de colonne ou de table. La table est toujours placée dans le groupe de fichiers primaire.  
+ *\<* table_type_definition*>* ( { \<column_definition> \<column_constraint>    | \<computed_column_definition> }    [ \<table_constraint> ] [ ,...*n* ] ) Définit le type de données de la table pour une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)]. La déclaration de table comprend des définitions de colonne et des contraintes de colonne ou de table. La table est toujours placée dans le groupe de fichiers primaire.  
   
- \< clr_table_type_definition >  ( { *column_name**data_type* } [ ,...*n* ] ) **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([en préversion dans certaines régions](http://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).  
+ \< clr_table_type_definition >  ( { *column_name**data_type* } [ ,...*n* ] ) **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)] ([en préversion dans certaines régions](http://azure.microsoft.com/documentation/articles/sql-database-preview-whats-new/?WT.mc_id=TSQL_GetItTag)).|  
   
  Définit les types de données de table pour une fonction CLR. La déclaration de table ne comprend que des types de données et des noms de colonne. La table est toujours placée dans le groupe de fichiers primaire.  
   
@@ -396,7 +393,7 @@ RETURNS return_data_type
  ENCRYPTION  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
- Indique que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] se charge de convertir le texte d'origine provenant de l'instruction CREATE FUNCTION dans un format obscurci. La sortie générée par l'obfuscation n'est pas visible directement dans les vues de catalogue. Les utilisateurs n'ayant pas accès aux tables système ou aux fichiers de base de données ne peuvent pas récupérer le texte d'obfuscation. Le texte est cependant à la disposition des utilisateurs disposant de privilèges et qui peuvent accéder aux tables système par le biais du [port DAC](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md) ou qui accèdent directement aux fichiers de bases de données. Les utilisateurs qui peuvent associer un débogueur au processus serveur peuvent également récupérer la procédure d'origine de la mémoire au moment de l'exécution. Pour plus d’informations sur l’accès aux métadonnées système, consultez [Configuration de la visibilité des métadonnées](../../relational-databases/security/metadata-visibility-configuration.md).  
+ Indique que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] se charge de convertir le texte d'origine provenant de l'instruction CREATE FUNCTION dans un format obscurci. La sortie générée par l'obfuscation n'est pas visible directement dans les affichages catalogue. Les utilisateurs n'ayant pas accès aux tables système ou aux fichiers de base de données ne peuvent pas récupérer le texte d'obfuscation. Le texte est cependant à la disposition des utilisateurs disposant de privilèges et qui peuvent accéder aux tables système par le biais du [port DAC](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md) ou qui accèdent directement aux fichiers de bases de données. Les utilisateurs qui peuvent associer un débogueur au processus serveur peuvent également récupérer la procédure d'origine de la mémoire au moment de l'exécution. Pour plus d’informations sur l’accès aux métadonnées système, consultez [Configuration de la visibilité des métadonnées](../../relational-databases/security/metadata-visibility-configuration.md).  
   
  L'utilisation cette option empêche la publication de la fonction dans le cadre de la réplication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Cette option ne peut pas être spécifiée pour les fonctions CLR.  
   
@@ -484,7 +481,7 @@ RETURNS return_data_type
  Contrainte assurant l'intégrité de l'entité d'une colonne ou de plusieurs colonnes spécifiées au moyen d'un index unique. Une table peut comprendre plusieurs contraintes UNIQUE. L'argument UNIQUE ne peut pas être spécifié pour les fonctions table CLR.  
   
  CLUSTERED et NONCLUSTERED  
- Indique qu'un index, cluster ou non-cluster, est créé pour la contrainte PRIMARY KEY ou UNIQUE. Les contraintes PRIMARY KEY utilisent CLUSTERED, tandis que les contraintes UNIQUE recourent à NONCLUSTERED.  
+ Indique qu'un index, cluster ou non cluster, est créé pour la contrainte PRIMARY KEY ou UNIQUE. Les contraintes PRIMARY KEY utilisent CLUSTERED, tandis que les contraintes UNIQUE recourent à NONCLUSTERED.  
   
  CLUSTERED peut être spécifié pour une seule contrainte. Si CLUSTERED est spécifié pour une contrainte UNIQUE et qu'une contrainte PRIMARY KEY est également spécifiée, la contrainte PRIMARY KEY utilise NONCLUSTERED.  
   
@@ -514,7 +511,7 @@ RETURNS return_data_type
  Spécifie le remplissage de l'index. La valeur par défaut est OFF.  
   
  FILLFACTOR = *fillfactor*  
- Spécifie un pourcentage qui indique le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d’index lors de la création ou de la modification de l’index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0.  
+ Spécifie un pourcentage qui indique le taux de remplissage appliqué par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] au niveau feuille de chaque page d’index lors de la création ou de la modification de l’index. *fillfactor* doit être une valeur entière comprise entre 1 et 100. La valeur par défaut est 0.  
   
  IGNORE_DUP_KEY = { ON | **OFF** }  
  Spécifie la réponse d'erreur lorsqu'une opération d'insertion essaie d'insérer des valeurs de clés en double dans un index unique. L'option IGNORE_DUP_KEY s'applique uniquement aux opérations d'insertion après la création ou la régénération de l'index. La valeur par défaut est OFF.  
@@ -540,7 +537,7 @@ RETURNS return_data_type
   
  Pour que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] référence la méthode appropriée en cas de surchargé dans une classe, la méthode indiquée dans \<method_specifier> doit présenter les caractéristiques suivantes : 
   
--   Recevoir le même nombre de paramètres que ceux spécifiés dans [ ,...*n* ].  
+-   Recevoir le même nombre de paramètres que ceux spécifiés dans [ ,...*n* ].  
   
 -   Recevoir tous les paramètres par valeur, non par référence.  
   
@@ -599,7 +596,7 @@ RETURNS return_data_type
   
 -   **SystemDataAccess** = false  
   
- Pour plus d'informations, consultez [Index sur les colonnes calculées](../../relational-databases/indexes/indexes-on-computed-columns.md).  
+ Pour plus d'informations, consultez [Indexes on Computed Columns](../../relational-databases/indexes/indexes-on-computed-columns.md).  
   
 ### <a name="calling-extended-stored-procedures-from-functions"></a>Appel de procédures stockées étendues à partir de fonctions  
  Une procédure stockée étendue appelée à partir d'une fonction ne peut pas retourner de jeux de résultats au client. Les API ODS qui retournent des jeux de résultats au client retournent FAIL. La procédure stockée étendue peut se reconnecter à une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ; toutefois, elle ne doit pas joindre la même transaction que la fonction l'ayant appelée.  
@@ -625,7 +622,7 @@ RETURNS return_data_type
   
 -   SEND  
   
- Les fonctions définies par l'utilisateur peuvent être imbriquées ; en d'autres termes, une fonction définie par l'utilisateur peut en appeler une autre. Le niveau d'imbrication est incrémenté lorsque la fonction appelée commence à s'exécuter, et décrémenté lorsque l'exécution est terminée. Les fonctions définies par l'utilisateur peuvent être imbriquées jusqu'à 32 niveaux. Le dépassement des niveaux d'imbrication maximum autorisés, provoque l'échec de la totalité de la chaîne de fonctions appelantes. Toute référence à du code managé depuis une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur compte pour un niveau parmi les 32 niveaux d'imbrication possibles. Les méthodes appelées à partir du code managé n'entrent pas en compte dans cette limite.  
+ Les fonctions définies par l'utilisateur peuvent être imbriquées ; en d'autres termes, une fonction définie par l'utilisateur peut en appeler une autre. Le niveau d'imbrication est incrémenté lorsque la fonction appelée commence à s'exécuter, et décrémenté lorsque l'exécution est terminée. Les fonctions définies par l'utilisateur peuvent être imbriquées jusqu'à 32 niveaux. Le dépassement des niveaux d'imbrication maximum autorisés, provoque l'échec de la totalité de la chaîne de fonctions appelantes. Toute référence à du code managé depuis une fonction [!INCLUDE[tsql](../../includes/tsql-md.md)] définie par l'utilisateur compte pour un niveau parmi les 32 niveaux d'imbrication possibles. Les méthodes appelées à partir du code managé ne comptent pas par rapport à cette limite.  
   
 ### <a name="using-sort-order-in-clr-table-valued-functions"></a>Utilisation de l'ordre de tri dans les fonctions table CLR  
  Lorsque vous utilisez la clause ORDER dans des fonctions table CLR, prenez en compte les indications suivantes :  
@@ -649,9 +646,9 @@ RETURNS return_data_type
  La clause ORDER ne garantit pas des résultats ordonnés lorsqu'une requête SELECT est exécutée, sauf si la clause ORDER BY est également spécifiée dans la requête. Pour plus d’informations sur la façon de rechercher par requête les colonnes incluses dans l’ordre de tri pour les fonctions table, consultez [sys.function_order_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-function-order-columns-transact-sql.md).  
   
 ## <a name="metadata"></a>Métadonnées  
- Le tableau suivant répertorie les vues de catalogue système que vous pouvez utiliser pour retourner des métadonnées sur les fonctions définies par l'utilisateur.  
+ Le tableau suivant répertorie les affichages catalogue système que vous pouvez utiliser pour retourner des métadonnées sur les fonctions définies par l'utilisateur.  
   
-|Vue système|Description|  
+|Affichage système|Description|  
 |-----------------|-----------------|  
 |[sys.sql_modules](../../relational-databases/system-catalog-views/sys-sql-modules-transact-sql.md)|Consultez l’exemple E dans la section Exemples ci-dessous.|  
 |[sys.assembly_modules](../../relational-databases/system-catalog-views/sys-assembly-modules-transact-sql.md)|Affiche des informations sur les fonctions définies par l'utilisateur CLR.|  

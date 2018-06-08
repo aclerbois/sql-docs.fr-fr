@@ -1,33 +1,30 @@
 ---
-title: "Mettre à niveau vers une autre édition de SQL Server 2016 (Installation) | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau vers une autre édition de SQL Server 2016 (Installation) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 31d16820-d126-4c57-82cc-27701e4091bc
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 27
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 976dc265c028061ee04d8188b8de4325ba335a69
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 12d6c8c07a27fb6b25bc7f2e40ec0e759ce25860
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771165"
 ---
 # <a name="upgrade-to-a-different-edition-of-sql-server-setup"></a>Mettre à niveau vers une autre édition de SQL Server 2016 (Installation)
 
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] L’installation prend en charge la mise à niveau d’édition entre les différentes éditions de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)]. Pour plus d’informations sur les chemins de mise à niveau d’édition pris en charge, consultez [Mises à niveau de version et d’édition prises en charge](../../database-engine/install-windows/supported-version-and-edition-upgrades-2017.md). Avant de lancer la mise à niveau d’édition d’une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], consultez les articles suivants :  
+L'installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge la mise à niveau d'édition entre les différentes éditions de [!INCLUDE[ssNoversion](../../includes/ssnoversion-md.md)]. Pour plus d’informations sur les chemins de mise à niveau d’édition pris en charge, consultez [Mises à niveau de version et d’édition prises en charge](../../database-engine/install-windows/supported-version-and-edition-upgrades-2017.md). Avant de lancer la mise à niveau d’édition d’une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], consultez les articles suivants :  
 
 - [Éditions et fonctionnalités prises en charge de SQL Server 2017](../../sql-server/editions-and-components-of-sql-server-2017.md)  
 - [Éditions et fonctionnalités prises en charge de SQL Server 2016](../../sql-server/editions-and-components-of-sql-server-2016.md)  
@@ -37,7 +34,7 @@ ms.lasthandoff: 02/09/2018
 > [!NOTE]  
 > **[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sur une instance de cluster de basculement :** une mise à niveau de l’édition sur un des nœuds de l’instance du cluster de basculement [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est suffisante. Le nœud peut être actif ou passif, et le moteur ne met pas les ressources hors connexion pendant la mise à niveau de l’édition. Après la mise à niveau de l'édition, il est nécessaire de redémarrer l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou de la basculer sur un nœud différent.  
   
-## <a name="prerequisites"></a>Prérequis  
+## <a name="prerequisites"></a>Conditions préalables requises  
 Pour des installations locales, vous devez exécuter le programme d'installation en tant qu'administrateur. Si vous installez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à partir d'un partage distant, vous devez utiliser un compte de domaine qui dispose des autorisations de lecture sur le partage distant.  
   
 > [!IMPORTANT]  

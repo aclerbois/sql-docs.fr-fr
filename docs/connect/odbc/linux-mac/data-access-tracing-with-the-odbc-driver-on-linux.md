@@ -1,30 +1,27 @@
 ---
-title: "Traçage de l’accès aux données avec le pilote ODBC sur Linux et macOS | Documents Microsoft"
-ms.custom: 
+title: Traçage de l’accès aux données avec le pilote ODBC sur Linux et macOS | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data access tracing
 - tracing
 ms.assetid: 3149173a-588e-47a0-9f50-edb8e9adf5e8
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4a8c00866759a3cc9732083891e911eea9c2677b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 64a04e7c448161c22ca9a671e5fdbe706829bced
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-access-tracing-with-the-odbc-driver-on-linux-and-macos"></a>Traçage de l’accès aux données avec le pilote ODBC sur Linux et Mac OS
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -42,7 +39,7 @@ TraceFile=/home/myappuser/odbctrace.log
 
 Une fois que vous avez terminé de traçage de votre application, supprimez `Trace=Yes` à partir de la `odbcinst.ini` pour éviter l’altération des performances du suivi de fichier et vérifiez les fichiers de trace inutiles sont supprimés.
   
-Le traçage s’applique à toutes les applications qui utilisent le pilote dans `odbcinst.ini`. Pour ne pas tracer toutes les applications (par exemple, pour éviter la divulgation d’informations sensibles par utilisateur), vous pouvez tracer une instance d’application individuelle en lui fournissant l’emplacement de privé `odbcinst.ini`, à l’aide du `ODBCSYSINI` variable d’environnement. Exemple :  
+Le traçage s’applique à toutes les applications qui utilisent le pilote dans `odbcinst.ini`. Pour ne pas tracer toutes les applications (par exemple, pour éviter la divulgation d’informations sensibles par utilisateur), vous pouvez tracer une instance d’application individuelle en lui fournissant l’emplacement de privé `odbcinst.ini`, à l’aide du `ODBCSYSINI` variable d’environnement. Par exemple :  
   
 ```  
 $ ODBCSYSINI=/home/myappuser myapp

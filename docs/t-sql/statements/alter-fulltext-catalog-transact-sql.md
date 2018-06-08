@@ -1,16 +1,14 @@
 ---
 title: ALTER FULLTEXT CATALOG (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_FULLEXT_CATALOG_TSQL
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - full-text catalogs [SQL Server], modifying
 - full-text catalogs [SQL Server], reorganizing
 ms.assetid: 31a47aaf-6c7f-48a4-a86a-d57aec66c9cb
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa56a980fa5c5c74a1868f4c03ec791175022f76
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: db4dfc09c47ad9527afcd1d1978b502bdd9c2347
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-fulltext-catalog-transact-sql"></a>ALTER FULLTEXT CATALOG (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -55,7 +52,7 @@ ALTER FULLTEXT CATALOG catalog_name
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *catalog_name*  
+ *CATALOG_NAME*  
  Spécifie le nom du catalogue à modifier. S’il n’existe pas de catalogue portant le nom spécifié, [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] retourne une erreur et n’exécute pas l’opération ALTER.  
   
  REBUILD  

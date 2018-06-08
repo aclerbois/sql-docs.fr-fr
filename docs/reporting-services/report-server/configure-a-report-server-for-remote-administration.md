@@ -1,16 +1,15 @@
 ---
-title: "Configurer un serveur de rapports pour l’administration à distance | Microsoft Docs"
+title: Configurer un serveur de rapports pour l’administration à distance | Microsoft Docs
 ms.date: 09/14/2015
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.custom: ''
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Reporting Services Configuration tool
 - WMI provider [Reporting Services], remote configuration
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - report servers [Reporting Services], configuring
 - remote server administration [Reporting Services]
 ms.assetid: 8c7f145f-3ac2-4203-8cd6-2a4694395d09
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 77dfb20f08e02c035cc4898fa9a5157dadd03f41
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 4a76d3c8635716d072ac977ddf54989ec10b22f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-a-report-server-for-remote-administration"></a>Configurer un serveur de rapports pour l'administration à distance
   Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], vous pouvez configurer des instances de serveur de rapports localement ou à distance. Pour configurer une instance de serveur de rapports à distance, vous pouvez faire appel à l’outil de configuration de Reporting Services ou bien écrire un code personnalisé qui utilise le fournisseur WMI (Windows Management Instrumentation) de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . L'outil de configuration de Reporting Services offre une interface graphique avec le fournisseur WMI pour vous permettre de configurer un serveur de rapports sans avoir à écrire du code. Lorsque vous démarrez l'outil, vous pouvez spécifier un serveur distant auquel vous connecter.  
@@ -40,7 +38,7 @@ ms.lasthandoff: 01/09/2018
   
  `"The RPC server is unavailable. (Exception from HRESULT: 0x800706BA)".`  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour cela, vous devez ouvrir une session localement et être membre du groupe Administrateurs local. Vous ne pouvez pas modifier les paramètres du pare-feu Windows d'un ordinateur distant sur une connexion distante.  
   
  Si vous souhaitez activer l'administration à distance pour un utilisateur non-administrateur, vous devez accorder des autorisations d'activation à distance DCOM (Distributed Component Object Model) au compte. Les instructions de configuration du serveur pour un accès non-administrateur sont fournies dans cette rubrique.  
@@ -52,7 +50,7 @@ ms.lasthandoff: 01/09/2018
 ## <a name="tasks"></a>Tâches  
  Les tâches qui activent la configuration de serveur de rapports à distance incluent les éléments suivants :  
   
--   Activer les ports du Pare-feu Windows afin d'autoriser les demandes sur les ports utilisés par le serveur de rapports et par l'instance du moteur de base de données SQL Server.  Voir [Configure a Firewall for Report Server Access](../../reporting-services/report-server/configure-a-firewall-for-report-server-access.md) et [Configure a Windows Firewall for Database Engine Access](../../database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access.md).  
+-   Activer les ports du Pare-feu Windows afin d'autoriser les demandes sur les ports utilisés par le serveur de rapports et par l'instance du moteur de base de données SQL Server.  Voir [Configurer un pare-feu pour accéder au serveur de rapports](../../reporting-services/report-server/configure-a-firewall-for-report-server-access.md) et [Configurer un pare-feu Windows pour accéder au moteur de base de données](../../database-engine/configure-windows/configure-a-windows-firewall-for-database-engine-access.md).  
   
 -   Autoriser les connexions distantes à l'instance du moteur de base de données qui héberge la base de données du serveur de rapports. Une connexion distante est nécessaire pour la configuration de la connexion à la base de données du serveur de rapports et la gestion des clés de chiffrement.  
   

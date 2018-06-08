@@ -1,16 +1,15 @@
 ---
-title: "Paramètres (Migration) (AccessToSQL) du projet | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (Migration) (AccessToSQL) du projet | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Migration settings
 - Project Settings dialog box, Migration
 ms.assetid: 4caebc9c-8680-4b99-a8fa-89c43161c95d
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d3ffb7f8fe3a50fc940bb3030fd2bed518006b01
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3fe26ecc9d250982206121d33b35ee5c975e376f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-migration-accesstosql"></a>Paramètres du projet (Migration) (AccessToSQL)
 Les paramètres de projet de Migration vous permettent de configurer la façon dont les données sont migrées vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure.  
@@ -87,7 +85,7 @@ Spécifie si SSMA verrouille les tables lorsqu’il ajoute des données aux tabl
 **Remplacez les dates non pris en charge**  
 Spécifie si SSMA devrait corriger les dates d’accès qui sont antérieures à la plus ancienne [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] datetime, date (01 janvier 1753).  
   
--   Pour conserver les valeurs de date en cours, sélectionnez **ne rien faire**. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]n’accepte pas les dates antérieures au 01 janvier 1753 dans une colonne datetime. Si vous utilisez des dates antérieures, vous devez convertir les valeurs datetime aux valeurs de caractère.  
+-   Pour conserver les valeurs de date en cours, sélectionnez **ne rien faire**. [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] n’accepte pas les dates antérieures au 01 janvier 1753 dans une colonne datetime. Si vous utilisez des dates antérieures, vous devez convertir les valeurs datetime aux valeurs de caractère.  
   
 -   Pour convertir les dates antérieures au 01 janvier 1753 avec la valeur NULL, sélectionnez **remplacer par NULL**.  
   

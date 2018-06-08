@@ -1,29 +1,23 @@
 ---
-title: L’installation des fonctionnalités de formation l’ordinateur SQL Server sur une machine virtuelle Azure | Documents Microsoft
-ms.custom: ''
-ms.date: 03/21/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
+title: Installer les fonctionnalités de formation l’ordinateur SQL Server sur une machine virtuelle Azure | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: bb1cd5e695e59c898a0e5dbcad279e1a8796bb63
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: a0780d4f974761af563ff2ed6e20e444b2d85ef9
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563677"
 ---
 # <a name="install-sql-server-machine-learning-features-on-an-azure-virtual-machine"></a>Installer les fonctionnalités sur une machine virtuelle Azure d’apprentissage automatique SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
  
-Nous vous recommandons d’utiliser le [machine virtuelle de science des données](ttps://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-vm), mais si vous souhaitez un ordinateur virtuel avec SQL Server 2017 Machine Learning Services ou SQL Server 2016 R Services, cet article vous guide à travers les étapes.
+Nous vous recommandons d’utiliser le [machine virtuelle de science des données](https://docs.microsoft.com/azure/machine-learning/data-science-virtual-machine/provision-vm), mais si vous souhaitez un ordinateur virtuel avec SQL Server 2017 Machine Learning Services ou SQL Server 2016 R Services, cet article vous guide à travers les étapes.
 
 ## <a name="create-a-virtual-machine-on-azure"></a>Créer un ordinateur virtuel sur Azure
 

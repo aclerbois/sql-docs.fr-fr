@@ -1,33 +1,30 @@
 ---
-title: "Propriété IsolationLevel | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété IsolationLevel | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Connection15::IsolationLevel
 helpviewer_keywords:
 - IsolationLevel property
 ms.assetid: ea84e4b2-fbf2-4eef-b9ce-796b22e21800
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b66b246ef3bc64e841ec6322de41ba0fc1e7af97
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 794c81af3d0f67c7688dab253c8992df1439d149
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="isolationlevel-property"></a>Propriété IsolationLevel
 Indique le niveau d’isolement d’une [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet.  

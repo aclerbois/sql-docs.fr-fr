@@ -1,31 +1,29 @@
 ---
-title: "Capture de données modifiées (SSIS) | Microsoft Docs"
-ms.custom: 
+title: Capture de données modifiées (SSIS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - incremental loads [SQL Server change data capture]
 - change data capture [SQL Server], Integration Services and
 ms.assetid: c4aaba1b-73e5-4187-a97b-61c10069cc5a
-caps.latest.revision: 
+caps.latest.revision: 38
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d4b1a7480113be51245c8c01a087a65ce616cb2c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bcc97264a76c0a558b010c0ca2f0cf9c5595feda
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-data-capture-ssis"></a>Capture de données modifiées (SSIS)
   Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la capture de données modifiées constitue une solution efficace au défi de l'optimisation des chargements incrémentiels de tables sources vers des mini-Data Warehouses et des entrepôts de données.  

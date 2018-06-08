@@ -1,16 +1,14 @@
 ---
 title: DROP TRIGGER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP TRIGGER
@@ -27,16 +25,15 @@ helpviewer_keywords:
 - removing triggers
 - DML triggers, removing
 ms.assetid: 092d0d71-9f1e-4e38-a1c4-2487adfa5b4e
-caps.latest.revision: 
+caps.latest.revision: 53
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 98f871f47674aeb4c5c3d2b0f55a3e7f8aebb4d7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 3f908b790f0ed9be1d8741dab21b4c5302caf359
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drop-trigger-transact-sql"></a>DROP TRIGGER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -122,7 +119,7 @@ IF OBJECT_ID ('employee_insupd', 'TR') IS NOT NULL
  L'exemple suivant supprime le déclencheur DDL `safety`.  
   
 > [!IMPORTANT]  
->  Étant donné que les déclencheurs DDL ne sont pas compris dans l’étendue du schéma et qu’ils n’apparaissent donc pas dans la vue de catalogue **sys.objects**, la fonction OBJECT_ID ne peut pas être utilisée pour déterminer s’ils existent dans la base de données. Les objets qui ne sont pas délimités au schéma doivent être interrogés à l'aide de la vue de catalogue appropriée. Pour les déclencheurs DDL, utilisez **sys.triggers**.  
+>  Étant donné que les déclencheurs DDL ne sont pas compris dans l’étendue du schéma et qu’ils n’apparaissent donc pas dans la vue de catalogue **sys.objects**, la fonction OBJECT_ID ne peut pas être utilisée pour déterminer s’ils existent dans la base de données. Les objets qui ne sont pas compris dans l'étendue du schéma doivent être interrogés à l'aide de l'affichage catalogue approprié. Pour les déclencheurs DDL, utilisez **sys.triggers**.  
   
 ```  
 DROP TRIGGER safety  

@@ -1,32 +1,31 @@
 ---
-title: "Exemple de base de données SQL graphique | Documents Microsoft"
-description: "Un exemple rapide qui vous aideront à démarrer avec les nouvelles syntaxes introduites dans la base de données du graphique SQL."
+title: Exemple de base de données SQL graphique | Documents Microsoft
+description: Un exemple rapide qui vous aideront à démarrer avec les nouvelles syntaxes introduites dans la base de données du graphique SQL.
 ms.date: 04/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: graphs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - SQL graph
 - SQL graph, tsql reference
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: 1
 author: shkale-msft
 ms.author: shkale
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d570be772eefec569c59e01a3501a18c1f33d536
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2017 || = sqlallproducts-allversions
+ms.openlocfilehash: cc1f388b7ec6687fe64a4bad39d8d2c878221505
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-graph-database-and-run-some-pattern-matching-queries-using-t-sql"></a>Créer une base de données du graphique et exécuter des requêtes à l’aide de T-SQL mise en correspondance
 [!INCLUDE[tsql-appliesto-ss2017-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2017-asdb-xxxx-xxx-md.md)]
@@ -175,4 +174,4 @@ Ce script utilise la nouvelle syntaxe T-SQL pour créer des tableaux de bord et 
 |---  |---  |
 |[CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-sql-graph.md)  |Créer le tableau de bord ou le nœud du graphique  |
 |[INSERT &#40;Transact-SQL&#41;](../../t-sql/statements/insert-sql-graph.md)  |Insérer un tableau de bord ou de nœud  |
-|[MATCH &#40;Transact-SQL&#41;](../../t-sql/queries/match-sql-graph.md)  |Utiliser MATCH pour correspondre à un modèle ou de parcourir le graphique  |
+|[CORRESPONDANCE &#40;Transact-SQL&#41;](../../t-sql/queries/match-sql-graph.md)  |Utiliser MATCH pour correspondre à un modèle ou de parcourir le graphique  |

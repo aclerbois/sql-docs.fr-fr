@@ -1,37 +1,23 @@
 ---
-title: "Erreurs et avertissements catégorie d’événement | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Erreurs et avertissements catégorie d’événement | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: trace-events
 ms.topic: reference
-helpviewer_keywords:
-- Errors and Warnings event category [SQL Server]
-- event classes [Analysis Services], warnings
-- event classes [Analysis Services], errors
-- errors events [Analysis Services]
-- warnings events [Analysis Services]
-ms.assetid: cf7fd5a7-b189-47c3-8e5c-3195897c7eab
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 06a1d7ef68cd2b996165b5940139221897634669
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7931a8b9bdb29b9a2a736ba95332151b9fd7ebce
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="errors-and-warnings-event-category"></a>Catégorie d'événement Erreurs et avertissements
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La catégorie d'événement Erreurs et avertissements contient les classes d'événements décrites dans le tableau ci-dessous.  
+  La catégorie d'événement Erreurs et avertissements contient les classes d'événements décrites dans le tableau ci-dessous.  
   
 |Classe d'événements|ID d'événement|Description|  
 |-----------------|--------------|-----------------|  

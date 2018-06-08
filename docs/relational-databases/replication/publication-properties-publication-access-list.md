@@ -1,30 +1,28 @@
 ---
-title: "Propriétés de la publication, Liste d’accès aux publications | Microsoft Docs"
-ms.custom: 
+title: Propriétés de la publication, Liste d’accès aux publications | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.newpubwizard.pubproperties.publicationaccesslist.f1
 ms.assetid: 9587bb9e-c66c-4e70-8171-09b943ec2d50
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a63371998b269cb8cf8c485f8fef19d99be42594
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: f84b32e2d1a96d0416f1f5b8d6a73580a76af4ba
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publication-properties-publication-access-list"></a>Propriétés de la publication, Liste d'accès aux publications
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

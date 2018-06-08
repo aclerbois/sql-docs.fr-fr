@@ -1,16 +1,15 @@
 ---
 title: Abonnements et remise (Reporting Services) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: subscriptions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - subscriptions [Reporting Services], report distribution
 - reports [Reporting Services], distributing
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - subscriptions [Reporting Services], about subscriptions
 - subscriptions [Reporting Services]
 ms.assetid: be7ec052-28e2-4558-bc09-8479e5082926
-caps.latest.revision: "56"
+caps.latest.revision: 56
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 00bc203ff747d93febf4ac625fcc261b497bc3ff
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: a3d81598480aab552b0891fb7ae1247d9149ce71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscriptions-and-delivery-reporting-services"></a>Abonnements et remise (Reporting Services)
   Un abonnement [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] est une configuration qui remet un rapport à une heure donnée ou en réponse à un événement, et dans un format de fichier que vous définissez. Par exemple, tous les mercredis, enregistrer le rapport MonthlySales.rdl au format de document Microsoft Word sur un partage de fichiers. Vous pouvez utiliser des abonnements pour planifier et automatiser la remise d'un rapport avec un ensemble de valeurs de paramètres de rapport spécifique.  
@@ -63,9 +61,9 @@ ms.lasthandoff: 01/09/2018
   
 -   [Remise par courrier électronique dans Reporting Services](../../reporting-services/subscriptions/e-mail-delivery-in-reporting-services.md) Décrit le fonctionnement et la configuration de la remise par partage de fichiers du serveur de rapports.  
   
--   [Create and Manage Subscriptions for Native Mode Report Servers](../../reporting-services/subscriptions/create-and-manage-subscriptions-for-native-mode-report-servers.md) Étapes détaillées du processus de création d’abonnements avec un serveur de rapports en mode natif.  
+-   [Créer et gérer des abonnements pour les serveurs de rapports en mode natif](../../reporting-services/subscriptions/create-and-manage-subscriptions-for-native-mode-report-servers.md) Étapes détaillées du processus de création d’abonnements avec un serveur de rapports en mode natif.  
   
--   [Create and Manage Subscriptions for SharePoint Mode Report Servers](../../reporting-services/subscriptions/create-and-manage-subscriptions-for-sharepoint-mode-report-servers.md) Étapes détaillées du processus de création d’abonnements avec un serveur de rapports en mode SharePoint.  
+-   [Créer et gérer des abonnements pour des serveurs de rapports en mode SharePoint](../../reporting-services/subscriptions/create-and-manage-subscriptions-for-sharepoint-mode-report-servers.md) Étapes détaillées du processus de création d’abonnements avec un serveur de rapports en mode SharePoint.  
   
 -   [File Share Delivery in Reporting Services](../../reporting-services/subscriptions/file-share-delivery-in-reporting-services.md) Décrit le fonctionnement et la configuration de la remise par partage de fichiers du serveur de rapports.  
   

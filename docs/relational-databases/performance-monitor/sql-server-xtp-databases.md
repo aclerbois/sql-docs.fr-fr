@@ -1,30 +1,28 @@
 ---
-title: "Bases de données SQL Server XTP | Microsoft Docs"
-ms.custom: 
+title: Bases de données SQL Server XTP | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server 2016 XTP Databases
 ms.assetid: 488ff55e-173f-43f6-9bdb-67b35e7cebfe
-caps.latest.revision: 
+caps.latest.revision: 3
 author: dagiro
 ms.author: v-dagir
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa4b8d6262311f68e0833366c4f0f2c5b6d71c53
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a5550c9a6df1ae646d4960a0d9eca8bd5a43bec4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-xtp-databases"></a>Bases de données SQL Server XTP
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

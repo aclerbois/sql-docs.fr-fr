@@ -1,31 +1,23 @@
 ---
-title: "Haute disponibilité et extensibilité dans Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d7040a55-1e4d-4c24-9333-689c1b9e2db8
-caps.latest.revision: 
-author: Minewiskan
+title: Haute disponibilité et extensibilité dans Analysis Services | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: ac8292e9319bef3d535ff6f3977b50ac22805e27
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 33270141fc67581adaeaeca9df8411c68fe0ac50
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="high-availability-and-scalability-in-analysis-services"></a>Haute disponibilité et extensibilité dans Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cet article décrit les techniques couramment utilisées pour rendre les bases de données Analysis Services hautement disponibles et évolutives. Bien que ces deux objectifs pourraient être traités séparément, ils vont souvent de pair : un déploiement évolutif destiné à des charges de travail de requête ou de traitement volumineuses est généralement associé à certaines attentes en matière de haute disponibilité.  
+  Cet article décrit les techniques couramment utilisées pour rendre les bases de données Analysis Services hautement disponibles et évolutives. Bien que ces deux objectifs pourraient être traités séparément, ils vont souvent de pair : un déploiement évolutif destiné à des charges de travail de requête ou de traitement volumineuses est généralement associé à certaines attentes en matière de haute disponibilité.  
   
  L’inverse n’est cependant pas toujours vrai. La haute disponibilité, sans mise à l’échelle, peut être le seul objectif lorsque des contrats SLA stricts sont établis pour des charges de travail de requête critiques mais modérées.  
   

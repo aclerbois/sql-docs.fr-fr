@@ -1,30 +1,27 @@
 ---
-title: "CRÉER des INDEX pour Paradox | Documents Microsoft"
-ms.custom: 
+title: CRÉER des INDEX pour Paradox | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CREATE INDEX [ODBC]
 - Paradox driver [ODBC], create index
 ms.assetid: 6472bd69-b931-4bc2-a9bf-f1873ed4cdfe
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a64feb77cc0562635b5e432174c58503e459e8ba
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 473c8d73e33504e7cc22d3b02aaca789d9c7a620
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-index-for-paradox"></a>CRÉER des INDEX pour Paradox
 La syntaxe de l’instruction CREATE INDEX pour le pilote ODBC Paradox est :  
@@ -51,7 +48,7 @@ La syntaxe de l’instruction CREATE INDEX pour le pilote ODBC Paradox est :
   
 -   Le *-nom de l’index* argument pour un index principal doit être le même que le nom de base de la table, comme requis par Paradox.  
   
- Si le mot clé **UNIQUE** est omis, le pilote ODBC Paradox créera un index non unique. Cela se compose de deux fichiers d’index secondaire Paradox nommés *-nom de la table*. X *nn*  et *-nom de la table*. Y*nn*, où  *nn*  est le numéro de la colonne dans la table. Index non uniques sont soumis aux restrictions suivantes :  
+ Si le mot clé **UNIQUE** est omis, le pilote ODBC Paradox créera un index non unique. Cela se compose de deux fichiers d’index secondaire Paradox nommés *-nom de la table*. X*nn* et *-nom de la table*. Y*nn*, où *nn* est le numéro de la colonne dans la table. Index non uniques sont soumis aux restrictions suivantes :  
   
 -   Avant de pouvoir créer un index non unique pour une table, un index principal doit exister pour que la table.  
   

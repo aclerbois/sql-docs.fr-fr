@@ -2,29 +2,30 @@
 title: Ensembles de modifications (Master Data Services) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: ''
 ms.component: non-specific
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: f227c49a-ed46-4e0f-8992-83093456cf94
-caps.latest.revision: ''
+caps.latest.revision: 13
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c35eba0f4a4cabf88793683a136e85ca1f3a1e64
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 8018658f61b944c1cced2b1c5f3e499da16744ed
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="changesets-master-data-services"></a>Ensembles de modifications (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] prend désormais en charge la possibilité d’enregistrer les modifications en attente dans une entité comme ensembles de modifications. Cette fonctionnalité peut être utilisée dans deux scénarios.  
   
 -   **Modifications quand « Approbation requise » est activé par l’administrateur d’entité**  

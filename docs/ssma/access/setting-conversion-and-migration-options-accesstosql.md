@@ -1,16 +1,15 @@
 ---
-title: "Définition des Options de Migration (AccessToSQL) et de la Conversion | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Définition des Options de Migration (AccessToSQL) et de la Conversion | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - project settings
 - schemas
 ms.assetid: 0a7304df-2f35-4453-96ef-7ac83dea1167
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 40be8e3f52464e7c6ae6f024d8c29f3d0acd04b9
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 61814a4d5f4b62c3f7262c7c249b165dd8a99571
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setting-conversion-and-migration-options-accesstosql"></a>Conversion de paramètre et les Options de Migration (AccessToSQL)
 Pour chaque projet SSMA, vous pouvez définir les options au niveau du projet. Ces options déterminent la façon dont les objets sont convertis, la migration des données et la correspondance entre les types de sources de données et les types de données cible. Avant de convertir des objets à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure ou migrer des données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, vérifiez que les options de configuration sont appropriées pour le projet.  
@@ -85,7 +83,7 @@ Vous pouvez également personnaliser les paramètres pour le projet actuel. Ces 
   
 3.  Cliquez sur **OK** pour enregistrer les paramètres.  
   
-## <a name="next-steps"></a>Next Steps  
+## <a name="next-steps"></a>Étapes suivantes  
 L’étape suivante de la migration dépend des besoins de votre projet :  
   
 -   Pour personnaliser le mappage des types de données source et cible, consultez [Source de mappage et les Types de données cible](http://msdn.microsoft.com/en-us/b362a075-16e7-423f-b63f-e1e9f02844a9)  

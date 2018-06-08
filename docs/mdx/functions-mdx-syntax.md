@@ -1,32 +1,31 @@
 ---
 title: Fonctions (syntaxe MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-dev_langs: kbMDX
+dev_langs:
+- kbMDX
 helpviewer_keywords:
 - MDX [Analysis Services], functions
 - Multidimensional Expressions [Analysis Services], functions
 - functions [MDX]
 ms.assetid: 74ca5e79-1f33-4795-9d68-98eff9c190c1
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 00259604fe891a21f6f52835b1844762a751f09a
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: cf28303c1ffedf36354fd0fb1489666ad68d519c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="functions-mdx-syntax"></a>Fonctions (syntaxe MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -34,11 +33,11 @@ ms.lasthandoff: 01/08/2018
   La syntaxe MDX (Multidimensional Expressions) comprend plusieurs catégories de fonctions intrinsèques permettant d'exécuter certaines opérations. Le tableau suivant dresse la liste des catégories de fonctions disponibles dans la syntaxe MDX.  
   
 > [!NOTE]  
->  Pour plus d’informations sur les différentes fonctions, consultez [référence des fonctions MDX &#40; MDX &#41; ](../mdx/mdx-function-reference-mdx.md).  
+>  Pour plus d’informations sur les différentes fonctions, consultez [référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md).  
   
-|Catégorie de fonction|Description|  
+|Catégorie de fonction| Description|  
 |-----------------------|-----------------|  
-|Fonctions Tableau|Fournissent des tableaux à utiliser dans des procédures stockées.<br /><br /> Pour plus d’informations, consultez [à l’aide de procédures stockées &#40; MDX &#41; ](../mdx/using-stored-procedures-mdx.md).|  
+|Fonctions Tableau|Fournissent des tableaux à utiliser dans des procédures stockées.<br /><br /> Pour plus d’informations, consultez [à l’aide de procédures stockées &#40;MDX&#41;](../mdx/using-stored-procedures-mdx.md).|  
 |Fonctions Dimension|Retournent une référence à une dimension d'une hiérarchie, d'un niveau ou d'un membre.<br /><br /> Pour plus d’informations, consultez [à l’aide de la Dimension, hiérarchie et fonctions de niveau](../mdx/using-dimension-hierarchy-and-level-functions.md).|  
 |Fonctions Hiérarchie|Retournent une référence à une hiérarchie d'une niveau ou d'un membre.<br /><br /> Pour plus d’informations, consultez [à l’aide de la Dimension, hiérarchie et fonctions de niveau](../mdx/using-dimension-hierarchy-and-level-functions.md).|  
 |Fonctions Niveau|Retournent une référence à un niveau à partir d'une expression de membre, de dimension, de hiérarchie ou de chaîne.<br /><br /> Pour plus d’informations, consultez [à l’aide de la Dimension, hiérarchie et fonctions de niveau](../mdx/using-dimension-hierarchy-and-level-functions.md).|  
@@ -53,6 +52,6 @@ ms.lasthandoff: 01/08/2018
  Les fonctions peuvent être utilisées ou incluses dans toute expression MDX. Elles peuvent également être imbriquées (intégrées dans une autre fonction).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments de syntaxe MDX &#40; MDX &#41;](../mdx/mdx-syntax-elements-mdx.md)  
+ [Éléments de syntaxe MDX &#40;MDX&#41;](../mdx/mdx-syntax-elements-mdx.md)  
   
   

@@ -1,41 +1,23 @@
 ---
-title: "Référence technique d’algorithme Microsoft Association | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- MINIMUM_ITEMSET_SIZE parameter
-- MAXIMUM_SUPPORT parameter
-- association algorithms [Analysis Services]
-- MINIMUM_SUPPORT parameter
-- OPTIMIZED_PREDICTION_COUNT parameter
-- associations [Analysis Services]
-- MAXIMUM_ITEMSET_COUNT parameter
-- MAXIMUM_ITEMSET_SIZE parameter
-- MINIMUM_PROBABILITY parameter
-ms.assetid: 50a22202-e936-4995-ae1d-4ff974002e88
-caps.latest.revision: 
-author: Minewiskan
+title: Référence technique d’algorithme Microsoft Association | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c8f6fca5071577e70d334e1b6184ed0ac7bb74ad
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d9cba8f282e1f355b7b4265298890eccb0a4d613
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-association-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme Microsoft Association
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'algorithme MAR ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Association Rules) est une implémentation simple de l'algorithme Apriori bien connu.  
+  L'algorithme MAR ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Association Rules) est une implémentation simple de l'algorithme Apriori bien connu.  
   
  Vous pouvez utiliser les algorithmes MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees) et MAR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Association Rules) pour analyser des associations, mais les règles identifiées par chaque algorithme peuvent différer. Dans un modèle d'arbres de décision, les divisions qui aboutissent à des règles spécifiques sont basées sur un gain d'informations, tandis que dans un modèle d'association, les règles sont entièrement basées sur la confiance. Par conséquent, dans un modèle d'association, une règle forte ou avec un niveau de confiance élevé n'est pas forcément intéressante car elle ne fournit pas de nouvelles informations.  
   
@@ -80,7 +62,7 @@ L'algorithme MAR ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Associatio
  L'algorithme MAR ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Association Rules) prend en charge plusieurs paramètres qui affectent le comportement, les performances et la précision du modèle d'exploration de données résultant.  
   
 ### <a name="setting-algorithm-parameters"></a>Définition des paramètres de l'algorithme  
- Vous pouvez modifier à tout moment les paramètres d'un modèle d'exploration de données à l'aide du Concepteur d'exploration de données dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Vous pouvez également modifier les paramètres par programmation à l’aide de la <xref:Microsoft.AnalysisServices.MiningModel.AlgorithmParameters%2A> collection dans AMO, ou en utilisant le [MiningModels élément &#40; ASSL &#41; ](../../analysis-services/scripting/collections/miningmodels-element-assl.md) dans XMLA. La table ci-dessous décrit chaque paramètre.  
+ Vous pouvez modifier à tout moment les paramètres d'un modèle d'exploration de données à l'aide du Concepteur d'exploration de données dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Vous pouvez également modifier les paramètres par programmation à l’aide de la <xref:Microsoft.AnalysisServices.MiningModel.AlgorithmParameters%2A> collection dans AMO, ou à l’aide de la [MiningModels élément &#40;ASSL&#41; ](../../analysis-services/scripting/collections/miningmodels-element-assl.md) dans XMLA. La table ci-dessous décrit chaque paramètre.  
   
 > [!NOTE]  
 >  Vous ne pouvez pas modifier les paramètres dans un modèle existant à l’aide d’une instruction DMX ; vous devez spécifier les paramètres dans DMX CREATE MODEL ou ALTER STRUCTURE… ADD MODEL quand vous créez le modèle.  
@@ -171,6 +153,6 @@ L'algorithme MAR ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Associatio
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme Microsoft Association](../../analysis-services/data-mining/microsoft-association-algorithm.md)   
  [Exemples de requêtes de modèle association](../../analysis-services/data-mining/association-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles d’Association &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-association-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles d’Association & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-association-models-analysis-services-data-mining.md)  
   
   

@@ -1,34 +1,33 @@
 ---
 title: Objet SQL Server:Broker Statistics | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:Broker Statistics
 - Broker Statistics object
 ms.assetid: e9e36f01-93f6-4e6e-90c6-c7f3fd121737
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4dfb78d1b381649353ef872ed22e0bb4725d65cc
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a3d221c9f2d3b7e9e1c91d9b11d21afc537856c4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-broker-statistics-object"></a>Objet SQL Server:Broker Statistics
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet de performance SQLServer:Broker Statistics contient des compteurs de performances qui rendent compte d’informations générales sur [!INCLUDE[ssSB](../../includes/sssb-md.md)] pour l’instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Le tableau ci-dessous répertorie les compteurs que cet objet contient.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet de performance SQLServer : Statistiques de Service Broker contient des compteurs de performance qui rendent compte d'informations générales sur [!INCLUDE[ssSB](../../includes/sssb-md.md)] pour l'instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Le tableau ci-dessous répertorie les compteurs que cet objet contient.  
   
 |Compteurs statistiques de Service Broker de SQL Server|Description|  
 |-------------------------------------------|-----------------|  

@@ -1,27 +1,24 @@
 ---
-title: "Mettre à niveau Data Quality Services | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau Data Quality Services | Microsoft Docs
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f396666b-7754-4efc-9507-0fd114cc32d5
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: d18fdc2c65408898ed5faacc255e74b7a6261d57
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7b48c28d2e144dd681a712b405912198f84e94c1
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770715"
 ---
 # <a name="upgrade-data-quality-services"></a>Mettre à niveau Data Quality Services
 

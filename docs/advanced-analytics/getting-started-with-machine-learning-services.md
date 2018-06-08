@@ -1,25 +1,17 @@
 ---
 title: Prise en main d’apprentissage dans SQL Server | Documents Microsoft
-ms.custom: ''
-ms.date: 12/20/2017
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.service: ''
-ms.component: ''
-ms.reviewer: ''
-ms.suite: sql
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 3a2301d67e4e17b553dfbc8584b308d23c047040
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 94f95b1a2ddaee32896d3a370338e53aded3ab99
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="getting-started-with-machine-learning-in-sql-server"></a>Bien démarrer avec Machine Learning dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

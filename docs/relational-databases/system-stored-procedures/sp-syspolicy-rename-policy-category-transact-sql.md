@@ -1,16 +1,14 @@
 ---
-title: sp_syspolicy_rename_policy_category (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_syspolicy_rename_policy_category (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_syspolicy_rename_policy_category_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_syspolicy_rename_policy_category
 ms.assetid: 8a9c4a3a-91e8-435e-b721-e0293c92be3e
-caps.latest.revision: 
+caps.latest.revision: 7
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 53a9859c13f198d25bfd392ca3fa40e7a6159ddc
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: c65326dd66c2c1efdcb8c4aaa989522b33acda21
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsyspolicyrenamepolicycategory-transact-sql"></a>sp_syspolicy_rename_policy_category (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +47,7 @@ sp_syspolicy_rename_policy_category { [ @name = ] 'name' | [ @policy_category_id
  [  **@name =** ] **'***nom***'**  
  Nom de la catégorie de stratégie que vous voulez renommer. *nom* est **sysname**et doit être spécifié si *policy_category_id* a la valeur NULL.  
   
- [ **@policy_category_id=** ] *policy_category_id*  
+ [  **@policy_category_id=** ] *policy_category_id*  
  Identificateur de la catégorie de stratégie que vous voulez renommer. *policy_category_id* est **int**et doit être spécifié si *nom* est NULL.  
   
  [  **@new_name=** ] **'***nouveau_nom***'**  
@@ -81,7 +78,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Gestion basée sur la stratégie stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/policy-based-management-stored-procedures-transact-sql.md)   
+ [Procédures stockées de gestion basée sur la stratégie &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/policy-based-management-stored-procedures-transact-sql.md)   
  [sp_syspolicy_add_policy_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-syspolicy-add-policy-category-transact-sql.md)   
  [sp_syspolicy_delete_policy_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-syspolicy-delete-policy-category-transact-sql.md)   
  [sp_syspolicy_update_policy_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-syspolicy-update-policy-category-transact-sql.md)  

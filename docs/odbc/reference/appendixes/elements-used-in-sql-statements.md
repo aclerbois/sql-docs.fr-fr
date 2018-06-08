@@ -1,31 +1,28 @@
 ---
-title: "Éléments utilisés dans les instructions SQL | Documents Microsoft"
-ms.custom: 
+title: Éléments utilisés dans les instructions SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], elements supported
 - minimum SQL syntax supported [ODBC]
 - ODBC drivers [ODBC], minimum SQL syntax supported
 ms.assetid: 85777525-1555-4731-8309-63a464c6b43a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f619ebbbc3bb7c0ebbc90025a65c7f0530e3e4e3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 77b7fdcfbc91e63451615b20c7eedf2748f687c8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="elements-used-in-sql-statements"></a>Éléments utilisés dans les instructions SQL
 Les éléments suivants sont utilisés dans les instructions SQL répertoriées précédemment.  
@@ -37,7 +34,7 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *booléen-facteur* :: = [NOT] *primaire booléen*  
   
- *principal de la valeur booléenne* :: = comparaison*-prédicat* &#124; ( *condition de recherche* )  
+ *principal de la valeur booléenne* :: = comparaison *-prédicat* &#124; ( *condition de recherche* )  
   
  *valeur booléenne à long terme* :: = *facteur de valeur booléenne* [AND *à long terme boolean*]  
   
@@ -51,27 +48,27 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *prédicat de comparaison* :: = *expression* expression de l’opérateur de comparaison  
   
- *type de données* :: = *type de chaîne de caractères* (*type de chaîne de caractères* est n’importe quel type de données pour laquelle la colonne « « DATA_TYPE » » dans le jeu de résultats retournée par SQLGetTypeInfo est SQL_CHAR ou SQL_VARCHAR.)  
+ *type de données* :: = *type de chaîne de caractères* (*type de chaîne de caractères* est n’importe quel type de données pour laquelle la colonne « « DATA_TYPE » » dans le jeu de résultats retournée par SQLGetTypeInfo est soit SQL_CHAR ou SQL_VARCHAR.)  
   
  *chiffre* :: = 0 &#124; 1 &#124; 2 &#124; 3 &#124; 4 &#124; 5 &#124; 6 &#124; 7 &#124; 8 &#124; 9  
   
  *paramètre dynamique* :: = ?  
   
- *expression* :: = terme &#124; expression {+ &#124; –} terme  
+ *expression* :: = terme &#124; expression {+&#124;–} terme  
   
- *facteur* :: = [*+*&#124; *–*]*principal*  
+ *facteur* :: = [*+*&#124;*–*]*principal*  
   
  *valeur à insérer* :: =  
   
  *paramètre dynamique*  
   
- &#124; *littéral*  
+ &#124;*littéral*  
   
- &#124; VALEUR NULL  
+ &AMP;#124;VALEUR NULL  
   
- &#124; UTILISATEUR  
+ &AMP;#124;UTILISATEUR  
   
- *lettre* :: = *minuscule scénarios lettres &#124; supérieur-lettre*  
+ *lettre* :: = *minuscule scénarios lettres &#124; -supérieur-lettre*  
   
  *littéral* :: = *littéral de chaîne de caractères*  
   
@@ -81,11 +78,11 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *principal* :: = *-nom de la colonne*  
   
- &#124; *-paramètre dynamique*  
+ &#124;*-paramètre dynamique*  
   
- &#124; *littéral*  
+ &#124;*littéral*  
   
- &#124; ( *expression* )  
+ &#124;( *expression* )  
   
  *condition de recherche* :: = *à long terme boolean* [ou *condition de recherche*]  
   
@@ -93,7 +90,7 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *Sélectionnez-sous-liste* :: = *expression*  
   
- *spécification de tri* :: = {*entier non signé &#124; nom de la colonne*} [*ASC &#124; DESC*]  
+ *spécification de tri* :: = {*entier non signé &#124; -nom de la colonne*} [*ASC &#124; DESC*]  
   
  *identificateur de la table* :: = *nom défini par l’utilisateur*  
   
@@ -103,10 +100,10 @@ Les éléments suivants sont utilisés dans les instructions SQL répertoriées 
   
  *liste de références de table* :: = *référence de table* [,*référence de table*]...  
   
- *terme* :: = *facteur* &#124; *terme* {\*&#124; */* } *facteur*  
+ *terme* :: = *facteur* &#124; *terme* {\*&#124;*/*} *facteur*  
   
  *entier non signé* :: = {*chiffre*}  
   
- *lettre de cas supérieur* :: = *A &#124; B &#124; C &#124; D &#124; E &#124; F &#124; G &#124; M &#124; &#124; J &#124; K &#124; L &#124; M &#124; N &#124; O &#124; P &#124; Q &#124; R &#124; S &#124; T &#124; U &#124; V &#124; W &#124; X &#124; O &#124; Z*  
+ *lettre de cas supérieur* :: = *A &#124; B &#124; C &#124; D &#124; E &#124; F &#124; G &#124; H &#124; I &#124; J &#124; K &#124; L &#124; M &#124; N &#124; O &#124; P &#124;Q &#124; R &#124; S &#124; T &#124; U &#124; V &#124; W &#124; X &#124; Y &#124; Z*  
   
  *nom défini par l’utilisateur* :: = *lettre*[*chiffre* &#124; *lettre* &#124; *_*]...

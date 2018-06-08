@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_num_fields | Microsoft Docs
+title: sqlsrv_num_fields | Documents Microsoft
 ms.custom: ''
 ms.date: 03/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_num_fields
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - sqlsrv_num_fields
 - API Reference, sqlsrv_num_fields
 ms.assetid: 03ca1860-01ed-408c-862a-57a7355de4bf
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 80028fcf1b4a1c3d947bef49c2a4edc617f9d2d1
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 68a9ce3cc0bb156ac4969bec9714ee779ca5611d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvnumfields"></a>sqlsrv_num_fields
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -51,7 +48,7 @@ Valeur entière qui représente le nombre de champs dans le jeu de résultats ac
 ## <a name="example"></a>Exemple  
 L’exemple suivant exécute une requête pour récupérer tous les champs pour les trois lignes du haut de la *HumanResources.Department* table de base de données AdventureWorks. La fonction **sqlsrv_num_fields** détermine le nombre de champs du jeu de résultats. Ainsi, les données sont affichées en itérant au sein des champs dans chaque ligne retournée.  
   
-L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

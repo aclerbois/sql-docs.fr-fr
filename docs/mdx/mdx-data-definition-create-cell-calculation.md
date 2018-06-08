@@ -1,15 +1,14 @@
 ---
 title: Instruction CREATE CELL CALCULATION (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CELL CALCULATION
@@ -19,22 +18,22 @@ f1_keywords:
 - CREATE_CELL_CALCULATION
 - CREATE CELL
 - CREATE CELL CALCULATION
-dev_langs: kbMDX
+dev_langs:
+- kbMDX
 helpviewer_keywords:
 - calculations [Analysis Services], creating
 - CREATE CELL CALCULATION statement
 - cubes [Analysis Services], calculations
 ms.assetid: 01ced1b3-ada1-4b55-b350-e4255c3cc679
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 07f8925db3b1a427129c37e589f37d8b028aae41
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ca01b454906ddb5c51a6cd96e8c49190bfda9998
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mdx-data-definition---create-cell-calculation"></a>Définition de données MDX - CREATE CELL CALCULATION
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -88,7 +87,7 @@ CREATE CELL CALCULATION CURRENTCUBE | Cube_Name.Calculation_Name
  *Scalar_Expression*  
  Expression scalaire MDX valide.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  En utilisant des cellules calculées, l'application cliente peut spécifier une valeur de cumul pour un jeu de cellules particulier, et non pas pour la totalité d'un jeu de cellules comme c'est le cas dans une formule de cumul personnalisée ou dans un membre calculé. Par exemple, il est possible de spécifier que toute cellule d'un jeu défini par `{[Canada],[Time].[2000]}` peut contenir une valeur définie par une formule. Toutes les autres cellules qui ne sont pas contenues dans ce jeu sont calculées normalement.  
   
 > [!NOTE]  
@@ -96,11 +95,11 @@ CREATE CELL CALCULATION CURRENTCUBE | Cube_Name.Calculation_Name
   
 ## <a name="see-also"></a>Voir aussi  
  [Création de cellules calculées au niveau de Session](../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-session-scoped-calculated-cells.md)   
- [Création de calculs de cellules d’étendue de requête &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-query-scoped-cell-calculations.md)   
- [Création de calculs de cellules dans MDX &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-build-cell-calculations.md)   
- [À l’aide des propriétés de cellule &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-using-cell-properties.md)   
- [Contenu de FORMAT_STRING &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents.md)   
- [Contenu de FORE_COLOR et BACK_COLOR (contenu) &#40; MDX &#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-fore-color-and-back-color-contents.md)   
- [Instructions MDX de définition de données &#40; MDX &#41;](../mdx/mdx-data-definition-statements-mdx.md)  
+ [Création de calculs de cellules d’étendue de requête & #40 ; MDX & #41 ;](../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-query-scoped-cell-calculations.md)   
+ [Création de calculs de cellules dans la syntaxe MDX &#40;MDX&#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-calculations-build-cell-calculations.md)   
+ [À l’aide des propriétés de cellule & #40 ; MDX & #41 ;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-using-cell-properties.md)   
+ [Contenu de FORMAT_STRING & #40 ; MDX & #41 ;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-format-string-contents.md)   
+ [Contenu de FORE_COLOR et Back_color &#40;MDX&#41;](../analysis-services/multidimensional-models/mdx/mdx-cell-properties-fore-color-and-back-color-contents.md)   
+ [Instructions MDX de définition de données &#40;MDX&#41;](../mdx/mdx-data-definition-statements-mdx.md)  
   
   

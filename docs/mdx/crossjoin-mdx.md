@@ -1,30 +1,20 @@
 ---
 title: Crossjoin (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: CROSSJOIN
-dev_langs: kbMDX
-helpviewer_keywords: Crossjoin function
-ms.assetid: 503b8376-d244-4855-8f44-a749764162e4
-caps.latest.revision: "33"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 24eb58744008984fca4dab647b12226769f4ab81
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 7a3eb0bc9faadafbec91d327d4c0a4bd79882361
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577741"
 ---
 # <a name="crossjoin-mdx"></a>Crossjoin (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -49,15 +39,15 @@ Set_Expression1 * Set_Expression2 [* ...n]
  *Set_Expression2*  
  Une expression MDX (Multidimensional Expressions) valide qui retourne un jeu.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **Crossjoin** fonction retourne le produit croisé de deux ou plusieurs jeux spécifiés. L'ordre des tuples dans le jeu résultant dépend de l'ordre des jeux à joindre et de l'ordre de leurs membres. Par exemple, si le premier jeu est composé de {x1, x2,..., x*n*}, et le deuxième jeu est composé de {y1, y2,..., y*n*}, le produit croisé de ces jeux est :  
   
- {(x1, y1), (x1, y2),...,(x1, y*n*), (x2, y1), (x2, y2),...,  
+ {(x1, y1), (x1, y2),..., (x1, y*n*), (x2, y1), (x2, y2),...,  
   
  (x2, y*n*),..., (x*n*, y1), (x*n*, y2),..., (xn, y*n*)}  
   
 > [!IMPORTANT]  
->  Si les jeux dans la jointure croisée se composent de tuples issus de différentes hiérarchies d'attribut au sein de la même dimension, cette fonction retourne uniquement les tuples réellement existants. Pour plus d’informations, consultez [Concepts clés dans MDX &#40; Analysis Services &#41; ](../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md).  
+>  Si les jeux dans la jointure croisée se composent de tuples issus de différentes hiérarchies d'attribut au sein de la même dimension, cette fonction retourne uniquement les tuples réellement existants. Pour plus d’informations, consultez [Concepts clés dans MDX &#40;Analysis Services&#41;](../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md).  
   
 ## <a name="examples"></a>Exemples  
  La requête suivante affiche des exemples simples de l'utilisation de la fonction Crossjoin sur les axes de colonnes et de lignes d'une requête :  
@@ -139,6 +129,6 @@ WHERE (Measures.[Internet Sales Amount],
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

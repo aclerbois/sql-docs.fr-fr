@@ -1,28 +1,25 @@
 ---
-title: sys.pdw_health_component_groups (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.pdw_health_component_groups (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 5ba27432-7a29-4420-b73d-def621c0b3ac
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+author: ronortloff
+ms.author: rortloff
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 05f20996cb2341dd83789ef2ff81f921bc58674a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 369a2934a31bbc70b9c417966b17cd6dc25425e3
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="syspdwhealthcomponentgroups-transact-sql"></a>sys.pdw_health_component_groups (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-xxxx-pdw-md.md)]

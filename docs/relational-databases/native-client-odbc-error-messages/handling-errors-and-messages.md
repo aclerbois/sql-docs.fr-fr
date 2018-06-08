@@ -1,15 +1,14 @@
 ---
 title: Gestion des erreurs et Messages | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-error-messages
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC error handling, about error handling
@@ -21,16 +20,17 @@ helpviewer_keywords:
 - errors [ODBC], about error handling
 - messages [ODBC]
 ms.assetid: 74ea9630-e482-4a46-bb45-f5234f079b48
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ace5aa790162d91203019d8c7d5cae5375cc281
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 640e21cdf83375d603fca4d40d1f0fb6fd7e01ce
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708207"
 ---
 # <a name="handling-errors-and-messages"></a>Gestion des erreurs et des messages
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -58,11 +58,11 @@ ms.lasthandoff: 01/25/2018
   
 -   [Numéros des erreurs natives](../../relational-databases/native-client-odbc-error-messages/native-error-numbers.md)  
   
--   [SQLSTATE &#40; les Codes d’erreur ODBC &#41;](../../relational-databases/native-client-odbc-error-messages/sqlstate-odbc-error-codes.md)  
+-   [SQLSTATE &#40;Codes d’erreur ODBC&#41;](../../relational-databases/native-client-odbc-error-messages/sqlstate-odbc-error-codes.md)  
   
 -   [Messages d’erreur](../../relational-databases/native-client-odbc-error-messages/error-messages.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
+ [SQL Server Native Client &#40;ODBC&#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
   
   

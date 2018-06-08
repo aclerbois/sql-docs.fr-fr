@@ -1,28 +1,24 @@
 ---
-title: "Mise à niveau d’instances de réplica d’un groupe de disponibilité Always On | Microsoft Docs"
-ms.custom: 
+title: Mise à niveau d’instances de réplica d’un groupe de disponibilité Always On | Microsoft Docs
+ms.custom: ''
 ms.date: 01/10/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f670af56-dbcc-4309-9119-f919dcad8a65
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 14
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: cd24872a05d4d8c210cc3b54e70b22cdb1ec799c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: f269692489e852e60cb30172738d8ff89ec95f53
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770072"
 ---
 # <a name="upgrading-always-on-availability-group-replica-instances"></a>Mise à niveau d’instances de réplica d’un groupe de disponibilité Always On
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -32,7 +28,7 @@ Pendant la mise à niveau d’une instance [!INCLUDE[ssNoVersion](../../../inclu
 >[!NOTE]  
 >Cet article ne concerne que la mise à niveau de SQL Server lui-même. Il ne couvre pas la mise à niveau du système d’exploitation contenant le cluster de basculement Windows Server (WSFC). La mise à niveau du système d’exploitation Windows qui héberge le cluster de basculement n’est pas prise en charge psr les systèmes d’exploitation antérieurs à Windows Server 2012 R2. Pour mettre à niveau un nœud de cluster s’exécutant sur Windows Server 2012 R2, consultez la rubrique [Cluster Operating System Rolling Upgrade](http://docs.microsoft.com/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade) (Mise à niveau propagée du système d’exploitation de cluster).  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
 Avant de commencer, passez en revue les informations importantes suivantes :  
   
 - [Mises à niveau des éditions et versions prises en charge](../../../database-engine/install-windows/supported-version-and-edition-upgrades.md) : Vérifiez que votre version de SQL Server et votre version de système d’exploitation Windows sont compatibles avec la mise à niveau vers SQL Server 2016. Par exemple, vous ne pouvez pas mettre à niveau directement une instance SQL Server 2005 vers [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  

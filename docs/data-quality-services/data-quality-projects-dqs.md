@@ -2,29 +2,30 @@
 title: Projets de qualité des données (DQS) | Microsoft Docs
 ms.custom: ''
 ms.date: 10/01/2012
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a43fc9c0-19b6-414a-8661-4c7c55e0c03e
-caps.latest.revision: ''
+caps.latest.revision: 16
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 97ee117319697d817f760a25332728648fa565f9
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 0464fb86b6ac1da08d8421026859539beecd7b91
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-quality-projects-dqs"></a>Projets de qualité des données (DQS)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Un projet de qualité des données dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS) est un moyen d'utiliser une base de connaissances pour améliorer la qualité des données sources en effectuant des activités de *nettoyage des données* et de *correspondance de données* , puis en exportant les données résultantes dans une base de données SQL Server ou un fichier .csv. Vous pouvez créer un projet de qualité des données comme un projet de nettoyage ou un projet de correspondance pour effectuer les activités respectives. Les projets de nettoyage et de correspondance peuvent être exécutés avec la même base de connaissances, car la connaissance pour le nettoyage et la correspondance des données peut être générée dans la même base de connaissances.  
   
  Un projet de qualité des données présente les avantages suivants :  

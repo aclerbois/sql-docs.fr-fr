@@ -1,31 +1,23 @@
 ---
-title: "Déploiement de solutions de modèle tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 02/13/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: aff96558-e5e5-4b95-8ddf-ee0709c842fb
-caps.latest.revision: 
-author: Minewiskan
+title: Déploiement de solutions de modèle tabulaire | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 276ff67a2c3dac1e557d782616bf9096349d3246
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 47e051027f4596f6638f6c13551c35becfa8b54d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-model-solution-deployment"></a>Déploiement de solutions de modèle tabulaire 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Après la création d'un projet de modèle tabulaire, vous devez déployer ce dernier pour que les utilisateurs puissent parcourir le modèle à l'aide d'une application cliente de création de rapports. Cet article décrit les différentes propriétés et méthodes que vous pouvez utiliser lors du déploiement des solutions de modèle tabulaire dans votre environnement.  
+  Après la création d'un projet de modèle tabulaire, vous devez déployer ce dernier pour que les utilisateurs puissent parcourir le modèle à l'aide d'une application cliente de création de rapports. Cet article décrit les différentes propriétés et méthodes que vous pouvez utiliser lors du déploiement des solutions de modèle tabulaire dans votre environnement.  
   
 ##  <a name="bkmk_benefits"></a> Avantages  
  Le déploiement d'un modèle tabulaire crée une base de données model dans un environnement de test, de mise en lots ou de production. Les utilisateurs se connectent ensuite au modèle déployé par le biais d'un fichier de connexion .bism dans Sharepoint ou en utilisant une connexion de données directement à partir d'applications clientes de création de rapports telles que Microsoft Excel, [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)]ou une application personnalisée. La base de données model de l’espace de travail, créée quand vous créez un projet de modèle tabulaire dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]et utilisée pour créer le modèle, reste sur l’instance du serveur de l’espace de travail et vous permet d’apporter des modifications au projet de modèle, puis d’effectuer un nouveau déploiement dans l’environnement de test, de préproduction ou de production quand c’est nécessaire.  
@@ -54,7 +46,7 @@ Après la création d'un projet de modèle tabulaire, vous devez déployer ce de
 |--------------|---------------------|-----------------|  
 |**Serveur**<br /><br /> Définie à la création du projet.|**localhost**|Cette propriété, définie à la création du projet, spécifie le nom de l'instance Analysis Services sur laquelle le modèle sera déployé. Par défaut, le modèle sera déployé dans l'instance par défaut d'Analysis Services sur l'ordinateur local. Toutefois, vous pouvez modifier ce paramètre pour spécifier une instance nommée sur l'ordinateur local ou n'importe quelle autre instance sur un ordinateur distant sur lequel vous avez l'autorisation de créer des objets Analysis Services.|  
 |**Édition**|La même édition de l'instance dans laquelle le serveur de l'espace de travail se trouve.|Cette propriété spécifie l'édition du serveur Analysis Services sur lequel le modèle sera déployé. L'édition du serveur définit différentes fonctionnalités qui peuvent être incorporées dans le projet. Par défaut, l'édition sera celle du serveur Analysis Services local. Si vous spécifiez un serveur Analysis Services différent, par exemple, un serveur Analysis Services de production, veillez à spécifier l'édition de ce serveur Analysis Services.|  
-|**Base de données**|**\<projectname>**|Cette propriété spécifie le nom de la base de données Analysis Services dans laquelle les objets de modèle seront instanciés après le déploiement. Ce nom sera également spécifié dans une connexion de données au client de création de rapports ou un fichier de connexion de données .bism.<br /><br /> Vous pouvez modifier ce nom à tout moment lorsque vous créez le modèle. Si vous modifiez le nom après avoir déployé le modèle, les modifications que vous avez apportées après le déploiement ne vont pas affecter le modèle que vous avez déployé précédemment. Par exemple, si vous ouvrez une solution nommée **TestDB** et déployez votre solution avec le nom de base de données model par défaut « Model », puis que vous modifiez la solution et renommez la base de données model **Sales**, l’instance d’Analysis Services sur laquelle les solutions ont été déployées affichera des bases de données différentes, l’une nommée « Model » et l’autre « Sales ».|  
+|**Base de données**|**\<nom du projet >**|Cette propriété spécifie le nom de la base de données Analysis Services dans laquelle les objets de modèle seront instanciés après le déploiement. Ce nom sera également spécifié dans une connexion de données au client de création de rapports ou un fichier de connexion de données .bism.<br /><br /> Vous pouvez modifier ce nom à tout moment lorsque vous créez le modèle. Si vous modifiez le nom après avoir déployé le modèle, les modifications que vous avez apportées après le déploiement ne vont pas affecter le modèle que vous avez déployé précédemment. Par exemple, si vous ouvrez une solution nommée **TestDB** et déployez votre solution avec le nom de base de données model par défaut « Model », puis que vous modifiez la solution et renommez la base de données model **Sales**, l’instance d’Analysis Services sur laquelle les solutions ont été déployées affichera des bases de données différentes, l’une nommée « Model » et l’autre « Sales ».|  
 |**Nom du cube**|**Modèle**|Cette propriété indique le nom du cube tel qu'il s'affiche dans les outils clients (notamment Excel) et les objets AMO (Analysis Management Objects).|  
   
 ### <a name="directquery-options-properties"></a>Propriétés options DirectQuery  
@@ -70,7 +62,7 @@ Après la création d'un projet de modèle tabulaire, vous devez déployer ce de
 |Méthode|Description|Lien|  
 |------------|-----------------|----------|  
 |**Commande Déployer dans les outils de données SQL Server**|La commande Déployer fournit une méthode simple et intuitive pour déployer un projet de modèle tabulaire depuis l'environnement de création de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] .<br /><br /> **Attention** cette méthode ne doit pas être utilisée pour déployer sur des serveurs de production. À l’aide de cette méthode peut remplacer certaines propriétés dans un déjà déployé existant de modèle ; par exemple, lors de l’utilisation de scripts ou SSMS pour modifier les propriétés.|[Déployer à partir de SQL Server Data Tools](../../analysis-services/tabular-models/deploy-from-sql-server-data-tools-ssas-tabular.md)|  
-|**Automatisation AMO (Analysis Management Objects)**|AMO fournit une interface de programmation à l'ensemble de commandes complet pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], y compris les commandes qui peuvent être utilisées pour le déploiement de solutions. En tant qu'approche au déploiement de solutions, l'automatisation AMO constitue la méthode la plus souple, mais elle nécessite également un effort de programmation.  Le principal avantage de l'utilisation d'AMO est que vous pouvez utiliser l'Agent SQL Server avec votre application AMO pour exécuter le déploiement selon une planification prédéfinie.|[Développement avec Analysis Management Objects &#40; AMO &#41;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)|  
+|**Automatisation AMO (Analysis Management Objects)**|AMO fournit une interface de programmation à l'ensemble de commandes complet pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], y compris les commandes qui peuvent être utilisées pour le déploiement de solutions. En tant qu'approche au déploiement de solutions, l'automatisation AMO constitue la méthode la plus souple, mais elle nécessite également un effort de programmation.  Le principal avantage de l'utilisation d'AMO est que vous pouvez utiliser l'Agent SQL Server avec votre application AMO pour exécuter le déploiement selon une planification prédéfinie.|[Développement avec Analysis Management Objects & #40 ; AMO & #41 ;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)|  
 |**XMLA**|Utilisez [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] pour générer un script XMLA des métadonnées d'une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] existante, puis exécutez le script sur un autre serveur pour recréer la base de données initiale. Les scripts XMLA sont aisément formés dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] en définissant le processus de déploiement, puis en le codifiant et en l'enregistrant dans un script XMLA. Une fois que le script XMLA est dans un fichier sauvegardé, vous pouvez aisément l'exécuter le script conformément au calendrier ou l'incorporer dans une application qui se connecte directement à une instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].<br /><br /> Vous pouvez également exécuter des scripts XMLA sur une base prédéfinie à l'aide de l'Agent SQL Server, mais la flexibilité n'est pas aussi grande que celle offerte par AMO. AMO fournit un large éventail de fonctionnalités en hébergeant tout le spectre des commandes administratives.|[Déployer des Solutions de modèle à l’aide de XMLA](../../analysis-services/multidimensional-models/deploy-model-solutions-using-xmla.md)|  
 |**Assistant Déploiement**|Utilisez l'Assistant Déploiement pour utiliser les fichiers de sortie XMLA générés par un projet [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour déployer les métadonnées du projet sur un serveur de destination. Avec l'Assistant Déploiement, vous pouvez effectuer directement le déploiement à partir du fichier [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , tel que créé dans le répertoire de sortie par la génération du projet.<br /><br /> Le principal avantage de l'utilisation de l'assistant Déploiement [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est son aspect pratique. Tout comme vous pouvez enregistrer un script XMLA en vue d'une utilisation ultérieure dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], vous pouvez enregistrer les scripts de l'assistant Déploiement. L'Assistant Déploiement peut être exécuté de façon interactive et à partir de l'invite de commandes via l'Utilitaire de déploiement.|[Déployer des Solutions de modèle à l’aide de l’Assistant de déploiement](../../analysis-services/multidimensional-models/deploy-model-solutions-using-the-deployment-wizard.md)|  
 |**Utilitaire de déploiement**|L'utilitaire de déploiement permet de démarrer le moteur de déploiement Analysis Services à partir d'une invite de commandes.|[Déployer des Solutions de modèle avec l’utilitaire de déploiement](../../analysis-services/multidimensional-models/deploy-model-solutions-with-the-deployment-utility.md)|  

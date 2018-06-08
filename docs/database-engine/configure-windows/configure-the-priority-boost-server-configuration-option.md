@@ -1,28 +1,26 @@
 ---
-title: "Configurer l’option de configuration de serveur priority boost | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur priority boost | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: priority boost option
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- priority boost option
 ms.assetid: 765f1e83-dd52-44fb-b0c8-1078f213607b
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8afad4802fa98a3d7a7b4a9dd583e68d93780970
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 11e36e7d1a4bdb1492bb978d0334604e941f2458
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-priority-boost-server-configuration-option"></a>Configurer l'option de configuration de serveur priority boost
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

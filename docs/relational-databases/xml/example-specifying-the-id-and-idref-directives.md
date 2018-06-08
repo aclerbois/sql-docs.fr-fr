@@ -1,35 +1,32 @@
 ---
-title: "Exemple : spécification des directives ID et IDREF | Microsoft Docs"
-ms.custom: 
+title: 'Exemple : spécification des directives ID et IDREF | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - IDREF directive
 - ID directive
 ms.assetid: 7ff1ea73-71ca-4786-bd42-564f1b5de2d9
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9998ad6318f303861473e5e510c782b16fbb42ff
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 50ab5db1c6c514a97546fafacc25648c1e9f8b30
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="example-specifying-the-id-and-idref-directives"></a>Exemple : spécification des directives ID et IDREF
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cet exemple est presque identique à l'exemple [Spécification de la directive ELEMENTXSINIL](../../relational-databases/xml/example-specifying-the-elementxsinil-directive.md) . La seule différence est que la requête spécifie les directives **ID** et **IDREF** . Ces directives remplacent les types de l’attribut **SalesPersonID** des éléments <`OrderHeader`> et <`OrderDetail`>. Il en résulte des liens à l'intérieur du document. Vous avez besoin du schéma pour visualiser les types remplacés. Par conséquent, la requête spécifie l'option **XMLDATA** dans la clause FOR XML pour extraire le schéma.  
+  Cet exemple est presque identique à l'exemple [Spécification de la directive ELEMENTXSINIL](../../relational-databases/xml/example-specifying-the-elementxsinil-directive.md) . La seule différence est que la requête spécifie les directives **ID** et **IDREF** . Ces directives remplacent les types de l’attribut **SalesPersonID** des éléments <`OrderHeader`> et <`OrderDetail`>. Il en résulte des liens à l'intérieur du document. Vous avez besoin du schéma pour visualiser les types remplacés. Par conséquent, la requête spécifie l'option **XMLDATA** dans la clause FOR XML pour extraire le schéma.  
   
 ```  
 USE AdventureWorks2012;  

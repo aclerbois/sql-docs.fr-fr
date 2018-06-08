@@ -1,16 +1,12 @@
 ---
-title: sys.dm_repl_traninfo (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_repl_traninfo (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_repl_traninfo
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_repl_traninfo dynamic management view
 ms.assetid: 5abe2605-0506-46ec-82b5-6ec08428ba13
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 45fd6246b7a98f16c86a6f7e2c7052c70b2af039
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 20a15bd329da102b45b3f611a9cbe86651ba2b3d
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmrepltraninfo-transact-sql"></a>sys.dm_repl_traninfo (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,14 +43,14 @@ ms.lasthandoff: 02/03/2018
 |**begin_lsn**|**nvarchar(64)**|Numéro séquentiel dans le journal (NSE) de l'enregistrement du début pour la transaction.|  
 |**commit_lsn**|**nvarchar(64)**|Numéro de séquence de l'enregistrement du journal de validation pour la transaction.|  
 |**dbid**|**smallint**|ID de la base de données.|  
-|**rows**|**int**|ID de la commande répliquée à l'intérieur de la transaction.|  
+|**Lignes**|**int**|ID de la commande répliquée à l'intérieur de la transaction.|  
 |**xdesid**|**nvarchar(64)**|ID de transaction.|  
 |**artcache_table_address**|**varbinary(8)**|Adresse en mémoire de la dernière structure de table d'article mis en cache utilisée pour cette transaction.|  
 |**server**|**nvarchar(514)**|Nom du serveur.|  
 |**server_len_in_bytes**|**smallint**|Longueur des caractères, en octets, du nom du serveur.|  
 |**database**|**nvarchar(514)**|Nom de la base de données.|  
 |**db_len_in_bytes**|**smallint**|Longueur des caractères, en octets, du nom de la base de données.|  
-|**originator**|**nvarchar(514)**|Nom du serveur sur lequel la transaction a débuté.|  
+|**donneur d’ordre**|**nvarchar(514)**|Nom du serveur sur lequel la transaction a débuté.|  
 |**originator_len_in_bytes**|**smallint**|Longueur des caractères, en octets, du serveur sur lequel la transaction a débuté.|  
 |**orig_db**|**nvarchar(514)**|Nom de la base de données où la transaction a débuté.|  
 |**orig_db_len_in_bytes**|**smallint**|Longueur des caractères, en octets, de la base de données où la transaction a débuté.|  
@@ -83,7 +78,7 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Vues de gestion dynamique &#40; liées à la réplication Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)   
+ [Vues de gestion dynamique liées à la réplication &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)   
  [Vues de gestion dynamique liées à la capture des données modifiées &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/2a771d7d-693a-4f56-9227-02cd00e0e200)  
   
   

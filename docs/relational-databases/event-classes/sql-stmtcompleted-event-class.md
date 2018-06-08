@@ -1,34 +1,30 @@
 ---
-title: "SQL:StmtCompleted, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SQL:StmtCompleted, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL:StmtCompleted event class
 ms.assetid: a55f005d-e020-423c-8940-c24ea1b20104
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ea9c327fcaf3d29b9ab282f1e7b018f457e2737f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fd4e9173655226d455c710942d1471ace51672e5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlstmtcompleted-event-class"></a>SQL:StmtCompleted (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SQL:StmtCompleted indique qu'une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] a été exécutée.  
+  La classe d'événements SQL:StmtCompleted indique qu'une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] a été exécutée.  
   
 ## <a name="sqlstmtcompleted-event-class-data-columns"></a>Colonnes de la classe d'événements SQL:StmtCompleted  
   

@@ -1,31 +1,23 @@
 ---
-title: "Présentation de Power View pour les modèles multidimensionnels | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d0558cae-8209-4242-80c5-2c95981b88b9
-caps.latest.revision: 
-author: Minewiskan
+title: Présentation de Power View pour les modèles multidimensionnels | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 103d42ffa1f2f4bc823c8b95327347323f0ccf86
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 899569bffcb0e521d6bcb36e0172498fa0da340c
+ms.sourcegitcommit: b3bb41424249de198f22d9c6d40df4996f083aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="understanding-power-view-for-multidimensional-models"></a>Présentation de Power View pour les modèles multidimensionnels
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cet article décrit la fonctionnalité Power View pour les modèles multidimensionnels de SQL Server. Il fournit des informations importantes pour les administrateurs et les professionnels dans le secteur du décisionnel qui envisagent d’implémenter Power View pour les modèles multidimensionnels dans leur organisation.  
+  Cet article décrit la fonctionnalité Power View pour les modèles multidimensionnels de SQL Server. Il fournit des informations importantes pour les administrateurs et les professionnels dans le secteur du décisionnel qui envisagent d’implémenter Power View pour les modèles multidimensionnels dans leur organisation.  
   
  Les modèles multidimensionnels fournissent des solutions d'analyse, de stockage et de modélisation des données OLAP à la pointe de la technologie. Les modèles multidimensionnels SQL Server prennent en charge l’analyse, l’exploration et la visualisation des données ad hoc grâce à Microsoft Power View.  
   
@@ -101,7 +93,7 @@ Cet article décrit la fonctionnalité Power View pour les modèles multidimensi
  ![Hiérarchie ne pouvant faire l'objet d'une agrégation dans Power View](../../analysis-services/multidimensional-models/media/daxmd-nonaggrattrib.gif "Hiérarchie ne pouvant faire l'objet d'une agrégation dans Power View")  
   
 ### <a name="implicit-measures"></a>Mesures implicites  
- Les modèles tabulaires fournissent aux utilisateurs la possibilité de créer des mesures *implicites* , telles qu'un compte, une somme ou une moyenne sur des champs. Concernant les modèles multidimensionnels, étant donné que les données d'attribut de dimension sont stockées différemment, l'interrogation de mesures implicites peut durer un certain temps. De ce fait, les mesures implicites ne sont pas disponibles dans Power View.  
+ Les modèles tabulaires fournissent aux utilisateurs la possibilité de créer des mesures *implicites* , telles qu'un compte, une somme ou une moyenne sur des champs. Pour les modèles multidimensionnels, étant donné que les données d’attribut de dimension sont stockées différemment, interrogation de mesures implicites peut prendre un certain temps. De ce fait, les mesures implicites ne sont pas disponibles dans Power View.  
   
 ## <a name="dimensions-attributes-and-hierarchies"></a>Dimensions, attributs et hiérarchies  
  Les dimensions de cube sont exposées sous forme de tableaux dans les métadonnées tabulaires. Dans la liste de champs Power View, les attributs de dimension sont affichés en tant que colonnes dans les dossiers d'affichage.  Les attributs de dimension dont la propriété AttributeHierarchyEnabled est définie avec la valeur False, par exemple, l'attribut de date de naissance dans la dimension Customer, ou dont la propriété AttributeHierarchyVisible est définie avec la valeur False, n'apparaissent pas dans la liste de champs Power View. Les hiérarchies à plusieurs niveaux ou les hiérarchies d'utilisateurs, par exemple, Customer Geography dans la dimension Customer, sont exposées en tant que hiérarchies dans la liste de champs Power View. Les éléments UnknownMembers cachés d'un attribut de dimension, sont exposés dans les requêtes DAX et dans Power View.  

@@ -1,31 +1,29 @@
 ---
 title: Gestionnaire de connexions Azure Resource Manager | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - SQL13.DTS.DESIGNER.AFPARMCM.F1
 - SQL14.DTS.DESIGNER.AFPARMCM.F1
 ms.assetid: 8ce8024f-153f-4066-b607-0d36fefc79ed
-caps.latest.revision: 
+caps.latest.revision: 3
 author: Lingxi-Li
 ms.author: lingxl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b00b3556469d9f35e4edd7365b214a0b17b79e61
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: ff84bc71b527ad08f51e22097d6631aa8aa8d1cc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-resource-manager-connection-manager"></a>Gestionnaire de connexions Azure Resource Manager
 Le **gestionnaire de connexions Azure Resource Manager** permet à un package SSIS de gérer les ressources Azure à l’aide d’un [principal du service](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-create-service-principal-portal).

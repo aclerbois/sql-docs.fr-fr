@@ -1,17 +1,15 @@
 ---
-title: "Number, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Number, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Error::Number
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - number property [ADO]
 ms.assetid: f92323c5-dd11-4a63-a505-d9014a0f067f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f6a98f38098d936ea6c2eee03b28d969f1c0e506
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 592390f1ae5fd6e1e8087d7c33062e2b271af3eb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="number-property-ado"></a>Number, propriété (ADO)
 Indique le numéro qui identifie de façon unique un [erreur](../../../ado/reference/ado-api/error-object.md) objet.  

@@ -1,16 +1,15 @@
 ---
 title: sp_check_for_sync_trigger (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_check_for_sync_trigger
 ms.assetid: 54a1e2fd-c40a-43d4-ac64-baed28ae4637
-caps.latest.revision: 
+caps.latest.revision: 14
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 586498365ee695ee5dc92252af47ad7706e1adfb
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 5f389415adf06d6c7fce1862d42655bf4e96e2c5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spcheckforsynctrigger-transact-sql"></a>sp_check_for_sync_trigger (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +63,7 @@ sp_check_for_sync_trigger [ @tabid = ] 'tabid'
  Spécifie l'emplacement où la procédure stockée est exécutée. *fonpublisher* est **bits**, avec 0 comme valeur par défaut. Si la valeur est 0, l'exécution s'effectue sur l'Abonné et, si la valeur est 1, l'exécution s'effectue sur le serveur de publication.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- 0 indique que la procédure stockée n'est pas appelée dans le contexte d'un déclencheur de mise à jour immédiate. 1 indique qu’elle est appelée dans le contexte d’un déclencheur de mise à jour immédiate et le type de déclencheur renvoyé dans  *@trigger_op* .  
+ 0 indique que la procédure stockée n'est pas appelée dans le contexte d'un déclencheur de mise à jour immédiate. 1 indique qu’elle est appelée dans le contexte d’un déclencheur de mise à jour immédiate et le type de déclencheur renvoyé dans *@trigger_op*.  
   
 ## <a name="remarks"></a>Notes  
  **sp_check_for_sync_trigger** est utilisé dans la réplication de capture instantanée et la réplication transactionnelle.  
@@ -95,7 +93,7 @@ IF @retcode = 1
 RETURN  
 ```  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  **sp_check_for_sync_trigger** procédure stockée peut être exécutée par tout utilisateur disposant des autorisations SELECT dans le [sys.objects](../../relational-databases/system-catalog-views/sys-objects-transact-sql.md) vue système.  
   
 ## <a name="see-also"></a>Voir aussi  

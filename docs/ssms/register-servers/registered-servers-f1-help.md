@@ -1,36 +1,34 @@
 ---
-title: "Serveurs inscrits – Aide (F1) | Microsoft Docs"
-ms.custom: 
+title: Serveurs inscrits – Aide (F1) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-registration
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], Help
 - Registered Servers [SQL Server], help
 - SQL Server Management Studio Help [SQL Server], registered servers
 ms.assetid: 59f76b28-ba78-4a1a-b5d5-8b581f30114d
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fec25c98a971d3f38d4113042d50a25469e56777
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 00fe3c62180ada724cf202ae1dc2c3e6e9c6df8e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="registered-servers-f1-help"></a>Serveurs inscrits – Aide (F1)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
-Cette section contient l’aide, accessible via la touche F1, relative au composant Serveurs inscrits de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Elle décrit les différentes options.
+  Cette section contient l’aide, accessible via la touche F1, relative au composant Serveurs inscrits de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Elle décrit les différentes options.
   
  Pour en savoir plus sur les serveurs inscrits et obtenir des liens vers les options qu’ils offrent, accédez à la rubrique [Inscrire les serveurs](../../tools/sql-server-management-studio/register-servers.md) . 
  

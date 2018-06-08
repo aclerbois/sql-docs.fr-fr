@@ -1,28 +1,19 @@
 ---
-title: "Leçon 5 : Créer des relations | Documents Microsoft"
-ms.custom: 
-ms.date: 03/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: abac1a00-f827-4c3e-a473-6db5c8a3a66f
-caps.latest.revision: "29"
-author: Minewiskan
+title: 'Leçon 5 : Créer des relations | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 318b583cc92dcd70c75f0eb04be262a82ecf7d1d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 36993a468a6997ff8de40da542deac00b25b18b4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-4-create-relationships"></a>Leçon 4 : Créer des relations
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -31,7 +22,7 @@ Dans cette leçon, vous vérifiez les relations qui ont été créées automatiq
   
 Durée estimée pour effectuer cette leçon : **10 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables  
 Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit être suivi dans l'ordre. Avant d’effectuer les tâches de cette leçon, vous devez avoir terminé la leçon précédente : [leçon 3 : marquer en tant que Table de dates](../analysis-services/lesson-3-mark-as-date-table.md). 
   
 ## <a name="review-existing-relationships-and-add-new-relationships"></a>Examiner les relations existantes et ajouter de nouvelles relations  
@@ -56,7 +47,7 @@ Lorsque vous avez importé des données à l’aide de l’Assistant Importation
   
 3.  Utilisez le Concepteur de modèle dans la vue de diagramme ou la boîte de dialogue Gérer les relations, pour vérifier les relations suivantes ont été créées lorsque chacune des tables ont été importées à partir de la base de données AdventureWorksDW :  
   
-    |Actif|Table de charge de travail|Table de recherche associée|  
+    |Actif|Table|Table de recherche associée|  
     |----------|---------|------------------------|  
     |Oui|**DimCustomer [GeographyKey]**|**DimGeography [GeographyKey]**|  
     |Oui|**DimProduct [ProductSubcategoryKey]**|**DimProductSubcategory [ProductSubcategoryKey]**|  

@@ -1,31 +1,23 @@
 ---
-title: "Configurer la collecte de données d’utilisation pour (Power Pivot pour SharePoint | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 955ca6d6-9d5b-47a4-a87c-59bd23f1bf74
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer la collecte de données d’utilisation pour (Power Pivot pour SharePoint | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 60e8c6ab0537a8757d6a75b05e4788dc4a29768f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: bafa3d8b45dc2ad59314218f34959120b50e6bfe
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-usage-data-collection-for-power-pivot-for-sharepoint"></a>Configurer la collecte des données d’utilisation (PowerPivot pour SharePoint)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La collecte des données d'utilisation est une fonctionnalité SharePoint au niveau de la batterie de serveurs. [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise et étend ce système pour fournir des rapports dans le tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] qui détaillent le mode d’utilisation des données et services [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Selon la façon dont vous avez installé votre serveur SharePoint, la collecte des données d'utilisation peut être désactivée pour la batterie de serveurs. Un administrateur de batterie de serveurs doit activer la journalisation pour créer les données d’utilisation qui s’affichent dans le tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
+  La collecte des données d'utilisation est une fonctionnalité SharePoint au niveau de la batterie de serveurs. [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise et étend ce système pour fournir des rapports dans le tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] qui détaillent le mode d’utilisation des données et services [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Selon la façon dont vous avez installé votre serveur SharePoint, la collecte des données d'utilisation peut être désactivée pour la batterie de serveurs. Un administrateur de batterie de serveurs doit activer la journalisation pour créer les données d’utilisation qui s’affichent dans le tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
   
  Pour plus d’informations sur les données d’utilisation figurant dans le tableau de bord de gestion [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , consultez [Tableau de bord de gestion Power Pivot et données d’utilisation](../../analysis-services/power-pivot-sharepoint/power-pivot-management-dashboard-and-usage-data.md).  
   
@@ -188,7 +180,7 @@ La collecte des données d'utilisation est une fonctionnalité SharePoint au niv
   
 |Paramètre|Valeur par défaut|Type|Plage valide|  
 |-------------|-------------------|----------|-----------------|  
-|**Événements d’utilisation Analysis Services** (connexion, chargement, déchargement, requêtes)|\<enabled>|Booléen|Ces valeurs sont activées ou désactivées.|  
+|**Événements d’utilisation Analysis Services** (connexion, chargement, déchargement, requêtes)|\<activé >|Booléen|Ces valeurs sont activées ou désactivées.|  
 |**Query Reporting interval**|300 (en secondes)|Entier|Comprise entre 1 et n'importe quel entier positif. La valeur par défaut est 5 minutes.|  
 |**Usage data history**|365 (en jours)|Entier|La valeur 0 spécifie une durée illimitée, mais vous pouvez également définir une limite supérieure pour l'expiration des données d'historique qui sont alors automatiquement supprimées. Les valeurs valides pour une période de rétention limitée sont comprises entre 1 et 5 000 (en jours).|  
 |Limite supérieure de réponse triviale|500 (en millisecondes)|Entier|Définit une limite maximale qui définit un échange requête-réponse triviale. Toute demande dont la durée d'exécution est comprise entre 0 et 500 millisecondes est une demande triviale ; elle est ignorée à des fins de création de rapports.|  

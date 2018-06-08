@@ -1,33 +1,30 @@
 ---
-title: "À l’aide de AddNew dans l’immédiat et les Modes de traitement par lots | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: À l’aide de AddNew dans l’immédiat et les Modes de traitement par lots | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - AddNew method [ADO]
 - ADO, editing data
 - ADO, adding data
 - editing data [ADO], AddNew method
 ms.assetid: ed314bb9-e188-4658-a68c-a2abc49610be
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f22ae3e595c68b52e7eca449557e647c3bedae78
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3c66b250780e3b12ae9590796a062426f89920de
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-addnew-in-immediate-and-batch-modes"></a>À l’aide de AddNew dans l’immédiat et les Modes de traitement par lots
 Le comportement de la **AddNew** méthode varie selon le mode de mise à jour de la **Recordset** objet et si vous passez le *liste de champs* et *valeurs*arguments.  

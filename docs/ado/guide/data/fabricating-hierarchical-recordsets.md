@@ -1,33 +1,30 @@
 ---
-title: "Fabrication de jeux d’enregistrements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Fabrication de jeux d’enregistrements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Recordset fabrication [ADO]
 - hierarchical Recordsets [ADO]
 - fabricating hierarchical Recordsets [ADO]
 - data shaping [ADO], hierarchical Recordsets
 ms.assetid: a584e642-a4a3-418e-bc20-3aff81a5625a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dd8c5c97983fbfa0cbf10f302f992c1bd6c9a59f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7e9301ec9204b5d2d6768f7487f279dd5f1eb0f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fabricating-hierarchical-recordsets"></a>Fabrication de jeux d’enregistrements
 L’exemple suivant montre comment créer un jeu d’enregistrements hiérarchique sans source de données sous-jacente en utilisant les données de mise en forme pour définir les colonnes pour les parents, enfants et petits-enfants **jeux d’enregistrements**.  

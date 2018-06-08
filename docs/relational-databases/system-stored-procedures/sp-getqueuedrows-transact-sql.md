@@ -1,16 +1,15 @@
 ---
 title: sp_getqueuedrows (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_getqueuedrows
 ms.assetid: 139e834f-1988-4b4d-ac81-db1f89ea90e8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 28a6c9eab5c2e6fb52e793e0a25d957335871b7d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7ec0e31b852a1aea3cfd964a47660fd4953c196d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spgetqueuedrows-transact-sql"></a>sp_getqueuedrows (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,7 +63,7 @@ sp_getqueuedrows [ @tablename = ] 'tablename'
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**Action**|**nvarchar (10)**|Type d'action à appliquer au moment de la synchronisation.<br /><br /> INS= insertion <br /><br /> DEL = suppression<br /><br /> UPD = mise à jour|  
+|**Action**|**nvarchar(10)**|Type d'action à appliquer au moment de la synchronisation.<br /><br /> INS= insertion <br /><br /> DEL = suppression<br /><br /> UPD = mise à jour|  
 |**Tranid**|**nvarchar (70)**|Identificateur de transaction sous lequel la commande a été exécutée.|  
 |**column1 table... n**||La valeur pour chaque colonne de la table spécifiée dans *tablename*.|  
 |**MSrepl_tran_version**|**uniqueidentifier**|Cette colonne permet d'assurer le suivi des modifications apportées aux données répliquées et de détecter les conflits sur le serveur de publication. Cette colonne est automatiquement ajoutée à la table.|  
@@ -75,7 +73,7 @@ sp_getqueuedrows [ @tablename = ] 'tablename'
   
  **sp_getqueuedrows** recherche les lignes d’une table donnée sur un abonnement de base de données qui ont participé à une mise à jour en file d’attente, mais actuellement pas résolues par l’agent de lecture de file d’attente.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  **sp_getqueuedrows** requiert des autorisations SELECT sur la table spécifiée dans *tablename*.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,17 +1,16 @@
 ---
-title: "Guide de conception d’index SQL Server | Microsoft Docs"
-ms.custom: 
-ms.date: 12/1/2017
-ms.prod: sql-non-specified
+title: Guide de conception et d’architecture d’index SQL Server | Microsoft Docs
+ms.custom: ''
+ms.date: 04/03/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - index design guide
 - index design guidance
@@ -24,21 +23,21 @@ helpviewer_keywords:
 - sql server index design guide
 - sql server index design guidance
 ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
-caps.latest.revision: 
+caps.latest.revision: 3
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c11d217a3818d872071bb466ac2221e2c8adc3f7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 911e983816453ede6a40375aad7e09bf399567b0
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="sql-server-index-design-guide"></a>Guide de conception d'index SQL Server
+# <a name="sql-server-index-architecture-and-design-guide"></a>Guide de conception et d’architecture d’index SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
-L'engorgement des applications de base de données est souvent imputable à des index mal conçus ou en nombre insuffisant. La conception d'index efficaces est primordiale pour le bon fonctionnement des bases de données et des applications. Ce guide de conception d’index [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] contient des informations et des bonnes pratiques utiles pour créer des index performants et adaptés aux besoins de votre application.  
+L'engorgement des applications de base de données est souvent imputable à des index mal conçus ou en nombre insuffisant. La conception d'index efficaces est primordiale pour le bon fonctionnement des bases de données et des applications. Ce guide de conception d’index [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] contient des informations sur l’architecture des index, ainsi que des bonnes pratiques permettant de créer des index performants et adaptés aux besoins de votre application.  
     
 Ce guide suppose que le lecteur connaît les types d'index disponibles dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Pour obtenir description générale des types d'index, consultez [Types d'index](../relational-databases/indexes/indexes.md).  
 
@@ -121,7 +120,7 @@ Pour plus d’informations sur les index de recherche en texte intégral, consul
   
 -   Veillez à ce que la clé d'index des index cluster soit courte. En outre, les index cluster bénéficient du fait d'être créés sur des colonnes uniques ou non NULL.  
   
--   Les colonnes dont le type de données est **ntext**, **text**, **image**, **varchar(max)**, **nvarchar(max)**ou **varbinary(max)** ne peuvent pas être spécifiées en tant que colonnes de clés d’index. Cependant, les types de données **varchar(max)**, **nvarchar(max)**, **varbinary(max)**et **xml** peuvent participer à des index non-cluster en tant que colonnes d’index non-clés. Pour plus d'informations, consultez la section [Index avec colonnes incluses](#Included_Columns)dans ce guide.  
+-   Les colonnes dont le type de données est **ntext**, **text**, **image**, **varchar(max)**, **nvarchar(max)** ou **varbinary(max)** ne peuvent pas être spécifiées en tant que colonnes de clés d’index. Cependant, les types de données **varchar(max)**, **nvarchar(max)**, **varbinary(max)** et **xml** peuvent participer à des index non-cluster en tant que colonnes d’index non-clés. Pour plus d'informations, consultez la section [Index avec colonnes incluses](#Included_Columns)dans ce guide.  
   
 -   Un type de données **xml** ne peut être qu'une colonne clé dans un index XML. Pour plus d’informations, consultez [Index XML &#40;SQL Server&#41;](../relational-databases/xml/xml-indexes-sql-server.md). SQL Server 2012 SP1 introduit un nouveau type d'index XML appelé index XML sélectif. Ce nouvel index améliore les performances de requête sur les données stockées en XML dans SQL Server, permettant ainsi d'indexer plus rapidement les charges de travail comportant beaucoup de données XML et améliorant l'évolutivité en réduisant les coûts de stockage de l'index en lui-même. Pour plus d’informations, consultez [Index XML sélectifs &#40;SXI&#41;](../relational-databases/xml/selective-xml-indexes-sxi.md).  
   
@@ -456,7 +455,7 @@ INCLUDE (AddressLine1, AddressLine2, City, StateProvinceID);
   
 -   Le nombre de lignes d'index contenues sur une page sera moindre. Ceci pourrait augmenter les E/S et réduire l'efficacité de la mémoire cache.  
   
--   L'espace disque requis pour stocker l'index sera supérieur. En particulier, l’ajout des types de données **varchar(max)**, **nvarchar(max)**, **varbinary(max)**et **xml** en tant que colonnes d’index non-clés peut accroître considérablement l’espace disque nécessaire. En effet, les valeurs des colonnes sont copiées dans le niveau feuille de l'index. Par conséquent, elles résident à la fois dans l'index et dans la table de base.  
+-   L'espace disque requis pour stocker l'index sera supérieur. En particulier, l’ajout des types de données **varchar(max)**, **nvarchar(max)**, **varbinary(max)** et **xml** en tant que colonnes d’index non-clés peut accroître considérablement l’espace disque nécessaire. En effet, les valeurs des colonnes sont copiées dans le niveau feuille de l'index. Par conséquent, elles résident à la fois dans l'index et dans la table de base.  
   
 -   La maintenance d'un index peut accroître la durée nécessaire pour effectuer des modifications, des insertions, des mises à jour ou des suppressions à la table sous-jacente ou à la vue indexée.  
   
@@ -630,7 +629,7 @@ WHERE b = CONVERT(Varbinary(4), 1);
 
 Un *columnstore index* est une technologie permettant de stocker, extraire et gérer les données à l'aide d'un format de données en colonnes, appelé columnstore. Pour plus d’informations, consultez [Index columnstore - Présentation](../relational-databases/indexes/columnstore-indexes-overview.md). 
 
-**S'applique à**: [!INCLUDE[ssSQL11](../includes/sssql11-md.md)] jusqu'à [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)].
+Pour obtenir des informations de version, consultez [Index columnstore - Nouveautés](/sql/relational-databases/indexes/columnstore-indexes-what-s-new).
 
 ### <a name="columnstore-index-architecture"></a>Architecture des index columnstore
 
@@ -649,7 +648,7 @@ Un index columnstore stocke physiquement la plupart des données au format colum
 
 Un index columnstore stocke également physiquement des lignes dans un format rowstore appelé « deltastore ». Le deltastore, également appelé « rowgroups delta », est un espace de stockage pour les lignes qui sont en trop petit nombre pour bénéficier de la compression dans le columnstore. Chaque rowgroup delta est implémenté comme un index B-tree cluster. 
 
-- Un **deltastore** est un espace de stockage pour les lignes qui sont en trop petit nombre pour être compressées dans le columnstore. Le deltastore est un rowstore. 
+- Le **deltastore** est un espace de stockage pour les lignes qui sont en trop petit nombre pour être compressées dans le columnstore. Le deltastore stocke les lignes au format rowstore. 
   
 #### <a name="operations-are-performed-on-rowgroups-and-column-segments"></a>Les opérations sont effectuées sur des rowgroups et des segments de colonne
 
@@ -799,11 +798,11 @@ Un index de hachage peut être déclaré comme :
   
 Le code suivant est un exemple de la syntaxe appropriée pour créer un index de hachage, en dehors de l’instruction CREATE TABLE :  
   
-    ```sql
-    ALTER TABLE MyTable_memop  
-    ADD INDEX ix_hash_Column2 UNIQUE  
-    HASH (Column2) WITH (BUCKET_COUNT = 64);
-    ``` 
+```sql
+ALTER TABLE MyTable_memop  
+ADD INDEX ix_hash_Column2 UNIQUE  
+HASH (Column2) WITH (BUCKET_COUNT = 64);
+``` 
 
 ### <a name="row-versions-and-garbage-collection"></a>Versions de lignes et garbage collection  
 Dans une table à mémoire optimisée, quand une ligne est modifiée par une instruction `UPDATE`, la table crée une version mise à jour de la ligne. Lors de la transaction de mise à jour, d’autres sessions peuvent être en mesure de lire l’ancienne version de la ligne et d’éviter ainsi le ralentissement des performances associé à un verrou de ligne.  
@@ -882,6 +881,11 @@ Les performances d’un index non-cluster sont meilleures que celles d’un inde
 > Quand un index non-cluster contient des colonnes clés avec un grand nombre de valeurs dupliquées, les performances peuvent baisser lors des mises à jour, des insertions et des suppressions. Une façon d'améliorer les performances dans cette situation consiste à ajouter une autre colonne à l'index non cluster.
 
 ##  <a name="Additional_Reading"></a> Lecture supplémentaire  
+[CREATE INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-index-transact-sql.md)    
+[ALTER INDEX &#40;Transact-SQL&#41;](../t-sql/statements/alter-index-transact-sql.md)   
+[CREATE XML INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-xml-index-transact-sql.md)  
+[CREATE SPATIAL INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-spatial-index-transact-sql.md)     
+[Réorganiser et reconstruire des index](../relational-databases/indexes/reorganize-and-rebuild-indexes.md)         
 [Amélioration des performances avec les vues indexées SQL Server 2008](http://msdn.microsoft.com/library/dd171921(v=sql.100).aspx)  
 [Partitioned Tables and Indexes](../relational-databases/partitions/partitioned-tables-and-indexes.md)  
 [Créer des clés primaires](../relational-databases/tables/create-primary-keys.md)    
@@ -891,8 +895,5 @@ Les performances d’un index non-cluster sont meilleures que celles d’un inde
 [Vues de gestion dynamique des tables à mémoire optimisée &#40;Transact-SQL&#41;](../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)   
 [Fonctions et vues de gestion dynamique relatives aux index &#40;Transact-SQL&#41;](../relational-databases/system-dynamic-management-views/index-related-dynamic-management-views-and-functions-transact-sql.md)       
 [Index sur les colonnes calculées](../relational-databases/indexes/indexes-on-computed-columns.md)   
-[Index et ALTER TABLE](../t-sql/statements/alter-table-transact-sql.md#indexes-and-alter-table)   
-[CREATE INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-index-transact-sql.md)    
-[ALTER INDEX &#40;Transact-SQL&#41;](../t-sql/statements/alter-index-transact-sql.md)   
-[CREATE XML INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-xml-index-transact-sql.md)  
-[CREATE SPATIAL INDEX &#40;Transact-SQL&#41;](../t-sql/statements/create-spatial-index-transact-sql.md)  
+[Index et ALTER TABLE](../t-sql/statements/alter-table-transact-sql.md#indexes-and-alter-table)      
+[Adaptive Index Defrag](http://github.com/Microsoft/tigertoolbox/tree/master/AdaptiveIndexDefrag)      

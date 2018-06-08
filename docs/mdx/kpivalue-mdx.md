@@ -1,29 +1,29 @@
 ---
 title: KPIValue (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: KPIValue function
+dev_langs:
+- kbMDX
+helpviewer_keywords:
+- KPIValue function
 ms.assetid: c4f8532c-4c24-4ad5-8847-4522511e0039
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 90f82b02602733d6af86193d750d57751714fc96
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: b7d1abcf4d0e5c1ca7c02267a1eac7434b616f53
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="kpivalue-mdx"></a>KPIValue (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -41,9 +41,9 @@ KPIValue(KPI_Name)
  *Nom_icp*  
  Expression de chaîne valide qui précise le nom de l'indicateur de performance clé.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple ci-dessous retourne la valeur, l'objectif, l'état et la tendance de l'indicateur de performance clé de la mesure Channel Revenue pour les descendants des trois membres de la hiérarchie d'attribut Fiscal Year.  
   
 ```  
@@ -63,6 +63,6 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../mdx/mdx-function-reference-mdx.md)  
   
   

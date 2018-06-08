@@ -1,16 +1,15 @@
 ---
 title: MSqreader_history (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSqreader_history system table
 ms.assetid: c5c91d39-513c-4a77-870b-c8ef74a1cd6b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7c9615bb702c89d8b2a5be0087671df9d8a6a910
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c060cd85f1b4a36087f3d8756bf0d48c1976110f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msqreaderhistory-transact-sql"></a>MSqreader_history (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -40,14 +38,14 @@ ms.lasthandoff: 11/21/2017
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**éléments agent_id**|**int**|ID de l'Agent de lecture de la file d'attente.|  
-|**id_de_la_publication**|**int**|ID de la publication.|  
+|**agent_id**|**int**|ID de l'Agent de lecture de la file d'attente.|  
+|**publication_id**|**int**|ID de la publication.|  
 |**runstatus**|**int**|État d'exécution de l'agent :<br /><br /> **1** = démarrage.<br /><br /> **2** = réussisse.<br /><br /> **3** = en cours d’exécution.<br /><br /> **4** = inactif.<br /><br /> **5** = nouvelle tentative.<br /><br /> **6** = échec.|  
-|**heure_début**|**datetime**|Date et heure du début de la session de l'Agent.|  
+|**start_time**|**datetime**|Date et heure du début de la session de l'Agent.|  
 |**time**|**datetime**|Date et heure du dernier message enregistré.|  
 |**duration**|**int**|Durée de l'activité enregistrée de la session, en secondes.|  
-|**commentaires**|**nvarchar(255)**|Texte descriptif.|  
-|**Identificateur transaction_id :**|**nvarchar (40)**|ID de transaction stocké avec le message, le cas échéant.|  
+|**Commentaires**|**nvarchar(255)**|Texte descriptif.|  
+|**transaction_id**|**nvarchar(40)**|ID de transaction stocké avec le message, le cas échéant.|  
 |**transaction_status**|**int**|L’état de la transaction.|  
 |**transactions_processed**|**int**|Nombre total de transactions traitées pendant la session.|  
 |**commands_processed**|**int**|Nombre total de commandes traitées pendant la session.|  
@@ -59,7 +57,7 @@ ms.lasthandoff: 11/21/2017
 |**timestamp**|**timestamp**|Colonne timestamp de cette table.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

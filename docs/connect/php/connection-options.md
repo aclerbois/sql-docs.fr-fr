@@ -2,27 +2,24 @@
 title: Options de connexion | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 6d1ea295-8e34-438e-8468-4bbc0f76192c
-caps.latest.revision: ''
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e9e8d87f7c1da0574264744459070a04b9b959e2
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 1515d7e58580b7dd0b56b3e0e3f658e2aed132be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connection-options"></a>Options de connexion
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -30,7 +27,7 @@ ms.lasthandoff: 03/28/2018
 Cette rubrique répertorie les options qui sont autorisées dans le tableau associatif (lors de l’utilisation [sqlsrv_connect](../../connect/php/sqlsrv-connect.md) dans le pilote SQLSRV) ou les mots clés qui sont autorisés dans le nom de source de données (dsn) (lors de l’utilisation [PDO::__construct ](../../connect/php/pdo-construct.md) dans le pilote PDO_SQLSRV).  
 
 ## <a name="table-of-connection-options"></a>Tableau des Options de connexion
-|Clé|Valeur| Description|Par défaut|  
+|Key|Valeur| Description|Par défaut|  
 |-------|---------|---------------|-----------|  
 |APP|Chaîne|Spécifie le nom de l’application utilisé dans le suivi.|Aucune valeur n’est définie.|  
 |ApplicationIntent|Chaîne|Déclare le type de la charge de travail de l'application lors de la connexion à un serveur. Les valeurs possibles sont ReadOnly et ReadWrite.<br /><br />Pour plus d’informations sur [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)] prise en charge de [!INCLUDE[ssHADR](../../includes/sshadr_md.md)], consultez [prend en charge pour la haute disponibilité, la récupération d’urgence](../../connect/php/php-driver-for-sql-server-support-for-high-availability-disaster-recovery.md).|ReadWrite|  

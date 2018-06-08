@@ -1,33 +1,30 @@
 ---
-title: "Propriétés de l’objet, les méthodes et les événements de commande | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriétés de l’objet, les méthodes et les événements de commande | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Command object [ADO], members
 ms.assetid: 0389f21c-06da-4090-9da1-28d912f888d7
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 061053ef36157124cee9ca2de56a12b0def480a2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 20e60c0d753950e5240553eede42775b71669474
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-object-properties-methods-and-events"></a>Propriétés de l’objet commande, méthodes et événements
-## <a name="propertiescollections"></a>Properties/Collections  
+## <a name="propertiescollections"></a>Propriétés et de Collections  
  [Propriété ActiveConnection](../../../ado/reference/ado-api/activeconnection-property-ado.md)  
   
  [Propriété CommandStream](../../../ado/reference/ado-api/commandstream-property-ado.md)  

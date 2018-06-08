@@ -1,30 +1,28 @@
 ---
-title: "Chargement converti objets base de données dans SQL Server (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Chargement converti objets base de données dans SQL Server (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: ac993a6d-0283-4823-8793-6b217677dfa3
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a635fd98723c8a878d07db06787f8e91cf7a5e86
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3d96528033ab2f852be1e91e64efdda77eb3807a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="loading-converted-database-objects-into-sql-server-mysqltosql"></a>Chargement converti objets base de données dans SQL Server (MySQLToSQL)
 Après avoir converti les bases de données MySQL [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure, vous pouvez charger les objets de base de données qui en résulte dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou SQL Azure. Vous pouvez avoir créer les objets SSMA, ou vous pouvez les objets de script et exécuter les scripts vous-même. SSMA vous permet également de mettre à jour des métadonnées de la cible avec le contenu réel de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] ou de la base de données SQL Azure.  
@@ -111,8 +109,8 @@ Vous pouvez exécuter un script ou des instructions individuelles, dans SQL Serv
 Une fois que vous avez chargé les objets de base de données convertie dans SQL Server, vous pouvez accorder et refuser des autorisations sur ces objets. Il est judicieux d’effectuer cette opération avant la migration de données vers SQL Server. Pour plus d’informations sur la façon de sécuriser les objets dans SQL Server, consultez « Sécurité considérations relatives à des bases de données et base de données des Applications » dans la documentation en ligne de SQL Server.  
   
 ## <a name="next-step"></a>Étape suivante  
-L’étape suivante du processus de migration est [migration des données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSQL &#41;](../../ssma/mysql/migrating-mysql-data-into-sql-server-azure-sql-db-mysqltosql.md)  
+L’étape suivante du processus de migration est [migration des données de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSQL&#41;](../../ssma/mysql/migrating-mysql-data-into-sql-server-azure-sql-db-mysqltosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSql &#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
+[Bases de données de migration de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSql&#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
   

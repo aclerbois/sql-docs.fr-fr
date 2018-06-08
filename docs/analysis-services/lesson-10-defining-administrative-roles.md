@@ -1,29 +1,19 @@
 ---
-title: "Leçon 10 : Définition de rôles administratifs | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: a74239f4-0f38-43ed-82d3-bf742dbf8a54
-caps.latest.revision: 
-author: Minewiskan
+title: 'Leçon 10 : Définition de rôles administratifs | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ed03cf00101a8e36760571a89c9bfe25dff98bca
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7c1e0b9298857a07e3f85f77595c62a4213a52ae
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-10-defining-administrative-roles"></a>Leçon 10 : Définition de rôles administratifs
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -40,7 +30,7 @@ Dans cette tâche, vous définissez un rôle de sécurité qui a les autorisatio
   
 ## <a name="see-also"></a>Voir aussi  
 [Scénario du didacticiel Analysis Services](../analysis-services/analysis-services-tutorial-scenario.md)  
-[Modélisation multidimensionnelle &#40; Didacticiel Adventure Works &#41;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
+[Modélisation multidimensionnelle & #40 ; Didacticiel Adventure Works & #41 ;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
   
   
   

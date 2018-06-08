@@ -1,15 +1,14 @@
 ---
 title: Instruction CREATE GLOBAL CUBE (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - GLOBAL CUBE
@@ -18,26 +17,26 @@ f1_keywords:
 - CREATE
 - CREATE GLOBAL
 - CREATE GLOBAL CUBE
-dev_langs: kbMDX
+dev_langs:
+- kbMDX
 helpviewer_keywords:
 - statements [MDX], CREATE GLOBAL CUBE
 - CREATE GLOBAL CUBE
 ms.assetid: b46f3c98-a4f1-4ebb-915f-a3333f4054dc
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 0e0dd4c6f3a5fe6fddf538389581f1554704691c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: dc74fe731c98609a0840c12f0cd216b89d53e0a9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mdx-data-definition---create-global-cube"></a>Définition de données MDX - CREATE GLOBAL CUBE
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
 
-  Crée et remplit un cube persistant localement, en fonction d'un sous-cube issu d'un cube sur le serveur. Aucune connexion au serveur n'est nécessaire pour se connecter au cube conservé localement. Pour plus d’informations sur les cubes locaux, consultez [Cubes locaux &#40; Analysis Services - données multidimensionnelles &#41; ](../analysis-services/multidimensional-models/olap-physical/local-cubes-analysis-services-multidimensional-data.md).  
+  Crée et remplit un cube persistant localement, en fonction d'un sous-cube issu d'un cube sur le serveur. Aucune connexion au serveur n'est nécessaire pour se connecter au cube conservé localement. Pour plus d’informations sur les cubes locaux, consultez [Cubes locaux &#40;Analysis Services - données multidimensionnelles&#41;](../analysis-services/multidimensional-models/olap-physical/local-cubes-analysis-services-multidimensional-data.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -132,7 +131,7 @@ FROM source_cube_name (<param list>)
  \<type de niveau >  
  Élément spécifié uniquement pour la définition de dimension dérivée.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Un cube local est termes definedin des mesures et des définitions qui le caractérisent. Il existe deux types de dimensions.  
   
 -   Dimensions sources : ce sont des dimensions qui faisaient partie de l’un ou plusieurs cubes sources  
@@ -216,7 +215,7 @@ MEMBER [Date].[Fiscal].[Fiscal Year].&[2005]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions MDX de définition de données &#40; MDX &#41;](../mdx/mdx-data-definition-statements-mdx.md)   
- [CRÉER une instruction de CUBE de SESSION &#40; MDX &#41;](../mdx/mdx-data-definition-create-session-cube.md)  
+ [Instructions MDX de définition de données &#40;MDX&#41;](../mdx/mdx-data-definition-statements-mdx.md)   
+ [Instruction CREATE SESSION CUBE &#40;MDX&#41;](../mdx/mdx-data-definition-create-session-cube.md)  
   
   

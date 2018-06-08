@@ -1,28 +1,24 @@
 ---
-title: "L’utilisation du pilote JDBC | Documents Microsoft"
-ms.custom: 
+title: L’utilisation du pilote JDBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6faaf05b-8b70-4ed2-9b44-eee5897f1cd0
-caps.latest.revision: 
+caps.latest.revision: 54
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 9118a82f333b14f9ba468c039255ff3e6a1280d7
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 03ea3e895fb7d70b392e0c25372536770308049d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-the-jdbc-driver"></a>Utilisation du pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -46,11 +42,11 @@ ms.lasthandoff: 03/02/2018
 ### <a name="for-microsoft-jdbc-driver-64"></a>Pour Microsoft JDBC Driver 6.4
  Le **mssql-jdbc-6.4.0.jre7.jar**, **mssql-jdbc-6.4.0.jre8.jar** ou **mssql-jdbc-6.4.0.jre9.jar** fichiers sont installés dans l’emplacement suivant :  
   
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\mssql-jdbc-6.4.0.jre7.jar 
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \mssql-jdbc-6.4.0.jre7.jar 
   
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\mssql-jdbc-6.4.0.jre8.jar
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \mssql-jdbc-6.4.0.jre8.jar
  
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\mssql-jdbc-6.4.0.jre9.jar
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \mssql-jdbc-6.4.0.jre9.jar
   
  Voici un exemple de l'instruction CLASSPATH utilisée pour une application Windows :  
   
@@ -65,9 +61,9 @@ ms.lasthandoff: 03/02/2018
 ### <a name="for-microsoft-jdbc-driver-62"></a>Pour Microsoft JDBC Driver 6.2
  Le **mssql-jdbc-6.2.1.jre7.jar** ou **mssql-jdbc-6.2.1.jre8.jar** fichiers sont installés dans l’emplacement suivant :  
   
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\mssql-jdbc-6.2.1.jre7.jar 
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \mssql-jdbc-6.2.1.jre7.jar 
   
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\mssql-jdbc-6.2.1.jre8.jar
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \mssql-jdbc-6.2.1.jre8.jar
   
  Voici un exemple de l'instruction CLASSPATH utilisée pour une application Windows :  
   
@@ -82,7 +78,7 @@ ms.lasthandoff: 03/02/2018
 ### <a name="for-microsoft-jdbc-driver-41-42-and-60"></a>Pour Microsoft JDBC Driver 6.0, 4.2 et 4.1
  Les fichiers sqljdbc.jar, sqljdbc4.jar, sqljdbc41.jar et sqljdbc42.jar sont installés aux emplacements suivants :  
   
- \<*installation directory*>\sqljdbc_\<*version*>\\<*language*>\sqljdbc.jar  
+ \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \sqljdbc.jar  
   
  \<*répertoire d’installation*> \sqljdbc_\<*version*>\\<*langage*> \sqljdbc4.jar  
   

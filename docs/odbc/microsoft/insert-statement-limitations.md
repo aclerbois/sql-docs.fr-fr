@@ -1,31 +1,28 @@
 ---
-title: "Limitations d’instruction INSERT | Documents Microsoft"
-ms.custom: 
+title: Limitations d’instruction INSERT | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC SQL grammar, INSERT statement limitations
 - INSERT statement limitations [ODBC]
 - truncation of data [ODBC]
 ms.assetid: dea05698-527a-41ab-8729-bbed85556185
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7c8547de55d04aefbd3c847fca9b53b411b5ee80
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f15f7c8a45593b86f50ac4da3dc254dca507aae7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="insert-statement-limitations"></a>Insérez l’instruction
 Les données insérées sont tronquées à droite sans avertissement si elle est trop longue pour tenir dans la colonne.  

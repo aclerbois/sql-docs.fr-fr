@@ -1,31 +1,23 @@
 ---
-title: "Planifier l’actualisation des données et Sources de données - aucune authentification Windows | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: d8d875bc-7823-46b7-a939-867cefd4de12
-caps.latest.revision: 
-author: Minewiskan
+title: Planifier l’actualisation des données et Sources de données - aucune authentification Windows | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9dadc46f53cff296a0332069165a9faa876e6180
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b4c7a5a66ff831c94129c2833d74d0eeeb65de30
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="schedule-data-refresh-and-data-sources---no-windows-authentication"></a>Planifier l’actualisation des données et Sources de données - aucune authentification Windows
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit un flux de travail d’actualisation planifiée des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint pouvant utiliser des sources de données qui ne prennent **PAS** en charge l’authentification Windows. Par exemple, des sources de données Oracle ou IDM DB2. Les illustrations et les étapes figurant dans cette rubrique font référence à des sources de données Oracle, mais le même flux de travail s'applique aux autres sources de données.  
+  Cette rubrique décrit un flux de travail d’actualisation planifiée des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint pouvant utiliser des sources de données qui ne prennent **PAS** en charge l’authentification Windows. Par exemple, des sources de données Oracle ou IDM DB2. Les illustrations et les étapes figurant dans cette rubrique font référence à des sources de données Oracle, mais le même flux de travail s'applique aux autres sources de données.  
   
 ||  
 |-|  
@@ -121,7 +113,7 @@ Cette rubrique décrit un flux de travail d’actualisation planifiée des donn�
   
 11. Tapez l'ID d'utilisateur Oracle, ainsi que le mot de passe Oracle, puis cliquez sur **OK**.  
   
- Pour plus d’informations, consultez la section « Pour créer une application cible pour l’authentification SQL Server » dans [Utiliser la Banque d’informations sécurisées avec l’authentification SQL Server (SharePoint Server 2013)](http://technet.microsoft.com/library/gg298949.aspx) (http://technet.microsoft.com/library/gg298949.aspx).  
+ Pour plus d’informations, consultez la section « Pour créer une application cible pour l’authentification SQL Server » dans [avec l’authentification SQL Server (SharePoint Server 2013), utilisez le magasin sécurisé](http://technet.microsoft.com/library/gg298949.aspx) (http://technet.microsoft.com/library/gg298949.aspx).  
   
 ## <a name="to-configure-the-power-pivot-service-application"></a>Pour configurer l’application de service Power Pivot  
   

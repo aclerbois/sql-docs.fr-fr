@@ -1,17 +1,15 @@
 ---
-title: "Open (méthode) (enregistrement ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Open (méthode) (enregistrement ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Record::raw_Open
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Open method [ADO]
 ms.assetid: ab79a623-88a9-40b6-a017-a658bf19b778
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1da941f0a4e16a649adc6139cd24fc4642218b84
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 432f2a821bd276efd46f61497f4ef7ae95502bf7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-method-ado-record"></a>Open (méthode) (enregistrement ADO)
 Ouvre une existante [enregistrement](../../../ado/reference/ado-api/record-object-ado.md) de l’objet ou crée un nouvel élément représenté par le **enregistrement**, par exemple un fichier ou répertoire.  

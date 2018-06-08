@@ -1,34 +1,32 @@
 ---
 title: Modes de quorum WSFC et configuration de vote (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/03/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], WSFC clusters
 - quorum [SQL Server], AlwaysOn and WSFC quorum
 - failover clustering [SQL Server], AlwaysOn Availability Groups
 ms.assetid: ca0d59ef-25f0-4047-9130-e2282d058283
-caps.latest.revision: "15"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: d9c0a87d4229aa94cf30ddc61394656377456eea
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+caps.latest.revision: 15
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 171156b776aaf44189be8ac32ac53465c20376f1
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772295"
 ---
 # <a name="wsfc-quorum-modes-and-voting-configuration-sql-server"></a>Modes de quorum WSFC et configuration de vote (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Tant les [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] que les instances de cluster de basculement Always On tirent parti du clustering de basculement Windows Server (WSFC) en tant que technologie de plateforme.  WSFC utilise une approche basée sur le quorum pour la surveillance de l'intégrité globale du cluster et l'optimisation de la tolérance aux pannes au niveau du nœud. Il est très important de disposer d’une connaissance de base de la configuration du vote des nœuds et des modes de quorum WSFC pour concevoir, administrer et dépanner votre solution de récupération d’urgence haute disponibilité Always On.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Tant les [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)][!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] que les instances de cluster de basculement Always On tirent parti du clustering de basculement Windows Server (WSFC) en tant que technologie de plateforme.  WSFC utilise une approche basée sur le quorum pour la surveillance de l'intégrité globale du cluster et l'optimisation de la tolérance aux pannes au niveau du nœud. Il est très important de disposer d’une connaissance de base de la configuration du vote des nœuds et des modes de quorum WSFC pour concevoir, administrer et dépanner votre solution de récupération d’urgence haute disponibilité Always On.  
   
  **Dans cette rubrique :**  
   
@@ -79,7 +77,7 @@ ms.lasthandoff: 12/05/2017
   
  Aucun nœud d'un cluster WSFC ne peut définitivement déterminer seul que le cluster est globalement intègre ou pas.  À tout moment, du point de vue de chaque nœud, certains autres nœuds peuvent sembler être hors connexion, ou en cours de basculement, ou ne pas répondre en raison d'une défaillance de communication réseau.  Une fonction principale du vote de quorum consiste à déterminer si l'état apparent de chaque nœud du cluster WSFC correspond à l'état réel du nœud.  
   
- Pour tous les modèles de quorum à l'exception de « Disque uniquement », l'efficacité d'un vote de quorum dépend de la fiabilité des communications entre tous les nœuds votants du cluster. Les communications réseau entre les nœuds sur le même sous-réseau physique doivent être considérées comme fiables ; le vote du quorum doit être approuvé.  
+ Pour tous les modèles de quorum à l'exception de « Disque uniquement », l'efficacité d'un vote de quorum dépend de la fiabilité des communications entre tous les nœuds votants du cluster. Les communications réseau entre les nœuds sur le même sous-réseau physique doivent être considérées comme fiables ; le vote du quorum doit être approuvé.  
   
  Toutefois, si un nœud d'un autre sous-réseau est considéré comme non-réactif dans un vote de quorum alors qu'il en ligne et intègre, ceci est probablement dû à une défaillance de communication réseau entre les sous-réseaux.  En fonction de la topologie de cluster, du mode de quorum et de la configuration de la stratégie de basculement, l'échec de communication réseau peut effectivement créer plusieurs ensembles (ou sous-ensembles) de nœuds votants.  
   
@@ -128,7 +126,7 @@ ms.lasthandoff: 12/05/2017
   
 -   [Configurer les paramètres NodeWeight pour un quorum de cluster](../../../sql-server/failover-clusters/windows/configure-cluster-quorum-nodeweight-settings.md)  
   
-##  <a name="RelatedContent"></a> Contenu connexe  
+##  <a name="RelatedContent"></a> Contenu associé  
   
 -   [Microsoft SQL Server Always On Solutions Guide for High Availability and Disaster Recovery (Guide de solutions Microsoft SQL Server Always On pour la haute disponibilité et la récupération d’urgence)](http://go.microsoft.com/fwlink/?LinkId=227600)  
   
@@ -138,7 +136,7 @@ ms.lasthandoff: 12/05/2017
   
 -   [Guide pas à pas de configuration d'un cluster de basculement : configuration du quorum dans un cluster de basculement](http://technet.microsoft.com/library/cc770620\(WS.10\).aspx)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Récupération d’urgence WSFC par le quorum forcé &#40;SQL Server&#41;](../../../sql-server/failover-clusters/windows/wsfc-disaster-recovery-through-forced-quorum-sql-server.md)   
  [Clustering de basculement Windows Server &#40;WSFC&#41; avec SQL Server](../../../sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server.md)  
   

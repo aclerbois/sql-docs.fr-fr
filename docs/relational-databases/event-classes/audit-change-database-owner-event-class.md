@@ -1,34 +1,30 @@
 ---
-title: "Audit Change Database Owner, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Change Database Owner, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Change Database Owner event class
 ms.assetid: 2f1dd4fc-2540-423c-80ad-c5bc712c42e0
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9bbbb1237a063ea0baa5d8156cb6621125877513
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3ad4222d268ec7fc7f0cb78d144f330f1416f92c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-change-database-owner-event-class"></a>Audit Change Database Owner (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Change Database Owner** se produit lorsque vous utilisez l’instruction ALTER AUTHORIZATION pour changer le propriétaire d’une base de données et que les autorisations requises à cet effet sont activées.  
+  La classe d’événements **Audit Change Database Owner** se produit lorsque vous utilisez l’instruction ALTER AUTHORIZATION pour changer le propriétaire d’une base de données et que les autorisations requises à cet effet sont activées.  
   
 ## <a name="audit-change-database-owner-event-class-data-columns"></a>Colonnes de la classe d'événements Audit Change Database Owner  
   

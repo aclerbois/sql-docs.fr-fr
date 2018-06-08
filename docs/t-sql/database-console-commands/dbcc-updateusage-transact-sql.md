@@ -1,16 +1,13 @@
 ---
 title: DBCC UPDATEUSAGE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - UPDATEUSAGE
@@ -36,16 +33,15 @@ helpviewer_keywords:
 - row count accuracy [SQL Server]
 - page count accuracy [SQL Server]
 ms.assetid: b8752ecc-db45-4e23-aee7-13b8bc3cbae2
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 56
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 12a05d112f55fd4323b5f6e4278c6134f581f4ae
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0ef83c4b349e44f7a5f399a7bf84c2be9cd2ca01
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-updateusage-transact-sql"></a>DBCC UPDATEUSAGE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

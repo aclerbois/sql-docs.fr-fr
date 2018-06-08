@@ -1,16 +1,14 @@
 ---
-title: "Longueur des données, la longueur de la mémoire tampon et la troncation | Documents Microsoft"
-ms.custom: 
+title: Longueur des données, la longueur de la mémoire tampon et la troncation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data buffers [ODBC], length
 - data length [ODBC]
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - length of data buffers [ODBC]
 - buffers [ODBC], length
 ms.assetid: 2825c6e7-b9ff-42fe-84fc-7fb39728ac5d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d175970f31ac75e3d94fe23bfc89304ac316e3ab
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 20d0e05e9739cbc8382a7a23c58b48084415990c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-length-buffer-length-and-truncation"></a>Longueur des données, la longueur de la mémoire tampon et la troncation
 Le *longueur des données* est la longueur en octets des données telles qu’elles sont stockées dans le tampon de données de l’application, pas comme il est stocké dans la source de données. Cette distinction est importante, car les données sont souvent stockées dans des types différents dans la mémoire tampon de données que dans la source de données. Par conséquent, pour les données envoyées à la source de données, il s’agit la longueur en octets des données avant la conversion en type de la source de données. Pour les données récupérées à partir de la source de données, il est la longueur en octets des données après la conversion en type de la mémoire tampon les données et avant toute troncation.  

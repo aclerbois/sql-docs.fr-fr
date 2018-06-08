@@ -1,28 +1,22 @@
 ---
-title: Sauvegarde et restauration
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Décrit comment les données de sauvegarde et restauration fonctionne pour SQL Server Parallel Data Warehouse (PDW)."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: d4669957-270a-4e50-baf3-14324ca63049
-caps.latest.revision: 
-ms.openlocfilehash: 06863b600ed62d795db82aa5aa3ae5c88578833a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+title: Sauvegarde et restauration - Parallel Data Warehouse | Documents Microsoft
+description: Décrit comment les données de sauvegarde et restauration fonctionne pour Parallel Data Warehouse (PDW). Opérations de sauvegarde et de restauration sont utilisées pour la récupération d’urgence. Sauvegarde et restauration peuvent également servir à copier une base de données à partir d’une application sur un autre matériel.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 118b9ced12e01ac6655d85969bb61717f2b31e0b
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="backup-and-restore"></a>Sauvegarde et restauration
-Décrit comment les données de sauvegarde et restauration fonctionne pour SQL Server Parallel Data Warehouse (PDW). Opérations de sauvegarde et de restauration sont utilisées pour la récupération d’urgence. Sauvegarde et restauration peuvent également servir à copier une base de données à partir d’une application sur un autre matériel.  
+Décrit comment les données de sauvegarde et restauration fonctionne pour Parallel Data Warehouse (PDW). Opérations de sauvegarde et de restauration sont utilisées pour la récupération d’urgence. Sauvegarde et restauration peuvent également servir à copier une base de données à partir d’une application sur un autre matériel.  
     
 ## <a name="BackupRestoreBasics"></a>Principes élémentaires de sauvegarde et restauration  
 Un PDW *sauvegarde de base de données* est une copie d’une base de données d’appliance, stockée dans un format afin qu’il peut être utilisé pour restaurer la base de données d’origine vers un appareil.  
@@ -35,7 +29,7 @@ The [master database](master-database.md) is a SMP SQL Server database. It is ba
 
 -->
   
-PDW utilise la technologie de sauvegarde de SQL Server pour sauvegarder et restaurer des bases de données de matériel. Options de sauvegarde de SQL Server sont préconfigurées pour utiliser la compression de la sauvegarde. Impossible de définir les options de sauvegarde telles que la compression, somme de contrôle, taille de bloc et nombre de tampons.  
+PDW utilise la technologie de sauvegarde de SQL Server pour sauvegarder et restaurer des bases de données de matériel. Options de sauvegarde de SQL Server sont préconfigurées pour utiliser la compression de la sauvegarde. Vous ne pouvez pas définir des options de sauvegarde comme la compression, la somme de contrôle, la taille des blocs ou le nombre de tampons.  
   
 Sauvegardes de base de données sont stockées sur un ou plusieurs serveurs de sauvegarde, qui existe dans votre propre réseau client.  PDW écrit une sauvegarde de base de données utilisateur, en parallèle, directement à partir des nœuds de calcul à un serveur de sauvegarde et restaure une sauvegarde de base de données utilisateur en parallèle directement à partir de la sauvegarde du serveur pour les nœuds de calcul.  
   
@@ -123,11 +117,11 @@ Lors de la restauration des données, l’appliance détecte le nombre de nœuds
   
 ## <a name="restoring-to-an-appliance-with-a-larger-number-of-compute-nodes"></a>Restauration vers un appareil avec un plus grand nombre de nœuds de calcul  
   
-Restauration d’une sauvegarde vers un appareil avec un plus grand nombre de nœuds de calcul s’agrandit la taille de la base de données alloué proportionnellement au nombre de nœuds de calcul.  
+Le fait de restaurer une sauvegarde dans une appliance dotée d’un plus grand nombre de nœuds de calcul a pour effet d’accroître la taille de la base de données allouée de façon proportionnelle au nombre de nœuds de calcul.  
   
 Par exemple, lorsque vous restaurez une base de données de 60 Go à partir d’un équipement de 2 nœuds (30 Go par nœud) à un dispositif de 6 nœuds, SQL Server PDW crée une base de données 180 Go (6 nœuds avec 30 Go par nœud) sur le dispositif de 6 nœuds. SQL Server PDW initialement restaure la base de données à 2 nœuds correspondant à la configuration de la source, puis redistribue les données à tous les nœuds de 6.  
   
-Après la redistribution de chaque nœud de calcul contient moins de données réelles et davantage d’espace libre que chaque nœud de calcul sur l’appareil source plus petit. L’espace supplémentaire permet d’ajouter des données à la base de données. Si la taille de la base de données restaurée est plus grande que vous avez besoin, vous pouvez utiliser [ALTER DATABASE](../t-sql/statements/alter-database-parallel-data-warehouse.md) pour réduire la taille des fichiers de base de données.  
+À l’issue de la redistribution, chaque nœud de calcul contient moins de données réelles et plus d’espace libre que chaque nœud de calcul de l’appliance source de plus petite taille. Profitez de l’espace supplémentaire pour ajouter davantage de données à la base de données. Si la taille de la base de données restaurée est plus grande que vous avez besoin, vous pouvez utiliser [ALTER DATABASE](../t-sql/statements/alter-database-parallel-data-warehouse.md) pour réduire la taille des fichiers de base de données.  
   
 ## <a name="related-tasks"></a>Tâches associées  
   

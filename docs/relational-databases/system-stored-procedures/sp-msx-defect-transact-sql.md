@@ -1,16 +1,14 @@
 ---
-title: sp_msx_defect (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_msx_defect (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_msx_defect
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_msx_defect
 ms.assetid: 0dfd963a-3bc5-4b58-94f7-aec976da2883
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cf63da8bfb0ac882e3d3949a91b848ba689985a6
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ffce49260f39c04665ec570e92a37e1783077dbe
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spmsxdefect-transact-sql"></a>sp_msx_defect (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +46,7 @@ sp_msx_defect [@forced_defection =] forced_defection
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@forced_defection =**] *forced_defection*  
+ [  **@forced_defection =**] *défection_forcée*  
  Spécifie s’il faut ou non forcer la désinscription lorsque le SQLServerAgent principal a été définitivement perdu en raison d’une détérioration **msdb** base de données, ou sur non **msdb** sauvegarde de base de données. *défection_forcée*est **bits**, avec une valeur par défaut **0**, ce qui signifie qu’aucune forcer la désinscription. La valeur **1** force la désinscription.  
   
  Après avoir forcé une désinscription par l’exécution de **sp_msx_defect**, un membre de la **sysadmin** rôle serveur fixe auprès du SQLServerAgent principal doit exécuter la commande suivante pour terminer l’opération :  

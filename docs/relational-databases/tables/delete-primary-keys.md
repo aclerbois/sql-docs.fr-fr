@@ -1,32 +1,29 @@
 ---
-title: "Supprimer des clés primaires | Microsoft Docs"
-ms.custom: 
+title: Supprimer des clés primaires | Microsoft Docs
+ms.custom: ''
 ms.date: 07/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - removing primary keys
 - deleting primary keys
 - primary keys [SQL Server], deleting
 ms.assetid: c472e465-7bdd-4d74-8fc9-e47fca007ccb
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 185ab2d26ef049e211ae42624dae3e1517361cca
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 257806c87bd0c87cf07f32dbc7dfb080e02b4d74
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-primary-keys"></a>Supprimer des clés primaires
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -97,6 +94,6 @@ ms.lasthandoff: 02/23/2018
     GO  
     ```  
   
- Pour plus d’informations, consultez [ALTER TABLE&#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md) et [sys.key_constraints &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-key-constraints-transact-sql.md)  
+ Pour plus d’informations, consultez [ALTER TABLE& #40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md) et [sys.key_constraints &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-key-constraints-transact-sql.md)  
   
 ###  <a name="TsqlExample"></a>  

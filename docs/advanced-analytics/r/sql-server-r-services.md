@@ -1,23 +1,18 @@
 ---
 title: Apprentissage et R Services (de-de base de données) de l’ordinateur SQL Server | Documents Microsoft
-ms.date: 03/16/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Active
-ms.openlocfilehash: a610ff9393f502070cca28af84418b20c90e13cc
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 559309a29944f20f8c006ccc92769f0b2824e3b3
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585961"
 ---
 # <a name="sql-server-machine-learning-and-r-services-in-database"></a>Apprentissage et R Services (de-de base de données) de l’ordinateur SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -40,7 +35,7 @@ Dans la base de données analytique est conçus pour une intégration étroite a
 
 SQL Server 2016 est R uniquement. SQL Server 2017 prend en charge R et Python. Le tableau suivant décrit les fonctionnalités de chaque version. À l’exception du service SQL Server Launchpad, cette table est identique à celle fournie dans le [article de serveur autonome](r-server-standalone.md).
 
-| Composant |  Description |
+| Composant | Description |
 |-----------|-------------|
 | Service SQL Server Launchpad | Un service qui gère les communications entre les exécutions de R et Python externes et le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] instance. |
 | Packages R | [RevoScaleR](revoscaler-overview.md) est la bibliothèque principale pour R évolutive avec des fonctions de manipulation de données, de transformation, visualzation et analyse.  <br/>[MicrosoftML (R)](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package) ajoute des algorithmes d’apprentissage automatique pour créer des modèles personnalisés pour l’analyse de texte, l’analyse de l’image et analyse des sentiments. <br/>[mrsdeploy](operationalization-with-mrsdeploy.md) offres web de déploiement du service (dans SQL Server 2017 uniquement). <br/>[olapR](how-to-create-mdx-queries-using-olapr.md) de spécifier des requêtes MDX dans R.|
@@ -106,7 +101,7 @@ En règle générale, les chercheurs de données à l’aide de R ont des probl�
 
 + **revoscalepy**. Cette bibliothèque Python, disponible dans SQL Server 2017, implémente les fonctions les plus populaires dans RevoScaleR, telles que les contextes de calcul à distance et de nombreux algorithmes qui prennent en charge de traitement distribué.
 
-**Resources**
+**Ressources**
 
 + [Étude de cas sur les performances](../../advanced-analytics/r/performance-case-study-r-services.md)
 + [R et optimisation des données](../../advanced-analytics/r/r-and-data-optimization-r-services.md)
@@ -127,10 +122,10 @@ Pour tirer parti de la gestion des ressources et les fonctionnalités de sécuri
 + Configuration de la sécurité et en verrouillant les packages utilisés par une tâche particulière
 + L’activation de la gouvernance de ressources (nécessite l’édition Enterprise)
 
-**Resources**
+**Ressources**
 
 + [Gouvernance des ressources pour R](resource-governance-for-r-services.md)
-+ [Gestion des packages R pour SQL Server](r-package-management-for-sql-server-r-services.md)
++ [Gestion des packages R pour SQL Server](install-additional-r-packages-on-sql-server.md)
 
 ## <a name="see-also"></a>Voir aussi
 

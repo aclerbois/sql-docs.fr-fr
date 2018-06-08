@@ -1,28 +1,26 @@
 ---
 title: SQLGetCursorName (le pilote ODBC Visual FoxPro) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLGetCursorName function [ODBC], Visual FoxPro ODBC Driver
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLGetCursorName function [ODBC], Visual FoxPro ODBC Driver
 ms.assetid: 8b1c5233-950e-4173-ae15-dfc46be6ed09
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0769709d1a09c693578363d4712be0e983a72371
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 18d4fadd5298dbab6243c2b2d6afddf8d5bb7a4a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetcursorname-visual-foxpro-odbc-driver"></a>SQLGetCursorName (le pilote ODBC Visual FoxPro)
 > [!NOTE]  

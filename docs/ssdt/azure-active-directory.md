@@ -1,26 +1,22 @@
 ---
-title: "Prise en charge d’Azure Active Directory dans SQL Server Data Tools (SSDT) | Microsoft Docs"
-ms.custom: 
-ms.date: 03/05/2018
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssdt
-ms.reviewer: 
+title: Prise en charge d’Azure Active Directory dans SQL Server Data Tools (SSDT) | Microsoft Docs
+ms.custom: ''
+ms.date: 04/09/2018
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssdt
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssdt
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 14a6ae78a0ed5969ce3ab65dbd09b81680076fdb
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: 906bd42a1a4143217a974dd114adf82fa41e7270
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="azure-active-directory-support-in-sql-server-data-tools-ssdt"></a>Prise en charge d’Azure Active Directory dans SQL Server Data Tools (SSDT)
 
@@ -38,13 +34,13 @@ L’authentification par mot de passe Active Directory est un mécanisme de conn
 
 L’authentification intégrée à Active Directory est un mécanisme de connexion à Azure SQL Database à l’aide d’identités dans Azure Active Directory (Azure AD). Utilisez cette méthode pour vous connecter si vous êtes connecté à Windows avec vos informations d’identification Azure Active Directory à partir d’un domaine fédéré. Pour plus d’informations, voir [Connexion à la base de données SQL à l’aide de l’authentification Azure Active Directory](https://docs.microsoft.com/azure/sql-database/sql-database-aad-authentication).
 
-## <a name="active-directory-interactive-authentication-preview"></a>Authentification interactive Active Directory (préversion)
+## <a name="active-directory-interactive-authentication"></a>Authentification interactive Active Directory
 
 SSDT fournit une nouvelle méthode d’authentification pour la connexion à une base de données SQL Azure : **l’authentification interactive Active Directory**.
 
 
 > [!NOTE]
-> L’authentification interactive Active Directory est disponible lors de la connexion avec SSDT dans [Visual Studio 2017 (préversion)](https://www.visualstudio.com/vs/preview/) et nécessite que [la préversion .NET 4.7.2 (KB4038188)](https://go.microsoft.com/fwlink/?linkid=867317) soit installée sur l’ordinateur qui exécute SSDT. Si la préversion .NET 4.7.2 (KB4038188) n’est pas installée, l’option Authentification interactive Active Directory ne sera pas disponible.
+> L’authentification interactive Active Directory est disponible lors de la connexion avec SSDT dans [Visual Studio 2017 version 15.6](https://docs.microsoft.com/visualstudio/releasenotes/vs2017-relnotes) et nécessite [le téléchargement et l’installation de .NET Framework 4.7.2](https://www.microsoft.com/net/download/all) sur l’ordinateur qui exécute SSDT. Si [.NET Framework 4.7.2](https://docs.microsoft.com/dotnet/api/?view=netframework-4.7.2) n’est pas installé, l’option Authentification interactive Active Directory n’est pas disponible.
 
 
 L’authentification interactive Active Directory prend en charge une authentification interactive qui permet d’utiliser l’authentification multifacteur (MFA) Azure Active Directory (AD) pour l’authentification auprès d’Azure SQL Database. Cette méthode prend en charge les utilisateurs Azure AD natifs et fédérés, ainsi que les utilisateurs invités à partir d’autres comptes (notamment les utilisateurs B2B, les comptes Microsoft et non Microsoft comme @outlook.com, @hotmail.com, @live.com ainsi que @gmail.com). Si cette méthode est spécifiée, le **Nom d’utilisateur** doit être spécifié et le champ Mot de passe est désactivé. 
@@ -64,7 +60,7 @@ La mise en œuvre de l’authentification multifacteur (MFA) est fournie par Azu
 - *L’authentification interactive Active Directory* est uniquement prise en charge lors de la connexion à une base de données SQL Azure. Elle n’est pas prise en charge pour SQL Server (local ou sur une machine virtuelle) ou pour Azure SQL Data Warehouse.
 - *L’authentification interactive Active Directory* n’est pas prise en charge dans la boîte de dialogue de connexion dans *l’Explorateur de serveurs*, vous devez vous connecter à l’aide de SSDT avec *l’Explorateur d’objets SQL Server*.
 - L’intégration de l’authentification unique avec le compte actuellement connecté dans Visual Studio n’est pas prise en charge pour SSDT.
-- Le fichier SQLPackage.exe installé dans le répertoire Extensions lors de l’installation de Visual Studio n’est pas destiné à être utilisé à partir de cet emplacement. Pour utiliser SQLpackage.exe avec AAD, accédez au site https://www.microsoft.com/en-us/download/details.aspx?id=55088 
+- Le fichier SQLPackage.exe installé dans le répertoire Extensions lors de l’installation de Visual Studio n’est pas destiné à être utilisé à partir de cet emplacement. Pour utiliser SQLpackage.exe avec AAD, accédez à https://www.microsoft.com/en-us/download/details.aspx?id=55088 
 - La comparaison des données SSDT n’est pas prise en charge pour l’authentification AAD, y compris la nouvelle méthode d’authentification.  
 
 

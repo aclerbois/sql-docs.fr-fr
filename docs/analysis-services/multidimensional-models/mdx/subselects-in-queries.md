@@ -1,31 +1,23 @@
 ---
-title: "Les instructions de sous-sélection dans les requêtes | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 9e361798-688e-4b11-9eef-31fc793e8ba4
-caps.latest.revision: 
-author: Minewiskan
+title: Les instructions de sous-sélection dans les requêtes | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 32dfe1b5c7367121bd36dae57d0175304fc2fe14
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a74ddce096d58ba7b350617515bae3edc5b80c45
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="subselects-in-queries"></a>Instructions de sous-sélection dans les requêtes
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Les expressions d'instruction de sous-sélection sont des expressions SELECT imbriquées utilisées pour restreindre l'espace du cube à partir duquel SELECT externe est évalué. Les instructions de sous-sélection vous permettent de définir un nouvel espace sur lequel tous les calculs sont évalués.  
+  Les expressions d'instruction de sous-sélection sont des expressions SELECT imbriquées utilisées pour restreindre l'espace du cube à partir duquel SELECT externe est évalué. Les instructions de sous-sélection vous permettent de définir un nouvel espace sur lequel tous les calculs sont évalués.  
   
 ## <a name="subselects-by-example"></a>Instructions de sous-sélection par exemple  
  Commençons par un exemple illustrant comment les instructions de sous-sélection peuvent aider à produire les résultats que nous souhaitons afficher. Supposons qu'il vous est demandé de créer une table qui montre le comportement de ventes, sur des années, pour les 10 produits principaux.  
@@ -356,6 +348,6 @@ SELECT [Sales Territory].[Sales Territory Region].MEMBERS on 0
   
 -   La clause HAVING n’est pas autorisée dans une clause d’axe ; utilisez à la place une expression de fonction [Filter &#40;MDX&#41;](../../../mdx/filter-mdx.md).  
   
--   Par défaut les membres calculés ne sont pas autorisés dans les instructions de sous-sélection ; Toutefois, cette restriction peut être modifiée, dans une base par session, en affectant une valeur pour le **sous-requêtes** propriété de chaîne de connexion dans <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A> ou **DBPROP_MSMD_SUBQUERIES** propriété [pris en charge les propriétés XMLA &#40; XMLA &#41; ](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md). Consultez [Membres calculés dans les sous-sélections et les sous-cubes](../../../analysis-services/multidimensional-models/mdx/calculated-members-in-subselects-and-subcubes.md) pour obtenir une explication détaillée du comportement des membres calculés en fonction des valeurs de **SubQueries** ou **DBPROP_MSMD_SUBQUERIES**.  
+-   Par défaut les membres calculés ne sont pas autorisés dans les instructions de sous-sélection ; Toutefois, cette restriction peut être modifiée, dans une base par session, en affectant une valeur pour le **sous-requêtes** propriété de chaîne de connexion dans <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A> ou **DBPROP_MSMD_SUBQUERIES** propriété dans [ Les propriétés XMLA prises en charge &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md). Consultez [Membres calculés dans les sous-sélections et les sous-cubes](../../../analysis-services/multidimensional-models/mdx/calculated-members-in-subselects-and-subcubes.md) pour obtenir une explication détaillée du comportement des membres calculés en fonction des valeurs de **SubQueries** ou **DBPROP_MSMD_SUBQUERIES**.  
   
   

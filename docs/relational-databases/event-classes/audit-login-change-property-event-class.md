@@ -1,34 +1,30 @@
 ---
-title: "Audit Login Change Property, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Login Change Property, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Login Change Property event class
 ms.assetid: 47c8f045-37e5-471e-bf01-55d988ed47c1
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6f92e1ef79f71bc123a71c67a9cbea5489c6d5a1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 5ab3356b22245b3ff52ee8c7d6a53190e6ef1050
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-login-change-property-event-class"></a>Audit Login Change Property event class (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Login Change Property** intervient quand vous utilisez la procédure stockée **sp_defaultdb** ou **sp_defaultlanguage** , ou bien l’instruction ALTER LOGIN pour modifier une propriété de connexion.  
+  La classe d’événements **Audit Login Change Property** intervient quand vous utilisez la procédure stockée **sp_defaultdb** ou **sp_defaultlanguage** , ou bien l’instruction ALTER LOGIN pour modifier une propriété de connexion.  
   
 ## <a name="audit-login-change-property-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Login Change Property  
   

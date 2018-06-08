@@ -1,40 +1,41 @@
 ---
-title: "Affichage des recommandations de paramétrage | Documents Microsoft"
-ms.custom: 
+title: Affichage des recommandations de paramétrage | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: dta
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: SQL Server 2016
-helpviewer_keywords: Database Engine [SQL Server], tutorials
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+applies_to:
+- SQL Server 2016
+helpviewer_keywords:
+- Database Engine [SQL Server], tutorials
 ms.assetid: e4e690c9-434f-4b01-b4de-0b905323ddd6
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 634534fb9fa7f97e61431a481ab847bd87e2806a
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 9def661b232efcd07d3b2b9ac84e1daabcd596cf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="lesson-1-2---viewing-tuning-recommendations"></a>Leçon 1-2 - affichage des recommandations de paramétrage
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Cette tâche utilise la session de paramétrage que vous avez créé dans [une charge de travail de paramétrage](../../tools/dta/lesson-1-1-tuning-a-workload.md). Une fois la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] paramétrée au moyen du script [!INCLUDE[tsql](../../includes/tsql-md.md)] MyScript.sql, l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] affiche ses résultats sous l’onglet **Recommendations** . La tâche suivante présente l’onglet **Recommendations** de l’interface graphique utilisateur de l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] et vous guide pour explorer les informations que ce dernier fournit sur les résultats de la session de paramétrage.  
+# <a name="lesson-1-2---viewing-tuning-recommendations"></a>Leçon 1-2 : Affichage des recommandations pour le paramétrage
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Cette tâche est basée sur la session de paramétrage que vous avez créée dans [Paramétrage d’une charge de travail](../../tools/dta/lesson-1-1-tuning-a-workload.md). Une fois la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] paramétrée au moyen du script [!INCLUDE[tsql](../../includes/tsql-md.md)] MyScript.sql, l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] affiche ses résultats sous l’onglet **Recommendations** . La tâche suivante présente l’onglet **Recommendations** de l’interface graphique utilisateur de l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] et vous guide pour explorer les informations que ce dernier fournit sur les résultats de la session de paramétrage.  
   
 ### <a name="view-tuning-recommendations"></a>Afficher les recommandations de paramétrage  
   
 1.  Démarrez l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Consultez [Lancement de l’Assistant Paramétrage du moteur de base de données](../../tools/dta/lesson-1-1-launching-database-engine-tuning-advisor.md). Assurez-vous de vous connecter à la même instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] que celle utilisée au cours de l’exercice [Paramétrage d’une charge de travail](../../tools/dta/lesson-1-1-tuning-a-workload.md).  
   
-2.  Double-cliquez sur **MySession** dans le volet **Moniteur de session** . [!INCLUDE[ssDE](../../includes/ssde-md.md)]L’Assistant Paramétrage charge les informations de session à partir de votre session de paramétrage précédente et affiche le **recommandations** onglet. Notez que l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] n’a fourni aucune **Recommandation de partition** ; en effet, vous avez accepté toutes les valeurs par défaut des options de paramétrage et l’option **Aucun partitionnement** a été sélectionnée sous l’onglet **Options de paramétrage** .  
+2.  Double-cliquez sur **MySession** dans le volet **Moniteur de session** . [!INCLUDE[ssDE](../../includes/ssde-md.md)] L’Assistant Paramétrage du moteur de base de données charge les informations de session de votre session de paramétrage précédente et affiche l’onglet **Recommandations** . Notez que l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] n’a fourni aucune **Recommandation de partition** ; en effet, vous avez accepté toutes les valeurs par défaut des options de paramétrage et l’option **Aucun partitionnement** a été sélectionnée sous l’onglet **Options de paramétrage** .  
   
-3.  Sous l’onglet **Recommandations** , utilisez la barre de défilement en bas de la page à onglet pour afficher toutes les colonnes **Recommandations d’index** . Chaque ligne représente un objet de base de données (index ou vues indexées) que l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] recommande de supprimer ou de créer. Faites défiler l’écran vers la colonne la plus à droite et sélectionnez une **Définition**. [!INCLUDE[ssDE](../../includes/ssde-md.md)]L’Assistant Paramétrage affiche un **aperçu de Script SQL** fenêtre dans laquelle vous pouvez afficher le [!INCLUDE[tsql](../../includes/tsql-md.md)] script qui crée ou supprime l’objet de base de données sur cette ligne. Cliquez sur **Terminer** pour fermer la fenêtre de prévisualisation.  
+3.  Sous l’onglet **Recommandations** , utilisez la barre de défilement en bas de la page à onglet pour afficher toutes les colonnes **Recommandations d’index** . Chaque ligne représente un objet de base de données (index ou vues indexées) que l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] recommande de supprimer ou de créer. Faites défiler l’écran vers la colonne la plus à droite et sélectionnez une **Définition**. [!INCLUDE[ssDE](../../includes/ssde-md.md)] L’Assistant Paramétrage du moteur de base de données affiche la fenêtre **Aperçu de script SQL** , dans laquelle vous pouvez voir le script [!INCLUDE[tsql](../../includes/tsql-md.md)] qui permet de créer ou de supprimer l’objet de base de données sur cette ligne. Cliquez sur **Terminer** pour fermer la fenêtre de prévisualisation.  
   
     Si vous avez du mal à trouver une **Définition** contenant un lien, décochez la case **Afficher les objets existants** en bas de la page à onglet pour diminuer le nombre de lignes affichées. Quand vous décochez cette case, l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] affiche uniquement les objets pour lesquels il a émis une recommandation. Cochez la case **Afficher les objets existants** pour visualiser tous les objets de base de données existant dans la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] . Utilisez la barre de défilement à droite de la page à onglet pour visualiser tous les objets.  
   

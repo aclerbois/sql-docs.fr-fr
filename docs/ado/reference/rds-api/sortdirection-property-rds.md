@@ -1,30 +1,28 @@
 ---
-title: "SortDirection, propriété (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: SortDirection, propriété (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - SortDirection property [RDS]
 ms.assetid: 1d9d8715-e4ad-4ff3-bf7f-f1dc0532d8c2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9fa72c903861d2471032218738165be474224aaa
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a5e90064c340e36df27bccd4a8122d6d40a27ff8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sortdirection-property-rds"></a>SortDirection, propriété (RDS)
 Indique si un ordre de tri est croissant ou décroissant.  

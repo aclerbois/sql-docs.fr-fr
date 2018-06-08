@@ -1,30 +1,19 @@
 ---
-title: "Automatiser les tâches d’administration Analysis Services avec SSIS | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Execute DDL Task [Analysis Services]
-- Analysis Services Processing task
-ms.assetid: e960a9a2-80b4-45da-9369-bc560ecdccac
-caps.latest.revision: 
-author: Minewiskan
+title: Automatiser les tâches d’administration Analysis Services avec SSIS | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 308c7910d408fcb29689484eb71726a669ed6d98
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c750c0e8ee9f13c4b4751af872b02f4ed9ee419a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="automate-analysis-services-administrative-tasks-with-ssis"></a>Automatiser les tâches d'administration Analysis Services avec SSIS
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

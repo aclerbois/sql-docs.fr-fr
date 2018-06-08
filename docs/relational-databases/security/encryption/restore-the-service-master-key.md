@@ -1,34 +1,33 @@
 ---
-title: "Restaurer la clé principale du service | Microsoft Docs"
-ms.custom: 
+title: Restaurer la clé principale du service | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - service master key [SQL Server], importing
 - service master key [SQL Server], restoring
 ms.assetid: 14bdbbbe-d384-4692-b670-4243d2466fe1
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3a577b9da0c3c82cf286899641efa26a03246620
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 38c2da3d1ad701174d88bf040f9b3b9d0e2d8573
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-the-service-master-key"></a>Restaurer la clé principale du service
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment restaurer la clé principale de service dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment restaurer la clé principale de service dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
 > [!WARNING]  
 >  Il est peu probable que vous ayez jamais à restaurer cette clé. Si vous deviez le faire, observez la plus grande prudence. Pour plus d’informations, consultez [Back Up the Service Master Key](../../../relational-databases/security/encryption/back-up-the-service-master-key.md).  
@@ -58,7 +57,7 @@ ms.lasthandoff: 11/21/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
  Requiert l'autorisation CONTROL SERVER sur le serveur.  
   
 ##  <a name="SSMSProcedure"></a> Utilisation de Transact-SQL  
@@ -67,7 +66,7 @@ ms.lasthandoff: 11/21/2017
   
 1.  Récupérez une copie de la clé principale du service sauvegardée, à partir d'un support de sauvegarde physique ou d'un répertoire sur le système de fichiers local.  
   
-2.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+2.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 3.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   

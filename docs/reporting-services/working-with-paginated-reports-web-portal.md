@@ -1,27 +1,25 @@
 ---
-title: "Utilisation des rapports paginés (portail web) | Microsoft Docs"
-ms.custom: 
+title: Utilisation des rapports paginés (portail web) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/02/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: fb0bc38f-dc56-4350-8457-cd135c0346e1
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0f8ff65614eac486e11fc907c42737eb330c8b83
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e7036050c715f1c53275cdad4cd2f3069d7b6f8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-paginated-reports-web-portal"></a>Utilisation des rapports paginés (portail web)
 

@@ -1,31 +1,23 @@
 ---
-title: "Requêtes de définition de données (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 49e02de1-4ffa-401c-8eee-471a9c25b86a
-caps.latest.revision: 
-author: Minewiskan
+title: Requêtes de définition de données (exploration de données) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 286d7cbe5d6dbb2fb0b05b937fbd1a304f89aa1e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 562a3c0fd3b73c60f3e729afe926d61d68e55b1b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-definition-queries-data-mining"></a>Requêtes de définition des données (Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Pour l’exploration de données, la catégorie *requête Définition des données* signifie des instructions DMX ou des commandes XMLA qui effectuent les opérations suivantes :  
+  Pour l’exploration de données, la catégorie *requête Définition des données* signifie des instructions DMX ou des commandes XMLA qui effectuent les opérations suivantes :  
   
 -   Créer, modifier, ou manipuler des objets d'exploration de données, tels qu'un modèle.  
   
@@ -66,14 +58,14 @@ Pour l’exploration de données, la catégorie *requête Définition des donné
   
 -   Définir le jeu de données utilisé pour l’apprentissage d’un modèle, en utilisant [INSERT INTO &#40;DMX&#41;](../../dmx/insert-into-dmx.md) avec une requête de source de données comme OPENROWSET.  
   
- [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] fournit les modèles de requête qui peuvent vous aider à créer des requêtes Définition des données. Pour plus d’informations, consultez [Utiliser des modèles Analysis Services dans SQL Server Management Studio](../../analysis-services/instances/use-analysis-services-templates-in-sql-server-management-studio.md).  
+ [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] fournit les modèles de requête qui peuvent vous aider à créer des requêtes de définition des données. Pour plus d’informations, consultez [Utiliser des modèles Analysis Services dans SQL Server Management Studio](../../analysis-services/instances/use-analysis-services-templates-in-sql-server-management-studio.md).  
   
  En général, les modèles qui sont fournis pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] contiennent uniquement la définition générale de syntaxe, que vous devez personnaliser, soit en tapant dans la fenêtre **Requête** , soit en utilisant la boîte de dialogue fournie pour entrer des paramètres.  
   
  Pour obtenir un exemple de la manière d’entrer des paramètres à l’aide de l’interface, consultez [Créer une requête singleton de prédiction à partir d’un modèle](../../analysis-services/data-mining/create-a-singleton-prediction-query-from-a-template.md).  
   
 ###  <a name="bkmk_Scripts"></a> Scripts d'instructions de définition des données (DDL)  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit plusieurs scripts et langages de programmation que vous pouvez utiliser pour créer ou modifier des objets d’exploration de données, ou pour définir des sources de données.  Bien que DMX soit conçu pour accélérer les tâches d'exploration de données, vous pouvez également utiliser XMLA et AMO pour manipuler des objets dans les scripts ou dans du code personnalisé.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit plusieurs scripts et langages de programmation que vous pouvez utiliser pour créer ou modifier des objets d'exploration de données, ou pour définir des sources de données.  Bien que DMX soit conçu pour accélérer les tâches d'exploration de données, vous pouvez également utiliser XMLA et AMO pour manipuler des objets dans les scripts ou dans du code personnalisé.  
   
  Le complément d’exploration de données pour Excel inclut également de nombreux modèles de requête et fournit un **éditeur de requête avancé**, qui vous aide à composer des instructions DMX complexes. Vous pouvez générer une requête de manière interactive, puis basculer vers la vue SQL pour capturer l'instruction DMX.  
   
@@ -91,11 +83,11 @@ Pour l’exploration de données, la catégorie *requête Définition des donné
 |Utiliser des modèles pour des requêtes DMX.|[Utiliser des modèles Analysis Services dans SQL Server Management Studio](../../analysis-services/instances/use-analysis-services-templates-in-sql-server-management-studio.md)|  
 |Concevoir des requêtes de tous types, à l'aide du Générateur de requêtes de prédiction.|[Créer une requête de prédiction à l’aide du Générateur de requêtes de prédiction](../../analysis-services/data-mining/create-a-prediction-query-using-the-prediction-query-builder.md)|  
 |Capturer des définitions de requêtes à l'aide de SQL Server Profiler, puis utiliser les traces pour surveiller [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].|[Utiliser SQL Server Profiler pour surveiller Analysis Services](../../analysis-services/instances/use-sql-server-profiler-to-monitor-analysis-services.md)|  
-|En savoir plus sur les langages de script et les langages de programmation fournis pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].|[XML for Analysis &#40; XMLA &#41; Référence](../../analysis-services/xmla/xml-for-analysis-xmla-reference.md)<br /><br /> [Développement avec Analysis Management Objects &#40; AMO &#41;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)|  
-|Apprendre à gérer les modèles dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] et [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)].|[Exporter et importer des objets d’exploration de données](../../analysis-services/data-mining/export-and-import-data-mining-objects.md)<br /><br /> [EXPORTATION &#40; DMX &#41;](../../dmx/export-dmx.md)<br /><br /> [IMPORTATION &#40; DMX &#41;](../../dmx/import-dmx.md)|  
+|En savoir plus sur les langages de script et les langages de programmation fournis pour [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].|[XML for Analysis & #40 ; XMLA & #41 ; Référence](../../analysis-services/xmla/xml-for-analysis-xmla-reference.md)<br /><br /> [Développement avec Analysis Management Objects & #40 ; AMO & #41 ;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)|  
+|Apprendre à gérer les modèles dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] et [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)].|[Exporter et importer des objets d’exploration de données](../../analysis-services/data-mining/export-and-import-data-mining-objects.md)<br /><br /> [EXPORTATION & #40 ; DMX & #41 ;](../../dmx/export-dmx.md)<br /><br /> [IMPORTATION & #40 ; DMX & #41 ;](../../dmx/import-dmx.md)|  
 |En savoir plus sur OPENROWSET et d'autres méthodes pour interroger des données externes.|[&#60;requête de données source&#62;](../../dmx/source-data-query.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assistant exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md)  
+ [Assistant exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md)  
   
   

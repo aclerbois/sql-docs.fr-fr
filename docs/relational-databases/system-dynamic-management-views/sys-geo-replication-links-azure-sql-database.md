@@ -1,17 +1,15 @@
 ---
-title: "Sys.geo_replication_links (de base de données SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.geo_replication_links (de base de données SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 10/18/2016
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
-ms.component: dmv's
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - dm_geo_replication_links_TSQL
 - dm_geo_replication_links
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - sys.dm_geo_replication_links dynamic management view
 - dm_geo_replication_links dynamic management view
 ms.assetid: 58911798-1d60-4f28-87ab-2def2bfc3de7
-caps.latest.revision: 
+caps.latest.revision: 14
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5eb8f74023e90966200aca7603b82f685e0eb9db
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: 5e59dcd6550c006b5a1e0f3e3be6440669e05021
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysgeoreplicationlinks-azure-sql-database"></a>Sys.geo_replication_links (de base de données SQL Azure)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]
@@ -72,7 +70,7 @@ FROM sys.geo_replication_links;
   
 ## <a name="see-also"></a>Voir aussi  
  [ALTER DATABASE (Azure SQL Database)](../../t-sql/statements/alter-database-azure-sql-database.md)   
- [sys.dm_geo_replication_link_status &#40;Azure SQL Database&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-geo-replication-link-status-azure-sql-database.md)   
- [sys.dm_operation_status &#40;Azure SQL Database&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-operation-status-azure-sql-database.md)  
+ [Sys.dm_geo_replication_link_status &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-geo-replication-link-status-azure-sql-database.md)   
+ [Sys.dm_operation_status &#40;base de données SQL Azure&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-operation-status-azure-sql-database.md)  
   
   

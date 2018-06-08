@@ -1,17 +1,16 @@
 ---
-title: "Rôles d’applications | Microsoft Docs"
-ms.custom: 
+title: Rôles d’applications | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - application roles [SQL Server], about application roles
 - principals [SQL Server], application roles
@@ -23,19 +22,20 @@ helpviewer_keywords:
 - authentication [SQL Server], roles
 - groups [SQL Server], roles
 ms.assetid: dca18b8a-ca03-4b7f-9a46-8474d5b66f76
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 76f05f0da9acce4f7e1a9e7749972a29ddd31a67
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6c1c7c76b3b730242c1fb1529f1a939a519bbc2d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="application-roles"></a>Rôles d'applications
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Un rôle d’application est un principal de base de données qui permet à une application de s’exécuter avec ses propres autorisations de type utilisateur. Vous pouvez utiliser les rôles d'application pour permettre l'accès à des données spécifiques aux utilisateurs qui se connectent via une application spécifique. À la différence des rôles de base de données, les rôles d'application ne contiennent pas de membres et sont inactifs par défaut. Les rôles d'application fonctionnent avec les deux modes d'authentification. Les rôles d’application sont activés grâce à **sp_setapprole**qui nécessite un mot de passe. Les rôles d’application étant un principal au niveau des bases de données, ils peuvent uniquement accéder à d’autres bases de données par le biais des autorisations accordées dans ces bases de données à **invité**. Toute base de données où **invité** a été désactivé est donc inaccessible aux rôles d’application des autres bases de données.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Un rôle d'application est un principal de base de données qui permet à une application de s'exécuter avec ses propres autorisations de type utilisateur. Vous pouvez utiliser les rôles d'application pour permettre l'accès à des données spécifiques aux utilisateurs qui se connectent via une application spécifique. À la différence des rôles de base de données, les rôles d'application ne contiennent pas de membres et sont inactifs par défaut. Les rôles d'application fonctionnent avec les deux modes d'authentification. Les rôles d’application sont activés grâce à **sp_setapprole**qui nécessite un mot de passe. Les rôles d’application étant un principal au niveau des bases de données, ils peuvent uniquement accéder à d’autres bases de données par le biais des autorisations accordées dans ces bases de données à **invité**. Toute base de données où **invité** a été désactivé est donc inaccessible aux rôles d’application des autres bases de données.  
   
  Dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], les rôles d'application ne peuvent pas accéder à des métadonnées au niveau serveur, car ils ne sont pas associés à un principal au niveau serveur Pour désactiver cette restriction et permettre ainsi aux rôles d'application d'accéder aux métadonnées de niveau serveur, définissez l'indicateur global 4616. Pour plus d’informations, consultez [Indicateurs de trace &#40;Transact-SQL&#41;](../../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) et [DBCC TRACEON &#40;Transact-SQL&#41;](../../../t-sql/database-console-commands/dbcc-traceon-transact-sql.md).  
   
@@ -59,7 +59,7 @@ ms.lasthandoff: 11/21/2017
 > [!IMPORTANT]  
 >  L’option **encrypt** d’ODBC n’est pas prise en charge par **SqlClient**. Lorsque vous transmettez des informations confidentielles sur un réseau, utilisez le protocole SSL (Secure Sockets Layer) ou IPsec pour chiffrer le canal. Si vous devez conserver des informations d'identification dans l'application cliente, chiffrez-les à l'aide des fonctions API de chiffrement. Dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)] et les versions ultérieures, le paramètre *password* est stocké sous la forme d’un hachage unidirectionnel.  
   
-## <a name="related-tasks"></a>Tâches associées  
+## <a name="related-tasks"></a>Related Tasks  
   
 |||  
 |-|-|  
@@ -68,7 +68,7 @@ ms.lasthandoff: 11/21/2017
 |Supprimer un rôle d'application.|[DROP APPLICATION ROLE &#40;Transact-SQL&#41;](../../../t-sql/statements/drop-application-role-transact-sql.md)|  
 |Utilisation d'un rôle d'application.|[sp_setapprole &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-setapprole-transact-sql.md)|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Sécurisation de SQL Server](../../../relational-databases/security/securing-sql-server.md)  
   
   

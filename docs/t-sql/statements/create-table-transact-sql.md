@@ -2,14 +2,12 @@
 title: CREATE TABLE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: ''
 ms.component: t-sql|statements
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -53,12 +51,11 @@ caps.latest.revision: 256
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: e2018a6e0975c739a3d796cb1f0bdf6a0b392584
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 3768086c0c4e959586eb1ab8620dbdfda4cabe9a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-table-transact-sql"></a>CREATE TABLE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -391,22 +388,22 @@ column_name <data_type>
  PERSISTED  
  Spécifie que le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] stockera physiquement les valeurs calculées dans la table et qu'il les mettra à jour lorsque les autres colonnes dont dépend la colonne calculée seront actualisées. Notamment, une colonne calculée en tant que PERSISTED vous permet de créer un index sur une colonne calculée qui est déterministe, mais pas précise. Pour plus d'informations, consultez [Indexes on Computed Columns](../../relational-databases/indexes/indexes-on-computed-columns.md). Les colonnes calculées utilisées comme colonnes de partitionnement d'une table partitionnée doivent être marquées comme PERSISTED. *computed_column_expression* doit être déterministe quand PERSISTED est spécifié.  
   
- ON { *partition_scheme* | *filegroup* | **"**default**"** }  
+ ON { *partition_scheme* | *filegroup* | **"** default **"** }  
 
- Spécifie le schéma de partition ou groupe de fichiers dans lequel la table est stockée. Si *partition_scheme* est spécifié, la table est partitionnée avec des partitions stockées dans un ensemble d’un ou de plusieurs groupes de fichiers spécifié dans *partition_scheme*. Si *filegroup* est spécifié, la table est stockée dans le groupe de fichiers nommé. Le groupe de fichiers doit exister dans la base de données. Si **"**default**"** est spécifié, ou si ON n’est pas spécifié du tout, la table est stockée dans le groupe de fichiers par défaut. Le mécanisme de stockage d'une table tel que spécifié dans CREATE TABLE ne peut plus être modifié ultérieurement.  
+ Spécifie le schéma de partition ou groupe de fichiers dans lequel la table est stockée. Si *partition_scheme* est spécifié, la table est partitionnée avec des partitions stockées dans un ensemble d’un ou de plusieurs groupes de fichiers spécifié dans *partition_scheme*. Si *filegroup* est spécifié, la table est stockée dans le groupe de fichiers nommé. Le groupe de fichiers doit exister dans la base de données. Si **"** default **"** est spécifié, ou si ON n’est pas spécifié du tout, la table est stockée dans le groupe de fichiers par défaut. Le mécanisme de stockage d'une table tel que spécifié dans CREATE TABLE ne peut plus être modifié ultérieurement.  
   
- ON {*partition_scheme* | *filegroup* | **"**default**"**} peut également être spécifié dans une contrainte PRIMARY KEY ou UNIQUE. Ces contraintes créent des index. Si *filegroup* est spécifié, l’index est stocké dans le groupe de fichiers nommé. Si **"**default**"** est spécifié, ou si ON n’est pas spécifié du tout, l’index est stocké dans le même groupe de fichiers que la table. Si la contrainte PRIMARY KEY ou UNIQUE crée un index cluster, les pages de données de la table sont stockées dans le même groupe de fichiers que l'index. Si CLUSTERED est spécifié ou la contrainte crée un index cluster d’une autre manière, et qu’une valeur *partition_scheme* est spécifiée qui diffère des valeurs *partition_scheme* ou *filegroup* de la définition de table, ou vice versa, seule la définition de la contrainte sera honorée et l’autre sera ignorée.  
+ ON {*partition_scheme* | *filegroup* | **"** default **"**} peut également être spécifié dans une contrainte PRIMARY KEY ou UNIQUE. Ces contraintes créent des index. Si *filegroup* est spécifié, l’index est stocké dans le groupe de fichiers nommé. Si **"** default **"** est spécifié, ou si ON n’est pas spécifié du tout, l’index est stocké dans le même groupe de fichiers que la table. Si la contrainte PRIMARY KEY ou UNIQUE crée un index cluster, les pages de données de la table sont stockées dans le même groupe de fichiers que l'index. Si CLUSTERED est spécifié ou la contrainte crée un index cluster d’une autre manière, et qu’une valeur *partition_scheme* est spécifiée qui diffère des valeurs *partition_scheme* ou *filegroup* de la définition de table, ou vice versa, seule la définition de la contrainte sera honorée et l’autre sera ignorée.  
   
 > [!NOTE]  
->  L'élément « default » n'est pas un mot clé dans ce contexte. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"**default**"** ou ON **[**default**]**. Si **"**default**"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+>  L'élément « default » n'est pas un mot clé dans ce contexte. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"** default **"** ou ON **[** default **]**. Si **"** default **"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
 > [!NOTE]  
 >  Après avoir créé une table partitionnée, pensez à affecter à l'option LOCK_ESCALATION de la table la valeur AUTO. Cela peut améliorer la concurrence en permettant l'escalade des verrous au niveau de la partition (HoBT) plutôt que de la table. Pour plus d’informations, consultez [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md).  
   
- TEXTIMAGE_ON { *filegroup*| **"**default**"** }  
+ TEXTIMAGE_ON { *filegroup*| **"** default **"** }  
  Indique que les colonnes **text**, **ntext**, **image**, **xml**, **varchar(max)**, **nvarchar(max)**, **varbinary(max)** et de type CLR (Common Language Runtime) défini par l’utilisateur (y compris géométrie et géographie) sont stockées dans le groupe de fichiers spécifié.  
   
- TEXTIMAGE_ON n'est pas autorisé s'il n'y a pas de colonne de valeur élevée dans la table. TEXTIMAGE_ON ne peut pas être spécifié si *partition_scheme* est spécifié. Si **"**default**"** est spécifié, ou si TEXTIMAGE_ON n’est pas spécifié du tout, les colonnes de valeur élevée sont stockées dans le groupe de fichiers par défaut. Le stockage de données de colonnes de valeur élevée tel que spécifié dans CREATE TABLE ne peut plus être modifié ultérieurement.  
+ TEXTIMAGE_ON n'est pas autorisé s'il n'y a pas de colonne de valeur élevée dans la table. TEXTIMAGE_ON ne peut pas être spécifié si *partition_scheme* est spécifié. Si **"** default **"** est spécifié, ou si TEXTIMAGE_ON n’est pas spécifié du tout, les colonnes de valeur élevée sont stockées dans le groupe de fichiers par défaut. Le stockage de données de colonnes de valeur élevée tel que spécifié dans CREATE TABLE ne peut plus être modifié ultérieurement.  
 
 > [!NOTE]  
 > Varchar(max), nvarchar(max), varbinary(max), xml et les valeurs UDT volumineuses sont stockées directement dans la ligne de données, jusqu’à une limite de 8000 octets et tant que la valeur peut être contenue dans l’enregistrement. Si la valeur ne tient pas dans l’enregistrement, un pointeur est stocké dans la ligne et le reste est stocké hors de la ligne dans l’espace de stockage LOB. La valeur par défaut est 0.
@@ -414,9 +411,9 @@ TEXTIMAGE_ON change uniquement l’emplacement de l’espace de stockage LOB. Il
 
 
 > [!NOTE]  
->  L'élément « default » n'est pas un mot clé dans ce contexte. Il représente l’identificateur du groupe de fichiers par défaut et doit être délimité, par exemple de la manière suivante : TEXTIMAGE_ON **"**default**"** ou TEXTIMAGE_ON **[**default**]**. Si **"**default**"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+>  L'élément « default » n'est pas un mot clé dans ce contexte. Il représente l’identificateur du groupe de fichiers par défaut et doit être délimité, par exemple de la manière suivante : TEXTIMAGE_ON **"** default **"** ou TEXTIMAGE_ON **[** default **]**. Si **"** default **"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
- FILESTREAM_ON { *partition_scheme_name* | filegroup | **"**default**"** } **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. 
+ FILESTREAM_ON { *partition_scheme_name* | filegroup | **"** default **"** } **S’applique à** : [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. 
  
  Spécifie le groupe de fichiers pour les données FILESTREAM.  
   
@@ -430,7 +427,7 @@ TEXTIMAGE_ON change uniquement l’emplacement de l’espace de stockage LOB. Il
   
 -   Une instruction [CREATE INDEX](../../t-sql/statements/create-index-transact-sql.md) convertit un segment de mémoire en index cluster. Dans ce cas, il est possible de spécifier un autre groupe de fichiers FILESTREAM, un autre schéma de partition ou la valeur NULL.  
   
--   Une instruction [DROP INDEX](../../t-sql/statements/drop-index-transact-sql.md) convertit un index cluster en segment de mémoire. Dans ce cas, il est possible de spécifier un autre groupe de fichiers FILESTREAM, un autre schéma de partition ou la valeur **"**default**"**.  
+-   Une instruction [DROP INDEX](../../t-sql/statements/drop-index-transact-sql.md) convertit un index cluster en segment de mémoire. Dans ce cas, il est possible de spécifier un autre groupe de fichiers FILESTREAM, un autre schéma de partition ou la valeur **"** default **"**.  
   
  Le groupe de fichiers de la clause `FILESTREAM_ON <filegroup>` ou chaque groupe de fichiers FILESTREAM nommé dans le schéma de partition doit avoir un fichier défini pour le groupe de fichiers. Ce fichier doit être défini à l’aide d’une instruction [CREATE DATABASE](../../t-sql/statements/create-database-sql-server-transact-sql.md) ou [ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql.md), sinon une erreur est générée.  
   
@@ -525,7 +522,7 @@ Indique qu’il faut créer un index sur la table. Il peut s’agir d’un index
   
  L’index columnstore non-cluster est stocké et géré en tant qu’index columnstore cluster. Il porte le nom d’index columnstore non-cluster car les colonnes peuvent être limitées et il existe en tant qu’index secondaire sur une table.  
   
- ON *partition_scheme_name***(***column_name***)**  
+ ON *partition_scheme_name ***(*** column_name***)**  
  Spécifie le schéma de partition qui définit les groupes de fichiers auxquels les partitions d'un index partitionné seront mappées. Le schéma de partition doit exister dans la base de données en exécutant soit [CREATE PARTITION SCHEME](../../t-sql/statements/create-partition-scheme-transact-sql.md), soit [ALTER PARTITION SCHEME](../../t-sql/statements/alter-partition-scheme-transact-sql.md). *column_name* spécifie la colonne par rapport à laquelle un index partitionné sera partitionné. Cette colonne doit correspondre au type de données, à la longueur et à la précision de l’argument de la fonction de partition que *partition_scheme_name* utilise. *column_name* n’est pas limité aux colonnes de la définition d’index. Toute colonne de la table de base peut être spécifiée, sauf lors du partitionnement d’un index UNIQUE ; le nom de colonne *column_name* doit être choisi parmi les noms de colonnes utilisés comme clés uniques. Cette restriction permet au [!INCLUDE[ssDE](../../includes/ssde-md.md)] de vérifier l'unicité des valeurs de clés dans une seule partition uniquement.  
   
 > [!NOTE]  
@@ -541,10 +538,10 @@ Indique qu’il faut créer un index sur la table. Il peut s’agir d’un index
  ON *filegroup_name*  
  Crée l'index spécifié dans le groupe de fichiers spécifié. Si aucun emplacement n'est défini et que la table ou la vue n'est pas partitionnée, l'index utilise le même groupe de fichiers que la table ou la vue sous-jacente. Le groupe de fichiers doit déjà exister.  
   
- ON **"**default**"**  
+ ON **"** default **"**  
  Crée l'index spécifié sur le groupe de fichiers par défaut.  
   
- Le terme « default », dans ce contexte, n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"**default**"** ou ON **[**default**]**. Si "default" est spécifié, l'option QUOTED_IDENTIFIER doit être activée (ON) pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+ Le terme « default », dans ce contexte, n'est pas un mot clé. Il s’agit de l’identificateur du groupe de fichiers par défaut et il doit être délimité, comme dans ON **"** default **"** ou ON **[** default **]**. Si "default" est spécifié, l'option QUOTED_IDENTIFIER doit être activée (ON) pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
  [ FILESTREAM_ON { *filestream_filegroup_name* | *partition_scheme_name* | "NULL" } ]  
    
@@ -1261,7 +1258,9 @@ SELECT * FROM tempdb.sys.database_files
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite une autorisation CREATE TABLE dans la base de données et une autorisation ALTER pour le schéma dans lequel la table a été créée.  
-  
+ 
+ Si des colonnes de l’instruction CREATE TABLE sont définies avec un type de données défini par l’utilisateur, une autorisation REFERENCES est nécessaire sur ce type. 
+ 
  Si des colonnes dans l'instruction CREATE TABLE sont définies avec le type de données CLR défini par l'utilisateur, la propriété du type ou une autorisation REFERENCES est nécessaire.  
   
  Si des colonnes dans l'instruction CREATE TABLE sont associées à une collection de schémas XML, la propriété de la collection de schémas XML ou une autorisation REFERENCES pour le type est nécessaire.  

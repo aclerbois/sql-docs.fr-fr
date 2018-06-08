@@ -1,31 +1,32 @@
 ---
-title: "ConfigurationSetting, méthode - GenerateDatabaseCreationScript | Microsoft Docs"
-ms.custom: 
+title: ConfigurationSetting, méthode - GenerateDatabaseCreationScript | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: GenerateDatabaseCreationScript (WMI MSReportServer_ConfigurationSetting Class)
-apilocation: reportingservices.mof
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- GenerateDatabaseCreationScript (WMI MSReportServer_ConfigurationSetting Class)
+apilocation:
+- reportingservices.mof
 apitype: MOFDef
-helpviewer_keywords: GenerateDatabaseCreationScript method
+helpviewer_keywords:
+- GenerateDatabaseCreationScript method
 ms.assetid: 25232dc7-00fe-4cd1-8a1c-7e36d552de00
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 668be602cce0b74e0d2662021b3e4306405c4fb7
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 1b3ff8c46b9729722789ccf713ea11d86d9baf42
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---generatedatabasecreationscript"></a>Méthode ConfigurationSetting - GenerateDatabaseCreationScript
   Génère un script SQL qui peut être utilisé pour créer une base de données du serveur de rapports.  

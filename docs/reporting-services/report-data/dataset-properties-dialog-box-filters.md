@@ -1,31 +1,29 @@
 ---
-title: "Boîte de dialogue Propriétés du dataset, Filtres | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Propriétés du dataset, Filtres | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - sql13.rtp.rptdesigner.datasetproperties.filters.f1
 - "10170"
 - "10025"
 ms.assetid: 53ac304f-7f7c-4f00-9b3b-9b563ec97917
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7df325a93902e8c1cd3414b562b30c27864dd372
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d751e5434a5737c418991f066ea9a5789fc3ab6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dataset-properties-dialog-box-filters"></a>Boîte de dialogue Propriétés du dataset, Filtres
   Sélectionnez **Filtres** dans la boîte de dialogue **Propriétés du dataset** pour créer des filtres pour le dataset.  

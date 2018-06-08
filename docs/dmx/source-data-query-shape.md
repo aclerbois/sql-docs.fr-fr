@@ -1,32 +1,32 @@
 ---
 title: FORME (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: SHAPE
-dev_langs: DMX
+f1_keywords:
+- SHAPE
+dev_langs:
+- DMX
 helpviewer_keywords:
 - SHAPE statement
 - multiple data sources
 ms.assetid: b9526ec2-40bc-4bf5-b4e5-774f71075065
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 3156c9110567763d1566de58b6d08304b464e094
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0c31d8d4725d90200f7f2811f974ffd9b98bcaa2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ltsource-data-querygt---shape"></a>&lt;requête de source de données&gt; -forme
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -67,11 +67,11 @@ APPEND ({ <child table query> }
  *nom de la table colonne*  
  Nom de la nouvelle colonne dans la table parent de la table imbriquée.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Vous devez ordonner les requêtes par la colonne qui relie la table parent à la table enfant.  
   
 ## <a name="examples"></a>Exemples  
- Vous pouvez utiliser l’exemple suivant dans un [INSERT INTO &#40; DMX &#41;](../dmx/insert-into-dmx.md) instruction pour former un modèle contenant une table imbriquée. Les deux tables au sein de la **forme** instruction au moyen du **OrderNumber** colonne.  
+ Vous pouvez utiliser l’exemple suivant dans un [INSERT INTO &#40;DMX&#41; ](../dmx/insert-into-dmx.md) instruction pour former un modèle contenant une table imbriquée. Les deux tables au sein de la **forme** instruction au moyen du **OrderNumber** colonne.  
   
 ```  
 SHAPE {  
@@ -84,9 +84,9 @@ SHAPE {
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [&#60; requête de source de données &#62;](../dmx/source-data-query.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Guide de référence des instructions DMX &#40;Data Mining Extensions&#41;](../dmx/data-mining-extensions-dmx-statements.md)  
+ [&#60;requête de source de données&#62;](../dmx/source-data-query.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)  
   
   

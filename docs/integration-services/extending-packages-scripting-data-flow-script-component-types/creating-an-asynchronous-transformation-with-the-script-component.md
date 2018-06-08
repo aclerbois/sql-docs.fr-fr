@@ -1,15 +1,14 @@
 ---
-title: "Création d’une transformation asynchrone à l’aide du composant Script | Microsoft Docs"
-ms.custom: 
+title: Création d’une transformation asynchrone à l’aide du composant Script | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-scripting-data-flow-script-component-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - transformation components [Integration Services]
 - Script component [Integration Services], transformation components
 ms.assetid: 0d814404-21e4-4a68-894c-96fa47ab25ae
-caps.latest.revision: 
+caps.latest.revision: 63
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7a7d607fda10fa8e3ae020e6b702867e9f8ef0a2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 8ee7d74e217d252cf668c98dba3aaa9cc00bd49e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-an-asynchronous-transformation-with-the-script-component"></a>Création d'une transformation asynchrone à l'aide du composant Script
   Vous utilisez un composant de transformation dans le flux de données d'un package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour modifier et analyser les données acheminées de la source à la destination. Une transformation à sorties synchrones traite chacune des lignes d'entrée lorsqu'elles traversent le composant. Une transformation à sorties asynchrones peut attendre d’avoir reçu toutes les lignes d’entrée avant de procéder au traitement des données, ou elle peut exporter certaines lignes avant d’avoir reçu toutes les lignes d’entrée. Cette rubrique examine une transformation asynchrone. Si votre traitement requiert une transformation synchrone, consultez [Création d’une transformation synchrone à l’aide du composant Script](../../integration-services/extending-packages-scripting-data-flow-script-component-types/creating-a-synchronous-transformation-with-the-script-component.md). Pour plus d’informations sur la différence entre les composants synchrones et asynchrones, consultez [Présentation des transformations synchrones et asynchrones](../../integration-services/understanding-synchronous-and-asynchronous-transformations.md).  
@@ -103,7 +101,7 @@ ms.lasthandoff: 01/25/2018
   
  Dans une transformation asynchrone, vous pouvez utiliser la méthode AddRow pour ajouter des lignes à la sortie appropriée à partir des méthodes ProcessInputRow ou ProcessInput. Il est inutile d’utiliser la méthode CreateNewOutputRows. Si vous écrivez une seule ligne de résultats, comme des résultats d’agrégation, dans une sortie particulière, vous pouvez créer au préalable la ligne de sortie à l’aide de la méthode CreateNewOutputRows et spécifier ses valeurs ultérieurement après avoir traité toutes les lignes d’entrée. Toutefois, il est inutile de créer plusieurs lignes dans la méthode CreateNewOutputRows car le composant Script ne vous permet d’utiliser que la ligne en cours dans une entrée ou une sortie. La méthode CreateNewOutputRows est plus importante dans un composant source où il n’existe pas de ligne d’entrée à traiter.  
   
- Vous pouvez également remplacer la méthode ProcessInput elle-même, afin d’effectuer d’autres traitements préliminaires ou finaux avant ou après avoir parcouru la mémoire tampon d’entrée et appelé la méthode ProcessInputRow pour chaque ligne. Par exemple, l’un des exemples de code de cette rubrique remplace la méthode ProcessInput afin de compter le nombre d’adresses dans une ville pendant que ProcessInputRow parcourt les lignes**.** L’exemple écrit la valeur de synthèse dans la deuxième sortie une fois que toutes les lignes ont été traitées. L’exemple exécute l’opération de sortie dans ProcessInput car les mémoires tampons de sortie ne sont plus disponibles lorsque la méthode PostExecute est appelée.  
+ Vous pouvez également remplacer la méthode ProcessInput elle-même, afin d’effectuer d’autres traitements préliminaires ou finaux avant ou après avoir parcouru la mémoire tampon d’entrée et appelé la méthode ProcessInputRow pour chaque ligne. Par exemple, l’un des exemples de code de cette rubrique remplace la méthode ProcessInput afin de compter le nombre d’adresses dans une ville pendant que ProcessInputRow parcourt les lignes **.** L’exemple écrit la valeur de synthèse dans la deuxième sortie une fois que toutes les lignes ont été traitées. L’exemple exécute l’opération de sortie dans ProcessInput car les mémoires tampons de sortie ne sont plus disponibles lorsque la méthode PostExecute est appelée.  
   
  Selon vos besoins, vous voudrez également écrire le script dans les méthodes PreExecute et PostExecute disponibles dans la classe ScriptMain pour effectuer tout traitement préliminaire ou final.  
   

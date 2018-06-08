@@ -1,29 +1,19 @@
 ---
-title: "L’octroi d’autorisations de base de données de processus | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 69ba952e-09ae-49a9-9297-00e32e8e89a8
-caps.latest.revision: 
-author: Minewiskan
+title: L’octroi d’autorisations de base de données de processus | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f7a6e9524efcebab174073290983a20f7f242d81
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d7777d2bb3a69a2f42c5ee25adbc77e0f07a0b3e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-10---granting-process-database-permissions"></a>Leçon 10 : octroi d’autorisations de base de données processus
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -66,7 +56,7 @@ Dans les tâches de cette rubrique, vous allez définir le rôle de sécurité P
 > Un projet complet pour la leçon 10 est disponible en téléchargeant et en installant les exemples mis à jour. Pour plus d’informations, consultez [Installer les exemples de données et de projets pour le didacticiel sur la modélisation multidimensionnelle Analysis Services](../analysis-services/install-sample-data-and-projects.md).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Rôles et autorisations &#40; Analysis Services &#41;](../analysis-services/multidimensional-models/roles-and-permissions-analysis-services.md)  
+[Rôles et autorisations & #40 ; Analysis Services & #41 ;](../analysis-services/multidimensional-models/roles-and-permissions-analysis-services.md)  
   
   
   

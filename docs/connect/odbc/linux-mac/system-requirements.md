@@ -1,32 +1,28 @@
 ---
-title: "Configuration système requise (le pilote ODBC pour SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Configuration système requise (le pilote ODBC pour SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - prerequisites
 - system requirements
 - requirements
 ms.assetid: f03b7fdd-0e9d-4e74-958d-e8c87e027348
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 90d630b0585704a72aa7ce284c4953ec2ce5204e
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+manager: craigg
+ms.openlocfilehash: bab69d8a2ebf405e99cc9cff7e4cdadb94d79f98
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="system-requirements"></a>Configuration système requise
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]

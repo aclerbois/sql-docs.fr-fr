@@ -1,32 +1,29 @@
 ---
-title: "À l’aide d’Applications 16 bits et 32 bits avec les pilotes 32 bits | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’Applications 16 bits et 32 bits avec les pilotes 32 bits | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC drivers [ODBC], 16-bit applications
 - ODBC drivers [ODBC], 32-bit applications
 - 32-bit applications with 32-bit drivers [ODBC]
 - 16-bit applications with 32-bit drivers [ODBC]
 ms.assetid: fc65c988-b31f-4cc9-851f-30d2119604fd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5e0cd1697e6b33b5e7d2e0d22252eaf8338648fa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 97f4224967cd0c54b134d118533ed66f6043762c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-16-bit-and-32-bit-applications-with-32-bit-drivers"></a>À l’aide d’Applications 16 bits et 32 bits avec les pilotes 32 bits
 > [!IMPORTANT]  

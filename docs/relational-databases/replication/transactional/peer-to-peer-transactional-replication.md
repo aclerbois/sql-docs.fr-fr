@@ -1,17 +1,16 @@
 ---
-title: "Réplication transactionnelle d’égal à égal | Microsoft Docs"
-ms.custom: 
+title: Réplication transactionnelle d’égal à égal | Microsoft Docs
+ms.custom: ''
 ms.date: 08/29/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - bidirectional replication
 - transactional replication, bidirectional replication
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - transactional replication, peer-to-peer replication
 - peer-to-peer transactional replication
 ms.assetid: 23e7e8c1-002f-4e69-8c99-d63e4100de64
-caps.latest.revision: 
+caps.latest.revision: 71
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7964edcd200dd107cf77501d5f868dfec868f2ff
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: a008570306da0413e4a71fbc5fc2576e66129b1b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="peer-to-peer---transactional-replication"></a>Réplication transactionnelle d’égal à égal
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

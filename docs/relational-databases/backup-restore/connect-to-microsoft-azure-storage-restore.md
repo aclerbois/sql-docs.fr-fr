@@ -1,33 +1,30 @@
 ---
-title: "Se connecter à Stockage Microsoft Azure (Restauration) | Microsoft Docs"
-ms.custom: 
+title: Se connecter à Stockage Microsoft Azure (Restauration) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.restore.connectstorage.f1
 ms.assetid: c0b7d7c8-b878-4b7f-8120-d0c6917b583f
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d142554cd2be42e24df6583e6d6f4b097cfeb19b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: e1c0ef03df12e05fb869155b94dce13865ad70ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-microsoft-azure-storage-restore"></a>Se connecter à Stockage Microsoft Azure (Restauration)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La boîte de dialogue vous permet de spécifier les informations de connexion au compte de stockage Microsoft Azure pour récupérer les fichiers qui y sont stockés. Après avoir spécifié les informations requises, cliquez sur **Connexion** pour établir la connexion au stockage Windows Azure.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La boîte de dialogue vous permet de spécifier les informations de connexion au compte de stockage Windows Azure pour récupérer les fichiers qui y sont stockés. Après avoir spécifié les informations requises, cliquez sur **Connexion** pour établir la connexion au stockage Windows Azure.  
   
 ## <a name="windows-azure-storage-account"></a>Compte de stockage Windows Azure  
  **Compte de stockage**  

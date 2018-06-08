@@ -1,28 +1,22 @@
 ---
-title: Présentation de revoscalepy | Documents Microsoft
-ms.custom: ''
-ms.date: 10/05/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: python
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Présentation de package de Python revoscalepy dans l’apprentissage de SQL Server | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.openlocfilehash: fc59cbc5a34e79a98a787dea34f5ff1440fbe8c3
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 450aa7cc002da9b42379330141f34ee33eedbde6
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="introducing-revoscalepy"></a>Présentation de revoscalepy
+# <a name="introducing-revoscalepy-in-sql-server-machine-learning"></a>Présentation de revoscalepy dans l’apprentissage de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
-**revoscalepy** une nouvelle bibliothèque n’est fourni par Microsoft pour prendre en charge l’informatique distribuée, de calcul distant contextes et des algorithmes de hautes performances pour Python.
+**revoscalepy** est une nouvelle bibliothèque de Python fourni par Microsoft pour prendre en charge l’informatique distribuée, de calcul distant contextes et des algorithmes de hautes performances pour les développeurs Python.
 
 Il est basé sur le **RevoScaleR** package r, qui a été fourni dans Microsoft R Server et SQL Server R Services et vise à fournir les mêmes fonctionnalités :
 
@@ -53,7 +47,7 @@ Pour obtenir la dernière liste de fonctions dans les bibliothèques de Python �
 
 + [revoscalepy pour Python](https://docs.microsoft.com/r-server/python-reference/revoscalepy/revoscalepy-package)
 
-+ [microsoftml pour Python](https://docs.microsoft.com/r-server/python-reference/microsoftml/microsoftml-package)
++ [Microsoftml pour Python](https://docs.microsoft.com/r-server/python-reference/microsoftml/microsoftml-package)
 
 ### <a name="data-types-data-sources-and-compute-contexts"></a>Types de données, les sources de données et les contextes de calcul
 

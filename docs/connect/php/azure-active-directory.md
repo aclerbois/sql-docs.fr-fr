@@ -1,23 +1,21 @@
 ---
 title: Azure Active Directory | Documents Microsoft
 ms.date: 07/13/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.suite: sql
-ms.custom: 
-ms.technology: drivers
-ms.topic: article
+ms.custom: ''
+ms.technology: connectivity
+ms.topic: conceptual
 author: david-puglielli
 ms.author: v-dapugl
 manager: v-hakaka
-ms.workload: Inactive
-ms.openlocfilehash: eb13c1a57c63ce013a3b546572994106b8b1ffc0
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+ms.openlocfilehash: bfb4c78f7a32c1205256f7a0d44bd9526fabdc27
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-using-azure-active-directory-authentication"></a>Connectez-vous à l’aide de l’authentification Azure Active Directory
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -131,4 +129,4 @@ L’exemple suivant donne le même résultat que ci-dessus avec le pilote PDO_SQ
     ?>
 ```
 ## <a name="see-also"></a>Voir aussi  
-[À l’aide d’Azure Active Directory avec le pilote ODBC](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory)
+[Utilisation d’Azure Active Directory avec ODBC Driver](https://docs.microsoft.com/en-us/sql/connect/odbc/using-azure-active-directory)

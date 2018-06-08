@@ -1,16 +1,15 @@
 ---
 title: MSrepl_version (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - MSrepl_version system table
 ms.assetid: c1330f03-940b-4564-ac42-6030c6e21173
-caps.latest.revision: 
+caps.latest.revision: 25
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1a170e197a11ac002584ea8083cd4ec4a3f089bd
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e37b35a02bc79f79f1cc43c1e57e079de6d9375e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="msreplversion-transact-sql"></a>MSrepl_version (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -42,11 +40,11 @@ ms.lasthandoff: 11/21/2017
 |-----------------|---------------|-----------------|  
 |**version_principale**|**int**|Numéro de version majeure de la base de données de distribution|  
 |**version_secondaire**|**int**|Numéro de version mineure de la base de données de distribution|  
-|**révision**|**int**|Numéro de révision.|  
+|**Révision**|**int**|Numéro de révision.|  
 |**db_existed**|**bit**|Indique si la base de données de distribution existe avant **sp_adddistributiondb** est appelée.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)  
   
   

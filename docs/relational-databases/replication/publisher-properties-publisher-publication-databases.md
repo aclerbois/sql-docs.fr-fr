@@ -1,32 +1,30 @@
 ---
-title: "Propriétés du serveur de publication - Serveur de publication, Bases de données de publication | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur de publication - Serveur de publication, Bases de données de publication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.configdistwizard.pubproperties.pubdb.f1
 helpviewer_keywords:
 - Publisher Properties dialog box
 ms.assetid: 574ea2e7-4e7b-4733-ab52-429ca93c7b0a
-caps.latest.revision: 
+caps.latest.revision: 21
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5aff4539da6d3b05dc5104c4bc5ce88ebdc6acc4
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 666e3998873016dc1a99cfa2214fe120dee12bfb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publisher-properties---publisher-publication-databases"></a>Propriétés du serveur de publication - Serveur de publication, Bases de données de publication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

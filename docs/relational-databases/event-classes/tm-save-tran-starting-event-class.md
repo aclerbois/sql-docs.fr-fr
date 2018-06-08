@@ -1,34 +1,30 @@
 ---
-title: "TM: Save Tran Starting, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: 'TM: Save Tran Starting, classe d’événements | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'TM: Save Tran Starting event class'
 ms.assetid: 6f19fe7c-a452-4323-b957-7e17d13bf8fd
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0640c3a09d1666ab028e3049e16db61d60484cf2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cfcfb3866ebcffb21453fec7b4103462caccdb2b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="tm-save-tran-starting-event-class"></a>TM: Save Tran Starting, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements TM: Save Tran Starting indique qu'une demande SAVE TRANSACTION est en cours de démarrage. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions.  
+  La classe d'événements TM: Save Tran Starting indique qu'une demande SAVE TRANSACTION est en cours de démarrage. La requête est envoyée depuis le client par le biais de l'interface de gestion des transactions.  
   
 ## <a name="tm-save-tran-starting-event-class-data-columns"></a>Colonnes de données de la classe d'événements TM: Save Tran Starting  
   

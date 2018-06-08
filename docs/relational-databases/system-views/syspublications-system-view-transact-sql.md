@@ -1,16 +1,15 @@
 ---
-title: "SYSPUBLICATIONS (vue système) (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: SYSPUBLICATIONS (vue système) (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - syspublications view
 ms.assetid: e5f57c32-efc0-4455-a74f-684dc2ae51f8
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6b67197861029cbd9b16e1c829e4570540ca377f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 65634b15e901b260b4d0498aed9c1b2759170686
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="syspublications-system-view-transact-sql"></a>syspublications (vue système) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +44,7 @@ ms.lasthandoff: 02/03/2018
 |**repl_freq**|**tinyint**|Fréquence de réplication :<br /><br /> **0** = en fonction des transactions (transactionnelle).<br /><br /> **1** = actualisation planifiée des tables (instantané).|  
 |**status**|**tinyint**|État de la publication :<br /><br /> **0** = inactif.<br /><br /> **1** = actif.|  
 |**sync_method**|**tinyint**|Méthode de synchronisation :<br /><br /> **0** = utilitaire de programme de copie en bloc natif (BCP).<br /><br /> **1** = caractère BCP.<br /><br /> **3** = simultané, ce qui signifie que natif BCP est utilisé mais les tables ne sont pas verrouillées lors de l’instantané.<br /><br /> **4** = Concurrent_c, ce qui signifie que les caractères BCP est utilisé mais les tables ne sont pas verrouillées lors de l’instantané.|  
-|**snapshot_jobid**|**binary(16)**|Identifie le travail d'agent planifié pour créer l'instantané initial.|  
+|**snapshot_jobid**|**binary (16)**|Identifie le travail d'agent planifié pour créer l'instantané initial.|  
 |**independent_agent**|**bit**|Spécifie s’il existe un Agent de Distribution autonome pour cette publication.<br /><br /> **0** = la publication utilise un Agent de Distribution partagé, et chaque paire de base de données de serveur de publication/abonné de base de données a un seul Agent partagé.<br /><br /> **1** = il existe un Agent de Distribution autonome pour cette publication.|  
 |**immediate_sync**|**bit**|Indique si les fichiers de synchronisation sont créés ou recréés chaque fois que l’Agent d’instantané s’exécute, où **1** signifie qu’ils sont créés chaque fois que l’agent s’exécute.|  
 |**enabled_for_internet**|**bit**|Indique si les fichiers de synchronisation pour la publication sont exposés à Internet via le protocole de transfert de fichiers (FTP) et d’autres services, où **1** signifie qu’ils sont accessibles à partir d’Internet.|  
@@ -83,7 +81,7 @@ ms.lasthandoff: 02/03/2018
 |**originator_id**|**smallint**|Identifie chaque nœud dans la topologie de réplication d'égal à égal pour les besoins de la détection de conflit. Pour plus d'informations, consultez [Conflict Detection in Peer-to-Peer Replication](../../relational-databases/replication/transactional/peer-to-peer-conflict-detection-in-peer-to-peer-replication.md).|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)   
  [sp_addpublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addpublication-transact-sql.md)   
  [sp_changepublication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changepublication-transact-sql.md)   

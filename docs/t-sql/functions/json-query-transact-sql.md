@@ -1,16 +1,15 @@
 ---
 title: JSON_QUERY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON_QUERY
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - JSON, querying
 - JSON_QUERY function
 ms.assetid: 1ab0d90f-19b6-4988-ab4f-22fdf28b7c79
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 19
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 310d85e26226cd54eff5d1c99e94b235348a90f7
-ms.sourcegitcommit: 66bef6981f613b454db465e190b489031c4fb8d3
+ms.openlocfilehash: 82d4410de37601479b0f2140a709b64541578549
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/17/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jsonquery-transact-sql"></a>JSON_QUERY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -48,7 +46,7 @@ JSON_QUERY ( expression [ , path ] )
   
 ## <a name="arguments"></a>Arguments  
  *expression*  
- Expression. En règle générale, le nom d’une variable ou d’une colonne qui contient du texte JSON.  
+ Expression. En règle générale, nom d’une variable ou d’une colonne qui contient du texte JSON.  
   
  Si **JSON_QUERY** trouve des données JSON non valides dans *expression* avant de trouver la valeur identifiée par *path*, la fonction renvoie une erreur. Si **JSON_QUERY** ne trouve pas la valeur identifiée par *path*, elle analyse l’intégralité du texte et renvoie une erreur si elle trouve des données JSON non valides, n’importe où dans *expression*.  
   
@@ -103,7 +101,7 @@ Si le format de *path* n’est pas valide, **JSON_QUERY** renvoie une erreur.
 |$.info."address"|N'{ "town":"Bristol", "county":"Avon", "country":"England" }'|N'{ "town":"Bristol", "county":"Avon", "country":"England" }'|N/a|  
 |$.info.tags|N'[ "Sport", "Water polo"]'|N'[ "Sport", "Water polo"]'|N/a|  
 |$.info.type[0]|NULL|Error|Pas un tableau.|  
-|$.info.none|NULL|Error|La propriété n'existe pas.|  
+|$.info.none|NULL|Error|La propriété n’existe pas.|  
 
 ### <a name="using-jsonquery-with-for-json"></a>Utilisation de JSON_QUERY avec FOR JSON
 

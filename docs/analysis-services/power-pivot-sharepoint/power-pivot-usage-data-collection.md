@@ -1,31 +1,23 @@
 ---
-title: "Collecte de données de tableau croisé dynamique d’utilisation de l’alimentation | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 9057cb89-fb17-466e-a1ce-192c8ca20692
-caps.latest.revision: 
-author: Minewiskan
+title: Collecte de données de tableau croisé dynamique d’utilisation de l’alimentation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 69286dea78c53adc50b447ffa8e55339d07c4d9e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 4b56ab4a5b6b41847d422402de94e28fa2745836
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-pivot-usage-data-collection"></a>Collecte des données d’utilisation Power Pivot
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La collecte des données d'utilisation est une fonctionnalité SharePoint au niveau de la batterie de serveurs. [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] pour SharePoint utilise et étend ce système pour fournir des rapports dans le tableau de bord de gestion [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] qui détaillent le mode d’utilisation des données et services [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] . Selon la façon dont vous avez installé votre serveur SharePoint, la collecte des données d'utilisation peut être désactivée pour la batterie de serveurs. Un administrateur de batterie de serveurs doit activer la journalisation pour créer les données d’utilisation qui s’affichent dans le tableau de bord de gestion [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] .  
+  La collecte des données d'utilisation est une fonctionnalité SharePoint au niveau de la batterie de serveurs. [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] pour SharePoint utilise et étend ce système pour fournir des rapports dans le tableau de bord de gestion [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] qui détaillent le mode d’utilisation des données et services [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] . Selon la façon dont vous avez installé votre serveur SharePoint, la collecte des données d'utilisation peut être désactivée pour la batterie de serveurs. Un administrateur de batterie de serveurs doit activer la journalisation pour créer les données d’utilisation qui s’affichent dans le tableau de bord de gestion [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] .  
   
  Pour plus d’informations sur les données d’utilisation figurant dans le tableau de bord de gestion [!INCLUDE[ssGemini_md](../../includes/ssgemini-md.md)] , consultez [Tableau de bord de gestion Power Pivot et données d’utilisation](../../analysis-services/power-pivot-sharepoint/power-pivot-management-dashboard-and-usage-data.md).  
   

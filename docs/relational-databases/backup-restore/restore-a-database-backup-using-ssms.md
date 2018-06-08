@@ -1,17 +1,14 @@
 ---
-title: "Restaurer une sauvegarde de base de données à l’aide de SSMS | Microsoft Docs"
-ms.custom: 
+title: Restaurer une sauvegarde de base de données à l’aide de SSMS | Microsoft Docs
+ms.custom: ''
 ms.date: 11/16/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.locatebackupfileazure.f1
 - sql13.swb.specifybackup.f1
@@ -22,16 +19,15 @@ helpviewer_keywords:
 - database backups [SQL Server], full backups
 - restoring databases [SQL Server], full backups
 ms.assetid: 24b3311d-5ce0-4581-9a05-5c7c726c7b21
-caps.latest.revision: 
+caps.latest.revision: 79
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d51837413865aedb9b4610b045355556634ea6df
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 01e55085d117541e2ecb8d8c4ee585afec205b03
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-a-database-backup-using-ssms"></a>Restaurer une sauvegarde de base de données à l’aide de SSMS
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

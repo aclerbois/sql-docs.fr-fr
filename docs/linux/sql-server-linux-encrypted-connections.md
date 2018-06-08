@@ -1,27 +1,24 @@
 ---
-title: "Chiffrement des connexions à SQL Server sur Linux | Documents Microsoft"
-description: "Cet article décrit le chiffrement des connexions à SQL Server sur Linux."
+title: Chiffrement des connexions à SQL Server sur Linux | Documents Microsoft
+description: Cet article décrit le chiffrement des connexions à SQL Server sur Linux.
 author: tmullaney
 ms.date: 01/30/2018
 ms.author: meetb
 manager: craigg
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
+ms.technology: linux
+ms.assetid: ''
 helpviewer_keywords:
 - Linux, encrypted connections
-ms.workload: Inactive
-ms.openlocfilehash: 646a876fb7cedc4733e4d3a60ef86361ab151c4f
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: f7b1dd57af300fc3e3fa61e469646211536b4653
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="encrypting-connections-to-sql-server-on-linux"></a>Chiffrement des connexions à SQL Server sur Linux
 

@@ -1,15 +1,14 @@
 ---
-title: "Sécurité d’intégration du CLR | Documents Microsoft"
-ms.custom: 
+title: Sécurité d’intégration du CLR | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - security [CLR integration]
@@ -17,20 +16,19 @@ helpviewer_keywords:
 - common language runtime [SQL Server], security
 - database objects [CLR integration], security
 ms.assetid: 05d7a471-c5d5-4730-b903-e4edc8157bb4
-caps.latest.revision: 
+caps.latest.revision: 55
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bc6038395a2a4206095da0d7a2a3ecf8ab5f72cc
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: a7df2bb8e3620b374fa534326b9195b7b2887f91
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-integration-security"></a>Sécurité de l'intégration du CLR
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Le modèle de sécurité de l'intégration [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec le Common Language Runtime (CLR) [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gère et sécurise l'accès entre types différents d'objets CLR et non-CLR qui s'exécutent dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Ces objets peuvent être appelés par une instruction [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou un autre objet CLR qui s'exécute dans le serveur. Les appels entre objets portent le nom de liens. Les types de vérifications de sécurité effectués sur ces objets dépendent des types de liens impliqués.  
+  Le modèle de sécurité de l'intégration [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec le Common Language Runtime (CLR) [!INCLUDE[dnprdnshort](../../../includes/dnprdnshort-md.md)] gère et sécurise l'accès entre types différents d'objets CLR et non-CLR qui s'exécutent dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Ces objets peuvent être appelés par une instruction [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou un autre objet CLR qui s'exécute dans le serveur. Les appels entre objets portent le nom de liens. Les types de vérifications de sécurité effectués sur ces objets dépendent des types de liens impliqués.  
   
  Le modèle de sécurité d'intégration du CLR a les objectifs suivants :  
   
@@ -42,7 +40,7 @@ Le modèle de sécurité de l'intégration [!INCLUDE[ssNoVersion](../../../inclu
   
 -   Le code défini par l'utilisateur ne doit pas être en mesure d'accéder de façon non autorisée aux ressources système du fait de son exécution dans le processus [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] intègre maintenant le modèle de sécurité basée sur l’utilisateur de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec le modèle de sécurité basée sur l’accès de code du CLR. Quelques-uns des avantages offerts par cette approche combinée de la sécurité sont discutés dans cette section.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] intègre maintenant le modèle de sécurité basé sur utilisateur de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec le modèle de sécurité basé sur l'accès du code du CLR. Quelques-uns des avantages offerts par cette approche combinée de la sécurité sont discutés dans cette section.  
   
  Le tableau suivant décrit les rubriques de cette section.  
   

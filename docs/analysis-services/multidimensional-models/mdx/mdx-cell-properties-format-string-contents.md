@@ -1,37 +1,23 @@
 ---
 title: Contenu de FORMAT_STRING (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- formats [Analysis Services], string values
-- VALUE property
-- formats [Analysis Services], numeric values
-- FORMATTED_VALUE property
-- FORMAT_STRING contents
-ms.assetid: c354c938-0328-4b8e-adc5-3b52fd2a7152
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b2e191b852e9d68c9f5e3790e38b9a15f5759324
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9b7ccd9881b4efe187b0cfc3cd5d5087817c7331
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdx-cell-properties---formatstring-contents"></a>Propriétés de cellule MDX - contenu de FORMAT_STRING
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-La propriété de cellule **FORMAT_STRING** met en forme la propriété de cellule **VALUE** , en créant la valeur pour la propriété de cellule **FORMATTED_VALUE** . La propriété de cellule **FORMAT_STRING** traite les valeurs brutes de types chaîne et numérique en appliquant une expression de format à la valeur pour retourner une valeur mise en forme pour la propriété de cellule **FORMATTED_VALUE** . Les tableaux suivants détaillent la syntaxe et les caractères de mise en forme utilisés pour traiter les valeurs de type chaîne et numérique.  
+  La propriété de cellule **FORMAT_STRING** met en forme la propriété de cellule **VALUE** , en créant la valeur pour la propriété de cellule **FORMATTED_VALUE** . La propriété de cellule **FORMAT_STRING** traite les valeurs brutes de types chaîne et numérique en appliquant une expression de format à la valeur pour retourner une valeur mise en forme pour la propriété de cellule **FORMATTED_VALUE** . Les tableaux suivants détaillent la syntaxe et les caractères de mise en forme utilisés pour traiter les valeurs de type chaîne et numérique.  
   
 ## <a name="string-values"></a>Valeurs de type chaîne  
  Une expression de format pour une chaîne peut posséder une section, ou deux sections séparées par un point-virgule (;).  
@@ -85,9 +71,9 @@ La propriété de cellule **FORMAT_STRING** met en forme la propriété de cellu
 |**,**|Représente un séparateur de milliers qui sépare les milliers des centaines dans un nombre possédant quatre chiffres ou plus à gauche du séparateur décimal.<br /><br /> L’utilisation standard du séparateur de milliers est spécifiée si le format contient un séparateur de milliers entouré par des espaces réservés de chiffres (**0** ou **#**).<br /><br /> La présence de deux séparateurs des milliers contigus, ou d'un séparateur des milliers juste à gauche du séparateur décimal (qu'une décimale soit ou non spécifiée), signifie « changer l'échelle du nombre en le divisant par 1 000, en l'arrondissant le cas échéant ». Par exemple, vous pouvez utiliser la chaîne de format «**##0**,, » pour représenter 100 millions par 100. Les nombres inférieurs à 1 million sont affichés sous forme de 0. Deux séparateurs des milliers adjacents dans toute position autre qu'immédiatement à gauche du séparateur décimal sont traités comme spécifiant l'utilisation d'un séparateur des milliers.<br /><br /> Le caractère effectivement utilisé comme séparateur des milliers dans le résultat mis en forme dépend du format numérique reconnu par votre système.<br /><br /> Remarque : dans certains paramètres régionaux, un point est utilisé comme séparateur de milliers.|  
 |**:**|Représente un séparateur horaire qui sépare les heures, les minutes et les secondes lors de la mise en forme de valeurs horaires.<br /><br /> Remarque : dans certains paramètres régionaux, d’autres caractères peuvent être utilisés comme séparateurs d’heure.<br /><br /> Le caractère réel utilisé comme séparateur d'heure dans le résultat mis en forme est déterminé par les paramètres système de votre ordinateur.|  
 |**/**|Représente un séparateur de date qui sépare le jour, le mois et l'année lorsque les valeurs de date sont mises en forme.<br /><br /> Le caractère réel utilisé comme séparateur de date dans le résultat mis en forme est déterminé par les paramètres système de votre ordinateur.<br /><br /> Remarque : dans certains paramètres régionaux, d’autres caractères peuvent être utilisés comme séparateurs de date.|  
-|**E- E+ e- e+**|Représente le format scientifique.<br /><br /> Si l’expression de format contient au moins un espace réservé de chiffre (**0** ou **#**) à droite de **E-**, **E+**, **e-**ou **e+**, la valeur mise en forme affiche le nombre dans le format scientifique, et E ou e est inséré entre le nombre et son exposant. Le nombre d'espaces réservés à des chiffres à droite détermine le nombre de chiffres dans l'exposant. Utilisez **E-** ou **e-** pour insérer un signe moins à côté des exposants négatifs. Utilisez **E+** ou **e+** pour insérer un signe moins à côté des exposants négatifs et un signe plus à côté des exposants positifs.|  
+|**E- E+ e- e+**|Représente le format scientifique.<br /><br /> Si l’expression de format contient au moins un espace réservé de chiffre (**0** ou **#**) à droite de **E-**, **E+**, **e-** ou **e+**, la valeur mise en forme affiche le nombre dans le format scientifique, et E ou e est inséré entre le nombre et son exposant. Le nombre d'espaces réservés à des chiffres à droite détermine le nombre de chiffres dans l'exposant. Utilisez **E-** ou **e-** pour insérer un signe moins à côté des exposants négatifs. Utilisez **E+** ou **e+** pour insérer un signe moins à côté des exposants négatifs et un signe plus à côté des exposants positifs.|  
 |**- + $ ( )**|Affiche un caractère littéral.<br /><br /> Pour afficher un caractère autre que ceux répertoriés, faites-le précéder d’une barre oblique inverse (**\\**) ou placez-le entre guillemets doubles (**" "**).|  
-|**\\**|Affiche le prochain caractère de la chaîne de format.<br /><br /> Pour afficher un caractère ayant une signification spéciale en tant que caractère littéral, faites-le précéder d’une barre oblique inverse (**\\**). La barre oblique inverse elle-même n'est pas affichée. L'utilisation d'une barre oblique inverse équivaut à mettre le caractère suivant entre des guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (**\\\\**). Exemples de caractères ne pouvant pas être affichés comme caractères littéraux :<br /><br /> <br /><br /> les caractères de mise en forme de date et d’heure –**a**, **c**, **d**, **h**, **m**, **n**, **p**, **q**, **s**, **t**, **w**, **y**, **/**et **:**<br /><br /> les caractères de mise en forme numérique –**#**, **0**, **%**, **E**, **e**, **virgule**et **point**<br /><br /> les caractères de mise en forme de chaîne –**@**, **&**, **\<**, **>**et **!**|  
+|**\\**|Affiche le prochain caractère de la chaîne de format.<br /><br /> Pour afficher un caractère ayant une signification spéciale en tant que caractère littéral, faites-le précéder d’une barre oblique inverse (**\\**). La barre oblique inverse elle-même n'est pas affichée. L'utilisation d'une barre oblique inverse équivaut à mettre le caractère suivant entre des guillemets doubles. Pour afficher une barre oblique inverse, utilisez deux barres obliques inverses (**\\\\**). Exemples de caractères ne pouvant pas être affichés comme caractères littéraux :<br /><br /> <br /><br /> les caractères de mise en forme de date et d’heure –**a**, **c**, **d**, **h**, **m**, **n**, **p**, **q**, **s**, **t**, **w**, **y**, **/** et **:**<br /><br /> les caractères de mise en forme numérique –**#**, **0**, **%**, **E**, **e**, **virgule**et **point**<br /><br /> les caractères de mise en forme de chaîne –**@**, **&**, **\<**, **>** et **!**|  
 |**"ABC"**|Affiche la chaîne placée entre les guillemets doubles (**" "**).<br /><br /> Pour codifier l’insertion d’une chaîne dans le format, placez le texte entre Chr(**34**). (Le code de caractère pour un guillemet double est **34**.)|  
   
 ### <a name="named-numeric-formats"></a>Formats numériques nommés  
@@ -157,8 +143,8 @@ La propriété de cellule **FORMAT_STRING** met en forme la propriété de cellu
   
 ## <a name="see-also"></a>Voir aussi  
  [LANGUAGE et FORMAT_STRING sur FORMATTED_VALUE](../../../analysis-services/multidimensional-models/mdx/mdx-cell-properties-formatted-value-property.md)   
- [À l’aide des propriétés de cellule &#40; MDX &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-cell-properties-using-cell-properties.md)   
- [Création et utilisation des valeurs de propriété &#40; MDX &#41;](http://msdn.microsoft.com/library/0cafb269-03c8-4183-b6e9-220f071e4ef2)   
- [Principes de base de requête MDX &#40; Analysis Services &#41;](../../../analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services.md)  
+ [À l’aide des propriétés de cellule & #40 ; MDX & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-cell-properties-using-cell-properties.md)   
+ [Création et utilisation des valeurs de propriété & #40 ; MDX & #41 ;](http://msdn.microsoft.com/library/0cafb269-03c8-4183-b6e9-220f071e4ef2)   
+ [Principes de base de requête MDX & #40 ; Analysis Services & #41 ;](../../../analysis-services/multidimensional-models/mdx/mdx-query-fundamentals-analysis-services.md)  
   
   

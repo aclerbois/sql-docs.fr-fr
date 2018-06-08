@@ -1,37 +1,36 @@
 ---
 title: ALTER CUBE Statement (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - Cube
 - ALTER_CUBE
 - ALTER CUBE
 - ALTER
-dev_langs: kbMDX
+dev_langs:
+- kbMDX
 helpviewer_keywords:
 - ALTER CUBE statement
 - cubes [Analysis Services], modifying
 - modifying cubes
 ms.assetid: 2f0af61b-f509-4e1a-990f-20a215d22994
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 8780f95cab9d124b78d486e86b78897a2f2d6d39
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6a91092f5a62f1c21312ca585834795d678216ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mdx-data-definition---alter-cube"></a>Définition de données MDX - ALTER CUBE
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -131,11 +130,11 @@ CELL CALCULATION Calculation_Name
  *Member_Name*  
  Expression de chaîne valide qui précise un nom de membre ou une clé de membre.  
   
-### <a name="remarks"></a>Notes   
+### <a name="remarks"></a>Notes  
  Si la clause WITH DESCENDANTS n'est pas utilisée, les enfants d'un membre supprimé deviennent les enfants du parent de ce dernier. Si la clause WITH DESCENDANTS n'est pas employée, tous les descendants et leurs lignes dans la table de dimension sont également supprimés.  
   
 > [!NOTE]  
->  Pour plus d’informations sur la suppression de membres calculés, jeux nommés, actions et les calculs de cellules, consultez [instruction DROP du membre &#40; MDX &#41; ](../mdx/mdx-data-definition-drop-member.md), [Supprimer instruction SET &#40; MDX &#41; ](../mdx/mdx-data-definition-drop-set.md), [Supprimer instruction ACTION &#40; MDX &#41; ](../mdx/mdx-data-definition-drop-action.md), et [supprimer l’instruction de calcul de cellule &#40; MDX &#41; ](../mdx/mdx-data-definition-drop-cell-calculation.md).  
+>  Pour plus d’informations sur la suppression de membres calculés, jeux nommés, actions et les calculs de cellules, consultez [supprimer la déclaration de membre &#40;MDX&#41;](../mdx/mdx-data-definition-drop-member.md), [DROP définir l’instruction &#40;MDX&#41;](../mdx/mdx-data-definition-drop-set.md), [Instruction d’ACTION DROP &#40;MDX&#41;](../mdx/mdx-data-definition-drop-action.md), et [instruction de calcul de cellule DROP &#40;MDX&#41;](../mdx/mdx-data-definition-drop-cell-calculation.md).  
   
 ## <a name="updating-the-default-dimension-member"></a>Mise à jour du membre de dimension par défaut  
  Cette clause met à jour le membre par défaut d'un cube et est utilisée dans le script de calcul MDX en vue d'y définir un membre par défaut. Vous pouvez définir un membre par défaut pour la dimension de base de données, une dimension de cube ou pour la connexion d'un utilisateur. Vous pouvez également le modifier au cours d'une session.  
@@ -147,7 +146,7 @@ CELL CALCULATION Calculation_Name
  *MDX_Expression*  
  Expression MDX valide qui retourne un membre unique.  
   
-### <a name="remarks"></a>Notes   
+### <a name="remarks"></a>Notes  
  L'expression MDX spécifiée peut être statique ou dynamique.  
   
 ## <a name="moving-a-dimension-member"></a>Déplacement d'un membre de dimension  
@@ -179,9 +178,9 @@ CELL CALCULATION Calculation_Name
  Expression scalaire MDX valide qui définit la valeur de la propriété de membre calculé.  
   
 ## <a name="creating-a-cell-calculation"></a>Création d'un calcul de cellule  
- Pour plus d’informations sur la création d’un calcul de cellule à l’aide de l’instruction ALTER CUBE, consultez [instruction du calcul de cellule DROP &#40; MDX &#41; ](../mdx/mdx-data-definition-drop-cell-calculation.md).  
+ Pour plus d’informations sur la création d’un calcul de cellule à l’aide de l’instruction ALTER CUBE, consultez [instruction du calcul de cellule DROP &#40;MDX&#41;](../mdx/mdx-data-definition-drop-cell-calculation.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions MDX de définition de données &#40; MDX &#41;](../mdx/mdx-data-definition-statements-mdx.md)  
+ [Instructions MDX de définition de données &#40;MDX&#41;](../mdx/mdx-data-definition-statements-mdx.md)  
   
   

@@ -1,28 +1,27 @@
 ---
-title: "Établir une session de mise en miroir de base de données - authentification Windows | Microsoft Docs"
-ms.custom: 
+title: Établir une session de mise en miroir de base de données - authentification Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: database mirroring [SQL Server], sessions
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- database mirroring [SQL Server], sessions
 ms.assetid: 7cb418d6-dce1-4a0d-830e-9c5ccfe3bd72
-caps.latest.revision: "58"
+caps.latest.revision: 58
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5e4fc8470f88e41444f4d30578c32c3f5c2c32ad
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 676250b166ea109432e1c4328039b9ce31940b03
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="establish-database-mirroring-session---windows-authentication"></a>Établir une session de mise en miroir de base de données - authentification Windows
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

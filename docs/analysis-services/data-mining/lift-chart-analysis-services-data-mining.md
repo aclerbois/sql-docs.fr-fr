@@ -1,38 +1,23 @@
 ---
-title: "Graphique de courbes d’élévation (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- testing data mining models
-- accuracy, charting
-- viewing mining accuracy
-- lift charts [Analysis Services]
-- profit charts [Analysis Services]
-- accuracy testing [data mining]
-ms.assetid: ab77eca1-bd48-4fef-b27f-ff5b648e0501
-caps.latest.revision: 
-author: Minewiskan
+title: Graphique de courbes d’élévation (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 5effa132a9ccb440ccf3b8a7c004e6692a4aef57
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9a72e7c40719511e8514c38d08cd7cd88a24055f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lift-chart-analysis-services---data-mining"></a>Graphique de courbes d'élévation (Analysis Services - Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un *graphique de courbes d’élévation* représente graphiquement l’amélioration apportée par un modèle d’exploration de données par rapport à une estimation aléatoire, et mesure la modification en termes de score *d’élévation* . En comparant les scores de courbes d’élévation pour différents modèles, vous pouvez identifier le modèle le plus performant. Vous pouvez également déterminer le point auquel les prédictions du modèle deviennent moins utiles. Par exemple, en examinant le graphique de courbes d’élévation, vous pouvez réaliser qu’une campagne de promotion est susceptible d’être efficace auprès de seulement 30 % de vos clients et utiliser ce chiffre pour limiter l’étendue de la campagne.  
+  Un *graphique de courbes d’élévation* représente graphiquement l’amélioration apportée par un modèle d’exploration de données par rapport à une estimation aléatoire, et mesure la modification en termes de score *d’élévation* . En comparant les scores de courbes d’élévation pour différents modèles, vous pouvez identifier le modèle le plus performant. Vous pouvez également déterminer le point auquel les prédictions du modèle deviennent moins utiles. Par exemple, en examinant le graphique de courbes d’élévation, vous pouvez réaliser qu’une campagne de promotion est susceptible d’être efficace auprès de seulement 30 % de vos clients et utiliser ce chiffre pour limiter l’étendue de la campagne.  
   
  Dans l’exploration de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , le graphique de courbes d’élévation peut comparer la précision de plusieurs modèles qui ont le même attribut prédictible. Vous pouvez également évaluer la précision de la prédiction de résultats uniques (une seule valeur de l'attribut prédictible) ou de tous les résultats (toutes les valeurs de l'attribut spécifié).  
   
@@ -129,6 +114,6 @@ Un *graphique de courbes d’élévation* représente graphiquement l’amélior
  [Retour au début](#bkmk_Top)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Test et Validation &#40; exploration de données &#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
+ [Test et Validation & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
   
   

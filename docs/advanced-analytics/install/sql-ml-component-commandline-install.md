@@ -1,36 +1,28 @@
 ---
-title: "Installation des composants de SQL Server machine learning d’invite de commandes | Documents Microsoft"
-ms.custom: 
-ms.date: 03/15/2018
-ms.reviewer: 
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+title: Installation des composants de SQL Server machine learning d’invite de commandes | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: c51d8299837f0eda02a07afe1ea4d34d3ecd5e31
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: 814e0f8172e02d9b02be95888c8dab286429e533
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707957"
 ---
 # <a name="install-sql-server-machine-learning-components-from-the-command-line"></a>Installer les composants de SQL Server machine learning à partir de la ligne de commande
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Cet article fournit des instructions pour installer SQL Server d’apprentissage des composants à partir d’une ligne de commande :
 
-+ [Instance de base de données](#indb)
++ [Instance de la nouvelle dans-base de données](#indb)
 + [Ajouter à une instance du moteur de base de données existante](#add-existing)
 + [Installation sans assistance](#silent)
-+ [Serveur autonome](#shared-feature)
++ [Nouveau serveur autonome](#shared-feature)
 
 Vous pouvez spécifier une interaction en mode silencieux, de base ou complète avec l’interface utilisateur du programme d’installation. Cet article complète [installer SQL Server à partir de l’invite de commandes](../../database-engine/install-windows/install-sql-server-from-the-command-prompt.md), couvrant les paramètres uniques aux composants d’apprentissage machine R et Python.
 
@@ -53,7 +45,7 @@ L’argument de fonctionnalités est requis, comme le sont des contrats de terme
 
 En cas d’installation à partir de l’invite de commandes, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prend en charge le mode silencieux complet à l’aide du paramètre /Q ou le mode silencieux simple à l’aide du paramètre /QS. Le commutateur /QS affiche seulement la progression ; il n'accepte pas d'entrée et n'affiche aucun message d'erreur. Le paramètre /QS est pris en charge uniquement lorsque /Action=install est spécifié.
 
-| Arguments |  Description |
+| Arguments | Description |
 |-----------|-------------|
 | / FONCTIONNALITÉS = AdvancedAnalytics | Installe la version de base de données : SQL Server 2017 Machine Learning Services (de-de base de données) ou SQL Server 2016 R Services (de-de base de données).  |
 | / FONCTIONNALITÉS = SQL_INST_MR | S’applique à SQL Server 2017 uniquement. Coupler avec AdvancedAnalytics. Installe la fonctionnalité (de-de base de données) R, y compris Microsoft R Open et les packages R propriétaires. La fonctionnalité SQL Server 2016 R Services est R uniquement, donc il n’existe aucun paramètre pour cette version.|
@@ -73,7 +65,7 @@ Dans la base de données analytique est disponibles pour les instances du moteur
 
 Pour afficher les informations de progression sans l’interactive à l’écran invites, utilisez l’argument /qs.
 
-> [!Important]
+> [!IMPORTANT]
 > Après l’installation, les deux étapes de configuration supplémentaires restent. Intégration n’est pas terminée tant que ces tâches sont effectuées. Consultez [tâches de post-installation](#post-install) pour obtenir des instructions.
 
 ### <a name="sql-server-2017-database-engine-advanced-analytics-with-python-and-r"></a>SQL Server 2017 : moteur de base de données, advanced analytique avec Python et R
@@ -168,7 +160,7 @@ Setup.exe /q /ACTION=Install /FEATURES=SQL_SHARED_MR
 
 Lorsque l’installation est terminée, vous disposez d’un serveur, les packages de Microsoft, les distributions open source de R et Python, des outils, des exemples et de scripts qui font partie de la distribution. 
 
-Pour ouvrir une fenêtre de console R, accédez à \Program files\Microsoft SQL Server\140 (ou 130) \R_SERVER\bin\x64 et double-cliquez sur **RGui.exe**. Vous débutez avec R ? Essayez de ce didacticiel : [commandes R de base et les fonctions RevoScaleR : 25 exemples courants](https://docs.microsoft.com/en-us/machine-learning-server/r/tutorial-r-to-revoscaler).
+Pour ouvrir une fenêtre de console R, accédez à \Program files\Microsoft SQL Server\140 (ou 130) \R_SERVER\bin\x64 et double-cliquez sur **RGui.exe**. Vous débutez avec R ? Essayez de ce didacticiel : [commandes R de base et les fonctions RevoScaleR : 25 exemples courants](https://docs.microsoft.com/machine-learning-server/r/tutorial-r-to-revoscaler).
 
 Pour ouvrir une commande Python, accédez à \Program files\Microsoft SQL Server\140\PYTHON_SERVER\bin\x64 et double-cliquez sur **python.exe**.
 

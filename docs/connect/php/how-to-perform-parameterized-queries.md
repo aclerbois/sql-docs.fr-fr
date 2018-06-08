@@ -2,30 +2,27 @@
 title: 'Comment : exécuter des requêtes paramétrables | Documents Microsoft'
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - updating data
 - parameterized queries
 ms.assetid: dc7d0ede-a9b6-4ce2-977e-4d1e7ec2131c
-caps.latest.revision: ''
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 23660f3d7ddbaf45ac39674c4eba23092e3ae2d2
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 60e92bc71cb0be67a9b4680da19b79e01f815353
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-perform-parameterized-queries"></a>Procédure : exécuter des requêtes paramétrables
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -56,7 +53,7 @@ L’exemple suivant met à jour la quantité d’un ID de produit spécifié dan
   
 L’exemple interroge ensuite la base de données pour vérifier que la quantité a été correctement mise à jour. L’ID de produit est un paramètre dans la requête SELECT.  
   
-L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  
@@ -122,7 +119,7 @@ L’exemple précédent utilise la fonction **sqlsrv_query** pour exécuter des 
 ## <a name="example"></a>Exemple  
 L’exemple suivant illustre la liaison implicite des variables quand vous utilisez la fonction **sqlsrv_prepare** . L’exemple montre comment insérer plusieurs commandes client dans la table *Sales.SalesOrderDetail* . Le *$params* est lié à l’instruction (*$stmt*) lorsque **sqlsrv_prepare** est appelée. Avant chaque exécution d’une requête qui insère une nouvelle commande client dans la table, le tableau *$params* est mis à jour avec de nouvelles valeurs correspondant aux détails de cette commande client. L’exécution suivante de la requête utilise les nouvelles valeurs de paramètre.  
   
-L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple part du principe que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

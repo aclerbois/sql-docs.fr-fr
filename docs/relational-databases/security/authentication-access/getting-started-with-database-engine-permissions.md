@@ -1,30 +1,30 @@
 ---
-title: "Bien démarrer avec les autorisations du moteur de base de données | Microsoft Docs"
-ms.custom: 
+title: Bien démarrer avec les autorisations du moteur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 01/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 helpviewer_keywords:
 - permissions [SQL Server], getting started
 ms.assetid: 051af34e-bb5b-403e-bd33-007dc02eef7b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4292564f8e3e392bd01d5b1e580e1f28251840bd
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 045067a2e564d9e7c04aa4542d3ef24491b1356a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708427"
 ---
 # <a name="getting-started-with-database-engine-permissions"></a>Prise en main des autorisations du moteur de base de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -164,9 +164,9 @@ GRANT CONTROL ON DATABASE::SalesDB TO Ted;
  La première autorisation répertoriée ci-dessus (`GRANT SELECT ON OBJECT::Region TO Ted;`) est la plus granulaire ; autrement dit, cette instruction est l’autorisation minimale la plus stricte pour accorder l’autorisation `SELECT`. Aucune autorisation sur des objets subordonnés ne l’accompagne. Par principe, accordez toujours l’autorisation minimale la plus stricte possible. Toutefois, si les circonstances imposent une simplification du système d’octroi, accordez une autorisation plus générale. Ainsi, si Ted a besoin d’autorisations pour l’ensemble du schéma, accordez `SELECT` une fois au niveau du schéma, au lieu d’accorder `SELECT` au niveau table ou vue plusieurs fois. La conception de la base de données détermine en grande partie l’efficacité de cette stratégie. Cette dernière fonctionne de façon optimale si votre base de données permet d’inclure dans un seul schéma les objets nécessitant des autorisations identiques.  
   
 ## <a name="list-of-permissions"></a>Liste d’autorisations  
- [!INCLUDE[ssSQL15](../../../includes/sssql15-md.md)] a 230 autorisations. [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] a 219 autorisations. [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)] a 214 autorisations. [!INCLUDE[ssKilimanjaro](../../../includes/sskilimanjaro-md.md)] a 195 autorisations. [!INCLUDE[ssSDS](../../../includes/sssds-md.md)], [!INCLUDE[ssDW](../../../includes/ssdw-md.md)]et [!INCLUDE[ssAPS](../../../includes/ssaps-md.md)] ont moins d’autorisations, car ils exposent uniquement une partie du moteur de base de données, bien que chacun ait des autorisations qui ne s’appliquent pas à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Le graphique suivant illustre les autorisations et leurs relations. Certaines des autorisations de niveau supérieur (telles que `CONTROL SERVER`) figurent plusieurs fois. Dans cette rubrique, le poster est trop petit pour être lu correctement. Cliquez sur l’image pour télécharger le **Poster des autorisations du moteur de base de données** au format pdf.  
-  
-[![Autorisations des moteurs de base de données](../../../relational-databases/security/media/database-engine-permissions.PNG)](https://aka.ms/sql-permissions-poster)
+ [!INCLUDE[ssSQL15](../../../includes/sssql15-md.md)] a 230 autorisations. [!INCLUDE[ssSQL14](../../../includes/sssql14-md.md)] a 219 autorisations. [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)] a 214 autorisations. [!INCLUDE[ssKilimanjaro](../../../includes/sskilimanjaro-md.md)] a 195 autorisations. [!INCLUDE[ssSDS](../../../includes/sssds-md.md)], [!INCLUDE[ssDW](../../../includes/ssdw-md.md)]et [!INCLUDE[ssAPS](../../../includes/ssaps-md.md)] ont moins d’autorisations, car ils exposent uniquement une partie du moteur de base de données, bien que chacun ait des autorisations qui ne s’appliquent pas à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. 
+ 
+ [!INCLUDE[database-engine-permissions](../../../includes/paragraph-content/database-engine-permissions.md)]
  
  Pour obtenir un graphique montrant les relations entre les principaux [!INCLUDE[ssDE](../../../includes/ssde-md.md)] et les objets serveur et de base de données, consultez [Hiérarchie des autorisations &#40;moteur de base de données&#41;](../../../relational-databases/security/permissions-hierarchy-database-engine.md).  
   

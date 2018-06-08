@@ -26,11 +26,13 @@
 ## [Notes SQL Server 2012](sql-server-2012-release-notes.md)
 ## [Notes SQL Server 2008 R2 SP2](sql-server-2008-r2-sp2-release-notes.md)
 
+# [SQL Server sur Linux](../linux/sql-server-linux-overview.md)
 # [Analysis Services](../analysis-services/analysis-services.md)
 # [Moteur de base de données](../database-engine/sql-server-database-engine-overview.md)
 # [Data Quality Services](../data-quality-services/data-quality-services.md)
 # [Clusters de basculement](../sql-server/failover-clusters/install/sql-server-failover-cluster-installation.md)
-# [Installer](../sql-server/install/planning-a-sql-server-installation.md)
+# [Installer (Windows)](../sql-server/install/planning-a-sql-server-installation.md)
+# [Installer (Linux)](../linux/sql-server-linux-setup.md)
 # [Integration Services](../integration-services/sql-server-integration-services.md)
 # [Master Data Services](../master-data-services/master-data-services-overview-mds.md)
 # [Reporting Services](../reporting-services/create-deploy-and-manage-mobile-and-paginated-reports.md)
@@ -38,6 +40,7 @@
 # [ Assistant Migration de données](../dma/dma-overview.md)
 # [Stretch Database](../sql-server/stretch-database/stretch-database.md)
 # [Didacticiels pour SQL Server](tutorials-for-sql-server-2016.md)
+# [Outils SQL Server](../tools/overview-sql-tools.md)
 
 # Ressources
 

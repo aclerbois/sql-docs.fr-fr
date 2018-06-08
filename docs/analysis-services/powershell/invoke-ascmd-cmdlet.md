@@ -1,32 +1,25 @@
 ---
 title: Applet de commande Invoke-ASCmd | Documents Microsoft
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 2896b74a-3911-4b3f-89ab-bb375bdb34d8
-caps.latest.revision: "15"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: dd40b6d9f777fbea8d12f804b01b537d0ad846ce
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: cf570da0e7be70fda804a3f17d11f6c8498c1605
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-ascmd-cmdlet"></a>Applet de commande Invoke-ASCmd
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Permet à un administrateur de base de données exécuter un script XMLA, MDX (Multidimensional Expressions), instructions des Extensions DMX (Data Mining) ou l’écriture de scripts langage TMSL (Tabular Model).  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Permet à un administrateur de base de données d’exécuter un script XMLA, des instructions MDX (Multidimensional Expressions) ou DMX (Data Mining Extensions) ou un script TMSL (Tabular Model Scripting Language).  
   
- Ce langage est uniquement pris en charge pour le mode serveur tabulaire sur une instance SQL Server 2016 Analysis Services.  
+ Ce langage est uniquement pris en charge pour le mode serveur tabulaire sur une instance SQL Server 2016 Analysis Services.  
   
  Si vous souhaitez créer des bases de données ou d’autres objets, vous utilisez l’applet de commande avec un fichier de script d’entrée.  
   
@@ -35,7 +28,7 @@ ms.lasthandoff: 01/08/2018
   
  `Invoke-ASCmd –InputFile <string> [-Server <string>] [-Database <string>] [-Credential <PSCredential>] [-ConnectionTimeout <int>] [-QueryTimeout <int>] [-Variable <string[]>] [-TraceFile <string>] [-TraceFileFormat <TraceFileFormatOption>] [-TraceFileDelimiter <string>] [-TraceTimeout <int>] [-TraceLevel <TraceLevelOption>] [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L'applet de commande Invoke-ASCmd peut exécuter des requêtes ou des scripts contenus dans les fichiers d'entrée.  
   
  Pour XMLA, les commandes suivantes sont prises en charge : Alter, Backup, Batch, BeginTransaction, Cancel, ClearCache, CommitTransaction, Create, Delete, DesignAggregations, Drop, Insert, Lock, MergePartitions, NotifyTableChange, Process, Restore, RollbackTransaction, Statement (utilisée pour l’exécution de requêtes MDX et d’instructions DMX), Subscribe, Synchronize, Unlock, Update et UpdateCells.  
@@ -204,7 +197,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Entrées|PSObject|  
-|Sorties|String|  
+|Sorties|Chaîne|  
   
 ## <a name="example-1-xmla-input-file"></a>Exemple 1 (fichier d’entrée XMLA)  
   

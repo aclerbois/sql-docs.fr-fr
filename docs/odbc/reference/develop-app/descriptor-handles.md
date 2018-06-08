@@ -1,16 +1,14 @@
 ---
 title: Handles de descripteur | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - application parameter descriptor [ODBC]
 - automatically allocated descriptors [ODBC]
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - ird [ODBC]
 - application row descriptor [ODBC]
 ms.assetid: 7741035c-f3e7-4c89-901e-fe528392f67d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: be9387fd0b34123e1a0b903795b1bf1e2106d725
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 791a28ece56894c8bbe9167c8e2445da32c3e07b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="descriptor-handles"></a>Handles de descripteur
 A *descripteur* est une collection de métadonnées qui décrivent les paramètres d’une instruction SQL ou les colonnes d’un jeu de résultats, comme indiqué par l’application ou le pilote (également connu sous le *implémentation*). Par conséquent, un descripteur peut remplir un des quatre rôles :  

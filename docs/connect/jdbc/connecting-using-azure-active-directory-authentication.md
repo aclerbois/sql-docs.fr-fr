@@ -5,26 +5,25 @@ ms.date: 01/19/2018
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
-ms.component: jdbc
-ms.technology:
-- drivers
-ms.topic: article
+ms.prod: sql
+ms.prod_service: connectivity
+ms.technology: connectivity
+ms.topic: conceptual
 ms.assetid: 9c9d97be-de1d-412f-901d-5d9860c3df8c
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: a0cbb8a2b6eff8e3a612039616f9b497a2ea2737
-ms.sourcegitcommit: 7246ef88fdec262fa0d34bf0e232f089e03a6911
+manager: craigg
+ms.openlocfilehash: d6df50936da3d8b31ec3bc7ecd62212fa6987c4d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-using-azure-active-directory-authentication"></a>Connexion à l’aide de l’authentification Azure Active Directory
+
+[!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
+
 Cet article fournit des informations sur la façon de développer des applications Java à utiliser la fonctionnalité d’authentification Azure Active Directory avec Microsoft JDBC Driver 6.0 (ou version ultérieure) pour SQL Server.
 
 Vous pouvez utiliser l’authentification Azure Active Directory (AAD), ce qui est un mécanisme de se connecter à la base de données SQL Azure v12 à l’aide des identités dans Azure Active Directory. Utilisez l’authentification Azure Active Directory pour gérer les identités des utilisateurs de base de données et comme alternative à l’authentification SQL Server de manière centralisée. Le pilote JDBC vous permet de spécifier vos informations d’identification Azure Active Directory dans la chaîne de connexion JDBC pour se connecter à la base de données SQL Azure. Pour plus d’informations sur la façon de configurer l’authentification Azure Active Directory, visitez [la connexion à SQL de base de données en utilisant authentification Azure Active Directory](https://azure.microsoft.com/documentation/articles/sql-database-aad-authentication/). 
@@ -219,9 +218,9 @@ L’exemple ci-dessous contient une simple application Java qui se connecte à l
     7. Cliquez sur « Créer » en bas.
     9. Dans le portail Azure, cliquez sur l’onglet « Paramètres » de votre application et ouvrez l’onglet « Propriétés ».
     10. Recherchez la valeur « ID d’Application » (également appelé ID de Client) et copiez-le mis de côté, vous besoin plus tard lors de la configuration de votre application (par exemple, 1846943b-ad04-4808-aa13-4702d908b5c1). Consultez l’instantané suivant.
-    11. Recherchez la valeur « URL ID d’application » et copiez-le mis de côté, voici l’URL STS.
-    12. Sous la section « Clés », créez une clé en renseignant le champ nom, en sélectionnant la durée de la clé et enregistrer la configuration (laisser le champ de valeur vide). Après l’enregistrement, la valeur doit être renseigné automatiquement, copiez la valeur générée. Il s’agit de la clé secrète du client.
-
+    11. Sous la section « Clés », créez une clé en renseignant le champ nom, en sélectionnant la durée de la clé et enregistrer la configuration (laisser le champ de valeur vide). Après l’enregistrement, la valeur doit être renseigné automatiquement, copiez la valeur générée. Il s’agit de la clé secrète du client.
+    12. Dans le volet gauche, cliquez sur Azure Active Directory. Sous « Inscriptions d’application », recherchez l’onglet « Points de terminaison ». Copiez l’URL sous « ENDPOINT jeton OATH 2.0 », voici l’URL de votre STS.
+    
     ![JDBC_AAD_Token](../../connect/jdbc/media/jdbc_aad_token.png)  
 2. Connectez-vous à la base de données utilisateur de votre serveur SQL Azure en tant qu’un administrateur Azure Active Directory et à l’aide une disposition de la commande T-SQL un utilisateur de base de données pour votre application principale. Consultez le [la connexion à la base de données SQL ou SQL données entrepôt par à l’aide d’authentification Azure Active Directory](https://azure.microsoft.com/documentation/articles/sql-database-aad-authentication/) pour plus d’informations sur la création d’un administrateur Azure Active Directory et un utilisateur de base de données.
 
@@ -252,7 +251,7 @@ public class TokenBasedExample {
 
         // Retrieve the access token from the AD.
         String spn = "https://database.windows.net/";
-        String stsurl = "https://microsoft.onmicrosoft.com/..."; // Replace with your STS URL.
+        String stsurl = "https://login.microsoftonline.com/..."; // Replace with your STS URL.
         String clientId = "1846943b-ad04-4808-aa13-4702d908b5c1"; // Replace with your client ID.
         String clientSecret = "..."; // Replace with your client secret.
 

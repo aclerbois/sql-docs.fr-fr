@@ -1,34 +1,30 @@
 ---
-title: "OLEDB Provider Information, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: OLEDB Provider Information, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OLEDB Provider Information event class
 ms.assetid: a0316c4e-4b8c-4754-8a35-222f3c0907d1
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2b1028b00fc922d317f8090a256a2a733f5ae1aa
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 68a53deded041d53b7cbab33320d09d94ea8a4b5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="oledb-provider-information-event-class"></a>OLEDB Provider Information (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **OLEDB Provider Information** intervient quand une requête distribuée est exécutée et recueille des informations correspondant à la connexion du fournisseur.  
+  La classe d’événements **OLEDB Provider Information** intervient quand une requête distribuée est exécutée et recueille des informations correspondant à la connexion du fournisseur.  
   
  Cette classe d'événements contient toutes les propriétés qui sont recueillies à partir du fournisseur distant à l'aide de divers jeux de propriétés, notamment :  
   

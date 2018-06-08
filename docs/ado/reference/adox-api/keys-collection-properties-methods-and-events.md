@@ -1,30 +1,27 @@
 ---
-title: "Clés de Collection Propriétés, méthodes et événements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Clés de Collection Propriétés, méthodes et événements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Keys collection [ADOX], members
 ms.assetid: eeb3746d-1c75-4bb0-97b5-2c2d073c8c0e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 64b6af505c10d9931cd06084e642bb65743b17ed
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 41770aad205b9c1a6fe245de1f1b8e8b76649fe9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="keys-collection-properties-methods-and-events"></a>Propriétés de Collection de clés, méthodes et événements
 ## <a name="properties"></a>Propriétés  

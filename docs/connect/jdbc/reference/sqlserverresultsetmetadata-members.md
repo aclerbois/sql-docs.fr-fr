@@ -1,27 +1,24 @@
 ---
 title: Membres de SQLServerResultSetMetaData | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 37587981-2979-49a3-a6ab-df4bfb9b8748
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: df2f0fbfe57b258bf0ad314377f0d11925ac03b9
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 03374d523c0dda429b7193404cefddbb9b5711ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverresultsetmetadata-members"></a>Membres de SQLServerResultSetMetaData
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -56,11 +53,11 @@ ms.lasthandoff: 11/18/2017
 |[getScale](../../../connect/jdbc/reference/getscale-method-sqlserverresultsetmetadata.md)|Obtient le nombre de chiffres à droite de la virgule décimale pour la colonne désignée.|  
 |[getSchemaName](../../../connect/jdbc/reference/getschemaname-method-sqlserverresultsetmetadata.md)|Obtient le nom de schéma de la table pour la colonne désignée.|  
 |[getTableName](../../../connect/jdbc/reference/gettablename-method-sqlserverresultsetmetadata.md)|Obtient le nom de table de la colonne désignée.|  
-|[isAutoIncrement](../../../connect/jdbc/reference/isautoincrement-method-sqlserverresultsetmetadata.md)|Indique si la colonne désignée est numérotée automatiquement, la plaçant ainsi en lecture seule.|  
-|[isCaseSensitive](../../../connect/jdbc/reference/iscasesensitive-method-sqlserverresultsetmetadata.md)|Indique si une colonne respecte la casse.|  
+|[IsAutoIncrement](../../../connect/jdbc/reference/isautoincrement-method-sqlserverresultsetmetadata.md)|Indique si la colonne désignée est numérotée automatiquement, la plaçant ainsi en lecture seule.|  
+|[IsCaseSensitive](../../../connect/jdbc/reference/iscasesensitive-method-sqlserverresultsetmetadata.md)|Indique si une colonne respecte la casse.|  
 |[isCurrency](../../../connect/jdbc/reference/iscurrency-method-sqlserverresultsetmetadata.md)|Indique si la colonne désignée est une valeur de devise.|  
 |[isDefinitelyWritable](../../../connect/jdbc/reference/isdefinitelywritable-method-sqlserverresultsetmetadata.md)|Indique si une écriture dans la colonne désignée réussit toujours.|  
-|[isNullable](../../../connect/jdbc/reference/isnullable-method-sqlserverresultsetmetadata.md)|Indique l'acceptation des valeurs NULL dans la colonne désignée.|  
+|[IsNullable](../../../connect/jdbc/reference/isnullable-method-sqlserverresultsetmetadata.md)|Indique l'acceptation des valeurs NULL dans la colonne désignée.|  
 |[isReadOnly](../../../connect/jdbc/reference/isreadonly-method-sqlserverresultsetmetadata.md)|Indique si la colonne désignée n'accepte jamais d'écriture.|  
 |[isSearchable](../../../connect/jdbc/reference/issearchable-method-sqlserverresultsetmetadata.md)|Indique si la colonne désignée peut être utilisée dans une clause SQL WHERE.|  
 |[isSigned](../../../connect/jdbc/reference/issigned-method-sqlserverresultsetmetadata.md)|Indique si les valeurs de la colonne désignée sont des nombres signés.|  

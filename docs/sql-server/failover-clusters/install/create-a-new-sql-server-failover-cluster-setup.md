@@ -1,16 +1,13 @@
 ---
-title: "Créer un cluster de basculement SQL Server (programme d’installation) | Microsoft Docs"
-ms.custom: 
+title: Créer un cluster de basculement SQL Server (programme d’installation) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.prod: sql
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - adding nodes
 - failover clustering [SQL Server], creating clusters
@@ -19,19 +16,20 @@ helpviewer_keywords:
 - clusters [SQL Server], creating
 - removing nodes
 ms.assetid: 30e06a7d-75e9-44e2-bca3-b3b0c4a33f61
-caps.latest.revision: "77"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 581129c04f1348b0fd66a9a5064c923324365d65
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+caps.latest.revision: 77
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 0890c77c50af48ce34cdcb21cf7784ae69616a52
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772035"
 ---
 # <a name="create-a-new-sql-server-failover-cluster-setup"></a>Créer un cluster de basculement SQL Server (programme d'installation)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour installer ou mettre à niveau un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous devez exécuter le programme d’installation sur chaque nœud du cluster de basculement. Pour ajouter un nœud à un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] existant, vous devez exécuter le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur le nœud destiné à être ajouté à l'instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . N'exécutez pas le programme d'installation sur le nœud actif pour gérer les autres nœuds.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pour installer ou mettre à niveau un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , vous devez exécuter le programme d'installation sur chaque nœud du cluster de basculement. Pour ajouter un nœud à un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] existant, vous devez exécuter le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur le nœud destiné à être ajouté à l'instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . N'exécutez pas le programme d'installation sur le nœud actif pour gérer les autres nœuds.  
   
  Selon la façon dont les nœuds sont mis en cluster, le cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est configuré des façons suivantes :  
   
@@ -74,7 +72,7 @@ ms.lasthandoff: 12/05/2017
   
  Pour plus d’informations sur l’installation d’ [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] dans un cluster de basculement Windows, consultez [Procédure : mettre en cluster SQL Server Analysis Services](http://go.microsoft.com/fwlink/p/?LinkId=396548).  
   
-## <a name="prerequisites"></a>Conditions préalables  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Avant de commencer, consultez les rubriques suivantes dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] :  
   
 -   [Planification d'une installation SQL Server](../../../sql-server/install/planning-a-sql-server-installation.md)  
@@ -401,12 +399,12 @@ ms.lasthandoff: 12/05/2017
   
 19. Après l'installation, la page **Terminé** fournit un lien vers le fichier journal résumé de l'installation et d'autres remarques importantes. Pour terminer le processus d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , cliquez sur **Fermer**. Avec cette procédure, tous les nœuds préparés pour le même cluster de basculement font partie du cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] terminé.  
   
-## <a name="next-steps"></a>Étapes suivantes  
+## <a name="next-steps"></a>Next Steps  
  **Configurer votre nouvelle installation [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]** : pour réduire la surface d’exposition vulnérable aux attaques d’un système, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] installe et active de manière sélective les services et fonctionnalités clés. Pour plus d'informations, consultez [Surface Area Configuration](../../../relational-databases/security/surface-area-configuration.md).  
   
  Pour plus d’informations sur l’emplacement des fichiers journaux, consultez [Afficher et lire les fichiers journaux d’installation de SQL Server](../../../database-engine/install-windows/view-and-read-sql-server-setup-log-files.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Installer SQL Server 2016 à partir de l’invite de commandes](../../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md)  
   
   

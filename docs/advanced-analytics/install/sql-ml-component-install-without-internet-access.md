@@ -1,26 +1,18 @@
 ---
-title: "Installer les composants de l’apprentissage de SQL Server sans accès à internet | Documents Microsoft"
-ms.custom: 
-ms.date: 03/05/2018
-ms.reviewer: 
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+title: Installer les composants de l’apprentissage de SQL Server sans accès à internet | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 05/02/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 3f542786420eec8377dfe52ba3a1b73a24fbf524
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: 289f304cf445882981fb110e9c00a395cac90e5f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585611"
 ---
 # <a name="install-sql-server-machine-learning-components-without-internet-access"></a>Installer les composants sans accès à internet d’apprentissage automatique SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -70,6 +62,22 @@ Microsoft R Open     |aucune modification ; utiliser le précédent|
 Microsoft R Server      |[SRS_9.2.0.400_1033.cab](https://go.microsoft.com/fwlink/?LinkId=866212&clcid=1033)|
 Python de Microsoft Open     |aucune modification ; utiliser le précédent|
 Python de Microsoft Server    |[SPS_9.2.0.400_1033.cab](https://go.microsoft.com/fwlink/?LinkId=866213&clcid=1033)|
+**SQL Server 2017 CU5** |
+Microsoft R Open     |aucune modification ; utiliser le précédent|
+Microsoft R Server      |[SRS_9.2.0.500_1033.cab](https://go.microsoft.com/fwlink/?LinkId=869052&clcid=1033)|
+Python de Microsoft Open     |aucune modification ; utiliser le précédent|
+Python de Microsoft Server    |[SPS_9.2.0.500_1033.cab](https://go.microsoft.com/fwlink/?LinkId=869053&clcid=1033)|
+**SQL Server 2017 CU6** |
+Microsoft R Open     |aucune modification ; utiliser le précédent|
+Microsoft R Server      |[SRS_9.2.0.600_1033.cab](https://go.microsoft.com/fwlink/?LinkId=871074&clcid=1033)|
+Python de Microsoft Open     |aucune modification ; utiliser le précédent|
+Python de Microsoft Server    |[SPS_9.2.0.600_1033.cab](https://go.microsoft.com/fwlink/?LinkId=871073&clcid=1033)|
+**SQL Server 2017 CU7** |
+Microsoft R Open     |aucune modification ; utiliser le précédent|
+Microsoft R Server      |modification de o ; utiliser le précédent|
+Python de Microsoft Open     |aucune modification ; utiliser le précédent|
+Python de Microsoft Server    |aucune modification ; utiliser le précédent|
+
 
 ### <a name="bkmk_2016Installers"></a>Téléchargements pour SQL Server 2016
 

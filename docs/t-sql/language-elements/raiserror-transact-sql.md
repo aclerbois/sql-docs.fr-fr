@@ -1,16 +1,14 @@
 ---
 title: RAISERROR (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - RAISERROR
@@ -31,16 +29,16 @@ helpviewer_keywords:
 - CATCH block
 - messages [SQL Server], RAISERROR statement
 ms.assetid: 483588bd-021b-4eae-b4ee-216268003e79
-caps.latest.revision: 
+caps.latest.revision: 73
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: af9f82f9b550ecd366c10562199c606bf8ff0c9c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d9e89081eadae06a6dd14ae9a4d5e273657146f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="raiserror-transact-sql"></a>RAISERROR (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all_md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -126,10 +124,10 @@ RAISERROR ( { msg_str | @local_variable }
 >  Ces spécifications de type sont basées sur celles qui ont été initialement définies pour la fonction **printf** dans la bibliothèque standard C. Les spécifications de types utilisés dans les chaînes de message RAISERROR correspondent aux types de données [!INCLUDE[tsql](../../includes/tsql-md.md)], tandis que les spécifications utilisées dans **printf** sont mappées aux types de données de langage C. RAISERROR ne prend pas en charge les spécifications de types utilisées dans **printf** lorsque [!INCLUDE[tsql](../../includes/tsql-md.md)] ne comporte pas de type de données semblable au type de données C associé. Par exemple, la spécification *%p* pour les pointeurs n’est pas prise en charge dans RAISERROR car [!INCLUDE[tsql](../../includes/tsql-md.md)] ne compte aucun type de données de pointeur.  
   
 > [!NOTE]  
->  Pour convertir une valeur en type de données [!INCLUDE[tsql](../../includes/tsql-md.md)]**bigint**, spécifiez **%I64d**.  
+>  Pour convertir une valeur en type de données [!INCLUDE[tsql](../../includes/tsql-md.md)] **bigint**, spécifiez **%I64d**.  
   
- **@** *local_variable*  
- Variable de n’importe quel type de données caractères valide qui contient une chaîne mise en forme de la même manière que *msg_str*. **@*** local_variable* doit être de type **char** ou **varchar**, ou doit pouvoir être converti implicitement en ces types de données.  
+ *@local_variable*  
+ Variable de n’importe quel type de données caractères valide qui contient une chaîne mise en forme de la même manière que *msg_str*. *@local_variable* doit être de type **char** ou **varchar**, ou doit pouvoir être converti implicitement en ces types de données.  
   
  *severity*  
  Représente le niveau de gravité défini par l'utilisateur associé au message en question. Lorsque vous utilisez *msg_id* pour générer un message défini par l’utilisateur créé à l’aide de sp_addmessage, la gravité spécifiée dans l’instruction RAISERROR remplace celle indiquée dans sp_addmessage.  

@@ -1,36 +1,32 @@
 ---
-title: "Procédures stockées, catégorie d’événements | Microsoft Docs"
-ms.custom: 
+title: Procédures stockées, catégorie d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Stored Procedures event category [SQL Server]
 - SQL Server event classes, Stored Procedures event category
 - event classes [SQL Server], Stored Procedures event category
 ms.assetid: 71bebaa3-a05a-4695-b349-078cecd0949a
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 392e922e32dcae4f6765503c5af24cf0b58b81e6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e155df20d6345e8b3bbc34566ba702f464cd196e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="stored-procedures-event-category"></a>Catégorie d'événements Procédures stockées
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La catégorie d’événements **Procédures stockées** contient des événements de procédure stockée généraux.  
+  La catégorie d’événements **Procédures stockées** contient des événements de procédure stockée généraux.  
   
 ## <a name="in-this-section"></a>Dans cette section  
   

@@ -1,33 +1,23 @@
 ---
 title: Ensemble de lignes DISCOVER_PARTITION_STAT | Documents Microsoft
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 20d339e2-f47f-437f-94d5-5b00b400356a
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 649475fa5fd1a4e0bb2a6c734f916270ac7f9a64
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d2dd86a1ab15fbe9bcf11c6a4891fce22091fe58
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discoverpartitionstat-rowset"></a>DISCOVER_PARTITION_STAT, ensemble de lignes
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Retourne des statistiques sur les agrégations dans une partition particulière.  
+  Retourne des statistiques sur les agrégations dans une partition particulière.  
   
  **S'applique à :** modèles tabulaires, modèles multidimensionnels  
   
@@ -38,8 +28,8 @@ Retourne des statistiques sur les agrégations dans une partition particulière.
 |-----------------|--------------------|-----------------|-----------------|  
 |**DATABASE_NAME**|**DBTYPE_WSTR**|Requis|Nom de la base de données contient la dimension.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
 |**CUBE_NAME**|**DBTYPE_WSTR**|Requis|Nom du cube ou du modèle tabulaire contenant la partition.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
-|**MEASURE_GROUP_NAME**|**DBTYPE_WSTR**|Requis|Nom d'un groupe de mesures dans la dimension.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
-|**PARTITION_NAME**|**DBTYPE_WSTR**|Requis|Nom d'une partition.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
+|**NOM_GROUPE_MESURES**|**DBTYPE_WSTR**|Requis|Nom d'un groupe de mesures dans la dimension.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
+|**NOM_PARTITION**|**DBTYPE_WSTR**|Requis|Nom d'une partition.<br /><br /> Cette colonne est requise dans la liste de restriction.|  
 |**AGGREGATION_NAME**|**DBTYPE_WSTR**||Nom de l'agrégation.|  
 |**AGGREGATION_SIZE**|**DBTYPE_I8**||Taille de l'agrégation.|  
   

@@ -1,33 +1,30 @@
 ---
-title: "Objet de l’axe (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Objet de l’axe (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Axis
 helpviewer_keywords:
 - Axis object [ADO MD]
 ms.assetid: 5f498c9a-b1e7-4e6e-9ae6-71eadaf9aada
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cdf9844445a4512a9ec81b1178e110da3410c475
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 689bc6f49df65025bea7df44110cf02b4ec09ba0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="axis-object-ado-md"></a>Objet de l’axe (ADO MD)
 Représente une position ou l’axe de filtre d’un ensemble de cellules contenant des membres sélectionnés d’une ou plusieurs dimensions.  

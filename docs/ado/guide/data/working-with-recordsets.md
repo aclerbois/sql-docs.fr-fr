@@ -1,30 +1,27 @@
 ---
-title: "Utilisation des jeux d’enregistrements | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Utilisation des jeux d’enregistrements | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Recordset object [ADO]
 ms.assetid: bdf9a56a-de4a-44de-9111-2f11ab7b16ea
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b29d34907c7e4dcccc8494101c819cca05c02066
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b83fb8d5ad4e2e063ca840b7e8fb31bbf15fde14
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="working-with-recordsets"></a>Utilisation des jeux d’enregistrements
 Le **Recordset** objet possède des fonctionnalités intégrées qui permettent de vous réorganiser l’ordre des données dans le jeu de résultats, pour rechercher un enregistrement spécifique en fonction de critères que vous fournissez et d’optimiser les opérations de recherche à l’aide d’index. Si ces fonctionnalités sont disponibles pour une utilisation dépend du fournisseur et dans certains cas, telle que celle de la [Index](../../../ado/reference/ado-api/index-property.md) propriété — la structure de la source de données.  
@@ -62,7 +59,7 @@ Le **Recordset** objet possède des fonctionnalités intégrées qui permettent 
   
  L’opérateur de comparaison du critère peut être »**>**« (supérieur à), »**\<**» (inférieur à), « = » (égal), « > = » (supérieur ou égal à), « < = » (inférieur ou égal à), » <> » (différent de), ou « LIKE » (correspondance).  
   
- La valeur du critère peut être une chaîne, un nombre à virgule flottante ou une date. Les valeurs de chaîne sont délimitées par des guillemets simples ou « # » (dièse) (par exemple, « état = 'WA' » ou « état = #WA # »). Les valeurs de date sont séparés par des signes « # » (dièse) (par exemple, « start_date > #7/22/&#97; »).  
+ La valeur du critère peut être une chaîne, un nombre à virgule flottante ou une date. Les valeurs de chaîne sont délimitées par des guillemets simples ou « # » (dièse) (par exemple, « état = 'WA' » ou « état = #WA # »). Les valeurs de date sont séparés par des signes « # » (dièse) (par exemple, « start_date > #7/22/97 # »).  
   
  Si l’opérateur de comparaison est « comme », la valeur de chaîne peut contenir un astérisque (*) pour rechercher une ou plusieurs occurrences d’un caractère ou d’une sous-chaîne. Par exemple, « state like'm\*' » correspond à Maine et du Massachusetts. Vous pouvez également utiliser des astérisques de début et de fin pour rechercher une sous-chaîne contenue dans les valeurs. Par exemple, « état comme '\*comme\*' » correspond à Alaska, Arkansas et Massachusetts.  
   
@@ -94,7 +91,7 @@ Le **Recordset** objet possède des fonctionnalités intégrées qui permettent 
   
 -   *FieldName* doit être un nom de champ valide à partir de la **Recordset**. Si le nom du champ contient des espaces, vous devez placer le nom entre crochets.  
   
--   *Opérateur* doit être une des opérations suivantes :  **\<** ,  **>** ,  **\< =** ,  **>=**  ,  **<>** ,  **=** , ou **comme**.  
+-   *Opérateur* doit être une des opérations suivantes : **\<**, **>**, **\< =**, **>=** , **<>**, **=**, ou **comme**.  
   
 -   *Valeur* est la valeur à laquelle vous comparez les valeurs de champ (par exemple, `'Smith'`, `#8/24/95#`, `12.345`, ou `$50.00`). Utilisez des guillemets simples (') avec des chaînes et les signes dièse (`#`) avec des dates. Pour les nombres, vous pouvez utiliser le point décimal, signes dollar et la notation scientifique. Si *opérateur* est **comme**, *valeur* peut utiliser des caractères génériques. Uniquement l’astérisque (\*) et signe de pourcentage (%) caractères génériques autorisés, et ils doivent être le dernier caractère de la chaîne. *Valeur* ne peut pas être null.  
   

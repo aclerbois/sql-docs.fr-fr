@@ -1,35 +1,32 @@
 ---
-title: "Modèle objet ADO MD | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Modèle objet ADO MD | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ADO MD, object model
 ms.assetid: 6242b374-091b-406f-827a-c0dcd3e1967a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb267197bb4ca07bf8583d64676b5b0fe357bdfb
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4461c8b6465ddf272830726898d29fbc9ff7c007
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-md-object-model"></a>Modèle objet ADO MD
 Cette rubrique décrit comment les objets sont représentés et liées dans ADO MD.  
   
- ![ADO MD Object Model](../../../ado/reference/ado-md-api/media/ado_md_object_model.gif "ADO_MD_object_model")  
+ ![Modèle objet ADO MD](../../../ado/reference/ado-md-api/media/ado_md_object_model.gif "ADO_MD_object_model")  
   
  Le [axe](../../../ado/reference/ado-md-api/axis-object-ado-md.md) et [cellule](../../../ado/reference/ado-md-api/cell-object-ado-md.md) chacun des objets ont une [Positions](../../../ado/reference/ado-md-api/positions-collection-ado-md.md) collection.  
   

@@ -1,31 +1,29 @@
 ---
 title: '! (Non logique) (expression SSIS) | Microsoft Docs'
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logical Not (!)
 - '! (logical Not)'
 ms.assetid: d5c4d1e1-7be4-4d25-bcd9-5b6ddb53b3b3
-caps.latest.revision: 
+caps.latest.revision: 35
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 68cee85e74159fc68783aded9f117c415d1bd15a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 7e2e0b5193532c6147954369eee53f38a1072303
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="-logical-not-ssis-expression"></a>! (Non logique) (expression SSIS)
   Inverse un opérande booléen.  

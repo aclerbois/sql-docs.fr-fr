@@ -1,17 +1,13 @@
 ---
-title: "Observations relatives à l’utilisation de serveurs de test | Microsoft Docs"
-ms.custom: 
+title: Observations relatives à l’utilisation de serveurs de test | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - overhead [Database Engine Tuning Advisor]
 - tuning overhead [SQL Server]
@@ -22,19 +18,19 @@ helpviewer_keywords:
 - production servers [SQL Server]
 - offload tuning overhead [SQL Server]
 ms.assetid: 94e6c3e5-1f09-4616-9da2-4e44d066d494
-caps.latest.revision: 
+caps.latest.revision: 27
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb2515163afb01ece59d6d1dc7d681e67dfbbbd4
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7df20d63ae24216781d4b1e4abc8f01fbd6c9c65
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="considerations-for-using-test-servers"></a>Observations relatives à l'utilisation de serveurs de test
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’utilisation d’un serveur de test pour paramétrer une base de données sur un serveur de production constitue un avantage important de l’Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Avec cette fonctionnalité, vous pouvez transférer sur un serveur de test la charge de gestion du paramétrage sans copier les données réelles sur le serveur de test à partir du serveur de production.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L’utilisation d’un serveur de test pour paramétrer une base de données sur un serveur de production constitue un avantage important de l’Assistant Paramétrage de [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Avec cette fonctionnalité, vous pouvez transférer sur un serveur de test la charge de gestion du paramétrage sans copier les données réelles sur le serveur de test à partir du serveur de production.  
   
 > [!NOTE]  
 >  La fonction de paramétrage du serveur de test n'est pas prise en charge par l'interface utilisateur graphique de l'Assistant Paramétrage du [!INCLUDE[ssDE](../../includes/ssde-md.md)] .  

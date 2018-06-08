@@ -2,16 +2,14 @@
 title: Spécifier des indicateurs de fin de champ et de fin de ligne (SQL Server) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: import-export
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
+ms.technology: data-movement
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - bcp utility [SQL Server], terminators
 - field terminators [SQL Server]
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - row terminators [SQL Server]
 - terminators [SQL Server]
 ms.assetid: f68b6782-f386-4947-93c4-e89110800704
-caps.latest.revision: ''
+caps.latest.revision: 39
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8d596be8f4ae978a3eafe58d1cf9e8e52241f49c
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9d0890d79f2277b5f1ea1676bed9f4c9b20e6590
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-field-and-row-terminators-sql-server"></a>Spécifier des indicateurs de fin de champ et de fin de ligne (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -46,13 +44,13 @@ ms.lasthandoff: 03/20/2018
 |Caractère de saut de ligne|\n<br /><br /> Il s'agit de l'indicateur de fin de ligne par défaut.|  
 |Retour chariot/saut de ligne|\r|  
 |Barre oblique inverse*|\\\|  
-|Indicateur de fin NULL (indicateur de fin non visible)\*\*|\0|  
+|Indicateur de fin NULL (indicateur de fin non visible)**|\0|  
 |Tout caractère imprimable (les caractères de contrôle ne le sont pas, sauf les valeurs NULL, tabulation, saut de ligne et retour chariot)|(*, A, t, l, etc.)|  
-|Une chaîne de 10 caractères imprimables maximum, y compris certains ou tous les indicateurs de fin énumérés précédemment|(\*\*\t\*\*, fin, !!!!!!!!!!, \t—\n, etc.)|  
+|Une chaîne de 10 caractères imprimables maximum, y compris certains ou tous les indicateurs de fin énumérés précédemment|(**\t\*\*, fin, !!!!!!!!!!, \t—\n, etc.)|  
   
  *Seuls les caractères t, n, r, 0, et '\0' fonctionnent avec le caractère d’échappement Barre oblique inverse pour générer un caractère de contrôle.  
   
- \*\*Bien que le caractère de contrôle null (\0) ne soit pas visible à l’impression, il constitue bel et bien un caractère à part dans le fichier de données. En d'autres termes, utiliser ce caractère en tant qu'indicateur de fin de champ ou de fin de ligne ne revient pas à simplement omettre cet indicateur de fin.  
+ **Bien que le caractère de contrôle null (\0) ne soit pas visible à l’impression, il constitue bel et bien un caractère à part dans le fichier de données. En d'autres termes, utiliser ce caractère en tant qu'indicateur de fin de champ ou de fin de ligne ne revient pas à simplement omettre cet indicateur de fin.  
   
 > [!IMPORTANT]  
 >  Si un caractère correspond à un caractère indicateur de fin dans la continuité des données, il est alors interprété en tant que tel et non en tant que donnée ; les données suivant ce caractère sont donc considérées comme faisant partie du champ ou de l'enregistrement suivant. Par conséquent, choisissez vos indicateurs consciencieusement afin qu'ils n'apparaissent jamais au sein de vos données. Par exemple, il n'est pas judicieux de choisir un indicateur de fin de champ de substitut faible pour un indicateur de fin de champ si les données contiennent ce substitut faible.  
@@ -90,7 +88,7 @@ ms.lasthandoff: 03/20/2018
         >  Après avoir indiqué de façon interactive tous les champs d’une commande **bcp**, cette dernière vous demande de sauvegarder vos réponses dans un fichier de format autre que XML pour chacun des champs fournis. Pour plus d’informations sur les fichiers de format non-XML, consultez [Fichiers de format non-XML &#40;SQL Server&#41;](../../relational-databases/import-export/non-xml-format-files-sql-server.md).  
   
 ### <a name="guidelines-for-using-terminators"></a>Instructions pour l'utilisation d'indicateurs de fin  
- Dans certains cas, un indicateur de fin s'avère utile pour les champs de données de type **char** ou **nchar** . Par exemple :  
+ Dans certains cas, un indicateur de fin s'avère utile pour les champs de données de type **char** ou **nchar** . Exemple :  
   
 -   pour une colonne de données qui contient une valeur Null dans un fichier de données qui sera importé dans un programme qui ne comprend pas les informations de longueur de préfixe ;  
   
@@ -109,7 +107,7 @@ ms.lasthandoff: 03/20/2018
 |------------|-----------------|  
 |**-c**|Chargement des champs de données en tant que données sous forme de caractères.|  
 |**-t** `,`|Virgule (,) servant d'indicateur de fin de champ.|  
-|**-r** \n|Indicateur de fin de ligne en tant que caractère de saut de ligne. Il s'agit de l'indicateur par défaut ; le préciser est donc facultatif.|  
+|**-r** \n|Indicateur de fin de ligne en tant que caractère de saut de ligne. Il s'agit de l'indicateur par défaut ; le préciser est donc facultatif.|  
 |**-T**|Spécifie que l'utilitaire **bcp** se connecte à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec une connexion approuvée qui utilise la sécurité intégrée. Si **-T** n’est pas spécifié, vous devez indiquer **-U** et **-P** pour vous connecter.|  
   
  Pour plus d’informations, consultez [bcp Utility](../../tools/bcp-utility.md).  
@@ -133,7 +131,7 @@ bcp AdventureWorks.HumanResources.Department out C:\myDepartment-c-t.txt -c -t, 
   
      Les terminateurs peuvent être spécifiés pour chaque champ d'un fichier de format ou pour le fichier de données tout entier grâce aux qualificateurs répertoriés dans le tableau suivant.  
   
-    |Qualificateur| Description|  
+    |Qualificateur|Description|  
     |---------------|-----------------|  
     |FIELDTERMINATOR **='***field_terminator***'**|Spécifie l'indicateur de fin de champ à utiliser pour les fichiers de données de type caractère et de type caractère Unicode.<br /><br /> Par défaut, c'est le caractère de tabulation (\t).|  
     |ROWTERMINATOR **='***row_terminator***'**|Spécifie l'indicateur de fin de ligne à utiliser pour les fichiers de données de type caractère et de type caractère Unicode.<br /><br /> Par défaut, il s'agit du caractère de saut de ligne (\n).|  
@@ -174,9 +172,9 @@ bcp AdventureWorks..myDepartment in C:\myDepartment-c-t.txt -c -t , -r \n -T
 #### <a name="b-using-bulk-insert-to-interactively-specify-terminators"></a>B. Utilisation de BULK INSERT pour spécifier de façon interactive les terminateurs  
  L'exemple suivant importe en bloc le fichier de données `Department-c-t.txt` par le biais de l'instruction `BULK INSERT` en utilisant les qualificateurs répertoriés dans le tableau suivant.  
   
-|Option|Attribut|  
+|Option|Attribute|  
 |------------|---------------|  
-|DATAFILETYPE **='**char**'**|Chargement des champs de données en tant que données sous forme de caractères.|  
+|DATAFILETYPE **='** char **'**|Chargement des champs de données en tant que données sous forme de caractères.|  
 |FIELDTERMINATOR **='**`,`**'**|Virgule (`,`) servant d'indicateur de fin de champ.|  
 |ROWTERMINATOR **='**`\n`**'**|Indicateur de fin de ligne en tant que caractère de saut de ligne.|  
   
@@ -194,7 +192,7 @@ BULK INSERT myDepartment FROM 'C:\myDepartment-c-t.txt'
 GO  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [bcp Utility](../../tools/bcp-utility.md)   
  [BULK INSERT &#40;Transact-SQL&#41;](../../t-sql/statements/bulk-insert-transact-sql.md)   
  [OPENROWSET &#40;Transact-SQL&#41;](../../t-sql/functions/openrowset-transact-sql.md)   

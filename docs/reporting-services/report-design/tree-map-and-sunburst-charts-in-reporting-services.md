@@ -1,30 +1,29 @@
 ---
-title: "Graphiques de compartimentage et en rayons de soleil dans SQL Server Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Graphiques de compartimentage et en rayons de soleil dans SQL Server Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 08/31/2015
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 12307c8f-bca7-4d21-8ad5-0c07d819865b
-caps.latest.revision: "17"
+caps.latest.revision: 17
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1dcafd7c259a88fd57022da4e72f9e3abeb077b1
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 152507403574ae4c699a3aa30a2376c0ed6b2af2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="treemap-and-sunburst-charts-in-reporting-services"></a>Graphiques de compartimentage et en rayons de soleil dans Reporting Services
-[!INCLUDE[feedback-stackoverflow-msdn-connect-md](../../includes/feedback-stackoverflow-msdn-connect-md.md)] Les visualisations sous la forme de graphiques de compartimentage et en rayons de soleil de SQL Server [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] sont parfaites pour représenter visuellement des données hiérarchiques. Cet article présente une vue d’ensemble de l’ajout d’un graphique de compartimentage ou d’un graphique en rayons de soleil à un rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Il inclut également un exemple de requête AdventureWorks pour vous aider à démarrer.  
+[!INCLUDE[feedback-stackoverflow-msdn-connect-md](../../includes/feedback-stackoverflow-msdn-connect-md.md)]
+Les visualisations sous la forme de graphiques de compartimentage et en rayons de soleil de SQL Server [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] sont parfaites pour représenter visuellement des données hiérarchiques. Cet article présente une vue d’ensemble de l’ajout d’un graphique de compartimentage ou d’un graphique en rayons de soleil à un rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]. Il inclut également un exemple de requête AdventureWorks pour vous aider à démarrer.  
   
 ##  <a name="bkmk_treemap_chart"></a> Graphique de compartimentage  
 

@@ -1,16 +1,15 @@
 ---
-title: "Octroi d’autorisations sur un serveur de rapports en mode natif | Microsoft Docs"
-ms.custom: 
+title: Octroi d’autorisations sur un serveur de rapports en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - roles [Reporting Services], creating
 - authorization [Reporting Services]
@@ -24,16 +23,15 @@ helpviewer_keywords:
 - role-based security [Reporting Services], about role-based security
 - security [Reporting Services], role-based
 ms.assetid: 260dc2e9-546c-4f04-9fa1-977e23c9d68c
-caps.latest.revision: "60"
+caps.latest.revision: 60
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: b97ba436eeedf30521b22fb0231ace07cdacbefc
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 9c20c3f24a1a6698ef86446e0be9df4f91b6ba80
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="granting-permissions-on-a-native-mode-report-server"></a>Octroi d'autorisations sur un serveur de rapports en mode natif
   SQL Server [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] utilise l'autorisation basée sur les rôles et un sous-système d'authentification pour déterminer qui est habilité à effectuer des opérations et à accéder aux éléments d'un serveur de rapports. L'autorisation basée sur les rôles catégorise en rôles l'ensemble des actions qu'un utilisateur ou groupe peut effectuer. L'authentification repose sur l'authentification Windows intégrée ou sur un module d'authentification personnalisé que vous fournissez. Vous pouvez utiliser des rôles prédéfinis ou personnalisés avec chacun de ces types d'authentifications.  

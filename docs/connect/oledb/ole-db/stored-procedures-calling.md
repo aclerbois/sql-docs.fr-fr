@@ -3,14 +3,12 @@ title: Appel d’une procédure stockée (OLE DB) | Documents Microsoft
 description: Appel d'une procédure stockée (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -23,13 +21,12 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, stored procedures
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 96f21a14b48e0cc5df2042149679f9bd848d38e6
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 6f4ee66e9f1eaf37f78e3a0a4a326655554c58f2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stored-procedures---calling"></a>Procédures stockées - appel
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -122,7 +119,7 @@ ms.lasthandoff: 03/30/2018
 {rpc SalesByCategory}  
 ```  
   
- Pour un exemple d’application qui illustre une séquence d’échappement RPC, consultez [exécuter une procédure stockée &#40; À l’aide de la syntaxe RPC &#41; et traiter le retour Codes et les paramètres de sortie &#40; OLE DB &#41; ](../../oledb/ole-db-how-to/results/execute-stored-procedure-with-rpc-and-process-output.md).  
+ Pour un exemple d’application qui illustre une séquence d’échappement RPC, consultez [exécuter une procédure stockée & #40 ; À l’aide de la syntaxe RPC & #41 ; et traiter le retour Codes et les paramètres de sortie & #40 ; OLE DB & #41 ; ](../../oledb/ole-db-how-to/results/execute-stored-procedure-with-rpc-and-process-output.md).  
   
 ### <a name="transact-sql-execute-statement"></a>Instruction Transact-SQL EXECUTE  
  La séquence d’échappement ODBC CALL et la séquence d’échappement RPC sont les méthodes recommandées pour l’appel d’une procédure stockée plutôt que la [EXECUTE](../../../t-sql/language-elements/execute-transact-sql.md) instruction. Le pilote OLE DB pour SQL Server utilise le mécanisme RPC de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour optimiser le traitement des commandes. Ce protocole RPC augmente les performances en supprimant une bonne partie du traitement des paramètres et de l'analyse des instructions sur le serveur.  

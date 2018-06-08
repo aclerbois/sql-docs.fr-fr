@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_get_config | Microsoft Docs
+title: sqlsrv_get_config | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_get_config
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - API Reference, sqlsrv_get_config
 - sqlsrv_get_config
 ms.assetid: ce2befc2-af98-45bb-8d41-60f1674dccfc
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 841cc20172a024ee6f86cfb8151c4f01e70e326e
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 433f5dc1d997c4f8756ad48a446aebff977cb908
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvgetconfig"></a>sqlsrv_get_config
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

@@ -2,29 +2,26 @@
 title: Notes de publication pour les pilotes Microsoft pour PHP pour SQL Server | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - what's new in version 1.1
 ms.assetid: 91cca3d2-ba99-4a6d-b0de-beb9699cb3f8
-caps.latest.revision: ''
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7b3fcec71d77e78e12b002374c44de66faca8759
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: e73a70fbd5d02a829f8f69770a79155c94a4316d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="release-notes-for-the-microsoft-drivers-for-php-for-sql-server"></a>Notes de publication pour les pilotes Microsoft SQL Server pour PHP
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

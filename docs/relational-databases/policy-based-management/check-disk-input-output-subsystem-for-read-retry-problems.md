@@ -1,33 +1,32 @@
 ---
-title: "Rechercher des problèmes de nouvelle tentative de lecture dans le sous-système d’entrées/sorties disque | Microsoft Docs"
-ms.custom: 
+title: Rechercher des problèmes de nouvelle tentative de lecture dans le sous-système d’entrées/sorties disque | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Best Practices [Database Engine]
 ms.assetid: cedf4097-5b73-4964-9935-74a101847019
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e5c90473fa372a3bc04433c6f093cb8997f6ee9e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 92c20aa9e6cdd5d7747093583b2230299702df85
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="check-disk-input-output-subsystem-for-read-retry-problems"></a>Rechercher des problèmes de nouvelle tentative de lecture dans le sous-système d’entrées/sorties
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette règle recherche le message d’erreur 825 [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans le journal des événements. Ce message indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'a pas pu lire les données du disque à la première tentative. Ce message signale un problème majeur avec le sous-système d'E/S. Il n’indique pas un problème avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Toutefois, le problème de disque peut entraîner la perte de données ou l'altération des bases de données s'il n'est pas résolu.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette règle recherche le message d'erreur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 825 dans le journal des événements. Ce message indique que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n'a pas pu lire les données du disque à la première tentative. Ce message signale un problème majeur avec le sous-système d'E/S. Il n’indique pas un problème avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Toutefois, le problème de disque peut entraîner la perte de données ou l'altération des bases de données s'il n'est pas résolu.  
   
 ## <a name="best-practices-recommendations"></a>Meilleures pratiques recommandées  
  Les actions suivantes peuvent vous aider à identifier et à résoudre le problème matériel sous-jacent :  

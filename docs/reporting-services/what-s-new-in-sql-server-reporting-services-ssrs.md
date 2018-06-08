@@ -3,7 +3,6 @@ title: Nouveautés de SQL Server Reporting Services (SSRS) | Microsoft Docs
 ms.date: 03/16/2018
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: ''
 ms.component: reporting-services
 ms.reviewer: ''
 ms.suite: pro-bi
@@ -14,12 +13,11 @@ ms.topic: get-started-article
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: ecbce2bb1fa67b2a3db6bd01f5a4a371486cf531
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: a279a399575f6272b3cefc22a2a319637de6c7b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="whats-new-in-sql-server-reporting-services-ssrs"></a>Nouveautés de SQL Server Reporting Services (SSRS)
 

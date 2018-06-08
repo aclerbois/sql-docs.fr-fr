@@ -1,16 +1,14 @@
 ---
-title: sp_help_proxy (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_proxy (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_proxy
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_proxy
 ms.assetid: a2fce164-2b64-40c2-8f35-6eeb7844abf1
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 19f4df348037b923ac5e7daf643b5ed114256324
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 8a64cf35c51d4857b666798debb633828b6c66b8
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpproxy-transact-sql"></a>sp_help_proxy (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,13 +47,13 @@ sp_help_proxy
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@proxy_id** = ] *id*  
+ [ **@proxy_id** =] *id*  
  Numéro d'identification du serveur proxy pour lequel énumérer les informations. Le *proxy_id* est **int**, avec NULL comme valeur par défaut. Soit le *id* ou *proxy_name* peut être spécifié.  
   
- [  **@proxy_name**  =] **'***proxy_name***'**  
+ [ **@proxy_name** =] **'***proxy_name***'**  
  Nom du serveur proxy pour lequel énumérer les informations. Le *proxy_name* est **sysname**, avec NULL comme valeur par défaut. Soit le *id* ou *proxy_name* peut être spécifié.  
   
- [  **@subsystem_name**  =] '*subsystem_name*'  
+ [ **@subsystem_name** =] '*subsystem_name*'  
  Nom du sous-système pour lequel énumérer les serveurs proxy. Le *subsystem_name* est **sysname**, avec NULL comme valeur par défaut. Lorsque *subsystem_name* est spécifié, *nom* doit également être spécifié.  
   
  Le tableau suivant répertorie les valeurs possibles pour chaque sous-système.  
@@ -75,7 +72,7 @@ sp_help_proxy
 |Dts|Exécution de package SSIS|  
 |PowerShell|script PowerShell|  
   
- [  **@name**  =] '*nom*'  
+ [ **@name** =] '*nom*'  
  Nom d'une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour laquelle énumérer les serveurs proxy. Le nom est **nvarchar (256)**, avec NULL comme valeur par défaut. Lorsque *nom* est spécifié, *subsystem_name* doit également être spécifié.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -133,7 +130,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’Agent SQL Server stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
+ [Procédures stockées de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
  [sp_add_proxy &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-proxy-transact-sql.md)   
  [sp_delete_proxy &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-delete-proxy-transact-sql.md)  
   

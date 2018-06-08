@@ -1,32 +1,29 @@
 ---
-title: "Messages d’erreur (le pilote ODBC Visual FoxPro) | Documents Microsoft"
-ms.custom: 
+title: Messages d’erreur (le pilote ODBC Visual FoxPro) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - error messages [ODBC], Visual FoxPro ODBC driver
 - Visual FoxPro ODBC driver [ODBC], error messages
 - SQLSTATE [ODBC]
 - FoxPro ODBC driver [ODBC], error messages
 ms.assetid: 58ea9734-4edf-44da-ba80-938aa7b340e4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4ec1cbc18c952c4394f16123c76a32330116d5af
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4f6be0c46b1dcc777004edacda8a490438db438c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="error-messages-visual-foxpro-odbc-driver"></a>Messages d’erreur (le pilote ODBC Visual FoxPro)
 Lorsqu’une erreur se produit, le pilote Visual FoxPro renvoie les informations suivantes :  

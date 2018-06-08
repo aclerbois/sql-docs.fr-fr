@@ -1,37 +1,23 @@
 ---
 title: Lier les groupes de mesures | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- linked measure groups [Analysis Services]
-- referencing measure groups
-- Linked Measure Group Wizard
-- measure groups [Analysis Services], linked
-- linked dimensions [Analysis Services]
-ms.assetid: 7f838452-8669-4194-8e15-7afdc7f15251
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a5139e2e9e9d5bb06d594f9463f6632b6ee9fb78
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a18e61e3c59a36fbeea576234e90ce2f54123a9b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="linked-measure-groups"></a>Groupes de mesures liés
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un groupe de mesures lié est basé sur un autre groupe de mesures situé dans un autre cube de la même base de données ou d'une autre base de données Analysis Services. Utilisez un groupe de mesures lié si vous voulez réutiliser un jeu de mesures, et les valeurs de données correspondantes, dans plusieurs cubes.  
+  Un groupe de mesures lié est basé sur un autre groupe de mesures situé dans un autre cube de la même base de données ou d'une autre base de données Analysis Services. Utilisez un groupe de mesures lié si vous voulez réutiliser un jeu de mesures, et les valeurs de données correspondantes, dans plusieurs cubes.  
   
  Microsoft recommande que les groupes de mesures liés et d'origine se trouvent dans des solutions exécutées sur le même serveur. La liaison à un groupe de mesures sur un serveur distant sera déconseillée dans une version ultérieure (voir [Fonctionnalités Analysis Services déconseillées dans SQL Server 2016](../../analysis-services/deprecated-analysis-services-features-in-sql-server-2016.md)).  
   

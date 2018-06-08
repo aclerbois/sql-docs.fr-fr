@@ -1,30 +1,31 @@
 ---
 title: TopPercent (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: TOPPERCENT
-dev_langs: DMX
-helpviewer_keywords: TopPercent function
+f1_keywords:
+- TOPPERCENT
+dev_langs:
+- DMX
+helpviewer_keywords:
+- TopPercent function
 ms.assetid: 0b407ab2-2a69-4cbd-ae13-bdd29654fa86
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: bb2026feb025f90443f531da6668adc0eaad087c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: bccca2b1a3411b8c5ee36d6dbf7a972fd67a9e83
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="toppercent-dmx"></a>TopPercent (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,9 +43,9 @@ TopPercent(<table expression>, <rank expression>, <percent>)
  Une expression qui retourne une table, comme un \<référence de colonne de table >, ou une fonction qui retourne une table.  
   
 ## <a name="return-type"></a>Type de retour  
- \<expression de table >  
+ \<Expression de table >  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **TopPercent** fonction retourne les lignes en ordre décroissant d’en fonction de la valeur évaluée de la \<rank expression > argument pour chaque ligne, telles que la somme de la \<rank expression > valeurs soit au moins égale au pourcentage spécifié par le \<% > argument. **TopPercent** retourne le plus petit nombre d’éléments possible tout en correspondant à la valeur du pourcentage spécifiée.  
   
 ## <a name="examples"></a>Exemples  
@@ -111,11 +112,11 @@ NATURAL PREDICTION JOIN
  **Remarque** cet exemple est fourni uniquement pour illustrer l’utilisation de TopPercent. L'exécution de cette requête peut prendre beaucoup de temps, en fonction de la taille de votre jeu de données.  
   
 > [!WARNING]  
->  Les fonctions MDX pour TOPPERCENT et BOTTOMPERCENT peuvent générer des résultats inattendus lorsque les valeurs utilisées pour calculer le pourcentage incluent les nombres négatifs. Ce comportement n'affecte pas les fonctions DMX. Pour plus d’informations, consultez [BottomPercent &#40; MDX &#41; ](../mdx/bottompercent-mdx.md).  
+>  Les fonctions MDX pour TOPPERCENT et BOTTOMPERCENT peuvent générer des résultats inattendus lorsque les valeurs utilisées pour calculer le pourcentage incluent les nombres négatifs. Ce comportement n'affecte pas les fonctions DMX. Pour plus d’informations, consultez [BottomPercent &#40;MDX&#41;](../mdx/bottompercent-mdx.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)  
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)  
   
   

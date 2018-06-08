@@ -1,27 +1,24 @@
 ---
 title: Membres de SQLServerStatement | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 828cbaa9-ea7a-4986-95c3-5ba0d7d01d83
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5cdce6c1ac993fc36b861e9ec6d87926e1a7661a
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 77161ec9693615eb50d4e62fb9cd1f6f185d23fe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlserverstatement-members"></a>Membres de SQLServerStatement
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -45,11 +42,11 @@ ms.lasthandoff: 11/18/2017
 |Nom| Description|  
 |----------|-----------------|  
 |[addBatch](../../../connect/jdbc/reference/addbatch-method-sqlserverstatement.md)|Ajoute la commande SQL donnée à la liste actuelle des commandes pour ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
-|[Annuler](../../../connect/jdbc/reference/cancel-method-sqlserverstatement.md)|Annule l’instruction SQL en cours d’exécution par ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
+|[annuler](../../../connect/jdbc/reference/cancel-method-sqlserverstatement.md)|Annule l’instruction SQL en cours d’exécution par ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
 |[clearBatch](../../../connect/jdbc/reference/clearbatch-method-sqlserverstatement.md)|Vide la liste actuelle des commandes SQL pour ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
 |[clearWarnings](../../../connect/jdbc/reference/clearwarnings-method-sqlserverstatement.md)|Efface tous les avertissements signalés sur cet [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
 |[Fermer](../../../connect/jdbc/reference/close-method-sqlserverstatement.md)|Cela libère [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) l’objet de base de données et des ressources JDBC immédiatement au lieu de patienter jusqu'à leur libération automatique.|  
-|[exécuter](../../../connect/jdbc/reference/execute-method-sqlserverstatement.md)|Exécute l'instruction SQL donnée, qui peut retourner plusieurs résultats.|  
+|[execute](../../../connect/jdbc/reference/execute-method-sqlserverstatement.md)|Exécute l'instruction SQL donnée, qui peut retourner plusieurs résultats.|  
 |[executeBatch](../../../connect/jdbc/reference/executebatch-method-sqlserverstatement.md)|Envoie un lot de commandes à exécuter à la base de données. En cas d'exécution correcte de toutes les commandes, un tableau des nombres de mises à jour est retourné.|  
 |[executeQuery](../../../connect/jdbc/reference/executequery-method-sqlserverstatement.md)|Exécute l’instruction SQL fournie et retourne un seul [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) objet.|  
 |[executeUpdate](../../../connect/jdbc/reference/executeupdate-method-sqlserverstatement.md)|Exécute l'instruction SQL fournie, qui peut être une instruction INSERT, UPDATE, MERGE ou DELETE ; ou une instruction SQL qui ne retourne rien, telle qu'une instruction SQL DDL.|  
@@ -68,7 +65,7 @@ ms.lasthandoff: 11/18/2017
 |[getResultSetType](../../../connect/jdbc/reference/getresultsettype-method-sqlserverstatement.md)|Récupère le jeu de résultats type pour [SQLServerResultSet](../../../connect/jdbc/reference/sqlserverresultset-class.md) objets générés par ce [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
 |[getUpdateCount](../../../connect/jdbc/reference/getupdatecount-method-sqlserverstatement.md)|Récupère le résultat actuel en tant que nombre de mises à jour.|  
 |[getWarnings](../../../connect/jdbc/reference/getwarnings-method-sqlserverstatement.md)|Récupère le premier avertissement signalé par des appels sur cet [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet.|  
-|[isClosed](../../../connect/jdbc/reference/isclosed-method-sqlserverstatement.md)|Indique si cette [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet a été fermé.|  
+|[IsClosed](../../../connect/jdbc/reference/isclosed-method-sqlserverstatement.md)|Indique si cette [SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-class.md) objet a été fermé.|  
 |[isPoolable](../../../connect/jdbc/reference/ispoolable-method-sqlserverstatement.md)|Retourne une valeur qui indique s'il est possible d'ajouter une instruction au regroupement d'instructions fourni par l'utilisateur.|  
 |[isWrapperFor](../../../connect/jdbc/reference/iswrapperfor-method-sqlserverstatement.md)|Indique si cet objet d'instruction est un wrapper pour l'interface spécifiée.|  
 |[setCursorName](../../../connect/jdbc/reference/setcursorname-method-sqlserverstatement.md)|Définit le nom de curseur SQL selon la chaîne donnée, qui est exécutée par les méthodes d'exécution suivantes.|  

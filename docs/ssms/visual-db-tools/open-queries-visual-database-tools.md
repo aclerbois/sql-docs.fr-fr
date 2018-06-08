@@ -1,33 +1,32 @@
 ---
-title: "Ouvrir des requêtes (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Ouvrir des requêtes (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - opening queries
 - queries [SQL Server], opening
 ms.assetid: 6d7ce59b-2ce6-42af-9330-84ce3dc1197e
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e7ce3fbbc5a81cadd403c2afcf3c447d08557472
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: fa6996d8234cb2538f4969024867ae5a45e1a501
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-queries-visual-database-tools"></a>Ouvrir des requêtes (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez ouvrir une requête existante dans le Concepteur de requêtes et de vues en utilisant la commande **Ouvrir**.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez ouvrir une requête existante dans le Concepteur de requêtes et de vues en utilisant la commande **Ouvrir** .  
   
 ### <a name="to-open-a-query-in-all-panes"></a>Pour ouvrir une requête dans tous les volets  
   

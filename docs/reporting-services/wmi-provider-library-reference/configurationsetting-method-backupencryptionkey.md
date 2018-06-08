@@ -1,31 +1,32 @@
 ---
-title: "BackupEncryptionKey, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: BackupEncryptionKey, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: BackupEncryptionKey Method (WMI MSReportServer_ConfigurationSetting Class)
-apilocation: reportingservices.mof
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- BackupEncryptionKey Method (WMI MSReportServer_ConfigurationSetting Class)
+apilocation:
+- reportingservices.mof
 apitype: MOFDef
-helpviewer_keywords: BackupEncryptionKey method
+helpviewer_keywords:
+- BackupEncryptionKey method
 ms.assetid: da1d5dae-2517-448e-96fb-5379c93222ea
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: bf7285b9ffc79a4ad878c3533fad6fdf757f4abf
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 9937fc97ac8fdedc7c6a1f18626e738565a660b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---backupencryptionkey"></a>Méthode ConfigurationSetting - BackupEncryptionKey
   Sauvegarde la clé de chiffrement de l'instance du serveur de rapports spécifiée. Un chiffrement par mot de passe est utilisé pour le stockage de la clé de chiffrement.  

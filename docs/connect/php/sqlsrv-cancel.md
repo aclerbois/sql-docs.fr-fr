@@ -1,17 +1,15 @@
 ---
-title: sqlsrv_cancel | Microsoft Docs
+title: sqlsrv_cancel | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apiname:
 - sqlsrv_cancel
 apitype: NA
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - sqlsrv_cancel
 - API Reference, sqlsrv_cancel
 ms.assetid: 75798c9b-f711-445d-9b8f-ba4d405ca50a
-caps.latest.revision: ''
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 71de874d6f89bdec64011eb054f2de259bd47b01
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 7c6173e20a99622a42264591c3a83024fda5d2bd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsrvcancel"></a>sqlsrv_cancel
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -49,7 +46,7 @@ sqlsrv_cancel( resource $stmt)
 Valeur booléenne : **true** si l’opération a réussi. Dans le cas contraire, la valeur est **false**.  
   
 ## <a name="example"></a>Exemple  
-L’exemple suivant cible la [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) pour exécuter une requête de base de données, puis consomme et compte les résultats jusqu'à ce que la variable *$salesTotal* atteigne un montant spécifié. Les autres résultats de requête sont alors ignorés. L’exemple part du principe que SQL Server et la base de données AdventureWorks sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+L’exemple suivant cible la [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) pour exécuter une requête de base de données, puis consomme et compte les résultats jusqu'à ce que la variable *$salesTotal* atteigne un montant spécifié. Les autres résultats de requête sont alors ignorés. L’exemple part du principe que SQL Server et la base de données AdventureWorks sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

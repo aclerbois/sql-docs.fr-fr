@@ -1,16 +1,14 @@
 ---
 title: CURSOR_STATUS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CURSOR_STATUS
@@ -22,21 +20,20 @@ helpviewer_keywords:
 - CURSOR_STATUS function
 - cursors [SQL Server], status information
 ms.assetid: 3a4a840e-04f8-43bd-aada-35d78c3cb6b0
-caps.latest.revision: 
+caps.latest.revision: 37
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 59a2cd382855f47d7cb37a3bc00bc723dde8f6df
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 2bc5eff629bc16e655094c08c71b3cef195420bc
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="cursorstatus-transact-sql"></a>CURSOR_STATUS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Fonction scalaire permettant à l'appelant d'une procédure stockée de déterminer si la procédure a retourné un curseur et un ensemble de résultats pour un paramètre donné.
+Pour un paramètre donné, `CURSOR_STATUS` indique si une déclaration de curseur a retourné ou non un curseur et un jeu de résultats.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -56,7 +53,7 @@ CURSOR_STATUS
 Spécifie une constante indiquant que la source du curseur est un nom de curseur local.
   
 '*cursor_name*'  
-Nom du curseur. Un nom de curseur doit suivre les règles applicables aux identificateurs.
+Nom du curseur. Un nom de curseur doit être conforme aux [règles applicables aux identificateurs de base de données](../../relational-databases/databases/database-identifiers.md).
   
 'global'  
 Spécifie une constante indiquant que la source du curseur est un nom de curseur global.
@@ -72,16 +69,16 @@ Nom de la variable de curseur. Une variable de curseur doit être définie à l�
   
 |Valeur retournée|Nom du curseur|Variable du curseur|  
 |---|---|---|
-| 1|L'ensemble de résultats du curseur comprend au moins une ligne.<br /><br /> Pour les curseurs INSENSITIVE et pilotés par jeux de clés, l'ensemble de résultats comprend au moins une ligne.<br /><br /> Pour les curseurs dynamiques, l'ensemble de résultats peut être vide, ou contenir une ou plusieurs lignes.|Le curseur affecté à cette variable est ouvert.<br /><br /> Pour les curseurs INSENSITIVE et pilotés par jeux de clés, l'ensemble de résultats comprend au moins une ligne.<br /><br /> Pour les curseurs dynamiques, l'ensemble de résultats peut être vide, ou contenir une ou plusieurs lignes.|  
-|0|L'ensemble de résultats du curseur est vide.*|Le curseur affecté à cette variable est ouvert mais l'ensemble de résultats est vide.*|  
+| 1|Le jeu de résultats de curseur comprend au moins une ligne.<br /><br /> Pour les curseurs INSENSITIVE et pilotés par jeux de clés, l'ensemble de résultats comprend au moins une ligne.<br /><br /> Pour les curseurs dynamiques, l'ensemble de résultats peut être vide, ou contenir une ou plusieurs lignes.|Le curseur affecté à cette variable est ouvert.<br /><br /> Pour les curseurs INSENSITIVE et pilotés par jeux de clés, l'ensemble de résultats comprend au moins une ligne.<br /><br /> Pour les curseurs dynamiques, l'ensemble de résultats peut être vide, ou contenir une ou plusieurs lignes.|  
+|0|Le jeu de résultats de curseur est vide.*|Le curseur affecté à cette variable est ouvert mais l'ensemble de résultats est vide.*|  
 |-1|Le curseur est fermé.|Le curseur affecté à cette variable est fermé.|  
-|-2|Non applicable.|Valeurs possibles :<br /><br /> Aucun curseur n'a été affecté à cette variable OUTPUT lors du précédent appel de la procédure.<br /><br /> Un curseur a été affecté à cette variable OUTPUT lors du précédent appel de la procédure mais il était fermé pendant le déroulement de celle-ci. C'est la raison pour laquelle le curseur est désaffecté et qu'il n'est pas retourné à la procédure d'appel.<br /><br /> Aucun curseur n'est affecté à une variable de curseur déclarée.|  
-|-3|Il n'existe aucun curseur portant le nom spécifié.|Il n'existe aucune variable de curseur portant le nom spécifié ou, si c'est le cas, aucun curseur ne lui a encore été affecté.|  
+|-2|Non applicable.|Présente l’une de ces possibilités :<br /><br /> La procédure appelée précédemment n’affectait pas de curseur à cette variable OUTPUT.<br /><br /> La procédure appelée précédemment affectait un curseur à cette variable OUTPUT, mais le curseur était à l’état fermé quand la procédure s’est terminée. C’est la raison pour laquelle le curseur est désaffecté et qu’il n’est pas retourné à la procédure d’appel.<br /><br /> Aucun curseur n’est affecté à la variable de curseur déclarée.|  
+|-3|Il n'existe aucun curseur portant le nom spécifié.|Il n’existe aucune variable de curseur avec le nom spécifié ou, si c’est le cas, aucun curseur ne lui a encore été affecté.|  
   
 * Les curseurs dynamiques ne retournent jamais cette valeur.
   
 ## <a name="examples"></a>Exemples  
-L'exemple suivant utilise la fonction `CURSOR_STATUS` pour afficher l'état d'un curseur avant et après qu'il a été ouvert et fermé.
+Cet exemple utilise la fonction `CURSOR_STATUS` pour afficher l’état d’un curseur, après sa déclaration, après son ouverture et après sa fermeture.
   
 ```sql
 CREATE TABLE #TMP  

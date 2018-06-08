@@ -1,28 +1,26 @@
 ---
 title: SQLSetPos (le pilote ODBC Visual FoxPro) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetPos function [ODBC], Visual FoxPro ODBC Driver
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetPos function [ODBC], Visual FoxPro ODBC Driver
 ms.assetid: ec8e5a9d-7aac-4e7f-a75f-cf670c036f33
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 70d8467bc48d3f77792fdd0e82fbd974af345cef
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 95fa6e598607ae0bc95746f17faeab7c2fb1008e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetpos-visual-foxpro-odbc-driver"></a>SQLSetPos (le pilote ODBC Visual FoxPro)
 > [!NOTE]  

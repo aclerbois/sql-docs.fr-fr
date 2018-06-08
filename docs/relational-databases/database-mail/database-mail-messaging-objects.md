@@ -1,37 +1,35 @@
 ---
-title: "Objets de messagerie de base de données | Microsoft Docs"
-ms.custom: 
+title: Objets de messagerie de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: database-mail
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Database Mail [SQL Server], host databases
 - Database Mail [SQL Server], messaging objects
 - mail host databases [SQL Server]
 - host databases [Database Mail]
 ms.assetid: 5aa2886e-1db1-4066-85df-57ccf4538c54
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8de888cea76c64cf8c5356b68ac8d852bd46bd1f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 71445835763436cae2e37fa114ff06db8e8855d1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mail-messaging-objects"></a>Objets de messagerie de base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-La base de données **msdb** est la base de données hôte de messagerie de base de données. Elle contient les procédures stockées et les objets de messagerie de la messagerie de base de données. Microsoft [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] contient l'Assistant Configuration de la messagerie de base de données qui permet d'activer la messagerie de base de données, de créer et de gérer les profils et les comptes, et de configurer les options de la messagerie de base de données.  
+  La base de données **msdb** est la base de données hôte de messagerie de base de données. Elle contient les procédures stockées et les objets de messagerie de la messagerie de base de données. Microsoft [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] contient l'Assistant Configuration de la messagerie de base de données qui permet d'activer la messagerie de base de données, de créer et de gérer les profils et les comptes, et de configurer les options de la messagerie de base de données.  
   
 ##  <a name="ComponentsAndConcepts"></a> Objets dans la base de données **msdb**  
  [!INCLUDE[ssSB](../../includes/sssb-md.md)] doit être activé dans la base de données **msdb** . Cependant, la messagerie de base de données n'utilise pas la mise en réseau [!INCLUDE[ssSB](../../includes/sssb-md.md)] . Par conséquent, les utilisateurs ne sont pas obligés de créer un point de terminaison [!INCLUDE[ssSB](../../includes/sssb-md.md)] pour utiliser la messagerie de base de données. Le processus de messagerie de base de données externe utilise une connexion [!INCLUDE[vstecado](../../includes/vstecado-md.md)] standard pour communiquer avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

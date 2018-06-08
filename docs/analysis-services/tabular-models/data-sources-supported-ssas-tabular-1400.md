@@ -1,18 +1,19 @@
 ---
 title: Sources de données pris en charge dans les modèles 1400 tabulaires SQL Server Analysis Services | Documents Microsoft
-ms.date: 03/26/2018
-ms.prod: analysis-services
-ms.suite: pro-bi
-ms.topic: article
-ms.assetid: ''
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.openlocfilehash: d153a2ca638c2ab70e147d22d5755e70ab5aba06
-ms.sourcegitcommit: 7246ef88fdec262fa0d34bf0e232f089e03a6911
+ms.openlocfilehash: 856e15e7365128bc79d119afe267334fb8470832
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/29/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-sources-supported-in-sql-server-analysis-services-tabular-1400-models"></a>Sources de données pris en charge dans SQL Server Analysis Services les modèles tabulaires 1400
 
@@ -33,7 +34,7 @@ Pour Azure Analysis Services, consultez [des sources de données prises en charg
 |Azure SQL Data Warehouse     |   Oui      |   Oui       |
 |Stockage Blob Azure     |   Oui       |    non      |
 |Stockage de Table Windows Azure    |   Oui       |    non      |
-|Azure Cosmos DB      |  Oui        |  non        |
+|Base de données Azure Cosmos      |  Oui        |  non        |
 |Azure Data Lake Store     |   Oui       |    non      |
 |Azure HDInsight HDFS     |     Oui     |   non       |
 |Azure HDInsight Spark (bêta)     |   Oui       |   non       |
@@ -46,7 +47,7 @@ En mémoire et les modèles DirectQuery connexion aux sources de données Azure 
 
 ### <a name="supported-by-in-memory-and-directquery-models"></a>Prise en charge par la mémoire et les modèles DirectQuery
 
-|Datasource | Fournisseur en mémoire | Fournisseur de DirectQuery |
+|Source de données | Fournisseur en mémoire | Fournisseur de DirectQuery |
 |  --- | --- | --- |
 | SQL Server |SQL Server Native Client 11.0, le fournisseur Microsoft OLE DB pour SQL Server, le fournisseur de données .NET Framework pour SQL Server | Fournisseur de données .NET Framework pour SQL Server |
 | Entrepôt de données SQL Server |SQL Server Native Client 11.0, le fournisseur Microsoft OLE DB pour SQL Server, le fournisseur de données .NET Framework pour SQL Server | Fournisseur de données .NET Framework pour SQL Server |
@@ -94,7 +95,7 @@ En mémoire et les modèles DirectQuery connexion aux sources de données Azure 
 |Autres  |  
 |---------|---------|
 |Active Directory      | 
-|Exhange     |  
+|Exchange     |  
 |Flux OData     | 
 |Requête ODBC     | 
 |OLE DB  | 

@@ -1,25 +1,22 @@
 ---
 title: Options de configuration de SQL Server 2017 sur Docker | Documents Microsoft
-description: "Explorer les différentes façons d’utilisation et d’interagir avec SQL Server 2017 les images de conteneur dans Docker. Cela inclut les données persistantes, copie de fichiers et de résolution des problèmes."
+description: Explorer les différentes façons d’utilisation et d’interagir avec SQL Server 2017 les images de conteneur dans Docker. Cela inclut les données persistantes, copie de fichiers et de résolution des problèmes.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/26/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 82737f18-f5d6-4dce-a255-688889fdde69
 ms.custom: sql-linux
-ms.workload: On Demand
-ms.openlocfilehash: c0e602345be28c9740cae9cd610899b8b2d372f6
-ms.sourcegitcommit: 6e819406554efbd17bbf84cf210d8ebeddcf772d
+ms.openlocfilehash: aaca3ddf90b6002f259279c5b8f51980f2964996
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="configure-sql-server-2017-container-images-on-docker"></a>Configurer SQL Server 2017 les images de conteneur sur Docker
 
@@ -54,7 +51,7 @@ Démarrage rapide dans la section précédente s’exécute à l’édition dév
       docker login
       ```
 
-   1. Ensuite, vous devez obtenir le développeur libre image de conteneur sur Docker magasin. Accédez à [https://store.docker.com/images/mssql-server-linux](https://store.docker.com/images/mssql-server-linux), cliquez sur **passer à l’extraction**, suivez les instructions.
+   1. Ensuite, vous devez obtenir le développeur libre image de conteneur sur Docker magasin. Accédez à [ https://store.docker.com/images/mssql-server-linux ](https://store.docker.com/images/mssql-server-linux), cliquez sur **passer à l’extraction**, suivez les instructions.
 
    1. Passez en revue la configuration requise et exécuter des procédures le [quickstart](quickstart-install-connect-docker.md). Il existe deux différences. Vous devez extraire l’image **magasin/microsoft/mssql-server-linux :\<-nom de la balise\>**  à partir du magasin de Docker. Et vous devez spécifier votre édition de production avec le **MSSQL_PID** variable d’environnement. L’exemple suivant montre comment exécuter la dernière image de conteneur de SQL Server 2017 pour l’édition Enterprise :
 
@@ -88,7 +85,7 @@ Vous pouvez vous connecter à l’instance de SQL Server sur votre ordinateur Do
 
 - [sqlcmd](sql-server-linux-setup-tools.md)
 - [Visual Studio Code](sql-server-linux-develop-use-vscode.md)
-- [SQL Server Management Studio (SSMS) sur Windows](sql-server-linux-develop-use-ssms.md)
+- [SQL Server Management Studio (SSMS) sur Windows](sql-server-linux-manage-ssms.md)
 
 L’exemple suivant utilise **sqlcmd** pour se connecter à SQL Server s’exécutant dans un conteneur Docker. L’adresse IP dans la chaîne de connexion est l’adresse IP de l’ordinateur hôte qui est en cours d’exécution du conteneur.
 
@@ -112,7 +109,7 @@ sqlcmd -S 10.3.2.4,1400 -U SA -P "<YourPassword>"
 
 ### <a name="tools-inside-the-container"></a>Outils de l’intérieur du conteneur
 
-Démarrage de SQL Server 2017 CTP 2.0, le [les outils de ligne de SQL Server](sql-server-linux-setup-tools.md) sont inclus dans l’image de conteneur. Si vous attachez à l’image avec une invite de commandes interactive, vous pouvez exécuter les outils localement.
+Démarrage de SQL Server 2017 CTP 2.0, le [les outils de ligne de SQL Server](sql-server-linux-setup-tools.md) sont inclus dans l’image de conteneur. Si vous vous attachez à l’image avec une invite de commandes interactive, vous pouvez exécuter les outils localement.
 
 1. Utilisez la commande `docker exec -it` pour démarrer un interpréteur de commandes bash interactif dans votre conteneur en cours d’exécution. Dans l’exemple suivant `e69e056c702d` est l’ID de conteneur.
 

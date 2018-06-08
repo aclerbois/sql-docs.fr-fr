@@ -1,15 +1,14 @@
 ---
 title: Prise en charge du nom de Principal du service (SPN) dans les connexions clientes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 08/08/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Native Client, SPNs
@@ -17,16 +16,16 @@ helpviewer_keywords:
 - OLE DB, SPNs
 - SPNs [SQL Server]
 ms.assetid: 96598c69-ce9a-4090-aacb-d546591e8af7
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fe0670bbb967a10d2d14750f2a32a321cc912fce
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 988032e24c587de7b7e00f64d8fe6244ce0bd58d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="service-principal-name-spn-support-in-client-connections"></a>Prise en charge des noms de principaux du service (SPN) dans les connexions clientes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -34,9 +33,9 @@ ms.lasthandoff: 01/25/2018
 
   À partir de [!INCLUDE[ssKatmai](../../../includes/sskatmai-md.md)], prise en charge des noms principaux de service (SPN) a été étendu pour permettre l’authentification mutuelle entre tous les protocoles. Dans les versions précédentes de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], noms principaux de service ont été uniquement pris en charge pour Kerberos sur TCP lorsque la valeur par défaut SPN pour le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance a été inscrit auprès d’Active Directory.  
   
- Noms principaux de service sont utilisés par le protocole d’authentification pour déterminer le compte dans lequel un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] de l’instance s’exécute. Si le compte de l'instance est connu, l'authentification Kerberos peut être utilisée pour fournir une authentification mutuelle par le client et le serveur. Si le compte de l'instance n'est pas connu, l'authentification NTLM, qui fournit uniquement une authentification du client par le serveur, est utilisée. Actuellement, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client effectue la recherche d’authentification en faisant dériver le SPN dans les propriétés de connexion réseau et le nom d’instance. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]tentent d’inscrire les SPN au démarrage, ou ils peuvent également être inscrits manuellement. Toutefois, l'inscription échoue si les droits d'accès sont insuffisants pour le compte qui essaie d'inscrire les noms principaux de service.  
+ Noms principaux de service sont utilisés par le protocole d’authentification pour déterminer le compte dans lequel un [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] de l’instance s’exécute. Si le compte de l'instance est connu, l'authentification Kerberos peut être utilisée pour fournir une authentification mutuelle par le client et le serveur. Si le compte de l'instance n'est pas connu, l'authentification NTLM, qui fournit uniquement une authentification du client par le serveur, est utilisée. Actuellement, [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client effectue la recherche d’authentification en faisant dériver le SPN dans les propriétés de connexion réseau et le nom d’instance. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] tentent d’inscrire les SPN au démarrage, ou ils peuvent également être inscrits manuellement. Toutefois, l'inscription échoue si les droits d'accès sont insuffisants pour le compte qui essaie d'inscrire les noms principaux de service.  
   
- Les comptes de domaine et d'ordinateur sont inscrits automatiquement dans Active Directory. Ils peuvent être utilisés comme noms principaux de service ; par ailleurs, les administrateurs peuvent définir leurs propres noms principaux de service. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]permet de sécuriser l’authentification plus gérable et plus fiable en autorisant les clients à spécifier directement le SPN à utiliser.  
+ Les comptes de domaine et d'ordinateur sont inscrits automatiquement dans Active Directory. Ils peuvent être utilisés comme noms principaux de service ; par ailleurs, les administrateurs peuvent définir leurs propres noms principaux de service. [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] permet de sécuriser l’authentification plus gérable et plus fiable en autorisant les clients à spécifier directement le SPN à utiliser.  
   
 > [!NOTE]  
 >  Un nom principal de service spécifié par une application cliente est utilisé uniquement lorsqu'une connexion est établie avec la sécurité intégrée Windows.  
@@ -44,7 +43,7 @@ ms.lasthandoff: 01/25/2018
 > [!TIP]  
 >  **[!INCLUDE[msCoName](../../../includes/msconame-md.md)] pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]** est un outil de diagnostic qui permet de dépanner les problèmes de connexion que rencontre Kerberos avec [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Pour plus d'informations, consultez [Gestionnaire de configuration de Microsoft Kerberos pour SQL Server](http://www.microsoft.com/download/details.aspx?id=39046).  
   
- Pour plus d'informations sur Kerberos, consultez les articles suivants :  
+ Pour plus d'informations sur Kerberos, consultez les articles suivants :  
   
 -   [Supplément technique de Kerberos pour Windows](http://go.microsoft.com/fwlink/?LinkId=101449)  
   
@@ -56,7 +55,7 @@ ms.lasthandoff: 01/25/2018
 |Scénario| Description|  
 |--------------|-----------------|  
 |Une application héritée ne spécifie pas de nom principal de service.|Ce scénario de compatibilité garantit l'absence de tout changement de comportement dans les applications développées pour les versions antérieures de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Si aucun nom principal de service n'est spécifié, l'application s'appuie sur les noms principaux de service générés et n'a aucune connaissance de la méthode d'authentification utilisée.|  
-|Une application cliente à l’aide de la version actuelle de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client spécifie un nom principal de service dans la chaîne de connexion comme un compte d’utilisateur ou d’ordinateur de domaine, un nom principal de service spécifique à l’instance ou sous forme de chaîne définie par l’utilisateur.|Le mot clé **ServerSPN** peut être utilisé dans une chaîne de fournisseur, une chaîne d'initialisation ou une chaîne de connexion afin d'effectuer les opérations suivantes :<br /><br /> -Spécifiez le compte utilisé par le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance pour une connexion. Cela simplifie l'accès à l'authentification Kerberos. Si un centre de distribution de clés Kerberos (KDC) est présent et si le compte approprié est spécifié, l'utilisation de l'authentification Kerberos est plus probable que celle de l'authentification NTLM. Le centre de distribution de clés se trouve habituellement sur le même ordinateur que le contrôleur de domaine.<br /><br /> -Spécifier un SPN pour le compte de service pour rechercher le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance. Pour chaque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] deux par défaut noms principaux de service sont générés et peut être utilisé à cet effet, l’instance. Toutefois, il n'est pas certain que ces clés soient présentes dans Active Directory ; par conséquent, dans cette situation, l'authentification Kerberos n'est pas garantie.<br /><br /> -Spécifier un SPN qui permet de rechercher le compte de service pour le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance. Il peut s'agir de n'importe quelle chaîne définie par l'utilisateur et mappée au compte de service. Dans ce cas, la clé doit être inscrite manuellement dans le centre de distribution de clés et doit répondre aux exigences relatives à un nom principal de service défini par l'utilisateur.<br /><br /> Le mot clé **FailoverPartnerSPN** peut être utilisé pour spécifier le nom principal de service du serveur partenaire de basculement. La plage des valeurs de comptes et de clés Active Directory est identique à celle des valeurs que vous pouvez spécifier pour le serveur principal.|  
+|Une application cliente à l’aide de la version actuelle de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client spécifie un nom principal de service dans la chaîne de connexion comme un compte d’utilisateur ou d’ordinateur de domaine, un nom principal de service spécifique à l’instance ou sous forme de chaîne définie par l’utilisateur.|Le mot clé **ServerSPN** peut être utilisé dans une chaîne de fournisseur, une chaîne d'initialisation ou une chaîne de connexion afin d'effectuer les opérations suivantes :<br /><br /> -Spécifiez le compte utilisé par le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance pour une connexion. Cela simplifie l'accès à l'authentification Kerberos. Si un centre de distribution de clés Kerberos (KDC) est présent et si le compte approprié est spécifié, l'utilisation de l'authentification Kerberos est plus probable que celle de l'authentification NTLM. Le centre de distribution de clés se trouve habituellement sur le même ordinateur que le contrôleur de domaine.<br /><br /> -Spécifier un SPN pour le compte de service pour rechercher le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance. Pour chaque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] deux par défaut noms principaux de service sont générés et peut être utilisé à cet effet, l’instance. Toutefois, il n'est pas certain que ces clés soient présentes dans Active Directory ; par conséquent, dans cette situation, l'authentification Kerberos n'est pas garantie.<br /><br /> -Spécifier un SPN qui permet de rechercher le compte de service pour le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] instance. Il peut s'agir de n'importe quelle chaîne définie par l'utilisateur et mappée au compte de service. Dans ce cas, la clé doit être inscrite manuellement dans le centre de distribution de clés et doit répondre aux exigences relatives à un nom principal de service défini par l'utilisateur.<br /><br /> Le mot clé **FailoverPartnerSPN** peut être utilisé pour spécifier le nom principal de service du serveur partenaire de basculement. La plage des valeurs de comptes et de clés Active Directory est identique à celle des valeurs que vous pouvez spécifier pour le serveur principal.|  
 |Une application ODBC spécifie un nom principal de service en tant qu'attribut de connexion pour le serveur principal ou le partenaire de basculement.|L'attribut de connexion **SQL_COPT_SS_SERVER_SPN** peut être utilisé pour spécifier le nom principal de service d'une connexion au serveur principal.<br /><br /> L'attribut de connexion **SQL_COPT_SS_FAILOVER_PARTNER_SPN** peut être utilisé pour spécifier le nom principal de service du serveur partenaire de basculement.|  
 |Une application OLE DB spécifie un nom principal de service en tant que propriété d'initialisation d'une source de données pour le serveur principal ou pour un partenaire de basculement.|La propriété de connexion **SSPROP_INIT_SERVER_SPN** du jeu de propriétés **DBPROPSET_SQLSERVERDBINIT** peut être utilisée pour spécifier le nom principal de service d'une connexion.<br /><br /> La propriété de connexion **SSPROP_INIT_FAILOVER_PARTNER_SPN** dans **DBPROPSET_SQLSERVERDBINIT** peut être utilisée pour spécifier le nom principal de service du serveur partenaire de basculement.|  
 |Un utilisateur spécifie un nom principal de service pour un serveur ou un partenaire de basculement dans un nom de source de données ODBC.|Le nom principal de service peut être spécifié dans un nom de source de données ODBC via les boîtes de dialogue d'installation du nom de la source de données.|  
@@ -78,7 +77,7 @@ ms.lasthandoff: 01/25/2018
  Le nouveau comportement de connexion est implémenté par le client ; par conséquent, il n'est pas spécifique à une version de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
 ## <a name="linked-servers-and-delegation"></a>Serveurs liés et délégation  
- Lorsque des serveurs liés sont créés, le  **@provstr**  paramètre de [sp_addlinkedserver](../../../relational-databases/system-stored-procedures/sp-addlinkedserver-transact-sql.md) peut être utilisé pour spécifier le serveur et le partenaire de basculement noms principaux de service. Les avantages de ce choix sont les mêmes que pour la spécification de noms principaux de service dans les chaînes de connexion des clients : davantage de simplicité et de fiabilité pour l'établissement des connexions qui utilisent l'authentification Kerberos.  
+ Lorsque des serveurs liés sont créés, le **@provstr** paramètre de [sp_addlinkedserver](../../../relational-databases/system-stored-procedures/sp-addlinkedserver-transact-sql.md) peut être utilisé pour spécifier le serveur et le partenaire de basculement noms principaux de service. Les avantages de ce choix sont les mêmes que pour la spécification de noms principaux de service dans les chaînes de connexion des clients : davantage de simplicité et de fiabilité pour l'établissement des connexions qui utilisent l'authentification Kerberos.  
   
  La délégation avec des serveurs liés requiert l'authentification Kerberos.  
   
@@ -89,14 +88,14 @@ ms.lasthandoff: 01/25/2018
   
 -   Fiabilité : Pour activer l’utilisation de noms principaux de service par défaut, le compte de service dans lequel le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] s’exécute d’instance doit disposer des privilèges suffisants pour mettre à jour d’Active Directory sur le KDC.  
   
--   Commodité et transparence de l'emplacement : comment les noms principaux de service d'une application sont-ils affectés si la base de données correspondante est déplacée vers une autre instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ? Cela s'applique à la fois au serveur principal et à son partenaire de basculement, si vous utilisez la mise en miroir de bases de données. Si une modification du serveur signifie une modification des noms principaux de service, comment cela affecte-t-il les applications ? Est-ce que les modifications sont gérées ?  
+-   Commodité et transparence de l'emplacement : comment les noms principaux de service d'une application sont-ils affectés si la base de données correspondante est déplacée vers une autre instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ? Cela s'applique à la fois au serveur principal et à son partenaire de basculement, si vous utilisez la mise en miroir de bases de données. Si une modification du serveur signifie une modification des noms principaux de service, comment cela affecte-t-il les applications ? Est-ce que les modifications sont gérées ?  
   
 ## <a name="specifying-the-spn"></a>Spécification du nom principal de service  
  Vous pouvez spécifier un nom principal de service dans les boîtes de dialogue et dans le code. Cette section explique comment vous pouvez spécifier un nom principal de service.  
   
- La longueur maximale d'un nom principal de service est 260 caractères.  
+ La longueur maximale d'un nom principal de service est 260 caractères.  
   
- La syntaxe que les noms principaux de service utilisent dans la chaîne de connexion ou les attributs de connexion est la suivante :  
+ La syntaxe que les noms principaux de service utilisent dans la chaîne de connexion ou les attributs de connexion est la suivante :  
   
 |Syntaxe| Description|  
 |------------|-----------------|  
@@ -109,11 +108,11 @@ ms.lasthandoff: 01/25/2018
 |*KDCKey*/*MachineName*|Nom principal de service spécifié par l'utilisateur.<br /><br /> *KDCKey* est une chaîne alphanumérique conforme aux règles d'une clé du centre de distribution de clés.|  
   
 ## <a name="odbc-and-ole-db-syntax-supporting-spns"></a>Syntaxe ODBC et OLE DB prenant en charge les noms principaux de service  
- Pour plus d'informations spécifiques à la syntaxe, consultez les rubriques suivantes :  
+ Pour plus d'informations spécifiques à la syntaxe, consultez les rubriques suivantes :  
   
--   [Noms principaux de service &#40; Noms principaux de service &#41; dans les connexions clientes &#40; ODBC &#41;](../../../relational-databases/native-client/odbc/service-principal-names-spns-in-client-connections-odbc.md)  
+-   [Noms de Principal du service &#40;SPN&#41; dans les connexions clientes &#40;ODBC&#41;](../../../relational-databases/native-client/odbc/service-principal-names-spns-in-client-connections-odbc.md)  
   
--   [Noms principaux de service &#40; Noms principaux de service &#41; dans les connexions clientes &#40; OLE DB &#41;](../../../relational-databases/native-client/ole-db/service-principal-names-spns-in-client-connections-ole-db.md)  
+-   [Noms de Principal du service &#40;SPN&#41; dans les connexions clientes &#40;OLE DB&#41;](../../../relational-databases/native-client/ole-db/service-principal-names-spns-in-client-connections-ole-db.md)  
   
  Pour plus d'informations sur les exemples d'applications qui illustrent cette fonctionnalité, consultez [Exemples de programmabilité des données SQL Server](http://msftdpprodsamples.codeplex.com/).  
   

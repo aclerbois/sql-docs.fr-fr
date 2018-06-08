@@ -1,37 +1,19 @@
 ---
-title: "Programmation d’objets fondamentaux AMO | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- server objects [AMO]
-- programming [AMO]
-- AMO, database objects
-- AMO, server objects
-- Analysis Management Objects, server objects
-- database objects [AMO]
-- Analysis Management Objects, database objects
-ms.assetid: 3f1ab656-f3bc-432d-8b6d-cdf204e5be10
-caps.latest.revision: 
-author: Minewiskan
+title: Programmation d’objets fondamentaux AMO | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: amo
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: bcbf7e3c05fb0166324e1953b5656e8038ec682f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7d1a41e3682023862c69cc74bf961f279f99689e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="programming-amo-fundamental-objects"></a>Programmation d'objets fondamentaux AMO
   Les objets fondamentaux sont généralement des objets simples et rudimentaires. En règle générale, ces objets sont créés et instanciés puis, une fois qu'ils n'ont plus d'utilité, l'utilisateur s'en déconnecte. Les classes fondamentales se composent des objets suivants : <xref:Microsoft.AnalysisServices.Server>, <xref:Microsoft.AnalysisServices.Database>, <xref:Microsoft.AnalysisServices.DataSource> et <xref:Microsoft.AnalysisServices.DataSourceView>. Parmi les objets fondamentaux AMO, le seul objet complexe est <xref:Microsoft.AnalysisServices.DataSourceView>. Celui-ci exige de nombreux détails pour générer le modèle abstrait qui représente la vue de source de données.  
@@ -219,7 +201,7 @@ static string CreateDataSource(Database db, string strDataSourceName, string str
 }  
 ```  
   
-##  <a name="DSV">Objets DataSourceView</a>  
+##  <a name="DSV"></a> Objets DataSourceView  
  L'objet <xref:Microsoft.AnalysisServices.DataSourceView> est chargé de conserver le modèle de schéma pour [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)]. Pour que l'objet <xref:Microsoft.AnalysisServices.DataSourceView> conserve le schéma, ce dernier doit d'abord être construit. Les schémas sont construits sur les objets DataSet, à partir de l'espace de noms System.Data.  
   
  L'exemple de code suivant crée une partie du schéma inclus dans l'exemple de projet Analysis Services basé sur AdventureWorks. L'exemple crée des définitions de schéma pour les tables, les colonnes calculées, les relations et les relations composites. Les schémas sont des jeux de données persistantes.  
@@ -563,7 +545,7 @@ static void AddCompositeRelation(DataSourceView dsv, String fkTableName, String 
  <xref:Microsoft.AnalysisServices>   
  [Présentation des Classes AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-classes-introduction.md)   
  [Classes fondamentales AMO](../../../analysis-services/multidimensional-models/analysis-management-objects/amo-fundamental-classes.md)   
- [Architecture logique &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
- [Les objets de base de données &#40; Analysis Services - données multidimensionnelles &#41;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
+ [Architecture logique & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/understanding-microsoft-olap-logical-architecture.md)   
+ [Les objets de base de données & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../../analysis-services/multidimensional-models/olap-logical/database-objects-analysis-services-multidimensional-data.md)  
   
   

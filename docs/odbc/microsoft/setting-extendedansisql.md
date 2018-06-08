@@ -1,33 +1,31 @@
 ---
-title: "Paramètre ExtendedAnsiSQL | Documents Microsoft"
-ms.custom: 
+title: Paramètre ExtendedAnsiSQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: extendedANSISQL [ODBC], setting
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- extendedANSISQL [ODBC], setting
 ms.assetid: 37b775d1-65ac-45ac-8572-454bc4e3c1a2
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d263d57d9fecbcb03f737dc73472452367900a47
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 09db08bfd3aa143ebc91f813ade237048d9878b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setting-extendedansisql"></a>Paramètre ExtendedAnsiSQL
 L’attribut peut être contrôlé dans la chaîne de connexion en ajoutant l’attribut ExtendedAnsiSQL :  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |ExtendedAnsiSQL = 0 (valeur par défaut)|Ce paramètre ne permet pas de nouvelles fonctionnalités.|  
 |ExtendedAnsiSQL = 1|Ce paramètre active les nouvelles fonctionnalités.|  

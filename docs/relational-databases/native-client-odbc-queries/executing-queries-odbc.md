@@ -1,15 +1,14 @@
 ---
-title: "L’exécution de requêtes (ODBC) | Documents Microsoft"
-ms.custom: 
+title: L’exécution de requêtes (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC applications, executing queries
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, queries
 - queries [ODBC]
 ms.assetid: d935bcba-8ce6-4159-8395-6c86431602ad
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c94ad284fbdf13dff9169a07a4ae2b45562f41e8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c0f9e231ad0ad3cd2641f450fcdf086a74a24ebe
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34706887"
 ---
 # <a name="executing-queries-odbc"></a>Exécution de requêtes (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -61,17 +61,17 @@ INSERT INTO MyTable VALUES (?, ?, ?)
   
 -   [Allocation d’un descripteur d’instruction](../../relational-databases/native-client-odbc-queries/allocating-a-statement-handle.md)  
   
--   [Construction d’une instruction SQL &#40; ODBC &#41;](../../relational-databases/native-client-odbc-queries/constructing-an-sql-statement-odbc.md)  
+-   [Construction d’une instruction SQL &#40;ODBC&#41;](../../relational-databases/native-client-odbc-queries/constructing-an-sql-statement-odbc.md)  
   
 -   [Construction d’instructions SQL pour les curseurs](../../relational-databases/native-client-odbc-queries/constructing-sql-statements-for-cursors.md)  
   
 -   [Utilisation de paramètres d’instruction](../../relational-databases/native-client-odbc-queries/using-statement-parameters.md)  
   
--   [L’exécution d’instructions &#40; ODBC &#41;](../../relational-databases/native-client-odbc-queries/executing-statements/executing-statements-odbc.md)  
+-   [L’exécution d’instructions &#40;ODBC&#41;](../../relational-databases/native-client-odbc-queries/executing-statements/executing-statements-odbc.md)  
   
 -   [Libération d’un descripteur d’instruction](../../relational-databases/native-client-odbc-queries/freeing-a-statement-handle.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
+ [SQL Server Native Client &#40;ODBC&#41;](../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
   
   

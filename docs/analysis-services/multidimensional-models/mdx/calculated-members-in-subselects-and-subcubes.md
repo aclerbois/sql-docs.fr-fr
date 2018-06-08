@@ -1,31 +1,23 @@
 ---
-title: "Membres calculés dans les sous-sélections et les sous-cubes | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 6e35e8f7-ae1c-4549-8432-accf036d2373
-caps.latest.revision: 
-author: Minewiskan
+title: Membres calculés dans les sous-sélections et les sous-cubes | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 95a989d092a5b69662fc9f7f542792d9c2895b47
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 673f73c91f4cf3206e9f9df15f248b059a4e78d4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="calculated-members-in-subselects-and-subcubes"></a>Membres calculés dans les sous-sélections et les sous-cubes
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Un membre calculé est un membre de dimension dont la valeur est calculée à partir d’une expression au moment de l’exécution, et qui peut être utilisé dans les sous-sélections et les sous-cubes afin de définir plus précisément l’espace de cube d’une requête.  
+  Un membre calculé est un membre de dimension dont la valeur est calculée à partir d’une expression au moment de l’exécution, et qui peut être utilisé dans les sous-sélections et les sous-cubes afin de définir plus précisément l’espace de cube d’une requête.  
   
 ## <a name="enabling-calculated-members-in-the-subspace"></a>Activation des membres calculés dans le sous-espace  
  La propriété de chaîne de connexion **SubQueries** de la propriété <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A> ou **DBPROPMSMDSUBQUERIES** décrite dans [Propriétés XMLA prises en charge &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md) définit le comportement ou l’autorisation des membres calculés ou des ensembles calculés dans les sous-sélections ou les sous-cubes. Dans le cadre de ce document, sauf indication contraire, la sous-sélection fait référence aux sous-sélections et aux sous-cubes.  
@@ -132,6 +124,6 @@ Where [Measures].[Reseller Sales Amount]
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A>   
  [Instructions de sous-sélection dans les requêtes](../../../analysis-services/multidimensional-models/mdx/subselects-in-queries.md)   
- [Propriétés XMLA prises en charge &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md)  
+ [Propriétés XMLA prises en charge & #40 ; XMLA & #41 ;](../../../analysis-services/xmla/xml-elements-properties/propertylist-element-supported-xmla-properties.md)  
   
   

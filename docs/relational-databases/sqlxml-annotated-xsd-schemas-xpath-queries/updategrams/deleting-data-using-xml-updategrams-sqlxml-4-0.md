@@ -1,16 +1,14 @@
 ---
-title: "Suppression des données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Suppression des données à l’aide de codes XML (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - <after> block
@@ -19,20 +17,20 @@ helpviewer_keywords:
 - mapping-schema attribute
 - record deletions [SQLXML]
 ms.assetid: 4fb116d7-7652-474a-a567-cb475a20765c
-caps.latest.revision: 
+caps.latest.revision: 24
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ec9979c3c6f474cfd0702da990fa71be57d37bbf
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 335a19f89d73aa796dad6fbda72a412972acaea6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deleting-data-using-xml-updategrams-sqlxml-40"></a>Suppression de données à l'aide de codes de mise à jour (updategrams) XML (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Une mise à jour indique une opération de suppression lorsqu’une instance d’enregistrement apparaît dans les  **\<avant >** bloc sans enregistrements correspondants dans le  **\<après >** bloc. Dans ce cas, la mise à jour supprime l’enregistrement dans le  **\<avant >** bloc à partir de la base de données.  
+  Une mise à jour indique une opération de suppression lorsqu’une instance d’enregistrement apparaît dans les  **\<avant >** bloc sans enregistrements correspondants dans le  **\<après >** bloc. Dans ce cas, la mise à jour supprime l’enregistrement dans le  **\<avant >** bloc à partir de la base de données.  
   
  Voici le format du code de mise à jour pour une opération de suppression :  
   
@@ -54,7 +52,7 @@ Une mise à jour indique une opération de suppression lorsqu’une instance d�
  Si un élément spécifié dans la mise à jour correspond à plusieurs lignes dans la table ou ne correspond pas à n’importe quelle ligne, la mise à jour renvoie une erreur et annule l’intégralité  **\<synchronisation >** bloc. Un seul enregistrement peut être supprimé à la fois par un élément dans le code de mise à jour.  
   
 ## <a name="examples"></a>Exemples  
- Les exemples dans cette section utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
+ Les exemples dans cette section utilisent le mappage par défaut (en d'autres termes, aucun schéma de mappage n'est spécifié dans le code de mise à jour). Pour plus d’exemples de codes qui utilisent des schémas de mappage, consultez [spécification d’un schéma de mappage annoté dans une mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/specifying-an-annotated-mapping-schema-in-an-updategram-sqlxml-4-0.md).  
   
  Pour créer des exemples fonctionnels à l’aide de la procédure ci-après, vous devez respecter la configuration requise spécifiée dans [configuration requise pour exécuter les exemples de SQLXML](../../../relational-databases/sqlxml/requirements-for-running-sqlxml-examples.md).  
   
@@ -88,15 +86,15 @@ Une mise à jour indique une opération de suppression lorsqu’une instance d�
   
 ##### <a name="to-test-the-updategram"></a>Pour tester le code de mise à jour  
   
-1.  Effectuez l’exemple B (« insertion de plusieurs enregistrements à l’aide d’une mise à jour ») dans [insertion de données à l’aide de programmes &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/inserting-data-using-xml-updategrams-sqlxml-4-0.md).  
+1.  Effectuez l’exemple B (« insertion de plusieurs enregistrements à l’aide d’une mise à jour ») dans [insertion de données à l’aide de programmes &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/inserting-data-using-xml-updategrams-sqlxml-4-0.md).  
   
-2.  Copiez la mise à jour ci-dessus dans le bloc-notes et enregistrez-le en tant que Updategram-Removeshifts dans le même dossier que celui utilisé pour terminer (« insertion de plusieurs enregistrements à l’aide d’une mise à jour ») dans [insertion de données à l’aide de programmes &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/inserting-data-using-xml-updategrams-sqlxml-4-0.md).  
+2.  Copiez la mise à jour ci-dessus dans le bloc-notes et enregistrez-le en tant que Updategram-Removeshifts dans le même dossier que celui utilisé pour terminer (« insertion de plusieurs enregistrements à l’aide d’une mise à jour ») dans [insertion de données à l’aide de programmes &#40;SQLXML 4.0&#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/updategrams/inserting-data-using-xml-updategrams-sqlxml-4-0.md).  
   
 3.  Créez et utilisez le script de test SQLXML 4.0 (Sqlxml4test.vbs) pour exécuter le code de mise à jour (updategram).  
   
      Pour plus d’informations, consultez [à l’aide d’ADO pour exécuter des requêtes SQLXML 4.0](../../../relational-databases/sqlxml/using-ado-to-execute-sqlxml-4-0-queries.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Considérations de sécurité de mise à jour &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
+ [Considérations de sécurité de mise à jour &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/updategram-security-considerations-sqlxml-4-0.md)  
   
   

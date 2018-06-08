@@ -1,35 +1,32 @@
 ---
-title: "C pour les exemples de Conversion de données SQL | Documents Microsoft"
-ms.custom: 
+title: C pour les exemples de Conversion de données SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data from c to SQL types [ODBC], examples
 - data conversions from C to SQL types [ODBC], examples
 ms.assetid: 9f390afc-d8b8-4286-b559-98b3b8781f3d
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7d3270b142cb857876a558122b670bb329e08c93
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fcba6d92970d0e0b5490f4c24506fe8bb2951217
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-to-sql-data-conversion-examples"></a>C pour les exemples de Conversion de données SQL
 Les exemples suivants illustrent comment le pilote convertit les données C de données SQL :  
   
-|Identificateur de type C|Valeur de données C|Type SQL<br /><br /> identificateur|colonne<br /><br /> length|Données SQL<br /><br /> valeur|SQLSTATE|  
+|Identificateur de type C|Valeur de données C|Type SQL<br /><br /> identificateur|Colonne<br /><br /> length|Données SQL<br /><br /> valeur|SQLSTATE|  
 |-----------------------|------------------|-----------------------------|-----------------------|------------------------|--------------|  
 |SQL_C_CHAR|abcdef\0 [a]|SQL_CHAR|6|abcdef|n/a|  
 |SQL_C_CHAR|abcdef\0 [a]|SQL_CHAR|5|abcde|22001|  

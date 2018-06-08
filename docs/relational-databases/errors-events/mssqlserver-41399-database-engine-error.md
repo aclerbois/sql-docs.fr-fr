@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_41399 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 41399 (Database Engine error)
 ms.assetid: 5e5acb07-16ca-4329-8210-cd2bab0c904f
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 6
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c700e06b34b155f8b1f0885dd541d68cc9115fd5
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 05467da9c9e8cacea86b12adfbadd9e7961db77f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver41399"></a>MSSQLSERVER_41399
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -46,6 +41,6 @@ Le tri des résultats des opérations de jointure et d'agrégation augmente la c
 ## <a name="user-action"></a>Action de l'utilisateur  
 Réduisez la complexité de la requête en supprimant des jointures ou des fonctions d'agrégation.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [OLTP en mémoire &#40;Optimisation en mémoire&#41;](~/relational-databases/in-memory-oltp/in-memory-oltp-in-memory-optimization.md)  
   

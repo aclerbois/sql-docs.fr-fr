@@ -1,27 +1,25 @@
 ---
-title: "Paramètres (GUI) (OracleToSQL) du projet | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (GUI) (OracleToSQL) du projet | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 9727df6d-b0f5-464b-a349-d32b626cedef
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 2f97219f1039eb027646119c223cfbc09e81c2f8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 4c4dcd294826c6a709b174cf0c82fa7d3b7141b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-gui-oracletosql"></a>Paramètres du projet (GUI) (OracleToSQL)
 Les paramètres de projet d’interface graphique utilisateur vous permettent de configurer l’affichage des données sur le **données** onglet et s’il faut afficher le rapport d’évaluation après la conversion ou non.  

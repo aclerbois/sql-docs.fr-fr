@@ -1,16 +1,14 @@
 ---
-title: sp_help_downloadlist (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_downloadlist (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_downloadlist_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_downloadlist
 ms.assetid: 745b265b-86e8-4399-b928-c6969ca1a2c8
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c768ab8d8908d6c62805539e3fb811cee293da55
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e48423bc91413518abe3002a3c3d8da2cef330c2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpdownloadlist-transact-sql"></a>sp_help_downloadlist (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -53,46 +50,46 @@ sp_help_downloadlist { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id=** ] *job_id*  
+ [  **@job_id=** ] *job_id*  
  Numéro d'identification du travail pour lequel renvoyer des informations. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name=** ] **'***job_name***'**  
+ [  **@job_name=** ] **'***job_name***'**  
  Nom du travail. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
   
- [ **@operation=** ] **'***operation***'**  
+ [  **@operation=** ] **'***opération***'**  
  Opération valide pour le travail spécifié. *opération* est **varchar(64)**, avec NULL comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**DEFECT**|Opération de serveur qui demande le serveur cible pour annuler l’inscription du serveur maître **SQLServerAgent** service.|  
+|**ERREUR**|Opération de serveur qui demande le serveur cible pour annuler l’inscription du serveur maître **SQLServerAgent** service.|  
 |**DELETE**|Opération qui supprime intégralement un travail.|  
 |**INSERT**|Opération qui insère un travail ou actualise un travail existant. Cette opération comporte toutes les étapes et planifications du travail, le cas échéant.|  
-|**RE-ENLIST**|Opération serveur qui fait renvoyer les informations d'inscription par le serveur cible, y compris la fréquence d'interrogation et le fuseau horaire, au domaine multiserveur. Le serveur cible télécharge également les **MSXOperator** détails.|  
+|**INSCRIRE DE NOUVEAU**|Opération serveur qui fait renvoyer les informations d'inscription par le serveur cible, y compris la fréquence d'interrogation et le fuseau horaire, au domaine multiserveur. Le serveur cible télécharge également les **MSXOperator** détails.|  
 |**SET-POLL**|Opération de serveur qui définit l'intervalle, en secondes, que doivent respecter les serveurs cibles pour l'interrogation du domaine multiserveur. Si spécifié, *valeur* est interprété comme la valeur d’intervalle requis, et peut être une valeur à partir de **10** à **28 800**.|  
-|**START**|Opération de travail qui requiert le début de l'exécution d'un travail.|  
+|**DÉMARRER**|Opération de travail qui requiert le début de l'exécution d'un travail.|  
 |**ARRÊTER**|Opération de travail qui nécessite l'interruption de l'exécution d'un travail.|  
-|**SYNC-TIME**|Opération de serveur qui commande au serveur cible de synchroniser son horloge système avec le domaine multiserveur. Cette opération étant coûteuse, il est préférable de l'exécuter le plus rarement possible.|  
+|**HEURE DE SYNCHRONISATION**|Opération de serveur qui commande au serveur cible de synchroniser son horloge système avec le domaine multiserveur. Cette opération étant coûteuse, il est préférable de l'exécuter le plus rarement possible.|  
 |**UPDATE**|Opération de travail qui met à jour uniquement la **sysjobs** informations pour un travail, pas les étapes de travail ou les planifications. Est appelée automatiquement par **sp_update_job**.|  
   
  [ **@object_type=** ] **'***object_type***'**  
- Type de l'objet du travail spécifié. *object_type* est **varchar(64)**, avec NULL comme valeur par défaut. *object_type* peut être soit JOB soit SERVER. Pour plus d’informations sur *object_type*valeurs, consultez [sp_add_category &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-add-category-transact-sql.md).  
+ Type de l'objet du travail spécifié. *object_type* est **varchar(64)**, avec NULL comme valeur par défaut. *object_type* peut être soit JOB soit SERVER. Pour plus d’informations sur *object_type*valeurs, consultez [sp_add_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-category-transact-sql.md).  
   
- [ **@object_name=** ] **'***object_name***'**  
+ [  **@object_name=** ] **'***nom_objet***'**  
  Nom de l'objet. *nom_objet* est **sysname**, avec NULL comme valeur par défaut. Si *object_type* est travail, *nom_objet*est le nom du travail. Si *object_type*est serveur, *nom_objet*est le nom du serveur.  
   
  [ **@target_server=** ] **'***target_server***'**  
  Le nom du serveur cible. *serveur_cible* est **nvarchar (128)**, avec NULL comme valeur par défaut.  
   
- [ **@has_error=** ] *has_error*  
+ [  **@has_error=** ] *a_erreur*  
  Indique si le travail doit signaler les erreurs. *a_erreur* est **tinyint**, avec NULL comme valeur par défaut, qui n’indique aucune erreur doit être signalée. **1** indique que toutes les erreurs doivent être signalées.  
   
- [ **@status=** ] *status*  
+ [  **@status=** ] *état*  
  État du travail. *état* est **tinyint**, avec NULL comme valeur par défaut.  
   
- [ **@date_posted=** ] *date_posted*  
+ [  **@date_posted=** ] *date_d*  
  Date et heure à partir desquelles toutes les entrées doivent être incluses dans le jeu de résultats. *date_d* est **datetime**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

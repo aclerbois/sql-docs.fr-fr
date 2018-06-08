@@ -1,16 +1,14 @@
 ---
 title: APPLOCK_TEST (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - APPLOCK_TEST_TSQL
@@ -24,21 +22,20 @@ helpviewer_keywords:
 - sessions [SQL Server], application locks
 - testing application locks
 ms.assetid: 4ea33d04-f8e9-46ff-ae61-985bd3eaca2c
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f4009a151873bf989a39bc4fb91ec3a9963af9f2
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 359590e5a05e71fb2033eb503e26e2bc2b4faf8a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="applocktest-transact-sql"></a>APPLOCK_TEST (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Renvoie des informations indiquant si un verrou peut ou non être octroyé sur une ressource d'application à un propriétaire de verrou donné, sans qu'il y ait acquisition du verrou. APPLOCK_TEST est une fonction de verrouillage d'application qui agit sur la base de données active. L'étendue des verrous d'application est la base de données.
+Cette fonction retourne des informations indiquant si un verrou peut ou non être octroyé sur une ressource d'application à un propriétaire de verrou donné, sans acquisition du verrou. En tant que fonction de verrouillage d'application, APPLOCK_TEST agit sur la base de données active. La base de données constitue l'étendue des verrous d'application.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -50,22 +47,22 @@ APPLOCK_TEST ( 'database_principal' , 'resource_name' , 'lock_mode' , 'lock_owne
   
 ## <a name="arguments"></a>Arguments  
 **'** *database_principal* **'**  
-Utilisateur, rôle ou rôle d'application qui peut se voir octroyer des autorisations sur des objets dans la base de données. L’appelant de la fonction doit être membre du rôle de base de données fixe *database_principal*, **dbo** ou **db_owner** pour pouvoir appeler la fonction.
+Utilisateur, rôle ou rôle d’application qui peuvent se voir octroyer des autorisations sur des objets dans la base de données. Pour pouvoir appeler la fonction, l’appelant de la fonction doit être membre du rôle de base de données fixe *database_principal*, dbo ou db_owner.
   
 **'** *resource_name* **'**  
-Nom de ressource de verrou spécifié par l'application cliente. L'application doit veiller à ce que la ressource soit unique. Le nom spécifié est haché en interne en une valeur qui peut être stockée dans le gestionnaire de verrous [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *resource_name* est de type **nvarchar(255)**, sans valeur par défaut. L’argument *resource_name* est évalué en binaire et respecte la casse, quels que soient les paramètres de classement de la base de données active.
+Nom de ressource de verrouillage spécifié par l'application cliente. L'application doit garantir un nom de ressource unique. Le nom spécifié est haché en interne en une valeur que le gestionnaire de verrous [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut stocker en interne.  *resource_name* est de type **nvarchar(255)**, sans valeur par défaut. L’argument *resource_name* est évalué en binaire et respecte la casse, quels que soient les paramètres de classement de la base de données active.
   
 **'** *lock_mode* **'**  
-Mode de verrouillage à obtenir pour une ressource spécifique. L’argument *lock_mode* est de type **nvarchar(32)** et n’a pas de valeur par défaut. La valeur peut être l’une des suivantes : **Shared**, **Update**, **IntentShared**, **IntentExclusive**, **Exclusive**.
+Mode de verrouillage à obtenir pour une ressource spécifique. L’argument *lock_mode* est de type **nvarchar(32)** et n’a pas de valeur par défaut. La valeur de l’argument *lock_mode* peut être l’une des suivantes : **Shared**, **Update**, **IntentShared**, **IntentExclusive**, **Exclusive**.
   
 **'** *lock_owner* **'**  
-Propriétaire du verrou, qui est la valeur de *lock_owner* lorsque le verrou a été demandé. *lock_owner* est de type **nvarchar(32)**. La valeur peut être **Transaction** (valeur par défaut) ou **Session**. Si la valeur par défaut ou **Transaction** est explicitement spécifiée, la fonction APPLOCK_TEST doit être exécutée à partir d’une transaction.
+Propriétaire du verrou, correspondant à la valeur *lock_owner* lorsque le verrou a été demandé. *lock_owner* est de type **nvarchar(32)** et sa valeur peut être **Transaction** (valeur par défaut) ou **Session**. Si la valeur par défaut ou **Transaction** est explicitement spécifiée, la fonction APPLOCK_TEST doit être exécutée à partir d’une transaction.
   
 ## <a name="return-types"></a>Types de retour
 **smallint**
   
 ## <a name="return-value"></a>Valeur retournée
-Renvoie la valeur 0 lorsque le verrou ne peut pas être octroyé au propriétaire spécifié et renvoie la valeur 1 si le verrou peut être attribué.
+0 si le verrou ne peut pas être octroyé au propriétaire spécifié ou 1 si le verrou peut être octroyé.
   
 ## <a name="function-properties"></a>Propriétés de la fonction
 **Non déterministe**
@@ -75,7 +72,7 @@ Renvoie la valeur 0 lorsque le verrou ne peut pas être octroyé au propriétair
 **Non parallélisable**
   
 ## <a name="examples"></a>Exemples  
-Dans l’exemple suivant, deux utilisateurs (**Utilisateur A** et **Utilisateur B**) exécutent la suite d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] suivante dans des sessions différentes.
+Deux utilisateurs (**Utilisateur A** et **Utilisateur B**) exécutent la séquence d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] suivante dans des sessions différentes.
   
 **Utilisateur A** exécute :
   

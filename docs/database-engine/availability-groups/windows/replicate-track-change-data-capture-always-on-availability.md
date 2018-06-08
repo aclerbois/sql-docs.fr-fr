@@ -1,33 +1,29 @@
 ---
-title: "Réplication, suivi des modifications et capture de données modifiées - groupes de disponibilité | Microsoft Docs"
-ms.custom: 
-ms.date: 05/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+title: Réplication, suivi des modifications et capture de données modifiées - groupes de disponibilité | Microsoft Docs
+ms.custom: ''
+ms.date: 04/25/2018
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change tracking [SQL Server], AlwaysOn Availability Groups
 - change data capture [SQL Server], AlwaysOn Availability Groups
 - Availability Groups [SQL Server], interoperability
 - replication [SQL Server], AlwaysOn Availability Groups
 ms.assetid: e17a9ca9-dd96-4f84-a85d-60f590da96ad
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 37
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4980545b408bde4c30047eae60e000f2518eb107
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 37070e0b036d109624048603b24464a2019ec69d
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769375"
 ---
 # <a name="replication-change-tracking--change-data-capture---always-on-availability-groups"></a>Réplication, suivi des modifications et capture de données modifiées - groupes de disponibilité Always On
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -99,7 +95,7 @@ ms.lasthandoff: 02/23/2018
   
      L'exemple suivant crée le travail de capture.  
   
-    ```  
+    ```sql  
     EXEC sys.sp_cdc_add_job @job_type = 'capture';  
     ```  
   
@@ -111,7 +107,7 @@ ms.lasthandoff: 02/23/2018
   
      Pour s’assurer que le nettoyage approprié se produit au niveau de la nouvelle base de données principale, un travail local de nettoyage doit toujours être créé. L'exemple suivant crée le travail de nettoyage.  
   
-    ```  
+    ```sql  
     EXEC sys.sp_cdc_add_job @job_type = 'cleanup';  
     ```  
   
@@ -137,7 +133,7 @@ ms.lasthandoff: 02/23/2018
   
      Utilisez la requête suivante pour déterminer si un nom d'écouteur de groupe de disponibilité a été défini pour le groupe de disponibilité qui héberge une base de données CDC. La requête retourne le nom d'écouteur du groupe de disponibilité, s'il a été créé.  
   
-    ```  
+    ```sql  
     SELECT dns_name   
     FROM sys.availability_group_listeners AS l  
     INNER JOIN sys.availability_databases_cluster AS d  
@@ -153,7 +149,7 @@ ms.lasthandoff: 02/23/2018
   
      La requête suivante peut être utilisée pour déterminer si l'intention en lecture seule est nécessaire pour se connecter à un réplica secondaire accessible en lecture.  
   
-    ```  
+    ```sql  
     SELECT g.name AS AG, replica_server_name, secondary_role_allow_connections_desc  
     FROM sys.availability_replicas AS r  
     JOIN sys.availability_groups AS g  
@@ -165,7 +161,7 @@ ms.lasthandoff: 02/23/2018
   
      Quand **sp_addlinkedserver** est utilisé pour créer un serveur lié afin d’accéder au serveur secondaire, le paramètre *@datasrc* est utilisé pour le nom d’écouteur de groupe de disponibilité ou le nom du serveur explicite, et le paramètre *@provstr* permet de spécifier l’intention de lecture seule.  
   
-    ```  
+    ```sql  
     EXEC sp_addlinkedserver   
     @server = N'linked_svr',   
     @srvproduct=N'SqlServer',  
@@ -207,8 +203,6 @@ Si la capture des données modifiées doit être désactivé sur une base de don
   
     -   Abonnement par extraction de données : le serveur de publication, le serveur de distribution et les bases de données de l'abonné doivent s'exécuter sur au moins [!INCLUDE[ssSQL11](../../../includes/sssql11-md.md)]. Cela est dû au fait que l'Agent de fusion sur l'abonné doit comprendre la façon dont un groupe de disponibilité peut basculer sur son serveur secondaire.  
   
--   Le placement de la base de données de distribution sur un groupe de disponibilité n'est pas pris en charge.  
-  
 -   Les instances de serveur de publication satisfont toutes les conditions préalables pour faire partie d’un groupe de disponibilité Always On. Pour plus d’informations, consultez [Conditions préalables requises, restrictions et recommandations pour les groupes de disponibilité Always On &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/prereqs-restrictions-recommendations-always-on-availability.md).  
   
 ### <a name="restrictions"></a>Restrictions  
@@ -224,7 +218,7 @@ Si la capture des données modifiées doit être désactivé sur une base de don
   
  *Le basculement vers la base de données de réplica est une procédure manuelle. Le basculement automatique n'est pas fourni.  
   
- **La base de données du serveur de distribution n’est pas prise en charge en vue d’une utilisation avec [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] ou la mise en miroir de bases de données.  
+ **La base de données du serveur de distribution n’est pas prise pour une utilisation avec la mise en miroir de base de données.  
   
 ### <a name="considerations"></a>Observations  
   

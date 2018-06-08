@@ -1,31 +1,29 @@
 ---
-title: "Rôles de sécurité nécessaires pour la réplication | Microsoft Docs"
-ms.custom: 
+title: Rôles de sécurité nécessaires pour la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [SQL Server replication], roles
 - roles [SQL Server], replication
 ms.assetid: b324a80f-4319-4cb2-847b-1910c49d90e0
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 459db7ae60ec36c60177d2c6c8abe49f340ba8e6
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 2d27849aa79b5af049bfc48f7f416408c6fc9cc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="security-role-requirements-for-replication"></a>Rôles de sécurité nécessaires pour la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

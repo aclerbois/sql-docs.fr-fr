@@ -1,17 +1,15 @@
 ---
-title: "FetchComplete, événement (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: FetchComplete, événement (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset::ExecuteComplete
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - FetchComplete event [ADO]
 ms.assetid: a28d3858-566c-468d-b070-d1de4339fbea
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a8332a6332f27a8e2022975a80814be9c28cf4da
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 59c3adb6b0ad683b40dac2cf4547800bf7398067
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetchcomplete-event-ado"></a>FetchComplete, événement (ADO)
 Le **FetchComplete** événement est appelé une fois que tous les enregistrements dans une opération asynchrone de longue durée ont été récupérés dans le [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  

@@ -1,28 +1,27 @@
 ---
 title: rsProcessingError - Erreur Reporting Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: rsProcessingError
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- rsProcessingError
 ms.assetid: 414ee58a-8251-4367-9a8e-10c068d17280
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ab52b302e3dddfd4ab42d2cd09019f0fa62f5a91
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: d00747808949e7814ecd87c640d10ca3b8e54e97
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rsprocessingerror---reporting-services-error"></a>rsProcessingError - Erreur Reporting Services
     

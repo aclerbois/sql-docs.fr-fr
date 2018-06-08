@@ -1,28 +1,26 @@
 ---
-title: "Se connecter à des sources de données à l’aide de l’Assistant Importation et Exportation SQL Server | Microsoft Docs"
-ms.custom: 
+title: Se connecter à des sources de données à l’aide de l’Assistant Importation et Exportation SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 02/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: fd726506-54b7-433b-bf70-3642235b7b31
-caps.latest.revision: 
+caps.latest.revision: 15
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4679367f544000c384e897c85e18cba1d0936a81
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d6c78f12a3babbe3894b9fc00051817582bccc7c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-data-sources-with-the-sql-server-import-and-export-wizard"></a>Se connecter à des sources de données à l’aide de l’Assistant Importation et Exportation SQL Server
 Les rubriques de cette section montrent comment se connecter à de nombreuses sources de données couramment utilisées lorsque vous exécutez l’Assistant Importation et Exportation SQL Server. Vous devez fournir les informations de connexion de vos sources de données dans les pages **Choisir une source de données** et **Choisir une destination** de l’Assistant.

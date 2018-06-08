@@ -1,30 +1,27 @@
 ---
-title: "Comment le magasin de requêtes collecte les données | Microsoft Docs"
-ms.custom: 
+title: Comment le magasin de requêtes collecte les données | Microsoft Docs
+ms.custom: ''
 ms.date: 09/13/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Query Store, data collection
 ms.assetid: 8d5eec36-0013-480a-9c11-183e162e4c8e
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 50e8f4fdae89572403ec8e5b7a5575b6ea61b132
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c3e839b220bb8a3464d8dfbc9a7f4afa8bbcb416
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="how-query-store-collects-data"></a>Comment le magasin de requêtes collecte les données
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

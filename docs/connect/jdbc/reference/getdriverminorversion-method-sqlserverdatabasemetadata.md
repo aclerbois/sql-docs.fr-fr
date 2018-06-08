@@ -1,30 +1,29 @@
 ---
-title: "Méthode getDriverMinorVersion (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getDriverMinorVersion (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getDriverMinorVersion
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getDriverMinorVersion
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: adb6ae29-025e-4ab3-a6e4-133fc29fb98b
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e0baead60e0265d19f8fdb43899aa2e355c0a048
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 9954b722519ee7fb5c1cdd0c1994ecf40b7f66a2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getdriverminorversion-method-sqlserverdatabasemetadata"></a>Méthode getDriverMinorVersion (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

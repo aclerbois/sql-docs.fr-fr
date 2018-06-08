@@ -1,32 +1,30 @@
 ---
-title: "Agréger les valeurs dans un dataset à l’aide de la transformation d’agrégation | Microsoft Docs"
-ms.custom: 
+title: Agréger les valeurs dans un dataset à l’aide de la transformation d’agrégation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Aggregate transformation [Integration Services]
 - aggregate values [Integration Services]
 - datasets [Integration Services], aggregate values
 ms.assetid: 01b81c0f-d5e0-483b-81b2-73800a6945ac
-caps.latest.revision: 
+caps.latest.revision: 48
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 985f5cd2a2ed1d93df3d164a34bbeb4428b97df9
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9d5ca8eb521cc0148aa036a6670863ae88d60c97
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="aggregate-values-in-a-dataset-by-using-the-aggregate-transformation"></a>Agréger les valeurs dans un dataset à l'aide de la transformation d'agrégation
   Pour pouvoir ajouter et configurer une transformation d'agrégation, le package doit inclure au moins une tâche de flux de données et une source.  

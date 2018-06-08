@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLSetCursorName | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLSetCursorName
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLSetCursorName
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLSetCursorName
-helpviewer_keywords: SQLSetCursorName function [ODBC]
+f1_keywords:
+- SQLSetCursorName
+helpviewer_keywords:
+- SQLSetCursorName function [ODBC]
 ms.assetid: 4e055946-12d4-4589-9891-41617a50f34e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e9f416827e5f192599b35027d2a203b011b844f6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 64c560f2934d04b098ed26c347d2819d90948e5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetcursorname-function"></a>Fonction SQLSetCursorName
 **Mise en conformité**  
@@ -61,7 +62,7 @@ SQLRETURN SQLSetCursorName(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLSetCursorName** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLSetCursorName** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Le nom du curseur a dépassé la limite maximale, ainsi seulement le nombre maximal autorisé de caractères a été utilisé.|  
@@ -81,7 +82,7 @@ SQLRETURN SQLSetCursorName(
 ## <a name="comments"></a>Commentaires  
  Les noms de curseurs sont utilisés uniquement dans la mise à jour positionnée et supprimer des instructions (par exemple, **mettre à jour** *-nom de la table* ... **WHERE CURRENT OF** *nom_curseur*). Pour plus d’informations, consultez [positionné instructions Update et Delete](../../../odbc/reference/develop-app/positioned-update-and-delete-statements.md). Si l’application n’appelle pas **SQLSetCursorName** pour définir un nom de curseur, lors de l’exécution d’une instruction de requête que le pilote génère un nom qui commence par les lettres SQL_CUR et ne dépasse pas de 18 caractères.  
   
- Tous les noms de curseur dans la connexion doivent être uniques. La longueur maximale d’un nom de curseur est définie par le pilote. Pour une interopérabilité maximale, il est recommandé que les applications limitent les noms de curseur pas plus de 18 caractères. Dans ODBC 3*.x*, si un nom de curseur est un identificateur entre guillemets, il est traité de la casse et il peut contenir des caractères que la syntaxe SQL n’autorise pas la traitait spécialement, tels que des espaces ou des mots clés réservés. Si un nom de curseur doit être traité en respectant la casse, il doit être passée comme un identificateur entre guillemets.  
+ Tous les noms de curseur dans la connexion doivent être uniques. La longueur maximale d’un nom de curseur est définie par le pilote. Pour une interopérabilité maximale, il est recommandé que les applications limitent les noms de curseur pas plus de 18 caractères. Dans ODBC 3 *.x*, si un nom de curseur est un identificateur entre guillemets, il est traité de la casse et il peut contenir des caractères que la syntaxe SQL n’autorise pas la traitait spécialement, tels que des espaces ou des mots clés réservés. Si un nom de curseur doit être traité en respectant la casse, il doit être passée comme un identificateur entre guillemets.  
   
  Un nom de curseur qui est soit défini explicitement ou implicitement reste défini jusqu'à ce que l’instruction auquel il est associé est supprimée, à l’aide de **SQLFreeHandle**. **SQLSetCursorName** peut être appelée pour renommer un curseur sur une instruction tant que le curseur se trouve dans un état alloué ou préparé.  
   

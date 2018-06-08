@@ -1,36 +1,33 @@
 ---
-title: "Syntaxe de littéral d’intervalle | Documents Microsoft"
-ms.custom: 
+title: Syntaxe de littéral d’intervalle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - literals [ODBC], interval
 - interval literals [ODBC]
 - ODBC literals [ODBC], interval
 ms.assetid: 2f2d22c1-51d6-4055-9f5a-53bc31e9fea0
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 867bcf39a1cfb7807d8156a172e0a0b764a149f7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 016a4fa307e9bda697dde5eec81ce606ad07a19b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interval-literal-syntax"></a>Syntaxe de littéral d’intervalle
 La syntaxe suivante est utilisée pour les littéraux de l’intervalle dans ODBC.  
   
- *intervalle de littéral :: = intervalle* [+*&#124;* -] *intervalle-qualificateur de chaîne de l’intervalle*  
+ *intervalle de littéral :: = intervalle* [+*&#124;*-] *intervalle-qualificateur de chaîne de l’intervalle*  
   
  *chaîne de l’intervalle* :: = *devis* { *année-mois-literal* &#124; *littéral d’heure jour* } *devis*  
   
@@ -42,9 +39,9 @@ La syntaxe suivante est utilisée pour les littéraux de l’intervalle dans ODB
   
  *intervalle de temps* :: = *-valeur en heures* [ :*-valeur en minutes* [ :*-valeur des secondes* ]]  
   
- &#124; *-valeur en minutes* [ :*-valeur des secondes* ]  
+ &#124;*-valeur en minutes* [ :*-valeur des secondes* ]  
   
- &#124; *valeur des secondes*  
+ &#124;*valeur des secondes*  
   
  *valeur des années* :: = *-valeur datetime*  
   
@@ -68,13 +65,13 @@ La syntaxe suivante est utilisée pour les littéraux de l’intervalle dans ODB
   
  *champ de début* :: = *non-seconde--champ datetime* [(*intervalle début champ précision* )]  
   
- *champ de fin* :: = *non-seconde--champ datetime* &#124; DEUXIÈME [(*intervalle--secondes-précision fractionnaire*)]  
+ *champ de fin* :: = *non-seconde--champ datetime* &#124; deuxième [(*intervalle--secondes-précision fractionnaire*)]  
   
- *champ de date/heure unique* :: = *non-seconde--champ datetime* [(*intervalle début champ précision*)] &#124; DEUXIÈME [(*intervalle début champ précision* [, (*intervalle--secondes-précision fractionnaire*)]  
+ *champ de date/heure unique* :: = *non-seconde--champ datetime* [(*intervalle début champ précision*)] &#124; deuxième [(*intervalle début champ précision*  [, (*intervalle--secondes-précision fractionnaire*)]  
   
- *champ de date/heure* :: = *non-seconde--champ datetime* &#124; SECONDE  
+ *champ de date/heure* :: = *non-seconde--champ datetime* &#124; deuxième  
   
- *non-seconde--champ datetime* :: = année &#124; MOIS &#124; JOUR &#124; HEURE &#124; MINUTE  
+ *non-seconde--champ datetime* :: = année &#124; mois &#124; jour &#124; heure &#124; MINUTE  
   
  *intervalle de fractions de seconde-secondes-précision* :: = *entier non signé*  
   

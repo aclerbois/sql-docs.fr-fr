@@ -1,16 +1,13 @@
 ---
-title: "Mettre à niveau Analysis Services | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau Analysis Services | Microsoft Docs
+ms.custom: ''
 ms.date: 09/12/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading databases
 - databases [Analysis Services], upgrading
@@ -22,15 +19,16 @@ helpviewer_keywords:
 - installing Analysis Services, upgrading
 - SSAS, upgrading
 ms.assetid: a131d329-386e-4470-aaa9-ffcde4e5ec0c
-caps.latest.revision: 
+caps.latest.revision: 79
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.openlocfilehash: eb0bcf7a72e59e58bdd4f980c5be175c2a0affdd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 235ed4172275df440f86df47d72f9eed0a1f0a5d
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772585"
 ---
 # <a name="upgrade-analysis-services"></a>Mettre à niveau Analysis Services
 

@@ -1,16 +1,15 @@
 ---
 title: sp_addmergearticle (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addmergearticle
 ms.assetid: 0df654ea-24e2-4c61-a75a-ecaa7a140a6c
-caps.latest.revision: 
+caps.latest.revision: 69
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd9d9ead2695338116dd3da6a60285756cb433c6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: d60ceb96dfaf5f690a8485c74648707da0ae59ea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddmergearticle-transact-sql"></a>sp_addmergearticle (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -121,9 +119,9 @@ sp_addmergearticle [ @publication = ] 'publication'
 |Valeur| Description|  
 |-----------|-----------------|  
 |**Aucun**|Si la table existe déjà côté abonné, aucune action n'est effectuée.|  
-|**supprimer**|Entraîne une suppression basée sur la clause WHERE dans le filtre de sous-ensemble.|  
+|**delete**|Entraîne une suppression basée sur la clause WHERE dans le filtre de sous-ensemble.|  
 |**DROP** (par défaut)|Supprime la table avant de la recréer. Requis pour prendre en charge [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssEW](../../includes/ssew-md.md)] les abonnés.|  
-|**tronquer**|Tronque la table de destination.|  
+|**truncate**|Tronque la table de destination.|  
   
  [  **@creation_script=** ] **'***creation_script***'**  
  Est le chemin d'accès et le nom d'un script de schéma d'article facultatif utilisé pour créer l'article dans la base de données d'abonnement. *creation_script* est **nvarchar (255)**, avec NULL comme valeur par défaut.  
@@ -132,7 +130,7 @@ sp_addmergearticle [ @publication = ] 'publication'
 >  Les scripts de création ne sont pas exécutés sur les Abonnés [!INCLUDE[ssEW](../../includes/ssew-md.md)].  
   
  [  **@schema_option=** ] *schema_option*  
- Est un bitmap de l'option de génération de schéma pour l'article donné. *schema_option* est **Binary (8)**et peut prendre le [| (OR au niveau du bit) ](../../t-sql/language-elements/bitwise-or-transact-sql.md) produit d’un ou plusieurs de ces valeurs.  
+ Est un bitmap de l'option de génération de schéma pour l'article donné. *schema_option* est **Binary (8)** et peut prendre le [| (OR au niveau du bit) ](../../t-sql/language-elements/bitwise-or-transact-sql.md) produit d’un ou plusieurs de ces valeurs.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
@@ -168,10 +166,10 @@ sp_addmergearticle [ @publication = ] 'publication'
 |**0 x 80000000**|Tente de supprimer les dépendances à tous les objets ne faisant pas partie de la publication.|  
 |**0 x 100000000**|Utilisez cette option pour répliquer l’attribut FILESTREAM s’il est spécifié sur **varbinary (max)** colonnes. Ne spécifiez pas cette option si vous répliquez des tables sur des Abonnés [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Réplication de tables qui possèdent des colonnes FILESTREAM sur [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] abonnés n'est pas pris en charge, quelle que soit la manière dont cette option de schéma. Consultez l’option connexe **0 x 800000000**.|  
 |**0x200000000**|Convertit les types de données de date et heure (**date**, **temps**, **datetimeoffset**, et **datetime2**) introduite dans [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] aux types de données qui sont prises en charge dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
-|**0x400000000**|Réplique l'option de compression pour les données et les index. Pour plus d’informations, consultez [Compression de données](../../relational-databases/data-compression/data-compression.md).|  
+|**0x400000000**|Réplique l'option de compression pour les données et les index. Pour plus d'informations, consultez [Data Compression](../../relational-databases/data-compression/data-compression.md).|  
 |**0 x 800000000**|Définissez cette option pour stocker les données FILESTREAM dans leur propre groupe de fichiers sur l'Abonné. Si cette option n'est pas définie, les données FILESTREAM sont stockées dans le groupe de fichiers par défaut. La réplication ne crée pas de groupes de fichiers ; par conséquent, si vous définissez cette option, vous devez créer le groupe de fichiers avant d'appliquer l'instantané à l'Abonné. Pour plus d’informations sur la façon de créer des objets avant d’appliquer l’instantané, consultez [exécuter des Scripts avant et après l’instantané est appliqué](../../relational-databases/replication/execute-scripts-before-and-after-the-snapshot-is-applied.md).<br /><br /> Consultez l’option connexe **0 x 100000000**.|  
 |**0x1000000000**|Convertit les types common language runtime (CLR) définis par l’utilisateur (UDT) **varbinary (max)** afin que les colonnes de type UDT puissent être répliquées sur les abonnés qui sont en cours d’exécution [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].|  
-|**0 x 2000000000**|Convertit le **hierarchyid** type de données à **varbinary (max)** afin que les colonnes de type **hierarchyid** peuvent être répliquées sur les abonnés qui sont en cours d’exécution [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Pour plus d’informations sur l’utilisation de **hierarchyid** colonnes dans les tables répliquées, consultez [hierarchyid &#40; Transact-SQL &#41; ](../../t-sql/data-types/hierarchyid-data-type-method-reference.md).|  
+|**0 x 2000000000**|Convertit le **hierarchyid** type de données à **varbinary (max)** afin que les colonnes de type **hierarchyid** peuvent être répliquées sur les abonnés qui sont en cours d’exécution [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Pour plus d’informations sur l’utilisation de **hierarchyid** colonnes dans les tables répliquées, consultez [hierarchyid &#40;Transact-SQL&#41;](../../t-sql/data-types/hierarchyid-data-type-method-reference.md).|  
 |**0x4000000000**|Réplique tous les index filtrés sur la table. Pour plus d’informations sur les index filtrés, consultez [Create Filtered Indexes](../../relational-databases/indexes/create-filtered-indexes.md).|  
 |**0x8000000000**|Convertit le **geography** et **geometry** types de données **varbinary (max)** afin que les colonnes de ces types peuvent être répliquées sur les abonnés qui sont en cours d’exécution [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].|  
 |**0x10000000000**|Réplique les index sur des colonnes de type **geography** et **geometry**.|  
@@ -232,7 +230,7 @@ sp_addmergearticle [ @publication = ] 'publication'
  **1** Spécifie que la signature est vérifiée pour déterminer si elle provient d’une source approuvée.  
   
  [  **@destination_object=** ] **'***destination_object***'**  
- Est le nom de l'objet créé dans la base de données d'abonnement. *destination_object* est **sysname**, avec une valeur par défaut de ce qui est dans  **@source_object** . Ce paramètre ne peut être spécifié que si l'article est un article de schéma exclusivement, tel que le sont les procédures stockées, vues et fonctions définies par l'utilisateur. Si l’article spécifié est un article de table, la valeur de  *@source_object*  remplace la valeur *destination_object*.  
+ Est le nom de l'objet créé dans la base de données d'abonnement. *destination_object* est **sysname**, avec une valeur par défaut de ce qui est dans **@source_object**. Ce paramètre ne peut être spécifié que si l'article est un article de schéma exclusivement, tel que le sont les procédures stockées, vues et fonctions définies par l'utilisateur. Si l’article spécifié est un article de table, la valeur de *@source_object* remplace la valeur *destination_object*.  
   
  [  **@allow_interactive_resolver=** ] **'***allow_interactive_resolver***'**  
  Active ou désactive l'utilisation du résolveur interactif sur un article. *allow_interactive_resolver* est **nvarchar (5)**, avec FALSE comme valeur par défaut. **true** permet l’utilisation du résolveur interactif sur l’article ; **false** le désactive.  
@@ -315,7 +313,7 @@ sp_addmergearticle [ @publication = ] 'publication'
 |**1**|Les modifications sont autorisées sur l'abonné, mais elles ne sont pas téléchargées sur le serveur de publication.|  
 |**2**|Les modifications ne sont pas autorisées sur l'abonné.|  
   
- La modification *subscriber_upload_options* nécessite l’abonnement pour réinitialisation en appelant [sp_reinitmergepullsubscription &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-reinitmergepullsubscription-transact-sql.md).  
+ La modification *subscriber_upload_options* nécessite l’abonnement pour réinitialisation en appelant [sp_reinitmergepullsubscription &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-reinitmergepullsubscription-transact-sql.md).  
   
 > [!NOTE]  
 >  Si la table source pour un article est déjà publiée dans une autre publication, la valeur de *subscriber_upload_options* doivent être identiques pour les deux articles.  
@@ -366,7 +364,7 @@ sp_addmergearticle [ @publication = ] 'publication'
   
  Si vous spécifiez une valeur de **3** pour *partition_options*, il peut y avoir qu’un seul abonnement pour chaque partition de données dans cet article. Si un deuxième abonnement est créé dans lequel le critère de filtrage du nouvel abonnement produit la même partition que l'abonnement existant, ce dernier est supprimé.  
   
- Lorsque vous spécifiez la valeur 3 pour *partition_options*, métadonnées sont nettoyées à chaque fois que l’Agent de fusion s’exécute et l’instantané partitionné expire plus rapidement. Lorsque vous utilisez cette option, pensez à activer l'instantané partitionné requis par l'abonné. Pour plus d'informations, voir [Snapshots for Merge Publications with Parameterized Filters](../../relational-databases/replication/snapshots-for-merge-publications-with-parameterized-filters.md).  
+ Lorsque vous spécifiez la valeur 3 pour *partition_options*, métadonnées sont nettoyées à chaque fois que l’Agent de fusion s’exécute et l’instantané partitionné expire plus rapidement. Lorsque vous utilisez cette option, pensez à activer l'instantané partitionné requis par l'abonné. Pour plus d’informations, voir [Instantanés des publications de fusion avec des filtres paramétrés](../../relational-databases/replication/snapshots-for-merge-publications-with-parameterized-filters.md).  
   
  Ajout d’un article avec un filtre horizontal statique, à l’aide de *subset_filterclause*, à une publication existante avec des articles qui possèdent des filtres paramétrés nécessite la réinitialisation des abonnements.  
   
@@ -392,19 +390,19 @@ sp_addmergearticle [ @publication = ] 'publication'
 |Type de l'article|Valeurs de l'option de schéma|  
 |------------------|--------------------------|  
 |**schéma Func uniquement**|**0 x 01** et **0 x 2000**|  
-|**schéma de vue indexée uniquement**|**0 x 01**, **0 x 040**, **0 x 0100**, **0 x 2000**, **0 x 40000**, **0 x 1000000**, et **0 x 200000**|  
+|**schéma de vue indexée uniquement**|**0 x 01**, **0 x 040**, **0 x 0100**, **0 x 2000**, **0 x 40000**, **0 x 1000000**et **0 x 200000**|  
 |**schéma de procédure uniquement**|**0 x 01** et **0 x 2000**|  
 |**table**|Toutes les options.|  
-|**schéma de vue uniquement**|**0 x 01**, **0 x 040**, **0 x 0100**, **0 x 2000**, **0 x 40000**, **0 x 1000000**, et **0 x 200000**|  
+|**schéma de vue uniquement**|**0 x 01**, **0 x 040**, **0 x 0100**, **0 x 2000**, **0 x 40000**, **0 x 1000000**et **0 x 200000**|  
   
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_AddMergeArticle](../../relational-databases/replication/codesnippet/tsql/sp-addmergearticle-trans_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance au rôle de serveur fixe **sysadmin** ou au rôle de base de données fixe **db_owner** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Define an Article](../../relational-databases/replication/publish/define-an-article.md)   
+ [Définir un article](../../relational-databases/replication/publish/define-an-article.md)   
  [Publier des données et des objets de base de données](../../relational-databases/replication/publish/publish-data-and-database-objects.md)   
  [Répliquer des colonnes d’identité](../../relational-databases/replication/publish/replicate-identity-columns.md)   
  [sp_changemergearticle &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-changemergearticle-transact-sql.md)   

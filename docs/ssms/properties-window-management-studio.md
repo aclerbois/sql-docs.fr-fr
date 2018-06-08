@@ -1,35 +1,34 @@
 ---
-title: "Fenêtre Propriétés (Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Fenêtre Propriétés (Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - viewing properties
 - sorting properties [SQL Server]
 - Properties window [SQL Server Management Studio]
 - modifying properties
 ms.assetid: 6a9a1389-df8d-4cfc-928b-eccbf884a22d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7a96f9d9eb04873cd18219a65c73e0ae705a5096
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: f10c4c8373dd34e07651f83bd13434a1043ab31b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="properties-window-management-studio"></a>Fenêtre Propriétés (Management Studio)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette fenêtre vous permet d’afficher les propriétés des éléments sélectionnés. Vous pouvez également utiliser la fenêtre Propriétés pour afficher les propriétés d'un fichier, d'un projet et d'une solution. Pour accéder à cette fenêtre, cliquez dans le menu **Affichage** sur **Fenêtre Propriétés** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Cette fenêtre vous permet d'afficher les propriétés des éléments sélectionnés. Vous pouvez également utiliser la fenêtre Propriétés pour afficher les propriétés d'un fichier, d'un projet et d'une solution. Pour accéder à cette fenêtre, cliquez dans le menu **Affichage** sur **Fenêtre Propriétés** .  
   
 La fenêtre Propriétés affiche différents types de champs d'édition, en fonction des besoins d'une propriété particulière. Les propriétés affichées en gris sont en lecture seule.  
   

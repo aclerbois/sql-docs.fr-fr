@@ -1,33 +1,32 @@
 ---
-title: "Méthodes d’abonnement et de remise | Microsoft Docs"
-ms.custom: 
+title: Méthodes d’abonnement et de remise | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - reports [Reporting Services], delivering
 - delivery [Reporting Services]
 - methods [Reporting Services], subscription and delivery
 - subscriptions [Reporting Services], about subscriptions
 ms.assetid: a8637501-1817-4ccc-b07d-dd9ed5608805
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 329ed3b2de2498de0a04491edfe6871dab923703
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 897b83b91df61077818954164216598e2846d912
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-and-delivery-methods"></a>Méthodes d'abonnement et de remise
   Vous pouvez utiliser ces méthodes pour créer et générer des abonnements et des éléments de catalogue.  

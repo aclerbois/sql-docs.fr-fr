@@ -1,17 +1,16 @@
 ---
-title: "Créer un utilisateur de base de données | Microsoft Docs"
-ms.custom: 
+title: Créer un utilisateur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 04/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.user.securables.f1
 - SQL13.SWB.DATABASEUSER.GENERAL.F1
@@ -26,16 +25,16 @@ helpviewer_keywords:
 - users [SQL Server], adding
 - mapping database users
 ms.assetid: 782798d3-9552-4514-9f58-e87be4b264e4
-caps.latest.revision: 
+caps.latest.revision: 31
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8603380bf11b7bcfb47cc0efe59e52feaa5292de
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 042659861435f0deacf885dc5ec4c382f47a328f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-database-user"></a>Créer un utilisateur de base de données
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -69,7 +68,7 @@ ms.lasthandoff: 11/21/2017
   
  En tant que principal de sécurité, il est possible d'accorder des autorisations à des utilisateurs. L'étendue d'un utilisateur est la base de données. Pour se connecter à une base de données spécifique sur l'instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], un compte de connexion doit être mappé à un utilisateur de base de données. Les autorisations dans la base de données sont accordées et refusées à l'utilisateur de la base de données, pas au compte de connexion.  
   
-##  <a name="Permissions"></a> Autorisations  
+##  <a name="Permissions"></a> Permissions  
  Requiert l'autorisation **ALTER ANY USER** sur la base de données.  
   
 ##  <a name="SSMSProcedure"></a> Créer un utilisateur avec SSMS  
@@ -143,12 +142,12 @@ ms.lasthandoff: 11/21/2017
      **Points de suspension (…)**  
      Cliquez sur les points de suspension **(…)** figurant après **Valeur** pour ouvrir la boîte de dialogue **Valeur de la propriété étendue** . Tapez ou affichez la valeur de la propriété étendue dans cet emplacement de plus grande taille. Pour plus d'informations, consultez [Boîte de dialogue Valeur de la propriété étendue](http://msdn.microsoft.com/library/ms189353.aspx).  
   
-     **Delete**  
+     **Supprimer**  
      Supprime la propriété étendue sélectionnée.  
   
 ##  <a name="TsqlProcedure"></a> Créer un utilisateur à l’aide de T-SQL  
     
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils **Standard** , cliquez sur **Nouvelle requête**.  
   
@@ -167,7 +166,7 @@ ms.lasthandoff: 11/21/2017
   
  Pour plus d’informations, consultez [CREATE USER &#40;Transact-SQL&#41;](../../../t-sql/statements/create-user-transact-sql.md) qui contient beaucoup d’autres exemples [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Principaux &#40;moteur de base de données&#41;](../../../relational-databases/security/authentication-access/principals-database-engine.md)   
  [Créer un compte de connexion](../../../relational-databases/security/authentication-access/create-a-login.md)   
  [CREATE LOGIN &#40;Transact-SQL&#41;](../../../t-sql/statements/create-login-transact-sql.md)  

@@ -1,31 +1,28 @@
 ---
-title: "L’exécution d’ODBC préparée | Documents Microsoft"
-ms.custom: 
+title: L’exécution d’ODBC préparée | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - prepared execution [ODBC]
 - SQL statements [ODBC], prepared execution
 - SQL statements [ODBC], executing
 ms.assetid: f08c8a98-31ee-48b2-9dbf-6f31c2166dbb
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6a4f91eb2e4e255007fef3f93504872f791499e7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1e03123e34834033b4c53fb1eb5818f6c78def82
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepared-execution-odbc"></a>Exécution préparée ODBC
 L’exécution préparée est un moyen efficace pour exécuter une instruction plusieurs fois. L’instruction est compilée tout d’abord, ou *préparée,* dans un plan d’accès. Le plan d’accès est alors exécutée une ou plusieurs fois à une date ultérieure. Pour plus d’informations sur les plans d’accès, consultez [le traitement d’une instruction SQL](../../../odbc/reference/processing-a-sql-statement.md).  

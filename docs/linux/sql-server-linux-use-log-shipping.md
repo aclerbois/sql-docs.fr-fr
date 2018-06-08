@@ -1,25 +1,22 @@
 ---
-title: "Configurer l’envoi de journaux pour SQL Server sur Linux | Documents Microsoft"
-description: "Ce didacticiel montre un exemple de base de la réplication d’une instance de SQL Server sur Linux sur une instance secondaire à l’aide des journaux de transaction."
+title: Configurer l’envoi de journaux pour SQL Server sur Linux | Documents Microsoft
+description: Ce didacticiel montre un exemple de base de la réplication d’une instance de SQL Server sur Linux sur une instance secondaire à l’aide des journaux de transaction.
 author: meet-bhagdev
 ms.author: meetb
 manager: craigg
 ms.date: 04/19/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: Inactive
-ms.openlocfilehash: af88c21dc246238274ab66b47bb76302f0a86f06
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: 2d2057779b13141c6b1fee49fa1b3d299a660862
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="get-started-with-log-shipping-on-linux"></a>Prise en main l’envoi de journaux sur Linux
 

@@ -1,38 +1,19 @@
 ---
-title: "Gestion des assemblys de modèle multidimensionnel | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- permissions [Analysis Services], assemblies
-- calling user-defined functions
-- user impersonation [Analysis Services]
-- impersonation [Analysis Services]
-- Data Mining Extensions [Analysis Services], assemblies
-- MDX [Analysis Services], assemblies
-- user-defined functions [Analysis Services]
-- Analysis Services objects, assemblies
-- assemblies [Analysis Services]
-- application domains [Analysis Services]
-ms.assetid: b2645d10-6d17-444e-9289-f111ec48bbfb
-caps.latest.revision: 
-author: Minewiskan
+title: Gestion des assemblys de modèle multidimensionnel | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2ccd3083abd00b2f2ad4f343a35cb53d7f2e1c08
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: df015e99df80915c68fa8f45e9f31ec475e22bc2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="multidimensional-model-assemblies-management"></a>Gestion des assemblys de modèles multidimensionnels
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -91,7 +72,7 @@ Call MyAssembly.MyClass.MyVoidProcedure(a, b, c)
   
  Pour les assemblys, l’autorisation d’exécution est passée avec la propriété **PermissionSet** sur l’objet **Assembly** . Les autorisations reçues par le code managé sont déterminées par la stratégie de sécurité effective. Il existe déjà trois niveaux de stratégie effectifs dans un environnement hébergé non-[!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] : entreprise, ordinateur et utilisateur. La liste effective des autorisations reçues par le code est déterminée par l'intersection des autorisations obtenues par ces trois niveaux.  
   
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit une stratégie de sécurité au niveau de l’hôte au CLR (Common Language Runtime) quand il l’héberge. Cette stratégie est un niveau de stratégie supplémentaire sous les trois niveaux de stratégie qui sont toujours effectifs. Cette stratégie est définie pour chaque domaine d'application qui est créé par [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit un niveau de stratégie de sécurité au niveau de l'hôte au CLR (Common Language Runtime) quand il l'héberge ; cette stratégie est un niveau de stratégie supplémentaire sous les trois niveaux de stratégie qui sont toujours effectifs. Cette stratégie est définie pour chaque domaine d'application qui est créé par [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
   
  La stratégie de niveau hôte de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est une combinaison de la stratégie fixe de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour les assemblys système et de la stratégie spécifiée par l’utilisateur pour les assemblys utilisateur. La partie spécifiée par l'utilisateur de la stratégie d'hôte d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] est basée sur le propriétaire de l'assembly spécifiant un des trois compartiments d'autorisation pour chaque assembly :  
   

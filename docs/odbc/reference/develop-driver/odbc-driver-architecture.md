@@ -1,28 +1,26 @@
 ---
 title: Architecture du pilote ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC drivers [ODBC], architecture
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC drivers [ODBC], architecture
 ms.assetid: 21a62c7c-192e-4718-a16e-aa12b0de4419
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 69d4103e9f04da7775f38b436b009f8a3c06a962
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 9566599b68ac931604ab68c06da2f6cd624673fe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-driver-architecture"></a>Architecture du pilote ODBC
 Les rédacteurs de pilotes doivent être conscients que l’architecture du pilote peut affecter si une application peut utiliser propres au SGBD SQL.  

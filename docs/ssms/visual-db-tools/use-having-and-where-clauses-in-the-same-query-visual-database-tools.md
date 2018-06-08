@@ -1,16 +1,15 @@
 ---
-title: "Utiliser les clauses HAVING et WHERE dans la même requête | Microsoft Docs"
-ms.custom: 
+title: Utiliser les clauses HAVING et WHERE dans la même requête | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - search criteria [SQL Server], excluding rows
 - search criteria [SQL Server], WHERE clause
@@ -22,19 +21,19 @@ helpviewer_keywords:
 - WHERE clause, search criteria
 - excluding rows
 ms.assetid: 1e07cf56-b4b7-4c49-8ddd-c276812a7148
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ab0f50e4144fa734290adf39d3de11c709208ddc
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: acbc220dfc25f8e12f9e343cabfa4a063438946f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-having-and-where-clauses-in-the-same-query-visual-database-tools"></a>Utiliser les clauses HAVING et WHERE dans la même requête (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Il peut arriver que vous souhaitiez exclure des lignes individuelles de groupes (à l’aide d’une clause WHERE) avant d’appliquer une condition aux groupes dans leur ensemble (à l’aide d’une clause HAVING).  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Il peut arriver que vous souhaitiez exclure des lignes individuelles de groupes (à l'aide d'une clause WHERE) avant d'appliquer une condition aux groupes dans leur ensemble (à l'aide d'une clause HAVING).  
   
 Une clause HAVING est similaire à une clause WHERE si ce n'est qu'elle s'applique uniquement aux groupes dans leur ensemble (c'est-à-dire aux lignes du jeu de résultats qui représentent des groupes), tandis que la clause WHERE s'applique aux lignes individuelles. Une requête peut comporter à la fois une clause WHERE et une clause HAVING. Dans ce cas :  
   

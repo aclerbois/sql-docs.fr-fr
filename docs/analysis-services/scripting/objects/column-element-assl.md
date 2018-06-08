@@ -1,36 +1,23 @@
 ---
-title: "L’élément Column (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: L’élément Column (ASSL) | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: assl
 ms.topic: reference
-apiname: Column Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: Column
-helpviewer_keywords: Column element
-ms.assetid: 10dc6d5e-c690-4415-adbb-eaeebaa29cb4
-caps.latest.revision: "28"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 60a0c8bd38d280d267b85148e3d40f2bac4967cb
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 5d43447085387ddb04be6345a762702297f3ffe2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="column-element-assl"></a>Élément Column (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Décrit une colonne dans la collection de colonnes associée à l’élément parent.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Décrit une colonne dans la collection de colonnes associée à l'élément parent.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -72,10 +59,10 @@ ms.lasthandoff: 01/08/2018
   
 |Relation|Élément|  
 |------------------|-------------|  
-|Éléments parents|[Colonnes](../../../analysis-services/scripting/collections/columns-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments parents|[Columns](../../../analysis-services/scripting/collections/columns-element-assl.md)|  
+|Éléments enfants|Aucune|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Objets &#40; ASSL &#41;](../../../analysis-services/scripting/objects/objects-assl.md)  
+ [Objets & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/objects/objects-assl.md)  
   
   

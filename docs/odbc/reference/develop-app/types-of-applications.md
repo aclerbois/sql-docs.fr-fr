@@ -1,16 +1,14 @@
 ---
-title: "Types d’Applications | Documents Microsoft"
-ms.custom: 
+title: Types d’Applications | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - upgrading applications [ODBC], application types
 - backward compatibility [ODBC], application and driver compatibility
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - application upgrades [ODBC], application types
 - application compatibility issues [ODBC]
 ms.assetid: d346a64e-a32c-4153-a40f-5b53c2f57ef2
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4c84327d23fba9b97bb34ff290eff06704e586df
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1c2283c81c1ad5389a8662c14ce79942a3cc4b45
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="types-of-applications"></a>Types d’Applications
 Les applications ODBC peuvent être classées comme suit :  

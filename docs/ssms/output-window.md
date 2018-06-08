@@ -1,34 +1,33 @@
 ---
-title: "Fenêtre de sortie SSMS | Microsoft Docs"
-ms.custom: 
+title: Fenêtre de sortie SSMS | Microsoft Docs
+ms.custom: ''
 ms.date: 08/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Output Window [SQL Server Management Studio]
 - Activity Monitor [SQL Server Management Studio]
 - Object Explorer [SQL Server Management Studio]
 ms.assetid: a2ce1a07-b4e2-471c-87d2-b8de5e6c6864
-caps.latest.revision: "1"
+caps.latest.revision: 1
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 723128aeff26897aeb6a5d835eebc744791f6e4f
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: eb4b9425edb8ba72ee56e98f8f028d8f44b1b7ff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="output-window-in-sql-server-management-studio"></a>Fenêtre de sortie dans SQL Server Management Studio
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez ouvrir la fenêtre de sortie à partir du menu Affichage ou avec la combinaison de touches Ctrl+Alt+O. Il existe plusieurs canaux de sortie disponibles.
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez ouvrir la fenêtre de sortie à partir du menu Affichage ou avec la combinaison de touches Ctrl + Alt + O. Il existe plusieurs canaux de sortie disponibles.
 
 Le tableau suivant donne une vue d’ensemble des types de messages associés à chaque canal de sortie.
 

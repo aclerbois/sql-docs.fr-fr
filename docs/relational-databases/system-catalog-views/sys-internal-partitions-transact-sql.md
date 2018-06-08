@@ -1,16 +1,14 @@
 ---
 title: Sys.internal_partitions (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
@@ -18,21 +16,21 @@ applies_to:
 dev_langs:
 - TSQL
 ms.assetid: 0262df2b-5ba7-4715-b17b-3d9ce470a38e
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 13
+author: ronortloff
+ms.author: rortloff
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3280403d6194bd3f5370985d31e672752ed8c25
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 9d0321089336774e4303418b776eec8a1608613b
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/07/2018
 ---
-# <a name="sysinternalpartitions-transact-sql"></a>sys.internal_partitions (Transact-SQL)
+# <a name="sysinternalpartitions-transact-sql"></a>Sys.internal_partitions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
-  Retourne une ligne pour chaque ensemble de lignes qui effectue le suivi des données internes pour les index columnstore sur les tables sur disque. Ces ensembles de lignes sont internes à l’index columnstore et rowgroups stockent les lignes de suivi supprimé, les mappages de rowgroup et delta. Elles suivent les données pour chaque pour chaque partition de table ; chaque table possède au moins une partition. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]crée de nouveau les ensembles de lignes chaque fois qu’il reconstruit l’index columnstore.   
+  Retourne une ligne pour chaque ensemble de lignes qui effectue le suivi des données internes pour les index columnstore sur les tables sur disque. Ces ensembles de lignes sont internes à l’index columnstore et rowgroups stockent les lignes de suivi supprimé, les mappages de rowgroup et delta. Elles suivent les données pour chaque pour chaque partition de table ; chaque table possède au moins une partition. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée de nouveau les ensembles de lignes chaque fois qu’il reconstruit l’index columnstore.   
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
@@ -68,7 +66,7 @@ WHERE p.object_id = OBJECT_ID ( '<table name' ) ;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Affichages catalogue d’objets &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
+ [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [Questions fréquentes (FAQ) sur l’interrogation des catalogues système SQL Server](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)  
   

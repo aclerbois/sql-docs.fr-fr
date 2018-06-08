@@ -1,38 +1,20 @@
 ---
 title: Instruction UPDATE CUBE (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords:
-- Cube
-- UPDATE CUBE
-- UPDATE_CUBE
-- UPDATE
-dev_langs: kbMDX
-helpviewer_keywords:
-- updating cubes
-- cubes [Analysis Services], modifying
-- modifying cubes
-- UPDATE CUBE statement
-ms.assetid: 6c8f23bb-401b-49de-843a-5324ac977239
-caps.latest.revision: "43"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 77ca2c4e3a63db80ff21a91309f5fc531e5ba3ca
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 1569d8024e23bab1841bf7757ffd828a3bc7dd4f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34579751"
 ---
 # <a name="mdx-data-manipulation---update-cube"></a>Manipulation de données MDX - UPDATE CUBE
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -71,7 +53,7 @@ UPDATE [ CUBE ] Cube_Name
  *Weight_Expression*  
  Expression numérique MDX (Multidimensional Expressions) valide qui retourne une valeur décimale comprise entre 0 et 1.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Vous pouvez mettre à jour la valeur d'une cellule feuille ou non-feuille d'un cube, et allouer inévitablement la valeur d'une cellule non-feuille spécifiée à toutes les cellules feuilles dépendantes. La cellule spécifiée par l'expression de tuple peut être n'importe quelle cellule valide dans l'espace multidimensionnel (ce qui signifie que la cellule ne dispose d'aucune cellule feuille). Toutefois, la cellule doit être agrégée avec la [somme](../mdx/sum-mdx.md) fonction d’agrégation et de ne doit pas inclure un membre calculé dans le tuple utilisé pour identifier la cellule.  
   
  Il peut être utile de penser à la **UPDATE CUBE** instruction comme une sous-routine qui générera automatiquement une série d’opérations d’écriture différée de cellule aux cellules feuille et non-feuille qui seront regroupées dans une somme spécifiée.  
@@ -85,7 +67,7 @@ UPDATE [ CUBE ] Cube_Name
 <New Value> / Count(leaf cells that are contained in <tuple>)  
 ```  
   
- **USE_EQUAL_INCREMENT :**changera chaque cellule feuille qui contribue à la cellule mise à jour en fonction de l’expression suivante.  
+ **USE_EQUAL_INCREMENT :** changera chaque cellule feuille qui contribue à la cellule mise à jour en fonction de l’expression suivante.  
   
 ```  
 <leaf cell value> = <leaf cell value> +   
@@ -127,6 +109,6 @@ Weight_Expression = <leaf cell value> / <existing value>
   
 ## <a name="see-also"></a>Voir aussi  
  <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A>   
- [Instructions MDX de Manipulation de données &#40; MDX &#41;](../mdx/mdx-data-manipulation-statements-mdx.md)  
+ [Les instructions de Manipulation de données MDX &#40;MDX&#41;](../mdx/mdx-data-manipulation-statements-mdx.md)  
   
   

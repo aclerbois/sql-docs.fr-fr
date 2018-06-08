@@ -1,30 +1,28 @@
 ---
-title: "Informations sur le serveur de publication, Liste de suivi des abonnements (Publication de fusion) | Microsoft Docs"
-ms.custom: 
+title: Informations sur le serveur de publication, Liste de suivi des abonnements (Publication de fusion) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.monitor.publisherinfo.subscriptionssummary.merge.f1
 ms.assetid: 4ec956bf-5cef-4377-a1d1-8c7f0107a6cb
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a13986fd9ff7bc9788737d6c8f39b3e8190ca2ee
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: f24a549196cfe7d795a4ae0b0f8b278cc3eb008a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publisher-information-subscription-watch-list-merge-publication"></a>Informations sur le serveur de publication, Liste de suivi des abonnements (Publication de fusion)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

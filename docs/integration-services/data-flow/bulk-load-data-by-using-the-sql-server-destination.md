@@ -1,16 +1,16 @@
 ---
-title: "Charger des données en masse à l’aide de la destination SQL Server | Microsoft Docs"
-ms.custom: 
+title: Charger des données en masse à l’aide de la destination SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- integration-services
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server destination
 - loading data
@@ -18,16 +18,15 @@ helpviewer_keywords:
 - inserting data
 - bulk load [Integration Services]
 ms.assetid: 8f982f85-a82e-4e2d-9cd8-cd2f85402d8e
-caps.latest.revision: "30"
+caps.latest.revision: 30
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9cdd73f56e17dbe97a2075d33a0ceefc032fc345
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: fe6bec5a59242ab8bfa6d37741691f89d4e63bdc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bulk-load-data-by-using-the-sql-server-destination"></a>Charger des données en masse à l'aide de la destination SQL Server
   Pour pouvoir ajouter et configurer une destination [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , le package doit inclure au moins une tâche de flux de données et une source de données.  

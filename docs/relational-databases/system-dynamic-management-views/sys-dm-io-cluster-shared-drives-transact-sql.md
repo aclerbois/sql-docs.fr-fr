@@ -1,16 +1,13 @@
 ---
-title: sys.dm_io_cluster_shared_drives (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_io_cluster_shared_drives (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_io_cluster_shared_drives_TSQL
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_io_cluster_shared_drives dynamic management view
 ms.assetid: c8fcced8-c780-49dc-99bd-6beb3ca532c4
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0c04a88653314158196c84af999348aba895141f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 300d3bad9d7886db06a5b2891a6e030b03d63347
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmioclustershareddrives-transact-sql"></a>sys.dm_io_cluster_shared_drives (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
@@ -50,7 +47,7 @@ ms.lasthandoff: 02/03/2018
  Lorsque le clustering est activé, il est nécessaire pour l'instance de cluster de basculement que les fichiers journaux et de données se trouvent sur des disques partagés afin de pouvoir y accéder une fois que l'instance a basculé vers un autre nœud. Chaque ligne de cette vue représente l'un des disques partagés qui sont utilisés par cette instance cluster de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Seuls les disques répertoriés par cette vue peuvent être utilisés pour stocker des fichiers journaux ou de données pour cette instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les disques figurant dans cette vue sont ceux qui font partie du groupe de ressources de cluster associé à l'instance.  
   
 > [!NOTE]  
->  Cette vue sera abandonnée dans une version ultérieure. Nous vous recommandons d’utiliser [sys.dm_io_cluster_valid_path_names &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-io-cluster-valid-path-names-transact-sql.md) à la place.  
+>  Cette vue sera abandonnée dans une version ultérieure. Nous vous recommandons d’utiliser [sys.dm_io_cluster_valid_path_names &#40;Transact-SQL&#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-io-cluster-valid-path-names-transact-sql.md) à la place.  
   
 ## <a name="permissions"></a>Autorisations  
  L'utilisateur doit disposer de l'autorisation VIEW SERVER STATE pour l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
@@ -73,8 +70,8 @@ SELECT * FROM sys.dm_io_cluster_shared_drives;
  n  
   
 ## <a name="see-also"></a>Voir aussi  
- [sys.dm_io_cluster_valid_path_names &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-io-cluster-valid-path-names-transact-sql.md)   
- [sys.dm_os_cluster_nodes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-cluster-nodes-transact-sql.md)   
+ [Sys.dm_io_cluster_valid_path_names &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-io-cluster-valid-path-names-transact-sql.md)   
+ [Sys.dm_os_cluster_nodes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-cluster-nodes-transact-sql.md)   
  [sys.fn_servershareddrives &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-servershareddrives-transact-sql.md)   
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)  
   

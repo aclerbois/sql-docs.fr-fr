@@ -1,15 +1,14 @@
 ---
-title: "Procédures | Documents Microsoft"
-ms.custom: 
+title: Procédures | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - stored procedures [ODBC]
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - statements [ODBC], stored procedures
 - ODBC applications, stored procedures
 ms.assetid: c64d5f3a-376b-48ef-84f3-b6148ac8600a
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a5f5e26d9616b6a0a15793463bc3e01f6fbd697f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3ae7aedfbbfc37a1ec4bfc1eb4b547b78e531df1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="procedures"></a>Procédures
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -42,6 +41,6 @@ ms.lasthandoff: 01/25/2018
  Pour plus d’informations, consultez [en cours d’exécution des procédures stockées](../../../relational-databases/native-client-odbc-stored-procedures/running-stored-procedures.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’exécution d’instructions &#40; ODBC &#41;](../../../relational-databases/native-client-odbc-queries/executing-statements/executing-statements-odbc.md)  
+ [L’exécution d’instructions & #40 ; ODBC & #41 ;](../../../relational-databases/native-client-odbc-queries/executing-statements/executing-statements-odbc.md)  
   
   

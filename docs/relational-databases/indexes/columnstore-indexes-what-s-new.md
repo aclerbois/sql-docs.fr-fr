@@ -2,25 +2,22 @@
 title: Index columnStore - Nouveautés | Microsoft Docs
 ms.custom: ''
 ms.date: 03/20/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
-ms.component: indexes
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: table-view-index
 ms.tgt_pltfrm: ''
-ms.topic: article
-author: barbkess
-ms.author: barbkess
+ms.topic: conceptual
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f1a9ab49828410519b1aa5a36eb0804d4d7b50a5
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 65999c781c4e13dc42b40c6e47ecd82a18a5fead
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnstore-indexes---what39s-new"></a>Index columnstore - Nouveautés
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -28,7 +25,7 @@ ms.lasthandoff: 03/22/2018
   Récapitulatif des fonctionnalités columnstore disponibles pour chaque version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et pour les dernières versions de [!INCLUDE[ssSDS](../../includes/sssds-md.md)], [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)].  
 
  > [!NOTE]
- > Pour [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les index columnstore sont disponibles dans SQL Database niveau Premium et Standard (S3 et versions ultérieures). Pour SQL Server (2016 SP1 et versions ultérieures), les index columnstore sont disponibles dans toutes les éditions. Pour SQL Server (2016 et versions antérieures), les index columnstore sont uniquement disponibles dans l’édition Entreprise.
+ > Pour [!INCLUDE[ssSDS](../../includes/sssds-md.md)], les index columnstore sont disponibles dans les niveaux Premium, Standard (S3 et ultérieur) et vCore de SQL Database. Pour SQL Server (2016 SP1 et versions ultérieures), les index columnstore sont disponibles dans toutes les éditions. Pour SQL Server (2016 et versions antérieures), les index columnstore sont uniquement disponibles dans l’édition Entreprise.
  
 ## <a name="feature-summary-for-product-releases"></a>Synthèse des fonctionnalités pour les versions du produit  
  Ce tableau récapitule les principales fonctionnalités des index columnstore et des produits dans lesquels ils sont disponibles.  
@@ -119,7 +116,8 @@ Ces DMV basées sur OLTP en mémoire contiennent des mises à jour pour columnst
   
 ### <a name="limitations"></a>Limitations  
   
--   La fonction MERGE est désactivée quand un index B-tree est défini sur un index columnstore cluster.  
+
+  
 -   Pour les tables en mémoire, un index columnstore doit inclure toutes les colonnes. L’index columnstore ne peut pas avoir de condition filtrée.  
 -   Pour les tables en mémoire, les requêtes sur les index columnstore s’exécutent uniquement en mode InterOP et non en mode natif en mémoire. L’exécution en parallèle est prise en charge.  
   

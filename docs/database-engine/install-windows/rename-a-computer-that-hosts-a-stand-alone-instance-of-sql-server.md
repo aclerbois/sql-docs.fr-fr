@@ -1,17 +1,13 @@
 ---
-title: "Renommer un ordinateur qui héberge une instance autonome de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Renommer un ordinateur qui héberge une instance autonome de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 09/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - remote login errors [SQL Server]
 - standalone computer names [SQL Server]
@@ -22,15 +18,16 @@ helpviewer_keywords:
 - deleting remote logins
 - dropping remote logins
 ms.assetid: bbaf1445-b8a2-4ebf-babe-17d8cf20b037
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 31
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: f849361162d08b14091ffd4ef43f4c6a104b6836
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 179371efbc47f39c4e24e44ef15d44dc30ebe2ed
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770675"
 ---
 # <a name="rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server"></a>Renommer un ordinateur qui héberge une instance autonome de SQL Server
 

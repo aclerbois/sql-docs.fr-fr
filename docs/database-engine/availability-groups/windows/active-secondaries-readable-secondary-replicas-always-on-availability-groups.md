@@ -1,16 +1,13 @@
 ---
-title: "Secondaires actifs - Réplicas secondaires lisibles - Disponibilité Always On | Microsoft Docs"
-ms.custom: 
+title: Secondaires actifs - Réplicas secondaires lisibles - Disponibilité Always On | Microsoft Docs
+ms.custom: ''
 ms.date: 06/06/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connection access to availability replicas
 - Availability Groups [SQL Server], availability replicas
@@ -19,21 +16,21 @@ helpviewer_keywords:
 - readable secondary replicas
 - Availability Groups [SQL Server], active secondary replicas
 ms.assetid: 78f3f81a-066a-4fff-b023-7725ff874fdf
-caps.latest.revision: "80"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 80
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e18fc38d0f5baa2c49a487a362dc8612bc61f404
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d5197fb00840296dc4ef05b478d0dd3f0cd37c46
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770055"
 ---
 # <a name="active-secondaries-readable-secondary-replicas-always-on-availability-groups"></a>Secondaires actifs : réplicas secondaires accessibles en lecture (groupes de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
 
-  Les fonctions secondaires actives de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] incluent la prise en charge de l’accès en lecture seule à un ou plusieurs réplicas secondaires (*réplicas secondaires accessibles en lecture*). Un réplica secondaire accessible en lecture autorise l'accès en lecture seule à toutes ses bases de données secondaires. Toutefois, les bases de données secondaires accessibles en lecture ne sont pas définies en lecture seule. Elles sont dynamiques. Chaque base de données secondaire change à mesure que les modifications apportées à la base de données primaire sont répercutées sur elle. Pour un réplica secondaire classique, les données des bases de données secondaires, y compris les tables optimisées en mémoire durables, sont quasiment synchronisées en temps réel. De plus, les index de recherche en texte intégral sont synchronisés avec les bases de données secondaires. En général, la latence des données entre une base de données primaire et la base de données secondaire correspondante n'est que de quelques secondes.  
+  Les fonctions secondaires actives de [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] incluent la prise en charge de l’accès en lecture seule à un ou plusieurs réplicas secondaires (*réplicas secondaires accessibles en lecture*). Un réplica secondaire accessible en lecture peut être en mode de disponibilité en validation synchrone ou en mode de disponibilité en validation asynchrone. Un réplica secondaire accessible en lecture autorise l'accès en lecture seule à toutes ses bases de données secondaires. Toutefois, les bases de données secondaires accessibles en lecture ne sont pas définies en lecture seule. Elles sont dynamiques. Chaque base de données secondaire change à mesure que les modifications apportées à la base de données primaire sont répercutées sur elle. Pour un réplica secondaire classique, les données des bases de données secondaires, y compris les tables optimisées en mémoire durables, sont quasiment synchronisées en temps réel. De plus, les index de recherche en texte intégral sont synchronisés avec les bases de données secondaires. En général, la latence des données entre une base de données primaire et la base de données secondaire correspondante n'est que de quelques secondes.  
   
  Les paramètres de sécurité définis pour les bases de données primaires sont également appliqués dans les bases de données secondaires. Cela inclut les utilisateurs, les rôles de base de données et les rôles d'applications avec leurs autorisations respectives, ainsi que le chiffrement transparent des données s'il est activé sur la base de données primaire.  
   

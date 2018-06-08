@@ -1,28 +1,26 @@
 ---
-title: "Se connecter à une source de données ODBC (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Se connecter à une source de données ODBC (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e6318776-a188-48a7-995d-9eafd7148ff2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9a7692c229728e97bc830020d6ec2cdc35843af4
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: dc12f0380f64fd818de9caed35ffa5d146eabeff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-an-odbc-data-source-sql-server-import-and-export-wizard"></a>Se connecter à une source de données ODBC (Assistant Importation et Exportation SQL Server)
 Cette rubrique vous montre comment se connecter à une source de données **ODBC** à partir de la page **Choisir une source de données** ou **Choisir une destination** de l’Assistant Importation et Exportation SQL Server.

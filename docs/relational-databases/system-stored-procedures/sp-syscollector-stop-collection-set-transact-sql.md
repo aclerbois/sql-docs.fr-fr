@@ -1,16 +1,14 @@
 ---
-title: sp_syscollector_stop_collection_set (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_syscollector_stop_collection_set (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_syscollector_stop_collection_set_TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_syscollector_stop_collection_set
 - data collector [SQL Server], stored procedures
 ms.assetid: 4668cfb7-462f-40d0-948c-8f740a792a4d
-caps.latest.revision: 
+caps.latest.revision: 16
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 828d097a749fd1c0db89d24d2079fed5a5fd2ce9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 1464a9dfac11cf6b84a3895b94881d4825f9758c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsyscollectorstopcollectionset-transact-sql"></a>sp_syscollector_stop_collection_set (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -56,10 +53,10 @@ sp_syscollector_stop_collection_set
  [ @name =] '*nom*'  
  Est le nom de l’ensemble de la collection. *nom* est **sysname** avec une valeur par défaut NULL. *nom* doit avoir une valeur si *collection_set_id* a la valeur NULL.  
   
- [ @stop_collection_job = ] *stop_collection_job*  
+ [ @stop_collection_job =] *stop_collection_job*  
  Spécifie que le travail de collecte pour le jeu d'éléments de collecte doit être arrêté s'il est en cours d'exécution. *stop_collection_job* est **bits** avec 1 comme valeur par défaut.  
   
- *stop_collection_job* s’applique uniquement aux jeux d’éléments de collecte en mode mis en cache. Pour plus d’informations, consultez [sp_syscollector_create_collection_set &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-syscollector-create-collection-set-transact-sql.md).  
+ *stop_collection_job* s’applique uniquement aux jeux d’éléments de collecte en mode mis en cache. Pour plus d’informations, consultez [sp_syscollector_create_collection_set &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-syscollector-create-collection-set-transact-sql.md).  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  

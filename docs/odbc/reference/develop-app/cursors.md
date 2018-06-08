@@ -1,16 +1,14 @@
 ---
 title: Curseurs | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - forward-only cursors [ODBC]
 - scrollable cursors [ODBC]
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - result sets [ODBC], fetching
 - block cursors [ODBC]
 ms.assetid: 0b114352-3c63-4d33-9220-182ede90e4aa
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: fc2d15d949561f28cf7b9fa653ebf34c602c29bb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 569714d6cd523498adddbda26576cf376af15c81
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="cursors"></a>Curseurs
 Une application extrait les données avec un *curseur*. Un curseur est différent à partir d’un jeu de résultats : un jeu de résultats est l’ensemble de lignes qui correspond aux critères de recherche spécifique, tandis qu’un curseur est le logiciel qui retourne les lignes à l’application. Le nom *curseur,* telle qu’elle s’applique aux bases de données, probablement l’origine à partir du curseur clignotant sur un ordinateur Terminal Server. Comme ce curseur indique la position actuelle sur l’écran et l’emplacement où les mots apparaîtra suivants, un curseur sur un jeu de résultats indique la position actuelle dans le jeu de résultats et reviendrez ensuite les lignes.  

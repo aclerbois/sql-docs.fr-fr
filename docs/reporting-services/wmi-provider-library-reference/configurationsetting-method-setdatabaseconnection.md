@@ -1,16 +1,15 @@
 ---
-title: "SetDatabaseConnection, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: SetDatabaseConnection, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apiname:
 - SetDatabaseConnection (WMI MSReportServer_ConfigurationSetting Class)
 apilocation:
@@ -19,16 +18,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetDatabaseConnection method
 ms.assetid: c040aa78-92b8-41e4-9ae2-eff9fcdddc5b
-caps.latest.revision: 
+caps.latest.revision: 19
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d570b4d32481e15ce78bef98c97b7330192f1c8c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7574d6acf14c44e179455bf705fc297cf5f42b84
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---setdatabaseconnection"></a>ConfigurationSetting, méthode - SetDatabaseConnection
   Définit la connexion à une base de données de serveur de rapports spécifique.  

@@ -1,34 +1,32 @@
 ---
-title: "Conception d’assemblys | Documents Microsoft"
-ms.custom: 
+title: Conception d’assemblys | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - designing assemblies [SQL Server]
 - assemblies [CLR integration], designing
 ms.assetid: 9c07f706-6508-41aa-a4d7-56ce354f9061
-caps.latest.revision: 
+caps.latest.revision: 29
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d5e491f922a034a55cb65e432e0c005f6cc18fc0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 33519a8494be8f6a062227b81999f58c4f053071
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="assemblies---designing"></a>Assemblys - conception
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique décrit les facteurs suivants, à prendre en considération lors de la conception d'assemblys :  
+  Cette rubrique décrit les facteurs suivants, à prendre en considération lors de la conception d'assemblys :  
   
 -   Empaqueter des assemblys  
   
@@ -41,7 +39,7 @@ Cette rubrique décrit les facteurs suivants, à prendre en considération lors 
   
  Lorsque vous empaquetez du code en assembly, vous devez prendre en considération les points suivants :  
   
--   Les types et index CLR définis par l'utilisateur qui dépendent de fonctions CLR définies par l'utilisateur peuvent amener des données persistantes à figurer dans la base de données qui repose sur l'assembly. La modification du code d'un assembly est souvent plus complexe lorsque la base de données contient des données persistantes dépendant de l'assembly. Par conséquent, il est généralement préférable de séparer le code sur lequel reposent les dépendances des données persistantes (par exemple des types et des index définis par l'utilisateur utilisant des fonctions définies par l'utilisateur) du code dépourvu de ces dépendances de données persistantes. Pour plus d’informations, consultez [mise en œuvre des assemblys](../../relational-databases/clr-integration/assemblies-implementing.md) et [ALTER ASSEMBLY &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-assembly-transact-sql.md).  
+-   Les types et index CLR définis par l'utilisateur qui dépendent de fonctions CLR définies par l'utilisateur peuvent amener des données persistantes à figurer dans la base de données qui repose sur l'assembly. La modification du code d'un assembly est souvent plus complexe lorsque la base de données contient des données persistantes dépendant de l'assembly. Par conséquent, il est généralement préférable de séparer le code sur lequel reposent les dépendances des données persistantes (par exemple des types et des index définis par l'utilisateur utilisant des fonctions définies par l'utilisateur) du code dépourvu de ces dépendances de données persistantes. Pour plus d’informations, consultez [mise en œuvre des assemblys](../../relational-databases/clr-integration/assemblies-implementing.md) et [ALTER ASSEMBLY &#40;Transact-SQL&#41;](../../t-sql/statements/alter-assembly-transact-sql.md).  
   
 -   Si une portion de code managé requiert une autorisation plus élevée, il est préférable de la placer dans un assembly distinct du code qui ne requiert pas une telle autorisation.  
   
@@ -64,7 +62,7 @@ Cette rubrique décrit les facteurs suivants, à prendre en considération lors 
  En outre, la spécification de UNSAFE permet au code de l'assembly de réaliser des opérations considérées comme étant de type non sécurisé par le vérificateur CLR. Ces opérations sont susceptibles d'accéder de manière incontrôlée aux zones de tampon mémoire de l'espace réservé aux processus [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les assemblys UNSAFE peuvent également corrompre le système de sécurité de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou de CLR (Common Language Runtime). Les autorisations UNSAFE ne doivent être accordées par des administrateurs ou des développeurs expérimentés qu'aux assemblys hautement approuvés. Seuls les membres de la **sysadmin** rôle serveur fixe peut créer des assemblys UNSAFE.  
   
 ## <a name="restrictions-on-assemblies"></a>Restrictions associées aux assemblys  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] impose certaines restrictions au code managé dans les assemblys pour vous assurer qu’il peuvent s’exécuter de manière fiable et évolutive. Cela signifie que certaines opérations pouvant compromettre la robustesse du serveur ne sont pas autorisées dans les assemblys SAFE et EXTERNAL_ACCESS.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] impose certaines restrictions au code managé des assemblys afin que ceux-ci puissent s'exécuter de manière fiable et évolutive. Cela signifie que certaines opérations pouvant compromettre la robustesse du serveur ne sont pas autorisées dans les assemblys SAFE et EXTERNAL_ACCESS.  
   
 ### <a name="disallowed-custom-attributes"></a>Attributs personnalisés interdits  
  Les assemblys ne peuvent pas être annotés avec les attributs personnalisés suivants :  
@@ -124,7 +122,7 @@ System.Configuration
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Assemblys &#40; moteur de base de données &#41;](../../relational-databases/clr-integration/assemblies-database-engine.md)   
+ [Assemblys & #40 ; moteur de base de données & #41 ;](../../relational-databases/clr-integration/assemblies-database-engine.md)   
  [Sécurité d’intégration du CLR](../../relational-databases/clr-integration/security/clr-integration-security.md)  
   
   

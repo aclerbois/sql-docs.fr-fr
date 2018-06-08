@@ -2,14 +2,12 @@
 title: ALTER TABLE (Transact-SQL) | Microsoft Docs
 ms.custom: ''
 ms.date: 08/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: t-sql|statements
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: t-sql
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -61,16 +59,16 @@ helpviewer_keywords:
 - dropping columns
 - table changes [SQL Server]
 ms.assetid: f1745145-182d-4301-a334-18f799d361d1
-caps.latest.revision: ''
+caps.latest.revision: 281
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b4a725960612c90a4619cf16587df0f67a68a3ba
-ms.sourcegitcommit: 6e16d1616985d65484c72f5e0f34fb2973f828f4
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b6b4aca07714a7153cc0b6920daca92667e0dff6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-table-transact-sql"></a>ALTER TABLE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -413,7 +411,7 @@ ALTER TABLE MyTable ALTER COLUMN NullCOl NVARCHAR(20) NOT NULL;
   
  Spécifie que la propriété ROWGUIDCOL est supprimée de la colonne spécifiée ou qu'elle lui est ajoutée. ROWGUIDCOL indique que la colonne est une colonne d'identificateur global unique (GUID). Une seule colonne **uniqueidentifier** par table peut être désignée comme colonne ROWGUIDCOL ; il est possible d’affecter la propriété ROWGUIDCOL seulement à une colonne **uniqueidentifier**. La propriété ROWGUIDCOL ne peut pas être affectée à une colonne dont le type de données est défini par l'utilisateur.  
   
- ROWGUIDCOL n'impose pas l'unicité des valeurs stockées dans la colonne et ne génère pas automatiquement des valeurs pour les nouvelles lignes insérées dans la table. Pour générer des valeurs uniques pour chaque colonne, utilisez la fonction NEWID sur des instructions INSERT, ou définissez la fonction NEWID par défaut pour la colonne.  
+ ROWGUIDCOL n'impose pas l'unicité des valeurs stockées dans la colonne et ne génère pas automatiquement des valeurs pour les nouvelles lignes insérées dans la table. Pour générer des valeurs uniques pour chaque colonne, vous pouvez soit utiliser la fonction NEWID ou NEWSEQUENTIALID sur des instructions INSERT, soit spécifier la fonction NEWID ou NEWSEQUENTIALID comme fonction par défaut pour la colonne.  
   
  [ {ADD | DROP} PERSISTED ]  
  Spécifie que la propriété PERSISTED est ajoutée à ou supprimée de la colonne spécifiée. La colonne doit être une colonne calculée définie avec une expression déterministe. Pour les colonnes spécifiées avec la propriété PERSISTED, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] stocke physiquement les valeurs calculées dans la table et met à jour les valeurs lorsque d'autres colonnes dont dépend la colonne calculée sont mises à jour. Si vous marquez une colonne calculée comme PERSISTED, vous pouvez créer des index sur des colonnes calculées définies sur des expressions qui sont déterministes mais pas précises. Pour plus d'informations, consultez [Indexes on Computed Columns](../../relational-databases/indexes/indexes-on-computed-columns.md).  
@@ -571,13 +569,13 @@ WITH CHECK | WITH NOCHECK
 > [!NOTE]  
 >  Les opérations d'index en ligne ne sont pas disponibles dans toutes les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour plus d’informations, consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2016](../../sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
- MOVE TO { *partition_scheme_name***(***column_name* [ 1**,** ... *n*] **)** | *filegroup* | **"**default**"** }  
+ MOVE TO { *partition_scheme_name ***(*** column_name* [ 1 **,** ... *n*] **)** | *filegroup* | **"** default **"** }  
  **S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
  Spécifie un emplacement où déplacer les lignes de données actuellement au niveau feuille de l'index cluster. La table est déplacée au nouvel emplacement. Cette option s'applique uniquement aux contraintes qui créent un index cluster.  
   
 > [!NOTE]  
->  L'élément « default » n'est pas un mot clé dans ce contexte. Il s’agit d’un identificateur du groupe de fichiers par défaut qui doit être délimité, comme dans MOVE TO **"**default**"** or MOVE TO **[**default**]**. Si **"**default**"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
+>  L'élément « default » n'est pas un mot clé dans ce contexte. Il s’agit d’un identificateur du groupe de fichiers par défaut qui doit être délimité, comme dans MOVE TO **"** default **"** or MOVE TO **[** default **]**. Si **"** default **"** est spécifié, l’option QUOTED_IDENTIFIER doit être ON pour la session active. Il s'agit du paramètre par défaut. Pour plus d’informations, consultez [SET QUOTED_IDENTIFIER &#40;Transact-SQL&#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md).  
   
  { CHECK | NOCHECK } CONSTRAINT  
  Spécifie que *constraint_name* est activé ou désactivé. Cette option peut être utilisée seulement avec les contraintes FOREIGN KEY et CHECK. Lorsque NOCHECK est spécifié, la contrainte est désactivée ; les insertions et les mises à jour ultérieures de la colonne ne sont pas validées par rapport aux conditions de la contrainte. Il n'est pas possible de désactiver les contraintes DEFAULT, PRIMARY KEY et UNIQUE.  
@@ -637,7 +635,7 @@ Pour plus d’informations sur les restrictions relatives à **SWITCH** lors de 
   
  Les index columnstore non-clusters générés pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2016 CTP1 et pour SQL Database avant la version V12 étaient dans un format en lecture seule. Les index columnstore non-cluster doivent être reconstruits au format actuel (qui peut être mis à jour) avant que toute opération PARTITION puisse être effectuée.  
   
- SET **(** FILESTREAM_ON = { *partition_scheme_name* | *filestream_filegroup_name* |         **"**default**"** | **"**NULL**"** }**)**  
+ SET **(** FILESTREAM_ON = { *partition_scheme_name* | *filestream_filegroup_name* |         **"** default **"** | **"** NULL **"** }**)**  
  **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
  Spécifie où les données FILESTREAM sont stockées.  
@@ -648,9 +646,9 @@ Pour plus d’informations sur les restrictions relatives à **SWITCH** lors de 
   
  *filestream_filegroup_name* spécifie le nom d’un groupe de fichiers FILESTREAM. Le groupe de fichiers doit avoir un fichier qui est défini pour le groupe de fichiers à l’aide d’une instruction [CREATE DATABASE](../../t-sql/statements/create-database-sql-server-transact-sql.md) ou [ALTER DATABASE](../../t-sql/statements/alter-database-transact-sql.md) ; sinon, une erreur est générée.  
   
- **"**default**"** spécifie le groupe de fichiers FILESTREAM avec l’ensemble de propriétés DEFAULT. S'il n'y a aucun groupe de fichiers FILESTREAM, une erreur est générée.  
+ **"** default **"** spécifie le groupe de fichiers FILESTREAM avec l’ensemble de propriétés DEFAULT. S'il n'y a aucun groupe de fichiers FILESTREAM, une erreur est générée.  
   
- **"**NULL**"** spécifie que toutes les références aux groupes de fichiers FILESTREAM pour la table seront supprimées. Toutes les colonnes FILESTREAM doivent être supprimées en premier. Vous devez utiliser SET FILESTREAM_ON**="**NULL**"** pour supprimer toutes les données FILESTREAM associées à une table.  
+ **"** NULL **"** spécifie que toutes les références aux groupes de fichiers FILESTREAM pour la table seront supprimées. Toutes les colonnes FILESTREAM doivent être supprimées en premier. Vous devez utiliser SET FILESTREAM_ON **="** NULL **"** pour supprimer toutes les données FILESTREAM associées à une table.  
   
  SET **(** SYSTEM_VERSIONING **=** { OFF | ON [ ( HISTORY_TABLE = schema_name . history_table_name [ , DATA_CONSISTENCY_CHECK = { **ON** | OFF } ]  ) ] } **)**  
  **S’applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  

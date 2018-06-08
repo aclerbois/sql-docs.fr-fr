@@ -1,27 +1,24 @@
 ---
-title: "Exemple de données du jeu de résultat de la récupération des | Documents Microsoft"
-ms.custom: 
+title: Exemple de données du jeu de résultat de la récupération des | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 1b190c36-3d38-49a2-8599-612329675851
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6fc44c944ae32b49b859ff56e113d6d0669603df
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d4d073fb21077bc5873dcb55be452e32ee5a0af3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="retrieving-result-set-data-sample"></a>Extraction de l'exemple de données du jeu de résultats
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

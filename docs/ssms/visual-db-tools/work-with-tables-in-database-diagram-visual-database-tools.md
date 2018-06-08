@@ -1,35 +1,34 @@
 ---
-title: "Utiliser des tables dans les schémas de base de données (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Utiliser des tables dans les schémas de base de données (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database diagrams [SQL Server], tables
 - Table Designer, database diagrams
 - tables [SQL Server], database diagrams
 - database diagrams [SQL Server], Table Designer
 ms.assetid: ee2c5d84-22bf-4597-ac70-a27ed8cc94f4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 369cb096dae1804087d4a7bbcd50c10f975f59d6
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: bb735a0aacd0b48c3fc0d8077953d100e1c5c763
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="work-with-tables-in-database-diagram-visual-database-tools"></a>Utiliser des tables dans les schémas de base de données (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez modifier et créer des tables de base de données dans le Concepteur de tables ou dans le Concepteur de schémas de base de données.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez modifier et créer des tables de base de données dans le Concepteur de tables ou dans le Concepteur de schémas de base de données.  
   
 > [!NOTE]  
 > Si la table est publiée pour réplication, vous devez apporter vos modifications au schéma à l’aide de l’instruction Transact-SQL [ALTER TABLE](http://msdn.microsoft.com/en-us/f1745145-182d-4301-a334-18f799d361d1) ou de SMO (SQL Server Management Objects). Lorsque les modifications sont apportées au schéma à l'aide du Concepteur de tables ou du Concepteur de schémas de base de données, celui-ci tente d'abandonner la table et de la recréer. Toutefois, il est impossible d'abandonner les objets publiés, par conséquent les modifications du schéma échoueront.  

@@ -1,39 +1,19 @@
 ---
-title: "Indicateurs de modélisation (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- attributes [data mining]
-- data types [data mining]
-- REGRESSOR flag
-- MODEL_EXISTENCE_ONLY flag
-- REGRESSOR column
-- columns [data mining], modeling flags
-- NOT NULL modeling flag
-- modeling flags [data mining]
-- null values [Analysis Services]
-- MODEL_EXISTENCE_ONLY column
-- coding [Data Mining]
-ms.assetid: 8826d5ce-9ba8-4490-981b-39690ace40a4
-caps.latest.revision: 
-author: Minewiskan
+title: Indicateurs de modélisation (exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0b7139d1120e9b244ae4bc20e32951c52cc7f37d
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
+ms.openlocfilehash: 32a7241fcea41af44e3e336d02c857f51d133208
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="modeling-flags-data-mining"></a>Indicateurs de modélisation (Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -111,13 +91,13 @@ WHERE MODEL_NAME = '<model name>'
   
 |Tâche|Rubrique|  
 |----------|-----------|  
-|Modifier les indicateurs de modélisation à l'aide du Concepteur d'exploration de données|[Afficher ou modifier la modélisation des indicateurs &#40; exploration de données &#41;](../../analysis-services/data-mining/view-or-change-modeling-flags-data-mining.md)|  
+|Modifier les indicateurs de modélisation à l'aide du Concepteur d'exploration de données|[Afficher ou modifier la modélisation des indicateurs & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/view-or-change-modeling-flags-data-mining.md)|  
 |Fournir une indication à l'algorithme pour recommander des régresseurs potentiels|[Spécifier une colonne à utiliser comme régresseur dans un modèle](../../analysis-services/data-mining/specify-a-column-to-use-as-regressor-in-a-model.md)|  
-|Voir les indicateurs de modélisation pris en charge par des algorithmes spécifiques (dans la section Indicateurs de modélisation de la rubrique de référence correspondant à chaque algorithme)|[Algorithmes d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)|  
+|Voir les indicateurs de modélisation pris en charge par des algorithmes spécifiques (dans la section Indicateurs de modélisation de la rubrique de référence correspondant à chaque algorithme)|[Algorithmes d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)|  
 |En savoir plus sur les colonnes de structure d'exploration de données et les propriétés que vous pouvez définir dessus|[Colonnes de structure d'exploration de données](../../analysis-services/data-mining/mining-structure-columns.md)|  
 |En savoir plus sur les colonnes du modèle d'exploration de données et les indicateurs de modélisation qui peuvent être appliqués au niveau du modèle|[Colonnes du modèle d’exploration de données](../../analysis-services/data-mining/mining-model-columns.md)|  
 |Voir la syntaxe à utiliser pour travailler avec des indicateurs de modélisation dans des instructions DMX|[Indicateurs de modélisation &#40;DMX&#41;](../../dmx/modeling-flags-dmx.md)|  
-|Comprendre les valeurs manquantes et la façon de les utiliser|[Les valeurs manquantes &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/missing-values-analysis-services-data-mining.md)|  
+|Comprendre les valeurs manquantes et la façon de les utiliser|[Les valeurs manquantes & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/missing-values-analysis-services-data-mining.md)|  
 |En savoir plus sur la gestion des modèles et des structures, et sur la définition de propriétés d'utilisation|[Déplacement d'objets d'exploration de données](../../analysis-services/data-mining/moving-data-mining-objects.md)|  
   
   

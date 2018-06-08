@@ -1,16 +1,14 @@
 ---
-title: "Conversion de données à partir de C en Types de données SQL | Documents Microsoft"
-ms.custom: 
+title: Conversion de données à partir de C en Types de données SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data from c to SQL types [ODBC], about converting
 - converting data from c to SQL types [ODBC]
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - data conversions from C to SQL types [ODBC]
 - C data types [ODBC], converting to SQL types
 ms.assetid: ee0afe78-b58f-4d34-ad9b-616bb23653bd
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bb1d1c07f1453886fd91159eabad97dc90b9b191
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f08f4294b5b6c44c54d9f577ec423f7d298181a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="converting-data-from-c-to-sql-data-types"></a>Conversion de données à partir de C en Types de données SQL
 Lorsqu’une application appelle **SQLExecute** ou **SQLExecDirect**, le pilote récupère les données pour tous les paramètres liés avec **SQLBindParameter** à partir d’emplacements de stockage dans l’application. Lorsqu’une application appelle **SQLSetPos**, le pilote récupère les données pour une mise à jour ou l’opération d’ajout de colonnes liées avec **SQLBindCol**. Pour les paramètres de données d’exécution, l’application envoie les données de paramètre avec **SQLPutData**. Si nécessaire, le pilote convertit les données du type de données spécifié par le *ValueType* argument dans **SQLBindParameter** au type de données spécifié par le *ParameterType* argument dans **SQLBindParameter**, puis envoie les données à la source de données.  

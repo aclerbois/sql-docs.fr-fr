@@ -1,28 +1,26 @@
 ---
-title: "Implémentation d’UPDATE avec FROM ou des sous-requêtes | Microsoft Docs"
-ms.custom: 
+title: Implémentation d’UPDATE avec FROM ou des sous-requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 11/17/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 138f5b0e-f8a4-400f-b581-8062aebc62b6
-caps.latest.revision: 
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3235dffe296bb77f94807ac517fb86fcda33b64e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: de3f3c760339b8459388c7f91af1dacf44d641ef
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="implementing-update-with-from-or-subqueries"></a>Implémentation d’UPDATE avec FROM ou des sous-requêtes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

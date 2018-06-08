@@ -1,16 +1,15 @@
 ---
 title: Traiter les rapports volumineux | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report processing [Reporting Services], large reports
 - page breaks [Reporting Services]
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - size [SQL Server], reports
 - distributing reports [Reporting Services], large reports
 ms.assetid: c5275a9f-c95b-46d7-bc62-633879a8a291
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 048397a9df14002d360512b64d1384a20d608906
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 0c1f8df989b6b87b141870b4e5072354e8dceb3e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="process-large-reports"></a>Traiter les rapports volumineux
   Les rapports volumineux présentent certains problèmes de traitement. Ils nécessitent un certain nombre de configurations pour garantir leur fonctionnement correct. Ils ne doivent pas être exécutés à la demande, à moins d'être configurés pour prendre en charge la pagination.  

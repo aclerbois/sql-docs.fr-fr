@@ -1,27 +1,19 @@
 ---
-title: "Séquence de commande (TMSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/12/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Séquence de commande (TMSL) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tmsl
 ms.topic: reference
-ms.assetid: 898d6ec2-9b40-441b-be2b-5728d1d2882e
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d1c5a1108ca775694122b6e9c5518913b47d85aa
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: bfdfd96ed2368d4f0900ffb70363f1a38201035f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sequence-command-tmsl"></a>Commande Sequence (TMSL)
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]

@@ -1,16 +1,14 @@
 ---
 title: sp_add_schedule (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_schedule_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_schedule
 ms.assetid: 9060aae3-3ddd-40a5-83bb-3ea7ab1ffbd7
-caps.latest.revision: 
+caps.latest.revision: 53
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: df04306671a8e2a0f0ded0fc7482e56955102a83
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 95723f90b248d214638a4bfcd38b1fc40bcfb121
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddschedule-transact-sql"></a>sp_add_schedule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,7 +58,7 @@ sp_add_schedule [ @schedule_name = ] 'schedule_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@schedule_name =** ] **'***schedule_name***'**  
+ [  **@schedule_name =** ] **'***nom_de_la_planification***'**  
  Nom de la planification. *nom_de_la_planification*est **sysname**, sans valeur par défaut.  
   
  [  **@enabled =** ] *activé*  
@@ -80,10 +77,10 @@ sp_add_schedule [ @schedule_name = ] 'schedule_name'
 |**64**|Lancé au démarrage du service SQLServerAgent|  
 |**128**|Exécution pendant une période d'inactivité de l'ordinateur.|  
   
- [ **@freq_interval =** ] *freq_interval*  
+ [  **@freq_interval =** ] *freq_interval*  
  Jours d’exécution du travail. *freq_interval* est **int**, avec une valeur par défaut **1**et varie en fonction de la valeur de *freq_type*.  
   
-|Value of *freq_type*|Effet sur *freq_interval*|  
+|Valeur de *freq_type*|Effet sur *freq_interval*|  
 |---------------------------|--------------------------------|  
 |**1** (une fois)|*freq_interval* n’est pas utilisée.|  
 |**4** (quotidienne)|Chaque *freq_interval* jours.|  
@@ -103,7 +100,7 @@ sp_add_schedule [ @schedule_name = ] 'schedule_name'
 |**0x4**|Minutes|  
 |**0x8**|Heures|  
   
- [ **@freq_subday_interval =** ] *freq_subday_interval*  
+ [  **@freq_subday_interval =** ] *freq_subday_interval*  
  Le nombre de *freq_subday_type* périodes entre chaque exécution d’un travail. *freq_subday_interval*est **int**, avec une valeur par défaut **0**. Remarque : l'intervalle doit être supérieur à 10 secondes. *freq_subday_interval* est ignoré dans les cas où *freq_subday_type* est égal à **1**.  
   
  [ **@freq_relative_interval =** ] *freq_relative_interval*  
@@ -127,25 +124,25 @@ sp_add_schedule [ @schedule_name = ] 'schedule_name'
   
  Pour les planifications hebdomadaires ou mensuelles, l'agent ignore si active_start_date se situe dans le passé, et utilise à la place la date actuelle. Lorsqu'une planification de l'agent SQL est créée à l'aide de sp_add_schedule, il existe une option pour spécifier le paramètre active_start_date, qui correspond à la date à laquelle l'exécution du travail commencera. Si le type de planification est hebdomadaire ou mensuel et que le paramètre active_start_date est défini à une date située dans le passé, le paramètre active_start_date est ignoré et la date actuelle est utilisée pour active_start_date.  
   
- [ **@active_end_date =** ] *active_end_date*  
+ [  **@active_end_date =** ] *active_end_date*  
  Date à laquelle l'exécution d'un travail peut s'arrêter. *active_end_date*est **int**, avec une valeur par défaut **99991231**, ce qui indique le 31 décembre 9999. La mise en forme est la suivante : AAAAMMJJ.  
   
- [ **@active_start_time =** ] *active_start_time*  
+ [  **@active_start_time =** ] *heure_de_début_active*  
  L’heure sur n’importe quel jour entre *active_start_date* et *active_end_date* pour commencer l’exécution d’un travail. *heure_de_début_active*est **int**, avec une valeur par défaut **000000**, ce qui signifie 12:00:00 a.m. sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [ **@active_end_time =** ] *active_end_time*  
+ [  **@active_end_time =** ] *heure_fin_active*  
  L’heure sur n’importe quel jour entre *active_start_date* et *active_end_date* pour arrêter l’exécution d’une tâche. *heure_fin_active*est **int**, avec une valeur par défaut **235959**, ce qui indique à 11:59:59 PM sur une horloge de 24 heures. Elle doit être au format HHMMSS.  
   
- [  **@owner_login_name** =] **'***owner_login_name***'**  
+ [ **@owner_login_name**=] **'***owner_login_name***'**  
  Nom du principal de serveur qui détient la planification. *owner_login_name* est **sysname**, avec NULL comme valeur par défaut, ce qui signifie que la planification est détenue par le créateur.  
   
- [ **@schedule_uid**= ] *schedule_uid***OUTPUT**  
+ [ **@schedule_uid**=] *schedule_uid *** sortie**  
  Identificateur unique de la planification. *schedule_uid* est une variable de type **uniqueidentifier**.  
   
- [ **@schedule_id**= ] *schedule_id***OUTPUT**  
+ [ **@schedule_id**=] *id_de_la_planification *** sortie**  
  Identificateur pour la planification. *id_de_la_planification* est une variable de type **int**.  
   
- [ **@originating_server**= ] *server_name*  
+ [ **@originating_server**=] *nom_serveur*  
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -217,7 +214,7 @@ GO
  [Créer des planifications et les attacher à des travaux](http://msdn.microsoft.com/library/079c2984-0052-4a37-a2b8-4ece56e6b6b5)   
  [Planifier un travail](http://msdn.microsoft.com/library/f626390a-a3df-4970-b7a7-a0529e4a109c)   
  [Créer une planification](http://msdn.microsoft.com/library/8c7ef3b3-c06d-4a27-802d-ed329dc86ef3)   
- [L’Agent SQL Server stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
+ [Procédures stockées de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)   
  [sp_add_jobschedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-add-jobschedule-transact-sql.md)   
  [sp_update_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-update-schedule-transact-sql.md)   
  [sp_delete_schedule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-delete-schedule-transact-sql.md)   

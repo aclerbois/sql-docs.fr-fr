@@ -1,16 +1,14 @@
 ---
 title: Exemples SELECT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -33,16 +31,15 @@ helpviewer_keywords:
 - computed sums
 - WHERE clause, SELECT statement
 ms.assetid: 9b9caa3d-e7d0-42e1-b60b-a5572142186c
-caps.latest.revision: 
+caps.latest.revision: 45
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 74028884b9147b2484e65111ed61748cbfb33d52
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: ebd04f177103c8fa105ec6fc1ab2289e1e643f9e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select-examples-transact-sql"></a>Exemples SELECT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -168,7 +165,7 @@ GO
  [!code-sql[Select#SelectExamples24](../../t-sql/queries/codesnippet/tsql/select-examples-transact_22.sql)]  
   
 ## <a name="n-using-the-index-optimizer-hint"></a>N. Utilisation de l'indicateur d'optimiseur INDEX  
- L'exemple suivant illustre deux manières d'utiliser l'indicateur d'optimiseur `INDEX`. Le premier exemple illustre la façon d'obliger l'optimiseur à utiliser un index non-cluster pour extraire des lignes d'une table, tandis que le second exemple génère l'analyse d'une table à l'aide d'un index 0.  
+ L'exemple suivant illustre deux manières d'utiliser l'indicateur d'optimiseur `INDEX`. Le premier exemple illustre la façon d'obliger l'optimiseur à utiliser un index non cluster pour extraire des lignes d'une table, tandis que le second exemple génère l'analyse d'une table à l'aide d'un index 0.  
   
  [!code-sql[Select#SelectExamples45](../../t-sql/queries/codesnippet/tsql/select-examples-transact_23.sql)]  
   

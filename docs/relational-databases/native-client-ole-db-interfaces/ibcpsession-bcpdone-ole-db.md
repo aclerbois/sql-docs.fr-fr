@@ -1,16 +1,15 @@
 ---
 title: IBCPSession::BCPDone (OLE DB) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-interfaces
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IBCPSession::BCPDone (OLE DB)
@@ -18,16 +17,16 @@ apitype: COM
 helpviewer_keywords:
 - BCPDone method
 ms.assetid: 19cd6e55-432a-450e-a15c-54d50eb53dee
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 31b1007f15bd8a853d6d2b05121ee227e4f05204
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 74efcf16e4844b5ee70f6d3ed8226682057969ff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsessionbcpdone-ole-db"></a>IBCPSession::BCPDone (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -69,7 +68,7 @@ insert into fltest values (4, 4, 0xFAD)
   
  Lorsque l'exemple est exécuté, il crée un fichier outfile.dat dans le répertoire du projet. Le fichier outfile.dat contient les données copiées à partir de la table en mode natif (binaire).  
   
- Vous pouvez utiliser BCP pour réinsérer ces données dans la table avec la commande suivante :  
+ Vous pouvez utiliser BCP pour réinsérer ces données dans la table avec la commande suivante :  
   
  **bcp master... fltest dans un fichier outfile.dat - n -T -S** *server*  
   
@@ -471,7 +470,7 @@ void wmain() {
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [IBCPSession &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-ole-db.md)   
+ [IBCPSession &#40;OLE DB&#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-ole-db.md)   
  [Exécution d'opérations de copie en bloc](../../relational-databases/native-client/features/performing-bulk-copy-operations.md)  
   
   

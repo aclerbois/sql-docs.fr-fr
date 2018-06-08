@@ -1,16 +1,14 @@
 ---
 title: IDENT_INCR (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - IDENT_INCR
@@ -22,21 +20,20 @@ helpviewer_keywords:
 - IDENT_INCR function
 - identity columns [SQL Server], IDENT_INCR function
 ms.assetid: e13b491f-4f1f-4cb6-8b63-5084120f98cf
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0c6044ea87f5fc48c32de924333aa0017fcb5e37
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: b6b9ebbb28ee76660685683ecb9d57b8d095260d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identincr-transact-sql"></a>IDENT_INCR (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-  Renvoie la valeur incrémentielle (sous la forme **numeric** (**@@**MAXPRECISION,0)) spécifiée lors de la création d’une colonne d’identité dans une table ou une vue ayant une colonne d’identité.  
+  Renvoie la valeur incrémentielle (sous la forme **numeric** (**@@** MAXPRECISION,0)) spécifiée lors de la création d’une colonne d’identité dans une table ou une vue ayant une colonne d’identité.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

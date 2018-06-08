@@ -1,33 +1,32 @@
 ---
-title: "Propriétés de la requête (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de la requête (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vdtsql.chm:69636
 - vdt.ppg.querydesigner.query
 ms.assetid: 07495669-6ed5-4004-904e-aae1230be5e4
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 310d9c728820be6bc8f31b24cc979dea6ad1f7ec
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: ecdcf360a7aad1b9468367cc706849d4da2f90c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="query-properties-visual-database-tools"></a>Propriétés de la requête (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Ces propriétés apparaissent dans la fenêtre Propriétés quand vous avez une requête ouverte dans le Concepteur de requêtes et de vues. Sauf indication contraire, vous pouvez modifier ces propriétés dans la fenêtre Propriétés.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Ces propriétés apparaissent dans la fenêtre Propriétés lorsque vous avez une requête ouverte dans le Concepteur de requêtes et de vues. Sauf indication contraire, vous pouvez modifier ces propriétés dans la fenêtre Propriétés.  
   
 > [!NOTE]  
 > Les propriétés mentionnées dans cette rubrique sont classées par catégorie et non par ordre alphabétique.  
@@ -82,7 +81,7 @@ Utilisez cette zone pour modifier le nombre de lignes à retourner ou pour spéc
 **Expression**  
 Spécifie le nombre ou le pourcentage de lignes que la requête doit retourner. Si vous affectez à **Pour cent** la valeur Oui, le nombre indique le pourcentage de lignes que la requête doit retourner ; si vous affectez à **Pour cent** la valeur Non, le nombre représente le nombre de lignes à retourner. (S'applique uniquement aux bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] version 7.0 ou ultérieure.)  
   
-**Pourcentage**  
+**Pour cent**  
 Spécifie que la requête doit retourner uniquement les *n* premiers pour cent de lignes dans le jeu de résultats. (S'applique uniquement aux bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] version 7.0 ou ultérieure.)  
   
 **Avec liens**  

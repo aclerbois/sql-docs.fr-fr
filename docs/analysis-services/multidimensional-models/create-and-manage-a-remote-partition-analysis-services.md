@@ -1,34 +1,23 @@
 ---
-title: "Créer et gérer une Partition distante (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- partitions [Analysis Services], remote
-- remote partitions [Analysis Services]
-ms.assetid: 4322b5cb-af07-4e79-8ecb-59e1121a9eb8
-caps.latest.revision: 
-author: Minewiskan
+title: Créer et gérer une Partition distante (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d5793220e57962f801573e8201688dd1c03b9c0e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 32c687ee8bb2d3c7efc323f71652c511c0272c42
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-and-manage-a-remote-partition-analysis-services"></a>Créer et gérer une partition distante (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Lorsque vous partitionnez un groupe de mesures, vous pouvez configurer une base de données secondaire sur une instance distante de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] comme stockage de partition.  
+  Lorsque vous partitionnez un groupe de mesures, vous pouvez configurer une base de données secondaire sur une instance distante de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] comme stockage de partition.  
   
  Les partitions distantes d'un cube (appelé la base de données master) sont stockées dans une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] dédiée sur l'instance distante de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] (appelée base de données secondaire).  
   
@@ -131,7 +120,7 @@ Lorsque vous partitionnez un groupe de mesures, vous pouvez configurer une base 
 5.  Sur le serveur maître : cliquez avec le bouton droit sur le nom du cube dans l’Explorateur de solutions, sélectionnez **Traiter** et traitez entièrement le cube.  
   
 ## <a name="administering-remote-partitions"></a>Administration de partitions distantes  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] prend en charge à la fois le traitement parallèle et séquentiel des partitions distantes. La base de données master, dans laquelle les partitions ont été définies, coordonne les transactions entre toutes les instances qui participent au traitement des partitions d'un cube. Les rapports de traitement sont ensuite envoyés à toutes les instances qui ont traité une partition.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]prend en charge le traitement des partitions distantes des parallèle et séquentiel. La base de données master, dans laquelle les partitions ont été définies, coordonne les transactions entre toutes les instances qui participent au traitement des partitions d'un cube. Les rapports de traitement sont ensuite envoyés à toutes les instances qui ont traité une partition.  
   
  Un cube qui contient des partitions distantes peut être administré avec ses partitions sur une instance unique de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Toutefois, les métadonnées de la partition distante ne peuvent être affichées et mises à jour que sur l'instance de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] où la partition et son cube parent ont été définis. La partition distante ne peut pas être visualisée ni mise à jour sur l’instance distante de [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)].  
   
@@ -139,6 +128,6 @@ Lorsque vous partitionnez un groupe de mesures, vous pouvez configurer une base 
 >  Bien que les bases de données dédiées au stockage des partitions distantes ne soient pas exposées aux ensembles de lignes de schéma, les applications utilisant des objets AMO (Analysis Management Objects) peuvent toujours découvrir une base de données dédiée à l'aide de XML pour la commande Analysis Discover. Toute commande CREATE ou DELETE envoyée directement à une base de données dédiée à l'aide d'un protocole TCP ou client HTTP réussit, mais le serveur retourne un avertissement indiquant que l'action peut endommager cette base de données étroitement gérée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Partitions &#40; Analysis Services - données multidimensionnelles &#41;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)  
+ [Partitions & #40 ; Analysis Services - données multidimensionnelles & #41 ;](../../analysis-services/multidimensional-models-olap-logical-cube-objects/partitions-analysis-services-multidimensional-data.md)  
   
   

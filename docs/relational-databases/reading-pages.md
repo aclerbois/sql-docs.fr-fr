@@ -1,30 +1,28 @@
 ---
 title: Lecture de pages | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - server-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - pages
 ms.assetid: f8da760e-aacb-4661-9f3a-2578d8c11e4e
-caps.latest.revision: 
+caps.latest.revision: 3
 author: pmasl
 ms.author: pelopes
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1561e7c3cea406881dc9722f26a4dfa4cefe0310
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 34fc49117e2d406b58a8dce9731b8fdf89634c52
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reading-pages"></a>Lecture de pages
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -50,10 +48,10 @@ Le moteur de stockage lit les pages d'index en série selon l'ordre des clés. P
 
 Le moteur de stockage utilise les informations de la page d'index intermédiaire au-dessus du niveau des feuilles pour planifier les lectures anticipées en série des pages contenant les clés. Si une requête est effectuée pour toutes les clés de ABC à DEF, le moteur de stockage lit d'abord la page d'index au-dessus de la page feuille. Cependant, elle ne lit pas simplement chaque page de données en séquence de la page 504 à la page 556, la dernière comportant des clés dans la plage désirée. Au lieu de cela, le moteur de stockage analyse la page d'index intermédiaire et génère la liste des pages feuille qui doivent être lues. Le moteur de stockage planifie alors toutes les lectures dans l'ordre des clés. Le moteur de stockage reconnaît également que les pages 504/505 et 527/528 sont contiguës et effectue une seule lecture par ventilation pour extraire les pages adjacentes en une seule opération. Lorsque plusieurs pages doivent être extraites par une opération en série, le moteur de stockage planifie un bloc de lectures à la fois. Lorsqu'un sous-ensemble de ces lectures est terminé, le moteur de stockage planifie le même nombre de nouvelles lectures jusqu'à ce que toutes les lectures nécessaires aient été planifiées.
 
-Le moteur de stockage utilise la pré-extraction pour accélérer la recherche de table de consultation dans les index non-cluster. Les lignes feuille d'un index non-cluster contiennent des pointeurs vers les lignes de données contenant chaque valeur de clé spécifique. Lorsque le moteur de stockage lit les pages feuille de l'index non-cluster, il planifie également les lectures asynchrones des lignes de données dont les pointeurs ont déjà été extraits. Cela permet au moteur de stockage d'extraire des lignes de données de la table sous-jacente avant d'avoir terminé l'analyse de l'index non-cluster. La pré-extraction est utilisée que la table possède ou non un index cluster. SQL Server Enterprise utilise davantage de préextraction que les autres éditions de SQL Server, ce qui permet la lecture anticipée d’autres pages. Le niveau de pré-extraction ne peut être configuré dans aucune édition. Pour plus d’informations sur les index non cluster, consultez [Structures d’index non-cluster](../relational-databases/pages-and-extents-architecture-guide.md).
+Le moteur de stockage utilise la pré-extraction pour accélérer la recherche de table de consultation dans les index non-cluster. Les lignes feuille d'un index non-cluster contiennent des pointeurs vers les lignes de données contenant chaque valeur de clé spécifique. Lorsque le moteur de stockage lit les pages feuille de l'index non-cluster, il planifie également les lectures asynchrones des lignes de données dont les pointeurs ont déjà été extraits. Cela permet au moteur de stockage d'extraire des lignes de données de la table sous-jacente avant d'avoir terminé l'analyse de l'index non-cluster. La pré-extraction est utilisée que la table possède ou non un index cluster. SQL Server Entreprise utilise davantage de préextraction que les autres éditions de SQL Server, ce qui permet la lecture anticipée d’autres pages. Le niveau de pré-extraction ne peut être configuré dans aucune édition. Pour plus d’informations sur les index non cluster, consultez [Structures d’index non-cluster](../relational-databases/pages-and-extents-architecture-guide.md).
 
 ## <a name="advanced-scanning"></a>Analyse avancée
-La fonction d’analyse avancée de SQL Server Enterprise permet le partage d’analyses de tables complètes par plusieurs tâches. Si le plan d’exécution d’une instruction Transact-SQL exige une analyse des pages de données d’une table et le [!INCLUDE[ssDE](../includes/ssde-md.md)] détecte que la table est déjà en cours d’analyse pour un autre plan d’exécution, le [!INCLUDE[ssDE](../includes/ssde-md.md)] joint la deuxième analyse à la première, à l’emplacement actuel de la deuxième analyse. Le [!INCLUDE[ssDE](../includes/ssde-md.md)] lit chaque page une fois et transmet les lignes de chacune des pages aux deux plans d’exécution. Ce processus se poursuit jusqu'à ce que la fin de la table soit atteinte. 
+La fonction d’analyse avancée de SQL Server Entreprise permet le partage d’analyses de tables complètes par plusieurs tâches. Si le plan d’exécution d’une instruction Transact-SQL exige une analyse des pages de données d’une table et le [!INCLUDE[ssDE](../includes/ssde-md.md)] détecte que la table est déjà en cours d’analyse pour un autre plan d’exécution, le [!INCLUDE[ssDE](../includes/ssde-md.md)] joint la deuxième analyse à la première, à l’emplacement actuel de la deuxième analyse. Le [!INCLUDE[ssDE](../includes/ssde-md.md)] lit chaque page une fois et transmet les lignes de chacune des pages aux deux plans d’exécution. Ce processus se poursuit jusqu'à ce que la fin de la table soit atteinte. 
 
 À ce moment, le premier plan d'exécution possède les résultats complets d'une analyse, mais le second plan d'exécution doit encore extraire les pages de données qui ont été lues avant le point où il a rejoint l'analyse en cours. L'analyse du second plan d'exécution revient alors à la première page de données de la table et poursuit l'analyse jusqu'au point de jonction avec la première analyse. Un nombre quelconque d'analyses peuvent ainsi être combinées. Le [!INCLUDE[ssDE](../includes/ssde-md.md)] continue à parcourir les pages de données jusqu’à ce que toutes les analyses soient terminées. Ce mécanisme est aussi appelé « analyse carrousel », ce qui explique pourquoi l'ordre des résultats retournés par une instruction SELECT dépourvue d'une clause ORDER BY ne peut pas être garanti. 
 

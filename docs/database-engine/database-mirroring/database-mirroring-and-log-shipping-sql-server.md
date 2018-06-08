@@ -1,33 +1,32 @@
 ---
-title: "Mise en miroir de bases de données et copie des journaux de transaction (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données et copie des journaux de transaction (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
 - log shipping [SQL Server], database mirroring
 ms.assetid: 53e98134-e274-4dfd-8b72-0cc0fd5c800e
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 092a000b7b942a3b26a7bafedcc65ed2b19944f7
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a459c7231a9e64b3f8fe7e28f1c384cad4a5e31f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-and-log-shipping-sql-server"></a>Mise en miroir de bases de données et copie des journaux de transaction (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une base de données déterminée peut être simultanément mise en miroir et/ou faire l’objet d’une copie des journaux de transaction. Pour choisir l'approche à utiliser, tenez compte des éléments suivants :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une base de données déterminée peut être simultanément mise en miroir et/ou faire l'objet d'une copie des journaux de transaction. Pour choisir l'approche à utiliser, tenez compte des éléments suivants :  
   
 -   De combien de serveurs de destination avez-vous besoin ?  
   

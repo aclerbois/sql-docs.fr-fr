@@ -1,16 +1,14 @@
 ---
 title: ODBC Test | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC test [ODBC]
 - ODBC drivers [ODBC], testing
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - odbcte32.exe [ODBC]
 - testing ODBC drivers [ODBC]
 ms.assetid: 7f13894c-5697-436c-be3d-fe16e1a02325
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 3db72d4424c197589f5b6f4ba07c54bf68070e9d
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+manager: craigg
+ms.openlocfilehash: 04014b1017b18ca33fee1c4f1c80831fce3272ad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-test"></a>Test d’ODBC
 Test de Microsoft® ODBC est une application compatible ODBC que vous pouvez utiliser pour tester les pilotes ODBC et le Gestionnaire de pilotes ODBC. ODBC 3.51 inclut ANSI et Unicode activé les versions de Test d’ODBC. Les fichiers correspondants sont les suivantes :  

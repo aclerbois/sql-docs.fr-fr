@@ -1,39 +1,23 @@
 ---
-title: "Parcourir un modèle à l’aide de la visionneuse de série Microsoft Time | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data mining [Analysis Services], continuous columns
-- mining model content, viewing
-- Microsoft Time Series Viewer
-- charts [Analysis Services]
-- Time Series Viewer [Analysis Services]
-- continuous columns
-- regression algorithms [Analysis Services]
-ms.assetid: a77c16cd-1cd0-4fc5-afeb-d1dab30d1e25
-caps.latest.revision: 
-author: Minewiskan
+title: Parcourir un modèle à l’aide de la visionneuse de série Microsoft Time | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6eaa320911fbba0f46472750bde9293b36430b46
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: fd57ae140adee0909c0f00647a334bd62f26c170
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="browse-a-model-using-the-microsoft-time-series-viewer"></a>Explorer un modèle à l'aide de la visionneuse de l'algorithme MTS (Microsoft Time Series)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La Visionneuse de l’algorithme MTS ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series) dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] affiche les modèles d’exploration de données qui sont générés à l’aide de l’algorithme MTS ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series). L’algorithme MTS ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series) est un algorithme de régression qui crée des modèles d’exploration de données pour la prédiction des colonnes continues, telles que les ventes de produits, dans un scénario de prédiction. Ces modèles de série chronologiques peuvent inclure des informations basées sur des algorithmes différents :  
+  La Visionneuse de l’algorithme MTS ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series) dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] affiche les modèles d’exploration de données qui sont générés à l’aide de l’algorithme MTS ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series). L’algorithme MTS ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series) est un algorithme de régression qui crée des modèles d’exploration de données pour la prédiction des colonnes continues, telles que les ventes de produits, dans un scénario de prédiction. Ces modèles de série chronologiques peuvent inclure des informations basées sur des algorithmes différents :  
   
 -   L'algorithme ARTxp, qui est optimisé pour les prédictions à court terme.  
   

@@ -1,32 +1,30 @@
 ---
 title: Fichiers de configuration de Reporting Services | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deploying [Reporting Services], configuration files
 - configuration options [Reporting Services]
 - modifying configuration files
 - configuration files [Reporting Services]
 ms.assetid: 21e5c32f-ad67-4917-b55a-8e21bd64f5a6
-caps.latest.revision: "52"
+caps.latest.revision: 52
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d380872d275b3cea292b331978a49e9a17eae58c
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 1ce4e8cb5b6bc1e1bf617d1abbd4b5f1a0afcf1a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-configuration-files"></a>Fichiers de configuration de Reporting Services
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] stocke les informations sur les composants dans le Registre et dans des fichiers de configuration qui sont copiés dans le système de fichiers au cours de l'installation. Les fichiers de configuration contiennent une combinaison de valeurs destinées à un usage interne uniquement et de valeurs définies par l'utilisateur. Les valeurs définies par l'utilisateur sont spécifiées par le biais du programme d'installation, des outils de configuration, des utilitaires de ligne de commande ou en modifiant manuellement les fichiers de configuration.  

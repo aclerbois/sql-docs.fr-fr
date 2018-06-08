@@ -1,32 +1,29 @@
 ---
-title: "Spécifier les chemins d’accès et les indicateurs d’optimisation des index XML sélectifs | Microsoft Docs"
-ms.custom: 
+title: Spécifier les chemins d’accès et les indicateurs d’optimisation des index XML sélectifs | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 486ee339-165b-4aeb-b760-d2ba023d7d0a
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf2e9bf99c208efeb26fe0a2b87b6a7bab964dd2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 18340956a0378a20a4ff5f9c92a47a477d5b3683
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-paths-and-optimization-hints-for-selective-xml-indexes"></a>Spécifier les chemins d'accès et les indicateurs d'optimisation des index XML sélectifs
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cette rubrique explique comment spécifier les chemins d'accès de nœud à indexer et les indicateurs d'optimisation pour l'indexation lorsque vous créez ou modifiez des index XML sélectifs.  
+  Cette rubrique explique comment spécifier les chemins d'accès de nœud à indexer et les indicateurs d'optimisation pour l'indexation lorsque vous créez ou modifiez des index XML sélectifs.  
   
  Vous spécifiez les chemins d'accès de nœud et les indicateurs d'optimisation en même temps dans l'une des instructions suivantes :  
   

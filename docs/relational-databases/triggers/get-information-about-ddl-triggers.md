@@ -1,36 +1,35 @@
 ---
-title: "Obtenir des informations sur les déclencheurs DDL | Microsoft Docs"
-ms.custom: 
+title: Obtenir des informations sur les déclencheurs DDL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-ddl
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - metadata [SQL Server], triggers
 - status information [SQL Server], DDL triggers
 - DDL triggers, metadata
 ms.assetid: 462becea-292a-4b9e-bb98-533e89733911
-caps.latest.revision: 
+caps.latest.revision: 31
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ae01a87b0697165fe9ed66d80645f87fc8a5f19
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 31f16293c6917d082b5230df9b7d06cf52e6027d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-information-about-ddl-triggers"></a>Obtenir des informations sur les déclencheurs DDL
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Les affichages catalogue répertoriés dans cette section permettent d'obtenir des informations sur les déclencheurs DDL.  
+  Les affichages catalogue répertoriés dans cette section permettent d'obtenir des informations sur les déclencheurs DDL.  
   
  **Pour obtenir des informations sur les événements ou groupes d'événements sur lesquels un déclencheur DDL peut être activé.**  
   

@@ -1,31 +1,30 @@
 ---
-title: "Forcer le basculement pour le groupe de disponibilité de SQL Server"
-description: "Forcer le basculement pour le groupe de disponibilité avec le type de cluster None"
-services: 
+title: Forcer le basculement SQL Server pour un groupe de disponibilité
+description: Forcer le basculement pour un groupe de disponibilité avec le type de cluster AUCUN
+services: ''
 author: MikeRayMSFT
-ms.service: 
 ms.topic: include
 ms.date: 02/05/2018
 ms.author: mikeray
 ms.custom: include file
-ms.openlocfilehash: 10a2af2cb5bc9e98605a3ee988439e3c3be60c1e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
-ms.translationtype: MT
+ms.openlocfilehash: f5655e73481d830c848aea34c4a4f49613be0913
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
-Chaque groupe de disponibilité possède uniquement un réplica principal. Le réplica principal autorise les opérations de lecture et d’écriture. Pour modifier le réplica est principal, vous pouvez basculer. Dans un groupe de disponibilité pour la haute disponibilité, le Gestionnaire du cluster automatise le processus de basculement. Dans un groupe de disponibilité avec le type de cluster NONE, le processus de basculement est manuel. 
+Chaque groupe de disponibilité a un seul réplica principal. Le réplica principal autorise les opérations de lecture et d’écriture. Pour changer de réplica principal, vous pouvez effectuer un basculement. Dans un groupe de disponibilité pour la haute disponibilité, le gestionnaire de cluster automatise le processus de basculement. Dans un groupe de disponibilité avec le type de cluster AUCUN, le processus de basculement est manuel. 
 
-Il existe deux façons de basculer sur le réplica principal dans un groupe de disponibilité avec le type de cluster NONE :
+Il existe deux façons de basculer le réplica principal dans un groupe de disponibilité avec le type de cluster AUCUN :
 
-- Basculement manuel forcé avec une perte de données
+- Basculement manuel forcé avec perte de données
 - Basculement manuel sans perte de données
 
-### <a name="forced-manual-failover-with-data-loss"></a>Basculement manuel forcé avec une perte de données
+### <a name="forced-manual-failover-with-data-loss"></a>Basculement manuel forcé avec perte de données
 
-Utilisez cette méthode lorsque le réplica principal n’est pas disponible et ne peut pas être récupéré. 
+Utilisez cette méthode quand le réplica principal n’est pas disponible et ne peut pas être récupéré. 
 
-Pour forcer le basculement avec perte de données, connectez-vous à l’instance de SQL Server qui héberge le réplica secondaire cible et l’exécuter :
+Pour forcer le basculement avec perte de données, connectez-vous à l’instance de SQL Server qui héberge le réplica secondaire cible et exécutez la commande suivante :
 
 ```SQL
 ALTER AVAILABILITY GROUP [ag1] FORCE_FAILOVER_ALLOW_DATA_LOSS;
@@ -33,11 +32,11 @@ ALTER AVAILABILITY GROUP [ag1] FORCE_FAILOVER_ALLOW_DATA_LOSS;
 
 ### <a name="manual-failover-without-data-loss"></a>Basculement manuel sans perte de données
 
-Utilisez cette méthode quand le réplica principal est disponible, mais que vous devez provisoirement ou définitivement changer la configuration et l’instance qui héberge le réplica principal. Avant d’émettre le basculement manuel, vérifiez que le réplica secondaire cible est à jour afin d’éviter de perdre des données. 
+Utilisez cette méthode quand le réplica principal est disponible, mais que vous devez provisoirement ou définitivement changer la configuration et l’instance qui héberge le réplica principal. Avant d’effectuer le basculement manuel, vérifiez que le réplica secondaire cible est à jour afin d’éviter toute perte de données. 
 
-Pour basculer manuellement sans perte de données :
+Pour effectuer un basculement manuel sans perte de données :
 
-1. Le réplica secondaire cible `SYNCHRONOUS_COMMIT`.
+1. Associez au réplica secondaire cible le mode `SYNCHRONOUS_COMMIT`.
 
    ```SQL
    ALTER AVAILABILITY GROUP [ag1] 
@@ -45,7 +44,7 @@ Pour basculer manuellement sans perte de données :
         WITH (AVAILABILITY_MODE = SYNCHRONOUS_COMMIT);
    ```
 
-2. Exécutez la requête suivante pour identifier que les transactions actives sont validées dans le réplica principal et au moins un réplica secondaire synchrone : 
+2. Exécutez la requête suivante pour vérifier que les transactions actives sont validées sur le réplica principal et sur au moins un réplica secondaire synchrone : 
 
    ```SQL
    SELECT ag.name, 
@@ -60,18 +59,18 @@ Pour basculer manuellement sans perte de données :
 
    Le réplica secondaire est synchronisé quand `synchronization_state_desc` a pour valeur `SYNCHRONIZED`.
 
-3. Mise à jour `REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT` à 1.
+3. Affectez la valeur 1 à `REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT`.
 
-   Le script suivant définit `REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT` sur 1 pour un groupe de disponibilité nommé `ag1`. Avant d’exécuter le script suivant, remplacez `ag1` par le nom de votre groupe de disponibilité :
+   Le script suivant affecte la valeur 1 à `REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT` sur un groupe de disponibilité nommé `ag1`. Avant d’exécuter le script suivant, remplacez `ag1` par le nom de votre groupe de disponibilité :
 
    ```SQL
    ALTER AVAILABILITY GROUP [ag1] 
         SET REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT = 1;
    ```
 
-   Ce paramètre garantit que chaque transaction active est validée dans le réplica principal et au moins un réplica secondaire synchrone. 
+   Ce paramétrage garantit que chaque transaction active est validée sur le réplica principal et sur au moins un réplica secondaire synchrone. 
 
-4. Rétrograder le réplica principal vers un réplica secondaire. Une fois le réplica principal est rétrogradé, il est en lecture seule. Exécutez cette commande sur l’instance de SQL Server qui héberge le réplica principal pour mettre à jour le rôle à `SECONDARY`:
+4. Rétrogradez le réplica principal en réplica secondaire. Une fois le réplica principal rétrogradé, il est en lecture seule. Exécutez cette commande sur l’instance de SQL Server hébergeant le réplica principal pour mettre à jour le rôle avec la valeur `SECONDARY` :
 
    ```SQL
    ALTER AVAILABILITY GROUP [ag1] 
@@ -85,4 +84,4 @@ Pour basculer manuellement sans perte de données :
    ```  
 
    > [!NOTE] 
-   > Pour supprimer un groupe de disponibilité, utilisez [DROP AVAILABILITY GROUP](https://docs.microsoft.com/en-us/sql/t-sql/statements/drop-availability-group-transact-sql). Pour un groupe de disponibilité créé avec un cluster de type NONE ou externe, la commande doit être exécutée sur tous les réplicas qui font partie de la disponibilité.
+   > Pour supprimer un groupe de disponibilité, exécutez [DROP AVAILABILITY GROUP](https://docs.microsoft.com/en-us/sql/t-sql/statements/drop-availability-group-transact-sql). Pour un groupe de disponibilité créé avec le type de cluster AUCUN ou EXTERNE, la commande doit être exécutée sur tous les réplicas qui font partie du groupe de disponibilité.

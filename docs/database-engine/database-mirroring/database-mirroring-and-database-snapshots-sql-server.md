@@ -1,34 +1,33 @@
 ---
-title: "Mise en miroir et instantanés de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir et instantanés de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database mirroring [SQL Server], interoperability
 - snapshots [SQL Server database snapshots], database mirroring
 - database snapshots [SQL Server], database mirroring
 ms.assetid: 0bf1be90-7ce4-484c-aaa7-f8a782f57c5f
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: db1c0902b2de0a761e1a7558e9bbb71c946afe5b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: dd4df9ce94888450c30bd139207c3e72059559d1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-and-database-snapshots-sql-server"></a>Mise en miroir et instantanés de bases de données (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une base de données miroir maintenue à des fins de disponibilité peut être utilisée dans le but de décharger la création de rapports. Pour utiliser une base de données miroir à des fins de création de rapports, créez un instantané de base de données sur la base de données miroir et redirigez les requêtes de connexions clientes vers l'instantané le plus récent. Un instantané de base de données est une image – statique, en lecture seule et cohérente par rapport aux transactions – de sa base de données source telle qu'elle existait au moment de la création de l'instantané. Pour créer un instantané de base de données dans une base de données miroir, la base de données doit être dans un état de mise en miroir synchronisée.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une base de données miroir maintenue à des fins de disponibilité peut être utilisée dans le but de décharger la création de rapports. Pour utiliser une base de données miroir à des fins de création de rapports, créez un instantané de base de données sur la base de données miroir et redirigez les requêtes de connexions clientes vers l'instantané le plus récent. Un instantané de base de données est une image – statique, en lecture seule et cohérente par rapport aux transactions – de sa base de données source telle qu'elle existait au moment de la création de l'instantané. Pour créer un instantané de base de données dans une base de données miroir, la base de données doit être dans un état de mise en miroir synchronisée.  
   
  Contrairement à la base de données miroir, un instantané de base de données est accessible à tous les clients. Tant que le serveur miroir communique avec le serveur principal, vous pouvez demander aux clients sources des rapports de se connecter à un instantané. Notez qu'un instantané de base de données étant statique, les nouvelles données ne sont pas disponibles. Pour que les utilisateurs puissent accéder aux données relativement récentes, un instantané de base de données doit être créé régulièrement et les applications doivent diriger les connexions clientes entrantes vers ce nouvel instantané.  
   

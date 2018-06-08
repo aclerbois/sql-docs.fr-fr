@@ -1,34 +1,30 @@
 ---
-title: "Audit Add Role, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Add Role, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Add Role event class
 ms.assetid: 4ea55922-608c-4db2-8b3f-873862755bba
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2778e11c0ab2cc417dce4fd13d05426a6de340b1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 17fa52a716935a311d6ac93f3f08d5dacf95d31b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-add-role-event-class"></a>Audit Add Role (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Add Role** se produit quand un rôle de base de données est ajouté ou supprimé dans une base de données. Cette classe d’événements est utilisée par les procédures stockées **sp_addrole** et **sp_droprole** .  
+  La classe d’événements **Audit Add Role** se produit quand un rôle de base de données est ajouté ou supprimé dans une base de données. Cette classe d’événements est utilisée par les procédures stockées **sp_addrole** et **sp_droprole** .  
   
  Il est possible qu’elle soit retirée dans une version ultérieure de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Nous vous recommandons d’utiliser la casse d’événements **Audit Database Principal Management** à la place.  
   

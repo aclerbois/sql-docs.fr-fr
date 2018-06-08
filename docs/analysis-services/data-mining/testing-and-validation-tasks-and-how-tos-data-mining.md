@@ -1,38 +1,23 @@
 ---
-title: "Test et des tâches de Validation et des procédures (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Mining Accuracy Chart [Analysis Services]
-- predictive modeling [Analysis Services]
-- mining structures [Analysis Services], predictive modeling
-- Mining Accuracy Chart [Analysis Services], how-to topics
-- mining models [Analysis Services], predictive modeling
-- predictive accuracy [data mining]
-ms.assetid: 3a0b4dc9-5b64-4be1-aa5f-6ff26f43dbf8
-caps.latest.revision: 
-author: Minewiskan
+title: Test et des tâches de Validation et des procédures (exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 31dcf6975fb2ed24e2957f1d9171473b01da891a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: cbbfc1a1d37c069a49a090fbef1006e80d2bf998
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="testing-and-validation-tasks-and-how-tos-data-mining"></a>Tâches de test et validation et procédures (exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous pouvez utiliser l’onglet **Graphique d’analyse de précision de l’exploration de données** du Concepteur d’exploration de données dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] pour comparer la précision prédictive des modèles d’exploration de données dans la structure d’exploration de données.  
+  Vous pouvez utiliser l’onglet **Graphique d’analyse de précision de l’exploration de données** du Concepteur d’exploration de données dans [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] pour comparer la précision prédictive des modèles d’exploration de données dans la structure d’exploration de données.  
   
  Vous pouvez créer quatre types de graphiques :  
   

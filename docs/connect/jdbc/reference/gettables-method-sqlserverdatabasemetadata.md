@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTables (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTables (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getTables
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getTables
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: a7514673-3457-4541-9560-28a8284ad9e3
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c469b56d30e93ba96378df87490be5cea83d8c2a
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 64b6559137dca42bf2602b19aaa92c754dc255be
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettables-method-sqlserverdatabasemetadata"></a>Méthode getTables (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -42,11 +41,11 @@ public java.sql.ResultSet getTables(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  A **chaîne** qui contient le nom du catalogue. La spécification d'une valeur Null pour ce paramètre indique que le nom du catalogue n'a pas besoin d'être utilisé.  
   
- *schéma*  
+ *schema*  
   
  A **chaîne** qui contient le modèle de nom de schéma. La spécification d'une valeur Null pour ce paramètre indique que le nom du schéma n'a pas besoin d'être utilisé.  
   
@@ -54,7 +53,7 @@ public java.sql.ResultSet getTables(java.lang.String catalog,
   
  A **chaîne** qui contient le modèle de nom de table.  
   
- *types de*  
+ *Types de*  
   
  Tableau de chaînes qui contient les types de tables à inclure. Null indique que tous les types de tables doivent être inclus.  
   
@@ -71,16 +70,16 @@ public java.sql.ResultSet getTables(java.lang.String catalog,
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|TABLE_CAT|**Chaîne**|Le nom de la base de données dans laquelle réside la table spécifiée.|  
-|TABLE_SCHEM|**Chaîne**|Nom du schéma de table.|  
-|TABLE_NAME|**Chaîne**|Le nom de la table.|  
-|TABLE_TYPE|**Chaîne**|Le type de table.|  
-|REMARKS|**Chaîne**|Description de la table.<br /><br /> **Remarque :** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] ne retourne pas une valeur pour cette colonne.|  
-|TYPE_CAT|**Chaîne**|Non pris en charge par le pilote JDBC.|  
-|TYPE_SCHEM|**Chaîne**|Non pris en charge par le pilote JDBC.|  
-|TYPE_NAME|**Chaîne**|Non pris en charge par le pilote JDBC.|  
-|SELF_REFERENCING_COL_NAME|**Chaîne**|Non pris en charge par le pilote JDBC.|  
-|REF_GENERATION|**Chaîne**|Non pris en charge par le pilote JDBC.|  
+|TABLE_CAT|**String**|Le nom de la base de données dans laquelle réside la table spécifiée.|  
+|TABLE_SCHEM|**String**|Nom du schéma de table.|  
+|TABLE_NAME|**String**|Le nom de la table.|  
+|TABLE_TYPE|**String**|Le type de table.|  
+|REMARKS|**String**|Description de la table.<br /><br /> **Remarque :** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] ne retourne pas une valeur pour cette colonne.  |  
+|TYPE_CAT|**String**|Non pris en charge par le pilote JDBC.|  
+|TYPE_SCHEM|**String**|Non pris en charge par le pilote JDBC.|  
+|TYPE_NAME|**String**|Non pris en charge par le pilote JDBC.|  
+|SELF_REFERENCING_COL_NAME|**String**|Non pris en charge par le pilote JDBC.|  
+|REF_GENERATION|**String**|Non pris en charge par le pilote JDBC.|  
   
 > [!NOTE]  
 >  Pour plus d’informations sur les données retournées par la méthode getTables, consultez « sp_tables (Transact-SQL) » dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] la documentation en ligne.  

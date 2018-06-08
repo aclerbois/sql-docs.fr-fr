@@ -1,74 +1,19 @@
 ---
-title: "Propriétés d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- ClusterCount property
-- AllowedProvidersInOpenRowset property
-- MinimumSeriesValue property
-- ScoreMethod property
-- MinimumImportance property
-- ModellingCardinality property
-- BrentTolerance property
-- ComplexityPenalty property
-- MaximumItemsetCount property
-- MinimumSupport property
-- AllowSessionMiningModels property
-- HoldoutPercentage property
-- ClusterCountPrior property
-- MaximumSequenceStates property
-- OptimizedPredictionCount property
-- data mining [Analysis Services], properties
-- MaximumStates property
-- MaximumContinuousInputAttributes property
-- MaximumOutputAttributes property
-- AllowAdHocOpenRowsetQueries property
-- Enabled property
-- HistoricModelGap property
-- SampleSize property
-- MaximumInputAttributes property
-- PeriodicityHint property
-- MissingValueSubstitution property
-- SplitMethod property
-- ForceRegressor property
-- MaximumBucketsForContinuousSplit property
-- MaxConcurrentPredictionQueries property
-- MinimumItemsetSize property
-- AcyclicGraph property
-- HoldoutMethod property
-- StoppingTolerance property
-- properties [data mining]
-- AutoDetectPeriodicity property
-- HoldoutTolerance property
-- MinimumLeafCases property
-- HoldoutSeed property
-- MinimumClusterCases property
-- ClusterCountDeviation property
-- MinimumDependencyProbability property
-- ClusteringMethod property
-- MaximumItemsetSize property
-- HiddenNodeRatio property
-- MaximumSeriesValue property
-ms.assetid: 9bc9abed-180a-4bd8-b2eb-89c62fa88110
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés d’exploration de données | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dbe16e3f40b82ab59e7bb74e411c2bc6cc22d97e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d9b446530ac135cffacb96b45d8f7d9fc15c235d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-properties"></a>Propriétés de l'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

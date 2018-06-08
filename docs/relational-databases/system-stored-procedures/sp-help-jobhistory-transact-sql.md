@@ -1,16 +1,14 @@
 ---
-title: sp_help_jobhistory (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_help_jobhistory (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_jobhistory_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_jobhistory
 ms.assetid: a944d44e-411b-4735-8ce4-73888d4262d7
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: de1836ee52354e96341386db5dfd33297f2d9be6
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e001e9e0ea0dd7dfdbe64a788db465125b04e414
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpjobhistory-transact-sql"></a>sp_help_jobhistory (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,37 +57,37 @@ sp_help_jobhistory [ [ @job_id = ] job_id ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id=** ] *job_id*  
+ [  **@job_id=** ] *job_id*  
  Numéro d’identification du travail. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name=** ] **'***job_name***'**  
+ [  **@job_name=** ] **'***job_name***'**  
  Nom du travail. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ **@step_id=** ] *step_id*  
+ [  **@step_id=** ] *id_de_l*  
  Le numéro d’identification de l’étape. *l’argument id_étape* est **int**, avec NULL comme valeur par défaut.  
   
- [ **@sql_message_id=** ] *sql_message_id*  
+ [  **@sql_message_id=** ] *id_du_message_sql*  
  Numéro d'identification du message d'erreur retourné par Microsoft SQL Server lors de l'exécution du travail. *id_du_message_sql* est **int**, avec NULL comme valeur par défaut.  
   
- [ **@sql_severity=** ] *sql_severity*  
+ [  **@sql_severity=** ] *gravité_sql*  
  Niveau de gravité du message d'erreur renvoyé par SQL Server lors de l'exécution du travail. *gravité_sql* est **int**, avec NULL comme valeur par défaut.  
   
- [ **@start_run_date=** ] *start_run_date*  
+ [  **@start_run_date=** ] *date_de_début_d*  
  Date de début de l'exécution du travail. *date_de_début_d*est **int**, avec NULL comme valeur par défaut. *date_de_début_d* doit respecter le format AAAAMMJJ, où AAAA représente une année à quatre chiffres, MM est un nom de deux chiffres du mois et DD est un nom de jour.  
   
- [ **@end_run_date=** ] *end_run_date*  
+ [  **@end_run_date=** ] *ce paramètre*  
  Date de fin de l'exécution du travail. *Ce paramètre* est **int**, avec NULL comme valeur par défaut. *Ce paramètre*doit respecter le format AAAAMMJJ, où AAAA représente une année à quatre chiffres, MM est un nom de deux chiffres du mois et DD est un nom de jour.  
   
- [ **@start_run_time=** ] *start_run_time*  
+ [  **@start_run_time=** ] *heure_de_début_d*  
  Heure du début d'exécution du travail. *heure_de_début_d* est **int**, avec NULL comme valeur par défaut. *heure_de_début_d*doit respecter le format HHMMSS, où HH est une heure de la journée, MM est une minute de deux caractères de la journée et SS est une seconde de deux caractères de la journée.  
   
- [ **@end_run_time=** ] *end_run_time*  
+ [  **@end_run_time=** ] *heure_de_fin_d*  
  Heure de fin d'exécution du travail. *heure_de_fin_d* est **int**, avec NULL comme valeur par défaut. *heure_de_fin_d*doit respecter le format HHMMSS, où HH est une heure de la journée, MM est une minute de deux caractères de la journée et SS est une seconde de deux caractères de la journée.  
   
- [ **@minimum_run_duration=** ] *minimum_run_duration*  
+ [  **@minimum_run_duration=** ] *durée_d*  
  Durée minimale pour l'exécution du travail. *durée_d* est **int**, avec NULL comme valeur par défaut. *durée_d*doit respecter le format HHMMSS, où HH est une heure de la journée, MM est une minute de deux caractères de la journée et SS est une seconde de deux caractères de la journée.  
   
- [ **@run_status=** ] *run_status*  
+ [  **@run_status=** ] *état_de_l*  
  État de l'exécution du travail. *état_de_l* est **int**, avec NULL comme valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
@@ -102,13 +99,13 @@ sp_help_jobhistory [ [ @job_id = ] job_id ]
 |**4**|Messages en cours|  
 |**5**|Unknown|  
   
- [ **@minimum_retries=** ] *minimum_retries*  
+ [  **@minimum_retries=** ] *minimum_de_reprises*  
  Nombre minimal de tentatives d'exécution d'un travail. *minimum_de_reprises* est **int**, avec NULL comme valeur par défaut.  
   
- [ **@oldest_first=** ] *oldest_first*  
+ [  **@oldest_first=** ] *le_plus_ancien_en_premier*  
  Indique s'il faut présenter en premier le résultat des travaux les plus anciens. *le_plus_ancien_en_premier* est **int**, avec une valeur par défaut **0**, laquelle présente tout d’abord les travaux les plus récents. **1** présente tout d’abord les travaux les plus anciens.  
   
- [ **@server=** ] **'***server***'**  
+ [  **@server=** ] **'***server***'**  
  Le nom du serveur sur lequel le travail a été effectué. *serveur* est **nvarchar (30)**, avec NULL comme valeur par défaut.  
   
  [  **@mode=** ] **'***mode***'**  
@@ -128,7 +125,7 @@ sp_help_jobhistory [ [ @job_id = ] job_id ]
 |**step_id**|**int**|Numéro d’identification de l’étape (seront **0** pour un historique des travaux).|  
 |**step_name**|**sysname**|Nom de l'étape (NULL pour un historique des travaux).|  
 |**sql_message_id**|**int**|Pour une étape [!INCLUDE[tsql](../../includes/tsql-md.md)], représente le numéro d'erreur [!INCLUDE[tsql](../../includes/tsql-md.md)] le plus récent affiché pendant l'exécution de la commande.|  
-|**sql_severity**|**int**|Pour une étape [!INCLUDE[tsql](../../includes/tsql-md.md)], représente le degré de gravité [!INCLUDE[tsql](../../includes/tsql-md.md)] le plus élevé obtenu pendant l'exécution de la commande.|  
+|**gravité_sql**|**int**|Pour une étape [!INCLUDE[tsql](../../includes/tsql-md.md)], représente le degré de gravité [!INCLUDE[tsql](../../includes/tsql-md.md)] le plus élevé obtenu pendant l'exécution de la commande.|  
 |**message**|**nvarchar(1024)**|Message d'historique d'étape ou de travail.|  
 |**run_status**|**int**|Résultat du travail ou de l'étape.|  
 |**run_date**|**int**|Date de début d'exécution du travail ou de l'étape.|  

@@ -1,0 +1,1 @@
+Adventure Works Cycles est une société de fabrication fictive utilisée pour illustrer des scénarios et des concepts de base de données.

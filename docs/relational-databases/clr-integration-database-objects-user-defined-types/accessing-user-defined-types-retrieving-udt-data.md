@@ -1,15 +1,14 @@
 ---
-title: "Extraction de données UDT | Documents Microsoft"
-ms.custom: 
+title: Extraction de données UDT | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - VB
@@ -24,20 +23,19 @@ helpviewer_keywords:
 - user-defined types [CLR integration], ADO.NET
 - bytes [CLR integration]
 ms.assetid: 6a98ac8c-0e69-4c03-83a4-2062cb782049
-caps.latest.revision: 
+caps.latest.revision: 17
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf8ac790f91779407bb60fa1f3cfe8f675a7e8f0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 61e40a31c7a4ef0b7e00e5af235d033e6fe9d7a8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="accessing-user-defined-types---retrieving-udt-data"></a>L’accès à des Types définis par l’utilisateur - extraction de données UDT
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Pour créer un type défini par l'utilisateur (UDT) sur le client, l'assembly enregistré comme UDT dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être accessible par l'application cliente. L'assembly de type défini par l'utilisateur (UDT) peut être placé dans le même répertoire que l'application, ou dans le Global Assembly Cache (GAC). Vous pouvez également définir une référence à l'assembly dans votre projet.  
+  Pour créer un type défini par l'utilisateur (UDT) sur le client, l'assembly enregistré comme UDT dans une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit être accessible par l'application cliente. L'assembly de type défini par l'utilisateur (UDT) peut être placé dans le même répertoire que l'application, ou dans le Global Assembly Cache (GAC). Vous pouvez également définir une référence à l'assembly dans votre projet.  
   
 ## <a name="requirements-for-using-udts-in-adonet"></a>Conditions requises pour utiliser les UDT dans ADO.NET  
  L'assembly chargé dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et l'assembly sur le client doivent être compatibles pour que l'UDT puisse être créé sur le client. Pour les UDT définis avec la **natif** format de sérialisation, les assemblys doivent être structurellement compatibles. Pour les assemblys définis avec la **UserDefined** format, l’assembly doit être disponible sur le client.  

@@ -1,29 +1,22 @@
 ---
-title: "État d’intégrité analyse Appliance (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 91132e3c-3137-4670-adaa-8a7b234fb8d2
-caps.latest.revision: "12"
-ms.openlocfilehash: d83c3d35c4cf65ebf714b44bc9db7db36b11f818
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Surveiller l’état appliance - système de plateforme Analytique
+description: Comment surveiller l’état d’un appareil de système de plateforme Analytique à l’aide de la Console d’administration, ou en interrogeant directement les vues de gestion dynamique Parallel Data Warehouse.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: d8616d291dcaa8afadc01c9bd237903ca6c13573
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="monitor-appliance-health-state"></a>État de contrôle d’intégrité de l’analyse
-Cette rubrique explique comment surveiller l’état d’un appareil de SQL Server PDW à l’aide de la Console d’administration, ou en interrogeant directement les vues de gestion dynamique SQL Server PDW.  
+Cet article explique comment surveiller l’état d’un appareil de système de plateforme Analytique à l’aide de la Console d’administration, ou en interrogeant directement les vues de gestion dynamique Parallel Data Warehouse. 
   
 ## <a name="to-monitor-the-appliance-state"></a>Pour surveiller l’état de l’équipement  
 Un administrateur système peut utiliser la Console d’administration ou les vues de gestion dynamique (DMV) SQL Server PDW pour récupérer la hiérarchie complète des nœuds, les composants et les logiciels. Le diagramme suivant donne une présentation générale des composants SQL Server PDW surveille.  
@@ -98,5 +91,5 @@ Le **[update_time]** colonne indique la dernière fois que le composant a été 
   
 ## <a name="see-also"></a>Voir aussi  
 <!-- MISSING LINKS [Common Metadata Query Examples &#40;SQL Server PDW&#41;](../sqlpdw/common-metadata-query-examples-sql-server-pdw.md)  -->  
-[Surveillance de l’appliance &#40; Système de plateforme Analytique &#41;](appliance-monitoring.md)  
+[Surveillance de l’appliance &#40;Analytique plate-forme système&#41;](appliance-monitoring.md)  
   

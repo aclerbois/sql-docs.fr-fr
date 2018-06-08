@@ -1,31 +1,26 @@
 ---
-title: "Recommandations sur les index columnstore dans l’Assistant Paramétrage du moteur de base de données | Microsoft Docs"
-ms.custom: 
+title: Recommandations sur les index columnstore dans l’Assistant Paramétrage du moteur de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 01/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Database Engine Tuning Advisor, columnstore index
 - Database Engine Tuning Advisor, columnstore and rowstore indexes
 ms.assetid: 9fba1139-82cb-4244-a41f-4337a7d0c132
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 887b3134a4c8dee933e46b9501e7622f678325fc
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d4796adbefa6e4e2f89cee36c9ddee2fe05db00d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="columnstore-index-recommendations-in-database-engine-tuning-advisor-dta"></a>Recommandations sur les index columnstore dans l’Assistant Paramétrage du moteur de base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -56,7 +51,7 @@ ms.lasthandoff: 01/18/2018
   
   ## <a name="how-to-enable-columnstore-index-recommendations-in-dtaexe-utility"></a>Comment activer les recommandations d’index columnstore dans l’utilitaire dta.exe
 
-Pour activer les recommandations d’index columnstore quand vous utilisez l’utilitaire en ligne de commande dta.exe, utilisez le paramètre de ligne de commande **-fc**.
+Pour activer les recommandations d’index columnstore quand vous utilisez l’utilitaire en ligne de commande dta.exe, utilisez le paramètre de ligne de commande  **-fc**.
 
 Pour plus d’informations sur l’utilitaire de ligne de commande dta.exe, consultez [Utilitaire dta](../../tools/dta/dta-utility.md).
 

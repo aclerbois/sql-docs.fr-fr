@@ -1,31 +1,21 @@
 ---
-title: "Les instructions T-SQL Analytique plateforme système Parallel Data Warehouse | Documents Microsoft"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Instructions Transact-SQL (T-SQL) pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW)."
-documentationcenter: NA
-editor: 
-ms.assetid: 0abc5934-1e67-491a-b7d7-8b520d1ae98e
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: data-services
-ms.date: 12/15/2016
-ms.openlocfilehash: 54613765219912b7ad0db5d4dfd36478f6e5e3b3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Instructions T-SQL - Parallel Data Warehouse | Documents Microsoft
+description: Instructions T-SQL pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 86bf74778ab78fc42ad1151a341e5c2d232da7aa
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="t-sql-topics"></a>Rubriques de T-SQL
+# <a name="t-sql-statements-for-parallel-data-warehouse"></a>Instructions T-SQL pour Parallel Data Warehouse
 Instructions Transact-SQL (T-SQL) pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
 
 ## <a name="data-definition-language-ddl-statements"></a>Instructions de langage de définition (DDL) de données
@@ -82,16 +72,16 @@ Instructions Transact-SQL (T-SQL) pour un système de plateforme analyse (APS) S
 * [EXPLAIN](../t-sql/queries/explain-transact-sql.md)
 * [FROM](../t-sql/queries/from-transact-sql.md)
 * [À l’aide des opérateurs PIVOT et UNPIVOT](../t-sql/queries/from-using-pivot-and-unpivot.md)
-* [REGROUPER PAR](../t-sql/queries/select-group-by-transact-sql.md)
-* [AVOIR](../t-sql/queries/select-having-transact-sql.md)
-* [TRIER PAR](../t-sql/queries/select-order-by-clause-transact-sql.md)
+* [GROUP BY](../t-sql/queries/select-group-by-transact-sql.md)
+* [HAVING](../t-sql/queries/select-having-transact-sql.md)
+* [ORDER BY](../t-sql/queries/select-order-by-clause-transact-sql.md)
 * [OPTION](../t-sql/queries/option-clause-transact-sql.md)
 * [UNION](../t-sql/language-elements/set-operators-union-transact-sql.md)
 * [WHERE](../t-sql/queries/where-transact-sql.md)
 * [TOP](../t-sql/queries/top-transact-sql.md)
 * [Utilisation d’alias](../t-sql/queries/aliasing-azure-sql-data-warehouse-parallel-data-warehouse.md)
 * [Condition de recherche](../t-sql/queries/search-condition-transact-sql.md)
-* [Sous-requêtes](../t-sql/queries/subqueries-azure-sql-data-warehouse-parallel-data-warehouse.md)
+* [Subqueries](../t-sql/queries/subqueries-azure-sql-data-warehouse-parallel-data-warehouse.md)
 
 ## <a name="security-statements"></a>Instructions de sécurité
 * Autorisations : [GRANT](../t-sql/statements/grant-transact-sql.md), [DENY](../t-sql/statements/deny-transact-sql.md), [RÉVOQUER](../t-sql/statements/revoke-transact-sql.md)

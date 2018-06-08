@@ -1,16 +1,14 @@
 ---
 title: CURRENT_TRANSACTION_ID (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CURRENT_TRANSACTION_ID
@@ -20,21 +18,20 @@ f1_keywords:
 helpviewer_keywords:
 - CURRENT_TRANSACTION_ID function
 ms.assetid: 82cd9f92-d935-45a0-a433-620d6e15b467
-caps.latest.revision: 
+caps.latest.revision: 6
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7ef8f593f50ce1d27642d1d179a57bebb2b4473e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 73a9583e40d73a48b7e8ddfdf8eddf8d38b743c7
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="currenttransactionid-transact-sql"></a>CURRENT_TRANSACTION_ID (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
-Renvoie l’ID de transaction de la transaction actuelle dans la session en cours.
+Cette fonction retourne l’ID de la transaction actuelle dans la session en cours.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -49,13 +46,13 @@ CURRENT_TRANSACTION_ID( )
 **bigint**
   
 ## <a name="return-value"></a>Valeur retournée  
-ID de transaction de la transaction actuelle dans la session en cours, extraite de [sys.dm_tran_current_transaction &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-tran-current-transaction-transact-sql.md).
+ID de la transaction actuelle dans la session en cours, tirée de [sys.dm_tran_current_transaction &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-tran-current-transaction-transact-sql.md).
   
 ## <a name="permissions"></a>Autorisations  
-Un utilisateur quelconque peut renvoyer l’ID de transaction de la session en cours.
+N’importe quel utilisateur peut retourner l’ID de transaction de la session en cours.
   
 ## <a name="examples"></a>Exemples  
-L’exemple suivant renvoie l’ID de transaction de la session en cours :
+Cet exemple retourne l’ID de transaction de la session en cours :
   
 ```sql
 SELECT CURRENT_TRANSACTION_ID();  

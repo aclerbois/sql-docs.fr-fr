@@ -1,16 +1,15 @@
 ---
-title: "Paramètres (Type de mappage) du projet (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres (Type de mappage) du projet (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - SQL Server data types
 - Type Mapping settings
 ms.assetid: b87b9683-abed-4677-8c50-18bdba704655
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 81c2512eacc634de526ecffb0d56d86dbcecca87
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 072d8aaf4582237cc60a3e3e6d76b02a86dc27c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-type-mapping-accesstosql"></a>Paramètres (Type de mappage) du projet (AccessToSQL)
 Les paramètres de mappage de Type de projet vous permettent de définir des mappages de type par défaut pour le projet SSMA. Vous pouvez également spécifier des mappages de type pour les objets de base de données individuels. Pour plus d’informations, consultez [Source de mappage et les Types de données cible](http://msdn.microsoft.com/en-us/b362a075-16e7-423f-b63f-e1e9f02844a9).  
@@ -53,22 +51,22 @@ Le tableau suivant montre le mappage par défaut entre les types de données sou
   
 |Type de données Access|Type de données de SQL Server|  
 |--------------------|------------------------|  
-|**binaire [\*... \*]**|**varbinary [\*]**|  
+|**binaire [\*... \*]**|**varbinary[\*]**|  
 |**boolean**|**bit**|  
-|**octets**|**tinyint**|  
-|**devise**|**money**|  
+|**byte**|**tinyint**|  
+|**currency**|**money**|  
 |**date**|**datetime**|  
 |**decimal**|**float**|  
 |**double**|**float**|  
-|**GUID**|**uniqueidentifier**|  
+|**guid**|**uniqueidentifier**|  
 |**entier**|**smallint**|  
-|**long**|**Int**|  
+|**Long**|**int**|  
 |**LONGBINARY**|**varbinary(max)**|  
 |**Mémo**|**nvarchar(max)**|  
 |**Mémo** - pour Access 97|**varchar(max)**|  
-|**unique**|**real**|  
-|**text[\*.. \*]**|**nvarchar [\*]**|  
-|**text[\*.. \*]** - pour Access 97|**varchar [\*]**|  
+|**Unique**|**real**|  
+|**texte [\*... \*]**|**nvarchar[\*]**|  
+|**texte [\*... \*]** - pour Access 97|**varchar[\*]**|  
   
 **Ajouter**  
 Cliquez pour ajouter un type de données à la liste de mappage.  

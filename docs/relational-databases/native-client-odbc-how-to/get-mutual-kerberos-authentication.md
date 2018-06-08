@@ -1,27 +1,26 @@
 ---
 title: Obtenir une authentification mutuelle Kerberos | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-how-to
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 64149fd4-239b-40e4-91e2-f9011f7d9f66
-caps.latest.revision: 
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 42aff8b3a01713bb8455fbf8f79dcc79eef29a49
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 775d451ed687ceae2a3e78f2bb8ddd3f6b76216e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="get-mutual-kerberos-authentication"></a>Obtenir une authentification Kerberos mutuelle
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -31,7 +30,7 @@ ms.lasthandoff: 01/25/2018
   
  Il ne fonctionne pas avec les versions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] antérieures à [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)].  
   
- Pour plus d’informations, consultez [nom Principal de Service &#40; Nom principal de service &#41; Prise en charge dans les connexions clientes](../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md).  
+ Pour plus d’informations, consultez [nom Principal de Service & #40 ; Nom principal de service & #41 ; Prise en charge dans les connexions clientes](../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md).  
   
 ## <a name="example"></a>Exemple  
  Si vous générez et exécutez cet exemple comme une application 32 bits sur un système d'exploitation 64 bits, vous devez créer la source de données ODBC avec l'administrateur ODBC dans %windir%\SysWOW64\odbcad32.exe.  

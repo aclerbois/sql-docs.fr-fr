@@ -1,16 +1,15 @@
 ---
-title: "Spécification de l’axe dans une étape d’Expression de chemin d’accès | Documents Microsoft"
-ms.custom: 
+title: Spécification de l’axe dans une étape d’Expression de chemin d’accès | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -26,16 +25,15 @@ helpviewer_keywords:
 - descendant-or-self axis
 - parent axis
 ms.assetid: c44fb843-0626-4496-bde0-52ca0bac0a9e
-caps.latest.revision: 
+caps.latest.revision: 30
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44ae49e51ac3fab0ca4b2cd8363601a14a3edf0b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2acb1aa6b9eddd2cf30f97da0d594db56b94e456
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="path-expressions---specifying-axis"></a>Expressions de chemin d’accès - spécification de l’axe
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
   
 -   [Zéro ou plusieurs qualificateurs d’étape (facultatifs)](../xquery/path-expressions-specifying-predicates.md)  
   
- Pour plus d’informations, consultez [Expressions de chemin &#40; XQuery &#41; ](../xquery/path-expressions-xquery.md).  
+ Pour plus d’informations, consultez [Expressions de chemin d’accès &#40;XQuery&#41;](../xquery/path-expressions-xquery.md).  
   
  L'implémentation de XQuery dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prend en charge les étapes d'axe suivantes :  
   
@@ -195,7 +193,7 @@ WHERE  ProductModelID=19
 </ProductDescription>  
 ```  
   
- La requête définit une variable itérateur, `$f`, dans l'instruction FLWOR afin de retourner l'enfant de l'élément `<Features>`. Pour plus d’informations, consultez [instruction FLWOR et itération &#40; XQuery &#41; ](../xquery/flwor-statement-and-iteration-xquery.md). Pour chaque fonctionnalité, la clause `return` construit du code XML au format suivant :  
+ La requête définit une variable itérateur, `$f`, dans l'instruction FLWOR afin de retourner l'enfant de l'élément `<Features>`. Pour plus d’informations, consultez [instruction et itération FLWOR &#40;XQuery&#41;](../xquery/flwor-statement-and-iteration-xquery.md). Pour chaque fonctionnalité, la clause `return` construit du code XML au format suivant :  
   
 ```  
 <Feature ProductModelID="...">...</Feature>  

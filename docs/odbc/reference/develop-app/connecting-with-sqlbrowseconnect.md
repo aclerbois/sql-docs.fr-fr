@@ -1,31 +1,28 @@
 ---
 title: Connexion avec SQLBrowseConnect | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to driver [ODBC], SQLBrowseConnect
 - SQLBrowseConnect function [ODBC], connecting
 - connecting to data source [ODBC], SQLBrowseConnect
 ms.assetid: 6c2e9f76-b766-48df-b109-246bb05ae45d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8d8f7e8722c9386267aeb429301a71132c999d8a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 573c0f1cef639c41b4c03c6dbae4a7c9b8858cf4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-with-sqlbrowseconnect"></a>Connexion avec SQLBrowseConnect
 **SQLBrowseConnect**, comme **SQLDriverConnect**, utilise une chaîne de connexion. Toutefois, à l’aide de **SQLBrowseConnect**, une application peut construire une chaîne de connexion complète en cours d’exécution. L'application peut alors réaliser deux tâches :  

@@ -1,16 +1,14 @@
 ---
 title: sp_addextendedproperty (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addextendedproperty
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_addextendedproperty
 ms.assetid: 565483ea-875b-4133-b327-d0006d2d7b4c
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5788b9d376acd46d7e7b357d70a4dd93aaa58064
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8ebd317abcd9fec6ee6e116c0bbacc63bf547be5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddextendedproperty-transact-sql"></a>sp_addextendedproperty (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -108,7 +106,7 @@ sp_addextendedproperty
 ## <a name="schema-vs-user"></a>Schéma ou  Utilisateur  
  Nous ne vous recommandons pas de spécifier l'argument USER comme type de niveau 0 lorsque vous appliquez une propriété étendue à un objet de base de données, car vous pourriez engendrer une ambiguïté de résolution de noms. Par exemple, supposez que l'utilisateur Marie détient deux schémas (Marie et MySchema) et que ceux-ci contiennent tous deux une table intitulée MyTable. Si Mary ajoute une propriété étendue à la table MyTable et spécifie  **@level0type @level0type ='**,  **@level0name = Mary**, il n’est pas clairement à quelle table la propriété étendue est appliquée. Pour assurer la compatibilité descendante, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] applique la propriété étendue à la table contenue dans le schéma nommé Mary.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Les membres des rôles de base de données fixes db_owner et db_ddladmin peuvent ajouter des propriétés étendues à n'importe quel objet, avec toutefois la restriction suivante : db_ddladmin ne peut pas ajouter de propriétés à la base de données elle-même, ni aux utilisateurs ou rôles.  
   
  Les utilisateurs peuvent ajouter des propriétés étendues à des objets qu'ils possèdent ou pour lesquels ils bénéficient d'autorisations ALTER ou CONTROL.  
@@ -243,9 +241,9 @@ EXEC sys.sp_addextendedproperty
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
- [Sys.fn_listextendedproperty &#40; Transact-SQL &#41;](../../relational-databases/system-functions/sys-fn-listextendedproperty-transact-sql.md)   
- [sp_dropextendedproperty &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropextendedproperty-transact-sql.md)   
- [sp_updateextendedproperty &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-updateextendedproperty-transact-sql.md)  
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Sys.fn_listextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-functions/sys-fn-listextendedproperty-transact-sql.md)   
+ [sp_dropextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropextendedproperty-transact-sql.md)   
+ [sp_updateextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-updateextendedproperty-transact-sql.md)  
   
   

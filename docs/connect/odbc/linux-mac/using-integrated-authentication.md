@@ -1,28 +1,26 @@
 ---
-title: "À l’aide de l’authentification intégrée | Documents Microsoft"
-ms.custom: 
+title: À l’aide de l’authentification intégrée | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: integrated authentication
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- integrated authentication
 ms.assetid: 9499ffdf-e0ee-4d3c-8bca-605371eb52d9
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 162b94d551ea8625b6b22fafec61e19038dc2051
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c70de16565cd90c3ca594fffcbbcc82bae89b90e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-integrated-authentication"></a>Utilisation de l’authentification intégrée
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -31,7 +29,7 @@ Le [!INCLUDE[msCoName](../../../includes/msconame_md.md)] ODBC Driver for [!INCL
   
 ## <a name="using-integrated-authentication-to-connect-to-includessnoversionincludesssnoversionmdmd-from-an-odbc-application"></a>À l’aide de l’authentification intégrée pour se connecter à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] à partir d’une Application ODBC  
 
-Vous pouvez activer l’authentification intégrée Kerberos en spécifiant **Trusted_Connection = yes** dans la chaîne de connexion de **SQLDriverConnect** ou **SQLConnect**. Exemple :  
+Vous pouvez activer l’authentification intégrée Kerberos en spécifiant **Trusted_Connection = yes** dans la chaîne de connexion de **SQLDriverConnect** ou **SQLConnect**. Par exemple :  
 
 ```
 Driver='ODBC Driver 13 for SQL Server';Server=your_server;Trusted_Connection=yes  
@@ -87,7 +85,7 @@ Les développeurs peuvent déployer une application qui utilise un serveur lié 
   
 -   Le serveur d’applications s’authentifie en tant qu’une autre base de données et se connecte à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)]authentifie en tant qu’un utilisateur de base de données à une autre base de données ([!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] authentifie en tant qu’un utilisateur de base de données à une autre base de données ([!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)].  
   
 Une fois l’authentification intégrée configurée, les informations d’identification sont transmises au serveur lié.  
   
@@ -99,17 +97,17 @@ Pour accéder à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] à
   
 Il s’agit d’une erreur à utiliser `-T` avec la `-U` ou `-P` option.
   
-## <a name="supported-syntax-for-an-spn-registered-by-includessnoversionincludesssnoversionmdmd"></a>Syntaxe prise en charge pour un SPN inscrit par[!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)]
+## <a name="supported-syntax-for-an-spn-registered-by-includessnoversionincludesssnoversionmdmd"></a>Syntaxe prise en charge pour un SPN inscrit par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)]
 
 La syntaxe qui utilisent des noms principaux de service dans la chaîne de connexion ou les attributs de connexion est la suivante :  
 
-|Syntaxe|Description|  
+|Syntaxe| Description|  
 |----------|---------------|  
 |MSSQLSvc/*fqdn*:*port*|Nom principal de service par défaut, généré par le fournisseur, lorsque le protocole TCP est utilisé. *port* est un numéro de port TCP. *fqdn* est un nom de domaine complet.|  
   
 ## <a name="authenticating-a-linux-or-macos-computer-with-active-directory"></a>Authentification un macOS ordinateur auprès d’Active Directory ou Linux
 
-Pour configurer Kerberos, entrer des données dans le `krb5.conf` fichier. `krb5.conf`est de `/etc/` , mais vous pouvez faire référence à un autre fichier, par exemple, à l’aide de la syntaxe `export KRB5_CONFIG=/home/dbapp/etc/krb5.conf`. Voici un exemple `krb5.conf` fichier :  
+Pour configurer Kerberos, entrer des données dans le `krb5.conf` fichier. `krb5.conf` est de `/etc/` , mais vous pouvez faire référence à un autre fichier, par exemple, à l’aide de la syntaxe `export KRB5_CONFIG=/home/dbapp/etc/krb5.conf`. Voici un exemple `krb5.conf` fichier :  
   
 ```  
 [libdefaults]  

@@ -1,26 +1,24 @@
 ---
-title: "Se connecter à la base de données de catalogues SSISDB sur Azure | Microsoft Docs"
+title: Se connecter à la base de données de catalogues SSIS dans Azure | Microsoft Docs
 ms.date: 09/25/2017
-ms.topic: article
-ms.prod: sql-non-specified
+ms.topic: conceptual
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: lift-shift
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - integration-services
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 218890a01c98c51c570255dce0ad2c34bc5c26db
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: ef69dc52b041541b89052038cadad94b9fa2f45c
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="connect-to-the-ssisdb-catalog-database-on-azure"></a>Se connecter à la base de données de catalogues SSISDB sur Azure
+# <a name="connect-to-the-ssis-catalog-database-ssisdb-in-azure"></a>Se connecter à la base de données de catalogues SSIS (SSISDB) dans Azure
 
 Obtenez les informations de connexion dont vous avez besoin pour vous connecter à la base de données de catalogues SSISDB hébergée sur un serveur Azure SQL Database. Vous avez besoin des éléments suivants pour vous connecter :
 - nom complet du serveur
@@ -30,8 +28,8 @@ Obtenez les informations de connexion dont vous avez besoin pour vous connecter 
 > [!IMPORTANT]
 > Vous ne pouvez pas créer la base de données de catalogues SSISDB sur Azure SQL Database à ce stade indépendamment de la création du runtime d’intégration Azure-SSIS dans Azure Data Factory version 2. C’est le runtime d’intégration Azure-SSIS qui exécute les packages SSIS sur Azure. Pour plus d’informations, consultez [Déployer des packages SSIS sur Azure](https://docs.microsoft.com/azure/data-factory/tutorial-create-azure-ssis-runtime-portal). 
 
-## <a name="prerequisites"></a>Prerequisites
-Avant de commencer, vérifiez que vous avez la version 17.2 ou ultérieure de SQL Server Management Studio. Pour télécharger la dernière version de SSMS, consultez [Télécharger SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+## <a name="prerequisites"></a>Conditions préalables requises
+Avant de commencer, veillez à disposer de la version 17.2 ou ultérieure de SQL Server Management Studio (SSMS). Si la base de données de catalogue SSISDB est hébergée sur SQL Database Managed Instance (préversion), assurez-vous d’avoir la version 17.6 ou ultérieure de SSMS. Pour télécharger la dernière version de SSMS, consultez [Télécharger SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## <a name="get-the-connection-info-from-the-azure-portal"></a>Obtenir les informations de connexion à partir du portail Azure
 1. Connectez-vous au [portail Azure](https://portal.azure.com/).
@@ -51,7 +49,7 @@ Avant de commencer, vérifiez que vous avez la version 17.2 ou ultérieure de S
    | ------------ | ------------------ | ------------------------------------------------- | 
    | **Type de serveur** | Moteur de base de données | Cette valeur est requise. |
    | **Nom du serveur** | Nom complet du serveur | Le nom doit être au format suivant : **mysqldbserver.database.windows.net**. |
-   | **Authentification** | Authentification SQL Server | Ce guide de démarrage rapide utilise l’authentification SQL. |
+   | **Authentification** | Authentification SQL Server | |
    | **Connexion** | Compte Administrateur du serveur | Il s’agit du compte que vous avez spécifié quand vous avez créé le serveur. |
    | **Mot de passe** | Mot de passe du compte Administrateur de votre serveur | Il s’agit du mot de passe que vous avez spécifié quand vous avez créé le serveur. |
 

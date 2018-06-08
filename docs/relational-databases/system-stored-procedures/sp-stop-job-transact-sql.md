@@ -1,16 +1,14 @@
 ---
-title: sp_stop_job (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_stop_job (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_stop_job_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_stop_job
 ms.assetid: 64b4cc75-99a0-421e-b418-94e37595bbb0
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1276a936bece39cc875e5f80e8da5465f51bb4ee
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 67e1476e8f0612796e3f31644aca192c2c25a90f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spstopjob-transact-sql"></a>sp_stop_job (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,13 +48,13 @@ sp_stop_job
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_name =**] **'***job_name***'**  
+ [  **@job_name =**] **'***job_name***'**  
  Nom du travail à arrêter. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ **@job_id =**] *job_id*  
+ [  **@job_id =**] *job_id*  
  Numéro d'identification du travail à arrêter. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@originating_server =**] **'***master_server***'**  
+ [  **@originating_server =**] **'***master_server***'**  
  Nom du serveur maître. Si ce nom est spécifié, tous les travaux multiserveurs sont arrêtés. *serveur_maître* est **nvarchar (128)**, avec NULL comme valeur par défaut. Spécifiez ce paramètre uniquement lorsque vous appelez **sp_stop_job** vers un serveur cible.  
   
 > [!NOTE]  

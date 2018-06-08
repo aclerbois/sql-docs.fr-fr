@@ -1,33 +1,32 @@
 ---
-title: "Classements de base de données à relation contenant-contenu | Microsoft Docs"
-ms.custom: 
+title: Classements de base de données à relation contenant-contenu | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - contained database, collations
 ms.assetid: 4b44f6b9-2359-452f-8bb1-5520f2528483
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 00a724d305e55a58b257b699f298cbd5044a3510
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7bd7475ba942ccf1533f44bf40ed70aaf81ef6e3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="contained-database-collations"></a>Classements de base de données à relation contenant-contenu
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Diverses propriétés affectent l’ordre de tri et la sémantique d’égalité des données textuelles, notamment le respect de la casse, le respect des accents et la langue de base utilisée. Ces qualités sont exprimées à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par le choix du classement des données. Pour une explication plus approfondie des classements eux-mêmes, consultez [Prise en charge d’Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Diverses propriétés affectent l'ordre de tri et la sémantique d'égalité des données textuelles, notamment le respect de la casse, le respect des accents et la langue de base utilisée. Ces qualités sont exprimées à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] par le choix du classement des données. Pour une explication plus approfondie des classements eux-mêmes, consultez [Prise en charge d’Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md).  
   
  Les classements ne s'appliquent pas seulement aux données stockées dans les tables utilisateur, mais à tout le texte géré par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], notamment les métadonnées, les objets temporaires, les noms de variable, etc. Leur gestion est différente dans une base de données à relation contenant-contenu et dans une base de données sans relation contenant-contenu. Cette modification n'affecte pas de nombreux utilisateurs, mais permet l'indépendance et l'uniformité des instances. Cependant, elle peut provoquer également quelques confusions, ainsi que des problèmes pour les sessions qui accèdent à la fois à des bases de données à relation contenant-contenu et à des bases de données sans relation contenant-contenu.  
   

@@ -1,32 +1,29 @@
 ---
 title: index_option (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/08/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
 - index_option
 ms.assetid: 8a14f12d-2fbf-4036-b8b2-8db3354e0eb7
-caps.latest.revision: 
+caps.latest.revision: 68
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 646b46501abd345a35c0e90547391e5181105a00
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 896154a8ed001dfbb7de46ca0d2c061475a19fc4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-table-indexoption-transact-sql"></a>ALTER TABLE index_option (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -155,16 +152,16 @@ ms.lasthandoff: 11/21/2017
  Indique si les tables sous-jacentes et les index associés sont disponibles pour les requêtes et la modification de données pendant l'opération d'index. La valeur par défaut est OFF. REBUILD peut être effectué en tant qu'opération ONLINE.  
   
 > [!NOTE]  
->  Les index uniques non-cluster ne peuvent pas être créés en ligne. Il s'agit des index qui sont créés en raison d'une contrainte UNIQUE ou PRIMARY KEY.  
+>  Les index uniques non cluster ne peuvent pas être créés en ligne. Il s'agit des index qui sont créés en raison d'une contrainte UNIQUE ou PRIMARY KEY.  
   
  ON  
- Les verrous de table à long terme ne sont pas maintenus pendant la durée de l'opération d'index. Lors de la principale phase de l'indexation, seul le verrou de partage intentionnel (IS, Intent Share) est maintenu sur la table source. Ceci permet d'exécuter les requêtes ou les mises à jour dans la table sous-jacente et ses index. Au début de l'opération, un verrou partagé (S, Shared) est placé sur l'objet source pendant une période de temps très courte. À la fin de l'opération, pendant une période de temps très courte, un verrou partagé (S, Shared) est placé sur la source si un index non-cluster est créé, ou bien un verrou de SCH-M (Modification du schéma) est placé lorsqu'un index cluster est créé ou supprimé en ligne et lorsqu'un index cluster ou non-cluster est régénéré. Bien que les verrous d'index en ligne soient des verrous de métadonnées courtes, le verrou Sch-M doit notamment attendre que toutes les transactions bloquantes soient terminées sur cette table. Pendant le temps d'attente, le verrou Sch-M bloque toutes les autres transactions qui attendent derrière ce verrou en cas d'accès à la même table. ONLINE ne peut pas prendre la valeur ON si un index est en cours de création sur une table locale temporaire.  
+ Les verrous de table à long terme ne sont pas maintenus pendant la durée de l'opération d'index. Lors de la principale phase de l'indexation, seul le verrou de partage intentionnel (IS, Intent Share) est maintenu sur la table source. Ceci permet d'exécuter les requêtes ou les mises à jour dans la table sous-jacente et ses index. Au début de l'opération, un verrou partagé (S, Shared) est placé sur l'objet source pendant une période de temps très courte. À la fin de l'opération, pendant une période de temps très courte, un verrou partagé (S, Shared) est placé sur la source si un index non cluster est créé, ou bien un verrou de SCH-M (Modification du schéma) est placé lorsqu'un index cluster est créé ou supprimé en ligne et lorsqu'un index cluster ou non cluster est régénéré. Bien que les verrous d'index en ligne soient des verrous de métadonnées courtes, le verrou Sch-M doit notamment attendre que toutes les transactions bloquantes soient terminées sur cette table. Pendant le temps d'attente, le verrou Sch-M bloque toutes les autres transactions qui attendent derrière ce verrou en cas d'accès à la même table. ONLINE ne peut pas prendre la valeur ON si un index est en cours de création sur une table locale temporaire.  
   
 > [!NOTE]  
 >  La reconstruction d’index en ligne peut définir les options *low_priority_lock_wait* décrites plus loin dans cette section. *low_priority_lock_wait* gère la priorité du verrou S ou Sch-M pendant la reconstruction d’index en ligne.  
   
  OFF  
- Des verrous de table sont appliqués pendant l'opération d'indexation. Cela empêche tous les utilisateurs d'accéder à la table sous-jacente pendant la durée de l'opération. Une opération d'indexation hors ligne qui crée, régénère ou supprime un index cluster, ou régénère ou supprime un index non-cluster, acquiert un verrou de modification de schéma (Sch-M) sur la table. Cela empêche tous les utilisateurs d'accéder à la table sous-jacente pendant la durée de l'opération. Une opération d'indexation hors ligne qui crée un index non-cluster acquiert un verrou partagé (S, Shared) sur la table. Cela empêche la mise à jour de la table sous-jacente, mais autorise les opérations de lecture, telles que des instructions SELECT.  
+ Des verrous de table sont appliqués pendant l'opération d'indexation. Cela empêche tous les utilisateurs d'accéder à la table sous-jacente pendant la durée de l'opération. Une opération d'indexation hors ligne qui crée, régénère ou supprime un index cluster, ou régénère ou supprime un index non cluster, acquiert un verrou de modification de schéma (Sch-M) sur la table. Cela empêche tous les utilisateurs d'accéder à la table sous-jacente pendant la durée de l'opération. Une opération d'indexation hors ligne qui crée un index non cluster acquiert un verrou partagé (S, Shared) sur la table. Cela empêche la mise à jour de la table sous-jacente, mais autorise les opérations de lecture, telles que des instructions SELECT.  
   
  Pour plus d’informations, consultez [Fonctionnement des opérations d’index en ligne](../../relational-databases/indexes/how-online-index-operations-work.md).  
   
@@ -176,7 +173,7 @@ ms.lasthandoff: 11/21/2017
   
  Remplace l’option de configuration **max degree of parallelism** pendant la durée de l’opération d’index. Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md). Utilisez MAXDOP pour limiter le nombre de processeurs utilisés dans une exécution de plan parallèle. Le nombre maximal de processeurs est égal à 64.  
   
- *max_degree_of_parallelism* peut avoir les valeurs suivantes :  
+ *max_degree_of_parallelism* peut avoir la valeur :  
   
  - 1 - Supprime la génération de plans parallèles.  
  - \>1 - Limite au nombre spécifié le nombre maximal de processeurs utilisés dans une opération d’index parallèle.  
@@ -185,7 +182,7 @@ ms.lasthandoff: 11/21/2017
  Pour plus d’informations, consultez [Configurer des opérations d’index parallèles](../../relational-databases/indexes/configure-parallel-index-operations.md).  
   
 > [!NOTE]  
->  Les opérations d’index parallèles ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
+>  Les opérations d’index parallèles ne sont pas disponibles dans toutes les éditions de [!INCLUDE[msCoName](../../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prise en charge par les éditions de SQL Server 2016](~/sql-server/editions-and-supported-features-for-sql-server-2016.md).  
   
  DATA_COMPRESSION  
  **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
@@ -213,7 +210,7 @@ ms.lasthandoff: 11/21/2017
   
  Pour plus d’informations sur la compression, consultez [Compression des données](../../relational-databases/data-compression/data-compression.md).  
   
-ON PARTITIONS **(** { \<partition_number_expression> | \<range> } [ **,**...*n* ] **)** **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+ON PARTITIONS **(** { \<partition_number_expression> | \<range> } [ **,**...*n* ] **)** **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
  Spécifie les partitions auxquelles le paramètre DATA_COMPRESSION s'applique. Si la table n’est pas partitionnée, l’argument ON PARTITIONS génère une erreur. Si la clause ON PARTITIONS n’est pas fournie, l’option DATA_COMPRESSION s’applique à toutes les partitions d’une table partitionnée.  
   
@@ -223,7 +220,7 @@ ON PARTITIONS **(** { \<partition_number_expression> | \<range> } [ **,**...*n* 
 -   Spécifiez des numéros de partition pour plusieurs partitions individuelles séparées par des virgules, par exemple : ON PARTITIONS (1, 5).  
 -   Spécifiez à la fois des plages et des partitions individuelles, par exemple ON PARTITIONS (2, 4, 6 TO 8).  
   
-\<range> peut être spécifié sous la forme de numéros de partitions séparés par le mot TO, par exemple : ON PARTITIONS (6 TO 8).  
+\<range> peut être spécifié sous la forme de numéros de partitions séparés par le mot TO, par exemple : ON PARTITIONS (6 TO 8).  
   
  Pour définir des types différents de compression de données pour des partitions différentes, spécifiez plusieurs fois l'option DATA_COMPRESSION, par exemple :  
   

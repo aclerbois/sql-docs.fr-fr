@@ -1,31 +1,28 @@
 ---
-title: "Fonctionnement des commandes paramétrées | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Fonctionnement des commandes paramétrées | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data shaping [ADO], parameterized commands
 - parameterized commands [ADO]
 ms.assetid: 4fae0d54-83b6-4ead-99cc-bcf532daa121
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7d826d5407aabce4baa82b0952cff6c8344944e8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ce4d9977628e4024539a2e3e9fe8950513100620
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="operation-of-parameterized-commands"></a>Fonctionnement des commandes paramétrées
 Si vous travaillez avec un enfant **Recordset**, en particulier par rapport à la taille du parent **Recordset**, mais avez besoin d’accéder uniquement quelques chapitres enfant, il peut s’avérer plus efficace d’utiliser un commande paramétrable.  
@@ -42,7 +39,7 @@ SHAPE {SELECT * FROM customer}
    RELATE cust_id TO PARAMETER 0)  
 ```  
   
- Les tables parent et enfant partagent un nom de colonne commun, cust_id*.* Le *commande enfant* a un « ? » espace réservé, auquel la clause RELATE fait référence (autrement dit, «... » PARAMÈTRE 0 »).  
+ Les tables parent et enfant partagent un nom de colonne commun, cust_id *.* Le *commande enfant* a un « ? » espace réservé, auquel la clause RELATE fait référence (autrement dit, «... » PARAMÈTRE 0 »).  
   
 > [!NOTE]
 >  La clause de paramètre se rapporte uniquement à la syntaxe de commande de forme. Il n’est pas associé à un ADO [paramètre](../../../ado/reference/ado-api/parameter-object.md) objet ou le [paramètres](../../../ado/reference/ado-api/parameters-collection-ado.md) collection.  

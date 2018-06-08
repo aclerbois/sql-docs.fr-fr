@@ -1,30 +1,29 @@
 ---
-title: SQLColAttribute | Microsoft Docs
-ms.custom: 
+title: SQLColAttribute | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-api
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apitype: DLLExport
 helpviewer_keywords:
 - SQLColAttribute function
 ms.assetid: a5387d9e-a243-4cfe-b786-7fad5842b1d6
-caps.latest.revision: 
+caps.latest.revision: 52
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0ba0d2473ed054e9d356f84fdf5a698cae4c201a
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6a846851ac4558c3b39bd821f32f32c20a0993f2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcolattribute"></a>SQLColAttribute
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -47,7 +46,7 @@ ms.lasthandoff: 01/24/2018
 |SQL_DESC_TABLE_NAME|Disponible dans des jeux de résultats extraits d'instructions générant des curseurs côté serveur ou sur des instructions SELECT exécutées qui contiennent une clause FOR BROWSE.|  
 |SQL_DESC_UNNAMED|Valeur SQL_NAMED de toutes les colonnes dans un jeu de résultats sauf si une colonne est le résultat d'une expression qui ne contient aucune étiquette affectée dans le cadre de l'expression. Lorsque SQL_DESC_UNNAMED retourne la valeur SQL_UNNAMED, tous les attributs d'identificateur de colonne ODBC contiennent des chaînes de longueur nulle pour la colonne.|  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Pilote ODBC Native Client utilise l’instruction SET FMTONLY pour réduire la charge sur le serveur lorsque **SQLColAttribute** est appelée pour préparées mais non exécutées.  
+ [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Pilote ODBC Native Client utilise l’instruction SET FMTONLY pour réduire la charge sur le serveur lorsque **SQLColAttribute** est appelée pour préparées mais non exécutées.  
   
  Pour les types de valeur élevée, **SQLColAttribute** retourne les valeurs suivantes :  
   
@@ -80,9 +79,9 @@ ms.lasthandoff: 01/24/2018
 |SQL_CA_SS_NUM_COMPUTES|Nombre de clauses COMPUTE spécifiées dans l'instruction SELECT Transact-SQL actuelle.|  
 |SQL_CA_SS_NUM_ORDERS|Nombre de colonnes spécifiées dans une clause ORDER BY d'une instruction Transact-SQL SELECT.|  
   
- \*Disponible si l’attribut d’instruction SQL_SOPT_SS_HIDDEN_COLUMNS est défini sur SQL_HC_ON.  
+ \*   Disponible si l’attribut d’instruction SQL_SOPT_SS_HIDDEN_COLUMNS est défini sur SQL_HC_ON.  
   
- [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]inclut les champs de descripteur spécifiques au pilote pour fournir des informations supplémentaires pour indiquer le nom de collection de schémas XML, le nom de schéma et le nom du catalogue, de respectivement. Ces propriétés ne nécessitent pas l'usage de guillemets ou d'un caractère d'échappement si elles contiennent des caractères non alphanumériques. Le tableau suivant répertorie ces nouveaux champs de descripteur :  
+ [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] inclut les champs de descripteur spécifiques au pilote pour fournir des informations supplémentaires pour indiquer le nom de collection de schémas XML, le nom de schéma et le nom du catalogue, de respectivement. Ces propriétés ne nécessitent pas l'usage de guillemets ou d'un caractère d'échappement si elles contiennent des caractères non alphanumériques. Le tableau suivant répertorie ces nouveaux champs de descripteur :  
   
 |Nom de colonne|Type| Description|  
 |-----------------|----------|-----------------|  
@@ -104,15 +103,15 @@ ms.lasthandoff: 01/24/2018
 ## <a name="sqlcolattribute-support-for-enhanced-date-and-time-features"></a>Prise en charge de la fonction SQLColAttribute pour les fonctionnalités de date et heure améliorées  
  Pour les valeurs retournées pour les types de date/heure, consultez la section « Informations retournées dans les champs IRD » dans [paramètre et les métadonnées de résultat](../../relational-databases/native-client-odbc-date-time/metadata-parameter-and-result.md).  
   
- Pour plus d’informations, consultez [Date et heure améliorations &#40; ODBC &#41;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md).  
+ Pour plus d’informations, consultez [Date et heure améliorations & #40 ; ODBC & #41 ;](../../relational-databases/native-client-odbc-date-time/date-and-time-improvements-odbc.md).  
   
 ## <a name="sqlcolattribute-support-for-large-clr-udts"></a>Prise en charge SQLColAttribute pour les types CLR volumineux définis par l'utilisateur  
- **SQLColAttribute** prend en charge les types CLR volumineux définis par l’utilisateur (UDT). Pour plus d’informations, consultez [Large CLR User-Defined Types &#40; ODBC &#41;](../../relational-databases/native-client/odbc/large-clr-user-defined-types-odbc.md).  
+ **SQLColAttribute** prend en charge les types CLR volumineux définis par l’utilisateur (UDT). Pour plus d’informations, consultez [Large CLR User-Defined Types & #40 ; ODBC & #41 ;](../../relational-databases/native-client/odbc/large-clr-user-defined-types-odbc.md).  
   
 ## <a name="sqlcolattribute-support-for-sparse-columns"></a>Prise en charge SQLColAttribute pour les colonnes éparses  
  SQLColAttribute interroge le champ de descripteur (IRD) de ligne implémentation nouveau, SQL_CA_SS_IS_COLUMN_SET, afin de déterminer si une colonne est un **column_set** colonne.  
   
- Pour plus d’informations, consultez [prise en charge des colonnes éparses &#40; ODBC &#41;](../../relational-databases/native-client/odbc/sparse-columns-support-odbc.md).  
+ Pour plus d’informations, consultez [prise en charge des colonnes éparses &#40;ODBC&#41;](../../relational-databases/native-client/odbc/sparse-columns-support-odbc.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonction SQLColAttribute](http://go.microsoft.com/fwlink/?LinkId=59334)   

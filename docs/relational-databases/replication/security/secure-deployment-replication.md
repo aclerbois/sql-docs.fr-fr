@@ -1,31 +1,29 @@
 ---
-title: "Déploiement sécurisé (réplication) | Microsoft Docs"
-ms.custom: 
+title: Déploiement sécurisé (réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [SQL Server replication], deployment
 - deployment security [SQL Server replication]
 ms.assetid: 9c8c284a-e497-48b7-b2e2-c96a0e940e67
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7818d0d4a949501d469d07dc28114e97970aca6e
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 30fdcd2b4d3bf7c38ddd13957c07e2f42b5a5eb0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="secure-deployment-replication"></a>Déploiement sécurisé (réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

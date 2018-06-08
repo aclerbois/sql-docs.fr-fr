@@ -1,35 +1,33 @@
 ---
-title: "Insérer des extraits de code Transact-SQL | Microsoft Docs"
-ms.custom: 
+title: Insérer des extraits de code Transact-SQL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - IntelliSense [SQL Server], snippets
 - Transact-SQL snippets, code
 - snippets [Transact-SQL], how to insert
 ms.assetid: d66c96f4-2e84-4d79-9bfd-3635fdd98425
-caps.latest.revision: 
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0086861b57793457f8a8d2bd735f808b1587759e
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 696b9443453eb49bda48e1affc01ff9c34c85e41
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="insert-transact-sql-snippets"></a>Insérer des extraits de code Transact-SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Un extrait de code [!INCLUDE[tsql](../../includes/tsql-md.md)] est un modèle que vous pouvez utiliser comme point de départ durant l’écriture de nouvelles instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans l’Éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Un extrait de code [!INCLUDE[tsql](../../includes/tsql-md.md)] est un modèle que vous pouvez utiliser comme point de départ durant l’écriture de nouvelles instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans l’Éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] .  
   
 ## <a name="inserting-snippets"></a>Insertion d'extraits de code  
  Vous pouvez utiliser le menu **Insérer un extrait** pour ouvrir une liste par catégorie d’extraits de code et en choisir un.  

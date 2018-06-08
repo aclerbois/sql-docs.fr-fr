@@ -1,28 +1,25 @@
 ---
 title: Tables temporelles | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/11/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e442303d-4de1-494e-94e4-4f66c29b5fb9
-caps.latest.revision: 
+caps.latest.revision: 47
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ba3bc1642b2b266c030f8ec326d001a8fb56b4ab
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b7e70190afc73d0dbad741f89e7d1dfc47404c87
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="temporal-tables"></a>Tables temporelles
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -155,9 +152,6 @@ SELECT * FROM Employee
   
 > [!NOTE]  
 >  Vous pouvez éventuellement choisir de masquer ces colonnes de période de manière à ce que les requêtes qui n’y font pas explicitement référence ne les retournent pas (scénario **SELECT \* FROM***\<table>*). Pour renvoyer une colonne masquée, incluez simplement une référence explicite à celle-ci dans la requête. De même, les instructions **INSERT** et **BULK INSERT** vont continuer d’agir comme si ces nouvelles colonnes de période étaient absentes (et les valeurs de la colonne seront remplies automatiquement). Pour plus d’informations sur l’utilisation de la clause **HIDDEN** , consultez [CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md) et [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md).  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Temporal%20Tables%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Prise en main des tables temporelles avec versions gérées par le système](../../relational-databases/tables/getting-started-with-system-versioned-temporal-tables.md)   

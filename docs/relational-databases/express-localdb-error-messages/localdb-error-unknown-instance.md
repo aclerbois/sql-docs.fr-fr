@@ -1,27 +1,23 @@
 ---
 title: LOCALDB_ERROR_UNKNOWN_INSTANCE | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: localdb
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: performance
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 67bca4f1-915d-46d4-9293-3742c16930a1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9aff0250ccefa8e5be824f8d3d432feba8e90fa5
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 4a3493c23c8bf389ec65840cd3795593102d0b21
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="localdberrorunknowninstance"></a>LOCALDB_ERROR_UNKNOWN_INSTANCE
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

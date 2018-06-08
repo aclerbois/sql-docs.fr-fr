@@ -1,32 +1,31 @@
 ---
-title: "Modifier les fonctions définies par l’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Modifier les fonctions définies par l’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 891c37b3-cb72-411f-9937-ee87e6d95f34
-caps.latest.revision: 
+caps.latest.revision: 7
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c7b7c08f7f2a853402fa2f9b8e870a317cb44554
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7acc90105b49b4b0028220768f49feb0dfb69b89
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="modify-user-defined-functions"></a>Modifier les fonctions définies par l'utilisateur
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Vous pouvez modifier les fonctions définies par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le fait de modifier des fonctions définies par l'utilisateur comme décrit ci-dessous n'affecte pas les autorisations des fonctions et n'a aucune incidence sur les fonctions, les procédures stockées et les déclencheurs qui en dépendent.  
+  Vous pouvez modifier les fonctions définies par l'utilisateur dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Le fait de modifier des fonctions définies par l'utilisateur comme décrit ci-dessous n'affecte pas les autorisations des fonctions et n'a aucune incidence sur les fonctions, les procédures stockées et les déclencheurs qui en dépendent.  
   
  **Dans cette rubrique**  
   

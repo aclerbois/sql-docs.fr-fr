@@ -2,31 +2,28 @@
 title: 'Comment : envoyer et récupérer des données UTF-8 à l’aide de la prise en charge de UTF-8 intégrée | Documents Microsoft'
 ms.custom: ''
 ms.date: 03/23/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - retrieving data, UTF-8 encoded data
 - converting data types
 - updating data
 ms.assetid: 366c57cf-352f-4202-8074-6ddce44880d1
-caps.latest.revision: ''
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 55c6c0293dddf4919c270f6feeb59f32670f4344
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: bfb2e5a7bd7bef5d34d60e6e5435295b342bcca5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-send-and-retrieve-utf-8-data-using-built-in-utf-8-support"></a>Procédure : envoyer et récupérer des données UTF-8 à l’aide de la prise en charge UTF-8 intégrée
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

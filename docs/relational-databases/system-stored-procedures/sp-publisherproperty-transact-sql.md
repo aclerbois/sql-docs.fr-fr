@@ -1,16 +1,15 @@
 ---
 title: sp_publisherproperty (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_publisherproperty
 ms.assetid: 0ed1ebc1-a1bd-4aed-9f46-615c5cf07827
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 782dada24606bdd5ece4057bb47b7df6a6a9a9db
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 647bd0de356a8a31c531a027dffeca88cd8c3083
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sppublisherproperty-transact-sql"></a>sp_publisherproperty (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,10 +46,10 @@ sp_publisherproperty [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@publisher**  =] **'***publisher***'**  
+ [**@publisher** =] **'***publisher***'**  
  Nom du serveur de publication hétérogène. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
- [ **@propertyname**  =] **'***propertyname***'**  
+ [**@propertyname** =] **'***propertyname***'**  
  Nom de la propriété qui est définie. *PropertyName* est **sysname**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
@@ -62,14 +60,14 @@ sp_publisherproperty [ @publisher = ] 'publisher'
   
  Lorsque *propertyname* est omis toutes les propriétés définissables sont retournées.  
   
- [ **@propertyvalue**  =] **'***propertyvalue***'**  
+ [**@propertyvalue** =] **'***propertyvalue***'**  
  Nouvelle valeur du paramètre de la propriété. *PropertyValue* est **sysname**, avec NULL comme valeur par défaut. Lorsque *propertyvalue* est omis, le paramètre actuel de la propriété est renvoyée.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**PropertyName**|**sysname**|Retourne les propriétés de publication suivantes qui peuvent être définies :<br /><br /> **xactsetbatching**<br /><br /> **xactsetjob**<br /><br /> **xactsetjobinterval**|  
+|**propertyname**|**sysname**|Retourne les propriétés de publication suivantes qui peuvent être définies :<br /><br /> **xactsetbatching**<br /><br /> **xactsetjob**<br /><br /> **xactsetjobinterval**|  
 |**PropertyValue**|**sysname**|Est la valeur actuelle de la propriété dans le **propertyname** colonne.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -86,7 +84,7 @@ sp_publisherproperty [ @publisher = ] 'publisher'
   
  Lorsque vous modifiez le **xactsetjobinterval** propriété pour un travail en cours d’exécution, vous devez redémarrer le travail pour le nouvel intervalle prenne effet.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe du serveur de distribution peuvent exécuter **sp_publisherproperty**.  
   
 ## <a name="see-also"></a>Voir aussi  

@@ -1,36 +1,19 @@
 ---
-title: "Propriétés de sécurité | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- security [Analysis Services], properties
-- SecurityPackageList property
-- BuiltinAdminsAreServerAdmins property
-- DisableClientImpersonation property
-- ErrorMessageMode property
-- RequiredProtectionLevel property
-- ServiceAccountIsServerAdmin property
-- RequireClientAuthentication property
-ms.assetid: 2fc7fe10-0cbb-49ac-aa8c-8ec3f7a7705f
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés de sécurité | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e99cf48fc3eb863b0a0d1e04fc19e83655ccc47f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: f54374802b18ab8142e8083bff0c14340e5af66a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="security-properties"></a>Propriétés de sécurité
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

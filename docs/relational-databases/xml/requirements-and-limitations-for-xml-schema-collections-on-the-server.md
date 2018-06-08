@@ -1,17 +1,15 @@
 ---
-title: "Spécifications et limitations relatives aux collections de schémas XML sur le serveur | Microsoft Docs"
-ms.custom: 
+title: Spécifications et limitations relatives aux collections de schémas XML sur le serveur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - identifiers [XML schema collections]
 - XML schema collections [SQL Server], limitations
@@ -27,20 +25,19 @@ helpviewer_keywords:
 - schema collections [SQL Server], guidelines
 - lexical representation
 ms.assetid: c2314fd5-4c6d-40cb-a128-07e532b40946
-caps.latest.revision: 
+caps.latest.revision: 84
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e60de9c75202dc0c5c02a8765a1c2f8d4c631498
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: cfece11f3cec121dcdd56a3918f3bdafc7bbd05e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="requirements-and-limitations-for-xml-schema-collections-on-the-server"></a>Spécifications et limitations relatives aux collections de schémas XML sur le serveur
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-La validation XSD (XML Schema Definition Language) des colonnes SQL utilisant le type de données **xml** est soumise à certaines limitations, lesquelles sont exposées dans le tableau suivant. Les recommandations à suivre pour modifier un schéma XSD afin qu'il soit compatible avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]y sont abordées. Les rubriques de cette section fournissent des informations supplémentaires concernant les limitations spécifiques, ainsi qu'une assistance pour leur utilisation.  
+  La validation XSD (XML Schema Definition Language) des colonnes SQL utilisant le type de données **xml** est soumise à certaines limitations, lesquelles sont exposées dans le tableau suivant. Les recommandations à suivre pour modifier un schéma XSD afin qu'il soit compatible avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]y sont abordées. Les rubriques de cette section fournissent des informations supplémentaires concernant les limitations spécifiques, ainsi qu'une assistance pour leur utilisation.  
   
 |Élément|Limitation|  
 |----------|----------------|  

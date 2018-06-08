@@ -1,17 +1,16 @@
 ---
-title: "Configuration de la Messagerie de base de données | Microsoft Docs"
-ms.custom: 
+title: Configuration de la Messagerie de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: database-mail
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.sqlimail.profileandaccountmanagement.f1
 - sql13.swb.sqlimail.newaccount.f1
@@ -42,20 +41,19 @@ f1_keywords:
 - sql13.swb.dbmail.manageexistingprofile.f1
 - sql13.swb.dbmail.manageprofilesecurity.principalview.f1
 ms.assetid: 7edc21d4-ccf3-42a9-84c0-3f70333efce6
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 3d88087b9d1142919f844155c805e2284e954e54
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: b1df9d91458211d66722ac1b844e5d938690acc3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-database-mail"></a>Configuration de la Messagerie de base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique explique comment activer et configurer la messagerie de base de données à l'aide de l'Assistant Configuration de la messagerie de base de données, et créer un script de configuration de la messagerie de base de données à l'aide de modèles.  
+  Cette rubrique explique comment activer et configurer la messagerie de base de données à l'aide de l'Assistant Configuration de la messagerie de base de données, et créer un script de configuration de la messagerie de base de données à l'aide de modèles.  
   
 -   **Avant de commencer :**  [Limitations et restrictions](#Restrictions), [Sécurité](#Security)  
   

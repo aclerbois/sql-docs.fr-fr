@@ -1,36 +1,23 @@
 ---
-title: "Élément AllowDrillThrough (ASSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément AllowDrillThrough (ASSL) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: assl
 ms.topic: reference
-apiname: AllowDrillThrough Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: AllowDrillThrough
-helpviewer_keywords: AllowDrillThrough element
-ms.assetid: 53c9e4a3-a376-447d-a13f-80d845cc9789
-caps.latest.revision: "51"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3863648b3c8978fa8ac3b8ba981c6fa634c30ef0
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 25bad363975494fc8bd6c8cb343a165d8bb85f85
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="allowdrillthrough-element-assl"></a>Élément AllowDrillThrough (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Détermine si l’extraction est autorisée sur l’élément parent.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Détermine si l'extraction est autorisée sur l'élément parent.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -56,9 +43,9 @@ ms.lasthandoff: 01/08/2018
 |Relation|Élément|  
 |------------------|-------------|  
 |Éléments parents|[Élément MiningModel](../../../analysis-services/scripting/objects/miningmodel-element-assl.md), [MiningModelPermission](../../../analysis-services/scripting/objects/miningmodelpermission-element-assl.md), [MiningStructurePermission](../../../analysis-services/scripting/objects/miningstructurepermission-element-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Les éléments qui correspondent aux parents de **AllowDrillThrough** dans le modèle d’objet objets AMO (Analysis Management) sont <xref:Microsoft.AnalysisServices.MiningModel>, <xref:Microsoft.AnalysisServices.MiningModelPermission>, et <xref:Microsoft.AnalysisServices.MiningStructurePermission>.  
   
 ## <a name="drillthrough-on-mining-structures"></a>Extraction sur des structures d'exploration de données  
@@ -70,12 +57,12 @@ ms.lasthandoff: 01/08/2018
   
  `SELECT * FROM <structure>.CASES`  
   
- ou Gestionnaire de configuration  
+ ou  
   
  `SELECT StructureColumn('<structure-column-name>') FROM <model>.CASES`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément role &#40; ASSL &#41;](../../../analysis-services/scripting/objects/role-element-assl.md)   
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)  
+ [Élément role & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/objects/role-element-assl.md)   
+ [Propriétés & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/properties/properties-assl.md)  
   
   

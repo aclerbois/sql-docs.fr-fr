@@ -1,37 +1,34 @@
 ---
-title: "Connecter des clients à une session de mise en miroir de bases de données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Connecter des clients à une session de mise en miroir de bases de données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - partners [SQL Server], connecting clients to
 - database mirroring [SQL Server], connecting clients to
 - client connections [SQL Server], database mirroring
 - connections [SQL Server], database mirroring
 ms.assetid: 0d5d2742-2614-43de-9ab9-864addb6299b
-caps.latest.revision: 
+caps.latest.revision: 95
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ef24aef79874e7ade0c0ed0dc78f88faa366299c
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: d660af472c085d7f4ae9fe6cb9fa8a569abfac0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-clients-to-a-database-mirroring-session-sql-server"></a>Connecter des clients à une session de mise en miroir de bases de données (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Pour établir une connexion avec une session de mise en miroir de bases de données, un client peut soit utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, soit le fournisseur de données .NET Framework pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. S'ils sont configurés pour une base de données [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] , ces deux fournisseurs d'accès aux données prennent pleinement en charge la mise en miroir de bases de données. Pour plus d'informations sur les éléments de programmation à prendre en compte pour l'utilisation d'une base de données mise en miroir, consultez [Using Database Mirroring](../../relational-databases/native-client/features/using-database-mirroring.md). Qui plus est, l'instance de serveur principal actuelle doit être disponible et la connexion du client doit avoir été créée dans l'instance de serveur. Pour plus d’informations, consultez [Dépanner des utilisateurs orphelins &#40;SQL Server&#41;](../../sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server.md). Les connexions clientes à une session de mise en miroir de base de données n'exigent pas l'intervention de l'instance de serveur témoin (le cas échéant).  
+  Pour établir une connexion avec une session de mise en miroir de bases de données, un client peut soit utiliser [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client, soit le fournisseur de données .NET Framework pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. S'ils sont configurés pour une base de données [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] , ces deux fournisseurs d'accès aux données prennent pleinement en charge la mise en miroir de bases de données. Pour plus d'informations sur les éléments de programmation à prendre en compte pour l'utilisation d'une base de données mise en miroir, consultez [Using Database Mirroring](../../relational-databases/native-client/features/using-database-mirroring.md). Qui plus est, l'instance de serveur principal actuelle doit être disponible et la connexion du client doit avoir été créée dans l'instance de serveur. Pour plus d’informations, consultez [Dépanner des utilisateurs orphelins &#40;SQL Server&#41;](../../sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server.md). Les connexions clientes à une session de mise en miroir de base de données n'exigent pas l'intervention de l'instance de serveur témoin (le cas échéant).  
   
   
 ##  <a name="InitialConnection"></a> Établissement de la connexion initiale à une session de mise en miroir de bases de données  
@@ -183,10 +180,10 @@ Server=123.34.45.56,4724;
   
 |Arrondi|Calcul de*RetryTime* |Délai entre chaque tentative|  
 |-----------|-----------------------------|----------------------------|  
-| 1|0 **+(**0,08 **\*** 15**)**|1,2 secondes|  
-|2|1,2 **+(**0,08 **\*** 15**)**|2,4 secondes|  
-|3|2,4 **+(**0,08 **\*** 15**)**|3,6 secondes|  
-|4|3,6 **+(**0,08 **\*** 15**)**|4,8 secondes|  
+| 1|0 **+(** 0,08 **\*** 15 **)**|1,2 secondes|  
+|2|1,2 **+(** 0,08 **\*** 15 **)**|2,4 secondes|  
+|3|2,4 **+(** 0,08 **\*** 15 **)**|3,6 secondes|  
+|4|3,6 **+(** 0,08 **\*** 15 **)**|4,8 secondes|  
   
  Le tableau suivant illustre ces délais pour les tentatives de connexion successives, lesquelles excèdent toutes le délai d'expiration.  
   

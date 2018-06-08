@@ -1,49 +1,23 @@
 ---
-title: "Référence technique de Microsoft Neural Network algorithme | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- HIDDEN_NODE_RATIO parameter
-- MAXIMUM_INPUT_ATTRIBUTES parameter
-- HOLDOUT_PERCENTAGE parameter
-- neural network algorithms [Analysis Services]
-- output layer [Data Mining]
-- neural networks
-- MAXIMUM_OUTPUT_ATTRIBUTES parameter
-- MAXIMUM_STATES parameter
-- SAMPLE_SIZE parameter
-- hidden layer
-- hidden neurons
-- input layer [Data Mining]
-- activation function [Data Mining]
-- Back-Propagated Delta Rule network
-- neural network model [Analysis Services]
-- coding [Data Mining]
-- HOLDOUT_SEED parameter
-ms.assetid: b8fac409-e3c0-4216-b032-364f8ea51095
-caps.latest.revision: 
-author: Minewiskan
+title: Référence technique de Microsoft Neural Network algorithme | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ceac69e8f44885b16983b1354acea23f43b5b594
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 76e71ae9c0ceb236c49df8e7fc8ec67713ef3e76
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-neural-network-algorithm-technical-reference"></a>Microsoft Neural Network Algorithm Technical Reference
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L’algorithme MNN ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network) utilise un réseau *perceptron multicouche*, également appelé *réseau à règle delta à rétropropagation*, qui peut comporter jusqu’à trois couches de neurones, ou *perceptrons*. une couche d'entrée, une couche masquée facultative et une couche de sortie.  
+  L’algorithme MNN ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network) utilise un réseau *perceptron multicouche*, également appelé *réseau à règle delta à rétropropagation*, qui peut comporter jusqu’à trois couches de neurones, ou *perceptrons*. une couche d'entrée, une couche masquée facultative et une couche de sortie.  
   
  Les réseaux neuronaux de type perceptron multicouche ne sont pas décrits en détails dans la présente documentation. Cette rubrique explique l'implémentation de base de l'algorithme, dont la méthode utilisée pour normaliser les valeurs d'entrée et de sortie, ainsi que les méthodes de sélection de fonctionnalités utilisées pour réduire la cardinalité de l'attribut. Cette rubrique décrit les paramètres et autres valeurs qui peuvent être utilisés pour personnaliser le comportement de l'algorithme, et fournit des liens vers des informations supplémentaires sur l'interrogation du modèle.  
   
@@ -209,7 +183,7 @@ L’algorithme MNN ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural N
   
 ## <a name="see-also"></a>Voir aussi  
  [MNN (Microsoft Neural Network)](../../analysis-services/data-mining/microsoft-neural-network-algorithm.md)   
- [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)   
+ [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)   
  [Exemples de requête de modèle de réseau neuronal](../../analysis-services/data-mining/neural-network-model-query-examples.md)  
   
   

@@ -1,17 +1,14 @@
 ---
 title: Configurer les comptes de service Windows et les autorisations | Microsoft Docs
 ms.custom: ''
-ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: configure-windows
+ms.date: 05/08/2018
+ms.prod: sql
+ms.prod_service: high-availability
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: configuration
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - startup service states [SQL Server]
 - Setup [SQL Server], user accounts
@@ -53,16 +50,15 @@ helpviewer_keywords:
 - manual startup state [SQL Server]
 - accounts [SQL Server], user
 ms.assetid: 309b9dac-0b3a-4617-85ef-c4519ce9d014
-caps.latest.revision: ''
+caps.latest.revision: 207
 author: MikeRayMSFT
-ms.author: MikeRay
+ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 4f037130b00871303648aefd3d35553e702091a8
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 59306ab48061fe2c759b4cb2dac784e7a24cb325
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-windows-service-accounts-and-permissions"></a>Configurer les comptes de service Windows et les autorisations
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -71,10 +67,11 @@ ms.lasthandoff: 03/22/2018
 
   Chaque service de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] représente un processus ou un ensemble de processus permettant de gérer l'authentification des opérations de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] avec Windows. Cette rubrique décrit la configuration par défaut des services inclus dans cette version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ainsi que les options de configuration des services [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] susceptibles d'être définies durant l'installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et par la suite. Cette rubrique permet aux utilisateurs expérimentés de comprendre les détails des comptes de service.  
   
- La plupart des services et de leurs propriétés peuvent être configurés à l’aide du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Voici les chemins d’accès aux quatre dernières versions lorsque Windows est installé sur le lecteur C.  
+ La plupart des services et de leurs propriétés peuvent être configurés à l’aide du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Voici les chemins d’accès aux quatre dernières versions lorsque Windows est installé sur le lecteur C.  
   
 |||  
 |-|-|  
+|SQL Server 2017|C:\Windows\SysWOW64\SQLServerManager14.msc| 
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] 2016|C:\Windows\SysWOW64\SQLServerManager13.msc|  
 |[!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|C:\Windows\SysWOW64\SQLServerManager12.msc|  
 |[!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]|C:\Windows\SysWOW64\SQLServerManager11.msc|  
@@ -137,7 +134,7 @@ Le tableau suivant répertorie les comptes de service par défaut utilisés par 
 |---------------|------------------------------------|----------------------------------------------------------------|  
 |[!INCLUDE[ssDE](../../includes/ssde-md.md)]|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
-|[!INCLUDE[ssAS](../../includes/ssas-md.md)]|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
+|[!INCLUDE[ssAS](../../includes/ssas-md.md)]|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)* **|  
 |[!INCLUDE[ssIS](../../includes/ssis-md.md)]|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
 |[!INCLUDE[ssRS](../../includes/ssrs-md.md)]|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay Controller|[SERVICE RÉSEAU](#Network_Service)|[Compte virtuel](#VA_Desc)*|  
@@ -149,7 +146,8 @@ Le tableau suivant répertorie les comptes de service par défaut utilisés par 
 |Moteur PolyBase  |[SERVICE RÉSEAU](#Network_Service) |[SERVICE RÉSEAU](#Network_Service)  |
 |Service de déplacement de données PolyBase |[SERVICE RÉSEAU](#Network_Service) |[SERVICE RÉSEAU](#Network_Service)  |
   
- *Quand des ressources externes à l’ordinateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont requises, [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande d’utiliser un compte de service administré (MSA), configuré avec le minimum de privilèges nécessaires.  
+ *Quand des ressources externes à l’ordinateur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont requises, [!INCLUDE[msCoName](../../includes/msconame-md.md)] recommande d’utiliser un compte de service administré (MSA), configuré avec le minimum de privilèges nécessaires.   
+ ** Quand il est installé sur un contrôleur de domaine, un compte virtuel ne peut pas être utilisé comme compte de service.
   
  **Instance de cluster de basculement SQL Server**
   
@@ -295,7 +293,7 @@ Cette section décrit les autorisations configurées par le programme d'installa
   
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] |Autorisations accordées par le programme d'installation de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]|
 |---------------------------------------|------------------------------------------------------------|
-|**[!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]:**<br /><br /> (Tous les droits sont accordés au SID par service. Instance par défaut : **NT SERVICE\MSSQLSERVER**. Instance nommée : **NT SERVICE\MSSQL$**NomInstance.)|**Ouvrir une session en tant que service** (SeServiceLogonRight)<br /><br /> **Remplacer un jeton de niveau processus** (SeAssignPrimaryTokenPrivilege)<br /><br /> **Ignorer la vérification transversale** (SeChangeNotifyPrivilege)<br /><br /> **Ajuster les quotas de mémoire pour un processus** (SeIncreaseQuotaPrivilege)<br /><br /> Autorisation de démarrer SQL Writer<br /><br /> Autorisation de lire le service Journal des événements<br /><br /> Autorisation de lire le service d'appel de procédure distante (RPC)|  
+|**[!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)]:**<br /><br /> (Tous les droits sont accordés au SID par service. Instance par défaut : **NT SERVICE\MSSQLSERVER**. Instance nommée : **NT SERVICE\MSSQL$** NomInstance.)|**Ouvrir une session en tant que service** (SeServiceLogonRight)<br /><br /> **Remplacer un jeton de niveau processus** (SeAssignPrimaryTokenPrivilege)<br /><br /> **Ignorer la vérification transversale** (SeChangeNotifyPrivilege)<br /><br /> **Ajuster les quotas de mémoire pour un processus** (SeIncreaseQuotaPrivilege)<br /><br /> Autorisation de démarrer SQL Writer<br /><br /> Autorisation de lire le service Journal des événements<br /><br /> Autorisation de lire le service d'appel de procédure distante (RPC)|  
 |**[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent :** \*<br /><br /> (Tous les droits sont accordés au SID par service. Instance par défaut : **NT Service\SQLSERVERAGENT**. Instance nommée : **NT Service\SQLAGENT$***nom_instance*.)|**Ouvrir une session en tant que service** (SeServiceLogonRight)<br /><br /> **Remplacer un jeton de niveau processus** (SeAssignPrimaryTokenPrivilege)<br /><br /> **Ignorer la vérification transversale** (SeChangeNotifyPrivilege)<br /><br /> **Ajuster les quotas de mémoire pour un processus** (SeIncreaseQuotaPrivilege)|  
 |**[!INCLUDE[ssAS](../../includes/ssas-md.md)]:**<br /><br /> (Tous les droits sont accordés à un groupe Windows local. Instance par défaut : **SQLServerMSASUser$***nom_ordinateur***$MSSQLSERVER**. Instance nommée : **SQLServerMSASUser$***nom_ordinateur***$***nom_instance*. Instance [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] : **SQLServerMSASUser$***nom_ordinateur***$***PowerPivot*.)|**Ouvrir une session en tant que service** (SeServiceLogonRight)<br /><br /> Tabulaire uniquement :<br /><br /> **Augmenter une plage de travail de processus** (SeIncreaseWorkingSetPrivilege)<br /><br /> **Ajuster les quotas de mémoire pour un processus** (SeIncreaseQuotaSizePrivilege)<br /><br /> **Verrouiller les pages en mémoire** (SeLockMemoryPrivilege) : nécessaire uniquement quand la pagination est totalement désactivée.<br /><br /> Installations de cluster de basculement uniquement :<br /><br /> **Augmenter la priorité de planification** (SeIncreaseBasePriorityPrivilege)|  
 |**[!INCLUDE[ssRS](../../includes/ssrs-md.md)]:**<br /><br /> (Tous les droits sont accordés au SID par service. Instance par défaut : **NT SERVICE\ReportServer**. Instance nommée : **NT SERVICE\\ReportServer$***nom_instance*.)|**Ouvrir une session en tant que service** (SeServiceLogonRight)|  
@@ -413,15 +411,15 @@ Certaines autorisations de contrôle d'accès peuvent avoir été accordées à 
 ||Administrateur uniquement|\\\\.\root\Microsoft\SqlServer\ServerEvents\\<nom_instance_sql>*|Contrôle total|  
 ||Administrateurs, système|\tools\binn\schemas\sqlserver\2004\07\showplan|Contrôle total|  
 ||Utilisateurs|\tools\binn\schemas\sqlserver\2004\07\showplan|Lecture, exécution|  
-|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]|\<Compte du service Web Report Server>|*\<installation>*\Reporting Services\LogFiles|Suppression<br /><br /> READ_CONTROL<br /><br /> SYNCHRONIZE<br /><br /> FILE_GENERIC_READ<br /><br /> FILE_GENERIC_WRITE<br /><br /> FILE_READ_DATA<br /><br /> FILE_WRITE_DATA<br /><br /> FILE_APPEND_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_WRITE_EA<br /><br /> FILE_READ_ATTRIBUTES<br /><br /> FILE_WRITE_ATTRIBUTES|  
-||Identité du pool de l'Application du Gestionnaire de rapports, compte [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] , Tout le monde|*\<installation>*\Reporting Services\ReportManager, *\<installation>*\Reporting Services\ReportManager\Pages\\\*.\*, *\<installation>*\Reporting Services\ReportManager\Styles\\\*.\*, *\<installation>*\Reporting Services\ReportManager\webctrl_client\1_0\\*.\*|Lire|  
-||Identité du pool d'applications du Gestionnaire de rapports|*\<installation>*\Reporting Services\ReportManager\Pages\\*.\*|Lire|  
-||\<Compte du service Web Report Server>|*\<installation>*\Reporting Services\ReportServer|Lire|  
-||\<Compte du service Web Report Server>|*\<installation>*\Reporting Services\ReportServer\global.asax|Complète|  
-||Tout le monde|*\<installation>*\Reporting Services\ReportServer\global.asax|READ_CONTROL<br /><br /> FILE_READ_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_READ_ATTRIBUTES|  
-||SERVICE RÉSEAU|*\<installation>*\Reporting Services\ReportServer\ReportService.asmx|Complète|  
-||Tout le monde|*\<installation>*\Reporting Services\ReportServer\ReportService.asmx|READ_CONTROL<br /><br /> SYNCHRONIZE FILE_GENERIC_READ<br /><br /> FILE_GENERIC_EXECUTE<br /><br /> FILE_READ_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_EXECUTE<br /><br /> FILE_READ_ATTRIBUTES|  
-||Compte des services Windows ReportServer|*\<installation>*\Reporting Services\ReportServer\RSReportServer.config|Suppression<br /><br /> READ_CONTROL<br /><br /> SYNCHRONIZE<br /><br /> FILE_GENERIC_READ<br /><br /> FILE_GENERIC_WRITE<br /><br /> FILE_READ_DATA<br /><br /> FILE_WRITE_DATA<br /><br /> FILE_APPEND_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_WRITE_EA<br /><br /> FILE_READ_ATTRIBUTES<br /><br /> FILE_WRITE_ATTRIBUTES|  
+|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]|\<Compte du service Web Report Server>|*\<installation>* \Reporting Services\LogFiles|Suppression<br /><br /> READ_CONTROL<br /><br /> SYNCHRONIZE<br /><br /> FILE_GENERIC_READ<br /><br /> FILE_GENERIC_WRITE<br /><br /> FILE_READ_DATA<br /><br /> FILE_WRITE_DATA<br /><br /> FILE_APPEND_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_WRITE_EA<br /><br /> FILE_READ_ATTRIBUTES<br /><br /> FILE_WRITE_ATTRIBUTES|  
+||Identité du pool de l'Application du Gestionnaire de rapports, compte [!INCLUDE[vstecasp](../../includes/vstecasp-md.md)] , Tout le monde|*\<installation>* \Reporting Services\ReportManager, *\<installation>* \Reporting Services\ReportManager\Pages\\\*.\*, *\<installation>* \Reporting Services\ReportManager\Styles\\\*.\*, *\<installation>* \Reporting Services\ReportManager\webctrl_client\1_0\\*.\*|Lire|  
+||Identité du pool d'applications du Gestionnaire de rapports|*\<installation>* \Reporting Services\ReportManager\Pages\\*.\*|Lire|  
+||\<Compte du service Web Report Server>|*\<installation>* \Reporting Services\ReportServer|Lire|  
+||\<Compte du service Web Report Server>|*\<installation>* \Reporting Services\ReportServer\global.asax|Complète|  
+||Tout le monde|*\<installation>* \Reporting Services\ReportServer\global.asax|READ_CONTROL<br /><br /> FILE_READ_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_READ_ATTRIBUTES|  
+||SERVICE RÉSEAU|*\<installation>* \Reporting Services\ReportServer\ReportService.asmx|Complète|  
+||Tout le monde|*\<installation>* \Reporting Services\ReportServer\ReportService.asmx|READ_CONTROL<br /><br /> SYNCHRONIZE FILE_GENERIC_READ<br /><br /> FILE_GENERIC_EXECUTE<br /><br /> FILE_READ_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_EXECUTE<br /><br /> FILE_READ_ATTRIBUTES|  
+||Compte des services Windows ReportServer|*\<installation>* \Reporting Services\ReportServer\RSReportServer.config|Suppression<br /><br /> READ_CONTROL<br /><br /> SYNCHRONIZE<br /><br /> FILE_GENERIC_READ<br /><br /> FILE_GENERIC_WRITE<br /><br /> FILE_READ_DATA<br /><br /> FILE_WRITE_DATA<br /><br /> FILE_APPEND_DATA<br /><br /> FILE_READ_EA<br /><br /> FILE_WRITE_EA<br /><br /> FILE_READ_ATTRIBUTES<br /><br /> FILE_WRITE_ATTRIBUTES|  
 ||Tout le monde|Clés Report Server (ruche Instid)|Demander la valeur<br /><br /> Énumérer les sous-clés<br /><br /> Notifier<br /><br /> Contrôle en lecture|  
 ||Utilisateur de Terminal Services|Clés Report Server (ruche Instid)|Demander la valeur<br /><br /> Définir la valeur<br /><br /> Créer une sous-clé<br /><br /> Énumérer les sous-clés<br /><br /> Notifier<br /><br /> DELETE<br /><br /> Contrôle en lecture|  
 ||Utilisateurs avec pouvoir|Clés Report Server (ruche Instid)|Demander la valeur<br /><br /> Définir la valeur<br /><br /> Créer une sous-clé<br /><br /> Énumérer les sous-clés<br /><br /> Notifier<br /><br /> DELETE<br /><br /> Contrôle en lecture|  

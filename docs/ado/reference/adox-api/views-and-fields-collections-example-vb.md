@@ -1,33 +1,30 @@
 ---
-title: "Des vues et des champs de l’exemple de Collections (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Des vues et des champs de l’exemple de Collections (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Views collection [ADOX], Visual Basic example
 - Fields collection [ADOX]
 ms.assetid: d8304849-3f80-4cf3-9425-529d2a8ebedd
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 906b63d5182d316c7f0c82e75645002459644bc0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b227a5deb4442e2b5f358f59d6d89db50e21a42a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="views-and-fields-collections-example-vb"></a>Vues et exemple de Collections de champs (VB)
 Le code suivant montre comment utiliser le [commande](../../../ado/reference/adox-api/command-property-adox.md) propriété et la [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet à récupérer les informations de champ pour la vue.  

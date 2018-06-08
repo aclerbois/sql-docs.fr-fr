@@ -1,16 +1,14 @@
 ---
 title: backupmediafamily (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - backupmediafamily
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - backupmediafamily system table
 - backup media [SQL Server], backupmediafamily system table
 ms.assetid: ee16de24-3d95-4b2e-a094-78df2514d18a
-caps.latest.revision: 
+caps.latest.revision: 46
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ac82ec09c8051fae6614f19aad5ad2fb518bf710
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: da7d59170e9ed3ed9a1808e03e792474c22afddd
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="backupmediafamily-transact-sql"></a>backupmediafamily (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -39,7 +36,7 @@ ms.lasthandoff: 03/08/2018
     
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**media_set_id**|**int**|Numéro d'identification unique du support de sauvegarde dont cette famille est membre. References **backupmediaset(media_set_id)**|  
+|**media_set_id**|**int**|Numéro d'identification unique du support de sauvegarde dont cette famille est membre. Références **backupmediaset (media_set_id)**|  
 |**family_sequence_number**|**tinyint**|Position de la famille de supports dans le support de sauvegarde.|  
 |**media_family_id**|**uniqueidentifier**|Numéro d'identification unique de la famille de supports de sauvegarde. Sa valeur peut être NULL.|  
 |**media_count**|**int**|Nombre de supports de sauvegarde dans la famille de supports. Sa valeur peut être NULL.|  
@@ -60,6 +57,6 @@ ms.lasthandoff: 03/08/2018
  [backupfilegroup &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupfilegroup-transact-sql.md)   
  [backupmediaset &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupmediaset-transact-sql.md)   
  [backupset &#40;Transact-SQL&#41;](../../relational-databases/system-tables/backupset-transact-sql.md)   
- [System Tables &#40;Transact-SQL&#41;](../../relational-databases/system-tables/system-tables-transact-sql.md)  
+ [Tables système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/system-tables-transact-sql.md)  
   
   

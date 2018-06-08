@@ -1,29 +1,19 @@
 ---
-title: "Leçon 3 : Modification des mesures, des attributs et hiérarchies | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 17d243cb-9bfb-43d7-8e6f-4d601fd62150
-caps.latest.revision: 
-author: Minewiskan
+title: 'Leçon 3 : Modification des mesures, des attributs et hiérarchies | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 692d6b3567f9f9ea3e3fe404a85f8d9e09f44c5f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 1a75fc19b3e6fca6520a1257cc979bf8f194cfa9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-3-modifying-measures-attributes-and-hierarchies"></a>Leçon 3 : Modification des mesures, des attributs et des hiérarchies
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -52,7 +42,7 @@ Au cours de cette tâche, vous allez parcourir les données du cube à l'aide du
   
 ## <a name="see-also"></a>Voir aussi  
 [Scénario du didacticiel Analysis Services](../analysis-services/analysis-services-tutorial-scenario.md)  
-[Modélisation multidimensionnelle &#40; Didacticiel Adventure Works &#41;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
+[Modélisation multidimensionnelle & #40 ; Didacticiel Adventure Works & #41 ;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
   
   
   

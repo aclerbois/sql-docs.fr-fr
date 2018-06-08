@@ -1,28 +1,26 @@
 ---
-title: "Bonnes pratiques pour appeler des procédures stockées compilées en mode natif | Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques pour appeler des procédures stockées compilées en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 03/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f39fc1c7-cfec-4a95-97f6-6b95954694bb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4e1b27cd91d14a58955a5eac0eb3978220501ff2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d52f34dc2eea6d5b0fa09e08e20ebe1fb7704478
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="best-practices-for-calling-natively-compiled-stored-procedures"></a>Bonnes pratiques pour appeler des procédures stockées compilées en mode natif
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

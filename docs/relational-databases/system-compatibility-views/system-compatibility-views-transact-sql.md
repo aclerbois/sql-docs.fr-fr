@@ -1,16 +1,14 @@
 ---
-title: "Vues de compatibilité de système (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: Vues de compatibilité de système (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-compatibility-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -26,16 +24,15 @@ helpviewer_keywords:
 - compatibility [SQL Server], system tables
 - user IDs [SQL Server]
 ms.assetid: 8e4624f5-9d36-4ce7-9c9e-1fe010fa2122
-caps.latest.revision: 
+caps.latest.revision: 39
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0d05a2c3c720b1acbd806f2898c9bf160083aa70
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b673db37d8b2123f40febb300d6aba3433f4beed
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="system-compatibility-views-transact-sql"></a>Vues de compatibilité de système (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -54,7 +51,7 @@ ms.lasthandoff: 02/09/2018
 |**groupuid**|**sysmembers**|**sys.database_role_members**|  
 |**uid**|**sysobjects**|**sys.objects**|  
 |**uid**|**sysprotects**|**sys.database_permissions**<br /><br /> **sys.server_permissions**|  
-|**grantor**|**sysprotects**|**sys.database_permissions**<br /><br /> **sys.server_permissions**|  
+|**fournisseur d’autorisations**|**sysprotects**|**sys.database_permissions**<br /><br /> **sys.server_permissions**|  
 |**xusertype**|**systypes**|**sys.types**|  
 |**uid**|**systypes**|**sys.types**|  
 |**uid**|**sysusers**|**sys.database_principals**|  
@@ -69,6 +66,6 @@ ms.lasthandoff: 02/09/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
- [Mappage des Tables système pour les vues système &#40; Transact-SQL &#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)  
+ [Mappage des Tables système avec les vues système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)  
   
   

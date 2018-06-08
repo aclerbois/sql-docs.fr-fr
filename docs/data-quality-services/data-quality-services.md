@@ -2,30 +2,31 @@
 title: Data Quality Services | Microsoft Docs
 ms.custom: ''
 ms.date: 10/12/2013
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9c6b996c-e768-4bf5-837f-5436ed9cea1d
-caps.latest.revision: ''
+caps.latest.revision: 67
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 648620fc2da4fd3e033feec89531fea3ec7dceae
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: b05d903143acada9600657398a4d5b166d8cdc87
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-quality-services"></a>Data Quality Services
-  [!INCLUDE[ssDQSnoversionLong](../includes/ssdqsnoversionlong-md.md)] (DQS) est un produit de gestion de la qualité des données reposant sur les connaissances. DQS vous permet de générer une base de connaissances et de l'utiliser pour effectuer diverses tâches stratégiques liées à la qualité des données, notamment la correction, l'enrichissement, la normalisation et la déduplication de vos données. DQS vous permet de nettoyer vos données à l'aide de services de données de référence en nuage proposés par des fournisseurs de données de référence. DQS propose également un profilage intégré à ses tâches de qualité des données pour l'analyse de l'intégrité de vos données.  
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
+[!INCLUDE[ssDQSnoversionLong](../includes/ssdqsnoversionlong-md.md)] (DQS) est un produit de gestion de la qualité des données reposant sur les connaissances. DQS vous permet de générer une base de connaissances et de l'utiliser pour effectuer diverses tâches stratégiques liées à la qualité des données, notamment la correction, l'enrichissement, la normalisation et la déduplication de vos données. DQS vous permet de nettoyer vos données à l'aide de services de données de référence en nuage proposés par des fournisseurs de données de référence. DQS propose également un profilage intégré à ses tâches de qualité des données pour l'analyse de l'intégrité de vos données.  
   
  DQS se compose de [!INCLUDE[ssDQSServer](../includes/ssdqsserver-md.md)] et de [!INCLUDE[ssDQSClient](../includes/ssdqsclient-md.md)], tous deux installés dans le cadre de [!INCLUDE[ssCurrent](../includes/sscurrent-md.md)]. [!INCLUDE[ssDQSServer](../includes/ssdqsserver-md.md)] est une fonctionnalité d'instance de SQL Server composée de trois catalogues SQL Server offrant des fonctionnalités de qualité des données et de stockage des données. [!INCLUDE[ssDQSClient](../includes/ssdqsclient-md.md)] est une fonctionnalité partagée de SQL Server que les utilisateurs professionnels, les travailleurs de l'information et les professionnels de l'informatique peuvent utiliser pour effectuer des analyses de qualité des données assistées par ordinateur et gérer interactivement la qualité de leurs données. Vous pouvez également exécuter des processus de qualité des données à l'aide des fonctionnalités de qualité des données [!INCLUDE[ssDQSCleansingLong](../includes/ssdqscleansinglong-md.md)] et Master Data Services (MDS), qui sont basés sur DQS.  
   

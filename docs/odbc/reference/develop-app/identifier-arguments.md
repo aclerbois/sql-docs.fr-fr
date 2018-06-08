@@ -1,31 +1,28 @@
 ---
-title: "Arguments de l’identificateur | Documents Microsoft"
-ms.custom: 
+title: Arguments de l’identificateur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - identifier arguments [ODBC]
 - catalog functions [ODBC], arguments
 - arguments in catalog functions [ODBC], identifier
 ms.assetid: b9de003f-cb49-4dec-b528-14a5b8ff12bd
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1a6800d7cb73790c61ec94acaffdeb291fa6b475
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1d483c50928d93ecd64419726eb77ae162f221f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="identifier-arguments"></a>Arguments de l’identificateur
 Si une chaîne dans un argument de l’identificateur est placé entre guillemets, le pilote supprime de début et les espaces à droite et traite littéralement la chaîne entre guillemets. Si la chaîne n’est pas placé entre guillemets, le pilote supprime les espaces et des plis la chaîne en majuscules. La définition d’un argument d’identificateur à un pointeur null retourne SQL_ERROR et SQLSTATE HY009 (utilisation non valide d’un pointeur null), sauf si l’argument est un nom de catalogue et de catalogues ne sont pas pris en charge.  

@@ -1,31 +1,29 @@
 ---
-title: "Guide de validation et d’optimisation post-migration | Microsoft Docs"
-ms.custom: 
+title: Guide de validation et d’optimisation post-migration | Microsoft Docs
+ms.custom: ''
 ms.date: 5/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - post-migration validation and optimization
 - guide, post-migration validation and optimization
 ms.assetid: 11f8017e-5bc3-4bab-8060-c16282cfbac1
-caps.latest.revision: 
+caps.latest.revision: 3
 author: pelopes
 ms.author: harinid
-manager: 
-ms.workload: Inactive
-ms.openlocfilehash: 3264cab532c77a8e27daff0a3c5c1bd5ed801818
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+manager: ''
+ms.openlocfilehash: 72d3f28c6cc0e2998004b8b4883fdb846e2a92e2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="post-migration-validation-and-optimization-guide"></a>Guide de validation et d’optimisation post-migration
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -112,4 +110,63 @@ Voici quelques exemples de prédicats non SARGable :
 1. Déclarez toujours les variables/paramètres en tant que [type de données](../t-sql/data-types/data-types-transact-sql.md) cible prévu. 
   -   Cela peut impliquer la comparaison d’une construction de code définie par l’utilisateur et stockée dans la base de données (par exemple des procédures stockées, des fonctions définies par l’utilisateur ou des vues) aux tables système qui contiennent des informations sur les types de données utilisés dans les tables sous-jacentes (par exemple [sys.columns](../relational-databases/system-catalog-views/sys-columns-transact-sql.md)).
 2. Si vous ne parvenez pas à traverser l’ensemble du code jusqu’au point précédent, pour la même finalité, changez le type de données de la table afin qu’il corresponde à une déclaration de variable/paramètre.
-3. Vérifiez l’utili
+3. Vérifiez l’utilité des constructions suivantes :
+  -   fonctions utilisées en tant que prédicats ;
+  -   recherches à l’aide de caractères génériques ;
+  -   expressions complexes basées sur des données en colonne (évaluez la nécessité de créer plutôt des colonnes calculées persistantes, lesquelles sont indexables).
+
+> [!NOTE] 
+> Tout ce qui précède peut être réalisé par programmation.
+
+## <a name="TableValuedFunctions"></a> Utilisation de fonctions table (à instructions multiples ou inline)
+
+**S’applique à :** Plateforme étrangère (par exemple Oracle, DB2, MySQL et Sybase) et à la migration de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].
+
+> [!NOTE]
+> Pour les migrations de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] à [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], si ce problème existe dans la source [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], la migration vers une version plus récente de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] en l’état ne concerne pas ce scénario.
+
+Les fonctions table retournent un type de données de table qui peut représenter une alternative aux vues. Alors que les vues sont limitées à une seule instruction `SELECT`, les fonctions définies par l’utilisateur peuvent contenir des instructions supplémentaires qui autorisent plusieurs logiques dans les vues.
+
+> [!IMPORTANT] 
+> Dans la mesure où la table de sortie d’une fonction table à instructions multiples n’est pas créée au moment de la compilation, l’optimiseur de requête [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] s’appuie sur des valeurs heuristiques et non des statistiques réelles pour déterminer les estimations de lignes. Même si les index sont ajoutés aux tables de base, cela n’est d’aucune aide. En ce qui concerne les fonctions table à instructions multiples, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] utilise une estimation fixe égale à 1 pour le nombre de lignes à retourner par une fonction table à instructions multiples (à partir de [!INCLUDE[ssSQL14](../includes/sssql14-md.md)], cette estimation fixe est de 100 lignes).
+
+### <a name="steps-to-resolve"></a>Étapes de résolution
+1.  Si la fonction table à instructions multiples contient une seule instruction, convertissez-la en fonction table inline.
+
+    ```sql
+    CREATE FUNCTION dbo.tfnGetRecentAddress(@ID int)
+    RETURNS @tblAddress TABLE
+    ([Address] VARCHAR(60) NOT NULL)
+    AS
+    BEGIN
+      INSERT INTO @tblAddress ([Address])
+      SELECT TOP 1 [AddressLine1]
+      FROM [Person].[Address]
+      WHERE  AddressID = @ID
+      ORDER BY [ModifiedDate] DESC
+    RETURN
+    END
+    ```
+    Pour 
+
+    ```sql
+    CREATE FUNCTION dbo.tfnGetRecentAddress_inline(@ID int)
+    RETURNS TABLE
+    AS
+    RETURN (
+      SELECT TOP 1 [AddressLine1] AS [Address]
+      FROM [Person].[Address]
+      WHERE  AddressID = @ID
+      ORDER BY [ModifiedDate] DESC
+    )
+    ```
+
+2.  Si la situation est plus complexe, utilisez des résultats intermédiaires stockés dans des tables à mémoire optimisée ou des tables temporaires.
+
+##  <a name="Additional_Reading"></a> Lecture supplémentaire  
+ [Bonnes pratiques relatives au Magasin des requêtes](../relational-databases/performance/best-practice-with-the-query-store.md)  
+[Tables optimisées en mémoire](../relational-databases/in-memory-oltp/memory-optimized-tables.md)  
+[Fonctions définies par l'utilisateur](../relational-databases/user-defined-functions/user-defined-functions.md)  
+[Variables de table et estimations de lignes - Partie 1](https://blogs.msdn.microsoft.com/blogdoezequiel/2012/11/30/table-variables-and-row-estimations-part-1/)  
+[Variables de table et estimations de lignes - Partie 2](https://blogs.msdn.microsoft.com/blogdoezequiel/2012/12/09/table-variables-and-row-estimations-part-2/)  
+[Mise en cache et réutilisation du plan d’exécution](../relational-databases/query-processing-architecture-guide.md#execution-plan-caching-and-reuse)

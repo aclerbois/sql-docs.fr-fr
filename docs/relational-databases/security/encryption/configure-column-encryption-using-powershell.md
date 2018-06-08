@@ -1,28 +1,27 @@
 ---
-title: "Configurer le chiffrement de colonne à l’aide de PowerShell | Microsoft Docs"
-ms.custom: 
+title: Configurer le chiffrement de colonne à l’aide de PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - powershell
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 074c012b-cf14-4230-bf0d-55e23d24f9c8
-caps.latest.revision: 
+caps.latest.revision: 8
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b558ecb78086123cff3c65ae95446fb1a30f9cf4
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bd835e1bffa767fba40a48fbadd3e82b7f9cf5a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-column-encryption-using-powershell"></a>Configurer le chiffrement de colonne à l’aide de PowerShell
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -30,7 +29,7 @@ ms.lasthandoff: 02/12/2018
 Cet article fournit les étapes de définition de la configuration d’Always Encrypted cible pour les colonnes de base de données à l’aide de l’applet de commande [Set-SqlColumnEncryption](https://docs.microsoft.com/powershell/sqlserver/sqlserver/vlatest/set-sqlcolumnencryption) (dans le module PowerShell *SqlServer* ). L’applet de commande **Set-SqlColumnEncryption** modifie le schéma de la base de données cible et les données stockées dans les colonnes sélectionnées. Les données stockées dans une colonne peuvent être chiffrées, rechiffrées ou déchiffrées, en fonction des paramètres de chiffrement cible spécifiés pour les colonnes et de la configuration de chiffrement active.
 Pour plus d’informations sur la prise en charge d’Always Encrypted dans le module SqlServer PowerShell, consultez [Configurer Always Encrypted à l’aide de PowerShell](../../../relational-databases/security/encryption/configure-always-encrypted-using-powershell.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Pour définir la configuration de chiffrement cible, vous devez vérifier ce qui suit :
 - Une clé de chiffrement de colonne est configurée dans la base de données (si vous chiffrez ou rechiffrez une colonne). Pour plus d’informations, consultez [Configurer Always Encrypted à l’aide de PowerShell](../../../relational-databases/security/encryption/configure-always-encrypted-keys-using-powershell.md).

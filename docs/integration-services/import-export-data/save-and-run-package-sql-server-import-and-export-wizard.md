@@ -1,30 +1,28 @@
 ---
-title: "Enregistrer et exécuter le package (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Enregistrer et exécuter le package (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.impexpwizard.saveschedule.f1
 ms.assetid: b582c462-3d7a-4a4c-a2a2-2c79fedab75a
-caps.latest.revision: 
+caps.latest.revision: 69
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e4b19aeecea3977b08339989e07e3b553e361372
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: bd3dbbe6ceb93e7b14c7a4594a17b5250c4d40bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-and-run-package-sql-server-import-and-export-wizard"></a>Enregistrer et exécuter le package (Assistant Importation et exportation SQL Server)
   Une fois que vous avez spécifié et configuré la source et la destination des données, l’Assistant Importation et exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche la page **Enregistrer et exécuter le package**. Dans cette page, vous spécifiez si vous souhaitez exécuter l’opération de copie immédiatement. Selon votre configuration, vous devez également pouvoir enregistrer vos paramètres sous la forme d’un package [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] (SSIS) pour ensuite le personnaliser et le réutiliser.

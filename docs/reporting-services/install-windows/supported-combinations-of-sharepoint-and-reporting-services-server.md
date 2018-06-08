@@ -1,31 +1,29 @@
 ---
 title: Combinaisons de serveurs SharePoint et Reporting Services prises en charge | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SharePoint mode
 - add-in for sharepoint
 - rsSharePoint
 ms.assetid: dc6a3372-db26-43f0-b7aa-f725acc635c2
-caps.latest.revision: 
+caps.latest.revision: 39
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 0446c7b50f78074e44258aa973f6cf970cb9f50a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 144b7676a9f1f66427fbc1d5666f5a39c012823f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-combinations-of-sharepoint-and-reporting-services-server"></a>Combinaisons de serveurs SharePoint et Reporting Services prises en charge
 

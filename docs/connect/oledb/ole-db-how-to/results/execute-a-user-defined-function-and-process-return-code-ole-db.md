@@ -3,27 +3,24 @@ title: Exécuter une fonction définie par l’utilisateur et processus de Code 
 description: Exécuter un défini par l’utilisateur (fonction) et le processus de code de retour à l’aide du pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-how-to
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - user-defined functions [OLE DB]
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 79d29c83f97f46aef83607e7bb6da511221ad05c
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 2355ea72a10fc5cee1ea35ae5c682cf5cd269c8c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-a-user-defined-function-and-process-return-code-ole-db"></a>Exécuter une fonction définie par l'utilisateur et traiter le code de retour (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -372,6 +369,6 @@ go
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Rubriques de procédures de traitement des résultats &#40; OLE DB &#41;](../../../oledb/ole-db-how-to/results/processing-results-how-to-topics-ole-db.md)  
+ [Rubriques de procédures de traitement des résultats & #40 ; OLE DB & #41 ;](../../../oledb/ole-db-how-to/results/processing-results-how-to-topics-ole-db.md)  
   
   

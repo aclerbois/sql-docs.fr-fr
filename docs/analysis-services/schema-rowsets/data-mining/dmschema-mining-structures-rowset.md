@@ -1,39 +1,28 @@
 ---
 title: Ensemble de lignes DMSCHEMA_MINING_STRUCTURES | Documents Microsoft
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-apiname: DMSCHEMA_MINING_STRUCTURES
-apitype: NA
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DMSCHEMA_MINING_STRUCTURES rowset
-ms.assetid: 6224556b-08a0-496e-bd7c-632c3e833e26
-caps.latest.revision: "36"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e75e8c17baba84bd690ec51605ffac9f577de35c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0aac1d7fb0d8c54ae18cd7b45f5f414a02eafffe
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="dmschemaminingstructures-rowset"></a>Ensemble de lignes DMSCHEMA_MINING_STRUCTURES
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Énumère les informations sur les structures d’exploration de données dans le catalogue actuel.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Fournit des informations sur les structures d'exploration de données contenues dans le catalogue actuel.  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  L'ensemble de lignes **DMSCHEMA_MINING_STRUCTURES** contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Longueur|Description|  
+|Nom de colonne|Indicateur de type|Longueur| Description|  
 |-----------------|--------------------|------------|-----------------|  
 |**STRUCTURE_CATALOG**|**DBTYPE_WSTR**||Nom du catalogue.|  
 |**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**||Nom de schéma non qualifié. **NULL** si les schémas ne sont pas pris en charge par le fournisseur.|  
@@ -58,11 +47,11 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|**STRUCTURE_CATALOG**|**DBTYPE_WSTR**|Facultatif.|  
-|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**|Facultatif.|  
-|**NOM_STRUCTURE**|**DBTYPE_WSTR**|Facultatif.|  
+|**STRUCTURE_CATALOG**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**STRUCTURE_SCHEMA**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**NOM_STRUCTURE**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
+ [Ensembles de lignes de schéma de données d’exploration de données](../../../analysis-services/schema-rowsets/data-mining/data-mining-schema-rowsets.md)  
   
   

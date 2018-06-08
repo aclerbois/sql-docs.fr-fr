@@ -3,14 +3,12 @@ title: Tables et les index | Documents Microsoft
 description: Création, modification et droping des tables et des index à l’aide du pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-tables-indexes
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -24,13 +22,12 @@ helpviewer_keywords:
 - indexes [OLE DB]
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 821355c800f2b162665b29cfcadd7d9b776a1fc6
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 1bd6c32f7a0eaa0937c937abac3f135fd19f143c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tables-and-indexes"></a>Tables et index
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -62,8 +59,8 @@ ms.lasthandoff: 03/30/2018
 -   [Suppression d’un Index SQL Server](../../oledb/ole-db-tables-indexes/dropping-a-sql-server-index.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [Pilote d’OLE DB pour SQL Server &#40;OLE DB&#41;](../../oledb/ole-db/oledb-driver-for-sql-server-ole-db.md)   
- [DROP TABLE &#40; Transact-SQL &#41;](../../../t-sql/statements/drop-table-transact-sql.md)   
+ [Programmation de SQL Server OLE DB pilote](../../oledb/ole-db/oledb-driver-for-sql-server-programming.md)   
+ [DROP TABLE & #40 ; Transact-SQL & #41 ;](../../../t-sql/statements/drop-table-transact-sql.md)   
  [CREATE INDEX &#40;Transact-SQL&#41;](../../../t-sql/statements/create-index-transact-sql.md)   
  [DROP INDEX &#40; Transact-SQL &#41;](../../../t-sql/statements/drop-index-transact-sql.md)  
   

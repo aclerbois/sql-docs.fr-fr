@@ -1,31 +1,29 @@
 ---
-title: "Visionneuse d’aide et contenu de l’aide SQL Server | Microsoft Docs"
-ms.custom: 
+title: Visionneuse d’aide et contenu de l’aide SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 12/15/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
 ms.technology: server-general
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2014
 - SQL Server 2016
 - SQL Server 2017
 ms.assetid: 51f8a08c-51d0-41d8-8bc5-1cb4d42622fb
-caps.latest.revision: 
+caps.latest.revision: 8
 author: craigg-msft
 ms.author: craigg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 679d0fb003a8a59185d860a125cfdd8b5601367c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+manager: craigg
+ms.openlocfilehash: 3d00aa3a4085b17f8fcc40fc9317b8acd77e5998
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-offline-help-and-help-viewer"></a>Visionneuse d’aide et aide en mode hors connexion SQL Server
 
@@ -181,7 +179,7 @@ L’aide en ligne affiche toujours le contenu le plus récent.
 
 **Pour afficher l’aide en ligne de SQL Server dans SSMS 17.x**
 
-- Cliquez sur **Afficher l’aide** dans le menu **Aide**. La documentation de SQL Server 2016/2017 la plus récente à partir de [https://docs.microsoft.com/sql/https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation](https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation) s’affiche dans un navigateur. 
+- Cliquez sur **Afficher l’aide** dans le menu **Aide**. La documentation la plus récente de SQL Server 2016/2017 dans [ https://docs.microsoft.com/sql/https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation ](https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation) s’affiche dans un navigateur. 
 
    ![Afficher l’aide](../sql-server/media/sql-server-help-installation/viewhelp.png)
 

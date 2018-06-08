@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLDataSources | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLDataSources
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLDataSources
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLDataSources
-helpviewer_keywords: SQLDataSources function [ODBC]
+f1_keywords:
+- SQLDataSources
+helpviewer_keywords:
+- SQLDataSources function [ODBC]
 ms.assetid: 3f63b1b4-e70e-44cd-96c6-6878d50d0117
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8aee3d9e1caa424f4792fb1fae0551adcacfcdc3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c2faa7631aaba8192f04270236b3ff9ef4e48240
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqldatasources-function"></a>SQLDataSources (fonction)
 **Mise en conformité**  
@@ -54,7 +55,7 @@ SQLRETURN SQLDataSources(
  *EnvironmentHandle*  
  [Entrée] Handle d’environnement.  
   
- *Sens*  
+ *Direction*  
  [Entrée] Détermine quelle source de données retourne des informations sur le Gestionnaire de pilotes. Valeurs possibles :  
   
  SQL_FETCH_NEXT (pour extraire le nom de source de données suivant dans la liste), SQL_FETCH_FIRST (pour récupérer à partir du début de la liste), SQL_FETCH_FIRST_USER (à l’utilisateur de l’extraction de la première source de données) ou SQL_FETCH_FIRST_SYSTEM (pour extraire le premier système DSN).  
@@ -89,7 +90,7 @@ SQLRETURN SQLDataSources(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLDataSources** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_ENV et un *gérer* de *EnvironmentHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLDataSources** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|(DM) message d’information du Gestionnaire de pilotes spécifiques. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|(DM) la mémoire tampon \* *nom_serveur* n’est pas suffisamment grande pour retourner le nom de source de données complet. Par conséquent, le nom a été tronqué. La longueur du nom de source de données entière est retournée dans \* *NameLength1Ptr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).<br /><br /> (DM) la mémoire tampon \* *Description* n’est pas suffisamment grande pour retourner la description complète de pilote. Par conséquent, la description a été tronquée. La longueur de la description de la source de données non tronqué est retournée dans **NameLength2Ptr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  

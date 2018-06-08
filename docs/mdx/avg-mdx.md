@@ -1,30 +1,31 @@
 ---
 title: AVG (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: AVG
-dev_langs: kbMDX
-helpviewer_keywords: Avg function [MDX]
+f1_keywords:
+- AVG
+dev_langs:
+- kbMDX
+helpviewer_keywords:
+- Avg function [MDX]
 ms.assetid: efe61272-c3eb-4a33-b231-e00c30be16aa
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 4972d38cb5cd52d0da7d76c6eb771520a89fb896
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: dd508fcef5ecd378dea8ec4afe86dfd35e45d1a5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="avg-mdx"></a>Avg (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +46,7 @@ Avg( Set_Expression [ , Numeric_Expression ] )
  *Numeric_expression*  
  Expression numérique valide qui correspond généralement à une expression MDX (Multidimensional Expressions) des coordonnées des cellules qui retournent un nombre.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si un jeu de tuples vides ou un jeu vide est spécifié, le **Avg** fonction retourne une valeur vide.  
   
  Le **Avg** calcule la moyenne des valeurs non vides des cellules dans le jeu spécifié en calculant la somme des valeurs d’abord toutes les cellules dans le jeu spécifié, puis en divisant cette somme par le nombre de cellules non vides dans le jeu spécifié.  
@@ -156,6 +157,6 @@ FROM
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../mdx/mdx-function-reference-mdx.md)  
   
   

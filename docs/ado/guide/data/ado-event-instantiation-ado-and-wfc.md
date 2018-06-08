@@ -1,28 +1,25 @@
 ---
-title: "Instanciation des événements ADO : ADO et WFC | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Instanciation des événements ADO : ADO et WFC | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 02/15/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 9ee4be21-657b-407a-afa4-0b27a6b096ce
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8dbbe05208498d4b23f95ded09ea9a9238c806d0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 89fefc8d733f515ef6f085e39b69268a808cefd4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-event-instantiation-ado-and-wfc"></a>Instanciation des événements ADO : ADO et WFC
 ADO pour Windows Foundation Classes (ADO/WFC) repose sur le modèle d’événement ADO et présente une interface de programmation d’application simplifiée. En général, ADO/WFC intercepte les événements ADO, consolide les paramètres d’événement dans une classe d’événement unique, puis appelle le Gestionnaire d’événements.  
@@ -69,7 +66,7 @@ ADO pour Windows Foundation Classes (ADO/WFC) repose sur le modèle d’événem
   
 ## <a name="see-also"></a>Voir aussi  
  [Résumé du Gestionnaire d’événements ADO](../../../ado/guide/data/ado-event-handler-summary.md)   
- [ADO - WFC Syntax Index](../../../ado/reference/ado-api/ado-wfc-syntax-index.md)   
+ [ADO - Index de la syntaxe WFC](../../../ado/reference/ado-api/ado-wfc-syntax-index.md)   
  [Paramètres d’événement](../../../ado/guide/data/event-parameters.md)   
  [Fonctionnement conjoint des gestionnaires d’événements](../../../ado/guide/data/how-event-handlers-work-together.md)   
  [Types d’événements](../../../ado/guide/data/types-of-events.md)

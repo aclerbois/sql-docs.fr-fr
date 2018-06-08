@@ -1,17 +1,14 @@
 ---
-title: "Unités de sauvegarde (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Unités de sauvegarde (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/12/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - tape backup devices, about tape backup devices
 - backup devices [SQL Server]
@@ -28,20 +25,19 @@ helpviewer_keywords:
 - backing up databases [SQL Server], backup devices
 - devices [SQL Server]
 ms.assetid: 35a8e100-3ff2-4844-a5da-dd088c43cba4
-caps.latest.revision: 
+caps.latest.revision: 93
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1dbf5d00855a498782a65a3ff04e2477a2cb871d
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 3fecef550da24fb0a57c47229ccb7c289d226860
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="backup-devices-sql-server"></a>Unités de sauvegarde (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Au cours d’une opération de sauvegarde sur une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , les données sauvegardées (la *sauvegarde*) sont écrites sur une unité de sauvegarde physique. Cette unité de sauvegarde physique est activée dès l'écriture de la première sauvegarde dans un jeu de supports. Les sauvegardes sur un jeu comprenant une ou plusieurs unités de sauvegarde constituent un seul jeu de supports.  
+  Au cours d’une opération de sauvegarde sur une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , les données sauvegardées (la *sauvegarde*) sont écrites sur une unité de sauvegarde physique. Cette unité de sauvegarde physique est activée dès l'écriture de la première sauvegarde dans un jeu de supports. Les sauvegardes sur un jeu comprenant une ou plusieurs unités de sauvegarde constituent un seul jeu de supports.  
    
 ##  <a name="TermsAndDefinitions"></a> Termes et définitions  
  disque de sauvegarde  
@@ -77,7 +73,7 @@ Au cours d’une opération de sauvegarde sur une base de données [!INCLUDE[ssN
   
  Exemple :  
   
-```  
+```sql  
 BACKUP DATABASE AdventureWorks2012   
    TO DISK = 'Z:\SQLServerBackups\AdventureWorks2012.bak';  
 GO  
@@ -91,7 +87,7 @@ GO
   
  Par exemple,  
   
-```  
+```sql  
 RESTORE DATABASE AdventureWorks2012   
    FROM DISK = 'Z:\SQLServerBackups\AdventureWorks2012.bak';   
 ```  
@@ -102,7 +98,7 @@ RESTORE DATABASE AdventureWorks2012
   
  Pour éviter toute ambiguïté, en particulier dans les scripts, il est recommandé de spécifier explicitement le chemin d'accès du répertoire de sauvegarde dans chaque clause DISK. Cependant, cette exigence prend moins d'importance si vous utilisez l'Éditeur de requête. Dans ce cas, si vous êtes certain que le fichier de sauvegarde réside dans le répertoire de sauvegarde par défaut, vous pouvez omettre le chemin d'accès d'une clause DISK. Par exemple, l'instruction `BACKUP` suivante sauvegarde la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] dans le répertoire de sauvegarde par défaut.  
   
-```  
+```sql  
 BACKUP DATABASE AdventureWorks2012   
    TO DISK = ’AdventureWorks2012.bak’;  
 GO  
@@ -127,7 +123,7 @@ GO
   
  Exemple :  
   
-```  
+```sql  
 BACKUP DATABASE AdventureWorks2012   
    TO DISK = '\\BackupSystem\BackupDisk1\AW_backups\AdventureWorksData.Bak';  
 GO  
@@ -157,7 +153,7 @@ GO
   
  Exemple :  
   
-```  
+```sql  
 BACKUP LOG AdventureWorks2012   
    TO TAPE = '\\.\tape0';  
 GO  
@@ -200,7 +196,7 @@ GO
   
  Une fois définie une unité de sauvegarde logique, dans une commande BACKUP ou RESTORE, spécifiez l'unité de sauvegarde logique à la place du nom physique de l'unité. Par exemple, l'instruction suivante sauvegarde la base de données `AdventureWorks2012` dans l'unité de sauvegarde logique `AdventureWorksBackups` .  
   
-```  
+```sql  
 BACKUP DATABASE AdventureWorks2012   
    TO AdventureWorksBackups;  
 GO  

@@ -1,16 +1,14 @@
 ---
 title: sp_fkeys (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/08/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_fkeys
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_fkeys
 ms.assetid: 18110444-d38d-4cff-90d2-d1fc6236668b
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 511266de529055263470af2de8c463369d7f3c6e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: fdb582cf8e77e61d7723ea1c6ed2e854ef8f6940
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spfkeys-transact-sql"></a>sp_fkeys (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -73,7 +71,7 @@ sp_fkeys [ @pktable_name = ] 'pktable_name'
  Est le nom du qualificateur de table (contenant une clé étrangère). *FKTABLE_QUALIFIER* est **sysname**, avec NULL comme valeur par défaut. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], le qualificateur représente le nom de la base de données. Dans d'autres produits, elle représente le nom du serveur de l'environnement de base de données de la table.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
@@ -106,7 +104,7 @@ Si le nom de la table de clé primaire est spécifié et que le nom de la table 
   
 La procédure stockée sp_fkeys est équivalente à SQLForeignKeys dans ODBC.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert `SELECT` autorisation sur le schéma.  
   
 ## <a name="examples"></a>Exemples  
@@ -119,7 +117,7 @@ EXEC sp_fkeys @pktable_name = N'Department'
     ,@pktable_owner = N'HumanResources';  
 ```  
   
-## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et[!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
+## <a name="examples-includesssdwfullincludessssdwfull-mdmd-and-includesspdwincludessspdw-mdmd"></a>Exemples : [!INCLUDE[ssSDWfull](../../includes/sssdwfull-md.md)] et [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]  
  L'exemple suivant extrait une liste de clés étrangères pour la table `DimDate` dans la base de données `AdventureWorksPDW2012`. Ne retourne aucune ligne, car [!INCLUDE[ssDW](../../includes/ssdw-md.md)] ne prend pas en charge les clés étrangères.  
   
 ```sql  
@@ -127,9 +125,9 @@ EXEC sp_fkeys @pktable_name = N'DimDate;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Catalogue des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
+ [Procédures stockées du catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [sp_pkeys &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-pkeys-transact-sql.md)  
+ [sp_pkeys &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-pkeys-transact-sql.md)  
   
   
 

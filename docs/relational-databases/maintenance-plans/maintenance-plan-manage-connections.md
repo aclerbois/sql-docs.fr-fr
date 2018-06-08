@@ -2,29 +2,27 @@
 title: Plan de maintenance (Gérer les connexions) | Microsoft Docs
 ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: maintenance-plans
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.maint.connections.f1
 ms.assetid: 95ad9375-6584-423e-b9de-0e86782f8017
-caps.latest.revision: ''
+caps.latest.revision: 14
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6f7a35cc6e39beb2e81b092d862b881e4922c491
-ms.sourcegitcommit: 6e16d1616985d65484c72f5e0f34fb2973f828f4
+ms.openlocfilehash: 99250afb057830b8a6bc06eb5c2727e8d38bab88
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/16/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="maintenance-plan-manage-connections"></a>Plan de maintenance (Gérer les connexions)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

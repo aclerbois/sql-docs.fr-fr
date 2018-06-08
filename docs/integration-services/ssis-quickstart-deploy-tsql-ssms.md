@@ -1,43 +1,46 @@
 ---
-title: "Déployer un projet SSIS avec Transact-SQL (SSMS) | Microsoft Docs"
-ms.date: 09/25/2017
-ms.topic: article
-ms.prod: sql-non-specified
+title: Déployer un projet SSIS avec Transact-SQL (SSMS) | Microsoft Docs
+ms.date: 05/21/2018
+ms.topic: conceptual
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: quick-start
 ms.suite: sql
-ms.custom: 
-ms.technology: integration-services
+ms.custom: ''
+ms.technology:
+- integration-services
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa245a3411b175e1bf9b8f95d473d2980eb0f47c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 6bbcae0e5aea6521ad75401002d0a1488b5dbdf6
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="deploy-an-ssis-project-from-ssms-with-transact-sql"></a>Déployer un projet SSIS à partir de SSMS avec Transact-SQL
 
 Ce guide de démarrage rapide montre comment utiliser SQL Server Management Studio (SSMS) pour se connecter à la base de données du catalogue SSIS, puis utiliser des instructions Transact-SQL pour déployer un projet SSIS dans le catalogue SSIS. 
 
-> [!NOTE]
-> La méthode décrite dans cet article n’est pas disponible quand vous vous connectez à un serveur Azure SQL Database avec SSMS. La procédure stockée `catalog.deploy_project` attend le chemin du fichier `.ispac` dans le système de fichiers local.
-
 SQL Server Management Studio est un environnement intégré pour la gestion des infrastructures SQL, de SQL Server à SQL Database. Pour plus d’informations sur SSMS, consultez [SQL Server Management Studio (SSMS)](../ssms/sql-server-management-studio-ssms.md).
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Avant de commencer, vérifiez que vous disposez de la dernière version de SQL Server Management Studio. Pour télécharger SSMS, consultez [Télécharger SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
+
+## <a name="supported-platforms"></a>Plateformes prises en charge
+
+Vous pouvez utiliser les informations de ce guide de démarrage rapide pour déployer un projet SSIS sur les plateformes suivantes :
+
+-   SQL Server sur Windows.
+
+Vous ne pouvez pas utiliser les informations de ce guide de démarrage rapide pour déployer un package SSIS sur Azure SQL Database. La procédure stockée `catalog.deploy_project` attend le chemin du fichier `.ispac` dans le système de fichiers local. Pour plus d’informations sur le déploiement et l’exécution de packages dans Azure, consultez [Effectuer un « lift-and-shift » des charges de travail SQL Server Integration Services vers le cloud](lift-shift/ssis-azure-lift-shift-ssis-packages-overview.md).
+
+Vous ne pouvez pas utiliser les informations de ce guide de démarrage rapide pour déployer un package SSIS sur SQL Server sur Linux. Pour plus d’informations sur l’exécution de packages sur Linux, consultez [Extraire, transformer et charger des données sur Linux avec SSIS](../linux/sql-server-linux-migrate-ssis.md).
 
 ## <a name="connect-to-the-ssis-catalog-database"></a>Se connecter à la base de données du catalogue SSIS
 
 Utilisez SQL Server Management Studio pour établir une connexion au catalogue SSIS. 
-
-> [!NOTE]
-> Un serveur Azure SQL Database est à l’écoute sur le port 1433. Si vous essayez de vous connecter à un serveur Azure SQL Database en étant derrière un pare-feu d’entreprise, ce port doit être ouvert dans le pare-feu d’entreprise pour que vous puissiez vous connecter.
 
 1. Ouvrez SQL Server Management Studio.
 
@@ -47,7 +50,7 @@ Utilisez SQL Server Management Studio pour établir une connexion au catalogue S
    | ------------ | ------------------ | ------------------------------------------------- | 
    | **Type de serveur** | Moteur de base de données | Cette valeur est requise. |
    | **Nom du serveur** | Nom complet du serveur |  |
-   | **Authentification** | Authentification SQL Server | Ce guide de démarrage rapide utilise l’authentification SQL. |
+   | **Authentification** | Authentification SQL Server | |
    | **Connexion** | Compte Administrateur du serveur | Il s’agit du compte que vous avez spécifié quand vous avez créé le serveur. |
    | **Mot de passe** | Mot de passe du compte Administrateur de votre serveur | Il s’agit du mot de passe que vous avez spécifié quand vous avez créé le serveur. |
 
@@ -62,7 +65,7 @@ Exécutez le code Transact-SQL suivant pour déployer un projet SSIS.
 
 2.  Mettez à jour les valeurs de paramètres dans la procédure stockée `catalog.deploy_project` pour votre système.
 
-3.  Vérifiez que SSISDB est la base de données active.
+3.  Vérifiez que **SSISDB** est la base de données active.
 
 4.  Exécutez le script.
 

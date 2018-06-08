@@ -1,34 +1,31 @@
 ---
-title: "Définir des seuils d’avertissement | Microsoft Docs"
-ms.custom: 
+title: Définir des seuils d’avertissement | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbmmonitor.setwarningthreshold.f1
 ms.assetid: 17f93147-e7d9-4092-b4c2-c11b38051171
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b625927cc888ef09f83ada2cae55197d9533ab18
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 51f4f099935d92f95be67b0964e9ed3a52bc764f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-warning-thresholds"></a>Définir les seuils d'avertissement
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Utilisez cette boîte de dialogue pour activer et configurer un ou plusieurs seuils d'avertissement pour la base de données sélectionnée dans l'arborescence de navigation de la boîte de dialogue **Moniteur de mise en miroir de bases de données** .  
+  Utilisez cette boîte de dialogue pour activer et configurer un ou plusieurs seuils d'avertissement pour la base de données sélectionnée dans l'arborescence de navigation de la boîte de dialogue **Moniteur de mise en miroir de bases de données** .  
   
  La boîte de dialogue tente d'établir une connexion avec les deux instances de serveurs. Ces connexions sont établies de façon asynchrone. La boîte de dialogue affiche l'état de la connexion de chaque partenaire. Si le partenaire n'est pas connecté, vous pouvez cliquer sur **Se connecter**.  
   
@@ -80,10 +77,10 @@ Utilisez cette boîte de dialogue pour activer et configurer un ou plusieurs seu
 |**Avertir si la durée de vie de la plus ancienne transaction non envoyée dépasse le seuil**|Ce seuil indique la durée exprimée en minutes des transactions qui n'ont pas encore été envoyées depuis la file d'attente d'envoi vers l'instance de serveur miroir. Cette valeur permet de mesurer la perte de données potentielle en termes de temps.|  
 |**Avertir si le temps de traitement de validation de miroir dépasse le seuil**|Ce seuil indique le délai en millisecondes par transaction (utile uniquement en mode haute sécurité). Ce délai correspond au temps de traitement pendant lequel l'instance de serveur principal attend que l'instance de serveur miroir écrive l'enregistrement du journal de transaction dans la file d'attente de restauration par progression.|  
   
- **Activé sur «**  *\<instance_serveur>*  **»**  
+ **Activé sur «**   *\<instance_serveur>*   **»**  
  Une case à cocher vide indique que l'avertissement est actuellement désactivé sur l'instance de serveur. Pour activer l'avertissement, activez la case à cocher.  
   
- **Seuil sur «**  *\<instance_serveur>*  **»**  
+ **Seuil sur «**   *\<instance_serveur>*   **»**  
  Lorsqu'un avertissement est activé, définissez le seuil dans la partie gauche de cette colonne. Un événement se produit si le seuil spécifié est atteint lors de la mise à jour de la table d'état. Si vous désactivez un seuil après avoir configuré une valeur, cette valeur reste dans le champ et sera utilisée lorsque vous activerez de nouveau l'avertissement.  
   
  Lorsqu'un avertissement n'est pas activé, ce champ est inactif.  

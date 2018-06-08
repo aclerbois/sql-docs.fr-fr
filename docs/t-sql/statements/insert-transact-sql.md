@@ -1,16 +1,14 @@
 ---
 title: INSERT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - INSERT_TSQL
@@ -34,16 +32,16 @@ helpviewer_keywords:
 - data manipulation language [SQL Server], INSERT statement
 - inserting data
 ms.assetid: 1054c76e-0fd5-4131-8c07-a6c5d024af50
-caps.latest.revision: 
+caps.latest.revision: 136
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9c1d8692b634c1f6f71c112be59eb9e5ff84ea5e
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a6076456c9053ab773901110d078a92dd545fc51
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="insert-transact-sql"></a>INSERT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -434,7 +432,7 @@ Dans Parallel Data Warehouse, la clause ORDER BY n'est pas valide dans VIEWS, CR
  Les exemples fournis dans cette section présentent les fonctionnalités de base de l'instruction INSERT en utilisant la syntaxe minimale requise.  
   
 #### <a name="a-inserting-a-single-row-of-data"></a>A. Insertion d'une seule ligne de données  
- L'exemple suivant insère une ligne dans la table `Production.UnitMeasure` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. Les colonnes de cette table sont `UnitMeasureCode`, `Name` et `ModifiedDate`. Étant donné que les valeurs de toutes les colonnes sont fournies et qu’elles sont répertoriées dans le même ordre que les colonnes de la table, il n’est pas nécessaire de spécifier les noms de colonnes dans la liste de colonnes*.*  
+ L'exemple suivant insère une ligne dans la table `Production.UnitMeasure` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)]. Les colonnes de cette table sont `UnitMeasureCode`, `Name` et `ModifiedDate`. Étant donné que les valeurs de toutes les colonnes sont fournies et qu’elles sont répertoriées dans le même ordre que les colonnes de la table, il n’est pas nécessaire de spécifier les noms de colonnes dans la liste de colonnes *.*  
   
 ```  
 INSERT INTO Production.UnitMeasure  

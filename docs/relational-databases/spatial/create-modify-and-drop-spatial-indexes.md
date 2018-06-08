@@ -1,17 +1,16 @@
 ---
-title: "Créer, modifier et supprimer les index spatiaux | Microsoft Docs"
-ms.custom: 
+title: Créer, modifier et supprimer les index spatiaux | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: spatial
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-spatial
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - indexes [SQL Server], creating
 - spatial indexes [SQL Server], dropping
@@ -20,20 +19,20 @@ helpviewer_keywords:
 - indexes [SQL Server], modifying
 - spatial indexes [SQL Server], modifying
 ms.assetid: 00c1b927-8ec5-44cf-87c2-c8de59745735
-caps.latest.revision: 
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 68f2d5d07002de55913fd8cca4166d4254f9ed90
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7466a59f0f9ae3eed8a348cffc43eea519763856
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-modify-and-drop-spatial-indexes"></a>Créer, modifier et supprimer les index spatiaux
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Un index spatial peut effectuer plus efficacement certaines opérations sur une colonne du type de données **geometry** ou **geography** (une *colonne spatiale*). Plusieurs index spatiaux peuvent être spécifiés sur une colonne spatiale. Cela peut s'avérer utile par exemple pour indexer différents paramètres de pavage dans une même colonne.  
+  Un index spatial peut effectuer plus efficacement certaines opérations sur une colonne du type de données **geometry** ou **geography** (une *colonne spatiale*). Plusieurs index spatiaux peuvent être spécifiés sur une colonne spatiale. Cela peut s'avérer utile par exemple pour indexer différents paramètres de pavage dans une même colonne.  
   
  Il existe plusieurs restrictions applicables à la création d'index spatiaux. Pour plus d'informations, consultez [Restrictions sur les index spatiaux](#restrictions) dans cette rubrique.  
   

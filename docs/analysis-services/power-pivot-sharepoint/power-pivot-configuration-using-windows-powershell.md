@@ -1,27 +1,19 @@
 ---
-title: "Configuration de tableau croisé dynamique à l’aide de Windows PowerShell de l’alimentation | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 4d83e53e-04f1-417d-9039-d9e81ae0483d
-caps.latest.revision: 
-author: Minewiskan
+title: Configuration de tableau croisé dynamique à l’aide de Windows PowerShell de l’alimentation | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f70a2f37df18dfae9ced1a1de2d9e4d991702db7
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7deb70905efe8874e3b512c10eff5c0951ab4b24
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-pivot-configuration-using-windows-powershell"></a>Configuration de Power Pivot à l’aide de Windows PowerShell
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -66,7 +58,7 @@ ms.lasthandoff: 02/15/2018
     Get-help new-powerpivotserviceapplication -example  
     ```  
   
-## <a name="enable-power-pivot-cmdlets-on-a-server"></a>Activer les applets de commande Power Pivot sur un serveur  
+## <a name="enable-power-pivot-cmdlets-on-a-server"></a>Activer les applets de commande Power Pivot sur un serveur  
  [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] sont disponibles une fois que vous avez installé [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint et déployé la solution de batterie de serveurs. Les solutions sont déployées lorsque vous exécutez l'outil de configuration [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Suivez ces étapes pour pouvoir utiliser des applets de commande :  
   
 1.  Ouvrez SharePoint Management Shell à l'aide de l'option **Exécuter en tant qu'administrateur** .  

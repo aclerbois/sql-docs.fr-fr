@@ -1,31 +1,30 @@
 ---
-title: "Propriétés du serveur (page Processeurs) | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur (page Processeurs) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.serverproperties.processor.f1
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.serverproperties.processor.f1
 ms.assetid: cc1581a2-492b-41f0-bda5-17909b65c4f7
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 66d79603535b4a31bed89623d8408d1993073516
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: adbaaa3528bf3a1c1e52d1c850ed641768c4272f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-properties---processors-page"></a>Propriétés du serveur - Page Processeurs
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez cette page pour afficher ou modifier les options de votre processeur. Les paramètres d'affinité du processeur ne sont activés que si plusieurs processeurs sont installés.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez cette page pour afficher ou modifier les options de votre processeur. Les paramètres d'affinité du processeur ne sont activés que si plusieurs processeurs sont installés.  
   
 ## <a name="options"></a>Options  
  **Affinité du processeur**  

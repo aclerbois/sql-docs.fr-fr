@@ -1,35 +1,32 @@
 ---
-title: "Formes canoniques et restrictions de modèle | Microsoft Docs"
-ms.custom: 
+title: Formes canoniques et restrictions de modèle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - pattern restrictions
 - canonical forms
 ms.assetid: 088314ec-7d0b-4a05-8a33-f35da5bfe59c
-caps.latest.revision: 
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8492b7bae99daa71c801f4d32314efa51067fcfe
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 035f7376b9d937e6d5a5d13b5e078a5ef4fcfc0a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="canonical-forms-and-pattern-restrictions"></a>Formes canoniques et restrictions de modèle
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-La facette de modèle XSD permet la restriction de l'espace lexical des types simples. Quand une restriction de modèle est appliquée à un type pour lequel il existe plusieurs représentations lexicales possibles, certaines valeurs peuvent entraîner un comportement inattendu lors de la validation.  
+  La facette de modèle XSD permet la restriction de l'espace lexical des types simples. Quand une restriction de modèle est appliquée à un type pour lequel il existe plusieurs représentations lexicales possibles, certaines valeurs peuvent entraîner un comportement inattendu lors de la validation.  
   
  Ce comportement se produit car les représentations lexicales de ces valeurs ne sont pas stockées dans la base de données. Par conséquent, les valeurs sont converties en leurs représentations canoniques lorsqu'elles sont sérialisées pour la sortie. Si un document contient une valeur dont la forme canonique n'est pas conforme à la restriction de modèle propre à son type, il est rejeté si un utilisateur tente de réinsérer la valeur.  
   

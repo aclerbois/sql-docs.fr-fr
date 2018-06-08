@@ -1,17 +1,15 @@
 ---
-title: "Stockées procédure-exemple (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Stockées procédure-exemple (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - ActiveConnection property [ADO], Visual Basic example
 - Direction property [ADO], Visual Basic example
 ms.assetid: dade4531-0bcc-4a52-8f86-b110ba2a3f9d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5c490f2065ae7118a1bf1807e9d59a871d8d87e2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 19439095b70900e3b462ef4832fb8454ad34d640
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="activeconnection-commandtext-commandtimeout-commandtype-size-and-direction-properties-example-vb"></a>ActiveConnection, CommandText, CommandTimeout, CommandType, la taille et Direction, propriétés-exemple (VB)
 Cet exemple utilise le [ActiveConnection](../../../ado/reference/ado-api/activeconnection-property-ado.md), [CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md), [CommandTimeout](../../../ado/reference/ado-api/commandtimeout-property-ado.md), [CommandType](../../../ado/reference/ado-api/commandtype-property-ado.md), [taille](../../../ado/reference/ado-api/size-property-ado-parameter.md), et [Direction](../../../ado/reference/ado-api/direction-property.md) propriétés pour exécuter une procédure stockée.  
@@ -150,5 +147,5 @@ End Sub
  [Propriété direction](../../../ado/reference/ado-api/direction-property.md)   
  [Objet de paramètre](../../../ado/reference/ado-api/parameter-object.md)   
  [Objet d’enregistrement (ADO)](../../../ado/reference/ado-api/record-object-ado.md)   
- [Recordset Object (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
+ [Objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
  [Size, propriété (paramètre ADO)](../../../ado/reference/ado-api/size-property-ado-parameter.md)

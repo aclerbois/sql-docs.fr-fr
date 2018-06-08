@@ -1,16 +1,14 @@
 ---
 title: LTRIM (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/27/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - LTRIM
@@ -25,16 +23,16 @@ helpviewer_keywords:
 - LTRIM function
 - blank characters [SQL Server]
 ms.assetid: 369ed340-1a09-4597-a9eb-6720156cd39a
-caps.latest.revision: 
+caps.latest.revision: 36
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1f73f29131ad94037c5dce500d3877567dedef8f
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0f7d67116fd61b698b820478a0faf8edf2848fdf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ltrim-transact-sql"></a>LTRIM (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -51,7 +49,7 @@ LTRIM ( character_expression )
   
 ## <a name="arguments"></a>Arguments  
  *expression_caractère*  
- [Expression](../../t-sql/language-elements/expressions-transact-sql.md) de données binaires ou de caractères. *character_expression* peut être une constante, une variable ou une colonne. *character_expression* doit être d’un type de données, à l’exception de **text**, **ntext** et **image**, pouvant être implicitement converti en **varchar**. Sinon, utilisez la fonction [CAST](../../t-sql/functions/cast-and-convert-transact-sql.md) pour convertir explicitement *character_expression*.  
+ [Expression](../../t-sql/language-elements/expressions-transact-sql.md) de données binaires ou caractères. *character_expression* peut être une constante, une variable ou une colonne. *character_expression* doit être d’un type de données, à l’exception de **text**, **ntext** et **image**, pouvant être implicitement converti en **varchar**. Sinon, utilisez la fonction [CAST](../../t-sql/functions/cast-and-convert-transact-sql.md) pour convertir explicitement *character_expression*.  
   
 ## <a name="return-type"></a>Type de retour  
  **varchar** ou **nvarchar**  

@@ -1,16 +1,15 @@
 ---
-title: "Séquence d’Expressions (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Séquence d’Expressions (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - XML
@@ -19,21 +18,20 @@ helpviewer_keywords:
 - expressions [XQuery], sequence
 - filtering sequences [XQuery]
 ms.assetid: 41e18b20-526b-45d2-9bd9-e3b7d7fbce4e
-caps.latest.revision: 
+caps.latest.revision: 22
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 50ed3ac28bad010247c8d117c950bb898305807a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 34c26b529aeaee5e9f80ecc0a1a07d3cb8cedbf4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sequence-expressions-xquery"></a>Expressions de séquence (XQuery)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
-  [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prend en charge les opérateurs XQuery qui servent à construire, filtrer et combiner une séquence d’éléments. Un élément peut être une valeur atomique ou un nœud.  
+  [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] prend en charge les opérateurs XQuery qui servent à construire, filtrer et combiner une séquence d'éléments. Un élément peut être une valeur atomique ou un nœud.  
   
 ## <a name="constructing-sequences"></a>Construction des séquences  
  Vous pouvez utiliser l'opérateur comma (virgule) pour construire une séquence qui concatène les éléments en une seule séquence.  
@@ -138,7 +136,7 @@ Page only in case of emergencies.
 ```  
   
 ## <a name="filtering-sequences"></a>Filtrage des séquences  
- Vous pouvez filtrer la séquence renvoyée par une expression en ajoutant un prédicat à l'expression. Pour plus d’informations, consultez [Expressions de chemin &#40; XQuery &#41; ](../xquery/path-expressions-xquery.md). Par exemple, la requête suivante renvoie une séquence de trois nœuds d'élément <`a`> :  
+ Vous pouvez filtrer la séquence renvoyée par une expression en ajoutant un prédicat à l'expression. Pour plus d’informations, consultez [Expressions de chemin d’accès &#40;XQuery&#41;](../xquery/path-expressions-xquery.md). Par exemple, la requête suivante renvoie une séquence de trois nœuds d'élément <`a`> :  
   
 ```  
 declare @x xml  

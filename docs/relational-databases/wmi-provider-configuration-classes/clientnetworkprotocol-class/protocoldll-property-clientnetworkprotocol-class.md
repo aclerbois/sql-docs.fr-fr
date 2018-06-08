@@ -1,16 +1,15 @@
 ---
-title: "Propriété ProtocolDLL (classe ClientNetworkProtocol) | Documents Microsoft"
-ms.custom: 
+title: Propriété ProtocolDLL (classe ClientNetworkProtocol) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ProtocolDLL Property (ClientNetworkProtocol Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ProtocolDLL property
 ms.assetid: fe8650d5-7b9d-46f8-bf74-baf1d9d2a06a
-caps.latest.revision: 
+caps.latest.revision: 35
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d5118b726d722246bb4ee92c6c20182a49348f96
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 325d3ca62f6414ae382ba8166c79180383963021
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="protocoldll-property-clientnetworkprotocol-class"></a>Propriété ProtocolDLL (classe ClientNetworkProtocol)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

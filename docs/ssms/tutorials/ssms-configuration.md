@@ -1,139 +1,142 @@
 ---
-Title: 'Tutorial: SQL Server Management Studio Components and Configuration'
-description: Tutoriel décrivant les composants et les options de configuration de base pour votre environnement SQL Server Management Studio.
+Title: 'Tutorial: SQL Server Management Studio components and configuration'
+description: Ce tutoriel décrit les composants et les options de configuration de base pour votre environnement SQL Server Management Studio.
 keywords: SQL Server, SSMS, SQL Server Management Studio
 author: MashaMSFT
 ms.author: mathoma
 ms.date: 03/16/2018
 ms.topic: Tutorial
 ms.suite: sql
+ms.prod: sql
+ms.technology: ssms
 ms.prod_service: sql-tools
 ms.reviewer: sstein
 manager: craigg
-ms.openlocfilehash: 8cdb4f258f62b425be78e9f6b4628d69e304c7ba
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 645f52265cbb8e80c7265bcae111300f03e0bc7a
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="tutorial-sql-server-management-studio-components-and-configuration"></a>Tutoriel : Composants et configuration de SQL Server Management Studio
-Ce tutoriel décrit les différents composants de fenêtres dans SSMS (SQL Server Management Studio) et certaines options de configuration de base pour votre espace de travail. Dans cet article, vous allez approfondir les sujets suivants : 
+Ce tutoriel décrit les différents composants de fenêtre dans SQL Server Management Studio (SSMS) et certaines options de configuration de base pour votre espace de travail. Dans cet article, vous apprenez à : 
 
 > [!div class="checklist"]
-> * Différents composants qui constituent l’environnement SSMS
-> * Modification de la disposition de l’environnement et réinitialisation des valeurs par défaut
-> * Agrandissement de l’éditeur de requête
-> * Modification de la police 
-> * Configuration des options de démarrage 
-> * Réinitialisation de la configuration par défaut 
+> * Identifier les composants qui constituent l’environnement SSMS
+> * Changer la disposition de l’environnement et rétablir la valeur par défaut
+> * Optimiser l’éditeur de requête
+> * Changer la police 
+> * Configurer les options de démarrage 
+> * Rétablir la configuration par défaut 
 
-## <a name="prerequisites"></a>Prerequisites
-Pour suivre ce tutoriel, vous avez besoin de SQL Server Management Studio.  
+## <a name="prerequisites"></a>Conditions préalables requises
+Pour effectuer ce tutoriel, vous avez besoin de SQL Server Management Studio.  
 
-- Installez [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
+- Installez [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## <a name="sql-server-management-studio-components"></a>Composants de SQL Server Management Studio
-Cette section couvre les différents composants de fenêtres disponibles dans l’espace de travail et leur fonction. 
+Cette section décrit les différents composants de fenêtre disponibles dans l’espace de travail et comment les utiliser. 
 
-- Chaque composant de fenêtre peut être fermé en cliquant sur le X dans l’angle de la barre de titre, puis rouvert à partir de la liste déroulante **Affichage** dans le menu principal. 
+- Pour fermer une fenêtre, sélectionnez le **X** en haut à droite de la barre de titre. 
+- Pour rouvrir une fenêtre, sélectionnez la fenêtre dans le menu **Affichage**. 
 
-    ![Menu Afficher](media/ssms-configuration/viewmenu.png)
+    ![Menu Affichage](media/ssms-configuration/viewmenu.png)
 
-- **Explorateur d’objets** (F8) : l’Explorateur d’objets est une arborescence qui présente tous les objets de base de données sur un serveur. Cela peut inclure les bases de données du moteur de base de données SQL Server, Analysis Services, Reporting Services et Integration Services. L'Explorateur d'objets contient des informations sur tous les serveurs auxquels il est connecté. 
+- **Explorateur d’objets** (F8) : l’Explorateur d’objets est une arborescence qui présente tous les objets de base de données sur un serveur. Cette vue inclut les bases de données du moteur de base de données SQL Server, SQL Server Analysis Services, SQL Server Reporting Services et SQL Server Integration Services. L’Explorateur d’objets contient des informations pour tous les serveurs qui y sont connectés. 
     
     ![Explorateur d’objets](media/ssms-configuration/objectexplorer.png)
-- **Fenêtre de requête** (Ctrl+N) : une fois que vous avez cliqué sur **Nouvelle requête**, il s’agit de la fenêtre dans laquelle vous tapez vos requêtes T-SQL (Transact-SQL). Les résultats de vos requêtes sont visibles ici également.
+- **Fenêtre de requête** (Ctrl + N) : Après avoir sélectionné **Nouvelle requête**, entrez vos requêtes Transact-SQL (T-SQL) dans cette fenêtre. Les résultats de vos requêtes s’affichent également ici.
     
-    ![Fenêtre de nouvelle requête](media/ssms-configuration/newquery.png)
+    ![Fenêtre Nouvelle requête](media/ssms-configuration/newquery.png)
 
-- **Propriétés** (F4) : cette option est visible une fois que la **fenêtre de requête** s’ouvre et affiche les propriétés de base de la requête. Par exemple, elle affiche l’heure de début d’une requête, le nombre de lignes retournées et les détails de la connexion.  
+- **Propriétés** (F4) : Vous pouvez voir la vue Propriétés quand la fenêtre de requête est ouverte. La vue montre les propriétés de base de la requête. Par exemple, elle montre l’heure de début d’une requête, le nombre de lignes retournées et les détails de la connexion.  
 
     ![Propriétés](media/ssms-configuration/properties.png)
 
-- **Explorateur de modèles** (Ctrl+Alt+T) : il existe plusieurs modèles T-SQL prédéfinis qui figurent dans l’Explorateur de modèles. Ces modèles vous permettent d’effectuer diverses tâches telles que la création ou la sauvegarde d’une base de données. 
+- **Explorateur de modèles** (Ctrl + Alt + T) : L’Explorateur de modèles a divers modèles T-SQL prédéfinis. Vous pouvez utiliser ces modèles pour effectuer diverses fonctions, comme créer ou sauvegarder une base de données. 
 
     ![Explorateur de modèles](media/ssms-configuration/templates.png)
 
-- **Détails de l’Explorateur d’objets**(F7) : il s’agit d’un affichage plus détaillé des éléments visibles dans l’Explorateur d’objets qui vous permet de manipuler plusieurs objets à la fois. Par exemple, la fenêtre Détails de l’Explorateur d’objets vous permet de sélectionner simultanément plusieurs bases de données et de les supprimer ou de générer des scripts pour elles. 
+- **Détails de l’Explorateur d’objets** (F7) : Cette vue est plus précise que la vue de l’Explorateur d’objets. Vous pouvez utiliser Détails de l’Explorateur d’objets pour manipuler plusieurs objets en même temps. Par exemple, dans cette fenêtre, vous pouvez sélectionner plusieurs bases de données, puis les supprimer ou les scripter simultanément. 
 
     ![Détails de l’Explorateur d’objets](media/ssms-configuration/objectexplorerdetails.PNG) 
  
-
     
 
-## <a name="change-the-environmental-layout"></a>Modifier la disposition de l’environnement 
-Cette section décrit la manipulation de la disposition de l’environnement, comme le déplacement des différentes fenêtres. 
+## <a name="change-the-environment-layout"></a>Changer la disposition de l’environnement 
+Cette section décrit comment changer la disposition de l’environnement, notamment comment déplacer plusieurs fenêtres. 
 
--  Chaque composant de fenêtre peut être déplacé en maintenant le titre enfoncé et en faisant glisser la fenêtre. 
-- Chaque composant de fenêtre peut être épinglé et désépinglé en sélectionnant l’icône de punaise dans la barre de titre :
+- Pour déplacer une fenêtre, appuyez de façon prolongée sur le titre, puis faites glisser la fenêtre. 
+- Pour épingler ou détacher une fenêtre, sélectionnez l’icône de punaise dans la barre de titre :
     
-    ![Épinglage d’objets](media/ssms-configuration/pushpin.png)
+    ![Épingler un objet](media/ssms-configuration/pushpin.png)
 
-- Chaque composant de fenêtre a une flèche de déroulement qui permet de manipuler la fenêtre de différentes manières : 
+- Chaque composant de la fenêtre a un menu déroulant que vous pouvez utiliser pour manipuler la fenêtre de différentes manières : 
 
-    ![Options de fenêtres](media/ssms-configuration/windowoptions.png)
+    ![Options de la fenêtre](media/ssms-configuration/windowoptions.png)
 
-- Une fois qu’au moins deux fenêtres de requête sont ouvertes, elles peuvent se présenter comme des onglets verticaux ou horizontaux, afin que les deux fenêtres de requête soient visibles à la fois. Pour ce faire, cliquez avec le bouton droit sur le titre de la requête, puis sélectionnez l’option à onglets souhaitée. 
+- Quand deux fenêtres de requête ou plus sont ouvertes, vous pouvez les organiser en onglets verticalement ou horizontalement pour les voir toutes. Pour voir les fenêtres sous forme d’onglets, cliquez avec le bouton droit sur le titre de la requête, puis sélectionnez l’option d’onglets souhaitée : 
  
-    ![Options des onglets de requête](media/ssms-configuration/querytabbedoptions.png)
+    ![Options d’onglets de requête](media/ssms-configuration/querytabbedoptions.png)
 
-    - Il s’agit du **groupe d’onglets horizontal** : ![Groupe d’onglets horizontal](media/ssms-configuration/horizontaltab.png)     
+    - Voici un groupe d’onglets horizontal :
+
+      ![Exemple de groupe d’onglets horizontal](media/ssms-configuration/horizontaltab.png)     
     
-    - Il s’agit du **groupe d’onglets vertical** :  
-        ![Groupe d’onglets vertical](media/ssms-configuration/verticaltabgroup.png)
+    - Voici un groupe d’onglets vertical :
+
+      ![Exemple de groupe d’onglets vertical](media/ssms-configuration/verticaltabgroup.png)
         
-
-    - Pour refusionner les onglets, cliquez à nouveau avec le bouton droit sur le titre de la requête, puis sélectionnez **Déplacer vers le groupe d’onglets suivant** ou **Déplacer vers le groupe d’onglets précédent** :
+    - Pour fusionner les onglets, cliquez avec le bouton droit sur le titre de la requête, puis sélectionnez **Déplacer vers le groupe d’onglets précédent** ou **Déplacer vers le groupe d’onglets suivant** :
     
-        ![Fusionner les onglets de requête](media/ssms-configuration/mergetabgroups.png)
+      ![Fusionner des onglets de requête](media/ssms-configuration/mergetabgroups.png)
 
-- Pour restaurer la disposition de l’environnement par défaut, cliquez sur le **Menu Fenêtre** > **Rétablir la disposition de fenêtre** :
+- Pour restaurer la disposition par défaut de l’environnement, dans le menu **Fenêtre**, sélectionnez **Rétablir la disposition de fenêtre** :
  
     ![Restaurer la disposition de fenêtre](media/ssms-configuration/resetwindowlayout.png)
     
 ## <a name="maximize-query-editor"></a>Agrandir l'Éditeur de requête
-L’éditeur de requête peut être agrandi en mode plein écran.
+Vous pouvez agrandir l’éditeur de requête en mode plein écran :
 
-1. Cliquez n’importe où dans la fenêtre de l’éditeur de requête.
-2. Appuyez sur Maj+Alt+Entrée pour basculer du mode plein écran au mode normal. 
+1. Cliquez n'importe où dans la fenêtre de l'Éditeur de requête.
+2. Appuyez sur Maj + Alt + Entrée pour basculer entre le mode plein écran et le mode normal. 
 
 Ce raccourci clavier fonctionne dans toute fenêtre de document. 
 
 
 
 ## <a name="change-basic-settings"></a>Changer les paramètres de base
-Cette section explique comment modifier certains paramètres de base dans SSMS. Ces options se trouvent dans le menu **Outils** :
+Cette section décrit comment changer certains paramètres de base dans SSMS à partir du menu **Outils**.
 
-  ![Menu Outils](media/ssms-configuration/tools.png)
+  ![Outils (menu)](media/ssms-configuration/tools.png)
 
 
-- La barre d’outils mise en surbrillance peut être modifiée en accédant au menu : **Outils** > **Personnaliser** :
+- Pour modifier la barre d’outils en surbrillance, sélectionnez **Outils** > **Personnaliser** :
 
-    ![Personnaliser la barre d’outils](media/ssms-configuration/toolbar.png)
+    ![Personnaliser une barre d’outils](media/ssms-configuration/toolbar.png)
 
 ### <a name="change-the-font"></a>Changer la police
-- La police peut être modifiée à partir du menu : **Outils** > **Options** > **Polices et couleurs** :
+- Pour changer la police, sélectionnez **Outils** > **Options** > **Polices et couleurs** :
 
-     ![Polices et couleurs](media/ssms-configuration/fontsandcolors.png)
+     ![Changer les polices et couleurs](media/ssms-configuration/fontsandcolors.png)
 
-### <a name="change-the-startup-options"></a>Changer les options de démarrage
-- Les options de démarrage déterminent l’aspect de votre espace de travail lors du premier lancement de SSMS. Elles peuvent être configurées dans le menu : **Outils** > **Options** > **Démarrage** :
+### <a name="change-startup-options"></a>Changer les options de démarrage
+- Les options de démarrage déterminent l’apparence de votre espace de travail quand vous ouvrez SSMS. Pour changer les options de démarrage, sélectionnez **Outils** > **Options** > **Démarrage** :
  
-    ![Options de démarrage](media/ssms-configuration/startup.png)
+    ![Changer les options de démarrage](media/ssms-configuration/startup.png)
 
-### <a name="reset-settings-to-default"></a>Rétablir les valeurs par défaut des paramètres
-- Tous ces paramètres peuvent être exportés et importés dans le menu : **Outils** > **Importation et exportation de paramètres** 
+### <a name="reset-settings-to-the-default"></a>Rétablir les paramètres par défaut
+- Vous pouvez exporter et importer tous ces paramètres à partir du menu. Pour importer ou exporter des paramètres, ou pour restaurer les paramètres par défaut, sélectionnez **Outils** > **Importer et exporter des paramètres** 
 
-    ![Importation et exportation de paramètres](media/ssms-configuration/settings.png)
-    - Il s’agit également de l’emplacement où vous pouvez réinitialiser tous les paramètres par défaut. 
+    ![Importer et exporter des paramètres](media/ssms-configuration/settings.png)
+
 
 
 ## <a name="next-steps"></a>Étapes suivantes
-L’article suivant vous donne quelques conseils et astuces supplémentaires pour utiliser SSMS, par exemple comment rechercher votre journal des erreurs SQL Server et le nom de votre instance SQL. 
+L’article suivant vous donne quelques conseils et astuces supplémentaires pour utiliser SSMS, notamment comment rechercher votre journal des erreurs SQL Server et le nom de votre instance SQL. 
 
-Passez à l’article suivant pour en savoir plus
 > [!div class="nextstepaction"]
-> [Bouton Étapes suivantes](ssms-tricks.md)
+> [Conseils et astuces supplémentaires pour utiliser SSMS](ssms-tricks.md)
  
  
 

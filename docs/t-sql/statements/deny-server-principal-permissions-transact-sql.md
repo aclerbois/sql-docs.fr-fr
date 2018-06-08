@@ -1,16 +1,14 @@
 ---
-title: "DENY - Octroyer des autorisations de principal de serveur (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY - Octroyer des autorisations de principal de serveur (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/09/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -24,18 +22,17 @@ helpviewer_keywords:
 - servers [SQL Server], permissions
 - logins [SQL Server], denying access
 ms.assetid: 859affa7-0567-47d1-9490-57c1abbd619b
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 795c7dcc946966859e5d81382df75a4bb646e38d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 53805cdf1cbe580468a05dd667048927d7a05c74
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-server-principal-permissions-transact-sql"></a>DENY - Octroyer des autorisations de principal de serveur (Transact-SQL)
+# <a name="deny-server-principal-permissions-transact-sql"></a>DENY – refus d'autorisations du principal de serveur (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet de refuser des autorisations accordées sur une connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

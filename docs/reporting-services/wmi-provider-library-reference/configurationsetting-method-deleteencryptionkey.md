@@ -1,31 +1,32 @@
 ---
-title: "DeleteEncryptionKey, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs"
-ms.custom: 
+title: DeleteEncryptionKey, méthode (WMI MSReportServer_ConfigurationSetting) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: wmi-provider-library-reference
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: DeleteEncryptionKey (WMI MSReportServer_ConfigurationSetting Class)
-apilocation: reportingservices.mof
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- DeleteEncryptionKey (WMI MSReportServer_ConfigurationSetting Class)
+apilocation:
+- reportingservices.mof
 apitype: MOFDef
-helpviewer_keywords: DeleteEncryptionKey method
+helpviewer_keywords:
+- DeleteEncryptionKey method
 ms.assetid: ed2f25b6-6a63-468d-9279-a577ca01b096
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f38cfbe5d5200db93c49e2dd9a7a792f7f811676
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 2df5af6dc68988d4098ba46f1977e2563d20173f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configurationsetting-method---deleteencryptionkey"></a>Méthode ConfigurationSetting - DeleteEncryptionKey
   Supprime les clés de chiffrement de la base de données du serveur de rapports.  

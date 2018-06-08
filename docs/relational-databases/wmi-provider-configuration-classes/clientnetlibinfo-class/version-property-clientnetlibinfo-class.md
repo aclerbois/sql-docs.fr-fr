@@ -1,16 +1,15 @@
 ---
-title: "Propriété version (classe ClientNetLibInfo) | Documents Microsoft"
-ms.custom: 
+title: Propriété version (classe ClientNetLibInfo) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - Version Property (ClientNetLibInfo Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - Version property
 ms.assetid: eb02d4be-0363-4ad1-9e7e-553601f09349
-caps.latest.revision: 
+caps.latest.revision: 29
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 298c5271cca6c0a888b5b14282bbe3648dc677b0
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 2f6af70da32867870b1a001b42ddf2d895bcf8fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="version-property-clientnetlibinfo-class"></a>Propriété Version (classe ClientNetLibInfo)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

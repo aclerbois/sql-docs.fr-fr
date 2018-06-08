@@ -1,37 +1,35 @@
 ---
-title: "Installation d’un cluster de basculement SQL Server | Microsoft Docs"
-ms.custom: 
+title: Installation d’un cluster de basculement SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c0e75a7c-85c5-423c-a218-77247bf071aa
-caps.latest.revision: "7"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 045f941ca5f5de2703bbd315f862ecf2c1985902
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: cab805d61e0cada8df854cd19f0859c5d7ae6e1b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772935"
 ---
 # <a name="sql-server-failover-cluster-installation"></a>Installation d'un cluster de basculement SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour installer un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], vous devez créer et configurer une instance de cluster de basculement en exécutant le programme d’installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pour installer un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , vous devez créer et configurer une instance de cluster de basculement en exécutant le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   
 ## <a name="installing-a-failover-cluster"></a>Installation d'un cluster de basculement  
  Pour installer un cluster de basculement, vous devez utiliser un compte de domaine avec des droits d'administrateur local pour vous connecter en tant que service et pour agir dans le cadre du système d'exploitation sur tous les nœuds du cluster de basculement. Pour installer un cluster de basculement à l'aide du programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , procédez comme suit :  
   
 1.  Pour installer, configurer et gérer un cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , utilisez le programme d'installation de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] .  
   
-    -   Identifiez les informations dont vous aurez besoin pour créer votre instance de cluster de basculement (par exemple, une ressource disque de cluster, des adresses IP et un nom réseau) et les nœuds disponibles pour le basculement. Pour plus d'informations, consultez :  
+    -   Identifiez les informations dont vous aurez besoin pour créer votre instance de cluster de basculement (par exemple, une ressource disque de cluster, des adresses IP et un nom réseau) et les nœuds disponibles pour le basculement. Pour plus d'informations, consultez :  
   
         -   [Avant l'installation du clustering de basculement](../../../sql-server/failover-clusters/install/before-installing-failover-clustering.md)  
   
@@ -49,7 +47,7 @@ ms.lasthandoff: 12/05/2017
   
 ## <a name="includessnoversionincludesssnoversion-mdmd-failover-cluster-installation-options"></a>[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Options d’installation d’un cluster de basculement  
   
-##### <a name="option-1-integrated-installation-with-add-node"></a>Option 1 : installation intégrée avec ajout de nœud  
+##### <a name="option-1-integrated-installation-with-add-node"></a>Option 1 : installation intégrée avec ajout de nœud  
  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] comprend deux étapes :  
   
 1.  Créez et configurez une instance de cluster de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] à un seul nœud. Une fois la configuration du nœud réussie, vous disposez d'une instance de cluster de basculement entièrement fonctionnelle. Celle-ci n'offre pas une haute disponibilité pour l'instant, car il n'y a qu'un seul nœud dans le cluster de basculement.  
@@ -85,7 +83,7 @@ ms.lasthandoff: 12/05/2017
 ##### <a name="includessnoversionincludesssnoversion-mdmd-multi-subnet-failover-cluster"></a>[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Cluster de basculement de sous-réseaux multiples  
  Vous pouvez définir des dépendances OR lorsque les nœuds du cluster se trouvent sur des sous-réseaux différents. Toutefois, chaque nœud du cluster de basculement de sous-réseaux multiples [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] doit être un propriétaire possible d'au moins une d'adresse IP spécifiée.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Avant l'installation du clustering de basculement](../../../sql-server/failover-clusters/install/before-installing-failover-clustering.md)   
  [Créer un cluster de basculement SQL Server &#40;programme d’installation&#41;](../../../sql-server/failover-clusters/install/create-a-new-sql-server-failover-cluster-setup.md)   
  [Installer SQL Server 2016 à partir de l’invite de commandes](../../../database-engine/install-windows/install-sql-server-2016-from-the-command-prompt.md)   

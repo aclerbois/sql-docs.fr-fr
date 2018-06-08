@@ -7,19 +7,16 @@ ms.reviewer: douglasl
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
+ms.prod: sql
 ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: Inactive
-ms.openlocfilehash: c366afc1b8755a22b13fa6224ec117db045c8dd3
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+ms.technology: linux
+ms.openlocfilehash: 8e666a50f90a390307f00e8fd310f965fb7a50b7
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="limitations-and-known-issues-for-ssis-on-linux"></a>Limitations et problèmes connus pour SSIS sur Linux
 

@@ -1,30 +1,29 @@
 ---
-title: "Méthode setReadOnly (SQLServerConnection) | Documents Microsoft"
-ms.custom: 
+title: Méthode setReadOnly (SQLServerConnection) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerConnection.setReadOnly
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerConnection.setReadOnly
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: bd11fd50-f092-43a0-a6bc-c63e70cff8da
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7acd45c0594d53e4121f1162c98a91a183b650a8
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b94f1b5555fd0bb90afaf492ab2ab61a643372bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setreadonly-method-sqlserverconnection"></a>Méthode setReadOnly (SQLServerConnection)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -42,7 +41,7 @@ public void setReadOnly(boolean readOnly)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *en lecture seule*  
+ *En lecture seule*  
   
  **true** si la connexion est en lecture seule. Dans le cas contraire, la valeur est **false**.  
   

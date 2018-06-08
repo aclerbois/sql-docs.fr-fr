@@ -1,38 +1,23 @@
 ---
-title: "Exporter et importer des objets d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- backing up databases [Analysis Services]
-- exporting mining models
-- exporting mining structures
-- mining structures [Analysis Services], creating
-- mining structures [DMX], exporting
-- mining models [Analysis Services], migration
-ms.assetid: 10a83b13-2640-4ff5-80c8-a35e1d692908
-caps.latest.revision: 
-author: Minewiskan
+title: Exporter et importer des objets d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3c801c0b8a4c3b688dc0224dfe31764ee390e3a6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: eb1726006db1693e94e12326617436bdff7ae73e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="export-and-import-data-mining-objects"></a>Exporter et importer des objets d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Outre les fonctionnalités fournies dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour la sauvegarde, la restauration et la migration des solutions, l'exploration de données SQL Server permet de transférer rapidement des modèles et des structures d'exploration de données entre différents serveurs en utilisant des instructions DMX (Data Mining Extensions).  
+  Outre les fonctionnalités fournies dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour la sauvegarde, la restauration et la migration des solutions, l'exploration de données SQL Server permet de transférer rapidement des modèles et des structures d'exploration de données entre différents serveurs en utilisant des instructions DMX (Data Mining Extensions).  
   
  Si votre solution d’exploration de données utilise des données relationnelles au lieu d’une base de données multidimensionnelle, le transfert de modèles à l’aide des commandes **EXPORT** et **IMPORT** est beaucoup plus rapide et plus facile qu’en utilisant la restauration de base de données ou qu’en déployant une solution dans son intégralité.  
   

@@ -1,34 +1,30 @@
 ---
-title: "Showplan Text, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Showplan Text, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Showplan Text event class
 ms.assetid: f36c73b2-a1d1-4513-9594-78818f3fcb0d
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aeeab7ad2669c205bd73384d41a107b5e0e21007
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7ed6a76a086ce95443c637999d80dadcd633a11e
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="showplan-text-event-class"></a>Showplan Text, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Showplan Text intervient quand [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SQL. Les informations comprises sont un sous-ensemble des informations disponibles dans les classes d’événements Showplan All, Showplan XML Statistics Profile ou Showplan XML.  
+  La classe d'événements Showplan Text intervient quand [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une instruction SQL. Les informations comprises sont un sous-ensemble des informations disponibles dans les classes d’événements Showplan All, Showplan XML Statistics Profile ou Showplan XML.  
   
  Si vous incluez la classe d'événements Showplan Text dans une trace, le surcroît de charge imposée au système diminue sensiblement les performances. Pour limiter ce problème, n'utilisez cette classe d'événements qu'avec les traces surveillant des problèmes spécifiques pendant de brèves périodes. Showplan Text ne mobilise pas autant de ressources système que les autres classes d'événements Showplan.  
   

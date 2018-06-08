@@ -1,17 +1,17 @@
 ---
-title: "Accès aux assemblages personnalisés par le biais d’expressions | Microsoft Docs"
-ms.custom: 
+title: Accès aux assemblages personnalisés par le biais d’expressions | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: custom-assemblies
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - expressions [Reporting Services], custom assemblies
 - static member calls
@@ -19,16 +19,15 @@ helpviewer_keywords:
 - calling class members
 - custom assemblies [Reporting Services], expressions
 ms.assetid: 917c4d47-1a95-4f54-98b1-e8cb2165d90f
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4fbeded846679fc6925175f7c833e8c9b0c55e8c
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 726f21d764504fc72fc833dbff10acd380f4087d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="accessing-custom-assemblies-through-expressions"></a>Accès aux assemblys personnalisés par le biais d'expressions
   Une fois que vous avez créé un assembly personnalisé, qu'il est disponible auprès du Concepteur de rapports ou du serveur de rapports, que vous avez ajouté la stratégie de sécurité appropriée et une référence à votre assembly personnalisé dans votre définition de rapport, vous pouvez accéder aux membres des classes dans votre assembly à l'aide d'expressions de rapport. Pour faire référence à du code personnalisé dans une expression, vous devez appeler le membre d'une classe au sein de l'assembly. La procédure pour ce faire dépend du type de méthode, à savoir statique ou basée sur une instance.  
@@ -50,7 +49,7 @@ ms.lasthandoff: 01/09/2018
 ## <a name="calling-instance-members-from-a-report-definition-file"></a>Appel de membres d'instance à partir d'un fichier de définition de rapport  
  Si votre assembly personnalisé contient des membres d'instance auxquels vous devez accéder dans une définition de rapport, vous devez ajouter un nom d'instance pour votre classe au rapport. Vous pouvez ajouter un nom d’instance pour une classe à l’aide de l’onglet **Code** de la boîte de dialogue **Propriétés de rapport**. Pour plus d’informations sur l’ajout d’instances de classes à un rapport, consultez [Code personnalisé et références d’assembly dans les expressions du Concepteur de rapports &#40;SSRS&#41;](../../reporting-services/report-design/custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs.md).  
   
- Pour appeler un membre statique, vous devez le référencer comme une expression qui prend la forme =Code*.InstanceName.Method*.  
+ Pour appeler un membre statique, vous devez le référencer comme une expression qui prend la forme =Code *.InstanceName.Method*.  
   
 #### <a name="to-call-instance-members"></a>Pour appeler des membres d'instance  
   

@@ -1,33 +1,30 @@
 ---
-title: "Objet de paramètre | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Objet de paramètre | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Parameter
 helpviewer_keywords:
 - Parameter object [ADO]
 ms.assetid: e010e794-7f0f-4026-8b5b-37328e437d63
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ec8556b03b2f0d3a3d7d439ae223385860040c63
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 59474a000d3def675caf66085380c6a3791805c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameter-object"></a>Objet Parameter
 Représente un paramètre ou un argument associé à un [commande](../../../ado/reference/ado-api/command-object-ado.md) objet basé sur une procédure stockée ou une requête paramétrable.  

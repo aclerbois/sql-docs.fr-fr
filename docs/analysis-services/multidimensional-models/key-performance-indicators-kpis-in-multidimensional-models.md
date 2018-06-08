@@ -1,40 +1,23 @@
 ---
-title: "Indicateurs de Performance (KPI) dans les modèles multidimensionnels clés | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- viewing Key Performance Indicators
-- Key Performance Indicators [Analysis Services]
-- KPIs [Analysis Services]
-- OLAP objects [Analysis Services], performance indicators
-- weights [Analysis Services]
-- displaying Key Performance Indicators
-- parent KPIs [Analysis Services]
-- child KPIs
-ms.assetid: 73aee2da-da30-44f1-829c-0a4c078a7768
-caps.latest.revision: 
-author: Minewiskan
+title: Indicateurs de Performance (KPI) dans les modèles multidimensionnels clés | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 396ac061fca578b06766830948001387c65b036e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7b7c036b09113711315ada3120538b5117931be7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="key-performance-indicators-kpis-in-multidimensional-models"></a>Indicateurs de performance clés (KPI) dans les modèles multidimensionnels
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Dans la terminologie d'entreprise, un indicateur de performance clé (KPI) est une mesure quantifiable des performances d'une activité économique.  
+  Dans la terminologie d'entreprise, un indicateur de performance clé (KPI) est une mesure quantifiable des performances d'une activité économique.  
   
  Dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], un KPI est un ensemble de calculs associés à un groupe de mesures dans un cube qui servent à évaluer les performances de l’entreprise. Généralement, ces calculs sont une combinaison d'expressions MDX (Multidimensional Expressions) ou de membres calculés. Les indicateurs de performance clés contiennent également des métadonnées supplémentaires qui fournissent des informations sur la manière dont les applications clientes doivent afficher les résultats des calculs d'un indicateur de performance clé.  
   
@@ -67,7 +50,7 @@ Dans la terminologie d'entreprise, un indicateur de performance clé (KPI) est u
 ## <a name="parent-kpis"></a>KPI parents  
  Une entité peut suivre des mesures économiques différentes à différents niveaux. Par exemple, deux ou trois KPI peuvent être utilisés pour évaluer les performances économiques de l'ensemble de l'entreprise, mais ces KPI étendus à l'ensemble de l'entreprise peuvent être basés sur trois ou quatre autres KPI suivis par les différentes divisions de l'entreprise. En outre, les divisions de l'entreprise peuvent utiliser des statistiques différentes pour calculer un même KPI, le résultat étant cumulé avec le KPI étendu à l'entreprise.  
   
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] permet de définir une relation parent-enfant entre les KPI. Cette relation parent-enfant permet d'utiliser les résultats du KPI enfant pour calculer les résultats du KPI parent. Les applications clientes peuvent également utiliser cette relation pour afficher de manière approximative les KPI parents et enfants.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]permet de définir une relation parent-enfant entre les indicateurs de performance clés. Cette relation parent-enfant permet d'utiliser les résultats du KPI enfant pour calculer les résultats du KPI parent. Les applications clientes peuvent également utiliser cette relation pour afficher de manière approximative les KPI parents et enfants.  
   
 ## <a name="weights"></a>Poids  
  Des poids peuvent également être affectés aux KPI enfants. Les poids permettent à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] d'ajuster proportionnellement les résultats des KPI enfants lors du calcul du KPI parent.  

@@ -1,16 +1,14 @@
 ---
 title: CREATE SECURITY POLICY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SECURITY_POLICY_TSQL
@@ -28,16 +26,15 @@ helpviewer_keywords:
 - CREATE SECURITY POLICY statement
 - Row-Level Security
 ms.assetid: d6ab70ee-0fa2-469c-96f6-a3c16d673bc8
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 205a09efdef9e59736fa20238455b4327dced330
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 3270e3e74eb11c2caace27137c8492ecea3e6e93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-security-policy-transact-sql"></a>CREATE SECURITY POLICY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -51,7 +48,7 @@ ms.lasthandoff: 11/21/2017
 ```     
 CREATE SECURITY POLICY [schema_name. ] security_policy_name    
     { ADD [ FILTER | BLOCK ] } PREDICATE tvf_schema_name.security_predicate_function_name   
-      ( { column_name | arguments } [ , …n] ) ON table_schema_name. table_name    
+      ( { column_name | expression } [ , …n] ) ON table_schema_name. table_name    
       [ <block_dml_operation> ] , [ , …n] 
     [ WITH ( STATE = { ON | OFF }  [,] [ SCHEMABINDING = { ON | OFF } ] ) ]  
     [ NOT FOR REPLICATION ] 
@@ -75,8 +72,8 @@ CREATE SECURITY POLICY [schema_name. ] security_policy_name
  *tvf_schema_name.security_predicate_function_name*  
  Fonction de valeur de table inline à utiliser comme prédicat et à appliquer dans les requêtes portant sur une table cible. Au plus un prédicat de sécurité peut être défini pour une opération DML particulière sur une table donnée. La fonction de valeur de table inline doit avoir été créée à l'aide de l'option SCHEMABINDING.  
   
- { *column_name* | *arguments* }  
- Le nom de la colonne ou l'expression utilisé en tant que paramètres de la fonction de prédicat de sécurité. Toutes les colonnes de la table cible peuvent être utilisées comme arguments pour la fonction de prédicat. Les expressions qui incluent des littéraux, les données prédéfinies et les expressions qui utilisent des opérateurs arithmétiques peuvent être utilisées.  
+ { *column_name* | *expression* }  
+ Nom de la colonne ou expression servant de paramètre dans la fonction de prédicat de sécurité. N’importe quelle colonne de la table cible peut être utilisée. Une [expression](../../t-sql/language-elements/expressions-transact-sql.md) peut uniquement contenir des constantes, des fonctions scalaires intégrées, des opérateurs et des colonnes provenant de la table cible. Vous devez spécifier un nom de colonne ou une expression pour chaque paramètre de la fonction.  
   
  *table_schema_name.table_name*  
  Table cible à laquelle sera appliqué le prédicat de sécurité. Plusieurs stratégies de sécurité désactivées peuvent cibler une même table pour une opération DML particulière, mais une seule peut être activée à un moment donné.  

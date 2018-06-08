@@ -1,25 +1,22 @@
 ---
-title: "Utiliser le groupe de disponibilité SQL Server sur Linux | Documents Microsoft"
-description: 
+title: Utiliser le groupe de disponibilité SQL Server sur Linux | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 03/01/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.assetid: 
-ms.workload: Inactive
-ms.openlocfilehash: b94ea92f2f7325840c4d939e140b6283c6318615
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.technology: linux
+ms.assetid: ''
+ms.openlocfilehash: 6a24d1cb2e9bff3555aa24eb0df079bc2894ec79
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="operate-always-on-availability-groups-on-linux"></a>Fonctionnent toujours sur les groupes de disponibilité sur Linux
 

@@ -1,35 +1,33 @@
 ---
-title: "Fichiers d’en-tête | Documents Microsoft"
-ms.custom: 
+title: Fichiers d’en-tête | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: header files [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- header files [ODBC]
 ms.assetid: b4a03273-5e30-4d7b-826e-02f8f28ba078
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 197c7ef28124fb1b1c52facbec541913330c69c5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 62d31cdda9e97ba72374c60c551f37ecfeccd71c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="header-files"></a>Fichiers d’en-tête
 Le fichier d’en-tête Sql.h contient des prototypes pour les fonctions et fonctionnalités dans le niveau de conformité de l’Interface ODBC Core. Le fichier d’en-tête Sqlext.h contient des prototypes pour les fonctions et fonctionnalités dans le niveau 1 et les niveaux de conformité au niveau 2 d’API. Le fichier d’en-tête Sqltypes.h contient les définitions de type et d’indicateurs pour les types de données SQL.  
   
  Les fichiers d’en-tête contiennent tous un **#define**, ODBCVER, une application ou un pilote pouvant définies pour être compilé pour différentes versions d’ODBC.  
   
- Pour s’aligner avec la CLI de ISO et groupe ouvert, les fichiers d’en-tête contiennent des alias pour les types d’informations utilisés dans les appels à **SQLGetInfo**. Dans le tableau suivant, la colonne « Nom ODBC » indique le nom ODBC pour le type d’informations dans [référence de l’API ODBC](../../../odbc/reference/syntax/odbc-api-reference.md). La colonne « Alias dans le fichier d’en-tête » indique le nom qui est utilisé dans le CLI ISO et le groupe ouvert. La valeur numérique réelle de ces noms de manifeste est identique dans ODBC et les interfaces CLI standard. Ces alias activer une application conforme aux normes ou le pilote à compiler avec ODBC 3*.x* fichiers d’en-tête.  
+ Pour s’aligner avec la CLI de ISO et groupe ouvert, les fichiers d’en-tête contiennent des alias pour les types d’informations utilisés dans les appels à **SQLGetInfo**. Dans le tableau suivant, la colonne « Nom ODBC » indique le nom ODBC pour le type d’informations dans [référence de l’API ODBC](../../../odbc/reference/syntax/odbc-api-reference.md). La colonne « Alias dans le fichier d’en-tête » indique le nom qui est utilisé dans le CLI ISO et le groupe ouvert. La valeur numérique réelle de ces noms de manifeste est identique dans ODBC et les interfaces CLI standard. Ces alias activer une application conforme aux normes ou le pilote à compiler avec ODBC 3 *.x* fichiers d’en-tête.  
   
  Ces alias incluent expansions des abréviations dans les noms ODBC afin que les noms sont plus faciles à comprendre. « MAX » est développé à « MAXIMUM », « Long » pour « Longueur », « MULT » à « Plusieurs », « JO » à « OUTER_JOIN » et « TXN » à « TRANSACTION ».  
   

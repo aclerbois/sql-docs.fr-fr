@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur une liste de propriétés de recherche (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur une liste de propriétés de recherche (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,17 @@ helpviewer_keywords:
 - revoking permissions [SQL Server]
 - REVOKE statement, search property list permissions
 ms.assetid: a6b8b37c-0015-4596-898c-51a567659e2e
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b3a009786f85275c4f7ee863aeb5bc61f56372e0
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 135b193620e67cc3a3ac5c8e80593aa6ec242b8e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-search-property-list-permissions-transact-sql"></a>REVOKE - Révoquer les autorisations de liste des propriétés de recherche (Transact-SQL)
+# <a name="revoke-search-property-list-permissions-transact-sql"></a>Autorisations de liste des propriétés de recherche REVOKE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Révoque des autorisations dans une liste de propriétés de recherche.  
@@ -60,7 +57,7 @@ REVOKE [ GRANT OPTION FOR ] permission [ ,...n ] ON
  Nom d'une autorisation. Les mappages valides des autorisations des éléments sécurisables sont décrits dans la section « Notes », plus loin dans cette rubrique.  
   
  ON SEARCH PROPERTY LIST **::***search_property_list_name*  
- Indique la liste de propriétés de recherche pour laquelle l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
+ Indique la liste de propriétés de recherche pour laquelle l'autorisation est révoquée. Le qualificateur d’étendue **::** est obligatoire.  
   
  *database_principal*  
  Spécifie le principal pour lequel l'autorisation est révoquée. Le principal peut prendre l'une des valeurs suivantes :  

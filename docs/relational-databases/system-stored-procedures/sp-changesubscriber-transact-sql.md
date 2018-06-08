@@ -1,16 +1,15 @@
 ---
 title: sp_changesubscriber (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_changesubscriber
 ms.assetid: d453c451-e957-490f-b968-5e03aeddaf10
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4b52c51d2e516b8d4c4f787c8e5d56d95922b2d4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c2cb0047dd66b0c3fd96d399e404b801401d202a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spchangesubscriber-transact-sql"></a>sp_changesubscriber (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -72,10 +70,10 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
  Type de l'Abonné. *type* est **tinyint**, avec NULL comme valeur par défaut. **0** indique un [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] abonné. **1** spécifie non -[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou un autre serveur de source de données ODBC abonné.  
   
  [  **@login=**] **'***connexion***'**  
- ID de connexion pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *connexion* est **sysname**, avec NULL comme valeur par défaut.  
+ ID de connexion pour l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *login* est de type **sysname**, avec NULL comme valeur par défaut.  
   
  [  **@password=**] **'***mot de passe***'**  
- Est le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] mot de passe d’authentification. *mot de passe* est **sysname**, avec une valeur par défaut  **%** . **%**indique aucune modification n’est à la propriété de mot de passe.  
+ Est le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] mot de passe d’authentification. *mot de passe* est **sysname**, avec une valeur par défaut **%**. **%** indique aucune modification n’est à la propriété de mot de passe.  
   
  [  **@commit_batch_size=**] *taille_lot_validé*  
  Pris en charge pour la compatibilité descendante uniquement.  
@@ -153,7 +151,7 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
 |**0**|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Authentification|  
 |**1**|Authentification Windows|  
   
- [  **@publisher** =] **'***publisher***'**  
+ [ **@publisher**=] **'***publisher***'**  
  Spécifie un serveur de publication non [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *serveur de publication* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -165,14 +163,14 @@ sp_changesubscriber [ @subscriber= ] 'subscriber'
 ## <a name="remarks"></a>Notes  
  **sp_changesubscriber** est utilisée dans tous les types de réplication.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_changesubscriber**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_addsubscriber &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-addsubscriber-transact-sql.md)   
- [sp_dropsubscriber &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-dropsubscriber-transact-sql.md)   
+ [sp_addsubscriber &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addsubscriber-transact-sql.md)   
+ [sp_dropsubscriber &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropsubscriber-transact-sql.md)   
  [sp_helpdistributiondb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdistributiondb-transact-sql.md)   
- [sp_helpserver &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpserver-transact-sql.md)   
+ [sp_helpserver & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-stored-procedures/sp-helpserver-transact-sql.md)   
  [sp_helpsubscriberinfo &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpsubscriberinfo-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   

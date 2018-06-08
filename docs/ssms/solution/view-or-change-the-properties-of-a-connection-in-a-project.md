@@ -1,16 +1,15 @@
 ---
-title: "Afficher ou modifier les propriétés d’une connexion dans un projet | Microsoft Docs"
-ms.custom: 
+title: Afficher ou modifier les propriétés d’une connexion dans un projet | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - viewing connection properties
 - projects [SQL Server Management Studio], connections
@@ -18,19 +17,19 @@ helpviewer_keywords:
 - connections [SQL Server Management Studio], viewing
 - modifying connection properties
 ms.assetid: 16e6e7f0-30d9-46f2-8e14-f4d6d3ab1a46
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0bc7f0a8d553cbf7f103732d34a7063425f700ed
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 87a8d52cfdacdb51f62c7983c961131137c13dbd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-or-change-the-properties-of-a-connection-in-a-project"></a>Afficher ou modifier les propriétés d'une connexion dans un projet
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Les propriétés d’une connexion enregistrées dans un projet peuvent être affichées. En outre, certaines d’entre elles peuvent être modifiées.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Les propriétés d'une connexion enregistrées dans un projet peuvent être affichées. En outre, certaines d'entre elles peuvent être modifiées.  
   
 ### <a name="to-change-the-properties-of-a-connection-in-a-project"></a>Pour modifier les propriétés d'une connexion dans un projet  
   

@@ -1,16 +1,15 @@
 ---
-title: bcp_moretext | Microsoft Docs
-ms.custom: 
+title: bcp_moretext | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-extensions-bulk-copy-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - bcp_moretext
@@ -20,16 +19,16 @@ apitype: DLLExport
 helpviewer_keywords:
 - bcp_moretext function
 ms.assetid: 23e98015-a8e4-4434-9b3f-9c7350cf965f
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5a273980a28a31334653feec576fde85de007c38
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e64f445788e35563120c357b93395fcfede50410
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bcpmoretext"></a>bcp_moretext
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -49,7 +48,7 @@ RETCODE bcp_moretext (
   
 ## <a name="arguments"></a>Arguments  
  *pas*  
- Handle de connexion ODBC compatible avec la copie en bloc.  
+ Handle de connexion ODBC compatible avec la copie en bloc.  
   
  *cbData*  
  Est le nombre d’octets de données sont copiées vers SQL Server à partir de données référencées par *pData*. Une valeur de SQL_NULL_DATA indique NULL.  
@@ -61,7 +60,7 @@ RETCODE bcp_moretext (
  SUCCEED ou FAIL.  
   
 ## <a name="remarks"></a>Notes  
- Cette fonction peut être utilisée conjointement avec [bcp_bind](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-bind.md) et [bcp_sendrow](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-sendrow.md) copier long, les valeurs de données de longueur variable vers SQL Server dans un nombre de segments plus petits. **bcp_moretext** peut être utilisé avec des colonnes qui ont des types de données SQL Server suivants : **texte**, **ntext**, **image**, **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, type défini par l’utilisateur (UDT) et XML. **bcp_moretext** ne pas les conversions de données de prise en charge, les données fournies doivent correspondre au type de données de la colonne cible.  
+ Cette fonction peut être utilisée conjointement avec [bcp_bind](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-bind.md) et [bcp_sendrow](../../relational-databases/native-client-odbc-extensions-bulk-copy-functions/bcp-sendrow.md) copier long, les valeurs de données de longueur variable vers SQL Server dans un nombre de segments plus petits. **bcp_moretext** peut être utilisé avec des colonnes qui ont des types de données SQL Server suivants : **texte**, **ntext**, **image**, **varchar (max)** , **nvarchar (max)**, **varbinary (max)**, type défini par l’utilisateur (UDT) et XML. **bcp_moretext** ne pas les conversions de données de prise en charge, les données fournies doivent correspondre au type de données de la colonne cible.  
   
  Si **bcp_bind** est appelée avec une valeur non NULL *pData* paramètre pour les types de données qui sont pris en charge par **bcp_moretext**, **bcp_sendrow** envoie la valeur de données entière, quelle que soit la longueur. If, toutefois, **bcp_bind** a une valeur NULL *pData* paramètre pour les types de données pris en charge, **bcp_moretext** peut être utilisé pour copier les données immédiatement après un retour réussi de **bcp_sendrow** indiquant que toutes les colonnes liées avec des données présentes ont été traitées.  
   

@@ -1,16 +1,13 @@
 ---
-title: sys.dm_db_index_operational_stats (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_index_operational_stats (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, database-engine, pdw, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_db_index_operational_stats
@@ -22,26 +19,27 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_index_operational_stats dynamic management function
 ms.assetid: 13adf2e5-2150-40a6-b346-e74a33ce29c6
-caps.latest.revision: 
+caps.latest.revision: 61
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3866f4dfbd25fc665949455969b1546bd906462a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: fb0db9ea7c4d58fdecf8ef4973e4d8f971ebb3d3
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34553799"
 ---
 # <a name="sysdmdbindexoperationalstats-transact-sql"></a>sys.dm_db_index_operational_stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-asdb-asdw-pdw-md.md)]
 
-  Retourne l'activité en cours des E/S de bas niveau, des verrous externes, des verrous internes et des méthodes d'accès pour chaque partition d'une table ou d'un index de la base de données.    
+  Retourne e/s de bas niveau en cours, verrouillage, activité d’accès et méthode pour chaque partition d’une table ou un index dans la base de données.    
     
  Les index optimisés en mémoire n'apparaissent pas dans cette vue DMV.    
     
 > [!NOTE]    
->  **Sys.dm_db_index_operational_stats** ne retourne pas d’informations sur les index optimisés en mémoire. Pour plus d’informations sur l’utilisation d’index optimisé en mémoire, consultez [sys.dm_db_xtp_index_stats &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-index-stats-transact-sql.md).    
+>  **Sys.dm_db_index_operational_stats** ne retourne pas d’informations sur les index optimisés en mémoire. Pour plus d’informations sur l’utilisation d’index optimisé en mémoire, consultez [sys.dm_db_xtp_index_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-index-stats-transact-sql.md).    
         
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)    
     
@@ -65,14 +63,14 @@ sys.dm_db_index_operational_stats (
     
  La fonction intégrée [DB_ID](../../t-sql/functions/db-id-transact-sql.md) peut être spécifié.    
     
- *object_id* | NULL | 0 | DEFAULT    
+ *object_id* | NULL | 0 | PAR DÉFAUT    
  Identificateur d'objet de la table ou de la vue sur laquelle l'index est défini. *l’object_id* est **int**.    
     
  Les entrées autorisées sont l'ID d'une table et d'une vue ou la valeur NULL, 0 ou DEFAULT. La valeur par défaut est 0. Les valeurs NULL, 0 et DEFAULT sont des valeurs équivalentes dans ce contexte.    
     
  Spécifiez la valeur NULL pour retourner des informations mises en cache pour toutes les tables et les vues de la base de données spécifiée. Si vous spécifiez NULL pour *object_id*, vous devez également spécifier NULL pour *index_id* et *partition_number*.    
     
- *index_id* | 0 | NULL | -1 | DEFAULT    
+ *index_id* | 0 | NULL | -1 | PAR DÉFAUT    
  Identificateur de l'index. *index_id* est **int**. Les entrées autorisées sont l’ID d’un index, 0 si *object_id* est un segment, NULL, -1 ou DEFAULT. La valeur par défaut est -1. Les valeurs NULL, -1 et DEFAULT sont des valeurs équivalentes dans ce contexte.    
     
  Spécifiez la valeur NULL pour retourner des informations mises en cache pour tous les index d'une table de base ou d'une vue. Si vous spécifiez NULL pour *index_id*, vous devez également spécifier NULL pour *partition_number*.    
@@ -86,13 +84,13 @@ sys.dm_db_index_operational_stats (
     
 ## <a name="table-returned"></a>Table retournée    
     
-|Nom de colonne|Type de données| Description|    
+|Nom de colonne|Type de données|Description|    
 |-----------------|---------------|-----------------|    
 |**database_id**|**smallint**|ID de la base de données.|    
-|**object_id**|**int**|ID de la table ou de la vue.|    
-|**index_id**|**int**|ID de l'index ou du segment de mémoire.<br /><br /> 0 = Segment de mémoire|    
-|**hobt_id**|**bigint**|**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> ID du segment de données ou de B-tree de lignes qui effectue le suivi des données internes pour un index columnstore.<br /><br /> NULL : Ceci n’est pas un ensemble de lignes columnstore interne.<br /><br /> Pour plus d’informations, consultez [sys.internal_partitions &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-internal-partitions-transact-sql.md)|    
-|**partition_number**|**int**|Numéro de partition (basé sur la valeur 1) au sein de l'index ou du segment de mémoire.|    
+|**object_id**|**Int**|ID de la table ou de la vue.|    
+|**index_id**|**Int**|ID de l'index ou du segment de mémoire.<br /><br /> 0 = Segment de mémoire|    
+|**hobt_id**|**bigint**|**S’applique à**: [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ([!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à la [version actuelle](http://go.microsoft.com/fwlink/p/?LinkId=299658)), [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br /> ID du segment de données ou de B-tree de lignes qui effectue le suivi des données internes pour un index columnstore.<br /><br /> NULL : Ceci n’est pas un ensemble de lignes columnstore interne.<br /><br /> Pour plus d’informations, consultez [sys.internal_partitions &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-internal-partitions-transact-sql.md)|    
+|**partition_number**|**Int**|Numéro de partition (basé sur la valeur 1) au sein de l'index ou du segment de mémoire.|    
 |**leaf_insert_count**|**bigint**|Nombre cumulatif d'insertions de niveau feuille.|    
 |**leaf_delete_count**|**bigint**|Nombre cumulatif de suppressions de niveau feuille. leaf_delete_count est incrémenté uniquement pour les enregistrements supprimés ne sont pas marqués en tant que fantôme tout d’abord. Pour les enregistrements supprimés sont tout d’abord, un fichier fantôme **leaf_ghost_count** est incrémenté à la place.|    
 |**leaf_update_count**|**bigint**|Nombre cumulatif de mises à jour de niveau feuille.|    
@@ -181,12 +179,12 @@ sys.dm_db_index_operational_stats (
  La valeur dans les colonnes **lob_fetch_in_pages** et **lob_fetch_in_bytes** peut être supérieur à zéro pour les index non ordonnés en clusters qui contiennent une ou plusieurs colonnes LOB en tant que colonnes incluses. Pour plus d’informations, consultez [Créer des index avec colonnes incluses](../../relational-databases/indexes/create-indexes-with-included-columns.md). De même, la valeur dans les colonnes **row_overflow_fetch_in_pages** et **row_overflow_fetch_in_bytes** peut être supérieur à 0 pour les index non cluster si l’index contient des colonnes qui peuvent être envoyées hors ligne.    
     
 ## <a name="how-the-counters-in-the-metadata-cache-are-reset"></a>Mode de réinitialisation des compteurs dans le cache des métadonnées    
- Les données retournées par **sys.dm_db_index_operational_stats** existent uniquement tant que l’objet de cache de métadonnées qui représente le segment de mémoire ou index n’est disponible. Ces données ne sont ni persistantes, ni cohérentes d'un point de vue transactionnel. Autrement dit, vous ne pouvez pas utiliser ces compteurs pour déterminer si un index a été utilisé ou pas, ni pour savoir quand il a été utilisé pour la dernière fois. Pour plus d’informations, consultez [sys.dm_db_index_usage_stats &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-usage-stats-transact-sql.md).    
+ Les données retournées par **sys.dm_db_index_operational_stats** existent uniquement tant que l’objet de cache de métadonnées qui représente le segment de mémoire ou index n’est disponible. Ces données ne sont ni persistantes, ni cohérentes d'un point de vue transactionnel. Autrement dit, vous ne pouvez pas utiliser ces compteurs pour déterminer si un index a été utilisé ou pas, ni pour savoir quand il a été utilisé pour la dernière fois. Pour plus d’informations, consultez [sys.dm_db_index_usage_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-usage-stats-transact-sql.md).    
     
  Les valeurs de chaque colonne sont remises à zéro chaque fois que les métadonnées associées au segment de mémoire ou à l'index sont envoyées dans le cache de métadonnées et les statistiques s'accumulent jusqu'à ce que l'objet cache soit supprimé du cache de métadonnées. Par conséquent, un segment de mémoire actif ou un index aura probablement toujours ses métadonnées dans le cache et les nombres cumulatifs peuvent refléter l'activité depuis le dernier redémarrage de l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les métadonnées d'un segment de mémoire ou d'un index moins actif entrent dans le cache et en sortent à mesure qu'elles sont utilisées. Le cache ne contient donc pas forcément des valeurs. La suppression d'un index entraîne l'effacement des statistiques correspondantes en mémoire, de sorte que la fonction n'en fera plus état. D'autres opérations DDL par rapport à l'index peuvent provoquer la remise à zéro de la valeur des statistiques.    
     
 ## <a name="using-system-functions-to-specify-parameter-values"></a>Utilisation de fonctions système pour spécifier des valeurs de paramètres    
- Vous pouvez utiliser la [!INCLUDE[tsql](../../includes/tsql-md.md)] fonctions [DB_ID](../../t-sql/functions/db-id-transact-sql.md) et [OBJECT_ID](../../t-sql/functions/object-id-transact-sql.md) pour spécifier une valeur pour le *database_id* et *object_id* paramètres. Toutefois, la transmission de valeurs non valides à ces fonctions peut entraîner des résultats imprévisibles. Vérifiez systématiquement qu'un ID valide est retourné lorsque vous utilisez DB_ID ou OBJECT_ID. Pour plus d’informations, consultez la section Remarques dans [sys.dm_db_index_physical_stats &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md).    
+ Vous pouvez utiliser la [!INCLUDE[tsql](../../includes/tsql-md.md)] fonctions [DB_ID](../../t-sql/functions/db-id-transact-sql.md) et [OBJECT_ID](../../t-sql/functions/object-id-transact-sql.md) pour spécifier une valeur pour le *database_id* et *object_id* paramètres. Toutefois, la transmission de valeurs non valides à ces fonctions peut entraîner des résultats imprévisibles. Vérifiez systématiquement qu'un ID valide est retourné lorsque vous utilisez DB_ID ou OBJECT_ID. Pour plus d’informations, consultez la section Remarques dans [sys.dm_db_index_physical_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md).    
     
 ## <a name="permissions"></a>Autorisations    
  Les autorisations suivantes sont nécessaires :    
@@ -201,7 +199,7 @@ sys.dm_db_index_operational_stats (
     
  Le refus de l'autorisation VIEW DATABASE STATE interdit le retour de tous les objets de la base de données, quelles que soient les autorisations CONTROL accordées sur des objets spécifiques. Également, lorsque la base de données générique @*database_id*= NULL est spécifiée, la base de données est omis.    
     
- Pour plus d’informations, consultez [les fonctions et vues de gestion dynamique &#40; Transact-SQL &#41; ](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).    
+ Pour plus d’informations, consultez [fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).    
     
 ## <a name="examples"></a>Exemples    
     
@@ -209,7 +207,7 @@ sys.dm_db_index_operational_stats (
  L'exemple suivant retourne des informations concernant tous les index et toutes les partitions de la table `Person.Address` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)] : L'exécution de cette requête nécessite au minimum l'autorisation CONTROL sur la table `Person.Address`.    
     
 > [!IMPORTANT]    
->  Lorsque vous utilisez les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] DB_ID et OBJECT_ID pour obtenir la valeur d'un paramètre, vérifiez toujours que l'ID retourné est valide. Si le nom de la base de données ou de l'objet est introuvable, par exemple s'il n'existe pas ou n'est pas correctement orthographié, les deux fonctions retournent la valeur NULL. Le **sys.dm_db_index_operational_stats** fonction interprète NULL comme une valeur générique qui spécifie toutes les bases de données ou de tous les objets. Comme il peut s'agir d'une opération non intentionnelle, les exemples fournis dans cette section présentent une méthode sûre pour déterminer les ID de base de données et d'objet.    
+>  Lorsque vous utilisez les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] DB_ID et OBJECT_ID pour obtenir la valeur d'un paramètre, vérifiez toujours que l'ID retourné est valide. Si le nom de la base de données ou de l'objet est introuvable, par exemple s'il n'existe pas ou n'est pas correctement orthographié, les deux fonctions retournent la valeur NULL. La fonction **sys.dm_db_index_operational_stats** interprète la valeur NULL comme une valeur générique qui désigne toutes les bases de données ou tous les objets. Comme il peut s'agir d'une opération non intentionnelle, les exemples fournis dans cette section présentent une méthode sûre pour déterminer les ID de base de données et d'objet.    
     
 ```    
 DECLARE @db_id int;    
@@ -244,12 +242,12 @@ GO
 ## <a name="see-also"></a>Voir aussi    
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)     
  [Fonctions et vues de gestion dynamique relatives aux index &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/index-related-dynamic-management-views-and-functions-transact-sql.md)     
- [Surveiller et optimiser les performances](../../relational-databases/performance/monitor-and-tune-for-performance.md)     
- [Sys.dm_db_index_physical_stats &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md)     
+ [Surveiller et régler les performances](../../relational-databases/performance/monitor-and-tune-for-performance.md)     
+ [sys.dm_db_index_physical_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-physical-stats-transact-sql.md)     
  [sys.dm_db_index_usage_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-index-usage-stats-transact-sql.md)     
  [sys.dm_os_latch_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-latch-stats-transact-sql.md)     
  [sys.dm_db_partition_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-partition-stats-transact-sql.md)     
- [sys.allocation_units &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-allocation-units-transact-sql.md)     
+ [Sys.allocation_units &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-allocation-units-transact-sql.md)     
  [sys.indexes &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md)    
     
   

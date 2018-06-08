@@ -1,31 +1,23 @@
 ---
-title: "Créer un graphique de courbes d’élévation, un graphique des bénéfices ou une matrice de Classification | Documents Microsoft"
-ms.custom: 
-ms.date: 03/20/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Mining Accuracy Chart [Analysis Services], mining structures
-ms.assetid: aa3d052f-58a9-4417-8e7a-5e6feb562af0
-caps.latest.revision: "20"
-author: Minewiskan
+title: Créer un graphique de courbes d’élévation, un graphique des bénéfices ou une matrice de Classification | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b16770ad1bf8ca0052f7b8b6af22df02d4e4392f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 57d8dac4999f5b788b1114e6e7aa4156b6cd6419
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-lift-chart-profit-chart-or-classification-matrix"></a>Créer un graphique de courbes d'élévation, un graphique des bénéfices ou une matrice de classification
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Vous pouvez créer un graphique de précision pour une [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] modèle d’exploration de données en cinq étapes de base :  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Vous pouvez créer un graphique d'analyse de précision pour un modèle d'exploration de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] en cinq étapes de base :  
   
 -   Sélectionnez la structure d'exploration de données contenant les modèles d'exploration de données à comparer.  
   
@@ -116,7 +108,7 @@ ms.lasthandoff: 01/08/2018
      Revenu associé à chaque vente réussie.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Graphique de courbes d’élévation &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/lift-chart-analysis-services-data-mining.md)   
- [Matrice de classification &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/classification-matrix-analysis-services-data-mining.md)  
+ [Graphique de courbes d’élévation & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/lift-chart-analysis-services-data-mining.md)   
+ [Matrice de classification & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/classification-matrix-analysis-services-data-mining.md)  
   
   

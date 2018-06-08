@@ -1,38 +1,23 @@
 ---
-title: "Comprendre les schémas de base de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- Schema Generation Wizard, database schema
-- database schema [Analysis Services]
-- relational schema [Analysis Services], database schema
-- subject area schema options [Analysis Services]
-- staging area schema options [Analysis Services]
-- denormalized schemas
-ms.assetid: 51e411f9-ee3f-4b92-9833-c2bce8c6b752
-caps.latest.revision: 
-author: Minewiskan
+title: Comprendre les schémas de base de données | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 05f62f6beb2e248fc2e0c3ae405f8893c33c10e9
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 91a54be06727a674a16f12295fa886f869b188e4
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="understanding-the-database-schemas"></a>Présentation des schémas de base de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'Assistant Génération de schéma crée pour la base de données de la zone de sujet un schéma relationnel dénormalisé basé sur les dimensions et les groupes de mesures définis dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. L'Assistant génère pour chaque dimension une table relationnelle appelée table de dimension, destinée à stocker les données de dimension, et pour chaque groupe de mesures une table relationnelle appelée table de faits, servant à stocker les données de faits. Lorsqu'il génère ces tables relationnelles, l'Assistant ignore les dimensions liées, les groupes de mesures liés et les dimensions de temps de serveur.  
+  L'Assistant Génération de schéma crée pour la base de données de la zone de sujet un schéma relationnel dénormalisé basé sur les dimensions et les groupes de mesures définis dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. L'Assistant génère pour chaque dimension une table relationnelle appelée table de dimension, destinée à stocker les données de dimension, et pour chaque groupe de mesures une table relationnelle appelée table de faits, servant à stocker les données de faits. Lorsqu'il génère ces tables relationnelles, l'Assistant ignore les dimensions liées, les groupes de mesures liés et les dimensions de temps de serveur.  
   
 ## <a name="validation"></a>Validation  
  Avant de commencer à générer le schéma relationnel sous-jacent, l'Assistant Génération de schéma valide les cubes et les dimensions [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Si l'Assistant détecte des erreurs, il s'arrête et signale ces erreurs dans la fenêtre Liste des tâches de [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Voici quelques exemples d'erreurs qui empêchent la génération :  

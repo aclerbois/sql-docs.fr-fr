@@ -1,31 +1,28 @@
 ---
-title: "SQL en c : numérique | Documents Microsoft"
-ms.custom: 
+title: 'SQL en c : numérique | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data conversions from SQL to C types [ODBC], numeric
 - numeric data type [ODBC], converting
 - converting data from SQL to C types [ODBC], numeric
 ms.assetid: 76f8b5d5-4bd0-4dcb-a90a-698340e0d36e
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3f09af0c145da9d435bce70619a5388f1cecb581
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 72714e2bf41a820bec154487d23fb0fcf0c66ac0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-to-c-numeric"></a>SQL en c : numérique
 Les identificateurs pour les types de données SQL ODBC numériques sont :  

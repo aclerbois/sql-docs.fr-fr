@@ -1,16 +1,15 @@
 ---
 title: Concepteurs Visual Database Tools | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data sources [SQL Server]
 - View Designer
@@ -22,19 +21,19 @@ helpviewer_keywords:
 - Visual Database Tools [SQL Server], designers
 - Properties window [Visual Database Tools]
 ms.assetid: bd0ca68e-6f69-42dd-bcb5-ce511673769c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6f9174882f49b0307617ddc0576c146cabe6d22d
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 0ce2c27eb14fdafe41d30792f1464e190b92ffdf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="visual-database-tool-designers"></a>Concepteurs Visual Database Tools
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Visual Database Tools est une combinaison d’outils de conception que vous pouvez utiliser pour traiter une source de données. Vous pouvez les utiliser pour créer des requêtes, concevoir ou modifier une structure de base de données ou mettre à jour des données. Les outils disponibles sont le Concepteur de schémas de base de données, le Concepteur de tables et le Concepteur de requêtes et de vues.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Visual Database Tools est une combinaison d'outils de conception que vous pouvez utiliser pour traiter une source de données. Vous pouvez les utiliser pour créer des requêtes, concevoir ou modifier une structure de base de données ou mettre à jour des données. Les outils disponibles sont le Concepteur de schémas de base de données, le Concepteur de tables et le Concepteur de requêtes et de vues.  
   
 ## <a name="properties-window"></a>Fenêtre Propriétés  
 La fenêtre de propriétés n'est pas spécifique à Visual Database Tools, mais vous pouvez apporter de nombreuses modifications à cet endroit. Elle affiche les propriétés de l'élément actuellement sélectionné (sous la forme d'une table) et vous permet de modifier ces propriétés (du nom des propriétés au classement d'une colonne). Certaines propriétés peuvent être affichées dans la fenêtre de propriétés, mais doivent être modifiées dans un autre outil.  

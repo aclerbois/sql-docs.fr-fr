@@ -1,27 +1,18 @@
 ---
 title: À l’aide des fonctions R avec des données SQL Server (R dans démarrage rapide de SQL) | Documents Microsoft
-ms.custom: ''
-ms.date: 07/26/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-dev_langs:
-- R
-- SQL
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 71cde951b53dbde496bc1d0b55f1cb9bf663be13
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 52b03b16c55b4ae8a772c2c12861fcc4b184d1f4
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585741"
 ---
 # <a name="using-r-functions-with-sql-server-data-r-in-sql-quickstart"></a>À l’aide des fonctions R avec des données SQL Server (R dans démarrage rapide de SQL)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -81,12 +72,6 @@ Maintenant que vous avez inclus la fonction R dans une procédure stockée, vous
 ```sql
 EXEC MyRNorm @param1 = 100,@param2 = 50, @param3 = 3
 ```
-
-## <a name="related-resources"></a>Ressources connexes
-
-+ Vous souhaitez installer plusieurs packages R, pour obtenir des informations plus avancée des fonctions statistiques ? Consultez [installation et gestion des packages R](../r/installing-and-managing-r-packages.md).
-
-+ Pour vous aider à convertir votre code R autonome dans un format qui peut être facilement paramétrable à l’aide de procédures stockées SQL Server, l’équipe Microsoft R a fourni un nouveau package de R, **sqlrutils**. Pour plus d’informations, consultez [la création d’une procédure stockée à l’aide de sqlrutils](../r/how-to-create-a-stored-procedure-using-sqlrutils.md).
 
 ## <a name="use-r-utility-functions-for-troubleshooting"></a>Utiliser les fonctions utilitaires R pour résoudre les problèmes
 

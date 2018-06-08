@@ -1,16 +1,14 @@
 ---
 title: ALTER TRIGGER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/08/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER TRIGGER
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - ALTER TRIGGER statement
 - DML triggers, modifying
 ms.assetid: 2a99c7c1-ac2f-4637-aa7c-3d1bf514e500
-caps.latest.revision: 
+caps.latest.revision: 74
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 29808a6c96bfcdef3bc892463604a474b567878f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: deda2bde733c96de409ebed35ea33ffdc443fa23
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-trigger-transact-sql"></a>ALTER TRIGGER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -241,7 +238,7 @@ AS { sql_statement
  Lorsqu'une action DELETE sur une table enfant ou une table de référence résulte d'une instruction DELETE en cascade depuis une table parente, et qu'un déclencheur INSTEAD OF est défini sur DELETE dans la table enfant, le déclencheur est ignoré et l'action DELETE est exécutée.  
   
 ## <a name="ddl-triggers"></a>Déclencheurs DDL  
- À la différence des déclencheurs DML, le champ d'action des déclencheurs DDL ne se limitent pas aux schémas. OBJECT_ID, OBJECT_NAME, OBJECTPROPERTY et OBJECTPROPERTY(EX) ne peuvent donc pas être utilisés lors de requêtes sur les métadonnées concernant les déclencheurs DDL. Utilisez plutôt les vues de catalogue. Pour plus d’informations, consultez [Obtenir des informations sur les déclencheurs DDL](../../relational-databases/triggers/get-information-about-ddl-triggers.md).  
+ À la différence des déclencheurs DML, le champ d'action des déclencheurs DDL ne correspond pas aux schémas. OBJECT_ID, OBJECT_NAME, OBJECTPROPERTY et OBJECTPROPERTY(EX) ne peuvent donc pas être utilisés lors de requêtes sur les métadonnées concernant les déclencheurs DDL. Utilisez plutôt les affichages catalogue. Pour plus d’informations, consultez [Obtenir des informations sur les déclencheurs DDL](../../relational-databases/triggers/get-information-about-ddl-triggers.md).  
   
 ## <a name="logon-triggers"></a>Déclencheurs de connexion  
  [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)] ne prend pas en charge les déclencheurs sur les événements de connexion.  

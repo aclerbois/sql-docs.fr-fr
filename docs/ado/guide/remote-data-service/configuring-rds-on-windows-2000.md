@@ -1,30 +1,27 @@
 ---
-title: "Configuration des services Bureau à distance sur Windows 2000 | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Configuration des services Bureau à distance sur Windows 2000 | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS configuration [ADO], Windows 2000
 ms.assetid: ef37e858-c05f-4f52-a65f-3ce6037e0d03
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 483cbe5243c9a5d2d6d63eb2b7c5f009a98cf33d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1efc5f21b829e85e063dbbd3dbb3d72131d43149
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configuring-rds-on-windows-2000"></a>Configuration des services Bureau à distance sur Windows 2000
 Si vous rencontrez des difficultés dans la mise en route des services Bureau à distance pour fonctionner correctement une fois que vous mettez à niveau vers Windows 2000, procédez comme suit pour résoudre le problème :  

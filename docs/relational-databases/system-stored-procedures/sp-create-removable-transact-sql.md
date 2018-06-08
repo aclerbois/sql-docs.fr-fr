@@ -1,16 +1,14 @@
 ---
-title: sp_create_removable (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_create_removable (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_create_removable
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_create_removable
 ms.assetid: 06e36ae5-f70d-4a26-9a7f-ee4b9360b355
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e7b5a66828c1ee49734e720137d3a0ededc0098e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 7ac999e58a6c88d8a121d7708b6fc9e954cf7419
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spcreateremovable-transact-sql"></a>sp_create_removable (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -65,30 +62,30 @@ sp_create_removable
  [  **@dbname=** ] **'***dbname***'**  
  Nom de la base de données à créer pour une utilisation sur un support amovible. *dbname* est **sysname**.  
   
- [ **@syslogical=** ] **'***syslogical***'**  
+ [  **@syslogical=** ] **'***syslogical***'**  
  Nom logique du fichier qui contient les tables du catalogue système. *syslogical* est **sysname**.  
   
- [ **@sysphysical=** ] **'***sysphysical***'**  
+ [  **@sysphysical=** ] **'***sysphysical***'**  
  Nom physique. Il comprend un chemin d'accès complet du fichier contenant les tables du catalogue système. *sysphysical* est **nvarchar (260)**.  
   
- [ **@syssize=** ] *syssize*  
+ [  **@syssize=** ] *syssize*  
  Taille, en Mo, du fichier contenant les tables du catalogue système. *syssize* est **int**. La valeur minimale *syssize* est 1.  
   
- [ **@loglogical=** ] **'***loglogical***'**  
+ [  **@loglogical=** ] **'***loglogical***'**  
  Nom logique du fichier contenant le journal des transactions. *loglogical* est **sysname**.  
   
- [ **@logphysical=** ] **'***logphysical***'**  
+ [  **@logphysical=** ] **'***logphysical***'**  
  Nom physique. Il comprend un chemin d'accès complet du fichier contenant le journal des transactions. *logphysical* est **nvarchar (260)**.  
   
  [  **@logsize=** ] *logsize*  
  Taille, en Mo, du fichier contenant le journal des transactions. *LogSize* est **int**. La valeur minimale *logsize* est 1.  
   
- [ **@datalogical1=** ] **'***datalogical***'**  
+ [  **@datalogical1=** ] **'***datalogique***'**  
  Nom logique d'un fichier contenant les tables de données. *datalogique* est **sysname**.  
   
  Il doit exister entre 1 et 16 fichiers de données. Habituellement, plusieurs fichiers de données sont créés lorsqu'il est prévu que la base de données soit volumineuse et qu'elle doive être distribuée sur plusieurs disques.  
   
- [ **@dataphysical1=** ] **'***dataphysical***'**  
+ [  **@dataphysical1=** ] **'***dataphysique***'**  
  Nom physique. Il comprend un chemin d'accès complet du fichier contenant les tables de données. *dataphysique* est **nvarchar (260)**.  
   
  [  **@datasize1=** ] **'***datasize***'**  
@@ -118,7 +115,7 @@ sp_create_removable
 |Restaurée|Détachée|  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne pas de jeu de données et le journal des autorisations de fichier.  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne définit pas d'autorisations sur les fichiers de données et les journaux.  
   
 ## <a name="examples"></a>Exemples  
  L'exemple suivant crée la base de données `inventory` comme base de données amovible.  

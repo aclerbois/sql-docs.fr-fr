@@ -1,27 +1,25 @@
 ---
-title: "Étape 1 : Configurer l’environnement de développement pour le développement Ruby | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Configurer l’environnement de développement pour le développement Ruby | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ruby
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8cdbadeb-f640-406c-977c-d2d44b7b5368
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1f50042c6ae0233b5bc39ce2879391d1d5340741
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c8b4cd36a78952e8d783e79388ede49287e5e0f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-1-configure-development-environment-for-ruby-development"></a>Étape 1 : Configurer l’environnement de développement pour le développement Ruby
 Vous devez configurer votre environnement de développement avec les composants requis pour développer une application à l’aide du pilote Ruby pour SQL Server.    
@@ -36,8 +34,8 @@ Si votre ordinateur ne dispose pas de Ruby Veuillez l’installer. Pour les nouv
   
 2.  **Installer Ruby**  
 Une fois le programme d’installation téléchargé, procédez comme suit :  
-a. Double-cliquez sur le fichier pour démarrer le programme d’installation.  
-b. Sélectionnez votre langue et j’accepte les termes du contrat.  
+A. Double-cliquez sur le fichier pour démarrer le programme d’installation.  
+B. Sélectionnez votre langue et j’accepte les termes du contrat.  
 c.  Dans l’écran Paramètres d’installation, sélectionnez les cases à cocher en regard de ces deux exécutables Ruby d’ajouter à vos fichiers .rb et .rbw chemin d’accès et les associer avec cette installation Ruby.  
   
 3.  **Télécharger le Kit de développement Ruby**  
@@ -45,8 +43,8 @@ Télécharger le Kit de développement à partir de la page RubyInstaller
   
 4.  **Installer le Kit de développement Ruby**  
 Une fois le téléchargement terminé, procédez comme suit :  
-a. Double-cliquez sur le fichier. Vous devez where extraire les fichiers.  
-b. Cliquez sur le bouton «... » et sélectionnez « C:\DevKit ». Vous devrez probablement d’abord créer ce dossier en cliquant sur « Créer un nouveau dossier ».  
+A. Double-cliquez sur le fichier. Vous devez where extraire les fichiers.  
+B. Cliquez sur le bouton «... » et sélectionnez « C:\DevKit ». Vous devrez probablement d’abord créer ce dossier en cliquant sur « Créer un nouveau dossier ».  
 c. Cliquez sur « OK » et puis « extraire », pour extraire les fichiers.  
   
 5. **Ouvrez cmd.exe**  

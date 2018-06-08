@@ -1,23 +1,17 @@
 ---
 title: Modifier le pool de comptes d’utilisateur pour l’apprentissage de SQL Server | Documents Microsoft
-ms.date: 11/03/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 7c1efa87fef881a8b88b0967716ec062cf95e64f
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 77b84e3117b0a1366f3d0b5f9d74802d938bc86b
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
 # <a name="modify-the-user-account-pool-for-sql-server-machine-learning"></a>Modifier le pool de comptes d’utilisateur pour l’apprentissage de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -35,7 +29,7 @@ Le groupe de compte Windows est créé par [!INCLUDE[ssNoVersion](../../includes
 -   Dans une instance par défaut, le nom du groupe est **SQLRUserGroup**. Le nom est le même que vous utilisiez R, Python ou les deux.
 -   Dans une instance nommée, le nom du groupe par défaut a pour suffixe le nom de l’instance (par exemple, **SQLRUserGroupMyInstanceName**).
 
-Par défaut, le pool de comptes d’utilisateurs contient 20 comptes d’utilisateurs. Dans la plupart des cas, 20 est suffisante pour prendre en charge les tâches d’apprentissage automatique, mais vous pouvez modifier le nombre de comptes.
+Par défaut, le pool de comptes d’utilisateurs contient 20 comptes d’utilisateurs. Dans la plupart des cas, 20 est suffisante pour prendre en charge les tâches d’apprentissage automatique, mais vous pouvez modifier le nombre de comptes. Le nombre maximal de comptes est 100.
 -  Dans une instance par défaut, les comptes individuels sont nommés **MSSQLSERVER01** à **MSSQLSERVER20**.
 -   Pour une instance nommée, les comptes individuels sont nommés en fonction du nom de l’instance (par exemple, **MyInstanceName01** à **MyInstanceName20**).
 
@@ -50,7 +44,7 @@ Les mots de passe associés à chaque compte d’utilisateur sont générés de 
 1. Ouvrez le Gestionnaire de configuration SQL Server, puis sélectionnez **SQL Server Services**.
 2. Double-cliquez sur le service SQL Server Launchpad et arrêtez-le s’il est en cours d’exécution.
 3.  Sous l’onglet **Service**, vérifiez que le mode de démarrage Automatique est sélectionné. Scripts externes ne peut pas démarrer lorsque la zone de lancement n’est pas en cours d’exécution.
-4.  Cliquez sur l’onglet **Avancé** et, si nécessaire, modifiez le **Nombre d’utilisateurs externes**. Ce paramètre contrôle le nombre d’utilisateurs différents SQL peut exécuter script externe simultanément des sessions. La valeur par défaut est 20 comptes.
+4.  Cliquez sur l’onglet **Avancé** et, si nécessaire, modifiez le **Nombre d’utilisateurs externes**. Ce paramètre contrôle le nombre d’utilisateurs différents SQL peut exécuter script externe simultanément des sessions. La valeur par défaut est 20 comptes. Le nombre maximal d’utilisateurs est 100.
 5. Vous pouvez éventuellement affecter à l’option **Réinitialiser le mot de passe des utilisateurs externes** la valeur _Oui_ si une stratégie exigeant le changement périodique des mots de passe est en place dans votre organisation. Cette opération regénère les mots de passe chiffrés que gère Launchpad pour les comptes d’utilisateurs. Pour plus d’informations, consultez [Appliquer la stratégie des mots de passe](#bkmk_EnforcePolicy).
 6.  Redémarrez le service Launchpad.
 

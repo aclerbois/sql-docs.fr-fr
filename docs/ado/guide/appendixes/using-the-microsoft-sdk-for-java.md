@@ -1,31 +1,28 @@
 ---
-title: "À l’aide du Kit de développement logiciel Microsoft pour Java | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: À l’aide du Kit de développement logiciel Microsoft pour Java | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 02/15/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Java (Microsoft SDK for)
 - Microsoft SDK for Java [ADO]
 ms.assetid: 2d7cb5b5-8307-49dd-b07e-c07069bb1626
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 53d61d4cd48f8792cafb24971f7b454c4d16c19e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 40b718fbd2b54c55d9ef35a4d4cedbc87a24f3f8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-the-microsoft-sdk-for-java"></a>À l’aide du Kit de développement logiciel Microsoft pour Java
 

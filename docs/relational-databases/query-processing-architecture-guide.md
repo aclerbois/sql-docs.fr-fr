@@ -1,31 +1,29 @@
 ---
-title: "Guide d’architecture de traitement des requêtes | Microsoft Docs"
-ms.custom: 
+title: Guide d’architecture de traitement des requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 02/16/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - guide, query processing architecture
 - query processing architecture guide
 ms.assetid: 44fadbee-b5fe-40c0-af8a-11a1eecf6cb5
-caps.latest.revision: 
+caps.latest.revision: 5
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 625481946af508b626a6bc142113298298a7fca2
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.openlocfilehash: 15fd6269a2e879eba086af8d1d143cc0e0cffc1c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="query-processing-architecture-guide"></a>Guide d’architecture de traitement des requêtes
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -274,7 +272,7 @@ L'utilisation d'indicateurs n'est pas autorisée dans les définitions de vues i
 
 Le processeur de requêtes [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] optimise les performances des vues partitionnées distribuées. L'aspect le plus important des performances d'une vue distribuée partitionnée est de minimiser la quantité de données à transférer entre des serveurs membres.
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] construit des plans intelligents et dynamiques qui utilisent efficacement les requêtes distribuées pour accéder aux données à partir de tables membres distantes : 
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] construit des plans intelligents et dynamiques qui utilisent efficacement les requêtes distribuées pour accéder aux données à partir des tables membres distantes : 
 
 * Le processeur de requêtes utilise d’abord OLE DB pour récupérer les définitions des contraintes de vérification de chaque table membre. Ceci permet au processeur de requêtes de mapper la distribution des valeurs de clés entre les tables membres.
 * The Query Processor compares the key ranges specified in an SQL statement `WHERE` d’une instruction SQL au mappage qui représente la distribution des lignes dans les tables membres. Le processeur de requêtes construit alors un plan d'exécution des requêtes qui utilise les requêtes distribuées pour récupérer uniquement les lignes distantes requises pour exécuter l'instruction SQL. Le plan d'exécution est également construit de telle sorte que tout accès aux tables membres distantes pour les données ou les métadonnées est différé jusqu'à ce que les informations soient requises.
@@ -322,9 +320,9 @@ Le plan d'exécution des procédures stockées et des déclencheurs est exécut�
 
 ## <a name="execution-plan-caching-and-reuse"></a>Mise en mémoire cache et réutilisation du plan d'exécution
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] dispose d’un pool de mémoire utilisé pour stocker les plans d’exécution et les mémoires tampons de données. Le pourcentage de ce pool alloué aux plans d'exécution ou aux tampons de données évolue de façon dynamique en fonction de l'état du système. La part du pool de mémoire utilisée pour stocker les plans d’exécution est appelée « cache du plan ».
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] dispose d'un pool de mémoire utilisé pour stocker les plans d'exécution et les tampons de données. Le pourcentage de ce pool alloué aux plans d'exécution ou aux tampons de données évolue de façon dynamique en fonction de l'état du système. La part du pool de mémoire utilisée pour stocker les plans d’exécution est appelée « cache du plan ».
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Les plans d’exécution comprennent les composants principaux suivants : 
+Les plans d'exécution de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] comprennent les composants principaux suivants : 
 
 * Plan d’exécution de requête Le corps du plan d’exécution est une structure de données réentrante et en lecture seule qui peut être utilisée par un nombre quelconque d’utilisateurs. Il constitue le plan de requête. Aucun contexte d'utilisateur n'est stocké dans le plan de requête. Il n'y a jamais plus d'une ou deux copies du plan de requête en mémoire : une copie pour toutes les exécutions en série et une autre pour toutes les exécutions en parallèle. La copie en parallèle couvre toutes les exécutions en parallèle, indépendamment de leur degré de parallélisme. 
 * Contexte d’exécution Chaque utilisateur exécutant actuellement la requête dispose d’une structure de données qui contient les données spécifiques à son exécution, telles que la valeur des paramètres. Cette structure de données constitue le contexte d'exécution. Les structures de données du contexte d'exécution sont réutilisées. Si un utilisateur exécute une requête et qu'une des structures n'est pas en cours d'utilisation, elle est réinitialisée avec le contexte du nouvel utilisateur. 
@@ -333,7 +331,7 @@ Le plan d'exécution des procédures stockées et des déclencheurs est exécut�
 
 Quand une instruction SQL est exécutée dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)], le moteur relationnel parcourt d’abord le cache de plan afin de voir s’il existe un plan d’exécution pour la même instruction SQL. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] réutilise le plan existant qu’il trouve, évitant ainsi la recompilation de l’instruction SQL. S'il n'existe aucun plan d'exécution, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] en génère un nouveau pour la requête.
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] dispose d’un algorithme efficace qui permet de trouver un plan d’exécution existant pour toute instruction SQL spécifique. Dans la plupart des systèmes, les ressources minimales utilisées par cette analyse sont inférieures à celles économisées par la réutilisation de plans existants au lieu de la compilation de toutes les instructions SQL.
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] dispose d'un algorithme efficace qui permet de trouver un plan d'exécution existant pour toute instruction SQL spécifique. Dans la plupart des systèmes, les ressources minimales utilisées par cette analyse sont inférieures à celles économisées par la réutilisation de plans existants au lieu de la compilation de toutes les instructions SQL.
 
 Les algorithmes qui permettent d'associer de nouvelles instructions SQL à des plans d'exécution inutilisés existants en mémoire cache imposent que toutes les références d'objets soient complètes. Par exemple, la première de ces instructions `SELECT` n'est pas associée à un plan existant, contrairement à la seconde :
 
@@ -633,7 +631,7 @@ Les valeurs de paramètres sont détectées pendant la compilation ou la recompi
 
 ## <a name="parallel-query-processing"></a>Traitement de requêtes en parallèle
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] permet les requêtes parallèles afin d’optimiser leur exécution et les opérations d’index sur les ordinateurs dotés de plusieurs processeurs (ou unités centrales). Comme [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] peut exécuter une requête ou une opération d’index en parallèle à l’aide de plusieurs threads de travail du système d’exploitation, l’opération peut être exécutée rapidement et efficacement.
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] permet les requêtes parallèles afin d'optimiser leur exécution et les opérations d'index sur les ordinateurs dotés de plusieurs processeurs (ou unités centrales). Comme [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] peut exécuter une requête ou une opération d’index en parallèle à l’aide de plusieurs threads de travail du système d’exploitation, l’opération peut être exécutée rapidement et efficacement.
 
 Durant l'optimisation, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] recherche les requêtes ou les opérations d'index qui pourraient tirer profit d'une exécution en parallèle. Pour ces requêtes, [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] insère des opérateurs d'échange dans le plan d'exécution de la requête afin de la préparer à l'exécution en parallèle. Un opérateur d'échange est un opérateur dans un plan d'exécution de requêtes qui assure la gestion du processus, la redistribution des données et le contrôle de flux. L’opérateur d’échange inclut les opérateurs logiques `Distribute Streams`, `Repartition Streams`et `Gather Streams` comme sous-types, qui peuvent apparaître dans la sortie Showplan du plan de requête d’une requête parallèle. 
 
@@ -647,7 +645,7 @@ L’optimiseur de requête [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)
 
 ### <a name="DOP"></a> Degré de parallélisme
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] détecte automatiquement le meilleur degré de parallélisme pour chaque instance d’une exécution de requête en parallèle ou d’une opération DDL (Data Definition Language) d’index. Cette détection se fait sur la base des critères suivants : 
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] détecte automatiquement le meilleur degré de parallélisme pour chaque instance d'une exécution de requête en parallèle ou d'une opération DDL (Data Definition Language) d'index. Cette détection se fait sur la base des critères suivants : 
 
 1. [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] fonctionne sur un ordinateur doté de plusieurs microprocesseurs ou UC, tel qu'un ordinateur à multitraitement symétrique (SMP, symmetric multiprocessing).  
   Seuls les ordinateurs dotés de plusieurs UC peuvent utiliser des requêtes en parallèle. 
@@ -873,7 +871,7 @@ Vous pouvez examiner les plans d’exécution de requêtes sur les tables et les
 
 #### <a name="partition-information-enhancements"></a>Améliorations apportées aux informations de partition
 
-[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] fournit des informations de partitionnement améliorées pour les plans d’exécution de compilation et au moment de l’exécution. Les plans d'exécution fournissent désormais les informations suivantes :
+[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] fournit des informations de partitionnement améliorées pour les plans d'exécution de compilation et au moment de l'exécution. Les plans d'exécution fournissent désormais les informations suivantes :
 
 * Un attribut `Partitioned` facultatif qui indique qu’un opérateur, tel que `seek`, `scan`, `insert`, `update`, `merge`ou `delete`, est effectué sur une table partitionnée.  
 * Un nouvel élément `SeekPredicateNew` avec un sous-élément `SeekKeys` qui inclut `PartitionID` comme la colonne clé d’index principale et des conditions de filtrage qui spécifient les recherches de plage sur `PartitionID`. La présence de deux sous-éléments `SeekKeys` indique qu’une opération d’analyse par saut sur `PartitionID` est utilisée.   

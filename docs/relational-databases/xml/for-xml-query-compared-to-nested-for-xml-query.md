@@ -1,35 +1,32 @@
 ---
-title: "Comparaison de la requête FOR XML et de la requête FOR XML imbriquée | Microsoft Docs"
-ms.custom: 
+title: Comparaison de la requête FOR XML et de la requête FOR XML imbriquée | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FOR XML query
 - queries [XML in SQL Server], comparing query types
 ms.assetid: 19225b4a-ee3f-47cf-8bcc-52699eeda32c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dbbc80f4b96765da5cbb2e7533d5c46e80a26935
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 69944dddca8f71683b168150dfe8b146d390504d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="for-xml-query-compared-to-nested-for-xml-query"></a>Comparaison de la requête FOR XML et de la requête FOR XML imbriquée
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cette rubrique compare une requête FOR XML d'un seul niveau à une requête FOR XML imbriquée. L'un des avantages liés à l'utilisation des requêtes FOR XML imbriquées est que vous pouvez spécifier une combinaison de données XML centrées sur l'attribut et centrées sur l'élément pour les résultats de requête. L'exemple suivant en offre une illustration.  
+  Cette rubrique compare une requête FOR XML d'un seul niveau à une requête FOR XML imbriquée. L'un des avantages liés à l'utilisation des requêtes FOR XML imbriquées est que vous pouvez spécifier une combinaison de données XML centrées sur l'attribut et centrées sur l'élément pour les résultats de requête. L'exemple suivant en offre une illustration.  
   
 ## <a name="example"></a> Exemple  
  La requête `SELECT` suivante extrait de la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] des informations sur les catégories et les sous-catégories de produits. La requête ne contient aucune clause FOR XML imbriquée.  

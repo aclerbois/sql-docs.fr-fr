@@ -1,16 +1,15 @@
 ---
-title: "sp_delete_database_firewall_rule (base de données de SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: sp_delete_database_firewall_rule (base de données de SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/04/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-database
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-database
 ms.component: system-stored-procedures
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_delete_database_firewall_rule
@@ -22,16 +21,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_delete_database_firewall_rule procedure
 ms.assetid: ed295312-e586-4fc2-9e80-806b490ee7bd
-caps.latest.revision: 
+caps.latest.revision: 13
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: baf0e52d681d7e48e39a6891578e3d5891de89bb
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || = sqlallproducts-allversions
+ms.openlocfilehash: 0178f70f2ea71af12f53109b4dbde0240977c9d9
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdeletedatabasefirewallrule-azure-sql-database"></a>sp_delete_database_firewall_rule (Azure SQL Database)
 [!INCLUDE[tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-xxxxxx-asdb-xxxx-xxx-md.md)]
@@ -51,7 +50,7 @@ sp_delete_database_firewall_rule [@name =] [N]'name'
  [ **@name =**] **'***nom***'**  
  Nom du paramètre de pare-feu de niveau base de données qui sera supprimé. *nom* est **nvarchar (128)** sans valeur par défaut. L’identificateur Unicode `N` est facultatif pour [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)]. 
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Uniquement au niveau du serveur principale connexion créée par le processus de déploiement ou d’une entité de sécurité Azure Active Directory désigné comme administrateur peut supprimer les règles de pare-feu de niveau base de données.  
   
 ## <a name="example"></a>Exemple  
@@ -66,9 +65,9 @@ EXECUTE sp_delete_database_firewall_rule N'Example DB Setting 1';
 ## <a name="see-also"></a>Voir aussi  
  [Pare-feu de base de données SQL Azure](https://azure.microsoft.com/documentation/articles/sql-database-firewall-configure/)   
  [Comment : configurer les paramètres de pare-feu (base de données SQL Azure)](https://azure.microsoft.com/documentation/articles/sql-database-configure-firewall-settings/)   
- [sp_set_firewall_rule &#40; Base de données SQL Azure &#41;](../../relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database.md)   
- [sp_set_database_firewall_rule &#40; Base de données SQL Azure &#41;](../../relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database.md)   
- [Sys.database_firewall_rules &#40; Base de données SQL Azure &#41;](../../relational-databases/system-catalog-views/sys-database-firewall-rules-azure-sql-database.md)  
+ [sp_set_firewall_rule &#40;base de données SQL Azure&#41;](../../relational-databases/system-stored-procedures/sp-set-firewall-rule-azure-sql-database.md)   
+ [sp_set_database_firewall_rule &#40;base de données SQL Azure&#41;](../../relational-databases/system-stored-procedures/sp-set-database-firewall-rule-azure-sql-database.md)   
+ [Sys.database_firewall_rules &#40;base de données SQL Azure&#41;](../../relational-databases/system-catalog-views/sys-database-firewall-rules-azure-sql-database.md)  
   
   
 

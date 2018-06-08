@@ -1,32 +1,29 @@
 ---
-title: "L’exécution positionné instructions Update et Delete | Documents Microsoft"
-ms.custom: 
+title: L’exécution positionné instructions Update et Delete | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - positioned deletes [ODBC]
 - cursor library [ODBC], positioned update or delete
 - positioned updates [ODBC]
 - ODBC cursor library [ODBC], positioned update or delete
 ms.assetid: 1d64f309-2a6e-4ad1-a6b5-e81145549c56
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c201b69b2f4a756233c65ad1a1f2730b04e3d79f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e7099999311d565af4eeff5943306c927d81f3b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-positioned-update-and-delete-statements"></a>L’exécution des instructions de suppression et de mise à jour positionnée
 > [!IMPORTANT]  
@@ -40,9 +37,9 @@ ms.lasthandoff: 12/21/2017
   
      **Mise à jour** *-nom de la table*  
   
-     **Définissez** *identificateur de la colonne*  **=**  {*expression* &#124; **NULL**}  
+     **Définissez** *identificateur de la colonne* **=** {*expression* &#124; **NULL**}  
   
-     [**,** *identificateur de la colonne*  **=**  {*expression* &#124; **NULL**}]  
+     [**,** *identificateur de la colonne* **=** {*expression* &#124; **NULL**}]  
   
      **WHERE CURRENT OF** *nom de curseur*  
   

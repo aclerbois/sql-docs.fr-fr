@@ -1,32 +1,30 @@
 ---
-title: "Nouveauté d’Integration Services dans SQL Server 2016 | Microsoft Docs"
+title: Nouveauté d’Integration Services dans SQL Server 2016 | Microsoft Docs
 ms.custom:
 - SQL2016_New_Updated
 ms.date: 09/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Integration Services, what's new
 - what's new [Integration Services]
 ms.assetid: da6999c7-e5e3-4a59-a284-1da635995af1
-caps.latest.revision: 
+caps.latest.revision: 183
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 0d684f94dcd18d45c1a8b860b80d20ab07f64529
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 31022138b7bab28bfd5774453282f87cf3a37b75
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="what39s-new-in-integration-services-in-sql-server-2016"></a>Nouveautés d’Integration Services dans SQL Server 2016
 [!INCLUDE[feedback-stackoverflow-msdn-connect-md](../includes/feedback-stackoverflow-msdn-connect-md.md)]
@@ -293,8 +291,8 @@ La fonctionnalité de déploiement incrémentiel de packages vous permet de dép
 ####  <a name="SAPBW"></a> Publication du connecteur pour SAP BW pour SQL Server 2016  
  Microsoft® Connector pour SAP BW pour Microsoft SQL Server® 2016 a été publié avec SQL Server 2016 Feature Pack. Pour télécharger les composants du Feature Pack, consultez [Microsoft® SQL Server® 2016 Feature Pack](http://go.microsoft.com/fwlink/?LinkID=746297).
  
-#### <a name="oracleteradata"></a> Publication de la version 4.0 des connecteurs pour Oracle et Teradata
-La version 4.0 de Microsoft Connectors pour Oracle et Teradata a été publiée. Pour télécharger les connecteurs, consultez [Microsoft Connectors v4.0 for Oracle and Teradata](https://www.microsoft.com/download/details.aspx?id=52950).
+#### <a name="oracleteradata"></a> Publication de la version&4;.0 des connecteurs pour Oracle et Teradata
+La version&4;.0 de Microsoft Connectors pour Oracle et Teradata a été publiée. Pour télécharger les connecteurs, consultez [Microsoft Connectors v4.0 for Oracle and Teradata](https://www.microsoft.com/download/details.aspx?id=52950).
 
 ### <a name="pdwau5"></a> Publication des connecteurs pour Analytics Platform System (PDW) Appliance Update 5
 Les adaptateurs de destination pour le chargement des données dans PDW avec AU5 ont été publiés. Pour télécharger les adaptateurs, consultez [Analytics Platform System Appliance Update 5 Documentation and Client Tools](https://www.microsoft.com/download/details.aspx?id=51610).

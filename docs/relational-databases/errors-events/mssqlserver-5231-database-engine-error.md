@@ -1,30 +1,25 @@
 ---
-title: "MSSQLSERVER_5231 | Microsoft Docs"
-ms.custom: 
+title: MSSQLSERVER_5231 | Microsoft Docs
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 5231 (Database Engine error)
 ms.assetid: 6954ae84-ed0b-4f4c-9d0a-e73f3d71476c
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 16
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a9776a1055598f10e17470bb13eb713173441221
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e79aaa4a74d7beac5ae64e6f6f231c7db15f4519
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver5231"></a>MSSQLSERVER_5231
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -44,5 +39,5 @@ ms.lasthandoff: 11/21/2017
 Un blocage s'est produit lorsque DBCC essayait de verrouiller l'objet et DBCC a été choisi comme victime du blocage. L'objet ne sera pas traité.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
-Aucune  
+None  
   

@@ -1,29 +1,19 @@
 ---
-title: "Installer les exemples de données et les projets | Documents Microsoft"
-ms.custom: 
-ms.date: 02/13/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: fc475b25-cbb2-408a-901f-9299299538c5
-caps.latest.revision: 
-author: Minewiskan
+title: Installer les exemples de données et les projets | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: ab7162604cfd201a541f6ea3b053a7ed799e5e87
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+ms.openlocfilehash: 0ec266a98e3a27dd277ccd9f790ae73d1793ec38
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="install-sample-data-and-multidimensional-projects"></a>Installer les exemples de données et les projets multidimensionnels 
 [!INCLUDE[ssas-appliesto-sqlas-all](../includes/ssas-appliesto-sqlas-all.md)]

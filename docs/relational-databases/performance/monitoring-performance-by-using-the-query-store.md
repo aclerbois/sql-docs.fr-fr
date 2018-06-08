@@ -1,31 +1,28 @@
 ---
-title: "Analyse des performances à l’aide du Magasin des requêtes | Microsoft Docs"
-ms.custom: 
+title: Analyse des performances à l’aide du Magasin des requêtes | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Query Store
 - Query Store, described
 ms.assetid: e06344a4-22a5-4c67-b6c6-a7060deb5de6
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 29ba7f266a86e53f95668b8bf8ca4ce879bb62f8
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f30d87526729100a99336408778f2d2df4406475
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="monitoring-performance-by-using-the-query-store"></a>Surveillance des performances à l’aide du magasin de requêtes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -315,7 +312,7 @@ DEALLOCATE adhoc_queries_cursor;
 ###  <a name="Peformance"></a> Audit et résolution des problèmes de performances  
  Le magasin de requêtes conserve un historique des métriques de compilation et de runtime pour des exécutions de requêtes, ce qui vous permet de poser des questions sur votre charge de travail.  
   
- ***n* dernières requêtes exécutées sur la base de données ?**  
+ **Les *n* dernières requêtes exécutées sur la base de données ?**  
   
 ```sql  
 SELECT TOP 10 qt.query_sql_text, q.query_id,   

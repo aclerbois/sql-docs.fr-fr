@@ -1,39 +1,24 @@
 ---
-title: "Élément ParentObject (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément ParentObject (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: ParentObject Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- urn:schemas-microsoft-com:xml-analysis#ParentObject
-- http://schemas.microsoft.com/analysisservices/2003/engine#ParentObject
-- microsoft.xml.analysis.parentobject
-helpviewer_keywords: ParentObject element
-ms.assetid: f821f8f1-554a-4f16-bf09-262a9448e304
-caps.latest.revision: "16"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c52bc6fd7d4ae414f0c20c7921186115e17d1cea
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ff9ebc460691d9f97e5cfe64783574b00eab6915
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576001"
 ---
 # <a name="parentobject-element-xmla"></a>Élément ParentObject (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient l’identificateur de l’objet parent sous lequel créer les objets définis par le parent [créer](../../../analysis-services/xmla/xml-elements-commands/create-element-xmla.md) élément.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient l’identificateur de l’objet parent sous lequel créer les objets définis par le parent [créer](../../../analysis-services/xmla/xml-elements-commands/create-element-xmla.md) élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +33,7 @@ ms.lasthandoff: 01/08/2018
 </Create>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -63,11 +48,11 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Créer](../../../analysis-services/xmla/xml-elements-commands/create-element-xmla.md)|  
 |Éléments enfants|Éléments ASSL (Analysis Services Scripting Language) requis. Spécifié en répertoriant les éléments de l’ID de l’objet et ses ancêtres (à l’exclusion de la **Server** objet.) Par exemple, **ParentObject** élément identifie une partition :<br /><br /> `<ParentObject>`<br /><br /> `<DatabaseID>Adventure Works DW Multidimensional 2012</DatabaseID>`<br /><br /> `<CubeID>Adventure Works</CubeID>`<br /><br /> `<MeasureGroupID>Internet Sales</MeasureGroupID>`<br /><br /> `<PartitionID>Inernet_Sales_2001</PartitionID>`<br /><br /> `</ParentObject>`|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L'ordre dans lequel les identificateurs apparaissent n'a pas d'importance.  
   
-## <a name="example"></a> Exemple  
- L’exemple suivant crée la **panier** structure d’exploration de données, inclus dans le [!INCLUDE[ssAWDWsp](../../../includes/ssawdwsp-md.md)] exemple [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] base de données.  
+## <a name="example"></a>Exemple  
+ L’exemple suivant crée la **panier** structure d’exploration de données, inclus dans le [!INCLUDE[ssAWDWsp](../../../includes/ssawdwsp-md.md)] base de données Analysis Services.  
   
 ```  
 <Create xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">  
@@ -189,7 +174,7 @@ ms.lasthandoff: 01/08/2018
 </Create>  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

@@ -1,24 +1,22 @@
 ---
-title: "Page d’accueil de la programmation du client SQL | Documents Microsoft"
-description: "Page Hub avec des liens annotés pour les téléchargements et la documentation de nombreuses combinaisons de langues et les systèmes d’exploitation, pour la connexion à SQL Server ou à la base de données SQL Azure."
+title: Page d’accueil de la programmation du client SQL | Documents Microsoft
+description: Page Hub avec des liens annotés pour les téléchargements et la documentation de nombreuses combinaisons de langues et les systèmes d’exploitation, pour la connexion à SQL Server ou à la base de données SQL Azure.
 author: MightyPen
-ms.date: 11/29/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.date: 04/16/2018
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: connect
 ms.suite: sql
-ms.custom: 
-ms.technology: drivers
-ms.topic: article
+ms.custom: ''
+ms.technology: connectivity
+ms.topic: conceptual
 ms.reviewer: meetb
 ms.author: genemi
-ms.workload: Inactive
-ms.openlocfilehash: 804a1f1e27e531d2282775db63628ed02fb50829
-ms.sourcegitcommit: 61fc9f81c295c2b93781ef194e9a2ebd475f800d
+ms.openlocfilehash: f281fff6085048bb5918901a9e12af702b71b3e1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="homepage-for-client-programming-to-microsoft-sql-server"></a>Page d’accueil de la programmation avec Microsoft SQL Server du client
 
@@ -56,9 +54,9 @@ Dans le tableau suivant, chaque image de la langue est un lien vers les détails
 
 | &nbsp; | &nbsp; | &nbsp; |
 | :-- | :-- | :-- |
-| &nbsp;[ ![Logo c#][image-ref-320-csharp]](#an-110-ado-net-docu) | &nbsp;[ ![ORM Entity Framework, du .NET Framework][image-ref-333-ef]](#an-116-csharp-ef-orm) | &nbsp;[ ![Logo Java][image-ref-330-java]](#an-130-jdbc-docu) |
-| &nbsp;[ ![Node.js logo][image-ref-340-node]](#an-140-node-js-docu) | &nbsp; [**`ODBC for C++`**](#an-160-odbc-cpp-docu)<br/>[![plus grand cpp][image-ref-322-cpp]](#an-160-odbc-cpp-docu) | &nbsp;[ ![Logo PHP][image-ref-360-php]](#an-170-php-docu) |
-| &nbsp;[ ![Logo de Python][image-ref-370-python]](#an-180-python-docu) | &nbsp;[ ![Ruby logo][image-ref-380-ruby]](#an-190-ruby-docu) | &nbsp; ... |
+| &nbsp; [![Logo c#][image-ref-320-csharp]](#an-110-ado-net-docu) | &nbsp; [![ORM Entity Framework, du .NET Framework][image-ref-333-ef]](#an-116-csharp-ef-orm) | &nbsp; [![Logo Java][image-ref-330-java]](#an-130-jdbc-docu) |
+| &nbsp; [![Logo de Node.js][image-ref-340-node]](#an-140-node-js-docu) | &nbsp; [**`ODBC for C++`**](#an-160-odbc-cpp-docu)<br/>[![plus grand cpp][image-ref-322-cpp]](#an-160-odbc-cpp-docu) | &nbsp; [![Logo PHP][image-ref-360-php]](#an-170-php-docu) |
+| &nbsp; [![Logo de Python][image-ref-370-python]](#an-180-python-docu) | &nbsp; [![Logo Ruby][image-ref-380-ruby]](#an-190-ruby-docu) | &nbsp; ... |
 | &nbsp; | &nbsp; | <br />|
 
 
@@ -107,7 +105,7 @@ EF a des relations directes ou indirectes avec les technologies suivantes :
 
 - .NET Framework
 - [LINQ to SQL](http://docs.microsoft.com/dotnet/framework/data/adonet/sql/linq/), ou [LINQ to Entities](http://docs.microsoft.com/dotnet/framework/data/adonet/ef/language-reference/linq-to-entities)
-- Améliorations de syntaxe du langage, telles que la  **=>**  opérateur en c#.
+- Améliorations de syntaxe du langage, telles que la **=>** opérateur en c#.
 - Programmes pratiques qui génèrent du code source pour les classes qui mappent aux tables de votre base de données SQL. Par exemple, [EdmGen.exe](http://docs.microsoft.com/dotnet/framework/data/adonet/ef/edm-generator-edmgen-exe).
 
 

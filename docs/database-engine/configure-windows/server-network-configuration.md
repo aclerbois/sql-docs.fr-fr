@@ -1,16 +1,14 @@
 ---
-title: "Configuration réseau du serveur | Microsoft Docs"
-ms.custom: 
+title: Configuration réseau du serveur | Microsoft Docs
+ms.custom: ''
 ms.date: 07/27/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Named Pipes [SQL Server], configuring
 - connections [SQL Server], server network configuration
@@ -20,19 +18,19 @@ helpviewer_keywords:
 - ports [SQL Server], changing
 - server configuration [SQL Server]
 ms.assetid: 890c09a1-6dad-4931-aceb-901c02ae34c5
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4dbf50b3d48d83d3df69ec285a22379164f883e0
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 43467af34ad8e6fde2fc8874ace1e6f7f2fa17e5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-network-configuration"></a>Configuration réseau du serveur
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les tâches de configuration réseau du serveur incluent l’activation de protocoles, la modification du port ou du canal utilisé par un protocole, la configuration du chiffrement, la configuration du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser, l’exposition ou le masquage du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] sur le réseau et l’inscription du nom du principal du serveur. La plupart du temps, vous n'avez pas besoin de modifier la configuration réseau du serveur. Reconfigurez uniquement les protocoles réseau du serveur si des spécifications réseau spéciales l'imposent.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Les tâches de configuration réseau du serveur incluent l'activation de protocoles, la modification du port ou du canal utilisé par un protocole, la configuration du chiffrement, la configuration du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser, l'exposition ou le masquage du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] sur le réseau et l'inscription du nom principal du serveur. La plupart du temps, vous n'avez pas besoin de modifier la configuration réseau du serveur. Reconfigurez uniquement les protocoles réseau du serveur si des spécifications réseau spéciales l'imposent.  
   
  La configuration réseau pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s'effectue à l'aide du Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Pour les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], utilisez l'utilitaire Réseau Serveur fourni avec ces produits.  
   
@@ -45,7 +43,7 @@ ms.lasthandoff: 01/18/2018
  Lors d'une configuration pour des ports dynamiques, le port utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut changer à chaque démarrage. Lors de la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à travers un pare-feu, vous devez ouvrir le port utilisé par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Configurez [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pour utiliser un port spécifique, de façon que vous puissiez configurer le pare-feu pour permettre une communication au serveur. Pour plus d’informations, consultez [Configurer un serveur pour écouter un port TCP spécifique &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/configure-a-server-to-listen-on-a-specific-tcp-port.md).  
   
 ### <a name="changing-a-named-pipe"></a>Changement d'un canal nommé  
- Vous pouvez configurer le protocole de canal nommé de manière à écouter un canal nommé désigné. De façon générale, l’instance par défaut de [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] écoute sur le canal \\\\.\pipe\sql\query pour l’instance par défaut et sur \\\\.\pipe\MSSQL$*\<nom_instance>*\sql\query pour une instance nommée. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne peut être à l'écoute que sur un canal nommé, mais vous pouvez donner un autre nom au canal si vous le souhaitez. Le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser aide les clients à identifier le canal au moment de leur connexion. Pour plus d’informations, consultez [Configurer un serveur pour l’écoute d’un canal de remplacement &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/configure-a-server-to-listen-on-an-alternate-pipe.md).  
+ Vous pouvez configurer le protocole de canal nommé de manière à écouter un canal nommé désigné. De façon générale, l’instance par défaut de [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] écoute sur le canal \\\\.\pipe\sql\query pour l’instance par défaut et sur \\\\.\pipe\MSSQL$*\<nom_instance>* \sql\query pour une instance nommée. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne peut être à l'écoute que sur un canal nommé, mais vous pouvez donner un autre nom au canal si vous le souhaitez. Le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser aide les clients à identifier le canal au moment de leur connexion. Pour plus d’informations, consultez [Configurer un serveur pour l’écoute d’un canal de remplacement &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/configure-a-server-to-listen-on-an-alternate-pipe.md).  
   
 ## <a name="force-encryption"></a>Forcer le chiffrement  
  Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] peut être configuré pour imposer un chiffrement lors d'une communication avec des applications clientes. Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  

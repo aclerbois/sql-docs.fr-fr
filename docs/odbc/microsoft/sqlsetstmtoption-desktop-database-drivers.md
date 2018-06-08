@@ -1,28 +1,26 @@
 ---
-title: "SQLSetStmtOption (pilotes d’ordinateur de bureau) | Documents Microsoft"
-ms.custom: 
+title: SQLSetStmtOption (pilotes d’ordinateur de bureau) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLSetStmtOption function [ODBC], Desktop Database Drivers
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLSetStmtOption function [ODBC], Desktop Database Drivers
 ms.assetid: 98db9631-eb9b-4962-abe4-96f495133a5d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7257763af32ba14cfe68222467bcacc73c959e2f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4b797d3eddb7eae9232aee3c73ceae7c12ca163d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlsetstmtoption-desktop-database-drivers"></a>SQLSetStmtOption (pilotes bureau de base de données)
 |*fOption*|Commentaires|  

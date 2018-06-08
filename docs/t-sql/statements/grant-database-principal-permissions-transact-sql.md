@@ -1,16 +1,14 @@
 ---
-title: "GRANT - Octroyer des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: GRANT - Octroyer des autorisations sur un principal de base de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -27,18 +25,18 @@ helpviewer_keywords:
 - GRANT statement, roles
 - application roles [SQL Server], permissions
 ms.assetid: 012588a2-cbe1-48f0-a731-b4a2b83203d5
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 58f66a871299d85c8ee9bce59b696cec2668ae9f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 863c417da2ebd83f61fbe3ddde347c79d44f8a7b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="grant-database-principal-permissions-transact-sql"></a>GRANT - Octroyer des autorisations sur un principal de base de données (Transact-SQL)
+# <a name="grant-database-principal-permissions-transact-sql"></a>GRANT – octroi d'autorisations de principal de base de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
   Permet d'accorder des autorisations sur un utilisateur de base de données, un rôle de base de données ou un rôle d'application dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  

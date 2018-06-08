@@ -1,39 +1,23 @@
 ---
-title: "Propriétés du serveur dans Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- SSAS, configuration properties
-- Analysis Services, configuration properties
-- SQL Server Analysis Services, configuration properties
-- configuration options [Analysis Services]
-- server properties [Analysis Services]
-- properties [Analysis Services], configuration
-- properties [Analysis Services]
-ms.assetid: 274b89cd-14ed-4666-bc13-eedf1de51e18
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés du serveur dans Analysis Services | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 4db4d5d2e57f5f4a967a2099ef11efa0ca10ca21
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: dd37fd44c7bfaff5b338602eb18b0d779ee9e777
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="server-properties-in-analysis-services"></a>Propriétés du serveur dans Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un administrateur [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] peut modifier les propriétés de configuration par défaut du serveur d’une instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Chaque instance a ses propriétés de configuration propres, qui sont définies indépendamment des autres instances présentes sur le même serveur.  
+  Un administrateur [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] peut modifier les propriétés de configuration par défaut du serveur d’une instance [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Chaque instance a ses propriétés de configuration propres, qui sont définies indépendamment des autres instances présentes sur le même serveur.  
   
  Pour configurer le serveur, utilisez SQL Server Management Studio ou modifiez le fichier msmdsrv.ini d’une instance spécifique.  
  

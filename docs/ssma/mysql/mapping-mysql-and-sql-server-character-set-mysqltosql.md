@@ -1,30 +1,28 @@
 ---
-title: "Mappage des caractères SQL Server et MySQL définie (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Mappage des caractères SQL Server et MySQL définie (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 20b3f22e-16a2-4a87-b4eb-c277be6bf5c8
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c9b3fc89548b10593cb16e2a70c93afe9b56350e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5c31cdc9bab3881452c3a03cc0a97cc382481587
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mapping-mysql-and-sql-server-character-set-mysqltosql"></a>Mappage des caractères SQL Server et MySQL définie (MySQLToSQL)
 Jeu de caractères (jeu de caractères) peut être spécifié pour les types de données caractères, les expressions et les littéraux de MySQL.  
@@ -104,7 +102,7 @@ Mappage de jeu de caractères varie à différents niveaux de nœud, à savoir 
     |TIS620|TIS620 thaï|CHAR/VARCHAR (par défaut)|  
     |eucKR|EUC-KR coréen|NCHAR/NVARCHAR (par défaut)|  
     |koi8u|KOI8-U ukrainien|CHAR/VARCHAR (par défaut)|  
-    |GB2312|GB2312 En chinois simplifié|NCHAR/NVARCHAR (par défaut)|  
+    |gb2312|GB2312 En chinois simplifié|NCHAR/NVARCHAR (par défaut)|  
     |Grec|ISO 8859-7 grec|CHAR/VARCHAR (par défaut)|  
     |CP 1250|Europe centrale de Windows|CHAR/VARCHAR (par défaut)|  
     |GBK|Chinois simplifié de GBK|NCHAR/NVARCHAR (par défaut)|  
@@ -123,7 +121,7 @@ Mappage de jeu de caractères varie à différents niveaux de nœud, à savoir 
     |CP 1257|Windows : Baltique|CHAR/VARCHAR (par défaut)|  
     |binary|Jeu de caractères binaires pseudo|CHAR/VARCHAR (par défaut)|  
     |geostd8|GEOSTD8 géorgien|CHAR/VARCHAR (par défaut)|  
-    |CP932|SJIS pour Windows version japonaise|NCHAR/NVARCHAR (par défaut)|  
+    |cp932|SJIS pour Windows version japonaise|NCHAR/NVARCHAR (par défaut)|  
     |eucjpms|UJIS pour Windows version japonaise|NCHAR/NVARCHAR (par défaut)|  
   
 2.  **Sur la base de données, de catégorie ou de niveaux de nœuds d’objet :** au niveau base de données, de catégorie ou de nœuds d’objet, grille de mappage de jeu de caractères contient les mêmes lignes que sur le niveau de métadonnées du nœud racine, notamment. :  

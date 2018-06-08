@@ -1,41 +1,23 @@
 ---
-title: "Techniques de l’algorithme d’arbres de décision Microsoft | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- MAXIMUM_INPUT_ATTRIBUTES parameter
-- SPLIT_METHOD parameter
-- MINIMUM_SUPPORT parameter
-- MAXIMUM_OUTPUT_ATTRIBUTES parameter
-- FORCED_REGRESSOR parameter
-- decision tree algorithms [Analysis Services]
-- decision trees [Analysis Services]
-- COMPLEXITY_PENALTY parameter
-- SCORE_METHOD parameter
-ms.assetid: 1e9f7969-0aa6-465a-b3ea-57b8d1c7a1fd
-caps.latest.revision: 
-author: Minewiskan
+title: Techniques de l’algorithme d’arbres de décision Microsoft | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 700a8d3238c9411fd95e9358b26cbfb32ccade87
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 186245b549d8aa9370551311e792067e0131e076
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-decision-trees-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme MDT (Microsoft Decision Trees)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees) est un algorithme hybride qui incorpore des méthodes différentes pour créer une arborescence et prend en charge plusieurs tâches analytiques, dont la régression, la classification et l'association. L'algorithme MDT (Microsoft Decision Trees) prend en charge la modélisation des attributs discrets et continus.  
+  L'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees) est un algorithme hybride qui incorpore des méthodes différentes pour créer une arborescence et prend en charge plusieurs tâches analytiques, dont la régression, la classification et l'association. L'algorithme MDT (Microsoft Decision Trees) prend en charge la modélisation des attributs discrets et continus.  
   
  Cette rubrique explique l'implémentation de l'algorithme, décrit la façon de personnaliser le comportement de l'algorithme pour différentes tâches et fournit des liens vers des informations supplémentaires sur l'interrogation des modèles d'arbre de décision.  
   
@@ -106,7 +88,7 @@ L'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision 
  L'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees) prend en charge des paramètres qui affectent les performances et la précision du modèle d'exploration de données résultant. Vous pouvez également définir des indicateurs de modélisation sur les colonnes du modèle ou de la structure d'exploration de données pour contrôler le mode de traitement des données.  
   
 > [!NOTE]  
->  L'algorithme MDT est disponible dans toutes les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]; toutefois, certains paramètres avancés permettant de personnaliser le comportement de l'algorithme MDT sont disponibles uniquement dans les éditions spécifiques de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
+>  L'algorithme MDT est disponible dans toutes les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]; toutefois, certains paramètres avancés permettant de personnaliser le comportement de l'algorithme MDT sont disponibles uniquement dans les éditions spécifiques de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Pour obtenir la liste des fonctionnalités qui sont prises en charge par les éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], consultez [fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
   
 ### <a name="setting-algorithm-parameters"></a>Définition des paramètres de l'algorithme  
  Le tableau suivant décrit les paramètres que vous pouvez utiliser avec l'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees).  
@@ -211,6 +193,6 @@ L'algorithme MDT ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision 
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme MDT (Microsoft Decision Trees)](../../analysis-services/data-mining/microsoft-decision-trees-algorithm.md)   
  [Exemples de requête de modèle d’arborescences de décision](../../analysis-services/data-mining/decision-trees-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles d’arbre de décision & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-decision-tree-models-analysis-services-data-mining.md)  
   
   

@@ -1,17 +1,16 @@
 ---
-title: "Créer de déclencheurs DML pour gérer plusieurs lignes de données | Microsoft Docs"
-ms.custom: 
+title: Créer de déclencheurs DML pour gérer plusieurs lignes de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-dml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - multiple row DML triggers
 - UPDATE statement [SQL Server], DML triggers
@@ -20,20 +19,20 @@ helpviewer_keywords:
 - INSERT statement [SQL Server], DML triggers
 - DML triggers, multirow
 ms.assetid: d476c124-596b-4b27-a883-812b6b50a735
-caps.latest.revision: 
+caps.latest.revision: 25
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 39adf5f718f4f4e0789e8e10bf6aa5e007fe6f0d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a7309d66c4fdc154ca30707133145e94dbf62f86
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-dml-triggers-to-handle-multiple-rows-of-data"></a>Créer de déclencheurs DML pour gérer plusieurs lignes de données
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Lors de l'écriture du code d'un déclencheur DML, tenez compte du fait que l'instruction qui active le déclencheur peut être une instruction unique concernant plusieurs lignes de données au lieu d'une seule. Ce comportement est courant pour les déclencheurs UPDATE et DELETE qui concernent souvent plusieurs lignes. Il est moins fréquent dans le cas des déclencheurs INSERT car l'instruction INSERT de base n'ajoute qu'une seule ligne. Toutefois, comme un déclencheur INSERT peut être activé par une instruction SELECT INSERT INTO (*nom_table*), l’insertion de nombreuses lignes peut aboutir à un appel de déclencheur unique.  
+  Lors de l'écriture du code d'un déclencheur DML, tenez compte du fait que l'instruction qui active le déclencheur peut être une instruction unique concernant plusieurs lignes de données au lieu d'une seule. Ce comportement est courant pour les déclencheurs UPDATE et DELETE qui concernent souvent plusieurs lignes. Il est moins fréquent dans le cas des déclencheurs INSERT car l'instruction INSERT de base n'ajoute qu'une seule ligne. Toutefois, comme un déclencheur INSERT peut être activé par une instruction SELECT INSERT INTO (*nom_table*), l’insertion de nombreuses lignes peut aboutir à un appel de déclencheur unique.  
   
  Les facteurs à prendre en compte au sujet des lignes multiples sont particulièrement importants lorsque la fonction d'un déclencheur DML consiste à recalculer automatiquement les totaux d'une table et à enregistrer les résultats dans une autre table en vue de subir d'autres calculs.  
   

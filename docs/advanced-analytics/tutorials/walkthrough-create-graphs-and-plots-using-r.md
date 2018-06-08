@@ -1,27 +1,18 @@
 ---
 title: Créer des graphiques et des graphiques à l’aide de SQL et R (procédure pas à pas) | Documents Microsoft
-ms.date: 11/10/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-dev_langs:
-- R
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: e7c40d76a585e021fac13094a524e32ff4da0a45
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 4d4b573bc2aa0cc48e7c158edafa0dd604e6fc87
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585471"
 ---
 # <a name="create-graphs-and-plots-using-sql-and-r-walkthrough"></a>Créer des graphiques et des graphiques à l’aide de SQL et R (procédure pas à pas)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -107,8 +98,8 @@ En règle générale, les serveurs de base de données bloquent l’accès à In
 
 ## <a name="next-lesson"></a>Leçon suivante
 
-[Créer des fonctionnalités de données à l’aide de R et SQL](/walkthrough-create-data-features.md)
+[Créer des fonctionnalités de données à l’aide de R et SQL](walkthrough-create-data-features.md)
 
 ## <a name="previous-lesson"></a>Leçon précédente
 
-[Résumer les données à l’aide de R](/walkthrough-view-and-summarize-data-using-r.md)
+[Résumer les données à l’aide de R](walkthrough-view-and-summarize-data-using-r.md)

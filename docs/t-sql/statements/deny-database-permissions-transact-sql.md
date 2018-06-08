@@ -1,16 +1,14 @@
 ---
-title: "DENY - Refuser des autorisations sur une base de données (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: DENY - Refuser des autorisations sur une base de données (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -20,18 +18,18 @@ helpviewer_keywords:
 - database permissions [SQL Server], denying
 - denying permissions [SQL Server], databases
 ms.assetid: 36cc4e2c-5a24-4975-9920-9305f12c6e7c
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 47e308ae7c0b61af1c752a449abbff1876b87e2e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0f9cda0f6f097da434b546072a2cbc92aaed47d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="deny-database-permissions-transact-sql"></a>DENY - Refuser des autorisations sur une base de données (Transact-SQL)
+# <a name="deny-database-permissions-transact-sql"></a>DENY – refus d'autorisations de base de données (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
 
   Permet de refuser des autorisations sur une base de données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
@@ -82,7 +80,7 @@ DENY <permission> [ ,...n ]
  Spécifie un rôle de base de données.  
   
  *Application_role*  
- **S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Spécifie un rôle d'application.  
   
@@ -119,7 +117,7 @@ DENY <permission> [ ,...n ]
 |ALTER ANY DATABASE DDL TRIGGER|ALTER|CONTROL SERVER|  
 |ALTER ANY DATABASE EVENT NOTIFICATION|ALTER|ALTER ANY EVENT NOTIFICATION|  
 |ALTER ANY DATABASE EVENT SESSION<br /> **S'applique à**: [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].|ALTER|ALTER ANY EVENT SESSION|  
-|ALTER ANY DATABASE SCOPED CONFIGURATION<br />  **S’applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].|CONTROL|CONTROL SERVER|  
+|ALTER ANY DATABASE SCOPED CONFIGURATION<br />  **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].|CONTROL|CONTROL SERVER|  
 |ALTER ANY DATASPACE|ALTER|CONTROL SERVER|  
 |ALTER ANY EXTERNAL DATA SOURCE|ALTER|CONTROL SERVER|  
 |ALTER ANY EXTERNAL FILE FORMAT|ALTER|CONTROL SERVER|  
@@ -130,7 +128,7 @@ DENY <permission> [ ,...n ]
 |ALTER ANY REMOTE SERVICE BINDING|ALTER|CONTROL SERVER|  
 |ALTER ANY ROLE|ALTER|CONTROL SERVER|  
 |ALTER ANY ROUTE|ALTER|CONTROL SERVER|  
-|MODIFIER UNE STRATÉGIE DE SÉCURITÉ<br /> **S’applique à**: [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].|CONTROL|CONTROL SERVER|  
+|MODIFIER UNE STRATÉGIE DE SÉCURITÉ<br /> **S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].|CONTROL|CONTROL SERVER|  
 |ALTER ANY SCHEMA|ALTER|CONTROL SERVER|  
 |ALTER ANY SERVICE|ALTER|CONTROL SERVER|  
 |ALTER ANY SYMMETRIC KEY|ALTER|CONTROL SERVER|  
@@ -203,7 +201,7 @@ GO
 ### <a name="b-denying-references-permission-to-an-application-role"></a>B. Refus d'une autorisation REFERENCES à un rôle d'application  
  Dans l'exemple ci-dessous, l'autorisation `REFERENCES` sur la base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] est refusée au rôle d'application `AuditMonitor`.  
   
-**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
 ```  
 USE AdventureWorks2012;  

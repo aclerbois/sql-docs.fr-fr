@@ -1,32 +1,30 @@
 ---
 title: Configurer des URL de serveurs de rapports (Gestionnaire de configuration de SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/18/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Report Server Windows service, virtual directories
 - report servers [Reporting Services], virtual directories
 - virtual directories [Reporting Services]
-- Report Manager [Reporting Services], virtual directories
 ms.assetid: a0134ef0-086c-443e-93b9-7213a3d76393
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 4128ec3ec665dc5dff90b6d82b7aa7838d4e5d99
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8fadb6163b7ad9e52f02834a3982feb30cd9a3c8
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34550560"
 ---
 # <a name="configure-report-server-urls--ssrs-configuration-manager"></a>Configurer des URL de serveurs de rapports (Gestionnaire de configuration de SSRS)
   Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], les URL permettent d’accéder au service Web Report Server et au [!INCLUDE[ssRSWebPortal](../../includes/ssrswebportal.md)]. Avant de pouvoir utiliser l’une ou l’autre de ces applications, vous devez configurer au moins une URL pour le service web et une pour le [!INCLUDE[ssRSWebPortal](../../includes/ssrswebportal.md)]. [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] fournit des valeurs par défaut pour les URL des deux applications qui s’accommodent bien à la plupart des scénarios de déploiement, dont les déploiements côte à côte avec d’autres applications et services web.  

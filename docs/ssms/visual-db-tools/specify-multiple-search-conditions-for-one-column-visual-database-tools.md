@@ -1,16 +1,15 @@
 ---
-title: "Spécifier plusieurs conditions de recherche pour une colonne (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Spécifier plusieurs conditions de recherche pour une colonne (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - search criteria [SQL Server], multiple conditions
 - multiple search conditions
@@ -18,19 +17,19 @@ helpviewer_keywords:
 - OR operator
 - AND, Criteria pane
 ms.assetid: 2c006e36-56b1-4992-89b4-c6c0b19808f3
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd90bbb2b7a07ae4cf2c8224a8b299cec7774593
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 413acd5ec5d84e2935f56f344f844b07e1e7c267
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-multiple-search-conditions-for-one-column-visual-database-tools"></a>Spécifier plusieurs conditions de recherche pour une colonne (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Dans certains cas, vous pouvez souhaiter appliquer plusieurs conditions de recherche à une même colonne de données. Vous pouvez, par exemple, souhaiter effectuer les opérations suivantes :  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Dans certains cas, vous pouvez souhaiter appliquer plusieurs conditions de recherche à une même colonne de données. Vous pouvez, par exemple, souhaiter effectuer les opérations suivantes :  
   
 -   Rechercher plusieurs noms différents dans une table `employee` ou des employés compris dans différentes fourchettes salariales. Ce type de recherche nécessite une condition OR.  
   

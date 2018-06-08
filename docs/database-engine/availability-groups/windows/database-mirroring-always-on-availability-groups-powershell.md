@@ -1,31 +1,28 @@
 ---
-title: "Mise en miroir de bases de données - Groupes de disponibilité Always On - PowerShell | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données - Groupes de disponibilité Always On - PowerShell | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], server instance
 - Availability Groups [SQL Server], deploying
 - Availability Groups [SQL Server], endpoint
 ms.assetid: 6197bbe7-67d4-446d-ba5f-cabfa5df77f1
-caps.latest.revision: "9"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ce4947edb16c35414de9fe537e359856f3fc8ccb
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: de4d23f05b7317b93debf76ffbd9dc30cca51268
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768736"
 ---
 # <a name="database-mirroring---always-on-availability-groups--powershell"></a>Mise en miroir de bases de données - Groupes de disponibilité Always On - PowerShell
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

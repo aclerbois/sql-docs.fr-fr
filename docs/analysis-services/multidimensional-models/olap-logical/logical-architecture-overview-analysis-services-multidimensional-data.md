@@ -1,36 +1,23 @@
 ---
-title: "Vue d’ensemble de l’Architecture logique (Analysis Services - données multidimensionnelles) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/15/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- cubes [Analysis Services], examples
-- cubes [Analysis Services], about cubes
-ms.assetid: 1a547bce-dacf-4d32-bc0f-3829f4b026e1
-caps.latest.revision: 
-author: Minewiskan
+title: Vue d’ensemble de l’Architecture logique (Analysis Services - données multidimensionnelles) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dacdeff9764aaa11277118cb494900bf6f42e6aa
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: b6c563dcbd00157f05115975c8e4e2da2ee64184
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="logical-architecture-overview-analysis-services---multidimensional-data"></a>Vue d'ensemble de l'architecture logique (Analysis Services - données multidimensionnelles)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Analysis Services s'exécute en mode de déploiement du serveur qui détermine l'architecture de la mémoire et l'environnement d'exécution utilisés par différents types de modèles Analysis Services. Le mode serveur est déterminé lors de l'installation. **Mode multidimensionnel et exploration de données** prend en charge OLAP traditionnel et exploration de données. **En mode tabulaire** prend en charge les modèles tabulaires. **En mode intégré SharePoint** fait référence à une instance d’Analysis Services qui a été installé en tant que [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint, utilisé pour le chargement et l’interrogation d’Excel ou [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] des modèles de données à l’intérieur d’un classeur.  
+  Analysis Services s'exécute en mode de déploiement du serveur qui détermine l'architecture de la mémoire et l'environnement d'exécution utilisés par différents types de modèles Analysis Services. Le mode serveur est déterminé lors de l'installation. **Mode multidimensionnel et exploration de données** prend en charge OLAP traditionnel et exploration de données. **En mode tabulaire** prend en charge les modèles tabulaires. **En mode intégré SharePoint** fait référence à une instance d’Analysis Services qui a été installé en tant que [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint, utilisé pour le chargement et l’interrogation d’Excel ou [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] des modèles de données à l’intérieur d’un classeur.  
   
  Cette rubrique explique l'architecture de base d'Analysis Services lors de l'exploitation en mode multidimensionnel et d'exploration de données. Pour plus d’informations sur les autres modes, consultez [de modélisation tabulaire ](../../../analysis-services/tabular-models/tabular-models-ssas.md) et [comparaison sous forme de tableau et les Solutions multidimensionnelles ](../../../analysis-services/comparing-tabular-and-multidimensional-solutions-ssas.md).  
   
@@ -90,13 +77,13 @@ Analysis Services s'exécute en mode de déploiement du serveur qui détermine l
 ||||.|||Dernière|||  
 |-|-|-|--------------|-|-|----------|-|-|  
 ||||All Sources|Eastern Hemisphere|Western Hemisphere|All Sources|Eastern Hemisphere|Western Hemisphere|  
-|All Time|||25110|6547|18563|DEC-29-99|Dec-22-99|DEC-29-99|  
+|All Time|||25110|6547|18563|DEC-29-99|DEC-22-99|DEC-29-99|  
 ||1st half||11173|2977|8196|Jun-28-99|Jun-20-99|Jun-28-99|  
 |||1st quarter|5108|1452|3656|Mar-30-99|Mar-19-99|Mar-30-99|  
 |||2nd quarter|6065|1525|4540|Jun-28-99|Jun-20-99|Jun-28-99|  
-||2nd half||13937|3570|10367|DEC-29-99|Dec-22-99|DEC-29-99|  
+||2nd half||13937|3570|10367|DEC-29-99|DEC-22-99|DEC-29-99|  
 |||3rd quarter|6119|1444|4675|Sep-30-99|SEP-18-99|Sep-30-99|  
-|||4th quarter|7818|2126|5692|DEC-29-99|Dec-22-99|DEC-29-99|  
+|||4th quarter|7818|2126|5692|DEC-29-99|DEC-22-99|DEC-29-99|  
   
  Après la création d'un cube, il est possible de définir de nouvelles agrégations ou de modifier les agrégations existantes pour définir des options qui déterminent si les agrégations sont précalculées durant le traitement ou calculées lors de l'exécution des requêtes. **Rubrique connexe :**[agrégations et conceptions d’agrégation](../../../analysis-services/multidimensional-models-olap-logical-cube-objects/aggregations-and-aggregation-designs.md).  
   
@@ -128,7 +115,7 @@ Analysis Services s'exécute en mode de déploiement du serveur qui détermine l
   
  Dans le tableau précédent, chaque ligne possède les mêmes valeurs pour le **RouteKey**, **SourceKey**, et **TimeKey** colonnes, indiquant que ces lignes participent à la même cellule de cube.  
   
- L'exemple présenté ici concerne un cube très simple, qui n'a qu'un seul groupe de mesures et auquel toutes les tables de dimension sont jointes à la table de faits dans un schéma en étoile. Dans un autre schéma commun, appelé schéma en flocons, une ou plusieurs tables de dimension sont jointes à une autre table de dimension au lieu d'être jointes directement à la table de faits. **Rubrique connexe :**[Dimensions &#40; Analysis Services - données multidimensionnelles &#41; ](../../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md).  
+ L'exemple présenté ici concerne un cube très simple, qui n'a qu'un seul groupe de mesures et auquel toutes les tables de dimension sont jointes à la table de faits dans un schéma en étoile. Dans un autre schéma commun, appelé schéma en flocons, une ou plusieurs tables de dimension sont jointes à une autre table de dimension au lieu d'être jointes directement à la table de faits. **Rubrique connexe :**[Dimensions &#40;Analysis Services - données multidimensionnelles&#41;](../../../analysis-services/multidimensional-models-olap-logical-dimension-objects/dimensions-analysis-services-multidimensional-data.md).  
   
  L'exemple présenté ici ne contient qu'une seule table de faits. Quand un cube a plusieurs tables de faits, les mesures de chaque table de faits sont organisées en groupes de mesures et un groupe de mesures est lié à un jeu de dimensions spécifique par des relations de dimension définies. Ces relations sont définies en spécifiant les tables participantes dans la vue de source de données et la granularité de la relation. **Rubrique connexe :**[relations de Dimension](../../../analysis-services/multidimensional-models-olap-logical-cube-objects/dimension-relationships.md).  
   

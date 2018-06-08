@@ -1,28 +1,24 @@
 ---
-title: "Présentation de prise en charge de Java EE | Documents Microsoft"
-ms.custom: 
+title: Présentation de prise en charge de Java EE | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a9448b80-b7a3-49cf-8bb4-322c73676005
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: cb98529d22b17ad21bfcab786064a8c8882f3b5b
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: fb626e0f956d057b27f8a469d51dea67df428742
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-java-ee-support"></a>Fonctionnement de la prise en charge Java EE
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

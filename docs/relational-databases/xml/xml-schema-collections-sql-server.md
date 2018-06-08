@@ -1,17 +1,15 @@
 ---
-title: "Collections de schémas XML (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Collections de schémas XML (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - XSD schemas [SQL Server]
 - xml_schema_namespace function
@@ -24,20 +22,19 @@ helpviewer_keywords:
 - XML schema collections [SQL Server]
 - schema collections [SQL Server], about XML schema collections
 ms.assetid: 659d41aa-ccec-4554-804a-722a96ef25c2
-caps.latest.revision: 
+caps.latest.revision: 31
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c8c7a11c64d487aa6f08d616d6bae70b24a742dc
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: a0a3b92ae3ac44f071dc3bc36527a9b3f28396ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-schema-collections-sql-server"></a>Collections de schémas XML (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Comme l’explique la rubrique [xml &#40;Transact-SQL&#41;](../../t-sql/xml/xml-transact-sql.md), SQL Server assure un stockage natif des données XML par le biais du type de données **xml**. Vous pouvez éventuellement associer des schémas XSD à une variable ou à une colonne de type **xml** à l'aide d'une collection de schémas XML. La collection de schémas XML stocke les schémas XML importés et peut ensuite servir à :  
+  Comme l’explique la rubrique [xml &#40;Transact-SQL&#41;](../../t-sql/xml/xml-transact-sql.md), SQL Server assure un stockage natif des données XML par le biais du type de données **xml**. Vous pouvez éventuellement associer des schémas XSD à une variable ou à une colonne de type **xml** à l'aide d'une collection de schémas XML. La collection de schémas XML stocke les schémas XML importés et peut ensuite servir à :  
   
 -   valider des instances XML ;  
   
@@ -199,7 +196,7 @@ SELECT XML_SCHEMA_NAMESPACE (N'dbo', N'myCollection')
  Les schémas XML individuels de la collection peuvent être obtenus sous forme d’instances de type **xml** en spécifiant l’espace de noms cible comme troisième argument de **XML_SCHEMA_NAMESPACE()**. Cela est illustré par l'exemple suivant.  
   
 ### <a name="example-output-a-specified-schema-from-an-xml-schema-collection"></a>Exemple : extraction d'un schéma spécifique d'une collection de schémas XML  
- L'instruction suivante extrait le schéma XML dont l'espace de noms cible est « http://www.microsoft.com/books » de la collection de schémas XML « myCollection » dans le schéma relationnel, dbo.  
+ L’instruction suivante extrait le schéma XML dont l’espace de noms cible est « http://www.microsoft.com/books » de la collection de schémas XML « myCollection » dans le schéma relationnel, dbo.  
   
 ```  
 SELECT XML_SCHEMA_NAMESPACE (N'dbo', N'myCollection',   

@@ -1,17 +1,15 @@
 ---
-title: "GetChunk, méthode (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: GetChunk, méthode (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Field20::raw_GetChunk
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - GetChunk method [ADO]
 ms.assetid: fc268e22-205b-44a3-9038-ffed51e23e10
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b479146e26196e42836ce381e3f5e555dd0a9a6b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 38397b5573cfb7ddb10a7454833f4e9b512b769b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getchunk-method-ado"></a>GetChunk, méthode (ADO)
 Retourne l’ensemble ou une partie du contenu d’un texte de grande taille ou les données binaires [champ](../../../ado/reference/ado-api/field-object.md) objet.  

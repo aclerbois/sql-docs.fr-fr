@@ -1,33 +1,28 @@
 ---
-title: "Sélectionner les lignes à migrer à l’aide d’une fonction de filtre (Stretch Database) | Microsoft Docs"
-ms.custom: 
+title: Sélectionner les lignes à migrer à l’aide d’une fonction de filtre (Stretch Database) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/27/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: stretch-database
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-stretch
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Stretch Database, predicates
 - predicates for Stretch Database
 - Stretch Database, inline table-valued functions
 - inline table-valued functions for Stretch Database
 ms.assetid: 090890ee-7620-4a08-8e15-d2fbc71dd12f
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 43
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: efb55816db5f692231b66ca53780ab26318da90c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c4834b888400b8155be979c42cd5d22a9bb03b54
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34773205"
 ---
 # <a name="select-rows-to-migrate-by-using-a-filter-function-stretch-database"></a>Sélectionner les lignes à migrer à l’aide d’une fonction de filtre (Stretch Database)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md-winonly.md)]

@@ -1,16 +1,14 @@
 ---
 title: sysmail_add_profile_sp (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_add_profile_sp_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_add_profile_sp
 ms.assetid: a828e55c-633a-41cf-9769-a0698b446e6c
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6295b1f239f136c43e00e047186ce408ab9a4a93
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 16091d14ba4971ae8e07633dd111dd5f5a2facde
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailaddprofilesp-transact-sql"></a>sysmail_add_profile_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,20 +45,20 @@ sysmail_add_profile_sp [ @profile_name = ] 'profile_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Nom du nouveau profil. *profile_name* est **sysname**, sans valeur par défaut.  
   
- [ **@description** = ] **'***description***'**  
+ [ **@description** =] **'***description***'**  
  Description facultative du nouveau profil. *Description* est **nvarchar (256)**, sans valeur par défaut.  
   
- [  **@profile_id**  =] *new_profile_id *** sortie**  
+ [ **@profile_id** =] *new_profile_id *** sortie**  
  Retourne l'ID du nouveau profil. *new_profile_id* est **int**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- Un profil de messagerie de base de données contient un nombre quelconque de comptes de messagerie de base de données. Les procédures stockées de la messagerie de base de données peuvent faire référence à un profil par son nom ou par l'ID généré par cette procédure. Pour plus d’informations sur l’ajout d’un compte à un profil, consultez [sysmail_add_profileaccount_sp &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sysmail-add-profileaccount-sp-transact-sql.md).  
+ Un profil de messagerie de base de données contient un nombre quelconque de comptes de messagerie de base de données. Les procédures stockées de la messagerie de base de données peuvent faire référence à un profil par son nom ou par l'ID généré par cette procédure. Pour plus d’informations sur l’ajout d’un compte à un profil, consultez [sysmail_add_profileaccount_sp &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sysmail-add-profileaccount-sp-transact-sql.md).  
   
  Le nom du profil et la description peuvent être modifiés avec la procédure stockée **sysmail_update_profile_sp**, alors que l’id de profil reste constante pour la durée de vie du profil.  
   
@@ -102,6 +99,6 @@ SELECT @profileId ;
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte de messagerie de base de données](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

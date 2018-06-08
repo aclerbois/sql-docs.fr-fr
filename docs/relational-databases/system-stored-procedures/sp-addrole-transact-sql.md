@@ -1,16 +1,14 @@
 ---
 title: sp_addrole (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addrole
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_addrole
 ms.assetid: e8a21642-8440-419a-8585-93d3d9d44f00
-caps.latest.revision: 
+caps.latest.revision: 33
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 070e1d0e71b49689e547dc29300bf5a5476d17ec
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 01a51141bc5e28c09879667dee69721f6e5d4473
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddrole-transact-sql"></a>sp_addrole (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,14 +58,14 @@ sp_addrole [ @rolename = ] 'role' [ , [ @ownername = ] 'owner' ]
 ## <a name="remarks"></a>Notes  
  Les noms des rôles de base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent compter de 1 à 128 caractères, y compris des lettres, des symboles et des chiffres. Les noms de rôles de base de données ne peut pas : contenir une barre oblique inverse (\\), la valeur null, ou une chaîne vide (**''**).  
   
- Après avoir ajouté un rôle de base de données, utilisez [sp_addrolemember &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/sp-addrolemember-transact-sql.md) pour ajouter des entités au rôle. Lorsque vous utilisez les instructions GRANT, DENY ou REVOKE pour appliquer des autorisations au rôle de base de données, les membres de ce rôle héritent de ces autorisations comme si elles avaient été appliquées directement à leur compte.  
+ Après avoir ajouté un rôle de base de données, utilisez [sp_addrolemember &#40;Transact-SQL&#41; ](../../relational-databases/system-stored-procedures/sp-addrolemember-transact-sql.md) pour ajouter des entités au rôle. Lorsque vous utilisez les instructions GRANT, DENY ou REVOKE pour appliquer des autorisations au rôle de base de données, les membres de ce rôle héritent de ces autorisations comme si elles avaient été appliquées directement à leur compte.  
   
 > [!NOTE]  
 >  Il n'est pas possible de créer de nouveaux rôles de serveurs. Les rôles ne peuvent être créés qu'au niveau de la base de données.  
   
  **sp_addrole** ne peut pas être utilisé à l’intérieur d’une transaction définie par l’utilisateur.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation CREATE ROLE sur la base de données. Pour la création d'un schéma, exige l'autorisation CREATE SCHEMA sur la base de données. Si *propriétaire* est spécifié en tant qu’un utilisateur ou un groupe, requiert IMPERSONATE sur cet utilisateur ou groupe. Si *propriétaire* est spécifié en tant que rôle, nécessite l’autorisation ALTER sur ce rôle ou un membre de ce rôle. Si le propriétaire est spécifié en tant que rôle d'application, exige l'autorisation ALTER sur ce rôle d'application.  
   
 ## <a name="examples"></a>Exemples  
@@ -80,7 +77,7 @@ EXEC sp_addrole 'Managers';
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [CREATE ROLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-role-transact-sql.md)  
   
   

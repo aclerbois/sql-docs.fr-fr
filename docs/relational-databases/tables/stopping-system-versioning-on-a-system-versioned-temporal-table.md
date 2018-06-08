@@ -1,28 +1,25 @@
 ---
-title: "Arrêt du contrôle de version du système sur une table temporelle avec contrôle de version par le système | Microsoft Docs"
-ms.custom: 
+title: Arrêt du contrôle de version du système sur une table temporelle avec contrôle de version par le système | Microsoft Docs
+ms.custom: ''
 ms.date: 10/11/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: dddd707e-bfb1-44ff-937b-a84c5e5d1a94
-caps.latest.revision: 
+caps.latest.revision: 10
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2fc598778c154fa0439fc3534243ff4cb2a7f0b1
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 4e29857b52e2845599ea35dda7b4bb39b6ec1bd2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stopping-system-versioning-on-a-system-versioned-temporal-table"></a>Arrêt du contrôle de version par le système sur une table temporelle à version contrôlée par le système
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -83,9 +80,6 @@ SYSTEM_VERSIONING = ON (HISTORY_TABLE = History.DepartmentHistory)
 COMMIT ;  
   
 ```  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Stopping%20System-Versioning%20on%20a%20System-Version%20Temporal%20Table%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

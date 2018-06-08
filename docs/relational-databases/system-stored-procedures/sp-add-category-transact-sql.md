@@ -1,16 +1,14 @@
 ---
 title: sp_add_category (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_category
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_category
 ms.assetid: 6cca32cd-d941-4378-aed6-a7c90cb7520a
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7df42005cfd21c4030990784c7efd482c9312118
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: d6f98fd4dbccc6b47297c8b0ebb2073dd23d35c6
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddcategory-transact-sql"></a>sp_add_category (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,14 +55,14 @@ sp_add_category
 |ALERT|Ajoute une catégorie d'alertes.|  
 |OPERATOR|Ajoute une catégorie d'opérateurs.|  
   
- [ **@type =** ] **'***type***'**  
+ [  **@type =** ] **'***type***'**  
  Type de catégorie à ajouter. *type* est **varchar(12)**, avec la valeur par défaut **LOCAL**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
 |LOCAL|Catégorie de travaux locaux.|  
-|MULTI-SERVER|Une catégorie de travaux multiserveur.|  
-|Aucune|Une catégorie d’une classe différente de JOB**.**|  
+|PLUSIEURS SERVEURS|Une catégorie de travaux multiserveur.|  
+|Aucune|Une catégorie d’une classe différente de JOB **.**|  
   
  [  **@name =** ] **'***nom***'**  
  Nom de la catégorie à ajouter. Le nom doit être unique dans la classe spécifiée. *nom* est **sysname**, sans valeur par défaut.  
@@ -100,7 +97,7 @@ GO
  [sp_delete_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-delete-category-transact-sql.md)   
  [sp_help_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-category-transact-sql.md)   
  [sp_update_category &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-update-category-transact-sql.md)   
- [dbo.sysjobs &#40; Transact-SQL &#41;](../../relational-databases/system-tables/dbo-sysjobs-transact-sql.md)   
+ [dbo.sysjobs & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-tables/dbo-sysjobs-transact-sql.md)   
  [dbo.sysjobservers &#40;Transact-SQL&#41;](../../relational-databases/system-tables/dbo-sysjobservers-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   

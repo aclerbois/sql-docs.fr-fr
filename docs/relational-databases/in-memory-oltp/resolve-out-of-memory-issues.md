@@ -1,28 +1,25 @@
 ---
-title: "Résoudre les problèmes de mémoire insuffisante | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes de mémoire insuffisante | Microsoft Docs
+ms.custom: ''
 ms.date: 12/21/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f855e931-7502-44bd-8a8b-b8543645c7f4
-caps.latest.revision: 
+caps.latest.revision: 18
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5474d67c93569bdabf214da4bb8dafd6ad793cab
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: e29658950a9a058214fea4cf9e7bdcfda9daa808
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="resolve-out-of-memory-issues"></a>Résoudre les problèmes de mémoire insuffisante
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -33,13 +30,13 @@ ms.lasthandoff: 03/19/2018
   
 |Rubrique|Vue d'ensemble|  
 |-----------|--------------|  
-|[Résoudre les problèmes de restauration de base de données en cas d'insuffisance de mémoire](#bkmk_resolveRecoveryFailures)|Explique la procédure à suivre si vous recevez le message d’erreur « Échec de l’opération de restauration pour la base de données « *\<nom_base_de_données>* » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>* » ».|  
+|[Résoudre les problèmes de restauration de base de données en cas d'insuffisance de mémoire](#bkmk_resolveRecoveryFailures)|Explique la procédure à suivre si vous recevez le message d’erreur « Échec de l’opération de restauration pour la base de données « *\<nom_base_de_données>*  » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>*  » ».|  
 |[Résoudre les problèmes d'insuffisance de mémoire ayant un impact sur la charge de travail](#bkmk_recoverFromOOM)|Explique la procédure à suivre si vous constatez que les problèmes d'insuffisance de mémoire ont un effet négatif sur les performances.|  
-|[Résoudre les échecs d'allocation de pages dus à une mémoire insuffisante alors qu'il y a suffisamment de mémoire à disposition](#bkmk_PageAllocFailure)|Explique la procédure à suivre si vous recevez le message d’erreur « Interdiction des allocations de pages pour la base de données « *\<nom_base_de_données>* » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>* ». … » lorsque la mémoire disponible est suffisante pour l'opération.|
+|[Résoudre les échecs d'allocation de pages dus à une mémoire insuffisante alors qu'il y a suffisamment de mémoire à disposition](#bkmk_PageAllocFailure)|Explique la procédure à suivre si vous recevez le message d’erreur « Interdiction des allocations de pages pour la base de données « *\<nom_base_de_données>*  » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>*  ». … » lorsque la mémoire disponible est suffisante pour l'opération.|
 |[Bonnes pratiques concernant l’utilisation de l’OLTP en mémoire dans un environnement de machine virtuelle](#bkmk_VMs)|Ce qu’il faut savoir avant d’utiliser l’OLTP en mémoire dans un environnement virtualisé.|
   
 ##  <a name="bkmk_resolveRecoveryFailures"></a> Résoudre les problèmes de restauration de base de données en cas d'insuffisance de mémoire  
- Quand vous tentez de restaurer une base de données, il se peut que le message d’erreur suivant s’affiche : « Échec de l’opération de restauration pour la base de données « *\<nom_base_de_données>* » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>* » ». Cela indique que le serveur ne dispose pas de suffisamment de mémoire pour la restauration de la base de données. 
+ Quand vous tentez de restaurer une base de données, il se peut que le message d’erreur suivant s’affiche : « Échec de l’opération de restauration pour la base de données « *\<nom_base_de_données>*  » en raison d’une mémoire insuffisante dans le pool de ressources « *\<nom_pool_de_ressources>*  » ». Cela indique que le serveur ne dispose pas de suffisamment de mémoire pour la restauration de la base de données. 
    
 Le serveur sur lequel vous restaurez une base de données doit disposer de suffisamment de mémoire pour les tables à mémoire optimisée dans la sauvegarde de base de données. Dans le cas contraire, la base de données n’est pas mise en ligne et est marquée comme suspecte.  
   

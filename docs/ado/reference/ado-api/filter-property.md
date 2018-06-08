@@ -1,33 +1,30 @@
 ---
 title: Propriété filtre | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::Filter
 helpviewer_keywords:
 - Filter property
 ms.assetid: 80263a7a-5d21-45d1-84fc-34b7a9be4c22
-caps.latest.revision: ''
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8c3b06134dcf65ead3a97577a6d08fd46ec2f52e
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 9dc176d7c64d1845ddb863cd58fd41313967ccce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-property"></a>Filter, propriété
 Indique un filtre pour les données dans un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md).  
@@ -52,7 +49,7 @@ La chaîne de critères est composée de clauses sous la forme *NomChamp-Opérat
   
 -   Opérateur doit être une des valeurs suivantes : \<, >, \<=, > =, <>, =, ou **comme**.  
   
--   Valeur est la valeur à laquelle vous comparez les valeurs de champ (par exemple, « Smith », n° 8/24/&#95;, 12,345 ou $50,00). Utilisez des guillemets simples avec les chaînes et les signes dièse (##) avec des dates. Pour les nombres, vous pouvez utiliser le point décimal, signes dollar et la notation scientifique. Si l’opérateur est **comme**, valeur peut utiliser des caractères génériques. Uniquement l’astérisque (*) et signe de pourcentage (%) les caractères génériques sont autorisés, et ils doivent être le dernier caractère de la chaîne. Valeur ne peut pas être null.  
+-   Valeur est la valeur à laquelle vous comparez les valeurs de champ (par exemple, « Smith », n° 8/24/95 #, 12,345 ou $50,00). Utilisez des guillemets simples avec les chaînes et les signes dièse (##) avec des dates. Pour les nombres, vous pouvez utiliser le point décimal, signes dollar et la notation scientifique. Si l’opérateur est **comme**, valeur peut utiliser des caractères génériques. Uniquement l’astérisque (*) et signe de pourcentage (%) les caractères génériques sont autorisés, et ils doivent être le dernier caractère de la chaîne. Valeur ne peut pas être null.  
   
 > [!NOTE]
 >  Pour inclure des guillemets simples (') dans le filtre de valeur, utilisez deux guillemets simples pour représenter un. Par exemple, pour filtrer sur Malley, la chaîne de critères doit être `"col1 = 'O''Malley'"`. Pour inclure des guillemets simples au début et à la fin de la valeur de filtre, délimitez la chaîne avec les signes dièse (#). Par exemple, pour filtrer sur '1', la chaîne de critères doit être `"col1 = #'1'#"`.  
@@ -95,7 +92,7 @@ Seuls les filtres sous la forme de chaînes de critères affectent le contenu d�
   
 -   Les modifications apportées sur tous les champs dans une table à clés multiples.  
   
-Le tableau suivant récapitule les effets de **adFilterPendingRecords** dans différentes combinaisons de filtrage et de modifications. La colonne de gauche indique les modifications possibles. Modifications peuvent être effectuées sur un des champs non-clés, sur le champ clé dans une table à clé unique ou sur un des champs clés dans une table à clés multiples. La ligne du haut affiche le critère de filtrage. Le filtrage peut être basé sur tous les champs non-clés, le champ de clé dans une table à clé unique ou l’un des champs clés dans une table à clés multiples. Les cellules qui montrent les résultats. A  **+**  signe signifie que l’application **adFilterPendingRecords** entraîne un vide **Recordset**. A  **-**  signe signifie vide **Recordset**.  
+Le tableau suivant récapitule les effets de **adFilterPendingRecords** dans différentes combinaisons de filtrage et de modifications. La colonne de gauche indique les modifications possibles. Modifications peuvent être effectuées sur un des champs non-clés, sur le champ clé dans une table à clé unique ou sur un des champs clés dans une table à clés multiples. La ligne du haut affiche le critère de filtrage. Le filtrage peut être basé sur tous les champs non-clés, le champ de clé dans une table à clé unique ou l’un des champs clés dans une table à clés multiples. Les cellules qui montrent les résultats. A **+** signe signifie que l’application **adFilterPendingRecords** entraîne un vide **Recordset**. A **-** signe signifie vide **Recordset**.  
   
 ||Non clés|Clé unique|Plusieurs clés|
 |-|--------------|----------------|-------------------|

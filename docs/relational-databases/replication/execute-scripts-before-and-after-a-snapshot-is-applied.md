@@ -1,32 +1,31 @@
 ---
-title: "Exécuter des scripts avant et après l’application d’un instantané | Microsoft Docs"
-ms.custom: 
+title: Exécuter des scripts avant et après l’application d’un instantané | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - snapshots [SQL Server replication], scripts
 - scripts [SQL Server replication], snapshots
 - snapshot replication [SQL Server], scripts
 ms.assetid: b7bb1e4c-5b48-4bb1-9dc8-47c911f2cc82
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa164497bef683b80db7e386c2d8f782f85e613d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3d69aaefe439feea910c62b1aff36ebe38e402a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-scripts-before-and-after-a-snapshot-is-applied"></a>Exécuter des scripts avant et après l’application d’un instantané
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -37,7 +36,7 @@ ms.lasthandoff: 03/08/2018
   
 ### <a name="to-execute-a-script-before-or-after-a-snapshot-is-applied"></a>Pour exécuter un script avant ou après l'application d'un instantané  
   
-1.  Dans la page **Instantané** de la boîte de dialogue **Propriétés de la publication - \<Publication>** :  
+1.  Dans la page **Instantané** de la boîte de dialogue **Propriétés de la publication - \<Publication>**  :  
   
     -   Pour spécifier un script à exécuter avant l'application de l'instantané, cliquez sur **Parcourir** pour rechercher le script, ou entrez un chemin d'accès pour le script dans la zone de texte **Exécuter ce script avant l'application de l'instantané** .  
   

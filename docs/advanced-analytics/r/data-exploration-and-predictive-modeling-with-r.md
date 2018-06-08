@@ -1,27 +1,19 @@
 ---
-title: Exploration de données et modélisation prédictive avec R | Microsoft Docs
-ms.custom:
-- SQL2016_New_Updated
-ms.date: 04/18/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Exploration de données et modélisation prédictive avec R dans l’apprentissage de SQL Server | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 40ea95675221a4a8f349447641cb73f7d5fc3305
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 9f808c2fffe0b008590ae1eaac51124471c02e5d
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="data-exploration-and-predictive-modeling-with-r"></a>Exploration de données et modélisation prédictive avec R
+# <a name="data-exploration-and-predictive-modeling-with-r-in-sql-server"></a>Exploration de données et modélisation prédictive avec R dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Cet article décrit les améliorations apportées au processus de science des données qui sont possibles via l’intégration avec SQL Server.

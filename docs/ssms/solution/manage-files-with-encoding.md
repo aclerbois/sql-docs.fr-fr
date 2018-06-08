@@ -1,34 +1,33 @@
 ---
-title: "Gérer des fichiers avec encodage | Microsoft Docs"
-ms.custom: 
+title: Gérer des fichiers avec encodage | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - files [SQL Server Management Studio]
 - encoding [SQL Server Management Studio]
 - files [SQL Server Management Studio], encoding
 ms.assetid: 919544c9-59f0-4cc6-bb2a-f1ad671eb74b
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 76e453879de3505e2a7234d8b6ae69b7627dda4e
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 2f04e3569753aa9a2f73f2e1f12cb51c9b20bbe3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-files-with-encoding"></a>Gérer des fichiers avec encodage
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour faciliter l’affichage de votre code dans un langage particulier ou sur une plateforme spécifique, vous pouvez associer un encodage de caractères déterminé à un fichier.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Pour faciliter l'affichage de votre code dans un langage particulier ou sur une plateforme spécifique, vous pouvez associer un encodage de caractères déterminé à un fichier.  
   
 ## <a name="opening-files"></a>Ouverture de fichiers  
 Vous pouvez choisir l'éditeur que vous souhaitez utiliser pour modifier le fichier.  

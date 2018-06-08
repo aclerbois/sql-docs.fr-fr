@@ -1,16 +1,13 @@
 ---
 title: DBCC CHECKCONSTRAINTS (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DBCC CHECKCONSTRAINTS
@@ -26,16 +23,15 @@ helpviewer_keywords:
 - constraints [SQL Server], consistency checks
 - integrity [SQL Server], constraints
 ms.assetid: da6c9cee-6687-46e8-b504-738551f9068b
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 45
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2ff75ba3c32d138d9124eba5cfe170cf146d5778
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: a274fea3b1171774def99daea9248ca96cd4c365
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-checkconstraints-transact-sql"></a>DBCC CHECKCONSTRAINTS (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -101,10 +97,10 @@ Si *table_name* ou *table_id* est spécifié et activé pour la gestion système
   
 |Vérifier|Informations supplémentaires dans la sortie en cas d’échec de la vérification|  
 |-----------|-----------------------------------------------|  
-|PeriodEndColumn ≥ PeriodStartColumn (en cours)|[sys_end] = '{0}' ET MAX(DATETIME2) = '9999-12-31 23:59:59.99999'|  
-|PeriodEndColumn ≥ PeriodStartColumn (en cours, historique)|[sys_start] = '{0}' ET [sys_end] = '{1}'|  
-|PeriodStartColumn < current_utc_time (en cours)|[sys_start] = '{0}' ET SYSUTCTIME|  
-|PeriodEndColumn < current_utc_time (historique)|[sys_end] = '{0}' ET SYSUTCTIME|  
+|PeriodEndColumn ≥ PeriodStartColumn (en cours)|[sys_end] = '{0}' AND MAX(DATETIME2) = '9999-12-31 23:59:59.99999'|  
+|PeriodEndColumn ≥ PeriodStartColumn (en cours, historique)|[sys_start] = '{0}' AND [sys_end] = '{1}'|  
+|PeriodStartColumn < current_utc_time (en cours)|[sys_start] = '{0}' AND SYSUTCTIME|  
+|PeriodEndColumn < current_utc_time (historique)|[sys_end] = '{0}' AND SYSUTCTIME|  
 |Chevauchements|(sys_start1, sys_end1), (sys_start2, sys_end2) pour deux enregistrements qui se chevauchent.<br /><br /> S’il existe plus de 2 enregistrements qui se chevauchent, la sortie affiche plusieurs lignes indiquant chacune une paire de chevauchements.|  
   
 Il n’existe aucun moyen de spécifier constraint_name ni constraint_id afin d’exécuter uniquement des vérifications de cohérence temporelle.

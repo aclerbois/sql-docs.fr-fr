@@ -1,32 +1,31 @@
 ---
-title: "Méthodes d’historique de rapport | Microsoft Docs"
-ms.custom: 
+title: Méthodes d’historique de rapport | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - report history [Reporting Services], methods
 - historical data [Reporting Services]
 - methods [Reporting Services], report history
 ms.assetid: ebfb4834-5445-480c-9a51-6868c60308af
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b20369d1e5064531c61bafa7c527a796becfed20
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 395213b012ed427b7f583f8c39e531e44c98a826
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-history-methods"></a>Méthodes d'historique de rapport
   Vous pouvez utiliser ces méthodes pour créer et gérer des instantanés d'historique d'éléments.  

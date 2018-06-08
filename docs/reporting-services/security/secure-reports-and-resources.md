@@ -1,16 +1,15 @@
 ---
-title: "Sécuriser des rapports et des ressources | Microsoft Docs"
-ms.custom: 
+title: Sécuriser des rapports et des ressources | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - security [Reporting Services], reports
 - security [Reporting Services], resources
@@ -18,16 +17,16 @@ helpviewer_keywords:
 - confidential reports [Reporting Services]
 - resources [Reporting Services], security
 ms.assetid: 63cd55c7-fd2a-49e3-a3f8-59eb1a1c6e83
-caps.latest.revision: "47"
+caps.latest.revision: 47
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e8d759eccca2ea7d1c7b0803f3a44cb258ffb981
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f4a41d9238315719bc6e47fb3bc9c598222673a6
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34550770"
 ---
 # <a name="secure-reports-and-resources"></a>Sécuriser des rapports et des ressources
   Vous pouvez définir la sécurité pour des rapports et des ressources individuels afin de contrôler le degré d'accès dont disposent les utilisateurs à ces éléments. Par défaut, seuls les utilisateurs qui sont membres du groupe intégré **Administrateurs** peuvent exécuter les rapports, afficher les ressources, modifier les propriétés et supprimer les éléments. Tous les autres utilisateurs possèdent des attributions de rôles créées pour eux qui autorisent l'accès à un rapport ou une ressource.  
@@ -81,7 +80,6 @@ ms.lasthandoff: 01/09/2018
   
 ## <a name="see-also"></a> Voir aussi  
  [Créer et gérer des attributions de rôles](../../reporting-services/security/create-and-manage-role-assignments.md)   
- [Configurer l'accès au Générateur de rapports](../../reporting-services/report-server/configure-report-builder-access.md)   
  [Octroi d'autorisations sur un serveur de rapports en mode natif](../../reporting-services/security/granting-permissions-on-a-native-mode-report-server.md)   
  [Sécuriser les éléments de source de données partagée](../../reporting-services/security/secure-shared-data-source-items.md)   
  [Stocker des informations d’identification dans une source de données Reporting Services](../../reporting-services/report-data/store-credentials-in-a-reporting-services-data-source.md)  

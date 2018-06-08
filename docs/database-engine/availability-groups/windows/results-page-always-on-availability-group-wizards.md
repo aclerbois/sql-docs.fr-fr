@@ -1,32 +1,29 @@
 ---
-title: "Page Résultats (Assistants Groupe de disponibilité Always On) | Microsoft Docs"
-ms.custom: 
+title: Page Résultats (Assistants Groupe de disponibilité Always On) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.failoverwizard.results.f1
 - sql13.swb.newagwizard.results.f1
 - sql13.swb.addreplicawizard.results.f1
 - sql13.swb.adddatabasewizard.results.f1
 ms.assetid: d80b14eb-60db-4351-90ad-6c179d235aa3
-caps.latest.revision: "9"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b05916edacd132c1e151b77f3be7935a369fe85a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: c2e9eafbd63a68d6b996494f51f0c757e1eae1ee
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768675"
 ---
 # <a name="results-page-always-on-availability-group-wizards"></a>Page Résultats (Assistants de groupe de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

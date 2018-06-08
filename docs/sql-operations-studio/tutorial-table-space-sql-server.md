@@ -1,24 +1,23 @@
 ---
-title: "Didacticiel : Activer la table d’utilisation exemple insight le widget d’espace dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "Ce didacticiel montre comment activer la table d’utilisation exemple insight le widget d’espace sur le tableau de bord de base de données SQL opérations Studio (version préliminaire)."
+title: 'Didacticiel : Activer la table d’utilisation exemple insight le widget d’espace dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft'
+description: Ce didacticiel montre comment activer la table d’utilisation exemple insight le widget d’espace sur le tableau de bord de base de données SQL opérations Studio (version préliminaire).
 ms.custom: tools|sos
 ms.date: 03/19/2018
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
-author: erickangMSFT
-ms.author: erickang
+author: stevestein
+ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 09a1ebe6fda1baf546923887f28b51d416a80b59
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
+ms.openlocfilehash: 3a09dd273bb005432eaf638bb88c55ff35a5bd90
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tutorial-enable-the-table-space-usage-sample-insight-widget-using-includename-sosincludesname-sos-shortmd"></a>Didacticiel : Activer la table d’espace d’utilisation exemple insight widget à l’aide [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 

@@ -1,16 +1,15 @@
 ---
 title: sp_changereplicationserverpasswords (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_changereplicationserverpasswords
 ms.assetid: 9333da96-3a1c-4adb-9a74-5dac9ce596df
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fcd1cbfd5532703196e47d06f920ef7cfa81f019
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7c27142aa0e628e7041202429ae6bbaee0b87a1f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spchangereplicationserverpasswords-transact-sql"></a>sp_changereplicationserverpasswords (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,31 +47,31 @@ sp_changereplicationserverpasswords [ @login_type = ] login_type
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@login_type**  =] *login_type*  
+ [ **@login_type** =] *login_type*  
  Type d'authentification des informations d'identification fournies. *LOGIN_TYPE* est **tinyint**, sans valeur par défaut.  
   
  **1** = authentification intégrée de Windows  
   
  **0**  =  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’authentification  
   
- [  **@login**  =] **'***connexion***'**  
+ [ **@login** =] **'***connexion***'**  
  Nom du compte Windows ou de la connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en cours de modification. *connexion* est **nvarchar (257)**, sans valeur par défaut  
   
- [  **@password**  =] **'***mot de passe***'**  
+ [ **@password** =] **'***mot de passe***'**  
  Nouveau mot de passe doit être stocké spécifié *connexion*. *mot de passe* est **sysname**, sans valeur par défaut.  
   
 > [!NOTE]  
 >  Après avoir modifié un mot de passe de réplication, vous devez arrêter puis redémarrer chaque Agent qui utilise ce mot de passe afin que les modifications apportées prennent effet.  
   
- [  **@server**  =] **'***server***'**  
+ [ **@server** =] **'***server***'**  
  Connexion serveur pour laquelle le mot de passe stocké est en cours de changement. *serveur* est **sysname**, et peut prendre l’une des valeurs suivantes :  
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**serveur de distribution**|Toutes les connexions d'Agent au serveur de distribution.|  
+|**Serveur de distribution**|Toutes les connexions d'Agent au serveur de distribution.|  
 |**publisher** (serveur de publication)|Toutes les connexions d'Agent au serveur de publication.|  
 |**subscriber** (Abonné)|Toutes les connexions d'Agent à l'Abonné.|  
-|**%**(par défaut)|Toutes les connexions d'Agent à tous les serveurs d'une topologie de réplication.|  
+|**%** (par défaut)|Toutes les connexions d'Agent à tous les serveurs d'une topologie de réplication.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
@@ -81,7 +79,7 @@ sp_changereplicationserverpasswords [ @login_type = ] login_type
 ## <a name="remarks"></a>Notes  
  **sp_changereplicationserverpasswords** est utilisé avec tous les types de réplication.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_changereplicationserverpasswords**.  
   
 ## <a name="see-also"></a>Voir aussi  

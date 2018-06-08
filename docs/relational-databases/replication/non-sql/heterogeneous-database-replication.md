@@ -1,32 +1,30 @@
 ---
-title: "Réplication de bases de données hétérogènes | Microsoft Docs"
-ms.custom: 
+title: Réplication de bases de données hétérogènes | Microsoft Docs
+ms.custom: ''
 ms.date: 08/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - heterogeneous database replication, about heterogeneous database replication
 - replication [SQL Server], heterogeneous database replication
 - heterogeneous database replication
 ms.assetid: 3fd983ad-e206-45db-9054-417c9b5bb815
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: de92a656e372ae79c8ac17037c301cff52d3e928
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 77bf8eb00bdc54901e3b84250319212f1eac22a0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="heterogeneous-database-replication"></a>réplication de bases de données hétérogènes  
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

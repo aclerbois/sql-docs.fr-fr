@@ -1,45 +1,23 @@
 ---
-title: "Concepts d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- SQL Server Analysis Services, data mining
-- cleaning data
-- predictive analytics
-- learning algorithms
-- data mining [Analysis Services], concepts
-- inductive learning
-- data mining [Analysis Services], about data mining
-- mining models [Analysis Services]
-- data access [Analysis Services]
-- machine learning algorithms [Analysis Services]
-- mining models [Analysis Services], about data mining
-- SSAS, data mining
-- Analysis Services, data mining
-ms.assetid: 6da6c26b-7809-415c-b5dd-bb642b51c194
-caps.latest.revision: 
-author: Minewiskan
+title: Concepts d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 03ac65aa1ad896022d12735e4e8f64c132b03734
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: ae6b7a5014cd9d8c669a75a5ea1a6d86f8d0e225
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-concepts"></a>Concepts d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'exploration de données est un processus de recherche d'informations utilisables à partir de jeux de données de grande taille. L'exploration de données utilise l’analyse mathématique pour dégager les motifs et les tendances existant dans les données. En général, ces motifs ne peuvent pas être trouvés par l’exploration de données traditionnelle parce que les relations sont trop complexes ou parce que la quantité de données est trop importante.  
+  L'exploration de données est un processus de recherche d'informations utilisables à partir de jeux de données de grande taille. L'exploration de données utilise l’analyse mathématique pour dégager les motifs et les tendances existant dans les données. En général, ces motifs ne peuvent pas être trouvés par l’exploration de données traditionnelle parce que les relations sont trop complexes ou parce que la quantité de données est trop importante.  
   
  Ces motifs et tendances peuvent être collectés et définis en tant que *modèle d'exploration de données*. Les modèles d'exploration de données peuvent être appliqués à des scénarios spécifiques, tels que :  
   
@@ -145,7 +123,7 @@ L'exploration de données est un processus de recherche d'informations utilisabl
   
  Vous pouvez également utiliser des paramètres pour ajuster chaque algorithme et appliquer des filtres aux données d'apprentissage pour utiliser uniquement un sous-ensemble des données, créant ainsi des résultats différents. Une fois les données transférées dans le modèle, l'objet du modèle d'exploration de données contient des résumés et des motifs qui peuvent être interrogés ou utilisés à des fins de prédiction.  
   
- Vous pouvez définir un nouveau modèle en utilisant l’Assistant Exploration de données de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] ou le langage DMX (Data Mining Extensions). Pour plus d’informations sur l’utilisation de l’Assistant Exploration de données, consultez [Assistant Exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md). Pour plus d’informations sur l’utilisation de DMX, consultez [Guide de référence du langage DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-reference.md).  
+ Vous pouvez définir un nouveau modèle en utilisant l’Assistant Exploration de données de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)] ou le langage DMX (Data Mining Extensions). Pour plus d’informations sur l’utilisation de l’Assistant Exploration de données, consultez [Assistant Exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/data-mining-wizard-analysis-services-data-mining.md). Pour plus d’informations sur l’utilisation de DMX, consultez [Guide de référence du langage DMX & #40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-reference.md).  
   
  Il est important de se rappeler qu’à chaque modification des données, vous devez mettre à jour la structure et le modèle d'exploration de données. Lorsque vous mettez à jour une structure d'exploration de données en la retraitant, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] extrait les données de la source, y compris toutes les nouvelles données si la source est mise à jour dynamiquement, et remplit à nouveau la structure d'exploration de données. Si certains de vos modèles sont basés sur la structure, vous pouvez choisir de les mettre à jour, ce qui signifie qu’ils seront reformés sur les nouvelles données, ou vous pouvez les conserver en l’état. Pour plus d’informations, consultez [Exigences et considérations concernant le traitement &#40;exploration de données&#41;](../../analysis-services/data-mining/processing-requirements-and-considerations-data-mining.md).  
   
@@ -156,7 +134,7 @@ L'exploration de données est un processus de recherche d'informations utilisabl
   
  Avant de déployer un modèle dans un environnement de production, vous voudrez vérifier si ce modèle fonctionne bien. De plus, lorsque vous générez un modèle, vous créez généralement plusieurs modèles avec des configurations différentes et testez tous les modèles pour déterminer lequel produit les meilleurs résultats par rapport à votre problème et vos données.  
   
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit des outils qui permettent de séparer vos données en jeux de données d’apprentissage et en jeux de données de test afin d’évaluer correctement la performance de tous les modèles sur les mêmes données. Le jeu de données d'apprentissage sert à générer le modèle tandis que le jeu de données de test sert à vérifier la précision du modèle en créant des requêtes de prédictions. Ce partitionnement peut être effectué automatiquement lors de la génération du modèle d’exploration de données. Pour plus d’informations, consultez [Test et validation &#40;exploration de données&#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md).  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]Fournit des outils qui vous aident à séparer vos données dans l’apprentissage et jeux de données de test qui vous pouvez d’évaluer avec précision les performances de tous les modèles sur les mêmes données. Le jeu de données d'apprentissage sert à générer le modèle tandis que le jeu de données de test sert à vérifier la précision du modèle en créant des requêtes de prédictions. Ce partitionnement peut être effectué automatiquement lors de la génération du modèle d’exploration de données. Pour plus d’informations, consultez [Test et validation &#40;exploration de données&#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md).  
   
  Vous pouvez explorer les tendances et les motifs trouvés par les algorithmes en utilisant les visionneuses du Concepteur d'exploration de données de [!INCLUDE[ssBIDevStudio](../../includes/ssbidevstudio-md.md)]. Pour plus d’informations, consultez [Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md). Vous pouvez également tester la qualité des prédictions créées par les modèles à l'aide des outils du Concepteur, tels que le graphique de courbes d'élévation et la matrice de classification. Pour vérifier si le modèle est spécifique à vos données ou s’il peut être utilisé pour faire des inférences générales, vous pouvez utiliser la technique statistique appelée *validation croisée* pour créer automatiquement des sous-ensembles de données et tester le modèle avec chaque sous-ensemble. Pour plus d’informations, consultez [Test et validation &#40;exploration de données&#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md).  
   

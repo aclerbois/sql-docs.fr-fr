@@ -1,36 +1,35 @@
 ---
-title: "Extraire des lignes à l’aide de signets (OLE DB) | Documents Microsoft"
-ms.custom: 
+title: Extraire des lignes à l’aide de signets (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-how-to
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - bookmarks [OLE DB]
 - rows [OLE DB]
 ms.assetid: 5e14d5c8-e7c6-498f-8041-7e006a1c2d81
-caps.latest.revision: 
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 000fab04d6ed1f0869c466c7513f7dbba6d6b657
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a61452cbad3455bb6c8740ee2566d1078171c7fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="retrieve-rows-using-bookmarks-ole-db"></a>Récupérer des lignes à l'aide de signets (OLE DB)
+# <a name="retrieve-rows-using-bookmarks-ole-db"></a>Récupérer des lignes à l'aide de signets (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../includes/snac-deprecated.md)]
 
-  Le consommateur attribue au champ **dwFlag** de la structure de liaison la valeur DBCOLUMNSINFO_ISBOOKMARK pour indiquer que la colonne est utilisée comme signet. Le consommateur définit également la propriété d'ensemble de lignes DBPROP_BOOKMARKS avec la valeur VARIANT_TRUE. Cela permet à la colonne 0 d'être présente dans l'ensemble de lignes. **IRowsetLocate::GetRowsAt** est ensuite utilisé pour extraire les lignes, en commençant par la ligne spécifiée par un offset à partir d'un signet.  
+  Le consommateur attribue au champ **dwFlag** de la structure de liaison la valeur DBCOLUMNSINFO_ISBOOKMARK pour indiquer que la colonne est utilisée comme signet. Le consommateur définit également la propriété d'ensemble de lignes DBPROP_BOOKMARKS avec la valeur VARIANT_TRUE. Cela permet à la colonne 0 d'être présente dans l'ensemble de lignes. **IRowsetLocate::GetRowsAt** est ensuite utilisé pour extraire les lignes, en commençant par la ligne spécifiée par un offset à partir d'un signet.  
   
 > [!IMPORTANT]  
 >  Utilisez l'authentification Windows quand c'est possible. Si l'authentification Windows n'est pas disponible, invitez les utilisateurs à entrer leurs informations d'identification au moment de l'exécution. Évitez de stocker ces informations dans un fichier. Si vous devez rendre les informations d'identification persistantes, chiffrez-les avec l' [API de chiffrement Win32](http://go.microsoft.com/fwlink/?LinkId=64532).  

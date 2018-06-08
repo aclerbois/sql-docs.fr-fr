@@ -1,30 +1,20 @@
 ---
-title: "Ancêtre (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: ANCESTOR
-dev_langs: kbMDX
-helpviewer_keywords: Ancestor function
-ms.assetid: b5bf2ce4-20df-4ebc-97eb-e44a6f64cc50
-caps.latest.revision: "46"
-author: Minewiskan
+title: Ancêtre (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: a8a7eee3ad6767c0a40dedb8f334c9767778e0d7
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 5e30774aa9173bfcb7851096a25363c81d7abe9f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577071"
 ---
 # <a name="ancestor-mdx"></a>Ancestor (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -49,14 +39,14 @@ Ancestor(Member_Expression, Distance)
  *Level_Expression*  
  Expression MDX (Multidimensional Expressions) valide qui retourne un niveau.  
   
- *Distance*  
+ *distance*  
  Expression numérique valide qui spécifie la distance depuis le membre spécifié.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Avec la **ancêtre** (fonction), vous fournissez la fonction avec une expression de membre MDX, puis une expression MDX d’un niveau qui est un ancêtre du membre ou une expression numérique qui représente le nombre de niveaux au-dessus de ce membre. Avec ces informations, le **ancêtres** fonction retourne le membre ancêtre à ce niveau.  
   
 > [!NOTE]  
->  Pour retourner un jeu qui contient le membre ancêtre, plutôt que juste le membre ancêtre, utilisez le [ancêtres &#40; MDX &#41; ](../mdx/ancestors-mdx.md) (fonction).  
+>  Pour retourner un jeu qui contient le membre ancêtre, plutôt que juste le membre ancêtre, utilisez le [ancêtres &#40;MDX&#41; ](../mdx/ancestors-mdx.md) (fonction).  
   
  Si une expression de niveau est spécifiée, la **ancêtre** fonction retourne l’ancêtre d’un membre spécifié au niveau spécifié. Si le membre spécifié n'apparaît pas dans la même hiérarchie en tant que niveau spécifié, la fonction retourne une erreur.  
   
@@ -110,6 +100,6 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

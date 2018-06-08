@@ -1,30 +1,29 @@
 ---
-title: sys.pdw_replicated_table_cache_state (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.pdw_replicated_table_cache_state (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 07/03/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse
 ms.service: sql-data-warehouse
 ms.component: system-catalog-views
-ms.reviewer: barbkess
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 author: ronortloff
 ms.author: rortloff
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5efc510645a6a5648c4d1e2c6e2c05567159e6e2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azure-sqldw-latest || = sqlallproducts-allversions
+ms.openlocfilehash: 9d3d2880c390dc627db7009662f72ccec6e9700f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="syspdwreplicatedtablecachestate-transact-sql"></a>sys.pdw_replicated_table_cache_state (Transact-SQL)
+# <a name="syspdwreplicatedtablecachestate-transact-sql"></a>Sys.pdw_replicated_table_cache_state (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-xxx-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-xxx-md.md)]
 
   Retourne l’état du cache associé à une table répliquée par **object_id**.  

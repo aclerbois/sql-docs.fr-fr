@@ -1,30 +1,29 @@
 ---
-title: "Méthode (int, int, int) createStatement | Documents Microsoft"
-ms.custom: 
+title: Méthode (int, int, int) createStatement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerConnection.createStatement (int, int, int)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerConnection.createStatement (int, int, int)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 2e4fa385-8f61-4394-8f75-3e839930a57d
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 430174a3400ab3d1138efdaa84c25cba78d90d14
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 2cabeeaf2759991bda02b3dd1f59e247c7037f15
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="createstatement-method-int-int-int"></a>Méthode createStatement (int, int, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -63,7 +62,7 @@ public java.sql.Statement createStatement(int nType,
  Cette méthode createStatement est spécifiée par la méthode createStatement de l’interface java.sql.Connection.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode createStatement &#40; SQLServerConnection &#41;](../../../connect/jdbc/reference/createstatement-method-sqlserverconnection.md)   
+ [Méthode createStatement &#40;SQLServerConnection&#41;](../../../connect/jdbc/reference/createstatement-method-sqlserverconnection.md)   
  [Membres de SQLServerConnection](../../../connect/jdbc/reference/sqlserverconnection-members.md)   
  [SQLServerConnection, classe](../../../connect/jdbc/reference/sqlserverconnection-class.md)  
   

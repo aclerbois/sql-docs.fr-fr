@@ -1,27 +1,24 @@
 ---
 title: Versions linguistiques locales dans SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 20b99363-0490-4aa3-9a3d-262f827d81e8
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.openlocfilehash: 6d7de04bb83519d13cb7046b3353cf12f1b5a312
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: a5c91bea97846dfb5321eb514ad7993403aefa8a
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772425"
 ---
 # <a name="local-language-versions-in-sql-server"></a>Versions linguistiques locales dans SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

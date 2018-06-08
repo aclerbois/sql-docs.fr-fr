@@ -1,32 +1,29 @@
 ---
-title: "C en SQL : intervalles de temps de jour | Documents Microsoft"
-ms.custom: 
+title: 'C en SQL : intervalles de temps de jour | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - day-time intervals [ODBC]
 - data conversions from C to SQL types [ODBC], day-time intervals
 - converting data from c to SQL types [ODBC], day-time intervals
 - intervals [ODBC], converting
 ms.assetid: f9ee1ddb-dec7-4f78-b6e2-5ba34e7d6f59
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f6c08356a4a46c1a1520dcced93cfd11c0920474
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 400bd47766d45564b8dbced6fec30732cfd02bcd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-to-sql-day-time-intervals"></a>C en SQL : intervalles de temps de jour
 Les identificateurs pour les types de données ODBC C l’intervalle de temps jour sont :  

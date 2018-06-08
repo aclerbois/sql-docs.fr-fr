@@ -1,29 +1,27 @@
 ---
-title: "Exécuter à partir de la ligne de commande (données Assistant Migration SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Exécuter à partir de la ligne de commande (données Assistant Migration SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 09/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
-helpviewer_keywords: Data Migration Assistant, Command Line
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
+helpviewer_keywords:
+- Data Migration Assistant, Command Line
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6147d01802a363082baf27d6b909e2c98f9afef2
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: df58c273c67868e894b7cba38344dc43628962ac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="run-data-migration-assistant-from-the-command-line"></a>Exécutez l’Assistant Migration de données à partir de la ligne de commande
 Avec la version 2.1 et versions ultérieures, lorsque vous installez l’Assistant Migration de données, il installe également dmacmd.exe dans *% ProgramFiles%\\l’Assistant Migration de données Microsoft\\*. Utilisez dmacmd.exe pour évaluer vos bases de données en mode sans assistance et produire le résultat dans le fichier JSON ou CSV. Ceci est particulièrement utile lors de l’évaluation de plusieurs bases de données ou les bases de données volumineux. 
@@ -44,7 +42,7 @@ DmaCmd.exe /AssessmentName="string"
 ```
 
 
-|Argument  |Description  | Requis (Y/N)
+|Argument  | Description  | Requis (Y/N)
 |---------|---------|---------------|
 | `/help or /?`     | Comment utiliser le texte d’aide dmacmd.exe        | N
 |`/AssessmentName`     |   Nom du projet d’évaluation   | O

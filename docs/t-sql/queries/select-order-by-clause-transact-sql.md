@@ -1,16 +1,14 @@
 ---
 title: ORDER BY, clause (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ORDER_TSQL
@@ -41,16 +39,16 @@ helpviewer_keywords:
 - sort orders [SQL Server], ORDER BY clause
 - FETCH clause
 ms.assetid: bb394abe-cae6-4905-b5c6-8daaded77742
-caps.latest.revision: 
+caps.latest.revision: 68
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 08805ce7f01b11d9b87c587e543f5dae91734e68
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0770af33005dfd3a02e7b388decb7cc77cf6b37d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="select---order-by-clause-transact-sql"></a>SELECT - Clause ORDER BY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -125,7 +123,7 @@ ORDER BY order_by_expression
  FETCH { FIRST | NEXT } { *integer_constant* | *fetch_row_count_expression* } { ROW | ROWS } ONLY  
  Spécifie le nombre de lignes à retourner une fois la clause OFFSET traitée. La valeur peut être une constante entière ou une expression supérieure ou égale à un.  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
+**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
  *fetch_row_count_expression* peut être une variable, un paramètre ou une sous-requête scalaire constante. Lorsqu'une sous-requête est utilisée, elle ne peut pas référencer de colonnes définies dans l'étendue de requête externe. Autrement dit, elle ne peut pas être mise en corrélation avec la requête externe.  
   
@@ -150,7 +148,7 @@ ORDER BY order_by_expression
   
  Les colonnes de types **ntext**, **text**, **image**, **geography**, **geometry**, et **xml** ne sont pas autorisées dans une clause ORDER BY.  
   
- Il n’est pas possible de spécifier un entier ou une constante quand l’argument *order_by_expression* est utilisé dans une fonction de classement. Pour plus d’informations, consultez [OVER, clause &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
+ Il n’est pas possible de spécifier un entier ou une constante quand l’argument *order_by_expression* est utilisé dans une fonction de classement. Pour plus d’informations, consultez [Clause OVER &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md).  
   
  Si un nom de table possède un alias dans la clause FROM, seul le nom de l'alias peut être utilisé pour qualifier ses colonnes dans la clause ORDER BY.  
   
@@ -362,7 +360,7 @@ WHERE TerritoryID IS NOT NULL AND SalesYTD <> 0;
 ###  <a name="Offset"></a> Limitation du nombre de lignes retournées  
  Les exemples suivants utilisent OFFSET et FETCH pour limiter le nombre de lignes retournées par une requête.  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
+**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
 #### <a name="a-specifying-integer-constants-for-offset-and-fetch-values"></a>A. Spécification de constantes entières pour les valeurs OFFSET et FETCH  
  L'exemple suivant spécifie une constante entière comme valeur pour les clauses OFFSET et FETCH. La première requête retourne toutes les lignes triées selon la colonne `DepartmentID`. Comparez les résultats retournés par cette requête avec les résultats des deux requêtes qui la suivent. La requête suivante utilise la clause `OFFSET 5 ROWS` pour ignorer les 5 premières lignes et retourner toutes les lignes restantes. La dernière requête utilise la clause `OFFSET 0 ROWS` pour démarrer avec la première ligne, puis utilise `FETCH NEXT 10 ROWS ONLY` pour limiter les lignes retournées à 10 depuis le jeu de résultats trié.  
@@ -426,7 +424,7 @@ OPTION ( OPTIMIZE FOR (@StartingRowNumber = 1, @EndingRowNumber = 20) );
 ```  
   
 #### <a name="d-specifying-a-constant-scalar-subquery-for-offset-and-fetch-values"></a>D. Spécification d'une sous-requête scalaire constante pour les valeurs OFFSET et FETCH  
- L'exemple suivant utilise une sous-requête scalaire constante pour définir la valeur de la clause FETCH. La sous-requête retourne une valeur unique de la colonne `PageSize` dans la table `dbo.AppSettings`.  
+ L'exemple suivant utilise une sous-requête scalaire constante pour définir la valeur de la clause FETCH. Le sous-requête retourne une valeur unique de la colonne `PageSize` dans la table `dbo.AppSettings`.  
   
 ```  
 -- Specifying a constant scalar subquery  

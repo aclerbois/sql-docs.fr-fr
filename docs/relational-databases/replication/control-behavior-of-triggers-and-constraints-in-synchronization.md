@@ -1,17 +1,16 @@
 ---
-title: "Contrôler le comportement des déclencheurs et des contraintes de la synchronisation | Microsoft Docs"
-ms.custom: 
+title: Contrôler le comportement des déclencheurs et des contraintes de la synchronisation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - NOT FOR REPLICATION option
 - NFR option
 ms.assetid: 7c4e0f0e-cadc-4c99-98f4-69799b9b356b
-caps.latest.revision: 
+caps.latest.revision: 36
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 75ba5c451d179978255559021d635689a461a484
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 5c50e85b407f260d9a6a1b70ec9481fa3dc1d671
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="control-behavior-of-triggers-and-constraints-in-synchronization"></a>Contrôler le comportement des déclencheurs et des contraintes de la synchronisation
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

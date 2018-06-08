@@ -1,27 +1,24 @@
 ---
-title: "Groupes de disponibilité de base (Groupes de disponibilité Always On) | Microsoft Docs"
-ms.custom: 
+title: Groupes de disponibilité de base (Groupes de disponibilité Always On) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/01/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 285adbc7-ac9b-40f6-b4a9-3f1591d3b632
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 9
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: ba38095f11a5f40ec6b9a9398217a98f390d146d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: cf0814bacd6c47d86f21709d24acaf2af742f0d5
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768655"
 ---
 # <a name="basic-availability-groups-always-on-availability-groups"></a>Groupes de disponibilité de base (Groupes de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

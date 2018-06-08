@@ -1,35 +1,33 @@
 ---
-title: "Stratégie de basculement automatique flexible - groupe de disponibilité | Microsoft Docs"
-ms.custom: 
+title: Stratégie de basculement automatique flexible - groupe de disponibilité | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], flexible failover policy
 - Availability Groups [SQL Server], failover
 - flexible failover policy
 - failover [SQL Server], AlwaysOn Availability Groups
 ms.assetid: 8c504c7f-5c1d-4124-b697-f735ef0084f0
-caps.latest.revision: "29"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 29
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d7860f367b7bf23aa3e2e58654633b5567625d37
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cbfc71239bee8c013891b13d862d799435444c83
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769115"
 ---
 # <a name="flexible-automatic-failover-policy---availability-group"></a>Stratégie de basculement automatique flexible - groupe de disponibilité
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une stratégie de basculement flexible vous offre un contrôle granulaire sur les conditions qui entraînent le [basculement automatique](../../../database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups.md) d’un groupe de disponibilité. En changeant les conditions d'échec qui déclenchent un basculement automatique et la fréquence des contrôles d'intégrité, vous pouvez augmenter ou diminuer la probabilité d'un basculement automatique pour assurer le contrat de niveau de service relatif à la haute disponibilité.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une stratégie de basculement flexible vous offre un contrôle granulaire sur les conditions qui entraînent le [basculement automatique](../../../database-engine/availability-groups/windows/failover-and-failover-modes-always-on-availability-groups.md) d’un groupe de disponibilité. En changeant les conditions d'échec qui déclenchent un basculement automatique et la fréquence des contrôles d'intégrité, vous pouvez augmenter ou diminuer la probabilité d'un basculement automatique pour assurer le contrat de niveau de service relatif à la haute disponibilité.  
   
  La stratégie de basculement flexible d'un groupe de disponibilité est définie par son niveau de condition et le seuil du délai d'attente de contrôle d'intégrité. Lorsque le dépassement du niveau de condition d'échec ou du seuil du délai d'attente de contrôle d'intégrité d'un groupe de disponibilité est détecté, la DLL de ressource du groupe de disponibilité répond au Clustering de basculement Windows Server (WSFC). Le cluster WSFC initialise un basculement automatique vers le réplica secondaire.  
   

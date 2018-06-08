@@ -1,30 +1,31 @@
 ---
-title: "Zone fonctionnelle Gestion de l’intégration (Master Data Manager) | Microsoft Docs"
-ms.custom: 
+title: Zone fonctionnelle Gestion de l’intégration (Master Data Manager) | Microsoft Docs
+ms.custom: ''
 ms.date: 04/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 41ac0e62-860a-4905-a318-68d6f814fb59
-caps.latest.revision: 
+caps.latest.revision: 11
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 64ac58e07cfbbfb5fd066f31ba10cec3eea4193c
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 1823f8169faff9b8e93f33749b326aa2b35a695e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-management-functional-area-master-data-manager"></a>Zone fonctionnelle Gestion de l'intégration (Master Data Manager)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans la zone fonctionnelle Gestion de l'intégration, les administrateurs peuvent importer les données des tables de mise en lots et créer des vues d'abonnement à utiliser pour les systèmes d'abonnement. Pour plus d’informations sur les administrateurs, consultez [Administrateurs &#40;Master Data Services&#41;](../master-data-services/administrators-master-data-services.md).  
   
 ## <a name="import-data"></a>Importer des données  

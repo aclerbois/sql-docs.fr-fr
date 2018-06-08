@@ -1,34 +1,30 @@
 ---
-title: "Audit Server Object Management, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Server Object Management, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Server Object Management event class
 ms.assetid: 106ffe8d-da60-4b1f-8866-6cef6a5931ad
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a0b72bf95b5726eb0435f176c28423b6a514d285
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e5cf1c4f984984f022163e15897deac414d66dbb
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-server-object-management-event-class"></a>Audit Server Object Management (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements **Audit Server Object Management** se produit dans le cas d'une instruction CREATE, ALTER ou DROP portant sur des objets de serveur.  
+  La classe d'événements **Audit Server Object Management** se produit dans le cas d'une instruction CREATE, ALTER ou DROP portant sur des objets de serveur.  
   
 ## <a name="audit-server-object-management-event-class-data-columns"></a>Colonnes de la classe d'événements Audit Server Object Management  
   

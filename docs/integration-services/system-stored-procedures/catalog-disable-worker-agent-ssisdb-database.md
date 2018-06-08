@@ -1,28 +1,26 @@
 ---
-title: "catalog.disable_worker_agent (base de données SSISDB) | Microsoft Docs"
-ms.custom: 
+title: catalog.disable_worker_agent (base de données SSISDB) | Microsoft Docs
+ms.custom: ''
 ms.date: 12/16/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3f19dc4c-a000-4318-8fe1-e80d56720e66
-caps.latest.revision: 
+caps.latest.revision: 3
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e24b479fbc6205a63efd86371a3ee4e3119b01ee
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 77dbfb829c7c9148d8d27735c070b7ad9f187145
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="catalogdisableworkeragent-ssisdb-database"></a>catalog.disable_worker_agent (base de données SSISDB)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]

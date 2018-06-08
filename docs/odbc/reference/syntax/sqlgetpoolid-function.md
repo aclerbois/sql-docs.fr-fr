@@ -1,28 +1,26 @@
 ---
 title: Fonction de SQLGetPoolID | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLGetPoolID function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLGetPoolID function [ODBC]
 ms.assetid: 95a8666a-ad68-4d89-bf65-f2cc797f8820
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ec2da5abd62e659529eb364c7673317c86f4c97e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 09e2b9b8176c333b893c5cf7ce9157516b2b368d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetpoolid-function"></a>SQLGetPoolID (fonction)
 **Mise en conformité**  
@@ -52,8 +50,8 @@ SQLRETURN  SQLGetPoolID (
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetPoolID** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, le Gestionnaire de pilotes utilisera un **HandleType** de SQL_HANDLE_DBC_INFO_TOKEN et un **gérer** de *hDbcInfoToken*.  
   
-## <a name="remarks"></a>Notes   
- **SQLGetPoolID** est utilisée pour obtenir l’ID du pool reçoit un jeu d’informations de connexion (à partir de **SQLSetConnectAttrForDbcInfo**, **SQLSetDriverConnectInfo**, et **SQLSetConnectInfo**). Ce pool d’ID est utilisé pour identifier un ensemble de connexions qui peuvent être utilisées indifféremment (éventuellement nécessitant une réinitialisation supplémentaire). L’ID du pool sera utilisé pour identifier le pool de connexions pour ce groupe de connexions.  
+## <a name="remarks"></a>Notes  
+ **SQLGetPoolID** est utilisée pour obtenir l’ID du pool reçoit un jeu d’informations de connexion (à partir de **SQLSetConnectAttrForDbcInfo**, **SQLSetDriverConnectInfo**, et  **SQLSetConnectInfo**). Ce pool d’ID est utilisé pour identifier un ensemble de connexions qui peuvent être utilisées indifféremment (éventuellement nécessitant une réinitialisation supplémentaire). L’ID du pool sera utilisé pour identifier le pool de connexions pour ce groupe de connexions.  
   
  Chaque fois qu’un pilote retourne SQL_ERROR ou SQL_INVALID_HANDLE, le Gestionnaire de pilotes retourne l’erreur à l’application (dans [SQLConnect](../../../odbc/reference/syntax/sqlconnect-function.md) ou [SQLDriverConnect](../../../odbc/reference/syntax/sqldriverconnect-function.md)).  
   

@@ -1,16 +1,13 @@
 ---
 title: DBCC CHECKDB (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CHECKDB_TSQL
@@ -37,16 +34,15 @@ helpviewer_keywords:
 - checking database objects
 - page count accuracy [SQL Server]
 ms.assetid: 2c506167-0b69-49f7-9282-241e411910df
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 144
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d2d28362462825c1e39d0a7a41f6a57f810c107e
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 7f270fd58e58b7e6c850a520dff4cd37e2ddb4ec
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-checkdb-transact-sql"></a>DBCC CHECKDB (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

@@ -1,28 +1,24 @@
 ---
 title: Pilote Microsoft ODBC pour SQL Server sur Windows | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 02/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: b10cfc22-6a2c-4707-a456-0dcec317982b
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 990665bcb7091b61bc8579a1a33e30c3cc56874e
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+manager: craigg
+ms.openlocfilehash: e5d818e4ce5c267432e6e456e11720f546ebaa19
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-odbc-driver-for-sql-server-on-windows"></a>Pilote Microsoft ODBC pour SQL Server sur Windows
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -50,7 +46,7 @@ Cette documentation sur Microsoft ODBC Driver for [!INCLUDE[ssNoVersion](../../.
 -   [Exemple d’exécution asynchrone &#40;méthode de notification&#41;](../../../connect/odbc/windows/asynchronous-execution-notification-method-sample.md)  
 -   [Résilience de connexion du pilote ODBC Windows](../../../connect/odbc/windows/connection-resiliency-in-the-windows-odbc-driver.md)  
 -   [Utilisation du chiffrement intégral avec le pilote ODBC](../../../connect/odbc/using-always-encrypted-with-the-odbc-driver.md)
--   [À l’aide d’Azure Active Directory avec le pilote ODBC](../../../connect/odbc/using-azure-active-directory.md) 
+-   [Utilisation d’Azure Active Directory avec ODBC Driver](../../../connect/odbc/using-azure-active-directory.md) 
 -   [À l’aide de la résolution IP réseau Transparent](../../../connect/odbc/using-transparent-network-ip-resolution.md)   
 
 ## <a name="community"></a>Communauté  

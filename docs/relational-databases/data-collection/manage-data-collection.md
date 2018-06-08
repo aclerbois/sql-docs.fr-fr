@@ -1,38 +1,33 @@
 ---
-title: "Gérer la collecte de données | Microsoft Docs"
-ms.custom: 
+title: Gérer la collecte de données | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 keywords:
-- "Collecte de données"
+- Collecte de données
 helpviewer_keywords:
 - data collection [SQL Server]
 - data collector [SQL Server], Transact-SQL
 - data collector [SQL Server], SQL Server Management Studio
 ms.assetid: bc137daa-9f37-4c01-9766-8b7350c75af8
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 26
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f48b2043f77c301cebdc6750d6445063ff121946
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 777204c7192a9b74f8730f47898a3fb175b5c322
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="manage-data-collection"></a>Gérer la collecte de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Vous pouvez utiliser les fonctions et les procédures stockées [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)] pour gérer différents aspects de la collecte de données, tels que l’activation ou la désactivation de la collecte de données, la modification de la configuration d’un jeu d’éléments de collecte ou la consultation des données dans l’entrepôt de données de gestion.  
+ Vous pouvez utiliser les fonctions et les procédures stockées [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] ou [!INCLUDE[tsql](../../includes/tsql-md.md)] pour gérer différents aspects de la collecte de données, tels que l’activation ou la désactivation de la collecte de données, la modification de la configuration d’un jeu d’éléments de collecte ou la consultation des données dans l’entrepôt de données de gestion.  
   
 ## <a name="manage-data-collection-using-ssms"></a>Gérer la collecte de données à l’aide de SSMS  
  Vous pouvez effectuer les tâches suivantes liées au collecteur de données en utilisant l’Explorateur d’objets dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]:  

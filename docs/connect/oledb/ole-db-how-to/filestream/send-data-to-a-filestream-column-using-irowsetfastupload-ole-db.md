@@ -3,32 +3,29 @@ title: Envoyer des données à une colonne FILESTREAM à l’aide d’IRowsetFas
 description: Envoyer des données à une colonne FILESTREAM à l’aide d’IRowsetFastUpload (OLE DB)
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-how-to
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 761cf22f5f305bc921b44d3bef5e80ce213517e9
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 80b8fb122dcdd78575f49c9b2f022f438f4cc206
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="send-data-to-a-filestream-column-using-irowsetfastupload-ole-db"></a>Envoyer des données à une colonne FILESTREAM à l'aide d'IRowsetFastUpload (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
   Cet exemple utilise l'interface IRowsetFastUpload pour envoyer entre 4 Mo et 4 Go de données à une colonne Filestream.  
   
- Pour plus d’informations sur la fonctionnalité filestream, consultez [prise en charge FILESTREAM &#40;OLE DB&#41;](../../../oledb/ole-db/filestream-support-ole-db.md).  
+ Pour plus d’informations sur la fonctionnalité filestream, consultez [prise en charge FILESTREAM](../../../oledb/features/filestream-support.md).  
   
 ## <a name="example"></a>Exemple  
  Avant de compiler et exécuter cet exemple, activer la prise en charge FILESTREAM ([activer et configurer FILESTREAM](../../../../relational-databases/blob/enable-and-configure-filestream.md)).  

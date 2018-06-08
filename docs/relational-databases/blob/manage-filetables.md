@@ -1,35 +1,33 @@
 ---
-title: "Gérer des FileTables | Microsoft Docs"
-ms.custom: 
+title: Gérer des FileTables | Microsoft Docs
+ms.custom: ''
 ms.date: 08/23/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: blob
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-blob
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FileTables [SQL Server], security
 - FileTables [SQL Server], managing access
 ms.assetid: 93af982c-b4fe-4be0-8268-11f86dae27e1
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e59931627ce7c22ccb799f048f04bc77edd49fec
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: cf899960d8e3025c9c7218990260fcbcd1394c87
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-filetables"></a>Gérer des FileTables
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Décrit les tâches d'administration courantes permettant de gérer des FileTables.  
+  Décrit les tâches d'administration courantes permettant de gérer des FileTables.  
   
 ##  <a name="HowToEnumerate"></a> Procédure : obtenir une liste de FileTables et d'objets connexes  
  Pour obtenir une liste de FileTables, interrogez l'un des affichages catalogue suivants :  

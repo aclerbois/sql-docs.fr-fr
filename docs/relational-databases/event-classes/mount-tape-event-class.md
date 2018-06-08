@@ -1,34 +1,30 @@
 ---
-title: "Mount Tape, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Mount Tape, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Mount Tape event class
 ms.assetid: 4c595e0a-d968-47d3-a84f-9b6857342671
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 15fc3c9dff46fc655525feaa604eb8e5a1326e55
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c73c32346a06a95d1e6641858372107529bf7b95
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mount-tape-event-class"></a>Mount Tape (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Mount Tape intervient lors de la réception d'une demande de montage de bande. Cette classe d'événements permet de surveiller les demandes de montage de bande, tout comme leur succès ou leur échec.  
+  La classe d'événements Mount Tape intervient lors de la réception d'une demande de montage de bande. Cette classe d'événements permet de surveiller les demandes de montage de bande, tout comme leur succès ou leur échec.  
   
 ## <a name="mount-tape-event-class-data-columns"></a>Colonnes de données de la classe d'événements Mount Tape  
   

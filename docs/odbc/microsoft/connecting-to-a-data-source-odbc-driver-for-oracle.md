@@ -1,30 +1,27 @@
 ---
-title: "Connexion à une Source de données (le pilote ODBC pour Oracle) | Documents Microsoft"
-ms.custom: 
+title: Connexion à une Source de données (le pilote ODBC pour Oracle) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to data source [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], connecting to data sources
 ms.assetid: f724a9c5-342a-4f4e-a030-ec34f7378eaf
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a2b087ef77a00947c4e270861fffd27108389839
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7c12472544fd843214cab4294311889d0a84010d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-a-data-source-odbc-driver-for-oracle"></a>Connexion à une Source de données (le pilote ODBC pour Oracle)
 > [!IMPORTANT]  

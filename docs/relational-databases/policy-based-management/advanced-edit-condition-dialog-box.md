@@ -1,33 +1,32 @@
 ---
-title: "Modification avancée (Condition), boîte de dialogue | Microsoft Docs"
-ms.custom: 
+title: Modification avancée (Condition), boîte de dialogue | Microsoft Docs
+ms.custom: ''
 ms.date: 08/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dmf.condition.advancededit.f1
 ms.assetid: a0bbe501-78c5-45ad-9087-965d04855663
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6f7d494c40e02e96d53f827e9553c743d72660d0
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 375d21441757d274dbd62bcd94638b03a0ded57f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="advanced-edit-condition-dialog-box"></a>Boîte de dialogue Modification avancée (Condition)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La boîte de dialogue **Modification avancée** permet de créer des expressions complexes pour des conditions de la gestion basée sur des stratégies.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La boîte de dialogue **Modification avancée** permet de créer des expressions complexes pour des conditions de la gestion basée sur des stratégies.  
   
 ## <a name="options"></a>Options  
  **Valeur de cellule**  
@@ -90,15 +89,15 @@ ms.lasthandoff: 01/18/2018
 |**Guid()**|Guid Guid(String *guidString*)|Retourne un GUID à partir d’une chaîne.|*guidString* : représentation sous forme de chaîne du GUID à créer.|Retourne le GUID créé à partir de la chaîne.|`Guid('12340000-0000-3455-0000-000000000454')`|  
 |**IsNull()**|Variant IsNull (Variant *check_expression*, Variant *replacement_value*)|La valeur de *check_expression* est retournée si sa valeur est différente de NULL ; sinon, *replacement_value* est retourné. Si les types sont différents, *replacement_value* est converti implicitement dans le type de *check_expression*.|*check_expression* : expression dans laquelle la valeur NULL est recherchée. *check_expression* peut être de n’importe quel type pris en charge par la gestion basée sur des stratégies : Numeric, String, Bool, DateTime, Array et Guid.<br /><br /> *replacement_value* : expression à retourner si *check_expression* a la valeur NULL. *replacement_value* doit être d’un type qui est implicitement converti dans le type de *check_expression*.|Le type de retour est le type de *check_expression* si *check_expression* n’a pas la valeur NULL ; sinon le type de *replacement_value* est retourné.||  
 |**Len()**|Numeric Len (*string_expression*)|Retourne le nombre de caractères, de l'expression de chaîne donnée, sans espaces blancs de fin.|*string_expression* : expression de chaîne à évaluer.|Retourne une valeur de catégorie de type de données Integer.|`Len('Hello')` retourne `5` dans cet exemple.|  
-|**Lower()**|String Lower (String*_expression*)|Retourne la chaîne après la conversion de toutes les majuscules en minuscules.|*expression* : expression de chaîne source.|Retourne une chaîne qui représente l'expression de chaîne source une fois toutes les majuscules converties en minuscules.|`Len('HeLlO')` retourne `'hello'` dans cet exemple.|  
+|**Lower()**|String Lower (String *_expression*)|Retourne la chaîne après la conversion de toutes les majuscules en minuscules.|*expression* : expression de chaîne source.|Retourne une chaîne qui représente l'expression de chaîne source une fois toutes les majuscules converties en minuscules.|`Len('HeLlO')` retourne `'hello'` dans cet exemple.|  
 |**Mod()**|Numeric Mod (Numeric *expression_dividend*, Numeric *expression_divisor*)|Fournit le reste entier de la division de la première expression numérique par la deuxième expression numérique.|*expression_dividend* : expression numérique à diviser. *expression_dividend* doit être une expression valide de l’un des types de données des catégories de types de données integer (entier) ou numeric (numérique).<br /><br /> *expression_divisor* : expression numérique par laquelle diviser le dividende. *expression_divisor* doit être une expression valide de l’un des types de données des catégories de type de données integer (entier) ou numeric (numérique).|Retourne une valeur de catégorie de type de données Integer.|`Mod(Property1, 3)`|  
 |**Multiply()**|Numeric Multiply (Numeric *expression1*, Numeric *expression2*)|Multiplie deux expressions.|*expression1* et *expression2* : expression valide de l’un des types de données de la catégorie numérique, à l’exception du type de données **datetime** .|Retourne le type de données de l'argument ayant la précédence la plus élevée.|`Multiply(Property1, .20)`|  
 |**Power()**|Numeric Power (Numeric *numeric_expression*, Numeric *expression_power*)|Retourne la valeur de l'expression spécifiée à la puissance indiquée.|*numeric_expression* : expression de la catégorie de type de données numérique exacte ou approximative, à l’exception du type de données bit.<br /><br /> *expression_power* : puissance à laquelle élever *numeric_expression*. *expression_power* peut être une expression de la catégorie de type de données numérique exacte ou approximative, à l’exception du type de données **bit** .|Le type de retour est identique à celui de *numeric_expression*.|`Power(Property1, 3)`|  
 |**Round()**|Numeric Round (Numeric *expression*, Numeric *expression_precision*)|Renvoie une expression numérique, arrondie à la longueur ou à la précision indiquée.|*expression* : expression de la catégorie de type de données numérique exacte ou approximative, à l’exception du type de données **bit** .<br /><br /> *expression_precision* : précision avec laquelle l’expression doit être arrondie. Quand *expression_precision* est un nombre positif, *numeric_expression* est arrondi au nombre de décimales indiqué par length. Quand *expression_precision* est un nombre négatif, *numeric_expression* est arrondi à gauche de la décimale, comme le spécifie *expression_precision*.|Retourne le même type que *numeric_expression*.|`Round(5.333, 0)`|  
-|**String()**|String String (Variant*_expression*)|Convertit une variante en chaîne.|*expression* : expression de type Variant à convertir en chaîne.|Retourne la valeur de l'expression Variant sous forme de chaîne.|`String(4)`|  
+|**String()**|String String (Variant *_expression*)|Convertit une variante en chaîne.|*expression* : expression de type Variant à convertir en chaîne.|Retourne la valeur de l'expression Variant sous forme de chaîne.|`String(4)`|  
 |**Sum()**|Numeric Sum (*VarArgs*)|Retourne la somme de toutes les valeurs dans la liste d'arguments. Sum peut être utilisée avec des valeurs numériques.|*VarArgs*: liste d’expressions de type Variant de la catégorie de types de données de valeur numérique exacte ou approximative, à l’exception du type de données **bit** .|Retourne le total de toutes les valeurs d'expression dans le type de données d'expression le plus précis.<br /><br /> Si le résultat de l'expression est de catégorie **integer**, **numeric**, **money** et **small money**, **float** et **real** , les types de retour sont **int**, **numeric**, **money**et **float**; respectivement.|`Sum(1.0, 2.0, 3.0, 4.0, 5.0)` retourne `15` dans cet exemple.|  
 |**True()**|Bool TRUE()|Retourne la valeur booléenne TRUE.||Retourne la valeur booléenne TRUE.|`IsDatabaseMailEnabled = True()`|  
-|**Upper()**|String Upper (String*_expression*)|Retourne la chaîne après la conversion de toutes les minuscules en majuscules.|*expression* : expression de chaîne source.|Retourne une chaîne qui représente l'expression de chaîne source une fois toutes les minuscules converties en majuscules.|`Upper('HeLlO')` retourne `'HELLO'` dans cet exemple.|  
+|**Upper()**|String Upper (String *_expression*)|Retourne la chaîne après la conversion de toutes les minuscules en majuscules.|*expression* : expression de chaîne source.|Retourne une chaîne qui représente l'expression de chaîne source une fois toutes les minuscules converties en majuscules.|`Upper('HeLlO')` retourne `'HELLO'` dans cet exemple.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Boîte de dialogue Créer une nouvelle condition ou Ouvrir une condition, page Général](../../relational-databases/policy-based-management/create-new-condition-or-open-condition-dialog-box-general-page.md)   

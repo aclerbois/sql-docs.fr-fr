@@ -1,30 +1,27 @@
 ---
-title: "Référence des API de DLL d’installation | Documents Microsoft"
-ms.custom: 
+title: Référence des API de DLL d’installation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC drivers [ODBC], driver setup DLL
 - driver setup DLL [ODBC]
 ms.assetid: f9d03f17-1c0d-4e7c-9c04-8c316e07ef25
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 953fbdf89defc5b17e3899cad3ec2077c693df9d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fa09dad7423a56db064ade504f3b6598f3daf4ff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setup-dll-api-reference"></a>Référence des API de DLL d’installation
 Cette section décrit la syntaxe de l’API de DLL, qui se compose de deux fonctions d’installation du pilote (**ConfigDriver** et **ConfigDSN**). **ConfigDriver** et **ConfigDSN** peut se trouver dans la DLL du pilote ou dans une fonction DLL d’installation.  

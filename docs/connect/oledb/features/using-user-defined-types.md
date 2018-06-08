@@ -3,14 +3,12 @@ title: À l’aide des Types définis par l’utilisateur | Documents Microsoft
 description: À l’aide des Types définis par l’utilisateur avec le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|features
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -26,13 +24,12 @@ helpviewer_keywords:
 - ISSCommandWithParameters interface
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ab7235c1b9f1bd9155fc949df39c2b0995ba0b63
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 06f444fed839be02320351f1f3862e42500df66f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-user-defined-types"></a>Utilisation des types définis par l'utilisateur
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -50,9 +47,9 @@ ms.lasthandoff: 03/30/2018
 ### <a name="data-bindings-and-coercions"></a>Liaisons de données et forçages de type  
  Le tableau suivant décrit la liaison et le forçage de type survenant lorsque vous utilisez les types de données répertoriés avec un UDT [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Les colonnes UDT sont exposées via le pilote OLE DB pour SQL Server sous la forme DBTYPE_UDT. Vous pouvez obtenir les métadonnées par le biais des ensembles de lignes de schéma appropriés et ainsi gérer en tant qu'objets vos propres types définis.  
   
-|Type de données|Vers le serveur<br /><br /> **UDT**|Vers le serveur<br /><br /> **non-UDT**|Depuis le serveur<br /><br /> **UDT**|Depuis le serveur<br /><br /> **non-UDT**|  
+|Type de données|Vers le serveur<br /><br /> **UDT**|Vers le serveur<br /><br /> **non UDT**|Depuis le serveur<br /><br /> **UDT**|Depuis le serveur<br /><br /> **non UDT**|  
 |---------------|---------------------------|--------------------------------|-----------------------------|----------------------------------|  
-|DBTYPE_UDT|Prise en charge<sup>6</sup>|Erreur<sup>1</sup>|Prise en charge<sup>6</sup>|Error<sup>5</sup>|  
+|DBTYPE_UDT|Prise en charge<sup>6</sup>|Erreur<sup>1</sup>|Prise en charge<sup>6</sup>|Erreur<sup>5</sup>|  
 |DBTYPE_BYTES|Prise en charge<sup>6</sup>|N/A<sup>2</sup>|Prise en charge<sup>6</sup>|N/A<sup>2</sup>|  
 |DBTYPE_WSTR|Prise en charge<sup>3,6</sup>|N/A<sup>2</sup>|Prise en charge<sup>4,6</sup>|N/A<sup>2</sup>|  
 |DBTYPE_BSTR|Prise en charge<sup>3,6</sup>|N/A<sup>2</sup>|Prise en charge<sup>4</sup>|N/A<sup>2</sup>|  
@@ -199,6 +196,6 @@ ms.lasthandoff: 03/30/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Pilote de base de données OLE pour les fonctionnalités SQL Server](../../oledb/features/oledb-driver-for-sql-server-features.md)    
- [ISSCommandWithParameters &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/isscommandwithparameters-ole-db.md)  
+ [ISSCommandWithParameters & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/isscommandwithparameters-ole-db.md)  
   
   

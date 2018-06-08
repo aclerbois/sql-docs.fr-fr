@@ -1,35 +1,20 @@
 ---
-title: "À propos de SQL Server Analysis Services | Documents Microsoft"
-ms.date: 02/21/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-helpviewer_keywords:
-- Analysis Services, about Analysis Services - Multidimensional Data
-- SSAS
-- Analysis Services
-- SQL Server Analysis Services, about Analysis Services - Multidimensional Data
-- SQL Server Analysis Services
-- multidimensional data [Analysis Services]
-- SSAS, about Analysis Services - Multidimensional Data
-ms.assetid: 49d186f4-4b4d-4a5a-bb1a-e2699c64a731
-caps.latest.revision: 
-author: Minewiskan
+title: À propos de SQL Server Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: overview
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: fd94610fce0fb4c9329cc0725b3f8c54f9c6b9fe
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 704c2f1638676bd838c7aac367a1b610143fd85d
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707037"
 ---
 # <a name="about-sql-server-analysis-services"></a>À propos de SQL Server Analysis Services
 

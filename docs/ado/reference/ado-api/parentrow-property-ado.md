@@ -1,17 +1,15 @@
 ---
-title: "ParentRow, propriété (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: ParentRow, propriété (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - ADORecordConstruction::put_ParentRow
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - ParentRow property [ADO]
 ms.assetid: 5ea8029b-eda4-490b-ae84-2ad036fb582f
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1305304afaa06f8e96dc4160b466d87271f537d9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 91a84b0c34a29858ec18f241db3d5c792075a766
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parentrow-property-ado"></a>ParentRow, propriété (ADO)
 Définit le conteneur d’OLE DB **ligne** de l’objet sur un **ADORecordConstruction** de l’objet, afin que le parent de la ligne est activé dans ADO **enregistrement** objet.  

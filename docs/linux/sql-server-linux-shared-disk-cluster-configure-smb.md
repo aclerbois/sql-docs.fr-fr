@@ -1,24 +1,21 @@
 ---
 title: Configurer le stockage instance cluster de basculement SMB - SQL Server sur Linux | Documents Microsoft
-description: 
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 08/28/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: Inactive
-ms.openlocfilehash: 704cb4dfb96a2293bf1a595fda781519b70183cb
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.technology: linux
+ms.openlocfilehash: b762740be742aa2d716b9d354c26fe87bb170732
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-failover-cluster-instance---smb---sql-server-on-linux"></a>Configuration d’instance de cluster de basculement - SMB - SQL Server sur Linux
 
@@ -39,7 +36,7 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
 
 ## <a name="instructions"></a>Instructions
 
-1.  Dans la configuration ICF, choisissez un des serveurs participant à la. Quel que soit l’application.
+1.  Choisissez un des serveurs (peu importe lequel) qui participera à la configuration de l'instance de cluster de basculement. Peu importe lequel.
 
 2.  Obtenir des informations relatives à l’utilisateur mssql.
 
@@ -63,19 +60,19 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
     sudo systemctl status mssql-server
     ```
 
-   *    Commutateur entièrement le super utilisateur. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Basculez entièrement en super utilisateur. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     sudo -i
     ```
 
-   *    Basculer vers l’utilisateur mssql. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Basculez vers l’utilisateur mssql. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     su mssql
     ```
 
-   *    Créez un répertoire temporaire pour stocker les données de SQL Server et les fichiers journaux. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Créez un répertoire temporaire pour stocker les données de SQL Server et les fichiers journaux. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     mkdir <TempDir>
@@ -87,7 +84,7 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
     mkdir /var/opt/mssql/tmp
     ```
 
-   *    Copiez les fichiers journaux et de données de SQL Server dans le répertoire temporaire. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Copiez les fichiers journaux et de données de SQL Server dans le répertoire temporaire. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     cp /var/opt/mssql/data/* <TempDir>
@@ -103,7 +100,7 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
 
     \<TempDir > est le nom du dossier à partir de l’étape d.
     
-   *    Supprimez les fichiers à partir du répertoire de données SQL Server existant. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Supprimez les fichiers à partir du répertoire de données SQL Server existant. Vous ne recevrez pas d’accusé de réception en cas de réussite.
  
     ```bash
     rm – f /var/opt/mssql/data/*
@@ -117,7 +114,7 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
  
    *    Tapez exit pour revenir à l’utilisateur racine.
 
-   *    Montez le partage SMB dans le dossier de données SQL Server. Vous ne recevrez pas tout accusé de réception en cas de réussite. Cet exemple montre la syntaxe permettant de se connecter à un partage Windows serveur SMB 3.0.
+   *    Montez le partage SMB dans le dossier de données SQL Server. Vous ne recevrez pas d’accusé de réception en cas de réussite. Cet exemple montre la syntaxe permettant de se connecter à un partage Windows serveur SMB 3.0.
 
     ```bash
     Mount -t cifs //<ServerName>/<ShareName> /var/opt/mssql/data -o vers=3.0,username=<UserName>,password=<Password>,domain=<domain>,uid=<mssqlUID>,gid=<mssqlGID>,file_mode=0777,dir_mode=0777
@@ -135,21 +132,21 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
 
     \<mssqlUID > est l’UID de l’utilisateur mssql 
  
-    \<mssqlGID > est codé de l’utilisateur mssql
+    \<mssqlGID > est le GID de l’utilisateur mssql
  
-   *    Vérifiez que le montage a réussi en émettant un montage sans commutateurs.
+   *    Vérifiez que le montage a réussi en émettant une commande mount sans commutateurs.
 
     ```bash
     mount
     ```
  
-   *    Basculez vers l’utilisateur mssql. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Basculez vers l’utilisateur mssql. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     su mssql
     ```
 
-   *    Copiez les fichiers à partir du répertoire temporaire /var/opt/mssql/data. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Copiez les fichiers à partir du répertoire temporaire /var/opt/mssql/data. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     cp /var/opt/mssql/tmp/* /var/opt/mssql/data
@@ -161,11 +158,11 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
     ls /var/opt/mssql/data
     ```
 
-   *    Entrez exit pour ne pas être mssql 
+   *    Entrez exit pour ne plus être mssql 
 
-   *    Entrez exit pour être racine
+   *    Entrez exit pour ne plus être root
 
-   *    Démarrez SQL Server. Si tout a été correctement copié et sécurité appliquée, SQL Server doit afficher correctement a démarré.
+   *    Démarrez SQL Server. Si tout a été correctement copié et la sécurité appliquée, SQL Server doit s'afficher comme démarré.
 
     ```bash
     sudo systemctl start mssql-server
@@ -176,7 +173,7 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
 
     ![10_testcreatedb][2] 
   
-   *    Arrêt de SQL Server et vérifiez qu’il est arrêté. Si vous vous apprêtez à ajouter ou autres disques de test, n’arrêtez pas SQL Server jusqu'à ce que ceux sont ajoutés et testés.
+   *    Arrêtez SQL Server et vérifiez qu’il est arrêté. Si vous vous apprêtez à ajouter ou autres disques de test, n’arrêtez pas SQL Server jusqu'à ce que ceux sont ajoutés et testés.
 
     ```bash
     sudo systemctl stop mssql-server
@@ -195,9 +192,9 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
     
     \<FolderMountedIn > est le nom du dossier où est monté SMB
 
-5.  Pour les éléments autres que des bases de données système, telles que les bases de données utilisateur ou des sauvegardes, procédez comme suit. Si uniquement à l’aide de l’emplacement par défaut, passez à l’étape 14.
+5.  Pour les éléments autres que les bases de données système, tels que les bases de données utilisateur ou les sauvegardes, suivez ces étapes. Si vous utilisez uniquement l’emplacement par défaut, passez à l’étape 14.
     
-   *    Commutateur le super utilisateur. Vous ne recevrez pas tout accusé de réception en cas de réussite.
+   *    Passez en mode superutilisateur. Vous ne recevrez pas d’accusé de réception en cas de réussite.
 
     ```bash
     sudo -i
@@ -209,13 +206,13 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
     mkdir <FolderName>
     ```
 
-    \<Nom_dossier > est le nom du dossier. Le chemin du dossier complet doit être spécifié sinon dans l’emplacement approprié. L’exemple suivant crée un dossier nommé /var/opt/mssql/userdata.
+    \<Nom_dossier > est le nom du dossier. Le chemin du dossier complet doit être spécifié s'il n'est pas au bon emplacement. L’exemple suivant crée un dossier nommé /var/opt/mssql/userdata.
 
     ```bash
     mkdir /var/opt/mssql/userdata
     ```
 
-   *    Montez le partage SMB dans le dossier de données SQL Server. Vous ne recevrez pas tout accusé de réception en cas de réussite. Cet exemple montre la syntaxe permettant de se connecter à un partage en fonction de Samba SMB 3.0.
+   *    Montez le partage SMB dans le dossier de données SQL Server. Vous ne recevrez pas d’accusé de réception en cas de réussite. Cet exemple montre la syntaxe permettant de se connecter à un partage en fonction de Samba SMB 3.0.
 
     ```bash
     Mount -t cifs //<ServerName>/<ShareName> <FolderName> -o vers=3.0,username=<UserName>,password=<Password>,uid=<mssqlUID>,gid=<mssqlGID>,file_mode=0777,dir_mode=0777
@@ -235,9 +232,9 @@ Voici quelques conseils et les remarques à l’utilisation de SMB :
 
     \<mssqlGID > est codé de l’utilisateur mssql.
  
-   * Vérifiez que le montage a réussi en émettant un montage sans commutateurs.
+   * Vérifiez que le montage a réussi en émettant une commande mount sans commutateurs.
  
-   * Type de sortie ne peut plus être le super utilisateur.
+   * Tapez exit pour ne plus plus être super utilisateur.
 
    * Pour tester, créez une base de données dans ce dossier. L’exemple suivant utilise sqlcmd pour créer une base de données, basculer vers elle, vérifiez les fichiers existent au niveau du système d’exploitation, puis supprime l’emplacement temporaire. Vous pouvez utiliser SSMS.
  

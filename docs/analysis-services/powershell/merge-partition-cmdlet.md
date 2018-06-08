@@ -1,30 +1,23 @@
 ---
 title: Applet de commande Merge-Partition | Documents Microsoft
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 15c7b069-897d-4bc8-a808-59cbeeabe4d8
-caps.latest.revision: "9"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 897104785c82686879a83811d070c3e1ce8391ae
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: f78b946367c6bff01ab233cf5f4382ee3b9057e0
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="merge-partition-cmdlet"></a>Applet de commande Merge-Partition
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Fusionne les données d’une ou plusieurs partitions sources dans une partition cible, puis supprime les partitions sources.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Fusionne les données d'une ou de plusieurs partitions sources dans une partition cible, puis supprime les partitions sources.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -34,7 +27,7 @@ ms.lasthandoff: 01/08/2018
   
  `Merge-ASDatabase -TargetPartition <Microsoft.AnalysisServices.Partition> [-SourcePartitions] <System.String[]> -Database <string> -Cube <string> -MeasureGroup <string> [-Server <string>] [-Credentials <PSCredential>] [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L'applet de commande Merge-Partition fusionne les données d'une ou de plusieurs partitions sources dans une partition cible, puis supprime les partitions sources. Les partitions ne peuvent être fusionnées que si elles répondent à tous les critères suivants :  
   
 -   les partitions se trouvent dans le même groupe de mesures ;  
@@ -62,7 +55,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
@@ -112,7 +105,7 @@ ms.lasthandoff: 01/08/2018
 |Accepter les caractères génériques ?|false|  
   
 ### <a name="-credential-pscredential"></a>-Credential \<PSCredential >  
- Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40; IIS &#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
+ Ce paramètre est utilisé pour transmettre un nom d'utilisateur et un mot de passe lors de l'utilisation d'une connexion HTTP à une instance Analysis Services, pour une instance que vous avez configurée pour l'accès HTTP. Pour plus d’informations, consultez [configurer l’accès HTTP à Analysis Services sur Internet Information Services &#40;IIS&#41; 8.0](../../analysis-services/instances/configure-http-access-to-analysis-services-on-iis-8-0.md) pour les connexions HTTP.  
   
  Si ce paramètre est indiqué, le nom d'utilisateur et le mot de passe seront utilisés pour la connexion à l'instance du serveur d'analyse spécifiée. Si aucune information d'identification n'est indiquée, le compte Windows par défaut de l'utilisateur qui exécute l'outil sera utilisé.  
   
@@ -146,7 +139,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Entrées|System.string|  
-|Sorties|None|  
+|Sorties|Aucun|  
   
 ## <a name="example-1"></a>Exemple 1  
  `PS SQL SERVER:\sqlas\locahost\default\Databases\AWTEST\Cubes\Adventure Works\MeasureGroups\sales orders\partitions> $Source=”Total_Orders_2001”, “Total_Orders_2002”, “Total_Orders_2003”` `PS SQL SERVER:\sqlas\locahost\default\Databases\AWTEST\Cubes\Adventure Works\MeasureGroups\sales orders\partitions> Merge-Partition –Name “Total_Orders_2004” –SourcePartitions:$Source –database “AWTEST” –cube “Adventure Works” –MeasureGroup “Sales Orders”`  

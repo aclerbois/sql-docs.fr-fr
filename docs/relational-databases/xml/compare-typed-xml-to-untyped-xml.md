@@ -1,17 +1,15 @@
 ---
-title: "Comparer du XML typé et du XML non typé | Microsoft Docs"
-ms.custom: 
+title: Comparer du XML typé et du XML non typé | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - xml data type [SQL Server], variables
 - parameters [XML in SQL Server]
@@ -28,20 +26,19 @@ helpviewer_keywords:
 - XML [SQL Server], untyped
 - xml data type [SQL Server], parameters
 ms.assetid: 4bc50af9-2f7d-49df-bb01-854d080c72c7
-caps.latest.revision: 
+caps.latest.revision: 57
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b40976e2a8efdaf0b41ede4f79786060b7e1163c
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: b5727a822ade990d730642f4413cbdead5ffdb64
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="compare-typed-xml-to-untyped-xml"></a>Comparer du XML typé et du XML non typé
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Vous pouvez créer des variables, des paramètres et des colonnes du type **xml** . Vous pouvez éventuellement associer une collection de schémas XML à une variable, un paramètre ou une colonne de type **xml** . Dans ce cas, l'instance de type de données **xml** est dite *typée*. Dans le cas contraire, l'instance XML est dite *non typée*.  
+  Vous pouvez créer des variables, des paramètres et des colonnes du type **xml** . Vous pouvez éventuellement associer une collection de schémas XML à une variable, un paramètre ou une colonne de type **xml** . Dans ce cas, l'instance de type de données **xml** est dite *typée*. Dans le cas contraire, l'instance XML est dite *non typée*.  
   
 ## <a name="well-formed-xml-and-the-xml-data-type"></a>Code XML bien formé et le type de données xml  
  Le type de données **xml** implémente le type de données **xml** de norme ISO. Par conséquent, il peut stocker des documents bien formés en conformité avec XML version 1.0, ainsi que des fragments de contenu XML avec des nœuds de texte et un nombre arbitraire d'éléments de premier niveau dans une colonne XML non typée. Le système vérifie que les données sont bien formées, n'exige pas l'association de schémas XML avec la colonne, puis rejette les données mal formées au sens large. Il peut aussi s'agir de variables et de paramètres XML non typés.  

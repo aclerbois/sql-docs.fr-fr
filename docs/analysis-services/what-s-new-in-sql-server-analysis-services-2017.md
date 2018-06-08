@@ -1,25 +1,19 @@
 ---
-title: "Nouveautés de SQL Server 2017 Analysis Services | Documents Microsoft"
-ms.date: 10/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.topic: article
-ms.assetid: 1eb6afc9-76ed-45a2-a188-374a4fc23224
-author: Minewiskan
+title: Nouveautés de SQL Server 2017 Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 5c393f9de5b85dbba3ae02e2614513e875496490
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: c05e5d59dd303f6f0c74eaab0e749fe6c8252f32
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="whats-new-in-sql-server-2017-analysis-services"></a>Nouveautés de SQL Server 2017 Analysis Services
 [!INCLUDE[ssas-appliesto-sql2017](../includes/ssas-appliesto-sql2017.md)]

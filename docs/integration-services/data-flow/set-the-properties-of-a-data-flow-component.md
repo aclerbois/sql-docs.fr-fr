@@ -1,30 +1,28 @@
 ---
-title: "Définir les propriétés d’un composant de flux de données | Microsoft Docs"
-ms.custom: 
+title: Définir les propriétés d’un composant de flux de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - components [Integration Services], properties
 ms.assetid: 73000ef6-52a2-4dec-8320-0e79acf0c2c5
-caps.latest.revision: 
+caps.latest.revision: 50
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e3dc5886a1328d8262a35d01cd5a1301ee3ffd56
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 2a159f57e4315cba3f9eb3ee2d27cfffb94fb6f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-the-properties-of-a-data-flow-component"></a>Définir les propriétés d’un composant de flux de données
   Pour définir les propriétés de composants de flux de données, qui incluent des sources, des destinations et des transformations, utilisez l'une des fonctionnalités suivantes :  

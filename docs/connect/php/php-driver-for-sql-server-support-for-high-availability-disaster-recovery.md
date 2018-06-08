@@ -1,28 +1,25 @@
 ---
 title: Prise en charge pour la haute disponibilité, récupération d’urgence pour les pilotes Microsoft SQL Server pour PHP | Documents Microsoft
 ms.custom: ''
-ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.date: 04/04/2018
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 73a80821-d345-4fea-b076-f4aabeb4af3e
-caps.latest.revision: ''
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ee0be974c5998d531e20ed64c871ca85892aa46f
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 11352389bb76440bfec32eae185d64550c249fc8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="support-for-high-availability-disaster-recovery"></a>Prise en charge des fonctionnalités de récupération d’urgence/haute disponibilité
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -73,29 +70,11 @@ Une erreur de connexion se produit si les mots clés de connexion **MultiSubnetF
 Si vous mettez à niveau un [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)] application qui utilise actuellement la mise en miroir de base de données à un scénario de sous-réseaux multiples, vous devez supprimer la **Failover_Partner** propriété de connexion et remplacez-la par **MultiSubnetFailover**  la valeur **Oui** et remplacez le nom du serveur dans la chaîne de connexion avec un écouteur de groupe de disponibilité. Si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover = true**, le pilote génère une erreur. Toutefois, si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover = false** (ou **ApplicationIntent = ReadWrite**), l’application utilise la base de données mise en miroir.  
   
 Le pilote retournera une erreur si la mise en miroir de base de données est utilisée sur la base de données primaire dans le groupe de disponibilité et si **MultiSubnetFailover = true** est utilisé dans la chaîne de connexion qui se connecte à une base de données principale au lieu d’un groupe de disponibilité écouteur.  
-  
-## <a name="specifying-application-intent"></a>Spécification de l'intention d'application  
-Quand **ApplicationIntent=ReadOnly**, le client demande une charge de travail en lecture lors de la connexion à une base de données prenant en charge AlwaysOn. Le serveur applique l'intention au moment de la connexion et pendant une instruction de base de données USE mais uniquement sur une base de données prenant en charge AlwaysOn.  
-  
-Le mot clé **ApplicationIntent** ne fonctionne pas avec les bases de données en lecture seule existantes.  
-  
-Une base de données peut autoriser ou interdire les charges de travail en lecture sur la base de données AlwaysOn ciblée. (Utilisez la clause **ALLOW_CONNECTIONS** des instructions **PRIMARY_ROLE** et **SECONDARY_ROLE**[!INCLUDE[tsql](../../includes/tsql_md.md)].)  
-  
-Le mot clé **ApplicationIntent** est utilisé pour activer le routage en lecture seule.  
-  
-## <a name="read-only-routing"></a>Routage en lecture seule  
-Le routage en lecture seule est une fonctionnalité qui permet de garantir la disponibilité d'un réplica de base de données en lecture seule. Pour activer le routage en lecture seule :  
-  
-1.  Vous devez vous connecter à un écouteur du groupe de disponibilité Always On.  
-  
-2.  Dans la chaîne de connexion, le mot clé **ApplicationIntent** doit avoir la valeur **ReadOnly**.  
-  
-3.  Le groupe de disponibilité doit être configuré par l'administrateur de base de données pour activer le routage en lecture seule.  
-  
-Il est possible que plusieurs connexions utilisant le routage en lecture seule ne se connectent pas toutes au même réplica en lecture seule. Les modifications apportées à la synchronisation de base de données ou à la configuration du routage du serveur peuvent entraîner des connexions clientes à différents réplicas en lecture seule. Pour vérifier que toutes les demandes en lecture seule se connectent au même réplica en lecture seule, ne transmettez pas d’écouteur du groupe de disponibilité au mot clé de chaîne de connexion **Server**. Au lieu de cela, spécifiez le nom de l'instance en lecture seule.  
-  
-Le routage en lecture seule peut prendre plus longtemps que la connexion à la base de données principale, car il se connecte d'abord à la base de données principale, puis recherche la meilleure base de données secondaire accessible disponible. Dans ce cas, le délai de connexion doit être augmenté.  
-  
+
+
+[!INCLUDE[specify-application-intent_read-only-routing](~/includes/paragraph-content/specify-application-intent-read-only-routing.md)]
+
+
 ## <a name="see-also"></a>Voir aussi  
 [Connexion au serveur](../../connect/php/connecting-to-the-server.md)  
   

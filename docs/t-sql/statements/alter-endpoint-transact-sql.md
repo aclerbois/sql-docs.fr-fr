@@ -1,16 +1,14 @@
 ---
 title: ALTER ENDPOINT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER ENDPOINT
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - modifying endpoints
 - endpoints [SQL Server], modifying
 ms.assetid: 70f35566-30cf-47c6-8394-dfe5d71629d3
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 56
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f33dfa3c49397a5f69a59420b74e3cfdeae25857
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: cbb49c1753cb486fb4a2fa289df74db0a0bc8bce
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-endpoint-transact-sql"></a>ALTER ENDPOINT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ ms.lasthandoff: 01/25/2018
 > [!NOTE]  
 >  Cette rubrique décrit la syntaxe et les arguments spécifiques à ALTER ENDPOINT. Pour obtenir la description des arguments communs à CREATE ENDPOINT et à ALTER ENDPOINT, consultez [CREATE ENDPOINT &#40;Transact-SQL&#41;](../../t-sql/statements/create-endpoint-transact-sql.md).  
   
- Les services web XML natifs (points de terminaison HTTP/SOAP) sont supprimés depuis [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)].  
+ Les services Web XML natifs (points de terminaison HTTP/SOAP) sont supprimés à compter de [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)].  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -125,7 +122,7 @@ FOR DATABASE_MIRRORING (
  Pour obtenir des informations sur le choix d’un algorithme de chiffrement à utiliser avec un point de terminaison, consultez [Choisir un algorithme de chiffrement](../../relational-databases/security/encryption/choose-an-encryption-algorithm.md).  
   
 > [!NOTE]  
->  L'algorithme RC4 est uniquement pris en charge pour des raisons de compatibilité descendante. Le nouveau matériel ne peut être chiffré à l'aide de RC4 ou de RC4_128 que lorsque la base de données se trouve dans le niveau de compatibilité 90 ou 100. (Non recommandé.) Utilisez à la place un algorithme plus récent, tel qu'un des algorithmes AES. Dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et les versions ultérieures, le matériel chiffré à l’aide de RC4 ou de RC4_128 peut être déchiffré dans n’importe quel niveau de compatibilité.  
+>  L'algorithme RC4 est uniquement pris en charge pour des raisons de compatibilité descendante. Le nouveau matériel ne peut être chiffré à l'aide de RC4 ou de RC4_128 que lorsque la base de données se trouve dans le niveau de compatibilité 90 ou 100. (Non recommandé.) Utilisez à la place un algorithme plus récent, tel qu'un des algorithmes AES. Dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] et versions ultérieures, le matériel chiffré à l’aide de RC4 ou de RC4_128 peut être déchiffré dans n’importe quel niveau de compatibilité.  
 >   
 >  RC4 est un algorithme relativement faible et AES est un algorithme relativement fort. Toutefois, AES est considérablement plus lent que RC4. Si vous considérez que la sécurité est une priorité plus importante que la vitesse, nous vous recommandons d'utiliser AES.  
   

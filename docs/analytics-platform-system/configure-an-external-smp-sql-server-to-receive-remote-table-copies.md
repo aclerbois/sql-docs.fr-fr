@@ -1,30 +1,23 @@
 ---
-title: Configurer le serveur SQL SMP externes pour recevoir des Copies de la Table distante (PDW)
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/13/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 6bbd2ed6-064e-4b45-b67b-608dc0f2b2bc
-caps.latest.revision: "13"
-ms.openlocfilehash: 18b61d60e8ca771feab84b24a9ff53cc7bdfc193
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Configurer SQL Server pour recevoir une copie de la table distante - Parallel Data Warehouse | Documents Microsoft
+description: Décrit comment configurer une instance de SQL Server de SMP externe pour recevoir des copies de la table distante à partir de Parallel Data Warehouse.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: ae6799d468d57dec04046b443c613823c0a8cb8c
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="configure-an-external-smp-sql-server-to-receive-remote-table-copies"></a>Configurer un serveur SQL SMP externes pour recevoir une copie de la Table distante
-Décrit comment configurer une instance de SQL Server externe pour recevoir des copies de la table distante de SQL Server PDW.  
-  
+# <a name="configure-an-external-smp-sql-server-to-receive-remote-table-copies---parallel-data-warehouse"></a>Configurer un serveur SQL de SMP externe pour recevoir une copie de la table distante - Parallel Data Warehouse
+Décrit comment configurer une instance de SQL Server externe pour recevoir des copies de la table distante à partir de Parallel Data Warehouse.  
+
 Cette rubrique décrit l’une des étapes de configuration pour la configuration de copie de la table distante. Pour obtenir la liste de toutes les étapes de configuration, consultez [copie distante de la Table](remote-table-copy.md).  
   
 ## <a name="before-you-begin"></a>Avant de commencer  

@@ -1,27 +1,26 @@
 ---
-title: "Utiliser des paramètres table (ODBC) | Documents Microsoft"
-ms.custom: 
+title: Utiliser des paramètres table (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-how-to
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 6f8da6ab-9de6-4d0a-9b7e-acb76a50a2e7
-caps.latest.revision: 
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 38afc089178d7428e6f28f5639ed195ea9c561f5
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 087b079a545d867c77fa3bf64d418c00ad1cf09e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-table-valued-parameters-odbc"></a>Utiliser des paramètres table (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -29,7 +28,7 @@ ms.lasthandoff: 01/25/2018
 
   Cet exemple indique comment utiliser les paramètres table pour insérer plusieurs lignes à plusieurs colonnes, avec un seul appel au serveur.  
   
- Pour plus d’informations sur les paramètres table, consultez [paramètres table &#40; ODBC &#41;](../../relational-databases/native-client-odbc-table-valued-parameters/table-valued-parameters-odbc.md). Pour obtenir des exemples supplémentaires sur les paramètres table, consultez [ODBC Table-Valued Parameter Programming Examples](http://msdn.microsoft.com/library/3f52b7a7-f2bd-4455-b79e-d015fb397726).  
+ Pour plus d’informations sur les paramètres table, consultez [paramètres table & #40 ; ODBC & #41 ;](../../relational-databases/native-client-odbc-table-valued-parameters/table-valued-parameters-odbc.md). Pour obtenir des exemples supplémentaires sur les paramètres table, consultez [ODBC Table-Valued Parameter Programming Examples](http://msdn.microsoft.com/library/3f52b7a7-f2bd-4455-b79e-d015fb397726).  
   
 ## <a name="example"></a>Exemple  
  Vous aurez besoin d'une source de données ODBC appelée TVPDemo. La base de données par défaut pour TVPDemo peut être n'importe quelle base de données de test sur votre ordinateur. Cette source de données doit être basée sur le pilote ODBC pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client.  

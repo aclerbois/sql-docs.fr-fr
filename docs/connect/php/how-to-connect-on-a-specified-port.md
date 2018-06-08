@@ -2,29 +2,26 @@
 title: 'Comment : se connecter sur un Port spécifié | Documents Microsoft'
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to the server, specifying a port
 ms.assetid: 65a154d1-375c-439b-a653-7815c9d70ff3
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0b3c8f76026c7065cf6d790b323f559e1b101126
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 4c744ded8b11ea659d632e996a611edb5e2ec70c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-connect-on-a-specified-port"></a>Procédure : se connecter sur un port spécifié
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

@@ -1,28 +1,26 @@
 ---
-title: PDOStatement::bindParam | Microsoft Docs
+title: PDOStatement::bindParam | Documents Microsoft
 ms.custom: ''
-ms.date: 10/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.date: 05/22/2018
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 65212058-2632-47a4-ba7d-2206883abf09
-caps.latest.revision: ''
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0d4dea9ea34f0a2b41db42f641b89ea074139643
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 476030f5a5f08b2226036b5214ebc973a8a04b3a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563937"
 ---
 # <a name="pdostatementbindparam"></a>PDOStatement::bindParam
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -47,7 +45,7 @@ $*longueur*: une longueur (entier) facultatif du type de données. Vous pouvez s
   
 $*driver_options*: les options spécifiques au pilote de (mixtes) facultatif. Par exemple, vous pouvez spécifier PDO::SQLSRV_ENCODING_UTF8 pour lier la colonne à une variable en tant que chaîne encodée au format UTF-8.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
 TRUE en cas de réussite ; sinon, FALSE.  
   
 ## <a name="remarks"></a>Notes  
@@ -105,6 +103,9 @@ echo $input1;
 ?>  
 ```  
   
+> [!NOTE]
+> Lors de la liaison d’un paramètre de sortie à un type bigint, si la valeur peut finir à l’extérieur de la plage d’un [entier](../../t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql.md), à l’aide de PDO::PARAM_INT avec PDO::SQLSRV_PARAM_OUT_DEFAULT_SIZE peut entraîner une exception « valeur hors limites ». Par conséquent, utilisez à la place de la valeur par défaut PDO::PARAM_STR et indiquent la taille de la chaîne finale résultante, qui contient au moins 21. Il est le nombre maximal de chiffres, y compris le signe négatif, de n’importe quelle valeur bigint. 
+
 ## <a name="example"></a>Exemple  
 Cet exemple de code montre comment utiliser un paramètre d’entrée/sortie.  
   
@@ -125,7 +126,7 @@ Cet exemple de code montre comment utiliser un paramètre d’entrée/sortie.
 ```  
 
 > [!NOTE]
-> Il est recommandé d’utiliser des chaînes en tant qu’entrées lors de la liaison de valeurs à un [colonne decimal ou numeric](https://docs.microsoft.com/en-us/sql/t-sql/data-types/decimal-and-numeric-transact-sql) pour vérifier la précision et l’exactitude que PHP est limitée à la précision pour [nombres à virgule flottante](http://php.net/manual/en/language.types.float.php).
+> Il est recommandé d’utiliser des chaînes en tant qu’entrées lors de la liaison de valeurs à un [colonne decimal ou numeric](../../t-sql/data-types/decimal-and-numeric-transact-sql.md) pour vérifier la précision et l’exactitude que PHP est limitée à la précision pour [nombres à virgule flottante](http://php.net/manual/en/language.types.float.php). Va de même pour des colonnes bigint, en particulier lorsque les valeurs sont en dehors de la plage d’un [entier](../../t-sql/data-types/int-bigint-smallint-and-tinyint-transact-sql.md).
 
 ## <a name="example"></a>Exemple  
 Cet exemple de code montre comment lier une valeur décimale en tant que paramètre d’entrée.  

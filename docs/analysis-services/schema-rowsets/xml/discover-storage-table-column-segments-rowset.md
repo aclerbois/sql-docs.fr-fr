@@ -1,33 +1,23 @@
 ---
 title: Ensemble de lignes DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS | Documents Microsoft
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-ms.assetid: 3e514715-9fe6-4e6a-accb-4149ffd7e0bf
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 878568721816c90e202727dc3e516370f9c3ee56
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: bd9c481ea5d34dcf4b8dd478000c564ff6c996ab
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discoverstoragetablecolumnsegments-rowset"></a>Ensemble de lignes DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Fournit des informations au niveau de la colonne et du segment sur les tables de stockage utilisé par une base de données Analysis Services en cours d’exécution tabulaire ou [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] mode. Cet ensemble de lignes est utilisé principalement pour le dépannage et l'analyse.  
+  Fournit des informations au niveau de la colonne et du segment sur les tables de stockage utilisé par une base de données Analysis Services en cours d’exécution tabulaire ou [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] mode. Cet ensemble de lignes est utilisé principalement pour le dépannage et l'analyse.  
   
  **S'applique à :** modèles tabulaires  
   
@@ -38,8 +28,8 @@ Fournit des informations au niveau de la colonne et du segment sur les tables de
 |---------------------|------------------------|---------------------|---------------------|  
 |**DATABASE_NAME**|**DBTYPE_WSTR**|Oui|Spécifie la base de données tabulaire.<br /><br /> L'ensemble de lignes **DISCOVER_STORAGE_TABLE_COLUMN_SEGMENTS** peut être restreint à l'aide de cette colonne. Si omis, le nom de la base de données active est utilisé.|  
 |**CUBE_NAME**|**DBTYPE_WSTR**|Oui|Nom du modèle.<br /><br /> L'ensemble de lignes **DISCOVER_STORAGE_TABLES** peut être restreint à l'aide de cette colonne.|  
-|**MEASURE_GROUP_NAME**|**DBTYPE_WSTR**|Oui|Nom du groupe de mesures.|  
-|**PARTITION_NAME**|**DBTYPE_WSTR**|Oui|Nom de la partition.|  
+|**NOM_GROUPE_MESURES**|**DBTYPE_WSTR**|Oui|Nom du groupe de mesures.|  
+|**NOM_PARTITION**|**DBTYPE_WSTR**|Oui|Nom de la partition.|  
 |**DIMENSION_NAME**|**DBTYPE_WSTR**||Nom de la dimension.|  
 |**TABLE_ID**|**DBTYPE_WSTR**||ID interne du segment de table.|  
 |**COLUMN_ID**|**DBTYPE_WSTR**||ID interne de la colonne.|  

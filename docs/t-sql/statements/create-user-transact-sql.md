@@ -1,16 +1,14 @@
 ---
 title: CREATE USER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - WITHOUT_LOGIN_TSQL
@@ -31,16 +29,16 @@ helpviewer_keywords:
 - users [SQL Server], adding
 - users [SQL Server]
 ms.assetid: 01de7476-4b25-4d58-85b7-1118fe64aa80
-caps.latest.revision: 
+caps.latest.revision: 111
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: cc1b66f561ce413016e154bc329384566a8384b8
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0f7d8f9a4eadec915a52c3dfc39ba79f1ab177b9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-user-transact-sql"></a>CREATE USER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -175,7 +173,7 @@ CREATE USER user_name
  Spécifie le premier schéma que le serveur doit interroger pour résoudre les noms des objets associés à cet utilisateur de base de données.  
   
  '*windows_principal*'  
- Spécifie le principal Windows pour lequel l'utilisateur de la base de données est créé. *windows_principal* peut être un utilisateur Windows ou un groupe Windows. L’utilisateur est créé même si le *windows_principal* ne dispose pas de compte de connexion. Lors de la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], si *windows_principal* ne dispose pas de compte de connexion, le principal Windows doit s’authentifier auprès du [!INCLUDE[ssDE](../../includes/ssde-md.md)] via l’appartenance à un groupe Windows qui dispose d’un compte de connexion, ou la chaîne de connexion doit spécifier la base de données à relation contenant-contenu comme catalogue initial. Quand vous créez un utilisateur partir d’un principal Windows, utilisez le format **[***\<NomDomaine>***\\***\<NomCompteConnexion>***]**. Pour obtenir des exemples, consultez [Résumé de syntaxe](#SyntaxSummary). Les utilisateurs basés sur des utilisateurs Active Directory sont limités aux noms de moins de 21 caractères.    
+ Spécifie le principal Windows pour lequel l'utilisateur de la base de données est créé. *windows_principal* peut être un utilisateur Windows ou un groupe Windows. L’utilisateur est créé même si le *windows_principal* ne dispose pas de compte de connexion. Lors de la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], si *windows_principal* ne dispose pas de compte de connexion, le principal Windows doit s’authentifier auprès du [!INCLUDE[ssDE](../../includes/ssde-md.md)] via l’appartenance à un groupe Windows qui dispose d’un compte de connexion, ou la chaîne de connexion doit spécifier la base de données à relation contenant-contenu comme catalogue initial. Quand vous créez un utilisateur à partir d’un principal Windows, utilisez le format **[***\<NomDomaine>***\\***\<NomCompteConnexion>***]**. Pour obtenir des exemples, consultez [Résumé de syntaxe](#SyntaxSummary). Les utilisateurs basés sur des utilisateurs Active Directory sont limités aux noms de moins de 21 caractères.    
   
  '*Azure_Active_Directory_principal*'  
  **S’applique à** : [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)], [!INCLUDE[ssSDW_md](../../includes/sssdw-md.md)].  
@@ -195,7 +193,7 @@ CREATE USER user_name
  Pour plus d’informations, voir [Connexion à la base de données SQL à l’aide de l’authentification Azure Active Directory](https://azure.microsoft.com/documentation/articles/sql-database-aad-authentication).  
   
 WITH PASSWORD = '*password*'  
- **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Peut être utilisé uniquement dans une base de données à relation contenant-contenu. Spécifie le mot de passe de l'utilisateur en cours de création. Depuis [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], les informations de mot de passe stockées sont calculées à l’aide de la valeur salt SHA-512 du mot de passe.  
   
@@ -203,12 +201,12 @@ WITHOUT LOGIN
  Indique que l'utilisateur ne doit pas être mappé à une connexion existante.  
   
 CERTIFICATE *cert_name*  
- **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Spécifie le certificat pour lequel l'utilisateur de base de données est créé.  
   
 ASYMMETRIC KEY *asym_key_name*  
- **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
+ **S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
  Spécifie la clé asymétrique pour laquelle l'utilisateur de base de données est créé.  
   
@@ -370,8 +368,8 @@ CREATE USER JinghaoLiu FOR CERTIFICATE CarnationProduction50;
 GO   
 ```  
   
-###  <a name="withoutLogin"></a> D. Création et utilisation d’un utilisateur sans compte de connexion  
- L’exemple suivant crée un utilisateur de base de données `CustomApp` qui n’est mappé à aucun compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'exemple accorde ensuite à un utilisateur `adventure-works\tengiz0` l'autorisation d'emprunter l'identité de l'utilisateur `CustomApp`.  
+###  <a name="withoutLogin"></a> D. Création et utilisation d'un utilisateur sans connexion  
+ L'exemple suivant crée un utilisateur de base de données `CustomApp` qui n'est mappé à aucune connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. L'exemple accorde ensuite à un utilisateur `adventure-works\tengiz0` l'autorisation d'emprunter l'identité de l'utilisateur `CustomApp`.  
   
 ```  
 USE AdventureWorks2012 ;  
@@ -437,7 +435,7 @@ CREATE USER CarmenW WITH PASSWORD = 'a8ea v*(Rd##+'
 ### <a name="h-creating-a-user-to-copy-encrypted-data"></a>H. Création d’un utilisateur pour copier des données chiffrées  
  L’exemple suivant crée un utilisateur qui peut copier des données protégées par la fonctionnalité Always Encrypted d’un ensemble de tables contenant des colonnes chiffrées vers un autre ensemble de tables avec des colonnes chiffrées (dans la même base de données ou dans une autre base de données).  Pour plus d’informations, consultez [Migrer des données sensibles protégées par Always Encrypted](../../relational-databases/security/encryption/migrate-sensitive-data-protected-by-always-encrypted.md).  
   
-**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
+**S’applique à** : [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDS](../../includes/sssds-md.md)].  
   
 ```  
 CREATE USER [Chin]   

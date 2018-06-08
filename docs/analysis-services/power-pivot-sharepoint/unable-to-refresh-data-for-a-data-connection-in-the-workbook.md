@@ -1,37 +1,29 @@
 ---
-title: "Impossible d’actualiser les données pour une connexion de données dans le classeur | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-ms.assetid: 0f6fd52d-ac72-43e3-aa08-05a2d2bb873d
-caps.latest.revision: 
-author: Minewiskan
+title: Impossible d’actualiser les données pour une connexion de données dans le classeur | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: aa07f99e3c4d5a16c0b30ace530d889f5c784a9c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d1fabd45d3b9858114e48e3bdde258ed6ccc8362
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="unable-to-refresh-data-for-a-data-connection-in-the-workbook"></a>Impossible d'actualiser les données pour une connexion de données dans le classeur
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Pour les classeurs Excel qui contiennent des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , Excel Services retourne cette erreur en cas de demande de connexion à un serveur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] qui échoue.  
+  Pour les classeurs Excel qui contiennent des données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , Excel Services retourne cette erreur en cas de demande de connexion à un serveur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] qui échoue.  
   
 ## <a name="details"></a>Détails  
   
 |||  
 |-|-|  
-|S'applique à :|[!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint|  
+|S'applique à :|[!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint|  
 |Version du produit|[!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)], [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)]|  
 |Cause|Voir ci-dessous.|  
 |Texte du message|Impossible d'actualiser les données pour une connexion de données dans le classeur. Essayez encore ou contactez votre administrateur système. Les connexions suivantes n’ont pas pu s’actualiser : données de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)]|  
@@ -67,7 +59,7 @@ Pour les classeurs Excel qui contiennent des données [!INCLUDE[ssGemini](../../
   
  Pour contourner ce problème, joignez l’ordinateur au même domaine que le serveur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] ou installez un contrôleur de domaine sur votre ordinateur local. La deuxième solution, l'installation du contrôleur de domaine, oblige à créer des comptes de domaine locaux pour tous les services et utilisateurs. Vous devrez configurer des comptes de service et des autorisations SharePoint pour les comptes que vous définissez.  
   
- L’installation d’un contrôleur de domaine sur votre ordinateur est utile si votre objectif est d’utiliser [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint hors connexion. Pour obtenir des instructions détaillées sur la façon d’utiliser [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] hors connexion, consultez l’entrée de blog intitulée « Taking your [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] server off the network » sur le site [http://www.powerpivotgeek.com](http://go.microsoft.com/fwlink/?LinkId=184241).  
+ L’installation d’un contrôleur de domaine sur votre ordinateur est utile si votre objectif est d’utiliser [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint hors connexion. Pour obtenir des instructions détaillées sur l’utilisation de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] hors connexion, consultez le billet de blog pour « prendre votre [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] serveur sur le réseau » sur [ http://www.powerpivotgeek.com ](http://go.microsoft.com/fwlink/?LinkId=184241).  
   
  **Scénario 4 : serveur instable**  
   

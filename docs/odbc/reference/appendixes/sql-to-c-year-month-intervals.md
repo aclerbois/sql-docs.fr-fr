@@ -1,32 +1,29 @@
 ---
-title: "SQL à des intervalles d’année-mois C: | Documents Microsoft"
-ms.custom: 
+title: 'SQL à des intervalles d’année-mois C: | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data from SQL to c types [ODBC], about converting
 - data conversions from SQL to C types [ODBC], year-month intervals
 - intervals [ODBC], converting
 - year-month intervals [ODBC]
 ms.assetid: 1233634b-8214-420f-b872-3b2630105ba4
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 680143b9cc20b910e65218bfe222bd43654bcb21
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: da1a3378ba16a360ff2e307219ea350fa6ed1efd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-to-c-year-month-intervals"></a>SQL à des intervalles d’année-mois C:
 Les identificateurs pour les types de données SQL ODBC intervalle année-mois sont :  

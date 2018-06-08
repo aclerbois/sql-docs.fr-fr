@@ -1,36 +1,36 @@
 ---
-title: "Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM) | Microsoft Docs"
-ms.custom: 
+title: Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM) | Microsoft Docs
+ms.custom: ''
 ms.date: 04/15/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - encryption [SQL Server], TDE using an EKM
 - TDE, EKM how to
 - EKM, TDE how to
 - Transparent Data Encryption, using EKM
 ms.assetid: b892e7a7-95bd-4903-bf54-55ce08e225af
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 37e79c1a6d2b4525ae3bb7e55db44d72a941202e
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8ff0d8f39a95843fc5e4a3771930a4ad632f0293
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-tde-on-sql-server-using-ekm"></a>Activer le chiffrement transparent des données à l’aide de la gestion de clés extensible (EKM)
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Cette rubrique explique comment activer Transparent Data Encryption (TDE) dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] afin de protéger une clé de chiffrement de base de données à l’aide d’une clé asymétrique stockée dans un module de gestion de clés extensible (EKM) avec [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Cette rubrique explique comment activer le chiffrement transparent des données (TDE) dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] afin de protéger une clé de chiffrement de base de données à l'aide d'une clé asymétrique stockée dans un module de gestion de clés extensible (EKM) avec [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
  L'ensemble de la base de données est chiffré à l'aide d'une clé symétrique, appelée clé de chiffrement de base de données. La clé de chiffrement de base de données peut également être protégée à l'aide d'un certificat qui est lui-même protégé par la clé principale de base de données de la base de données MASTER Pour plus d’informations sur la protection de la clé de chiffrement de base de données à l’aide de la clé principale de base de données, consultez [Transparent Data Encryption &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md). Pour plus d’informations sur la configuration de TDE lorsque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est exécuté sur une machine virtuelle Azure, consultez [Gestion de clés extensible à l’aide d’Azure Key Vault &#40;SQL Server&#41;](../../../relational-databases/security/encryption/extensible-key-management-using-azure-key-vault-sql-server.md). Pour plus d’informations sur la configuration de TDE à l’aide d’une clé dans Azure Key Vault, consultez [Utiliser le connecteur SQL Server avec les fonctionnalités de chiffrement SQL](../../../relational-databases/security/encryption/use-sql-server-connector-with-sql-encryption-features.md). 
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 11/21/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
  Cette rubrique utilise les autorisations suivantes :  
   
 -   Pour modifier une option de configuration et exécuter l'instruction RECONFIGURE, vous devez disposer de l'autorisation de niveau serveur ALTER SETTINGS. L'autorisation ALTER SETTINGS est implicitement détenue par les rôles serveur fixes **sysadmin** et **serveradmin** .  
@@ -73,7 +73,7 @@ ms.lasthandoff: 11/21/2017
     > [!NOTE]  
     >  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ne propose pas de fournisseur EKM. Chaque fournisseur EKM peut utiliser des procédures différentes pour l'installation, la configuration et l'autorisation des utilisateurs.  Consultez la documentation de votre fournisseur EKM pour effectuer cette étape.  
   
-3.  Dans l' **Explorateur d'objets**, connectez-vous à une instance du [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+3.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 4.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -163,7 +163,7 @@ ms.lasthandoff: 11/21/2017
   
 -   [ALTER DATABASE &#40;Transact-SQL&#41;](../../../t-sql/statements/alter-database-transact-sql.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Chiffrement transparent des données avec Azure SQL Database](../../../relational-databases/security/encryption/transparent-data-encryption-azure-sql.md)  
   
   

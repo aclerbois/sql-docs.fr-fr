@@ -1,38 +1,35 @@
 ---
-title: "Vue d’ensemble de l’Assistant de Migration de données (SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Vue d’ensemble de l’Assistant de Migration de données (SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
 helpviewer_keywords:
 - Data Migration Assistant, overview
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c387e5bb2a0b5cef10217b32807f88a8aee6c627
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: dd681a6445c6759b0ec17e06dc0b4dbf24b3b72f
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707967"
 ---
 # <a name="overview-of-data-migration-assistant"></a>Vue d’ensemble de l’Assistant de Migration de données
 
 L’Assistant de Migration données (DMA) vous permet de mettre à niveau vers une plate-forme de données modernes en détectant les éventuels problèmes de compatibilité peuvent affecter les fonctionnalités de base de données dans votre nouvelle version de SQL Server et la base de données SQL Azure. DMA recommande des performances et des améliorations de la fiabilité de votre environnement cible et vous permet de déplacer votre schéma, les données et les objets de relation contenant-contenus de votre serveur source pour votre serveur cible.
 
 > [!NOTE] 
-> De grande taille (en termes de nombre et la taille des bases de données) migrations, il est recommandé d’utiliser le [Service de Migration de base de données Azure](https://docs.microsoft.com/en-us/azure/dms/dms-overview), qui peuvent migrer les bases de données à grande échelle.
+> De grande taille (en termes de nombre et la taille des bases de données) migrations, il est recommandé d’utiliser le [Service de Migration de base de données Azure](https://docs.microsoft.com/azure/dms/dms-overview), qui peuvent migrer les bases de données à grande échelle.
   
 ## <a name="capabilities"></a>Fonctions
 
@@ -50,7 +47,7 @@ L’Assistant de Migration données (DMA) vous permet de mettre à niveau vers u
 
 - Découvrez les nouvelles fonctionnalités de la plateforme cible SQL Server que la base de données peut tirer parti d’après une mise à niveau. Ceux-ci sont décrits comme des recommandations de la fonctionnalité et sont organisés dans les catégories suivantes :
 
-  - Performance
+  - Performances
   - Sécurité
   - Stockage
 
@@ -68,18 +65,18 @@ L’Assistant de Migration données (DMA) vous permet de mettre à niveau vers u
 DMA remplace toutes les versions précédentes du Conseiller de mise à niveau de SQL Server et doit être utilisé pour les mises à niveau pour la plupart des versions de SQL Server. Suivent les versions prises en charge de sources et cibles.
 
 **Sources**
-- SQL Server 2005
-- SQL Server 2008
-- SQL Server 2008 R2
+- SQL Server 2005
+- SQL Server 2008
+- SQL Server 2008 R2
 - SQL Server 2012 
 - SQL Server 2014
-- SQL Server 2016
+- SQL Server 2016
 - SQL Server 2017 sur Windows
 
 **Cibles**
 - SQL Server 2012
 - SQL Server 2014
-- SQL Server 2016
+- SQL Server 2016
 - SQL Server 2017 sur Windows et Linux
 - Azure SQL Database
 

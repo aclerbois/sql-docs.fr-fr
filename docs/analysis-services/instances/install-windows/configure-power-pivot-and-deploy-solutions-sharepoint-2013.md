@@ -1,32 +1,23 @@
 ---
-title: "Configurer PowerPivot et déployer des Solutions (SharePoint 2013) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology:
-- power-view
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 6401fd92-f43b-450e-8298-12db644c25bc
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer PowerPivot et déployer des Solutions (SharePoint 2013) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a815c21f442c615217fdc863448f18b49fdb3588
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 93374b25f377265f1eafa09cf46714ed79927243
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-power-pivot-and-deploy-solutions-sharepoint-2013"></a>Configurer PowerPivot et déployer des solutions (SharePoint 2013)
 [!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique décrit le déploiement et la configuration des améliorations intermédiaires apportées aux fonctionnalités [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] dans [!INCLUDE[SPS2013](../../../includes/sps2013-md.md)] , dont la Galerie [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] , l’actualisation des données de planification, le tableau de bord de gestion et les fournisseurs de données. Exécutez l’outil **[!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint 2013** pour effectuer les opérations suivantes :  
+  Cette rubrique décrit le déploiement et la configuration des améliorations intermédiaires apportées aux fonctionnalités [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] dans [!INCLUDE[SPS2013](../../../includes/sps2013-md.md)] , dont la Galerie [!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] , l’actualisation des données de planification, le tableau de bord de gestion et les fournisseurs de données. Exécutez l’outil **[!INCLUDE[ssGemini](../../../includes/ssgemini-md.md)] pour SharePoint 2013** pour effectuer les opérations suivantes :  
   
 -   Déployer les fichiers de solution SharePoint.  
   
@@ -134,7 +125,7 @@ Cette rubrique décrit le déploiement et la configuration des améliorations in
   
 5.  Cliquez sur **OK**.  
   
- Pour plus d’informations sur la résolution de problèmes d’actualisation des données, consultez [Résolution de problèmes d’actualisation des données PowerPivot](http://social.technet.microsoft.com/wiki/contents/articles/3870.troubleshooting-powerpivot-data-refresh.aspx) (http://social.technet.microsoft.com/wiki/contents/articles/3870.troubleshooting-powerpivot-data-refresh.aspx).  
+ Pour plus d’informations sur l’actualisation des données de dépannage, consultez [dépannage actualisation des données PowerPivot](http://social.technet.microsoft.com/wiki/contents/articles/3870.troubleshooting-powerpivot-data-refresh.aspx) (http://social.technet.microsoft.com/wiki/contents/articles/3870.troubleshooting-powerpivot-data-refresh.aspx).  
   
  Pour plus d'informations sur l'outil de configuration, consultez [Power Pivot Configuration Tools](../../../analysis-services/power-pivot-sharepoint/power-pivot-configuration-tools.md).  
   

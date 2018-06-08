@@ -1,29 +1,29 @@
 ---
-title: "Inclure des valeurs Null dans l’option JSON - INCLUDE_NULL_VALUES | Microsoft Docs"
-ms.custom: 
+title: Inclure des valeurs Null dans l’option JSON - INCLUDE_NULL_VALUES | Microsoft Docs
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - INCLUDE_NULL_VALUES (FOR JSON)
 ms.assetid: 06873768-3778-4ed8-a1db-61758726bda0
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 14
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b79da3064f4c5f2f79c4f1ff4951aaadcf12141d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 0c2046a1fb1e3dfb2abfdfe113ebc45be78f729e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="include-null-values-in-json---includenullvalues-option"></a>Inclure des valeurs Null dans l’option JSON - INCLUDE_NULL_VALUES
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

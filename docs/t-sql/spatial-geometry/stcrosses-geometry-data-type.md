@@ -1,16 +1,14 @@
 ---
-title: "STCrosses (type de données geometry) | Microsoft Docs"
-ms.custom: 
+title: STCrosses (type de données geometry) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STCrosses (geometry Data Type)
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STCrosses (geometry Data Type)
 ms.assetid: 3e3fc065-555a-4bee-8b71-e92f3dc62a4f
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1b1588649574e16f3bf46ae6d3fa06079f16a39
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5e0d1fd0aa523fdf98ad2ff14ebfeb771bb7cf3b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stcrosses-geometry-data-type"></a>STCrosses (type de données geometry)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]

@@ -1,28 +1,27 @@
 ---
-title: "Connexion à la base de données Oracle (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connexion à la base de données Oracle (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Refreshing Oracle Metadata
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Refreshing Oracle Metadata
 ms.assetid: e276cdbf-3ebc-4ba8-b40d-a7a42befa2b6
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: On Demand
-ms.openlocfilehash: df379493d026c3cc3da3bf01ea036e8f32072625
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 0673afd74ef1c11b9c800d128ea25e0189a635e9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-oracle-database-oracletosql"></a>Connexion à la base de données Oracle (OracleToSQL)
 Pour migrer des bases de données Oracle [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], vous devez vous connecter à la base de données Oracle que vous souhaitez migrer. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à tous les schémas Oracle, puis l’affiche dans le volet Explorateur de métadonnées d’Oracle. SSMA stocke des informations sur le serveur de base de données, mais ne stocke pas les mots de passe.  
@@ -96,7 +95,7 @@ Lorsque vous vous connectez à une base de données, SSMA lit les métadonnées 
   
     `Data Source=MyOracleDB;Integrated Security=yes;`  
   
-    Pour plus d’informations, consultez [se connecter à Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md).  
+    Pour plus d’informations, consultez [se connecter à Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md).  
   
 ## <a name="reconnecting-to-oracle"></a>Rétablir la connexion à Oracle  
 Votre connexion au serveur de base de données reste active jusqu'à ce que vous fermez le projet. Lorsque vous rouvrez le projet, vous devez vous reconnecter si vous souhaitez une connexion active à la base de données. Vous pouvez travailler hors connexion jusqu'à ce que vous souhaitez mettre à jour les métadonnées, charger des objets de base de données dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], et migrer les données.  
@@ -131,5 +130,5 @@ Métadonnées relatives à la base de données Oracle ne sont pas actualisée au
 -   L’étape suivante du processus de migration consiste à [se connecter à une instance de SQL Server](http://msdn.microsoft.com/en-us/1b2a8059-1829-4904-a82f-9c06de1e245f).  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration bases de données Oracle pour SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
+[Bases de données de migration d’Oracle vers SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
   

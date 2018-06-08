@@ -1,15 +1,14 @@
 ---
-title: "Fonctionnalités supprimées de SQL Server Reporting Services dans SQL Server 2016 | Microsoft Docs"
+title: Fonctionnalités supprimées de SQL Server Reporting Services dans SQL Server 2016 | Microsoft Docs
 ms.date: 07/02/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.custom: 
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.custom: ''
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - discontinued functionality [Reporting Services]
@@ -17,16 +16,15 @@ helpviewer_keywords:
 - Rsactivate.exe
 - unsupported features [Reporting Services]
 ms.assetid: d529cc96-3483-480b-9bfc-bd28b1d0ef52
-caps.latest.revision: "54"
+caps.latest.revision: 54
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 1dc7d8fb5028b0814c0b015a469065e1ce901939
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: fd12c073f9a9ba91a7e62d0b78dc19325a55521d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="discontinued-functionality-to-sql-server-reporting-services-in-sql-server-2016"></a>Fonctionnalités supprimées de SQL Server Reporting Services dans SQL Server 2016
 

@@ -1,16 +1,15 @@
 ---
 title: sysdatatypemappings (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - sysdatatypemappings view
 ms.assetid: 5dfafb70-3e3d-4465-b293-1acff1f855b6
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 00c57554fbf2cc60a91d1b0a3ae13377630fe099
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 1a447bf38ce77889b2dc6e0e0888b7f4cccb93c1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sysdatatypemappings-transact-sql"></a>sysdatatypemappings (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,13 +58,13 @@ ms.lasthandoff: 02/03/2018
 |**destination_scale**|**int**|Échelle du type de données du SGBD de destination.|  
 |**destination_nullable**|**bit**|Indique si le type de données du SGBD de destination prend en charge une valeur NULL.|  
 |**destination_createparams**|**int**|À usage interne uniquement|  
-|**dataloss**|**bit**|Indique si des données ont été perdues lors du mappage entre le type de données du SGBD source et de destination.|  
+|**perte**|**bit**|Indique si des données ont été perdues lors du mappage entre le type de données du SGBD source et de destination.|  
 |**is_default**|**bit**|Indique si le mappage du type de données est utilisé par défaut.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Réplication de base de données hétérogène](../../relational-databases/replication/non-sql/heterogeneous-database-replication.md)   
- [Tables de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
- [Vues de réplication &#40; Transact-SQL &#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
+ [Tables de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-tables/replication-tables-transact-sql.md)   
+ [Vues de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-views/replication-views-transact-sql.md)   
  [sp_helpdatatypemap &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdatatypemap-transact-sql.md)  
   
   

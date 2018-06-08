@@ -1,17 +1,16 @@
 ---
-title: "Gérer les connexions et les mots de passe dans la réplication | Microsoft Docs"
-ms.custom: 
+title: Gérer les connexions et les mots de passe dans la réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - logins [SQL Server replication]
 - logins [SQL Server replication], managing
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - passwords [SQL Server replication]
 - security [SQL Server replication], passwords
 ms.assetid: 277759f9-b0da-4524-8abe-0460cdab69ec
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dc78365dd8e983ecbe3a9c15f92dd8aaf665a561
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 565431ac473cfb476ca24564a56a657871551447
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-logins-and-passwords-in-replication"></a>Gérer les connexions et les mots de passe dans la réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

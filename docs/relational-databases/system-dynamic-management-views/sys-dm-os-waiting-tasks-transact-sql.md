@@ -1,16 +1,13 @@
 ---
-title: sys.dm_os_waiting_tasks (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_os_waiting_tasks (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_os_waiting_tasks
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_waiting_tasks dynamic management view
 ms.assetid: ca5e6844-368c-42e2-b187-6e5f5afc8df3
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5b3a3122f9f0908e063685941f58bb03281659e0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a0174fbe566afa6eec5c6cb208dacfed00fcd735
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmoswaitingtasks-transact-sql"></a>sys.dm_os_waiting_tasks (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -60,13 +57,13 @@ ms.lasthandoff: 02/03/2018
   
  **Propriétaire de ressources de pool de threads :**  
   
--   threadpool id=scheduler\<hex-address>  
+-   id du pool de threads = planificateur\<hex-address >  
   
  **Propriétaire de la ressource requête parallèle :**  
   
--   exchangeEvent id={Port|Pipe}\<hex-address> WaitType=\<exchange-wait-type> nodeId=\<exchange-node-id>  
+-   id d’exchangeEvent = {Port | Canal}\<hex-address > WaitType =\<type d’attente exchange > nodeId =\<exchange-nœud-id >  
   
- **Exchange-wait-type:**  
+ **Exchange--type d’attente :**  
   
 -   e_waitNone  
   
@@ -84,7 +81,7 @@ ms.lasthandoff: 02/03/2018
   
  **Propriétaire de ressource de verrou :**  
   
--   \<type-specific-description> id=lock\<lock-hex-address> mode=\<mode> associatedObjectId=\<associated-obj-id>  
+-   \<type-specific-description > id = verrou\<verrou-hex-address > mode =\<mode > associatedObjectId =\<associés-obj-id >  
   
      **\<type-specific-description > peut être :**  
   
@@ -134,15 +131,16 @@ ms.lasthandoff: 02/03/2018
   
  **Propriétaire de ressource de verrou :**  
   
--   \<db-id>:\<file-id>:\<page-in-file>  
+-   \<DB-id > :\<id de fichier > :\<page dans le fichier >  
   
--   \<GUID>  
+-   \<GUID &GT;  
   
--   \<latch-class> (\<latch-address>)  
+-   \<classe de verrous > (\<verrou-address >)  
   
-## <a name="permissions"></a>Autorisations  
+## <a name="permissions"></a>Autorisations
+
 Sur [!INCLUDE[ssNoVersion_md](../../includes/ssnoversion-md.md)], nécessite `VIEW SERVER STATE` autorisation.   
-Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] niveaux Premium, nécessite le `VIEW DATABASE STATE` autorisation dans la base de données. Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)] Standard et les niveaux de base, nécessite le **administrateur du serveur** ou **administrateur Active Directory de Azure** compte.  
+Sur [!INCLUDE[ssSDS_md](../../includes/sssds-md.md)], nécessite le `VIEW DATABASE STATE` autorisation dans la base de données.   
  
 ## <a name="example"></a>Exemple
 Cet exemple montre comment identifier les sessions bloquées.  Exécutez le [!INCLUDE[tsql](../../includes/tsql-md.md)] de requête dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)].
@@ -152,7 +150,7 @@ WHERE blocking_session_id IS NOT NULL;
 ``` 
   
 ## <a name="see-also"></a>Voir aussi  
-  [Système d’exploitation de serveur SQL relatives des vues de gestion dynamique &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)  
+  [Vues de gestion dynamique liées à système d’exploitation SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sql-server-operating-system-related-dynamic-management-views-transact-sql.md)  
   
   
 

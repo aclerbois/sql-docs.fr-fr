@@ -1,30 +1,27 @@
 ---
-title: "Ouvrir l'Administrateur de la source de données ODBC | Microsoft Docs"
-ms.custom: 
+title: Ouvrir l'Administrateur de la source de données ODBC | Microsoft Docs
+ms.custom: ''
 ms.date: 11/07/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC Data Source Administrator
 - opening ODBC Data Source Administrator
 ms.assetid: 7d475d33-a776-4776-a174-2c8a4acd476f
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 588a096147da057e2d8404693e73521f8c4fd04c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cd3fe488c2ae6bff1b94a11996bc67a88fd72691
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-the-odbc-data-source-administrator"></a>Ouvrir l'Administrateur de la source de données ODBC
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

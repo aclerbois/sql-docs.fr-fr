@@ -1,32 +1,33 @@
 ---
-title: "Définition des Options de l’outil et la disposition | Documents Microsoft"
-ms.custom: 
+title: Définition des Options de l’outil et la disposition | Documents Microsoft
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: dta
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: SQL Server 2016
-helpviewer_keywords: Database Engine [SQL Server], tutorials
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+applies_to:
+- SQL Server 2016
+helpviewer_keywords:
+- Database Engine [SQL Server], tutorials
 ms.assetid: 43e97ce0-97bc-4a27-9485-5bbeb7190b85
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 68a4c894fb4defe848b146c59b3ad159ac3da287
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: b197e970df26c5d48ccaf18603df107f0f3785db
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="lesson-1-2---setting-tool-options-and-layout"></a>Leçon 1-2-mise en page et les Options de l’outil paramètre
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Vous pouvez définir des options qui configurent ce que l’interface utilisateur graphique de l’Assistant Paramétrage du moteur de base de données (GUI) affiche au démarrage, les polices qu’elle utilise, et d’autres fonctionnalités de l’outil pour mieux prendre en charge l’utilisation. Les exercices pratiques de cette page vous aideront à vous familiariser avec les options qu'il est possible de définir et avec la façon de procéder.  
+# <a name="lesson-1-2---setting-tool-options-and-layout"></a>Leçon 1-2 : Définition des options du menu Outils et de la disposition
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Vous pouvez définir les options qui permettent de configurer ce que l'interface de l'Assistant Paramétrage du moteur de base de données affiche au démarrage, les polices qu'elle utilise et également configurer d'autres fonctionnalités pour faciliter l'utilisation de l'outil. Les exercices pratiques de cette page vous aideront à vous familiariser avec les options qu'il est possible de définir et avec la façon de procéder.  
   
 ### <a name="set-the-tool-options"></a>Définition des options de l'outil  
   

@@ -1,15 +1,14 @@
 ---
 title: Ensembles de lignes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-rowsets
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - rowsets [OLE DB], about rowsets
@@ -18,16 +17,17 @@ helpviewer_keywords:
 - OLE DB rowsets, about rowsets
 - rowsets [OLE DB]
 ms.assetid: 5e7b3cbe-3670-4e18-8172-2226e0b6b142
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fe964e8e0cadaee2118540714f6e8a9c43763748
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 1d12a7c6dfc3a63d20a16a4a4361ffd46e4f8972
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34708487"
 ---
 # <a name="rowsets"></a>Ensembles de lignes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -59,13 +59,13 @@ ms.lasthandoff: 01/24/2018
   
 -   [Création d’ensembles de lignes avec ICommand::Execute](../../relational-databases/native-client-ole-db-rowsets/creating-rowsets-with-icommand-execute.md)  
   
--   [Comportements et les propriétés de l’ensemble de lignes](../../relational-databases/native-client-ole-db-rowsets/rowset-properties-and-behaviors.md)  
+-   [Propriétés et comportements des ensembles de lignes](../../relational-databases/native-client-ole-db-rowsets/rowset-properties-and-behaviors.md)  
   
 -   [Ensembles de lignes et curseurs SQL Server](../../relational-databases/native-client-ole-db-rowsets/rowsets-and-sql-server-cursors.md)  
   
--   [Extraction de lignes](../../relational-databases/native-client-ole-db-rowsets/fetching-rows.md)  
+-   [Récupération de lignes](../../relational-databases/native-client-ole-db-rowsets/fetching-rows.md)  
   
--   [Extraction d’une ligne unique avec IRow](../../relational-databases/native-client-ole-db-rowsets/fetching-a-single-row-with-irow.md)  
+-   [Récupération d’une ligne unique avec IRow](../../relational-databases/native-client-ole-db-rowsets/fetching-a-single-row-with-irow.md)  
   
 -   [Signets](../../relational-databases/native-client-ole-db-rowsets/bookmarks.md)  
   

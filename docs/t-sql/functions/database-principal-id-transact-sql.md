@@ -1,16 +1,14 @@
 ---
 title: DATABASE_PRINCIPAL_ID (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DATABASE_PRINCIPAL_ID_TSQL
@@ -23,21 +21,20 @@ helpviewer_keywords:
 - DATABASE_PRINCIPAL_ID function
 - IDs [SQL Server], principals
 ms.assetid: 908c7dd8-c10b-4658-92f6-0224f9835dd9
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44f4bd65c93fc0c6ed0fd069946fabaedd1e0943
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e297fd93c5e91eac02008fab13d7c66c71ce0e90
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="databaseprincipalid-transact-sql"></a>DATABASE_PRINCIPAL_ID (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Retourne le numéro d'ID d'un principal dans la base de données active. Pour plus d’informations sur les principaux, consultez [Principaux &#40;moteur de base de données&#41;](../../relational-databases/security/authentication-access/principals-database-engine.md).
+Cette fonction retourne le numéro d’ID d’un principal de la base de données active. Pour plus d’informations sur les principaux, consultez [Principaux &#40;Moteur de base de données&#41;](../../relational-databases/security/authentication-access/principals-database-engine.md).
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -49,20 +46,19 @@ DATABASE_PRINCIPAL_ID ( 'principal_name' )
   
 ## <a name="arguments"></a>Arguments  
 *principal_name*  
-Expression de type **sysname** qui représente le principal.  
-Lorsque *principal_name* est omis, l’ID de l’utilisateur actuel est renvoyé. Les parenthèses sont obligatoires.
+Expression de type **sysname** qui représente le principal. Quand *principal_name* est omis, `DATABASE_PRINCIPAL_ID` retourne l’ID de l’utilisateur actif. `DATABASE_PRINCIPAL_ID` nécessite les parenthèses.
   
 ## <a name="return-types"></a>Types de retour
 **Int**  
-NULL lorsque le principal de la base de données n'existe pas
+NULL si le principal de la base de données n’existe pas.
   
 ## <a name="remarks"></a>Notes   
-DATABASE_PRINCIPAL_ID peut être utilisé dans une liste de sélection, une clause WHERE ou partout où une expression est autorisée. Pour plus d’informations, consultez [Expressions &#40;Transact-SQL&#41;](../../t-sql/language-elements/expressions-transact-sql.md).
+Utilisez `DATABASE_PRINCIPAL_ID` dans une liste de sélection, une clause WHERE ou n’importe quel emplacement qui autorise une expression. Pour plus d’informations, consultez [Expressions &#40;Transact-SQL&#41;](../../t-sql/language-elements/expressions-transact-sql.md).
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="a-retrieving-the-id-of-the-current-user"></a>A. Extraction de l'ID de l'utilisateur actuel  
-L'exemple suivant retourne l'ID de principal de base de données de l'utilisateur actuel.
+Cet exemple retourne l’ID de principal de base de données de l’utilisateur actif.
   
 ```sql
 SELECT DATABASE_PRINCIPAL_ID();  
@@ -70,7 +66,7 @@ GO
 ```  
   
 ### <a name="b-retrieving-the-id-of-a-specified-database-principal"></a>B. Extraction de l'ID d'un principal de base de données spécifique  
-L'exemple suivant retourne l'ID de principal de base de données du rôle de base de données `db_owner`.
+Cet exemple retourne l’ID de principal de base de données du rôle de base de données `db_owner`.
   
 ```sql
 SELECT DATABASE_PRINCIPAL_ID('db_owner');  

@@ -1,27 +1,19 @@
 ---
 title: Projets connexes pour les Solutions d’exploration de données | Documents Microsoft
-ms.custom: ''
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: dc26489a-4c27-4b89-8215-6d245427c350
-caps.latest.revision: 12
-author: Minewiskan
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 8093acbb0886699bcb9c781c636b37f249f96bee
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: f884a7d70447771769ba2d6ff8928234095c7cae
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="related-projects-for-data-mining-solutions"></a>Projets connexes pour des solutions d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -109,11 +101,11 @@ ms.lasthandoff: 04/03/2018
   
  Pour plus d'informations sur l'utilisation de Reporting Services avec les requêtes DMX comme source de données, consultez les liens suivants :  
   
- [Récupérer des données à partir d’un modèle d’exploration de données &#40; DMX &#41; &#40; SSRS &#41;](../../reporting-services/report-data/retrieve-data-from-a-data-mining-model-dmx-ssrs.md)  
+ [Récupérer des données à partir d’un modèle d’exploration de données & #40 ; DMX & #41 ; & #40 ; SSRS & #41 ;](../../reporting-services/report-data/retrieve-data-from-a-data-mining-model-dmx-ssrs.md)  
   
  [Interface utilisateur du Concepteur de requêtes Analysis Services DMX](../../reporting-services/report-data/analysis-services-dmx-query-designer-user-interface.md)  
   
- [Type de connexion Analysis Services pour DMX &#40; SSRS &#41;](../../reporting-services/report-data/analysis-services-connection-type-for-dmx-ssrs.md)  
+ [Type de connexion Analysis Services pour DMX & #40 ; SSRS & #41 ;](../../reporting-services/report-data/analysis-services-connection-type-for-dmx-ssrs.md)  
   
  Toutefois, il n'est pas nécessaire d'utiliser DMX comme source de données. Les composants d' [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] pour l'exploration de données prennent également en charge l'enregistrement des résultats d'une requête de prédiction dans une base de données relationnelle. Si vous avez établi un flux de travail pour mettre à jour des modèles à l'aide d' [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], les prédictions persistantes et d'autres résultats de requête d'exploration de données dans SQL Server vous permettent d'utiliser [!INCLUDE[ssCrescent](../../includes/sscrescent-md.md)] pour créer des rapports, ainsi que d'autres outils qui n'ont pas d'interface avec DMX.  
   

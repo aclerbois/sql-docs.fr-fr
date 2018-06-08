@@ -1,16 +1,13 @@
 ---
-title: "Modes de disponibilité (Groupes de disponibilité Always On) | Microsoft Docs"
-ms.custom: 
+title: Modes de disponibilité (Groupes de disponibilité Always On) | Microsoft Docs
+ms.custom: ''
 ms.date: 10/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
 - Availability Groups [SQL Server], asynchronous commit
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - asynchronous-commit availability mode
 - Availability Groups [SQL Server], availability modes
 ms.assetid: 10e7bac7-4121-48c2-be01-10083a8c65af
-caps.latest.revision: "41"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 41
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f7f1e90e1892eae4763b8afd1af575cc6b3ef16a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: f032e856363bca6d84b420260eed53b734d88d82
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769345"
 ---
 # <a name="availability-modes-always-on-availability-groups"></a>Modes de disponibilité (Groupes de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +49,7 @@ ms.lasthandoff: 01/18/2018
 -   [Contenu connexe](#RelatedContent)  
   
 ##  <a name="SupportedAvModes"></a> Modes de disponibilité pris en charge  
- [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] prend en charge deux modes de disponibilité : le mode avec validation asynchrone et le mode avec validation synchrone, comme suit :  
+ [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] prend en charge trois modes de disponibilité (le mode avec validation asynchrone, le mode avec validation synchrone et le mode de configuration uniquement) de la façon suivante :  
   
 -   Le*mode avec validation asynchrone* est une solution de récupération d’urgence qui fonctionne bien quand les réplicas de disponibilité sont séparés par des distances considérables. Si chaque réplica secondaire s'exécute en mode avec validation asynchrone, le réplica principal n'attend pas que les réplicas secondaires renforcent le journal. En revanche, immédiatement après l'écriture d'un enregistrement de journal dans le journal local, le réplica principal envoie une confirmation de transaction au client. Le réplica principal s'exécute avec une latence de transaction minimale par rapport à un réplica secondaire configuré pour le mode avec validation asynchrone.  Si le serveur principal actuel est configuré pour le mode de disponibilité avec validation asynchrone, il valide les transactions de façon asynchrone pour tous les réplicas secondaires, indépendamment de leurs paramètres de mode de disponibilité.  
   

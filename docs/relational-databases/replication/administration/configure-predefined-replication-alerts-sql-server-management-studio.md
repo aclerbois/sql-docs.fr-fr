@@ -1,31 +1,29 @@
 ---
-title: "Configurer des alertes de réplication prédéfinies (SQL Server Management Studio) | Microsoft Docs"
-ms.custom: 
+title: Configurer des alertes de réplication prédéfinies (SQL Server Management Studio) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - alerts [SQL Server replication]
 - predefined replication alerts [SQL Server replication]
 ms.assetid: c0414147-7ffe-4f9a-908c-71c1b5201584
-caps.latest.revision: 
+caps.latest.revision: 24
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 26423bdfe9c2fda02380da1b60c0970fc56905f9
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: e7bfdd311887970d9df6982e102262da03de47ad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-predefined-replication-alerts-sql-server-management-studio"></a>configurer des alertes de réplication prédéfinies (SQL Server Management Studio)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -59,7 +57,7 @@ ms.lasthandoff: 03/08/2018
   
 3.  Cliquez avec le bouton droit sur une alerte de réplication, puis cliquez sur **Propriétés**.  
   
-4.  Définissez les options dans la boîte de dialogue **Propriétés de l’alerte \<nom_alerte>** :  
+4.  Définissez les options dans la boîte de dialogue **Propriétés de l’alerte \<nom_alerte>**  :  
   
     -   Sur la page **Général** , cliquez sur **Activer**; spécifiez la base de données à laquelle l'alerte doit s'appliquer.  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 03/08/2018
   
 2.  Dans la boîte de dialogue **Configurer des alertes de réplication** , sélectionnez une alerte puis cliquez sur **Configurer**.  
   
-3.  Définissez les options dans la boîte de dialogue **Propriétés de l’alerte \<nom_alerte>** :  
+3.  Définissez les options dans la boîte de dialogue **Propriétés de l’alerte \<nom_alerte>**  :  
   
     -   Sur la page **Général** , cliquez sur **Activer**; spécifiez la base de données à laquelle l'alerte doit s'appliquer.  
   

@@ -1,28 +1,26 @@
 ---
-title: "Référence d’API de DLL de traduction | Documents Microsoft"
-ms.custom: 
+title: Référence d’API de DLL de traduction | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: translation DLLs [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- translation DLLs [ODBC]
 ms.assetid: 69033376-c315-4f52-8ee5-f23f07694bf8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a5dabb51b2f381663d8096d9086f1a3def12cefd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 45bd54a275f3f6610d672956e60b05da710ee0e8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="translation-dll-api-reference"></a>Référence d’API de DLL de traduction
 Cette section décrit la syntaxe de la traduction des API de DLL, qui se compose de deux fonctions : **SQLDriverToDataSource** et **SQLDataSourceToDriver**. Ces fonctions doivent être incluses dans la DLL qui effectue la traduction pour le pilote.  

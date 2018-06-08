@@ -1,30 +1,29 @@
 ---
-title: "Méthode setBytes (SQLServerCallableStatement) | Documents Microsoft"
-ms.custom: 
+title: Méthode setBytes (SQLServerCallableStatement) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerCallableStatement.setBytes
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerCallableStatement.setBytes
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: f264f1a6-ee35-4eaf-81d8-ecf99f03b35d
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c88e6e0968fa47b0b980d4d3e5a937aa23a3af95
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 5990743ccdf751bbfab7afe80aa4927846c0380d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setbytes-method-sqlservercallablestatement"></a>Méthode setBytes (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -44,7 +43,7 @@ public void setBytes(java.lang.String sCol,
   
  A **chaîne** qui contient le nom du paramètre.  
   
- *b*  
+ *B*  
   
  Un tableau de **octets** valeurs.  
   

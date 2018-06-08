@@ -1,34 +1,19 @@
 ---
 title: Surveillance de Traces (XMLA) | Documents Microsoft
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- XML for Analysis, traces
-- XMLA, traces
-- monitoring traces [XMLA]
-- traces [Analysis Services]
-ms.assetid: cdbfb984-18bd-4c4e-8fb7-d64ce298ed35
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3895ae75a7e7e34456756ea9dfb5b2fe4198e32c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 24aab35b34ed9339ec2d7950efab21a94b2c0d96
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="monitoring-traces-xmla"></a>Surveillance de traces (XMLA)
   Vous pouvez utiliser la [s’abonner](../../analysis-services/xmla/xml-elements-commands/subscribe-element-xmla.md) commande XML for Analysis (XMLA) pour surveiller une trace existante définie sur une instance de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. Le **s’abonner** commande retourne les résultats d’une trace en tant qu’un ensemble de lignes.  

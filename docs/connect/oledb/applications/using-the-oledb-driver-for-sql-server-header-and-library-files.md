@@ -3,14 +3,12 @@ title: À l’aide du pilote de base de données OLE pour SQL Server en-tête et
 description: À l’aide du pilote OLE DB pour les fichiers de bibliothèque et d’en-tête SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|applications
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -25,26 +23,27 @@ helpviewer_keywords:
 - MSOLEDBSQL, library files
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 2411e95fe2e31da8ba0d51e82a70cd265a0b9448
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: d958d4b1f12f5a109c5727832eb764fd2b497d70
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-the-ole-db-driver-for-sql-server-header-and-library-files"></a>À l’aide du pilote de base de données OLE pour SQL Server en-tête et les fichiers de bibliothèque
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../../includes/driver_oledb_download.md)]
 
   Le pilote OLE DB pour l’en-tête de SQL Server et les fichiers bibliothèques sont installés lorsque le pilote OLE DB pour l’option de kit de développement logiciel de SQL Server est activée au cours du processus d’installation. Lors du développement d'une application, il importe de copier et d'installer tous les fichiers requis pour le développement sur votre environnement de développement. Pour plus d’informations sur l’installation et la redistribution du pilote OLE DB pour SQL Server, consultez [installation pilote OLE DB pour SQL Server](../../oledb/applications/installing-oledb-driver-for-sql-server.md).  
   
  Le pilote OLE DB pour l’en-tête de SQL Server et les fichiers bibliothèques sont installés à l’emplacement suivant :  
   
- *%Program Files%*\Microsoft SQL Server\Client SDK\OLEDB\180\SDK  
+ *%Program Files%* \Microsoft SQL Server\Client SDK\OLEDB\180\SDK  
   
  Le pilote OLE DB pour le fichier d’en-tête SQL Server (msoledbsql.h) peut être utilisé pour ajouter le pilote OLE DB pour la fonctionnalité d’accès de données de SQL Server pour vos applications personnalisées. Le pilote OLE DB pour le fichier d’en-tête SQL Server contient toutes les définitions, des attributs, des propriétés et les interfaces nécessaires pour tirer parti des nouvelles fonctionnalités introduites dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)].  
   
- Outre le pilote OLE DB pour le fichier d’en-tête SQL Server, il existe également un fichier de bibliothèque de msoledbsql.lib qui est la bibliothèque d’exportation pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fonctionnalités du programme de copie en bloc (BCP).  
+ Outre le pilote OLE DB pour le fichier d’en-tête SQL Server, il existe également un fichier de bibliothèque de msoledbsql.lib qui est la bibliothèque d’exportation pour [OpenSqlFilestream](../../../relational-databases/blob/access-filestream-data-with-opensqlfilestream.md) fonctionnalité.  
   
  Le pilote OLE DB pour le fichier d’en-tête SQL Server est rétrocompatible avec le fichier d’en-tête sqloledb.h utilisé avec Microsoft Data Access Components (MDAC), mais ne contient pas les CLSID pour SQLOLEDB (le fournisseur OLE DB pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] inclus avec MDAC) ou des symboles pour Fonctionnalités XML (ce qui ne sont pas pris en charge par le pilote OLE DB pour SQL Server).    
   
@@ -84,6 +83,6 @@ include "msoledbsql.h";
  Pour plus d’informations, consultez exécution [effectuant des opérations de copie en bloc](../../oledb/features/performing-bulk-copy-operations.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Génération d’Applications avec le pilote OLE DB pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  
+ [Génération d’applications avec OLE DB Driver pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  
   
   

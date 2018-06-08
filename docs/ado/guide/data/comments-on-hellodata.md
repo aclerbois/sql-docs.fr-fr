@@ -1,30 +1,27 @@
 ---
 title: Commentaires sur HelloData | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - hellodata sample application [ADO]
 ms.assetid: a2831d77-7040-4b73-bbae-fe0bf78107ed
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2265e361258ee49a9d387f3cb879f138c196ba8e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1e50dae422b42c365d6f72a9ee1b694c4ac9a4cc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="comments-on-hellodata"></a>Commentaires sur HelloData
 L’application HelloData parcourt les opérations de base d’une application ADO standard : mise en route, d’examiner, de modification et de mise à jour des données. Lorsque vous démarrez l’application, cliquez sur le premier bouton **obtenir des données**. Cette action exécute le **GetData** sous-routine.  

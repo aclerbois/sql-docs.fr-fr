@@ -1,16 +1,14 @@
 ---
 title: EXECUTE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|language-elements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - EXEC
@@ -33,16 +31,16 @@ helpviewer_keywords:
 - switching execution context
 - EXECUTE statement
 ms.assetid: bc806b71-cc55-470a-913e-c5f761d5c4b7
-caps.latest.revision: 
+caps.latest.revision: 104
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: e974faeb95631f73cd8f902194329c6eb54e825f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 9a68416a450c521bfcdf78887e2f6b4f469ea2c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-transact-sql"></a>EXECUTE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all_md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -214,7 +212,7 @@ Execute a character string
  Un module créé dans une autre base de données peut être exécuté si l'utilisateur est propriétaire du module ou possède l'autorisation nécessaire pour l'exécuter dans la base de données en question. Un module peut être exécuté sur un autre serveur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] si l'utilisateur qui l'exécute a l'autorisation nécessaire pour utiliser ce serveur (accès à distance) et pour exécuter le module dans la base de données. Si le nom d'un serveur est spécifié mais qu'aucun nom de base de données n'est spécifié, le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] recherche le module dans la base de données par défaut de l'utilisateur.  
   
  ;*number*  
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Entier facultatif qui regroupe les procédures de même nom. Ce paramètre n'est pas utilisé pour les procédures stockées étendues.  
   
@@ -233,7 +231,7 @@ Execute a character string
   
  Par défaut, les paramètres acceptent les valeurs NULL.  
   
- *valeur*  
+ *value*  
  Valeur du paramètre à passer au module ou à la commande directe. Si les noms des paramètres ne sont pas spécifiés, les valeurs des paramètres doivent être fournies dans l'ordre défini dans le module.  
   
  Lors de l'exécution de commandes directes sur des serveurs liés, l'ordre des valeurs des paramètres dépend du fournisseur OLE DB du serveur lié. La plupart des fournisseurs OLE DB lient les valeurs aux paramètres de gauche à droite.  
@@ -271,7 +269,7 @@ Execute a character string
  Spécifie le contexte dans lequel l'instruction est exécutée.  
   
  Connexion  
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
  Spécifie que le contexte dont l'identité doit être empruntée est une connexion. L'étendue de l'emprunt d'identité est le serveur.  
   
@@ -459,7 +457,7 @@ GO
 ### <a name="d-using-execute-with-a-remote-stored-procedure"></a>D. Utilisation de l'instruction EXECUTE avec une procédure stockée distante  
  Le code exemple suivant exécute la procédure stockée `uspGetEmployeeManagers` sur le serveur distant `SQLSERVER1` et stocke dans `@retstat` l'état du résultat qui indique la réussite ou l'échec.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 DECLARE @retstat int;  
@@ -518,7 +516,7 @@ EXECUTE dbo.ProcTestDefaults DEFAULT, 'I', @p3 = DEFAULT;
 ### <a name="g-using-execute-with-at-linkedservername"></a>G. Utilisation de l'instruction EXECUTE avec AT linked_server_name  
  Le code exemple suivant passe une chaîne de commandes à un serveur distant. Il crée un serveur lié `SeattleSales` qui pointe vers une autre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et exécute une instruction DDL (`CREATE TABLE`) sur ce serveur lié.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 EXEC sp_addlinkedserver 'SeattleSales', 'SQL Server'  
@@ -550,7 +548,7 @@ GO
 ### <a name="j-using-execute-to-query-an-oracle-database-on-a-linked-server"></a>J. Utilisation de l'instruction EXECUTE pour interroger une base de données Oracle sur un serveur lié  
  Le code exemple suivant exécute plusieurs instructions `SELECT` sur le serveur Oracle distant. Il commence par ajouter le serveur Oracle comme serveur lié puis crée ensuite la connexion au serveur lié.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 -- Setup the linked server.  
@@ -593,7 +591,7 @@ GO
 ### <a name="l-using-a-parameter-with-execute-and-at-linkedservername"></a>L. Utilisation d'un paramètre avec l'instruction EXECUTE et AT linked_server_name  
  L'exemple suivant passe une chaîne de commande à un serveur distant en utilisant un point d'interrogation (`?`) comme espace réservé pour un paramètre. Cet exemple crée un serveur lié `SeattleSales` qui pointe vers une autre instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et exécute une instruction `SELECT` sur ce serveur lié. L'instruction `SELECT` utilise le point d'interrogation comme espace réservé pour le paramètre `ProductID` (`952`) qui est fourni après l'instruction.  
   
-**S’applique à** : [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
+**S’applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]
   
 ```  
 -- Setup the linked server.  
@@ -609,7 +607,7 @@ GO
 ### <a name="m-using-execute-to-redefine-a-single-result-set"></a>M. Utilisation de l'instruction EXECUTE pour redéfinir un jeu de résultats unique  
  Certains des exemples précédents ont exécuté `EXEC dbo.uspGetEmployeeManagers 6;` qui a retourné 7 colonnes. L'exemple suivant montre l'utilisation de la syntaxe `WITH RESULT SET` pour modifier les noms et types de données du jeu de résultats retourné.  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
+**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
   
 ```  
 EXEC uspGetEmployeeManagers 16  
@@ -629,7 +627,7 @@ WITH RESULT SETS
 ### <a name="n-using-execute-to-redefine-a-two-result-sets"></a>N. Utilisation de l'instruction EXECUTE pour redéfinir deux jeux de résultats  
  Lorsque vous exécutez une instruction qui retourne plusieurs jeux de résultats, définissez chaque jeu de résultats attendu. L'exemple suivant dans [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] crée une procédure qui retourne deux jeux de résultats. Ensuite, la procédure est exécutée à l’aide de la clause **WITH RESULT SETS** et la spécification de deux définitions de jeu de résultats.  
   
-**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
+**S’applique à** : [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)]
   
 ```  
 --Create the procedure  

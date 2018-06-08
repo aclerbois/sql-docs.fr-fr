@@ -1,36 +1,23 @@
 ---
-title: "Élément (ASSL) de contenu | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément (ASSL) de contenu | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: assl
 ms.topic: reference
-apiname: Content Element
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords: Content
-helpviewer_keywords: Content element
-ms.assetid: 221addef-2f88-49c5-b8f5-9eee330497a9
-caps.latest.revision: "43"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f9d0cd4dc1e60a59af3b8d3e976eeff888d24aa1
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ee3c1babd828463e8654280c421d616535aca88e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="content-element-assl"></a>Élément Content (ASSL)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Décrit le contenu de la colonne dans la [MiningStructure](../../../analysis-services/scripting/objects/miningstructure-element-assl.md) élément.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Décrit le contenu de la colonne dans la [MiningStructure](../../../analysis-services/scripting/objects/miningstructure-element-assl.md) élément.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -48,7 +35,7 @@ ms.lasthandoff: 01/08/2018
 |Caractéristique|Description|  
 |--------------------|-----------------|  
 |Type de données et longueur|Chaîne (énumération)|  
-|Valeur par défaut|None|  
+|Valeur par défaut|Aucune|  
 |Cardinalité|1-1 : élément obligatoire qui peut apparaître une fois et une seule.|  
   
 ## <a name="element-relationships"></a>Relations entre les éléments  
@@ -56,19 +43,19 @@ ms.lasthandoff: 01/08/2018
 |Relation|Élément|  
 |------------------|-------------|  
 |Élément parent|[ScalarMiningStructureColumn](../../../analysis-services/scripting/data-type/scalarminingstructurecolumn-data-type-assl.md)|  
-|Éléments enfants|None|  
+|Éléments enfants|Aucune|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Cette énumération décrit le type de contenu représenté par une colonne de structure d'exploration de données et peut être étendue autant que nécessaire par les fournisseurs d'algorithmes d'exploration de données. Pour plus d’informations sur les types de contenu, consultez [Types de contenu &#40;exploration de données&#41;](../../../analysis-services/data-mining/content-types-data-mining.md).  
   
  Les valeurs répertoriées dans le tableau suivant sont généralement prises en charge par les fournisseurs d'algorithmes d'exploration de données.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |*Discrètes*|La colonne contient des valeurs discrètes.|  
 |*Continue*|Les valeurs de la colonne définissent un jeu continu de données numériques.|  
 |*Discrétisé*|Les valeurs de la colonne représentent des groupes (ou compartiments) de valeurs dérivés d'une colonne continue.|  
-|*Commandée*|Les valeurs de la colonne définissent un jeu ordonné.|  
+|*commandée*|Les valeurs de la colonne définissent un jeu ordonné.|  
 |*Cyclique*|Les valeurs de la colonne définissent un jeu ordonné cyclique.|  
 |*Probabilité*|Les valeurs de la colonne spécifient une probabilité pour les colonnes contenues dans le [ClassifiedColumns](../../../analysis-services/scripting/collections/classifiedcolumns-element-assl.md) élément du parent **ScalarMiningStructureColumn**.|  
 |*Variance*|Les valeurs de la colonne spécifient une variance pour les colonnes contenues dans le **ClassifiedColumns** élément du parent **ScalarMiningStructureColumn**.|  
@@ -80,7 +67,7 @@ ms.lasthandoff: 01/08/2018
   
  Outre ces valeurs standards, d’exploration de données des fournisseurs d’algorithmes inclus avec [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] prennent en charge les valeurs dans le tableau suivant.  
   
-|Valeur|Description|  
+|Valeur| Description|  
 |-----------|-----------------|  
 |*Séquence de touches*|La colonne est une colonne clé, et les valeurs de la colonne représentent une séquence d'événements.<br /><br /> Remarque : Ce type de contenu est uniquement applicable aux colonnes clés, dans lequel le **IsKey** a la valeur **True**.|  
 |*Temps clé*|La colonne est une colonne clé, et les valeurs de la colonne représentent des unités de mesure du temps.<br /><br /> Remarque : Ce type de contenu est uniquement applicable aux colonnes clés, dans lequel le **IsKey** a la valeur **True**.|  
@@ -90,7 +77,7 @@ ms.lasthandoff: 01/08/2018
  L’énumération qui correspond aux valeurs autorisées pour **contenu** dans l’objet d’objets AMO (Analysis Management) est modèle <xref:Microsoft.AnalysisServices.ScalarMiningStructureColumn>.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément ClassifiedColumns &#40; ASSL &#41;](../../../analysis-services/scripting/collections/classifiedcolumns-element-assl.md)   
- [Propriétés &#40; ASSL &#41;](../../../analysis-services/scripting/properties/properties-assl.md)  
+ [Élément ClassifiedColumns &#40;ASSL&#41;](../../../analysis-services/scripting/collections/classifiedcolumns-element-assl.md)   
+ [Propriétés & #40 ; ASSL & #41 ;](../../../analysis-services/scripting/properties/properties-assl.md)  
   
   

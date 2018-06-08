@@ -1,16 +1,13 @@
 ---
 title: DBCC CHECKFILEGROUP (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CHECKFILEGROUP_TSQL
@@ -28,19 +25,19 @@ helpviewer_keywords:
 - table integrity checks [SQL Server]
 - checking database objects
 ms.assetid: 8c70bf34-7570-4eb6-877a-e35064a1380a
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 60
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fc36aa0cfddcceefda1aefc6f4e7dc040f9a4b5f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 76189bd8ce8057d50671c93c09fbb7a5f0883544
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-checkfilegroup-transact-sql"></a>DBCC CHECKFILEGROUP (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)] Vérifie l’allocation et l’intégrité de la structure de toutes les tables et vues indexées dans le groupe de fichiers spécifié de la base de données active.
+[!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
+Vérifie l'allocation et l'intégrité de la structure de toutes les tables et vues indexées dans le groupe de fichiers spécifié de la base de données active.
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
 ## <a name="syntax"></a>Syntaxe  
@@ -73,7 +70,7 @@ DBCC CHECKFILEGROUP
  Numéro d'identification (ID) du groupe de fichiers, dans la base de données active, pour lequel l'allocation de table et l'intégrité de la structure sont vérifiées.  
   
  NOINDEX  
- Indique qu'il ne faut pas effectuer de vérifications intensives des index non-cluster pour les tables utilisateur. Cela diminue la durée d'exécution globale. L'argument NOINDEX n'affecte pas les tables système, car DBCC CHECKFILEGROUP vérifie toujours tous les index des tables système.  
+ Indique qu'il ne faut pas effectuer de vérifications intensives des index non cluster pour les tables utilisateur. Cela diminue la durée d'exécution globale. L'argument NOINDEX n'affecte pas les tables système, car DBCC CHECKFILEGROUP vérifie toujours tous les index des tables système.  
   
  ALL_ERRORMSGS  
  Affiche un nombre illimité d'erreurs par objet. Tous les messages d'erreur sont affichés par défaut. La spécification ou non de cette option n'a aucun effet.  
@@ -124,15 +121,15 @@ S'il est impossible de créer un instantané, ou si l'option TABLOCK est spécif
 DBCC CHECKFILEGROUP effectue par défaut une vérification parallèle des objets. Le degré de parallélisme est automatiquement défini par le processeur de requêtes. Le degré maximum de parallélisme est configuré de la même manière que les requêtes parallèles. Pour limiter le nombre maximal de processeurs disponibles pour la vérification DBCC, utilisez [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md). Pour plus d’informations, consultez [Configurer l’option de configuration du serveur max degree of parallelism](../../database-engine/configure-windows/configure-the-max-degree-of-parallelism-server-configuration-option.md).
 La vérification parallèle peut être désactivée à l'aide de l'indicateur de trace 2528. Pour plus d’informations, consultez [Indicateurs de trace &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md).
   
-## <a name="nonclustered-indexes-on-separate-filegroups"></a>Index non-cluster sur des groupes de fichiers distincts  
-Si un index non-cluster du groupe de fichiers spécifié est associé à une table d'un autre groupe de fichiers, l'index n'est pas vérifié, car la table de base n'est pas disponible pour être validée.
-Si une table du groupe de fichiers spécifié possède un index non-cluster dans un autre groupe de fichiers, l'index non-cluster n'est pas vérifié pour les raisons suivantes :
--   La structure de la table de base n'est pas dépendante de la structure d'un index non-cluster. Les index non-cluster n'ont pas à être analysés pour permettre la validation de la table de base.  
+## <a name="nonclustered-indexes-on-separate-filegroups"></a>Index non cluster sur des groupes de fichiers distincts  
+Si un index non cluster du groupe de fichiers spécifié est associé à une table d'un autre groupe de fichiers, l'index n'est pas vérifié, car la table de base n'est pas disponible pour être validée.
+Si une table du groupe de fichiers spécifié possède un index non cluster dans un autre groupe de fichiers, l'index non cluster n'est pas vérifié pour les raisons suivantes :
+-   La structure de la table de base n'est pas dépendante de la structure d'un index non cluster. Les index non cluster n'ont pas à être analysés pour permettre la validation de la table de base.  
 -   La commande DBCC CHECKFILEGROUP valide les objets uniquement dans le groupe de fichiers spécifié.  
-Un index cluster et une table ne peuvent pas se trouver dans des groupes de fichiers différents ; par conséquent, les considérations précédentes ne peuvent s'appliquer qu'aux index non-cluster.
+Un index cluster et une table ne peuvent pas se trouver dans des groupes de fichiers différents ; par conséquent, les considérations précédentes ne peuvent s'appliquer qu'aux index non cluster.
   
 ## <a name="partitioned-tables-on-separate-filegroups"></a>Tables partitionnées dans des groupes de fichiers distincts  
-Lorsqu'une table partitionnée existe sur plusieurs groupes de fichiers, DBCC CHECKFILEGROUP vérifie les ensembles de lignes de partition présents sur le groupe de fichiers spécifiés et ignore les ensembles de lignes dans les autres groupes de fichiers. Le message d'information 2594 indique les partitions qui n'ont pas été vérifiées. Les index non-cluster qui ne figurent pas dans le groupe de fichiers spécifié ne sont pas vérifiés.
+Lorsqu'une table partitionnée existe sur plusieurs groupes de fichiers, DBCC CHECKFILEGROUP vérifie les ensembles de lignes de partition présents sur le groupe de fichiers spécifiés et ignore les ensembles de lignes dans les autres groupes de fichiers. Le message d'information 2594 indique les partitions qui n'ont pas été vérifiées. Les index non cluster qui ne figurent pas dans le groupe de fichiers spécifié ne sont pas vérifiés.
   
 ## <a name="understanding-dbcc-error-messages"></a>Présentation des messages d'erreur de DBCC  
 Une fois la commande DBCC CHECKFILEGROUP exécutée, un message est consigné dans le journal des erreurs de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si la commande DBCC est correctement exécutée, le message indique que l'exécution a réussi, ainsi que la durée d'exécution de la commande. Si la commande DBCC est interrompue avant la fin de la vérification en raison d’une erreur, le message indique que la commande n’a pas abouti et précise une valeur d’état ainsi que la durée d’exécution de la commande. Le tableau suivant répertorie et décrit les valeurs d'état pouvant être incluses dans le message.
@@ -147,7 +144,7 @@ Une fois la commande DBCC CHECKFILEGROUP exécutée, un message est consigné da
 |5|Une erreur inconnue s'est produite et a arrêté la commande DBCC.|  
   
 ## <a name="error-reporting"></a>Rapport d'erreurs  
-Un fichier minidump (SQLDUMP*nnnn*.txt) est créé dans le répertoire LOG de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] chaque fois que DBCC CHECKFILEGROUP détecte une erreur d’endommagement. Lorsque les fonctions de collecte des données d'utilisation des fonctionnalités et de rapport d'erreurs sont activées pour l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ce fichier est automatiquement transféré à [!INCLUDE[msCoName](../../includes/msconame-md.md)]. Les données collectées sont utilisées pour améliorer les fonctionnalités [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
+Un mini-fichier de vidage (SQLDUMP*nnnn*.txt) est créé dans le répertoire LOG de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] chaque fois que DBCC CHECKFILEGROUP détecte une erreur d’altération. Lorsque les fonctions de collecte des données d'utilisation des fonctionnalités et de rapport d'erreurs sont activées pour l'instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], ce fichier est automatiquement transféré à [!INCLUDE[msCoName](../../includes/msconame-md.md)]. Les données collectées sont utilisées pour améliorer les fonctionnalités [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].
 Le fichier de vidage contient les résultats de la commande DBCC CHECKFILEGROUP ainsi que des informations de diagnostic supplémentaires. Ce fichier contient des listes de contrôle d'accès discrétionnaire (DACL, Discretionary Access Control Lists) avec accès restreint. L’accès est limité au compte de service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et aux membres du rôle **sysadmin**. Par défaut, le rôle **sysadmin** contient tous les membres du groupe Windows BUILTIN\Administrators et du groupe Administrateurs local. La commande DBCC n'échoue pas si le processus de collecte des données échoue.
   
 ## <a name="resolving-errors"></a>Résolution des erreurs  
@@ -211,7 +208,7 @@ DBCC CHECKFILEGROUP;
 GO  
 ```  
   
-### <a name="b-checking-the-adventureworks-primary-filegroup-without-nonclustered-indexes"></a>B. Vérification du groupe de fichiers PRIMARY de la base de données AdventureWorks sans index non-cluster  
+### <a name="b-checking-the-adventureworks-primary-filegroup-without-nonclustered-indexes"></a>B. Vérification du groupe de fichiers PRIMARY de la base de données AdventureWorks sans index non cluster  
 L’exemple suivant vérifie le groupe de fichiers principal de la base de données `AdventureWorks2012` (à l’exception des index non-cluster) en spécifiant le numéro d’identification du groupe de fichiers principal et `NOINDEX`.
   
 ```sql  

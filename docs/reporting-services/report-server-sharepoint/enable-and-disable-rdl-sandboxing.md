@@ -1,25 +1,23 @@
 ---
-title: "Activer et désactiver le sandboxing RDL pour Reporting Services en mode intégré SharePoint | Microsoft Docs"
-ms.custom: 
+title: Activer et désactiver le sandboxing RDL pour Reporting Services en mode intégré SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server-sharepoint
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5cd348cbc4968f915203ff1b0e0fa1d1f13f955c
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 842c02dfb20f6e39e186937bad25f07c40e7b533
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-and-disable-rdl-sandboxing-for-reporting-services-in-sharepoint-integrated-mode"></a>Activer et désactiver le sandboxing RDL pour Reporting Services en mode intégré SharePoint
 
@@ -135,7 +133,7 @@ Vous pouvez modifier la fonctionnalité Sandboxing RDL afin d'aider à gérer le
   
  Pour ajouter des fonctions [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .NET Framework à la liste autorisée, ajoutez les types correspondants de l’espace de noms Microsoft.VisualBasic à cette liste.  
   
- Pour ajouter des mots clés du type [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .NET Framework à la liste verte, ajoutez le type CLR correspondant à la liste verte. Par exemple, pour utiliser le mot clé [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .NET Framework **Integer**, ajoutez le fragment XML suivant à l’élément **\<RDLSandboxing>** :  
+ Pour ajouter des mots clés du type [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .NET Framework à la liste verte, ajoutez le type CLR correspondant à la liste verte. Par exemple, pour utiliser le mot clé [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] .NET Framework **Integer**, ajoutez le fragment XML suivant à l’élément **\<RDLSandboxing>**  :  
   
 ```  
 <Allow Namespace="System">Int32</Allow>  

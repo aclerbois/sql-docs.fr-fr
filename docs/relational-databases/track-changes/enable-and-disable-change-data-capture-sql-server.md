@@ -1,37 +1,35 @@
 ---
-title: "Activer et désactiver la capture de données modifiées (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Activer et désactiver la capture de données modifiées (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change data capture [SQL Server], enabling tables
 - change data capture [SQL Server], enabling databases
 - change data capture [SQL Server], disabling databases
 - change data capture [SQL Server], disabling tables
 ms.assetid: b741894f-d267-4b10-adfe-cbc14aa6caeb
-caps.latest.revision: 
+caps.latest.revision: 13
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: c19f08347185ee6ea46977df74d0317041beb020
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 9fd8c6016a58de25e0495d8195340e8d0f2f0732
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-and-disable-change-data-capture-sql-server"></a>Activer et désactiver la capture de données modifiées (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cette rubrique décrit l'activation et la désactivation de la capture de données modifiées pour une base de données et une table.  
+  Cette rubrique décrit l'activation et la désactivation de la capture de données modifiées pour une base de données et une table.  
   
 ## <a name="enable-change-data-capture-for-a-database"></a>Activer la capture des données modifiées pour une base de données  
  Avant qu’une instance de capture puisse être créée pour des tables individuelles, un membre du rôle serveur fixe **sysadmin** doit d’abord activer la base de données pour la capture des données modifiées. Cela se fait en exécutant la procédure stockée [sys.sp_cdc_enable_db &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-db-transact-sql.md) dans le contexte de la base de données. Pour déterminer si une base de données est déjà activée, interrogez la colonne **is_cdc_enabled** dans l’affichage catalogue **sys.databases**.  

@@ -1,15 +1,13 @@
 ---
-title: sys.time_zone_info (Transact-SQL) | Microsoft Docs
+title: Sys.time_zone_info (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 03/27/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: system-catalog-views
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
@@ -24,16 +22,16 @@ f1_keywords:
 helpviewer_keywords:
 - sys.time_zone_info system table
 ms.assetid: 3f51a9a4-75f8-4a11-9552-8bf6118b68da
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3d832e1aca65d9b129ff497579a7e2ab00f57ac9
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 252def1ce861b926a6c8a990a3cbf10b22eb83f6
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="systimezoneinfo-transact-sql"></a>sys.time_zone_info (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]

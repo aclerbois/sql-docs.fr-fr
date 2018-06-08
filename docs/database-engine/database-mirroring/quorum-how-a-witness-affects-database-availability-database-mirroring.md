@@ -1,16 +1,15 @@
 ---
 title: "Quorum : effets d'un témoin sur la disponibilité de la base de données (mise en miroir de bases de données) | Microsoft Docs"
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - quorum [SQL Server], database mirroring
 - running exposed in database mirroring [SQL Server]
@@ -23,19 +22,19 @@ helpviewer_keywords:
 - full quorum [SQL Server]
 - high-availability mode [SQL Server]
 ms.assetid: a62d9dd7-3667-4751-a294-a61fc9caae7c
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2f01ca52594ddf49dc65f48099822b2a61a92f11
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 6880c967b74d47984f58b318ee2856fd6c268c7d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quorum-how-a-witness-affects-database-availability-database-mirroring"></a>Quorum : effets d'un témoin sur la disponibilité de la base de données (mise en miroir de bases de données)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Chaque fois qu’un témoin est défini pour une session de mise en miroir de base de données, un *quorum* est nécessaire. Le quorum désigne une relation où deux ou plusieurs instances de serveur dans une session de mise en miroir de base de données sont connectées. En règle générale, le quorum implique trois instances de serveurs interconnectées. Lorsqu'un témoin est défini, un quorum est requis pour rendre la base de données disponible. Conçu pour les sessions en mode haute sécurité avec basculement automatique, un quorum garantit qu'une base de données appartient à un seul partenaire à la fois.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Chaque fois qu’un témoin est défini pour une session de mise en miroir de base de données, un *quorum* est nécessaire. Le quorum désigne une relation où deux ou plusieurs instances de serveur dans une session de mise en miroir de base de données sont connectées. En règle générale, le quorum implique trois instances de serveurs interconnectées. Lorsqu'un témoin est défini, un quorum est requis pour rendre la base de données disponible. Conçu pour les sessions en mode haute sécurité avec basculement automatique, un quorum garantit qu'une base de données appartient à un seul partenaire à la fois.  
   
  Si une instance de serveur spécifique est déconnectée d'une session de mise en miroir, l'instance perd le quorum. Si aucune instance de serveur n'est connectée, la session perd le quorum et la base de données n'est plus disponible. Trois types de quorum sont possibles :  
   

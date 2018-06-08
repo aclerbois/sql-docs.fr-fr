@@ -1,15 +1,13 @@
 ---
-title: sys.pdw_nodes_column_store_segments (Transact-SQL) | Microsoft Docs
+title: Sys.pdw_nodes_column_store_segments (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 03/28/2018
 ms.prod: ''
 ms.prod_service: sql-data-warehouse, pdw
 ms.service: sql-data-warehouse
-ms.component: system-catalog-views
+ms.component: design
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
@@ -17,16 +15,16 @@ dev_langs:
 ms.assetid: e2fdf8e9-1b74-4682-b2d4-c62aca053d7f
 caps.latest.revision: 9
 author: hirokib
-ms.author: elbutter;barbkess
+ms.author: elbutter
 manager: jrj
-ms.workload: Inactive
-ms.openlocfilehash: 8e3daa47eea78bb90c736a42e7e541bea62e5ac4
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: 92eee101d27c4483207ba1be9933b750aabdea3d
+ms.sourcegitcommit: 2ddc0bfb3ce2f2b160e3638f1c2c237a898263f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="syspdwnodescolumnstoresegments-transact-sql"></a>sys.pdw_nodes_column_store_segments (Transact-SQL)
+# <a name="syspdwnodescolumnstoresegments-transact-sql"></a>Sys.pdw_nodes_column_store_segments (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]
 
 Contient une ligne pour chaque colonne dans un index columnstore.  

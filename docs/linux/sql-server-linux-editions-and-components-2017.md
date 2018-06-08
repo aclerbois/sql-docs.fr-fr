@@ -1,18 +1,13 @@
-﻿---
+---
 title: Éditions et des fonctionnalités prises en charge de SQL Server 2017 ~ Linux | Documents Microsoft
 ms.custom: sql-linux
 ms.date: 09/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: ''
+ms.prod: sql
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- sql-linux
-- server-general
+ms.technology: linux
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - Enterprise Edition [SQL Server]
 - Developer Edition [SQL Server]
@@ -31,15 +26,15 @@ helpviewer_keywords:
 - editions [SQL Server], about edition options
 - Setup [SQL Server]
 ms.assetid: ''
-caps.latest.revision: ''
+caps.latest.revision: 121
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.openlocfilehash: cd937ab176ef7c33f6ffa99090ac36b69182968c
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 8222c0a58c1dbaeeaa5bd3dffedcca254728aae6
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="editions-and-supported-features-of-sql-server-2017-on-linux"></a>Éditions et fonctionnalités prises en charge pour SQL Server 2017 sous Linux
 
@@ -62,12 +57,12 @@ Pour obtenir la liste des fonctionnalités de SQL Server non disponibles sur Lin
 ## <a name="includessnoversionincludesssnoversion-mdmd-editions"></a>Éditions de [!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)]  
  Le tableau ci-dessous décrit les éditions de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. 
   
-|[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] édition|Définition|  
+|Édition de[!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] |Définition|  
 |---------------------------------------|----------------|  
 |Enterprise|Offre premium, [!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] Enterprise edition offre des fonctionnalités de centre de données haut de gamme complète avec des performances ultra-rapides-fast l’activation de haut niveau de service pour les charges de travail critiques.|  
 |Standard|[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] Standard edition propose une gestion de base de données pour les PME d’exécuter leurs applications et prend en charge des outils de développement courants pour locaux et cloud, pour une gestion efficace de la base de données avec un minimum de ressources informatiques.|  
-|Web|[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] L’édition Web est une option offrant un coût total de possession faible, destinée aux hébergeurs Web et aux VAP Web, fournissant des fonctions évolutives, rentables et gérables aux propriétés Web à petite ou grande échelle.|  
-|Développeur|[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] L’édition Developer permet aux développeurs de créer des applications quelconques basées sur [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Il inclut toutes les fonctionnalités de l'édition Enterprise, mais sa licence permet uniquement de l'utiliser comme un système de développement et de test, et non comme un serveur de production. L'édition [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Developer est la solution idéale pour le développement et le test d'applications.|  
+|Web|L'édition Web[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] est une option offrant un coût total de possession faible destinée aux hébergeurs Web et aux VAP Web, fournissant des fonctions évolutives, rentables et gérables aux propriétés Web à petite ou grande échelle.|  
+|Développeur|L'édition[!INCLUDE[ssNoVersion](../includes/ssNoVersion-md.md)] Developer permet aux développeurs de créer des applications basées sur [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)]. Il inclut toutes les fonctionnalités de l'édition Enterprise, mais sa licence permet uniquement de l'utiliser comme un système de développement et de test, et non comme un serveur de production. L'édition [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Developer est la solution idéale pour le développement et le test d'applications.|  
 |Express Edition|L’édition Express est une édition de base comprenant une base de données gratuite, idéale pour découvrir et créer des applications bureautiques et de petites applications serveur pilotées par les données. C'est la solution idéale pour les éditeurs de logiciels, les développeurs et les amateurs de création d'applications clientes. Si vous avez besoin de fonctionnalités de base de données plus évoluées, vous pouvez mettre à niveau de manière transparente [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] Express vers des versions plus sophistiquées de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)].|  
   
 ## <a name="using-includessnoversionincludesssnoversion-mdmd-with-clientserver-applications"></a>Utilisation de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] avec des applications client/serveur  
@@ -93,12 +88,12 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 |-------------|----------------|--------------|---------|------------------------|
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]<sup>1</sup>|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs| 
 |Capacité maximale de calcul utilisée par une instance unique - [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] ou [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]|Maximum du système d'exploitation|Limité à moins de 4 sockets ou 24 cœurs|Limité à moins de 4 sockets ou 16 cœurs|Limité à moins de 1 socket ou 4 cœurs|
-|Mémoire maximale pour le pool de mémoires tampons par instance de [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Maximum du système d’exploitation|128 Go|64 Go|1410 Mo|
-|Mémoire maximale pour le cache de segment Columnstore par instance de [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Mémoire illimitée| 32 Go| 16 Go| 352 Mo|  
-|Taille maximale des données optimisées en mémoire par base de données dans [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Mémoire illimitée| 32 Go| 16 Go| 352 Mo|
+|Mémoire maximale du pool de mémoires tampons par instance du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Maximum du système d’exploitation|128 Go|64 Go|1410 Mo|
+|Mémoire maximale du cache de segments columnstore par instance du [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Mémoire illimitée| 32 Go| 16 Go| 352 Mo|  
+|Taille maximale des données à mémoire optimisée par base de données dans le [!INCLUDE[ssDEnoversion](../includes/ssdenoversion-md.md)]|Mémoire illimitée| 32 Go| 16 Go| 352 Mo|
 |Taille maximale de la base de données relationnelle|524 Po|524 Po|524 Po|10 GB|  
   
-<sup>1</sup> L'édition Enterprise avec un mode de licences serveur + CAL (licence d'accès client), non disponible pour les nouveaux contrats, est limitée à un maximum de 20 cœurs par instance SQL Server. Il n'existe aucune limite dans le mode de licence Serveur par cœurs. Pour plus d’informations, consultez [limites de capacité de calcul par édition de SQL Server](../sql-server/compute-capacity-limits-by-edition-of-sql-server.md). 
+<sup>1</sup> Enterprise edition avec serveur + Client accès licences (CAL) (non disponible pour les nouveaux contrats) est limitée à un maximum de 20 cœurs par instance de SQL Server. Il n'existe aucune limite dans le mode de licence Serveur selon le nombre de cœurs. Pour plus d’informations, consultez [limites de capacité de calcul par l’édition de SQL Server](../sql-server/compute-capacity-limits-by-edition-of-sql-server.md).  
  
 ##  <a name="RDBMSHA"></a> Haute disponibilité SGBDR  
   
@@ -122,11 +117,11 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 |Sauvegarde chiffrée|Oui|Oui|Non|non|
 |Sauvegarde hybride vers Windows Azure (sauvegarde vers une URL)|Oui|Oui|Non|non|
   
-<sup>1</sup> Sur l'édition Enterprise, le nombre de nœuds correspond au maximum du système d’exploitation. L’édition Standard prend en charge deux nœuds. 
+<sup>1</sup> sur Enterprise edition, le nombre de nœuds est au maximum du système d’exploitation. L’édition Standard prend en charge deux nœuds. 
 
-<sup>2</sup> L'édition Enterprise prend en charge jusqu'à 8 réplicas secondaires, notamment 2 réplicas secondaires synchrones. 
+<sup>2</sup> sur Enterprise edition prend en charge jusqu'à 8 réplicas secondaires - notamment 2 réplicas secondaires synchrones. 
 
-<sup>3</sup> L'édition standard prend en charge les groupes de disponibilité de base. Un groupe de disponibilité de base prend en charge deux réplicas, avec une seule base de données. Pour plus d’informations sur les groupes de disponibilité de base, consultez [Groupes de disponibilité de base](../database-engine/availability-groups/windows/basic-availability-groups-always-on-availability-groups.md). 
+<sup>3</sup> standard edition prend en charge les groupes de disponibilité de base. Un groupe de disponibilité de base prend en charge deux réplicas, avec une base de données. Pour plus d’informations sur les groupes de disponibilité de base, consultez [Groupes de disponibilité de base](../database-engine/availability-groups/windows/basic-availability-groups-always-on-availability-groups.md).    
 
 ##  <a name="RDBMSSP"></a> Scalabilité et performances SGBDR  
   
@@ -151,7 +146,7 @@ L’édition Developer continue à prendre en charge seulement 1 client pour [S
 |Améliorations de l’insertion en bloc|Oui|Oui|Oui|Oui|
 
 
-<sup>1</sup> La taille des données OLTP en mémoire et le cache de segments columnstore sont limités à la quantité de mémoire spécifiée par l’édition dans la section Limites d’échelle. Le degré maximum de parallélisme est limité. Les degrés de parallélisme (DOP) pour la création d’un index est limitée au maximum à 2 pour l’Édition Standard et 1 pour les éditions Web et Express. Ceci fait référence aux index columnstore créés sur des tables sur disque et les tables optimisées en mémoire.
+<sup>1</sup> La taille des données OLTP en mémoire et le cache de segments columnstore sont limités à la quantité de mémoire spécifiée par l’édition dans la section Limites d’échelle. Le Nombre maximal de degrés de parallélisme est limité. Les degrés de parallélisme de processus (DOP) pour la création d’un index est limitée à 2 de parallélisme maximal pour l’Édition Standard et 1 degré de parallélisme pour les éditions Web et Express. Ceci fait référence aux index columnstore créés sur des tables basées sur des disques et des tables à mémoire optimisée.
 
 ##  <a name="RDBMSS"></a> Sécurité SGBDR  
   

@@ -1,17 +1,15 @@
 ---
-title: "Type de propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Type de propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Member::Type
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Type property [ADO MD]
 ms.assetid: 34698910-64b9-41d8-8531-9de12f2b1e32
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3affa9a3d7d5a10c3a423a7e2015d79339c23f9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e6d7a6d956b1ba9878b7e3fdfe8db8150a079169
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-property-ado-md"></a>Type, propriété (ADO MD)
 Indique le type d’actuel [membre](../../../ado/reference/ado-md-api/member-object-ado-md.md).  

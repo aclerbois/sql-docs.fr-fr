@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTypeInfo (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTypeInfo (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getTypeInfo
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getTypeInfo
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 23208f01-c1bf-4235-b29c-9051d3df59a3
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2424ec8f3b484272d2311ac7880cc8810561bd2e
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d81b932d536240b01c79e8e4a8e8589efae4d603
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettypeinfo-method-sqlserverdatabasemetadata"></a>Méthode getTypeInfo (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -51,19 +50,19 @@ public java.sql.ResultSet getTypeInfo()
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|TYPE_NAME|**Chaîne**|Nom du type de données.|  
+|TYPE_NAME|**String**|Nom du type de données.|  
 |DATA_TYPE|**courte**|Type de données SQL de java.sql.Types.|  
 |PRECISION|**int**|Nombre total de chiffres significatifs.|  
-|LITERAL_PREFIX|**Chaîne**|Caractère(s) utilisé(s) devant une constante.|  
-|LITERAL_SUFFIX|**Chaîne**|Caractère(s) utilisé(s) pour terminer une constante.|  
-|CREATE_PARAMS|**Chaîne**|Description des paramètres de création du type de données.|  
+|LITERAL_PREFIX|**String**|Caractère(s) utilisé(s) devant une constante.|  
+|LITERAL_SUFFIX|**String**|Caractère(s) utilisé(s) pour terminer une constante.|  
+|CREATE_PARAMS|**String**|Description des paramètres de création du type de données.|  
 |NULLABLE|**courte**|Indique si la colonne peut contenir une valeur Null. Il peut prendre l’une des valeurs suivantes :<br /><br /> typeNoNulls (0)<br /><br /> typeNullable (1)<br /><br /> typeNullableUnknown (2)|  
 |CASE_SENSITIVE|**boolean**|Indique si le type de donnée respecte la casse. «**true**« si le type est respecte la casse ; sinon, »**false**».|  
 |SEARCHABLE|**courte**|Indique si la colonne désignée peut être utilisée dans une clause SQL WHERE. Il peut prendre l’une des valeurs suivantes :<br /><br /> typePredNone (0)<br /><br /> typePredChar (1)<br /><br /> typePredBasic (2)<br /><br /> typeSeachable (3)|  
 |UNSIGNED_ATTRIBUTE|**boolean**|Indique le signe du type de données. «**true**« si le type n’est pas signé ; sinon, »**false**».|  
 |FIXED_PREC_SCALE|**boolean**|Indique que le type de données peut être une valeur monétaire. «**true**» si le type de données est de type monnaie ; sinon, «**false**».|  
 |AUTO_INCREMENT|**boolean**|Indique que le type de données peut être incrémenté automatiquement. «**true**« si le type peut être incrémenté automatiquement ; sinon, »**false**».|  
-|LOCAL_TYPE_NAME|**Chaîne**|Nom localisé du type de données.|  
+|LOCAL_TYPE_NAME|**String**|Nom localisé du type de données.|  
 |MINIMUM_SCALE|**courte**|Nombre maximal de chiffres situés à droite de la virgule décimale.|  
 |MAXIMUM_SCALE|**courte**|Nombre minimal de chiffres situés à droite de la virgule décimale.|  
 |SQL_DATA_TYPE|**int**|Non pris en charge par le pilote JDBC.|  

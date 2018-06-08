@@ -1,17 +1,15 @@
 ---
-title: "WillConnect, événement (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: WillConnect, événement (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - WillConnect
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - WillConnect event [ADO]
 ms.assetid: da561d58-eb58-446c-a4fd-1838c76073c0
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f80b08a53784a215d58d7f36697207f4d8c3c942
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: cbb3a5b97ede8abe7e028e6d46d52a1c5ad7581f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="willconnect-event-ado"></a>WillConnect, événement (ADO)
 Le **WillConnect** événement est appelé avant le début d’une connexion.  
@@ -43,10 +40,10 @@ WillConnect ConnectionString, UserID, Password, Options, adStatus, pConnection
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *ConnectionString*  
+ *connectionString*  
  A **chaîne** qui contient les informations de connexion pour la connexion en attente.  
   
- *UserID*  
+ *ID d’utilisateur*  
  A **chaîne** qui contient un nom d’utilisateur pour la connexion en attente.  
   
  *Mot de passe*  

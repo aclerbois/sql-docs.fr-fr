@@ -1,16 +1,15 @@
 ---
 title: sp_showpendingchanges (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_showpendingchanges
 ms.assetid: 8013a792-639d-4550-b262-e65d30f9d291
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a80816191ac9ad2cd9a210c59268b23f4ea3a093
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 2b59856ba83d3118a9246bb5cd93a8d63e7745f2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spshowpendingchanges-transact-sql"></a>sp_showpendingchanges (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,16 +50,16 @@ sp_showpendingchanges [ [ @destination_server = ] 'destination_server' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ @destination_server  **=**  ] **'***destination_server***'**  
+ [ @destination_server **=** ] **'***destination_server***'**  
  Nom du serveur sur lequel les modifications répliquées sont appliquées. *destination_server* est **sysname**, avec NULL comme valeur par défaut.  
   
- [ @publication  **=**  ] **'***publication***'**  
+ [ @publication **=** ] **'***publication***'**  
  Nom de la publication. *publication* est **sysname**, avec NULL comme valeur par défaut. Lorsque *publication* est spécifié, les résultats sont uniquement limités à la publication spécifiée.  
   
- [ @article  **=**  ] **'***article***'**  
+ [ @article **=** ] **'***article***'**  
  Nom de l'article. *article* est **sysname**, avec NULL comme valeur par défaut. Lorsque *article* est spécifié, les résultats sont uniquement limités à l’article spécifié.  
   
- [ @show_rows  **=**  ] *show_rows*  
+ [ @show_rows **=** ] *show_rows*  
  Spécifie si le jeu de résultats contient des informations plus spécifiques sur les modifications en attente, avec la valeur par défaut **0**. Si la valeur **1** est spécifiée, le jeu de résultats contient les colonnes is_delete et rowguid.  
   
 ## <a name="result-set"></a>Jeu de résultats  
@@ -90,7 +88,7 @@ sp_showpendingchanges [ [ @destination_server = ] 'destination_server' ]
   
  Lorsqu’un article spécifié pour *article* n’appartient pas à la publication indiquée pour *publication,* un nombre de 0 est retourné pour pending_deletes et pending_ins_and_upd.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres du rôle de serveur fixe sysadmin ou du rôle de base de données fixe db_owner peuvent exécuter la procédure sp_showpendingchanges.  
   
 ## <a name="see-also"></a>Voir aussi  

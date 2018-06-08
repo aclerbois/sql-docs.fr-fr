@@ -1,27 +1,19 @@
 ---
 title: Applet de commande Backup-ASDatabase | Documents Microsoft
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 03d58a82-021c-4e13-b265-c084f42a8bb2
-caps.latest.revision: "13"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c4b8975c64d8fecd6227368ee0147e94496cb1df
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ea4e93828aded76fd45ffe6bd279cba8397d8483
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="backup-asdatabase-cmdlet"></a>Applet de commande Backup-ASDatabase
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
@@ -36,7 +28,7 @@ ms.lasthandoff: 01/08/2018
   
  `Backup-ASDatabase –Database <Microsoft.AnalysisServices.Database> [-AllowOverwrite <SwitchParameter>] [-BackupRemotePartitions <SwitchParameter>] [-ApplyCompression <SwitchParameter>] [-FilePassword <SecureString>] [-Locations <Microsoft.AnalysisServices.BackupLocation[]>] [-Server <string>] [-Credential <PSCredential>] [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  Permet à un administrateur système Analysis Services de sauvegarder une base de données multidimensionnelle ou tabulaire dans un fichier de sauvegarde. Si vous ne spécifiez pas un emplacement, l'emplacement de sauvegarde par défaut spécifié pendant l'installation est utilisé.  
   
  Les fichiers que vous sauvegardez peuvent être chiffrés. Utilisez –FilePassword pour chiffrer le fichier. Lorsque vous restaurez le fichier ultérieurement, vous devez fournir le même mot de passe que celui que vous avez spécifié pour le chiffrer.  
@@ -62,7 +54,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  

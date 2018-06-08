@@ -1,37 +1,28 @@
 ---
 title: Ensemble de lignes DISCOVER_JOBS | Documents Microsoft
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: DISCOVER_JOBS rowset
-ms.assetid: b4d83bb6-aed3-4513-b516-cefadf95dad2
-caps.latest.revision: "13"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 0fd27205ff919130eed2e7708031b0268f35408f
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: e9d0d836d8fe44041aa541d71d86be327647dab9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="discoverjobs-rowset"></a>Ensemble de lignes DISCOVER_JOBS
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Fournit des informations sur les travaux actifs exécutés sur le serveur. Un travail fait une partie d'une commande qui exécute une tâche spécifique pour le compte de la commande.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Fournit des informations sur les travaux actifs exécutés sur le serveur. Un travail fait une partie d'une commande qui exécute une tâche spécifique pour le compte de la commande.  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  L'ensemble de lignes **DISCOVER_JOBS** contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Longueur|Description|  
+|Nom de colonne|Indicateur de type|Longueur| Description|  
 |-----------------|--------------------|------------|-----------------|  
 |**JOB_CREATION_TIME**|**DBTYPE_DBTIMESTAMP**||Date et heure UTC du serveur auxquelles le travail a été créé.|  
 |**JOB_DESCRIPTION**|**DBTYPE_WSTR**||Description du travail attribuée par le service du serveur.|  
@@ -49,13 +40,13 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|SPID|DBTYPE_I4|Facultatif.|  
-|JOB_ID|DBTYPE_I4|Facultatif.|  
-|JOB_DESCRIPTION|DBTYPE_WSTR|Facultatif.|  
-|JOB_THREADPOOL_ID|DBTYPE_I4|Facultatif.|  
-|JOB_MIN TOTAL_TIME_MS|DBTYPE_I8|Facultatif.|  
+|SPID|DBTYPE_I4|Ce paramètre est facultatif.|  
+|JOB_ID|DBTYPE_I4|Ce paramètre est facultatif.|  
+|JOB_DESCRIPTION|DBTYPE_WSTR|Ce paramètre est facultatif.|  
+|JOB_THREADPOOL_ID|DBTYPE_I4|Ce paramètre est facultatif.|  
+|JOB_MIN TOTAL_TIME_MS|DBTYPE_I8|Ce paramètre est facultatif.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma XML for Analysis](../../../analysis-services/schema-rowsets/xml/xml-for-analysis-schema-rowsets.md)  
+ [XML for Analysis ensembles de lignes de schéma](../../../analysis-services/schema-rowsets/xml/xml-for-analysis-schema-rowsets.md)  
   
   

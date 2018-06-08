@@ -1,30 +1,27 @@
 ---
-title: "Paramètres de l’objet de commande | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Paramètres de l’objet de commande | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Command object [ADO], parameters
 ms.assetid: 10e7ef4a-78bf-4e91-931e-cbc6c065dd4c
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 527ed7c9e6e3a3f250fd559b479637414be3989f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: fa60d076d6c4a3d4eea2092db92c3006d4fd0905
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-object-parameters"></a>Paramètres de l’objet de commande
 La rubrique précédente présentée [création et exécution d’une commande Simple](../../../ado/guide/data/creating-and-executing-a-simple-command.md). Une utilisation plus intéressante pour la [commande](../../../ado/reference/ado-api/command-object-ado.md) objet est indiqué dans l’exemple suivant, dans lequel la commande SQL a été paramétrée. Cette modification permet de réutiliser la commande, en passant une valeur différente pour le paramètre chaque fois. Étant donné que la [préparé la propriété](../../../ado/reference/ado-api/prepared-property-ado.md) propriété sur le **commande** objet a la valeur **true**, ADO nécessitera le fournisseur compiler la commande spécifiée dans [ CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md) avant de l’exécuter pour la première fois. Il sera également conserver la commande compilée en mémoire. Cela ralentit l’exécution de la commande légèrement la première fois qu’elle est exécutée en raison de la surcharge requise pour préparer, mais entraîne un gain de performances chaque fois que la commande est appelée par la suite. Par conséquent, les commandes doivent être préparées uniquement si elles seront utilisées plusieurs fois.  

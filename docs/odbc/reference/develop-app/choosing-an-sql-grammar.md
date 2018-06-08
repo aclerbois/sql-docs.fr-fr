@@ -1,31 +1,28 @@
 ---
-title: "Choix d’une grammaire SQL | Documents Microsoft"
-ms.custom: 
+title: Choix d’une grammaire SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], interoperability
 - interoperability of SQL statements [ODBC], SQL grammar
 - SQL grammar [ODBC], selecting
 ms.assetid: 4e0d189b-e407-47e0-92a9-f9982230dd0e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6eedc2466842d922e1b10445500f05ad904d1a0b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f571ee10abc26d5de0fb0ff35fc0c931b759f2b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choosing-an-sql-grammar"></a>Choix d’une grammaire SQL
 La première décision à prendre lors de la construction d’instructions SQL est le grammaire à utiliser. Outre les grammaires disponibles dans les différentes instances de normes, telles que Open Group, ANSI et ISO, pratiquement tous les fournisseurs SGBD définit sa propre grammaire, chacune d’elles varie légèrement par rapport à la norme.  

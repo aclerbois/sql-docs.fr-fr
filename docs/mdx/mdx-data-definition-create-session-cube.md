@@ -1,39 +1,20 @@
 ---
 title: Instruction CREATE SESSION CUBE (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords:
-- CREATE_SESSION_CUBE
-- SESSION
-- CUBE
-- SESSION CUBE
-- CREATE SESSION CUBE
-- CREATE SESSION
-- CREATE
-dev_langs: kbMDX
-helpviewer_keywords:
-- CREATE SESSION CUBE
-- statements [MDX], CREATE SESSION CUBE
-ms.assetid: 06b90f44-d943-4a52-b0d8-4bcbc57ed6ec
-caps.latest.revision: "17"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: be395f43e1a372e54f9759edcf58d0b35f03d15c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 12a450b8184f7a1d6ef8b6068d73f99e17063c5d
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34579421"
 ---
 # <a name="mdx-data-definition---create-session-cube"></a>Définition de données MDX - créer un CUBE de SESSION
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -130,7 +111,7 @@ CREATE SESSION CUBE session_cube_name FROM <cube list> (<param list>)
  \<type de niveau >  
  Élément spécifié uniquement pour la définition de dimension dérivée.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Contrairement aux cubes serveur et locaux, un cube de session n'est pas conservé au-delà de la session qui l'a créé. Un cube de session est défini d'après les mesures et les définitions qui le caractérisent. Il existe deux types de dimensions.  
   
 -   Dimensions sources : dimensions qui appartenaient à un ou plusieurs cubes sources.  
@@ -175,7 +156,7 @@ CREATE SESSION CUBE session_cube_name FROM <cube list> (<param list>)
   
 -   Lorsque vous procédez à un regroupement sur une dimension de cube sur un cube serveur, le regroupement affecte toutes les dimensions de cube sur la base de la même dimension.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant illustre la création d'une version au niveau de la session du cube Adventure Works qui contient la mesure Reseller Sales Amount et les dimensions Reseller, Product, Geography et Date. Dans ce cube de session, deux groupes sont créés, un groupe comporte les pays européens et un groupe contient les groupes d'Amérique du Nord. Cet exemple est une version simplifiée de l'instruction CREATE SESSION CUBE émise par Microsoft Excel lorsqu'un utilisateur crée un regroupement personnalisé de membres.  
   
 ```  
@@ -219,7 +200,7 @@ CREATE SESSION CUBE [Adventure Works_XL_GROUPING1]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions MDX de définition de données &#40; MDX &#41;](../mdx/mdx-data-definition-statements-mdx.md)   
- [CREATE GLOBAL CUBE instruction &#40; MDX &#41;](../mdx/mdx-data-definition-create-global-cube.md)  
+ [Instructions MDX de définition de données &#40;MDX&#41;](../mdx/mdx-data-definition-statements-mdx.md)   
+ [Instruction CREATE GLOBAL CUBE &#40;MDX&#41;](../mdx/mdx-data-definition-create-global-cube.md)  
   
   

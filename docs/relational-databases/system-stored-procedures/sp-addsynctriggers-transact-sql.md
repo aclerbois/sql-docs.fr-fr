@@ -1,16 +1,15 @@
 ---
 title: sp_addsynctriggers (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_addsynctriggers
 ms.assetid: e37d0c3b-19bf-4719-9535-96ba361372b3
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bf7770a9388c18922aeb551246c314caba5860fe
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 711126c199480bd1d8ef836b9b587f51db8e4552
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spaddsynctriggers-transact-sql"></a>sp_addsynctriggers (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -66,10 +64,10 @@ sp_addsynctriggers [ @sub_table = ] 'sub_table'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@sub_table=**] **'***sub_table***'**  
+ [  **@sub_table=**] **'***table_d***'**  
  Nom de la table Subscriber. *table_d* est **sysname**, sans valeur par défaut.  
   
- [  **@sub_table_owner=**] **'***sub_table_owner***'**  
+ [  **@sub_table_owner=**] **'***propriétaire_de_table_d***'**  
  Nom du propriétaire de la table Subscriber. *l’argument propriétaire_de_table_d* est **sysname**, sans valeur par défaut.  
   
  [  **@publisher=**] **'***publisher***'**  
@@ -79,7 +77,7 @@ sp_addsynctriggers [ @sub_table = ] 'sub_table'
  Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, sans valeur par défaut. Si NULL est spécifié, la base de données active est utilisée.  
   
  [  **@publication=**] **'***publication***'**  
- Nom de la publication. *Publication* est **sysname**, sans valeur par défaut.  
+ Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
  [  **@ins_proc=**] **'***inser_proc***'**  
  Nom de la procédure stockée qui prend en charge les insertions de transactions synchrones sur le serveur de publication. *inser_proc* est **sysname**, sans valeur par défaut.  
@@ -117,7 +115,7 @@ sp_addsynctriggers [ @sub_table = ] 'sub_table'
  [  **@distributor =** ] **'***distributeur***'**  
  Est le nom du serveur de distribution. *serveur de distribution* est **sysname**, sans valeur par défaut.  
   
- [  **@pubversion** =] *pubversion*  
+ [ **@pubversion**=] *pubversion*  
  Indique la version du serveur de publication. *pubversion* est **int**, avec 1 comme valeur par défaut. **1** signifie que la version du serveur de publication est [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] Service Pack 2 ou version antérieure ; **2** signifie que le serveur de publication est [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] Service Pack 3 (SP3) ou version ultérieure. *pubversion* doit être définie explicitement sur **2** lorsque la version du serveur de publication est [!INCLUDE[ssVersion2000](../../includes/ssversion2000-md.md)] SP3 ou version ultérieure.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -126,12 +124,12 @@ sp_addsynctriggers [ @sub_table = ] 'sub_table'
 ## <a name="remarks"></a>Notes  
  **sp_addsynctriggers** est utilisé par l’Agent de Distribution dans le cadre de l’abonnement. Cette procédure stockée n'est généralement pas exécutée par les utilisateurs mais peut s'avérer utile s'ils doivent configurer manuellement un abonnement sans synchronisation.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_addsynctriggers**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Updatable Subscriptions for Transactional Replication](../../relational-databases/replication/transactional/updatable-subscriptions-for-transactional-replication.md)   
- [sp_script_synctran_commands &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-script-synctran-commands-transact-sql.md)   
+ [sp_script_synctran_commands &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-script-synctran-commands-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

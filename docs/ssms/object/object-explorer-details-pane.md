@@ -1,16 +1,15 @@
 ---
-title: "Volet Détails de l’Explorateur d’objets | Microsoft Docs"
-ms.custom: 
+title: Volet Détails de l’Explorateur d’objets | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.summary.general.f1
 - sql13.swb.summary.report.f1
@@ -20,19 +19,19 @@ helpviewer_keywords:
 - object search [SQL Server]
 - searching objects [SQL Server]
 ms.assetid: b963e3c2-dc9e-4d38-bd28-2e00fe9e0e47
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8798c67cc730cef471e28de51ae27213bc04565d
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 0d59e3448b3e833adacab7b37708725e8ff36864
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="object-explorer-details-pane"></a>Volet Détails de l'Explorateur d'objets
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Détails de l’Explorateur d’objets, un composant de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)], fournit une vue tabulaire de tous les objets se trouvant dans le serveur ainsi qu’une interface utilisateur pour les gérer. Les fonctionnalités de l’Explorateur d’objets varient légèrement en fonction du type de serveur. Il contient toutefois des fonctionnalités de développement pour les bases de données et des fonctionnalités de gestion pour tous les types de serveurs.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Détails de l'Explorateur d'objets, un composant de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull_md.md)], fournit une vue tabulaire de tous les objets se trouvant dans le serveur ainsi qu'une interface utilisateur pour les gérer. Les fonctionnalités de l’Explorateur d’objets varient légèrement en fonction du type de serveur. Il contient toutefois des fonctionnalités de développement pour les bases de données et des fonctionnalités de gestion pour tous les types de serveurs.  
   
 Le volet Détails de l’Explorateur d’objets est visible dans [!INCLUDE[ssManStudio](../../includes/ssmanstudio_md.md)] par défaut. Si tel n’est pas le cas, dans le menu **Affichage** , cliquez sur **Détails de l’Explorateur d’objets** ou appuyez sur **F7**.  
   

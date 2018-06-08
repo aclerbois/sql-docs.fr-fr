@@ -1,26 +1,19 @@
 ---
-title: "Pour plus d’informations à obtenir à partir de votre fabricant de matériel (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 2bce301a-704c-4236-a0a1-851bd17e2b6c
-caps.latest.revision: "11"
-ms.openlocfilehash: 2a86384f79c169048cc02e25e0178fa5fb12a391
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Obtenir des informations à partir du fabricant de matériel - système de plateforme Analytique | Documents Microsoft
+description: Informations à obtenir à partir de votre fabricant de matériel concernant le matériel de système de plateforme Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 57b61ed7741bc6d36b7531a62416893e7cc10fb7
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
 # <a name="information-to-obtain-from-your-ihv"></a>Pour plus d’informations à obtenir à partir de votre fabricant de matériel
 Lorsque votre fabricant de matériel (matériel) remet votre nouveau matériel SQL Server PDW pour vous, ils seront également fournir des informations sur le matériel et la configuration qu’ils ont effectuées sur votre appliance. Vous devez ces informations pour administrer votre appliance.  

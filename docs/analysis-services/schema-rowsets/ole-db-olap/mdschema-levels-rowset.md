@@ -1,39 +1,28 @@
 ---
 title: Ensemble de lignes MDSCHEMA_LEVELS | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: schema-rowsets
 ms.topic: reference
-apiname: MDSCHEMA_LEVELS
-apitype: NA
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: MDSCHEMA_LEVELS rowset
-ms.assetid: 4313e268-33f4-4e99-96d7-2ec26775c580
-caps.latest.revision: "33"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7eb78b431b77dadfe216db5e30e77e9d5722b2a8
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: aa23399b731108dd6b395b5d1debeb182e9330f6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="mdschemalevels-rowset"></a>Ensemble de lignes MDSCHEMA_LEVELS
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Décrit chaque niveau dans une hiérarchie particulière.  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Décrit chaque niveau dans une hiérarchie particulière.  
   
 ## <a name="rowset-columns"></a>Colonnes de l'ensemble de lignes  
  Le **MDSCHEMA_LEVELS** ensemble de lignes contient les colonnes suivantes.  
   
-|Nom de colonne|Indicateur de type|Description|  
+|Nom de colonne|Indicateur de type| Description|  
 |-----------------|--------------------|-----------------|  
 |**CATALOG_NAME**|**DBTYPE_WSTR**|Nom du catalogue auquel appartient ce niveau. Valeur**NULL** si le fournisseur ne prend pas en charge les catalogues.|  
 |**SCHEMA_NAME**|**DBTYPE_WSTR**|Nom du schéma auquel appartient ce niveau. **NULL** si le fournisseur ne prend pas en charge les schémas.|  
@@ -68,18 +57,18 @@ ms.lasthandoff: 01/08/2018
   
 |Nom de colonne|Indicateur de type|État de la restriction|  
 |-----------------|--------------------|-----------------------|  
-|**CATALOG_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**SCHEMA_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**CUBE_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**DIMENSION_UNIQUE_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**HIERARCHY_UNIQUE_NAME**|**DBTYPE_WSTR**|Facultatif.|  
-|**NOM_NIVEAU**|**DBTYPE_WSTR**|Facultatif.|  
-|**LEVEL_UNIQUE_NAME**|**DBTYPE_WSTR**|Facultatif.|  
+|**CATALOG_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**SCHEMA_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**CUBE_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**DIMENSION_UNIQUE_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**HIERARCHY_UNIQUE_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**NOM_NIVEAU**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
+|**LEVEL_UNIQUE_NAME**|**DBTYPE_WSTR**|Ce paramètre est facultatif.|  
 |**LEVEL_ORIGIN**|**DBTYPE_UI2**|(Facultatif) Une restriction par défaut est appliqué suite **MD_USER_DEFINED** et **MD_SYSTEM_ENABLED**|  
 |**CUBE_SOURCE**|**DBTYPE_UI2**|(Facultatif) Restriction par défaut est une valeur de 1. Une image bitmap avec l’une des valeurs valides suivantes :<br /><br /> 1 CUBE<br /><br /> 2 DIMENSION|  
 |**LEVEL_VISIBILITY**|**DBTYPE_UI2**|(Facultatif) Restriction par défaut est une valeur de 1. Une image bitmap avec l’une des valeurs suivantes :<br /><br /> 1 Visible<br /><br /> 2 non visible|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ensembles de lignes de schéma OLE DB pour OLAP](../../../analysis-services/schema-rowsets/ole-db-olap/ole-db-for-olap-schema-rowsets.md)  
+ [OLE DB pour OLAP Schema Rowsets](../../../analysis-services/schema-rowsets/ole-db-olap/ole-db-for-olap-schema-rowsets.md)  
   
   

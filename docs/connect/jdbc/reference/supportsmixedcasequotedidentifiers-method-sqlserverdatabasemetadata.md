@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsMixedCaseQuotedIdentifiers | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsMixedCaseQuotedIdentifiers | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsMixedCaseQuotedIdentifiers
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsMixedCaseQuotedIdentifiers
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 76c68fc2-5af6-4b8d-baee-245716fdc5cc
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 80a901d63364a7ebb80f93f2b4ce5655021e8e67
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c590b9fddd477d2f28ce7953f9fcfba3c579fc49
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsmixedcasequotedidentifiers-method-sqlserverdatabasemetadata"></a>Méthode supportsMixedCaseQuotedIdentifiers (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

@@ -1,32 +1,28 @@
 ---
-title: "Propriétés de SQL Server (onglet Service) | Documents Microsoft"
-ms.custom: 
+title: Propriétés de SQL Server (onglet Service) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e4ae0c6b-6fd8-4325-b54e-1758fc659958
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: af6abd37fa23a4bfd77695296118896f27e8f3b0
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: b2f84bc46e2739f94cb9a1425ee8af78c739e61b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-properties-service-tab"></a>Propriétés de SQL Server (onglet Service)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-L’onglet **Service**de la boîte de dialogue **Propriétés de MSSQLSERVER** permet d’afficher ou de spécifier les options suivantes.  
+  L’onglet **Service**de la boîte de dialogue **Propriétés de MSSQLSERVER** permet d’afficher ou de spécifier les options suivantes.  
   
 ## <a name="options"></a>Options  
  **Chemin d'accès binaire**  

@@ -1,31 +1,28 @@
 ---
 title: Fonction de mappage dans le Gestionnaire de pilotes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Unicode [ODBC], functions
 - driver manager [ODBC], function mapping
 - functions [ODBC], Unicode functions
 ms.assetid: ff093b29-671a-4fc0-86c9-08a311a98e54
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a4af23925a410fba2d1e79691172975a62507472
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ee2e5d3e770ddd605618f6a71161f410dab7ab52
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="function-mapping-in-the-driver-manager"></a>Mappage de fonction dans le Gestionnaire de pilotes
 Le Gestionnaire de pilote prend en charge les deux points d’entrée pour les fonctions qui acceptent des arguments de chaîne. La fonction non décorée (**SQLDriverConnect**) est au format ANSI de la fonction. Le format Unicode est décorée avec un *W* (**SQLDriverConnectW**.)  

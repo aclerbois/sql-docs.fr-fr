@@ -1,30 +1,28 @@
 ---
-title: "Paramètres (Type de mappage) du projet (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Paramètres (Type de mappage) du projet (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 2698fb3a-f9e6-4e04-94e0-dad289d7ed0a
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 594ef6405a41b199d527eaae56a77c7f1d91c4e6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 93d23239f4dc60dc419dde62ab0a4923f286669d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="project-settings-type-mapping-sybasetosql"></a>Paramètres (Type de mappage) du projet (SybaseToSQL)
 La page mappage de Type de la **les paramètres de projet** boîte de dialogue contient des paramètres permettant de personnaliser comment SSMA convertit les types de données Sybase Adaptive Server Enterprise (ASE) dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] des types de données.  
@@ -68,88 +66,88 @@ Le tableau suivant contient le mappage de type par défaut entre ASE et [!INCLUD
 |**bit**|**bit**|  
 |**char**|**char**|  
 |**char varying**|**varchar**|  
-|**char varying [\*... 8000]**|**varchar [\*]**|  
+|**char varying [\*... 8000]**|**varchar[\*]**|  
 |**char varying [8001..\*]**|**varchar(max)**|  
-|**char[\*.. 8000]**|**char[\*]**|  
+|**Char [\*... 8000]**|**char[\*]**|  
 |**Char [8001..\*;]**|**varchar(max)**|  
-|**caractère**|**char**|  
+|**character**|**char**|  
 |**variable de caractère**|**varchar**|  
-|**variable de caractères [\*... 8000]**|**varchar [\*]**|  
+|**variable de caractères [\*... 8000]**|**varchar[\*]**|  
 |**variable de caractères [8001..\*]**|**varchar(max)**|  
 |**caractère [\*... 8000]**|**char[\*]**|  
 |**caractère [8001..\*]**|**varchar(max)**|  
 |**date**|**date**|  
-|**datetime**|**datetime2 [3]**|  
-|**DEC**|**decimal**|  
-|**dec[\*.. \*]**|**Decimal [\*]**|  
-|**dec[\*.. \*][\*.. \*]**|**decimal[\*][\*]**|  
+|**datetime**|**datetime2[3]**|  
+|**dec**|**decimal**|  
+|**dec[\*..\*]**|**decimal[\*]**|  
+|**dec[\*..\*][\*..\*]**|**decimal[\*][\*]**|  
 |**decimal**|**decimal**|  
-|**Decimal [\*... \*]**|**Decimal [\*]**|  
+|**Decimal [\*... \*]**|**decimal[\*]**|  
 |**Decimal [\*... \*][\*.. \*]**|**decimal[\*][\*]**|  
-|**double précision**|**float [53]**|  
-|**float**|**float [53]**|  
-|**float [\*... 15]**|**float [24]**|  
-|**float [16..\*]**|**float [53]**|  
+|**double précision**|**float[53]**|  
+|**float**|**float[53]**|  
+|**float [\*... 15]**|**float[24]**|  
+|**float [16..\*]**|**float[53]**|  
 |**image**|**image**|  
-|**Int**|**Int**|  
-|**entier**|**Int**|  
-|**longsysname**|**nvarchar [255]**|  
+|**int**|**int**|  
+|**entier**|**int**|  
+|**longsysname**|**nvarchar[255]**|  
 |**money**|**money**|  
 |**national char**|**nchar**|  
-|**national char [\*... 4000]**|**NCHAR [\*]**|  
+|**national char [\*... 4000]**|**nchar[\*]**|  
 |**national char varying**|**nvarchar**|  
-|**national char varying [\*... 4000]**|**nvarchar [\*]**|  
+|**national char varying [\*... 4000]**|**nvarchar[\*]**|  
 |**national char varying [4001..\*]**|**nvarchar(max)**|  
 |**national char [4001..\*]**|**nvarchar(max)**|  
 |**caractères nationaux**|**nchar**|  
-|**les caractères nationaux [\*... 4000]**|**NCHAR [\*]**|  
+|**les caractères nationaux [\*... 4000]**|**nchar[\*]**|  
 |**les caractères nationaux [4001..\*]**|**nvarchar(max)**|  
 |**variable de caractères nationaux**|**nvarchar**|  
-|**variable de caractères nationaux [\*... 4000]**|**nvarchar [\*]**|  
+|**variable de caractères nationaux [\*... 4000]**|**nvarchar[\*]**|  
 |**variable de caractères nationaux [4001..\*]**|**nvarchar(max)**|  
 |**national varchar**|**nvarchar**|  
-|**national varchar [\*... 4000]**|**nvarchar [\*]**|  
+|**national varchar [\*... 4000]**|**nvarchar[\*]**|  
 |**national varchar [4001..\*]**|**nvarchar(max)**|  
 |**nchar**|**nchar**|  
 |**NCHAR varying**|**nvarchar**|  
-|**NCHAR varying [\*... 4000]**|**nvarchar [\*]**|  
+|**NCHAR varying [\*... 4000]**|**nvarchar[\*]**|  
 |**NCHAR varying [4001..\*]**|**nvarchar(max)**|  
-|**NCHAR [\*... 4000]**|**NCHAR [\*]**|  
+|**NCHAR [\*... 4000]**|**nchar[\*]**|  
 |**NCHAR [4001..\*]**|**nvarchar(max)**|  
 |**numeric**|**numeric**|  
-|**numérique [\*... \*]**|**numérique [\*]**|  
+|**numérique [\*... \*]**|**numeric[\*]**|  
 |**numérique [\*... \*][\*.. \*]**|**numeric[\*][\*]**|  
 |**nvarchar**|**nvarchar**|  
-|**nvarchar [\*... 4000]**|**nvarchar [\*]**|  
+|**nvarchar [\*... 4000]**|**nvarchar[\*]**|  
 |**nvarchar [4001..\*]**|**nvarchar(max)**|  
-|**real**|**float [24]**|  
+|**real**|**float[24]**|  
 |**smalldatetime**|**smalldatetime**|  
 |**smallint**|**smallint**|  
 |**smallmoney**|**smallmoney**|  
-|**sysname**|**nvarchar [128]**|  
-|**sysname [\*... \*]**|**nvarchar [255]**|  
+|**sysname**|**nvarchar[128]**|  
+|**sysname [\*... \*]**|**nvarchar[255]**|  
 |**texte**|**texte**|  
-|**time**|**heure [3]**|  
+|**time**|**time[3]**|  
 |**timestamp**|**rowversion**|  
 |**tinyint**|**tinyint**|  
 |**UNICHAR**|**nchar**|  
 |**UNICHAR variable**|**nvarchar**|  
-|**UNICHAR varying [\*... 4000]**|**nvarchar [\*]**|  
+|**UNICHAR varying [\*... 4000]**|**nvarchar[\*]**|  
 |**UNICHAR varying [4001..\*]**|**nvarchar(max)**|  
-|**UNICHAR [\*... 4000]**|**NCHAR [\*]**|  
+|**UNICHAR [\*... 4000]**|**nchar[\*]**|  
 |**UNICHAR [4001..\*]**|**nvarchar(max)**|  
 |**unitext**|**nvarchar(max)**|  
 |**univarchar**|**nvarchar**|  
-|**univarchar [\*... 4000]**|**nvarchar [\*]**|  
+|**univarchar [\*... 4000]**|**nvarchar[\*]**|  
 |**univarchar [4001..\*]**|**nvarchar(max)**|  
-|**bigint non signé**|**numérique [20] [0]**|  
+|**bigint non signé**|**numeric[20][0]**|  
 |**entier non signé**|**bigint**|  
-|**smallint non signé**|**Int**|  
+|**smallint non signé**|**int**|  
 |**tinyint non signé**|**tinyint**|  
 |**varbinary**|**varbinary**|  
-|**varbinary [\*... 8000]**|**varbinary [\*]**|  
+|**varbinary [\*... 8000]**|**varbinary[\*]**|  
 |**varbinary [8001..\*]**|**varbinary(max)**|  
 |**varchar**|**varchar**|  
-|**varchar [\*... 8000]**|**varchar [\*]**|  
+|**varchar [\*... 8000]**|**varchar[\*]**|  
 |**varchar [8001..\*]**|**varchar(max)**|  
   

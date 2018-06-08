@@ -1,16 +1,14 @@
 ---
 title: CREATE SYMMETRIC KEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE SYMMETRIC KEY
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - symmetric keys [SQL Server], creating
 - symmetric keys [SQL Server]
 ms.assetid: b5d23572-b79d-4cf1-9eef-d648fa3b1358
-caps.latest.revision: 
+caps.latest.revision: 72
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f5604a0c32049d274610a600ebf1a2174c40d088
-ms.sourcegitcommit: 7673ad0e84a6de69420e19247a59e39ca751a8aa
+ms.openlocfilehash: 0762a4dfb78edcad361cb8d51dd2c61579ccfef9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-symmetric-key-transact-sql"></a>CREATE SYMMETRIC KEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -76,7 +73,7 @@ CREATE SYMMETRIC KEY key_name
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *Key_name*  
+ *KEY_NAME*  
  Spécifie le nom unique sous lequel la clé symétrique est connue dans la base de données. Les noms des clés temporaires doivent commencer par un dièse (#). Par exemple, **#temporaryKey900007**. Vous ne pouvez pas créer une clé symétrique dont le nom commence par plusieurs #. Vous ne pouvez pas créer de clé symétrique temporaire à l'aide d'un fournisseur EKM.  
   
  AUTHORIZATION *owner_name*  
@@ -94,7 +91,7 @@ CREATE SYMMETRIC KEY key_name
  IDENTITY_VALUE **='***identity_phrase***'**  
  Spécifie une expression relative à l'identité à partir de laquelle un GUID doit être généré pour baliser les données qui sont chiffrées à l'aide d'une clé temporaire.  
   
- PROVIDER_KEY_NAME**='***key_name_in_provider***'**  
+ PROVIDER_KEY_NAME **='***key_name_in_provider***'**  
  Spécifie le nom référencé dans le fournisseur EKM (Extensible Key Management).  
   
 > [!NOTE]  

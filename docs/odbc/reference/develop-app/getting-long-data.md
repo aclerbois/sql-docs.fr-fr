@@ -1,16 +1,14 @@
 ---
-title: "Obtention de données de type Long | Documents Microsoft"
-ms.custom: 
+title: Obtention de données de type Long | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - long data [ODBC]
 - fetches [ODBC], long data
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - SQLGetData function [ODBC], getting long data
 - retrieving long data [ODBC]
 ms.assetid: 6ccb44bc-8695-4bad-91af-363ef22bdb85
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4bb349dd9bc791659dc518aa66cbc40e958dbe66
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a465c8200181c87caa49d6e36df50cb5c158cdbf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-long-data"></a>Obtention de données de type Long
 Définir des SGBD *données longues* sous forme de n’importe quel caractère ou binaire sur une certaine taille, tels que 255 caractères. Ces données peuvent être assez petites pour être stocké dans une mémoire tampon unique, telle qu’une description de partie de plusieurs caractères de milliers. Toutefois, il peut être trop long pour stocker en mémoire, telles que des documents de texte long ou de bitmaps. Étant donné que ces données ne peut pas être stockées dans un tampon unique, il est extraite du pilote dans des parties avec **SQLGetData** après les autres données de la ligne a été extraite.  
@@ -39,7 +36,7 @@ Définir des SGBD *données longues* sous forme de n’importe quel caractère o
   
  En ce qui concerne une seule colonne, **SQLGetData** se comporte comme **SQLFetch**: il récupère les données pour la colonne, il convertit le type de la variable d’application et le retourne dans cette variable. Il retourne également la longueur en octets des données dans la mémoire tampon de longueur / d’indicateur. Pour plus d’informations sur la façon **SQLFetch** renvoie des données, consultez [l’extraction d’une ligne de données](../../../odbc/reference/develop-app/fetching-a-row-of-data.md).  
   
- **SQLGetData** diffère **SQLFetch** un aspect important. Si elle est appelée plusieurs fois de suite pour la même colonne, chaque appel renvoie une successive partie des données. Chaque appel à l’exception du dernier appel retourne SQL_SUCCESS_WITH_INFO et SQLSTATE 01004 (chaîne de données, à droite tronquées) ; le dernier appel retourne SQL_SUCCESS. Voici comment **SQLGetData** est utilisée pour récupérer des données de type long dans les parties. Lorsqu’il n’existe aucune donnée supplémentaire à renvoyer, **SQLGetData** retourne SQL_NO_DATA. L’application est chargée de rassembler des données de type long, ce qui peut signifier que la concaténation les parties des données. Chaque partie se termine par null ; l’application doit supprimer le caractère de fin de la valeur null si la concaténation de parties. Est possible de récupérer des données dans les parties de signets de longueur variable, ainsi que pour d’autres données de type long. La valeur retournée dans la baisse de la mémoire tampon/indicateur de longueur dans chaque appel par le nombre d’octets retournés dans l’appel précédent, bien qu’il soit courant pour le pilote d’être impossible de détecter la quantité de données disponibles et de retourner une longueur d’octet de SQL_NO_TOTAL. Exemple :  
+ **SQLGetData** diffère **SQLFetch** un aspect important. Si elle est appelée plusieurs fois de suite pour la même colonne, chaque appel renvoie une successive partie des données. Chaque appel à l’exception du dernier appel retourne SQL_SUCCESS_WITH_INFO et SQLSTATE 01004 (chaîne de données, à droite tronquées) ; le dernier appel retourne SQL_SUCCESS. Voici comment **SQLGetData** est utilisée pour récupérer des données de type long dans les parties. Lorsqu’il n’existe aucune donnée supplémentaire à renvoyer, **SQLGetData** retourne SQL_NO_DATA. L’application est chargée de rassembler des données de type long, ce qui peut signifier que la concaténation les parties des données. Chaque partie se termine par null ; l’application doit supprimer le caractère de fin de la valeur null si la concaténation de parties. Est possible de récupérer des données dans les parties de signets de longueur variable, ainsi que pour d’autres données de type long. La valeur retournée dans la baisse de la mémoire tampon/indicateur de longueur dans chaque appel par le nombre d’octets retournés dans l’appel précédent, bien qu’il soit courant pour le pilote d’être impossible de détecter la quantité de données disponibles et de retourner une longueur d’octet de SQL_NO_TOTAL. Par exemple :  
   
 ```  
 // Declare a binary buffer to retrieve 5000 bytes of data at a time.  

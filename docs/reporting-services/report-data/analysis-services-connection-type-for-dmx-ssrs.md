@@ -1,16 +1,15 @@
 ---
 title: Type de connexion Analysis Services pour DMX (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - parameters [Reporting Services], DMX
 - Data Mining Prediction [Reporting Services]
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - data mining [Reporting Services]
 - passing parameters [Reporting Services]
 ms.assetid: 2de825e9-6d8a-4128-add0-da15dc6cea3e
-caps.latest.revision: "64"
+caps.latest.revision: 64
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 14ff9f92d3582bbad4af7d3252d2e2ae6ce170bd
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 9293053b1a3a0043b3573c1efc55f4a825ce78a5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="analysis-services-connection-type-for-dmx-ssrs"></a>Type de connexion Analysis Services pour DMX (SSRS)
   Quand vous créez un dataset à l’aide d’une source de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , le Concepteur de rapports affiche le Concepteur de requêtes MDX (Multidimensional Expression) s’il détecte un cube valide. Si aucun cube n'est détecté, mais qu'un modèle d'exploration de données est disponible, le Concepteur de rapports affiche le Concepteur de requêtes DMX (Data Mining Extensions). Pour basculer entre les concepteurs MDX et DMX, cliquez sur le bouton **Type de commande DMX** (![Basculer vers la vue langage de requête DMX](../../reporting-services/report-data/media/rsqdicon-commandtypedmx.gif "Basculer vers la vue langage de requête DMX")) dans la barre d’outils. Utilisez le Concepteur de requêtes DMX pour créer de manière interactive une requête DMX à l'aide d'éléments graphiques. Pour utiliser le Concepteur de requêtes DMX, la source de données que vous spécifiez doit déjà avoir un modèle d'exploration de données qui fournit les données. Les résultats de requête sont convertis en un jeu de lignes à deux dimensions qui sera utilisé dans le rapport.  

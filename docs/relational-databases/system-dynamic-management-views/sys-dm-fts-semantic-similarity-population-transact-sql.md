@@ -1,16 +1,12 @@
 ---
 title: Sys.dm_fts_semantic_similarity_population (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_fts_semantic_similarity_population_TSQL
@@ -22,23 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_fts_semantic_similarity_population dynamic management view
 ms.assetid: 33666f28-c370-47e2-a932-190316ed5f69
-caps.latest.revision: 
+caps.latest.revision: 12
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a3ad5ff1a253c702f28f73e8b3e684e716e90bb9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 0e28dfafb637aebf7e22f4b61f595f02de0f1284
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmftssemanticsimilaritypopulation-transact-sql"></a>sys.dm_fts_semantic_similarity_population (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Retourne une ligne d'informations d'état à propos du remplissage de l'index de ressemblance de document pour chaque index de ressemblance de chaque table associée à un index sémantique.  
   
- L'étape de remplissage suit l'étape d'extraction. Pour plus d’informations d’état d’extraction de ressemblance, consultez [sys.dm_fts_index_population &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
+ L'étape de remplissage suit l'étape d'extraction. Pour plus d’informations d’état d’extraction de ressemblance, consultez [sys.dm_fts_index_population &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
     
 ||||  
 |-|-|-|  
@@ -60,7 +55,7 @@ ms.lasthandoff: 02/03/2018
  Pour plus d’informations, consultez [gérer et surveiller la recherche sémantique](../../relational-databases/search/manage-and-monitor-semantic-search.md).  
   
 ## <a name="metadata"></a>Métadonnées  
- Pour plus d’informations sur l’état de l’indexation sémantique, interrogez [sys.dm_fts_index_population &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
+ Pour plus d’informations sur l’état de l’indexation sémantique, interrogez [sys.dm_fts_index_population &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-fts-index-population-transact-sql.md).  
   
 ## <a name="security"></a>Sécurité  
   

@@ -1,16 +1,14 @@
 ---
-title: "GRANT - Octroyer des autorisations sur un objet système (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: GRANT - Octroyer des autorisations sur un objet système (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - system objects [SQL Server]
 - GRANT statement, system objects
 ms.assetid: 9d4e89f4-478f-419a-8b50-b096771e3880
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 68fc428edb12c5b62d5e6eadb6d92bc090e66fde
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 39130687751acab7c86051625f41db644b567a8c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="grant-system-object-permissions-transact-sql"></a>GRANT – octroi d'autorisations d'objet système (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,7 +43,7 @@ GRANT { SELECT | EXECUTE } ON [ sys.]system_object TO principal
   
 ## <a name="arguments"></a>Arguments  
  [ sys.] .  
- L'identificateur sys est requis uniquement lorsque vous faites référence à des vues de catalogue ou à des vues de gestion dynamique.  
+ L'identificateur sys est requis uniquement lorsque vous faites référence à des affichages catalogue ou à des vues de gestion dynamique.  
   
  *system_object*  
  Spécifie l’objet sur lequel l’autorisation est accordée.  
@@ -55,17 +52,17 @@ GRANT { SELECT | EXECUTE } ON [ sys.]system_object TO principal
  Spécifie le principal auquel l'autorisation est accordée.  
   
 ## <a name="remarks"></a>Notes   
- Cette instruction permet d'accorder des autorisations sur des procédures stockées, procédures stockées étendues, fonctions table, fonctions scalaires, vues, vues de catalogue, vues de compatibilité, vues INFORMATION_SCHEMA, vues de gestion dynamique et tables système installées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Chacun de ces objets système existe sous la forme d'un enregistrement unique dans la base de données des ressources du serveur (mssqlsystemresource). La base de données des ressources est en lecture seule. Un lien à l'objet est exposé comme un enregistrement dans le schéma sys de chaque base de données. L'autorisation d'exécuter ou de sélectionner un objet système peut être accordée, refusée ou révoquée.  
+ Cette instruction permet d'accorder des autorisations sur des procédures stockées, procédures stockées étendues, fonctions table, fonctions scalaires, vues, affichages catalogue, vues de compatibilité, vues INFORMATION_SCHEMA, vues de gestion dynamique et tables système installées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Chacun de ces objets système existe sous la forme d'un enregistrement unique dans la base de données des ressources du serveur (mssqlsystemresource). La base de données des ressources est en lecture seule. Un lien à l'objet est exposé comme un enregistrement dans le schéma sys de chaque base de données. L'autorisation d'exécuter ou de sélectionner un objet système peut être accordée, refusée ou révoquée.  
   
  L'octroi de l'autorisation d'exécuter ou de sélectionner un objet n'implique pas nécessairement toutes les autorisations requises pour utiliser l'objet. La plupart des objets effectuent des opérations qui nécessitent des autorisations supplémentaires. Par exemple, un utilisateur auquel est accordée l'autorisation EXECUTE sur sp_addlinkedserver ne peut pas créer un serveur lié, à moins que l'utilisateur soit également membre du rôle de serveur fixe sysadmin.  
   
- La résolution de noms par défaut permet de résoudre les noms de procédures non qualifiés dans la base de données des ressources. Par conséquent, l'identificateur sys est requis uniquement lorsque vous spécifiez des vues de catalogue ou des vues de gestion dynamique.  
+ La résolution de noms par défaut permet de résoudre les noms de procédures non qualifiés dans la base de données des ressources. Par conséquent, l'identificateur sys est requis uniquement lorsque vous spécifiez des affichages catalogue ou des vues de gestion dynamique.  
   
  L'octroi d'autorisations sur des déclencheurs et sur des colonnes d'objets système n'est pas pris en charge.  
   
  Les autorisations sur les objets système sont conservées lors d'une mise à niveau de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
- Les objets système sont consultables dans la vue de catalogue [sys.system_objects](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md) . Les autorisations sur les objets système sont consultables dans la vue de catalogue [sys.database_permissions](../../relational-databases/system-catalog-views/sys-database-permissions-transact-sql.md) de la base de données MASTER.  
+ Les objets système sont consultables dans l’affichage catalogue [sys.system_objects](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md) . Les autorisations sur les objets système sont consultables dans la vue de catalogue [sys.database_permissions](../../relational-databases/system-catalog-views/sys-database-permissions-transact-sql.md) de la base de données MASTER.  
   
  La requête ci-dessous retourne des informations sur les autorisations des objets système :  
   

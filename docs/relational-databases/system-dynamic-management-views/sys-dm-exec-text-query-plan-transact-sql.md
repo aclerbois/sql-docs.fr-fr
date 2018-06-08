@@ -1,16 +1,13 @@
 ---
-title: sys.dm_exec_text_query_plan (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_text_query_plan (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 10/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_exec_text_query_plan
@@ -22,21 +19,21 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_text_query_plan dynamic management function
 ms.assetid: 9d5e5f59-6973-4df9-9eb2-9372f354ca57
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 38650de120ae1c7cb80be3d279de9bfa0da37434
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d8e7f577a0939312123b398e3be1ab5b4cce0cd8
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexectextqueryplan-transact-sql"></a>sys.dm_exec_text_query_plan (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-  Retourne le plan d'exécution de requêtes au format texte pour un lot [!INCLUDE[tsql](../../includes/tsql-md.md)] ou pour une instruction spécifique dans le lot. Le plan de requête spécifié par le descripteur de plan peut être mis en cache ou en cours d’exécution. Cette fonction table est similaire à [sys.dm_exec_query_plan &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-plan-transact-sql.md), mais présente les différences suivantes :  
+  Retourne le plan d'exécution de requêtes au format texte pour un lot [!INCLUDE[tsql](../../includes/tsql-md.md)] ou pour une instruction spécifique dans le lot. Le plan de requête spécifié par le descripteur de plan peut être mis en cache ou en cours d’exécution. Cette fonction table est similaire à [sys.dm_exec_query_plan &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-query-plan-transact-sql.md), mais présente les différences suivantes :  
   
 -   La sortie du plan de requête est au format texte.  
   
@@ -71,7 +68,7 @@ Le descripteur de plan peut être obtenu à partir des objets de gestion dynamiq
   
 -  [sys.dm_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)  
   
-*statement_start_offset* | 0 | DEFAULT  
+*statement_start_offset* | 0 | PAR DÉFAUT  
 Indique, en octets, la position de début de la requête que la ligne décrit dans le texte de son traitement ou de son objet persistant. *statement_start_offset* est **int**. La valeur 0 indique le début du traitement. La valeur par défaut est 0 :  
   
 Le décalage de début de l'instruction peut être obtenu à partir des objets de gestion dynamiques suivants :  
@@ -80,7 +77,7 @@ Le décalage de début de l'instruction peut être obtenu à partir des objets d
   
 -  [sys.dm_exec_requests](../../relational-databases/system-dynamic-management-views/sys-dm-exec-requests-transact-sql.md)  
   
-*statement_end_offset* | -1 | DEFAULT  
+*statement_end_offset* | -1 | PAR DÉFAUT  
 Indique, en octets, la position de fin de la requête que la ligne décrit dans le texte de son traitement ou de son objet persistant.  
   
 *statement_start_offset* est **int**.  
@@ -94,7 +91,7 @@ La valeur -1 indique la fin du traitement. La valeur par défaut est -1.
 |**dbid**|**smallint**|ID de la base de données de contexte qui était en fonction lorsque l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] correspondant à ce plan a été compilée. Pour les instructions SQL ad hoc et préparées, l'ID de la base de données où les instructions ont été compilées.<br /><br /> Colonne acceptant la valeur NULL.|  
 |**objectid**|**int**|ID de l'objet (par exemple, procédure stockée ou fonction définie par l'utilisateur) pour ce plan de requête. Pour les traitements ad hoc et préparées, cette colonne est **null**.<br /><br /> Colonne acceptant la valeur NULL.|  
 |**number**|**smallint**|Entier servant à la numérotation des procédures stockées. Par exemple, un groupe de procédures pour le **commandes** application peut-être être appelée **orderproc ; 1**, **orderproc ; 2**, et ainsi de suite. Pour les traitements ad hoc et préparées, cette colonne est **null**.<br /><br /> Colonne acceptant la valeur NULL.|  
-|**encrypted**|**bit**|Indique si la procédure stockée correspondante est chiffrée.<br /><br /> 0 = Non chiffrée.<br /><br /> 1 = Chiffrée.<br /><br /> Colonne n'acceptant pas la valeur NULL.|  
+|**Chiffré**|**bit**|Indique si la procédure stockée correspondante est chiffrée.<br /><br /> 0 = Non chiffrée.<br /><br /> 1 = Chiffrée.<br /><br /> Colonne n'acceptant pas la valeur NULL.|  
 |**query_plan**|**nvarchar(max)**|Contient la représentation sous forme de plan d’exécution lors de la compilation du plan de l’exécution de requête est spécifié avec *plan_handle*. Le Showplan est au format texte. Un plan est généré pour chaque traitement contenant par exemple des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ad hoc, des appels de procédures stockées et des appels de fonctions définies par l'utilisateur.<br /><br /> Colonne acceptant la valeur NULL.|  
   
 ## <a name="remarks"></a>Notes  

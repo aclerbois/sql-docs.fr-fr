@@ -1,17 +1,14 @@
 ---
-title: "Exemple d’espace disque d’un index | Microsoft Docs"
-ms.custom: 
+title: Exemple d’espace disque d’un index | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - online index disk space
 - disk space [SQL Server], indexes
@@ -20,20 +17,19 @@ helpviewer_keywords:
 - indexes [SQL Server], disk space requirements
 - offline index disk space [SQL Server]
 ms.assetid: e5c71f55-0be3-4c93-97e9-7b3455c8f581
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 30
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 04b3917ece9134d66a055e0d5b2daf68d901153d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 46809da9211dbb4ec8704a788945b30cf5e6ca65
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="index-disk-space-example"></a>Exemple d'espace disque d'un index
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Chaque fois qu'un index est créé, reconstruit ou supprimé, de l'espace disque est nécessaire tant pour l'ancienne structure (source) que pour la nouvelle (cible) dans leurs fichiers et groupes de fichiers respectifs. L'ancienne structure n'est pas désallouée aussi longtemps que la transaction de création d'index n'est pas validée. De l'espace disque temporaire supplémentaire peut également être requis pour le tri des opérations. Pour plus d’informations, consultez [Disk Space Requirements for Index DDL Operations](../../relational-databases/indexes/disk-space-requirements-for-index-ddl-operations.md).  
+  Chaque fois qu'un index est créé, reconstruit ou supprimé, de l'espace disque est nécessaire tant pour l'ancienne structure (source) que pour la nouvelle (cible) dans leurs fichiers et groupes de fichiers respectifs. L'ancienne structure n'est pas désallouée aussi longtemps que la transaction de création d'index n'est pas validée. De l'espace disque temporaire supplémentaire peut également être requis pour le tri des opérations. Pour plus d’informations, consultez [Disk Space Requirements for Index DDL Operations](../../relational-databases/indexes/disk-space-requirements-for-index-ddl-operations.md).  
   
  Cet exemple détermine l'espace disque nécessaire pour la création d'un index cluster.  
   

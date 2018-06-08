@@ -1,28 +1,27 @@
 ---
-title: "Étape 4 : Connexion élastique à SQL avec ADO.NET | Documents Microsoft"
-ms.custom: 
+title: 'Étape 4 : Connexion élastique à SQL avec ADO.NET | Documents Microsoft'
+ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado-net
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: CSharp
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+dev_langs:
+- CSharp
 ms.assetid: 9b608b0b-6b38-42da-bb83-79df8c170cd7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4c95f481bdd001ff85a63db9ebcc1c4438008447
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 2f9b36f5ddf9fdf70f11580154150d008bfca436
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-4-connect-resiliently-to-sql-with-adonet"></a>Étape 4 : Connexion élastique à SQL avec ADO.NET
 
@@ -274,7 +273,7 @@ Il existe une multitude de façons, vous pouvez simuler une erreur temporaire po
 L’exemple de code inclut :  
   
 - Une petite classe seconde nommée **TestSqlException**, qui a une propriété nommée **nombre**.  
-- `//throw new TestSqlException(4060);`, qui vous pouvez supprimer les commentaires.  
+- `//throw new TestSqlException(4060);` , qui vous pouvez supprimer les commentaires.  
   
 Si vous supprimez l’instruction throw et la recompiler, la prochaine exécution de **RetryAdo2.exe** génère quelque chose de similaire à ce qui suit.  
   

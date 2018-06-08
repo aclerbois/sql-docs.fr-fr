@@ -1,16 +1,14 @@
 ---
-title: "capture de données modifiées. &lt;capture_instance&gt;_CT (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: capture de données modifiées. &lt;capture_instance&gt;_CT (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 05/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - cdc
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - cdc.<capture_instance>_CT
 ms.assetid: 979c8110-3c54-4e76-953c-777194bc9751
-caps.latest.revision: 
+caps.latest.revision: 27
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 53f2078f3894d5db7c398b2470b4a3625320e948
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 7e2ef0fa035acb3bc87e5bcebb7fb5dc129d5388
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="cdcltcaptureinstancegtct-transact-sql"></a>capture de données modifiées. &lt;capture_instance&gt;_CT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -40,14 +37,14 @@ ms.lasthandoff: 11/21/2017
   
 
   
-|Nom de colonne|Type de données|Description|  
+|Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**__$start_lsn**|**binary(10)**|Numéro séquentiel dans le journal associé à la transaction de validation pour la modification.<br /><br /> Toutes les modifications validées dans la même transaction partagent le même numéro séquentiel dans le journal de validation. Par exemple, si une opération de suppression sur la table source supprime deux lignes, la table de modifications contiendra deux lignes, chacune avec la même **__ $start_lsn** valeur.|  
 |**__ $end_lsn**|**binary(10)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]<br /><br /> Dans [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)], cette colonne a toujours pour valeur NULL.|  
 |**__$seqval**|**binary(10)**|Valeur de séquence utilisée pour classer les modifications de ligne dans une transaction.|  
 |**__$operation**|**int**|Identifie l'opération de langage de manipulation de données associée à la modification. Les valeurs possibles sont les suivantes :<br /><br /> 1 = suppression<br /><br /> 2 = insertion<br /><br /> 3 = mise à jour (anciennes valeurs)<br /><br /> Les données de colonne ont des valeurs de ligne avant d'exécuter l'instruction UPDATE.<br /><br /> 4 = mise à jour (nouvelles valeurs)<br /><br /> Les données de colonne ont des valeurs de ligne après l'exécution de l'instruction UPDATE.|  
 |**__$update_mask**|**varbinary(128)**|Un masque de bits basé sur les ordinaux de colonne de la table de modifications identifiant les colonnes modifiées.|  
-|*\<colonnes de table source capturées >*|variable|Les colonnes restantes de la table de modifications sont les colonnes de la table source qui ont été identifiées comme colonnes capturées lorsque l'instance de capture a été créée. Si aucune colonne n'a été spécifiée dans la liste des colonnes capturées, toutes les colonnes de la table source sont incluses dans cette table.|  
+|*\<<colonnes_de_table_source_capturées>*|variable|Les colonnes restantes de la table de modifications sont les colonnes de la table source qui ont été identifiées comme colonnes capturées lorsque l'instance de capture a été créée. Si aucune colonne n'a été spécifiée dans la liste des colonnes capturées, toutes les colonnes de la table source sont incluses dans cette table.|  
 |**__ $id_de_commande** |**int** |Effectue le suivi de l’ordre des opérations dans une transaction. |  
   
 ## <a name="remarks"></a>Notes  
@@ -89,7 +86,7 @@ Le `__$command_id` une colonne a une colonne a été introduite dans une mise à
  Pour les opérations d'insertion et de suppression, tous les bits du masque de mise à jour sont définis. Pour les opérations de mise à jour, le masque de mise à jour sera modifié dans les lignes de mise à jour nouvelles et anciennes pour refléter les colonnes qui ont changé pendant la mise à jour.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sys.sp_cdc_enable_table &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md)   
- [Sys.sp_cdc_get_ddl_history &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-ddl-history-transact-sql.md)  
+ [Sys.sp_cdc_enable_table &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-enable-table-transact-sql.md)   
+ [Sys.sp_cdc_get_ddl_history &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-cdc-get-ddl-history-transact-sql.md)  
   
   

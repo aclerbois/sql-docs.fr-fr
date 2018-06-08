@@ -1,33 +1,32 @@
 ---
-title: "Copier des tables d’un schéma de base de données vers un autre | Microsoft Docs"
-ms.custom: 
+title: Copier des tables d’un schéma de base de données vers un autre | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - copying tables
 - duplicating tables
 ms.assetid: 155a4f09-9321-4887-a7d4-aa2ce6b51277
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 655a9fa107e3ea6192b0510d9b955d25250fb95e
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 70c51b3ad87f735b74f17ef81c28d7082ee8cdc9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="copy-tables-from-one-database-diagrams-to-another-visual-database-tools"></a>Copier des tables d'un schéma de base de données vers un autre (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez copier une table d’un schéma de base de données à l’autre dans la même base de données.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez copier une table d'un schéma de base de données à l'autre dans la même base de données.  
   
 Cette opération ajoute une référence à la table dans le deuxième schéma. La table n'est pas dupliquée dans la base de données. Par exemple, si vous copiez la table `authors` d'un schéma de base de données à un autre, les deux schémas font référence à la même table `authors` de la base de données.  
   

@@ -1,30 +1,28 @@
 ---
-title: "Objets des services Bureau à distance | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Objets des services Bureau à distance | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - objects [ADO], RDS
 - RDS objects [ADO]
 ms.assetid: f2ac8b3b-f968-41c4-a504-7aee3538b7c7
-caps.latest.revision: 
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aac19cd0fadb642ba8b18550694e1b54dba46d87
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4425704de152325e65de05bc31cb5976b4a2239c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rds-objects"></a>Objets des services Bureau à distance
 > [!IMPORTANT]

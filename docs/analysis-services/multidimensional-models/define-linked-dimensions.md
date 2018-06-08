@@ -1,34 +1,23 @@
 ---
-title: "Définir des Dimensions liées | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- dimensions [Analysis Services], linked
-- linked dimensions [Analysis Services]
-ms.assetid: d5ad5eae-5dde-46a6-91c3-c8766d016dec
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des Dimensions liées | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2d9b665cc3aa5dd70ea481cd6b3328ffb6d7aa82
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8441f37d902c823e9d8dce27a96b2d78f3f38b26
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="define-linked-dimensions"></a>Définir des dimensions liées
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une dimension liée est basée sur une dimension créée et enregistrée dans une autre base de données Analysis Services ayant la même version et le même niveau de compatibilité. En utilisant une dimension liée, vous pouvez créer, stocker et gérer une dimension dans une base de données, tout en rendant la dimension disponible pour les utilisateurs de plusieurs bases de données. Pour les utilisateurs, une dimension liée a la même apparence que n'importe quelle autre dimension.  
+  Une dimension liée est basée sur une dimension créée et enregistrée dans une autre base de données Analysis Services ayant la même version et le même niveau de compatibilité. En utilisant une dimension liée, vous pouvez créer, stocker et gérer une dimension dans une base de données, tout en rendant la dimension disponible pour les utilisateurs de plusieurs bases de données. Pour les utilisateurs, une dimension liée a la même apparence que n'importe quelle autre dimension.  
   
  Les dimensions liées sont en lecture seule. Si vous souhaitez modifier la dimension ou créer des relations, vous devez modifier la dimension source, puis supprimer et recréer la dimension liée et ses relations. Vous ne pouvez pas actualiser une dimension liée pour récupérer les modifications de l'objet source.  
   

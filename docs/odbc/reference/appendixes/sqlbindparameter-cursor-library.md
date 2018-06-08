@@ -1,28 +1,26 @@
 ---
-title: "SQLBindParameter (bibliothèque de curseurs) | Documents Microsoft"
-ms.custom: 
+title: SQLBindParameter (bibliothèque de curseurs) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLBindParameter function [ODBC], Cursor Library
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLBindParameter function [ODBC], Cursor Library
 ms.assetid: 04c53e4c-cd1d-40b2-9997-684ebe43499f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a6fb1b8e369b70d8bb5a1fa38ebc9dd6ea2906ed
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ef5189f1179c5be6b9307feb4dcf72c74838177d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlbindparameter-cursor-library"></a>SQLBindParameter (bibliothèque de curseurs)
 > [!IMPORTANT]  

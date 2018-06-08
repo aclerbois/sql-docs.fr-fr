@@ -1,27 +1,24 @@
 ---
-title: "Recherche d’informations sur le pilote JDBC supplémentaires | Documents Microsoft"
-ms.custom: 
+title: Recherche d’informations sur le pilote JDBC supplémentaires | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e0329385-c3ab-481d-81b5-6703955a91a9
-caps.latest.revision: "48"
+caps.latest.revision: 48
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ae72ba798703fcbb54553b05a1cfa5109f99505b
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 98894a9fc311f115eb0b7a9d3ccf9583b2037631
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="finding-additional-jdbc-driver-information"></a>Recherche d'informations supplémentaires sur le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

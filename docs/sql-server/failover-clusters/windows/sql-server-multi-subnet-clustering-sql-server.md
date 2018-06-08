@@ -1,16 +1,13 @@
 ---
-title: "Clustering de sous-réseaux multiples SQL Server (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Clustering de sous-réseaux multiples SQL Server (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/01/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - stretch cluster
 - Availability Groups [SQL Server], WSFC clusters
@@ -18,19 +15,19 @@ helpviewer_keywords:
 - multi-site failover cluster
 - failover clustering [SQL Server]
 ms.assetid: cd909612-99cc-4962-a8fb-e9a5b918e221
-caps.latest.revision: "52"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: e213c409060396b334958010e2799ea2c6eacd91
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 82a292ed83ec145e5e09bc5fd3f7dd424effebb6
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772625"
 ---
 # <a name="sql-server-multi-subnet-clustering-sql-server"></a>Clustering de sous-réseaux multiples SQL Server (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Un cluster de basculement de sous-réseaux multiples [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est une configuration dans laquelle chaque nœud de cluster de basculement est connecté à un sous-réseau différent ou à un ensemble différent de sous-réseaux. Ces sous-réseaux peuvent se trouver au même emplacement ou dans des sites géographiquement dispersés. En cas de clustering dans des sites géographiquement dispersés, on utilise parfois le terme « clusters étendus ». Comme tous les nœuds ne peuvent pas accéder à un stockage partagé, les données doivent être répliquées entre le stockage des données sur les sous-réseaux multiples. Avec la réplication de données, il existe plusieurs copies des données disponibles. Par conséquent, un cluster de basculement de sous-réseaux multiples fournit une solution de récupération d'urgence en plus d'une haute disponibilité.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Un cluster de basculement de sous-réseaux multiples [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est une configuration dans laquelle chaque nœud de cluster de basculement est connecté à un sous-réseau différent ou à un ensemble différent de sous-réseaux. Ces sous-réseaux peuvent se trouver au même emplacement ou dans des sites géographiquement dispersés. En cas de clustering dans des sites géographiquement dispersés, on utilise parfois le terme « clusters étendus ». Comme tous les nœuds ne peuvent pas accéder à un stockage partagé, les données doivent être répliquées entre le stockage des données sur les sous-réseaux multiples. Avec la réplication de données, il existe plusieurs copies des données disponibles. Par conséquent, un cluster de basculement de sous-réseaux multiples fournit une solution de récupération d'urgence en plus d'une haute disponibilité.  
   
    
 ##  <a name="VisualElement"></a> Cluster de basculement de sous-réseaux multiples SQL Server (deux nœuds, deux sous-réseaux)  
@@ -79,7 +76,7 @@ ms.lasthandoff: 12/05/2017
   
 |Description du contenu|Rubrique|  
 |-------------------------|-----------|  
-|Installation d'un cluster de basculement SQL Server|[Créer un cluster de basculement SQL Server (programme d'installation)](../../../sql-server/failover-clusters/install/create-a-new-sql-server-failover-cluster-setup.md)|  
+|Installation d'un cluster de basculement SQL Server|[Créer un cluster de basculement SQL Server (programme d'installation)](../../../sql-server/failover-clusters/install/create-a-new-sql-server-failover-cluster-setup.md)|  
 |Mise à niveau sur place de votre cluster de basculement SQL Server existant|[Mettre à niveau une instance de cluster de basculement SQL Server &#40;programme d’installation&#41;](../../../sql-server/failover-clusters/windows/upgrade-a-sql-server-failover-cluster-instance-setup.md)|  
 |Maintenance de votre cluster de basculement SQL Server existant|[Ajouter ou supprimer des nœuds dans un cluster de basculement SQL Server &#40;programme d’installation&#41;](../../../sql-server/failover-clusters/install/add-or-remove-nodes-in-a-sql-server-failover-cluster-setup.md)|  
 |Utiliser le composant logiciel enfichable de gestion du cluster de basculement pour afficher les événements et les journaux WSFC|[Afficher les événements et journaux pour un cluster de basculement](http://technet.microsoft.com/library/cc772342\(WS.10\).aspx)|  

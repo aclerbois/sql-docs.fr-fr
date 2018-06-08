@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLRemoveDriver | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLRemoveDriver
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLRemoveDriver
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLRemoveDriver
-helpviewer_keywords: SQLRemoveDriver function [ODBC]
+f1_keywords:
+- SQLRemoveDriver
+helpviewer_keywords:
+- SQLRemoveDriver function [ODBC]
 ms.assetid: 9a3b4f8b-982b-44b9-ade6-754ff026dc90
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5c910c862bd24a29ace17a2ec92352917d41699e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 77d92b7371c0ac262c9dcf6b4c57e8b9f1d7a26a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlremovedriver-function"></a>SQLRemoveDriver (fonction)
 **Mise en conformité**  
@@ -63,7 +64,7 @@ BOOL SQLRemoveDriver(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLRemoveDriver** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_COMPONENT_NOT_FOUND|Composant introuvable dans le Registre|Le programme d’installation n’a pas pu supprimer les informations de pilote, car il n’existe pas dans le Registre ou est introuvable dans le Registre.|  

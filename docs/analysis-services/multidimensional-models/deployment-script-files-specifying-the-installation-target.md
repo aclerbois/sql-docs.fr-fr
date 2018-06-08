@@ -1,34 +1,19 @@
 ---
 title: Spécification de la cible d’Installation | Documents Microsoft
-ms.custom: ''
-ms.date: 03/27/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining - "setup-install"
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-helpviewer_keywords:
-- input files [Analysis Services]
-- installation targets [Analysis Services]
-- Analysis Services deployments, installation targets
-- Analysis Services Deployment Wizard, installation targets
-- deploying [Analysis Services], installation targets
-- modifying installation targets
-ms.assetid: cb706817-6f63-4771-92c3-b70030bbce3d
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c9977badf4e1e8e05cb35ed8828d4cc4ae12cfae
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: a9a075c5afdc4132058a0356a172edd6d68a5e5d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deployment-script-files---specifying-the-installation-target"></a>Fichiers de Script de déploiement - spécification de la cible d’Installation
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]

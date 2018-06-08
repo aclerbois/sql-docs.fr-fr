@@ -1,28 +1,19 @@
 ---
-title: "Leçon 9 créer des Perspectives | Documents Microsoft"
-ms.custom: 
-ms.date: 03/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: 55b0f0d0-1cdf-4876-9c3d-d0c848be3f5d
-caps.latest.revision: "23"
-author: Minewiskan
+title: Leçon 9 créer des Perspectives | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 76fc2643bf8d160b38dbcc1009ad37926051407c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4e917e817768571e1959ae6163743ecdad0409af
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-8-create-perspectives"></a>Leçon 8 : Créer des Perspectives
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -35,7 +26,7 @@ L'objectif de cette leçon est plutôt de décrire comment créer des points de 
   
 Durée estimée pour effectuer cette leçon : **5 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit être suivi dans l'ordre. Avant d’effectuer les tâches de cette leçon, vous devez avoir terminé la leçon précédente : [leçon 7 : créer des indicateurs de Performance clés](../analysis-services/lesson-7-create-key-performance-indicators.md).  
   
 ## <a name="create-perspectives"></a>Créer des perspectives  

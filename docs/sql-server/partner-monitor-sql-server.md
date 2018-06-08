@@ -4,36 +4,35 @@ description: Listes de partenaires tiers avec des solutions pour la surveillance
 services: sql-server
 documentationcenter: NA
 author: MikeRayMSFT
-manager: jhubbard
-editor: 
-ms.assetid: 
-ms.service: 
+manager: craigg
+editor: ''
+ms.assetid: ''
 ms.component: sql-non-specified
 ms.suite: sql
 ms.devlang: NA
 ms.topic: article
 ms.tgt_pltfrm: NA
-ms.workload: sql-server
-ms.custom: 
+ms.custom: ''
 ms.date: 11/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
 ms.author: mikeray
-ms.openlocfilehash: 0ddac5bf809c836c194e7b0f187a24e4ed060abe
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+ms.openlocfilehash: f9c0dbc7ddcd40f8dbd859711c32dc4f9ff79f71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-monitoring-partners"></a>Partenaires pour la surveillance de SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour surveiller vos services SQL Server, vous pouvez choisir parmi un large éventail d’outils de pointe. Cet article présente les sociétés partenaires de Microsoft offrant des solutions de surveillance qui prennent en charge Microsoft SQL Server.
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Pour surveiller vos services SQL Server, vous pouvez choisir parmi un large éventail d’outils de pointe. Cet article présente les sociétés partenaires de Microsoft offrant des solutions de surveillance qui prennent en charge Microsoft SQL Server.
 
 <!--
 |![PartnerShortName][1] |**PartnerShortName**<br>PartnerShortName Brief description of the type of products that partner provides. <br><br>List of supported versions of SQL Server, OS, OS platforms/distros Server 2005 SP4 – SQL Server 2016 on Windows |[Datasheet][PartnerShortName_datasheet]<br>[Marketplace][PartnerShortName_marketplace]<br>[Website][PartnerShortName_website]<br>[Twitter][PartnerShortName_twitter]<br>[Video][PartnerShortName_youtube]|[![veem_video](./media/partner-hadr-sql-server/PartnerShortName_video.png)](https://www.youtube.com/channel/**************)
 -->
 
 ## <a name="microsoft-monitoring-partners"></a>Partenaires de monitoring Microsoft
-| Partenaire |  Description | Liens |
+| Partenaire | Description | Liens |
 | --- | --- | --- | --- |
 |[![idera][1]][idera_website] |**IDERA**<br>SQL Diagnostic Manager est une solution puissante de surveillance et de diagnostic des performances, qui avertit de façon proactive les administrateurs des problèmes d’intégrité, de performances et de disponibilité dans les environnements SQL Server, le tout à partir d’une console centrale.<br><br>[Configuration système requise][idera_requirements]|<!--[Marketplace][idera_marketplace]<br>-->[Site web][idera_website]<br>[Twitter][idera_twitter]<br>[Vidéo][idera_youtube] | |
 |[![quest][3]][quest_website] |**Quest**<br>Spotlight sur SQL Server Entreprise : garantissez un niveau de performance maximal en continu avec une surveillance, des diagnostics et une optimisation sans précédent des environnements SQL Server. Spotlight vous permet d’accéder aux détails dont vous avez besoin pour adapter vos bases de données SQL Server de façon optimale. Profitez de vues d’ensemble intuitives sur l’intégrité et les performances, d’alertes et d’actions automatisées, ainsi que de la prise en charge des appareils mobiles.|[Place de marché][quest_marketplace]<br>[Site web][quest_website]<br>[Vidéo][quest_video] | |

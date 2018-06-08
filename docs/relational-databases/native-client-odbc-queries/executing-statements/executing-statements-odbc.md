@@ -1,15 +1,14 @@
 ---
-title: "L’exécution d’instructions (ODBC) | Documents Microsoft"
-ms.custom: 
+title: L’exécution d’instructions (ODBC) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Native Client ODBC driver, statements
@@ -17,15 +16,17 @@ helpviewer_keywords:
 - ODBC applications, statements
 - statements [ODBC], executing
 ms.assetid: 063fc40d-ff81-490d-9c9b-2faefb729f37
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.openlocfilehash: e94cefd52d5c5e1a13efd2dcd66d045126a7329f
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7521f18d4ac934bd05b6922f8e48bcb18d31a4c8
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707817"
 ---
 # <a name="executing-statements-odbc"></a>Exécution d'instructions (ODBC)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -54,6 +55,6 @@ ms.lasthandoff: 01/25/2018
 -   [Effets des options ISO](../../../relational-databases/native-client-odbc-queries/executing-statements/effects-of-iso-options.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’exécution de requêtes &#40; ODBC &#41;](../../../relational-databases/native-client-odbc-queries/executing-queries-odbc.md)  
+ [L’exécution de requêtes &#40;ODBC&#41;](../../../relational-databases/native-client-odbc-queries/executing-queries-odbc.md)  
   
   

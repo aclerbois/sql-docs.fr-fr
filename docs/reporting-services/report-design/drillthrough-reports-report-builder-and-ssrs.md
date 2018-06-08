@@ -1,27 +1,25 @@
 ---
-title: "Rapports d’extraction (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Rapports d’extraction (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 938a6450-67c1-4eef-80b4-8fdaefeed584
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 9137df08bf09842a0ab5d85b9af2a73f48f52639
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8214fbe28965b2d6c863a856a4400042a2ba506b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drillthrough-reports-report-builder-and-ssrs"></a>Rapports d'extraction (Générateur de rapports et SSRS)
   Un rapport d'extraction est un rapport que l'utilisateur ouvre en cliquant sur un lien situé dans un autre rapport. Il contient en général des détails sur un élément figurant dans le rapport de synthèse d'origine. Par exemple, dans cette illustration, le rapport de synthèse des ventes répertorie les commandes client et les totaux. Lorsque l'utilisateur clique sur un numéro de commande dans la liste de résumé, un autre rapport s'affiche pour présenter des informations sur la commande en question.  

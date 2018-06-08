@@ -1,31 +1,27 @@
 ---
-title: "Nouveautés de l’Assistant de Migration de données (SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Nouveautés de l’Assistant de Migration de données (SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 02/02/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
 helpviewer_keywords:
 - Data Migration Assistant, new features
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9b72ea21423b96a1dbd19eb5fb8f0a3b99c59e0d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2468bb700588310a397530f27c6c6d6960e75b06
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="whats-new-in-data-migration-assistant"></a>Nouveautés de l’Assistant Migration de données
 

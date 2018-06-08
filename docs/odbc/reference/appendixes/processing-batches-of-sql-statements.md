@@ -1,16 +1,14 @@
 ---
-title: "Traitement des lots d’instructions SQL | Documents Microsoft"
-ms.custom: 
+title: Traitement des lots d’instructions SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC cursor library [ODBC], batches
 - ODBC cursor library [ODBC], statement processing
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - SQL statements [ODBC], batches
 - batches [ODBC], processing batches of SQL statements
 ms.assetid: 04b93ef9-11de-47a3-8bd8-ba963c42f182
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 344dae2ae1f84e5c71c6e038bede32f014521b12
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 04f90e8a2da0b19c57b4de7a665c6907356f788c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-batches-of-sql-statements"></a>Traitement des lots d’instructions SQL
 > [!IMPORTANT]  

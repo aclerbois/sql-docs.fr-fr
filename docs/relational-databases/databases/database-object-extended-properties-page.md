@@ -1,33 +1,33 @@
 ---
-title: "Objet de base de données (page Propriétés étendues) | Microsoft Docs"
-ms.custom: 
+title: Objet de base de données (page Propriétés étendues) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.common.extendedproperties.f1
 ms.assetid: caa4f4a1-fd54-466e-975d-3e7e1cc5de54
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a40f19346fe5c40c4c7f6aa1426d2a58081e564a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 766f76f075cf132cc5b4413de4e109972b306fcc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-object-extended-properties-page"></a>Objet de base de données (page Propriétés étendues)
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)] Les propriétés étendues vous permettent d’ajouter des propriétés personnalisées aux objets de base de données. Utilisez cette page pour afficher ou modifier les propriétés étendues de l'objet sélectionné. La page **Propriétés étendues** est la même pour tous les types d’objets de base de données.  
+[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
+  Les propriétés étendues vous permettent d'ajouter des propriétés personnalisées aux objets de base de données. Utilisez cette page pour afficher ou modifier les propriétés étendues de l'objet sélectionné. La page **Propriétés étendues** est la même pour tous les types d’objets de base de données.  
   
 ## <a name="uielement-list"></a>Liste des éléments de l'interface utilisateur  
  **Sauvegarde de la base de données**  

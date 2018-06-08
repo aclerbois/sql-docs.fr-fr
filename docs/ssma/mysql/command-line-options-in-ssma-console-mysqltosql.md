@@ -1,16 +1,15 @@
 ---
 title: Options de ligne de commande dans la Console SSMA (MySQLToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - Command line options, variable value file option
 - Command line options, XML output option
 ms.assetid: a2310b10-68ad-4285-a08b-c8694cf84416
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: aa2e0210a3d59e41b9adf9d44b593e3bc83e9aef
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1c7d3f83668df0413b1898d888385fed2a183f00
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-line-options-in-ssma-console-mysqltosql"></a>Options de ligne de commande dans la Console SSMA (MySQLToSQL)
 Microsoft vous fournit un options de ligne de commande ensemble robuste pour exécuter et contrôler les activités SSMA. Les sections qui en découlent décrit en détail le même.  
@@ -102,7 +100,7 @@ Définition de serveur est incorporée dans le fichier de script :
 ### <a name="xml-output-option--xxmloutput-xmloutputfile"></a>Option de sortie XML : - x / xmloutput [xmloutputfile]  
 Cette commande est utilisée pour la sortie des messages de sortie de commande au format xml à la console ou dans un fichier xml.  
   
-Il existe deux options pour xmloutput, notamment.., :  
+Il existe deux options pour xmloutput, notamment..,:  
   
 -   Si le chemin d’accès est fourni après le commutateur xmloutput la sortie est redirigée vers le fichier.  
   
@@ -172,21 +170,21 @@ Affiche le résumé de la syntaxe des options de la Console de SSMA :
   
 `C:\>SSMAforMySQLConsole.EXE -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; MySQLToSQL &#41; ](../../ssma/mysql/appendix-1-mysqltosql.md).  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;MySQLToSQL&#41;](../../ssma/mysql/appendix-1-mysqltosql.md).  
   
 ### <a name="securepassword-help-option-securepassword--help"></a>Option de l’aide de SecurePassword : – securepassword- ? /Help  
 Affiche le résumé de la syntaxe des options de la Console de SSMA :  
   
 `C:\>SSMAforMySQLConsole.EXE -securepassword -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; MySQLToSQL &#41;](../../ssma/mysql/appendix-1-mysqltosql.md)  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;MySQLToSQL&#41;](../../ssma/mysql/appendix-1-mysqltosql.md)  
   
 ### <a name="next-step"></a>Étape suivante  
 L’étape suivante varie selon les spécifications de votre projet :  
   
--   Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40; MySQLToSQL &#41; ](../../ssma/mysql/managing-passwords-mysqltosql.md).  
+-   Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40;MySQLToSQL&#41;](../../ssma/mysql/managing-passwords-mysqltosql.md).  
   
--   Pour la génération de rapports, consultez [génération de rapports &#40; MySQLToSQL &#41; ](../../ssma/mysql/generating-reports-mysqltosql.md).  
+-   Pour la génération de rapports, consultez [génération de rapports &#40;MySQLToSQL&#41;](../../ssma/mysql/generating-reports-mysqltosql.md).  
   
--   Pour résoudre les problèmes dans la console, consultez [dépannage &#40; MySQLToSQL &#41; ](../../ssma/mysql/troubleshooting-mysqltosql.md).  
+-   Pour résoudre les problèmes dans la console, consultez [dépannage &#40;MySQLToSQL&#41;](../../ssma/mysql/troubleshooting-mysqltosql.md).  
   

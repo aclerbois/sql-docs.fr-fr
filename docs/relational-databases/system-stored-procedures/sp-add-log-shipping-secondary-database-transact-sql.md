@@ -1,16 +1,14 @@
 ---
 title: sp_add_log_shipping_secondary_database (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_log_shipping_secondary_database
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_log_shipping_secondary_database
 ms.assetid: d29e1c24-3a3c-47a4-a726-4584afa6038a
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 965f2191ba9dbdbba5be91412c1459064972c22c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 70abdc5cb67beeb779af3722d3b5e7f91b923e21
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddlogshippingsecondarydatabase-transact-sql"></a>sp_add_log_shipping_secondary_database (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,22 +57,22 @@ sp_add_log_shipping_secondary_database
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@secondary_database** = ] '*secondary_database*'  
+ [ **@secondary_database** =] '*secondary_database*'  
  Nom de la base de données secondaire. *secondary_database* est **sysname**, sans valeur par défaut.  
   
- [ **@primary_server** = ] '*primary_server*'  
+ [ **@primary_server** =] '*primary_server*'  
  Le nom de l’instance principale de la [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] dans la configuration d’envoi de journaux. *primary_server* est **sysname** et ne peut pas être NULL.  
   
- [ **@primary_database** = ] '*primary_database*'  
+ [ **@primary_database** =] '*primary_database*'  
  Nom de la base de données sur le serveur principal. *primary_database* est **sysname**, sans valeur par défaut.  
   
- [ **@restore_delay** = ] '*restore_delay*'  
+ [ **@restore_delay** =] '*restore_delay*'  
  Durée, en minutes, de l'attente du serveur secondaire avant de restaurer un fichier de sauvegarde donné. *restore_delay* est **int** et ne peut pas être NULL. La valeur par défaut est 0 :  
   
- [ **@restore_all** = ] '*restore_all*'  
+ [ **@restore_all** =] '*restore_all*'  
  Si la valeur est définie à 1, le serveur secondaire restaure toutes les sauvegardes du journal des transactions disponibles au moment de la restauration. Dans le cas contraire, le serveur s'arrête une fois qu'un fichier est restauré. *restore_all* est **bits** et ne peut pas être NULL.  
   
- [ **@restore_mode** = ] '*restore_mode*'  
+ [ **@restore_mode** =] '*restore_mode*'  
  Mode de restauration pour la base de données secondaire.  
   
  0 = Restauration du journal avec l'option NORECOVERY.  
@@ -84,28 +81,28 @@ sp_add_log_shipping_secondary_database
   
  *restaurer* est **bits** et ne peut pas être NULL.  
   
- [  **@disconnect_users**  =] '*disconnect_users*'  
+ [ **@disconnect_users** =] '*disconnect_users*'  
  Si la valeur est définie à 1, les utilisateurs sont déconnectés de la base de données secondaire au moment de la restauration. Par défaut = 0. *Déconnecter* utilisateurs est **bits** et ne peut pas être NULL.  
   
- [  **@block_size**  =] '*block_size*'  
+ [ **@block_size** =] '*block_size*'  
  Taille, en octets, qui définit la taille des blocs pour l'unité de sauvegarde. *block_size* est **int** avec la valeur par défaut -1.  
   
- [  **@buffer_count**  =] '*buffer_count*'  
+ [ **@buffer_count** =] '*buffer_count*'  
  Nombre total de mémoires tampons utilisées par l'opération de sauvegarde ou de restauration. *buffer_count* est **int** avec la valeur par défaut -1.  
   
- [ **@max_transfer_size** = ] '*max_transfer_size*'  
+ [ **@max_transfer_size** =] '*max_transfer_size*'  
  Taille, en octets, de la demande d'entrée ou de sortie maximale émise par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l'unité de sauvegarde. *max_transfersize* est **int** et peut être NULL.  
   
- [ **@restore_threshold** = ] '*restore_threshold*'  
+ [ **@restore_threshold** =] '*restore_threshold*'  
  Nombre de minutes pouvant s'écouler entre les opérations de restauration avant qu'une alerte ne soit générée. *restore_threshold* est **int** et ne peut pas être NULL.  
   
- [  **@threshold_alert**  =] '*threshold_alert ne*'  
+ [ **@threshold_alert** =] '*threshold_alert ne*'  
  Est de l’alerte à déclencher lorsque le seuil de sauvegarde est dépassé. *l’argument threshold_alert* est **int**, avec 14 420 comme valeur par défaut.  
   
- [  **@threshold_alert_enabled**  =] '*threshold_alert_enabled*'  
+ [ **@threshold_alert_enabled** =] '*threshold_alert_enabled*'  
  Indique si une alerte est générée lorsque *backup_threshold* est dépassé. La valeur 1 par défaut indique que l'alerte sera générée. *threshold_alert_enabled* est **bits**.  
   
- [ **@history_retention_period** = ] '*history_retention_period*'  
+ [ **@history_retention_period** =] '*history_retention_period*'  
  Est la durée en minutes pendant laquelle l’historique est conservé. *history_retention_period* est **int**, avec NULL comme valeur par défaut. La valeur 14 420 est utilisée si aucune autre valeur n'est spécifiée.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -146,7 +143,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À propos de journaux de transaction &#40; SQL Server &#41;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
+ [À propos de journaux de transaction & #40 ; SQL Server & #41 ;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

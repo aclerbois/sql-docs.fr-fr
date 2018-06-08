@@ -1,17 +1,14 @@
 ---
 title: Jeux de supports, familles de supports et jeux de sauvegarde (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/18/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - media sets [SQL Server], about media sets
 - backup media [SQL Server], about backup media
@@ -26,16 +23,15 @@ helpviewer_keywords:
 - backups [SQL Server], backup sets
 - backup sets [SQL Server]
 ms.assetid: 2b8f19a2-ee9d-4120-b194-fbcd2076a489
-caps.latest.revision: 
+caps.latest.revision: 59
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 13405de028f7392c9ef384743a44db9fb49c627c
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 10295eee1a621805a8dd80bacd3511468cf132d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="media-sets-media-families-and-backup-sets-sql-server"></a>Jeux de supports, familles de supports et jeux de sauvegarde (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -106,7 +102,7 @@ Dans un support de sauvegarde en miroir, chaque famille de support est mise en m
   
 -   Date et heure de création de l'étiquette.  
   
--   Nombre de miroirs dans le jeu (1 à 4) ; 1 indique une unité non mise en miroir.  
+-   Nombre de miroirs dans le jeu (1 à 4) ; 1 indique une unité non mise en miroir.  
   
  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] peut traiter des supports formatés par des versions [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]antérieures.  
   

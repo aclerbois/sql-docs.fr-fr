@@ -1,16 +1,15 @@
 ---
 title: sp_mergearticlecolumn (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_mergearticlecolumn
 ms.assetid: b4f2b888-e094-4759-a472-d893638995eb
-caps.latest.revision: 
+caps.latest.revision: 20
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 083d6d27d9417a76f9cafc1c3726e3f7c10df6d7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e426586be6229cb62e36d8fdcab13663785240b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spmergearticlecolumn-transact-sql"></a>sp_mergearticlecolumn (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -53,7 +51,7 @@ sp_mergearticlecolumn [ @publication = ] 'publication'
   
 ## <a name="arguments"></a>Arguments  
  [  **@publication =**] **'***publication***'**  
- Nom de la publication. *Publication* est **sysname**, sans valeur par défaut.  
+ Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
  [  **@article =**] **'***article***'**  
  Nom de l'article dans la publication. *article* est **sysname**, sans valeur par défaut.  
@@ -77,7 +75,7 @@ sp_mergearticlecolumn [ @publication = ] 'publication'
   
  **1** Spécifie que les modifications apportées à l’article de fusion peuvent invalider l’instantané n’est pas valide, et si c’est le cas, la valeur **1** autorise le nouvel instantané de se produire.  
   
- [  **@force_reinit_subscription =]***force_reinit_subscription*  
+ [* *@force_reinit_subscription =] *** force_reinit_subscription*  
  Active ou désactive la possibilité de réinitialiser l'abonnement. *force_reinit_subscription* est de type bit, avec une valeur par défaut **0**.  
   
  **0** Spécifie que les modifications apportées à l’article de fusion n’entraînent pas la réinitialisation des abonnements.  
@@ -99,12 +97,12 @@ sp_mergearticlecolumn [ @publication = ] 'publication'
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_AddMergeArticle](../../relational-databases/replication/codesnippet/tsql/sp-mergearticlecolumn-tr_1.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_mergearticlecolumn**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Définir et modifier un filtre de jointure entre des Articles de fusion](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
- [DDéfinir et modifier un filtre de lignes paramétrable pour un article de fusion](../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md)   
+ [Define and Modify a Join Filter Between Merge Articles](../../relational-databases/replication/publish/define-and-modify-a-join-filter-between-merge-articles.md)   
+ [Définir et modifier un filtre de lignes paramétrable pour un article de fusion](../../relational-databases/replication/publish/define-and-modify-a-parameterized-row-filter-for-a-merge-article.md)   
  [Filtrer des données publiées](../../relational-databases/replication/publish/filter-published-data.md)   
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)  
   

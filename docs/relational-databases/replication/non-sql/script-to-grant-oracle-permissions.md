@@ -1,34 +1,32 @@
 ---
-title: "Script pour l’attribution d’autorisations Oracle | Microsoft Docs"
-ms.custom: 
+title: Script pour l’attribution d’autorisations Oracle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Oracle publishing [SQL Server replication], script to grant permissions
 ms.assetid: d742fd30-347a-452f-b5fc-b03232360c6b
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0b7a63653fa16f51679e0b529bf6a7c1bb037bdc
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 12400cce468fe4955c0b6a67a19dd275cf0a56d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="script-to-grant-oracle-permissions"></a>Script pour l'attribution d'autorisations Oracle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-  Le script fourni dans cette rubrique est utilisé lors de la configuration d'une base de données Oracle qui publiera des données à l'aide de la réplication [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Ce script est également disponible dans le répertoire suivant après l’installation : *\<lecteur>*:\\\Program Files\Microsoft SQL Server\\*\<Nom_Instance>*\MSSQL\Install\oracleadmin.sql. Pour plus d’informations sur la configuration de la base de données Oracle, consultez [Configurer un serveur de publication Oracle](../../../relational-databases/replication/non-sql/configure-an-oracle-publisher.md).  
+  Le script fourni dans cette rubrique est utilisé lors de la configuration d'une base de données Oracle qui publiera des données à l'aide de la réplication [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . Ce script est également disponible dans le répertoire suivant après l’installation : *\<lecteur>*:\\\Program Files\Microsoft SQL Server\\*\<Nom_Instance>* \MSSQL\Install\oracleadmin.sql. Pour plus d’informations sur la configuration de la base de données Oracle, consultez [Configurer un serveur de publication Oracle](../../../relational-databases/replication/non-sql/configure-an-oracle-publisher.md).  
   
 > [!NOTE]  
 >  Ce script contient l'instruction `GRANT CREATE ANY TRIGGER TO &&AdminLogin;`, qui est requise pour les déclencheurs utilisés par la réplication transactionnelle. Si vous allez utiliser seulement la réplication d'instantané, supprimez cette ligne du script.  

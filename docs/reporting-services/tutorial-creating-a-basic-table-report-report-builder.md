@@ -1,28 +1,27 @@
 ---
-title: "Didacticiel : création d’un rapport de tableau de base (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : création d’un rapport de tableau de base (Générateur de rapports) | Microsoft Docs'
+ms.custom: ''
 ms.date: 06/23/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: d9e30521-f8ae-4c45-89c3-d40727f622f7
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: a94fabf2c89005a3125cc73c54b55d537dc2458b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e03e955d70e46dea954dcc4cce83faece6c2e2ea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-creating-a-basic-table-report-report-builder"></a>Didacticiel : création d'un rapport de tableau de base (Générateur de rapports)
 Ce didacticiel vous apprend à créer un rapport de tableau de base à partir des exemples de données de ventes. L’illustration suivante montre le rapport que vous allez créer.  

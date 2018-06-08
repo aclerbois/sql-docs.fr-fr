@@ -1,34 +1,30 @@
 ---
-title: "Bitmap Warning, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Bitmap Warning, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Bitmap Warning event class
 ms.assetid: 5bf9b4e3-0eba-4e67-8ba9-30ca4b48e1d4
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8ed699dc2035ed65236bd998496aaf1d001d6128
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 0778e11f9780569c2417c2cd843bc5e860250dc5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="bitmap-warning-event-class"></a>Bitmap Warning, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Bitmap Warning** permet de surveiller l’utilisation de filtres bitmap dans les requêtes. La sous-classe d'événements permet de signaler lorsque des filtres bitmap ont été désactivés dans une requête.  
+  La classe d’événements **Bitmap Warning** permet de surveiller l’utilisation de filtres bitmap dans les requêtes. La sous-classe d'événements permet de signaler lorsque des filtres bitmap ont été désactivés dans une requête.  
   
 ## <a name="bitmap-warning-event-class-data-columns"></a>Colonnes de données de la classe d'événements Bitmap Warning  
   

@@ -1,31 +1,30 @@
 ---
-title: "Assistant de bases de données de la recherche (Vérifiez la sélection) (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Assistant de bases de données de la recherche (Vérifiez la sélection) (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Find Databases Wizard
+helpviewer_keywords:
+- Find Databases Wizard
 ms.assetid: 62e20e03-50cc-4ac8-8072-524d194d2ec3
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f105882bee69488970c986e77cd61db4f0844b0d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 05baf274638892040fe8ddf5d81d4c153c61ed0c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-databases-wizard-verify-selection-accesstosql"></a>Assistant de bases de données de la recherche (Vérifiez la sélection) (AccessToSQL)
 La page vérifier la sélection de l’Assistant trouver les bases de données répertorie les fichiers à ajouter à SSMA. Si la liste des fichiers est incorrecte, cliquez sur **retour** pour modifier la liste. Sinon, cliquez sur **Terminer** pour ajouter les fichiers.  

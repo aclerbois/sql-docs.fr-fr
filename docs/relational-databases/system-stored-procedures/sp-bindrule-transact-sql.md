@@ -1,16 +1,14 @@
 ---
 title: sp_bindrule (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/25/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_bindrule_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_bindrule
 ms.assetid: 2606073e-c52f-498d-a923-5026b9d97e67
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 969ce21685f6a63bbab3e629fbf657710133a67e
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ff3dda4304d1dae1fc8183a667507867893f1bdc
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spbindrule-transact-sql"></a>sp_bindrule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -37,7 +35,7 @@ ms.lasthandoff: 11/27/2017
   Lie une règle à une colonne ou un type de données d'alias.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)]Utilisez[Unique Constraints and Check Constraints](../../relational-databases/tables/unique-constraints-and-check-constraints.md) à la place. Les contraintes CHECK sont créées à l’aide du mot clé de vérification de la [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) ou [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) instructions.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez[Unique Constraints and Check Constraints](../../relational-databases/tables/unique-constraints-and-check-constraints.md) à la place. Les contraintes CHECK sont créées à l’aide du mot clé de vérification de la [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) ou [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) instructions.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -55,7 +53,7 @@ sp_bindrule [ @rulename = ] 'rule' ,
  Nom d'une règle créée par l'instruction CREATE RULE. *règle* est **nvarchar(776)**, sans valeur par défaut.  
   
  [  **@objname=**] **'***nom_objet***'**  
- Table ou colonne, ou bien type de données d'alias auquel la règle doit être liée. Une règle ne peut pas être liée à un **texte**, **ntext**, **image**, **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml**, type défini par l’utilisateur CLR, ou **timestamp**colonne. Enfin, une règle ne peut pas être liée à une colonne calculée.  
+ Table ou colonne, ou bien type de données d'alias auquel la règle doit être liée. Une règle ne peut pas être liée à un type **text**, **ntext**, **image**, **varchar(max)**, **nvarchar(max)**, **varbinary(max)**, **xml**, à un type CLR défini par l’utilisateur, ou à une colonne **timestamp**. Enfin, une règle ne peut pas être liée à une colonne calculée.  
   
  *nom_objet* est **nvarchar(776)** sans valeur par défaut. Si *nom_objet* est un nom d’une seule partie, il est résolu en tant que type de données alias. S'il s'agit d'un nom en deux ou trois parties, il est d'abord résolu en tant que table et colonne. Si la résolution échoue, il est résolu en tant que type de données d'alias. Par défaut, les colonnes existantes du type de données alias héritent *règle* , sauf si une règle a été liée directement à la colonne.  
   
@@ -80,7 +78,7 @@ sp_bindrule [ @rulename = ] 'rule' ,
   
  Lorsque vous liez une règle à une colonne, l’information correspondante est ajoutée à la **sys.columns** table. Lorsque vous liez une règle à un type de données alias, l’information correspondante est ajoutée à la **sys.types** table.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Pour lier une règle à une colonne de table, une autorisation ALTER est nécessaire sur la table. Pour lier une règle à un type de données d'alias, il est nécessaire de disposer d'une autorisation CONTROL sur le type de données d'alias ou d'une autorisation ALTER sur le schéma auquel le type appartient.  
   
 ## <a name="examples"></a>Exemples  
@@ -128,10 +126,10 @@ EXEC sp_bindrule rule1, '[t.2].c1' ;
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [CREATE RULE &#40;Transact-SQL&#41;](../../t-sql/statements/create-rule-transact-sql.md)   
- [DROP RULE &#40; Transact-SQL &#41;](../../t-sql/statements/drop-rule-transact-sql.md)   
- [sp_unbindrule &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-unbindrule-transact-sql.md)   
+ [DROP RULE &#40;Transact-SQL&#41;](../../t-sql/statements/drop-rule-transact-sql.md)   
+ [sp_unbindrule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindrule-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

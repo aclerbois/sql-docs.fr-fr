@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetDiagRec | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetDiagRec
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetDiagRec
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetDiagRec
-helpviewer_keywords: SQLGetDiagRec function [ODBC]
+f1_keywords:
+- SQLGetDiagRec
+helpviewer_keywords:
+- SQLGetDiagRec function [ODBC]
 ms.assetid: ebdbac93-3d68-438f-8416-ef1f08e04269
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 34aa67ed374f525f6195403b299500019192c19a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a926e8de729fe5d654f880128371bfc48dd39fdd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetdiagrec-function"></a>SQLGetDiagRec (fonction)
 **Mise en conformité**  

@@ -2,30 +2,27 @@
 title: 'Comment : spécifier les Types de données SQL Server lors de l’utilisation du pilote SQLSRV | Documents Microsoft'
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - converting data types
 - streaming data
 ms.assetid: 1fcf73cb-5634-4d89-948f-9326f1dbd030
-caps.latest.revision: ''
+caps.latest.revision: 18
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f88116134641d955c886bdee840982fa7710b934
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: d3c73c660e0b5468eabfb2878552dd396567144e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-specify-sql-server-data-types-when-using-the-sqlsrv-driver"></a>Procédure : spécifier des types de données SQL Server quand vous utilisez le pilote SQLSRV
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -63,7 +60,7 @@ Les étapes suivantes récapitulent la manière de spécifier le type de donnée
 ## <a name="example"></a>Exemple  
 L’exemple suivant insère des données dans le *HumanResources.EmployeePayHistory* table de base de données AdventureWorks. Les types SQL Server sont spécifiés pour les paramètres *$changeDate*, *$rate*et *$payFrequency* . Le type SQL Server par défaut est utilisé pour le paramètre *$employeeId* . Pour vérifier que les données ont été correctement insérées, les mêmes données sont récupérées et affichées.  
   
-Cet exemple suppose que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local.  Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
+Cet exemple suppose que SQL Server et le [AdventureWorks](https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/adventure-works) base de données sont installés sur l’ordinateur local. Toute la sortie est écrite dans la console quand l’exemple est exécuté à partir de la ligne de commande.  
   
 ```  
 <?php  

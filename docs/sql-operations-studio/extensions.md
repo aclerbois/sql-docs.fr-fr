@@ -3,22 +3,21 @@ title: Étendre les fonctionnalités des opérations de SQL Studio (version pré
 description: Ajouter des extensions à des opérations de SQL Studio (version préliminaire)
 ms.custom: tools|sos
 ms.date: 03/28/2018
-ms.reviewer: alayu; erickang; sstein
-ms.prod: sql-non-specified
+ms.reviewer: alayu; sstein
+ms.prod: sql
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d632e48b9dd47d1a0bd9a1d98c3c7d2ea5b5a603
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: 2df3a0c5b060e9a4e89f5ce425e522cdd3b37e24
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="extend-the-functionality-of-includename-sosincludesname-sos-shortmd"></a>Étendre les fonctionnalités de [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 

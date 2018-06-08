@@ -1,17 +1,14 @@
 ---
-title: "Récupérer un numéro séquentiel dans le journal (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Récupérer un numéro séquentiel dans le journal (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - log sequence numbers [SQL Server]
 - STOPBEFOREMARK option [RESTORE statement]
@@ -24,20 +21,19 @@ helpviewer_keywords:
 - database recovery [SQL Server]
 - database restores [SQL Server], point in time
 ms.assetid: f7b3de5b-198d-448d-8c71-1cdd9239676c
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb43b2630d4eebe0c101f616e7da71908c031ac7
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 441daeb74bcc141c148edef396b04bf75aff3f0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="recover-to-a-log-sequence-number-sql-server"></a>Récupérer un numéro séquentiel dans le journal (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique s'applique uniquement aux bases de données employant les modes de restauration complète ou de récupération utilisant les journaux de transactions.  
+  Cette rubrique s'applique uniquement aux bases de données employant les modes de restauration complète ou de récupération utilisant les journaux de transactions.  
   
  Vous pouvez utiliser un numéro séquentiel dans le journal pour définir le point de récupération d'une opération de restauration. Toutefois, cette fonctionnalité est spécialement conçue pour les fournisseurs d'outils et ne devrait pas être nécessaire dans la plupart des cas.  
   
@@ -71,11 +67,11 @@ Cette rubrique s'applique uniquement aux bases de données employant les modes d
 ## <a name="transact-sql-syntax-for-restoring-to-an-lsn"></a>Syntaxe Transact-SQL relative à la restauration d'après un LSN  
  Grâce à l'instruction [RESTORE](../../t-sql/statements/restore-statements-transact-sql.md) , vous pouvez vous arrêter à un LSN ou immédiatement avant ce point de la façon suivante :  
   
--   Utilisez la clause WITH STOPATMARK **='**lsn:*<numéro_lsn>***'**, où lsn:*\<numéro_lsn>* correspond à une chaîne spécifiant que l’enregistrement du journal qui contient le LSN spécifié est le point de récupération.  
+-   Utilisez la clause WITH STOPATMARK **='** lsn:*<numéro_lsn>***'**, où lsn:*\<numéro_lsn>* correspond à une chaîne spécifiant que l’enregistrement du journal qui contient le LSN spécifié est le point de récupération.  
   
      STOPATMARK permet la restauration par progression jusqu'au NSE et inclut l'enregistrement correspondant issu du journal, dans la restauration.  
   
--   Utilisez la clause WITH STOPBEFOREMARK **='**lsn:*<numéro_lsn>***'**, où lsn:*\<numéro_lsn>* correspond à une chaîne spécifiant que l’entrée se trouvant dans le journal immédiatement avant celle qui contient le LSN précisé est le point de récupération.  
+-   Utilisez la clause WITH STOPBEFOREMARK **='** lsn:*<numéro_lsn>***'**, où lsn:*\<numéro_lsn>* correspond à une chaîne spécifiant que l’entrée se trouvant dans le journal immédiatement avant celle qui contient le LSN précisé est le point de récupération.  
   
      STOPBEFOREMARK permet la restauration par progression jusqu'au NSE mais exclut l'enregistrement correspondant, se trouvant dans le journal, de la restauration par progression.  
   

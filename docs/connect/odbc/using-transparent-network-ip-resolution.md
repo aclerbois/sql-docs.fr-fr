@@ -1,27 +1,24 @@
 ---
-title: "À l’aide de la résolution IP réseau Transparent | Documents Microsoft"
-ms.custom: 
+title: À l’aide de la résolution IP réseau Transparent | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d255208f-d486-4ad3-8080-61c6e0261825
-caps.latest.revision: "2"
+caps.latest.revision: 2
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0db2d2b8dfc796b8c2dc696d66264745182ab39a
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 2d76e50b4761e8d1a32bbcfc4606778f96513ed1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-transparent-network-ip-resolution"></a>À l’aide de la résolution IP réseau Transparent
 [!INCLUDE[Driver_ODBC_Download](../../includes/driver_odbc_download.md)]
@@ -32,7 +29,7 @@ TransparentNetworkIPResolution est une révision de la fonctionnalité existante
 * 1 : toutes les adresses IP sont tentées en parallèle
 * 2 : toutes les adresses IP sont tentées une après l’autre
 
-|TransparentNetworkIPResolution|multiSubnetFailover|Comportement|
+|TransparentNetworkIPResolution|MultiSubnetFailover|Comportement|
 |:-:|:-:|:-:|
 |(par défaut)|(par défaut)|0|
 |(par défaut)|Activé|1|
@@ -46,13 +43,13 @@ TransparentNetworkIPResolution est une révision de la fonctionnalité existante
 
 Le `TransparentNetworkIPResolution` chaîne de connexion et de la source de données (mot clé) contrôle ce paramètre au niveau de la chaîne de connexion. La valeur par défaut est activée.
 
-Mot clé|Valeurs|Valeur par défaut
+Mot clé|Valeurs|Par défaut
 -|-|-
 `TransparentNetworkIPResolution`|`Yes`, `No`|`Yes`
 
 Le `SQL_COPT_SS_TNIR` attribut de préconnexion permet à une application contrôler ce paramètre par programmation :
 
-Attribut de connexion|   Type de la taille|  Valeur par défaut| Valeur|  Description
+Attribut de connexion|   Type de la taille|  Par défaut| Valeur|  Description
 -|-|-|-|-
 `SQL_COPT_SS_TNIR` (1249)| `SQL_IS_INTEGER`ou`SQL_IS_UINTEGER`| `SQL_IS_ON`(1), `SQL_IS_OFF`(0)|`SQL_IS_ON`|Active ou désactive les TNIR.
 

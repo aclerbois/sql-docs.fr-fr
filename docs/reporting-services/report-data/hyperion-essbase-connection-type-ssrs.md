@@ -1,27 +1,25 @@
 ---
 title: Type de connexion Hyperion Essbase (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 108a00b6-799f-4066-b796-da59e95c09fd
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: b70d9cbcbca9a8898d6b838f667f786cecf64805
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 4856d84a8ee9cc8917ca6791260ca13fa083320e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hyperion-essbase-connection-type-ssrs"></a>Type de connexion Hyperion Essbase (SSRS)
   Pour inclure les données d’une source de données externe [!INCLUDE[extEssbase](../../includes/extessbase-md.md)] dans votre rapport, vous devez avoir un dataset basé sur une source de données de rapport de type [!INCLUDE[extEssbase](../../includes/extessbase-md.md)]. Ce type de source de données intégré est basé sur l’extension de données pour [!INCLUDE[extEssbase](../../includes/extessbase-md.md)], ce qui vous permet de récupérer les données multidimensionnelles d’une source de données externe [!INCLUDE[extEssbase](../../includes/extessbase-md.md)] .  

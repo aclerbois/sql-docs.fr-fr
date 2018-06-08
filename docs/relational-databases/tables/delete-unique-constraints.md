@@ -1,17 +1,14 @@
 ---
 title: Supprimer des contraintes uniques | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/12/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - removing constraints
 - UNIQUE constraints [SQL Server], deleting
@@ -19,16 +16,16 @@ helpviewer_keywords:
 - deleting constraints
 - constraints [SQL Server], unique
 ms.assetid: 71e563fc-f5d7-4c2e-a42f-f0695a831f32
-caps.latest.revision: 
+caps.latest.revision: 14
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 89d8fc0d3d2583f4e2fdbcedc1489b0fd191afac
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 20211f08741a92b21898d37a4276948e2012dc33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-unique-constraints"></a>Supprimer des contraintes UNIQUE
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

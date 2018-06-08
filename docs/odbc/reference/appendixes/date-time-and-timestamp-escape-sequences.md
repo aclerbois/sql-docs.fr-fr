@@ -1,32 +1,29 @@
 ---
-title: "Date, Time et Timestamp de séquences d’échappement | Documents Microsoft"
-ms.custom: 
+title: Date, Time et Timestamp de séquences d’échappement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - escape sequences [ODBC]
 - escape sequences [ODBC], about escape sequences
 - ODBC escape sequences [ODBC], about escape sequences
 - ODBC escape sequences [ODBC]
 ms.assetid: 67b7dee0-e5b1-4469-a626-0c7767852b80
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fe7cefca1eb1ac7aea8e02f62817c7abb4ab0dd8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b3e5edf5d233b4a6767eff6590fd2cea9923e640
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="date-time-and-timestamp-escape-sequences"></a>Date, Time et Timestamp de séquences d’échappement
 ODBC définit des séquences d’échappement de date, time et timestamp littéraux. La syntaxe de ces séquences d’échappement est comme suit :  
@@ -58,5 +55,5 @@ timestamp-separator ::=
      (The blank character)years-value ::= digit digit digit digitmonths-value ::= digit digitdays-value ::= digit digithours-value ::= digit digitminutes-value ::= digit digitseconds-value ::= digit digit[.digit...]  
 ```  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Les séquences d’échappement des littéraux de date, time et timestamp sont pris en charge si les types de données date, time et timestamp sont pris en charge par la source de données. Une application doit appeler **SQLGetTypeInfo** pour déterminer si ces types de données sont pris en charge.

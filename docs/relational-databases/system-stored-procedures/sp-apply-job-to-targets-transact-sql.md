@@ -1,16 +1,14 @@
 ---
-title: sp_apply_job_to_targets (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_apply_job_to_targets (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_apply_job_to_targets
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_apply_job_to_targets
 ms.assetid: 4a3e9173-7e3c-4100-a9ac-2f5d2c60a8b0
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 341a14b2ae6aa3d551ab90d4ff2f931d617aa3f2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 7e7ec6285f807dd51b0a67ad55ab2e53634584e5
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spapplyjobtotargets-transact-sql"></a>sp_apply_job_to_targets (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,10 +46,10 @@ sp_apply_job_to_targets { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id =**] *job_id*  
+ [  **@job_id =**] *job_id*  
  Numéro d'identification du travail à appliquer aux serveurs ou groupes de serveurs cibles spécifiés. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name =**] **'***job_name***'**  
+ [  **@job_name =**] **'***job_name***'**  
  Nom du travail à appliquer aux serveurs ou groupes de serveurs cibles associés spécifiés. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
@@ -61,17 +58,17 @@ sp_apply_job_to_targets { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
  [ **@target_server_groups =**]  **'***target_server_groups***'**  
  Liste référençant, entre virgules, les groupes de serveurs cibles auxquels le travail spécifié est appliqué. *groupes_serveurs_cibles* est **nvarchar (2048)**, avec NULL comme valeur par défaut.  
   
- [ **@target_servers=** ] **'***target_servers***'**  
+ [  **@target_servers=** ] **'***serveurs_cibles***'**  
  Liste référençant, entre virgules, les serveurs cibles auxquels le travail spécifié est appliqué. *serveurs_cibles*est **nvarchar (2048)**, avec NULL comme valeur par défaut.  
   
- [ **@operation=** ]  **'***operation***'**  
+ [  **@operation=** ] **'***opération***'**  
  Indique si le travail spécifié doit être appliqué ou supprimé des serveurs ou groupes de serveurs cibles indiqués. *opération*est **varchar(7)**, avec une valeur par défaut de l’appliquer. Les opérations valides sont **appliquer** et **supprimer**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
   
 ## <a name="remarks"></a>Notes  
- **sp_apply_job_to_targets** fournit un moyen simple pour appliquer (ou supprimer) un travail à partir de plusieurs serveurs cibles, et constitue une alternative à l’appel **sp_add_jobserver** (ou **sp_delete_jobserver**) une fois pour chaque serveur cible requis.  
+ **sp_apply_job_to_targets** fournit un moyen simple pour appliquer (ou supprimer) un travail à partir de plusieurs serveurs cibles, et constitue une alternative à l’appel **sp_add_jobserver** (ou **sp_delete_jobserver**) une fois pour chaque serveur cible est requis.  
   
 ## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter cette procédure.  

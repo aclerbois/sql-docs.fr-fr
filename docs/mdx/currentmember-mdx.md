@@ -1,30 +1,20 @@
 ---
 title: CurrentMember (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: CURRENTMEMBER
-dev_langs: kbMDX
-helpviewer_keywords: CurrentMember function
-ms.assetid: 5da76496-7d13-4f17-9cee-3e1ef70c2d97
-caps.latest.revision: "38"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 2c8ff1f7343017b3c7870f963fe2006699f88e9d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 21fc1e7a210e8e2b2eac6e3b886ac7f3622ad15a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577681"
 ---
 # <a name="currentmember-mdx"></a>CurrentMember (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,7 +32,7 @@ Hierarchy_Expression.CurrentMember
  *Hierarchy_Expression*  
  Expression MDX (Multidimensional Expressions) valide qui retourne une hiérarchie.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Au cours d'une itération effectuée dans un jeu de membres de hiérarchie, le membre manipulé à chaque étape de l'itération est le membre actuel. Le **CurrentMember** fonction retourne ce membre.  
   
 > [!IMPORTANT]  
@@ -85,7 +75,7 @@ Hierarchy_Expression.CurrentMember
   
  `WHERE([Customer].[Customer Geography].[Country].&[Australia])`  
   
- Le membre actuel change sur une hiérarchie utilisée sur un axe dans une requête. Par conséquent, le membre actuel sur d’autres hiérarchies sur la même dimension qui ne sont pas utilisés sur un axe peut également changer ; Ce comportement est appelé 'auto-existe', et vous trouverez plus de détails dans [Concepts clés dans MDX &#40; Analysis Services &#41; ](../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md). Par exemple, la requête suivante illustre comment le membre actuel sur la hiérarchie Année civile de la dimension Date change avec le membre actuel sur la hiérarchie Calendrier, lorsque celle-ci est affichée sur l'axe des lignes :  
+ Le membre actuel change sur une hiérarchie utilisée sur un axe dans une requête. Par conséquent, le membre actuel sur d’autres hiérarchies sur la même dimension qui ne sont pas utilisés sur un axe peut également changer ; Ce comportement est appelé 'auto-existe', et vous trouverez plus de détails dans [Concepts clés dans MDX &#40;Analysis Services&#41;](../analysis-services/multidimensional-models/mdx/key-concepts-in-mdx-analysis-services.md). Par exemple, la requête suivante illustre comment le membre actuel sur la hiérarchie Année civile de la dimension Date change avec le membre actuel sur la hiérarchie Calendrier, lorsque celle-ci est affichée sur l'axe des lignes :  
   
  `WITH MEMBER MEASURES.CURRENTYEAR AS`  
   
@@ -128,6 +118,6 @@ WHERE {[Date].[Calendar Year].[Calendar Year].&[2003]}
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

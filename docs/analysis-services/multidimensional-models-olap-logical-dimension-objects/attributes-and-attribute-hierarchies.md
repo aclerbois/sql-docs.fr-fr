@@ -1,48 +1,26 @@
 ---
-title: "Attributs et hiérarchies d’attributs | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- regular attributes [Analysis Services]
-- parent attributes [Analysis Services]
-- hierarchies [Analysis Services], attribute
-- attributes [Analysis Services], about attributes
-- account attributes [Analysis Services]
-- dimensions [Analysis Services], attributes
-- key attributes [Analysis Services]
-- OLAP objects [Analysis Services], attributes
-- attributes [Analysis Services], relationships
-- attributes [Analysis Services]
-- relationships [Analysis Services], attributes
-ms.assetid: 59de1ea2-e7a9-4a53-9ee0-14be52e95643
-caps.latest.revision: 
-author: Minewiskan
+title: Attributs et hiérarchies d’attributs | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 012caa5210886a9c2f6e72a6c1b7338154358d1f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5e30f3be6270cdc62b4b17048f9032a7c5587557
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attributes-and-attribute-hierarchies"></a>Attributs et hiérarchies d'attributs
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les dimensions sont des ensembles d'attributs, liés à une ou plusieurs colonnes dans une table ou une vue de la vue de source de données.  
+  Les dimensions sont des ensembles d'attributs, liés à une ou plusieurs colonnes dans une table ou une vue de la vue de source de données.  
   
 ## <a name="key-attribute"></a>Attribut clé  
- Chaque dimension contient un attribut clé. Chaque attribut est lié à une ou plusieurs colonnes dans une table de dimension. Un attribut clé est l'attribut d'une dimension, qui identifie les colonnes dans la table principale de la dimension qui sont utilisées dans des relations de clé étrangère avec la table de faits. Généralement, l'attribut clé représente la colonne ou les colonnes clés primaires de la table de dimension. Vous pouvez définir une clé primaire logique dans une table d'une vue de source de données qui n'a pas de clé primaire physique dans la source de données sous-jacente. **Pour plus d’informations**, consultez [définir des clés primaires logiques dans une vue de Source de données &#40; Analysis Services &#41; ](../../analysis-services/multidimensional-models/define-logical-primary-keys-in-a-data-source-view-analysis-services.md). Lorsque vous définissez des attributs clés, l'Assistant Cube et l'Assistant Dimension tentent d'utiliser les colonnes clés primaires de la table de dimension dans la vue de source de données. Si la table de dimension n'a pas une clé primaire logique ou une clé primaire physique, les Assistants ne peuvent pas définir correctement les attributs clés de la dimension.  
+ Chaque dimension contient un attribut clé. Chaque attribut est lié à une ou plusieurs colonnes dans une table de dimension. Un attribut clé est l'attribut d'une dimension, qui identifie les colonnes dans la table principale de la dimension qui sont utilisées dans des relations de clé étrangère avec la table de faits. Généralement, l'attribut clé représente la colonne ou les colonnes clés primaires de la table de dimension. Vous pouvez définir une clé primaire logique dans une table d'une vue de source de données qui n'a pas de clé primaire physique dans la source de données sous-jacente. **Pour plus d’informations**, consultez [définir des clés primaires logiques dans une vue de Source de données &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/define-logical-primary-keys-in-a-data-source-view-analysis-services.md). Lorsque vous définissez des attributs clés, l'Assistant Cube et l'Assistant Dimension tentent d'utiliser les colonnes clés primaires de la table de dimension dans la vue de source de données. Si la table de dimension n'a pas une clé primaire logique ou une clé primaire physique, les Assistants ne peuvent pas définir correctement les attributs clés de la dimension.  
   
 ## <a name="binding-an-attribute-to-columns-in-data-source-view-tables-or-views"></a>Liaison d'un attribut à des colonnes de vues ou de tables de vue de source de données  
  Un attribut est lié à des colonnes d'une ou plusieurs vues ou tables de vue de source de données. Il est toujours lié à une ou plusieurs colonnes clés, qui déterminent les membres qui sont contenus dans l'attribut. Par défaut, il s'agit de la seule colonne à laquelle est lié un attribut. Un attribut peut aussi être lié à une ou plusieurs autres colonnes à des fins spécifiques. Par exemple, d’un attribut **NameColumn** propriété détermine le nom qui apparaît à l’utilisateur pour chaque membre d’attribut, cette propriété de l’attribut peut être lié à une colonne de dimension particulière via une vue de source de données ou peut être liée à une colonne calculée dans la vue de source de données. Pour plus d’informations, consultez [Dimension Attribute Properties Reference](../../analysis-services/multidimensional-models/dimension-attribute-properties-reference.md).  

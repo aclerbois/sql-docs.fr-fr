@@ -2,32 +2,33 @@
 title: Créer une règle de domaine | Microsoft Docs
 ms.custom: ''
 ms.date: 11/08/2011
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.dm.testdomainrule.f1
 - sql13.dqs.dm.rules.f1
 ms.assetid: 339fa10d-e22c-4468-b366-080c33f1a23f
-caps.latest.revision: ''
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44c7b7392737306ffa78958d46e53f7904c688da
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 3b1103a3528674c8541aa04569e0d63a17ddcefc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-domain-rule"></a>Créer une règle de domaine
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique décrit comment créer une règle de domaine dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Une règle de domaine est une condition utilisée pour valider, corriger et normaliser les valeurs de domaine. Une règle de domaine doit avoir la valeur true sur un domaine pour que les valeurs de domaine soient considérées comme exactes et conformes aux besoins de l'entreprise. Les règles de domaine peuvent comprendre les règles de validation qui sont utilisées pour valider les valeurs de domaine, mais ne sont pas utilisées pour corriger les données dans les projets de qualité des données. Les règles incluent également les règles de normalisation qui sont appliquées sur les données valides et sont utilisées dans la correction des données.  
   
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  

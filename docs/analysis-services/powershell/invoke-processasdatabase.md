@@ -1,30 +1,23 @@
 ---
 title: Invoke-ProcessASDatabase | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 66d5d154-88ce-4c2e-b1ef-e2d2f6fb1c44
-caps.latest.revision: "11"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 73155507a34f955d390bfb86f160755753ee7763
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 44a5654207e84f3488c66b3bc9cfab4778b51acb
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-processasdatabase"></a>Invoke-ProcessASDatabase
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Effectue le **processus** opération sur un **base de données** avec un spécifique **ProcessType** ou **RefreshType** en fonction de la type de métadonnées sous-jacentes.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Effectue l’opération **Process** sur un **Database** spécifié avec un **ProcessType** ou **RefreshType** spécifique, selon le type de métadonnées sous-jacentes.  
   
  Utilisez **ProcessType** pour la base de données avec des métadonnées multidimensionnelles (y compris les bases de données tabulaires au niveau de compatibilité 1050, 1100 ou 1103).  
   
@@ -38,7 +31,7 @@ ms.lasthandoff: 01/08/2018
   
  `Invoke-ProcessASDatabase [-DatabaseName] <string> [-ProcessType] <ProcessType> {ProcessFull | ProcessAdd |     ProcessUpdate | ProcessIndexes | ProcessData | ProcessDefault | ProcessClear | ProcessStructure |     ProcessClearStructureOnly | ProcessScriptCache | ProcessRecalc | ProcessDefrag} [-Server <string>] [-Credential     <pscredential>] [-WhatIf] [-Confirm]  [<CommonParameters>]`  
   
-## <a name="description"></a>Description  
+## <a name="description"></a> Description  
  L’applet de commande **Invoke-ProcessASDatabase** traite une base de données au niveau que vous spécifiez. Par exemple, pour les bases de données tabulaires au niveau de compatibilité 1200, le réglage de **RefreshType** sur **Full** remplace les données existantes par des nouvelles.  
   
  Le type de traitement (multidimensionnel) ou le type d’actualisation (tabulaire) est nécessaire et peut être spécifié avant ou après les paramètres de la base de données et du serveur :  
@@ -77,7 +70,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
@@ -88,7 +81,7 @@ ms.lasthandoff: 01/08/2018
 |||  
 |-|-|  
 |Requis ?|true|  
-|Position ?| 1|  
+|Position ?|1|  
 |Valeur par défaut||  
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  

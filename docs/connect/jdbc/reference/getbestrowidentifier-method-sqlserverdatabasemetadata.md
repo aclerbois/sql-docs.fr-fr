@@ -1,30 +1,29 @@
 ---
-title: "Méthode getBestRowIdentifier (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getBestRowIdentifier (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getBestRowIdentifier
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getBestRowIdentifier
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: c19e9ca6-2a53-4a0c-91ab-80090c3f7229
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f29cfff05ed331f2e5741c01d28f3e90afdf88ce
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c36b69543f5253a4d62c1d4b149933febcf0b4b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getbestrowidentifier-method-sqlserverdatabasemetadata"></a>Méthode getBestRowIdentifier (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -43,11 +42,11 @@ public java.sql.ResultSet getBestRowIdentifier(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  A **chaîne** qui contient le nom du catalogue.  
   
- *schéma*  
+ *schema*  
   
  A **chaîne** qui contient le nom du schéma.  
   
@@ -65,7 +64,7 @@ public java.sql.ResultSet getBestRowIdentifier(java.lang.String catalog,
   
  bestRowSession (2)  
   
- *accepte les valeurs null*  
+ *Accepte les valeurs null*  
   
  **true** pour inclure les colonnes autorisant des valeurs NULL. Dans le cas contraire, la valeur est **false**.  
   

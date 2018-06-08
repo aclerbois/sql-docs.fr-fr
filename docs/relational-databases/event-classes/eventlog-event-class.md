@@ -1,34 +1,30 @@
 ---
-title: "Classe d’événements EventLog | Microsoft Docs"
-ms.custom: 
+title: Classe d’événements EventLog | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - EventLog event class
 ms.assetid: ba4b4e15-b923-4fab-987e-6bede2e73f53
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 60fd9d171d0962bedef2303850c1d3e9b9c84200
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 40e63a6c624cf67ca844e7870893a2c381541155
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="eventlog-event-class"></a>EventLog (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements EventLog indique que des événements ont été consignés dans le journal des événements [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.  
+  La classe d’événements EventLog indique que des événements ont été consignés dans le journal des événements [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows.  
   
 ## <a name="eventlog-event-class-data-columns"></a>Colonnes de données de la classe d'événements ErrorLog  
   

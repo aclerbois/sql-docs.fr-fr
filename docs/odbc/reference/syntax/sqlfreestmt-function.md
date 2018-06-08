@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLFreeStmt | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLFreeStmt
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLFreeStmt
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLFreeStmt
-helpviewer_keywords: SQLFreeStmt function [ODBC]
+f1_keywords:
+- SQLFreeStmt
+helpviewer_keywords:
+- SQLFreeStmt function [ODBC]
 ms.assetid: 03408162-8b63-4470-90c4-e6c7d8d33892
-caps.latest.revision: "16"
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2d758d7ec03a7d67e7f943a01d19c4959aa18bc9
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d20a486a644a5608accef46a9558c1754efd975d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlfreestmt-function"></a>Fonction SQLFreeStmt
 **Mise en conformité**  
@@ -65,7 +66,7 @@ SQLRETURN SQLFreeStmt(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLFreeStmt** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLFreeStmt** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans les  *\*MessageText* tampon décrit l’erreur et sa cause.|  
@@ -81,7 +82,7 @@ SQLRETURN SQLFreeStmt(
   
  Une application ne doit pas utiliser un descripteur d’instruction après que qu’elle a été libérée ; le Gestionnaire de pilotes ne vérifie pas la validité d’un handle dans un appel de fonction.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  Il est une bonne pratique de programmation pour libérer les handles. Toutefois, par souci de simplicité, l’exemple suivant n’inclut pas de code qui libère alloué des handles. Pour obtenir un exemple montrant comment libérer les handles, consultez [SQLFreeHandle, fonction](../../../odbc/reference/syntax/sqlfreehandle-function.md).  
   
 ```  

@@ -1,27 +1,25 @@
 ---
-title: "Ajouter ou supprimer un en-tête ou un pied de page (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Ajouter ou supprimer un en-tête ou un pied de page (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 72988623-fee8-4a05-9f72-8fcb8e668576
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e10b015647d513494b6a13d7f690953ca3728533
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 39bd8b96ddbb294fe98acd313a5c1bf542e0fd6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-or-remove-a-page-header-or-footer-report-builder-and-ssrs"></a>Ajouter ou supprimer un en-tête ou un pied de page (Générateur de rapports et SSRS)
   Vous pouvez ajouter du texte statique, des images, des lignes, des rectangles et des bordures aux en-têtes ou aux pieds de page. Vous pouvez placer des expressions et des images liées aux données dans une zone de texte si vous souhaitez qu'un en-tête ou pied de page contienne des données variables ou calculées.  

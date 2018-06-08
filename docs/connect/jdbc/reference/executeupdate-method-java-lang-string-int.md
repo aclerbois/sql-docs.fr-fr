@@ -1,30 +1,29 @@
 ---
-title: "Méthode executeUpdate (java.lang.String, int) | Documents Microsoft"
-ms.custom: 
+title: Méthode executeUpdate (java.lang.String, int) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerStatement.executeUpdate (java.lang.String, int)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerStatement.executeUpdate (java.lang.String, int)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 4c52a20e-527e-4d14-9a5a-4cd195aac8ed
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3226c9c4ae102a80708fb5a020f9e9a9a32cdf5e
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7c173fa5ed1c2d431038cb6ffd8b917d1d521e27
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executeupdate-method-javalangstring-int"></a>Méthode executeUpdate (java.lang.String, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -40,11 +39,11 @@ public final int executeUpdate(java.lang.String sql,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *SQL*  
+ *sql*  
   
  A **chaîne** qui contient une instruction SQL.  
   
- *indicateur*  
+ *flag*  
   
  Un **int** valeur qui indique si les clés générées automatiquement doivent être disponibles. Il doit s'agir de l'une des constantes suivantes :  
   
@@ -64,7 +63,7 @@ public final int executeUpdate(java.lang.String sql,
  Si l’exécution d’une procédure stockée entraîne un nombre de mises à jour qui est supérieur à un, ou qui génère plusieurs jeux de résultats, utilisez le [exécuter](../../../connect/jdbc/reference/execute-method-sqlserverstatement.md) méthode à exécuter la procédure stockée.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode executeUpdate &#40; SQLServerStatement &#41;](../../../connect/jdbc/reference/executeupdate-method-sqlserverstatement.md)   
+ [Méthode executeUpdate &#40;SQLServerStatement&#41;](../../../connect/jdbc/reference/executeupdate-method-sqlserverstatement.md)   
  [Membres de SQLServerStatement](../../../connect/jdbc/reference/sqlserverstatement-members.md)   
  [SQLServerStatement, classe](../../../connect/jdbc/reference/sqlserverstatement-class.md)  
   

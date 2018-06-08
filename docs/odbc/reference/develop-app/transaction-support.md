@@ -1,28 +1,26 @@
 ---
 title: Prise en charge des transactions | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: transactions [ODBC], degree of support
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- transactions [ODBC], degree of support
 ms.assetid: d56e1458-8da2-4d73-a777-09e045c30a33
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4964565ce7de30b30fa3dc4c7705c5656ebcb88b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2f3e62cd93f3823a2205ed2c2721ed95749f7a1a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transaction-support"></a>Prise en charge des transactions
 Le degré de prise en charge des transactions est définie par le pilote. ODBC est conçu pour être implémentée sur une base de données mono-utilisateur ou bureau n’a pas besoin de gérer plusieurs mises à jour ses données. En outre, certaines bases de données qui prennent en charge les transactions se faire que pour les instructions de langage de Manipulation de données (DML) de SQL ; des restrictions ou la sémantique de transaction spéciales concernant l’utilisation du langage DDL (Data Definition) lorsqu’une transaction est active. Autrement dit, il peut être prise en charge des transactions pour plusieurs mises à jour simultanées de tables, mais ne pas pour modifier le nombre et la définition des tables lors d’une transaction.  

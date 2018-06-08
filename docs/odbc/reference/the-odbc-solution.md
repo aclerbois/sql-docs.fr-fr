@@ -1,32 +1,29 @@
 ---
 title: La Solution ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC [ODBC], database access
 - SQL [ODBC], database access
 - database access [ODBC]
 - standardizing database access [ODBC], using ODBC
 ms.assetid: 34b80790-e010-4b90-8eaa-03189f5d8986
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e0afa0862dc69aa093a662e44732f396e3f48f78
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a071ce8c5fc767b3cb7dc998562328e4a6b94d53
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-odbc-solution"></a>La Solution d’ODBC
 Ensuite, la question est comment ODBC normaliser les accès de base de données ? Il existe deux spécifications d’architecture :  

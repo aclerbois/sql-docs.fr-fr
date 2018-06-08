@@ -1,15 +1,14 @@
 ---
-title: "Traduction automatique de données de type caractère | Documents Microsoft"
-ms.custom: 
+title: Traduction automatique de données de type caractère | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-results
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - result sets [ODBC], autotranslating character data
@@ -24,16 +23,16 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, data types
 - ODBC data types, autotranslating character data
 ms.assetid: 86a8adda-c5ad-477f-870f-cb370c39ee13
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 26dc8b3db6dae8f93f7e029a47b28d438d418cbf
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e9894770cad646faa38bebf12afacb5a171a1a71
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="autotranslation-of-character-data"></a>Traduction automatique de données caractères
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -68,7 +67,7 @@ ms.lasthandoff: 01/25/2018
  Les données doivent toujours être converties lorsqu'elles sont déplacées du type caractère vers le type Unicode.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Le traitement des résultats &#40; ODBC &#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)   
+ [Le traitement des résultats &#40;ODBC&#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)   
  [Prise en charge d’Unicode et du classement](../../relational-databases/collations/collation-and-unicode-support.md)  
   
   

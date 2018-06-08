@@ -1,34 +1,31 @@
 ---
-title: "Refuser des autorisations sur une collection de schémas XML | Microsoft Docs"
-ms.custom: 
+title: Refuser des autorisations sur une collection de schémas XML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - denying permissions [SQL Server], XML server collections
 ms.assetid: e2b300b0-e734-4c43-a4da-c78e6e5d4fba
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f671b78f43515a1968b384660df5b13fc933b252
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 7605e6e9e5555f83cd770ae3ce70177b6cf57bc2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deny-permissions-on-an-xml-schema-collection"></a>Refuser des autorisations sur une collection de schémas XML
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Les autorisations de créer une collection de schémas XML ou d'en utiliser qui existe déjà peuvent être refusées.  
+  Les autorisations de créer une collection de schémas XML ou d'en utiliser qui existe déjà peuvent être refusées.  
   
 ## <a name="denying-permission-to-create-an-xml-schema-collection"></a>Refus de l'autorisation de créer une collection de schémas XML  
  Vous pouvez refuser l'autorisation de créer une collection de schémas XML en suivant l'une des méthodes suivantes :  

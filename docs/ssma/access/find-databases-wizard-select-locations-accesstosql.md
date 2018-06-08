@@ -1,31 +1,30 @@
 ---
-title: "Assistant de bases de données (sélectionnez emplacements) de la recherche (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Assistant de bases de données (sélectionnez emplacements) de la recherche (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
-helpviewer_keywords: Find Databases Wizard
+helpviewer_keywords:
+- Find Databases Wizard
 ms.assetid: 00b2d32a-998b-47a7-b25c-589b5bd6777a
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 069e14ae3babfb3961042edaf0d99e24367df85d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 22ebef73d62b315ebdbdc2a7fd4bb5755454d12e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="find-databases-wizard-select-locations-accesstosql"></a>Assistant de bases de données (sélectionnez emplacements) de la recherche (AccessToSQL)
 Dans la page Sélectionner les emplacements de l’Assistant trouver les bases de données, vous entrez les paramètres de recherche pour trouver les bases de données Access.  
@@ -33,7 +32,7 @@ Dans la page Sélectionner les emplacements de l’Assistant trouver les bases d
 Pour ouvrir l’Assistant trouver les bases de données, sur le **fichier** menu, cliquez sur **trouver les bases de données**. Pour plus d’informations sur l’utilisation de cette boîte de dialogue, consultez [Ajout et suppression des fichiers de base de données Access](http://msdn.microsoft.com/en-us/e944c740-4c8a-4bc1-b0ed-be57bc06dced)  
   
 ## <a name="options"></a>Options  
-**...**  
+**Parcourir**  
 Cliquez pour parcourir l’ordinateur ou le réseau. Sélectionnez le dossier ou l’emplacement à rechercher, puis cliquez sur **OK**. Cliquez sur **ajouter** pour ajouter cet emplacement à la liste.  
   
 **Zone du chemin d’accès**  

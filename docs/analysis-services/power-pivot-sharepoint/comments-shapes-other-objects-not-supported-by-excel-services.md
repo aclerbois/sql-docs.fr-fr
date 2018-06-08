@@ -1,31 +1,23 @@
 ---
 title: Commentaires, les formes, les autres objets non pris en charge par Excel Services | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-ms.assetid: ade92e15-dfbf-496b-9378-a00bd83ba750
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e81433f28d9b3b3f20ceb99f2e6436a689ba4e86
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: df13c3fa92d5439e559e286424438569b3ead86b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="comments-shapes-other-objects-not-supported-by-excel-services"></a>Commentaires, les formes, les autres objets non pris en charge par Excel Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette erreur se produit lorsque vous ajoutez des segments à un classeur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] à partir d’une liste de champs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
+  Cette erreur se produit lorsque vous ajoutez des segments à un classeur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] à partir d’une liste de champs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
   
 ## <a name="details"></a>Détails  
   

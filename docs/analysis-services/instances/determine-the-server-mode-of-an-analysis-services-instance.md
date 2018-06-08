@@ -1,27 +1,19 @@
 ---
 title: Déterminer le Mode de serveur d’analyse Services Instance | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
 ms.custom: ''
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.assetid: 9e556fb1-ca37-4f06-8f8f-f187cb0fdb37
-caps.latest.revision: 32
-author: Minewiskan
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 4751b8534b3d4f8b8bb6d0e4ce55ad53f33a72d6
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 52f12b7d828f9d863f3efe29355e59b6a76d33ef
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="determine-the-server-mode-of-an-analysis-services-instance"></a>Déterminer le mode serveur d'une instance Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -62,6 +54,6 @@ ms.lasthandoff: 04/03/2018
  [Se connecter à Analysis Services](../../analysis-services/instances/connect-to-analysis-services.md)   
  [Solutions de modèles tabulaires](../../analysis-services/tabular-models/tabular-models-ssas.md)   
  [Solutions de modèles multidimensionnels ](../../analysis-services/multidimensional-models/multidimensional-model-solutions-ssas.md)   
- [Les modèles d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)  
+ [Les modèles d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)  
   
   

@@ -1,16 +1,14 @@
 ---
-title: CHOOSE (Transact-SQL) | Documents Microsoft
-ms.custom: 
+title: CHOOSE (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CHOOSE
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - CHOOSE function
 ms.assetid: 1c382c83-7500-4bae-bbdc-c1dbebd3d83f
-caps.latest.revision: 
+caps.latest.revision: 13
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 96e231ed5770e44018dac403e0ac895d85f00393
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: b6a89d1e317c8118ba212b823be5ce4b6cab5c1e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="logical-functions---choose-transact-sql"></a>Fonctions logiques - CHOOSE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -51,13 +48,13 @@ CHOOSE ( index, val_1, val_2 [, val_n ] )
   
  Si la valeur d’index fournie a un type de données numérique autre que **int**, la valeur est implicitement convertie en un entier. Si la valeur d'index dépasse les limites du tableau de valeurs, CHOOSE renvoie la valeur null.  
   
- *val_1... val_n*  
+ *val_1 … val_n*  
  Liste de valeurs séparées par des virgules de tous les types de données.  
   
 ## <a name="return-types"></a>Types de retour  
  Retourne le type de données ayant la priorité la plus élevée à partir de l'ensemble de types transmis à la fonction. Pour plus d’informations, consultez [Priorités des types de données &#40;Transact-SQL&#41;](../../t-sql/data-types/data-type-precedence-transact-sql.md).  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Notes   
  CHOOSE agit comme un index dans un tableau, où le tableau est composé des arguments qui suivent l'argument d'index. L'argument d'index détermine, parmi les valeurs suivantes, celle qui sera retournée.  
   
 ## <a name="examples"></a>Exemples  
@@ -129,7 +126,7 @@ Sales Representative                               2007-07-01 Summer
   
 ```  
   
-## <a name="see-also"></a>Voir aussi  
- [IIF &#40; Transact-SQL &#41;](../../t-sql/functions/logical-functions-iif-transact-sql.md)  
+## <a name="see-also"></a> Voir aussi  
+ [IIF &#40;Transact-SQL&#41;](../../t-sql/functions/logical-functions-iif-transact-sql.md)  
   
   

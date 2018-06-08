@@ -1,28 +1,26 @@
 ---
 title: Instance Oracle CDC | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ed71e8c4-e013-4bf2-8b6c-1e833ff2a41d
-caps.latest.revision: 
+caps.latest.revision: 8
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d06d4934318a045fff483e9866a72b929e69850d
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: b7b0aba8e2f75ab25794ace6d28fc0be05d7bd23
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-oracle-cdc-instance"></a>Instance Oracle CDC
   L'instance Oracle CDC est un processus créé par le service de capture de données modifiées Oracle pour traiter les modifications capturées d'une seule base de données source Oracle. L’instance Oracle CDC récupère sa configuration à partir de la table **cdc.xdbcdc_config** et conserve son état dans la table **cdc.xdbcdc_state** . Ces tables font partie de la base de données CDC, qui définit l'instance Oracle CDC. Pour plus d'informations sur la base de données xdbcdc et les tables, consultez [The CDC Databases](../../integration-services/change-data-capture/working-with-the-oracle-cdc-service.md#BKMK_CDCdatabase).  

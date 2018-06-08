@@ -1,30 +1,27 @@
 ---
-title: "Quand utiliser les procédures | Documents Microsoft"
-ms.custom: 
+title: Quand utiliser les procédures | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], procedures
 - procedures [ODBC], about procedures
 ms.assetid: 7dc9e327-dd54-4b10-9f66-9ef5c074f122
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f62c820f57fba7af608a870e00e0b2ddf0ad13b6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: dbc53507bf2cdf3333e0d36763ad7ecf7d359155
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="when-to-use-procedures"></a>Quand utiliser des procédures
 Il existe de nombreux avantages à l’aide des procédures, tous les repose sur le fait qu’à l’aide de procédures déplace les instructions SQL à partir de l’application à la source de données. Ce qui est conservé dans l’application est un appel de procédure interopérable. Ces avantages :  

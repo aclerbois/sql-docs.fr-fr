@@ -1,27 +1,24 @@
 ---
 title: Obtenir des informations ODBC 64 bits | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ed9851ce-44ee-4c8e-b626-1d0b52da30fe
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c1c7c878a850134d625c6c956449a400672ad6f7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 10f225602ed302aa8573b09e0b0a852f50a1971f
+ms.sourcegitcommit: b3bb41424249de198f22d9c6d40df4996f083aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="odbc-64-bit-information"></a>Obtenir des informations ODBC 64 bits
 À compter de Windows Server 2003, systèmes d’exploitation Microsoft est prise en charge les bibliothèques ODBC 64 bits. Les en-têtes ODBC et les bibliothèques livrés avec le Kit de développement MDAC 2.7 contiennent des modifications pour permettre aux programmeurs d’écrire facilement du code pour les plateformes 64 bits de nouveau. En veillant à ce que votre code utilise les types ODBC définis ci-dessous, vous pouvez compiler le même code source à la fois pour les plateformes 32 bits et 64 bits basées sur le **_WIN64** ou **WIN32** macros.  
@@ -400,7 +397,7 @@ typedef SQLULEN BOOKMARK;
   
  **SQLSetDescField**  
   
- Lorsque le *FieldIdentifier* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans **ValuePtr*:  
+ Lorsque le *FieldIdentifier* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans *ValuePtr*:  
   
  SQL_DESC_ARRAY_SIZE  
   
@@ -424,7 +421,7 @@ typedef SQLULEN BOOKMARK;
   
  **SQLSetStmtAttr**  
   
- Lorsque le *attribut* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans **ValuePtr*:  
+ Lorsque le *attribut* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans *ValuePtr*:  
   
  SQL_ATTR_APP_PARAM_DESC  
   
@@ -492,7 +489,7 @@ typedef SQLULEN BOOKMARK;
   
  **SQLSetStmtOption**  
   
- Lorsque le *Option* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans **valeur*:  
+ Lorsque le *Option* paramètre a l’une des valeurs suivantes, une valeur 64 bits est passée dans *valeur*:  
   
  SQL_KEYSET_SIZE  
   

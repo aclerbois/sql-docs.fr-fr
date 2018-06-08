@@ -1,27 +1,25 @@
 ---
-title: "Référence d’expression (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Référence d’expression (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: bb16e4ab-b13f-48f2-8cfe-1851656875ef
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e1882bcd9d22cf98e940264aa3b62569417f8a1a
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3768b64aec87d54122291434b64573c4ffb43e62
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="expression-reference-report-builder-and-ssrs"></a>Référence d'expression (Générateur de rapports et SSRS)
   Les expressions de rapport prennent en charge diverses références aux fonctions et collections intégrées. La syntaxe des expressions doit être conforme à [!INCLUDE[vbprvb](../../includes/vbprvb-md.md)] avant qu'un rapport ne puisse être publié ou traité.  

@@ -1,28 +1,26 @@
 ---
-title: "Comparaison du stockage des tables sur disque et du stockage des tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Comparaison du stockage des tables sur disque et du stockage des tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: eacf443c-001a-445f-ad1c-5f5a45eca6f4
-caps.latest.revision: 
+caps.latest.revision: 5
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 01aa889ebbf1eb300e9814d0b985c866177710b6
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bb1251cc7127e93f116a1a2fb697b3f6f41d831f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="comparing-disk-based-table-storage-to-memory-optimized-table-storage"></a>Comparaison du stockage des tables sur disque et du stockage des tables optimisées en mémoire
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

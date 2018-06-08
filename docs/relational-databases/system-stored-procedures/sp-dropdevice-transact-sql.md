@@ -1,16 +1,14 @@
 ---
-title: sp_dropdevice (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_dropdevice (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_dropdevice_TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - backup devices [SQL Server], deleting
 - sp_dropdevice
 ms.assetid: c8b07189-7c35-414b-acc1-45bd6e7e17c3
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1286184ef82308ed12c8c8209b14eeb2a83f86a9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 42e95c504a5480438b746608e2c6b80fef628847
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdropdevice-transact-sql"></a>sp_dropdevice (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,7 +48,7 @@ sp_dropdevice [ @logicalname = ] 'device'
  [  **@logicalname=** ] **'***périphérique***'**  
  Est le nom logique de l’unité de la base de données ou d’une unité de sauvegarde, comme indiqué dans **master.dbo.sysdevices.name**. *APPAREIL* est **sysname**, sans valeur par défaut.  
   
- [ **@delfile=** ] **'***delfile***'**  
+ [  **@delfile=** ] **'***delfile***'**  
  Spécifie si le fichier de l'unité de sauvegarde physique doit être supprimé. *delfile* est **varchar(7)**. S’il est spécifié en tant que **DELFILE**, le fichier de disque d’unité de sauvegarde physique est supprimé.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -75,7 +72,7 @@ EXEC sp_dropdevice 'tapedump1';
   
 ## <a name="see-also"></a>Voir aussi  
  [Unités de sauvegarde &#40;SQL Server&#41;](../../relational-databases/backup-restore/backup-devices-sql-server.md)   
- [Supprimer une unité de sauvegarde &#40; SQL Server &#41;](../../relational-databases/backup-restore/delete-a-backup-device-sql-server.md)   
+ [Supprimer une unité de sauvegarde &#40;SQL Server&#41;](../../relational-databases/backup-restore/delete-a-backup-device-sql-server.md)   
  [sp_addumpdevice &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addumpdevice-transact-sql.md)   
  [sp_helpdb &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdb-transact-sql.md)   
  [sp_helpdevice &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helpdevice-transact-sql.md)   

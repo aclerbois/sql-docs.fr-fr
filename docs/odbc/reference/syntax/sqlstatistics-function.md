@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLStatistics | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLStatistics
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLStatistics
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLStatistics
-helpviewer_keywords: SQLStatistics function [ODBC]
+f1_keywords:
+- SQLStatistics
+helpviewer_keywords:
+- SQLStatistics function [ODBC]
 ms.assetid: 45210682-cfea-4e5d-9951-bcf1cbe10f41
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c1e66748edcc81f87c261d6958a766f5b651c31a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b5d7396e972d2c43798ca6a993c96355595e5e9c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlstatistics-function"></a>Fonction SQLStatistics
 **Mise en conformité**  
@@ -63,7 +64,7 @@ SQLRETURN SQLStatistics(
  *NameLength1*  
  [Entrée] Longueur en caractères de **CatalogName*.  
   
- *SchemaName*  
+ *schemaName*  
  [Entrée] Nom du schéma. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, une chaîne vide (« ») indique les tables qui n’ont pas de schémas. *SchemaName* ne peut pas contenir un modèle de recherche de chaîne.  
   
  Si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_TRUE, *SchemaName* est traité comme un identificateur et ses cas n’est pas significatif. S’il s’agit de SQL_FALSE, *SchemaName* est un argument ordinaire ; elle est traitée littéralement, et ses cas est significatif.  
@@ -82,12 +83,12 @@ SQLRETURN SQLStatistics(
  *Unique*  
  [Entrée] Type d’index : SQL_INDEX_UNIQUE ou SQL_INDEX_ALL.  
   
- *Reserved*  
+ *Réservé*  
  [Entrée] Indique l’importance des colonnes cardinalité et des PAGES dans le jeu de résultats. Les options suivantes affectent le retour des cardinalité et des PAGES uniquement des colonnes ; informations d’index sont retournées même si la cardinalité et des PAGES ne sont pas retournés.  
   
  SQL_ENSURE demande que le pilote de récupérer les statistiques. (Les pilotes qui sont conformes uniquement à la norme Open Group et ne prennent pas en charge les extensions ODBC pas sera en mesure de prendre en charge SQL_ENSURE.)  
   
- SQL_QUICK demande que le pilote de récupérer la cardinalité et des PAGES uniquement si elles sont disponibles à partir du serveur. Dans ce cas, le pilote ne s'assure pas que les valeurs sont actuelles. (Les applications qui sont écrites dans la norme Open Group obtenez toujours un comportement SQL_QUICK à partir d’ODBC 3*.x*-pilotes compatibles.)  
+ SQL_QUICK demande que le pilote de récupérer la cardinalité et des PAGES uniquement si elles sont disponibles à partir du serveur. Dans ce cas, le pilote ne s'assure pas que les valeurs sont actuelles. (Les applications qui sont écrites dans la norme Open Group obtenez toujours un comportement SQL_QUICK à partir d’ODBC 3 *.x*-pilotes compatibles.)  
   
 ## <a name="returns"></a>Valeur renvoyée  
  SQL_SUCCESS, SQL_SUCCESS_WITH_INFO, SQL_STILL_EXECUTING, SQL_ERROR ou SQL_INVALID_HANDLE.  
@@ -95,7 +96,7 @@ SQLRETURN SQLStatistics(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLStatistics** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLStatistics** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -127,9 +128,9 @@ SQLRETURN SQLStatistics(
 > [!NOTE]  
 >  Pour plus d’informations sur l’utilisation générale, les arguments et les données retournées des fonctions de catalogue ODBC, consultez [fonctions de catalogue](../../../odbc/reference/develop-app/catalog-functions.md).  
   
- Les colonnes suivantes ont été renommés pour ODBC 3*.x*. Les changements de nom de colonne n’affectent pas la compatibilité descendante, car les applications lier par numéro de colonne.  
+ Les colonnes suivantes ont été renommés pour ODBC 3 *.x*. Les changements de nom de colonne n’affectent pas la compatibilité descendante, car les applications lier par numéro de colonne.  
   
-|Colonne de ODBC 2.0|ODBC 3*.x* colonne|  
+|Colonne de ODBC 2.0|ODBC 3 *.x* colonne|  
 |---------------------|-----------------------|  
 |TABLE_QUALIFIER|TABLE_CAT|  
 |TABLE_OWNER|TABLE_SCHEM|  
@@ -140,7 +141,7 @@ SQLRETURN SQLStatistics(
   
 |Nom de colonne|Numéro de colonne|Type de données|Commentaires|  
 |-----------------|-------------------|---------------|--------------|  
-|TABLE_CAT (ODBC VERSION 1.0)| 1|Varchar|Nom du catalogue de la table à laquelle l’index ou statistique s’applique ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
+|TABLE_CAT (ODBC VERSION 1.0)|1|Varchar|Nom du catalogue de la table à laquelle l’index ou statistique s’applique ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
 |TABLE_SCHEM (ODBC 1.0)|2|Varchar|Nom du schéma de la table à laquelle l’index ou statistique s’applique ; NULL si non applicable à la source de données. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de schémas.|  
 |TABLE_NAME (ODBC 1.0)|3|Varchar non NULL|Nom de la table de la table à laquelle s’applique l’index ou statistiques.|  
 |NON_UNIQUE (ODBC 1.0)|4|Smallint|Indique si l’index n’autorise pas les valeurs en double :<br /><br /> SQL_TRUE si les valeurs d’index peuvent être non uniques.<br /><br /> SQL_FALSE si les valeurs d’index doivent être uniques.<br /><br /> Valeur NULL est retournée si le TYPE est SQL_TABLE_STAT.|  

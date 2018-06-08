@@ -1,37 +1,25 @@
 ---
-title: "(Syntaxe MDX) de mots clés réservés | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords:
-- reserved words [MDX]
-- Multidimensional Expressions [Analysis Services], reserved words
-- MDX [Analysis Services], reserved words
-ms.assetid: 0baab5fb-bd04-4ab3-b99a-9f91f3470fbb
-caps.latest.revision: "26"
-author: Minewiskan
+title: (Syntaxe MDX) de mots clés réservés | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 0fed4b46d2ed14a45073d7c25ace252c427fba3d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: b82117f17ecc1d7b98648a6641dc697b2fd40b9c
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582261"
 ---
 # <a name="reserved-keywords-mdx-syntax"></a>Mots clés réservés (syntaxe MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
 
-  [!INCLUDE[msCoName](../includes/msconame-md.md)][!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] réserve certains mots clés pour son usage exclusif. Pour obtenir la liste des mots clés réservés, consultez [les mots réservés MDX](../mdx/mdx-reserved-words.md).  
+  [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] réserve certains mots clés pour son usage exclusif. Pour obtenir la liste des mots clés réservés, consultez [les mots réservés MDX](../mdx/mdx-reserved-words.md).  
   
  Les mots clés respectent les principes suivants :  
   
@@ -42,6 +30,6 @@ ms.lasthandoff: 01/08/2018
 -   Utilisez une convention d'attribution de noms qui permet d'éviter l'utilisation de mots clés réservés. Les consonnes ou les voyelles peuvent être supprimées si un nom d’objet doit ressembler à un mot clé réservé.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Éléments de syntaxe MDX &#40; MDX &#41;](../mdx/mdx-syntax-elements-mdx.md)  
+ [Éléments de syntaxe MDX &#40;MDX&#41;](../mdx/mdx-syntax-elements-mdx.md)  
   
   

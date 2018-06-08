@@ -1,16 +1,15 @@
 ---
-title: "Instruction FLWOR et itération (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Instruction FLWOR et itération (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -28,16 +27,15 @@ helpviewer_keywords:
 - XQuery, FLWOR statement
 - EBV
 ms.assetid: d7cd0ec9-334a-4564-bda9-83487b6865cb
-caps.latest.revision: 
+caps.latest.revision: 44
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: dc15902b85eb44c0341fc29389699d2eed43e875
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c9ca8e71d1f71ba6416c08586e5613d129ad35d8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="flwor-statement-and-iteration-xquery"></a>Instruction et itération FLWOR (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

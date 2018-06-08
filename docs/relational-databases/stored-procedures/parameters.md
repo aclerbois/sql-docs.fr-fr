@@ -1,31 +1,30 @@
 ---
-title: "Paramètres | Microsoft Docs"
-ms.custom: 
+title: Paramètres | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - server-general
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - stored procedures [SQL Server], parameters
 - user-defined functions [SQL Server], parameters
 ms.assetid: c1f9bd93-3271-4098-a23b-7bd7a19ab65b
-caps.latest.revision: 
+caps.latest.revision: 2
 author: pmasl
 ms.author: pelopes
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ab101583f2e16a13dc42d8b8800c2befec2f536f
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 75656239e0230534fb59fd2b91fa939c8cd2475f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parameters"></a>Paramètres
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

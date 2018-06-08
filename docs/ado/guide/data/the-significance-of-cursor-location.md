@@ -1,33 +1,30 @@
 ---
-title: "L’importance de l’emplacement du curseur | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: L’importance de l’emplacement du curseur | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - server-side cursors [ADO]
 - cursors [ADO], client-side
 - client-side cursors [ADO]
 - cursors [ADO], server-side
 ms.assetid: 70ef5b1c-0459-41a1-b796-031f61a29a8a
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 71af2e383a1ee598e00789aae5045d5e475948e3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5699c8c7bc3ab1ed54d9411ff889e43e8cf334d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-significance-of-cursor-location"></a>L’importance de l’emplacement du curseur
 Chaque curseur utilise des ressources temporaires pour contenir ses données. Ces ressources peuvent être en mémoire, un fichier d’échange de disque, les fichiers de disque temporaire ou même temporaire dans la base de données. Le curseur est appelé un *côté client* curseur lorsque ces ressources se trouvent sur l’ordinateur client. Le curseur est appelé un *côté serveur* curseur lorsque ces ressources se trouvent sur le serveur.  

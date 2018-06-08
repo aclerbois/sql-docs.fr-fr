@@ -1,28 +1,27 @@
 ---
-title: "Tâches au niveau élément | Microsoft Docs"
-ms.custom: 
+title: Tâches au niveau élément | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: item-level tasks [Reporting Services]
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- item-level tasks [Reporting Services]
 ms.assetid: fdeb7bc3-167a-4342-84e3-32e3faa1fa39
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6a824675df700ba1910d21acea217061acb0879d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: bb15ac339ab00d76adb8cbc7a702eaccb50d380c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tasks-and-permissions---item-level-tasks"></a>Tâches et autorisations - Tâches au niveau élément
   Une tâche au niveau élément est une collection d'autorisations liées à un rapport, un dossier, un modèle de rapport, une ressource ou une source de données partagée. [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] inclut également des tâches de niveau système qui s’appliquent à l’ensemble du site de serveur de rapports. Pour plus d’informations, consultez [Tâches au niveau système](../../reporting-services/security/tasks-and-permissions-system-level-tasks.md). Pour plus d'informations sur les tâches et les autorisations en général, consultez [Tasks and Permissions](../../reporting-services/security/tasks-and-permissions.md).  

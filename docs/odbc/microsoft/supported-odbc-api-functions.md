@@ -1,30 +1,27 @@
 ---
 title: Prise en charge des fonctions API ODBC | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC, API functions
 - ODBC SQL grammar, API functions mapped to driver (table) [ODBC]
 ms.assetid: b28a8ed6-09b1-4acf-bf3e-f90bb32422de
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f898533861d389336da3aafa6f839f8a66a340a1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c5d7044cb0a4e963fdea39852593112c33fa8908
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-odbc-api-functions"></a>Fonctions API ODBC pris en charge
 L’objectif de l’audit est d’informer l’application quelles fonctionnalités sont disponibles à ce dernier à partir du pilote. Les pilotes de base de données Microsoft ODBC Desktop prend en charge toutes les fonctions de base et de niveau 1.  

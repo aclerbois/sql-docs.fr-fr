@@ -1,31 +1,23 @@
 ---
 title: Applet de commande Invoke-ProcessTable | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 865e6d06-b99a-41f3-9d6f-c3c97b529b23
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e2a7f1392931ec5edd41803f6df6d98aa95403dd
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8fde6817c48df9aa5c3e663a5b76223be84f1a69
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="invoke-processtable-cmdlet"></a>Applet de commande Invoke-ProcessTable
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Exécute l’opération **Process** sur une **Table** avec un **RefreshType**spécifique.  
+  Exécute l’opération **Process** sur une **Table** avec un **RefreshType**spécifique.  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -37,7 +29,7 @@ Exécute l’opération **Process** sur une **Table** avec un **RefreshType**sp�
   
 ## <a name="parameters"></a>Paramètres  
   
-### <a name="-tablename-string"></a>-TableName \<string>  
+### <a name="-tablename-string"></a>-TableName \<chaîne >  
  Nom de la table à laquelle appartient la partition à traiter.  
   
 |||  
@@ -48,7 +40,7 @@ Exécute l’opération **Process** sur une **Table** avec un **RefreshType**sp�
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-databasename-string"></a>-DatabaseName \<string>  
+### <a name="-databasename-string"></a>-DatabaseName \<chaîne >  
  Spécifie la base de données à laquelle appartient la table.  
   
 |||  
@@ -59,7 +51,7 @@ Exécute l’opération **Process** sur une **Table** avec un **RefreshType**sp�
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-servermicrosoftanalysissevicesserver"></a>-Server\<Microsoft.AnalysisSevices.Server>  
+### <a name="-servermicrosoftanalysissevicesserver"></a>-Server\<Microsoft.AnalysisSevices.Server >  
  Spécifie éventuellement l’instance de serveur à laquelle se connecter si vous n’utilisez pas le répertoire de fournisseur **SQLAS** correspondant au contexte.  
   
 |||  
@@ -70,7 +62,7 @@ Exécute l’opération **Process** sur une **Table** avec un **RefreshType**sp�
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-refreshtype-microsoftanalysisservicesrefreshtype"></a>-RefreshType \<Microsoft.AnalysisServices.RefreshType>  
+### <a name="-refreshtype-microsoftanalysisservicesrefreshtype"></a>-RefreshType \<Microsoft.AnalysisServices.RefreshType >  
  Spécifie le type de processus pour une base de données tabulaire.  Les valeurs valides sont Full, ClearValues, Calculate, DataOnly, Automatic, Add et Defragment. Consultez [Traiter une base de données, une table ou une partition &#40;Analysis Services&#41;](../../analysis-services/tabular-models/process-database-table-or-partition-analysis-services.md) pour des descriptions et des conseils.  
   
 |||  

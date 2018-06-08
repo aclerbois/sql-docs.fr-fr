@@ -1,15 +1,14 @@
 ---
-title: "Validation d’un composant de flux de données | Microsoft Docs"
-ms.custom: 
+title: Validation d’un composant de flux de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -25,16 +24,15 @@ helpviewer_keywords:
 - data flow components [Integration Services], validating
 - validation [Integration Services]
 ms.assetid: 1a7d5925-b387-4e31-af7f-c7f3c5151040
-caps.latest.revision: 
+caps.latest.revision: 48
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9602ce6cb6c55aabae923613c7525d7d85851603
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 722705fe6dcca682235cde4877d1570068572bc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="validating-a-data-flow-component"></a>Validation d'un composant de flux de données
   La méthode <xref:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.Validate%2A> de la classe de base <xref:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent> est fournie pour empêcher l'exécution d'un composant qui n'est pas configuré correctement. Cette méthode vous permet de vérifier qu'un composant dispose du nombre d'objets d'entrée et de sortie attendu, que les valeurs des propriétés personnalisées du composant sont acceptables et que toutes les connexions nécessaires sont spécifiées. Elle vous permet également de vérifier que les colonnes dans les collections d'entrée et de sortie contiennent des types de données corrects et que le <xref:Microsoft.SqlServer.Dts.Pipeline.Wrapper.DTSUsageType> de chaque colonne est défini de manière appropriée pour le composant. L'implémentation de la classe de base contribue au processus de validation en contrôlant la collection de colonnes d'entrée du composant et en vérifiant que chaque colonne de la collection fait référence à une colonne dans le <xref:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSOutputCollection100> du composant en amont.  

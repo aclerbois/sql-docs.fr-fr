@@ -1,16 +1,14 @@
 ---
-title: sp_delete_jobserver (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_delete_jobserver (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_delete_jobserver
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_delete_jobserver
 ms.assetid: 6d63ed32-68cf-4d8f-aa40-05a3826e05b8
-caps.latest.revision: 
+caps.latest.revision: 36
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 04575019d38c28dc541752ecf7c3b2408fb3c180
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e7b311f4de82a416fc61a0464077aa5aaa03de99
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdeletejobserver-transact-sql"></a>sp_delete_jobserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,17 +44,17 @@ sp_delete_jobserver { [ @job_id = ] job_id | [ @job_name = ] 'job_name' } ,
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id=** ] *job_id*  
+ [  **@job_id=** ] *job_id*  
  Numéro d'identification du travail duquel le serveur cible spécifié doit être supprimé. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name=** ] **'***job_name***'**  
+ [  **@job_name=** ] **'***job_name***'**  
  Nom du travail à partir duquel le serveur cible spécifié doit être supprimé. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié ; ne peut pas être spécifiés.  
   
- [ **@server_name=** ] **'***server***'**  
- Nom du serveur cible à supprimer du travail spécifié. *serveur* est **nvarchar (30)**, sans valeur par défaut. *serveur* peut être **(LOCAL)**ou le nom d’un serveur cible distant.  
+ [  **@server_name=** ] **'***server***'**  
+ Nom du serveur cible à supprimer du travail spécifié. *serveur* est **nvarchar (30)**, sans valeur par défaut. *serveur* peut être **(LOCAL)** ou le nom d’un serveur cible distant.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  

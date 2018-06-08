@@ -1,17 +1,16 @@
 ---
-title: "Initialisation instantanée des fichiers de base de données | Microsoft Docs"
-ms.custom: 
+title: Initialisation instantanée des fichiers de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 01/09/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - initializing files [SQL Server]
 - instant file initialization [SQL Server]
@@ -20,19 +19,19 @@ helpviewer_keywords:
 - IFI [SQL Server]
 - database instant file initialization [SQL Server]
 ms.assetid: 1ad468f5-4f75-480b-aac6-0b01b048bd67
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 43b4084e91c08bfe870807196261e4be9b934872
-ms.sourcegitcommit: 3206a31870f8febab7d1718fa59fe0590d4d45db
+ms.openlocfilehash: 0f51ea699c269ddb237f4582d4f368dd76cdc149
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-file-initialization"></a>Initialisation des fichiers de base de données
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les fichiers de données et les fichiers journaux sont initialisés pour remplacer toutes les données existantes laissées sur le disque par des fichiers précédemment supprimés. Les fichiers de données et les fichiers journaux sont d’abord initialisés en étant remplis avec des zéros quand vous effectuez une des opérations suivantes :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Les fichiers de données et les fichiers journaux sont initialisés pour remplacer toutes les données existantes laissées sur le disque par des fichiers précédemment supprimés. Les fichiers de données et les fichiers journaux sont d’abord initialisés en étant remplis avec des zéros quand vous effectuez une des opérations suivantes :  
   
 - Créer une base de données.  
 - Ajouter des fichiers journaux ou de données à une base de données existante.  

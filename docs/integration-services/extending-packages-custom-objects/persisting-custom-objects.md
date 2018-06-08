@@ -1,31 +1,29 @@
 ---
-title: "Persistance des objets personnalisés | Microsoft Docs"
-ms.custom: 
+title: Persistance des objets personnalisés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
 helpviewer_keywords:
 - custom objects [Integration Services], persisting
 ms.assetid: 97c19716-6447-4c1c-b277-cc2e6c1e6a6c
-caps.latest.revision: 
+caps.latest.revision: 21
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 22ebbf55dbe6fb9a1e63e8a7cfae9fb6674c62ed
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e84f4b9b9e5fe6edf7cabe8ed09b79bfe30c29da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="persisting-custom-objects"></a>Persistance des objets personnalisés
   Il n’est pas nécessaire d’implémenter une persistance personnalisée pour les objets personnalisés que vous créez à condition que leurs propriétés utilisent uniquement des types de données simples, comme **integer** et **string**. L'implémentation par défaut de la persistance enregistre les métadonnées de votre objet ainsi que les valeurs de toutes ses propriétés.  

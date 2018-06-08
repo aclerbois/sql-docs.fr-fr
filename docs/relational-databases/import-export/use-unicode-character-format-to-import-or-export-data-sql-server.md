@@ -1,31 +1,29 @@
 ---
-title: "Utiliser le format caractère Unicode pour importer ou exporter des données (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Utiliser le format caractère Unicode pour importer ou exporter des données (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/30/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data formats [SQL Server], Unicode character
 - Unicode [SQL Server], bulk importing and exporting
 ms.assetid: 74342a11-c1c0-4746-b482-7f3537744a70
-caps.latest.revision: 
+caps.latest.revision: 37
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c6a9afc3b92d4de54b166e56c745e28898937c59
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: ecc827d1b784ad81907443c42f80d69b6f7f05f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-unicode-character-format-to-import-or-export-data-sql-server"></a>Utiliser le format caractère Unicode pour importer ou exporter des données (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -147,7 +145,7 @@ Notepad D:\BCP\myWidechar.fmt
 Les exemples ci-dessous utilisent la base de données et les fichiers de format créés ci-dessus.
 
 ### **Utilisation de bcp et du format caractère Unicode pour exporter des données**<a name="bcp_widechar_export"></a>
-Commutateur**-w** et commande **OUT** .  Remarque : Le fichier de données créé dans cet exemple est utilisé dans tous les exemples suivants.  À partir d’une invite de commandes, entrez les commandes suivantes :
+Commutateur **-w** et commande **OUT** .  Remarque : Le fichier de données créé dans cet exemple est utilisé dans tous les exemples suivants.  À partir d’une invite de commandes, entrez les commandes suivantes :
 ```
 bcp TestDatabase.dbo.myWidechar OUT D:\BCP\myWidechar.bcp -T -w
 
@@ -156,7 +154,7 @@ NOTEPAD D:\BCP\myWidechar.bcp
 ```
 
 ### **Utilisation de bcp et du format caractère Unicode pour importer des données sans un fichier de format**<a name="bcp_widechar_import"></a>
-Commutateur**-w** et commande **IN** .  À partir d’une invite de commandes, entrez les commandes suivantes :
+Commutateur **-w** et commande **IN** .  À partir d’une invite de commandes, entrez les commandes suivantes :
 ```
 REM Truncate table (for testing)
 SQLCMD -Q "TRUNCATE TABLE TestDatabase.dbo.myWidechar;"
@@ -168,7 +166,7 @@ REM Review results is SSMS
 ```
 
 ### **Utilisation de bcp et du format caractère Unicode pour importer des données avec un fichier de format non XML**<a name="bcp_widechar_import_fmt"></a>
-Commutateurs**-w** et **-f** switches et **IN** commet.  Vous devez utiliser une solution de contournement dans la mesure où cet exemple implique bcp, un fichier de format, le caractère Unicode, et le premier champ de données dans le fichier de données n’est pas de type caractère.  Consultez [Considérations spéciales relatives à l’utilisation du format caractère Unicode, de bcp et d’un fichier de format](#special_considerations)ci-dessus.  Le fichier de données `myWidechar.bcp` est modifié par l’ajout d’un enregistrement supplémentaire « factice » qui est ensuite ignoré avec le commutateur `-F 2` .
+Commutateurs **-w** et **-f** switches et **IN** commet.  Vous devez utiliser une solution de contournement dans la mesure où cet exemple implique bcp, un fichier de format, le caractère Unicode, et le premier champ de données dans le fichier de données n’est pas de type caractère.  Consultez [Considérations spéciales relatives à l’utilisation du format caractère Unicode, de bcp et d’un fichier de format](#special_considerations)ci-dessus.  Le fichier de données `myWidechar.bcp` est modifié par l’ajout d’un enregistrement supplémentaire « factice » qui est ensuite ignoré avec le commutateur `-F 2` .
 
 À l’invite de commandes, entrez les commandes suivantes et suivez la procédure de modification :
 ```

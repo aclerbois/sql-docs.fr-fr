@@ -1,38 +1,19 @@
 ---
-title: "Fonctionnalité de sélection (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- mining models [Analysis Services], feature selections
-- attributes [data mining]
-- feature selection algorithms [Analysis Services]
-- data mining [Analysis Services], feature selections
-- neural network algorithms [Analysis Services]
-- naive bayes algorithms [Analysis Services]
-- decision tree algorithms [Analysis Services]
-- datasets [Analysis Services]
-- clustering algorithms [Analysis Services]
-- coding [Data Mining]
-ms.assetid: b044e785-4875-45ab-8ae4-cd3b4e3033bb
-caps.latest.revision: 
-author: Minewiskan
+title: Fonctionnalité de sélection (exploration de données) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: eb5669b2043c34cb9a960b92abae6b76df36daea
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: a93e503978779e56250ddf190c61b1b2411050b9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="feature-selection-data-mining"></a>Sélection des fonctionnalités (exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

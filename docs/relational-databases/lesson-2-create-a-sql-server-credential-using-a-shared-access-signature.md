@@ -2,16 +2,14 @@
 title: 'Leçon 2 : Créer des informations d’identification SQL Server à l’aide d’une signature d’accès partagé | Microsoft Docs'
 ms.custom: ''
 ms.date: 02/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: tutorial
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
+ms.technology: backup-restore
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 ms.assetid: 29e57ebd-828f-4dff-b473-c10ab0b1c597
@@ -19,12 +17,11 @@ caps.latest.revision: 17
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3f6ed57a4b97737f5780cd48e6fe58f644be97fd
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: a88a95ea4ad99373c5f8a1994599a2dbea961669
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-2-create-a-sql-server-credential-using-a-shared-access-signature"></a>Leçon 2 : Créer des informations d’identification SQL Server à l’aide d’une signature d’accès partagé
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

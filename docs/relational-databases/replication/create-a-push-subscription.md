@@ -2,16 +2,15 @@
 title: Créer un abonnement par émission de données | Microsoft Docs
 ms.custom: ''
 ms.date: 08/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: replication
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - push subscriptions [SQL Server replication], creating
 - merge replication subscribing [SQL Server replication], push subscriptions
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - snapshot replication [SQL Server], subscribing
 - transactional replication, subscribing
 ms.assetid: adfbbc61-58d1-4330-9ad6-b14ab1142e2b
-caps.latest.revision: ''
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5bf9d80a888af7af607fd8d9335213c4eb5796b3
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 464fe19b441009e8a619cea6e478866890b19e8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-push-subscription"></a>Créer un abonnement par émission (push)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -99,7 +97,7 @@ ms.lasthandoff: 03/08/2018
   
     -   Si la valeur de **allow_push** est **0**, exécutez [sp_changepublication](../../relational-databases/system-stored-procedures/sp-changepublication-transact-sql.md), en spécifiant **allow_push** pour **@property** et **true** pour **@value**.  
   
-2.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addsubscription](../system-stored-procedures/sp-addsubscription-transact-sql.md). Spécifiez **@publication**, de **@subscriber** et **@destination_db**. Spécifiez la valeur **push** pour **@subscription_type**. Pour plus d'informations sur la mise à jour des abonnements, consultez [Créer un abonnement pouvant être mis à jour pour une publication transactionnelle](publish/create-an-updatable-subscription-to-a-transactional-publication.md).  
+2.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addsubscription](../system-stored-procedures/sp-addsubscription-transact-sql.md). Spécifiez **@publication**, de **@subscriber** et **@destination_db**. Spécifiez la valeur **push** pour **@subscription_type**. Pour plus d'informations sur la mise à jour des abonnements, consultez [Create an Updatable Subscription to a Transactional Publication](publish/create-an-updatable-subscription-to-a-transactional-publication.md).  
   
 3.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addpushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addpushsubscription-agent-transact-sql.md). Spécifiez les éléments suivants :  
   
@@ -199,7 +197,7 @@ ms.lasthandoff: 03/08/2018
   
 8.  Appelez la méthode <xref:Microsoft.SqlServer.Replication.Subscription.Create%2A> .  
   
-    > **IMPORTANT!**Durant la création d’un abonnement par émission de données sur un serveur de publication avec un serveur de distribution distant, les valeurs fournies pour toutes les propriétés, notamment <xref:Microsoft.SqlServer.Replication.Subscription.SynchronizationAgentProcessSecurity%2A>, sont envoyées au serveur de distribution en texte brut. Vous devez chiffrer la connexion entre le serveur de publication et son serveur de distribution distant avant d'appeler la méthode <xref:Microsoft.SqlServer.Replication.Subscription.Create%2A> . Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  
+    > **IMPORTANT!** Durant la création d’un abonnement par émission de données sur un serveur de publication avec un serveur de distribution distant, les valeurs fournies pour toutes les propriétés, notamment <xref:Microsoft.SqlServer.Replication.Subscription.SynchronizationAgentProcessSecurity%2A>, sont envoyées au serveur de distribution en texte brut. Vous devez chiffrer la connexion entre le serveur de publication et son serveur de distribution distant avant d'appeler la méthode <xref:Microsoft.SqlServer.Replication.Subscription.Create%2A> . Pour plus d’informations, consultez [Activer des connexions chiffrées dans le moteur de base de données &#40;Gestionnaire de configuration SQL Server&#41;](../../database-engine/configure-windows/enable-encrypted-connections-to-the-database-engine.md).  
   
 #### <a name="to-create-a-push-subscription-to-a-merge-publication"></a>Pour créer un abonnement par envoi de données vers une publication de fusion  
   

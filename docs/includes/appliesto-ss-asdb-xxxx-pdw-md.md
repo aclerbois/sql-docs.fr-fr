@@ -1,0 +1,1 @@
+<Token>**Cette rubrique s’applique à :** ![Oui](media/yes.png)SQL Server![Oui](media/yes.png)base de données SQL Azure![aucun](media/no.png)Azure SQL Data Warehouse ![Oui](media/yes.png)parallèle Entrepôt de données </Token>

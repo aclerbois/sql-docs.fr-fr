@@ -1,17 +1,15 @@
 ---
-title: "Requêtes PolyBase | Microsoft Docs"
-ms.custom: 
+title: Requêtes PolyBase | Microsoft Docs
+ms.custom: ''
 ms.date: 12/08/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: polybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-polybase
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: polybase
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 keywords:
 - PolyBase
 helpviewer_keywords:
@@ -21,21 +19,20 @@ helpviewer_keywords:
 - Azure blob storage, import with PolyBase
 - Azure blob storage, export with PolyBase
 ms.assetid: 2c5aa2bd-af7d-4f57-9a28-9673c2a4c07e
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 18
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 332661e69cde4a1ca8ec55c4082e1b3a23077571
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+ms.openlocfilehash: 21c4f31e5467096ae37e4e3b2634c65065236e1a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="polybase-queries"></a>Requêtes PolyBase
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
 
-  Cet article donne des exemples de requêtes qui utilisent la fonctionnalité [PolyBase](../../relational-databases/polybase/polybase-guide.md) de SQL Server 2016. Avant d’utiliser ces exemples, vous devez également comprendre les instructions T-SQL nécessaires pour installer PolyBase (voir [Objets T-SQL PolyBase](../../relational-databases/polybase/polybase-t-sql-objects.md)).
+  Cet article donne des exemples de requêtes qui utilisent la fonctionnalité [PolyBase](../../relational-databases/polybase/polybase-guide.md) de SQL Server ( à partir de la version 2016). Avant d’utiliser ces exemples, vous devez également comprendre les instructions T-SQL nécessaires pour installer PolyBase (voir [Objets T-SQL PolyBase](../../relational-databases/polybase/polybase-t-sql-objects.md)).
   
 ## <a name="queries"></a>Requêtes  
  Exécutez des instructions Transact-SQL sur les tables externes ou utilisez des outils d’aide à la décision pour interroger des tables externes.
@@ -156,9 +153,10 @@ CREATE CLUSTERED COLUMNSTORE INDEX CCI_FastCustomers ON Fast_Customers;
 
 Exportez des données de SQL Server vers Hadoop ou le Stockage Azure. 
 
-Tout d’abord, activez la fonctionnalité d’exportation en définissant la valeur `sp_configure` de l’option « autoriser l’exportation polybase » sur 1. Créez ensuite une table externe pointant vers le répertoire de destination. Puis, utilisez INSERT INTO pour exporter les données d’une table SQL Server locale dans une source de données externe. 
+Tout d’abord, activez la fonctionnalité d’exportation en définissant la valeur `sp_configure` de l’option « autoriser l’exportation polybase » sur 1. Créez ensuite une table externe pointant vers le répertoire de destination. L’instruction CREATE EXTERNAL TABLE crée le répertoire de destination, s’il n’existe pas encore. Utilisez ensuite l’instruction INSERT INTO pour exporter les données d’une table SQL Server locale dans la source de données externe. 
 
-L’instruction INSERT INTO crée le répertoire de destination, s’il n’existe pas, et les résultats de l’instruction SELECT sont exportés à l’emplacement et au format spécifiés. Les fichiers externes sont nommés *QueryID_date_time_ID.format*, où *ID* est un identificateur incrémentiel et *format* est le format des données exportées. Exemple de nom de fichier : QID776_20160130_182739_0.orc.
+Les résultats de l’instruction SELECT sont exportés dans un fichier au format et à l’emplacement spécifiés. Les fichiers externes sont nommés *QueryID_date_time_ID.format*, où *ID* est un identificateur incrémentiel et *format* est le format des données exportées. Exemple de nom de fichier : QID776_20160130_182739_0.orc.
+
 
 > [!NOTE]
 > En cas d’exportation de données vers Hadoop ou le Stockage Blob Azure via PolyBase, seules les données sont exportées, et non les noms de colonnes (métadonnées), comme le définit la commande CREATE EXTERNAL TABLE.

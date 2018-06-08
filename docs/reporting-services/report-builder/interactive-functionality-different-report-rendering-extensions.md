@@ -1,27 +1,25 @@
 ---
-title: "Fonctionnalité interactive - Différentes extensions de rendu de rapports | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalité interactive - Différentes extensions de rendu de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f0bd1c4c-e8b5-467f-b5a1-541f19c7e3e2
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4b6eb94e8511be6d1e2f5ccf2cc12eea7ced9198
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: ba78a5b3c2d5058723eef41a2c6ca1b98c13160b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interactive-functionality---different-report-rendering-extensions"></a>Fonctionnalité interactive - Différentes extensions de rendu de rapports
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] propose des fonctionnalités permettant d’interagir avec un rapport paginé au moment de l’exécution. Certains formats de rendu de rapport ne prennent pas en charge toutes les fonctionnalités interactives. Le tableau suivant permet de comprendre le fonctionnement de chaque fonctionnalité interactive dans des formats spécifiques.  

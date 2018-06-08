@@ -1,16 +1,14 @@
 ---
-title: "Prédicats de sélection, spécification dans le chemin d’accès d’emplacement (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Prédicats de sélection, spécification dans le chemin d’accès d’emplacement (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - XPath queries [SQLXML], predicates
@@ -20,25 +18,25 @@ helpviewer_keywords:
 - filtering [SQLXML]
 - location path for XPath query
 ms.assetid: dbef4cf4-a89b-4d7e-b72b-4062f7b29a80
-caps.latest.revision: 
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 08a27de5e9c528d3e49156df804f19376ae5a6bd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7e32ce8235adfe6774b339219ced7ecb6a38f505
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specifying-selection-predicates-in-the-location-path-sqlxml-40"></a>Spécification de prédicats de sélection dans le chemin d'accès d'emplacement (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Un prédicat filtre un élément node-set par rapport à un axe (semblable à une clause WHERE dans une instruction SELECT). Le prédicat est spécifié entre crochets. Pour chaque nœud de l'élément node-set à filtrer, l'expression de prédicat est évaluée avec ce nœud en tant que nœud de contexte et avec le nombre de nœuds de l'élément node-set en tant que taille de contexte. Si l'expression de prédicat prend la valeur TRUE pour ce nœud, ce dernier est inclus dans l'élément node-set obtenu.  
+  Un prédicat filtre un élément node-set par rapport à un axe (semblable à une clause WHERE dans une instruction SELECT). Le prédicat est spécifié entre crochets. Pour chaque nœud de l'élément node-set à filtrer, l'expression de prédicat est évaluée avec ce nœud en tant que nœud de contexte et avec le nombre de nœuds de l'élément node-set en tant que taille de contexte. Si l'expression de prédicat prend la valeur TRUE pour ce nœud, ce dernier est inclus dans l'élément node-set obtenu.  
   
  XPath autorise également un filtrage basé sur les positions. Une expression de prédicat qui correspond à un nombre sélectionne ce nœud ordinal. Par exemple, le chemin d'accès d'emplacement `Customer[3]` retourne le troisième client. De tels prédicats numériques ne sont pas pris en charge. Seules les expressions de prédicat qui retournent un résultat booléen sont prises en charge.  
   
 > [!NOTE]  
->  Pour plus d’informations sur les limitations de cette implémentation XPath de XPath et les différences entre eux et la spécification W3C, consultez [Introduction à l’aide de requêtes XPath &#40; SQLXML 4.0 &#41; ](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/introduction-to-using-xpath-queries-sqlxml-4-0.md).  
+>  Pour plus d’informations sur les limitations de cette implémentation XPath de XPath et les différences entre eux et la spécification W3C, consultez [Introduction à l’aide de requêtes XPath &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/introduction-to-using-xpath-queries-sqlxml-4-0.md).  
   
 ## <a name="selection-predicate-example-1"></a>Prédicat de sélection : Exemple 1  
  L’expression XPath suivante (chemin d’accès d’emplacement) sélectionne à partir du nœud de contexte actuel tous les le  **\<client >** éléments enfants qui ont le **CustomerID** attribut avec la valeur ALFKI :  
@@ -122,7 +120,7 @@ Customer[@CustomerID]
 ```  
   
 ## <a name="selection-predicate-example-6"></a>Prédicat de sélection : exemple 6  
- [!INCLUDE[msCoName](../../../includes/msconame-md.md)] SQLXML 4.0 inclut la prise en charge pour les requêtes XPath qui contiennent un produit croisé dans le prédicat, comme indiqué dans l’exemple suivant :  
+ [!INCLUDE[msCoName](../../../includes/msconame-md.md)] SQLXML 4.0 inclut la prise en charge des requêtes XPath qui contiennent un produit croisé dans le prédicat, comme l'illustre l'exemple suivant :  
   
 ```  
 Customer[Order/@OrderDate=Order/@ShipDate]  
@@ -131,7 +129,7 @@ Customer[Order/@OrderDate=Order/@ShipDate]
  Cette requête sélectionne tous les clients avec un `Order` quelconque pour lequel `OrderDate` est égal au `ShipDate` de tout `Order`.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Introduction aux schémas XSD annotés &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md)   
- [La mise en forme XML côté client &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/formatting/client-side-xml-formatting-sqlxml-4-0.md)  
+ [Introduction aux schémas XSD annotés &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml/annotated-xsd-schemas/introduction-to-annotated-xsd-schemas-sqlxml-4-0.md)   
+ [La mise en forme XML côté client & #40 ; SQLXML 4.0 & #41 ;](../../../relational-databases/sqlxml/formatting/client-side-xml-formatting-sqlxml-4-0.md)  
   
   

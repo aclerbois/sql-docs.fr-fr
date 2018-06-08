@@ -1,34 +1,19 @@
 ---
-title: "(Niveau de compatibilité 1200) de modélisation tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 02/10/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-keywords:
-- Analysis Services
-- "Modèle tabulaire"
-- Didacticiel
-- SSAS
-ms.assetid: 140d0b43-9455-4907-9827-16564a904268
-caps.latest.revision: 
-author: Minewiskan
+title: (Niveau de compatibilité 1200) de modélisation tabulaire | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: d85d437ce17c04107d85cf444268eb26f1a460e8
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.openlocfilehash: b0b8d60c6c365d48f8eccc46cbc9a3b0f5222ff5
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-modeling-1200-compatibility-level"></a>Modélisation tabulaire (niveau de compatibilité 1200)
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]

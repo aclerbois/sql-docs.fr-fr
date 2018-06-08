@@ -1,32 +1,29 @@
 ---
-title: "Type et colonnes de données XML (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Type et colonnes de données XML (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 00db8f21-7d4b-4347-ae43-3a7c314d2fa1
-caps.latest.revision: 
+caps.latest.revision: 6
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1c46731315da67c4258b4a08983b54e381bd6dbf
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: d76704d665b985804b2383690cd7dbeb22189201
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-data-type-and-columns-sql-server"></a>Type et colonnes de données XML (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Cette rubrique présente les avantages et les limites du type de données **XML** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], et vous aide à choisir comment stocker des données XML.  
+  Cette rubrique présente les avantages et les limites du type de données **XML** dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], et vous aide à choisir comment stocker des données XML.  
   
 ## <a name="relational-or-xml-data-model"></a>Modèle de données relationnel ou XML  
  Si vos données sont très structurées et s'accompagnent de schémas connus, le modèle relationnel est sans doute le mieux adapté au stockage des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit les fonctionnalités et les outils dont vous pourrez avoir besoin. En revanche, s'il s'agit de données semi-structurées ou non structurées, ou si la structure est inconnue, mieux vaut envisager la modélisation de ces données.  
@@ -69,7 +66,7 @@ Cette rubrique présente les avantages et les limites du type de données **XML*
   
      Les données sont stockées dans une représentation interne qui conserve le contenu XML des données. Cette représentation interne inclut des informations à propos de la hiérarchie de relations contenant-contenu, l'ordre des documents et les valeurs d'éléments et d'attributs. Plus précisément, le contenu InfoSet des données XML est préservé. Pour plus d’informations sur InfoSet, consultez [http://www.w3.org/TR/xml-infoset](http://go.microsoft.com/fwlink/?LinkId=48843). Le contenu InfoSet n'est pas une copie conforme du texte XML puisque les éléments suivants ne sont pas conservés : espaces non significatifs, ordre des attributs, préfixes d'espace de noms et déclaration XML.  
   
-     Pour un type de données **xml** typé, un type de données **xml** lié à des schémas XML, le jeu d’informations de validation post-schéma (PSVI) ajoute des informations de type dans le jeu d’informations et il est encodé dans la représentation interne. L'analyse s'en trouve considérablement accélérée. Pour plus d’informations, consultez les spécifications des schémas XML du W3C à l’adresse [http://www.w3.org/TR/xmlschema-1](http://go.microsoft.com/fwlink/?LinkId=48881) et à l’adresse [http://www.w3.org/TR/xmlschema-2](http://go.microsoft.com/fwlink/?LinkId=4871).  
+     Pour un type de données **xml** typé, un type de données **xml** lié à des schémas XML, le jeu d’informations de validation post-schéma (PSVI) ajoute des informations de type dans le jeu d’informations et il est encodé dans la représentation interne. L'analyse s'en trouve considérablement accélérée. Pour plus d’informations, consultez les spécifications XML Schema de W3C sur [http://www.w3.org/TR/xmlschema-1](http://go.microsoft.com/fwlink/?LinkId=48881) et [http://www.w3.org/TR/xmlschema-2](http://go.microsoft.com/fwlink/?LinkId=4871).  
   
 -   Mappage entre stockage XML et relationnel  
   

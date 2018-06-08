@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLAllocStmt | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLAllocStmt
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLAllocStmt
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLAllocStmt
-helpviewer_keywords: SQLAllocStmt function [ODBC]
+f1_keywords:
+- SQLAllocStmt
+helpviewer_keywords:
+- SQLAllocStmt function [ODBC]
 ms.assetid: 7bb38a06-e3d5-4c9a-a0e8-7b59b2ec6927
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 647e5cd4cba6490cf6038b7cfa9d6206902c939e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 45ab33c930814c9b0bf9ae502b2e80b643f991aa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlallocstmt-function"></a>SQLAllocStmt (fonction)
 **Mise en conformité**  

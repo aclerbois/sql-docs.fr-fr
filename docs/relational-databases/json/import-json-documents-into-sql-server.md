@@ -2,26 +2,26 @@
 title: Importer des documents JSON dans SQL Server | Microsoft Docs
 ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: ''
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 0e908ec0-7173-4cd2-8f48-2700757b53a5
 caps.latest.revision: 5
-author: douglaslMS
-ms.author: douglasl
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e16ca364f3e9ed5c65b89a1abdd554991558862e
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 726b1d8bf70204912f9ebbf4c2352dcc0dc55fc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-json-documents-into-sql-server"></a>Importer des documents JSON dans SQL Server
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

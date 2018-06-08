@@ -1,30 +1,28 @@
 ---
-title: "Sys.database_event_session_fields (de base de données SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.database_event_session_fields (de base de données SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.reviewer: 
-ms.service: 
+ms.reviewer: ''
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
 ms.assetid: 9b5c94d6-612c-4e0f-976d-ac6ba55da3ac
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 09048b1ebe35350e22117b87cf0eb40d249db6ea
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 0a7c7ee610ae5eb3a56a46c5b8c7ba1645b64532
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysdatabaseeventsessionfields-azure-sql-database"></a>Sys.database_event_session_fields (de base de données SQL Azure)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

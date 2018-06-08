@@ -1,17 +1,17 @@
 ---
-title: "Méthodes d’autorisation | Microsoft Docs"
-ms.custom: 
+title: Méthodes d’autorisation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - security [Reporting Services], reports
 - authorization [Reporting Services]
@@ -19,16 +19,15 @@ helpviewer_keywords:
 - tasks [Reporting Services]
 - roles [Reporting Services], methods
 ms.assetid: 45e9cf2c-facf-4801-9482-c855403f42a8
-caps.latest.revision: "42"
+caps.latest.revision: 42
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 627c9f6773b52b0c5cc5c7a11705ae92610daa2e
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 479c1814a6ce52f3deec42d5ce84f40bc00278a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="authorization-methods"></a>Méthodes d'autorisation
   Vous pouvez utiliser les méthodes suivantes pour gérer les tâches, les rôles et les stratégies sur le serveur de rapports.  

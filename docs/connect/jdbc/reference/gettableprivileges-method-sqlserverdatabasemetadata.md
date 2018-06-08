@@ -1,30 +1,29 @@
 ---
-title: "Méthode getTablePrivileges (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getTablePrivileges (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getTablePrivileges
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getTablePrivileges
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 0610d667-a16d-4201-a14b-0a40048911e1
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b0164ce48c06196a71bd9831bb5b66b4a2ad4395
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 06a7bcc60d73aba7e0939d70224a765168738b64
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gettableprivileges-method-sqlserverdatabasemetadata"></a>Méthode getTablePrivileges (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -41,11 +40,11 @@ public java.sql.ResultSet getTablePrivileges(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  A **chaîne** qui contient le nom du catalogue. La spécification d'une valeur Null pour ce paramètre indique que le nom du catalogue n'a pas besoin d'être utilisé.  
   
- *schéma*  
+ *schema*  
   
  A **chaîne** qui contient le modèle de nom de schéma. La spécification d'une valeur Null pour ce paramètre indique que le nom du schéma n'a pas besoin d'être utilisé.  
   
@@ -66,13 +65,13 @@ public java.sql.ResultSet getTablePrivileges(java.lang.String catalog,
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|TABLE_CAT|**Chaîne**|Nom du catalogue.|  
-|TABLE_SCHEM|**Chaîne**|Nom du schéma de table.|  
-|TABLE_NAME|**Chaîne**|Le nom de la table.|  
-|GRANTOR|**Chaîne**|Objet octroyant l'accès.|  
-|GRANTEE|**Chaîne**|Objet bénéficiant de l'accès.|  
-|PRIVILEGE|**Chaîne**|Type d'accès octroyé.|  
-|IS_GRANTABLE|**Chaîne**|Indique si le bénéficiaire peut accorder ou non l'accès à d'autres utilisateurs.|  
+|TABLE_CAT|**String**|Nom du catalogue.|  
+|TABLE_SCHEM|**String**|Nom du schéma de table.|  
+|TABLE_NAME|**String**|Le nom de la table.|  
+|GRANTOR|**String**|Objet octroyant l'accès.|  
+|GRANTEE|**String**|Objet bénéficiant de l'accès.|  
+|PRIVILEGE|**String**|Type d'accès octroyé.|  
+|IS_GRANTABLE|**String**|Indique si le bénéficiaire peut accorder ou non l'accès à d'autres utilisateurs.|  
   
 > [!NOTE]  
 >  Pour plus d’informations sur les données retournées par la méthode getTablePrivileges, consultez la rubrique « sp_table_privileges (Transact-SQL) » dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] la documentation en ligne.  

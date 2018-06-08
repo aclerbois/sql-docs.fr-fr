@@ -1,30 +1,28 @@
 ---
-title: "Options Demande de profil de ratio de colonne Null (tâche de profilage des données) | Microsoft Docs"
-ms.custom: 
+title: Options Demande de profil de ratio de colonne Null (tâche de profilage des données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Data Profiling Task Editor
 ms.assetid: 157ef8e4-fd23-4f81-8194-eebf74e9fd86
-caps.latest.revision: 
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: edf82eeda2fccb082e27fe5540d0ffe1b383ddba
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: cf045c6fd461ed8dfda86dd611cbedd1d424cd4f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-null-ratio-profile-request-options-data-profiling-task"></a>Options Demande de profil de ratio de colonne Null (tâche de profilage des données)
   Utilisez le volet **Propriétés de la demande** de la page **Demandes de profil** pour définir les options de la **Demande de profil de ratio de colonne Null** sélectionnée dans le volet Demandes. Un profil de ratio de colonne Null signale le pourcentage de valeurs Null dans la colonne sélectionnée. Ce profil peut vous aider à identifier des problèmes dans vos données, tels qu'un ratio élevé inattendu de valeurs Null dans une colonne. Par exemple, un profil de ratio de colonne Null peut profiler une colonne Code postal et découvrir un pourcentage beaucoup trop élevé de codes postaux manquants.  

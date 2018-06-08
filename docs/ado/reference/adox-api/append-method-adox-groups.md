@@ -1,17 +1,15 @@
 ---
-title: "Append (méthode) (groupes ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Append (méthode) (groupes ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Groups::raw_Append
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Append method [ADOX]
 ms.assetid: 56b94fc6-7ef0-4e4a-82a3-033b94c46036
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 232f7d51b00d9c22689f126518bbaddacc9a3b8f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 2dc48bab9fa037ab4844bf3e1ab247365bf41070
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="append-method-adox-groups"></a>Append (méthode) (groupes ADOX)
 Ajoute un nouveau [groupe](../../../ado/reference/adox-api/group-object-adox.md) de l’objet à la [groupes](../../../ado/reference/adox-api/groups-collection-adox.md) collection.  

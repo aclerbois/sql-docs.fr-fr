@@ -1,33 +1,32 @@
 ---
-title: "Créer des jointures externes (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Créer des jointures externes (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - outer joins
 - joins [SQL Server], outer
 ms.assetid: 18de47b1-f936-427d-b852-fe6d20334f71
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7399c344d94920c76093883eb8cf5244222ce707
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: eaa656ab6775594477ed4d83470b1c2ebab642c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-outer-joins-visual-database-tools"></a>Créer des jointures externes (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Par défaut, le [Concepteur de requêtes et de vues](../../ssms/visual-db-tools/query-and-view-designer-tools-visual-database-tools.md) crée une jointure interne entre des tables. Les jointures internes éliminent les lignes qui ne correspondent pas à une ligne de l'autre table. Quant aux jointures externes, elles retournent toutes les lignes d'au moins une des tables ou vues mentionnées dans la clause FROM, pour autant que ces lignes répondent à une des conditions de recherche WHERE ou HAVING. Pour inclure, dans l'ensemble de résultats, des lignes de données qui n'ont pas de correspondances dans la table jointe, vous pouvez créer une jointure externe.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Par défaut, le [Concepteur de requêtes et de vues](../../ssms/visual-db-tools/query-and-view-designer-tools-visual-database-tools.md) crée une jointure interne entre des tables. Les jointures internes éliminent les lignes qui ne correspondent pas à une ligne de l'autre table. Quant aux jointures externes, elles retournent toutes les lignes d'au moins une des tables ou vues mentionnées dans la clause FROM, pour autant que ces lignes répondent à une des conditions de recherche WHERE ou HAVING. Pour inclure, dans l'ensemble de résultats, des lignes de données qui n'ont pas de correspondances dans la table jointe, vous pouvez créer une jointure externe.  
   
 Lorsque vous créez une jointure externe, l'ordre d'affichage des tables dans l'instruction SQL (c.-à-d. telles qu'elles apparaissent dans le volet SQL) est important. La première table que vous ajoutez devient la table « de gauche » et la seconde la table « de droite ». (En revanche, l’ordre d’apparition des tables dans le [volet Schéma](../../ssms/visual-db-tools/diagram-pane-visual-database-tools.md) importe peu.) Quand vous spécifiez une jointure externe droite ou gauche, vous faites référence à l’ordre dans lequel les tables ont été ajoutées à la requête et à celui dans lequel elles apparaissent dans l’instruction SQL du [volet SQL](../../ssms/visual-db-tools/sql-pane-visual-database-tools.md).  
   

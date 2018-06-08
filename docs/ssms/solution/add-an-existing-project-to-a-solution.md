@@ -1,35 +1,34 @@
 ---
-title: "Ajouter un projet existant à une solution | Microsoft Docs"
-ms.custom: 
+title: Ajouter un projet existant à une solution | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-solutions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vs.addexistingproject
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vs.addexistingproject
 helpviewer_keywords:
 - adding projects
 - solutions [SQL Server Management Studio], project additions
 - projects [SQL Server Management Studio], adding
 ms.assetid: 7b0c8ac0-5941-4ac6-b960-87d9830d00de
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: ad071db3d2a369abe5dc9161e91b837369a475f9
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: f8452554b06cfb63e140c89db706ca856e2be7f8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-an-existing-project-to-a-solution"></a>Ajouter un projet existant à une solution
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez ajouter un ou plusieurs projets à une solution existante. Un même projet peut être associé à plusieurs solutions.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez ajouter un ou plusieurs projets à une solution existante. Un même projet peut être associé à plusieurs solutions.  
   
 ### <a name="to-add-an-existing-project-to-a-solution"></a>Pour ajouter un projet existant à une solution  
   

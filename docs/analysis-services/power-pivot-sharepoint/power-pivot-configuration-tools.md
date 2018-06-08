@@ -1,31 +1,23 @@
 ---
 title: Power Pivot Configuration Tools | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: f934c51d-01fe-4e67-971d-cd87d7d7ee51
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e2df021da6f2cf8c32e0b0581c5d5d61a422d5ef
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0a8bbdabd1fe02033de6dd9f718a4b0b02f8d25d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-pivot-configuration-tools"></a>Power Pivot Configuration Tools
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Configurez, réparez ou supprimez [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] avec les outils de configuration de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
+  Configurez, réparez ou supprimez [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)] avec les outils de configuration de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
   
  L’Assistant d’installation de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] n’installe pas les outils de configuration de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint. Les outils de configuration seront disponibles en téléchargement dans une future version de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   

@@ -1,16 +1,14 @@
 ---
 title: REVERSE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/13/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - REVERSE_TSQL
@@ -22,16 +20,16 @@ helpviewer_keywords:
 - REVERSE function
 - reverse character expressions
 ms.assetid: 555d8877-7cc7-4955-ae2c-6215aca313b7
-caps.latest.revision: 
+caps.latest.revision: 46
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: c14fb9f1e0f6e7b3f0cb224036af37e6a7b19e23
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 77988e56f8e23e71225086fb3419de6b4f76e637
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reverse-transact-sql"></a>REVERSE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -48,7 +46,7 @@ REVERSE ( string_expression )
   
 ## <a name="arguments"></a>Arguments  
  *string_expression*  
- *string_expression* est une [expression](../../t-sql/language-elements/expressions-transact-sql.md) d’un type de données binaire ou de chaîne. *string_expression* peut être une constante, une variable ou une colonne de données de type caractère ou binaire.  
+ *string_expression* est une [expression](../../t-sql/language-elements/expressions-transact-sql.md) d’un type de données binaire ou de chaîne. *string_expression* peut être une constante, une variable ou une colonne de données binaires ou caractères.  
   
 ## <a name="return-types"></a>Types de retour  
  **varchar** ou **nvarchar**  

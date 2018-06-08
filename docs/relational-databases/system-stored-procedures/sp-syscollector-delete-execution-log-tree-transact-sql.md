@@ -1,16 +1,14 @@
 ---
-title: sp_syscollector_delete_execution_log_tree (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_syscollector_delete_execution_log_tree (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_syscollector_delete_execution_log_tree_TSQL
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - sp_syscollector_delete_execution_log_tree
 - data collector [SQL Server], stored procedures
 ms.assetid: 0a9a7c5b-c3cc-40ca-b524-e948a8cce4e4
-caps.latest.revision: 
+caps.latest.revision: 13
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c02f490c3bbb604088001e9efd24ae4cadaee96a
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 3e2e7efc392e28b2dd8c3f1ee4fba3c8add8b5c6
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "33246780"
 ---
 # <a name="spsyscollectordeleteexecutionlogtree-transact-sql"></a>sp_syscollector_delete_execution_log_tree (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,11 +46,11 @@ sp_syscollector_delete_execution_log_tree[ @log_id = ] log_id
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@log_id =** ] *log_id*  
+ [  **@log_id =** ] *log_id*  
  Est l'identificateur unique pour le journal du jeu d'éléments de collection. *log_id* est **int**.  
   
- [ **@from_collection_set =** ] *from_collection_set*  
- Est l'identificateur pour le jeu d'éléments de collection. *from_collection_set* is **bit=1**.  
+ [  **@from_collection_set =** ] *from_collection_set*  
+ Est l'identificateur pour le jeu d'éléments de collection. *from_collection_set* est **bits = 1**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  

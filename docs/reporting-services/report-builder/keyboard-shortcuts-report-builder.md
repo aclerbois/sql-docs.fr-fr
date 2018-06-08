@@ -1,30 +1,28 @@
 ---
-title: "Raccourcis clavier (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: Raccourcis clavier (Générateur de rapports) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - keyboard shortcuts
 - shortcuts
 ms.assetid: 2d04f2c9-4e29-4b7a-843f-ce9a7c168aeb
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: fd67c49706dce9306843bac51ae20ff23a112789
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 4e2fa3d574930cbf03ee9fbf1664431668b808c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="keyboard-shortcuts-report-builder"></a>Raccourcis clavier (Générateur de rapports)
   Quand vous créez et modifiez des rapports paginés [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] dans le Générateur de rapports, vous avez accès à toutes les touches de raccourci de navigation fournies par l’environnement Windows. Vous pouvez sélectionner l'un des différents schémas de configuration du clavier standard.  

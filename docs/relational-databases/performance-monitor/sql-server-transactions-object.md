@@ -1,34 +1,33 @@
 ---
 title: SQL Server, objet Transactions | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: performance-monitor
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQLServer:Transactions
 - Transactions object
 ms.assetid: 85240267-78fd-476a-9ef6-010d6cf32dd8
-caps.latest.revision: 
+caps.latest.revision: 29
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 757b2b72fe2066f452e53087e2ae73ea67d45aa8
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: f28b5a581bf784f67ffdd1d90e84fb12a33c51c5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-transactions-object"></a>SQL Server, objet Transactions
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] L’objet **Transactions** dans Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs pour analyser le nombre de transactions actives dans une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)], ainsi que les effets de ces transactions sur les ressources, telles que la banque de versions de lignes avec isolement de capture instantanée dans **tempdb**. Les transactions sont des unités logiques de travail, c'est-à-dire un ensemble d'opérations qui doivent toutes aboutir ou être toutes supprimées d'une base de données afin de maintenir l'intégrité logique des données. Toutes les modifications de données dans les bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont effectuées dans des transactions.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  L'objet **Transactions** dans Microsoft [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit des compteurs pour analyser le nombre de transactions actives dans une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)]ainsi que les effets de ces transactions sur les ressources, tels que la banque de versions de lignes avec isolement d'instantané dans **tempdb**. Les transactions sont des unités logiques de travail, c'est-à-dire un ensemble d'opérations qui doivent toutes aboutir ou être toutes supprimées d'une base de données afin de maintenir l'intégrité logique des données. Toutes les modifications de données dans les bases de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont effectuées dans des transactions.  
   
  Lorsqu'une base de données est configurée pour autoriser un niveau d'isolement d'instantané, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] doit gérer un enregistrement des modifications apportées à chaque ligne de la base de données. Chaque fois qu'une ligne est modifiée, une copie de la ligne telle qu'elle existait avant la modification est enregistrée dans une banque de versions de lignes dans **tempdb**. De nombreux compteurs de l'objet **Transaction** peuvent être utilisés pour analyser la taille et le taux de croissance de la banque de versions de lignes dans **tempdb**.  
   

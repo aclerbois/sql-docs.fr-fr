@@ -1,27 +1,25 @@
 ---
 title: Concepts de Reporting Services (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/25/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 934b199c-9918-4e6b-83f4-5862b94fc904
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 048406ef86bc2442e4d065f5461f85dbbd328495
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: edbf80dce6c749551d8955e52aa1c09794dc0cd8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-concepts-ssrs"></a>Concepts de Reporting Services (SSRS)
   Cette rubrique fournit un bref résumé des concepts de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] .  

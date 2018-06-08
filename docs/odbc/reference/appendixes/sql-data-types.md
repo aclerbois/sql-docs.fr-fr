@@ -1,31 +1,28 @@
 ---
-title: "Types de données SQL | Documents Microsoft"
-ms.custom: 
+title: Types de données SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL data types [ODBC]
 - SQL data types [ODBC], about SQL data types
 - data types [ODBC], SQL data types
 ms.assetid: 1b22f985-f5e4-4779-87eb-e43329a442b1
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: d63ef11103b88f70233f269914c54425402b1def
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ba122ccbc873603b434a8541fe44aee10a5104e0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-data-types"></a>Types de données SQL
 Chaque SGBD définit ses propres types SQL. Chaque pilote ODBC expose uniquement ces types de données SQL qui définit des SGBD associé. Plus d’informations sur la façon dont un pilote mappe les types DBMS SQL pour les identificateurs de type défini par ODBC de SQL et la façon dont un pilote mappe les types de DBMS SQL à ses propres identificateurs de type spécifiques au pilote SQL est retourné via un appel à **SQLGetTypeInfo**. Un pilote retourne également les types de données SQL lors de la description des types de données des colonnes et des paramètres via des appels de **SQLColAttribute**, **SQLColumns**, **SQLDescribeCol**, **SQLDescribeParam**, **SQLProcedureColumns**, et **SQLSpecialColumns**.  
@@ -42,24 +39,24 @@ Chaque SGBD définit ses propres types SQL. Chaque pilote ODBC expose uniquement
   
 |Identificateur de type SQL [1]|Type de données SQL<br /><br /> Type [2]|Description de type standard|  
 |------------------------------|------------------------------------|------------------------------|  
-|SQL_CHAR|CHAR (*n*)|Chaîne de longueur fixe de caractères  *n* .|  
-|SQL_VARCHAR|VARCHAR (*n*)|Chaîne de caractères de longueur variable avec une longueur maximale de la chaîne  *n* .|  
+|SQL_CHAR|CHAR (*n*)|Chaîne de longueur fixe de caractères *n*.|  
+|SQL_VARCHAR|VARCHAR (*n*)|Chaîne de caractères de longueur variable avec une longueur maximale de la chaîne *n*.|  
 |SQL_LONGVARCHAR|LONG VARCHAR|Données de caractères de longueur variable. Longueur maximale est la source de données. [9]|  
-|SQL_WCHAR|WCHAR (*n*)|Chaîne de caractères Unicode de longueur fixe*n*|  
-|SQL_WVARCHAR|VARWCHAR (*n*)|Chaîne de caractères de longueur variable Unicode avec une longueur de chaîne maximale*n*|  
+|SQL_WCHAR|WCHAR (*n*)|Chaîne de caractères Unicode de longueur fixe *n*|  
+|SQL_WVARCHAR|VARWCHAR (*n*)|Chaîne de caractères de longueur variable Unicode avec une longueur de chaîne maximale *n*|  
 |SQL_WLONGVARCHAR|LONGWVARCHAR|Données Unicode de longueur variable. La longueur maximale est la source de données|  
 |SQL_DECIMAL|DECIMAL (*p*,*s*)|Signé, valeur numérique exacte avec une précision d’au moins *p* et l’échelle *s.* (La précision maximale est définie par le pilote). (1 < = *p* < = 15 ; *s* <= *p*). [ 4]|  
 |SQL_NUMERIC|NUMÉRIQUE (*p*,*s*)|Signé, valeur numérique exacte avec une précision *p* et l’échelle *s* (1 < = *p* < = 15 ; *s* <= *p*). [ 4]|  
-|SQL_SMALLINT|SMALLINT|Valeur numérique exacte avec une précision de 5 et une échelle 0 (signée : – 32 768 et < =  *n*  < = 32 767, non signé : 0 < =  *n*  < = 65 535) [3].|  
-_INTEGER|INTEGER|Valeur numérique exacte avec une précision de 10 et une échelle 0 (signée : – 2 [31] < =  *n*  < = 2 [31] – 1, non signé : 0 < =  *n*  < = 2 [32] – 1) [3].|  
-|SQL_REAL|real|Signé, valeur numérique approximative avec une précision binaire de 24 (zéro ou valeur absolue 10 [–38] à 10[38]).|  
+|SQL_SMALLINT|SMALLINT|Valeur numérique exacte avec une précision de 5 et une échelle 0 (signée : – 32 768 et < = *n* < = 32 767, non signé : 0 < = *n* < = 65 535) [3].|  
+_INTEGER|INTEGER|Valeur numérique exacte avec une précision de 10 et une échelle 0 (signée : – 2 [31] < = *n* < = 2 [31] – 1, non signé : 0 < = *n* < = 2 [32] – 1) [3].|  
+|SQL_REAL|REAL|Signé, valeur numérique approximative avec une précision binaire de 24 (zéro ou valeur absolue 10 [–38] à 10[38]).|  
 |SQL_FLOAT|FLOAT (*p*)|Signé, valeur numérique approximative avec une précision binaire d’au moins *p*. (La précision maximale est définie par le pilote). [5]|  
 |SQL_DOUBLE|DOUBLE PRECISION|Signé, valeur numérique approximative avec une précision binaire de 53 (zéro ou valeur absolue 10 [–308] à 10[308]).|  
 |SQL_BIT|BIT|Données binaires de transmission unique. [8]|  
-|SQL_TINYINT|TINYINT|Valeur numérique exacte avec une précision de 3 et une échelle 0 (signée : – 128 < =  *n*  < = 127, non signée : 0 < =  *n*  < = 255) [3].|  
-_BIGINT|bigint|Valeur numérique exacte avec une précision 19 (si signée) ou 20 (si non signée) et une échelle 0 (signée : – 2 [63] < =  *n*  < = 2 [63] – 1, non signé : 0 < =  *n*  < = 2 [64] – 1) [3], [9].|  
-|SQL_BINARY|BINAIRE (*n*)|Données binaires de longueur fixe  *n* . [ 9]|  
-|SQL_VARBINARY|VARBINARY (*n*)|Données binaires de longueur variable de la longueur maximale de  *n* . La valeur maximale est définie par l’utilisateur. [9]|  
+|SQL_TINYINT|TINYINT|Valeur numérique exacte avec une précision de 3 et une échelle 0 (signée : – 128 < = *n* < = 127, non signée : 0 < = *n* < = 255) [3].|  
+_BIGINT|bigint|Valeur numérique exacte avec une précision 19 (si signée) ou 20 (si non signée) et une échelle 0 (signée : – 2 [63] < = *n* < = 2 [63] – 1, non signé : 0 < = *n* < = 2 [64] – 1) [3], [9].|  
+|SQL_BINARY|BINAIRE (*n*)|Données binaires de longueur fixe *n*. [ 9]|  
+|SQL_VARBINARY|VARBINARY (*n*)|Données binaires de longueur variable de la longueur maximale de *n*. La valeur maximale est définie par l’utilisateur. [9]|  
 |SQL_LONGVARBINARY|VARBINARY LONG|Données binaires de longueur variable. Longueur maximale est la source de données. [9]|  
 |SQL_TYPE_DATE [6]|DATE|Année, mois et champs jour conformes aux règles du calendrier grégorien. (Consultez [contraintes du calendrier grégorien](../../../odbc/reference/appendixes/constraints-of-the-gregorian-calendar.md), plus loin dans cette annexe.)|  
 |SQL_TYPE_TIME [6]|HEURE (*p*)|Heure, minute et seconde champs, avec les valeurs valides pour les heures de 00 à 23, les valeurs valides de 00 à 59 minutes et les valeurs valides pour les secondes de 00 à 61. Précision *p* indique la précision en secondes.|  
@@ -91,7 +88,7 @@ _INTERVAL_MINUTE_TO_SECOND [7]|MINUTES d’intervalle (*p*) à la seconde (*q*)|
   
  [5] en fonction de l’implémentation, la précision de SQL_FLOAT peut être 24 ou 53 : s’il s’agit de 24, le type de données SQL_FLOAT est le même que SQL_REAL ; s’il est 53, le type de données SQL_FLOAT est le même que SQL_DOUBLE.  
   
- [6] dans ODBC 3*.x*, les types de données SQL date, time et timestamp sont SQL_TYPE_DATE, SQL_TYPE_TIME et SQL_TYPE_TIMESTAMP, respectivement ; dans ODBC 2. *x*, les types de données sont SQL_DATE, SQL_TIME et SQL_TIMESTAMP.  
+ [6] dans ODBC 3 *.x*, les types de données SQL date, time et timestamp sont SQL_TYPE_DATE, SQL_TYPE_TIME et SQL_TYPE_TIMESTAMP, respectivement ; dans ODBC 2. *x*, les types de données sont SQL_DATE, SQL_TIME et SQL_TIMESTAMP.  
   
  [7] pour plus d’informations sur les types de données SQL intervalle, consultez le [Types de données Interval](../../../odbc/reference/appendixes/interval-data-types.md) section, plus loin dans cette annexe.  
   

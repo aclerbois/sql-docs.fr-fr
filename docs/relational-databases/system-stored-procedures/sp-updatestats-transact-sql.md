@@ -1,16 +1,14 @@
 ---
 title: sp_updatestats (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/25/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_updatestats_TSQL
@@ -20,23 +18,23 @@ dev_langs:
 helpviewer_keywords:
 - sp_updatestats
 ms.assetid: 01184651-6e61-45d9-a502-366fecca0ee4
-caps.latest.revision: 
+caps.latest.revision: 45
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 9a735dd514a7a7ca2b99dcbd4db92e165266bc2c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 895c3fd65ac6cad3a0ce67dee54cfe8cf1070ea4
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spupdatestats-transact-sql"></a>sp_updatestats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Exécute la procédure UPDATE STATISTICS sur toutes les tables définies par l'utilisateur et les tables internes de la base de données active.  
   
- Pour plus d’informations sur les statistiques de mise à jour, consultez [UPDATE STATISTICS &#40; Transact-SQL &#41; ](../../t-sql/statements/update-statistics-transact-sql.md). Pour plus d’informations sur les statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md).  
+ Pour plus d’informations sur les statistiques de mise à jour, consultez [UPDATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/update-statistics-transact-sql.md). Pour plus d’informations sur les statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md).  
     
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -51,7 +49,7 @@ sp_updatestats [ [ @resample = ] 'resample']
  0 (réussite) ou 1 (échec)  
   
 ## <a name="arguments"></a>Arguments  
- [  **@resample**  =] **'resample'**  
+ [ **@resample** =] **'resample'**  
  Spécifie que **sp_updatestats** utilisera l’option RESAMPLE de le [UPDATE STATISTICS](../../t-sql/statements/update-statistics-transact-sql.md) instruction. Si **'resample'** n’est pas spécifié, **sp_updatestats** met à jour des statistiques à l’aide de l’échantillonnage par défaut. **Rééchantillonner** est **varchar(8)** avec la valeur par défaut non.  
   
 ## <a name="remarks"></a>Notes  
@@ -63,9 +61,9 @@ sp_updatestats [ [ @resample = ] 'resample']
   
  **sp_updatestats** peut déclencher une recompilation des procédures stockées ou autres codes compilés. Toutefois, **sp_updatestats** ne peut pas provoquer de recompilation si seul un plan de requête est possible pour les tables référencées et les index sur ces derniers. Une recompilation serait inutile dans ce cas, même si les statistiques sont mises à jour.  
   
- Pour les bases de données avec un niveau de compatibilité inférieur à 90, l’exécution de **sp_updatestats** ne conserve pas le dernier paramètre NORECOMPUTE pour des statistiques spécifiques. Pour les bases de données avec un niveau de compatibilité supérieur ou égal à 90, sp_updatestats conserve la dernière option NORECOMPUTE pour des statistiques spécifiques. Pour plus d’informations sur la désactivation et réactivation des mises à jour des statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md).  
+ Pour les bases de données avec un niveau de compatibilité inférieur à 90, l’exécution de **sp_updatestats** ne conserve pas le dernier paramètre NORECOMPUTE pour des statistiques spécifiques. Pour les bases de données avec un niveau de compatibilité supérieur ou égal à 90, sp_updatestats conserve la dernière option NORECOMPUTE pour des statistiques spécifiques. Pour plus d’informations sur la désactivation et la réactivation des mises à jour des statistiques, consultez [Statistiques](../../relational-databases/statistics/statistics.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance dans le **sysadmin** rôle serveur fixe, ou la propriété de la base de données (**dbo**).  
   
 ## <a name="examples"></a>Exemples  
@@ -82,8 +80,8 @@ EXEC sp_updatestats;
  [CREATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/create-statistics-transact-sql.md)   
  [DBCC SHOW_STATISTICS &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-show-statistics-transact-sql.md)   
  [DROP STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/drop-statistics-transact-sql.md)   
- [sp_autostats &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-autostats-transact-sql.md)   
- [sp_createstats &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-createstats-transact-sql.md)   
+ [sp_autostats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-autostats-transact-sql.md)   
+ [sp_createstats &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-createstats-transact-sql.md)   
  [UPDATE STATISTICS &#40;Transact-SQL&#41;](../../t-sql/statements/update-statistics-transact-sql.md)   
  [Procédures stockées système](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   

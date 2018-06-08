@@ -1,16 +1,15 @@
 ---
 title: Fonction FLOOR (XQuery) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/09/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - floor function [XQuery]
 - fn:floor function
 ms.assetid: 4ace57dd-b66e-4b60-a2b9-a1b0f1a0831d
-caps.latest.revision: 
+caps.latest.revision: 27
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e54241fde9a0c97fe66687c88d82812c7ce0d5eb
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4f0ec0cc8b4a6e958767c805a5bc7ec68678f753
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="numeric-values-functions---floor"></a>Fonctions de valeurs numériques - floor
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -63,8 +61,8 @@ fn:floor ($arg as numeric?) as numeric?
 -   Le **floor()** fonction mappe toutes les valeurs entières à xs : decimal.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Ceiling, fonction &#40; XQuery &#41;](../xquery/numeric-values-functions-ceiling.md)   
- [Round (fonction) &#40; XQuery &#41;](../xquery/numeric-values-functions-round.md)   
+ [Fonction CEILING &#40;XQuery&#41;](../xquery/numeric-values-functions-ceiling.md)   
+ [Fonction Round &#40;XQuery&#41;](../xquery/numeric-values-functions-round.md)   
  [Fonctions XQuery impliquant le type de données xml](../xquery/xquery-functions-against-the-xml-data-type.md)  
   
   

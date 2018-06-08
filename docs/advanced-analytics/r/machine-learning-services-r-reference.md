@@ -1,24 +1,18 @@
 ---
 title: Référence API pour les Services de SQL Server Machine Learning | Documents Microsoft
-ms.custom: ''
-ms.date: 10/31/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 77f0e3af1281cd4f6249defff820ccb7b7f5f238
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 8f0714f223145acd65a0dd57d02b105e5ec2aa0e
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563648"
 ---
 # <a name="api-reference-for-sql-server-machine-learning-services"></a>Référence API pour les Services de SQL Server Machine Learning
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -38,7 +32,7 @@ Dans la plupart des cas, SQL Server utilise les mêmes bibliothèques R et Pytho
 
     Algorithmes évolutives qui prennent en charge de plusieurs sources de données et les contextes de calcul à distance.
 
-+ [MicrosoftML](https://docs.microsoft.com/machine-learning-serverr-reference/microsoftml/microsoftml-package)
++ [MicrosoftML](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package)
 
     Rapide et évolutif, apprentissage algorithmes et les transformations de RevoScaleR nécessite de r.
 

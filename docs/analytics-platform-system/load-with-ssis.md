@@ -1,27 +1,22 @@
 ---
-title: "Charger des données avec Integration Services"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Fournit des informations de référence et de déploiement pour charger des données dans SQL Server Parallel Data Warehouse à l’aide des packages SQL Server Integration Services (SSIS)."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: 9bdb559a-a91c-4342-8a6e-438cb93f975c
-caps.latest.revision: "69"
-ms.openlocfilehash: f00f72886a10c8be05db6a28adf3df89f8116081
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Charger avec Integration Services - Parallel Data Warehouse | Documents Microsoft
+description: Fournit des informations de référence et de déploiement pour le chargement des données dans Parallel Data Warehouse (PDW) à l’aide des packages SQL Server Integration Services (SSIS).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 718a076822a4304e0ba951f3ca1903bb7c009e17
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34586061"
 ---
-# <a name="load-data-with-integration-services"></a>Charger les données avec Integration Services
+# <a name="load-data-with-integration-services-to-parallel-data-warehouse"></a>Charger les données avec les Services d’intégration Parallel Data Warehouse
 Fournit des informations de référence et de déploiement pour charger des données dans SQL Server Parallel Data Warehouse à l’aide des packages SQL Server Integration Services (SSIS).  
   
 <!-- MISSING LINKS
@@ -34,7 +29,7 @@ Before you can start loading data, use the following topics to install the Integ
   
 -   [Connect With Integration Services for loading](connect-with-ssis-for-loading.md)  
   
-For general information about developing Integration Services packages, see [Designing and Implementing Packages (Integration Services)](http://msdn.microsoft.com/library/ms141091&#40;v=sql11&#40;.aspx) on MSDN.  
+For general information about developing Integration Services packages, see [Designing and Implementing Packages (Integration Services)](http://msdn.microsoft.com/library/ms141091\(v=sql11\).aspx) on MSDN.  
 
 -->
   
@@ -59,12 +54,12 @@ Par défaut, BIDS s’exécute des packages à l’aide des fichiers binaires 64
 Pour exécuter le package à partir de SQL Server Data Tools, avec le bouton droit sur votre package et choisissez **exécuter le Package**.  
   
 ### <a name="run-from-powershell"></a>Exécuter à partir de PowerShell  
-Pour exécuter le package à partir de Windows PowerShell, à l’aide de la **dtexec** utilitaire :`dtexec /FILE <packagePath>`  
+Pour exécuter le package à partir de Windows PowerShell, à l’aide de la **dtexec** utilitaire : `dtexec /FILE <packagePath>`  
   
 Par exemple, `dtexec /FILE "C:\Users\User1\Desktop\Package.dtsx"`  
   
 ### <a name="run-from-a-windows-command-prompt"></a>Exécuter à partir de Windows une invite de commandes 
-Pour exécuter le package à partir d’une invite de commandes Windows, à l’aide de la **dtexec** utilitaire :`dtexec /FILE <packagePath>`  
+Pour exécuter le package à partir d’une invite de commandes Windows, à l’aide de la **dtexec** utilitaire : `dtexec /FILE <packagePath>`  
   
 Par exemple : `dtexec /FILE "C:\Users\User1\Desktop\Package.dtsx"`  
   
@@ -253,16 +248,16 @@ Exécutez le package sur votre ordinateur Integration Services.
   
 ## <a name="see-also"></a>Voir aussi  
 [Créer une tâche de script qui utilise l’adaptateur de destination SSIS PDW](create-ssis-script-task-using-pdw-destination-adapter.md)  
-[SQL Server Integration Services](http://msdn.microsoft.com/library/ms141026&#40;v=sql11&#40;.aspx)  
-[Conception et implémentation de Packages (Integration Services)](http://msdn.microsoft.com/library/ms141091&#40;v=sql11&#40;.aspx)  
-[Didacticiel : Création d’un Package de base à l’aide d’un Assistant](http://technet.microsoft.com/library/ms365330&#40;v=sql11&#40;.aspx)  
+[SQL Server Integration Services](http://msdn.microsoft.com/library/ms141026\(v=sql11\).aspx)  
+[Conception et implémentation de Packages (Integration Services)](http://msdn.microsoft.com/library/ms141091\(v=sql11\).aspx)  
+[Didacticiel : Création d’un Package de base à l’aide d’un Assistant](http://technet.microsoft.com/library/ms365330\(v=sql11\).aspx)  
 [Mise en route (Integration Services)](http://go.microsoft.com/fwlink/?LinkId=202412)  
 [Exemple de génération de Package dynamique](http://go.microsoft.com/fwlink/?LinkId=202413)  
 [Conception de vos Packages SSIS pour le parallélisme (vidéo liée à SQL Server)](http://msdn.microsoft.com/library/dd795221.aspx)  
 [Microsoft SQL Server Community exemples : Services d’intégration](http://go.microsoft.com/fwlink/?LinkId=202415)  
-[Amélioration des chargements incrémentiels avec la Capture de données modifiées](http://msdn.microsoft.com/library/bb895315&#40;v=sql11&#40;.aspx)  
-[Transformation de dimension à variation lente](http://msdn.microsoft.com/library/ms141715&#40;v=sql11&#40;.aspx)  
-[Tâche d’insertion en bloc](http://msdn.microsoft.com/library/ms141239&#40;v=sql11&#40;.aspx)  
+[Amélioration des chargements incrémentiels avec la Capture de données modifiées](http://msdn.microsoft.com/library/bb895315\(v=sql11\).aspx)  
+[Transformation de dimension à variation lente](http://msdn.microsoft.com/library/ms141715\(v=sql11\).aspx)  
+[Tâche d’insertion en bloc](http://msdn.microsoft.com/library/ms141239\(v=sql11\).aspx)  
   
 <!-- MISSING LINKS
 [Grant permissions to load data](grant-permissions-to-load-data.md)  

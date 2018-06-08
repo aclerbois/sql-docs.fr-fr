@@ -1,25 +1,22 @@
 ---
-title: "Configurer le groupe de disponibilité de SQL Server du Cluster Ubuntu | Documents Microsoft"
-description: 
+title: Configurer le groupe de disponibilité de SQL Server du Cluster Ubuntu | Documents Microsoft
+description: ''
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.date: 01/30/2018
+ms.date: 04/30/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: dd0d6fb9-df0a-41b9-9f22-9b558b2b2233
-ms.workload: Inactive
-ms.openlocfilehash: 5f52c5f83ca91b196f0bf2f05e98fb73133b4c8a
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: d9e41a09fdd76f060fcf34d33d7463984ae942a6
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-ubuntu-cluster-and-availability-group-resource"></a>Configurer le Cluster d’Ubuntu et de ressources du groupe de disponibilité
 
@@ -32,7 +29,7 @@ Ce document explique comment créer un cluster de trois nœuds sur Ubuntu et ajo
 
 Les sections suivantes les différentes étapes pour configurer une solution de cluster de basculement. 
 
-## <a name="roadmap"></a>Roadmap
+## <a name="roadmap"></a>Feuille de route
 
 Les étapes pour créer un groupe de disponibilité sur des serveurs Linux pour une haute disponibilité sont différentes des étapes sur un cluster de basculement Windows Server. La liste suivante décrit les étapes principales : 
 
@@ -51,7 +48,7 @@ Les étapes pour créer un groupe de disponibilité sur des serveurs Linux pour 
 
 5.  [Ajouter le groupe de disponibilité en tant que ressource dans le cluster](sql-server-linux-availability-group-cluster-ubuntu.md#create-availability-group-resource). 
 
-## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer STIMULATEUR sur chaque nœud de cluster
+## <a name="install-and-configure-pacemaker-on-each-cluster-node"></a>Installer et configurer Pacemaker sur chaque nœud de cluster
 
 1. Sur tous les nœuds, ouvrez les ports du pare-feu. Ouvrez le port pour le service de haute disponibilité STIMULATEUR, instance de SQL Server et le point de terminaison de groupe de disponibilité. Le port TCP par défaut pour le serveur exécutant SQL Server est 1433.  
 
@@ -148,19 +145,30 @@ sudo pcs property set stonith-enabled=false
 >[!IMPORTANT]
 >La désactivation de STONITH est uniquement pour des tests. Si vous envisagez d’utiliser STIMULATEUR dans un environnement de production, vous devez planifier une implémentation STONITH en fonction de votre environnement et qu’il soit activé. Notez qu’actuellement il n’y aucun agent de délimitation Hyper-V ou des environnements de cloud (y compris Azure). Par conséquent, le fournisseur de cluster n’offre pas de prise en charge des clusters de production en cours d’exécution dans ces environnements. 
 
-## <a name="set-cluster-property-start-failure-is-fatal-to-false"></a>Définissez la propriété cluster start-échec-est-irrécupérable false
+## <a name="set-cluster-property-cluster-recheck-interval"></a>Définir la propriété cluster cluster-revérification-intervalle
 
-`start-failure-is-fatal` Indique si un échec pour démarrer une ressource sur un nœud empêche d’autres tentatives de démarrage sur ce nœud. Lorsque la valeur `false`, le cluster décide s’il faut essayer de démarrer sur le même nœud en fonction d’actuelle count et migration seuil d’échec la ressource. Par conséquent, après que le basculement se produit, les tentatives de STIMULATEUR à partir de la disponibilité ressource groupe sur l’ancien principal une fois que l’instance SQL est disponible. STIMULATEUR rétrograde le réplica de base de données secondaire, et il rejoint automatiquement le groupe de disponibilité. 
+`cluster-recheck-interval` Indique l’intervalle d’interrogation à laquelle le cluster vérifie les modifications dans les paramètres des ressources, des contraintes ou des autres options de cluster. Si un réplica tombe en panne, le cluster tente de redémarrer le réplica à un intervalle est lié par le `failure-timeout` valeur et le `cluster-recheck-interval` valeur. Par exemple, si `failure-timeout` est défini à 60 secondes et `cluster-recheck-interval` est définie à 120 secondes, le redémarrage sera tenté à un intervalle est supérieur à 60 secondes, mais moins de 120 secondes. Nous vous recommandons de définir d’expiration de l’échec à 60 s et de cluster-revérification-intervalle à une valeur qui est supérieure à 60 secondes. Paramètre d’intervalle de revérification de cluster sur une petite valeur n’est pas recommandé.
 
-Pour mettre à jour la valeur de propriété à `false` exécuter le script suivant :
+Pour mettre à jour la valeur de propriété à `2 minutes` exécuter :
 
 ```bash
-sudo pcs property set start-failure-is-fatal=false
+sudo pcs property set cluster-recheck-interval=2min
 ```
 
-
->[!WARNING]
->Après un basculement automatique, lorsque `start-failure-is-fatal = true` le Gestionnaire de ressources tente de démarrer la ressource. En cas d’échec de la première tentative vous devez exécuter manuellement `pcs resource cleanup <resourceName>` pour nettoyer le nombre d’échecs de ressources et de réinitialiser la configuration.
+> [!IMPORTANT] 
+> Si vous disposez déjà d’une ressource de groupe de disponibilité gérée par un cluster STIMULATEUR, notez que toutes les distributions qui utilisent le dernier package 1.1.18-11.el7 STIMULATEUR disponible introduisent un changement de comportement pour le cluster start-échec-est-irrécupérable paramètre lorsque son la valeur est false. Cette modification affecte le flux de travail de basculement. Si un réplica principal connaît une panne, le cluster est prévu pour basculer vers un des réplicas secondaires disponibles. Au lieu de cela, les utilisateurs Remarquez que le cluster conserve la tentative de démarrage du réplica principal a échoué. Si ce principal est jamais en ligne (en raison d’une panne permanente), le cluster ne bascule vers un autre réplica secondaire disponible. Grâce à cette modification, une configuration précédemment recommandée pour définir le début-échec-est-irrécupérable n’est plus valide et que le paramètre doit être restauré à sa valeur par défaut de `true`. En outre, la ressource de groupe de disponibilité doit être mis à jour pour inclure le `failover-timeout` propriété. 
+>
+>Pour mettre à jour la valeur de propriété à `true` exécuter :
+>
+>```bash
+>sudo pcs property set start-failure-is-fatal=true
+>```
+>
+>Mettre à jour de votre propriété de ressource de groupe de disponibilité existante `failure-timeout` à `60s` exécuter (remplacez `ag1` par le nom de votre ressource de groupe de disponibilité) :
+>
+>```bash
+>pcs resource update ag1 meta failure-timeout=60s
+>```
 
 ## <a name="install-sql-server-resource-agent-for-integration-with-pacemaker"></a>Installer l’agent de ressources SQL Server pour l’intégration avec STIMULATEUR
 
@@ -179,7 +187,7 @@ sudo apt-get install mssql-server-ha
 Pour créer la ressource de groupe de disponibilité, utilisez `pcs resource create` de commandes et définissez les propriétés de ressource. Commande ci-dessous crée un `ocf:mssql:ag` maître/esclave pour le groupe de disponibilité avec le nom de ressource de type `ag1`. 
 
 ```bash
-sudo pcs resource create ag_cluster ocf:mssql:ag ag_name=ag1 --master meta notify=true
+sudo pcs resource create ag_cluster ocf:mssql:ag ag_name=ag1 meta failure-timeout=30s --master meta notify=true
 
 ```
 

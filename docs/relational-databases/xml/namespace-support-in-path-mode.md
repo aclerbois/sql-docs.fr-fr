@@ -1,35 +1,32 @@
 ---
-title: "Prise en charge d’espace de noms en mode PATH | Microsoft Docs"
-ms.custom: 
+title: Prise en charge d’espace de noms en mode PATH | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - PATH FOR XML mode, namespace support
 - namespaces [XML in SQL Server]
 ms.assetid: 5f128ea2-0ceb-4b23-bce7-c8b3fd615466
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cc700d8b31d9348ca3411a6d399671dfde965b20
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 350a2089e59eb0c0e2b26fbf051f40b77b686228
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="namespace-support-in-path-mode"></a>Prise en charge d'espace de noms en mode PATH
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-La prise en charge des espaces de noms en mode PATH est fournie à l'aide de WITH NAMESPACES. Par exemple, la requête suivante démontre l'utilisation de la syntaxe WITH NAMESPACES pour déclarer un espace de noms ("a:") qui peut ensuite être utilisé dans l'instruction SELECT ultérieure :  
+  La prise en charge des espaces de noms en mode PATH est fournie à l'aide de WITH NAMESPACES. Par exemple, la requête suivante démontre l'utilisation de la syntaxe WITH NAMESPACES pour déclarer un espace de noms ("a:") qui peut ensuite être utilisé dans l'instruction SELECT ultérieure :  
   
 ```  
 WITH XMLNAMESPACES('a' as a)  

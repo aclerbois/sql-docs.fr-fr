@@ -1,31 +1,28 @@
 ---
-title: "GUID de séquences d’échappement | Documents Microsoft"
-ms.custom: 
+title: GUID de séquences d’échappement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC escape sequences [ODBC], GUID
 - escape sequences [ODBC], guid
 - guid escape sequence [ODBC]
 ms.assetid: 71d43ef9-4a31-493e-b9e0-f864e9ef3ce6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 086161b4d0dd96f2da3cf12e6b88665ceeda42ae
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 00648aba76f64bc999c4df2a1f60de6e8c1010a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="guid-escape-sequences"></a>Séquences d’échappement GUID
 ODBC utilise les séquences d’échappement pour les littéraux de GUID. La syntaxe de cette séquence d’échappement est comme suit :  
@@ -34,7 +31,7 @@ ODBC utilise les séquences d’échappement pour les littéraux de GUID. La syn
 {guid 'nnnnnnnn-nnnn-nnnn-nnnn-nnnnnnnnnnnn'}  
 ```  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Dans la notation BNF, la syntaxe est la suivante :  
   
  *Échappement de guid de ODBC* :: =  

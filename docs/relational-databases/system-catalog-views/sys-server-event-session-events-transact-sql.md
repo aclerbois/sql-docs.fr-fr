@@ -1,16 +1,14 @@
 ---
 title: Sys.server_event_session_events (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - server_event_session_events
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sys.server_event_session_events catalog view
 - xe
 ms.assetid: 75986e91-1fc7-4f14-98ac-4e90154a74db
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ea5b8f9396b989557e9a7758b0c15888951bb8d
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: d1e1422d0b32df504e42c2a94742533bff5fdbc0
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysservereventsessionevents-transact-sql"></a>sys.server_event_session_events (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,10 +43,10 @@ ms.lasthandoff: 11/27/2017
 |name|**sysname**|Nom de l’événement. N'accepte pas la valeur NULL.|  
 |package|**sysname**|Nom du package d'événement qui contient l'événement. N'accepte pas la valeur NULL.|  
 |module|**sysname**|Nom du module qui contient l'événement. N'accepte pas la valeur NULL.|  
-|prédicat|**nvarchar (3000)**|L’expression de prédicat est appliquée à l’événement. Autorise la valeur NULL.|  
-|predicate_xml|**nvarchar (3000)**|Expression de prédicat XML qui est appliquée à l'événement. Autorise la valeur NULL.|  
+|prédicat|**nvarchar(3000)**|L’expression de prédicat est appliquée à l’événement. Autorise la valeur NULL.|  
+|predicate_xml|**nvarchar(3000)**|Expression de prédicat XML qui est appliquée à l'événement. Autorise la valeur NULL.|  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  requièrent l'autorisation VIEW SERVER STATE sur le serveur.  
   
 ## <a name="remarks"></a>Notes  
@@ -57,7 +54,7 @@ ms.lasthandoff: 11/27/2017
   
 ||||  
 |-|-|-|  
-|De|Pour|Relation|  
+|From|Pour|Relation|  
 |sys.server_event_session_events.event_session_id|Sys.server_event_sessions.event_session_id|Plusieurs-à-un|  
   
 ## <a name="see-also"></a>Voir aussi  

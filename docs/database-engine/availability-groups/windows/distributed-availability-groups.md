@@ -1,31 +1,30 @@
 ---
-title: "Groupes de disponibilité distribués (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Groupes de disponibilité distribués (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/12/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: Availability Groups [SQL Server], distributed
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- Availability Groups [SQL Server], distributed
+ms.assetid: ''
+caps.latest.revision: ''
 author: allanhirt
-ms.author: mikeray
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b91fb1cb4699158b69db18a9a86e407f1de97cc6
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 0b2f8ba15720726e177884aa4481fb43dae6084f
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769335"
 ---
 # <a name="distributed-availability-groups"></a>Groupes de disponibilité distribués
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Les groupes de disponibilité distribués sont une nouvelle fonctionnalité introduite dans SQL Server 2016, et constituent une variante de la fonctionnalité de groupes de disponibilité Always On existante. Cet article clarifie certains aspects des groupes de disponibilité distribués et complète la [documentation de SQL Server](https://docs.microsoft.com/en-us/sql/sql-server/sql-server-technical-documentation) existante.
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Les groupes de disponibilité distribués sont une nouvelle fonctionnalité introduite dans SQL Server 2016, et constituent une variante de la fonctionnalité de groupes de disponibilité Always On existante. Cet article clarifie certains aspects des groupes de disponibilité distribués et complète la [documentation de SQL Server](https://docs.microsoft.com/sql/sql-server/sql-server-technical-documentation) existante.
 
 > [!NOTE]
 > « DAG » n’est pas l’abréviation officielle de *distributed availability group* (groupe de disponibilité distribué), car elle est déjà utilisée pour la fonctionnalité de groupe de disponibilité de base de données Exchange. Cette fonctionnalité Exchange n’a aucune relation avec les groupes de disponibilité SQL Server ou les groupes de disponibilité distribués.
@@ -49,10 +48,13 @@ Vous pouvez configurer le déplacement des données dans des groupes de disponib
 
 ![Groupe de disponibilité distribué et son déplacement de données][2]
 
-Pour que le réplica principal d’AG 2 accepte les insertions, les mises à jour et les suppressions, vous n’avez d’autre choix que de basculer manuellement le groupe de disponibilité distribué à partir d’AG 1. Dans la figure précédente, étant donné qu’AG 1 contient la copie accessible en écriture de la base de données, émettre un basculement fait d’AG 2 le groupe de disponibilité qui peut gérer les insertions, les mises à jour et les suppressions. Pour plus d’informations sur la façon de basculer un groupe de disponibilité distribué vers un autre, consultez [Basculer vers un groupe de disponibilité secondaire]( https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/distributed-availability-groups-always-on-availability-groups).
+Pour que le réplica principal d’AG 2 accepte les insertions, les mises à jour et les suppressions, vous n’avez d’autre choix que de basculer manuellement le groupe de disponibilité distribué à partir d’AG 1. Dans la figure précédente, étant donné qu’AG 1 contient la copie accessible en écriture de la base de données, émettre un basculement fait d’AG 2 le groupe de disponibilité qui peut gérer les insertions, les mises à jour et les suppressions. Pour plus d’informations sur la façon de basculer un groupe de disponibilité distribué vers un autre, consultez [Basculer vers un groupe de disponibilité secondaire]( https://docs.microsoft.com/sql/database-engine/availability-groups/windows/distributed-availability-groups-always-on-availability-groups).
 
 > [!NOTE]
 > Les groupes de disponibilité distribués dans SQL Server 2016 prennent en charge le basculement uniquement depuis un groupe de disponibilité vers un autre à l’aide de l’option FORCE_FAILOVER_ALLOW_DATA_LOSS.
+
+> [!NOTE]
+> Quand la réplication transactionnelle est utilisée avec les groupes de disponibilité distribués, le réplica redirecteur ne peut pas être configuré comme serveur de publication.
 
 ## <a name="sql-server-version-and-edition-requirements-for-distributed-availability-groups"></a>Exigences des version et éditions de SQL Server pour les groupes de disponibilité distribués
 
@@ -88,7 +90,7 @@ Les clusters WSFC individuels et leurs groupes de disponibilité correspondants 
 
 Si les deux clusters WSFC sont joints au même domaine (domaines non approuvés), aucune opération particulière n’est nécessaire de votre part quand vous créez le groupe de disponibilité distribué. Pour les groupes de disponibilité et les clusters WSFC qui ne sont pas joints au même domaine, utilisez des certificats pour que le groupe de disponibilité distribué fonctionne, à l’image de la création d’un groupe de disponibilité pour un groupe de disponibilité indépendant du domaine. Pour savoir comment configurer des certificats pour un groupe de disponibilité distribué, suivez les étapes 3 à 13 de la section [Créer un groupe de disponibilité indépendant du domaine](domain-independent-availability-groups.md#create-a-domain-independent-availability-group).
 
-Dans le cas d’un groupe de disponibilité distribué, le réplica principal de chaque groupe de disponibilité sous-jacent doit disposer des certificats des autres réplicas principaux. Si vous avez déjà des points de terminaison qui n’utilisent pas de certificats, reconfigurez ces points de terminaison à l’aide de l’instruction [ALTER ENDPOINT](https://docs.microsoft.com/en-us/sql/t-sql/statements/alter-endpoint-transact-sql) afin de refléter l’utilisation de certificats.
+Dans le cas d’un groupe de disponibilité distribué, le réplica principal de chaque groupe de disponibilité sous-jacent doit disposer des certificats des autres réplicas principaux. Si vous avez déjà des points de terminaison qui n’utilisent pas de certificats, reconfigurez ces points de terminaison à l’aide de l’instruction [ALTER ENDPOINT](https://docs.microsoft.com/sql/t-sql/statements/alter-endpoint-transact-sql) afin de refléter l’utilisation de certificats.
 
 ## <a name="distributed-availability-group-usage-scenarios"></a>Scénarios d’utilisation des groupes de disponibilité distribués
 
@@ -104,7 +106,7 @@ Un groupe de disponibilité traditionnel requiert que tous les serveurs fassent 
 
 ![Groupe de disponibilité traditionnel multisite][4]
 
-Les groupes de disponibilité distribués offrent un scénario de déploiement plus flexible pour les groupes de disponibilité qui couvrent plusieurs centres de données. Vous pouvez même utiliser des groupes de disponibilité distribués là où des fonctionnalités telles que la [copie des journaux de transaction]( https://docs.microsoft.com/en-us/sql/database-engine/log-shipping/about-log-shipping-sql-server) étaient utilisées dans le passé. Toutefois, contrairement aux groupes de disponibilité traditionnels, les groupes de disponibilité distribués ne peuvent pas connaître d’application de transactions différée. Cela signifie que les groupes de disponibilité ou les groupes de disponibilité distribués ne peuvent être d’aucun secours si une erreur humaine entraîne une mise à jour ou une suppression de données incorrecte.
+Les groupes de disponibilité distribués offrent un scénario de déploiement plus flexible pour les groupes de disponibilité qui couvrent plusieurs centres de données. Vous pouvez même utiliser des groupes de disponibilité distribués là où des fonctionnalités telles que la [copie des journaux de transaction]( https://docs.microsoft.com/sql/database-engine/log-shipping/about-log-shipping-sql-server) étaient utilisées dans le passé. Toutefois, contrairement aux groupes de disponibilité traditionnels, les groupes de disponibilité distribués ne peuvent pas connaître d’application de transactions différée. Cela signifie que les groupes de disponibilité ou les groupes de disponibilité distribués ne peuvent être d’aucun secours si une erreur humaine entraîne une mise à jour ou une suppression de données incorrecte.
 
 Les groupes de disponibilité distribués sont faiblement couplés, ce qui signifie dans ce cas qu’ils ne nécessitent pas de cluster WSFC et qu’ils sont gérés par SQL Server. Étant donné que les clusters WSFC sont gérés de façon individuelle et que la synchronisation est principalement asynchrone entre les deux groupes de disponibilité, il est plus facile de configurer la récupération d’urgence sur un autre site. Les réplicas principaux dans chaque groupe de disponibilité synchronisent leurs propres réplicas secondaires.
 
@@ -147,7 +149,7 @@ Dans la figure suivante, AG 1 fait office de réplica principal pour deux groupe
 
 Dans les deux exemples précédents, les trois groupes de disponibilité peuvent comprendre jusqu’à 27 réplicas en tout, qui peuvent tous être utilisés pour des requêtes en lecture seule. 
 
-Le [routage en lecture seule]( https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server) ne fonctionne pas complètement avec les groupes de disponibilité distribués. Plus spécifiquement :
+Le [routage en lecture seule]( https://docs.microsoft.com/sql/database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server) ne fonctionne pas complètement avec les groupes de disponibilité distribués. Plus spécifiquement :
 
 1. Le routage en lecture seule peut être configuré et fonctionne pour le groupe de disponibilité principal du groupe de disponibilité distribué. 
 2. Le routage en lecture seule peut être configuré, mais ne fonctionne pas pour le groupe de disponibilité secondaire du groupe de disponibilité distribué. Toutes les requêtes, si elles utilisent l’écouteur pour se connecter au groupe de disponibilité secondaire, accèdent au réplica principal du groupe de disponibilité secondaire. Sinon, vous devez configurer chaque réplica pour autoriser toutes les connexions en tant que réplica secondaire et y accéder directement. Toutefois, le routage en lecture seule fonctionne si le groupe de disponibilité secondaire devient principal après un basculement. Ce comportement pourrait être modifié dans une mise à jour vers SQL Server 2016 ou dans une future version de SQL Server.
@@ -155,7 +157,7 @@ Le [routage en lecture seule]( https://docs.microsoft.com/en-us/sql/database-eng
 
 ## <a name="initialize-secondary-availability-groups-in-a-distributed-availability-group"></a>Initialiser des groupes de disponibilité secondaires dans un groupe de disponibilité distribué
 
-Bénéficiant de [l’amorçage automatique]( https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/automatically-initialize-always-on-availability-group), les groupes de disponibilité distribués constituent la méthode principale pour initialiser le réplica principal sur le deuxième groupe de disponibilité. Une restauration complète de la base de données sur le réplica principal du deuxième groupe de disponibilité est possible si vous effectuez les opérations suivantes :
+Bénéficiant de [l’amorçage automatique]( https://docs.microsoft.com/sql/database-engine/availability-groups/windows/automatically-initialize-always-on-availability-group), les groupes de disponibilité distribués constituent la méthode principale pour initialiser le réplica principal sur le deuxième groupe de disponibilité. Une restauration complète de la base de données sur le réplica principal du deuxième groupe de disponibilité est possible si vous effectuez les opérations suivantes :
 
 1. Restaurez la sauvegarde de base de données à l’aide de WITH NORECOVERY.
 2. Si nécessaire, restaurez les sauvegardes de fichier journal appropriées à l’aide de WITH NORECOVERY.
@@ -166,7 +168,7 @@ Quand vous ajoutez le réplica principal du deuxième groupe de disponibilité a
 
 * La sortie dans `sys.dm_hadr_automatic_seeding` sur le réplica principal du deuxième groupe de disponibilité affiche un `current_state` de valeur FAILED avec le motif « Seeding Check Message Timeout » (Expiration du message de vérification de l’amorçage).
 
-* Le journal SQL Server actuel sur le réplica principal du deuxième groupe de disponibilité indique que l’amorçage a fonctionné et que les [LSN]( https://docs.microsoft.com/en-us/sql/relational-databases/sql-server-transaction-log-architecture-and-management-guide) ont été synchronisés.
+* Le journal SQL Server actuel sur le réplica principal du deuxième groupe de disponibilité indique que l’amorçage a fonctionné et que les [LSN]( https://docs.microsoft.com/sql/relational-databases/sql-server-transaction-log-architecture-and-management-guide) ont été synchronisés.
 
 * La sortie dans `sys.dm_hadr_automatic_seeding` sur le réplica principal du premier groupe de disponibilité indique que current_state a pour valeur COMPLETED. 
 

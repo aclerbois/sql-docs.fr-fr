@@ -1,35 +1,35 @@
 ---
-title: "Fonctions définies par l’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Fonctions définies par l’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 08/05/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - user-defined functions [SQL Server], components
 - user-defined functions [SQL Server], about user-defined functions
 ms.assetid: d7ddafab-f5a6-44b0-81d5-ba96425aada4
-caps.latest.revision: 
+caps.latest.revision: 23
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 03521903614a187ca0af708dd318bbc9b3ae599d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cc7cf4ed368b63c7b070873dda3d23fcce909f35
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34708997"
 ---
 # <a name="user-defined-functions"></a>Fonctions définies par l'utilisateur
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-À l'instar des fonctions dans les langages de programmation, les fonctions définies par l'utilisateur de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont des routines qui acceptent des paramètres, exécutent une action, par exemple un calcul complexe, et retournent le résultat de cette action sous forme de valeur. La valeur retournée peut être une valeur scalaire unique ou un jeu de résultats.  
+  À l'instar des fonctions dans les langages de programmation, les fonctions définies par l'utilisateur de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] sont des routines qui acceptent des paramètres, exécutent une action, par exemple un calcul complexe, et retournent le résultat de cette action sous forme de valeur. La valeur retournée peut être une valeur scalaire unique ou un jeu de résultats.  
    
 ##  <a name="Benefits"></a> Fonctions définies par l’utilisateur  
 Pourquoi les utiliser ? 
@@ -49,7 +49,7 @@ Pourquoi les utiliser ?
      Une opération qui filtre des données en fonction d'une contrainte complexe qui ne peut pas être exprimée dans une même expression scalaire peut être exprimée sous forme de fonction. La fonction peut ensuite être appelée dans la clause WHERE pour réduire le nombre de lignes envoyées aux clients.  
   
 > [!NOTE]
-> [!INCLUDE[tsql](../../includes/tsql-md.md)] définies par l'utilisateur figurant dans les requêtes peuvent être exécutées uniquement sur un thread (plan d'exécution en série).  
+> Les fonctions [!INCLUDE[tsql](../../includes/tsql-md.md)] définies par l'utilisateur figurant dans les requêtes peuvent être exécutées uniquement sur un thread (plan d'exécution en série).  
   
 ##  <a name="FunctionTypes"></a> Types de fonctions  
 **Fonction scalaire**  
@@ -63,7 +63,7 @@ Pourquoi les utiliser ?
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit de nombreuses fonctions système que vous pouvez utiliser pour effectuer diverses opérations. Elles ne peuvent pas être modifiées. Pour plus d’informations, consultez [Fonctions intégrées &#40;Transact-SQL&#41;](~/t-sql/functions/functions.md), [Fonctions stockées système &#40;Transact-SQL&#41;](~/relational-databases/system-functions/system-functions-for-transact-sql.md) et [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md).  
   
 ##  <a name="Guidelines"></a> Instructions  
- [!INCLUDE[tsql](../../includes/tsql-md.md)] qui provoquent l'annulation d'une instruction et continuent avec l'instruction suivante dans le module (comme les déclencheurs ou les procédures stockées) sont traitées différemment à l'intérieur d'une fonction. Dans les fonctions, ces erreurs provoquent l'arrêt de l'exécution de la fonction, lequel provoque à son tour l'annulation de l'instruction qui a invoqué la fonction.  
+ Les erreurs [!INCLUDE[tsql](../../includes/tsql-md.md)] qui provoquent l’annulation d’une instruction et la poursuite avec l’instruction suivante dans le module (comme les déclencheurs ou les procédures stockées) sont traitées différemment à l’intérieur d’une fonction. Dans les fonctions, ces erreurs provoquent l'arrêt de l'exécution de la fonction, lequel provoque à son tour l'annulation de l'instruction qui a invoqué la fonction.  
   
  Les instructions contenues dans un bloc BEGIN...END ne peuvent pas avoir d'effets secondaires. Les effets secondaires d'une fonction sont toutes les modifications définitives de l'état d'une ressource dont la portée s'étend hors de la fonction, comme la modification d'une table de base de données. Les instructions d'une fonction ne peuvent modifier que les objets locaux de cette fonction, tels les variables ou les curseurs locaux. Les modifications apportées aux tables de base de données, les opérations portant sur des curseurs non locaux par rapport à la fonction, l'envoi de courrier électronique, les tentatives de modification de catalogue et la génération d'un jeu de résultats retourné à l'utilisateur sont autant d'actions qui ne peuvent pas être exécutées dans une fonction.  
   

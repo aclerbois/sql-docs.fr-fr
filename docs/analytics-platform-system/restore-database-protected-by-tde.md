@@ -1,27 +1,21 @@
 ---
-title: "Restaurer une base de données protégée par chiffrement transparent des données dans l’entrepôt de données en parallèle"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Utilisez la procédure suivante pour restaurer une base de données est chiffrée à l’aide du chiffrement transparent des données."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: ffb681ca-8598-4614-b06c-660376333fc3
-caps.latest.revision: "4"
-ms.openlocfilehash: 5df3843a3e329901f8f77b65e5f6d4ff69cf6dbf
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Restaurer une base de données protégée par chiffrement transparent des données - Parallel Data Warehouse | Documents Microsoft
+description: Procédez comme suit pour restaurer une base de données est chiffrée à l’aide du chiffrement transparent des données dans Analytique plateforme système Parallel Data Warehouse.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: a791d4110dc70c506025f8f11fb06b9ba2e5dcb3
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="restore-a-database-protected-by-tde"></a>Restaurer une base de données protégée par chiffrement transparent des données
+# <a name="restore-a-database-protected-by-tde-in-parallel-data-warehouse"></a>Restaurer une base de données protégée par chiffrement transparent des données dans Parallel Data Warehouse
 Utilisez la procédure suivante pour restaurer une base de données est chiffrée à l’aide du chiffrement transparent des données.  
   
 Le [à l’aide de Transparent Data Encryption](transparent-data-encryption.md#using-tde) exemple compose du code pour activer le chiffrement transparent des données sur le `AdventureWorksPDW2012` base de données. Le code suivant continue de cet exemple, en créant une sauvegarde de la base de données sur le matériel de système de plateforme Analytique (APS) d’origine, puis de restaurer le certificat et la base de données sur un autre dispositif.  

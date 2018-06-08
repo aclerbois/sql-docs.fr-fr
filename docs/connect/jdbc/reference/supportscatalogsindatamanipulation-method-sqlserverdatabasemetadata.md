@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsCatalogsInDataManipulation | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsCatalogsInDataManipulation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsCatalogsInDataManipulation
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsCatalogsInDataManipulation
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: ee1af47a-4c04-4391-83a5-54ced80218c8
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ae0a52d18c2f4c1b5cbb4b4be89c74d79e58c83c
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 8cad553df9e993c7e2d4cdc700c9d90c0812ace3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportscatalogsindatamanipulation-method-sqlserverdatabasemetadata"></a>Méthode supportsCatalogsInDataManipulation (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

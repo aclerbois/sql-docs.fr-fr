@@ -1,32 +1,33 @@
 ---
 title: Fonction de cas | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetEnvAttr
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetEnvAttr
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetEnvAttr
-helpviewer_keywords: SQLGetEnvAttr function [ODBC]
+f1_keywords:
+- SQLGetEnvAttr
+helpviewer_keywords:
+- SQLGetEnvAttr function [ODBC]
 ms.assetid: 01f4590f-427a-4280-a1c3-18de9f7d86c1
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6d292b667e51211fac9d7b2d3d577f2d459b17fa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b1a31f7d374a06a4e9cfe963c92b73fa681a41d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetenvattr-function"></a>Cas (fonction)
 **Mise en conformité**  
@@ -51,7 +52,7 @@ SQLRETURN SQLGetEnvAttr(
  *EnvironmentHandle*  
  [Entrée] Handle d’environnement.  
   
- *Attribute*  
+ *Attribut*  
  [Entrée] Attribut à récupérer.  
   
  *ValuePtr*  
@@ -71,7 +72,7 @@ SQLRETURN SQLGetEnvAttr(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **cas** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_ENV et un *gérer* de *EnvironmentHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **cas** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Les données retournées dans \* *ValuePtr* a été tronquée pour être *BufferLength* moins le caractère de fin de la valeur null. La longueur de la valeur de chaîne non tronqué est retournée dans **StringLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
@@ -87,10 +88,10 @@ SQLRETURN SQLGetEnvAttr(
 ## <a name="comments"></a>Commentaires  
  Pour obtenir la liste des attributs, consultez [SQLSetEnvAttr](../../../odbc/reference/syntax/sqlsetenvattr-function.md). Il n’existe pas d’attributs spécifiques au pilote environnement. Si *attribut* spécifie un attribut qui retourne une chaîne, *ValuePtr* doit être un pointeur vers une mémoire tampon dans lequel retourner la chaîne. La longueur maximale de la chaîne, y compris l’octet de valeur null, sera *BufferLength* octets.  
   
- **Cas** peut être appelée à tout moment entre l’allocation et la libération d’un handle d’environnement. Tous les attributs d’environnement a été définis par l’application pour l’environnement sont conservés jusqu'à **SQLFreeHandle** est appelée sur le *EnvironmentHandle* avec un *HandleType* de SQL_HANDLE_ENV. Plus d’un handle d’environnement peut être alloué simultanément dans ODBC 3*.x*. Un attribut de l’environnement sur un environnement n’est pas affecté quand un autre environnement a été alloué.  
+ **Cas** peut être appelée à tout moment entre l’allocation et la libération d’un handle d’environnement. Tous les attributs d’environnement a été définis par l’application pour l’environnement sont conservés jusqu'à **SQLFreeHandle** est appelée sur le *EnvironmentHandle* avec un *HandleType* de SQL_HANDLE_ENV. Plus d’un handle d’environnement peut être alloué simultanément dans ODBC 3 *.x*. Un attribut de l’environnement sur un environnement n’est pas affecté quand un autre environnement a été alloué.  
   
 > [!NOTE]  
->  L’attribut d’environnement SQL_ATTR_OUTPUT_NTS est pris en charge par les applications conformes aux normes. Lorsque **cas** est appelée, la version 3 ODBC*.x* du Gestionnaire de pilotes retourne toujours SQL_TRUE pour cet attribut. SQL_ATTR_OUTPUT_NTS peut être définie à SQL_TRUE uniquement par un appel à **SQLSetEnvAttr**.  
+>  L’attribut d’environnement SQL_ATTR_OUTPUT_NTS est pris en charge par les applications conformes aux normes. Lorsque **cas** est appelée, la version 3 ODBC *.x* du Gestionnaire de pilotes retourne toujours SQL_TRUE pour cet attribut. SQL_ATTR_OUTPUT_NTS peut être définie à SQL_TRUE uniquement par un appel à **SQLSetEnvAttr**.  
   
 ## <a name="related-functions"></a>Fonctions connexes  
   

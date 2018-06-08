@@ -1,32 +1,29 @@
 ---
-title: "Exemple de méthode (VC ++) clone | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de méthode (VC ++) clone | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Clone method [ADO], VC++ example
 ms.assetid: 7ac96c1d-d0d8-4bf8-b165-533818d0f590
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7a9e5078fc0f97f17d38b18afdfe5809bf94a6ca
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 1d470f46bca9a022b55d50870a8db406bd918d79
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clone-method-example-vc"></a>Exemple de méthode Clone (VC ++)
 Cet exemple utilise le [Clone](../../../ado/reference/ado-api/clone-method-ado.md) méthode pour créer des copies d’un [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) puis permet à l’utilisateur de positionner le pointeur d’enregistrement de chaque copie indépendamment.  

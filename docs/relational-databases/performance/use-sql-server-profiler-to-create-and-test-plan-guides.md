@@ -1,17 +1,13 @@
 ---
-title: "Utiliser le Générateur de profils SQL Server pour créer et tester des repères de plan | Microsoft Docs"
-ms.custom: 
+title: Utiliser le Générateur de profils SQL Server pour créer et tester des repères de plan | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-plan-guides
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - checking plan guides
 - plan guides [SQL Server], testing
@@ -25,19 +21,19 @@ helpviewer_keywords:
 - Profiler [SQL Server Profiler], plan guides
 - query-to-plan guide matching [SQL Server]
 ms.assetid: 7018dbf0-1a1a-411a-88af-327bedf9cfbd
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5bbb800f0f0bd06e32357cda69d9a01a5c25e866
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 9b35d7d96c21c4e3883f1f36df325d3128d9492f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="use-sql-server-profiler-to-create-and-test-plan-guides"></a>Utiliser le Générateur de profils SQL Server pour créer et tester des repères de plan
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Lorsque vous créez un repère de plan, vous pouvez recourir à [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour capturer le texte de requête exact à utiliser dans l’argument *statement_text* de la procédure stockée **sp_create_plan_guide**. Ainsi, au moment de la compilation, le repère de plan correspondra à la requête. Une fois le repère de plan créé, vous pouvez également utiliser [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour tester la correspondance effective du repère de plan à la requête. En règle générale, vous devez tester les repères de plan à l'aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour vérifier que la requête correspond au repère de plan.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Lorsque vous créez un repère de plan, vous pouvez recourir à [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour capturer le texte de requête exact à utiliser dans l’argument *statement_text* de la procédure stockée **sp_create_plan_guide** . Ainsi, au moment de la compilation, le repère de plan correspondra à la requête. Une fois le repère de plan créé, vous pouvez également utiliser [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour tester la correspondance effective du repère de plan à la requête. En règle générale, vous devez tester les repères de plan à l'aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)] pour vérifier que la requête correspond au repère de plan.  
   
 ## <a name="capturing-query-text-by-using-sql-server-profiler"></a>Capture du texte de requête à l'aide du Générateur de profils SQL Server  
  Si vous exécutez une requête et capturez le texte tel qu'il a été soumis à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à l'aide du [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)], vous pouvez créer un repère de plan de type SQL ou TEMPLATE qui corresponde exactement à ce texte. Cela permet de faire en sorte que le repère de plan soit utilisé par l'optimiseur de requête.  
@@ -73,7 +69,7 @@ WHERE h.OrderDate BETWEEN '20000101' and '20050101';
   
 7.  Ouvrez le fichier du texte de traitement dans l'application Bloc-notes puis copiez le texte dans le Presse-papiers.  
   
-8.  Créez le repère de plan, puis collez le texte copié entre les guillemets (**''**) de l’argument **@stmt** . Vous devez isoler tout guillemet simple contenu dans l'argument **@stmt** en le faisant précéder par un autre guillemet simple. Faites attention de ne pas ajouter ou supprimer d'autres caractères lorsque vous insérez ces guillemets simples. Par exemple, le littéral de date **'**20000101**'** doit être délimité de la façon suivante : **''**20000101**''**.  
+8.  Créez le repère de plan, puis collez le texte copié entre les guillemets (**''**) de l’argument **@stmt** . Vous devez isoler tout guillemet simple contenu dans l'argument **@stmt** en le faisant précéder par un autre guillemet simple. Faites attention de ne pas ajouter ou supprimer d'autres caractères lorsque vous insérez ces guillemets simples. Par exemple, le littéral de date **'** 20000101 **'** doit être délimité de la façon suivante : **''** 20000101 **''**.  
   
  Voici le repère de plan :  
   

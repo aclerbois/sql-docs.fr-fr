@@ -1,28 +1,25 @@
 ---
-title: PDO::prepare | Microsoft Docs
+title: PDO::Prepare | Documents Microsoft
 ms.custom: ''
 ms.date: 07/10/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a8b16fdc-c748-49be-acf2-a6ac7432d16b
-caps.latest.revision: ''
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6fbac9059daa4af74aaeea4c6007d5ae1bf84a00
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 70bc35baf6121a7a9339064f68d8252b48db22e6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="pdoprepare"></a>PDO::prepare
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -49,7 +46,7 @@ Le [!INCLUDE[ssDriverPHP](../../includes/ssdriverphp_md.md)] n’évalue pas les
   
 Le tableau suivant répertorie les possible *key_pair* valeurs.  
   
-|Clé| Description|  
+|Key| Description|  
 |-------|---------------|  
 |PDO::ATTR_CURSOR|Spécifie le comportement du curseur. La valeur par défaut est PDO::CURSOR_FWDONLY. PDO::CURSOR_SCROLL est un curseur statique.<br /><br />Par exemple, `array( PDO::ATTR_CURSOR => PDO::CURSOR_FWDONLY )`.<br /><br />Si vous utilisez PDO::CURSOR_SCROLL, vous pouvez utiliser PDO::SQLSRV_ATTR_CURSOR_SCROLL_TYPE, qui est décrit ci-dessous.<br /><br />Consultez [Types de curseurs &#40;pilote PDO_SQLSRV&#41; ](../../connect/php/cursor-types-pdo-sqlsrv-driver.md) pour plus d’informations sur les jeux de résultats et les curseurs dans le pilote PDO_SQLSRV.|  
 |PDO::ATTR_EMULATE_PREPARES|Lorsque PDO::ATTR_EMULATE_PREPARES est activé, les espaces réservés dans une instruction préparée est remplacé par les paramètres liés. Une instruction SQL complète avec aucun des espaces réservés est ensuite envoyée à la base de données lors de l’exécution. <br /><br />PDO::ATTR_EMULATE_PREPARES permet de contourner certaines restrictions dans SQL Server. Par exemple, SQL Server ne prend pas en charge des paramètres nommés ou positionnels dans certaines clauses Transact-SQL. En outre, SQL Server a une limite de 2100 paramètres de liaison.<br /><br />Vous pouvez définir l’attribut PDO::ATTR_EMULATE_PREPARES sur true. Par exemple :<br /><br />`PDO::ATTR_EMULATE_PREPARES => true`<br /><br />Par défaut, cet attribut a la valeur false.<br /><br />**Remarque :** La sécurité des requêtes paramétrables n’est pas activée quand vous utilisez `PDO::ATTR_EMULATE_PREPARES => true`. Votre application doit garantir que les données qui sont liées aux paramètres ne contient pas de code Transact-SQL malveillant.<br /><br />**Limitations :**: étant donné que les paramètres ne sont pas liés à l’aide de la fonctionnalité de requête paramétrable de la base de données, paramètres input_output et de sortie ne sont pas pris en charge.|  

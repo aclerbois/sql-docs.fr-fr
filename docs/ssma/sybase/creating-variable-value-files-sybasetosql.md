@@ -1,16 +1,15 @@
 ---
-title: "Création de fichiers de la valeur de la Variable (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Création de fichiers de la valeur de la Variable (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,23 +17,22 @@ helpviewer_keywords:
 - Sybase Console,Creating Variable Value Files
 - Sybase Console,Variable Value File Validation
 ms.assetid: 395be464-4b19-44f7-91e5-b8876d6743dc
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 28fadfc4f54f68a6459cc3f3cef4df91967e5e52
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ad9aec22da1234c19e9124eefb4ebbfca50cfc55
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-variable-value-files-sybasetosql"></a>Création de fichiers de la valeur de la Variable (SybaseToSQL)
 Fichier de la valeur de variable est un fichier XML contenant les valeurs de paramètre de commandes, comme le nom du serveur source ou de destination qui changent fréquemment à partir de la migration d’un serveur vers un autre. En cas d’un grand nombre de migrations de la base de données, plusieurs fichiers de variables pour stocker la valeur de chaque serveur source seront créés et référencés dans un fichier de script principal avec le **– v** passer à la ligne de commande. Cela permet de conserver des valeurs statiques dans plusieurs fichiers de script avec les valeurs des variables dans plusieurs fichiers de variable.  
   
 > [!NOTE]  
 > 1.  Les noms de variables ont le préfixe et suffixe avec un symbole $ (dollar). Si les variables ne sont pas attribués une valeur dans le fichier de la valeur de la variable, vous rencontrerez une erreur lors de l’analyse du fichier de script résultant de bloquer le processus d’exécution de console.  
-> 2.  The escape character for **$** is **$$**. Si la valeur d’une valeur d’un paramètre de variable ou statique contient  **$**  symbole (dollar), puis  **$$**  doit être spécifié pour le traiter comme un caractère au lieu d’une variable.  
+> 2.  The escape character for **$** is **$$**. Si la valeur d’une valeur d’un paramètre de variable ou statique contient **$** symbole (dollar), puis **$$** doit être spécifié pour le traiter comme un caractère au lieu d’une variable.  
 > 3.  À des fins de facilité de maintenance, les variables peuvent être déclarées à l’intérieur de `‘variable-group’` variables définies par des éléments pour une séparation logique de l’utilisateur.  L’utilisation de cet élément n’est pas obligatoire.  
   
 **Exemples :**  
@@ -100,7 +98,7 @@ Fichier de la valeur de variable est un fichier XML contenant les valeurs de par
 L’utilisateur peut valider facilement son fichier de la valeur de la variable par rapport au fichier de définition de schéma **ConsoleScriptVariablesSchema.xsd** disponibles dans le dossier « Schémas ».  
   
 ## <a name="next-step"></a>Étape suivante  
-L’étape suivante d’exploitation de la console est [créer les fichiers de connexion de serveur &#40; SybaseToSQL &#41;](../../ssma/sybase/creating-the-server-connection-files-sybasetosql.md)  
+L’étape suivante d’exploitation de la console est [création des fichiers de connexion serveur &#40;SybaseToSQL&#41;](../../ssma/sybase/creating-the-server-connection-files-sybasetosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
 [Création des fichiers de serveur (Sybase)](http://msdn.microsoft.com/en-us/35ef396f-9f98-429d-9fc5-4f413d08fb37)  

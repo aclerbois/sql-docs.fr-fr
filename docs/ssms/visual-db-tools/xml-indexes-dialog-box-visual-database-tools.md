@@ -1,31 +1,31 @@
 ---
-title: "Index XML, boîte de dialogue (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Index XML, boîte de dialogue (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vdt.dlgbox.xmlindexes
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vdt.dlgbox.xmlindexes
 ms.assetid: eef38310-4498-4ccc-bb77-5bbd1c7cc477
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f47274fe87b23da05550d05b28af1b003fa9a2bc
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 00757208c128ef00ea58c5139b6edc8461621307
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-indexes-dialog-box-visual-database-tools"></a>Boîte de dialogue Index XML (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Utilisez la boîte de dialogue **Index XML** pour créer des index pour les colonnes du type de données XML qui ne peuvent pas être indexées à l’aide de la boîte de dialogue **Index/Clés**. Chaque colonne XML peut posséder plusieurs index XML, mais le premier index créé (principal) est utilisé comme base pour les autres (secondaires). Si vous supprimez l'index XML principal, les index secondaires sont également supprimés.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Utilisez la boîte de dialogue **Index XML** pour créer des index pour les colonnes du type de données XML qui ne peuvent pas être indexées à l’aide de la boîte de dialogue **Index/Clés** . Chaque colonne XML peut posséder plusieurs index XML, mais le premier index créé (principal) est utilisé comme base pour les autres (secondaires). Si vous supprimez l'index XML principal, les index secondaires sont également supprimés.  
   
 ## <a name="options"></a>Options  
 **Index XML sélectionné**  
@@ -62,7 +62,7 @@ Développée, elle affiche les champs de propriétés de **Nom** et **Descriptio
 Indique le nom de l'index XML. Lorsqu'un nouvel index ou une nouvelle clé sont créés, ils obtiennent un nom par défaut basé sur la table affichée dans la fenêtre active du Concepteur de tables. Vous pouvez modifier le nom à tout moment.  
   
 **Description**  
-Décrivez l’index. Pour écrire une description plus détaillée, cliquez sur **Description** , puis sur le bouton de sélection**(...)**qui apparaît à droite du champ de propriété. Vous obtiendrez une zone d'écriture plus large.  
+Décrivez l’index. Pour écrire une description plus détaillée, cliquez sur **Description** , puis sur le bouton de sélection **(...)** qui apparaît à droite du champ de propriété. Vous obtiendrez une zone d'écriture plus large.  
   
 **Catégorie Concepteur de tables**  
 Développée, elle affiche des informations sur les propriétés de cet index XML.  

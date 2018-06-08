@@ -1,17 +1,14 @@
 ---
-title: "Renommer des tables (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Renommer des tables (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/23/2018
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database, sql-data-warehouse, pdw
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - table renaming [SQL Server]
 - table names [SQL Server]
@@ -20,12 +17,12 @@ helpviewer_keywords:
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 61aa8b3a739b03201e92cd81007bc1c43c6ab435
-ms.sourcegitcommit: 6e819406554efbd17bbf84cf210d8ebeddcf772d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8fed6de787e9c6f3c39c6aa58a68beb84abd2ec2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rename-tables-database-engine"></a>Renommer des tables (moteur de base de données)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

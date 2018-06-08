@@ -1,17 +1,14 @@
 ---
-title: "Connexion de diagnostic pour les administrateurs de base de données | Microsoft Docs"
-ms.custom: 
+title: Connexion de diagnostic pour les administrateurs de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 10/16/2015
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - server management [SQL Server], connections
 - administrator connections [SQL Server]
@@ -23,16 +20,15 @@ helpviewer_keywords:
 - ports [SQL Server]
 - dedicated administrator connections [SQL Server]
 ms.assetid: 993e0820-17f2-4c43-880c-d38290bf7abc
-caps.latest.revision: 
+caps.latest.revision: 65
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7b2ada96d38f3653433aca10f15bfb0e87f165ed
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: a26a318a0675c0c0fe54e31ac8ea33376c1b2e6a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="diagnostic-connection-for-database-administrators"></a>Connexion de diagnostic pour les administrateurs de base de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -82,7 +78,7 @@ ms.lasthandoff: 02/23/2018
   
 -   Les commandes DBCC de base, comme [DBCC FREEPROCCACHE](../..//t-sql/database-console-commands/dbcc-freeproccache-transact-sql.md), [DBCC FREESYSTEMCACHE](../../t-sql/database-console-commands/dbcc-freesystemcache-transact-sql.md), [DBCC DROPCLEANBUFFERS](../../t-sql/database-console-commands/dbcc-dropcleanbuffers-transact-sql.md) et [DBCC SQLPERF](../../t-sql/database-console-commands/dbcc-sqlperf-transact-sql.md). Évitez d’exécuter des commandes consommant beaucoup de ressources, comme [DBCC CHECKDB](../../t-sql/database-console-commands/dbcc-checkdb-transact-sql.md), [DBCC DBREINDEX](../../t-sql/database-console-commands/dbcc-dbreindex-transact-sql.md) ou [DBCC SHRINKDATABASE](../../t-sql/database-console-commands/dbcc-shrinkdatabase-transact-sql.md).  
   
--   [!INCLUDE[tsql](../../includes/tsql-md.md)] Commande KILL*\<spid>*. Selon l'état de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la commande KILL risque de ne pas toujours aboutir ; dans ce cas, la seule option consiste à redémarrer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Voici quelques directives générales :  
+-   Commande [!INCLUDE[tsql](../../includes/tsql-md.md)] KILL*\<spid>*. Selon l'état de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], la commande KILL risque de ne pas toujours aboutir ; dans ce cas, la seule option consiste à redémarrer [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Voici quelques directives générales :  
   
     -   Vérifiez que le SPID a été supprimé en interrogeant `SELECT * FROM sys.dm_exec_sessions WHERE session_id = <spid>`. S'il ne retourne aucune ligne, la session a été supprimée.  
   

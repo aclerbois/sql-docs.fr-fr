@@ -1,16 +1,13 @@
 ---
-title: "Propriétés de l’index – Aide (F1) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de l’index – Aide (F1) | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: table-view-index, sql-database
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-indexes
-ms.tgt_pltfrm: 
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - sql13.swb.indexproperties.filter.f1
@@ -21,16 +18,16 @@ f1_keywords:
 - sql13.swb.indexproperties.options.f1
 - sql13.swb.indexproperties.spatial.f1
 ms.assetid: 45efd81a-3796-4b04-b0cc-f3deec94c733
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 38
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c04983b7d37f71d7b74072b5c673fc4696ebc895
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a1365d1041a9ceffe9989bb6b859cbeb9d44bd2d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="index-properties-f1-help"></a>Propriétés de l'index – Aide (F1)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

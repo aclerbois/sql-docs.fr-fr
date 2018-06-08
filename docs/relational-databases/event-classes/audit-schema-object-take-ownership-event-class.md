@@ -1,34 +1,30 @@
 ---
-title: "Audit Schema Object Take Ownership, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Schema Object Take Ownership, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Schema Object Take Ownership event class
 ms.assetid: 66f39d9b-9ec2-48a7-8a9e-1b42931299c9
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ccc4f79a96b03cc24ba62f3291893d13af3417ea
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7cc1d7cd776845262be5f15d84b921f9260a30f5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-schema-object-take-ownership-event-class"></a>Audit Schema Object Take Ownership (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Schema Object Take Ownership** se produit lorsque les autorisations de modifier le propriétaire d’un objet de schéma (tel qu’une table, une procédure ou une fonction) sont vérifiées. Cela intervient lorsque l'instruction ALTER AUTHORIZATION est utilisée pour affecter un propriétaire à un objet.  
+  La classe d’événements **Audit Schema Object Take Ownership** se produit lorsque les autorisations de modifier le propriétaire d’un objet de schéma (tel qu’une table, une procédure ou une fonction) sont vérifiées. Cela intervient lorsque l'instruction ALTER AUTHORIZATION est utilisée pour affecter un propriétaire à un objet.  
   
 ## <a name="audit-schema-object-take-ownership-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Schema Object Take Ownership  
   

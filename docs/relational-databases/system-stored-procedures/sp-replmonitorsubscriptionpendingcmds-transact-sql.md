@@ -1,16 +1,15 @@
 ---
 title: sp_replmonitorsubscriptionpendingcmds (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_replmonitorsubscriptionpendingcmds
 ms.assetid: df5b955a-feb0-4863-9b3b-7f71e9653b3d
-caps.latest.revision: 
+caps.latest.revision: 25
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c135e779e1d1f6fd0b5da12f3b9a24f2ade96eea
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c94d01031094e03ddde2fc9bcdf234729ecd11c9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spreplmonitorsubscriptionpendingcmds-transact-sql"></a>sp_replmonitorsubscriptionpendingcmds (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -51,22 +49,22 @@ sp_replmonitorsubscriptionpendingcmds [ @publisher = ] 'publisher'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, sans valeur par défaut.  
   
- [  **@publisher_db**  =] **'***publisher_db***'**  
+ [ **@publisher_db** = ] **'***publisher_db***'**  
  Nom de la base de données publiée. *publisher_db* est **sysname**, sans valeur par défaut.  
   
- [  **@publication**  =] **'***publication***'**  
+ [ **@publication** =] **'***publication***'**  
  Nom de la publication. *publication* est **sysname**, sans valeur par défaut.  
   
- [  **@subscriber**  =] **'***abonné***'**  
+ [ **@subscriber** =] **'***abonné***'**  
  Nom de l'Abonné. *abonné* est **sysname**, sans valeur par défaut.  
   
- [  **@subscriber_db**  =] **'***bd_abonné***'**  
+ [ **@subscriber_db** =] **'***bd_abonné***'**  
  Est le nom de la base de données d’abonnement. *bd_abonné* est **sysname**, sans valeur par défaut.  
   
- [  **@subscription_type**  =] *subscription_type*  
+ [ **@subscription_type** =] *subscription_type*  
  Type d'abonnement. *publication_type* est **int**, sans valeur par défaut et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description|  
@@ -87,7 +85,7 @@ sp_replmonitorsubscriptionpendingcmds [ @publisher = ] 'publisher'
 ## <a name="remarks"></a>Notes  
  **sp_replmonitorsubscriptionpendingcmds** est utilisé avec la réplication transactionnelle.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe sur le serveur de distribution ou les membres de la **db_owner** du rôle de base de données fixe dans la base de données de distribution permettre exécuter **sp_replmonitorsubscriptionpendingcmds**. La liste des membres de l’accès à la publication d’une publication qui utilise la base de données de distribution peut exécuter **sp_replmonitorsubscriptionpendingcmds** pour retourner des commandes en attente pour cette publication.  
   
 ## <a name="see-also"></a>Voir aussi  

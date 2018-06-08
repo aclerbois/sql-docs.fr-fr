@@ -1,17 +1,16 @@
 ---
-title: "Gérer les métadonnées lors de la mise à disposition d’une base de données sur un autre serveur | Microsoft Docs"
-ms.custom: 
+title: Gérer les métadonnées lors de la mise à disposition d’une base de données sur un autre serveur | Microsoft Docs
+ms.custom: ''
 ms.date: 08/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - cross-database queries [SQL Server]
 - logins [SQL Server], recreating on another server instance
@@ -37,20 +36,19 @@ helpviewer_keywords:
 - credentials [SQL Server], metadata
 - copying databases
 ms.assetid: 5d98cf2a-9fc2-4610-be72-b422b8682681
-caps.latest.revision: 
+caps.latest.revision: 84
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9d46ba6ce2dfe1af2454b95d05bd82f3d8b1ce2f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: a0b300bc3f204af062eac1e151933659216dd921
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="manage-metadata-when-making-a-database-available-on-another-server"></a>Gérer les métadonnées lors de la mise à disposition d’une base de données sur un autre serveur
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique concerne les situations suivantes :  
+  Cet article est utile dans les cas suivants :  
   
 -   Configuration des réplicas de disponibilité d'un groupe de disponibilité [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] .  
   
@@ -67,7 +65,7 @@ Cette rubrique concerne les situations suivantes :
  Lorsque vous déplacez la base de données d’une application vers une autre instance de serveur, vous devez recréer toutes les métadonnées des entités et des objets dépendants dans les bases de données **master** et **msdb** sur l’instance du serveur de destination. Par exemple, si une application de base de données utilise des déclencheurs au niveau serveur, il ne suffit pas d'attacher ou de restaurer la base de données sur le nouveau système. La base de données ne fonctionne pas comme prévu, sauf si vous recréez manuellement les métadonnées pour ces déclencheurs dans la base de données **master** .  
   
 ##  <a name="information_entities_and_objects"></a> Informations, entités, et objets stockés en dehors des bases de données utilisateur  
- La suite de cette rubrique résume les problèmes susceptibles d'affecter une base de données qui est rendue disponible sur une autre instance de serveur. Vous devrez peut-être recréer un ou plusieurs des types d'informations, d'entités ou d'objets répertoriés dans la liste suivante. Pour consulter un résumé, cliquez sur le lien correspondant à l'élément.  
+ La suite de cet article résume les problèmes susceptibles d’affecter une base de données qui est mise à disposition sur une autre instance de serveur. Vous devrez peut-être recréer un ou plusieurs des types d'informations, d'entités ou d'objets répertoriés dans la liste suivante. Pour consulter un résumé, cliquez sur le lien correspondant à l'élément.  
   
 -   [Paramètres de configuration du serveur](#server_configuration_settings)  
   
@@ -118,7 +116,7 @@ Cette rubrique concerne les situations suivantes :
   
   
 ##  <a name="cross_database_queries"></a> Cross-Database Queries  
- Les options de base de données DB_CHAINING et TRUSTWORTHY sont désactivées par défaut. Si elles sont définies à ON pour la base de données d'origine, vous devrez peut-être les activer sur la base de données de l'instance du serveur de destination. Pour plus d’informations, consultez [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md).  
+ Les options de base de données DB_CHAINING et TRUSTWORTHY sont désactivées par défaut. Si elles sont définies sur ON pour la base de données d’origine, vous devrez peut-être les activer sur la base de données de l’instance du serveur de destination. Pour plus d’informations, consultez [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md).  
   
  Les opérations d'attachement et de détachement désactivent le chaînage des propriétés des bases de données croisées pour la base de données. Pour plus d’informations sur l’activation du chaînage, consultez [Chaînage des propriétés des bases de données croisées (option de configuration de serveur)](../../database-engine/configure-windows/cross-db-ownership-chaining-server-configuration-option.md).  
   
@@ -157,7 +155,7 @@ Cette rubrique concerne les situations suivantes :
 ##  <a name="event_notif_and_wmi_events"></a> Event Notifications and Windows Management Instrumentation (WMI) Events (at Server Level)  
   
 ### <a name="server-level-event-notifications"></a>Notifications d'événements au niveau du serveur  
- Les notifications d’événements au niveau du serveur sont stockées dans la base de données **msdb**. Par conséquent, si une application de base de données repose sur une notification d'événements au niveau du serveur, cette notification doit être recréée sur l'instance du serveur de destination. Pour afficher les notifications d’événements sur une instance de serveur, utilisez l’affichage catalogue [sys.server_event_notifications](../../relational-databases/system-catalog-views/sys-server-event-notifications-transact-sql.md) . Pour plus d'informations, voir [Event Notifications](../../relational-databases/service-broker/event-notifications.md).  
+ Les notifications d’événements au niveau du serveur sont stockées dans la base de données **msdb**. Par conséquent, si une application de base de données repose sur une notification d’événement au niveau du serveur, cette notification doit être recréée sur l’instance du serveur de destination. Pour afficher les notifications d’événements sur une instance de serveur, utilisez l’affichage catalogue [sys.server_event_notifications](../../relational-databases/system-catalog-views/sys-server-event-notifications-transact-sql.md) . Pour plus d'informations, voir [Event Notifications](../../relational-databases/service-broker/event-notifications.md).  
   
  De plus, les notifications d'événements sont remises à l'aide de [!INCLUDE[ssSB](../../includes/sssb-md.md)]. Les itinéraires pour les messages entrants ne sont pas inclus dans la base de données qui contient un service. Au lieu de cela, les itinéraires explicites sont stockés dans la base de données **msdb**. Si, pour acheminer les messages entrants jusqu’au service, votre service utilise un itinéraire explicite dans la base de données **msdb** , vous devez recréer cet itinéraire lorsque vous attachez une base de données dans une instance différente.  
   
@@ -190,7 +188,8 @@ Cette rubrique concerne les situations suivantes :
   
  Les procédures stockées étendues s'exécutent directement dans l'espace d'adressage d'une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], et elles peuvent générer des fuites de mémoire ou d'autres problèmes qui diminuent les performances et la fiabilité du serveur. Il est préférable de stocker les procédures stockées étendues dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] distincte de celle qui contient les données de référence et d'utiliser des requêtes distribuées pour accéder à la base de données.  
   
-> **IMPORTANT** Avant d'ajouter des procédures stockées étendues au serveur et d'accorder à d'autres utilisateurs des autorisations d'exécution (EXECUTE), il est conseillé à l'administrateur système de vérifier minutieusement chaque procédure stockée étendue afin de s'assurer qu'elle ne contient aucun code nuisible ou malveillant.  
+  > [!IMPORTANT]
+  > Avant d'ajouter des procédures stockées étendues au serveur et d'accorder à d'autres utilisateurs des autorisations d'exécution (EXECUTE), il est conseillé à l'administrateur système de vérifier minutieusement chaque procédure stockée étendue afin de s'assurer qu'elle ne contient aucun code nuisible ou malveillant.  
   
  Pour plus d’informations, consultez [Autorisations d’objet GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-object-permissions-transact-sql.md), [Autorisations d’objet DENY &#40;Transact-SQL&#41;](../../t-sql/statements/deny-object-permissions-transact-sql.md) et [Autorisations d’objet REVOKE &#40;Transact-SQL&#41;](../../t-sql/statements/revoke-object-permissions-transact-sql.md).  
   
@@ -260,7 +259,7 @@ Cette rubrique concerne les situations suivantes :
 -   [Créer un travail](http://msdn.microsoft.com/library/b35af2b6-6594-40d1-9861-4d5dd906048c)  
   
 #### <a name="best-practices-for-using-a-script-to-re-create-a-job"></a>Meilleures pratiques pour utiliser un script afin de recréer un travail  
- Nous vous conseillons de commencer par générer le script d'un travail simple, en recréant le travail sur l'autre service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent et en exécutant le travail pour vérifier qu'il fonctionne comme prévu. Ces opérations vous permettront d'identifier d'éventuelles incompatibilités puis de les résoudre. Si un travail faisant l'objet d'un script ne fonctionne pas comme prévu dans son nouvel environnement, nous vous conseillons de créer un travail équivalent qui fonctionne correctement dans cet environnement.  
+ Nous vous conseillons de commencer par générer le script d'un travail simple, en recréant le travail sur l'autre service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent et en exécutant le travail pour vérifier qu'il fonctionne comme prévu. Vous pourrait ainsi identifier les incompatibilités éventuelles et essayer de les résoudre. Si un travail faisant l'objet d'un script ne fonctionne pas comme prévu dans son nouvel environnement, nous vous conseillons de créer un travail équivalent qui fonctionne correctement dans cet environnement.  
   
 
 ##  <a name="logins"></a> Connexions  
@@ -281,9 +280,10 @@ Cette rubrique concerne les situations suivantes :
 ### <a name="grant-revoke-and-deny-permissions-on-system-objects"></a>Autorisations GRANT, REVOKE et DENY sur les objets système  
  Les autorisations sur les objets système, tels que les procédures stockées, les procédures stockées étendues, les fonctions et les affichages, sont stockées dans la base de données **master** et doivent être configurées sur l'instance du serveur de destination.  
   
- Pour générer un script pour une partie ou l’intégralité des objets figurant dans la copie initiale de la base de données, vous pouvez utiliser l’Assistant Générer des scripts, et dans la boîte de dialogue **Sélectionner les options de script** , vous attribuez à l’option **Créer un script des autorisations au niveau objet** la valeur **True**.  
+ Pour générer un script pour une partie ou l'intégralité des objets figurant dans la copie initiale de la base de données, vous pouvez utiliser l'Assistant Générer des scripts, et dans la boîte de dialogue **Sélectionner les options de script** , vous attribuez à l'option **Créer un script des autorisations au niveau objet** la valeur **True**.  
   
-> **IMPORTANT** Si vous générez un script pour les connexions, les mots de passe ne sont pas chiffrés. Si vous disposez de connexions qui utilisent l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous devez modifier le script sur la destination.  
+   > [!IMPORTANT]
+   > Si vous générez un script pour les connexions, les mots de passe ne sont pas chiffrés. Si vous disposez de connexions qui utilisent l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , vous devez modifier le script sur la destination.  
   
  Les objets système sont consultables dans l’affichage catalogue [sys.system_objects](../../relational-databases/system-catalog-views/sys-system-objects-transact-sql.md) . Les autorisations sur les objets système sont consultables dans l’affichage catalogue [sys.database_permissions](../../relational-databases/system-catalog-views/sys-database-permissions-transact-sql.md) dans la base de données **master**. Pour plus d’informations sur l’interrogation de ces affichages catalogue et l’octroi d’autorisations sur les objets système, consultez [Autorisations d’objet système GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-system-object-permissions-transact-sql.md). Pour plus d’informations, consultez [Autorisations d’objet système REVOKE &#40;Transact-SQL&#41;](../../t-sql/statements/revoke-system-object-permissions-transact-sql.md) et [Autorisations d’objet système DENY &#40;Transact-SQL&#41;](../../t-sql/statements/deny-system-object-permissions-transact-sql.md).  
   
@@ -315,7 +315,10 @@ Cette rubrique concerne les situations suivantes :
   
  Pour plus d'informations sur les certificats et les clés asymétriques, consultez [Encryption Hierarchy](../../relational-databases/security/encryption/encryption-hierarchy.md).  
   
-  
+## <a name="trustworthy-property"></a>Propriété Trustworthy
+La propriété de base de données TRUSTWORTHY permet d’indiquer si cette instance de SQL Server fait confiance à la base de données et à son contenu. Quand une base de données est attachée, par défaut et pour des raisons de sécurité, cette option est définie sur OFF, même si elle était définie sur ON sur le serveur d’origine. Pour plus d’informations sur cette propriété, consultez [TRUSTWORTHY, propriété de base de données](../security/trustworthy-database-property.md). Pour savoir comment activer cette option, consultez [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md).  
+
+
 ##  <a name="replication_settings"></a> Replication Settings  
  Si vous restaurez une sauvegarde d'une base de données répliquée sur un autre serveur ou dans une autre base de données, les paramètres de réplication ne peuvent pas être conservés. Dans ce cas, vous devez recréer la totalité des abonnements et des publications une fois les sauvegardes restaurées. Pour faciliter ce processus, créez des scripts pour vos paramètres de réplication actuels, et également pour l'activation et la désactivation de la réplication. Pour recréer facilement vos paramètres de réplication, copiez ces scripts et modifiez les références de nom de serveur afin qu'elles fonctionnent pour l'instance du serveur de destination.  
   
@@ -323,7 +326,7 @@ Cette rubrique concerne les situations suivantes :
   
   
 ##  <a name="sb_applications"></a> Service Broker Applications  
- De nombreux aspects d'une application [!INCLUDE[ssSB](../../includes/sssb-md.md)] sont déplacés avec la base de données. Cependant, certains aspects doivent être recréés ou reconfigurés dans le nouvel emplacement.  
+ De nombreux aspects d'une application [!INCLUDE[ssSB](../../includes/sssb-md.md)] sont déplacés avec la base de données. Cependant, certains aspects doivent être recréés ou reconfigurés dans le nouvel emplacement.  Par défaut et pour des raisons de sécurité, quand une base de données est attachée à partir d’un autre serveur, les options pour *is_broker_enabled*, *is_honor_broker_priority_on* sont définies sur OFF. Pour plus d’informations sur l’activation de ces options, consultez [ALTER DATABASE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-database-transact-sql.md).  
   
   
 ##  <a name="startup_procedures"></a> Startup Procedures  

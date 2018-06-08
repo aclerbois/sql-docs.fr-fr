@@ -1,16 +1,14 @@
 ---
-title: "Nouvelles fonctionnalités | Documents Microsoft"
-ms.custom: 
+title: Nouvelles fonctionnalités | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backward compatibility [ODBC], new features in release
 - ODBC drivers [ODBC], backward compatibility
@@ -18,19 +16,18 @@ helpviewer_keywords:
 - compatibility [ODBC], new features in release
 - ODBC [ODBC], new features
 ms.assetid: a8fcdd00-6cb3-4871-9489-6018b3d0d65f
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 12e66ad8a1aa5e1389b69d5f30156f7b86b3b733
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ed343aadff0390858230a4b8c3512245ed338062
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="new-features"></a>Nouvelles fonctionnalités
-Les nouvelles fonctionnalités suivantes a été introduite dans ODBC 3. *x*. Une application ODBC 3. *x* application utilisant une API ODBC 2*.x* pilote ne sera pas en mesure d’utiliser cette fonctionnalité. ODBC 3. *x* du Gestionnaire de pilotes ne mappe pas ces fonctionnalités lorsque vous travaillez avec une API ODBC 2*.x* pilote.  
+Les nouvelles fonctionnalités suivantes a été introduite dans ODBC 3. *x*. Une application ODBC 3. *x* application utilisant une API ODBC 2 *.x* pilote ne sera pas en mesure d’utiliser cette fonctionnalité. ODBC 3. *x* du Gestionnaire de pilotes ne mappe pas ces fonctionnalités lorsque vous travaillez avec une API ODBC 2 *.x* pilote.  
   
 -   Gérer les fonctions qui acceptent un descripteur en tant qu’argument : **SQLSetDescField**, **SQLGetDescField**, **SQLSetDescRec**, **SQLGetDescRec**, et **SQLCopyDesc**.  
   

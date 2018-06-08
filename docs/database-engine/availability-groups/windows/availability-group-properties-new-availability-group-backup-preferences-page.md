@@ -1,32 +1,32 @@
 ---
-title: "Propriétés : Nouveau groupe de disponibilité (page Préférences de sauvegarde) | Microsoft Docs"
-ms.custom: 
+title: 'Propriétés : Nouveau groupe de disponibilité (page Préférences de sauvegarde) | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygroupproperties.backuppreferences.f1
-helpviewer_keywords: read-only routing
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygroupproperties.backuppreferences.f1
+helpviewer_keywords:
+- read-only routing
 ms.assetid: 65fff22d-5963-4a8c-8b31-fe9ab247a03e
-caps.latest.revision: "7"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 84684e7c9327cce92add49ff44aa881b3af25023
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: b46d199196f9d0dc376473f9894f352641b3d750
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768385"
 ---
 # <a name="availability-group-properties-new-availability-group-backup-preferences-page"></a>Propriétés d’un groupe de disponibilité : Nouveau groupe de disponibilité (page Préférences de sauvegarde)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez cette boîte de dialogue pour afficher et modifier les préférences de sauvegarde du groupe de disponibilité sélectionné.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez cette boîte de dialogue pour afficher et modifier les préférences de sauvegarde du groupe de disponibilité sélectionné.  
   
  **Pour afficher les propriétés d'un groupe de disponibilité**  
   

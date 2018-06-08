@@ -1,28 +1,21 @@
 ---
-title: "Utilisation de la capacité d’affichage (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 373633ca-c5af-4618-88e8-58ca84e8e5f4
-caps.latest.revision: "9"
-ms.openlocfilehash: 9bf391d92b29acc057fad1170f878bfb47bccd23
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Afficher l’utilisation des capacités dans le système de plateforme Analytique | Documents Microsoft
+description: Afficher l’utilisation des capacités dans le système de plateforme d’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: fcd440f3add9ff6823c9104fc94af736d3fdee4e
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="view-capacity-utilization"></a>Utilisation de la capacité d’affichage
+# <a name="view-capacity-utilization-in-analytics-platform-system"></a>Utilisation de la capacité d’affichage dans le système de plateforme Analytique
 Cette rubrique explique comment afficher l’utilisation des capacités dans l’appliance SQL Server PDW.  
   
 ## <a name="to-view-capacity-utilization-by-using-admin-console"></a>Pour afficher l’utilisation de la capacité en utilisant la Console d’administration  
@@ -111,5 +104,5 @@ ORDER BY [db_name], [pdw_node_id];
   
 ## <a name="see-also"></a>Voir aussi  
 <!-- MISSING LINKS [Common Metadata Query Examples &#40;SQL Server PDW&#41;](../sqlpdw/common-metadata-query-examples-sql-server-pdw.md)  -->
-[Surveillance de l’appliance &#40; Système de plateforme Analytique &#41;](appliance-monitoring.md)  
+[Surveillance de l’appliance &#40;Analytique plate-forme système&#41;](appliance-monitoring.md)  
   

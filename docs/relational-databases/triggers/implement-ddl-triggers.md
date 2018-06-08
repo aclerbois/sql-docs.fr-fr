@@ -1,34 +1,33 @@
 ---
-title: "Implémenter des déclencheurs DDL | Microsoft Docs"
-ms.custom: 
+title: Implémenter des déclencheurs DDL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-ddl
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - DDL triggers, implementing
 ms.assetid: f44e5340-1d18-40e9-828e-0ffcca091ae3
-caps.latest.revision: 
+caps.latest.revision: 32
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c38f38fcdea2edf93780629c8eabeb03edcfa531
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b380884e3b80ea9d88f20ebd6f031d3dcf8e0cd5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implement-ddl-triggers"></a>Implémenter des déclencheurs DDL
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Cette rubrique fournit des informations pour vous aider à créer, modifier, désactiver ou supprimer des déclencheurs DDL.  
+  Cette rubrique fournit des informations pour vous aider à créer, modifier, désactiver ou supprimer des déclencheurs DDL.  
   
 ## <a name="creating-ddl-triggers"></a>Création de déclencheurs DDL  
  Les déclencheurs DDL sont créés à l'aide de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] CREATE TRIGGER pour les déclencheurs DDL.  

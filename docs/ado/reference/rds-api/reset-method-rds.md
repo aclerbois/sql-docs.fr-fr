@@ -1,30 +1,28 @@
 ---
-title: "Reset (méthode) (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Reset (méthode) (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Reset method [ADO]
 ms.assetid: 3957197a-f543-4d6b-9e11-67a77c2063b7
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f95d5bf30a0646d3e67ae366e29794018095706a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 504f68bea78f34d2a40ced0453a251105bc5275c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reset-method-rds"></a>Reset (méthode) (RDS)
 Exécute le tri ou le filtre sur un côté client **Recordset** basée sur les propriétés de tri et de filtre spécifiées.  

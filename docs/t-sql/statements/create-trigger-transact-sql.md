@@ -1,16 +1,14 @@
 ---
 title: CREATE TRIGGER (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: mathoma
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CREATE TRIGGER
@@ -31,23 +29,22 @@ helpviewer_keywords:
 - triggers [SQL Server], creating
 - database-scoped triggers [SQL Server]
 ms.assetid: edeced03-decd-44c3-8c74-2c02f801d3e7
-caps.latest.revision: 
+caps.latest.revision: 140
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 21d9fd7428af28eec0d739da212887973592401c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 26721a416b9e3da167a438ea2609679d08481237
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-trigger-transact-sql"></a>CREATE TRIGGER (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-  Crée un déclencheur DML, DDL ou de connexion. Un déclencheur est une procédure stockée spéciale qui s'exécute automatiquement lorsqu'un événement se produit dans le serveur de base de données. Les déclencheurs DML s'exécutent lorsqu'un utilisateur essaie de modifier des données via un événement DML (Data Manipulation Language). Les événements DML sont des instructions INSERT, UPDATE ou DELETE exécutées sur une table ou une vue. Ces déclencheurs s'activent au déclenchement d'un événement valide, que des lignes de table soient affectées ou non. Pour plus d'informations, consultez [DML Triggers](../../relational-databases/triggers/dml-triggers.md).  
+  Crée un déclencheur DML, DDL ou de connexion. Un déclencheur est un type particulier de procédure stockée qui s’exécute automatiquement quand un événement se produit sur le serveur de base de données. Les déclencheurs DML s'exécutent lorsqu'un utilisateur essaie de modifier des données via un événement DML (Data Manipulation Language). Les événements DML sont des instructions INSERT, UPDATE ou DELETE exécutées sur une table ou une vue. Ces déclencheurs s'activent au déclenchement d'un événement valide, que des lignes de table soient affectées ou non. Pour plus d'informations, consultez [DML Triggers](../../relational-databases/triggers/dml-triggers.md).  
   
- Les déclencheurs DDL s'exécutent en réponse à différents événements DDL (Data Definition Language). Ces événements correspondent essentiellement aux instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] CREATE, ALTER et DROP et à certaines procédures stockées système qui effectuent des opérations de type DDL. Les déclencheurs de connexion sont activés en réponse à l'événement LOGON qui est levé lorsqu'une session utilisateur est établie. Les déclencheurs peuvent être créés directement à partir d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou de méthodes d’assembly créées dans le CLR (Common Language Runtime) [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] et chargées dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permet de créer plusieurs déclencheurs pour toute instruction spécifique.  
+ Les déclencheurs DDL s'exécutent en réponse à différents événements DDL (Data Definition Language). Ces événements correspondent essentiellement aux instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] CREATE, ALTER et DROP et à certaines procédures stockées système qui effectuent des opérations de type DDL. Les déclencheurs LOGON sont activés en réponse à l’événement LOGON qui est levé quand une session utilisateur est établie. Les déclencheurs peuvent être créés directement à partir d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou de méthodes d’assembly créées dans le CLR (Common Language Runtime) [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[dnprdnshort](../../includes/dnprdnshort-md.md)] et chargées dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permet de créer plusieurs déclencheurs pour toute instruction spécifique.  
   
 > [!IMPORTANT]  
 >  Un code malveillant présent dans des déclencheurs peut s'exécuter sous des privilèges promus. Pour plus d’informations sur la façon de réduire cette menace, consultez [Gérer la sécurité des déclencheurs](../../relational-databases/triggers/manage-trigger-security.md).  
@@ -59,7 +56,7 @@ ms.lasthandoff: 11/21/2017
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```sql  
 -- SQL Server Syntax  
 -- Trigger on an INSERT, UPDATE, or DELETE statement to a table or view (DML Trigger)  
   
@@ -81,7 +78,7 @@ AS { sql_statement  [ ; ] [ ,...n ] | EXTERNAL NAME <method specifier [ ; ] > }
   
 ```  
   
-```  
+```sql  
 -- SQL Server Syntax  
 -- Trigger on an INSERT, UPDATE, or DELETE statement to a 
 -- table (DML Trigger on memory-optimized tables)  
@@ -100,7 +97,7 @@ AS { sql_statement  [ ; ] [ ,...n ] }
   
 ```  
   
-```  
+```sql  
 -- Trigger on a CREATE, ALTER, DROP, GRANT, DENY, 
 -- REVOKE or UPDATE statement (DDL Trigger)  
   
@@ -116,7 +113,7 @@ AS { sql_statement  [ ; ] [ ,...n ] | EXTERNAL NAME < method specifier >  [ ; ] 
   
 ```  
   
-```  
+```sql  
 -- Trigger on a LOGON event (Logon Trigger)  
   
 CREATE [ OR ALTER ] TRIGGER trigger_name   
@@ -133,7 +130,7 @@ AS { sql_statement  [ ; ] [ ,...n ] | EXTERNAL NAME < method specifier >  [ ; ] 
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```sql  
 -- Windows Azure SQL Database Syntax   
 -- Trigger on an INSERT, UPDATE, or DELETE statement to a table or view (DML Trigger)  
   
@@ -149,7 +146,7 @@ ON { table | view }
   
 ```  
   
-```  
+```sql  
 -- Windows Azure SQL Database Syntax  
 -- Trigger on a CREATE, ALTER, DROP, GRANT, DENY, 
 -- REVOKE, or UPDATE STATISTICS statement (DDL Trigger)   
@@ -251,11 +248,11 @@ OR ALTER
   
  Les actions du déclencheur spécifiées dans les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] prennent effet lors de la tentative d'opération.  
   
- Les déclencheurs peuvent comprendre n'importe quel type et n'importe quel nombre d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)]. Il existe des exceptions. Pour plus d'informations, consultez la section Notes. Un déclencheur sert à vérifier ou à modifier des données suite à une instruction de modification ou de définition. Il ne doit pas retourner des données à l'utilisateur. Les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans un déclencheur comportent souvent un [langage de contrôle de flux](~/t-sql/language-elements/control-of-flow.md).  
+ Les déclencheurs peuvent comprendre n’importe quel type et n’importe quel nombre d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)]. Il existe toutefois des exceptions. Pour plus d'informations, consultez la section Notes. Un déclencheur sert à vérifier ou à modifier des données suite à une instruction de modification ou de définition. Il ne doit pas retourner des données à l'utilisateur. Les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans un déclencheur comportent souvent un [langage de contrôle de flux](~/t-sql/language-elements/control-of-flow.md).  
   
  Les déclencheurs DML utilisent les tables logiques (conceptuelles) supprimées ou insérées. Leur structure est similaire à celle de la table sur laquelle le déclencheur est défini, c'est-à-dire la table sur laquelle l'action de l'utilisateur est tentée. Les tables supprimées et insérées contiennent les anciennes ou les nouvelles valeurs des lignes que l'action de l'utilisateur peut modifier. Par exemple, pour extraire toutes les valeurs de la table `deleted`, utilisez :  
   
-```  
+```sql  
 SELECT * FROM deleted;  
 ```  
   
@@ -266,7 +263,7 @@ SELECT * FROM deleted;
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] autorise la mise à jour des colonnes **text**, **ntext**, ou **image** via le déclencheur INSTEAD OF sur des tables ou des vues.  
   
 > [!IMPORTANT]  
->  Les types de données**ntext**, **text** et **image** seront supprimés dans une future version de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ces types de données dans un nouveau développement. Prévoyez de modifier les applications qui les utilisent actuellement. Utilisez plutôt les types de données [nvarchar(max)](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md), [varchar(max)](../../t-sql/data-types/char-and-varchar-transact-sql.md)et [varbinary(max)](../../t-sql/data-types/binary-and-varbinary-transact-sql.md) . Les déclencheurs AFTER et INSTEAD OF prennent tous les deux en charge les données **varchar(MAX)**, **nvarchar(MAX)** et **varbinary(MAX)** dans les tables inserted et deleted.  
+>  Les types de données**ntext**, **text** et **image** seront supprimés dans une version ultérieure de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Évitez d'utiliser ces types de données dans un nouveau développement. Prévoyez de modifier les applications qui les utilisent actuellement. Utilisez plutôt les types de données [nvarchar(max)](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md), [varchar(max)](../../t-sql/data-types/char-and-varchar-transact-sql.md)et [varbinary(max)](../../t-sql/data-types/binary-and-varbinary-transact-sql.md) . Les déclencheurs AFTER et INSTEAD OF prennent tous les deux en charge les données **varchar(MAX)**, **nvarchar(MAX)** et **varbinary(MAX)** dans les tables inserted et deleted.  
   
  Pour les déclencheurs sur les tables optimisées en mémoire, la seule instruction *sql_statement* autorisée au niveau supérieur est un bloc ATOMIC. Le code T-SQL autorisé dans le bloc ATOMIC est limité par le code T-SQL autorisé dans les procédures natives.  
   
@@ -277,7 +274,7 @@ SELECT * FROM deleted;
 > [!NOTE]  
 >  Par défaut, la possibilité de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d'exécuter du code CLR est désactivée. Vous pouvez créer, modifier et supprimer des objets de base de données qui font référence à des modules de code managé. Cependant, ces références ne s’exécutent dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] que si l’[option clr enabled](../../database-engine/configure-windows/clr-enabled-server-configuration-option.md) est activée à l’aide de [sp_configure](../../relational-databases/system-stored-procedures/sp-configure-transact-sql.md).  
   
-## <a name="remarks-dml-triggers"></a>Notes relatives aux déclencheurs DML  
+## <a name="remarks-for-dml-triggers"></a>Remarques sur les déclencheurs DML  
  Les déclencheurs DML s'utilisent souvent pour imposer des règles de gestion et l'intégrité des données. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit l'intégrité référentielle déclarative (DRI) via des instructions ALTER TABLE et CREATE TABLE. Cependant, la fonctionnalité DRI ne gère pas l'intégrité référentielle entre bases de données. L'intégrité référentielle se réfère aux règles appliquées aux relations entre les clés primaires et les clés étrangères des tables. Pour appliquer l'intégrité référentielle, utilisez les contraintes PRIMARY KEY et FOREIGN KEY dans les instructions ALTER TABLE et CREATE TABLE. S'il existe des contraintes sur la table des déclencheurs, elles sont vérifiées après l'exécution du déclencheur INSTEAD OF et avant celle du déclencheur AFTER. Si les contraintes sont violées, les actions du déclencheur INSTEAD OF sont annulées et le déclencheur AFTER n'est pas exécuté.  
   
  Vous pouvez spécifier le premier et le dernier déclencheur AFTER à exécuter sur une table à l'aide de sp_settriggerorder. Sur une table, il ne peut y avoir qu'un seul premier et un seul dernier déclencheur AFTER pour chaque instruction INSERT, UPDATE ou DELETE. S'il y a d'autres déclencheurs AFTER sur la même table, ils sont exécutés de manière aléatoire.  
@@ -330,9 +327,22 @@ SELECT * FROM deleted;
 |ALTER TABLE quand elle est utilisée pour effectuer les actions suivantes :<br /><br /> ajout, modification ou suppression de colonnes ;<br /><br /> changement de partitions ;<br /><br /> ajout ou suppression de contraintes PRIMARY KEY ou UNIQUE.|||  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prenant pas en charge les déclencheurs définis par l'utilisateur sur des tables système, nous recommandons de ne pas en créer.  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne prenant pas en charge les déclencheurs définis par l'utilisateur sur des tables système, nous recommandons de ne pas en créer. 
+
+### <a name="optimizing-dml-triggers"></a>Optimisation des déclencheurs DML
+ Les déclencheurs fonctionnent dans des transactions (implicites ou autres). Quand ils sont ouverts, ils verrouillent les ressources. Le verrou reste en place jusqu’à ce que la transaction soit confirmée (avec COMMIT) ou rejetée (avec ROLLBACK). Plus la durée d’exécution d’un déclencheur est longue, plus le risque de blocage d’un autre processus augmente. Vous devez donc essayer d’écrire les déclencheurs de façon à réduire leur durée d’exécution. Une façon d’y parvenir est de libérer un déclencheur quand une instruction DML ne change aucune ligne. 
+
+Pour libérer un déclencheur dans une commande qui ne change aucune ligne, utilisez la variable système [ROWCOUNT_BIG](https://docs.microsoft.com/it-it/sql/t-sql/functions/rowcount-big-transact-sql). 
+
+L’extrait de code T-SQL suivant produit le résultat attendu. Il doit être présent au début de chaque déclencheur DML :
+
+```sql
+IF (@@ROWCOUNT_BIG = 0)
+RETURN;
+```
   
-## <a name="remarks-ddl-triggers"></a>Notes relatives aux déclencheurs DDL  
+  
+## <a name="remarks-for-ddl-triggers"></a>Remarques sur les déclencheurs DDL  
  Les déclencheurs DDL, tout comme les déclencheurs standard, exécutent des procédures stockées en réponse à un événement. Cependant, à la différence des déclencheurs standard, ils ne s'exécutent pas en réponse aux instructions UPDATE, INSERT ou DELETE sur une table ou sur une vue. Au lieu de cela, ils s'exécutent essentiellement en réponse aux instructions DDL (Data Definition Language). Il s'agit des instructions CREATE, ALTER, DROP, GRANT, DENY, REVOKE et UPDATE STATISTICS. Certaines procédures stockées système qui effectuent des opérations de type DDL peuvent également activer des déclencheurs DDL.  
   
 > [!IMPORTANT]  
@@ -342,7 +352,7 @@ SELECT * FROM deleted;
   
  Les déclencheurs DDL ne sont pas activés en réponse à des événements qui concernent les tables et les procédures stockées temporaires locales ou globales.  
   
- À la différence des déclencheurs DML, le champ d'action des déclencheurs DDL ne se limitent pas aux schémas. Par conséquent, les fonctions OBJECT_ID, OBJECT_NAME, OBJECTPROPERTY et OBJECTPROPERTYEX ne sont pas utilisables pour effectuer des requêtes de métadonnées à propos de déclencheurs DDL. Utilisez plutôt les vues de catalogue. Pour plus d’informations, consultez [Obtenir des informations sur les déclencheurs DDL](../../relational-databases/triggers/get-information-about-ddl-triggers.md).  
+ À la différence des déclencheurs DML, le champ d'action des déclencheurs DDL ne correspond pas aux schémas. Par conséquent, les fonctions OBJECT_ID, OBJECT_NAME, OBJECTPROPERTY et OBJECTPROPERTYEX ne sont pas utilisables pour effectuer des requêtes de métadonnées à propos de déclencheurs DDL. Utilisez plutôt les affichages catalogue. Pour plus d’informations, consultez [Obtenir des informations sur les déclencheurs DDL](../../relational-databases/triggers/get-information-about-ddl-triggers.md).  
   
 > [!NOTE]  
 >  Les déclencheurs DDL avec étendue au niveau serveur figurent dans le dossier **Déclencheurs** de l’Explorateur d’objets [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]. Ce dossier se trouve dans le dossier **Objets serveur** . Les déclencheurs DDL délimités à la base de données figurent dans le dossier **Déclencheurs de base de données**. Ce dossier se trouve dans le dossier **Programmabilité** de la base de données correspondante.  
@@ -362,7 +372,7 @@ SELECT * FROM deleted;
 ### <a name="returning-results"></a>Retour de résultats  
  Cette possibilité d'obtenir des résultats via des déclencheurs sera supprimée dans les prochaines versions de Microsoft SQL Server. Les déclencheurs qui renvoient des jeux de résultats peuvent provoquer un comportement inattendu des applications qui ne sont pas conçues pour interagir avec eux. Évitez de renvoyer des jeux de résultats provenant de déclencheurs dans un nouveau travail de développement et prévoyez la modification des applications qui y recourent actuellement. Pour empêcher les déclencheurs de retourner des jeux de résultats, attribuez la valeur 1 à l’[option Interdire les résultats à partir des déclencheurs](../../database-engine/configure-windows/disallow-results-from-triggers-server-configuration-option.md).  
   
- Les déclencheurs de connexion interdisent toujours le renvoi de jeux de résultats et ce comportement n'est pas configurable. Si un déclencheur de connexion génère un jeu de résultats, le déclencheur échoue et la tentative de connexion qui a exécuté le déclencheur est refusée.  
+ Les déclencheurs de connexion interdisent toujours le renvoi de jeux de résultats et ce comportement n'est pas configurable., Si un déclencheur de connexion génère un jeu de résultats, le déclencheur échoue et la tentative de connexion qui a exécuté le déclencheur est refusée.  
   
 ### <a name="multiple-triggers"></a>Déclencheurs multiples  
  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] autorise la création de plusieurs déclencheurs pour chaque événement DML, DDL ou LOGON. Par exemple, si la commande CREATE TRIGGER FOR UPDATE est exécutée pour une table qui comporte déjà un déclencheur UPDATE, un déclencheur de mise à jour supplémentaire est créé. Dans les versions antérieures de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il n'était possible de créer qu'un seul déclencheur par événement de modification de données INSERT, UPDATE ou DELETE pour chaque table.  
@@ -392,7 +402,7 @@ SELECT * FROM deleted;
 ### <a name="nested-triggers"></a>Déclencheurs imbriqués  
  Les déclencheurs peuvent compter jusqu'à 32 niveaux d'imbrication. Si un déclencheur modifie une table dans laquelle il y a un autre déclencheur, le second déclencheur est activé et peut en appeler un troisième, etc. Si un des déclencheurs de la chaîne provoque une boucle infinie, le niveau d'imbrication maximal est dépassé et le déclencheur est annulé. Lorsqu'un déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)] exécute du code managé en référençant une routine, un type ou un agrégat CLR, cette référence compte comme un seul niveau pour le calcul de la limite des 32 niveaux d'imbrication. Les méthodes appelées à partir du code managé n'entrent pas en compte dans cette limite  
   
- Pour désactiver les déclencheurs imbriqués, attribuez la valeur 0 (off) à l'option nested triggers de sp_configure. La configuration par défaut permet les déclencheurs imbriqués. Si l'option des déclencheurs imbriqués est désactivée, les déclencheurs récursifs le sont également, quel que soit le paramètre RECURSIVE_TRIGGERS défini avec l'instruction ALTER DATABASE.  
+ Pour désactiver les déclencheurs imbriqués, attribuez la valeur 0 (off) à l'option nested triggers de sp_configure. La configuration par défaut permet les déclencheurs imbriqués. Si l’option des déclencheurs imbriqués est désactivée, les déclencheurs récursifs le sont également, quel que soit le paramètre RECURSIVE_TRIGGERS défini avec l’instruction ALTER DATABASE.  
   
  Le premier déclencheur AFTER imbriqué dans un déclencheur INSTEAD OF se déclenche même si l’option de configuration de serveur **nested triggers** est définie sur 0. Toutefois, les déclencheurs AFTER suivants ne se déclenchent pas avec ce paramètre. Nous vous recommandons de contrôlez les déclencheurs imbriqués de vos applications afin de déterminer si ces applications respectent vos règles métier relatives à ce nouveau comportement quand l’option de configuration de serveur **nested triggers** est définie sur 0, puis effectuez les modifications appropriées.  
   
@@ -409,7 +419,7 @@ SELECT * FROM deleted;
 ### <a name="a-using-a-dml-trigger-with-a-reminder-message"></a>A. Utilisation d'un déclencheur DML avec un message de rappel  
  Le déclencheur DML suivant affiche un message à destination du client lorsque quelqu'un essaye d'ajouter ou de modifier des données dans la table `Customer` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)].  
   
-```  
+```sql  
 CREATE TRIGGER reminder1  
 ON Sales.Customer  
 AFTER INSERT, UPDATE   
@@ -420,7 +430,7 @@ GO
 ### <a name="b-using-a-dml-trigger-with-a-reminder-e-mail-message"></a>B. Utilisation d'un déclencheur DML avec un message de rappel par courrier électronique  
  L'exemple suivant envoie un message électronique à une personne spécifiée (`MaryM`) lorsque la table `Customer` est modifiée.  
   
-```  
+```sql  
 CREATE TRIGGER reminder2  
 ON Sales.Customer  
 AFTER INSERT, UPDATE, DELETE   
@@ -438,13 +448,15 @@ GO
   
  L'exemple suivant crée un déclencheur DML dans la base de données AdventureWorks2012. Ce déclencheur vérifie que les informations de conditions de crédit du fournisseur sont correctes (pas 5) lors d’une tentative d’insertion d’un nouveau bon de commande dans la table `PurchaseOrderHeader`. Pour obtenir les informations de conditions de crédit du fournisseur, la table `Vendor` doit être référencée. Si les conditions de crédit sont trop faibles, un message s'affiche et l'insertion n'a pas lieu.  
   
-```  
+```sql  
 -- This trigger prevents a row from being inserted in the Purchasing.PurchaseOrderHeader 
 -- table when the credit rating of the specified vendor is set to 5 (below average).  
   
 CREATE TRIGGER Purchasing.LowCredit ON Purchasing.PurchaseOrderHeader  
 AFTER INSERT  
 AS  
+IF (@@ROWCOUNT_BIG  = 0)
+RETURN;
 IF EXISTS (SELECT *  
            FROM Purchasing.PurchaseOrderHeader AS p   
            JOIN inserted AS i   
@@ -482,14 +494,16 @@ GO
   
 ```  
   
-### <a name="d-using-a-database-scoped-ddl-trigger"></a>D. Utilisation d'un déclencheur DDL délimité à la base de données  
+### <a name="d-using-a-database-scoped-ddl-trigger"></a>D. Utilisation d'un déclencheur DDL avec une étendue de base de données  
  L'exemple suivant utilise un déclencheur DDL pour empêcher la suppression d'un synonyme dans une base de données.  
   
-```  
+```sql  
 CREATE TRIGGER safety   
 ON DATABASE   
 FOR DROP_SYNONYM  
 AS   
+IF (@@ROWCOUNT = 0)
+RETURN;
    RAISERROR ('You must disable Trigger "safety" to drop synonyms!',10, 1)  
    ROLLBACK  
 GO  
@@ -498,12 +512,12 @@ ON DATABASE;
 GO  
 ```  
   
-### <a name="e-using-a-server-scoped-ddl-trigger"></a>E. Utilisation d'un déclencheur DDL délimité au serveur  
+### <a name="e-using-a-server-scoped-ddl-trigger"></a>E. Utilisation d'un déclencheur DDL avec une étendue de serveur  
  L'exemple suivant utilise un déclencheur DDL pour imprimer un message si un événement CREATE DATABASE se produit sur l'instance de serveur active. Il utilise la fonction `EVENTDATA` pour récupérer le texte de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] correspondante. Pour obtenir d’autres exemples d’utilisation d’EVENTDATA dans des déclencheurs DDL, consultez [Utiliser la fonction EVENTDATA](../../relational-databases/triggers/use-the-eventdata-function.md).  
   
 **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
-```  
+```sql  
 CREATE TRIGGER ddl_trig_database   
 ON ALL SERVER   
 FOR CREATE_DATABASE   
@@ -521,7 +535,7 @@ GO
   
 **S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
-```  
+```sql  
 USE master;  
 GO  
 CREATE LOGIN login_test WITH PASSWORD = '3KHJ6dhx(0xVYsdf' MUST_CHANGE,  
@@ -544,16 +558,18 @@ END;
 ```  
   
 ### <a name="g-viewing-the-events-that-cause-a-trigger-to-fire"></a>G. Affichage des événements qui provoquent l'activation d'un déclencheur  
- L'exemple suivant effectue une requête sur les vues de catalogue `sys.triggers` et `sys.trigger_events` pour déterminer les événements de langage [!INCLUDE[tsql](../../includes/tsql-md.md)] qui provoquent l'activation du déclencheur `safety`. `safety` est créé dans l'exemple précédent.  
+ L'exemple suivant effectue une requête sur les affichages catalogue `sys.triggers` et `sys.trigger_events` pour déterminer les événements de langage [!INCLUDE[tsql](../../includes/tsql-md.md)] qui provoquent l'activation du déclencheur `safety`. `safety` est créé dans l'exemple précédent.  
   
-```  
+```sql  
 SELECT TE.*  
 FROM sys.trigger_events AS TE  
 JOIN sys.triggers AS T ON T.object_id = TE.object_id  
 WHERE T.parent_class = 0 AND T.name = 'safety';  
 GO  
 ```  
-  
+
+    
+
 ## <a name="see-also"></a> Voir aussi  
  [ALTER TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/alter-table-transact-sql.md)   
  [ALTER TRIGGER &#40;Transact-SQL&#41;](../../t-sql/statements/alter-trigger-transact-sql.md)   

@@ -1,16 +1,14 @@
 ---
-title: "Prédicats | Microsoft Docs"
-ms.custom: 
+title: Prédicats | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -18,22 +16,21 @@ helpviewer_keywords:
 - HAVING clause, predicates
 - FROM clause, predicates
 - unknown data [SQL Server]
-- TRUE
+- "TRUE"
 - WHERE clause, predicates
-- FALSE
+- "FALSE"
 - predicates [full-text search]
 - expressions [SQL Server], predicates
 ms.assetid: ddbc530c-f44d-4551-9ca3-3430258eb6c0
-caps.latest.revision: 
+caps.latest.revision: 30
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 598e7c6cfe94f8f74f65257c2a0a0aebf701a7cf
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e32215a927eee2800bcd90b6c33e1152197ecdf3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="predicates"></a>Prédicats
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

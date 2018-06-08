@@ -1,30 +1,30 @@
 ---
-title: "Fichiers de données SQL Server dans Microsoft Azure | Microsoft Docs"
-ms.custom: 
+title: Fichiers de données SQL Server dans Microsoft Azure | Microsoft Docs
+ms.custom: ''
 ms.date: 10/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 38ffd9c2-18a5-43d2-b674-e425addec4e4
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.openlocfilehash: 8c86ddf9555dbdac83821d7f16a7000415ec7b2d
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 8f0fb9a3b956a6ae1be07c3fc8337d83ebb4ad34
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-data-files-in-microsoft-azure"></a>Fichiers de données SQL Server dans Microsoft Azure
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]![Fichiers de données sur Azure](../../relational-databases/databases/media/data-files-on-azure.png "Fichiers de données sur Azure")  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  ![Fichiers de données sur Azure](../../relational-databases/databases/media/data-files-on-azure.png "Fichiers de données sur Azure")  
   
  Les fichiers de données SQL Server dans Microsoft Azure permettent la prise en charge native des fichiers de base de données SQL Server stockés en tant qu'objets blob Microsoft Azure. Elle permet de créer une base de données dans SQL Server exécuté localement ou sur une machine virtuelle dans Microsoft Azure, avec un emplacement de stockage dédié pour vos données dans le service de stockage d'objets blob Microsoft Azure. Cette amélioration simplifie en particulier le déplacement des bases de données entre les ordinateurs, grâce aux opérations par attachement et détachement. En outre, elle fournit un autre emplacement de stockage pour les fichiers de sauvegarde de base de données, ce qui permet de restaurer ces fichiers depuis ou vers le service Microsoft Azure Storage. Par conséquent, elle permet plusieurs solutions hybrides en offrant différents avantages en matière de virtualisation des données, de déplacement des données, de sécurité et de disponibilité, le tout à des coûts et une maintenance réduits pour une mise à l'échelle élastique et une haute disponibilité.
  
@@ -132,7 +132,7 @@ ON
  Depuis SQL Server 2014, un nouvel objet SQL Server a été ajouté pour être utilisé avec la fonctionnalité Fichiers de données SQL Server dans le stockage Azure. Le nouvel objet SQL Server est appelé [SQL Server, HTTP_STORAGE_OBJECT](../../relational-databases/performance-monitor/sql-server-http-storage-object.md) et il peut être utilisé par le Moniteur système pour surveiller l’activité lors de l’exécution de SQL Server avec Microsoft Azure Storage.  
   
 ### <a name="sql-server-management-studio-support"></a>Prise en charge de SQL Server Management Studio  
- SQL Server Management Studio vous permet d'utiliser cette fonctionnalité via plusieurs fenêtres de dialogue. Par exemple, vous pouvez entrer le chemin d’accès d’URL du conteneur de stockage sous la forme https://teststorageaccnt.blob.core.windows.net/testcontainer/ :
+ SQL Server Management Studio vous permet d'utiliser cette fonctionnalité via plusieurs fenêtres de dialogue. Par exemple, tapez le chemin de l’URL du conteneur de stockage, comme > https://teststorageaccnt.blob.core.windows.net/testcontainer/ :
  
  sous la forme d’un **Chemin d’accès** dans plusieurs fenêtres de boîte de dialogue, comme **Nouvelle base de données**, **Attacher la base de données**, et **Restaurer la base de données**. Pour plus d’informations, consultez [Didacticiel : Utilisation du service de stockage d’objets blob Microsoft Azure avec des bases de données SQL Server 2016](../tutorial-use-azure-blob-storage-service-with-sql-server-2016.md).  
   

@@ -1,27 +1,19 @@
 ---
-title: "Leçon du didacticiel Analysis Services 9 : créer des hiérarchies | Documents Microsoft"
-description: 
-ms.prod_service: analysis-services, azure-analysis-services
-services: analysis-services
-ms.suite: pro-bi
-documentationcenter: 
-author: Minewiskan
-manager: kfile
-editor: 
-tags: 
-ms.assetid: 
-ms.service: analysis-services
-ms.devlang: NA
-ms.topic: get-started-article
-ms.tgt_pltfrm: NA
-ms.workload: na
-ms.date: 02/20/2018
+title: 'Leçon du didacticiel Analysis Services 9 : créer des hiérarchies | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: tutorial
 ms.author: owend
-ms.openlocfilehash: 63aaf396aedfb550321a3b583db235cd9561e586
-ms.sourcegitcommit: 7ed8c61fb54e3963e451bfb7f80c6a3899d93322
+ms.reviewer: owend
+author: minewiskan
+manager: kfiles"
+ms.openlocfilehash: df99d05373d4d3087ef1d5fa5324ec645bf000b6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-hierarchies"></a>Créer des hiérarchies
 
@@ -56,7 +48,7 @@ Cet article fait partie d’un didacticiel de modélisation tabulaire, qui doit 
 
 6.  Enfin, ajoutez **EnglishProductName** à la hiérarchie de catégorie. Renommez-le **produit**.  
 
-    ![as-lesson9-category](../tutorial-tabular-1400/media/as-lesson9-category.png)
+    ![en tant que catégorie de lesson9](../tutorial-tabular-1400/media/as-lesson9-category.png)
   
 #### <a name="to-create-hierarchies-in-the-dimdate-table"></a>Pour créer des hiérarchies dans la table DimDate  
   

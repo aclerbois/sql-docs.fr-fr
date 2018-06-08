@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLPrepare | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLPrepare
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLPrepare
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLPrepare
-helpviewer_keywords: SQLPrepare function [ODBC]
+f1_keywords:
+- SQLPrepare
+helpviewer_keywords:
+- SQLPrepare function [ODBC]
 ms.assetid: 332e1b4b-b0ed-4e7a-aa4d-4f35f4f4476b
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0f4f752416fd704d3976728eabbe6a8b9d00bd37
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e2134b972d8cceebb5928f856f8a4361aa4199fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlprepare-function"></a>Fonction SQLPrepare
 **Mise en conformité**  
@@ -61,10 +62,10 @@ SQLRETURN SQLPrepare(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLPrepare** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLPrepare** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
-|01 S 02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (**SQLGetStmtAttr** peut être appelée pour déterminer quelle est la valeur substituée temporairement.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé. Les attributs d’instruction qui peuvent être modifiés sont : SQL_ATTR_CONCURRENCY SQL_ATTR_CURSOR_TYPE SQL_ATTR_KEYSET_SIZE SQL_ATTR_MAX_LENGTH SQL_ATTR_MAX_ROWS SQL_ATTR_QUERY_TIMEOUT SQL_ATTR_SIMULATE_CURSOR<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
+|01S02|Valeur de l’option modifiée|Un attribut d’instruction spécifiée non valide en raison de conditions de travail de mise en œuvre, donc une valeur similaire a été remplacée temporairement. (**SQLGetStmtAttr** peut être appelée pour déterminer quelle est la valeur substituée temporairement.) La valeur de remplacement n’est valide pour le *au paramètre StatementHandle* jusqu'à ce que le curseur est fermé. Les attributs d’instruction qui peuvent être modifiés sont : SQL_ATTR_CONCURRENCY SQL_ATTR_CURSOR_TYPE SQL_ATTR_KEYSET_SIZE SQL_ATTR_MAX_LENGTH SQL_ATTR_MAX_ROWS SQL_ATTR_QUERY_TIMEOUT SQL_ATTR_SIMULATE_CURSOR<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
 |21S01|Liste de valeurs d’insertion ne correspond pas à la liste des colonnes|\**StatementText* contenait un **insérer** instruction et le nombre de valeurs à insérer ne correspond pas au degré de la table dérivée.|  
 |21S02|Degré de la table dérivée ne correspond pas à la liste des colonnes|\**StatementText* contenait un **CREATE VIEW** instruction et le nombre de noms spécifié n’est pas le même niveau que la table dérivée défini par la spécification de requête.|  
@@ -81,7 +82,7 @@ SQLRETURN SQLPrepare(
 |42S11|L’index existe déjà|\**StatementText* contenait un **CREATE INDEX** instruction et le nom de l’index spécifié existaient déjà.|  
 |42S12|Index non trouvé|\**StatementText* contenait un **DROP INDEX** instruction et le nom de l’index spécifié n’existent pas.|  
 |42S21|La colonne existe déjà|\**StatementText* contenait un **ALTER TABLE** instruction et la colonne spécifiée dans le **ajouter** clause n’est pas unique ou identifie une colonne existante dans la table de base.|  
-|42S22|Colonne introuvable|\**StatementText* contenait un **CREATE INDEX** instruction et la valeur d’un ou plusieurs de la colonne spécifiées dans la liste des colonnes de noms n’existent pas.<br /><br /> \**StatementText* contenait un **GRANT** ou **RÉVOQUER** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **sélectionnez**, **supprimer**, **insérer**, ou **mise à jour** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **CREATE TABLE** instruction et une colonne spécifiée dans une contrainte (faisant référence à une table autre que celui en cours de création) n’existent pas.|  
+|42S22|Colonne introuvable|\**StatementText* contenait un **CREATE INDEX** instruction et la valeur d’un ou plusieurs de la colonne spécifiées dans la liste des colonnes de noms n’existent pas.<br /><br /> \**StatementText* contenait un **GRANT** ou **RÉVOQUER** instruction et un nom de colonne spécifié n’existent pas.<br /><br /> \**StatementText* contenait un **sélectionnez**, **supprimer**, **insérer**, ou **mise à jour** instruction et un nom de colonne spécifiée n’existe pas.<br /><br /> \**StatementText* contenait un **CREATE TABLE** instruction et une colonne spécifiée dans une contrainte (faisant référence à une table autre que celui en cours de création) n’existent pas.|  
 |HY000|Erreur générale|Une erreur s’est produite pour laquelle aucun code SQLSTATE spécifique est survenu et pour lequel aucune SQLSTATE spécifique à l’implémentation a été définie. Le message d’erreur retourné par **SQLGetDiagRec** dans les  *\*MessageText* tampon décrit l’erreur et sa cause.|  
 |HY001|Erreur d’allocation de mémoire|Le pilote n’a pas pu allouer la mémoire requise pour prendre en charge l’exécution ou à l’achèvement de la fonction.|  
 |HY008|Opération annulée|Le traitement asynchrone a été activé pour le *au paramètre StatementHandle*. La fonction a été appelée et avant qu’elle terminée l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *au paramètre StatementHandle*, et la fonction a été appelée à nouveau sur le *au paramètre StatementHandle*.<br /><br /> La fonction a été appelée et avant qu’elle terminée l’exécution, **SQLCancel** ou **SQLCancelHandle** a été appelé sur le *au paramètre StatementHandle* à partir d’un autre thread dans une application multithread.|  

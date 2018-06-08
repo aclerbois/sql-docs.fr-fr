@@ -1,30 +1,29 @@
 ---
-title: "Créer des extraits de code dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "Découvrez comment créer et utiliser des extraits de code SQL dans SQL opérations Studio (version préliminaire)"
+title: Créer des extraits de code dans les opérations de SQL Studio (version préliminaire) | Documents Microsoft
+description: Découvrez comment créer et utiliser des extraits de code SQL dans SQL opérations Studio (version préliminaire)
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.reviewer: alayu; erickang; sstein
-ms.prod: sql-non-specified
+ms.reviewer: alayu; sstein
+ms.prod: sql
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4670c824b1e52776c3d81d097beeb4ccd9e62e2d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: e8cd2dc80f7a719f82bd4ff09729cbbd5dfb4186
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/17/2018
 ---
-# <a name="create-and-use-code-snippets-to-quickly-create-transact-sql-t-sql-scripts-in-includename-sosincludesname-sos-shortmd"></a>Créer et utiliser des extraits de code pour créer rapidement des scripts Transact-SQL (T-SQL) dans[!INCLUDE[name-sos](../includes/name-sos-short.md)]
+# <a name="create-and-use-code-snippets-to-quickly-create-transact-sql-t-sql-scripts-in-includename-sosincludesname-sos-shortmd"></a>Créer et utiliser des extraits de code pour créer rapidement des scripts Transact-SQL (T-SQL) dans [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 
 Extraits de code dans le code [!INCLUDE[name-sos](../includes/name-sos-short.md)] sont des modèles qui le rendent plus facile de créent des bases de données et les objets de base de données. 
 
-[!INCLUDE[name-sos](../includes/name-sos-short.md)]fournit plusieurs extraits de code T-SQL pour vous aider à générer rapidement la syntaxe appropriée. 
+[!INCLUDE[name-sos](../includes/name-sos-short.md)] fournit plusieurs extraits de code T-SQL pour vous aider à générer rapidement la syntaxe appropriée. 
 
 Extraits de code défini par l’utilisateur peuvent également être créées.
 
@@ -61,7 +60,7 @@ Vous pouvez définir vos propres extraits de code. Pour ouvrir le fichier d’ex
 1. Sélectionnez **SQL**:
 
    > [!NOTE]
-   > [!INCLUDE[name-sos](../includes/name-sos-short.md)]Cet article traite plus précisément à l’aide d’extraits de code SQL hérite sa fonctionnalité d’extrait de code à partir de Code Visual Studio. Pour plus d’informations, consultez [créer vos propres extraits de code](https://code.visualstudio.com/docs/editor/userdefinedsnippets) dans la documentation de Visual Studio Code. 
+   > [!INCLUDE[name-sos](../includes/name-sos-short.md)] Cet article traite plus précisément à l’aide d’extraits de code SQL hérite sa fonctionnalité d’extrait de code à partir de Code Visual Studio. Pour plus d’informations, consultez [créer vos propres extraits de code](https://code.visualstudio.com/docs/editor/userdefinedsnippets) dans la documentation de Visual Studio Code. 
 
    ![Remplacez le champ de modèle](media/code-snippets/select-sql.png)
 

@@ -1,35 +1,34 @@
 ---
-title: "Créer des requêtes Update (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Créer des requêtes Update (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - tables [SQL Server], updating
 - queries [SQL Server], types
 - Update query
 - updating tables
 ms.assetid: 178b7b75-8078-4e61-b2a8-4719b9d8033d
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 27a23579d2396b2008587cafcaeb1cf6adf0f9ee
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 861f4eb008167ac539ce5f439c291bbfaa968bcb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-update-queries-visual-database-tools"></a>Créer des requêtes Update (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez changer le contenu de plusieurs lignes en une seule opération à l’aide d’une requête Update. Dans une table `titles` par exemple, vous pouvez recourir à une requête Update pour augmenter de 10% le prix de tous les livres d'un éditeur donné.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez modifier le contenu de plusieurs lignes en une seule opération à l'aide d'une requête Update. Dans une table `titles` par exemple, vous pouvez recourir à une requête Update pour augmenter de 10% le prix de tous les livres d'un éditeur donné.  
   
 Lorsque vous créez une requête Update, spécifiez :  
   

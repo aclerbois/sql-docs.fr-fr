@@ -1,17 +1,16 @@
 ---
-title: "Choisir un mode d’authentification | Microsoft Docs"
-ms.custom: 
+title: Choisir un mode d’authentification | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ins.instwizard.authenticationmode.f1
 - sql13.swb.passwordexpired.f1
@@ -28,19 +27,19 @@ helpviewer_keywords:
 - SQL authentication mode
 - Password Expired dialog box
 ms.assetid: ff7a6a48-3d38-4209-aa0f-7d6c0a8c64ef
-caps.latest.revision: 
+caps.latest.revision: 45
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1164bed25cbd7c13809c4a4ec8ea679119befd7b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: efb9a4044c54b81785f59c23ce74f1d4cf635b60
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="choose-an-authentication-mode"></a>Choisir un mode d'authentification
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pendant l’installation, vous devez sélectionner un mode d’authentification pour le [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Deux modes sont possibles : le mode d’authentification Windows et le mode mixte. Le mode d’authentification Windows active l’authentification Windows et désactive l’authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Le mode mixte active à la fois l’authentification Windows et l’authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . L'authentification Windows est toujours disponible et ne peut pas être désactivée.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pendant l’installation, vous devez sélectionner un mode d’authentification pour le [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Deux modes sont possibles : le mode d’authentification Windows et le mode mixte. Le mode d’authentification Windows active l’authentification Windows et désactive l’authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Le mode mixte active à la fois l’authentification Windows et l’authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . L'authentification Windows est toujours disponible et ne peut pas être désactivée.  
   
 ## <a name="configuring-the-authentication-mode"></a>Configuration du mode d'authentification  
  Si vous sélectionnez le mode d'authentification mixte au cours de l'installation, vous devez fournir, puis confirmer, un mot de passe fort pour le compte d'administrateur système [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] intégré appelé sa. Le compte sa se connecte à l'aide de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/21/2017
     > [!NOTE]  
     >  L'utilisation de l'authentification [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne limite pas les autorisations des administrateurs locaux sur l'ordinateur où [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est installé.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Considérations sur la sécurité pour une installation SQL Server](../../sql-server/install/security-considerations-for-a-sql-server-installation.md)  
   
   

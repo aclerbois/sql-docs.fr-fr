@@ -1,32 +1,31 @@
 ---
 title: Structure SSVARIANT | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-data-types
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 f1_keywords:
 - SSVARIANT
 helpviewer_keywords:
 - SSVARIANT struct
 ms.assetid: d13c6aa6-bd49-467a-9093-495df8f1e2d9
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e0f5df988e6f0a12fa5b5c2cebd9f5ce7b937104
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: feb71f4bd7cb6c2a18bfebad46eac4d50db34bcb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssvariant-structure"></a>Structure SSVARIANT
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -65,8 +64,8 @@ V_SS_DATETIMEOFFSET(pssVar).bScale = bScale;
 |Membre|Indicateur de type OLE DB|Type de données OLE DB C|Valeur vt|Commentaires|  
 |------------|---------------------------|------------------------|--------------|--------------|  
 |VT|SSVARTYPE|||Spécifie le type de la valeur contenue dans le **SSVARIANT** struct.|  
-|bTinyIntVal|DBTYPE_UI1|**BYTE**|**VT_SS_UI1**|Prend en charge la **tinyint** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
-|sShortIntVal|DBTYPE_I2|**SHORT**|**VT_SS_I2**|Prend en charge la **smallint** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
+|bTinyIntVal|DBTYPE_UI1|**OCTETS**|**VT_SS_UI1**|Prend en charge la **tinyint** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
+|sShortIntVal|DBTYPE_I2|**COURTE**|**VT_SS_I2**|Prend en charge la **smallint** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
 |lIntVal|DBTYPE_I4|**LONG**|**VT_SS_I4**|Prend en charge la **int** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
 |llBigIntVal|DBTYPE_I8|**LARGE_INTEGER**|**VT_SS_I8**|Prend en charge la **bigint** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
 |fltRealVal|DBTYPE_R4|**float**|**VT_SS_R4**|Prend en charge la **réel** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] type de données.|  
@@ -87,6 +86,6 @@ V_SS_DATETIMEOFFSET(pssVar).bScale = bScale;
 |BLOBType|UNUSED|UNUSED|UNUSED|UNUSED|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Types de données &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-data-types/data-types-ole-db.md)  
+ [Types de données & #40 ; OLE DB & #41 ;](../../relational-databases/native-client-ole-db-data-types/data-types-ole-db.md)  
   
   

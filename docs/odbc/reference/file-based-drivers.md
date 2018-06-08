@@ -1,31 +1,28 @@
 ---
-title: "Pilotes basés sur le fichier | Documents Microsoft"
-ms.custom: 
+title: Pilotes basés sur le fichier | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - file-based drivers [ODBC]
 - ODBC architecture [ODBC], drivers
 - drivers [ODBC], file-based drivers
 ms.assetid: d92e0c5c-d176-4282-bbe1-d449e2223d50
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c9873f0b61364bd12bca0823ba66749513a4342c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e8ce91d6606501d64702c27c6f4915b3ec96b936
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="file-based-drivers"></a>Pilotes basés sur des fichiers
 Pilotes basés sur des fichiers sont utilisés avec des sources de données telles que dBASE qui ne fournissent pas d’un moteur de base de données autonome pour le pilote à utiliser. Ces pilotes accéder directement aux données physiques et vous doivent implémenter un moteur de base de données pour traiter les instructions SQL. En tant qu’une pratique standard, les moteurs de base de données dans les pilotes basés sur le fichier implémentent le sous-ensemble de ODBC SQL définie par le niveau de conformité minimal SQL ; Pour obtenir la liste des instructions SQL dans ce niveau de conformité, consultez [annexe c : SQL grammaire](../../odbc/reference/appendixes/appendix-c-sql-grammar.md).  
@@ -34,4 +31,4 @@ Pilotes basés sur des fichiers sont utilisés avec des sources de données tell
   
  L’illustration suivante montre les deux configurations de pilotes basés sur des fichiers, dans lequel les données résident localement et l’autre dans lequel il réside sur un serveur de fichiers réseau.  
   
- ![Deux configurations du fichier &#45; pilotes en fonction](../../odbc/reference/media/pr06.gif "pr06")
+ ![Deux configurations du fichier&#45;pilotes](../../odbc/reference/media/pr06.gif "pr06")

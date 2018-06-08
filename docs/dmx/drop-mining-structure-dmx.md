@@ -1,20 +1,20 @@
 ---
-title: "SUPPRIMER LA STRUCTURE D’EXPLORATION DE DONNÉES (DMX) | Documents Microsoft"
-ms.custom: 
+title: SUPPRIMER LA STRUCTURE D’EXPLORATION DE DONNÉES (DMX) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - DROP MINING STRUCTURE
 - DROP_MINING_STRUCTURE
-dev_langs: DMX
+dev_langs:
+- DMX
 helpviewer_keywords:
 - removing mining structures
 - dropping mining structures
@@ -22,16 +22,15 @@ helpviewer_keywords:
 - deleting mining structures
 - mining structures [DMX], deleting
 ms.assetid: 30df8c36-3a15-4d8c-98f3-0f8917be9fc8
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 955b0c8a70cf7b051515f88ff1c73a593522e873
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 9d1317af40481261b60c375fb690260dd3173f6d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drop-mining-structure-dmx"></a>DROP MINING STRUCTURE (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -57,8 +56,8 @@ DROP MINING STRUCTURE [New Mailing]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
- [Guide de référence des instructions DMX &#40;Data Mining Extensions&#41;](../dmx/data-mining-extensions-dmx-statements.md)  
+ [Data Mining Extensions &#40;DMX&#41; instructions de définition de données](../dmx/dmx-statements-data-definition.md)   
+ [Data Mining Extensions &#40;DMX&#41; instructions de Manipulation de données](../dmx/dmx-statements-data-manipulation.md)   
+ [Les Extensions d’exploration de données & #40 ; DMX & #41 ; Référence des instructions](../dmx/data-mining-extensions-dmx-statements.md)  
   
   

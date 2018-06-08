@@ -1,28 +1,26 @@
 ---
-title: "DLL du programme d’installation traducteur | Documents Microsoft"
-ms.custom: 
+title: DLL du programme d’installation traducteur | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: translator setup DLL [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- translator setup DLL [ODBC]
 ms.assetid: b3ca79e9-01b9-4541-81de-bbbad24ca736
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3ce6961ec470bf0e0a7281a129d85f5cf69c9b80
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 65eca03533940a50a169a948021342f71a032153
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="translator-setup-dlls"></a>DLL de programme d’installation de conversion
 > [!NOTE]  

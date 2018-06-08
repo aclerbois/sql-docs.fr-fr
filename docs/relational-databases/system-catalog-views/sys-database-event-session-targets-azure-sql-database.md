@@ -1,30 +1,28 @@
 ---
-title: "Sys.database_event_session_targets (de base de données SQL Azure) | Documents Microsoft"
-ms.custom: 
+title: Sys.database_event_session_targets (de base de données SQL Azure) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.reviewer: 
-ms.service: 
+ms.reviewer: ''
 ms.component: system-catalog-views
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - Azure SQL Database
 ms.assetid: 38d775ee-1fe1-4820-88c6-02b2f875a66b
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f7cf2d9ee13d76c0446b1a412e8cf344eda7c858
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e3969ef0ff469392a93cd389a2104d2f3f82f87b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysdatabaseeventsessiontargets-azure-sql-database"></a>Sys.database_event_session_targets (de base de données SQL Azure)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
 title: TEXTVALID (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TEXTVALID_TSQL
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - text-pointer values
 - verifying text pointers
 ms.assetid: 9411c349-b59b-4740-a270-92f91d81ad23
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d64916b441c65dc00e0e387e08c2967124721514
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: cf78bace0ee983375553433b5da117cfc02abbfc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="text-and-image-functions---textvalid-transact-sql"></a>Fonctions texte et image - TEXTVALID (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -73,8 +70,8 @@ TEXTVALID ( 'table.column' ,text_ ptr )
   
 |Fonction ou instruction|Description|  
 |---------------------------|-----------------|  
-|PATINDEX**(**'*%pattern%**'***,** *expression***)**|Retourne la position d’un caractère dans la chaîne de caractères spécifiée dans les colonnes **text** et **ntext**.|  
-|DATALENGTH**(***expression***)**|Retourne la longueur des données dans les colonnes de type **text**, **ntext** et **image**.|  
+|PATINDEX **(**'*%pattern%**'***,** *expression***)**|Retourne la position d’un caractère dans la chaîne de caractères spécifiée dans les colonnes **text** et **ntext**.|  
+|DATALENGTH **(***expression***)**|Retourne la longueur des données dans les colonnes de type **text**, **ntext** et **image**.|  
 |SET TEXTSIZE|Retourne la limite, en octets, des données **text**, **ntext** ou **image** à retourner avec une instruction SELECT.|  
   
 ## <a name="examples"></a>Exemples  

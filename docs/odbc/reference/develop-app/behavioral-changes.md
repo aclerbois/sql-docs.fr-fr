@@ -1,31 +1,28 @@
 ---
 title: Modifications comportementales | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backward compatibility [ODBC], behavioral changes
 - behavioral changes [ODBC]
 - compatibility [ODBC], behavioral changes
 ms.assetid: a17ae701-6ab6-4eaf-9e46-d3b9cd0a3a67
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ccd4cdd57771d32a6a09bf1c1030ba173ee18486
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ed9b06793abef5006e49b2f526d11ead798c7931
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="behavioral-changes"></a>Changements de comportement
 Changements de comportement sont celles pour lesquelles le *syntaxe* de l’interface reste la même, mais la *sémantique* ont été modifiés. Pour que ces modifications, les fonctionnalités utilisées dans ODBC 2. *x* se comporte différemment de la même fonctionnalité dans ODBC 3. *x*.  

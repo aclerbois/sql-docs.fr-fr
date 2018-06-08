@@ -1,17 +1,14 @@
 ---
-title: "Configurer l’option de configuration de serveur max degree of parallelism | Microsoft Docs"
-ms.custom: 
+title: Configurer l’option de configuration de serveur max degree of parallelism | Microsoft Docs
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - parallel queries [SQL Server]
 - processors [SQL Server], parallel queries
@@ -19,16 +16,15 @@ helpviewer_keywords:
 - max degree of parallelism option
 - MaxDop
 ms.assetid: 86b65bf1-a6a1-4670-afc0-cdfad1558032
-caps.latest.revision: 
+caps.latest.revision: 33
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 03d28f2701a077e8f822c6e174a8a6d61de7f6c2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: edafaecb6bdc11622c7394e3f4a35410c9525ac4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configure-the-max-degree-of-parallelism-server-configuration-option"></a>Configurer l'option de configuration de serveur max degree of parallelism
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -43,7 +39,7 @@ ms.lasthandoff: 02/03/2018
   
 ###  <a name="Recommendations"></a> Recommandations  
   
--   Cette option avancée ne doit être changée que par un administrateur de base de données qualifié ou un spécialiste agréé [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
+-   Seul un administrateur de base de données qualifié ou un spécialiste agréé doit changer cette option avancée [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].  
   
 -   Pour permettre au serveur de déterminer le degré maximal de parallélisme, définissez cette option sur 0, c'est-à-dire la valeur par défaut. Attribuer la valeur 0 à l'option Degré maximal de parallélisme permet à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] d'utiliser tous les processeurs disponibles, dans la limite de 64. Pour supprimer la génération de plans parallèles, attribuez la valeur 1 à l'option **Degré maximal de parallélisme** . Affectez la valeur à un nombre compris entre 1 et 32 767 pour spécifier le nombre maximal de noyaux de processeurs qui peuvent être utilisés par une seule exécution. Si une valeur supérieure au nombre de processeurs disponibles est spécifiée, le nombre réel de processeurs disponibles est utilisé. Si votre ordinateur est équipé d'un seul processeur, la valeur de l'option **max degree of parallelism** est ignorée.  
   
@@ -117,7 +113,7 @@ GO
  [DBCC CHECKDB &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-checkdb-transact-sql.md)   
  [DBCC CHECKFILEGROUP &#40;Transact-SQL&#41;](../../t-sql/database-console-commands/dbcc-checkfilegroup-transact-sql.md)   
  [Configurer des opérations d'index parallèles](../../relational-databases/indexes/configure-parallel-index-operations.md)   
- [Indicateurs de requête &#40; Transact-SQL &#41; ](../../t-sql/queries/hints-transact-sql-query.md) [Définir les options d’index](../../relational-databases/indexes/set-index-options.md)  
+ [Indicateurs de requête & #40 ; Transact-SQL & #41 ; ](../../t-sql/queries/hints-transact-sql-query.md) [Définir les options d’index](../../relational-databases/indexes/set-index-options.md)  
  [Recommandations et directives pour l’option de configuration « max degree of parallelism » dans SQL Server](http://support.microsoft.com/help/2806535)
   
   

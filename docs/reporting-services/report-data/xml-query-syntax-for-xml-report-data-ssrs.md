@@ -1,32 +1,30 @@
 ---
-title: "Syntaxe de requête XML pour les données de rapport XML (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Syntaxe de requête XML pour les données de rapport XML (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - namespaces [Reporting Services]
 - data processing extensions [Reporting Services], data sources
 - xmldp [Reporting Services]
 - XML [Reporting Services], data retrieval
 ms.assetid: d203886f-faa1-4a02-88f5-dd4c217181ef
-caps.latest.revision: "49"
+caps.latest.revision: 49
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 0a76ff48f3c6f98f426ee5805898a0a1a9caf716
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 24dd0f5497d89f49234dc53e0ad71a7cf2e9ab47
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-query-syntax-for-xml-report-data-ssrs"></a>Syntaxe de requête XML pour les données de rapport XML (SSRS)
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]vous permet de créer des datasets pour des sources de données XML. Après avoir défini une source de données, vous devez créer une requête pour le dataset. Selon le type de données XML sur lesquelles pointent la source de données, vous pouvez créer la requête du dataset en incluant une **requête** XML ou un chemin d’élément. Une **requête** XML commence par une balise **\<Query>** et comprend des espaces de noms et des éléments XML variant selon la source de données. Un chemin d'accès à un élément opère indépendamment des espaces de noms ; il précise les nœuds et les attributs de nœud à utiliser à partir des données XML sous-jacentes avec une syntaxe similaire à la syntaxe XPath. Pour plus d’informations sur les chemins d’éléments, consultez [Syntaxe du chemin vers l’élément pour des données de rapport XML &#40;SSRS&#41;](../../reporting-services/report-data/element-path-syntax-for-xml-report-data-ssrs.md).  
@@ -97,7 +95,7 @@ ms.lasthandoff: 01/09/2018
 |`<xmldp:Query xmlns:xmldp="http://schemas.microsoft.com/sqlserver/2005/02/reporting/XmlDPQuery" xmlns:ns="http://schemas.microsoft.com/...">`<br /><br /> `<xmldp:ElementPath>Root {}/ns:Element2/Node</xmldp:ElementPath>`<br /><br /> `</xmldp:Query>`|Valeur D<br /><br /> Valeur E<br /><br /> Valeur F|  
   
 #### <a name="xml-document-dpnamespacexml"></a>Document XML : DPNamespace.xml  
- Vous pouvez copier ce code XML et l'enregistrer dans une URL disponible pour que le Concepteur de rapports l'utilise comme source de données XML : par exemple, http://localhost/DPNamespace.xml.  
+ Vous pouvez copier ce document XML et l'enregistrer dans une URL disponible pour être utilisée en tant que source de données par le Concepteur de rapports : par exemple http://localhost/DPNamespace.xml.  
   
 ```  
 <Root xmlns:ns="http://schemas.microsoft.com/...">  

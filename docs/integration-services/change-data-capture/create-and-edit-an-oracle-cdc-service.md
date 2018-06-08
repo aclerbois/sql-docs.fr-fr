@@ -1,30 +1,28 @@
 ---
-title: "Créer et modifier un service Oracle CDC | Microsoft Docs"
-ms.custom: 
+title: Créer et modifier un service Oracle CDC | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - createSrv
 ms.assetid: 10cd612e-d8f1-4af2-97d3-a0c22e1e2326
-caps.latest.revision: 
+caps.latest.revision: 9
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f7d6b89f2605cfdbc2f16cc2983171640362eb5b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 9802d1db4b8db647493d917f803c652071a3c983
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-and-edit-an-oracle-cdc-service"></a>Créer et modifier un service de capture de données modifiées Oracle
   Vous créez et modifiez un service Windows de capture de données modifiées Oracle dans la console de configuration du service de capture de données modifiées.  

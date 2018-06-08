@@ -1,35 +1,31 @@
 ---
-title: "Classe d’événements Deprecation Announcement | Microsoft Docs"
-ms.custom: 
+title: Classe d’événements Deprecation Announcement | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deprecation [SQL Server], events announced stage
 - Deprecation Announcement event class
 ms.assetid: 46fc578f-3c97-477f-879c-8a1b2cfd9d58
-caps.latest.revision: 
+caps.latest.revision: 27
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 18a5415e093612ec0c9cec2737f7f64ce7320f06
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: aa426af42947860ce90630cbec027fe3dd000442
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="deprecation-announcement-event-class"></a>Deprecation Announcement (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Deprecation Announcement** intervient quand vous utilisez une fonction vouée à être retirée dans une version future de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], mais qui sera toujours présente dans la prochaine version majeure. Pour une plus grande longévité de vos applications, évitez d’utiliser les fonctions qui font intervenir la classe d’événements **Deprecation Announcement** ou **Deprecation Final Support** .  
+  La classe d’événements **Deprecation Announcement** intervient quand vous utilisez une fonction vouée à être retirée dans une version future de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], mais qui sera toujours présente dans la prochaine version majeure. Pour une plus grande longévité de vos applications, évitez d’utiliser les fonctions qui font intervenir la classe d’événements **Deprecation Announcement** ou **Deprecation Final Support** .  
   
 ## <a name="deprecation-announcement-event-class-data-columns"></a>Colonnes de données de la classe d'événements Deprecation Announcement  
   

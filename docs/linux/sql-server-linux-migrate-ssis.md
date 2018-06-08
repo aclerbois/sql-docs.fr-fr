@@ -1,25 +1,22 @@
 ---
-title: "Extraire, transformer et charger des données sur Linux avec SSIS | Documents Microsoft"
-description: "Cet article décrit de SQL Server Integration Services (SSIS) pour les ordinateurs Linux"
+title: Extraire, transformer et charger des données sur Linux avec SSIS | Documents Microsoft
+description: Cet article décrit de SQL Server Integration Services (SSIS) pour les ordinateurs Linux
 author: leolimsft
 ms.author: lle
 ms.reviewer: douglasl
 manager: craigg
 ms.date: 01/09/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
-ms.workload: On Demand
-ms.openlocfilehash: 87c28ec845a59ea13acce0585bc9b249f100a4a5
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+ms.technology: linux
+ms.openlocfilehash: 0fc4e01f4bdd5eb56c41b1e85b7e96ba869f5454
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="extract-transform-and-load-data-on-linux-with-ssis"></a>Extraire, transformer et charger des données sur Linux avec SSIS
 
@@ -75,7 +72,7 @@ Il existe trois manières d’exécuter un package SSIS qui est chiffré avec un
     or use environment variable SSIS_PACKAGE_DECRYPT to set decryption password.
     ```
 
-## <a name="design-packages"></a>Conception de packages
+## <a name="design-packages"></a>Concevoir des packages
 
 **Se connecter aux sources de données ODBC**. SSIS lors de l’actualisation de Linux CTP 2.1 et versions ultérieures, les packages SSIS permet les connexions ODBC sur Linux. Cette fonctionnalité a été testée avec les pilotes ODBC MySQL sur le serveur SQL Server, mais il est également prévue pour fonctionner avec n’importe quel pilote ODBC Unicode qui respecte la spécification ODBC. Au moment du design, vous pouvez fournir une source de données ou une chaîne de connexion pour se connecter aux données ODBC ; Vous pouvez également utiliser l’authentification Windows. Pour plus d’informations, consultez la [blog de l’annonce prise en charge d’ODBC sur Linux](https://blogs.msdn.microsoft.com/ssis/2017/06/16/odbc-is-supported-in-ssis-on-linux-ssis-helsinki-ctp2-1-refresh/).
 

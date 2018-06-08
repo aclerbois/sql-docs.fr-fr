@@ -1,30 +1,28 @@
 ---
-title: "SubmitChanges, méthode (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: SubmitChanges, méthode (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - SubmitChanges method [ADO]
 ms.assetid: 250062a4-13c4-4bed-807d-8b9ad81536d4
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5e6131490f2e1e39b0ab9d038b13af67ec52047
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6c4f2b3a0cf70d068e1f6a7124e7152c8329ebd1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="submitchanges-method-rds"></a>SubmitChanges, méthode (RDS)
 Soumet les modifications en attente de localement mis en cache et être mise à jour [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) à la source de données spécifiée dans le [Connect](../../../ado/reference/rds-api/connect-property-rds.md) propriété ou le [URL](../../../ado/reference/rds-api/url-property-rds.md) propriété.  

@@ -1,16 +1,14 @@
 ---
 title: Sys.stats (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 12/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.stats
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.stats catalog view
 ms.assetid: 42605c80-126f-460a-befb-a0b7482fae6a
-caps.latest.revision: 
+caps.latest.revision: 41
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0650931e6a9c450409cd40b366a5e9fb6bf08771
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 414de01d62d6472dd2a1d4efea02d11605592319
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysstats-transact-sql"></a>sys.stats (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -40,11 +38,11 @@ ms.lasthandoff: 01/02/2018
   
  La vue de catalogue [sys.stats_columns](../../relational-databases/system-catalog-views/sys-stats-columns-transact-sql.md) fournit des informations statistiques pour chaque colonne dans la base de données. Pour plus d’informations sur les statistiques, consultez [statistiques](../../relational-databases/statistics/statistics.md).  
   
-|Nom de colonne|Type de données|Description|  
+|Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
-|**object_id**|**Int**|ID de l'objet auquel ces statistiques appartiennent.|  
+|**object_id**|**int**|ID de l'objet auquel ces statistiques appartiennent.|  
 |**nom**|**sysname**|Nom des statistiques. Unique dans l'objet.|  
-|**stats_id**|**Int**|ID des statistiques. Unique dans l'objet.<br /><br />Si les statistiques correspondent à un index, le *stats_id* valeur est identique à la *index_id* valeur dans le [sys.indexes](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md) vue de catalogue.|  
+|**stats_id**|**int**|ID des statistiques. Unique dans l'objet.<br /><br />Si les statistiques correspondent à un index, le *stats_id* valeur est identique à la *index_id* valeur dans le [sys.indexes](../../relational-databases/system-catalog-views/sys-indexes-transact-sql.md) vue de catalogue.|  
 |**auto_created**|**bit**|Indique si les statistiques ont été créées automatiquement par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> 0 = Les statistiques n'ont pas été créées automatiquement par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> 1 = Les statistiques ont été créées automatiquement par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |**user_created**|**bit**|Indique si les statistiques ont été créées par un utilisateur.<br /><br /> 0 = Les statistiques n'ont pas été créées par un utilisateur.<br /><br /> 1 = Les statistiques ont été créées par un utilisateur.|  
 |**no_recompute**|**bit**|Indique si les statistiques ont été créées avec la **NORECOMPUTE** option.<br /><br /> 0 = les statistiques n’ont pas été créés avec le **NORECOMPUTE** option.<br /><br /> 1 = les statistiques ont été créées avec la **NORECOMPUTE** option.|  
@@ -74,13 +72,13 @@ WHERE s.object_id = OBJECT_ID('HumanResources.Employee');
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Affichages catalogue d’objets &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
+ [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [Interrogation des catalogues système SQL Server FAQ](../../relational-databases/system-catalog-views/querying-the-sql-server-system-catalog-faq.md)   
  [Statistiques](../../relational-databases/statistics/statistics.md)    
  [sys.dm_db_stats_properties &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-properties-transact-sql.md)   
- [Sys.dm_db_stats_histogram &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-histogram-transact-sql.md)   
- [Sys.stats_columns &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/sys-stats-columns-transact-sql.md)
+ [Sys.dm_db_stats_histogram &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-stats-histogram-transact-sql.md)   
+ [sys.stats_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-stats-columns-transact-sql.md)
  
 
  

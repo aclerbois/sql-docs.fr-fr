@@ -1,31 +1,28 @@
 ---
-title: "À l’aide de signets | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: À l’aide de signets | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - bookmarks [ADO]
 - Recordset object [ADO]
 ms.assetid: cca244e6-84f8-4394-bca9-f7a819b8f4df
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9a8da466d7fb1cc988df297dee72d80ed19fed44
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 46ea739c431005f8409b2c2680f15e55b077c086
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-bookmarks"></a>À l’aide de signets
 Il est souvent utile de pouvoir revenir directement à un enregistrement spécifique après avoir déplacé dans le **Recordset** sans avoir à parcourir tous les enregistrements et comparer des valeurs. Par exemple, si vous essayez de rechercher un enregistrement à l’aide de la **trouver** méthode, mais la recherche ne retourne aucun enregistrement, vous accédez automatiquement à chaque extrémité de la **Recordset**. Si votre fournisseur prend en charge les, les signets peuvent être utilisés pour marquer votre position avant d’utiliser le **trouver** méthode afin de pouvoir revenir à votre emplacement. Un signet est un **Variant** type valeur qui identifie de façon unique un enregistrement dans un **Recordset** objet.  

@@ -18,6 +18,7 @@
 ## [Configurer des cartes réseau InfiniBand](configure-infiniband-network-adapters.md)
 
 # Requête
+## [Configurer les statistiques automatiques](configure-auto-statistics.md)
 ## [Surveillance des requêtes actives](monitoring-active-queries.md)
 
 # Load
@@ -69,6 +70,7 @@
 ### [Configuration du réseau de l’appliance](appliance-network-configuration.md)
 ### [Topologie PDW](pdw-topology.md)
 ### [Provisionnement du certificat PWD](pdw-certificate-provisioning.md)
+### [Commutateur de la fonctionnalité PDW](appliance-feature-switch.md)
 ### [Configuration du pare-feu PDW](pdw-firewall-configuration.md)
 ### [État des services PDW](pdw-services-status.md)
 ### [Configuration de l’initialisation instantanée de fichiers](instant-file-initialization-configuration.md)

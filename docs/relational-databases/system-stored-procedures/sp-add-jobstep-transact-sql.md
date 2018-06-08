@@ -1,16 +1,14 @@
 ---
-title: sp_add_jobstep (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_add_jobstep (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_jobstep_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_jobstep
 ms.assetid: 97900032-523d-49d6-9865-2734fba1c755
-caps.latest.revision: 
+caps.latest.revision: 80
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c757a3d30bae1e95a8bf7d862daf0e1f0cf6138b
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: fc7970a2d38786a49beed08e63068be1abab4d51
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddjobstep-transact-sql"></a>sp_add_jobstep (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -66,30 +63,30 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id =** ] *job_id*  
+ [  **@job_id =** ] *job_id*  
  Numéro d'identification du travail auquel ajouter l'étape. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name =** ] **'***job_name***'**  
+ [  **@job_name =** ] **'***job_name***'**  
  Nom du travail auquel ajouter l'étape. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
   
- [ **@step_id =** ] *step_id*  
+ [  **@step_id =** ] *id_de_l*  
  Numéro d'identification de la séquence de l'étape de travail. Début de numéros d’identification à l’étape **1** et incrémentés sans intervalle. Si une étape est insérée dans une séquence existante, les numéros de cette séquence sont ajustés automatiquement. Une valeur est fournie si *id_de_l* n’est pas spécifié. *l’argument id_étape*est **int**, avec NULL comme valeur par défaut.  
   
- [ **@step_name =** ] **'***step_name***'**  
+ [  **@step_name =** ] **'***nom_de_l***'**  
  Nom de l'étape. *nom_de_l*est **sysname**, sans valeur par défaut.  
   
- [ **@subsystem =** ] **'***subsystem***'**  
+ [  **@subsystem =** ] **'***sous-système***'**  
  Sous-système utilisé par le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] service de l’Agent pour exécuter *commande*. *sous-système* est **nvarchar (40)**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|'**ACTIVESCRIPTING**'|Script actif<br /><br /> **\*\*Important\*\*** [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]|  
+|'**ACTIVESCRIPTING**'|Script actif<br /><br /> **\*\* Important \*\*** [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]|  
 |'**CMDEXEC**'|Commande du système d'exécution ou programme exécutable|  
 |'**DISTRIBUTION**'|Travail de l'Agent de distribution de réplication|  
-|'**SNAPSHOT**'|Travail de l'Agent d'instantané de réplication|  
+|'**INSTANTANÉ**'|Travail de l'Agent d'instantané de réplication|  
 |'**LOGREADER**'|Travail de l'Agent de lecture du journal de réplications|  
 |'**FUSION**'|Travail de l'Agent de fusion de réplication|  
 |'**QueueReader**'|Travail de l'Agent de lecture de la file d'attente de réplication|  
@@ -97,9 +94,9 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
 |'**ANALYSISCOMMAND**'|Commande Analysis Services (XMLA).|  
 |'**Dts**'|[!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] Exécution du package|  
 |'**PowerShell**'|script PowerShell|  
-|'**TSQL**' (valeur par défaut)|[!INCLUDE[tsql](../../includes/tsql-md.md)] instruction|  
+|'**TSQL**' (valeur par défaut)|Instruction [!INCLUDE[tsql](../../includes/tsql-md.md)]|  
   
- [ **@command=** ] **'***command***'**  
+ [  **@command=** ] **'***commande***'**  
  Les commandes à exécuter par **SQLServerAgent** via *sous-système*. *commande* est **nvarchar (max)**, avec NULL comme valeur par défaut. L'Agent SQL Server effectue une substitution de jetons qui offre la même souplesse que les variables lorsque vous écrivez des logiciels.  
   
 > [!IMPORTANT]  
@@ -120,7 +117,7 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
  [  **@cmdexec_success_code =** ] *code*  
  La valeur retournée par une **CmdExec** commande du sous-système pour indiquer que *commande* exécutée avec succès. *code*est **int**, avec une valeur par défaut **0**.  
   
- [ **@on_success_action=** ] *success_action*  
+ [  **@on_success_action=** ] *action_succès*  
  Action à effectuer si l'étape est exécutée correctement. *action_succès*est **tinyint**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description (action)|  
@@ -133,7 +130,7 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
  [ **@on_success_step_id =** ] *success_step_id*  
  ID de l’étape du travail à exécuter si l’étape réussit et *action_succès*est **4**. *id_étape_succès*est **int**, avec une valeur par défaut **0**.  
   
- [ **@on_fail_action=** ] *fail_action*  
+ [  **@on_fail_action=** ] *action_échec*  
  L’action à exécuter si l’étape échoue. *action_échec*est **tinyint**, et peut prendre l’une des valeurs suivantes.  
   
 |Valeur|Description (action)|  
@@ -143,28 +140,28 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
 |**3**|Passez à l'étape suivante|  
 |**4**|Passez à l’étape *id_étape_échec*|  
   
- [ **@on_fail_step_id=** ] *fail_step_id*  
+ [  **@on_fail_step_id=** ] *id_étape_échec*  
  ID de l’étape du travail à exécuter si l’étape échoue et *action_échec*est **4**. *id_étape_échec*est **int**, avec une valeur par défaut **0**.  
   
- [ **@server =**] **'***server***'**  
+ [  **@server =**] **'***server***'**  
  [!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)] *serveur*est **nvarchar (30)**, avec NULL comme valeur par défaut.  
   
  [  **@database_name=** ] **'***base de données***'**  
  Nom de la base de données dans laquelle l'étape [!INCLUDE[tsql](../../includes/tsql-md.md)] doit être exécutée. *base de données* est **sysname**, avec une valeur par défaut NULL, auquel cas la **master** base de données est utilisée. Les noms placés entre crochets ([ ]) ne sont pas autorisés. Pour une étape de travail ActiveX, la *base de données* est le nom de l’étape utilise le langage de script.  
   
- [ **@database_user_name=** ] **'***user***'**  
+ [  **@database_user_name=** ] **'***utilisateur***'**  
  Nom du compte d'utilisateur à utiliser lors de l'exécution d'une étape [!INCLUDE[tsql](../../includes/tsql-md.md)]. *utilisateur* est **sysname**, avec NULL comme valeur par défaut. Lorsque *utilisateur* est NULL, l’étape est exécutée dans le contexte de l’utilisateur du propriétaire du travail sur *base de données*.  L'Agent SQL Server inclut ce paramètre uniquement si le propriétaire du travail est un sysadmin SQL Server. Dans ce cas, l'étape Transact-SQL donnée est exécutée dans le contexte du nom d'utilisateur SQL Server spécifié. Si le propriétaire du travail n’est pas un administrateur système SQL Server, puis l’étape Transact-SQL sera toujours être exécuté dans le contexte de la connexion qui possède ce travail, et le @database_user_name paramètre sera ignoré.  
   
- [ **@retry_attempts=** ] *retry_attempts*  
+ [  **@retry_attempts=** ] *retry_attempts*  
  Nombre de tentatives à effectuer si l'étape échoue. *retry_attempts*est **int**, avec une valeur par défaut **0**, indiquant aucune tentative de tentatives.  
   
  [ **@retry_interval=** ] *retry_interval*  
  Nombre de minutes s'écoulant entre chaque tentative de reprise. *intervalle_entre_reprises*est **int**, avec une valeur par défaut **0**, ce qui indique un **0**-intervalle minute.  
   
- [ **@os_run_priority =** ] *run_priority*  
+ [  **@os_run_priority =** ] *priorité_exécution*  
  Réservé.  
   
- [ **@output_file_name=** ] **'***file_name***'**  
+ [  **@output_file_name=** ] **'***nom_fichier***'**  
  Nom du fichier dans lequel est enregistré le résultat de l'étape. *file_name*est **nvarchar(200)**, avec NULL comme valeur par défaut. *file_name*peut inclure un ou plusieurs jetons répertoriés sous *commande*. Ce paramètre est valide uniquement avec les commandes en cours d’exécution le [!INCLUDE[tsql](../../includes/tsql-md.md)], **CmdExec**, **PowerShell**, [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], ou [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] sous-systèmes.  
   
  [  **@flags=** ] *indicateurs*  
@@ -180,10 +177,10 @@ sp_add_jobstep [ @job_id = ] job_id | [ @job_name = ] 'job_name'
 |**32**|Écriture de toute la sortie dans l'historique des travaux|  
 |**64**|Création d'un événement Windows à utiliser comme signal pour l'étape de travail Cmd à abandonner|  
   
- [ **@proxy_id** = ] *proxy_id*  
+ [ **@proxy_id** =] *proxy_id*  
  Numéro d’identification du proxy pour lequel l’étape de travail s’exécute en tant que. *proxy_id* est de type **int**, avec NULL comme valeur par défaut. Si aucun *proxy_id* est spécifié, aucun *proxy_name* est spécifié et aucune *nom_utilisateur* est spécifié, l’étape de travail s’exécute en tant que compte de service pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’Agent.  
   
- [  **@proxy_name**  =] **'***proxy_name***'**  
+ [ **@proxy_name** =] **'***proxy_name***'**  
  Nom du proxy sous lequel s'exécute l'étape de travail. *proxy_name* est de type **sysname**, avec NULL comme valeur par défaut. Si aucun *proxy_id* est spécifié, aucun *proxy_name* est spécifié et aucune *nom_utilisateur* est spécifié, l’étape de travail s’exécute en tant que compte de service pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] l’Agent.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

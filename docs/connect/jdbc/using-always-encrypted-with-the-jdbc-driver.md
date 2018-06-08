@@ -2,27 +2,23 @@
 title: À l’aide d’Always Encrypted avec le pilote JDBC | Documents Microsoft
 ms.custom: ''
 ms.date: 3/14/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
-ms.component: jdbc
+ms.prod: sql
+ms.prod_service: connectivity
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 271c0438-8af1-45e5-b96a-4b1cabe32707
-caps.latest.revision: ''
+caps.latest.revision: 64
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 425f965c37e1d148a267566bd1980eb345cadfc6
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 7c53479e3e94206645382e0c7b2d930a0b63075f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-always-encrypted-with-the-jdbc-driver"></a>À l’aide d’Always Encrypted avec le pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
@@ -107,7 +103,7 @@ SQLServerConnection.registerColumnEncryptionKeyStoreProviders(keyStoreMap);
 >
 >  [azure-sdk-for-java](https://github.com/Azure/azure-sdk-for-java)
 >
->  [azure-activedirectory-library-for-java libraries](https://github.com/AzureAD/azure-activedirectory-library-for-java)
+>  [bibliothèques Azure bibliothèque Active Directory pour java](https://github.com/AzureAD/azure-activedirectory-library-for-java)
 >
 > Pour obtenir un exemple montrant comment inclure ces dépendances dans un projet Maven, consultez [télécharger ADAL4J et AKV dépendances avec Apache Maven](https://github.com/Microsoft/mssql-jdbc/wiki/Download-ADAL4J-And-AKV-Dependencies-with-Apache-Maven)
 

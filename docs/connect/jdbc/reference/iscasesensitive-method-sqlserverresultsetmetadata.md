@@ -1,30 +1,29 @@
 ---
-title: "Méthode isCaseSensitive (SQLServerResultSetMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode isCaseSensitive (SQLServerResultSetMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerResultSetMetaData.isCaseSensitive
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerResultSetMetaData.isCaseSensitive
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 4db67eb7-7ff2-4fb8-8052-39f699de53ff
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 41568a1dfd660906272c0bd1de9a7f185d9ee4b3
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 4c72b7b98c70eac284eccf47ce26bc84bd02e70f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="iscasesensitive-method-sqlserverresultsetmetadata"></a>Méthode isCaseSensitive (SQLServerResultSetMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public boolean isCaseSensitive(int column)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *colonne*  
+ *column*  
   
  Un **int** qui indique l’index de colonne.  
   

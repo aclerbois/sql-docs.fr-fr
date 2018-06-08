@@ -1,17 +1,16 @@
 ---
-title: "Déployer une base de données à l’aide d’une DAC | Microsoft Docs"
-ms.custom: 
+title: Déployer une base de données à l’aide d’une DAC | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: data-tier-applications
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-data-tier-apps
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.dbdeployment.settings.f1
 - sql13.swb.dbdeployment.progress.f1
@@ -22,19 +21,19 @@ helpviewer_keywords:
 - deploy database wizard
 - database deploy [SQL Server]
 ms.assetid: 08c506e8-4ba0-4a19-a066-6e6a5c420539
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 110cea8f6a219fad5121e88a19ed5608b2afcb59
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: d87f60bc73ff969aa2f3f6ef42264ea8cb93b23c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deploy-a-database-by-using-a-dac"></a>Déployer une base de données à l'aide d'une DAC
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Utilisez **l’Assistant Déploiement de base de données dans SQL Azure** pour déployer une base de données entre une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] et un serveur [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)], ou entre deux serveurs [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Utilisez l’Assistant **Déploiement de base de données dans SQL Azure** pour déployer une base de données entre une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] et un serveur [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)] , ou entre deux serveurs [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)].  
   
 ##  <a name="BeforeBegin"></a> Avant de commencer  
  L'Assistant utilise un fichier d'archive d'application de la couche Données (DAC) BACPAC pour déployer les données et les définitions des objets de base de données. Il effectue une opération d'exportation DAC de la base de données source, et une importation DAC vers la destination.  

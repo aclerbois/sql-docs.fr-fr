@@ -1,16 +1,14 @@
 ---
-title: sysmail_delete_profileaccount_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_delete_profileaccount_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_delete_profileaccount_sp
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_delete_profileaccount_sp
 ms.assetid: b58d06f2-d6c9-4c8e-95bd-027c50f4621a
-caps.latest.revision: 
+caps.latest.revision: 45
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 26daacbb43092e81ec4798d8199d69f67fe067f1
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: f90e939bf47154850c2183261af4cb541b19538d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmaildeleteprofileaccountsp-transact-sql"></a>sysmail_delete_profileaccount_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,16 +44,16 @@ sysmail_delete_profileaccount_sp  {   [ @profile_id = ] profile_id | [ @profile_
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@profile_id**  =] *profile_id*  
+ [ **@profile_id** =] *profile_id*  
  L’ID de profil du profil à supprimer. *profile_id* est **int**, avec NULL comme valeur par défaut. Soit le *profile_id* ou *profile_name* peut être spécifié.  
   
- [  **@profile_name**  =] **'***profile_name***'**  
+ [ **@profile_name** =] **'***profile_name***'**  
  Le nom du profil du profil à supprimer. *profile_name* est **sysname**, avec NULL comme valeur par défaut. Soit le *profile_id* ou *profile_name* peut être spécifié.  
   
- [ **@account_id** = ] *account_id*  
+ [ **@account_id** =] *account_id*  
  ID du compte à supprimer. *account_id* est **int**, avec NULL comme valeur par défaut. Soit le *account_id* ou *account_name* peut être spécifié.  
   
- [  **@account_name**  =] **'***account_name***'**  
+ [ **@account_name** =] **'***account_name***'**  
  Nom du compte à supprimer. *account_name* est **sysname**, avec NULL comme valeur par défaut. Soit le *account_id* ou *account_name* peut être spécifié.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -90,6 +87,6 @@ EXECUTE msdb.dbo.sysmail_delete_profileaccount_sp
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Créer un compte de messagerie de base de données](../../relational-databases/database-mail/create-a-database-mail-account.md)   
  [Objets de Configuration de messagerie de base de données](../../relational-databases/database-mail/database-mail-configuration-objects.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

@@ -1,15 +1,14 @@
 ---
 title: Les fonctions scalaires CLR | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 dev_langs:
 - TSQL
@@ -19,20 +18,19 @@ helpviewer_keywords:
 - SVF
 - scalar-valued functions
 ms.assetid: 20dcf802-c27d-4722-9cd3-206b1e77bee0
-caps.latest.revision: 
+caps.latest.revision: 81
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4715f0f4133c80276a11d5c10902a2cbc906b0d4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 739a6face41bc0f99b0f21567dee6192392e13fe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-scalar-valued-functions"></a>Fonctions scalaires CLR
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Une fonction scalaire (SVF) retourne une valeur unique, telle qu'une chaîne, un entier ou une valeur binaire. Vous pouvez créer des fonctions scalaires définies par l'utilisateur en code managé à l'aide de tout langage de programmation .NET Framework. Ces fonctions sont accessibles au code [!INCLUDE[tsql](../../includes/tsql-md.md)] ou autre code managé. Pour plus d’informations sur les avantages de l’intégration du CLR et en choisissant entre le code managé et [!INCLUDE[tsql](../../includes/tsql-md.md)], consultez [vue d’ensemble de l’intégration CLR](../../relational-databases/clr-integration/clr-integration-overview.md).  
+  Une fonction scalaire (SVF) retourne une valeur unique, telle qu'une chaîne, un entier ou une valeur binaire. Vous pouvez créer des fonctions scalaires définies par l'utilisateur en code managé à l'aide de tout langage de programmation .NET Framework. Ces fonctions sont accessibles au code [!INCLUDE[tsql](../../includes/tsql-md.md)] ou autre code managé. Pour plus d’informations sur les avantages de l’intégration du CLR et en choisissant entre le code managé et [!INCLUDE[tsql](../../includes/tsql-md.md)], consultez [vue d’ensemble de l’intégration CLR](../../relational-databases/clr-integration/clr-integration-overview.md).  
   
 ## <a name="requirements-for-clr-scalar-valued-functions"></a>Spécifications relatives aux fonctions scalaires CLR  
  Les fonctions scalaires .NET Framework sont implémentées en tant que méthodes d'une classe dans un assembly .NET Framework. Les paramètres d’entrée et le type retourné à partir d’une fonction scalaire peuvent être un des types de données scalaires pris en charge par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], à l’exception de **varchar**, **char**, **rowversion**, **texte**, **ntext**, **image**, **timestamp**, **table**, ou **curseur**. Les fonctions scalaires doivent garantir une correspondance entre le type de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et le type de données de retour de la méthode d'implémentation. Pour plus d’informations sur les conversions de type, consultez [de mappage de données de paramètre CLR](../../relational-databases/clr-integration-database-objects-types-net-framework/mapping-clr-parameter-data.md).  
@@ -45,7 +43,7 @@ Une fonction scalaire (SVF) retourne une valeur unique, telle qu'une chaîne, un
 >  Ne marquez pas une fonction comme étant déterministe si elle ne produit pas toujours les mêmes valeurs de sortie à partir des mêmes valeurs d'entrée et du même état de base de données. Le marquage d'une fonction comme étant déterministe alors que cette dernière ne l'est pas vraiment peut provoquer une altération des vues indexées et des colonnes calculées. Pour marquer une fonction comme déterministe, vous devez affecter la valeur « true » à la propriété **IsDeterministic** .  
   
 ### <a name="table-valued-parameters"></a>Paramètres table  
- Les paramètres table (types de tables définis par l'utilisateur et passés dans une procédure ou une fonction) offrent un moyen efficace pour passer plusieurs lignes de données au serveur. Ils procurent une fonctionnalité semblable aux tableaux de paramètres, mais offrent une meilleure souplesse et une intégration plus étroite à [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ils sont également susceptibles de générer de meilleures performances. Les paramètres table aident également à réduire le nombre d'allers-retours au serveur. Au lieu d'envoyer plusieurs demandes au serveur, comme avec une liste de paramètres scalaires, les données peuvent être envoyées au serveur en tant que paramètres table. Un type de table défini par l'utilisateur ne peut pas être passé en tant que paramètre table à une fonction ou à une procédure stockée managée s'exécutant dans le processus [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , ni être retourné à partir de ces dernières. Pour plus d’informations sur les paramètres table, consultez [utiliser des paramètres table &#40; moteur de base de données &#41;](../../relational-databases/tables/use-table-valued-parameters-database-engine.md).  
+ Les paramètres table (types de tables définis par l'utilisateur et passés dans une procédure ou une fonction) offrent un moyen efficace pour passer plusieurs lignes de données au serveur. Ils procurent une fonctionnalité semblable aux tableaux de paramètres, mais offrent une meilleure souplesse et une intégration plus étroite à [!INCLUDE[tsql](../../includes/tsql-md.md)]. Ils sont également susceptibles de générer de meilleures performances. Les paramètres table aident également à réduire le nombre d'allers-retours au serveur. Au lieu d'envoyer plusieurs demandes au serveur, comme avec une liste de paramètres scalaires, les données peuvent être envoyées au serveur en tant que paramètres table. Un type de table défini par l'utilisateur ne peut pas être passé en tant que paramètre table à une fonction ou à une procédure stockée managée s'exécutant dans le processus [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , ni être retourné à partir de ces dernières. Pour plus d’informations sur les paramètres table, consultez [utiliser des paramètres table & #40 ; moteur de base de données & #41 ;](../../relational-databases/tables/use-table-valued-parameters-database-engine.md).  
   
 ## <a name="example-of-a-clr-scalar-valued-function"></a>Exemple de fonction scalaire CLR  
  Voici une fonction scalaire simple qui accède à des données et renvoie une valeur entière :  

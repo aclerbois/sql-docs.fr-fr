@@ -1,16 +1,14 @@
 ---
 title: PERCENTILE_DISC (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/20/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - PERCENTILE_DISC
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - PERCENTILE_DISC function
 - analytic functions,PERCENTILE_DISC
 ms.assetid: b545413d-c4f7-4c8e-8617-607599a26680
-caps.latest.revision: 
+caps.latest.revision: 23
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a1e7ebdd2303108fbf63578a288d95eb2f3f7fe4
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c15033e0d5efc0b418b5c16ca15ba895907d5b34
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="percentiledisc-transact-sql"></a>PERCENTILE_DISC (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-all-md](../../includes/tsql-appliesto-ss2012-all-md.md)]
@@ -54,7 +52,7 @@ PERCENTILE_DISC ( numeric_literal ) WITHIN GROUP ( ORDER BY order_by_expression 
  Spécifie la liste des valeurs à trier et sur lesquelles calculer le percentile. Un seul argument *order_by_expression* est autorisé. L’ordre de tri par défaut est croissant. La liste des valeurs peut être d’un des types de données qui sont valides pour l’opération de tri.  
   
  OVER **(** \<partition_by_clause> **)**  
- Divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction percentile est appliquée. Pour plus d’informations, consultez [OVER, clause &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md). La \<clause ORDER BY> et la \<clause ROWS ou RANGE> ne peuvent pas être spécifiées dans une fonction PERCENTILE_DISC.  
+ Divise le jeu de résultats généré par la clause FROM en partitions auxquelles la fonction percentile est appliquée. Pour plus d’informations, consultez [Clause OVER &#40;Transact-SQL&#41;](../../t-sql/queries/select-over-clause-transact-sql.md). La \<clause ORDER BY> et la \<clause ROWS ou RANGE> ne peuvent pas être spécifiées dans une fonction PERCENTILE_DISC.  
   
 ## <a name="return-types"></a>Types de retour  
  Le type de retour est déterminé par le type *order_by_expression*.  

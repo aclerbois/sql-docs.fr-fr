@@ -1,16 +1,14 @@
 ---
 title: OBJECTPROPERTYEX (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - OBJECTPROPERTYEX
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - schema-scoped objects [SQL Server]
 - objects [SQL Server], schema-scoped
 ms.assetid: be36b3e3-3309-4332-bfb5-c7e9cf8dc8bd
-caps.latest.revision: 
+caps.latest.revision: 76
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63854d22cf1285fee6758ee0e78da0c13bb21dc6
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e9548f4174fbc2dc864785a17146d297044ef052
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="objectpropertyex-transact-sql"></a>OBJECTPROPERTYEX (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -50,13 +48,13 @@ OBJECTPROPERTYEX ( id , property )
   
 ## <a name="arguments"></a>Arguments  
  *id*  
- Expression représentant l'ID de l'objet dans la base de données active. *id* est de type**int** et considéré comme un objet étendu aux schémas dans le contexte de la base de données active.  
+ Expression représentant l'ID de l'objet dans la base de données active. *id* est de type **int** et est considéré comme un objet étendu aux schémas dans le contexte de la base de données active.  
   
  *property*  
  Expression contenant les informations à retourner pour l'objet spécifié par id. Le type de retour est **sql_variant**. Le tableau qui suit indique le type de données de base pour chaque valeur de propriété.  
   
 > [!NOTE]  
->  Sauf indication contraire, la valeur NULL est retournée lorsque *property* n’est pas un nom de propriété valide, lorsque *id* n’est pas un ID d’objet valide, lorsque *id* est un type d’objet qui n’est pas pris en charge pour la *propriété* spécifiée ou lorsque l’appelant n’est pas autorisé à consulter les métadonnées de l’objet.  
+>  Sauf indication contraire, la valeur NULL est retournée lorsque *property* n’est pas un nom de propriété valide, lorsque *id* n’est pas un ID d’objet valide, lorsque *id* est un type d’objet qui n’est pas pris en charge pour la propriété *property* spécifiée ou lorsque l’appelant n’est pas autorisé à consulter les métadonnées de l’objet.  
   
 |Nom de la propriété|Type d'objet|Description et valeurs retournées|  
 |-------------------|-----------------|-------------------------------------|  
@@ -65,7 +63,7 @@ OBJECTPROPERTYEX ( id , property )
 |CnstIsColumn|Contrainte|Contrainte CHECK, DEFAULT ou FOREIGN KEY sur une seule colonne.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |CnstIsDeleteCascade|Contrainte|Contrainte FOREIGN KEY avec l'option ON DELETE CASCADE.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |CnstIsDisabled|Contrainte|Contrainte désactivée.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
-|CnstIsNonclustKey|Contrainte|Contrainte PRIMARY KEY avec un index non-cluster.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
+|CnstIsNonclustKey|Contrainte|Contrainte PRIMARY KEY avec un index non cluster.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |CnstIsNotRepl|Contrainte|La contrainte est définie avec les mots clés NOT FOR REPLICATION.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |CnstIsNotTrusted|Contrainte|La contrainte a été activée sans vérification des lignes existantes. Il se peut donc qu'elle ne s'applique pas à toutes les lignes.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |CnstIsUpdateCascade|Contrainte|Contrainte FOREIGN KEY avec l'option ON UPDATE CASCADE.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
@@ -97,7 +95,7 @@ OBJECTPROPERTYEX ( id , property )
 |IsDefault|Tout objet étendu aux schémas|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].<br /><br /> Valeur par défaut associée.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |IsDefaultCnst|Tout objet étendu aux schémas|Contrainte DEFAULT.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |IsDeterministic|Fonctions scalaires et fonctions table, vue|Propriété de déterminisme de la fonction ou de la vue.<br /><br /> 1 = Déterministe<br /><br /> 0 = Non déterministe<br /><br /> Type de données de base : **int**|  
-|IsEncrypted|Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)], procédure [!INCLUDE[tsql](../../includes/tsql-md.md)], table, déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)], vue|Indique que le texte d'origine provenant de l'instruction du module a été converti dans un format d'obfuscation. La sortie générée par l'obfuscation n'est pas visible directement dans les vues de catalogue de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Les utilisateurs n’ayant pas accès aux tables système ou aux fichiers de base de données ne peuvent pas récupérer le texte obscurci. Le texte est cependant à la disposition des utilisateurs qui peuvent accéder aux tables système via le [port DAC](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md) ou accéder directement aux fichiers de bases de données. Les utilisateurs qui peuvent associer un débogueur au processus serveur peuvent également récupérer la procédure d'origine de la mémoire au moment de l'exécution.<br /><br /> 1 = Chiffrée<br /><br /> 0 = Non chiffrée<br /><br /> Type de données de base : **int**|  
+|IsEncrypted|Fonction [!INCLUDE[tsql](../../includes/tsql-md.md)], procédure [!INCLUDE[tsql](../../includes/tsql-md.md)], table, déclencheur [!INCLUDE[tsql](../../includes/tsql-md.md)], vue|Indique que le texte d'origine provenant de l'instruction du module a été converti dans un format d'obfuscation. La sortie générée par l'obfuscation n'est pas visible directement dans les affichages catalogue de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]. Les utilisateurs n’ayant pas accès aux tables système ou aux fichiers de base de données ne peuvent pas récupérer le texte obscurci. Le texte est cependant à la disposition des utilisateurs qui peuvent accéder aux tables système via le [port DAC](../../database-engine/configure-windows/diagnostic-connection-for-database-administrators.md) ou accéder directement aux fichiers de base de données. Les utilisateurs qui peuvent associer un débogueur au processus serveur peuvent également récupérer la procédure d'origine de la mémoire au moment de l'exécution.<br /><br /> 1 = Chiffrée<br /><br /> 0 = Non chiffrée<br /><br /> Type de données de base : **int**|  
 |IsExecuted|Tout objet étendu aux schémas|Spécifie quel objet peut être exécuté (vue, procédure, fonction ou déclencheur).<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |IsExtendedProc|Tout objet étendu aux schémas|Procédure étendue.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |IsForeignKey|Tout objet étendu aux schémas|Contrainte FOREIGN KEY.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
@@ -148,7 +146,7 @@ OBJECTPROPERTYEX ( id , property )
 |TableHasIdentity|Table de charge de travail|La table comporte une colonne d'identité.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |TableHasIndex|Table de charge de travail|La table comporte un index de type non défini.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |TableHasInsertTrigger|Table de charge de travail|L'objet comporte un déclencheur INSERT.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
-|TableHasNonclustIndex|Table de charge de travail|La table comporte un index non-cluster.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
+|TableHasNonclustIndex|Table de charge de travail|La table comporte un index non cluster.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |TableHasPrimaryKey|Table de charge de travail|La table comporte une clé primaire.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |TableHasRowGuidCol|Table de charge de travail|La table comporte un ROWGUIDCOL pour une colonne **uniqueidentifier**.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
 |TableHasTextImage|Table de charge de travail|La table comporte une colonne **text**, **ntext** ou **image**.<br /><br /> 1 = True<br /><br /> 0 = False<br /><br /> Type de données de base : **int**|  
@@ -179,7 +177,7 @@ OBJECTPROPERTYEX ( id , property )
  Un utilisateur peut voir uniquement les métadonnées des éléments sécurisables qui lui appartiennent ou pour lesquels il dispose d'une autorisation. Cela signifie que les fonctions intégrées générant des métadonnées, telles que OBJECTPROPERTYEX, peuvent retourner la valeur NULL si l'utilisateur ne dispose d'aucune autorisation sur l'objet. Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
   
 ## <a name="remarks"></a>Notes   
- [!INCLUDE[ssDE](../../includes/ssde-md.md)] considère que *object_id* se situe dans le contexte de la base de données active. Une requête référençant un *object_id* dans une autre base de données renvoit NULL ou des résultats incorrects. Par exemple, dans la requête qui suit, le contexte de base de données actuel est la base de données MASTER. [!INCLUDE[ssDE](../../includes/ssde-md.md)] va tenter de renvoyer la valeur de propriété de l’*object_id* spécifié dans cette base de données et non pas dans la base de données spécifiée dans la requête. La requête retourne des résultats incorrects car la vue `vEmployee` ne se trouve pas dans la base de données MASTER.  
+ [!INCLUDE[ssDE](../../includes/ssde-md.md)] considère que *object_id* se situe dans le contexte de la base de données active. Une requête référençant un *object_id* dans une autre base de données retourne NULL ou des résultats incorrects. Par exemple, dans la requête qui suit, le contexte de base de données actuel est la base de données MASTER. [!INCLUDE[ssDE](../../includes/ssde-md.md)] va tenter de renvoyer la valeur de propriété de l’*object_id* spécifié dans cette base de données et non pas dans la base de données spécifiée dans la requête. La requête retourne des résultats incorrects car la vue `vEmployee` ne se trouve pas dans la base de données MASTER.  
   
 ```  
 USE master;  

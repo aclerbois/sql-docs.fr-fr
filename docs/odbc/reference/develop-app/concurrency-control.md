@@ -1,30 +1,27 @@
 ---
-title: "Contrôle d’accès concurrentiel | Documents Microsoft"
-ms.custom: 
+title: Contrôle d’accès concurrentiel | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactions [ODBC], concurrency control
 - concurrency control [ODBC]
 ms.assetid: 75e4adb3-3d43-49c5-8c5e-8df96310d912
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ab0a0838c2bac6359452d3870cf3d3c7d8b472d3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2fd05a84e70b601180ce67a94cbdc4caabf7e37e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="concurrency-control"></a>Contrôle d'accès concurrentiel
 *Accès concurrentiel* est la possibilité de deux transactions utilisent les mêmes données en même temps, et avec accrue des transactions isolation devrait être une concurrence réduite. Il s’agit, car l’isolation des transactions est généralement implémentée par le verrouillage de lignes et que plusieurs lignes sont verrouillées, moins de transactions peuvent être effectuées au moins temporairement bloqué par une ligne verrouillée. Lors de la concurrence réduite est généralement considérée comme un compromis pour les transaction d’isolation élevés nécessaires pour maintenir l’intégrité de base de données, il peut devenir un problème dans un environnement interactif avec une activité élevée en lecture/écriture qui utilisent des curseurs.  

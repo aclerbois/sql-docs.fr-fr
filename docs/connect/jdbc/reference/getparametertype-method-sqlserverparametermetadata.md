@@ -1,30 +1,29 @@
 ---
-title: "Méthode getParameterType (SQLServerParameterMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getParameterType (SQLServerParameterMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerParameterMetaData.getParameterType
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerParameterMetaData.getParameterType
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 638aca05-63e4-4d73-a9c8-e0442f775720
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6a3e590d07848caa4aba77d14bf4d74048dbfe0d
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 02a61ee053fe147fc23524ab3721a5e08dc42e5c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getparametertype-method-sqlserverparametermetadata"></a>Méthode getParameterType (SQLServerParameterMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public int getParameterType(int param)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *Param*  
+ *param*  
   
  Un **int** qui indique l’index de paramètre.  
   

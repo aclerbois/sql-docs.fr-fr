@@ -1,27 +1,21 @@
 ---
-title: "Configurations matérielles (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Le matériel de système de plateforme Analytique (APS) est conçu avec des unités évolutives afin que vous achetez le bon volume de stockage et le traitement en fonction des besoins de votre entreprise."
-ms.date: 01/05/2017
-ms.topic: article
-ms.assetid: f95945b7-97ae-4ab9-bae5-c792a516acea
-caps.latest.revision: "9"
-ms.openlocfilehash: 6762775fdec3cd3a01a372ed5c16fbc4a93c1426
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Les configurations matérielles - système de plateforme Analytique | Documents Microsoft
+description: Le matériel de système de plateforme Analytique (APS) est conçu avec des unités évolutives afin que vous achetez le bon volume de stockage et le traitement en fonction des besoins de votre entreprise. La solution peut évoluer stockage pour Parallel Data Warehouse à partir de plusieurs téraoctets à 6 sur plusieurs pétaoctets de données.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 5677298e1924959c83cd95b86845e37eab7340e9
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="hardware-configurations"></a>Configurations matérielles
+# <a name="hardware-configurations---analytics-platform-system"></a>Configurations matérielles - système de plateforme Analytique
 Le matériel de système de plateforme Analytique (APS) est conçu avec des unités évolutives afin que vous achetez le bon volume de stockage et le traitement en fonction des besoins de votre entreprise. L’application met à l’échelle stockage pour SQL Server Parallel données Wareouse (PDW) à partir de plusieurs téraoctets à 6 plus pétaoctets de données.  
   
 ## <a name="contents"></a>Sommaire  

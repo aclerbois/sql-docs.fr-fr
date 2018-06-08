@@ -1,18 +1,13 @@
-﻿---
+---
 title: Désinstaller une instance existante de SQL Server (programme d’installation) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/27/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: ''
-ms.component: install
+ms.prod: sql
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-- setup-install
+ms.technology: install
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - removing instances of SQL Server
 - uninstalling instances of SQL Server
@@ -20,16 +15,15 @@ helpviewer_keywords:
 - instances of SQL Server, uninstalling
 - uninstalling SQL Server
 ms.assetid: 3c64b29d-61d7-4b86-961c-0de62261c6a1
-caps.latest.revision: ''
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: f5c422a4d1a25ed210f857b9de31aaadec481847
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 5bea9587b92e1452891e24475cc33a8baeec437b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772635"
 ---
 # <a name="uninstall-an-existing-instance-of-sql-server-setup"></a>Désinstaller une instance existante de SQL Server (programme d'installation)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -88,7 +82,7 @@ ms.lasthandoff: 02/09/2018
   
 4.  **Utiliser un compte bénéficiant des autorisations appropriées** Connectez-vous au serveur à l'aide du compte de service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou à l'aide d'un compte doté d'autorisations équivalentes. Par exemple, vous pouvez vous connecter au serveur à l'aide d'un compte qui est membre du groupe Administrateurs local.  
   
-### <a name="to-uninstall-an-instance-of-includessnoversionincludesssnoversion-mdmd"></a>Pour désinstaller une instance SQL Server [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
+### <a name="to-uninstall-an-instance-of-includessnoversionincludesssnoversion-mdmd"></a>To Uninstall an Instance of [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]  
   
 1.  Pour commencer le processus de désinstallation, cliquez sur **Panneau de configuration** , puis accédez à **Programmes et fonctionnalités**.  
   

@@ -1,16 +1,15 @@
 ---
-title: "Propriété de dépendances (classe SqlService) | Documents Microsoft"
-ms.custom: 
+title: Propriété de dépendances (classe SqlService) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - Dependencies Property (SqlService Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - Dependencies property
 ms.assetid: 92d54b7e-de2f-4978-b601-0196e37cbb41
-caps.latest.revision: 
+caps.latest.revision: 35
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ad3ef8f00c38a367a270ab406e4ead86ddc573d9
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: ae19e6a1b71bf8983114a84533cb59a3ee849ff0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dependencies-property-sqlservice-class"></a>Propriété Dependencies (classe SqlService)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

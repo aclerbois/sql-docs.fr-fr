@@ -1,31 +1,30 @@
 ---
-title: "Générateur de rapports dans SQL Server 2016 | Microsoft Docs"
-ms.custom: 
+title: Générateur de rapports dans SQL Server 2016 | Microsoft Docs
+ms.custom: ''
 ms.date: 03/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
-f1_keywords: "10428"
+f1_keywords:
+- "10428"
 helpviewer_keywords:
 - overview of Report Builder
 - getting started
 ms.assetid: 55bf4f9c-d037-412f-ae57-3fc39ce32fa5
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 5009b0c7ebe8fae67fe51a885dd9f5bf92dc69f9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 7b0e65fda3c8aab492d45546428db43b8af7fc1a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-builder-in-sql-server-2016"></a>Générateur de rapports dans SQL Server 2016
   [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] est un outil de création de rapports paginés pour les utilisateurs professionnels qui préfèrent travailler dans un environnement autonome plutôt que d’utiliser le Concepteur de rapports dans Visual Studio.  Lorsque vous concevez un rapport paginé, vous créez une définition de rapport qui spécifie l’emplacement des données à obtenir, leur nature et leur mode d’affichage. Au moment de l’exécution du rapport, le processeur de rapports assimile la définition de rapport que vous avez spécifiée, puis il récupère les données et les combine à la mise en page du rapport pour générer le rapport. Vous pouvez afficher un aperçu de votre rapport dans [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] et le publier sur un serveur de rapports [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] en mode natif ou intégré SharePoint, pour permettre à d’autres utilisateurs de l’exécuter.  

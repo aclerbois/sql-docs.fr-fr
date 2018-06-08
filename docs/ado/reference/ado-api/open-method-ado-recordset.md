@@ -1,17 +1,15 @@
 ---
-title: "Open (méthode) (jeu d’enregistrements ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Open (méthode) (jeu d’enregistrements ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset15::raw_Open
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Open method [ADO]
 ms.assetid: 3236749c-4b71-4235-89e2-ccdfaaa9319d
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 74e6fc58d5b32313806301467ca48b9f033b083b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e562f329f6f95a36777fc4db9131091003be37e0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-method-ado-recordset"></a>Open (méthode) (jeu d’enregistrements ADO)
 Ouvre un curseur sur une [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) objet.  
@@ -67,7 +64,7 @@ recordset.Open Source, ActiveConnection, CursorType, LockType, Options
   
  À l’aide de la **ouvrir** méthode sur un **Recordset** objet ouvre un curseur qui représente des enregistrements d’une table de base, les résultats d’une requête ou précédemment enregistré **Recordset**.  
   
- Utilisez le paramètre facultatif *Source* argument afin de spécifier une source de données à l’aide d’un des éléments suivants : un **commande** variable objet, une instruction SQL, une procédure stockée, un nom de table, une URL ou un nom de chemin d’accès complet du fichier. Si *Source* est un nom de chemin d’accès au fichier, il peut être un chemin d’accès complet (« c:\dir\file.rst »), d’un chemin d’accès relatif ( »... \file.rst »), ou une URL (« http://files/file.rst »).  
+ Utilisez le paramètre facultatif *Source* argument afin de spécifier une source de données à l’aide d’un des éléments suivants : un **commande** variable objet, une instruction SQL, une procédure stockée, un nom de table, une URL ou un nom de chemin d’accès complet du fichier. Si *Source* est un nom de chemin d’accès au fichier, il peut être un chemin d’accès complet (« c:\dir\file.rst »), d’un chemin d’accès relatif ( »... \file.rst »), ou une URL («http://files/file.rst»).  
   
  Il n’est pas judicieux d’utiliser le *Source* argument de la **ouvrir** méthode pour effectuer une requête d’action qui ne retourne pas d’enregistrements, car il n’existe aucun moyen simple de déterminer si l’appel a réussi. Le **Recordset** retourné par une requête va être fermée. Pour effectuer une requête qui ne retourne pas d’enregistrements, telle qu’une instruction SQL INSERT, appelez le [Execute](../../../ado/reference/ado-api/execute-method-ado-command.md) méthode d’un **commande** objet ou le [Execute](../../../ado/reference/ado-api/execute-method-ado-connection.md) méthode d’un [Connexion](../../../ado/reference/ado-api/connection-object-ado.md) à la place de l’objet.  
   

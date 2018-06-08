@@ -1,36 +1,31 @@
 ---
-title: "Collecte de données | Microsoft Docs"
-ms.custom: 
+title: Collecte de données | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 keywords:
-- "Collecte de données"
+- Collecte de données
 helpviewer_keywords:
 - data collection [SQL Server]
 ms.assetid: 0cc1f95c-5815-4d78-8868-a900be15e674
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 46
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 28d83f656e80e1e50b9176a3b705e6b5e62fe0f3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 39bc4afa05f9f72fcf2ec08cdfd85e65fa8bce04
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="data-collection"></a>Collecte de données
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Le collecteur de données est un composant de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] qui recueille différents jeux de données. La collecte de données peut s'exécuter de façon constante ou selon une planification définie par l'utilisateur. Le collecteur de données stocke les données recueillies dans une base de données relationnelle appelée entrepôt de données de gestion.  
+  Le collecteur de données est un composant de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] qui recueille différents jeux de données. La collecte de données peut s'exécuter de façon constante ou selon une planification définie par l'utilisateur. Le collecteur de données stocke les données recueillies dans une base de données relationnelle appelée entrepôt de données de gestion.  
   
 ## <a name="what-is-data-collector"></a>Qu’est-ce que le collecteur de données ? 
  Le collecteur de données est un composant majeur de la plateforme de collecte de données pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et les outils fournis par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Le collecteur de données centralise la collecte de données sur vos serveurs et applications de base de données. Ce point de collecte peut obtenir des données de diverses sources et n'est pas limité aux données de performance, contrairement à SQL Trace.  
@@ -46,7 +41,7 @@ Le collecteur de données est un composant de [!INCLUDE[ssCurrent](../../include
 ## <a name="concepts"></a>Concepts  
  Le collecteur de données est intégré à l’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et à [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], et il utilise ces deux composants de manière intensive. Avant de vous servir du collecteur de données, vous devez donc comprendre certains concepts liés à chacun de ces composants [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Agent permet de planifier et d’exécuter des travaux de collecte. Vous devez maîtriser les concepts suivants :  
+ L’Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] permet de planifier et d’exécuter des travaux de collecte. Vous devez maîtriser les concepts suivants :  
   
 -   Travail  
   
@@ -60,11 +55,11 @@ Le collecteur de données est un composant de [!INCLUDE[ssCurrent](../../include
   
  Pour plus d’informations, consultez [Tâches d’administration automatisée &#40;SQL Server Agent&#41;](http://msdn.microsoft.com/library/541ee5ac-2c9f-4b74-b4f0-13b7bd5920b0).  
   
- [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ([!INCLUDE[ssIS](../../includes/ssis-md.md)]) permet d’exécuter des packages qui collectent des données provenant de différents fournisseurs de données. Vous devez maîtriser les outils et les concepts [!INCLUDE[ssIS](../../includes/ssis-md.md)] suivants :  
+ [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] ([!INCLUDE[ssIS](../../includes/ssis-md.md)]) permet d’exécuter des packages qui collectent des données provenant de fournisseurs de données individuels. Vous devez maîtriser les outils et les concepts [!INCLUDE[ssIS](../../includes/ssis-md.md)] suivants :  
   
--   [!INCLUDE[ssIS](../../includes/ssis-md.md)] package  
+-   Package [!INCLUDE[ssIS](../../includes/ssis-md.md)]  
   
--   [!INCLUDE[ssIS](../../includes/ssis-md.md)] Configuration de package  
+-   Configuration de package [!INCLUDE[ssIS](../../includes/ssis-md.md)]  
   
  Pour plus d’informations, consultez [Integration Services &#40;SSIS&#41;, packages](../../integration-services/integration-services-ssis-packages.md).  
   

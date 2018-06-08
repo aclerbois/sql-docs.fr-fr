@@ -1,35 +1,34 @@
 ---
-title: "L’authentification Kerberos (OLE DB) intégrée | Documents Microsoft"
-ms.custom: 
+title: L’authentification Kerberos (OLE DB) intégrée | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-how-to
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 953ee253-a4be-4f47-bbad-d2f6600207b2
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eaed0b0527d89b31ab6bd55b56915d9bbf8ec419
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 156138a305fadb58b6aac4d0c17825319d63fe25
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="integrated-kerberos-authentication-ole-db"></a>Authentification Kerberos intégrée (OLE DB)
+# <a name="integrated-kerberos-authentication-ole-db"></a>Authentification Kerberos intégrée (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../includes/snac-deprecated.md)]
 
   Cet exemple montre comment obtenir une authentification mutuelle Kerberos en utilisant OLE DB dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client. Cet exemple fonctionne avec [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] ou version ultérieure.  
   
- Pour plus d’informations sur les SPN et l’authentification Kerberos, consultez [nom Principal de Service &#40; Nom principal de service &#41; Prise en charge dans les connexions clientes](../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md).  
+ Pour plus d’informations sur les SPN et l’authentification Kerberos, consultez [nom Principal de Service &#40;SPN&#41; prise en charge dans les connexions clientes](../../relational-databases/native-client/features/service-principal-name-spn-support-in-client-connections.md).  
   
 ## <a name="example"></a>Exemple  
  Vous devez spécifier un serveur. Dans le fichier .cpp, remplacez « MyServer » par un nom d'ordinateur qui possède une instance de [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] (ou version ultérieure).  

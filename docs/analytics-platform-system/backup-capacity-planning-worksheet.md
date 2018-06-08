@@ -1,27 +1,21 @@
 ---
-title: "Feuille de planification de la capacité de la sauvegarde du serveur (SQL Server PDW)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Cette feuille de calcul de la planification de capacité vous aide à déterminer la configuration requise pour un serveur de sauvegarde pour effectuer la sauvegarde de base de données SQL Server PDW et opérations de restauration."
-ms.date: 01/05/2017
-ms.topic: article
-ms.assetid: 36294bf6-6dde-481f-a190-d4382b04c030
-caps.latest.revision: "6"
-ms.openlocfilehash: e025410f3be18b5f8276984219dd1cb6a40c2a87
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Planification des capacités de sauvegarde du serveur - Parallel Data Warehouse | Documents Microsoft
+description: Cette feuille de calcul de la planification de capacité vous aide à déterminer la configuration requise pour un serveur de sauvegarde pour effectuer la sauvegarde de base de données Parallel Data Warehouse et les opérations de restauration. Utilisez-le pour créer votre plan d’achat nouvelle ou mise en service sauvegarde serveurs existants.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 500bebab375a0d0b94032a1855af3844bc2e6fa7
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="backup-server-capacity-planning-worksheet"></a>Feuille de planification de capacité de sauvegarde du serveur
+# <a name="backup-server-capacity-planning-worksheet---parallel-data-warehouse"></a>Feuille de planification capacité sauvegarde du serveur - Parallel Data Warehouse
 Cette feuille de calcul de la planification de capacité vous aide à déterminer la configuration requise pour un serveur de sauvegarde pour effectuer la sauvegarde de base de données SQL Server PDW et opérations de restauration. Utilisez-le pour créer votre plan d’achat nouvelle ou mise en service sauvegarde serveurs existants.  
   
 Cette feuille de calcul est un complément pour les instructions de [acquérir et de configurer un serveur de sauvegarde](acquire-and-configure-backup-server.md).  

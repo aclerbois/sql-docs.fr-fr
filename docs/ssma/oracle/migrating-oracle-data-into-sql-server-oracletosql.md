@@ -1,30 +1,28 @@
 ---
-title: "Migration de données Oracle dans SQL Server (OracleToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Migration de données Oracle dans SQL Server (OracleToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Oracle Data Migration, Client-Side Migration
 - Oracle Data Migration,Server-Side Migration
 ms.assetid: e23c5268-41ed-4e55-9fe7-a11376202a13
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: On Demand
-ms.openlocfilehash: fee4d190885979fe55c598a542feed89a460e3d5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: da5375ad57a2852159c8a71e08be3082f0b3f860
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="migrating-oracle-data-into-sql-server-oracletosql"></a>Migration de données Oracle dans SQL Server (OracleToSQL)
 Après avoir synchronisé correctement les objets convertis avec [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], vous pouvez migrer des données d’Oracle vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)].  
@@ -98,7 +96,7 @@ Pour afficher les messages de la migration, assurez-vous que le volet de résult
     > [!NOTE]  
     > Si SSMA pour Oracle Extension Pack n’est pas installé sur l’instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]et si **moteur de Migration de données côté serveur** est sélectionnée, puis rencontré lors de la migration des données à la base de données cible, l’erreur suivante : « composants de Migration de données de SSMA sont introuvables sur le serveur SQL Server, migration de données côté serveur ne sera pas possible. Vérifiez si le Pack d’Extension est correctement installé ». Cliquez sur **Annuler** pour mettre fin à la migration des données.  
   
-5.  Dans le **se connecter à Oracle** boîte de dialogue, entrez les informations d’identification de connexion, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à Oracle, consultez [se connecter à Oracle &#40; OracleToSQL &#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md)  
+5.  Dans le **se connecter à Oracle** boîte de dialogue, entrez les informations d’identification de connexion, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à Oracle, consultez [se connecter à Oracle &#40;OracleToSQL&#41;](../../ssma/oracle/connect-to-oracle-oracletosql.md)  
   
     Pour se connecter à la base de données cible [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], entrez les informations d’identification de connexion dans le **se connecter à SQL Server** boîte de dialogue, puis cliquez sur **connexion**. Pour plus d’informations sur la connexion à [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)], consultez [se connecter à SQL Server](http://msdn.microsoft.com/en-us/bb8c4bde-cfc2-4636-92ae-5dd24abe9536)  
   
@@ -108,5 +106,5 @@ Pour afficher les messages de la migration, assurez-vous que le volet de résult
 > Lors de l’édition de SQL Express est utilisée comme base de données cible, uniquement les migration de données côté client est autorisée et migration des données côté serveur n’est pas pris en charge.  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration bases de données Oracle pour SQL Server &#40; OracleToSQL &#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
+[Bases de données de migration d’Oracle vers SQL Server &#40;OracleToSQL&#41;](../../ssma/oracle/migrating-oracle-databases-to-sql-server-oracletosql.md)  
   

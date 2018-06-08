@@ -1,16 +1,14 @@
 ---
-title: "(SQLXML 4.0) de la mise en forme XML côté client | Documents Microsoft"
-ms.custom: 
+title: (SQLXML 4.0) de la mise en forme XML côté client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - FOR XML clause, formatting
@@ -18,20 +16,20 @@ helpviewer_keywords:
 - client-side XML formatting
 - client-side-xml attribute
 ms.assetid: 9630a21d-a93b-4d3b-8a25-c4b32399f993
-caps.latest.revision: 
+caps.latest.revision: 34
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1024bf5d057d2a5a5480592817827c21b423b0f3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 8fa08dbdb74ae8fcf7aa61b5f35fa98249b40277
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="client-side-xml-formatting-sqlxml-40"></a>Mise en forme XML côté client (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette rubrique fournit des informations sur la mise en forme XML côté client. La mise en forme côté client fait référence à la mise en forme du code XML dans la couche intermédiaire.  
+  Cette rubrique fournit des informations sur la mise en forme XML côté client. La mise en forme côté client fait référence à la mise en forme du code XML dans la couche intermédiaire.  
   
 > [!NOTE]  
 >  Cette rubrique fournit des informations supplémentaires sur l'utilisation de la clause FOR XML côté client ; elle suppose que la clause FOR XML vous est déjà familière. Pour plus d’informations sur FOR XML, consultez [construction de code XML à l’aide de XML](../../../relational-databases/xml/for-xml-sql-server.md).  
@@ -131,13 +129,13 @@ AS
 >  Si vous exécutez un modèle XML dans une application ADO qui utilise le fournisseur SQLXMLOLEDB, et que vous spécifiez à la fois le **client-side-xml** attribut dans le modèle et le fournisseur ClientSideXML (propriété), la valeur spécifiée dans le modèle est prioritaire.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Architecture de mise en forme côté Client et côté serveur XML &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/formatting/architecture-of-client-side-and-server-side-xml-formatting-sqlxml-4-0.md)   
- [FOR XML &#40; SQL Server &#41;](../../../relational-databases/xml/for-xml-sql-server.md)   
- [POUR les considérations de sécurité XML &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/for-xml-security-considerations-sqlxml-4-0.md)   
+ [Architecture de mise en forme côté Client et côté serveur XML &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml/formatting/architecture-of-client-side-and-server-side-xml-formatting-sqlxml-4-0.md)   
+ [FOR XML &#40;SQL Server&#41;](../../../relational-databases/xml/for-xml-sql-server.md)   
+ [POUR des raisons de sécurité XML &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/security/for-xml-security-considerations-sqlxml-4-0.md)   
  [prise en charge du Type de données dans SQLXML 4.0 XML](../../../relational-databases/sqlxml/xml-data-type-support-in-sqlxml-4-0.md)   
  [Classes managées SQLXML](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/net-framework-classes/sqlxml-4-0-net-framework-support-managed-classes.md)   
- [Mise en forme XML La mise en forme XML côté serveur &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml/formatting/client-side-vs-server-side-xml-formatting-sqlxml-4-0.md)   
- [Objet SqlXmlCommand &#40; Managées SQLXML Classes &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/net-framework-classes/sqlxml-managed-classes-sqlxmlcommand-object.md)   
+ [Mise en forme XML La mise en forme XML côté serveur &#40;SQLXML 4.0&#41;](../../../relational-databases/sqlxml/formatting/client-side-vs-server-side-xml-formatting-sqlxml-4-0.md)   
+ [Objet SqlXmlCommand & #40 ; Managées SQLXML Classes & #41 ;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/net-framework-classes/sqlxml-managed-classes-sqlxmlcommand-object.md)   
  [Données XML &#40;SQL Server&#41;](../../../relational-databases/xml/xml-data-sql-server.md)  
   
   

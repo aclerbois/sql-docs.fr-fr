@@ -1,32 +1,29 @@
 ---
-title: "Exemple de propriété version (VB) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriété version (VB) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - Version property [ADO], Visual Basic example
 ms.assetid: 708efd50-2905-4168-b7e4-91b2e9b23539
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6ecf18b7bd750297e481fe29ca391904bf6cc4c
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3c48b12324b24a03452e7520afe04579c2989252
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="version-property-example-vb"></a>Exemple de propriété version (VB)
 Cet exemple utilise le [Version](../../../ado/reference/ado-api/version-property-ado.md) propriété d’un [connexion](../../../ado/reference/ado-api/connection-object-ado.md) objet pour afficher la version ADO actuelle. Il utilise aussi plusieurs propriétés dynamiques pour afficher :  

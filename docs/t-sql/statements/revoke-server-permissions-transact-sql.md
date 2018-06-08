@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur un serveur (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur un serveur (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,18 +17,17 @@ helpviewer_keywords:
 - REVOKE statement, server permissions
 - servers [SQL Server], permissions
 ms.assetid: 7b9a56b3-face-452e-a655-147dac306ba1
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 682afe6c9da8c675231c1cf7b505cb2c28813c26
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: f3834c7d3ef7d0dc6185f181757edeaf43df238a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-server-permissions-transact-sql"></a>REVOKE- Révoquer des autorisations sur un serveur (Transact-SQL)
+# <a name="revoke-server-permissions-transact-sql"></a>REVOKE – révocation d'autorisations de serveur (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Permet de supprimer des autorisations GRANT et DENY au niveau serveur.  

@@ -1,35 +1,32 @@
 ---
-title: "Interrogation d’une table hiérarchique à l’aide de méthodes hiérarchiques | Microsoft Docs"
-ms.custom: 
+title: Interrogation d’une table hiérarchique à l’aide de méthodes hiérarchiques | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 helpviewer_keywords:
 - HierarchyID
 ms.assetid: 3b4f7dae-65b5-4d8d-8641-87aba9aa692d
-caps.latest.revision: 
+caps.latest.revision: 18
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5cdd782633ee4a2cf6970c9ce838bd623039a013
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: ac9261cbe8d084875af36f4b0261dc24d05da5d2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-2-3---querying-a-hierarchical-table-using-hierarchy-methods"></a>Leçon 2-3 : Interrogation d’une table hiérarchique à l’aide de méthodes hiérarchiques
-[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)] Maintenant que la table HumanResources.EmployeeOrg est entièrement remplie, cette tâche vous indique comment interroger la hiérarchie à l’aide de certaines des méthodes hiérarchiques.  
+[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
+Maintenant que la table HumanResources.EmployeeOrg est entièrement remplie, cette tâche vous indiquera comment interroger la hiérarchie à l'aide de certaines des méthodes hiérarchiques.  
   
 ### <a name="to-find-subordinate-nodes"></a>Pour rechercher des nœuds subordonnés  
   

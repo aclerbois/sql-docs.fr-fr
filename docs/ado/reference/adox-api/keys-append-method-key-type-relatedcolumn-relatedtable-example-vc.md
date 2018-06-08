@@ -1,17 +1,15 @@
 ---
-title: "Créer un nouvel exemple de clé étrangère (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Créer un nouvel exemple de clé étrangère (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - Keys Append method [ADOX], VC++ example
 - RelatedColumn property [ADOX], VC++ example
 ms.assetid: 28495b8f-18dc-482c-995d-a120f6ae2006
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 79fb82f1c3a761643c4f23c1a3299642eab74d61
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c473c5f282bfb71a86391c78e45c9658b506f1d2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="keys-append-method-key-type-relatedcolumn-relatedtable-and-updaterule-properties-example-vc"></a>Keys Append, méthode, Type de clé, RelatedColumn, RelatedTable et UpdateRule exemple (VC ++)
 Le code suivant montre comment créer une clé étrangère. Il suppose l’existent de deux tables (Customers et Orders).  

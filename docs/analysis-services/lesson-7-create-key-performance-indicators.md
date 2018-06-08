@@ -1,28 +1,19 @@
 ---
-title: "Leçon 8 : Créer des indicateurs de Performance clés | Documents Microsoft"
-ms.custom: 
-ms.date: 03/27/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to: SQL Server 2016
-ms.assetid: a6c8ac2b-64ba-456f-b418-7bf0afe145d1
-caps.latest.revision: "18"
-author: Minewiskan
+title: 'Leçon 8 : Créer des indicateurs de Performance clés | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 2d5895160b92eded9dd50cf55cdaedc022183e0b
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6e56d4a533caaf95077eb06fabb5fd0bc0c42b07
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-7-create-key-performance-indicators"></a>Leçon 7 : Créer des indicateurs de Performance clés
 [!INCLUDE[ssas-appliesto-sql2016-later-aas](../includes/ssas-appliesto-sql2016-later-aas.md)]
@@ -31,7 +22,7 @@ Au cours de cette leçon, vous allez créer des indicateurs de performance clés
   
 Durée estimée pour effectuer cette leçon : **15 minutes**  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables  
 Cette rubrique fait partie d'un didacticiel de modélisation tabulaire, qui doit être suivi dans l'ordre. Avant d’effectuer les tâches de cette leçon, vous devez avoir terminé la leçon précédente : [Leçon 6 : créer des mesures](../analysis-services/lesson-6-create-measures.md).   
   
 ## <a name="create-key-performance-indicators"></a>Créer des indicateurs de performance clé (KPI)  

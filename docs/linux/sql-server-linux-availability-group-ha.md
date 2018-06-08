@@ -1,27 +1,24 @@
 ---
-title: "SQL Server Always On le modèles de déploiement du groupe de disponibilité | Documents Microsoft"
+title: SQL Server Always On le modèles de déploiement du groupe de disponibilité | Documents Microsoft
 ms.custom: sql-linux
 ms.date: 10/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.prod: sql
+ms.component: ''
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.technology: linux
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: edd75f68-dc62-4479-a596-57ce8ad632e5
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 25d20ff22474c8df65184cab9ddd0a9f1efb7a8c
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 36115370063292f3a3302dac4596222bb513fb67
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="high-availability-and-data-protection-for-availability-group-configurations"></a>Haute disponibilité et protection des données pour les configurations de groupe de disponibilité
 

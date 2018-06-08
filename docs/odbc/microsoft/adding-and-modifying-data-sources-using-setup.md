@@ -1,16 +1,14 @@
 ---
-title: "Ajout et modification des données Sources à l’aide du programme d’installation | Documents Microsoft"
-ms.custom: 
+title: Ajout et modification des données Sources à l’aide du programme d’installation | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data sources [ODBC], adding
 - editing data sources [ODBC], ODBC driver for Oracle
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - data sources [ODBC], ODBC driver for Oracle
 - ODBC driver for Oracle [ODBC], adding data sources
 ms.assetid: 54b2d61d-6ce5-45af-a776-e03180470ecf
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d9533da991d1a50c9051b428490afacf2421efb0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 87a099890327cd4a01d5cd36cd15fc5adcaca4b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="adding-and-modifying-data-sources-using-setup"></a>Ajout et modification de Sources de données à l’aide du programme d’installation
 > [!IMPORTANT]  

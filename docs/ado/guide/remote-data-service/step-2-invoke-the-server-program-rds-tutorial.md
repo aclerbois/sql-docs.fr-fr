@@ -1,30 +1,27 @@
 ---
-title: "Étape 2 : Appeler le programme de serveur (didacticiel RDS) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Étape 2 : Appeler le programme de serveur (didacticiel RDS) | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS tutorial [ADO], invoking server program
 ms.assetid: 5e74c2da-65ee-4de4-8b41-6eac45c3632e
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3dcff87b21f9c9c85281d0f5798e3364d15732e9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5e093828f0f1591800a7f8cc7e2b6958e8807c81
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-2-invoke-the-server-program-rds-tutorial"></a>Étape 2 : Appeler le programme de serveur (didacticiel RDS)
 Quand vous appelez une méthode sur le client *proxy*, le programme sur le serveur qui exécute la méthode. Dans cette étape, vous allez exécuter une requête sur le serveur.  

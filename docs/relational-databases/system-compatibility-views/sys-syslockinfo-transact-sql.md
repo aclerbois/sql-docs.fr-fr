@@ -1,16 +1,14 @@
 ---
-title: sys.syslockinfo (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.syslockinfo (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-compatibility-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - syslockinfo_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - syslockinfo system table
 - sys.syslockinfo compatibility view
 ms.assetid: d8cae434-807a-473e-b94f-f7a0e1b2daf0
-caps.latest.revision: 
+caps.latest.revision: 29
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4b58420c47d73e1eff9bb895ccab1fab0be82844
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e47eefe7a096664068d0762f43478881b532f815
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syssyslockinfo-transact-sql"></a>sys.syslockinfo (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -48,8 +45,8 @@ ms.lasthandoff: 02/09/2018
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**rsc_text**|**nchar(32)**|Description textuelle d’une ressource de verrouillage. Contient une partie du nom de la ressource.|  
-|**rsc_bin**|**binary(16)**|Ressource de verrouillage binaire. Contient la ressource de verrouillage réelle contenue dans le gestionnaire de verrouillage. Cette colonne est incluse pour les outils qui connaissent le format de ressource de verrou pour générer leur propre mise en forme la ressource de verrou, et pour effectuer des jointures automatiques sur **syslockinfo**.|  
-|**rsc_valblk**|**binary(16)**|Bloc de valeur de verrouillage. Certains types de ressources peuvent inclure des données supplémentaires dans la ressource de verrouillage qui n'est pas hachée par le gestionnaire de verrouillage, afin de déterminer le propriétaire d'une ressource de verrouillage particulière. Par exemple, les verrous de page ne sont pas détenus par un ID d'objet particulier. Pour l'escalade de verrous et d'autres utilisations. Toutefois, l'ID d'objet d'un verrou de page peut être inclus dans le bloc de valeurs de verrouillage.|  
+|**rsc_bin**|**binary (16)**|Ressource de verrouillage binaire. Contient la ressource de verrouillage réelle contenue dans le gestionnaire de verrouillage. Cette colonne est incluse pour les outils qui connaissent le format de ressource de verrou pour générer leur propre mise en forme la ressource de verrou, et pour effectuer des jointures automatiques sur **syslockinfo**.|  
+|**rsc_valblk**|**binary (16)**|Bloc de valeur de verrouillage. Certains types de ressources peuvent inclure des données supplémentaires dans la ressource de verrouillage qui n'est pas hachée par le gestionnaire de verrouillage, afin de déterminer le propriétaire d'une ressource de verrouillage particulière. Par exemple, les verrous de page ne sont pas détenus par un ID d'objet particulier. Pour l'escalade de verrous et d'autres utilisations. Toutefois, l'ID d'objet d'un verrou de page peut être inclus dans le bloc de valeurs de verrouillage.|  
 |**rsc_dbid**|**smallint**|ID de la base de données associé à la ressource.|  
 |**rsc_indid**|**smallint**|ID de l'index associé à la ressource (le cas échéant).|  
 |**rsc_objid**|**int**|ID de l'objet associé à la ressource (le cas échéant).|  
@@ -70,7 +67,7 @@ ms.lasthandoff: 02/09/2018
  requièrent l'autorisation VIEW SERVER STATE sur le serveur.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mappage des Tables système pour les vues système &#40; Transact-SQL &#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
+ [Mappage des Tables système avec les vues système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
  [Affichages de compatibilité &#40;Transact-SQL&#41;](~/relational-databases/system-compatibility-views/system-compatibility-views-transact-sql.md)  
   
   

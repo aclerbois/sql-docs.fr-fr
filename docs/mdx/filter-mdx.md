@@ -1,30 +1,31 @@
 ---
 title: Filtre (MDX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.component: ''
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: filter
-dev_langs: kbMDX
-helpviewer_keywords: Filter function
+f1_keywords:
+- filter
+dev_langs:
+- kbMDX
+helpviewer_keywords:
+- Filter function
 ms.assetid: f2df51c8-6acb-4300-b71c-2a480c9fbdf8
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: 729adc2230242798e67914907b6928ec7346b871
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 66f71d8fe604eb2002b6c1ed47afaf5ef09b1eb5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filter-mdx"></a>Filter (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +46,7 @@ Filter(Set_Expression, Logical_Expression )
  *Logical_Expression*  
  Expression logique MDX (Multidimensional Expressions) valide qui prend la valeur True ou False.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **filtre** fonction évalue l’expression logique spécifiée par rapport à chaque tuple dans le jeu spécifié. La fonction retourne un jeu composé de chaque tuple dans le jeu spécifié où l’expression logique prend la valeur **true**. Si aucun tuple donnent comme résultat **true**, un ensemble vide est retourné.  
   
  Le **filtre** fonctionne de manière similaire à celle de la [IIf](../mdx/iif-mdx.md) (fonction). Le **IIf** fonction retourne uniquement une des deux options en fonction de l’évaluation d’une expression logique MDX, tandis que la **filtre** fonction retourne un jeu de tuples qui satisfait la condition de recherche spécifié. En effet, le **filtre** fonction exécute `IIf(Logical_Expression, Set_Expression.Current, NULL)` sur chaque tuple du jeu et retourne le jeu obtenu.  
@@ -95,6 +96,6 @@ WHERE ([Geography].[State-Province].x,
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX & #40 ; MDX & #41 ;](../mdx/mdx-function-reference-mdx.md)  
   
   

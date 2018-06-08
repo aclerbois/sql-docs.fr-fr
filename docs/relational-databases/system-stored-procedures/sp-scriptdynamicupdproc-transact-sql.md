@@ -1,16 +1,15 @@
 ---
 title: sp_scriptdynamicupdproc (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_scriptdynamicupdproc
 ms.assetid: b4c18863-ed92-4aa2-a04f-7ed832fc9e07
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 89a2704f20a2bdea0bb015d0280492dc594057da
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 707a4262c6d4ae31596d01c0194c7bc438af26ee
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spscriptdynamicupdproc-transact-sql"></a>sp_scriptdynamicupdproc (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -55,7 +53,7 @@ sp_scriptdynamicupdproc [ @artid =] artid
 ## <a name="remarks"></a>Notes  
  **sp_scriptdynamicupdproc** est utilisé dans la réplication transactionnelle. La logique de script MCALL par défaut inclut toutes les colonnes dans l'instruction UPDATE et utilise une image bitmap pour déterminer les colonnes qui ont changé. Si une colonne n'a pas changé, elle est rétablie, ce qui ne cause généralement aucun problème. Si la colonne est indexée, un traitement supplémentaire intervient. L'approche dynamique inclut uniquement les colonnes qui ont changé, ce qui fournit une chaîne UPDATE optimale. Toutefois, un traitement supplémentaire a lieu pendant la phase d’exécution lors de la génération de l’instruction UPDATE dynamique. Nous vous recommandons de tester les approches dynamique et statique, puis d'opter pour la meilleure solution.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_scriptdynamicupdproc**.  
   
 ## <a name="examples"></a>Exemples  

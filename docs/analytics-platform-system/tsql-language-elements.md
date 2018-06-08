@@ -1,40 +1,29 @@
 ---
-title: Éléments de langage T-SQL - Analytique plateforme système Parallel Data Warehouse | Documents Microsoft
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: ''
-ms.component: ''
-ms.suite: sql
-ms.custom: ''
-ms.technology: mpp-data-warehouse
-description: Éléments de langage Transact-SQL (T-SQL) pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
-services: sql-data-warehouse
-documentationcenter: NA
-editor: ''
-ms.assetid: ea0b9a3e-e489-458e-addc-cc153e5cc158
-ms.devlang: NA
-ms.topic: article
-ms.tgt_pltfrm: NA
-ms.workload: data-services
-ms.date: 12/15/2016
-ms.openlocfilehash: 0fa153859632739fe626a92dbf8d741a879dd74f
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+title: Éléments de langage T-SQL - Parallel Data Warehouse | Documents Microsoft
+description: Éléments de langage T-SQL pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: d9e2011ef30864e35245f59cab0861ea116d1502
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="language-elements"></a>Éléments de langage
-Éléments de langage Transact-SQL (T-SQL) pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
+# <a name="t-sql-language-elements-for-parallel-data-warehouse"></a>Éléments de langage T-SQL pour Parallel Data Warehouse
+Éléments de langage T-SQL pour un système de plateforme analyse (APS) SQL Server Parallel Data Warehouse (PDW).
 
 ## <a name="core-elements"></a>Éléments fondamentaux
 * [conventions de syntaxe](../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
 * [règles d’affectation des noms d’objet](../relational-databases/databases/database-identifiers.md)
 * [Mots clés réservés](../t-sql/language-elements/reserved-keywords-transact-sql.md)
-* [collations](https://msdn.microsoft.com/library/ff848763.aspx)
-* [comments](../t-sql/language-elements/comment-transact-sql.md)
+* [Classements](https://msdn.microsoft.com/library/ff848763.aspx)
+* [Commentaires](../t-sql/language-elements/comment-transact-sql.md)
 * [constants](../t-sql/data-types/constants-transact-sql.md)
 * [Types de données](../t-sql/data-types/data-types-transact-sql.md)
 * [EXECUTE](../t-sql/language-elements/execute-transact-sql.md)

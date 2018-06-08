@@ -1,15 +1,14 @@
 ---
 title: Classe ServerNetworkProtocolProperty | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ServerNetworkProtocolProperty Class
@@ -19,16 +18,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ServerNetworkProtocolProperty class
 ms.assetid: 72e124ad-a610-405a-8749-b2508068b348
-caps.latest.revision: 
+caps.latest.revision: 30
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fd7fd9203b7db2997525228bc51645cb2a2c0650
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: b7b114db445ecf66ab1f8de4de04d6ea5957b5d4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="servernetworkprotocolproperty-class"></a>Classe ServerNetworkProtocolProperty
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

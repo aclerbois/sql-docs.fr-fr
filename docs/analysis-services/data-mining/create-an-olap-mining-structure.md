@@ -1,31 +1,23 @@
 ---
-title: "Créer une Structure d’exploration de données OLAP | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 21cbdc9d-d33c-4026-b9ef-1be2bd92b3b1
-caps.latest.revision: 
-author: Minewiskan
+title: Créer une Structure d’exploration de données OLAP | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d321050e1568a505e6b3550d3af07fc176ddb566
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2a4721bf42a3c223905d982e8be6a470983beb06
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-an-olap-mining-structure"></a>Créer une structure d'exploration de données OLAP
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Il existe de nombreux avantages à la création d'un modèle d'exploration de données basé sur un cube OLAP ou une autre banque de données multidimensionnelles. Une solution OLAP contient déjà de grandes quantités de données qui sont correctement organisées, nettoyées et mises en forme ; toutefois, la complexité des données est telle que les utilisateurs ont peu de chances de trouver des modèles explicites par une exploration ad hoc. L'exploration de données offre la possibilité de découvrir de nouvelles corrélations et de fournir un éclairage utilisable.  
+  Il existe de nombreux avantages à la création d'un modèle d'exploration de données basé sur un cube OLAP ou une autre banque de données multidimensionnelles. Une solution OLAP contient déjà de grandes quantités de données qui sont correctement organisées, nettoyées et mises en forme ; toutefois, la complexité des données est telle que les utilisateurs ont peu de chances de trouver des modèles explicites par une exploration ad hoc. L'exploration de données offre la possibilité de découvrir de nouvelles corrélations et de fournir un éclairage utilisable.  
   
  Cette rubrique décrit comment créer une structure d'exploration de données OLAP, en fonction d'une dimension et de mesures associées dans une solution multidimensionnelle existante.  
   
@@ -115,10 +107,10 @@ Il existe de nombreux avantages à la création d'un modèle d'exploration de do
   
 |Tâche|Exemple de scénario|Algorithm|  
 |----------|---------------------|---------------|  
-|Regrouper des membres en clusters|Segmentez une dimension de clients en fonction des propriétés de membre des clients, des produits achetés par les clients et du montant dépensé par les clients.|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Clustering)|  
-|Rechercher des membres intéressants ou anormaux|Identifiez des magasins intéressants ou anormaux dans une dimension de magasins en fonction des ventes, des bénéfices, de la situation géographique et de la taille des magasins.|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees)|  
-|Rechercher des cellules intéressantes ou anormales|Identifiez les ventes des magasins qui ne suivent pas les tendances générales dans le temps.|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Time Series)|  
-|Rechercher des corrélations|Identifiez les facteurs qui sont liés au temps mort de serveur, notamment la zone, le type de l'ordinateur, le système d'exploitation ou la date d'achat.|[!INCLUDE[msCoName](../../includes/msconame-md.md)] Naïve Bayes|  
+|Regrouper des membres en clusters|Segmentez une dimension de clients en fonction des propriétés de membre des clients, des produits achetés par les clients et du montant dépensé par les clients.|Algorithme MC ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Clustering)|  
+|Rechercher des membres intéressants ou anormaux|Identifiez des magasins intéressants ou anormaux dans une dimension de magasins en fonction des ventes, des bénéfices, de la situation géographique et de la taille des magasins.|Algorithme MDT ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Decision Trees)|  
+|Rechercher des cellules intéressantes ou anormales|Identifiez les ventes des magasins qui ne suivent pas les tendances générales dans le temps.|[!INCLUDE[msCoName](../../includes/msconame-md.md)]Algorithme de série chronologique|  
+|Rechercher des corrélations|Identifiez les facteurs qui sont liés au temps mort de serveur, notamment la zone, le type de l'ordinateur, le système d'exploitation ou la date d'achat.|Algorithme [!INCLUDE[msCoName](../../includes/msconame-md.md)] Naïve Bayes|  
   
 ##  <a name="bkmk_Filters"></a>Découpage d’un Cube et. filtrage de modèles  
  Le découpage du cube lorsque vous générez un modèle revient à créer un filtre sur un modèle d'exploration de données relationnel. Dans un modèle relationnel, le filtre sur la source de données est défini comme une clause WHERE sur une instruction SQL ; dans un cube, vous utilisez l’éditeur pour créer des instructions de filtre à l’aide de MDX.  

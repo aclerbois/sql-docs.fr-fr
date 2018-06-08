@@ -1,18 +1,20 @@
 ---
 title: Construction XML (XQuery) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-applies_to: SQL Server
-dev_langs: XML
+applies_to:
+- SQL Server
+dev_langs:
+- XML
 helpviewer_keywords:
 - white space [XQuery]
 - computed constructor
@@ -23,16 +25,15 @@ helpviewer_keywords:
 - XML [SQL Server], construction
 - XQuery, XML construction
 ms.assetid: a6330b74-4e52-42a4-91ca-3f440b3223cf
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: douglaslMS
 ms.author: douglasl
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9a3f85d368fa842f0e43eb8b0168c2d30741bfb2
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: 66dc8917b0fa80c79d385dafb4bfb4c4c96c4127
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xml-construction-xquery"></a>Construction XML (XQuery)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -94,7 +95,7 @@ SELECT @x.query('<NewRoot><e> { /root } </e></NewRoot>');
   
  Les accolades font office de jetons de commutation de contexte et basculent la requête de la construction du document XML vers sa propre évaluation. Dans ce cas, l'expression de chemin d'accès XQuery entre les accolades, `/root`, est évaluée et les résultats lui sont substitués.  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <NewRoot>  
@@ -117,7 +118,7 @@ SET @y = (SELECT @x.query('
 SELECT @y;  
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <NewRoot>  
@@ -136,7 +137,7 @@ SET @y = (SELECT @x.query('
 SELECT @y;  
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <NewRoot> Hello, I can use { and  } as part of my text</NewRoot>  
@@ -155,7 +156,7 @@ FROM Production.ProductModel
 WHERE ProductModelID=7;  
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <FirstLocation>  
@@ -258,7 +259,7 @@ SET @y = (SELECT @x.query('<NewRoot attr="{ data(/root) }" ></NewRoot>'));
 SELECT @y;  
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <NewRoot attr="5" />  
@@ -314,7 +315,7 @@ where ProductModelID=7;
         SELECT @x.query( '<a attr="{''Item'', data(/x)}"/>' )   
         ```  
   
-         Voici le résultat obtenu :  
+         Voici le résultat obtenu :  
   
         ```  
         <a attr="Item 5" />  
@@ -328,7 +329,7 @@ where ProductModelID=7;
   
          Dans ce cas, aucun espace n'est ajouté entre les deux valeurs de chaîne. Si vous souhaitez un espace entre les deux valeurs, vous devez le fournir explicitement.  
   
-         Voici le résultat obtenu :  
+         Voici le résultat obtenu :  
   
         ```  
         <a attr="Item5" />  
@@ -356,7 +357,7 @@ where ProductModelID=7;
     SELECT @x.query( '<a attr="{''Item'', data(/x)}"/>' )   
     ```  
   
-     Voici le résultat obtenu :  
+     Voici le résultat obtenu :  
   
     ```  
     <a attr="Item 5" />  
@@ -398,7 +399,7 @@ select @x.query( '
   </a>' )   
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <a xmlns="a">  
@@ -417,7 +418,7 @@ select @x.query( '
   </x:a>' )  
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 <x:a xmlns:x="a">  
@@ -527,7 +528,7 @@ test
   
 ```  
   
- Voici le résultat obtenu :  
+ Voici le résultat obtenu :  
   
 ```  
 -- result  
@@ -550,7 +551,7 @@ test
 ### <a name="other-direct-xml-constructors"></a>Autres constructeurs XML directs  
  Les constructeurs des instructions de traitement et des commentaires XML utilisent la même syntaxe que la construction XML correspondante. En outre, les constructeurs calculés pour les nœuds de texte sont pris en charge, mais sont essentiellement utilisés dans le langage DML XML pour construire des nœuds de texte.  
   
- **Remarque** pour obtenir un exemple de l’utilisation d’un constructeur de nœud de texte explicite, consultez l’exemple correspondant dans [insert &#40; XML DML &#41; ](../t-sql/xml/insert-xml-dml.md).  
+ **Remarque** pour obtenir un exemple de l’utilisation d’un constructeur de nœud de texte explicite, consultez l’exemple correspondant dans [insérer &#40;XML DML&#41;](../t-sql/xml/insert-xml-dml.md).  
   
  Dans la requête suivante, le document XML construit comprend un élément, deux attributs, un commentaire et une instruction de traitement. Une virgule est utilisée avant <`FirstLocation`> car une séquence est en cours de construction.  
   

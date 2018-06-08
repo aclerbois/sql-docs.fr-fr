@@ -1,34 +1,30 @@
 ---
-title: "SQL:StmtRecompile, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SQL:StmtRecompile, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL:StmtRecompile event class
 ms.assetid: 3a134751-3e93-4fe8-bf22-1e0561189293
-caps.latest.revision: 
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: df67c9972328d7e418a5f68315bcd46d8d60e369
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 63343f500b2c0e3d330a0fb84cb4ece4ff193c10
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlstmtrecompile-event-class"></a>SQL:StmtRecompile, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements SQL:StmtRecompile indique des recompilations au niveau de l’instruction provoquées par tous les types de lots : procédures stockées, déclencheurs, lots ad hoc et requêtes. Les requêtes peuvent être envoyées avec sp_executesql, SQL dynamique, des méthodes Prepare, des méthodes Execute ou des interfaces analogues. La classe d’événements SQL:StmtRecompile doit être utilisée à la place de la classe d’événements SP:Recompile.  
+  La classe d’événements SQL:StmtRecompile indique des recompilations au niveau de l’instruction provoquées par tous les types de lots : procédures stockées, déclencheurs, lots ad hoc et requêtes. Les requêtes peuvent être envoyées avec sp_executesql, SQL dynamique, des méthodes Prepare, des méthodes Execute ou des interfaces analogues. La classe d’événements SQL:StmtRecompile doit être utilisée à la place de la classe d’événements SP:Recompile.  
   
 ## <a name="sqlstmtrecompile-event-class-data-columns"></a>Colonnes de la classe d'événements SQL:StmtRecompile  
   

@@ -1,39 +1,36 @@
 ---
-title: sp_polybase_join_group | Microsoft Docs
-ms.custom: 
+title: sp_polybase_join_group | Documents Microsoft
+ms.custom: ''
 ms.date: 05/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sp_polybase_join_group
 helpviewer_keywords:
 - PolyBase
 ms.assetid: 48066431-fed2-4a8a-85af-ac704689e183
-caps.latest.revision: 
+caps.latest.revision: 12
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7f6e4a77e5ce1341269bf9220c5d2a5305b4c314
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 927c07456401bf441e3ad6491111bad6c85e3c19
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="polybase-stored-procedures---sppolybasejoingroup"></a>Procédures stockées PolyBase - sp_polybase_join_group
+# <a name="sppolybasejoingroup-transact-sql"></a>sp_polybase_join_group (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
 
   Ajoute une instance de SQL Server comme nœud de calcul à un groupe PolyBase pour le calcul de la montée en puissance parallèle.  
   
- L’instance de SQL Server doit posséder le [PolyBase](../../relational-databases/polybase/polybase-guide.md) fonctionnalité installée.  PolyBase permet l’intégration de sources de données non SQL Server, tels que le stockage blob Hadoop et Azure. Voir aussi [sp_polybase_leave_group &#40; Transact-SQL &#41; ](../../relational-databases/system-stored-procedures/polybase-stored-procedures-sp-polybase-leave-group.md).  
+ L’instance de SQL Server doit posséder le [PolyBase](../../relational-databases/polybase/polybase-guide.md) fonctionnalité installée.  PolyBase permet l’intégration de sources de données non SQL Server, tels que le stockage blob Hadoop et Azure. Voir aussi [sp_polybase_leave_group &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/polybase-stored-procedures-sp-polybase-leave-group.md).  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -48,13 +45,13 @@ sp_polybase_join_group (@head_node_address = N'head_node_address',
   
 ## <a name="arguments"></a>Arguments  
  *@head_node_address* = N'*head_node_address*'  
- Le nom de l’ordinateur qui héberge le nœud principal de SQL Server du groupe de montée en puissance parallèle PolyBase. *@head_node_address*est nvarchar (255).  
+ Le nom de l’ordinateur qui héberge le nœud principal de SQL Server du groupe de montée en puissance parallèle PolyBase. *@head_node_address* est nvarchar (255).  
   
  *@dms_control_channel_port* = dms_control_channel_port  
- Le port sur lequel le canal de contrôle pour le nœud principal PolyBase Data Movement Service s’exécute. *@dms_control_channel_port*est un __int16 non signé. La valeur par défaut est **16450**.  
+ Le port sur lequel le canal de contrôle pour le nœud principal PolyBase Data Movement Service s’exécute. *@dms_control_channel_port* est un __int16 non signé. La valeur par défaut est **16450**.  
   
  *@head_node_sql_server_instance_name* = head_node_sql_server_instance_name  
- Le nom de l’instance de SQL Server de nœud principal dans le groupe de scale-out PolyBase. *@head_node_sql_server_instance_name*est nvarchar(16).  
+ Le nom de l’instance de SQL Server de nœud principal dans le groupe de scale-out PolyBase. *@head_node_sql_server_instance_name* est nvarchar(16).  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  

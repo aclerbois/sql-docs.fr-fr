@@ -1,30 +1,30 @@
 ---
-title: "Passez en revue les résultats de relecture | Documents Microsoft"
-ms.custom: 
+title: Passez en revue les résultats de relecture | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: distributed-replay
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: da999781-f0ff-47eb-ba7a-09c0ed8f61ad
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ffcc2c8b5a8eb97acea95e841b24ca800b87df9d
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 8bf4c08dee623e659e04e3be97f8e015daa57aa8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="review-the-replay-results"></a>Examiner les résultats de la relecture
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Après le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fonctionnalité de Distributed Replay a terminé une relecture distribuée, l’activité de relecture de chaque client permettre être capturée et enregistrée dans les fichiers de trace de résultats sur chaque client. Pour capturer cette activité, vous devez utiliser le paramètre **-o** quand vous exécutez l’outil d’administration avec l’option **replay** . Pour plus d’informations sur l’option replay, consultez [Option replay &#40;outil d’administration Distributed Replay&#41;](../../tools/distributed-replay/replay-option-distributed-replay-administration-tool.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une fois que la fonctionnalité [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Distributed Replay a terminé une relecture distribuée, l'activité de relecture de chaque client peut être capturée et enregistrée dans des fichiers de trace de résultats sur chaque client. Pour capturer cette activité, vous devez utiliser le paramètre **-o** quand vous exécutez l’outil d’administration avec l’option **replay**. Pour plus d’informations sur l’option replay, consultez [Option replay &#40;outil d’administration Distributed Replay&#41;](../../tools/distributed-replay/replay-option-distributed-replay-administration-tool.md).  
   
  L'emplacement où sont stockés les fichiers de trace de résultats est spécifié par l'élément XML `<ResultDirectory>` dans le fichier de configuration client, `DReplayClient.xml`, situé sur chaque client. Les fichiers de trace dans le répertoire des résultats du client sont remplacés à chaque relecture.  
   
@@ -48,7 +48,7 @@ ms.lasthandoff: 01/17/2018
 |Erreurs et avertissements|Replay Internal Error|Une fois pour chaque erreur interne|En cas de condition d'erreur interne|  
 ||Replay Provider Error|Une fois pour chaque erreur de fournisseur|En cas de condition d'erreur de fournisseur|  
   
- Notez les points suivants :  
+ Notez les points suivants :  
   
 -   Pour chaque événement relu avec succès sur le serveur cible, il existe une classe d'événement de sortie correspondante.  
   
@@ -64,28 +64,28 @@ ms.lasthandoff: 01/17/2018
   
 |Nom de la colonne de données|Type de données|Description|ID de la colonne|  
 |----------------------|---------------|-----------------|---------------|  
-|EventClass|**nvarchar**|Nom de la classe d'événement.|1|  
+|EventClass|**nvarchar**|Nom de la classe d'événement.| 1|  
 |EventSequence|**bigint**|Pour les erreurs de fournisseur, les erreurs internes et les avertissements, il s'agit de la séquence de l'événement de capture qui correspond à l'erreur ou à l'avertissement.<br /><br /> Pour toutes les autres classes d'événements, il s'agit de la séquence de l'événement dans les données de trace d'origine.|2|  
 |ReplaySequence|**bigint**|Pour les erreurs de fournisseur, les erreurs internes et les avertissements, il s'agit de la séquence de l'événement de relecture qui correspond à l'erreur ou à l'avertissement.<br /><br /> Pour toutes les autres classes d'événements, il s'agit de la séquence de l'événement affecté pendant la relecture.|3|  
 |TextData|**ntext**|Le contenu de TextData dépend de l'EventClass.<br /><br /> Pour Audit Login et ExistingConnection, il s'agit des options définies pour la connexion.<br /><br /> Pour SQL:BatchStarting, il s'agit du corps de la requête de lots.<br /><br /> Pour RPC:Starting, c'est la procédure stockée appelée.<br /><br /> Pour les événements de paramètres de relecture, cette colonne contient les paramètres définis dans le fichier de configuration de relecture.<br /><br /> Pour l'événement de statistiques de relecture, TexData contient les informations suivantes :<br /><br /> -serveur SQL cible de la relecture ;<br /><br /> -nombre total d’événements pouvant être relus ;<br /><br /> -nombre d’erreurs de fournisseur ;<br /><br /> -nombre d’erreurs internes ;<br /><br /> -avertissements internes ;<br /><br /> -nombre total d’erreurs ;<br /><br /> -taux global de réussite ;<br /><br /> -heure de relecture (HH:MM:SS:MMM).<br /><br /> Pour l'événement de jeu de résultats de relecture, il affiche la liste des en-têtes de colonne de résultats retournés.<br /><br /> Pour l'événement de ligne de résultats de relecture, il affiche la valeur de retour de toutes les colonnes de cette ligne.<br /><br /> Pour l'avertissement interne de relecture et l'erreur de fournisseur de relecture, cette colonne contient les avertissements ou les erreurs de fournisseur.|4|  
 |Attention|**bigint**|Durée (en microsecondes) de l'avertissement pour l'événement. Elle est calculée à partir de l'événement d'avertissement de la trace de capture. Si aucun délai de requête n'a été spécifié pour l'événement, cette colonne n'est pas remplie (Null).|5|  
 |SubmitTime|**datetime**|Heure à laquelle l'événement a été soumis à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|6|  
-|IsSuccessful|**int**|Indicateur booléen qui indique si un événement particulier a été exécuté avec succès et si les jeux de résultats ont été retournés au côté client.<br /><br /> Un événement qui génère un avertissement (comme lorsqu'un événement est annulé en raison d'un événement Attention ou d'un délai d'expiration spécifié par l'utilisateur) est considéré comme réussi.<br /><br /> IsSuccessful peut prendre l'une des valeurs suivantes :<br /><br /> 1 = Réussi<br /><br /> 0 = Échec|7|  
+|IsSuccessful|**Int**|Indicateur booléen qui indique si un événement particulier a été exécuté avec succès et si les jeux de résultats ont été retournés au côté client.<br /><br /> Un événement qui génère un avertissement (comme lorsqu'un événement est annulé en raison d'un événement Attention ou d'un délai d'expiration spécifié par l'utilisateur) est considéré comme réussi.<br /><br /> IsSuccessful peut prendre l'une des valeurs suivantes :<br /><br /> 1 = Réussi<br /><br /> 0 = Échec|7|  
 |Durée [microsec]|**bigint**|Durée de temps de réponse (en microsecondes) pour l'événement. Le temps est mesuré à partir du moment où l'événement d'ouverture de session/de fermeture de session/RPC/Langage a été soumis à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> Si l'événement réussit, la mesure se termine lorsque le jeu de résultats complet a été consommé.<br /><br /> Si l'événement ne réussit pas, la mesure se termine au moment de l'échec ou de l'annulation de l'événement.|8|  
 |RowCount|**bigint**|Rempli selon la valeur de `<RecordRowCount>` dans le fichier de configuration de relecture :<br /><br /> Si `<RecordRowCount>` est égal à Oui, cette cellule contient le nombre de lignes dans le jeu de résultats retournées par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].<br /><br /> Si `<RecordRowCount>` est égal à Non, cette cellule n'est pas remplie (Null).|9|  
-|CaptureSPID|**int**|ID de la session de capture de l'événement.|10|  
-|ConnectionID|**int**|ID de la connexion de capture de l'événement.|11|  
-|ReplaySPID|**int**|ID de la session de relecture de l'événement.|12|  
+|CaptureSPID|**Int**|ID de la session de capture de l'événement.|10|  
+|ConnectionID|**Int**|ID de la connexion de capture de l'événement.|11|  
+|ReplaySPID|**Int**|ID de la session de relecture de l'événement.|12|  
 |DatabaseName|**nvarchar**|Nom de la base de données dans laquelle l'instruction de l'utilisateur est exécutée.|13|  
 |LoginName|**nvarchar**|Nom de connexion de l'utilisateur. Il peut s’agir soit d’une connexion de sécurité [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , soit des informations d’identification de connexion Microsoft Windows, au format *nom_domaine*\\*nom_utilisateur*.|14|  
 |CaptureHostName|**nvarchar**|Nom de l'ordinateur sur lequel s'exécute le service client lors de la capture.|15|  
 |ReplayHostName|**nvarchar**|Nom de l'ordinateur sur lequel s'exécute le client lors de la relecture.|16|  
 |ApplicationName|**nvarchar**|Nom de l'application cliente qui a créé la connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] lors de la capture.|17|  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Distributed Replay](../../tools/distributed-replay/sql-server-distributed-replay.md)   
- [Conditions préalables de relecture distribuée](../../tools/distributed-replay/distributed-replay-requirements.md)   
- [Options de ligne de commande de l’outil Administration &#40; Distributed Replay Utility &#41;](../../tools/distributed-replay/administration-tool-command-line-options-distributed-replay-utility.md)   
+ [Distributed Replay Requirements](../../tools/distributed-replay/distributed-replay-requirements.md)   
+ [Options de ligne de commande de l’outil d’administration &#40;Distributed Replay Utility&#41;](../../tools/distributed-replay/administration-tool-command-line-options-distributed-replay-utility.md)   
  [Configurer Distributed Replay](../../tools/distributed-replay/configure-distributed-replay.md)  
   
   

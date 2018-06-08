@@ -1,16 +1,15 @@
 ---
-title: "Binarypath, propriété (classe SqlService) | Documents Microsoft"
-ms.custom: 
+title: Binarypath, propriété (classe SqlService) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - BinaryPath Property (SqlService Class )
@@ -19,16 +18,15 @@ apilocation:
 helpviewer_keywords:
 - BinaryPath property
 ms.assetid: c59ec28e-be76-44a8-b7aa-e53ea10f71d1
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 12ea1d2558f4c8063a5dda8abfdadf7f47470c79
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 2246782e1284a678d665ad73172ecfc243c871b7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binarypath-property-sqlservice-class-"></a>Propriété BinaryPath (classe SqlService)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
 title: CREATE SEQUENCE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SEQUENCE
@@ -25,16 +23,15 @@ helpviewer_keywords:
 - sequence object
 - number, sequence
 ms.assetid: 419f907b-8a72-4d6c-80cb-301df44c24c1
-caps.latest.revision: 
+caps.latest.revision: 40
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ab2f4258d60f1653a102f5f9cc51d4263fcafc93
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 09401216daea0966e0bc5f7c5d8236fe2ac7af4a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-sequence-transact-sql"></a>CREATE SEQUENCE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -119,7 +116,7 @@ CREATE SEQUENCE [schema_name . ] sequence_name
   
  Si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] est arrêté après que vous avez utilisé 22 numéros, le numéro séquentiel prévu suivant en mémoire (23) est écrit dans les tables système, remplaçant ainsi le nombre précédemment stocké.  
   
- Après le redémarrage de SQL Server, un numéro séquentiel est exigé ; le numéro initial est lu à partir des tables système (23). Le montant de cache de 15 nombres (23-38) est alloué à la mémoire et le numéro de non-cache suivant (39) est écrit dans les tables système.  
+ Après le redémarrage de SQL Server, un numéro séquentiel est exigé ; le nombre initial est lu à partir des tables système (23). Le montant de cache de 15 nombres (23-38) est alloué à la mémoire et le numéro de non-cache suivant (39) est écrit dans les tables système.  
   
  Si le [!INCLUDE[ssDE](../../includes/ssde-md.md)] s’arrête de manière anormale suite à un événement tel qu’une panne de courant, la séquence redémarre avec le numéro lu à partir des tables système (39). Tous les numéros séquentiels alloués à la mémoire (mais jamais demandés par un utilisateur ou une application) sont perdus. Cette fonctionnalité peut laisser des espaces vides, mais garantit que la même valeur ne sera jamais émise deux fois pour un objet séquence unique, sauf s’il est défini comme **CYCLE** ou qu’il est redémarré manuellement.  
   

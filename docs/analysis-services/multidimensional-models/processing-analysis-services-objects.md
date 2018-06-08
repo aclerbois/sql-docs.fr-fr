@@ -1,34 +1,23 @@
 ---
 title: Pour des objets de traitement Analysis Services | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- OLAP objects [Analysis Services], processing
-- OLAP objects [Analysis Services]
-ms.assetid: c7e1f66f-16ca-43da-b8c7-4d3e1fa8b58d
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9b9d17eac58d4ae287f71e924d9c012f63484c21
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: d1cd8be08afc7ea0e8e7bf811db4e26208a2feae
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="processing-analysis-services-objects"></a>Traitement des objets Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le traitement affecte les types d’objets [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] suivants : bases de données, cubes, dimensions, groupes de mesures, partitions, et structures et modèles d’exploration de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Pour chaque objet, vous pouvez spécifier le niveau de traitement de l’objet ou spécifier l’option Traiter par défaut pour permettre à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de sélectionner automatiquement le niveau optimal de traitement. Pour plus d’informations sur les différents niveaux de traitement pour chaque objet, consultez [Options et paramètres de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md).  
+  Le traitement affecte les types d’objets [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] suivants : bases de données, cubes, dimensions, groupes de mesures, partitions, et structures et modèles d’exploration de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Pour chaque objet, vous pouvez spécifier le niveau de traitement de l’objet ou spécifier l’option Traiter par défaut pour permettre à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de sélectionner automatiquement le niveau optimal de traitement. Pour plus d’informations sur les différents niveaux de traitement pour chaque objet, consultez [Options et paramètres de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md).  
   
  Vous devez avoir connaissance des conséquences du comportement de traitement afin de réduire les répercussions négatives. Par exemple, le fait de traiter entièrement une dimension fait passer automatiquement toutes les partitions qui en dépendent à l'état non traité. Cela rend les cubes affectés indisponibles pour les requêtes tant que les partitions dépendantes n'ont pas été traitées.  
   
@@ -101,7 +90,7 @@ Le traitement affecte les types d’objets [!INCLUDE[msCoName](../../includes/ms
   
 ## <a name="see-also"></a>Voir aussi  
  [Outils et approches de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/tools-and-approaches-for-processing-analysis-services.md)   
- [Le traitement par lots &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/batch-processing-analysis-services.md)   
+ [Le traitement par lots & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/batch-processing-analysis-services.md)   
  [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)  
   
   

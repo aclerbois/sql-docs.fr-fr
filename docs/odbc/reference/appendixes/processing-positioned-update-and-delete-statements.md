@@ -1,16 +1,14 @@
 ---
-title: "Traitement positionné les instructions Update et Delete | Documents Microsoft"
-ms.custom: 
+title: Traitement positionné les instructions Update et Delete | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - positioned deletes [ODBC]
 - ODBC cursor library [ODBC], statement processing
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - ODBC cursor library [ODBC], positioned update or delete
 - cursor library [ODBC], statement processing
 ms.assetid: 2975dd97-48e6-4d0a-a9c7-40759a7d94c8
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 97678a0f54c9cbe02ed28b30393db6c16473e58f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b61339950d43579a88c6a7ca5f90de4e254ff05f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="processing-positioned-update-and-delete-statements"></a>Traitement positionné les instructions Update et Delete
 > [!IMPORTANT]  

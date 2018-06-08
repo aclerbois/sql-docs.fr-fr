@@ -1,16 +1,15 @@
 ---
 title: JSON_VALUE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - JSON_VALUE
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - JSON, extracting
 - JSON, querying
 ms.assetid: cd016e14-11eb-4eaf-bf05-c7cfcc820a10
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 18
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ab4c14769dc51c6d5b97a6ad2fe6f0cb06fad4e0
-ms.sourcegitcommit: 19e1c4067142d33e8485cb903a7a9beb7d894015
+ms.openlocfilehash: 9bbd4dd23c4c536fa70f679ceabf6d96ddde121c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jsonvalue-transact-sql"></a>JSON_VALUE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -48,7 +46,7 @@ JSON_VALUE ( expression , path )
   
 ## <a name="arguments"></a>Arguments  
  *expression*  
- Expression. En règle générale, le nom d’une variable ou d’une colonne qui contient du texte JSON.  
+ Expression. En règle générale, nom d’une variable ou d’une colonne qui contient du texte JSON.  
  
  Si **JSON_VALUE** trouve des données JSON non valides dans *expression* avant de rechercher la valeur identifiée par *path*, la fonction retourne une erreur. Si **JSON_VALUE* ne trouve pas la valeur identifiée par *path*, la fonction analyse l’intégralité du texte et retourne une erreur si elle trouve des données JSON non valides, n’importe où dans *expression*.
   

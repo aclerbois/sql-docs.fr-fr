@@ -1,34 +1,32 @@
 ---
-title: "Connexions et travaux pour les bases de données de groupe de disponibilité | Documents Microsoft"
-ms.custom: 
+title: Connexions et travaux pour les bases de données de groupe de disponibilité | Documents Microsoft
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], deploying
 - Availability Groups [SQL Server], failover
 - failover [SQL Server], AlwaysOn Availability Groups
 ms.assetid: d7da14d3-848c-44d4-8e49-d536a1158a61
-caps.latest.revision: "16"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 16
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0b89518482de615615229457a7195311ece7ab6b
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: e6d704c10a90bf079b436c4923c6b21fff92319c
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770244"
 ---
 # <a name="logins-and-jobs-for-availability-group-databases"></a>Connexions et travaux pour les bases de données de groupe de disponibilité
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Vous devez maintenir régulièrement le même ensemble de connexions utilisateur et de travaux de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Agent sur chaque base de données primaire d’un groupe de disponibilité Always On et les bases de données secondaires correspondantes. Les connexions et les travaux doivent être reproduits sur chaque instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui héberge un réplica de disponibilité pour le groupe de disponibilité.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Vous devez maintenir régulièrement le même ensemble de connexions utilisateur et de travaux de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Agent sur chaque base de données primaire d’un groupe de disponibilité Always On et les bases de données secondaires correspondantes. Les connexions et les travaux doivent être reproduits sur chaque instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] qui héberge un réplica de disponibilité pour le groupe de disponibilité.  
   
 -   **[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Travaux de l'Agent**  
   

@@ -1,32 +1,29 @@
 ---
-title: "Exemple de propriété (VC ++) d’élément | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de propriété (VC ++) d’élément | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Item property [ADO], VC++ example
 ms.assetid: 05ae3f5a-a0c1-459d-aa7d-ed7f3b2ecd60
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6032bb7338a523ea125285070d99ba280f18a6a3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3802906ac53a015dc5d38ead8599fffd20792ff8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="item-property-example-vc"></a>Exemple de propriété d’élément (VC ++)
 Cet exemple montre comment la [élément](../../../ado/reference/ado-api/item-property-ado.md) propriété accède aux membres d’une collection. L’exemple ouvre le ***auteurs*** table de la ***Pubs*** base de données avec une commande paramétrée.  

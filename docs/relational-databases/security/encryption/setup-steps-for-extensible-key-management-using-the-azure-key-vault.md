@@ -1,32 +1,30 @@
 ---
-title: "Étapes de la configuration de la gestion de clés extensible à l’aide d’Azure Key Vault | Microsoft Docs"
-ms.custom: 
+title: Étapes de la configuration de la gestion de clés extensible à l’aide d’Azure Key Vault | Microsoft Docs
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - EKM, with key vault setup
 - SQL Server Connector, setup
 - SQL Server Connector
 ms.assetid: c1f29c27-5168-48cb-b649-7029e4816906
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 375898263ea58a2ac8dd9e54f86257d07d1daeca
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+ms.openlocfilehash: 1d49310aa2c1d178dfb47f05a72ccac73cd0882f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setup-steps-for-extensible-key-management-using-the-azure-key-vault"></a>Étapes de la configuration de la gestion de clés extensible à l’aide d’Azure Key Vault
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

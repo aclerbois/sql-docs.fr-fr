@@ -1,32 +1,27 @@
 ---
 title: MSSQLSERVER_10061 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - "10061"
 helpviewer_keywords:
 - 10061 (Database Engine error)
 ms.assetid: 729602f3-08df-474c-8740-8dea13c1eee3
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 11
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2fd332b8fb849ae9fc364d081e31b731a78113d3
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e5e5961d26fcc9e03abe383204d7cf737d6a8bbf
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver10061"></a>MSSQLSERVER_10061
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -48,7 +43,7 @@ Le serveur n'a pas répondu à la demande du client. Cette erreur s'est peut-êt
 ## <a name="user-action"></a>Action de l'utilisateur  
 Assurez-vous que le serveur a été démarré.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [Gérer les services du moteur de base de données](~/database-engine/configure-windows/manage-the-database-engine-services.md)  
 [Configurer des protocoles clients](~/database-engine/configure-windows/configure-client-protocols.md)  
 [Protocoles réseau et bibliothèques réseau](~/sql-server/install/network-protocols-and-network-libraries.md)  

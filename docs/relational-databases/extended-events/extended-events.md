@@ -1,37 +1,34 @@
 ---
-title: "Événements étendus | Microsoft Docs"
-ms.custom: 
+title: Événements étendus | Microsoft Docs
+ms.custom: ''
 ms.date: 10/23/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - extended events [SQL Server]
 - xe
 ms.assetid: bf3b98a6-51ed-4f2d-9c26-92f07f1fa947
-caps.latest.revision: 
+caps.latest.revision: 48
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 12c46e8d5a1496d21f2f4b0ab40956020a8ac612
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: e5dfdc3c08bd548530e4ba2deb50871808efc00f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34706857"
 ---
 # <a name="extended-events"></a>Événements étendus
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
 
-[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficient d'une architecture extrêmement évolutive et configurable qui permet aux utilisateurs de recueillir le maximum ou le minimum d'informations nécessaires pour le dépannage ou l'identification d'un problème de performance.  
+Les événements étendus [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficient d'une architecture extrêmement évolutive et configurable qui permet aux utilisateurs de recueillir le maximum ou le minimum d'informations nécessaires pour le dépannage ou l'identification d'un problème de performance.  
 
 Pour plus d’informations sur les événements étendus, consultez :
 
@@ -43,7 +40,7 @@ Pour plus d’informations sur les événements étendus, consultez :
  Les événements étendus sont un système léger d'analyse des performances qui utilise très peu de ressources de performances. Les événements étendus fournissent deux interfaces utilisateur graphiques (**Assistant Nouvelle session** et **Nouvelle session**) permettant de créer, modifier, afficher et analyser vos données de session.  
   
 ## <a name="extended-events-concepts"></a>Concepts liés aux événements étendus  
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Les événements étendus s’appuient sur des concepts existants, tels qu’un événement ou un consommateur d’événements, utilisent les concepts provenant du suivi d’événements pour Windows et introduisent de nouveaux concepts.  
+ Les événements étendus [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] s’appuient sur des concepts existants, tels qu’un événement ou un consommateur d’événements, utilisent les concepts provenant du suivi d’événements pour Windows et introduisent de nouveaux concepts.  
   
  Le tableau suivant décrit les concepts des événements étendus.  
   

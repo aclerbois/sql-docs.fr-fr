@@ -1,17 +1,15 @@
 ---
-title: "Préparer des données en vue d’une exportation ou d’une importation en bloc (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Préparer des données en vue d’une exportation ou d’une importation en bloc (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: import-export
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-bulk-import-export
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: data-movement
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - bulk importing [SQL Server], planning
 - bulk importing [SQL Server], from a CSV file
@@ -19,16 +17,16 @@ helpviewer_keywords:
 - CSV files [SQL Server]
 - quoted fields in CSV files [SQL Server]
 ms.assetid: 783fd581-2e5f-496b-b79c-d4de1e09ea30
-caps.latest.revision: 
+caps.latest.revision: 52
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 44c1510507707b1fcdc9f10a31d8dce47d838a9c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: b721a608a256c0416cd2bb00426ed947d88a9862
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="prepare-data-for-bulk-export-or-import-sql-server"></a>Préparer des données en vue d'une exportation ou d'une importation en bloc (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

@@ -1,35 +1,33 @@
 ---
-title: "Insérer des extraits de code d’entourage (surround-with) Transact-SQL | Microsoft Docs"
-ms.custom: 
+title: Insérer des extraits de code d’entourage (surround-with) Transact-SQL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - snippets [Transact-SQL], surround with
 - IntelliSense [SQL Server], surround with snippets
 - Transact-SQL snippets, surround with
 ms.assetid: 5b5a8c6c-968e-4361-a7f5-9e2ac186d927
-caps.latest.revision: 
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9c1f1ec2e376c496e2b3dcdaf5ef032ba8c54745
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 700bb80820ffe413158d4e728feb5673e7e7dcfa
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="insert-surround-with-transact-sql-snippets"></a>Insérer des extraits de code d'entourage (surround-with) Transact-SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Un extrait de code d’entourage est un modèle pouvant servir de point de départ lors de l’intégration d’un jeu d’instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans un bloc BEGIN, IF ou WHILE.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Un extrait de code d'entourage est un modèle pouvant servir de point de départ lors de l'intégration d'un jeu d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] dans un bloc BEGIN, IF ou WHILE.  
   
 ## <a name="inserting-surround-with-snippets"></a>Insertion d'extraits de code d'entourage  
  Les extraits de code d’entourage peuvent être lancés de trois manières : par le biais d’un raccourci clavier, du menu **Édition** et du menu contextuel.  

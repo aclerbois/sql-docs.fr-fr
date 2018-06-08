@@ -1,27 +1,24 @@
 ---
-title: "Installer SQL Server à l’aide d’un fichier de configuration | Microsoft Docs"
-ms.custom: 
+title: Installer SQL Server à l’aide d’un fichier de configuration | Microsoft Docs
+ms.custom: ''
 ms.date: 09/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a832153a-6775-4bed-83f0-55790766d885
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 34
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 88c353e8b2168806a88401bd783b91a2ce158be8
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 48ae5549290ab4c8701da6bd75641dfabfc02872
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771075"
 ---
 # <a name="install-sql-server-using-a-configuration-file"></a>Installer SQL Server à l’aide d’un fichier de configuration
 

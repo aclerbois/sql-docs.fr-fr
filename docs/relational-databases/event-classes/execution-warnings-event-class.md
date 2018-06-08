@@ -1,34 +1,30 @@
 ---
-title: "Execution Warnings, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Execution Warnings, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Execution Warnings event class
 ms.assetid: 2c69e321-dc9a-4483-886d-81350adae2be
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fbbb94df2b55743b10061b51a0eab5d477b26719
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1e19226b93485e63f4e19c8357dfa69087b3e012
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="execution-warnings-event-class"></a>Execution Warnings, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Execution Warnings indique que des avertissements d'allocation de mémoire se sont produits lors de l'exécution d'une instruction [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou d'une procédure stockée. Il est possible de surveiller cette classe d'événements pour déterminer si des requêtes ont dû attendre une seconde ou plus que de la mémoire se libère avant de continuer, ou si la précédente tentative d'obtention de mémoire a échoué. Les informations sur la durée d'attente des requêtes peuvent faciliter la découverte de problèmes de contention dans le système qui peuvent nuire aux performances.  
+  La classe d'événements Execution Warnings indique que des avertissements d'allocation de mémoire se sont produits lors de l'exécution d'une instruction [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ou d'une procédure stockée. Il est possible de surveiller cette classe d'événements pour déterminer si des requêtes ont dû attendre une seconde ou plus que de la mémoire se libère avant de continuer, ou si la précédente tentative d'obtention de mémoire a échoué. Les informations sur la durée d'attente des requêtes peuvent faciliter la découverte de problèmes de contention dans le système qui peuvent nuire aux performances.  
   
 ## <a name="execution-warnings-event-class-data-columns"></a>Colonnes de la classe d'événements Execution Warnings  
   

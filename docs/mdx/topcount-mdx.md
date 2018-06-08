@@ -1,30 +1,20 @@
 ---
 title: TopCount (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: TOPCOUNT
-dev_langs: kbMDX
-helpviewer_keywords: TopCount function
-ms.assetid: 15026a8f-35c5-4307-8856-348f5c44bfd5
-caps.latest.revision: "32"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: On Demand
-ms.openlocfilehash: e68a27c85dde732a54b87e914b643565d8549933
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: beded06a7951d51ce4d0a46d8ae41f049ff0426f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581311"
 ---
 # <a name="topcount-mdx"></a>TopCount (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -48,7 +38,7 @@ TopCount(Set_Expression,Count [ ,Numeric_Expression ] )
  *Numeric_expression*  
  Expression numérique valide qui correspond généralement à une expression MDX (Multidimensional Expressions) des coordonnées des cellules qui retournent un nombre.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si une expression numérique est spécifiée, la **TopCount** fonction trie, par ordre décroissant, les tuples dans le jeu spécifié par le jeu spécifié en fonction de la valeur spécifiée par l’expression numérique, telle qu’évaluée sur le jeu spécifié. Une fois le jeu trié, la **TopCount** fonction puis retourne le nombre spécifié de tuples avec la valeur la plus élevée.  
   
 > [!IMPORTANT]  
@@ -82,6 +72,6 @@ WHERE([Product].[Product Categories].Bikes)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

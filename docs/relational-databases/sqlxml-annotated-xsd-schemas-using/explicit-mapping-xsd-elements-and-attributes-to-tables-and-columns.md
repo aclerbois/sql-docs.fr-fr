@@ -1,16 +1,14 @@
 ---
-title: "Mappage explicite XSD éléments et attributs aux Tables et colonnes | Documents Microsoft"
-ms.custom: 
+title: Mappage explicite XSD éléments et attributs aux Tables et colonnes | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - explicit schema mapping [SQLXML]
@@ -31,20 +29,20 @@ helpviewer_keywords:
 - table mapping [SQLXML], explicit mapping
 - element/attribute mapping [SQLXML]
 ms.assetid: 7a5ebeb6-7322-4141-a307-ebcf95976146
-caps.latest.revision: 
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b2cc71e8ce8daf3da61754dc8e01d264d42c863a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1836db12438017023637185d6e8ba24a6e533a77
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="explicit-mapping-xsd-elements-and-attributes-to-tables-and-columns"></a>Mappage explicite XSD éléments et attributs aux Tables et colonnes
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Lors de l'utilisation d'un schéma XSD pour fournir une vue XML de la base de données relationnelle, les éléments et les attributs du schéma doivent être mappés avec les tables et les colonnes de la base de données. Les lignes de la table/vue de la base de données seront mappées avec les éléments du document XML. Les valeurs des colonnes de la base de données sont mappées avec les attributs ou les éléments.  
+  Lors de l'utilisation d'un schéma XSD pour fournir une vue XML de la base de données relationnelle, les éléments et les attributs du schéma doivent être mappés avec les tables et les colonnes de la base de données. Les lignes de la table/vue de la base de données seront mappées avec les éléments du document XML. Les valeurs des colonnes de la base de données sont mappées avec les attributs ou les éléments.  
   
  Lorsque les requêtes XPath sont spécifiées par rapport au schéma XSD annoté, les données des éléments et des attributs du schéma sont extraites des tables et des colonnes avec lesquelles elles sont mappées. Pour obtenir une valeur unique de la base de données, le mappage spécifié dans le schéma XSD doit posséder les spécifications de relation et de champ. Si le nom d’un élément/attribut n’est pas le même nom que le nom de table ou de vue ou une colonne à laquelle il est mappé, le **SQL : relation** et **SQL : Field** annotations sont utilisées pour spécifier le mappage entre un élément ou attribut dans un document XML et la table (vue) ou une colonne dans une base de données.  
   

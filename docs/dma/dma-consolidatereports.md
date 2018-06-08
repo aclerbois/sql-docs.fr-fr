@@ -1,33 +1,31 @@
 ---
-title: "Consolider les rapports d’évaluation (données Assistant Migration SQL Server) | Documents Microsoft"
-ms.custom: 
-ms.date: 09/07/2017
-ms.prod: sql-non-specified
+title: Consolider les rapports d’évaluation (données Assistant Migration SQL Server) | Documents Microsoft
+ms.custom: ''
+ms.date: 04/16/2018
+ms.prod: sql
 ms.prod_service: dma
-ms.service: 
-ms.component: 
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-dma
-ms.tgt_pltfrm: 
-ms.topic: article
-keywords: 
-helpviewer_keywords: Data Migration Assistant, Assess
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: dma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+keywords: ''
+helpviewer_keywords:
+- Data Migration Assistant, Assess
+ms.assetid: ''
+caps.latest.revision: ''
 author: HJToland3
 ms.author: jtoland
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0d0dd690a34cf2e4bf5df2d758f65da9b1123506
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 7192c055b4b9bfb6155f0963c598f9dc4a760c0a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="consolidate-assessment-reports-data-migration-assistant"></a>Consolider les rapports d’évaluation (Assistant Migration de données)
 
-Vous pouvez utiliser la ligne de commande pour effectuer des évaluations de la migration en mode sans assistance, en commençant par l’Assistant Migration de données v2.1. Cette fonctionnalité vous aide à exécuter les évaluations à l’échelle.  L’évaluation des résultats sous la forme d’un fichier JSON ou CSV.
+Vous pouvez utiliser la ligne de commande pour effectuer des évaluations de la migration en mode sans assistance, en commençant par l’Assistant Migration de données v2.1. Cette fonctionnalité vous aide à exécuter les évaluations à l’échelle. L’évaluation des résultats sous la forme d’un fichier JSON ou CSV.
 
 Vous pouvez évaluer plusieurs bases de données dans une seule instanciation de l’utilitaire de ligne de commande de l’Assistant Migration de données et exporter tous les résultats des évaluations dans un seul fichier JSON. Ou bien, vous pouvez évaluer une base de données au moment et ultérieurement consolider les résultats de ces plusieurs fichiers JSON dans une base de données SQL.
 
@@ -37,6 +35,9 @@ Pour plus d’informations sur la façon d’exécuter l’Assistant Migration d
 ## <a name="import-assessment-results-into-a-sql-server-database"></a>Importer les résultats d’évaluation dans une base de données SQL Server
 
 Utilisez le script PowerShell disponible dans ce [référentiel Github](https://github.com/Microsoft/sql-server-samples/tree/master/samples/features/data-migration-assistant) pour importer les résultats d’évaluation à partir de fichiers JSON dans une base de données SQL Server.
+
+> [!NOTE]
+> PowerShell v5 ou ultérieure est requis.
 
 Lorsque vous exécutez le script, vous devez fournir les informations suivantes : 
 
@@ -69,7 +70,7 @@ Le script PowerShell crée les objets suivants dans l’instance SQL que vous av
 
 - **Table** -BreakingChangeWeighting
 
-  - Table de référence pour toutes les modifications avec rupture.  Ici, vous pouvez définir vos propres valeurs de pondération afin d’influencer un classement de réussite de mise à niveau de pourcentage (%) plus précis.
+  - Table de référence pour toutes les modifications avec rupture. Ici, vous pouvez définir vos propres valeurs de pondération afin d’influencer un classement de réussite de mise à niveau de pourcentage (%) plus précis.
 
 - **Vue** – UpgradeSuccessRanking\_locale
 
@@ -101,7 +102,7 @@ Une fois le script terminé, les résultats sont importés dans la table, les ra
 
 ### <a name="viewing-the-results-in-sql-server"></a>Affichage des résultats dans SQL Server
 
-Une fois que les données ont été chargées, connectez-vous à votre instance de SQL Server. Vous devez voir les éléments suivants :
+Une fois que les données ont été chargées, connectez-vous à votre instance de SQL Server. Votre écran doit apparaître comme indiqué dans l’illustration suivante :
 
 ![Rapports consolidés dans la base de données SQL Server](../dma/media/DMAReportingDatabase.png)
 
@@ -113,13 +114,13 @@ Pour afficher une liste de bases de données et leur rang de réussite de pource
 
 ![Affichage des données dans UpgradeSuccessRaning_OnPrem](../dma/media/UpgradeSuccessRankingView.png)
 
-Nous voyons ici pour une base de données quelle est la probabilité de réussite de mise à niveau pour les niveaux de compatibilité.  Ainsi, par exemple, la base de données des ressources humaines a été évaluée par rapport aux niveaux de compatibilité 100, 110, 120 et 130.  Cette évaluation vous permet de voir la quantité de travail est impliqué dans la migration vers une version ultérieure de SQL Server à partir de la version actuelle qui se trouve actuellement la base de données.
+Vous trouverez ici pour une base de données quelle est la probabilité de réussite de mise à niveau pour les niveaux de compatibilité. Ainsi, par exemple, la base de données des ressources humaines a été évaluée par rapport aux niveaux de compatibilité 100, 110, 120 et 130. Cette évaluation vous permet de voir la quantité de travail est impliqué dans la migration vers une version ultérieure de SQL Server à partir de la version actuelle qui se trouve actuellement la base de données.
 
-Généralement la métrique nous intéressent est le nombre de modifications avec rupture il pour une base de données.  Dans l’exemple précédent, nous pouvons voir que la base de données des ressources humaines a un facteur de réussite de mise à niveau de 50 % pour les niveaux de compatibilité 100, 110, 120 et 130.
+Généralement les mesures que vous intéressent sont le nombre de modifications avec rupture il pour une base de données. Dans l’exemple précédent, vous pouvez voir que la base de données des ressources humaines a un facteur de réussite de mise à niveau de 50 % pour les niveaux de compatibilité 100, 110, 120 et 130.
 
 Cette mesure peut être influencée en modifiant les valeurs de pondération dans la table dbo. Table BreakingChangeWeighting.
 
-Dans l’exemple suivant, les efforts nécessaires pour résoudre le problème de syntaxe dans la base de données des ressources humaines sont considéré comme élevé donc la valeur 3 est affectée à **Effort**. Car il n’aurait aucun longue pour résoudre le problème de syntaxe, la valeur 1 est affectée à **FixTime**. Car il serait un coût impliqués dans la modification, une valeur de 2 est assignée à **coût**.  Cela modifie le Changerank combinée à 2.
+Dans l’exemple suivant, les efforts nécessaires pour résoudre le problème de syntaxe dans la base de données des ressources humaines sont considéré comme élevé donc la valeur 3 est affectée à **Effort**. Car il n’aurait aucun longue pour résoudre le problème de syntaxe, la valeur 1 est affectée à **FixTime**. Car il serait un coût impliqués dans la modification, une valeur de 2 est assignée à **coût**. 2 à l’aide de cette valeur remplace la Changerank combinée.
 
 > [!NOTE]
 > Le score est sur une échelle de 1 à 5.  1 est faible et 5 soit élevée. En outre, le ChangeRank est une colonne calculée.
@@ -136,10 +137,8 @@ Pour afficher la liste des bases de données à migrer vers la base de données 
 
 ![Affichage des données dans UpgradeSuccessRanking_Azure](../dma/media/UpgradeSuccessRankingView_Azure.png)
 
-Ici, nous sommes intéressés par la valeur MigrationBlocker.  100,00 signifie qu’il y a un rang de réussite de 100 % pour le déplacement d’une base de données à la base de données SQL Azure v12.
+Ici, vous êtes intéressé par la valeur MigrationBlocker. 100,00 signifie qu’il y a un rang de réussite de 100 % pour le déplacement d’une base de données à la base de données SQL Azure v12.
 
 La différence avec cette vue est qu’il n’existe actuellement aucune substitution pour la modification de la pondération de règles de migration le bloqueur de fenêtres.
 
 Pour plus d’informations sur la création de rapports sur ces données à l’aide de Power BI, consultez [créer des rapports sur vos évaluations consolidées avec Power BI](../dma/dma-powerbiassesreport.md).
-
-

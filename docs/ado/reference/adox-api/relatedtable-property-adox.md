@@ -1,17 +1,15 @@
 ---
-title: "RelatedTable, propriété (ADOX) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: RelatedTable, propriété (ADOX) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - _Key::RelatedTable
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - RelatedTable property [ADOX]
 ms.assetid: cb54c6bc-2be2-40b1-bc11-90c10651b878
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9c538ecb3f7d0e07b1af9c0ea1385db78b9cf976
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 363f6ee1ceb90bf7328122d8e1e2e192a966ec6c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="relatedtable-property-adox"></a>RelatedTable, propriété (ADOX)
 Indique le nom de la table associée.  

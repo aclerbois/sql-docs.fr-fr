@@ -1,27 +1,25 @@
 ---
-title: "Installer le Générateur de rapports | Microsoft Docs"
-ms.custom: 
+title: Installer le Générateur de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 09/22/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 ms.assetid: 6b2291bb-1d20-4d08-81cb-a16dd8e01faf
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 395ec440e3cae0ac4013edc9c35af36e32a73d0c
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3812692b30c5ff4436403d22de834e9fe8d6d73b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-report-builder"></a>Install Report Builder
   [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] est une application autonome installée sur votre ordinateur par vos propres soins ou par un administrateur. Vous pouvez l’installer à partir du Centre de téléchargement Microsoft, d’un serveur de rapport [!INCLUDE[ssRSCurrent](../../includes/ssrscurrent-md.md)] le serveur de rapports ou d’un site SharePoint intégré avec [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)].  
@@ -72,7 +70,7 @@ ms.lasthandoff: 01/09/2018
   
      Cette opération lance l’Assistant SQL Server [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] .  
   
-3.  Suivez les étapes suivantes décrites dans [To install Report Builder from the download site](#download).  
+3.  Suivez les étapes suivantes décrites dans [Pour installer le Générateur de rapports à partir du site de téléchargement](#download).  
   
 ## <a name="to-install-includessrbnoversionincludesssrbnoversion-mdmd-from-the-command-line"></a>Pour installer l’ [!INCLUDE[ssRBnoversion](../../includes/ssrbnoversion-md.md)] à partir de la ligne de commande 
 

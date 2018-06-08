@@ -1,28 +1,27 @@
 ---
-title: "Boîte de dialogue Ouverture de session Reporting Services (Générateur de rapports) | Microsoft Docs"
-ms.custom: 
+title: Boîte de dialogue Ouverture de session Reporting Services (Générateur de rapports) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-f1_keywords: "10059"
+f1_keywords:
+- "10059"
 ms.assetid: daf5eec6-f9d2-475c-8c65-9cf74e5523a2
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9157b167f69807cf4d4cbf7eae75e207ec2b1a42
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3ea774628fc4297853ee4503668ed8cdfe0f0565
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="reporting-services-login-dialog-box-report-builder"></a>Boîte de dialogue Ouverture de session Reporting Services (Générateur de rapports)
   Utilisez la boîte de dialogue **Ouverture de session Reporting Services** pour fournir les informations d'identification nécessaires à la publication de rapports sur le serveur de rapports. Pour obtenir de l'aide sur ces informations d'identification, contactez l'administrateur de votre serveur de rapports.  

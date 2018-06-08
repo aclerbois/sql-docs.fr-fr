@@ -1,30 +1,27 @@
 ---
-title: "Ajouter le basculement de base de données amélioré à un groupe de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Ajouter le basculement de base de données amélioré à un groupe de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 09/25/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
+ms.prod: sql
 ms.reviewer: mikeray
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], enhanced database failover
 - Availability Groups [SQL Server], failover
-ms.assetid: 
-caps.latest.revision: 
+ms.assetid: ''
+caps.latest.revision: ''
 author: allanhirt
-ms.author: mikeray
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a0ed6831a89d77f60e77e012ba36febdddc88a5a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 8afda7e0b837994f528d7aaac97b89c259faf392
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771295"
 ---
 # <a name="add-enhanced-database-failover-to-an-availability-group-sql-server"></a>Ajouter le basculement de base de données amélioré à un groupe de disponibilité (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

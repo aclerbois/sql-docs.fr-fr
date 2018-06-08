@@ -1,36 +1,37 @@
 ---
-title: "Supprimer une ligne (Complément MDS pour Excel) | Microsoft Docs"
-ms.custom: 
+title: Supprimer une ligne (Complément MDS pour Excel) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: microsoft-excel-add-in
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7791fbdd-7fed-44be-b0bd-20c1eba7239e
-caps.latest.revision: 
+caps.latest.revision: 6
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 749dbb3a46d57ac62e84298d07fe709c5a062fa9
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 3f1073f3b3cd98729d99e9f93363463004dd8af8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-a-row-mds-add-in-for-excel"></a>Supprimer une ligne (Complément MDS pour Excel)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans [!INCLUDE[ssMDSshort](../../includes/ssmdsshort-md.md)][!INCLUDE[ssMDSXLS](../../includes/ssmdsxls-md.md)], supprimez une ligne de données (membre) de la base de données de référentiel MDS lorsque vous ne souhaitez plus qu’elle soit à la disposition des utilisateurs.  
   
 > [!NOTE]  
 >  Les administrateurs peuvent réactiver les membres supprimés. Pour plus d’informations, consultez [Réactiver un membre ou une collection &#40;Master Data Services&#41;](../../master-data-services/reactivate-a-member-or-collection-master-data-services.md).  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour effectuer cette procédure :  
   
 -   Vous devez avoir l’autorisation d’accéder à la zone fonctionnelle **Explorateur** .  

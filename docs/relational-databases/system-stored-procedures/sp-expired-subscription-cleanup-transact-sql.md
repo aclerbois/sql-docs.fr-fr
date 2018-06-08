@@ -1,16 +1,15 @@
 ---
 title: sp_expired_subscription_cleanup (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_expired_subscription_cleanup
 ms.assetid: 6abc29fe-d77a-4673-9d99-ae31c688012c
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2b2da325d403d6a7965cf6a211c07a4809598bdf
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a650eade156692678cf5bf18bcca7526f19b391e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spexpiredsubscriptioncleanup-transact-sql"></a>sp_expired_subscription_cleanup (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -55,14 +53,14 @@ sp_expired_subscription_cleanup [ [ @publisher = ] 'publisher' ]
 ## <a name="remarks"></a>Notes  
  **sp_expired_subscription_cleanup** est utilisée dans tous les types de réplication.  
   
- **sp_expired_subscription_cleanup** est exécutée par la tâche a expiré abonnement nettoyer pour détecter et supprimer les abonnements expirés des bases de données de publication toutes les 24 heures. Si l'un d'entre eux est périmé, c'est-à-dire s'il n'a pas été synchronisé avec le serveur de publication au cours de la période de rétention, la publication est considérée comme étant arrivée à expiration et les traces de l'abonnement sont effacées du serveur de publication. Pour plus d’informations, voir [Subscription Expiration and Deactivation](../../relational-databases/replication/subscription-expiration-and-deactivation.md).  
+ **sp_expired_subscription_cleanup** est exécutée par la tâche a expiré abonnement nettoyer pour détecter et supprimer les abonnements expirés des bases de données de publication toutes les 24 heures. Si l'un d'entre eux est périmé, c'est-à-dire s'il n'a pas été synchronisé avec le serveur de publication au cours de la période de rétention, la publication est considérée comme étant arrivée à expiration et les traces de l'abonnement sont effacées du serveur de publication. Pour plus d'informations, voir [Subscription Expiration and Deactivation](../../relational-databases/replication/subscription-expiration-and-deactivation.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_expired_subscription_cleanup**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_mergesubscription_cleanup &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-mergesubscription-cleanup-transact-sql.md)   
- [sp_subscription_cleanup &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-subscription-cleanup-transact-sql.md)   
+ [sp_mergesubscription_cleanup &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-mergesubscription-cleanup-transact-sql.md)   
+ [sp_subscription_cleanup &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-subscription-cleanup-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

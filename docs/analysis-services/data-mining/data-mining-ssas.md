@@ -1,31 +1,23 @@
 ---
-title: "Exploration de données (SSAS) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: data mining [Analysis Services], about data mining
-ms.assetid: b1c912da-72f6-4d96-89c8-55a2c4f19e88
-caps.latest.revision: "31"
-author: Minewiskan
+title: Exploration de données (SSAS) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 6ccc1faad28913133cc0870899f20b443fc28eb7
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 7468074eb8a18dd9448e558cadebdc9f07ffc2cb
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-ssas"></a>Data Mining (SSAS)
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)][!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] a été leader analytique prédictive depuis la version 2000, en fournissant l’exploration de données dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. La combinaison d’ [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]et de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Data Mining fournit une plateforme intégrée pour l’analyse prédictive qui englobe la préparation et le nettoyage des données, l’apprentissage automatique et la création de rapports. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Data Mining inclut de nombreux algorithmes standard, y compris les modèles de clustering EM et K-means, les réseaux neuronaux, les régressions logistique et linéaire, les arbres de décision et les classifieurs Naive Bayes. Tous les modèles proposent des visualisations destinées à vous aider à concevoir, ajuster et évaluer vos modèles.  L’intégration de l’exploration des données dans une solution d’aide à la décision vous permet de prendre des décisions plus avisées concernant des problèmes complexes.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est la première solution d’analyse prédictive depuis la version 2000, qui a introduit l’exploration de données dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]. La combinaison d’ [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)], de [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)]et de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Data Mining fournit une plateforme intégrée pour l’analyse prédictive qui englobe la préparation et le nettoyage des données, l’apprentissage automatique et la création de rapports. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Data Mining inclut de nombreux algorithmes standard, y compris les modèles de clustering EM et K-means, les réseaux neuronaux, les régressions logistique et linéaire, les arbres de décision et les classifieurs Naive Bayes. Tous les modèles proposent des visualisations destinées à vous aider à concevoir, ajuster et évaluer vos modèles.  L’intégration de l’exploration des données dans une solution d’aide à la décision vous permet de prendre des décisions plus avisées concernant des problèmes complexes.  
   
 ## <a name="benefits-of-data-mining"></a>Avantages de l’exploration de données  
  L’exploration des données (également appelée analyse prédictive ou apprentissage automatique) utilise les principes statistiques bien connus pour découvrir des modèles dans vos données. En appliquant les algorithmes d'exploration de données dans [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] à vos données, vous pouvez prévoir des tendances, identifier des modèles, créer des règles et des recommandations, analyser la séquence d'événements dans des jeux de données complexes et bénéficier de nouvelles analyses.  
@@ -56,23 +48,23 @@ ms.lasthandoff: 01/08/2018
   
 -   [Concepts d'exploration de données](../../analysis-services/data-mining/data-mining-concepts.md)  
   
--   [Algorithmes d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)  
+-   [Algorithmes d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/data-mining-algorithms-analysis-services-data-mining.md)  
   
--   [Structures d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)  
+-   [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)  
   
 -   [Modèles d’exploration de données &#40;Analysis Services - Exploration de données&#41;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)  
   
--   [Test et validation &#40;exploration de données&#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
+-   [Test et Validation & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)  
   
--   [Requêtes d'exploration de données](../../analysis-services/data-mining/data-mining-queries.md)  
+-   [Requêtes d’exploration de données](../../analysis-services/data-mining/data-mining-queries.md)  
   
 -   [Solutions d'exploration de données](../../analysis-services/data-mining/data-mining-solutions.md)  
   
--   [Outils d'exploration de données](../../analysis-services/data-mining/data-mining-tools.md)  
+-   [Outils d’exploration de données](../../analysis-services/data-mining/data-mining-tools.md)  
   
 -   [Architecture d'exploration de données](../../analysis-services/data-mining/data-mining-architecture.md)  
   
--   [Vue d’ensemble de la sécurité &#40;exploration de données&#41;](../../analysis-services/data-mining/security-overview-data-mining.md)  
+-   [Vue d’ensemble de la sécurité & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/security-overview-data-mining.md)  
   
 ## <a name="see-also"></a>Voir aussi  
  [SQL Server R Services](../../advanced-analytics/r-services/sql-server-r-services.md)  

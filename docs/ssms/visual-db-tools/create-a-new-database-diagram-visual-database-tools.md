@@ -1,33 +1,32 @@
 ---
-title: "Créer un schéma de base de données (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Créer un schéma de base de données (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - diagrams [SQL Server], creating
 - database diagrams [SQL Server], creating
 ms.assetid: 843649c0-10bb-4b6a-9369-6b10733381e9
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ca5b030d33182f56a962d4bd6e1acb048834bc31
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: a672bf8d0a05d928e9bc7101e5f1fb2860b8cd95
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-new-database-diagram-visual-database-tools"></a>Créer un schéma de base de données (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez utiliser l’Explorateur d’objets pour créer de nouveaux schémas de base de données. Les schémas de base de données représentent, de manière graphique, la structure de la base de données. Grâce aux schémas de base de données, vous pouvez créer et modifier des tables, des colonnes, des relations et des clés. En outre, vous pouvez modifier des index et des contraintes.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez utiliser l'Explorateur d'objets pour créer de nouveaux schémas de base de données. Les schémas de base de données représentent, de manière graphique, la structure de la base de données. Grâce aux schémas de base de données, vous pouvez créer et modifier des tables, des colonnes, des relations et des clés. En outre, vous pouvez modifier des index et des contraintes.  
   
 ### <a name="to-create-a-new-database-diagram"></a>Pour créer un nouveau schéma de base de données  
   

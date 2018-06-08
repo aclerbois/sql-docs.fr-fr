@@ -1,27 +1,24 @@
 ---
-title: "Configurer un groupe de disponibilité distribué (Groupe de disponibilité AlwaysOn) | Microsoft Docs"
-ms.custom: 
+title: Configurer un groupe de disponibilité distribué (Groupe de disponibilité AlwaysOn) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: f7c7acc5-a350-4a17-95e1-e689c78a0900
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 28
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0306d075998380efc599e82386e49496db3cdaaa
-ms.sourcegitcommit: 6e819406554efbd17bbf84cf210d8ebeddcf772d
+ms.openlocfilehash: 6dd177d3094f50cd226ed5613ded8fc0d76e6891
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769065"
 ---
 # <a name="configure-distributed-availability-group"></a>Configurer un groupe de disponibilité distribué  
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -30,7 +27,7 @@ Pour créer un groupe de disponibilité distribué, vous devez créer un groupe 
 
 Pour obtenir une présentation technique des groupes de disponibilité distribués, consultez [Groupes de disponibilité distribués](distributed-availability-groups.md).   
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 ### <a name="set-the-endpoint-listeners-to-listen-to-all-ip-addresses"></a>Définir les écouteurs de point de terminaison pour écouter toutes les adresses IP
 
@@ -183,7 +180,7 @@ GO
 ```  
   
 > [!NOTE]  
->  **LISTENER_URL** spécifie l’écouteur pour chaque groupe de disponibilité, ainsi que le point de terminaison de mise en miroir de bases de données du groupe de disponibilité. Dans cet exemple, il s’agit du port `5022` (et non du port `60173` qui a permis de créer l’écouteur).  
+>  **LISTENER_URL** spécifie l’écouteur pour chaque groupe de disponibilité, ainsi que le point de terminaison de mise en miroir de bases de données du groupe de disponibilité. Dans cet exemple, il s’agit du port `5022` (et non du port `60173` qui a permis de créer l’écouteur). Si vous utilisez un équilibreur de charge, par exemple dans Azure, [ajoutez une règle d’équilibrage de charge pour le port du groupe de disponibilité distribué](http://docs.microsoft.com/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener#add-load-balancing-rule-for-distributed-availability-group). Ajoutez la règle pour le port d’écoute, en plus du port de l’instance SQL Server. 
   
 ## <a name="join-distributed-availability-group-on-second-cluster"></a>Joindre un groupe de disponibilité distribué sur le second cluster  
  Joignez ensuite le groupe de disponibilité distribué au deuxième cluster WSFC.  

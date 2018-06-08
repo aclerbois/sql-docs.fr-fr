@@ -1,32 +1,33 @@
 ---
-title: "Paramétrer une charge de travail | Documents Microsoft"
-ms.custom: 
+title: Paramétrer une charge de travail | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: dta
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: SQL Server 2016
-helpviewer_keywords: workloads [SQL Server], tuning
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+applies_to:
+- SQL Server 2016
+helpviewer_keywords:
+- workloads [SQL Server], tuning
 ms.assetid: 6229bf3f-1182-4bc6-8451-cedc37f4b62e
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6acb93ddde56546e170b01c093dff843a2ea5968
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: cb21de806444d238c3a2b7d16caa2b6bd709b99a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="lesson-1-1---tuning-a-workload"></a>Leçon 1-1-paramétrer une charge de travail
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]L’Assistant Paramétrage du moteur de base de données peut être utilisé pour trouver la meilleure conception physique de la base de données de performances des requêtes sur les bases de données et les tables que vous sélectionnez pour le paramétrage.  
+# <a name="lesson-1-1---tuning-a-workload"></a>Leçon 1-1 : Paramétrage d’une charge de travail
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+L'Assistant Paramétrage du moteur de base de données peut servir à trouver la conception de base de données physique qui permet d'obtenir les meilleures performances des requêtes sur les bases de données et les tables que vous avez sélectionnées pour le paramétrage.  
   
 Cette tâche utilise l'exemple de base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] . Pour des raisons de sécurité, les exemples de bases de données ne sont pas installés par défaut. Pour installer les exemples de bases de données, consultez [Installation des exemples SQL Server et des exemples de bases de données](http://sqlserversamples.codeplex.com).  
   

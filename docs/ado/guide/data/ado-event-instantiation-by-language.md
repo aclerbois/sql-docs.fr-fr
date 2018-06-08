@@ -1,31 +1,28 @@
 ---
-title: "Instanciation des événements ADO par langage | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Instanciation des événements ADO par langage | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - events [ADO], instantiation by language
 - event handlers [ADO], instantiation by language
 ms.assetid: eded7e8c-a25f-46a6-bc2b-32d89a54d1bc
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a6591af543a7aa7e51fb217ca3b77731e9a1d8e7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e9d4930294b4024d5c3dfa7dd17ffee3c8f0b11b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ado-event-instantiation-by-language"></a>Instanciation des événements ADO par langage
 Chaque langage de programmation crée des instances d’événements ADO différemment. Tous les exemples suivants créent un **ConnectComplete** Gestionnaire d’événements.  

@@ -1,16 +1,14 @@
 ---
 title: Sys.memory_optimized_tables_internal_attributes (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.memory_optimized_tables_internal_attributes
@@ -22,16 +20,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.memory_optimized_tables_internal_attributes catalog view
 ms.assetid: 78ef5807-0504-4de8-9a01-ede6c03c7ff1
-caps.latest.revision: 
+caps.latest.revision: 13
 author: jodebrui
 ms.author: jodebrui
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 97bc9da007e21fd6f686795776b9d96ab53b3c77
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ea18b7493e5a5ff35a50a63f9d8d57d22149838c
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmemoryoptimizedtablesinternalattributes-transact-sql"></a>sys.memory_optimized_tables_internal_attributes (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -42,7 +40,7 @@ Contient une ligne pour chaque table optimisée en mémoire interne utilisé pou
 | :------ |:----------| :-----|
 |object_id  |**int**|       Identifiant de la table utilisateur. Les tables optimisées en mémoire internes destinées à la prise en charge d’une table utilisateur (par exemple, le stockage hors ligne ou les lignes supprimées dans le cas de combinaisons Hk/Columnstore) ont le même object_id que leurs parents. |
 |xtp_object_id  |**bigint**|    ID de l’objet In-Memory OLTP correspondant à la table optimisée en mémoire interne utilisée pour prendre en charge la table utilisateur. Il est unique dans la base de données, et peut évoluer au fil de la durée de vie de l’objet. 
-|type|  **int** |   Type de la table interne.<br/><br/> 0 => DELETED_ROWS_TABLE <br/> 1 => USER_TABLE <br/> 2 => DICTIONARIES_TABLE<br/>3 => SEGMENTS_TABLE<br/>4 => ROW_GROUPS_INFO_TABLE<br/>5 => INTERNAL OFF-ROW DATA TABLE<br/>252 => INTERNAL_TEMPORAL_HISTORY_TABLE | 
+|Type|  **int** |   Type de la table interne.<br/><br/> 0 => DELETED_ROWS_TABLE <br/> 1 => USER_TABLE <br/> 2 => DICTIONARIES_TABLE<br/>3 => SEGMENTS_TABLE<br/>4 => ROW_GROUPS_INFO_TABLE<br/>5 => INTERNAL OFF-ROW DATA TABLE<br/>252 => INTERNAL_TEMPORAL_HISTORY_TABLE | 
 |type_desc| **nvarchar(60)**|   Description du type<br/><br/>DELETED_ROWS_TABLE -> Lignes supprimées de suivi de table interne pour un index columnstore<br/>USER_TABLE -> Table contenant les données de ligne utilisateur<br/>DICTIONARIES_TABLE -> Dictionnaires pour un index columnstore<br/>SEGMENTS_TABLE -> Segments compressés pour un index columnstore<br/>ROW_GROUPS_INFO_TABLE -> Métadonnées à propos des groupes de lignes compressés d’un index columnstore<br/>INTERNAL OFF-ROW DATA TABLE -> Table interne utilisée pour le stockage d’une colonne hors ligne. Dans ce cas, minor_id reflète column_id.<br/>INTERNAL_TEMPORAL_HISTORY_TABLE -> Fin à chaud de la table d’historique basée sur le disque. Tout d’abord, les lignes insérées dans l’historique sont insérées dans cette table optimisée en mémoire interne. Il existe une tâche en arrière-plan qui déplace de manière asynchrone les lignes de cette table interne vers la table d’historique sur disque. |
 |minor_id|  **int**|    0 indique une table utilisateur ou interne<br/><br/>Non-0 indique l’ID d’une colonne stockée hors ligne. Se joint à column_id dans sys.columns.<br/><br/>Chaque colonne stockée hors ligne a une ligne correspondante dans cette vue système.|
 

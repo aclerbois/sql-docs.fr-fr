@@ -1,16 +1,14 @@
 ---
-title: "STMPolyFromWKB (type de données geography) | Microsoft Docs"
-ms.custom: 
+title: STMPolyFromWKB (type de données geography) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|spatial-geography
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - STMPolyFromWKB (geography Data Type)
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - STMPolyFromWKB method
 ms.assetid: c4d0e649-0abb-4343-a3f0-3a702c8bbbdb
-caps.latest.revision: 
+caps.latest.revision: 14
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c28ac109dcc5f1665285efc4a884913eb52aad54
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: f2eebf9be16ba4046b70d41070b88e9204288d85
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stmpolyfromwkb-geography-data-type"></a>STMPolyFromWKB (type de données geography)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

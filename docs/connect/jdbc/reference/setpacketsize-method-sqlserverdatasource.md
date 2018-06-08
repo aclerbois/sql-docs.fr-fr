@@ -1,30 +1,29 @@
 ---
-title: "Méthode setPacketSize (SQLServerDataSource) | Documents Microsoft"
-ms.custom: 
+title: Méthode setPacketSize (SQLServerDataSource) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDataSource.setPacketSize
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDataSource.setPacketSize
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 5d490edc-a223-4870-a838-784952497e5f
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: aca0de41e907beb56752838554bb6c752b25e96f
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 08f4f72aae10fc154b7362a83e870d85b9fb42e0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setpacketsize-method-sqlserverdatasource"></a>Méthode setPacketSize (SQLServerDataSource)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -39,7 +38,7 @@ public void setPacketSize(int packetSize)
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *packetSize*  
+ *PacketSize*  
   
  Un **int** valeur contenant la taille du paquet réseau.  
   
@@ -53,7 +52,7 @@ public void setPacketSize(int packetSize)
  Pour plus d’informations sur l’utilisation de SSL, consultez [le chiffrement SSL à l’aide de](../../../connect/jdbc/using-ssl-encryption.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Membres de SQLServerDataSource](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
+ [SQLServerDataSource, membres](../../../connect/jdbc/reference/sqlserverdatasource-members.md)   
  [SQLServerDataSource, classe](../../../connect/jdbc/reference/sqlserverdatasource-class.md)  
   
   

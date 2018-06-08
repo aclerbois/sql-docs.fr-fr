@@ -1,16 +1,15 @@
 ---
-title: "Code personnalisé et références d’assembly dans les expressions du Concepteur de rapports (SSRS) | Microsoft Docs"
-ms.custom: 
+title: Code personnalisé et références d’assembly dans les expressions du Concepteur de rapports (SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - items [Reporting Services], expressions
 - data [Reporting Services], expressions
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - data manipulation [Reporting Services]
 - SQL Server Reporting Services, expressions
 ms.assetid: ae8a0166-2ccc-45f4-8d28-c150da7b73de
-caps.latest.revision: "77"
+caps.latest.revision: 77
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e17e5820a54eb2328edc9efe31239ca31a1fef09
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 03cc0727e6f545f37ebccb716877b89f29f02d09
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="custom-code-and-assembly-references-in-expressions-in-report-designer-ssrs"></a>Code personnalisé et références d'assembly dans les expressions du Concepteur de rapports (SSRS)
   Vous pouvez ajouter des références à du code personnalisé incorporé dans un rapport ou à des assemblys personnalisés que vous générez et enregistrez sur votre ordinateur et déployez sur le serveur de rapports. L'incorporation de code convient dans le cas de constantes personnalisées, de fonctions complexes ou de fonctions utilisées plusieurs fois dans un même rapport. Quant aux assemblys personnalisés, il est préférable de les utiliser si vous voulez centraliser du code en un emplacement unique et le partager en vue de son utilisation par plusieurs rapports. Le code personnalisé peut inclure de nouvelles constantes personnalisées, variables, fonctions ou sous-routines. Vous pouvez inclure des références en lecture seule à des collections intégrées, telles que la collection de paramètres. Cependant, les fonctions personnalisées ne peuvent pas recevoir des ensembles de valeurs de données de rapport : les agrégations personnalisées ne sont notamment pas prises en charge.  
@@ -127,7 +125,7 @@ End Function
   
  Le tableau suivant présente des exemples du référencement de la collection `Parameters` intégrée à partir du code personnalisé :  
   
- **Transmission de l’intégralité de la collection globale de paramètres au code personnalisé.**Cette fonction retourne la valeur d’un paramètre de rapport spécifique *MyParameter*.  
+ **Transmission de l’intégralité de la collection globale de paramètres au code personnalisé.** Cette fonction retourne la valeur d’un paramètre de rapport spécifique *MyParameter*.  
   
  Référence dans une expression `=Code.DisplayAParameterValue(Parameters)`  
   

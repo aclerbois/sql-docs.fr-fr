@@ -1,27 +1,25 @@
 ---
-title: "Extraction, exploration, sous-rapports et régions de données imbriquées | Microsoft Docs"
-ms.custom: 
+title: Extraction, exploration, sous-rapports et régions de données imbriquées | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 4791a157-b028-4698-905d-f1dd0887aa0d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 79bb5cfbe014006c6400ec54d56b69ce435910fb
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: a9a51d0ff1c42d6110c62fe552a49e517ecd1ec5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="drillthrough-drilldown-subreports-and-nested-data-regions"></a>Extraction, exploration, sous-rapports et régions de données imbriquées
   Vous pouvez organiser les données de plusieurs façons pour montrer une relation du général au particulier.  Vous pouvez placer toutes les données dans le rapport et les masquer jusqu'à ce qu'un utilisateur clique pour afficher des détails ; il s'agit d'une action d' *exploration* . Vous pouvez afficher les données dans une région de données, telle qu'un tableau ou un graphique, *imbriquée* à l'intérieur d'une autre région de données, telle qu'un tableau ou une matrice. Vous pouvez afficher les données dans un *sous-rapport* intégralement contenu dans un rapport principal. Sinon, vous pouvez placer les données de détail dans des rapports d' *extraction* , des rapports distincts qui s'affichent lorsqu'un utilisateur clique sur un lien.  

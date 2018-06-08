@@ -1,34 +1,31 @@
 ---
-title: "Fonctionnalités internationales du pilote JDBC | Documents Microsoft"
-ms.custom: 
+title: Fonctionnalités internationales du pilote JDBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: bbb74a1d-9278-401f-9530-7b5f45aa79de
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f323a5728aa9f63ba5283a34694c1e00baa0bb91
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 1fd4eb01d7ab8aa2314dfb8f45e0bd08c3b49488
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="international-features-of-the-jdbc-driver"></a>Caractéristiques internationales du pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
 
   Les caractéristiques d’internationalisation du [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] incluent les éléments suivants :  
   
--   Prise en charge pour une expérience entièrement localisée dans les mêmes langues que[!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]  
+-   Prise en charge pour une expérience entièrement localisée dans les mêmes langues que [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)]  
   
 -   Prise en charge des conversions de langage Java pour les paramètres régionaux sensibles [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] données  
   

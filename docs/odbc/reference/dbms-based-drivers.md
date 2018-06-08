@@ -1,31 +1,28 @@
 ---
-title: "Pilotes basés sur SGBD | Documents Microsoft"
-ms.custom: 
+title: Pilotes basés sur SGBD | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - drivers [ODBC], DBMS-based drivers
 - DBMS-based drivers [ODBC]
 - ODBC architecture [ODBC], drivers
 ms.assetid: e2208ee0-4cd6-4f0d-bb71-a0b54f7d9330
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7c841b4404132e4fe385c9c3aa6fd12bdd2eb8a0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: bb73a903d1e286e018c326b675a6bd914db0e367
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dbms-based-drivers"></a>Pilotes basés sur SGBD
 Pilotes basés sur SGBD sont utilisées avec des sources de données telles que Oracle ou SQL Server qui fournissent un moteur de base de données autonome pour le pilote à utiliser. Ces pilotes accéder aux données physiques par le moteur autonome ; Autrement dit, ils soumettre des instructions SQL à et récupèrent les résultats à partir du moteur.  
@@ -36,4 +33,4 @@ Pilotes basés sur SGBD sont utilisées avec des sources de données telles que 
   
  L’illustration suivante montre trois différentes configurations de pilotes basés sur SGBD. Dans la première configuration, le pilote et la source de données résident sur le même ordinateur. Dans la seconde, le pilote et la source de données résident sur des ordinateurs différents. Dans la troisième, le pilote et la source de données résident sur des ordinateurs différents et une passerelle se situe entre eux, résidant sur un autre ordinateur.  
   
- ![Trois configurations de SGBD &#45; pilotes en fonction](../../odbc/reference/media/pr07.gif "pr07")
+ ![Trois configurations de SGBD&#45;pilotes](../../odbc/reference/media/pr07.gif "pr07")

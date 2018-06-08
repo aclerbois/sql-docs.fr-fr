@@ -1,51 +1,27 @@
 ---
-title: "Propriétés de chaîne de connexion (Analysis Services) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/07/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 29a00a41-5b0d-44b2-8a86-1b16fe507768
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés de chaîne de connexion (Analysis Services) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3fa9fd8e7b7c4722e9acf41f0f7229ee0a1f3ef7
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3bca184686c34d204958cf44cb53289b7c07a4a9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="connection-string-properties-analysis-services"></a>Propriétés des chaînes de connexion (Analysis Services)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette rubrique documente les propriétés de chaîne de connexion que vous pouvez définir dans le concepteur ou les outils d'administration, ou voir dans les chaînes de connexion générées par les applications clientes qui se connectent aux données Analysis Services et interrogent ces dernières. Par conséquent, elle couvre uniquement un sous-ensemble des propriétés disponibles. La liste complète inclut de nombreuses propriétés de serveur et de base de données, vous permettant de personnaliser une connexion à une application spécifique, indépendamment de la façon dont l'instance ou la base de données est configurée sur le serveur.  
+  Cette rubrique documente les propriétés de chaîne de connexion que vous pouvez définir dans le concepteur ou les outils d'administration, ou voir dans les chaînes de connexion générées par les applications clientes qui se connectent aux données Analysis Services et interrogent ces dernières. Par conséquent, elle couvre uniquement un sous-ensemble des propriétés disponibles. La liste complète inclut de nombreuses propriétés de serveur et de base de données, vous permettant de personnaliser une connexion à une application spécifique, indépendamment de la façon dont l'instance ou la base de données est configurée sur le serveur.  
   
  Les développeurs qui créent des chaînes de connexion personnalisées dans un code d’application doivent consulter la documentation de l’API pour le client ADOMD.NET afin d’obtenir une liste plus détaillée : <xref:Microsoft.AnalysisServices.AdomdClient.AdomdConnection.ConnectionString%2A>  
   
- Les propriétés décrites dans cette rubrique sont utilisées par les bibliothèques clientes Analysis Services, ADOMD.NET, AMO et le fournisseur OLE DB pour Analysis Services. La majorité des propriétés de chaîne de connexion peut être utilisée avec les trois bibliothèques clientes. Les exceptions sont signalées dans la description.  
-  
- Cette rubrique comprend les sections suivantes :  
-  
- [Paramètres de connexion couramment utilisés](#bkmk_common)  
-  
- [Authentification et sécurité](#bkmk_auth)  
-  
- [Paramètres spéciaux](#bkmk_special)  
-  
- [Réservé pour un usage ultérieur](#bkmk_reserved)  
-  
- [Exemples de chaîne de connexion](#bkmk_examples)  
-  
- [Formats de chaîne de connexion utilisés dans Analysis Services](#bkmk_supportedstrings)  
-  
- [Chiffrement des chaînes de connexion](#bkmk_encrypt)  
+ Les propriétés décrites dans cette rubrique sont utilisées par les bibliothèques clientes Analysis Services, ADOMD.NET, AMO et le fournisseur OLE DB pour Analysis Services. La majorité des propriétés de chaîne de connexion peut être utilisée avec les trois bibliothèques clientes. Les exceptions sont signalées dans la description.
   
 > [!NOTE]  
 >  Si, par inadvertance, vous définissez deux fois la même propriété, c'est la dernière figurant dans la chaîne de connexion qui est utilisée.  
@@ -191,7 +167,7 @@ Cette rubrique documente les propriétés de chaîne de connexion que vous pouve
 ##  <a name="bkmk_encrypt"></a> Chiffrement des chaînes de connexion  
  Analysis Services utilise ses propres clés de chiffrement pour chiffrer des chaînes de connexion. Il ne génère pas de certificat auto-signé.  
   
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] chiffre et stocke les chaînes de connexion qu'il utilise pour se connecter à chacune de ses sources de données. Si la connexion à une source de données nécessite un nom d'utilisateur et un mot de passe, vous pouvez demander à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de stocker le nom et le mot de passe avec la chaîne de connexion, ou lui indiquer de demander le nom et le mot de passe chaque fois qu'une connexion à la source de données est nécessaire. Si vous indiquez à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de vous demander les informations utilisateur, ceci implique que ces informations ne doivent pas être stockées et chiffrées. En revanche, si vous stockez ces informations dans la chaîne de connexion, ces informations doivent être chiffrées et protégées.  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] chiffre et stocke les chaînes de connexion qu’il utilise pour se connecter à chacune de ses sources de données. Si la connexion à une source de données nécessite un nom d'utilisateur et un mot de passe, vous pouvez demander à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de stocker le nom et le mot de passe avec la chaîne de connexion, ou lui indiquer de demander le nom et le mot de passe chaque fois qu'une connexion à la source de données est nécessaire. Si vous indiquez à [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] de vous demander les informations utilisateur, ceci implique que ces informations ne doivent pas être stockées et chiffrées. En revanche, si vous stockez ces informations dans la chaîne de connexion, ces informations doivent être chiffrées et protégées.  
   
  Pour chiffrer et protéger les informations de la chaîne de connexion, [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] utilise l'API de protection des données.  
   

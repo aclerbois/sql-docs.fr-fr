@@ -1,33 +1,32 @@
 ---
-title: "Propriétés de la base de données (page Envoi des journaux de transactions) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de la base de données (page Envoi des journaux de transactions) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.databaseproperties.logshipping.f1
 ms.assetid: 72c4e539-fe11-4d57-b977-65b418d5916f
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1016bfa1e560c6ec9b4db1db393e4c44366cae16
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: a84c96b1f1699bc2373e40a404c1c0b07d7e91a3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-properties-transaction-log-shipping-page"></a>Propriétés de la base de données (page Envoi des journaux de transactions)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette page vous permet de configurer et de modifier les propriétés de copie des journaux de transactions d’une base de données.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette page vous permet de configurer et de modifier les propriétés de copie des journaux de transactions d'une base de données.  
   
  Pour obtenir des explications sur les concepts de copie des journaux de transaction, consultez [À propos de la copie des journaux de transaction &#40;SQL Server&#41;](../../database-engine/log-shipping/about-log-shipping-sql-server.md).  
   

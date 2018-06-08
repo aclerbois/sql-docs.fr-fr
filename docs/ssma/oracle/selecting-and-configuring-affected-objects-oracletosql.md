@@ -1,30 +1,28 @@
 ---
-title: "Sélectionner et configurer les objets (OracleToSQL) affectés | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Sélectionner et configurer les objets (OracleToSQL) affectés | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-oracle
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Columns Comparison Settings
 - Selection of Affected Objects
 ms.assetid: 545eeda2-9829-4187-a858-619a96b4b71d
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: Shamikg
 ms.author: Shamikg
 manager: v-thobro
-ms.workload: Inactive
-ms.openlocfilehash: 1a4fe479f53c914b4417cd0069335fa8bb0da027
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 4593830a2cc22b04977f117502bb14118b1b31a8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="selecting-and-configuring-affected-objects-oracletosql"></a>Sélectionner et configurer les objets (OracleToSQL) affectés
 Sur cette page, vous pouvez sélectionner les tables et les clés étrangères, les modifications dans lequel doivent être comparés quand SSMA vérifie les résultats de l’exécution pour les objets sélectionnés dans l’étape précédente. En outre, vous pouvez personnaliser les paramètres de vérification.  
@@ -34,7 +32,7 @@ Dans l’arborescence des objets Oracle situé sur le côté gauche de la fenêt
   
 Si le testeur de SSMA ne peut pas vérifier la valeur d’un de ces objets, vous verrez le lien **certains des objets sélectionnés contiennent des erreurs** sous l’arborescence d’objets. Cliquez sur ce lien pour afficher les raisons pour lesquelles ces objets ne peuvent pas être comparées et pour effacer la sélection d’objets incorrectes.  
   
-## <a name="table"></a>Table de charge de travail  
+## <a name="table"></a>Table  
 L’onglet de la Table contient l’affichage de grille de la table sélectionnée. La grille contient les informations suivantes sur la table sélectionnée :  
   
 -   Nom de la colonne  
@@ -47,9 +45,9 @@ L’onglet de la Table contient l’affichage de grille de la table sélectionn�
   
 -   Règle  
   
--   Valeur par défaut  
+-   Par défaut  
   
--   Identity  
+-   Identité  
   
 -   Nullable  
   
@@ -113,10 +111,10 @@ Vous pouvez afficher les instructions SELECT, générées par le testeur de SSMA
 Vous pouvez modifier les instructions SELECT pour fournir une vérification personnalisée. Pour enregistrer les modifications dans les instructions de SQL Server et Oracle, utilisez le **appliquer** boutons sous la source et la cible SQL, en conséquence.  
   
 ## <a name="next-step"></a>Étape suivante  
-[Personnalisation des relations entre les appels ordre &#40; OracleToSQL &#41;](../../ssma/oracle/customizing-calls-order-oracletosql.md)  
+[Personnalisation des appels ordre &#40;OracleToSQL&#41;](../../ssma/oracle/customizing-calls-order-oracletosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Terminer la préparation du cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
-[Exécuter des cas de Test &#40; OracleToSQL &#41;](../../ssma/oracle/running-test-cases-oracletosql.md)  
-[Test de migration des objets de base de données &#40; OracleToSQL &#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
+[Préparation du cas de Test de fin &#40;OracleToSQL&#41;](../../ssma/oracle/finishing-test-case-preparation-oracletosql.md)  
+[Exécuter des cas de Test &#40;OracleToSQL&#41;](../../ssma/oracle/running-test-cases-oracletosql.md)  
+[Test de migration des objets de base de données &#40;OracleToSQL&#41;](../../ssma/oracle/testing-migrated-database-objects-oracletosql.md)  
   

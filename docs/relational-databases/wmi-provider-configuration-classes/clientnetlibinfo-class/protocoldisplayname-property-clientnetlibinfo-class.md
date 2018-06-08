@@ -1,16 +1,15 @@
 ---
-title: "Propriété ProtocolDisplayName (classe ClientNetLibInfo) | Documents Microsoft"
-ms.custom: 
+title: Propriété ProtocolDisplayName (classe ClientNetLibInfo) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ProtocolDisplayName Property (ClientNetLibInfo Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - ProtocolDisplayName property
 ms.assetid: b90755fd-7cac-4bdb-8e45-e95119a7665c
-caps.latest.revision: 
+caps.latest.revision: 31
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ce9fce64cec1f88b39fa128bf2db2939831fd898
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: c9708ccea6e97a2474a158839c96bf82447c5381
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="protocoldisplayname-property-clientnetlibinfo-class"></a>Propriété ProtocolDisplayName (classe ClientNetLibInfo)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

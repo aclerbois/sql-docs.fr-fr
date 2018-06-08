@@ -1,16 +1,13 @@
 ---
-title: "Clustering de basculement et groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Clustering de basculement et groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - clustering [SQL Server]
 - Availability Groups [SQL Server], WSFC clusters
@@ -19,19 +16,21 @@ helpviewer_keywords:
 - failover clustering [SQL Server], AlwaysOn Availability Groups
 - Availability Groups [SQL Server], Failover Cluster Instances
 ms.assetid: 613bfbf1-9958-477b-a6be-c6d4f18785c3
-caps.latest.revision: "48"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 48
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: dd664120017d7e498fd2930281380c718e98aaa9
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+monikerRange: '>= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: f681d05c05d54762da3ba49206befa5ddfe0bd52
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769355"
 ---
 # <a name="failover-clustering-and-always-on-availability-groups-sql-server"></a>Clustering de basculement et groupes de disponibilité Always On (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
    [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)], la solution haute disponibilité et de récupération d'urgence introduite dans [!INCLUDE[sssql11](../../../includes/sssql11_md.md)], requiert le Clustering de basculement Windows Server (WSFC). En outre, bien que [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] ne dépende pas du Clustering de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , vous pouvez utiliser une instance de clustering de basculement pour héberger un réplica de disponibilité pour un groupe de disponibilité. Il est important de connaître le rôle de chaque technologie de clustering, ainsi que les observations nécessaires lorsque vous concevez votre environnement [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] .  
   
@@ -60,11 +59,6 @@ ms.lasthandoff: 01/18/2018
   
  Pour plus d’informations sur l’exécution de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sur nœuds de clustering de basculement Windows Server (WSFC) et sur le quorum WSFC, consultez [Clustering de basculement Windows Server &#40;WSFC&#41; avec SQL Server](../../../sql-server/failover-clusters/windows/windows-server-failover-clustering-wsfc-with-sql-server.md).  
   
-### <a name="cross-cluster-migration-of-always-on-availability-groups-for-os-upgrade"></a>Migration entre clusters de groupes de disponibilité Always On pour la mise à niveau du système d’exploitation  
- Depuis [!INCLUDE[ssSQL11SP1](../../../includes/sssql11sp1-md.md)], [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] prend en charge la migration entre clusters de groupes de disponibilité pour les déploiements dans un nouveau cluster de clustering de basculement Windows Server (WSFC). Une migration entre clusters déplace un groupe de disponibilité ou un lot de groupes de disponibilité vers le nouveau cluster WSFC de destination avec un temps mort minimal. Le processus de migration entre clusters permet de conserver les contrats de niveau de service (SLA) lors de la mise à niveau vers un cluster [!INCLUDE[win8srv](../../../includes/win8srv-md.md)] . [!INCLUDE[ssSQL11SP1](../../../includes/sssql11sp1-md.md)] (ou une version ultérieure) doit être installé et activé pour Always On sur le cluster WSFC de destination. La réussite d'une migration entre clusters dépend de la planification et de la préparation du cluster WSFC de destination.  
-  
- Pour plus d’informations, consultez [Cross-Cluster Migration of Always On Availability Groups for OS Upgrade](http://msdn.microsoft.com/library/jj873730.aspx)(Migration entre clusters de groupes de disponibilité Always On pour la mise à niveau du système d’exploitation).  
-  
 ##  <a name="SQLServerFC"></a> [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Instances de cluster de basculement et groupes de disponibilité  
  Vous pouvez configurer une deuxième couche de basculement au niveau de l'instance serveur en implémentant le clustering de basculement [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] avec le cluster WSFC. Un réplica de disponibilité peut être hébergé par une instance autonome de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] ou par une instance de cluster de basculement. Un seul partenaire FCI peut héberger un réplica pour un groupe de disponibilité donné. Lorsqu'un réplica de disponibilité s'exécute sur une FCI, la liste des propriétaires possibles pour le groupe de disponibilité contiendra uniquement le nœud FCI actif.  
   
@@ -90,7 +84,7 @@ ms.lasthandoff: 01/18/2018
  **Les paramètres de stratégie de basculement du groupe de disponibilité s’appliquent à tous les réplicas, qu’il soit hébergé dans une instance autonome ou une instance de cluster de basculement.  
   
 > [!NOTE]  
->  Pour plus d’informations sur le **nombre de nœuds** dans le clustering de basculement et les **groupes de disponibilité Always On** dans les différentes éditions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
+>  Pour plus d’informations sur le **nombre de nœuds** dans le clustering de basculement et les **groupes de disponibilité Always On** pour les différentes éditions de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], consultez [Fonctionnalités prises en charge par les éditions de SQL Server 2012](http://go.microsoft.com/fwlink/?linkid=232473) (http://go.microsoft.com/fwlink/?linkid=232473).  
   
 ### <a name="considerations-for-hosting-an-availability-replica-on-an-fci"></a>Considérations relatives à l'hébergement d'un réplica de disponibilité sur une instance de cluster de disponibilité  
   

@@ -1,28 +1,21 @@
 ---
-title: "Sessions de l’utilisateur (SQL Server PDW)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/13/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 0425cef2-de4d-4f42-91c5-cb1cd4bb1265
-caps.latest.revision: "15"
-ms.openlocfilehash: ca67e05e5dc087da683109d498c45672720cd2f9
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Sessions utilisateur dans le système de plateforme Analytique | Documents Microsoft »
+description: Sessions utilisateur Parallel Data Warehouse du système de plateforme Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: fc2e759d77953f739d77f6ad4eb371cc9747efdc
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="user-sessions"></a>Sessions utilisateur
+# <a name="user-sessions-in-analytics-platform-system"></a>Sessions utilisateur dans le système de plateforme Analytique
 Une connexion avec les autorisations appropriées permettre gérer les sessions de toutes les connexions sur un dispositif de SQL Server PDW, y compris l’exécution de ces actions :  
   
 -   Afficher les sessions actives sur le matériel, y compris les sessions actives et inactives.  

@@ -1,29 +1,25 @@
 ---
-title: "Planification d’une installation de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Planification d’une installation de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 08/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
+ms.technology: install
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 helpviewer_keywords:
 - installing SQL Server, planning
 ms.assetid: b1d56f2f-603f-48f2-b902-c715f14a6db9
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.openlocfilehash: 6fa512799bf19e284b25b7f847d71d3f6e5aab7a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 0bd9b3fe2a650fcf396f6dde8ba124bca181e14b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772545"
 ---
 # <a name="planning-a-sql-server-installation"></a>Planification d’une installation de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

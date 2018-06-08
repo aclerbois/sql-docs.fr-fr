@@ -1,31 +1,29 @@
 ---
-title: "Utiliser une connexion de données Office (.odc) avec les rapports | Microsoft Docs"
-ms.custom: 
+title: Utiliser une connexion de données Office (.odc) avec les rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Office Data Connection (.odc) files
 - SharePoint integration [Reporting Services], shared data sources
 - .odc files
 ms.assetid: e8d6896d-f886-4390-8b5d-96f0a50c250c
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 68cbb3437a7f994a60e13163a8372f2e5c0a7174
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 83af0a0eda5039eb1e9cedb554cd425e04a03145
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-an-office-data-connection-odc-with-reports"></a>Utiliser une connexion de données Office (.odc) avec les rapports
   Pour certains scénarios, vous pouvez utiliser un fichier .odc (Office Data Connection) existant pour fournir des informations de connexion à un rapport [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] . Un fichier .odc peut être utilisé à la place d’un fichier .rsds quand vous créez une source de données partagée. Le serveur de rapports utilise le fichier .odc de la même manière qu'un fichier .rsds ; il le lit pour obtenir le type de sources de données, une chaîne de connexion et les informations d'identification.  

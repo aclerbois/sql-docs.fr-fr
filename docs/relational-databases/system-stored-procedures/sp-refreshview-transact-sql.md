@@ -1,16 +1,14 @@
 ---
 title: sp_refreshview (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_refreshview
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_refreshview
 ms.assetid: 9ce1d07c-ee66-4a83-8c73-cd2cc104dd08
-caps.latest.revision: 
+caps.latest.revision: 26
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7d5477bee5ddf5536f4a8ae838df354db3d7f72f
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: f9871a4ce62ce2916a1cd27c3ca8735de28cfa1b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sprefreshview-transact-sql"></a>sp_refreshview (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ sp_refreshview [ @viewname = ] 'viewname'
   
 ## <a name="arguments"></a>Arguments  
  [  **@viewname=** ] **'***viewname***'**  
- Est le nom de la vue. *ViewName* est **nvarchar**, sans valeur par défaut. *ViewName* peut être un identificateur multipartie, mais ne peut faire référence à des vues de la base de données actuelle.  
+ Nom de la vue. *ViewName* est **nvarchar**, sans valeur par défaut. *ViewName* peut être un identificateur multipartie, mais ne peut faire référence à des vues de la base de données actuelle.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou un nombre différent de zéro (échec)  
@@ -55,7 +52,7 @@ sp_refreshview [ @viewname = ] 'viewname'
 ## <a name="remarks"></a>Notes  
  Si aucune vue n’est pas créée avec schemabinding, **sp_refreshview** doit être exécuté lorsque des modifications sont apportées aux objets sous-jacents de la vue qui affectent la définition de la vue. Autrement, la vue risque de produire des résultats imprévisibles en cas d'interrogation.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation ALTER sur la vue ainsi que l'autorisation REFERENCES sur les types CLR (Common Language Runtime) définis par l'utilisateur et sur les collections de schémas XML référencés par les colonnes de la vue.  
   
 ## <a name="examples"></a>Exemples  
@@ -83,9 +80,9 @@ WHERE so.type = 'V' AND sed.referenced_id = OBJECT_ID('Person.Person');
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [sys.sql_expression_dependencies &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-sql-expression-dependencies-transact-sql.md)   
- [sp_refreshsqlmodule &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-refreshsqlmodule-transact-sql.md)  
+ [sp_refreshsqlmodule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-refreshsqlmodule-transact-sql.md)  
   
   

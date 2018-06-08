@@ -1,30 +1,31 @@
 ---
 title: StructureColumn (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: StructureColumn
-dev_langs: DMX
-helpviewer_keywords: StructureColumn function
+f1_keywords:
+- StructureColumn
+dev_langs:
+- DMX
+helpviewer_keywords:
+- StructureColumn function
 ms.assetid: 57557536-4bfa-4fa7-bf7a-fb8722ca200d
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 24b7869462815e6d636572a093a332ecce6dc02c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 8dbf127092a2fc15e8c113f42249bc4fb0d49bdf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="structurecolumn-dmx"></a>StructureColumn (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -47,14 +48,14 @@ StructureColumn('structure column name')
   
  Si la colonne de structure d'exploration de données référencée est une table imbriquée, la fonction renvoie une valeur de table. La valeur de table retournée peut être utilisée dans la clause FROM d'une instruction sub-SELECT.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Cette fonction est polymorphe et peut être utilisée n'importe où dans une instruction qui autorise des expressions, y compris une liste d'expressions SELECT, une expression de condition WHERE et une expression ORDER BY.  
   
  Le nom de la colonne dans la structure d’exploration de données est une valeur de chaîne et en tant que tel doit être placée entre guillemets simples : par exemple, `StructureColumn('` **colonne 1**`')`. S'il y a plusieurs colonnes qui ont le même nom, le nom est résolu dans le contexte de l'instruction SELECT englobante.  
   
  Les résultats sont retournés à partir d’une requête à l’aide de la **StructureColumn** (fonction) sont affectés par la présence de tous les filtres sur le modèle. Autrement dit, le filtre de modèle contrôle les cas inclus dans le modèle d'exploration de données. Par conséquent, une requête sur la colonne de structure retourne uniquement les cas qui sont utilisés dans le modèle d'exploration de données. Consultez la section Exemples de cette rubrique pour un exemple de code qui affiche l'effet des filtres de modèle d'exploration de données sur les tables de cas et une table imbriquée.  
   
- Pour plus d’informations sur la façon d’utiliser cette fonction dans une instruction DMX SELECT, consultez [SELECT FROM &#60; modèle &#62;. CAS &#40; DMX &#41; ](../dmx/select-from-model-cases-dmx.md) ou [SELECT FROM &#60; structure &#62;. CAS](../dmx/select-from-structure-cases.md).  
+ Pour plus d’informations sur la façon d’utiliser cette fonction dans une instruction DMX SELECT, consultez [SELECT FROM &#60;modèle&#62;. CAS &#40;DMX&#41; ](../dmx/select-from-model-cases-dmx.md) ou [SELECT FROM &#60;structure&#62;. CAS](../dmx/select-from-structure-cases.md).  
   
 ## <a name="error-messages"></a>Messages d'erreur  
  L'erreur de sécurité suivante est déclenchée si l'utilisateur ne dispose pas d'autorisations d'extraction sur la structure d'exploration de données parent :  
@@ -147,8 +148,8 @@ WHERE EXISTS (SELECT * FROM Products WHERE StructureColumn('Quantity')>1)
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)  
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)  
   
   

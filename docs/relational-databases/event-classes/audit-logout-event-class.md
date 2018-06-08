@@ -1,34 +1,30 @@
 ---
-title: "Audit Logout, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Logout, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Logout event class
 ms.assetid: 16a0178c-ca03-4078-bbdd-f481385fa2f1
-caps.latest.revision: 
+caps.latest.revision: 28
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 07d96ee2ea1cf3a53b0009d988b0927f922b6b4c
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 08c610d70641a61efc3d1bc15993c5cbf21cf997
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-logout-event-class"></a>Audit Logout (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Logout** indique qu’un utilisateur s’est déconnecté de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les événements de cette classe sont déclenchés par de nouvelles connexions ou par des connexions réutilisées depuis un groupement de connexions.  
+  La classe d’événements **Audit Logout** indique qu’un utilisateur s’est déconnecté de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Les événements de cette classe sont déclenchés par de nouvelles connexions ou par des connexions réutilisées depuis un groupement de connexions.  
   
 ## <a name="audit-logout-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Logout  
   

@@ -3,16 +3,16 @@ layout: HubPage
 hide_bc: true
 title: Documentation Microsoft SQL | Microsoft Docs
 description: Découvrir SQL
-author: barbkess
-ms.author: barbkess
-ms.topic: article
-ms.technology:
-- database-engine
-ms.openlocfilehash: 3d3fb586dab22c8f3e8c7a8a3b4f4b9c94bd31be
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: craigg-msft
+ms.author: craigg
+ms.topic: hub-page
+ms.prod: sql
+ms.technology: install
+ms.openlocfilehash: a9e466cc1e88300164036aa831e8cbe2e2c45e6e
+ms.sourcegitcommit: 1aedef909f91dc88dc741748f36eabce3a04b2b1
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/08/2018
 ---
 <div id="main" class="v2">
     <div class="container">
@@ -39,7 +39,7 @@ ms.lasthandoff: 02/09/2018
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/sql/sql-server/sql-server-technical-documentation">SQL Server (2016, 2017)</a></li>
                                                     <li><a class="barLink" href="https://msdn.microsoft.com/library/dn197878(v=sql.10).aspx">SQL Server 2014</a></li>
-                                                    <li><a class="barLink" href="https://msdn.microsoft.com/library/hh278312(v=sql.10).aspx">SQL Server 2012</a></li>
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/previous-versions/sql/">Versions précédentes (2005-2012)</a></li>
                                                     <li><a class="barLink" href="/azure/sql-database/sql-database-design-first-database">Azure SQL Database</a></li>
                                                     <li><a class="barLink" href="/azure/sql-data-warehouse/sql-data-warehouse-get-started-tutorial">Azure SQL Data Warehouse</a></li>
                                                     <li><a class="barLink" href="/sql/analytics-platform-system/index">Analytics Platform System - Parallel Data Warehouse</a><li>
@@ -74,6 +74,7 @@ ms.lasthandoff: 02/09/2018
                                                 <ul class="noBullet">
                                                     <li><a class="barLink" href="/sql/connect/homepage-sql-connection-programming">Connecter avec des applications clientes</a></li>
                                                     <li><a class="barLink" href="/sql/relational-databases/database-features">Concepts des bases de données relationnelles</a></li>
+                                                    <li><a class="barLink" href="/sql/relational-databases/security">Sécurité SQL</a></li>
                                                 </ul>
                                                 <h4>Outils</h4>
                                                 <ul class="noBullet">
@@ -88,11 +89,11 @@ ms.lasthandoff: 02/09/2018
                                                     <li><a class="barLink" href="/sql/powershell/sql-server-powershell">PowerShell</a></li>
                                                     <li><a class="barLink" href="/sql/xquery/xquery-language-reference-sql-server">XQuery</a></li>
                                                 </ul>
-                                                <h4>Exemples sur GitHub</h4>
+                                                <h4>Exemples</h4>
                                                 <ul class="noBullet">
-                                                    <li><a class="barLink" href="https://github.com/Microsoft/sql-server-samples/tree/master/samples">Exemples de code</a></li>
-                                                    <li><a class="barLink" href="https://github.com/Microsoft/sql-server-samples/releases/tag/wide-world-importers-v1.0">Wide World Importers</a></li>
-                                                    <li><a class="barLink" href="https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks">AdventureWorks</a></li>
+                                                    <li><a class="barLink" href="https://github.com/Microsoft/sql-server-samples/tree/master/samples">Exemples de code sur GitHub</a></li>
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/en-us/sql/samples/wide-world-importers-what-is?view=sql-server-2017">Base de données World Wide Importers</a></li>
+                                                    <li><a class="barLink" href="https://docs.microsoft.com/sql/samples/sql-samples-where-are?view=sql-server-2017">AdventureWorks DB</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -113,10 +114,6 @@ ms.lasthandoff: 02/09/2018
                                                     <li><a class="barLink" href="/azure/analysis-services/">Azure Analysis Services</a></li> 
                                                     <li><a class="barLink" href="/azure/stream-analytics/">Azure Stream Analytics</a></li>
                                                     <li><a class="barLink" href="/azure/data-lake-analytics/">Azure Data Lake Analytics</a></li>
-                                                    <li><a class="barLink" href="https://azuremarketplace.microsoft.com/en-us/marketplace/apps/microsoft-ads.standard-data-science-vm">Machine virtuelle pour la science des données</a></li>
-                                                </ul>
-                                                <h4>Apprentissage automatique</h4>
-                                                <ul class="noBullet">
                                                     <li><a class="barLink" href="https://docs.microsoft.com/azure/machine-learning/">Azure Machine Learning</a></li> 
                                                     <li><a class="barLink" href="https://docs.microsoft.com/sql/advanced-analytics/r/r-services">SQL Server Machine Learning Services</a></li>
                                                     <li><a class="barLink" href="https://docs.microsoft.com/sql/advanced-analytics/r/r-server-standalone">Machine Learning Server (Autonome)</a></li>

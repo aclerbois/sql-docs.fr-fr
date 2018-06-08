@@ -1,31 +1,27 @@
 ---
-title: "Surveiller les composants SQL Server | Microsoft Docs"
-ms.custom: 
+title: Surveiller les composants SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: performance
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e8f1b16b-ea40-4e12-886c-967ebda4e6e4
-caps.latest.revision: 
+caps.latest.revision: 8
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e42a68231284071a38797fa76085123ab89e92fe
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 5ded81f3d0010a1b34cd4f5e858fd535a54abbfb
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="monitor-sql-server-components"></a>Surveiller les composants SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La surveillance est importante, car [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit un service dans un environnement dynamique. Les données dans l'application sont fluctuantes. Le type d'accès requis par les utilisateurs peut changer. Le mode de connexion des utilisateurs change. Les types des applications accédant à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent même changer, mais [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] gère automatiquement les ressources de niveau système, telles que la mémoire et l’espace disque, pour minimiser les paramétrages manuels nécessaires au niveau système. La surveillance permet aux administrateurs d'identifier les tendances de performances afin de déterminer si des modifications s'imposent.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La surveillance est importante car [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] fournit un service dans un environnement dynamique. Les données dans l'application sont fluctuantes. Le type d'accès requis par les utilisateurs peut changer. Le mode de connexion des utilisateurs change. Les types des applications accédant à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent même changer, mais [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] gère automatiquement les ressources de niveau système, telles que la mémoire et l’espace disque, pour minimiser les paramétrages manuels nécessaires au niveau système. La surveillance permet aux administrateurs d'identifier les tendances de performances afin de déterminer si des modifications s'imposent.  
   
  Pour surveiller efficacement un composant [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] :  
   

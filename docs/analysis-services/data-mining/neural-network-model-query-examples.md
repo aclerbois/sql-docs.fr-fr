@@ -1,35 +1,23 @@
 ---
-title: "Exemples de requête de modèle de réseau neuronal | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- neural network algorithms [Analysis Services]
-- content queries [DMX]
-- neural network model [Analysis Services]
-ms.assetid: 81b06183-620f-4e0c-bc10-532e6a1f0829
-caps.latest.revision: 
-author: Minewiskan
+title: Exemples de requête de modèle de réseau neuronal | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 531380e732ea9e2f390328fe22310ba844a8bc57
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 66f7979dbcf2b547e8f24476f057616c2cd7d3cd
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="neural-network-model-query-examples"></a>Exemples de requêtes de modèle de réseau neuronal
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, ou une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Par exemple, une requête de contenu pour un modèle de réseau neuronal peut extraire des métadonnées du modèle telles que le nombre de couches masquées. Une requête de prédiction peut également suggérer des classifications selon une entrée et fournir éventuellement des probabilités pour chaque classification.  
+  Lorsque vous créez une requête sur un modèle d'exploration de données, vous pouvez créer une requête de contenu, qui fournit des détails sur les modèles (ou séquences) découverts au cours de l'analyse, ou une requête de prédiction, qui utilise les séquences du modèle pour effectuer des prédictions pour les nouvelles données. Par exemple, une requête de contenu pour un modèle de réseau neuronal peut extraire des métadonnées du modèle telles que le nombre de couches masquées. Une requête de prédiction peut également suggérer des classifications selon une entrée et fournir éventuellement des probabilités pour chaque classification.  
   
  Cette section explique comment créer des requêtes pour les modèles basés sur l'algorithme MNN ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network).  
   
@@ -188,7 +176,7 @@ AND [PARENT_UNIQUE_NAME] = '40000000200000000' FROM [Call Center Default NN].CON
 ###  <a name="bkmk_Query5"></a> Exemple de requête 5 : création d'une prédiction singleton  
  La façon la plus simple de générer une requête de prédiction sur un modèle de réseau neuronal est d'utiliser le Générateur de requêtes de prédiction, disponible sur l'onglet **Prédiction d'exploration de données** du Concepteur d'exploration de données dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] et [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]. Vous pouvez parcourir le modèle dans la Visionneuse de l'algorithme MNN ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Neural Network) pour filtrer des attributs présentant un intérêt et voir les tendances, puis basculer vers l'onglet **Prédiction d'exploration de données** pour créer une requête et prédire de nouvelles valeurs pour ces tendances.  
   
- Par exemple, vous pouvez parcourir le modèle de centre d'appels pour voir les corrélations entre les volumes de commandes et d'autres attributs. Pour ce faire, ouvrez le modèle dans la visionneuse et pour **entrée**, sélectionnez  **\<tous les >**.  Ensuite, pour **Sortie**, sélectionnez **Nombre de commandes**. Pour **Valeur 1,**sélectionnez la plage qui représente le plus de commandes et pour **Valeur 2**, sélectionnez la plage qui représente le moins de commandes. Vous pouvez ensuite voir d'un seul coup d'œil tous les attributs que le modèle met en corrélation avec le volume de commandes.  
+ Par exemple, vous pouvez parcourir le modèle de centre d'appels pour voir les corrélations entre les volumes de commandes et d'autres attributs. Pour ce faire, ouvrez le modèle dans la visionneuse et pour **entrée**, sélectionnez  **\<tous les >**.  Ensuite, pour **Sortie**, sélectionnez **Nombre de commandes**. Pour **Valeur 1,** sélectionnez la plage qui représente le plus de commandes et pour **Valeur 2**, sélectionnez la plage qui représente le moins de commandes. Vous pouvez ensuite voir d'un seul coup d'œil tous les attributs que le modèle met en corrélation avec le volume de commandes.  
   
  En parcourant les résultats dans la visionneuse, vous découvrez que certains jours de la semaine se caractérisent par des volumes de commandes bas et qu'une augmentation du nombre d'opérateurs semble correspondre à des ventes plus élevées. Vous pouvez alors utiliser une requête de prédiction sur le modèle pour tester une hypothèse de simulation et chercher à savoir si l'augmentation du nombre d'opérateurs de niveau 2 un jour de volume bas permettrait d'augmenter les commandes. Pour cela, créez une requête telle que la suivante :  
   
@@ -218,20 +206,20 @@ NATURAL PREDICTION JOIN
 |||  
 |-|-|  
 |Fonction de prédiction|Utilisation|  
-|[IsDescendant &#40; DMX &#41;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le graphique de réseau neuronal.|  
-|[PredictAdjustedProbability &#40; DMX &#41;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
-|[PredictHistogram &#40; DMX &#41;](../../dmx/predicthistogram-dmx.md)|Retourne une table des valeurs associées à la valeur prédite actuelle.|  
+|[IsDescendant & #40 ; DMX & #41 ;](../../dmx/isdescendant-dmx.md)|Détermine si un nœud est un enfant d'un autre nœud dans le graphique de réseau neuronal.|  
+|[PredictAdjustedProbability & #40 ; DMX & #41 ;](../../dmx/predictadjustedprobability-dmx.md)|Retourne la probabilité pondérée.|  
+|[PredictHistogram & #40 ; DMX & #41 ;](../../dmx/predicthistogram-dmx.md)|Retourne une table des valeurs associées à la valeur prédite actuelle.|  
 |[PredictVariance &#40;DMX&#41;](../../dmx/predictvariance-dmx.md)|Retourne la variance de la valeur prédite.|  
-|[PredictProbability &#40; DMX &#41;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
-|[PredictStdev &#40; DMX &#41;](../../dmx/predictstdev-dmx.md)|Retourne la déviance standard pour la valeur prédite.|  
-|[PredictSupport &#40; DMX &#41;](../../dmx/predictsupport-dmx.md)|Pour les modèles de réseau neuronal et de régression logistique, la fonction retourne une valeur unique qui représente la taille du jeu d'apprentissage pour le modèle entier.|  
+|[PredictProbability & #40 ; DMX & #41 ;](../../dmx/predictprobability-dmx.md)|Retourne la probabilité pour la valeur prédite.|  
+|[PredictStdev & #40 ; DMX & #41 ;](../../dmx/predictstdev-dmx.md)|Retourne la déviance standard pour la valeur prédite.|  
+|[PredictSupport & #40 ; DMX & #41 ;](../../dmx/predictsupport-dmx.md)|Pour les modèles de réseau neuronal et de régression logistique, la fonction retourne une valeur unique qui représente la taille du jeu d'apprentissage pour le modèle entier.|  
   
  Pour obtenir la liste des fonctions qui sont communes à tous les algorithmes [!INCLUDE[msCoName](../../includes/msconame-md.md)], consultez [Informations de référence sur les algorithmes (Analysis Services - Exploration de données)](https://technet.microsoft.com/library/bb895228\(v=sql.105\).aspx). Pour la syntaxe de fonctions spécifiques, consultez [Fonctions DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-function-reference.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [MNN (Microsoft Neural Network)](../../analysis-services/data-mining/microsoft-neural-network-algorithm.md)   
  [Référence technique de Microsoft Neural Network algorithme](../../analysis-services/data-mining/microsoft-neural-network-algorithm-technical-reference.md)   
- [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)   
- [Leçon 5 : Génération neuronal réseau et les modèles de régression logistique &#40; didacticiel d’exploration de données intermédiaires &#41;](http://msdn.microsoft.com/library/42c3701a-1fd2-44ff-b7de-377345bbbd6b)  
+ [Contenu du modèle d’exploration de données pour les modèles de réseau neuronal & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-neural-network-models-analysis-services-data-mining.md)   
+ [Leçon 5 : Génération neuronal réseau et les modèles de régression logistique & #40 ; didacticiel d’exploration de données intermédiaires & #41 ;](http://msdn.microsoft.com/library/42c3701a-1fd2-44ff-b7de-377345bbbd6b)  
   
   

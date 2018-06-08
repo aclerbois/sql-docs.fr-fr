@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_7914 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 7914 (Database Engine error)
 ms.assetid: d32a81ce-4ca7-4b33-b536-c7ea0ed6f226
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 13
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b998e598e5bce6cf2b6375ba58eb6987988f357
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ad252c6f77117c19918d76cae11a5630f69d3e40
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver7914"></a>MSSQLSERVER_7914
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -44,5 +39,5 @@ ms.lasthandoff: 11/21/2017
 Ce message fourni à titre d'information par REPAIR indique qu'une page GAM ou SGAM a été reconstruite à l'aide de données de page PFS.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
-Aucune  
+None  
   

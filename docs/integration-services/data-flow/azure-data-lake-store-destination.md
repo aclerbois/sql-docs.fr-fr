@@ -1,30 +1,29 @@
 ---
 title: Destination Azure Data Lake Store | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: data-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- integration-services
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - SQL13.DTS.DESIGNER.AFPADLSDEST.F1
 - sql14.dts.designer.afpadlsdest.f1
 ms.assetid: 4c4f504f-dd2b-42c5-8a20-1a8ad9a5d632
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4df566ea5f379e80a1f8348578d2f3c823644a26
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: bcc2b8b5f4fd483bf8a5f5306fd944df9d840eae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-data-lake-store-destination"></a>Destination Azure Data Lake Store
   Le composant **Destination Azure Data Lake Store** permet à un package SSIS d’écrire des données dans Azure Data Lake Store. Les formats de fichier pris en charge sont les formats texte, Avro et ORC. 

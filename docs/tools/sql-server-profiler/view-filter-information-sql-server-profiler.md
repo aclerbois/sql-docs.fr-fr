@@ -1,16 +1,14 @@
 ---
-title: "Afficher les informations de filtre (Générateur de profils SQL Server) | Documents Microsoft"
-ms.custom: 
+title: Afficher les informations de filtre (Générateur de profils SQL Server) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: sql-server-profiler
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: profiler
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - displaying filter information
 - filters [SQL Server], viewing
@@ -18,19 +16,19 @@ helpviewer_keywords:
 - traces [SQL Server], filters
 - viewing filter information
 ms.assetid: 8d002dea-376a-452c-b3ca-3e93656ed75f
-caps.latest.revision: "23"
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 04c9af7d7f050918c00af72165478a59aa76e0f9
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: 1c28d0daafecb0ef187a965f06e3477c7db08cb6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-filter-information-sql-server-profiler"></a>Afficher des informations de filtre (SQL Server Profiler)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Cette rubrique explique comment afficher des filtres sur les colonnes de données pour les classes d’événements à l’aide de [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique indique comment afficher des filtres sur des colonnes de données pour des classes d'événements en utilisant [!INCLUDE[ssSqlProfiler](../../includes/sssqlprofiler-md.md)].  
   
 ### <a name="to-view-filter-information"></a>Pour afficher les informations de filtrage  
   
@@ -43,7 +41,7 @@ ms.lasthandoff: 01/17/2018
 > [!NOTE]  
 >  Les opérateurs de comparaison avec des valeurs affectées apparaissent en caractères gras.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [SQL Server Profiler](../../tools/sql-server-profiler/sql-server-profiler.md)  
   
   

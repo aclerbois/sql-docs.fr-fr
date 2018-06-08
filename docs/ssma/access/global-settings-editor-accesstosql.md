@@ -1,30 +1,28 @@
 ---
-title: "Paramètres globaux (éditeur) (AccessToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres globaux (éditeur) (AccessToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 5a0abfda-912a-4dfc-acf7-0e0a6cae15c5
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4d592f48fa0694ca640e9c3caffb1b268c501ae3
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cc5399841f4fc38ae125767276b2a6c340fa36ec
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="global-settings-editor-accesstosql"></a>Paramètres globaux (éditeur) (AccessToSQL)
 Utilisez la page de l’éditeur de la **paramètres globaux** boîte de dialogue pour spécifier les paramètres pour les fenêtres de l’éditeur de code.  

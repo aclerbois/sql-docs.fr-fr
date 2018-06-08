@@ -1,27 +1,26 @@
 ---
-title: "Prise en charge SQL Server Native Client pour la haute disponibilité, la récupération d’urgence | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: sql-non-specified
+title: Prise en charge SQL Server Native Client pour la haute disponibilité, la récupération d’urgence | Documents Microsoft
+ms.custom: ''
+ms.date: 04/04/2018
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|features
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 2b06186b-4090-4728-b96b-90d6ebd9f66f
-caps.latest.revision: 
+caps.latest.revision: 35
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fd805562b60d37b9988b9afeb84d81e2cb2f5125
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 193226bd9ef0b21771479e245c69cd4ea2402a08
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-native-client-support-for-high-availability-disaster-recovery"></a>Prise en charge des fonctionnalités de récupération d'urgence, haute disponibilité par SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -73,29 +72,11 @@ ms.lasthandoff: 01/25/2018
  Si vous mettez à niveau une application [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client qui utilise actuellement la mise en miroir de bases de données vers un scénario de sous-réseaux multiples, vous devez supprimer la propriété de connexion **Failover_Partner** et la remplacer par **MultiSubnetFailover** avec la valeur **Yes** et remplacer le nom du serveur dans la chaîne de connexion par un écouteur du groupe de disponibilité. Si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover=Yes**, le pilote génère une erreur. Toutefois, si une chaîne de connexion utilise **Failover_Partner** et **MultiSubnetFailover=No** (ou **ApplicationIntent=ReadWrite**), l’application utilise la mise en miroir de bases de données.  
   
  Le pilote retournera une erreur si la mise en miroir de bases de données est utilisée pour la base de données principale au sein du groupe de disponibilité, et si **MultiSubnetFailover=Yes** est utilisé dans la chaîne de connexion qui établit une connexion avec une base de données principale au lieu d’un écouteur de groupe de disponibilité.  
-  
-## <a name="specifying-application-intent"></a>Spécification de l'intention d'application  
- Lorsque **ApplicationIntent = ReadOnly**, le client demande un travail en lecture lors de la connexion à une base de données Always On est activé. Le serveur applique l'intention au moment de la connexion et pendant une instruction de base de données USE mais uniquement sur une base de données prenant en charge AlwaysOn.  
-  
- Le mot clé **ApplicationIntent** ne fonctionne pas avec les bases de données en lecture seule existantes.  
-  
- Une base de données peut autoriser ou interdire les charges de travail en lecture sur la base de données AlwaysOn ciblée. (Utilisez la clause **ALLOW_CONNECTIONS** des instructions **PRIMARY_ROLE** et **SECONDARY_ROLE**[!INCLUDE[tsql](../../../includes/tsql-md.md)].)  
-  
- Le mot clé **ApplicationIntent** est utilisé pour activer le routage en lecture seule.  
-  
-## <a name="read-only-routing"></a>Routage en lecture seule  
- Le routage en lecture seule est une fonctionnalité qui peut garantir la disponibilité d'un réplica en lecture seule d'une base de données. Pour activer le routage en lecture seule :  
-  
-1.  Vous devez vous connecter à un écouteur du groupe de disponibilité Always On.  
-  
-2.  Dans la chaîne de connexion, le mot clé **ApplicationIntent** doit avoir la valeur **ReadOnly**.  
-  
-3.  Le groupe de disponibilité doit être configuré par l'administrateur de base de données pour activer le routage en lecture seule.  
-  
- Il est possible que plusieurs connexions utilisant le routage en lecture seule ne se connectent pas toutes au même réplica en lecture seule. Les modifications apportées à la synchronisation de base de données ou à la configuration du routage du serveur peuvent entraîner des connexions clientes à différents réplicas en lecture seule. Pour vérifier que toutes les demandes en lecture seule se connectent au même réplica en lecture seule, ne transmettez pas d’écouteur du groupe de disponibilité au mot clé de chaîne de connexion **Server**. Au lieu de cela, spécifiez le nom de l'instance en lecture seule.  
-  
- Le routage en lecture seule peut prendre plus de temps que la connexion au réplica primaire car le routage en lecture seule se connecte d'abord au réplica primaire, puis recherche le meilleur réplica secondaire lisible disponible. Pour cette raison, vous devez augmenter le délai de connexion.  
-  
+
+
+[!INCLUDE[specify-application-intent_read-only-routing](~/includes/paragraph-content/specify-application-intent-read-only-routing.md)]
+
+
 ## <a name="odbc"></a>ODBC  
  Deux mots clés de chaîne de connexion ODBC ont été ajoutés pour prendre en charge [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Native Client :  
   

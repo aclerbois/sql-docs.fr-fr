@@ -1,16 +1,14 @@
 ---
 title: sp_help_spatial_geography_index (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_spatial_geography_index
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_spatial_geography_index procedure
 ms.assetid: c9bf5675-eafc-4d71-bfdb-da963384fa0c
-caps.latest.revision: 
+caps.latest.revision: 13
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 11b7354ee38138d991ab1127db8960d255a57223
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: f2f06d0955d8f7febece5cc98c0719131554e764
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpspatialgeographyindex-transact-sql"></a>sp_help_spatial_geography_index (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -54,13 +51,13 @@ sp_help_spatial_geography_index [ @tabname =] 'tabname'
 ## <a name="properties"></a>Propriétés  
  Consultez [Arguments et les propriétés d’Index Spatial de procédures stockées](../../relational-databases/system-stored-procedures/spatial-index-stored-procedures-arguments-and-properties.md).  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  L'utilisateur doit être assigné un rôle PUBLIC pour accéder à la procédure. Nécessite une autorisation READ ACCESS sur le serveur et l'objet.  
   
 ## <a name="remarks"></a>Notes  
   
 ## <a name="example"></a>Exemple  
- L’exemple suivant utilise `sp_help_spatial_geography_index` pour étudier la **geography** index spatial **SIndx_SpatialTable_geography_col2** définie sur la table **geography_col** de l’exemple de requête donné dans  **@qs** . Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
+ L’exemple suivant utilise `sp_help_spatial_geography_index` pour étudier la **geography** index spatial **SIndx_SpatialTable_geography_col2** définie sur la table **geography_col** de l’exemple de requête donné dans **@qs**. Cet exemple retourne uniquement les propriétés principales de l'index spécifié.  
   
 ```  
 declare @qs geography  

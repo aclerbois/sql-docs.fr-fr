@@ -1,35 +1,33 @@
 ---
-title: "Performances de l’intégration du CLR | Documents Microsoft"
-ms.custom: 
+title: Performances de l’intégration du CLR | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - common language runtime [SQL Server], performance
 - common language runtime [SQL Server], compilation process
 - performance [CLR integration]
 ms.assetid: 7ce2dfc0-4b1f-4dcb-a979-2c4f95b4cb15
-caps.latest.revision: 
+caps.latest.revision: 43
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 327c531d44fc883afa144252dda3ba43d188682a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: ad749572b54e76c751002db3516fdf46ce31f729
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-integration-architecture----performance"></a>Architecture d’intégration CLR - performances
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique aborde certains choix de conception qui améliorent les performances de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] intégration avec le [!INCLUDE[msCoName](../../includes/msconame-md.md)] .NET Framework common language runtime (CLR).  
+  Cette rubrique aborde certains choix de conception qui améliorent les performances de [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] intégration avec le [!INCLUDE[msCoName](../../includes/msconame-md.md)] .NET Framework common language runtime (CLR).  
   
 ## <a name="the-compilation-process"></a>Processus de compilation  
  Pendant la compilation d'expressions SQL, en cas de référence à une routine managée, un stub MSIL ([!INCLUDE[msCoName](../../includes/msconame-md.md)] Intermediate Language) est généré. Ce stub inclut le code pour marshaler les paramètres de routine à partir de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] vers le CLR, appeler la fonction et retourner le résultat. Ce code de type glue est basé sur le type de paramètre et sur la direction du paramètre (in, out ou reference).  
@@ -72,7 +70,7 @@ Cette rubrique aborde certains choix de conception qui améliorent les performan
 >  Il est recommandé de ne pas développer de nouvelles procédures stockées étendues, parce que cette fonctionnalité a été déconseillée.  
   
 ### <a name="native-serialization-for-user-defined-types"></a>Sérialisation native pour les types définis par l'utilisateur  
- Les types définis par l'utilisateur (UDT) sont conçus comme mécanisme d'extensibilité du système de types scalaires. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]implémente un format de sérialisation pour les UDT appelé **Format.Native**. Pendant la compilation, la structure du type est examinée pour générer un langage MSIL personnalisé pour cette définition de type particulière.  
+ Les types définis par l'utilisateur (UDT) sont conçus comme mécanisme d'extensibilité du système de types scalaires. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] implémente un format de sérialisation pour les UDT appelé **Format.Native**. Pendant la compilation, la structure du type est examinée pour générer un langage MSIL personnalisé pour cette définition de type particulière.  
   
  La sérialisation native est l'implémentation par défaut de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. La sérialisation définie par l'utilisateur appelle une méthode définie par le créateur du type pour effectuer la sérialisation. **Format.Native** la sérialisation doit être utilisée lorsque cela est possible pour de meilleures performances.  
   

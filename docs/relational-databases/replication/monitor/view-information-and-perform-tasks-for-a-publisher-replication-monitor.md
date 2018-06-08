@@ -1,32 +1,30 @@
 ---
-title: "Afficher des informations et effectuer des tâches pour un serveur de publication (moniteur de réplication) | Microsoft Docs"
-ms.custom: 
+title: Afficher des informations et effectuer des tâches pour un serveur de publication (moniteur de réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Publishers [SQL Server replication], Replication Monitor tasks
 - viewing Publisher information
 - Publishers [SQL Server replication], viewing information
 ms.assetid: 1e777e95-377a-4de3-b965-867464aadaaf
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6d82b24e92b90f7e4688b9f97746dc40ad94dd1b
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 57f47623fa4d75588eb5f882fa96da97a755131e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-information-and-perform-tasks-for-a-publisher-replication-monitor"></a>Afficher des informations et exécuter des tâches pour un serveur de publication (moniteur de réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

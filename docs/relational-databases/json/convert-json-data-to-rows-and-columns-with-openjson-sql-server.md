@@ -1,31 +1,31 @@
 ---
-title: "Analyser et transformer des données JSON avec OPENJSON (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Analyser et transformer des données JSON avec OPENJSON (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OPENJSON
 - JSON, importing
 - importing JSON
 ms.assetid: 0c139901-01e2-49ef-9d62-57e08e32c68e
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 31
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d6caf93638c66ff2c8c23842fafdedff1fd22fcb
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c4567aa68fe7871fcb7cfcf1be3aa6ceb94be333
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="parse-and-transform-json-data-with-openjson-sql-server"></a>Analyser et transformer des données JSON avec OPENJSON (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

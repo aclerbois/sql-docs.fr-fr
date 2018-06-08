@@ -1,34 +1,30 @@
 ---
-title: "Classe d’événements Progress Report: Online Index Operation | Microsoft Docs"
-ms.custom: 
+title: 'Classe d’événements Progress Report: Online Index Operation | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - 'Progress Report: Online Index Operation event class [SQL Server]'
 ms.assetid: 491616c1-f666-4b16-a5ea-1192bf156692
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d73b8780e9a9e9c0d28bbac5c5a0f0ac20678acd
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b0518736801a15d26658e43dbe0f9d635f97c680
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="progress-report-online-index-operation-event-class"></a>Classe d'événements Progress Report: Online Index Operation
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Progress Report: Online Index Operation indique la progression d'une opération de construction d'index en ligne en cours.  
+  La classe d'événements Progress Report: Online Index Operation indique la progression d'une opération de construction d'index en ligne en cours.  
   
 ## <a name="progress-report-online-index-operation-event-class-data-columns"></a>Colonnes de données de la classe d'événements Progress Report: Online Index Operation  
   

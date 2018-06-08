@@ -1,31 +1,31 @@
 ---
-title: "Instance de serveur principal (Configurer l’Assistant Sécurité de mise en miroir de bases de données) | Microsoft Docs"
-ms.custom: 
+title: Instance de serveur principal (Configurer l’Assistant Sécurité de mise en miroir de bases de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.configdbmsecurwiz.principalsrvr.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.configdbmsecurwiz.principalsrvr.f1
 ms.assetid: 58af27d7-c5dd-4669-be6b-b472bc2c8ef4
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 47b9352af9dfa0c29a2536e82938663f6b56a36c
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 839bd90500928bb9942f0f28d06c1400076fc8fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="principal-server-instance-configure-database-mirroring-security-wizard"></a>Instance de serveur principal (Configurer l'Assistant Sécurité de mise en miroir de bases de données)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette page vous permet de spécifier des informations sur l’instance de serveur de la base de données principal. La base de données principale est la copie de la base de données qui commence la session de mise en miroir. Une fois que la session a commencé, la base de données principale est la copie de la base de données qui accepte les modifications d'utilisateur. (Lorsqu'un basculement a lieu, les rôles principal et de mise en miroir sont échangés ; par conséquent, la base de données principale initiale peut ne pas demeurer la base de données principale.)  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette page vous permet de spécifier des informations sur l'instance de serveur de la base de données principal. La base de données principale est la copie de la base de données qui commence la session de mise en miroir. Une fois que la session a commencé, la base de données principale est la copie de la base de données qui accepte les modifications d'utilisateur. (Lorsqu'un basculement a lieu, les rôles principal et de mise en miroir sont échangés ; par conséquent, la base de données principale initiale peut ne pas demeurer la base de données principale.)  
   
  **Pour configurer la mise en miroir de bases de données à l'aide de SQL Server Management Studio**  
   

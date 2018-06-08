@@ -1,16 +1,13 @@
 ---
-title: sys.dm_db_xtp_memory_consumers (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_db_xtp_memory_consumers (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_db_xtp_memory_consumers
@@ -22,16 +19,16 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_db_xtp_memory_consumers dynamic management view
 ms.assetid: f7ab2eaf-e627-464d-91fe-0e170b3f37bc
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b34320f2a94ce971bae2cd4406078b9b60669a3
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 05632eebe6bd329815016da40db4705be0b935ed
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmdbxtpmemoryconsumers-transact-sql"></a>sys.dm_db_xtp_memory_consumers (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-asdb-xxxx-xxx-md.md)]
@@ -117,7 +114,7 @@ NULL       VARHEAP                   NULL        NULL        1405943808         
 (17 row(s) affected)  
 ```  
   
- La mémoire totale allouée et utilisée à partir de cette vue de gestion dynamique est identique au niveau de l’objet dans [sys.dm_db_xtp_table_memory_stats &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-table-memory-stats-transact-sql.md).  
+ La mémoire totale allouée et utilisée à partir de cette vue de gestion dynamique est identique au niveau de l’objet dans [sys.dm_db_xtp_table_memory_stats &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-db-xtp-table-memory-stats-transact-sql.md).  
   
 ```  
 select  sum(allocated_bytes)/(1024*1024) as total_allocated_MB,   
@@ -130,6 +127,6 @@ total_allocated_MB   total_used_MB
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Vues de gestion dynamique de Table optimisée en mémoire &#40; Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique des tables optimisées en mémoire &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/memory-optimized-table-dynamic-management-views-transact-sql.md)  
   
   

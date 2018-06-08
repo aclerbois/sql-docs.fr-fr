@@ -1,30 +1,29 @@
 ---
-title: "Méthode getMaxCursorNameLength (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getMaxCursorNameLength (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getMaxCursorNameLength
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getMaxCursorNameLength
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 2cd2bed9-adf4-4bcd-ae5a-d0e3428bc709
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 588041c83807288f81048d46c16f12a591a79868
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 36d93979f711964f70ba83ffa98e4236404bcf3e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getmaxcursornamelength-method-sqlserverdatabasemetadata"></a>Méthode getMaxCursorNameLength (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

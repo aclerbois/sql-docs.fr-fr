@@ -1,32 +1,29 @@
 ---
-title: "Enregistrer des schémas de base de données (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Enregistrer des schémas de base de données (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - saving database diagrams
 - database diagrams [SQL Server], saving
 - diagrams [SQL Server], saving
 ms.assetid: 747357f2-007c-4586-a371-c7fbe6a2c288
-caps.latest.revision: 
+caps.latest.revision: 3
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2c3a0745ab34f997bd614b091cb8d2c6a0b1aa80
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 4aa10fd70f4202f659eaa41f58b40612b70d6987
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="save-database-diagrams-visual-database-tools"></a>Enregistrer des schémas de base de données (Visual Database Tools)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

@@ -1,35 +1,34 @@
 ---
-title: "Exécuter des fonctions définies par l’utilisateur | Microsoft Docs"
-ms.custom: 
+title: Exécuter des fonctions définies par l’utilisateur | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - invoking user-defined functions
 - user-defined functions [SQL Server], executing
 ms.assetid: 0de7744d-9b73-463f-ae80-e31a020004b5
-caps.latest.revision: 
+caps.latest.revision: 35
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fae9e40f60d6841b075b870550a0f74f8fe9908d
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fcdc7e61059a33f25ec5aed14075fb20dcd61f22
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-user-defined-functions"></a>Exécuter des fonctions définies par l’utilisateur
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Exécuter une fonction définie par l’utilisateur à l’aide de Transact-SQL
+  Exécuter une fonction définie par l’utilisateur à l’aide de Transact-SQL
   
 
 > **Remarque :** Consultez la rubrique de la  [fonction définie par l’utilisateur](user-defined-functions.md) et [Créer une fonction (Transact SQL)](../../t-sql/statements/create-function-transact-sql.md) pour en savoir plus sur les fonctions définies par l’utilisateur. 

@@ -1,35 +1,33 @@
 ---
 title: Renommer une instance de cluster de basculement SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - clusters [SQL Server], virtual servers
 - renaming virtual servers
 - virtual servers [SQL Server], failover clustering
 - failover clustering [SQL Server], virtual servers
 ms.assetid: 2a49d417-25fb-4760-8ae5-5871bfb1e6f3
-caps.latest.revision: "16"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 59f761ee41f888f65960f9a58589c441419f40d0
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+caps.latest.revision: 16
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: e77e2f11cef4859412c0805d6dd1e082274b82ac
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772235"
 ---
 # <a name="rename-a-sql-server-failover-cluster-instance"></a>Renommer une instance de cluster de basculement SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Lorsqu’une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fait partie d’un cluster de basculement, le processus permettant de renommer un serveur virtuel diffère du processus permettant de renommer une instance autonome. Pour plus d’informations, consultez [Renommer un ordinateur qui héberge une instance autonome de SQL Server](../../../database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Lorsqu'une instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fait partie d'un cluster de basculement, le processus permettant de renommer un serveur virtuel diffère du processus permettant de renommer une instance autonome. Pour plus d’informations, consultez [Renommer un ordinateur qui héberge une instance autonome de SQL Server](../../../database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server.md).  
   
  Le nom du serveur virtuel est toujours identique au nom réseau SQL (le nom réseau du serveur virtuel SQL). Bien que vous puissiez modifier le nom du serveur virtuel, vous ne pouvez pas modifier le nom de l'instance. Par exemple, vous pouvez attribuer un autre nom à un serveur virtuel nommé VS1\instance1, tel que SQL35\instance1, mais la partie instance du nom (instance1) restera inchangée.  
   
@@ -73,13 +71,13 @@ ms.lasthandoff: 12/05/2017
   
 -   Corrigez les paramètres de registre si l'Agent SQL est configuré pour le transfert d'événements. Pour plus d’informations, consultez [Désigner un serveur de transfert d’événements &#40;SQL Server Management Studio&#41;](http://msdn.microsoft.com/library/81dfcbe4-3000-4e77-99de-bf85fef63a12).  
   
--   Corrigez les noms d'instance du serveur maître (MSX) et des serveurs cibles (TSX) lorsque le nom réseau du cluster/des ordinateurs est modifié. Pour plus d'informations, consultez les rubriques suivantes :  
+-   Corrigez les noms d'instance du serveur maître (MSX) et des serveurs cibles (TSX) lorsque le nom réseau du cluster/des ordinateurs est modifié. Pour plus d'informations, consultez les rubriques suivantes :  
   
     -   [Annuler l'inscription de plusieurs serveurs cibles dans un serveur maître](http://msdn.microsoft.com/library/61a3713b-403a-4806-bfc4-66db72ca1156)  
   
     -   [Créer un environnement multi-serveur](http://msdn.microsoft.com/library/edc2b60d-15da-40a1-8ba3-f1d473366ee6)  
   
--   Reconfigurez la copie des journaux de transaction afin que le nom de serveur mis à jour soit utilisé dans les journaux de sauvegarde et de restauration. Pour plus d'informations, consultez les rubriques suivantes :  
+-   Reconfigurez la copie des journaux de transaction afin que le nom de serveur mis à jour soit utilisé dans les journaux de sauvegarde et de restauration. Pour plus d'informations, consultez les rubriques suivantes :  
   
     -   [Configurer la copie des journaux de transaction &#40;Transact-SQL&#41;](../../../database-engine/log-shipping/configure-log-shipping-sql-server.md)  
   
@@ -87,7 +85,7 @@ ms.lasthandoff: 12/05/2017
   
 -   Mettez à jour les étapes de travail qui dépendent du nom du serveur. Pour plus d’informations, consultez [Gérer les étapes de travail](http://msdn.microsoft.com/library/51352afc-a0a4-428b-8985-f9e58bb57c31).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Renommer un ordinateur qui héberge une instance autonome de SQL Server](../../../database-engine/install-windows/rename-a-computer-that-hosts-a-stand-alone-instance-of-sql-server.md)  
   
   

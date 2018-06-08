@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLFetch | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLFetch
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLFetch
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLFetch
-helpviewer_keywords: SQLFetch function [ODBC]
+f1_keywords:
+- SQLFetch
+helpviewer_keywords:
+- SQLFetch function [ODBC]
 ms.assetid: 6c6611d2-bc6a-4390-87c9-1c5dd9cfe07c
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 3af90114b88e3f54f14bbb94357f4f3bf805bb30
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 2a340283066558215e5534e327026350cdcab589
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlfetch-function"></a>Fonction SQLFetch
 **Mise en conformité**  
@@ -55,14 +56,14 @@ SQLRETURN SQLFetch(
   
  Pour toutes ces SQLSTATE qui peut retourner SQL_SUCCESS_WITH_INFO ou SQL_ERROR (sauf 01xxx SQLSTATE), SQL_SUCCESS_WITH_INFO est retourné si une erreur se produit sur un ou plusieurs, mais pas toutes, les lignes d’une opération de plusieurs ligne, SQL_ERROR est retourné si une erreur se produit lors d’une opération de ligne unique.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Retourné pour une colonne de données binary ou String a entraîné la troncation des caractères non vides ou les données binaires non NULL. S’il s’agissait d’une valeur de chaîne, il a été tronqué à la droite.|  
-|01 S 01|Erreur de ligne|Une erreur s’est produite lors de l’extraction d’une ou plusieurs lignes.<br /><br /> (Si cet valeur SQLSTATE est retourné lorsqu’une ODBC 3*.x* application fonctionne avec une API ODBC 2*.x* pilote, il peut être ignoré.)|  
+|01 S 01|Erreur de ligne|Une erreur s’est produite lors de l’extraction d’une ou plusieurs lignes.<br /><br /> (Si cet valeur SQLSTATE est retourné lorsqu’une ODBC 3 *.x* application fonctionne avec une API ODBC 2 *.x* pilote, il peut être ignoré.)|  
 |01 S 07|Troncation fractionnelle|Les données retournées pour une colonne a été tronquées. Pour les types de données numériques, la partie fractionnaire du nombre a été tronquée. Heure, timestamp, intervalle types de données et qui contiennent un composant d’heure, la partie fractionnaire du temps a été tronquée.<br /><br /> (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |07006|Violation de l’attribut de type de données restreint|La valeur des données d’une colonne dans le jeu de résultats n’a pas pu être convertie au type de données spécifié par *TargetType* dans **SQLBindCol**.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_BOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a pris la valeur SQL_UB_VARIABLE.<br /><br /> La colonne 0 a été liée avec un type de données de SQL_C_VARBOOKMARK, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS n’a pas été définie à SQL_UB_VARIABLE.|  
-|07009|Index de descripteur non valide|Le pilote a été un ODBC 2*.x* pilote qui ne prend pas en charge **SQLExtendedFetch**, et un numéro de colonne spécifié dans la liaison d’une colonne a été 0.<br /><br /> La colonne 0 a été liée, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été définie sur SQL_UB_OFF.|  
+|07009|Index de descripteur non valide|Le pilote a été un ODBC 2 *.x* pilote qui ne prend pas en charge **SQLExtendedFetch**, et un numéro de colonne spécifié dans la liaison d’une colonne a été 0.<br /><br /> La colonne 0 a été liée, et l’attribut d’instruction SQL_ATTR_USE_BOOKMARKS a été définie sur SQL_UB_OFF.|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
 |22001|Données de type chaîne, droite tronquées|Un signet de longueur variable retourné pour une colonne a été tronqué.|  
 |22002|Variable indicateur requise mais non fournie|Données de type NULL a été lue dans une colonne dont *StrLen_or_IndPtr* définie par **SQLBindCol** (ou SQL_DESC_INDICATOR_PTR définie par **SQLSetDescField** ou **SQLSetDescRec**) était un pointeur null.|  
@@ -92,7 +93,7 @@ SQLRETURN SQLFetch(
 ## <a name="comments"></a>Commentaires  
  **SQLFetch** retourne l’ensemble de lignes suivant dans le jeu de résultats. Il peut être appelé uniquement pendant un jeu de résultats existe : autrement dit, après un appel qui crée un jeu de résultats et avant le curseur sur ensemble de résultats est fermé. Si toutes les colonnes sont liés, il retourne les données dans ces colonnes. Si l’application a spécifié un pointeur vers un tableau d’état de ligne ou une mémoire tampon dans lequel retourner le nombre de lignes extraites, **SQLFetch** retourne également ces informations. Les appels à **SQLFetch** peuvent être mélangés avec les appels de **SQLFetchScroll** mais ne peuvent pas être mélangés avec les appels de **SQLExtendedFetch**. Pour plus d’informations, consultez [l’extraction d’une ligne de données](../../../odbc/reference/develop-app/fetching-a-row-of-data.md).  
   
- Si un ODBC 3*.x* application fonctionne avec une API ODBC 2*.x* pilote, le Gestionnaire de pilotes mappe **SQLFetch** appelle à **SQLExtendedFetch** pour une API ODBC 2*.x* pilote qui prend en charge **SQLExtendedFetch**. Si l’API ODBC 2*.x* pilote ne prend pas en charge **SQLExtendedFetch**, le Gestionnaire de pilotes est mappé **SQLFetch** appelle à **SQLFetch** dans ODBC 2*.x* pilote, ce qui peut récupérer qu’une seule ligne.  
+ Si un ODBC 3 *.x* application fonctionne avec une API ODBC 2 *.x* pilote, le Gestionnaire de pilotes mappe **SQLFetch** appelle à **SQLExtendedFetch** pour une API ODBC 2 *.x* pilote qui prend en charge **SQLExtendedFetch**. Si l’API ODBC 2 *.x* pilote ne prend pas en charge **SQLExtendedFetch**, le Gestionnaire de pilotes est mappé **SQLFetch** appelle à **SQLFetch** dans ODBC 2 *.x* pilote, ce qui peut récupérer qu’une seule ligne.  
   
  Pour plus d’informations, consultez [curseurs de bloc, les curseurs permettant le défilement et la compatibilité descendante](../../../odbc/reference/appendixes/block-cursors-scrollable-cursors-and-backward-compatibility.md) dans l’annexe g : pilote recommandations pour la compatibilité descendante.  
   
@@ -107,7 +108,7 @@ SQLRETURN SQLFetch(
   
 |Condition|Première ligne du nouvel ensemble de lignes|  
 |---------------|-----------------------------|  
-|Avant de démarrer| 1|  
+|Avant de démarrer|1|  
 |*CurrRowsetStart* \< =  *LastResultRow – la RowsetSize*[1]|*CurrRowsetStart* + *la RowsetSize*[2]|  
 |*CurrRowsetStart* > *LastResultRow – la RowsetSize*[1]|Après la fin|  
 |Après la fin|Après la fin|  
@@ -178,7 +179,7 @@ SQLRETURN SQLFetch(
   
  Les valeurs suivantes sont retournées dans le tableau d’état de ligne.  
   
-|Valeur de tableau de statut de ligne|Description|  
+|Valeur de tableau de statut de ligne| Description|  
 |----------------------------|-----------------|  
 |SQL_ROW_SUCCESS|La ligne a été extraite avec succès et n’a pas changé depuis sa dernière extraction à partir de ce jeu de résultats.|  
 |SQL_ROW_SUCCESS_WITH_INFO|La ligne a été extraite avec succès et n’a pas changé depuis sa dernière extraction à partir de ce jeu de résultats. Toutefois, un avertissement a été retourné à la ligne.|  

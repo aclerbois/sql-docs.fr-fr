@@ -1,17 +1,15 @@
 ---
-title: "Propriété UnderlyingValue | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété UnderlyingValue | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Field20::GetUnderlyingValue
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - UnderlyingValue property
 ms.assetid: 00a0c8b8-8b63-433f-95b8-020ab05874a0
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 739852d4cbfa4aaf2cf45a59b81b60e23617597f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 72962e5ba9b99f93c21547370e110706bdf0ee0e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="underlyingvalue-property"></a>Propriété UnderlyingValue
 Indique la valeur actuelle d’un [champ](../../../ado/reference/ado-api/field-object.md) objet dans la base de données.  

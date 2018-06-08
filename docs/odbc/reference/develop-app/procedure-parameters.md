@@ -1,33 +1,31 @@
 ---
-title: "Les paramètres de procédure | Documents Microsoft"
-ms.custom: 
+title: Les paramètres de procédure | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: procedure parameters [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- procedure parameters [ODBC]
 ms.assetid: 54fd857e-d2cb-467d-bb72-121e67a8e88d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ea30d30d66761e245a89fadd4bea37d6503c458b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: dc7e82b134ef578907dc0b5e84aa0e1ed7224027
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="procedure-parameters"></a>Paramètres de procédure
 Paramètres dans les appels de procédure peuvent utiliser en entrée, d’entrée/sortient ou paramètres de sortie. Cela est différent des paramètres de toutes les autres instructions de SQL, qui sont toujours des paramètres d’entrée.  
   
- Paramètres d’entrée sont utilisés pour envoyer les valeurs à la procédure. Par exemple, supposons que la table des parties a colonnes PartID, Description et le prix. La procédure InsertPart peut avoir un paramètre d’entrée pour chaque colonne dans la table. Exemple :  
+ Paramètres d’entrée sont utilisés pour envoyer les valeurs à la procédure. Par exemple, supposons que la table des parties a colonnes PartID, Description et le prix. La procédure InsertPart peut avoir un paramètre d’entrée pour chaque colonne dans la table. Par exemple :  
   
 ```  
 {call InsertPart(?, ?, ?)}  

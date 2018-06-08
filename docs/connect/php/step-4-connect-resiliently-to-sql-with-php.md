@@ -1,27 +1,25 @@
 ---
-title: "Étape 4 : Connexion élastique à SQL avec PHP | Documents Microsoft"
-ms.custom: 
+title: 'Étape 4 : Connexion élastique à SQL avec PHP | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/22/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8013474f-48e9-43d5-ab89-7b0504044468
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7f3b9f6615c5adc6a1ec838e690cee8c55b32843
-ms.sourcegitcommit: d7dcbcebbf416298f838a39dd5de6a46ca9f77aa
+manager: craigg
+ms.openlocfilehash: 07394d39ca6a6544cc45fc99a1601874230345f2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-4-connect-resiliently-to-sql-with-php"></a>Étape 4 : se connecter de manière résiliente à SQL avec PHP
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

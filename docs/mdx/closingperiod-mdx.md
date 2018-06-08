@@ -1,30 +1,20 @@
 ---
 title: ClosingPeriod (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: CLOSINGPERIOD
-dev_langs: kbMDX
-helpviewer_keywords: ClosingPeriod function
-ms.assetid: ae709017-219d-43e1-a98a-a85bd365b4cd
-caps.latest.revision: "37"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 4fa2207edb9ea3e732807a3d4ac0783334c361c2
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 3d082ec7958ab1b29b5b42108d6f9c5c78fc3470
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34577361"
 ---
 # <a name="closingperiod-mdx"></a>ClosingPeriod (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,7 +35,7 @@ ClosingPeriod( [ Level_Expression [ ,Member_Expression ] ] )
  *Argument*  
  Expression MDX (Multidimensional Expressions) valide qui retourne un membre.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Cette fonction a principalement été conçue pour être exploitée dans une dimension de type Time (dimension de temps) mais peut également être utilisée avec n'importe quelle dimension.  
   
 -   Si une expression de niveau est spécifiée, la **ClosingPeriod** fonction utilise la dimension qui contient le niveau spécifié et retourne le dernier frère parmi les descendants du membre par défaut au niveau spécifié.  
@@ -91,8 +81,8 @@ FROM [Adventure Works]
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [OpeningPeriod &#40; MDX &#41;](../mdx/openingperiod-mdx.md)   
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)   
- [LastSibling &#40; MDX &#41;](../mdx/lastsibling-mdx.md)  
+ [OpeningPeriod &#40;MDX&#41;](../mdx/openingperiod-mdx.md)   
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)   
+ [LastSibling &#40;MDX&#41;](../mdx/lastsibling-mdx.md)  
   
   

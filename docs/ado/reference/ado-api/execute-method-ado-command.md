@@ -1,17 +1,15 @@
 ---
-title: "Execute (méthode) (commande ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Execute (méthode) (commande ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Command15::Execute
@@ -19,16 +17,15 @@ f1_keywords:
 helpviewer_keywords:
 - Execute method [ADO]
 ms.assetid: f84a5ff3-0528-4ad7-9bea-9a15103378dd
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7f16d3c01fb219bdbe7f52bbc39d3c410b5de918
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8936219aa3d8e75a43efcc51936ac23916c51d96
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execute-method-ado-command"></a>Execute (méthode) (commande ADO)
 Exécute la requête, une instruction SQL ou une procédure stockée spécifiée dans le [CommandText](../../../ado/reference/ado-api/commandtext-property-ado.md) ou [CommandStream](../../../ado/reference/ado-api/commandstream-property-ado.md) propriété de la [objet de commande](../../../ado/reference/ado-api/command-object-ado.md).  

@@ -1,30 +1,27 @@
 ---
-title: "Définie les colonnes de résultat de la liaison | Documents Microsoft"
-ms.custom: 
+title: Définie les colonnes de résultat de la liaison | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - result sets [ODBC], binding columns
 - binding columns [ODBC]
 ms.assetid: 4bc9c30f-83ae-4766-a746-032953c187ad
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 156d7a4fa40e28f2526b5ab3f5fd1a5bef19c003
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 0377442c56b02ab9a93f5737a7f1f42275aba205
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-result-set-columns"></a>Définie les colonnes de résultat de la liaison
 Les applications peuvent lier en tant que nombre des colonnes du jeu de résultats lorsqu’ils le souhaitent, y compris tout aucune colonne de liaison. Lorsqu’une ligne de données est atteinte, le pilote retourne les données pour les colonnes liées à l’application. Indique si l’application lie toutes les colonnes du jeu de résultats dépend de l’application. Par exemple, les applications qui génèrent les rapports généralement ont un format fixe ; de telles applications créer un jeu de résultats contenant toutes les colonnes utilisées dans le rapport et ensuite lient et récupèrent les données pour toutes ces colonnes. Les applications qui affichent des écrans complète des données parfois autorisent l’utilisateur de choisir les colonnes à afficher ; de telles applications créent un jeu de résultats contenant toutes les colonnes de choix, mais lier et l’utilisateur peut récupérer les données pour les colonnes choisies par l’utilisateur.  

@@ -1,32 +1,30 @@
 ---
 title: Catalogue SSIS | Microsoft Docs
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/30/2018
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.ssis.ssms.iscreatecatalog.f1
 - sql13.ssis.ssms.iscatalogprop.general.f1
 - sql13.ssis.dbupgradewizard.f1
 ms.assetid: 24bd987e-164a-48fd-b4f2-cbe16a3cd95e
-caps.latest.revision: 
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: b8812ba8a3a96fc17ab9c9ec5083699ef5a7d03b
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 0285d3dbaf5bd1ed5def180029a75c32fe4fcb83
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssis-catalog"></a>Catalogue SSIS
   Le catalogue **SSISDB** est l’élément central pour l’utilisation des projets [!INCLUDE[ssISnoversion_md](../../includes/ssisnoversion-md.md)] (SSIS) que vous avez déployés sur le serveur [!INCLUDE[ssISnoversion_md](../../includes/ssisnoversion-md.md)]. Ainsi, c'est dans ce catalogue que vous définissez les paramètres de projet et de package, configurez les environnements pour spécifier des valeurs d'exécution pour les packages, exécutez et résolvez les problèmes relatifs aux packages, et gérez les opérations du serveur [!INCLUDE[ssISnoversion_md](../../includes/ssisnoversion-md.md)] .  
@@ -49,7 +47,7 @@ ms.lasthandoff: 01/25/2018
 > [!NOTE]
 > Si l'instance [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à laque la base de données **SSISDB** est rattachée s'arrête ou ne répond pas, le processus ISServerExec.exe prend fin. Un message est écrit dans un journal des événements Windows.  
 >   
->  Si les ressources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] basculent dans le cadre d’un basculement de cluster, les packages en cours d’exécution ne redémarrent pas. Vous pouvez utiliser les points de contrôle pour redémarrer les packages. Pour plus d'informations, consultez [Restart Packages by Using Checkpoints](../../integration-services/packages/restart-packages-by-using-checkpoints.md).  
+>  Si les ressources [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] basculent dans le cadre d’un basculement de cluster, les packages en cours d’exécution ne redémarrent pas. Vous pouvez utiliser les points de contrôle pour redémarrer les packages. Pour plus d'informations, consultez [Redémarrer des packages à l'aide de points de contrôle](../../integration-services/packages/restart-packages-by-using-checkpoints.md).  
   
 ## <a name="features-and-capabilities"></a>Fonctionnalités et fonctions  
   
@@ -619,9 +617,7 @@ La procédure à suivre pour ajouter la base de données SSISDB à un groupe de 
   
 Indiquez le mot de passe que vous avez spécifié durant la création du catalogue SSIS sur la page **Sélectionner les bases de données** de l’Assistant **Nouveau groupe de disponibilité**.
 
-À l’invite **Sélectionner votre préférence de synchronisation de données**, sélectionnez **Ignorer la synchronisation de données initiale**.
-  
- ![Nouveau groupe de disponibilité](../../integration-services/service/media/ssis-newavailabilitygroup.png "Nouveau groupe de disponibilité")  
+![Nouveau groupe de disponibilité](../../integration-services/service/media/ssis-newavailabilitygroup.png "Nouveau groupe de disponibilité")  
   
 ####  <a name="Step3"></a> Étape 3 : activer la prise en charge de SSIS pour AlwaysOn  
  Après avoir créé le catalogue Integration Services, cliquez avec le bouton droit sur le nœud **Catalogues Integration Services**, puis cliquez sur **Activer la prise en charge d’Always On**. La boîte de dialogue **Enable Support for AlwaysOn** (Activer la prise en charge d’AlwaysOn) doit s’afficher. Si cette option de menu est désactivée, vérifiez que vous disposez de tous les composants requis, puis cliquez sur **Actualiser**.  

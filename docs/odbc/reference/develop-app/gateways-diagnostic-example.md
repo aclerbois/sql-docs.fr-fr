@@ -1,31 +1,28 @@
 ---
 title: Exemple de Diagnostic de passerelles | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - diagnostic information [ODBC], examples
 - gateway diagnostic [ODBC]
 - error messages [ODBC], diagnostic messages
 ms.assetid: e0695fac-4593-4b3d-8675-cb8f73dab966
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b14ef1e84b36a0f371f503706fca805c156f2e9d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d9d77f42b0941cecc8a17fe3b54ee91705af0666
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="gateways-diagnostic-example"></a>Exemple de Diagnostic de passerelles
 Dans une architecture de passerelle, un pilote envoie des demandes à une passerelle qui prend en charge ODBC. La passerelle envoie les demandes à un SGBD. Comme il est le composant qui s’interface avec le Gestionnaire de pilotes, le pilote met en forme et retourne les arguments de **SQLGetDiagRec**.  

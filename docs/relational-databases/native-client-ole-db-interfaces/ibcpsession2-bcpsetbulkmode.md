@@ -1,36 +1,35 @@
 ---
 title: IBCPSession2::BCPSetBulkMode | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-interfaces
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - BCPSetBulkMode function
 ms.assetid: babba19f-e67b-450c-b0e6-523a0f9d23ab
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b3b66909225f1628376b03fc060523446a492b5
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 97f00c5d111401a44d576815b704b752f2788a6a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsession2bcpsetbulkmode"></a>IBCPSession2::BCPSetBulkMode
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../includes/snac-deprecated.md)]
 
-  IBCPSession2::BCPSetBulkMode fournit une alternative à [IBCPSession::BCPColFmt &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-bcpcolfmt-ole-db.md) pour spécifier le format de colonne. Contrairement à IBCPSession::BCPColFmt, qui définit les attributs de format de colonne individuels, IBCPSession2::BCPSetBulkMode définit tous les attributs.  
+  IBCPSession2::BCPSetBulkMode fournit une alternative à [IBCPSession::BCPColFmt & #40 ; OLE DB & #41 ;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession-bcpcolfmt-ole-db.md) pour spécifier le format de colonne. Contrairement à IBCPSession::BCPColFmt, qui définit les attributs de format de colonne individuels, IBCPSession2::BCPSetBulkMode définit tous les attributs.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -369,6 +368,6 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [IBCPSession2 &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession2-ole-db.md)  
+ [IBCPSession2 & #40 ; OLE DB & #41 ;](../../relational-databases/native-client-ole-db-interfaces/ibcpsession2-ole-db.md)  
   
   

@@ -1,33 +1,31 @@
 ---
-title: "Page Se connecter à des réplicas secondaires existants | Microsoft Docs"
-ms.custom: 
+title: Page Se connecter à des réplicas secondaires existants | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.adddatabasewizard.connecttoreplicas.f1
 - sql13.swb.addreplicawizard.connecttoreplicas.f1
 ms.assetid: 850f1bc8-d7d0-425c-bd7b-03f0e9d3348e
-caps.latest.revision: "7"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 7
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 810cddb24b5f37ff61316e2249a98300e45b40c1
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: d7b1429d1b439b4361ef8c1e2e3fc42e630b695b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34768365"
 ---
 # <a name="connect-to-existing-secondary-replicas-page"></a>Page Se connecter à des réplicas secondaires existants
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique d’aide décrit les options de la page **Se connecter à des réplicas secondaires existants**. Cette rubrique est utilisée par l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] et par l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique d’aide décrit les options de la page **Se connecter à des réplicas secondaires existants** . Cette rubrique est utilisée par l' [!INCLUDE[ssAoAddRepWiz](../../../includes/ssaoaddrepwiz-md.md)] et par l' [!INCLUDE[ssAoAddDbWiz](../../../includes/ssaoadddbwiz-md.md)] de [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)].  
   
  **Colonnes de la grille :**  
  **Instance de serveur**  

@@ -1,31 +1,28 @@
 ---
-title: "Étape 1 : Se connecter à la Source de données | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Se connecter à la Source de données | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - application process [ODBC], connecting to data source
 - data sources [ODBC], connections
 - connecting to data source [ODBC], steps
 ms.assetid: 84298664-4523-4149-b821-7b2e42c85281
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e57a58062f352900e5411fcc99a4c5bc9c59393b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 98fff3a58b7bc191b275d4f887f5856700f7fa91
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-1-connect-to-the-data-source"></a>Étape 1 : Se connecter à la Source de données
 La première étape dans n’importe quelle application consiste à se connecter à la source de données. Cette phase, y compris les fonctions qu’il requiert, est indiquée dans l’illustration suivante.  

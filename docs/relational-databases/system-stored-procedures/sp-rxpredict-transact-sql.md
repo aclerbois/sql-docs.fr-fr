@@ -1,15 +1,14 @@
 ---
 title: sp_rxPredict | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_rxPredict
@@ -21,19 +20,18 @@ helpviewer_keywords:
 author: jeannt
 ms.author: jeannt
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f4e397cf366cc0f12b738a369556e91de3e83878
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ede8232f36f42cc2b9758bdee8f50457ebd58dfe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sprxpredict"></a>sp_rxPredict  
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
 
 Génère une valeur prédite basée sur un modèle stocké.
 
-Fournit le score sur les modèles d’apprentissage automatique dans quasiment en temps réel. `sp_rxPredict`est une procédure stockée est fournie comme un wrapper pour le `rxPredict` fonctionner dans [RevoScaleR](https://docs.microsoft.com/r-server/r-reference/revoscaler/revoscaler) et [MicrosoftML](https://docs.microsoft.com/r-server/r-reference/microsoftml/microsoftml-package). Il est écrit en C++ et est spécialement optimisée pour les opérations de calcul de score. Il prend en charge les deux R ou Python modèles d’apprentissage de l’ordinateur.
+Fournit le score sur les modèles d’apprentissage automatique dans quasiment en temps réel. `sp_rxPredict` est une procédure stockée est fournie comme un wrapper pour le `rxPredict` fonctionner dans [RevoScaleR](https://docs.microsoft.com/r-server/r-reference/revoscaler/revoscaler) et [MicrosoftML](https://docs.microsoft.com/r-server/r-reference/microsoftml/microsoftml-package). Il est écrit en C++ et est spécialement optimisée pour les opérations de calcul de score. Il prend en charge les deux R ou Python modèles d’apprentissage de l’ordinateur.
 
 **Cette rubrique s’applique aux**:  
 - SQL Server 2017  
@@ -98,9 +96,9 @@ EXEC sp_rxPredict @model = @model,
 @inputData = N'SELECT * FROM data';
 ```
 
-En plus d’être une requête SQL valide, les données d’entrée dans  *@inputData*  doit inclure des colonnes compatibles avec les colonnes dans le modèle stocké.
+En plus d’être une requête SQL valide, les données d’entrée dans *@inputData* doit inclure des colonnes compatibles avec les colonnes dans le modèle stocké.
 
-`sp_rxPredict`prend en charge uniquement les types de colonne de .NET suivants : double, float, short, ushort, long, ulong et chaîne. Vous devrez peut-être filtrer les types non pris en charge dans vos données d’entrée avant de l’utiliser pour calculer les scores en temps réel. 
+`sp_rxPredict` prend en charge uniquement les types de colonne de .NET suivants : double, float, short, ushort, long, ulong et chaîne. Vous devrez peut-être filtrer les types non pris en charge dans vos données d’entrée avant de l’utiliser pour calculer les scores en temps réel. 
 
   Pour plus d’informations sur les types SQL correspondants, consultez [le mappage de Type SQL-CLR](https://msdn.microsoft.com/library/bb386947.aspx) ou [de mappage de données de paramètre CLR](../clr-integration-database-objects-types-net-framework/mapping-clr-parameter-data.md).
 

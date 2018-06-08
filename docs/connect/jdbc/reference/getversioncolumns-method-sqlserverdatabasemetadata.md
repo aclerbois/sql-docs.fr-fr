@@ -1,30 +1,29 @@
 ---
-title: "Méthode getVersionColumns (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getVersionColumns (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getVersionColumns
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getVersionColumns
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 6dd275d3-d9b2-4db7-938a-d4406c940a7a
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6adf8973efd40728df1604dcef9b4a87736be72c
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 722fd20c9210b14cb503ab3a0189815fa3cc83dd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getversioncolumns-method-sqlserverdatabasemetadata"></a>Méthode getVersionColumns (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -41,11 +40,11 @@ public java.sql.ResultSet getVersionColumns(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  A **chaîne** qui contient le nom du catalogue.  
   
- *schéma*  
+ *schema*  
   
  A **chaîne** qui contient le modèle de nom de schéma.  
   
@@ -67,9 +66,9 @@ public java.sql.ResultSet getVersionColumns(java.lang.String catalog,
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
 |SCOPE|**courte**|Non pris en charge par le pilote JDBC.|  
-|COLUMN_NAME|**Chaîne**|Nom de la colonne.|  
+|COLUMN_NAME|**String**|Nom de la colonne.|  
 |DATA_TYPE|**courte**|Type de données SQL de java.sql.Types.|  
-|TYPE_NAME|**Chaîne**|Nom du type de données.|  
+|TYPE_NAME|**String**|Nom du type de données.|  
 |COLUMN_SIZE|**int**|La précision de la colonne.|  
 |BUFFER_LENGTH|**int**|Longueur de la colonne en octets.|  
 |DECIMAL_DIGITS|**courte**|L’échelle de la colonne.|  

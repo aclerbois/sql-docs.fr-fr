@@ -1,33 +1,31 @@
 ---
-title: "Notes de publication de SQL Server 2008 R2 SP2 | Microsoft Docs"
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
-ms.component: sql-non-specified
-ms.technology: server-general
-ms.custom: 
+title: Notes de publication de SQL Server 2008 R2 SP2 | Microsoft Docs
+ms.prod: sql
+ms.prod_service: sql
+ms.technology: supportability
+ms.custom: ''
 ms.date: 01/31/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server 2008 R2 SP2
 - Release Notes, SQL Server 2008 R2 SP2
 ms.assetid: e2bd3de7-674c-4ea7-8d53-bb40bba86fae
-caps.latest.revision: "17"
 author: craigg-msft
 ms.author: craigg
 manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a497aaec3879414fe2a7c6785a180ebf77ba25de
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+monikerRange: = sql-server-2014 || = sqlallproducts-allversions
+ms.openlocfilehash: 214be1c0aac58e06c931876d49f7066cad86953b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="sql-server-2008-r2-sp2-release-notes"></a>SQL Server 2008 R2 SP2 Release Notes
-[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)] Ce document Notes de publication décrit les problèmes connus que vous devez examiner avant d’installer ou de dépanner Microsoft SQL Server 2008 R2 Service Pack 2. Le présent document Notes de publication s'applique à toutes les éditions de SQL Server 2008 R2 SP2 et est disponible en ligne uniquement. Il est mis à jour régulièrement.  
+# <a name="sql-server-2008-r2-sp2-release-notes"></a>Notes de publication de SQL Server 2008 R2 SP2
+[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
+Ce document Notes de publication décrit les problèmes connus que vous devez examiner avant d'installer ou de dépanner Microsoft SQL Server 2008 R2 Service Pack 2. Le présent document Notes de publication s'applique à toutes les éditions de SQL Server 2008 R2 SP2 et est disponible en ligne uniquement. Il est mis à jour régulièrement.  
   
 ## <a name="10-whats-new-in-service-pack-2"></a>1.0 Nouveautés du Service Pack 2  
 Ajout de la vue de gestion dynamique (DMV) **sys.dm_db_stats_properties**. Vous pouvez utiliser cette DMV pour retourner les propriétés de statistiques d'une table ou d'une vue indexée spécifique de la base de données active. Par exemple, cette DMV retourne le nombre de lignes échantillonnées et le nombre d'étapes dans l'histogramme.  
@@ -67,6 +65,6 @@ Utilisez le tableau suivant pour déterminer le fichier à télécharger et inst
 ## <a name="30-known-issues-fixed-in-this-service-pack"></a>3.0 Problèmes connus résolus dans ce Service Pack  
 Pour obtenir la liste des bogues et problèmes connus corrigés dans ce Service Pack, consultez l' [article principal de la Base de connaissances](http://support.microsoft.com/kb/2630455).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [Comment déterminer la version et l'édition de SQL Server](http://support.microsoft.com/kb/321185)  
   

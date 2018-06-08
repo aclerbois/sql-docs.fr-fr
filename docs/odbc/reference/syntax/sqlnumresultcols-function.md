@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLNumResultCols | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLNumResultCols
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLNumResultCols
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLNumResultCols
-helpviewer_keywords: SQLNumResultCols function [ODBC]
+f1_keywords:
+- SQLNumResultCols
+helpviewer_keywords:
+- SQLNumResultCols function [ODBC]
 ms.assetid: d863179f-12a9-4b55-ac6b-7d84202d3da3
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c9210256473f8f7bb3822d7d28e4e46978e27118
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: cee8f6041fbd0718da6e6710df0fb89c45200c99
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlnumresultcols-function"></a>Fonction SQLNumResultCols
 **Mise en conformité**  
@@ -57,7 +58,7 @@ SQLRETURN SQLNumResultCols(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLNumResultCols** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLNumResultCols** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -72,7 +73,7 @@ SQLRETURN SQLNumResultCols(
 |IM017|L’interrogation est désactivée en mode de notification asynchrone|Chaque fois que le modèle de notification est utilisé, l’interrogation est désactivée.|  
 |IM018|**SQLCompleteAsync** n’a pas été appelé pour terminer l’opération asynchrone précédente sur ce handle.|Si l’appel de fonction précédente sur le handle retourne SQL_STILL_EXECUTING et si le mode de notification est activé, **SQLCompleteAsync** doit être appelée sur le handle de post-traitement et terminer l’opération.|  
   
- **SQLNumResultCols** peut retourner tout SQLSTATE qui peut être retournée par **SQLPrepare** ou **SQLExecute** lorsqu’elle est appelée après **SQLPrepare** et avant **SQLExecute**, en fonction lorsque la source de données évalue l’instruction SQL associée à l’instruction.  
+ **SQLNumResultCols** peut retourner tout SQLSTATE qui peut être retournée par **SQLPrepare** ou **SQLExecute** lorsqu’elle est appelée après **SQLPrepare** et avant  **SQLExecute**, en fonction lorsque la source de données évalue l’instruction SQL associée à l’instruction.  
   
 ## <a name="comments"></a>Commentaires  
  **SQLNumResultCols** peut être appelé avec succès uniquement lorsque l’instruction est dans l’état positionnée, préparée ou exécutée.  

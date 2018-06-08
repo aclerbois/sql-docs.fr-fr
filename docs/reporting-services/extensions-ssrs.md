@@ -1,27 +1,25 @@
 ---
 title: Extensions (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 ms.assetid: 2bb0fdca-1837-49f5-b542-61826bab0b46
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: fbd752c6da1b706eb2d9e7327ae042e9173f9377
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 81b925e765918bc1fa83810b1b3a4a8541ee661c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="extensions-ssrs"></a>Extensions (SSRS)
   Le serveur de rapports dans [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)][!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] utilise des extensions pour moduler les types d’entrées ou de sorties qu’il accepte pour l’authentification, le traitement des données, le rendu et la remise de rapports. Cela facilite l'utilisation de nouveau standards logiciels, tels qu'un nouveau schéma d'authentification ou un type de source de données personnalisé, par les installations de [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] existantes. Le serveur de rapports prend en charge les extensions d'authentification personnalisées, les extensions pour le traitement des données, les extensions pour le traitement des rapports, les extensions de rendu et les extensions de remise. De plus, les extensions qui sont à la disposition des utilisateurs sont configurables dans le fichier de configuration RSReportServer.config. Par exemple, vous pouvez limiter les formats d'exportation que la visionneuse de rapport est autorisée à utiliser. Un serveur de rapports nécessite au moins une extension d'authentification, une extension pour le traitement des données et une extension de rendu. Les extensions de remise et de traitement des rapports sont facultatives, mais nécessaires si vous voulez prendre en charge la diffusion des rapports ou les contrôles personnalisés.  
@@ -71,9 +69,9 @@ ms.lasthandoff: 01/09/2018
   
 -   **Extension de rendu d’image** L’extension de rendu d’image effectue le rendu des rapports dans des fichiers Bitmap ou des métafichiers. Les rapports sont rendus dans les formats suivants : BMP, EMF, GIF, JPEG, PNG, TIFF et WMF. Par défaut, l'image est rendue au format TIFF, lequel est pris en charge par la visionneuse d'images par défaut de votre système d'exploitation (par exemple Aperçu des images et des télécopies Windows). Vous pouvez imprimer l'image à partir du programme ayant servi à l'afficher. L'utilisation de l'extension de rendu de type image permet de s'assurer que le rendu de rapport a une présentation identique sur tous les clients. (Lorsqu'un utilisateur affiche un rapport au format HTML, l'apparence de ce rapport peut varier en fonction de la version du navigateur utilisé, des paramètres du navigateur et des polices disponibles). L'extension de rendu de type image effectue le rendu du rapport sur le serveur ; par conséquent, tous les utilisateurs voient la même image. Dans la mesure où le rapport est rendu sur le serveur, toutes les polices utilisées dans le rapport doivent être installées sur le serveur. Pour plus d’informations, consultez [Exporting to an Image File &#40;Report Builder and SSRS&#41;](../reporting-services/report-builder/exporting-to-an-image-file-report-builder-and-ssrs.md).  
   
--   **Extension de rendu PDF** L’extension de rendu PDF effectue le rendu des rapports dans des fichiers PDF qu’il est possible d’ouvrir et d’afficher avec Adobe Acrobat 6.0 ou version ultérieure. Pour plus d’informations, consultez [Exporting to a PDF File &#40;Report Builder and SSRS&#41;](../reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs.md).  
+-   **Extension de rendu PDF** L’extension de rendu PDF effectue le rendu des rapports dans des fichiers PDF qu’il est possible d’ouvrir et d’afficher avec Adobe Acrobat 6.0 ou version ultérieure. Pour plus d’informations, consultez [Exportation vers un fichier PDF &#40;Générateur de rapports et SSRS&#41;](../reporting-services/report-builder/exporting-to-a-pdf-file-report-builder-and-ssrs.md).  
   
--   **Extension de rendu Word** L’extension de rendu [!INCLUDE[msCoName](../includes/msconame-md.md)] Word permet de générer un rapport sous forme de document Word compatible avec [!INCLUDE[msCoName](../includes/msconame-md.md)] Office Word 2000 ou version ultérieure. Pour plus d’informations, consultez [Exporting to Microsoft Word &#40;Report Builder and SSRS&#41;](../reporting-services/report-builder/exporting-to-microsoft-word-report-builder-and-ssrs.md).  
+-   **Extension de rendu Word** L’extension de rendu [!INCLUDE[msCoName](../includes/msconame-md.md)] Word permet de générer un rapport sous forme de document Word compatible avec [!INCLUDE[msCoName](../includes/msconame-md.md)] Office Word 2000 ou version ultérieure. Pour plus d’informations, consultez [Exportation vers Microsoft Word &#40;Générateur de rapports et SSRS&#41;](../reporting-services/report-builder/exporting-to-microsoft-word-report-builder-and-ssrs.md).  
   
 ## <a name="report-processing-extensions"></a>Extensions pour le traitement des rapports  
  Des extensions pour le traitement des rapports peuvent être ajoutées afin d'assurer un traitement des rapports personnalisés contenant des éléments de rapport qui ne sont pas fournis avec [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)]. Par défaut, un serveur de rapports peut traiter tables, graphiques, matrices, listes, zones de texte, images et tout autre élément de rapport. Si vous voulez ajouter des fonctionnalités particulières à un rapport nécessitant un traitement personnalisé au cours de son exécution (par exemple, l’incorporation d’une carte [!INCLUDE[msCoName](../includes/msconame-md.md)] MapPoint), vous pouvez créer une extension pour le traitement de ce rapport.  

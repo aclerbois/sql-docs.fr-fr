@@ -1,30 +1,31 @@
 ---
 title: BottomCount (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: BOTTOMCOUNT
-dev_langs: DMX
-helpviewer_keywords: BottomCount function
+f1_keywords:
+- BOTTOMCOUNT
+dev_langs:
+- DMX
+helpviewer_keywords:
+- BottomCount function
 ms.assetid: bbe2f1d6-c8b5-49ce-ae13-337114a50aee
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 90362587d913e70447157a353b738410122c6c38
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6301719854c05bd6243df446a5f6f2cdfab52402
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bottomcount-dmx"></a>BottomCount (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -42,9 +43,9 @@ BottomCount(<table expression>, <rank expression>, <count>)
  Une expression qui retourne une table, comme un \<référence de colonne de table >, ou une fonction qui retourne une table.  
   
 ## <a name="return-type"></a>Type de retour  
- \<expression de table >  
+ \<Expression de table >  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La valeur fournie par le \<rank expression > argument détermine l’ordre croissant du classement pour les lignes qui sont fournis dans le \<expression de table > argument et le nombre de lignes les plus basses qui est spécifié dans le \<count > argument est retourné.  
   
 ## <a name="examples"></a>Exemples  
@@ -110,10 +111,10 @@ NATURAL PREDICTION JOIN
  **Remarque** cet exemple est fourni uniquement pour illustrer l’utilisation de BottomCount. L'exécution de cette requête peut prendre beaucoup de temps, en fonction de la taille de votre jeu de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)   
- [BottomPercent &#40; DMX &#41;](../dmx/bottompercent-dmx.md)   
- [BottomSum &#40; DMX &#41;](../dmx/bottomsum-dmx.md)   
- [TopCount &#40; DMX &#41;](../dmx/topcount-dmx.md)  
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)   
+ [BottomPercent &#40;DMX&#41;](../dmx/bottompercent-dmx.md)   
+ [BottomSum &#40;DMX&#41;](../dmx/bottomsum-dmx.md)   
+ [TopCount &#40;DMX&#41;](../dmx/topcount-dmx.md)  
   
   

@@ -1,30 +1,29 @@
 ---
-title: "Méthode setString (long, java.lang.String) | Documents Microsoft"
-ms.custom: 
+title: Méthode setString (long, java.lang.String) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerClob.setString (long, java.lang.String)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerClob.setString (long, java.lang.String)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 1b2190e9-5ace-497a-8554-0e913ea9b0cb
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 491f4148e34714829156572d9832d3d4753c291c
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7194a8778ecae136d7a70086c5fa2e9353988a93
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setstring-method-long-javalangstring"></a>Méthode setString (long, java.lang.String)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -44,7 +43,7 @@ public int setString(long pos,
   
  Position à laquelle démarrer l'écriture dans l'objet CLOB.  
   
- *s*  
+ *S*  
   
  Le **chaîne** à écrire dans le CLOB.  
   
@@ -60,7 +59,7 @@ public int setString(long pos,
  Les données de caractères sont remplacées en démarrant à la position spécifiée et peuvent dépasser la longueur initiale de l'objet CLOB. La spécification d'une valeur position+1 permet d'ajouter la chaîne. La spécification d'une valeur position+2 ou supérieure (ou de zéro ou d'une valeur inférieure) entraîne la levée d'une erreur de position.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode setString &#40; SQLServerClob &#41;](../../../connect/jdbc/reference/setstring-method-sqlserverclob.md)   
+ [Méthode setString &#40;SQLServerClob&#41;](../../../connect/jdbc/reference/setstring-method-sqlserverclob.md)   
  [Méthodes SQLServerClob](../../../connect/jdbc/reference/sqlserverclob-methods.md)   
  [Membres de SQLServerClob](../../../connect/jdbc/reference/sqlserverclob-members.md)   
  [SQLServerClob, classe](../../../connect/jdbc/reference/sqlserverclob-class.md)  

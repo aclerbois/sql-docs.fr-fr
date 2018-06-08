@@ -1,33 +1,31 @@
 ---
 title: PH timeout (option de configuration de serveur) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-dev_langs: TSQL
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+dev_langs:
+- TSQL
 helpviewer_keywords:
 - time limit for protocol handler wait [SQL Server]
 - timeout options [SQL Server], ph timeout option
 - protocols [SQL Server], timing out
 - ph timeout option
 ms.assetid: ed19a07c-83fe-4582-9c9e-41b1ce571850
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9e99b38210816277160ab4f0991318dc7f3f266a
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: affca4b8aff839831848c726cd99b060d6d4539e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ph-timeout-server-configuration-option"></a>PH timeout (option de configuration de serveur)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

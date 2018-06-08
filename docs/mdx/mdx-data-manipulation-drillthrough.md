@@ -1,33 +1,20 @@
 ---
-title: "L’instruction DRILLTHROUGH (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: DRILLTHROUGH
-dev_langs: kbMDX
-helpviewer_keywords:
-- DRILLTHROUGH statement
-- retrieving data
-- data retrieval [MDX]
-ms.assetid: dfa22755-0ed4-4bba-9c31-7ade26d9ebdb
-caps.latest.revision: "37"
-author: Minewiskan
+title: L’instruction DRILLTHROUGH (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 7118640d592f34e6ea4da6f866f1bfe22317239d
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 4f5b56c03ec6e575b647ed7eecaf26d35bfae047
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34580061"
 ---
 # <a name="mdx-data-manipulation---drillthrough"></a>Manipulation de données MDX - d’extraction
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -55,7 +42,7 @@ DRILLTHROUGH[MAXROWSUnsigned_Integer]
  *Set_of_Attributes_and_Measures*  
  Liste séparée par des virgules d'attributs de dimension et de mesures.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  L'extraction est une opération au cours de laquelle un utilisateur final sélectionne une cellule unique dans un cube et extrait un ensemble de résultats des données source de cette cellule pour se procurer des informations plus détaillées. Par défaut, un ensemble de résultats obtenus par extraction provient des lignes de la table qui ont été évaluées afin de calculer la valeur de la cellule sélectionnée dans le cube. Pour être en mesure de procéder à une extraction, les utilisateurs finaux doivent disposer de cette fonctionnalité sur leurs applications clientes. Dans [!INCLUDE[msCoName](../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)], les résultats sont récupérés directement à partir de stockage MOLAP, sauf si les partitions ROLAP ou dimensions sont interrogées.  
   
 > [!IMPORTANT]  
@@ -91,7 +78,7 @@ DRILLTHROUGH[MAXROWSUnsigned_Integer]
  UnaryOperator(attribute_name)  
  Retourne l'opérateur unaire du membre d'attribut spécifié.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant spécifie la cellule du mois de juillet 2007 pour la mesure (mesure par défaut) Reseller Sales Amount (montant des ventes du revendeur) pour l'Australie. La clause RETURN précise que les valeurs sous-jacentes de cette cellule (valeurs concernant la date de chaque vente, le nom du modèle de produit, le nom de l'employé, le montant des ventes, le montant des taxes et le coût du produit) sont à retourner.  
   
 ```  
@@ -111,6 +98,6 @@ RETURN
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Instructions MDX de Manipulation de données &#40; MDX &#41;](../mdx/mdx-data-manipulation-statements-mdx.md)  
+ [Les instructions de Manipulation de données MDX &#40;MDX&#41;](../mdx/mdx-data-manipulation-statements-mdx.md)  
   
   

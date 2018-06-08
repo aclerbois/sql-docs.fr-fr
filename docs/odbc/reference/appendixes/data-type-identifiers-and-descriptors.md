@@ -1,16 +1,14 @@
 ---
-title: "Identificateurs et descripteurs de Type de données | Documents Microsoft"
-ms.custom: 
+title: Identificateurs et descripteurs de Type de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], identifiers
 - identifiers [ODBC], data types
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - data types [ODBC], descriptors
 - concise data types [ODBC]
 ms.assetid: f0077c9b-8eb2-4b5f-8c4c-7436fdef37ab
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1f54638aa02c885ee0e6fe8d14310d319dafb11c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 690df82a803df4bb4b987026753c448f90734600
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-type-identifiers-and-descriptors"></a>Les identificateurs de Type de données et les descripteurs de
 Les types de données répertoriés dans le [les Types de données SQL](../../../odbc/reference/appendixes/sql-data-types.md) et [les Types de données C](../../../odbc/reference/appendixes/c-data-types.md) sections plus haut dans cette annexe sont des types de données « concis » : chaque identificateur fait référence à un type de données unique. Il existe une correspondance univoque entre l’identificateur et le type de données. Descripteurs, toutefois, ne faire pas dans tous les cas utilisent une valeur unique pour identifier les types de données. Dans certains cas, ils utilisent un type de données « commentaires » et un sous-code de type. Pour tous les types de données à l’exception des types de données datetime et d’intervalle, l’identificateur de type détaillé est le même que l’identificateur de type concis, et la valeur SQL_DESC_DATETIME_INTERVAL_CODE est égale à 0. Pour les types de données datetime et interval, toutefois, un type verbose (SQL_DATETIME ou SQL_INTERVAL) est stocké dans SQL_DESC_TYPE, un type concis est stocké dans SQL_DESC_CONCISE_TYPE, et un sous-code pour chaque type concis est stocké dans SQL_DESC_DATETIME_INTERVAL_CODE. L’un de ces champs affecte les autres. Pour plus d’informations sur ces champs, consultez la [SQLSetDescField](../../../odbc/reference/syntax/sqlsetdescfield-function.md) description de fonction.  

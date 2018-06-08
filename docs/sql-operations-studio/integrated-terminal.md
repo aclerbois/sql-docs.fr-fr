@@ -1,24 +1,23 @@
 ---
-title: "Terminal intégrée dans Studio des opérations SQL (version préliminaire) | Documents Microsoft"
-description: "En savoir plus sur le terminal intégré dans Studio des opérations SQL (version préliminaire)."
+title: Terminal intégrée dans Studio des opérations SQL (version préliminaire) | Documents Microsoft
+description: En savoir plus sur le terminal intégré dans Studio des opérations SQL (version préliminaire).
 ms.custom: tools|sos
 ms.date: 11/15/2017
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b55e86314dd075b61dac5751b29fc541fdf1e2c4
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 0754c66c182acefd2fdff799b791fbf135356d7b
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="integrated-terminal"></a>Terminal Server intégré
 

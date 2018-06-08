@@ -1,40 +1,39 @@
 ---
 title: Sys.pdw_loader_backup_run_details (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse, pdw
 ms.service: sql-data-warehouse
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 ms.assetid: 04fc004f-ee15-4d7a-be08-78357aa99b55
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 9
+author: ronortloff
+ms.author: rortloff
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 02b934db7152723e66aab5818751cb748d2e2a87
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: 82523cd453a2c4352121655c98a57e0ee4cb173b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
-# <a name="syspdwloaderbackuprundetails-transact-sql"></a>sys.pdw_loader_backup_run_details (Transact-SQL)
+# <a name="syspdwloaderbackuprundetails-transact-sql"></a>Sys.pdw_loader_backup_run_details (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]
 
-  Contient des informations détaillées, au-delà des informations dans d’autres [sys.pdw_loader_backup_runs &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-pdw-loader-backup-runs-transact-sql.md), à propos de la sauvegarde en cours et terminée et les opérations de restauration dans [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et sur la sauvegarde en cours et terminée, restaurer et opérations de chargement dans [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]. Les informations sont conservées entre les redémarrages du système.  
+  Contient des informations détaillées, au-delà des informations dans d’autres [sys.pdw_loader_backup_runs &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-pdw-loader-backup-runs-transact-sql.md), à propos de la sauvegarde en cours et terminée et les opérations de restauration dans [!INCLUDE[ssSDW](../../includes/sssdw-md.md)] et en cours et effectué la sauvegarde, restauration et les opérations de chargement dans [!INCLUDE[ssPDW](../../includes/sspdw-md.md)]. Ces informations sont conservées après le redémarrage du système.  
   
 |Nom de la colonne|Type de données| Description|Plage|  
 |-----------------|---------------|-----------------|-----------|  
 |run_id|**int**|Identificateur unique pour une sauvegarde spécifique ou une restauration s’exécuter.<br /><br /> run_id et pdw_node_id forment la clé pour cette vue.||  
-|pdw_node_id|**int**|Identificateur unique d’un nœud d’application pour laquelle cet enregistrement conserve les détails.<br /><br /> run_id et pdw_node_id forment la clé pour cette vue.|Consultez node_id dans [sys.dm_pdw_nodes &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-pdw-nodes-transact-sql.md).|  
+|pdw_node_id|**int**|Identificateur unique d’un nœud d’application pour laquelle cet enregistrement conserve les détails.<br /><br /> run_id et pdw_node_id forment la clé pour cette vue.|Consultez node_id dans [sys.dm_pdw_nodes &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-pdw-nodes-transact-sql.md).|  
 |status|**nvarchar(16)**|L’état actuel de l’exécution.|ANNULÉ, « TERMINÉ', 'ÉCHEC', 'EN FILE D’ATTENTE', « EN COURS D’EXÉCUTION »|  
 |start_time|**datetime**|Heure de début de l’opération sur ce nœud particulier.||  
 |end_time|**datetime**|Heure à laquelle l’opération s’est terminée sur ce nœud particulier, le cas échéant.||  

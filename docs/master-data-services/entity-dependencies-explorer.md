@@ -1,32 +1,33 @@
 ---
-title: "Explorateur Dépendances d’entité | Microsoft Docs"
-ms.custom: 
+title: Explorateur Dépendances d’entité | Microsoft Docs
+ms.custom: ''
 ms.date: 04/06/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 keywords:
 - master data services
 ms.assetid: 9d922118-1412-4a9d-9c02-70d6c48d6c0d
-caps.latest.revision: 
+caps.latest.revision: 5
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 46d01dfb6bf0a58d7da4e44ae0e96af0e4b3f9ac
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 58e5066ad31de3f2810521d8691a42f10aaed470
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="entity-dependencies-explorer"></a>Explorateur Dépendances d’entité
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   
 [!INCLUDE[ssMDSshort_md](../includes/ssmdsshort-md.md)] 2016 contient un nouvel explorateur, appelé Dépendances d’entité, qui permet de visualiser les relations entre les membres d’une entité dans un modèle, spécifiés par la valeur de leurs attributs basés sur un domaine (DBA), mais sans avoir à définir préalablement une hiérarchie dérivée.   
   

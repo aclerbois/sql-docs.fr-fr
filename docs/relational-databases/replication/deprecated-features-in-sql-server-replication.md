@@ -1,30 +1,28 @@
 ---
-title: "Fonctionnalités dépréciées dans la réplication SQL Server | Microsoft Docs"
-ms.custom: 
+title: Fonctionnalités dépréciées dans la réplication SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 01/22/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deprecated features [SQL Server replication]
 ms.assetid: 46bd3edd-d6de-40a6-a015-21cce8321feb
-caps.latest.revision: 
+caps.latest.revision: 67
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: bfbf1c1438c0606fba8459fff852add47eacb0fd
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 56ef96334a4bf317bf54241d6b5ff0d129a77e58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deprecated-features-in-sql-server-replication"></a>Fonctionnalités déconseillées dans la réplication SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

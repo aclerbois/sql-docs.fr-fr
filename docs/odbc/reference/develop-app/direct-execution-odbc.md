@@ -1,31 +1,28 @@
 ---
-title: "Dirigent l’exécution ODBC | Documents Microsoft"
-ms.custom: 
+title: Dirigent l’exécution ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL statements [ODBC], direct execution
 - direct execution [ODBC]
 - SQL statements [ODBC], executing
 ms.assetid: dd00a535-b136-494f-913b-410838e3de7e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 058dada1c14b901b32f721bc2d42f3cc24434f07
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e506f856fff84065b0026e3e3629a4299d14dae2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="direct-execution-odbc"></a>Exécution directe ODBC
 L’exécution directe est la façon la plus simple d’exécuter une instruction. Lorsque l’instruction est envoyée pour exécution, la source de données compile dans un plan d’accès, puis exécute ce plan d’accès.  

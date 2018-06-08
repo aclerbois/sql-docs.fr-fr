@@ -1,15 +1,14 @@
 ---
-title: "Personnaliser les paramètres d’extension de rendu dans RSReportServer.Config | Microsoft Docs"
-ms.custom: 
+title: Personnaliser les paramètres d’extension de rendu dans RSReportServer.Config | Microsoft Docs
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - configuration options [Reporting Services]
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - overriding report rendering behavior
 - extensions [Reporting Services], rendering
 ms.assetid: 3bf7ab2b-70bb-41c8-acda-227994d15aed
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e9d615bd2062ac5bf93e86ace8ffc1b1d8ed978c
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 00f7c8ec10f402e8c1246f81c5ab929536ebb024
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="customize-rendering-extension-parameters-in-rsreportserverconfig"></a>Personnaliser les paramètres d'extension de rendu dans RSReportServer.Config
   Vous pouvez spécifier des paramètres d'extension de rendu dans le fichier de configuration RSReportServer afin de remplacer le comportement de la génération de rapport par défaut pour les rapports exécutés sur un serveur de rapports [!INCLUDE[ssRSnoversion](../includes/ssrsnoversion-md.md)] . Vous pouvez modifier les paramètres d'extension de rendu pour obtenir les résultats suivants :  

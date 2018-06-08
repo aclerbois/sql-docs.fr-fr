@@ -1,27 +1,25 @@
 ---
-title: "Changer les icônes d’indicateur et jeux d’indicateurs (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Changer les icônes d’indicateur et jeux d’indicateurs (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 8a056adf-4473-473d-9b0c-314675af7bfd
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 80fe34a56f00d45d659dade8e1613cf6d559b85d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 132121a2dede7d632c05278d7a1692ca1fba23b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-indicator-icons-and-indicator-sets-report-builder-and-ssrs"></a>Modifier les icônes d'indicateur et jeux d'indicateurs (Générateur de rapports et SSRS)
   Les jeux d’indicateurs préconfigurés que [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] fournit pour les rapports paginés peuvent ne pas toujours représenter efficacement vos données ni fonctionner correctement dans le rapport remis. Cette rubrique fournit des procédures permettant de modifier l'apparence des icônes d'indicateur et les jeux d'indicateurs pour inclure plus ou moins d'icônes d'indicateur, ou d'autres icônes d'indicateur.  

@@ -2,29 +2,26 @@
 title: 'Comment : se connecter à l’aide de l’authentification SQL Server | Documents Microsoft'
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - connecting to the server, SQL Server Authentication
 ms.assetid: 8d298830-3186-47e7-aef6-586b457901c1
-caps.latest.revision: ''
+caps.latest.revision: 34
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 7885d3d2be29b2ad8de9c4f576c7441b43b37726
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: a6991014daf7c1ac11aee177b9d81f489d5b1bf6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-connect-using-sql-server-authentication"></a>Procédure : se connecter à l’aide de l’authentification SQL Server
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

@@ -1,32 +1,28 @@
 ---
 title: Journal des transactions (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: logs
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-transaction-log
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transaction logs [SQL Server], about
 - databases [SQL Server], transaction logs
 - logs [SQL Server], transaction logs
 ms.assetid: d7be5ac5-4c8e-4d0a-b114-939eb97dac4d
-caps.latest.revision: 
+caps.latest.revision: 65
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 74b2c04f523357b3a998ddfa7a2bb84fc6d76ad4
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 877c48ecbe9befaf0bb04f34a866dd8fee6671bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-transaction-log-sql-server"></a>Journal des transactions (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -97,7 +93,7 @@ Pour éviter de manquer d’espace, à moins que la troncation du journal soit r
  Pour plus d’informations, consultez [Facteurs pouvant retarder la troncation du journal](#FactorsThatDelayTruncation), plus loin dans cette rubrique.  
   
 > [!NOTE]
-> La troncation du journal ne réduit pas la taille du fichier journal physique. Pour réduire la taille physique d'un fichier journal physique, vous devez réduire le fichier journal. Pour plus d'informations sur la réduction de la taille du fichier journal physique, consultez [Manage the Size of the Transaction Log File](../../relational-databases/logs/manage-the-size-of-the-transaction-log-file.md).  
+> La troncation du journal ne réduit pas la taille du fichier journal physique. Pour réduire la taille physique d'un fichier journal physique, vous devez réduire le fichier journal. Pour plus d'informations sur la réduction de la taille du fichier journal physique, consultez [Gérer la taille du fichier journal des transactions](../../relational-databases/logs/manage-the-size-of-the-transaction-log-file.md).  
 > Toutefois, gardez à l’esprit les [facteurs pouvant retarder la troncation du journal](#FactorsThatDelayTruncation). Si l’espace de stockage est à nouveau nécessaire après une réduction de journal, le journal des transactions croît de nouveau, introduisant une surcharge au niveau des performances pendant les opérations d’accroissement du journal.
   
 ##  <a name="FactorsThatDelayTruncation"></a> Factors that can delay log truncation  

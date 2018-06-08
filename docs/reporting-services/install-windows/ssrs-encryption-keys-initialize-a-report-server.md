@@ -1,16 +1,15 @@
 ---
 title: Initialiser un serveur de rapports (Gestionnaire de configuration de SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/31/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: install-windows
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report servers [Reporting Services], initializing
 - initialization process [Reporting Services]
@@ -19,23 +18,22 @@ helpviewer_keywords:
 - initializing report servers [Reporting Services]
 - verifying report server initializations
 ms.assetid: 861d4ec4-1085-412c-9a82-68869a77bd55
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 2b5b5a5142b8712196484e3cca32aeae7373639b
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: f51884df3e202153f3da1b75b63cd2155270eedc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssrs-encryption-keys---initialize-a-report-server"></a>Clés de chiffrement SSRS - Initialiser un serveur de rapports
   Dans [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], un serveur initialisé est un serveur qui peut chiffrer et déchiffrer les données d'une base de données de serveur de rapports. L'initialisation est une condition obligatoire pour le fonctionnement d'un serveur de rapports. Cette opération s'effectue lorsque le service Report Server est démarré pour la première fois. Elle s'accomplit également lorsque vous intégrez le serveur de rapports au déploiement existant ou lorsque, manuellement, vous recréez les clés dans le cadre d'un processus de récupération. Pour savoir comment les clés de chiffrement sont utilisées et pour quelles raisons, consultez [Configurer et gérer des clés de chiffrement &#40;Gestionnaire de configuration de SSRS&#41;](../../reporting-services/install-windows/ssrs-encryption-keys-manage-encryption-keys.md) et [Stocker des données chiffrées du serveur de rapports &#40;Gestionnaire de configuration de SSRS&#41;](../../reporting-services/install-windows/ssrs-encryption-keys-store-encrypted-report-server-data.md).  
   
  Les clés de chiffrement sont en partie basées sur les informations de profil du service Report Server. Si vous modifiez l'identité de l'utilisateur servant à exécuter le service Report Server, vous devez mettre à jour les clés en conséquence. Si vous utilisez l'outil de configuration de Reporting Services pour changer l'identité, cette opération s'effectue automatiquement.  
   
- Si l’initialisation échoue pour une raison quelconque, le serveur de rapports retourne une erreur **RSReportServerNotActivated** en réponse à l’utilisateur et aux demandes de service. Dans ce cas, le problème se situe peut-être au niveau de la configuration du serveur ou du système. Pour plus d’informations, consultez [SSRS : résoudre les problèmes et erreurs avec Reporting Services](http://social.technet.microsoft.com/wiki/contents/articles/1633.aspx) (http://social.technet.microsoft.com/wiki/contents/articles/1633.aspx) sur le wiki Technet.  
+ Si l’initialisation échoue pour une raison quelconque, le serveur de rapports retourne une erreur **RSReportServerNotActivated** en réponse à l’utilisateur et aux demandes de service. Dans ce cas, le problème se situe peut-être au niveau de la configuration du serveur ou du système. Pour plus d’informations, consultez [SSRS: Troubleshoot Issues and Errors with Reporting Services](http://social.technet.microsoft.com/wiki/contents/articles/1633.aspx) (Résoudre les problèmes et erreurs avec Reporting Services) (http://social.technet.microsoft.com/wiki/contents/articles/1633.aspx) dans la rubrique Wiki Technet.  
   
 ## <a name="overview-of-the-initialization-process"></a>Vue d'ensemble du processus d'initialisation  
  Le processus d'initialisation crée et stocke une clé symétrique destinée au chiffrement. Cette clé symétrique est créée par les services de chiffrement de [!INCLUDE[msCoName](../../includes/msconame-md.md)] Windows, puis utilisée par le service Report Server pour chiffrer et déchiffrer des données. La clé symétrique est elle-même chiffrée avec une clé asymétrique.  

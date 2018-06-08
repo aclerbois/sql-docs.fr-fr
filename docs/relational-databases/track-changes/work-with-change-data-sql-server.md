@@ -1,37 +1,35 @@
 ---
-title: "Utiliser les données modifiées (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Utiliser les données modifiées (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: track-changes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - change data [SQL Server]
 - change data capture [SQL Server], query function scenarios
 - change data capture [SQL Server], LSN boundaries
 - change data capture [SQL Server], query functions
 ms.assetid: 5346b852-1af8-4080-b278-12efb9b735eb
-caps.latest.revision: 
+caps.latest.revision: 19
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 643ba52d666c9661d66a8a7e8039dba5e7f38549
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e179185cd629e8bf36a0e805b7fe54713654d67b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="work-with-change-data-sql-server"></a>Utiliser les données modifiées (SQL Server)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Les données modifiées sont mises à disposition des consommateurs de capture de données modifiées par le biais de fonctions table. Toutes les requêtes de ces fonctions requièrent deux paramètres afin de définir la plage de numéros séquentiels dans le journal (LSN) éligibles lors du développement du jeu de résultats retourné. Les valeurs supérieures et inférieures de ces numéros qui lient l'intervalle sont considérées comme étant incluses dans l'intervalle.  
+  Les données modifiées sont mises à disposition des consommateurs de capture de données modifiées par le biais de fonctions table. Toutes les requêtes de ces fonctions requièrent deux paramètres afin de définir la plage de numéros séquentiels dans le journal (LSN) éligibles lors du développement du jeu de résultats retourné. Les valeurs supérieures et inférieures de ces numéros qui lient l'intervalle sont considérées comme étant incluses dans l'intervalle.  
   
  Plusieurs fonctions sont fournies pour aider à déterminer les valeurs LSN appropriées utilisables dans l'interrogation d'une fonction table. La fonction [sys.fn_cdc_get_min_lsn](../../relational-databases/system-functions/sys-fn-cdc-get-min-lsn-transact-sql.md) retourne la valeur LSN la plus faible associée à un intervalle de validité d’instance de capture. L'intervalle de validité est l'intervalle de temps pendant lequel des données modifiées sont disponibles pour leurs instances de capture. La fonction [sys.fn_cdc_get_max_lsn](../../relational-databases/system-functions/sys-fn-cdc-get-max-lsn-transact-sql.md) retourne la valeur LSN la plus élevée dans l’intervalle de validité. Les fonctions [sys.fn_cdc_map_time_to_lsn](../../relational-databases/system-functions/sys-fn-cdc-map-time-to-lsn-transact-sql.md) et [sys.fn_cdc_map_lsn_to_time](../../relational-databases/system-functions/sys-fn-cdc-map-lsn-to-time-transact-sql.md) aident à placer des valeurs LSN sur une chronologie classique. Étant donné que la capture de données modifiées utilise des intervalles de requête fermés, il est quelquefois nécessaire de générer la valeur LSN suivante dans une séquence afin de s'assurer que les modifications ne sont pas dupliquées dans des fenêtres de requête consécutives. Les fonctions [sys.fn_cdc_increment_lsn](../../relational-databases/system-functions/sys-fn-cdc-increment-lsn-transact-sql.md) et [sys.fn_cdc_decrement_lsn](../../relational-databases/system-functions/sys-fn-cdc-decrement-lsn-transact-sql.md) sont utiles quand un ajustement incrémentiel d’une valeur LSN est nécessaire.  
   

@@ -3,14 +3,12 @@ title: Exécution d’opérations asynchrones | Documents Microsoft
 description: Exécution d’opérations asynchrones avec le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|features
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -24,13 +22,12 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, asynchronous operations
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 69004c6537956fdd659953ac2be9820914eb4394
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 9fb93482f6eca98b8ee2921ea158cf7f71165c43
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="performing-asynchronous-operations"></a>Exécution d'opérations asynchrones
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -195,6 +192,6 @@ if (hr == DB_S_ASYNCHRONOUS)
 ## <a name="see-also"></a>Voir aussi  
  [Pilote de base de données OLE pour les fonctionnalités SQL Server](../../oledb/features/oledb-driver-for-sql-server-features.md)   
  [Propriétés et comportements de l’ensemble de lignes](../../oledb/ole-db-rowsets/rowset-properties-and-behaviors.md)   
- [ISSAsynchStatus &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/issasynchstatus-ole-db.md)  
+ [ISSAsynchStatus & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/issasynchstatus-ole-db.md)  
   
   

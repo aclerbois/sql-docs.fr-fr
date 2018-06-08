@@ -1,16 +1,14 @@
 ---
 title: Indicateurs de table (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/31/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|queries
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TABLE_HINT_TSQL
@@ -39,16 +37,15 @@ helpviewer_keywords:
 - NOEXPAND table hint
 - PAGLOCK table hint
 ms.assetid: 8bf1316f-c0ef-49d0-90a7-3946bc8e7a89
-caps.latest.revision: 
+caps.latest.revision: 174
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: ea3f60e74aeb855a0d168646c341a1f6a8d7104c
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 270b2c8d85d9715cfde3f32003f60cf1867b245a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="hints-transact-sql---table"></a>Indicateurs (Transact-SQL) - Table
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -137,13 +134,13 @@ WITH  ( <table_hint> [ [, ]...n ] )
   
  Les indicateurs de table suivants sont autorisés avec et sans le mot clé WITH : NOLOCK, READUNCOMMITTED, UPDLOCK, REPEATABLEREAD, SERIALIZABLE, READCOMMITTED, TABLOCK, TABLOCKX, PAGLOCK, ROWLOCK, NOWAIT, READPAST, XLOCK, SNAPSHOT et NOEXPAND. Lorsque ces indicateurs de table sont spécifiés sans le mot clé WITH, ils doivent être définis seuls. Exemple :  
   
-```  
+```sql  
 FROM t (TABLOCK)  
 ```  
   
  Lorsque l'indicateur est spécifié avec une autre option, il doit être défini avec le mot clé WITH :  
   
-```  
+```sql  
 FROM t WITH (TABLOCK, INDEX(myindex))  
 ```  
   
@@ -203,7 +200,7 @@ FROM t WITH (TABLOCK, INDEX(myindex))
 |Combiné avec un indicateur INDEX|`FROM dbo.MyTable WITH (FORCESEEK, INDEX (MyIndex))`|L'optimiseur de requête considère uniquement les opérations de recherche d'index pour accéder à la table ou la vue par le biais de l'index spécifié.|  
 |Paramétrable en spécifiant un index et des colonnes d'index|`FROM dbo.MyTable WITH (FORCESEEK (MyIndex (col1, col2, col3)))`|L'optimiseur de requête considère uniquement les opérations de recherche pour accéder à la table ou la vue par le biais de l'index spécifié utilisant au moins les colonnes d'index spécifiées.|  
   
- Lors de l'utilisation de l'indicateur FORCESEEK (avec ou sans paramètres d'index), prenez en compte les recommandations suivantes.  
+Lors de l'utilisation de l'indicateur FORCESEEK (avec ou sans paramètres d'index), prenez en compte les recommandations suivantes.  
   
 -   L'indicateur peut être spécifié comme indicateur de table ou indicateur de requête. Pour plus d’informations sur les indicateurs de requête, consultez [Indicateurs de requête &#40;Transact-SQL&#41;](../../t-sql/queries/hints-transact-sql-query.md).  
   
@@ -215,7 +212,7 @@ FROM t WITH (TABLOCK, INDEX(myindex))
   
 -   Si FORCESEEK empêche de trouver un plan, l'erreur 8622 est retournée.  
   
- Lorsque FORCESEEK est spécifié avec des paramètres d'index, les instructions et les restrictions suivantes s'appliquent.  
+Lorsque FORCESEEK est spécifié avec des paramètres d'index, les instructions et les restrictions suivantes s'appliquent.  
   
 -   L'indicateur ne peut pas être spécifié pour une table qui est la cible d'une instruction INSERT, UPDATE ou DELETE.  
   
@@ -293,13 +290,13 @@ FROM t WITH (TABLOCK, INDEX(myindex))
  Établit des verrous de page là où des verrous individuels sont généralement utilisés sur des lignes ou des clés ou là où un verrou de table unique est généralement utilisé. Par défaut, utilise le mode de verrou approprié pour l'opération. Si cet argument est spécifié dans des transactions fonctionnant au niveau d'isolement SNAPSHOT, les verrous de page ne sont établis que si PAGLOCK est combiné avec d'autres indicateurs de table qui requièrent des verrous, tels que UPDLOCK et HOLDLOCK.  
   
  READCOMMITTED  
- Spécifie que les opérations de lecture doivent respecter les règles du niveau d'isolation READ COMMITTED en utilisant le verrouillage ou le contrôle de version de ligne. Si l'option de base de données READ_COMMITTED_SNAPSHOT a la valeur OFF, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] acquiert des verrous partagés lorsque les données sont lues et libère ces verrous lorsque l'opération de lecture est achevée. Si l'option de base de données READ_COMMITTED_SNAPSHOT a pour valeur ON, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] n'acquiert pas de verrous et utilise le contrôle de version de ligne. Pour plus d’informations sur les niveaux d’isolation, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
+ Spécifie que les opérations de lecture doivent respecter les règles du niveau d'isolation READ COMMITTED en utilisant le verrouillage ou le contrôle de version de ligne. Si l'option de base de données READ_COMMITTED_SNAPSHOT a la valeur OFF, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] acquiert des verrous partagés lorsque les données sont lues et libère ces verrous lorsque l'opération de lecture est achevée. Si l'option de base de données READ_COMMITTED_SNAPSHOT a pour valeur ON, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] n'acquiert pas de verrous et utilise le contrôle de version de ligne. Pour plus d’informations sur les niveaux d’isolement, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
   
 > [!NOTE]  
 >  Pour les instructions UPDATE ou DELETE : [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]  
   
  READCOMMITTEDLOCK  
- Spécifie que les opérations de lecture doivent respecter les règles du niveau d'isolation READ COMMITTED en utilisant le verrouillage. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] acquiert des verrous partagés lorsque les données sont lues et libère ces verrous lorsque l'opération de lecture est achevée, quelle que soit la valeur de l'option de base de données READ_COMMITTED_SNAPSHOT. Pour plus d’informations sur les niveaux d’isolation, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md). Cet indicateur ne peut pas être spécifié sur la table cible d'une instruction INSERT ; l'erreur 4140 est retournée.  
+ Spécifie que les opérations de lecture doivent respecter les règles du niveau d'isolation READ COMMITTED en utilisant le verrouillage. Le [!INCLUDE[ssDE](../../includes/ssde-md.md)] acquiert des verrous partagés lorsque les données sont lues et libère ces verrous lorsque l'opération de lecture est achevée, quelle que soit la valeur de l'option de base de données READ_COMMITTED_SNAPSHOT. Pour plus d’informations sur les niveaux d’isolement, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md). Cet indicateur ne peut pas être spécifié sur la table cible d'une instruction INSERT ; l'erreur 4140 est retournée.  
   
  READPAST  
  Spécifie que le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ne doit pas lire les lignes qui sont verrouillées par d'autres transactions. Quand READPAST est spécifié, les verrous de niveau ligne sont ignorés, mais les verrous de niveau page ne le sont pas. Tant que les verrous ne sont pas libérés, le [!INCLUDE[ssDE](../../includes/ssde-md.md)] ignore les lignes au lieu de bloquer la transaction actuelle. Par exemple, supposons que la table `T1` contienne une colonne entière unique avec les valeurs 1, 2, 3, 4, 5. Si la transaction A remplace la valeur 3 par 8 mais n'a pas encore validé, une instruction SELECT * FROM T1 (READPAST) obtient les valeurs 1, 2, 4, 5. READPAST permet essentiellement de réduire la contention de verrouillage lors de l’implémentation d’une file d’attente de travail qui utilise une table [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Un lecteur de file d'attente qui utilise READPAST ignore les entrées de file d'attente verrouillées par d'autres transactions et prend en compte l'entrée de file d'attente suivante disponible, sans attendre que les autres transactions libèrent leurs verrous.  
@@ -332,26 +329,26 @@ FROM t WITH (TABLOCK, INDEX(myindex))
   
 -   le niveau d'isolement SNAPSHOT.  
   
- Pour plus d’informations sur les niveaux d’isolation, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
+ Pour plus d’informations sur les niveaux d’isolement, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
   
 > [!NOTE]  
 >  Si vous recevez le message d'erreur 601 lorsque READUNCOMMITTED est spécifié, résolvez-le comme une erreur de blocage (1205) et relancez votre instruction.  
   
  REPEATABLEREAD  
- Indique qu'une recherche est effectuée avec la même sémantique de verrouillage qu'une transaction à un niveau d'isolation REPEATABLE READ. Pour plus d’informations sur les niveaux d’isolation, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
+ Indique qu'une recherche est effectuée avec la même sémantique de verrouillage qu'une transaction à un niveau d'isolation REPEATABLE READ. Pour plus d’informations sur les niveaux d’isolement, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
   
  ROWLOCK  
  Spécifie que les verrous de ligne sont établis lorsque les verrous de page ou de table sont généralement placés. Si cet argument est spécifié dans des transactions fonctionnant au niveau d'isolement SNAPSHOT, les verrous de ligne ne sont établis que si ROWLOCK est combiné avec d'autres indicateurs de table qui requièrent des verrous, tels que UPDLOCK et HOLDLOCK.  
   
  SERIALIZABLE  
- Équivalent à HOLDLOCK. Étend les restrictions associées aux verrous partagés en les maintenant jusqu'à l'achèvement de la transaction, au lieu de les relâcher dès que la table ou la page de données n'est plus utilisée, que la transaction soit achevée ou non. Effectue une recherche avec la même sémantique de verrouillage qu'une transaction à un niveau d'isolation SERIALIZABLE. Pour plus d’informations sur les niveaux d’isolation, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
+ Équivalent à HOLDLOCK. Étend les restrictions associées aux verrous partagés en les maintenant jusqu'à l'achèvement de la transaction, au lieu de les relâcher dès que la table ou la page de données n'est plus utilisée, que la transaction soit achevée ou non. Effectue une recherche avec la même sémantique de verrouillage qu'une transaction à un niveau d'isolation SERIALIZABLE. Pour plus d’informations sur les niveaux d’isolement, consultez [SET TRANSACTION ISOLATION LEVEL &#40;Transact-SQL&#41;](../../t-sql/statements/set-transaction-isolation-level-transact-sql.md).  
   
  SNAPSHOT  
 **S'applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)]. 
   
  La table optimisée en mémoire est accédée selon l'isolement SNAPSHOT. SNAPSHOT peut être utilisé uniquement avec les tables optimisées en mémoire (et non avec les tables sur disque). Pour plus d’informations, consultez [Introduction aux tables à mémoire optimisée](../../relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables.md).  
   
-```  
+```sql 
 SELECT * FROM dbo.Customers AS c   
 WITH (SNAPSHOT)   
 LEFT JOIN dbo.[Order History] AS oh   
@@ -403,7 +400,7 @@ LEFT JOIN dbo.[Order History] AS oh
 ## <a name="filtered-index-hints"></a>Indicateurs d'index filtré  
  Un index filtré peut être utilisé comme indicateur de table mais, en conséquence, l’optimiseur de requête génère l’erreur 8622 si l’index ne couvre pas toutes les lignes que la requête sélectionne. Vous trouverez ci-dessous un exemple d'indicateur d'index filtré non valide. Cet exemple illustre la création de l'index `FIBillOfMaterialsWithComponentID` filtré, puis l'utilisation de cet index comme indicateur d'index pour une instruction SELECT. Le prédicat d'index filtré inclut des lignes de données pour les ComponentID 533, 324 et 753. Le prédicat de la requête inclut également des lignes de données pour les ComponentID 533, 324 et 753 mais étend le jeu de résultats pour inclure les ComponentID 855 et 924, qui ne figurent pas dans l'index filtré. Par conséquent, l'optimiseur de requête ne peut pas utiliser l'indicateur d'index filtré et génère l'erreur 8622. Pour plus d'informations, consultez [Create Filtered Indexes](../../relational-databases/indexes/create-filtered-indexes.md).  
   
-```  
+```sql  
 IF EXISTS (SELECT name FROM sys.indexes  
     WHERE name = N'FIBillOfMaterialsWithComponentID'   
     AND object_id = OBJECT_ID(N'Production.BillOfMaterials'))  
@@ -463,7 +460,7 @@ GO
 ### <a name="b-using-the-forceseek-hint-to-specify-an-index-seek-operation"></a>B. Utilisation de l'indicateur FORCESEEK pour spécifier une opération de recherche d'index  
  L'exemple ci-dessous utilise l'indicateur FORCESEEK sans spécifier d'index pour forcer l'optimiseur de requête à effectuer une opération de recherche d'index sur la table `Sales.SalesOrderDetail` de la base de données [!INCLUDE[ssSampleDBnormal](../../includes/sssampledbnormal-md.md)].  
   
-```  
+```sql
 SELECT *  
 FROM Sales.SalesOrderHeader AS h  
 INNER JOIN Sales.SalesOrderDetail AS d WITH (FORCESEEK)  

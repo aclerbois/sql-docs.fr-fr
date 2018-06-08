@@ -1,34 +1,30 @@
 ---
-title: "Audit ﻿Database﻿ Object Access, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit ﻿Database﻿ Object Access, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Database Object Access event class
 ms.assetid: 0294ba51-6085-4de2-a52d-dac1a87fbd4d
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 68f8d3bc8bacbda28ef027e1fff05e61ceadc7e1
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d9aaf3b941cd1c7e4c4ce3cfeed8774bac647e00
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-database-object-access-event-class"></a>Audit Database Object Access (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements **Audit Database Object Access** se produit lors de l'accès à des objets de base de données tels que des schémas.  
+  La classe d'événements **Audit Database Object Access** se produit lors de l'accès à des objets de base de données tels que des schémas.  
   
 ## <a name="audit-database-object-access-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Database Object Access  
   

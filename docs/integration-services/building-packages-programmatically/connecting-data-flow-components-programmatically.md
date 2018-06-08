@@ -1,15 +1,14 @@
 ---
-title: "Connexion de composants de flux de données par programmation | Microsoft Docs"
-ms.custom: 
+title: Connexion de composants de flux de données par programmation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: building-packages-programmatically
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - components [Integration Services], data flow
 - data flow [Integration Services], components
 ms.assetid: 404ecab7-7698-447b-93d6-dd256beb11ff
-caps.latest.revision: 
+caps.latest.revision: 43
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0f9f18de57efa9a088018b8d5a69690cbf64f387
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: ed2feb6afaa3665c18585e76f47e1d39485f9742
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-data-flow-components-programmatically"></a>Connexion de composants de flux de données par programme
   Après avoir ajouté des composants à la tâche de flux de données, vous devez les connecter pour créer une arborescence d'exécution qui représente le flux de données des sources vers des destinations en passant par des transformations. Ces objets <xref:Microsoft.SqlServer.Dts.Pipeline.Wrapper.IDTSPath100> permettent de connecter les composants du flux de données.  

@@ -1,34 +1,30 @@
 ---
-title: "Trace File Close, classe d’événements"
-ms.custom: 
+title: Trace File Close, classe d’événements
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Trace File Close event class
 ms.assetid: 128b7bac-cb64-43e7-ae9b-87b7d2ebb4ef
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 51e3b765c1f58c2ee6f34f60d86b2013e7fbfcf6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 51cd2573b477fcffb40a8e22e4d0b40cd44a0224
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="trace-file-close-event-class"></a>Trace File Close, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Trace File Close** indique qu’un fichier de trace a été fermé pendant la substitution de ce dernier.  
+  La classe d’événements **Trace File Close** indique qu’un fichier de trace a été fermé pendant la substitution de ce dernier.  
   
 ## <a name="trace-file-close-event-class-data-columns"></a>Colonnes de la classe d'événements Trace File Close  
   

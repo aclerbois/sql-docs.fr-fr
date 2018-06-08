@@ -1,17 +1,14 @@
 ---
-title: "Afficher le contenu d’un fichier ou d’une bande de sauvegarde (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Afficher le contenu d’un fichier ou d’une bande de sauvegarde (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backup devices [SQL Server], tapes
 - displaying backup content
@@ -20,16 +17,15 @@ helpviewer_keywords:
 - database backups [SQL Server], viewing content
 - backing up databases [SQL Server], viewing content
 ms.assetid: cd6674a2-ca55-4b5a-a971-878ba001821e
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e618ab96dac13911df7267009d17763c64813345
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 1aba266320d3da0ff1ef308ae70ac24960de9e6e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-the-contents-of-a-backup-tape-or-file-sql-server"></a>Afficher le contenu d'un fichier ou d'une bande de sauvegarde (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,28 +1,26 @@
 ---
 title: Fonction de SQLRateConnection | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SQLRateConnection function [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SQLRateConnection function [ODBC]
 ms.assetid: e8da2ffb-d6ef-4ca7-824f-57afd29585d8
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 22f7e5c4181a0b36a862ab0e0b819891a3dee9fe
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 5f6db1bd9703229ba6e2833865bad44494b9ecc3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlrateconnection-function"></a>SQLRateConnection (fonction)
 **Mise en conformité**  
@@ -64,7 +62,7 @@ SQLRETURN  SQLRateConnection(
 ## <a name="diagnostics"></a>Diagnostics  
  Le Gestionnaire de pilotes ne traitera pas les informations de diagnostic retournées par cette fonction.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  **SQLRateConnection** génère un score compris entre 0 et 100 (inclus) qui indique la manière dont une connexion existante correspond à la demande.  
   
 |Score|Signification (lorsque la valeur SQL_SUCCESS est retournée)|  

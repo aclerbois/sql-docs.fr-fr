@@ -1,29 +1,19 @@
 ---
 title: Générateur de modèles tabulaires dans SQL Server Data Tools | Documents Microsoft
-ms.date: 03/30/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.custom: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-f1_keywords:
-- sql13.ASVS.BIDTOOLSET.TOPLEVSEMMODUIENTRY.F1
-ms.assetid: 45735c57-2a95-4e45-8994-7242df6c9c5f
-caps.latest.revision: 22
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 062505fcf50d84cb853cff541dc0cf6ed6ee0f3e
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: 98c836650ef00b283718ddf22834f7e4d4a56e0f
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="tabular-model-designer"></a>Générateur de modèles tabulaires
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]

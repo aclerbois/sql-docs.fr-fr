@@ -1,27 +1,24 @@
 ---
 title: Le regroupement de connexions prenant en charge les pilotes dans le pilote ODBC pour SQL Server | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 455ab165-8e4d-4df9-a1d7-2b532bfd55d6
-caps.latest.revision: "15"
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 67cb0f520c9e75606c7e1ffcae42d20d87a3d9fb
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: f3cc9428f84db56675dbf58c977078fa4dcca6ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="driver-aware-connection-pooling-in-the-odbc-driver-for-sql-server"></a>Regroupement de connexions prenant en charge le pilote dans le pilote ODBC pour SQL Server
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -93,7 +90,7 @@ Si l’un des ID d’attribut de connexion ou des mots clés de chaîne de conne
     |`SQL_COPT_SS_SERVER_SPN`|Oui|Oui|
     |`SQL_COPT_SS_TRUST_SERVER_CERTIFICATE`|Oui|Oui|
     |`SSPROP_AUTH_REPL_SERVER_NAME`|Oui|Oui|
-    |`SQL_COPT_SS_TNIR`|Oui|Non|
+    |`SQL_COPT_SS_TNIR`|Oui|non|
  
 -   Le pilote peut réinitialiser et ajuster les mots clés et attributs de connexion suivants sans appel réseau supplémentaire. Le pilote réinitialise ces paramètres pour s’assurer que la connexion ne contient pas d’informations incorrectes.  
   

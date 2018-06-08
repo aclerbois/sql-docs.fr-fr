@@ -1,30 +1,20 @@
 ---
 title: TopPercent (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: TOPPERCENT
-dev_langs: kbMDX
-helpviewer_keywords: TopPercent function
-ms.assetid: a40cfbb8-5bf4-4ae2-8686-df9a07206d56
-caps.latest.revision: "34"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 44e35ecb045336b826bbf1cecef01e9f2a42dea6
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 2957b94109e3b611e407185a35bbe8937631f43e
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581451"
 ---
 # <a name="toppercent-mdx"></a>TopPercent (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -51,7 +41,7 @@ TopPercent(Set_Expression, Percentage, Numeric_Expression)
  *Numeric_expression*  
  Expression numérique valide qui correspond généralement à une expression MDX (Multidimensional Expressions) des coordonnées des cellules qui retournent un nombre.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **TopPercent** fonction calcule la somme de l’expression numérique spécifiée évaluée sur le jeu spécifié, en triant le jeu par ordre décroissant. Elle retourne ensuite les éléments dotés des valeurs les plus élevées et dont le pourcentage cumulé du total de la valeur additionnée correspond au moins au pourcentage indiqué. Enfin, elle retourne le plus petit sous-ensemble d'un jeu dont le total cumulé est égal au moins au pourcentage précisé. Les éléments retournés sont triés du plus grand au plus petit.  
   
 > [!WARNING]  
@@ -62,7 +52,7 @@ TopPercent(Set_Expression, Percentage, Numeric_Expression)
 > [!IMPORTANT]  
 >  Comme le [BottomPercent](../mdx/bottompercent-mdx.md) (fonction), la **TopPercent** fonction respecte jamais la hiérarchie.  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  L'exemple suivant retourne les villes les mieux classées représentant 10 % des ventes des revendeurs pour la catégorie Bike. Le résultat est trié par ordre décroissant, en commençant par la ville associé aux meilleures ventes.  
   
 ```  
@@ -99,7 +89,7 @@ WHERE([Product].[Product Categories].[Bikes])
   
 ```  
   
-## <a name="example"></a> Exemple  
+## <a name="example"></a>Exemple  
  La procédure suivante permet de comprendre l’effet des valeurs négatives dans les *Numeric_Expression*. D'abord, établissons le contexte sous-jacent au comportement.  
   
  La requête suivante retourne une table contenant le montant des ventes (Sales Amount), le coût total du produit (Total Product Cost) et le profit brut (Gross Profit) des revendeurs, triés par ordre de profit décroissant. Notez qu'il y a uniquement des valeurs négatives pour les profits ; par conséquent, la plus petite perte apparaît en haut.  
@@ -138,6 +128,6 @@ FROM [Adventure Works]
 |Touring-2000 Blue, 50|$157,444.56|$163,112.57|($5,668.01)|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des fonctions MDX &#40; MDX &#41;](../mdx/mdx-function-reference-mdx.md)  
+ [Référence des fonctions MDX &#40;MDX&#41;](../mdx/mdx-function-reference-mdx.md)  
   
   

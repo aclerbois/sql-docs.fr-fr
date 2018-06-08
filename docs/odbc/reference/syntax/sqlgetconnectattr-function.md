@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetConnectAttr | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetConnectOption
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetConnectOption
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetConnectAttr
-helpviewer_keywords: SQLGetConnectAttr function [ODBC]
+f1_keywords:
+- SQLGetConnectAttr
+helpviewer_keywords:
+- SQLGetConnectAttr function [ODBC]
 ms.assetid: 2cb4ffa8-19d3-4664-8c2f-6682cdcc3f33
-caps.latest.revision: "32"
+caps.latest.revision: 32
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 11e1ae7c2dc3de4611687349295bdd3344c46d47
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 32334ddfa2e58a0e6ec80a50fda44e704d20dee4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetconnectattr-function"></a>Fonction SQLGetConnectAttr
 **Mise en conformité**  
@@ -36,7 +37,7 @@ ms.lasthandoff: 12/21/2017
  **SQLGetConnectAttr** retourne la valeur actuelle de l’attribut de connexion.  
   
 > [!NOTE]  
->  Pour plus d’informations sur ce que le Gestionnaire de pilotes mappe cette fonction pour lorsqu’un ODBC 3*.x* application fonctionne avec une API ODBC 2*.x* pilote, consultez [mappage des fonctions de remplacement pour la compatibilité descendante des Applications](../../../odbc/reference/develop-app/mapping-replacement-functions-for-backward-compatibility-of-applications.md).  
+>  Pour plus d’informations sur ce que le Gestionnaire de pilotes mappe cette fonction pour lorsqu’un ODBC 3 *.x* application fonctionne avec une API ODBC 2 *.x* pilote, consultez [mappage des fonctions de remplacement pour la compatibilité descendante des Applications](../../../odbc/reference/develop-app/mapping-replacement-functions-for-backward-compatibility-of-applications.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -54,7 +55,7 @@ SQLRETURN SQLGetConnectAttr(
  *Handle de connexion*  
  [Entrée] Handle de connexion.  
   
- *Attribute*  
+ *Attribut*  
  [Entrée] Attribut à récupérer.  
   
  *ValuePtr*  
@@ -84,7 +85,7 @@ SQLRETURN SQLGetConnectAttr(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetConnectAttr** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu à partir de la structure de données de diagnostic en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_DBC et un *gérer* de *handle de connexion*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLGetConnectAttr** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Les données retournées dans \* *ValuePtr* a été tronquée pour être *BufferLength* moins la longueur d’un caractère de fin de la valeur null. La longueur de la valeur de chaîne non tronqué est retournée dans **StringLengthPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  

@@ -1,16 +1,14 @@
 ---
 title: sp_server_info (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_server_info
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_server_info
 ms.assetid: 2dc2c262-3cfa-4a84-8127-3632ba583543
-caps.latest.revision: 
+caps.latest.revision: 39
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0261a011e7c331745494070efb5a3d38e37ffa23
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 0715ea7f2f58b8212b48e990c3e2d2f76301b373
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spserverinfo-transact-sql"></a>sp_server_info (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -50,17 +47,17 @@ sp_server_info [[@attribute_id = ] 'attribute_id']
  ID entier de l'attribut. *attribute_id* est **int**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="result-sets"></a>Jeux de résultats  
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**ID_D**|**int**|Numéro d'identification de l'attribut.|  
-|**ATTRIBUTE_NAME**|**varchar (**60**)**|Nom de l'attribut.|  
-|**ATTRIBUTE_VALUE**|**varchar (**255**)**|Valeur actuelle de l'attribut.|  
+|**ATTRIBUTE_NAME**|**varchar (** 60 **)**|Nom de l'attribut.|  
+|**ATTRIBUTE_VALUE**|**varchar (** 255 **)**|Valeur actuelle de l'attribut.|  
   
- Le tableau suivant décrit ces attributs. [!INCLUDE[msCoName](../../includes/msconame-md.md)]Bibliothèques clientes ODBC utilisent actuellement les attributs **1**, **2**, **18**, **22**, et **500** au moment de la connexion.  
+ Le tableau suivant décrit ces attributs. [!INCLUDE[msCoName](../../includes/msconame-md.md)] Bibliothèques clientes ODBC utilisent actuellement les attributs **1**, **2**, **18**, **22**, et **500** lors de la connexion heure.  
   
 |ATTRIBUTE_ID|Description de ATTRIBUTE_NAME|ATTRIBUTE_VALUE|  
 |-------------------|---------------------------------|----------------------|  
@@ -97,11 +94,11 @@ sp_server_info [[@attribute_id = ] 'attribute_id']
 ## <a name="remarks"></a>Notes  
  **sp_server_info** retourne un sous-ensemble des informations fournies par **SQLGetInfo** dans ODBC.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'autorisation SELECT sur le schéma.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Catalogue des procédures stockées &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
+ [Procédures stockées du catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/catalog-stored-procedures-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

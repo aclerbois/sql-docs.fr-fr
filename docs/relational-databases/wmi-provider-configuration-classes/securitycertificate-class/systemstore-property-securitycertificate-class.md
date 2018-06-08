@@ -1,16 +1,15 @@
 ---
-title: "Systemstore, propriété (classe SecurityCertificate) | Documents Microsoft"
-ms.custom: 
+title: Systemstore, propriété (classe SecurityCertificate) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SystemStore Property (SecurityCertificate Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SystemStore property
 ms.assetid: 5d2a6ee2-d975-4fd6-adb5-ed43d0cc7fdd
-caps.latest.revision: 
+caps.latest.revision: 32
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e43b660eb9fd19aa61f341dbd3a51c1f63c1e0f2
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 6a791703cc2cb2be6b2808abf54e855b945352ca
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="systemstore-property-securitycertificate-class"></a>Propriété SystemStore (classe SecurityCertificate)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,17 +1,16 @@
 ---
-title: "Guide de référence des opérateurs Showplan logiques et physiques"
-ms.custom: 
+title: Guide de référence des opérateurs Showplan logiques et physiques
+ms.custom: ''
 ms.date: 10/12/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.showplan.leftouterjoin.f1
 - sql13.swb.showplan.remotedelete.f1
@@ -138,20 +137,20 @@ helpviewer_keywords:
 - ActualRebinds attribute
 - execution plans [SQL Server], reading output
 ms.assetid: e43fd0fe-5ea7-4ffe-8d52-759ef6a7c361
-caps.latest.revision: 
+caps.latest.revision: 51
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 605d3ff10ac725358ec51e28357f8b03cfcee094
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 75aeadbf83ba580545ed97e9c7d5f13ea24ecda5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="showplan-logical-and-physical-operators-reference"></a>Guide de référence des opérateurs Showplan logiques et physiques
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Les opérateurs décrivent comment [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] exécute une requête ou une instruction DML (Data Manipulation Language). L'optimiseur de requête utilise des opérateurs pour construire un plan de requête qui crée le résultat spécifié dans la requête ou pour exécuter l'opération spécifiée dans l'instruction DML. Le plan de requête est une arborescence composée d'opérateurs physiques. Vous pouvez afficher le plan de requête à l'aide des instructions SET SHOWPLAN, des options plan d'exécution graphique dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]ou des classes d'événements Showplan de SQL Server Profiler.  
+  Les opérateurs décrivent comment [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] exécute une requête ou une instruction DML (Data Manipulation Language). L'optimiseur de requête utilise des opérateurs pour construire un plan de requête qui crée le résultat spécifié dans la requête ou pour exécuter l'opération spécifiée dans l'instruction DML. Le plan de requête est une arborescence composée d'opérateurs physiques. Vous pouvez afficher le plan de requête à l'aide des instructions SET SHOWPLAN, des options plan d'exécution graphique dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]ou des classes d'événements Showplan de SQL Server Profiler.  
   
  Les opérateurs sont classés en opérateurs logiques et physiques.  
   
@@ -283,7 +282,7 @@ Les opérateurs décrivent comment [!INCLUDE[ssNoVersion](../includes/ssnoversio
 |![Icône d’opérateur Split](../relational-databases/media/split-32x.gif "Icône d’opérateur Split")|**Split**|L'opérateur **Split** est utilisé pour optimiser le traitement des mises à jour. Il divise chaque opération de mise à jour en opérations DELETE et INSERT. L'opérateur**Split** est un opérateur logique et physique.|  
 |![Icône d’opérateur Spool](../relational-databases/media/spool-32x.gif "Icône d’opérateur Spool")|**Spool**|L'opérateur **Spool** enregistre un résultat de requête intermédiaire dans la base de données **tempdb** .|  
 |![Icône d’opérateur Stream Aggregate](../relational-databases/media/stream-aggregate-32x.gif "Icône d’opérateur Stream Aggregate")|**Stream Aggregate**|L'opérateur **Stream Aggregate** effectue un regroupement d'après une ou plusieurs colonnes et calcule une ou plusieurs expressions d'agrégation retournées par la requête. La sortie de cet opérateur peut être référencée par des opérateurs ultérieurs dans la requête, retournés au client, ou les deux. L'opérateur **Stream Aggregate** exige que l'entrée suive l'ordre des colonnes dans ses groupes. L'optimiseur utilise un opérateur **Sort** avant cet opérateur si les données ne sont pas déjà triées en raison d'un opérateur **Sort** précédent ou d'une recherche ou d'une analyse d'index triée. Dans l’instruction SHOWPLAN_ALL ou dans le plan d’exécution graphique de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)], les colonnes du prédicat GROUP BY sont répertoriées dans la colonne **Argument** , et les expressions d’agrégation sont répertoriées dans la colonne **Defined Values** . **Stream Aggregate** est un opérateur physique.|  
-|![Icône d’opérateur Switch](../relational-databases/media/switch-32x.gif "Icône d’opérateur Switch")|**Commutateur**|**Commutateur** est un type particulier d'itérateur de concaténation qui a *n* entrées. Une expression est associée à chaque opérateur **Switch** . Selon la valeur renvoyée par l’expression (entre 0 et *n*-1), **Commutateur** copie le flux d’entrée approprié dans le flux de sortie. L'une des utilisations de **Switch** consiste à implémenter des plans de requête impliquant des curseurs à avance rapide avec certains opérateurs tels que l'opérateur **TOP** . **Switch** est un opérateur logique et physique.|  
+|![Icône d’opérateur Switch](../relational-databases/media/switch-32x.gif "Icône d’opérateur Switch")|**Switch**|**Switch** est un type particulier d'itérateur de concaténation qui a *n* entrées. Une expression est associée à chaque opérateur **Switch** . Selon la valeur renvoyée par l’expression (entre 0 et *n*-1), **Switch** copie le flux d’entrée approprié dans le flux de sortie. L'une des utilisations de **Switch** consiste à implémenter des plans de requête impliquant des curseurs à avance rapide avec certains opérateurs tels que l'opérateur **TOP** . **Switch** est un opérateur logique et physique.|  
 |![Icône d’opérateur Table Delete](../relational-databases/media/table-delete-32x.gif "Icône d’opérateur Table Delete")|**Table Delete**|L'opérateur physique **Table Delete** supprime les lignes de la table spécifiée dans la colonne **Argument** du plan d'exécution de requête.|  
 |![Icône d’opérateur Table Insert](../relational-databases/media/table-insert-32x.gif "Icône d’opérateur Table Insert")|**Table Insert**|L'opérateur **Table Insert** insère les lignes de son entrée dans la table spécifiée dans la colonne **Argument** du plan d'exécution de requête. La colonne **Argument** contient également un prédicat SET:(), qui indique la valeur à laquelle chaque colonne est définie. Si **Table Insert** ne possède pas d'enfant pour les valeurs insert, la ligne insérée est extraite de l'opérateur Insert lui-même. **Table Insert** est un opérateur physique.|  
 |![Opérateur Table Merge](../relational-databases/media/table-merge-32x.gif "Opérateur Table Merge")|**Table Merge**|L'opérateur **Table Merge** applique un flux de données de fusion à un tas. L'opérateur supprime, met à jour ou insère des lignes dans la table spécifiée dans la colonne **Argument** de l'opérateur. L’opération réellement effectuée dépend de la valeur d’exécution de la colonne **ACTION** spécifiée dans la colonne **Argument** de l’opérateur. **Table Merge** est un opérateur physique.|  

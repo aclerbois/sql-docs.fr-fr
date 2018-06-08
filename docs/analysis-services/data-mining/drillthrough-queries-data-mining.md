@@ -1,37 +1,25 @@
 ---
-title: "Les requêtes d’extraction (exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/06/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- AllowDrillThrough property
-- drillthrough [Analysis Services]
-- drillthrough [DMX]
-ms.assetid: 246c784b-1b0c-4f0b-96f7-3af265e67051
-caps.latest.revision: 
-author: Minewiskan
+title: Les requêtes d’extraction (exploration de données) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 2ac1295dcbea5ff575cb0d1d5ab918bad03c6fd0
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e8b3afda19fbbf084223d0f597fe2893dce17049
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="drillthrough-queries-data-mining"></a>Requêtes d'extraction (exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une *requête d'extraction* vous permet de récupérer les détails des cas ou des données de structure sous-jacents, en envoyant une requête au modèle d'exploration de données. L'extraction est utile si vous souhaitez consulter les cas utilisés pour l'apprentissage du modèle, par opposition à ceux utilisés pour tester le modèle, ou si vous souhaitez consulter des détails supplémentaires à partir des données de cas.  
+  Une *requête d'extraction* vous permet de récupérer les détails des cas ou des données de structure sous-jacents, en envoyant une requête au modèle d'exploration de données. L'extraction est utile si vous souhaitez consulter les cas utilisés pour l'apprentissage du modèle, par opposition à ceux utilisés pour tester le modèle, ou si vous souhaitez consulter des détails supplémentaires à partir des données de cas.  
   
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit deux options différentes pour l'extraction :  
+ L'exploration de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit deux options différentes pour l'extraction :  
   
 -   Extraction des **cas du modèle**  
   
@@ -102,8 +90,8 @@ Une *requête d'extraction* vous permet de récupérer les détails des cas ou d
 |----------|----------|  
 |Procédure qui décrit l'utilisation de l'extraction dans le Concepteur d'exploration de données|[Extraction des données de cas à partir d’un modèle d’exploration de données](../../analysis-services/data-mining/drill-through-to-case-data-from-a-mining-model.md)|  
 |Pour modifier un modèle d'exploration de données existant afin d'autoriser l'extraction|[Activer l’extraction pour un modèle d’exploration de données](../../analysis-services/data-mining/enable-drillthrough-for-a-mining-model.md)|  
-|Activation de l'extraction sur une structure d'exploration de données à l'aide de la clause DMX WITH DRILLTHROUGH|[CRÉER UNE STRUCTURE D’EXPLORATION DE DONNÉES &#40; DMX &#41;](../../dmx/create-mining-structure-dmx.md)|  
-|Pour plus d'informations sur l'assignation d'autorisations qui s'appliquent à l'extraction sur des structures d'exploration de données et des modèles d'exploration de données|[Accorder des autorisations sur les structures d’exploration de données et modèles &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/grant-permissions-on-data-mining-structures-and-models-analysis-services.md)|  
+|Activation de l'extraction sur une structure d'exploration de données à l'aide de la clause DMX WITH DRILLTHROUGH|[CRÉER UNE STRUCTURE D’EXPLORATION DE DONNÉES & #40 ; DMX & #41 ;](../../dmx/create-mining-structure-dmx.md)|  
+|Pour plus d'informations sur l'assignation d'autorisations qui s'appliquent à l'extraction sur des structures d'exploration de données et des modèles d'exploration de données|[Accorder des autorisations sur les structures d’exploration de données et modèles & #40 ; Analysis Services & #41 ;](../../analysis-services/multidimensional-models/grant-permissions-on-data-mining-structures-and-models-analysis-services.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md)   

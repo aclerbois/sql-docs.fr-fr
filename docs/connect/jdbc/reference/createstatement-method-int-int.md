@@ -1,30 +1,29 @@
 ---
-title: "Méthode createStatement (int, int) | Documents Microsoft"
-ms.custom: 
+title: Méthode createStatement (int, int) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerConnection.createStatement (int, int)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerConnection.createStatement (int, int)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 90dbf639-c3d8-4519-9300-5447c79aec17
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 781682dfb21281059b0df9af7f2d230c73c46129
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: fae1d8ed3aa008415d325b04f02f8e96adc519f1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="createstatement-method-int-int"></a>Méthode createStatement (int, int)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -58,7 +57,7 @@ public java.sql.Statement createStatement(int resultSetType,
  Cette méthode createStatement est spécifiée par la méthode createStatement de l’interface java.sql.Connection.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode createStatement &#40; SQLServerConnection &#41;](../../../connect/jdbc/reference/createstatement-method-sqlserverconnection.md)   
+ [Méthode createStatement &#40;SQLServerConnection&#41;](../../../connect/jdbc/reference/createstatement-method-sqlserverconnection.md)   
  [Membres de SQLServerConnection](../../../connect/jdbc/reference/sqlserverconnection-members.md)   
  [SQLServerConnection, classe](../../../connect/jdbc/reference/sqlserverconnection-class.md)  
   

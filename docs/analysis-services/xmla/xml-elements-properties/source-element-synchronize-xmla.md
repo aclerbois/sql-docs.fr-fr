@@ -1,39 +1,24 @@
 ---
-title: "Élément source (commande Synchronize) (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément source (commande Synchronize) (XMLA) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-apiname: Source Element (Synchronize)
-apilocation: http://schemas.microsoft.com/analysisservices/2003/engine
-apitype: Schema
-applies_to: SQL Server 2016 Preview
-f1_keywords:
-- urn:schemas-microsoft-com:xml-analysis#Source
-- http://schemas.microsoft.com/analysisservices/2003/engine#Source
-- microsoft.xml.analysis.source
-helpviewer_keywords: Source element
-ms.assetid: 0a857f91-771f-4c5e-8bf7-4bf17442d4df
-caps.latest.revision: "11"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e7543001263a4f12f3c3f1459ff0fe0c98d0d964
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 40afa5695c1f3629f9d88054d3d7129f95af240b
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576401"
 ---
 # <a name="source-element-synchronize-xmla"></a>Élément Source (commande Synchronize) (XMLA)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Représente une base de données source à partir de laquelle synchroniser une base de données cible pendant une [synchroniser](../../../analysis-services/xmla/xml-elements-commands/synchronize-element-xmla.md) commande.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Représente une base de données source à partir de laquelle synchroniser une base de données cible pendant une [synchroniser](../../../analysis-services/xmla/xml-elements-commands/synchronize-element-xmla.md) commande.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +32,7 @@ ms.lasthandoff: 01/08/2018
 </Synchronize>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -62,10 +47,10 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[Synchroniser](../../../analysis-services/xmla/xml-elements-commands/synchronize-element-xmla.md)|  
 |Éléments enfants|[ConnectionString](../../../analysis-services/xmla/xml-elements-properties/connectionstring-element-xmla.md), [objet](../../../analysis-services/xmla/xml-elements-properties/object-element-xmla.md)|  
   
-## <a name="remarks"></a>Notes   
- Le **synchroniser** commande utilise le **Source** élément à établir une connexion et à identifier une base de données sur une instance de [!INCLUDE[msCoName](../../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)] avec lequel vous souhaitez synchroniser la base de données cible.  
+## <a name="remarks"></a>Notes  
+ Le **synchroniser** commande utilise le **Source** élément à établir une connexion et à identifier une base de données sur une instance d’Analysis Services avec lequel vous souhaitez synchroniser la base de données cible.  
   
-## <a name="see-also"></a>Voir aussi  
- [Propriétés &#40; XMLA &#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
+## <a name="see-also"></a>Voir aussi
+ [Propriétés &#40;XMLA&#41;](../../../analysis-services/xmla/xml-elements-properties/xml-elements-properties.md)  
   
   

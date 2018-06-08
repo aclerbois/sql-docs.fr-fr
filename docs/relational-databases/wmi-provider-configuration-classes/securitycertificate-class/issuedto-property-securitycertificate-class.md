@@ -1,16 +1,15 @@
 ---
-title: "Propriété IssuedTo (classe SecurityCertificate) | Documents Microsoft"
-ms.custom: 
+title: Propriété IssuedTo (classe SecurityCertificate) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - IssuedTo Property (SecurityCertificate Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - IssuedTo property
 ms.assetid: 47a4fcc7-6e8c-4ea2-a68a-f2789151c25f
-caps.latest.revision: 
+caps.latest.revision: 32
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 648f3e588061557a8a5b5d8079d46aee5781f598
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 19ef9c6e230272497cec5380a94e2e82739e0337
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="issuedto-property-securitycertificate-class"></a>Propriété IssuedTo (classe SecurityCertificate)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

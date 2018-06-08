@@ -1,30 +1,28 @@
 ---
 title: Options de ligne de commande dans la Console SSMA (AccessToSQL) | Documents Microsoft
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-access
-ms.custom: 
+ms.custom: ''
 ms.date: 08/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: c1f3b3f0-0f3e-4e07-b745-2fbdde85c67e
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: Shamikg
 ms.author: Shamikg
 manager: murato
-ms.workload: Inactive
-ms.openlocfilehash: c1d26043b33ea902aec4ae7976ad8b215829bf34
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 361ef1f9fcac31f864350098a2c3d223c59e2afe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="command-line-options-in-the-ssma-console-accesstosql"></a>Options de ligne de commande de la Console de SSMA (AccessToSQL)
 Microsoft vous fournit un ensemble complet des options de ligne de commande pour exécuter et contrôler les activités SSMA. Les sections ultérieures fournissent des détails supplémentaires.  
@@ -166,21 +164,21 @@ Affiche le résumé de la syntaxe des options de la Console de SSMA :
   
 `C:\>SSMAforAccessConsole.EXE -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; AccessToSQL &#41; ](../../ssma/access/appendix-1-accesstosql.md).  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;AccessToSQL&#41;](../../ssma/access/appendix-1-accesstosql.md).  
   
 ### <a name="securepassword-help-option-securepassword--help"></a>Option de l’aide de SecurePassword : – securepassword- ? /Help  
 Affiche le résumé de la syntaxe des options de la Console de SSMA :  
   
 `C:\>SSMAforAccessConsole.EXE -securepassword -?`  
   
-Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40; AccessToSQL &#41;](../../ssma/access/appendix-1-accesstosql.md)  
+Pour un affichage sous forme de tableau des options de ligne de commande de Console de SSMA, reportez-vous à [annexe - 1 &#40;AccessToSQL&#41;](../../ssma/access/appendix-1-accesstosql.md)  
   
 ### <a name="next-steps"></a>Étapes suivantes  
 L’étape suivante varie selon les spécifications de votre projet :  
   
-1.  Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40; AccessToSQL &#41; ](../../ssma/access/managing-passwords-accesstosql.md).  
+1.  Pour spécifier un mot de passe ou d’exportation / importation des mots de passe, consultez [la gestion des mots de passe &#40;AccessToSQL&#41;](../../ssma/access/managing-passwords-accesstosql.md).  
   
-2.  Pour la génération de rapports, consultez [génération de rapports &#40; AccessToSQL &#41; ](../../ssma/access/generating-reports-accesstosql.md).  
+2.  Pour la génération de rapports, consultez [génération de rapports &#40;AccessToSQL&#41;](../../ssma/access/generating-reports-accesstosql.md).  
   
-3.  Pour résoudre les problèmes dans la console, consultez [dépannage &#40; AccessToSQL &#41; ](../../ssma/access/troubleshooting-accesstosql.md).  
+3.  Pour résoudre les problèmes dans la console, consultez [dépannage &#40;AccessToSQL&#41;](../../ssma/access/troubleshooting-accesstosql.md).  
   

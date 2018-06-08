@@ -1,34 +1,30 @@
 ---
-title: "XQuery Static Type, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: XQuery Static Type, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - XQuery Static Type event class
 ms.assetid: 30df7ba9-1e5f-432b-b90b-4310ef0473c0
-caps.latest.revision: 
+caps.latest.revision: 20
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77317d88000ef5e4a58f8ec47b07f97a35e5c764
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 883c337f7801446990da17994f30d6683d1780e5
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="xquery-static-type-event-class"></a>XQuery Static Type, classe d’événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements XQuery Static Type se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une expression XQuery. Cette classe d'événements fournit le type statique de l'expression XQuery.  
+  La classe d'événements XQuery Static Type se produit lorsque [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] exécute une expression XQuery. Cette classe d'événements fournit le type statique de l'expression XQuery.  
   
 ## <a name="xquery-static-type-event-class-data-columns"></a>Colonnes de la classe d'événements XQuery Static Type  
   

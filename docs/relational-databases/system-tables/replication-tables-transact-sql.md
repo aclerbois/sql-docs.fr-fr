@@ -1,16 +1,15 @@
 ---
-title: "Tables de réplication (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: Tables de réplication (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,21 +19,20 @@ helpviewer_keywords:
 - system tables [SQL Server], replication
 - replication [SQL Server], system tables
 ms.assetid: 5696ee73-5d7c-4f26-b7ee-6831c9c3edf7
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: da1d0ec4572c89ace6dd0849228842611822d60d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: d1746bf67f4858a97d91e5e7f7740449d14126b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replication-tables-transact-sql"></a>Tables de réplication (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
 
-  Les tables système de réplication prennent en charge une topologie de réplication. Lorsqu'une base de données utilisateur est configurée en tant que serveur de publication ou en tant qu'abonné, la réplication ajoute des tables système à la base de données. Ces tables sont supprimées lorsqu'une base de données utilisateur est supprimée d'une topologie de réplication. Pour les règles générales concernant l’utilisation de tables système, consultez [Tables système &#40; Transact-SQL &#41; ](../../relational-databases/system-tables/system-tables-transact-sql.md).  
+  Les tables système de réplication prennent en charge une topologie de réplication. Lorsqu'une base de données utilisateur est configurée en tant que serveur de publication ou en tant qu'abonné, la réplication ajoute des tables système à la base de données. Ces tables sont supprimées lorsqu'une base de données utilisateur est supprimée d'une topologie de réplication. Pour les règles générales concernant l’utilisation de tables système, consultez [Tables système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/system-tables-transact-sql.md).  
   
 ## <a name="replication-tables"></a>Tables de réplication  
  La liste suivante répertorie les tables système utilisées par la réplication. Elles sont classées par base de données.  
@@ -43,7 +41,7 @@ ms.lasthandoff: 11/21/2017
   
 |||  
 |-|-|  
-|[MSreplication_options &#40; Transact-SQL &#41;](../../relational-databases/system-tables/msreplication-options-transact-sql.md)||  
+|[MSreplication_options &#40;Transact-SQL&#41;](../../relational-databases/system-tables/msreplication-options-transact-sql.md)||  
   
 ### <a name="replication-tables-in-the-msdb-database"></a>Tables de réplication de la base de données msdb  
   
@@ -120,7 +118,7 @@ ms.lasthandoff: 11/21/2017
 |-|-|  
 |[MSdynamicsnapshotjobs](../../relational-databases/system-tables/msdynamicsnapshotjobs-transact-sql.md)|[MSmerge_settingshistory](../../relational-databases/system-tables/msmerge-settingshistory-transact-sql.md)|  
 |[MSdynamicsnapshotviews](../../relational-databases/system-tables/msdynamicsnapshotviews-transact-sql.md)|[MSmerge_tombstone](../../relational-databases/system-tables/msmerge-tombstone-transact-sql.md)|  
-|[MSmerge_altsyncpartners](../../relational-databases/system-tables/msmerge-altsyncpartners-transact-sql.md)|[MSpeer_lsns &#40; Transact-SQL &#41;](../../relational-databases/system-tables/mspeer-lsns-transact-sql.md)|  
+|[MSmerge_altsyncpartners](../../relational-databases/system-tables/msmerge-altsyncpartners-transact-sql.md)|[MSpeer_lsns &#40;Transact-SQL&#41;](../../relational-databases/system-tables/mspeer-lsns-transact-sql.md)|  
 |[MSmerge_conflicts_info](../../relational-databases/system-tables/msmerge-conflicts-info-transact-sql.md)|[MSrepl_queuedtraninfo](../../relational-databases/system-tables/msrepl-queuedtraninfo-transact-sql.md)|  
 |[MSmerge_contents](../../relational-databases/system-tables/msmerge-contents-transact-sql.md)|[MSsnapshotdeliveryprogress](../../relational-databases/system-tables/mssnapshotdeliveryprogress-transact-sql.md)|  
 |[MSmerge_current_partition_mappings](../../relational-databases/system-tables/msmerge-current-partition-mappings.md)|[MSsubscription_properties](../../relational-databases/system-tables/mssubscription-properties-transact-sql.md)|  

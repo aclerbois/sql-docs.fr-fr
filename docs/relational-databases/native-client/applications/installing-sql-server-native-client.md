@@ -2,9 +2,8 @@
 title: Installation de SQL Server Native Client | Documents Microsoft
 ms.custom: ''
 ms.date: 07/15/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: native-client|applications
 ms.reviewer: ''
 ms.suite: sql
@@ -26,13 +25,13 @@ helpviewer_keywords:
 - data access [SQL Server Native Client], installing SQL Server Native Client
 - removing SQL Server Native Client
 ms.assetid: c6abeab2-0052-49c9-be79-cfbc50bff5c1
-caps.latest.revision: ''
-ms.workload: Active
-ms.openlocfilehash: 07be73372804cb3f0338ff262533b010b25d7edd
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+caps.latest.revision: 44
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: d9343fa6edc83886a62d1e478d3c20d5c9f18c18
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="installing-sql-server-native-client"></a>Installation de SQL Server Native Client
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]

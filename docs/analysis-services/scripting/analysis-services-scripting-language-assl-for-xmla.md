@@ -1,45 +1,23 @@
 ---
 title: Analysis Services Scripting Language (ASSL de XMLA) | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: assl
 ms.topic: reference
-apiname:
-- Analysis Services Scripting Language Reference
-apilocation:
-- http://schemas.microsoft.com/analysisservices/2003/engine
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- ASSL, reference
-- scripting languages [Analysis Services]
-- Analysis Services Scripting Language, reference
-- ODL [Analysis Services Scripting Language]
-- XML [Analysis Services Scripting Language]
-- scripts [Analysis Services Scripting Language]
-- object definition language [Analysis Services Scripting Language]
-ms.assetid: ca0e852e-9002-4224-a0f0-bd96f2fc5c65
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 00661a3edba892563837af0c20f5015aa9d259dc
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: ef1f6b503dadcd0b3297a28a33aca30d1a1aa1ca
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-scripting-language-assl-for-xmla"></a>Analysis Services Scripting Language (ASSL de XMLA)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les applications communiquent avec [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] à l’aide des commandes XML et les descriptions de l’objet. Analysis Services Scripting Language (ASSL) représente la portion de langage de définition d'objet de ce dialecte XML.  
+  Les applications communiquent avec [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] à l’aide des commandes XML et les descriptions de l’objet. Analysis Services Scripting Language (ASSL) représente la portion de langage de définition d'objet de ce dialecte XML.  
   
  Cette section de référence contient des informations de syntaxe et d'utilisation pour chaque élément compris dans le schéma ASSL.  
   
@@ -49,13 +27,13 @@ Les applications communiquent avec [!INCLUDE[msCoName](../../includes/msconame-m
   
 |Rubrique| Description|  
 |-----------|-----------------|  
-|[Analysis Services Scripting Language hiérarchie des éléments XML &#40; ASSL &#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-element-hierarchy-assl.md)|Diagramme détaillé de la hiérarchie des éléments dans ASSL.|  
-|[Script de hiérarchie des types de données XML Language &#40; Analysis Services ASSL &#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-data-type-hierarchy-assl.md)|Diagramme détaillé de la hiérarchie d'héritage des types de données dans ASSL.|  
-|[Analysis Services script éléments du langage XML &#40; ASSL &#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-elements-assl.md)|Référence syntaxique pour chaque élément inclus dans le schéma ASSL.|  
-|[Analysis Services script des Types de données XML Language &#40; ASSL &#41;](../../analysis-services/scripting/data-type/analysis-services-scripting-language-xml-data-types-assl.md)|Référence syntaxique pour chaque type de données inclus dans le schéma ASSL.|  
+|[Analysis Services Scripting Language hiérarchie des éléments XML & #40 ; ASSL & #41 ;](../../analysis-services/scripting/analysis-services-scripting-language-xml-element-hierarchy-assl.md)|Diagramme détaillé de la hiérarchie des éléments dans ASSL.|  
+|[Hiérarchie de Type de données XML de langage de script Analysis Services &#40;ASSL&#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-data-type-hierarchy-assl.md)|Diagramme détaillé de la hiérarchie d'héritage des types de données dans ASSL.|  
+|[Analysis Services des éléments XML du langage des scripts &#40;ASSL&#41;](../../analysis-services/scripting/analysis-services-scripting-language-xml-elements-assl.md)|Référence syntaxique pour chaque élément inclus dans le schéma ASSL.|  
+|[Analysis Services script des Types de données XML Language & #40 ; ASSL & #41 ;](../../analysis-services/scripting/data-type/analysis-services-scripting-language-xml-data-types-assl.md)|Référence syntaxique pour chaque type de données inclus dans le schéma ASSL.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Développement avec Analysis Services Scripting Language &#40; ASSL &#41;](../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
- [Développement avec Analysis Management Objects &#40; AMO &#41;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)  
+ [Développement avec Analysis Services Scripting Language &#40;ASSL&#41;](../../analysis-services/multidimensional-models/scripting-language-assl/developing-with-analysis-services-scripting-language-assl.md)   
+ [Développement avec Analysis Management Objects & #40 ; AMO & #41 ;](../../analysis-services/multidimensional-models/analysis-management-objects/developing-with-analysis-management-objects-amo.md)  
   
   

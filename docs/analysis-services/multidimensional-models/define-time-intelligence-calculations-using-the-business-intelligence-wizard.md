@@ -1,44 +1,23 @@
 ---
-title: "Définir des calculs Time Intelligence à l’aide de l’Assistant Business Intelligence | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- period over period growth [Analysis Services]
-- parallel period comparisons [Analysis Services]
-- Business Intelligence enhancements [Analysis Services], time intelligence
-- time views [Analysis Services]
-- hierarchies [Analysis Services], time
-- time periods [Analysis Services]
-- moving averages
-- time [Analysis Services]
-- period to date [Analysis Services]
-- calculations [Analysis Services], time
-- time hierarchies [Analysis Services]
-- time intelligence [Analysis Services]
-ms.assetid: be36e8fc-f46e-4553-8623-b27d695c330b
-caps.latest.revision: 
-author: Minewiskan
+title: Définir des calculs Time Intelligence à l’aide de l’Assistant Business Intelligence | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f2767b84432f137bd8f43c4352f99277abb845df
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 2d3659fd80d09f5f0b5ec17301606b23810df3fe
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="define-time-intelligence-calculations-using-the-business-intelligence-wizard"></a>Définir des calculs Time Intelligence à l'aide de l'Assistant Business Intelligence
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-L'amélioration Time Intelligence est une amélioration de cube qui ajoute des calculs de temps (ou vues temporelles) à une hiérarchie sélectionnée. Cette amélioration prend en charge les catégories de calculs suivantes :  
+  L'amélioration Time Intelligence est une amélioration de cube qui ajoute des calculs de temps (ou vues temporelles) à une hiérarchie sélectionnée. Cette amélioration prend en charge les catégories de calculs suivantes :  
   
 -   Cumul périodique jusqu'à ce jour  
   

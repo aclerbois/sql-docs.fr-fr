@@ -1,16 +1,14 @@
 ---
 title: CLOSE SYMMETRIC KEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CLOSE SYMMETRIC KEY
@@ -24,16 +22,15 @@ helpviewer_keywords:
 - CLOSE SYMMETRIC KEY statement
 - cryptography [SQL Server], symmetric keys
 ms.assetid: 3b083cbb-3c6a-4f59-8d34-601db1efcc83
-caps.latest.revision: 
+caps.latest.revision: 29
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b2e65502932c646f539e923fe905854234534eac
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 4679fd837b99c94f0a2ce81f64c43d6425a5e5a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="close-symmetric-key-transact-sql"></a>CLOSE SYMMETRIC KEY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -50,7 +47,7 @@ CLOSE { SYMMETRIC KEY key_name | ALL SYMMETRIC KEYS }
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *Key_name*  
+ *KEY_NAME*  
  Nom de la clé symétrique à fermer.  
   
 ## <a name="remarks"></a>Notes   

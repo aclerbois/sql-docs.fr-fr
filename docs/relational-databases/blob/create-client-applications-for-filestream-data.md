@@ -1,34 +1,32 @@
 ---
-title: "Créer des applications clientes pour les données FILESTREAM | Microsoft Docs"
-ms.custom: 
+title: Créer des applications clientes pour les données FILESTREAM | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: blob
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-blob
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FILESTREAM [SQL Server], Win32
 ms.assetid: 8a02aff6-e54c-40c6-a066-2083e9b090aa
-caps.latest.revision: 
+caps.latest.revision: 18
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 59471e22accea7996e3bd5d87b5cf6ff077e26c5
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 72bc62e5847a7205b0568fd60581b16628bd8c31
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-client-applications-for-filestream-data"></a>Créer des applications clientes pour les données FILESTREAM
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Vous pouvez utiliser des API Win32 pour lire et écrire des données dans un objet BLOB FILESTREAM. Les étapes suivantes sont nécessaires :  
+  Vous pouvez utiliser des API Win32 pour lire et écrire des données dans un objet BLOB FILESTREAM. Les étapes suivantes sont nécessaires :  
   
 -   Lecture du chemin d'accès au fichier FILESTREAM.  
   

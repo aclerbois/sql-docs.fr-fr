@@ -1,27 +1,25 @@
 ---
-title: "Étape 1 : Configurer l’environnement de développement pour ADO.NET développement | Documents Microsoft"
-ms.custom: 
+title: 'Étape 1 : Configurer l’environnement de développement pour ADO.NET développement | Documents Microsoft'
+ms.custom: ''
 ms.date: 08/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado-net
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 9cba6a0d-5f21-49af-ac5a-17d199973590
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ee138401f61663fbfc078f893ed542503d30be77
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b65a16b13e824f195ccc93e855a0b268a227999d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-1-configure-development-environment-for-adonet-development"></a>Étape 1 : Configurer l’environnement de développement pour le développement d’ADO.NET
 

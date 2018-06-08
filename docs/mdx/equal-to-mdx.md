@@ -1,32 +1,20 @@
 ---
-title: "= (Égal à) (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: =
-dev_langs: kbMDX
-helpviewer_keywords:
-- equals operator (=)
-- = (equals operator)
-ms.assetid: 5e1f3b58-a646-4fc1-a3f1-19090a5437b7
-caps.latest.revision: "36"
-author: Minewiskan
+title: = (Égal à) (MDX) | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 51df250577d539c48acb55e26e9906cf1d5a15d4
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: bb609b1a3bcfe08d0720aef70e584049080be148
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578171"
 ---
 # <a name="-equal-to-mdx"></a>= (Égal à) (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -34,7 +22,7 @@ ms.lasthandoff: 01/08/2018
   Exécute une opération de comparaison qui détermine si la valeur d'une expression MDX est égale à celle d'une autre expression MDX.  
   
 > [!NOTE]  
->  Pour comparer des objets, utilisez la [IS &#40; MDX &#41; ](../mdx/is-mdx.md) opérateur. Par exemple, utilisez l'opérateur IS lorsque vous vérifiez si le membre actuel sur un axe de requête est un membre spécifique.  
+>  Pour comparer des objets, utilisez la [IS &#40;MDX&#41; ](../mdx/is-mdx.md) opérateur. Par exemple, utilisez l'opérateur IS lorsque vous vérifiez si le membre actuel sur un axe de requête est un membre spécifique.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -47,7 +35,7 @@ MDX_Expression = MDX_Expression
  *MDX_Expression*  
  Expression MDX valide.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
  Valeur booléenne basée sur les conditions suivantes :  
   
 -   **true** si la valeur du premier paramètre est égale à la valeur du second paramètre.  
@@ -88,6 +76,6 @@ MDX_Expression = MDX_Expression
  `From [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)  
   
   

@@ -1,16 +1,14 @@
 ---
-title: "L’exécution d’une mise à jour à l’aide de OLE DB (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: L’exécution d’une mise à jour à l’aide de OLE DB (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ICommandStream interface
@@ -18,20 +16,20 @@ helpviewer_keywords:
 - OLE DB, SQLXML
 - executing updategrams [SQLXML]
 ms.assetid: 4154c590-1541-49d0-8117-4ddf2ce5ccba
-caps.latest.revision: 
+caps.latest.revision: 24
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f3ce470a52fea5f6f5bc8cc105e9e0fcfd98ec29
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1c80025b375cfa017d92a6ae1602c78ddc57d9f7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-an-updategram-by-using-ole-db-sqlxml-40"></a>Exécution d'un code de mise à jour (updategram) à l'aide d'OLE DB (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette rubrique fournit un exemple fonctionnel d’usingOLE DB pour exécuter une mise à jour.  
+  Cette rubrique fournit un exemple fonctionnel d’usingOLE DB pour exécuter une mise à jour.  
   
 ## <a name="using-icommandstream-to-set-an-xml-command"></a>Utilisation d'ICommandStream pour définir une commande XML  
  L’interface OLE DB (version 2.6 ou version ultérieure) ICommandStream transmet une commande comme un objet de flux, plutôt que sous forme de chaîne.  

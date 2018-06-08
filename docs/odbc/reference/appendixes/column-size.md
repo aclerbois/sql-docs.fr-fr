@@ -1,32 +1,29 @@
 ---
 title: Taille de la colonne | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], column size
 - size of data types [ODBC]
 - SQL data types [ODBC], column characteristics
 - column size of data types [ODBC]
 ms.assetid: 541b83ab-b16d-4714-bcb2-3c3daa9a963b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2bc56113933e993b5748564a1c64ef1798ed8ef1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1ce38cfd836aa9328838096763ba9191c4a9ec30
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-size"></a>Taille de la colonne
 La taille de colonne (ou paramètre) des types de données numérique est définie en tant que le nombre maximal de chiffres utilisés par le type de données de la colonne ou du paramètre ou la précision des données. Pour les types de caractères, il s’agit la longueur en caractères des données ; pour les types de données binaires, taille de la colonne est définie comme la longueur en octets des données. Pour l’heure, timestamp et tous les types d’intervalle, il s’agit du nombre de caractères dans la représentation sous forme de caractères de ces données. La taille de colonne définie pour chaque type de données SQL concis est indiquée dans le tableau suivant.  
@@ -35,7 +32,7 @@ La taille de colonne (ou paramètre) des types de données numérique est défin
 |-------------------------|-----------------|  
 |Tous les types de caractères [a] [b].|La taille de la colonne définie ou maximale, en caractères de la colonne ou du paramètre (tel qu’il est contenu dans le champ de descripteur SQL_DESC_LENGTH). Par exemple, la taille de la colonne d’une colonne de caractères codés sur définie en tant que char (10) est 10.|  
 |SQL_DECIMAL SQL_NUMERIC|Le nombre de chiffres défini. Par exemple, la précision d’une colonne définie en tant que NUMERIC(10,3) est 10.|  
-|SQL_BIT (c)| 1|  
+|SQL_BIT (c)|1|  
 |SQL_TINYINT (c)|3|  
 |SQL_SMALLINT (c)|5|  
 |SQL_INTEGER (c)|10|  
@@ -46,7 +43,7 @@ La taille de colonne (ou paramètre) des types de données numérique est défin
 |Tous les types binaires [a] [b].|Longueur maximale ou définie en octets de la colonne ou du paramètre. Par exemple, la longueur d’une colonne définie comme BINARY (10) est 10.|  
 |SQL_TYPE_DATE (c)|10 (le nombre de caractères dans le *aaaa-mm-jj* format).|  
 |SQL_TYPE_TIME (c)|8 (le nombre de caractères dans le *hh-mm-ss* format), ou 9 + *s* (le nombre de caractères dans le *hh : mm :*[.fff...] format, où *s* est la précision en secondes).|  
-|SQL_TYPE_TIMESTAMP|16 (le nombre de caractères dans le *aaaa-mm-jj hh* format)<br /><br /> 19 (le nombre de caractères dans le *aaaa-mm-jj* *hh : mm :* format)<br /><br /> ou Gestionnaire de configuration<br /><br /> 20 + *s* (le nombre de caractères dans le *aaaa-mm-jj hh : mm :*[.fff...] format, où *s* est la précision en secondes).|  
+|SQL_TYPE_TIMESTAMP|16 (le nombre de caractères dans le *aaaa-mm-jj hh* format)<br /><br /> 19 (le nombre de caractères dans le *aaaa-mm-jj* *hh : mm :* format)<br /><br /> ou<br /><br /> 20 + *s* (le nombre de caractères dans le *aaaa-mm-jj hh : mm :*[.fff...] format, où *s* est la précision en secondes).|  
 |SQL_INTERVAL_SECOND|Où *p* est l’intervalle de précision d’en-tête et *s* est la précision en secondes, *p* (si *s*= 0) ou *p*+*s*+ 1 (si *s*> 0). [ d]|  
 |SQL_INTERVAL_DAY_TO_SECOND|Où *p* est l’intervalle de précision d’en-tête et *s* est la précision en secondes, 9 +*p* (si *s*= 0) ou 10 +*p*+*s* (si *s*> 0). [ d]|  
 |SQL_INTERVAL_HOUR_TO_SECOND|Où *p* est l’intervalle de précision d’en-tête et *s* est la précision en secondes, 6 +*p* (si *s*= 0) ou 7 +*p*+*s* (si *s*> 0). [ d]|  

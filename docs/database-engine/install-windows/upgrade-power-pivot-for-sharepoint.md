@@ -1,27 +1,24 @@
 ---
-title: "Mettre à niveau Power Pivot pour SharePoint | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau Power Pivot pour SharePoint | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 80ba9e43-f3f0-4730-9fb1-2afd2dd3e6fc
-caps.latest.revision: 
+caps.latest.revision: 17
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: df0547a4e9665040cea0aff190586759d6a24cd4
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 6b256c8c22b1b9928dd016ecd84ed844baf13546
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770975"
 ---
 # <a name="upgrade-power-pivot-for-sharepoint"></a>Mettre à niveau Power Pivot pour SharePoint
 
@@ -35,7 +32,7 @@ ms.lasthandoff: 02/09/2018
   
  **Dans cet article :**  
   
- [Prérequis](#bkmk_prereq)  
+ [Conditions préalables](#bkmk_prereq)  
   
  [Mettre à niveau une batterie de serveurs SharePoint 2013 existante](#bkmk_uprgade_sharepoint2013)  
   
@@ -265,7 +262,7 @@ Get-PowerPivotSystemService
   
 3.  Cliquez sur **Détails**.  
   
-4.  [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] La version du fichier doit être 13.00.\<build majeur>.\<build mineur>.  
+4.  La version du fichier [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] doit être 13.00.\<build majeur>.\<build mineur>.  
   
 5.  Vérifiez que ce numéro est identique à la version de la solution [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et du service système.  
   

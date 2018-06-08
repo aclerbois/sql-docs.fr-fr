@@ -1,38 +1,35 @@
 ---
-title: "Types de données C ODBC | Documents Microsoft"
-ms.custom: 
+title: Types de données C ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], C data types
 - C data types [ODBC], about C data types
 - C data types [ODBC]
 ms.assetid: c91bef31-3794-4736-966a-d50997b2233c
-caps.latest.revision: "26"
+caps.latest.revision: 26
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 713b9448ecb70b57f0aace7f05aa9b977511323b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 384f26d8fa33d956582caecf8c6e0911e96a23d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="c-data-types-in-odbc"></a>Types de données C dans ODBC
 ODBC définit les types de données C qui sont utilisés par les variables d’application et de leurs identificateurs de type correspondant. Ils sont utilisés par les mémoires tampons qui sont liées aux colonnes du jeu de résultats et les paramètres de l’instruction. Par exemple, qu'une application veut récupérer des données d’une colonne de jeu de résultats au format caractère. Elle déclare une variable avec le SQLCHAR * type de données et lie cette variable à la colonne du jeu de résultats avec l’identificateur type SQL_C_CHAR. Pour obtenir une liste complète des types de données C et des identificateurs de type, consultez [annexe d : les Types de données](../../../odbc/reference/appendixes/appendix-d-data-types.md).  
   
  ODBC définit également un mappage par défaut de chaque type de données SQL à un type de données C. Par exemple, un entier de 2 octets dans la source de données est mappé à un entier de 2 octets dans l’application. Pour utiliser le mappage par défaut, une application spécifie l’identificateur de type SQL_C_DEFAULT. Toutefois, utilisation de cet identificateur est déconseillée pour des raisons d’interopérabilité.  
   
- Tous les types de données entier C définis dans ODBC 1*.x* ont été signés. Les types de données C non signés et leurs identificateurs de type correspondants ont été ajoutés dans ODBC 2.0. Pour cette raison, les applications et les pilotes doivent être particulièrement prudent lorsque vous traitez des 1*.x* versions.  
+ Tous les types de données entier C définis dans ODBC 1 *.x* ont été signés. Les types de données C non signés et leurs identificateurs de type correspondants ont été ajoutés dans ODBC 2.0. Pour cette raison, les applications et les pilotes doivent être particulièrement prudent lorsque vous traitez des 1 *.x* versions.  
   
 ## <a name="c-data-type-extensibility"></a>Extensibilité du Type de données C  
  Dans ODBC 3.8, vous pouvez spécifier les types de données C spécifiques au pilote. Cela vous permet de lier un type SQL en tant que type dans les applications ODBC C spécifiques au pilote lorsque vous appelez [SQLBindCol](../../../odbc/reference/syntax/sqlbindcol-function.md), [SQLGetData](../../../odbc/reference/syntax/sqlgetdata-function.md), ou [SQLBindParameter](../../../odbc/reference/syntax/sqlbindparameter-function.md). Cela peut être utile pour prendre en charge de nouveaux types de serveur, car des types de données C existants ne peuvent pas représenter correctement les nouveaux types de données de serveur. À l’aide des types spécifiques au pilote C peut augmenter le nombre de conversions qui effectuent des pilotes.  

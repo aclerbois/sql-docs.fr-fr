@@ -1,32 +1,29 @@
 ---
-title: "Exemple de l’axe (VBScript) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de l’axe (VBScript) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - VB
 helpviewer_keywords:
 - ADO MD code examples, VBScript
 ms.assetid: b4647211-2566-4657-ae7b-3dd761457d7b
-caps.latest.revision: 
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b986eb2f2114f8740a33d139bc8a6ac4d13571c5
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8770018201fb8cc76d39c58300ed1e51958e507f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="axis-example-vbscript"></a>Exemple de l’axe (VBScript)
 Cette Page ASP affiche les données OLAP à partir d’une chaîne de requête MDX et écrit l’ensemble de cellules résultant dans une structure de table HTML.  

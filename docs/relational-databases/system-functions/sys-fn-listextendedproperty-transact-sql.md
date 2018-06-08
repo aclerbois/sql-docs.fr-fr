@@ -1,16 +1,14 @@
 ---
 title: Sys.fn_listextendedproperty (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - fn_listextendedproperty
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - extended properties [SQL Server], columns
 - table extended properties [SQL Server]
 ms.assetid: 59bbb91f-a277-4a35-803e-dcb91e847a49
-caps.latest.revision: 
+caps.latest.revision: 32
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c4c9daa724fd73ab9a1da7e4f8d7bf1c510a34d7
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3484c32c00c5f94f084cd5c0e49837181054df40
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfnlistextendedproperty-transact-sql"></a>sys.fn_listextendedproperty (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -66,7 +64,7 @@ fn_listextendedproperty (
  {valeur par défaut | '*property_name*' | NULL}  
  Est le nom de la propriété. *property_name* est **sysname**. Les entrées autorisées sont les valeurs par défaut, NULL, ou un nom de propriété.  
   
- { default | '*level0_object_type*' | NULL}  
+ {valeur par défaut | '*level0_object_type*' | NULL}  
  Type défini par l'utilisateur ou utilisateur. *level0_object_type* est **varchar (128)**, avec NULL comme valeur par défaut. Les entrées valides sont ASSEMBLY, CONTRACT, EVENT NOTIFICATION, FILEGROUP, MESSAGE TYPE, PARTITION FUNCTION, PARTITION SCHEME, REMOTE SERVICE BINDING, ROUTE, SCHEMA, SERVICE, USER, TRIGGER, TYPE, et NULL.  
   
 > [!IMPORTANT]  
@@ -75,7 +73,7 @@ fn_listextendedproperty (
  {valeur par défaut | '*level0_object_name*' | NULL}  
  Nom du type d'objet de niveau 0 spécifié. *level0_object_name* est **sysname** avec NULL comme valeur par défaut. Les entrées autorisées sont les valeurs par défaut, NULL, ou un nom d'objet.  
   
- { default | '*level1_object_type*' | NULL }  
+ {valeur par défaut | '*level1_object_type*' | NULL}  
  Type d'objet de niveau 1. *level1_object_type* est **varchar (128)** avec NULL comme valeur par défaut. Les entrées valides sont AGGREGATE, DEFAULT, FUNCTION, LOGICAL FILE NAME, PROCEDURE, QUEUE, RULE, SYNONYM, TABLE, TYPE, VIEW, XML SCHEMA COLLECTION et NULL.  
   
 > [!NOTE]  
@@ -84,7 +82,7 @@ fn_listextendedproperty (
  {valeur par défaut | '*level1_object_name*' | NULL}  
  Nom du type d'objet de niveau 1 spécifié. *level1_object_name* est **sysname** avec NULL comme valeur par défaut. Les entrées autorisées sont les valeurs par défaut, NULL, ou un nom d'objet.  
   
- { default | '*level2_object_type*' |NULL }  
+ {valeur par défaut | '*level2_object_type*' | NULL}  
  Type d'objet de niveau 2. *level2_object_type* est **varchar (128)** avec NULL comme valeur par défaut. Les entrées valides sont DEFAULT, la valeur par défaut (qui correspond à la valeur NULL) et NULL. Les entrées valides pour *level2_object_type* sont des colonnes, contrainte, EVENT NOTIFICATION, INDEX, paramètre, TRIGGER et NULL.  
   
  {valeur par défaut | '*level2_object_name*' | NULL}  
@@ -187,6 +185,6 @@ GO
  [sp_addextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-addextendedproperty-transact-sql.md)   
  [sp_dropextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-dropextendedproperty-transact-sql.md)   
  [sp_updateextendedproperty &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-updateextendedproperty-transact-sql.md)   
- [sys.extended_properties &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/extended-properties-catalog-views-sys-extended-properties.md)  
+ [Sys.extended_properties &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/extended-properties-catalog-views-sys-extended-properties.md)  
   
   

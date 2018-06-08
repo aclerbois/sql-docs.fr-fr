@@ -1,28 +1,26 @@
 ---
 title: Commande INDEX | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: index command [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- index command [ODBC]
 ms.assetid: 694e8cf5-2f69-4001-9c1e-b735a4da3aff
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e1a3cd65cf38079a6d6c23cd08f371841a0463f5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 555cccdbeae2b70b18616b6c81a79ff84e230f4a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="index-command"></a>Commande INDEX
 Crée un fichier d’index pour afficher et accéder aux enregistrements de la table dans un ordre logique.  
@@ -95,7 +93,7 @@ INDEX ON eExpression TO IDXFileName | TAG TagName [OF CDXFileName]
  ADDITIF  
  Conserve ouvre tous les fichiers d’index précédemment ouverts. Si vous omettez la clause additif lorsque vous créez un fichier d’index ou des fichiers pour une table avec INDEX, tous les fichiers (à l’exception de l’index composé structurelle) index précédemment ouverts sont fermés.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Enregistrements dans une table qui comporte un fichier d’index sont affichés et accessibles dans l’ordre spécifié par l’expression d’index. L’ordre physique des enregistrements dans la table n’est pas remplacé par un fichier d’index.  
   
 ## <a name="index-types"></a>Types d’index  

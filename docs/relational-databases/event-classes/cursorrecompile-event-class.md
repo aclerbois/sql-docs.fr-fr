@@ -1,34 +1,30 @@
 ---
-title: "CursorRecompile, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: CursorRecompile, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CursorRecompile event class
 ms.assetid: ab351c50-eed4-493a-87ed-89ec10933477
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c0ee637a8fa29bb999ca30d30e5626b199103fa2
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: bf49f312185cc1907bced1a79c051def0539afa0
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="cursorrecompile-event-class"></a>CursorRecompile (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **CursorRecompile** décrit les événements de recompilation de curseur qui interviennent dans les curseurs de l’API. Les événements de recompilation de curseur surviennent lorsque le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] recompile un curseur Transact-SQL suite à une modification de schéma.  
+  La classe d’événements **CursorRecompile** décrit les événements de recompilation de curseur qui interviennent dans les curseurs de l’API. Les événements de recompilation de curseur surviennent lorsque le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssDE](../../includes/ssde-md.md)] recompile un curseur Transact-SQL suite à une modification de schéma.  
   
  Incluez la classe d’événements **CursorRecompile** dans les traces qui enregistrent les performances des curseurs. Lorsque la classe d’événements **CursorRecompile** est incluse dans une trace, la quantité de surcharge induite dépend de la fréquence d’utilisation des curseurs sur la base de données pendant le suivi. Si les curseurs sont fortement utilisés, la trace peut dégrader notablement les performances.  
   

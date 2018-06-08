@@ -1,36 +1,37 @@
 ---
-title: Utilitaire sqlps | Documents Microsoft
-ms.custom: 
+title: Utilitaire sqlps | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: sqlps
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - sqlps utility
 - PowerShell [SQL Server], sqlps utility
 ms.assetid: 4b2515a6-12c3-44fb-b263-1c567681cd2b
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: bd4e67397b52b3e7248ce061312517841eef38e5
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 3f6a9e7c98535e21057a3d1213c7572d8826d42b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlps-utility"></a>sqlps (utilitaire)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]Le **sqlps** utilitaire démarre une session Windows PowerShell avec le [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] fournisseur PowerShell et les applets de commande chargés et inscrits. Vous pouvez entrer des scripts ou des commandes PowerShell qui utilisent les composants [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] PowerShell pour travailler avec des instances de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] et leurs objets.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  L’utilitaire **sqlps** démarre une session Windows PowerShell avec le fournisseur PowerShell [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] et les applets de commande chargés et inscrits. Vous pouvez entrer des scripts ou des commandes PowerShell qui utilisent les composants [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] PowerShell pour travailler avec des instances de [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] et leurs objets.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureAvoid](../includes/ssnotedepfutureavoid-md.md)]Utilisez le **sqlps** module PowerShell à la place. Pour plus d’informations sur le module **sqlps** , consultez [Import the SQLPS Module](../relational-databases/scripting/import-the-sqlps-module.md).  
+>  [!INCLUDE[ssNoteDepFutureAvoid](../includes/ssnotedepfutureavoid-md.md)] Utilisez à la place le module PowerShell **sqlps**. Pour plus d’informations sur le module **sqlps** , consultez [Import the SQLPS Module](../relational-databases/scripting/import-the-sqlps-module.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -72,15 +73,15 @@ sqlps
  **-Command-** spécifie que l’utilitaire **sqlps** doit lire l’entrée à partir de l’entrée standard.  
   
  *script_block* [ **-args***argument_array* ]  
- Spécifie un bloc de commandes PowerShell à exécuter ; le bloc doit être placé entre accolades : {}. *Script_block* peut uniquement être spécifié quand l’utilitaire **sqlps** est appelé depuis **PowerShell** ou une autre session de l’utilitaire **sqlps** . *argument_array* est un tableau de variables PowerShell contenant les arguments pour les commandes PowerShell de *script_block*.  
+ Spécifie un bloc de commandes PowerShell à exécuter ; le bloc doit être placé entre des accolades : {}. *Script_block* peut uniquement être spécifié quand l’utilitaire **sqlps** est appelé depuis **PowerShell** ou une autre session de l’utilitaire **sqlps** . *argument_array* est un tableau de variables PowerShell contenant les arguments pour les commandes PowerShell de *script_block*.  
   
  *string* [ *command_parameters* ]  
- Spécifie une chaîne qui contient les commandes PowerShell à exécuter. Utilisez le format **« & {***commande***} »**. Les guillemets indiquent une chaîne et l’opérateur d’appel (&) entraîne l’exécution de la commande par l’utilitaire **sqlps**.  
+ Spécifie une chaîne qui contient les commandes PowerShell à exécuter. Utilisez le format **"&{***command***}"**. Les guillemets indiquent une chaîne et l’opérateur d’appel (&) entraîne l’exécution de la commande par l’utilitaire **sqlps**.  
   
  [ **-?** | **-Help** ]  
  Affiche le résumé de la syntaxe des options de l’utilitaire **sqlps** .  
   
-## <a name="remarks"></a>Notes  
+## <a name="remarks"></a>Notes   
  L’utilitaire **sqlps** démarre l’environnement PowerShell (PowerShell.exe) et charge le module [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] PowerShell. Le module, également nommé **sqlps**, charge et inscrit ces composants logiciels enfichables [!INCLUDE[ssNoVersion](../includes/ssnoversion-md.md)] PowerShell :  
   
 -   Microsoft.SqlServer.Management.PSProvider.dll  
@@ -106,25 +107,25 @@ sqlps
  La version de l’utilitaire **sqlps** dans [!INCLUDE[ssKatmai](../includes/sskatmai-md.md)] et [!INCLUDE[ssKilimanjaro](../includes/sskilimanjaro-md.md)] a été implémentée en tant que mini-shell Windows PowerShell 1.0. Les mini-shells comportent certaines restrictions, comme le fait de ne pas autoriser les utilisateurs à charger des composants logiciels enfichables autres que ceux chargés par le mini-shell. Ces restrictions ne s'appliquent pas à la version [!INCLUDE[ssSQL11](../includes/sssql11-md.md)] et aux versions ultérieures de l'utilitaire, qui ont été modifiées pour utiliser le module **sqlps** .  
   
 ## <a name="examples"></a>Exemples  
- **A. Exécutez l’utilitaire sqlps en la valeur par défaut, le mode interactif sans bannière de copyright**  
+ **A. Exécuter l’utilitaire sqlps en mode interactif par défaut, sans bannière de copyright**  
   
 ```  
 sqlps -NoLogo  
 ```  
   
- **B. Exécuter un script PowerShell SQL Server à partir de l’invite de commandes**  
+ **B. Exécuter un script SQL Server PowerShell à partir de l’invite de commandes**  
   
 ```  
 sqlps -Command "&{.\MyFolder.MyScript.ps1}"  
 ```  
   
- **C. Exécuter un script PowerShell SQL Server à partir de l’invite de commandes et poursuite de l’exécution une fois le script terminé**  
+ **C. Exécuter un script SQL Server PowerShell à partir de l’invite de commandes et poursuivre l’exécution une fois le script terminé**  
   
 ```  
 sqlps -NoExit -Command "&{.\MyFolder.MyScript.ps1}"  
 ```  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Activer ou désactiver un protocole réseau de serveur](../database-engine/configure-windows/enable-or-disable-a-server-network-protocol.md)   
  [SQL Server PowerShell](../relational-databases/scripting/sql-server-powershell.md)  
   

@@ -1,31 +1,23 @@
 ---
-title: "Planifier des tâches administratives SSAS avec SQL Server Agent | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 2d1484b3-51d9-48a0-93d2-0c3e4ed22b87
-caps.latest.revision: 
-author: Minewiskan
+title: Planifier des tâches administratives SSAS avec SQL Server Agent | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: d8872cadbcbd7da67212fa26417ac66debc5f79c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: f0a8525196bacff6d0bf75b28a17c154a6eb919a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="schedule-ssas-administrative-tasks-with-sql-server-agent"></a>Planifier des tâches administratives SSAS avec SQL Server Agent
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Le service SQL Server Agent vous permet de planifier des tâches administratives [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] à exécuter dans l’ordre et au moment que vous précisez. Les tâches planifiées vous aident à automatiser les processus qui s’exécutent selon des cycles réguliers ou prévisibles. Vous pouvez planifier l'exécution de tâches administratives, telles que le traitement de cubes, durant les périodes de faible activité. Vous pouvez également déterminer l'ordre dans lequel les tâches s'exécutent en créant des étapes de travail au sein d'un travail de l'Agent SQL Server. Par exemple, vous pouvez traiter un cube, puis effectuer une sauvegarde de ce cube.  
+  Le service SQL Server Agent vous permet de planifier des tâches administratives [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] à exécuter dans l’ordre et au moment que vous précisez. Les tâches planifiées vous aident à automatiser les processus qui s’exécutent selon des cycles réguliers ou prévisibles. Vous pouvez planifier l'exécution de tâches administratives, telles que le traitement de cubes, durant les périodes de faible activité. Vous pouvez également déterminer l'ordre dans lequel les tâches s'exécutent en créant des étapes de travail au sein d'un travail de l'Agent SQL Server. Par exemple, vous pouvez traiter un cube, puis effectuer une sauvegarde de ce cube.  
   
  Les étapes de travail vous permettent de contrôler le flux d'exécution. Si un travail échoue, vous pouvez configurer l'Agent SQL Server de sorte qu'il continue d'exécuter les tâches restantes ou qu'il arrête l'exécution. Vous pouvez également configurer SQL Server Agent de sorte qu'il envoie des notifications concernant le succès ou l'échec de l'exécution d'un travail.  
   
@@ -229,6 +221,6 @@ Le service SQL Server Agent vous permet de planifier des tâches administratives
 16. Lorsque le travail est terminé, cliquez sur **Fermer**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Options de traitement et les paramètres &#40; Analysis Services &#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md)   
+ [Options et paramètres de traitement &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-options-and-settings-analysis-services.md)   
   
   

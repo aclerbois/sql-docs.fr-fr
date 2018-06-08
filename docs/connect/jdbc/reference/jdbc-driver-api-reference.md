@@ -1,28 +1,24 @@
 ---
-title: "Référence d’API du pilote JDBC | Documents Microsoft"
-ms.custom: 
+title: Référence d’API du pilote JDBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e4e1ae9d-18a6-41db-8bd2-9cf0eee4cccb
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9b1083f7807caef852a3ed44991ba7b21109f086
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+manager: craigg
+ms.openlocfilehash: 2b9dc05cfa6e96fc3dd987095917a932883df4e2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jdbc-driver-api-reference"></a>Référence de l'API du pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

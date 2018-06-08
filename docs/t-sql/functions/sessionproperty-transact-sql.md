@@ -1,16 +1,14 @@
 ---
 title: SESSIONPROPERTY (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SESSIONPROPERTY
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - SESSIONPROPERTY function
 - sessions [SQL Server], SET options settings
 ms.assetid: 1f3730b4-1495-4d3a-af43-e57952812df9
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 72a7770b39b985f9e438743e24f8b4c7a076572f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 682ed62332c2fcc2e70c77fa75ac43b7249c3cac
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sessionproperty-transact-sql"></a>SESSIONPROPERTY (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -53,13 +50,13 @@ SESSIONPROPERTY (option)
   
 |Option|Description|  
 |------------|-----------------|  
-|ANSI_NULLS|Indique si la conformité à la norme ISO est appliquée ou non en ce qui concerne le comportement des opérateurs d'égalité (=) et de différence (<>) avec des valeurs nulles.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|ANSI_PADDING|Contrôle le mode de stockage par la colonne des valeurs dont la longueur est inférieure à la taille définie pour la colonne, et des espaces de fin dans les données de type caractère et binaire.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|ANSI_WARNINGS|Indique si la conformité à la norme ISO est appliquée ou non dans les messages d'erreur ou les avertissements relatifs à certaines conditions, notamment la division par zéro et le dépassement arithmétique.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|ARITHABORT|Détermine la fin ou non de la requête lorsqu'un dépassement arithmétique ou une division par zéro se produit durant son exécution.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|CONCAT_NULL_YIELDS_ NULL|Détermine si les résultats de concaténation sont considérés comme des valeurs nulles ou des chaînes vides.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|NUMERIC_ROUNDABORT|Indique si un message d'erreur ou un avertissement doit être généré lorsqu'un arrondi effectué dans une expression entraîne une perte de précision.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
-|QUOTED_IDENTIFIER|Indique si les règles ISO relatives à l'utilisation des guillemets pour délimiter les identificateurs et les chaînes littérales doivent être appliquées.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|ANSI_NULLS|Indique si la conformité à la norme ISO est appliquée ou non en ce qui concerne le comportement des opérateurs d'égalité (=) et de différence (<>) avec des valeurs nulles.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|ANSI_PADDING|Contrôle le mode de stockage par la colonne des valeurs dont la longueur est inférieure à la taille définie pour la colonne, et des espaces de fin dans les données de type caractère et binaire.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|ANSI_WARNINGS|Indique si la conformité à la norme ISO est appliquée ou non dans les messages d'erreur ou les avertissements relatifs à certaines conditions, notamment la division par zéro et le dépassement arithmétique.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|ARITHABORT|Détermine la fin ou non de la requête lorsqu'un dépassement arithmétique ou une division par zéro se produit durant son exécution.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|CONCAT_NULL_YIELDS_ NULL|Détermine si les résultats de concaténation sont considérés comme des valeurs nulles ou des chaînes vides.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|NUMERIC_ROUNDABORT|Indique si un message d'erreur ou un avertissement doit être généré lorsqu'un arrondi effectué dans une expression entraîne une perte de précision.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
+|QUOTED_IDENTIFIER|Indique si les règles ISO relatives à l'utilisation des guillemets pour délimiter les identificateurs et les chaînes littérales doivent être appliquées.<br /><br /> 1 = activé<br /><br /> 0 = désactivé|  
 |\<Toute autre chaîne>|NULL = Entrée non valide.|  
   
 ## <a name="return-types"></a>Types de retour  

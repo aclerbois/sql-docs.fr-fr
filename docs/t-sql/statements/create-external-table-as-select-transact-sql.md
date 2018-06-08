@@ -1,17 +1,16 @@
 ---
 title: CREATE EXTERNAL TABLE AS SELECT (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/10/2017
-ms.prod: 
+ms.prod: ''
 ms.prod_service: sql-data-warehouse, pdw
-ms.reviewer: 
+ms.reviewer: ''
 ms.service: sql-data-warehouse
 ms.component: t-sql|statements
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - CREATE EXTERNAL TABLE AS SELECT
 - CREATE_EXTERNAL_TABLE_AS_SELECT
@@ -22,33 +21,21 @@ helpviewer_keywords:
 - External, table create as select
 - PolyBase, create table as select
 ms.assetid: 32dfe254-6df7-4437-bfd6-ca7d37557b0a
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 16
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f2ca379cf30fe2e7d359a294a18804f0b5e6faeb
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || = sqlallproducts-allversions'
+ms.openlocfilehash: 3d61d87f1e19088d7f667029bdaaf935d150dc88
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-external-table-as-select-transact-sql"></a>CREATE EXTERNAL TABLE AS SELECT (Transact-SQL)
 [!INCLUDE[tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-xxxxxx-xxxx-asdw-pdw-md.md)]
 
   Crée une table externe, puis exporte en parallèle les résultats d’une instruction SELECT [!INCLUDE[tsql](../../includes/tsql-md.md)] vers Hadoop ou Azure Storage Blob.  
-  
- Utilisez l’instruction CREATE EXTERNAL TABLE AS SELECT (CETAS) pour :  
-  
--   Exporter des données vers Hadoop ou Azure Blob Storage  
-  
--   Importer des données à partir de Hadoop ou d’Azure Blob Storage, et les stocker dans la base de données  
-  
--   Interroger des données dans Hadoop ou Azure Blob Storage, les joindre à des tables relationnelles de base de données, et écrire les résultats dans Hadoop ou Azure Blob Storage  
-  
--   Interroger des données dans Hadoop ou Azure Blob Storage, les transformer à l’aide des fonctionnalités de traitement rapide de la base de données, et les réécrire dans Hadoop ou Azure Blob Storage  
-  
- Pour plus d’informations, consultez [Prise en main de PolyBase](../../relational-databases/polybase/get-started-with-polybase.md).  
   
  ![Icône Lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône Lien de rubrique") [Conventions de la syntaxe Transact-SQL &#40;Transact-SQL&#41;](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   

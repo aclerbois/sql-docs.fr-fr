@@ -1,31 +1,28 @@
 ---
-title: "Implémentation des pilotes de bureau de base de données | Documents Microsoft"
-ms.custom: 
+title: Implémentation des pilotes de bureau de base de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], implementing
 - ODBC desktop database drivers [ODBC], implementing
 - desktop database drivers [ODBC], implementing
 ms.assetid: a8bf304b-eff1-447c-887c-dabdb5353a2d
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3994ed86f488748f3edd569ad80979d9871f588f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4de328f3185597a81fa7a61ce2d23a5e5f0bf1c7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="implementing-desktop-database-drivers"></a>Implémentation des pilotes de base de données de bureau
 Vous trouverez des instructions et notes techniques sur la façon d’implémenter et configurer les pilotes de base de données Microsoft ODBC Desktop dans l’aide en ligne d’administrateur de sources de données ODBC. Ce fichier est accessible au cours des routines d’installation de pilotes à partir de la [administrateur de Source de données ODBC Microsoft](../../odbc/admin/odbc-data-source-administrator.md).  

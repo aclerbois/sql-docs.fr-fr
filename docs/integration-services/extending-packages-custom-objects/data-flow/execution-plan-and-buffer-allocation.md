@@ -1,15 +1,14 @@
 ---
-title: "Plan d’exécution et allocation de mémoire tampon | Microsoft Docs"
-ms.custom: 
+title: Plan d’exécution et allocation de mémoire tampon | Microsoft Docs
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-custom-objects
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -24,26 +23,25 @@ helpviewer_keywords:
 - data flow components [Integration Services], execution plans
 - execution plans [Integration Services]
 ms.assetid: 679d9ff0-641e-47c3-abb8-d1a7dcb279dd
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 80531a48b65578c296d79318735e60d7fb203840
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 65c540fec5a19b8c99057b56b83f12c8b49d1ac3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="execution-plan-and-buffer-allocation"></a>Plan d'exécution et allocation de mémoire tampon
   Avant l'exécution, la tâche de flux de données examine ses composants et génère un plan d'exécution pour chaque séquence de composants. Cette section fournit des détails sur le plan d'exécution et son mode d'affichage, ainsi que sur l'allocation de mémoires tampons d'entrée et de sortie en fonction du plan d'exécution.  
   
 ## <a name="understanding-the-execution-plan"></a>Fonctionnement du plan d'exécution  
- Un plan d'exécution contient des threads sources et des threads de travail. Chaque thread contient des listes de travaux qui spécifient des listes de travaux de sortie pour les threads sources ou des listes de travaux d'entrée et de sortie pour les threads de travail. Les threads sources d’un plan d’exécution, qui représentent les composants sources du flux de données, sont identifiés dans le plan d’exécution par *SourceThread**n*, où *n* correspond au numéro de base zéro du thread source.  
+ Un plan d'exécution contient des threads sources et des threads de travail. Chaque thread contient des listes de travaux qui spécifient des listes de travaux de sortie pour les threads sources ou des listes de travaux d'entrée et de sortie pour les threads de travail. Les threads sources d’un plan d’exécution, qui représentent les composants sources du flux de données, sont identifiés dans le plan d’exécution par *SourceThread**n*, où *n* correspond au numéro (commençant à zéro) du thread source.  
   
  Chaque thread source crée une mémoire tampon, définit un écouteur et appelle la méthode <xref:Microsoft.SqlServer.Dts.Pipeline.PipelineComponent.PrimeOutput%2A> sur le composant source. C'est de cet emplacement que démarre l'exécution et que proviennent les données, pendant que le composant source commence à ajouter des lignes aux mémoires tampons de sortie que lui fournit la tâche de flux de données. Une fois que les threads sources sont exécutés, la charge de travail est répartie entre les threads de travail.  
   
- Un thread de travail, qui peut contenir des listes de travaux d’entrée et de sortie, est identifié dans le plan d’exécution par *WorkThread**n*, où *n* correspond au numéro de base zéro du thread de travail. Ces threads contiennent des listes de travaux de sortie lorsque le graphique contient un composant à sorties asynchrones.  
+ Un thread de travail, qui peut contenir des listes de travaux d’entrée et de sortie, est identifié dans le plan d’exécution par *WorkThread**n*, où *n* correspond au numéro (commençant à zéro) du thread de travail. Ces threads contiennent des listes de travaux de sortie lorsque le graphique contient un composant à sorties asynchrones.  
   
  L'exemple de plan d'exécution suivant représente un flux de données qui contient un composant source connecté à une transformation à sortie asynchrone connectée à un composant de destination. Dans cet exemple, WorkThread0 contient une liste des travaux de sortie car le composant de transformation possède une sortie asynchrone.  
   

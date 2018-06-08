@@ -1,35 +1,23 @@
 ---
-title: "Ajouter des modèles d’exploration de données à une Structure (Analysis Services - Exploration de données) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- mining structures [Analysis Services], creating
-- mining models [Analysis Services], creating
-- mining models [Analysis Services], modifying
-ms.assetid: a175daa5-58ea-474c-a82f-9648c5155dc8
-caps.latest.revision: 
-author: Minewiskan
+title: Ajouter des modèles d’exploration de données à une Structure (Analysis Services - Exploration de données) | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 42ae87b14d6ddff90b78bb3c23a7d536750d8317
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c32140e639a0e79b8736036392104f593a305b30
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="add-mining-models-to-a-structure-analysis-services---data-mining"></a>Ajouter des modèles d'exploration de données à une structure (Analysis Services - Exploration de données)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une structure d'exploration de données est destinée à prendre en charge plusieurs modèles d'exploration de données. Par conséquent, une fois l'exécution de l'Assistant terminée, vous pouvez ouvrir la structure et ajouter de nouveaux modèles d'exploration de données. Chaque fois que vous créez un modèle, vous pouvez utiliser un algorithme différent, modifier les paramètres, ou appliquer des filtres pour utiliser un autre sous-ensemble des données.  
+  Une structure d'exploration de données est destinée à prendre en charge plusieurs modèles d'exploration de données. Par conséquent, une fois l'exécution de l'Assistant terminée, vous pouvez ouvrir la structure et ajouter de nouveaux modèles d'exploration de données. Chaque fois que vous créez un modèle, vous pouvez utiliser un algorithme différent, modifier les paramètres, ou appliquer des filtres pour utiliser un autre sous-ensemble des données.  
   
 ## <a name="adding-new-mining-models"></a>Ajout de nouveaux modèles d'exploration de données  
  Lorsque vous utilisez l'Assistant Exploration de données pour créer un nouveau modèle d'exploration de données, par défaut, vous devez toujours d'abord créer une structure d'exploration de données. L'Assistant vous donne ensuite la possibilité d'ajouter un modèle d'exploration de données initial à la structure. Toutefois, vous n'êtes pas obligé de créer un modèle immédiatement après. Si vous créez uniquement la structure, vous n'avez pas besoin de prendre de décision concernant la colonne à utiliser comme attribut prédictible ou la façon d'utiliser les données dans un modèle particulier. Il vous suffit de définir la structure de données générale que vous souhaitez utiliser ultérieurement. Par la suite, vous pouvez utiliser le [Concepteur d’exploration de données](../../analysis-services/data-mining/data-mining-designer.md) pour ajouter de nouveaux modèles d’exploration de données basés sur la structure.  
@@ -65,7 +53,7 @@ Une structure d'exploration de données est destinée à prendre en charge plusi
  Pour certaines colonnes, vous devrez peut-être spécifier le *contenu de colonne*. Dans l'exploration de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , la propriété Type de contenu de chaque colonne de données indique à l'algorithme comment il doit traiter les données dans cette colonne. Par exemple, si vos données ont une colonne Income, vous devez spécifier que la colonne contient des nombres continus en définissant Continu comme type de contenu. Vous pouvez aussi spécifier que les nombres dans la colonne Revenu doivent être regroupés dans des compartiments en attribuant au contenu le type Discrétisé et en indiquant éventuellement le nombre exact de compartiments. Vous pouvez créer des modèles distincts qui gèrent les colonnes différemment : par exemple, vous pouvez faire des essais avec un modèle qui répartit les clients en trois groupes d'âge et un autre modèle qui répartit les clients en dix groupes d'âge.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
  [Créer une Structure d’exploration de données relationnelles](../../analysis-services/data-mining/create-a-relational-mining-structure.md)   
  [Propriétés du modèle d’exploration de données](../../analysis-services/data-mining/mining-model-properties.md)   
  [Colonnes du modèle d’exploration de données](../../analysis-services/data-mining/mining-model-columns.md)  

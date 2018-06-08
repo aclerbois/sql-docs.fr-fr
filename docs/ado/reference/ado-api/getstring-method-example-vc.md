@@ -1,32 +1,29 @@
 ---
-title: "Exemple de méthode GetString (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de méthode GetString (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - GetString method [ADO], VC++ example
 ms.assetid: 4daa93aa-9727-4d1c-886a-e9d22017a1ea
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5ccc57c2dbaf1c1cbeead9a3fc9d8b8dfd89dbbd
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 5743aff49b884f16f5b9a3de9fc4a56bcf0f0fb3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getstring-method-example-vc"></a>Exemple de méthode GetString (VC ++)
 Cet exemple illustre la [GetString](../../../ado/reference/ado-api/getstring-method-ado.md) (méthode).  

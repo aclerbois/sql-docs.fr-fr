@@ -1,31 +1,28 @@
 ---
-title: "Niveau 1 Interface conformité | Documents Microsoft"
-ms.custom: 
+title: Niveau 1 Interface conformité | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interface conformance levels [ODBC]
 - conformance levels [ODBC], interface
 - level 1 interface conformance levels [ODBC]
 ms.assetid: ee3f5c08-0583-4f3b-8354-ef71b6086a7e
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3889b64da6484b7aac8adfb0b643467fc716e560
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3c6db2e0c1ba8b0d9a1f0663353e92e688cba586
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="level-1-interface-conformance"></a>Conformité d’Interface de niveau 1
 Niveau de conformité de l’interface de niveau 1 inclut les fonctionnalités au niveau de la mise en conformité Core interface ainsi que des fonctionnalités supplémentaires, telles que les transactions, qui sont généralement disponibles dans un SGBD OLTP. Un pilote d’interface conforme de niveau 1 permet à l’application effectuer les opérations suivantes, en plus des fonctionnalités dans le niveau de conformité de l’interface Core :  

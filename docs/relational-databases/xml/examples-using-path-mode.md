@@ -1,34 +1,32 @@
 ---
-title: "Exemples : utilisation du mode PATH | Microsoft Docs"
-ms.custom: 
+title: 'Exemples : utilisation du mode PATH | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: xml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xml
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - PATH FOR XML mode, examples
 ms.assetid: 3564e13b-9b97-49ef-8cf9-6a78677b09a3
-caps.latest.revision: 
+caps.latest.revision: 11
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: e5ea920b52ae42011da3810d4cf2f20e296b8ff9
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 285bdb7031d205cb30b0ee76560a9ee9b00f5fb4
+ms.sourcegitcommit: 6fe7b5e8818bd0d94fce693c560d63cc6883d76f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34758079"
 ---
 # <a name="examples-using-path-mode"></a>Exemples : utilisation du mode PATH
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
-Les exemples suivants montrent comment utiliser le mode PATH pour générer un document XML à partir d'une requête SELECT. Nombre de ces requêtes sont spécifiées par rapport aux documents XML des instructions de fabrication de bicyclettes stockés dans la colonne Instructions de la table ProductModel.  
+  Les exemples suivants montrent comment utiliser le mode PATH pour générer un document XML à partir d'une requête SELECT. Nombre de ces requêtes sont spécifiées par rapport aux documents XML des instructions de fabrication de bicyclettes stockés dans la colonne Instructions de la table ProductModel.  
   
 ## <a name="specifying-a-simple-path-mode-query"></a>Spécification d'une requête simple en mode PATH  
  Cette requête spécifie un mode FOR XML PATH.  
@@ -303,17 +301,17 @@ GO
 USE AdventureWorks2012;  
 GO  
 SELECT ProductModelID     AS "@ProductModelID",  
-       Name               S "@ProductModelName",  
+       Name               AS "@ProductModelName",  
       (SELECT ProductID AS "data()"  
        FROM   Production.Product  
        WHERE  Production.Product.ProductModelID =   
               Production.ProductModel.ProductModelID  
-       FOR XML PATH ('')) S "@ProductIDs",  
+       FOR XML PATH ('')) AS "@ProductIDs",  
        (SELECT Name AS "ProductName"  
        FROM   Production.Product  
        WHERE  Production.Product.ProductModelID =   
               Production.ProductModel.ProductModelID  
-        FOR XML PATH ('')) as "ProductNames"  
+        FOR XML PATH ('')) AS "ProductNames"  
 FROM   Production.ProductModel  
 WHERE  ProductModelID= 7 or ProductModelID=9  
 FOR XML PATH('ProductModelData');  

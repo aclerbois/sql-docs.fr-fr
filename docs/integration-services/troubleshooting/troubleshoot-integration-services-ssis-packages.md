@@ -1,28 +1,26 @@
 ---
-title: "Résoudre les problèmes des packages Integration Services (SSIS) | Microsoft Docs"
-ms.custom: 
+title: Résoudre les problèmes des packages Integration Services (SSIS) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: troubleshooting
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ce2c0b78-e1f1-409a-9f4c-f90027c70c07
-caps.latest.revision: 
+caps.latest.revision: 2
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fa3730cf3f54dc1977c7c5db1347c9eb27824bdd
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: e6a7153b1bb19e3e14d3c94cf079b7e914280163
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="troubleshoot-integration-services-ssis-packages"></a>Résoudre les problèmes des packages Integration Services (SSIS)
 ## <a name="in-this-section"></a>Contenu de cette section

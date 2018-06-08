@@ -1,32 +1,33 @@
 ---
 title: Fonction de ConfigDriver | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: ConfigDriver
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- ConfigDriver
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: ConfigDriver
-helpviewer_keywords: ConfigDriver [ODBC]
+f1_keywords:
+- ConfigDriver
+helpviewer_keywords:
+- ConfigDriver [ODBC]
 ms.assetid: 9473f48f-bcae-4784-89c1-7839bad4ed13
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1697b7e697760afee2b62c49bd24c2ab22c9201d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 100cf1cc68287c2eb5914176cb307f9a450344d8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="configdriver-function"></a>ConfigDriver (fonction)
 **Mise en conformité**  
@@ -85,7 +86,7 @@ BOOL ConfigDriver(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **ConfigDriver** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur est validée dans la mémoire tampon erreur de programme d’installation par un appel à **SQLPostInstallerError** et peut être obtenu en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_INVALID_HWND|Handle de fenêtre non valide|Le *hwndParent* argument n’était pas valide.|  
 |ODBC_ERROR_INVALID_REQUEST_TYPE|Type de demande non valide|Le *fréquents* argument n’est pas une des opérations suivantes :<br /><br /> ODBC_INSTALL_DRIVER ODBC_REMOVE_DRIVER<br /><br /> L’option spécifiques au pilote était inférieur ou égal à ODBC_CONFIG_DRIVER_MAX.|  

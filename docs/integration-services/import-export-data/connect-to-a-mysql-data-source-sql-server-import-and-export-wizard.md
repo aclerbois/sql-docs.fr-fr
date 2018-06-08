@@ -1,28 +1,26 @@
 ---
-title: "Se connecter à une source de données MySQL (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Se connecter à une source de données MySQL (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/20/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3d7c5a38-18d3-4cc9-a241-04422cb250d3
-caps.latest.revision: 
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: d011a5b39f6aded3bc305c922b5d2788026559e2
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 7a21c4b78fdd7632e6e4b39a38c8f22bd3c2b84a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-a-mysql-data-source-sql-server-import-and-export-wizard"></a>Se connecter à une source de données MySQL (Assistant Importation et Exportation SQL Server)
 Cette rubrique explique comment se connecter à une source de données **MySQL** à partir de la page **Choisir une source de données** ou **Choisir une destination** de l’Assistant Importation et Exportation SQL Server. Vous pouvez utiliser plusieurs fournisseurs de données pour vous connecter à MySQL.

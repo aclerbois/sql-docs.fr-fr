@@ -1,31 +1,29 @@
 ---
 title: Didacticiels pour SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 10/31/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: a93667ad-e856-405a-9328-065331b7ab7b
-caps.latest.revision: "40"
+caps.latest.revision: 40
 author: craigg-msft
 ms.author: craigg
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: bc186af612e9ca8952a8adc16b3438c166a568a8
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: 954ab1ff985054fa0aebaa3aba0711cacd5b4a35
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorials-for-sql-server"></a>Didacticiels pour SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-[!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)] fournit des didacticiels qui vous aident à apprendre les nouvelles technologies et fonctionnalités. Les didacticiels pour les versions antérieures peuvent généralement être utilisés avec les versions plus récentes. Quand des didacticiels traitent d’une fonctionnalité plus récente, ils indiquent la version minimale nécessaire pour suivre le didacticiel.  
+[!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)] fournit des didacticiels pour vous aider à apprendre les nouvelles technologies et fonctionnalités. Les didacticiels pour les versions antérieures peuvent généralement être utilisés avec les versions plus récentes. Quand des didacticiels traitent d’une fonctionnalité plus récente, ils indiquent la version minimale nécessaire pour suivre le didacticiel.  
      
 -   Si un didacticiel utilise une des bases de données [!INCLUDE[ssSampleDBCoShort](../includes/sssampledbcoshort-md.md)], vous devez télécharger et utiliser la version la plus récente disponible auprès de CodePlex. Pour plus d’informations, consultez [Bases de données AdventureWorks et scripts pour SQL Server 2016 CTP3](https://www.microsoft.com/download/details.aspx?id=49502).    
 -   Téléchargez un classeur [!INCLUDE[ssGemini](../includes/ssgemini-md.md)] et des rapports [!INCLUDE[ssCrescent](../includes/sscrescent-md.md)] à utiliser avec des didacticiels sur [!INCLUDE[ssCrescent](../includes/sscrescent-md.md)] , accédez à [Exemples Power View pour SQL Server 2012](http://go.microsoft.com/fwlink/?LinkId=220734).  
@@ -53,3 +51,5 @@ ms.lasthandoff: 12/05/2017
  - [Didacticiels pour SQL Server 2008 R2](http://msdn.microsoft.com/library/ms167593.aspx)   
 
 [!INCLUDE[get-help-options](../includes/paragraph-content/get-help-options.md)]
+
+[!INCLUDE[contribute-to-content](../includes/paragraph-content/contribute-to-content.md)]

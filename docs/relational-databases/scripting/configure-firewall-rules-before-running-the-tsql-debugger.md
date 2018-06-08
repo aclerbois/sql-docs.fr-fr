@@ -1,17 +1,14 @@
 ---
-title: "Configurer des règles de pare-feu avant d’exécuter le débogueur TSQL | Microsoft Docs"
-ms.custom: 
+title: Configurer des règles de pare-feu avant d’exécuter le débogueur TSQL | Microsoft Docs
+ms.custom: ''
 ms.date: 10/20/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vs.debug.error.sqlde_register_failed
 - vs.debug.error.sqlde_accessdenied
@@ -24,19 +21,20 @@ helpviewer_keywords:
 - ports [SQL Server], Transact-SQL debugger
 - TCP/IP [SQL Server], port numbers
 ms.assetid: f50e0b0d-eaf0-4f4a-be83-96f5be63e7ea
-caps.latest.revision: 
+caps.latest.revision: 43
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1c1196f3195b1b54844a5420a8a9322265a1efa8
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: db859f697a40e6ee8135335ee7c16efb29e6584a
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="configure-firewall-rules-before-running-the-tsql-debugger"></a>Configurer des règles de pare-feu avant d’exécuter le débogueur TSQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous devez configurer des règles de Pare-feu Windows pour permettre le débogage [!INCLUDE[tsql](../../includes/tsql-md.md)] en cas de connexion à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] qui s’exécute sur un autre ordinateur que l’Éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Vous devez configurer des règles de Pare-feu Windows pour permettre le débogage [!INCLUDE[tsql](../../includes/tsql-md.md)] en cas de connexion à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] qui s'exécute sur un autre ordinateur que l'Éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] .  
   
 ## <a name="configuring-the-transact-sql-debugger"></a>Configuration du débogueur Transact-SQL  
  Le débogueur [!INCLUDE[tsql](../../includes/tsql-md.md)] inclut des composants côté serveur et côté client. Les composants du débogueur côté serveur sont installés avec chaque instance du moteur de base de données à partir de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)] Service Pack 2 (SP2) ou version ultérieure. Les composants côté client du débogueur sont inclus :  

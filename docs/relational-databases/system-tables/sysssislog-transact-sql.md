@@ -1,15 +1,13 @@
 ---
-title: sysssislog (Transact-SQL) | Microsoft Docs
+title: sysssislog (Transact-SQL) | Documents Microsoft
 ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: ''
 ms.component: system-tables
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
+ms.technology: system-objects
 ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysssislog system table
 ms.assetid: 7fa288a1-81e3-42a0-82f6-8a59019693d0
-caps.latest.revision: ''
+caps.latest.revision: 40
 author: douglasl
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2c6a199410c75df72c66498ffafb7c02aa4c5687
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: 0f60ec3735bc89c7e729ac6ec01e6f62f126c51f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysssislog-transact-sql"></a>sysssislog (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -56,6 +53,6 @@ ms.lasthandoff: 03/22/2018
 |message|**nvarchar**|Description de l'événement et des informations associées à l'événement.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Integration Services &#40; SSIS &#41; Journalisation](../../integration-services/performance/integration-services-ssis-logging.md)   
+ [Integration Services & #40 ; SSIS & #41 ; Journalisation](../../integration-services/performance/integration-services-ssis-logging.md)   
   
   

@@ -1,17 +1,16 @@
 ---
-title: "Fonctions déterministes et non déterministes | Microsoft Docs"
-ms.custom: 
+title: Fonctions déterministes et non déterministes | Microsoft Docs
+ms.custom: ''
 ms.date: 08/26/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: udf
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-udf
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - built-in functions [SQL Server]
 - nondeterministic functions
@@ -19,20 +18,20 @@ helpviewer_keywords:
 - deterministic functions
 - user-defined functions [SQL Server], deterministic
 ms.assetid: 2f3ce5f5-c81c-4470-8141-8144d4f218dd
-caps.latest.revision: 
+caps.latest.revision: 43
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0ed8857c6a48193a31aacf948efbcf3cedbf4db7
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 533a304f007b171a59fdd17ccd92c10662f69385
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deterministic-and-nondeterministic-functions"></a>Fonctions déterministes et non déterministes
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Les fonctions déterministes retournent toujours le même résultat quel que soit le moment auquel elles sont appelées avec un ensemble spécifique de valeurs d'entrée et sur la base du même état de la base de données. Les fonctions non déterministes peuvent retourner différents résultats chaque fois qu'elles sont appelées avec un ensemble spécifique de valeurs d'entrée, même si l'état de la base de données à laquelle elles accèdent demeure inchangé. Par exemple, la fonction AVG retourne toujours le même résultat pour les conditions ci-dessus, mais la fonction GETDATE, qui retourne la valeur datetime actuelle, retourne toujours un résultat différent.  
+  Les fonctions déterministes retournent toujours le même résultat quel que soit le moment auquel elles sont appelées avec un ensemble spécifique de valeurs d'entrée et sur la base du même état de la base de données. Les fonctions non déterministes peuvent retourner différents résultats chaque fois qu'elles sont appelées avec un ensemble spécifique de valeurs d'entrée, même si l'état de la base de données à laquelle elles accèdent demeure inchangé. Par exemple, la fonction AVG retourne toujours le même résultat pour les conditions ci-dessus, mais la fonction GETDATE, qui retourne la valeur datetime actuelle, retourne toujours un résultat différent.  
   
  Plusieurs propriétés de fonctions définies par l’utilisateur déterminent la possibilité pour le [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] d’indexer les résultats d’une fonction, par le biais d’index sur des colonnes calculées qui appellent la fonction, ou de vues indexées qui y font référence. Le déterminisme d'une fonction est l'une de ces propriétés. Par exemple, un index cluster ne peut pas être créé sur une vue si celle-ci fait référence à une fonction non déterministe. Pour plus d’informations sur les propriétés des fonctions, dont le déterminisme, consultez [Fonctions définies par l’utilisateur](../../relational-databases/user-defined-functions/user-defined-functions.md).  
   

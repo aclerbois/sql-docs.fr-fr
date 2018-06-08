@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLGetStmtOption | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetStmtOption
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetStmtOption
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetStmtOption
-helpviewer_keywords: SQLGetStmtOption function [ODBC]
+f1_keywords:
+- SQLGetStmtOption
+helpviewer_keywords:
+- SQLGetStmtOption function [ODBC]
 ms.assetid: d69c2668-4260-4722-8c34-1c51caac307f
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6fadcedf9134fbd7d71865145a469d374156a0c7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f39787ad990e55d92265e93d579b3f10c1b415b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetstmtoption-function"></a>SQLGetStmtOption (fonction)
 **Mise en conformité**  

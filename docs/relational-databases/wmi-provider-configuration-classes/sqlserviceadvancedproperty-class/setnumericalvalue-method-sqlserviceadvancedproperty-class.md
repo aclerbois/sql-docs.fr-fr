@@ -1,16 +1,15 @@
 ---
-title: "Méthode SetNumericalValue (classe SqlServiceAdvancedProperty) | Documents Microsoft"
-ms.custom: 
+title: Méthode SetNumericalValue (classe SqlServiceAdvancedProperty) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - SetNumericalValue Method (SqlServiceAdvancedProperty Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - SetNumericalValue method
 ms.assetid: 950ed1e8-0538-4db4-807c-a2c36f43cf6b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 334870de1a2e64c0d1633f8a8c6a375f32ef612e
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 1ef95e16766a98f45296a17af4f18f051b1a1076
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setnumericalvalue-method-sqlserviceadvancedproperty-class"></a>Méthode SetNumericalValue (classe SqlServiceAdvancedProperty)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

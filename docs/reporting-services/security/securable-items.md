@@ -1,32 +1,30 @@
 ---
-title: "Éléments sécurisables | Microsoft Docs"
-ms.custom: 
+title: Éléments sécurisables | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - securable items [Reporting Services]
 - roles [Reporting Services], securable items
 - security [Reporting Services], securable items listed
 - role-based security [Reporting Services], securable items
 ms.assetid: 27f58d4c-5c7b-4947-af5b-0f1fa60faf5f
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 5aa30529e45f4436d6e3d5b7a366993f5f9fa909
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: c6b95923b8ca5dfef2f6b98345ce914eeb11991e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="securable-items"></a>Éléments sécurisables
   [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] utilise la sécurité basée sur les rôles pour contrôler l’accès aux éléments stockés sur un serveur de rapports. Lorsque vous accordez à un utilisateur l'accès à un serveur de rapports, vous le faites en général en créant une paire d'attributions de rôle :  

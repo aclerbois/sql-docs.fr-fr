@@ -1,35 +1,33 @@
 ---
-title: "Gérer et surveiller la recherche en texte intégral pour une instance de serveur | Microsoft Docs"
-ms.custom: 
+title: Gérer et surveiller la recherche en texte intégral pour une instance de serveur | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - full-text search [SQL Server], about
 - full-text search [SQL Server], server management
 ms.assetid: 2733ed78-6d33-4bf9-94da-60c3141b87c8
-caps.latest.revision: 
+caps.latest.revision: 19
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e1dbd4fe6152e7318da0267d25c5900ec10c4814
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: d0930c0edee89ed0657c7da176fe0c1e6d3a6ac4
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="manage-and-monitor-full-text-search-for-a-server-instance"></a>Gérer et surveiller la recherche en texte intégral pour une instance de serveur
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-L'administration de la recherche en texte intégral pour une instance de serveur comprend :  
+  L'administration de la recherche en texte intégral pour une instance de serveur comprend :  
   
 -   Des tâches de gestion du système telles que la gestion du service du lanceur FDHOST (MSSQLFDLauncher), le redémarrage du processus hôte de démon de filtre si vous modifiez les informations d'identification du compte de service, la configuration des propriétés en texte intégral à l'échelle du serveur et la sauvegarde des catalogues de texte intégral. Au niveau du serveur, par exemple, vous pouvez spécifier une langue de texte intégral par défaut qui diffère de la langue par défaut de l'instance de serveur dans son ensemble.  
   

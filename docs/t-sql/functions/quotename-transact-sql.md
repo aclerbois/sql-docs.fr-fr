@@ -1,16 +1,14 @@
 ---
 title: QUOTENAME (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - QUOTENAME_TSQL
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - QUOTENAME function
 - valid identifiers [SQL Server]
 ms.assetid: 34d47f1e-2ac7-4890-8c9c-5f60f115e076
-caps.latest.revision: 
+caps.latest.revision: 35
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 701d229ae745cee4a237f35b69cd00e899d5c6a5
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 61a2da2f81701a32da0545a5b9b06b6e9ee8cd2c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="quotename-transact-sql"></a>QUOTENAME (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-all-md](../../includes/tsql-appliesto-ss2008-all-md.md)]
@@ -53,7 +51,7 @@ QUOTENAME ( 'character_string' [ , 'quote_character' ] )
  Représente une chaîne de caractères au format Unicode. *character_string* est de type **sysname** et est limité à 128 caractères. Les entrées de plus de 128 caractères retournent une valeur NULL.  
   
  '*quote_character*'  
- Représente une chaîne d'un seul caractère à utiliser en tant que délimiteur. Il peut s’agir d’une apostrophe ( **'**), d’un crochet droit ou gauche ( **[]**) ou d’un guillemet double ( **"**). Si *quote_character* n’est pas spécifié, les crochets sont utilisés.  
+ Représente une chaîne d'un seul caractère à utiliser en tant que délimiteur. Il peut s’agir d’une apostrophe (  **'**), d’un crochet droit ou gauche (  **[]**) ou d’un guillemet double (  **"**). Si *quote_character* n’est pas spécifié, les crochets sont utilisés.  
   
 ## <a name="return-types"></a>Types de retour  
  **nvarchar(258)**  

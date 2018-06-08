@@ -1,17 +1,16 @@
 ---
-title: "Interface utilisateur d’Integration Services | Microsoft Docs"
-ms.custom: 
+title: Interface utilisateur d’Integration Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Integration Services, SSIS Designer
 - tools [Integration Services], SSIS Designer
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - SSIS, SSIS Designer
 - Integration Services, SSIS Designer
 ms.assetid: d2c48cff-46f4-4c70-b1f3-c88f9b8757f3
-caps.latest.revision: 
+caps.latest.revision: 54
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: e20802025336f64affff827bac4a59fe25076057
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5b01efe6bb6e98aef009349175cd73a90353e4e9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-user-interface"></a>Interface utilisateur d'Integration Services
   En plus des surfaces de dessin disponibles sous les onglets du concepteur [!INCLUDE[ssIS](../includes/ssis-md.md)] , l'interface utilisateur donne accès aux fenêtres et boîtes de dialogue suivantes permettant d'ajouter des fonctionnalités aux packages et de configurer les propriétés d'objets de packages.  

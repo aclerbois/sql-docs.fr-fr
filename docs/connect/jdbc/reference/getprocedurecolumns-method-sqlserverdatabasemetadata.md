@@ -1,30 +1,29 @@
 ---
-title: "Méthode getProcedureColumns (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getProcedureColumns (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.getProcedureColumns
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.getProcedureColumns
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 4f0df8fe-3cd6-46e4-ae3c-dc23c35676b2
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 2d8fa1fbb84392dba636c8aa5649f45cd54e397d
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d323f4ba70e439eb5ec6ee1ec6178c8d8ec69dc1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getprocedurecolumns-method-sqlserverdatabasemetadata"></a>Méthode getProcedureColumns (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -71,33 +70,33 @@ public java.sql.ResultSet getProcedureColumns(java.lang.String sCatalog,
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|PROCEDURE_CAT|**Chaîne**|Nom de la base de données qui contient la procédure stockée spécifiée.|  
-|PROCEDURE_SCHEM|**Chaîne**|Schéma pour la procédure stockée.|  
-|PROCEDURE_NAME|**Chaîne**|Le nom de la procédure stockée.|  
-|COLUMN_NAME|**Chaîne**|Nom de la colonne.|  
+|PROCEDURE_CAT|**String**|Nom de la base de données qui contient la procédure stockée spécifiée.|  
+|PROCEDURE_SCHEM|**String**|Schéma pour la procédure stockée.|  
+|PROCEDURE_NAME|**String**|Le nom de la procédure stockée.|  
+|COLUMN_NAME|**String**|Nom de la colonne.|  
 |COLUMN_TYPE|**courte**|Type de la colonne. Il peut prendre l’une des valeurs suivantes :<br /><br /> procedureColumnUnknown (0)<br /><br /> procedureColumnIn (1)<br /><br /> procedureColumnInOut (2)<br /><br /> procedureColumnOut (4)<br /><br /> procedureColumnReturn (5)<br /><br /> procedureColumnResult (3)|  
 |DATA_TYPE|**smallint**|Type de données SQL de java.sql.Types.|  
-|TYPE_NAME|**Chaîne**|Nom du type de données.|  
+|TYPE_NAME|**String**|Nom du type de données.|  
 |PRECISION|**int**|Nombre total de chiffres significatifs.|  
 |LENGTH|**int**|La longueur des données en octets.|  
 |SCALE|**courte**|Le nombre de chiffres à droite de la virgule décimale.|  
 |RADIX|**courte**|Base pour les types numériques.|  
 |NULLABLE|**courte**|Indique si la colonne peut contenir une valeur Null. Il peut prendre l’une des valeurs suivantes :<br /><br /> procedureNoNulls (0)<br /><br /> procedureNullable (1)<br /><br /> procedureNullableUnknown (2)|  
-|REMARKS|**Chaîne**|Description de la colonne de la procédure.<br /><br /> <br /><br /> **Remarque :** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] ne retourne pas une valeur pour cette colonne.|  
-|COLUMN_DEF|**Chaîne**|La valeur par défaut de la colonne.|  
+|REMARKS|**String**|Description de la colonne de la procédure.<br /><br /> <br /><br /> **Remarque :** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] ne retourne pas une valeur pour cette colonne.|  
+|COLUMN_DEF|**String**|La valeur par défaut de la colonne.|  
 |SQL_DATA_TYPE|**smallint**|Cette colonne est le même que le **DATA_TYPE** colonne, à l’exception de la **datetime** et ISO **intervalle** des types de données.|  
 |SQL_DATETIME_SUB|**smallint**|Le **datetime** ISO **intervalle** sous-code si la valeur de **SQL_DATA_TYPE** est **SQL_DATETIME** ou **SQL_INTERVAL**. Pour les données les types autres que **datetime** et ISO **intervalle**, cette colonne est NULL.|  
 |CHAR_OCTET_LENGTH|**int**|Nombre maximal d'octets dans la colonne.|  
 |ORDINAL_POSITION|**int**|Index de la colonne dans la table.|  
-|IS_NULLABLE|**Chaîne**|Indique si la colonne autorise les valeurs Null.|  
-|SS_TYPE_CATALOG_NAME|**Chaîne**|Nom du catalogue qui contient le type défini par l'utilisateur (UDT).|  
-|SS_TYPE_SCHEMA_NAME|**Chaîne**|Nom du schéma qui contient le type défini par l'utilisateur (UDT).|  
-|SS_UDT_CATALOG_NAME|**Chaîne**|Type défini par l'utilisateur (UDT) du nom complet.|  
-|SS_UDT_SCHEMA_NAME|**Chaîne**|Nom du catalogue dans lequel un nom de collection de schémas XML est défini. Si le nom du catalogue est introuvable, cette variable contient une chaîne vide.|  
-|SS_UDT_ASSEMBLY_TYPE_NAME|**Chaîne**|Nom du schéma dans lequel un nom de collection de schémas XML est défini. Si le nom du schéma est introuvable, la chaîne est vide.|  
-|SS_XML_SCHEMACOLLECTION_CATALOG_NAME|**Chaîne**|Nom d'une collection de schémas XML. Si le nom est introuvable, la chaîne est vide.|  
-|SS_XML_SCHEMACOLLECTION_SCHEMA_NAME|**Chaîne**|Nom du catalogue qui contient le type défini par l'utilisateur (UDT).|  
-|SS_XML_SCHEMACOLLECTION_NAME|**Chaîne**|Nom du schéma qui contient le type défini par l'utilisateur (UDT).|  
+|IS_NULLABLE|**String**|Indique si la colonne autorise les valeurs Null.|  
+|SS_TYPE_CATALOG_NAME|**String**|Nom du catalogue qui contient le type défini par l'utilisateur (UDT).|  
+|SS_TYPE_SCHEMA_NAME|**String**|Nom du schéma qui contient le type défini par l'utilisateur (UDT).|  
+|SS_UDT_CATALOG_NAME|**String**|Type défini par l'utilisateur (UDT) du nom complet.|  
+|SS_UDT_SCHEMA_NAME|**String**|Nom du catalogue dans lequel un nom de collection de schémas XML est défini. Si le nom du catalogue est introuvable, cette variable contient une chaîne vide.|  
+|SS_UDT_ASSEMBLY_TYPE_NAME|**String**|Nom du schéma dans lequel un nom de collection de schémas XML est défini. Si le nom du schéma est introuvable, la chaîne est vide.|  
+|SS_XML_SCHEMACOLLECTION_CATALOG_NAME|**String**|Nom d'une collection de schémas XML. Si le nom est introuvable, la chaîne est vide.|  
+|SS_XML_SCHEMACOLLECTION_SCHEMA_NAME|**String**|Nom du catalogue qui contient le type défini par l'utilisateur (UDT).|  
+|SS_XML_SCHEMACOLLECTION_NAME|**String**|Nom du schéma qui contient le type défini par l'utilisateur (UDT).|  
 |SS_DATA_TYPE|**tinyint**|Le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] type de données qui est utilisé par les procédures stockées étendues.<br /><br /> <br /><br /> **Remarque :** pour plus d’informations sur les types de données retournés par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)], consultez « Types de données (Transact-SQL) » dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] la documentation en ligne.|  
   
 > [!NOTE]  

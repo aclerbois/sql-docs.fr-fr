@@ -1,29 +1,27 @@
 ---
-title: "Didacticiel : introduction aux expressions | Microsoft Docs"
-ms.custom: 
+title: 'Didacticiel : introduction aux expressions | Microsoft Docs'
+ms.custom: ''
 ms.date: 09/16/2016
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: get-started-article
 applies_to:
 - SQL Server 2016
 ms.assetid: 2d05ef4c-5f91-48b2-8795-f0a201a0b3cc
-caps.latest.revision: 
+caps.latest.revision: 14
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a75e3eb0532359a4528af38270820126e14f4b36
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e2b42df295abda51349793a4db8697ab03cb3cd4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tutorial-introducing-expressions"></a>Didacticiel : introduction aux expressions
 Dans ce didacticiel [!INCLUDE[ssRBnoversion_md](../includes/ssrbnoversion-md.md)] , vous utilisez des expressions avec des opérateurs et des fonctions communes pour créer des rapports paginés [!INCLUDE[ssRSnoversion_md](../includes/ssrsnoversion-md.md)] puissants et flexibles. 

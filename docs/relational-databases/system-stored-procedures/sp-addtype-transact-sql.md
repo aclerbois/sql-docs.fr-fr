@@ -1,16 +1,14 @@
 ---
 title: sp_addtype (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_addtype
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_addtype
 ms.assetid: ed72cd8e-5ff7-4084-8458-2d8ed279d817
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 61a5e94d0e57bdaaac63181c9257defdfd87d8eb
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 96a2d930ae6c85e4da6d516d6c30d6c54a7fd3ac
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddtype-transact-sql"></a>sp_addtype (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -37,7 +34,7 @@ ms.lasthandoff: 11/27/2017
   Crée un type de données alias.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]Utilisez [CREATE TYPE](../../t-sql/statements/create-type-transact-sql.md) à la place.  
+>  [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez [CREATE TYPE](../../t-sql/statements/create-type-transact-sql.md) à la place.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -62,34 +59,34 @@ sp_addtype [ @typename = ] type,
 |**bigint**|**binary(n)**|**bit**|  
 |**char(n)**|**datetime**|**decimal**|  
 |**float**|**image**|**int**|  
-|**money**|**NCHAR (n)**|**ntext**|  
-|**numeric**|**nvarchar (n)**|**real**|  
+|**money**|**nchar(n)**|**ntext**|  
+|**numeric**|**nvarchar(n)**|**real**|  
 |**smalldatetime**|**smallint**|**smallmoney**|  
-|**sql_variant**|**text**|**tinyint**|  
+|**sql_variant**|**texte**|**tinyint**|  
 |**uniqueidentifier**|**varbinary(n)**|**varchar(n)**|  
   
- Les guillemets sont obligatoires pour tous les paramètres comportant des espaces ou des signes de ponctuation. Pour plus d’informations sur les types de données disponibles, consultez [Types de données &#40; Transact-SQL &#41; ](../../t-sql/data-types/data-types-transact-sql.md).  
+ Les guillemets sont obligatoires pour tous les paramètres comportant des espaces ou des signes de ponctuation. Pour plus d’informations sur les types de données disponibles, consultez [des Types de données &#40;Transact-SQL&#41;](../../t-sql/data-types/data-types-transact-sql.md).  
   
  *n*  
  Entier non négatif qui indique la longueur du type de données choisi.  
   
  *P*  
- Entier non négatif qui indique le nombre total maximal de chiffres d'un nombre décimal pouvant figurer à gauche et à droite de la virgule décimale. Pour plus d’informations, consultez [decimal et numeric &#40; Transact-SQL &#41; ](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
+ Entier non négatif qui indique le nombre total maximal de chiffres d'un nombre décimal pouvant figurer à gauche et à droite de la virgule décimale. Pour plus d’informations, consultez [decimal et numeric &#40;Transact-SQL&#41;](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
   
- *s*  
- Entier non négatif qui indique le nombre maximal de décimales qui peuvent figurer à droite d'une virgule décimale ; il doit être inférieur ou égal à la précision. Pour plus d’informations, consultez [decimal et numeric &#40; Transact-SQL &#41; ](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
+ *S*  
+ Entier non négatif qui indique le nombre maximal de décimales qui peuvent figurer à droite d'une virgule décimale ; il doit être inférieur ou égal à la précision. Pour plus d’informations, consultez [decimal et numeric &#40;Transact-SQL&#41;](../../t-sql/data-types/decimal-and-numeric-transact-sql.md).  
   
  [  **@nulltype =** ] **'***type_null***'**  
- Indique la manière dont le type de données alias gère les valeurs NULL. *type_null* est **varchar (**8**)**, avec NULL comme valeur par défaut et doit être entouré de guillemets simples ('NULL', 'NOT NULL' ou 'NONULL'). Si *type_null* n’est pas défini explicitement par **sp_addtype**, il a la valeur actuelle. Utilisez la fonction système GETANSINULL pour déterminer la possibilité de valeurs NULL actuellement définie. Il est possible d'ajuster cette valeur au moyen de l'instruction SET ou ALTER DATABASE. La possibilité de valeurs NULL doit être définie explicitement. Si  **@phystype**  est **bits**, et  **@nulltype**  n’est pas spécifié, la valeur par défaut n’est pas NULL.  
+ Indique la manière dont le type de données alias gère les valeurs NULL. *type_null* est **varchar (** 8 **)**, avec NULL comme valeur par défaut et doit être entouré de guillemets simples ('NULL', 'NOT NULL' ou 'NONULL'). Si *type_null* n’est pas défini explicitement par **sp_addtype**, il a la valeur actuelle. Utilisez la fonction système GETANSINULL pour déterminer la possibilité de valeurs NULL actuellement définie. Il est possible d'ajuster cette valeur au moyen de l'instruction SET ou ALTER DATABASE. La possibilité de valeurs NULL doit être définie explicitement. Si **@phystype** est **bits**, et **@nulltype** n’est pas spécifié, la valeur par défaut n’est pas NULL.  
   
 > [!NOTE]  
->  Le *type_null* paramètre définit uniquement la possibilité de valeur NULL par défaut pour ce type de données. Si la possibilité d'utiliser des valeurs NULL est explicitement définie quand le type de données alias est utilisé lors de la création de la table, elle est prioritaire sur la possibilité de valeurs NULL actuellement définie. Pour plus d’informations, consultez [ALTER TABLE &#40; Transact-SQL &#41; ](../../t-sql/statements/alter-table-transact-sql.md) et [CREATE TABLE &#40; Transact-SQL &#41; ](../../t-sql/statements/create-table-transact-sql.md).  
+>  Le *type_null* paramètre définit uniquement la possibilité de valeur NULL par défaut pour ce type de données. Si la possibilité d'utiliser des valeurs NULL est explicitement définie quand le type de données alias est utilisé lors de la création de la table, elle est prioritaire sur la possibilité de valeurs NULL actuellement définie. Pour plus d’informations, consultez [ALTER TABLE &#40;Transact-SQL&#41; ](../../t-sql/statements/alter-table-transact-sql.md) et [CREATE TABLE &#40;Transact-SQL&#41;](../../t-sql/statements/create-table-transact-sql.md).  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou 1 (échec)  
   
 ## <a name="result-sets"></a>Jeux de résultats  
- Aucune  
+ Aucun  
   
 ## <a name="remarks"></a>Notes  
  Un nom de type de données alias doit être unique dans la base de données. Cependant, plusieurs types de données alias portant des noms différents peuvent avoir la même définition.  
@@ -103,7 +100,7 @@ sp_addtype [ @typename = ] type,
   
  Types de données alias ne peut pas être définies à l’aide de la [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **timestamp**, **table**, **xml**, **varchar (max)**, **nvarchar (max)** ou **varbinary (max)** des types de données.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l’appartenance dans le **db_owner** ou **db_ddladmin** rôle de base de données fixe.  
   
 ## <a name="examples"></a>Exemples  
@@ -142,16 +139,16 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [CREATE TYPE &#40;Transact-SQL&#41;](../../t-sql/statements/create-type-transact-sql.md)   
  [CREATE DEFAULT &#40;Transact-SQL&#41;](../../t-sql/statements/create-default-transact-sql.md)   
  [CREATE RULE &#40;Transact-SQL&#41;](../../t-sql/statements/create-rule-transact-sql.md)   
- [sp_bindefault &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-bindefault-transact-sql.md)   
- [sp_bindrule &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-bindrule-transact-sql.md)   
- [sp_droptype &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-droptype-transact-sql.md)   
+ [sp_bindefault &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-bindefault-transact-sql.md)   
+ [sp_bindrule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-bindrule-transact-sql.md)   
+ [sp_droptype &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-droptype-transact-sql.md)   
  [sp_rename &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-rename-transact-sql.md)   
- [sp_unbindefault &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-unbindefault-transact-sql.md)   
- [sp_unbindrule &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-unbindrule-transact-sql.md)   
+ [sp_unbindefault &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindefault-transact-sql.md)   
+ [sp_unbindrule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindrule-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

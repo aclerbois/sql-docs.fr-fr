@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLInstallerError | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLInstallerError
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLInstallerError
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLInstallerError
-helpviewer_keywords: SQLInstallerError [ODBC]
+f1_keywords:
+- SQLInstallerError
+helpviewer_keywords:
+- SQLInstallerError [ODBC]
 ms.assetid: e6474b79-4d55-458f-81ce-abfafe357f83
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c3cdc3ae1e4efe4292077851a4f457bae4af17bd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c76d89a69ade4aca9c915db8d960cc749f8ca2a7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlinstallererror-function"></a>SQLInstallerError (fonction)
 **Mise en conformité**  

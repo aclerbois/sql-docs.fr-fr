@@ -1,34 +1,30 @@
 ---
-title: "Audit Login Failed, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Login Failed, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Login Failed event class
 ms.assetid: 6b83963b-b685-429d-92ba-5173f6f0000d
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cb37e89cade0fcabdfd3ce47a2a7459f9cb2e6d6
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 67b020a00c46d12d687aa0b73b21e4e0180caf88
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-login-failed-event-class"></a>Audit Login Failed (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Login Failed** indique qu’un utilisateur a essayé de se connecter sans succès à [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les événements de cette classe sont déclenchés par de nouvelles connexions ou par des connexions réutilisées depuis un groupement de connexions.  
+  La classe d’événements **Audit Login Failed** indique qu’un utilisateur a essayé de se connecter sans succès à [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Les événements de cette classe sont déclenchés par de nouvelles connexions ou par des connexions réutilisées depuis un groupement de connexions.  
   
 ## <a name="audit-login-failed-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Login Failed  
   

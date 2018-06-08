@@ -1,29 +1,20 @@
 ---
-title: "À l’aide des fonctions membres | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: member functions [MDX]
-ms.assetid: 094c443f-0daa-4af7-801c-d2e1d686d755
-caps.latest.revision: "24"
-author: Minewiskan
+title: À l’aide des fonctions membres | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 7df4670e57def09628b0ccca1be2c2b567aef3bb
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 59be2bef7e2a3fb57b720672c3c89d0500feef8b
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34581551"
 ---
 # <a name="using-member-functions"></a>Utilisation de fonctions de membre
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -57,7 +48,7 @@ ms.lasthandoff: 01/08/2018
  `FROM [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; La syntaxe MDX &#41;](../mdx/functions-mdx-syntax.md)   
+ [Fonctions &#40;syntaxe MDX&#41;](../mdx/functions-mdx-syntax.md)   
  [À l’aide des fonctions de Tuple](../mdx/using-tuple-functions.md)   
  [Utilisation de fonctions de jeu](../mdx/using-set-functions.md)  
   

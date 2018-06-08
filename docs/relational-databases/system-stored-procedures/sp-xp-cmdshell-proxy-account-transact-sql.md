@@ -1,16 +1,14 @@
 ---
 title: sp_xp_cmdshell_proxy_account (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_xp_cmdshell_proxy_account
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - sp_xp_cmdshell_proxy_account
 - xp_cmdshell
 ms.assetid: f807c373-7fbc-4108-a2bd-73b48a236003
-caps.latest.revision: 
+caps.latest.revision: 15
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: f2aa36f38df0fdf1f36e5cfddc48044222d9509c
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 18c960fdf3d70c82684d493fd498a57ed357bb4d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spxpcmdshellproxyaccount-transact-sql"></a>sp_xp_cmdshell_proxy_account (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -56,7 +54,7 @@ sp_xp_cmdshell_proxy_account [ NULL | { 'account_name' , 'password' } ]
  *account_name*  
  Spécifie la connexion Windows qui doit être le proxy.  
   
- *mot de passe*  
+ *password*  
  Spécifie le mot de passe du compte Windows.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -67,7 +65,7 @@ sp_xp_cmdshell_proxy_account [ NULL | { 'account_name' , 'password' } ]
   
  Lorsqu’elle est exécutée à l’aide de l’option NULL, **sp_xp_cmdshell_proxy_account** supprime les informations d’identification de proxy.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation CONTROL SERVER.  
   
 ## <a name="examples"></a>Exemples  
@@ -89,7 +87,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [xp_cmdshell &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/xp-cmdshell-transact-sql.md)   
+ [xp_cmdshell &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/xp-cmdshell-transact-sql.md)   
  [CREATE CREDENTIAL &#40;Transact-SQL&#41;](../../t-sql/statements/create-credential-transact-sql.md)   
  [sys.credentials &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-credentials-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   

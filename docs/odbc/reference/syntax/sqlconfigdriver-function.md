@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLConfigDriver | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLConfigDriver
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLConfigDriver
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLConfigDriver
-helpviewer_keywords: SQLConfigDriver function [ODBC]
+f1_keywords:
+- SQLConfigDriver
+helpviewer_keywords:
+- SQLConfigDriver function [ODBC]
 ms.assetid: 4f681961-ac9f-4d88-b065-5258ba112642
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3af2f70156cae3427b5d22f3214f5c911af14a5d
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1a5fc4ac9aebbabf0181d42ae9d026aa697e8b58
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlconfigdriver-function"></a>SQLConfigDriver (fonction)
 **Mise en conformité**  
@@ -87,7 +88,7 @@ BOOL SQLConfigDriver(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLConfigDriver** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_INVALID_BUFF_LEN|Longueur de la mémoire tampon non valide|Le *lpszMsg* argument n’était pas valide.|  

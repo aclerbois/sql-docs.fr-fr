@@ -1,32 +1,29 @@
 ---
-title: "Annexe f : bibliothèque de curseurs ODBC | Documents Microsoft"
-ms.custom: 
+title: 'Annexe f : bibliothèque de curseurs ODBC | Documents Microsoft'
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC cursor library [ODBC], about cursor library
 - ODBC cursor library [ODBC]
 - cursor library [ODBC], about cursor library
 - cursor library [ODBC]
 ms.assetid: a03084df-4e48-48ef-917d-4a3fae48a605
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8aafc1a3ce481e4777ea216057ef2c0b7b24a2e8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 10e43272c7d9a75956aa162398c2869c558cdea1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendix-f-odbc-cursor-library"></a>Annexe f : bibliothèque de curseurs ODBC
 > [!IMPORTANT]  
@@ -36,7 +33,7 @@ ms.lasthandoff: 12/21/2017
   
  La bibliothèque de curseurs est une bibliothèque de liens dynamiques (DLL) qui réside entre le Gestionnaire de pilotes et le pilote. Lorsqu’une application appelle une fonction, le Gestionnaire de pilotes appelle la fonction dans la bibliothèque de curseurs, qui exécute la fonction ou appelle dans le pilote spécifié. Pour une connexion donnée, une application spécifie si la bibliothèque de curseurs est toujours utilisée, utilisée si le pilote ne prend pas en charge les curseurs de défilement ou jamais utilisée.  
   
- La bibliothèque de curseurs s’affiche en tant que pilote pour le Gestionnaire de pilotes. Si la bibliothèque de curseurs réside entre le Gestionnaire de pilotes et une API ODBC 2. *x* pilote, la bibliothèque de curseurs apparaît comme un ODBC 2. *x* pilote. Si la bibliothèque de curseurs réside entre le Gestionnaire de pilotes et une ODBC 3*.x* pilote, la bibliothèque de curseurs apparaît comme un ODBC 3*.x* pilote. Le comportement affiché par la bibliothèque de curseurs varie selon la version du pilote que fonctionne avec, à l’exception des décalages de liaison, qui est pris en charge pour les deux API ODBC 2. *x* et ODBC 3. *x* pilotes.  
+ La bibliothèque de curseurs s’affiche en tant que pilote pour le Gestionnaire de pilotes. Si la bibliothèque de curseurs réside entre le Gestionnaire de pilotes et une API ODBC 2. *x* pilote, la bibliothèque de curseurs apparaît comme un ODBC 2. *x* pilote. Si la bibliothèque de curseurs réside entre le Gestionnaire de pilotes et une ODBC 3 *.x* pilote, la bibliothèque de curseurs apparaît comme un ODBC 3 *.x* pilote. Le comportement affiché par la bibliothèque de curseurs varie selon la version du pilote que fonctionne avec, à l’exception des décalages de liaison, qui est pris en charge pour les deux API ODBC 2. *x* et ODBC 3. *x* pilotes.  
   
  Pour implémenter des curseurs de bloc en **SQLFetch** et **SQLFetchScroll**, la bibliothèque de curseurs appelle à plusieurs reprises **SQLFetch** dans le pilote. Pour implémenter le défilement, il met en cache les données qu’il a récupéré en mémoire et dans les fichiers de disque. Lorsqu’une application demande un nouvel ensemble de lignes, la bibliothèque de curseurs extrait selon les besoins du pilote ou du cache.  
   

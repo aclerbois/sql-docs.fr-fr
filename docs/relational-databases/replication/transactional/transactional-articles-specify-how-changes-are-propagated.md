@@ -1,30 +1,28 @@
 ---
-title: "Spécifier le mode de propagation des modifications des articles transactionnels | Microsoft Docs"
-ms.custom: 
+title: Spécifier le mode de propagation des modifications des articles transactionnels | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactional replication, propagation methods
 ms.assetid: a10c5001-22cc-4667-8f0b-3d0818dca2e9
-caps.latest.revision: 
+caps.latest.revision: 48
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9556148f1f8f55fcd6df5e8574f8cbc10232c79c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: e1301da5fd36bf38a28bb4722c460642d65fa9b3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transactional-articles---specify-how-changes-are-propagated"></a>Articles transactionnels - Spécifier le mode de propagation des modifications
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -40,7 +38,7 @@ ms.lasthandoff: 03/08/2018
   
  Par défaut, la réplication transactionnelle propage les modifications vers les abonnés via un groupe de procédures stockées installées sur chaque abonné. Lorsqu'une opération Insert, Update ou Delete est effectuée sur une table du serveur de publication, elle est convertie en appel à une procédure stockée sur l'Abonné. La procédure stockée accepte des paramètres correspondant aux colonnes de la table, ce qui permet la modification de ces colonnes sur l'Abonné.  
   
- Pour définir la méthode de propagation des modifications de données des articles transactionnels, consultez [Set the Propagation Method for Data Changes to Transactional Articles](../../../relational-databases/replication/publish/set-the-propagation-method-for-data-changes-to-transactional-articles.md).  
+ Pour définir la méthode de propagation des modifications de données des articles transactionnels, consultez [Définir la méthode de propagation des modifications de données des articles transactionnels](../../../relational-databases/replication/publish/set-the-propagation-method-for-data-changes-to-transactional-articles.md).  
   
 ## <a name="default-and-custom-stored-procedures"></a>Procédures stockées par défaut et personnalisées  
  Trois procédures sont créées par défaut par la réplication pour chaque article de table :  

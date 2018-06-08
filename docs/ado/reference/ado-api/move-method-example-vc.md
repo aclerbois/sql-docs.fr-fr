@@ -1,32 +1,29 @@
 ---
-title: "Exemple de méthode (VC ++) Move | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Exemple de méthode (VC ++) Move | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - Move method [ADO], VC++ example
 ms.assetid: 0e08af60-f668-4092-8b6a-9e8b6db90448
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 554b78e38b47cdfde7ed6bfdc5667ae2959c3d50
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8c8e79dce97a46b216a50094b3e87fe944d0185e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="move-method-example-vc"></a>Exemple de méthode Move (VC ++)
 Cet exemple utilise le [déplacer](../../../ado/reference/ado-api/move-method-ado.md) méthode pour positionner le pointeur d’enregistrement basée sur l’entrée d’utilisateur.  

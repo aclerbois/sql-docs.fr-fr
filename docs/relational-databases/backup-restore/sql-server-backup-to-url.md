@@ -1,28 +1,24 @@
 ---
 title: Sauvegarde SQL Server vers une URL | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 11/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 11be89e9-ff2a-4a94-ab5d-27d8edf9167d
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 913ba155344eb6265789eb6947967eee42e34470
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 9d688171b49697b785f571f7e08fee0bfe339858
+ms.sourcegitcommit: 38f8824abb6760a9dc6953f10a6c91f97fa48432
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="sql-server-backup-to-url"></a>Sauvegarde SQL Server vers une URL
 [!INCLUDE[tsql-appliesto-ss2016-xxxx-xxxx-xxx_md](../../includes/tsql-appliesto-ss2016-xxxx-xxxx-xxx-md.md)]
@@ -93,7 +89,7 @@ ms.lasthandoff: 01/18/2018
   
 -   La sauvegarde dans le stockage Premium n’est pas prise en charge.  
   
--   La taille maximale de sauvegarde prise en charge à l’aide d’un objet blob de pages est limitée par la taille maximale d’un objet blob de page unique, c’est-à-dire 1 To. La taille maximale de sauvegarde prise en charge à l’aide d’objets blob de blocs n’est pas limitée par la taille maximale d’un objet blob de blocs unique, qui est de 200 Go, car la sauvegarde vers des objets blob de blocs prend en charge un système de distribution permettant d’accepter des tailles de sauvegarde sensiblement plus importantes.  
+-   SQL Server limite la taille de sauvegarde maximale prise en charge en utilisant un objet blob de pages à 1 To. La taille de sauvegarde maximale prise en charge en utilisant des objets blob de blocs est limitée à environ 200 Mo (50 000 blocs * 4 Mo de MAXTRANSFERSIZE). Les objets blob de blocs prennent en charge l’entrelacement pour prendre en charge des tailles de sauvegarde sensiblement plus importantes.  
   
 -   Vous pouvez émettre des instructions de sauvegarde ou de restauration à l’aide de TSQL, SMO, des applets de commande PowerShell, ou de l’Assistant Restauration ou Sauvegarde de SQL Server Management Studio.   
   
@@ -109,7 +105,7 @@ ms.lasthandoff: 01/18/2018
   
 -   La spécification des options du jeu de sauvegarde **RETAINDAYS** et **EXPIREDATE** n’est pas prise en charge.  
   
--   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est soumis à une limite de 259 caractères pour le nom d'une unité de sauvegarde. BACKUP TO URL utilise 36 caractères pour les éléments requis utilisés pour spécifier l'URL « https://.blob.core.windows.net//.bak », ce qui laisse 223 caractères pour les noms de compte, de conteneur et d'objet blob rassemblés.  
+-   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] est soumis à une limite de 259 caractères pour le nom d'une unité de sauvegarde. BACKUP TO URL utilise 36 caractères pour les éléments requis utilisés pour spécifier l’URL « https://.blob.core.windows.net//.bak », ce qui laisse 223 caractères pour les noms de compte, de conteneur et d’objet blob réunis.  
   
 ###  <a name="Support"></a> Prise en charge des instructions de sauvegarde/restauration  
   

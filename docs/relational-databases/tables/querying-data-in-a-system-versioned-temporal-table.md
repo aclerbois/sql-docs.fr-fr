@@ -1,35 +1,32 @@
 ---
-title: "Interrogation des données dans une table temporelle avec système par version | Microsoft Docs"
-ms.custom: 
+title: Interrogation des données dans une table temporelle avec système par version | Microsoft Docs
+ms.custom: ''
 ms.date: 03/28/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 2d358c2e-ebd8-4eb3-9bff-cfa598a39125
-caps.latest.revision: 
+caps.latest.revision: 7
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5bd4678f0a17e570f089f3c532df5a32e284787d
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cfdb035f176c2fcdb9e71b5621b76e4ecb72c2b4
+ms.sourcegitcommit: b3bb41424249de198f22d9c6d40df4996f083aa6
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="querying-data-in-a-system-versioned-temporal-table"></a>Interrogation des données dans une table temporelle avec système par version
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
 
   Lorsque vous souhaitez obtenir l’état le plus récent (réel) des données d’une table temporelle, l’interrogation est exactement la même que pour une table non temporelle. Si les colonnes PERIOD ne sont pas masquées, leurs valeurs apparaissent dans une requête SELECT \* . Si vous avez spécifié les colonnes **PERIOD** comme étant masquées, leurs valeurs n’apparaissent pas dans une requête SELECT \* . Lorsque les colonnes **PERIOD** sont masquées, référencez spécifiquement les colonnes **PERIOD** dans la clause SELECT pour retourner les valeurs de ces colonnes.  
   
- Pour exécuter tout type d’analyse temporelle, utilisez la nouvelle clause  **FOR SYSTEM_TIME** avec quatre sous-clauses temporelles spécifiques afin d’interroger les données des tables actuelles et d’historique. Pour plus d’informations sur ces clauses, consultez [Tables temporelles](../../relational-databases/tables/temporal-tables.md) et [FROM &#40;Transact-SQL&#41;](../../t-sql/queries/from-transact-sql.md)  
+ Pour exécuter une analyse temporelle, utilisez la nouvelle clause **FOR SYSTEM_TIME** avec quatre sous-clauses temporelles spécifiques pour interroger les données des tables actuelles et d’historique. Pour plus d’informations sur ces clauses, consultez [Tables temporelles](../../relational-databases/tables/temporal-tables.md) et [FROM &#40;Transact-SQL&#41;](../../t-sql/queries/from-transact-sql.md)  
   
 -   AS OF <date_time>  
   
@@ -44,8 +41,8 @@ ms.lasthandoff: 01/18/2018
  La clause**FOR SYSTEM_TIME** peut être spécifiée de façon indépendante pour chaque table dans une requête. Elle peut être utilisée à l'intérieur d’expressions de table communes, de fonctions table incluses et de procédures stockées.  
   
 ## <a name="query-for-a-specific-time-using-the-as-of-sub-clause"></a>Requête d’un point précis dans le temps à l'aide de la sous-clause AS OF  
- Utilisez la sous-clause**AS OF** quand vous devez reconstruire l’état des données tel qu’il était à un point précis dans le passé.  Vous pouvez reconstruire les données avec la précision de type datetime2 qui avait été spécifiée dans les définitions de colonne **PERIOD** .    
-La sous-clause**AS OF** peut être utilisée avec des constantes littérales ou des variables, ce qui vous permet de spécifier de manière dynamique la condition de temps. Les valeurs fournies sont interprétées en heure UTC.  
+ Utilisez la sous-clause **AS OF** quand vous devez reconstruire l’état des données tel qu’il était à un point précis dans le temps. Vous pouvez reconstruire les données avec la précision de type datetime2 qui avait été spécifiée dans les définitions de colonne **PERIOD** .    
+La sous-clause **AS OF** peut être utilisée avec des constantes littérales ou des variables, ce qui vous permet de spécifier de manière dynamique la condition de temps. Les valeurs fournies sont interprétées en heure UTC.  
   
  Ce premier exemple retourne l'état de la table dbo.Department à partir (AS OF) d’une date spécifique dans le passé.  
   
@@ -75,7 +72,7 @@ AND D_1_Ago.[DeptID] BETWEEN 1 and 5 ;
 ### <a name="using-views-with-as-of-sub-clause-in-temporal-queries"></a>Utilisation de vues avec la sous-clause AS OF dans des requêtes temporelles  
  Les vues sont très utiles dans les scénarios nécessitant une analyse complexe à un point précis dans le temps.   
 Un exemple courant est la création aujourd’hui d’un rapport d'entreprise s’appuyant sur les valeurs du mois précédent.   
-En règle générale, les clients utilisent un modèle de base de données normalisé qui implique plusieurs tables avec des relations de clés étrangères. Connaître l’état des données de ce modèle normalisé à un point précis dans le passé peut se révéler très difficile car toutes les tables changent indépendamment, à leur propre rythme.   
+En règle générale, les clients utilisent un modèle de base de données normalisé qui implique plusieurs tables avec des relations de clés étrangères. Il peut être très difficile de connaître l’état des données de ce modèle normalisé à un point précis dans le temps, car toutes les tables changent de manière indépendante, à leur propre rythme.   
 Dans ce cas, la meilleure solution consiste à créer une vue et à appliquer la sous-clause **AS OF** à toute la vue. Cette approche vous permet de dissocier la modélisation de la couche d’accès aux données de l’analyse à un point précis dans le temps, car SQL Server appliquera la clause **AS OF** de manière transparente à toutes les tables temporelles impliquées dans la définition de la vue. En outre, vous pouvez combiner des tables temporelles et non temporelles dans la même vue, et **AS OF** s’appliquera uniquement aux tables temporelles. Si la vue ne référence pas au moins une table temporelle, l’application de clauses de requêtes temporelles échoue et affiche une erreur.  
   
 ```  
@@ -138,9 +135,6 @@ FROM [dbo].[Department] FOR SYSTEM_TIME ALL
 ORDER BY [DeptID], [SysStartTime] Desc  
   
 ```  
-  
-## <a name="did-this-article-help-you-were-listening"></a>Cet article vous a-t-il été utile ? Nous sommes à votre écoute  
- Quels renseignements souhaitez-vous obtenir ? Avez-vous trouvé ce que vous cherchiez ? Nous tenons compte de vos commentaires pour améliorer le contenu de nos articles. Veuillez envoyer vos commentaires à l’adresse suivante : [sqlfeedback@microsoft.com](mailto:sqlfeedback@microsoft.com?subject=Your%20feedback%20about%20the%20Queryinging%20a%20System-Versioned%20Temporal%20Table%20page)  
   
 ## <a name="see-also"></a> Voir aussi  
  [Tables temporelles](../../relational-databases/tables/temporal-tables.md)   

@@ -1,28 +1,25 @@
 ---
-title: "Index columnstore - Défragmentation | Microsoft Docs"
-ms.custom: 
+title: Index columnstore - Défragmentation | Microsoft Docs
+ms.custom: ''
 ms.date: 01/27/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
-ms.component: indexes
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: d3efda1a-7bdb-47f5-80bf-f075329edee5
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 17
+author: MikeRayMSFT
+ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 283b8e0fe5173c6527e6f3708b578eca87c80ff3
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: a0729bd3d068c7a50c7f6e9df591909465c29003
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="columnstore-indexes---defragmentation"></a>Index columnstore - Défragmentation
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -30,7 +27,7 @@ ms.lasthandoff: 02/12/2018
   Tâches de défragmentation d’index columnstore.  
   
 ## <a name="use-alter-index-reorganize-to-defragment-a-columnstore-index-online"></a>Utilisation d’ALTER INDEX REORGANIZE pour défragmenter un index columnstore en ligne  
- **S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]), [!INCLUDE[ssSDS](../../includes/sssds-md.md)]  
+ **S’applique à :** [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] (à partir de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]),[!INCLUDE[ssSDS](../../includes/sssds-md.md)]  
   
 Après avoir exécuté des charges de tout type, vous pouvez avoir plusieurs petits rowgroups dans le deltastore. Vous pouvez utiliser l’instruction `ALTER INDEX REORGANIZE` pour forcer tous les rowgroups dans le columnstore, puis pour combiner les rowgroups en un plus petit nombre de rowgroups avec plusieurs lignes.  L’opération de réorganisation supprimera également les lignes qui ont été supprimées du columnstore.  
   

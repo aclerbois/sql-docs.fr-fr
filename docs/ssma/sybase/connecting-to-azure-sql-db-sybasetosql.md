@@ -1,30 +1,28 @@
 ---
-title: "Connexion à la base de données SQL Azure (SybaseToSQL) | Documents Microsoft"
-ms.custom: 
+title: Connexion à la base de données SQL Azure (SybaseToSQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 9e77e4b0-40c0-455c-8431-ca5d43849aa7
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 74be54cbdac01197d4756ae1f30b6285e8c2fa90
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: dc13a12e706faf8151c3bdea586533a97a9e71fd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-azure-sql-db-sybasetosql"></a>Connexion à la base de données SQL Azure (SybaseToSQL)
 Pour migrer des bases de données Sybase vers base de données SQL Azure, vous devez vous connecter à l’instance cible de la base de données SQL Azure. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à toutes les bases de données dans l’instance de base de données SQL Azure et affiche les métadonnées de la base de données dans l’Explorateur de métadonnées de base de données SQL Azure. SSMA stocke les informations de l’instance de base de données SQL Azure que vous êtes connecté à, mais ne stockez pas les mots de passe.  
@@ -43,7 +41,7 @@ Le compte qui est utilisé pour se connecter à la base de données SQL Azure n�
 ## <a name="establishing-a-azure-sql-db-connection"></a>L’établissement d’une connexion de base de données SQL Azure  
 Avant de convertir des objets de base de données Sybase à la syntaxe de base de données SQL Azure, vous devez établir une connexion à l’instance de base de données SQL Azure dans lequel vous souhaitez migrer les bases de données ou la base de données Sybase.  
   
-Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de Sybase après la connexion à la base de données SQL Azure. Pour plus d’informations, consultez [mappage Sybase ASE schémas pour les schémas SQL Server &#40; SybaseToSQL &#41;](../../ssma/sybase/mapping-sybase-ase-schemas-to-sql-server-schemas-sybasetosql.md)  
+Lorsque vous définissez les propriétés de connexion, vous spécifiez également la base de données où les objets et les données seront migrées. Vous pouvez personnaliser ce mappage au niveau du schéma de Sybase après la connexion à la base de données SQL Azure. Pour plus d’informations, consultez [mappage Sybase ASE schémas pour les schémas SQL Server &#40;SybaseToSQL&#41;](../../ssma/sybase/mapping-sybase-ase-schemas-to-sql-server-schemas-sybasetosql.md)  
   
 > [!WARNING]  
 > Avant d’essayer de se connecter à la base de données SQL Azure, assurez-vous que l’instance de base de données SQL Azure est en cours d’exécution et peut accepter des connexions.  
@@ -85,14 +83,14 @@ Les métadonnées sur les bases de données de base de données SQL Azure ne son
 ## <a name="next-step"></a>Étape suivante  
 L’étape suivante de la migration dépend des besoins de votre projet :  
   
--   Pour personnaliser le mappage entre les schémas de Sybase et les bases de données de base de données SQL Azure et les schémas, consultez [les schémas de mappage Sybase ASE aux schémas SQL Server &#40; SybaseToSQL &#41;](../../ssma/sybase/mapping-sybase-ase-schemas-to-sql-server-schemas-sybasetosql.md)  
+-   Pour personnaliser le mappage entre les schémas de Sybase et les bases de données de base de données SQL Azure et les schémas, consultez [les schémas de mappage Sybase ASE à des schémas SQL Server &#40;SybaseToSQL&#41;](../../ssma/sybase/mapping-sybase-ase-schemas-to-sql-server-schemas-sybasetosql.md)  
   
--   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40; SybaseToSQL &#41;](../../ssma/sybase/setting-project-options-sybasetosql.md)  
+-   Pour personnaliser les options de configuration pour les projets, consultez [définition des Options de projet &#40;SybaseToSQL&#41;](../../ssma/sybase/setting-project-options-sybasetosql.md)  
   
--   Pour personnaliser le mappage des types de données source et cible, consultez [mappage Sybase ASE et Types de données SQL Server &#40; SybaseToSQL &#41;](../../ssma/sybase/mapping-sybase-ase-and-sql-server-data-types-sybasetosql.md)  
+-   Pour personnaliser le mappage des types de données source et cible, consultez [mappage Sybase ASE et Types de données SQL Server &#40;SybaseToSQL&#41;](../../ssma/sybase/mapping-sybase-ase-and-sql-server-data-types-sybasetosql.md)  
   
--   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données Sybase dans les définitions d’objets de base de données SQL Azure. Pour plus d’informations, consultez [convertir les objets de base de données Sybase ASE &#40; SybaseToSQL &#41;](../../ssma/sybase/converting-sybase-ase-database-objects-sybasetosql.md)  
+-   Si vous n’avez pas à effectuer ces tâches, vous pouvez convertir les définitions d’objets de base de données Sybase dans les définitions d’objets de base de données SQL Azure. Pour plus d’informations, consultez [convertir les objets de base de données Sybase ASE &#40;SybaseToSQL&#41;](../../ssma/sybase/converting-sybase-ase-database-objects-sybasetosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration Sybase ASE bases de données SQL Server : base de données SQL Azure &#40; SybaseToSQL &#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
+[Migration des bases de données de Sybase ASE à SQL Server - base de données SQL Azure &#40;SybaseToSQL&#41;](../../ssma/sybase/migrating-sybase-ase-databases-to-sql-server-azure-sql-db-sybasetosql.md)  
   

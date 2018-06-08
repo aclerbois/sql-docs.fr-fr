@@ -1,27 +1,24 @@
 ---
-title: "Écran 4 (le pilote ODBC pour SQL Server) de l’Assistant Source de données | Documents Microsoft"
-ms.custom: 
+title: Écran 4 (le pilote ODBC pour SQL Server) de l’Assistant Source de données | Documents Microsoft
+ms.custom: ''
 ms.date: 09/27/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 76326eeb-1144-4b9f-85db-50524c655d30
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3a4cd1c0e7d86a51e1278e8c3f44f43a8854be13
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7f53180976b3a4778f687ef8a83d9438ea858c05
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-source-wizard-screen-4"></a>Écran Assistant Source de données 4
 

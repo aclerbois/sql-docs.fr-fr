@@ -1,30 +1,28 @@
 ---
-title: "Change Data Capture Designer pour Oracle d’Attunity | Microsoft Docs"
-ms.custom: 
+title: Change Data Capture Designer pour Oracle d’Attunity | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: change-data-capture
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - desCons
 ms.assetid: 20a0d9ac-3393-4ab3-a296-862926b9b5e3
-caps.latest.revision: 
+caps.latest.revision: 9
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6eec0f35ddccef3653c9ad4cb06e5c8e1b887257
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9e3eb2f759bd4da3532d1128fdbec9fb61ee9735
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="change-data-capture-designer-for-oracle-by-attunity"></a>Concepteur de capture de données modifiées pour Oracle par Attunity
   La console du concepteur CDC est utilisée pour développer et maintenir les instances Oracle CDC. Il s'agit d'un composant logiciel enfichable MMC (Microsoft Management Console) qui contient les éléments suivants :  

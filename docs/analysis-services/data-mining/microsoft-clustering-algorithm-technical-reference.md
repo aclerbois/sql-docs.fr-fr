@@ -1,48 +1,27 @@
 ---
-title: "Techniques de l’algorithme de gestion de clusters Microsoft | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- clustering [Data Mining]
-- MAXIMUM_INPUT_ATTRIBUTES parameter
-- CLUSTER_SEED parameter
-- MODELLING_CARDINALITY parameter
-- MINIMUM_SUPPORT parameter
-- STOPPING_TOLERANCE parameter
-- MAXIMUM_STATES parameter
-- SAMPLE_SIZE parameter
-- CLUSTERING_METHOD parameter
-- soft clustering [Data Mining]
-- clustering algorithms [Analysis Services]
-- CLUSTER_COUNT parameter
-ms.assetid: ec40868a-6dc7-4dfa-aadc-dedf69e555eb
-caps.latest.revision: 
-author: Minewiskan
+title: Techniques de l’algorithme de gestion de clusters Microsoft | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 187eea9af56b4da074f374923c29d7ebcea0aca2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: eb86c8271599b56deb27fd3143fd205c11f52f35
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-clustering-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme de gestion de clusters Microsoft
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette section explique l'implémentation de l'algorithme de gestion de clusters [!INCLUDE[msCoName](../../includes/msconame-md.md)], en particulier les paramètres que vous pouvez utiliser pour contrôler le comportement des modèles de clustering. Vous y trouverez également des informations sur la façon d'améliorer les performances lors de la création et du traitement des modèles de clustering.  
+  Cette section explique l'implémentation de l'algorithme de gestion de clusters [!INCLUDE[msCoName](../../includes/msconame-md.md)], en particulier les paramètres que vous pouvez utiliser pour contrôler le comportement des modèles de clustering. Vous y trouverez également des informations sur la façon d'améliorer les performances lors de la création et du traitement des modèles de clustering.  
   
  Pour plus d'informations sur l'utilisation des modèles de clustering, consultez les rubriques suivantes :  
   
--   [Contenu du modèle d’exploration de données pour le Clustering des modèles &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)  
+-   [Contenu du modèle d’exploration de données pour le Clustering des modèles & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-clustering-models-analysis-services-data-mining.md)  
   
 -   [Exemples de requêtes modèle de clustering](../../analysis-services/data-mining/clustering-model-query-examples.md)  
   

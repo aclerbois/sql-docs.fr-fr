@@ -1,31 +1,24 @@
 ---
-title: "Élément SortPropertiesPosition (XML) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Élément SortPropertiesPosition (XML) | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
-ms.assetid: 68b040a7-ab16-46f5-8610-21db07df9181
-caps.latest.revision: "6"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d0492dae363abe5fb9acdb2c989297f808251302
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 855857e0c4b1a9cb554fcbaa61935809ad9c71e0
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34576341"
 ---
 # <a name="sortpropertiesposition-element-xml"></a>Élément SortPropertiesPosition (XML)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]Contient des informations sur la position de l’élément dans une collection d’éléments.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../../includes/ssas-appliesto-sqlas-aas.md)]
+  Contient des informations sur la position de l'élément dans une collection d'éléments.  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -38,7 +31,7 @@ ms.lasthandoff: 01/08/2018
 </RelationshipEndVisualizationProperties>  
 ```  
   
-## <a name="element-characteristics"></a>Caractéristiques de l'élément  
+## <a name="element-characteristics"></a>Caractéristiques de l’élément  
   
 |Caractéristique|Description|  
 |--------------------|-----------------|  
@@ -53,7 +46,7 @@ ms.lasthandoff: 01/08/2018
 |Éléments parents|[RelationshipEndVisualizationProperties](../../../analysis-services/scripting/data-type/relationshipendvisualizationproperties-data-type-assl.md)|  
 |Éléments enfants|None|  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Pour **RelationshipEndVisualizationProperties** éléments, le **SortPropertiesPosition** élément contient la position de l’élément de propriétés de tri dans une collection de détails. La valeur par défaut indique qu'il n'y a aucune propriété de tri à utiliser.  
   
   

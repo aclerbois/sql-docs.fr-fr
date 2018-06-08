@@ -1,31 +1,23 @@
 ---
-title: "Projets d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 543d70fc-34d2-42dd-8d6d-0543109f94d0
-caps.latest.revision: 
-author: Minewiskan
+title: Projets d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f545d90cd695eef78f4ae8b33eef7f2f32e9439f
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 1e7a4ea87642ba31693eeea6ea17bedb14c20a24
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="data-mining-projects"></a>Projets d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un projet d'exploration de données fait partie d'une solution [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Pendant le processus de conception, les objets que vous créez dans ce projet sont disponibles à des fins de test et d'interrogation dans le cadre d'une base de données d'espace de travail. Lorsque vous souhaitez que les utilisateurs puissent interroger ou parcourir les objets dans le projet, vous devez déployer le projet sur une instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] s'exécutant en mode multidimensionnel.  
+  Un projet d'exploration de données fait partie d'une solution [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] . Pendant le processus de conception, les objets que vous créez dans ce projet sont disponibles à des fins de test et d'interrogation dans le cadre d'une base de données d'espace de travail. Lorsque vous souhaitez que les utilisateurs puissent interroger ou parcourir les objets dans le projet, vous devez déployer le projet sur une instance d' [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] s'exécutant en mode multidimensionnel.  
   
  Cette rubrique fournit les informations de base nécessaires à la compréhension et à la création des projets d'exploration de données.  
   
@@ -204,7 +196,7 @@ Un projet d'exploration de données fait partie d'une solution [!INCLUDE[ssASnov
   
   
 ##  <a name="bkmk_API"></a> Accès par programmation aux objets d'exploration de données  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] fournit plusieurs outils que vous pouvez utiliser pour utiliser par programmation des projets d'exploration de données et les objets qu'ils contiennent. Le langage DMX fournit des déclarations que vous pouvez utiliser pour créer des sources de données et des vues de source de données, et pour créer, effectuer l'apprentissage et utiliser des structures et des modèles d'exploration de données. Pour plus d’informations, consultez [Guide de référence du langage DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-reference.md).  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]fournit plusieurs outils qui vous pouvez d’effectuer par programme des projets d’exploration de données et les objets qu’elles contiennent. Le langage DMX fournit des déclarations que vous pouvez utiliser pour créer des sources de données et des vues de source de données, et pour créer, effectuer l'apprentissage et utiliser des structures et des modèles d'exploration de données. Pour plus d’informations, consultez [Guide de référence du langage DMX &#40;Data Mining Extensions&#41;](../../dmx/data-mining-extensions-dmx-reference.md).  
   
  Vous pouvez également effectuer ces tâches en utilisant ASSL (Analysis Services Scripting Language), ou en utilisant des objets AMO (Analysis Management Objects). Pour plus d’informations, consultez [Développement avec XMLA dans Analysis Services](../../analysis-services/multidimensional-models-scripting-language-assl-xmla/developing-with-xmla-in-analysis-services.md).  
   
@@ -215,16 +207,16 @@ Un projet d'exploration de données fait partie d'une solution [!INCLUDE[ssASnov
 |Tâches|Rubriques|  
 |-----------|------------|  
 |Décrit la façon d'utiliser des colonnes de structure d'exploration de données|[Créer une Structure d’exploration de données relationnelles](../../analysis-services/data-mining/create-a-relational-mining-structure.md)|  
-|Fournit des informations sur l'ajout de nouveaux modèles d'exploration de données et le traitement d'une structure et de modèles|[Ajouter des modèles d’exploration de données à une Structure &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/add-mining-models-to-a-structure-analysis-services-data-mining.md)|  
+|Fournit des informations sur l'ajout de nouveaux modèles d'exploration de données et le traitement d'une structure et de modèles|[Ajouter des modèles d’exploration de données à une Structure & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/add-mining-models-to-a-structure-analysis-services-data-mining.md)|  
 |Fournit des liens vers des ressources qui vous permettent de personnaliser les algorithmes qui génèrent des modèles d'exploration de données|[Personnaliser la Structure et les modèles d’exploration de données](../../analysis-services/data-mining/customize-mining-models-and-structure.md)|  
 |Fournit des liens vers des informations sur chacune des visionneuses de modèles d'exploration de données|[Visionneuses de modèle d’exploration de données](../../analysis-services/data-mining/data-mining-model-viewers.md)|  
-|En savoir plus sur la création d'un graphique de courbes d'élévation, d'un graphique des bénéfices ou d'une matrice de classification, ou sur le test d'une structure d'exploration de données|[Test et Validation &#40; exploration de données &#41;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)|  
+|En savoir plus sur la création d'un graphique de courbes d'élévation, d'un graphique des bénéfices ou d'une matrice de classification, ou sur le test d'une structure d'exploration de données|[Test et Validation & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/testing-and-validation-data-mining.md)|  
 |En savoir plus sur les options de traitement et les autorisations|[Traitement des objets d’exploration de données](../../analysis-services/data-mining/processing-data-mining-objects.md)|  
 |Fournit des informations supplémentaires sur Analysis Services|[Bases de données de modèle multidimensionnel ](../../analysis-services/multidimensional-models/multidimensional-model-databases-ssas.md)|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Concepteur d’exploration de données](../../analysis-services/data-mining/data-mining-designer.md)   
- [Création de modèles multidimensionnels à l’aide des outils de données SQL Server &#40; SSDT &#41;](../../analysis-services/multidimensional-models/creating-multidimensional-models-using-sql-server-data-tools-ssdt.md)   
+ [Création de modèles multidimensionnels à l’aide des outils de données SQL Server & #40 ; SSDT & #41 ;](../../analysis-services/multidimensional-models/creating-multidimensional-models-using-sql-server-data-tools-ssdt.md)   
  [Base de données d’espace de travail](../../analysis-services/tabular-models/workspace-database-ssas-tabular.md)  
   
   

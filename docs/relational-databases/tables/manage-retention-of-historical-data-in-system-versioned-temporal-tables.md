@@ -1,28 +1,26 @@
 ---
-title: "Gérer la rétention des données d’historique dans les tables temporelles avec version gérée par le système | Microsoft Docs"
-ms.custom: 
+title: Gérer la rétention des données d’historique dans les tables temporelles avec version gérée par le système | Microsoft Docs
+ms.custom: ''
 ms.date: 05/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-tables
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7925ebef-cdb1-4cfe-b660-a8604b9d2153
-caps.latest.revision: 
+caps.latest.revision: 23
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 41c64af6ffe805d6b0b92ffde0c7057a7cd2abca
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 924fa0d289c7225587962c9551d445d348f73939
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/04/2018
+ms.locfileid: "34563807"
 ---
 # <a name="manage-retention-of-historical-data-in-system-versioned-temporal-tables"></a>Gérer la rétention des données d’historique dans les tables temporelles avec version gérée par le système
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -56,7 +54,7 @@ ms.lasthandoff: 01/18/2018
   
 > **REMARQUE :**  la méthode Stretch Database vaut uniquement pour [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et ne s’applique pas à [!INCLUDE[sqldbesa](../../includes/sqldbesa-md.md)].  
   
- [Stretch Database](../../sql-server/stretch-database/stretch-database.md) de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] migre vos données d’historique en toute transparence vers Azure. Pour renforcer la sécurité, vous pouvez chiffrer les données en mouvement à l’aide de la fonctionnalité [Always Encrypted](https://msdnstage.redmond.corp.microsoft.com/library/mt163865.aspx) de SQL Server. De plus, vous pouvez utiliser la [sécurité au niveau des lignes](../../relational-databases/security/row-level-security.md) et les autres fonctionnalités de sécurité avancée de SQL Server avec Temporal et Stretch Database pour protéger vos données.  
+ [Stretch Database](../../sql-server/stretch-database/stretch-database.md) de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] migre vos données d’historique en toute transparence vers Azure. Pour renforcer la sécurité, vous pouvez chiffrer les données en mouvement à l’aide de la fonctionnalité [Always Encrypted](https://msdn.microsoft.com/library/mt163865.aspx) de SQL Server. De plus, vous pouvez utiliser la [sécurité au niveau des lignes](../../relational-databases/security/row-level-security.md) et les autres fonctionnalités de sécurité avancée de SQL Server avec Temporal et Stretch Database pour protéger vos données.  
   
  La méthode Stretch Database vous permet d’étendre tout ou partie des tables d’historique temporelles vers Azure. SQL Server déplace alors discrètement les données d’historique vers Azure. Le fait d’activer Strech pour une table d’historique ne change rien à la façon dont vous interagissez avec la table temporelle en termes de modification des données et d’interrogation temporelle.  
   

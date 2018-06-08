@@ -1,16 +1,15 @@
 ---
-title: "srv_parammaxlen (API de procédure stockée étendue) | Microsoft Docs"
-ms.custom: 
+title: srv_parammaxlen (API de procédure stockée étendue) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: extended-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - srv_parammaxlen
@@ -22,22 +21,21 @@ dev_langs:
 helpviewer_keywords:
 - srv_parammaxlen
 ms.assetid: 49bfc29d-f76a-4963-b0e6-b8532dfda850
-caps.latest.revision: 
+caps.latest.revision: 32
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 72ea59fa456192441921afb5aee4d7066cfb3dbc
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
-ms.translationtype: MT
+ms.openlocfilehash: 6a59c20ed8447e5c930e88b7a259bc63c95a3c8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="srvparammaxlen-extended-stored-procedure-api"></a>srv_parammaxlen (API de procédure stockée étendue)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
     
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez plutôt l'intégration du CLR.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Utilisez l’intégration CLR à la place.  
   
  Retourne la longueur de données maximale d'un paramètre d'appel de procédure stockée distante. Cette fonction a été remplacée par la fonction **srv_paraminfo**.  
   
@@ -62,7 +60,7 @@ n
  Indique le numéro du paramètre. Le premier paramètre est 1.  
   
 ## <a name="returns"></a>Valeur renvoyée  
- Longueur maximale, en octets, des données du paramètre. En l’absence de *n*ième paramètre ou de procédure stockée distante, la valeur -1 est retournée.  
+ Longueur maximale, en octets, des données du paramètre. En l’absence du *n*ième paramètre ou d’une procédure stockée distante, la valeur -1 est retournée.  
   
  Cette fonction retourne les valeurs suivantes, si le paramètre est l’un des types de données [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] suivants.  
   

@@ -1,27 +1,24 @@
 ---
-title: "À l’aide de plusieurs jeux de résultats | Documents Microsoft"
-ms.custom: 
+title: À l’aide de plusieurs jeux de résultats | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ab6a3cfa-073b-44e9-afca-a8675cfe5fd1
-caps.latest.revision: "33"
+caps.latest.revision: 33
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e76f30f5c6b7eb16351749086173bdceaa49f938
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: b4f3c8b75d18b598bfe43a48969f098022893c8b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-multiple-result-sets"></a>Utilisation de plusieurs jeux de résultats
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

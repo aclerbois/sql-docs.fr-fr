@@ -1,34 +1,30 @@
 ---
-title: "Lock:Deadlock Chain, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Lock:Deadlock Chain, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Deadlock Chain event class
 ms.assetid: 9883127b-aa34-4235-88cc-c161cd2112cc
-caps.latest.revision: 
+caps.latest.revision: 35
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5b22c7d953bbbe6417c207628b6e3d2faaf0de5a
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f75a0b3580e19791e189512dd0788d074f16cb2d
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="lockdeadlock-chain-event-class"></a>Classe d'événements Lock:Deadlock Chain
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Lock:Deadlock Chain est produite pour chaque participant dans un blocage.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La classe d'événements Lock:Deadlock Chain est produite pour chaque participant dans un blocage.  
   
  Utilisez la classe d'événements Lock:Deadlock Chain pour analyser les conditions d'un blocage. Ces informations sont utiles pour déterminer si les interblocages affectent les performances de votre application de manière significative et les objets qui sont concernés. Vous pouvez examiner le code de l'application qui modifie ces objets pour déterminer si des modifications peuvent être apportées pour minimiser les blocages.  
   

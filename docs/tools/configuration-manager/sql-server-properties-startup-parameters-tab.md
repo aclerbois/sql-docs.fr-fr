@@ -1,32 +1,28 @@
 ---
-title: "Propriétés de SQL Server (onglet Paramètres de démarrage) | Documents Microsoft"
-ms.custom: 
+title: Propriétés de SQL Server (onglet Paramètres de démarrage) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
-ms.component: configuration-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 16942624-5374-446c-8de4-ee6ed34d6e94
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c845f8c174f96ba2e0dd5595d49721ae800777e2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
-ms.translationtype: MT
+ms.openlocfilehash: f3020bba3dc9270744a1dae0e16994dddc002587
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-properties-startup-parameters-tab"></a>Propriétés SQL Server (onglet Paramètres de démarrage)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
-Utilisez cette boîte de dialogue pour ajouter ou supprimer des paramètres de démarrage pour le [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Les paramètres de démarrage peuvent avoir un effet considérable sur les performances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Avant d'ajouter ou de modifier des paramètres de démarrage, consultez la rubrique « Utilisation des options de démarrage du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] » dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
+  Utilisez cette boîte de dialogue pour ajouter ou supprimer des paramètres de démarrage pour le [!INCLUDE[ssDE](../../includes/ssde-md.md)]. Les paramètres de démarrage peuvent avoir un effet considérable sur les performances du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Avant d'ajouter ou de modifier des paramètres de démarrage, consultez la rubrique « Utilisation des options de démarrage du service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] » dans la documentation en ligne de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] .  
   
 ## <a name="options"></a>Options  
  **Spécifiez un paramètre de démarrage**  
@@ -38,7 +34,7 @@ Utilisez cette boîte de dialogue pour ajouter ou supprimer des paramètres de d
  Pour supprimer un paramètre, sélectionnez-le, puis cliquez sur **Supprimer**.  
   
 ## <a name="parameter-format"></a>Format du paramètre  
- N'entrez aucun séparateur entre les paramètres. Le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute automatiquement le séparateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]Gestionnaire de configuration met en œuvre les spécifications de paramètre suivantes.  
+ N'entrez aucun séparateur entre les paramètres. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ajoute automatiquement le séparateur. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] impose les spécifications de paramètre suivantes.  
   
 -   Les espaces de début et de fin sont supprimés des paramètres de démarrage.  
   
@@ -68,7 +64,7 @@ Utilisez cette boîte de dialogue pour ajouter ou supprimer des paramètres de d
   
 |Paramètre|Description courte|  
 |---------------|-----------------------|  
-|-m|Démarre une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en mode mono-utilisateur.|  
+|-M|Démarre une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] en mode mono-utilisateur.|  
 |-T1204|Retourne les ressources et les types de verrous participant à l'interblocage et la commande active affectée.|  
 |-T1224|Désactive l'escalade de verrous en fonction du nombre de verrous.|  
 |-T3608|Empêche [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de démarrer automatiquement et de récupérer des bases de données, sauf la base de données master.|  

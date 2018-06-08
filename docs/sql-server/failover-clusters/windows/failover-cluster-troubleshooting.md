@@ -1,34 +1,31 @@
 ---
-title: "Dépannage de clusters de basculement | Microsoft Docs"
-ms.custom: 
+title: Dépannage de clusters de basculement | Microsoft Docs
+ms.custom: ''
 ms.date: 10/21/2015
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - troublshooting, failover clustering
 - failover clustering, troubleshooting
 - cluster troubleshooting
 ms.assetid: 84012320-5a7b-45b0-8feb-325bf0e21324
-caps.latest.revision: "12"
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 5c68c3b282241cfe56e60762e70d2d22e4a64d7b
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 38748bfc0ff21b9920ba554e6d7e0e89d5020e95
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772529"
 ---
 # <a name="failover-cluster-troubleshooting"></a>Dépannage de clusters de basculement
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique aborde les sujets suivants :  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique aborde les sujets suivants :  
   
 -   Étapes de dépannage de base  
   
@@ -69,7 +66,7 @@ Le clustering de basculement est proposé avec une sécurité intégrée pour em
 -   [Correctifs logiciels et mises à jour recommandés pour les clusters de basculement basés sur Windows Server 2008](https://support.microsoft.com/kb/957311)  
   
 ## <a name="recovering-from-failover-cluster-failure"></a>Récupération à partir d'une défaillance de cluster de basculement  
- Généralement, une défaillance de cluster de basculement est due à l'une des deux causes suivantes :  
+ Généralement, une défaillance de cluster de basculement est due à l'une des deux causes suivantes :  
   
 -   Défaillance matérielle dans un nœud d'un cluster composé de deux nœuds. Cette erreur peut être due à une défaillance de la carte SCSI ou du système d'exploitation.  
   
@@ -190,7 +187,7 @@ Le clustering de basculement est proposé avec une sécurité intégrée pour em
   
  Si les procédures stockées étendues utilisent des composants COM, l'administrateur doit enregistrer les composants COM sur chaque nœud du cluster. Les informations pour le chargement et l'exécution des composants COM doivent figurer dans le Registre du nœud actif, afin que les composants soient créés. Dans le cas contraire, les informations sont conservées dans le Registre de l'ordinateur sur lequel les composants COM ont été enregistrés en premier lieu.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Afficher et lire les fichiers journaux d’installation de SQL Server](../../../database-engine/install-windows/view-and-read-sql-server-setup-log-files.md)   
  [Fonctionnement des procédures stockées étendues](../../../relational-databases/extended-stored-procedures-programming/how-extended-stored-procedures-work.md)   
  [Caractéristiques d'exécution des procédures stockées étendues](../../../relational-databases/extended-stored-procedures-programming/execution-characteristics-of-extended-stored-procedures.md)  

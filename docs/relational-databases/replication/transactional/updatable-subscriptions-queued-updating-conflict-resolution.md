@@ -1,17 +1,16 @@
 ---
-title: "Détection et résolution des conflits de mise à jour en attente | Microsoft Docs"
-ms.custom: 
+title: Détection et résolution des conflits de mise à jour en attente | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - conflict resolution [SQL Server replication], queued updating subscriptions
 - viewing queued updating conflicts
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - queued updating subscriptions [SQL Server replication]
 - articles [SQL Server replication], conflict resolution
 ms.assetid: 084ac587-25e7-4bd0-a385-556bbe07d02f
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e3af47060eddfcf706d84a6488aa82d6787699fd
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 813816639e32b92d9447547e7fcb53b8db5e8fee
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updatable-subscriptions---queued-updating-conflict-resolution"></a>Abonnements pouvant être mis à jour - Résolution des conflits de mise à jour en attente
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,14 @@
 ---
-title: "Chemin d’accès (Transact-SQL) | Documents Microsoft"
-ms.custom: 
+title: Chemin d’accès (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - PathName_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - PathName FILESTREAM [SQL Server]
 ms.assetid: 6b95ad90-6c82-4a23-9294-a2adb74934a3
-caps.latest.revision: 
+caps.latest.revision: 32
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 880ee799e833a3181d3ee1a6eaa51b25f1456a58
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 80fc13baa2d538e054ed88607cd4b45c6477cb6e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="pathname-transact-sql"></a>PathName (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,7 +49,7 @@ column_name.PathName ( @option [ , use_replica_computer_name ] )
  Demande de PathName pour une colonne de tout autre type de données ou pour un **varbinary (max)** columnthat n’a pas de provoquer une erreur de compilation de requête de la volonté d’attribut de stockage FILESTREAM.  
   
  *@option*  
- Entier [expression](../../t-sql/language-elements/expressions-transact-sql.md) qui définit comment le composant serveur du chemin d’accès doit être mis en forme. *@option*peut prendre l’une des valeurs suivantes. La valeur par défaut est 0.  
+ Entier [expression](../../t-sql/language-elements/expressions-transact-sql.md) qui définit comment le composant serveur du chemin d’accès doit être mis en forme. *@option* peut prendre l’une des valeurs suivantes. La valeur par défaut est 0.  
   
 |Valeur|Description|  
 |-----------|-----------------|  

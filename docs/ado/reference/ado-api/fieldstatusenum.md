@@ -1,33 +1,30 @@
 ---
 title: FieldStatusEnum | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - FieldStatusEnum
 helpviewer_keywords:
 - FieldStatusEnum enumeration [ADO]
 ms.assetid: e06da1e2-303f-41b2-a3b0-61e233da152c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e04f98c5691a66b02a4c5daa8d745f529a9820e0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: c4a64c48018b0a8012da631af5b4af0259f0b8e5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fieldstatusenum"></a>FieldStatusEnum
 Spécifie le [état](../../../ado/reference/ado-api/status-property-ado-field.md) d’un [objet Field](../../../ado/reference/ado-api/field-object.md).  

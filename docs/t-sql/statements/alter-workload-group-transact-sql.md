@@ -1,16 +1,14 @@
 ---
 title: ALTER WORKLOAD GROUP (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 01/04/2018
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/23/2018
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_WORKLOAD_GROUP_TSQL
@@ -20,23 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - ALTER WORKLOAD GROUP statement
 ms.assetid: 957addce-feb0-4e54-893e-5faca3cd184c
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 56
+author: edmacauley
+ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d48a892ef00610cc0d69ff8d2a36e0fce4be7704
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 32863fbfbc8849cc0561d4aecc4144800b67d523
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="alter-workload-group-transact-sql"></a>ALTER WORKLOAD GROUP (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Modifie une configuration de groupe de charge de travail Resource Governor existante, et éventuellement l’assigne à un pool de ressources Resource Governor.  
   
- ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).  
+ ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône de lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md).  
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -108,13 +105,13 @@ ALTER WORKLOAD GROUP { group_name | "default" }
 > Par défaut, Resource Governor n’empêche pas une demande de continuer si le temps maximal est dépassé. Toutefois, un événement sera généré. Pour plus d’informations, consultez [Classe d’événements CPU Threshold Exceeded](../../relational-databases/event-classes/cpu-threshold-exceeded-event-class.md). 
 
 > [!IMPORTANT]
-> À compter de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3 et quand l’[indicateur de trace 2422](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
+> À compter de [!INCLUDE[ssSQL15](../../includes/sssql15-md.md)]SP2 et de [!INCLUDE[ssSQL17](../../includes/sssql17-md.md)] CU3, quand [l’indicateur de trace 2422](../../t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql.md) est utilisé, Resource Governor abandonne une demande en cas de dépassement de la durée maximale.
   
  REQUEST_MEMORY_GRANT_TIMEOUT_SEC =*value*  
  Spécifie la durée maximale, en secondes, pendant laquelle une requête peut attendre que l'allocation de mémoire (mémoire tampon de travail) devienne disponible.  
   
 > [!NOTE]  
->  Une requête n'échoue pas toujours lorsque le délai d'expiration d'allocation mémoire est atteint. Une requête échoue seulement si le nombre de requêtes exécutées simultanément est trop élevé. Autrement, la requête risque d'obtenir uniquement l'allocation mémoire minimale, d'où une dégradation des performances.  
+> Une requête n'échoue pas toujours lorsque le délai d'expiration d'allocation mémoire est atteint. Une requête échoue seulement si le nombre de requêtes exécutées simultanément est trop élevé. Autrement, la requête risque d'obtenir uniquement l'allocation mémoire minimale, d'où une dégradation des performances.  
   
  *value* doit être un entier positif. La valeur par défaut de *value*, 0, utilise un calcul interne basé sur le coût de requête pour déterminer le délai maximal.  
   
@@ -122,10 +119,10 @@ ALTER WORKLOAD GROUP { group_name | "default" }
  Spécifie le degré maximal de parallélisme (DOP) pour les demandes parallèles. *value* doit être égal à 0 ou un entier positif compris entre 1 et 255. Quand *value* a la valeur 0, le serveur choisit le degré maximal de parallélisme. Il s’agit de la valeur par défaut et recommandée.  
   
 > [!NOTE]  
->  La valeur réelle définie par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour MAX_DOP peut être inférieure à la valeur spécifiée. La valeur finale est déterminée par la formule min(255, *nombre d’unités centrales)*.  
+> La valeur réelle définie par le [!INCLUDE[ssDE](../../includes/ssde-md.md)] pour MAX_DOP peut être inférieure à la valeur spécifiée. La valeur finale est déterminée par la formule min(255, *nombre d’unités centrales)*.  
   
 > [!CAUTION]  
->  La modification de MAX_DOP peut affecter de façon négative les performances d'un serveur. Si vous devez modifier MAX_DOP, nous recommandons qu'il soit défini sur une valeur inférieure ou égale au nombre maximal de planificateurs matériels présents dans un nœud NUMA unique. Nous vous recommandons de ne pas affecter à MAX_DOP une valeur supérieure à 8.  
+> La modification de MAX_DOP peut affecter de façon négative les performances d'un serveur. Si vous devez modifier MAX_DOP, nous recommandons qu'il soit défini sur une valeur inférieure ou égale au nombre maximal de planificateurs matériels présents dans un nœud NUMA unique. Nous vous recommandons de ne pas affecter à MAX_DOP une valeur supérieure à 8.  
   
  MAX_DOP est géré comme suit :  
   
@@ -148,7 +145,7 @@ ALTER WORKLOAD GROUP { group_name | "default" }
  L'option "default" doit être placée entre des guillemets doubles ("") ou des crochets ([]) lorsqu'elle est utilisée avec l'instruction ALTER WORKLOAD GROUP pour éviter tout conflit avec DEFAULT, qui est un mot réservé au système. Pour plus d'informations, consultez [Database Identifiers](../../relational-databases/databases/database-identifiers.md).  
   
 > [!NOTE]  
->  L'option "default" respecte la casse.  
+> L'option "default" respecte la casse.  
   
 ## <a name="remarks"></a>Notes   
  L'instruction ALTER WORKLOAD GROUP est autorisée sur le groupe par défaut.  
@@ -160,7 +157,7 @@ ALTER WORKLOAD GROUP { group_name | "default" }
 -   Si vous modifiez MAX_DOP de 1 à 0 ou une valeur supérieure à 1, l’exécution de DBCC FREEPROCCACHE n’est pas obligatoire. Toutefois, les plans en série ne pouvant pas s’exécuter en parallèle, l’effacement du cache respectif permettra aux nouveaux plans d’être compilés à l’aide du parallélisme.  
   
 > [!CAUTION]  
->  L’effacement des plans mis en cache à partir d’un pool de ressources associé à plusieurs groupes de charges de travail affecte tous les groupes de charges de travail contenant le pool de ressources défini par l’utilisateur identifié par *pool_name*.  
+> L’effacement des plans mis en cache à partir d’un pool de ressources associé à plusieurs groupes de charges de travail affecte tous les groupes de charges de travail contenant le pool de ressources défini par l’utilisateur identifié par *pool_name*.  
   
  Lorsque vous exécutez des instructions DDL, nous vous recommandons de connaître les états du gouverneur de ressources. Pour plus d’informations, consultez [Resource Governor](../../relational-databases/resource-governor/resource-governor.md).  
   
@@ -176,7 +173,7 @@ ALTER WORKLOAD GROUP { group_name | "default" }
 ## <a name="examples"></a>Exemples  
  L'exemple suivant indique comment modifier l'importance des demandes dans le groupe par défaut en remplaçant la valeur `MEDIUM` par `LOW`.  
   
-```  
+```sql  
 ALTER WORKLOAD GROUP "default"  
 WITH (IMPORTANCE = LOW);  
 GO  
@@ -186,7 +183,7 @@ GO
   
  L'exemple suivant indique comment déplacer un groupe de charge de travail du pool dans lequel il est contenu vers le pool par défaut.  
   
-```  
+```sql  
 ALTER WORKLOAD GROUP adHoc  
 USING [default];  
 GO  

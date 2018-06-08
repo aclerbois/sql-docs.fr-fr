@@ -1,33 +1,31 @@
 ---
 title: common criteria compliance enabled (option de configuration de serveur) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: common criteria compliance
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- common criteria compliance
 helpviewer_keywords:
 - CC (common criteria) [Database Engine]
 - common criteria compliance [Database Engine]
 - Risidual Information Protection [Database Engine]
 - RIP (Residual Information Protection)
 ms.assetid: 61766eea-c450-408d-af33-fbe7ef8c9ff2
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ab3eed80b601275c2d69a33689b396ff0fac563e
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 320c81ef93d11e1ebd73c861617be322a99f2655
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="common-criteria-compliance-enabled-server-configuration-option"></a>common criteria compliance enabled (option de configuration de serveur)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

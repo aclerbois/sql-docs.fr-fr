@@ -1,16 +1,15 @@
 ---
-title: "Se connecter à un serveur de rapports dans Management Studio | Microsoft Docs"
-ms.custom: 
+title: Se connecter à un serveur de rapports dans Management Studio | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.connecttors.connectionproperties.f1
 - sql13.swb.connecttors.login.f1
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - report servers [Reporting Services], registering
 - Connect to Server dialog box, Reporting Services
 ms.assetid: c875ff87-ee7d-443a-a702-bdb4b6c27c6e
-caps.latest.revision: "53"
+caps.latest.revision: 53
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 951f22989a1fb2bb725073cd27da6f1307c71551
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 96d62699a9745543973976c68bcf212f041deead
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-a-report-server-in-management-studio"></a>Se connecter à un serveur de rapports dans Management Studio
   [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssManStudio](../../includes/ssmanstudio-md.md)] fournit l’Explorateur d’objets, qui vous permet de vous connecter à n’importe quel serveur de la famille [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et de parcourir son contenu sous forme graphique. Pour Reporting Services, vous pouvez utiliser l'Explorateur d'objets pour effectuer les opérations suivantes :  

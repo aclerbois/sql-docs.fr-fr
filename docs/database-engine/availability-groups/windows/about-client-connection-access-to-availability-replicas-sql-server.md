@@ -1,16 +1,13 @@
 ---
-title: "À propos de l’accès de la connexion client aux réplicas de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: À propos de l’accès de la connexion client aux réplicas de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], availability replicas
 - Availability Groups [SQL Server], readable secondary replicas
@@ -19,19 +16,20 @@ helpviewer_keywords:
 - Availability Groups [SQL Server], client connectivity
 - Availability Groups [SQL Server], active secondary replicas
 ms.assetid: 29027e46-43e4-4b45-b650-c4cdeacdf552
-caps.latest.revision: "16"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 16
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b73573c8fb57c50bbca5e74587952e7ed50fa307
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 4a96778c40315871052aeb8d1ba2f5369c2c14ef
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769305"
 ---
 # <a name="about-client-connection-access-to-availability-replicas-sql-server"></a>À propos de l'accès de la connexion client aux réplicas de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Dans un groupe de disponibilité Always On, vous pouvez configurer un ou plusieurs réplicas de disponibilité pour autoriser les connexions en lecture seule lors d’une exécution sous le rôle secondaire (autrement dit, avec une exécution en tant que réplica secondaire). Vous pouvez également configurer chaque réplica de disponibilité afin d'autoriser ou exclure les connexions en lecture seule lors d'une exécution sous le rôle principal (autrement dit, avec une exécution comme réplica principal).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Dans un groupe de disponibilité Always On, vous pouvez configurer un ou plusieurs réplicas de disponibilité pour autoriser les connexions en lecture seule lors d’une exécution sous le rôle secondaire (autrement dit, avec une exécution en tant que réplica secondaire). Vous pouvez également configurer chaque réplica de disponibilité afin d'autoriser ou exclure les connexions en lecture seule lors d'une exécution sous le rôle principal (autrement dit, avec une exécution comme réplica principal).  
   
  Pour faciliter l'accès client aux bases de données primaires ou secondaires d'un groupe de disponibilité donné, vous devez définir un écouteur de groupe de disponibilité. Par défaut, l'écouteur de groupe de disponibilité dirige les connexions entrantes vers le réplica principal. Toutefois, vous pouvez configurer un groupe de disponibilité pour prendre en charge le routage en lecture seule, qui permet à son écouteur de groupe de disponibilité de rediriger les demandes de connexion des applications avec intention de lecture vers un réplica secondaire accessible en lecture. Pour plus d’informations, consultez [Configurer le routage en lecture seule pour un groupe de disponibilité &#40;SQL Server&#41;](../../../database-engine/availability-groups/windows/configure-read-only-routing-for-an-availability-group-sql-server.md).  
   

@@ -1,16 +1,14 @@
 ---
-title: "Filtrage des valeurs à l’aide de SQL : limit-champ et SQL : limit-value (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: 'Filtrage des valeurs à l’aide de SQL : limit-champ et SQL : limit-value (SQLXML 4.0) | Documents Microsoft'
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - annotated XSD schemas, filtering values
@@ -21,20 +19,20 @@ helpviewer_keywords:
 - sql:limit-value
 - filtering [SQLXML]
 ms.assetid: c0f7ae92-eeec-430e-a66a-f22c3ae64a5e
-caps.latest.revision: 
+caps.latest.revision: 30
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 77113446bfea793621c13567bdb30ff7381290ef
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cc72a5c28166d3eac2b1ee9200bb1c6549b818cf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="filtering-values-using-sqllimit-field-and-sqllimit-value-sqlxml-40"></a>Filtrage de valeurs à l'aide des annotations sql:limit-field et sql:limit-value (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Vous pouvez limiter les lignes qui sont retournées à partir d'une requête de base de données et d'après une valeur de limitation. Le **SQL : limit-champ** et **SQL : limit-valeur** les annotations sont utilisées pour identifier la colonne de base de données qui contient les valeurs de limitation et spécifiez une valeur de limitation spécifique à utiliser pour filtrer les données retournées.  
+  Vous pouvez limiter les lignes qui sont retournées à partir d'une requête de base de données et d'après une valeur de limitation. Le **SQL : limit-champ** et **SQL : limit-valeur** les annotations sont utilisées pour identifier la colonne de base de données qui contient les valeurs de limitation et spécifiez une valeur de limitation spécifique à utiliser pour filtrer les données retournées.  
   
  Le **SQL : limit-champ** annotation est utilisée pour identifier une colonne qui contient une valeur de limitation ; elle n’est autorisée sur chaque élément ou attribut mappé.  
   
@@ -313,9 +311,9 @@ Vous pouvez limiter les lignes qui sont retournées à partir d'une requête de 
     ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [float et real &#40; Transact-SQL &#41;](../../t-sql/data-types/float-and-real-transact-sql.md)   
- [NCHAR et nvarchar &#40; Transact-SQL &#41;](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md)   
+ [float et real &#40;Transact-SQL&#41;](../../t-sql/data-types/float-and-real-transact-sql.md)   
+ [NCHAR et nvarchar &#40;Transact-SQL&#41;](../../t-sql/data-types/nchar-and-nvarchar-transact-sql.md)   
  [Installation de SQL Server Native Client](../../relational-databases/native-client/applications/installing-sql-server-native-client.md)   
- [À l’aide de XSD schémas annotés dans les requêtes &#40; SQLXML 4.0 &#41;](../../relational-databases/sqlxml/annotated-xsd-schemas/using-annotated-xsd-schemas-in-queries-sqlxml-4-0.md)  
+ [À l’aide de XSD schémas annotés dans les requêtes &#40;SQLXML 4.0&#41;](../../relational-databases/sqlxml/annotated-xsd-schemas/using-annotated-xsd-schemas-in-queries-sqlxml-4-0.md)  
   
   

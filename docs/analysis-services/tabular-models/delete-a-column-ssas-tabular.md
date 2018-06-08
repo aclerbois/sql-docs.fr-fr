@@ -1,31 +1,23 @@
 ---
 title: Supprimer une colonne | Documents Microsoft
-ms.custom: 
-ms.date: 02/22/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 703db83b-e554-450e-813e-23ad08c1cdad
-caps.latest.revision: 
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c18504b3e6430807f124938b60d7f022a8050379
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 4e850740754fea16aa82c60b3abda9f86bafeaff
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="delete-a-column"></a>Supprimer une colonne 
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
-Cet article décrit comment supprimer une colonne d’une table de modèle tabulaire.  
+  Cet article décrit comment supprimer une colonne d’une table de modèle tabulaire.  
   
 ## <a name="delete-a-model-table-column"></a>Supprimer une colonne de table de modèle  
   

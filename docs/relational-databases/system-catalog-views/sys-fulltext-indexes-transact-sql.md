@@ -1,16 +1,14 @@
 ---
 title: Sys.fulltext_indexes (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-catalog-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - fulltext_indexes
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - sys.fulltext_indexes catalog view
 - full-text indexes [SQL Server], properties
 ms.assetid: 7fc10fdc-370f-4927-bba0-b76108a7508e
-caps.latest.revision: 
+caps.latest.revision: 40
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c6f19f05239629553594f52f30fe2eb4ef0854cb
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 3d70bde5e89591257b185bbe52b8d9b1b8ec00a2
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfulltextindexes-transact-sql"></a>sys.fulltext_indexes (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -55,7 +53,7 @@ ms.lasthandoff: 02/03/2018
 |**incremental_timestamp**|**binary(8)**|Valeur d'horodatage à utiliser pour l'analyse incrémentielle suivante.<br /><br /> NULL = aucune.|  
 |**stoplist_id**|**int**|ID de la [liste de mots vides](../../relational-databases/search/configure-and-manage-stopwords-and-stoplists-for-full-text-search.md) associé à cet index de recherche en texte intégral.|  
 |**data_space_id**|**int**|Groupe de fichiers où réside cet index de recherche en texte intégral.|  
-|**property_list_id**|**int**|ID de la liste de propriétés de recherche associée à cet index de recherche en texte intégral. NULL indique qu'aucune liste de propriétés de recherche n'est associée à l'index de recherche en texte intégral. Pour obtenir plus d’informations sur cette liste de propriétés de recherche, utilisez le [sys.registered_search_property_lists &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-registered-search-property-lists-transact-sql.md) affichage catalogue.|  
+|**property_list_id**|**int**|ID de la liste de propriétés de recherche associée à cet index de recherche en texte intégral. NULL indique qu'aucune liste de propriétés de recherche n'est associée à l'index de recherche en texte intégral. Pour obtenir plus d’informations sur cette liste de propriétés de recherche, utilisez la [sys.registered_search_property_lists &#40;Transact-SQL&#41; ](../../relational-databases/system-catalog-views/sys-registered-search-property-lists-transact-sql.md) affichage catalogue.|  
   
 ## <a name="permissions"></a>Autorisations  
  [!INCLUDE[ssCatViewPerm](../../includes/sscatviewperm-md.md)]  
@@ -64,7 +62,7 @@ ms.lasthandoff: 02/03/2018
  L'exemple ci-après utilise un index de recherche en texte intégral sur la table `HumanResources.JobCandidate` de l'exemple de base de données `AdventureWorks2012`. L'exemple retourne l'ID d'objet de la table, l'ID de la liste de propriétés de recherche et l'ID de la liste de mots vides utilisée par l'index de recherche en texte intégral.  
   
 > [!NOTE]  
->  Pour l’exemple de code qui crée cet index de recherche en texte intégral, consultez la section « Exemples » de [CREATE FULLTEXT INDEX &#40; Transact-SQL &#41; ](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
+>  Pour l’exemple de code qui crée cet index de recherche en texte intégral, consultez la section « Exemples » de [CREATE FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-fulltext-index-transact-sql.md).  
   
 ```  
 USE AdventureWorks2012;  
@@ -78,10 +76,10 @@ GO
  [sys.fulltext_index_fragments &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-fulltext-index-fragments-transact-sql.md)   
  [sys.fulltext_index_columns &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-fulltext-index-columns-transact-sql.md)   
  [sys.fulltext_index_catalog_usages &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-fulltext-index-catalog-usages-transact-sql.md)   
- [Affichages catalogue d’objets &#40; Transact-SQL &#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
+ [Vues de catalogue d’objets &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/object-catalog-views-transact-sql.md)   
  [Affichages catalogue &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/catalog-views-transact-sql.md)   
  [Créer et gérer des index de recherche en texte intégral](../../relational-databases/search/create-and-manage-full-text-indexes.md)   
- [DROP FULLTEXT INDEX &#40; Transact-SQL &#41;](../../t-sql/statements/drop-fulltext-index-transact-sql.md)   
+ [DROP FULLTEXT INDEX & #40 ; Transact-SQL & #41 ;](../../t-sql/statements/drop-fulltext-index-transact-sql.md)   
  [CREATE FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/create-fulltext-index-transact-sql.md)   
  [ALTER FULLTEXT INDEX &#40;Transact-SQL&#41;](../../t-sql/statements/alter-fulltext-index-transact-sql.md)  
   

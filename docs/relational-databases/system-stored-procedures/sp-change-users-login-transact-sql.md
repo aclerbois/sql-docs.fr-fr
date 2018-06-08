@@ -1,16 +1,14 @@
 ---
 title: sp_change_users_login (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 12/13/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_change_users_login
@@ -20,21 +18,20 @@ dev_langs:
 helpviewer_keywords:
 - sp_change_users_login
 ms.assetid: 1554b39f-274b-4ef8-898e-9e246b474333
-caps.latest.revision: 
+caps.latest.revision: 43
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 207272f7644ab39055b7c6bb330faf6053353601
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: f4a7b50619ecb4196b5c88ac0b237a5cff8ecb73
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spchangeuserslogin-transact-sql"></a>sp_change_users_login (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
 
-  Mappe un utilisateur de base de données existant à un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)]Utilisez [ALTER USER](../../t-sql/statements/alter-user-transact-sql.md) à la place.  
+  Mappe un utilisateur de base de données existant à un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. [!INCLUDE[ssNoteDepFutureAvoid](../../includes/ssnotedepfutureavoid-md.md)] Utilisez [ALTER USER](../../t-sql/statements/alter-user-transact-sql.md) à la place.  
   
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
@@ -64,7 +61,7 @@ sp_change_users_login [ @Action = ] 'action'
  Nom d'un utilisateur dans la base de données active. *utilisateur* est **sysname**, avec NULL comme valeur par défaut.  
   
  [ @LoginName=] '*connexion*'  
- Est le nom d'un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *connexion* est **sysname**, avec NULL comme valeur par défaut.  
+ Est le nom d'un compte de connexion [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *login* est de type **sysname**, avec NULL comme valeur par défaut.  
   
  [ @Password=] '*mot de passe*'  
  Mot de passe affecté au nouveau [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion qui est créée en spécifiant **Auto_Fix**. Si une connexion correspondante existe déjà, l’utilisateur et le compte de connexion sont mappés et *mot de passe* est ignoré. Si une connexion correspondante n’existe pas, sp_change_users_login crée un [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] connexion et lui affecte *mot de passe* comme mot de passe pour le compte de connexion. *mot de passe* est **sysname**, et ne doit pas être NULL.  
@@ -90,7 +87,7 @@ sp_change_users_login [ @Action = ] 'action'
   
  La procédure sp_change_users_login ne peut pas être exécutée dans une transaction définie par l'utilisateur.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle de base de données fixe db_owner. Seuls les membres du rôle serveur fixe sysadmin peuvent spécifier le **Auto_Fix** option.  
   
 ## <a name="examples"></a>Exemples  
@@ -127,10 +124,10 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [CREATE LOGIN &#40;Transact-SQL&#41;](../../t-sql/statements/create-login-transact-sql.md)   
  [sp_adduser &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-adduser-transact-sql.md)   
- [sp_helplogins &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-helplogins-transact-sql.md)   
+ [sp_helplogins &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helplogins-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
  [sys.database_principals &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-database-principals-transact-sql.md)  
   

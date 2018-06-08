@@ -1,16 +1,14 @@
 ---
-title: "Instructions de génération de résultat et sans résultat | Documents Microsoft"
-ms.custom: 
+title: Instructions de génération de résultat et sans résultat | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - result-generating statements [ODBC]
 - batches [ODBC], result-generating statements
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - SQL statements [ODBC], batches
 - result-free statements [ODBC]
 ms.assetid: 2f3475d1-3999-4dd8-aba2-a6e1299c95f8
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ef4e297719d875b70d76c94c58b5c450740d457f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6d314aa68c02a227f84e6785b722f44dd68964d9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="result-generating-and-result-free-statements"></a>Instructions de génération de résultat et sans résultat
 Instructions SQL peuvent être faiblement divisées en cinq catégories :  

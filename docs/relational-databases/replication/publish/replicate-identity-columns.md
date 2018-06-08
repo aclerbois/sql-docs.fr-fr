@@ -1,17 +1,16 @@
 ---
-title: "Répliquer des colonnes d’identité | Microsoft Docs"
-ms.custom: 
+title: Répliquer des colonnes d’identité | Microsoft Docs
+ms.custom: ''
 ms.date: 10/04/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - identities [SQL Server replication]
 - identity values [SQL Server replication]
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - transactional replication, identity range management
 - identity columns [SQL Server], replication
 ms.assetid: eb2f23a8-7ec2-48af-9361-0e3cb87ebaf7
-caps.latest.revision: 
+caps.latest.revision: 51
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 935a1cce6f05098967baa30a29979d663696bd3f
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 56ceedb5582b5496dc3a82a382787cd7e6c71b35
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="replicate-identity-columns"></a>Répliquer des colonnes d'identité
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

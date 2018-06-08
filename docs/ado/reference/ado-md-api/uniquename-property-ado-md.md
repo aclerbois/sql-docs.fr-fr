@@ -1,17 +1,15 @@
 ---
-title: "UniqueName, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: UniqueName, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Level::UniqueName
@@ -22,16 +20,15 @@ f1_keywords:
 helpviewer_keywords:
 - UniqueName property [ADO MD]
 ms.assetid: 5b977956-e252-4861-8425-f1aaf6b80130
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d3ba61914c7f0c16ab886b9cedbdcb603b44b139
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3ab9eb8efebcc010117ba1de551737c50d82b1bb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="uniquename-property-ado-md"></a>UniqueName, propriété (ADO MD)
 Indique un nom non ambigu pour l’objet actuel.  

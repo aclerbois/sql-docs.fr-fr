@@ -1,17 +1,15 @@
 ---
-title: "WillChangeRecordset et RecordsetChangeComplete, événements (ADO) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: WillChangeRecordset et RecordsetChangeComplete, événements (ADO) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Recordset::RecordsetChangeComplete
@@ -22,16 +20,15 @@ helpviewer_keywords:
 - RecordsetChangeComplete event [ADO]
 - WillChangeRecordset event [ADO]
 ms.assetid: d5d44659-e0d9-46d9-a297-99c43555082f
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b720776cd7c230e55e77cb37f7a66de3ad6772b6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 56c6c85597af2724d3f00e2bb5096508f52471d4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="willchangerecordset-and-recordsetchangecomplete-events-ado"></a>WillChangeRecordset et RecordsetChangeComplete, événements (ADO)
 Le **WillChangeRecordset** événement est appelé avant qu’une opération en attente modifie la [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md). Le **RecordsetChangeComplete** événement est appelé après le **Recordset** a changé.  

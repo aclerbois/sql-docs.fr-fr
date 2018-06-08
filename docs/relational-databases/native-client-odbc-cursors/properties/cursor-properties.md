@@ -1,15 +1,14 @@
 ---
-title: "Propriétés du curseur | Documents Microsoft"
-ms.custom: 
+title: Propriétés du curseur | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-cursors
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQL Server Native Client ODBC driver, cursors
@@ -17,16 +16,17 @@ helpviewer_keywords:
 - ODBC applications, cursors
 - ODBC cursors, cursor behaviors
 ms.assetid: e70960e1-2085-46ed-9d55-aeb8c3532c84
-caps.latest.revision: 
+caps.latest.revision: 30
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4d3d20e5563b7e1cde9aa7b1165814e282b7d457
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 4cb3e947e28fdf25f43f539591c8fda7df775e72
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707997"
 ---
 # <a name="cursor-properties"></a>Propriétés de curseur
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -36,11 +36,11 @@ ms.lasthandoff: 01/24/2018
   
 -   [Taille de l’ensemble de lignes d’un curseur](../../../relational-databases/native-client-odbc-cursors/properties/cursor-rowset-size.md)  
   
--   [Accès concurrentiel au curseur &#40; ODBC &#41;](../../../relational-databases/native-client-odbc-cursors/properties/cursor-concurrency-odbc.md)  
+-   [Accès concurrentiel au curseur &#40;ODBC&#41;](../../../relational-databases/native-client-odbc-cursors/properties/cursor-concurrency-odbc.md)  
   
 -   [Niveau d’isolation des transactions de curseur](../../../relational-databases/native-client-odbc-cursors/properties/cursor-transaction-isolation-level.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [À l’aide de curseurs &#40; ODBC &#41;](../../../relational-databases/native-client-odbc-cursors/using-cursors-odbc.md)  
+ [L’utilisation de curseurs &#40;ODBC&#41;](../../../relational-databases/native-client-odbc-cursors/using-cursors-odbc.md)  
   
   

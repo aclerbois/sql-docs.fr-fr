@@ -1,32 +1,31 @@
 ---
-title: "Propriétés de l’abonnement - Abonné | Microsoft Docs"
-ms.custom: 
+title: Propriétés de l’abonnement - Abonné | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.newsubwizard.subproperties.subscriber.f1
 helpviewer_keywords:
 - Subscription Properties dialog box
 ms.assetid: bef66929-3234-4a45-8ec4-3b271519d07a
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb2d94f889cd593e07331f19fd09ef29d94479b8
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 055577c76f40d2138f74e0366032be37330775e6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="subscription-properties---subscriber"></a>Propriétés de l'abonnement - Abonné
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

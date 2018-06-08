@@ -1,31 +1,29 @@
 ---
 title: Gestionnaire de connexions Azure HDInsight | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: connection-manager
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - SQL13.DTS.DESIGNER.AFPHDICM.F1
 - SQL14.DTS.DESIGNER.AFPHDICM.F1
 ms.assetid: 29d01bd9-8b38-43b1-b937-67f8aea57c0f
-caps.latest.revision: 
+caps.latest.revision: 4
 author: Lingxi-Li
 ms.author: lingxl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ead8a391d34f3d679beee4e85aed5bacd0e1334
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 1d28692b567f68b7be67df92adf314b5fde93a63
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="azure-hdinsight-connection-manager"></a>Gestionnaire de connexions Azure HDInsight
 Le **gestionnaire de connexions Azure HDInsight** permet à un package SSIS de se connecter à un cluster Azure HDInsight.

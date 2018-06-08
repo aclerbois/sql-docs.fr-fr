@@ -1,34 +1,33 @@
 ---
-title: "Témoin de mise en miroir de base de données | Microsoft Docs"
-ms.custom: 
+title: Témoin de mise en miroir de base de données | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - witness [SQL Server], about witness
 - witness [SQL Server]
 - database mirroring [SQL Server], witness
 ms.assetid: 05606de8-90c3-451a-938d-1ed34211dad7
-caps.latest.revision: "72"
+caps.latest.revision: 72
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 81c8212ce3e85c15e6015e64474b50be394f7869
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: c232b77c1d9207d95106b2aae44db4c897098cc0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring-witness"></a>Témoin de mise en miroir de base de données
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pour permettre la prise en charge du basculement automatique, une session de mise en miroir de bases de données doit être configurée en mode haute sécurité et disposer d’une troisième instance de serveur, appelée *témoin*. Le témoin correspond à une instance facultative de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui active le serveur miroir dans une session en mode haute sécurité pour déterminer s'il est nécessaire d'initier un basculement automatique. Contrairement aux deux autres, le témoin ne dessert pas la base de données. La prise en charge du basculement automatique est le seul rôle rempli par le témoin.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pour permettre la prise en charge du basculement automatique, une session de mise en miroir de bases de données doit être configurée en mode haute sécurité et disposer d’une troisième instance de serveur, appelée *témoin*. Le témoin correspond à une instance facultative de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui active le serveur miroir dans une session en mode haute sécurité pour déterminer s'il est nécessaire d'initier un basculement automatique. Contrairement aux deux autres, le témoin ne dessert pas la base de données. La prise en charge du basculement automatique est le seul rôle rempli par le témoin.  
   
 > [!NOTE]  
 >  En mode haute sécurité, le témoin peut avoir une influence négative sur la disponibilité. Si un témoin est configuré pour une session de mise en miroir de base de données, le serveur principal doit être connecté à au moins une des autres instances de serveur, le serveur miroir ou le témoin, ou les deux. Sinon, la base de données n'est plus disponible et forcer le service (perte de données possible) est impossible. Par conséquent, en mode haute performance, il est fortement recommandé de toujours conserver le témoin défini sur OFF. Pour plus d’informations sur l’incidence d’un témoin sur le mode hautes performances, consultez [Modes de fonctionnement de la mise en miroir de bases de données](../../database-engine/database-mirroring/database-mirroring-operating-modes.md).  

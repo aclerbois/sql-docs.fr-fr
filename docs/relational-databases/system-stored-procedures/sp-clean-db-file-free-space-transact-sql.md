@@ -1,16 +1,14 @@
 ---
 title: sp_clean_db_file_free_space (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_clean_db_file_free_space
@@ -21,16 +19,16 @@ helpviewer_keywords:
 - ghost records
 - sp_clean_db_file_free_space
 ms.assetid: 3eb53a67-969d-4cb8-9681-b1c8e6fd55b6
-caps.latest.revision: 
+caps.latest.revision: 11
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 437b1e3887f47b3c310ca49df3033f82b85037ca
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 52f5fb5b32a49ef6bcb4922069dc7f5250c771c9
+ms.sourcegitcommit: e37f017cbebb22ad9d12e4daf863190933a4d8a1
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34689127"
 ---
 # <a name="spcleandbfilefreespace-transact-sql"></a>sp_clean_db_file_free_space (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -71,7 +69,7 @@ sp_clean_db_file_free_space
   
  Le [sp_clean_db_free_space](../../relational-databases/system-stored-procedures/sp-clean-db-free-space-transact-sql.md) procédure stockée nettoie tous les fichiers de la base de données.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle de base de données db_owner.  
   
 ## <a name="examples"></a>Exemples  
@@ -85,6 +83,7 @@ EXEC sp_clean_db_file_free_space
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)
+ <br>[Guide de processus de nettoyage des enregistrements fantômes](../ghost-record-cleanup-process-guide.md) 
   
   

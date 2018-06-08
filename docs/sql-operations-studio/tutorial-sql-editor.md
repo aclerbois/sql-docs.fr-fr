@@ -1,24 +1,23 @@
 ---
-title: "Didacticiel : Utiliser l’éditeur SQL opérations Studio (version préliminaire) Transact-SQL pour créer des objets de base de données | Documents Microsoft"
-description: "Ce didacticiel présente les principales fonctionnalités qui simplifient l’utilisation de T-SQL dans Studio des opérations SQL (version préliminaire)."
+title: 'Didacticiel : Utiliser l’éditeur SQL opérations Studio (version préliminaire) Transact-SQL pour créer des objets de base de données | Documents Microsoft'
+description: Ce didacticiel présente les principales fonctionnalités qui simplifient l’utilisation de T-SQL dans Studio des opérations SQL (version préliminaire).
 ms.custom: tools|sos
 ms.date: 03/13/2018
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: tutorial
-author: erickangMSFT
-ms.author: erickang
+author: stevestein
+ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db9cc8185742980b649f9fcc11eced5687201464
-ms.sourcegitcommit: 6b1618aa3b24bf6759b00a820e09c52c4996ca10
+ms.openlocfilehash: 5ea03ea9ee0d45e15ec81dda9be95d38ad99c6d6
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="tutorial-use-the-transact-sql-editor-to-create-database-objects---includename-sosincludesname-sos-shortmd"></a>Didacticiel : Utiliser l’éditeur Transact-SQL pour créer des objets de base de données- [!INCLUDE[name-sos](../includes/name-sos-short.md)]
 
@@ -57,7 +56,7 @@ Ce didacticiel nécessite SQL Server ou la base de données SQL Azure *TutorialD
 
    ![widget de la recherche rapide](./media/tutorial-sql-editor/quick-search-widget.png)
 
-1. Modifier la **messagerie** colonne dans la première ligne, type  *orlando0@adventure-works.com* et appuyez sur **entrée** pour enregistrer les modifications.
+1. Modifier la **messagerie** colonne dans la première ligne, type *orlando0@adventure-works.com*et appuyez sur **entrée** pour enregistrer les modifications.
 
    ![modifier des données](./media/tutorial-sql-editor/edit-data.png)
 
@@ -70,11 +69,11 @@ Opérations de SQL Studio fournit plusieurs extraits de code T-SQL intégrés po
 
 2. Type **sql** dans l’éditeur, la flèche vers le bas pour **sqlCreateStoredProcedure**, puis appuyez sur la *onglet* clé (ou *entrée*) pour charger la créer stockée extrait de la procédure.
 
-   ![snippet-list](./media/tutorial-sql-editor/snippet-list.png)
+   ![liste de l’extrait de code](./media/tutorial-sql-editor/snippet-list.png)
 
 3. L’extrait de code de procédure stockée créer comporte deux champs défini pour la modification rapide, *StoredProcedureName* et *SchemaName*. Sélectionnez *StoredProcedureName*, avec le bouton droit, puis sélectionnez **modifier toutes les Occurrences**. Tapez maintenant *getCustomer* et tous les *StoredProcedureName* pour modifier les entrées *getCustomer*.
 
-   ![snippet](./media/tutorial-sql-editor/snippet.png)
+   ![Extrait de code](./media/tutorial-sql-editor/snippet.png)
 
 5. Remplacez toutes les occurrences de *SchemaName* à *dbo*. 
 6. L’extrait de code contient les paramètres de l’espace réservé et le texte à mettre à jour. Le *EXECUTE* instruction contient également le texte d’espace réservé, car il ne connaît pas le nombre de paramètres aura par la procédure. Pour ce didacticiel mise à jour de l’extrait de code il ressemble le code suivant :
@@ -185,7 +184,7 @@ Opérations de SQL Studio offre la possibilité pour afficher une définition d�
 
 ## <a name="use-save-query-results-as-json-to-test-the-setcustomer-stored-procedure"></a>Utilisez Enregistrer les résultats de la requête au format JSON pour tester la procédure stockée de setCustomer
 
-Le *setCustomer* procédure stockée créée dans la section précédente requiert JSON données être passées dans le  *@json_val*  paramètre. Cette section montre comment obtenir un bit correctement mis en forme de JSON à passer dans le paramètre, vous pouvez tester la procédure stockée.
+Le *setCustomer* procédure stockée créée dans la section précédente requiert JSON données être passées dans le *@json_val* paramètre. Cette section montre comment obtenir un bit correctement mis en forme de JSON à passer dans le paramètre, vous pouvez tester la procédure stockée.
 
 1. Dans le **serveurs** droit de la barre latérale du *dbo. Clients* de table et cliquez sur **sélectionnez 1000 lignes du haut**.
 

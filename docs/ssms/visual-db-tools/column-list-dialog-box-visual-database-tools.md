@@ -1,31 +1,31 @@
 ---
-title: "Liste des colonnes, boîte de dialogue (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Liste des colonnes, boîte de dialogue (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: vdt.dlgbox.columnlist
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- vdt.dlgbox.columnlist
 ms.assetid: 9ebd08b6-fa93-4581-bb6c-96b51d2c895c
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 12131847bea81558f979516b413c9e6db0e2ecc7
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 585636e219787ef5d5ec7fff4484ac98c6ae8e0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-list-dialog-box-visual-database-tools"></a>Boîte de dialogue Liste des colonnes (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Lors de l’écriture de requêtes, il peut être utile de consulter la liste des colonnes disponibles dans les objets tables que vous avez sélectionnés.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Lors de l'écriture de requêtes, il peut être utile de consulter la liste des colonnes disponibles dans les objets tables que vous avez sélectionnés.  
   
 Pour accéder à cette boîte de dialogue, dans le volet **Schéma** du menu Concepteur de requêtes, cliquez avec le bouton droit sur l’en-tête d’un objet table puis cliquez sur **Propriétés**. Dans la fenêtre **Propriétés** , cliquez sur le champ **Liste des colonnes** . Ensuite, cliquez sur le bouton de sélection **(...)** situé à droite du champ.  
   

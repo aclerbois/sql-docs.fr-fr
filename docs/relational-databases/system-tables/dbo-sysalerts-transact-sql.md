@@ -1,16 +1,14 @@
 ---
-title: dbo.sysalerts (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: dbo.sysalerts (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 10/24/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dbo.sysalerts
@@ -22,16 +20,15 @@ dev_langs:
 helpviewer_keywords:
 - sysalerts system table
 ms.assetid: a2c2f50d-61f3-4951-996a-add5ad092cc2
-caps.latest.revision: 
+caps.latest.revision: 25
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7565ee20e5fdec3a94c413b8204629ce6ee2f48d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: a8addad735c151c38b80af5dfdb46cbf5d66fc3e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbosysalerts-transact-sql"></a>dbo.sysalerts (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -63,7 +60,7 @@ ms.lasthandoff: 02/03/2018
 |**job_id**|**uniqueidentifier**|Identificateur du travail exécuté lorsque l'alerte se produit.|  
 |**has_notification**|**int**|Nombre d'opérateurs avertis par courrier électronique lorsque l'alerte a lieu.|  
 |**flags**|**int**|Réservé.|  
-|**performance_condition**|**nvarchar(512)**|Réservé.|  
+|**argument condition_performances**|**nvarchar(512)**|Réservé.|  
 |**category_id**|**int**|Réservé.|  
   
  ## <a name="remarks"></a>Notes

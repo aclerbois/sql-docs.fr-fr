@@ -1,36 +1,33 @@
 ---
 title: SQLStatistics (pilote Excel) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Excel driver [ODBC], SQLStatistics
 - SQLStatistics function [ODBC], Excel Driver
 ms.assetid: 02506664-8dcc-4bd0-a8bb-d49fcbdd5722
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: b4b68e127a196dc0be7e2f0eab501e01dde8dcf6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1f3a8a7671021e420384d9f2b3baf65beb077bc7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlstatistics-excel-driver"></a>SQLStatistics (pilote Excel)
 > [!NOTE]  
 >  Cette rubrique fournit des informations spécifiques au pilote Excel. Pour obtenir des informations générales sur cette fonction, consultez la rubrique appropriée sous [référence de l’API ODBC](../../odbc/reference/syntax/odbc-api-reference.md).  
   
-|colonne|Commentaires|  
+|Colonne|Commentaires|  
 |------------|--------------|  
 |TABLE_QUALIFIER|Le chemin d’accès à un répertoire.<br /><br /> Recherche de correspondance n’est pas pris en charge dans les *szTableQualifier* argument.|  
 |TABLE_OWNER|Valeur NULL est retournée dans cette colonne, car le nom du propriétaire n’est pas pris en charge.|  

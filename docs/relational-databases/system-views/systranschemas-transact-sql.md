@@ -1,16 +1,15 @@
 ---
-title: systranschemas (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: systranschemas (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - systranschemas system table
 ms.assetid: 864c3966-cb61-4f2b-8939-ccda112de853
-caps.latest.revision: 
+caps.latest.revision: 12
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b7acef96b95d2b74748d5b5b65f4910c71cd3dac
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: ae7ae4dc635e821b7b8cde1b54a19e6e6c5ba39c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="systranschemas-transact-sql"></a>systranschemas (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -41,7 +39,7 @@ ms.lasthandoff: 02/03/2018
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**tabid**|**int**|Identifie l'article de table sur lequel la modification de schéma s'est produite.|  
-|**startlsn**|**binaire**|Valeur LSN du début de la modification de schéma.|  
+|**LSN de début**|**binaire**|Valeur LSN du début de la modification de schéma.|  
 |**endlsn**|**binaire**|Valeur LSN de la fin de la modification de schéma.|  
 |**typeid**|**int**|Type de modification de schéma.|  
   

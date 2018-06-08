@@ -1,16 +1,15 @@
 ---
 title: sp_replshowcmds (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_replshowcmds
 ms.assetid: 199f5a74-e08e-4d02-a33c-b8ab0db20f44
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f7e949d3372266ca3857204e5d6bc5e35111855a
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 74526c46a3758829a89c71d41c071070ec907d5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spreplshowcmds-transact-sql"></a>sp_replshowcmds (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -46,8 +44,8 @@ sp_replshowcmds [ @maxtrans = ] maxtrans
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@maxtrans**  =] *maxtrans*  
- Nombre de transactions à propos desquelles retourner des informations. *maxtrans* est **int**, avec une valeur par défaut **1**, qui spécifie le nombre maximal de transactions en attente de réplication pour lequel **sp_replshowcmds** renvoie des informations.  
+ [ **@maxtrans** =] *maxtrans*  
+ Nombre de transactions à propos desquelles retourner des informations. *maxtrans* est **int**, avec une valeur par défaut **1**, qui spécifie le nombre maximal de transactions en attente de réplication pour lequel **sp_replshowcmds** Retourne des informations.  
   
 ## <a name="result-sets"></a>Jeux de résultats  
  **sp_replshowcmds** est une procédure de diagnostic qui retourne des informations sur la base de données de publication à partir de laquelle elle est exécutée.  
@@ -59,7 +57,7 @@ sp_replshowcmds [ @maxtrans = ] maxtrans
 |**publisher_database_id**|**int**|ID de la base de données serveur de publication, toujours **0**.|  
 |**article_id**|**int**|ID de l’article.|  
 |**type**|**int**|Type de commande.|  
-|**commande**|**nvarchar (1024)**|[!INCLUDE[tsql](../../includes/tsql-md.md)]commande.|  
+|**commande**|**nvarchar(1024)**|[!INCLUDE[tsql](../../includes/tsql-md.md)] commande.|  
   
 ## <a name="remarks"></a>Notes  
  **sp_replshowcmds** est utilisé dans la réplication transactionnelle.  
@@ -73,15 +71,15 @@ sp_replshowcmds [ @maxtrans = ] maxtrans
 > [!NOTE]  
 >  **sp_replshowcmds** doit être exécutée uniquement pour résoudre les problèmes de réplication.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_replshowcmds**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Messages d’erreur](../../relational-databases/native-client-odbc-error-messages/error-messages.md)   
  [sp_replcmds &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-replcmds-transact-sql.md)   
- [sp_repldone &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-repldone-transact-sql.md)   
- [sp_replflush &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-replflush-transact-sql.md)   
- [sp_repltrans &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-repltrans-transact-sql.md)   
+ [sp_repldone &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-repldone-transact-sql.md)   
+ [sp_replflush &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-replflush-transact-sql.md)   
+ [sp_repltrans &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-repltrans-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

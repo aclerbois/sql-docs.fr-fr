@@ -1,28 +1,27 @@
 ---
-title: "Démarrage rapide : Se connecter et interroger une base de données SQL Azure à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft"
-description: "Ce démarrage rapide montre comment utiliser les opérations de SQL Studio (version préliminaire) pour vous connecter à une base de données SQL et exécuter une requête"
+title: 'Démarrage rapide : Se connecter et interroger une base de données SQL Azure à l’aide des opérations de SQL Studio (version préliminaire) | Documents Microsoft'
+description: Ce démarrage rapide montre comment utiliser les opérations de SQL Studio (version préliminaire) pour vous connecter à une base de données SQL et exécuter une requête
 ms.custom: tools|sos
 ms.date: 03/08/2018
-ms.prod: sql-non-specified
-ms.reviewer: alayu; erickang; sstein
+ms.prod: sql
+ms.reviewer: alayu; sstein
 ms.suite: sql
 ms.prod_service: sql-tools
 ms.component: sos
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: quickstart
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 82fbe7376d762940815c7739311e69672b7fbff6
-ms.sourcegitcommit: 6c06267f3eeeb3f0d6fc4c57e1387621720ca8bf
+ms.openlocfilehash: c72e6d5b8e3e2770300e6b890b076bf77617849b
+ms.sourcegitcommit: 6fd8a193728abc0a00075f3e4766a7e2e2859139
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="quickstart-use-includename-sosincludesname-sos-shortmd-to-connect-and-query-azure-sql-database"></a>Démarrage rapide : Utiliser [!INCLUDE[name-sos](../includes/name-sos-short.md)] pour vous connecter et interroger la base de données SQL Azure
 
-Ce démarrage rapide montre comment utiliser  *[!INCLUDE[name-sos](../includes/name-sos-short.md)]*  pour vous connecter à une base de données SQL Azure, puis utilisez les instructions Transact-SQL (T-SQL) pour créer le *TutorialDB* utilisé dans [!INCLUDE[name-sos](../includes/name-sos-short.md)] didacticiels.
+Ce démarrage rapide montre comment utiliser *[!INCLUDE[name-sos](../includes/name-sos-short.md)]* pour vous connecter à une base de données SQL Azure, puis utilisez les instructions Transact-SQL (T-SQL) pour créer le *TutorialDB* utilisé dans [!INCLUDE[name-sos](../includes/name-sos-short.md)] didacticiels.
 
 ## <a name="prerequisites"></a>Configuration requise
 

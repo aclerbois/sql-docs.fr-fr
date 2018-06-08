@@ -1,28 +1,25 @@
 ---
-title: "Référence de l’API ODBC | Documents Microsoft"
-ms.custom: 
+title: Référence de l’API ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: dllExport
 ms.assetid: b7a49774-f458-44ce-9a04-a0457501405b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 025ad811b25f822c22c9ff81402de196b191baa6
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c3920299ded492ef40bee8bd181e5ea60aaa9960
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-api-reference"></a>Référence de l’API ODBC
 Les rubriques de cette section décrivent chaque fonction ODBC dans l’ordre alphabétique. Chaque fonction est définie en tant que fonction de langage de programmation C. Descriptions sont les suivantes :  

@@ -1,17 +1,16 @@
 ---
-title: "Inscrire une base de données en tant que DAC | Microsoft Docs"
-ms.custom: 
+title: Inscrire une base de données en tant que DAC | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: data-tier-applications
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-data-tier-apps
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.registerdacwizard.summary.f1
 - sql13.swb.registerdacwizard.introduction.f1
@@ -23,20 +22,19 @@ helpviewer_keywords:
 - register DAC
 - data-tier application [SQL Server], register
 ms.assetid: 08e52aa6-12f3-41dd-a793-14b99a083fd5
-caps.latest.revision: 
+caps.latest.revision: 22
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 036bb0f6375461e5764fb92534d4d8b07e016f52
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: d14994b4e90429cdd4d3e8a9b58c2b3998492b3d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="register-a-database-as-a-dac"></a>Inscrire une base de données en tant que DAC
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Utilisez l’ **Assistant Inscrire l’application de la couche Données** ou un script Windows PowerShell pour générer une définition d’application de la couche Données (DAC) qui décrit les objets d’une base de données existante et inscrivez la définition de la DAC dans la base de données système **msdb** (**master** dans [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]).  
+  Utilisez l’ **Assistant Inscrire l’application de la couche Données** ou un script Windows PowerShell pour générer une définition d’application de la couche Données (DAC) qui décrit les objets d’une base de données existante et inscrivez la définition de la DAC dans la base de données système **msdb** (**master** dans [!INCLUDE[ssSDSFull](../../includes/sssdsfull-md.md)]).  
   
 -   **Before you begin:**  [Limitations and Restrictions](#LimitationsRestrictions), [Permissions](#Permissions)  
   
@@ -117,7 +115,7 @@ Utilisez l’ **Assistant Inscrire l’application de la couche Données** ou un
  [Utilisation de l'Assistant Inscrire l'application de la couche Données](#UsingRegisterDACWizard)  
   
 ### <a name="validating-objects"></a>Validation d'objets  
- **Vérification de**  *Nom_schéma* **.** *Nom_objet* **.** - Affiche une barre de progression au fur et à mesure que l'Assistant vérifie les dépendances des objets récupérés, et vérifie que ces objets sont tous valides pour une DAC. *nom_schéma***.***nom_objet* identifie l’objet en cours de vérification.  
+ **Vérification de**  *Nom_schéma* **.** *Nom_objet* **.** - Affiche une barre de progression au fur et à mesure que l'Assistant vérifie les dépendances des objets récupérés, et vérifie que ces objets sont tous valides pour une DAC. *nom_schéma ***.*** nom_objet* identifie l’objet en cours de vérification.  
   
  **< Précédent** : vous renvoie à la page **Définir les propriétés** pour modifier vos entrées.  
   

@@ -1,28 +1,23 @@
 ---
-title: "Nouveautés dans l’installation de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Nouveautés dans l’installation de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 08/23/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 9b136b27-4779-4284-904f-b5a1c12bdcc0
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 0bcea823209741e5fb675ff770cd89d7ad44d194
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: d45020c7e1369ee77149e650c2c7515b501117f7
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772785"
 ---
 # <a name="what39s-new-in-sql-server-installation"></a>Nouveautés dans l’installation de SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

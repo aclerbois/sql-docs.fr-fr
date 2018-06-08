@@ -1,16 +1,15 @@
 ---
 title: sp_enumeratependingschemachanges (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_enumeratependingschemachanges
 ms.assetid: df169b21-d10a-41df-b3a1-654cfb58bc21
-caps.latest.revision: 
+caps.latest.revision: 23
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 63ad21e40d524e2374434d733e1cc4357d6a9b23
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 74841a258582acce3d9d5a30aa19cd9f000bdb8e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spenumeratependingschemachanges-transact-sql"></a>sp_enumeratependingschemachanges (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,7 +59,7 @@ sp_enumeratependingschemachanges [ @publication = ] 'publication'
 |**version de schéma**|**int**|Numéro de la modification de schéma en attente.|  
 |**SchemaType**|**sysname**|Valeur de texte représentant le type de modification de schéma.|  
 |**schematext**|**nvarchar(max)**|[!INCLUDE[tsql](../../includes/tsql-md.md)] qui décrit la modification de schéma.|  
-|**schemastatus**|**nvarchar (10)**|Indique si une modification de schéma est en attente pour l'article. Peut avoir l'une des valeurs suivantes :<br /><br /> **Active** = modification de schéma est en attente<br /><br /> **inactif** = modification de schéma est inactive<br /><br /> **Ignorer** = modification de schéma n’est pas répliquée.|  
+|**schemastatus**|**nvarchar(10)**|Indique si une modification de schéma est en attente pour l'article. Peut avoir l'une des valeurs suivantes :<br /><br /> **Active** = modification de schéma est en attente<br /><br /> **inactif** = modification de schéma est inactive<br /><br /> **Ignorer** = modification de schéma n’est pas répliquée.|  
 |**SchemaGuid**|**uniqueidentifier**|Identifie la modification de schéma.|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -70,13 +68,13 @@ sp_enumeratependingschemachanges [ @publication = ] 'publication'
 ## <a name="remarks"></a>Notes  
  **sp_enumeratependingschemachanges** est utilisé dans la réplication de fusion.  
   
- **sp_enumeratependingschemachanges**, utilisé avec [sp_markpendingschemachange](../../relational-databases/system-stored-procedures/sp-markpendingschemachange-transact-sql.md), est destiné à la prise en charge de la réplication de fusion et doit être utilisé uniquement lorsque les autres actions correctives, telles que la réinitialisation, ont échoué corriger la situation.  
+ **sp_enumeratependingschemachanges**, utilisé avec [sp_markpendingschemachange](../../relational-databases/system-stored-procedures/sp-markpendingschemachange-transact-sql.md), est conçu pour la prise en charge de la réplication de fusion et doit être utilisé uniquement lorsqu’autres actions correctives, telles que la réinitialisation, pas de résoudre la situation.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_enumeratependingschemachanges**.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées de réplication &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/replication-stored-procedures-transact-sql.md)   
- [sysmergeschemachange &#40; Transact-SQL &#41;](../../relational-databases/system-tables/sysmergeschemachange-transact-sql.md)  
+ [sysmergeschemachange &#40;Transact-SQL&#41;](../../relational-databases/system-tables/sysmergeschemachange-transact-sql.md)  
   
   

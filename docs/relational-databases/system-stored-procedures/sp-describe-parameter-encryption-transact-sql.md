@@ -1,16 +1,14 @@
 ---
 title: sp_describe_parameter_encryption (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 07/27/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_describe_parameter_encryption
@@ -20,16 +18,16 @@ f1_keywords:
 helpviewer_keywords:
 - sp_describe_parameter_encryption
 ms.assetid: 706ed441-2881-4934-8d5e-fb357ee067ce
-caps.latest.revision: 
+caps.latest.revision: 10
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b458e871ff32abe97727fc5d1a2c07f6c628e1cf
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 810f73e16599f153c604c605e33ad1b6f282811b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdescribeparameterencryption-transact-sql"></a>sp_describe_parameter_encryption (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2016-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2016-asdb-xxxx-xxx-md.md)]
@@ -50,9 +48,9 @@ sp_describe_parameter_encryption
  Une ou plusieurs instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] Transact-SQL_batch peut être nvarchar (n) ou nvarchar (max).  
   
  [ @params =] 'N'parameters  
- *@params*Fournit une chaîne de déclaration pour les paramètres du lot Transact-SQL, qui est similaire à sp_executesql. Les paramètres peuvent être nvarchar (n) ou nvarchar (max).  
+ *@params* Fournit une chaîne de déclaration pour les paramètres du lot Transact-SQL, qui est similaire à sp_executesql. Les paramètres peuvent être nvarchar (n) ou nvarchar (max).  
   
- Est une chaîne qui contient les définitions de tous les paramètres qui ont été incorporés dans le [!INCLUDE[tsql](../../includes/tsql-md.md)]_batch. Cette chaîne doit être une constante Unicode ou une variable Unicode. Chaque définition de paramètre se compose d'un nom de paramètre et d'un type de données. *n*est un espace réservé qui indique les définitions de paramètres supplémentaires. Chaque paramètre spécifié dans l’instruction doit être défini dans  *@params* . Si le [!INCLUDE[tsql](../../includes/tsql-md.md)] lot dans l’instruction ou l’instruction ne contient pas de paramètres,  *@params*  n’est pas obligatoire. NULL est la valeur par défaut pour ce paramètre.  
+ Est une chaîne qui contient les définitions de tous les paramètres qui ont été incorporés dans le [!INCLUDE[tsql](../../includes/tsql-md.md)]_batch. Cette chaîne doit être une constante Unicode ou une variable Unicode. Chaque définition de paramètre se compose d'un nom de paramètre et d'un type de données. *n* est un espace réservé qui indique les définitions de paramètres supplémentaires. Chaque paramètre spécifié dans l’instruction doit être défini dans *@params*. Si le [!INCLUDE[tsql](../../includes/tsql-md.md)] lot dans l’instruction ou l’instruction ne contient pas de paramètres, *@params* n’est pas obligatoire. NULL est la valeur par défaut pour ce paramètre.  
   
 ## <a name="return-value"></a>Valeur retournée  
  0 indique la réussite. Tout autre élément indiquant l’échec.  
@@ -70,10 +68,10 @@ sp_describe_parameter_encryption
 |-----------------|---------------|-----------------|  
 |**column_encryption_key_ordinal**|**int**|ID de la ligne dans le jeu de résultats.|  
 |**database_id**|**int**|Id de la base de données.|  
-|**column_encryption_key_id**|**int**|Id clé de chiffrement de la colonne. Remarque : ce code indique une ligne dans le [sys.column_encryption_keys &#40; Transact-SQL &#41; ](../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) affichage catalogue.|  
+|**column_encryption_key_id**|**int**|Id clé de chiffrement de la colonne. Remarque : ce code indique une ligne dans le [sys.column_encryption_keys &#40;Transact-SQL&#41; ](../../relational-databases/system-catalog-views/sys-column-encryption-keys-transact-sql.md) affichage catalogue.|  
 |**column_encryption_key_version**|**int**|Réservé pour un usage ultérieur. Actuellement, contient toujours 1.|  
-|**column_encryption_key_metadata_version**|**binary (8)**|Horodateur qui représente l’heure de création de la clé de chiffrement de colonne.|  
-|**column_encryption_key_encrypted_value**|**varbinary (4000)**|La valeur chiffrée de la clé de chiffrement de colonne.|  
+|**column_encryption_key_metadata_version**|**binary(8)**|Horodateur qui représente l’heure de création de la clé de chiffrement de colonne.|  
+|**column_encryption_key_encrypted_value**|**varbinary(4000)**|La valeur chiffrée de la clé de chiffrement de colonne.|  
 |**column_master_key_store_provider_name**|**sysname**|Le nom du fournisseur pour le magasin de clés qui contient la clé principale de colonne qui a été utilisée pour produire la valeur chiffrée de la clé de chiffrement de colonne.|  
 |**column_master_key_path**|**nvarchar(4000)**|Le chemin de clé de la clé principale de colonne qui a été utilisé pour produire la valeur chiffrée de la clé de chiffrement de colonne.|  
 |**column_encryption_key_encryption_algorithm_name**|**sysname**|Le nom de l’algorithme de chiffrement utilisé pour produire la valeur de chiffrement de la clé de chiffrement de colonne.|  
@@ -83,7 +81,7 @@ sp_describe_parameter_encryption
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
 |**parameter_ordinal**|**int**|ID de la ligne dans le jeu de résultats.|  
-|**nom_paramètre**|**sysname**|Nom de l’un des paramètres spécifiés dans le  *@params*  argument.|  
+|**parameter_name**|**sysname**|Nom de l’un des paramètres spécifiés dans le *@params* argument.|  
 |**column_encryption_algorithm**|**tinyint**|Qui indique l’algorithme de chiffrement configuré pour la colonne, le paramètre correspond à du code. Les valeurs actuellement prises en charge sont : 2 pour **AEAD_AES_256_CBC_HMAC_SHA_256**.|  
 |**column_encryption_type**|**tinyint**|Code indiquant le type de chiffrement configuré pour la colonne, le paramètre correspond à. Les valeurs prises en charge sont :<br /><br /> 0 – texte en clair (la colonne n’est pas chiffrée)<br /><br /> 1 – aléatoire de chiffrement<br /><br /> 2 – le chiffrement déterministe.|  
 |**column_encryption_key_ordinal**|**int**|Code de la ligne dans le premier résultat défini. La ligne référencée décrit la clé de chiffrement de colonne configurée pour la colonne, le paramètre correspond à.|  
@@ -92,7 +90,7 @@ sp_describe_parameter_encryption
 ## <a name="remarks"></a>Notes  
  A [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pilote du client, prise en charge le chiffrement intégral, appelle automatiquement **sp_describe_parameter_encryption** pour récupérer les métadonnées de chiffrement pour les requêtes paramétrables, émis par l’application. Par la suite, le pilote utilise les métadonnées de chiffrement pour chiffrer les valeurs des paramètres qui correspondent aux colonnes de base de données protégées avec Always Encrypted et remplace les valeurs de paramètre de texte en clair, envoyés par l’application, avec les valeurs de paramètre chiffré, avant d’envoyer la requête au moteur de base de données.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Exiger la **VIEW ANY COLUMN ENCRYPTION KEY DEFINITION** et **VIEW ANY COLUMN MASTER KEY DEFINITION** autorisations dans la base de données.  
   
 ## <a name="examples"></a>Exemples  

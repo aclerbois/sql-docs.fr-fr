@@ -1,37 +1,30 @@
 ---
 title: La commande CreateOrReplace (TMSL) | Documents Microsoft
-ms.custom: 
-ms.date: 05/30/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tmsl
 ms.topic: reference
-ms.assetid: f77a0e04-461a-4fa8-b997-78057e410d56
-caps.latest.revision: "12"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: d658378bde1e3a58f36b1137328f723ad3d380d5
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: d90d8e813486d16e38bb033b703b32c7ddc7c5c6
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="createorreplace-command-tmsl"></a>Commande CreateOrReplace (TMSL)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Crée ou remplace l’objet spécifié et tous les objets descendants sont spécifiés. Les objets inexistant sont créés. Les objets existants sont remplacés par la nouvelle définition.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Crée ou remplace l’objet spécifié et tous les objets descendants sont spécifiés. Les objets inexistant sont créés. Les objets existants sont remplacés par la nouvelle définition.  
   
  Chaque fois que vous spécifiez une propriété en lecture-écriture, assurez-vous d’inclure toutes les. L’omission d’un objet en lecture-écriture est considérée comme une suppression.  
   
 ## <a name="request"></a>Demande  
  La structure de la requête varie en fonction de l’objet. Un objet qui est le parent doit inclure tous ses enfants, même si les définitions d’objet complet des frères ou des parents ne sont pas requises.  
   
- [Objet de base de données &#40; TMSL &#41;](../../analysis-services/tabular-models-scripting-language-objects/database-object-tmsl.md)  
+ [Objet de base de données &#40;TMSL&#41;](../../analysis-services/tabular-models-scripting-language-objects/database-object-tmsl.md)  
   
  Remplace la base de données existante avec une définition de base de données renommée, minimal qui spécifie son nom, les propriétés de modèle modifié et une connexion. Étant donné que la définition d’objet n’inclut pas les tables, les partitions ou les relations, tous ces objets sont supprimés.  
   
@@ -68,7 +61,7 @@ ms.lasthandoff: 01/08/2018
 }  
 ```  
   
- [Objet de sources de données &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/datasources-object-tmsl.md) Remplace un nom de connexion.  
+ [Objet de sources de données &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/datasources-object-tmsl.md) remplace un nom de connexion.  
   
 ```  
 {  
@@ -93,7 +86,7 @@ ms.lasthandoff: 01/08/2018
 }  
 ```  
   
- [Objet tables &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/tables-object-tmsl.md) Remplace les tables existantes, en laissant uniquement celle spécifiée.  
+ [Objet de tables &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/tables-object-tmsl.md) remplace les tables existantes, en laissant uniquement celle spécifiée.  
   
 ```  
 {  
@@ -178,7 +171,7 @@ ms.lasthandoff: 01/08/2018
 }   
 ```  
   
- [Objet de partitions &#40; TMSL &#41;](../../analysis-services/tabular-models-scripting-language-objects/partitions-object-tmsl.md)  
+ [Objet de partitions &#40;TMSL&#41;](../../analysis-services/tabular-models-scripting-language-objects/partitions-object-tmsl.md)  
   
  Remplacer un nom de partition. Les objets de partition ont trois propriétés en lecture-écriture : nom, source, description. Chaque fois que vous spécifiez une propriété en lecture-écriture, assurez-vous d’inclure toutes les. L’omission d’un objet en lecture-écriture est considérée comme une suppression.  
   
@@ -212,7 +205,7 @@ ms.lasthandoff: 01/08/2018
 }  
 ```  
   
- [Objet rôles &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/roles-object-tmsl.md) Remplace une définition de rôle qui inclut des membres.  
+ [Objet rôles &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/roles-object-tmsl.md) remplace une définition de rôle qui inclut des membres.  
   
 ```  
 {  
@@ -511,7 +504,7 @@ ms.lasthandoff: 01/08/2018
 ```  
   
 ## <a name="usage-endpoints"></a>Utilisation (points de terminaison)  
- Cet élément de commande est utilisé dans une instruction de la [méthode Execute &#40; XMLA &#41; ](../../analysis-services/xmla/xml-elements-methods-execute.md) appel via un point de terminaison XMLA exposée comme suit :  
+ Cet élément de commande est utilisé dans une instruction de la [exécuter une méthode &#40;XMLA&#41; ](../../analysis-services/xmla/xml-elements-methods-execute.md) appel via un point de terminaison XMLA exposée comme suit :  
   
 -   Comme une fenêtre XMLA dans SQL Server Management Studio (SSMS)  
   
@@ -521,7 +514,7 @@ ms.lasthandoff: 01/08/2018
   
  Vous pouvez générer un script prêts à l’emploi pour cette commande à partir de SSMS.  Par exemple, vous pouvez cliquer sur une base de données > **Script** > **base de données de Script en tant que** > **créer ou remplacer pour**.  
   
- Le [ \[MS-SSAS-T\]: QL Server tabulaires Analysis Services (SQL Server technique Protocol)](http://go.microsoft.com/fwlink/p/?LinkId=784855) document inclut section 3.1.5.2.2 qui décrit la structure des objets et les commandes de métadonnées sous forme de tableau JSON. Actuellement, ce document traite des commandes et fonctions non encore implémentées dans un script TMSL. Reportez-vous à la rubrique [langage de script de modèle tabulaire &#40; TMSL &#41; Référence](../../analysis-services/tabular-model-scripting-language-tmsl-reference.md) pour des explications sur ce qui est pris en charge  
+ Le [ \[MS-SSAS-T\]: QL Server tabulaires Analysis Services (SQL Server technique Protocol)](http://go.microsoft.com/fwlink/p/?LinkId=784855) document inclut section 3.1.5.2.2 qui décrit la structure des objets et les commandes de métadonnées sous forme de tableau JSON. Actuellement, ce document traite des commandes et fonctions non encore implémentées dans un script TMSL. Reportez-vous à la rubrique [Tabular Model Scripting Language &#40;TMSL&#41; référence](../../analysis-services/tabular-model-scripting-language-tmsl-reference.md) pour des explications sur ce qui est pris en charge  
 
 ## <a name="see-also"></a>Voir aussi  
  [Tabular Model Scripting Language &#40;TMSL&#41; Reference (Informations de référence sur TMSL &#40;Tabular Model Scripting Language&#41;)](../../analysis-services/tabular-model-scripting-language-tmsl-reference.md)  

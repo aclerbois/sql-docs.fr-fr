@@ -1,28 +1,25 @@
 ---
-title: "Conditions requises pour l’utilisation des tables optimisées en mémoire | Microsoft Docs"
-ms.custom: 
+title: Conditions requises pour l’utilisation des tables optimisées en mémoire | Microsoft Docs
+ms.custom: ''
 ms.date: 11/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 47d9a7e8-c597-4b95-a58a-dcf66df8e572
-caps.latest.revision: 
+caps.latest.revision: 65
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 50d2fc5af283489b8f02d2a7e7aa54dc76d14e59
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: 5b9ee0764face940d76fc02b3c5e5563fd414126
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="requirements-for-using-memory-optimized-tables"></a>Conditions requises pour l'utilisation des tables optimisées en mémoire
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,16 +1,15 @@
 ---
 title: Prise en main de SSMA pour Sybase Console (SybaseToSQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 09/30/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-sybase
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - Sybase Console,Output Conventions
 - Sybase Console,Procedure for Using Console
 ms.assetid: 43219dbe-bcfa-427d-9242-f07b1455f15f
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 689cd4339d926cd4f8e20c799a0c074adb29b81f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d9b401ea1efdfcececbb35a16d7d10b29915e1fc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getting-started-with-the-ssma-for-sybase-console-sybasetosql"></a>Prise en main de SSMA pour Sybase Console (SybaseToSQL)
 Cette section décrit la procédure de lancement et de prise en main de SSMA pour Sybase console. Également répertoriés ici sont les conventions utilisées dans une fenêtre de sortie de Console de SSMA classique.  
@@ -45,13 +43,13 @@ Utilisez les étapes suivantes pour démarrer l’application de console SSMA :
 ## <a name="using-the-ssma-console"></a>À l’aide de la Console SSMA  
 Une fois que la console est lancée correctement sur votre système Windows, vous pouvez utiliser les étapes suivantes pour travailler dessus :  
   
-1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40; SybaseToSQL &#41; ](../../ssma/sybase/creating-script-files-sybasetosql.md).  
+1.  Configurer la Console de SSMA via les fichiers de script. Pour plus d’informations sur cette section, consultez [création de fichiers de Script &#40;SybaseToSQL&#41;](../../ssma/sybase/creating-script-files-sybasetosql.md).  
   
-2.  [Création de fichiers de la valeur de la Variable &#40; SybaseToSQL &#41;](../../ssma/sybase/creating-variable-value-files-sybasetosql.md)  
+2.  [Création de fichiers de la valeur de la Variable &#40;SybaseToSQL&#41;](../../ssma/sybase/creating-variable-value-files-sybasetosql.md)  
   
-3.  [Créer les fichiers de connexion de serveur &#40; SybaseToSQL &#41;](../../ssma/sybase/creating-the-server-connection-files-sybasetosql.md)  
+3.  [Création des fichiers de connexion serveur &#40;SybaseToSQL&#41;](../../ssma/sybase/creating-the-server-connection-files-sybasetosql.md)  
   
-4.  [L’exécution de la Console SSMA &#40; SybaseToSQL &#41; ](../../ssma/sybase/executing-the-ssma-console-sybasetosql.md) selon les besoins de votre projet. 
+4.  [L’exécution de la Console SSMA &#40;SybaseToSQL&#41; ](../../ssma/sybase/executing-the-ssma-console-sybasetosql.md) selon les besoins de votre projet. 
   
 Fonctionnalités supplémentaires :  
   
@@ -66,7 +64,7 @@ Lors de l’exécution des commandes de script SSMA et des options, le programme
   
 Couleur-interprétation de la sortie de console s’affiche dans le tableau suivant :  
   
-|Couleur|Description|  
+|Color| Description|  
 |---------|---------------|  
 |Rouge|Erreur irrécupérable lors de l’exécution|  
 |Gris|Cachet de date et heure, le message à l’utilisateur|  
@@ -76,4 +74,4 @@ Couleur-interprétation de la sortie de console s’affiche dans le tableau suiv
 |Cyan|Début, fin et le résultat d’une opération|  
   
 ## <a name="see-also"></a>Voir aussi  
-[L’installation de SSMA pour SAP ASE &#40; SybaseToSQL &#41;](../../ssma/sybase/installing-ssma-for-sybase-sybasetosql.md)  
+[L’installation de SSMA pour SAP ASE &#40;SybaseToSQL&#41;](../../ssma/sybase/installing-ssma-for-sybase-sybasetosql.md)  

@@ -1,30 +1,28 @@
 ---
-title: "Vérifier le mappage de type de données (Assistant Importation et Exportation SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Vérifier le mappage de type de données (Assistant Importation et Exportation SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: import-export-data
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.impexpwizard.reviewissues.f1
 ms.assetid: 0625c4f9-b8ff-4593-b884-39398b9d43af
-caps.latest.revision: 
+caps.latest.revision: 43
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 8f9c2ddd8834d5ff3dbef2d0aff725343fae4f41
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 6552bb3f8b4294fed3a14eaaf71dab1575380dad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="review-data-type-mapping-sql-server-import-and-export-wizard"></a>Vérifier le mappage de type de données (Assistant Importation et Exportation SQL Server)
 Si vous avez spécifié un mappage de type de données qui risque d’échouer dans la liste **Mappages** de la boîte de dialogue **Mappages de colonnes** , l’Assistant Importation et exportation [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche la page **Vérifier le mappage de type de données** . Dans cette page, vous passez en revue des informations détaillées sur les conversions de types de données que l’Assistant doit effectuer pour que les données sources soient compatibles avec la destination. Ces informations incluent des aides visuelles permettant de différencier les conversions de type de données qui sont censées aboutir de celles qui sont susceptibles de provoquer des erreurs ou des troncations. Pour chaque conversion, vous choisissez d’accepter, ou non, la conversion que l’Assistant suggère. De plus, vous spécifiez comment gérer les éventuelles erreurs.   

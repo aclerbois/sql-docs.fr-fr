@@ -1,30 +1,28 @@
 ---
-title: "Synchronize21, méthode (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Synchronize21, méthode (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 helpviewer_keywords:
 - Synchronize21 method [ADO]
 ms.assetid: 6b35f136-9d9a-4bdd-8144-67decfd3c4e9
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c973d97465963ba865bb768569bf70f70366a1b9
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: caf886971b2163bcdcf855ad22a43b62d4c0b529
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="synchronize21-method-rds"></a>Synchronize21, méthode (RDS)
 Synchroniser le jeu d’enregistrements donné avec la base de données spécifiée par la chaîne de connexion pour une utilisation avec ADO 2.1.  
@@ -40,7 +38,7 @@ object.Synchronize21(ConnectionString As String, HandlerString As String, lSynch
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *ConnectionString*  
+ *connectionString*  
  Chaîne utilisée pour se connecter au fournisseur OLE DB où la demande va être envoyée. Si un gestionnaire est utilisé, le gestionnaire peut modifier ou remplacer la chaîne de connexion.  
   
  *HandlerString*  

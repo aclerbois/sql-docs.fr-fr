@@ -1,27 +1,19 @@
 ---
-title: "Fonctionnalités et tâches Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 02bcccd0-99e1-4a08-9401-f1f1147d184b
-caps.latest.revision: 
-author: Minewiskan
+title: Fonctionnalités et tâches Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 89fb560797d1fadba703fc84d30c785bec4f0daa
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 50a0649891fa26a01a83bf633d4f8cea60cef213
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-features-and-tasks"></a>Fonctionnalités et tâches Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]

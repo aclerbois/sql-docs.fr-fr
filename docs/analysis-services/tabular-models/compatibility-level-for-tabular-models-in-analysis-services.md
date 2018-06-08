@@ -1,29 +1,19 @@
 ---
 title: Niveau de compatibilité pour les modèles tabulaires dans Analysis Services | Documents Microsoft
-ms.custom: ''
-ms.date: 03/30/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-f1_keywords:
-- sql13.asvs.bidtoolset.versioncompat.f1
-ms.assetid: 8943d78d-4a73-4be8-ad14-3d428f5abd06
-caps.latest.revision: 27
-author: Minewiskan
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 6fbd08b52c50e8ea010f4fcc6664176935457322
-ms.sourcegitcommit: 8f1d1363e18e0c32ff250617ab6cb2da2147bf8e
+ms.openlocfilehash: fd70a673744d2e401e8a28f6ce2c533434e1c75e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/03/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="compatibility-level-for-analysis-services-tabular-models"></a>Niveau de compatibilité pour les modèles tabulaires Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
@@ -49,8 +39,8 @@ Principales fonctionnalités dans le niveau de compatibilité 1400 sont les suiv
 |**Niveau de compatibilité**|**Version du serveur**| 
 |1400|Azure Analysis Services, SQL Server 2017 |  
 |1200|Azure Analysis Services, SQL Server 2017, SQL Server 2016| 
-|1103|SQL Server 2017*, SQL Server 2016, SQL Server 2014, SQL Server 2012 SP1|  
-|1100|SQL Server 2017*, SQL Server 2016, SQL Server 2014, SQL Server 2012 SP1, SQL Server 2012| 
+|1103|SQL Server 2017 *, SQL Server 2016, SQL Server 2014, SQL Server 2012 SP1|  
+|1100|SQL Server 2017 *, SQL Server 2016, SQL Server 2014, SQL Server 2012 SP1, SQL Server 2012| 
 
 \* niveaux de compatibilité 1100 et 1103 sont déconseillées dans SQL Server 2017.
   

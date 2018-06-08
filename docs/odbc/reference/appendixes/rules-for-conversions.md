@@ -1,32 +1,29 @@
 ---
-title: "Règles pour les Conversions | Documents Microsoft"
-ms.custom: 
+title: Règles pour les Conversions | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - numeric data type [ODBC], literals
 - conversions with numeric literals [ODBC]
 - numeric literals [ODBC]
 - literals [ODBC], numeric
 ms.assetid: 89f846a3-001d-496a-9843-ac9c38dc1762
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 441f65fabad5894d1277a9c42ecd6c4a6d9e5fff
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d8020afb215724e05201ac0a2a23ff0f39f1642a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rules-for-conversions"></a>Règles pour les Conversions
 Les règles de cette section s’appliquent pour les conversions de littéraux numériques. Dans le cadre de ces règles, les termes suivants sont définis :  
@@ -81,9 +78,9 @@ Les règles de cette section s’appliquent pour les conversions de littéraux n
   
     -   Si NS est inférieur à 0, puis permettent d’Y être le résultat de :  
   
-         '-' &#124; &#124; YP  
+         '-' &AMP;#124; &AMP;#124; YP  
   
-         où « &#124; &#124;' est l’opérateur de concaténation de chaîne.  
+         où «&#124;&#124;» est l’opérateur de concaténation de chaîne.  
   
          Sinon, laissez le Y égal YP.  
   

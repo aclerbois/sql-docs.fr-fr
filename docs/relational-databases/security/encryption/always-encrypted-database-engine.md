@@ -1,17 +1,16 @@
 ---
-title: "Always Encrypted (moteur de base de données) | Microsoft Docs"
-ms.custom: 
+title: Always Encrypted (moteur de base de données) | Microsoft Docs
+ms.custom: ''
 ms.date: 04/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - encryption [SQL Server], Always Encrypted
 - Always Encrypted
@@ -19,16 +18,16 @@ helpviewer_keywords:
 - Always Encrypted, about
 - SQL13.SWB.COLUMNMASTERKEY.CLEANUP.F1
 ms.assetid: 54757c91-615b-468f-814b-87e5376a960f
-caps.latest.revision: 
+caps.latest.revision: 58
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: d56c906c87ef69e444ee1424324cc99e3fa05ed8
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: c888fca8204c90b5d2ecf24838da19c2acf5624e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="always-encrypted-database-engine"></a>Always Encrypted (moteur de base de données)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

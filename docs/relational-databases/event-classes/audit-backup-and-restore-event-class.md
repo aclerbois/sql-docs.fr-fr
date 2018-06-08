@@ -1,34 +1,29 @@
 ---
-title: "Classe d’événements Audit Backup/Restore | Microsoft Docs"
-ms.custom: 
+title: Classe d’événements Audit Backup/Restore | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Backup/Restore event class
 ms.assetid: 08b0b5fe-298a-483f-b50a-73919a2513ce
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f4bd2c78aa172e898e6939e899f835a4ec622f8b
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 53c77c5438d892d76f2695dbc05bb1e30ce9bdb9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-backup-and-restore-event-class"></a>Classe d’événements Audit Backup/Restore
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-La classe d’événements **Audit Backup/Restore** se produit quand une commande de sauvegarde ou de restauration est exécutée.  
+  La classe d’événements **Audit Backup/Restore** se produit quand une commande de sauvegarde ou de restauration est exécutée.  
   
 ## <a name="audit-backuprestore-event-class-data-columns"></a>Colonnes de données de la classe d'événements Audit Backup/Restore  
   

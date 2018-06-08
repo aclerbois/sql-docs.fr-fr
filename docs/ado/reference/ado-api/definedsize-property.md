@@ -1,33 +1,30 @@
 ---
-title: "Propriété DefinedSize | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Propriété DefinedSize | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Field20::DefinedSize
 helpviewer_keywords:
 - DefinedSize property [ADO]
 ms.assetid: 3ee27314-a305-4fbc-8433-9ee9a909afd6
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 44c44b0dd7528634cc6db88b3d5bb04a8a1237e3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: b84eb083ba442fc214d63b518c8bab0c001aa229
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="definedsize-property"></a>Propriété DefinedSize
 Indique la capacité de données d’une [champ](../../../ado/reference/ado-api/field-object.md) objet.  

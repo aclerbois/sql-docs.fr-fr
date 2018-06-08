@@ -1,34 +1,30 @@
 ---
-title: "OLEDB QueryInterface, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: OLEDB QueryInterface, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - OLEDB QueryInterface event class
 ms.assetid: f54c9ef9-3add-497c-a09b-42c4ce3c623d
-caps.latest.revision: 
+caps.latest.revision: 34
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1da703b459cd931de817468b1079dbd44d711c24
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 1345a85d89ad31215465f59dc48f265a32b221b9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="oledb-queryinterface-event-class"></a>OLEDB QueryInterface (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **OLEDB QueryInterface** se produit quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] émet un appel vers **QueryInterface** du fournisseur OLE DB, provenant de requêtes distribuées et de procédures stockées distantes. Ajoutez cette classe d'événements dans les traces servant à effectuer un suivi des problèmes relatifs aux requêtes distribuées et aux procédures stockées distantes.  
+  La classe d’événements **OLEDB QueryInterface** se produit quand [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] émet un appel vers **QueryInterface** du fournisseur OLE DB, provenant de requêtes distribuées et de procédures stockées distantes. Ajoutez cette classe d'événements dans les traces servant à effectuer un suivi des problèmes relatifs aux requêtes distribuées et aux procédures stockées distantes.  
   
  Quand la classe **OLEDB QueryInterface** y est incluse, le total de l’espace réservé en est d’autant alourdi. Si de tels événements se produisent fréquemment, il est possible que la trace affecte de façon notable les performances. Pour minimiser l'effet d'une telle charge, limitez l'utilisation de cette classe d'événements aux traces destinées à effectuer le suivi de problèmes précis pour de brèves durées.  
   

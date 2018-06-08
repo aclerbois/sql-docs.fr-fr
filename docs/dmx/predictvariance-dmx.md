@@ -1,30 +1,31 @@
 ---
 title: PredictVariance (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: PredictVariance
-dev_langs: DMX
-helpviewer_keywords: PredictVariance function
+f1_keywords:
+- PredictVariance
+dev_langs:
+- DMX
+helpviewer_keywords:
+- PredictVariance function
 ms.assetid: 3c535237-083a-4102-bdfe-9f3c929e7b2c
-caps.latest.revision: "34"
+caps.latest.revision: 34
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 813ac2c1ffa1f937bdb5115c6f1bf6a2c558355c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6f8aff8d02e787aa598290a040552a3d2e8e1af5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="predictvariance-dmx"></a>PredictVariance (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -44,7 +45,7 @@ PredictVariance(<scalar column reference>)
 ## <a name="return-type"></a>Type de retour  
  Une valeur scalaire du type spécifié par  *\<référence de colonne scalaire >*.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Si la référence de colonne est discrète, la fonction **PredictVariance** retourne 0 car la variance ne peut être calculée à partir de valeurs discrètes.  
   
 ## <a name="examples"></a>Exemples  
@@ -65,8 +66,8 @@ NATURAL PREDICTION JOIN
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)  
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)  
   
   

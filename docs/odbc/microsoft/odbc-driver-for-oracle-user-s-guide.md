@@ -1,30 +1,28 @@
 ---
-title: Pilote ODBC pour Oracle utilisateur &#39; s Guide | Documents Microsoft
-ms.custom: 
+title: Pilote ODBC pour Oracle utilisateur&#39;s Guide | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC driver for Oracle [ODBC], using ODBC driver for Oracle
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC driver for Oracle [ODBC], using ODBC driver for Oracle
 ms.assetid: c506aaa1-0b4f-440b-b069-98e0a463a5f6
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 7bf95ae6474a0f9a02763020282b4cce38991baa
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: b8eeed38c323bb447d7d20b993898873448e3a8a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="odbc-driver-for-oracle-user39s-guide"></a>Pilote ODBC pour Oracle utilisateur &#39; s Guide
+# <a name="odbc-driver-for-oracle-user39s-guide"></a>Pilote ODBC pour Oracle utilisateur&#39;s Guide
 > [!IMPORTANT]  
 >  Cette fonctionnalité sera supprimée dans une future version de Windows. Évitez d'utiliser cette fonctionnalité dans de nouveaux travaux de développement, et prévoyez de modifier les applications qui utilisent actuellement cette fonctionnalité. Au lieu de cela, utilisez le pilote ODBC fourni par Oracle.  
   

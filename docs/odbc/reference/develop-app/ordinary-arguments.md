@@ -1,31 +1,28 @@
 ---
 title: Arguments ordinaires | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - arguments in catalog functions [ODBC], ordinary
 - catalog functions [ODBC], arguments
 - ordinary arguments [ODBC]
 ms.assetid: a18cdae1-6b85-41cb-875c-b5a01ec90aeb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: db56df9bfd37b4395268250e6b921a3f98a2f6ee
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 7ecdcf5e697bcf3235cadbe3d8f3f8f981406575
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ordinary-arguments"></a>Arguments ordinaires
 Quand un argument de chaîne de fonction de catalogue est un argument ordinaire, il est traité comme une chaîne littérale. Un argument ordinaire n’accepte ni un modèle de recherche de chaîne, ni une liste de valeurs. Le cas d’un argument ordinaire est significatif et caractères de guillemets dans la chaîne sont prises littéralement. Ces arguments sont traités en tant qu’arguments ordinaires, si l’attribut d’instruction SQL_ATTR_METADATA_ID a la valeur SQL_FALSE ; elles sont traitées en tant qu’arguments de l’identificateur à la place si cet attribut a la valeur SQL_TRUE.  

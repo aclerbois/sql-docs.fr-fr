@@ -1,16 +1,14 @@
 ---
-title: "Simulation positionné instructions Update et Delete | Documents Microsoft"
-ms.custom: 
+title: Simulation positionné instructions Update et Delete | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - positioned deletes [ODBC]
 - data updates [ODBC], positioned update or delete
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - positioned updates [ODBC]
 - updating data [ODBC], positioned update or delete
 ms.assetid: b24ed59f-f25b-4646-a135-5f3596abc1a4
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 116f99d1a2dd5e904586978de4345111df278dab
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1448481938ff0ef8e20ba4e6a85801b65024cbcc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="simulating-positioned-update-and-delete-statements"></a>Simulation d’instructions Delete et mise à jour positionnée
 Si la source de données ne prend en charge la mise à jour positionnée et supprimer des instructions, le pilote peut simuler ces. Par exemple, la bibliothèque de curseurs ODBC simule la mise à jour positionnée et supprimer les instructions. La stratégie générale pour simuler des instructions de suppression et de mise à jour positionnée consiste à convertir des instructions positionnées à ceux recherchés. Cela est effectué en remplaçant le **WHERE CURRENT OF** clause avec une recherche **où** clause qui identifie la ligne actuelle.  

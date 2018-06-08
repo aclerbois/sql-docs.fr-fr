@@ -1,33 +1,26 @@
 ---
-title: "Configuration du pare-feu PDW (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 191f292d-16bc-4166-b855-158854ad062d
-caps.latest.revision: "28"
-ms.openlocfilehash: e74ffd88f0b2c10a6120c4411e4647c2fb84f249
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Configuration du pare-feu PDW - système de plateforme Analytique | Documents Microsoft
+description: La page pare-feu du Gestionnaire de Configuration PDW SQL Server permet d’activer ou désactiver des règles de pare-feu qui autorisent ou empêchent l’accès à des ports spécifiques sur le matériel de système de plateforme Analytique.
+aauthor: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 8ccfd60aee7647c2421870a09ab5fa9b2653b99d
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="pdw-firewall-configuration"></a>Configuration du pare-feu PDW
+# <a name="parallel-data-warehouse-firewall-configuration-in-analytics-platform-system"></a>Parallèle configuration du pare-feu de l’entrepôt de données dans le système de plateforme Analytique
 Le **pare-feu** page du Gestionnaire de Configuration PDW SQL Server vous permet d’activer ou désactiver des règles de pare-feu qui autorisent ou empêchent l’accès à des ports spécifiques sur le matériel de système de plateforme Analytique.  
   
 ## <a name="to-manage-ports-and-firewall-rules-for-appliance-nodes"></a>Pour gérer les ports et les règles de pare-feu pour les nœuds de l’équipement  
   
-1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lance le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41; ](launch-the-configuration-manager.md).  
+1.  Lancez le Gestionnaire de Configuration. Pour plus d’informations, consultez [lancer le Gestionnaire de Configuration &#40;système de plateforme Analytique&#41;](launch-the-configuration-manager.md).  
   
 2.  Dans le volet gauche du Gestionnaire de Configuration, développez **topologie de l’entrepôt de données parallèle**, puis cliquez sur **pare-feu**.  
   

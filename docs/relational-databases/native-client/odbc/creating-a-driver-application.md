@@ -1,15 +1,14 @@
 ---
-title: "Création d’une Application de pilote ODBC de SQL Server Native Client | Documents Microsoft"
-ms.custom: 
+title: Création d’une Application de pilote ODBC de SQL Server Native Client | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client|ODBC
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ODBC, architecture
@@ -25,16 +24,16 @@ helpviewer_keywords:
 - ODBC, driver extensions
 - function calls [ODBC]
 ms.assetid: c83c36e2-734e-4960-bc7e-92235910bc6f
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: da19702624b06775bd63dc3dc7d12bf6b7cd7a14
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: c5d5a0cde9217c455424be66b592b4260a72a30d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="creating-a-driver-application"></a>Création d’une Application de pilote
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -85,19 +84,19 @@ ms.lasthandoff: 01/25/2018
   
  De nombreux pilotes ODBC, y compris le [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pilote ODBC Native Client, offrent les extensions spécifiques au pilote ODBC. Pour tirer parti des [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] les extensions spécifiques au pilote ODBC Native Client, une application doivent inclure le fichier d’en-tête sqlncli.h. Ce fichier d'en-tête contient :  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Attributs de connexion spécifiques au pilote ODBC du Client natifs.  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Attributs de connexion spécifiques au pilote ODBC du Client natifs.  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Attributs d’instruction spécifiques au pilote ODBC du Client natifs.  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Attributs d’instruction spécifiques au pilote ODBC du Client natifs.  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Attributs de colonne spécifiques au pilote ODBC du Client natifs.  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Attributs de colonne spécifiques au pilote ODBC du Client natifs.  
   
 -   Les types de données spécifiques à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
 -   Les types de données définis par l'utilisateur spécifiques à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Natif spécifiques au pilote ODBC du Client [SQLGetInfo](../../../relational-databases/native-client-odbc-api/sqlgetinfo.md) types.  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Natif spécifiques au pilote ODBC du Client [SQLGetInfo](../../../relational-databases/native-client-odbc-api/sqlgetinfo.md) types.  
   
--   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]Champs de diagnostic pilote ODBC du Client natifs.  
+-   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] Champs de diagnostic pilote ODBC du Client natifs.  
   
 -   Les codes de fonction dynamique de diagnostic spécifiques à [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
   
@@ -125,6 +124,6 @@ INCLUDE=c:\Program Files\Microsoft Data Access SDK 2.8\inc;C:\Program Files\Micr
 -   [Applications multithread](../../../relational-databases/native-client/odbc/creating-a-driver-application-multithreaded-applications.md)  
   
 ## <a name="see-also"></a>Voir aussi  
- [SQL Server Native Client &#40; ODBC &#41;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
+ [SQL Server Native Client & #40 ; ODBC & #41 ;](../../../relational-databases/native-client/odbc/sql-server-native-client-odbc.md)  
   
   

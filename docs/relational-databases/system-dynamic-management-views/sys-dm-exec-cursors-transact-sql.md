@@ -1,16 +1,12 @@
 ---
-title: sys.dm_exec_cursors (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_exec_cursors (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_exec_cursors_TSQL
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_exec_cursors dynamic management function
 ms.assetid: f520b63c-36af-40f1-bf71-6901d6331d3d
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7e659c10857c8a5248707e592738375fc5c7c483
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 6af56d14dda67948a46e87cd71f0ff3eafcad65c
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmexeccursors-transact-sql"></a>sys.dm_exec_cursors (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -58,7 +53,7 @@ dm_exec_cursors (session_id | 0 )
 |**session_id**|**int**|ID de la session propriétaire de ce curseur.|  
 |**cursor_id**|**int**|ID de l'objet curseur.|  
 |**nom**|**nvarchar (256)**|Nom du curseur, défini par l'utilisateur.|  
-|**properties**|**nvarchar (256)**|Spécifie les propriétés du curseur. Les valeurs des propriétés suivantes sont concaténées pour former la valeur de cette colonne :<br />Interface déclaration<br />Type de curseur <br />Accès simultané au curseur<br />Étendue du curseur<br />Niveau d'imbrication du curseur<br /><br /> Par exemple, la valeur retournée dans cette colonne peut être « TSQL &#124; Dynamique &#124; Optimiste &#124; Global (0) ».|  
+|**Propriétés**|**nvarchar (256)**|Spécifie les propriétés du curseur. Les valeurs des propriétés suivantes sont concaténées pour former la valeur de cette colonne :<br />Interface déclaration<br />Type de curseur <br />Accès simultané au curseur<br />Étendue du curseur<br />Niveau d'imbrication du curseur<br /><br /> Par exemple, la valeur retournée dans cette colonne peut être « TSQL &#124; dynamique &#124; Optimistic &#124; Global (0) ».|  
 |**sql_handle**|**varbinary(64)**|Descripteur du texte du traitement qui a déclaré le curseur.|  
 |**statement_start_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution commencent. Peut être utilisé avec le **sql_handle**, le **statement_end_offset**et le [sys.dm_exec_sql_text](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sql-text-transact-sql.md) fonction de gestion dynamique pour extraire l’instruction en cours d’exécution de la demande.|  
 |**statement_end_offset**|**int**|Nombre de caractères dans le traitement ou la procédure stockée en cours d'exécution où les instructions en cours d'exécution se terminent. Peut être utilisé avec le **sql_handle**, le **statement_start_offset**et le **sys.dm_exec_sql_text** fonction de gestion dynamique pour extraire l’instruction en cours d’exécution de la demande.|  
@@ -72,7 +67,7 @@ dm_exec_cursors (session_id | 0 )
 |**fetch_buffer_start**|**int**|Pour les curseurs FAST_FORWARD et DYNAMIC, retourne 0 si le curseur n'est pas ouvert ou s'il est positionné devant la première ligne. Sinon, retourne -1.<br /><br /> Pour les curseurs STATIC et KEYSET, retourne 0 si le curseur n'est pas ouvert et -1 si le curseur est positionné au-delà de la dernière ligne.<br /><br /> Sinon, retourne le numéro de la ligne où il est positionné.|  
 |**ansi_position**|**int**|Position du curseur dans le tampon d'extraction.|  
 |**worker_time**|**bigint**|Temps, en microsecondes, passés par les travaux qui exécutent ce curseur.|  
-|**reads**|**bigint**|Nombre de lectures effectuées par le curseur.|  
+|**Lectures**|**bigint**|Nombre de lectures effectuées par le curseur.|  
 |**writes**|**bigint**|Nombre d'écritures effectuées par le curseur.|  
 |**dormant_duration**|**bigint**|Millisecondes écoulées depuis le début de la dernière requête (ouverture ou extraction) sur ce curseur.|  
   
@@ -126,7 +121,7 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Les fonctions et vues de gestion dynamique &#40; liées à l’exécution Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
+ [Fonctions et vues de gestion dynamique liées à l’exécution &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/execution-related-dynamic-management-views-and-functions-transact-sql.md)   
  [sys.dm_exec_sessions &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-exec-sessions-transact-sql.md)  
   
   

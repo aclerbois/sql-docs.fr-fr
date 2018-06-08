@@ -1,25 +1,22 @@
-﻿---
-title: "Prise en main de la sécurité SQL Server sur Linux | Documents Microsoft"
-description: "Cet article décrit les actions de sécurité standard."
+---
+title: Prise en main de la sécurité SQL Server sur Linux | Documents Microsoft
+description: Cet article décrit les actions de sécurité standard.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: ecc72850-8b01-492e-9a27-ec817648f0e0
 ms.custom: sql-linux
-ms.workload: Inactive
-ms.openlocfilehash: 8000ee26dd5118d4380f4e2ab33d39aa96967466
-ms.sourcegitcommit: a8311ec5ad8313e85e6989f70c5ff9ef120821d6
+ms.openlocfilehash: 0d7f2244a20f117d2886cdee59d54adfa4029721
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="walkthrough-for-the-security-features-of-sql-server-on-linux"></a>Procédure pas à pas pour les fonctionnalités de sécurité de SQL Server sur Linux
 
@@ -42,7 +39,7 @@ CREATE LOGIN Larry WITH PASSWORD = '************';
 >  [!NOTE]
 >  Utilisez toujours un mot de passe à la place les astérisques dans la commande précédente.
 
-Les comptes de connexion peuvent se connecter à SQL Server et avoir accès (avec des autorisations limitées) à la base de données master. Pour vous connecter à une base de données utilisateur, un compte de connexion a besoin d’une identité correspondante au niveau base de données, appelé utilisateur de base de données. Les utilisateurs sont spécifiques à chaque base de données et doivent être créés séparément dans chaque base de données pour leur accorder l’accès. L’exemple suivant vous positionne dans la base de données AdventureWorks2014 et utilise ensuite l'instruction [CREATE USER](../t-sql/statements/create-user-transact-sql.md) pour créer un utilisateur nommé Larry qui est associé à la connexion nommée Larry. Bien que la connexion et l’utilisateur soient liées (mappés l'un à l’autre), ce sont des objets différents. La connexion est un principal (entité de sécurité) de niveau serveur. L’utilisateur est un principal (entité de sécurité) au niveau de la base de données.
+Comptes de connexion peuvent se connecter à SQL Server et avoir accès (avec des autorisations limitées) à la base de données master. Pour vous connecter à une base de données utilisateur, un compte de connexion a besoin d’une identité correspondante au niveau base de données, appelé utilisateur de base de données. Les utilisateurs sont spécifiques à chaque base de données et doivent être créés séparément dans chaque base de données à leur accorder l’accès. L’exemple suivant vous permet de passer dans la base de données AdventureWorks2014 et utilise ensuite la [CREATE USER](../t-sql/statements/create-user-transact-sql.md) instruction pour créer un utilisateur nommé Larry qui est associé à la connexion nommée Larry. Bien que la connexion et l’utilisateur sont liées (mappé à l’autre), ils sont des objets différents. La connexion est un principe de niveau serveur. L’utilisateur est un principal au niveau de la base de données.
 
 ```
 USE AdventureWorks2014;
@@ -73,7 +70,7 @@ La connexion Larry pouvez désormais créer plusieurs connexions, et l’utilisa
 
 Les premières personnes à se connecter à une base de données utilisateur seront l’administrateur et les comptes de propriétaire de base de données. Ces utilisateurs possèdent toutes les autorisations disponibles sur la base de données. C'est plus que la plupart des utilisateurs devraient avoir. 
 
-Lorsque vous êtes novice, vous pouvez attribuer des catégories générales d’autorisations à l’aide des *rôles de base de données fixes*. Par exemple, le rôle de base de données fixe `db_datareader` peut lire toutes les tables de la base de données, mais ne peut effectuer aucune modification. Accordez une appartenance à un rôle de base de données fixe à l’aide de l'instruction [ALTER ROLE](../t-sql/statements/alter-role-transact-sql.md). L’exemple suivant ajoute l’utilisateur `Jerry` au rôle de base de données fixe `db_datareader`.   
+Lorsque vous êtes novice, vous pouvez attribuer des catégories générales d’autorisations à l’aide de la fonction intégrée *base de données fixe*. Par exemple, le `db_datareader` rôle de base de données fixe peut lire toutes les tables de la base de données, mais n’apportez aucune modification. Accorder une appartenance à un rôle de base de données fixe à l’aide de la [ALTER ROLE](../t-sql/statements/alter-role-transact-sql.md) instruction. L’exemple suivant ajouter l’utilisateur `Jerry` à la `db_datareader` rôle de base de données fixe.   
    
 ```   
 USE AdventureWorks2014;   
@@ -211,7 +208,7 @@ en
 
 Une menace pour votre base de données est le risque qu’une personne vole les fichiers de base de données situés sur votre disque dur. Cela peut se produire par une intrusion qui réussirait à obtenir une élévation de ses privilèges d’accès à votre système, les actions d’un employé qui pose problème, ou en cas de vol de l’ordinateur contenant les fichiers (par exemple, un ordinateur portable).
 
-Le chiffrement transparent des données (TDE) chiffre les fichiers de données stockés sur le disque dur. La base de données master du moteur de base de données SQL Server possède la clé de chiffrement, afin que le moteur de base de données puisse manipuler les données. Les fichiers de base de données ne peuvent pas être lus sans accès à la clé. Les administrateurs peuvent administrer, sauvegarder et recréer la clé afin de pouvoir déplacer la base de données, mais ceci ne pourra être fait que par des personnes habilitées. Lorsque le chiffrement transparent des données est configuré, la base de données `tempdb` est automatiquement chiffrée. 
+Chiffrement transparent des données (TDE) chiffre les fichiers de données stockées sur le disque dur. La base de données master du moteur de base de données SQL Server a la clé de chiffrement, afin que le moteur de base de données peut manipuler les données. Les fichiers de base de données ne peut pas être lus sans accès à la clé. Les administrateurs de niveau supérieur peuvent gérer, la sauvegarde et recréez la clé, afin de pouvoir déplacer la base de données, mais uniquement par les personnes sélectionnées. Lorsque le chiffrement transparent des données sont configurée, le `tempdb` base de données est chiffrée automatiquement. 
 
 Étant donné que le moteur de base de données peut lire les données, le chiffrement Transparent des données ne protège pas contre les accès non autorisés par les administrateurs de l’ordinateur qui peuvent directement lire la mémoire, ou accéder à SQL Server via un compte d’administrateur.
 

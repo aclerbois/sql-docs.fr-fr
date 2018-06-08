@@ -2,30 +2,28 @@
 title: Pilotes Microsoft SQL Server pour PHP | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: 9e78bbf3-9e9a-426d-99d3-6fa2cb33ff6b
-caps.latest.revision: ''
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: a7a78c55a54c5e020b26cee82e2e5a08ff09f5e0
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: f46806b705a069164d01accf4efd2169563442db
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-drivers-for-php-for-sql-server"></a>Pilotes Microsoft SQL Server pour PHP
 
-![Téléchargement-bas encerclé](../../ssdt/media/download.png)[pour télécharger les pilotes PHP pour SQL](../sql-connection-libraries.md#anchor-20-drivers-relational-access)
+[!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
 
 Le Microsoft Drivers for PHP for SQL Server activer l’intégration avec SQL Server pour les applications PHP. Les pilotes sont des extensions PHP qui permettent la lecture et l’écriture des données de SQL Server à partir de scripts PHP. Les pilotes fournissent des interfaces pour l’accès aux données dans les bases de données SQL Azure et dans toutes les éditions de SQL Server 2005 et versions ultérieures (y compris les éditions Express). Les pilotes de rendre utilise des fonctionnalités PHP, y compris les flux de données PHP, pour lire et écrire des objets.  
   
@@ -45,7 +43,7 @@ Le Microsoft Drivers for PHP for SQL Server activer l’intégration avec SQL Se
 * [Ressources de support technique pour les pilotes Microsoft pour PHP pour SQL Server](support-resources-for-the-php-sql-driver.md)
   
 ## <a name="download"></a>Télécharger  
-* ![Téléchargement-bas encerclé](../../ssdt/media/download.png)[pour télécharger le pilote PHP pour SQL](../sql-connection-libraries.md#anchor-20-drivers-relational-access)
+* ![Téléchargement-bas encerclé](../../ssdt/media/download.png)[à télécharger des pilotes pour PHP pour SQL](download-drivers-php-sql-server.md)
   
 ## <a name="samples"></a>Exemples  
 * [Exemples de code pour les pilotes Microsoft SQL Server pour PHP](code-samples-for-php-sql-driver.md)

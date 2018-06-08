@@ -1,32 +1,29 @@
 ---
 title: Forme la Clause COMPUTE | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - shape commands [ADO]
 - compute clause [ADO]
 - data shaping [ADO], COMPUTE clause
 ms.assetid: 3fdfead2-b5ab-4163-9b1d-3d2143a5db8c
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 53ebeab9edfa1d9fc339f080d4a9de995053f77a
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 25d89db4052234482846dc752e5c0431bb517164
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="shape-compute-clause"></a>Clause COMPUTE de forme
 Une clause COMPUTE de forme génère un parent **Recordset**, dont les colonnes sont constitués d’une référence à l’enfant **Recordset**; facultatif dont le contenu est chapitre, nouveau, ou des colonnes calculées, des colonnes ou le résultat de l’exécution des fonctions d’agrégation de l’enfant **Recordset** ou un préalablement mis en forme **Recordset**; et toutes les colonnes à partir de l’enfant **Recordset** répertoriées dans le paramètre facultatif par clause.  
@@ -42,10 +39,10 @@ SHAPE child-command [AS] child-alias
 ## <a name="description"></a> Description  
  Les parties de cette clause sont les suivantes :  
   
- *child-command*  
+ *commande-enfant*  
  Se compose d’une des opérations suivantes :  
   
--   Une commande de requête entre accolades (« {} ») qui retourne un enfant **Recordset** objet. La commande est envoyée au fournisseur de données sous-jacent et sa syntaxe dépend des exigences de ce fournisseur. Ce sera généralement le langage SQL, même si ADO ne requiert pas de langage de requête particulier.  
+-   Une commande de requête entre accolades («{}») qui retourne un enfant **Recordset** objet. La commande est envoyée au fournisseur de données sous-jacent et sa syntaxe dépend des exigences de ce fournisseur. Ce sera généralement le langage SQL, même si ADO ne requiert pas de langage de requête particulier.  
   
 -   Le nom d’un objet en forme **Recordset**.  
   
@@ -53,7 +50,7 @@ SHAPE child-command [AS] child-alias
   
 -   Le mot-clé TABLE, suivi du nom d’une table dans le fournisseur de données.  
   
- *child-alias*  
+ *alias-enfant*  
  Un alias utilisés pour faire référence à la **Recordset** retourné par la *commande-enfant.* Le *alias-enfant* est requis dans la liste des colonnes dans la clause COMPUTE et définit la relation entre parent et enfant **Recordset** objets.  
   
  *appended-column-list*  
@@ -124,7 +121,7 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
 |CA|Los Angeles|800,000|  
 |CA|San Diego|600,000|  
   
-## <a name="child2"></a>Child2  
+## <a name="child2"></a>Enfant2  
   
 |État|Ville|Remplissage|  
 |-----------|----------|----------------|  
@@ -144,7 +141,7 @@ rst.Open  "SHAPE {select * from demographics} AS rs "  & _
  [Vue d’ensemble de la mise en forme des données](../../../ado/guide/data/data-shaping-overview.md)   
  [Objet Field](../../../ado/reference/ado-api/field-object.md)   
  [Grammaire de mise en forme formelle](../../../ado/guide/data/formal-shape-grammar.md)   
- [Recordset Object (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
+ [Objet Recordset (ADO)](../../../ado/reference/ado-api/recordset-object-ado.md)   
  [Fournisseurs requis pour la mise en forme des données](../../../ado/guide/data/required-providers-for-data-shaping.md)   
  [Clause APPEND de forme](../../../ado/guide/data/shape-append-clause.md)   
  [En général, les commandes de forme](../../../ado/guide/data/shape-commands-in-general.md)   

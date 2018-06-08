@@ -1,16 +1,15 @@
 ---
 title: sp_copysubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,23 +19,22 @@ f1_keywords:
 helpviewer_keywords:
 - sp_copysubscription
 ms.assetid: 3c56cd62-2966-4e87-a986-44cb3fd0b760
-caps.latest.revision: 
+caps.latest.revision: 33
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9feaac9bb5dfd23bbdd4422f3ad9908663bc64c7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 3cae06562e37cf10c2fa94934eedb20880b4391a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spcopysubscription-transact-sql"></a>sp_copysubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
     
 > [!IMPORTANT]  
->  La fonctionnalité concernant les abonnements pouvant être attachés est déconseillée et sera retirée dans une version ultérieure. Elle ne doit pas être utilisée dans tout nouveau travail de développement. Dans le cas des publications de fusion partitionnées par le biais de filtres paramétrés, nous vous recommandons d'utiliser plutôt les nouvelles fonctionnalités d'instantanés partitionnés qui simplifient l'initialisation de larges volumes d'abonnements. Pour plus d'informations, voir [Snapshots for Merge Publications with Parameterized Filters](../../relational-databases/replication/snapshots-for-merge-publications-with-parameterized-filters.md). Dans le cas de publications qui ne sont pas partitionnées, vous pouvez initialiser un abonnement par le biais d'une sauvegarde. Pour plus d’informations, consultez [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
+>  La fonctionnalité concernant les abonnements pouvant être attachés est déconseillée et sera retirée dans une version ultérieure. Elle ne doit pas être utilisée dans tout nouveau travail de développement. Dans le cas des publications de fusion partitionnées par le biais de filtres paramétrés, nous vous recommandons d'utiliser plutôt les nouvelles fonctionnalités d'instantanés partitionnés qui simplifient l'initialisation de larges volumes d'abonnements. Pour plus d’informations, voir [Instantanés des publications de fusion avec des filtres paramétrés](../../relational-databases/replication/snapshots-for-merge-publications-with-parameterized-filters.md). Dans le cas de publications qui ne sont pas partitionnées, vous pouvez initialiser un abonnement par le biais d'une sauvegarde. Pour plus d’informations, consultez [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
   
  Copie une base de données d'abonnement contenant des abonnements par extraction de données (pull) mais pas d'abonnements par envoi de données (push). Seules les bases de données monofichier peuvent être copiées. Cette procédure stockée est exécutée sur la base de données d'abonnement de l'Abonné.  
   
@@ -59,7 +57,7 @@ sp_copysubscription [ @filename = ] 'file_name'
  Nom du répertoire contenant les fichiers temporaires. *temp_dir* est **nvarchar (260)**, avec NULL comme valeur par défaut. Si NULL, le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] répertoire de données par défaut sera utilisé. Le répertoire doit contenir suffisamment d'espace pour stocker un fichier d'une taille équivalente à celle de tous les fichiers de bases de données d'abonnés réunis.  
   
  [  **@overwrite_existing_file=**] **'***overwrite_existing_file***'**  
- Indicateur booléen facultatif qui spécifie s’il faut ou non remplacer un fichier existant portant le même nom que celui spécifié dans  **@filename** . *overwrite_existing_file*est **bits**, avec une valeur par défaut **0**. Si **1**, il remplace le fichier spécifié par  **@filename** , si elle existe. Si **0**, la procédure stockée échoue si le fichier existe et que le fichier n’est pas remplacé.  
+ Indicateur booléen facultatif qui spécifie s’il faut ou non remplacer un fichier existant portant le même nom que celui spécifié dans **@filename**. *overwrite_existing_file*est **bits**, avec une valeur par défaut **0**. Si **1**, il remplace le fichier spécifié par **@filename**, si elle existe. Si **0**, la procédure stockée échoue si le fichier existe et que le fichier n’est pas remplacé.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  **0** (réussite) ou **1** (échec)  
@@ -71,7 +69,7 @@ sp_copysubscription [ @filename = ] 'file_name'
   
  **sp_copysubscription** est uniquement pris en charge pour les bases de données avec des abonnements clients et ne peut pas être exécutée lorsque la base de données a des abonnements serveur.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** du rôle serveur fixe peuvent exécuter **sp_copysubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  

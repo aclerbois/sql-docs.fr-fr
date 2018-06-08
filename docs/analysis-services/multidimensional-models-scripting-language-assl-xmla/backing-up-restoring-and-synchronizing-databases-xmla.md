@@ -1,35 +1,19 @@
 ---
-title: "Sauvegarde, restauration et synchronisation de bases de données (XMLA) | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- restoring databases [XML for Analysis]
-- backing up databases [XML for Analysis]
-- database backups [XML for Analysis]
-- synchronization [XML for Analysis]
-- database restores [XML for Analysis]
-ms.assetid: 6c021b2e-6ad0-444e-b23f-4b5f72ce084b
-caps.latest.revision: 
-author: Minewiskan
+title: Sauvegarde, restauration et synchronisation de bases de données (XMLA) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: xmla
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 33fc95e7b34b28c4233ede68927e60eada8bf5df
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 09a1312c37cfa47a0eb7cac909b388035d6352b2
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="backing-up-restoring-and-synchronizing-databases-xmla"></a>Sauvegarde, restauration et synchronisation de bases de données (XMLA)
   XML for Analysis propose trois commandes qui permettent de sauvegarder, restaurer et synchroniser des bases de données :  
@@ -69,7 +53,7 @@ ms.lasthandoff: 02/15/2018
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|*SkipMembership*|Inclut les définitions de sécurité dans le fichier de sauvegarde mais exclut les informations d'appartenance.|  
+|*skipMembership*|Inclut les définitions de sécurité dans le fichier de sauvegarde mais exclut les informations d'appartenance.|  
 |*CopyAll*|Inclut les définitions de sécurité et les informations d'appartenance dans le fichier de sauvegarde.|  
 |*IgnoreSecurity*|Exclut les définitions de sécurité du fichier de sauvegarde.|  
   
@@ -99,7 +83,7 @@ ms.lasthandoff: 02/15/2018
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|*SkipMembership*|Inclut les définitions de sécurité dans la base de données mais exclut les informations d'appartenance.|  
+|*skipMembership*|Inclut les définitions de sécurité dans la base de données mais exclut les informations d'appartenance.|  
 |*CopyAll*|Inclut les définitions de sécurité et les informations d'appartenance dans la base de données.|  
 |*IgnoreSecurity*|Exclut les définitions de sécurité de la base de données.|  
   
@@ -137,7 +121,7 @@ ms.lasthandoff: 02/15/2018
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|*SkipMembership*|Inclut les définitions de sécurité dans la base de données de destination mais exclut les informations d'appartenance.|  
+|*skipMembership*|Inclut les définitions de sécurité dans la base de données de destination mais exclut les informations d'appartenance.|  
 |*CopyAll*|Inclut les définitions de sécurité et les informations d'appartenance dans la base de données de destination.|  
 |*IgnoreSecurity*|Exclut les définitions de sécurité de la base de données de destination.|  
   
@@ -154,9 +138,9 @@ ms.lasthandoff: 02/15/2018
  Vous pouvez utiliser la **emplacement** élément dans une commande Synchronize pour synchroniser des objets ROLAP. Pour chaque **emplacement** élément utilisé pour déplacer une source de données, le **DataSourceType** propriété doit être définie explicitement sur *Local*. . Vous devez également définir le **ConnectionString** propriété de la **emplacement** élément à la chaîne de connexion du nouvel emplacement. Pendant la synchronisation, le **synchroniser** commande remplace la chaîne de connexion pour la source de données identifiée par le **DataSourceID** propriété de la **emplacement** élément avec la valeur de la **ConnectionString** propriété de la **emplacement** élément.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Élément Backup &#40; XMLA &#41;](../../analysis-services/xmla/xml-elements-commands/backup-element-xmla.md)   
- [Restaurer l’élément &#40; XMLA &#41;](../../analysis-services/xmla/xml-elements-commands/restore-element-xmla.md)   
- [Synchroniser, élément &#40; XMLA &#41;](../../analysis-services/xmla/xml-elements-commands/synchronize-element-xmla.md)   
+ [Élément Backup & #40 ; XMLA & #41 ;](../../analysis-services/xmla/xml-elements-commands/backup-element-xmla.md)   
+ [Restaurer l’élément & #40 ; XMLA & #41 ;](../../analysis-services/xmla/xml-elements-commands/restore-element-xmla.md)   
+ [Synchroniser, élément & #40 ; XMLA & #41 ;](../../analysis-services/xmla/xml-elements-commands/synchronize-element-xmla.md)   
  [Sauvegarde et restauration de bases de données Analysis Services](../../analysis-services/multidimensional-models/backup-and-restore-of-analysis-services-databases.md)  
   
   

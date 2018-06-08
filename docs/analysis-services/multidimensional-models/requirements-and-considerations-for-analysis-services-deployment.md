@@ -1,45 +1,26 @@
 ---
-title: "Exigences et considérations pour Analysis Services de déploiement | Documents Microsoft"
-ms.custom: 
-ms.date: 03/16/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- memory [Analysis Services]
-- scalability [Analysis Services]
-- space [Analysis Services]
-- Analysis Services deployments, requirements
-- deploying [Analysis Services], requirements
-- disk space [Analysis Services]
-- requirements [Analysis Services]
-- processors [Analysis Services]
-- system requirements [Analysis Services]
-- availability [Analysis Services]
-ms.assetid: ef1387a5-5137-4ef4-b731-fec347e5f5ed
-caps.latest.revision: 
-author: Minewiskan
+title: Exigences et considérations pour Analysis Services de déploiement | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: cb9d445b33f7a9ab1dc81f32ea7db419c512f680
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 8fc21b64be49a74359dcde41e10be5524bc1d9ab
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="requirements-and-considerations-for-analysis-services-deployment"></a>Configuration requise et considérations relatives au déploiement d'Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les performances et la disponibilité d'une solution dépendent de nombreux facteurs, notamment des capacités du matériel sous-jacent, de la topologie de votre déploiement de serveur, des caractéristiques de votre solution (présence, par exemple, de partitions distribuées sur plusieurs serveurs ou utilisation du stockage ROLAP qui requiert l'accès direct au moteur relationnel), des contrats de niveau de service et de la complexité de votre modèle de données.  
+  Les performances et la disponibilité d'une solution dépendent de nombreux facteurs, notamment des capacités du matériel sous-jacent, de la topologie de votre déploiement de serveur, des caractéristiques de votre solution (présence, par exemple, de partitions distribuées sur plusieurs serveurs ou utilisation du stockage ROLAP qui requiert l'accès direct au moteur relationnel), des contrats de niveau de service et de la complexité de votre modèle de données.  
   
 ## <a name="memory-and-processor-requirements"></a>Besoins en mémoire et de traitement  
- [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] nécessite plus de ressources de mémoire et de traitement dans les cas suivants :  
+ [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)]nécessite plus de ressources processeur et de mémoire dans les cas suivants :  
   
 -   Lors du traitement de cubes volumineux ou complexes. Ces cubes nécessitent plus de ressources mémoire et de traitement que les petits cubes et les cubes simples.  
   

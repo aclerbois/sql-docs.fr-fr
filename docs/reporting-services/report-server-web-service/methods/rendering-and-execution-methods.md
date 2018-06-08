@@ -1,33 +1,32 @@
 ---
-title: "Méthodes de rendu et d’exécution | Microsoft Docs"
-ms.custom: 
+title: Méthodes de rendu et d’exécution | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - rendered reports [Reporting Services]
 - reports [Reporting Services], execution options
 - methods [Reporting Services], execution options
 - methods [Reporting Services], rendering
 ms.assetid: 12626aad-f0be-4653-87d0-60eb3a3fff78
-caps.latest.revision: "36"
+caps.latest.revision: 36
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 418113919aa23024f51d71cc8b8593063fb9e8b9
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 1d4da662ed770c6b104e53e9397321a56d4b065b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rendering-and-execution-methods"></a>Méthodes de rendu et d'exécution
   Vous pouvez utiliser ces méthodes pour gérer l'exécution et la mise en cache des éléments, ainsi que la génération des rapports.  

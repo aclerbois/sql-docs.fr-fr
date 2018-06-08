@@ -1,16 +1,14 @@
 ---
-title: "GRANT - Autorisations relatives au texte intégral | Microsoft Docs"
-ms.custom: 
+title: GRANT - Autorisations relatives au texte intégral | Microsoft Docs
+ms.custom: ''
 ms.date: 06/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - full-text stoplist [SQL Server], permissions
 - GRANT statement, full-text permissions
 ms.assetid: fdb64e09-222a-47fe-b08b-999264ca261d
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 673092fc5f3523d0448e477ceda10ea491224982
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 4a6fb31fdd4b99a00a594e875712af56bb0ea3cb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="grant-full-text-permissions-transact-sql"></a>GRANT - Autorisations relatives au texte intégral (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]

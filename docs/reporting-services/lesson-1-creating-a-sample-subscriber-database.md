@@ -1,28 +1,27 @@
 ---
-title: "Leçon 1 : création d’un exemple de base de données de l’abonné | Microsoft Docs"
-ms.custom: 
+title: 'Leçon 1 : création d’un exemple de base de données de l’abonné | Microsoft Docs'
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: reporting-services
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: article
-applies_to: SQL Server 2016
+applies_to:
+- SQL Server 2016
 ms.assetid: 47a882b7-efe5-4ee6-bef4-06118eb56903
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 472bedc3291af96ecec8cafae7c4b4462b578284
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 9c9c6ecd024c8fe0b24227842c0db3a3569e649b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-1-creating-a-sample-subscriber-database"></a>Leçon 1 : Création d'un exemple de base de données de l'abonné
 

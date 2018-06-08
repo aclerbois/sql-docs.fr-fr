@@ -1,27 +1,25 @@
 ---
-title: "Aperçu des rapports dans le Générateur de rapports | Microsoft Docs"
-ms.custom: 
+title: Aperçu des rapports dans le Générateur de rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 01/09/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-builder
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: ba6b5bdd-d8c6-4aa8-ba32-3a10b11969d4
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: a9e34b37436a71d34def9aaae26c38866098a5b7
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: eb6447d896a68a932e24223944fd6117f54638eb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="previewing-reports-in-report-builder"></a>Aperçu des rapports dans le Générateur de rapports
   Quand vous créez un rapport paginé [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] , il est utile d’afficher fréquemment un aperçu du rapport pour vérifier qu’il s’affiche comme vous le souhaitez. Cliquez sur **Exécuter**pour afficher un aperçu du rapport. Le rapport est restitué en mode Aperçu.  

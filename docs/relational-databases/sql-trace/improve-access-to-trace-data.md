@@ -1,32 +1,30 @@
 ---
-title: "Améliorer l’accès aux données de trace | Microsoft Docs"
-ms.custom: 
+title: Améliorer l’accès aux données de trace | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: sql-trace
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Profiler [SQL Server Profiler], space
 - SQL Server Profiler, space
 - space [SQL Server], SQL Server Profiler
 ms.assetid: c260c000-fd53-4831-993f-df6894f3228b
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cb5a2c53aad0f396ade67d974ed6cfb2c5919913
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: ca10030e003582fb02809d65d6034a5cedfb2e02
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="improve-access-to-trace-data"></a>Améliorer l'accès aux données de trace
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,30 +1,28 @@
 ---
-title: "Bonnes pratiques en matière de filtres de lignes basés sur le temps | Microsoft Docs"
-ms.custom: 
+title: Bonnes pratiques en matière de filtres de lignes basés sur le temps | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - best practices
 ms.assetid: 773c5c62-fd44-44ab-9c6b-4257dbf8ffdb
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8717ade947739a3cd6796a7f4268e2c8328db024
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: bd7bfdf2bb9e1971dd6557f562f18fbbff5c3a20
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="best-practices-for-time-based-row-filters"></a>Bonnes pratiques en matière de filtres de lignes basés sur le temps
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

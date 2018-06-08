@@ -1,17 +1,14 @@
 ---
-title: "Restaurer les fichiers à un nouvel emplacement (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Restaurer les fichiers à un nouvel emplacement (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - restoring files [SQL Server], how-to topics
 - restoring databases [SQL Server], moving
@@ -20,16 +17,15 @@ helpviewer_keywords:
 - filegroups [SQL Server], restoring
 - restoring filegroups [SQL Server]
 ms.assetid: b4f4791d-646e-4632-9980-baae9cb1aade
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0a62f4a16fc89beee450493caca9b2cd81c42f71
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cfad9617e3ed48aa97cafcfa906567191f895220
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-files-to-a-new-location-sql-server"></a>Restaurer les fichiers à un nouvel emplacement (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

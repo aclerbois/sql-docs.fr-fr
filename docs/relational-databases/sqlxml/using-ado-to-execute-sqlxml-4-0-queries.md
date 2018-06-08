@@ -1,16 +1,14 @@
 ---
-title: "À l’aide d’ADO pour exécuter SQLXML 4.0 interroge | Documents Microsoft"
-ms.custom: 
+title: À l’aide d’ADO pour exécuter SQLXML 4.0 interroge | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - query testers [SQLXML]
@@ -19,20 +17,20 @@ helpviewer_keywords:
 - queries [SQLXML], ADO
 - SQLXML, ADO
 ms.assetid: 3d54e3bb-7c5f-427e-82f8-1403a54c4f53
-caps.latest.revision: 
+caps.latest.revision: 23
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b20cdf458264460b6d2e8630d8bc211599fc165b
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 6ba44ff764f9adf8cc6b27f5ad298d8ebb5ad2c3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-ado-to-execute-sqlxml-40-queries"></a>Utilisation d'ADO pour exécuter des requêtes SQLXML 4.0
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Dans les versions antérieures de SQLXML, l'exécution de requêtes basées sur le protocole HTTP était prise en charge à l'aide de répertoires virtuels IIS SQLXML et du filtre ISAPI SQLXML. Dans SQLXML 4.0, ces composants ont été supprimés du fait que des fonctionnalités semblables et se chevauchant sont fournies avec les services Web XML natifs à compter de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].  
+  Dans les versions antérieures de SQLXML, l'exécution de requêtes basées sur le protocole HTTP était prise en charge à l'aide de répertoires virtuels IIS SQLXML et du filtre ISAPI SQLXML. Dans SQLXML 4.0, ces composants ont été supprimés du fait que des fonctionnalités semblables et se chevauchant sont fournies avec les services Web XML natifs à compter de [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)].  
   
  Vous pouvez également exécuter des requêtes et utiliser SQLXML 4.0 avec vos applications COM en exploitant les extensions SQLXML aux objets ADO (ActiveX Data Objects) qui ont été introduites dans Microsoft Data Access Components (MDAC) 2.6 et versions ultérieures.  
   

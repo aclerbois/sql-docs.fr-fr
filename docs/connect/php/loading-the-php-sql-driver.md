@@ -2,29 +2,26 @@
 title: Chargement des pilotes Microsoft SQL Server pour PHP | Documents Microsoft
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - loading the driver
 ms.assetid: e5c114c5-8204-49c2-94eb-62ca63f5d3ec
-caps.latest.revision: ''
+caps.latest.revision: 42
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 5a21dcd1f7f416a7bdade75e1648aec9795680a1
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 7890c38877d05a69118a7c61ffe7261d1c9e91e2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="loading-the-microsoft-drivers-for-php-for-sql-server"></a>Chargement des pilotes Microsoft SQL Server pour PHP
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

@@ -1,27 +1,18 @@
 ---
 title: Configuration requise pour la procédure pas à pas pour la science des données pour SQL Server et R | Documents Microsoft
-ms.date: 11/10/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-dev_langs:
-- R
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: c8f3c74bb38ea358de0342126038b51e4404657b
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 4f0e6130882ea5af6dd0827ed2d5e798d3c11c5f
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585491"
 ---
 # <a name="prerequisites-for-the-data-science-walkthrough-for-sql-server-and-r"></a>Configuration requise pour la procédure pas à pas pour la science des données pour SQL Server et R
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -74,4 +65,4 @@ Pour cette procédure pas à pas, nous avons utilisé la connexion SQL **RTestUs
 
 ## <a name="next-lesson"></a>Leçon suivante
 
-[Préparer les données à l’aide de PowerShell](/walkthrough-prepare-the-data.md)
+[Préparer les données à l’aide de PowerShell](walkthrough-prepare-the-data.md)

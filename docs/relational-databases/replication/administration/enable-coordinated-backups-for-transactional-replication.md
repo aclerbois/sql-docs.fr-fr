@@ -1,17 +1,16 @@
 ---
-title: "Activer les sauvegardes coordonnées pour la réplication transactionnelle | Microsoft Docs"
-ms.custom: 
+title: Activer les sauvegardes coordonnées pour la réplication transactionnelle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - coordinated backups [SQL Server replication]
 - backups [SQL Server replication], transactional replication
 ms.assetid: 73a914ba-8b2d-4f4d-ac1b-db9bac676a30
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f57b57282b7fff5fbfb3cae2e422ae218049d7d3
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 62799acad263397d61db1c474de776019d1b5b8d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-coordinated-backups-for-transactional-replication"></a>Activer les sauvegardes coordonnées pour la réplication transactionnelle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

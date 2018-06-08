@@ -1,31 +1,28 @@
 ---
-title: "Extraits de code Transact-SQL | Microsoft Docs"
-ms.custom: 
+title: Extraits de code Transact-SQL | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 12834855-535a-4102-8b19-5d18b4080926
-caps.latest.revision: 
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 46eee672ae46777c21a896599d4c3fbf7819e7d9
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 6672fe47ecf38bd819bb76655ece64caecbd4a16
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="transact-sql-code-snippets"></a>Extraits de code Transact-SQL
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Un extrait de code [!INCLUDE[tsql](../../includes/tsql-md.md)] est un modèle contenant la structure de base d’une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ou d’un bloc. Vous pouvez utiliser les extraits de code comme point de départ lors de l'ajout d'instructions dans l'éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Vous pouvez insérer les extraits de code prédéfinis fournis avec SQL Server ou créer vos propres extraits de code.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Un extrait de code [!INCLUDE[tsql](../../includes/tsql-md.md)]est un modèle contenant la structure de base d'une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ou d'un bloc. Vous pouvez utiliser les extraits de code comme point de départ lors de l'ajout d'instructions dans l'éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] . Vous pouvez insérer les extraits de code prédéfinis fournis avec SQL Server ou créer vos propres extraits de code.  
   
 ## <a name="transact-sql-code-snippet-tasks"></a>Tâches relatives aux extraits de code Transact-SQL  
   

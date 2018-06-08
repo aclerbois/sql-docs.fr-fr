@@ -1,16 +1,14 @@
 ---
 title: COL_LENGTH (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - COL_LENGTH
@@ -23,21 +21,20 @@ helpviewer_keywords:
 - column properties [SQL Server]
 - column length [SQL Server]
 ms.assetid: cf891206-c49f-40eb-858e-eefd2b638a33
-caps.latest.revision: 
+caps.latest.revision: 20
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a5fe2a9da9df8de05f5e4e7f492179445edcf62f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8fc0dda131ae6dc0b2d38b712e654e83d2f7b0a4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="collength-transact-sql"></a>COL_LENGTH (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
-Renvoie la longueur définie d'une colonne, exprimée en octets.
+Cette fonction retourne la longueur définie d’une colonne en octets.
   
 ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)
   
@@ -52,21 +49,21 @@ COL_LENGTH ( 'table' , 'column' )
 Nom de la table dont les informations de longueur de colonne doivent être déterminées. *table* est une expression de type **nvarchar**.
   
 **'** *column* **'**  
-Nom de la colonne dont la longueur doit être déterminée. *column* est une expression de type **nvarchar**.
+Nom de la colonne dont nous voulons déterminer la longueur. *column* est une expression de type **nvarchar**.
   
 ## <a name="return-type"></a>Type de retour
 **smallint**
   
 ## <a name="exceptions"></a>Exceptions  
-Retourne la valeur NULL en cas d'erreur ou si un appelant n'est pas autorisé à afficher l'objet.
+Retourne NULL en cas d’erreur ou si un appelant ne dispose pas de l’autorisation appropriée pour voir l’objet.
   
-Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un utilisateur peut voir uniquement les métadonnées des éléments sécurisables qui lui appartiennent ou pour lesquels il dispose d'un droit d'accès. Cela signifie que les fonctions intégrées générant des métadonnées, telles que COL_LENGTH, peuvent retourner la valeur NULL si l'utilisateur ne dispose d'aucune autorisation sur l'objet. Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).
+Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un utilisateur peut seulement voir les métadonnées des éléments sécurisables qui lui appartiennent ou pour lesquels il dispose d’un droit d’accès. Cela signifie que les fonctions intégrées générant des métadonnées, comme COL_LENGTH, peuvent retourner NULL si l’utilisateur ne dispose pas de l’autorisation appropriée sur l’objet. Pour plus d’informations, consultez [Configuration de la visibilité des métadonnées](../../relational-databases/security/metadata-visibility-configuration.md).
   
 ## <a name="remarks"></a>Notes   
-Pour les colonnes de type **varchar**, déclarées avec le spécificateur **max** (**varchar(max)**), COL_LENGTH renvoie la valeur –1.
+Pour les colonnes **varchar** déclarées avec le spécificateur **max** (**varchar(max)**), COL_LENGTH retourne la valeur -1.
   
 ## <a name="examples"></a>Exemples  
-L'exemple suivant montre les valeurs renvoyées pour une colonne de type `varchar(40)` et pour une colonne de type `nvarchar(40)`.
+L’exemple suivant montre les valeurs retournées pour une colonne de type `varchar(40)` et pour une colonne de type `nvarchar(40)` :
   
 ```sql
 USE AdventureWorks2012;  

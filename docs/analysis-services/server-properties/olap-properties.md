@@ -1,112 +1,19 @@
 ---
-title: "Propriétés OLAP | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-helpviewer_keywords:
-- AggregationPerfLog property
-- DefaultPageSizeForProp property
-- UseSinglePassForDimSecurityAutoExist property
-- DeepCompressValue property
-- CacheRowsetRows property
-- Income property
-- AggregationNewAlgo property
-- MemoryAdjustFactor property
-- DimensionLatencyAccuracy property
-- InitialBonus property
-- DefaultPageSizeForDataHeader property
-- MaxCPUUsage property
-- DistinctBuffer property
-- PartitionLatencyAccuracy property
-- MaxRetries property
-- UseDataCacheRegistryMultiplyKey property
-- ConvertDeletedToUnknown property
-- DatabaseConnectionPoolMax property
-- DataFileInitEnabled property
-- DefaultPageSizeForHash property
-- MaxRolapOrConditions property
-- UseDataCacheFreeLastPageMemory property
-- OLAP [Analysis Services], properties
-- MapHandleAlgorithm property
-- IndexBuildEnabled property
-- MaxObjectsInParallel property
-- IgnoreNullRolapRows property
-- DimensionPropertyCacheSize property
-- DefaultRefreshInterval property
-- CheckDistinctRecordSortOrder property
-- BufferMemoryLimit property
-- EnableTableGrouping property
-- ExpressNonEmptyUseEnabled property
-- CopyLinkedDataCacheAndRegistry property
-- UseDataSlice property
-- MemoryLimitErrorEnabled property
-- Enabled property
-- EnableRolapOptimization property
-- DatabaseConnectionPoolTimeout property
-- UseDataCacheRegistryHashTable property
-- AggregationsBuildEnabled property
-- Tax property
-- DatabaseConnectionPoolGeneralTimeout property
-- DefaultPageSizeForString property
-- DatabaseConnectionPoolConnectTimeout property
-- MinimumBalance property
-- OptimizeSchema property
-- UseCalculationCacheRegistry property
-- MaxTableDepth property
-- DataSliceInitEnabled property
-- PrefetchLowerGranularities property
-- UseVBANet property
-- BufferRecordLimit property
-- DefaultPageSizeForIndexHeader property
-- MaximumBalance property
-- CalculationCacheRegistryMaxIterations property
-- DefaultDrillthroughMaxRows property
-- IndexBuildThreshold property
-- UseDataCacheRegistry property
-- MemoryAdjustConst property
-- ApplyIntersect property
-- IndexFileInitEnabled property
-- CacheRowsetToDisk property
-- DataCacheRegistryMaxIterations property
-- AllowSEFiltering property
-- ForceMultiPass property
-- ApplySubtract property
-- IndexUseEnabled property
-- AggregationsUseEnabled property
-- DataPlacementOptimization property
-- UseMaterializedIterators property
-- CacheRecordLimit property
-- ROLAPDimensionProcessingEffort property
-- DefaultPageSizeForIndex property
-- EnableRolapDimQueryTableGrouping property
-- DimensionPropertyKeyCache property
-- SleepIntervalSecs property
-- DefaultPageSizeForData property
-- MapFormatMask property
-- CalculationEvaluationPolicy property
-- AggregationMemoryLimitMin property
-- RecordsReportGranularity property
-- MemoryLimit property
-- AggregationMemoryLimitMax property
-ms.assetid: 06eb0d78-96c0-42ff-b759-f4c794597c8d
-caps.latest.revision: 
-author: Minewiskan
+title: Propriétés OLAP | Documents Microsoft
+ms.date: 05/03/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: cfeaedcf34ffdafdc54c0ce88ae80ecfc6190f6f
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5739c93f7a3c20960f5470c3fd2cdb24c72cf09d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="olap-properties"></a>Propriétés OLAP
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

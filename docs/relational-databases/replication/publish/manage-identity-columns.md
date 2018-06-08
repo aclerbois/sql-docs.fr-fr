@@ -1,17 +1,16 @@
 ---
-title: "Gérer des colonnes d’identité | Microsoft Docs"
-ms.custom: 
+title: Gérer des colonnes d’identité | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - identity values [SQL Server replication]
 - merge replication [SQL Server replication], identity range management
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - transactional replication, identity range management
 - identity columns [SQL Server], replication
 ms.assetid: 98892836-cf63-494a-bd5d-6577d9810ddf
-caps.latest.revision: 
+caps.latest.revision: 42
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3f783110c2741bc461df4baf1b12d7d4454da32c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 8173b90d4c23ca612e80175d59969e259c2cb24c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="manage-identity-columns"></a>Gérer des colonnes d'identité
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,34 +1,31 @@
 ---
-title: "Activer la recherche sémantique sur les tables et les colonnes | Microsoft Docs"
-ms.custom: 
+title: Activer la recherche sémantique sur les tables et les colonnes | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
+ms.prod: sql
+ms.prod_service: search, sql-database
 ms.component: search
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-search
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: search
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - semantic search [SQL Server], enabling
 ms.assetid: 895d220c-6749-4954-9dd3-2ea4c6a321ff
-caps.latest.revision: 
+caps.latest.revision: 22
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0de385730d9999a2943f9599202d717fa7049152
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 67dff594a953d7650875e67bdb2ecc84703eca8d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="enable-semantic-search-on-tables-and-columns"></a>Activer la recherche sémantique sur les tables et les colonnes
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Décrit la procédure d'activation ou de désactivation de l'indexation sémantique statistique sur des colonnes sélectionnées qui contiennent des documents ou du texte.  
+  Décrit la procédure d'activation ou de désactivation de l'indexation sémantique statistique sur des colonnes sélectionnées qui contiennent des documents ou du texte.  
   
  La recherche sémantique statistique utilise les index créés par la recherche en texte intégral et crée des index supplémentaires. Conséquence de cette dépendance sur la recherche en texte intégral, vous créez un index sémantique lorsque vous définissez un nouvel index de recherche en texte intégral ou lorsque vous modifiez un index de recherche en texte intégral existant. Vous pouvez créer un index sémantique à l'aide d'instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ou en utilisant l'Assistant Indexation de texte intégral et d'autres boîtes de dialogue de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], comme décrit dans cette rubrique.  
   
@@ -279,7 +276,7 @@ GO
 ###  <a name="doctypes"></a> Déterminer les types de documents pouvant être indexés  
  Interrogez l’affichage catalogue [sys.fulltext_document_types &#40;Transact-SQL&#41;](../../relational-databases/system-catalog-views/sys-fulltext-document-types-transact-sql.md).  
   
- Si le type de document que vous souhaitez indexer ne figure pas dans la liste des types pris en charge, vous devrez peut-être rechercher, télécharger et installer des filtres supplémentaires. Pour plus d’informations, consultez [View or Change Registered Filters and Word Breakers](../../relational-databases/search/view-or-change-registered-filters-and-word-breakers.md).  
+ Si le type de document que vous souhaitez indexer ne figure pas dans la liste des types pris en charge, vous devrez peut-être rechercher, télécharger et installer des filtres supplémentaires. Pour plus d’informations, consultez [Afficher ou modifier des filtres et des analyseurs lexicaux inscrits](../../relational-databases/search/view-or-change-registered-filters-and-word-breakers.md).  
   
 ##  <a name="BestPracticeFilegroup"></a> Best practice: Consider creating a separate filegroup for the full-text and semantic indexes  
  Créez un groupe de fichiers séparé pour les index sémantiques et de recherche en texte intégral si l'allocation d'espace disque pose problème. Les index sémantiques sont créés dans le même groupe de fichiers que l'index de recherche en texte intégral. Un index sémantique entièrement rempli peut contenir un grand nombre de données.  

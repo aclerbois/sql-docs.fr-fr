@@ -1,34 +1,30 @@
 ---
-title: "Audit Statement Permission, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Statement Permission, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Statement Permission event class
 ms.assetid: 84ababe0-166e-4b1e-903b-bee6c1f005e7
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db99329ebf08184c1be6c17138cfeab80ecef889
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 923502564cf57bf539853ce0f1beed797d303e72
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-statement-permission-event-class"></a>Audit Statement Permission (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Statement Permission** se produit à chaque utilisation d’une autorisation d’instruction (telle que CREATE TABLE).  
+  La classe d’événements **Audit Statement Permission** se produit à chaque utilisation d’une autorisation d’instruction (telle que CREATE TABLE).  
   
  La classe d’événements **Audit Statement Permission** pourrait être supprimée dans une version future de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Il est dès lors recommandé d’utiliser la classe d’événements **Audit Schema Object Management** .  
   

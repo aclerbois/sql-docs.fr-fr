@@ -1,36 +1,35 @@
 ---
-title: "Interrompre une base de données de disponibilité (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Interrompre une base de données de disponibilité (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.availabilitygroup.suspenddatamove.f1
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.availabilitygroup.suspenddatamove.f1
 helpviewer_keywords:
 - secondary databases [SQL Server], in availability group
 - primary databases [SQL Server], in availability group
 - Availability Groups [SQL Server], suspending a database
 - Availability Groups [SQL Server], databases
 ms.assetid: 86858982-6af1-4e80-9a93-87451f0d7ee9
-caps.latest.revision: "51"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 51
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1ca99d049a5df8788c220a2a582539426c6488f0
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: cb30d1aa5f58c852e8e1914238015f83377a3f0a
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771685"
 ---
 # <a name="suspend-an-availability-database-sql-server"></a>Interrompre une base de données de disponibilité (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Vous pouvez interrompre une base de données de disponibilité dans [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)] ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Notez qu'une commande d'interruption doit être émise sur l'instance du serveur qui héberge la base de données à interrompre ou à reprendre.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Vous pouvez interrompre une base de données de disponibilité dans [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../../includes/tsql-md.md)]ou de PowerShell dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)]. Notez qu'une commande d'interruption doit être émise sur l'instance du serveur qui héberge la base de données à interrompre ou à reprendre.  
   
  L'effet d'une commande d'interruption varie selon que vous interrompez une base de données principale ou secondaire, comme suit :  
   

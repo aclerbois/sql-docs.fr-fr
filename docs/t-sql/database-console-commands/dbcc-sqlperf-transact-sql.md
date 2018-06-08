@@ -1,16 +1,13 @@
 ---
 title: DBCC SQLPERF (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/07/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-database
-ms.service: 
-ms.component: t-sql|database-console-commands
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SQLPERF
@@ -25,16 +22,15 @@ helpviewer_keywords:
 - space [SQL Server], transaction logs
 - DBCC SQLPERF statement
 ms.assetid: ec9225ce-e20f-4b03-8b3a-7bcad8a649df
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
+caps.latest.revision: 43
+author: uc-msft
+ms.author: umajay
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: cd615cd56860138d2e9afa7e2d7090ed27ba8e3a
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 4f8229b7765655bd75c2e0bfa2dc804c56a6fffa
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="dbcc-sqlperf-transact-sql"></a>DBCC SQLPERF (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -91,7 +87,7 @@ Le journal de transactions enregistre chaque transaction effectuée dans une bas
 ## <a name="permissions"></a>Autorisations  
 Sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], l’exécution de `DBCC SQLPERF(LOGSPACE)` nécessite l’autorisation `VIEW SERVER STATE` sur le serveur. La réinitialisation des statistiques des verrous et d’attente nécessite l’autorisation `ALTER SERVER STATE` sur le serveur.
   
-Sur les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Premium, l’autorisation `VIEW DATABASE STATE` est requise dans la base de données. Sur les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] standard et de base, le compte administrateur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] est requis. La réinitialisation des statistiques de verrous et d’attente n’est pas prise en charge.
+Pour les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Premium et Critique pour l’entreprise, l’autorisation `VIEW DATABASE STATE` est requise dans la base de données. Pour les niveaux [!INCLUDE[ssSDS](../../includes/sssds-md.md)] Standard, De base et Usage général, le compte administrateur [!INCLUDE[ssSDS](../../includes/sssds-md.md)] est requis. La réinitialisation des statistiques de verrous et d’attente n’est pas prise en charge.
   
 ## <a name="examples"></a>Exemples  
   

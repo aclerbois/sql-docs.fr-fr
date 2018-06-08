@@ -1,30 +1,28 @@
 ---
-title: "Paramètres globaux (fenêtre de sortie) (DB2ToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Paramètres globaux (fenêtre de sortie) (DB2ToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-db2
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: f21f80f4-9a2a-448d-9fe8-b6926595389e
-caps.latest.revision: "3"
+caps.latest.revision: 3
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 71cd07bb7a2e249193dfd0337d3d0aa055493e04
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: c646be9bcb766e8a17f7838a2d932d96b93d8623
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="global-settings-output-window-db2tosql"></a>Paramètres globaux (fenêtre de sortie) (DB2ToSQL)
 Utilisez le **paramètres globaux** boîte de dialogue pour spécifier les paramètres de SSMA.  

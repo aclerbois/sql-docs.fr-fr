@@ -1,33 +1,30 @@
 ---
-title: "Flux de données (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Flux de données (Index de la syntaxe Visual C++ avec #import) | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 dev_langs:
 - C++
 helpviewer_keywords:
 - Stream collection [ADO]
 ms.assetid: e59d0687-1f5a-45c5-9d0a-c1f27079495d
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f8adb3a741d04184e313df146ffaacb0f3b4e5e8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 0aa55ff740718604a36100a9fa563423859122a2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="stream-visual-c-syntax-index-with-import"></a>Flux de données (Index de la syntaxe Visual C++ avec #import)
 ## <a name="methods"></a>Méthodes  

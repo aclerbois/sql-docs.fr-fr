@@ -1,25 +1,22 @@
 ---
-title: "Vue d’ensemble de SQL Server sur Linux | Documents Microsoft"
-description: "Cet article décrit comment SQL Server s’exécute sur Linux et fournit des informations sur la façon d’en savoir plus."
+title: Vue d’ensemble de SQL Server sur Linux | Documents Microsoft
+description: Cet article décrit comment SQL Server s’exécute sur Linux et fournit des informations sur la façon d’en savoir plus.
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.date: 03/20/2018
+ms.date: 05/24/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 9dcc6a90-0add-42c2-815b-862e4e2a21ac
-ms.workload: Active
-ms.openlocfilehash: 3ec35adddc04a42ed885600a2e8402121c86107c
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: 2c67e5d1563ef2420f45ec4b1d0093de888dd157
+ms.sourcegitcommit: a9da0abd3e17fbcd6339980d7331d0418cdada53
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/24/2018
 ---
 # <a name="sql-server-on-linux"></a>SQL Server sur Linux
 
@@ -47,7 +44,7 @@ Après l’installation, connectez-vous à l’instance de SQL Server installée
 | Outil | Didacticiel |
 |-----|-----|
 | Visual Studio Code (Code de Visual Studio) | [Utilisation de Code de Visual Studio avec SQL Server sur Linux](sql-server-linux-develop-use-vscode.md) |
-| SQL Server Management Studio (SSMS) | [Utilisez SSMS sur Windows pour se connecter à SQL Server sur Linux](sql-server-linux-develop-use-ssms.md) |
+| SQL Server Management Studio (SSMS) | [Utilisez SSMS sur Windows pour se connecter à SQL Server sur Linux](sql-server-linux-manage-ssms.md) |
 | Outils de données SQL Server (SSDT) | [Utiliser SSDT avec SQL Server sur Linux](sql-server-linux-develop-use-ssdt.md) |
 
 ## <a name="explore"></a>Explorer
@@ -60,3 +57,5 @@ Si vous êtes déjà familiarisé avec SQL Server, passez en revue les [notes de
 > Pour obtenir des réponses aux questions fréquemment posées, consultez le [SQL Server sur le Forum aux questions sur Linux](sql-server-linux-faq.md).
 
 [!INCLUDE[Get Help Options](../includes/paragraph-content/get-help-options.md)]
+
+[!INCLUDE[contribute-to-content](../includes/paragraph-content/contribute-to-content.md)]

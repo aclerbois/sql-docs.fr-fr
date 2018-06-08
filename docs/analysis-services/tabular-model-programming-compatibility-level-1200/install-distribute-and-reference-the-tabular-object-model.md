@@ -1,30 +1,23 @@
 ---
-title: "Installer, de distribuer et de faire référence à l’objet de modèle tabulaire | Documents Microsoft"
-ms.custom: 
-ms.date: 03/15/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Installer, de distribuer et de faire référence à l’objet de modèle tabulaire | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tabular-models
 ms.topic: reference
-ms.assetid: e51769f7-aac7-4835-a5ae-91aac04aa476
-caps.latest.revision: "22"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 4992c9a621964f8125178f114a930b1f4e007179
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: ebbe325b96c81c17b563bf5b612e011d76b2cfe7
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="install-distribute-and-reference-the-tabular-object-model"></a>Installer, de distribuer et de faire référence à l’objet de modèle tabulaire
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Cet article explique comment télécharger, référencer et redistribuer Analysis Services tabulaire objet modèle (TOM), une bibliothèque c# pour créer et gérer les modèles tabulaires et les bases de données dans le code managé.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+Cet article explique comment télécharger, référencer et redistribuer Analysis Services tabulaire objet modèle (TOM), une bibliothèque c# pour créer et gérer les modèles tabulaires et les bases de données dans le code managé.  
   
 TOM est une extension de la bibliothèque client AMO (Microsoft.AnalysisServices.dll) qui est fourni avec SQL Server 2016. Il fonctionne avec les modèles tabulaires, ciblez le moteur de métadonnées tabulaire dans la version de SQL Server 2016. Pour utiliser TOM, le modèle et la base de données doivent être au niveau de compatibilité 1200 ou supérieur.  
 
@@ -37,7 +30,7 @@ Le tableau suivant décrit chaque assembly.
 Assembly  |Fonctionnalité  |Classes importantes |
 ---------|---------|--------------  |
 Noyau <br/>Microsoft.AnalysisServices.Core.dll | Commun aux bases de données tabulaires et multidimensionnelles. <br/><br/>Fournit la gestion des exceptions, des connexions génériques à une instance Analysis Services et la base de données et l’accès aux propriétés et méthodes pour les objets serveur et base de données communes. <br/><br/>Il est obligatoire pour une solution AMO ciblant SQL Server 2016. | Core&nbsp;Server<br/>Core&nbsp;base de données<br/>AmoException
-TOM<br/> Microsoft.AnalysisServices.Tabular.dll, version 13.0.1601.5 ou version ultérieure.| Créer et gérer des objets de métadonnées tabulaires. | TOM&nbsp;Server <br/>TOM&nbsp;base de données<br /> Modèle<br /> Table de charge de travail<br /> colonne<br /> Relation
+TOM<br/> Microsoft.AnalysisServices.Tabular.dll, version 13.0.1601.5 ou version ultérieure.| Créer et gérer des objets de métadonnées tabulaires. | TOM&nbsp;Server <br/>TOM&nbsp;base de données<br /> Modèle<br /> Table<br /> Colonne<br /> Relation
   AMO<br /> Microsoft.AnalysisServices.dll| Créer et gérer des objets de métadonnées multidimensionnelles, y compris les bases de données tabulaire 1050-1103. | AMO&nbsp;Server <br />AMO&nbsp;base de données <br /> Cube <br /> Dimension <br /> MeasureGroup 
 JSON<br/>Microsoft.AnalysisServices.Tabular.Json.dll | Une DLL qui encapsule la NewtonSoftJson.dll (JSON.NET) pour contrôler les mises à jour, en supprimant le risque d’introduire des modifications fonctionnelles pour la sérialisation JSON dans les charges de travail Analysis Services d’assistance. <br /> <br />Cette DLL existe en tant que dépendance de TOM et n’est pas destinée à être utilisée directement dans votre code. | Aucun.  
   

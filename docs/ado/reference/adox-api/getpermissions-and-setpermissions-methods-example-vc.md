@@ -1,33 +1,30 @@
 ---
-title: "GetPermissions et SetPermissions, méthodes-exemple (VC ++) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: GetPermissions et SetPermissions, méthodes-exemple (VC ++) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - C++
 helpviewer_keywords:
 - SetPermissions method [ADOX], VC++ example
 - GetPermissions method [ADOX], VC++ example
 ms.assetid: 8c75d547-d3d7-44c4-b7de-eead5d11b92e
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: baeed53157850c6be527aed6400bff25a9903fba
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 7e95e83e5533d2be01ab1a85d48425bc1e4460ad
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getpermissions-and-setpermissions-methods-example-vc"></a>GetPermissions et SetPermissions, méthodes-exemple (VC ++)
 Cet exemple illustre la [GetPermissions](../../../ado/reference/adox-api/getpermissions-method-adox.md) et [SetPermissions](../../../ado/reference/adox-api/setpermissions-method-adox.md) méthodes. Le code suivant donne un accès complet à la table Orders à l’utilisateur Admin.  

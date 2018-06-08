@@ -1,31 +1,28 @@
 ---
-title: "Accès à un enregistrement | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Accès à un enregistrement | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - record jumping [ADO]
 - jumping to record [ADO]
 ms.assetid: 6caf6299-2eea-4d34-9b0e-b75aab07b740
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f458006db74ce8701f0ceb6a0b227771d941eea0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4364db29f8d4476c6f4238b970f0e56240ef0f06
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="jumping-to-a-record"></a>Accès à un enregistrement
 Le [déplacer](../../../ado/reference/ado-api/move-method-ado.md) méthode vous permet de faire avancer ou reculer dans le **Recordset** un nombre spécifié d’enregistrements à l’aide de la syntaxe suivante :  

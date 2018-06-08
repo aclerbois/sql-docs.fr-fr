@@ -1,16 +1,12 @@
 ---
-title: sys.dm_xe_sessions (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_xe_sessions (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_xe_sessions_TSQL
@@ -23,16 +19,15 @@ helpviewer_keywords:
 - sys.dm_xe_sessions dynamic management view
 - extended events [SQL Server], views
 ms.assetid: defd6efb-9507-4247-a91f-dc6ff5841e17
-caps.latest.revision: 
+caps.latest.revision: 17
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6c871158b5085d14eda8974530e392b5ed24baf5
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 5e4e4e6655aeffd54d06cc1cf23aa60208076d18
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmxesessions-transact-sql"></a>sys.dm_xe_sessions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -44,9 +39,9 @@ ms.lasthandoff: 02/03/2018
 |address|**varbinary(8)**|Adresse mémoire de la session. adresse est unique sur le système local. N'accepte pas la valeur NULL.|  
 |name|**nvarchar (256)**|Le nom de la session. nom est unique dans le système local. N'accepte pas la valeur NULL.|  
 |pending_buffers|**int**|Nombre de mémoires tampons saturées en attente de traitement. N'accepte pas la valeur NULL.|  
-|total_regular_buffers|**int**|Nombre total de mémoires tampons standard associées à la session. N'accepte pas la valeur NULL.<br /><br /> Remarque : Les mémoires tampons standard sont utilisées la plupart du temps. La taille de ces mémoires tampons est suffisante pour contenir de nombreux événements. En général, il y a au moins trois mémoires tampons par session. Le nombre de mémoires tampons standard est déterminé automatiquement par le serveur, selon le partitionnement de la mémoire défini à travers l'option MEMORY_PARTITION_MODE. La taille des mémoires tampons standard est égale à la valeur de l'option MAX_MEMORY (la valeur par défaut est de 4 Mo) divisée par le nombre de mémoires tampons. Pour plus d’informations sur le MEMORY_PARTITION_MODE et les options de MAX_MEMORY, consultez [CREATE EVENT SESSION &#40; Transact-SQL &#41; ](../../t-sql/statements/create-event-session-transact-sql.md).|  
+|total_regular_buffers|**int**|Nombre total de mémoires tampons standard associées à la session. N'accepte pas la valeur NULL.<br /><br /> Remarque : Les mémoires tampons standard sont utilisées la plupart du temps. La taille de ces mémoires tampons est suffisante pour contenir de nombreux événements. En général, il y a au moins trois mémoires tampons par session. Le nombre de mémoires tampons standard est déterminé automatiquement par le serveur, selon le partitionnement de la mémoire défini à travers l'option MEMORY_PARTITION_MODE. La taille des mémoires tampons standard est égale à la valeur de l'option MAX_MEMORY (la valeur par défaut est de 4 Mo) divisée par le nombre de mémoires tampons. Pour plus d’informations sur le MEMORY_PARTITION_MODE et les options de MAX_MEMORY, consultez [CREATE EVENT SESSION &#40;Transact-SQL&#41;](../../t-sql/statements/create-event-session-transact-sql.md).|  
 |regular_buffer_size|**bigint**|Taille de la mémoire tampon standard, en octets. N'accepte pas la valeur NULL.|  
-|total_large_buffers|**int**|Nombre total de mémoires tampons de grande taille. N'accepte pas la valeur NULL.<br /><br /> Remarque : Les tampons de grande taille sont utilisées lorsqu’un événement est supérieur à une mémoire tampon standard. Elles sont explicitement réservées à cet effet. Les mémoires tampons de grande taille sont allouées lorsque la session d'événements démarre et sont dimensionnées en fonction de l'option MAX_EVENT_SIZE. Pour plus d’informations sur l’option MAX_EVENT_SIZE, consultez [CREATE EVENT SESSION &#40; Transact-SQL &#41; ](../../t-sql/statements/create-event-session-transact-sql.md).|  
+|total_large_buffers|**int**|Nombre total de mémoires tampons de grande taille. N'accepte pas la valeur NULL.<br /><br /> Remarque : Les tampons de grande taille sont utilisées lorsqu’un événement est supérieur à une mémoire tampon standard. Elles sont explicitement réservées à cet effet. Les mémoires tampons de grande taille sont allouées lorsque la session d'événements démarre et sont dimensionnées en fonction de l'option MAX_EVENT_SIZE. Pour plus d’informations sur l’option MAX_EVENT_SIZE, consultez [CREATE EVENT SESSION &#40;Transact-SQL&#41;](../../t-sql/statements/create-event-session-transact-sql.md).|  
 |large_buffer_size|**bigint**|Taille de la mémoire tampon de grande taille, en octets. N'accepte pas la valeur NULL.|  
 |total_buffer_size|**bigint**|Taille totale de la mémoire tampon utilisée pour stocker des événements de la session, en octets. N'accepte pas la valeur NULL.|  
 |buffer_policy_flags|**int**|Bitmap qui indique comment les mémoires tampons d'événements de session se comportent lorsque toutes les mémoires tampons sont saturées et qu'un nouvel élément est déclenché. N'accepte pas la valeur NULL.|  

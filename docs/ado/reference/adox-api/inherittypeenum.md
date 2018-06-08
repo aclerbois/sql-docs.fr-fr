@@ -1,33 +1,30 @@
 ---
-title: InheritTypeEnum | Microsoft Docs
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: InheritTypeEnum | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - InheritTypeEnum
 helpviewer_keywords:
 - InheritTypeEnum enumeration [ADOX]
 ms.assetid: c2f6ce79-c4b3-4d40-ac95-21025208f991
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: de2281f5badafc7c2140347ab96dfb7251f98ed2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d4d822bd48d399b767c6676e014abe3d733aa5bc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="inherittypeenum"></a>InheritTypeEnum
 Indique comment les objets hériteront des autorisations définies dans [SetPermissions](../../../ado/reference/adox-api/setpermissions-method-adox.md).  

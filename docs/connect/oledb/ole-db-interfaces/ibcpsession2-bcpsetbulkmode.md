@@ -3,9 +3,8 @@ title: IBCPSession2::BCPSetBulkMode | Documents Microsoft
 description: Pour créer la copie en bloc hors soit une requête ou une table à l’aide de IBCPSession2::BCPSetBulkMode
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-interfaces
 ms.reviewer: ''
 ms.suite: sql
@@ -17,22 +16,21 @@ helpviewer_keywords:
 - BCPSetBulkMode function
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ead348eeeb717f6d0581ab3fb4095dc99552f48b
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: edc24c92138ebfa8e1bb72e64a50ed0dc7a2c234
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ibcpsession2bcpsetbulkmode"></a>IBCPSession2::BCPSetBulkMode
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 
-  IBCPSession2::BCPSetBulkMode fournit une alternative à [IBCPSession::BCPColFmt &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/ibcpsession-bcpcolfmt-ole-db.md) pour spécifier le format de colonne. Contrairement à IBCPSession::BCPColFmt, qui définit les attributs de format de colonne individuels, IBCPSession2::BCPSetBulkMode définit tous les attributs.  
+  IBCPSession2::BCPSetBulkMode fournit une alternative à [IBCPSession::BCPColFmt & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/ibcpsession-bcpcolfmt-ole-db.md) pour spécifier le format de colonne. Contrairement à IBCPSession::BCPColFmt, qui définit les attributs de format de colonne individuels, IBCPSession2::BCPSetBulkMode définit tous les attributs.  
   
 ## <a name="syntax"></a>Syntaxe  
   
-```  
+```cpp  
   
 HRESULT BCPSetBulkMode (  
       int property,  
@@ -92,37 +90,37 @@ HRESULT BCPSetBulkMode (
   
  Voici quelques exemples d’appels de fonction qui provoquent une erreur de séquence de fonction :  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_IN);  
 BCPSetBulkMode();  
 ```  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPSetBulkMode();  
 BCPReadFmt();  
 ```  
   
-```  
+```cpp  
 BCPInit(NULL, "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPControl(BCP_OPTION_HINTS, "select …");  
 BCPSetBulkMode();  
 ```  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPSetBulkMode();  
 BCPColFmt();  
 ```  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPControl(BCP_OPTION_DELAYREADFMT, true);  
 BCPReadFmt();  
 BCPColFmt();  
 ```  
   
-```  
+```cpp  
 BCPInit(NULL, "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPControl(BCP_OPTION_DELAYREADFMT, true);  
 BCPSetBulkMode();  
@@ -130,13 +128,13 @@ BCPControl(BCP_OPTION_HINTS, "select …");
 BCPReadFmt();  
 ```  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPControl(BCP_OPTION_DELAYREADFMT, true);  
 BCPColumns();  
 ```  
   
-```  
+```cpp  
 BCPInit("table", "dataFile", "errorFile", BCP_DIRECTION_OUT);  
 BCPControl(BCP_OPTION_DELAYREADFMT, true);  
 BCPSetColFmt();  
@@ -145,9 +143,9 @@ BCPSetColFmt();
 ## <a name="example"></a>Exemple  
  L'exemple suivant crée quatre fichiers à l'aide de paramètres différents d'IBCPSession2::BCPSetBulkMode.  
   
-```  
+```cpp  
   
-// compile with: msoledbsql.lib oleaut32.lib ole32.lib  
+// compile with: oleaut32.lib ole32.lib  
   
 #include <stdio.h>  
 #include "msoledbsql.h"  
@@ -367,6 +365,6 @@ int main() {
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [IBCPSession2 &#40; OLE DB &#41;](../../oledb/ole-db-interfaces/ibcpsession2-ole-db.md)  
+ [IBCPSession2 & #40 ; OLE DB & #41 ;](../../oledb/ole-db-interfaces/ibcpsession2-ole-db.md)  
   
   

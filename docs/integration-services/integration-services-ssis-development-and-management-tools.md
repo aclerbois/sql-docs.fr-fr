@@ -1,17 +1,16 @@
 ---
-title: "Outils de gestion et de développement Integration Services (SSIS) | Microsoft Docs"
-ms.custom: 
+title: Outils de gestion et de développement Integration Services (SSIS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - studio environments [Integration Services]
 - tools [Integration Services], Business Intelligence Development Studio
@@ -21,16 +20,15 @@ helpviewer_keywords:
 - SQL Server Integration Services, studio environments
 - tools [Integration Services], SQL Server Management Studio
 ms.assetid: 4eb73e65-d9f3-4ac6-a408-abfa85afc537
-caps.latest.revision: 
+caps.latest.revision: 52
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0c9f97260324010cd8a3d32a632a8380ad8df843
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 5cc627245a0fff685187f0cc19ed2f317e9e11d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="integration-services-ssis-development-and-management-tools"></a>Outils de gestion et de développement Integration Services (SSIS)
   [!INCLUDE[ssISnoversion](../includes/ssisnoversion-md.md)] inclut deux studios pour travailler avec des packages :  

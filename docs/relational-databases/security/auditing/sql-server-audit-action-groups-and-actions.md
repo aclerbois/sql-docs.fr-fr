@@ -1,17 +1,16 @@
 ---
-title: "Actions et groupes d’actions SQL Server Audit | Microsoft Docs"
-ms.custom: 
+title: Actions et groupes d’actions SQL Server Audit | Microsoft Docs
+ms.custom: ''
 ms.date: 10/19/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - audit
 helpviewer_keywords:
@@ -24,19 +23,19 @@ helpviewer_keywords:
 - audit action groups [SQL Server]
 - audits [SQL Server], actions
 ms.assetid: b7422911-7524-4bcd-9ab9-e460d5897b3d
-caps.latest.revision: 
+caps.latest.revision: 46
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2a6dbc0a4fd646a93f6b0934d3297579e7e44398
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: deef1b6db596acc7462fbd67eaae827fec759640
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-audit-action-groups-and-actions"></a>Actions et groupes d’actions SQL Server Audit
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] La fonctionnalité Audit de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] vous permet d’effectuer l’audit d’événements et de groupes d’événements au niveau du serveur et au niveau de la base de données. Pour plus d’informations, consultez [SQL Server Audit &#40moteur de base de données&#41;](../../../relational-databases/security/auditing/sql-server-audit-database-engine.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La fonctionnalité Audit de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] vous permet d’effectuer l’audit d’événements et de groupes d’événements au niveau du serveur et au niveau de la base de données. Pour plus d’informations, consultez [SQL Server Audit &#40moteur de base de données&#41;](../../../relational-databases/security/auditing/sql-server-audit-database-engine.md).  
   
  [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] sont constitués de zéro ou plusieurs éléments d'action d'audit. Ces éléments d'action d'audit peuvent être un groupe d'actions, tel que Server_Object_Change_Group, ou des actions individuelles telles que des opérations SELECT sur une table.  
   
@@ -168,8 +167,8 @@ ms.lasthandoff: 11/21/2017
 |SELECT|Cet événement est déclenché chaque fois qu'une instruction SELECT est exécutée.|  
 |UPDATE|Cet événement est déclenché chaque fois qu'une instruction UPDATE est exécutée.|  
 |INSERT|Cet événement est déclenché chaque fois qu'une instruction INSERT est exécutée.|  
-|DELETE|Cet événement est déclenché chaque fois qu'une instruction DELETE est exécutée.|  
-|EXECUTE|Cet événement est déclenché chaque fois qu'une instruction EXECUTE est exécutée.|  
+|Suppression|Cet événement est déclenché chaque fois qu'une instruction DELETE est exécutée.|  
+|Exécutez|Cet événement est déclenché chaque fois qu'une instruction EXECUTE est exécutée.|  
 |RECEIVE|Cet événement est déclenché chaque fois qu'une instruction RECEIVE est exécutée.|  
 |REFERENCES|Cet événement est déclenché chaque fois qu'une autorisation REFERENCES est vérifiée.|  
   
@@ -187,7 +186,7 @@ ms.lasthandoff: 11/21/2017
 |-----------------------|-----------------|  
 |AUDIT_CHANGE_GROUP|Cet événement est déclenché chaque fois que l'une des commandes suivantes est exécutée :<br /><br /> CREATE SERVER AUDIT<br /><br /> ALTER SERVER AUDIT<br /><br /> DROP SERVER AUDIT<br /><br /> CREATE SERVER AUDIT SPECIFICATION<br /><br /> ALTER SERVER AUDIT SPECIFICATION<br /><br /> DROP SERVER AUDIT SPECIFICATION<br /><br /> CREATE DATABASE AUDIT SPECIFICATION<br /><br /> ALTER DATABASE AUDIT SPECIFICATION<br /><br /> DROP DATABASE AUDIT SPECIFICATION|  
   
-## <a name="related-content"></a>Contenu connexe  
+## <a name="related-content"></a>Contenu associé  
  [Créer un audit du serveur et une spécification d'audit du serveur](../../../relational-databases/security/auditing/create-a-server-audit-and-server-audit-specification.md)  
   
  [Créer une spécification de l'audit du serveur et de la base de données](../../../relational-databases/security/auditing/create-a-server-audit-and-database-audit-specification.md)  

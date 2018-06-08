@@ -1,31 +1,31 @@
 ---
-title: "Mettre les résultats de requête au format JSON avec FOR JSON (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Mettre les résultats de requête au format JSON avec FOR JSON (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 07/18/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
 ms.component: json
-ms.reviewer: 
+ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - dbe-json
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FOR JSON
 - JSON, exporting
 - exporting JSON
 ms.assetid: 15b56365-58c2-496c-9d4b-aa2600eab09a
-caps.latest.revision: 
-author: douglaslMS
-ms.author: douglasl
+caps.latest.revision: 31
+author: jovanpop-msft
+ms.author: jovanpop
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: daf63df4b1999618b39d67953b465143d3d5434d
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: ad65f71c46a89f3758cb5102021843f96b3adf1e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="format-query-results-as-json-with-for-json-sql-server"></a>Mettre les résultats de requête au format JSON avec FOR JSON (SQL Server)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

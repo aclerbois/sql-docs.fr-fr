@@ -1,16 +1,12 @@
 ---
-title: sys.dm_broker_queue_monitors (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_broker_queue_monitors (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_broker_queue_monitors
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_broker_queue_monitors dynamic management view
 ms.assetid: 401207dc-ef4a-4a3f-879c-76dcbb52d6bc
-caps.latest.revision: 
+caps.latest.revision: 29
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9bc93ac489094fcf9dfba593acd670bc4babbaa6
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 1cef9da48e964164ca13b80de6f69c00d889bd08
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmbrokerqueuemonitors-transact-sql"></a>sys.dm_broker_queue_monitors (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -43,7 +38,7 @@ ms.lasthandoff: 02/03/2018
 |-----------------|---------------|-----------------|  
 |**database_id**|**int**|Identificateur d'objet de la base de données qui contient la file d'attente surveillée par le moniteur. Accepte la valeur NULL.|  
 |**queue_id**|**int**|Identificateur d'objet de la file d'attente surveillée par le moniteur. Accepte la valeur NULL.|  
-|**state**|**nvarchar(32)**|État de l’analyse. Accepte la valeur NULL. Il s’agit d’une des opérations suivantes :<br /><br /> **INACTIF**<br /><br /> **NOTIFIED**<br /><br /> **RECEIVES_OCCURRING**|  
+|**state**|**nvarchar(32)**|État de l’analyse. Accepte la valeur NULL. Il s’agit d’une des opérations suivantes :<br /><br /> **INACTIF**<br /><br /> **NOTIFICATION**<br /><br /> **RECEIVES_OCCURRING**|  
 |**last_empty_rowset_time**|**datetime**|Horodatage de la dernière opération RECEIVE appliquée à la file d'attente qui a retourné un jeu de résultats vide. Accepte la valeur NULL.|  
 |**last_activated_time**|**datetime**|Horodatage de la dernière activation d'une procédure stockée par ce moniteur de file d'attente. Accepte la valeur NULL.|  
 |**tasks_waiting**|**int**|Nombre de sessions actuellement en attente dans une instruction RECEIVE relative à la file d'attente considérée. Accepte la valeur NULL.<br /><br /> Remarque : Ce nombre inclut toutes les sessions exécutant une instruction receive, indépendamment de si le moniteur de file d’attente a démarré la session. C'est pourquoi vous utilisez WAITFOR avec RECEIVE. À la base, ces tâches attendent toutes les deux l'arrivée de messages dans la file d'attente.|  
@@ -84,7 +79,7 @@ INNER JOIN sys.databases t5 ON ( t5.database_id = DB_ID() );
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Vues de gestion dynamique &#40; liées à Service Broker Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/service-broker-related-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique & #40 ; liées à Service Broker Transact-SQL & #41 ;](../../relational-databases/system-dynamic-management-views/service-broker-related-dynamic-management-views-transact-sql.md)  
   
   
 

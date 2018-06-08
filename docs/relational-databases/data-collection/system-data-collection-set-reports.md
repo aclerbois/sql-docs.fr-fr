@@ -1,17 +1,13 @@
 ---
-title: "Rapports de jeux d’éléments de collecte de données système | Microsoft Docs"
-ms.custom: 
+title: Rapports de jeux d’éléments de collecte de données système | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: data-collection
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data collector [SQL Server], server activity
 - server activity [SQL Server]
@@ -23,20 +19,19 @@ helpviewer_keywords:
 - query statistics reports [SQL Server]
 - disk usage reports [SQL Server]
 ms.assetid: 0b126b8d-4fe7-443d-8a9a-c266350181e5
-caps.latest.revision: 
-author: stevestein
-ms.author: sstein
+caps.latest.revision: 24
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a2395391111bcd8b21fd030d02bc4756aa98d1fc
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 5c859efbcfd431ee2a88f25746debb85ff21746e
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="system-data-collection-set-reports"></a>Rapports de jeux d'éléments de collecte de données système
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Le collecteur de données fournit un rapport historique pour chaque jeu d'éléments de collecte de données système. Chacun des rapports suivants utilise des données stockées dans l'entrepôt de données de gestion :  
+  Le collecteur de données fournit un rapport historique pour chaque jeu d'éléments de collecte de données système. Chacun des rapports suivants utilise des données stockées dans l'entrepôt de données de gestion :  
   
 -   [Résumé sur l'utilisation du disque](#Disk)  
   

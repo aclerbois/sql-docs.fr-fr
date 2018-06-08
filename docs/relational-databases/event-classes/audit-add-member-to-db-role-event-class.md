@@ -1,34 +1,30 @@
 ---
-title: "Audit Add Member to DB Role, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Audit Add Member to DB Role, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Audit Add Member to DB Role event class
 ms.assetid: a5ac46b6-765b-4424-b6c7-4d5a1b898d65
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5be4589264cba5226119a1d46145f8cb77d3181e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: cfcc0cb071d0e20b4993826b1b5d46210bbdc7df
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="audit-add-member-to-db-role-event-class"></a>Audit Add Member to DB Role (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d’événements **Audit Add Member to DB Role** intervient chaque fois qu’une connexion est ajoutée à un rôle de base de données ou qu’elle en est supprimée. Cette classe d’événements est utilisée avec les procédures stockées **sp_addrolemember**, **sp_changegroup**et **sp_droprolemember** .  
+  La classe d’événements **Audit Add Member to DB Role** intervient chaque fois qu’une connexion est ajoutée à un rôle de base de données ou qu’elle en est supprimée. Cette classe d’événements est utilisée avec les procédures stockées **sp_addrolemember**, **sp_changegroup**et **sp_droprolemember** .  
   
 ## <a name="audit-add-member-to-db-role-event-class-data-columns"></a>Colonnes de la classe d'événements Audit Add Member to DB Role  
   

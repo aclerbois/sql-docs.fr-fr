@@ -1,31 +1,23 @@
 ---
 title: Applet de commande Remove-PowerPivotServiceApplication | Documents Microsoft
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: powershell
 ms.topic: reference
-ms.assetid: 2742b2a3-927c-4e7c-bd7d-43c072fa01ab
-caps.latest.revision: 
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 7078a7733c7764b77667628071c66c8313aae85a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 30b7826bf0239ed59b0b94ce624ab1eb212a34fc
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="remove-powerpivotserviceapplication-cmdlet"></a>Applet de commande Remove-PowerPivotServiceApplication
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Supprime une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
+  Supprime une application de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] .  
 
 >[!NOTE] 
 >Cet article peut contenir des exemples et des informations obsolètes. Utilisez l’applet de commande Get-Help pour la dernière version.
@@ -67,7 +59,7 @@ Remove-PowerPivotServiceApplication [-Identity <SPGeminiServiceApplicationPipeBi
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-deleteall-switch"></a>-DeleteAll \<switch>  
+### <a name="-deleteall-switch"></a>-DeleteAll \<commutateur >  
  Supprime toutes les applications de service [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] , mais ne supprime pas la base de données d’application de service ni les objets d’instance du service de la batterie. [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et du service de moteur [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] restent instanciés, mais sont inutilisables après la suppression des applications de service.  
   
 |||  
@@ -78,7 +70,7 @@ Remove-PowerPivotServiceApplication [-Identity <SPGeminiServiceApplicationPipeBi
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="-removedata-switch"></a>-RemoveData \<switch>  
+### <a name="-removedata-switch"></a>-RemoveData \<commutateur >  
  Supprime la base de données d'application de service qui contient les planifications d'actualisation des données, les données d'utilisation des classeurs, les mappages d'instance utilisés pour suivre les bases de données chargées et d'autres données internes.  
   
 |||  
@@ -89,7 +81,7 @@ Remove-PowerPivotServiceApplication [-Identity <SPGeminiServiceApplicationPipeBi
 |Accepter l'entrée de pipeline ?|false|  
 |Accepter les caractères génériques ?|false|  
   
-### <a name="commonparameters"></a>\<CommonParameters>  
+### <a name="commonparameters"></a>\<Paramètres_courants >  
  Cette applet de commande prend en charge les paramètres communs : Verbose, Debug, ErrorAction, ErrorVariable, WarningAction, WarningVariable, OutBuffer et OutVariable. Pour plus d’informations, consultez [About_Commonparameters](http://go.microsoft.com/fwlink/?linkID=227825).  
   
 ## <a name="inputs-and-outputs"></a>Entrées et sorties  

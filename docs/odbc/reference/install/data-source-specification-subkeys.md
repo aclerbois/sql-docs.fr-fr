@@ -1,40 +1,37 @@
 ---
-title: "Les sous-clés de spécification de Source de données | Documents Microsoft"
-ms.custom: 
+title: Les sous-clés de spécification de Source de données | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data source specification subkeys [ODBC]
 - registry entries for data sources [ODBC], data source specification subkeys
 - subkeys [ODBC], data source specification subkeys
 ms.assetid: d7e88a07-e6ab-4258-a45d-1ca21234fbec
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 6394b29ff1f76fd0f7edd24a3c239de367c3d58b
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d432b5ede436db3aa334d060e2a4bce152606c75
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-source-specification-subkeys"></a>Sous-clés de spécification de Source de données
 Chaque source de données répertorié dans la sous-clé de Sources de données ODBC a une sous-clé qui lui sont propres. Cette sous-clé a le même nom que la valeur correspondante sous la sous-clé de Sources de données ODBC. Les valeurs sous cette sous-clé doivent répertorier la DLL du pilote et peuvent contenir une description de la source de données. Si le pilote prend en charge des convertisseurs, les valeurs peuvent répertorier le nom d’un convertisseur de valeur par défaut, la DLL de traduction par défaut et l’option de traduction par défaut. Les valeurs peuvent également répertorier les autres informations requises par le pilote pour se connecter à la source de données. Par exemple, le pilote peut nécessiter un nom du serveur, le nom de la base de données ou le nom de schéma.  
   
  Les formats des valeurs sont comme indiqué dans le tableau suivant. Seule la valeur du pilote est requise.  
   
-|Nom   |Type de données|data|  
+|Nom|Type de données|data|  
 |----------|---------------|----------|  
-|Description|REG_SZ|*Description*|  
+| Description|REG_SZ|*description*|  
 |Pilote|REG_SZ|*chemin de DLL de pilote*|  
 |TranslationDLL|REG_SZ|*chemin de DLL de traduction*|  
 |TranslationName|REG_SZ|*nom de la traduction*|  

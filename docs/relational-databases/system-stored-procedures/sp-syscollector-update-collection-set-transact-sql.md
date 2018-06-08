@@ -1,16 +1,14 @@
 ---
-title: sp_syscollector_update_collection_set (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_syscollector_update_collection_set (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_syscollector_update_collection_set_TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - sp_syscollector_update_collection_set
 - data collector [SQL Server], stored procedures
 ms.assetid: 2dccc3cd-0e93-4e3e-a4e5-8fe89b31bd63
-caps.latest.revision: 
+caps.latest.revision: 28
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 9863651eca95bcd4eafd263b205ddeef5ba4e438
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 62867f22c044a42c40499e0a1143557621931db8
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spsyscollectorupdatecollectionset-transact-sql"></a>sp_syscollector_update_collection_set (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -74,7 +71,7 @@ sp_syscollector_update_collection_set
  [  **@target =** ] '*cible*'  
  Réservé pour un usage ultérieur.  
   
- [ **@collection_mode =** ] *collection_mode*  
+ [  **@collection_mode =** ] *collection_mode*  
  Collection de type de données à utiliser. *collection_mode* est **smallint** et peut avoir l’une des valeurs suivantes :  
   
  0 - Mode mis en cache. La collecte et le téléchargement de données sont sur des planifications séparées. Spécifiez le mode mis en cache pour la collecte continue.  
@@ -83,16 +80,16 @@ sp_syscollector_update_collection_set
   
  Si le changement de mode non mis en cache en mode mis en cache (0), vous devez également spécifier *schedule_uid* ou *nom_de_la_planification*.  
   
- [ **@days_until_expiration=** ] *days_until_expiration*  
+ [  **@days_until_expiration=** ] *days_until_expiration*  
  Est le nombre de jours pendant lesquels les données collectées sont enregistrées dans l’entrepôt de données de gestion. *days_until_expiration* est **smallint**. *days_until_expiration* doit être 0 ou un entier positif.  
   
- [ **@proxy_id =** ] *proxy_id*  
+ [  **@proxy_id =** ] *proxy_id*  
  Identificateur unique pour un compte d'Agent proxy [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *proxy_id* est **int**.  
   
  [  **@proxy_name =** ] '*proxy_name*'  
  Nouveau nom du proxy. *proxy_name* est **sysname** et accepte les valeurs NULL.  
   
- [  **@schedule_uid**  =] '*schedule_uid*'  
+ [ **@schedule_uid** =] '*schedule_uid*'  
  GUID qui pointe vers une planification. *schedule_uid* est **uniqueidentifier**.  
   
  Pour obtenir des *schedule_uid*, interrogez la table système sysschedules.  
@@ -119,13 +116,13 @@ sp_syscollector_update_collection_set
   
 -   Progression de la collecte continuellement en cours d'exécution  
   
--   Événements d’avertissement à partir de [!INCLUDE[ssIS](../../includes/ssis-md.md)]  
+-   Événements d'avertissements de [!INCLUDE[ssIS](../../includes/ssis-md.md)]  
   
  2 - Enregistrement de niveau 1 et informations sur l'événement détaillées de [!INCLUDE[ssIS](../../includes/ssis-md.md)]  
   
  La valeur par défaut *logging_level* est 1.  
   
- [ **@description =** ] '*description*'  
+ [  **@description =** ] '*description*'  
  Description du jeu d'éléments de collecte. *Description* est **nvarchar (4000)**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

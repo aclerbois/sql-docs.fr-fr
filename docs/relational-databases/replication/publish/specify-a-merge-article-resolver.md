@@ -1,32 +1,30 @@
 ---
-title: "Spécifier un programme de résolution d’articles de fusion | Microsoft Docs"
-ms.custom: 
+title: Spécifier un programme de résolution d’articles de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - articles [SQL Server replication], conflict resolution
 - conflict resolution [SQL Server replication], merge replication
 - merge replication conflict resolution [SQL Server replication], merge article resolvers
 ms.assetid: a40083b3-4f7b-4a25-a5a3-6ef67bdff440
-caps.latest.revision: 
+caps.latest.revision: 39
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3df23cff2cc1aab86205fabe0f81ff9aa25b0645
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: b062f6dc200d2024a1bb08c93847304ef9f6a5e2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-a-merge-article-resolver"></a>Spécifier un programme de résolution d'articles de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -75,7 +73,7 @@ ms.lasthandoff: 03/08/2018
   
 3.  Dans la page **Propriétés de l’article - \<Article>**, cliquez sur l’onglet **Résolveur**.  
   
-4.  Sélectionnez **Utiliser un résolveur personnalisé (inscrit sur le serveur de distribution)**puis, dans la liste, cliquez sur le programme de résolution.  
+4.  Sélectionnez **Utiliser un résolveur personnalisé (inscrit sur le serveur de distribution)** puis, dans la liste, cliquez sur le programme de résolution.  
   
 5.  Si le programme de résolution nécessite des entrées (par exemple un nom de colonne), indiquez- les dans la zone de texte **Entrez les informations requises par le résolveur** .  
   

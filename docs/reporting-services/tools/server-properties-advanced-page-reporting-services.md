@@ -1,28 +1,27 @@
 ---
-title: "Propriétés du serveur (page Avancé) - Reporting Services | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur (page Avancé) - Reporting Services | Microsoft Docs
+ms.custom: ''
 ms.date: 08/09/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.reportserver.serverproperties.advanced.f1
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.reportserver.serverproperties.advanced.f1
 ms.assetid: 07b78a84-a6aa-4502-861d-349720ef790e
-caps.latest.revision: "18"
+caps.latest.revision: 18
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: e8c6a475c37a953394fa51023dccdd9d80e5cb32
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: dfbfe74439ecbf3db24f1a2a32bd5ab5d528fb72
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="server-properties-advanced-page---reporting-services"></a>Propriétés du serveur (page Avancé) - Reporting Services
 
@@ -50,7 +49,7 @@ Indique si la journalisation de l'exécution des rapports est activée. La valeu
 Nombre de jours pendant lesquels conserver les informations sur l'exécution du rapport dans le journal des exécutions. Les valeurs valides pour cette propriété sont comprises entre **-1** et **2** **147** **483** **647**. Si la valeur est égale à **-1** , les entrées ne sont pas supprimées de la table du journal des exécutions. La valeur par défaut est **60**.  
 
 > [!NOTE] 
-> La définition d’une valeur égale à **0** *supprime* toutes les entrées du journal d’exécution. La valeur **-1** conserve les entrées du journal d’exécution et ne les supprime pas.
+> La définition d’une valeur égale à **0** *supprime* toutes les entrées du journal d’exécution. La valeur  **-1** conserve les entrées du journal d’exécution et ne les supprime pas.
 
 **SessionTimeout**  
 Durée (en secondes) pendant laquelle une session demeure active. La valeur par défaut est **600**.  

@@ -1,15 +1,14 @@
 ---
-title: "Exemples de tâche de script | Microsoft Docs"
-ms.custom: 
+title: Exemples de tâche de script | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: extending-packages-scripting-task-examples
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -20,16 +19,15 @@ helpviewer_keywords:
 - examples [Integration Services]
 - SSIS Script task, examples
 ms.assetid: b0dd77ee-ee11-4cd9-87aa-61dd67f2fe1c
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5187a97eb3424813b94b03438a31c62f583ee852
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: cb4f0d3edbcab24dbd40d3a552c57d0cbaeb84a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="script-task-examples"></a>Exemples de tâche de script
   La tâche de script est un outil polyvalent que vous pouvez utiliser dans un package pour remplir presque toutes les conditions requises qui ne sont pas satisfaites par les tâches incluses dans [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)]. Cette rubrique répertorie des exemples de code de tâche de script qui montrent quelques-unes des fonctionnalités disponibles.  

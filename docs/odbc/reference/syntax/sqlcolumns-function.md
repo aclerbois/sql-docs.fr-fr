@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLColumns | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLColumns
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLColumns
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLColumns
-helpviewer_keywords: SQLColumns function [ODBC]
+f1_keywords:
+- SQLColumns
+helpviewer_keywords:
+- SQLColumns function [ODBC]
 ms.assetid: 4a3618b7-d2b8-43c6-a1fd-7a4e6fa8c7d0
-caps.latest.revision: "28"
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7cb9d78a2ee194779f9e01dfd313ae4846d5a804
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: d48fad8c874a9edda7da1afbe2f006726c39ee5b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcolumns-function"></a>Fonction SQLColumns
 **Mise en conformité**  
@@ -64,7 +65,7 @@ SQLRETURN SQLColumns(
  *NameLength1*  
  [Entrée] Longueur en caractères de **CatalogName*.  
   
- *SchemaName*  
+ *schemaName*  
  [Entrée] Modèle de recherche de chaîne pour les noms de schéma. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, une chaîne vide (« ») indique les tables qui n’ont pas de schémas.  
   
 > [!NOTE]  
@@ -82,7 +83,7 @@ SQLRETURN SQLColumns(
  *NameLength3*  
  [Entrée] Longueur en caractères de **TableName*.  
   
- *Nom de colonne*  
+ *ColumnName*  
  [Entrée] Modèle de recherche de chaîne pour les noms de colonne.  
   
 > [!NOTE]  
@@ -97,7 +98,7 @@ SQLRETURN SQLColumns(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLColumns** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLColumns** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08S01|Échec de lien de communication|Échec de la liaison de communication entre le pilote et la source de données à laquelle le pilote a été connecté avant le traitement de la fonction a été exécutée.|  
@@ -159,9 +160,9 @@ SQLRETURN SQLColumns(
   
  Le tableau suivant répertorie les colonnes du jeu de résultats. Les colonnes supplémentaires au-delà de la colonne 18 (IS_NULLABLE) peuvent être définies par le pilote. Une application doit accéder à des colonnes spécifiques aux pilotes à rebours à partir de la fin de l’ensemble au lieu de spécifier une position ordinale explicite de résultats. Pour plus d’informations, consultez [les données renvoyées par les fonctions de catalogue](../../../odbc/reference/develop-app/data-returned-by-catalog-functions.md).  
   
-|Nom de colonne|colonne<br /><br /> nombre|Type de données|Commentaires|  
+|Nom de colonne|Colonne<br /><br /> nombre|Type de données|Commentaires|  
 |-----------------|-----------------------|---------------|--------------|  
-|TABLE_CAT (ODBC VERSION 1.0)| 1|Varchar|Nom de catalogue ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
+|TABLE_CAT (ODBC VERSION 1.0)|1|Varchar|Nom de catalogue ; NULL si non applicable à la source de données. Si un pilote prend en charge les catalogues pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de catalogues.|  
 |TABLE_SCHEM (ODBC 1.0)|2|Varchar|Nom du schéma ; NULL si non applicable à la source de données. Si un pilote prend en charge les schémas pour certaines tables, mais pas pour d’autres, telles que lorsque le pilote récupère les données à partir de différents SGBD, il retourne une chaîne vide (« ») pour les tables qui n’ont pas de schémas.|  
 |TABLE_NAME (ODBC 1.0)|3|Varchar non NULL|Nom de la table.|  
 |COLUMN_NAME (ODBC VERSION 1.0)|4|Varchar non NULL|Nom de colonne. Le pilote retourne une chaîne vide pour une colonne qui n’a pas de nom.|  

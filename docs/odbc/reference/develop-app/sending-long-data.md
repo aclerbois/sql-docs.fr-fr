@@ -1,30 +1,27 @@
 ---
-title: "Envoi de données de type Long | Documents Microsoft"
-ms.custom: 
+title: Envoi de données de type Long | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - long data [ODBC]
 - sending long data [ODBC]
 ms.assetid: ea989084-a8e6-4737-892e-9ec99dd49caf
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e60a23396a725f449b3b5f37f70bcb28284071d8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3a15a3fdd69a1578392d34adac08b297269df7cf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sending-long-data"></a>Envoi de données de type Long
 Définir des SGBD *données longues* sous forme de n’importe quel caractère ou binaire sur une certaine taille, tels que de 254 caractères. Il se peut qu’il ne soit pas possible de stocker la totalité d’un élément de données de type long dans la mémoire, telles que lorsque l’élément représente un document de texte long ou une image bitmap. Étant donné que ces données ne peut pas être stockées dans une seule mémoire tampon, la source de données l’envoie au pilote dans des parties avec **SQLPutData** lorsque l’instruction est exécutée. Paramètres pour lesquels les données sont envoyées au moment de l’exécution sont appelées *data-at-execution paramètres*.  

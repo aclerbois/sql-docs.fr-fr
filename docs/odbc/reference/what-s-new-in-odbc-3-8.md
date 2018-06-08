@@ -1,29 +1,26 @@
 ---
-title: "Quel &#39; nouveauté dans ODBC 3.8 | Documents Microsoft"
-ms.custom: 
+title: Ce que&#39;nouveauté dans ODBC 3.8 | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 854f0bb4-17e9-489b-9595-eefffb8ba99f
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 463da92c55e4d00285d5348eabb7d8480e3cc073
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e7a90908dcf70c3487e8c67eaa3e46699ed341ae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="what39s-new-in-odbc-38"></a>Quel &#39; nouveauté dans ODBC 3.8
+# <a name="what39s-new-in-odbc-38"></a>Ce que&#39;nouveauté dans ODBC 3.8
 Windows 8 inclut une version mise à jour de ODBC 3.8. ODBC 3.8 dans Windows 8 comprend les fonctionnalités suivantes :  
   
 -   [Regroupement de connexions prenant en charge les pilotes](../../odbc/reference/develop-app/driver-aware-connection-pooling.md)  

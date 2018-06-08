@@ -1,42 +1,19 @@
 ---
-title: "Définir le stockage de Partition (Analysis Services - multidimensionnel) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- low latency MOLAP
-- standard storage [Analysis Services]
-- hybrid OLAP
-- automatic MOLAP
-- relational OLAP
-- multidimensional OLAP
-- scheduled MOLAP [Analysis Services]
-- partitions [Analysis Services], storage
-- HOLAP
-- MOLAP
-- real time ROLAP
-- real time HOLAP
-- ROLAP
-- medium latency MOLAP
-ms.assetid: e525e708-f719-4905-a4cc-20f6a9a3edcd
-caps.latest.revision: 
-author: Minewiskan
+title: Définir le stockage de Partition (Analysis Services - multidimensionnel) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 42823cdd118d3fb52df6265671eaca0fd25be96c
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 3410a8b26b9b9e26046a39f8ed5250ae9b82e67d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="set-partition-storage-analysis-services---multidimensional"></a>Définir un stockage de partitions (Analysis Services - Multidimensionnel)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]

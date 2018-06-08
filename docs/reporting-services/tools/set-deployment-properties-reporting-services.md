@@ -1,32 +1,30 @@
 ---
-title: "Définir des propriétés de déploiement (Reporting Services) | Microsoft Docs"
-ms.custom: 
+title: Définir des propriétés de déploiement (Reporting Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - reports [Reporting Services], deploying
 - publishing reports [Reporting Services]
 - properties [Reporting Services], deployment
 - deploying reports [Reporting Services]
 ms.assetid: 18201ca0-bf4a-484f-b3a2-95d1046a6a9b
-caps.latest.revision: "44"
+caps.latest.revision: 44
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 618bdebcd05306a94a661ef4001d446b509e18dd
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 3646d424b9f2f66546369c74a4bb310d0fb6a4cd
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-deployment-properties-reporting-services"></a>Définir des propriétés de déploiement (Reporting Services)
   Dans[!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)], vous devez spécifier le serveur de rapports et éventuellement les dossiers pour les rapports et les sources de données partagées afin de pouvoir publier les éléments dans un projet Report Server sur un serveur de rapports. Les propriétés et valeurs dont [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] a besoin pour générer, visualiser et déployer des rapports sont stockées dans les configurations de projet du projet Report Server. Vous pouvez créer plusieurs jeux nommés pour ces propriétés de projet afin de pouvoir aisément basculer entre les jeux de propriétés. Chaque jeu de propriétés est une configuration. Par exemple, vous pouvez avoir une configuration pour publier des rapports sur un serveur de test et une configuration différente pour publier des rapports sur un serveur de production.  

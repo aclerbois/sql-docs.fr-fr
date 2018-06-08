@@ -1,27 +1,25 @@
 ---
-title: "Développeur de données SQL | Documents Microsoft"
-ms.custom: 
+title: Développeur de données SQL | Documents Microsoft
+ms.custom: ''
 ms.date: 03/28/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: connect
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 249e3794-e3fa-41cb-ad9c-f46e19e6805c
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 9f772b9f79697001bbfaa191ec84bc077de415c8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 9d02eb4c8fd8d1e3ff115c8ed1273183802f1d06
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-data-developer"></a>Développeur de données SQL
 Plateforme de données SQL de Microsoft permet de créer des solutions basées sur les données sur les appareils mobiles et ordinateurs de bureau pour les serveurs web, serveurs d’entreprise et le cloud.  

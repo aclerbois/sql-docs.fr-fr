@@ -1,32 +1,20 @@
 ---
-title: "&gt;= (Supérieur ou égal à) (MDX) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: '>='
-dev_langs: kbMDX
-helpviewer_keywords:
-- '>= (greater than or equal to operator)'
-- greater than or equal to (>=)
-ms.assetid: 272f4614-9ba3-46bd-8306-181c26e798f1
-caps.latest.revision: "34"
-author: Minewiskan
+title: '&gt;= (Supérieur ou égal à) (MDX) | Documents Microsoft'
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 6a835b0d35def5502cb0fb52e9ccaaee5199861b
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: db81285593b04a2b82c5eed87c3747a1f9450e42
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34579121"
 ---
 # <a name="gt-greater-than-or-equal-to-mdx"></a>&gt;= (Supérieur ou égal à) (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -44,7 +32,7 @@ MDX_Expression >= MDX_Expression
  *MDX_Expression*  
  Expression MDX valide.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
  Valeur booléenne basée sur les conditions suivantes :  
   
 -   **true** si le premier paramètre a une valeur qui est supérieure ou égale à la valeur du second paramètre.  
@@ -74,6 +62,6 @@ WHERE
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)  
   
   

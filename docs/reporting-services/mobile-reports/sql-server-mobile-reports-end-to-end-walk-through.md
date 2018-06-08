@@ -1,27 +1,25 @@
 ---
-title: "Rapports mobiles SQL Server : procédure pas à pas de bout en bout | Microsoft Docs"
-ms.custom: 
+title: 'Rapports mobiles SQL Server : procédure pas à pas de bout en bout | Microsoft Docs'
+ms.custom: ''
 ms.date: 11/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: mobile-reports
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e198575e-b154-4342-b944-2bf19ec49bfd
-caps.latest.revision: 
+caps.latest.revision: 14
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 3233c1433d1e09038d66af3db7e84a732e81926a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 5b6bdc2fb6be0a80639d5f396fa9bc24abfb8833
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-mobile-reports-end-to-end-walk-through"></a>Rapports mobiles SQL Server : procédure pas à pas de bout en bout
 Étapes permettant de créer des rapports mobiles pour n’importe quelle taille d’écran avec [!INCLUDE[PRODUCT_NAME](../../includes/ss-mobilereptpub-long.md)] sur le portail web [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] et de les afficher dans les applications mobiles Power BI.
@@ -31,7 +29,7 @@ Créez des rapports mobiles sur une aire de conception avec des lignes et des co
 Cet article explique comment :   
   
 - Créer un jeu de données et une source de données partagés sur le portail web [!INCLUDE[PRODUCT_NAME](../../includes/ssrsnoversion.md)] , avec la base de données AdventureWorks comme exemple de source de données.  
-- Créer un rapport mobile Reporting Services dans [!INCLUDE[PRODUCT_NAME](../../includes/ss-mobilereptpub-short.md)]  
+- Créer un rapport mobile Reporting Services dans l’ [!INCLUDE[PRODUCT_NAME](../../includes/ss-mobilereptpub-short.md)].  
 - Publier le rapport mobile sur le portail web [!INCLUDE[PRODUCT_NAME](../../includes/ssrsnoversion.md)] .  
 - Afficher le rapport mobile dans l’application mobile Power BI.  
   

@@ -1,32 +1,33 @@
 ---
 title: SQLAllocHandle, fonction | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLAllocHandle
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLAllocHandle
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLAllocHandle
-helpviewer_keywords: SQLAllocHandle function [ODBC]
+f1_keywords:
+- SQLAllocHandle
+helpviewer_keywords:
+- SQLAllocHandle function [ODBC]
 ms.assetid: 6e7fe420-8cf4-4e72-8dad-212affaff317
-caps.latest.revision: "43"
+caps.latest.revision: 43
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: b8bf173bf0055dc06cf475aa72e137d9ca426222
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 22135dd429d9f1a42f4ee694b5730f38d636cb64
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlallochandle-function"></a>SQLAllocHandle, fonction
 **Mise en conformité**  
@@ -87,7 +88,7 @@ SQLRETURN SQLAllocHandle(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLAllocHandle** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** le *HandleType* et *gérer* la valeur de *InputHandle*. SQL_SUCCESS_WITH_INFO (mais pas SQL_ERROR) peut être retourné pour le *OutputHandle* argument. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLAllocHandle** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08003|Connexion non ouverte|(DM) le *HandleType* argument SQL_HANDLE_STMT ou SQL_HANDLE_DESC était, mais la connexion spécifiée par la *InputHandle* argument n’était pas ouvert. Le processus de connexion doit être effectué (et la connexion doit être ouverte) pour le pilote à allouer une instruction ou un descripteur de handle.|  
@@ -115,7 +116,7 @@ SQLRETURN SQLAllocHandle(
   
  Sur les systèmes d’exploitation qui prennent en charge de plusieurs threads, les applications peuvent utiliser le même handle d’environnement, connexion, instruction ou descripteur sur des threads différents. Les pilotes doivent prendre donc en charge un accès multithread-safe à ces informations ; Pour effectuer cette opération, par exemple, consiste à l’aide d’un sémaphore ou une section critique. Pour plus d’informations à propos du threading, consultez [Multithreading](../../../odbc/reference/develop-app/multithreading.md).  
   
- **SQLAllocHandle** ne définit pas l’attribut d’environnement SQL_ATTR_ODBC_VERSION lorsqu’elle est appelée pour allouer un handle d’environnement ; l’attribut de l’environnement doit être défini par l’application, ou SQLSTATE HY010 (erreur de séquence de fonction) est retournée lorsque **SQLAllocHandle** est appelée pour allouer un handle de connexion.  
+ **SQLAllocHandle** ne définit pas l’attribut d’environnement SQL_ATTR_ODBC_VERSION lorsqu’elle est appelée pour allouer un handle d’environnement ; l’attribut de l’environnement doit être défini par l’application, ou SQLSTATE HY010 (erreur de séquence de fonction) sera retourné lorsque **SQLAllocHandle** est appelée pour allouer un handle de connexion.  
   
  Pour les applications conformes aux normes, **SQLAllocHandle** est mappé à **SQLAllocHandleStd** au moment de la compilation. La différence entre ces deux fonctions est que **SQLAllocHandleStd** définit l’attribut d’environnement SQL_ATTR_ODBC_VERSION à SQL_OV_ODBC3 lorsqu’elle est appelée avec le *HandleType* argument défini à SQL_HANDLE_ENV. Pour cela, car il est conforme aux normes applications est toujours ODBC 3. *x* applications. En outre, les normes ne nécessitent pas la version de l’application à inscrire. Ceci est la seule différence entre ces deux fonctions. Sinon, elles sont identiques. **SQLAllocHandleStd** est mappé à **SQLAllocHandle** dans le Gestionnaire de pilotes. Par conséquent, les pilotes tiers n’ont pas à implémenter **SQLAllocHandleStd**.  
   

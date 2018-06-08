@@ -1,38 +1,23 @@
 ---
-title: "Traitement des objets d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- processing objects [Analysis Services]
-- mining structures [Analysis Services]
-- process [Analysis Services]
-- mining structures [Analysis Services], creating
-- mining structures [Analysis Services], how-to topics
-- mining structures [Analysis Services], processing
-ms.assetid: 0f6993c0-0917-4935-82f9-7b8a8a7cc627
-caps.latest.revision: 
-author: Minewiskan
+title: Traitement des objets d’exploration de données | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e4726de9acf90a805ff15791d6ab8d76fa20adc6
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 017f1d751e81fa80b8a7e4c2655fd1de59459fed
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="processing-data-mining-objects"></a>Traitement des objets d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un objet d'exploration de données n'est rien de plus qu'un conteneur vide tant qu'il n'est pas traité. Le*traitement* d’un modèle d’exploration de données est également appelé *apprentissage*.  
+  Un objet d'exploration de données n'est rien de plus qu'un conteneur vide tant qu'il n'est pas traité. Le*traitement* d’un modèle d’exploration de données est également appelé *apprentissage*.  
   
  **Traitement des structures d’exploration de données :** une structure d’exploration de données reçoit les données d’une source de données externe, comme défini par les liaisons de colonne et les métadonnées d’utilisation, puis elle les lit. Ces données sont lues entièrement, puis analysées pour extraire différentes statistiques. Analysis Services contient une représentation compacte des données, appropriée pour l'analyse par les algorithmes d'exploration de données, dans un cache local. Vous pouvez conserver ce cache ou le supprimer lorsque les modèles ont été traités. Par défaut, le cache est stocké. Pour plus d’informations, consultez [Traiter une structure d’exploration de données](../../analysis-services/data-mining/process-a-mining-structure.md).  
   
@@ -63,9 +48,9 @@ Un objet d'exploration de données n'est rien de plus qu'un conteneur vide tant 
  Pour plus d’informations, consultez [Exigences et considérations concernant le traitement &#40;exploration de données&#41;](../../analysis-services/data-mining/processing-requirements-and-considerations-data-mining.md).  
   
 ## <a name="see-also"></a>Voir aussi  
- [Requêtes d’extraction &#40; exploration de données &#41;](../../analysis-services/data-mining/drillthrough-queries-data-mining.md)   
- [Les Structures d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
- [Les modèles d’exploration de données &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)   
- [Architecture logique &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/logical-architecture-analysis-services-data-mining.md)  
+ [Requêtes d’extraction & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/drillthrough-queries-data-mining.md)   
+ [Les Structures d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-structures-analysis-services-data-mining.md)   
+ [Les modèles d’exploration de données & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-models-analysis-services-data-mining.md)   
+ [Architecture logique & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/logical-architecture-analysis-services-data-mining.md)  
   
   

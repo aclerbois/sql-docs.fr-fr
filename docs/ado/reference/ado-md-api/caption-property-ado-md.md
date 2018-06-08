@@ -1,17 +1,15 @@
 ---
-title: "Caption, propriété (ADO MD) | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Caption, propriété (ADO MD) | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Caption
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - Caption property [ADO MD]
 ms.assetid: d90763b8-ba3f-48f8-95b2-e6a0e52296e1
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7ec834b58d7801403b2abb8ad618fc1842ab16a5
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8206c3b0c912b880ec0d9fee96f7695b9e95de70
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="caption-property-ado-md"></a>Propriété de légende (ADO MD)
 Indique la légende de texte à utiliser lors de l’affichage un [niveau](../../../ado/reference/ado-md-api/level-object-ado-md.md) ou [membre](../../../ado/reference/ado-md-api/member-object-ado-md.md) objet.  

@@ -1,28 +1,27 @@
 ---
-title: "Types de graphiques (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Types de graphiques (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/30/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: "10423"
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- "10423"
 ms.assetid: 57b00017-69ae-4e71-8d78-44744e208ac7
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 24e03d256031a3384ea3039026e4157b199e90c6
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 8e67f39c3a3829490273e5727d7cf7dfee517ab8
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="chart-types-report-builder-and-ssrs"></a>Types de graphiques (Générateur de rapports et SSRS)
 

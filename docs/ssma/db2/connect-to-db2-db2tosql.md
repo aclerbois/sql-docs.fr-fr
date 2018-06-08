@@ -1,30 +1,28 @@
 ---
-title: "Connectez-vous à DB2 (DB2ToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Connectez-vous à DB2 (DB2ToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-db2
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
 ms.assetid: 9d485fd0-ab5d-402a-a59a-e9982a61b7de
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e08da1c1922fce1154ec4ca16cd99a757ff973bd
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 09d4e69aefa89ed9930badc575be4fdc302d5f35
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connect-to-db2-db2tosql"></a>Connectez-vous à DB2 (DB2ToSQL)
 Utilisez le **se connecter à DB2** boîte de dialogue se connecter à la base de données DB2 que vous souhaitez migrer.  
@@ -65,7 +63,7 @@ Entrez le SID de la base de données. Le SID est un identificateur qui le distin
   
 Il s’agit d’une option de mode Standard.  
   
-**User name**  
+**Nom d'utilisateur**  
 Entrez le nom d’utilisateur SSMA utilisera pour se connecter à la base de données DB2.  
   
 **Mot de passe**  

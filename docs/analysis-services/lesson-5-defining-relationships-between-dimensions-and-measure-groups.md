@@ -1,29 +1,19 @@
 ---
-title: "Leçon 5 : Définition des relations entre les Dimensions et les groupes de mesures | Documents Microsoft"
-ms.custom: 
-ms.date: 03/04/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 31aeb271-47a1-433b-a8a5-120bcb4584d7
-caps.latest.revision: 
-author: Minewiskan
+title: 'Leçon 5 : Définition des relations entre les Dimensions et les groupes de mesures | Documents Microsoft'
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 5b3637cc09617b51663ac2bc65dea13c764981c2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 551959168ab52b0806876ce1a6b6a1fbdd11bfaa
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-5-defining-relationships-between-dimensions-and-measure-groups"></a>Leçon 5 : Définition des relations entre les dimensions et les groupes de mesures
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -54,7 +44,7 @@ Au cours de cette tâche, vous allez apprendre à modifier la granularité d'une
   
 ## <a name="see-also"></a>Voir aussi  
 [Scénario du didacticiel Analysis Services](../analysis-services/analysis-services-tutorial-scenario.md)  
-[Modélisation multidimensionnelle &#40; Didacticiel Adventure Works &#41;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
+[Modélisation multidimensionnelle & #40 ; Didacticiel Adventure Works & #41 ;](../analysis-services/multidimensional-modeling-adventure-works-tutorial.md)  
 [Relations de dimension](../analysis-services/multidimensional-models-olap-logical-cube-objects/dimension-relationships.md)  
   
   

@@ -1,36 +1,40 @@
 ---
-title: "Déployer, exécuter et surveiller un package SSIS sur Azure | Microsoft Docs"
-ms.date: 02/05/2018
-ms.topic: article
-ms.prod: sql-non-specified
+title: Déployer et exécuter un package SSIS dans Azure | Microsoft Docs
+ms.date: 5/22/2018
+ms.topic: conceptual
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: lift-shift
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - integration-services
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7b17cdd39e1eb155581d070ef659d6c34c044b4d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 42041134b027d9a9f274a31d0b6a7276dcc23ef8
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 ---
-# <a name="deploy-run-and-monitor-an-ssis-package-on-azure"></a>Déployer, exécuter et surveiller un package SSIS sur Azure
+# <a name="deploy-and-run-an-ssis-package-in-azure"></a>Déployer et exécuter un package SSIS dans Azure
 Ce didacticiel vous montre comment déployer un projet SQL Server Integration Services sur la base de données de catalogues SSISDB dans Azure SQL Database, comment exécuter un package dans le runtime d’intégration Azure SSIS et comment surveiller le package en cours d’exécution.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Avant de commencer, vérifiez que vous avez la version 17.2 ou ultérieure de SQL Server Management Studio. Pour télécharger la dernière version de SSMS, consultez [Télécharger SQL Server Management Studio (SSMS)](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms).
 
-Vérifiez également que vous avez configuré la base de données SSISDB et que vous avez provisionné le runtime d’intégration Azure SSIS. Pour plus d’informations sur la façon de provisionner SSIS sur Azure, consultez [Déployer des packages SSIS sur Azure](https://docs.microsoft.com/azure/data-factory/tutorial-create-azure-ssis-runtime-portal).
+Vérifiez également que vous avez configuré la base de données SSISDB dans Azure et que vous avez provisionné le runtime d’intégration Azure-SSIS. Pour plus d’informations sur le provisionnement de SSIS sur Azure, consultez [Déployer des packages SQL Server Integration Services sur Azure](https://docs.microsoft.com/azure/data-factory/tutorial-deploy-ssis-packages-azure).
 
-> [!NOTE]
-> Le déploiement sur Azure prend uniquement en charge le modèle de déploiement de projet.
+## <a name="for-azure-sql-database-get-the-connection-info"></a>Pour Azure SQL Database, obtenez les informations de connexion.
+
+Pour exécuter le package sur Azure SQL Database, obtenez les informations de connexion dont vous avez besoin pour vous connecter à la base de données du catalogue SSIS (SSISDB). Vous avez besoin des informations de connexion et du nom de serveur complet dans les procédures qui suivent.
+
+1. Connectez-vous au [portail Azure](https://portal.azure.com/).
+2. Sélectionnez **Bases de données SQL** dans le menu de gauche, puis sélectionnez la base de données SSISDB dans la page **Bases de données SQL**. 
+3. Dans la page **Vue d’ensemble** de votre base de données, notez le nom complet du serveur. Pour voir l’option **Cliquer pour copier**, pointez sur le nom du serveur. 
+4. Si vous oubliez vos informations de connexion de serveur Azure SQL Database, accédez à la page du serveur SQL Database pour afficher le nom d’administrateur de serveur. Vous pouvez réinitialiser le mot de passe si nécessaire.
 
 ## <a name="connect-to-the-ssisdb-database"></a>Se connecter à la base de données SSISDB
 
@@ -51,7 +55,7 @@ Voici les deux points les plus importants à retenir. Ces étapes sont décrites
    | ------------ | ------------------ | ------------------------------------------------- | 
    | **Type de serveur** | Moteur de base de données | Cette valeur est requise. |
    | **Nom du serveur** | Nom complet du serveur | Le nom doit être au format suivant : **mysqldbserver.database.windows.net**. Si vous avez besoin du nom du serveur, consultez [Se connecter à la base de données de catalogues SSISDB sur Azure](ssis-azure-connect-to-catalog-database.md). |
-   | **Authentification** | Authentification SQL Server | Ce guide de démarrage rapide utilise l’authentification SQL. |
+   | **Authentification** | Authentification SQL Server | Vous ne pouvez pas vous connecter à Azure SQL Database avec l’authentification Windows. |
    | **Connexion** | Compte Administrateur du serveur | Compte que vous avez spécifié quand vous avez créé le serveur. |
    | **Mot de passe** | Mot de passe du compte Administrateur de votre serveur | Mot de passe que vous avez spécifié quand vous avez créé le serveur. |
 
@@ -64,6 +68,9 @@ Voici les deux points les plus importants à retenir. Ces étapes sont décrites
 ## <a name="deploy-a-project-with-the-deployment-wizard"></a>Déployer un projet avec l’Assistant Déploiement
 
 Pour en savoir plus sur le déploiement de packages et sur l’Assistant Déploiement, consultez [Déployer des projets et des packages Integration Services (SSIS)](../packages/deploy-integration-services-ssis-projects-and-packages.md) et [Assistant Déploiement d’Integration Services](../packages/deploy-integration-services-ssis-projects-and-packages.md#integration-services-deployment-wizard).
+
+> [!NOTE]
+> Le déploiement sur Azure prend uniquement en charge le modèle de déploiement de projet.
 
 ### <a name="start-the-integration-services-deployment-wizard"></a>Démarrer l’Assistant Déploiement d’Integration Services
 1. Dans l’Explorateur d’objets de SSMS, après avoir développé le nœud **Catalogues Integration Services** et le nœud **SSISDB**, développez un dossier de projet.
@@ -86,8 +93,9 @@ Pour en savoir plus sur le déploiement de packages et sur l’Assistant Déploi
   
 3.  Dans la page **Sélectionner la destination**, sélectionnez la destination du projet.
     -   Entrez le nom complet du serveur au format `<server_name>.database.windows.net`.
+    -   Fournissez des informations d’authentification et sélectionnez **Se connecter**.
     -   Sélectionnez ensuite **Parcourir** pour sélectionner le dossier cible dans SSISDB.
-    -   Sélectionnez **Suivant** pour ouvrir la page **Vérifier**.  
+    -   Ensuite, sélectionnez **Suivant** pour ouvrir la page **Vérifier**. (Le bouton **Suivant** est activé seulement si vous sélectionnez **Se connecter**.)
   
 4.  Dans la page **Vérifier**, vérifiez les paramètres que vous avez sélectionnés.
     -   Vous pouvez changer vos choix en sélectionnant **Précédent**, ou en sélectionnant l’une des étapes du volet gauche.
@@ -184,7 +192,7 @@ Pour plus d’informations sur la surveillance des packages en cours d’exécut
 
 ## <a name="monitor-the-azure-ssis-integration-runtime"></a>Surveiller le runtime d’intégration Azure SSIS
 
-Pour obtenir des informations d’état sur le runtime d’intégration Azure SSIS dans lequel les packages sont en cours d’exécution, utilisez les commandes PowerShell ci-après. Pour chacune des commandes, indiquez les noms du Data Factory, du runtime d’intégration Azure SSIS et du groupe de ressources.
+Pour obtenir des informations d’état sur le runtime d’intégration Azure-SSIS dans lequel les packages sont en cours d’exécution, utilisez les commandes PowerShell suivantes. Pour chacune des commandes, spécifiez les noms de la fabrique de données, du runtime d’intégration Azure-SSIS et du groupe de ressources. Pour plus d’informations, consultez [Surveiller le runtime d’intégration Azure-SSIS](https://docs.microsoft.com/azure/data-factory/monitor-integration-runtime#azure-ssis-integration-runtime).
 
 ### <a name="get-metadata-about-the-azure-ssis-integration-runtime"></a>Obtenir des métadonnées sur le runtime d’intégration Azure SSIS
 

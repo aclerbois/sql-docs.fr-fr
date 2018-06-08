@@ -1,33 +1,31 @@
 ---
-title: "Indiquer que les suppressions ne doivent pas être suivies pour les articles de fusion | Microsoft Docs"
-ms.custom: 
+title: Indiquer que les suppressions ne doivent pas être suivies pour les articles de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
 - conditional delete tracking [SQL Server replication]
 - merge replication [SQL Server replication], conditional delete tracking
 ms.assetid: 0fe330ca-5fb5-422e-ad6f-92fb5d6a3b6c
-caps.latest.revision: 
+caps.latest.revision: 34
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d4c6b6a295d40d9a1a5e161bf10d5a61648e49eb
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 438139702537f2395c2ed3ed7fd8864222bc8c5b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="specify-that-deletes-should-not-be-tracked-for-merge-articles"></a>Indiquer que les suppressions ne doivent pas être suivies pour les articles de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

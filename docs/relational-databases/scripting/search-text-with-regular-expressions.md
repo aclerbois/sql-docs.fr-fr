@@ -1,17 +1,13 @@
 ---
-title: "Rechercher du texte avec des expressions régulières | Microsoft Docs"
-ms.custom: 
+title: Rechercher du texte avec des expressions régulières | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
 - vs.regularexpressionhelp
@@ -21,19 +17,20 @@ helpviewer_keywords:
 - Query Editor [SQL Server Management Studio], regular expression searches
 - searches [SQL Server Management Studio], regular expressions
 ms.assetid: a057690c-d118-4159-8e4d-2ed5ccfe79d3
-caps.latest.revision: 
+caps.latest.revision: 25
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: f60dd96e3a335938d99c0b0f619ce859c208e795
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 2bdf5092dc19a5a96121db99ef0da7c9192da1bb
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="search-text-with-regular-expressions"></a>Rechercher du texte avec des expressions régulières
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Les expressions régulières sont une notation souple et concise pour rechercher et remplacer des modèles de texte. Un ensemble spécifique d'expressions régulières peut être utilisé dans le champ **Rechercher** de la boîte de dialogue [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] **de** .  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Les expressions régulières sont une notation souple et concise pour rechercher et remplacer des modèles de texte. Un ensemble spécifique d'expressions régulières peut être utilisé dans le champ **Rechercher** de la boîte de dialogue [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] **de** .  
   
 #### <a name="to-find-using-regular-expressions"></a>Pour effectuer une recherche à l'aide d'expressions régulières  
   
@@ -42,7 +39,7 @@ ms.lasthandoff: 01/24/2018
 2.  Le bouton triangulaire **Générateur d'expressions** situé en regard du champ **Rechercher** devient alors disponible. Cliquez sur ce bouton pour afficher la liste des expressions régulières les plus couramment utilisées. Lorsque vous choisissez un élément dans le Générateur d'expressions, il est inséré dans la chaîne **Rechercher** .  
   
 > [!NOTE]  
->  Il existe des différences de syntaxe entre les expressions régulières qui peuvent être utilisées dans les chaînes **Rechercher** et celles qui sont valides dans la programmation avec [!INCLUDE[msCoName](../../includes/msconame-md.md)] .NET Framework. Par exemple, dans **Rechercher et remplacer**, les accolades {} sont utilisées pour les expressions avec balises. Ainsi, l’expression « zo\{1\} » correspond à toutes les occurrences de « zo » suivies de la balise 1, comme dans « Alonzo1 » et « Gonzo1 ». En revanche, dans le .NET Framework, les accolades {} sont utilisées pour les quantificateurs. Ainsi, l’expression « zo\{1\} » correspond à toutes les occurrences de « z » suivies de la lettre « o », comme dans « zone » (et non « zoo »).  
+>  Il existe des différences de syntaxe entre les expressions régulières qui peuvent être utilisées dans les chaînes **Rechercher** et celles qui sont valides dans la programmation avec [!INCLUDE[msCoName](../../includes/msconame-md.md)] .NET Framework. Par exemple, dans **Rechercher et remplacer**, les accolades {} sont utilisées pour les expressions avec balises. Ainsi, l'expression « zo{1} » correspond à toutes les occurrences de « zo » suivies de la balise 1, comme dans « Alonzo1 » et « Gonzo1 ».  En revanche, dans le .NET Framework, les accolades {} sont utilisées pour les quantificateurs. Ainsi, l'expression « zo{1} » correspond à toutes les occurrences de « z » suivies de la lettre « o », comme dans « zone » (et non « zoo »).   
   
  Le tableau ci-dessous décrit les expressions régulières disponibles dans le **Générateur d'expressions**.  
   

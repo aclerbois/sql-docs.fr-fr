@@ -1,27 +1,23 @@
 ---
-title: LOCALDB_ERROR_CANNOT_CREATE_SQL_PROCESS | Microsoft Docs
-ms.custom: 
+title: LOCALDB_ERROR_CANNOT_CREATE_SQL_PROCESS | Documents Microsoft
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: localdb
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: performance
+ms.tgt_pltfrm: ''
 ms.topic: reference
 ms.assetid: 66d92652-b46f-46d8-8093-fa9c6fc4e0d1
-caps.latest.revision: 
+caps.latest.revision: 8
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c5707a8503181abd647a6630f984519f74d0ee8e
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+ms.openlocfilehash: 1fb7f733e49872d4ee2e5b13cebb24c9e2930c8b
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="localdberrorcannotcreatesqlprocess"></a>LOCALDB_ERROR_CANNOT_CREATE_SQL_PROCESS
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

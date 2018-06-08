@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_33128 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 33128 (Database Engine error)
 ms.assetid: 12c1096f-d120-439b-85f3-f794859503c9
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 8
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3ce51b520a52bc799bb987a1c4e6851c75029fcf
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: e06181582c7a08a7165f7e8545a170b5eec27310
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver33128"></a>MSSQLSERVER_33128
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -50,7 +45,7 @@ Si le niveau de compatibilité de la base de données est 110 ou supérieur, le
 > [!NOTE]  
 > La mémoire tampon en anneau est un composant interne qui n'est pas entièrement documenté et qui n'est pas conçu pour être utilisé par les clients. Les messages de la mémoire tampon en anneau sont utiles lorsque vous contactez le support technique [!INCLUDE[msCoName](../../includes/msconame-md.md)]. Pour afficher la mémoire tampon en anneau, interrogez la vue de gestion dynamique sys.dm_os_ring_buffers.  
   
-|État| Description|  
+|État|Description|  
 |---------|---------------|  
 | 1|Une clé RC4 est utilisée dans la fonction intégrée encryptbykey(). La fonction intégrée retourne NULL. Ce message apparaît uniquement dans la mémoire tampon en anneau.|  
 |2|Une clé RC4 est utilisée par la fonction intégrée decryptbykey(). Ce message apparaît uniquement dans la mémoire tampon en anneau.|  

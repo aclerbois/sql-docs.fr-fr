@@ -1,16 +1,15 @@
 ---
 title: Inclure ou exclure des lignes (Visual Database Tools) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - search criteria [SQL Server], excluding rows
 - search criteria [SQL Server], WHERE clause
@@ -23,19 +22,19 @@ helpviewer_keywords:
 - row included in search [SQL Server]
 - excluding rows
 ms.assetid: ba4e1202-31a2-444d-8365-c68a530ef223
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 020bbbcbae62267966e9fb020e3dc0f668cc977f
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 20f1a6b78a13a7ca81386dbccb7358378ec6f76b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="include-or-exclude-rows-visual-database-tools"></a>Inclure ou exclure des lignes (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Pour limiter le nombre de lignes qu’une requête SELECT doit renvoyer, créez des conditions de recherche ou des critères de filtre. Dans SQL, les conditions de recherche apparaissent dans la clause WHERE de l'instruction ou, si vous créez une requête d'agrégation, dans la clause HAVING.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Pour limiter le nombre de lignes qu'une requête SELECT doit renvoyer, créez des conditions de recherche ou des critères de filtre. Dans SQL, les conditions de recherche apparaissent dans la clause WHERE de l'instruction ou, si vous créez une requête d'agrégation, dans la clause HAVING.  
   
 > [!NOTE]  
 > Les conditions de recherche permettent également d'indiquer quelles lignes sont affectées par une requête appartenant à un des types suivants : Update, Insert Results, Insert Values, Delete ou Make Table.  

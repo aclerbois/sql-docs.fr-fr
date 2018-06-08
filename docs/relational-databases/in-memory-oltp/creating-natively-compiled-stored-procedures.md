@@ -1,35 +1,33 @@
 ---
-title: "Création de procédures stockées compilées en mode natif | Microsoft Docs"
-ms.custom: 
+title: Création de procédures stockées compilées en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e6b34010-cf62-4f65-bbdf-117f291cde7b
-caps.latest.revision: 
+caps.latest.revision: 15
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fb2af124d729aad369a683c9b4978eabd33f6b96
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f81ba5079859508a3806ec33e7d91030e2e787af
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="creating-natively-compiled-stored-procedures"></a>Création de procédures stockées compilées en mode natif
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
 
-  Les procédures stockées compilées en mode natif n'implémentent pas la surface d'exposition totale de programmabilité et de requête [!INCLUDE[tsql](../../includes/tsql-md.md)] . Certaines constructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ne peuvent pas être utilisées dans des procédures stockées compilées en mode natif. Pour plus d’informations, consultez [Fonctionnalités prises en charge pour les modules T-SQL compilés en mode natif](../../relational-databases/in-memory-oltp/supported-features-for-natively-compiled-t-sql-modules.md).  
+Les procédures stockées compilées en mode natif n'implémentent pas la surface d'exposition totale de programmabilité et de requête [!INCLUDE[tsql](../../includes/tsql-md.md)] . Certaines constructions [!INCLUDE[tsql](../../includes/tsql-md.md)] ne peuvent pas être utilisées dans des procédures stockées compilées en mode natif. Pour plus d’informations, consultez [Fonctionnalités prises en charge pour les modules T-SQL compilés en mode natif](../../relational-databases/in-memory-oltp/supported-features-for-natively-compiled-t-sql-modules.md).  
   
- À l'inverse, plusieurs fonctionnalités [!INCLUDE[tsql](../../includes/tsql-md.md)] ne sont prises en charge que pour les procédures stockées compilées en mode natif :  
+À l'inverse, plusieurs fonctionnalités [!INCLUDE[tsql](../../includes/tsql-md.md)] ne sont prises en charge que pour les procédures stockées compilées en mode natif :  
   
 -   Blocs Atomic. Pour plus d’informations, voir [Atomic Blocks](../../relational-databases/in-memory-oltp/atomic-blocks-in-native-procedures.md).  
   
@@ -43,30 +41,30 @@ ms.lasthandoff: 03/19/2018
   
 -   Liaison de schéma des procédures stockées compilées en mode natif.  
   
- Les procédures stockées compilées en mode natif sont créées à l’aide de [CREATE PROCEDURE &#40;Transact-SQL&#41;](../../t-sql/statements/create-procedure-transact-sql.md). L'exemple suivant illustre une table optimisée en mémoire et une procédure stockée compilée en mode natif utilisée pour insérer des lignes dans la table.  
+Les procédures stockées compilées en mode natif sont créées à l’aide de [CREATE PROCEDURE &#40;Transact-SQL&#41;](../../t-sql/statements/create-procedure-transact-sql.md). L'exemple suivant illustre une table optimisée en mémoire et une procédure stockée compilée en mode natif utilisée pour insérer des lignes dans la table.  
   
 ```sql  
-create table dbo.Ord  
-(OrdNo integer not null primary key nonclustered,   
- OrdDate datetime not null,   
- CustCode nvarchar(5) not null)   
- with (memory_optimized=on)  
-go  
+CREATE TABLE [dbo].[T2] (  
+  [c1] [int] NOT NULL, 
+  [c2] [datetime] NOT NULL,
+  [c3] nvarchar(5) NOT NULL, 
+  CONSTRAINT [PK_T1] PRIMARY KEY NONCLUSTERED ([c1])  
+  ) WITH ( MEMORY_OPTIMIZED = ON , DURABILITY = SCHEMA_AND_DATA )  
+GO  
   
-create procedure dbo.OrderInsert(@OrdNo integer, @CustCode nvarchar(5))  
-with native_compilation, schemabinding  
-as   
-begin atomic with  
-(transaction isolation level = snapshot,  
-language = N'English')  
-  
-  declare @OrdDate datetime = getdate();  
-  insert into dbo.Ord (OrdNo, CustCode, OrdDate) values (@OrdNo, @CustCode, @OrdDate);  
-end  
-go  
+CREATE PROCEDURE [dbo].[usp_2] (@c1 int, @c3 nvarchar(5)) 
+WITH NATIVE_COMPILATION, SCHEMABINDING  
+AS BEGIN ATOMIC WITH  
+(  
+ TRANSACTION ISOLATION LEVEL = SNAPSHOT, LANGUAGE = N'us_english'  
+)  
+  DECLARE @c2 datetime = GETDATE();  
+  INSERT INTO [dbo].[T2] (c1, c2, c3) values (@c1, @c2, @c3);  
+END  
+GO  
 ```  
-  
- Dans l’exemple de code, **NATIVE_COMPILATION** indique que cette procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)] est une procédure stockée compilée en mode natif. Les options suivantes sont requises :  
+ 
+Dans l’exemple de code, **NATIVE_COMPILATION** indique que cette procédure stockée [!INCLUDE[tsql](../../includes/tsql-md.md)] est une procédure stockée compilée en mode natif. Les options suivantes sont requises :  
   
 |Option|Description|  
 |------------|-----------------|  

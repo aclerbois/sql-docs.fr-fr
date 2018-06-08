@@ -1,44 +1,43 @@
 ---
-title: "Déplacer une base de données protégée par le chiffrement transparent des données vers un autre serveur SQL Server | Microsoft Docs"
-ms.custom: 
+title: Déplacer une base de données protégée par le chiffrement transparent des données vers un autre serveur SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Transparent Data Encryption, moving
 - TDE, moving a database
 ms.assetid: fb420903-df54-4016-bab6-49e6dfbdedc7
-caps.latest.revision: 
+caps.latest.revision: 18
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: df6d9dfb912e4a425f44008a982b8c18fdc54f7c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 34f7225842dd6dcc789cbd6d09fa6cfee70b60f9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="move-a-tde-protected-database-to-another-sql-server"></a>Déplacer une base de données protégée par le chiffrement transparent des données vers un autre serveur SQL Server
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique explique comment protéger une base de données à l’aide de Transparent Data Encryption (TDE), puis la déplacer vers une autre instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. Le chiffrement transparent des données effectue le chiffrement et le déchiffrement d'E/S en temps réel des données et des fichiers journaux. Le chiffrement utilise une clé de chiffrement de base de données (DEK), stockée dans l'enregistrement de démarrage de base de données pour être disponible pendant la récupération. La clé de chiffrement de base de données est une clé symétrique sécurisée à l'aide d'un certificat stocké dans la base de données **master** du serveur ou une clé asymétrique protégée par un module de gestion de clés extensible.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique explique comment protéger une base de données à l'aide du chiffrement transparent des données (TDE), puis la déplacer vers une autre instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)]. Le chiffrement transparent des données effectue le chiffrement et le déchiffrement d'E/S en temps réel des données et des fichiers journaux. Le chiffrement utilise une clé de chiffrement de base de données (DEK), stockée dans l'enregistrement de démarrage de base de données pour être disponible pendant la récupération. La clé de chiffrement de base de données est une clé symétrique sécurisée à l'aide d'un certificat stocké dans la base de données **master** du serveur ou une clé asymétrique protégée par un module de gestion de clés extensible.  
    
 ##  <a name="Restrictions"></a> Limitations et restrictions  
   
--   Lors du déplacement d'une base de données protégée par chiffrement transparent des données, vous devez également déplacer le certificat ou la clé asymétrique qui sert à ouvrir la clé DEK. Le certificat ou la clé asymétrique doit être installé dans la base de données **master** du serveur de destination, afin que [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] puisse accéder aux fichiers de base de données. Pour plus d’informations, consultez [Chiffrement transparent des données &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md).  
+-   Lors du déplacement d'une base de données protégée par chiffrement transparent des données, vous devez également déplacer le certificat ou la clé asymétrique qui sert à ouvrir la clé DEK. Le certificat ou la clé asymétrique doit être installé dans la base de données **master** du serveur de destination, afin que [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] puisse accéder aux fichiers de base de données. Pour plus d’informations, consultez [Transparent Data Encryption &#40;TDE&#41;](../../../relational-databases/security/encryption/transparent-data-encryption.md).  
   
 -   Vous devez conserver des copies du fichier de certificat et du fichier de clé privée pour permettre la récupération du certificat. Le mot de passe de la clé privée ne doit pas forcément être le même que le mot de passe de la clé principale de la base de données.  
   
 -   [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] stocke les fichiers créés ici dans **C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\MSSQL\DATA** par défaut. Vos noms et emplacements de fichier peuvent être différents.  
   
-##  <a name="Permissions"></a> Autorisations  
+##  <a name="Permissions"></a> Permissions  
   
 -   Requiert l'autorisation **CONTROL DATABASE** sur la base de données **master** pour créer la clé principale de base de données.  
   
@@ -84,7 +83,7 @@ Les procédures suivantes vous montrent comment créer une base de données prot
   
 ###  <a name="TsqlCreate"></a> Utilisation de Transact-SQL  
   
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -178,7 +177,7 @@ Les procédures suivantes vous montrent comment déplacer une base de données p
   
     -   Lorsqu'une base de données est impliquée dans la réplication, l' **État** est **Non prêt** et la colonne **Message** indique **Base de données répliquée**.  
   
-    -   Quand une base de données a une ou plusieurs connexions actives, l’**État** est **Non prêt** et la colonne **Message** indique *<nombre_de_connexions_actives>***connexion(s) active(s)**, par exemple, **1 connexion(s) active(s)**. Avant de détacher la base de données, vous devez déconnecter toutes les connexions actives en cliquant sur **Supprimer les connexions**.  
+    -   Quand une base de données a une ou plusieurs connexions actives, l’**État** est **Non prêt** et la colonne **Message** indique *<nombre_de_connexions_actives>***Connexion(s) active(s)*, par exemple, **1 connexion(s) active(s)**. Avant de détacher la base de données, vous devez déconnecter toutes les connexions actives en cliquant sur **Supprimer les connexions**.  
   
      Pour obtenir plus d'informations sur un message, cliquez sur le texte du lien hypertexte pour ouvrir le Moniteur d'activité.  
   
@@ -196,7 +195,7 @@ Les procédures suivantes vous montrent comment déplacer une base de données p
   
 8.  Dans la boîte de dialogue **Attacher des bases de données** , sous **Bases de données à attacher**, cliquez sur **Ajouter**.  
   
-9. Dans la boîte de dialogue **Rechercher les fichiers de base de données –***nom_serveur* , sélectionnez le fichier de base de données à attacher au nouveau serveur, puis cliquez sur **OK**.  
+9. Dans la boîte de dialogue **Rechercher les fichiers de base de données –***nom_serveur*, sélectionnez le fichier de base de données à attacher au nouveau serveur, puis cliquez sur **OK**.  
   
      Les options suivantes sont disponibles dans la boîte de dialogue **Attacher des bases de données** .  
   
@@ -226,7 +225,7 @@ Les procédures suivantes vous montrent comment déplacer une base de données p
     |(Aucune icône)|(Aucun texte)|L'opération d'attachement n'a pas démarré ou est peut-être en attente pour cet objet. Il s'agit de la valeur par défaut lorsque la boîte de dialogue est ouverte.|  
     |Triangle vert dirigé vers la droite|En cours|L'opération d'attachement a démarré, mais n'est pas terminée.|  
     |Coche verte|Réussi|L'attachement de l'objet a réussi.|  
-    |Cercle rouge contenant une croix blanche|Erreur|L'opération d'attachement a rencontré une erreur et ne s'est pas terminée correctement.|  
+    |Cercle rouge contenant une croix blanche|Error|L'opération d'attachement a rencontré une erreur et ne s'est pas terminée correctement.|  
     |Cercle contenant deux quartiers noirs (à gauche et à droite) et deux quartiers blancs (en haut et en bas)|Arrêté|L'opération d'attachement n'a pas réussi, car l'utilisateur l'a interrompue.|  
     |Cercle contenant une flèche courbe pointant dans le sens inverse des aiguilles d'une montre|Restauré|L'opération d'attachement a réussi, mais a été restaurée en raison d'une erreur lors de l'attachement d'un autre objet.|  
   
@@ -259,7 +258,7 @@ Les procédures suivantes vous montrent comment déplacer une base de données p
   
 ###  <a name="TsqlMove"></a> Utilisation de Transact-SQL  
   
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -308,7 +307,7 @@ Les procédures suivantes vous montrent comment déplacer une base de données p
   
 -   [CREATE DATABASE &#40;SQL Server Transact-SQL&#41;](../../../t-sql/statements/create-database-sql-server-transact-sql.md)  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Attacher et détacher une base de données &#40;SQL Server&#41;](../../../relational-databases/databases/database-detach-and-attach-sql-server.md)   
  [Chiffrement transparent des données avec Azure SQL Database](../../../relational-databases/security/encryption/transparent-data-encryption-azure-sql.md)  
   

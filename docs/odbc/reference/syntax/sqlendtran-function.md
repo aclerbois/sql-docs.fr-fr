@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLEndTran | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLEndTran
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLEndTran
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLEndTran
-helpviewer_keywords: SQLEndTran function [ODBC]
+f1_keywords:
+- SQLEndTran
+helpviewer_keywords:
+- SQLEndTran function [ODBC]
 ms.assetid: ff375ce1-eb50-4693-b1e6-70181a6dbf9f
-caps.latest.revision: "29"
+caps.latest.revision: 29
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 15ba9ff7d28101201842071929b34dfa7ec1d455
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: af0207a5ccaa11728b0ff67a4acad75577acdca7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlendtran-function"></a>Fonction SQLEndTran
 **Mise en conformité**  
@@ -66,7 +67,7 @@ SQLRETURN SQLEndTran(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLEndTran** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenu en appelant **SQLGetDiagRec** le *HandleType* et *gérer*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLEndTran** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |08003|Connexion non ouverte|(DM) le *HandleType* a été SQL_HANDLE_DBC et le *gérer* n’était pas dans un état connecté.|  

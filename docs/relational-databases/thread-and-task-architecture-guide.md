@@ -1,31 +1,30 @@
 ---
-title: "Guide d’architecture de thread et de tâche | Microsoft Docs"
-ms.custom: 
+title: Guide d’architecture de thread et de tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 10/26/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: relational-databases-misc
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - guide, thread and task architecture
 - thread and task architecture guide
 ms.assetid: 925b42e0-c5ea-4829-8ece-a53c6cddad3b
-caps.latest.revision: 
+caps.latest.revision: 3
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1684760951c661e50111028594c576661028da6e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dcb886bee40d358bf0b2815e8fb669876f32d3a6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="thread-and-task-architecture-guide"></a>guide d’architecture de thread et de tâche
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -73,7 +72,7 @@ L'ajout d'un processeur à chaud est la capacité d'ajouter dynamiquement des pr
 Spécifications pour l'ajout de processeurs à chaud :  
 * Nécessite un matériel prenant en charge l'ajout de processeurs à chaud.
 * Nécessite l'édition 64 bits de Windows Server 2008 Datacenter ou le système d'exploitation Windows Server 2008 Enterprise Edition pour systèmes basés sur Itanium.
-* Nécessite SQL Server Enterprise.
+* Nécessite SQL Server Entreprise.
 * SQL Server ne peut pas être configuré pour utiliser la configuration NUMA logicielle. Pour plus d’informations sur la configuration NUMA logicielle, consultez [Soft-NUMA (SQL Server)](../database-engine/configure-windows/soft-numa-sql-server.md).
 
 SQL Server ne commence pas automatiquement à utiliser les processeurs une fois que ceux-ci ont été ajoutés. Cela empêche SQL Server d’utiliser des processeurs qui peuvent être ajoutés à d’autres fins. Après avoir ajouté des processeurs, exécutez l’instruction [RECONFIGURE](../t-sql/language-elements/reconfigure-transact-sql.md) pour que SQL Server reconnaisse les nouveaux processeurs comme des ressources disponibles.

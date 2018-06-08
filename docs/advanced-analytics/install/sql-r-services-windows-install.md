@@ -1,31 +1,18 @@
 ---
 title: Installer SQL Server 2016 R Services (de-de base de données) | Documents Microsoft
-ms.custom: ''
-ms.date: 03/15/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-keywords:
-- Installation de SQL Server R Services
-- installation de SQL Server Machine Learning Services
-- Configurer les Services de R
-- installer l’apprentissage de SQL
-ms.assetid: ''
-caps.latest.revision: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: Active
-ms.openlocfilehash: 7a00eb7f3151ad95818feee1d981170164f44345
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+ms.openlocfilehash: 5d8cf1c6bb2ac59a2745aceb979c5f566917548a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585591"
 ---
 # <a name="install-sql-server-2016-r-services-in-database"></a>Installer SQL Server 2016 R Services (en base de données) 
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -160,7 +147,7 @@ Utilisez les étapes suivantes pour vérifier que tous les composants utilisés 
 
     | hello |
     |----|
-    | 1|
+    |  1|
 
 ## <a name="bkmk_FollowUp"></a> Configuration supplémentaire
 
@@ -271,7 +258,7 @@ Les solutions de R que vous créez pour SQL Server peuvent appeler des fonctions
 
 Installez les packages que vous souhaitez utiliser à partir de SQL Server dans la bibliothèque par défaut qui est utilisée par l’instance. Si vous avez une installation distincte de R sur l’ordinateur, ou si vous avez installé les packages dans les bibliothèques utilisateur, vous ne pourrez pas utiliser ces packages à partir de T-SQL.
 
-Le processus d’installation et la gestion des packages R est différent dans SQL Server 2016 et SQL Server 2017. Dans SQL Server 2016, un administrateur de base de données doit installer des packages R les utilisateurs ont besoin. Dans SQL Server 2017, vous pouvez définir des groupes d’utilisateurs de partager des packages sur un niveau de base de données ou configurer des rôles de base de données pour permettre aux utilisateurs d’installer leurs propres packages. Pour plus d’informations, consultez [gestion des packages](../r/r-package-management-for-sql-server-r-services.md).
+Le processus d’installation et la gestion des packages R est différent dans SQL Server 2016 et SQL Server 2017. Dans SQL Server 2016, un administrateur de base de données doit installer des packages R les utilisateurs ont besoin. Dans SQL Server 2017, vous pouvez définir des groupes d’utilisateurs de partager des packages sur un niveau de base de données ou configurer des rôles de base de données pour permettre aux utilisateurs d’installer leurs propres packages. Pour plus d’informations, consultez [installer de nouveaux packages R](../r/install-additional-r-packages-on-sql-server.md).
 
 
 ## <a name="get-help"></a>Obtenir de l’aide

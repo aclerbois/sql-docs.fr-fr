@@ -1,25 +1,22 @@
 ---
-title: "Exporter et importer une base de données sur Linux | Documents Microsoft"
-description: 
+title: Exporter et importer une base de données sur Linux | Documents Microsoft
+description: ''
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 10/02/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 2210cfc3-c23a-4025-a551-625890d6845f
 ms.custom: sql-linux
-ms.workload: On Demand
-ms.openlocfilehash: 817fc0ae018ebb7999ad572c0f18ede943ff7090
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 7a7c1c73ca70e0d42104e74c868d6acd32cc01b1
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="export-and-import-a-database-on-linux-with-ssms-or-sqlpackageexe-on-windows"></a>Exporter et importer une base de données sur Linux avec SSMS ou SqlPackage.exe sur Windows
 
@@ -27,16 +24,16 @@ ms.lasthandoff: 02/13/2018
 
 Cet article explique comment utiliser [SQL Server Management Studio (SSMS)](../ssms/download-sql-server-management-studio-ssms.md) et [SqlPackage.exe](https://msdn.microsoft.com/library/hh550080.aspx) pour exporter et importer une base de données 2017 du serveur SQL sur Linux. SSMS et SqlPackage.exe sont des applications Windows, par conséquent, utilisez cette technique lorsque vous disposez d’un ordinateur Windows qui peut se connecter à une instance distante de SQL Server sur Linux.
 
-Vous devez toujours installer et utiliser la dernière version de SQL Server Management Studio (SSMS), comme décrit dans [utiliser de SSMS sur Windows pour se connecter à SQL Server sur Linux](sql-server-linux-develop-use-ssms.md)
+Vous devez toujours installer et utiliser la dernière version de SQL Server Management Studio (SSMS), comme décrit dans [utiliser de SSMS sur Windows pour se connecter à SQL Server sur Linux](sql-server-linux-manage-ssms.md)
 
 > [!NOTE]
 > Si vous migrez une base de données à partir d’une instance de SQL Server vers un autre, la recommandation consiste à utiliser [sauvegarde et restauration](sql-server-linux-migrate-restore-database.md).
 
 ## <a name="export-a-database-with-ssms"></a>Exporter une base de données avec SSMS
 
-1. Lancez SSMS en tapant **Microsoft SQL Server Management Studio** dans les fenêtres de zone de recherche, puis cliquez sur l’application de bureau.
+1. Démarrez SSMS en tapant **Microsoft SQL Server Management Studio** dans la zone de recherche Windows, puis cliquez sur l'application de bureau.
 
-    ![SQL Server Management Studio](./media/sql-server-linux-develop-use-ssms/ssms.png) 
+    ![SQL Server Management Studio](./media/sql-server-linux-manage-ssms/ssms.png) 
 
 2. Se connecter à votre base de données source dans l’Explorateur d’objets. La base de données source peut être dans Microsoft SQL Server exécuté localement ou dans le cloud, sur Linux, Windows Docker et base de données SQL Azure ou Azure SQL Data Warehouse.
 
@@ -52,9 +49,9 @@ Le *. Fichier BACPAC est créé à l’emplacement que vous avez choisi et vous 
 
 ## <a name="import-a-database-with-ssms"></a>Importer une base de données avec SSMS
 
-1. Lancez SSMS en tapant **Microsoft SQL Server Management Studio** dans les fenêtres de zone de recherche, puis cliquez sur l’application de bureau.
+1. Démarrez SSMS en tapant **Microsoft SQL Server Management Studio** dans la zone de recherche Windows, puis cliquez sur l'application de bureau.
 
-    ![SQL Server Management Studio](./media/sql-server-linux-develop-use-ssms/ssms.png) 
+    ![SQL Server Management Studio](./media/sql-server-linux-manage-ssms/ssms.png) 
 
 2. Se connecter à votre serveur cible dans l’Explorateur d’objets. Le serveur cible peut être en cours d’exécution locale de Microsoft SQL Server ou dans le cloud, sur Linux, Windows Docker et base de données SQL Azure ou Azure SQL Data Warehouse.
 

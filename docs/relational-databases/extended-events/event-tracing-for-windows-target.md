@@ -1,33 +1,29 @@
 ---
-title: "Suivi d’événements pour Windows en cible | Microsoft Docs"
-ms.custom: 
+title: Suivi d’événements pour Windows en cible | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: extended-events
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-- xevents
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: xevents
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - event tracing for windows target
 - ETW target
 - targets [SQL Server extended events], event tracing for windows target
 ms.assetid: ca2bb295-b7f6-49c3-91ed-0ad4c39f89d5
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 74ba5c0435a64cbeb6271967c4ca37c4a5ac1d86
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7f3471f30347decd4a6a7f882aed43c8d1325107
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="event-tracing-for-windows-target"></a>suivi d'événements pour cible Windows
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -85,7 +81,7 @@ ms.lasthandoff: 02/12/2018
     > [!IMPORTANT]  
     >  Le chemin d'accès ne peut pas être modifié une fois la première session démarrée.  
   
--   Les fichiers MOF (Managed Object Format) se trouvent dans le dossier *\<chemin de votre installation>*\Microsoft SQL Server\Shared. Pour plus d'informations, consultez [Format d'objet managé](http://go.microsoft.com/fwlink/?LinkId=92851) sur MSDN.  
+-   Les fichiers MOF (Managed Object Format) se trouvent dans le dossier *\<chemin de votre installation>* \Microsoft SQL Server\Shared. Pour plus d'informations, consultez [Format d'objet managé](http://go.microsoft.com/fwlink/?LinkId=92851) sur MSDN.  
   
 ## <a name="adding-the-target-to-a-session"></a>Ajout de la cible à une session  
  Pour ajouter la cible ETW à une session Événements étendus lorsque vous créez ou modifiez une session d'événements, vous devez inclure l'instruction suivante :  

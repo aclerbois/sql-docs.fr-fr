@@ -1,39 +1,40 @@
 ---
-title: "Supprimer une hiérarchie dérivée (Master Data Services) | Microsoft Docs"
-ms.custom: 
+title: Supprimer une hiérarchie dérivée (Master Data Services) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deleting derived hierarchies [Master Data Services]
 - derived hierarchies, deleting
 ms.assetid: f46d660e-47f2-47ca-9372-1b5931540beb
-caps.latest.revision: 
+caps.latest.revision: 6
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f4709e5044fe7f4a6b9a4c91045e661483481903
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: 31d7deb101769d4892f761dfaf1e1d0b6d36dc2a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="delete-a-derived-hierarchy-master-data-services"></a>Supprimer une hiérarchie dérivée (Master Data Services)
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Dans [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)], supprimez une hiérarchie dérivée lorsque vous êtes sûr de ne plus en avoir besoin.  
   
 > [!NOTE]  
 >  La suppression d'une hiérarchie dérivée n'a aucun effet sur les relations d'attributs sur lesquelles la hiérarchie est basée.  
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Conditions préalables requises  
  Pour effectuer cette procédure :  
   
 -   Vous devez avoir l'autorisation d'accéder à la zone fonctionnelle **Administration de système** .  

@@ -1,16 +1,15 @@
 ---
-title: "États de la mise en miroir (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: États de la mise en miroir (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - states [SQL Server], database mirroring
 - PENDING_FAILOVER state
@@ -21,19 +20,19 @@ helpviewer_keywords:
 - SUSPENDED state
 - database mirroring [SQL Server], states
 ms.assetid: 90062917-74f9-471b-b49e-bc153ae1a468
-caps.latest.revision: "39"
+caps.latest.revision: 39
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 014784893728eb72edd754e270330e287fa8d364
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7be58689ed97e72a9e8f887cb7ac303cd2b20513
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="mirroring-states-sql-server"></a>États de la mise en miroir (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Pendant une session de mise en miroir de bases de données, la base de données mise en miroir est toujours dans un état spécifique (l’*état de la mise en miroir*). L'état de la base de données reflète l'état de communication, le flux de données et les différences dans des données entre les partenaires. Une session de mise en miroir de bases de données adopte le même état que la base de données principale.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Pendant une session de mise en miroir de bases de données, la base de données mise en miroir est toujours dans un état spécifique (l’ *état de la mise en miroir*). L'état de la base de données reflète l'état de communication, le flux de données et les différences dans des données entre les partenaires. Une session de mise en miroir de bases de données adopte le même état que la base de données principale.  
   
  Pendant tout le déroulement d'une session de mise en miroir de bases de données, les instances de serveur s'analysent mutuellement. Les partenaires utilisent l'état de la mise en miroir pour surveiller la base de données. À l'exception de l'état PENDING_FAILOVER, les bases de données principale et miroir sont toujours dans le même état. Si un témoin est défini pour la session, chacun des partenaires surveille le témoin en utilisant son état de connexion (CONNECTED ou DISCONNECTED).  
   

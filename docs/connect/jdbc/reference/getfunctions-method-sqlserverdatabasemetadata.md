@@ -1,27 +1,24 @@
 ---
-title: "Méthode getFunctions (SQLServerDatabaseMetaData) | Documents Microsoft"
-ms.custom: 
+title: Méthode getFunctions (SQLServerDatabaseMetaData) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 44335cbd-c84d-4ef3-a6a1-fca7eb7ec768
-caps.latest.revision: "20"
+caps.latest.revision: 20
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: d09162647b6d5a4076bb60b3bf05e1e90eb27dee
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 7bf039e2104a7ac2fbbcce8a5a9fbd8bade8589d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getfunctions-method-sqlserverdatabasemetadata"></a>Méthode getFunctions (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -38,7 +35,7 @@ public ResultSet getFunctions(java.lang.String catalog,
 ```  
   
 #### <a name="parameters"></a>Paramètres  
- *catalogue*  
+ *catalog*  
   
  Nom d'un catalogue dans la base de données. Si la chaîne est vide « », le résultat inclut les fonctions sans catalogue. S’il s’agit **null**, le nom du catalogue n’est pas utilisé pour la recherche.  
   
@@ -68,13 +65,13 @@ public ResultSet getFunctions(java.lang.String catalog,
   
 |Nom|Type| Description|  
 |----------|----------|-----------------|  
-|FUNCTION_CAT|**Chaîne**|Nom de la base de données qui contient la fonction.|  
-|FUNCTION_SCHEM|**Chaîne**|Nom du schéma qui contient la fonction.|  
-|FUNCTION_NAME|**Chaîne**|Nom de la fonction.|  
+|FUNCTION_CAT|**String**|Nom de la base de données qui contient la fonction.|  
+|FUNCTION_SCHEM|**String**|Nom du schéma qui contient la fonction.|  
+|FUNCTION_NAME|**String**|Nom de la fonction.|  
 |NUM_INPUT_PARAMS|**int**|Réservé pour un usage ultérieur, retourne actuellement la valeur -1.|  
 |NUM_OUTPUT_PARAMS|**int**|Réservé pour un usage ultérieur, retourne actuellement la valeur -1.|  
 |NUM_RESULT_SETS|**int**|Réservé pour un usage ultérieur, retourne actuellement la valeur -1.|  
-|REMARKS|**Chaîne**|Commentaires sur la fonction.|  
+|REMARKS|**String**|Commentaires sur la fonction.|  
 |FUNCTION_TYPE|**courte**|Type de la fonction. Il peut prendre l’une des valeurs suivantes :<br /><br /> SQL_PT_UNKNOWN (0)<br /><br /> SQL_PT_PROCEDURE (1)<br /><br /> SQL_PT_FUNCTION (2)|  
   
  Toutes les descriptions dans le jeu de résultats retourné sont classées par FUNCTION_CAT, FUNCTION_SCHEM, FUNCTION_NAME et SPECIFIC_NAME.  

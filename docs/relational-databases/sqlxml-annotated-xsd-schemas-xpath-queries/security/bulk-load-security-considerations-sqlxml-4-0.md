@@ -1,16 +1,14 @@
 ---
-title: "En bloc charge des considérations de sécurité (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: En bloc charge des considérations de sécurité (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQLXML, XML Bulk Load
@@ -18,20 +16,20 @@ helpviewer_keywords:
 - security [SQLXML], XML Bulk Load
 - XML Bulk Load [SQLXML], security
 ms.assetid: 192fc6d4-ecbc-4a4d-a5cb-55e1f64af318
-caps.latest.revision: 
+caps.latest.revision: 24
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 70249f5b10d684f569f6491be0796d542a6f0bbe
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: dd240ede23b5ff4845531bebf24529bd0219c5ed
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="bulk-load-security-considerations-sqlxml-40"></a>Considérations de sécurité relatives au chargement en masse (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Vous trouverez ci-après des instructions de sécurité relatives au chargement en masse XML :  
+  Vous trouverez ci-après des instructions de sécurité relatives au chargement en masse XML :  
   
 -   Lorsque vous spécifiez que le chargement en masse opération doit être effectuée comme une transaction, vous utilisez la **TempFilePath** propriété pour spécifier un dossier dans lequel créer les fichiers temporaires.  
   
@@ -62,6 +60,6 @@ Vous trouverez ci-après des instructions de sécurité relatives au chargement 
 -   Si l'utilisateur définit un fichier journal des erreurs pour SQLXML, chaque fois que le chargement en masse est exécuté, le fichier est écrasé avec les données du dernier processus de chargement en masse.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Effectuer le chargement en masse des données XML &#40; SQLXML 4.0 &#41;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/bulk-load-xml/performing-bulk-load-of-xml-data-sqlxml-4-0.md)  
+ [Effectuer le chargement en masse des données XML & #40 ; SQLXML 4.0 & #41 ;](../../../relational-databases/sqlxml-annotated-xsd-schemas-xpath-queries/bulk-load-xml/performing-bulk-load-of-xml-data-sqlxml-4-0.md)  
   
   

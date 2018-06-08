@@ -1,31 +1,29 @@
 ---
 title: Ouvrir et fermer un rapport (Gestionnaire de rapports) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: reports
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - opening reports
 - closing reports
 - reports [Reporting Services], opening
 ms.assetid: a9db1caf-1e7d-41ee-9aed-e09fd0712f9b
-caps.latest.revision: "51"
+caps.latest.revision: 51
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 739f52788b8f8d4d47e8aa0a6b20f9479f087e1d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 034e566858cda5fcc150d807d4a74ff3937e16b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="open-and-close-a-report-report-manager"></a>Ouvrir et fermer un rapport (Gestionnaire de rapports)
   Vous pouvez utiliser le Gestionnaire de rapports pour afficher les rapports publiés sur un serveur de rapports. Par défaut, tous les rapports s'ouvrent au format HTML. Une fois qu'un rapport est ouvert, vous pouvez l'exporter pour l'afficher dans d'autres formats d'application. Si le rapport contient des fonctionnalités interactives, ou s'il s'agit d'un rapport du Générateur de rapports qui contient des données interactives, vous pouvez cliquer sur les liens pour afficher des rapports ou des données supplémentaires.  

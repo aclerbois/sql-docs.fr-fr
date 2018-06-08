@@ -1,16 +1,14 @@
 ---
 title: TRY_PARSE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - TRY_PARSE_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - TRY_PARSE function
 ms.assetid: 292bac1d-edd8-468c-8ff1-8c7de625bc55
-caps.latest.revision: 
+caps.latest.revision: 16
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 0b26f46431909dd4fbfaa820db8c3869333f555d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c32fde685ee9806892e59508b13db700d1fd3880
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="tryparse-transact-sql"></a>TRY_PARSE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
@@ -57,7 +54,7 @@ TRY_PARSE ( string_value AS data_type [ USING culture ] )
  *culture*  
  Chaîne facultative qui identifie la culture dans laquelle *string_value* est mise en forme.  
   
- Si l'argument *culture* n'est pas fourni, la langue de la session active est utilisée. Cette langue est définie implicitement, ou explicitement à l'aide de l'instruction SET LANGAGE. *culture* accepte n'importe quelle culture prise en charge par le .NET Framework ; elle n'est pas limitée aux langues explicitement prises en charge par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si l'argument *culture* n'est pas valide, PARSE génère une erreur.  
+ Si l’argument *culture* n’est pas fourni, la langue de la session en cours est utilisée. Cette langue est définie implicitement, ou explicitement à l'aide de l'instruction SET LANGAGE. *culture* accepte n’importe quelle culture prise en charge par le .NET Framework ; elle n’est pas limitée aux langues explicitement prises en charge par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Si l’argument *culture* n’est pas valide, PARSE génère une erreur.  
   
 ## <a name="return-types"></a>Types de retour  
  Retourne le résultat de l'expression, traduit en type de données demandé, ou NULL si la conversion échoue.  

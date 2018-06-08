@@ -1,33 +1,31 @@
 ---
 title: Appels de fonction scalaire | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: escape sequences [ODBC], scalar function calls
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- escape sequences [ODBC], scalar function calls
 ms.assetid: 10cb4dcf-4cd8-4a56-8725-d080bd3ffe47
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4e69cc7382c73aaedda31a902cc8ed8daff5cff8
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ee7070453f7d6303bdaebe15c7bbdd89710d5c28
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="scalar-function-calls"></a>Appels de fonction scalaire
 Fonctions scalaires retournent une valeur pour chaque ligne. Par exemple, la fonction scalaire de valeur absolue prend une colonne numérique en tant qu’argument et retourne la valeur absolue de chaque valeur dans la colonne. Est de la séquence d’échappement pour appeler une fonction scalaire  
   
- **{fn***une fonction scalaire* **}**   
+ **{fn***une fonction scalaire* **}**  
   
  où *une fonction scalaire* est une des fonctions répertoriées dans [annexe e : les fonctions scalaires](../../../odbc/reference/appendixes/appendix-e-scalar-functions.md). Pour plus d’informations sur la séquence d’échappement de fonction scalaire, consultez [scalaire séquence d’échappement de fonction](../../../odbc/reference/appendixes/scalar-function-escape-sequence.md) dans l’annexe c : SQL grammaire.  
   
@@ -47,7 +45,7 @@ SELECT {fn SUBSTRING(Name, 1, CHARINDEX(',', Name) – 1)} FROM Customers
   
  Pour une interopérabilité maximale, les applications doivent utiliser le **convertir** fonction scalaire pour vous assurer que la sortie d’une fonction scalaire est le type requis. Le **convertir** fonction convertit les données à partir d’un type de données SQL pour le type de données SQL spécifié. La syntaxe de la **convertir** fonction  
   
- **CONVERTIR (** *value_exp* **,** *data_type***)**  
+ **CONVERTIR (** *value_exp* **,** *data_type ***)**  
   
  où *value_exp* est un nom de colonne, le résultat d’une autre fonction scalaire ou une valeur littérale, et *data_type* est un mot clé qui correspond à la **#define** nom qui est utilisé par un identificateur de type de données SQL, tel que défini dans [annexe d : les Types de données](../../../odbc/reference/appendixes/appendix-d-data-types.md). Par exemple, l’instruction SQL suivante utilise la **convertir** (fonction) pour vous assurer que la sortie de la **CURDATE** fonction est une date, au lieu d’un horodateur ou des caractères de données :  
   

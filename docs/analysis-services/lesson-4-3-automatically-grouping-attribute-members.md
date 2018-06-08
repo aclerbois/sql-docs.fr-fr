@@ -1,29 +1,19 @@
 ---
-title: "Regroupement automatique des membres d’attribut | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: get-started-article
-applies_to:
-- SQL Server 2016
-ms.assetid: 9fb2cda3-a122-4a4c-82e0-3454865eef04
-caps.latest.revision: 
-author: Minewiskan
+title: Regroupement automatique des membres d’attribut | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: tutorial
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 86d4c1dcc16cc97b04a3c228087a9e9793cc5651
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b36977f4f55049c5e2c34f2f43f405194bac790e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="lesson-4-3---automatically-grouping-attribute-members"></a>Leçon 4-3 - automatiquement les membres d’attribut de regroupement
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -33,10 +23,10 @@ Lorsque vous explorez un cube, vous dimensionnez généralement les membres d'un
 La propriété **DiscretizationMethod** détermine si [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] effectue le regroupement et détermine le type de regroupement effectué. Par défaut, [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] n'effectue aucun regroupement. Lorsque vous activez les regroupements automatiques, vous pouvez autoriser [!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] à déterminer automatiquement la meilleure méthode de regroupement en se basant sur la structure de l'attribut ou bien, vous pouvez choisir l'un des algorithmes de regroupement dans la liste suivante pour spécifier la méthode de regroupement :  
   
 **EqualAreas**  
-[!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] crée des plages de groupes pour que la totalité de la population des membres de dimension soit distribuée de façon égale entre les groupes.  
+[!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] crée des plages de groupes pour que la totalité de la population des membres de dimension soit distribuée de façon égale dans les groupes.  
   
 **Clusters**  
-[!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] crée des groupes en créant des regroupements unidimensionnels sur les valeurs d’entrée en utilisant la méthode de clustering K-Means avec des distributions gaussiennes. Cette option est valide uniquement pour les colonnes numériques.  
+[!INCLUDE[ssASnoversion](../includes/ssasnoversion-md.md)] crée des groupes en créant des clusters unidimensionnels sur les valeurs d'entrée en utilisant la méthode de clustering K-Means avec des distributions gaussiennes. Cette option est valide uniquement pour les colonnes numériques.  
   
 Après avoir spécifié une méthode de regroupement, vous devez spécifier le nombre de groupes, en utilisant la propriété **DiscretizationBucketCount** . Pour plus d’informations, consultez [Regrouper des membres d’un attribut &#40;Discrétisation&#41;](../analysis-services/multidimensional-models/attribute-properties-group-attribute-members.md).  
   
@@ -136,7 +126,7 @@ Au cours des tâches de cette rubrique, vous allez regrouper différents types p
 [Masquage et désactivation des hiérarchies d’attributs](../analysis-services/lesson-4-4-hiding-and-disabling-attribute-hierarchies.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Les membres du groupe attribut &#40; discrétisation &#41;](../analysis-services/multidimensional-models/attribute-properties-group-attribute-members.md)  
+[Les membres du groupe attribut & #40 ; discrétisation & #41 ;](../analysis-services/multidimensional-models/attribute-properties-group-attribute-members.md)  
   
   
   

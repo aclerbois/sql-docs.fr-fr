@@ -1,27 +1,19 @@
 ---
-title: "Fonctionnalités prises en charge par les éditions de SQL Server 2016 Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 06/29/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: multidimensional-tabular
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: f09d7be1-bd63-43f8-b91c-bf19166b4457
-caps.latest.revision: 
-author: Minewiskan
+title: Fonctionnalités prises en charge par les éditions de SQL Server 2016 Analysis Services | Documents Microsoft
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ''
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: 14c64237e32d433592f44fcbd0d56bd661cc4940
-ms.sourcegitcommit: c77a8ac1ab372927c09bf241d486e96881b61ac9
+ms.openlocfilehash: 19618fc0311de28184e3a95c5e57e423d121f085
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/29/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="analysis-services-features-supported-by-sql-server-editions"></a>Fonctionnalités Analysis Services pris en charge par les éditions de SQL Server
 [!INCLUDE[ssas-appliesto-sql2016-later](../includes/ssas-appliesto-sql2016-later.md)]

@@ -1,16 +1,14 @@
 ---
-title: "La bibliothèque de curseurs ODBC | Documents Microsoft"
-ms.custom: 
+title: La bibliothèque de curseurs ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - ODBC cursor library [ODBC], about cursor library
 - ODBC cursor library [ODBC]
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - cursors [ODBC], cursor library
 - block cursors [ODBC]
 ms.assetid: 32fb7df0-953a-4f68-b041-7d2852e45d0f
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 45bce6d2b39ee15bcabd362b0a2fbfba377fe386
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 861b4c98042dc5f7b94e831dc8ed1306ea8b3213
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="the-odbc-cursor-library"></a>La bibliothèque de curseurs ODBC
 > [!IMPORTANT]  

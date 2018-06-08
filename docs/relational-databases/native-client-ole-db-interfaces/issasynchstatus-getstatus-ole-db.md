@@ -1,16 +1,15 @@
 ---
-title: ISSAsynchStatus::GetStatus (OLE DB) | Microsoft Docs
-ms.custom: 
+title: ISSAsynchStatus::GetStatus (OLE DB) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-ole-db-interfaces
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - ISSAsynchStatus::GetStatus (OLE DB)
@@ -18,18 +17,18 @@ apitype: COM
 helpviewer_keywords:
 - GetStatus method
 ms.assetid: 354b6ee4-b5a1-48f6-9403-da3bdc911067
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d1a6d91a0224b53a09dd35e1b8adf0f48c77d578
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 455707070a8ee20fd767a510a255db2bfc87d502
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="issasynchstatusgetstatus-ole-db"></a>ISSAsynchStatus::GetStatus (OLE DB)
+# <a name="issasynchstatusgetstatus-ole-db"></a>ISSAsynchStatus::GetStatus (OLE DB)
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
 [!INCLUDE[SNAC_Deprecated](../../includes/snac-deprecated.md)]
 
@@ -53,7 +52,7 @@ HRESULT GetStatus(
  Handle du chapitre. Lorsque l'objet interrogé n'est pas un objet rowset ou que l'opération ne s'applique pas à un chapitre, vous devez attribuer au handle la valeur DB_NULL_HCHAPTER, celle-ci étant ignorée par le fournisseur.  
   
  *eOperation*[in]  
- L'opération pour laquelle l'état asynchrone est demandé. Elle doit avoir la valeur suivante :  
+ L'opération pour laquelle l'état asynchrone est demandé. Elle doit avoir la valeur suivante :  
   
  DBASYNCHOP_OPEN : le consommateur demande des informations sur l'ouverture ou le remplissage asynchrone d'un ensemble de lignes ou sur l'initialisation asynchrone d'un objet source de données. Si le fournisseur est un fournisseur conforme à OLE DB 2.5 qui prend en charge la liaison d'URL directe, le consommateur demande des informations sur l'initialisation ou le remplissage asynchrone d'une source de données, d'un ensemble de lignes, d'une ligne ou d'un objet de flux.  
   
@@ -122,7 +121,7 @@ HRESULT GetStatus(
   
  En plus des valeurs de retour répertoriées, **ISSAsynchStatus::GetStatus** peut retourner tout HRESULT qui aurait été retourné par la méthode ayant initialisé l'opération asynchrone, indiquant la réussite ou l'échec de l'opération.  
   
- Certaines opérations asynchrones peuvent uniquement être en mesure de retourner des états « fini » et « non fini ». Elles doivent attribuer la valeur 1 à *pulProgressMax* pour indiquer la granularité de leur estimation (tout ou rien). Leurs réponses sont donc 0/1 ou 1/1.  
+ Certaines opérations asynchrones peuvent uniquement être en mesure de retourner des états « fini » et « non fini ». Elles doivent attribuer la valeur 1 à *pulProgressMax* pour indiquer la granularité de leur estimation (tout ou rien). Leurs réponses sont donc 0/1 ou 1/1.  
   
  Un fournisseur peut modifier *pulProgressMax* dans des appels consécutifs, et même retourner un taux inférieur à celui indiqué précédemment, si cela reflète une meilleure estimation du degré d'achèvement de la tâche.  
   
@@ -132,6 +131,6 @@ HRESULT GetStatus(
   
 ## <a name="see-also"></a>Voir aussi  
  [Exécution d’opérations asynchrones](../../relational-databases/native-client/features/performing-asynchronous-operations.md)   
- [ISSAsynchStatus &#40; OLE DB &#41;](../../relational-databases/native-client-ole-db-interfaces/issasynchstatus-ole-db.md)  
+ [ISSAsynchStatus & #40 ; OLE DB & #41 ;](../../relational-databases/native-client-ole-db-interfaces/issasynchstatus-ole-db.md)  
   
   

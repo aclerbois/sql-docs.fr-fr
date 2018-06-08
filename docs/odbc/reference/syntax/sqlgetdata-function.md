@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLGetData | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLGetData
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLGetData
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLGetData
-helpviewer_keywords: SQLGetData function [ODBC]
+f1_keywords:
+- SQLGetData
+helpviewer_keywords:
+- SQLGetData function [ODBC]
 ms.assetid: e3c1356a-5db7-4186-85fd-8b74633317e8
-caps.latest.revision: "46"
+caps.latest.revision: 46
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 0a23ddb9ee932b67bddd35edfcc9d64228b36f18
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: ab603b24536afcbe7304dae907c10ee911d3cfd9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlgetdata-function"></a>Fonction SQLGetData
 **Mise en conformité**  
@@ -97,7 +98,7 @@ SQLRETURN SQLGetData(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLGetData** retourne SQL_ERROR ou SQL_SUCCESS_WITH_INFO, une valeur SQLSTATE associée peut être obtenue en appelant **SQLGetDiagRec** avec un *HandleType* de SQL_HANDLE_STMT et un *gérer* de *au paramètre StatementHandle*. Le tableau suivant répertorie les valeurs SQLSTATE généralement retournées par **SQLGetData** et explique chacune d’elles dans le contexte de cette fonction ; la notation « (DM) » précède les descriptions de SQLSTATE retournée par le Gestionnaire de pilotes. Le code de retour associé à chaque valeur SQLSTATE est SQL_ERROR, sauf indication contraire.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Données de type chaîne, droite tronquées|Toutes les données pour la colonne spécifiée, *Col_or_Param_Num*, pu être récupérées dans un seul appel à la fonction. SQL_NO_TOTAL ou la longueur des données restantes dans la colonne spécifiée avant l’appel à **SQLGetData** est retourné dans \* *StrLen_or_IndPtr*. (La fonction retourne SQL_SUCCESS_WITH_INFO).<br /><br /> Pour plus d’informations sur l’utilisation de plusieurs appels à **SQLGetData** pour une colonne unique, consultez « Commentaires ».|  
@@ -119,10 +120,10 @@ SQLRETURN SQLGetData(
 |HY009|Utilisation non valide d’un pointeur null|(DM) l’argument *TargetValuePtr* était un pointeur null.|  
 |HY010|Erreur de séquence de fonction|(DM) spécifié *au paramètre StatementHandle* n’était pas dans un état d’exécution. La fonction a été appelée sans appeler d’abord **SQLExecDirect**, **SQLExecute** ou une fonction de catalogue.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution a été appelée pour le handle de connexion qui est associé à la *au paramètre StatementHandle*. Cette fonction asynchrone toujours en cours d’exécution lorsque le **SQLGetData** fonction a été appelée.<br /><br /> (DM), une fonction de façon asynchrone en cours d’exécution (pas celui-ci) a été appelée pour le *au paramètre StatementHandle* et toujours en cours d’exécution lorsque cette fonction a été appelée.<br /><br /> (DM) **SQLExecute**, **SQLExecDirect**, **SQLBulkOperations**, ou **SQLSetPos** a été appelé pour le *au paramètre StatementHandle* et retourné SQL_NEED_DATA. Cette fonction a été appelée avant l’envoi de données pour tous les paramètres de data-at-execution ou les colonnes.<br /><br /> (DM) le *au paramètre StatementHandle* était dans un état d’exécution, mais aucun jeu de résultats a été associé à la *au paramètre StatementHandle*.<br /><br /> Un appel à **SQLExeceute**, **SQLExecDirect**, ou **SQLMoreResults** retourné SQL_PARAM_DATA_AVAILABLE, mais **SQLGetData** a été appelé, au lieu de **SQLParamData**.|  
 |HY013|Erreur de gestion de mémoire|L’appel de fonction n’a pas pu être traité, car les objets sous-jacents de la mémoire ne sont pas accessible, éventuellement en raison d’une mémoire insuffisante.|  
-|HY090|Longueur de chaîne ou une mémoire tampon non valide|(DM) la valeur spécifiée pour l’argument *BufferLength* était inférieure à 0.<br /><br /> La valeur spécifiée pour l’argument *BufferLength* était inférieure à 4, le *Col_or_Param_Num* argument a la valeur 0, et le pilote a été un ODBC 2*.x* pilote.|  
+|HY090|Longueur de chaîne ou une mémoire tampon non valide|(DM) la valeur spécifiée pour l’argument *BufferLength* était inférieure à 0.<br /><br /> La valeur spécifiée pour l’argument *BufferLength* était inférieure à 4, le *Col_or_Param_Num* argument a la valeur 0, et le pilote a été un ODBC 2 *.x* pilote.|  
 |HY109|Position du curseur non valide|Le curseur a été positionné (par **SQLSetPos**, **SQLFetch**, **SQLFetchScroll**, ou **SQLBulkOperations**) sur une ligne qui a été supprimée ou ne peut pas être extraites.<br /><br /> Le curseur a été un curseur avant uniquement, et la taille de l’ensemble de lignes est supérieure à un.|  
 |HY117|Connexion est interrompue en raison de l’état de transaction inconnu. Déconnecter uniquement et les fonctions en lecture seule sont autorisées.|(DM) pour plus d’informations sur l’état suspendu, consultez [fonction SQLEndTran](../../../odbc/reference/syntax/sqlendtran-function.md).|  
-|HYC00|Fonctionnalité facultative non implémentée|La source de données ou le pilote ne prend pas en charge l’utilisation de **SQLGetData** avec plusieurs lignes dans **SQLFetchScroll**. Cette description ne s’applique pas aux pilotes qui retournent le masque de bits SQL_GD_BLOCK pour l’option SQL_GETDATA_EXTENSIONS **SQLGetInfo**.<br /><br /> La source de données ou le pilote ne prend pas en charge la conversion spécifiée par la combinaison de la *TargetType* argument et le type de données SQL de la colonne correspondante. Cette erreur s’applique uniquement lorsque le type de données SQL de la colonne a été mappé à un type de données SQL spécifique au pilote.<br /><br /> Le pilote prend en charge uniquement ODBC 2*.x*et l’argument *TargetType* est une des opérations suivantes :<br /><br /> SQL_C_NUMERIC SQL_C_SBIGINT SQL_C_UBIGINT<br /><br /> et les types de données d’intervalle C répertoriés dans [les Types de données C](../../../odbc/reference/appendixes/c-data-types.md) annexe d : Types de données.<br /><br /> Le pilote prend uniquement en charge les versions ODBC avant 3.50 et l’argument *TargetType* a été SQL_C_GUID.|  
+|HYC00|Fonctionnalité facultative non implémentée|La source de données ou le pilote ne prend pas en charge l’utilisation de **SQLGetData** avec plusieurs lignes dans **SQLFetchScroll**. Cette description ne s’applique pas aux pilotes qui retournent le masque de bits SQL_GD_BLOCK pour l’option SQL_GETDATA_EXTENSIONS **SQLGetInfo**.<br /><br /> La source de données ou le pilote ne prend pas en charge la conversion spécifiée par la combinaison de la *TargetType* argument et le type de données SQL de la colonne correspondante. Cette erreur s’applique uniquement lorsque le type de données SQL de la colonne a été mappé à un type de données SQL spécifique au pilote.<br /><br /> Le pilote prend en charge uniquement ODBC 2 *.x*et l’argument *TargetType* est une des opérations suivantes :<br /><br /> SQL_C_NUMERIC SQL_C_SBIGINT SQL_C_UBIGINT<br /><br /> et les types de données d’intervalle C répertoriés dans [les Types de données C](../../../odbc/reference/appendixes/c-data-types.md) annexe d : Types de données.<br /><br /> Le pilote prend uniquement en charge les versions ODBC avant 3.50 et l’argument *TargetType* a été SQL_C_GUID.|  
 |HYT01|Délai de connexion a expiré.|Le délai d’expiration de connexion a expiré avant que la source de données a répondu à la demande. Le délai d’expiration de connexion est défini par le **SQLSetConnectAttr**, SQL_ATTR_CONNECTION_TIMEOUT.|  
 |IM001|Pilote ne prend pas en charge cette fonction|(DM) le pilote correspondant à la *au paramètre StatementHandle* ne prend pas en charge la fonction.|  
 |IM017|L’interrogation est désactivée en mode de notification asynchrone|Chaque fois que le modèle de notification est utilisé, l’interrogation est désactivée.|  
@@ -148,17 +149,17 @@ SQLRETURN SQLGetData(
   
 -   SQL_GD_BOUND. Si cette option est retournée, **SQLGetData** peut être appelée pour les colonnes liées, ainsi que pour les colonnes indépendantes.  
   
- Il existe deux exceptions à ces restrictions et la capacité d’un pilote d’assouplir les. Tout d’abord, **SQLGetData** ne doit jamais être appelée pour un curseur avant uniquement lorsque la taille de l’ensemble de lignes est supérieure à 1. En second lieu, si un pilote prend en charge les signets, il doit toujours prendre en charge la possibilité d’appeler **SQLGetData** pour la colonne 0, même si elle n’autorise pas les applications d’appeler **SQLGetData** pour d’autres colonnes avant la dernière colonne dépendante. (Lorsqu’une application ne fonctionne pas avec une API ODBC 2*.x* pilote, **SQLGetData** retournent avec succès un signet lorsqu’elle est appelée avec *Col_or_Param_Num* égale à 0 après un appel à **SQLFetch**, car **SQLFetch** est mappé par le ODBC 3*.x* du Gestionnaire de pilotes à **SQLExtendedFetch** avec un *FetchOrientation* de SQL_FETCH_NEXT, et **SQLGetData** avec un *Col_or_Param_Num* 0 est mappé par le ODBC 3*.x* du Gestionnaire de pilotes à **SQLGetStmtOption** avec un *fOption* de SQL_GET_BOOKMARK.)  
+ Il existe deux exceptions à ces restrictions et la capacité d’un pilote d’assouplir les. Tout d’abord, **SQLGetData** ne doit jamais être appelée pour un curseur avant uniquement lorsque la taille de l’ensemble de lignes est supérieure à 1. En second lieu, si un pilote prend en charge les signets, il doit toujours prendre en charge la possibilité d’appeler **SQLGetData** pour la colonne 0, même si elle n’autorise pas les applications d’appeler **SQLGetData** pour d’autres colonnes avant la dernière colonne dépendante. (Lorsqu’une application ne fonctionne pas avec une API ODBC 2 *.x* pilote, **SQLGetData** retournent avec succès un signet lorsqu’elle est appelée avec *Col_or_Param_Num* égale à 0 après un appel à **SQLFetch**, car **SQLFetch** est mappé par le ODBC 3 *.x* du Gestionnaire de pilotes à **SQLExtendedFetch** avec un *FetchOrientation* de SQL_FETCH_NEXT, et **SQLGetData** avec un *Col_or_Param_Num* 0 est mappé par le ODBC 3 *.x* du Gestionnaire de pilotes à **SQLGetStmtOption** avec un *fOption* de SQL_GET_BOOKMARK.)  
   
  **SQLGetData** ne peut pas être utilisé pour récupérer le signet pour une ligne qui vient d’être inséré en appelant **SQLBulkOperations** avec l’option SQL_ADD, étant donné que le curseur n’est pas positionné sur la ligne. Une application peut récupérer le signet pour une ligne en liant la colonne 0 avant d’appeler **SQLBulkOperations** avec SQL_ADD, auquel cas **SQLBulkOperations** renvoie le signet dans la mémoire tampon liée. **SQLFetchScroll** peut ensuite être appelée avec SQL_FETCH_BOOKMARK pour repositionner le curseur sur cette ligne.  
   
  Si le *TargetType* argument est un type de données d’intervalle, l’intervalle par défaut de début précision (2) et la précision de secondes de l’intervalle par défaut (6), comme défini dans les champs SQL_DESC_DATETIME_INTERVAL_PRECISION et SQL_DESC_PRECISION de la ARD, respectivement, sont utilisés pour les données. Si le *TargetType* argument est un type de données SQL_C_NUMERIC, la précision par défaut (définies par le pilote) et par défaut de l’échelle (0), comme défini dans les champs SQL_DESC_PRECISION et SQL_DESC_SCALE de la ARD, sont utilisé pour les données. Si l’échelle ni précision par défaut ne c'est-à-dire pas, l’application doit définir explicitement le champ de descripteur approprié par un appel à **SQLSetDescField** ou **SQLSetDescRec**. Il peut définir le champ SQL_DESC_CONCISE_TYPE à SQL_C_NUMERIC et appelez **SQLGetData** avec un *TargetType* argument de SQL_ARD_TYPE, ce qui provoque les valeurs de précision et l’échelle dans les champs de descripteur à utiliser.  
   
 > [!NOTE]  
->  Dans ODBC 2*.x*, ensemble d’applications *TargetType* SQL_C_DATE, SQL_C_TIME ou SQL_C_TIMESTAMP pour indiquer que \* *TargetValuePtr* est une structure de date, heure ou timestamp. Dans ODBC 3*.x*, ensemble d’applications *TargetType* SQL_C_TYPE_DATE, SQL_C_TYPE_TIME ou SQL_C_TYPE_TIMESTAMP. Le Gestionnaire de pilotes rend les mappages appropriés si nécessaire, en fonction de la version de l’application et le pilote.  
+>  Dans ODBC 2 *.x*, ensemble d’applications *TargetType* SQL_C_DATE, SQL_C_TIME ou SQL_C_TIMESTAMP pour indiquer que \* *TargetValuePtr* est une structure de date, heure ou timestamp. Dans ODBC 3 *.x*, ensemble d’applications *TargetType* SQL_C_TYPE_DATE, SQL_C_TYPE_TIME ou SQL_C_TYPE_TIMESTAMP. Le Gestionnaire de pilotes rend les mappages appropriés si nécessaire, en fonction de la version de l’application et le pilote.  
   
 ## <a name="retrieving-variable-length-data-in-parts"></a>La récupération des données de longueur Variable dans les parties  
- **SQLGetData** peut être utilisé pour récupérer des données d’une colonne qui contient les données de longueur variable dans les parties, autrement dit, lorsque l’identificateur du type de données SQL de la colonne est SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR, SQL_WCHAR, SQL_WVARCHAR, SQL_WLONGVARCHAR, SQL_BINARY, SQL_VARBINARY, SQL_LONGVARBINARY ou un identificateur spécifique du pilote pour un type de longueur variable.  
+ **SQLGetData** peut être utilisé pour récupérer des données d’une colonne qui contient les données de longueur variable dans les parties, autrement dit, lorsque l’identificateur du type de données SQL de la colonne est SQL_CHAR, SQL_VARCHAR, SQL_LONGVARCHAR, SQL_WCHAR, SQL_WVARCHAR, SQL_ WLONGVARCHAR, SQL_BINARY, SQL_VARBINARY, SQL_LONGVARBINARY ou un identificateur spécifique du pilote pour un type de longueur variable.  
   
  Pour récupérer des données à partir d’une colonne dans les parties, l’application appelle **SQLGetData** plusieurs fois de suite pour la même colonne. À chaque appel, **SQLGetData** retourne la partie suivante de données. C’est à l’application pour réassembler les parties, en prenant soin de supprimer le caractère de fin de la valeur null à partir des parties intermédiaires des données de caractères. S’il existe plus de données à retourner ou non de mémoire tampon insuffisante a été alloué pour le caractère de fin, **SQLGetData** retourne SQL_SUCCESS_WITH_INFO et SQLSTATE 01004 (données tronquées). Lorsqu’elle retourne la dernière partie des données, **SQLGetData** retourne SQL_SUCCESS. Ni SQL_NO_TOTAL ni zéro peut être renvoyé sur le dernier appel valid pour récupérer des données à partir d’une colonne, parce que l’application puis n’aurait aucun moyen de connaître la quantité des données dans la mémoire tampon d’application est valide. Si **SQLGetData** est appelée après cela, il retourne SQL_NO_DATA. Pour plus d’informations, consultez la section suivante, « Récupération des données avec SQLGetData ».  
   

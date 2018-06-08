@@ -1,16 +1,14 @@
 ---
-title: trace_xe_action_map (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: nécessaires (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - trace_xe_action_map_TSQL
@@ -21,16 +19,15 @@ helpviewer_keywords:
 - extended events [SQL Server], tables
 - trace_xe_action_map
 ms.assetid: 208a1413-ce7f-4521-b765-d74723627302
-caps.latest.revision: 
+caps.latest.revision: 11
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: eb400cc72fbe965575b42355f407d35c260d58e9
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 29fba0bc16dc42798ecd37d234dd79e30e9db856
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="extended-events-tables---tracexeactionmap"></a>Étendue des Tables des événements - nécessaires
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]

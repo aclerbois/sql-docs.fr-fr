@@ -1,27 +1,24 @@
 ---
-title: "Méthode getNCharacterStream (SQLServerCallableStatement) | Documents Microsoft"
-ms.custom: 
+title: Méthode getNCharacterStream (SQLServerCallableStatement) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: e4f1e99c-4c7a-4c83-b202-4608538ab50b
-caps.latest.revision: "10"
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: e204a6db46e6851568c7144e1e24ec3a7b607eac
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c5f7df2662eb0783dbe670bb7496912061b4441a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="getncharacterstream-method-sqlservercallablestatement"></a>Méthode getNCharacterStream (SQLServerCallableStatement)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -32,8 +29,8 @@ ms.lasthandoff: 11/18/2017
   
 |Nom| Description|  
 |----------|-----------------|  
-|[Méthode getNCharacterStream &#40; int &#41;](../../../connect/jdbc/reference/getncharacterstream-method-int.md)|Récupère la valeur du paramètre désigné en tant qu'objet java.io.Reader en fonction de l'index de paramètre.|  
-|[Méthode getNCharacterStream &#40;java.lang.String &#41;](../../../connect/jdbc/reference/getncharacterstream-method-java-lang-string.md)|Récupère la valeur du paramètre désigné en tant qu'objet java.io.Reader en fonction du nom du paramètre.|  
+|[Méthode getNCharacterStream &#40;int&#41;](../../../connect/jdbc/reference/getncharacterstream-method-int.md)|Récupère la valeur du paramètre désigné en tant qu'objet java.io.Reader en fonction de l'index de paramètre.|  
+|[Méthode getNCharacterStream &#40;java.lang.String&#41;](../../../connect/jdbc/reference/getncharacterstream-method-java-lang-string.md)|Récupère la valeur du paramètre désigné en tant qu'objet java.io.Reader en fonction du nom du paramètre.|  
   
 ## <a name="see-also"></a>Voir aussi  
  [Membres de SQLServerCallableStatement](../../../connect/jdbc/reference/sqlservercallablestatement-members.md)   

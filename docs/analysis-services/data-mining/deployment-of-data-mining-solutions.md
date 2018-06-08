@@ -1,37 +1,23 @@
 ---
-title: "Déploiement de Solutions d’exploration de données | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- mining models [Analysis Services], deploying
-- deploying [Analysis Services], production environments
-- deploying [Analysis Services - data mining]
-- solutions [Analysis Services], deploying
-- models [Analysis Services], data mining
-ms.assetid: d83effc7-437d-42e9-8ac3-b65f79e27043
-caps.latest.revision: 
-author: Minewiskan
+title: Déploiement de Solutions d’exploration de données | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: bfbfd44f7acd1b029d0b841ef2e291e5b26b6c07
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: b42d01b097483d9088bd76257cd30ac37158f889
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deployment-of-data-mining-solutions"></a>Déploiement de solutions d'exploration de données
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-La dernière étape du processus d'exploration de données consiste à déployer les modèles dans un environnement de production. Le déploiement est important car il met les modèles à la disposition des utilisateurs afin de vous permettre d'effectuer n'importe laquelle des tâches suivantes :  
+  La dernière étape du processus d'exploration de données consiste à déployer les modèles dans un environnement de production. Le déploiement est important car il met les modèles à la disposition des utilisateurs afin de vous permettre d'effectuer n'importe laquelle des tâches suivantes :  
   
 -   Utiliser les modèles pour créer des prédictions et prendre des décisions d'entreprise. Pour plus d’informations sur les outils que vous pouvez utiliser pour créer des requêtes, consultez [Outils de requête d’exploration de données](../../analysis-services/data-mining/data-mining-query-tools.md).  
   
@@ -84,13 +70,13 @@ La dernière étape du processus d'exploration de données consiste à déployer
   
  Lorsque des modèles utilisent un cube comme source de données, reportez-vous à cette rubrique pour plus d'informations sur le déplacement de modèles et de leurs données de cube de prise en charge.  
   
- [Déployer des projets Analysis Services &#40; SSDT &#41;](../../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md)  
+ [Déployer des projets Analysis Services & #40 ; SSDT & #41 ;](../../analysis-services/multidimensional-models/deploy-analysis-services-projects-ssdt.md)  
   
  Fournit des informations générales sur le déploiement de projets [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] , et décrit les propriétés que vous pouvez définir dans le cadre de la configuration du projet.  
   
 ## <a name="see-also"></a>Voir aussi  
  [Traitement d’un modèle multidimensionnel &#40;Analysis Services&#41;](../../analysis-services/multidimensional-models/processing-a-multidimensional-model-analysis-services.md)   
  [Outils de requête d'exploration de données](../../analysis-services/data-mining/data-mining-query-tools.md)   
- [Le traitement de la configuration requise et considérations relatives à la &#40; exploration de données &#41;](../../analysis-services/data-mining/processing-requirements-and-considerations-data-mining.md)  
+ [Le traitement de la configuration requise et considérations relatives à la & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/processing-requirements-and-considerations-data-mining.md)  
   
   

@@ -1,27 +1,24 @@
 ---
-title: "Écran 1 (le pilote ODBC pour SQL Server) de l’Assistant Source de données | Documents Microsoft"
-ms.custom: 
+title: Écran 1 (le pilote ODBC pour SQL Server) de l’Assistant Source de données | Documents Microsoft
+ms.custom: ''
 ms.date: 09/27/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 76326eeb-1144-4b9f-85db-50524c655d30
-caps.latest.revision: "22"
+caps.latest.revision: 22
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 83474fa2c3acef62e015c62abff7ed17445a0389
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: d97cbdf8e73254b790ff0c8f965fa8b6d647951a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-source-wizard-screen-1"></a>1 de l’écran de l’Assistant Source de données
 

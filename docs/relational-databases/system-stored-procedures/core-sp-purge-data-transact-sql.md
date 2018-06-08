@@ -1,16 +1,14 @@
 ---
-title: core.sp_purge_data (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Core.sp_purge_data (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_purge_data_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - core.sp_purge_data stored procedure
 - data collector [SQL Server], stored procedures
 ms.assetid: 056076c3-8adf-4f51-8a1b-ca39696ac390
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: fb74c4993f7a7d013e56061e3a572052c2939a99
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 002ba9d499039651eecdd2d05c92cda63c9dab62
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="coresppurgedata-transact-sql"></a>core.sp_purge_data (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,10 +58,10 @@ core.sp_purge_data
   
  *nom_instance* doit être le nom d’instance complet, constitué du nom de l’ordinateur et le nom d’instance sous la forme *Nom_Ordinateur*\\*instancename*. Lorsque la valeur est NULL, l'instance par défaut sur le serveur local est utilisée.  
   
- [@collection_set_uid = ] '*collection_set_uid*'  
+ [@collection_set_uid =] '*collection_set_uid*'  
  GUID du jeu d'éléments de collecte. *collection_set_uid* est **uniqueidentifier**, avec NULL comme valeur par défaut. Lorsque la valeur est NULL, les lignes éligibles de tous les jeux d'éléments de collecte sont supprimées. Pour obtenir cette valeur, interrogez l'affichage catalogue syscollector_collection_sets.  
   
- [@duration = ] *duration*  
+ [@duration =] *durée*  
  Nombre maximal de minutes pendant lesquelles l'opération de vidage doit s'exécuter. *durée* est **smallint**, avec NULL comme valeur par défaut. Si elle est spécifiée, la valeur doit être zéro ou un entier positif. Lorsque NULL, l'opération s'exécute jusqu'à ce que toutes les lignes éligibles soient supprimées ou que l'opération soit arrêtée manuellement.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

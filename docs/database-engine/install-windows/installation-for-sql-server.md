@@ -1,17 +1,13 @@
 ---
 title: Installation de SQL Server | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 09/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.portal.Installation.f1
 helpviewer_keywords:
@@ -19,15 +15,16 @@ helpviewer_keywords:
 - installation [SQL Server]
 - initial installation [SQL Server]
 ms.assetid: edd75f68-dc62-4479-a596-57ce8ad632e5
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 34
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 8fe0874d637f1597814bf14c8d12d111ece4cee1
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 781bebda84fe0d4e48414fb327e45fe837ed9356
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771535"
 ---
 # <a name="sql-server-installation"></a>Installation de SQL Server
 

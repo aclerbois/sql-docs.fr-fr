@@ -1,30 +1,28 @@
 ---
 title: FINDSTRING (expression SSIS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FINDSTRING function
 ms.assetid: c83cb1b1-3c52-4496-b518-4c9253b9336d
-caps.latest.revision: 
+caps.latest.revision: 41
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: c2787fdb4663ea8c1495a811b44f878b896498eb
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 9db74ac092eb46c359ed390cab9edc299a2dac0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="findstring-ssis-expression"></a>FINDSTRING (expression SSIS)
   Renvoie l'emplacement de l'occurrence spécifiée d'une chaîne dans une expression de caractères. Le résultat obtenu est l'index de base un de l'occurrence. Le paramètre de chaîne doit s'évaluer à une expression de caractères et le paramètre de l'occurrence doit s'évaluer à un entier. Si la chaîne est introuvable, la valeur retournée est 0. Si la chaîne se produit moins souvent que l'argument de l'occurrence ne le spécifie, la valeur retournée est 0.  
@@ -71,10 +69,10 @@ FINDSTRING("New York, NY, NY", "NY", 1)
 FINDSTRING("New York, NY, NY", "NY", 3)   
 ```  
   
- L'exemple suivant utilise la colonne **Name** . Il renvoie l'emplacement de la valeur « n » dans la colonne **Name** . Le résultat obtenu varie en fonction de la valeur de la colonne **Name**. Si **Name** contient Anderson, la fonction retourne 8.  
+ L'exemple suivant utilise la colonne **Name** . Il retourne l’emplacement du deuxième « n » dans la colonne **Name**. Le résultat obtenu varie en fonction de la valeur de la colonne **Name**. Si **Name** contient Anderson, la fonction retourne 8.  
   
 ```  
-FINDSTRING(Name,"n", 2)   
+FINDSTRING(Name, "n", 2)   
 ```  
   
  L'exemple suivant utilise les colonnes **Name** et **Size** . Il renvoie l'emplacement du caractère situé à l'extrême gauche de la valeur **Size** de la colonne **Name** . Le résultat obtenu dépend des valeurs de la colonne. Si la colonne **Name** contient « Mountain,500Red,42 » et que la colonne **Size** contient « 42 », le résultat obtenu est 17.  

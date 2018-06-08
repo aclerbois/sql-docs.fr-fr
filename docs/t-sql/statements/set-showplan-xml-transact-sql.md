@@ -1,16 +1,14 @@
 ---
 title: SET SHOWPLAN_XML (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 02/22/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - SET SHOWPLAN_XML
@@ -26,16 +24,16 @@ helpviewer_keywords:
 - SHOWPLAN_XML option
 - estimated execution information [SQL Server]
 ms.assetid: a467a1b3-10a5-43c4-9085-13d8aed549c9
-caps.latest.revision: 
+caps.latest.revision: 48
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 80a04971bb82b1d4857eb08e7ff65083855ed7b3
-ms.sourcegitcommit: a8311ec5ad8313e85e6989f70c5ff9ef120821d6
+monikerRange: = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 80769eef5672b935c435143d83c418d79863fcce
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-showplanxml-transact-sql"></a>SET SHOWPLAN_XML (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-asdw-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-asdw-xxx-md.md)]
@@ -72,7 +70,7 @@ SET SHOWPLAN_XML { ON | OFF }
  Le schéma Showplan est aussi disponible sur ce [site web](http://go.microsoft.com/fwlink/?linkid=43100&clcid=0x409).  
   
 > [!NOTE]  
->  Si l’option **Inclure le plan d’exécution réel** est sélectionnée dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], cette option SET ne produit pas de sortie Showplan XML. Désactivez l’option **Inclure le plan d’exécution réel** avant d’utiliser l’option SET.  
+>  Si l’option **Inclure le plan d’exécution réel** est sélectionnée dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], cette option SET ne produit aucune sortie de la représentation au format XML. Désactivez l’option **Inclure le plan d’exécution réel** avant d’utiliser l’option SET.  
   
 ## <a name="permissions"></a>Autorisations  
  Pour utiliser SET SHOWPLAN_XML, vous devez disposer des autorisations suffisantes pour exécuter les instructions sur lesquelles SET SHOWPLAN_XML est exécuté, ainsi que de l'autorisation SHOWPLAN pour toutes les bases de données contenant les objets auxquels elles font référence.  

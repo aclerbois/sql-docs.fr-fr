@@ -1,16 +1,14 @@
 ---
 title: sp_helprotect (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_helprotect
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_helprotect
 ms.assetid: faaa3e40-1c95-43c2-9fdc-c61a1d3cc0c3
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 7c254488d42940c2f88b395082db1cd0079f79f3
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 6ec420b58bf179d607326164a56ce8c257ba6725
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelprotect-transact-sql"></a>sp_helprotect (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -55,7 +52,7 @@ sp_helprotect [ [ @name = ] 'object_statement' ]
   
 ## <a name="arguments"></a>Arguments  
  [  **@name =** ] **'***object_statement***'**  
- Nom de l'objet dans la base de données active, ou instruction, disposant des autorisations à signaler. *object_statement* est **nvarchar(776)**, avec NULL comme valeur par défaut, qui retourne toutes les autorisations d’objet et d’instruction. Si sa valeur est un objet (table, vue, procédure stockée ou procédure stockée étendue), ce doit être un objet valide dans la base de données en cours. Le nom d’objet peut inclure un identificateur de propriétaire sous la forme *propriétaire***.** *objet*.  
+ Nom de l'objet dans la base de données active, ou instruction, disposant des autorisations à signaler. *object_statement* est **nvarchar(776)**, avec NULL comme valeur par défaut, qui retourne toutes les autorisations d’objet et d’instruction. Si sa valeur est un objet (table, vue, procédure stockée ou procédure stockée étendue), ce doit être un objet valide dans la base de données en cours. Le nom d’objet peut inclure un identificateur de propriétaire sous la forme *propriétaire ***.*** objet*.  
   
  Si *object_statement* est une instruction, il peut être une instruction CREATE.  
   
@@ -77,10 +74,10 @@ sp_helprotect [ [ @name = ] 'object_statement' ]
 |-----------------|---------------|-----------------|  
 |**Propriétaire**|**sysname**|Nom du propriétaire de l’objet.|  
 |**Objet**|**sysname**|Nom de l'objet.|  
-|**Bénéficiaire**|**sysname**|Nom du principal auquel des autorisations sont accordées.|  
+|**bénéficiaire**|**sysname**|Nom du principal auquel des autorisations sont accordées.|  
 |**Fournisseur d'autorisations**|**sysname**|Nom du principal qui a accordé des autorisations au bénéficiaire spécifié.|  
-|**ProtectType**|**nvarchar (10)**|Nom du type de protection :<br /><br /> GRANT REVOKE|  
-|**Action**|**nvarchar (60)**|Nom de l’autorisation. Les instructions valides d'autorisation varient selon le type d'objet.|  
+|**ProtectType**|**nvarchar(10)**|Nom du type de protection :<br /><br /> GRANT REVOKE|  
+|**Action**|**nvarchar(60)**|Nom de l’autorisation. Les instructions valides d'autorisation varient selon le type d'objet.|  
 |**Colonne**|**sysname**|Type d'autorisation :<br /><br /> All = l'autorisation couvre toutes les colonnes en cours de l'objet.<br /><br /> New = l'autorisation couvre toutes les nouvelles colonnes susceptibles d'être modifiées (à l'aide de l'instruction ALTER) pour l'objet ultérieurement.<br /><br /> All+New = combinaison de All et New.<br /><br /> Retourne un point si le type d'autorisation ne s'applique pas aux colonnes.|  
   
 ## <a name="remarks"></a>Notes  
@@ -92,7 +89,7 @@ sp_helprotect [ [ @name = ] 'object_statement' ]
 EXEC sp_helprotect NULL, NULL, dbo;  
 ```  
   
- Ou  
+ ou  
   
 ```  
 EXEC sp_helprotect @grantorname = 'dbo';  
@@ -100,7 +97,7 @@ EXEC sp_helprotect @grantorname = 'dbo';
   
  Le rapport de sortie est trié par catégorie d'autorisation, propriétaire, objet, bénéficiaire, fournisseur, catégorie du type de protection, type de protection, action et ID séquentiel de colonne.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle **public** .  
   
  Les informations retournées sont sujettes à des restrictions d'accès aux métadonnées. Les entités sur lesquelles le principal ne possède pas d'autorisation n'apparaissent pas. Pour plus d'informations, consultez [Metadata Visibility Configuration](../../relational-databases/security/metadata-visibility-configuration.md).  
@@ -143,7 +140,7 @@ EXEC sp_helprotect @name = 'CREATE TABLE';
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Sécurité stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
+ [Procédures stockées de sécurité &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/security-stored-procedures-transact-sql.md)   
  [DENY &#40;Transact-SQL&#41;](../../t-sql/statements/deny-transact-sql.md)   
  [GRANT &#40;Transact-SQL&#41;](../../t-sql/statements/grant-transact-sql.md)   
  [REVOKE &#40;Transact-SQL&#41;](../../t-sql/statements/revoke-transact-sql.md)   

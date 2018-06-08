@@ -1,34 +1,25 @@
 ---
-title: "Règles d’affectation de noms (Analysis Services) de l’objet | Documents Microsoft"
-ms.custom: 
-ms.date: 03/03/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to: SQL Server 2016 Preview
-helpviewer_keywords: objects [Analysis Services], naming
-ms.assetid: b338a60d-4802-4b68-862a-6dc6a3f75e48
-caps.latest.revision: "13"
-author: Minewiskan
+title: Règles d’affectation de noms (Analysis Services) de l’objet | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9b489ecceb4d8aeb5716708ae680999a296b5d14
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 0200c7bedb0d0dd7dd990ef8cbe9ed2114978b8d
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="object-naming-rules-analysis-services"></a>Règles d'attribution de noms aux objets (Analysis Services)
-[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]Cette rubrique décrit les conventions d’affectation de noms d’objet, ainsi que les mots réservés et des caractères qui ne peut pas être utilisés dans un nom d’objet, dans le code ou de script dans [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
+[!INCLUDE[ssas-appliesto-sqlas](../../../includes/ssas-appliesto-sqlas.md)]
+  Cette rubrique décrit les conventions d'affectation des noms d'objet et les mots et caractères réservés qui ne peuvent être utilisés dans aucun nom d'objet, dans le code ni dans le script, dans [!INCLUDE[ssASnoversion](../../../includes/ssasnoversion-md.md)].  
   
-##  <a name="bkmk_Names"></a>Conventions d’affectation de noms  
+##  <a name="bkmk_Names"></a> Conventions d’affectation de noms  
  Chaque objet possède une propriété **Name** et une propriété **ID** qui doivent être uniques dans l'étendue de la collection parente. Par exemple, deux dimensions peuvent porter le même nom dans la mesure où chacune réside dans une base de données différente.  
   
  Bien que vous puissiez le spécifier manuellement, l' **ID** est en principe généré automatiquement lorsque l'objet est créé. Vous ne devez jamais modifier l' **ID** une fois que vous avez démarré la création d'un modèle. Toutes les références d'objet d'un modèle sont basées sur l' **ID**. Par conséquent, modifier un **ID** peut facilement provoquer une altération du modèle.  
@@ -45,7 +36,7 @@ ms.lasthandoff: 01/08/2018
   
 -   Il n'y a aucune spécification spéciale pour le premier caractère d'un identificateur. Le premier caractère peut être tout caractère valide.  
   
-##  <a name="bkmk_reserved"></a>Mots et caractères réservés  
+##  <a name="bkmk_reserved"></a> Mots et caractères réservés  
  Les mots réservés sont en anglais et s'appliquent aux noms d'objet, pas aux légendes. Si vous utilisez accidentellement un mot réservé dans un nom d'objet, une erreur de validation se produit. Pour les modèles d'exploration de données et multidimensionnels, les mots réservés décrits ci-dessous ne peuvent jamais être utilisés dans un nom d'objet.  
   
  Pour les modèles tabulaires, où la compatibilité de la base de données est définie sur 1103, les règles de validation ont été assouplies pour certains objets et ne sont pas conformes aux critères de caractères étendus et de conventions d'attribution de noms de certaines applications clientes. Les bases de données qui répondent à ces critères sont soumises à des règles de validation moins rigoureuses. Dans ce cas, un nom d'objet peut éventuellement inclure un caractère restreint et néanmoins être validé.  
@@ -75,10 +66,10 @@ ms.lasthandoff: 01/08/2018
 |Objet|Caractères non valides|  
 |------------|------------------------|  
 |**Server**|Suivez les conventions d'attribution des noms de serveur Windows lorsque vous nommez un objet serveur. Pour plus d'informations, consultez [Conventions d'attribution des noms (Windows)](http://msdn.microsoft.com/library/windows/desktop/ms682856\(v=vs.85\).aspx) .|  
-|**DataSource**|: / \ * &#124; ? " () [] {} <>|  
+|**DataSource**|: / \ * &#124; ? « [] de () {} <>|  
 |**Level** ou **Attribute**|. , ; ' ` : / \ * &#124; ? " & % $ ! + = [] {} < >|  
-|**Dimension** ou **Hierarchy**|. , ; ' ` : / \ * &#124; ? " & % $ ! + = () [] {} \<,>|  
-|Tous les autres objets|. , ; ' ` : / \ * &#124; ? " & % $ ! + = () [] {} < >|  
+|**Dimension** ou **Hierarchy**|. , ; ' ` : / \ * &#124; ? " & % $ ! + = [] de () {} \<, >|  
+|Tous les autres objets|. , ; ' ` : / \ * &#124; ? " & % $ ! + = [] de () {} < >|  
   
  **Exceptions : Lorsque les caractères réservés sont autorisés**  
   
@@ -96,6 +87,6 @@ ms.lasthandoff: 01/08/2018
 ## <a name="see-also"></a>Voir aussi  
  [Mots réservés MDX](../../../mdx/mdx-reserved-words.md)   
  [Prise en charge de la traduction dans Analysis Services](../../../analysis-services/translation-support-in-analysis-services.md)   
- [XML for Analysis conformité &#40; XMLA &#41;](../../../analysis-services/xmla/xml-for-analysis-compliance-xmla.md)  
+ [Conformité XML for Analysis &#40;XMLA&#41;](../../../analysis-services/xmla/xml-for-analysis-compliance-xmla.md)  
   
   

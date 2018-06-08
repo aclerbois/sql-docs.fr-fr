@@ -1,33 +1,19 @@
 ---
-title: "La récupération des données à l’aide d’AdomdDataReader | Documents Microsoft"
-ms.custom: 
-ms.date: 02/14/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- retrieving data
-- AdomdDataReader object
-- data retrieval [ADOMD.NET], AdomdDataReader object
-ms.assetid: 8ed7ea26-b5f8-4852-80fc-75dd62df5b3a
-caps.latest.revision: 
-author: Minewiskan
+title: La récupération des données à l’aide d’AdomdDataReader | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: adomd
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3e536803b34715bdfc4beb87de40cda0380a589e
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 7f3035799df52ec4c4dbd44225247638b92048c0
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="retrieving-data-using-the-adomddatareader"></a>Récupération de données à l'aide d'AdomdDataReader
   Lorsqu'il s'agit de récupérer des données analytiques, l'objet <xref:Microsoft.AnalysisServices.AdomdClient.AdomdDataReader> offre un bon compromis entre charge et interactivité. L'objet <xref:Microsoft.AnalysisServices.AdomdClient.AdomdDataReader> récupère un flux de données aplati, avant uniquement et en lecture seule auprès d'une source de données analytiques. Ce flux de données, qui n'est pas mis en mémoire tampon, permet à la logique procédurale de traiter de façon séquentielle et efficace les résultats d'une source de données analytiques. Le choix de l'objet <xref:Microsoft.AnalysisServices.AdomdClient.AdomdDataReader> s'avère judicieux lorsqu'il s'agit de récupérer de grandes quantités de données en vue de les afficher, car les données ne sont pas placées en mémoire cache.  

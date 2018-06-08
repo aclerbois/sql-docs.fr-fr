@@ -1,31 +1,28 @@
 ---
-title: "Séquences d’échappement dans ODBC | Documents Microsoft"
-ms.custom: 
+title: Séquences d’échappement dans ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - escape sequences [ODBC]
 - SQL statements [ODBC], escape sequences
 - escape sequences [ODBC], about escape sequences
 ms.assetid: cf229f21-6c38-4b5b-aca8-f1be0dfeb3d0
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 72884da8498b5e0ccb3533c353e676dee2517795
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: f2a62b9712801d2412385cc191b0649bae69be74
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="escape-sequences-in-odbc"></a>Séquences d’échappement dans ODBC
 Un nombre de fonctionnalités de langage, telles que les jointures externes et des appels de fonction scalaire, est généralement implémenté par le SGBD. Toutefois, les syntaxes pour ces fonctionnalités sont susceptibles d’être propres au SGBD, même lorsque les syntaxes standards sont définis par les organismes de normalisation différents. Pour cette raison, ODBC définit des séquences d’échappement qui contiennent des syntaxes standards pour les fonctionnalités de langage suivantes :  
@@ -48,11 +45,11 @@ Un nombre de fonctionnalités de langage, telles que les jointures externes et d
   
 ```  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La séquence d’échappement est reconnue et analysée par les pilotes qui remplacent les séquences d’échappement avec la grammaire des SGBD spécifiques. Pour plus d’informations sur la syntaxe de séquence d’échappement, consultez [séquences d’échappement ODBC](../../../odbc/reference/appendixes/odbc-escape-sequences.md) dans l’annexe c : SQL grammaire.  
   
 > [!NOTE]  
->  Dans ODBC 2. *x*, il s’agit de la syntaxe standard de la séquence d’échappement : **--(\*fournisseur (***-nom du fournisseur***), produit (***-nom du produit***)***extension*  **\*) :**  
+>  Dans ODBC 2. *x*, il s’agit de la syntaxe standard de la séquence d’échappement : **--(\*fournisseur (***-nom du fournisseur***), produit (***-nom du produit***) *** extension*  **\*)--**  
 >   
 >  En plus de cette syntaxe, une syntaxe sténographique a été définie sous la forme : **{***extension***}**  
 >   

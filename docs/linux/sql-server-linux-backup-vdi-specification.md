@@ -1,25 +1,22 @@
 ---
-title: "Spécification de sauvegarde VDI - SQL Server sur Linux | Documents Microsoft"
-description: "Spécification d’Interface de périphérique virtuel sauvegarde SQL Server."
+title: Spécification de sauvegarde VDI - SQL Server sur Linux | Documents Microsoft
+description: Spécification d’Interface de périphérique virtuel sauvegarde SQL Server.
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
 ms.date: 03/17/2017
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.technology: linux
 ms.assetid: 0250ba2b-8cdd-450e-9109-bf74f70e1247
-ms.workload: Inactive
-ms.openlocfilehash: 9760b93a1e224c35617b4161d8996ff0ed3dff67
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: 1dab0dcc403a7e0f85cd78e69e9461ef0d566b0c
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sql-server-on-linux-vdi-client-sdk-specification"></a>SQL Server sur le client Linux VDI spécification du Kit de développement logiciel
 
@@ -110,7 +107,7 @@ Ce chapitre contient la description de chacune des fonctions de client. Les desc
 
 | Paramètres | Argument | Explication
 | ----- | ----- | ------ |
-| | **timeout** | Il s’agit du délai d’attente en millisecondes. Utiliser l’infini ou n’importe quel entier négatif pour empêcher le délai d’attente.
+| | **Délai d’attente** | Il s’agit du délai d’attente en millisecondes. Utiliser l’infini ou n’importe quel entier négatif pour empêcher le délai d’attente.
 | | **cfg** | Si l’exécution aboutit, contient la configuration sélectionnée par le serveur. Pour plus d’informations, consultez « Configuration » plus loin dans ce document.
 
 | Valeurs de retour | Argument | Explication
@@ -146,7 +143,7 @@ Ce chapitre contient la description de chacune des fonctions de client. Les desc
 | |**VD_E_INVALID** |Le nom du périphérique n’est pas valide. Il n’est pas un des noms connus composent le jeu.
 
 **Remarques** VD_E_OPEN peuvent être renvoyées sans problème. Le client peut appeler OpenDevice au moyen d’une boucle jusqu'à ce que ce code est retourné.
-Si plusieurs périphériques est configuré, par exemple  *n*  périphériques, retournera le jeu de périphériques virtuels  *n*  interfaces d’appareil unique.
+Si plusieurs périphériques est configuré, par exemple *n* périphériques, retournera le jeu de périphériques virtuels *n* interfaces d’appareil unique.
 
 Le `GetConfiguration` fonction peut être utilisée pour attendre que les appareils peuvent être ouverts.
 Si cette fonction n’aboutit pas, une valeur null est retournée via la ppVirtualDevice.
@@ -165,7 +162,7 @@ Si cette fonction n’aboutit pas, une valeur null est retournée via la ppVirtu
 
 | Paramètres | Argument | Explication
 | ----- | ----- | ------ |
-| |**timeout** |Il s’agit de la durée d’attente, en millisecondes. Utilisez INFINTE pour attendre indéfiniment. Utilisez 0 pour l’interrogation d’une commande. VD_E_TIMEOUT est retournée si aucune commande n’est disponible actuellement. Si le délai d’attente se produit, le client détermine l’action suivante.
+| |**Délai d’attente** |Il s’agit de la durée d’attente, en millisecondes. Utilisez INFINTE pour attendre indéfiniment. Utilisez 0 pour l’interrogation d’une commande. VD_E_TIMEOUT est retournée si aucune commande n’est disponible actuellement. Si le délai d’attente se produit, le client détermine l’action suivante.
 | |**Délai d'expiration** |Il s’agit de la durée d’attente, en millisecondes. Utilisez INFINTE ou une valeur négative pour attendre indéfiniment. Utilisez 0 pour l’interrogation d’une commande. VD_E_TIMEOUT est retournée si aucune commande n’est disponible avant l’expiration du délai. Si le délai d’attente se produit, le client détermine l’action suivante.
 | |**ppCmd** |Lorsqu’une commande est retournée avec succès, le paramètre retourne l’adresse d’une commande à exécuter. La mémoire retournée est en lecture seule. Lorsque la commande est terminée, ce pointeur est passé à la routine CompleteCommand. Pour plus d’informations sur chaque commande, consultez « Commandes » plus loin dans ce document.
         

@@ -1,16 +1,14 @@
 ---
 title: ALTER DATABASE ENCRYPTION KEY (Transact-SQL) | Microsoft Docs
-ms.custom: 
-ms.date: 03/20/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 04/16/2018
+ms.prod: sql
 ms.prod_service: sql-data-warehouse, pdw, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ALTER_DATABASE_ENCRYPTION_KEY_TSQL
@@ -23,19 +21,18 @@ helpviewer_keywords:
 - database encryption key, alter
 - ALTER DATABASE ENCRYPTION KEY
 ms.assetid: f88dac4b-efe0-47ed-9808-972a4381377e
-caps.latest.revision: 
+caps.latest.revision: 28
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bafdb9f6abbf6b51262ce977d155416c9bb183ac
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: ee48c7e7cad1d699d15e666ddba691cb294290d3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="alter-database-encryption-key-transact-sql"></a>ALTER DATABASE ENCRYPTION KEY (Transact-SQL)
-[!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]
+[!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-pdw-md.md)]
 
   Modifie une clé et un certificat de chiffrement permettant de chiffrer une base de données de façon transparente. Pour plus d’informations sur le chiffrement transparent de bases de données, consultez [Chiffrement transparent des données &#40;TDE, Transparent Data Encryption&#41;](../../relational-databases/security/encryption/transparent-data-encryption.md).  
   
@@ -58,7 +55,7 @@ ALTER DATABASE ENCRYPTION KEY
 ```  
   
 ```  
--- Syntax for Azure SQL Data Warehouse and Parallel Data Warehouse  
+-- Syntax for Parallel Data Warehouse  
   
 ALTER DATABASE ENCRYPTION KEY  
     {  
@@ -85,7 +82,7 @@ ALTER DATABASE ENCRYPTION KEY
 ## <a name="remarks"></a>Notes   
  Le certificat ou la clé asymétrique utilisé pour chiffrer la clé de chiffrement de base de données doit se trouver dans la base de données système principale.  
   
- La clé de chiffrement de base de données n'a pas besoin d'être régénérée lorsqu'un propriétaire de base de données (dbo) est modifié.  
+ Quand le propriétaire de base de données (dbo) est modifié, la clé de chiffrement de base de données n’a pas besoin d’être régénérée.
   
  Lorsque la clé de chiffrement d'une base de données a été modifiée deux fois, une sauvegarde de fichier journal doit être effectuée pour rendre possible une nouvelle modification de la clé de chiffrement.  
   

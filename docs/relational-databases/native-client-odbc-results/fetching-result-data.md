@@ -1,15 +1,14 @@
 ---
-title: "Extraction de données de résultat | Documents Microsoft"
-ms.custom: 
+title: Extraction de données de résultat | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-results
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - SQLFetchScroll function
@@ -24,16 +23,16 @@ helpviewer_keywords:
 - SQL Server Native Client ODBC driver, data types
 - SQLGetData function
 ms.assetid: b289c7fb-5017-4d7e-a2d3-19401e9fc4cd
-caps.latest.revision: 
+caps.latest.revision: 31
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1514a1309ea6a88e2d9c449ed9dbf15f99388227
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 2909c4472a4ab8dee56c37da3cdf23db1ee3e512
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fetching-result-data"></a>Extraction des données de résultat
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -65,11 +64,11 @@ ms.lasthandoff: 01/25/2018
   
  Soyez vigilant lorsque vous utilisez SQL_C_DEFAULT pour définir le type de la variable C. SQL_C_DEFAULT spécifie que le type de la variable C correspond au type de données SQL de la colonne ou du paramètre. Si SQL_C_DEFAULT pour une **ntext**, **nchar**, ou **nvarchar** colonne, données Unicode sont retournées à l’application. Ceci peut entraîner divers problèmes si l'application n'a pas été codée pour gérer des données Unicode. Les mêmes types de problèmes peuvent se produire avec les **uniqueidentifier** type de données (SQL_GUID).  
   
- **texte**, **ntext**, et **image** données sont généralement trop volumineuses pour tenir dans une variable de programme unique et est généralement traitées avec **SQLGetData** au lieu de **SQLBindCol**. Lors de l’utilisation de curseurs côté serveur, le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pilote ODBC Native Client est optimisé pour ne pas transmettre les données pour indépendant **texte**, **ntext**, ou **image** colonnes au moment de l’extraction de la ligne. Le **texte**, **ntext**, ou **image** données ne sont pas réellement récupérées à partir du serveur jusqu'à ce que les problèmes des applications **SQLGetData** pour la colonne.  
+ **texte**, **ntext**, et **image** données sont généralement trop volumineuses pour tenir dans une variable de programme unique et est généralement traitées avec **SQLGetData** à la place de **SQLBindCol**. Lors de l’utilisation de curseurs côté serveur, le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] pilote ODBC Native Client est optimisé pour ne pas transmettre les données pour indépendant **texte**, **ntext**, ou **image** colonnes au moment de l’extraction de la ligne. Le **texte**, **ntext**, ou **image** données ne sont pas réellement récupérées à partir du serveur jusqu'à ce que les problèmes des applications **SQLGetData** pour la colonne.  
   
  Cette optimisation peut être appliquée aux applications afin qu’aucun **texte**, **ntext**, ou **image** données s’affiche lors d’un utilisateur fait défiler haut et bas d’un curseur. Une fois que l’utilisateur sélectionne une ligne, l’application peut appeler **SQLGetData** pour récupérer le **texte**, **ntext**, ou **image** données. Ceci évite de transmettre le **texte**, **ntext**, ou **image** données pour une lignes de l’utilisateur ne sélectionne pas et peut enregistrer la transmission de très grandes quantités de données.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Le traitement des résultats &#40; ODBC &#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)  
+ [Le traitement des résultats &#40;ODBC&#41;](../../relational-databases/native-client-odbc-results/processing-results-odbc.md)  
   
   

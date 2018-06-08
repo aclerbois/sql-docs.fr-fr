@@ -1,32 +1,33 @@
 ---
 title: Fonction SQLBulkOperations | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLBulkOperations
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLBulkOperations
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLBulkOperations
-helpviewer_keywords: SQLBulkOperations function [ODBC]
+f1_keywords:
+- SQLBulkOperations
+helpviewer_keywords:
+- SQLBulkOperations function [ODBC]
 ms.assetid: 7029d0da-b0f2-44e6-9114-50bd96f47196
-caps.latest.revision: "24"
+caps.latest.revision: 24
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1872238d5e017ef8b6bd3fbfb2dc185051fc3557
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6f50b977d1ba296cbdc66a2f4c53407311e93631
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlbulkoperations-function"></a>Fonction SQLBulkOperations
 **Mise en conformité**  
@@ -63,7 +64,7 @@ SQLRETURN SQLBulkOperations(
   
  Pour toutes ces SQLSTATE qui peut retourner SQL_SUCCESS_WITH_INFO ou SQL_ERROR (sauf 01xxx SQLSTATE), SQL_SUCCESS_WITH_INFO est retourné si une erreur se produit sur un ou plusieurs, mais pas toutes, les lignes d’une opération de plusieurs ligne, SQL_ERROR est retourné si une erreur se produit lors d’une opération de ligne unique.  
   
-|SQLSTATE|Error|Description|  
+|SQLSTATE|Erreur| Description|  
 |--------------|-----------|-----------------|  
 |01000|Avertissement général|Message d’information de spécifiques au pilote. (La fonction retourne SQL_SUCCESS_WITH_INFO).|  
 |01004|Troncation à droite des données de chaîne|Le *opération* argument a été SQL_FETCH_BY_BOOKMARK et données de chaîne ou binaire retournées pour une ou plusieurs colonnes avec un type de données SQL_C_CHAR ou SQL_C_BINARY a entraîné la troncation des caractères non vides ou les données binaires non NULL.|  

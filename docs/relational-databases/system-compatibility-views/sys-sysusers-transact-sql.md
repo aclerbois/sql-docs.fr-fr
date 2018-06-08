@@ -1,16 +1,14 @@
 ---
-title: sys.sysusers (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.sysusers (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-data-warehouse, pdw
-ms.service: 
 ms.component: system-compatibility-views
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.sysusers
@@ -23,16 +21,16 @@ helpviewer_keywords:
 - sysusers system table
 - sys.sysusers compatibility view
 ms.assetid: 5f0e6a8d-c983-44f6-97e9-aab5bff67d18
-caps.latest.revision: 
+caps.latest.revision: 36
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 661d42fbc8b55250ac38fb84e44faa33701c20b2
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: '>= aps-pdw-2016 || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 0561ed37fa705f0952ae2a6e7cfd012d81364432
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="syssysusers-transact-sql"></a>sys.sysusers (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-asdw-pdw-md](../../includes/tsql-appliesto-ss2008-xxxx-asdw-pdw-md.md)]
@@ -48,7 +46,7 @@ ms.lasthandoff: 02/09/2018
 |**status**|**smallint**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**nom**|**sysname**|Nom d'utilisateur ou de groupe, unique dans cette base de données.|  
 |**sid**|**varbinary(85)**|Identificateur de sécurité pour cette entrée.|  
-|**roles**|**varbinary(2048)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
+|**Rôles**|**varbinary(2048)**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]|  
 |**createdate**|**datetime**|Date de l'ajout du compte.|  
 |**updatedate**|**datetime**|Date de la dernière modification du compte.|  
 |**altuid**|**smallint**|[!INCLUDE[ssInternalOnly](../../includes/ssinternalonly-md.md)]<br /><br /> Déborde ou retourne la valeur NULL si le nombre d'utilisateurs et de rôles dépasse 32 767.|  
@@ -56,7 +54,7 @@ ms.lasthandoff: 02/09/2018
 |**gid**|**smallint**|ID du groupe auquel l'utilisateur appartient. Si **uid** est identique à **gid**, cette entrée définit un groupe. Déborde ou retourne la valeur NULL si le nombre total d'utilisateurs et de groupes dépasse 32 767.|  
 |**environ**|**varchar(255)**|Réservé.|  
 |**hasdbaccess**|**int**|1 = Le compte a accès à la base de données.|  
-|**islogin**|**int**|1 = Le compte est un groupe Windows ou un utilisateur Windows ou [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficiant d'un compte de connexion.|  
+|**IsLogin**|**int**|1 = Le compte est un groupe Windows ou un utilisateur Windows ou [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] bénéficiant d'un compte de connexion.|  
 |**isntname**|**int**|1 = Le compte est un utilisateur ou groupe Windows.|  
 |**isntgroup**|**int**|1 = Le compte est un groupe Windows.|  
 |**isntuser**|**int**|1 = Le compte est un utilisateur Windows.|  
@@ -66,7 +64,7 @@ ms.lasthandoff: 02/09/2018
 |**isapprole**|**int**|1 = Le compte est un rôle d’application.|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Mappage des Tables système pour les vues système &#40; Transact-SQL &#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
+ [Mappage des Tables système avec les vues système &#40;Transact-SQL&#41;](../../relational-databases/system-tables/mapping-system-tables-to-system-views-transact-sql.md)   
  [Affichages de compatibilité &#40;Transact-SQL&#41;](~/relational-databases/system-compatibility-views/system-compatibility-views-transact-sql.md)  
   
   

@@ -1,25 +1,22 @@
 ---
 title: Prise en main 2017 du serveur SQL sur Red Hat Enterprise Linux | Documents Microsoft
-description: "Ce démarrage rapide montre comment installer SQL Server 2017 sur Red Hat Enterprise Linux puis créer et interroger une base de données avec sqlcmd."
+description: Ce démarrage rapide montre comment installer SQL Server 2017 sur Red Hat Enterprise Linux puis créer et interroger une base de données avec sqlcmd.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 02/22/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.technology: linux
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
 ms.assetid: 92503f59-96dc-4f6a-b1b0-d135c43e935e
-ms.workload: Active
-ms.openlocfilehash: 6919cdbb506ccbe36ed3e8c167be4321b5ee2a27
-ms.sourcegitcommit: f0c5e37c138be5fb2cbb93e9f2ded307665b54ea
+ms.openlocfilehash: de149b0a75a550101e761baa109bc07dac062fcd
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/24/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-install-sql-server-and-create-a-database-on-red-hat"></a>Démarrage rapide : Installer SQL Server et créer une base de données sur Red Hat
 
@@ -34,7 +31,7 @@ Dans ce guide de démarrage rapide, vous installez d’abord SQL Server 2017 sur
 
 Vous devez avoir un 7.3 RHEL ou ordinateur 7.4 avec **au moins 2 Go** de mémoire.
 
-Pour installer Red Hat Enterprise Linux sur votre propre ordinateur, accédez à [http://access.redhat.com/products/red-hat-enterprise-linux/evaluation](http://access.redhat.com/products/red-hat-enterprise-linux/evaluation). Vous pouvez également créer des machines virtuelles RHEL dans Azure. Consultez [créer et gérer des machines virtuelles Linux avec l’interface CLI Azure](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-manage-vm)et utiliser `--image RHEL` dans l’appel à `az vm create`.
+Pour installer Red Hat Enterprise Linux sur votre propre ordinateur, accédez à [ http://access.redhat.com/products/red-hat-enterprise-linux/evaluation ](http://access.redhat.com/products/red-hat-enterprise-linux/evaluation). Vous pouvez également créer des machines virtuelles RHEL dans Azure. Consultez [créer et gérer des machines virtuelles Linux avec l’interface CLI Azure](https://docs.microsoft.com/azure/virtual-machines/linux/tutorial-manage-vm)et utiliser `--image RHEL` dans l’appel à `az vm create`.
 
 Pour les autres exigences système, consultez [configuration système requise pour SQL Server sur Linux](sql-server-linux-setup.md#system).
 
@@ -96,7 +93,7 @@ Pour créer une base de données, vous devez vous connecter avec un outil qui pe
    sudo curl -o /etc/yum.repos.d/msprod.repo https://packages.microsoft.com/config/rhel/7/prod.repo
    ```
 
-1. Si vous aviez une version précédente de **mssql-tools** installé, supprimez tous les packages unixODBC plus anciens.
+1. Si vous aviez une version précédente de **mssql-tools** installée, supprimez tous les packages unixODBC plus anciens.
 
    ```bash
    sudo yum remove unixODBC-utf16 unixODBC-utf16-devel
@@ -120,7 +117,7 @@ Pour créer une base de données, vous devez vous connecter avec un outil qui pe
 > **SQLCMD** est un outil unique pour se connecter à SQL Server afin d'exécuter des requêtes et d'effectuer des tâches de gestion et de développement. D'autres outils incluent :
 >
 > * [SQL Server Operations Studio (préversion)](../sql-operations-studio/what-is.md)
-> * [SQL Server Management Studio](sql-server-linux-develop-use-ssms.md)
+> * [SQL Server Management Studio](sql-server-linux-manage-ssms.md)
 > * [Visual Studio Code](sql-server-linux-develop-use-vscode.md).
 > * [mssql-cli (préversion)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/12/12/try-mssql-cli-a-new-interactive-command-line-tool-for-sql-server/)
 

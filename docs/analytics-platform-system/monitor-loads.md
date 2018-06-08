@@ -1,28 +1,23 @@
 ---
-title: Analyse des charges pour Parallel Data Warehouse
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.suite: sql
-ms.custom: 
-ms.technology: mpp-data-warehouse
-description: "Vous pouvez surveiller les actifs et récentes [dwloader](dwloader.md) charge à l’aide de la Console d’administration de système de plateforme Analytique (APS) ou les vues système Parallel Data Warehouse (PDW)."
-ms.date: 10/20/2016
-ms.topic: article
-ms.assetid: c0c55c16-00bc-4676-8970-a8e10b3e9408
-caps.latest.revision: "6"
-ms.openlocfilehash: 988c34b248b0058941f53575a79e4f3b6acb4de0
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Contrôler des chargements de Parallel Data Warehouse | Documents Microsoft
+description: Contrôler des chargements récents et actives à l’aide de la Console d’administration Analytique plateforme système (APS) ou les vues du système Data Warehouse (PDW) parallèle ».
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 8980259b69dfa74c2bb27c9406553a5b5810348a
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585671"
 ---
-# <a name="monitor-loads"></a>Moniteur de charge
-Vous pouvez surveiller les actifs et récentes [dwloader](dwloader.md) charge à l’aide de la Console d’administration de système de plateforme Analytique (APS) ou Parallel Data Warehouse (PDW) [vues système](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-reference-tsql-system-views/). 
+# <a name="monitor-loads-into-parallel-data-warehouse"></a>Moniteur de charge dans Parallel Data Warehouse
+Analyse active et récentes [dwloader](dwloader.md) charge à l’aide de la Console d’administration de système de plateforme Analytique (APS) ou Parallel Data Warehouse (PDW) [vues système](https://azure.microsoft.com/documentation/articles/sql-data-warehouse-reference-tsql-system-views/). 
   
 > [!TIP]  
 > Certaines charges sont lancées à l’aide des instructions INSERT ou des outils d’analyse décisionnelle qui utilisent des instructions SQL pour effectuer le chargement. 
@@ -31,7 +26,7 @@ Vous pouvez surveiller les actifs et récentes [dwloader](dwloader.md) charge à
 To monitor this type of load, see [Monitoring Active Queries](monitor-active-queries.md).  
 -->
   
-## <a name="prerequisites"></a>Prerequisites  
+## <a name="prerequisites"></a>Configuration requise  
 Quelle que soit la méthode utilisée pour surveiller la charge, la connexion doit avoir l’autorisation pour accéder aux sources de données sous-jacentes. 
 
 <!-- MISSING LINKS
@@ -54,7 +49,7 @@ Consultez ces vues système pour plus d’informations sur les métadonnées rel
   
 -   [sys.dm_pdw_exec_requests](../relational-databases/system-dynamic-management-views/sys-dm-pdw-exec-requests-transact-sql.md)  
   
--   [sys.pdw_loader_run_stages](https://msdn.microsoft.com/library/mt203879.aspx.md)  
+-   [sys.pdw_loader_run_stages](https://msdn.microsoft.com/library/mt203879.aspx)  
   
 -   [sys.pdw_loader_backup_runs](../relational-databases/system-catalog-views/sys-pdw-loader-backup-runs-transact-sql.md)  
   

@@ -1,44 +1,19 @@
 ---
 title: Référence technique de Microsoft Time Series algorithme | Documents Microsoft
-ms.custom: ''
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-helpviewer_keywords:
-- ARTXP
-- HISTORICAL_MODEL_GAP parameter
-- AUTO_DETECT_PERIODICITY parameter
-- time series algorithms [Analysis Services]
-- ARIMA
-- INSTABILITY_SENSITIVITY parameter
-- PERIODICITY_HINT parameter
-- MAXIMUM_SERIES_VALUE parameter
-- time series [Analysis Services]
-- MINIMUM_SUPPORT parameter
-- HISTORIC_MODEL_COUNT parameter
-- FORECAST_METHOD parameter
-- MISSING_VALUE_SUBSTITUTION parameter
-- MINIMUM_SERIES_VALUE parameter
-- COMPLEXITY_PENALTY parameter
-- PREDICTION_SMOOTHING parameter
-ms.assetid: 7ab203fa-b044-47e8-b485-c8e59c091271
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/08/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 40d0c34ea4bb7e95d77ff6aa37695da4080c20ac
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
+ms.openlocfilehash: 5d4634a8d926ec62d05317976f4e1bf1a459f0cd
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="microsoft-time-series-algorithm-technical-reference"></a>Références techniques relatives à l'algorithme MTS (Microsoft Time Series)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -148,7 +123,7 @@ ms.lasthandoff: 03/20/2018
 |*MINIMUM_SERIES_VALUE*|Spécifie la valeur minimale qui peut être prédite. Ce paramètre est utilisé avec *MAXIMUM_SERIES_VALUE*pour limiter les prédictions à une certaine plage attendue. Par exemple, vous pouvez spécifier que la quantité de ventes prédite ne doit jamais être un nombre négatif.<br /><br /> Remarque : ce paramètre est uniquement disponible dans certaines éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
 |*MINIMUM_SUPPORT*|Spécifie le nombre minimal de tranches de temps qui sont requises pour générer un fractionnement dans chaque arbre de série chronologique. La valeur par défaut est 10.|  
 |*MISSING_VALUE_SUBSTITUTION*|Spécifie la façon dont les vides dans les données d'historique sont comblés. Par défaut, les vides dans les données ne sont pas autorisés. Le tableau suivant répertorie les valeurs possibles de ce paramètre :<br /><br /> **Previous**: répète la valeur de la tranche de temps précédente.<br /><br /> **Mean**: utilise une moyenne mobile des tranches de temps utilisées pour l’apprentissage.<br /><br /> Constante numérique : utilise le nombre spécifié pour remplacer toutes les valeurs manquantes.<br /><br /> **None**: valeur par défaut. Remplace les valeurs manquantes par les valeurs représentées le long de la courbe du modèle ayant fait l'objet d'un apprentissage.<br /><br /> <br /><br /> Notez que si vos données contiennent plusieurs séries, les séries ne peuvent pas comporter d’extrémités déséquilibrées. En d'autres termes, toutes les séries doivent avoir les mêmes points de départ et d'arrêt. <br />                    [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] utilise aussi la valeur de ce paramètre pour combler les vides dans les nouvelles données quand vous effectuez une opération **PREDICTION JOIN** sur un modèle de série chronologique.|  
-|*PERIODICITY_HINT*|Fournit à l'algorithme une indication de la périodicité des données. Par exemple, si les ventes varient chaque année, et que l'unité de mesure de la série est le mois, la périodicité est égale à 12. Ce paramètre s'affiche sous la forme {n [, n]}, où n est un nombre positif.<br /><br /> Le n entre crochets [] est facultatif et peut être répété autant de fois que nécessaire. Par exemple, pour fournir plusieurs indications de périodicité pour les données fournies mensuellement, vous pouvez entrer {12, 3, 1} pour détecter les modèles pour l'année, le trimestre et le mois. Toutefois, la périodicité a une répercussion importante sur la qualité du modèle. Si l'indication que vous fournissez diffère de la périodicité réelle, vos résultats peuvent être gravement compromis.<br /><br /> La valeur par défaut est \{1\}.<br /><br /> Notez que les accolades sont obligatoires. Par ailleurs, ce paramètre a un type de données chaîne. Par conséquent, si vous tapez ce paramètre dans une instruction DMX (Data Mining Extensions), vous devez placer le nombre et les accolades entre guillemets.|  
+|*PERIODICITY_HINT*|Fournit à l'algorithme une indication de la périodicité des données. Par exemple, si les ventes varient chaque année, et que l'unité de mesure de la série est le mois, la périodicité est égale à 12. Ce paramètre s'affiche sous la forme {n [, n]}, où n est un nombre positif.<br /><br /> Le n entre crochets [] est facultatif et peut être répété autant de fois que nécessaire. Par exemple, pour fournir plusieurs indications de périodicité pour les données fournies mensuellement, vous pouvez entrer {12, 3, 1} pour détecter les modèles pour l'année, le trimestre et le mois. Toutefois, la périodicité a une répercussion importante sur la qualité du modèle. Si l'indication que vous fournissez diffère de la périodicité réelle, vos résultats peuvent être gravement compromis.<br /><br /> La valeur par défaut est {1}.<br /><br /> Notez que les accolades sont obligatoires. Par ailleurs, ce paramètre a un type de données chaîne. Par conséquent, si vous tapez ce paramètre dans une instruction DMX (Data Mining Extensions), vous devez placer le nombre et les accolades entre guillemets.|  
 |*PREDICTION_SMOOTHING*|Spécifie la façon dont le modèle doit être combiné pour optimiser la prévision. Vous pouvez taper toute valeur comprise entre [!INCLUDE[tabValue](../../includes/tabvalue-md.md)] et 1, ou utiliser l'une des valeurs suivantes :<br /><br /> [!INCLUDE[tabValue](../../includes/tabvalue-md.md)]:<br />                          Spécifie que la prédiction utilise uniquement ARTXP. La prévision est optimisée pour un petit nombre de prédictions.<br /><br /> 1 : spécifie que la prédiction utilise uniquement ARIMA. La prévision est optimisée pour un grand nombre de prédictions.<br /><br /> 0,5 : valeur par défaut. Spécifie que les deux algorithmes doivent être utilisés et les résultats fusionnés pour la prédiction.<br /><br /> <br /><br /> Quand vous procédez à un lissage des prédictions, utilisez le paramètre *FORECAST_METHOD* pour contrôler l’apprentissage.   Notez que ce paramètre est uniquement disponible dans certaines éditions de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)].|  
   
 ### <a name="modeling-flags"></a>Indicateurs de modélisation  
@@ -176,6 +151,6 @@ ms.lasthandoff: 03/20/2018
 ## <a name="see-also"></a>Voir aussi  
  [Algorithme de série chronologique de Microsoft](../../analysis-services/data-mining/microsoft-time-series-algorithm.md)   
  [Exemples de requête de modèle de série de temps](../../analysis-services/data-mining/time-series-model-query-examples.md)   
- [Contenu du modèle d’exploration de données pour les modèles de série chronologique &#40; Analysis Services - Exploration de données &#41;](../../analysis-services/data-mining/mining-model-content-for-time-series-models-analysis-services-data-mining.md)  
+ [Contenu du modèle d’exploration de données pour les modèles de série chronologique & #40 ; Analysis Services - Exploration de données & #41 ;](../../analysis-services/data-mining/mining-model-content-for-time-series-models-analysis-services-data-mining.md)  
   
   

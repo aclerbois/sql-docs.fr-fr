@@ -1,30 +1,20 @@
 ---
 title: EST (MDX) | Documents Microsoft
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-f1_keywords: IS
-dev_langs: kbMDX
-helpviewer_keywords: IS operator
-ms.assetid: dc8c0b91-3bb1-49e5-8d70-57545baaa8e0
-caps.latest.revision: "29"
-author: Minewiskan
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 2851106b509cb3907b06b21adc0d08e850af4fdd
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: 5c36a5f45e34d6d78043f6ce8a3e3fb040ecc9f6
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34578591"
 ---
 # <a name="is-mdx"></a>IS (MDX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -45,10 +35,10 @@ Expression1 IS ( Expression2 | NULL )
  *Expression2*  
  Expression MDX valide retournant une référence à un objet MDX.  
   
-## <a name="return-value"></a>Valeur retournée  
+## <a name="return-value"></a>Valeur de retour  
  Valeur booléenne qui retourne **true** si les deux arguments font référence au même objet ; sinon, **false**. Si le **NULL** mot clé est spécifié, l’opérateur retourne **true** si *Expression1* est **null**; sinon, **false**.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le **IS** opérateur est souvent utilisée pour déterminer si tuples et membres sont idempotents, ce qui signifie qu’ils sont tout à fait équivalents.  
   
 ## <a name="examples"></a>Exemples  
@@ -73,6 +63,6 @@ Expression1 IS ( Expression2 | NULL )
  `[Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Référence des opérateurs MDX &#40; MDX &#41;](../mdx/mdx-operator-reference-mdx.md)  
+ [Référence des opérateurs MDX &#40;MDX&#41;](../mdx/mdx-operator-reference-mdx.md)  
   
   

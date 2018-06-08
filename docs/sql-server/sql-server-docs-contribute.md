@@ -1,25 +1,24 @@
 ---
 title: Guide pratique pour contribuer à la documentation SQL Server | Microsoft Docs
-ms.date: 03/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: ''
+ms.date: 04/12/2018
+ms.prod: sql
+ms.prod_service: sql
 ms.component: sql-non-specified
 ms.reviewer: ''
 ms.suite: sql
 ms.custom: ''
 ms.technology: ''
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 1885c57cfcf21dcdb877fc4c59b229636b74c137
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 41bdbc55a67865e195ea06a10610af8224edf06b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="how-to-contribute-to-sql-server-documentation"></a>Guide pratique pour contribuer à la documentation SQL Server
 
@@ -36,7 +35,7 @@ Il existe deux flux de travail principaux que vous pouvez utiliser pour apporter
 
 ## <a id="githubui"></a> Modifier dans votre navigateur
 
-Les étapes suivantes fournissent une vue d’ensemble de l’apport de modifications simples à du contenu SQL Server dans votre navigateur. La procédure complète est présentée dans l’article, [Flux de travail de contribution à GitHub pour les changements mineurs ou peu fréquents](https://docs.microsoft.com/contribute/contribute/light-workflow).
+Les étapes suivantes fournissent une vue d’ensemble de l’apport de modifications simples à du contenu SQL Server dans votre navigateur. La procédure complète est présentée dans l’article, [Flux de travail de contribution à GitHub pour les changements mineurs ou peu fréquents](https://docs.microsoft.com/contribute/light-workflow).
 
 1. Chaque article, dont celui-ci, comporte un bouton **Modifier** à droite. Recherchez un article que vous voulez modifier, puis cliquez sur le bouton **Modifier** pour commencer.
 
@@ -49,7 +48,7 @@ Les étapes suivantes fournissent une vue d’ensemble de l’apport de modifica
    ![Bouton Modifier](./media/sql-server-docs-contribute/edit-button.png)
 
    > [!NOTE]
-   > Vous devez être connecté à GitHub pour modifier un article. Si vous n’avez pas de compte GitHub, consultez [Configuration de compte GitHub](https://docs.microsoft.com/contribute/contribute/get-started-setup-github). Après avoir créé un compte, vous devez également vérifier votre adresse e-mail avec GitHub avant de pouvoir effectuer des modifications.
+   > Vous devez être connecté à GitHub pour modifier un article. Si vous n’avez pas de compte GitHub, consultez [Configuration de compte GitHub](https://docs.microsoft.com/contribute/get-started-setup-github). Après avoir créé un compte, vous devez également vérifier votre adresse e-mail avec GitHub avant de pouvoir effectuer des modifications.
 
 1. Modifiez l’article dans le navigateur. Tous les articles sont écrits au format Markdown. Si vous avez besoin d’aide pour Markdown, vous pouvez consulter [Principes de base de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/). Vous pouvez également obtenir des informations en observant comment les articles publiés restituent un balisage Markdown existant.
 
@@ -65,7 +64,7 @@ Les étapes suivantes fournissent une vue d’ensemble de l’apport de modifica
 
    ![Créer une demande de tirage](./media/sql-server-docs-contribute/create-pull-request2.png)
 
-À ce stade, vous devez être guidé pour le reste de la procédure dans les commentaires de la demande de tirage. La procédure complète ainsi que des détails supplémentaires sont disponibles dans le [Guide des contributeurs](https://docs.microsoft.com/contribute/contribute/light-workflow).
+À ce stade, vous devez être guidé pour le reste de la procédure dans les commentaires de la demande de tirage. La procédure complète ainsi que des détails supplémentaires sont disponibles dans le [Guide des contributeurs](https://docs.microsoft.com/contribute/light-workflow).
 
 ## <a id="tools"></a> Modifier localement avec des outils
 
@@ -73,10 +72,10 @@ Une autre option de modification consiste à dupliquer le dépôt **sql-docs** o
 
 Pour apporter votre contribution à l’aide de cette méthode, consultez les articles suivants :
 
-- [Créer un compte GitHub](https://docs.microsoft.com/contribute/contribute/get-started-setup-github)
-- [Installer des outils de création de contenu](https://docs.microsoft.com/contribute/contribute/get-started-setup-tools)
-- [Configurer localement un dépôt Git](https://docs.microsoft.com/contribute/contribute/get-started-setup-local)
-- [Apporter sa contribution à l’aide d’outils](https://docs.microsoft.com/contribute/contribute/full-workflow)
+- [Créer un compte GitHub](https://docs.microsoft.com/contribute/get-started-setup-github)
+- [Installer des outils de création de contenu](https://docs.microsoft.com/contribute/get-started-setup-tools)
+- [Configurer localement un dépôt Git](https://docs.microsoft.com/contribute/get-started-setup-local)
+- [Apporter sa contribution à l’aide d’outils](https://docs.microsoft.com/contribute/full-workflow)
 
 Si vous envoyez une demande de tirage avec d’importants changements à apporter à la documentation, un commentaire s’affiche dans GitHub vous demandant d’envoyer un **contrat de licence de contribution** (CLA, Contribution License Agreement) en ligne. Pour que votre demande de tirage soit acceptée, vous devez au préalable compléter le formulaire en ligne.
 

@@ -1,17 +1,16 @@
 ---
-title: "Utiliser des expressions de propriété dans des packages | Microsoft Docs"
-ms.custom: 
+title: Utiliser des expressions de propriété dans des packages | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: expressions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - packages [Integration Services], expressions
 - Integration Services packages, expressions
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - expressions [Integration Services], property expressions
 - property expressions [Integration Services]
 ms.assetid: a4bfc925-3ef6-431e-b1dd-7e0023d3a92d
-caps.latest.revision: 
+caps.latest.revision: 69
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: df3d79297b56c02f4aff107349cb8dce5c75d4da
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: d39c7716643fae40161f4f6d1fc716b59bf9be65
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="use-property-expressions-in-packages"></a>Expressions de propriété dans des packages
   Une expression de propriété est une expression affectée à une propriété pour permettre la mise à jour dynamique de la propriété au moment de l'exécution. Par exemple, une expression de propriété peut mettre à jour la ligne À utilisée par une tâche Envoyer un message en insérant une adresse électronique qui est stockée dans une variable.  

@@ -1,16 +1,15 @@
 ---
 title: Utilitaire rskeymgmt (SSRS) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - report servers [Reporting Services], encryption
 - joining report server instances [SQL Server]
@@ -23,16 +22,15 @@ helpviewer_keywords:
 - rskeymgmt utility
 - scale-out deployments [Reporting Services]
 ms.assetid: 53f1318d-bd2d-4c08-b19f-c8b698b5b3d3
-caps.latest.revision: "56"
+caps.latest.revision: 56
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 3e78a5b9e393dc24c1bfdb1ccc72cd05a0675bfd
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: c2bdcd2610eb4a4c6d351868a8fbb7aac9a44bf7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rskeymgmt-utility-ssrs"></a>Utilitaire rskeymgmt (SSRS)
   Extrait, restaure, crée et supprime la clé symétrique utilisée pour protéger les données sensibles de serveur de rapports contre un accès non autorisé. Cet utilitaire sert également à joindre des instances de serveur de rapports dans un déploiement évolutif. Un *déploiement évolutif de serveurs de rapports* correspond à plusieurs instances de serveur de rapports qui partagent une base de données de serveur de rapports unique.  
@@ -65,12 +63,12 @@ rskeymgmt {-?}
  **-e**  
  Extrait la clé symétrique utilisée pour chiffrer et déchiffrer des données pour l'instance du serveur de rapports afin que vous puissiez les copier dans un fichier.  
   
- Cet argument ne prend pas de valeur. Cependant, vous devez inclure des arguments supplémentaires sur la ligne de commande pour effectuer l'extraction. Les arguments que vous devez spécifier incluent notamment **-f** et**-p**.  
+ Cet argument ne prend pas de valeur. Cependant, vous devez inclure des arguments supplémentaires sur la ligne de commande pour effectuer l'extraction. Les arguments que vous devez spécifier incluent notamment **-f** et **-p**.  
   
  **-a**  
  Remplace une clé symétrique existante par une copie que vous pouvez fournir dans un fichier de sauvegarde protégé par mot de passe. Toutes les instances de la clé symétrique sont mises à jour.  
   
- Cet argument ne prend pas de valeur. Cependant, vous devez inclure des arguments supplémentaires sur la ligne de commande pour sélectionner le fichier contenant la clé à appliquer. Les arguments que vous pouvez spécifier incluent notamment **-f** et**-p**.  
+ Cet argument ne prend pas de valeur. Cependant, vous devez inclure des arguments supplémentaires sur la ligne de commande pour sélectionner le fichier contenant la clé à appliquer. Les arguments que vous pouvez spécifier incluent notamment **-f** et **-p**.  
   
  **-d**  
  Supprime toutes les instances de clé symétrique et toutes les données chiffrées dans une base de données de serveur de rapports. Cet argument ne prend pas de valeur.  

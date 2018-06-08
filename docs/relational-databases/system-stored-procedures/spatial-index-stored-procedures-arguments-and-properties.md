@@ -1,32 +1,29 @@
 ---
-title: "Propriétés d’Index Spatial et les arguments de procédures stockées | Documents Microsoft"
-ms.custom: 
+title: Propriétés d’Index Spatial et les arguments de procédures stockées | Documents Microsoft
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
 helpviewer_keywords:
 - spatial indexes [SQL Server], stored procedures
 ms.assetid: ee26082b-c0ed-40ff-b5ad-f5f6b00f0475
-caps.latest.revision: 
+caps.latest.revision: 10
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f0dda9bafb3f38648e2ab1de333d303c9b0e372c
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 20c747b51bd4fc20e21bedfed1f826005b1037a1
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spatial-index-stored-procedures---arguments-and-properties"></a>Procédures - Arguments et les propriétés stockées d’Index spatial
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -38,13 +35,13 @@ ms.lasthandoff: 11/21/2017
 ## <a name="syntax"></a>Syntaxe  
  Pour la syntaxe de procédures stockées d'index spatial spécifiques, consultez les rubriques suivantes :  
   
--   [sp_help_spatial_geometry_index &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)  
+-   [sp_help_spatial_geometry_index &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)  
   
--   [sp_help_spatial_geometry_index_xml &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-xml-transact-sql.md)  
+-   [sp_help_spatial_geometry_index_xml &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-xml-transact-sql.md)  
   
--   [sp_help_spatial_geography_index &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-transact-sql.md)  
+-   [sp_help_spatial_geography_index &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-transact-sql.md)  
   
--   [sp_help_spatial_geography_index_xml &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-xml-transact-sql.md)  
+-   [sp_help_spatial_geography_index_xml &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-xml-transact-sql.md)  
   
 ## <a name="arguments"></a>Arguments  
  [  **@tabname =**] **'***tabname***'**  
@@ -71,7 +68,7 @@ ms.lasthandoff: 11/21/2017
  Spécifie un paramètre de sortie qui retourne le jeu de résultats dans un fragment XML. *xml_output* est **xml** sans valeur par défaut.  
   
 ## <a name="properties"></a>Propriétés  
- Définissez  **@verboseoutput**  = 0 pour retourner des propriétés principales comme indiqué dans le tableau ci-dessous ;  **@verboseoutput**  > 0 pour retourner toutes les propriétés de l’index spatial.  
+ Définissez **@verboseoutput** = 0 pour retourner des propriétés principales comme indiqué dans le tableau ci-dessous ; **@verboseoutput** > 0 pour retourner toutes les propriétés de l’index spatial.  
   
  **Base_Table_Rows**  
  Nombre de lignes dans la table de base. La valeur est **bigint**.  
@@ -309,7 +306,7 @@ ms.lasthandoff: 11/21/2017
  **Primary_Filter_Efficiency**  
  Si les lignes P sont sélectionnées par le filtre primaire et O est le nombre de lignes de sortie, cette returnsO/P comme pourcentage. Plus le rendement du filtre principal est principal, moins il y a de faux positifs que le filtre secondaire doit traiter. Il s'agit d'une propriété principale. La valeur est **float.**  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Utilisateur doit être un membre de la **public** rôle. Nécessite une autorisation READ ACCESS sur le serveur et l'objet. Cela s'applique à toutes les procédures stockées de l'index spatial.  
   
 ## <a name="remarks"></a>Notes  
@@ -318,19 +315,19 @@ ms.lasthandoff: 11/21/2017
 ## <a name="examples"></a>Exemples  
  Pour les exemples, consultez les rubriques suivantes :  
   
--   [sp_help_spatial_geometry_index &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)  
+-   [sp_help_spatial_geometry_index &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)  
   
--   [sp_help_spatial_geometry_index_xml &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-xml-transact-sql.md)  
+-   [sp_help_spatial_geometry_index_xml &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-xml-transact-sql.md)  
   
--   [sp_help_spatial_geography_index &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-transact-sql.md)  
+-   [sp_help_spatial_geography_index &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-transact-sql.md)  
   
--   [sp_help_spatial_geography_index_xml &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-xml-transact-sql.md)  
+-   [sp_help_spatial_geography_index_xml &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geography-index-xml-transact-sql.md)  
   
 ## <a name="requirements"></a>Spécifications  
   
 ## <a name="see-also"></a>Voir aussi  
- [Procédures &#40; stockées d’Index spatial Transact-SQL &#41;](http://msdn.microsoft.com/library/1be0f34e-3d5a-4a1f-9299-bd482362ec7a)   
- [sp_help_spatial_geometry_index &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)   
+ [Les procédures stockées d’Index spatial &#40;Transact-SQL&#41;](http://msdn.microsoft.com/library/1be0f34e-3d5a-4a1f-9299-bd482362ec7a)   
+ [sp_help_spatial_geometry_index &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-help-spatial-geometry-index-transact-sql.md)   
  [Vue d’ensemble des index spatiaux](../../relational-databases/spatial/spatial-indexes-overview.md)   
  [Principes fondamentaux de XQuery](../../xquery/xquery-basics.md)   
  [Références relatives au langage Xquery &#40;SQL Server&#41;](../../xquery/xquery-language-reference-sql-server.md)  

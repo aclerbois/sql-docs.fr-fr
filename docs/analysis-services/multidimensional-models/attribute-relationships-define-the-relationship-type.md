@@ -1,37 +1,23 @@
 ---
-title: "Définir le Type de relation d’une relation d’attribut | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- removing member properties
-- deleting member properties
-- member properties [Analysis Services], adding
-- adding member properties
-- member properties [Analysis Services], removing
-ms.assetid: 893a9084-d0fe-425c-b251-7518d3b3b65b
-caps.latest.revision: 
-author: Minewiskan
+title: Définir le Type de relation d’une relation d’attribut | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 158e22518b67117f830ba019860bacb95454a73a
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: c6ae9dd941ecf13d05b62b1b5f8bcdd3d3784188
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-relationships---define-the-relationship-type"></a>Relations d’attributs : permet de définir le Type de relation
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Vous définissez le type de relation d’une relation d’attribut par le biais de l’onglet **Relations d’attributs** du Concepteur de dimensions, accessible depuis [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)].  
+  Vous définissez le type de relation d’une relation d’attribut par le biais de l’onglet **Relations d’attributs** du Concepteur de dimensions, accessible depuis [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)].  
   
 ### <a name="to-set-the-relationship-type-of-an-attribute-relationship"></a>Pour définir le type de relation d'une relation d'attribut  
   

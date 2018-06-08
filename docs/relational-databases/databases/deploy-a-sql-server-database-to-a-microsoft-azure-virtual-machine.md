@@ -1,17 +1,16 @@
 ---
-title: "Déployer une base de données SQL Server sur une machine virtuelle Microsoft Azure | Microsoft Docs"
+title: Déployer une base de données SQL Server sur une machine virtuelle Microsoft Azure | Microsoft Docs
 ms.date: 07/29/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.custom: 
+ms.custom: ''
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.deploymentwizard.deploymentsettings.f1
 - sql13.swb.deploymentwizard.sourcesettings.f1
@@ -37,20 +36,19 @@ helpviewer_keywords:
 - Deploy a SQL Server database to Azure
 - Azure VM
 ms.assetid: 5e82e66a-262e-4d4f-aa89-39cb62696d06
-caps.latest.revision: 
+caps.latest.revision: 30
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4fef490a7fe90e6d2ceeadb203b468f710d208fc
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+ms.openlocfilehash: 3ad29084eda4f085e090ec9f436a5dd3f170429f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="deploy-a-sql-server-database-to-a-microsoft-azure-virtual-machine"></a>Déployer une base de données SQL Server sur une machine virtuelle Microsoft Azure
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Utilisez l’Assistant **Déployer une base de données sur un ordinateur virtuel Microsoft Azure** pour déployer une base de données d’une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans une machine virtuelle Microsoft Azure. L’Assistant utilise une sauvegarde complète de la base de données ; par conséquent, il copie toujours le schéma complet de la base de données et les données d’une base de données utilisateur SQL Server. L'Assistant effectue également toutes les configurations de machine virtuelle Windows Azure pour vous ; par conséquent, aucune configuration préalable de machine virtuelle n'est requise.  
+  Utilisez l’Assistant **Déployer une base de données sur un ordinateur virtuel Microsoft Azure** pour déployer une base de données d’une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] vers [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] dans une machine virtuelle Microsoft Azure. L’Assistant utilise une sauvegarde complète de la base de données ; par conséquent, il copie toujours le schéma complet de la base de données et les données d’une base de données utilisateur SQL Server. L'Assistant effectue également toutes les configurations de machine virtuelle Windows Azure pour vous ; par conséquent, aucune configuration préalable de machine virtuelle n'est requise.  
   
  Vous ne pouvez pas utiliser l’Assistant pour effectuer des sauvegardes différentielles. L’Assistant ne remplacera pas une base de données existante qui porte le même nom de base de données. Pour remplacer une base de données existante sur la machine virtuelle, vous devez d'abord supprimer la base de données existante ou modifier le nom de la base de données. S'il existe un conflit de noms entre le nom de la base de données d'une opération de déploiement en cours et d'une base de données existante sur la machine virtuelle, l'Assistant suggère un nom de base de données avec suffixe pour la base de données en cours pour vous permettre d'effectuer cette opération.  
   

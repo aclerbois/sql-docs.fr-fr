@@ -1,16 +1,14 @@
 ---
-title: sp_add_jobserver (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_add_jobserver (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_jobserver
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_jobserver
 ms.assetid: 485252cc-0081-490a-9bd1-cbbd68eea286
-caps.latest.revision: 
+caps.latest.revision: 24
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6b132644593bd62cc9830ffd61490253e1a89ae2
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: e89ba03a88db9dd5977ace92cc498726da6b3e45
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddjobserver-transact-sql"></a>sp_add_jobserver (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,16 +44,16 @@ sp_add_jobserver [ @job_id = ] job_id | [ @job_name = ] 'job_name'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id =** ] *job_id*  
+ [  **@job_id =** ] *job_id*  
  Numéro d'identification du travail. *job_id* est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name =** ] **'***job_name***'**  
+ [  **@job_name =** ] **'***job_name***'**  
  Nom du travail. *job_name* est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
   
- [ **@server_name =** ] **'***server***'**  
+ [  **@server_name =** ] **'***server***'**  
  Nom du serveur vers lequel envoyer le travail. *serveur* est **nvarchar (30)**, avec une valeur par défaut de l’argument '. *serveur*peut être **(LOCAL)** pour un serveur local, ou le nom du serveur cible existant.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -66,7 +63,7 @@ sp_add_jobserver [ @job_id = ] job_id | [ @job_name = ] 'job_name'
  Aucun  
   
 ## <a name="remarks"></a>Notes  
- **@automatic_post**Il existe dans **sp_add_jobserver**, mais n’est ne pas répertorié dans les Arguments. **@automatic_post**est réservé à un usage interne.  
+ **@automatic_post** Il existe dans **sp_add_jobserver**, mais n’est ne pas répertorié dans les Arguments. **@automatic_post** est réservé à un usage interne.  
   
  [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] est un outil dont l'interface graphique permet de gérer facilement les travaux. Son utilisation est recommandée pour créer et gérer l'infrastructure des travaux.  
   

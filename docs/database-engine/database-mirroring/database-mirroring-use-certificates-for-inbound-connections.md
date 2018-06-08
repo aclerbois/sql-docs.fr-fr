@@ -1,34 +1,33 @@
 ---
-title: "Mise en miroir de bases de données - Utiliser des certificats pour les connexions entrantes | Microsoft Docs"
-ms.custom: 
+title: Mise en miroir de bases de données - Utiliser des certificats pour les connexions entrantes | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
+ms.prod: sql
+ms.prod_service: high-availability
 ms.component: database-mirroring
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - certificates [SQL Server], database mirroring
 - inbound connections
 - database mirroring [SQL Server], security
 ms.assetid: 5d48bb98-61f0-4b99-8f1a-b53f831d63d0
-caps.latest.revision: "31"
+caps.latest.revision: 31
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 4a4ee4de6d4edf484921bfb8ffcad2122072ad39
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 413a4e3e6d9f85e7221ef7b52377c436547622da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-mirroring---use-certificates-for-inbound-connections"></a>Mise en miroir de bases de données - Utiliser des certificats pour les connexions entrantes
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette rubrique décrit les étapes requises pour configurer les instances de serveur afin qu’elles utilisent les certificats pour authentifier les connexions entrantes dans le cadre de la mise en miroir de bases de données. Avant de définir des connexions entrantes, vous devez configurer les connexions sortantes sur chacune des instances du serveur. Pour plus d’informations, consultez [Autoriser un point de terminaison de mise en miroir de bases de données à utiliser des certificats pour les connexions sortantes &#40;Transact-SQL&#41;](../../database-engine/database-mirroring/database-mirroring-use-certificates-for-outbound-connections.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette rubrique décrit les étapes requises pour configurer les instances de serveur afin qu'elles utilisent les certificats pour authentifier les connexions entrantes dans le cadre de la mise en miroir de bases de données. Avant de définir des connexions entrantes, vous devez configurer les connexions sortantes sur chacune des instances du serveur. Pour plus d’informations, consultez [Autoriser un point de terminaison de mise en miroir de bases de données à utiliser des certificats pour les connexions sortantes &#40;Transact-SQL&#41;](../../database-engine/database-mirroring/database-mirroring-use-certificates-for-outbound-connections.md).  
   
  La configuration des connexions entrantes se fait en quatre temps, à savoir :  
   

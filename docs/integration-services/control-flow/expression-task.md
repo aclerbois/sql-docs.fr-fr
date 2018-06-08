@@ -1,30 +1,28 @@
 ---
-title: "Expression, tâche | Microsoft Docs"
-ms.custom: 
+title: Expression, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.DTS.DESIGNER.EXPRESSIONTASK.F1
 ms.assetid: 1d7f042d-508d-4e1a-b83a-86a18e23b85f
-caps.latest.revision: 
+caps.latest.revision: 10
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a2040034f97bc9ffb1007ac2344654e42b112a97
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 3dab96918d729086048ac32873434d6504961a19
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="expression-task"></a>Tâche d'expression
   La tâche d'expression crée et évalue les expressions qui définissent les valeurs des variables au moment de l'exécution, à l'aide du Générateur d'expressions. Lorsque vous modifiez la tâche, le [Expression Builder](../../integration-services/expressions/expression-builder.md) est lancé.  

@@ -1,16 +1,14 @@
 ---
-title: core.sp_add_collector_type (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Core.sp_add_collector_type (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_collector_type
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sp_add_collector_type
 - data collector [SQL Server], stored procedures
 ms.assetid: 1d981037-2147-464e-a456-7d8e479bce89
-caps.latest.revision: 
+caps.latest.revision: 18
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 7761bdb3dc0448d2f9303688ec7a4774056b1808
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 486a51f5f521c0a3af647bc4d7242f3696727789
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="corespaddcollectortype-transact-sql"></a>core.sp_add_collector_type (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +46,7 @@ core.sp_add_collector_type [ @collector_type_uid = ] 'collector_type_uid'
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ @collector_type_uid = ] '*collector_type_uid*'  
+ [ @collector_type_uid =] '*collector_type_uid*'  
  GUID pour le type de collecteur. *collector_type_uid* est **uniqueidentifier**, sans valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  

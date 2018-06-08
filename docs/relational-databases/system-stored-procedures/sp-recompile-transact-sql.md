@@ -1,16 +1,14 @@
 ---
 title: sp_recompile (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_recompile_TSQL
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_recompile
 ms.assetid: 6192ca87-febd-4075-8199-14b4fa609b8c
-caps.latest.revision: 
+caps.latest.revision: 36
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 200bf01ba1127281d5ff25b9c69f3616c4cf64bd
-ms.sourcegitcommit: 2208a909ab09af3b79c62e04d3360d4d9ed970a7
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 484008523d109f8852cdef34911c52d8f081218f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/02/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sprecompile-transact-sql"></a>sp_recompile (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -52,7 +50,7 @@ sp_recompile [ @objname = ] 'object'
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou un nombre différent de zéro (échec)  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  sp_recompile ne recherche un objet que dans la base de données active.  
   
  Les requêtes utilisées par les procédures stockées ou les déclencheurs et les fonctions définies par l'utilisateur ne sont optimisées que quand elles sont compilées. À mesure que vous ajoutez des index à votre base de données ou que vous y apportez d'autres changements modifiant ses statistiques, les procédures stockées, les déclencheurs et les fonctions définies par l'utilisateur compilés peuvent perdre de leur efficacité. En recompilant les procédures stockées et les déclencheurs qui agissent sur une table, vous pouvez réoptimiser les requêtes.  

@@ -1,30 +1,28 @@
 ---
-title: "Fonctionnement des groupes (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Fonctionnement des groupes (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - "10056"
 - "10424"
 ms.assetid: c32d4d89-45e4-4f77-a3e9-0429f53f9d6f
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Active
-ms.openlocfilehash: 6972387a10c596256f0eef54e14054ae5adc9b38
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 43dc5ff283b55d76aa31e9317131508fcafdc395
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-groups-report-builder-and-ssrs"></a>Fonctionnement des groupes (Générateur de rapports et SSRS)
   Dans un rapport paginé [!INCLUDE[ssRSnoversion_md](../../includes/ssrsnoversion-md.md)] , un groupe est un jeu de données nommé provenant du dataset du rapport qui est lié à une région de données. En principe, un groupe organise une vue d'un dataset du rapport. Tous les groupes d'une région de données spécifient des vues différentes du même dataset de rapport.  

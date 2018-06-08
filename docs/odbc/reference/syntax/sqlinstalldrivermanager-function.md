@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLInstallDriverManager | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLInstallDriverManager
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLInstallDriverManager
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLInstallDriverManager
-helpviewer_keywords: SQLInstallDriverManager function [ODBC]
+f1_keywords:
+- SQLInstallDriverManager
+helpviewer_keywords:
+- SQLInstallDriverManager function [ODBC]
 ms.assetid: aebc439b-fffd-4d98-907a-0163f79aee8d
-caps.latest.revision: "12"
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 7d1769b4951662f99cd50709b498891540fd4b9c
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 739af9f6d97dbd4595a3c18254ab53f2a9db10f6
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlinstalldrivermanager-function"></a>SQLInstallDriverManager (fonction)
 **Mise en conformité**  
@@ -61,7 +62,7 @@ BOOL SQLInstallDriverManager(
 ## <a name="diagnostics"></a>Diagnostics  
  Lorsque **SQLInstallDriverManager** renvoie la valeur FALSE, associé à un  *\*pfErrorCode* valeur peut être obtenue en appelant **SQLInstallerError**. Le tableau suivant répertorie les  *\*pfErrorCode* les valeurs qui peuvent être retournées par **SQLInstallerError** et explique chacune d’elles dans le contexte de cette fonction.  
   
-|*\*pfErrorCode*|Error|Description|  
+|*\*pfErrorCode*|Erreur| Description|  
 |---------------------|-----------|-----------------|  
 |ODBC_ERROR_GENERAL_ERR|Erreur du programme d’installation générales|Une erreur s’est produite pour lequel aucune erreur d’installation spécifique s’est produite.|  
 |ODBC_ERROR_INVALID_BUFF_LEN|Longueur de la mémoire tampon non valide|Le *lpszPath* argument n’était pas suffisamment grande pour contenir le chemin de sortie. La mémoire tampon contient le chemin d’accès tronquée.<br /><br /> Le *cbPathMax* argument était inférieure à _MAX_PATH.|  

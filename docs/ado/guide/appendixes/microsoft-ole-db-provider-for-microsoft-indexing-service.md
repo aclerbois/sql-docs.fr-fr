@@ -1,32 +1,29 @@
 ---
-title: "Fournisseur Microsoft OLE DB pour le Service d’indexation Microsoft | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: Fournisseur Microsoft OLE DB pour le Service d’indexation Microsoft | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Indexing Service provider [ADO]
 - providers [ADO], OLE DB provider for Microsoft Indexing service
 - OLE DB provider for Microsoft Indexing service [ADO]
 ms.assetid: f86a0598-5097-471b-8318-d2c859d085f2
-caps.latest.revision: 
+caps.latest.revision: 15
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 861d5d18c3a3ba72d4f4b5ef6fc01f0e6a0e9fc8
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8dc341794d419559b3683c06d51766d2e7b6287a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-ole-db-provider-for-microsoft-indexing-service-overview"></a>Fournisseur Microsoft OLE DB pour l’indexation de vue d’ensemble du Service Microsoft
 Le fournisseur Microsoft OLE DB pour le Service d’indexation Microsoft fournit un accès en lecture seule par programmation pour le système de fichiers et données Web indexées par le Service d’indexation Microsoft. Les applications ADO peuvent émettre des requêtes SQL pour récupérer des informations de propriété de contenu et de fichiers.
@@ -79,10 +76,10 @@ MSIDXS
 |[AbsolutePosition](../../../ado/reference/ado-api/absoluteposition-property-ado.md)|lecture/écriture|
 |[ActiveConnection](../../../ado/reference/ado-api/activeconnection-property-ado.md)|Lecture seule|
 |[BOF](../../../ado/reference/ado-api/bof-eof-properties-ado.md)|Lecture seule|
-|[Bookmark](../../../ado/reference/ado-api/bookmark-property-ado.md)*|lecture/écriture|
+|[Signet](../../../ado/reference/ado-api/bookmark-property-ado.md)*|lecture/écriture|
 |[CacheSize](../../../ado/reference/ado-api/cachesize-property-ado.md)|lecture/écriture|
-|[CursorLocation](../../../ado/reference/ado-api/cursorlocation-property-ado.md)|always **adUseServer**|
-|[CursorType](../../../ado/reference/ado-api/cursortype-property-ado.md)|always **adOpenStatic**|
+|[CursorLocation](../../../ado/reference/ado-api/cursorlocation-property-ado.md)|toujours **adUseServer**|
+|[CursorType](../../../ado/reference/ado-api/cursortype-property-ado.md)|toujours **adOpenStatic**|
 |[EditMode](../../../ado/reference/ado-api/editmode-property.md)|toujours **adEditNone**|
 |[EOF](../../../ado/reference/ado-api/bof-eof-properties-ado.md)|Lecture seule|
 |[Filtre](../../../ado/reference/ado-api/filter-property.md)|lecture/écriture|

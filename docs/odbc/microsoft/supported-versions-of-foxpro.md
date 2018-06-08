@@ -1,16 +1,14 @@
 ---
 title: Prise en charge des Versions de FoxPro | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FoxPro ODBC driver [ODBC], supported versions
 - installing Visual FoxPro ODBC driver [ODBC]
@@ -18,16 +16,15 @@ helpviewer_keywords:
 - Visual FoxPro ODBC driver [ODBC], supported versions
 - FoxPro ODBC driver [ODBC], installing
 ms.assetid: 203fdabe-9b5c-4840-824c-792b508262c2
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1330773f8521b1fc6edcefc6074f77c3579e9051
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: fad5e57b2b56bf43aa418693e04c0c8d32fde4a3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-versions-of-foxpro"></a>Versions prises en charge de FoxPro
 Vous pouvez utiliser le pilote ODBC Microsoft® Visual FoxPro®, pour accéder aux données stockées dans des tables FoxPro. Les versions suivantes de données FoxPro sont prises en charge :  

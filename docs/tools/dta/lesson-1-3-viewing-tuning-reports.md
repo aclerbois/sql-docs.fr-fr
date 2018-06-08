@@ -1,32 +1,33 @@
 ---
-title: "Affichage des rapports de paramétrage | Documents Microsoft"
-ms.custom: 
+title: Affichage des rapports de paramétrage | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: dta
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-query-tuning
-ms.tgt_pltfrm: 
-ms.topic: article
-applies_to: SQL Server 2016
-helpviewer_keywords: tuning reports [SQL Server]
+ms.technology: performance
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+applies_to:
+- SQL Server 2016
+helpviewer_keywords:
+- tuning reports [SQL Server]
 ms.assetid: daee6143-269f-428b-8458-9a3e726d586c
-caps.latest.revision: "21"
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c986b13e3c38e168f7384a6552befca085f9be2f
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
-ms.translationtype: MT
+ms.openlocfilehash: c65833c170fb8ef258fd97e5e6ad9bd9589ef621
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: MTE
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="lesson-1-3---viewing-tuning-reports"></a>Leçon 1-3 - affichage de rapports de paramétrage
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]Dans l’exercice précédent de cette leçon, vous avez affiché le [!INCLUDE[tsql](../../includes/tsql-md.md)] des scripts qui créent ou suppriment des objets de base de données dans les recommandations de paramétrage du moteur de base de données qui ont été générées à la suite de la session de paramétrage MySession. La session de paramétrage MySession a été créée dans [Tuning a Workload](../../tools/dta/lesson-1-1-tuning-a-workload.md).  
+# <a name="lesson-1-3---viewing-tuning-reports"></a>Leçon 1-3 : Affichage des rapports de paramétrage
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+Au cours de l'exercice précédent de cette leçon, vous avez affiché les scripts [!INCLUDE[tsql](../../includes/tsql-md.md)] qui permettent de créer ou de supprimer des objets de base de données dans les recommandations de l'Assistant Paramétrage du moteur de base de données générées en résultat de la session de paramétrage MySession. La session de paramétrage MySession a été créée dans [Tuning a Workload](../../tools/dta/lesson-1-1-tuning-a-workload.md).  
   
 Bien qu'il soit très utile d'afficher les scripts utilisables pour implémenter les résultats du paramétrage, l'Assistant Paramétrage du moteur de base de données fournit également de nombreux rapports utiles que vous pouvez afficher. Ces rapports fournissent des informations sur les structures de création physiques existantes dans la base de données que vous paramétrez et sur les structures recommandées. Pour afficher les rapports de paramétrage, cliquez sur l'onglet **Rapports** comme décrit dans l'exercice qui suit. Cet exercice utilise les sessions de paramétrage MySession et EvaluateMySession (ÉvaluerMaSession) que vous avez créées dans les sections [Tuning a Workload](../../tools/dta/lesson-1-1-tuning-a-workload.md) et [Viewing Tuning Recommendations](../../tools/dta/lesson-1-2-viewing-tuning-recommendations.md)du didacticiel.  
   
@@ -52,7 +53,7 @@ Bien qu'il soit très utile d'afficher les scripts utilisables pour implémenter
 Vous avez parcouru l'onglet **Rapports** de l'interface utilisateur graphique de l'Assistant Paramétrage du moteur de base de données pour la session de paramétrage MySession. Vous pouvez suivre ces mêmes étapes pour parcourir les rapports générés pour la session de paramétrage EvaluateMySession (ÉvaluerMaSession). Double-cliquez sur **EvaluateMySession** dans le volet **Moniteur de session** pour commencer.  
   
 ## <a name="next-lesson"></a>Leçon suivante  
-[Leçon 3 : Utilisation de l’utilitaire d’invite de commandes dta](../../tools/dta/lesson-3-using-the-dta-command-prompt-utility.md)  
+[Leçon 3 : Utilisation de l'utilitaire de ligne de commande dta](../../tools/dta/lesson-3-using-the-dta-command-prompt-utility.md)  
   
   
   

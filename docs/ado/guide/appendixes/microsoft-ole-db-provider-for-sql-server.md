@@ -1,17 +1,15 @@
 ---
 title: Fournisseur Microsoft OLE DB pour SQL Server | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.custom: ''
 ms.date: 01/19/2017
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - providers [ADO], OLE DB provider for SQL Server
 - OLE DB provider for SQL Server [ADO]
@@ -21,12 +19,11 @@ caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 69e32ae7ddb254e18d0789f22bb6471da17a0c5e
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+ms.openlocfilehash: bbe50621dc248a3f11368717bbe9423b5a8b59e3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="microsoft-ole-db-provider-for-sql-server-overview"></a>Fournisseur Microsoft OLE DB pour la présentation de SQL Server
 Le fournisseur Microsoft OLE DB pour SQL Server, SQLOLEDB, permet à ADO pour accéder à Microsoft SQL Server.
@@ -217,7 +214,7 @@ EXECUTE SalesByCategory 'Produce', '1995'
 |Ordre d’accès|DBPROP_ACCESSORDER|
 |Blocage des objets de stockage|DBPROP_BLOCKINGSTORAGEOBJECTS|
 |Type de signet|DBPROP_BOOKMARKTYPE|
-|Bookmarkable|DBPROP_IROWSETLOCATE|
+|Signet|DBPROP_IROWSETLOCATE|
 |Modifier les lignes insérées|DBPROP_CHANGEINSERTEDROWS|
 |Privilèges de colonne|DBPROP_COLUMNRESTRICT|
 |Notification de jeu de colonnes|DBPROP_NOTIFYCOLUMNSET|
@@ -290,7 +287,7 @@ EXECUTE SalesByCategory 'Produce', '1995'
 |Chemin d’accès de base|SSPROP_STREAM_BASEPATH|
 |Blocage des objets de stockage|DBPROP_BLOCKINGSTORAGEOBJECTS|
 |Type de signet|DBPROP_BOOKMARKTYPE|
-|Bookmarkable|DBPROP_IROWSETLOCATE|
+|Signet|DBPROP_IROWSETLOCATE|
 |Modifier les lignes insérées|DBPROP_CHANGEINSERTEDROWS|
 |Privilèges de colonne|DBPROP_COLUMNRESTRICT|
 |Notification de jeu de colonnes|DBPROP_NOTIFYCOLUMNSET|

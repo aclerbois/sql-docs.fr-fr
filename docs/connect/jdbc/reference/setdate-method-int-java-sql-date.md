@@ -1,30 +1,29 @@
 ---
-title: "Méthode setDate à la valeur de date - int | Documents Microsoft"
-ms.custom: 
+title: Méthode setDate à la valeur de date - int | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerPreparedStatement.setDate (int, java.sql.Date)
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerPreparedStatement.setDate (int, java.sql.Date)
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 12e5a4cc-45a2-4779-bbfc-e4da66829588
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1f6011bc3a9bbf0e2b75a6137ba954605bcff3d8
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 40e146a24167b8e3f92aa8c92c92df35b7f7f136
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setdate-method-int-javasqldate"></a>Méthode setDate (int, java.sql.Date)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -55,8 +54,8 @@ public final void setDate(int n,
  Cette méthode setDate est spécifiée par la méthode setDate dans l’interface java.sql.PreparedStatement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode setDate &#40; SQLServerPreparedStatement &#41;](../../../connect/jdbc/reference/setdate-method-sqlserverpreparedstatement.md)   
- [Membres de SQLServerPreparedStatement](../../../connect/jdbc/reference/sqlserverpreparedstatement-members.md)   
+ [Méthode setDate &#40;SQLServerPreparedStatement&#41;](../../../connect/jdbc/reference/setdate-method-sqlserverpreparedstatement.md)   
+ [SQLServerPreparedStatement, membres](../../../connect/jdbc/reference/sqlserverpreparedstatement-members.md)   
  [SQLServerPreparedStatement, classe](../../../connect/jdbc/reference/sqlserverpreparedstatement-class.md)  
   
   

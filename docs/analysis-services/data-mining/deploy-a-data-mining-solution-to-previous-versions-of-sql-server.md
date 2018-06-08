@@ -1,39 +1,23 @@
 ---
-title: "Déployer une Solution d’exploration de données pour les Versions précédentes de SQL Server | Documents Microsoft"
-ms.custom: 
-ms.date: 03/13/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- backward compatibility [Analysis Services]
-- holdout [data mining]
-- deploy [Analysis Services]
-- time series [Analysis Services]
-- deploying [Analysis Services - data mining]
-- synchronization [Analysis Services]
-- deployment [Analysis Services]
-ms.assetid: 2715c245-f206-43af-8bf5-e6bd2585477a
-caps.latest.revision: 
-author: Minewiskan
+title: Déployer une Solution d’exploration de données pour les Versions précédentes de SQL Server | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: f082d488439f1331c009352bc7d691b7703f0e32
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: df527197f0ddd1eacc2e86e59092f45b1ac78c9a
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="deploy-a-data-mining-solution-to-previous-versions-of-sql-server"></a>Déployer une solution d'exploration de données sur des versions antérieures de SQL Server
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Cette section décrit des problèmes de compatibilité connus qui peuvent survenir lorsque vous essayez de déployer un modèle d'exploration de données ou une structure d'exploration de données créée dans une instance de [!INCLUDE[ssASCurrent](../../includes/ssascurrent-md.md)] sur une base de données qui utilise SQL Server 2005 Analysis Services, ou lorsque vous déployez des modèles créés dans SQL Server 2005 sur une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+  Cette section décrit des problèmes de compatibilité connus qui peuvent survenir lorsque vous essayez de déployer un modèle d'exploration de données ou une structure d'exploration de données créée dans une instance de [!INCLUDE[ssASCurrent](../../includes/ssascurrent-md.md)] sur une base de données qui utilise SQL Server 2005 Analysis Services, ou lorsque vous déployez des modèles créés dans SQL Server 2005 sur une instance de [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
  Le déploiement sur une instance de SQL Server 2000 Analysis Services n'est pas pris en charge.  
   

@@ -1,32 +1,29 @@
 ---
-title: "Écrivez une Application interopérable | Documents Microsoft"
-ms.custom: 
+title: Écrivez une Application interopérable | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interoperability [ODBC], feature support and variability
 - interoperability [ODBC], writing interoperable applications
 - feature support in interoperable applications [ODBC]
 - feature variability in interoperable applications [ODBC]
 ms.assetid: 8b42b8ae-7862-4b63-a0b3-2a204e0c43a5
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 151963c23abce0f737671dd73dec1d971998228e
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 6aae50c316072c0970ffea4eb953f4e0ee86c5d5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="writing-an-interoperable-application"></a>Écrivez une Application interopérable
 Chaque fois qu’une application utilise le même code sur plusieurs pilotes, ce code doit être interopérable parmi ces pilotes. Dans la plupart des cas, il s’agit d’une tâche facile. Par exemple, le code pour extraire les lignes avec un curseur avant uniquement est identique pour tous les pilotes. Dans certains cas, cela peut être plus difficile. Par exemple, le code pour construire des identificateurs pour une utilisation dans les instructions SQL doit prendre en compte la casse de l’identificateur, des guillemets et des conventions de dénomination en trois parties, en deux parties et une seule partie.  

@@ -1,16 +1,14 @@
 ---
 title: ADD SIGNATURE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 05/15/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - ADD SIGNATURE
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - signatures [SQL Server]
 - digital signatures [SQL Server]
 ms.assetid: 64d8b682-6ec1-4e5b-8aee-3ba11e72d21f
-caps.latest.revision: 
+caps.latest.revision: 50
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 022c07cfc66694642da57042284c638ca1587496
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: c7b93aedbd36a7a538a56efad75ef98f223a85b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="add-signature-transact-sql"></a>ADD SIGNATURE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -90,7 +87,7 @@ ADD [ COUNTER ] SIGNATURE TO module_class::module_name
   
  Les fonctions table inline ne peuvent pas être signées.  
   
- Des informations sur les signatures sont visibles dans la vue de catalogue sys.crypt_properties.  
+ Des informations sur les signatures sont visibles dans l'affichage catalogue sys.crypt_properties.  
   
 > [!WARNING]  
 >  Lorsqu'on recrée une procédure pour la signature, toutes les instructions du traitement d'origine doivent correspondre au traitement de recréation. Si une partie du traitement est différée, même au niveau des espaces ou des commentaires, la signature obtenue sera différente.  

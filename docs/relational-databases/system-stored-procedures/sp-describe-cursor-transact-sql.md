@@ -1,16 +1,14 @@
 ---
 title: sp_describe_cursor (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_describe_cursor
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_describe_cursor
 ms.assetid: 0c836c99-1147-441e-998c-f0a30cd05275
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 38eae1442b8058b6596efd525196f2f76b4b6dce
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: 72278631cebc617666317df77fd62e28442b9706
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdescribecursor-transact-sql"></a>sp_describe_cursor (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -72,7 +69,7 @@ sp_describe_cursor [ @cursor_return = ] output_cursor_variable OUTPUT
  Nom d'une variable de curseur associée à un curseur ouvert. *Ne variable_de_curseur_entrée* est **nvarchar (128)**.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
- Aucune  
+ Aucun  
   
 ## <a name="cursors-returned"></a>Curseurs retournés  
  sp_describe_cursor encapsule son jeu de résultats dans un [!INCLUDE[tsql](../../includes/tsql-md.md)] **curseur** paramètre de sortie. Cela permet aux lots, procédures stockées et déclencheurs [!INCLUDE[tsql](../../includes/tsql-md.md)] de travailler sur une seule ligne de sortie à la fois. Cela signifie également que la procédure ne peut pas être appelée directement à partir des fonctions d’API de base de données. Le **curseur** paramètre de sortie doit être lié à une variable de programme, mais l’API de bases de données ne prennent pas en charge liaison **curseur** variables ou des paramètres.  
@@ -89,10 +86,10 @@ sp_describe_cursor [ @cursor_return = ] output_cursor_variable OUTPUT
 |concurrence|**tinyint**|1 = lecture seule<br /><br /> 2 = Verrous de défilement<br /><br /> 3 = Optimiste|  
 |scrollable|**tinyint**|0 = Avant uniquement<br /><br /> 1 = À défilement|  
 |open_status|**tinyint**|0 = Fermé<br /><br /> 1 = Ouvert|  
-|cursor_rows|**Decimal(10,0)**|Nombre de lignes correspondantes dans le jeu de résultats. Pour plus d’informations, consultez [@@CURSOR_ROWS &#40; Transact-SQL &#41; ](../../t-sql/functions/cursor-rows-transact-sql.md).|  
-|fetch_status|**smallint**|État de la dernière extraction sur ce curseur. Pour plus d’informations, consultez [@@FETCH_STATUS &#40; Transact-SQL &#41; ](../../t-sql/functions/fetch-status-transact-sql.md).<br /><br /> 0 = Opération d'extraction réussie.<br /><br /> -1 = L'opération d'extraction a échoué ou est hors des limites du curseur.<br /><br /> -2 = La ligne demandée est manquante.<br /><br /> -9 = Il n'y a pas eu d'opération d'extraction sur le curseur.|  
+|cursor_rows|**Decimal(10,0)**|Nombre de lignes correspondantes dans le jeu de résultats. Pour plus d’informations, consultez [@@CURSOR_ROWS &#40;Transact-SQL&#41;](../../t-sql/functions/cursor-rows-transact-sql.md).|  
+|fetch_status|**smallint**|État de la dernière extraction sur ce curseur. Pour plus d’informations, consultez [@@FETCH_STATUS &#40;Transact-SQL&#41;](../../t-sql/functions/fetch-status-transact-sql.md).<br /><br /> 0 = Opération d'extraction réussie.<br /><br /> -1 = L'opération d'extraction a échoué ou est hors des limites du curseur.<br /><br /> -2 = La ligne demandée est manquante.<br /><br /> -9 = Il n'y a pas eu d'opération d'extraction sur le curseur.|  
 |column_count|**smallint**|Nombre de colonnes dans le jeu de résultats du curseur|  
-|row_count|**Decimal(10,0)**|Nombre de lignes affectées par la dernière opération sur le curseur. Pour plus d’informations, consultez [@@ROWCOUNT &#40; Transact-SQL &#41; ](../../t-sql/functions/rowcount-transact-sql.md).|  
+|row_count|**Decimal(10,0)**|Nombre de lignes affectées par la dernière opération sur le curseur. Pour plus d’informations, consultez [@@ROWCOUNT &#40;Transact-SQL&#41;](../../t-sql/functions/rowcount-transact-sql.md).|  
 |last_operation|**tinyint**|Dernière opération effectuée sur le curseur :<br /><br /> 0 = Aucune opération n'a été effectuée sur le curseur.<br /><br /> 1 = OPEN<br /><br /> 2 = FETCH<br /><br /> 3 = INSERTION<br /><br /> 4 = UPDATE<br /><br /> 5 = SUPPRESSION<br /><br /> 6 = CLOSE<br /><br /> 7 = DEALLOCATE|  
 |cursor_handle|**int**|Valeur unique pour le curseur dans l'étendue du serveur.|  
   
@@ -101,7 +98,7 @@ sp_describe_cursor [ @cursor_return = ] output_cursor_variable OUTPUT
   
  Une instruction DECLARE CURSOR peut demander un type de curseur que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne peut pas prendre en charge en utilisant l'instruction SELECT contenue dans DECLARE CURSOR. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] convertit de manière implicite le curseur en un type qu'il peut prendre en charge en utilisant l'instruction SELECT. Si l'option TYPE_WARNING est spécifiée dans l'instruction DECLARE CURSOR, [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] envoie à l'application un message d'information lui indiquant qu'une conversion a été effectuée. sp_describe_cursor peut ensuite être appelée pour déterminer le type de curseur qui a été implémenté.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Nécessite l'appartenance au rôle public.  
   
 ## <a name="examples"></a>Exemples  
@@ -145,10 +142,10 @@ GO
   
 ## <a name="see-also"></a>Voir aussi  
  [Curseurs](../../relational-databases/cursors.md)   
- [CURSOR_STATUS &#40; Transact-SQL &#41;](../../t-sql/functions/cursor-status-transact-sql.md)   
+ [CURSOR_STATUS &#40;Transact-SQL&#41;](../../t-sql/functions/cursor-status-transact-sql.md)   
  [DECLARE CURSOR &#40;Transact-SQL&#41;](../../t-sql/language-elements/declare-cursor-transact-sql.md)   
- [sp_cursor_list &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-cursor-list-transact-sql.md)   
- [sp_describe_cursor_columns &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-columns-transact-sql.md)   
- [sp_describe_cursor_tables &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-tables-transact-sql.md)  
+ [sp_cursor_list &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-cursor-list-transact-sql.md)   
+ [sp_describe_cursor_columns &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-columns-transact-sql.md)   
+ [sp_describe_cursor_tables &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-describe-cursor-tables-transact-sql.md)  
   
   

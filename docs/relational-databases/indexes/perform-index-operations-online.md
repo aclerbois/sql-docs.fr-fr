@@ -1,31 +1,29 @@
 ---
-title: "Exécuter des opérations en ligne sur les index | Microsoft Docs"
-ms.custom: 
+title: Exécuter des opérations en ligne sur les index | Microsoft Docs
+ms.custom: ''
 ms.date: 02/17/2017
-ms.prod: sql-non-specified
-ms.reviewer: 
-ms.technology: dbe-indexes
-ms.tgt_pltfrm: 
+ms.prod: sql
+ms.reviewer: ''
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
 ms.topic: article
 helpviewer_keywords:
 - index online operations [SQL Server]
 - online index operations
 - ONLINE option
 ms.assetid: 1e43537c-bf67-4db3-9908-3cb45c6fdaa1
-caps.latest.revision: 
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
+caps.latest.revision: 32
+author: MikeRayMSFT
+ms.author: mikeray
+manager: craigg
 ms.suite: sql
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: indexes
-ms.workload: On Demand
-ms.openlocfilehash: 351514dddb4e1491465192e1e535ec104d578a95
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.prod_service: table-view-index, sql-database
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 732c0510f2744df1dd361fa5e32077c571d47c9c
+ms.sourcegitcommit: d2573a8dec2d4102ce8882ee232cdba080d39628
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/07/2018
 ---
 # <a name="perform-index-operations-online"></a>Exécuter des opérations en ligne sur les index
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]

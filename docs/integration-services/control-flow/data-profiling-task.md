@@ -1,17 +1,16 @@
 ---
-title: "Profilage des données, tâche | Microsoft Docs"
-ms.custom: 
+title: Profilage des données, tâche | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.dataprofilingtask.f1
 helpviewer_keywords:
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - data profiling
 - profiling data
 ms.assetid: 248ce233-4342-42c5-bf26-f4387ea152cf
-caps.latest.revision: 
+caps.latest.revision: 32
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 62c240d11e15eea39fb7246d147680b39370c7a6
-ms.sourcegitcommit: 6bd21109abedf64445bdb3478eea5aaa7553fa46
-ms.translationtype: MT
+ms.openlocfilehash: a59e91ef39974021474d90bb65885b80831307da
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
+ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-profiling-task"></a>Tâche de profilage des données
   La tâche de profilage des données calcule différents profils qui vous aident à vous familiariser avec une source de données et à identifier les problèmes à résoudre au niveau des données.  
@@ -56,17 +54,17 @@ ms.lasthandoff: 03/20/2018
   
  Les cinq profils suivants analysent des colonnes individuelles.  
   
-|Profils qui analysent des colonnes individuelles| Description|  
+|Profils qui analysent des colonnes individuelles|Description|  
 |----------------------------------------------|-----------------|  
 |Profil de distribution de longueurs de colonne|Signale toutes les longueurs distinctes des valeurs de chaîne dans la colonne sélectionnée, ainsi que le pourcentage de lignes dans la table que chaque longueur représente.<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels que des valeurs non valides. Par exemple, vous profilez une colonne des codes des États américains, ceux-ci comportant deux caractères, et découvrez des valeurs excédant deux caractères.|  
 |Profil de ratio de colonne Null|Signale le pourcentage de valeurs Null dans la colonne sélectionnée.<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels qu'un ratio élevé inattendu de valeurs Null dans une colonne. Par exemple, vous profilez une colonne de codes postaux et découvrez un pourcentage élevé et inacceptable de codes manquants.|  
-|Profil de modèle de colonne|Signale un ensemble d'expressions régulières qui reflètent le pourcentage spécifié de valeurs dans une colonne de chaîne.<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels que des chaînes non valides. Il peut également suggérer des expressions régulières susceptibles d'être utilisées à l'avenir pour la validation de nouvelles valeurs. Par exemple, un profil de motif d’une colonne de codes postaux américains peut générer les expressions régulières suivantes : \d{5}-\d{4}, \d{5} et \d{9}. Si vous rencontrez d'autres expressions régulières, il est probable que vos données contiennent des valeurs qui ne sont pas valides ou utilisent un format incorrect.|  
+|Profil de modèle de colonne|Signale un ensemble d'expressions régulières qui reflètent le pourcentage spécifié de valeurs dans une colonne de chaîne.<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels que des chaînes non valides. Il peut également suggérer des expressions régulières susceptibles d'être utilisées à l'avenir pour la validation de nouvelles valeurs. Par exemple, un profil de modèle d'une colonne de codes postaux américains peut générer les expressions régulières \d{5}-\d{4}, \d{5} et \d{9}. Si vous rencontrez d'autres expressions régulières, il est probable que vos données contiennent des valeurs qui ne sont pas valides ou utilisent un format incorrect.|  
 |Profil de statistiques de colonnes|Fournit des statistiques, telles que la valeur minimale, la valeur maximale, la moyenne et l’écart type pour des colonnes numériques, ainsi que la valeur minimale et la valeur maximale pour des colonnes **datetime** .<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels que des dates non valides. Par exemple, vous profilez une colonne de dates historiques et découvrez une date maximum dont l'échéance est à venir.|  
 |Profil de distribution de valeurs de colonne|Signale toutes les valeurs distinctes dans la colonne sélectionnée, ainsi que le pourcentage de lignes dans la table que chaque valeur représente. Peut également signaler des valeurs qui représentent plus qu'un pourcentage de lignes spécifié dans la table.<br /><br /> Ce profil vous aide à identifier des problèmes dans vos données, tels qu'un nombre incorrect de valeurs distinctes dans une colonne. Par exemple, vous profilez une colonne supposée contenir les États américains et découvrez plus de 50 valeurs distinctes.|  
   
  Les trois profils suivants analysent plusieurs colonnes ou les relations entre des colonnes et des tables.  
   
-|Profils qui analysent plusieurs colonnes| Description|  
+|Profils qui analysent plusieurs colonnes|Description|  
 |--------------------------------------------|-----------------|  
 |Profil de clé candidate|Signale si une colonne ou un ensemble de colonnes est une clé, ou une clé approximative, pour la table sélectionnée.<br /><br /> Ce profil vous aide également à identifier des problèmes dans vos données, tels que des valeurs dupliquées dans une colonne clé potentielle.|  
 |Profil de dépendance fonctionnelle|Signale le degré de dépendance entre les valeurs d'une colonne (colonne dépendante) et celles d'une autre colonne ou d'un ensemble de colonnes (colonne déterminante).<br /><br /> Ce profil vous aide également à identifier des problèmes dans vos données, tels que des valeurs non valides. Par exemple, vous profilez la dépendance entre une colonne qui contient les codes postaux américains et une colonne qui contient les États américains. Le même code postal doit toujours afficher le même état mais le profil détecte des violations de la dépendance.|  
@@ -118,12 +116,12 @@ ms.lasthandoff: 03/20/2018
 ## <a name="custom-logging-messages-available-on-the-data-profililng-task"></a>Messages de journalisation personnalisés disponibles dans la tâche de profilage des données  
  Le tableau suivant répertorie les entrées de journal personnalisées pour la tâche de profilage des données. Pour plus d’informations, consultez [Journalisation Integration Services &#40;SSIS&#41;](../../integration-services/performance/integration-services-ssis-logging.md).  
   
-|Entrée du journal| Description|  
+|Entrée du journal|Description|  
 |---------------|-----------------|  
 |**DataProfilingTaskTrace**|Donne des informations détaillées sur l'état de la tâche. Les messages contiennent les informations suivantes :<br /><br /> Début de traitement des requêtes<br /><br /> Début de requête<br /><br /> Query End<br /><br /> Fin du calcul de requête|  
   
 ## <a name="output-and-its-schema"></a>Sortie et son schéma  
- La tâche de profilage des données génère en sortie les profils sélectionnés en langage XML structuré conformément au schéma DataProfile.xsd. Vous pouvez préciser si cette sortie XML doit être enregistrée dans un fichier ou dans une variable de package. Vous pouvez afficher ce schéma en ligne à [ http://schemas.microsoft.com/sqlserver/2008/DataDebugger/ ](http://schemas.microsoft.com/sqlserver/2008/DataDebugger/). Vous pouvez, à partir de la page web, enregistrer une copie locale du schéma. Vous pouvez ensuite afficher la copie locale du schéma dans Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ou un autre éditeur de schéma, dans un éditeur XML ou encore dans un éditeur de texte tel que le Bloc-notes.  
+ La tâche de profilage des données génère en sortie les profils sélectionnés en langage XML structuré conformément au schéma DataProfile.xsd. Vous pouvez préciser si cette sortie XML doit être enregistrée dans un fichier ou dans une variable de package. Vous pouvez voir ce schéma en ligne sur [http://schemas.microsoft.com/sqlserver/2008/DataDebugger/](http://schemas.microsoft.com/sqlserver/2008/DataDebugger/). Vous pouvez, à partir de la page web, enregistrer une copie locale du schéma. Vous pouvez ensuite afficher la copie locale du schéma dans Microsoft [!INCLUDE[vsprvs](../../includes/vsprvs-md.md)] ou un autre éditeur de schéma, dans un éditeur XML ou encore dans un éditeur de texte tel que le Bloc-notes.  
   
  Ce schéma pour les informations sur la qualité des données peut être utile pour :  
   
@@ -131,7 +129,7 @@ ms.lasthandoff: 03/20/2018
   
 -   construire des outils personnalisés qui fonctionnent avec les informations sur la qualité des données.  
   
- L’espace de noms cible identifié dans le schéma en tant que [ http://schemas.microsoft.com/sqlserver/2008/DataDebugger/ ](http://schemas.microsoft.com/sqlserver/2008/DataDebugger/).  
+ L’espace de noms cible est identifié dans le schéma en tant que [http://schemas.microsoft.com/sqlserver/2008/DataDebugger/](http://schemas.microsoft.com/sqlserver/2008/DataDebugger/).  
   
 ## <a name="output-in-the-conditional-workflow-of-a-package"></a>Sortie dans le flux de travail conditionnel d'un package  
  Les composants de profilage des données n'incluent pas de fonctionnalités intégrées pour implémenter la logique conditionnelle dans le flux de travail du package [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] basée sur la sortie de la tâche de profilage des données. Toutefois, vous pouvez ajouter facilement cette logique, avec un minimum de programmation, dans une tâche de script. Ce code effectuerait une requête XPath sur la sortie XML, puis enregistrerait le résultat dans une variable de package. Les contraintes de précédence qui connectent la tâche de script aux tâches suivantes peuvent utiliser une expression pour déterminer le flux de travail. Par exemple, la tâche de script détecte que le pourcentage de valeurs Null dans une colonne dépasse un certain seuil. Lorsque cette condition est remplie, vous pouvez interrompre le package et résoudre le problème avant de continuer.  
@@ -145,7 +143,7 @@ ms.lasthandoff: 03/20/2018
  [Page Demandes de profil](../../integration-services/control-flow/data-profiling-task-editor-profile-requests-page.md)  
  Dans la page **Demandes de profil** , vous spécifiez la source de données et vous sélectionnez et configurez les profils de données à calculer. Pour plus d'informations sur les différents profils que vous pouvez configurer, consultez les rubriques suivantes :  
   
--   [Options de demande de profil de clé candidate &#40; &#41; de la tâche de profilage des données](../../integration-services/control-flow/candidate-key-profile-request-options-data-profiling-task.md)  
+-   [Options Demande de profil de clé candidate &#40;tâche de profilage des données&#41;](../../integration-services/control-flow/candidate-key-profile-request-options-data-profiling-task.md)  
   
 -   [Options Demande de profil de distribution de longueurs de colonne &#40;tâche de profilage des données&#41;](../../integration-services/control-flow/column-length-distribution-profile-request-options-data-profiling-task.md)  
   

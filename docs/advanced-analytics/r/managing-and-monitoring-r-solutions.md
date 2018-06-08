@@ -1,25 +1,18 @@
 ---
-title: Gestion et surveillance des solutions d’apprentissage machine | Documents Microsoft
-ms.custom:
-- SQL2016_New_Updated
-ms.date: 07/26/2016
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Gérer et surveiller des solutions d’apprentissage machine dans SQL Server | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: 8fa8eabdb5556f8b46ef46e22d077be43d574687
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 4806224a1606fff58f63f6083fa577aa4066c795
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585701"
 ---
 # <a name="managing-and-monitoring-machine-learning-solutions"></a>Gestion et surveillance des solutions machine learning
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -46,7 +39,7 @@ Pour plus d'informations, consultez ces ressources :
 
 + [Vue d’ensemble de la sécurité Python](../python/security-overview-sql-server-python-services.md)
 
-+ [Installation et gestion des packages R](../../advanced-analytics/r-services/installing-and-managing-r-packages.md)
++ [Par défaut R et Python packages dans SQL Server](installing-and-managing-r-packages.md)
 
 ## <a name="configuration-and-management"></a>Configuration et gestion
 

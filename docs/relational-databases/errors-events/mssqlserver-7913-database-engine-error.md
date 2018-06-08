@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_7913 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 7913 (Database Engine error)
 ms.assetid: 9d8ad456-b1a2-4f79-a252-657fbec9ad9b
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 12
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8d4ba71104f11a9fccb832a47d1ec7535741f200
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 0097fc3d7a2c7729af837146b46b1a77346ec3f9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver7913"></a>MSSQLSERVER_7913
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -44,5 +39,5 @@ ms.lasthandoff: 11/21/2017
 Ce message fourni à titre d'information par REPAIR indique qu'une extension a été libérée de l'objet spécifié.  
   
 ## <a name="user-action"></a>Action de l'utilisateur  
-Aucune  
+None  
   

@@ -1,31 +1,28 @@
 ---
-title: "Annexe d : exemples de ADO | Documents Microsoft"
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: 'Annexe d : exemples de ADO | Documents Microsoft'
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - samples [ADO]
 - ADO, samples
 ms.assetid: 1582e411-55ac-40f0-bd3d-9a10654e4b67
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ebaa64517591b9ea89700557f02c9e17dfa3c72e
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 279e19f7f07144c376946c3155a2767f822c779c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="appendix-d-ado-samples-in-the-windows-sdk"></a>Annexe d : exemples de ADO dans le Kit de développement logiciel Windows
 Le Kit de développement logiciel Windows contient plusieurs exemples d’applications qui illustrent l’utilisation de code ADO et RDS. Ces exemples sont destinés à vous aider à apprendre comment utiliser ADO et des services Bureau à distance, mais ne sont pas destinés à être déployés sur les serveurs de production.

@@ -1,31 +1,28 @@
 ---
-title: "Littéraux de l’intervalle | Documents Microsoft"
-ms.custom: 
+title: Littéraux de l’intervalle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], interval data types
 - interval literals [ODBC]
 - interval data type [ODBC], literals
 ms.assetid: f9e6c3c7-4f98-483f-89d8-ebc5680f021b
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 0ee22a6f808dd1b97d0d865229c78cbf26808fba
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: e86666c4b956b0f926644f0470d7bdf6e8d8dbff
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interval-literals"></a>Littéraux de l’intervalle
 ODBC requiert que tous les pilotes prennent en charge la conversion du type de données SQL_CHAR ou SQL_VARCHAR à tous les types de données d’intervalle C. Si la source de données sous-jacente ne prend pas en charge les types de données interval, toutefois, le pilote doit connaître le format correct de la valeur dans le champ SQL_CHAR pour prendre en charge ces conversions. De même, ODBC requiert que n’importe quel type être convertible en SQL_CHAR ou SQL_VARCHAR, par conséquent, un pilote doit savoir quel format un intervalle stocké dans le champ de caractère de ODBC C doit avoir. Cette section décrit la syntaxe des littéraux de l’intervalle, le writer de pilote doit utiliser pour valider les champs SQL_CHAR lors de la conversion vers ou depuis des types d’intervalle C.  

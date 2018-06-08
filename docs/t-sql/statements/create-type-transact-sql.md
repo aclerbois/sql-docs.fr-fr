@@ -1,16 +1,14 @@
 ---
 title: CREATE TYPE (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/11/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sql13.swb.sysdatatype.properties.f1
@@ -29,16 +27,15 @@ helpviewer_keywords:
 - alias data types [SQL Server], creating
 - data types [SQL Server], creating
 ms.assetid: 2202236b-e09f-40a1-bbc7-b8cff7488905
-caps.latest.revision: 
+caps.latest.revision: 92
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 145f60bcec81e8a29761a44146df025f66a21b80
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: a284d0d144b4cdc091a866d4c660d6a84ad0c2dc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-type-transact-sql"></a>CREATE TYPE (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -168,7 +165,7 @@ column_name <data_type>
  *schema_name*  
  Nom du schéma auquel appartient le type de données d'alias ou défini par l'utilisateur.  
   
- *type_name*  
+ *TYPE_NAME*  
  Nom du type de données d'alias ou défini par l'utilisateur. Les noms de type doivent respecter les règles applicables aux [identificateurs](../../relational-databases/databases/database-identifiers.md).  
   
  *base_type*  
@@ -230,17 +227,17 @@ column_name <data_type>
  Vous devez spécifier les index de table et de colonne dans le cadre de l'instruction CREATE TABLE. CREATE INDEX et DROP INDEX ne sont pas pris en charge pour les tables optimisées en mémoire.  
   
  MEMORY_OPTIMIZED  
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
  Indique si le type de table est optimisé en mémoire. Cette option est désactivée par défaut ; la table (type) n'est pas une table optimisée en mémoire (type). Les types de tables optimisées en mémoire sont des tables utilisateur optimisées en mémoire dont le schéma est rendu persistant sur disque similairement à d'autres tables utilisateur.  
   
  BUCKET_COUNT  
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
  Indique le nombre de compartiments qui doivent être créés dans l'index de hachage. La valeur maximale de BUCKET_COUNT dans les index de hachage est de 1 073 741 824. Pour plus d’informations sur le nombre de compartiments, consultez [Index sur des tables optimisées en mémoire](../../relational-databases/in-memory-oltp/indexes-for-memory-optimized-tables.md). *bucket_count* est un argument obligatoire.  
   
  HASH  
- **S’applique à**: [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] jusqu’à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
+ **S’applique à** : [!INCLUDE[ssSQL14](../../includes/sssql14-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].  
   
  Indique qu'un index HASH est créé. Les index de hachage sont pris en charge uniquement sur les tables optimisées en mémoire.  
   
@@ -270,6 +267,12 @@ column_name <data_type>
   
 ## <a name="permissions"></a>Autorisations  
  Nécessite l’autorisation CREATE TYPE dans la base de données actuelle et l’autorisation ALTER sur *schema_name*. Si *schema_name* n’est pas spécifié, les règles de résolution de noms par défaut pour la détermination du schéma de l’utilisateur actuel s’appliquent. Si *assembly_name* est spécifié, un utilisateur doit être propriétaire de l’assembly ou disposer d’une autorisation REFERENCES sur lui.  
+
+ Si des colonnes de l’instruction CREATE TABLE sont définies avec un type de données défini par l’utilisateur, une autorisation REFERENCES est nécessaire sur ce type.
+ 
+   >[!NOTE]
+  > Un utilisateur qui crée une table avec une colonne dont le type est défini par l’utilisateur a besoin de l’autorisation REFERENCES pour ce type défini par l’utilisateur.
+  > Si cette table doit être créée dans TempDB, l’autorisation REFERENCES doit être accordée explicitement chaque fois **avant** la création de la table, ou ce type de données et ces autorisations de références doivent être ajoutés à la base de données Model. Lorsque cette opération est effectuée, ce type de données et ces autorisations seront disponibles dans TempDB de façon définitive. Sinon, le type de données défini par l’utilisateur et les autorisations disparaîtront lors du redémarrage de SQL Server. Pour plus d'informations, consultez [CREATE TABLE](https://docs.microsoft.com/sql/t-sql/statements/create-table-transact-sql?view=sql-server-2017#permissions-1)
   
 ## <a name="examples"></a>Exemples  
   

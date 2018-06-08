@@ -1,28 +1,23 @@
 ---
-title: "Désinstaller et supprimer Master Data Services | Microsoft Docs"
-ms.custom: 
+title: Désinstaller et supprimer Master Data Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: efc2431c-588b-42e7-b23b-c875145a33f6
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: bf5fe32060d6026c6a62b589fbdd991ef561eda6
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: c210840b717f5cc13fac3fe0ca2e9c9e7f763952
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772555"
 ---
 # <a name="uninstall-and-remove-master-data-services"></a>Désinstaller et supprimer Master Data Services
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]

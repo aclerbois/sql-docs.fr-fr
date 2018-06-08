@@ -1,30 +1,25 @@
 ---
 title: MSSQLSERVER_207 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: errors-events
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: supportability
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 helpviewer_keywords:
 - 207 (Database Engine error)
 ms.assetid: d1ab00c7-0331-437a-84fe-bae53b82feec
-caps.latest.revision: 
-author: edmacauley
-ms.author: edmaca
+caps.latest.revision: 17
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: bb5dd99ae08c46b689353ddd07d83e040b41418f
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: efa1dd17d429d039d69465d7bfc1589bd5c314e4
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="mssqlserver207"></a>MSSQLSERVER_207
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -125,7 +120,7 @@ Vérifiez les informations suivantes et corrigez l'instruction comme il convient
   
 -   La clause WHEN NOT MATCHED BY SOURCE de l'instruction MERGE fait référence à une valeur accessible. Modifiez l'instruction MERGE de façon qu'une ligne au moins soit retournée par la table source dans la clause WHEN NOT MATCHED BY SOURCE. Par exemple, vous devrez peut-être ajouter ou modifier le critère de recherche spécifié pour la clause. Vous pouvez aussi modifier la clause de façon à spécifier une valeur qui ne fait pas référence à la table source. Par exemple, `WHEN NOT MATCHED BY SOURCE THEN UPDATE SET TargetTable.Col1 = <expression, or other available value>`.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
 [MERGE &#40;Transact-SQL&#41;](~/t-sql/statements/merge-transact-sql.md)  
 [FROM &#40;Transact-SQL&#41;](~/t-sql/queries/from-transact-sql.md)  
 [SELECT &#40;Transact-SQL&#41;](~/t-sql/queries/select-transact-sql.md)  

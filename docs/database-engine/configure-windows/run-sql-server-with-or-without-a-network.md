@@ -1,17 +1,14 @@
 ---
-title: "Exécuter SQL Server avec ou sans réseau | Microsoft Docs"
-ms.custom: 
+title: Exécuter SQL Server avec ou sans réseau | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: configure-windows
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: configuration
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - verifying Server service has been started
 - net start [SQL Server]
@@ -24,16 +21,15 @@ helpviewer_keywords:
 - starting Server service
 - SQL Server, running
 ms.assetid: 54eac961-5c7a-4481-982d-f93a64b5c2f4
-caps.latest.revision: 
+caps.latest.revision: 26
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 53f11ae418f3fa321a886abef8e6af08efb66199
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: f0094b9bac42925c402694653cbbd436483b4408
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="run-sql-server-with-or-without-a-network"></a>Exécuter SQL Server avec ou sans réseau
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

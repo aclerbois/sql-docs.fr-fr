@@ -1,28 +1,26 @@
 ---
 title: Prise en charge des Options (le pilote ODBC pour Oracle) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: ODBC driver for Oracle [ODBC], supported options
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- ODBC driver for Oracle [ODBC], supported options
 ms.assetid: feefe0fd-5679-4c42-aa9e-e52b83f02544
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 3811ad91de8793fb27f600e1fe256d0bef4ca72a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3b3af252f4b0e80c4220cd93aa3e7c4e9e65b6e1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supported-options-odbc-driver-for-oracle"></a>Options prises en charge (pilote ODBC pour Oracle)
 > [!IMPORTANT]  

@@ -1,28 +1,21 @@
 ---
-title: "Contrôler le matériel à l’aide de la Console d’administration (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: 294ba6ac-b1ff-46ea-ba32-d8b32cb4cdc2
-caps.latest.revision: "26"
-ms.openlocfilehash: db27003d4e1efd54a179551f585fb23ce9c0ed82
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Analyse avec la Console d’administration - système de plateforme Analytique | Documents Microsoft
+description: Pour le système de plateforme Analytique, la Console d’administration est une application web qui expose les informations d’état, l’intégrité et les performances de matériel. Les utilisateurs se connecter à la Console d’administration via un navigateur internet.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 5f7c6ef68a8f91121a63def8e2153a5c38873aa3
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="monitor-the-appliance-by-using-the-admin-console"></a>Contrôler le matériel à l’aide de la Console d’administration
+# <a name="monitor-the-appliance-with-the-admin-console---analytics-platform-system"></a>Surveillance de l’appliance avec la Console d’administration - système de plateforme Analytique
 La Console d’administration est une application web SQL Server PDW qui expose les informations d’état, l’intégrité et les performances de matériel. Les utilisateurs se connecter à la Console d’administration via Internet Explorer.  
   
 ## <a name="About"></a>Sur la Console d’administration  
@@ -112,12 +105,12 @@ La Console d’administration fournit la possibilité de contrôler les élémen
 |-|-|  
 |**Type d’information**|**Accès dans la Console d’administration**|  
 |État global de l’application|Cliquez sur **état des appliances** dans le menu supérieur, ou **accueil**.|  
-|Alertes|Cliquez sur **alertes**. Pour plus d’informations, consultez [présentation des alertes de la Console Administration &#40; Système de plateforme Analytique &#41; ](understanding-admin-console-alerts.md).|  
+|Alertes|Cliquez sur **alertes**. Pour plus d’informations, consultez [présentation des alertes de la Console Administrateur &#40;système de plateforme Analytique&#41;](understanding-admin-console-alerts.md).|  
 |Composants d’application et leur état|Cliquez sur **état des appliances** dans le menu supérieur, ou **accueil**.|  
 |Demandes d’analyse (y compris les requêtes, les charges, les sauvegardes et restaurations)|Cliquez sur **Sessions** pour afficher les sessions actuellement actives ou plus récentes.<br /><br />Cliquez sur **requêtes** pour afficher les requêtes actuellement actives ou plus récentes. Les informations affichées pour les requêtes incluent des charges, des sauvegardes et restaurations.<br /><br />Cliquez sur **verrous** pour afficher les verrous actifs.|  
 |Analyser des informations supplémentaires pour les charges, les sauvegardes et restaurations.|Cliquez sur **charges** ou **sauvegardes/restaurations**.|  
 |Informations sur les performances|Cliquez sur **l’Analyseur de performances**.|  
   
 ## <a name="see-also"></a>Voir aussi  
-[Surveillance de l’appliance &#40; Système de plateforme Analytique &#41;](appliance-monitoring.md)  
+[Surveillance de l’appliance &#40;Analytique plate-forme système&#41;](appliance-monitoring.md)  
   

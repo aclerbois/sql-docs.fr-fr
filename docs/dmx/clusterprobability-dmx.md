@@ -1,30 +1,31 @@
 ---
 title: ClusterProbability (DMX) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/02/2016
 ms.prod: analysis-services
 ms.prod_service: analysis-services
-ms.service: 
 ms.component: data-mining
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
-f1_keywords: ClusterProbability
-dev_langs: DMX
-helpviewer_keywords: ClusterProbability function
+f1_keywords:
+- ClusterProbability
+dev_langs:
+- DMX
+helpviewer_keywords:
+- ClusterProbability function
 ms.assetid: a6447b3c-94ce-4122-a3eb-6f3827598d8f
-caps.latest.revision: "35"
+caps.latest.revision: 35
 author: Minewiskan
 ms.author: owend
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: d4b85f18478d1cc34050804845f62e2283b57462
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 4d7f107aec9748cab6a702851c645af1a665067b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clusterprobability-dmx"></a>ClusterProbability (DMX)
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -44,14 +45,14 @@ ClusterProbability([<Node_Caption>])
 ## <a name="return-type"></a>Type de retour  
  Une valeur scalaire.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  La syntaxe suivante utilise l'ensemble de lignes du schéma Content du modèle d'exploration de données pour retourner les légendes de nœud existant au sein du modèle.  
   
 ```  
 SELECT NODE_CAPTION FROM <model>.CONTENT  
 ```  
   
- Pour plus d’informations sur l’utilisation de cette syntaxe, consultez [SELECT FROM &#60; modèle &#62;. CONTENU &#40; DMX &#41; ](../dmx/select-from-model-content-dmx.md). Pour plus d’informations sur l’ensemble de lignes du schéma de contenu du modèle d’exploration de données, consultez [de lignes DMSCHEMA_MINING_MODEL_CONTENT](../analysis-services/schema-rowsets/data-mining/dmschema-mining-model-content-rowset.md).  
+ Pour plus d’informations sur l’utilisation de cette syntaxe, consultez [SELECT FROM &#60;modèle&#62;. CONTENU &#40;DMX&#41;](../dmx/select-from-model-content-dmx.md). Pour plus d’informations sur l’ensemble de lignes du schéma de contenu du modèle d’exploration de données, consultez [de lignes DMSCHEMA_MINING_MODEL_CONTENT](../analysis-services/schema-rowsets/data-mining/dmschema-mining-model-content-rowset.md).  
   
  Si un \<légende du nœud > n’est pas spécifié, la fonction retourne la probabilité que les cas d’entrée appartient au cluster plus probable. Utilisez le **Cluster** fonction pour retourner le cluster le plus probable.  
   
@@ -72,9 +73,9 @@ NATURAL PREDICTION JOIN
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Cluster &#40; DMX &#41;](../dmx/cluster-dmx.md)   
- [Les Extensions d’exploration de données &#40; DMX &#41; Référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
- [Fonctions &#40; DMX &#41;](../dmx/functions-dmx.md)   
- [Fonctions de prédiction générales &#40; DMX &#41;](../dmx/general-prediction-functions-dmx.md)  
+ [Cluster &#40;DMX&#41;](../dmx/cluster-dmx.md)   
+ [Data Mining Extensions &#40;DMX&#41; référence de fonction](../dmx/data-mining-extensions-dmx-function-reference.md)   
+ [Fonctions &#40;DMX&#41;](../dmx/functions-dmx.md)   
+ [Fonctions de prédiction générales &#40;DMX&#41;](../dmx/general-prediction-functions-dmx.md)  
   
   

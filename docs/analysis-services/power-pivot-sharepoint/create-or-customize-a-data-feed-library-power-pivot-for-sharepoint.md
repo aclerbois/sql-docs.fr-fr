@@ -1,34 +1,23 @@
 ---
-title: "Créer ou personnaliser une bibliothèque de flux de données (PowerPivot pour SharePoint) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- data feed library
-- data feeds [Analysis Services with SharePoint]
-ms.assetid: 699fbeb9-42ab-436b-beba-214db51ea3dd
-caps.latest.revision: 
-author: Minewiskan
+title: Créer ou personnaliser une bibliothèque de flux de données (PowerPivot pour SharePoint) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 9f536c0956cec0be863b099b2c0540ccf7ac3da2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 71c051d64a40f38a6514301ca3353e7627c67aaf
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-or-customize-a-data-feed-library-power-pivot-for-sharepoint"></a>Créer ou personnaliser une bibliothèque de flux de données (PowerPivot pour SharePoint)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Une *bibliothèque de flux de données* est une bibliothèque SharePoint spécifique qui permet d’enregistrer et de partager des documents de service de données Atom (.atomsvc). Ces documents fournissent des flux XML aux classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] ou à d'autres applications clientes qui prennent en charge le format de flux Atom. Une bibliothèque de flux de données est différente des autres bibliothèques SharePoint, car elle vous donne la possibilité :  
+  Une *bibliothèque de flux de données* est une bibliothèque SharePoint spécifique qui permet d’enregistrer et de partager des documents de service de données Atom (.atomsvc). Ces documents fournissent des flux XML aux classeurs [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] ou à d'autres applications clientes qui prennent en charge le format de flux Atom. Une bibliothèque de flux de données est différente des autres bibliothèques SharePoint, car elle vous donne la possibilité :  
   
 -   de créer ou modifier un *document de service de données*, utilisé pour spécifier une connexion HTTP à un flux spécifique ;  
   

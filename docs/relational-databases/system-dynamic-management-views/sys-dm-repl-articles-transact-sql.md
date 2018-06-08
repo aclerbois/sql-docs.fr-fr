@@ -1,16 +1,12 @@
 ---
-title: sys.dm_repl_articles (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_repl_articles (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sys.dm_repl_articles_TSQL
@@ -22,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_repl_articles dynamic management function
 ms.assetid: 794d514e-bacd-432e-a8ec-3a063a97a37b
-caps.latest.revision: 
+caps.latest.revision: 16
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 99ec6ab0d4feb697092002fb0c7354625dd9da83
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 12a9e842c8ff0ebbf74e9d1126de52224980b473
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmreplarticles-transact-sql"></a>sys.dm_repl_articles (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -60,7 +55,7 @@ ms.lasthandoff: 02/03/2018
 |**cmdTypeUpd**|**int**|Syntaxe d'appel pour la procédure stockée de mise à jour, pouvant être une de ces valeurs.<br /><br /> **0** = XCALL<br /><br /> **1** = APPEL<br /><br /> **2** = SQL<br /><br /> **3** = NONE<br /><br /> **4** = MCALL<br /><br /> **5** = VCALL<br /><br /> **6** = SCALL<br /><br /> **7** = INCONNU|  
 |**wszArtpartialupdcmd**|**nvarchar(510)**|Commande ou procédure stockée utilisée pour les mises à jour partielles.|  
 |**cmdTypePartialUpd**|**int**|Syntaxe d'appel pour la procédure stockée de mise à jour partielle, pouvant être une de ces valeurs.<br /><br /> **2** = SQL|  
-|**numcol**|**int**|Nombre de colonnes dans la partition pour un article filtré verticalement.|  
+|**numCol**|**int**|Nombre de colonnes dans la partition pour un article filtré verticalement.|  
 |**artcmdtype**|**tinyint**|Type de commande actuellement répliqué, pouvant être une de ces valeurs.<br /><br /> **1** = INSERTION<br /><br /> **2** = SUPPRESSION<br /><br /> **3** = MISE À JOUR<br /><br /> **4** = UPDATETEXT<br /><br /> **5** = none<br /><br /> **6** = pour usage interne uniquement<br /><br /> **7** = pour usage interne uniquement<br /><br /> **8** = mise à jour partielle|  
 |**artgeninscmd**|**nvarchar(510)**|Modèle de commande INSERT reposant sur les colonnes incluses dans l'article.|  
 |**artgendelcmd**|**nvarchar(510)**|Modèle de commande DELETE, qui peut inclure la clé primaire ou les colonnes incluses dans l'article, selon la syntaxe d'appel utilisée.|  
@@ -81,7 +76,7 @@ ms.lasthandoff: 02/03/2018
   
 ## <a name="see-also"></a>Voir aussi  
  [Fonctions et vues de gestion dynamique &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/system-dynamic-management-views.md)   
- [Vues de gestion dynamique &#40; liées à la réplication Transact-SQL &#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)  
+ [Vues de gestion dynamique liées à la réplication &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/replication-related-dynamic-management-views-transact-sql.md)  
   
   
 

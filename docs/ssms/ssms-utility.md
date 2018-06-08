@@ -1,16 +1,16 @@
 ---
 title: Utilitaire Ssms | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 12/08/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology:
+- database-engine
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL Server Management Studio [SQL Server], opening
 - command prompt utilities [SQL Server], sqlwb
@@ -18,19 +18,19 @@ helpviewer_keywords:
 - Management Studio command line
 - opening SQL Server Management Studio
 ms.assetid: aafda520-9e2a-4e1e-b936-1b165f1684e8
-caps.latest.revision: "50"
+caps.latest.revision: 50
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a69ee6a0f66529c6cfb08216643d9c2a6c2a1482
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: 707777f3b568aa38d06416ca1ab3f1292051e068
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssms-utility"></a>Utilitaire Ssms
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)] L’utilitaire **Ssms** ouvre [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]. Si cela est spécifié, **Ssms** établit également une connexion à un serveur et ouvre des requêtes, des scripts, des fichiers, des projets et des solutions.  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  L’utilitaire **Ssms**ouvre [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]. Si cela est spécifié, **Ssms** établit également une connexion à un serveur et ouvre des requêtes, des scripts, des fichiers, des projets et des solutions.  
   
  Vous pouvez spécifier des fichiers contenant des requêtes, des projets ou des solutions. Les fichiers qui contiennent des requêtes sont automatiquement connectés à un serveur si des informations de connexion sont fournies et si le type de fichier est associé à ce type de serveur. Par exemple, les fichiers .sql ouvrent une fenêtre Éditeur de requête SQL dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)], tandis que des fichiers .mdx ouvrent une fenêtre Éditeur de requête MDX dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)]. Les**solutions et projets SQL Server** s’ouvrent dans [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)].  
   
@@ -82,7 +82,7 @@ Ssms
 [**-nosplash**]  
  Empêche [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] d'afficher le graphique de l'écran de démarrage lors de l'ouverture. Utilisez cette option lors d'une connexion à l'ordinateur exécutant [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] au moyen des services Terminal Server sur une connexion dotée d'une bande passante limitée. Cet argument ne respecte pas la casse et peut apparaître avant ou après d'autres arguments  
   
-[**-log***[nom_fichier]?*]  
+[**-log***[filename]?*]  
  Consigne l'activité de [!INCLUDE[ssManStudioFull](../includes/ssmanstudiofull-md.md)] dans le fichier spécifié à des fins de dépannage  
   
 [**-?**]  

@@ -1,35 +1,32 @@
 ---
-title: "Leçon 2 : Création et gestion de données dans une table hiérarchique | Microsoft Docs"
-ms.custom: 
+title: 'Leçon 2 : Création et gestion de données dans une table hiérarchique | Microsoft Docs'
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
-ms.component: tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: table-view-index
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - SQL Server 2016
 helpviewer_keywords:
 - HierarchyID
 ms.assetid: 95f55cff-4abb-4c08-97b3-e3ae5e8b24e2
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 2650a8b35801747ae9a3b84fb048bcbeab724121
-ms.sourcegitcommit: 6b4aae3706247ce9b311682774b13ac067f60a79
+ms.openlocfilehash: 8b8280433ebe9cd3248c9534e627518694b95d9b
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="lesson-2-creating-and-managing-data-in-a-hierarchical-table"></a>Leçon 2 : Création et gestion de données dans une table hiérarchique
-[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)] Dans la leçon 1, vous avez modifié une table existante pour utiliser le type de données **hierarchyid** et vous avez rempli la colonne**hierarchyid** avec la représentation des données existantes. Dans cette leçon, vous allez utiliser les méthodes hiérarchiques pour créer une nouvelle table et y insérer des données. Puis, toujours à l'aide de méthodes hiérarchiques, vous interrogerez et manipulerez ces données.  
+[!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
+Dans la leçon 1, vous avez modifié une table existante pour utiliser le type de données **hierarchyid** et vous avez rempli la colonne **hierarchyid** avec la représentation des données existantes. Dans cette leçon, vous allez utiliser les méthodes hiérarchiques pour créer une nouvelle table et y insérer des données. Puis, toujours à l'aide de méthodes hiérarchiques, vous interrogerez et manipulerez ces données.  
   
 Cette leçon contient les rubriques suivantes :  
   

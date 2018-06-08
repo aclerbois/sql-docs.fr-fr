@@ -1,36 +1,34 @@
 ---
-title: "L’exécution d’une mise à jour à l’aide d’ADO (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: L’exécution d’une mise à jour à l’aide d’ADO (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - ADO [SQLXML]
 - updategrams [SQLXML], ADO
 - executing updategrams [SQLXML]
 ms.assetid: 78610ca0-f763-45fc-ac64-da5c192cc3e5
-caps.latest.revision: 
+caps.latest.revision: 28
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: df6dbe2042e78b92207c990c8633776c38a9cc0f
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 95272db4677cafad6f1e3c84f14b5705dd5f4718
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="executing-an-updategram-by-using-ado-sqlxml-40"></a>Exécution d'un code de mise à jour (updategram) à l'aide d'ADO (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette application [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Visual Basic utilise ADO pour établir une connexion à une instance de Microsoft [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], puis exécute un code de mise à jour (updategram). Le code de mise à jour (updategram) met à jour le nom d'un employé spécifique. Cet exemple utilise la base de données AdventureWorks.  
+  Cette application [!INCLUDE[msCoName](../../../includes/msconame-md.md)] Visual Basic utilise ADO pour établir une connexion à une instance de Microsoft [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], puis exécute un code de mise à jour (updategram). Le code de mise à jour (updategram) met à jour le nom d'un employé spécifique. Cet exemple utilise la base de données AdventureWorks.  
   
  Dans cet exemple d'application :  
   

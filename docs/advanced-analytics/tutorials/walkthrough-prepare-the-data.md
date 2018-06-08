@@ -1,28 +1,18 @@
 ---
 title: Préparer les données à l’aide de PowerShell (procédure pas à pas) | Documents Microsoft
-ms.custom: ''
-ms.date: 11/10/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: ''
-ms.technology: ''
-ms.tgt_pltfrm: ''
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
 ms.topic: tutorial
-applies_to:
-- SQL Server 2016
-dev_langs:
-- R
-ms.author: heidist
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: fbe74b101642ecabe0478a9d5b459e59f277da04
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: ccdccaf4a3624bef365cec85e452a88526b9fd6b
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34585931"
 ---
 # <a name="prepare-the-data-using-powershell-walkthrough"></a>Préparer les données à l’aide de PowerShell (procédure pas à pas)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -68,7 +58,7 @@ Tout le code nécessaire a été fourni dans un référentiel GitHub. Vous pouve
   
     ![Après complétion du script PowerShell](media/rsql-e2e-psscriptresults.PNG "Après complétion du script PowerShell")
   
-5.  Dans la console PowerShell, vous pouvez exécuter la commande `ls` pour afficher la liste des fichiers qui ont été téléchargés dans *DestDir*.  Pour obtenir une description des fichiers, consultez [ce qui est inclus](#What-the-Download-Includes).
+5.  Dans la console PowerShell, vous pouvez exécuter la commande `ls` pour afficher la liste des fichiers qui ont été téléchargés dans *DestDir*.  Pour obtenir une description des fichiers, consultez [ce qui est inclus](#whats-included-in-the-sample).
 
 ## <a name="2-install-required-r-packages"></a>2. Installer des packages R requis
 
@@ -94,7 +84,7 @@ Le script R que vous avez téléchargé contient les commandes pour télécharge
 
 ### <a name="install-required-packages-on-the-server"></a>Installer les packages nécessaires sur le serveur
 
-Il existe différentes manières que vous pouvez installer des packages sur SQL Server. Par exemple, SQL Server fournit un [gestion des packages](../r/installing-and-managing-r-packages.md) fonctionnalité qui permet aux administrateurs de base de données de créer un référentiel de packages et d’affecter des droits pour installer leurs propres packages utilisateur. Toutefois, si vous êtes un administrateur sur l’ordinateur, vous pouvez installer les nouveaux packages à l’aide de R, tant que vous installez pour la bibliothèque appropriée.
+Il existe différentes manières que vous pouvez installer des packages sur SQL Server. Par exemple, SQL Server fournit [gestion des packages R](../r/install-additional-r-packages-on-sql-server.md) fonctionnalité qui permet aux administrateurs de base de données de créer un référentiel de packages et d’affecter des droits pour installer leurs propres packages utilisateur. Toutefois, si vous êtes un administrateur sur l’ordinateur, vous pouvez installer les nouveaux packages à l’aide de R, tant que vous installez pour la bibliothèque appropriée.
 
 > [!NOTE]
 > Sur le serveur, **pas** installer dans une bibliothèque de l’utilisateur, même si vous y êtes invité. Si vous installez dans une bibliothèque de l’utilisateur, l’instance de SQL Server ne peut pas trouver ou exécuter les packages. Pour plus d’informations, consultez [Installer des packages R supplémentaires sur SQL Server](../r/install-additional-r-packages-on-sql-server.md).
@@ -173,7 +163,7 @@ Plug in the database server name, database name, user name and password into the
 This step (plugging in database information) takes 0.48 seconds.
 ```
 
-Cliquez sur ce lien pour accéder à la leçon suivante : [afficher et Explorer les données à l’aide de SQL](/walkthrough-view-and-explore-the-data.md)
+Cliquez sur ce lien pour accéder à la leçon suivante : [afficher et Explorer les données à l’aide de SQL](walkthrough-view-and-explore-the-data.md)
 
 ## <a name="bkmk_Troubleshooting"></a>Dépannage
 
@@ -291,7 +281,7 @@ Les données sont un échantillon représentatif du jeu de données sur les taxi
 
 Le script PowerShell s’exécute plusieurs [!INCLUDE[tsql](../../includes/tsql-md.md)] des scripts sur l’instance de SQL Server. Le tableau suivant répertorie les [!INCLUDE[tsql](../../includes/tsql-md.md)] des scripts et leur signification.
 
-|Nom du fichier de script SQL| Description|
+|Nom du fichier de script SQL|Description|
 |------------------------|----------------|
 |create-db-tb-upload-data.sql|Crée une base de données et deux tables :<br /><br /> *nyctaxi_sample*: table qui contient les données de formation, un échantillon de 1 % du jeu de données sur les taxis de New York. Un index cluster columnstore est ajouté à la table pour améliorer les performances de stockage et des requêtes.<br /><br /> *nyc_taxi_models*: une table utilisée pour stocker les modèles formés au format binaire.|
 |PredictTipBatchMode.sql|Crée une procédure stockée qui appelle un modèle formé pour prédire les étiquettes des nouvelles observations. Il accepte une requête comme paramètre d’entrée.|
@@ -307,10 +297,10 @@ Les requêtes T-SQL utilisées dans cette procédure pas à pas ont été testé
 
 ## <a name="next-lesson"></a>Leçon suivante
 
-[Afficher et Explorer les données à l’aide de R et SQL](/walkthrough-view-and-explore-the-data.md)
+[Afficher et Explorer les données à l’aide de R et SQL](walkthrough-view-and-explore-the-data.md)
 
 ## <a name="previous-lesson"></a>Leçon précédente
 
-[Procédure pas à pas de données de bout en bout science pour R et SQL Server](/walkthrough-data-science-end-to-end-walkthrough.md)
+[Procédure pas à pas de données de bout en bout science pour R et SQL Server](walkthrough-data-science-end-to-end-walkthrough.md)
 
 [Prérequis pour les procédures pas à pas de science des données](walkthrough-prerequisites-for-data-science-walkthroughs.md)

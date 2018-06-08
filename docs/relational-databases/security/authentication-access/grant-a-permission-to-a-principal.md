@@ -1,33 +1,33 @@
 ---
-title: "Accorder une autorisation à un principal | Microsoft Docs"
-ms.custom: 
+title: Accorder une autorisation à un principal | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: security
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Grant permission to a principal
 ms.assetid: 4107389d-05b6-4aa3-9fa8-95b40cdf05dc
-caps.latest.revision: 
+caps.latest.revision: 12
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 3d22ba04e498423840ea77a40d17949980887da7
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: e7d8c1990cb43aa5398a179bb00c053afe98f651
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="grant-a-permission-to-a-principal"></a>Accorder une autorisation à un principal
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette rubrique explique comment accorder une autorisation à un principal dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l’aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Cette rubrique explique comment accorder une autorisation à un principal dans [!INCLUDE[ssCurrent](../../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../../includes/ssmanstudiofull-md.md)] ou de [!INCLUDE[tsql](../../../includes/tsql-md.md)].  
   
  **Dans cette rubrique**  
   
@@ -54,7 +54,7 @@ ms.lasthandoff: 11/21/2017
   
 ###  <a name="Security"></a> Sécurité  
   
-####  <a name="Permissions"></a> Autorisations  
+####  <a name="Permissions"></a> Permissions  
  Le fournisseur d'autorisations (ou le principal spécifié avec l'option AS) doit posséder l'autorisation elle-même avec l'option GRANT OPTION ou une autorisation plus élevée qui implique l'autorisation accordée. Les membres du rôle serveur fixe **sysadmin** peuvent accorder toutes les autorisations.  
   
 ##  <a name="SSMSProcedure"></a> Utilisation de SQL Server Management Studio  
@@ -72,7 +72,7 @@ ms.lasthandoff: 11/21/2017
   
 4.  Cliquez avec le bouton droit sur une procédure stockée, puis sélectionnez **Propriétés**.  
   
-5.  Dans la boîte de dialogue **Propriétés de la procédure stockée -***nom_procédure_stockée* , sous Sélectionner une page, sélectionnez **Autorisations**. Utilisez cette page pour ajouter des utilisateurs ou des rôles à la procédure stockée et spécifier les autorisations dont disposeront ces utilisateurs ou rôles.  
+5.  Dans la boîte de dialogue **Propriétés de la procédure stockée -***nom_procédure_stockée*, sous Sélectionner une page, sélectionnez **Autorisations**. Utilisez cette page pour ajouter des utilisateurs ou des rôles à la procédure stockée et spécifier les autorisations dont disposeront ces utilisateurs ou rôles.  
   
 6.  Lorsque vous avez terminé, cliquez sur **OK**.  
   
@@ -80,7 +80,7 @@ ms.lasthandoff: 11/21/2017
   
 #### <a name="to-grant-permission-to-a-principal"></a>Pour accorder une autorisation à un principal  
   
-1.  Dans l' **Explorateur d'objets**, connectez-vous à une instance du [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
+1.  Dans l'**Explorateur d'objets**, connectez-vous à une instance de [!INCLUDE[ssDE](../../../includes/ssde-md.md)].  
   
 2.  Dans la barre d'outils standard, cliquez sur **Nouvelle requête**.  
   
@@ -97,7 +97,7 @@ ms.lasthandoff: 11/21/2017
   
  Pour plus d’informations, consultez [GRANT &#40;Transact-SQL&#41;](../../../t-sql/statements/grant-transact-sql.md) et [Octroi d’autorisations d’objet &#40;Transact-SQL&#41;](../../../t-sql/statements/grant-object-permissions-transact-sql.md).  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Principaux &#40;moteur de base de données&#41;](../../../relational-databases/security/authentication-access/principals-database-engine.md)  
   
   

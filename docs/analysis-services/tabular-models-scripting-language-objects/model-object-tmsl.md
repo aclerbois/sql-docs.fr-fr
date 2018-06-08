@@ -1,30 +1,23 @@
 ---
-title: "Objet de modèle (TMSL) | Documents Microsoft"
-ms.custom: 
-ms.date: 05/30/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services, azure-analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+title: Objet de modèle (TMSL) | Documents Microsoft
+ms.date: 05/07/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: tmsl
 ms.topic: reference
-ms.assetid: 9382d0d6-2d4b-49ad-a0eb-35970f0f3afb
-caps.latest.revision: "7"
-author: Minewiskan
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: dadb4807613b23449fd87dfea35acc0d6d201615
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: 6f60b0998dd344cdc3151da1a1c8920495b36917
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="model-object-tmsl"></a>Objet de modèle (TMSL)
-[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]Définit un modèle tabulaire. Il existe un modèle par base de données et qu’une seule base de données qui peut être spécifié dans n’importe quelle commande donnée. Un objet de base de données est l’objet parent.  
+[!INCLUDE[ssas-appliesto-sqlas-aas](../../includes/ssas-appliesto-sqlas-aas.md)]
+  Définit un modèle tabulaire. Il existe un modèle par base de données et qu’une seule base de données qui peut être spécifié dans n’importe quelle commande donnée. Un objet de base de données est l’objet parent.  
   
  Les définitions de modèle sont trop volumineuses pour reproduire la syntaxe ensemble dans une rubrique. Pour cette raison, une mise en évidence les principaux éléments de syntaxe partielle peut trouver ci-dessous, avec des liens vers les objets enfants.  
   
@@ -53,13 +46,13 @@ ms.lasthandoff: 01/08/2018
  Séquence de classement. Consultez [des scénarios de globalisation pour Analysis Services](../../analysis-services/globalization-scenarios-for-analysis-services.md) pour plus d’informations.  
   
  tables  
- La collection complète des tables dans le modèle, y compris les partitions, les colonnes, les mesures, les indicateurs de performance clés et les annotations. Consultez [Tables objet &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/tables-object-tmsl.md) pour plus d’informations.  
+ La collection complète des tables dans le modèle, y compris les partitions, les colonnes, les mesures, les indicateurs de performance clés et les annotations. Consultez [objet Tables &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/tables-object-tmsl.md) pour plus d’informations.  
   
  relations  
- Spécifie la relation entre chaque paire de tables, y compris les propriétés qui définissent la direction du filtrage et sécurité. Consultez [objet de relations &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/relationships-object-tmsl.md) pour plus d’informations.  
+ Spécifie la relation entre chaque paire de tables, y compris les propriétés qui définissent la direction du filtrage et sécurité. Consultez [objet de relations &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/relationships-object-tmsl.md) pour plus d’informations.  
   
  sources de données  
- Une ou plusieurs connexions à des bases de données externes fournissant des données au modèle ou utilisé pour traversent les requêtes. Consultez [sources de données objet &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/datasources-object-tmsl.md) pour plus d’informations.  
+ Une ou plusieurs connexions à des bases de données externes fournissant des données au modèle ou utilisé pour traversent les requêtes. Consultez [objet de sources de données &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/datasources-object-tmsl.md) pour plus d’informations.  
   
  rôles  
  Objets qui associent une autorisation de base de données, les comptes de membre et le cas échéant, les filtres de sécurité dans DAX pour le contrôle d’accès personnalisés.  
@@ -70,7 +63,7 @@ ms.lasthandoff: 01/08/2018
  Lors de la création, du remplacement ou de modification d’un objet de modèle, spécifiez toutes les propriétés en lecture-écriture de la définition d’objet. L’omission d’une propriété en lecture-écriture est considérée comme une suppression.  
   
 ## <a name="partial-syntax"></a>Syntaxe partielle  
- Étant donné que cette définition de l’objet est tellement importante, les propriétés de niveau premier sont répertoriées. Consultez [définitions d’objets dans le tableau de modèle un langage de script &#40; TMSL &#41; ](../../analysis-services/tabular-models-scripting-language-objects/tmsl-reference-tabular-objects.md) pour obtenir la liste d’objets enfants.  
+ Étant donné que cette définition de l’objet est tellement importante, les propriétés de niveau premier sont répertoriées. Consultez [définitions d’objets dans le langage de script de modèle tabulaire &#40;TMSL&#41; ](../../analysis-services/tabular-models-scripting-language-objects/tmsl-reference-tabular-objects.md) pour obtenir la liste d’objets enfants.  
   
 ```  
     "model": {  

@@ -1,32 +1,29 @@
 ---
-title: "Données de la colonne | Documents Microsoft"
-ms.custom: 
+title: Données de la colonne | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - column data [ODBC]
 - ODBC cursor library [ODBC], cache
 - cursor library [ODBC], cache
 - cache [ODBC]
 ms.assetid: 0425818c-9469-493f-9e3c-fc03d9411c5c
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 36349c0928c690b66a8c3c758a508ba9bfcbb6a9
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 428f7c4a9d0e21cb989721b095b65bf0c48306fe
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="column-data"></a>Données de la colonne
 > [!IMPORTANT]  

@@ -1,16 +1,15 @@
 ---
-title: "Compter les lignes d’une table (Visual Database Tools) | Microsoft Docs"
-ms.custom: 
+title: Compter les lignes d’une table (Visual Database Tools) | Microsoft Docs
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssms-visual-db
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: tools-ssms
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssms
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - totals [SQL Server], row counts
 - row counts [SQL Server]
@@ -19,19 +18,19 @@ helpviewer_keywords:
 - number of values
 - counting rows
 ms.assetid: dda4296a-1d16-4e77-8d6f-e295f6dd4e87
-caps.latest.revision: "4"
+caps.latest.revision: 4
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c2174809cafd6fd8b1b7bfad5ee8861d2d91cc09
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+ms.openlocfilehash: 829b3dc894e3976aef20a239f30ed33af9ac27fb
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="count-rows-in-a-table-visual-database-tools"></a>Compter les lignes d'une table (Visual Database Tools)
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Vous pouvez compter les lignes d’une table afin de déterminer les éléments suivants :  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+Vous pouvez compter les lignes d'une table afin de déterminer les éléments suivants :  
   
 -   le nombre total de lignes dans une table, par exemple le décompte de tous les livres d'une table `titles` ;  
   

@@ -1,29 +1,28 @@
 ---
-title: "Liaison et transfert de données de Table-Valued paramètres et valeurs de colonne | Documents Microsoft"
-ms.custom: 
+title: Liaison et transfert de données de Table-Valued paramètres et valeurs de colonne | Documents Microsoft
+ms.custom: ''
 ms.date: 04/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-table-valued-parameters
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - table-valued parameters (ODBC), binding and data transfer
 ms.assetid: 0a2ea462-d613-42b6-870f-c7fa086a6b42
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 738981ef92321f4989497b20d027667698065a75
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 7a5d0aac8e3d45f67ca83950ee139e3cb7377a96
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="binding-and-data-transfer-of-table-valued-parameters-and-column-values"></a>Liaison et transfert de données de paramètres table et de valeurs de colonnes
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -99,6 +98,6 @@ ms.lasthandoff: 01/24/2018
 6.  Appelle de nouveau SQLParamData. S’il y a aucun paramètre de data-at-execution entre les colonnes de paramètre table, ceux-ci sont identifiés par la valeur *ValuePtrPtr* retourné par SQLParamData. Lorsque toutes les valeurs de colonne sont disponibles, SQLParamData renvoie de nouveau la *ParameterValuePtr* valeur pour le paramètre table et l’application recommence.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Table-Valued paramètres &#40; ODBC &#41;](../../relational-databases/native-client-odbc-table-valued-parameters/table-valued-parameters-odbc.md)  
+ [Paramètres table &#40;ODBC&#41;](../../relational-databases/native-client-odbc-table-valued-parameters/table-valued-parameters-odbc.md)  
   
   

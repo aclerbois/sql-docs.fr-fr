@@ -1,29 +1,28 @@
 ---
-title: "L’état de synchronisation des données de la base de données de disponibilité n’est pas sain | Microsoft Docs"
-ms.custom: 
+title: L’état de synchronisation des données de la base de données de disponibilité n’est pas sain | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords: sql13.swb.agdashboard.arp3datasynchealthy.issues.f1
-helpviewer_keywords: Availability Groups [SQL Server], policies
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+f1_keywords:
+- sql13.swb.agdashboard.arp3datasynchealthy.issues.f1
+helpviewer_keywords:
+- Availability Groups [SQL Server], policies
 ms.assetid: 4fd003e7-808e-4b0e-b28a-47d9f2616f06
-caps.latest.revision: "15"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 15
+author: MashaMSFT
+ms.author: mathoma
 manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: 17bdfa75db4e82e8f3c398c92e8af424de21492b
-ms.sourcegitcommit: 7f8aebc72e7d0c8cff3990865c9f1316996a67d5
+ms.openlocfilehash: d8c98abcd48d9e1e703bd4e5ca73d62239727671
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34770175"
 ---
 # <a name="data-synchronization-state-of-availability-database-is-not-healthy"></a>L'état de synchronisation des données de la base de données de disponibilité n'est pas sain
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -49,7 +48,7 @@ ms.lasthandoff: 11/20/2017
 ## <a name="possible-solution"></a>Solution possible  
  Utilisez la stratégie de réplica de base de données pour rechercher le réplica de base de données affichant un état de synchronisation des données non sain, puis résolvez le problème qui affecte le réplica de base de données.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Vue d’ensemble des groupes de disponibilité Always On &#40;SQL Server&#41;](~/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server.md)   
  [Utiliser le tableau de bord Always On &#40;SQL Server Management Studio&#41;](~/database-engine/availability-groups/windows/use-the-always-on-dashboard-sql-server-management-studio.md)  
   

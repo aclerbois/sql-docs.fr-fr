@@ -1,16 +1,14 @@
 ---
-title: "Types de données de dBASE | Documents Microsoft"
-ms.custom: 
+title: Types de données de dBASE | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Jet-based ODBC drivers [ODBC], DBasedriver
 - desktop database drivers [ODBC], DBasedriver
@@ -19,16 +17,15 @@ helpviewer_keywords:
 - dbase data types [ODBC]
 - ODBC desktop database drivers [ODBC], DBasedriver
 ms.assetid: a0e31e6b-d02b-4ee2-9b37-5baf6a11c0a6
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fc9032a42f79e73009df216ecdb1273fa550ea72
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 60240eb9763d2d0b581765bde3a6d0958567f08e
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dbase-data-types"></a>dBASE des Types de données
 Le tableau suivant montre comment les types de données dBASE sont mappées aux types de données ODBC SQL. Notez que pas tous les types de données SQL ODBC sont prises en charge.  
@@ -56,7 +53,7 @@ Le tableau suivant montre comment les types de données dBASE sont mappées aux 
   
  Le tableau suivant présente des limitations sur dBASE types de données.  
   
-|Type de données|Description|  
+|Type de données| Description|  
 |---------------|-----------------|  
 |CHAR|Création d’une colonne de type CHAR de zéro ou de longueur non spécifiée retourne en fait une colonne 254 octets.|  
 |Données chiffrées|Le pilote dBASE ne prend pas en charge les tables dBASE chiffré.|  

@@ -1,16 +1,14 @@
 ---
-title: sys.sp_xtp_bind_db_resource_pool (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.sp_xtp_bind_db_resource_pool (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/03/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_xtp_bind_db_resource_pool_TSQL
@@ -23,16 +21,15 @@ helpviewer_keywords:
 - sp_xtp_bind_db_resource_pool
 - sys.sp_xtp_bind_db_resource_pool
 ms.assetid: c2a78073-626b-4159-996e-1808f6bfb6d2
-caps.latest.revision: 
+caps.latest.revision: 9
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8bcac671ebd335be8e6f22a1385d0c038e61e365
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 4ce8af4df2491d6b80acf931ae769b1a0299504b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysspxtpbinddbresourcepool-transact-sql"></a>sys.sp_xtp_bind_db_resource_pool (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2014-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2014-xxxx-xxxx-xxx-md.md)]
@@ -72,7 +69,7 @@ Database 'Hekaton_DB213' does not exist. Make sure that the name is entered corr
 ```  
   
 **Base de données est une base de données système**  
- [!INCLUDE[hek_2](../../includes/hek-2-md.md)] Impossible de créer des tables dans les bases de données système.  Il n'est donc pas possible de créer une liaison de mémoire [!INCLUDE[hek_2](../../includes/hek-2-md.md)] pour une base de données de ce type.  L'erreur suivante est retournée :  
+ Il n'est pas possible de créer des tables [!INCLUDE[hek_2](../../includes/hek-2-md.md)] dans des bases de données système.  Il n'est donc pas possible de créer une liaison de mémoire [!INCLUDE[hek_2](../../includes/hek-2-md.md)] pour une base de données de ce type.  L'erreur suivante est retournée :  
 *Database_name %s fait référence à une base de données système.  Pools de ressources peuvent uniquement être liées à une base de données utilisateur.*  
   
 ```  
@@ -99,7 +96,7 @@ Database 'Hekaton_DB' cannot be explicitly bound to the resource pool 'internal'
 ```  
   
 **Base de données est déjà lié à un autre Pool de ressources**  
- Une base de données ne peut être liée qu'à un seul pool de ressources à un moment donné. Les liaisons de bases de données aux pools de ressources doivent être supprimées explicitement avant de pouvoir être associées à un autre pool. See [sys.sp_xtp_unbind_db_resource_pool &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md).  
+ Une base de données ne peut être liée qu'à un seul pool de ressources à un moment donné. Les liaisons de bases de données aux pools de ressources doivent être supprimées explicitement avant de pouvoir être associées à un autre pool. Consultez [sys.sp_xtp_unbind_db_resource_pool &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md).  
 *Base de données %s est déjà lié au pool de ressources %s.  Vous devez annuler la liaison avant de pouvoir créer une nouvelle liaison.*  
   
 ```  
@@ -122,7 +119,7 @@ sys.sp_xtp_bind_db_resource_pool N'Hekaton_DB', N'Pool_Hekaton'
  
  La liaison prendra effet lors de la prochaine mise en ligne (ONLINE) de la base de données.  
  
- B. Exemple développé d’exemple qui inclut des vérifications de base ci-dessus.  Exécutez le code suivant [!INCLUDE[tsql](../../includes/tsql-md.md)] dans[!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]\:
+ B. Exemple développé d’exemple qui inclut des vérifications de base ci-dessus.  Exécutez le code suivant [!INCLUDE[tsql](../../includes/tsql-md.md)] dans [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)]\:
  
 ```sql
 DECLARE @resourcePool sysname = N'Pool_Hekaton';
@@ -160,6 +157,6 @@ END
   
 ## <a name="see-also"></a>Voir aussi  
  [Lier une base de données avec des tables optimisées en mémoire à un pool de ressources](../../relational-databases/in-memory-oltp/bind-a-database-with-memory-optimized-tables-to-a-resource-pool.md)   
- [Sys.sp_xtp_unbind_db_resource_pool &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md)  
+ [Sys.sp_xtp_unbind_db_resource_pool & #40 ; Transact-SQL & #41 ;](../../relational-databases/system-stored-procedures/sys-sp-xtp-unbind-db-resource-pool-transact-sql.md)  
   
   

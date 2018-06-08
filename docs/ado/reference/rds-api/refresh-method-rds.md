@@ -1,16 +1,15 @@
 ---
-title: "Refresh, méthode (RDS) | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Refresh, méthode (RDS) | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Refresh
@@ -19,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - Refresh method [RDS]
 ms.assetid: c90a8050-0ff4-4c83-9925-261f2f2ccfe9
-caps.latest.revision: 
+caps.latest.revision: 17
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 26182bb5f3ec1d60b66e5c16bf403a1f427c8b87
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: e86c8965180eb6cec2fda86a2c5141d0c3e6fa75
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="refresh-method-rds"></a>Refresh, méthode (RDS)
 Actualise la source de données spécifiée dans le [Connect](../../../ado/reference/rds-api/connect-property-rds.md) mises à jour les résultats de requête et la propriété.  

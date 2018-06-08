@@ -1,31 +1,23 @@
 ---
-title: "Créer une requête de prédiction Singleton à partir d’un modèle | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: singleton query predictions [DMX]
-ms.assetid: e0a68ab0-bece-4d25-b464-47f1719302e6
-caps.latest.revision: "12"
-author: Minewiskan
+title: Créer une requête de prédiction Singleton à partir d’un modèle | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 021faf311132e7bd104c66f02340159a9a8b290c
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.openlocfilehash: baa6153adde1a5cc5aaeaad5f8b04366dcb2dad8
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="create-a-singleton-prediction-query-from-a-template"></a>Créer une requête singleton de prédiction à partir d'un modèle
-[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]Une requête singleton est utile lorsque vous disposez d’un modèle à utiliser pour la prédiction, mais vous ne souhaitez pas mapper à un jeu de données d’entrée externe ou élaborer des prédictions en bloc. Avec une requête singleton, vous pouvez fournir une ou plusieurs valeurs au modèle et immédiatement consulter la valeur prédite.  
+[!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
+  Une requête singleton est utile lorsque vous disposez d'un modèle à utiliser pour la prédiction, mais vous ne souhaitez pas le mapper à un jeu de données d'entrée externe ou élaborer des prédictions en bloc. Avec une requête singleton, vous pouvez fournir une ou plusieurs valeurs au modèle et immédiatement consulter la valeur prédite.  
   
  Par exemple, la requête DMX suivante représente une requête singleton sur le modèle de publipostage ciblé TM_Decision_Tree.  
   
@@ -98,6 +90,6 @@ AS [t]
 11. Cliquez sur **Exécuter**.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Création de prédictions &#40;Didacticiel sur l’exploration de données de base&#41;](http://msdn.microsoft.com/library/a8410ed2-bb98-4d51-a9eb-b239be1201c2)  
+ [Création de prédictions & #40 ; Didacticiel d’exploration de données de base de données & #41 ;](http://msdn.microsoft.com/library/a8410ed2-bb98-4d51-a9eb-b239be1201c2)  
   
   

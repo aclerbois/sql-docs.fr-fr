@@ -1,30 +1,29 @@
 ---
-title: SQLSetConnectAttr | Microsoft Docs
-ms.custom: 
+title: SQLSetConnectAttr | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: 
 ms.component: native-client-odbc-api
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apitype: DLLExport
 helpviewer_keywords:
 - SQLSetConnectAttr function
 ms.assetid: d21b5cf1-3724-43f7-bc96-5097df0677b4
-caps.latest.revision: 
+caps.latest.revision: 106
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d68049b848f3a347e64133c811fbd68b69671be0
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5ad5c5425427f9bf5b8f7e6177379d91ebd10d6f
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlsetconnectattr"></a>SQLSetConnectAttr
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -62,7 +61,7 @@ ms.lasthandoff: 01/24/2018
 |SQL_COPT_SS_FAILOVER_PARTNER|Avant|  
 |SQL_COPT_SS_INTEGRATED_SECURITY|Avant|  
 |SQL_COPT_SS_MARS_ENABLED|Avant|  
-|SQL_COPT_SS_MULTISUBMIT_FAILOVER|Avant|  
+|SQL_COPT_SS_MULTISUBNET_FAILOVER|Avant|  
 |SQL_COPT_SS_OLDPWD|Avant|  
 |SQL_COPT_SS_PERF_DATA|After|  
 |SQL_COPT_SS_PERF_DATA_LOG|After|  
@@ -193,13 +192,13 @@ SQLSetConnectAttr(hdbc, SQL_COPT_SS_APPLICATION_INTENT, TEXT("Readonly"), SQL_NT
 |SQL_MARS_ENABLED_NO|Valeur par défaut. MARS (Multiple Active Result Sets) est désactivé.|  
 |SQL_MARS_ENABLED_YES|MARS est activé.|  
   
- Pour plus d’informations sur MARS, consultez [à l’aide de Multiple Active Result Sets &#40; MARS &#41; ](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).  
+ Pour plus d’informations sur MARS, consultez [à l’aide de jeux de résultats actifs multiples &#40;MARS&#41;](../../relational-databases/native-client/features/using-multiple-active-result-sets-mars.md).  
   
 ## <a name="sqlcoptssmultisubnetfailover"></a>SQL_COPT_SS_MULTISUBNET_FAILOVER  
  Si votre application se connecte à un groupe de disponibilité [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] sur des sous-réseaux différents, cette propriété de connexion configure [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Native Client afin de permettre une détection plus rapide du serveur (actuellement) actif et la connexion à ce dernier. Par exemple :  
   
 ```  
-SQLSetConnectAttr(hdbc, SQL_COPT_SS_MULTISUBMIT_FAILOVER, SQL_IS_ON, SQL_IS_INTEGER)  
+SQLSetConnectAttr(hdbc, SQL_COPT_SS_MULTISUBNET_FAILOVER, SQL_IS_ON, SQL_IS_INTEGER)  
 ```  
   
  Pour plus d’informations sur [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] prise en charge Native Client pour [!INCLUDE[ssHADR](../../includes/sshadr-md.md)] groupes de disponibilité, consultez [SQL Server Native Client prend en charge pour la haute disponibilité, la récupération d’urgence](../../relational-databases/native-client/features/sql-server-native-client-support-for-high-availability-disaster-recovery.md).  
@@ -312,12 +311,12 @@ SQLSetConnectAttr(hdbc, SQL_COPT_SS_MULTISUBMIT_FAILOVER, SQL_IS_ON, SQL_IS_INTE
 ## <a name="sqlsetconnectattr-support-for-service-principal-names-spns"></a>Prise en charge de SQLSetConnectAttr pour les noms de principaux du service (SPN)  
  SQLSetConnectAttr peut être utilisé pour définir la valeur de nouveaux attributs de connexion SQL_COPT_SS_SERVER_SPN et SQL_COPT_SS_FAILOVER_PARTNER_SPN. Ces attributs ne peuvent pas être définis lorsqu'une connexion est ouverte ; si vous essayez de définir ces attributs lorsqu'une connexion est ouverte, l'erreur HY011 est retournée avec le message « Opération actuellement non valide ». (SQLSetConnectOption peut également être utilisée pour définir ces valeurs.)  
   
- Pour plus d’informations sur les SPN, consultez [noms principaux de Service &#40; Noms principaux de service &#41; dans les connexions clientes &#40; ODBC &#41; ](../../relational-databases/native-client/odbc/service-principal-names-spns-in-client-connections-odbc.md).  
+ Pour plus d’informations sur les SPN, consultez [noms principaux de Service & #40 ; Noms principaux de service & #41 ; dans les connexions clientes & #40 ; ODBC & #41 ; ](../../relational-databases/native-client/odbc/service-principal-names-spns-in-client-connections-odbc.md).  
   
 ## <a name="sqlcoptssconnectiondead"></a>SQL_COPT_SS_CONNECTION_DEAD  
  Ceci est un attribut de lecture seule.  
   
- Pour plus d’informations sur SQL_COPT_SS_CONNECTION_DEAD, consultez [SQLGetConnectAttr](../../relational-databases/native-client-odbc-api/sqlgetconnectattr.md) et [la connexion à une Source de données &#40; ODBC &#41;](../../relational-databases/native-client-odbc-communication/connecting-to-a-data-source-odbc.md).  
+ Pour plus d’informations sur SQL_COPT_SS_CONNECTION_DEAD, consultez [SQLGetConnectAttr](../../relational-databases/native-client-odbc-api/sqlgetconnectattr.md) et [la connexion à une Source de données &#40;ODBC&#41;](../../relational-databases/native-client-odbc-communication/connecting-to-a-data-source-odbc.md).  
   
 ## <a name="example"></a>Exemple  
  Cet exemple consigne les données de performances.  
@@ -371,7 +370,7 @@ SQLSetConnectAttr(hDbc, SQL_COPT_SS_PERF_DATA,
  [SET ANSI_PADDING &#40;Transact-SQL&#41;](../../t-sql/statements/set-ansi-padding-transact-sql.md)   
  [SET ANSI_WARNINGS &#40;Transact-SQL&#41;](../../t-sql/statements/set-ansi-warnings-transact-sql.md)   
  [SET CONCAT_NULL_YIELDS_NULL &#40;Transact-SQL&#41;](../../t-sql/statements/set-concat-null-yields-null-transact-sql.md)   
- [SET QUOTED_IDENTIFIER &#40; Transact-SQL &#41;](../../t-sql/statements/set-quoted-identifier-transact-sql.md)   
+ [SET QUOTED_IDENTIFIER & #40 ; Transact-SQL & #41 ;](../../t-sql/statements/set-quoted-identifier-transact-sql.md)   
  [Fonction SQLPrepare](http://go.microsoft.com/fwlink/?LinkId=59360)   
  [SQLGetInfo](../../relational-databases/native-client-odbc-api/sqlgetinfo.md)  
   

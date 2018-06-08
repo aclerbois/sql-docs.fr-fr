@@ -1,27 +1,24 @@
 ---
-title: "Réparer une installation défectueuse de SQL Server | Microsoft Docs"
-ms.custom: 
+title: Réparer une installation défectueuse de SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 09/08/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install-windows
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 90c11b28-892b-44d6-978e-0eee48c75b7d
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 18
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.openlocfilehash: 51c0f4d73f3032497b8a428b4093c16754499b79
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 4944e5949dc1febab41f36e5749c595a2f4dc01b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771635"
 ---
 # <a name="repair-a-failed-sql-server-installation"></a>Réparer une installation défectueuse de SQL Server
 

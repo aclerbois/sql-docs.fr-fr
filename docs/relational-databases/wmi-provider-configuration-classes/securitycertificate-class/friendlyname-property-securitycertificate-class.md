@@ -1,16 +1,15 @@
 ---
-title: "Propriété FriendlyName (classe SecurityCertificate) | Documents Microsoft"
-ms.custom: 
+title: Propriété FriendlyName (classe SecurityCertificate) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/03/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - FriendlyName Property (SecurityCertificate Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - FriendlyName property
 ms.assetid: ae3f26f9-141c-47cf-afe4-14f99b6b9567
-caps.latest.revision: 
+caps.latest.revision: 33
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c98afd918ef3faee38577b088ba297cfdf8f18aa
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: de4eb9a077e51cfc8018b8d5b8ad2b6ecbf8b0b4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="friendlyname-property-securitycertificate-class"></a>Propriété FriendlyName (classe SecurityCertificate)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

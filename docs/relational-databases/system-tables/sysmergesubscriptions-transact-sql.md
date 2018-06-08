@@ -1,16 +1,15 @@
 ---
 title: sysmergesubscriptions (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-tables
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -22,16 +21,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmergesubscriptions system table
 ms.assetid: 6adc78da-991d-4c08-98c3-ecb4762e0e99
-caps.latest.revision: 
+caps.latest.revision: 22
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: cd713b90c4d295eee99953c6561e9a7d057fc39b
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 2af51b3b46c9e4a939106ed32ed378d0d5e6cee1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sysmergesubscriptions-transact-sql"></a>sysmergesubscriptions (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -69,7 +67,7 @@ ms.lasthandoff: 11/21/2017
 |cleanedup_unsent_changes|**bit**|Indique que les métadonnées relatives aux modifications non envoyées ont été nettoyées sur l'Abonné.|  
 |replica_version|**int**|Identifie la version de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] de l'abonné auquel appartient l'abonnement. Les valeurs possibles sont :<br /><br /> **90** = [!INCLUDE[ssVersion2005](../../includes/ssversion2005-md.md)]<br /><br /> **100** = [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)]|  
 |supportability_mode|**int**|À usage interne uniquement|  
-|application_name|**nvarchar (128)**|À usage interne uniquement|  
+|application_name|**nvarchar(128)**|À usage interne uniquement|  
 |subscriber_number|**int**|À usage interne uniquement|  
 |last_makegeneration_datetime|**datetime**|La dernière **datetime** exécutée par le processus de makegeneration pour le serveur de publication. Pour plus d’informations, consultez le paramètre - MakeGenerationInterval dans [Replication Merge Agent](../../relational-databases/replication/agents/replication-merge-agent.md).|  
   

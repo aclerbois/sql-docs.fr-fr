@@ -1,16 +1,13 @@
 ---
 title: Surveiller la copie des journaux de transaction (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/06/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: log-shipping
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - log shipping [SQL Server], status
 - history tables [SQL Server]
@@ -20,19 +17,20 @@ helpviewer_keywords:
 - status information [SQL Server], log shipping
 - monitoring log shipping [SQL Server]
 ms.assetid: acf3cd99-55f7-4287-8414-0892f830f423
-caps.latest.revision: "29"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 29
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 4399ef7bef888655c6c69926b622612ba9bb84d8
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 1d805bc8bdb62f5aad87afa19fd12e4d134a6ed8
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34771695"
 ---
 # <a name="monitor-log-shipping-transact-sql"></a>Surveiller la copie des journaux de transaction (Transact-SQL)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Une fois l’envoi de journaux configuré, vous pouvez contrôler les informations d’état de l’ensemble des serveurs d’envoi de journaux. L'historique et l'état des opérations d'envoi de journaux sont toujours enregistrés localement par les travaux d'envoi de journaux. L'historique et l'état de l'opération de sauvegarde sont stockés sur le serveur principal, tandis que l'historique et l'état des opérations de copie et de restauration sont stockés sur le serveur secondaire. Si vous avez implémenté un serveur moniteur distant, ces informations sont également stockées sur le serveur moniteur.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Une fois l'envoi de journaux configuré, vous pouvez contrôler les informations d'état de l'ensemble des serveurs d'envoi de journaux. L'historique et l'état des opérations d'envoi de journaux sont toujours enregistrés localement par les travaux d'envoi de journaux. L'historique et l'état de l'opération de sauvegarde sont stockés sur le serveur principal, tandis que l'historique et l'état des opérations de copie et de restauration sont stockés sur le serveur secondaire. Si vous avez implémenté un serveur moniteur distant, ces informations sont également stockées sur le serveur moniteur.  
   
  Vous pouvez définir des alertes qui se déclenchent si les opérations d'envoi de journaux ne sont pas exécutées conformément à la planification. Les erreurs sont signalées par un travail d'alerte qui surveille l'état des opérations de sauvegarde et de restauration. Vous pouvez définir des alertes qui indiquent à l'opérateur l'occurrence de ces erreurs. Si un serveur moniteur est configuré, un travail d'alerte s'exécute sur le serveur moniteur qui signale les erreurs de toutes les opérations dans la configuration d'envoi des journaux. Si aucun serveur moniteur n'est défini, un travail d'alerte s'exécute sur l'instance du serveur principal qui surveille la sauvegarde. Si aucun serveur moniteur n'est défini, un travail d'alerte s'exécute également sur chaque instance de serveur secondaire pour surveiller les opérations de copie et de restauration.  
   

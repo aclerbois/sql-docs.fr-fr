@@ -1,31 +1,23 @@
 ---
-title: "Configurer l’utilisation de l’espace disque (PowerPivot pour SharePoint) | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 201a3fda-f162-45d7-bf39-74dcb92fd0e6
-caps.latest.revision: 
-author: Minewiskan
+title: Configurer l’utilisation de l’espace disque (PowerPivot pour SharePoint) | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: ppvt-sharepoint
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: cfac3c1160e6889fe51f1b93a4df87a0ed92a302
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 24d96feb0e57bf0b1c62532cca63ddf07f96f21c
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="configure-disk-space-usage-power-pivot-for-sharepoint"></a>Configurer l’utilisation de l’espace disque (PowerPivot pour SharePoint)
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Un déploiement de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise l’espace disque de l’ordinateur hôte pour mettre en cache des bases de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et accélérer leurs rechargements. Chaque base de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] chargée en mémoire est d’abord mise en cache sur le disque, ce qui permet de la recharger ensuite rapidement en vue de nouvelles demandes de données. Par défaut, [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise tout l’espace disque disponible pour mettre en cache ses bases de données, mais peut modifier ce comportement à l’aide de propriétés qui limitent la quantité d’espace disque utilisée.  
+  Un déploiement de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise l’espace disque de l’ordinateur hôte pour mettre en cache des bases de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] et accélérer leurs rechargements. Chaque base de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] chargée en mémoire est d’abord mise en cache sur le disque, ce qui permet de la recharger ensuite rapidement en vue de nouvelles demandes de données. Par défaut, [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour SharePoint utilise tout l’espace disque disponible pour mettre en cache ses bases de données, mais peut modifier ce comportement à l’aide de propriétés qui limitent la quantité d’espace disque utilisée.  
   
  Cette rubrique explique comment définir les limites sur l'utilisation de l'espace disque.  
   
@@ -57,11 +49,11 @@ Un déploiement de [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] pour Shar
   
  Au niveau du système, vous pouvez créer des alertes par courrier électronique qui vous informent lorsque l'espace disque est faible. Microsoft System Center inclut une fonctionnalité d'alerte par courrier électronique. Vous pouvez également utiliser le Gestionnaire de ressources du serveur de fichiers, le Planificateur de tâches ou un script PowerShell pour configurer des alertes. Les liens suivants fournissent des informations utiles pour la définition de notifications relatives à l'espace disque insuffisant :  
   
--   [Nouveautés du Gestionnaire de ressources du serveur de fichiers](http://technet.microsoft.com/library/hh831746.aspx) (http://technet.microsoft.com/library/hh831746.aspx).  
+-   [Quelles sont les nouveautés dans le Gestionnaire de ressources du serveur de fichiers](http://technet.microsoft.com/library/hh831746.aspx) (http://technet.microsoft.com/library/hh831746.aspx).  
   
--   [Guide pas à pas du Gestionnaire de ressources du serveur de fichiers pour Windows Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=204875) (http://go.microsoft.com/fwlink/?LinkID=204875).  
+-   [Guide pas à pas de gestionnaire de ressources de serveur de fichiers pour Windows Server 2008 R2](http://go.microsoft.com/fwlink/?LinkID=204875) (http://go.microsoft.com/fwlink/?LinkID=204875).  
   
--   [Définition d’alertes d’espace disque insuffisant sur Windows Server 2008](http://go.microsoft.com/fwlink/?LinkID=204870) (http://go.microsoft.com/fwlink/?LinkID=204870).  
+-   [Définition des alertes d’espace disque faible sur Windows Server 2008](http://go.microsoft.com/fwlink/?LinkID=204870) ( http://go.microsoft.com/fwlink/?LinkID=204870).  
   
 ## <a name="how-to-limit-the-amount-of-disk-space-used-for-storing-cached-files"></a>Comment limiter la quantité d'espace disque utilisée pour le stockage des fichiers mis en cache  
   

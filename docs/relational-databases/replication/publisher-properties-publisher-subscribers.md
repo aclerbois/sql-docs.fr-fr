@@ -1,32 +1,30 @@
 ---
-title: "Propriétés du serveur de publication - Serveur de publication, Abonnés | Microsoft Docs"
-ms.custom: 
+title: Propriétés du serveur de publication - Serveur de publication, Abonnés | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.configdistwizard.pubproperties.subscribers.f1
 helpviewer_keywords:
 - Publisher Properties dialog box
 ms.assetid: 552d2bd6-13f9-4876-b8f1-89adb242ef70
-caps.latest.revision: 
+caps.latest.revision: 22
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 81a64ad4ed8991838b5f0c22a29769de278fa018
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: ec1fcea84b7e5051ded8db799e41dd92e752710c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publisher-properties---publisher-subscribers"></a>Propriétés du serveur de publication - Serveur de publication, Abonnés
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

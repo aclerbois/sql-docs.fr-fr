@@ -1,16 +1,14 @@
 ---
-title: sysmail_start_sp (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sysmail_start_sp (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sysmail_start_sp
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sysmail_start_sp
 ms.assetid: 25fd7bb6-cfdd-463f-bea8-c6fcb805d3f5
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b4bc8f6fda47c152127f4f3ae289a8d4f4b07a56
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 9513e95d52aed4ee7fb525504dfb112092e1807d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysmailstartsp-transact-sql"></a>sysmail_start_sp (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -82,6 +79,6 @@ GO
  [Messagerie de base de données](../../relational-databases/database-mail/database-mail.md)   
  [Option de Configuration de serveur de base de données Mail XPs](../../database-engine/configure-windows/database-mail-xps-server-configuration-option.md)   
  [sysmail_stop_sp &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sysmail-stop-sp-transact-sql.md)   
- [Messagerie de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
+ [Procédures stockées de messagerie de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-mail-stored-procedures-transact-sql.md)  
   
   

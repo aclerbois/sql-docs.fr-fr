@@ -3,14 +3,12 @@ title: Mise à jour d’une Application, le pilote OLE DB pour SQL Server à par
 description: Mise à jour d’une application de pilote OLE DB pour SQL Server à partir de MDAC
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: oledb|applications
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -21,16 +19,17 @@ helpviewer_keywords:
 - OLE DB Driver for SQL Server, updating applications
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 4b0581e1423cd2731b1edb0dbdc0f26523f445a7
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: 907e1c08f422809a04d3e3c8846d91f7982bb7ea
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="updating-an-application-to-ole-db-driver-for-sql-server-from-mdac"></a>Mise à jour d’une Application, le pilote OLE DB pour SQL Server à partir de MDAC
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+
+[!INCLUDE[Driver_OLEDB_Download](../../../includes/driver_oledb_download.md)]
 
   Il existe plusieurs différences entre le pilote OLE DB pour SQL Server et Microsoft Data Access Components (MDAC) ; à compter de Windows Vista, les composants d’accès aux données sont maintenant appelés Windows Data Access Components (ou Windows DAC). Bien que les deux fournissent l’accès aux données native [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] des bases de données, pilote OLE DB pour SQL Server a été spécifiquement conçu pour exposer les nouvelles fonctionnalités de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], tout en conservant une compatibilité descendante avec les versions antérieures.   
 
@@ -57,8 +56,6 @@ ms.lasthandoff: 03/30/2018
 -   Pilote OLE DB pour SQL Server ne contient pas d’intégration de XML. Pilote OLE DB pour SQL Server prend en charge SELECT... POUR les requêtes de XML, mais ne prend pas en charge d’autres fonctionnalités XML. Toutefois, le pilote OLE DB pour SQL Server prend en charge la **xml** type de données introduits dans [!INCLUDE[ssVersion2005](../../../includes/ssversion2005-md.md)].  
 
 -   Pilote OLE DB pour SQL Server prend en charge la configuration des bibliothèques réseau côté client à l’aide des attributs de chaîne de connexion uniquement. Pour configurer une bibliothèque réseau de manière plus complète, vous devez utiliser le Gestionnaire de configuration [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)].  
-
--   Pilote OLE DB pour SQL Server n’est pas compatible avec odbcbcp.dll. Pour établir un lien msoledbsql.lib afin d’utiliser le pilote OLE DB pour SQL Server, les applications doivent être recréées.    
 
 -   Chaînes de connexion MDAC autorisent une valeur booléenne (**true**) pour le **Trusted_Connection** (mot clé). Un pilote OLE DB pour la chaîne de connexion SQL Server doit utiliser **Oui** ou **aucun**.  
 
@@ -116,4 +113,4 @@ ms.lasthandoff: 03/30/2018
  Les deux pilote OLE DB pour SQL Server et MDAC lecture d’isolation de transaction validée à l’aide de la version de la ligne, mais uniquement pilote OLE DB pour SQL Server prend en charge la capture instantanée d’isolation des transactions. (En termes de programmation, l'isolation de la transaction de lecture validée à l'aide du contrôle de version de ligne est la même chose que la transaction de lecture validée.)  
 
 ## <a name="see-also"></a>Voir aussi  
- [Génération d’Applications avec le pilote OLE DB pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  
+ [Génération d’applications avec OLE DB Driver pour SQL Server](../../oledb/applications/building-applications-with-oledb-driver-for-sql-server.md)  

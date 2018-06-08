@@ -1,28 +1,24 @@
 ---
 title: En Mode FIPS | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2018
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+ms.assetid: ''
+caps.latest.revision: 1
 author: v-nisidh
 ms.author: v-nisidh
 manager: andrela
-ms.workload: Inactive
-ms.openlocfilehash: e6e60a44f4dbe890683436ea6f6801f504396239
-ms.sourcegitcommit: 9d0467265e052b925547aafaca51e5a5e93b7e38
+ms.openlocfilehash: 48c0ca49b743a012130a46dda30dd5053e52cea3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/02/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="fips-mode"></a>En Mode FIPS
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

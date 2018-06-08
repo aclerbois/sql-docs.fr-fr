@@ -1,31 +1,29 @@
 ---
-title: "Réplication transactionnelle | Microsoft Docs"
-ms.custom: 
+title: Réplication transactionnelle | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - transactional replication, about transactional replication
 - transactional replication
 ms.assetid: 3ca82fb9-81e6-4c3c-94b3-b15f852b18bd
-caps.latest.revision: 
+caps.latest.revision: 38
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6000766d1859869bc806c54e15d72e8a7f64500f
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 6dc4e44f8a7f14de94347a78dce35cc13dac57e7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="transactional-replication"></a>Réplication transactionnelle
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -44,18 +42,6 @@ ms.lasthandoff: 03/08/2018
 -   Le serveur de publication ou l'Abonné est une base de données non-[!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] , Oracle par exemple.  
   
  Par défaut, les Abonnés à des publications transactionnelles doivent être traités en lecture seule, parce que les changements ne sont pas propagés vers le serveur de publication. Cependant, la réplication transactionnelle n'offre pas d'options qui permettent des mises à jour sur l'Abonné.  
-  
- **Dans cette rubrique**  
-  
- [Fonctionnement de la réplication transactionnelle](#HowWorks)  
-  
- [Jeu de données initial](#Dataset)  
-  
- [Agent d'instantané](#SnapshotAgent)  
-  
- [l'Agent de lecture du journal ;](#LogReaderAgent)  
-  
- [Agent de distribution](#DistributionAgent)  
   
 ##  <a name="HowWorks"></a> Fonctionnement de la réplication transactionnelle  
  La réplication transactionnelle est effectuée par l'Agent d'instantané, l'Agent de lecture du journal et l'Agent de distribution [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] . L'Agent d'instantané prépare les fichiers d'instantanés contenant les schémas ainsi que les données des tables et des objets de base de données publiés, stocke les fichiers dans le dossier d'instantanés, et enregistre les travaux de synchronisation dans la base de données de distribution sur le serveur de distribution.  

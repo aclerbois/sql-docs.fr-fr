@@ -1,44 +1,24 @@
 ---
 title: Spécification des partitions et des Options de déploiement de rôle | Documents Microsoft
-ms.custom: ''
-ms.date: 03/27/2018
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: ''
-ms.component: data-mining
-ms.reviewer: ''
-ms.suite: pro-bi
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-helpviewer_keywords:
-- input files [Analysis Services]
-- partitions [Analysis Services], deployment options
-- Analysis Services deployments, roles
-- Analysis Services deployments, partitions
-- Analysis Services Deployment Wizard, roles
-- Analysis Services Deployment Wizard, partitions
-- deploying [Analysis Services], roles
-- roles [Analysis Services], deployment options
-- deploying [Analysis Services], partitions
-- modifying role deployments
-- modifying partition deployments
-ms.assetid: e9b9ca57-a5cc-4fc0-87b5-305257038d56
-caps.latest.revision: ''
-author: Minewiskan
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 74983fd59a7262f7deb116d50709273e57743f18
-ms.sourcegitcommit: d6881107b51e1afe09c2d8b88b98d075589377de
+ms.openlocfilehash: 64a8eeff0447b6a62e7e1f8e21bf48ae3a6b99a3
+ms.sourcegitcommit: b3bb41424249de198f22d9c6d40df4996f083aa6
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="deployment-script-files---partition-and-role-deployment-options"></a>Fichiers de Script de déploiement - Partition et les Options de déploiement de rôle
 [!INCLUDE[ssas-appliesto-sqlas-all-aas](../../includes/ssas-appliesto-sqlas-all-aas.md)]
 
-  Le [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] Assistant Déploiement de lit les options de déploiement de rôles et de partitions à partir de la \< *nom du projet*> .deploymentoptions fichier. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]crée ce fichier lorsque vous générez le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] projet. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] utilise les options de déploiement de rôles et de partitions actuelles projet lorsque le \< *nom du projet*> .deploymentoptions est créé. Pour plus d'informations sur les paramètres de configuration, consultez [Understanding the Input Files Used to Create the Deployment Script](../../analysis-services/multidimensional-models/deployment-script-files-input-used-to-create-deployment-script.md).  
+  Le [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] Assistant Déploiement de lit les options de déploiement de rôles et de partitions à partir de la \< *nom du projet*> .deploymentoptions fichier. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)]crée ce fichier lorsque vous générez le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] projet. [!INCLUDE[ssBIDevStudioFull](../../includes/ssbidevstudiofull-md.md)] utilise les options de déploiement de rôles et de partitions actuelles projet lorsque le \< *nom du projet*> .deploymentoptions est créé. Pour plus d'informations sur les paramètres de configuration, consultez [Précisions sur les fichiers d'entrée utilisés pour créer le script de déploiement](../../analysis-services/multidimensional-models/deployment-script-files-input-used-to-create-deployment-script.md).  
   
 ## <a name="reviewing-the-partition-and-role-deployment-options"></a>Examen des options de déploiement de partitions et de rôles  
  Les options de déploiement dans le \< *nom du projet*> .deploymentoptions sont les suivantes :  
@@ -75,7 +55,7 @@ ms.lasthandoff: 03/28/2018
   
      —ou—  
   
--   Ouvrez le \< *nom du projet*> .deploymentoptions dans un éditeur de texte et manuellement modifier les options.  
+-   Ouvrez le \< *nom du projet*> .deploymentoptions dans un éditeur de texte et manuellement modifier les options. Les options de PartitionDeployment sont DeployPartitions, RetainPartitions. Les options de RoleDeployment sont DeployRolesAndMembers, DeployRolesRetainMembers, RetainRoles.
   
 ## <a name="see-also"></a>Voir aussi  
  [Spécification de la cible d’Installation](../../analysis-services/multidimensional-models/deployment-script-files-specifying-the-installation-target.md)   

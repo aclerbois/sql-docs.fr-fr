@@ -1,27 +1,25 @@
 ---
-title: "Collections intégrées dans les expressions (Générateur de rapports et SSRS) | Microsoft Docs"
-ms.custom: 
+title: Collections intégrées dans les expressions (Générateur de rapports et SSRS) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-design
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 78d5e3b8-9320-4e4b-a025-e2de3cf7afa7
-caps.latest.revision: "9"
+caps.latest.revision: 9
 author: maggiesMSFT
 ms.author: maggies
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c2b77e6760178fd0c1073a9a6cd9ef9e7b0d1034
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: e73b24b9680a18dcc19ab294aa6357310ac6cf36
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="built-in-collections-in-expressions-report-builder"></a>Collections intégrées dans les expressions (Générateur de rapports)
   Dans une expression d'un rapport, vous avez la possibilité d'inclure des références aux collections intégrées suivantes : ReportItems, Parameters, Fields, DataSets, DataSources, Variables, ainsi que des champs prédéfinis pour les informations globales telles que le nom du rapport. Les collections ne sont pas toutes répertoriées dans la boîte de dialogue **Expression** . En effet, les collections DataSets et DataSources ne sont disponibles qu'au moment de l'exécution pour les rapports publiés sur un serveur de rapports. La collection ReportItems représente l'ensemble des zones de texte figurant dans une partie du rapport, comme celles qui sont situées dans une page ou dans un en-tête de page.  

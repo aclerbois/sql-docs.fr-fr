@@ -3,14 +3,12 @@ title: Détail de l’erreur SQL Server | Documents Microsoft
 description: Détail de l’erreur SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-errors
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- docset-sql-devref
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
@@ -22,13 +20,12 @@ helpviewer_keywords:
 - ISQLServerErrorInfo interface
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 5846a1b478d514ecaa62087c1fef3036104fb745
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: f271da81733649c94f01b06281f7463c8ac719b5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-error-detail"></a>Détail des erreurs SQL Server
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -64,6 +61,6 @@ if(FAILED(hr=pIErrorRecords->GetCustomErrorObject(
   
 ## <a name="see-also"></a>Voir aussi  
  [Erreurs](../../oledb/ole-db-errors/errors.md)   
- [RAISERROR &#40; Transact-SQL &#41;](../../../t-sql/language-elements/raiserror-transact-sql.md)  
+ [RAISERROR & #40 ; Transact-SQL & #41 ;](../../../t-sql/language-elements/raiserror-transact-sql.md)  
   
   

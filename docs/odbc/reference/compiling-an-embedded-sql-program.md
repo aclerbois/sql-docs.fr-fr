@@ -1,32 +1,29 @@
 ---
-title: "Compilez un programme SQL incorporé | Documents Microsoft"
-ms.custom: 
+title: Compilez un programme SQL incorporé | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL [ODBC], embedded SQL
 - SQL statements [ODBC], embedded SQL
 - compiling embedded SQL programs [ODBC]
 - embedded SQL [ODBC]
 ms.assetid: 9e94146a-5b80-4a01-b586-1e03ff05b9ac
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: aeb3dbb46b8ac3e5e715a479923694cdea28a97f
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 4e4b89a65475b35b50a968b9497c6d90574c6738
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="compiling-an-embedded-sql-program"></a>Compilez un programme SQL incorporé
 Comme un programme SQL incorporé contient une combinaison d’instructions de langage SQL et l’hôte, il ne peut pas être soumis directement à un compilateur pour le langage hôte. Au lieu de cela, il est compilé dans un processus en plusieurs étapes. Bien que ce processus est différent du produit, les étapes sont à peu près les mêmes pour tous les produits.  

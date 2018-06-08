@@ -1,33 +1,31 @@
 ---
-title: "Utiliser des profils d’Agent de réplication | Microsoft Docs"
-ms.custom: 
+title: Utiliser des profils d’Agent de réplication | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - replication [SQL Server], agents and profiles
 - replication agent profiles [SQL Server]
 - agents [SQL Server replication], profiles
 - profiles [SQL Server], replication agents
 ms.assetid: 9c290a88-4e9f-4a7e-aab5-4442137a9918
-caps.latest.revision: 
+caps.latest.revision: 49
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 189377d1812914df0f71ec844cd9fca0127a4a9c
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: a35e8e86402dd4036af80899bd5431bbed3bbb2f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="work-with-replication-agent-profiles"></a>Utiliser des profils d'agent de réplication
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -178,12 +176,12 @@ ms.lasthandoff: 03/08/2018
   
 2.  Sur le serveur de distribution, exécutez [sp_help_agent_parameter &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-help-agent-parameter-transact-sql.md). Spécifiez l'identificateur de profil de l'étape 1 pour **@profile_id**. Tous les paramètres du profil sont alors retournés. Notez le nom de tous les paramètres à modifier ou à supprimer du profil.  
   
-3.  Pour modifier la valeur d’un paramètre dans un profil, exécutez [sp_change_agent_profile &#40; Transact-SQL &#41;](../../../relational-databases/system-stored-procedures/sp-change-agent-profile-transact-sql.md). Spécifiez l'identificateur de profil de l'étape 1 pour **@profile_id**, le nom du paramètre à changer pour **@property**, et une nouvelle valeur pour le paramètre de **@value**.  
+3.  Pour changer la valeur d’un paramètre dans un profil, exécutez [sp_change_agent_parameter &#40;Transact-SQL&#41;](../../../relational-databases/system-stored-procedures/sp-change-agent-parameter-transact-sql.md). Spécifiez l'identificateur de profil de l'étape 1 pour **@profile_id**, le nom du paramètre à changer pour **@parameter_name**, et une nouvelle valeur pour le paramètre de **@parameter_value**.  
   
     > [!NOTE]  
     >  Vous ne pouvez pas modifier un profil d'agent existant pour qu'il devienne le profil par défaut d'un agent. Vous devez créer à la place un nouveau profil comme profil par défaut, comme illustré dans la procédure précédente.  
   
-4.  Pour supprimer un paramètre d’un profil, exécutez [sp_drop_agent_parameter &#40; Transact-SQL &#41;](../../../relational-databases/system-stored-procedures/sp-drop-agent-parameter-transact-sql.md). Spécifiez l'identificateur de profil de l'étape 1 pour **@profile_id** et le nom du paramètre à supprimer pour **@parameter_name**.  
+4.  Pour supprimer un paramètre d’un profil, exécutez [sp_drop_agent_parameter & #40 ; Transact-SQL & #41;](../../../relational-databases/system-stored-procedures/sp-drop-agent-parameter-transact-sql.md). Spécifiez l'identificateur de profil de l'étape 1 pour **@profile_id** et le nom du paramètre à supprimer pour **@parameter_name**.  
   
 5.  Pour ajouter un nouveau paramètre à un profil, vous devez effectuer les opérations suivantes :  
   

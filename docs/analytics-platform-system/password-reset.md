@@ -1,28 +1,21 @@
 ---
-title: "Réinitialisation de mot de passe (système de plateforme Analytique)"
-author: barbkess
-ms.author: barbkess
-manager: jhubbard
-ms.prod: analytics-platform-system
-ms.prod_service: mpp-data-warehouse
-ms.service: 
-ms.component: 
-ms.technology: mpp-data-warehouse
-ms.custom: 
-ms.date: 01/05/2017
-ms.reviewer: na
-ms.suite: sql
-ms.tgt_pltfrm: na
-ms.topic: article
-ms.assetid: a0f808fc-e120-430b-b6c9-11f2b1c90bf3
-caps.latest.revision: "26"
-ms.openlocfilehash: 5b342aca4498816e59e0fafcb882c5c039fed501
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+title: Réinitialisation du mot de passe - système de plateforme Analytique | Documents Microsoft
+description: La page de réinitialisation de mot de passe vous permet de modifier le mot de passe pour les comptes d’administrateur utilisé par le système de plateforme d’Analytique.
+author: mzaman1
+manager: craigg
+ms.prod: sql
+ms.technology: data-warehouse
+ms.topic: conceptual
+ms.date: 04/17/2018
+ms.author: murshedz
+ms.reviewer: martinle
+ms.openlocfilehash: 63fbb097bf1ca926223ce7c0114c8da5d10cd969
+ms.sourcegitcommit: 056ce753c2d6b85cd78be4fc6a29c2b4daaaf26c
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/19/2018
 ---
-# <a name="password-reset"></a>Redéfinition du mot de passe
+# <a name="password-reset---analytics-platform-system"></a>Réinitialisation du mot de passe - système de plateforme Analytique
 Le **mot de passe réinitialisé** page permet de modifier le mot de passe pour les comptes d’administrateur utilisé par le système de plateforme d’Analytique.  
   
 > [!WARNING]  
@@ -39,7 +32,7 @@ Local **administrateur** compte sur les ordinateurs qui hébergent les machines 
 > [!IMPORTANT]  
 > Pour le dispositif de la mise à jour 1, **Configuration Manager** ne modifie pas correctement le mot de passe des comptes d’administrateur local dans l’ensemble de la PDW VM. Si cela est nécessaire, contactez Microsoft pour obtenir des instructions supplémentaires.  
   
-**association de sécurité**  
+**sa**  
 Le **sa** dans SQL Server. **sa** est un membre de la **sysadmin** rôle serveur fixe et est un administrateur de SQL Server. Le mot de passe de la **sa** connexion peut également être modifiée à l’aide de la **ALTER LOGIN** instruction.  
   
 ## <a name="password-requirements"></a>Exigences de mot de passe  
@@ -50,7 +43,7 @@ Les informations d’identification d’administrateur de domaine et les informa
   
 ## <a name="to-reset-a-password"></a>Pour réinitialiser un mot de passe  
   
-1.  Se connecter sur le nœud de contrôle et lancez la **Configuration Manager** (**dwconfig.exe**). Pour plus d’informations, consultez [lance le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41; ](launch-the-configuration-manager.md).  
+1.  Se connecter sur le nœud de contrôle et lancez la **Configuration Manager** (**dwconfig.exe**). Pour plus d’informations, consultez [lancer le Gestionnaire de Configuration &#40;système de plateforme Analytique&#41;](launch-the-configuration-manager.md).  
   
 2.  Dans le volet gauche de la **Configuration Manager**, cliquez sur **réinitialisation de mot de passe**.  
   
@@ -61,6 +54,6 @@ Les informations d’identification d’administrateur de domaine et les informa
     ![Mot de passe SQL Server DWConfig](./media/password-reset/SQL_Server_PDW_DWConfig_TopPW.png "SQL_Server_PDW_DWConfig_TopPW")  
   
 ## <a name="see-also"></a>Voir aussi  
-[Mot de passe administrateur pour ouvrir une session sur les nœuds AD dans les Services d’annuaire restaurer le Mode &#40; mode DSRM &#41; &#40; Système de plateforme Analytique &#41;](set-admin-password-for-logging-on-to-ad-nodes-in-directory-services-restore-mode.md)  
-[Lancez le Gestionnaire de Configuration &#40; Système de plateforme Analytique &#41;](launch-the-configuration-manager.md)  
+[Définir le mot de passe administrateur pour ouvrir une session sur les nœuds AD en Mode restauration des Services Active &#40;DSRM&#41; &#40;Analytique plate-forme système&#41;](set-admin-password-for-logging-on-to-ad-nodes-in-directory-services-restore-mode.md)  
+[Lancez le Gestionnaire de Configuration &#40;Analytique plate-forme système&#41;](launch-the-configuration-manager.md)  
   

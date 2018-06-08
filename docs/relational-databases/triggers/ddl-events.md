@@ -1,36 +1,35 @@
 ---
-title: "Événements DDL | Microsoft Docs"
-ms.custom: 
+title: Événements DDL | Microsoft Docs
+ms.custom: ''
 ms.date: 11/01/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-ddl
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - DDL events
 - DDL triggers, events
 - events [SQL Server], DDL
 ms.assetid: 62ef24b4-3553-4aed-b62a-670980bae501
-caps.latest.revision: 
+caps.latest.revision: 29
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 9ab16db537c4033f0dd68ddd457e9e1a341a7449
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: fabc1bee19dd04ed8943cea23067e675b3a76f08
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ddl-events"></a>Événements DDL
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Les tableaux suivants répertorient les événements DDL qui peuvent être utilisés pour activer une notification d'événements ou un déclencheur DDL. Notez que chaque événement correspond à une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ou à une procédure stockée, la syntaxe de l'instruction étant modifiée pour inclure un trait de soulignement (_) entre les mots clés.  
+  Les tableaux suivants répertorient les événements DDL qui peuvent être utilisés pour activer une notification d'événements ou un déclencheur DDL. Notez que chaque événement correspond à une instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] ou à une procédure stockée, la syntaxe de l'instruction étant modifiée pour inclure un trait de soulignement (_) entre les mots clés.  
   
 > [!IMPORTANT]  
 >  Les procédures stockées système qui exécutent des opérations de type DDL peuvent également activer des notifications d'événements et des déclencheurs DDL. Testez vos déclencheurs et notifications d'événements DDL afin de déterminer leur réponse aux procédures stockées système qui sont exécutées. Par exemple, l’instruction CREATE TYPE et la procédure stockée **sp_addtype** activent toutes les deux un déclencheur ou une notification d’événements DDL créés sur un événement CREATE_TYPE.  

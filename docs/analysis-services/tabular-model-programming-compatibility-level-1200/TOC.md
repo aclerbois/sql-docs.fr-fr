@@ -1,10 +1,10 @@
 # [Programmation de modèles tabulaires pour le niveau de compatibilité 1200 ou supérieur](tabular-model-programming-for-compatibility-level-1200.md)
 
+# [Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO](introduction-to-the-tabular-object-model-tom-in-analysis-services-amo.md)
 # [Ajouter une source de données à un modèle tabulaire (Analysis Services AMO-TOM)](add-a-data-source-to-tabular-model-analysis-services-amo-tom.md)
 # [Se connecter à une base de données et un serveur tabulaire Analysis Services existant](connect-to-existing-analysis-services-tabular-server-and-database.md)
 # [Créer et déployer une base de données vide (Analysis Services AMO-TOM)](create-and-deploy-an-empty-database-analysis-services-amo-tom.md)
 # [Créer des tables, des partitions et des colonnes dans un modèle tabulaire](create-tables-partitions-and-columns-in-a-tabular-model.md)
 # [Gérer les erreurs dans l’API TOM (Analysis Services AMO-TOM)](handling-errors-in-the-tom-api-analysis-services-amo-tom.md)
 # [Installer, distribuer et référencer l’objet de modèle tabulaire (TOM)](install-distribute-and-reference-the-tabular-object-model.md)
-# [Présentation du modèle d’objet tabulaire (TOM) dans Analysis Services AMO](introduction-to-the-tabular-object-model-tom-in-analysis-services-amo.md)
 # [Répertorier les bases de données existantes sur un serveur tabulaire (Analysis Services AMO-TOM)](list-existing-databases-on-a-tabular-server-analysis-services-amo-tom.md)

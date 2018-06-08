@@ -1,32 +1,30 @@
 ---
-title: "Éditeur de tâche de profilage de données (page Demandes de profil) | Microsoft Docs"
-ms.custom: 
+title: Éditeur de tâche de profilage de données (page Demandes de profil) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: control-flow
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - integration-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.dts.designer.dataprofilingtask.profilerequests.f1
 helpviewer_keywords:
 - Data Profiling Task Editor
 ms.assetid: c72acb3d-380e-436e-8041-ed364eddfabd
-caps.latest.revision: 
+caps.latest.revision: 26
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e6883b8ec802392c0ae4d3a92a41f54433d403f8
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 1d11da7d0a313757de017fdb5c765845650987cf
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="data-profiling-task-editor-profile-requests-page"></a>Éditeur de tâche de profilage de données (page Demandes de profil)
   Utilisez la page **Demandes de profil** de **l’Éditeur de tâche de profilage de données** pour sélectionner et configurer les profils que vous souhaitez calculer. Dans une même tâche de profilage des données, vous pouvez calculer plusieurs profils pour plusieurs colonnes ou des combinaisons de colonnes dans plusieurs tables ou vues.  
@@ -76,7 +74,7 @@ ms.lasthandoff: 01/25/2018
 |**Demande de profil de clé candidate**|Calculez un profil de clé candidate.<br /><br /> Ce profil signale si une colonne ou un ensemble de colonnes est une clé, ou une clé approximative, pour la table sélectionnée. Ce profil peut également vous aider à identifier des problèmes dans vos données, tels que des valeurs dupliquées dans une colonne clé potentielle.|  
 |**Demande de profil de distribution de longueurs de colonne**|Calculez un profil de distribution de longueurs de colonne.<br /><br /> Le profil de distribution de longueurs de colonne signale toutes les longueurs distinctes des valeurs de chaîne dans la colonne sélectionnée, ainsi que le pourcentage de lignes dans la table que chaque longueur représente. Ce profil peut vous aider à identifier des problèmes dans vos données, tels que des valeurs non valides. Par exemple, vous profilez une colonne de codes d'états des États-Unis à deux caractères et découvrez des valeurs excédant deux caractères.|  
 |**Demande de profil de ratio de colonne Null**|Calculez un profil de ratio de colonne Null.<br /><br /> Le profil de ratio de colonne Null signale le pourcentage de valeurs Null dans la colonne sélectionnée. Ce profil peut vous aider à identifier des problèmes dans vos données, tels qu'un ratio élevé inattendu de valeurs Null dans une colonne. Par exemple, vous profilez une colonne de codes postaux et découvrez un pourcentage élevé et inacceptable de codes manquants.|  
-|**Demande de profil de modèle de colonne**|Calculez un profil de modèle de colonne.<br /><br /> Le profil de modèle de colonne signale un ensemble d'expressions régulières qui reflètent le pourcentage spécifié pour les valeurs dans une colonne de chaîne. Ce profil peut vous aider à identifier des problèmes dans vos données, tels que les chaînes non valides. Il peut également suggérer des expressions régulières susceptibles d'être utilisées à l'avenir pour la validation de nouvelles valeurs. Par exemple, le profil de modèle d’une colonne de codes postaux peut générer les expressions régulières suivantes : \d{5}-\d{4}, \d{5} et \d{9}. Si vous rencontrez d'autres expressions régulières, il est probable que vos données contiennent des valeurs qui ne sont pas valides ou utilisent un format incorrect.|  
+|**Demande de profil de modèle de colonne**|Calculez un profil de modèle de colonne.<br /><br /> Le profil de modèle de colonne signale un ensemble d'expressions régulières qui reflètent le pourcentage spécifié pour les valeurs dans une colonne de chaîne. Ce profil peut vous aider à identifier des problèmes dans vos données, tels que les chaînes non valides. Il peut également suggérer des expressions régulières susceptibles d'être utilisées à l'avenir pour la validation de nouvelles valeurs. Par exemple, le profil de modèle d'une colonne de codes postaux peut générer les expressions régulières suivantes : \d{5}-\d{4}, \d{5} et \d{9}. Si vous rencontrez d'autres expressions régulières, il est probable que vos données contiennent des valeurs qui ne sont pas valides ou utilisent un format incorrect.|  
 |**Demande de profil de statistiques de colonnes**|Sélectionnez cette option pour calculer un profil de statistiques de colonnes à l'aide des paramètres par défaut pour toutes les colonnes applicables dans la table ou la vue sélectionnée.<br /><br /> Le profil de statistiques de colonnes répertorie des statistiques, telles que l’écart minimal, maximal, moyen et type pour les colonnes numériques et l’écart minimal et maximal pour les colonnes **datetime** . Ce profil peut vous aider à identifier des problèmes dans vos données, tels que les dates non valides. Par exemple, vous profilez une colonne de dates historiques et découvrez une date maximum dont l'échéance est à venir.|  
 |**Demande de profil de distribution de valeurs de colonne**|Calculez un profil de distribution de valeurs de colonne.<br /><br /> Le profil de distribution de valeurs de colonne permet de préciser toutes les valeurs distinctes dans la colonne sélectionnée, ainsi que le pourcentage de lignes dans la table que représente chaque valeur. Ce profil peut également signaler des valeurs qui représentent beaucoup plus qu'un pourcentage spécifié dans la table. Il peut vous aider à identifier des problèmes dans vos données, tels qu'un nombre incorrect de valeurs distinctes dans une colonne. Par exemple, vous profilez une colonne qui contient les états des États-Unis et découvrez plus de 50 valeurs distinctes.|  
 |**Demande de profil de dépendance fonctionnelle**|Calculez un profil de dépendance fonctionnelle.<br /><br /> Le profil de dépendance fonctionnelle indique le degré de dépendance entre les valeurs d'une colonne (colonne dépendante) et celles d'une autre colonne ou d'un ensemble de colonnes (colonne déterminante). Ce profil peut également vous aider à identifier des problèmes dans vos données, tels que des valeurs non valides. Par exemple, vous profilez une dépendance entre une colonne États-Unis/Code postal et une colonne des états des États-Unis. Le même code postal doit toujours afficher le même état mais le profil détecte des violations de la dépendance.|  

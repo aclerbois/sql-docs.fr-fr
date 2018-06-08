@@ -1,16 +1,15 @@
 ---
 title: sp_configure_peerconflictdetection (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_configure_peerconflictdetection
 ms.assetid: 45117cb2-3247-433f-ba3d-7fa19514b1c3
-caps.latest.revision: 
+caps.latest.revision: 17
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1fed4cb47795554df26deb08f496edba86b5a4d
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 8ad2e7b3c0fd877dad8b14360d7c3f65331cb8cc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spconfigurepeerconflictdetection-transact-sql"></a>sp_configure_peerconflictdetection (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -61,8 +59,8 @@ sp_configure_peerconflictdetection [ @publication = ] 'publication'
   
 |Valeur| Description|  
 |-----------|-----------------|  
-|**Activer**|Active la détection de conflit pour une publication.|  
-|**désactiver**|Désactive la détection de conflit pour une publication.|  
+|**enable**|Active la détection de conflit pour une publication.|  
+|**disable**|Désactive la détection de conflit pour une publication.|  
 |NULL (par défaut)||  
   
  [ @originator_id=] *originator_id*  
@@ -89,7 +87,7 @@ sp_configure_peerconflictdetection [ @publication = ] 'publication'
 ## <a name="remarks"></a>Notes  
  sp_configure_peerconflictdetection est utilisé dans la réplication transactionnelle d'égal à égal. Pour utiliser la détection de conflit, tous les nœuds doivent exécuter [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] ou versions ultérieures et la détection doivent être activé pour tous les nœuds.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert l'appartenance au rôle serveur fixe sysadmin ou au rôle de base de données fixe db_owner.  
   
 ## <a name="see-also"></a>Voir aussi  

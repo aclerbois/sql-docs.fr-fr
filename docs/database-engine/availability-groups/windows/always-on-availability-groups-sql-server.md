@@ -1,16 +1,13 @@
 ---
-title: "Groupes de disponibilité Always On (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Groupes de disponibilité Always On (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Availability Groups [SQL Server], about
 - secondary replicas, see Availability Groups [SQL Server]
@@ -18,16 +15,16 @@ helpviewer_keywords:
 - AlwaysOn [SQL Server], see Availability Groups [SQL Server]
 - Availability Groups [SQL Server]
 ms.assetid: aa427606-8422-4656-b205-c9e665ddc8c1
-caps.latest.revision: "35"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 35
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: bcb310866603ad8bc36ed1c08d9dcc121eca87d9
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 3e133548ae901c0bfd41ae15e86ea21c018b8b30
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769755"
 ---
 # <a name="always-on-availability-groups-sql-server"></a>Groupes de disponibilité Always On (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -36,7 +33,8 @@ ms.lasthandoff: 01/18/2018
   
  Un groupe de disponibilité bascule au niveau d'un réplica de disponibilité. Les basculements ne sont pas dus à des problèmes de base de données, tels qu'une base de données devenant suspecte en raison de la perte d'un fichier de données, de la suppression d'une base de données ou de l'altération d'un journal des transactions.  
  
- >[REMARQUE] « Groupe de disponibilité Always On » est le nom complet et formel de cette fonctionnalité de disponibilité. L’abréviation est AG, et non AOAG ni AAG. 
+ >[!NOTE]
+ >« Groupe de disponibilité Always On » est le nom complet et formel de cette fonctionnalité de disponibilité. L’abréviation est AG, et non AOAG ni AAG. 
   
 ##  <a name="Benefits"></a> Avantages  
  [!INCLUDE[ssHADR](../../../includes/sshadr-md.md)] fournissent un riche ensemble d'options qui améliorent la disponibilité des bases de données et l'utilisation des ressources. Les composants clés sont les suivants :  

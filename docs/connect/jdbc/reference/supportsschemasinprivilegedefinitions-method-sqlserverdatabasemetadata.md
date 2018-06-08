@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsSchemasInPrivilegeDefinitions | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsSchemasInPrivilegeDefinitions | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsSchemasInPrivilegeDefinitions
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsSchemasInPrivilegeDefinitions
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 2957af1d-62d6-4375-b214-bbba9aafcc2d
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 02b1a3b78605a856c207f166fff7845386ca30d6
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: ba1c03db05cb03b550d638540cd95cf1cbbd3bed
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsschemasinprivilegedefinitions-method-sqlserverdatabasemetadata"></a>Méthode supportsSchemasInPrivilegeDefinitions (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

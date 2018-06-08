@@ -1,17 +1,16 @@
 ---
-title: "Présentation de la publication Oracle | Microsoft Docs"
-ms.custom: 
+title: Présentation de la publication Oracle | Microsoft Docs
+ms.custom: ''
 ms.date: 08/29/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - publishing [SQL Server replication], Oracle publishing
 - snapshot replication [SQL Server], Oracle publishing
@@ -19,16 +18,15 @@ helpviewer_keywords:
 - transactional replication, Oracle publishing
 - Oracle publishing [SQL Server replication], about Oracle publishing
 ms.assetid: 2e013259-0022-4897-a08d-5f8deb880fa8
-caps.latest.revision: 
+caps.latest.revision: 40
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c3950d5fb5a2137fe4e4b5fd97c44275a9d68c9d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 6b4397ea48904673a4541f486815557cff680b89
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="oracle-publishing-overview"></a>Présentation de la publication Oracle  
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

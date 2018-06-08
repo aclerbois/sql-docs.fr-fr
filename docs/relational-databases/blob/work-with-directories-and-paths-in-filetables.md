@@ -1,34 +1,32 @@
 ---
-title: "Travailler avec des répertoires et des chemins d’accès dans FileTables | Microsoft Docs"
-ms.custom: 
+title: Travailler avec des répertoires et des chemins d’accès dans FileTables | Microsoft Docs
+ms.custom: ''
 ms.date: 08/26/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: blob
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-blob
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - FileTables [SQL Server], directories
 ms.assetid: f1e45900-bea0-4f6f-924e-c11e1f98ab62
-caps.latest.revision: 
+caps.latest.revision: 25
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: fc785c40fae67d160fd8dff1947e964a58c78d67
-ms.sourcegitcommit: f02598eb8665a9c2dc01991c36f27943701fdd2d
+ms.openlocfilehash: a846fc9d702d9bdec0aa8cf583b1d5bbd52f4751
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="work-with-directories-and-paths-in-filetables"></a>Travailler avec des répertoires et des chemins d'accès dans FileTables
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Décrit la structure de répertoires dans laquelle les fichiers sont stockés dans FileTables.  
+  Décrit la structure de répertoires dans laquelle les fichiers sont stockés dans FileTables.  
   
 ##  <a name="HowToDirectories"></a> Procédure : travailler avec des répertoires et des chemins d'accès dans FileTables  
  Vous pouvez utiliser les trois fonctions suivantes pour travailler avec des répertoires FileTable dans [!INCLUDE[tsql](../../includes/tsql-md.md)]:  

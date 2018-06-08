@@ -1,36 +1,33 @@
 ---
 title: Syntaxe Transact-SQL prise en charge par IntelliSense | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
-ms.prod_service: sql-tools
-ms.service: 
-ms.component: ssms-scripting
-ms.reviewer: 
+ms.prod: sql
+ms.technology: scripting
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
 - Transact-SQL IntelliSense
 - IntelliSense [SQL Server], Transact-SQL syntax
 ms.assetid: 194e8f4f-fd7e-4f32-a169-f23531128004
-caps.latest.revision: 
+caps.latest.revision: 28
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0775b58cc86f349e94ae2305fa058a1edfe42370
-ms.sourcegitcommit: a0aa5e611a0e6ebb74ac1e2f613e8916dc7a7617
+monikerRange: '>= aps-pdw-2016 || = azuresqldb-current || = azure-sqldw-latest || >= sql-server-2016 || = sqlallproducts-allversions'
+ms.openlocfilehash: 5f5050b0def51df6ded38aa69c9eb8d45f2ccd70
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/24/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="transact-sql-syntax-supported-by-intellisense"></a>Syntaxe Transact-SQL prise en charge par IntelliSense
-[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)] Cette rubrique décrit les instructions et les éléments syntaxiques [!INCLUDE[tsql](../../includes/tsql-md.md)] pris en charge par IntelliSense dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
+[!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
+  Cette rubrique décrit les instructions et les éléments syntaxiques [!INCLUDE[tsql](../../includes/tsql-md.md)] pris en charge par IntelliSense dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].  
   
 ## <a name="statements-supported-by-intellisense"></a>Instructions prises en charge par IntelliSense  
  Dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)], IntelliSense prend uniquement en charge les instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] les plus couramment utilisées. Certaines conditions générales de l’éditeur de requête du [!INCLUDE[ssDE](../../includes/ssde-md.md)] peuvent nuire au bon fonctionnement d’IntelliSense. Pour plus d’informations, consultez [Résolution des problèmes liés à IntelliSense &#40;SQL Server Management Studio&#41;](../../relational-databases/scripting/troubleshooting-intellisense.md).  

@@ -1,16 +1,14 @@
 ---
-title: sp_add_log_shipping_alert_job (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_add_log_shipping_alert_job (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_add_log_shipping_alert_job_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_add_log_shipping_alert_job
 ms.assetid: dd95d96e-8963-4aa9-bdcc-3e4b1bc002d3
-caps.latest.revision: 
+caps.latest.revision: 21
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 0f35b1b1993a7bba16e72ac8c99bcb9d8b8f1caa
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: be9abd34c98c4a76aca48e95bc3ce30c0cc0ffcd
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spaddlogshippingalertjob-transact-sql"></a>sp_add_log_shipping_alert_job (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ sp_add_log_shipping_alert_job
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@alert_job_id =** ] *alert_job_id* OUTPUT  
+ [  **@alert_job_id =** ] *alert_job_id* sortie  
  Le [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ID de tâche de l’Agent de travail d’alerte des journaux.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -72,7 +69,7 @@ EXEC sp_add_log_shipping_alert_job;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [À propos de journaux de transaction &#40; SQL Server &#41;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
+ [À propos de journaux de transaction & #40 ; SQL Server & #41 ;](../../database-engine/log-shipping/about-log-shipping-sql-server.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

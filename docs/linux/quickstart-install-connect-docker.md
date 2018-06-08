@@ -1,25 +1,23 @@
-﻿---
-title: "Bien démarrer avec SQL Server 2017 sur Docker | Microsoft Docs"
-description: "Ce démarrage rapide montre comment utiliser Docker pour exécuter l’image conteneur de SQL Server 2017. Ensuite, vous créez et interrogez une base de données avec sqlcmd."
+---
+title: Bien démarrer avec SQL Server 2017 sur Docker | Microsoft Docs
+description: Ce démarrage rapide montre comment utiliser Docker pour exécuter l’image conteneur de SQL Server 2017. Ensuite, vous créez et interrogez une base de données avec sqlcmd.
 author: rothja
 ms.author: jroth
 manager: craigg
 ms.date: 03/07/2018
 ms.topic: article
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: 
+ms.prod: sql
+ms.technology: linux
+ms.component: ''
 ms.suite: sql
 ms.custom: sql-linux
-ms.technology: database-engine
+ms.prod_service: linux
 ms.assetid: 82737f18-f5d6-4dce-a255-688889fdde69
-ms.workload: Active
-ms.openlocfilehash: 8c3f8bc09ef8c3b6838912027024a3feb97cea5d
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 6b28ac7d654d04f5e0998ecda31d16ec597f8d3d
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="quickstart-run-the-sql-server-2017-container-image-with-docker"></a>Démarrage rapide : Exécuter l’image de conteneur SQL Server 2017 avec Docker
 
@@ -58,14 +56,14 @@ Cette image est composée de SQL Server s’exécutant sur Linux basé sur Ubunt
 1. Pour exécuter l’image conteneur avec Docker, vous pouvez utiliser la commande suivante à partir d’un interpréteur de commandes bash (Linux/macOS) ou d’une invite de commandes PowerShell avec élévation de privilèges.
 
    ```bash
-   sudo docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>' \
-      -p 1401:1433 --name sql1 \
+   sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+      -p 1433:1433 --name sql1 \
       -d microsoft/mssql-server-linux:2017-latest
    ```
 
    ```PowerShell
-   docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=<YourStrong!Passw0rd>" `
-      -p 1401:1433 --name sql1 `
+   docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=<YourStrong!Passw0rd>" `
+      -p 1433:1433 --name sql1 `
       -d microsoft/mssql-server-linux:2017-latest
    ```
 
@@ -80,8 +78,8 @@ Cette image est composée de SQL Server s’exécutant sur Linux basé sur Ubunt
    | Paramètre |  Description |
    |-----|-----|
    | **-e 'ACCEPT_EULA=Y'** |  Définissez la variable **ACCEPT_EULA** sur n’importe quelle valeur pour confirmer que vous acceptez le [Contrat de licence utilisateur final](http://go.microsoft.com/fwlink/?LinkId=746388). Paramètre obligatoire pour l’image de SQL Server. |
-   | **-e 'MSSQL_SA_PASSWORD=\<YourStrong!Passw0rd\>'** | Spécifiez votre propre mot de passe fort, qui doit avoir au moins 8 caractères et respecter les [exigences de mot de passe SQL Server](../relational-databases/security/password-policy.md). Paramètre obligatoire pour l’image de SQL Server. |
-   | **-p 1401:1433** | Mappez un port TCP sur l’environnement hôte (première valeur) à un port TCP dans le conteneur (deuxième valeur). Dans cet exemple, SQL Server écoute sur TCP 1433 dans le conteneur, mappé au port 1401 sur l’hôte. |
+   | **-e ' SA_PASSWORD =\<YourStrong ! Passw0rd\>'** | Spécifiez votre propre mot de passe fort, qui doit avoir au moins 8 caractères et respecter les [exigences de mot de passe SQL Server](../relational-databases/security/password-policy.md). Paramètre obligatoire pour l’image de SQL Server. |
+   | **p - 1433:1433** | Mappez un port TCP sur l’environnement hôte (première valeur) à un port TCP dans le conteneur (deuxième valeur). Dans cet exemple, SQL Server écoute sur TCP 1433 dans le conteneur, et ces informations sont exposées pour le port 1433, sur l’ordinateur hôte. |
    | **--name sql1** | Spécifiez un nom personnalisé pour le conteneur plutôt qu’un nom généré de manière aléatoire. Si vous exécutez plusieurs conteneurs, vous ne pouvez pas réutiliser le même nom. |
    | **microsoft/mssql-server-linux:2017-latest** | Image conteneur Linux de SQL Server 2017. |
 
@@ -158,7 +156,7 @@ La procédure suivante crée une base de données nommée `TestDB`.
 1. Sur la ligne suivante, écrivez une requête pour retourner le nom de toutes les bases de données sur votre serveur :
 
    ```sql
-   SELECT Name from sys.databases
+   SELECT Name from sys.Databases
    ```
 
 1. Les deux commandes précédentes n’ont pas été exécutées immédiatement. Vous devez taper `GO` sur une nouvelle ligne pour exécuter les commandes précédentes :
@@ -229,14 +227,14 @@ Les étapes suivantes utilisent **sqlcmd** en dehors de votre conteneur pour se 
 
 1. Recherchez l’adresse IP de la machine qui héberge votre conteneur. Sur Linux, utilisez **ifconfig** ou **ip addr**. Sur Windows, utilisez **ipconfig**.
 
-1. Exécutez sqlcmd en spécifiant l’adresse IP et le port mappé au port 1433 dans votre conteneur. Dans cet exemple, il s’agit du port 1401 sur l’hôte.
+1. Exécutez sqlcmd en spécifiant l’adresse IP et le port mappé au port 1433 dans votre conteneur. Dans cet exemple, qui est le même port 1433, sur l’ordinateur hôte. Si vous avez spécifié un autre port mappé sur l’ordinateur hôte, vous devez l’utiliser ici.
 
    ```bash
-   sqlcmd -S 10.3.2.4,1401 -U SA -P '<YourNewStrong!Passw0rd>'
+   sqlcmd -S 10.3.2.4,1433 -U SA -P '<YourNewStrong!Passw0rd>'
    ```
 
    ```PowerShell
-   sqlcmd -S 10.3.2.4,1401 -U SA -P "<YourNewStrong!Passw0rd>"
+   sqlcmd -S 10.3.2.4,1433 -U SA -P "<YourNewStrong!Passw0rd>"
    ```
 
 1. Exécutez les commandes Transact-SQL. Quand vous avez terminé, tapez `QUIT`.
@@ -244,7 +242,7 @@ Les étapes suivantes utilisent **sqlcmd** en dehors de votre conteneur pour se 
 Voici d’autres outils courants pour vous connecter à SQL Server :
 
 - [Visual Studio Code](sql-server-linux-develop-use-vscode.md)
-- [SQL Server Management Studio (SSMS) sur Windows](sql-server-linux-develop-use-ssms.md)
+- [SQL Server Management Studio (SSMS) sur Windows](sql-server-linux-manage-ssms.md)
 - [SQL Server Operations Studio (préversion)](../sql-operations-studio/what-is.md)
 - [mssql-cli (préversion)](https://blogs.technet.microsoft.com/dataplatforminsider/2017/12/12/try-mssql-cli-a-new-interactive-command-line-tool-for-sql-server/)
 

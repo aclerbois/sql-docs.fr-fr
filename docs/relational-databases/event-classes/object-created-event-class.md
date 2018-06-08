@@ -1,34 +1,30 @@
 ---
-title: "Object:Created, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Object:Created, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Object:Created event class
 ms.assetid: 57536924-5e66-4b09-a76d-8fcea2131771
-caps.latest.revision: 
+caps.latest.revision: 32
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d2bfb43b656eb3500be55079e1c831bde0e104f8
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 84e74d3cb7bbe1cc056e38a8bf8789ebb14c6cf9
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="objectcreated-event-class"></a>Object:Created (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Object:Created indique qu'un objet a été créé, par exemple par l'instruction CREATE INDEX, CREATE TABLE ou CREATE DATABASE.  
+  La classe d'événements Object:Created indique qu'un objet a été créé, par exemple par l'instruction CREATE INDEX, CREATE TABLE ou CREATE DATABASE.  
   
  Cette classe d'événements peut être utilisée pour déterminer si les objets sont en cours de création (par exemple, par des applications ODBC qui créent souvent des procédures stockées temporaires). En surveillant les colonnes de données LoginName et NTUserName, vous pouvez déterminer le nom de l'utilisateur qui crée, supprime ou accède aux objets.  
   

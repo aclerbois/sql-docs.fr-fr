@@ -1,34 +1,30 @@
 ---
-title: "Classe d’événements CursorClose | Microsoft Docs"
-ms.custom: 
+title: Classe d’événements CursorClose | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - CursorClose event class
 ms.assetid: 5c9bd070-4e4c-4281-b896-1e61a4bd403e
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e35763a70260b8d542ca290c91a27cb9e290ecbb
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 4cc2ffd7c89f30dfd80d977ee6dc7f8caf7216b3
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="cursorclose-event-class"></a>CursorClose (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Les événements de fermeture de curseur se produisent lorsque le [!INCLUDE[ssDE](../../includes/ssde-md.md)] se referme et libère un curseur. La classe d’événements **CursorClose** décrit les événements de fermeture de curseur qui se produisent dans les curseurs d’interface de programmation d’applications (API). Cette classe d'événements se produit lors de la fermeture d'une instruction de curseur [!INCLUDE[tsql](../../includes/tsql-md.md)] par ODBC, OLE DB ou DB-Library.  
+  Les événements de fermeture de curseur se produisent lorsque le [!INCLUDE[ssDE](../../includes/ssde-md.md)] se referme et libère un curseur. La classe d’événements **CursorClose** décrit les événements de fermeture de curseur qui se produisent dans les curseurs d’interface de programmation d’applications (API). Cette classe d'événements se produit lors de la fermeture d'une instruction de curseur [!INCLUDE[tsql](../../includes/tsql-md.md)] par ODBC, OLE DB ou DB-Library.  
   
  Incluez la classe d’événements **CursorClose** dans les traces qui enregistrent les performances des curseurs. La surcharge qui en découle dépend de la fréquence d'utilisation des curseurs sur la base de données pendant la trace. Si les curseurs sont largement utilisés, la trace peut altérer considérablement les performances.  
   

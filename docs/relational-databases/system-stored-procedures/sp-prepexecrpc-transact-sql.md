@@ -1,16 +1,14 @@
 ---
 title: sp_prepexecrpc (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 06/02/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_cursor_prepexecrpc
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_prepexecrpc
 ms.assetid: 35d686f2-ef31-4eaa-baa9-9cef5d6c87c2
-caps.latest.revision: 
+caps.latest.revision: 5
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 6d17320174703e8fc6b21d7fecb83229f80bac41
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 536932ef57cc8bb042979dd2332552f34713743d
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spprepexecrpc-transact-sql"></a>sp_prepexecrpc (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-xxxx-xxxx-xxx-md.md)]
@@ -47,7 +44,7 @@ sp_prepexecrpc handle OUTPUT, RPCCall
 ```  
   
 ## <a name="arguments"></a>Arguments  
- *handle*  
+ *Handle*  
  Identificateur de handle préparé généré par [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. *gérer les* est un paramètre obligatoire avec une **int** valeur de retour.  
   
  *RPCCall*  

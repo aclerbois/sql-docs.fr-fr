@@ -1,16 +1,14 @@
 ---
-title: "Précision du Type de données de l’intervalle | Documents Microsoft"
-ms.custom: 
+title: Précision du Type de données de l’intervalle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - data types [ODBC], interval data types
 - precision [ODBC], interval data types
@@ -20,16 +18,15 @@ helpviewer_keywords:
 - interval leading precision [ODBC]
 - interval precision [ODBC]
 ms.assetid: eb73bd77-2e7e-4498-a266-4d7c990a0d56
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: f6551f235c62f502d85f680b1925766a9e43e8eb
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 44f00ddbbd577731d9485aedc1a63659dfe59414
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interval-data-type-precision"></a>Précision du Type de données intervalle
 Précision pour un type de données d’intervalle inclut l’en-tête de précision, la précision de l’intervalle et précision en secondes de l’intervalle.  

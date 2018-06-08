@@ -1,31 +1,28 @@
 ---
-title: "Fonction de Conversion de types de données explicites | Documents Microsoft"
-ms.custom: 
+title: Fonction de Conversion de types de données explicites | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - explicit data type conversion functions [ODBC]
 - data type conversion functions [ODBC]
 - functions [ODBC], explicit data type conversion functions
 ms.assetid: d5789450-b668-4753-96c8-6789e955e7ed
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: c1520ca18c42d2efbc2822630fe7ccae9f90302a
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 1c0326cb06ce772a66be464c176cba58c085d855
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="explicit-data-type-conversion-function"></a>Fonction de Conversion de Type de données explicites
 Conversion de type de données explicite est spécifiée en termes de définitions de type de données SQL.  
@@ -34,7 +31,7 @@ Conversion de type de données explicite est spécifiée en termes de définitio
   
  Le format de la **convertir** fonction est :  
   
- **CONVERTIR (** *value_exp*, *data_type***)**  
+ **CONVERTIR (** *value_exp*, *data_type ***)**  
   
  La fonction retourne la valeur spécifiée par *value_exp* converti en spécifié *data_type*, où *data_type* est un des mots clés suivants :  
   
@@ -62,7 +59,7 @@ Conversion de type de données explicite est spécifiée en termes de définitio
   
  La syntaxe ODBC pour la fonction de conversion de type de données explicite ne prend pas en charge la spécification du format de conversion. Spécification des formats explicites est prise en charge par la source de données sous-jacente, un pilote doit spécifier une valeur par défaut ou implémenter la spécification de format.  
   
- L’argument *value_exp* peut être un nom de colonne, le résultat d’une autre fonction scalaire ou une valeur numérique ou la chaîne littérale. Exemple :  
+ L’argument *value_exp* peut être un nom de colonne, le résultat d’une autre fonction scalaire ou une valeur numérique ou la chaîne littérale. Par exemple :  
   
 ```  
 { fn CONVERT( { fn CURDATE() }, SQL_CHAR ) }  

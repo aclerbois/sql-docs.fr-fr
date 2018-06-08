@@ -1,17 +1,15 @@
 ---
 title: NextRecordset, méthode (ADO) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.custom: ''
 ms.date: 03/20/2018
 ms.reviewer: ''
 ms.suite: sql
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - NextRecordset
@@ -20,16 +18,15 @@ f1_keywords:
 helpviewer_keywords:
 - NextRecordset method [ADO]
 ms.assetid: ab1fa449-a695-4987-b1ee-bc68f89418dd
-caps.latest.revision: ''
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b4e0e38fc9c01a65916d7979fddfae929d43acf1
-ms.sourcegitcommit: ccb05cb5a4cccaf7ffa9e85a4684fa583bab914e
+ms.openlocfilehash: 1773c2bd8709a429a2e388b8a38a192107f2e7f3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="nextrecordset-method-ado"></a>NextRecordset, méthode (ADO)
 Efface l’actuel [Recordset](../../../ado/reference/ado-api/recordset-object-ado.md) de l’objet et renvoie la prochaine **Recordset** en exécutant une série de commandes.  

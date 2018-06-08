@@ -1,32 +1,33 @@
 ---
 title: Fonction de SQLColAttributes | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLColAttributes
-apilocation: sqlsrv32.dll
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLColAttributes
+apilocation:
+- sqlsrv32.dll
 apitype: dllExport
-f1_keywords: SQLColAttributes
-helpviewer_keywords: SQLColAttributes function [ODBC]
+f1_keywords:
+- SQLColAttributes
+helpviewer_keywords:
+- SQLColAttributes function [ODBC]
 ms.assetid: 3ece37af-db56-47fc-bc9d-6a7d0d8a00ec
-caps.latest.revision: "11"
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: fac46e107aee2d9653705fc2153b821f8b4478e7
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 72070fa971e19d999918c2622be6ddaf8c4a8079
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sqlcolattributes-function"></a>SQLColAttributes (fonction)
 **Mise en conformité**  

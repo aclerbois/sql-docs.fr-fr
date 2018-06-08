@@ -1,16 +1,15 @@
 ---
-title: "Propriété DisplayName (classe SqlService) | Documents Microsoft"
-ms.custom: 
+title: Propriété DisplayName (classe SqlService) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: wmi
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: reference
 apiname:
 - DisplayName Property (SqlService Class)
@@ -20,16 +19,15 @@ apitype: MOFDef
 helpviewer_keywords:
 - DisplayName property
 ms.assetid: 49c408aa-6eb4-45cd-8d5c-60f065f24f5c
-caps.latest.revision: 
+caps.latest.revision: 35
 author: CarlRabeler
 ms.author: carlrab
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 479929e64a1b3e1b0779e699e9cd1c83ce3bec31
-ms.sourcegitcommit: 0d904c23663cebafc48609671156c5ccd8521315
+ms.openlocfilehash: efefed0d48de23dbb00bb13f6a2734ba6ed6b2c0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="displayname-property-sqlservice-class"></a>Propriété DisplayName (classe SqlService)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]

@@ -1,33 +1,30 @@
 ---
-title: StreamTypeEnum | Microsoft Docs
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+title: StreamTypeEnum | Documents Microsoft
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - StreamTypeEnum
 helpviewer_keywords:
 - StreamTypeEnum enumeration [ADO]
 ms.assetid: 220fe51d-4889-4020-a099-2ec9c7485503
-caps.latest.revision: 
+caps.latest.revision: 11
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: c177ce7cb62862743f81fab207ab8f6c8f842af0
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 030f5f8d054e1ef1497c86f64910f4216ce729b2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="streamtypeenum"></a>StreamTypeEnum
 Spécifie le type de données stockées dans un [flux](../../../ado/reference/ado-api/stream-object-ado.md) objet.  

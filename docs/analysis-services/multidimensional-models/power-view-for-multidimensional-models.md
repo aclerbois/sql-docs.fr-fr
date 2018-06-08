@@ -1,31 +1,23 @@
 ---
-title: "Power View pour les modèles multidimensionnels | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 9ba8299e-b990-4f77-a3c0-eee64e1f4281
-caps.latest.revision: 
-author: Minewiskan
+title: Power View pour les modèles multidimensionnels | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: ee71e85275c2fdcef85a2b03c0a2f5b692a9aa70
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 57913e77c38daf0a236dc354aed379ae0aa5625e
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="power-view-for-multidimensional-models"></a>Power View pour les modèles multidimensionnels
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Les modèles multidimensionnels Microsoft SQL Server 2016 Analysis Services prennent en charge l’analyse, l’exploration et la visualisation des données ad hoc grâce à Microsoft Power View.  
+  Les modèles multidimensionnels Microsoft SQL Server 2016 Analysis Services prennent en charge l’analyse, l’exploration et la visualisation des données ad hoc grâce à Microsoft Power View.  
   
 ## <a name="in-this-section"></a>Contenu de cette section  
   

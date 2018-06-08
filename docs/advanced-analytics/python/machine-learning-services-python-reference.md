@@ -1,34 +1,24 @@
 ---
-title: Python | Documents Microsoft
-ms.custom: ''
-ms.date: 04/18/2017
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: python
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+title: Référence des API de Python pour SQL Server Machine Learning Services | Documents Microsoft
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: d318f50ebb239afaa7c9e0a3a2a42aff76f5755f
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 11b722628bbe46203c9b04464703c6ed3f99fab7
+ms.sourcegitcommit: 7a6df3fd5bea9282ecdeffa94d13ea1da6def80a
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 04/16/2018
 ---
-# <a name="python"></a>Python
+# <a name="python-api-reference-for-sql-server-machine-learning-services"></a>Référence des API de Python pour SQL Server Machine Learning Services
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
 Cette section contient des liens vers la référence d’API spécifique à la Machine Learning Services dans SQL Server 2017.
 
-> [!NOTE]
-> Prise en charge de Python est une nouvelle fonctionnalité de SQL Server 2017 et dans la version préliminaire. Rechercher des informations plus rapidement.
-
-**Libraries**
+**Bibliothèques**
 
 + [Qu’est revoscalepy](what-is-revoscalepy.md)
 

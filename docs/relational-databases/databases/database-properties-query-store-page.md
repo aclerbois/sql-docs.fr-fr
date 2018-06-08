@@ -1,33 +1,32 @@
 ---
-title: "Propriétés de la base de données (page Magasin de requêtes) | Microsoft Docs"
-ms.custom: 
+title: Propriétés de la base de données (page Magasin de requêtes) | Microsoft Docs
+ms.custom: ''
 ms.date: 11/09/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: databases
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.databaseproperties.querystore.f1
 ms.assetid: da47d75e-291a-4305-acef-4b0aaf5215da
-caps.latest.revision: 
+caps.latest.revision: 10
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 903eb21e82dc2b5e3a04f0b48b4f17365a0eac99
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 7e775734fbcf8fab632f3d2783f98cbe369390a1
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="database-properties-query-store-page"></a>Propriétés de la base de données (page Magasin de requêtes)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Accédez à cette page à partir de la base de données principale et utilisez-la pour configurer et modifier les propriétés du magasin de requêtes de la base de données. Ces options peuvent également être configurées à l'aide des [options ALTER DATABASE SET](../../t-sql/statements/alter-database-transact-sql-set-options.md). Pour plus d'informations sur le magasin de requêtes, consultez [Monitoring Performance By Using the Query Store](../../relational-databases/performance/monitoring-performance-by-using-the-query-store.md).  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Accédez à cette page depuis la base de données principale et utilisez-la pour configurer et modifier les propriétés du magasin de requêtes de la base de données. Ces options peuvent également être configurées à l'aide des [options ALTER DATABASE SET](../../t-sql/statements/alter-database-transact-sql-set-options.md). Pour plus d'informations sur le magasin de requêtes, consultez [Monitoring Performance By Using the Query Store](../../relational-databases/performance/monitoring-performance-by-using-the-query-store.md).  
   
 ||  
 |-|  

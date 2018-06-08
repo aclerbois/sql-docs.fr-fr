@@ -1,36 +1,35 @@
 ---
-title: "Déclencheurs DML | Microsoft Docs"
-ms.custom: 
+title: Déclencheurs DML | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: triggers
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - dbe-dml
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - triggers [SQL Server], about triggers
 - DML triggers, about DML triggers
 - triggers [SQL Server]
 ms.assetid: 298eafca-e01f-4707-8c29-c75546fcd6b0
-caps.latest.revision: 
+caps.latest.revision: 27
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 52773af792848bd628c238e0120f08f7441c2d6f
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b102242b35b67ec8126b6286ded3ec1d7e0351c5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="dml-triggers"></a>Déclencheurs DML
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
-Un déclencheur DML est un type spécial de procédure stockée qui entre automatiquement en vigueur lorsqu'un événement de langage de manipulation de données (DML, ou Data Manipulation Language) qui affecte la table ou la vue définie dans le déclencheur se produit. Les événements DML incluent les instructions INSERT, UPDATE ou DELETE. Les déclencheurs DML peuvent être utilisés pour appliquer des règles d'entreprise et l'intégrité des données, interroger d'autres tables et inclure des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] complexes. Le déclencheur et l'instruction qui le déclenche sont traités comme une unique transaction qui peut être annulée (par une opération de restauration) à partir du déclencheur. Si une erreur grave est détectée (par exemple un espace disque insuffisant), toute la transaction est automatiquement annulée.  
+  Un déclencheur DML est un type spécial de procédure stockée qui entre automatiquement en vigueur lorsqu'un événement de langage de manipulation de données (DML, ou Data Manipulation Language) qui affecte la table ou la vue définie dans le déclencheur se produit. Les événements DML incluent les instructions INSERT, UPDATE ou DELETE. Les déclencheurs DML peuvent être utilisés pour appliquer des règles d'entreprise et l'intégrité des données, interroger d'autres tables et inclure des instructions [!INCLUDE[tsql](../../includes/tsql-md.md)] complexes. Le déclencheur et l'instruction qui le déclenche sont traités comme une unique transaction qui peut être annulée (par une opération de restauration) à partir du déclencheur. Si une erreur grave est détectée (par exemple un espace disque insuffisant), toute la transaction est automatiquement annulée.  
   
 ## <a name="dml-trigger-benefits"></a>Avantages des déclencheurs DML  
  Les déclencheurs DML sont semblables aux contraintes en ce sens qu'ils peuvent appliquer l'intégrité d'entité ou l'intégrité de domaine. En général, l'intégrité d'entité doit toujours être appliquée au niveau le plus bas par des index qui font partie des contraintes PRIMARY KEY et UNIQUE, ou qui sont créés indépendamment des contraintes. L'intégrité de domaine doit être appliquée au moyen de contraintes CHECK, et l'intégrité référentielle au moyen de contraintes FOREIGN KEY. Les déclencheurs DML sont particulièrement utiles lorsque les fonctionnalités prises en charge par les contraintes ne peuvent pas répondre aux besoins fonctionnels de l'application.  
@@ -69,7 +68,7 @@ Un déclencheur DML est un type spécial de procédure stockée qui entre automa
 |Références en cascade|Aucune restriction|Les déclencheurs INSTEAD OF UPDATE et DELETE ne sont pas autorisés sur des tables qui sont des cibles de contraintes d'intégrité référentielle en cascade.|  
 |Exécution|Après :<br /><br /> Traitement des contraintes<br /><br /> Actions référentielles déclaratives<br /><br /> Création de tables**inserted** et **deleted** <br /><br /> L'action de déclenchement|Avant : Traitement des contraintes<br /><br /> Au lieu de : L’action de déclenchement<br /><br /> Après : Création de tables  **inserted** et **deleted**|  
 |Ordre d'exécution|La première et la dernière exécution peuvent être spécifiées|Non applicable|  
-|Références de colonnes**varchar(max)**, **nvarchar(max)**et **varbinary(max)** dans des  **inserted** et **deleted** |Autorisé|Autorisé|  
+|Références de colonnes**varchar(max)**, **nvarchar(max)** et **varbinary(max)** dans des  **inserted** et **deleted** |Autorisé|Autorisé|  
 |Références de colonnes**text**, **ntext**et **image** dans des  **inserted** et **deleted** |Non autorisées|Autorisé|  
   
  Déclencheurs CLR  

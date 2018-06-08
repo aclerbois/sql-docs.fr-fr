@@ -1,16 +1,14 @@
 ---
 title: sp_bindefault (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 11/25/2015
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_bindefault
@@ -20,16 +18,16 @@ dev_langs:
 helpviewer_keywords:
 - sp_bindefault
 ms.assetid: 3da70c10-68d0-4c16-94a5-9e84c4a520f6
-caps.latest.revision: 
+caps.latest.revision: 42
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b3e23435d6c0a2db3809722856b9daa6b2d66505
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: a5bf898e8868006ab536bbd83bce3bd428aa5934
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spbindefault-transact-sql"></a>sp_bindefault (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -37,7 +35,7 @@ ms.lasthandoff: 11/21/2017
   Lie une valeur par défaut à une colonne ou à un type de données d'alias.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)]Nous vous recommandons de créer des définitions par défaut en utilisant le mot clé DEFAULT le [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) instructions à la place.  
+>  [!INCLUDE[ssNoteDepFutureDontUse](../../includes/ssnotedepfuturedontuse-md.md)] Nous vous recommandons de créer des définitions par défaut en utilisant le mot clé DEFAULT le [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) instructions à la place.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -55,7 +53,7 @@ sp_bindefault [ @defname = ] 'default' ,
  Nom de la valeur par défaut créée par l'instruction CREATE DÉFAUT. *par défaut* est **nvarchar(776)**, sans valeur par défaut.  
   
  [  **@objname=** ] **'***nom_objet***'**  
- Nom de la table et de la colonne ou type de données d'alias, auquel est liée la valeur par défaut. *nom_objet* est **nvarchar(776)** sans valeur par défaut. *nom_objet* ne peut pas être défini avec la **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml**, ou les types CLR définis par l’utilisateur.  
+ Nom de la table et de la colonne ou type de données d'alias, auquel est liée la valeur par défaut. *nom_objet* est **nvarchar(776)** sans valeur par défaut. *nom_objet* ne peut pas être défini avec la **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml**, ou CLR types définis par l’utilisateur.  
   
  Si *nom_objet* est un nom d’une seule partie, il est résolu en tant que type de données alias. S'il s'agit d'un nom à deux ou trois composantes, il est d'abord résolu en tant que table et colonne. Si la résolution échoue, il est résolu en tant que type de données d'alias. Par défaut, les colonnes existantes du type de données alias héritent *par défaut*, sauf si une valeur par défaut a été liée directement à la colonne. Une valeur par défaut ne peut pas être lié à un **texte**, **ntext**, **image**, **varchar (max)**, **nvarchar (max)**, **varbinary (max)**, **xml**, **timestamp**, ou CLR colonne de type défini par l’utilisateur, une colonne avec la propriété IDENTITY, une colonne calculée ou une colonne qui a déjà une contrainte par défaut.  
   
@@ -75,7 +73,7 @@ sp_bindefault [ @defname = ] 'default' ,
   
  Lorsque vous liez une valeur par défaut à une colonne, l’information correspondante est ajoutée à la **sys.columns** affichage catalogue. Lorsque vous liez une valeur par défaut à un type de données alias, l’information correspondante est ajoutée à la **sys.types** affichage catalogue.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Utilisateur propriétaire de la table ou être membre du **sysadmin** rôle de serveur fixe ou **db_owner** et **db_ddladmin** base de données fixe.  
   
 ## <a name="examples"></a>Exemples  
@@ -122,10 +120,10 @@ EXEC sp_bindefault 'default1', '[t.1].c1' ;
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [CREATE DEFAULT &#40;Transact-SQL&#41;](../../t-sql/statements/create-default-transact-sql.md)   
- [SUPPRIMER la valeur par défaut &#40; Transact-SQL &#41;](../../t-sql/statements/drop-default-transact-sql.md)   
- [sp_unbindefault &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-unbindefault-transact-sql.md)   
+ [DROP DEFAULT &#40;Transact-SQL&#41;](../../t-sql/statements/drop-default-transact-sql.md)   
+ [sp_unbindefault &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-unbindefault-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   
   

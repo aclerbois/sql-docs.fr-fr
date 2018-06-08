@@ -3,9 +3,8 @@ title: Structure SSVARIANT | Documents Microsoft
 description: Structure SSVARIANT dans le pilote OLE DB pour SQL Server
 ms.custom: ''
 ms.date: 03/26/2018
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database, sql-data-warehouse, pdw
-ms.service: ''
 ms.component: ole-db-data-types
 ms.reviewer: ''
 ms.suite: sql
@@ -19,13 +18,12 @@ helpviewer_keywords:
 - SSVARIANT struct
 author: pmasl
 ms.author: Pedro.Lopes
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 797c10dfeabd1361395c5416f65c88a0d6c82176
-ms.sourcegitcommit: 9f4330a4b067deea396b8567747a6771f35e6eee
+manager: craigg
+ms.openlocfilehash: eb977dbe9ef7bed4e6c98ef612bd6e2bb67bf159
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/30/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="ssvariant-structure"></a>Structure SSVARIANT
 [!INCLUDE[appliesto-ss-asdb-asdw-pdw-md](../../../includes/appliesto-ss-asdb-asdw-pdw-md.md)]
@@ -63,8 +61,8 @@ V_SS_DATETIMEOFFSET(pssVar).bScale = bScale;
 |Membre|Indicateur de type OLE DB|Type de données OLE DB C|Valeur vt|Commentaires|  
 |------------|---------------------------|------------------------|--------------|--------------|  
 |VT|SSVARTYPE|||Spécifie le type de la valeur contenue dans le **SSVARIANT** struct.|  
-|bTinyIntVal|DBTYPE_UI1|**BYTE**|**VT_SS_UI1**|Prend en charge la **tinyint** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
-|sShortIntVal|DBTYPE_I2|**SHORT**|**VT_SS_I2**|Prend en charge la **smallint** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
+|bTinyIntVal|DBTYPE_UI1|**OCTETS**|**VT_SS_UI1**|Prend en charge la **tinyint** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
+|sShortIntVal|DBTYPE_I2|**COURTE**|**VT_SS_I2**|Prend en charge la **smallint** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
 |lIntVal|DBTYPE_I4|**LONG**|**VT_SS_I4**|Prend en charge la **int** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
 |llBigIntVal|DBTYPE_I8|**LARGE_INTEGER**|**VT_SS_I8**|Prend en charge la **bigint** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
 |fltRealVal|DBTYPE_R4|**float**|**VT_SS_R4**|Prend en charge la **réel** [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] type de données.|  
@@ -85,6 +83,6 @@ V_SS_DATETIMEOFFSET(pssVar).bScale = bScale;
 |BLOBType|UNUSED|UNUSED|UNUSED|UNUSED|  
   
 ## <a name="see-also"></a>Voir aussi  
- [Types de données &#40; OLE DB &#41;](../../oledb/ole-db-data-types/data-types-ole-db.md)  
+ [Types de données & #40 ; OLE DB & #41 ;](../../oledb/ole-db-data-types/data-types-ole-db.md)  
   
   

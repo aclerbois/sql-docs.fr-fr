@@ -1,15 +1,14 @@
 ---
-title: "Chargement et exécution d’un package distant par programmation | Microsoft Docs"
-ms.custom: 
+title: Chargement et exécution d’un package distant par programmation | Microsoft Docs
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: run-manage-packages-programmatically
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 applies_to:
 - SQL Server 2016 Preview
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - packages [Integration Services], running
 - remote packages [Integration Services]
 ms.assetid: 9f6ef376-3408-46bf-b5fa-fc7b18c689c9
-caps.latest.revision: 
+caps.latest.revision: 41
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 1d8a6fabc3b3b8ca1267160c716263b6366e5dcf
-ms.sourcegitcommit: 9e6a029456f4a8daddb396bc45d7874a43a47b45
+ms.openlocfilehash: 60d811ccb738d3b9cabbb85118c99fc50fe01cb0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="loading-and-running-a-remote-package-programmatically"></a>Chargement et exécution d'un package distant par programme
   Pour exécuter des packages distants à partir d'un ordinateur local sur lequel [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] n'est pas installé, démarrez les packages afin qu'ils s'exécutent sur l'ordinateur distant sur lequel [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] est installé. Pour cela, vous faites utiliser par l'ordinateur local l'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], un service Web ou un composant distant pour démarrer les packages sur l'ordinateur distant. Si vous essayez de démarrer directement les packages distants à partir de l'ordinateur local, les packages se chargeront sur l'ordinateur local et essayeront de s'exécuter à partir de ce dernier. Si [!INCLUDE[ssISnoversion](../../includes/ssisnoversion-md.md)] n'est pas installé sur l'ordinateur local, les packages ne s'exécuteront pas.  

@@ -1,32 +1,30 @@
 ---
-title: "DDL pris en charge pour les modules T-SQL compilés en mode natif | Microsoft Docs"
-ms.custom: 
+title: DDL pris en charge pour les modules T-SQL compilés en mode natif | Microsoft Docs
+ms.custom: ''
 ms.date: 03/16/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: in-memory-oltp
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine-imoltp
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: in-memory-oltp
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 6b21f47e-bceb-4054-8b3c-9d39bb9583c0
-caps.latest.revision: 
+caps.latest.revision: 12
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: aae66ada621746eaeb401c7c4144990757113616
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 422b2394c9467c80d92d3dd7164966d8b0e08bec
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="supported-ddl-for-natively-compiled-t-sql-modules"></a>DDL pris en charge pour les modules T-SQL compilés en mode natif
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Cette rubrique répertorie les constructions DDL (langage de définition de données) prises en charge pour les modules T-SQL compilés en mode natif, telles que les procédures stockées, les fonctions définies par l’utilisateur (UDF) scalaires, les Fonctions table (TVF) inline et les déclencheurs.  
+  Cette rubrique répertorie les constructions DDL (langage de définition de données) prises en charge pour les modules T-SQL compilés en mode natif, telles que les procédures stockées, les fonctions définies par l’utilisateur (UDF) scalaires, les Fonctions table (TVF) inline et les déclencheurs.  
   
  Pour plus d’informations sur les fonctionnalités et la surface d’exposition de T-SQL qui peut être utilisée dans des modules de T-SQL compilés en mode natif, consultez [Fonctionnalités prises en charge pour les modules T-SQL compilés en mode natif](../../relational-databases/in-memory-oltp/supported-features-for-natively-compiled-t-sql-modules.md).  
   

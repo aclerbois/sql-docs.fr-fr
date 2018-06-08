@@ -1,16 +1,15 @@
 ---
-title: "Se connecter à MySQL (MySQLToSQL) | Documents Microsoft"
-ms.prod: sql-non-specified
+title: Se connecter à MySQL (MySQLToSQL) | Documents Microsoft
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: 
 ms.component: ssma-mysql
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: sql-ssma
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ssma
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 applies_to:
 - Azure SQL Database
 - SQL Server
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - Connecting to MySQL, MySQL permission
 - Connecting to MySQL,reconnecting
 ms.assetid: 084c7020-f729-4f91-90e0-143f85fa68d1
-caps.latest.revision: "13"
+caps.latest.revision: 13
 author: Shamikg
 ms.author: Shamikg
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 291f10d4f045747266297287903ba4cf900c09c5
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 44874d6ddcb4482ecedea8e94dd7c4bac4a1c01d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-to-mysql-mysqltosql"></a>Se connecter à MySQL (MySQLToSQL)
 Pour migrer des bases de données MySQL vers SQL Server ou SQL Azure, vous devez vous connecter à la base de données MySQL que vous souhaitez migrer. Lorsque vous vous connectez, SSMA Obtient les métadonnées relatives à tous les schémas de MySQL, puis l’affiche dans le volet Explorateur de métadonnées de MySQL. SSMA stocke des informations sur le serveur de base de données, mais ne stocke pas les mots de passe.  
@@ -90,7 +88,7 @@ Lorsque vous vous connectez à une base de données, SSMA lit les métadonnées 
     > -   Le **OK** bouton est activé lorsque les informations requises ont été fournies. Si un des chemins de fichier ne sont pas valide, le bouton « OK » reste désactivé.  
     > -   Le **Annuler** bouton ferme la boîte de dialogue et **désactive** l’option SSL à partir du formulaire de connexion principal.  
   
-7.  Pour plus d’informations, consultez [se connecter à MySQL &#40; MySQLToSQL &#41;](../../ssma/mysql/connect-to-mysql-mysqltosql.md)  
+7.  Pour plus d’informations, consultez [se connecter à MySQL &#40;MySQLToSQL&#41;](../../ssma/mysql/connect-to-mysql-mysqltosql.md)  
   
 ## <a name="reconnecting-to-mysql"></a>Rétablir la connexion à MySQL  
 Votre connexion au serveur de base de données reste active jusqu'à ce que vous fermez le projet. Lorsque vous rouvrez le projet, vous devez vous reconnecter si vous souhaitez une connexion active à la base de données. Vous pouvez travailler hors connexion jusqu'à ce que vous souhaitez mettre à jour des métadonnées, de charger des objets de base de données dans SQL Server ou SQL Azure et de migrer les données.  
@@ -121,8 +119,8 @@ Métadonnées relatives à la base de données MySQL ne sont pas actualisée aut
 5.  Cliquez sur **OK**.  
   
 ## <a name="next-step"></a>Étape suivante  
-L’étape suivante du processus de migration est [la connexion à SQL Server &#40; MySQLToSQL &#41;](../../ssma/mysql/connecting-to-sql-server-mysqltosql.md)  
+L’étape suivante du processus de migration est [connexion à SQL Server &#40;MySQLToSQL&#41;](../../ssma/mysql/connecting-to-sql-server-mysqltosql.md)  
   
 ## <a name="see-also"></a>Voir aussi  
-[Migration des bases de données de MySQL vers SQL Server - base de données SQL Azure &#40; MySQLToSql &#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
+[Bases de données de migration de MySQL vers SQL Server - base de données SQL Azure &#40;MySQLToSql&#41;](../../ssma/mysql/migrating-mysql-databases-to-sql-server-azure-sql-db-mysqltosql.md)  
   

@@ -2,29 +2,27 @@
 title: Propriétés de SQL Server Agent (page Système d’alerte) | Microsoft Docs
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: sql-tools
-ms.service: ''
 ms.component: ssms-agent
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- tools-ssms
+ms.technology: ssms
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.ag.agent.alert.f1
 ms.assetid: 3e6d3bfd-20ee-4593-86cc-f65b1c08c69d
-caps.latest.revision: ''
+caps.latest.revision: 5
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b8fb51dffa427c3a896620efd0e989fec3c7cf7
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+monikerRange: = azuresqldb-mi-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 493e81d1d245920b391374ef146d6b4dfb0586a9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="sql-server-agent-properties-alert-system-page"></a>Propriétés de SQL Server Agent (page Système d'alerte)
 [!INCLUDE[appliesto-ss-asdbmi-xxxx-xxx-md](../../includes/appliesto-ss-asdbmi-xxxx-xxx-md.md)]
@@ -108,7 +106,7 @@ Définit la méthode à utiliser pour notifier l'opérateur de prévention de d�
 Cette section vous permet d'activer des jetons d'étapes de travail utilisables dans les travaux exécutés par les alertes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Agent. Pour plus d’informations sur les jetons d’étapes de travail, consultez [Utiliser des jetons dans les étapes d’un travail](../../ssms/agent/use-tokens-in-job-steps.md).  
   
 > [!IMPORTANT]  
-> Tout utilisateur Windows doté d'autorisations d'accès en écriture sur le Journal des événements Windows peut accéder aux étapes de travail qui sont activées par les alertes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Agent. Pour éviter ce risque de sécurité, les jetons de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Agent qui peuvent être utilisés dans des travaux activés par des alertes sont désactivés par défaut. Il s’agit des jetons suivants : **$(A-DBN)**, **$(A-SVR)**, **$(A-ERR)**, **$(A-SEV)**et **$(A-MSG)**.  
+> Tout utilisateur Windows doté d'autorisations d'accès en écriture sur le Journal des événements Windows peut accéder aux étapes de travail qui sont activées par les alertes de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Agent. Pour éviter ce risque de sécurité, les jetons de [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] Agent qui peuvent être utilisés dans des travaux activés par des alertes sont désactivés par défaut. Il s’agit des jetons suivants : **$(A-DBN)**, **$(A-SVR)**, **$(A-ERR)**, **$(A-SEV)** et **$(A-MSG)**.  
 >   
 > Si vous avez besoin de les utiliser, assurez-vous avant de les activer que seuls les membres des groupes de sécurité Windows approuvés, tels que le groupe Administrateurs, possèdent des autorisations d'accès en écriture sur le Journal des événements de l'ordinateur sur lequel réside [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] .  
   

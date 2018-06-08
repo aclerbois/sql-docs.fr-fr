@@ -1,30 +1,28 @@
 ---
-title: "Propriétés des services Bureau à distance | Documents Microsoft"
-ms.technology:
-- drivers
-ms.custom: 
+title: Propriétés des services Bureau à distance | Documents Microsoft
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: drivers
 ms.component: reference
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS properties [ADO]
 - properties [ADO], RDS
 ms.assetid: e4e04cbd-21fc-44a1-9f21-49aa68746934
-caps.latest.revision: 
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: ee22ac8887a628d4b1ada9bf7f42b58e3c997274
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 3c15eebefcab72e1287a6bc49d2116120daa2683
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rds-properties"></a>Propriétés des services Bureau à distance
 > [!IMPORTANT]

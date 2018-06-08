@@ -1,27 +1,24 @@
 ---
-title: "À l’aide de points d’enregistrement | Documents Microsoft"
-ms.custom: 
+title: À l’aide de points d’enregistrement | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 3b48eb13-32ef-4fb3-8e95-dbc9468c9a44
-caps.latest.revision: "19"
+caps.latest.revision: 19
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 1dd880f12e989eb81c4156cf745ead3758e8b4c8
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 72b354c805a3d46dd31f6f9df308e33493c2db2c
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="using-savepoints"></a>Utilisation de points d'enregistrement
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]

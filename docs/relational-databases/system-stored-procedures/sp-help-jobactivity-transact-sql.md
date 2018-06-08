@@ -1,16 +1,14 @@
 ---
 title: sp_help_jobactivity (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_help_jobactivity_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_help_jobactivity
 ms.assetid: d344864f-b4d3-46b1-8933-b81dec71f511
-caps.latest.revision: 
+caps.latest.revision: 33
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: a4b1b81a94f272ffed56c26f4ede9080f80527c7
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: 648fb94f5a14365356a293f6fb0652336ca0625b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sphelpjobactivity-transact-sql"></a>sp_help_jobactivity (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -47,16 +44,16 @@ sp_help_jobactivity { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [ **@job_id =**] *job_id*  
+ [  **@job_id =**] *job_id*  
  Numéro d’identification du travail. *job_id*est **uniqueidentifier**, avec NULL comme valeur par défaut.  
   
- [ **@job_name =**] **'***job_name***'**  
+ [  **@job_name =**] **'***job_name***'**  
  Nom du travail. *job_name*est **sysname**, avec NULL comme valeur par défaut.  
   
 > [!NOTE]  
 >  Soit *job_id* ou *job_name* doit être spécifié, mais ne peut pas être spécifiés.  
   
- [ **@session_id** = ] *session_id*  
+ [ **@session_id** =] *session_id*  
  Identificateur de la session pour laquelle des informations doivent être rapportées. *session_id* est **int**, avec NULL comme valeur par défaut.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -88,7 +85,7 @@ sp_help_jobactivity { [ @job_id = ] job_id | [ @job_name = ] 'job_name' }
 ## <a name="remarks"></a>Notes  
  Cette procédure fournit un instantané de l'état actuel des travaux. Les résultats renvoyés représentent des informations correspondant au moment du traitement de la requête.  
   
- [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] L’agent crée un id de session chaque fois que le service Agent démarre. L’id de session est stocké dans la table **msdb.dbo.syssessions**.  
+ L'Agent [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] crée un ID de session chaque fois que le service SQL Agent démarre. L’id de session est stocké dans la table **msdb.dbo.syssessions**.  
   
  Lorsqu’aucun *session_id* est fourni, répertorie des informations sur la session la plus récente.  
   
@@ -119,6 +116,6 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [L’Agent SQL Server stockées procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)  
+ [Procédures stockées de l’Agent SQL Server &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sql-server-agent-stored-procedures-transact-sql.md)  
   
   

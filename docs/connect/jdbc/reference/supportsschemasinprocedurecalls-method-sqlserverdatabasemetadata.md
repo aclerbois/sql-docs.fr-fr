@@ -1,30 +1,29 @@
 ---
-title: "Méthode supportsSchemasInProcedureCalls | Documents Microsoft"
-ms.custom: 
+title: Méthode supportsSchemasInProcedureCalls | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-apiname: SQLServerDatabaseMetaData.supportsSchemasInProcedureCalls
-apilocation: sqljdbc.jar
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+apiname:
+- SQLServerDatabaseMetaData.supportsSchemasInProcedureCalls
+apilocation:
+- sqljdbc.jar
 apitype: Assembly
 ms.assetid: 8955457a-b176-4674-9366-39a1942164a5
-caps.latest.revision: "7"
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 668bf8d456e9649a08ad1088428ef38847c09502
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 0dde6c16c3b9f20eadb5d64795d6d3edc5164c33
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="supportsschemasinprocedurecalls-method-sqlserverdatabasemetadata"></a>Méthode supportsSchemasInProcedureCalls (SQLServerDatabaseMetaData)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]

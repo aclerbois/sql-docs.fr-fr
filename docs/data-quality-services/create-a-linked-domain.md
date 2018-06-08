@@ -2,31 +2,32 @@
 title: Créer un domaine lié | Microsoft Docs
 ms.custom: ''
 ms.date: 11/08/2011
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: data-quality-services
-ms.service: ''
 ms.component: data-quality-services
 ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - data-quality-services
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 f1_keywords:
 - sql13.dqs.kb.linkeddomain.f1
 ms.assetid: fd99d422-c53d-4d7c-9cdd-303c703683b6
-caps.latest.revision: ''
+caps.latest.revision: 20
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f1df4d63e629778e5665dd87ea69ffec0dbcbbaa
-ms.sourcegitcommit: 34766933e3832ca36181641db4493a0d2f4d05c6
+ms.openlocfilehash: bf2c8fa7c15539eedef198f9bac03d0b2d073bb4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="create-a-linked-domain"></a>Créer un domaine lié
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   Cette rubrique explique comment créer un domaine lié dans une base de connaissances dans [!INCLUDE[ssDQSnoversion](../includes/ssdqsnoversion-md.md)] (DQS). Un domaine lié est créé à partir d'un autre domaine existant, et hérite de toutes les valeurs, règles et propriétés du domaine auquel il est lié, à l'exception du nom et de la description. Vous pouvez gérer un ensemble de domaines liés comme un seul domaine. En liant un domaine à l'autre, vous créez un domaine qui hérite son contenu de l'autre domaine.  
   
 ## <a name="scenarios"></a>Scénarios  

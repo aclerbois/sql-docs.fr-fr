@@ -1,31 +1,28 @@
 ---
-title: "Les séquences d’échappement intervalle | Documents Microsoft"
-ms.custom: 
+title: Les séquences d’échappement intervalle | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - interval literals [ODBC]
 - escape sequences [ODBC], interval
 - ODBC escape sequences [ODBC], interval
 ms.assetid: 303e8dab-8f13-4fa5-857f-15cc1f75bdd6
-caps.latest.revision: "6"
+caps.latest.revision: 6
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: faaafb71236b9d3b2aa15aa67a80211bbce493a1
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3973a5149aa5861b2d194cd4487a15b0f97e7f94
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="interval-escape-sequences"></a>Séquences d’échappement d’intervalle
 ODBC utilise les séquences d’échappement pour les littéraux de l’intervalle. La syntaxe de cette séquence d’échappement est comme suit :  

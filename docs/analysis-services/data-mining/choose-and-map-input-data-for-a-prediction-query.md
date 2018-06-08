@@ -1,34 +1,23 @@
 ---
-title: "Choisir et mapper les données d’entrée pour une requête de prédiction | Documents Microsoft"
-ms.custom: 
-ms.date: 03/01/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords:
-- tables [Analysis Services], prediction queries
-- Mining Model Prediction [Analysis Services], input tables
-ms.assetid: 00d330a0-879d-4da0-9f29-53c288116f4d
-caps.latest.revision: 
-author: Minewiskan
+title: Choisir et mapper les données d’entrée pour une requête de prédiction | Documents Microsoft
+ms.date: 05/01/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: data-mining
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 6694a4e59637f96240afd1f2b04575ede20c2dfe
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 0781c35dfe7bcc1ea99be3d68fcbb839d5f9374b
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="choose-and-map-input-data-for-a-prediction-query"></a>Choisir et mapper les données d'entrée pour une requête de prédiction
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Lorsque vous créez des prédictions à partir d'un modèle d'exploration de données, vous le faites généralement en alimentant de nouvelles données dans le modèle. (Les modèles de série chronologique, qui peuvent faire des prédictions basées sur des données historiques uniquement, font exception.) Pour fournir de nouvelles données au modèle, vous devez vous assurer que les données sont disponibles dans une vue de source de données. Si vous connaissez à l'avance les données que vous allez utiliser pour la prédiction, vous pouvez les inclure dans la vue de source de données utilisée pour créer le modèle. Sinon, vous devrez peut-être créer une vue de source de données. Pour plus d’informations sur les vues de source de données, consultez [Vues de sources de données dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/data-source-views-in-multidimensional-models.md).  
+  Lorsque vous créez des prédictions à partir d'un modèle d'exploration de données, vous le faites généralement en alimentant de nouvelles données dans le modèle. (Les modèles de série chronologique, qui peuvent faire des prédictions basées sur des données historiques uniquement, font exception.) Pour fournir de nouvelles données au modèle, vous devez vous assurer que les données sont disponibles dans une vue de source de données. Si vous connaissez à l'avance les données que vous allez utiliser pour la prédiction, vous pouvez les inclure dans la vue de source de données utilisée pour créer le modèle. Sinon, vous devrez peut-être créer une vue de source de données. Pour plus d’informations sur les vues de source de données, consultez [Vues de sources de données dans les modèles multidimensionnels](../../analysis-services/multidimensional-models/data-source-views-in-multidimensional-models.md).  
   
  Parfois les données dont vous avez besoin peuvent être contenues dans plusieurs tables d'une jointure un-à-plusieurs. Tel est le cas avec les données utilisées pour les modèles d'association ou les modèles Sequence Clustering, qui utilisent une table de cas liée à une table imbriquée qui contient les détails du produit ou de la transaction. Si votre modèle utilise une structure de table de cas imbriquée, les données que vous utilisez pour la prédiction doivent également avoir une structure de table de cas imbriquée.  
   
@@ -125,6 +114,6 @@ Lorsque vous créez des prédictions à partir d'un modèle d'exploration de don
      Si une relation existe, les colonnes du modèle d'exploration de données sont mappées automatiquement aux colonnes portant le même nom dans la table d'entrée. Vous pouvez modifier la relation entre la table imbriquée et la table de cas en cliquant sur **Modifier la jointure**qui ouvre la boîte de dialogue **Créer une relation** .  
   
 ## <a name="see-also"></a>Voir aussi  
- [Requêtes de prédiction &#40; exploration de données &#41;](../../analysis-services/data-mining/prediction-queries-data-mining.md)  
+ [Requêtes de prédiction & #40 ; exploration de données & #41 ;](../../analysis-services/data-mining/prediction-queries-data-mining.md)  
   
   

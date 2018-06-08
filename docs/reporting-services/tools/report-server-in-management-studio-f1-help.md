@@ -1,28 +1,27 @@
 ---
 title: Aide du serveur de rapports dans Management Studio accessible par la touche F1 | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 03/20/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: tools
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-helpviewer_keywords: Object Explorer, help
+helpviewer_keywords:
+- Object Explorer, help
 ms.assetid: 982e8c03-7341-4895-8a95-a12d52c564ea
-caps.latest.revision: "41"
+caps.latest.revision: 41
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 33794866aa7969947253dc13f6076f978129a080
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: 6aaef7d8d32c897c1c91d1690a0b62e1f1175537
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-server-in-management-studio-f1-help"></a>Aide du serveur de rapports dans Management Studio accessible par la touche F1
   Cette section contient des rubriques sur les boîtes de dialogue de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)] qui peuvent servir à gérer les serveurs de rapports.  

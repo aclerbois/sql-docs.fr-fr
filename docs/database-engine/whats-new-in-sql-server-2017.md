@@ -1,27 +1,24 @@
 ---
-title: "Nouveautés du moteur de base de données - SQL Server 2017 | Microsoft Docs"
-ms.custom: 
+title: Nouveautés du moteur de base de données - SQL Server 2017 | Microsoft Docs
+ms.custom: ''
 ms.date: 10/24/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: database-engine
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: release-landing
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 42f45b23-6509-45e8-8ee7-76a78f99a920
-caps.latest.revision: "15"
-author: CarlRabeler
-ms.author: carlrab
+caps.latest.revision: 15
+author: rothja
+ms.author: jroth
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: 8f6f7d38bf06e453017b48108b5bda5594f0870c
-ms.sourcegitcommit: b6116b434d737d661c09b78d0f798c652cf149f3
+monikerRange: '>= sql-server-2017 || = sqlallproducts-allversions'
+ms.openlocfilehash: af3f407144dcaf8fae1929d34afd83a3b8b42442
+ms.sourcegitcommit: 02c889a1544b0859c8049827878d66b2301315f8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 05/17/2018
 ---
 # <a name="whats-new-in-database-engine---sql-server-2017"></a>Nouveautés du moteur de base de données - SQL Server 2017
 [!INCLUDE[tsql-appliesto-ss2017-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2017-xxxx-xxxx-xxx-md.md)]

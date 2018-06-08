@@ -1,17 +1,16 @@
 ---
-title: "Détection et résolution des conflits de réplication de fusion avancée | Microsoft Docs"
-ms.custom: 
+title: Détection et résolution des conflits de réplication de fusion avancée | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication conflict resolution [SQL Server replication], about conflict resolution
 - default conflict resolver
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - logical record-level conflict tracking [SQL Server replication]
 - conflict resolution [SQL Server replication], merge replication
 ms.assetid: 063d3d9c-ccb5-4fab-9d0c-c675997428b4
-caps.latest.revision: 
+caps.latest.revision: 46
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 1f1b76253c96284dff88180a6de5779b3223a488
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 738fc52238936728e000e4009b4259e1991b9b2a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="advanced-merge-replication---conflict-detection-and-resolution"></a>Réplication de fusion avancée - Détection et résolution des conflits
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
@@ -117,7 +115,7 @@ ms.lasthandoff: 03/08/2018
   
  L'Outil de résolution des conflits affiche des informations issues de trois tables système :  
   
--   La réplication crée une table de conflits pour chaque table d’un article de fusion, dont le nom se présente sous la forme **MSmerge_conflic_\<nom_publication>_\<nom_article>**.  
+-   La réplication crée une table de conflits pour chaque table d’un article de fusion, dont le nom se présente sous la forme **MSmerge_conflict_\<nom_publication>_\<nom_article>**.  
   
      Les tables de conflits possèdent la même structure que les tables sur lesquelles elles sont basées. Une ligne de l'une de ces tables se compose de la version perdante d'une ligne conflictuelle (la version gagnante de la ligne réside dans la table utilisateur réelle).  
   

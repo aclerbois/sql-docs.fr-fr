@@ -1,16 +1,15 @@
 ---
 title: sp_reinitmergepullsubscription (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/04/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -20,16 +19,15 @@ f1_keywords:
 helpviewer_keywords:
 - sp_reinitmergepullsubscription
 ms.assetid: 48464bc9-60aa-4886-b526-163f010102b8
-caps.latest.revision: 
+caps.latest.revision: 32
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5d6f906cf3335079618629c03cc5503debd9a519
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 20c701adf431f550f107a9cef08f1a3e49a9d611
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="spreinitmergepullsubscription-transact-sql"></a>sp_reinitmergepullsubscription (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -49,16 +47,16 @@ sp_reinitmergepullsubscription [ [ @publisher = ] 'publisher' ]
 ```  
   
 ## <a name="arguments"></a>Arguments  
- [  **@publisher**  =] **'***publisher***'**  
+ [ **@publisher** =] **'***publisher***'**  
  Nom du serveur de publication. *serveur de publication* est **sysname**, avec une valeur par défaut de tous les.  
   
- [  **@publisher_db**  =] **'***publisher_db***'**  
+ [ **@publisher_db** = ] **'***publisher_db***'**  
  Nom de la base de données du serveur de publication. *publisher_db* est **sysname**, avec une valeur par défaut de tous les.  
   
- [  **@publication**  =] **'***publication***'**  
+ [ **@publication** =] **'***publication***'**  
  Nom de la publication. *publication* est **sysname**, avec une valeur par défaut de tous les.  
   
- [  **@upload_first**  =] **'***upload_first***'**  
+ [ **@upload_first** =] **'***upload_first***'**  
  Indique si les modifications effectuées sur l'Abonné sont chargées avant la réinitialisation de l'abonnement. *upload_first* est **nvarchar (5)**, avec FALSE comme valeur par défaut. Si **true**, modifications sont téléchargées avant la réinitialisation de l’abonnement. Si **false**, modifications ne sont pas téléchargées.  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
@@ -75,7 +73,7 @@ sp_reinitmergepullsubscription [ [ @publisher = ] 'publisher' ]
 ## <a name="example"></a>Exemple  
  [!code-sql[HowTo#sp_reinitmergepullsubwithupload](../../relational-databases/replication/codesnippet/tsql/sp-reinitmergepullsubscr_2.sql)]  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Seuls les membres de la **sysadmin** rôle serveur fixe ou **db_owner** du rôle de base de données fixe peut exécuter **sp_reinitmergepullsubscription**.  
   
 ## <a name="see-also"></a>Voir aussi  

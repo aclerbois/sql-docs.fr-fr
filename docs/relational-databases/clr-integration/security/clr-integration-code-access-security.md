@@ -1,15 +1,14 @@
 ---
-title: "Sécurité d’accès du Code CLR Integration | Documents Microsoft"
-ms.custom: 
+title: Sécurité d’accès du Code CLR Integration | Documents Microsoft
+ms.custom: ''
 ms.date: 03/17/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: clr
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - UNSAFE assemblies
@@ -19,20 +18,19 @@ helpviewer_keywords:
 - code access security [CLR integration]
 - EXTERNAL_ACCESS assemblies
 ms.assetid: 2111cfe0-d5e0-43b1-93c3-e994ac0e9729
-caps.latest.revision: 
+caps.latest.revision: 28
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: b93a1955adb6f38eebd8de86599e1861a80ff75b
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 8b71c017161b2f696872c6d2dd2ba7843a474bdc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="clr-integration-code-access-security"></a>Sécurité d'accès du code de l'intégration du CLR
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Le common language runtime (CLR) prend en charge un modèle de sécurité appelé sécurité d’accès du code pour le code managé. Dans ce modèle, les autorisations sont accordées aux assemblys selon l'identité du code. Pour plus d'informations, consultez la section relative à la sécurité d'accès du code dans le kit de développement logiciel (SDK) .NET Framework.  
+  Le common language runtime (CLR) prend en charge un modèle de sécurité appelé sécurité d’accès du code pour le code managé. Dans ce modèle, les autorisations sont accordées aux assemblys selon l'identité du code. Pour plus d'informations, consultez la section relative à la sécurité d'accès du code dans le kit de développement logiciel (SDK) .NET Framework.  
   
  La stratégie de sécurité qui détermine les autorisations accordée aux assemblys est définie dans trois emplacements différents :  
   
@@ -47,9 +45,9 @@ Le common language runtime (CLR) prend en charge un modèle de sécurité appel�
  Le jeu d'autorisations de sécurité d'accès du code accordées au code managé en cas d'exécution à l'intérieur de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est l'intersection du jeu d'autorisations accordées par les trois niveaux de stratégie précités. Même si [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] accorde un jeu d'autorisations à un assembly chargé dans [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)], le jeu éventuel d'autorisations accordées au code utilisateur peut être restreint davantage par les stratégies de l'utilisateur et de l'ordinateur.  
   
 ## <a name="sql-server-host-policy-level-permission-sets"></a>Jeux d'autorisations au niveau stratégie de l'hôte de SQL Server  
- Le jeu d'autorisations de sécurité d'accès du code accordées aux assemblys par le niveau de stratégie de l'hôte [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est déterminé par le jeu d'autorisations spécifié lors de la création de l'assembly. Il existe trois jeux d’autorisations : **SAFE**, **EXTERNAL_ACCESS** et **UNSAFE** (spécifié à l’aide de la **PERMISSION_SET** option de [ CRÉER un ASSEMBLY &#40; Transact-SQL &#41; ](../../../t-sql/statements/create-assembly-transact-sql.md)).  
+ Le jeu d'autorisations de sécurité d'accès du code accordées aux assemblys par le niveau de stratégie de l'hôte [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est déterminé par le jeu d'autorisations spécifié lors de la création de l'assembly. Il existe trois jeux d’autorisations : **SAFE**, **EXTERNAL_ACCESS** et **UNSAFE** (spécifié à l’aide de la **PERMISSION_SET** option de [ CRÉER l’ASSEMBLY &#40;Transact-SQL&#41;](../../../t-sql/statements/create-assembly-transact-sql.md)).  
   
- [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit un niveau de stratégie de sécurité au niveau de l’hôte au CLR tout en l’hébergeant ; Cette stratégie est un niveau de stratégie supplémentaire sous les deux niveaux de stratégie qui sont toujours en vigueur. Cette stratégie est définie pour chaque domaine d'application qui est créé par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Cette stratégie n'est pas destinée au domaine d'application par défaut appliqué lorsque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] crée une instance du CLR.  
+ [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] fournit un niveau de stratégie de sécurité au niveau de l'hôte au CLR (Common Language Runtime) quand il l'héberge ; cette stratégie est un niveau de stratégie supplémentaire sous les deux niveaux de stratégie qui sont toujours effectifs. Cette stratégie est définie pour chaque domaine d'application qui est créé par [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)]. Cette stratégie n'est pas destinée au domaine d'application par défaut appliqué lorsque [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] crée une instance du CLR.  
   
  La stratégie de niveau hôte de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] est une combinaison de la stratégie fixe de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion-md.md)] pour les assemblys système et de la stratégie spécifiée par l’utilisateur pour les assemblys utilisateur.  
   
@@ -81,7 +79,7 @@ Le common language runtime (CLR) prend en charge un modèle de sécurité appel�
 |**FileIOPermission**|**Unrestricted :** accès complet aux fichiers et dossiers n’est autorisé.|  
 |**KeyContainerPermission**|**Unrestricted :** complète l’accès aux conteneurs de clé est autorisé.|  
 |**NetworkInformationPermission**|**Accès :** instruction ping est autorisée.|  
-|**RegistryPermission**|Permet de droits de lecture pour **HKEY_CLASSES_ROOT**, **HKEY_LOCAL_MACHINE**, **HKEY_CURRENT_USER**, **HKEY_CURRENT_CONFIG**, et **HKEY_USERS.**|  
+|**RegistryPermission**|Permet de droits de lecture pour **HKEY_CLASSES_ROOT**, **HKEY_LOCAL_MACHINE**, **HKEY_CURRENT_USER**, **HKEY_CURRENT_CONFIG**et  **HKEY_USERS.**|  
 |**SecurityPermission**|**Assertion :** possibilité de déclarer que tous les appelants de ce code ont l’autorisation requise pour l’opération.<br /><br /> **ControlPrincipal :** possibilité de manipuler l’objet principal.<br /><br /> **L’exécution :** l’autorisation d’exécuter du code managé.<br /><br /> **SerializationFormatter :** capacité à fournir des services de sérialisation.|  
 |**SmtpPermission**|**Accès :** les connexions sortantes vers le port 25 hôte SMTP sont autorisées.|  
 |**SocketPermission**|**Se connecter :** des connexions sortantes (tous les ports, tous les protocoles) sur une adresse de transport sont autorisées.|  

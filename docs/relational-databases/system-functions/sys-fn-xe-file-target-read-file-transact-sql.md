@@ -1,16 +1,14 @@
 ---
-title: sys.fn_xe_file_target_read_file (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.fn_xe_file_target_read_file (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 06/22/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - fn_xe_file_target_read_file_TSQL
@@ -24,16 +22,16 @@ helpviewer_keywords:
 - fn_xe_file_target_read_file function
 - sys.fn_xe_file_target_read_file function
 ms.assetid: cc0351ae-4882-4b67-b0d8-bd235d20c901
-caps.latest.revision: 
+caps.latest.revision: 20
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 6284bd7690c715ed47177b42a5a1f5beb4b4b6a3
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: f3836b2932d9856c59e1d511d53998df57856f08
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sysfnxefiletargetreadfile-transact-sql"></a>sys.fn_xe_file_target_read_file (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -41,7 +39,7 @@ ms.lasthandoff: 02/09/2018
   Lit des fichiers créés par la cible de fichier asynchrone d'événements étendus. Au format XML, un événement par ligne est retourné.  
   
 > [!WARNING]  
->  [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] accepter les résultats de trace générés au format XEL et XEM. [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)]Étendue des résultats de trace au format XEL prend en charge uniquement des événements. Nous vous recommandons d'utiliser SQL Server Management Studio pour lire les résultats de trace au format XEL.    
+>  [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssKilimanjaro](../../includes/sskilimanjaro-md.md)] accepter les résultats de trace générés au format XEL et XEM. [!INCLUDE[ssSQL11](../../includes/sssql11-md.md)] Étendue des résultats de trace au format XEL prend en charge uniquement des événements. Nous vous recommandons d'utiliser SQL Server Management Studio pour lire les résultats de trace au format XEL.    
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -81,7 +79,7 @@ sys.fn_xe_file_target_read_file ( path, mdpath, initial_file_name, initial_offse
 |event_data|**nvarchar(max)**|Contenu de l'événement, au format XML. N'accepte pas la valeur NULL.|  
 |file_name|**nvarchar(260)**|Nom du fichier qui contient l'événement. N'accepte pas la valeur NULL.|  
 |file_offset|**bigint**|Offset du bloc dans le fichier qui contient l'événement. N'accepte pas la valeur NULL.|  
-|timestamp_utc|**datetime2**|**S’applique aux**: [!INCLUDE[ssSQLv14](../../includes/sssqlv14-md.md)] via [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br />Date et heure (fuseau horaire UTC) de l’événement. N'accepte pas la valeur NULL.|  
+|timestamp_utc|**datetime2**|**S’applique à** : [!INCLUDE[ssSQLv14](../../includes/sssqlv14-md.md)] à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] et [!INCLUDE[ssSDSfull](../../includes/sssdsfull-md.md)].<br /><br />Date et heure (fuseau horaire UTC) de l’événement. N'accepte pas la valeur NULL.|  
 
   
 ## <a name="remarks"></a>Notes  

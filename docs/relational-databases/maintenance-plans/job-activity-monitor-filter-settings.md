@@ -1,33 +1,32 @@
 ---
-title: "Moniteur d’activité des travaux (Paramètres du filtre) | Microsoft Docs"
-ms.custom: 
+title: Moniteur d’activité des travaux (Paramètres du filtre) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: maintenance-plans
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.jobactivitymon.filter.f1
 ms.assetid: 89cb0055-5262-447f-8464-7203d4caba78
-caps.latest.revision: 
+caps.latest.revision: 13
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b03932c680b2f46485ec633ba31149b3e5d41235
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: 76e11f1afb39cb8ddd82f99d74e2d2a21c776664
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="job-activity-monitor-filter-settings"></a>Moniteur d'activité des travaux (Paramètres du filtre)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Cette page vous permet de réduire le nombre de lignes visibles dans le Moniteur d’activité des travaux. Entrez des critères dans une ou plusieurs des zones disponibles, pour afficher uniquement les lignes qui correspondent aux valeurs spécifiées. Certaines zones, telles que **État** ou **Type de blocage** , proposent un nombre défini de valeurs possibles, fournies dans une liste déroulante. D’autres, telles que **Application** , permettent d’entrer n’importe quelle valeur et autant de valeurs que vous le souhaitez, sous la forme d’une liste dont les valeurs sont séparées par une virgule. Les icônes de la barre d'outils vous permettent de trier les zones disponibles par catégorie ou par ordre alphabétique. Cliquez sur des critères pour afficher une brève description de chacun d'eux.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Cette page vous permet de réduire le nombre de lignes visibles dans le Moniteur d'activité des travaux. Entrez des critères dans une ou plusieurs des zones disponibles, pour afficher uniquement les lignes qui correspondent aux valeurs spécifiées. Certaines zones, telles que **État** ou **Type de blocage** , proposent un nombre défini de valeurs possibles, fournies dans une liste déroulante. D’autres, telles que **Application** , permettent d’entrer n’importe quelle valeur et autant de valeurs que vous le souhaitez, sous la forme d’une liste dont les valeurs sont séparées par une virgule. Les icônes de la barre d'outils vous permettent de trier les zones disponibles par catégorie ou par ordre alphabétique. Cliquez sur des critères pour afficher une brève description de chacun d'eux.  
   
  Pour filtrer le Moniteur d’activité des travaux, fournissez autant de critères de filtre que vous le souhaitez, cliquez sur **Appliquer le filtre**, puis sur **OK**.  
   

@@ -1,30 +1,28 @@
 ---
-title: "Informations sur le serveur de publication, Liste de suivi des abonnements (Instantané) | Microsoft Docs"
-ms.custom: 
+title: Informations sur le serveur de publication, Liste de suivi des abonnements (Instantané) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/07/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.rep.monitor.publisherinfo.subscriptionssummary.snapshot.f1
 ms.assetid: 2ebeee62-7f54-4c77-9d37-15708bc5cc23
-caps.latest.revision: 
+caps.latest.revision: 32
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 719c58cb46c45da58af74ae82ee17f4e9df3b25f
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 4e18970935c68d1c4b8a2a2ae3635910d5bff77f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="publisher-information-subscription-watch-list-snapshot"></a>Informations sur le serveur de publication, Liste de suivi des abonnements (Instantané)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

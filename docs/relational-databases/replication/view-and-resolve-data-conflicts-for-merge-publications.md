@@ -1,32 +1,30 @@
 ---
-title: "Afficher et résoudre les conflits de données pour les publications de fusion | Microsoft Docs"
-ms.custom: 
+title: Afficher et résoudre les conflits de données pour les publications de fusion | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - merge replication conflict resolution [SQL Server replication], viewing conflicts
 - viewing conflict information
 - conflict resolution [SQL Server replication], merge replication
 ms.assetid: aeee9546-4480-49f9-8b1e-c71da1f056c7
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 3b82b75bafb038123cf460266d195497972fbf08
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: edcff8925793a5e6751884ed9f36202284b2be77
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="view-and-resolve-data-conflicts-for-merge-publications"></a>Afficher et résoudre les conflits de données pour les publications de fusion
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

@@ -1,32 +1,29 @@
 ---
-title: "Présentation des Types de données du pilote JDBC | Documents Microsoft"
-ms.custom: 
+title: Présentation des Types de données du pilote JDBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: 7802328d-4d23-4775-9573-4169b127d258
-caps.latest.revision: "27"
+caps.latest.revision: 27
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 1c9599a6e71ee0fbf171ba9c8619cafac8332cc5
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 399037b5f888c767edf28c40c0658d31e8703ddc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="understanding-the-jdbc-driver-data-types"></a>Présentation des types de données de pilote JDBC
 [!INCLUDE[Driver_JDBC_Download](../../includes/driver_jdbc_download.md)]
 
-  [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)]prend en charge l’utilisation des types de données de base et avancés JDBC dans une application Java qui utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] comme base de données.  
+  [!INCLUDE[jdbcNoVersion](../../includes/jdbcnoversion_md.md)] prend en charge l’utilisation des types de données de base et avancés JDBC dans une application Java qui utilise [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] comme base de données.  
   
  Le système de type JDBC modère la conversion entre [!INCLUDE[ssNoVersion](../../includes/ssnoversion_md.md)] des types de données et les types de langage Java et les objets. Les types JDBC sont modelés sur les types SQL-92 et SQL-99. Le pilote JDBC adhère à la spécification JDBC et est conçu pour fournir un bon compromis entre la prévisibilité et la flexibilité.  
   

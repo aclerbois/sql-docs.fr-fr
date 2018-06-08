@@ -1,17 +1,16 @@
 ---
-title: "Mettre à niveau les scripts de réplication (programmation Transact-SQL de la réplication) | Microsoft Docs"
-ms.custom: 
+title: Mettre à niveau les scripts de réplication (programmation Transact-SQL de la réplication) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 dev_langs:
 - TSQL
 helpviewer_keywords:
@@ -22,16 +21,15 @@ helpviewer_keywords:
 - replication [SQL Server], upgrading
 - upgrading replicated databases
 ms.assetid: 0b8720bd-f339-4842-bc8f-b35a46f6d3ee
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: e8ca0ed7d95f89e56db0c5818d8cfc52523a58ab
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 19e2adba0742454e039f106f1ed5c3cd693384f5
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="upgrade-replication-scripts-replication-transact-sql-programming"></a>Mettre à niveau les scripts de réplication (programmation Transact-SQL de la réplication)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

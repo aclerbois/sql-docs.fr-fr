@@ -1,33 +1,34 @@
 ---
-title: "Base de données Master Data Services | Microsoft Docs"
-ms.custom: 
+title: Base de données Master Data Services | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: mds
-ms.service: 
 ms.component: non-specific
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - master-data-services
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - database [Master Data Services], about the database
 - database [Master Data Services]
 ms.assetid: 5f590cc1-6ec2-4b8c-a598-03de0f6051a0
-caps.latest.revision: 
+caps.latest.revision: 6
 author: leolimsft
 ms.author: lle
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 529ddfd73ede13e92250b7bd80b41b946a7d720e
-ms.sourcegitcommit: 6ac1956307d8255dc544e1063922493b30907b80
+ms.openlocfilehash: a03e89095ec813cf522059a6ad00e2d34dd94ed0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="master-data-services-database"></a>Base de données Master Data Services
+
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
+
   La base de données contient toutes les informations pour le système [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] . Elle est au centre d’un déploiement [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] . La base de données [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] :  
   
 -   stocke les paramètres, objets de base de données et données requis par le système [!INCLUDE[ssMDSshort](../includes/ssmdsshort-md.md)] ;  

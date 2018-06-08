@@ -1,46 +1,54 @@
 ---
-title: "Déployer un projet SSIS avec du code .NET (C#) | Microsoft Docs"
-ms.date: 09/25/2017
-ms.topic: article
-ms.prod: sql-non-specified
+title: Déployer un projet SSIS avec du code .NET (C#) | Microsoft Docs
+ms.date: 05/21/2018
+ms.topic: conceptual
+ms.prod: sql
 ms.prod_service: integration-services
-ms.service: 
 ms.component: quick-start
 ms.suite: sql
-ms.custom: 
-ms.technology: integration-services
+ms.custom: ''
+ms.technology:
+- integration-services
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8e01ed21accad152b2ef32d012f3194458ab0440
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+ms.openlocfilehash: eaac43b601808460fad9714a98bb1f444df67546
+ms.sourcegitcommit: b5ab9f3a55800b0ccd7e16997f4cd6184b4995f9
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="deploy-an-ssis-project-with-c-code-in-a-net-app"></a>Déployer un projet SSIS avec du code C# dans une application .NET
-Ce didacticiel de démarrage rapide montre comment écrire du code C# pour se connecter à un serveur de base de données et déployer un projet SSIS.
+Ce guide de démarrage rapide montre comment écrire du code C# pour se connecter à un serveur de base de données et déployer un projet SSIS.
 
 Pour créer une application C#, vous pouvez utiliser Visual Studio, Visual Studio Code ou un autre outil de votre choix.
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>Conditions préalables requises
 
 Avant de commencer, vérifiez que Visual Studio ou Visual Studio Code est installé sur votre ordinateur. Téléchargez l’édition Community gratuite de Visual Studio, ou le logiciel Visual Studio Code gratuit, à partir de la page de [Téléchargements Visual Studio](https://www.visualstudio.com/downloads/).
 
-> [!NOTE]
-> Un serveur Azure SQL Database écoute sur le port 1433. Si vous essayez de vous connecter à un serveur Azure SQL Database en étant derrière un pare-feu d’entreprise, ce port doit être ouvert dans le pare-feu d’entreprise pour que vous puissiez vous connecter.
+Un serveur Azure SQL Database écoute sur le port 1433. Si vous essayez de vous connecter à un serveur Azure SQL Database en étant derrière un pare-feu d’entreprise, ce port doit être ouvert dans le pare-feu d’entreprise pour que vous puissiez vous connecter.
 
-## <a name="get-the-connection-info-if-deployed-to-sql-database"></a>Obtenir les informations de connexion en cas de déploiement sur SQL Database 
+## <a name="supported-platforms"></a>Plateformes prises en charge
 
-Si vos packages sont déployés sur Azure SQL Database, obtenez les informations de connexion dont vous avez besoin pour vous connecter à la base de données du catalogue SSIS (SSISDB). Vous avez besoin des informations de connexion et du nom de serveur complet dans les procédures qui suivent.
+Vous pouvez utiliser les informations de ce guide de démarrage rapide pour déployer un projet SSIS sur les plateformes suivantes :
+
+-   SQL Server sur Windows.
+
+-   Azure SQL Database. Pour plus d’informations sur le déploiement et l’exécution de packages dans Azure, consultez [Effectuer un « lift-and-shift » des charges de travail SQL Server Integration Services vers le cloud](lift-shift/ssis-azure-lift-shift-ssis-packages-overview.md).
+
+Vous ne pouvez pas utiliser les informations de ce guide de démarrage rapide pour déployer un package SSIS sur SQL Server sur Linux. Pour plus d’informations sur l’exécution de packages sur Linux, consultez [Extraire, transformer et charger des données sur Linux avec SSIS](../linux/sql-server-linux-migrate-ssis.md).
+
+## <a name="for-azure-sql-database-get-the-connection-info"></a>Pour Azure SQL Database, obtenir les informations de connexion
+
+Pour déployer le projet sur Azure SQL Database, obtenez les informations de connexion dont vous avez besoin pour vous connecter à la base de données du catalogue SSIS (SSISDB). Vous avez besoin des informations de connexion et du nom de serveur complet dans les procédures qui suivent.
 
 1. Connectez-vous au [portail Azure](https://portal.azure.com/).
-2. Sélectionnez **Bases de données SQL** dans le menu de gauche, puis cliquez sur la base de données SSISDB dans la page **Bases de données SQL**. 
-3. Dans la page **Vue d’ensemble** de votre base de données, notez le nom complet du serveur. Pour afficher l’option **Cliquer pour copier**, pointez sur le nom du serveur. 
+2. Sélectionnez **Bases de données SQL** dans le menu de gauche, puis sélectionnez la base de données SSISDB dans la page **Bases de données SQL**. 
+3. Dans la page **Vue d’ensemble** de votre base de données, notez le nom complet du serveur. Pour voir l’option **Cliquer pour copier**, pointez sur le nom du serveur. 
 4. Si vous oubliez vos informations de connexion de serveur Azure SQL Database, accédez à la page du serveur SQL Database pour afficher le nom d’administrateur de serveur. Vous pouvez réinitialiser le mot de passe si nécessaire.
 5. Cliquez sur **Afficher les chaînes de connexion de la base de données**.
-6. Examinez la chaîne de connexion **ADO.NET** complète. L’exemple de code utilise un `SqlConnectionStringBuilder` pour recréer cette chaîne de connexion avec les valeurs des paramètres que vous fournissez.
+6. Examinez la chaîne de connexion **ADO.NET** complète. Votre code peut aussi utiliser un `SqlConnectionStringBuilder` pour recréer cette chaîne de connexion avec chaque valeur de paramètre que vous fournissez.
 
 ## <a name="create-a-new-visual-studio-project"></a>Créer un projet Visual Studio
 
@@ -66,7 +74,7 @@ Si vos packages sont déployés sur Azure SQL Database, obtenez les informations
 2. Remplacez le contenu de **Program.cs** par le code suivant. Ajoutez les valeurs appropriées pour votre serveur, base de données, utilisateur et mot de passe.
 
 > [!NOTE]
-> L’exemple suivant utilise l’authentification Windows. Pour utiliser l’authentification SQL Server, remplacez l’argument `Integrated Security=SSPI;` par `User ID=<user name>;Password=<password>;`.
+> L’exemple suivant utilise l’authentification Windows. Pour utiliser l’authentification SQL Server, remplacez l’argument `Integrated Security=SSPI;` par `User ID=<user name>;Password=<password>;`. Si vous vous connectez à un serveur Azure SQL Database, vous ne pouvez pas utiliser l’authentification Windows.
 
 ```csharp
 using Microsoft.SqlServer.Management.IntegrationServices;

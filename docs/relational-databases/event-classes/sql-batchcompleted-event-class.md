@@ -1,34 +1,30 @@
 ---
-title: "SQL:BatchCompleted, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: SQL:BatchCompleted, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - SQL:BatchCompleted event class
 ms.assetid: 1be023e8-7a98-4400-b9e7-b24f6a3fc5ca
-caps.latest.revision: 
+caps.latest.revision: 31
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 8b3336353df19adf186229e237592c9ae331076d
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 63572a262a43399f24c0e014e874846e947dd0be
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="sqlbatchcompleted-event-class"></a>SQL:BatchCompleted, classe d'événements
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements SQL:BatchCompleted indique que le lot [!INCLUDE[tsql](../../includes/tsql-md.md)] est exécuté.  
+  La classe d'événements SQL:BatchCompleted indique que le lot [!INCLUDE[tsql](../../includes/tsql-md.md)] est exécuté.  
   
 ## <a name="sqlbatchcompleted-event-class-data-columns"></a>Colonnes de la classe d'événements SQL:BatchCompleted  
   

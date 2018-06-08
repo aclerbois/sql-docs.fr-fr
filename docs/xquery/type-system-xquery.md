@@ -1,16 +1,15 @@
 ---
-title: "Type de système (XQuery) | Documents Microsoft"
-ms.custom: 
+title: Type de système (XQuery) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/10/2016
-ms.prod: sql-non-specified
-ms.prod_service: sql-non-specified
-ms.service: 
+ms.prod: sql
+ms.prod_service: sql
 ms.component: xquery
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 applies_to:
 - SQL Server
@@ -28,16 +27,15 @@ helpviewer_keywords:
 - built-in XML schema types [SQL Server]
 - xs prefix [XML in SQL Server]
 ms.assetid: 22d6f861-d058-47ee-b550-cbe9092dcb12
-caps.latest.revision: 
+caps.latest.revision: 28
 author: rothja
 ms.author: jroth
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 5e0c8e060eede58292de8f47a39c563059927513
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: dcdaf7607d425dec01a9f2cf8c87ff55e5441aae
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="type-system-xquery"></a>Système de types (XQuery)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -52,14 +50,14 @@ ms.lasthandoff: 02/09/2018
   
 -   La valeur typée par rapport à la valeur de chaîne d'un nœud.  
   
--   Le [fonction de données &#40; XQuery &#41; ](../xquery/data-accessor-functions-data-xquery.md) et [chaîne Function &#40; XQuery &#41; ](../xquery/data-accessor-functions-string-xquery.md).  
+-   Le [fonction data &#40;XQuery&#41; ](../xquery/data-accessor-functions-data-xquery.md) et [fonction string &#40;XQuery&#41;](../xquery/data-accessor-functions-string-xquery.md).  
   
 -   Mise en correspondance du type de séquence retourné par une expression.  
   
 ## <a name="built-in-types-of-xml-schema"></a>Types intégrés de schéma XML  
  Les types intégrés de schéma XML possèdent un préfixe d'espace de noms prédéfini, xs. Certains de ces types incluent **xs : Integer** et **xs : String**. Tous ces types intégrés sont pris en charge. Vous pouvez utiliser ces types lorsque vous créez une collection de schémas XML.  
   
- Lorsque vous interrogez des données XML typées, le type statique et dynamique des nœuds est déterminé par la collection de schémas XML associée à la colonne ou à la variable sur laquelle porte la requête. Pour plus d’informations sur les types statiques et dynamiques, consultez [contexte des expressions et évaluation de la requête &#40; XQuery &#41; ](../xquery/expression-context-and-query-evaluation-xquery.md). Par exemple, la requête suivante est spécifiée contre un typé **xml** colonne (`Instructions`). L'expression utilise `instance of` pour vérifier que la valeur typée de l'attribut `LotSize` retourné est de type `xs:decimal`.  
+ Lorsque vous interrogez des données XML typées, le type statique et dynamique des nœuds est déterminé par la collection de schémas XML associée à la colonne ou à la variable sur laquelle porte la requête. Pour plus d’informations sur les types statiques et dynamiques, consultez [contexte de l’Expression et d’évaluation de la requête &#40;XQuery&#41;](../xquery/expression-context-and-query-evaluation-xquery.md). Par exemple, la requête suivante est spécifiée contre un typé **xml** colonne (`Instructions`). L'expression utilise `instance of` pour vérifier que la valeur typée de l'attribut `LotSize` retourné est de type `xs:decimal`.  
   
 ```  
 SELECT Instructions.query('  
@@ -110,9 +108,9 @@ SELECT @x.query( '/a[1] instance of element()')
   
  Vous pouvez utiliser la **data()** ou **string()** fonction pour récupérer la valeur d’un nœud :  
   
--   Le [fonction de données &#40; XQuery &#41; ](../xquery/data-accessor-functions-data-xquery.md) retourne la valeur typée d’un nœud.  
+-   Le [fonction data &#40;XQuery&#41; ](../xquery/data-accessor-functions-data-xquery.md) retourne la valeur typée d’un nœud.  
   
--   Le [chaîne Function &#40; XQuery &#41; ](../xquery/data-accessor-functions-string-xquery.md) retourne la valeur de chaîne du nœud.  
+-   Le [fonction string &#40;XQuery&#41; ](../xquery/data-accessor-functions-string-xquery.md) retourne la valeur de chaîne du nœud.  
   
  Dans la collection de schémas XML ci-dessous, l'élément <`root`> du type entier est défini :  
   

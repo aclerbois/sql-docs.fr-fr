@@ -1,17 +1,14 @@
 ---
 title: Sauvegarder des fichiers et des groupes de fichiers (SQL Server) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/02/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - backing up filegroups [SQL Server]
 - file backups [SQL Server], how-to topics
@@ -19,20 +16,19 @@ helpviewer_keywords:
 - backups [SQL Server], creating
 - filegroups [SQL Server], backing up
 ms.assetid: a0d3a567-7d8b-4cfe-a505-d197b9a51f70
-caps.latest.revision: 
+caps.latest.revision: 41
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 65b1141e3d47a947f9b1c90b25c6ba875373c266
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: aa791223469f92033b8613a1761ea7ac32994e5f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="back-up-files-and-filegroups-sql-server"></a>Sauvegarder des fichiers et des groupes de fichiers (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique explique comment sauvegarder des fichiers et des groupes de fichiers dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../includes/tsql-md.md)]ou de PowerShell. Lorsque la taille de la base de données et les exigences en matière de performances rendent impraticable une sauvegarde complète de la base de données, créez une sauvegarde de fichiers. Une *sauvegarde de fichiers* contient toutes les données dans un ou plusieurs fichiers (ou groupes de fichiers). Pour plus d’informations sur les sauvegardes de fichiers, consultez [Sauvegardes de fichiers complètes &#40;SQL Server&#41;](../../relational-databases/backup-restore/full-file-backups-sql-server.md) et [Sauvegardes différentielles &#40;SQL Server&#41;](../../relational-databases/backup-restore/differential-backups-sql-server.md).  
+  Cette rubrique explique comment sauvegarder des fichiers et des groupes de fichiers dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l'aide de [!INCLUDE[ssManStudioFull](../../includes/ssmanstudiofull-md.md)], de [!INCLUDE[tsql](../../includes/tsql-md.md)]ou de PowerShell. Lorsque la taille de la base de données et les exigences en matière de performances rendent impraticable une sauvegarde complète de la base de données, créez une sauvegarde de fichiers. Une *sauvegarde de fichiers* contient toutes les données dans un ou plusieurs fichiers (ou groupes de fichiers). Pour plus d’informations sur les sauvegardes de fichiers, consultez [Sauvegardes de fichiers complètes &#40;SQL Server&#41;](../../relational-databases/backup-restore/full-file-backups-sql-server.md) et [Sauvegardes différentielles &#40;SQL Server&#41;](../../relational-databases/backup-restore/differential-backups-sql-server.md).  
 
   
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  
@@ -114,9 +110,9 @@ Cette rubrique explique comment sauvegarder des fichiers et des groupes de fichi
   
 15. Si vous effectuez la sauvegarde sur un lecteur de bande (spécifié dans la section **Destination** de la page **Général** ), l’option **Décharger la bande après la sauvegarde** est active. Cliquer sur cette option active l'option **Rembobiner la bande avant de décharger** .  
   
-    > **REMARQUE :** Les options de la section **Journal des transactions** sont inactives, à moins que vous sauvegardiez un journal des transactions (spécifié dans la section **Type de sauvegarde** de la page **Général**).  
+    > **REMARQUE :** Les options de la section **Journal des transactions** sont inactives, à moins que vous sauvegardiez un journal des transactions (spécifié dans la section **Type de sauvegarde** de la page **Général** ).  
   
-16. [!INCLUDE[ssEnterpriseEd10](../../includes/ssenterpriseed10-md.md)] et les versions ultérieures prennent en charge la [compression de la sauvegarde](../../relational-databases/backup-restore/backup-compression-sql-server.md). Par défaut, la compression d'une sauvegarde dépend de la valeur de l'option de configuration de serveur **backup-compression default** . Toutefois, quelle que soit la valeur par défaut actuelle au niveau du serveur, vous pouvez compresser une sauvegarde en activant **Compresser la sauvegarde**, et vous pouvez empêcher la compression en activant **Ne pas compresser la sauvegarde**.  
+16. [!INCLUDE[ssEnterpriseEd10](../../includes/ssenterpriseed10-md.md)] et les versions ultérieures prennent en charge la [compression de la sauvegarde](../../relational-databases/backup-restore/backup-compression-sql-server.md). Par défaut, la compression d’une sauvegarde dépend de la valeur de l’option de configuration de serveur **Compression par défaut des sauvegardes** . Toutefois, quelle que soit la valeur par défaut actuelle au niveau du serveur, vous pouvez compresser une sauvegarde en activant **Compresser la sauvegarde**, et vous pouvez empêcher la compression en activant **Ne pas compresser la sauvegarde**.  
   
      **Pour consulter la valeur par défaut de compression de la sauvegarde actuelle**  
   
@@ -137,9 +133,9 @@ Cette rubrique explique comment sauvegarder des fichiers et des groupes de fichi
   
      BACKUP DATABASE *database*  
   
-     { FILE **=***nom_fichier_logique* | FILEGROUP **=***nom_groupe_fichiers_logique* } [ **,**...*f* ]  
+     { FILE **=***nom_fichier_logique* | FILEGROUP **=***nom_groupe_fichiers_logique* } [ **,**...* f* ]  
   
-     TO *unité_sauvegarde* [ **, de**...*n* ]  
+     TO *unité_sauvegarde* [ **,**...*n* ]  
   
      [ WITH *options_with* [ **,**...*o* ] ] ;  
   
@@ -209,7 +205,7 @@ GO
   
      L'exemple suivant crée une sauvegarde complète de tous les fichiers dans les groupes de fichiers secondaires 'FileGroup1' et 'FileGroup2' dans la base de données `MyDB` . Les sauvegardes sont créées à l’emplacement de sauvegarde par défaut de l’instance de serveur `Computer\Instance`.  
   
-    ```  
+    ```sql  
     --Enter this command at the PowerShell command prompt, C:\PS>  
     Backup-SqlDatabase -ServerInstance Computer\Instance -Database MyDB -BackupAction Files -DatabaseFileGroup "FileGroup1","FileGroup2"  
     ```  

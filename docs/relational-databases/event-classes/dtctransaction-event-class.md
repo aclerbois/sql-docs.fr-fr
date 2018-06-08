@@ -1,34 +1,30 @@
 ---
-title: "DTCTransaction, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: DTCTransaction, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - DTCTransaction event class
 ms.assetid: 9a2d358e-5b8f-4d0b-8b93-6705c009ad57
-caps.latest.revision: 
+caps.latest.revision: 37
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: caa5c28313a53eb2a49de9d723f31979df9ff2a4
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 801f05f051d6788d38a976aaa8dbcd2dcf4526b1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="dtctransaction-event-class"></a>DTCTransaction (classe d'événements)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-Utilisez la classe d’événements **DTCTransaction** pour analyser l’état des transactions du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] coordonnées par [!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator (DTC). Ceci inclut les transactions impliquant plusieurs bases de données dans la même instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)], ou des transactions distribuées impliquant plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
+  Utilisez la classe d’événements **DTCTransaction** pour analyser l’état des transactions du [!INCLUDE[ssDEnoversion](../../includes/ssdenoversion-md.md)] coordonnées par [!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator (DTC). Ceci inclut les transactions impliquant plusieurs bases de données dans la même instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)], ou des transactions distribuées impliquant plusieurs instances du [!INCLUDE[ssDE](../../includes/ssde-md.md)].  
   
 ## <a name="dtctransaction-event-class-data-columns"></a>Colonnes de données de la classe d'événements DTCTransaction  
   

@@ -1,28 +1,26 @@
 ---
 title: Connexion avec sqlcmd | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: sqlcmd
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- sqlcmd
 ms.assetid: 61a2ec0d-1bcb-4231-bea0-cff866c21463
-caps.latest.revision: "45"
+caps.latest.revision: 45
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: c08f390860a35ccbd5dd743317a52df80c05ef52
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: c330fd329f28fa7d89b62b9af6bb8d4bb67c2bc4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="connecting-with-sqlcmd"></a>Connexion avec sqlcmd
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
@@ -68,21 +66,21 @@ Dans la version actuelle, les options suivantes sont disponibles :
   
 - k - supprimer ou remplacer des caractères de contrôle.  
   
-- **-K***application_intent*  
-Déclare le type de la charge de travail de l’application lors de la connexion à un serveur. La seule valeur actuellement prise en charge est **ReadOnly**. Si **-K** n’est pas spécifié, `sqlcmd` ne prend pas en charge la connectivité à un réplica secondaire dans un groupe de disponibilité AlwaysOn. Pour plus d’informations, consultez [pilote ODBC sur Linux et macOS - haute disponibilité et récupération d’urgence](../../../connect/odbc/linux-mac/odbc-driver-on-linux-support-for-high-availability-disaster-recovery.md).  
+- **K-*** application_intent*  
+Déclare le type de la charge de travail de l'application lors de la connexion à un serveur. La seule valeur actuellement prise en charge est **ReadOnly**. Si **-K** n’est pas spécifié, `sqlcmd` ne prend pas en charge la connectivité à un réplica secondaire dans un groupe de disponibilité AlwaysOn. Pour plus d’informations, consultez [pilote ODBC sur Linux et macOS - haute disponibilité et récupération d’urgence](../../../connect/odbc/linux-mac/odbc-driver-on-linux-support-for-high-availability-disaster-recovery.md).  
   
 > [!NOTE]  
-> L’option**-K** n’est pas prise en charge dans le CTP pour SUSE Linux. Toutefois, vous pouvez spécifier le **ApplicationIntent = ReadOnly** mot clé dans un fichier DSN passé à `sqlcmd`. Pour plus d’informations, consultez « prise en charge de la source de données dans `sqlcmd` et `bcp`» à la fin de cette rubrique.  
+> L’option **-K** n’est pas prise en charge dans le CTP pour SUSE Linux. Toutefois, vous pouvez spécifier le **ApplicationIntent = ReadOnly** mot clé dans un fichier DSN passé à `sqlcmd`. Pour plus d’informations, consultez « prise en charge de la source de données dans `sqlcmd` et `bcp`» à la fin de cette rubrique.  
   
 - -l *délai d’attente* spécifier le nombre de secondes avant une `sqlcmd` connexion expire lorsque vous essayez de vous connecter à un serveur.
 
 - m - *error_level* contrôle les messages d’erreur sont envoyés à stdout.  
   
-- **-M***multisubnet_failover*  
+- **M-*** multisubnet_failover*  
 Spécifiez toujours **-M** en cas de connexion à l’écouteur de groupe de disponibilité d’un groupe de disponibilité [!INCLUDE[ssSQL11](../../../includes/sssql11_md.md)] ou d’une instance de cluster de basculement [!INCLUDE[ssSQL11](../../../includes/sssql11_md.md)]. **-M** fournit pour accélérer la détection de basculement et de connexion au serveur (actuellement) actif. Si vous ne spécifiez pas l’option **–M** , **-M** est désactivé. Pour plus d’informations sur [!INCLUDE[ssHADR](../../../includes/sshadr_md.md)], consultez [pilote ODBC sur Linux et macOS - haute disponibilité et récupération d’urgence](../../../connect/odbc/linux-mac/odbc-driver-on-linux-support-for-high-availability-disaster-recovery.md).  
   
 > [!NOTE]  
-> L’option**-M** n’est pas prise en charge dans le CTP pour SUSE Linux. Toutefois, vous pouvez spécifier le **MultiSubnetFailover = Yes** mot clé dans un fichier DSN passé à `sqlcmd`. Pour plus d’informations, consultez « prise en charge de la source de données dans `sqlcmd` et `bcp`» à la fin de cette rubrique.  
+> L’option **-M** n’est pas prise en charge dans le CTP pour SUSE Linux. Toutefois, vous pouvez spécifier le **MultiSubnetFailover = Yes** mot clé dans un fichier DSN passé à `sqlcmd`. Pour plus d’informations, consultez « prise en charge de la source de données dans `sqlcmd` et `bcp`» à la fin de cette rubrique.  
   
 - -N chiffrer la connexion.  
   
@@ -94,7 +92,7 @@ Spécifiez toujours **-M** en cas de connexion à l’écouteur de groupe de dis
   
 - q - *commandline_query* exécuter une requête lorsque `sqlcmd` démarre, mais ne quitte pas lors de l’exécution de la requête est terminée.  
 
-- -Q *commandline_query* exécuter une requête lorsque `sqlcmd` démarre. `sqlcmd`s’arrête lorsque la requête est terminée.  
+- -Q *commandline_query* exécuter une requête lorsque `sqlcmd` démarre. `sqlcmd` s’arrête lorsque la requête est terminée.  
 
 - messages d’erreur - r effectue une redirection vers stderr.
 
@@ -102,7 +100,7 @@ Spécifiez toujours **-M** en cas de connexion à l’écouteur de groupe de dis
   
 - -s *column_separator_char* spécifier le caractère de séparation des colonnes.  
 
-- -S [*protocol*:] *server*[**,***port*]  
+- -S [*protocole*:] *server*[**, *** port*]  
 Spécifiez l’instance de [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] auquel se connecter, ou si -D est utilisé, une source de données. Le pilote ODBC sur Linux et macOS requiert - S. Notez que **tcp** est le seul protocole valide.  
   
 - -t *query_timeout* spécifier le nombre de secondes avant qu’une commande (ou une instruction SQL) expire.  
@@ -214,13 +212,13 @@ Les entrées suivantes sont prises en charge dans un DSN sur Linux ou macOS :
 
 -   **ApplicationIntent = ReadOnly**  
 
--   **Base de données =***nom_base_de_données*  
+-   **Base de données = *** nom_base_de_données*  
   
 -   **Pilote = ODBC Driver 11 pour SQL Server** ou **pilote = ODBC Driver 13 pour SQL Server**
   
 -   **MultiSubnetFailover = Yes**  
   
--   **Server =***server_name_or_IP_address*  
+-   **Server = *** server_name_or_IP_address*  
   
 -   **Trusted_Connection=yes**|**no**  
   

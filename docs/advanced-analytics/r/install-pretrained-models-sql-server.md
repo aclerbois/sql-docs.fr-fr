@@ -1,30 +1,25 @@
 ---
 title: Installer des modèles d’apprentissage automatique dont l’apprentissage sur SQL Server | Documents Microsoft
-ms.date: 03/14/2018
-ms.reviewer: ''
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 05/31/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: Inactive
-ms.openlocfilehash: c9895584e53f488c0db15ad533ba4a2230ae60c4
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: e3abc1b1581216bb0207fbba2d857993b947afae
+ms.sourcegitcommit: 2d93cd115f52bf3eff3069f28ea866232b4f9f9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/01/2018
+ms.locfileid: "34707577"
 ---
 # <a name="install-pre-trained-machine-learning-models-on-sql-server"></a>Installer dont l’apprentissage d’apprentissage des modèles sur SQL Server
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
-Cet article décrit comment ajouter modèles dont l’apprentissage à une instance de SQL Server qui a déjà R Services ou SQL Server Machine Learning Services installé. 
+Cet article décrit comment ajouter dont l’apprentissage d’apprentissage des modèles pour la personnalisation de la sentiment analysis et l’image à une instance (de-de base de données) de SQL Server qui a déjà R Services ou SQL Server Machine Learning Services installé. 
 
-Il existe des modèles dont l’apprentissage pour aider les clients qui ont besoin effectuer des tâches telles que la personnalisation de la sentiment analysis ou image, mais qui n’ont pas les ressources pour obtenir des jeux de données volumineux ou de former un modèle complex. L’équipe Machine Learning Server créé et formé de ces modèles pour vous aider à démarrer sur le texte et image traiter efficacement. Pour plus d’informations, consultez la [ressources](#bkmk_resources) section de cet article.
+Il existe des modèles dont l’apprentissage pour aider les clients qui doivent effectuer l’analyse des sentiments ou la personnalisation de l’image, mais n’ont pas les ressources pour obtenir des jeux de données volumineux ou de former un modèle complex. L’équipe Machine Learning Server créé et formé de ces modèles pour vous aider à démarrer sur le texte et image traiter efficacement. Pour plus d’informations, consultez la [ressources](#bkmk_resources) section de cet article.
 
 Pour obtenir un exemple montrant comment utiliser les modèles dont l’apprentissage avec des données SQL Server, consultez le blog par l’équipe SQL Server Machine Learning : [analyse des sentiments avec Python dans Machine Learning Services SQL Server](https://blogs.msdn.microsoft.com/sqlserverstorageengine/2017/11/01/sentiment-analysis-with-python-in-sql-server-machine-learning-services/)
 
@@ -36,8 +31,8 @@ Dont l’apprentissage des modèles fonctionnent avec les produits et les langue
 
 + SQL Server 2016 R Services (de-de base de données) - R uniquement, avec la [MicrosoftML bibliothèque](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package)
 + SQL Server 2016 R Server (autonome) - R uniquement, avec la [MicrosoftML bibliothèque](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package)
-+ SQL Server 2017 Machine Learning Services (de-de base de données) - R avec [bibliothèque de MicrosoftML] (https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package), Python avec le [microsoftml bibliothèque](https://docs.microsoft.com/machine-learning-server/python-reference/microsoftml/microsoftml-package)
-+ 2017 Machine Learning serveur de SQL Server (autonome) - R avec [bibliothèque de MicrosoftML] (https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package), Python avec le [microsoftml bibliothèque](https://docs.microsoft.com/machine-learning-server/python-reference/microsoftml/microsoftml-package)
++ SQL Server 2017 Machine Learning Services (de-de base de données) - R avec les [MicrosoftML bibliothèque](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package), Python avec le [microsoftml bibliothèque](https://docs.microsoft.com/machine-learning-server/python-reference/microsoftml/microsoftml-package)
++ 2017 Machine Learning serveur de SQL Server (autonome) - R avec les [MicrosoftML bibliothèque](https://docs.microsoft.com/machine-learning-server/r-reference/microsoftml/microsoftml-package), Python avec le [microsoftml bibliothèque](https://docs.microsoft.com/machine-learning-server/python-reference/microsoftml/microsoftml-package)
 
 Le processus d’installation diffère légèrement selon votre version de SQL Server. Consultez les sections suivantes pour obtenir des instructions pour chaque version.
 
@@ -107,17 +102,35 @@ Avec SQL Server 2016, vous devez effectuer quelques étapes supplémentaires pou
 
     + AlexNet\_Updated.model
     + ImageNet1K\_mean.xml
-    + pretrained.model
+    + pretrained.Model
     + ResNet\_101\_Updated.model
     + ResNet\_18\_Updated.model
     + ResNet\_50\_Updated.model
 
-## <a name="install-pre-trained-models-on-sql-server-machine-learning-services-in-database"></a>Installer les modèles dont l’apprentissage sur SQL Server Machine Learning Services (de-de base de données)
+## <a name="install-pre-trained-models-on-sql-server-2017-machine-learning-services-in-database"></a>Installer les modèles dont l’apprentissage sur SQL Server 2017 Machine Learning Services (de-de base de données)
 
 Si vous avez déjà installé SQL Server 2017, vous pouvez obtenir les modèles dont l’apprentissage de deux manières :
 
-+ Mettre à niveau les composants de Python et R en utilisant une liaison et installez les modèles dont l’apprentissage en même temps
 + Installer uniquement les modèles dont l’apprentissage
++ Mettre à niveau les composants de Python et R en utilisant une liaison et installez les modèles dont l’apprentissage en même temps
+
+### <a name="add-pre-trained-models-only"></a>Ajouter uniquement les modèles dont l’apprentissage
+
+Pour ajouter les modèles dont l’apprentissage, vous pouvez exécuter RSetup.exe à partir de la ligne de commande.
+
+Pour la version de R, des modèles, installez le composant MLM à R_SERVICES :
+
+```
+RSetup.exe /install /component MLM /version 9.2.0.24 /language 1033 /destdir "C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\R_SERVICES"
+```
+
+Pour la version de Python, des modèles, installez le composant MLM à PYTHON_SERVICES :
+
+```
+RSetup.exe /install /component MLM /version 9.2.0.24 /language 1033 /destdir "C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\PYTHON_SERVICES"
+```
+
+### <a name="bind-and-install-pre-trained-models"></a>Lier et installer dont l’apprentissage des modèles
 
 Les instructions suivantes décrivent le processus de mise à niveau les composants d’apprentissage machine et l’obtention des modèles dont l’apprentissage en même temps.
 
@@ -152,7 +165,7 @@ Les instructions suivantes décrivent comment mettre à niveau les composants R 
 2. Sélectionnez les langues que vous souhaitez mettre à jour, puis sélectionnez le **Pre-trained modèles** option.
 
     > [!TIP]
-    > Si vous avez précédemment exécuté le programme d’installation pour mettre à jour de R Server (autonome) et que vous souhaitez simplement ajouter les modèles dont l’apprentissage, laissez toutes les sélections précédentes **étant**, puis sélectionnez simplement la version antérieure de**-apprentissage des modèles** option . **Ne le faites pas** désélectionner toutes les options précédemment sélectionnées ; si vous procédez ainsi, le programme d’installation supprime les composants.
+    > Si vous avez précédemment exécuté le programme d’installation pour mettre à jour de R Server (autonome) et que vous souhaitez simplement ajouter les modèles dont l’apprentissage, laissez toutes les sélections précédentes **étant**, puis sélectionnez simplement la version antérieure de **-apprentissage des modèles** option . **Ne le faites pas** désélectionner toutes les options précédemment sélectionnées ; si vous procédez ainsi, le programme d’installation supprime les composants.
 
     Nous vous recommandons d’accepter les paramètres par défaut pour les emplacements du modèle.
 
@@ -195,7 +208,7 @@ Actuellement, les modèles qui sont disponibles sont des modèles de réseau neu
 La configuration de chaque réseau était basée sur les implémentations de référence suivantes :
 
 + ResNet-18
-+ ResNet-50
++ ResNet à 50.
 + ResNet-101
 + AlexNet
 

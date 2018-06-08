@@ -1,31 +1,29 @@
 ---
-title: "Synchroniser un abonnement à l’aide du Gestionnaire de synchronisation Windows | Microsoft Docs"
-ms.custom: 
+title: Synchroniser un abonnement à l’aide du Gestionnaire de synchronisation Windows | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - synchronization [SQL Server replication], Windows Synchronization Manager
 - Windows Synchronization Manager
 ms.assetid: 80f15dd6-e84d-4f96-9866-5b34ea531f1e
-caps.latest.revision: 
+caps.latest.revision: 44
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f56a35addab4504ee81d324ddc1720c16d6dc578
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+ms.openlocfilehash: 9c9342e00a22d508c0f154c34679e2d73552c263
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="synchronize-a-subscription-using-windows-synchronization-manager"></a>Synchroniser un abonnement à l’aide du Gestionnaire de synchronisation Windows
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

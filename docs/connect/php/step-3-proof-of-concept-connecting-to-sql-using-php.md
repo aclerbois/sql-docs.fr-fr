@@ -2,27 +2,24 @@
 title: 'Étape 3 : Preuve de concept pour la connexion à SQL via PHP | Documents Microsoft'
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 ms.assetid: a7451a85-18e5-4fd0-bbcb-2f15a1117290
-caps.latest.revision: ''
+caps.latest.revision: 7
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: On Demand
-ms.openlocfilehash: 3ea9f1bce66da904f5587a9c21bd672818bc4423
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: 28115f9d9f22143ed177f10e761a22fd65f0cbb0
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="step-3-proof-of-concept-connecting-to-sql-using-php"></a>Étape 3 : preuve de concept pour la connexion à SQL via PHP
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]

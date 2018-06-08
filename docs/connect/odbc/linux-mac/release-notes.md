@@ -1,29 +1,41 @@
 ---
-title: "Notes de mise à jour-pilote Microsoft ODBC pour SQL Server sur Linux et macOS | Documents Microsoft"
-ms.custom: 
-ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+title: Notes de mise à jour-pilote Microsoft ODBC pour SQL Server sur Linux et macOS | Documents Microsoft
+ms.custom: ''
+ms.date: 04/04/2018
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8fe5c32ed34d9056c69069d6b390a49fc71b396c
-ms.sourcegitcommit: 4edac878b4751efa57601fe263c6b787b391bc7c
+manager: craigg
+ms.openlocfilehash: bddb826772d1c6ad7e33dce92b1e2615779b8931
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/19/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="release-notes-for-the-microsoft-odbc-driver-for-sql-server-on-linux-and-macos"></a>Notes de publication pour le pilote Microsoft ODBC pour SQL Server sur Linux et Mac OS
 [!INCLUDE[Driver_ODBC_Download](../../../includes/driver_odbc_download.md)]
+
+## <a name="whats-new-in-the-includemsconameincludesmsconamemdmd-odbc-driver-171-for-includessnoversionincludesssnoversionmdmd-on-windows"></a>Quelles sont les nouveautés le [!INCLUDE[msCoName](../../../includes/msconame_md.md)] le pilote ODBC 17.1 pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] sur Windows
+
+**Fonctionnalités ajoutées**:
+
+Prise en charge de `SQL_COPT_SS_CEKCACHETTL` et `SQL_COPT_SS_TRUSTEDCMKPATHS` attributs de connexion (pour plus d’informations, consultez [à l’aide d’Always Encrypted avec le pilote ODBC pour SQL Server](../using-always-encrypted-with-the-odbc-driver.md))
+- `SQL_COPT_SS_CEKCACHETTL` Permet de contrôler l’heure à laquelle le cache local des clés de chiffrement de colonne existe, ainsi que le vidage il
+- `SQL_COPT_SS_TRUSTEDCMKPATHS` Permet à l’application limiter les opérations AE pour utiliser uniquement la liste spécifiée de clés principales de colonne
+
+
+
+Prise en charge pour le chargement du `.rll` à partir de l’emplacement par défaut (pour plus d’informations, consultez [« Chargement de fichier ressource » une section dans le document Installation](installing-the-microsoft-odbc-driver-for-sql-server.md#resource-file-loading))
+
+[Correctifs de bogues](../bug-fixes.md)
+
+
 
 ## <a name="whats-new-in-the-includemsconameincludesmsconamemdmd-odbc-driver-17-for-includessnoversionincludesssnoversionmdmd-on-linux-and-macos"></a>Nouveautés le [!INCLUDE[msCoName](../../../includes/msconame_md.md)] 17 du pilote ODBC pour [!INCLUDE[ssNoVersion](../../../includes/ssnoversion_md.md)] sur Linux et Mac OS
 

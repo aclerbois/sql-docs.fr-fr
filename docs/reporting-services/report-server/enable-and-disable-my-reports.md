@@ -1,16 +1,15 @@
 ---
-title: "Activer et désactiver Mes rapports | Microsoft Docs"
-ms.custom: 
+title: Activer et désactiver Mes rapports | Microsoft Docs
+ms.custom: ''
 ms.date: 03/01/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-sharepoint, reporting-services-native
-ms.service: 
 ms.component: report-server
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: ''
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - deactivated My Reports folder
 - folders [Reporting Services], My Reports
@@ -18,16 +17,15 @@ helpviewer_keywords:
 - My Reports folder [Reporting Services]
 - disabling My Reports folder
 ms.assetid: 16c76e82-9fd4-417c-9ed3-a7d5bcd1dba2
-caps.latest.revision: "37"
+caps.latest.revision: 37
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: c874fc87e5f388b7b52fde156291f4357be2e06d
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: cbeea5fc6c8f8b162471d9afd758f5d740ab97e3
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="enable-and-disable-my-reports"></a>Activer et désactiver Mes rapports
   La fonctionnalité Mes rapports alloue un espace de stockage personnel dans la base de données du serveur de rapports afin que les utilisateurs puissent enregistrer les rapports qu'ils possèdent dans un dossier privé. En tant qu'administrateur du serveur de rapports, vous pouvez activer ou désactiver cette fonctionnalité, ou modifier la façon dont elle opère en modifiant les paramètres de sécurité qui déterminent ce que les utilisateurs sont autorisés à faire avec cet espace de travail.  

@@ -1,38 +1,19 @@
 ---
-title: "Sauvegarde et restauration de bases de données Analysis Services | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: data-mining
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-f1_keywords:
-- sql13.asvs.ssmsimbi.Restore.f1
-- sql13.asvs.ssmsimbi.Backup.f1
-helpviewer_keywords:
-- backing up databases [Analysis Services]
-- encryption [Analysis Services]
-- databases [Analysis Services], restoring
-- cryptography [Analysis Services]
-- databases [Analysis Services], backing up
-- restoring databases [Analysis Services]
-- recovery [Analysis Services]
-ms.assetid: 947eebd2-3622-479e-8aa6-57c11836e4ec
-caps.latest.revision: 
-author: Minewiskan
+title: Sauvegarde et restauration de bases de données Analysis Services | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: multidimensional-models
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: On Demand
-ms.openlocfilehash: a3ca95b34e684fa5ec67d0dab4720020a0e4e883
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: e43357e843f28133f7bb2f5cd9db078ee4bace27
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="backup-and-restore-of-analysis-services-databases"></a>Sauvegarde et restauration de bases de données Analysis Services
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
@@ -74,7 +55,7 @@ ms.lasthandoff: 02/15/2018
  Les administrateurs peuvent sauvegarder une base de données [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] dans un seul fichier de sauvegarde [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] (.abf), quelle que soit la taille de la base de données. Pour obtenir des instructions détaillées, consultez [How to Backup an Analysis Services Database (TechMantra)](http://www.mytechmantra.com/LearnSQLServer/Backup_an_Analysis_Services_Database.html) [(Comment sauvegarder une base de données Analysis Services Database (TechMantra)] et [Automate Backup an Analysis Services Database (TechMantra)](http://www.mytechmantra.com/LearnSQLServer/Automate_Backup_of_Analysis_Services_Database.html)[Automatiser la sauvegarde d’une base de données Analysis Services (TechMantra)].  
   
 > [!NOTE]  
->  [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)], utilisé pour le chargement et l’interrogation des modèles de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] dans un environnement SharePoint, charge ses modèles à partir des bases de données de contenu SharePoint. Ces bases de données de contenu sont relationnelles et s'exécutent sur le moteur de base de données relationnelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Par conséquent, il n’existe aucune stratégie de sauvegarde et de restauration [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour les modèles de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Si vous avez mis en place un plan de récupération d’urgence pour le contenu SharePoint, ce plan englobe les modèles de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] stockés dans les bases de données de contenu.  
+>  [!INCLUDE[ssGeminiShort](../../includes/ssgeminishort-md.md)], utilisé pour le chargement et l’interrogation [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] modèles de données dans un environnement SharePoint, charge ses modèles à partir de bases de données de contenu SharePoint. Ces bases de données de contenu sont relationnelles et s'exécutent sur le moteur de base de données relationnelle [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] . Par conséquent, il n’existe aucune stratégie de sauvegarde et de restauration [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)] pour les modèles de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] . Si vous avez mis en place un plan de récupération d’urgence pour le contenu SharePoint, ce plan englobe les modèles de données [!INCLUDE[ssGemini](../../includes/ssgemini-md.md)] stockés dans les bases de données de contenu.  
   
  **Partitions distantes**  
   

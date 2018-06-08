@@ -1,31 +1,30 @@
 ---
-title: "Méthodes des paramètres du rapport | Microsoft Docs"
-ms.custom: 
+title: Méthodes des paramètres du rapport | Microsoft Docs
+ms.custom: ''
 ms.date: 03/06/2017
 ms.prod: reporting-services
 ms.prod_service: reporting-services-native
-ms.service: 
 ms.component: report-server-web-service
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
+ms.technology: ''
+ms.tgt_pltfrm: ''
 ms.topic: reference
-applies_to: SQL Server 2016 Preview
+applies_to:
+- SQL Server 2016 Preview
 helpviewer_keywords:
 - methods [Reporting Services], report parameters
 - parameters [Reporting Services], methods
 ms.assetid: cedf68af-646a-47e4-9fbb-39b5dc3de235
-caps.latest.revision: "38"
+caps.latest.revision: 38
 author: markingmyname
 ms.author: maghan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: 320b7a23b03bd19072e8962582fe0c95a77df631
-ms.sourcegitcommit: 7e117bca721d008ab106bbfede72f649d3634993
+ms.openlocfilehash: c19f279edfc64bbee106c7ec12231ce5422f518a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="report-parameters-methods"></a>Méthodes des paramètres du rapport
   Ces méthodes permettent de définir et d'extraire les paramètres à utiliser pour les rapports.  

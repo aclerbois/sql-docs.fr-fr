@@ -2,29 +2,26 @@
 title: Constantes (Microsoft Drivers for PHP for SQL Server) | Documents Microsoft
 ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: ''
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: php
 ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- drivers
+ms.technology: connectivity
 ms.tgt_pltfrm: ''
-ms.topic: article
+ms.topic: conceptual
 helpviewer_keywords:
 - constants
 ms.assetid: 9727c944-b645-48d6-9012-18dbde35ee3c
-caps.latest.revision: ''
+caps.latest.revision: 72
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 9a7af0c51e115aae2fb8319a847d16b272001f93
-ms.sourcegitcommit: 2e130e9f3ce8a7ffe373d7fba8b09e937c216386
+manager: craigg
+ms.openlocfilehash: a09ba7744f03fca15bb60db7979d31bb141f75c2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/28/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="constants-microsoft-drivers-for-php-for-sql-server"></a>Constantes (Microsoft Drivers for PHP for SQL Server)
 [!INCLUDE[Driver_PHP_Download](../../includes/driver_php_download.md)]
@@ -145,8 +142,8 @@ Le tableau suivant répertorie les constantes utilisées pour décrire des types
 |SQLSRV_PHPTYPE_INT|Entier|  
 |SQLSRV_PHPTYPE_DATETIME|DateTime|  
 |SQLSRV_PHPTYPE_FLOAT|Float|  
-|SQLSRV_PHPTYPE_STREAM($encoding<sup>1</sup>)|STREAM|  
-|SQLSRV_PHPTYPE_STRING($encoding<sup>1</sup>)|Chaîne|  
+|SQLSRV_PHPTYPE_STREAM ($encodage<sup>1</sup>)|STREAM|  
+|SQLSRV_PHPTYPE_STRING ($encodage<sup>1</sup>)|Chaîne|  
   
 1. **SQLSRV_PHPTYPE_STREAM** et **SQLSRV_PHPTYPE_STRING** acceptent un paramètre qui spécifie l’encodage du flux. Le tableau suivant répertorie les constantes SQLSRV qui sont des paramètres acceptables et fournit une description de l’encodage correspondant.  
   
@@ -175,15 +172,15 @@ Le tableau suivant répertorie les constantes utilisées pour décrire des types
 |SQLSRV_SQLTYPE_DATETIME|datetime|  
 |SQLSRV_SQLTYPE_DATETIME2|datetime2<sup>4</sup>|  
 |SQLSRV_SQLTYPE_DATETIMEOFFSET|datetimeoffset<sup>4</sup>|  
-|SQLSRV_SQLTYPE_DECIMAL|decimal<sup>5</sup>|
+|SQLSRV_SQLTYPE_DECIMAL|décimal<sup>5</sup>|
 |SQLSRV_SQLTYPE_DECIMAL($precision, $scale)|Décimal|  
 |SQLSRV_SQLTYPE_FLOAT|float|  
 |SQLSRV_SQLTYPE_IMAGE|image<sup>1</sup>|  
 |SQLSRV_SQLTYPE_INT|int|  
 |SQLSRV_SQLTYPE_MONEY|money| 
-|SQLSRV_SQLTYPE_NCHAR|nchar<sup>5</sup>|   
+|SQLSRV_SQLTYPE_NCHAR|NCHAR<sup>5</sup>|   
 |SQLSRV_SQLTYPE_NCHAR($charCount)|NCHAR|  
-|SQLSRV_SQLTYPE_NUMERIC|numeric<sup>5</sup>|
+|SQLSRV_SQLTYPE_NUMERIC|numérique<sup>5</sup>|
 |SQLSRV_SQLTYPE_NUMERIC($precision, $scale)|numérique|  
 |SQLSRV_SQLTYPE_NVARCHAR|nvarchar<sup>5</sup>|  
 |SQLSRV_SQLTYPE_NVARCHAR($charCount)|nvarchar|  

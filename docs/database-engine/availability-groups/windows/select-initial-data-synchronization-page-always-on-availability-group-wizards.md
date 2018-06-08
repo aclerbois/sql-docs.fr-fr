@@ -1,31 +1,28 @@
 ---
-title: "Page Sélectionner la synchronisation de données initiale (Assistants de groupe de disponibilité Always On) | Microsoft Docs"
-ms.custom: 
+title: Page Sélectionner la synchronisation de données initiale (Assistants de groupe de disponibilité Always On) | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: availability-groups
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.adddatabasewizard.selectinitialdatasync.f1
 - sql13.swb.newagwizard.selectinitialdatasync.f1
 - sql13.swb.addreplicawizard.selectinitialdatasync.f1
 ms.assetid: 457b1140-4819-4def-8f7c-54a406e6db12
-caps.latest.revision: "39"
-author: MikeRayMSFT
-ms.author: mikeray
+caps.latest.revision: 39
+author: MashaMSFT
+ms.author: mathoma
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: 5a07c47470d4f3415fd29fa0f6426326d6fcfd64
-ms.sourcegitcommit: dcac30038f2223990cc21775c84cbd4e7bacdc73
+ms.openlocfilehash: ecd3ddc3c7ada09680c0b77d1db3e85b5ec9a6c8
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34769515"
 ---
 # <a name="select-initial-data-synchronization-page-always-on-availability-group-wizards"></a>Page Sélectionner la synchronisation de données initiale (Assistants de groupe de disponibilité Always On)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]

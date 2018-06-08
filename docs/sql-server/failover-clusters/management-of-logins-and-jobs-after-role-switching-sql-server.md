@@ -1,31 +1,30 @@
 ---
-title: "Gestion des connexions et des travaux après un basculement de rôle (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Gestion des connexions et des travaux après un basculement de rôle (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: failover-clusters
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: high-availability
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: dbe-high-availability
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: role switching [SQL Server]
+ms.technology: high-availability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- role switching [SQL Server]
 ms.assetid: fc2fc949-746f-40c7-b5d4-3fd51ccfbd7b
-caps.latest.revision: "25"
+caps.latest.revision: 25
 author: MikeRayMSFT
 ms.author: mikeray
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: ff1ff9689876177cb55aaeea6689e49a478fd6d2
-ms.sourcegitcommit: b2d8a2d95ffbb6f2f98692d7760cc5523151f99d
+manager: craigg
+ms.openlocfilehash: 94f3340c0184142baefb5bde981e71a74e56b6a9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/05/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="management-of-logins-and-jobs-after-role-switching-sql-server"></a>Gestion des connexions et des travaux après un basculement de rôle (SQL Server)
-[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)] Lors du déploiement d’une solution de récupération d’urgence ou haute disponibilité pour une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], il est important de reproduire les informations importantes stockées pour la base de données dans les bases de données **master** ou **msdb**. En général, les informations importantes incluent les travaux de la base de données primaire/principale et les connexions des utilisateurs ou des processus qui doivent se connecter à la base de données. Vous devez dupliquer ces informations dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge une base de données secondaire/miroir. Si possible, il est préférable de reproduire, par programmation, l'information au niveau de la nouvelle base de données primaire/principale, après le basculement des rôles.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  Lors du déploiement d’une solution de récupération d’urgence ou haute disponibilité pour une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , il est important de reproduire les informations importantes stockées pour la base de données dans les bases de données **master** ou **msdb** . En général, les informations importantes incluent les travaux de la base de données primaire/principale et les connexions des utilisateurs ou des processus qui doivent se connecter à la base de données. Vous devez dupliquer ces informations dans une instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui héberge une base de données secondaire/miroir. Si possible, il est préférable de reproduire, par programmation, l'information au niveau de la nouvelle base de données primaire/principale, après le basculement des rôles.  
   
 ## <a name="logins"></a>Connexions  
  Sur chaque instance de serveur qui héberge une copie de la base de données, vous devez reproduire les connexions qui sont autorisées à accéder à la base de données principale. Lorsque le rôle primaire/principal bascule, seuls les utilisateurs dont les connexions existent sur la nouvelle instance de serveur primaire/principal peuvent accéder à la nouvelle base de données primaire/principale. Les utilisateurs dont les connexions ne sont pas définies sur la nouvelle instance de serveur primaire/principal sont orphelins et ne peuvent pas accéder à la base de données.  
@@ -42,7 +41,7 @@ ms.lasthandoff: 12/05/2017
   
  Pour plus d’informations, consultez [Orphaned Users with Database Mirroring and Log Shipping (Utilisateurs orphelins avec mise en miroir de bases de données et copie des journaux de transaction)](http://blogs.msdn.com/b/sqlserverfaq/archive/2009/04/13/orphaned-users-with-database-mirroring-and-log-shipping.aspx) (blog du moteur de base de données).  
   
-## <a name="jobs"></a>Travaux  
+## <a name="jobs"></a>travaux  
  Les travaux tels que les travaux de sauvegarde, requièrent une attention particulière. Généralement, après un basculement de rôle, le propriétaire de la base de données ou l'administrateur système doit recréer les travaux de la nouvelle base de données primaire/principale.  
   
  Lorsque l'ancienne instance de serveur primaire/principal est disponible, vous devez supprimer les travaux originaux sur cette instance de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Notez que ces travaux de la base de données miroir actuelle échouent dans la mesure où celle-ci se trouve en état de restauration (RESTORING) et qu'elle n'est ainsi pas disponible.  
@@ -50,7 +49,7 @@ ms.lasthandoff: 12/05/2017
 > [!NOTE]  
 >  Différentes instances de [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peuvent être configurées différemment, avec des lettres de lecteurs de lecteur différentes, ou quelque chose d'équivalent. Les travaux de chaque partenaire doivent autoriser de telles différences.  
   
-## <a name="see-also"></a>Voir aussi  
+## <a name="see-also"></a> Voir aussi  
  [Gérer les métadonnées lors de la mise à disposition d’une base de données sur une autre instance de serveur &#40;SQL Server&#41;](../../relational-databases/databases/manage-metadata-when-making-a-database-available-on-another-server.md)   
  [Dépanner des utilisateurs orphelins &#40;SQL Server&#41;](../../sql-server/failover-clusters/troubleshoot-orphaned-users-sql-server.md)  
   

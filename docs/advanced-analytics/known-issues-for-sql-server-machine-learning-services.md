@@ -1,24 +1,18 @@
 ---
 title: Problèmes connus dans Machine Learning Services | Documents Microsoft
-ms.date: 02/05/2018
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.service: ''
-ms.component: ''
-ms.reviewer: ''
-ms.suite: sql
-ms.technology: ''
-ms.tgt_pltfrm: ''
-ms.topic: article
-ms.author: heidist
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
+ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 65294b0b630b662e68d252312a865dc8e898dec5
-ms.sourcegitcommit: 059fc64ba858ea2adaad2db39f306a8bff9649c2
+ms.openlocfilehash: 20a3742c9dfc956accd902539524724cac3f9b8c
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 04/04/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34563857"
 ---
 # <a name="known-issues-in-machine-learning-services"></a>Problèmes connus dans les Services de Machine Learning
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -27,7 +21,7 @@ Cet article décrit les limitations ou des problèmes connus avec les composants
 
 Les informations ici s’applique à tous les éléments suivants, sauf indication contraire :
 
-SQL Server 2016
+SQL Server 2016
 
 - R Services (dans la base de données)
 - Microsoft R Server (autonome)
@@ -103,7 +97,7 @@ Ce message s’affiche si une des deux instructions suivantes est vraie,
 + Vous avez installé R Server (autonome) sur un ordinateur client à l’aide de l’Assistant Installation de [!INCLUDE[ssSQLv14_md](../includes/sssqlv14-md.md)].
 + Vous avez installé Microsoft R Server à l’aide de la [séparer le programme d’installation de Windows](https://docs.microsoft.com/machine-learning-server/install/r-server-install-windows).
 
-Pour garantir que le serveur et le client utilisent la même version que vous devrez peut-être utiliser _liaison_, pris en charge pour Microsoft R Server 9.0 et versions ultérieures mettre à niveau les composants de R dans les instances de SQL Server 2016. Pour déterminer si prise en charge des mises à niveau est disponible pour votre version de R Services, consultez [mettre à niveau une instance de R Services à l’aide de SqlBindR.exe](/r/use-sqlbindr-exe-to-upgrade-an-instance-of-sql-server.md).
+Pour garantir que le serveur et le client utilisent la même version que vous devrez peut-être utiliser _liaison_, pris en charge pour Microsoft R Server 9.0 et versions ultérieures mettre à niveau les composants de R dans les instances de SQL Server 2016. Pour déterminer si prise en charge des mises à niveau est disponible pour votre version de R Services, consultez [mettre à niveau une instance de R Services à l’aide de SqlBindR.exe](r/use-sqlbindr-exe-to-upgrade-an-instance-of-sql-server.md).
 
 **S’applique à :** SQL Server 2016 R Services, avec R Server version9.0.0 ou une version antérieure
 

@@ -1,17 +1,14 @@
 ---
-title: "Restaurer une base de données à un nouvel emplacement (SQL Server) | Microsoft Docs"
-ms.custom: 
+title: Restaurer une base de données à un nouvel emplacement (SQL Server) | Microsoft Docs
+ms.custom: ''
 ms.date: 08/05/2016
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: backup-restore
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: backup-restore
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-backup-restore
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: backup-restore
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - restoring databases [SQL Server], moving
 - database restores [SQL Server], creating new databases
@@ -22,20 +19,19 @@ helpviewer_keywords:
 - restoring databases [SQL Server], renaming
 - database creation [SQL Server], restoring with move
 ms.assetid: 4da76d61-5e11-4bee-84f5-b305240d9f42
-caps.latest.revision: 
+caps.latest.revision: 71
 author: MikeRayMSFT
 ms.author: mikeray
 manager: craigg
-ms.workload: Active
-ms.openlocfilehash: fab639dbd4bccffd5e4739d80a7e6830835c790c
-ms.sourcegitcommit: d8ab09ad99e9ec30875076acee2ed303d61049b7
+ms.openlocfilehash: 159436df1286717f2698b463a2645b6b4a58430d
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="restore-a-database-to-a-new-location-sql-server"></a>Restaurer une base de données à un nouvel emplacement (SQL Server)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
-Cette rubrique explique comment restaurer une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à un nouvel emplacement, et éventuellement renommer la base de données, dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de SQL Server Management Studio(SSMS) ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous pouvez déplacer une base de données vers un nouveau chemin d'accès au répertoire ou créer une copie d'une base de données sur la même instance de serveur ou sur une instance différente.  
+  Cette rubrique explique comment restaurer une base de données [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] à un nouvel emplacement, et éventuellement renommer la base de données, dans [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)] à l’aide de SQL Server Management Studio(SSMS) ou de [!INCLUDE[tsql](../../includes/tsql-md.md)]. Vous pouvez déplacer une base de données vers un nouveau chemin d'accès au répertoire ou créer une copie d'une base de données sur la même instance de serveur ou sur une instance différente.  
     
 ##  <a name="BeforeYouBegin"></a> Avant de commencer  
   
@@ -162,7 +158,7 @@ Cette rubrique explique comment restaurer une base de données [!INCLUDE[ssNoVer
   
      Pour plus d’informations, consultez « Spécification d’un jeu de sauvegarde » dans [RESTORE, arguments &#40;Transact-SQL&#41;](../../t-sql/statements/restore-statements-arguments-transact-sql.md).  
   
-     MOVE **'***nom_fichier_logique_dans_sauvegarde***'** TO **'***nom_fichier_système_exploitation***'** [ **,**...*n* ]  
+     MOVE **'***nom_fichier_logique_dans_sauvegarde***'** TO **'***nom_fichier_système_d’exploitation***'** [ **,**...*n* ]  
      Spécifie que le fichier de données ou le fichier journal spécifié par *nom_fichier_logique_dans_sauvegarde* doit être restauré à l’emplacement spécifié par *nom_fichier_système_d’exploitation*. Spécifiez une instruction MOVE pour chaque fichier logique du jeu de sauvegarde que vous voulez restaurer à un nouvel emplacement.  
   
     |Option|Description|  
@@ -174,7 +170,7 @@ Cette rubrique explique comment restaurer une base de données [!INCLUDE[ssNoVer
 ###  <a name="TsqlExample"></a> Exemple (Transact-SQL)  
  Cet exemple crée une base de données nommée `MyAdvWorks` en restaurant une sauvegarde de l'exemple de base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] , qui comprend deux fichiers : [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)]_Data et [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)]_Log. Cette base de données utilise le mode de récupération simple. La base de données [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)] existe déjà sur l'instance de serveur, de sorte que les fichiers de la sauvegarde doivent être restaurés à un nouvel emplacement. L'instruction RESTORE FILELISTONLY permet de déterminer le nombre et le nom des fichiers de la base de données en cours de restauration. La sauvegarde de la base de données est la première sauvegarde définie sur l'unité de sauvegarde.  
   
-> **REMARQUE :**Les exemples de sauvegarde et de restauration du journal des transactions, notamment les restaurations dans le temps, utilisent la base de données `MyAdvWorks_FullRM` qui est créée à partir de [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], comme dans l’exemple `MyAdvWorks` suivant. Toutefois, la base de données `MyAdvWorks_FullRM` ainsi obtenue doit être modifiée pour utiliser le mode de récupération complète à l'aide de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] suivante : ALTER DATABASE <database_name> SET RECOVERY FULL.  
+> **REMARQUE :** Les exemples de sauvegarde et de restauration du journal des transactions, notamment les restaurations dans le temps, utilisent la base de données `MyAdvWorks_FullRM` qui est créée à partir de [!INCLUDE[ssSampleDBobject](../../includes/sssampledbobject-md.md)], comme dans l’exemple `MyAdvWorks` suivant. Toutefois, la base de données `MyAdvWorks_FullRM` ainsi obtenue doit être modifiée pour utiliser le mode de récupération complète à l'aide de l'instruction [!INCLUDE[tsql](../../includes/tsql-md.md)] suivante : ALTER DATABASE <database_name> SET RECOVERY FULL.  
   
 ```sql  
 USE master;  

@@ -1,27 +1,24 @@
 ---
-title: "Méthode setNClob (java.lang.String, java.io.Reader, long) | Documents Microsoft"
-ms.custom: 
+title: Méthode setNClob (java.lang.String, java.io.Reader, long) | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: jdbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 ms.assetid: c1b95ee7-7e82-418f-8f30-948589086f63
-caps.latest.revision: "14"
+caps.latest.revision: 14
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: a0fb5658f8ca4f5e9efab6dd2804d21f785f9fe9
-ms.sourcegitcommit: 2713f8e7b504101f9298a0706bacd84bf2eaa174
+manager: craigg
+ms.openlocfilehash: 59ae4636f9783eb7de8287fe7395f9a89da1818a
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/18/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="setnclob-method-javalangstring-javaioreader-long"></a>Méthode setNClob (java.lang.String, java.io.Reader, long)
 [!INCLUDE[Driver_JDBC_Download](../../../includes/driver_jdbc_download.md)]
@@ -42,7 +39,7 @@ public final void setNClob(java.lang.String parameterName,
   
  A **chaîne** qui contient le nom du paramètre.  
   
- *lecteur*  
+ *Lecteur*  
   
  Un objet de lecteur.  
   
@@ -59,7 +56,7 @@ public final void setNClob(java.lang.String parameterName,
  Cette méthode setNClob est spécifiée par la méthode setNClob dans l’interface java.sql.CallableStatement.  
   
 ## <a name="see-also"></a>Voir aussi  
- [Méthode setNClob &#40; SQLServerCallableStatement &#41;](../../../connect/jdbc/reference/setnclob-method-sqlservercallablestatement.md)   
+ [Méthode setNClob &#40;SQLServerCallableStatement&#41;](../../../connect/jdbc/reference/setnclob-method-sqlservercallablestatement.md)   
  [SQLServerCallableStatement, membres](../../../connect/jdbc/reference/sqlservercallablestatement-members.md)  
   
   

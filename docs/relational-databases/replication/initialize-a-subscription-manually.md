@@ -1,32 +1,31 @@
 ---
 title: Initialiser manuellement un abonnement | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 08/25/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: replication
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
 ms.technology:
 - replication
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - manual subscription initialization [SQL Server replication]
 - subscriptions [SQL Server replication], initializing
 - initializing subscriptions [SQL Server replication], without snapshots
 ms.assetid: 27a1bc38-e498-4fff-8082-04b52aa4b22c
-caps.latest.revision: 
+caps.latest.revision: 37
 author: MashaMSFT
 ms.author: mathoma
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 56c0ac907724c7bf587476099a31548dc4a64e6a
-ms.sourcegitcommit: ab25b08a312d35489a2c4a6a0d29a04bbd90f64d
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7921efec056ee3717ea24e2e5ec3328460e9b0e4
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="initialize-a-subscription-manually"></a>Initialiser manuellement un abonnement
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -40,7 +39,7 @@ ms.lasthandoff: 03/08/2018
 -   S'il existe une activité sur une base de données publiée à l'aide de la réplication transactionnelle entre le moment où les données et le schéma sont copiés vers l'Abonné et le moment auquel l'abonnement est initialisé manuellement, les modifications résultant de cette activité peuvent ne pas être répliquées vers l'Abonné.  
   
 ##  <a name="SSMSProcedure"></a> Utilisation de SQL Server Management Studio  
- Initialisez manuellement un abonnement à une publication en copiant le schéma (et généralement les données) dans la base de données d'abonnement. Le schéma et les données doivent correspondre à la base de données de publication. Précisez ensuite que l'abonnement ne nécessite pas de schéma et de données dans la page **Initialiser les abonnements** de l'Assistant Nouvel abonnement. Pour plus d'informations sur l'accès à cet Assistant, consultez [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md) et [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md).  
+ Initialisez manuellement un abonnement à une publication en copiant le schéma (et généralement les données) dans la base de données d'abonnement. Le schéma et les données doivent correspondre à la base de données de publication. Précisez ensuite que l'abonnement ne nécessite pas de schéma et de données dans la page **Initialiser les abonnements** de l'Assistant Nouvel abonnement. Pour plus d'informations sur l'accès à cet Assistant, consultez [Initialiser un abonnement transactionnel sans instantané](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md) et [Créer un abonnement par extraction de données (pull)](../../relational-databases/replication/create-a-pull-subscription.md).  
   
  Lors de la première synchronisation de l'abonnement, les objets et les métadonnées dont la réplication a besoin sont copiés dans la base de données d'abonnement.  
   
@@ -55,25 +54,25 @@ ms.lasthandoff: 03/08/2018
   
 #### <a name="to-manually-initialize-a-pull-subscription-to-a-transactional-publication"></a>Pour initialiser manuellement un abonnement par extraction à une publication transactionnelle  
   
-1.  Assurez-vous que le schéma et les données existent dans la base de données d'abonnement. Pour plus d’informations, consultez [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
+1.  Assurez-vous que le schéma et les données existent dans la base de données d'abonnement. Pour plus d’informations, consultez [Initialiser un abonnement transactionnel sans instantané](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
   
-2.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Spécifiez **@publication**, **@subscriber**, le nom de la base de données sur l'Abonné contenant les données publiées pour **@destination_db**, la valeur **pull** pour **@subscription_type**et la valeur **replication support only** pour **@sync_type**. Pour plus d’informations, consultez [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md).  
+2.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Spécifiez **@publication**, **@subscriber**, le nom de la base de données sur l'Abonné contenant les données publiées pour **@destination_db**, la valeur **pull** pour **@subscription_type**et la valeur **replication support only** pour **@sync_type**. Pour plus d’informations, consultez [Créer un abonnement par extraction de données (pull)](../../relational-databases/replication/create-a-pull-subscription.md).  
   
 3.  Sur l'Abonné, exécutez [sp_addpullsubscription](../../relational-databases/system-stored-procedures/sp-addpullsubscription-transact-sql.md). Pour les abonnements avec mise à jour, consultez [Create an Updatable Subscription to a Transactional Publication](https://technet.microsoft.com/library/ms152769(v=sql.130).aspx).  
   
-4.  Sur l'Abonné, exécutez [sp_addpullsubscription_agent](../../relational-databases/system-stored-procedures/sp-addpullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md).  
+4.  Sur l'Abonné, exécutez [sp_addpullsubscription_agent](../../relational-databases/system-stored-procedures/sp-addpullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Créer un abonnement par extraction de données (pull)](../../relational-databases/replication/create-a-pull-subscription.md).  
   
-5.  Démarrez l'Agent de distribution pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchronize a Pull Subscription](../../relational-databases/replication/synchronize-a-pull-subscription.md).  
+5.  Démarrez l'Agent de distribution pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchroniser un abonnement par extraction (pull)](../../relational-databases/replication/synchronize-a-pull-subscription.md).  
   
 #### <a name="to-manually-initialize-a-push-subscription-to-a-transactional-publication"></a>Pour initialiser manuellement un abonnement par émission de données à une publication transactionnelle  
   
-1.  Assurez-vous que le schéma et les données existent dans la base de données d'abonnement. Pour plus d’informations, consultez [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
+1.  Assurez-vous que le schéma et les données existent dans la base de données d'abonnement. Pour plus d’informations, consultez [Initialiser un abonnement transactionnel sans instantané](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md).  
   
 2.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addsubscription](../../relational-databases/system-stored-procedures/sp-addsubscription-transact-sql.md). Spécifiez le nom de la base de données sur l'Abonné contenant les données publiées pour **@destination_db**, la valeur **push** pour **@subscription_type**et la valeur **replication support only** pour **@sync_type**. Pour les abonnements avec mise à jour, consultez [Create an Updatable Subscription to a Transactional Publication](https://technet.microsoft.com/library/ms152769(v=sql.130).aspx).  
   
-3.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addpushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addpullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Create a Push Subscription](../../relational-databases/replication/create-a-push-subscription.md).  
+3.  Au niveau du serveur de publication sur la base de données de publication, exécutez [sp_addpushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addpullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Créer un abonnement par émission (push)](../../relational-databases/replication/create-a-push-subscription.md).  
   
-4.  Démarrez l'Agent de distribution pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchronize a Push Subscription](../../relational-databases/replication/synchronize-a-push-subscription.md).  
+4.  Démarrez l'Agent de distribution pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchroniser un abonnement par émission (push)](../../relational-databases/replication/synchronize-a-push-subscription.md).  
   
 #### <a name="to-manually-initialize-a-pull-subscription-to-a-merge-publication"></a>Pour initialiser manuellement un abonnement par extraction à une publication de fusion  
   
@@ -83,9 +82,9 @@ ms.lasthandoff: 03/08/2018
   
 3.  Exécutez [sp_addmergepullsubscription](../../relational-databases/system-stored-procedures/sp-addmergepullsubscription-transact-sql.md)sur l'Abonné, sur la base de données contenant les données publiées. Spécifiez la valeur **none** pour **@sync_type**.  
   
-4.  Sur l'Abonné, exécutez [sp_addmergepullsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Create a Pull Subscription](../../relational-databases/replication/create-a-pull-subscription.md).  
+4.  Sur l'Abonné, exécutez [sp_addmergepullsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepullsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Créer un abonnement par extraction de données (pull)](../../relational-databases/replication/create-a-pull-subscription.md).  
   
-5.  Démarrez l'Agent de fusion pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchronize a Pull Subscription](../../relational-databases/replication/synchronize-a-pull-subscription.md).  
+5.  Démarrez l'Agent de fusion pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchroniser un abonnement par extraction (pull)](../../relational-databases/replication/synchronize-a-pull-subscription.md).  
   
 #### <a name="to-manually-initialize-a-push-subscription-to-a-merge-publication"></a>Pour initialiser manuellement un abonnement par émission de données à une publication de fusion  
   
@@ -93,12 +92,12 @@ ms.lasthandoff: 03/08/2018
   
 2.  Dans la base de données de publication sur le serveur de publication, exécutez [sp_addmergesubscription](../../relational-databases/system-stored-procedures/sp-addmergesubscription-transact-sql.md). Spécifiez le nom de la base de données sur l'Abonné contenant les données publiées pour **@subscriber_db**, la valeur **push** pour **@subscription_type**et la valeur **none** pour **@sync_type**.  
   
-3.  Sur la base de données de publication du serveur de publication, exécutez [sp_addmergepushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Create a Push Subscription](../../relational-databases/replication/create-a-push-subscription.md).  
+3.  Sur la base de données de publication du serveur de publication, exécutez [sp_addmergepushsubscription_agent](../../relational-databases/system-stored-procedures/sp-addmergepushsubscription-agent-transact-sql.md). Pour plus d’informations, consultez [Créer un abonnement par émission (push)](../../relational-databases/replication/create-a-push-subscription.md).  
   
-4.  Démarrez l'Agent de fusion pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchronize a Push Subscription](../../relational-databases/replication/synchronize-a-push-subscription.md).  
+4.  Démarrez l'Agent de fusion pour transférer des objets de réplication et télécharger les modifications les plus récentes à partir du serveur de publication. Pour plus d’informations, consultez [Synchroniser un abonnement par émission (push)](../../relational-databases/replication/synchronize-a-push-subscription.md).  
   
 ## <a name="see-also"></a> Voir aussi  
- [Initialize a Transactional Subscription Without a Snapshot](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md)   
+ [Initialiser un abonnement transactionnel sans instantané](../../relational-databases/replication/initialize-a-transactional-subscription-without-a-snapshot.md)   
  [Sauvegarder et restaurer des bases de données répliquées](../../relational-databases/replication/administration/back-up-and-restore-replicated-databases.md)   
  [Replication Security Best Practices](../../relational-databases/replication/security/replication-security-best-practices.md)  
   

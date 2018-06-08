@@ -1,31 +1,22 @@
 ---
 title: Installer SQL Server 2016 R Server (autonome) | Documents Microsoft
-ms.custom: 
-ms.date: 03/14/2018
-ms.reviewer: 
-ms.suite: sql
-ms.prod: machine-learning-services
-ms.prod_service: machine-learning-services
-ms.component: r
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: article
-ms.assetid: 
-caps.latest.revision: 
+ms.prod: sql
+ms.technology: machine-learning
+ms.date: 04/15/2018
+ms.topic: conceptual
 author: HeidiSteen
 ms.author: heidist
 manager: cgronlun
-ms.workload: On Demand
-ms.openlocfilehash: 48f28b7a8d357e80e7defb6d6a8d446041380fbf
-ms.sourcegitcommit: 8e897b44a98943dce0f7129b1c7c0e695949cc3b
+ms.openlocfilehash: e7e5b61cb8e41d818fc13d1cc97cd4d998256efc
+ms.sourcegitcommit: 2ddc0bfb3ce2f2b160e3638f1c2c237a898263f4
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 03/21/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="install-sql-server-2016-r-server-standalone"></a>Installer SQL Server 2016 R Server (autonome)
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
 
-Cet article décrit comment utiliser le programme d’installation de SQL Server 2016 à installer la version autonome de **SQL Server 2016 R Server**. Si vous disposez d’une édition entreprise ou la Software Assurance, l’installation du serveur R autonome sur un serveur de production est libre.
+Cet article décrit comment utiliser le programme d’installation de SQL Server 2016 à installer la version autonome de **SQL Server 2016 R Server**.
 
 ## <a name="bkmk_prereqs"> </a> Liste de vérification de préinstallation
 

@@ -1,34 +1,30 @@
 ---
-title: "Lock:Timeout, classe d’événements | Microsoft Docs"
-ms.custom: 
+title: Lock:Timeout, classe d’événements | Microsoft Docs
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine, sql-database
-ms.service: 
-ms.component: event-classes
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: supportability
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Timeout event class
 ms.assetid: 8492f4be-4ea9-4059-80e0-9e7b71597da9
-caps.latest.revision: 
+caps.latest.revision: 38
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f50705fbc3639cc5301a1c2c4c621cff1e14ef94
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 568707e72725fda402f6abec9a549f39b02320e1
+ms.sourcegitcommit: ee661730fb695774b9c483c3dd0a6c314e17ddf8
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/19/2018
 ---
 # <a name="locktimeout-event-class"></a>Classe d'événements Lock:Timeout
-[!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-La classe d'événements Lock:Timeout indique qu'une demande de verrou sur une ressource (par exemple une page) a dépassé le délai d'attente parce qu'une autre transaction retient un verrou bloquant sur la ressource requise. Le délai est déterminé par la fonction système @@LOCK_TIMEOUT et peut être défini à l’aide de l’instruction SET LOCK_TIMEOUT.  
+[!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md](../../includes/appliesto-ss-xxxx-xxxx-xxx-md.md)]
+  La classe d'événements Lock:Timeout indique qu'une demande de verrou sur une ressource (par exemple une page) a dépassé le délai d'attente parce qu'une autre transaction retient un verrou bloquant sur la ressource requise. Le délai est déterminé par la fonction système @@LOCK_TIMEOUT et peut être défini à l’aide de l’instruction SET LOCK_TIMEOUT.  
   
  Utilisez la classe d'événements Lock:Timeout pour surveiller à quel moment des conditions d'expiration de délai se produisent. Ces informations sont utiles pour déterminer si les expirations des délais affectent de manière significative les performances de votre application et quels objets sont concernés. Vous pouvez examiner le code de l'application qui modifie ces objets pour déterminer si des modifications pouvant minimiser les délais d'expiration sont possibles.  
   

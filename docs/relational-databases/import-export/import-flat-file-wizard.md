@@ -1,28 +1,27 @@
 ---
 title: Importer un fichier plat dans SQL | Microsoft Docs
-ms.custom: 
-ms.date: 09/25/2017
-ms.prod: sql-non-specified
+ms.custom: ''
+ms.date: 09/26/2017
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: import-export
 ms.reviewer: douglasl
 ms.suite: sql
 ms.technology:
 - database-engine
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 f1_keywords:
 - sql13.swb.importflatfile.f1
 author: yualan
 ms.author: alayu
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: db507927ac37d8f960f5090c774c6a52fa0d0243
-ms.sourcegitcommit: 4a462c7339dac7d3951a4e1f6f7fb02a3e01b331
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 00ff0d0eb75ea6ad78135ac85d93494d77b8c581
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="import-flat-file-to-sql-wizard"></a>Assistant Importation d’un fichier plat dans SQL
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
@@ -33,13 +32,13 @@ L’Assistant Importation d’un fichier plat offre un moyen simple de copier de
 ## <a name="why-would-i-use-this-wizard"></a>Pourquoi utiliser cet Assistant ?
 Cet Assistant a été créé pour améliorer l’expérience d’importation actuelle en tirant parti d’un framework intelligent appelé [PROSE](https://microsoft.github.io/prose/) (Program Synthesis using Examples). Pour un utilisateur sans connaissance technique du domaine, l’importation de données peut souvent être une tâche complexe, sujette aux erreurs et fastidieuse. Avec cet Assistant, le processus d’importation se résume simplement à la sélection d’un fichier d’entrée et d’un nom unique de table, le framework PROSE s’occupe du reste.
 
-PROSE analyse les modèles de données dans votre fichier d’entrée pour déduire les noms de colonnes, les types, les séparateurs, etc. Ce framework apprend la structure du fichier et gère tout le travail ingrat que les utilisateurs n’ont pas à faire.
+PROSE analyse les modèles de données dans votre fichier d’entrée pour déduire les noms de colonnes, les types, les séparateurs, etc. Ce framework apprend la structure du fichier et gère tout le travail ingrat à la place des utilisateurs.
 
 Pour mieux comprendre l’amélioration apportée à l’expérience utilisateur de l’Assistant Importation de fichier plat, regardez cette vidéo :
 
 > [!VIDEO https://channel9.msdn.com/Shows/Data-Exposed/Introducing-the-new-Import-Flat-File-Wizard-in-SSMS-173/player]
 
-## <a name="prerequisites"></a>Conditions préalables
+## <a name="prerequisites"></a>Conditions préalables requises
 Cette fonctionnalité est uniquement disponible dans SQL Server Management Studio (SSMS) version 17.3 ou ultérieure. Veillez à utiliser la version la plus récente. Vous trouverez la dernière version [ici.](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms)
  
 ## <a id="started"></a>Commencer
@@ -51,10 +50,10 @@ Pour accéder à l’Assistant Importation d’un fichier plat, procédez comme 
 
 ![Menu de l’Assistant](media/import-flat-file-wizard/importffmenu.png)
 
-Pour en savoir plus sur les différentes fonctions de l’Assistant, consultez le didacticiel suivant.
+Pour en savoir plus sur les différentes fonctions de l’Assistant, suivez le tutoriel ci-dessous :
 
 ## <a name="tutorial"></a>Didacticiel
-Pour les besoins de ce didacticiel, n’hésitez pas à utiliser votre propre fichier plat. Sinon, ce didacticiel utilise le fichier CSV Excel suivant que vous êtes libre de copier. Si vous utilisez ce fichier CSV, donnez-lui le titre **example.csv** et veillez à l’enregistrer au format csv dans un emplacement pratique comme votre Bureau.
+Pour les besoins de ce didacticiel, n’hésitez pas à utiliser votre propre fichier plat. Sinon, ce didacticiel utilise le fichier CSV Excel suivant que vous êtes libre de copier. Si vous utilisez ce fichier CSV, nommez-le **example.csv** et enregistrez-le au format csv à un emplacement pratique comme votre Bureau.
 
 ![Assistant - Excel](media/import-flat-file-wizard/importffexample.png)
 
@@ -97,7 +96,7 @@ Cette page indique si l’importation a réussi. Si une coche verte s’affiche,
 ## <a name="learn-more"></a>En savoir plus
 
 Découvrez-en plus sur l’Assistant.
-
+ 
 - **En savoir plus sur l’importation d’autres sources.** Si vous souhaitez importer plusieurs fichiers plats, consultez [Assistant Importation et exportation SQL Server](https://docs.microsoft.com/en-us/sql/integration-services/import-export-data/import-and-export-data-with-the-sql-server-import-and-export-wizard).
 - **En savoir plus sur la connexion à des sources de fichiers plats.** Si vous recherchez plus d’informations sur la connexion à des sources de fichiers plats, consultez [Se connecter à une source de données de fichiers plats](https://docs.microsoft.com/en-us/sql/integration-services/import-export-data/connect-to-a-flat-file-data-source-sql-server-import-and-export-wizard).
 - **En savoir plus sur PROSE.** Si vous recherchez une vue d’ensemble du framework intelligent utilisé par cet Assistant, consultez [PROSE SDK](https://microsoft.github.io/prose/).

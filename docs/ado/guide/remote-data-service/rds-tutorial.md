@@ -1,30 +1,27 @@
 ---
 title: Didacticiel RDS | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 02/15/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - RDS tutorial [ADO]
 ms.assetid: 6e3305a0-7bc7-40d1-9122-235c15d23ab2
-caps.latest.revision: 
+caps.latest.revision: 16
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: b9918088a748a778fb31d064b73ccdc70eae61bb
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: 40ab51d55e33549c2ecc5a615f00f396dd9bb6c9
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="rds-tutorial"></a>Didacticiel RDS
 Ce didacticiel illustre l’utilisation du modèle de programmation des services Bureau à distance pour interroger et mettre à jour une source de données. Tout d’abord, il décrit les étapes nécessaires pour accomplir cette tâche. Ensuite, le didacticiel est répété dans Microsoft® Visual Basic Scripting Edition (avec ADO pour Windows Foundation Classes (ADO/WFC)).  

@@ -1,17 +1,13 @@
 ---
-title: "Configurer le Pare-feu Windows pour autoriser l’accès à SQL Server | Microsoft Docs"
-ms.custom: 
+title: Configurer le Pare-feu Windows pour autoriser l’accès à SQL Server | Microsoft Docs
+ms.custom: ''
 ms.date: 05/17/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: install
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- setup-install
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: install
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - Windows Firewall ports
 - WMI firewall ports
@@ -26,16 +22,16 @@ helpviewer_keywords:
 - ports [SQL Server], TCP
 - netsh to open firewall ports
 ms.assetid: f55c6a0e-b6bd-4803-b51a-f3a419803024
-caps.latest.revision: 
-author: MikeRayMSFT
-ms.author: mikeray
-manager: jhubbard
-ms.workload: Active
-ms.openlocfilehash: 0827e7946df18bff42ad09285ad93c5c3a3b3996
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+caps.latest.revision: 48
+author: MashaMSFT
+ms.author: mathoma
+manager: craigg
+ms.openlocfilehash: 100c84e221b7add9eab09cd7b2b0bf4c3ab0669b
+ms.sourcegitcommit: 8aa151e3280eb6372bf95fab63ecbab9dd3f2e5e
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 06/05/2018
+ms.locfileid: "34772595"
 ---
 # <a name="configure-the-windows-firewall-to-allow-sql-server-access"></a>Configure the Windows Firewall to Allow SQL Server Access
 [!INCLUDE[appliesto-ss-xxxx-xxxx-xxx-md-winonly](../../includes/appliesto-ss-xxxx-xxxx-xxx-md-winonly.md)]
@@ -90,7 +86,7 @@ Configurez les paramètres du Pare-feu Windows avec **Microsoft Management Conso
   
 -   **netsh**  
   
-     L’outil **netsh.exe** peut être utilisé par un administrateur pour configurer et surveiller des ordinateurs Windows à partir d’une invite de commandes ou à l’aide d’un fichier de commandes**.** En utilisant l’outil **netsh** , vous pouvez diriger les commandes de contexte que vous entrez dans l’application d’assistance appropriée, et celle-ci exécute ensuite la commande. Une application d’assistance est un fichier de bibliothèque de liens dynamiques (.dll, Dynamic Link Library) qui étend les fonctionnalités de l’outil **netsh** en fournissant la configuration, l’analyse et la prise en charge d’un ou plusieurs services, utilitaires ou protocoles. Tous les systèmes d'exploitation qui prennent en charge [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont un programme d'assistance de pare-feu. [!INCLUDE[firstref_longhorn](../../includes/firstref-longhorn-md.md)] possède également une application d’assistance de pare-feu avancée nommée **advfirewall**. Aucune information détaillée sur l’utilisation de **netsh** n’est fournie dans cet article. Toutefois, un grand nombre des options de configuration décrites peuvent être configurées via **netsh**. Exécutez, par exemple, le script suivant à partir d'une invite de commandes pour ouvrir le port TCP 1433 :  
+     L’outil **netsh.exe** peut être utilisé par un administrateur pour configurer et surveiller des ordinateurs Windows à partir d’une invite de commandes ou à l’aide d’un fichier de commandes **.** En utilisant l’outil **netsh** , vous pouvez diriger les commandes de contexte que vous entrez dans l’application d’assistance appropriée, et celle-ci exécute ensuite la commande. Une application d’assistance est un fichier de bibliothèque de liens dynamiques (.dll, Dynamic Link Library) qui étend les fonctionnalités de l’outil **netsh** en fournissant la configuration, l’analyse et la prise en charge d’un ou plusieurs services, utilitaires ou protocoles. Tous les systèmes d'exploitation qui prennent en charge [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ont un programme d'assistance de pare-feu. [!INCLUDE[firstref_longhorn](../../includes/firstref-longhorn-md.md)] possède également une application d’assistance de pare-feu avancée nommée **advfirewall**. Aucune information détaillée sur l’utilisation de **netsh** n’est fournie dans cet article. Toutefois, un grand nombre des options de configuration décrites peuvent être configurées via **netsh**. Exécutez, par exemple, le script suivant à partir d'une invite de commandes pour ouvrir le port TCP 1433 :  
   
     ```  
     netsh firewall set portopening protocol = TCP port = 1433 name = SQLPort mode = ENABLE scope = SUBNET profile = CURRENT  
@@ -124,7 +120,7 @@ Configurez les paramètres du Pare-feu Windows avec **Microsoft Management Conso
 |Connexion administrateur dédiée|Port TCP 1434 pour l'instance par défaut. D'autres ports sont utilisés pour les instances nommées. Recherchez le numéro de port dans le journal des erreurs.|Par défaut, les connexions distantes à la connexion administrateur dédiée ne sont pas activées. Pour activer une DAC distante, utilisez la facette Configuration de la surface d'exposition. Pour plus d'informations, consultez [Surface Area Configuration](../../relational-databases/security/surface-area-configuration.md).|  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Service Browser|Port UDP 1434|Le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est à l'écoute des connexions entrantes vers une instance nommée et fournit au client le numéro de port TCP qui correspond à cette instance nommée. Normalement le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] Browser est démarré toutes les fois que les instances nommées du [!INCLUDE[ssDE](../../includes/ssde-md.md)] sont utilisées. Il n'est pas nécessaire que le service [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] soit démarré si le client est configuré pour se connecter au port spécifique de l'instance nommée.|  
 |[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui s'exécute sur un point de terminaison HTTP.|Peut être spécifié lors de la création d'un point de terminaison HTTP. La valeur par défaut est le port TCP 80 pour le trafic CLEAR_PORT et le port 443 pour le trafic SSL_PORT.|Utilisé pour une connexion HTTP via une URL.|  
-|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui s'exécute sur un point de terminaison HTTPS.|Port TCP 443|Utilisé pour une connexion HTTPS via une URL. HTTPS est une connexion HTTP qui utilise SSL (Secure Sockets Layer).|  
+|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] qui s'exécute sur un point de terminaison HTTPS.|Port TCP 443|Utilisé pour une connexion HTTPS via une URL. HTTPS est une connexion HTTP qui utilise SSL (Secure Sockets Layer).|  
 |[!INCLUDE[ssSB](../../includes/sssb-md.md)]|Port TCP 4022. Pour vérifier le port utilisé, exécutez la requête suivante :<br /><br /> `SELECT name, protocol_desc, port, state_desc`<br /><br /> `FROM sys.tcp_endpoints`<br /><br /> `WHERE type_desc = 'SERVICE_BROKER'`|Il n’existe aucun port par défaut pour [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)][!INCLUDE[ssSB](../../includes/sssb-md.md)], mais il s’agit de la configuration classique utilisée dans les exemples de la documentation en ligne.|  
 |Mise en miroir de bases de données|Port choisi par l'administrateur. Pour déterminer le port, exécutez la requête suivante :<br /><br /> `SELECT name, protocol_desc, port, state_desc FROM sys.tcp_endpoints`<br /><br /> `WHERE type_desc = 'DATABASE_MIRRORING'`|Il n’y a aucun port par défaut pour la mise en miroir de bases de données ; cependant, les exemples de la documentation en ligne utilisent le port TCP 5022 ou 7022. Il est très important d'éviter d'interrompre un point de terminaison de mise en miroir en cours d'utilisation, en particulier en mode haute sécurité avec basculement automatique. Votre configuration du pare-feu doit éviter de rompre le quorum. Pour plus d’informations, consultez [Spécifier une adresse réseau de serveur &#40;mise en miroir de bases de données&#41;](../../database-engine/database-mirroring/specify-a-server-network-address-database-mirroring.md).|  
 |REPLICATION|Les connexions de réplication à [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilisent les ports standard type du [!INCLUDE[ssDE](../../includes/ssde-md.md)] (port TCP 1433 pour l'instance par défaut, etc.)<br /><br /> La synchronisation Web et l'accès de FTP/UNC pour l'instantané de réplication requièrent l'ouverture de ports supplémentaires sur le pare-feu. Pour transférer des données initiales et le schéma d'un emplacement à un autre, la réplication peut utiliser FTP (port TCP 21), ou la synchronisation via HTTP (port TCP 80) ou le partage de fichiers. Le partage de fichiers utilise les ports UDP 137 et 138, et le port TCP 139 avec NetBIOS. Le partage de fichiers utilise le port TCP 445.|Pour la synchronisation via HTTP, la réplication utilise le point de terminaison IIS (dont les ports sont configurables, mais qui a par défaut le port 80), mais le processus IIS se connecte au système principal [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] via les ports standard (1433 pour l'instance par défaut).<br /><br /> Pendant la synchronisation Web via FTP, le transfert FTP s'effectue entre IIS et le serveur de publication [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] , pas entre l'abonné et IIS.|  
@@ -180,7 +176,7 @@ Le tableau suivant répertorie les ports qui sont fréquemment utilisés par [!I
   
 |Fonctionnalité|d’|Commentaires|  
 |-------------|----------|--------------|  
-|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] Services Web|Port TCP 80|Utilisé pour une connexion HTTP à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] via une URL. Nous vous recommandons de ne pas utiliser la règle préconfigurée **Services World Wide Web (HTTP)**. Pour plus d'informations, consultez ci-dessous la section [Interaction avec d'autres règles de pare-feu](#BKMK_other_rules) .|  
+|[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] Services Web|Port TCP 80|Utilisé pour une connexion HTTP à [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] via une URL. Nous vous recommandons de ne pas utiliser la règle préconfigurée **Services World Wide Web (HTTP)**. Pour plus d'informations, consultez ci-dessous la section [Interaction avec d'autres règles de pare-feu](#BKMK_other_rules) .|  
 |[!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] configuré pour une utilisation via HTTPS|Port TCP 443|Utilisé pour une connexion HTTPS via une URL. HTTPS est une connexion HTTP qui utilise SSL (Secure Sockets Layer). Nous vous recommandons de ne pas utiliser la règle préconfigurée **Services World Wide Web sécurisés (HTTPS)**. Pour plus d'informations, consultez ci-dessous la section [Interaction avec d'autres règles de pare-feu](#BKMK_other_rules) .|  
   
 Lorsque [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)] se connecte à une instance du [!INCLUDE[ssDE](../../includes/ssde-md.md)] ou [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], vous devez également ouvrir les ports appropriés pour ces services. Pour obtenir des instructions détaillées sur la manière de configurer le Pare-feu Windows pour [!INCLUDE[ssRSnoversion](../../includes/ssrsnoversion-md.md)], consultez [Configurer un pare-feu pour accéder au serveur de rapports](../../reporting-services/report-server/configure-a-firewall-for-report-server-access.md).  
@@ -197,7 +193,7 @@ Pour obtenir des instructions pas à pas pour configurer le Pare-feu Windows pou
 ###  <a name="BKMK_additional_ports"></a> Ports et services supplémentaires  
 Le tableau suivant répertorie les ports et services dont [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] peut dépendre.  
   
-|Scénario|Port|Commentaires|  
+|Scénario|d’|Commentaires|  
 |--------------|----------|--------------|  
 |Windows Management Instrumentation<br /><br /> Pour plus d'informations sur WMI, consultez [WMI Provider for Configuration Management Concepts](../../relational-databases/wmi-provider-configuration/wmi-provider-for-configuration-management.md).|WMI s'exécute dans le cadre d'un hôte de service partagé avec les ports attribués via DCOM. WMI peut utiliser le port TCP 135.<br /><br /> Consultez [Considérations spéciales relatives au port 135](#BKMK_port_135)|[!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise WMI pour lister et gérer des services. Nous vous recommandons d’utiliser la règle préconfigurée **Windows Management Instrumentation (WMI)**. Pour plus d'informations, consultez ci-dessous la section [Interaction avec d'autres règles de pare-feu](#BKMK_other_rules) .|  
 |[!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator (MS DTC)|Port TCP 135<br /><br /> Consultez [Considérations spéciales relatives au port 135](#BKMK_port_135)|Si votre application utilise des transactions distribuées, vous devez éventuellement configurer le pare-feu pour autoriser le trafic MS DTC ( [!INCLUDE[msCoName](../../includes/msconame-md.md)] Distributed Transaction Coordinator) entre des instances MS DTC distinctes, et entre MS DTC et les gestionnaires de ressources tels que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Nous vous recommandons d'utiliser le groupe de règles préconfigurées **Distributed Transaction Coordinator** .<br /><br /> Lorsqu'un MS DTC partagé unique est configuré pour l'intégralité du cluster dans un groupe de ressources distinct, vous devez ajouter sqlservr.exe comme exception au pare-feu.|  
@@ -314,7 +310,7 @@ Le tableau suivant répertorie les ports et services dont [!INCLUDE[ssNoVersion]
   
     2.  À l’invite de commandes, tapez **netstat -n -a**.  
   
-         Le composant **-n** demande à **netstat** d’afficher l’adresse numérique et le numéro de port des connexions TCP actives. Le commutateur **-a** demande à **netstat** d’afficher les ports TCP et UDP écoutés par l’ordinateur.  
+         Le commutateur **-n** demande à **netstat** d’afficher l’adresse numérique et le numéro de port des connexions TCP actives. Le commutateur **-a** demande à **netstat** d’afficher les ports TCP et UDP écoutés par l’ordinateur.  
   
 -   L’utilitaire **PortQry** peut être utilisé pour signaler l’état des ports TCP/IP comme à l’écoute, pas à l’écoute ou filtré. (Lorsque l'état est filtré, le port peut être à l'écoute ou non ; cet état indique que l'utilitaire n'a pas reçu de réponse du port.) l’utilitaire **PortQry** peut être téléchargé à partir du [Centre de téléchargement Microsoft](http://go.microsoft.com/fwlink/?LinkId=28590).  
   

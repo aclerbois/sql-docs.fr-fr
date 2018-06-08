@@ -1,33 +1,30 @@
 ---
 title: Level, objet (ADO MD) | Documents Microsoft
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
+ms.prod: sql
+ms.prod_service: connectivity
 ms.component: ado
-ms.technology:
-- drivers
-ms.custom: 
+ms.technology: connectivity
+ms.custom: ''
 ms.date: 01/19/2017
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 apitype: COM
 f1_keywords:
 - Level
 helpviewer_keywords:
 - Level object [ADO MD]
 ms.assetid: 37815869-ed30-45fd-9aea-0a986c1b305c
-caps.latest.revision: 
+caps.latest.revision: 10
 author: MightyPen
 ms.author: genemi
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: f690e2efc97b4da9ea588e5028055fb758b93a48
-ms.sourcegitcommit: acab4bcab1385d645fafe2925130f102e114f122
+ms.openlocfilehash: d3f515c5bc8eaac8e674bcf82bd3a5e47eeefc0f
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/09/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="level-object-ado-md"></a>Objet de niveau (ADO MD)
 Contient un jeu de membres, chacun d'entre eux ayant le même rang dans une hiérarchie.  

@@ -1,16 +1,14 @@
 ---
-title: "Types de données XPath (SQLXML 4.0) | Documents Microsoft"
-ms.custom: 
+title: Types de données XPath (SQLXML 4.0) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: sqlxml
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- dbe-xml
-ms.tgt_pltfrm: 
+ms.technology: xml
+ms.tgt_pltfrm: ''
 ms.topic: reference
 helpviewer_keywords:
 - mapping XDR types to XPath types [SQLXML]
@@ -30,25 +28,25 @@ helpviewer_keywords:
 - XPath data types [SQLXML]
 - operators [SQLXML]
 ms.assetid: a90374bf-406f-4384-ba81-59478017db68
-caps.latest.revision: 
+caps.latest.revision: 27
 author: douglaslMS
 ms.author: douglasl
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d36d141e552750650ede74ba2aba92b203825558
-ms.sourcegitcommit: 37f0b59e648251be673389fa486b0a984ce22c81
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: 7762ba02f4368b64fc4073936cb04c293029e9d2
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/12/2018
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="xpath-data-types-sqlxml-40"></a>Types de données XPath (SQLXML 4.0)
 [!INCLUDE[appliesto-ss-asdb-xxxx-xxx-md](../../includes/appliesto-ss-asdb-xxxx-xxx-md.md)]
-  [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], XPath et XML Schema (XSD) sont dotés de types de données très différents. Par exemple, XPath n'affiche aucun type de données integer ou date tandis que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et XSD en possèdent un grand nombre. XSD utilise une précision à la nanoseconde pour les valeurs temporelles ; [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche au maximum une précision de 1/300ème de seconde. Par conséquent, le mappage d'un type de données à un autre n'est pas toujours possible. Pour plus d’informations sur le mappage [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des types de données aux types de données XSD, consultez [forçages de Type de données et de l’Annotation SQL : DataType &#40; SQLXML 4.0 &#41; ](../../relational-databases/sqlxml-annotated-xsd-schemas-using/data-type-coercions-and-the-sql-datatype-annotation-sqlxml-4-0.md).  
+  [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], XPath et XML Schema (XSD) sont dotés de types de données très différents. Par exemple, XPath n'affiche aucun type de données integer ou date tandis que [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] et XSD en possèdent un grand nombre. XSD utilise une précision à la nanoseconde pour les valeurs temporelles ; [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] affiche au maximum une précision de 1/300ème de seconde. Par conséquent, le mappage d'un type de données à un autre n'est pas toujours possible. Pour plus d’informations sur le mappage [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] des types de données aux types de données XSD, consultez [forçages de Type de données et de l’Annotation SQL : DataType &#40;SQLXML 4.0&#41;](../../relational-databases/sqlxml-annotated-xsd-schemas-using/data-type-coercions-and-the-sql-datatype-annotation-sqlxml-4-0.md).  
   
  XPath possède trois types de données : **chaîne**, **nombre**, et **booléenne**. Le **nombre** type de données est toujours une IEEE 754 virgule flottante double précision. Le [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] **float (53)** type de données est le plus proche XPath **nombre**. Toutefois, **float (53)** n’est pas exactement IEEE 754. Par exemple, ni la valeur NaN (Not-a-Number,), ni une valeur infinie n'est employée. Tente de convertir une chaîne non numérique en **nombre** et la tentative de division par zéro génère une erreur.  
   
 ## <a name="xpath-conversions"></a>Conversions XPath  
- Lorsque vous utilisez une requête XPath, telle que `OrderDetail[@UnitPrice > "10.0"]`, les conversions de type de données implicites et explicites peuvent modifier la signification de la requête de manière subtile. Par conséquent, il est primordial de comprendre la manière dont les types de données Xpath sont implémentés. Les recommandations concernant le langage Xpath (document « XML Path Language (XPath) version 1.0 W3C Proposed Recommendation » du 8 octobre 1999) peuvent être consultées sur le site Web du consortium W3C à l'adresse suivante : http://www.w3.org/TR/1999/PR-xpath-19991008.html.  
+ Lorsque vous utilisez une requête XPath, telle que `OrderDetail[@UnitPrice > "10.0"]`, les conversions de type de données implicites et explicites peuvent modifier la signification de la requête de manière subtile. Par conséquent, il est primordial de comprendre la manière dont les types de données Xpath sont implémentés. La spécification du langage XPath, XML Path Language (XPath) version 1.0 W3C Proposed Recommendation du 8 octobre 1999, sont accessibles sur le site Web de W3C à http://www.w3.org/TR/1999/PR-xpath-19991008.html.  
   
  Les opérateurs XPath sont divisés en quatre catégories :  
   
@@ -77,7 +75,7 @@ ms.lasthandoff: 02/12/2018
  Les conversions des éléments node-set ne sont pas toujours intuitives. Un élément node-set est converti en un **chaîne** en prenant la valeur de chaîne du premier nœud dans le jeu. Un élément node-set est converti en **nombre** en le convertissant à **chaîne**, puis convertissez **chaîne** à **nombre**. Un élément node-set est converti en **booléenne** en vérifiant son existence.  
   
 > [!NOTE]  
->  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] n’effectue pas de sélection positionnelle sur node-set : par exemple, la requête XPath `Customer[3]` désigne le troisième client ; ce type de sélection positionnelle n’est pas pris en charge dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Par conséquent, le nœud-défini-à-**chaîne** ou nœud-défini-à-**nombre** conversions comme décrit dans la spécification XPath ne sont pas implémentées. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise une sémantique « quelconque » partout où la recommandation XPath spécifie la « première » sémantique. Par exemple, en fonction de la spécification XPath du W3C, la requête XPath `Order[OrderDetail/@UnitPrice > 10.0]` sélectionne les commandes dont le premier **OrderDetail** qui a un **UnitPrice** supérieure à 10.0. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette requête XPath sélectionne les commandes avec les **OrderDetail** qui a un **UnitPrice** supérieure à 10.0.  
+>  [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] ne procède à aucune sélection positionnelle sur les éléments node-set : par exemple, la requête XPath `Customer[3]` désigne le troisième client ; ce type de sélection positionnelle n'est pas pris en charge dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)]. Par conséquent, le nœud-défini-à-**chaîne** ou nœud-défini-à-**nombre** conversions comme décrit dans la spécification XPath ne sont pas implémentées. [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] utilise une sémantique « quelconque » partout où la recommandation XPath spécifie la « première » sémantique. Par exemple, en fonction de la spécification XPath du W3C, la requête XPath `Order[OrderDetail/@UnitPrice > 10.0]` sélectionne les commandes dont le premier **OrderDetail** qui a un **UnitPrice** supérieure à 10.0. Dans [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)], cette requête XPath sélectionne les commandes avec les **OrderDetail** qui a un **UnitPrice** supérieure à 10.0.  
   
  La conversion en **booléenne** génère une existence test ; par conséquent, la requête XPath `Products[@Discontinued=true()]` est équivalente à l’expression SQL « Products.Discontinued n’est pas null », pas l’expression SQL « Products.Discontinued = 1 ». Pour rendre la requête équivaut à la dernière expression SQL, convertissez d’abord l’élément node-set en non -**booléenne** type, tel que **nombre**. Par exemple, `Products[number(@Discontinued) = true()]`.  
   

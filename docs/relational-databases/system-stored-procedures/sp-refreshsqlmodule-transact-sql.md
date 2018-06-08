@@ -1,16 +1,14 @@
 ---
 title: sp_refreshsqlmodule (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_refreshsqlmodule_TSQL
@@ -28,16 +26,16 @@ helpviewer_keywords:
 - stored procedures [SQL Server], refreshing metadata
 - user-defined functions [SQL Server], refreshing metadata
 ms.assetid: f0022a05-50dd-4620-961d-361b1681d375
-caps.latest.revision: 
+caps.latest.revision: 21
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: a95c2e905efa377edb83fd82a104758853b18271
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+monikerRange: = azuresqldb-current || >= sql-server-2016 || = sqlallproducts-allversions
+ms.openlocfilehash: b54f1410be78cc1be6095a1870fc5b6b9e5b694f
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="sprefreshsqlmodule-transact-sql"></a>sp_refreshsqlmodule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
@@ -71,7 +69,7 @@ sys.sp_refreshsqlmodule [ @name = ] 'module_name'
 |||  
 |-|-|  
 |DATABASE_DDL_TRIGGER||  
-|SERVER_DDL_TRIGGER|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|SERVER_DDL_TRIGGER|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
   
 ## <a name="return-code-values"></a>Valeurs des codes de retour  
  0 (réussite) ou un nombre différent de zéro (échec)  
@@ -86,7 +84,7 @@ sys.sp_refreshsqlmodule [ @name = ] 'module_name'
 > [!NOTE]  
 >  Les signatures qui sont associés à l’objet sont supprimées lorsque vous exécutez **sp_refreshsqlmodule**.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  Requiert l'autorisation ALTER sur le module ainsi que l'autorisation REFERENCES sur les types CLR (Common Language Runtime) définis par l'utilisateur et sur les collections de schémas XML référencés par l'objet. Requiert l'autorisation ALTER ANY DATABASE DDL TRIGGER dans la base de données actuelle lorsque le module spécifié est un déclencheur DDL au niveau de la base de données. Requiert l'autorisation CONTROL SERVER lorsque le module spécifié est un déclencheur DDL au niveau du serveur.  
   
  De plus, pour les modules définis à l'aide de la clause EXECUTE AS, l'autorisation IMPERSONATE est nécessaire sur le principal spécifié. Généralement, l'actualisation d'un objet ne modifie pas son principal EXECUTE AS sauf si le module est défini avec EXECUTE AS USER et que le nom d'utilisateur du principal correspond désormais à un autre utilisateur que celui lors de la création du module.  
@@ -166,7 +164,7 @@ GO
   
 ||  
 |-|  
-|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] et [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
+|**S'applique à**: [!INCLUDE[ssKatmai](../../includes/sskatmai-md.md)] jusqu'à [!INCLUDE[ssCurrent](../../includes/sscurrent-md.md)].|  
   
 ```  
 USE master;  
@@ -177,7 +175,7 @@ GO
 ```  
   
 ## <a name="see-also"></a>Voir aussi  
- [sp_refreshview &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-refreshview-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
+ [sp_refreshview &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-refreshview-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)  
   
   

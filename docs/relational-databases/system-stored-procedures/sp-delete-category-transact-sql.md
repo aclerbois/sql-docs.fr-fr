@@ -1,16 +1,14 @@
 ---
-title: sp_delete_category (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: sp_delete_category (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 08/09/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_delete_category_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_delete_category
 ms.assetid: 63ea7d0d-a567-456e-a778-bee99e21d16c
-caps.latest.revision: 
+caps.latest.revision: 23
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: d2ce1cd0406cbb69b6dd280bc8c36fdbd31c5d2e
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: cb4cdd9f5e3104ac2673bce0f60a6653defde5ca
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spdeletecategory-transact-sql"></a>sp_delete_category (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -53,7 +50,7 @@ sp_delete_category [ @class = ] 'class' , [ @name = ] 'name'
 |Valeur| Description|  
 |-----------|-----------------|  
 |**JOB**|Supprime une catégorie de travaux.|  
-|**ALERT**|Supprime une catégorie d'alertes.|  
+|**ALERTE**|Supprime une catégorie d'alertes.|  
 |**(OPÉRATEUR)**|Supprime une catégorie d'opérateurs.|  
   
  [  **@name =**] **'***nom***'**  

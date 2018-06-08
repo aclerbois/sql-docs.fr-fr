@@ -1,47 +1,23 @@
 ---
-title: "Relations d’attributs | Documents Microsoft"
-ms.custom: 
-ms.date: 03/14/2017
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: reference
-applies_to:
-- SQL Server 2016 Preview
-helpviewer_keywords:
-- member properties [Analysis Services], attribute relationships
-- security [Analysis Services], properties
-- PROPERTIES keyword
-- storage [Analysis Services], attribute relationships
-- natural hierarchies [Analysis Services]
-- dimensions [Analysis Services], member properties
-- queries [MDX], attribute relationships
-- user-defined hierarchies [Analysis Services]
-- attributes [Analysis Services], relationships
-- member properties [Analysis Services]
-- members [Analysis Services], attribute relationships
-- storing data [Analysis Services], attribute relationships
-- relationships [Analysis Services], attributes
-ms.assetid: 2491422a-4cf5-4b23-b6ab-289222b22ce8
-caps.latest.revision: 
-author: Minewiskan
+title: Relations d’attributs | Documents Microsoft
+ms.date: 05/02/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: olap
+ms.topic: conceptual
 ms.author: owend
+ms.reviewer: owend
+author: minewiskan
 manager: kfile
-ms.workload: Inactive
-ms.openlocfilehash: e687d64d3ba36bee4cffab7e81d401081b57eaa2
-ms.sourcegitcommit: 7519508d97f095afe3c1cd85cf09a13c9eed345f
+ms.openlocfilehash: 9035cc2c0d3308848b570ae6c157c9d70cd77cc9
+ms.sourcegitcommit: c12a7416d1996a3bcce3ebf4a3c9abe61b02fb9e
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 05/10/2018
 ---
 # <a name="attribute-relationships"></a>Relations d’attributs
 [!INCLUDE[ssas-appliesto-sqlas](../../includes/ssas-appliesto-sqlas.md)]
-Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], attributs au sein d’une dimension sont toujours liés directement ou indirectement à l’attribut clé. Quand vous définissez une dimension basée sur un schéma en étoile, c'est-à-dire quand tous les attributs de la dimension sont dérivés de la même table relationnelle, une relation d'attribut est automatiquement définie entre l'attribut clé et chaque attribut non-clé de la dimension. Quand vous définissez une dimension basée sur un schéma en flocon, où les attributs de la dimension sont dérivés de plusieurs tables liées, une relation d'attribut est automatiquement définie comme suit :  
+  Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](../../includes/ssnoversion-md.md)] [!INCLUDE[ssASnoversion](../../includes/ssasnoversion-md.md)], attributs au sein d’une dimension sont toujours liés directement ou indirectement à l’attribut clé. Quand vous définissez une dimension basée sur un schéma en étoile, c'est-à-dire quand tous les attributs de la dimension sont dérivés de la même table relationnelle, une relation d'attribut est automatiquement définie entre l'attribut clé et chaque attribut non-clé de la dimension. Quand vous définissez une dimension basée sur un schéma en flocon, où les attributs de la dimension sont dérivés de plusieurs tables liées, une relation d'attribut est automatiquement définie comme suit :  
   
 -   entre l'attribut clé et chaque attribut non-clé lié aux colonnes de la table de dimension principale ;  
   
@@ -99,7 +75,7 @@ Dans [!INCLUDE[msCoName](../../includes/msconame-md.md)] [!INCLUDE[ssNoVersion](
  La principale contrainte lorsque vous créez une relation d'attribut consiste à veiller à ce que l'attribut auquel la relation d'attribut fait référence ne dispose que d'une seule valeur pour chaque membre de l'attribut auquel la relation d'attribut appartient. Par exemple, si vous définissez une relation entre un attribut City (Ville) et un attribut State (État), chaque Ville ne peut être liée qu'à un seul État.  
   
 ## <a name="attribute-relationship-queries"></a>Requêtes de relations d'attributs  
- Vous pouvez utiliser des requêtes MDX pour récupérer des données de relations d’attributs, sous la forme de propriétés de membre, avec le **propriétés** (mot clé) de l’expression MDX **sélectionnez** instruction. Pour plus d’informations sur la façon d’utiliser MDX pour récupérer les propriétés de membre, consultez [à l’aide des propriétés de membre &#40; MDX &#41; ](../../analysis-services/multidimensional-models/mdx/mdx-member-properties.md).  
+ Vous pouvez utiliser des requêtes MDX pour récupérer des données de relations d’attributs, sous la forme de propriétés de membre, avec le **propriétés** (mot clé) de l’expression MDX **sélectionnez** instruction. Pour plus d’informations sur la façon d’utiliser MDX pour récupérer les propriétés de membre, consultez [à l’aide des propriétés de membre &#40;MDX&#41;](../../analysis-services/multidimensional-models/mdx/mdx-member-properties.md).  
   
 ## <a name="see-also"></a>Voir aussi  
  [Attributs et hiérarchies d’attributs](../../analysis-services/multidimensional-models-olap-logical-dimension-objects/attributes-and-attribute-hierarchies.md)   

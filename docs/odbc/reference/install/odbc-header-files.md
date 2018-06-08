@@ -1,31 +1,28 @@
 ---
-title: "Fichiers d’en-tête ODBC | Documents Microsoft"
-ms.custom: 
+title: Fichiers d’en-tête ODBC | Documents Microsoft
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
 helpviewer_keywords:
 - installing ODBC components [ODBC], application files
 - header files [ODBC]
 - application files [ODBC]
 ms.assetid: 96f97ba3-7e73-4196-abfb-036c5f6d1903
-caps.latest.revision: "8"
+caps.latest.revision: 8
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: 8952109a53b2f116bb7099cb19395f906ace5031
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: 3a48cc2c8b214f7ead8819e3ce6c8b39ad716b61
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="odbc-header-files"></a>Fichiers d’en-tête ODBC
 > [!NOTE]  

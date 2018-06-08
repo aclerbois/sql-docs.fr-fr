@@ -1,16 +1,14 @@
 ---
 title: CERTENCODED (Transact-SQL) | Microsoft Docs
-ms.custom: 
+ms.custom: ''
 ms.date: 07/24/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|functions
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - CERTENCODED
@@ -20,21 +18,20 @@ dev_langs:
 helpviewer_keywords:
 - CERTENCODED
 ms.assetid: 677a0719-7b9a-4f0b-bc61-41634563f924
-caps.latest.revision: 
+caps.latest.revision: 14
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 635720f8ed9c3d2aa48d2f5cbf03438171b1fe78
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: 1ff52c9e01f5820fad3a832ed2b4546be69f9ffa
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="certencoded-transact-sql"></a>CERTENCODED (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2012-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2012-asdb-xxxx-xxx-md.md)]
 
-Retourne la partie publique d'un certificat au format binaire. Cette fonction accepte un ID de certificat et retourne le certificat encodé. Le résultat binaire peut être transmis à **CREATE CERTIFICATE … WITH BINARY** pour créer un nouveau certificat.
+Cette fonction retourne la partie publique d’un certificat au format binaire. Cette fonction accepte un ID de certificat comme argument et retourne le certificat encodé. Pour créer un certificat, transmettez le résultat binaire à **CREATE CERTIFICATE … WITH BINARY**.
   
 ## <a name="syntax"></a>Syntaxe  
   
@@ -44,39 +41,39 @@ CERTENCODED ( cert_id )
   
 ## <a name="arguments"></a>Arguments  
 *cert_id*  
-**ID de certificat** du certificat. Il est disponible à partir de sys.certificates ou à l’aide de la fonction [CERT_ID &#40;Transact-SQL&#41;](../../t-sql/functions/cert-id-transact-sql.md). *cert_id* est de type **int**
+**certificate_id** du certificat. Recherchez cette valeur dans sys.certificates ; elle est également retournée par la fonction [CERT_ID &#40;Transact-SQL&#41;](../../t-sql/functions/cert-id-transact-sql.md). *cert_id* a le type de données **int**.
   
 ## <a name="return-types"></a>Types de retour
 **varbinary**
   
 ## <a name="remarks"></a>Notes   
-Les fonctions **CERTENCODED** et **CERTPRIVATEKEY** sont utilisées ensemble pour renvoyer les différentes parties d’un certificat sous forme binaire.
+Les fonctions **CERTENCODED** et **CERTPRIVATEKEY** sont utilisées ensemble pour retourner les différentes parties d’un certificat sous forme binaire.
   
 ## <a name="permissions"></a>Autorisations  
-**CERTENCODED** est accessible publiquement.
+**CERTENCODED** est disponible publiquement.
   
 ## <a name="examples"></a>Exemples  
   
 ### <a name="simple-example"></a>Exemple simple  
-L’exemple suivant crée un certificat nommé `Shipping04` puis utilise la fonction **CERTENCODED** pour renvoyer l’encodage binaire du certificat.
+Cet exemple crée un certificat nommé `Shipping04` puis utilise la fonction **CERTENCODED** pour retourner l’encodage binaire du certificat. Cet exemple définit la date d’expiration du certificat pour le 31 octobre 2040.
   
 ```sql
-CREATE DATABASE TEST1;  
-GO  
-USE TEST1  
-CREATE CERTIFICATE Shipping04   
-ENCRYPTION BY PASSWORD = 'pGFD4bb925DGvbd2439587y'  
-WITH SUBJECT = 'Sammamish Shipping Records',   
-EXPIRY_DATE = '20161031';  
-GO  
-SELECT CERTENCODED(CERT_ID('Shipping04'));  
+CREATE DATABASE TEST1;
+GO
+USE TEST1
+CREATE CERTIFICATE Shipping04
+ENCRYPTION BY PASSWORD = 'pGFD4bb925DGvbd2439587y'
+WITH SUBJECT = 'Sammamish Shipping Records',
+EXPIRY_DATE = '20401031';
+GO
+SELECT CERTENCODED(CERT_ID('Shipping04'));
   
 ```  
   
 ### <a name="b-copying-a-certificate-to-another-database"></a>B. Copie d'un certificat dans une autre base de données  
-Cet exemple plus complexe crée deux bases de données, `SOURCE_DB` et `TARGET_DB`. L'objectif est de créer un certificat dans `SOURCE_DB`, de le copier dans `TARGET_DB`, puis d'illustrer que les données chiffrées dans `SOURCE_DB` peuvent être déchiffrées dans `TARGET_DB` à l'aide de la copie du certificat.
+L’exemple le plus complexe crée deux bases de données, `SOURCE_DB` et `TARGET_DB`. Créez ensuite un certificat dans `SOURCE_DB`, puis copiez-le dans `TARGET_DB`. Enfin, montrez que les données chiffrées dans `SOURCE_DB` peuvent être déchiffrées dans `TARGET_DB` à l’aide de la copie du certificat.
   
-Pour créer l'environnement de l'exemple, créez les bases de données `SOURCE_DB` et `TARGET_DB`, et une clé principale dans chacune d'elles. Créez ensuite un certificat dans `SOURCE_DB`.
+Pour créer l’exemple d’environnement, créez les bases de données `SOURCE_DB` et `TARGET_DB`, et une clé principale dans chacune d’elles. Créez ensuite un certificat dans `SOURCE_DB`.
   
 ```sql
 USE master;  
@@ -101,7 +98,7 @@ CREATE CERTIFICATE SOURCE_CERT WITH SUBJECT = 'SOURCE_CERTIFICATE';
 GO  
 ```  
   
-Extrayez maintenant la description binaire du certificat.
+Extrayez la description binaire du certificat.
   
 ```sql
 DECLARE @CERTENC VARBINARY(MAX);  
@@ -114,7 +111,7 @@ SELECT @CERTPVK AS EncryptedBinaryCertificate;
 GO  
 ```  
   
-Créez le certificat dupliqué dans la base de données `TARGET_DB`. Vous devez modifier le code suivant, en insérant les deux valeurs binaires retournées à l'étape précédente.
+Créez ensuite le certificat dupliqué dans la base de données `TARGET_DB`. Pour que cela fonctionne, modifiez le code suivant, en insérant les deux valeurs binaires (@CERTENC et @CERTPVK) retournées à l’étape précédente. N’entourez pas ces valeurs de guillemets.
   
 ```sql
 -- Create the duplicate certificate in the TARGET_DB database  
@@ -133,7 +130,7 @@ UNION
 SELECT * FROM TARGET_DB.sys.certificates;  
 ```  
   
-Le code suivant exécuté en tant que lot unique indique que les données chiffrées dans `SOURCE_DB` peuvent être déchiffrées dans `TARGET_DB`.
+Ce code, exécuté en tant que lot unique, indique que `TARGET_DB` peut déchiffrer les données chiffrées à l’origine dans `SOURCE_DB`.
   
 ```sql
 USE SOURCE_DB;  

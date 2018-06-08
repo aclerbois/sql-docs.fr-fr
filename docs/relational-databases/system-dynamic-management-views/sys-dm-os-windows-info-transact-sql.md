@@ -1,16 +1,12 @@
 ---
-title: sys.dm_os_windows_info (Transact-SQL) | Microsoft Docs
-ms.custom: 
+title: Sys.dm_os_windows_info (Transact-SQL) | Documents Microsoft
+ms.custom: ''
 ms.date: 03/30/2017
-ms.prod: sql-non-specified
-ms.prod_service: database-engine
-ms.service: 
-ms.component: dmv's
-ms.reviewer: 
+ms.prod: sql
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - dm_os_windows_info
@@ -22,23 +18,22 @@ dev_langs:
 helpviewer_keywords:
 - sys.dm_os_windows_info dynamic management view
 ms.assetid: adc81283-fdc2-46c0-bb48-abe82bbf2459
-caps.latest.revision: 
+caps.latest.revision: 15
 author: stevestein
 ms.author: sstein
 manager: craigg
-ms.workload: On Demand
-ms.openlocfilehash: bdb100404984cd679c2899a78a655872afbf501c
-ms.sourcegitcommit: c556eaf60a49af7025db35b7aa14beb76a8158c5
+ms.openlocfilehash: f6f6669704242a780d947dc271cb81724429992a
+ms.sourcegitcommit: 7019ac41524bdf783ea2c129c17b54581951b515
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 02/03/2018
+ms.lasthandoff: 05/23/2018
 ---
 # <a name="sysdmoswindowsinfo-transact-sql"></a>sys.dm_os_windows_info (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
 
   Retourne une ligne qui affiche les informations relatives à la version du système d'exploitation Windows.  
   
-  S’applique uniquement à SQL Server s’exécutant sous Windows. Pour afficher des informations similaires pour SQL Server s’exécutant sur un ordinateur hôte non Windows, tels que Linux, utilisez [sys.dm_os_host_info &#40; Transact-SQL &#41; ](~/relational-databases/system-dynamic-management-views/sys-dm-os-host-info-transact-sql.md). 
+  S’applique uniquement à SQL Server s’exécutant sous Windows. Pour afficher des informations similaires pour SQL Server s’exécutant sur un ordinateur hôte non Windows, tels que Linux, utilisez [sys.dm_os_host_info &#40;Transact-SQL&#41;](~/relational-databases/system-dynamic-management-views/sys-dm-os-host-info-transact-sql.md). 
   
 |Nom de colonne|Type de données| Description|  
 |-----------------|---------------|-----------------|  
@@ -52,7 +47,7 @@ ms.lasthandoff: 02/03/2018
 L’autorisation SELECT sur sys.dm_os_windows_info est accordée au rôle public par défaut. Si révoqués, nécessite l’autorisation VIEW SERVER STATE sur le serveur.  
 
 ## <a name="limitations-and-restrictions"></a>Limitations et restrictions
-Pour afficher des informations pour SQL en cours d’exécution sur un ordinateur hôte non Windows, tels que Linux, utilisez [sys.dm_os_host_info &#40; Transact-SQL &#41; ](../../relational-databases/system-dynamic-management-views/sys-dm-os-host-info-transact-sql.md). 
+Pour afficher des informations pour SQL en cours d’exécution sur un ordinateur hôte non Windows, tels que Linux, utilisez [sys.dm_os_host_info &#40;Transact-SQL&#41;](../../relational-databases/system-dynamic-management-views/sys-dm-os-host-info-transact-sql.md). 
   
 ## <a name="examples"></a>Exemples  
  L’exemple suivant retourne toutes les colonnes de la **sys.dm_os_windows_info** vue.  

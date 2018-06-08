@@ -1,28 +1,26 @@
 ---
 title: Commande exacte SET | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 01/19/2017
-ms.prod: sql-non-specified
-ms.prod_service: drivers
-ms.service: 
-ms.component: odbc
-ms.reviewer: 
+ms.prod: sql
+ms.prod_service: connectivity
+ms.reviewer: ''
 ms.suite: sql
-ms.technology: drivers
-ms.tgt_pltfrm: 
-ms.topic: article
-helpviewer_keywords: SET EXACT command [ODBC]
+ms.technology: connectivity
+ms.tgt_pltfrm: ''
+ms.topic: conceptual
+helpviewer_keywords:
+- SET EXACT command [ODBC]
 ms.assetid: 9533d3e0-e7c1-49de-a3a3-0cc4373a91cb
-caps.latest.revision: "5"
+caps.latest.revision: 5
 author: MightyPen
 ms.author: genemi
-manager: jhubbard
-ms.workload: Inactive
-ms.openlocfilehash: dcb836649993ddb644006986f284f0c0a362ed81
-ms.sourcegitcommit: cc71f1027884462c359effb898390c8d97eaa414
+manager: craigg
+ms.openlocfilehash: a6f5576ec5a1275914ee0558cf3fcd151ee3c3cc
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 05/03/2018
 ---
 # <a name="set-exact-command"></a>Commande exacte de jeu
 Spécifie les règles de comparaison de deux chaînes de longueurs différentes.  
@@ -41,7 +39,7 @@ SET EXACT ON | OFF
  OFF  
  (Par défaut). Spécifie que, pour être équivalents, expressions doivent correspondre au caractère jusqu'à la fin de l’expression située à droite.  
   
-## <a name="remarks"></a>Notes   
+## <a name="remarks"></a>Notes  
  Le paramètre SET EXACT n’a aucun effet si les deux chaînes sont de même longueur.  
   
 ## <a name="string-comparisons"></a>Comparaisons de chaînes  

@@ -1,29 +1,20 @@
 ---
-title: "À l’aide des fonctions de jeu | Documents Microsoft"
-ms.custom: 
-ms.date: 03/02/2016
-ms.prod: analysis-services
-ms.prod_service: analysis-services
-ms.service: 
-ms.component: 
-ms.reviewer: 
-ms.suite: pro-bi
-ms.technology: 
-ms.tgt_pltfrm: 
-ms.topic: language-reference
-dev_langs: kbMDX
-helpviewer_keywords: set functions [MDX]
-ms.assetid: b08ddc9d-38f8-41aa-b791-b5352f1a8783
-caps.latest.revision: "24"
-author: Minewiskan
+title: À l’aide des fonctions de jeu | Documents Microsoft
+ms.date: 05/30/2018
+ms.prod: sql
+ms.technology: analysis-services
+ms.custom: mdx
+ms.topic: reference
 ms.author: owend
-manager: erikre
-ms.workload: Inactive
-ms.openlocfilehash: c0afa99103cbb10c29c66bc375dc10d206560fd8
-ms.sourcegitcommit: f486d12078a45c87b0fcf52270b904ca7b0c7fc8
+ms.reviewer: owend
+author: minewiskan
+manager: kfile
+ms.openlocfilehash: a042092cfcddb985b29e7b0c98612f07c68ac2d0
+ms.sourcegitcommit: 808d23a654ef03ea16db1aa23edab496b73e5072
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 01/08/2018
+ms.lasthandoff: 06/02/2018
+ms.locfileid: "34582281"
 ---
 # <a name="using-set-functions"></a>Utilisation de fonctions de jeu
 [!INCLUDE[ssas-appliesto-sqlas](../includes/ssas-appliesto-sqlas.md)]
@@ -32,7 +23,7 @@ ms.lasthandoff: 01/08/2018
   
  Les fonctions de jeu, comme les fonctions de membre et de tuple, sont essentielles à la négociation des structures multidimensionnelles présentes dans Analysis Services. Elles sont également essentielles pour l'obtention de résultats à partir de requêtes MDX (Multidimensional Expressions), car les expressions de jeu définissent les axes d'une requête MDX.  
   
- Une des fonctions de jeu plus courantes est le [membres &#40; Définir le &#41; &#40; MDX &#41; ](../mdx/members-set-mdx.md) (fonction), qui extrait un jeu contenant tous les membres d’une dimension, une hiérarchie ou un niveau. Ce qui suit est un exemple de son utilisation dans une requête :  
+ Une des fonctions de jeu plus courantes est la [membres &#40;définir&#41; &#40;MDX&#41; ](../mdx/members-set-mdx.md) (fonction), qui extrait un jeu contenant tous les membres d’une dimension, une hiérarchie ou un niveau. Ce qui suit est un exemple de son utilisation dans une requête :  
   
  `SELECT`  
   
@@ -52,7 +43,7 @@ ms.lasthandoff: 01/08/2018
   
  `FROM [Adventure Works]`  
   
- Une autre fonction fréquemment utilisée est la [Crossjoin &#40; MDX &#41; ](../mdx/crossjoin-mdx.md) (fonction). Elle retourne un jeu de tuples qui représente le produit cartésien des jeux passés dans celui-ci comme paramètres. En termes pratiques, cette fonction vous permet de créer des axes « imbriqués » ou de « tableau croisé dynamique » dans les requêtes :  
+ Une autre fonction fréquemment utilisée est la [Crossjoin &#40;MDX&#41; ](../mdx/crossjoin-mdx.md) (fonction). Elle retourne un jeu de tuples qui représente le produit cartésien des jeux passés dans celui-ci comme paramètres. En termes pratiques, cette fonction vous permet de créer des axes « imbriqués » ou de « tableau croisé dynamique » dans les requêtes :  
   
  `SELECT`  
   
@@ -80,7 +71,7 @@ ms.lasthandoff: 01/08/2018
   
  `FROM [Adventure Works]`  
   
- Le [Descendants &#40; MDX &#41; ](../mdx/descendants-mdx.md) fonction est similaire la **enfants** de fonctionner, mais est plus puissante. Elle retourne les descendants de tout membre à un ou plusieurs niveaux dans une hiérarchie :  
+ Le [Descendants &#40;MDX&#41; ](../mdx/descendants-mdx.md) fonction est similaire la **enfants** de fonctionner, mais est plus puissante. Elle retourne les descendants de tout membre à un ou plusieurs niveaux dans une hiérarchie :  
   
  SELECT  
   
@@ -102,7 +93,7 @@ ms.lasthandoff: 01/08/2018
   
  FROM [Adventure Works]  
   
- Le [commande &#40; MDX &#41; ](../mdx/order-mdx.md) fonction permet de classer le contenu d’un ensemble croissant ou décroissant en fonction d’une expression numérique particulière. La requête suivante retourne les mêmes membres sur les lignes que la requête précédente, mais elle les classe désormais selon la mesure Internet Sales Amount (volume de vente Internet) :  
+ Le [commande &#40;MDX&#41; ](../mdx/order-mdx.md) fonction permet de classer le contenu d’un ensemble croissant ou décroissant en fonction d’une expression numérique particulière. La requête suivante retourne les mêmes membres sur les lignes que la requête précédente, mais elle les classe désormais selon la mesure Internet Sales Amount (volume de vente Internet) :  
   
  `SELECT`  
   
@@ -132,7 +123,7 @@ ms.lasthandoff: 01/08/2018
   
  Cette requête illustre également comment le jeu retourné par une fonction de jeu, Descendants, peut être passé comme un paramètre à une autre fonction de jeu, Order.  
   
- Filtrage d’un jeu selon certains critères est très utile lors de l’écriture de requêtes, et à cet effet, vous pouvez utiliser la [filtre &#40; MDX &#41; ](../mdx/filter-mdx.md) de fonction, comme indiqué dans l’exemple suivant :  
+ Filtrage d’un jeu selon certains critères est très utile lors de l’écriture de requêtes, et à cet effet, vous pouvez utiliser la [filtre &#40;MDX&#41; ](../mdx/filter-mdx.md) de fonction, comme indiqué dans l’exemple suivant :  
   
  `SELECT`  
   
@@ -160,7 +151,7 @@ ms.lasthandoff: 01/08/2018
   
  `FROM [Adventure Works]`  
   
- D'autres fonctions plus sophistiquées existent et vous permettent de filtrer un jeu d'autres manières. Par exemple, la requête suivante illustre le [TopCount &#40; MDX &#41; ](../mdx/topcount-mdx.md) fonction retourne les premiers éléments n dans un jeu :  
+ D'autres fonctions plus sophistiquées existent et vous permettent de filtrer un jeu d'autres manières. Par exemple, la requête suivante illustre le [TopCount &#40;MDX&#41; ](../mdx/topcount-mdx.md) fonction retourne les premiers éléments n dans un jeu :  
   
  `SELECT`  
   
@@ -186,7 +177,7 @@ ms.lasthandoff: 01/08/2018
   
  `FROM [Adventure Works]`  
   
- Enfin, il est possible d’effectuer un certain nombre d’opérations définies logiques à l’aide de fonctions telles que [Intersect &#40; MDX &#41; ](../mdx/intersect-mdx.md), [Union &#40; MDX &#41; ](../mdx/union-mdx.md) et [sauf &#40; MDX &#41; ](../mdx/except-mdx-function.md) fonctions. La requête suivante affiche des exemples de ces deux dernières fonctions :  
+ Enfin, il est possible d’effectuer un certain nombre d’opérations définies logiques à l’aide de fonctions telles que [Intersect &#40;MDX&#41;](../mdx/intersect-mdx.md), [Union &#40;MDX&#41; ](../mdx/union-mdx.md) et [sauf &#40;MDX&#41; ](../mdx/except-mdx-function.md) fonctions. La requête suivante affiche des exemples de ces deux dernières fonctions :  
   
  `SELECT`  
   
@@ -225,7 +216,7 @@ ms.lasthandoff: 01/08/2018
  `FROM [Adventure Works]`  
   
 ## <a name="see-also"></a>Voir aussi  
- [Fonctions &#40; La syntaxe MDX &#41;](../mdx/functions-mdx-syntax.md)   
+ [Fonctions &#40;syntaxe MDX&#41;](../mdx/functions-mdx-syntax.md)   
  [À l’aide des fonctions membres](../mdx/using-member-functions.md)   
  [Utilisation de fonctions de tuple](../mdx/using-tuple-functions.md)  
   

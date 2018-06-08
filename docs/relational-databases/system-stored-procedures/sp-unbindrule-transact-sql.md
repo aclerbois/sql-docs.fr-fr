@@ -1,16 +1,14 @@
 ---
 title: sp_unbindrule (Transact-SQL) | Documents Microsoft
-ms.custom: 
+ms.custom: ''
 ms.date: 03/14/2017
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine
-ms.service: 
 ms.component: system-stored-procedures
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: system-objects
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 f1_keywords:
 - sp_unbindrule_TSQL
@@ -20,16 +18,15 @@ dev_langs:
 helpviewer_keywords:
 - sp_unbindrule
 ms.assetid: f54ee155-c3c9-4f1a-952e-632a8339f0cc
-caps.latest.revision: 
+caps.latest.revision: 34
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 587578e7b9133b5323557b6cd1b5246a148bcb6e
-ms.sourcegitcommit: 9fbe5403e902eb996bab0b1285cdade281c1cb16
+ms.openlocfilehash: be14a4885cea481edda6ba7465ac2c5aa969ec1b
+ms.sourcegitcommit: f1caaa156db2b16e817e0a3884394e7b30fb642f
 ms.translationtype: MT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 05/04/2018
 ---
 # <a name="spunbindrule-transact-sql"></a>sp_unbindrule (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-xxxx-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-xxxx-xxxx-xxx-md.md)]
@@ -37,7 +34,7 @@ ms.lasthandoff: 11/27/2017
   Dissocie une règle d'une colonne ou d'un type de données alias dans la base de données active.  
   
 > [!IMPORTANT]  
->  [!INCLUDE[ssNoteDepNextDontUse](../../includes/ssnotedepnextdontuse-md.md)]Nous vous recommandons de créer des définitions par défaut à l’aide du mot clé par défaut dans le [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) instructions à la place.  
+>  [!INCLUDE[ssNoteDepNextDontUse](../../includes/ssnotedepnextdontuse-md.md)] Nous vous recommandons de créer des définitions par défaut à l’aide du mot clé par défaut dans le [ALTER TABLE](../../t-sql/statements/alter-table-transact-sql.md) ou [CREATE TABLE](../../t-sql/statements/create-table-transact-sql.md) instructions à la place.  
   
  ![Icône de lien de rubrique](../../database-engine/configure-windows/media/topic-link.gif "Icône lien de rubrique") [Conventions de la syntaxe Transact-SQL](../../t-sql/language-elements/transact-sql-syntax-conventions-transact-sql.md)  
   
@@ -63,13 +60,13 @@ sp_unbindrule [ @objname = ] 'object_name'
  0 (réussite) ou 1 (échec)  
   
 ## <a name="remarks"></a>Notes  
- Pour afficher le texte d’une règle, exécutez **sp_helptext** avec le nom de la règle comme paramètre.  
+ Pour afficher le texte d’une règle, exécutez **sp_helptext** en donnant le nom de la règle comme paramètre.  
   
  Lorsqu’une règle est détachée, les informations relatives à la liaison sont supprimées à partir de la **sys.columns** table si la règle a été liée à une colonne et à partir de la **sys.types** si la règle a été liée à un type de données d’alias de table.  
   
  Lorsqu'une règle est dissociée d'un type de données alias, elle l'est aussi des colonnes ayant ce type de données alias. La règle peut toujours être associée aux colonnes dont les types de données ont été modifiés ultérieurement par la clause ALTER COLUMN d’une instruction ALTER TABLE, vous devez dissocier spécifiquement la règle à partir de ces colonnes à l’aide de **sp_unbindrule** et en spécifiant le nom de colonne.  
   
-## <a name="permissions"></a>Permissions  
+## <a name="permissions"></a>Autorisations  
  La dissociation d'une règle d'une colonne de table nécessite l'autorisation ALTER sur la table. La dissociation d'une règle d'un type de données alias nécessite l'autorisation CONTROL sur le type ou l'autorisation ALTER sur le schéma auquel le type appartient.  
   
 ## <a name="examples"></a>Exemples  
@@ -113,10 +110,10 @@ EXEC sp_unbindrule '[t.4].c1';
   
 ## <a name="see-also"></a>Voir aussi  
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)   
- [Moteur de base de données stockée procédures &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
+ [Procédures stockées du moteur de base de données &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/database-engine-stored-procedures-transact-sql.md)   
  [CREATE RULE &#40;Transact-SQL&#41;](../../t-sql/statements/create-rule-transact-sql.md)   
- [DROP RULE &#40; Transact-SQL &#41;](../../t-sql/statements/drop-rule-transact-sql.md)   
- [sp_bindrule &#40; Transact-SQL &#41;](../../relational-databases/system-stored-procedures/sp-bindrule-transact-sql.md)   
+ [DROP RULE &#40;Transact-SQL&#41;](../../t-sql/statements/drop-rule-transact-sql.md)   
+ [sp_bindrule &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-bindrule-transact-sql.md)   
  [sp_helptext &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/sp-helptext-transact-sql.md)   
  [Procédures stockées système &#40;Transact-SQL&#41;](../../relational-databases/system-stored-procedures/system-stored-procedures-transact-sql.md)  
   

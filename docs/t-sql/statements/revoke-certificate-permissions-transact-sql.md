@@ -1,16 +1,14 @@
 ---
-title: "REVOKE - Révoquer des autorisations sur un certificat (Transact-SQL) | Microsoft Docs"
-ms.custom: 
+title: REVOKE - Révoquer des autorisations sur un certificat (Transact-SQL) | Microsoft Docs
+ms.custom: ''
 ms.date: 06/10/2016
-ms.prod: sql-non-specified
+ms.prod: sql
 ms.prod_service: database-engine, sql-database
-ms.service: 
 ms.component: t-sql|statements
-ms.reviewer: 
+ms.reviewer: ''
 ms.suite: sql
-ms.technology:
-- database-engine
-ms.tgt_pltfrm: 
+ms.technology: t-sql
+ms.tgt_pltfrm: ''
 ms.topic: language-reference
 dev_langs:
 - TSQL
@@ -19,18 +17,17 @@ helpviewer_keywords:
 - permissions [SQL Server], certificates
 - REVOKE statement, certificates
 ms.assetid: 2272324a-98f2-42c6-88b1-96a99020c9e9
-caps.latest.revision: 
+caps.latest.revision: 24
 author: edmacauley
 ms.author: edmaca
 manager: craigg
-ms.workload: Inactive
-ms.openlocfilehash: 2901626ba62de943fcf0f8d6772448e32d9924d9
-ms.sourcegitcommit: 45e4efb7aa828578fe9eb7743a1a3526da719555
+ms.openlocfilehash: aad761e98098fa7d36c019487545dbab8a8a51d7
+ms.sourcegitcommit: 1740f3090b168c0e809611a7aa6fd514075616bf
 ms.translationtype: HT
 ms.contentlocale: fr-FR
-ms.lasthandoff: 11/21/2017
+ms.lasthandoff: 05/03/2018
 ---
-# <a name="revoke-certificate-permissions-transact-sql"></a>REVOKE - Révoquer des autorisations sur un certificat (Transact-SQL)
+# <a name="revoke-certificate-permissions-transact-sql"></a>REVOKE (Autorisations de certificat) (Transact-SQL)
 [!INCLUDE[tsql-appliesto-ss2008-asdb-xxxx-xxx-md](../../includes/tsql-appliesto-ss2008-asdb-xxxx-xxx-md.md)]
 
   Révoque des autorisations sur un certificat.  
